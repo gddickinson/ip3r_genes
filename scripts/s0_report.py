@@ -75,12 +75,22 @@ def build(d: Path) -> str:
     verdicts = {}
     for c in claims:
         verdicts[c["verdict"]] = verdicts.get(c["verdict"], 0) + 1
+    # references.tsv is the whole project bibliography (it also backs
+    # docs/ip3r_review_2026.md). The audit used only the subset that the
+    # claims table cites, so count that subset, not the file.
+    audit_keys = set()
+    for c in claims:
+        audit_keys.update(k.strip() for k in c["refs"].split(";")
+                          if k.strip() and k.strip() != "-")
+    audit = [r for r in lit if r["ref_id"] in audit_keys]
     A("## 1. Literature verification\n")
     A(f"{len(claims)} atomic claims were extracted from the `[lit]` "
       f"statements in `docs/ip3r_background.md` and checked against "
-      f"{len(lit)} references "
-      f"({sum(1 for r in lit if r['role'] == 'primary')} primary, "
-      f"{sum(1 for r in lit if r['role'] == 'review')} review).\n")
+      f"{len(audit)} references "
+      f"({sum(1 for r in audit if r['role'] == 'primary')} primary, "
+      f"{sum(1 for r in audit if r['role'] == 'review')} review). The wider "
+      f"bibliography assembled for `docs/ip3r_review_2026.md` extends this to "
+      f"{len(lit)} references in the same table.\n")
     A("| verdict | claims | meaning |")
     A("|---|---|---|")
     meanings = {
@@ -246,11 +256,12 @@ def build(d: Path) -> str:
       "spread as the design constraint.\n")
 
     # ------------------------------------------------------------- 6. refs
-    A("## 6. Bibliography\n")
-    A(f"{len(lit)} references, "
-      f"{sum(1 for r in lit if r['role'] == 'primary')} of them primary. "
-      f"Machine-readable: `references.tsv`.\n")
-    for r in lit:
+    A("## 6. Bibliography — the claim audit\n")
+    A(f"The {len(audit)} references the claim audit rests on. The full "
+      f"{len(lit)}-reference bibliography, including everything added for the "
+      f"literature review, is `references.tsv`; the review itself is "
+      f"`docs/ip3r_review_2026.md`.\n")
+    for r in audit:
         A(f"- **{r['ref_id']}** {r['authors'].split(',')[0]} *et al.* "
           f"({r['year']}) {r['title']}. *{r['journal']}*. "
           f"PMID [{r['pmid']}](https://pubmed.ncbi.nlm.nih.gov/{r['pmid']}/)"

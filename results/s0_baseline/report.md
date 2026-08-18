@@ -4,7 +4,7 @@
 
 ## 1. Literature verification
 
-19 atomic claims were extracted from the `[lit]` statements in `docs/ip3r_background.md` and checked against 51 references (45 primary, 6 review).
+19 atomic claims were extracted from the `[lit]` statements in `docs/ip3r_background.md` and checked against 51 references (45 primary, 6 review). The wider bibliography assembled for `docs/ip3r_review_2026.md` extends this to 137 references in the same table.
 
 | verdict | claims | meaning |
 |---|---|---|
@@ -148,9 +148,9 @@ All three cytogenetic bands are confirmed, so that claim moves from `[lit]` to `
 
 **Fault 2 — latency, uncovered by fixing fault 1.** Ensembl's speed is unstable: the *same* 451-byte `lookup/symbol` call measured 0.61 s, 7.61 s and 13.91 s within one session, and the `expand=1` call that carries the transcript/exon payload costs ~12 s every time. So one gene in one species costs ~12 s at best and was measured at 95 s at worst. The default panel is 8 species × 3 genes = 24 sequential pairs, i.e. **roughly 5 to 38 minutes** — straddling the old 300 s budget, which is why run 3 still reported 2/3 while run 4 (3 pairs, 28.5 s) sailed through. `run_headless`'s budget is raised 300 s → 900 s; a full panel sweep should use `--species` until `EnsemblClient.search`'s per-species loop is parallelised (Emergent). Do not treat any single latency figure here as a rate — treat the spread as the design constraint.
 
-## 6. Bibliography
+## 6. Bibliography — the claim audit
 
-51 references, 45 of them primary. Machine-readable: `references.tsv`.
+The 51 references the claim audit rests on. The full 137-reference bibliography, including everything added for the literature review, is `references.tsv`; the review itself is `docs/ip3r_review_2026.md`.
 
 - **R01** Streb H *et al.* (1983) Release of Ca2+ from a nonmitochondrial intracellular store in pancreatic acinar cells by inositol-1,4,5-trisphosphate. *Nature*. PMID [6605482](https://pubmed.ncbi.nlm.nih.gov/6605482/); doi:10.1038/306067a0
 - **R02** Furuichi T *et al.* (1989) Primary structure and functional expression of the inositol 1,4,5-trisphosphate-binding protein P400. *Nature*. PMID [2554142](https://pubmed.ncbi.nlm.nih.gov/2554142/); doi:10.1038/342032a0

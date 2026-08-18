@@ -169,7 +169,15 @@ intronic content in one paralog and not another is an open question for S21.
 3 qualified, **2 struck**, 1 retagged as an open question (whether the IP3R
 and RyR triplications were independent — that is the project's own Q2, and it
 was about to be an assumption), 1 upgraded to a database fact.
-→ [`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md)
+
+**The literature baseline.** A full, 137-reference review of the family —
+architecture and cryo-EM, gating and the all-four-sites requirement,
+regulation, cell physiology, the three paralogues, evolution, genetic models,
+human disease, pharmacology, and the eight questions the field cannot currently
+answer. Read it as [markdown](docs/ip3r_review_2026.md) or as the typeset
+[24-page PDF](docs/ip3r_review_2026.pdf). It is **generated** from
+[`docs/review/`](docs/review/) by `scripts/s0_review_build.py` — edit the
+section files, never the assembled document.
 
 ---
 

@@ -179,3 +179,59 @@ benchmark. Read `results/s0_baseline/report.md` first: the 49 % RyR
 contamination rate is the reason the decoy panel matters, and the fact that
 the length band worked perfectly in that one dataset is the reason S1 must
 show the *scorer* separates ITPR from RyR without leaning on it.
+
+---
+
+## 2026-08-18 — S0 addendum: the literature baseline expanded to a full review
+
+**Request.** The S0 review document was judged too thin; it was rebuilt as a
+publication-scale review, fully referenced, with a typeset PDF.
+
+**What changed.**
+
+- **Bibliography 51 → 137 references** (117 primary, 20 review). Candidates were
+  harvested from Europe PMC across ~60 topic queries covering discovery,
+  structure, gating, regulation, cell physiology, paralogues, evolution,
+  genetic models, disease and pharmacology — each query run twice, ranked by
+  citation count *and* by recency, so the set is neither purely canonical nor
+  purely recent. Candidates were curated by hand; **all bibliographic metadata
+  was then fetched programmatically by PMID**, so nothing in the reference
+  table was transcribed by hand.
+- **`docs/ip3r_review_2026.md` is now generated, not written.** Source is
+  `docs/review/00_frontmatter.md` … `12_methods_audit.md` (13 files, each under
+  the 500-line limit); `scripts/s0_review_build.py` assembles them, renumbers
+  the stable `[Rnn]` keys into order of first appearance, renders the
+  bibliography from `references.tsv`, and fails the build if a cited key has no
+  reference row. The assembled file is 1,022 lines — over the 500-line rule,
+  which is why it is a build artefact with modular sources, the same pattern
+  `manuscript/` uses.
+- **PDF**: `docs/ip3r_review_2026.pdf`, 24 pages A4, pandoc 3.6.4 + xelatex,
+  Palatino, running heads, TOC, booktabs tables, hyperlinked PMIDs and DOIs.
+
+**Three build traps, fixed and commented in the script.** (1) Pandoc passes raw
+HTML through and the LaTeX writer then *drops* it — every `<sub>`/`<sup>` was
+silently flattened, so "IP₃R" typeset as "IP3R". The build now rewrites them
+into pandoc's `~x~`/`^x^` syntax while the markdown source keeps the HTML form
+so it still renders on a web front end. (2) The YAML title plus the source H1
+printed the title twice and gave it its own TOC entry; the build drops the H1.
+(3) `linkcolor: [RGB]{...}` cannot survive YAML → LaTeX; the colour is now
+defined in `header-includes` and referenced by name.
+
+**Accuracy pass (D11 applied to prose).** Every page of the PDF was rendered and
+read. One outright mis-citation was caught and fixed — a paper on end-stage
+heart failure had been cited for a claim about antibody disagreement — and four
+wordings were pulled back to what their sources actually say (a purification
+paper does not establish loss in ataxic mutants; an autoradiography claim
+became "highest density in cerebellum"; a smooth-muscle isolation paper is not
+a reconstitution replicate; *Drosophila* itpr disruption affects metamorphosis
+and ecdysone release, not moulting).
+
+**One inconsistency this surfaced.** `references.tsv` now backs both the claim
+audit and the review, so `s0_report.py` was counting 137 references for a
+19-claim audit. It now derives the audit bibliography from `lit_claims.tsv`.
+That exposed two references (R06, R50) sitting in the audit set but attached to
+no claim; both genuinely support claims C01 and C07 and were attached, so the
+audit is a consistent 51 and the review a consistent 137.
+
+**Not changed:** no ledger status, no roadmap task. S0 remains `completed`;
+this is a deepening of its deliverable, not new scope.
