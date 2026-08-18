@@ -3,11 +3,11 @@
 GUI usage:
     python run.py
     python run.py --email you@example.com
-    python run.py --preset piezo --auto-search
+    python run.py --preset ip3r --auto-search
 
 Headless usage (no GUI; useful for CI / batch runs):
-    python run.py --headless --preset piezo --save-results
-    python run.py --headless --preset piezo --species "Homo sapiens" --max 25 --save-results
+    python run.py --headless --preset ip3r --save-results
+    python run.py --headless --preset ip3r --species "Homo sapiens" --max 25 --save-results
 """
 
 from __future__ import annotations
@@ -21,7 +21,7 @@ def main() -> None:
     p.add_argument("--email", default="",
                    help="Email for NCBI Entrez identification (Entrez asks for one).")
     p.add_argument("--preset", default="",
-                   help="Preset name (e.g. 'piezo', 'piezo_zebrafish').")
+                   help="Preset name (e.g. 'ip3r', 'ip3r_zebrafish'); see presets/.")
     p.add_argument("--auto-search", action="store_true",
                    help="GUI mode: run preset's search on startup.")
     p.add_argument("--headless", action="store_true",
@@ -37,7 +37,7 @@ def main() -> None:
     p.add_argument("--analyze", action="store_true",
                    help="Headless mode: run sequence analysis (alignment / tree / clusters / mutations).")
     p.add_argument("--discover", action="store_true",
-                   help="Headless mode: rank candidate novel paralogs (e.g. PIEZO4).")
+                   help="Headless mode: rank candidate novel paralogs (e.g. a fourth ITPR).")
     p.add_argument("--interpro", action="store_true",
                    help="Discovery: fetch InterPro Pfam signatures for each UniProt accession (slower).")
     p.add_argument("--known-paralog", action="append", default=[],
@@ -45,7 +45,7 @@ def main() -> None:
     p.add_argument("--investigate", default="",
                    help="Headless mode: deep-dive investigation of one UniProt accession (e.g. A0A0P1B5Q5).")
     p.add_argument("--vs", default="",
-                   help="Comma-separated UniProt accessions to use as the phylogenetic comparison panel (default: Q92508,Q9H5I5 — human PIEZO1+2).")
+                   help="Comma-separated UniProt accessions for the phylogenetic comparison panel (default: the family reference panel in src/utils/family.py — human ITPR1/2/3; add a RYR accession to test which side of the superfamily split a candidate falls on).")
     p.add_argument("--foldseek", action="store_true",
                    help="Investigation: also run Foldseek structural search (slow, async).")
     args = p.parse_args()
