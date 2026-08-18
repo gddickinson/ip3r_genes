@@ -1,0 +1,1230 @@
+source,gene_symbol,accession,species,taxon_id,length_aa,transcript_id,gene_id,description,url
+UniProt,ITPR1,Q14643,Homo sapiens,9606,2758,,ITPR1,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR1",https://www.uniprot.org/uniprotkb/Q14643
+UniProt,ITPR1,Q14643-1,Homo sapiens,9606,,,ITPR1,isoform 1 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-1
+UniProt,ITPR1,Q14643-2,Homo sapiens,9606,,,ITPR1,isoform 2 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-2
+UniProt,ITPR1,Q14643-3,Homo sapiens,9606,,,ITPR1,isoform 3 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-3
+UniProt,ITPR1,Q14643-4,Homo sapiens,9606,,,ITPR1,isoform 4 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-4
+UniProt,ITPR1,Q14643-5,Homo sapiens,9606,,,ITPR1,isoform 5 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-5
+UniProt,ITPR1,Q14643-6,Homo sapiens,9606,,,ITPR1,isoform 6 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-6
+UniProt,ITPR1,Q14643-7,Homo sapiens,9606,,,ITPR1,isoform 7 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-7
+UniProt,ITPR1,Q14643-8,Homo sapiens,9606,,,ITPR1,isoform 8 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-8
+UniProt,ITPR1,Q9TU34,Bos taurus,9913,2709,,ITPR1,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR1",https://www.uniprot.org/uniprotkb/Q9TU34
+UniProt,ITPR1,P29994,Rattus norvegicus,10116,2750,,ITPR1,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR1",https://www.uniprot.org/uniprotkb/P29994
+UniProt,ITPR1,P29994-1,Rattus norvegicus,10116,,,ITPR1,isoform 1 of P29994,https://www.uniprot.org/uniprotkb/P29994-1
+UniProt,ITPR1,P29994-2,Rattus norvegicus,10116,,,ITPR1,isoform 2 of P29994,https://www.uniprot.org/uniprotkb/P29994-2
+UniProt,ITPR1,P29994-3,Rattus norvegicus,10116,,,ITPR1,isoform 3 of P29994,https://www.uniprot.org/uniprotkb/P29994-3
+UniProt,ITPR1,P29994-4,Rattus norvegicus,10116,,,ITPR1,isoform 4 of P29994,https://www.uniprot.org/uniprotkb/P29994-4
+UniProt,ITPR1,P29994-5,Rattus norvegicus,10116,,,ITPR1,isoform 5 of P29994,https://www.uniprot.org/uniprotkb/P29994-5
+UniProt,ITPR1,P29994-6,Rattus norvegicus,10116,,,ITPR1,isoform 6 of P29994,https://www.uniprot.org/uniprotkb/P29994-6
+UniProt,ITPR1,P29994-7,Rattus norvegicus,10116,,,ITPR1,isoform 7 of P29994,https://www.uniprot.org/uniprotkb/P29994-7
+UniProt,ITPR1,P29994-8,Rattus norvegicus,10116,,,ITPR1,isoform 8 of P29994,https://www.uniprot.org/uniprotkb/P29994-8
+UniProt,ITPR1,P11881,Mus musculus,10090,2749,,ITPR1,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR1",https://www.uniprot.org/uniprotkb/P11881
+UniProt,ITPR1,P11881-1,Mus musculus,10090,,,ITPR1,isoform 1 of P11881,https://www.uniprot.org/uniprotkb/P11881-1
+UniProt,ITPR1,P11881-2,Mus musculus,10090,,,ITPR1,isoform 2 of P11881,https://www.uniprot.org/uniprotkb/P11881-2
+UniProt,ITPR1,P11881-3,Mus musculus,10090,,,ITPR1,isoform 3 of P11881,https://www.uniprot.org/uniprotkb/P11881-3
+UniProt,ITPR1,P11881-4,Mus musculus,10090,,,ITPR1,isoform 4 of P11881,https://www.uniprot.org/uniprotkb/P11881-4
+UniProt,ITPR1,P11881-5,Mus musculus,10090,,,ITPR1,isoform 5 of P11881,https://www.uniprot.org/uniprotkb/P11881-5
+UniProt,ITPR1,P11881-6,Mus musculus,10090,,,ITPR1,isoform 6 of P11881,https://www.uniprot.org/uniprotkb/P11881-6
+UniProt,ITPR1,P11881-7,Mus musculus,10090,,,ITPR1,isoform 7 of P11881,https://www.uniprot.org/uniprotkb/P11881-7
+UniProt,ITPR1,P11881-8,Mus musculus,10090,,,ITPR1,isoform 8 of P11881,https://www.uniprot.org/uniprotkb/P11881-8
+UniProt,ITPR1,A0A8J8XAG4,Rattus norvegicus,10116,2758,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8J8XAG4
+UniProt,ITPR1,A0A286XZ14,Cavia porcellus,10141,2738,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A286XZ14
+UniProt,ITPR1,A0A287D0Q8,Ictidomys tridecemlineatus,43179,2748,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A287D0Q8
+UniProt,ITPR1,A0A2K6RS95,Rhinopithecus roxellana,61622,2714,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K6RS95
+UniProt,ITPR1,A0A4X2KIY4,Vombatus ursinus,29139,2710,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4X2KIY4
+UniProt,ITPR1,A0A6I8NN70,Ornithorhynchus anatinus,9258,2747,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6I8NN70
+UniProt,ITPR1,A0A8B9C8E0,Anser brachyrhynchus,132585,2747,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8B9C8E0
+UniProt,ITPR1,A0A8C2YPG5,Chinchilla lanigera,34839,2717,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C2YPG5
+UniProt,ITPR1,A0A8C5UR25,Microcebus murinus,30608,2620,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5UR25
+UniProt,ITPR1,A0A8C9E9U4,Phocoena sinus,42100,2757,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9E9U4
+UniProt,ITPR1,G3QRX0,Gorilla gorilla gorilla,9595,2706,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G3QRX0
+UniProt,ITPR1,H2PA73,Pongo abelii,9601,2758,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/H2PA73
+UniProt,ITPR1,M3Z007,Mustela putorius furo,9669,2709,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/M3Z007
+UniProt,ITPR1,A0A674JWL9,Terrapene triunguis,2587831,2708,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A674JWL9
+UniProt,ITPR1,A0A8C7BCY0,Neogale vison,452646,2756,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C7BCY0
+UniProt,ITPR1,G1KJX4,Anolis carolinensis,28377,2702,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G1KJX4
+UniProt,ITPR1,H0ZJ48,Taeniopygia guttata,59729,2748,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/H0ZJ48
+UniProt,ITPR1,A0A7N5K5M5,Ailuropoda melanoleuca,9646,2756,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7N5K5M5
+UniProt,ITPR1,A0A8C0IXJ7,Chelonoidis abingdonii,106734,2740,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C0IXJ7
+UniProt,ITPR1,A0A8C0KP12,Canis lupus dingo,286419,2754,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C0KP12
+UniProt,ITPR1,A0A8C2YH56,Coturnix japonica,93934,2740,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C2YH56
+UniProt,ITPR1,A0A8C6ML26,Moschus moschiferus,68415,2757,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6ML26
+UniProt,ITPR1,A0A8C8VYC8,Peromyscus maniculatus bairdii,230844,2749,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C8VYC8
+UniProt,ITPR1,A0A8I3NKB2,Canis lupus familiaris,9615,2757,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8I3NKB2
+UniProt,ITPR1,F6YA86,Equus caballus,9796,2749,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/F6YA86
+UniProt,ITPR1,G1QU12,Nomascus leucogenys,61853,2755,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G1QU12
+UniProt,ITPR1,H2QLZ5,Pan troglodytes,9598,2700,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/H2QLZ5
+UniProt,ITPR1,H9FU40,Macaca mulatta,9544,2758,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/H9FU40
+UniProt,ITPR1,A0A452F520,Capra hircus,9925,2731,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A452F520
+UniProt,ITPR1,A0A5F9CAK2,Oryctolagus cuniculus,9986,2756,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F9CAK2
+UniProt,ITPR1,A0A670JBK6,Podarcis muralis,64176,2747,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A670JBK6
+UniProt,ITPR1,A0A7M4FCB6,Crocodylus porosus,8502,2683,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7M4FCB6
+UniProt,ITPR1,A0A803YAL9,Meleagris gallopavo,9103,2752,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A803YAL9
+UniProt,ITPR1,A0A8C3YUF6,Catagonus wagneri,51154,2756,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3YUF6
+UniProt,ITPR1,A0A8C5LE46,Jaculus jaculus,51337,2724,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5LE46
+UniProt,ITPR1,A0A8C6QUU5,Nannospalax galili,1026970,2750,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6QUU5
+UniProt,ITPR1,A0A8C9NTS4,Serinus canaria,9135,2693,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9NTS4
+UniProt,ITPR1,A0A8D2E1N2,Sciurus vulgaris,55149,2757,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8D2E1N2
+UniProt,ITPR1,A0A8V0ZJT0,Gallus gallus,9031,2779,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8V0ZJT0
+UniProt,ITPR1,F6VQP7,Monodelphis domestica,13616,2733,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/F6VQP7
+UniProt,ITPR1,G3SRG2,Loxodonta africana,9785,2700,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G3SRG2
+UniProt,ITPR1,K7GJ73,Pelodiscus sinensis,13735,2752,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/K7GJ73
+UniProt,ITPR1,A0A2K5R1C5,Cebus imitator,2715852,2720,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K5R1C5
+UniProt,ITPR1,A0A493TKZ1,Anas platyrhynchos platyrhynchos,8840,2677,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A493TKZ1
+UniProt,ITPR1,A0A5G2RCE3,Sus scrofa,9823,2746,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5G2RCE3
+UniProt,ITPR1,A0A663EPU0,Aquila chrysaetos chrysaetos,223781,2604,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A663EPU0
+UniProt,ITPR1,A0A670XW74,Pseudonaja textilis,8673,2715,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A670XW74
+UniProt,ITPR1,A0A671F719,Rhinolophus ferrumequinum,59479,2757,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A671F719
+UniProt,ITPR1,A0A672VCS0,Strigops habroptila,2489341,2747,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A672VCS0
+UniProt,ITPR1,A0A6P7R0Y4,Mus caroli,10089,2749,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P7R0Y4
+UniProt,ITPR1,A0A8B9YW92,Bos grunniens,30521,2756,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8B9YW92
+UniProt,ITPR1,A0A8C3P7L2,Chrysemys picta bellii,8478,2755,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3P7L2
+UniProt,ITPR1,A0A8C4M4S0,Equus asinus,9793,2737,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4M4S0
+UniProt,ITPR1,A0A8C6CDA3,Monodon monoceros,40151,2757,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6CDA3
+UniProt,ITPR1,A0A8C6EQS4,Marmota marmota marmota,9994,2748,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6EQS4
+UniProt,ITPR1,A0A8D2IJ23,Urocitellus parryii,9999,2748,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8D2IJ23
+UniProt,ITPR1,U3KGK2,Ficedula albicollis,59894,2753,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/U3KGK2
+UniProt,ITPR1,A0A3F2YNW8,Homo sapiens,9606,2750,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3F2YNW8
+UniProt,ITPR1,A0A3B3ITQ1,Homo sapiens,9606,2012,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3B3ITQ1
+UniProt,ITPR1,A0A3B3ITU8,Homo sapiens,9606,2744,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3B3ITU8
+UniProt,ITPR1,A0A3B3IU04,Homo sapiens,9606,2749,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3B3IU04
+UniProt,ITPR1,A0A8C8KBY2,Homo sapiens,9606,1668,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C8KBY2
+UniProt,ITPR1,A0A1D5QI55,Macaca mulatta,9544,2758,,ITPR1,A0A1D5QI55_MACMU,https://www.uniprot.org/uniprotkb/A0A1D5QI55
+UniProt,ITPR1,A0A8J1N0E4,Xenopus laevis,8355,2729,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8J1N0E4
+UniProt,ITPR1,C7E1V2,Rattus norvegicus,10116,2748,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/C7E1V2
+UniProt,ITPR1,A0ABK0LT22,Rattus norvegicus,10116,2738,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABK0LT22
+UniProt,ITPR1,F1MX21,Bos taurus,9913,2672,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/F1MX21
+UniProt,ITPR1,A0A0A0MY31,Rattus norvegicus,10116,2738,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A0A0MY31
+UniProt,ITPR1,A0A0G2KAH9,Rattus norvegicus,10116,2574,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A0G2KAH9
+UniProt,ITPR1,A0ABK0LX94,Rattus norvegicus,10116,2734,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABK0LX94
+UniProt,ITPR1,Q8C7X9,Mus musculus,10090,1004,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/Q8C7X9
+UniProt,ITPR1,F1LQX8,Rattus norvegicus,10116,2751,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/F1LQX8
+UniProt,ITPR1,Q3UVA1,Mus musculus,10090,1151,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/Q3UVA1
+UniProt,ITPR1,Q91908,Xenopus laevis,8355,2693,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/Q91908
+UniProt,ITPR1,A0A3B3ITM6,Homo sapiens,9606,714,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3B3ITM6
+UniProt,ITPR1,A0A1S3ENH0,Dipodomys ordii,10020,2695,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A1S3ENH0
+UniProt,ITPR1,A0A1U7Q8M5,Mesocricetus auratus,10036,2709,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A1U7Q8M5
+UniProt,ITPR1,A0A1U8DHX3,Alligator sinensis,38654,2697,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A1U8DHX3
+UniProt,ITPR1,A0A2I3SX77,Pan troglodytes,9598,2694,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2I3SX77
+UniProt,ITPR1,A0A2I3TCW5,Pan troglodytes,9598,1021,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2I3TCW5
+UniProt,ITPR1,A0A2J8WE20,Pongo abelii,9601,721,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2J8WE20
+UniProt,ITPR1,A0A2K6RS48,Rhinopithecus roxellana,61622,2710,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K6RS48
+UniProt,ITPR1,A0A2K6RS70,Rhinopithecus roxellana,61622,721,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K6RS70
+UniProt,ITPR1,A0A2K6RSA5,Rhinopithecus roxellana,61622,2706,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K6RSA5
+UniProt,ITPR1,A0A2Y9HG79,Neomonachus schauinslandi,29088,2709,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2Y9HG79
+UniProt,ITPR1,A0A2Y9N0L7,Delphinapterus leucas,9749,2749,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2Y9N0L7
+UniProt,ITPR1,A0A3Q2LKT3,Equus caballus,9796,2725,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3Q2LKT3
+UniProt,ITPR1,A0A452F5S0,Capra hircus,9925,2709,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A452F5S0
+UniProt,ITPR1,A0A4W6FFJ1,Lates calcarifer,8187,2649,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W6FFJ1
+UniProt,ITPR1,A0A4W6FGI7,Lates calcarifer,8187,2646,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W6FGI7
+UniProt,ITPR1,A0A5F8GIQ9,Monodelphis domestica,13616,2699,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F8GIQ9
+UniProt,ITPR1,A0A5F8GL06,Monodelphis domestica,13616,2718,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F8GL06
+UniProt,ITPR1,A0A5F8GQY4,Monodelphis domestica,13616,2580,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F8GQY4
+UniProt,ITPR1,A0A5F9CEC0,Oryctolagus cuniculus,9986,2684,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F9CEC0
+UniProt,ITPR1,A0A663M6S8,Athene cunicularia,194338,2759,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A663M6S8
+UniProt,ITPR1,A0A667GY17,Lynx canadensis,61383,2743,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A667GY17
+UniProt,ITPR1,A0A670JE55,Podarcis muralis,64176,2622,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A670JE55
+UniProt,ITPR1,A0A670JH57,Podarcis muralis,64176,2621,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A670JH57
+UniProt,ITPR1,A0A672IUQ7,Salarias fasciatus,181472,2748,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A672IUQ7
+UniProt,ITPR1,A0A672IVK8,Salarias fasciatus,181472,2635,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A672IVK8
+UniProt,ITPR1,A0A672VFZ0,Strigops habroptila,2489341,2574,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A672VFZ0
+UniProt,ITPR1,A0A673TRL4,Suricata suricatta,37032,2742,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A673TRL4
+UniProt,ITPR1,A0A6J1V4D3,Notechis scutatus,8663,2712,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J1V4D3
+UniProt,ITPR1,A0A6J1Y094,Acinonyx jubatus,32536,2734,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J1Y094
+UniProt,ITPR1,A0A6P5IPT2,Phascolarctos cinereus,38626,2748,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P5IPT2
+UniProt,ITPR1,A0A6P5IST8,Phascolarctos cinereus,38626,2710,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P5IST8
+UniProt,ITPR1,A0A6P6HNN0,Puma concolor,9696,2709,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P6HNN0
+UniProt,ITPR1,A0A6P6HQ07,Puma concolor,9696,2742,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P6HQ07
+UniProt,ITPR1,A0A6P7R2K1,Mus caroli,10089,2757,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P7R2K1
+UniProt,ITPR1,A0A6P7R631,Mus caroli,10089,2694,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P7R631
+UniProt,ITPR1,A0A6P7RCD9,Mus caroli,10089,2742,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P7RCD9
+UniProt,ITPR1,A0A6P7RCX8,Mus caroli,10089,2735,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P7RCX8
+UniProt,ITPR1,A0A6P8PJF5,Geotrypetes seraphini,260995,2646,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P8PJF5
+UniProt,ITPR1,A0A6Q2YJF5,Esox lucius,8010,2726,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6Q2YJF5
+UniProt,ITPR1,A0A7E6E460,Phyllostomus discolor,89673,2757,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7E6E460
+UniProt,ITPR1,A0A7M4FBH1,Crocodylus porosus,8502,2643,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7M4FBH1
+UniProt,ITPR1,A0A7N5JUY9,Ailuropoda melanoleuca,9646,2742,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7N5JUY9
+UniProt,ITPR1,A0A803SYU6,Anolis carolinensis,28377,2607,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A803SYU6
+UniProt,ITPR1,A0A803TVR0,Anolis carolinensis,28377,2667,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A803TVR0
+UniProt,ITPR1,A0A803V3X2,Ficedula albicollis,59894,2710,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A803V3X2
+UniProt,ITPR1,A0A803YLS6,Meleagris gallopavo,9103,2738,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A803YLS6
+UniProt,ITPR1,A0A8B7WC07,Castor canadensis,51338,2756,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8B7WC07
+UniProt,ITPR1,A0A8B9C9H9,Anser brachyrhynchus,132585,2589,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8B9C9H9
+UniProt,ITPR1,A0A8B9YTF2,Bos grunniens,30521,2742,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8B9YTF2
+UniProt,ITPR1,A0A8C0V6P6,Cyanistes caeruleus,156563,2738,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C0V6P6
+UniProt,ITPR1,A0A8C0VC32,Cyanistes caeruleus,156563,2636,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C0VC32
+UniProt,ITPR1,A0A8C0VCG5,Cyanistes caeruleus,156563,2608,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C0VCG5
+UniProt,ITPR1,A0A8C2UG55,Coturnix japonica,93934,2613,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C2UG55
+UniProt,ITPR1,A0A8C3EV35,Corvus moneduloides,1196302,2635,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3EV35
+UniProt,ITPR1,A0A8C3EY54,Corvus moneduloides,1196302,2640,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3EY54
+UniProt,ITPR1,A0A8C3HP94,Chrysemys picta bellii,8478,2746,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3HP94
+UniProt,ITPR1,A0A8C3HWN1,Chrysemys picta bellii,8478,2595,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3HWN1
+UniProt,ITPR1,A0A8C3HWN5,Chrysemys picta bellii,8478,2516,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3HWN5
+UniProt,ITPR1,A0A8C3VP44,Catharus ustulatus,91951,2726,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3VP44
+UniProt,ITPR1,A0A8C3YTZ0,Catagonus wagneri,51154,2749,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3YTZ0
+UniProt,ITPR1,A0A8C4WKE8,Gopherus evgoodei,1825980,2643,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4WKE8
+UniProt,ITPR1,A0A8C4WRX7,Gopherus evgoodei,1825980,2583,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4WRX7
+UniProt,ITPR1,A0A8C4YDQ2,Gopherus evgoodei,1825980,2515,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4YDQ2
+UniProt,ITPR1,A0A8C4ZUA4,Gadus morhua,8049,2653,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4ZUA4
+UniProt,ITPR1,A0A8C4ZWK1,Gadus morhua,8049,2714,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4ZWK1
+UniProt,ITPR1,A0A8C5AEY7,Gadus morhua,8049,2726,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5AEY7
+UniProt,ITPR1,A0A8C5BKK5,Gadus morhua,8049,2651,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5BKK5
+UniProt,ITPR1,A0A8C5F018,Gopherus evgoodei,1825980,2481,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5F018
+UniProt,ITPR1,A0A8C5FK41,Gadus morhua,8049,2620,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5FK41
+UniProt,ITPR1,A0A8C5PSD8,Leptobrachium leishanense,445787,2691,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5PSD8
+UniProt,ITPR1,A0A8C6FE94,Monodon monoceros,40151,721,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6FE94
+UniProt,ITPR1,A0A8C6FZ63,Moschus moschiferus,68415,2709,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6FZ63
+UniProt,ITPR1,A0A8C7IRJ6,Oncorhynchus kisutch,8019,2638,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C7IRJ6
+UniProt,ITPR1,A0A8C7IUX5,Oncorhynchus kisutch,8019,2669,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C7IUX5
+UniProt,ITPR1,A0A8C7MTJ8,Oncorhynchus kisutch,8019,2684,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C7MTJ8
+UniProt,ITPR1,A0A8C9EA24,Phocoena sinus,42100,2656,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9EA24
+UniProt,ITPR1,A0A8C9KVC2,Phocoena sinus,42100,2743,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9KVC2
+UniProt,ITPR1,A0A8C9NS48,Serinus canaria,9135,2680,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9NS48
+UniProt,ITPR1,A0A8C9NSZ7,Serinus canaria,9135,2690,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9NSZ7
+UniProt,ITPR1,A0A8D2IF45,Urocitellus parryii,9999,2722,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8D2IF45
+UniProt,ITPR1,A0A8I3RZ08,Canis lupus familiaris,9615,2743,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8I3RZ08
+UniProt,ITPR1,A0A8I5YSL2,Pongo abelii,9601,2744,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8I5YSL2
+UniProt,ITPR1,A0A8J0STK8,Xenopus tropicalis,8364,2707,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8J0STK8
+UniProt,ITPR1,A0A8U0NSR2,Mustela putorius furo,9669,2726,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8U0NSR2
+UniProt,ITPR1,A0A8V0ZJV7,Gallus gallus,9031,2721,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8V0ZJV7
+UniProt,ITPR1,A0A9J7H3K7,Cricetulus griseus,10029,2732,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A9J7H3K7
+UniProt,ITPR1,A0A9W2V4B9,Panthera pardus,9691,2709,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A9W2V4B9
+UniProt,ITPR1,A0A9W2V547,Panthera pardus,9691,2749,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A9W2V547
+UniProt,ITPR1,A0AA97J6S9,Eublepharis macularius,481883,2698,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AA97J6S9
+UniProt,ITPR1,A0AAX6QY08,Heterocephalus glaber,10181,2743,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAX6QY08
+UniProt,ITPR1,A0AAX6QYN6,Heterocephalus glaber,10181,2749,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAX6QYN6
+UniProt,ITPR1,A0AAX6QYV8,Heterocephalus glaber,10181,2709,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAX6QYV8
+UniProt,ITPR1,A0AAX6R2S2,Heterocephalus glaber,10181,2741,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAX6R2S2
+UniProt,ITPR1,A0ABM3U8D3,Balaenoptera acutorostrata,9767,2749,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM3U8D3
+UniProt,ITPR1,A0ABM3Z7A4,Pantherophis guttatus,94885,2719,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM3Z7A4
+UniProt,ITPR1,A0ABM4H829,Odocoileus virginianus,9874,2737,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM4H829
+UniProt,ITPR1,A0ABM4KX82,Equus przewalskii,9798,2748,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM4KX82
+UniProt,ITPR1,A0ABM4KX89,Equus przewalskii,9798,2694,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM4KX89
+UniProt,ITPR1,A0ABM4KX92,Equus przewalskii,9798,2733,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM4KX92
+UniProt,ITPR1,A0ABM4RCB2,Bos indicus,9915,2694,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM4RCB2
+UniProt,ITPR1,A0ABM4RCC1,Bos indicus,9915,2727,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM4RCC1
+UniProt,ITPR1,A0ABM4XEK5,Vulpes vulpes,9627,2694,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM4XEK5
+UniProt,ITPR1,F6Y9R6,Equus caballus,9796,2499,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/F6Y9R6
+UniProt,ITPR1,A0A1D5R5F4,Macaca mulatta,9544,2602,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A1D5R5F4
+UniProt,ITPR1,A0A1S3EPM5,Dipodomys ordii,10020,2710,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A1S3EPM5
+UniProt,ITPR1,A0A1S3ER37,Dipodomys ordii,10020,2723,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A1S3ER37
+UniProt,ITPR1,A0A1U7QHI7,Mesocricetus auratus,10036,2733,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A1U7QHI7
+UniProt,ITPR1,A0A286ZUQ1,Sus scrofa,9823,2726,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A286ZUQ1
+UniProt,ITPR1,A0A2I3G082,Nomascus leucogenys,61853,721,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2I3G082
+UniProt,ITPR1,A0A2I3GTW4,Nomascus leucogenys,61853,2720,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2I3GTW4
+UniProt,ITPR1,A0A2J8WE37,Pongo abelii,9601,2710,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2J8WE37
+UniProt,ITPR1,A0A2K5R130,Cebus imitator,2715852,2712,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K5R130
+UniProt,ITPR1,A0A2K5R169,Cebus imitator,2715852,2699,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K5R169
+UniProt,ITPR1,A0A2K5R1F2,Cebus imitator,2715852,977,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K5R1F2
+UniProt,ITPR1,A0A2Y9N0M1,Delphinapterus leucas,9749,2733,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2Y9N0M1
+UniProt,ITPR1,A0A340WZR9,Lipotes vexillifer,118797,2696,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A340WZR9
+UniProt,ITPR1,A0A340X1W6,Lipotes vexillifer,118797,2744,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A340X1W6
+UniProt,ITPR1,A0A4W2IN78,Bos indicus x Bos taurus,30522,721,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W2IN78
+UniProt,ITPR1,A0A4W6FFI2,Lates calcarifer,8187,2663,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W6FFI2
+UniProt,ITPR1,A0A4W6FGJ2,Lates calcarifer,8187,2585,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W6FGJ2
+UniProt,ITPR1,A0A4W6G117,Lates calcarifer,8187,2604,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W6G117
+UniProt,ITPR2,Q14571,Homo sapiens,9606,2701,,ITPR2,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2",https://www.uniprot.org/uniprotkb/Q14571
+UniProt,ITPR2,Q14571-1,Homo sapiens,9606,,,ITPR2,isoform Long of Q14571,https://www.uniprot.org/uniprotkb/Q14571-1
+UniProt,ITPR2,Q14571-2,Homo sapiens,9606,,,ITPR2,isoform Short of Q14571,https://www.uniprot.org/uniprotkb/Q14571-2
+UniProt,ITPR2,Q8WN96,Bos taurus,9913,2701,,ITPR2,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2",https://www.uniprot.org/uniprotkb/Q8WN96
+UniProt,ITPR2,P29995,Rattus norvegicus,10116,2701,,ITPR2,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2",https://www.uniprot.org/uniprotkb/P29995
+UniProt,ITPR2,Q9Z329,Mus musculus,10090,2701,,ITPR2,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2",https://www.uniprot.org/uniprotkb/Q9Z329
+UniProt,ITPR2,Q9Z329-1,Mus musculus,10090,,,ITPR2,isoform 1 of Q9Z329,https://www.uniprot.org/uniprotkb/Q9Z329-1
+UniProt,ITPR2,Q9Z329-2,Mus musculus,10090,,,ITPR2,isoform 2 of Q9Z329,https://www.uniprot.org/uniprotkb/Q9Z329-2
+UniProt,ITPR2,Q9Z329-3,Mus musculus,10090,,,ITPR2,isoform 3 of Q9Z329,https://www.uniprot.org/uniprotkb/Q9Z329-3
+UniProt,ITPR2,A0A3Q1N7P8,Bos taurus,9913,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3Q1N7P8
+UniProt,ITPR2,A0A2K6Q332,Rhinopithecus roxellana,61622,2700,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K6Q332
+UniProt,ITPR2,A0A2Y9NF22,Delphinapterus leucas,9749,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2Y9NF22
+UniProt,ITPR2,A0A803W9Y2,Ficedula albicollis,59894,2698,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A803W9Y2
+UniProt,ITPR2,A0A8B7EJX7,Microcebus murinus,30608,2699,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8B7EJX7
+UniProt,ITPR2,A0A8B8YFT5,Balaenoptera musculus,9771,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8B8YFT5
+UniProt,ITPR2,A0A8I3PW88,Canis lupus familiaris,9615,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8I3PW88
+UniProt,ITPR2,F1P1X4,Gallus gallus,9031,2700,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/F1P1X4
+UniProt,ITPR2,H2NGU6,Pongo abelii,9601,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/H2NGU6
+UniProt,ITPR2,M3YG40,Mustela putorius furo,9669,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/M3YG40
+UniProt,ITPR2,A0A2I2YWP0,Gorilla gorilla gorilla,9595,2714,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2I2YWP0
+UniProt,ITPR2,A0A452EWP8,Capra hircus,9925,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A452EWP8
+UniProt,ITPR2,A0A5F5PS97,Equus caballus,9796,2684,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F5PS97
+UniProt,ITPR2,A0A6P3IRJ0,Bison bison bison,43346,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P3IRJ0
+UniProt,ITPR2,A0A7N4PQI8,Sarcophilus harrisii,9305,2710,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7N4PQI8
+UniProt,ITPR2,A0A8C0J442,Chelonoidis abingdonii,106734,2699,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C0J442
+UniProt,ITPR2,A0A8C6C4Q9,Monodon monoceros,40151,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6C4Q9
+UniProt,ITPR2,A0A8D2D288,Sciurus vulgaris,55149,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8D2D288
+UniProt,ITPR2,A0A287CSI1,Ictidomys tridecemlineatus,43179,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A287CSI1
+UniProt,ITPR2,A0A2Y9T9Z4,Physeter macrocephalus,9755,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2Y9T9Z4
+UniProt,ITPR2,A0A663FHU8,Aquila chrysaetos chrysaetos,223781,2699,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A663FHU8
+UniProt,ITPR2,A0A6I8NH55,Ornithorhynchus anatinus,9258,2697,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6I8NH55
+UniProt,ITPR2,A0A7M4EXI7,Crocodylus porosus,8502,2347,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7M4EXI7
+UniProt,ITPR2,A0A8C2TQF3,Coturnix japonica,93934,2699,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C2TQF3
+UniProt,ITPR2,A0A8C3YQZ3,Catagonus wagneri,51154,2702,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3YQZ3
+UniProt,ITPR2,A0A8C8XN17,Panthera leo,9689,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C8XN17
+UniProt,ITPR2,A0A8C9A9V7,Prolemur simus,1328070,2699,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9A9V7
+UniProt,ITPR2,A0A8C9BGC4,Phocoena sinus,42100,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9BGC4
+UniProt,ITPR2,A0A8C9N303,Serinus canaria,9135,2700,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9N303
+UniProt,ITPR2,G1NLU4,Meleagris gallopavo,9103,2667,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G1NLU4
+UniProt,ITPR2,H0VLH8,Cavia porcellus,10141,2622,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/H0VLH8
+UniProt,ITPR2,I3LPN5,Sus scrofa,9823,2702,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/I3LPN5
+UniProt,ITPR2,A0A1U7TTI7,Carlito syrichta,1868482,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A1U7TTI7
+UniProt,ITPR2,A0A2I3GSB4,Nomascus leucogenys,61853,2727,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2I3GSB4
+UniProt,ITPR2,A0A672UP22,Strigops habroptila,2489341,2700,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A672UP22
+UniProt,ITPR2,A0A674H2A0,Taeniopygia guttata,59729,2700,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A674H2A0
+UniProt,ITPR2,A0A8C0KIR7,Canis lupus dingo,286419,2691,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C0KIR7
+UniProt,ITPR2,A0A8C4XXV5,Gopherus evgoodei,1825980,2702,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4XXV5
+UniProt,ITPR2,G1KLX9,Anolis carolinensis,28377,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G1KLX9
+UniProt,ITPR2,G1LZJ8,Ailuropoda melanoleuca,9646,2699,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G1LZJ8
+UniProt,ITPR2,G1PIC5,Myotis lucifugus,59463,2648,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G1PIC5
+UniProt,ITPR2,H2QLZ4,Pan troglodytes,9598,2727,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/H2QLZ4
+UniProt,ITPR2,H9FU41,Macaca mulatta,9544,2700,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/H9FU41
+UniProt,ITPR2,K7B3H5,Pan troglodytes,9598,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/K7B3H5
+UniProt,ITPR2,A0A2K5RZ39,Cebus imitator,2715852,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K5RZ39
+UniProt,ITPR2,A0A2R8MWG9,Callithrix jacchus,9483,2705,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2R8MWG9
+UniProt,ITPR2,A0A5F9D9J0,Oryctolagus cuniculus,9986,2735,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F9D9J0
+UniProt,ITPR2,A0A670Y797,Pseudonaja textilis,8673,2695,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A670Y797
+UniProt,ITPR2,A0A6I9LMJ8,Peromyscus maniculatus bairdii,230844,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6I9LMJ8
+UniProt,ITPR2,A0A8B9WC12,Bos grunniens,30521,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8B9WC12
+UniProt,ITPR2,A0A8C6A0C5,Marmota marmota marmota,9994,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6A0C5
+UniProt,ITPR2,A0A8C6G1W9,Moschus moschiferus,68415,2650,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6G1W9
+UniProt,ITPR2,F6ZCW7,Monodelphis domestica,13616,2698,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/F6ZCW7
+UniProt,ITPR2,U3J666,Anas platyrhynchos platyrhynchos,8840,2699,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/U3J666
+UniProt,ITPR2,A0A8M9PQQ3,Danio rerio,7955,2665,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8M9PQQ3
+UniProt,ITPR2,F1LNT1,Rattus norvegicus,10116,2702,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/F1LNT1
+UniProt,ITPR2,F1LQR8,Rattus norvegicus,10116,2495,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/F1LQR8
+UniProt,ITPR2,A0A8I5ZKC4,Rattus norvegicus,10116,2516,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8I5ZKC4
+UniProt,ITPR2,A0A8I6ARS8,Rattus norvegicus,10116,2634,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8I6ARS8
+UniProt,ITPR2,Q6W3E4,Rattus norvegicus,10116,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/Q6W3E4
+UniProt,ITPR2,A0A0G2K260,Rattus norvegicus,10116,2670,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A0G2K260
+UniProt,ITPR2,A0ABK0L0M5,Rattus norvegicus,10116,2751,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABK0L0M5
+UniProt,ITPR2,A0A8I5Y6K8,Rattus norvegicus,10116,2668,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8I5Y6K8
+UniProt,ITPR2,A0ABK0M557,Rattus norvegicus,10116,2621,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABK0M557
+UniProt,ITPR2,A0AAA9TGF4,Bos taurus,9913,2643,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAA9TGF4
+UniProt,ITPR2,F1N137,Bos taurus,9913,2634,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/F1N137
+UniProt,ITPR2,A0A8C4ZYC2,Gadus morhua,8049,2592,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4ZYC2
+UniProt,ITPR2,A0A8C5BP19,Gadus morhua,8049,2688,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5BP19
+UniProt,ITPR2,A0A8C5F4K0,Gadus morhua,8049,2662,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5F4K0
+UniProt,ITPR2,A0A8C5CC48,Gadus morhua,8049,2688,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5CC48
+UniProt,ITPR2,A0A8C5CDT7,Gadus morhua,8049,2649,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5CDT7
+UniProt,ITPR2,A0A8C5FAW6,Gadus morhua,8049,2699,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5FAW6
+UniProt,ITPR2,A0A673WBI2,Salmo trutta,8032,2559,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A673WBI2
+UniProt,ITPR2,A0A8C5AQP8,Gadus morhua,8049,2691,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5AQP8
+UniProt,ITPR2,A0A8C5FG79,Gadus morhua,8049,2673,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5FG79
+UniProt,ITPR2,A0A8C5FL53,Gadus morhua,8049,2687,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5FL53
+UniProt,ITPR2,A0A673WJ70,Salmo trutta,8032,2696,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A673WJ70
+UniProt,ITPR2,A0A8C4X6D2,Erpetoichthys calabaricus,27687,2613,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4X6D2
+UniProt,ITPR2,A0A8C5BLK1,Gadus morhua,8049,2651,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5BLK1
+UniProt,ITPR2,A0A2D0QU11,Ictalurus punctatus,7998,2672,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2D0QU11
+UniProt,ITPR2,A0A2I3H1T9,Nomascus leucogenys,61853,181,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2I3H1T9
+UniProt,ITPR2,A0A2I4AZQ7,Austrofundulus limnaeus,52670,2687,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2I4AZQ7
+UniProt,ITPR2,A0A2Y9NHG7,Delphinapterus leucas,9749,2686,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2Y9NHG7
+UniProt,ITPR2,A0A384B5K9,Balaenoptera acutorostrata,9767,2645,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A384B5K9
+UniProt,ITPR2,A0A3Q1AS58,Amphiprion ocellaris,80972,2642,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3Q1AS58
+UniProt,ITPR2,A0A3Q2H6V9,Equus caballus,9796,2445,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3Q2H6V9
+UniProt,ITPR2,A0A455BDU4,Physeter macrocephalus,9755,2517,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A455BDU4
+UniProt,ITPR2,A0A4W6EAD4,Lates calcarifer,8187,2642,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W6EAD4
+UniProt,ITPR2,A0A4W6EEK7,Lates calcarifer,8187,2645,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W6EEK7
+UniProt,ITPR2,A0A663FJ21,Aquila chrysaetos chrysaetos,223781,2673,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A663FJ21
+UniProt,ITPR2,A0A665X7U5,Echeneis naucrates,173247,2672,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A665X7U5
+UniProt,ITPR2,A0A665X7V7,Echeneis naucrates,173247,2650,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A665X7V7
+UniProt,ITPR2,A0A665X7W7,Echeneis naucrates,173247,2597,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A665X7W7
+UniProt,ITPR2,A0A665X806,Echeneis naucrates,173247,2623,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A665X806
+UniProt,ITPR2,A0A668T295,Oreochromis aureus,47969,2698,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A668T295
+UniProt,ITPR2,A0A669BKM2,Oreochromis niloticus,8128,2635,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A669BKM2
+UniProt,ITPR2,A0A669DA73,Oreochromis niloticus,8128,2636,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A669DA73
+UniProt,ITPR2,A0A669ECX6,Oreochromis niloticus,8128,2618,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A669ECX6
+UniProt,ITPR2,A0A669F4V7,Oreochromis niloticus,8128,2647,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A669F4V7
+UniProt,ITPR2,A0A670XX81,Pseudonaja textilis,8673,2689,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A670XX81
+UniProt,ITPR2,A0A670XXC2,Pseudonaja textilis,8673,2576,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A670XXC2
+UniProt,ITPR2,A0A671WZN3,Sparus aurata,8175,2638,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A671WZN3
+UniProt,ITPR2,A0A672J7A6,Salarias fasciatus,181472,2581,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A672J7A6
+UniProt,ITPR2,A0A672JCE0,Salarias fasciatus,181472,2575,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A672JCE0
+UniProt,ITPR2,A0A673CNX3,Sphaeramia orbicularis,375764,2663,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A673CNX3
+UniProt,ITPR2,A0A673IH37,Sinocyclocheilus rhinocerous,307959,2651,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A673IH37
+UniProt,ITPR2,A0A674KI21,Terrapene triunguis,2587831,2656,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A674KI21
+UniProt,ITPR2,A0A6F9DES0,Phallusia mammillata,59560,2802,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6F9DES0
+UniProt,ITPR2,A0A6I8RGU0,Xenopus tropicalis,8364,2705,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6I8RGU0
+UniProt,ITPR2,A0A6J1U701,Notechis scutatus,8663,2315,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J1U701
+UniProt,ITPR2,A0A6J1XGH6,Acinonyx jubatus,32536,2639,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J1XGH6
+UniProt,ITPR2,A0A6J2D0I0,Zalophus californianus,9704,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J2D0I0
+UniProt,ITPR2,A0A6J2PV70,Cottoperca gobio,56716,2711,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J2PV70
+UniProt,ITPR2,A0A6J2WRI9,Chanos chanos,29144,2680,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J2WRI9
+UniProt,ITPR2,A0A6J3IBW8,Sapajus apella,9515,2637,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J3IBW8
+UniProt,ITPR2,A0A6P5IFA7,Phascolarctos cinereus,38626,2698,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P5IFA7
+UniProt,ITPR2,A0A6P6ERH2,Octodon degus,10160,2610,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P6ERH2
+UniProt,ITPR2,A0A6P6ID65,Puma concolor,9696,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P6ID65
+UniProt,ITPR2,A0A6P7R481,Mus caroli,10089,2736,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P7R481
+UniProt,ITPR2,A0A6P8EV58,Clupea harengus,7950,2674,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P8EV58
+UniProt,ITPR2,A0A6Q2Y662,Esox lucius,8010,2649,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6Q2Y662
+UniProt,ITPR2,A0A7M4FY07,Crocodylus porosus,8502,2338,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7M4FY07
+UniProt,ITPR2,A0A7N4NMP8,Sarcophilus harrisii,9305,2623,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7N4NMP8
+UniProt,ITPR2,A0A7N6BXN0,Anabas testudineus,64144,2628,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7N6BXN0
+UniProt,ITPR2,A0A803T9I3,Anolis carolinensis,28377,2613,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A803T9I3
+UniProt,ITPR2,A0A803W0K6,Ficedula albicollis,59894,2582,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A803W0K6
+UniProt,ITPR2,A0A803XWU1,Meleagris gallopavo,9103,2655,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A803XWU1
+UniProt,ITPR2,A0A803YFQ8,Meleagris gallopavo,9103,2606,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A803YFQ8
+UniProt,ITPR2,A0A8C2TT08,Coturnix japonica,93934,2656,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C2TT08
+UniProt,ITPR2,A0A8C2TUP2,Coturnix japonica,93934,2630,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C2TUP2
+UniProt,ITPR2,A0A8C3IDG4,Chrysemys picta bellii,8478,2242,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3IDG4
+UniProt,ITPR2,A0A8C3IFR3,Chrysemys picta bellii,8478,2165,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3IFR3
+UniProt,ITPR2,A0A8C3VDG5,Catharus ustulatus,91951,2526,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3VDG5
+UniProt,ITPR2,A0A8C4I629,Dicentrarchus labrax,13489,2663,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4I629
+UniProt,ITPR2,A0A8C4I7X7,Dicentrarchus labrax,13489,2653,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4I7X7
+UniProt,ITPR2,A0A8C4IY98,Dromaius novaehollandiae,8790,2700,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4IY98
+UniProt,ITPR2,A0A8C4NWU9,Dicentrarchus labrax,13489,2549,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4NWU9
+UniProt,ITPR2,A0A8C4VR33,Gopherus evgoodei,1825980,2668,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4VR33
+UniProt,ITPR2,A0A8C4VVC7,Gopherus evgoodei,1825980,2658,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4VVC7
+UniProt,ITPR2,A0A8C5NG92,Gouania willdenowi,441366,2627,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5NG92
+UniProt,ITPR2,A0A8C9IBY4,Piliocolobus tephrosceles,591936,2700,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9IBY4
+UniProt,ITPR2,A0A8C9N5P8,Serinus canaria,9135,2692,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9N5P8
+UniProt,ITPR2,A0A8D0AYW7,Sander lucioperca,283035,2654,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8D0AYW7
+UniProt,ITPR2,A0A8D2LZ97,Zonotrichia albicollis,44394,2638,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8D2LZ97
+UniProt,ITPR2,A0A8V0YHP5,Gallus gallus,9031,2654,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8V0YHP5
+UniProt,ITPR2,A0A8V0YP24,Gallus gallus,9031,2516,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8V0YP24
+UniProt,ITPR2,A0A8V5HBM8,Melopsittacus undulatus,13146,2691,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8V5HBM8
+UniProt,ITPR2,A0A9B0WR70,Chrysochloris asiatica,185453,2599,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A9B0WR70
+UniProt,ITPR2,A0A9J7GKX5,Cricetulus griseus,10029,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A9J7GKX5
+UniProt,ITPR2,A0A9V1FRJ1,Panthera pardus,9691,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A9V1FRJ1
+UniProt,ITPR2,A0AA97JSQ0,Eublepharis macularius,481883,2702,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AA97JSQ0
+UniProt,ITPR2,A0AAQ5Z6T0,Amphiprion ocellaris,80972,2687,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAQ5Z6T0
+UniProt,ITPR2,A0AAX6P8L0,Heterocephalus glaber,10181,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAX6P8L0
+UniProt,ITPR2,A0AAX7USV2,Astatotilapia calliptera,8154,2697,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAX7USV2
+UniProt,ITPR2,A0AAX7VHS9,Astatotilapia calliptera,8154,2577,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAX7VHS9
+UniProt,ITPR2,A0AAY4DB99,Denticeps clupeoides,299321,2639,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAY4DB99
+UniProt,ITPR2,A0AAY4DCW8,Denticeps clupeoides,299321,2651,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAY4DCW8
+UniProt,ITPR2,A0AAY4DLX8,Denticeps clupeoides,299321,2632,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAY4DLX8
+UniProt,ITPR2,A0AAY4DNI1,Denticeps clupeoides,299321,2589,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAY4DNI1
+UniProt,ITPR2,A0AAY4DPU5,Denticeps clupeoides,299321,2628,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAY4DPU5
+UniProt,ITPR2,A0AAZ3NQP1,Oncorhynchus tshawytscha,74940,2641,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAZ3NQP1
+UniProt,ITPR2,A0AAZ3RAP1,Oncorhynchus tshawytscha,74940,2617,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAZ3RAP1
+UniProt,ITPR2,A0ABM2X9N5,Mesocricetus auratus,10036,2317,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM2X9N5
+UniProt,ITPR2,A0ABM3ZR96,Pantherophis guttatus,94885,2691,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM3ZR96
+UniProt,ITPR2,A0ABM3ZR98,Pantherophis guttatus,94885,2699,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM3ZR98
+UniProt,ITPR2,A0ABM4FAP3,Apteryx mantelli,2696672,2700,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM4FAP3
+UniProt,ITPR2,A0ABM4SA74,Bos indicus,9915,2734,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM4SA74
+UniProt,ITPR2,A0ABM5GGU7,Pogona vitticeps,103695,2699,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM5GGU7
+UniProt,ITPR2,A0ABM5GGV4,Pogona vitticeps,103695,2732,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM5GGV4
+UniProt,ITPR2,U3FTJ4,Callithrix jacchus,9483,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/U3FTJ4
+UniProt,ITPR2,U6DJF7,Neogale vison,452646,1420,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/U6DJF7
+UniProt,ITPR2,A0A1D5P2S9,Gallus gallus,9031,2685,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A1D5P2S9
+UniProt,ITPR2,A0A1S3GS26,Dipodomys ordii,10020,2377,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A1S3GS26
+UniProt,ITPR2,A0A2U3X1C4,Odobenus rosmarus divergens,9708,2646,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2U3X1C4
+UniProt,ITPR2,A0A2U4BF85,Tursiops truncatus,9739,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2U4BF85
+UniProt,ITPR2,A0A340WH28,Lipotes vexillifer,118797,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A340WH28
+UniProt,ITPR2,A0A341AGK1,Neophocaena asiaeorientalis asiaeorientalis,1706337,2670,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A341AGK1
+UniProt,ITPR2,A0A384B6N2,Balaenoptera acutorostrata,9767,2701,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A384B6N2
+UniProt,ITPR2,A0A3Q2H0L4,Equus caballus,9796,2512,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3Q2H0L4
+UniProt,ITPR2,A0A4W4FAS1,Electrophorus electricus,8005,2558,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W4FAS1
+UniProt,ITPR2,A0A4X2L7R4,Vombatus ursinus,29139,2662,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4X2L7R4
+UniProt,ITPR2,A0A4X2LD93,Vombatus ursinus,29139,2657,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4X2LD93
+UniProt,ITPR2,A0A663FI07,Aquila chrysaetos chrysaetos,223781,2688,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A663FI07
+UniProt,ITPR2,A0A663FJC1,Aquila chrysaetos chrysaetos,223781,2545,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A663FJC1
+UniProt,ITPR2,A0A663FJY7,Aquila chrysaetos chrysaetos,223781,2538,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A663FJY7
+UniProt,ITPR2,A0A663FL32,Aquila chrysaetos chrysaetos,223781,2649,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A663FL32
+UniProt,ITPR2,A0A663MGV6,Athene cunicularia,194338,2670,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A663MGV6
+UniProt,ITPR2,A0A663MI65,Athene cunicularia,194338,2624,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A663MI65
+UniProt,ITPR2,A0A663MIB3,Athene cunicularia,194338,2583,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A663MIB3
+UniProt,ITPR2,A0A667HV24,Lynx canadensis,61383,2658,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A667HV24
+UniProt,ITPR2,A0A667HV62,Lynx canadensis,61383,2633,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A667HV62
+UniProt,ITPR2,A0A669F5W1,Oreochromis niloticus,8128,2660,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A669F5W1
+UniProt,ITPR2,A0A672J876,Salarias fasciatus,181472,2657,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A672J876
+UniProt,ITPR2,A0A672JC27,Salarias fasciatus,181472,2564,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A672JC27
+UniProt,ITPR2,A0A672P2J4,Sinocyclocheilus grahami,75366,2621,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A672P2J4
+UniProt,ITPR2,A0A673CT79,Sphaeramia orbicularis,375764,2657,,ITPR2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A673CT79
+UniProt,ITPR3,Q14573,Homo sapiens,9606,2671,,ITPR3,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3",https://www.uniprot.org/uniprotkb/Q14573
+UniProt,ITPR3,P70227,Mus musculus,10090,2670,,ITPR3,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3",https://www.uniprot.org/uniprotkb/P70227
+UniProt,ITPR3,Q63269,Rattus norvegicus,10116,2670,,ITPR3,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3",https://www.uniprot.org/uniprotkb/Q63269
+UniProt,ITPR3,Q8WN95,Bos taurus,9913,2664,,ITPR3,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3",https://www.uniprot.org/uniprotkb/Q8WN95
+UniProt,ITPR3,E1BKE7,Bos taurus,9913,2670,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/E1BKE7
+UniProt,ITPR3,A0A1S3GNS7,Dipodomys ordii,10020,2668,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A1S3GNS7
+UniProt,ITPR3,A0A287CW02,Ictidomys tridecemlineatus,43179,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A287CW02
+UniProt,ITPR3,A0A2J8Y341,Pongo abelii,9601,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2J8Y341
+UniProt,ITPR3,A0A2K6R3T1,Rhinopithecus roxellana,61622,2703,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K6R3T1
+UniProt,ITPR3,A0A4W2BYK2,Bos indicus x Bos taurus,30522,2664,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W2BYK2
+UniProt,ITPR3,A0A4X2LJB4,Vombatus ursinus,29139,2668,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4X2LJB4
+UniProt,ITPR3,A0A6I9MM60,Peromyscus maniculatus bairdii,230844,2670,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6I9MM60
+UniProt,ITPR3,A0A6P3EUZ7,Octodon degus,10160,2665,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P3EUZ7
+UniProt,ITPR3,A0A8B9YL85,Bos grunniens,30521,2664,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8B9YL85
+UniProt,ITPR3,A0A8C4VTB6,Gopherus evgoodei,1825980,2646,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4VTB6
+UniProt,ITPR3,A0A8C6BGJ1,Monodon monoceros,40151,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6BGJ1
+UniProt,ITPR3,A0A8C9C4V7,Phocoena sinus,42100,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9C4V7
+UniProt,ITPR3,A0A8C9NWI3,Serinus canaria,9135,2660,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9NWI3
+UniProt,ITPR3,A0A8D2BFP2,Sciurus vulgaris,55149,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8D2BFP2
+UniProt,ITPR3,A0A8V1ACE6,Gallus gallus,9031,2664,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8V1ACE6
+UniProt,ITPR3,G3SAJ3,Gorilla gorilla gorilla,9595,2677,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G3SAJ3
+UniProt,ITPR3,A0A2K5R5Y3,Cebus imitator,2715852,2687,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K5R5Y3
+UniProt,ITPR3,A0A3Q2LBD5,Equus caballus,9796,2680,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3Q2LBD5
+UniProt,ITPR3,A0A5F8H1Y0,Monodelphis domestica,13616,2608,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F8H1Y0
+UniProt,ITPR3,A0A5F9D123,Oryctolagus cuniculus,9986,2616,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F9D123
+UniProt,ITPR3,A0A671FIG9,Rhinolophus ferrumequinum,59479,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A671FIG9
+UniProt,ITPR3,A0A6P5R8Y7,Mus caroli,10089,2670,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P5R8Y7
+UniProt,ITPR3,A0A803V0D6,Ficedula albicollis,59894,2623,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A803V0D6
+UniProt,ITPR3,A0A8C0CYQ4,Balaenoptera musculus,9771,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C0CYQ4
+UniProt,ITPR3,A0A8C3IQX3,Chrysemys picta bellii,8478,2645,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3IQX3
+UniProt,ITPR3,A0A8C3W957,Catagonus wagneri,51154,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3W957
+UniProt,ITPR3,A0A8C5XQQ7,Microcebus murinus,30608,2664,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5XQQ7
+UniProt,ITPR3,A0A8D2HX65,Urocitellus parryii,9999,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8D2HX65
+UniProt,ITPR3,F7DPJ5,Ornithorhynchus anatinus,9258,2651,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/F7DPJ5
+UniProt,ITPR3,G1L3F3,Ailuropoda melanoleuca,9646,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G1L3F3
+UniProt,ITPR3,H0XR47,Otolemur garnettii,30611,2728,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/H0XR47
+UniProt,ITPR3,H0YUA8,Taeniopygia guttata,59729,2663,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/H0YUA8
+UniProt,ITPR3,H2QSU0,Pan troglodytes,9598,2677,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/H2QSU0
+UniProt,ITPR3,A0A2Y9FTQ6,Physeter macrocephalus,9755,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2Y9FTQ6
+UniProt,ITPR3,A0A452DXH8,Capra hircus,9925,2653,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A452DXH8
+UniProt,ITPR3,A0A452QKA9,Ursus americanus,9643,2656,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A452QKA9
+UniProt,ITPR3,A0A663F4Z7,Aquila chrysaetos chrysaetos,223781,2643,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A663F4Z7
+UniProt,ITPR3,A0A670J3V1,Podarcis muralis,64176,2637,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A670J3V1
+UniProt,ITPR3,A0A8B9C2H9,Anser brachyrhynchus,132585,2440,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8B9C2H9
+UniProt,ITPR3,A0A8C0H242,Chelonoidis abingdonii,106734,2663,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C0H242
+UniProt,ITPR3,A0A8C2U7R5,Coturnix japonica,93934,2659,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C2U7R5
+UniProt,ITPR3,A0A8C5LGU4,Jaculus jaculus,51337,2673,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C5LGU4
+UniProt,ITPR3,A0A8C6FZN8,Moschus moschiferus,68415,2664,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6FZN8
+UniProt,ITPR3,A0A8C6RBC5,Nannospalax galili,1026970,2670,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6RBC5
+UniProt,ITPR3,A0A9L0KGC5,Equus asinus,9793,2680,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A9L0KGC5
+UniProt,ITPR3,G1KSL8,Anolis carolinensis,28377,2659,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G1KSL8
+UniProt,ITPR3,H0W9F6,Cavia porcellus,10141,2663,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/H0W9F6
+UniProt,ITPR3,U3I675,Anas platyrhynchos platyrhynchos,8840,2613,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/U3I675
+UniProt,ITPR3,A0A287BL11,Sus scrofa,9823,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A287BL11
+UniProt,ITPR3,A0A2I3H921,Nomascus leucogenys,61853,2755,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2I3H921
+UniProt,ITPR3,A0A672UMW1,Strigops habroptila,2489341,2621,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A672UMW1
+UniProt,ITPR3,A0A6P5LEC9,Phascolarctos cinereus,38626,2668,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P5LEC9
+UniProt,ITPR3,A0A8C6XGM2,Naja naja,35670,2658,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6XGM2
+UniProt,ITPR3,G3TPV4,Loxodonta africana,9785,2670,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G3TPV4
+UniProt,ITPR3,K7G568,Pelodiscus sinensis,13735,2675,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/K7G568
+UniProt,ITPR3,A0A7M4F8Y9,Crocodylus porosus,8502,2662,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7M4F8Y9
+UniProt,ITPR3,A0A8C2VCF9,Chinchilla lanigera,34839,2621,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C2VCF9
+UniProt,ITPR3,A0A8C9D5G5,Panthera leo,9689,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9D5G5
+UniProt,ITPR3,A0A8I3Q2P2,Canis lupus familiaris,9615,2689,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8I3Q2P2
+UniProt,ITPR3,G3VVL0,Sarcophilus harrisii,9305,2667,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G3VVL0
+UniProt,ITPR3,G7MRR0,Macaca mulatta,9544,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G7MRR0
+UniProt,ITPR3,A0ABK0L4A4,Rattus norvegicus,10116,2824,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABK0L4A4
+UniProt,ITPR3,C7E1V1,Rattus norvegicus,10116,2670,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/C7E1V1
+UniProt,ITPR3,A0A0G2K9N6,Rattus norvegicus,10116,2649,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A0G2K9N6
+UniProt,ITPR3,A0A3Q1LW35,Bos taurus,9913,2648,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3Q1LW35
+UniProt,ITPR3,A0A8C4SWF1,Erpetoichthys calabaricus,27687,2661,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4SWF1
+UniProt,ITPR3,A0A8C6KTI7,Nothobranchius furzeri,105023,2645,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6KTI7
+UniProt,ITPR3,A0A8C6KWV8,Nothobranchius furzeri,105023,2670,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6KWV8
+UniProt,ITPR3,A0A8C6NM46,Nothobranchius furzeri,105023,2636,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6NM46
+UniProt,ITPR3,A0A8C6KXP2,Nothobranchius furzeri,105023,2715,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6KXP2
+UniProt,ITPR3,A0A2I3HA68,Nomascus leucogenys,61853,2749,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2I3HA68
+UniProt,ITPR3,A0A2K6R3W2,Rhinopithecus roxellana,61622,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K6R3W2
+UniProt,ITPR3,A0A2K6R3Y3,Rhinopithecus roxellana,61622,2675,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K6R3Y3
+UniProt,ITPR3,A0A452DXT8,Capra hircus,9925,2624,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A452DXT8
+UniProt,ITPR3,A0A4W3GG02,Callorhinchus milii,7868,2580,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W3GG02
+UniProt,ITPR3,A0A4W3GI20,Callorhinchus milii,7868,2576,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W3GI20
+UniProt,ITPR3,A0A4W6FQN2,Lates calcarifer,8187,2161,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W6FQN2
+UniProt,ITPR3,A0A4W6FQP1,Lates calcarifer,8187,2151,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W6FQP1
+UniProt,ITPR3,A0A4W6FSE6,Lates calcarifer,8187,2183,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W6FSE6
+UniProt,ITPR3,A0A4W6FSH0,Lates calcarifer,8187,2159,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W6FSH0
+UniProt,ITPR3,A0A5F5PVC9,Equus caballus,9796,2614,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F5PVC9
+UniProt,ITPR3,A0A5F8G2F2,Monodelphis domestica,13616,2558,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F8G2F2
+UniProt,ITPR3,A0A5F9C7Z9,Oryctolagus cuniculus,9986,2546,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F9C7Z9
+UniProt,ITPR3,A0A663MIF9,Athene cunicularia,194338,2666,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A663MIF9
+UniProt,ITPR3,A0A663MKM9,Athene cunicularia,194338,2585,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A663MKM9
+UniProt,ITPR3,A0A669AYM2,Oreochromis niloticus,8128,2576,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A669AYM2
+UniProt,ITPR3,A0A669DV13,Oreochromis niloticus,8128,2537,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A669DV13
+UniProt,ITPR3,A0A671YLY5,Sparus aurata,8175,2563,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A671YLY5
+UniProt,ITPR3,A0A671YPI9,Sparus aurata,8175,2589,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A671YPI9
+UniProt,ITPR3,A0A671YUA4,Sparus aurata,8175,2545,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A671YUA4
+UniProt,ITPR3,A0A672NKB3,Sinocyclocheilus grahami,75366,2605,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A672NKB3
+UniProt,ITPR3,A0A672NKN1,Sinocyclocheilus grahami,75366,2641,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A672NKN1
+UniProt,ITPR3,A0A6J1ZAI4,Acinonyx jubatus,32536,2349,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J1ZAI4
+UniProt,ITPR3,A0A6J2H940,Pipra filicauda,649802,2662,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J2H940
+UniProt,ITPR3,A0A6J2LDT2,Phyllostomus discolor,89673,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J2LDT2
+UniProt,ITPR3,A0A6J3E5N5,Aythya fuligula,219594,2665,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J3E5N5
+UniProt,ITPR3,A0A6J3S0A2,Tursiops truncatus,9739,2678,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J3S0A2
+UniProt,ITPR3,A0A6P8F273,Clupea harengus,7950,2579,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P8F273
+UniProt,ITPR3,A0A6P8PCR3,Geotrypetes seraphini,260995,2692,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P8PCR3
+UniProt,ITPR3,A0A6P8PF00,Geotrypetes seraphini,260995,2651,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P8PF00
+UniProt,ITPR3,A0A7M4F7T8,Crocodylus porosus,8502,2605,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7M4F7T8
+UniProt,ITPR3,A0A7M4FZF3,Crocodylus porosus,8502,2626,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7M4FZF3
+UniProt,ITPR3,A0A7M4FZI7,Crocodylus porosus,8502,2613,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7M4FZI7
+UniProt,ITPR3,A0A7N6BDI0,Anabas testudineus,64144,2608,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7N6BDI0
+UniProt,ITPR3,A0A803XLQ2,Meleagris gallopavo,9103,2311,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A803XLQ2
+UniProt,ITPR3,A0A8B8RLC0,Camelus ferus,419612,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8B8RLC0
+UniProt,ITPR3,A0A8C0V730,Cyanistes caeruleus,156563,2620,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C0V730
+UniProt,ITPR3,A0A8C2W983,Cyclopterus lumpus,8103,2667,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C2W983
+UniProt,ITPR3,A0A8C2WHV3,Cyclopterus lumpus,8103,2596,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C2WHV3
+UniProt,ITPR3,A0A8C4VNA6,Gopherus evgoodei,1825980,2566,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4VNA6
+UniProt,ITPR3,A0A8C4VPE7,Gopherus evgoodei,1825980,2638,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4VPE7
+UniProt,ITPR3,A0A8C6JUG9,Melopsittacus undulatus,13146,2646,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6JUG9
+UniProt,ITPR3,A0A8C7MND3,Oncorhynchus kisutch,8019,2608,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C7MND3
+UniProt,ITPR3,A0A8C9SF73,Scleropages formosus,113540,2646,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9SF73
+UniProt,ITPR3,A0A8C9SFD4,Scleropages formosus,113540,2655,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9SFD4
+UniProt,ITPR3,A0A8C9U1W1,Scleropages formosus,113540,2626,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9U1W1
+UniProt,ITPR3,A0A8C9VEV0,Scleropages formosus,113540,2634,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9VEV0
+UniProt,ITPR3,A0A8D2MPX2,Zonotrichia albicollis,44394,2602,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8D2MPX2
+UniProt,ITPR3,A0A8D2QET7,Zonotrichia albicollis,44394,2661,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8D2QET7
+UniProt,ITPR3,A0A8I3S572,Canis lupus familiaris,9615,2672,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8I3S572
+UniProt,ITPR3,A0A8I3S857,Canis lupus familiaris,9615,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8I3S857
+UniProt,ITPR3,A0A8I3S900,Canis lupus familiaris,9615,2679,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8I3S900
+UniProt,ITPR3,A0A8U0RTG8,Mustela putorius furo,9669,2860,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8U0RTG8
+UniProt,ITPR3,A0AAX7TT85,Astatotilapia calliptera,8154,2640,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAX7TT85
+UniProt,ITPR3,A0AAY4CD72,Denticeps clupeoides,299321,2621,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAY4CD72
+UniProt,ITPR3,A0AAY4CE72,Denticeps clupeoides,299321,2621,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAY4CE72
+UniProt,ITPR3,A0AAY4CEB4,Denticeps clupeoides,299321,2609,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAY4CEB4
+UniProt,ITPR3,A0AAY4DE77,Denticeps clupeoides,299321,2536,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAY4DE77
+UniProt,ITPR3,A0AAZ3SUC6,Oncorhynchus tshawytscha,74940,2610,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AAZ3SUC6
+UniProt,ITPR3,A0ABM1KNA5,Gekko japonicus,146911,2664,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM1KNA5
+UniProt,ITPR3,A0ABM2WCA5,Mesocricetus auratus,10036,2676,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM2WCA5
+UniProt,ITPR3,A0ABM3U7J0,Balaenoptera acutorostrata,9767,2712,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM3U7J0
+UniProt,ITPR3,A0ABM4LJA9,Equus przewalskii,9798,2680,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM4LJA9
+UniProt,ITPR3,A0ABM4LJB0,Equus przewalskii,9798,2614,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0ABM4LJB0
+UniProt,ITPR3,G1PJG4,Myotis lucifugus,59463,2048,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G1PJG4
+UniProt,ITPR3,G3RJI5,Gorilla gorilla gorilla,9595,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/G3RJI5
+UniProt,ITPR3,H2MVS4,Oryzias latipes,8090,2309,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/H2MVS4
+UniProt,ITPR3,U3JMP8,Ficedula albicollis,59894,2618,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/U3JMP8
+UniProt,ITPR3,A0A1D5QUC0,Macaca mulatta,9544,2665,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A1D5QUC0
+UniProt,ITPR3,A0A1S3GP46,Dipodomys ordii,10020,2674,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A1S3GP46
+UniProt,ITPR3,A0A2K5R5T6,Cebus imitator,2715852,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K5R5T6
+UniProt,ITPR3,A0A2K6R3Z4,Rhinopithecus roxellana,61622,2647,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2K6R3Z4
+UniProt,ITPR3,A0A2U3WGD9,Odobenus rosmarus divergens,9708,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2U3WGD9
+UniProt,ITPR3,A0A2Y9EA46,Trichechus manatus latirostris,127582,2670,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A2Y9EA46
+UniProt,ITPR3,A0A341D562,Neophocaena asiaeorientalis asiaeorientalis,1706337,2670,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A341D562
+UniProt,ITPR3,A0A452QKD5,Ursus americanus,9643,2641,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A452QKD5
+UniProt,ITPR3,A0A452QKD7,Ursus americanus,9643,2609,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A452QKD7
+UniProt,ITPR3,A0A4W3GFW2,Callorhinchus milii,7868,2608,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W3GFW2
+UniProt,ITPR3,A0A4W3GWE7,Callorhinchus milii,7868,2630,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W3GWE7
+UniProt,ITPR3,A0A4W3GWK7,Callorhinchus milii,7868,2601,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W3GWK7
+UniProt,ITPR3,A0A4W4FMB0,Electrophorus electricus,8005,2643,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A4W4FMB0
+UniProt,ITPR3,A0A5F8G8R3,Monodelphis domestica,13616,2575,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F8G8R3
+UniProt,ITPR3,A0A5F8GTT0,Monodelphis domestica,13616,2560,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F8GTT0
+UniProt,ITPR3,A0A5F8H1Z3,Monodelphis domestica,13616,2569,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A5F8H1Z3
+UniProt,ITPR3,A0A667X7S2,Myripristis murdjan,586833,208,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A667X7S2
+UniProt,ITPR3,A0A669CSE7,Oreochromis niloticus,8128,2555,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A669CSE7
+UniProt,ITPR3,A0A670J569,Podarcis muralis,64176,2620,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A670J569
+UniProt,ITPR3,A0A670J605,Podarcis muralis,64176,2626,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A670J605
+UniProt,ITPR3,A0A671L7Q2,Sinocyclocheilus anshuiensis,1608454,2600,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A671L7Q2
+UniProt,ITPR3,A0A671LC58,Sinocyclocheilus anshuiensis,1608454,2602,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A671LC58
+UniProt,ITPR3,A0A671YNJ9,Sparus aurata,8175,2612,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A671YNJ9
+UniProt,ITPR3,A0A671YPP4,Sparus aurata,8175,2583,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A671YPP4
+UniProt,ITPR3,A0A6I9HRN1,Geospiza fortis,48883,2664,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6I9HRN1
+UniProt,ITPR3,A0A6J2W569,Chanos chanos,29144,2672,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J2W569
+UniProt,ITPR3,A0A6J3FU68,Sapajus apella,9515,2662,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J3FU68
+UniProt,ITPR3,A0A6J3S0S3,Tursiops truncatus,9739,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6J3S0S3
+UniProt,ITPR3,A0A6P3I598,Bison bison bison,43346,2543,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P3I598
+UniProt,ITPR3,A0A6P6D3Z6,Pteropus vampyrus,132908,2600,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P6D3Z6
+UniProt,ITPR3,A0A6P7ZAD8,Microcaecilia unicolor,1415580,2681,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P7ZAD8
+UniProt,ITPR3,A0A6P8NC52,Geotrypetes seraphini,260995,2683,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P8NC52
+UniProt,ITPR3,A0A6P9BS57,Pantherophis guttatus,94885,2666,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P9BS57
+UniProt,ITPR3,A0A6P9FEA9,Zalophus californianus,9704,2668,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P9FEA9
+UniProt,ITPR3,A0A6P9FLB0,Zalophus californianus,9704,2671,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A6P9FLB0
+UniProt,ITPR3,A0A7M4F797,Crocodylus porosus,8502,2608,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7M4F797
+UniProt,ITPR3,A0A7M4F8M8,Crocodylus porosus,8502,2577,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A7M4F8M8
+UniProt,ITPR3,A0A8B8YMS3,Balaenoptera musculus,9771,2678,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8B8YMS3
+UniProt,ITPR3,A0A8B8YVL0,Balaenoptera musculus,9771,2487,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8B8YVL0
+UniProt,ITPR3,A0A8C0V438,Cyanistes caeruleus,156563,2570,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C0V438
+UniProt,ITPR3,A0A8C0VA62,Cyanistes caeruleus,156563,2583,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C0VA62
+UniProt,ITPR3,A0A8C2U9K9,Coturnix japonica,93934,2651,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C2U9K9
+UniProt,ITPR3,A0A8C2UB55,Coturnix japonica,93934,2634,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C2UB55
+UniProt,ITPR3,A0A8C3EWF0,Corvus moneduloides,1196302,2643,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3EWF0
+UniProt,ITPR3,A0A8C3EY50,Corvus moneduloides,1196302,2592,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3EY50
+UniProt,ITPR3,A0A8C3EY59,Corvus moneduloides,1196302,2630,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3EY59
+UniProt,ITPR3,A0A8C3F4C5,Corvus moneduloides,1196302,2660,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C3F4C5
+UniProt,ITPR3,A0A8C4VN61,Gopherus evgoodei,1825980,2629,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C4VN61
+UniProt,ITPR3,A0A8C6JU91,Melopsittacus undulatus,13146,2657,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6JU91
+UniProt,ITPR3,A0A8C6XFZ5,Naja naja,35670,2578,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C6XFZ5
+UniProt,ITPR3,A0A8C9NWJ6,Serinus canaria,9135,2629,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9NWJ6
+UniProt,ITPR3,A0A8C9NXI9,Serinus canaria,9135,2616,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9NXI9
+UniProt,ITPR3,A0A8C9SM22,Scleropages formosus,113540,2632,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9SM22
+UniProt,ITPR3,A0A8C9TMY1,Scleropages formosus,113540,2629,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9TMY1
+UniProt,ITPR3,A0A8C9V8P5,Scleropages formosus,113540,2659,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C9V8P5
+UniProt,ITPR3,A0A8D2MP85,Zonotrichia albicollis,44394,2627,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8D2MP85
+UniProt,ITPR3,A0A8D2MRN0,Zonotrichia albicollis,44394,2654,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8D2MRN0
+NCBI,ITPR1,XP_086991404.1,,133434,2743,,,"inositol 1,4,5-trisphosphate receptor-like isoform X7 [Acanthaster planci]",https://www.ncbi.nlm.nih.gov/protein/XP_086991404.1
+NCBI,ITPR1,XP_086991403.1,,133434,2747,,,"inositol 1,4,5-trisphosphate receptor-like isoform X6 [Acanthaster planci]",https://www.ncbi.nlm.nih.gov/protein/XP_086991403.1
+NCBI,ITPR1,XP_086991402.1,,133434,2749,,,"inositol 1,4,5-trisphosphate receptor-like isoform X5 [Acanthaster planci]",https://www.ncbi.nlm.nih.gov/protein/XP_086991402.1
+NCBI,ITPR1,XP_086991401.1,,133434,2755,,,"inositol 1,4,5-trisphosphate receptor-like isoform X4 [Acanthaster planci]",https://www.ncbi.nlm.nih.gov/protein/XP_086991401.1
+NCBI,ITPR1,XP_086991400.1,,133434,2760,,,"inositol 1,4,5-trisphosphate receptor-like isoform X3 [Acanthaster planci]",https://www.ncbi.nlm.nih.gov/protein/XP_086991400.1
+NCBI,ITPR1,XP_086991399.1,,133434,2761,,,"inositol 1,4,5-trisphosphate receptor-like isoform X2 [Acanthaster planci]",https://www.ncbi.nlm.nih.gov/protein/XP_086991399.1
+NCBI,ITPR1,XP_086991398.1,,133434,2766,,,"inositol 1,4,5-trisphosphate receptor-like isoform X1 [Acanthaster planci]",https://www.ncbi.nlm.nih.gov/protein/XP_086991398.1
+NCBI,ITPR1,XP_086795335.1,,8324,2735,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 [Lissotriton vulgaris]",https://www.ncbi.nlm.nih.gov/protein/XP_086795335.1
+NCBI,ITPR1,XP_086702342.1,,156563,2711,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X24 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702342.1
+NCBI,ITPR1,XP_086702341.1,,156563,2748,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X23 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702341.1
+NCBI,ITPR1,XP_086702340.1,,156563,2726,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X22 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702340.1
+NCBI,ITPR1,XP_086702339.1,,156563,2735,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X21 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702339.1
+NCBI,ITPR1,XP_086702338.1,,156563,2763,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X20 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702338.1
+NCBI,ITPR1,XP_086702337.1,,156563,2764,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X19 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702337.1
+NCBI,ITPR1,XP_086702336.1,,156563,2613,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X18 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702336.1
+NCBI,ITPR1,XP_086702335.1,,156563,2718,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X17 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702335.1
+NCBI,ITPR1,XP_086702333.1,,156563,2727,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X16 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702333.1
+NCBI,ITPR1,XP_086702332.1,,156563,2744,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X15 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702332.1
+NCBI,ITPR1,XP_086702331.1,,156563,2740,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X14 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702331.1
+NCBI,ITPR1,XP_086702330.1,,156563,2749,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X13 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702330.1
+NCBI,ITPR1,XP_086702329.1,,156563,2758,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X12 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702329.1
+NCBI,ITPR1,XP_086702328.1,,156563,2758,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X11 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702328.1
+NCBI,ITPR1,XP_086702327.1,,156563,2759,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X10 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702327.1
+NCBI,ITPR1,XP_086702326.1,,156563,2765,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X9 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702326.1
+NCBI,ITPR1,XP_086702325.1,,156563,2772,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X8 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702325.1
+NCBI,ITPR1,XP_086702324.1,,156563,2773,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X7 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702324.1
+NCBI,ITPR1,XP_086702322.1,,156563,2773,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X6 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702322.1
+NCBI,ITPR1,XP_086702321.1,,156563,2777,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702321.1
+NCBI,ITPR1,XP_086702320.1,,156563,2778,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702320.1
+NCBI,ITPR1,XP_086702319.1,,156563,2778,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702319.1
+NCBI,ITPR1,XP_086702318.1,,156563,2786,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702318.1
+NCBI,ITPR1,XP_086702317.1,,156563,2787,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086702317.1
+NCBI,ITPR1,XP_086612157.1,,187382,2750,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 [Chlamydotis macqueenii]",https://www.ncbi.nlm.nih.gov/protein/XP_086612157.1
+NCBI,ITPR1,XP_086553676.1,,9696,2694,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X9 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086553676.1
+NCBI,ITPR1,XP_086553675.1,,9696,2709,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X8 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086553675.1
+NCBI,ITPR1,XP_086553674.1,,9696,2709,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X7 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086553674.1
+NCBI,ITPR1,XP_086553673.1,,9696,2733,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X6 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086553673.1
+NCBI,ITPR1,XP_086553672.1,,9696,2734,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086553672.1
+NCBI,ITPR1,XP_086553671.1,,9696,2748,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086553671.1
+NCBI,ITPR1,XP_086553670.1,,9696,2748,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086553670.1
+NCBI,ITPR1,XP_086553669.1,,9696,2749,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086553669.1
+NCBI,ITPR1,XP_086553668.1,,9696,2749,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086553668.1
+NCBI,ITPR1,XP_086584505.1,,9565,2764,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 [Theropithecus gelada]",https://www.ncbi.nlm.nih.gov/protein/XP_086584505.1
+NCBI,ITPR1,CAR8091062.1,,71582,2723,,,"inositol 1,4,5-trisphosphate receptor type 1 isoform X8 [Rana dybowskii]",https://www.ncbi.nlm.nih.gov/protein/CAR8091062.1
+NCBI,ITPR1,CAR8091061.1,,71582,2727,,,"inositol 1,4,5-trisphosphate receptor type 1 isoform X8 [Rana dybowskii]",https://www.ncbi.nlm.nih.gov/protein/CAR8091061.1
+NCBI,ITPR1,CAR8091060.1,,71582,2708,,,"inositol 1,4,5-trisphosphate receptor type 1 isoform X8 [Rana dybowskii]",https://www.ncbi.nlm.nih.gov/protein/CAR8091060.1
+NCBI,ITPR1,CAR8091059.1,,71582,2712,,,"inositol 1,4,5-trisphosphate receptor type 1 isoform X8 [Rana dybowskii]",https://www.ncbi.nlm.nih.gov/protein/CAR8091059.1
+NCBI,ITPR1,CAR8091058.1,,71582,2700,,,"inositol 1,4,5-trisphosphate receptor type 1 isoform X8 [Rana dybowskii]",https://www.ncbi.nlm.nih.gov/protein/CAR8091058.1
+NCBI,ITPR1,CAR8091057.1,,71582,2696,,,"inositol 1,4,5-trisphosphate receptor type 1 isoform X8 [Rana dybowskii]",https://www.ncbi.nlm.nih.gov/protein/CAR8091057.1
+NCBI,ITPR1,CAR8091056.1,,71582,2681,,,"inositol 1,4,5-trisphosphate receptor type 1 isoform X8 [Rana dybowskii]",https://www.ncbi.nlm.nih.gov/protein/CAR8091056.1
+NCBI,ITPR1,CAR8091055.1,,71582,2685,,,"inositol 1,4,5-trisphosphate receptor type 1 isoform X8 [Rana dybowskii]",https://www.ncbi.nlm.nih.gov/protein/CAR8091055.1
+NCBI,ITPR1,XP_009982441.2,,121530,2694,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X8 [Tauraco erythrolophus]",https://www.ncbi.nlm.nih.gov/protein/XP_009982441.2
+NCBI,ITPR1,XP_086475040.1,,121530,2741,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X7 [Tauraco erythrolophus]",https://www.ncbi.nlm.nih.gov/protein/XP_086475040.1
+NCBI,ITPR1,XP_009982440.2,,121530,2709,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X6 [Tauraco erythrolophus]",https://www.ncbi.nlm.nih.gov/protein/XP_009982440.2
+NCBI,ITPR1,XP_086475039.1,,121530,2756,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Tauraco erythrolophus]",https://www.ncbi.nlm.nih.gov/protein/XP_086475039.1
+NCBI,ITPR1,XP_009982439.2,,121530,2712,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Tauraco erythrolophus]",https://www.ncbi.nlm.nih.gov/protein/XP_009982439.2
+NCBI,ITPR1,XP_086475037.1,,121530,2759,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Tauraco erythrolophus]",https://www.ncbi.nlm.nih.gov/protein/XP_086475037.1
+NCBI,ITPR1,XP_086475036.1,,121530,2764,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Tauraco erythrolophus]",https://www.ncbi.nlm.nih.gov/protein/XP_086475036.1
+NCBI,ITPR1,XP_086475035.1,,121530,2764,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Tauraco erythrolophus]",https://www.ncbi.nlm.nih.gov/protein/XP_086475035.1
+NCBI,ITPR1,XP_086326646.1,,188344,2764,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X7 [Leptosomus discolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086326646.1
+NCBI,ITPR1,XP_086326645.1,,188344,2697,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X6 [Leptosomus discolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086326645.1
+NCBI,ITPR1,XP_086326644.1,,188344,2721,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Leptosomus discolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086326644.1
+NCBI,ITPR1,XP_086326643.1,,188344,2712,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Leptosomus discolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086326643.1
+NCBI,ITPR1,XP_086326642.1,,188344,2749,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Leptosomus discolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086326642.1
+NCBI,ITPR1,XP_086326641.1,,188344,2773,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Leptosomus discolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086326641.1
+NCBI,ITPR1,XP_086326640.1,,188344,2764,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Leptosomus discolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086326640.1
+NCBI,ITPR1,XP_086222753.1,,30521,2748,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X6 [Bos grunniens]",https://www.ncbi.nlm.nih.gov/protein/XP_086222753.1
+NCBI,ITPR1,XP_086222752.1,,30521,1691,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Bos grunniens]",https://www.ncbi.nlm.nih.gov/protein/XP_086222752.1
+NCBI,ITPR1,XP_086222751.1,,30521,2087,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Bos grunniens]",https://www.ncbi.nlm.nih.gov/protein/XP_086222751.1
+NCBI,ITPR1,XP_086222750.1,,30521,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Bos grunniens]",https://www.ncbi.nlm.nih.gov/protein/XP_086222750.1
+NCBI,ITPR1,XP_086222749.1,,30521,2694,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Bos grunniens]",https://www.ncbi.nlm.nih.gov/protein/XP_086222749.1
+NCBI,ITPR1,XP_086222748.1,,30521,2694,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Bos grunniens]",https://www.ncbi.nlm.nih.gov/protein/XP_086222748.1
+NCBI,ITPR1,XP_086222747.1,,30521,2709,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Bos grunniens]",https://www.ncbi.nlm.nih.gov/protein/XP_086222747.1
+NCBI,ITPR1,XP_086222746.1,,30521,2709,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Bos grunniens]",https://www.ncbi.nlm.nih.gov/protein/XP_086222746.1
+NCBI,ITPR1,CAR5357574.1,,48168,2549,,,ITPR1 [Thunnus atlanticus],https://www.ncbi.nlm.nih.gov/protein/CAR5357574.1
+NCBI,ITPR1,CAR5355518.1,,48168,2592,,,ITPR1 [Thunnus atlanticus],https://www.ncbi.nlm.nih.gov/protein/CAR5355518.1
+NCBI,ITPR1,CAR5220162.1,,8237,2580,,,ITPR1 [Thunnus thynnus],https://www.ncbi.nlm.nih.gov/protein/CAR5220162.1
+NCBI,ITPR1,CAR5219793.1,,8237,2575,,,ITPR1 [Thunnus thynnus],https://www.ncbi.nlm.nih.gov/protein/CAR5219793.1
+NCBI,ITPR1,CAR5356334.1,,8236,2547,,,ITPR1 [Thunnus albacares],https://www.ncbi.nlm.nih.gov/protein/CAR5356334.1
+NCBI,ITPR1,CAR5354184.1,,8236,2616,,,ITPR1 [Thunnus albacares],https://www.ncbi.nlm.nih.gov/protein/CAR5354184.1
+NCBI,ITPR1,CAR5355023.1,,8235,2501,,,ITPR1 [Thunnus alalunga],https://www.ncbi.nlm.nih.gov/protein/CAR5355023.1
+NCBI,ITPR1,CAR5353052.1,,8235,2592,,,ITPR1 [Thunnus alalunga],https://www.ncbi.nlm.nih.gov/protein/CAR5353052.1
+NCBI,ITPR1,CAR5360563.1,,48169,2505,,,Itpr1 [Thunnus tonggol],https://www.ncbi.nlm.nih.gov/protein/CAR5360563.1
+NCBI,ITPR1,CAR5358621.1,,48169,2592,,,ITPR1 [Thunnus tonggol],https://www.ncbi.nlm.nih.gov/protein/CAR5358621.1
+NCBI,ITPR1,CAR5360718.1,,8238,2518,,,ITPR1 [Thunnus orientalis],https://www.ncbi.nlm.nih.gov/protein/CAR5360718.1
+NCBI,ITPR1,CAR5358735.1,,8238,2592,,,ITPR1 [Thunnus orientalis],https://www.ncbi.nlm.nih.gov/protein/CAR5358735.1
+NCBI,ITPR1,CAR5353553.1,,8226,2619,,,Itpr1 [Katsuwonus pelamis],https://www.ncbi.nlm.nih.gov/protein/CAR5353553.1
+NCBI,ITPR1,CAR5351519.1,,8226,2594,,,ITPR1 [Katsuwonus pelamis],https://www.ncbi.nlm.nih.gov/protein/CAR5351519.1
+NCBI,ITPR1,CAR5355210.1,,8241,2489,,,ITPR1 [Thunnus obesus],https://www.ncbi.nlm.nih.gov/protein/CAR5355210.1
+NCBI,ITPR1,CAR5353133.1,,8241,3001,,,ITPR1 [Thunnus obesus],https://www.ncbi.nlm.nih.gov/protein/CAR5353133.1
+NCBI,ITPR1,XP_085696321.1,,10089,2746,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Mus caroli]",https://www.ncbi.nlm.nih.gov/protein/XP_085696321.1
+NCBI,ITPR1,XP_085696320.1,,10089,2747,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Mus caroli]",https://www.ncbi.nlm.nih.gov/protein/XP_085696320.1
+NCBI,ITPR1,XP_085542944.1,,447135,2757,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 [Myodes glareolus]",https://www.ncbi.nlm.nih.gov/protein/XP_085542944.1
+NCBI,ITPR1,KAN7400215.1,,44507,2746,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 [Podocnemis expansa]",https://www.ncbi.nlm.nih.gov/protein/KAN7400215.1
+NCBI,ITPR1,KAM8930309.1,,233781,2683,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 2-T2 [Pelodytes ibericus]",https://www.ncbi.nlm.nih.gov/protein/KAM8930309.1
+NCBI,ITPR1,KAM8930308.1,,233781,2696,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 1-T1 [Pelodytes ibericus]",https://www.ncbi.nlm.nih.gov/protein/KAM8930308.1
+NCBI,ITPR1,XP_085480637.1,,8323,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Triturus cristatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085480637.1
+NCBI,ITPR1,XP_085480636.1,,8323,2714,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Triturus cristatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085480636.1
+NCBI,ITPR1,XP_085480635.1,,8323,2709,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Triturus cristatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085480635.1
+NCBI,ITPR1,XP_085480634.1,,8323,2712,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Triturus cristatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085480634.1
+NCBI,ITPR1,XP_085480633.1,,8323,2797,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Triturus cristatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085480633.1
+NCBI,ITPR1,XP_085372245.1,,93934,2697,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X18 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372245.1
+NCBI,ITPR1,XP_085372244.1,,93934,2736,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X17 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372244.1
+NCBI,ITPR1,XP_085372243.1,,93934,2712,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X16 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372243.1
+NCBI,ITPR1,XP_085372242.1,,93934,2750,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X15 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372242.1
+NCBI,ITPR1,XP_085372241.1,,93934,1965,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X14 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372241.1
+NCBI,ITPR1,XP_085372240.1,,93934,2641,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X13 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372240.1
+NCBI,ITPR1,XP_085372238.1,,93934,2655,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X12 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372238.1
+NCBI,ITPR1,XP_085372237.1,,93934,2708,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X11 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372237.1
+NCBI,ITPR1,XP_085372236.1,,93934,2747,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X10 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372236.1
+NCBI,ITPR1,XP_085372235.1,,93934,2749,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X9 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372235.1
+NCBI,ITPR1,XP_085372234.1,,93934,2749,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X8 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372234.1
+NCBI,ITPR1,XP_085372233.1,,93934,2750,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X7 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372233.1
+NCBI,ITPR1,XP_085372232.1,,93934,2764,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X6 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372232.1
+NCBI,ITPR1,XP_085372231.1,,93934,2763,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372231.1
+NCBI,ITPR1,XP_085372230.1,,93934,2765,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372230.1
+NCBI,ITPR1,XP_085372229.1,,93934,2787,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372229.1
+NCBI,ITPR1,XP_085372227.1,,93934,2788,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372227.1
+NCBI,ITPR1,XP_085372226.1,,93934,2802,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085372226.1
+NCBI,ITPR1,XP_085446385.1,,40157,2716,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X15 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446385.1
+NCBI,ITPR1,XP_085446384.1,,40157,2731,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X14 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446384.1
+NCBI,ITPR1,XP_085446383.1,,40157,2753,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X13 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446383.1
+NCBI,ITPR1,XP_085446382.1,,40157,2768,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X12 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446382.1
+NCBI,ITPR1,XP_085446381.1,,40157,2609,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X11 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446381.1
+NCBI,ITPR1,XP_085446380.1,,40157,2783,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X10 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446380.1
+NCBI,ITPR1,XP_085446379.1,,40157,2745,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X9 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446379.1
+NCBI,ITPR1,XP_085446378.1,,40157,2754,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X8 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446378.1
+NCBI,ITPR1,XP_085446377.1,,40157,2755,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X7 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446377.1
+NCBI,ITPR1,XP_085446376.1,,40157,2761,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X6 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446376.1
+NCBI,ITPR1,XP_085446375.1,,40157,2768,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446375.1
+NCBI,ITPR1,XP_085446374.1,,40157,2769,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446374.1
+NCBI,ITPR1,XP_085446373.1,,40157,2769,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446373.1
+NCBI,ITPR1,XP_085446371.1,,40157,2777,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446371.1
+NCBI,ITPR1,XP_085446370.1,,40157,2782,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085446370.1
+NCBI,ITPR1,YFO49868.1,,9925,2709,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 5-T7 [Capra hircus]",https://www.ncbi.nlm.nih.gov/protein/YFO49868.1
+NCBI,ITPR1,YFO49867.1,,9925,2719,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 4-T6 [Capra hircus]",https://www.ncbi.nlm.nih.gov/protein/YFO49867.1
+NCBI,ITPR1,YFO49866.1,,9925,2734,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 3-T5 [Capra hircus]",https://www.ncbi.nlm.nih.gov/protein/YFO49866.1
+NCBI,ITPR1,YFO49865.1,,9925,2734,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 3-T4 [Capra hircus]",https://www.ncbi.nlm.nih.gov/protein/YFO49865.1
+NCBI,ITPR1,YFO49864.1,,9925,2748,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 2-T3 [Capra hircus]",https://www.ncbi.nlm.nih.gov/protein/YFO49864.1
+NCBI,ITPR1,YFO49863.1,,9925,2749,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 1-T2 [Capra hircus]",https://www.ncbi.nlm.nih.gov/protein/YFO49863.1
+NCBI,ITPR1,YFO49862.1,,9925,2749,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 1-T1 [Capra hircus]",https://www.ncbi.nlm.nih.gov/protein/YFO49862.1
+NCBI,ITPR1,XP_027625577.1,,246437,2744,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X9 [Tupaia chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_027625577.1
+NCBI,ITPR1,XP_027625576.1,,246437,2736,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X6 [Tupaia chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_027625576.1
+NCBI,ITPR1,XP_027625575.1,,246437,2759,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Tupaia chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_027625575.1
+NCBI,ITPR1,XP_014441258.1,,246437,2696,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X11 [Tupaia chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_014441258.1
+NCBI,ITPR1,XP_014441257.1,,246437,2711,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X10 [Tupaia chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_014441257.1
+NCBI,ITPR1,XP_014441256.1,,246437,2720,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X8 [Tupaia chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_014441256.1
+NCBI,ITPR1,XP_014441255.1,,246437,2736,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X7 [Tupaia chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_014441255.1
+NCBI,ITPR1,XP_014441254.1,,246437,2737,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Tupaia chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_014441254.1
+NCBI,ITPR1,XP_014441253.1,,246437,2745,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Tupaia chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_014441253.1
+NCBI,ITPR1,XP_014441252.1,,246437,2751,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Tupaia chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_014441252.1
+NCBI,ITPR1,XP_014441251.1,,246437,2760,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Tupaia chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_014441251.1
+NCBI,ITPR1,XP_085187212.1,,13616,2695,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X9 [Monodelphis domestica]",https://www.ncbi.nlm.nih.gov/protein/XP_085187212.1
+NCBI,ITPR1,XP_085187211.1,,13616,2734,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X8 [Monodelphis domestica]",https://www.ncbi.nlm.nih.gov/protein/XP_085187211.1
+NCBI,ITPR1,XP_085187210.1,,13616,2710,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X7 [Monodelphis domestica]",https://www.ncbi.nlm.nih.gov/protein/XP_085187210.1
+NCBI,ITPR1,XP_085187209.1,,13616,2726,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X6 [Monodelphis domestica]",https://www.ncbi.nlm.nih.gov/protein/XP_085187209.1
+NCBI,ITPR1,XP_085187208.1,,13616,2727,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Monodelphis domestica]",https://www.ncbi.nlm.nih.gov/protein/XP_085187208.1
+NCBI,ITPR1,XP_085187207.1,,13616,2733,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Monodelphis domestica]",https://www.ncbi.nlm.nih.gov/protein/XP_085187207.1
+NCBI,ITPR1,XP_085187206.1,,13616,2735,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Monodelphis domestica]",https://www.ncbi.nlm.nih.gov/protein/XP_085187206.1
+NCBI,ITPR1,XP_085187205.1,,13616,2735,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Monodelphis domestica]",https://www.ncbi.nlm.nih.gov/protein/XP_085187205.1
+NCBI,ITPR1,XP_085187204.1,,13616,2749,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Monodelphis domestica]",https://www.ncbi.nlm.nih.gov/protein/XP_085187204.1
+NCBI,ITPR1,XP_085187203.1,,13616,2750,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Monodelphis domestica]",https://www.ncbi.nlm.nih.gov/protein/XP_085187203.1
+NCBI,ITPR1,XP_085187201.1,,13616,2750,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Monodelphis domestica]",https://www.ncbi.nlm.nih.gov/protein/XP_085187201.1
+NCBI,ITPR1,XP_085156152.1,,8797,2604,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Rhea americana]",https://www.ncbi.nlm.nih.gov/protein/XP_085156152.1
+NCBI,ITPR1,XP_085156151.1,,8797,2697,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Rhea americana]",https://www.ncbi.nlm.nih.gov/protein/XP_085156151.1
+NCBI,ITPR1,XP_085156150.1,,8797,2712,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Rhea americana]",https://www.ncbi.nlm.nih.gov/protein/XP_085156150.1
+NCBI,ITPR1,XP_085092351.1,,9103,2749,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 [Meleagris gallopavo]",https://www.ncbi.nlm.nih.gov/protein/XP_085092351.1
+NCBI,ITPR1,KAO0884365.1,,9823,2748,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/KAO0884365.1
+NCBI,ITPR1,XP_084928364.1,,1497555,2711,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X11 [Lichenostomus cassidix]",https://www.ncbi.nlm.nih.gov/protein/XP_084928364.1
+NCBI,ITPR1,XP_084928363.1,,1497555,2726,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X10 [Lichenostomus cassidix]",https://www.ncbi.nlm.nih.gov/protein/XP_084928363.1
+NCBI,ITPR1,XP_084928362.1,,1497555,2735,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X9 [Lichenostomus cassidix]",https://www.ncbi.nlm.nih.gov/protein/XP_084928362.1
+NCBI,ITPR1,XP_084928361.1,,1497555,2740,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X8 [Lichenostomus cassidix]",https://www.ncbi.nlm.nih.gov/protein/XP_084928361.1
+NCBI,ITPR1,XP_084928360.1,,1497555,2749,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X7 [Lichenostomus cassidix]",https://www.ncbi.nlm.nih.gov/protein/XP_084928360.1
+NCBI,ITPR1,XP_084928359.1,,1497555,2750,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X6 [Lichenostomus cassidix]",https://www.ncbi.nlm.nih.gov/protein/XP_084928359.1
+NCBI,ITPR1,XP_084928358.1,,1497555,2764,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Lichenostomus cassidix]",https://www.ncbi.nlm.nih.gov/protein/XP_084928358.1
+NCBI,ITPR1,XP_084928357.1,,1497555,2765,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Lichenostomus cassidix]",https://www.ncbi.nlm.nih.gov/protein/XP_084928357.1
+NCBI,ITPR1,XP_084928356.1,,1497555,2773,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Lichenostomus cassidix]",https://www.ncbi.nlm.nih.gov/protein/XP_084928356.1
+NCBI,ITPR1,XP_084928355.1,,1497555,2779,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Lichenostomus cassidix]",https://www.ncbi.nlm.nih.gov/protein/XP_084928355.1
+NCBI,ITPR1,XP_084928353.1,,1497555,2788,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Lichenostomus cassidix]",https://www.ncbi.nlm.nih.gov/protein/XP_084928353.1
+NCBI,ITPR1,XP_084845346.1,,9823,2586,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X8 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/XP_084845346.1
+NCBI,ITPR1,XP_084845345.1,,9823,2601,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X7 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/XP_084845345.1
+NCBI,ITPR1,XP_020924942.2,,9823,2694,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X6 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/XP_020924942.2
+NCBI,ITPR1,XP_020924941.2,,9823,2709,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/XP_020924941.2
+NCBI,ITPR1,XP_020924943.2,,9823,2733,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/XP_020924943.2
+NCBI,ITPR1,XP_084845344.1,,9823,2734,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/XP_084845344.1
+NCBI,ITPR1,XP_020924938.2,,9823,2748,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/XP_020924938.2
+NCBI,ITPR1,XP_020924936.2,,9823,2749,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/XP_020924936.2
+NCBI,ITPR1,XP_084696447.1,,8554,2218,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X12 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084696447.1
+NCBI,ITPR1,XP_084696446.1,,8554,2746,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X11 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084696446.1
+NCBI,ITPR1,XP_084696445.1,,8554,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X10 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084696445.1
+NCBI,ITPR1,XP_084696444.1,,8554,2709,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X9 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084696444.1
+NCBI,ITPR1,XP_084696443.1,,8554,2711,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X8 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084696443.1
+NCBI,ITPR1,XP_084696442.1,,8554,2714,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X7 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084696442.1
+NCBI,ITPR1,XP_084696441.1,,8554,2721,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X6 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084696441.1
+NCBI,ITPR1,XP_084696440.1,,8554,2729,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084696440.1
+NCBI,ITPR1,XP_084696439.1,,8554,2730,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084696439.1
+NCBI,ITPR1,XP_084696438.1,,8554,2731,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084696438.1
+NCBI,ITPR1,XP_084696437.1,,8554,2736,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084696437.1
+NCBI,ITPR1,XP_084696436.1,,8554,2739,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084696436.1
+NCBI,ITPR1,XP_084758370.1,,412090,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 7 [Pipistrellus hanaki]",https://www.ncbi.nlm.nih.gov/protein/XP_084758370.1
+NCBI,ITPR2,XP_086776372.1,,8324,2669,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X5 [Lissotriton vulgaris]",https://www.ncbi.nlm.nih.gov/protein/XP_086776372.1
+NCBI,ITPR2,XP_086776368.1,,8324,2683,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X4 [Lissotriton vulgaris]",https://www.ncbi.nlm.nih.gov/protein/XP_086776368.1
+NCBI,ITPR2,XP_086776362.1,,8324,2697,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Lissotriton vulgaris]",https://www.ncbi.nlm.nih.gov/protein/XP_086776362.1
+NCBI,ITPR2,XP_086776359.1,,8324,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Lissotriton vulgaris]",https://www.ncbi.nlm.nih.gov/protein/XP_086776359.1
+NCBI,ITPR2,XP_086776353.1,,8324,2712,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Lissotriton vulgaris]",https://www.ncbi.nlm.nih.gov/protein/XP_086776353.1
+NCBI,ITPR2,XP_086741150.1,,156563,2581,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X11 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086741150.1
+NCBI,ITPR2,XP_086741149.1,,156563,2596,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X10 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086741149.1
+NCBI,ITPR2,XP_086741148.1,,156563,2618,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X9 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086741148.1
+NCBI,ITPR2,XP_086741147.1,,156563,2623,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X8 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086741147.1
+NCBI,ITPR2,XP_086741146.1,,156563,2623,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X8 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086741146.1
+NCBI,ITPR2,XP_086741145.1,,156563,2633,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X7 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086741145.1
+NCBI,ITPR2,XP_086741144.1,,156563,2638,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X6 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086741144.1
+NCBI,ITPR2,XP_086741143.1,,156563,2643,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X5 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086741143.1
+NCBI,ITPR2,XP_086741141.1,,156563,2658,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X4 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086741141.1
+NCBI,ITPR2,XP_086741140.1,,156563,2684,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086741140.1
+NCBI,ITPR2,XP_086741139.1,,156563,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086741139.1
+NCBI,ITPR2,XP_086741138.1,,156563,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086741138.1
+NCBI,ITPR2,XP_086741137.1,,156563,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086741137.1
+NCBI,ITPR2,XP_086613113.1,,187382,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Chlamydotis macqueenii]",https://www.ncbi.nlm.nih.gov/protein/XP_086613113.1
+NCBI,ITPR2,XP_086569923.1,,9696,2517,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X5 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086569923.1
+NCBI,ITPR2,XP_086569922.1,,9696,2639,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X4 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086569922.1
+NCBI,ITPR2,XP_086569921.1,,9696,2639,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X4 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086569921.1
+NCBI,ITPR2,XP_086569920.1,,9696,2665,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086569920.1
+NCBI,ITPR2,XP_086569919.1,,9696,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086569919.1
+NCBI,ITPR2,XP_025786146.2,,9696,2701,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_025786146.2
+NCBI,ITPR2,XP_086587308.1,,9565,2627,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X4 [Theropithecus gelada]",https://www.ncbi.nlm.nih.gov/protein/XP_086587308.1
+NCBI,ITPR2,XP_086587307.1,,9565,2667,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Theropithecus gelada]",https://www.ncbi.nlm.nih.gov/protein/XP_086587307.1
+NCBI,ITPR2,XP_086587306.1,,9565,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Theropithecus gelada]",https://www.ncbi.nlm.nih.gov/protein/XP_086587306.1
+NCBI,ITPR2,CAR8082499.1,,71582,1632,,,"inositol 1,4,5-trisphosphate receptor type 2 isoform X6 [Rana dybowskii]",https://www.ncbi.nlm.nih.gov/protein/CAR8082499.1
+NCBI,ITPR2,CAR8082498.1,,71582,2737,,,"inositol 1,4,5-trisphosphate receptor type 2 isoform X6 [Rana dybowskii]",https://www.ncbi.nlm.nih.gov/protein/CAR8082498.1
+NCBI,ITPR2,CAR8082497.1,,71582,2699,,,"inositol 1,4,5-trisphosphate receptor type 2 isoform X6 [Rana dybowskii]",https://www.ncbi.nlm.nih.gov/protein/CAR8082497.1
+NCBI,ITPR2,XP_025257851.1,,9565,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Theropithecus gelada]",https://www.ncbi.nlm.nih.gov/protein/XP_025257851.1
+NCBI,ITPR2,XP_086467384.1,,121530,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Tauraco erythrolophus]",https://www.ncbi.nlm.nih.gov/protein/XP_086467384.1
+NCBI,ITPR2,XP_086322625.1,,188344,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Leptosomus discolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086322625.1
+NCBI,ITPR2,XP_086257780.1,,30521,2517,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Bos grunniens]",https://www.ncbi.nlm.nih.gov/protein/XP_086257780.1
+NCBI,ITPR2,XP_086257779.1,,30521,2639,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Bos grunniens]",https://www.ncbi.nlm.nih.gov/protein/XP_086257779.1
+NCBI,ITPR2,XP_086257778.1,,30521,2701,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Bos grunniens]",https://www.ncbi.nlm.nih.gov/protein/XP_086257778.1
+NCBI,ITPR2,XP_086154402.1,,3705843,2694,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Aulonocara sp. 'chitande type north' Nkhata Bay]",https://www.ncbi.nlm.nih.gov/protein/XP_086154402.1
+NCBI,ITPR2,XP_086154401.1,,3705843,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Aulonocara sp. 'chitande type north' Nkhata Bay]",https://www.ncbi.nlm.nih.gov/protein/XP_086154401.1
+NCBI,ITPR2,XP_086064178.1,,150448,2689,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Aulostomus chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_086064178.1
+NCBI,ITPR2,XP_086064177.1,,150448,2691,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Aulostomus chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_086064177.1
+NCBI,ITPR2,XP_085964677.1,,109282,2351,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Hippocampus guttulatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085964677.1
+NCBI,ITPR2,XP_085964676.1,,109282,2655,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Hippocampus guttulatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085964676.1
+NCBI,ITPR2,XP_085964675.1,,109282,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Hippocampus guttulatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085964675.1
+NCBI,ITPR2,XP_086019159.1,,215343,2689,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Fistularia commersonii]",https://www.ncbi.nlm.nih.gov/protein/XP_086019159.1
+NCBI,ITPR2,XP_085929198.1,,1095086,2663,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Leptonotus elevatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085929198.1
+NCBI,ITPR2,XP_085929197.1,,1095086,2683,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Leptonotus elevatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085929197.1
+NCBI,ITPR2,XP_085929196.1,,1095086,2695,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Leptonotus elevatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085929196.1
+NCBI,ITPR2,XP_085883863.1,,1914718,2670,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085883863.1
+NCBI,ITPR2,XP_085883862.1,,1914718,2674,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085883862.1
+NCBI,ITPR2,XP_085883861.1,,1914718,2702,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085883861.1
+NCBI,ITPR2,XP_085866078.1,,191813,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Somniosus microcephalus]",https://www.ncbi.nlm.nih.gov/protein/XP_085866078.1
+NCBI,ITPR2,XP_085771210.1,,161587,2655,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Syngnathus leptorhynchus]",https://www.ncbi.nlm.nih.gov/protein/XP_085771210.1
+NCBI,ITPR2,XP_085771209.1,,161587,2683,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Syngnathus leptorhynchus]",https://www.ncbi.nlm.nih.gov/protein/XP_085771209.1
+NCBI,ITPR2,XP_085771208.1,,161587,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Syngnathus leptorhynchus]",https://www.ncbi.nlm.nih.gov/protein/XP_085771208.1
+NCBI,ITPR2,XP_085771207.1,,161587,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Syngnathus leptorhynchus]",https://www.ncbi.nlm.nih.gov/protein/XP_085771207.1
+NCBI,ITPR2,CAR5367842.1,,48168,2630,,,ITPR2 [Thunnus atlanticus],https://www.ncbi.nlm.nih.gov/protein/CAR5367842.1
+NCBI,ITPR2,CAR5221943.1,,8237,187,,,ITPR2 [Thunnus thynnus],https://www.ncbi.nlm.nih.gov/protein/CAR5221943.1
+NCBI,ITPR2,CAR5221941.1,,8237,2371,,,ITPR2 [Thunnus thynnus],https://www.ncbi.nlm.nih.gov/protein/CAR5221941.1
+NCBI,ITPR2,CAR5366616.1,,8236,2716,,,ITPR2 [Thunnus albacares],https://www.ncbi.nlm.nih.gov/protein/CAR5366616.1
+NCBI,ITPR2,CAR5365531.1,,8235,2657,,,ITPR2 [Thunnus alalunga],https://www.ncbi.nlm.nih.gov/protein/CAR5365531.1
+NCBI,ITPR2,CAR5370800.1,,48169,2806,,,ITPR2 [Thunnus tonggol],https://www.ncbi.nlm.nih.gov/protein/CAR5370800.1
+NCBI,ITPR2,CAR5371062.1,,8238,2581,,,ITPR2 [Thunnus orientalis],https://www.ncbi.nlm.nih.gov/protein/CAR5371062.1
+NCBI,ITPR2,CAR5363954.1,,8226,2649,,,ITPR2 [Katsuwonus pelamis],https://www.ncbi.nlm.nih.gov/protein/CAR5363954.1
+NCBI,ITPR2,CAR5365660.1,,8241,2581,,,ITPR2 [Thunnus obesus],https://www.ncbi.nlm.nih.gov/protein/CAR5365660.1
+NCBI,ITPR2,XP_085695904.1,,10089,2701,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Mus caroli]",https://www.ncbi.nlm.nih.gov/protein/XP_085695904.1
+NCBI,ITPR2,XP_085635697.1,,83875,2690,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Trachurus japonicus]",https://www.ncbi.nlm.nih.gov/protein/XP_085635697.1
+NCBI,ITPR2,XP_085543480.1,,447135,2701,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Myodes glareolus]",https://www.ncbi.nlm.nih.gov/protein/XP_085543480.1
+NCBI,ITPR2,KAN9730988.1,,143539,2168,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 4-T4 [Correlophus ciliatus]",https://www.ncbi.nlm.nih.gov/protein/KAN9730988.1
+NCBI,ITPR2,KAN9730987.1,,143539,2529,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 3-T3 [Correlophus ciliatus]",https://www.ncbi.nlm.nih.gov/protein/KAN9730987.1
+NCBI,ITPR2,KAN9730986.1,,143539,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2-T2 [Correlophus ciliatus]",https://www.ncbi.nlm.nih.gov/protein/KAN9730986.1
+NCBI,ITPR2,KAN9730985.1,,143539,2702,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1-T1 [Correlophus ciliatus]",https://www.ncbi.nlm.nih.gov/protein/KAN9730985.1
+NCBI,ITPR2,KAN7288954.1,,2767082,2695,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2-T2 [Lycocorax pyrrhopterus obiensis]",https://www.ncbi.nlm.nih.gov/protein/KAN7288954.1
+NCBI,ITPR2,KAN7288953.1,,2767082,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1-T1 [Lycocorax pyrrhopterus obiensis]",https://www.ncbi.nlm.nih.gov/protein/KAN7288953.1
+NCBI,ITPR2,KAN6968415.1,,28792,2660,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Cyprinella venusta]",https://www.ncbi.nlm.nih.gov/protein/KAN6968415.1
+NCBI,ITPR2,KAN4315348.1,,108405,2698,,,"LOW QUALITY PROTEIN: inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Sterna hirundo]",https://www.ncbi.nlm.nih.gov/protein/KAN4315348.1
+NCBI,ITPR2,KAN3695039.1,,59477,2517,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 4-T4 [Rhinolophus affinis]",https://www.ncbi.nlm.nih.gov/protein/KAN3695039.1
+NCBI,ITPR2,KAN3695038.1,,59477,2626,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 3-T3 [Rhinolophus affinis]",https://www.ncbi.nlm.nih.gov/protein/KAN3695038.1
+NCBI,ITPR2,KAN3695037.1,,59477,2639,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2-T2 [Rhinolophus affinis]",https://www.ncbi.nlm.nih.gov/protein/KAN3695037.1
+NCBI,ITPR2,KAN3695036.1,,59477,2701,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1-T1 [Rhinolophus affinis]",https://www.ncbi.nlm.nih.gov/protein/KAN3695036.1
+NCBI,ITPR2,KAM9389892.1,,46513,2700,,,"LOW QUALITY PROTEIN: inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Phaethornis superciliosus]",https://www.ncbi.nlm.nih.gov/protein/KAM9389892.1
+NCBI,ITPR2,KAM9203047.1,,1570318,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2-T2 [Mergus octosetaceus]",https://www.ncbi.nlm.nih.gov/protein/KAM9203047.1
+NCBI,ITPR2,KAM9203046.1,,1570318,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1-T1 [Mergus octosetaceus]",https://www.ncbi.nlm.nih.gov/protein/KAM9203046.1
+NCBI,ITPR2,KAM9172716.1,,260642,2624,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2-T2 [Pangshura tecta]",https://www.ncbi.nlm.nih.gov/protein/KAM9172716.1
+NCBI,ITPR2,KAM9172715.1,,260642,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1-T1 [Pangshura tecta]",https://www.ncbi.nlm.nih.gov/protein/KAM9172715.1
+NCBI,ITPR2,KAM8979432.1,,9305,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Sarcophilus harrisii]",https://www.ncbi.nlm.nih.gov/protein/KAM8979432.1
+NCBI,ITPR2,KAM8861047.1,,586865,2690,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Synchiropus picturatus]",https://www.ncbi.nlm.nih.gov/protein/KAM8861047.1
+NCBI,ITPR2,KAM6314509.1,,8905,2715,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Podargus strigoides]",https://www.ncbi.nlm.nih.gov/protein/KAM6314509.1
+NCBI,ITPR2,XP_085508913.1,,8323,2669,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X4 [Triturus cristatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085508913.1
+NCBI,ITPR2,XP_085508912.1,,8323,2683,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Triturus cristatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085508912.1
+NCBI,ITPR2,XP_085508911.1,,8323,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Triturus cristatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085508911.1
+NCBI,ITPR2,XP_085508910.1,,8323,2712,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Triturus cristatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085508910.1
+NCBI,ITPR2,XP_085426487.1,,40157,2191,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X8 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085426487.1
+NCBI,ITPR2,XP_085426486.1,,40157,2516,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X7 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085426486.1
+NCBI,ITPR2,XP_085426484.1,,40157,2516,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X7 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085426484.1
+NCBI,ITPR2,XP_085426483.1,,40157,2625,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X6 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085426483.1
+NCBI,ITPR2,XP_085426482.1,,40157,2631,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X5 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085426482.1
+NCBI,ITPR2,XP_085426481.1,,40157,2638,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X4 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085426481.1
+NCBI,ITPR2,XP_085426480.1,,40157,2638,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X4 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085426480.1
+NCBI,ITPR2,XP_085426479.1,,40157,2638,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X4 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085426479.1
+NCBI,ITPR2,XP_021394346.2,,40157,2685,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_021394346.2
+NCBI,ITPR2,XP_085426478.1,,40157,2689,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_085426478.1
+NCBI,ITPR2,XP_021394344.2,,40157,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_021394344.2
+NCBI,ITPR2,XP_085397781.1,,93934,1696,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X6 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085397781.1
+NCBI,ITPR2,XP_085397771.1,,93934,1724,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X5 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085397771.1
+NCBI,ITPR2,XP_085397763.1,,93934,2620,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X4 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085397763.1
+NCBI,ITPR2,XP_085397757.1,,93934,2685,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085397757.1
+NCBI,ITPR2,XP_085397752.1,,93934,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085397752.1
+NCBI,ITPR2,XP_032302128.2,,93934,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_032302128.2
+NCBI,ITPR2,NP_064307.2,,10090,2701,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1 [Mus musculus]",https://www.ncbi.nlm.nih.gov/protein/NP_064307.2
+NCBI,ITPR2,NP_034716.1,,10090,2668,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2 [Mus musculus]",https://www.ncbi.nlm.nih.gov/protein/NP_034716.1
+NCBI,ITPR2,XP_085317610.1,,163618,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Copadichromis virginalis]",https://www.ncbi.nlm.nih.gov/protein/XP_085317610.1
+NCBI,ITPR2,XP_085268012.1,,304217,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Rhamphochromis longiceps]",https://www.ncbi.nlm.nih.gov/protein/XP_085268012.1
+NCBI,ITPR2,YFO13675.1,,9925,2517,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2-T2 [Capra hircus]",https://www.ncbi.nlm.nih.gov/protein/YFO13675.1
+NCBI,ITPR2,YFO13674.1,,9925,2701,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1-T1 [Capra hircus]",https://www.ncbi.nlm.nih.gov/protein/YFO13674.1
+NCBI,ITPR2,XP_085215221.1,,163623,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Diplotaxodon limnothrissa]",https://www.ncbi.nlm.nih.gov/protein/XP_085215221.1
+NCBI,ITPR2,XP_006140375.2,,246437,2767,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Tupaia chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_006140375.2
+NCBI,ITPR2,XP_001363102.1,,13616,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Monodelphis domestica]",https://www.ncbi.nlm.nih.gov/protein/XP_001363102.1
+NCBI,ITPR2,XP_085180599.1,,8797,2641,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Rhea americana]",https://www.ncbi.nlm.nih.gov/protein/XP_085180599.1
+NCBI,ITPR2,XP_085180598.1,,8797,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Rhea americana]",https://www.ncbi.nlm.nih.gov/protein/XP_085180598.1
+NCBI,ITPR2,XP_085180597.1,,8797,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Rhea americana]",https://www.ncbi.nlm.nih.gov/protein/XP_085180597.1
+NCBI,ITPR2,XP_085088100.1,,9103,2668,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Meleagris gallopavo]",https://www.ncbi.nlm.nih.gov/protein/XP_085088100.1
+NCBI,ITPR2,XP_085088089.1,,9103,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Meleagris gallopavo]",https://www.ncbi.nlm.nih.gov/protein/XP_085088089.1
+NCBI,ITPR2,XP_085088083.1,,9103,2683,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Meleagris gallopavo]",https://www.ncbi.nlm.nih.gov/protein/XP_085088083.1
+NCBI,ITPR2,XP_085137946.1,,35575,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Mchenga conophoros]",https://www.ncbi.nlm.nih.gov/protein/XP_085137946.1
+NCBI,ITPR2,XP_085024542.1,,420107,2675,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Neolamprologus multifasciatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085024542.1
+NCBI,ITPR2,XP_085024541.1,,420107,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Neolamprologus multifasciatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085024541.1
+NCBI,ITPR2,KAO0905863.1,,9823,2702,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/KAO0905863.1
+NCBI,ITPR2,XP_084905206.1,,1497555,2685,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Lichenostomus cassidix]",https://www.ncbi.nlm.nih.gov/protein/XP_084905206.1
+NCBI,ITPR2,XP_084905205.1,,1497555,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Lichenostomus cassidix]",https://www.ncbi.nlm.nih.gov/protein/XP_084905205.1
+NCBI,ITPR2,XP_084812640.1,,9823,2518,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/XP_084812640.1
+NCBI,ITPR2,XP_020948578.2,,9823,2702,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/XP_020948578.2
+NCBI,ITPR2,XP_084789194.1,,32509,2560,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Perissodus microlepis]",https://www.ncbi.nlm.nih.gov/protein/XP_084789194.1
+NCBI,ITPR2,XP_084789193.1,,32509,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Perissodus microlepis]",https://www.ncbi.nlm.nih.gov/protein/XP_084789193.1
+NCBI,ITPR2,XP_084789192.1,,32509,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Perissodus microlepis]",https://www.ncbi.nlm.nih.gov/protein/XP_084789192.1
+NCBI,ITPR2,XP_084667665.1,,8554,2378,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X10 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084667665.1
+NCBI,ITPR2,XP_084667664.1,,8554,2506,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X9 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084667664.1
+NCBI,ITPR2,XP_084667663.1,,8554,2655,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X8 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084667663.1
+NCBI,ITPR2,XP_084667662.1,,8554,2682,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X7 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084667662.1
+NCBI,ITPR2,XP_084667660.1,,8554,2701,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X6 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084667660.1
+NCBI,ITPR2,XP_084667659.1,,8554,2701,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X5 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084667659.1
+NCBI,ITPR2,XP_084667658.1,,8554,2702,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X4 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084667658.1
+NCBI,ITPR2,XP_084667657.1,,8554,2728,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084667657.1
+NCBI,ITPR2,XP_084667656.1,,8554,2728,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084667656.1
+NCBI,ITPR2,XP_084667655.1,,8554,2729,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084667655.1
+NCBI,ITPR2,XP_084733272.1,,412090,2701,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Pipistrellus hanaki]",https://www.ncbi.nlm.nih.gov/protein/XP_084733272.1
+NCBI,ITPR2,XP_084621002.1,,83528,2639,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2 [Acomys minous]",https://www.ncbi.nlm.nih.gov/protein/XP_084621002.1
+NCBI,ITPR2,XP_084621001.1,,83528,2701,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1 [Acomys minous]",https://www.ncbi.nlm.nih.gov/protein/XP_084621001.1
+NCBI,ITPR2,XP_084591282.1,,211835,2685,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Lutjanus erythropterus]",https://www.ncbi.nlm.nih.gov/protein/XP_084591282.1
+NCBI,ITPR2,XP_084529267.1,,182223,2690,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X4 [Hypomesus nipponensis]",https://www.ncbi.nlm.nih.gov/protein/XP_084529267.1
+NCBI,ITPR2,XP_084529266.1,,182223,2691,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Hypomesus nipponensis]",https://www.ncbi.nlm.nih.gov/protein/XP_084529266.1
+NCBI,ITPR2,XP_084529265.1,,182223,2701,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Hypomesus nipponensis]",https://www.ncbi.nlm.nih.gov/protein/XP_084529265.1
+NCBI,ITPR2,XP_084529263.1,,182223,2702,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Hypomesus nipponensis]",https://www.ncbi.nlm.nih.gov/protein/XP_084529263.1
+NCBI,ITPR2,Q9Z329.4,,10090,2701,,,"RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2; AltName: Full=IP3 receptor isoform 2; Short=IP3R 2; Short=InsP3R2; AltName: Full=Inositol 1,4,5-trisphosphate receptor type 2; AltName: Full=Inositol 1,4,5-trisphosphate type V receptor; AltName: Full=Type 2 inositol 1,4,5-trisphosphate receptor; Short=Type 2 InsP3 receptor",https://www.ncbi.nlm.nih.gov/protein/Q9Z329.4
+NCBI,ITPR2,Q14571.2,,9606,2701,,,"RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2; AltName: Full=IP3 receptor isoform 2; Short=IP3R 2; Short=InsP3R2; AltName: Full=Inositol 1,4,5-trisphosphate receptor type 2; AltName: Full=Type 2 inositol 1,4,5-trisphosphate receptor; Short=Type 2 InsP3 receptor",https://www.ncbi.nlm.nih.gov/protein/Q14571.2
+NCBI,ITPR2,Q8WN96.1,,9913,2701,,,"RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2; AltName: Full=IP3 receptor isoform 2; Short=IP3R 2; Short=InsP3R2; AltName: Full=Inositol 1,4,5-trisphosphate receptor type 2; AltName: Full=Type 2 inositol 1,4,5-trisphosphate receptor; Short=Type 2 InsP3 receptor",https://www.ncbi.nlm.nih.gov/protein/Q8WN96.1
+NCBI,ITPR2,XP_084487748.1,,27788,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Lepidochelys olivacea]",https://www.ncbi.nlm.nih.gov/protein/XP_084487748.1
+NCBI,ITPR2,XP_084333173.1,,81636,2693,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 4 [Micromesistius poutassou]",https://www.ncbi.nlm.nih.gov/protein/XP_084333173.1
+NCBI,ITPR2,XP_084333172.1,,81636,2697,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 3 [Micromesistius poutassou]",https://www.ncbi.nlm.nih.gov/protein/XP_084333172.1
+NCBI,ITPR2,XP_084333171.1,,81636,2697,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2 [Micromesistius poutassou]",https://www.ncbi.nlm.nih.gov/protein/XP_084333171.1
+NCBI,ITPR2,XP_084333170.1,,81636,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1 [Micromesistius poutassou]",https://www.ncbi.nlm.nih.gov/protein/XP_084333170.1
+NCBI,ITPR2,XP_084369556.1,,219593,2630,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 3 [Aythya ferina]",https://www.ncbi.nlm.nih.gov/protein/XP_084369556.1
+NCBI,ITPR2,XP_084369555.1,,219593,2685,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2 [Aythya ferina]",https://www.ncbi.nlm.nih.gov/protein/XP_084369555.1
+NCBI,ITPR2,XP_084369554.1,,219593,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1 [Aythya ferina]",https://www.ncbi.nlm.nih.gov/protein/XP_084369554.1
+NCBI,ITPR2,XP_084410685.1,,48171,2504,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2 [Chelon labrosus]",https://www.ncbi.nlm.nih.gov/protein/XP_084410685.1
+NCBI,ITPR2,XP_084410684.1,,48171,2689,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1 [Chelon labrosus]",https://www.ncbi.nlm.nih.gov/protein/XP_084410684.1
+NCBI,ITPR2,XP_083320260.1,,662736,2512,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 7 [Podarcis liolepis]",https://www.ncbi.nlm.nih.gov/protein/XP_083320260.1
+NCBI,ITPR2,XP_083320259.1,,662736,2514,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 6 [Podarcis liolepis]",https://www.ncbi.nlm.nih.gov/protein/XP_083320259.1
+NCBI,ITPR2,XP_083320258.1,,662736,2594,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 5 [Podarcis liolepis]",https://www.ncbi.nlm.nih.gov/protein/XP_083320258.1
+NCBI,ITPR2,XP_083320257.1,,662736,2658,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 4 [Podarcis liolepis]",https://www.ncbi.nlm.nih.gov/protein/XP_083320257.1
+NCBI,ITPR2,XP_083320256.1,,662736,2682,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 3 [Podarcis liolepis]",https://www.ncbi.nlm.nih.gov/protein/XP_083320256.1
+NCBI,ITPR2,XP_083320255.1,,662736,2697,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2 [Podarcis liolepis]",https://www.ncbi.nlm.nih.gov/protein/XP_083320255.1
+NCBI,ITPR2,XP_083320254.1,,662736,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1 [Podarcis liolepis]",https://www.ncbi.nlm.nih.gov/protein/XP_083320254.1
+NCBI,ITPR2,XP_083255339.1,,65485,2304,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 8 [Podarcis tiliguerta]",https://www.ncbi.nlm.nih.gov/protein/XP_083255339.1
+NCBI,ITPR2,XP_083255338.1,,65485,2514,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 7 [Podarcis tiliguerta]",https://www.ncbi.nlm.nih.gov/protein/XP_083255338.1
+NCBI,ITPR2,XP_083255337.1,,65485,2516,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 6 [Podarcis tiliguerta]",https://www.ncbi.nlm.nih.gov/protein/XP_083255337.1
+NCBI,ITPR2,XP_083255336.1,,65485,2596,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 5 [Podarcis tiliguerta]",https://www.ncbi.nlm.nih.gov/protein/XP_083255336.1
+NCBI,ITPR2,XP_083255335.1,,65485,2660,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 4 [Podarcis tiliguerta]",https://www.ncbi.nlm.nih.gov/protein/XP_083255335.1
+NCBI,ITPR2,XP_083255334.1,,65485,2684,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 3 [Podarcis tiliguerta]",https://www.ncbi.nlm.nih.gov/protein/XP_083255334.1
+NCBI,ITPR2,XP_083255333.1,,65485,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2 [Podarcis tiliguerta]",https://www.ncbi.nlm.nih.gov/protein/XP_083255333.1
+NCBI,ITPR2,XP_083255332.1,,65485,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1 [Podarcis tiliguerta]",https://www.ncbi.nlm.nih.gov/protein/XP_083255332.1
+NCBI,ITPR2,XP_083430975.1,,65481,2514,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 7 [Podarcis filfolensis]",https://www.ncbi.nlm.nih.gov/protein/XP_083430975.1
+NCBI,ITPR2,XP_083430974.1,,65481,2516,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 6 [Podarcis filfolensis]",https://www.ncbi.nlm.nih.gov/protein/XP_083430974.1
+NCBI,ITPR2,XP_083430973.1,,65481,2596,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 5 [Podarcis filfolensis]",https://www.ncbi.nlm.nih.gov/protein/XP_083430973.1
+NCBI,ITPR2,XP_083430972.1,,65481,2660,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 4 [Podarcis filfolensis]",https://www.ncbi.nlm.nih.gov/protein/XP_083430972.1
+NCBI,ITPR2,XP_083430971.1,,65481,2684,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 3 [Podarcis filfolensis]",https://www.ncbi.nlm.nih.gov/protein/XP_083430971.1
+NCBI,ITPR2,XP_083430970.1,,65481,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2 [Podarcis filfolensis]",https://www.ncbi.nlm.nih.gov/protein/XP_083430970.1
+NCBI,ITPR2,XP_083430969.1,,65481,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1 [Podarcis filfolensis]",https://www.ncbi.nlm.nih.gov/protein/XP_083430969.1
+NCBI,ITPR2,XP_083522941.1,,446415,2662,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 4 [Argentina silus]",https://www.ncbi.nlm.nih.gov/protein/XP_083522941.1
+NCBI,ITPR2,XP_083522940.1,,446415,2663,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 3 [Argentina silus]",https://www.ncbi.nlm.nih.gov/protein/XP_083522940.1
+NCBI,ITPR2,XP_083522939.1,,446415,2665,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2 [Argentina silus]",https://www.ncbi.nlm.nih.gov/protein/XP_083522939.1
+NCBI,ITPR2,XP_083522938.1,,446415,2666,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1 [Argentina silus]",https://www.ncbi.nlm.nih.gov/protein/XP_083522938.1
+NCBI,ITPR2,XP_083772602.1,,94984,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Echiichthys vipera]",https://www.ncbi.nlm.nih.gov/protein/XP_083772602.1
+NCBI,ITPR2,XP_083799290.1,,197941,2167,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2 [Clangula hyemalis]",https://www.ncbi.nlm.nih.gov/protein/XP_083799290.1
+NCBI,ITPR2,XP_083799289.1,,197941,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1 [Clangula hyemalis]",https://www.ncbi.nlm.nih.gov/protein/XP_083799289.1
+NCBI,ITPR2,XP_083829880.1,,36212,2642,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 5 [Trachurus trachurus]",https://www.ncbi.nlm.nih.gov/protein/XP_083829880.1
+NCBI,ITPR2,XP_083829879.1,,36212,2690,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 4 [Trachurus trachurus]",https://www.ncbi.nlm.nih.gov/protein/XP_083829879.1
+NCBI,ITPR2,XP_083829878.1,,36212,2697,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 3 [Trachurus trachurus]",https://www.ncbi.nlm.nih.gov/protein/XP_083829878.1
+NCBI,ITPR2,XP_083829877.1,,36212,2697,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2 [Trachurus trachurus]",https://www.ncbi.nlm.nih.gov/protein/XP_083829877.1
+NCBI,ITPR2,XP_083829876.1,,36212,2704,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1 [Trachurus trachurus]",https://www.ncbi.nlm.nih.gov/protein/XP_083829876.1
+NCBI,ITPR3,XP_086779316.1,,8324,2677,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Lissotriton vulgaris]",https://www.ncbi.nlm.nih.gov/protein/XP_086779316.1
+NCBI,ITPR3,XP_086717874.1,,156563,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Cyanistes caeruleus]",https://www.ncbi.nlm.nih.gov/protein/XP_086717874.1
+NCBI,ITPR3,XP_086621553.1,,187382,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Chlamydotis macqueenii]",https://www.ncbi.nlm.nih.gov/protein/XP_086621553.1
+NCBI,ITPR3,XP_086621552.1,,187382,2691,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Chlamydotis macqueenii]",https://www.ncbi.nlm.nih.gov/protein/XP_086621552.1
+NCBI,ITPR3,XP_086562739.1,,9696,2349,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X3 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086562739.1
+NCBI,ITPR3,XP_086562738.1,,9696,2668,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086562738.1
+NCBI,ITPR3,XP_086562737.1,,9696,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Puma concolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086562737.1
+NCBI,ITPR3,CAR8075925.1,,71582,2664,,,"LOW QUALITY PROTEIN: inositol 1,4,5-trisphosphate receptor type 3 [Rana dybowskii]",https://www.ncbi.nlm.nih.gov/protein/CAR8075925.1
+NCBI,ITPR3,XP_025238513.1,,9565,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Theropithecus gelada]",https://www.ncbi.nlm.nih.gov/protein/XP_025238513.1
+NCBI,ITPR3,XP_086483532.1,,121530,2664,,,"LOW QUALITY PROTEIN: inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Tauraco erythrolophus]",https://www.ncbi.nlm.nih.gov/protein/XP_086483532.1
+NCBI,ITPR3,XP_086332553.1,,188344,2662,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Leptosomus discolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086332553.1
+NCBI,ITPR3,XP_086332552.1,,188344,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Leptosomus discolor]",https://www.ncbi.nlm.nih.gov/protein/XP_086332552.1
+NCBI,ITPR3,XP_086227327.1,,30521,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Bos grunniens]",https://www.ncbi.nlm.nih.gov/protein/XP_086227327.1
+NCBI,ITPR3,XP_086132849.1,,3705843,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Aulonocara sp. 'chitande type north' Nkhata Bay]",https://www.ncbi.nlm.nih.gov/protein/XP_086132849.1
+NCBI,ITPR3,XP_086132848.1,,3705843,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Aulonocara sp. 'chitande type north' Nkhata Bay]",https://www.ncbi.nlm.nih.gov/protein/XP_086132848.1
+NCBI,ITPR3,XP_086069046.1,,150448,2683,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Aulostomus chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_086069046.1
+NCBI,ITPR3,XP_086069045.1,,150448,2686,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Aulostomus chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_086069045.1
+NCBI,ITPR3,XP_085983616.1,,109282,2683,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Hippocampus guttulatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085983616.1
+NCBI,ITPR3,XP_085983607.1,,109282,2688,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Hippocampus guttulatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085983607.1
+NCBI,ITPR3,XP_086015128.1,,215343,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Fistularia commersonii]",https://www.ncbi.nlm.nih.gov/protein/XP_086015128.1
+NCBI,ITPR3,XP_085926007.1,,1095086,2231,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X6 [Leptonotus elevatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085926007.1
+NCBI,ITPR3,XP_085926006.1,,1095086,2248,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X5 [Leptonotus elevatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085926006.1
+NCBI,ITPR3,XP_085926005.1,,1095086,2643,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X4 [Leptonotus elevatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085926005.1
+NCBI,ITPR3,XP_085926004.1,,1095086,2658,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X3 [Leptonotus elevatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085926004.1
+NCBI,ITPR3,XP_085926002.1,,1095086,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Leptonotus elevatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085926002.1
+NCBI,ITPR3,XP_085926001.1,,1095086,2683,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Leptonotus elevatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085926001.1
+NCBI,ITPR3,XP_085902174.1,,1914718,2199,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X11 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085902174.1
+NCBI,ITPR3,XP_085902165.1,,1914718,2311,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X10 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085902165.1
+NCBI,ITPR3,XP_085902155.1,,1914718,2348,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X9 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085902155.1
+NCBI,ITPR3,XP_085902148.1,,1914718,2352,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X8 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085902148.1
+NCBI,ITPR3,XP_085902139.1,,1914718,2377,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X7 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085902139.1
+NCBI,ITPR3,XP_085902128.1,,1914718,2682,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X6 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085902128.1
+NCBI,ITPR3,XP_085902119.1,,1914718,2685,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X5 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085902119.1
+NCBI,ITPR3,XP_085902109.1,,1914718,2686,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X4 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085902109.1
+NCBI,ITPR3,XP_085902105.1,,1914718,2690,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X3 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085902105.1
+NCBI,ITPR3,XP_085902099.1,,1914718,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085902099.1
+NCBI,ITPR3,XP_085902091.1,,1914718,2707,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085902091.1
+NCBI,ITPR3,XP_085902084.1,,1914718,2707,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Filicampus tigris]",https://www.ncbi.nlm.nih.gov/protein/XP_085902084.1
+NCBI,ITPR3,XP_085867523.1,,191813,2657,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Somniosus microcephalus]",https://www.ncbi.nlm.nih.gov/protein/XP_085867523.1
+NCBI,ITPR3,XP_085867522.1,,191813,2666,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Somniosus microcephalus]",https://www.ncbi.nlm.nih.gov/protein/XP_085867522.1
+NCBI,ITPR3,XP_085766479.1,,161587,2160,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X8 [Syngnathus leptorhynchus]",https://www.ncbi.nlm.nih.gov/protein/XP_085766479.1
+NCBI,ITPR3,XP_085766470.1,,161587,2618,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X7 [Syngnathus leptorhynchus]",https://www.ncbi.nlm.nih.gov/protein/XP_085766470.1
+NCBI,ITPR3,XP_085766460.1,,161587,2621,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X6 [Syngnathus leptorhynchus]",https://www.ncbi.nlm.nih.gov/protein/XP_085766460.1
+NCBI,ITPR3,XP_085766453.1,,161587,2630,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X5 [Syngnathus leptorhynchus]",https://www.ncbi.nlm.nih.gov/protein/XP_085766453.1
+NCBI,ITPR3,XP_085766444.1,,161587,2643,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X4 [Syngnathus leptorhynchus]",https://www.ncbi.nlm.nih.gov/protein/XP_085766444.1
+NCBI,ITPR3,XP_085766436.1,,161587,2661,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X3 [Syngnathus leptorhynchus]",https://www.ncbi.nlm.nih.gov/protein/XP_085766436.1
+NCBI,ITPR3,XP_085766427.1,,161587,2682,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Syngnathus leptorhynchus]",https://www.ncbi.nlm.nih.gov/protein/XP_085766427.1
+NCBI,ITPR3,XP_085766420.1,,161587,2683,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Syngnathus leptorhynchus]",https://www.ncbi.nlm.nih.gov/protein/XP_085766420.1
+NCBI,ITPR3,CAR5378064.1,,48168,2329,,,Itpr3 [Thunnus atlanticus],https://www.ncbi.nlm.nih.gov/protein/CAR5378064.1
+NCBI,ITPR3,CAR5378057.1,,48168,382,,,Itpr3 [Thunnus atlanticus],https://www.ncbi.nlm.nih.gov/protein/CAR5378057.1
+NCBI,ITPR3,CAR5223731.1,,8237,2331,,,Itpr3 [Thunnus thynnus],https://www.ncbi.nlm.nih.gov/protein/CAR5223731.1
+NCBI,ITPR3,CAR5223730.1,,8237,367,,,Itpr3 [Thunnus thynnus],https://www.ncbi.nlm.nih.gov/protein/CAR5223730.1
+NCBI,ITPR3,CAR5377097.1,,8236,2329,,,Itpr3 [Thunnus albacares],https://www.ncbi.nlm.nih.gov/protein/CAR5377097.1
+NCBI,ITPR3,CAR5377091.1,,8236,392,,,Itpr3 [Thunnus albacares],https://www.ncbi.nlm.nih.gov/protein/CAR5377091.1
+NCBI,ITPR3,CAR5375785.1,,8235,4853,,,Itpr3 [Thunnus alalunga],https://www.ncbi.nlm.nih.gov/protein/CAR5375785.1
+NCBI,ITPR3,CAR5381285.1,,48169,2327,,,Itpr3 [Thunnus tonggol],https://www.ncbi.nlm.nih.gov/protein/CAR5381285.1
+NCBI,ITPR3,CAR5381278.1,,48169,392,,,Itpr3 [Thunnus tonggol],https://www.ncbi.nlm.nih.gov/protein/CAR5381278.1
+NCBI,ITPR3,CAR5381430.1,,8238,367,,,Itpr3 [Thunnus orientalis],https://www.ncbi.nlm.nih.gov/protein/CAR5381430.1
+NCBI,ITPR3,CAR5381422.1,,8238,2141,,,Itpr3 [Thunnus orientalis],https://www.ncbi.nlm.nih.gov/protein/CAR5381422.1
+NCBI,ITPR3,CAR5381415.1,,8238,151,,,ITPR3 [Thunnus orientalis],https://www.ncbi.nlm.nih.gov/protein/CAR5381415.1
+NCBI,ITPR3,CAR5374235.1,,8226,2201,,,Itpr3 [Katsuwonus pelamis],https://www.ncbi.nlm.nih.gov/protein/CAR5374235.1
+NCBI,ITPR3,CAR5374228.1,,8226,382,,,Itpr3 [Katsuwonus pelamis],https://www.ncbi.nlm.nih.gov/protein/CAR5374228.1
+NCBI,ITPR3,CAR5375826.1,,8241,2375,,,Itpr3 [Thunnus obesus],https://www.ncbi.nlm.nih.gov/protein/CAR5375826.1
+NCBI,ITPR3,CAR5375819.1,,8241,392,,,Itpr3 [Thunnus obesus],https://www.ncbi.nlm.nih.gov/protein/CAR5375819.1
+NCBI,ITPR3,XP_021041402.2,,10089,2771,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Mus caroli]",https://www.ncbi.nlm.nih.gov/protein/XP_021041402.2
+NCBI,ITPR3,KAM4046679.1,,238106,2593,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2-T2 [Anomaloglossus baeobatrachus]",https://www.ncbi.nlm.nih.gov/protein/KAM4046679.1
+NCBI,ITPR3,KAM4046678.1,,238106,2677,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1-T1 [Anomaloglossus baeobatrachus]",https://www.ncbi.nlm.nih.gov/protein/KAM4046678.1
+NCBI,ITPR3,XP_085636936.1,,83875,2691,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Trachurus japonicus]",https://www.ncbi.nlm.nih.gov/protein/XP_085636936.1
+NCBI,ITPR3,XP_085536252.1,,447135,2573,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Myodes glareolus]",https://www.ncbi.nlm.nih.gov/protein/XP_085536252.1
+NCBI,ITPR3,KAN3949703.1,,286537,2220,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 3-T3 [Coilia mystus]",https://www.ncbi.nlm.nih.gov/protein/KAN3949703.1
+NCBI,ITPR3,KAN3949702.1,,286537,2655,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2-T2 [Coilia mystus]",https://www.ncbi.nlm.nih.gov/protein/KAN3949702.1
+NCBI,ITPR3,KAN3949701.1,,286537,2656,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1-T1 [Coilia mystus]",https://www.ncbi.nlm.nih.gov/protein/KAN3949701.1
+NCBI,ITPR3,KAM8938017.1,,9622,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Lycaon pictus]",https://www.ncbi.nlm.nih.gov/protein/KAM8938017.1
+NCBI,ITPR3,KAM6930006.1,,1772091,2688,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Lycodopsis pacificus]",https://www.ncbi.nlm.nih.gov/protein/KAM6930006.1
+NCBI,ITPR3,XP_085503275.1,,8323,2964,,,"LOW QUALITY PROTEIN: inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Triturus cristatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085503275.1
+NCBI,ITPR3,XP_085382999.1,,93934,2647,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X3 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_085382999.1
+NCBI,ITPR3,XP_015740820.2,,93934,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_015740820.2
+NCBI,ITPR3,XP_015740819.2,,93934,2691,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Coturnix japonica]",https://www.ncbi.nlm.nih.gov/protein/XP_015740819.2
+NCBI,ITPR3,XP_077645204.1,,40157,2663,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_077645204.1
+NCBI,ITPR3,XP_021398322.1,,40157,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Lonchura striata]",https://www.ncbi.nlm.nih.gov/protein/XP_021398322.1
+NCBI,ITPR3,XP_085300292.1,,163618,2696,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Copadichromis virginalis]",https://www.ncbi.nlm.nih.gov/protein/XP_085300292.1
+NCBI,ITPR3,XP_085248703.1,,304217,2264,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X3 [Rhamphochromis longiceps]",https://www.ncbi.nlm.nih.gov/protein/XP_085248703.1
+NCBI,ITPR3,XP_085248702.1,,304217,2625,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Rhamphochromis longiceps]",https://www.ncbi.nlm.nih.gov/protein/XP_085248702.1
+NCBI,ITPR3,XP_085248701.1,,304217,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Rhamphochromis longiceps]",https://www.ncbi.nlm.nih.gov/protein/XP_085248701.1
+NCBI,ITPR3,YFO52091.1,,9925,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Capra hircus]",https://www.ncbi.nlm.nih.gov/protein/YFO52091.1
+NCBI,ITPR3,XP_085201474.1,,163623,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Diplotaxodon limnothrissa]",https://www.ncbi.nlm.nih.gov/protein/XP_085201474.1
+NCBI,ITPR3,XP_014441661.1,,246437,2661,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Tupaia chinensis]",https://www.ncbi.nlm.nih.gov/protein/XP_014441661.1
+NCBI,ITPR3,XP_085193450.1,,13616,2607,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Monodelphis domestica]",https://www.ncbi.nlm.nih.gov/protein/XP_085193450.1
+NCBI,ITPR3,XP_056674026.1,,13616,2668,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Monodelphis domestica]",https://www.ncbi.nlm.nih.gov/protein/XP_056674026.1
+NCBI,ITPR3,XP_085166725.1,,8797,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Rhea americana]",https://www.ncbi.nlm.nih.gov/protein/XP_085166725.1
+NCBI,ITPR3,XP_085066846.1,,9103,2657,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X4 [Meleagris gallopavo]",https://www.ncbi.nlm.nih.gov/protein/XP_085066846.1
+NCBI,ITPR3,XP_085066845.1,,9103,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X3 [Meleagris gallopavo]",https://www.ncbi.nlm.nih.gov/protein/XP_085066845.1
+NCBI,ITPR3,XP_085066844.1,,9103,2669,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Meleagris gallopavo]",https://www.ncbi.nlm.nih.gov/protein/XP_085066844.1
+NCBI,ITPR3,XP_085066843.1,,9103,2674,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Meleagris gallopavo]",https://www.ncbi.nlm.nih.gov/protein/XP_085066843.1
+NCBI,ITPR3,XP_085115084.1,,35575,2662,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Mchenga conophoros]",https://www.ncbi.nlm.nih.gov/protein/XP_085115084.1
+NCBI,ITPR3,XP_085115083.1,,35575,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Mchenga conophoros]",https://www.ncbi.nlm.nih.gov/protein/XP_085115083.1
+NCBI,ITPR3,XP_085003354.1,,420107,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Neolamprologus multifasciatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085003354.1
+NCBI,ITPR3,XP_085003353.1,,420107,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Neolamprologus multifasciatus]",https://www.ncbi.nlm.nih.gov/protein/XP_085003353.1
+NCBI,ITPR3,KAO0897781.1,,9823,2722,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 3-T3 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/KAO0897781.1
+NCBI,ITPR3,KAO0897780.1,,9823,2670,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2-T2 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/KAO0897780.1
+NCBI,ITPR3,KAO0897779.1,,9823,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1-T1 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/KAO0897779.1
+NCBI,ITPR3,XP_084939178.1,,1497555,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Lichenostomus cassidix]",https://www.ncbi.nlm.nih.gov/protein/XP_084939178.1
+NCBI,ITPR3,XP_013833248.1,,9823,2670,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/XP_013833248.1
+NCBI,ITPR3,XP_003128393.1,,9823,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/XP_003128393.1
+NCBI,ITPR3,XP_084772457.1,,32509,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Perissodus microlepis]",https://www.ncbi.nlm.nih.gov/protein/XP_084772457.1
+NCBI,ITPR3,XP_084772456.1,,32509,2696,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Perissodus microlepis]",https://www.ncbi.nlm.nih.gov/protein/XP_084772456.1
+NCBI,ITPR3,XP_084709127.1,,8554,2669,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084709127.1
+NCBI,ITPR3,XP_084709126.1,,8554,2670,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Heloderma suspectum]",https://www.ncbi.nlm.nih.gov/protein/XP_084709126.1
+NCBI,ITPR3,XP_084747121.1,,412090,2667,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 3 [Pipistrellus hanaki]",https://www.ncbi.nlm.nih.gov/protein/XP_084747121.1
+NCBI,ITPR3,XP_084747120.1,,412090,2670,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2 [Pipistrellus hanaki]",https://www.ncbi.nlm.nih.gov/protein/XP_084747120.1
+NCBI,ITPR3,XP_084747119.1,,412090,2695,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Pipistrellus hanaki]",https://www.ncbi.nlm.nih.gov/protein/XP_084747119.1
+NCBI,ITPR3,XP_084609831.1,,83528,2670,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Acomys minous]",https://www.ncbi.nlm.nih.gov/protein/XP_084609831.1
+NCBI,ITPR3,XP_084576286.1,,211835,2693,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Lutjanus erythropterus]",https://www.ncbi.nlm.nih.gov/protein/XP_084576286.1
+NCBI,ITPR3,XP_084535868.1,,182223,2653,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X3 [Hypomesus nipponensis]",https://www.ncbi.nlm.nih.gov/protein/XP_084535868.1
+NCBI,ITPR3,XP_084535867.1,,182223,2654,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Hypomesus nipponensis]",https://www.ncbi.nlm.nih.gov/protein/XP_084535867.1
+NCBI,ITPR3,XP_084535866.1,,182223,2655,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Hypomesus nipponensis]",https://www.ncbi.nlm.nih.gov/protein/XP_084535866.1
+NCBI,ITPR3,Q14573.2,,9606,2671,,,"RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3; AltName: Full=IP3 receptor isoform 3; Short=IP3R-3; Short=InsP3R3; AltName: Full=Type 3 inositol 1,4,5-trisphosphate receptor; Short=Type 3 InsP3 receptor",https://www.ncbi.nlm.nih.gov/protein/Q14573.2
+NCBI,ITPR3,P70227.3,,10090,2670,,,"RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3; AltName: Full=IP3 receptor isoform 3; Short=IP3R-3; Short=InsP3R3; AltName: Full=Inositol 1,4,5-trisphosphate receptor type 3; AltName: Full=Type 3 inositol 1,4,5-trisphosphate receptor; Short=Type 3 InsP3 receptor",https://www.ncbi.nlm.nih.gov/protein/P70227.3
+NCBI,ITPR3,Q63269.1,,10116,2670,,,"RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3; AltName: Full=IP3 receptor isoform 3; Short=IP3R-3; Short=InsP3R3; AltName: Full=Inositol 1,4,5-trisphosphate receptor type 3; AltName: Full=Type 3 inositol 1,4,5-trisphosphate receptor; Short=Type 3 InsP3 receptor",https://www.ncbi.nlm.nih.gov/protein/Q63269.1
+NCBI,ITPR3,XP_084467391.1,,27788,2663,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Lepidochelys olivacea]",https://www.ncbi.nlm.nih.gov/protein/XP_084467391.1
+NCBI,ITPR3,XP_084335346.1,,81636,2714,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Micromesistius poutassou]",https://www.ncbi.nlm.nih.gov/protein/XP_084335346.1
+NCBI,ITPR3,XP_084354149.1,,219593,2648,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 3 [Aythya ferina]",https://www.ncbi.nlm.nih.gov/protein/XP_084354149.1
+NCBI,ITPR3,XP_084354148.1,,219593,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2 [Aythya ferina]",https://www.ncbi.nlm.nih.gov/protein/XP_084354148.1
+NCBI,ITPR3,XP_084354147.1,,219593,2665,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Aythya ferina]",https://www.ncbi.nlm.nih.gov/protein/XP_084354147.1
+NCBI,ITPR3,XP_084410163.1,,48171,2657,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 4 [Chelon labrosus]",https://www.ncbi.nlm.nih.gov/protein/XP_084410163.1
+NCBI,ITPR3,XP_084410162.1,,48171,2672,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 3 [Chelon labrosus]",https://www.ncbi.nlm.nih.gov/protein/XP_084410162.1
+NCBI,ITPR3,XP_084410161.1,,48171,2679,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2 [Chelon labrosus]",https://www.ncbi.nlm.nih.gov/protein/XP_084410161.1
+NCBI,ITPR3,XP_084410160.1,,48171,2682,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Chelon labrosus]",https://www.ncbi.nlm.nih.gov/protein/XP_084410160.1
+NCBI,ITPR3,XP_083365276.1,,662736,2665,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Podarcis liolepis]",https://www.ncbi.nlm.nih.gov/protein/XP_083365276.1
+NCBI,ITPR3,XP_083301735.1,,65485,2665,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Podarcis tiliguerta]",https://www.ncbi.nlm.nih.gov/protein/XP_083301735.1
+NCBI,ITPR3,XP_083476129.1,,65481,2665,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Podarcis filfolensis]",https://www.ncbi.nlm.nih.gov/protein/XP_083476129.1
+NCBI,ITPR3,XP_083530578.1,,446415,2680,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2 [Argentina silus]",https://www.ncbi.nlm.nih.gov/protein/XP_083530578.1
+NCBI,ITPR3,XP_083530577.1,,446415,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Argentina silus]",https://www.ncbi.nlm.nih.gov/protein/XP_083530577.1
+NCBI,ITPR3,XP_083818856.1,,197941,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Clangula hyemalis]",https://www.ncbi.nlm.nih.gov/protein/XP_083818856.1
+NCBI,ITPR3,XP_083776120.1,,94984,2670,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2 [Echiichthys vipera]",https://www.ncbi.nlm.nih.gov/protein/XP_083776120.1
+NCBI,ITPR3,XP_083776119.1,,94984,2695,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Echiichthys vipera]",https://www.ncbi.nlm.nih.gov/protein/XP_083776119.1
+NCBI,ITPR3,XP_083831728.1,,36212,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Trachurus trachurus]",https://www.ncbi.nlm.nih.gov/protein/XP_083831728.1
+NCBI,ITPR3,XP_083750921.1,,90074,2660,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Microchirus variegatus]",https://www.ncbi.nlm.nih.gov/protein/XP_083750921.1
+NCBI,ITPR3,XP_083601028.1,,90521,2665,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Podarcis gaigeae]",https://www.ncbi.nlm.nih.gov/protein/XP_083601028.1
+NCBI,ITPR3,XP_083668324.1,,8843,2604,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 5 [Anser anser]",https://www.ncbi.nlm.nih.gov/protein/XP_083668324.1
+NCBI,ITPR3,XP_083668323.1,,8843,2604,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 5 [Anser anser]",https://www.ncbi.nlm.nih.gov/protein/XP_083668323.1
+NCBI,ITPR3,XP_083668322.1,,8843,2648,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 4 [Anser anser]",https://www.ncbi.nlm.nih.gov/protein/XP_083668322.1
+NCBI,ITPR3,XP_083668321.1,,8843,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 3 [Anser anser]",https://www.ncbi.nlm.nih.gov/protein/XP_083668321.1
+NCBI,ITPR3,XP_083668320.1,,8843,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2 [Anser anser]",https://www.ncbi.nlm.nih.gov/protein/XP_083668320.1
+NCBI,ITPR3,XP_083668319.1,,8843,2665,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Anser anser]",https://www.ncbi.nlm.nih.gov/protein/XP_083668319.1
+NCBI,ITPR3,XP_083734599.1,,43581,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Zosterops lateralis]",https://www.ncbi.nlm.nih.gov/protein/XP_083734599.1
+NCBI,ITPR3,XP_083926347.1,,1090481,2686,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2 [Gymnoscopelus microlampas]",https://www.ncbi.nlm.nih.gov/protein/XP_083926347.1
+NCBI,ITPR3,XP_083926346.1,,1090481,2696,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Gymnoscopelus microlampas]",https://www.ncbi.nlm.nih.gov/protein/XP_083926346.1
+NCBI,ITPR3,XP_083994629.1,,38527,2640,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2 [Abramis brama]",https://www.ncbi.nlm.nih.gov/protein/XP_083994629.1
+NCBI,ITPR3,XP_083994628.1,,38527,2657,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Abramis brama]",https://www.ncbi.nlm.nih.gov/protein/XP_083994628.1
+NCBI,ITPR3,XP_084131914.1,,9123,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Gallinula chloropus]",https://www.ncbi.nlm.nih.gov/protein/XP_084131914.1
+NCBI,ITPR3,XP_084076932.1,,37598,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Fringilla coelebs]",https://www.ncbi.nlm.nih.gov/protein/XP_084076932.1
+NCBI,ITPR3,XP_084084130.1,,9375,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Talpa europaea]",https://www.ncbi.nlm.nih.gov/protein/XP_084084130.1
+NCBI,ITPR3,XP_084245027.1,,48668,2640,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2 [Rutilus rutilus]",https://www.ncbi.nlm.nih.gov/protein/XP_084245027.1
+NCBI,ITPR3,XP_084245026.1,,48668,2657,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Rutilus rutilus]",https://www.ncbi.nlm.nih.gov/protein/XP_084245026.1
+NCBI,ITPR3,XP_084223886.1,,8173,2686,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2 [Pagrus pagrus]",https://www.ncbi.nlm.nih.gov/protein/XP_084223886.1
+NCBI,ITPR3,XP_084223885.1,,8173,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Pagrus pagrus]",https://www.ncbi.nlm.nih.gov/protein/XP_084223885.1
+NCBI,ITPR3,XP_084189542.1,,948063,2005,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Notolepis coatsorum]",https://www.ncbi.nlm.nih.gov/protein/XP_084189542.1
+NCBI,ITPR3,XP_084158214.1,,30387,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Netta rufina]",https://www.ncbi.nlm.nih.gov/protein/XP_084158214.1
+NCBI,ITPR3,XP_084292548.1,,473354,2666,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Borostomias antarcticus]",https://www.ncbi.nlm.nih.gov/protein/XP_084292548.1
+NCBI,ITPR3,XP_083409837.1,,933932,2697,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2 [Silurus aristotelis]",https://www.ncbi.nlm.nih.gov/protein/XP_083409837.1
+NCBI,ITPR3,XP_083409836.1,,933932,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Silurus aristotelis]",https://www.ncbi.nlm.nih.gov/protein/XP_083409836.1
+NCBI,ITPR3,XP_083871024.1,,426098,2675,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2 [Eutrigla gurnardus]",https://www.ncbi.nlm.nih.gov/protein/XP_083871024.1
+NCBI,ITPR3,XP_083871023.1,,426098,2677,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Eutrigla gurnardus]",https://www.ncbi.nlm.nih.gov/protein/XP_083871023.1
+NCBI,ITPR3,XP_083513249.1,,88708,2666,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Poromitra crassiceps]",https://www.ncbi.nlm.nih.gov/protein/XP_083513249.1
+NCBI,ITPR3,XP_083216560.1,,103942,2252,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2 [Vipera ursinii]",https://www.ncbi.nlm.nih.gov/protein/XP_083216560.1
+NCBI,ITPR3,XP_083216559.1,,103942,2665,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1 [Vipera ursinii]",https://www.ncbi.nlm.nih.gov/protein/XP_083216559.1
+NCBI,ITPR3,XP_083626131.1,,1091426,2680,,,"LOW QUALITY PROTEIN: inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Protomyctophum parallelum]",https://www.ncbi.nlm.nih.gov/protein/XP_083626131.1
+NCBI,ITPR3,NP_542120.2,,10090,2670,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Mus musculus]",https://www.ncbi.nlm.nih.gov/protein/NP_542120.2
+NCBI,ITPR3,YEX57635.1,,187939,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2-T2 [Furcifer pardalis]",https://www.ncbi.nlm.nih.gov/protein/YEX57635.1
+NCBI,ITPR3,YEX57634.1,,187939,2665,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1-T1 [Furcifer pardalis]",https://www.ncbi.nlm.nih.gov/protein/YEX57634.1
+NCBI,ITPR3,KAO0279783.1,,66447,851,,,ITPR3 protein product [Galaxias brevipinnis],https://www.ncbi.nlm.nih.gov/protein/KAO0279783.1
+NCBI,ITPR3,KAO0279781.1,,66447,1260,,,ITPR3 protein product [Galaxias brevipinnis],https://www.ncbi.nlm.nih.gov/protein/KAO0279781.1
+NCBI,ITPR3,KAO0279779.1,,66447,487,,,ITPR3 protein product [Galaxias brevipinnis],https://www.ncbi.nlm.nih.gov/protein/KAO0279779.1
+NCBI,ITPR3,KAO0279777.1,,66447,138,,,ITPR3 protein product [Galaxias brevipinnis],https://www.ncbi.nlm.nih.gov/protein/KAO0279777.1
+NCBI,ITPR3,KAO0184237.1,,1053555,2670,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Astyanax lacustris]",https://www.ncbi.nlm.nih.gov/protein/KAO0184237.1
+NCBI,ITPR3,XP_040472778.1,,148594,2664,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Falco naumanni]",https://www.ncbi.nlm.nih.gov/protein/XP_040472778.1
+NCBI,ITPR3,KAO0095809.1,,288555,2625,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 3-T3 [Xenopus petersii]",https://www.ncbi.nlm.nih.gov/protein/KAO0095809.1
+NCBI,ITPR3,KAO0095808.1,,288555,2650,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2-T2 [Xenopus petersii]",https://www.ncbi.nlm.nih.gov/protein/KAO0095808.1
+NCBI,ITPR3,KAO0095807.1,,288555,2667,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1-T1 [Xenopus petersii]",https://www.ncbi.nlm.nih.gov/protein/KAO0095807.1
+NCBI,ITPR3,KAO0077085.1,,9823,2722,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 4-T4 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/KAO0077085.1
+NCBI,ITPR3,KAO0077084.1,,9823,2692,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 3-T3 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/KAO0077084.1
+NCBI,ITPR3,KAO0077083.1,,9823,2670,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2-T2 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/KAO0077083.1
+NCBI,ITPR3,KAO0077082.1,,9823,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1-T1 [Sus scrofa]",https://www.ncbi.nlm.nih.gov/protein/KAO0077082.1
+NCBI,ITPR3,XP_024622064.1,,1706337,2670,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Neophocaena asiaeorientalis asiaeorientalis]",https://www.ncbi.nlm.nih.gov/protein/XP_024622064.1
+NCBI,ITPR3,XP_034516455.1,,9646,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Ailuropoda melanoleuca]",https://www.ncbi.nlm.nih.gov/protein/XP_034516455.1
+NCBI,ITPR3,XP_031791519.1,,591936,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Piliocolobus tephrosceles]",https://www.ncbi.nlm.nih.gov/protein/XP_031791519.1
+NCBI,ITPR3,XP_019516379.1,,186990,2643,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Hipposideros armiger]",https://www.ncbi.nlm.nih.gov/protein/XP_019516379.1
+NCBI,ITPR3,XP_024212919.2,,9598,2658,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X3 [Pan troglodytes]",https://www.ncbi.nlm.nih.gov/protein/XP_024212919.2
+NCBI,ITPR3,XP_016810752.3,,9598,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Pan troglodytes]",https://www.ncbi.nlm.nih.gov/protein/XP_016810752.3
+NCBI,ITPR3,XP_016810751.3,,9598,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Pan troglodytes]",https://www.ncbi.nlm.nih.gov/protein/XP_016810751.3
+NCBI,ITPR3,XP_017709133.1,,61621,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Rhinopithecus bieti]",https://www.ncbi.nlm.nih.gov/protein/XP_017709133.1
+NCBI,ITPR3,KAN9744666.1,,143539,2662,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Correlophus ciliatus]",https://www.ncbi.nlm.nih.gov/protein/KAN9744666.1
+NCBI,ITPR3,KAN8531754.1,,8153,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 3-T3 [Haplochromis burtoni]",https://www.ncbi.nlm.nih.gov/protein/KAN8531754.1
+NCBI,ITPR3,KAN8531753.1,,8153,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2-T2 [Haplochromis burtoni]",https://www.ncbi.nlm.nih.gov/protein/KAN8531753.1
+NCBI,ITPR3,KAN8531752.1,,8153,2696,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1-T1 [Haplochromis burtoni]",https://www.ncbi.nlm.nih.gov/protein/KAN8531752.1
+NCBI,ITPR3,KAN8468730.1,,3030661,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Rhinolophus perniger lanosus]",https://www.ncbi.nlm.nih.gov/protein/KAN8468730.1
+NCBI,ITPR3,KAN8461901.1,,8153,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 3-T3 [Haplochromis burtoni]",https://www.ncbi.nlm.nih.gov/protein/KAN8461901.1
+NCBI,ITPR3,KAN8461900.1,,8153,2687,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 2-T2 [Haplochromis burtoni]",https://www.ncbi.nlm.nih.gov/protein/KAN8461900.1
+NCBI,ITPR3,KAN8461899.1,,8153,2696,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform 1-T1 [Haplochromis burtoni]",https://www.ncbi.nlm.nih.gov/protein/KAN8461899.1

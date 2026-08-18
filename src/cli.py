@@ -53,7 +53,13 @@ def run_headless(
     species_override: str = "",
     max_override: int = 0,
     save_results: bool = False,
-    timeout_s: int = 300,
+    # S0 (2026-08-18) measured Ensembl at 14 s for a 451-byte symbol lookup and
+    # 11 s for a gene expansion — ~25-95 s per gene per species. The default
+    # 8-species panel × 3 genes therefore cannot finish in 300 s, and the
+    # headless run silently reported 2/3 sources. Raised to 900 s so a
+    # species-scoped run completes; a full panel sweep still needs --species
+    # or the parallel Ensembl client (Emergent).
+    timeout_s: int = 900,
     label_override: str = "",
     analyze: bool = False,
     discover: bool = False,

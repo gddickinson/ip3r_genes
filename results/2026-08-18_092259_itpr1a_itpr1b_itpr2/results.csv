@@ -1,0 +1,211 @@
+source,gene_symbol,accession,species,taxon_id,length_aa,transcript_id,gene_id,description,url
+UniProt,itpr1a,A0A8M3ATJ5,Danio rerio,7955,2710,,itpr1a,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8M3ATJ5
+UniProt,itpr1a,A0A8M2BDG0,Danio rerio,7955,2711,,itpr1a,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8M2BDG0
+UniProt,itpr1a,A0A8M6Z7H7,Danio rerio,7955,2667,,itpr1a,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8M6Z7H7
+UniProt,itpr1a,A0A8M3B0M5,Danio rerio,7955,2683,,itpr1a,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8M3B0M5
+UniProt,itpr1a,A0A8M6YZS1,Danio rerio,7955,2695,,itpr1a,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8M6YZS1
+UniProt,itpr1a,F8W4B1,Danio rerio,7955,2682,,itpr1a,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/F8W4B1
+UniProt,itpr1a,A0A8M3B3K9,Danio rerio,7955,2696,,itpr1a,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8M3B3K9
+UniProt,itpr1a,A0AC58JVD9,Danio rerio,7955,2695,,itpr1a,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58JVD9
+UniProt,itpr1a,A0AC58JVF2,Danio rerio,7955,2684,,itpr1a,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58JVF2
+UniProt,itpr1a,A0AC58JVF3,Danio rerio,7955,2683,,itpr1a,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58JVF3
+UniProt,itpr1a,A0AC58JVI5,Danio rerio,7955,2694,,itpr1a,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58JVI5
+UniProt,itpr1a,A0AC58JVG8,Danio rerio,7955,2668,,itpr1a,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58JVG8
+UniProt,itpr1a,A0AC58JVG9,Danio rerio,7955,2698,,itpr1a,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58JVG9
+UniProt,itpr1a,A0AC58JVL8,Danio rerio,7955,2165,,itpr1a,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58JVL8
+UniProt,itpr1b,A0AB32U088,Danio rerio,7955,2804,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AB32U088
+UniProt,itpr1b,A0AB32U4T8,Danio rerio,7955,2780,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AB32U4T8
+UniProt,itpr1b,A0AB32U0W5,Danio rerio,7955,2756,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AB32U0W5
+UniProt,itpr1b,A0AB32TXG4,Danio rerio,7955,2819,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AB32TXG4
+UniProt,itpr1b,A0AB32TY48,Danio rerio,7955,2806,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AB32TY48
+UniProt,itpr1b,A0AB32TZL3,Danio rerio,7955,2807,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AB32TZL3
+UniProt,itpr1b,A0AB32U288,Danio rerio,7955,2716,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AB32U288
+UniProt,itpr1b,A0AB32U3W1,Danio rerio,7955,2764,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AB32U3W1
+UniProt,itpr1b,A0AB32TZV0,Danio rerio,7955,2795,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AB32TZV0
+UniProt,itpr1b,A0AB32U276,Danio rerio,7955,2807,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AB32U276
+UniProt,itpr1b,A0AB32U2V7,Danio rerio,7955,2779,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AB32U2V7
+UniProt,itpr1b,A0AC58GTJ3,Danio rerio,7955,2791,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTJ3
+UniProt,itpr1b,A0AC58GTK4,Danio rerio,7955,2755,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTK4
+UniProt,itpr1b,A0AC58GTK9,Danio rerio,7955,2751,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTK9
+UniProt,itpr1b,A0AC58GTL0,Danio rerio,7955,2744,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTL0
+UniProt,itpr1b,A0AC58GTL7,Danio rerio,7955,2760,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTL7
+UniProt,itpr1b,A0AC58GTM8,Danio rerio,7955,2730,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTM8
+UniProt,itpr1b,A0AC58GTJ0,Danio rerio,7955,2782,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTJ0
+UniProt,itpr1b,A0AC58GTK2,Danio rerio,7955,2779,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTK2
+UniProt,itpr1b,A0AC58GTL8,Danio rerio,7955,2749,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTL8
+UniProt,itpr1b,A0AC58GTM2,Danio rerio,7955,2726,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTM2
+UniProt,itpr1b,A0AC58GTJ8,Danio rerio,7955,2792,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTJ8
+UniProt,itpr1b,A0AC58GTL5,Danio rerio,7955,2746,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTL5
+UniProt,itpr1b,A0AC58GTN9,Danio rerio,7955,2732,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTN9
+UniProt,itpr1b,A0AC58GTP4,Danio rerio,7955,2729,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTP4
+UniProt,itpr1b,A0AC58GTJ2,Danio rerio,7955,2792,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTJ2
+UniProt,itpr1b,A0AC58GTK6,Danio rerio,7955,2766,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTK6
+UniProt,itpr1b,A0AC58GTK8,Danio rerio,7955,2758,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTK8
+UniProt,itpr1b,A0AC58GTM3,Danio rerio,7955,2757,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTM3
+UniProt,itpr1b,A0AC58GTN7,Danio rerio,7955,2742,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTN7
+UniProt,itpr1b,A0AC58GTJ1,Danio rerio,7955,2794,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTJ1
+UniProt,itpr1b,A0AC58GTJ4,Danio rerio,7955,2781,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTJ4
+UniProt,itpr1b,A0AC58GTJ7,Danio rerio,7955,2767,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTJ7
+UniProt,itpr1b,A0AC58GTL2,Danio rerio,7955,2748,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTL2
+UniProt,itpr1b,A0AC58GTL3,Danio rerio,7955,2756,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTL3
+UniProt,itpr1b,A0AC58GTL6,Danio rerio,7955,2747,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTL6
+UniProt,itpr1b,A0AC58GTL9,Danio rerio,7955,2767,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTL9
+UniProt,itpr1b,A0AC58GTM0,Danio rerio,7955,2745,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTM0
+UniProt,itpr1b,A0AC58GTM1,Danio rerio,7955,2739,,itpr1b,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0AC58GTM1
+UniProt,itpr2,A0A8M9PQQ3,Danio rerio,7955,2665,,itpr2,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8M9PQQ3
+UniProt,itpr3,A0A0R4IH08,Danio rerio,7955,2634,,itpr3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A0R4IH08
+UniProt,itpr3,A0A8M6Z266,Danio rerio,7955,2635,,itpr3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8M6Z266
+UniProt,ryr1b,A6P4B8,Danio rerio,7955,5076,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A6P4B8
+UniProt,ryr1b,A0A8M6YTI2,Danio rerio,7955,5109,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0A8M6YTI2
+UniProt,ryr1b,A0AC58HUC8,Danio rerio,7955,5076,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUC8
+UniProt,ryr1b,A0AC58HU98,Danio rerio,7955,5098,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HU98
+UniProt,ryr1b,A0AC58HUA1,Danio rerio,7955,5098,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUA1
+UniProt,ryr1b,A0AC58HUA9,Danio rerio,7955,5099,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUA9
+UniProt,ryr1b,A0AC58HUB1,Danio rerio,7955,5093,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUB1
+UniProt,ryr1b,A0AC58HUA4,Danio rerio,7955,5104,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUA4
+UniProt,ryr1b,A0AC58HUA7,Danio rerio,7955,5103,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUA7
+UniProt,ryr1b,A0AC58HUB6,Danio rerio,7955,5092,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUB6
+UniProt,ryr1b,A0AC58HUC2,Danio rerio,7955,5087,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUC2
+UniProt,ryr1b,A0AC58HUD1,Danio rerio,7955,5071,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUD1
+UniProt,ryr1b,A0A8M1NEG1,Danio rerio,7955,5076,,ryr1b,A0A8M1NEG1_DANRE,https://www.uniprot.org/uniprotkb/A0A8M1NEG1
+UniProt,ryr1b,A0AC58HUB7,Danio rerio,7955,5084,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUB7
+UniProt,ryr1b,A0AC58HUC0,Danio rerio,7955,5077,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUC0
+UniProt,ryr1b,A0AC58HUC1,Danio rerio,7955,5078,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUC1
+UniProt,ryr1b,A0AC58HUC3,Danio rerio,7955,5102,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUC3
+UniProt,ryr1b,A0AC58HUC6,Danio rerio,7955,5078,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUC6
+UniProt,ryr1b,A0AC58HUC7,Danio rerio,7955,5072,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUC7
+UniProt,ryr1b,A0AC58HUF2,Danio rerio,7955,5083,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUF2
+UniProt,ryr1b,A0AC58HUB0,Danio rerio,7955,5097,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUB0
+UniProt,ryr1b,A0AC58HUB3,Danio rerio,7955,5093,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUB3
+UniProt,ryr1b,A0AC58HUB5,Danio rerio,7955,5088,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUB5
+UniProt,ryr1b,A0AC58HUB9,Danio rerio,7955,5089,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUB9
+UniProt,ryr1b,A0AC58HUC4,Danio rerio,7955,5083,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUC4
+UniProt,ryr1b,A0AC58HUC9,Danio rerio,7955,5103,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUC9
+UniProt,ryr1b,A0AC58HUD7,Danio rerio,7955,5082,,ryr1b,Ryanodine receptor 1,https://www.uniprot.org/uniprotkb/A0AC58HUD7
+UniProt,ryr3,A0A8M3ALN1,Danio rerio,7955,4863,,ryr3,A0A8M3ALN1_DANRE,https://www.uniprot.org/uniprotkb/A0A8M3ALN1
+UniProt,ryr3,A0A8M3ATC3,Danio rerio,7955,4856,,ryr3,A0A8M3ATC3_DANRE,https://www.uniprot.org/uniprotkb/A0A8M3ATC3
+UniProt,ryr3,A0A8M3AWD0,Danio rerio,7955,4857,,ryr3,A0A8M3AWD0_DANRE,https://www.uniprot.org/uniprotkb/A0A8M3AWD0
+UniProt,ryr3,A0AB32TAU4,Danio rerio,7955,4861,,ryr3,A0AB32TAU4_DANRE,https://www.uniprot.org/uniprotkb/A0AB32TAU4
+NCBI,itpr1a,XP_073810477.1,,7955,2165,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X14 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073810477.1
+NCBI,itpr1a,XP_073810476.1,,7955,2668,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X12 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073810476.1
+NCBI,itpr1a,XP_073810475.1,,7955,2683,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X9 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073810475.1
+NCBI,itpr1a,XP_073810474.1,,7955,2684,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X8 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073810474.1
+NCBI,itpr1a,XP_073810473.1,,7955,2694,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X7 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073810473.1
+NCBI,itpr1a,XP_073810472.1,,7955,2695,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X6 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073810472.1
+NCBI,itpr1a,XP_073810471.1,,7955,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073810471.1
+NCBI,itpr1a,XP_017212155.1,,7955,2667,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X13 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_017212155.1
+NCBI,itpr1a,XP_017212154.1,,7955,2682,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X11 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_017212154.1
+NCBI,itpr1a,XP_017212153.1,,7955,2695,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_017212153.1
+NCBI,itpr1a,XP_009300863.1,,7955,2683,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X10 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_009300863.1
+NCBI,itpr1a,XP_009300862.1,,7955,2696,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_009300862.1
+NCBI,itpr1a,XP_009300860.1,,7955,2710,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_009300860.1
+NCBI,itpr1a,XP_005166152.1,,7955,2711,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_005166152.1
+NCBI,itpr1b,XP_068080511.2,,7955,2716,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X39 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_068080511.2
+NCBI,itpr1b,XP_068080510.2,,7955,2756,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X38 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_068080510.2
+NCBI,itpr1b,XP_073773085.1,,7955,2726,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X37 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773085.1
+NCBI,itpr1b,XP_073773083.1,,7955,2729,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X36 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773083.1
+NCBI,itpr1b,XP_073773082.1,,7955,2730,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X35 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773082.1
+NCBI,itpr1b,XP_073773081.1,,7955,2732,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X34 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773081.1
+NCBI,itpr1b,XP_073773080.1,,7955,2739,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X33 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773080.1
+NCBI,itpr1b,XP_073773079.1,,7955,2742,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X32 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773079.1
+NCBI,itpr1b,XP_073773078.1,,7955,2744,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X31 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773078.1
+NCBI,itpr1b,XP_073773077.1,,7955,2745,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X30 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773077.1
+NCBI,itpr1b,XP_073773076.1,,7955,2746,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X29 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773076.1
+NCBI,itpr1b,XP_073773075.1,,7955,2747,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X28 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773075.1
+NCBI,itpr1b,XP_073773074.1,,7955,2748,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X27 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773074.1
+NCBI,itpr1b,XP_073773072.1,,7955,2749,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X26 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773072.1
+NCBI,itpr1b,XP_073773071.1,,7955,2751,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X25 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773071.1
+NCBI,itpr1b,XP_073773070.1,,7955,2755,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X24 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773070.1
+NCBI,itpr1b,XP_073773069.1,,7955,2756,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X23 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773069.1
+NCBI,itpr1b,XP_073773068.1,,7955,2757,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X22 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773068.1
+NCBI,itpr1b,XP_073773067.1,,7955,2758,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X21 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773067.1
+NCBI,itpr1b,XP_073773066.1,,7955,2760,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X20 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773066.1
+NCBI,itpr1b,XP_068080507.2,,7955,2764,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X19 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_068080507.2
+NCBI,itpr1b,XP_073773065.1,,7955,2766,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X18 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773065.1
+NCBI,itpr1b,XP_073773064.1,,7955,2767,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X17 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773064.1
+NCBI,itpr1b,XP_073773063.1,,7955,2767,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X16 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773063.1
+NCBI,itpr1b,XP_068080506.2,,7955,2779,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X15 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_068080506.2
+NCBI,itpr1b,XP_073773062.1,,7955,2779,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X14 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773062.1
+NCBI,itpr1b,XP_068080505.2,,7955,2780,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X13 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_068080505.2
+NCBI,itpr1b,XP_073773061.1,,7955,2781,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X12 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773061.1
+NCBI,itpr1b,XP_073773060.1,,7955,2782,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X11 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773060.1
+NCBI,itpr1b,XP_073773059.1,,7955,2791,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X10 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773059.1
+NCBI,itpr1b,XP_073773058.1,,7955,2792,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X9 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773058.1
+NCBI,itpr1b,XP_073773057.1,,7955,2792,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X8 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773057.1
+NCBI,itpr1b,XP_073773056.1,,7955,2794,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X7 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_073773056.1
+NCBI,itpr1b,XP_068080501.2,,7955,2795,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X6 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_068080501.2
+NCBI,itpr1b,XP_068080499.2,,7955,2804,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X5 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_068080499.2
+NCBI,itpr1b,XP_068080498.2,,7955,2806,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X4 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_068080498.2
+NCBI,itpr1b,XP_068080497.2,,7955,2807,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X3 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_068080497.2
+NCBI,itpr1b,XP_068080496.2,,7955,2807,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X2 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_068080496.2
+NCBI,itpr1b,XP_068080493.2,,7955,2819,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform X1 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_068080493.2
+NCBI,itpr2,XP_021323455.1,,7955,2665,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_021323455.1
+NCBI,itpr3,NP_001300740.1,,7955,2634,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/NP_001300740.1
+NCBI,itpr3,XP_017212869.1,,7955,2635,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/XP_017212869.1
+NCBI,itpr3,AAI54571.1,,7955,226,,,Itpr3 protein [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/AAI54571.1
+NCBI,ryr1b,NP_001096041.1,,7955,5076,,,ryanodine receptor 1b [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/NP_001096041.1
+NCBI,ryr1b,XP_073785593.1,,7955,5071,,,ryanodine receptor 1b isoform X25 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785593.1
+NCBI,ryr1b,XP_073785592.1,,7955,5076,,,ryanodine receptor 1b isoform X24 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785592.1
+NCBI,ryr1b,XP_073785591.1,,7955,5072,,,ryanodine receptor 1b isoform X23 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785591.1
+NCBI,ryr1b,XP_073785590.1,,7955,5077,,,ryanodine receptor 1b isoform X22 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785590.1
+NCBI,ryr1b,XP_073785589.1,,7955,5078,,,ryanodine receptor 1b isoform X21 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785589.1
+NCBI,ryr1b,XP_073785588.1,,7955,5078,,,ryanodine receptor 1b isoform X20 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785588.1
+NCBI,ryr1b,XP_073785587.1,,7955,5082,,,ryanodine receptor 1b isoform X19 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785587.1
+NCBI,ryr1b,XP_073785586.1,,7955,5083,,,ryanodine receptor 1b isoform X18 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785586.1
+NCBI,ryr1b,XP_073785585.1,,7955,5083,,,ryanodine receptor 1b isoform X17 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785585.1
+NCBI,ryr1b,XP_073785584.1,,7955,5084,,,ryanodine receptor 1b isoform X16 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785584.1
+NCBI,ryr1b,XP_073785583.1,,7955,5087,,,ryanodine receptor 1b isoform X15 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785583.1
+NCBI,ryr1b,XP_073785582.1,,7955,5088,,,ryanodine receptor 1b isoform X14 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785582.1
+NCBI,ryr1b,XP_073785581.1,,7955,5089,,,ryanodine receptor 1b isoform X13 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785581.1
+NCBI,ryr1b,XP_073785579.1,,7955,5092,,,ryanodine receptor 1b isoform X12 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785579.1
+NCBI,ryr1b,XP_073785578.1,,7955,5093,,,ryanodine receptor 1b isoform X11 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785578.1
+NCBI,ryr1b,XP_073785577.1,,7955,5093,,,ryanodine receptor 1b isoform X10 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785577.1
+NCBI,ryr1b,XP_073785576.1,,7955,5097,,,ryanodine receptor 1b isoform X9 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785576.1
+NCBI,ryr1b,XP_073785575.1,,7955,5098,,,ryanodine receptor 1b isoform X8 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785575.1
+NCBI,ryr1b,XP_073785574.1,,7955,5098,,,ryanodine receptor 1b isoform X7 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785574.1
+NCBI,ryr1b,XP_073785573.1,,7955,5099,,,ryanodine receptor 1b isoform X6 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785573.1
+NCBI,ryr1b,XP_073785572.1,,7955,5102,,,ryanodine receptor 1b isoform X5 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785572.1
+NCBI,ryr1b,XP_073785571.1,,7955,5103,,,ryanodine receptor 1b isoform X4 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785571.1
+NCBI,ryr1b,XP_073785570.1,,7955,5103,,,ryanodine receptor 1b isoform X3 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785570.1
+NCBI,ryr1b,XP_073785568.1,,7955,5104,,,ryanodine receptor 1b isoform X2 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_073785568.1
+NCBI,ryr1b,XP_017207446.1,,7955,5109,,,ryanodine receptor 1b isoform X1 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_017207446.1
+NCBI,ryr1b,BAF73476.1,,7955,5076,,,ryanodine receptor 1b [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/BAF73476.1
+NCBI,ryr3,XP_009293050.2,,7955,4856,,,ryanodine receptor 3 isoform X4 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_009293050.2
+NCBI,ryr3,XP_009293049.2,,7955,4857,,,ryanodine receptor 3 isoform X3 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_009293049.2
+NCBI,ryr3,XP_068071751.2,,7955,4861,,,ryanodine receptor 3 isoform X2 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_068071751.2
+NCBI,ryr3,XP_009293048.2,,7955,4863,,,ryanodine receptor 3 isoform X1 [Danio rerio],https://www.ncbi.nlm.nih.gov/protein/XP_009293048.2
+NCBI,ryr3,ABM22418.1,,7955,274,,,"ryanodine receptor 3-like protein, partial [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/ABM22418.1
+NCBI,ryr3,BAF75948.1,,7955,409,,,"ryanodine receptor 3, partial [Danio rerio]",https://www.ncbi.nlm.nih.gov/protein/BAF75948.1
+Ensembl,itpr1a,ENSDARP00000123931,Danio rerio,,2682,ENSDART00000149019,ENSDARG00000014655,itpr1a-202,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000014655
+Ensembl,itpr1a,ENSDARP00000155491,Danio rerio,,2707,ENSDART00000182352,ENSDARG00000014655,itpr1a-203,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000014655
+Ensembl,itpr1a,ENSDARP00000152307,Danio rerio,,594,ENSDART00000183256,ENSDARG00000014655,itpr1a-204,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000014655
+Ensembl,itpr1a,ENSDARP00000151640,Danio rerio,,2745,ENSDART00000186643,ENSDARG00000014655,itpr1a-205,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000014655
+Ensembl,itpr1a,ENSDARP00000152700,Danio rerio,,708,ENSDART00000190513,ENSDARG00000014655,itpr1a-207,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000014655
+Ensembl,itpr1a,ENSDARP00000065091,Danio rerio,,2730,ENSDART00000065092,ENSDARG00000014655,itpr1a-201,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000014655
+Ensembl,itpr1a,ENSDARP00000152154,Danio rerio,,2726,ENSDART00000188645,ENSDARG00000014655,itpr1a-206,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000014655
+Ensembl,itpr1a,ENSDARP00000147809,Danio rerio,,2715,ENSDART00000190538,ENSDARG00000117119,protein_coding,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000117119
+Ensembl,itpr1a,ENSDARP00000156373,Danio rerio,,2745,ENSDART00000192659,ENSDARG00000117119,protein_coding,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000117119
+Ensembl,itpr1a,ENSDARP00000145528,Danio rerio,,2730,ENSDART00000186367,ENSDARG00000117119,protein_coding,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000117119
+Ensembl,itpr1a,ENSDARP00000149110,Danio rerio,,2726,ENSDART00000184443,ENSDARG00000117119,protein_coding,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000117119
+Ensembl,itpr1a,ENSDARP00000151485,Danio rerio,,2707,ENSDART00000188372,ENSDARG00000117119,protein_coding,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000117119
+Ensembl,itpr1a,ENSDARP00000147521,Danio rerio,,708,ENSDART00000192308,ENSDARG00000117119,protein_coding,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000117119
+Ensembl,itpr1a,ENSDARP00000149287,Danio rerio,,990,ENSDART00000185973,ENSDARG00000117119,protein_coding,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000117119
+Ensembl,itpr1b,ENSDARP00000033695,Danio rerio,,2782,ENSDART00000031993,ENSDARG00000074149,itpr1b-201,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000074149
+Ensembl,itpr1b,ENSDARP00000154446,Danio rerio,,595,ENSDART00000186219,ENSDARG00000074149,itpr1b-204,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000074149
+Ensembl,itpr1b,ENSDARP00000145195,Danio rerio,,2717,ENSDART00000189959,ENSDARG00000074149,itpr1b-206,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000074149
+Ensembl,itpr1b,ENSDARP00000149967,Danio rerio,,2580,ENSDART00000192622,ENSDARG00000074149,itpr1b-211,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000074149
+Ensembl,itpr1b,ENSDARP00000148141,Danio rerio,,2533,ENSDART00000188805,ENSDARG00000074149,itpr1b-205,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000074149
+Ensembl,itpr1b,ENSDARP00000139056,Danio rerio,,2731,ENSDART00000167472,ENSDARG00000074149,itpr1b-202,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000074149
+Ensembl,itpr1b,ENSDARP00000148139,Danio rerio,,2638,ENSDART00000191211,ENSDARG00000074149,itpr1b-208,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000074149
+Ensembl,itpr1b,ENSDARP00000155915,Danio rerio,,2576,ENSDART00000191780,ENSDARG00000074149,itpr1b-210,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000074149
+Ensembl,itpr1b,ENSDARP00000150035,Danio rerio,,2740,ENSDART00000190330,ENSDARG00000074149,itpr1b-207,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000074149
+Ensembl,itpr1b,ENSDARP00000154606,Danio rerio,,2581,ENSDART00000179911,ENSDARG00000074149,itpr1b-203,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000074149
+Ensembl,itpr1b,ENSDARP00000148003,Danio rerio,,2715,ENSDART00000191662,ENSDARG00000074149,itpr1b-209,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000074149
+Ensembl,itpr2,ENSDARP00000061133,Danio rerio,,1947,ENSDART00000061134,ENSDARG00000011909,itpr2-201,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000011909
+Ensembl,itpr2,ENSDARP00000128737,Danio rerio,,2008,ENSDART00000154505,ENSDARG00000011909,itpr2-202,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000011909
+Ensembl,itpr3,ENSDARP00000123064,Danio rerio,,332,ENSDART00000144488,ENSDARG00000061741,itpr3-202,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000061741
+Ensembl,itpr3,ENSDARP00000116513,Danio rerio,,2293,ENSDART00000142836,ENSDARG00000061741,itpr3-201,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000061741
+Ensembl,itpr3,ENSDARP00000133340,Danio rerio,,2634,ENSDART00000167718,ENSDARG00000061741,itpr3-203,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000061741
+Ensembl,ryr1b,ENSDARP00000032856,Danio rerio,,5078,ENSDART00000036015,ENSDARG00000023797,ryr1b-201,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000023797
+Ensembl,ryr3,ENSDARP00000116678,Danio rerio,,4984,ENSDART00000147464,ENSDARG00000071331,ryr3-201,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000071331
+Ensembl,ryr3,ENSDARP00000131111,Danio rerio,,4987,ENSDART00000172634,ENSDARG00000071331,ryr3-202,https://www.ensembl.org/danio_rerio/Gene/Summary?g=ENSDARG00000071331

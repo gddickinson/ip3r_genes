@@ -1,0 +1,17 @@
+run	preset	scope	client	source	status	hits	seconds	note
+1	ip3r	8-species panel	pre-fix	UniProt	ok	629	4.1	live
+1	ip3r	8-species panel	pre-fix	NCBI	ok	600	8.3	live
+1	ip3r	8-species panel	pre-fix	Ensembl	failed	0	>300	no response at all; /xrefs/symbol/homo_sapiens stalls
+1	ip3r	8-species panel	pre-fix	TOTAL	partial	1229	-	2/3 sources; results/2026-08-18_091322_itpr1_itpr2_itpr3
+2	ip3r_zebrafish	Danio rerio	pre-fix	UniProt	ok	87	0.0	cache hit
+2	ip3r_zebrafish	Danio rerio	pre-fix	NCBI	ok	90	0.0	cache hit
+2	ip3r_zebrafish	Danio rerio	pre-fix	Ensembl	ok	33	137.5	danio_rerio is not affected by the stall
+2	ip3r_zebrafish	Danio rerio	pre-fix	TOTAL	ok	210	-	3/3 sources; results/2026-08-18_092259_itpr1a_itpr1b_itpr2
+3	ip3r	8-species panel	post-fix	UniProt	ok	629	4.5	live, cold cache
+3	ip3r	8-species panel	post-fix	NCBI	ok	600	8.7	live, cold cache
+3	ip3r	8-species panel	post-fix	Ensembl	failed	0	>300	stall fixed but too slow: 24 sequential gene-species pairs at ~12-95 s each > the then-300 s budget
+3	ip3r	8-species panel	post-fix	TOTAL	partial	1229	-	2/3; results/2026-08-18_123301_itpr1_itpr2_itpr3 - this is what raised run_headless timeout_s 300 -> 900
+4	ip3r	Homo sapiens	post-fix	UniProt	ok	34	2.1	live, cold cache
+4	ip3r	Homo sapiens	post-fix	NCBI	ok	44	4.7	live, cold cache
+4	ip3r	Homo sapiens	post-fix	Ensembl	ok	41	28.5	human Ensembl data recovered - was 0 before the fix
+4	ip3r	Homo sapiens	post-fix	TOTAL	ok	119	-	3/3 sources; results/2026-08-18_123618_s0_smoke_human

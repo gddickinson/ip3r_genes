@@ -2,9 +2,10 @@
 
 Two query paths depending on whether a species was given:
 
-  * With a species → `/xrefs/symbol/{species}/{gene}` resolves the gene id,
+  * With a species → `/lookup/symbol/{species}/{gene}` resolves the gene id,
     then `/lookup/id/{gene_id}?expand=1` enumerates transcripts. Each
     transcript that has a `Translation` becomes one ProteinVariant.
+    `/xrefs/symbol/` is kept as a fallback — see `_symbol_to_ids`.
 
   * Without a species → fall back to the cross-species symbol-based search
     by trying a curated list of common reference species (see species.py),
@@ -86,6 +87,32 @@ class EnsemblClient(DatabaseClient):
         raise last if last else RuntimeError("Ensembl request failed")
 
     def _symbol_to_ids(self, species_slug: str, symbol: str) -> list[str]:
+        """Gene id(s) for a symbol, via `lookup/symbol` with an `xrefs` fallback.
+
+        S0 (2026-08-18) measured a per-species fault at Ensembl:
+        `/xrefs/symbol/homo_sapiens/{symbol}` stalls indefinitely — no
+        response and no error, for `BRCA2` as well as `ITPR1` — while the same
+        endpoint answers in 0.6 s for `danio_rerio` and
+        `/lookup/symbol/homo_sapiens/{symbol}` answers normally. A retry budget
+        cannot fix that, because there is nothing to retry against; the human
+        ITPR preset lost Ensembl entirely
+        (`results/s0_baseline/ensembl_endpoint_probe.tsv`).
+
+        So `lookup/symbol` is now the primary path. It returns the one gene
+        Ensembl considers canonical for the symbol, which is what this client
+        wants anyway. `xrefs/symbol` — which can return several ids — is kept
+        as a fallback for the cases where `lookup/symbol` finds nothing, so no
+        recall is lost when the outage clears.
+        """
+        gene = self._get(f"/lookup/symbol/{species_slug}/{symbol}")
+        if gene and gene.get("id"):
+            return [gene["id"]]
+
+        # Only a clean 404 (`_get` → None) reaches the fallback. A transport
+        # error is deliberately allowed to propagate instead: retrying it
+        # against `xrefs/symbol` would walk straight into the stalling
+        # endpoint and burn `attempts × timeout_s` per gene per species for
+        # nothing.
         data = self._get(f"/xrefs/symbol/{species_slug}/{symbol}?object_type=gene")
         if not data:
             return []

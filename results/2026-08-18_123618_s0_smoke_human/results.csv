@@ -1,0 +1,120 @@
+source,gene_symbol,accession,species,taxon_id,length_aa,transcript_id,gene_id,description,url
+UniProt,ITPR1,Q14643,Homo sapiens,9606,2758,,ITPR1,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR1",https://www.uniprot.org/uniprotkb/Q14643
+UniProt,ITPR1,Q14643-1,Homo sapiens,9606,,,ITPR1,isoform 1 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-1
+UniProt,ITPR1,Q14643-2,Homo sapiens,9606,,,ITPR1,isoform 2 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-2
+UniProt,ITPR1,Q14643-3,Homo sapiens,9606,,,ITPR1,isoform 3 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-3
+UniProt,ITPR1,Q14643-4,Homo sapiens,9606,,,ITPR1,isoform 4 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-4
+UniProt,ITPR1,Q14643-5,Homo sapiens,9606,,,ITPR1,isoform 5 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-5
+UniProt,ITPR1,Q14643-6,Homo sapiens,9606,,,ITPR1,isoform 6 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-6
+UniProt,ITPR1,Q14643-7,Homo sapiens,9606,,,ITPR1,isoform 7 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-7
+UniProt,ITPR1,Q14643-8,Homo sapiens,9606,,,ITPR1,isoform 8 of Q14643,https://www.uniprot.org/uniprotkb/Q14643-8
+UniProt,ITPR1,A0A3F2YNW8,Homo sapiens,9606,2750,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3F2YNW8
+UniProt,ITPR1,A0A3B3ITQ1,Homo sapiens,9606,2012,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3B3ITQ1
+UniProt,ITPR1,A0A3B3ITU8,Homo sapiens,9606,2744,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3B3ITU8
+UniProt,ITPR1,A0A3B3IU04,Homo sapiens,9606,2749,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3B3IU04
+UniProt,ITPR1,A0A8C8KBY2,Homo sapiens,9606,1668,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A8C8KBY2
+UniProt,ITPR1,A0A3B3ITM6,Homo sapiens,9606,714,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3B3ITM6
+UniProt,ITPR1,A0A3B3IRT5,Homo sapiens,9606,296,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A0A3B3IRT5
+UniProt,ITPR1,B7ZMI3,Homo sapiens,9606,721,,ITPR1,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/B7ZMI3
+UniProt,ITPR1,A0A3B3ITM1,Homo sapiens,9606,175,,ITPR1,A0A3B3ITM1_HUMAN,https://www.uniprot.org/uniprotkb/A0A3B3ITM1
+UniProt,ITPR1,A0A3B3IU05,Homo sapiens,9606,1818,,ITPR1,A0A3B3IU05_HUMAN,https://www.uniprot.org/uniprotkb/A0A3B3IU05
+UniProt,ITPR1,F6VW28,Homo sapiens,9606,721,,ITPR1,F6VW28_HUMAN,https://www.uniprot.org/uniprotkb/F6VW28
+UniProt,ITPR1,A0A3B3IS59,Homo sapiens,9606,408,,ITPR1,A0A3B3IS59_HUMAN,https://www.uniprot.org/uniprotkb/A0A3B3IS59
+UniProt,ITPR1,A0A3B3ISE3,Homo sapiens,9606,249,,ITPR1,A0A3B3ISE3_HUMAN,https://www.uniprot.org/uniprotkb/A0A3B3ISE3
+UniProt,ITPR1,A0A3B3ISR4,Homo sapiens,9606,177,,ITPR1,A0A3B3ISR4_HUMAN,https://www.uniprot.org/uniprotkb/A0A3B3ISR4
+UniProt,ITPR1,A0A3B3IU13,Homo sapiens,9606,1739,,ITPR1,A0A3B3IU13_HUMAN,https://www.uniprot.org/uniprotkb/A0A3B3IU13
+UniProt,ITPR1,A0A3B3IRP0,Homo sapiens,9606,1548,,ITPR1,A0A3B3IRP0_HUMAN,https://www.uniprot.org/uniprotkb/A0A3B3IRP0
+UniProt,ITPR1,A0A3B3ITQ4,Homo sapiens,9606,188,,ITPR1,A0A3B3ITQ4_HUMAN,https://www.uniprot.org/uniprotkb/A0A3B3ITQ4
+UniProt,ITPR2,Q14571,Homo sapiens,9606,2701,,ITPR2,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2",https://www.uniprot.org/uniprotkb/Q14571
+UniProt,ITPR2,Q14571-1,Homo sapiens,9606,,,ITPR2,isoform Long of Q14571,https://www.uniprot.org/uniprotkb/Q14571-1
+UniProt,ITPR2,Q14571-2,Homo sapiens,9606,,,ITPR2,isoform Short of Q14571,https://www.uniprot.org/uniprotkb/Q14571-2
+UniProt,ITPR2,H7C2X9,Homo sapiens,9606,102,,ITPR2,H7C2X9_HUMAN,https://www.uniprot.org/uniprotkb/H7C2X9
+UniProt,ITPR2,F5GYT5,Homo sapiens,9606,79,,ITPR2,F5GYT5_HUMAN,https://www.uniprot.org/uniprotkb/F5GYT5
+UniProt,ITPR3,Q14573,Homo sapiens,9606,2671,,ITPR3,"Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3",https://www.uniprot.org/uniprotkb/Q14573
+UniProt,ITPR3,A6H8K3,Homo sapiens,9606,1049,,ITPR3,"Inositol 1,4,5-trisphosphate receptor",https://www.uniprot.org/uniprotkb/A6H8K3
+UniProt,ITPR3,A0ACI8TMT9,Homo sapiens,9606,2661,,ITPR3,A0ACI8TMT9_HUMAN,https://www.uniprot.org/uniprotkb/A0ACI8TMT9
+NCBI,ITPR1,Q14643.3,,9606,2758,,,"RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR1; AltName: Full=IP3 receptor isoform 1; Short=IP3R 1; Short=InsP3R1; AltName: Full=Inositol 1,4,5 trisphosphate receptor; AltName: Full=Inositol 1,4,5-trisphosphate receptor type 1; AltName: Full=Type 1 inositol 1,4,5-trisphosphate receptor; Short=Type 1 InsP3 receptor",https://www.ncbi.nlm.nih.gov/protein/Q14643.3
+NCBI,ITPR1,NP_001161744.1,,9606,2743,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 3 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/NP_001161744.1
+NCBI,ITPR1,NP_002213.5,,9606,2695,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 2 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/NP_002213.5
+NCBI,ITPR1,NP_001093422.2,,9606,2710,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 1 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/NP_001093422.2
+NCBI,ITPR1,NP_001365381.1,,9606,2758,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 4 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/NP_001365381.1
+NCBI,ITPR1,EAW63915.1,,9606,2695,,,"inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_e [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/EAW63915.1
+NCBI,ITPR1,EAW63914.1,,9606,1049,,,"inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_c [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/EAW63914.1
+NCBI,ITPR1,EAW63913.1,,9606,2710,,,"inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_d [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/EAW63913.1
+NCBI,ITPR1,EAW63912.1,,9606,1049,,,"inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_c [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/EAW63912.1
+NCBI,ITPR1,EAW63911.1,,9606,1049,,,"inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_c [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/EAW63911.1
+NCBI,ITPR1,EAW63910.1,,9606,1034,,,"inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_a [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/EAW63910.1
+NCBI,ITPR1,EAW63909.1,,9606,1058,,,"inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_b [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/EAW63909.1
+NCBI,ITPR1,EAW63908.1,,9606,1034,,,"inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_a [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/EAW63908.1
+NCBI,ITPR1,AAI44564.1,,9606,721,,,ITPR1 protein [Homo sapiens],https://www.ncbi.nlm.nih.gov/protein/AAI44564.1
+NCBI,ITPR1,AAB04947.2,,9606,2710,,,"inositol 1,4,5-trisphosphate receptor type 1 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/AAB04947.2
+NCBI,ITPR2,Q14571.2,,9606,2701,,,"RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2; AltName: Full=IP3 receptor isoform 2; Short=IP3R 2; Short=InsP3R2; AltName: Full=Inositol 1,4,5-trisphosphate receptor type 2; AltName: Full=Type 2 inositol 1,4,5-trisphosphate receptor; Short=Type 2 InsP3 receptor",https://www.ncbi.nlm.nih.gov/protein/Q14571.2
+NCBI,ITPR2,XP_054227947.1,,9606,1733,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_054227947.1
+NCBI,ITPR2,XP_054227946.1,,9606,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_054227946.1
+NCBI,ITPR2,XP_054227945.1,,9606,2721,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_054227945.1
+NCBI,ITPR2,XP_047284757.1,,9606,2699,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_047284757.1
+NCBI,ITPR2,XP_016874758.1,,9606,1733,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_016874758.1
+NCBI,ITPR2,XP_016874755.1,,9606,2721,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_016874755.1
+NCBI,ITPR2,NP_001401103.1,,9606,2700,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/NP_001401103.1
+NCBI,ITPR2,NP_001401104.1,,9606,2628,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 3 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/NP_001401104.1
+NCBI,ITPR2,NP_002214.2,,9606,2701,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/NP_002214.2
+NCBI,ITPR2,EAW96535.1,,9606,2726,,,"inositol 1,4,5-triphosphate receptor, type 2, isoform CRA_b [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/EAW96535.1
+NCBI,ITPR2,EAW96534.1,,9606,2701,,,"inositol 1,4,5-triphosphate receptor, type 2, isoform CRA_a [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/EAW96534.1
+NCBI,ITPR2,AFI41831.1,,9606,50,,,"inositol 1,4,5-trisphosphate receptor type 2, partial [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/AFI41831.1
+NCBI,ITPR3,Q14573.2,,9606,2671,,,"RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3; AltName: Full=IP3 receptor isoform 3; Short=IP3R-3; Short=InsP3R3; AltName: Full=Type 3 inositol 1,4,5-trisphosphate receptor; Short=Type 3 InsP3 receptor",https://www.ncbi.nlm.nih.gov/protein/Q14573.2
+NCBI,ITPR3,NP_002215.2,,9606,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/NP_002215.2
+NCBI,ITPR3,XP_054211330.1,,9606,1339,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X5 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_054211330.1
+NCBI,ITPR3,XP_054211329.1,,9606,2610,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_054211329.1
+NCBI,ITPR3,XP_054211328.1,,9606,2610,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_054211328.1
+NCBI,ITPR3,XP_054211327.1,,9606,2610,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_054211327.1
+NCBI,ITPR3,XP_054211326.1,,9606,2698,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X4 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_054211326.1
+NCBI,ITPR3,XP_047274690.1,,9606,2610,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_047274690.1
+NCBI,ITPR3,XP_047274689.1,,9606,2610,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_047274689.1
+NCBI,ITPR3,XP_047274688.1,,9606,2610,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_047274688.1
+NCBI,ITPR3,XP_047274687.1,,9606,2671,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_047274687.1
+NCBI,ITPR3,XP_016866321.1,,9606,1312,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X3 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_016866321.1
+NCBI,ITPR3,XP_011512879.1,,9606,2610,,,"inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/XP_011512879.1
+NCBI,ITPR3,EAX03744.1,,9606,2671,,,"inositol 1,4,5-triphosphate receptor, type 3 [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/EAX03744.1
+NCBI,ITPR3,AAI46647.1,,9606,1049,,,"ITPR3 protein, partial [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/AAI46647.1
+NCBI,ITPR3,AAC50064.1,,9606,2671,,,"human type 3 inositol 1,4,5-trisphosphate receptor [Homo sapiens]",https://www.ncbi.nlm.nih.gov/protein/AAC50064.1
+Ensembl,ITPR1,ENSP00000349597,Homo sapiens,,2710,ENST00000357086,ENSG00000150995,ITPR1-203,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000346595,Homo sapiens,,2750,ENST00000354582,ENSG00000150995,ITPR1-202,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000497605,Homo sapiens,,2758,ENST00000649015,ENSG00000150995,ITPR1-237,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000496995,Homo sapiens,,296,ENST00000467056,ENSG00000150995,ITPR1-207,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000397885,Homo sapiens,,2695,ENST00000456211,ENSG00000150995,ITPR1-205,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000401671,Homo sapiens,,2743,ENST00000443694,ENSG00000150995,ITPR1-204,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000498014,Homo sapiens,,2749,ENST00000648266,ENSG00000150995,ITPR1-230,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000440564,Homo sapiens,,721,ENST00000544951,ENSG00000150995,ITPR1-219,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000498056,Homo sapiens,,2744,ENST00000650294,ENSG00000150995,ITPR1-254,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000497026,Homo sapiens,,2734,ENST00000648309,ENSG00000150995,ITPR1-231,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000306253,Homo sapiens,,1668,ENST00000302640,ENSG00000150995,ITPR1-201,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000497851,Homo sapiens,,714,ENST00000649051,ENSG00000150995,ITPR1-238,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000497872,Homo sapiens,,2012,ENST00000648038,ENSG00000150995,ITPR1-227,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000498149,Homo sapiens,,1818,ENST00000648431,ENSG00000150995,ITPR1-233,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000498022,Homo sapiens,,1739,ENST00000648212,ENSG00000150995,ITPR1-229,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000496893,Homo sapiens,,1548,ENST00000648016,ENSG00000150995,ITPR1-226,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000497099,Homo sapiens,,408,ENST00000649414,ENSG00000150995,ITPR1-243,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000497404,Homo sapiens,,177,ENST00000648390,ENSG00000150995,ITPR1-232,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000497186,Homo sapiens,,249,ENST00000648564,ENSG00000150995,ITPR1-235,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000497999,Homo sapiens,,188,ENST00000478515,ENSG00000150995,ITPR1-211,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000497226,Homo sapiens,,175,ENST00000649139,ENSG00000150995,ITPR1-239,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000497835,Homo sapiens,,175,ENST00000647685,ENSG00000150995,ITPR1-222,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000497614,Homo sapiens,,175,ENST00000649908,ENSG00000150995,ITPR1-249,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR1,ENSP00000815149,Homo sapiens,,2758,ENST00001144489,ENSG00000150995,ITPR1-256,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995
+Ensembl,ITPR2,ENSP00000370744,Homo sapiens,,2701,ENST00000381340,ENSG00000123104,ITPR2-202,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104
+Ensembl,ITPR2,ENSP00000408287,Homo sapiens,,102,ENST00000451599,ENSG00000123104,ITPR2-203,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104
+Ensembl,ITPR2,ENSP00000440548,Homo sapiens,,79,ENST00000545235,ENSG00000123104,ITPR2-209,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104
+Ensembl,ITPR2,ENSP00000242737,Homo sapiens,,181,ENST00000242737,ENSG00000123104,ITPR2-201,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104
+Ensembl,ITPR2,ENSP00000672712,Homo sapiens,,55,ENST00001002895,ENSG00000123104,ITPR2-211,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104
+Ensembl,ITPR2,ENSP00000777889,Homo sapiens,,1075,ENST00001108084,ENSG00000123104,ITPR2-212,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104
+Ensembl,ITPR2,ENSP00000777890,Homo sapiens,,322,ENST00001108085,ENSG00000123104,ITPR2-213,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104
+Ensembl,ITPR2,ENSP00000790150,Homo sapiens,,65,ENST00001120345,ENSG00000123104,ITPR2-214,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104
+Ensembl,ITPR2,ENSP00000790151,Homo sapiens,,45,ENST00001120346,ENSG00000123104,ITPR2-215,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104
+Ensembl,ITPR2,ENSP00000811227,Homo sapiens,,2701,ENST00001141790,ENSG00000123104,ITPR2-216,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104
+Ensembl,ITPR3,ENSP00000363435,Homo sapiens,,2671,ENST00000374316,ENSG00000096433,ITPR3-201,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000096433
+Ensembl,ITPR3,ENSP00000475177,Homo sapiens,,2671,ENST00000605930,ENSG00000096433,ITPR3-202,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000096433
+Ensembl,ITPR3,ENSP00000601699,Homo sapiens,,2661,ENST00000931640,ENSG00000096433,ITPR3-203,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000096433
+Ensembl,ITPR3,ENSP00000686362,Homo sapiens,,250,ENST00001016545,ENSG00000096433,ITPR3-204,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000096433
+Ensembl,ITPR3,ENSP00000742240,Homo sapiens,,1221,ENST00001072434,ENSG00000096433,ITPR3-205,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000096433
+Ensembl,ITPR3,ENSP00000790458,Homo sapiens,,30,ENST00001120653,ENSG00000096433,ITPR3-206,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000096433
+Ensembl,ITPR3,ENSP00000814523,Homo sapiens,,2671,ENST00001134915,ENSG00000096433,ITPR3-207,https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000096433

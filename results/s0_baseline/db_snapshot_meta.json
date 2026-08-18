@@ -1,0 +1,18 @@
+{
+  "task": "S0",
+  "derived_on": "2026-08-18",
+  "endpoints": {
+    "interpro_signature_count": "https://www.ebi.ac.uk/interpro/api/protein/uniprot/entry/pfam/{PF}/?page_size=1",
+    "interpro_taxonomy_count": "https://www.ebi.ac.uk/interpro/api/protein/uniprot/entry/pfam/{PF}/taxonomy/uniprot/{taxid}/?page_size=1",
+    "uniprot_entry": "https://rest.uniprot.org/uniprotkb/{acc}.json",
+    "uniprot_search": "https://rest.uniprot.org/uniprotkb/search?query={q}"
+  },
+  "zebrafish_query": "taxonomy_id:7955 AND xref:pfam-PF08709",
+  "row_counts": {
+    "interpro_signature_counts.tsv": 5,
+    "interpro_taxonomy_counts.tsv": 14,
+    "reference_proteins.tsv": 6,
+    "pfam_architecture.tsv": 54,
+    "zebrafish_itpr.tsv": 109
+  }
+}

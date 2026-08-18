@@ -1,0 +1,2773 @@
+[
+  {
+    "source": "UniProt",
+    "accession": "Q14643",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 2758,
+    "description": "Inositol 1,4,5-trisphosphate-gated calcium channel ITPR1",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/Q14643",
+    "raw": {
+      "uniProtkbId": "ITPR1_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "Q14643-1",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": null,
+    "description": "isoform 1 of Q14643",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/Q14643-1",
+    "raw": {
+      "parent": "Q14643",
+      "isoform": {
+        "name": {
+          "value": "1"
+        },
+        "synonyms": [
+          {
+            "value": "SISIIISIIAC"
+          }
+        ],
+        "isoformIds": [
+          "Q14643-1"
+        ],
+        "isoformSequenceStatus": "Displayed"
+      }
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "Q14643-2",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": null,
+    "description": "isoform 2 of Q14643",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/Q14643-2",
+    "raw": {
+      "parent": "Q14643",
+      "isoform": {
+        "name": {
+          "value": "2"
+        },
+        "synonyms": [
+          {
+            "value": "SI-SIIISIIAC"
+          }
+        ],
+        "isoformIds": [
+          "Q14643-2"
+        ],
+        "sequenceIds": [
+          "VSP_002687"
+        ],
+        "isoformSequenceStatus": "Described"
+      }
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "Q14643-3",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": null,
+    "description": "isoform 3 of Q14643",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/Q14643-3",
+    "raw": {
+      "parent": "Q14643",
+      "isoform": {
+        "name": {
+          "value": "3"
+        },
+        "synonyms": [
+          {
+            "value": "SISIII-SII"
+          }
+        ],
+        "isoformIds": [
+          "Q14643-3"
+        ],
+        "sequenceIds": [
+          "VSP_002688",
+          "VSP_002689",
+          "VSP_002690"
+        ],
+        "isoformSequenceStatus": "Described"
+      }
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "Q14643-4",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": null,
+    "description": "isoform 4 of Q14643",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/Q14643-4",
+    "raw": {
+      "parent": "Q14643",
+      "isoform": {
+        "name": {
+          "value": "4"
+        },
+        "synonyms": [
+          {
+            "value": "SI-SIII-SII"
+          }
+        ],
+        "isoformIds": [
+          "Q14643-4"
+        ],
+        "sequenceIds": [
+          "VSP_002687",
+          "VSP_002688",
+          "VSP_002689",
+          "VSP_002690"
+        ],
+        "isoformSequenceStatus": "Described"
+      }
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "Q14643-5",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": null,
+    "description": "isoform 5 of Q14643",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/Q14643-5",
+    "raw": {
+      "parent": "Q14643",
+      "isoform": {
+        "name": {
+          "value": "5"
+        },
+        "synonyms": [
+          {
+            "value": "SI-SIII-SIIAC"
+          }
+        ],
+        "isoformIds": [
+          "Q14643-5"
+        ],
+        "sequenceIds": [
+          "VSP_002687",
+          "VSP_002688"
+        ],
+        "isoformSequenceStatus": "Described"
+      }
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "Q14643-6",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": null,
+    "description": "isoform 6 of Q14643",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/Q14643-6",
+    "raw": {
+      "parent": "Q14643",
+      "isoform": {
+        "name": {
+          "value": "6"
+        },
+        "synonyms": [
+          {
+            "value": "SISIIISIIA"
+          }
+        ],
+        "isoformIds": [
+          "Q14643-6"
+        ],
+        "sequenceIds": [
+          "VSP_002690"
+        ],
+        "isoformSequenceStatus": "Described"
+      }
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "Q14643-7",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": null,
+    "description": "isoform 7 of Q14643",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/Q14643-7",
+    "raw": {
+      "parent": "Q14643",
+      "isoform": {
+        "name": {
+          "value": "7"
+        },
+        "synonyms": [
+          {
+            "value": "SI-SIII-SIIA"
+          }
+        ],
+        "isoformIds": [
+          "Q14643-7"
+        ],
+        "sequenceIds": [
+          "VSP_002687",
+          "VSP_002690"
+        ],
+        "isoformSequenceStatus": "Described"
+      }
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "Q14643-8",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": null,
+    "description": "isoform 8 of Q14643",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/Q14643-8",
+    "raw": {
+      "parent": "Q14643",
+      "isoform": {
+        "name": {
+          "value": "8"
+        },
+        "synonyms": [
+          {
+            "value": "SI-SIII-SIIA"
+          }
+        ],
+        "isoformIds": [
+          "Q14643-8"
+        ],
+        "sequenceIds": [
+          "VSP_002687",
+          "VSP_002688",
+          "VSP_002690"
+        ],
+        "isoformSequenceStatus": "Described"
+      }
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A3F2YNW8",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 2750,
+    "description": "Inositol 1,4,5-trisphosphate receptor",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A3F2YNW8",
+    "raw": {
+      "uniProtkbId": "A0A3F2YNW8_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A3B3ITQ1",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 2012,
+    "description": "Inositol 1,4,5-trisphosphate receptor",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A3B3ITQ1",
+    "raw": {
+      "uniProtkbId": "A0A3B3ITQ1_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A3B3ITU8",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 2744,
+    "description": "Inositol 1,4,5-trisphosphate receptor",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A3B3ITU8",
+    "raw": {
+      "uniProtkbId": "A0A3B3ITU8_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A3B3IU04",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 2749,
+    "description": "Inositol 1,4,5-trisphosphate receptor",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A3B3IU04",
+    "raw": {
+      "uniProtkbId": "A0A3B3IU04_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A8C8KBY2",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 1668,
+    "description": "Inositol 1,4,5-trisphosphate receptor",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A8C8KBY2",
+    "raw": {
+      "uniProtkbId": "A0A8C8KBY2_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A3B3ITM6",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 714,
+    "description": "Inositol 1,4,5-trisphosphate receptor",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A3B3ITM6",
+    "raw": {
+      "uniProtkbId": "A0A3B3ITM6_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A3B3IRT5",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 296,
+    "description": "Inositol 1,4,5-trisphosphate receptor",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A3B3IRT5",
+    "raw": {
+      "uniProtkbId": "A0A3B3IRT5_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "B7ZMI3",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 721,
+    "description": "Inositol 1,4,5-trisphosphate receptor",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/B7ZMI3",
+    "raw": {
+      "uniProtkbId": "B7ZMI3_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A3B3ITM1",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 175,
+    "description": "A0A3B3ITM1_HUMAN",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A3B3ITM1",
+    "raw": {
+      "uniProtkbId": "A0A3B3ITM1_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A3B3IU05",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 1818,
+    "description": "A0A3B3IU05_HUMAN",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A3B3IU05",
+    "raw": {
+      "uniProtkbId": "A0A3B3IU05_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "F6VW28",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 721,
+    "description": "F6VW28_HUMAN",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/F6VW28",
+    "raw": {
+      "uniProtkbId": "F6VW28_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A3B3IS59",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 408,
+    "description": "A0A3B3IS59_HUMAN",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A3B3IS59",
+    "raw": {
+      "uniProtkbId": "A0A3B3IS59_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A3B3ISE3",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 249,
+    "description": "A0A3B3ISE3_HUMAN",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A3B3ISE3",
+    "raw": {
+      "uniProtkbId": "A0A3B3ISE3_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A3B3ISR4",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 177,
+    "description": "A0A3B3ISR4_HUMAN",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A3B3ISR4",
+    "raw": {
+      "uniProtkbId": "A0A3B3ISR4_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A3B3IU13",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 1739,
+    "description": "A0A3B3IU13_HUMAN",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A3B3IU13",
+    "raw": {
+      "uniProtkbId": "A0A3B3IU13_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A3B3IRP0",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 1548,
+    "description": "A0A3B3IRP0_HUMAN",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A3B3IRP0",
+    "raw": {
+      "uniProtkbId": "A0A3B3IRP0_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0A3B3ITQ4",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 188,
+    "description": "A0A3B3ITQ4_HUMAN",
+    "transcript_id": "",
+    "gene_id": "ITPR1",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0A3B3ITQ4",
+    "raw": {
+      "uniProtkbId": "A0A3B3ITQ4_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "Q14571",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 2701,
+    "description": "Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2",
+    "transcript_id": "",
+    "gene_id": "ITPR2",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/Q14571",
+    "raw": {
+      "uniProtkbId": "ITPR2_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "Q14571-1",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": null,
+    "description": "isoform Long of Q14571",
+    "transcript_id": "",
+    "gene_id": "ITPR2",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/Q14571-1",
+    "raw": {
+      "parent": "Q14571",
+      "isoform": {
+        "name": {
+          "value": "Long"
+        },
+        "isoformIds": [
+          "Q14571-1"
+        ],
+        "isoformSequenceStatus": "Displayed"
+      }
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "Q14571-2",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": null,
+    "description": "isoform Short of Q14571",
+    "transcript_id": "",
+    "gene_id": "ITPR2",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/Q14571-2",
+    "raw": {
+      "parent": "Q14571",
+      "isoform": {
+        "name": {
+          "value": "Short"
+        },
+        "synonyms": [
+          {
+            "value": "TIPR"
+          }
+        ],
+        "isoformIds": [
+          "Q14571-2"
+        ],
+        "sequenceIds": [
+          "VSP_002699",
+          "VSP_002700"
+        ],
+        "isoformSequenceStatus": "Described"
+      }
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "H7C2X9",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 102,
+    "description": "H7C2X9_HUMAN",
+    "transcript_id": "",
+    "gene_id": "ITPR2",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/H7C2X9",
+    "raw": {
+      "uniProtkbId": "H7C2X9_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "F5GYT5",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 79,
+    "description": "F5GYT5_HUMAN",
+    "transcript_id": "",
+    "gene_id": "ITPR2",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/F5GYT5",
+    "raw": {
+      "uniProtkbId": "F5GYT5_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "Q14573",
+    "gene_symbol": "ITPR3",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 2671,
+    "description": "Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3",
+    "transcript_id": "",
+    "gene_id": "ITPR3",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/Q14573",
+    "raw": {
+      "uniProtkbId": "ITPR3_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A6H8K3",
+    "gene_symbol": "ITPR3",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 1049,
+    "description": "Inositol 1,4,5-trisphosphate receptor",
+    "transcript_id": "",
+    "gene_id": "ITPR3",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A6H8K3",
+    "raw": {
+      "uniProtkbId": "A6H8K3_HUMAN"
+    }
+  },
+  {
+    "source": "UniProt",
+    "accession": "A0ACI8TMT9",
+    "gene_symbol": "ITPR3",
+    "species": "Homo sapiens",
+    "taxon_id": 9606,
+    "length_aa": 2661,
+    "description": "A0ACI8TMT9_HUMAN",
+    "transcript_id": "",
+    "gene_id": "ITPR3",
+    "sequence": "",
+    "url": "https://www.uniprot.org/uniprotkb/A0ACI8TMT9",
+    "raw": {
+      "uniProtkbId": "A0ACI8TMT9_HUMAN"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "Q14643.3",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2758,
+    "description": "RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR1; AltName: Full=IP3 receptor isoform 1; Short=IP3R 1; Short=InsP3R1; AltName: Full=Inositol 1,4,5 trisphosphate receptor; AltName: Full=Inositol 1,4,5-trisphosphate receptor type 1; AltName: Full=Type 1 inositol 1,4,5-trisphosphate receptor; Short=Type 1 InsP3 receptor",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/Q14643.3",
+    "raw": {
+      "Item": "[]",
+      "Id": "519668682",
+      "Caption": "Q14643",
+      "Title": "RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR1; AltName: Full=IP3 receptor isoform 1; Short=IP3R 1; Short=InsP3R1; AltName: Full=Inositol 1,4,5 trisphosphate receptor; AltName: Full=Inositol 1,4,5-trisphosphate receptor type 1; AltName: Full=Type 1 inositol 1,4,5-trisphosphate receptor; Short=Type 1 InsP3 receptor",
+      "Extra": "gi|519668682|sp|Q14643.3|ITPR1_HUMAN[519668682]",
+      "Gi": "IntegerElement(519668682, attributes={})",
+      "CreateDate": "2001/11/02",
+      "UpdateDate": "2026/06/10",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2758, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "Q14643.3"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "NP_001161744.1",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2743,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 3 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/NP_001161744.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "269954694",
+      "Caption": "NP_001161744",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 3 [Homo sapiens]",
+      "Extra": "gi|269954694|ref|NP_001161744.1|[269954694]",
+      "Gi": "IntegerElement(269954694, attributes={})",
+      "CreateDate": "2009/11/26",
+      "UpdateDate": "2026/02/04",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2743, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "NP_001161744.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "NP_002213.5",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2695,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 2 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/NP_002213.5",
+    "raw": {
+      "Item": "[]",
+      "Id": "269954692",
+      "Caption": "NP_002213",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 2 [Homo sapiens]",
+      "Extra": "gi|269954692|ref|NP_002213.5|[269954692]",
+      "Gi": "IntegerElement(269954692, attributes={})",
+      "CreateDate": "2000/10/17",
+      "UpdateDate": "2026/02/04",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2695, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "NP_002213.5"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "NP_001093422.2",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2710,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 1 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/NP_001093422.2",
+    "raw": {
+      "Item": "[]",
+      "Id": "269954690",
+      "Caption": "NP_001093422",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 1 [Homo sapiens]",
+      "Extra": "gi|269954690|ref|NP_001093422.2|[269954690]",
+      "Gi": "IntegerElement(269954690, attributes={})",
+      "CreateDate": "2007/08/01",
+      "UpdateDate": "2026/02/04",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2710, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "NP_001093422.2"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "NP_001365381.1",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2758,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 4 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/NP_001365381.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "1808862643",
+      "Caption": "NP_001365381",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 4 [Homo sapiens]",
+      "Extra": "gi|1808862643|ref|NP_001365381.1|[1808862643]",
+      "Gi": "IntegerElement(1808862643, attributes={})",
+      "CreateDate": "2020/02/13",
+      "UpdateDate": "2026/02/03",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2758, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "NP_001365381.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "EAW63915.1",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2695,
+    "description": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_e [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/EAW63915.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "119584319",
+      "Caption": "EAW63915",
+      "Title": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_e [Homo sapiens]",
+      "Extra": "gi|119584319|gb|EAW63915.1||gnl|WGS:AADB|hCP39234[119584319]",
+      "Gi": "IntegerElement(119584319, attributes={})",
+      "CreateDate": "2006/12/18",
+      "UpdateDate": "2015/03/23",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2695, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "EAW63915.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "EAW63914.1",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 1049,
+    "description": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_c [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/EAW63914.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "119584318",
+      "Caption": "EAW63914",
+      "Title": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_c [Homo sapiens]",
+      "Extra": "gi|119584318|gb|EAW63914.1||gnl|WGS:AADB|hCP1802505[119584318]",
+      "Gi": "IntegerElement(119584318, attributes={})",
+      "CreateDate": "2006/12/18",
+      "UpdateDate": "2015/03/23",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(1049, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "EAW63914.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "EAW63913.1",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2710,
+    "description": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_d [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/EAW63913.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "119584317",
+      "Caption": "EAW63913",
+      "Title": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_d [Homo sapiens]",
+      "Extra": "gi|119584317|gb|EAW63913.1||gnl|WGS:AADB|hCP1765462[119584317]",
+      "Gi": "IntegerElement(119584317, attributes={})",
+      "CreateDate": "2006/12/18",
+      "UpdateDate": "2015/03/23",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2710, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "EAW63913.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "EAW63912.1",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 1049,
+    "description": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_c [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/EAW63912.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "119584316",
+      "Caption": "EAW63912",
+      "Title": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_c [Homo sapiens]",
+      "Extra": "gi|119584316|gb|EAW63912.1||gnl|WGS:AADB|hCP1802501[119584316]",
+      "Gi": "IntegerElement(119584316, attributes={})",
+      "CreateDate": "2006/12/18",
+      "UpdateDate": "2015/03/23",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(1049, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "EAW63912.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "EAW63911.1",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 1049,
+    "description": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_c [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/EAW63911.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "119584315",
+      "Caption": "EAW63911",
+      "Title": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_c [Homo sapiens]",
+      "Extra": "gi|119584315|gb|EAW63911.1||gnl|WGS:AADB|hCP1802504[119584315]",
+      "Gi": "IntegerElement(119584315, attributes={})",
+      "CreateDate": "2006/12/18",
+      "UpdateDate": "2015/03/23",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(1049, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "EAW63911.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "EAW63910.1",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 1034,
+    "description": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_a [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/EAW63910.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "119584314",
+      "Caption": "EAW63910",
+      "Title": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_a [Homo sapiens]",
+      "Extra": "gi|119584314|gb|EAW63910.1||gnl|WGS:AADB|hCP1802503[119584314]",
+      "Gi": "IntegerElement(119584314, attributes={})",
+      "CreateDate": "2006/12/18",
+      "UpdateDate": "2015/03/23",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(1034, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "EAW63910.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "EAW63909.1",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 1058,
+    "description": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_b [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/EAW63909.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "119584313",
+      "Caption": "EAW63909",
+      "Title": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_b [Homo sapiens]",
+      "Extra": "gi|119584313|gb|EAW63909.1||gnl|WGS:AADB|hCP1802502[119584313]",
+      "Gi": "IntegerElement(119584313, attributes={})",
+      "CreateDate": "2006/12/18",
+      "UpdateDate": "2015/03/23",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(1058, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "EAW63909.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "EAW63908.1",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 1034,
+    "description": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_a [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/EAW63908.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "119584312",
+      "Caption": "EAW63908",
+      "Title": "inositol 1,4,5-triphosphate receptor, type 1, isoform CRA_a [Homo sapiens]",
+      "Extra": "gi|119584312|gb|EAW63908.1||gnl|WGS:AADB|hCP1802506[119584312]",
+      "Gi": "IntegerElement(119584312, attributes={})",
+      "CreateDate": "2006/12/18",
+      "UpdateDate": "2015/03/23",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(1034, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "EAW63908.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "AAI44564.1",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 721,
+    "description": "ITPR1 protein [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/AAI44564.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "219841936",
+      "Caption": "AAI44564",
+      "Title": "ITPR1 protein [Homo sapiens]",
+      "Extra": "gi|219841936|gb|AAI44564.1|[219841936]",
+      "Gi": "IntegerElement(219841936, attributes={})",
+      "CreateDate": "2009/01/08",
+      "UpdateDate": "2009/03/18",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(721, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "AAI44564.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "AAB04947.2",
+    "gene_symbol": "ITPR1",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2710,
+    "description": "inositol 1,4,5-trisphosphate receptor type 1 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/AAB04947.2",
+    "raw": {
+      "Item": "[]",
+      "Id": "46107962",
+      "Caption": "AAB04947",
+      "Title": "inositol 1,4,5-trisphosphate receptor type 1 [Homo sapiens]",
+      "Extra": "gi|46107962|gb|AAB04947.2|[46107962]",
+      "Gi": "IntegerElement(46107962, attributes={})",
+      "CreateDate": "1994/12/07",
+      "UpdateDate": "2004/04/02",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2710, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "AAB04947.2"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "Q14571.2",
+    "gene_symbol": "ITPR2",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2701,
+    "description": "RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2; AltName: Full=IP3 receptor isoform 2; Short=IP3R 2; Short=InsP3R2; AltName: Full=Inositol 1,4,5-trisphosphate receptor type 2; AltName: Full=Type 2 inositol 1,4,5-trisphosphate receptor; Short=Type 2 InsP3 receptor",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/Q14571.2",
+    "raw": {
+      "Item": "[]",
+      "Id": "259016258",
+      "Caption": "Q14571",
+      "Title": "RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2; AltName: Full=IP3 receptor isoform 2; Short=IP3R 2; Short=InsP3R2; AltName: Full=Inositol 1,4,5-trisphosphate receptor type 2; AltName: Full=Type 2 inositol 1,4,5-trisphosphate receptor; Short=Type 2 InsP3 receptor",
+      "Extra": "gi|259016258|sp|Q14571.2|ITPR2_HUMAN[259016258]",
+      "Gi": "IntegerElement(259016258, attributes={})",
+      "CreateDate": "1997/11/01",
+      "UpdateDate": "2026/06/10",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2701, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "Q14571.2"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_054227947.1",
+    "gene_symbol": "ITPR2",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 1733,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_054227947.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2462531781",
+      "Caption": "XP_054227947",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Homo sapiens]",
+      "Extra": "gi|2462531781|ref|XP_054227947.1|[2462531781]",
+      "Gi": "IntegerElement(2462531781, attributes={})",
+      "CreateDate": "2023/03/20",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(1733, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_054227947.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_054227946.1",
+    "gene_symbol": "ITPR2",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2699,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_054227946.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2462531777",
+      "Caption": "XP_054227946",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Homo sapiens]",
+      "Extra": "gi|2462531777|ref|XP_054227946.1|[2462531777]",
+      "Gi": "IntegerElement(2462531777, attributes={})",
+      "CreateDate": "2023/03/20",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2699, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_054227946.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_054227945.1",
+    "gene_symbol": "ITPR2",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2721,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_054227945.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2462531775",
+      "Caption": "XP_054227945",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Homo sapiens]",
+      "Extra": "gi|2462531775|ref|XP_054227945.1|[2462531775]",
+      "Gi": "IntegerElement(2462531775, attributes={})",
+      "CreateDate": "2023/03/20",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2721, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_054227945.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_047284757.1",
+    "gene_symbol": "ITPR2",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2699,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_047284757.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2217288908",
+      "Caption": "XP_047284757",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X2 [Homo sapiens]",
+      "Extra": "gi|2217288908|ref|XP_047284757.1|[2217288908]",
+      "Gi": "IntegerElement(2217288908, attributes={})",
+      "CreateDate": "2022/04/05",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2699, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_047284757.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_016874758.1",
+    "gene_symbol": "ITPR2",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 1733,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_016874758.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "1034579408",
+      "Caption": "XP_016874758",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X3 [Homo sapiens]",
+      "Extra": "gi|1034579408|ref|XP_016874758.1|[1034579408]",
+      "Gi": "IntegerElement(1034579408, attributes={})",
+      "CreateDate": "2016/06/06",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(1733, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_016874758.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_016874755.1",
+    "gene_symbol": "ITPR2",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2721,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_016874755.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "1034579400",
+      "Caption": "XP_016874755",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform X1 [Homo sapiens]",
+      "Extra": "gi|1034579400|ref|XP_016874755.1|[1034579400]",
+      "Gi": "IntegerElement(1034579400, attributes={})",
+      "CreateDate": "2016/06/06",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2721, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_016874755.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "NP_001401103.1",
+    "gene_symbol": "ITPR2",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2700,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/NP_001401103.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2329049456",
+      "Caption": "NP_001401103",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 2 [Homo sapiens]",
+      "Extra": "gi|2329049456|ref|NP_001401103.1|[2329049456]",
+      "Gi": "IntegerElement(2329049456, attributes={})",
+      "CreateDate": "2022/11/15",
+      "UpdateDate": "2025/05/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2700, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "NP_001401103.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "NP_001401104.1",
+    "gene_symbol": "ITPR2",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2628,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 3 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/NP_001401104.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2329049559",
+      "Caption": "NP_001401104",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 3 [Homo sapiens]",
+      "Extra": "gi|2329049559|ref|NP_001401104.1|[2329049559]",
+      "Gi": "IntegerElement(2329049559, attributes={})",
+      "CreateDate": "2022/11/15",
+      "UpdateDate": "2025/05/01",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2628, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "NP_001401104.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "NP_002214.2",
+    "gene_symbol": "ITPR2",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2701,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/NP_002214.2",
+    "raw": {
+      "Item": "[]",
+      "Id": "95147335",
+      "Caption": "NP_002214",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1 [Homo sapiens]",
+      "Extra": "gi|95147335|ref|NP_002214.2|[95147335]",
+      "Gi": "IntegerElement(95147335, attributes={})",
+      "CreateDate": "1999/03/19",
+      "UpdateDate": "2025/04/27",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2701, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "NP_002214.2"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "EAW96535.1",
+    "gene_symbol": "ITPR2",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2726,
+    "description": "inositol 1,4,5-triphosphate receptor, type 2, isoform CRA_b [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/EAW96535.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "119616941",
+      "Caption": "EAW96535",
+      "Title": "inositol 1,4,5-triphosphate receptor, type 2, isoform CRA_b [Homo sapiens]",
+      "Extra": "gi|119616941|gb|EAW96535.1||gnl|WGS:AADB|hCP1890121[119616941]",
+      "Gi": "IntegerElement(119616941, attributes={})",
+      "CreateDate": "2006/12/18",
+      "UpdateDate": "2015/03/23",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2726, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "EAW96535.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "EAW96534.1",
+    "gene_symbol": "ITPR2",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2701,
+    "description": "inositol 1,4,5-triphosphate receptor, type 2, isoform CRA_a [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/EAW96534.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "119616940",
+      "Caption": "EAW96534",
+      "Title": "inositol 1,4,5-triphosphate receptor, type 2, isoform CRA_a [Homo sapiens]",
+      "Extra": "gi|119616940|gb|EAW96534.1||gnl|WGS:AADB|hCP1890120[119616940]",
+      "Gi": "IntegerElement(119616940, attributes={})",
+      "CreateDate": "2006/12/18",
+      "UpdateDate": "2015/03/23",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2701, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "EAW96534.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "AFI41831.1",
+    "gene_symbol": "ITPR2",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 50,
+    "description": "inositol 1,4,5-trisphosphate receptor type 2, partial [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/AFI41831.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "385139472",
+      "Caption": "AFI41831",
+      "Title": "inositol 1,4,5-trisphosphate receptor type 2, partial [Homo sapiens]",
+      "Extra": "gi|385139472|gb|AFI41831.1|[385139472]",
+      "Gi": "IntegerElement(385139472, attributes={})",
+      "CreateDate": "2012/04/28",
+      "UpdateDate": "2012/04/28",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(50, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "AFI41831.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "Q14573.2",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2671,
+    "description": "RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3; AltName: Full=IP3 receptor isoform 3; Short=IP3R-3; Short=InsP3R3; AltName: Full=Type 3 inositol 1,4,5-trisphosphate receptor; Short=Type 3 InsP3 receptor",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/Q14573.2",
+    "raw": {
+      "Item": "[]",
+      "Id": "209572633",
+      "Caption": "Q14573",
+      "Title": "RecName: Full=Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3; AltName: Full=IP3 receptor isoform 3; Short=IP3R-3; Short=InsP3R3; AltName: Full=Type 3 inositol 1,4,5-trisphosphate receptor; Short=Type 3 InsP3 receptor",
+      "Extra": "gi|209572633|sp|Q14573.2|ITPR3_HUMAN[209572633]",
+      "Gi": "IntegerElement(209572633, attributes={})",
+      "CreateDate": "2001/11/02",
+      "UpdateDate": "2026/06/10",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2671, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "Q14573.2"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "NP_002215.2",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2671,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/NP_002215.2",
+    "raw": {
+      "Item": "[]",
+      "Id": "153945846",
+      "Caption": "NP_002215",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 [Homo sapiens]",
+      "Extra": "gi|153945846|ref|NP_002215.2|[153945846]",
+      "Gi": "IntegerElement(153945846, attributes={})",
+      "CreateDate": "1999/03/19",
+      "UpdateDate": "2025/11/20",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2671, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "NP_002215.2"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_054211330.1",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 1339,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X5 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_054211330.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2462608315",
+      "Caption": "XP_054211330",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X5 [Homo sapiens]",
+      "Extra": "gi|2462608315|ref|XP_054211330.1|[2462608315]",
+      "Gi": "IntegerElement(2462608315, attributes={})",
+      "CreateDate": "2023/03/20",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(1339, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_054211330.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_054211329.1",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2610,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_054211329.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2462608313",
+      "Caption": "XP_054211329",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",
+      "Extra": "gi|2462608313|ref|XP_054211329.1|[2462608313]",
+      "Gi": "IntegerElement(2462608313, attributes={})",
+      "CreateDate": "2023/03/20",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2610, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_054211329.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_054211328.1",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2610,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_054211328.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2462608311",
+      "Caption": "XP_054211328",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",
+      "Extra": "gi|2462608311|ref|XP_054211328.1|[2462608311]",
+      "Gi": "IntegerElement(2462608311, attributes={})",
+      "CreateDate": "2023/03/20",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2610, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_054211328.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_054211327.1",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2610,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_054211327.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2462608309",
+      "Caption": "XP_054211327",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",
+      "Extra": "gi|2462608309|ref|XP_054211327.1|[2462608309]",
+      "Gi": "IntegerElement(2462608309, attributes={})",
+      "CreateDate": "2023/03/20",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2610, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_054211327.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_054211326.1",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2698,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X4 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_054211326.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2462608307",
+      "Caption": "XP_054211326",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X4 [Homo sapiens]",
+      "Extra": "gi|2462608307|ref|XP_054211326.1|[2462608307]",
+      "Gi": "IntegerElement(2462608307, attributes={})",
+      "CreateDate": "2023/03/20",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2698, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_054211326.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_047274690.1",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2610,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_047274690.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2217361336",
+      "Caption": "XP_047274690",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",
+      "Extra": "gi|2217361336|ref|XP_047274690.1|[2217361336]",
+      "Gi": "IntegerElement(2217361336, attributes={})",
+      "CreateDate": "2022/04/05",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2610, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_047274690.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_047274689.1",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2610,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_047274689.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2217361334",
+      "Caption": "XP_047274689",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",
+      "Extra": "gi|2217361334|ref|XP_047274689.1|[2217361334]",
+      "Gi": "IntegerElement(2217361334, attributes={})",
+      "CreateDate": "2022/04/05",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2610, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_047274689.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_047274688.1",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2610,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_047274688.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2217361332",
+      "Caption": "XP_047274688",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",
+      "Extra": "gi|2217361332|ref|XP_047274688.1|[2217361332]",
+      "Gi": "IntegerElement(2217361332, attributes={})",
+      "CreateDate": "2022/04/05",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2610, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_047274688.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_047274687.1",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2671,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_047274687.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "2217361330",
+      "Caption": "XP_047274687",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X2 [Homo sapiens]",
+      "Extra": "gi|2217361330|ref|XP_047274687.1|[2217361330]",
+      "Gi": "IntegerElement(2217361330, attributes={})",
+      "CreateDate": "2022/04/05",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2671, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_047274687.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_016866321.1",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 1312,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X3 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_016866321.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "1034650151",
+      "Caption": "XP_016866321",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X3 [Homo sapiens]",
+      "Extra": "gi|1034650151|ref|XP_016866321.1|[1034650151]",
+      "Gi": "IntegerElement(1034650151, attributes={})",
+      "CreateDate": "2016/06/06",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(1312, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_016866321.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "XP_011512879.1",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2610,
+    "description": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/XP_011512879.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "767939957",
+      "Caption": "XP_011512879",
+      "Title": "inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 isoform X1 [Homo sapiens]",
+      "Extra": "gi|767939957|ref|XP_011512879.1|[767939957]",
+      "Gi": "IntegerElement(767939957, attributes={})",
+      "CreateDate": "2015/03/12",
+      "UpdateDate": "2025/08/05",
+      "Flags": "IntegerElement(512, attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2610, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "XP_011512879.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "EAX03744.1",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2671,
+    "description": "inositol 1,4,5-triphosphate receptor, type 3 [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/EAX03744.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "119624149",
+      "Caption": "EAX03744",
+      "Title": "inositol 1,4,5-triphosphate receptor, type 3 [Homo sapiens]",
+      "Extra": "gi|119624149|gb|EAX03744.1||gnl|WGS:AADB|hCP51151[119624149]",
+      "Gi": "IntegerElement(119624149, attributes={})",
+      "CreateDate": "2006/12/18",
+      "UpdateDate": "2015/03/23",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2671, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "EAX03744.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "AAI46647.1",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 1049,
+    "description": "ITPR3 protein, partial [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/AAI46647.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "148921515",
+      "Caption": "AAI46647",
+      "Title": "ITPR3 protein, partial [Homo sapiens]",
+      "Extra": "gi|148921515|gb|AAI46647.1|[148921515]",
+      "Gi": "IntegerElement(148921515, attributes={})",
+      "CreateDate": "2007/06/19",
+      "UpdateDate": "2007/07/25",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(1049, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "AAI46647.1"
+    }
+  },
+  {
+    "source": "NCBI",
+    "accession": "AAC50064.1",
+    "gene_symbol": "ITPR3",
+    "species": "",
+    "taxon_id": 9606,
+    "length_aa": 2671,
+    "description": "human type 3 inositol 1,4,5-trisphosphate receptor [Homo sapiens]",
+    "transcript_id": "",
+    "gene_id": "",
+    "sequence": "",
+    "url": "https://www.ncbi.nlm.nih.gov/protein/AAC50064.1",
+    "raw": {
+      "Item": "[]",
+      "Id": "393036",
+      "Caption": "AAC50064",
+      "Title": "human type 3 inositol 1,4,5-trisphosphate receptor [Homo sapiens]",
+      "Extra": "gi|393036|gb|AAC50064.1|[393036]",
+      "Gi": "IntegerElement(393036, attributes={})",
+      "CreateDate": "1993/09/02",
+      "UpdateDate": "1994/02/07",
+      "Flags": "NoneElement(attributes={})",
+      "TaxId": "IntegerElement(9606, attributes={})",
+      "Length": "IntegerElement(2671, attributes={})",
+      "Status": "live",
+      "ReplacedBy": "",
+      "Comment": "  ",
+      "AccessionVersion": "AAC50064.1"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000349597",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2710,
+    "description": "ITPR1-203",
+    "transcript_id": "ENST00000357086",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000357086",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000346595",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2750,
+    "description": "ITPR1-202",
+    "transcript_id": "ENST00000354582",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000354582",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000497605",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2758,
+    "description": "ITPR1-237",
+    "transcript_id": "ENST00000649015",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000649015",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000496995",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 296,
+    "description": "ITPR1-207",
+    "transcript_id": "ENST00000467056",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000467056",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000397885",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2695,
+    "description": "ITPR1-205",
+    "transcript_id": "ENST00000456211",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000456211",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000401671",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2743,
+    "description": "ITPR1-204",
+    "transcript_id": "ENST00000443694",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000443694",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000498014",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2749,
+    "description": "ITPR1-230",
+    "transcript_id": "ENST00000648266",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000648266",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000440564",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 721,
+    "description": "ITPR1-219",
+    "transcript_id": "ENST00000544951",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000544951",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000498056",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2744,
+    "description": "ITPR1-254",
+    "transcript_id": "ENST00000650294",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000650294",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000497026",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2734,
+    "description": "ITPR1-231",
+    "transcript_id": "ENST00000648309",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000648309",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000306253",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 1668,
+    "description": "ITPR1-201",
+    "transcript_id": "ENST00000302640",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000302640",
+      "biotype": "nonsense_mediated_decay"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000497851",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 714,
+    "description": "ITPR1-238",
+    "transcript_id": "ENST00000649051",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000649051",
+      "biotype": "non_stop_decay"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000497872",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2012,
+    "description": "ITPR1-227",
+    "transcript_id": "ENST00000648038",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000648038",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000498149",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 1818,
+    "description": "ITPR1-233",
+    "transcript_id": "ENST00000648431",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000648431",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000498022",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 1739,
+    "description": "ITPR1-229",
+    "transcript_id": "ENST00000648212",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000648212",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000496893",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 1548,
+    "description": "ITPR1-226",
+    "transcript_id": "ENST00000648016",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000648016",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000497099",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 408,
+    "description": "ITPR1-243",
+    "transcript_id": "ENST00000649414",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000649414",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000497404",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 177,
+    "description": "ITPR1-232",
+    "transcript_id": "ENST00000648390",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000648390",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000497186",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 249,
+    "description": "ITPR1-235",
+    "transcript_id": "ENST00000648564",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000648564",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000497999",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 188,
+    "description": "ITPR1-211",
+    "transcript_id": "ENST00000478515",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000478515",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000497226",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 175,
+    "description": "ITPR1-239",
+    "transcript_id": "ENST00000649139",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000649139",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000497835",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 175,
+    "description": "ITPR1-222",
+    "transcript_id": "ENST00000647685",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000647685",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000497614",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 175,
+    "description": "ITPR1-249",
+    "transcript_id": "ENST00000649908",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00000649908",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000815149",
+    "gene_symbol": "ITPR1",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2758,
+    "description": "ITPR1-256",
+    "transcript_id": "ENST00001144489",
+    "gene_id": "ENSG00000150995",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000150995",
+    "raw": {
+      "gene": "ENSG00000150995",
+      "transcript": "ENST00001144489",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000370744",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2701,
+    "description": "ITPR2-202",
+    "transcript_id": "ENST00000381340",
+    "gene_id": "ENSG00000123104",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104",
+    "raw": {
+      "gene": "ENSG00000123104",
+      "transcript": "ENST00000381340",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000408287",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 102,
+    "description": "ITPR2-203",
+    "transcript_id": "ENST00000451599",
+    "gene_id": "ENSG00000123104",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104",
+    "raw": {
+      "gene": "ENSG00000123104",
+      "transcript": "ENST00000451599",
+      "biotype": "nonsense_mediated_decay"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000440548",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 79,
+    "description": "ITPR2-209",
+    "transcript_id": "ENST00000545235",
+    "gene_id": "ENSG00000123104",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104",
+    "raw": {
+      "gene": "ENSG00000123104",
+      "transcript": "ENST00000545235",
+      "biotype": "nonsense_mediated_decay"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000242737",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 181,
+    "description": "ITPR2-201",
+    "transcript_id": "ENST00000242737",
+    "gene_id": "ENSG00000123104",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104",
+    "raw": {
+      "gene": "ENSG00000123104",
+      "transcript": "ENST00000242737",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000672712",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 55,
+    "description": "ITPR2-211",
+    "transcript_id": "ENST00001002895",
+    "gene_id": "ENSG00000123104",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104",
+    "raw": {
+      "gene": "ENSG00000123104",
+      "transcript": "ENST00001002895",
+      "biotype": "nonsense_mediated_decay"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000777889",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 1075,
+    "description": "ITPR2-212",
+    "transcript_id": "ENST00001108084",
+    "gene_id": "ENSG00000123104",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104",
+    "raw": {
+      "gene": "ENSG00000123104",
+      "transcript": "ENST00001108084",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000777890",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 322,
+    "description": "ITPR2-213",
+    "transcript_id": "ENST00001108085",
+    "gene_id": "ENSG00000123104",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104",
+    "raw": {
+      "gene": "ENSG00000123104",
+      "transcript": "ENST00001108085",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000790150",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 65,
+    "description": "ITPR2-214",
+    "transcript_id": "ENST00001120345",
+    "gene_id": "ENSG00000123104",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104",
+    "raw": {
+      "gene": "ENSG00000123104",
+      "transcript": "ENST00001120345",
+      "biotype": "nonsense_mediated_decay"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000790151",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 45,
+    "description": "ITPR2-215",
+    "transcript_id": "ENST00001120346",
+    "gene_id": "ENSG00000123104",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104",
+    "raw": {
+      "gene": "ENSG00000123104",
+      "transcript": "ENST00001120346",
+      "biotype": "nonsense_mediated_decay"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000811227",
+    "gene_symbol": "ITPR2",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2701,
+    "description": "ITPR2-216",
+    "transcript_id": "ENST00001141790",
+    "gene_id": "ENSG00000123104",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000123104",
+    "raw": {
+      "gene": "ENSG00000123104",
+      "transcript": "ENST00001141790",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000363435",
+    "gene_symbol": "ITPR3",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2671,
+    "description": "ITPR3-201",
+    "transcript_id": "ENST00000374316",
+    "gene_id": "ENSG00000096433",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000096433",
+    "raw": {
+      "gene": "ENSG00000096433",
+      "transcript": "ENST00000374316",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000475177",
+    "gene_symbol": "ITPR3",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2671,
+    "description": "ITPR3-202",
+    "transcript_id": "ENST00000605930",
+    "gene_id": "ENSG00000096433",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000096433",
+    "raw": {
+      "gene": "ENSG00000096433",
+      "transcript": "ENST00000605930",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000601699",
+    "gene_symbol": "ITPR3",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2661,
+    "description": "ITPR3-203",
+    "transcript_id": "ENST00000931640",
+    "gene_id": "ENSG00000096433",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000096433",
+    "raw": {
+      "gene": "ENSG00000096433",
+      "transcript": "ENST00000931640",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000686362",
+    "gene_symbol": "ITPR3",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 250,
+    "description": "ITPR3-204",
+    "transcript_id": "ENST00001016545",
+    "gene_id": "ENSG00000096433",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000096433",
+    "raw": {
+      "gene": "ENSG00000096433",
+      "transcript": "ENST00001016545",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000742240",
+    "gene_symbol": "ITPR3",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 1221,
+    "description": "ITPR3-205",
+    "transcript_id": "ENST00001072434",
+    "gene_id": "ENSG00000096433",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000096433",
+    "raw": {
+      "gene": "ENSG00000096433",
+      "transcript": "ENST00001072434",
+      "biotype": "nonsense_mediated_decay"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000790458",
+    "gene_symbol": "ITPR3",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 30,
+    "description": "ITPR3-206",
+    "transcript_id": "ENST00001120653",
+    "gene_id": "ENSG00000096433",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000096433",
+    "raw": {
+      "gene": "ENSG00000096433",
+      "transcript": "ENST00001120653",
+      "biotype": "protein_coding"
+    }
+  },
+  {
+    "source": "Ensembl",
+    "accession": "ENSP00000814523",
+    "gene_symbol": "ITPR3",
+    "species": "Homo sapiens",
+    "taxon_id": null,
+    "length_aa": 2671,
+    "description": "ITPR3-207",
+    "transcript_id": "ENST00001134915",
+    "gene_id": "ENSG00000096433",
+    "sequence": "",
+    "url": "https://www.ensembl.org/homo_sapiens/Gene/Summary?g=ENSG00000096433",
+    "raw": {
+      "gene": "ENSG00000096433",
+      "transcript": "ENST00001134915",
+      "biotype": "protein_coding"
+    }
+  }
+]

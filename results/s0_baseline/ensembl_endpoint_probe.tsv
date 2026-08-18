@@ -1,0 +1,10 @@
+endpoint	species	http_status	seconds	bytes	verdict
+/info/ping	-	200	0.65	10	up
+/info/rest	-	200	1.25	20	up (release 15.12)
+/xrefs/symbol/{sp}/ITPR1?object_type=gene	homo_sapiens	timeout	>75	0	STALLS - no response, no error
+/xrefs/symbol/{sp}/ITPR1	homo_sapiens	timeout	>75	0	STALLS - not a query-string artefact
+/xrefs/symbol/{sp}/BRCA2?object_type=gene	homo_sapiens	timeout	>75	0	STALLS - not ITPR-specific
+/xrefs/symbol/{sp}/itpr1a?object_type=gene	danio_rerio	200	0.61	85	OK - not endpoint-wide, so it is per-species
+/lookup/symbol/{sp}/ITPR1	homo_sapiens	200	0.61 / 7.61 / 13.91	451	OK but HIGHLY VARIABLE - three readings of the same 451-byte call
+/lookup/symbol/{sp}/ITPR1?expand=1	homo_sapiens	200	11.70	240466	OK - full transcript+exon structure; this is the call that costs
+/lookup/id/ENSG00000150995?expand=1	homo_sapiens	200	12.94	240466	OK - same payload by gene id

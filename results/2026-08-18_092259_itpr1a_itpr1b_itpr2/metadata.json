@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-08-18T09:22:59",
+  "query": {
+    "gene_symbols": [
+      "itpr1a",
+      "itpr1b",
+      "itpr2",
+      "itpr3",
+      "ryr1b",
+      "ryr3"
+    ],
+    "species": "Danio rerio",
+    "taxon_id": null,
+    "sources": [
+      "NCBI",
+      "Ensembl",
+      "UniProt"
+    ],
+    "max_results_per_source": 50,
+    "include_sequence": false
+  },
+  "per_source": [
+    {
+      "source": "UniProt",
+      "status": "ok",
+      "n_variants": 87,
+      "elapsed_s": 0.0,
+      "message": "(cached)"
+    },
+    {
+      "source": "NCBI",
+      "status": "ok",
+      "n_variants": 90,
+      "elapsed_s": 0.0,
+      "message": "(cached)"
+    },
+    {
+      "source": "Ensembl",
+      "status": "ok",
+      "n_variants": 33,
+      "elapsed_s": 137.48,
+      "message": ""
+    }
+  ],
+  "totals": {
+    "variants": 210,
+    "csv_rows": 210,
+    "json_rows": 210,
+    "fasta_records": 0
+  },
+  "environment": {
+    "python": "3.11.15",
+    "platform": "macOS-26.6.1-arm64-arm-64bit"
+  },
+  "notes": "Headless run of preset 'ip3r_zebrafish'."
+}

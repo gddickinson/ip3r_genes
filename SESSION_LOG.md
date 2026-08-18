@@ -85,3 +85,97 @@ produce results — nothing was saved into `results/`):
 document against primary sources, write `docs/ip3r_review_2026.md`,
 re-derive the database snapshot, and smoke-test the app against live APIs.
 S0 needs no bulk storage, so it can run before the drive is attached.
+
+---
+
+## 2026-08-18 — S0: literature baseline + scope confirmation
+
+**Task.** S0 (topmost `pending`, no dependencies). Completed.
+
+**Protocol.** Dashboard opened + watcher backgrounded. No git remote, so
+nothing to pull. `python -m src.utils.data_root --require` → **exit 1**: the
+FANTOM drive is not attached. S0 needs no bulk storage, so the session
+continued on that basis and the drive remains a hard blocker for S4/S5.
+Note: the anaconda `base` python has no `biopython`; the `piezo1` env
+(Python 3.11.15, biopython 1.87, requests 2.34.2) does, and everything here
+ran under it. **S1 should record that env in `toolchain_manifest.txt`.**
+
+**What ran.**
+
+- `scripts/s0_db_snapshot.py` — re-derives every `[db]` number in
+  `docs/ip3r_background.md` (InterPro signature counts, taxonomic
+  distribution, UniProt reference + sister-family panel, per-protein Pfam
+  architecture, the zebrafish PF08709 query). **All reproduced exactly.**
+- `scripts/s0_gene_structure.py` — exon counts, genomic spans and cytobands
+  for ITPR1/2/3 from Ensembl `lookup/symbol?expand=1`.
+- Literature pass — 19 atomic claims extracted from the 11 `[lit]` blocks,
+  checked against 51 references (45 primary) via Europe PMC.
+- `scripts/s0_report.py` — renders `results/s0_baseline/report.md` purely
+  from the committed tables (D13).
+- App smoke tests: `--preset ip3r` and `--preset ip3r_zebrafish`.
+
+**Results.**
+
+- **Literature.** 12 claims verified as written, 3 kept but qualified,
+  **2 struck**, 1 retagged `[open]`, 1 upgraded to `[db]`.
+  `docs/ip3r_review_2026.md` is the verified baseline;
+  `results/s0_baseline/lit_claims.tsv` is the audit trail.
+- **The exon/span claim was false.** Measured: ITPR1 62 exons / 354,174 bp,
+  ITPR2 57 / 497,888 bp, ITPR3 58 / **76,245 bp**. Range is 57–62 exons, not
+  58–60, and ITPR3 does not span "hundreds of kb". Span varies **6.5×** across
+  paralogs while protein length varies 3 % → Emergent row for S21.
+- **"Both families independently expanded to three paralogs" was retagged
+  `[open]`** — the independence of the two triplications is question Q2. It
+  was about to be an assumption feeding its own answer.
+- **Gillespie syndrome was corrected**: both recessive biallelic *and* de novo
+  dominant-negative mechanisms. ITPR3's phenotype was extended: p.Arg2524Cys
+  causes a multisystemic immunodeficiency, not only CMT1J. Both → S17.
+- **D14 was measured, not asserted.** The zebrafish query
+  `taxonomy_id:7955 AND xref:pfam-PF08709`, quoted in the planning document
+  as evidence for four IP3 receptors, returns **109 records / 10 gene
+  symbols — 53 (49 %) of them ryanodine receptors**, including an unnamed
+  4,900 aa `LOC101884734`. In that dataset the length band happened to
+  separate the families perfectly; that is annotation luck, not a rule.
+
+**The Ensembl problem — two faults, both diagnosed, both addressed.** The
+setup session logged "Ensembl REST is unreliable". That was one word for two
+different things.
+
+*Fault 1, a per-species stall.* Ensembl is up (`/info/ping` 0.65 s, release
+15.12), but **`/xrefs/symbol/homo_sapiens/{symbol}` stalls indefinitely** —
+no response, no error, for `BRCA2` as well as `ITPR1` — while the same
+endpoint answers in **0.6 s for `danio_rerio`**. That is exactly why the
+human preset lost Ensembl entirely while the zebrafish preset got all three
+sources. `_symbol_to_ids` now resolves through `/lookup/symbol/`, and falls
+back to `xrefs` **only on a clean 404** — never after a transport error,
+which would walk straight back into the stall. Measured effect: human ITPR1
+went from **0 variants to 24**.
+
+*Fault 2, latency — only visible once fault 1 was fixed.* Ensembl's speed is
+unstable: the same 451-byte `lookup/symbol` call measured **0.61 s, 7.61 s
+and 13.91 s** in one session, and the `expand=1` call that carries the
+transcript/exon payload costs ~12 s every time. One gene in one species is
+~12 s at best, 95 s at worst; the default 8-species panel × 3 genes is 24
+sequential pairs, i.e. **5–38 minutes**, straddling `run_headless`'s 300 s
+budget. Raised to 900 s. Parallelising the per-species loop is the real fix
+→ Emergent.
+
+**Four smoke runs, recorded in `results/s0_baseline/smoke_test.tsv`.** The
+decisive one is run 4: `--preset ip3r --species "Homo sapiens"` → UniProt 34,
+NCBI 44, **Ensembl 41 in 28.5 s, 3/3 sources**. Run 2 (zebrafish) was also
+3/3. The 8-species panel is still a 2/3 run for the latency reason above, and
+should be driven with `--species` for now.
+
+A retry budget could never have fixed fault 1, and no amount of retrying
+diagnoses fault 2 — worth remembering the next time a source "is flaky".
+
+**Files.** `docs/ip3r_review_2026.md` (new); `docs/ip3r_background.md`
+(corrected, struck text left visible); `results/s0_baseline/` (11 tables +
+report); `scripts/s0_db_snapshot.py`, `scripts/s0_gene_structure.py`,
+`scripts/s0_report.py`; `src/databases/ensembl.py` (fix).
+
+**Next session: S1** — toolchain install + the positive/negative control
+benchmark. Read `results/s0_baseline/report.md` first: the 49 % RyR
+contamination rate is the reason the decoy panel matters, and the fact that
+the length band worked perfectly in that one dataset is the reason S1 must
+show the *scorer* separates ITPR from RyR without leaning on it.

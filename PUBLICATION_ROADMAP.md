@@ -112,8 +112,20 @@ Claude: follow this protocol in every session that touches this project.
 Statuses: `pending` / `in_progress` / `completed YYYY-MM-DD`.
 Full step-by-step briefs: `docs/session_briefs.md`.
 
-> **Next session: S0.** Nothing has been run yet. The repo holds the app,
-> the tooling and the plan; `results/` is empty by design.
+> **Next session: S1.** S0 is complete: the literature baseline is verified
+> (`docs/ip3r_review_2026.md`), the database snapshot is re-derived
+> (`results/s0_baseline/`), and the app is proven end to end against live
+> NCBI, Ensembl and UniProt.
+>
+> **Read `results/s0_baseline/report.md` before S1.** Two things in it change
+> how S1 should be run: (1) the ITPR/RYR contamination rate was *measured* at
+> **49 %** in a single Pfam query, so the S1 decoy panel is not a formality;
+> (2) the length band separated ITPR from RyR perfectly in that dataset —
+> which is exactly the coincidence D14 warns against promoting into a rule,
+> so S1 must show the *scorer* separates them, not the filter.
+>
+> **The external drive was not attached during S0** (S0 needs no bulk
+> storage). S4/S5 cannot start until it is.
 >
 > **This project is the PIEZO project's machinery pointed at a different
 > family.** The app (`src/`), the figure style, the dashboard, the
@@ -134,7 +146,7 @@ Full step-by-step briefs: `docs/session_briefs.md`.
 
 | ID | Task (one session each) | Depends | Status | Results (headline) |
 |----|-------------------------|---------|--------|--------------------|
-| S0 | Literature baseline + scope confirmation: verify every `[lit]` claim in `docs/ip3r_background.md`, build `docs/ip3r_review_2026.md`, smoke-test the app against live APIs | — | pending | |
+| S0 | Literature baseline + scope confirmation: verify every `[lit]` claim in `docs/ip3r_background.md`, build `docs/ip3r_review_2026.md`, smoke-test the app against live APIs | — | completed 2026-08-18 | **19 `[lit]` claims audited vs 51 refs (45 primary): 12 verified, 3 qualified, 2 struck, 1 → `[open]`, 1 → `[db]`.** `docs/ip3r_review_2026.md` written. All `[db]` numbers re-derived exactly. **D14 measured: 49 % (53/109) of zebrafish PF08709 records are RyRs.** Exon/span claim false — ITPR3 spans 76 kb, not "hundreds of kb"; span varies 6.5× across paralogs, length 3 %. Ensembl `/xrefs/symbol/homo_sapiens/` stalls (species-specific, `BRCA2` too); client switched to `/lookup/symbol/` → human ITPR1 **0 → 24 variants**. Smoke 3/3 on human (UniProt 34 / NCBI 44 / Ensembl 41) and on zebrafish; the 8-species panel is 2/3 on Ensembl latency alone. → `results/s0_baseline/report.md` |
 | S1 | Toolchain install + positive/negative control benchmark (RyR is the sharp decoy) | S0 | pending | |
 | S2 | Uncapped InterPro enumeration of the family Pfams → census v2, with a positive ITPR/RYR call on every record | S1 | pending | |
 | S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) over vertebrate reference proteomes + jackhmmer-to-convergence completeness argument → census v3 | S1, S2 | pending | |
@@ -181,7 +193,11 @@ than expanding the task in progress.
 |-------|------|------|--------|
 | 2026-08-18 | setup | Confirm the external drive is attached and `data_root.txt` points at it before S4/S5 | open |
 | 2026-08-18 | setup | 40 Viridiplantae + 41 Fungi PF08709 records exist in a family textbooks say plants and fungi lack. Identify what they are (real gene / mis-annotation / contamination) — this is Q1's sharpest edge | open (S2 → S20) |
-| 2026-08-18 | setup | **Ensembl REST is unreliable right now** — a human symbol lookup took 55–73 s on one attempt and returned HTTP 500 on another. The client now retries 3× with backoff and the CLI timeout is 90 s, but a session that needs Ensembl should expect to lose it occasionally and should cache aggressively. NCBI, UniProt and AlphaFold were fine throughout | open |
+| 2026-08-18 | setup | ~~**Ensembl REST is unreliable right now**~~ — **diagnosed and fixed in S0.** Not general flakiness: `/xrefs/symbol/**homo_sapiens**/{symbol}` stalls indefinitely (no response, no error) for `BRCA2` as well as `ITPR1`, while the same endpoint answers in 0.6 s for `danio_rerio` and `/lookup/symbol/homo_sapiens/` answers normally. `src/databases/ensembl.py:_symbol_to_ids` now uses `lookup/symbol` with `xrefs` as fallback. Evidence: `results/s0_baseline/ensembl_endpoint_probe.tsv` | closed 2026-08-18 |
+| 2026-08-18 | S0 | **Ensembl is slow enough to be a scheduling problem, separate from the stall.** Measured: 14 s for a 451-byte `lookup/symbol`, 11 s for a `lookup/id?expand=1`; one gene in one species costs ~95 s end to end. The default 8-species panel × 3 genes therefore needs ~38 min, so `run_headless`'s budget went 300 s → 900 s and a full panel sweep still needs `--species`. The real fix is to parallelise `EnsemblClient.search`'s per-species loop (the other clients already return in seconds) — a client change, not a session's worth of work, but out of S0's scope | open |
+| 2026-08-18 | S0 | **Genomic span varies 6.5× across the three human paralogs (ITPR3 76 kb → ITPR2 498 kb) while protein length varies 3 %.** Found while correcting a false `[lit]` claim. Intron-content asymmetry between paralogs of identical architecture is a result, not a footnote — and D16 says the comparison must be paired within genome | open (S21) |
+| 2026-08-18 | S0 | **Zebrafish `LOC101884734` (4,900 aa, 7 records) is an unnamed RyR-sized locus** returned by an ITPR-diagnostic Pfam query. First concrete instance of the unnamed-locus problem; keep it as a worked example for the correction list | open (S18) |
+| 2026-08-18 | S0 | **ITPR3's clinical phenotype is broader than neuropathy** — the recurrent de novo p.Arg2524Cys causes a multisystemic disease with immunodeficiency. S17 must treat the ITPR3 variant set as multisystem, and Gillespie syndrome has **both** recessive and dominant-negative mechanisms, not only the latter | open (S17) |
 | 2026-08-18 | setup | AlphaFold DB returned models for 8/8 human ITPR queries in the smoke test — better coverage than the PIEZO family had. Worth checking early whether AFDB covers full-length ITPRs or only fragments, since it changes S11's scope | open (S11) |
 
 ---

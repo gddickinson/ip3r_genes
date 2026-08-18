@@ -11,7 +11,7 @@
 | `PUBLICATION_ROADMAP.md` | **The multi-session publication plan**: session protocol, task ledger (S0–S24), emergent tasks, and the Decisions log — including the methodological rules inherited from the PIEZO project. Read at the start of every session. |
 | `docs/session_briefs.md` | Detailed per-task instructions for every ledger row: goal, steps, completion criteria, outputs. |
 | `docs/ip3r_background.md` | **The biology baseline.** Every statement tagged `[db]` (verified against a live database, with the query), `[lit]` (literature, verified in S0) or `[open]` (a question this project answers). Includes the ITPR/RYR hazard and the database-scale snapshot. |
-| `docs/ip3r_review_2026.md` | *(written in S0)* The verified literature baseline with a citation on every claim. |
+| `docs/ip3r_review_2026.md` | **The verified literature baseline** (S0): a citation on every claim, sections mirroring `ip3r_background.md`, plus §7 listing exactly what the audit struck. Cite its sources, never `ip3r_background.md`. |
 | `docs/analysis_catalogue.md` | **What the harvested data can answer** — the analysis menu behind ledger rows S15–S22, each with its inputs, method, deliverable and invalidating caveat, plus the report skeleton mapping analyses to manuscript sections. |
 | `CLAUDE.md` | Session-start instructions, conventions, the family definition rule. |
 | `INTERFACE.md` | (this file) navigation map. |
@@ -23,7 +23,7 @@
 | `requirements.txt` | Third-party deps (`biopython`, `requests`). |
 | `presets/` | Bundled JSON queries: `ip3r`, `ip3r_zebrafish`, `ip3r_discovery`, `ip3r_paralog_mine` (Compara paralog mine), plus the special-mode presets `ip3r_domain_scan` (`"mode": "domain_scan"`) and `ip3r_all` (`"mode": "exhaustive"` — full harvest + every analysis). Presets may carry `known_paralogs` and a `discovery` block of scorer-threshold overrides, honoured by both the CLI and the GUI Discovery dialog. |
 | `cache/` | On-disk JSON cache (auto-created, gitignored). |
-| `results/` | Committed analysis output — one directory per task. Empty until S1 runs. |
+| `results/` | Committed analysis output — one directory per task. `s0_baseline/` holds the S0 database snapshot, the literature audit (`lit_claims.tsv`, `references.tsv`), the Ensembl endpoint probe and the rendered `report.md`. |
 | `manuscript/` | The submission package, built by `scripts/s14_assemble.py` in S14a. See `manuscript/README.md`; nothing here is hand-edited except the numbered section files. |
 
 ## `scripts/` — roadmap-session tooling (not part of the app)
@@ -40,6 +40,9 @@ Ported and ready to use from session one:
 | `s14_deposit.py` | Walks the deposited tree → `deposit_manifest.tsv` with size + SHA-256 per file, and `deposit_notes.md` listing the bulk classes deliberately excluded **with the command that regenerates each**. |
 | `s14_pdf.py` | The typeset PDF: builds a pandoc markdown with each figure placed above its own legend, then xelatex via pandoc. Three traps are handled in code and commented there. |
 | `s14_assemble.py` | The driver — ordered stages `figures → claims → stitch → deposit`; `--only` / `--from` / `--list`; non-zero exit on a missing figure, a missing section or a failed claim. |
+| `s0_db_snapshot.py` | **S0 step 4** — re-derives every `[db]` number in `docs/ip3r_background.md` (InterPro signature + taxonomy counts, the UniProt reference and sister-family panel, per-protein Pfam architecture, the zebrafish PF08709 query) into `results/s0_baseline/*.tsv`. Re-run it whenever a `[db]` number is about to be quoted. |
+| `s0_gene_structure.py` | **S0 step 4** — exon counts, genomic spans and cytobands for ITPR1/2/3 from Ensembl `lookup/symbol?expand=1` (deliberately *not* `xrefs/symbol`, which stalls for `homo_sapiens` — see the S0 report). This is what falsified the "~58–60 exons, hundreds of kb" claim. |
+| `s0_report.py` | **S0** — renders `results/s0_baseline/report.md` purely from the committed tables (D13). Nothing in that report is hand-written. |
 | `build_findings_page.py` + `findings_page.css` | Renders `docs/findings_summary.md` to one self-contained HTML page, inlining every linked figure as a downscaled WebP data URI, with a paralog summary card read live from the committed tables (and omitted entirely until they exist, so it cannot show a card of zeroes). |
 
 Each ledger task adds its own `s<n>_*.py` here. The PIEZO project's
@@ -69,7 +72,7 @@ this app at another family is an edit of this file plus the presets.
 |------|-------|-------|
 | `base.py` | `DatabaseClient` | Abstract; subclasses implement `search()`. |
 | `ncbi.py` | `NCBIClient` | Biopython `Bio.Entrez` against the `protein` index. |
-| `ensembl.py` | `EnsemblClient` | `rest.ensembl.org` `/xrefs/symbol/{species}/{symbol}` → transcripts → translations. |
+| `ensembl.py` | `EnsemblClient` | `rest.ensembl.org` `/lookup/symbol/{species}/{symbol}` → `/lookup/id?expand=1` → transcripts → translations. **S0 changed the symbol-resolution path**: `/xrefs/symbol/homo_sapiens/…` stalls indefinitely (per-species server fault, `BRCA2` too), while `lookup/symbol` works and `xrefs` still works for other species — so `xrefs` is now only a fallback. Evidence: `results/s0_baseline/ensembl_endpoint_probe.tsv`. |
 | `uniprot.py` | `UniProtClient` | `rest.uniprot.org/uniprotkb/search`; surfaces canonical + named isoforms. |
 | `alphafold.py` | `AlphaFoldClient` | `alphafold.ebi.ac.uk/api/prediction/{acc}` — pivots off UniProt; reports pLDDT and model URLs. |
 | `foldseek.py` | `FoldseekClient` | `search.foldseek.com/api/` — async structure-based remote-homology search; opt-in. |

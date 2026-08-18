@@ -1,0 +1,6 @@
+pfam	name	n_proteins	note
+PF08709	Ins145_P3_rec	12338	the IP3-binding core (beta-trefoil)
+PF01365	RYDR_ITPR (RIH)	13177	RyR and IP3R homology domain
+PF08454	RIH_assoc	12062	RIH-associated
+PF02815	MIR	23453	also in O-mannosyltransferases - not family-specific
+PF00520	Ion_trans	206115	generic voltage-gated-channel pore domain

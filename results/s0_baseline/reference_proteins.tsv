@@ -1,0 +1,7 @@
+symbol	accession	family	uniprot_gene	length_aa	status	protein_name
+ITPR1	Q14643	ITPR	ITPR1	2758	reviewed	Inositol 1,4,5-trisphosphate-gated calcium channel ITPR1
+ITPR2	Q14571	ITPR	ITPR2	2701	reviewed	Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2
+ITPR3	Q14573	ITPR	ITPR3	2671	reviewed	Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3
+RYR1	P21817	RYR	RYR1	5038	reviewed	Ryanodine receptor 1
+RYR2	Q92736	RYR	RYR2	4967	reviewed	Ryanodine receptor 2
+RYR3	Q15413	RYR	RYR3	4870	reviewed	Ryanodine receptor 3

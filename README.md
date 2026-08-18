@@ -19,8 +19,14 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: set up, nothing measured.** `results/` is empty by design. The next
-session runs **S0**.
+**Status: S0 complete — the baseline is checked.** The literature baseline is
+verified with a citation on every claim
+([`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md)), the database
+snapshot is re-derived ([`results/s0_baseline/`](results/s0_baseline/)), and
+the app is proven end to end against live NCBI, Ensembl and UniProt (3/3
+sources on both a human-scoped and a zebrafish run). Four starting claims did
+not survive the audit and were struck rather than softened. The next session
+runs **S1**.
 
 ---
 
@@ -73,9 +79,9 @@ instrument, and RyR gives the ITPR tree a proper outgroup.
 
 ### What is already visible, before any analysis
 
-Checked against InterPro and UniProt on 2026-08-18, recorded in
-[`docs/ip3r_background.md`](docs/ip3r_background.md), and to be re-derived
-properly in S2 before any of it is quoted:
+Re-derived by S0 on 2026-08-18 — every number below reproduced the planning
+snapshot exactly ([`results/s0_baseline/`](results/s0_baseline/)). Still to be
+enumerated to exhaustion in S2 before any of it is a result:
 
 - The family looks overwhelmingly like an animal family — **12,149 of the
   12,338** proteins carrying PF08709 are metazoan.
@@ -83,7 +89,8 @@ properly in S2 before any of it is quoted:
   plants and fungi lack, while *Arabidopsis* and *S. cerevisiae* have
   **none**. Real branch of the family, mis-annotation, or contamination?
 - Zebrafish carries **four**: `itpr1a`, `itpr1b`, `itpr2`, `itpr3` — the
-  first two look like a teleost-duplication pair.
+  first two look like a teleost-duplication pair. **But the query that shows
+  this returns 109 records, and 53 of them (49 %) are ryanodine receptors.**
 
 ### The questions the project answers
 
@@ -108,8 +115,8 @@ One task per session. Full ledger with dependencies and results in
 
 | ID | Task | Status |
 |----|------|--------|
-| S0 | Literature baseline + scope confirmation | ⏳ pending — **next** |
-| S1 | Toolchain + positive/negative controls (RyR is the sharp decoy) | ⏳ pending |
+| S0 | Literature baseline + scope confirmation | ✅ completed 2026-08-18 |
+| S1 | Toolchain + positive/negative controls (RyR is the sharp decoy) | ⏳ pending — **next** |
 | S2 | Uncapped InterPro enumeration → census v2 | ⏳ pending |
 | S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) + convergence argument | ⏳ pending |
 | S4 | Genome scope manifest (the denominator) | ⏳ pending |
@@ -140,9 +147,29 @@ One task per session. Full ledger with dependencies and results in
 
 ## Findings so far
 
-Nothing yet — see [`FINDINGS.md`](FINDINGS.md), which gets a plain-language
-entry after every completed task. Each session also adds its headline result
-here with the figure that shows it.
+Plain-language entries per task: [`FINDINGS.md`](FINDINGS.md). Headlines:
+
+**S0 — half of what a "clean" family search returns is the wrong family.**
+Asking the databases for every zebrafish protein carrying PF08709 — the
+IP3-binding domain that *defines* the family — returns 109 proteins.
+**53 of them (49 %) are ryanodine receptors.** This is the exact query the
+project's own planning document quoted as evidence that zebrafish carries
+four IP3 receptors. It is a measured floor on the contamination every
+Pfam-driven count inherits, and it is why separating ITPR from RyR is a
+positive test at every stage rather than a filter.
+→ [`results/s0_baseline/report.md`](results/s0_baseline/report.md)
+
+**S0 — three genes, one machine, 6.5× different sizes.** ITPR1/2/3 encode
+near-identical proteins (2,671–2,758 aa, within 3 %) from 57–62 exons each —
+but ITPR2 spans 498 kb and **ITPR3 spans 76 kb**. This corrected a starting
+claim that all three span "hundreds of kb". What has been adding or removing
+intronic content in one paralog and not another is an open question for S21.
+
+**S0 — the audit.** 19 claims checked against 51 references: 12 verified,
+3 qualified, **2 struck**, 1 retagged as an open question (whether the IP3R
+and RyR triplications were independent — that is the project's own Q2, and it
+was about to be an assumption), 1 upgraded to a database fact.
+→ [`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md)
 
 ---
 

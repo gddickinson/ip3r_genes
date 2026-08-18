@@ -1,0 +1,4 @@
+symbol	ensembl_gene	chromosome	start	end	genomic_span_bp	canonical_transcript	n_exons_canonical	n_exons_min_coding	n_exons_max_coding	n_coding_transcripts	n_transcripts	canonical_protein_aa	cytoband_db	cytoband_lit	band_arm_matches_lit
+ITPR1	ENSG00000150995	3	4493345	4847518	354174	ENST00000649015	62	4	62	22	56	2758	3p26.1	3p26.1	1
+ITPR2	ENSG00000123104	12	26335352	26833239	497888	ENST00000381340	57	6	57	5	16	2701	12p11.23	12p11.23	1
+ITPR3	ENSG00000096433	6	33620331	33696575	76245	ENST00000605930	58	2	59	6	7	2671	6p21.31	6p21.31	1
