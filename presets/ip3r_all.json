@@ -1,0 +1,15 @@
+{
+  "name": "ITPR exhaustive hunt (everything)",
+  "description": "The all-in-one default: harvest every ITPR-like sequence (Compara paralog mine across the vertebrate panel, all-vertebrate ortholog expansion of every unnamed/novel gene found, InterPro Pfam enumeration minus known names), merge and dedupe, save the census (FASTA + CSV), then run every analysis — MSA, identity matrix, NJ tree with novel candidates highlighted, discovery scoring with MSA-signature fallback, presence/absence retention matrix — and write the full bundle + report. Takes 5-15 min against live APIs. This is the app-level hunt; the publication-grade census is the roadmap's S2-S5.",
+  "mode": "exhaustive",
+  "genes": ["ITPR1", "ITPR2", "ITPR3"],
+  "known_paralogs": ["ITPR1", "ITPR2", "ITPR3"],
+  "pfam_ids": ["PF08709", "PF01365", "PF08454"],
+  "max_per_source": 60,
+  "max_orthologs_per_candidate": 12,
+  "max_proteins_per_pfam": 200,
+  "min_length_aa": 2000,
+  "max_length_aa": 3600,
+  "max_analysis_variants": 80,
+  "discovery": {"novelty_ceiling": 0.55}
+}

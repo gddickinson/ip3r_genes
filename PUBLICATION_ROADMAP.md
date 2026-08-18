@@ -1,0 +1,268 @@
+# PUBLICATION_ROADMAP.md — publication-grade ITPR census & discovery
+
+**Goal.** Enumerate and validate every IP3-receptor (ITPR) gene across a
+declared genome scope, and answer what the family's records cannot currently
+answer: its true taxonomic range, where the three vertebrate paralogs came
+from, what happened to each of them, whether its constrained core explains
+its clinical variants, and how badly it is recorded. To the evidence
+standard of an MBE / GBE / Genome Research paper: an exhaustive enumerated
+search space with a completeness argument, an ML phylogeny with support
+values, synteny-backed orthology, ML selection tests, molecular validation
+of every annotation-error claim, structural confirmation, and one-command
+reproducibility.
+
+**How the claim is scoped.** "A systematic census across N vertebrate
+genomes and M eukaryotic reference proteomes" (N fixed in S4, M in S3/S20),
+never an unbounded "all IP3 receptors". Every absence claim is a claim about
+a *declared* search space.
+
+**The biology this rests on** is `docs/ip3r_background.md`, which tags every
+statement `[db]` (verified against a live database), `[lit]` (literature,
+verified in S0) or `[open]` (a question this project answers). Read it before
+S1.
+
+**The one thing that will bite you.** The ryanodine receptors are inside
+every search this project runs — RYR1 carries all four of the ITPR-diagnostic
+Pfam domains. Separating ITPR from RYR is a positive test at every stage, not
+an assumption (see Decisions **D14**).
+
+---
+
+## Session protocol
+
+Claude: follow this protocol in every session that touches this project.
+
+### Start of session
+0. Open the project dashboard: `python3 scripts/dashboard.py --open` and
+   start its watcher in the background (`python3 scripts/dashboard.py
+   --watch` as a background task) so the page stays live through the
+   session. Stdlib-only — no conda env needed.
+1. Read this file top to bottom. Read `docs/session_briefs.md` for the brief
+   of the task you are about to work.
+2. `git pull`.
+3. Run `python -m src.utils.data_root --require`. It exits non-zero if the
+   bulk-storage drive is not attached. **If it fails, stop and tell the
+   user** — do not download anything, and do not "temporarily" use the
+   internal disk. Note free space (`df -h`) before any bulk task.
+4. Pick the task: the single ledger row whose Status is `in_progress`, else
+   the topmost `pending` row whose dependencies are all `completed`.
+   Announce it to the user. Set its Status to `in_progress` (commit at
+   session end).
+5. Work **only that task** until its completion criteria pass. Do not start
+   the next task even if time remains — spend surplus on tests, docs, or
+   hardening of the current task.
+
+### During the session
+- Big/raw files → `get_data_root()` subdirs, never the repo. Committed
+  artefacts: summaries, TSV/CSV ≤ ~20 MB, figures, manifests, code.
+- Record every load-bearing number and file path in the task's Results
+  column (link out to a file under `results/` if long).
+- Write `results/session_live.json` from any long-running driver
+  (`{"task": "S5", "workers": 2, "steps": [{"label": ..., "done": ...}]}`)
+  so the dashboard shows real progress.
+- New leads, surprises, or scope changes → add a row to **Emergent tasks**.
+  Never silently expand the current task.
+- A task that proves too large for one session: split it in the ledger
+  (S5 → S5a/S5b), complete the first part properly, leave the rest `pending`
+  with a note. Splitting is normal; half-done is not.
+- Anything needing an interactive login or sudo: ask the user to run it via
+  the `!` prefix.
+
+### End of session (checklist — do all of it)
+1. Completion criteria all pass → Status `completed` + date. Not all passing
+   → stays `in_progress` with a NEXT note giving the exact resume point.
+2. Update this file (ledger, Results, Emergent, Decisions).
+3. Append a dated entry to `SESSION_LOG.md` (what ran, what resulted, what's
+   next).
+3a. **Append a biological-findings entry to `FINDINGS.md`** — what the task
+   changed in the biological story, in plain language, findings before
+   methods, unconfirmed claims marked *(pending: which task confirms it)*.
+   Keep methods and paths out of it.
+3b. **Refresh `README.md`** — it is the state-of-the-project summary for
+   anyone arriving cold. Update the status board row, and if the session
+   produced a result worth showing, add it to **Findings so far** with a link
+   and an embedded figure. Delete what the session made obsolete.
+4. `git add -A && git commit` (message: `S<n>: <one-line outcome>`) and
+   `git push` if a remote is configured.
+5. Tell the user: task status, headline results, what the next session does.
+
+---
+
+## Storage
+
+- Active bulk-data root: see `data_root.txt`, read via
+  `src/utils/data_root.py:get_data_root()`. Currently
+  `/Volumes/FANTOM/IP3R_DATA` — **an external drive that must be attached
+  before any bulk session**. Moving it later is a one-line edit; the
+  directory layout recreates itself.
+- `require_data_root()` raises rather than falling back. Anything that
+  downloads or sweeps must call it, so an unplugged drive stops the session
+  at the top instead of after 200 GB has landed on the laptop.
+- Expected bulk footprint, from the PIEZO project's measured equivalents:
+  vertebrate assemblies ~400 GB (fetch → search → delete keeps the live
+  footprint near 20 GB), reference proteomes ~10 GB, per-genome sweep
+  evidence ~30 GB, HMMER raw output ~12 GB, structures ~2 GB.
+- Budget rule: any single download > 20 GB needs a note in Decisions with
+  the running disk total.
+
+---
+
+## Task ledger
+
+Statuses: `pending` / `in_progress` / `completed YYYY-MM-DD`.
+Full step-by-step briefs: `docs/session_briefs.md`.
+
+> **Next session: S0.** Nothing has been run yet. The repo holds the app,
+> the tooling and the plan; `results/` is empty by design.
+>
+> **This project is the PIEZO project's machinery pointed at a different
+> family.** The app (`src/`), the figure style, the dashboard, the
+> manuscript-assembly and claim-checking tooling and the session protocol are
+> ported from `../piezo_genes`, which took 24 sessions to build them. The
+> **Decisions** section below carries that project's methodological scar
+> tissue forward as pre-agreed rules: they were paid for in sessions and
+> should not be re-derived. What is *not* ported is any result — every
+> number in this repo must come from this project's own runs.
+>
+> **Where the analysis scripts come from.** Each task writes its own
+> `scripts/s<n>_*.py`. Where the PIEZO project solved the same problem, its
+> script is a reference implementation worth reading before writing a new
+> one (`../piezo_genes/scripts/`, mapped in `../piezo_genes/INTERFACE.md`) —
+> but the family differs in ways that matter (a sister family inside every
+> search, a tetramer not a trimer, a ligand-binding domain with a clinical
+> variant set), so port the method, not the constants.
+
+| ID | Task (one session each) | Depends | Status | Results (headline) |
+|----|-------------------------|---------|--------|--------------------|
+| S0 | Literature baseline + scope confirmation: verify every `[lit]` claim in `docs/ip3r_background.md`, build `docs/ip3r_review_2026.md`, smoke-test the app against live APIs | — | pending | |
+| S1 | Toolchain install + positive/negative control benchmark (RyR is the sharp decoy) | S0 | pending | |
+| S2 | Uncapped InterPro enumeration of the family Pfams → census v2, with a positive ITPR/RYR call on every record | S1 | pending | |
+| S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) over vertebrate reference proteomes + jackhmmer-to-convergence completeness argument → census v3 | S1, S2 | pending | |
+| S4 | Genome scope: declared assembly manifest (the denominator) + download tooling | S1 | pending | |
+| S5 | Genomic tblastn + miniprot sweep → per-genome ledger (found / lost / assembly-gap) + novel gene models → census v4 | S4 | pending | |
+| S20 | **Non-vertebrate sweep** — the family's true range across eukaryotic reference proteomes, and whether the land-plant / dikarya absence is a genome fact or a database fact | S3 | pending | |
+| S23 | **Targeted invertebrate + protist + plant/fungal genome sweep** (triggered by S20): the negative claims at genome level, and copy number outside vertebrates | S20 | pending | |
+| S6 | Alignment upgrade: MAFFT L-INS-i + trimAl on census representatives per clade × kingdom, RyR outgroup included | S2, S3, S5, S20 | pending | |
+| S7 | ML phylogeny: IQ-TREE 2 + ModelFinder + 1000 UFBoot, rooted on RyR; resolve which two of ITPR1/2/3 are sisters (AU test on the three rooted topologies) | S6, S23 | pending | |
+| S8 | Synteny: shared flanking-gene analysis across the ITPR loci | S2, S5 | pending | |
+| S9 | ML selection: PAL2NAL + codeml branch/site models, HyPhy RELAX | S6 | pending | |
+| S10 | Annotation-bug molecular validation: assembly-version audit, RNA-seq spanning evidence, miniprot gene models, for the two worst cases S5/S18 surface | S5 | pending | |
+| S11 | Structures: AFDB coverage, TM-align vs the cryo-EM IP3R and RyR references, Foldseek AFDB-wide sweep | S2, S6 | pending | |
+| S12 | Expression evidence (SRA junction-spanning reads + atlases) for whichever paralog or lineage the census leaves in doubt | S5 | pending | |
+| S13 | Gene-tree/species-tree reconciliation — date the duplications that made ITPR1/2/3 | S7 | pending | |
+| S14a | **Manuscript assembly** — draft, figures, methods, deposit manifest, reviewer self-audit | S3, S5, S7, S8, S9, S10, S11, S20, S23, S15–S19 | pending | |
+| S24 | Supplementary alignment + structure figures, and a figure-by-figure audit | S14a | pending | |
+| S14b | **Deposit + release** — Zenodo DOI, repo public (D2 flip), reference verification, preprint upload | S14a | pending | **Human-gated; cannot be completed autonomously.** |
+
+### Analysis & synthesis block (S15–S22)
+
+These run on data the earlier tasks already produced. Priority orders them
+when several are unblocked at once.
+
+| ID | Task (one session each) | Depends | Priority | Status | Results |
+|----|-------------------------|---------|----------|--------|---------|
+| S15 | **Loss dynamics** — ancestral-state reconstruction of per-paralog presence/absence, ORF-integrity screen from miniprot frameshift/stop counts, dating any pseudogene fossils | S5, S13 | high | pending | |
+| S16 | **Duplication history** — are ITPR1/2/3 2R ohnologs; are teleost itpr1a/itpr1b from 3R; copy-number landscape and retention asymmetry | S7, S8, S13 | high | pending | |
+| S17 | **Constraint & function** — per-site conservation mapped onto the cryo-EM channel; do the SCA15/SCA29/Gillespie, anhidrosis and neuropathy variants sit in the constrained core? Is the IP3-binding core more constrained than the pore? | S6, S9, S11 | high | pending | |
+| S18 | **Annotation-quality audit** — how often a real ITPR locus is missing, fragmentary, split, unnamed or filed under the wrong paralog (or as a RyR) across RefSeq / Ensembl / UniProt / InterPro; the correction list | S5, S15 | high | pending | |
+| S19 | **Methods results** — per-method contribution ("what would proteome-only searching have missed?"), assembly contiguity as a confounder of loss claims, bait-panel design sensitivity | S5, S15, S18 | medium | pending | |
+| S21 | **Gene architecture** — exon/intron structure across the genome scope from the miniprot CDS blocks; are database "fragments" real exon boundaries or annotation failures; is the ~58-exon architecture conserved | S5, S18 | medium | pending | |
+| S22 | **Ligand-site evolution** — the IP3-binding core is the one part RyR does not share functionally. Is it under different constraint from the pore, does it differ between paralogs, and does it change in lineages that lost the upstream PLC/IP3 pathway | S9, S17 | medium | pending | |
+| S14c | **Manuscript rewrite pass** — one full pass over the draft once every analysis has landed, with the figure audit's lessons applied | S14a, S24 | medium | pending | |
+
+---
+
+## Emergent tasks & new aims
+
+Anything discovered mid-session that deserves its own work goes here rather
+than expanding the task in progress.
+
+| Added | From | Task | Status |
+|-------|------|------|--------|
+| 2026-08-18 | setup | Confirm the external drive is attached and `data_root.txt` points at it before S4/S5 | open |
+| 2026-08-18 | setup | 40 Viridiplantae + 41 Fungi PF08709 records exist in a family textbooks say plants and fungi lack. Identify what they are (real gene / mis-annotation / contamination) — this is Q1's sharpest edge | open (S2 → S20) |
+| 2026-08-18 | setup | **Ensembl REST is unreliable right now** — a human symbol lookup took 55–73 s on one attempt and returned HTTP 500 on another. The client now retries 3× with backoff and the CLI timeout is 90 s, but a session that needs Ensembl should expect to lose it occasionally and should cache aggressively. NCBI, UniProt and AlphaFold were fine throughout | open |
+| 2026-08-18 | setup | AlphaFold DB returned models for 8/8 human ITPR queries in the smoke test — better coverage than the PIEZO family had. Worth checking early whether AFDB covers full-length ITPRs or only fragments, since it changes S11's scope | open (S11) |
+
+---
+
+## Decisions log
+
+**D0 — This project inherits the PIEZO project's methodological decisions.**
+They were paid for over 24 sessions and are not to be re-derived. D3–D17
+below are those rules, restated for this family. A session may overturn one,
+but must say so explicitly here with its reason.
+
+**D1 — Bulk storage lives on the external drive**, `data_root.txt`
+(`/Volumes/FANTOM/IP3R_DATA`). Sessions call `require_data_root()`; an
+unplugged drive stops the session rather than filling the internal disk.
+
+**D2 — The repository stays private until S14b**, which flips it public
+alongside the Zenodo DOI. Nothing in the repo may assume a public URL before
+then.
+
+**D3 — The discovery scorer needs an evidence gate.** A score of ≥ 40 needs
+at least one family-specific component (domain / outlier / fold / split
+annotation); size and novelty alone cap at 39. Implemented in
+`src/discovery/candidates.py`.
+
+**D4 — An absence claim must pass two bars, not one.** A genome-wide
+contiguity floor (calibrated in S19, ~50 kb contig N50 in the PIEZO project)
+*and* a local check that the paralog's own genomic neighbourhood is present.
+Residual false negatives are regional, not random: a genome missing a whole
+syntenic block is not evidence of gene loss.
+
+**D5 — Bait panels are screened by label, not padded for breadth.** One
+correctly labelled bait per paralog above ~40 % identity recovers nearly
+everything; a bait wearing the wrong clade name does real damage. Screen
+every bait for chimeras (a domain-envelope check against the profile) before
+it enters a panel.
+
+**D6 — Never issue a database correction without the integrity veto.** If
+the ORF-integrity screen (S15) says a locus is genuinely dead, the audit
+does not tell RefSeq to resurrect it.
+
+**D7 — Best-hit paralog assignment needs a margin.** Two baits scoring
+within ~10 % of each other is not a call. This applies with extra force
+here, where ITPR and RYR share every diagnostic domain.
+
+**D8 — Representatives are chosen per clade × per kingdom**, with explicit
+selection rules in a script, not "the longest sequence per species". A
+longest-first pick reliably selects chimeric gene models.
+
+**D9 — Quote an annotation claim with its annotation source.** RefSeq
+(`GCF_`) gene sets and submitter-deposited GenBank (`GCA_`) gene sets are
+not comparable evidence; some assemblies ship no gene set at all.
+
+**D10 — Iterative searches need a coded kill criterion.** jackhmmer runs
+that diverge must be killed by a rule recorded in code and reported, not by
+eye.
+
+**D11 — Look at the figure.** Any session that changes a figure looks at it;
+any session that writes a legend looks at the figure it describes. Four
+errors in the PIEZO manuscript were of a kind no table check could catch.
+
+**D12 — Every load-bearing number in the manuscript needs a claim row** in
+`scripts/s14_claims.py`, naming its source table and the operation that
+recovers it. A re-run that changes a table then fails loudly.
+
+**D13 — Reports are rendered from the committed tables**, never written by
+hand alongside them, so a report and its data cannot drift.
+
+**D14 — ITPR vs RYR is a positive test at every stage** (new, family-specific).
+Never assume a Pfam hit, a BLAST hit or a gene model is an ITPR. Assign by
+best profile (`itpr.hmm` vs `ryr.hmm`) or by a labelled-bait margin, record
+the margin, and treat the length band (2,000–3,600 aa) as a filter that
+supports the call rather than as the call itself.
+
+**D15 — The species tree is an input, not a result.** Reconciliation uses a
+hand-curated, literature-calibrated topology with a source on every
+calibrated node, validated by a `--check` mode before use.
+
+**D16 — Cross-paralog comparisons are paired within genome.** Intron size,
+assembly quality and annotation completeness all scale with the assembly, so
+an unpaired comparison measures the assemblies.
+
+**D17 — Permutation nulls are drawn from real genomic windows**, not from a
+uniform shuffle, and the genes under test are removed from their own windows
+or the test is circular.

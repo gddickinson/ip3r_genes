@@ -1,0 +1,11 @@
+{
+  "name": "ITPR paralog mine (Compara)",
+  "description": "Phylogenomic hunt for unnamed / novel ITPR-family genes. Mines Ensembl Compara gene trees for every within-species paralog of ITPR1/2/3 across a 7-species vertebrate panel (human, mouse, zebrafish, chicken, frog, platypus, elephant shark), fetches protein sequences, and is designed to be run with analysis + discovery so unnamed gene models surface as scored candidates. Adjacent family loci are auto-flagged as possible split annotations. NOTE: Compara gene trees put ITPRs and RYRs in one tree, so the paralog list will include ryanodine receptors — they are the sister family, not novel ITPRs, and the size band plus the RyR-specific Pfam domains separate them.",
+  "genes": ["ITPR1", "ITPR2", "ITPR3"],
+  "species": "",
+  "sources": ["Compara"],
+  "max_per_source": 60,
+  "include_sequence": true,
+  "known_paralogs": ["ITPR1", "ITPR2", "ITPR3"],
+  "discovery": {"novelty_ceiling": 0.55}
+}

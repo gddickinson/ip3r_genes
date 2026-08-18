@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# macOS
+.DS_Store
+
+# Opportunistic API cache (regenerates; can grow large)
+cache/
+
+# Bulk data lives at the data root (see data_root.txt), never in git.
+# The local fallback directory is ignored wholesale:
+data/
+
+# Scratch
+*.tmp
+dashboard.html
+
+# Generated illustrated findings page (rebuilt by scripts/build_findings_page.py;
+# the markdown source is committed)
+docs/findings_summary.html
+docs/findings_summary.pdf
+
+# --- regenerable run artefacts from the analysis toolchain -----------------
+# IQ-TREE run checkpoints / parsimony start trees (churn mid-run)
+results/phylogeny/**/*.ckp.gz
+results/phylogeny/**/*.parstree
+
+# PAML optimiser iteration traces (regenerate with the run; not evidence)
+results/selection/codeml/*/rub
+
+# PAML scratch files if codeml is ever invoked from the repo root
+/rst
+/rst1
+/rub
+/2ML.*
+/2NG.*
+/lnf
+
+# MAFFT / HyPhy progress logs — console noise, several MB, regenerable.
+# The alignments, results and every derived TSV are committed.
+results/constraint/mafft_*.log
+results/constraint/fel/*.log

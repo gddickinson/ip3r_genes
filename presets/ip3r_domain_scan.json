@@ -1,0 +1,14 @@
+{
+  "name": "Fourth-ITPR domain-bait scan",
+  "description": "Find candidate novel ITPR paralogs by listing every UniProt protein InterPro annotates with an IP3R-family Pfam domain (PF08709 Ins145_P3_rec, PF01365 RIH, PF08454 RIH_assoc, PF02815 MIR), excluding those already named ITPR1/2/3 and the ryanodine receptors. The remainder is the candidate pool for the discovery scorer. Verified 2026-08-18: all four domains are shared with RyR, so the RyR exclusion and the size band are load-bearing, not cosmetic.",
+  "mode": "domain_scan",
+  "pfam_ids": ["PF08709", "PF01365", "PF08454", "PF02815"],
+  "exclude_name_substrings": ["ITPR1", "ITPR2", "ITPR3", "itpr1", "itpr2", "itpr3", "RYR1", "RYR2", "RYR3", "ryr1", "ryr2", "ryr3", "ryanodine"],
+  "exclude_gene_substrings": ["ITPR1", "ITPR2", "ITPR3", "itpr1", "itpr2", "itpr3", "RYR1", "RYR2", "RYR3", "ryr1", "ryr2", "ryr3"],
+  "known_paralogs": ["ITPR1", "ITPR2", "ITPR3"],
+  "max_proteins_per_pfam": 400,
+  "max_with_sequences": 40,
+  "reviewed_only": false,
+  "min_length_aa": 2000,
+  "max_length_aa": 3600
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ITPR family",
+  "description": "The three vertebrate IP3-receptor paralogs across the default species panel. The plain baseline search — what the databases already know, before any of the census work.",
+  "genes": ["ITPR1", "ITPR2", "ITPR3"],
+  "species": "",
+  "sources": ["NCBI", "Ensembl", "UniProt"],
+  "max_per_source": 200,
+  "include_sequence": false
+}

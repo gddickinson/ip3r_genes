@@ -1,0 +1,9 @@
+{
+  "name": "ITPR zebrafish only",
+  "description": "The zebrafish complement — itpr1a, itpr1b (the 3R duplicate pair), itpr2 and itpr3 — plus the ryanodine receptors as the sister-family control. Useful for spotting NCBI vs Ensembl/ZFIN annotation disagreements in a ~2,700-residue, ~58-exon gene.",
+  "genes": ["itpr1a", "itpr1b", "itpr2", "itpr3", "ryr1b", "ryr3"],
+  "species": "Danio rerio",
+  "sources": ["NCBI", "Ensembl", "UniProt"],
+  "max_per_source": 50,
+  "include_sequence": false
+}

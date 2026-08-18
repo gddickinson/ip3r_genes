@@ -1,0 +1,9 @@
+{
+  "name": "ITPR novel-paralog discovery",
+  "description": "Cast a wide net for unnamed or novel ITPR-family genes. Queries the three canonical paralogs across all sources with sequences fetched, then runs the analysis + discovery pipeline (see --analyze --discover --interpro).",
+  "genes": ["ITPR1", "ITPR2", "ITPR3"],
+  "species": "",
+  "sources": ["NCBI", "Ensembl", "UniProt", "AlphaFold"],
+  "max_per_source": 50,
+  "include_sequence": true
+}
