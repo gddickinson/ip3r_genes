@@ -235,3 +235,91 @@ audit is a consistent 51 and the review a consistent 137.
 
 **Not changed:** no ledger status, no roadmap task. S0 remains `completed`;
 this is a deepening of its deliverable, not new scope.
+
+---
+
+## 2026-08-18 — S1: toolchain + control benchmark
+
+**Task.** S1 — install the toolchain, prove MAFFT is really wired in, and
+measure the discovery scorer's recall and specificity against ground truth,
+with the ryanodine receptors as the sharp decoy.
+
+**Session-protocol notes.** The external drive was **not attached**
+(`/Volumes/FANTOM` absent). S1 needs no bulk storage, so it was worked
+anyway — as S0 was — and nothing was downloaded to the internal disk. S4/S5
+remain blocked. Separately, `python -m src.utils.data_root --require` was
+dying with `ModuleNotFoundError: No module named 'Bio'` before it ever
+reached the drive check, because `src/utils/__init__` → `results_writer` →
+`src.core.__init__` → `search` → `databases` → `Bio.Entrez`. The protocol's
+step-3 gate has to work in a bare interpreter, so `SearchOrchestrator` is now
+re-exported lazily (PEP 562). The gate now reports the drive.
+
+**Toolchain (step 1).** All 12 binaries resolve, versions recorded in
+`results/toolchain_manifest.txt` by `scripts/s1_toolchain.py`: MAFFT v7.526,
+HMMER 3.4 (hmmbuild/hmmsearch/jackhmmer), BLAST+ 2.16.0+ (blastp/tblastn/
+makeblastdb), miniprot 0.18-r281, trimAl v1.5.rev1, IQ-TREE 2.3.6, NCBI
+`datasets` 18.35.0, Foldseek 10.941cd33. Nothing needed installing. BLAST+,
+`datasets` and Foldseek are not on the bare PATH — they live in the reused
+`piezo1` conda env (python 3.11.15, biopython 1.87), which is now recorded as
+Decision **D18**; the manifest marks each tool `PATH` or `env` rather than
+letting an env-only tool pass as a PATH tool.
+
+**MAFFT wiring (step 2).** `MafftTracer` wraps `subprocess.run` and records
+every mafft call with its return code — necessary because
+`alignment.py:_mafft` falls back to the star alignment *silently* on a
+non-zero return code. One call, `mafft --auto`, rc=0, 56 sequences → 9,494
+columns. Trace committed.
+
+**Panels.** 25 positive controls (ITPR1/2/3 across human, mouse, rat, chicken,
+*Xenopus*, zebrafish incl. itpr1a/itpr1b, cow, plus fly `Itpr`, worm `itr-1`,
+*Dictyostelium* `iplA`) and 31 decoys (6 RyRs across 3 species, POMT1/2 as
+MIR-domain sharers, 10 in-band channels, 11 in-band non-channels, 2 giants),
+all fetched live from UniProt and committed as JSON + FASTA. Sea urchin Itpr
+did not resolve and is recorded in `panel_positives_missing.txt`.
+
+*One panel bug worth remembering:* the Swiss-Prot preference test was
+`"reviewed" in entryType` — and `"UniProtKB unreviewed (TrEMBL)"` contains
+`"reviewed"`, so every TrEMBL entry ranked as reviewed and the tie broke on
+length. Human RYR2, FLNA and rat Itpr1/2/3 all came back as the wrong (longer,
+unreviewed) entry. Fixed and re-fetched; the panel is now canonical Swiss-Prot
+wherever one exists.
+
+**The result that changed the code.** On the first run **all six RyR decoys
+were promoted at 45** — `pfam+20,cluster+10,breadth+15`. They carry all four
+family-diagnostic Pfams, so the domain component fires by construction and
+also satisfies the D3 evidence gate. Specificity was 25/31 (81 %) and *every
+failure was a ryanodine receptor*. The roadmap anticipated this and required
+D14 to be strengthened before S2, so S1 implemented it: a labelled-bait
+sister-family test in `discovery/candidates.py` (`sister_paralogs`,
+`sister_margin=0.10` per D7, `exclude_sister_family`). A first draft that
+skipped sister-family members *by gene symbol* was thrown away — that is
+exactly the assumption D14 forbids, and it would do nothing for the unnamed
+RyR-sized loci S0 found. The shipped test is positional: identity to the
+nearest labelled sister bait vs identity to the nearest known paralog, margin
+recorded on every candidate, gene symbol never consulted, length band
+contributing only the size component. All six RyRs now cap at 39.
+
+**Numbers.** Recall 24/25 (96 %) — ITPR1 8/8, ITPR2 7/7, ITPR3 7/7,
+invertebrate grade 2/3. Specificity 31/31 (100 %). Bait margin 31/31 correct
+under both identity metrics; true-ITPR margins +0.065…+0.874, RyR margins
+−0.868…−0.536, no overlap.
+
+**Two caveats the benchmark surfaced, both logged as Emergent.**
+(1) *Dictyostelium* `iplA` has a margin of +0.065 — inside the D7 10 %
+no-call band. The bait margin is a metazoan instrument; the deep branches
+need profile-based assignment. (2) The only recall miss, fly `Itpr` at 35,
+fails by 0.008: its nearest non-known sibling is worm `itr-1` at 0.342
+against a 0.35 breadth threshold. Under `covered_only=True` identity the same
+pair scores 0.420 and breadth fires. That metric change would also lift every
+RyR from 0.107 to 0.256 identity — into the twilight zone, +20 each — which
+is survivable only now the sister test exists. It is a re-weighting, so it is
+logged for S6 rather than done silently.
+
+**Files.** `scripts/s1_toolchain.py`, `s1_panels.py`, `s1_lib.py`,
+`s1_benchmark.py`, `s1_report.py`; `results/toolchain_manifest.txt`;
+`results/benchmark_controls/` (report.md + 9 tables/artefacts).
+
+**Next session: S2** — uncapped InterPro enumeration of the family Pfams into
+census v2, with a positive ITPR/RYR call on every record. Carry the RyR bait
+panel into every analysis set or the sister test has nothing to measure
+against.

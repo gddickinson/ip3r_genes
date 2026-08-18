@@ -1,0 +1,57 @@
+accession	gene_symbol	species	length_aa	truth	panel_note	id_to_itpr_bait	id_to_ryr_bait	margin	call	correct	id_to_itpr_bait_cov	id_to_ryr_bait_cov	margin_cov	call_cov	correct_cov
+Q14643	ITPR1	Homo sapiens	2758	ITPR	ITPR1	0.671	0.109	+0.562	ITPR	True	0.704	0.248	+0.456	ITPR	True
+P11881	Itpr1	Mus musculus	2749	ITPR	ITPR1	0.983	0.108	+0.874	ITPR	True	0.987	0.249	+0.738	ITPR	True
+P29994	Itpr1	Rattus norvegicus	2750	ITPR	ITPR1	0.981	0.108	+0.873	ITPR	True	0.985	0.249	+0.737	ITPR	True
+A0A8V0ZJT0	ITPR1	Gallus gallus	2779	ITPR	ITPR1	0.933	0.107	+0.826	ITPR	True	0.949	0.248	+0.701	ITPR	True
+A0A8J0T3U5	itpr1	Xenopus tropicalis	2743	ITPR	ITPR1	0.885	0.107	+0.778	ITPR	True	0.899	0.248	+0.651	ITPR	True
+A0A8M2BDG0	itpr1a	Danio rerio	2711	ITPR	ITPR1	0.813	0.109	+0.705	ITPR	True	0.835	0.252	+0.583	ITPR	True
+A0AB32TXG4	itpr1b	Danio rerio	2819	ITPR	ITPR1	0.836	0.107	+0.730	ITPR	True	0.869	0.244	+0.626	ITPR	True
+Q9TU34	ITPR1	Bos taurus	2709	ITPR	ITPR1	0.963	0.107	+0.856	ITPR	True	0.981	0.250	+0.731	ITPR	True
+Q14571	ITPR2	Homo sapiens	2701	ITPR	ITPR2	0.671	0.110	+0.561	ITPR	True	0.704	0.258	+0.446	ITPR	True
+Q9Z329	Itpr2	Mus musculus	2701	ITPR	ITPR2	0.958	0.110	+0.849	ITPR	True	0.958	0.258	+0.700	ITPR	True
+P29995	Itpr2	Rattus norvegicus	2701	ITPR	ITPR2	0.953	0.109	+0.844	ITPR	True	0.953	0.256	+0.697	ITPR	True
+F1P1X4	ITPR2	Gallus gallus	2700	ITPR	ITPR2	0.929	0.110	+0.820	ITPR	True	0.931	0.256	+0.675	ITPR	True
+A0A6I8RGU0	itpr2	Xenopus tropicalis	2705	ITPR	ITPR2	0.880	0.108	+0.772	ITPR	True	0.885	0.253	+0.632	ITPR	True
+A0A8M9PQQ3	itpr2	Danio rerio	2665	ITPR	ITPR2	0.745	0.106	+0.639	ITPR	True	0.759	0.251	+0.508	ITPR	True
+Q8WN96	ITPR2	Bos taurus	2701	ITPR	ITPR2	0.973	0.108	+0.864	ITPR	True	0.973	0.256	+0.717	ITPR	True
+Q14573	ITPR3	Homo sapiens	2671	ITPR	ITPR3	0.634	0.106	+0.527	ITPR	True	0.666	0.254	+0.412	ITPR	True
+P70227	Itpr3	Mus musculus	2670	ITPR	ITPR3	0.953	0.106	+0.848	ITPR	True	0.954	0.252	+0.702	ITPR	True
+Q63269	Itpr3	Rattus norvegicus	2670	ITPR	ITPR3	0.952	0.106	+0.847	ITPR	True	0.953	0.252	+0.701	ITPR	True
+A0A8V1ACE6	ITPR3	Gallus gallus	2664	ITPR	ITPR3	0.896	0.107	+0.789	ITPR	True	0.900	0.253	+0.647	ITPR	True
+A4ZYX8	itpr3	Xenopus tropicalis	2673	ITPR	ITPR3	0.826	0.105	+0.721	ITPR	True	0.838	0.250	+0.588	ITPR	True
+A0A8M6Z266	itpr3	Danio rerio	2635	ITPR	ITPR3	0.738	0.102	+0.636	ITPR	True	0.764	0.250	+0.514	ITPR	True
+Q8WN95	ITPR3	Bos taurus	2664	ITPR	ITPR3	0.966	0.107	+0.859	ITPR	True	0.968	0.256	+0.713	ITPR	True
+P29993	Itpr	Drosophila melanogaster	2837	ITPR	invert_grade	0.553	0.107	+0.446	ITPR	True	0.607	0.246	+0.361	ITPR	True
+Q9Y0A1	itr-1	Caenorhabditis elegans	2892	ITPR	invert_grade	0.352	0.096	+0.256	ITPR	True	0.436	0.231	+0.205	ITPR	True
+Q9NA13	iplA	Dictyostelium discoideum	3177	ITPR	invert_grade	0.143	0.078	+0.065	ITPR	True	0.237	0.195	+0.042	ITPR	True
+P21817	RYR1	Homo sapiens	5038	RYR	RyR (sister family)	0.107	0.643	-0.536	RYR	True	0.258	0.678	-0.421	RYR	True
+Q92736	RYR2	Homo sapiens	4967	RYR	RyR (sister family)	0.105	0.673	-0.568	RYR	True	0.249	0.703	-0.454	RYR	True
+Q15413	RYR3	Homo sapiens	4870	RYR	RyR (sister family)	0.110	0.673	-0.563	RYR	True	0.256	0.703	-0.447	RYR	True
+E9PZQ0	Ryr1	Mus musculus	5035	RYR	RyR (sister family)	0.106	0.956	-0.850	RYR	True	0.255	0.960	-0.705	RYR	True
+E9Q401	Ryr2	Mus musculus	4966	RYR	RyR (sister family)	0.106	0.974	-0.868	RYR	True	0.249	0.975	-0.725	RYR	True
+A0A8M3ALN1	ryr3	Danio rerio	4863	RYR	RyR (sister family)	0.108	0.766	-0.658	RYR	True	0.254	0.782	-0.528	RYR	True
+Q9Y6A1	POMT1	Homo sapiens	747	other	MIR-domain sharer	0.033	0.017	+0.015	ITPR		0.176	0.150	+0.026	ITPR	
+Q9UKY4	POMT2	Homo sapiens	750	other	MIR-domain sharer	0.039	0.020	+0.019	ITPR		0.208	0.177	+0.030	ITPR	
+O00555	CACNA1A	Homo sapiens	2506	other	in-band channel	0.049	0.033	+0.016	ITPR		0.148	0.131	+0.017	ITPR	
+Q13936	CACNA1C	Homo sapiens	2221	other	in-band channel	0.047	0.027	+0.020	ITPR		0.147	0.117	+0.030	ITPR	
+Q15878	CACNA1E	Homo sapiens	2313	other	in-band channel	0.048	0.034	+0.014	ITPR		0.145	0.137	+0.008	ITPR	
+P35498	SCN1A	Homo sapiens	2009	other	in-band channel	0.050	0.032	+0.017	ITPR		0.154	0.129	+0.025	ITPR	
+Q14524	SCN5A	Homo sapiens	2016	other	in-band channel	0.052	0.034	+0.018	ITPR		0.163	0.133	+0.029	ITPR	
+Q15858	SCN9A	Homo sapiens	1988	other	in-band channel	0.049	0.033	+0.016	ITPR		0.150	0.133	+0.017	ITPR	
+Q9BX84	TRPM6	Homo sapiens	2022	other	in-band channel	0.067	0.044	+0.023	ITPR		0.185	0.174	+0.011	ITPR	
+Q96QT4	TRPM7	Homo sapiens	1865	other	in-band channel	0.071	0.041	+0.030	ITPR		0.207	0.172	+0.034	ITPR	
+Q8TDX9	PKD1L1	Homo sapiens	2849	other	in-band channel	0.058	0.044	+0.013	ITPR		0.162	0.137	+0.024	ITPR	
+Q7Z442	PKD1L2	Homo sapiens	2459	other	in-band channel	0.054	0.043	+0.011	ITPR		0.164	0.140	+0.024	ITPR	
+Q9Y490	TLN1	Homo sapiens	2541	other	in-band non-channel	0.057	0.045	+0.013	ITPR		0.161	0.147	+0.015	ITPR	
+P21333	FLNA	Homo sapiens	2647	other	in-band non-channel	0.076	0.053	+0.023	ITPR		0.195	0.167	+0.028	ITPR	
+Q01082	SPTBN1	Homo sapiens	2364	other	in-band non-channel	0.059	0.038	+0.021	ITPR		0.164	0.141	+0.023	ITPR	
+Q13402	MYO7A	Homo sapiens	2215	other	in-band non-channel	0.083	0.051	+0.032	ITPR		0.200	0.165	+0.035	ITPR	
+Q5S007	LRRK2	Homo sapiens	2527	other	in-band non-channel	0.094	0.053	+0.040	ITPR		0.197	0.161	+0.036	ITPR	
+Q13315	ATM	Homo sapiens	3056	other	in-band non-channel	0.091	0.058	+0.033	ITPR		0.197	0.164	+0.033	ITPR	
+Q9BZ29	DOCK9	Homo sapiens	2069	other	in-band non-channel	0.065	0.042	+0.023	ITPR		0.171	0.154	+0.016	ITPR	
+P46939	UTRN	Homo sapiens	3433	other	in-band non-channel	0.061	0.052	+0.009	ITPR		0.154	0.147	+0.007	ITPR	
+Q96RL7	VPS13A	Homo sapiens	3174	other	in-band non-channel	0.106	0.059	+0.048	ITPR		0.201	0.154	+0.047	ITPR	
+Q8NFP9	NBEA	Homo sapiens	2946	other	in-band non-channel	0.062	0.052	+0.009	ITPR		0.161	0.155	+0.006	ITPR	
+P26039	Tln1	Mus musculus	2541	other	in-band non-channel	0.058	0.045	+0.013	ITPR		0.163	0.148	+0.015	ITPR	
+P98161	PKD1	Homo sapiens	4303	other	giant (out of band)	0.062	0.055	+0.007	ITPR		0.161	0.140	+0.021	ITPR	
+Q14204	DYNC1H1	Homo sapiens	4646	other	giant (out of band)	0.060	0.059	+0.001	ITPR		0.147	0.140	+0.006	ITPR	

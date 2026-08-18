@@ -25,7 +25,7 @@
 | `requirements.txt` | Third-party deps (`biopython`, `requests`). |
 | `presets/` | Bundled JSON queries: `ip3r`, `ip3r_zebrafish`, `ip3r_discovery`, `ip3r_paralog_mine` (Compara paralog mine), plus the special-mode presets `ip3r_domain_scan` (`"mode": "domain_scan"`) and `ip3r_all` (`"mode": "exhaustive"` — full harvest + every analysis). Presets may carry `known_paralogs` and a `discovery` block of scorer-threshold overrides, honoured by both the CLI and the GUI Discovery dialog. |
 | `cache/` | On-disk JSON cache (auto-created, gitignored). |
-| `results/` | Committed analysis output — one directory per task. `s0_baseline/` holds the S0 database snapshot, the literature audit (`lit_claims.tsv`, `references.tsv`), the Ensembl endpoint probe and the rendered `report.md`. |
+| `results/` | Committed analysis output — one directory per task. `s0_baseline/` holds the S0 database snapshot, the literature audit (`lit_claims.tsv`, `references.tsv`), the Ensembl endpoint probe and the rendered `report.md`. `benchmark_controls/` holds the S1 control benchmark: both panels as fetched, the InterPro domain hits, the MAFFT trace, the recall / specificity / bait-margin tables and the rendered `report.md`. `toolchain_manifest.txt` records the exact tool versions every later task shells out to. |
 | `manuscript/` | The submission package, built by `scripts/s14_assemble.py` in S14a. See `manuscript/README.md`; nothing here is hand-edited except the numbered section files. |
 
 ## `scripts/` — roadmap-session tooling (not part of the app)
@@ -46,6 +46,11 @@ Ported and ready to use from session one:
 | `s0_gene_structure.py` | **S0 step 4** — exon counts, genomic spans and cytobands for ITPR1/2/3 from Ensembl `lookup/symbol?expand=1` (deliberately *not* `xrefs/symbol`, which stalls for `homo_sapiens` — see the S0 report). This is what falsified the "~58–60 exons, hundreds of kb" claim. |
 | `s0_report.py` | **S0** — renders `results/s0_baseline/report.md` purely from the committed tables (D13). Nothing in that report is hand-written. The claim-audit reference count comes from `lit_claims.tsv`, not from the size of `references.tsv`, because that table also backs the review. |
 | `s0_review_build.py` | **Assembles `docs/ip3r_review_2026.md` from `docs/review/*.md`** and renders the bibliography from `references.tsv`; `--pdf` typesets it via pandoc + xelatex, `--check` validates without writing. A cited key with no reference row is a build error, so the text and the bibliography cannot drift. Also rewrites `<sub>`/`<sup>` into pandoc syntax for LaTeX and drops the duplicate H1. |
+| `s1_toolchain.py` | **S1 step 1** — probes every external binary (PATH first, then the recorded conda env) and every Python package the pipeline imports, and writes `results/toolchain_manifest.txt` + `benchmark_controls/toolchain.tsv`. A tool that only exists inside the env is recorded *as* env-resident rather than silently passing as a PATH tool. |
+| `s1_panels.py` | **S1 ground truth** — the two control panels and their live UniProt fetch (Swiss-Prot preferred, longest as tie-break), cached to `panel_positives.json` / `panel_decoys.json` + FASTA so the benchmark reruns offline. Positives: ITPR1/2/3 across a vertebrate panel plus the invertebrate / non-metazoan single-Itpr grade. Decoys: RYR1/2/3 across species (the sharp decoy — they carry every diagnostic Pfam), the MIR-domain sharers POMT1/2, in-band channels and non-channels, and out-of-band giants. |
+| `s1_lib.py` | S1 helpers: `MafftTracer` (wraps `subprocess.run` to prove MAFFT really ran, with its return code), candidate lookup by label or dedup key, the component decoder that reads which scorer components fired back out of the evidence text, and `bait_margins()` — the ITPR-vs-RyR labelled-bait margin that operationalises D14/D7. |
+| `s1_benchmark.py` | **The S1 driver** — mirrors the production wiring (live InterPro domain lookup, `analyse(use_mafft=True)`, MSA-signature fallback, `discover_novel_paralogs`) across a baseline run plus one hold-out per paralog, and writes tables only. Also measures every margin under both identity metrics (full-alignment and `covered_only=True`) and diagnoses each recall failure. |
+| `s1_report.py` | **S1** — renders `results/benchmark_controls/report.md` purely from the committed tables (D13). |
 | `build_findings_page.py` + `findings_page.css` | Renders `docs/findings_summary.md` to one self-contained HTML page, inlining every linked figure as a downscaled WebP data URI, with a paralog summary card read live from the committed tables (and omitted entirely until they exist, so it cannot show a card of zeroes). |
 
 Each ledger task adds its own `s<n>_*.py` here. The PIEZO project's
@@ -67,7 +72,7 @@ this app at another family is an edit of this file plus the presets.
 |------|-----------------------|
 | `models.py` | `ProteinVariant`, `GeneRecord`, `SearchQuery`, `SearchResult`, `SearchStatus`. |
 | `cache.py` | `DiskCache(root, ttl_s)` — JSON-file cache keyed by `(source, query)`. |
-| `search.py` | `SearchOrchestrator(cache, email, …)` — fans queries across enabled DBs on worker threads, marshals results back via `queue.Queue`. Special-cases Foldseek (waits for sequence clients, harvests bait sequences). |
+| `search.py` | `SearchOrchestrator(cache, email, …)` — fans queries across enabled DBs on worker threads, marshals results back via `queue.Queue`. Special-cases Foldseek (waits for sequence clients, harvests bait sequences). Re-exported **lazily** from `src/core/__init__.py` (PEP 562) so importing `src.utils` does not drag in biopython — the session-protocol data-root check has to run in a bare interpreter. |
 
 ## `src/databases/` — one client per source, common interface
 
@@ -125,7 +130,7 @@ as bait.
 
 | File | Key types / functions |
 |------|-----------------------|
-| `candidates.py` | `DiscoveryConfig`, `Candidate`, `DiscoveryReport`, `discover_novel_paralogs(…)`. Composite 8-criterion scorer + **promotion evidence gate** (D3: score ≥ 40 requires ≥ 1 family-specific component — outlier / domain / fold / split — else capped at 39). Defaults read from `utils/family.py`. |
+| `candidates.py` | `DiscoveryConfig`, `Candidate`, `DiscoveryReport`, `discover_novel_paralogs(…)`. Composite 8-criterion scorer + **promotion evidence gate** (D3: score ≥ 40 requires ≥ 1 family-specific component — outlier / domain / fold / split — else capped at 39) + the **sister-family test** (D14/D7, added in S1): a candidate closer to a labelled RyR bait than to any known ITPR paralog, by more than `sister_margin` (0.10), is assigned to the sister family and capped at 39, with the margin recorded. It is a positive test on distances — the candidate's own gene symbol is never consulted — and the length band is deliberately not part of the call. Without it all six RyR decoys were promoted at 45. Defaults read from `utils/family.py`. |
 | `domain_scan.py` | `run_domain_scan(…)` — the fourth-paralog hunt: enumerate every protein with a family Pfam ID via InterPro, filter out known paralogs *and the ryanodine receptors*, fetch sequences, run analysis + discovery. |
 | `exhaustive.py` | `run_exhaustive_hunt(…)` — the all-in-one `"mode": "exhaustive"` pipeline: Compara mine + ortholog expansion + InterPro enumeration → merged census (`itpr_like_census.csv` + FASTA) → analyse + discovery + presence matrix + highlighted tree + bundle/report. |
 

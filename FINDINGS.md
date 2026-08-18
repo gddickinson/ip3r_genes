@@ -116,3 +116,63 @@ in a family that plants and fungi are supposed to lack — while thale cress
 and brewer's yeast have none at all. Re-checking reproduced those numbers
 exactly. Whether they are real genes, mistakes, or contamination is still
 the sharpest question on the list. *(pending: S2, S20)*
+
+---
+
+## 2026-08-18 — S1: the instrument was tested, and it failed the first time
+
+**Our search would have called every ryanodine receptor an IP3 receptor.**
+This is the finding of the session, and it is a finding about ourselves.
+We knew the two families were confusable — the ryanodine receptors carry all
+four of the protein signatures we use to recognise an IP3 receptor. What we
+did not know was how the search behaved when actually handed one. We built a
+panel of known answers: 25 real IP3 receptors from across the animals, and 31
+impostors, six of them ryanodine receptors. Every single ryanodine receptor
+came back flagged as a promising new IP3 receptor. Not one was rejected.
+
+The reason is almost funny. The strongest piece of evidence our search uses
+is "does this protein carry the family's signature domains?" — and the
+ryanodine receptors carry all of them. The one thing that most confidently
+identifies a member of this family is the one thing that cannot distinguish
+it from its sister.
+
+**What fixed it was a comparison, not a rule.** The obvious patch — throw out
+anything called "RYR" — is worthless, because the problem is precisely the
+proteins nobody has named yet. (We already have one: an unnamed zebrafish
+gene of ryanodine-receptor size that our earlier search returned as an IP3
+receptor candidate.) So the test we built ignores names entirely. It asks
+each candidate a comparative question: *are you more similar to a known IP3
+receptor, or to a known ryanodine receptor?* The answer separates the two
+families completely and with room to spare — genuine IP3 receptors lean
+toward IP3 receptors by 7 to 87 percentage points, ryanodine receptors lean
+the other way by 54 to 87. There is no overlap anywhere in the middle.
+
+**But the test has an edge, and we found where.** *Dictyostelium*, a soil
+amoeba, has a true IP3 receptor — and it leans toward the IP3 receptors by
+only 6.5 points. It is called correctly, but barely; by our own standard for
+what counts as a confident call, it does not qualify. The lesson is specific
+and useful: this comparison works throughout the animals and fails at the
+base of the tree. Any claim about whether some deep-branching organism has an
+IP3 receptor will need a different and more sensitive instrument, not this
+one. *(pending: S3, S20)*
+
+**A quieter result about what recognition rests on.** The three human IP3
+receptors are 61–68 % identical to one another. That is close enough that
+none of our "this looks like an interesting outlier" tests ever fire for a
+real family member — they are all too similar to each other to look like
+anything new. In practice, every true IP3 receptor in the test was recognised
+by its signature domains and by nothing else. So the census's reach is set by
+one thing: whether a database record can be matched to a domain signature at
+all. A real gene with no such record attached will be missed. That is now a
+measured property of the search, not a worry about it. *(pending: S2)*
+
+**One real IP3 receptor was missed.** The fruit fly's, by the narrowest
+margin imaginable. The search wants corroboration — a second, similar protein
+in another species — and the fly's closest relative in the panel was the
+roundworm's, at 34.2 % similarity against a 35 % requirement. It failed by
+eight-tenths of a percentage point. Measured a fairer way (comparing only the
+regions the two proteins actually share), the same pair scores 42 % and the
+fly would have been recognised. This is partly an artefact of a small test
+panel — in the real census the invertebrates will corroborate each other —
+but the worst case is now known: **a lone, moderately-diverged family member
+with no close relative in the dataset can be missed.** *(pending: S6)*

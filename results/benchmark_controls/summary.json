@@ -1,0 +1,46 @@
+{
+ "generated_at": "2026-08-18 15:14",
+ "elapsed_s": 92.8,
+ "promotion_threshold": 40,
+ "size_band_aa": [
+  2000,
+  3600
+ ],
+ "family_pfam_ids": [
+  "PF08709",
+  "PF02815",
+  "PF01365",
+  "PF08454"
+ ],
+ "reference_accession": "Q14643",
+ "n_positives": 25,
+ "n_decoys": 31,
+ "n_msa_rows": 56,
+ "alignment_width": 9494,
+ "mafft_argv": [
+  "mafft",
+  "--auto",
+  "--quiet",
+  "/dev/stdin"
+ ],
+ "mafft_returncode": 0,
+ "mafft_n_calls": 1,
+ "signature_blocks": 8,
+ "runs": [
+  "baseline",
+  "holdout_ITPR1",
+  "holdout_ITPR2",
+  "holdout_ITPR3"
+ ],
+ "recall_n": 25,
+ "recall_hit": 24,
+ "specificity_n": 31,
+ "specificity_hit": 31,
+ "ryr_n": 6,
+ "ryr_pass": 6,
+ "bait_margin_n": 31,
+ "bait_margin_correct": 31,
+ "bait_margin_correct_covered": 31,
+ "sister_margin_setting": 0.1,
+ "n_recall_failures": 1
+}

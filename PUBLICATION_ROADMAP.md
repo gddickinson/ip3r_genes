@@ -112,17 +112,21 @@ Claude: follow this protocol in every session that touches this project.
 Statuses: `pending` / `in_progress` / `completed YYYY-MM-DD`.
 Full step-by-step briefs: `docs/session_briefs.md`.
 
-> **Next session: S1.** S0 is complete: the literature baseline is verified
-> (`docs/ip3r_review_2026.md`), the database snapshot is re-derived
-> (`results/s0_baseline/`), and the app is proven end to end against live
-> NCBI, Ensembl and UniProt.
+> **Next session: S2.** S0 and S1 are complete. Read
+> `results/benchmark_controls/report.md` before S2 — it changes how the
+> census must be run.
 >
-> **Read `results/s0_baseline/report.md` before S1.** Two things in it change
-> how S1 should be run: (1) the ITPR/RYR contamination rate was *measured* at
-> **49 %** in a single Pfam query, so the S1 decoy panel is not a formality;
-> (2) the length band separated ITPR from RyR perfectly in that dataset —
-> which is exactly the coincidence D14 warns against promoting into a rule,
-> so S1 must show the *scorer* separates them, not the filter.
+> **Three S1 results S2 depends on.** (1) The scorer promoted every RyR
+> decoy at 45 before S1 added the sister-family test; the test is now the
+> thing standing between the census and 49 % RyR contamination, so **every
+> S2 analysis set must carry the labelled RyR bait panel**
+> (`src/utils/family.py:SISTER_PANEL`) or the test has nothing to measure
+> against. (2) **Recall rests entirely on the domain component** — ITPR1/2/3
+> are 61–68 % identical, so the twilight-zone component never fires for a
+> vertebrate paralog; a census record with no attachable Pfam hit sits at 30
+> and is missed. (3) The bait margin **cannot call the non-metazoan grade**
+> (*Dictyostelium* iplA at +0.065, inside the D7 no-call band) — S2 records
+> such rows as `unassigned` and leaves the call to S3's profiles.
 >
 > **The external drive was not attached during S0** (S0 needs no bulk
 > storage). S4/S5 cannot start until it is.
@@ -147,7 +151,7 @@ Full step-by-step briefs: `docs/session_briefs.md`.
 | ID | Task (one session each) | Depends | Status | Results (headline) |
 |----|-------------------------|---------|--------|--------------------|
 | S0 | Literature baseline + scope confirmation: verify every `[lit]` claim in `docs/ip3r_background.md`, build `docs/ip3r_review_2026.md`, smoke-test the app against live APIs | — | completed 2026-08-18 | **19 `[lit]` claims audited vs 51 refs (45 primary): 12 verified, 3 qualified, 2 struck, 1 → `[open]`, 1 → `[db]`.** `docs/ip3r_review_2026.md` written. All `[db]` numbers re-derived exactly. **D14 measured: 49 % (53/109) of zebrafish PF08709 records are RyRs.** Exon/span claim false — ITPR3 spans 76 kb, not "hundreds of kb"; span varies 6.5× across paralogs, length 3 %. Ensembl `/xrefs/symbol/homo_sapiens/` stalls (species-specific, `BRCA2` too); client switched to `/lookup/symbol/` → human ITPR1 **0 → 24 variants**. Smoke 3/3 on human (UniProt 34 / NCBI 44 / Ensembl 41) and on zebrafish; the 8-species panel is 2/3 on Ensembl latency alone. → `results/s0_baseline/report.md` |
-| S1 | Toolchain install + positive/negative control benchmark (RyR is the sharp decoy) | S0 | pending | |
+| S1 | Toolchain install + positive/negative control benchmark (RyR is the sharp decoy) | S0 | completed 2026-08-18 | **Recall 24/25 (96 %); specificity 31/31 (100 %) — but only after S1 had to implement D14.** All 12 binaries resolve with recorded versions (`results/toolchain_manifest.txt`); MAFFT proven invoked (rc=0, 56 seqs → 9,494 cols). **On the first run all six RyR decoys were promoted at 45** — they carry all four diagnostic Pfams, so `pfam+20` also satisfies the D3 gate; specificity was 25/31 and every failure was a RyR. Added the **labelled-bait sister-family test** to `discovery/candidates.py` (D14/D7, margin 0.10, positive test on distances, name never consulted, length band not the call) → all six now capped at 39 with the margin recorded. The margin is 31/31 correct under both identity metrics (true-ITPR +0.065…+0.874 vs RyR −0.868…−0.536). **Caveat: the deepest true member, *Dictyostelium* iplA, has a margin of +0.065 — inside the D7 no-call band**, so profile-based assignment is mandatory for the deep branches. One recall miss: fly `Itpr` at 35, its nearest sibling 0.342 vs the 0.35 breadth threshold (0.420 under `covered_only`). → `results/benchmark_controls/report.md` |
 | S2 | Uncapped InterPro enumeration of the family Pfams → census v2, with a positive ITPR/RYR call on every record | S1 | pending | |
 | S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) over vertebrate reference proteomes + jackhmmer-to-convergence completeness argument → census v3 | S1, S2 | pending | |
 | S4 | Genome scope: declared assembly manifest (the denominator) + download tooling | S1 | pending | |
@@ -198,6 +202,10 @@ than expanding the task in progress.
 | 2026-08-18 | S0 | **Genomic span varies 6.5× across the three human paralogs (ITPR3 76 kb → ITPR2 498 kb) while protein length varies 3 %.** Found while correcting a false `[lit]` claim. Intron-content asymmetry between paralogs of identical architecture is a result, not a footnote — and D16 says the comparison must be paired within genome | open (S21) |
 | 2026-08-18 | S0 | **Zebrafish `LOC101884734` (4,900 aa, 7 records) is an unnamed RyR-sized locus** returned by an ITPR-diagnostic Pfam query. First concrete instance of the unnamed-locus problem; keep it as a worked example for the correction list | open (S18) |
 | 2026-08-18 | S0 | **ITPR3's clinical phenotype is broader than neuropathy** — the recurrent de novo p.Arg2524Cys causes a multisystemic disease with immunodeficiency. S17 must treat the ITPR3 variant set as multisystem, and Gillespie syndrome has **both** recessive and dominant-negative mechanisms, not only the latter | open (S17) |
+| 2026-08-18 | S1 | **The discovery scorer's distance components run on full-alignment identity, which dilutes every comparison between proteins of unequal length.** Measured both ways on the S1 panel: RyR-vs-ITPR identity is 0.105–0.110 full-alignment (below the 0.20 novelty floor, so the twilight-zone component never fires) but 0.249–0.258 fragment-aware — *inside* the 0.20–0.40 zone, worth a further +20. The same dilution caused S1's only recall miss (fly `Itpr`: nearest sibling 0.342 vs the 0.35 breadth threshold, 0.420 fragment-aware). Switching `analyse()`/discovery to `identity_matrix(covered_only=True)` would fix the miss **and** raise every RyR to 65 — safe only because the sister test now caps them. A scorer re-weighting, so it is logged here rather than done silently | open (S6) |
+| 2026-08-18 | S1 | **The bait margin cannot call the non-metazoan grade.** *Dictyostelium* `iplA`, a true family member, sits at +0.065 — inside the D7 10 % no-call band — while every metazoan positive is ≥ +0.256. The labelled-bait route is a vertebrate/invertebrate instrument; the deep branches need best-profile assignment (`itpr.hmm` vs `ryr.hmm`) before any presence/absence claim rests on them | open (S3 → S20) |
+| 2026-08-18 | S1 | **The MSA-signature fallback, the fold component and the split-annotation component are all still untested.** Every S1 panel member had a real InterPro record, so the domain component always took the Pfam route; no Foldseek run and no split gene models were in a UniProt-only panel. Three of the eight scorer criteria therefore carry no validation, and the fallback is exactly what a Compara/BLAST-sourced candidate depends on | open (S2/S5) |
+| 2026-08-18 | S1 | **`src/discovery/candidates.py` is 483 lines** — under the 500-line rule with 17 to spare. The next component added to the scorer must split the file (candidate scoring vs report rendering is the natural seam) | open |
 | 2026-08-18 | setup | AlphaFold DB returned models for 8/8 human ITPR queries in the smoke test — better coverage than the PIEZO family had. Worth checking early whether AFDB covers full-length ITPRs or only fragments, since it changes S11's scope | open (S11) |
 
 ---
@@ -270,6 +278,28 @@ Never assume a Pfam hit, a BLAST hit or a gene model is an ITPR. Assign by
 best profile (`itpr.hmm` vs `ryr.hmm`) or by a labelled-bait margin, record
 the margin, and treat the length band (2,000–3,600 aa) as a filter that
 supports the call rather than as the call itself.
+
+**D14a — D14 is implemented as a labelled-bait margin in the scorer**
+(S1, 2026-08-18). `DiscoveryConfig.sister_paralogs` / `sister_margin` (0.10,
+D7's number) / `exclude_sister_family`: a candidate whose identity to the
+nearest labelled sister bait exceeds its identity to the nearest known
+paralog by more than the margin is assigned to the sister family and capped
+at 39, with the margin written into its evidence. It is a positive test on
+distances — the candidate's own gene symbol is never consulted, so unnamed
+RyR-sized loci are called the same way — and the length band contributes
+only the size component, never the call. It needs at least one *labelled*
+sister bait in the analysis set to measure against; a search that omits the
+RyR panel silently loses the test. Measured: without it, 6/6 RyR decoys
+promoted at 45.
+
+**D18 — The project runs in the reused `piezo1` conda env**
+(`/opt/anaconda3/envs/piezo1`, python 3.11.15), not a cloned `ip3r` env.
+BLAST+ 2.16.0+, the NCBI `datasets` CLI and Foldseek live there rather than
+on the bare PATH; MAFFT, HMMER, miniprot, trimAl and IQ-TREE 2 come from
+Homebrew and work in any shell. Reused rather than cloned to avoid
+duplicating several GB of an identical toolchain — the env holds tools, not
+project data, so nothing about a result depends on its name. Exact versions:
+`results/toolchain_manifest.txt`, regenerated by `scripts/s1_toolchain.py`.
 
 **D15 — The species tree is an input, not a result.** Reconciliation uses a
 hand-curated, literature-calibrated topology with a source on every

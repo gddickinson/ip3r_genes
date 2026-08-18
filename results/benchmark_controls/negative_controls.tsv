@@ -1,0 +1,32 @@
+category	accession	gene_symbol	species	length_aa	in_band	n_family_pfam	id_to_nearest_known_pct	sister_margin	score_baseline	score_max	worst_run	pass	components
+RyR (sister family)	P21817	RYR1	Homo sapiens	5038	False	4	11	-85%	39	39	baseline	True	pfam+20,cluster+10,breadth+15,SISTER→39
+RyR (sister family)	Q92736	RYR2	Homo sapiens	4967	False	4	11	-87%	39	39	baseline	True	pfam+20,cluster+10,breadth+15,SISTER→39
+RyR (sister family)	Q15413	RYR3	Homo sapiens	4870	False	4	11	-66%	39	39	baseline	True	pfam+20,cluster+10,breadth+15,SISTER→39
+RyR (sister family)	E9PZQ0	Ryr1	Mus musculus	5035	False	4	11	-85%	39	39	baseline	True	pfam+20,cluster+10,breadth+15,SISTER→39
+RyR (sister family)	E9Q401	Ryr2	Mus musculus	4966	False	4	11	-87%	39	39	baseline	True	pfam+20,cluster+10,breadth+15,SISTER→39
+RyR (sister family)	A0A8M3ALN1	ryr3	Danio rerio	4863	False	4	11	-66%	39	39	baseline	True	pfam+20,cluster+10,breadth+15,SISTER→39
+in-band non-channel	Q9Y490	TLN1	Homo sapiens	2541	True	0	6	+1%	39	39	baseline	True	size+15,cluster+10,breadth+15,GATED→39
+in-band non-channel	P26039	Tln1	Mus musculus	2541	True	0	6	+1%	39	39	baseline	True	size+15,cluster+10,breadth+15,GATED→39
+MIR-domain sharer	Q9Y6A1	POMT1	Homo sapiens	747	False	1	3	+2%	30	30	baseline	True	pfam+20,cluster+10
+MIR-domain sharer	Q9UKY4	POMT2	Homo sapiens	750	False	1	4	+2%	30	30	baseline	True	pfam+20,cluster+10
+in-band channel	O00555	CACNA1A	Homo sapiens	2506	True	0	5	+2%	25	25	baseline	True	size+15,cluster+10
+in-band channel	Q13936	CACNA1C	Homo sapiens	2221	True	0	5	+2%	25	25	baseline	True	size+15,cluster+10
+in-band channel	Q15878	CACNA1E	Homo sapiens	2313	True	0	5	+1%	25	25	baseline	True	size+15,cluster+10
+in-band channel	P35498	SCN1A	Homo sapiens	2009	True	0	5	+2%	25	25	baseline	True	size+15,cluster+10
+in-band channel	Q14524	SCN5A	Homo sapiens	2016	True	0	5	+2%	25	25	baseline	True	size+15,cluster+10
+in-band channel	Q9BX84	TRPM6	Homo sapiens	2022	True	0	7	+2%	25	25	baseline	True	size+15,cluster+10
+in-band channel	Q8TDX9	PKD1L1	Homo sapiens	2849	True	0	6	+1%	25	25	baseline	True	size+15,cluster+10
+in-band channel	Q7Z442	PKD1L2	Homo sapiens	2459	True	0	5	+1%	25	25	baseline	True	size+15,cluster+10
+in-band non-channel	P21333	FLNA	Homo sapiens	2647	True	0	8	+2%	25	25	baseline	True	size+15,cluster+10
+in-band non-channel	Q01082	SPTBN1	Homo sapiens	2364	True	0	6	+2%	25	25	baseline	True	size+15,cluster+10
+in-band non-channel	Q13402	MYO7A	Homo sapiens	2215	True	0	8	+3%	25	25	baseline	True	size+15,cluster+10
+in-band non-channel	Q5S007	LRRK2	Homo sapiens	2527	True	0	10	+4%	25	25	baseline	True	size+15,cluster+10
+in-band non-channel	Q13315	ATM	Homo sapiens	3056	True	0	9	+3%	25	25	baseline	True	size+15,cluster+10
+in-band non-channel	Q9BZ29	DOCK9	Homo sapiens	2069	True	0	7	+2%	25	25	baseline	True	size+15,cluster+10
+in-band non-channel	P46939	UTRN	Homo sapiens	3433	True	0	6	+1%	25	25	baseline	True	size+15,cluster+10
+in-band non-channel	Q96RL7	VPS13A	Homo sapiens	3174	True	0	11	+5%	25	25	baseline	True	size+15,cluster+10
+in-band non-channel	Q8NFP9	NBEA	Homo sapiens	2946	True	0	6	+1%	25	25	baseline	True	size+15,cluster+10
+in-band channel	Q15858	SCN9A	Homo sapiens	1988	False	0	5	+2%	10	10	baseline	True	cluster+10
+in-band channel	Q96QT4	TRPM7	Homo sapiens	1865	False	0	7	+3%	10	10	baseline	True	cluster+10
+giant (out of band)	P98161	PKD1	Homo sapiens	4303	False	0	6	+1%	10	10	baseline	True	cluster+10
+giant (out of band)	Q14204	DYNC1H1	Homo sapiens	4646	False	0	6	+0%	10	10	baseline	True	cluster+10

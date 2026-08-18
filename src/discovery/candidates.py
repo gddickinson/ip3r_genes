@@ -74,7 +74,7 @@ from ..analysis.distance import DistanceTable
 from ..analysis.motifs import FamilySignatureSet, derive_family_signatures
 from ..core.models import ProteinVariant
 from ..utils.family import (FAMILY_PFAM_IDS, MAX_LENGTH_AA,
-                             MIN_LENGTH_AA)
+                             MIN_LENGTH_AA, SISTER_PARALOGS)
 
 
 @dataclass
@@ -93,6 +93,18 @@ class DiscoveryConfig:
     signature_min_coverage: float = 0.5  # MSA-signature fallback threshold
     require_evidence_gate: bool = True   # promotion needs ≥1 family-specific
                                          # component (outlier/domain/fold/split)
+    # --- sister-family separation (roadmap D14/D7) ---
+    # The sister family carries every family-diagnostic Pfam, so the domain
+    # component promotes it by construction. Assignment is therefore a
+    # positive test: a candidate closer to a labelled sister-family member
+    # than to any known family paralog, by more than `sister_margin`, is
+    # assigned to the sister family and cannot be promoted. The margin is
+    # recorded on every scored candidate. Calibrated in S1 — see
+    # results/benchmark_controls/report.md.
+    sister_paralogs: list[str] = field(
+        default_factory=lambda: list(SISTER_PARALOGS))
+    sister_margin: float = 0.10          # D7: two baits within ~10 % is no call
+    exclude_sister_family: bool = True
 
 
 @dataclass
@@ -227,6 +239,8 @@ def discover_novel_paralogs(
     # and the set of labels belonging to known paralogs.
     label_species: dict[str, str] = {}
     known_labels: set[str] = set()
+    sister_labels: set[str] = set()
+    sister = {g.upper() for g in (config.sister_paralogs or [])}
     if analysis_label_for:
         for v2 in variants:
             albl = analysis_label_for.get(_label(v2))
@@ -234,6 +248,8 @@ def discover_novel_paralogs(
                 label_species[albl] = v2.species
                 if _is_known(v2.gene_symbol, known):
                     known_labels.add(albl)
+                elif sister and _is_known(v2.gene_symbol, sister):
+                    sister_labels.add(albl)
 
     for v in variants:
         # Skip variants that already represent known paralogs.
@@ -353,6 +369,32 @@ def discover_novel_paralogs(
         else:
             c.evidence["outlier"] = "distance matrix unavailable"
 
+        # --- Sister-family assignment (D14/D7) ---
+        # A positive test, run on every candidate regardless of the name it
+        # wears: identity to the nearest labelled sister-family bait versus
+        # identity to the nearest known family paralog. The sister family
+        # carries every family-diagnostic Pfam, so without this the domain
+        # component promotes it by construction (measured in S1: the RyR
+        # decoys scored 45 and passed). The length band is deliberately not
+        # part of the call — it only appears in the size component.
+        sister_call = False
+        if sister_labels and mapped and distances and mapped in distances.labels:
+            nearest_sister, id_sister = _nearest_identity(
+                mapped, distances, restrict=sister_labels)
+            _, id_known_for_margin = _nearest_identity(
+                mapped, distances, restrict=known_labels or None)
+            margin = id_known_for_margin - id_sister
+            c.evidence["sister_margin"] = (
+                f"identity to nearest known {id_known_for_margin:.0%} vs "
+                f"nearest {config.sister_paralogs[0][:3]}-family bait "
+                f"({nearest_sister}) {id_sister:.0%} — margin {margin:+.0%}")
+            if config.exclude_sister_family and margin < -config.sister_margin:
+                sister_call = True
+                c.evidence["sister_call"] = (
+                    f"assigned to the sister family: closer to "
+                    f"{nearest_sister} by {-margin:.0%} "
+                    f"(> {config.sister_margin:.0%} margin) — not a candidate")
+
         # --- Component 5: taxonomic breadth ---
         # Same-symbol occurrences plus cross-species sibling candidates at
         # >= breadth_identity_min (unnamed ortholog sets have a different
@@ -380,6 +422,11 @@ def discover_novel_paralogs(
                 "(verify the locus against NCBI's gene span)")
 
         c.score = min(c.score, 100)
+
+        # --- Sister-family cap: a sister-family member is never promoted ---
+        if sister_call and c.score >= 40:
+            c.evidence["sister_cap"] = f"capped {c.score} → 39: sister-family call"
+            c.score = 39
 
         # --- Promotion gate: generic components alone can't promote ---
         if config.require_evidence_gate and c.score >= 40 and not gate_evidence:

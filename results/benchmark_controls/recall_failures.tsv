@@ -1,0 +1,2 @@
+accession	gene_symbol	species	score	components_fired	breadth_identity_min	nearest_sibling_full	id_full	breadth_would_fire_full	nearest_sibling_covered	id_covered	breadth_would_fire_covered
+P29993	Itpr	Drosophila melanogaster	35	size+15,pfam+20	0.35	Uni_itr-1_Caenorha_Q9Y0A1	0.342	False	Uni_itr-1_Caenorha_Q9Y0A1	0.420	True

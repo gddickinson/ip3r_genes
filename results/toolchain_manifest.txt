@@ -1,0 +1,49 @@
+S1 toolchain manifest — IP3R publication project
+generated: 2026-08-18 15:14:17 MST
+host:      macOS-26.6.1-arm64-arm-64bit / arm64
+python:    3.12.3  (/opt/anaconda3/bin/python3)
+conda env: piezo1  (/opt/anaconda3/envs/piezo1)
+
+External binaries
+-----------------
+ok mafft        v7.526                             [PATH] needed by S1/S6
+   /opt/homebrew/bin/mafft
+ok hmmbuild     3.4                                [PATH] needed by S3
+   /opt/homebrew/bin/hmmbuild
+ok hmmsearch    3.4                                [PATH] needed by S3
+   /opt/homebrew/bin/hmmsearch
+ok jackhmmer    3.4                                [PATH] needed by S3
+   /opt/homebrew/bin/jackhmmer
+ok blastp       2.16.0+                            [env] needed by S1/S5
+   /opt/anaconda3/envs/piezo1/bin/blastp
+ok tblastn      2.16.0+                            [env] needed by S5
+   /opt/anaconda3/envs/piezo1/bin/tblastn
+ok makeblastdb  2.16.0+                            [env] needed by S5
+   /opt/anaconda3/envs/piezo1/bin/makeblastdb
+ok miniprot     0.18-r281                          [PATH] needed by S5/S10
+   /opt/homebrew/bin/miniprot
+ok trimal       v1.5.rev1                          [PATH] needed by S6
+   /opt/homebrew/bin/trimal
+ok iqtree2      2.3.6                              [PATH] needed by S7
+   /opt/homebrew/bin/iqtree2
+ok datasets     18.35.0                            [env] needed by S4
+   /opt/anaconda3/envs/piezo1/bin/datasets
+ok foldseek     10.941cd33                         [env] needed by S11 (opt)
+   /opt/anaconda3/envs/piezo1/bin/foldseek
+
+Python packages
+---------------
+   Bio          MISSING
+   requests     2.32.3
+   matplotlib   3.10.1
+   numpy        1.26.4
+   scipy        1.15.2
+   pandas       2.2.3
+
+Notes
+-----
+* Tools marked [env] are not on the bare PATH; they resolve inside
+  the `piezo1` conda env. Run project scripts with
+  /opt/anaconda3/envs/piezo1/bin/python so both the packages and these binaries are
+  available (see Decisions D18).
+* Tools marked [PATH] come from Homebrew and work in any shell.

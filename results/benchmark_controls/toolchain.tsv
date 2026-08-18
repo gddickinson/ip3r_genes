@@ -1,0 +1,13 @@
+tool	version	status	location	needed_by	path
+mafft	v7.526	ok	PATH	S1/S6	/opt/homebrew/bin/mafft
+hmmbuild	3.4	ok	PATH	S3	/opt/homebrew/bin/hmmbuild
+hmmsearch	3.4	ok	PATH	S3	/opt/homebrew/bin/hmmsearch
+jackhmmer	3.4	ok	PATH	S3	/opt/homebrew/bin/jackhmmer
+blastp	2.16.0+	ok	env	S1/S5	/opt/anaconda3/envs/piezo1/bin/blastp
+tblastn	2.16.0+	ok	env	S5	/opt/anaconda3/envs/piezo1/bin/tblastn
+makeblastdb	2.16.0+	ok	env	S5	/opt/anaconda3/envs/piezo1/bin/makeblastdb
+miniprot	0.18-r281	ok	PATH	S5/S10	/opt/homebrew/bin/miniprot
+trimal	v1.5.rev1	ok	PATH	S6	/opt/homebrew/bin/trimal
+iqtree2	2.3.6	ok	PATH	S7	/opt/homebrew/bin/iqtree2
+datasets	18.35.0	ok	env	S4	/opt/anaconda3/envs/piezo1/bin/datasets
+foldseek	10.941cd33	ok	env	S11 (opt)	/opt/anaconda3/envs/piezo1/bin/foldseek

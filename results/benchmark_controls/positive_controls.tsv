@@ -1,0 +1,26 @@
+group	run	accession	gene_symbol	species	length_aa	in_band	n_family_pfam	id_to_nearest_known_pct	sister_margin	score	pass	components
+ITPR1	holdout_ITPR1	Q14643	ITPR1	Homo sapiens	2758	True	4	68	+57%	50	True	size+15,pfam+20,breadth+15
+ITPR1	holdout_ITPR1	P11881	Itpr1	Mus musculus	2749	True	4	68	+57%	50	True	size+15,pfam+20,breadth+15
+ITPR1	holdout_ITPR1	P29994	Itpr1	Rattus norvegicus	2750	True	4	68	+57%	50	True	size+15,pfam+20,breadth+15
+ITPR1	holdout_ITPR1	A0A8V0ZJT0	ITPR1	Gallus gallus	2779	True	4	68	+57%	50	True	size+15,pfam+20,breadth+15
+ITPR1	holdout_ITPR1	A0A8J0T3U5	itpr1	Xenopus tropicalis	2743	True	4	67	+56%	50	True	size+15,pfam+20,breadth+15
+ITPR1	holdout_ITPR1	A0A8M2BDG0	itpr1a	Danio rerio	2711	True	4	65	+55%	50	True	size+15,pfam+20,breadth+15
+ITPR1	holdout_ITPR1	A0AB32TXG4	itpr1b	Danio rerio	2819	True	4	65	+55%	50	True	size+15,pfam+20,breadth+15
+ITPR1	holdout_ITPR1	Q9TU34	ITPR1	Bos taurus	2709	True	4	68	+58%	50	True	size+15,pfam+20,breadth+15
+ITPR2	holdout_ITPR2	Q14571	ITPR2	Homo sapiens	2701	True	4	68	+57%	50	True	size+15,pfam+20,breadth+15
+ITPR2	holdout_ITPR2	Q9Z329	Itpr2	Mus musculus	2701	True	4	68	+57%	50	True	size+15,pfam+20,breadth+15
+ITPR2	holdout_ITPR2	P29995	Itpr2	Rattus norvegicus	2701	True	4	68	+57%	50	True	size+15,pfam+20,breadth+15
+ITPR2	holdout_ITPR2	F1P1X4	ITPR2	Gallus gallus	2700	True	4	68	+58%	50	True	size+15,pfam+20,breadth+15
+ITPR2	holdout_ITPR2	A0A6I8RGU0	itpr2	Xenopus tropicalis	2705	True	4	68	+57%	50	True	size+15,pfam+20,breadth+15
+ITPR2	holdout_ITPR2	A0A8M9PQQ3	itpr2	Danio rerio	2665	True	4	63	+53%	50	True	size+15,pfam+20,breadth+15
+ITPR2	holdout_ITPR2	Q8WN96	ITPR2	Bos taurus	2701	True	4	68	+57%	50	True	size+15,pfam+20,breadth+15
+ITPR3	holdout_ITPR3	Q14573	ITPR3	Homo sapiens	2671	True	4	64	+53%	50	True	size+15,pfam+20,breadth+15
+ITPR3	holdout_ITPR3	P70227	Itpr3	Mus musculus	2670	True	4	64	+53%	50	True	size+15,pfam+20,breadth+15
+ITPR3	holdout_ITPR3	Q63269	Itpr3	Rattus norvegicus	2670	True	4	64	+53%	50	True	size+15,pfam+20,breadth+15
+ITPR3	holdout_ITPR3	A0A8V1ACE6	ITPR3	Gallus gallus	2664	True	4	64	+53%	50	True	size+15,pfam+20,breadth+15
+ITPR3	holdout_ITPR3	A4ZYX8	itpr3	Xenopus tropicalis	2673	True	4	63	+52%	50	True	size+15,pfam+20,breadth+15
+ITPR3	holdout_ITPR3	A0A8M6Z266	itpr3	Danio rerio	2635	True	4	61	+51%	50	True	size+15,pfam+20,breadth+15
+ITPR3	holdout_ITPR3	Q8WN95	ITPR3	Bos taurus	2664	True	4	64	+53%	50	True	size+15,pfam+20,breadth+15
+invert_grade	baseline	P29993	Itpr	Drosophila melanogaster	2837	True	4	56	+45%	35	False	size+15,pfam+20
+invert_grade	baseline	Q9Y0A1	itr-1	Caenorhabditis elegans	2892	True	4	36	+26%	65	True	size+15,pfam+20,outlier+20,cluster+10
+invert_grade	baseline	Q9NA13	iplA	Dictyostelium discoideum	3177	True	2	15	+7%	45	True	size+15,pfam+20,cluster+10
