@@ -829,7 +829,10 @@ spanning the sections above, each run twice — ranked by citation count and by
 recency — to avoid a purely canonical or purely recent bias. Candidates were
 curated by hand; bibliographic metadata for every retained reference was then
 fetched programmatically from Europe PMC by PMID, so no author list, title,
-journal or year in the bibliography was transcribed manually. The reference
+journal or year in the bibliography was transcribed manually. The final set is
+**137 references — 117 primary research articles and 20 reviews** — spanning
+1983 to 2025, with publication type taken from the Europe PMC record rather
+than assigned by hand. The reference
 table is committed as `results/s0_baseline/references.tsv`, and this document
 is assembled from its section files by `scripts/s0_review_build.py`, which
 renumbers the stable citation keys into order of first appearance and renders
