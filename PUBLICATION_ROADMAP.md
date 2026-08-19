@@ -223,7 +223,10 @@ unplugged drive stops the session rather than filling the internal disk.
 
 **D2 — The repository stays private until S14b**, which flips it public
 alongside the Zenodo DOI. Nothing in the repo may assume a public URL before
-then.
+then. The remote was created after S1 (2026-08-19):
+`git@github.com:gddickinson/ip3r_genes.git`, **visibility PRIVATE** —
+sessions now end with `git push` as well as `git commit`, and the S14b step
+that flips it public is `gh repo edit --visibility public`.
 
 **D3 — The discovery scorer needs an evidence gate.** A score of ≥ 40 needs
 at least one family-specific component (domain / outlier / fold / split
