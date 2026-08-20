@@ -176,3 +176,64 @@ fly would have been recognised. This is partly an artefact of a small test
 panel — in the real census the invertebrates will corroborate each other —
 but the worst case is now known: **a lone, moderately-diverged family member
 with no close relative in the dataset can be missed.** *(pending: S6)*
+
+---
+
+## 2026-08-19 — What illustrating the review taught us
+
+Drawing the figures meant measuring things the review had only described, and
+three of those measurements changed what it says.
+
+**The gene that defines the family does not find all of the family.** The
+IP₃-binding core (PF08709) is the domain this whole project uses to recognise
+an IP₃ receptor. *Dictyostelium* iplA — a slime-mould IP₃ receptor that has
+been studied for decades, and which sits in our own list of known-good test
+cases — does not carry it. Nor does it carry the MIR domain or the pore
+domain: three of the family's five signatures are simply absent from its
+database record. A census built on that signature would not return it at all.
+
+We already knew the signature returns too much: in zebrafish, half of what it
+returns are ryanodine receptors. Now we know it also returns too little. The
+family's official badge is unreliable in both directions, so the census
+cannot be one domain query — it needs profile models built to recognise the
+deep branches, and until it has them, any claim that a lineage *lacks* an
+IP₃ receptor is a claim about a database. *(pending: S2, S3)*
+
+**The pore was found without being looked for.** We took the deposited
+coordinates of a human IP₃ receptor and asked a purely geometric question:
+going along the channel's axis, how close does any atom come to it? Two
+narrow points appeared. The calculation had no access to the protein's
+sequence — and yet the narrow points fall exactly on the two features the
+literature names: the GGGVGD selectivity filter, and a gate made by a
+phenylalanine and an isoleucine one helical turn apart. That the geometry and
+the biochemistry agree, having been derived independently, is a good sign for
+every structural measurement built on top of this.
+
+The filter turns out to be **wide** — about 5 Å to the nearest atom, against
+2.5 Å at the gate. That fits what the channel is for: it dumps calcium down a
+steep gradient, so it needs throughput, not discrimination. This is not a
+precision filter and the structure says so.
+
+**The famous "100 Å" is only part of the distance.** The receptor's defining
+puzzle is that IP₃ binds far from the gate it opens, and the number quoted is
+about 100 Å. Measured on the ligand-bound structure, the binding site is
+103 Å *above* the gate — but also 62 Å *sideways* from the channel's axis, so
+the actual through-space separation is **120 Å**. The signal does not travel
+straight down; it travels diagonally, through the armadillo solenoid and into
+a neighbouring subunit. The larger number is the one the protein has to solve.
+
+**The disease evidence is thinner than it reads.** Laying the clinical
+variants onto the three genes forced us to record how precisely each is
+actually located. Of nine catalogued entries, **two** name a specific amino
+acid; the rest are placed only within a domain, or not placed at all. Both
+precise ones are in ITPR3 — and one of them, the variant causing the severe
+multisystem disease, sits **seven residues past the gate we measured**, on
+the stretch of protein that mechanically couples ligand to pore. That is a
+testable structural explanation for why the variant is so damaging, rather
+than a coincidence. *(pending: S17)*
+
+We also corrected a claim we were about to make: SCA29 is dominant and
+missense, but its *direction* of effect is not established — one variant is a
+gain of function — so it is now marked unresolved rather than lumped in with
+the dominant-negative mechanisms.
+

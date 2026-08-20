@@ -21,7 +21,7 @@ Two things live in this repository:
 
 **Status: S1 complete — the search is now a tested instrument.** The
 literature baseline is verified with a citation on every claim
-([`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md)), the database
+([`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md), 32 pages, 12 figures), the database
 snapshot is re-derived ([`results/s0_baseline/`](results/s0_baseline/)), and
 the discovery scorer has been benchmarked against 25 known IP3 receptors and
 31 impostors: **recall 96 %, specificity 100 %**
@@ -204,9 +204,19 @@ architecture and cryo-EM, gating and the all-four-sites requirement,
 regulation, cell physiology, the three paralogues, evolution, genetic models,
 human disease, pharmacology, and the eight questions the field cannot currently
 answer. Read it as [markdown](docs/ip3r_review_2026.md) or as the typeset
-[24-page PDF](docs/ip3r_review_2026.pdf). It is **generated** from
+[32-page PDF](docs/ip3r_review_2026.pdf). It is **generated** from
 [`docs/review/`](docs/review/) by `scripts/s0_review_build.py` — edit the
 section files, never the assembled document.
+
+**Its twelve figures are generated too** (`scripts/s0_review_figures.py`),
+each from a committed table and none from a live query, and each tagged on
+the canvas as *measured*, *computed*, *schematic* or *curated* — the same
+provenance discipline the prose uses. Measuring the deposited structure for
+them produced three things the text had not had: the pore's filter and gate
+recovered from geometry alone and landing on the residues the literature
+names, the receptor's famous "100 Å" resolved into 103 Å along the axis and
+120 Å through space, and a characterised *Dictyostelium* IP3 receptor that
+carries **none** of the three signatures a census would look for.
 
 ---
 

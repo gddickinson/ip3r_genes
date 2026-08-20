@@ -1,0 +1,18 @@
+mechanism	name	effect	section	refs
+intrinsic ligands	IP$_3$	activates	3.1	R05,R57
+intrinsic ligands	Ca$^{2+}$ (co-agonist)	biphasic	3.2	R13,R14,R61
+intrinsic ligands	ATP	activates	3.4	R16,R70
+phosphorylation	PKA	context	4.1	R17
+phosphorylation	PKC / CaMKII	context	4.1	R71
+phosphorylation	PKG	context	4.1	R72
+protein partners	Bcl-2 (BH4)	inhibits	4.2	R18,R73
+protein partners	Mcl-1	inhibits	4.2	R76
+protein partners	Bcl-X$_L$	context	4.2	R75
+protein partners	BIRD-2 peptide	activates	4.2	R74,R132
+protein partners	IRBIT	inhibits	4.4	R19,R79
+protein partners	CaBPs	activates	4.5	R80
+protein partners	calmodulin	context	4.5	R81
+luminal / ER	ERp44 (redox, pH)	inhibits	4.3	R20
+turnover	ubiquitination	inhibits	4.6	R82
+turnover	RNF170 (ERAD)	inhibits	4.6	R83
+disease proteins	presenilins (FAD)	activates	4.7	R84

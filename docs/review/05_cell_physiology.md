@@ -12,6 +12,11 @@ particularly clearly, with agonist-evoked release beginning in a restricted
 apical pole before spreading [R86], and waves propagate between coupled cells
 via IP<sub>3</sub> diffusion through gap junctions [R85].
 
+![](figures/signal_hierarchy.png)
+
+**{fig:signal_hierarchy}.** The signal is built, not switched on. (**a**) The three event classes, each on its own scale — a single channel's blip, a cluster's puff, and the cell-wide wave that recruitment produces [R07, R08]; the amplitudes differ about tenfold, so they are drawn in separate bands rather than on one axis. (**b**) The same three events placed by extent and duration: four orders of magnitude separate the smallest from the largest. (**c**) Raising agonist raises the *frequency* of spikes more than their size [R89, R90], which is what makes frequency the carried variable (§5.2). Illustrative traces, not recordings.
+
+
 ### 5.2 Oscillations: frequency as the encoded variable
 
 That repetitive Ca<sup>2+</sup> spikes are not an epiphenomenon was established

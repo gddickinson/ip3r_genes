@@ -323,3 +323,73 @@ logged for S6 rather than done silently.
 census v2, with a positive ITPR/RYR call on every record. Carry the RyR bait
 panel into every analysis set or the sister test has nothing to measure
 against.
+
+---
+
+## 2026-08-19 — Review figures (user request, outside the ledger)
+
+**Task.** Illustrate `docs/ip3r_review_2026.md` with structural diagrams,
+sequence alignments and supporting figures. Not a ledger row; recorded here
+and against S0, whose output the review is.
+
+**Twelve figures, and the rule they follow (D19).** Nothing is drawn by hand
+and nothing is drawn from a live query. Four data scripts fetch once and
+commit small tables — `s0_figdata_domains.py` (InterPro domain coordinates),
+`s0_figdata_structure.py` (PDB 6DQN), `s0_figdata_align.py` (two MAFFT
+alignments of the committed control panels), `s0_figdata_curated.py` (the
+three literature tables) — and five figure modules plus a driver render from
+those tables and nothing else. Each figure carries a corner tag: *measured*,
+*computed*, *schematic* or *curated*.
+
+**The structure was measured rather than described.** PDB 6DQN (human
+IP₃R3, IP₃-bound, 3.33 Å — the review's [R24]) was reduced to one
+C4-symmetric subunit's Cα trace (0.06 Å RMSD between subunits, so the other
+three are drawn by rotation), a pore-radius profile and a measurements file.
+The 14 MB mmCIF went to a work directory outside the repo; the script refuses
+a `--work-dir` inside it.
+
+Three results came out of that which the text did not have:
+
+1. **The pore's two constrictions were recovered blind.** Nothing in the
+   calculation knows the sequence. The narrowest luminal point lands on
+   Asn2472/Gly2473 — the residue before the **GGGVGD** selectivity-filter
+   motif and its first glycine — and the cytosolic constriction on
+   **Phe2513 and Ile2517**, one helical turn apart, the arrangement reported
+   for the IP₃R1 gate. The motif check is now an assertion in the script: it
+   exits non-zero if the luminal minimum is not on the motif.
+2. **"Roughly 100 Å from the gate" is the axial component.** Measured:
+   103 Å along the pore axis, 62 Å out from it, **120 Å through space**. §2.4
+   now says both.
+3. ***Dictyostelium* iplA carries none of PF08709, PF02815 or PF00520.** A
+   characterised IP₃ receptor, in this project's own positive panel, that the
+   family's *defining* signature does not find. Added to §7.5 and Q4 and
+   logged as Emergent for S2/S3.
+
+**Build.** `s0_review_build.py` now numbers figures in order of first
+appearance and resolves `{fig:<slug>}` → `Figure N`, so no source file
+carries a figure number — the same treatment the citations already get. A
+`{fig:}` reference with no figure exits 3; a placed figure whose png/pdf is
+missing exits 4. Both guards were tested by breaking them. For LaTeX the png
+is swapped for the vector pdf inside a `center` block, so figures stay where
+the text puts them. Figures are drawn at `W_REVIEW` (6.38 in, the review's
+own text block) rather than `figstyle.W_FULL` (6.7 in, the manuscript's),
+because a 5 % placement scale is the exact failure figstyle exists to prevent.
+
+**One correction to the review's content.** SCA29 was going to be drawn as
+dominant-negative alongside the Gillespie and *ITPR3* variants. §9.1's
+sources do not establish that — they establish dominant and missense, and
+that one variant is a *gain* of function. It is drawn as **unresolved**, and
+the disease figure distinguishes three resolutions of evidence (`point` /
+`domain` / `gene`), which makes visible that only two of nine entries have a
+residue behind them.
+
+**Files.** `scripts/s0_figdata_{domains,structure,align,curated}.py`,
+`s0_fig_lib.py`, `s0_figs_{structure,sequence,genomics,concepts,clinical}.py`,
+`s0_review_figures.py`; `results/s0_baseline/review_figures/` (11 tables);
+`docs/figures/` (12 png + 12 pdf); 10 of the 13 review sections edited.
+Review: 24 → 32 pages.
+
+**Next session: S2**, unchanged — but S2 now inherits a harder requirement
+from the *Dictyostelium* result: the InterPro enumeration cannot be the whole
+census, because the defining signature demonstrably misses a real member.
+

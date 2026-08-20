@@ -33,7 +33,10 @@ claim is only as good as the assembly and annotation behind it.
 across gene models, unnamed, or filed under the wrong paralogue — or as a
 ryanodine receptor? The last risk is not hypothetical: the domain that
 *defines* this family returns ryanodine receptors at close to a 1:1 ratio in a
-routine query (§7.1), and at least one of them is an unnamed locus.
+routine query (§7.1), and at least one of them is an unnamed locus. The
+converse failure is just as real — *Dictyostelium* iplA is a characterised
+receptor that the defining signature does not find at all (§7.5) — so a
+census cannot be a single domain query in either direction.
 
 **Q5 — Constraint and mechanism.** Do the pathogenic variants of §9 sit in the
 most constrained parts of the channel, and is the constrained core the same in

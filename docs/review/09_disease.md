@@ -6,6 +6,11 @@ and recessive mechanisms all represented. This makes it a test case for the
 proposition that pathogenic variants concentrate in the constrained parts of a
 protein — a proposition that can be checked against the structures of §2.
 
+![](figures/disease_map.png)
+
+**{fig:disease_map}.** The clinical panel placed on the three paralogues, coloured by mechanism. The figure is drawn at the resolution the sources give, and the three resolutions are distinguished deliberately: a marker where the source names a residue, an outlined box where it localises the variant to a domain and no further, and a bar under the gene where it does neither. Read this way the panel is thinner than it looks — only two of the nine entries have a residue behind them. Both are in *ITPR3*, and the recurrent multisystem variant p.Arg2524Cys sits seven residues past the gate measured in {fig:channel_structure}, on the load-bearing stretch of §2.4. SCA29 is marked unresolved rather than dominant-negative: §9.1's sources establish that it is dominant and missense, and that at least one variant is a *gain* of function [R120], which is not the same mechanism as the Gillespie and *ITPR3* variants.
+
+
 ### 9.1 *ITPR1*: cerebellar ataxia and Gillespie syndrome
 
 **SCA15/16.** Heterozygous *deletions* of *ITPR1* cause spinocerebellar ataxia

@@ -18,7 +18,12 @@ PF01365), the RIH-associated domain (PF08454) and the Ion_trans pore domain
 fourth — the pore — is shared with most of the cation-channel world. This is
 not a technicality of database annotation but a statement about descent
 (§7.1), and it is why domain content alone cannot assign a sequence to one
-family or the other.
+family or the other ({fig:domain_architecture}).
+
+![](figures/domain_architecture.png)
+
+**{fig:domain_architecture}.** Every signature that defines an IP<sub>3</sub> receptor is also carried by a ryanodine receptor. (**a**) The six human proteins drawn to one scale from InterPro coordinates. (**b**) Copies per subunit; a blank cell means the signature is absent. The four shared signatures and the generic pore are identical in content between the families — including copy number, down to the two RIH domains. What separates them is what RyR carries *in addition*: four further domains and some 2,200 extra residues. A search built on the domains in the blue and amber columns cannot distinguish the two families, which is the practical form of §7.1's argument about descent.
+
 
 ### 2.2 The cryo-EM structures
 
@@ -46,7 +51,10 @@ pre-2018 state of the field is available [R63].
 ### 2.3 The pore and permeation
 
 The pore is formed between TM5 and TM6, with a short selectivity filter and a
-gate at the cytosolic end of the TM6 bundle [R22, R24, R59]. The channel is not
+gate at the cytosolic end of the TM6 bundle [R22, R24, R59]. Both
+constrictions are recovered directly from the ligand-bound type-3 structure
+({fig:channel_structure}c): the luminal one sits on the GGGVGD filter motif,
+the cytosolic one on Phe2513 and Ile2517. The channel is not
 a precision Ca<sup>2+</sup> filter in the sense that voltage-gated
 Ca<sup>2+</sup> channels are: single-channel recordings from cerebellar
 preparations established a large conductance with modest discrimination among
@@ -57,7 +65,9 @@ high concentration, so throughput matters more than selectivity.
 ### 2.4 Long-range allosteric coupling
 
 The defining structural problem of this receptor is distance. IP<sub>3</sub>
-binds at the N-terminal core, roughly 100 Å from the gate. The cryo-EM series
+binds at the N-terminal core, roughly 100 Å from the gate — measured on that
+structure, 103 Å along the pore axis, and 120 Å through space, because the
+site also sits 62 Å out from the axis ({fig:channel_structure}a). The cryo-EM series
 resolves the coupling path: ligand binding closes the clam-shell of the
 binding core, that motion is transmitted through the armadillo solenoid, and
 the C-terminal tail — which runs from beyond TM6 back up into the cytosolic
@@ -73,3 +83,8 @@ behaviour of heterozygous variants in a tetramer (§9). And because the
 C-terminal tail is a load-bearing mechanical element rather than a tail in the
 dispensable sense, variants there are not peripheral — they sit on the path
 that makes the channel a channel.
+
+![](figures/channel_structure.png)
+
+**{fig:channel_structure}.** The channel measured from its own coordinates — PDB 6DQN, the human type-3 receptor with IP<sub>3</sub> bound at 3.33 Å [R24]. (**a**) Cα trace of the tetramer, coloured by Pfam domain, with the four bound ligands in red; the mushroom is 178 Å tall and the pore domain occupies the shaded band. The distance IP<sub>3</sub> acts across resolves into two numbers rather than one: the site sits **103 Å above the gate along the pore axis** — the quantity §2.4 quotes as "roughly 100 Å" — but also 62 Å out from it, so the through-space separation is **120 Å**. (**b**) The same particle down the four-fold axis; the deposit is C4-symmetric to 0.06 Å RMSD, so one subunit is committed and the other three are drawn by rotation. (**c**) Minimum distance from any heavy atom to the axis, along it. Two constrictions appear, and neither was given to the calculation: the luminal one falls on the GGGVGD selectivity-filter motif, and the cytosolic one on Phe2513 and Ile2517 — one helical turn apart, the arrangement reported for the IP<sub>3</sub>R1 gate. The filter is wide (5.1 Å to the nearest atom), which is what a high-conductance, weakly selective channel should look like (§2.3).
+

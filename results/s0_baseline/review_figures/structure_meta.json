@@ -1,0 +1,95 @@
+{
+  "pdb_id": "6DQN",
+  "description": "human type-3 IP3 receptor, IP3-bound (class 1)",
+  "resolution_A": 3.33,
+  "review_reference": "R24",
+  "uniprot": "Q14573",
+  "chains": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "residues_per_chain": 2186,
+  "committed_subunit": "A",
+  "four_fold_axis_in_deposit": [
+    0.0001,
+    0.0001,
+    1.0
+  ],
+  "centroid_planarity_residual_A": 0.01,
+  "c4_residual_rmsd_A": 0.058,
+  "tm_span_z_A": [
+    -105.8,
+    -53.4
+  ],
+  "tm_pfam": "PF00520",
+  "tm_residues": [
+    2240,
+    2527
+  ],
+  "filter_z_A": -89.8,
+  "filter_min_radius_A": 5.06,
+  "gate_z_A": -69.8,
+  "gate_min_radius_A": 2.52,
+  "filter_motif": "GGGVGD",
+  "filter_motif_start": 2473,
+  "filter_motif_check_passed": true,
+  "filter_lining_residues": [
+    "ASN2472",
+    "GLY2473"
+  ],
+  "gate_lining_residues": [
+    "PHE2513",
+    "ILE2517"
+  ],
+  "ip3_contact_cutoff_A": 4.5,
+  "ip3_contacts": {
+    "same_subunit": [
+      "ARG266",
+      "THR268",
+      "LEU269",
+      "ARG270",
+      "ARG503",
+      "LYS507",
+      "ARG510",
+      "TYR567",
+      "ARG568",
+      "LYS569"
+    ],
+    "other_subunit": []
+  },
+  "ip3_sites": {
+    "A": [
+      -51.3,
+      34.0,
+      33.6
+    ],
+    "B": [
+      -34.0,
+      -51.3,
+      33.7
+    ],
+    "C": [
+      51.3,
+      -34.0,
+      33.7
+    ],
+    "D": [
+      33.9,
+      51.4,
+      33.7
+    ]
+  },
+  "ip3_to_gate_A": {
+    "A": 120.3,
+    "B": 120.4,
+    "C": 120.4,
+    "D": 120.3
+  },
+  "ip3_to_gate_mean_A": 120.4,
+  "ip3_axial_rise_above_gate_A": 103.4,
+  "ip3_radial_offset_from_axis_A": 61.6,
+  "overall_height_A": 178.0,
+  "overall_max_diameter_A": 253.0
+}

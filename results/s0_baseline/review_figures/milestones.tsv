@@ -1,0 +1,21 @@
+ref_id	year	lane	label
+R01	1983	found	IP$_3$ releases Ca$^{2+}$ from an intracellular store
+R21	1990	found	P400 is the IP$_3$-binding protein
+R02	1989	found	primary structure — it is the receptor
+R04	1989	found	“similar to ryanodine receptor”
+R03	1989	found	purified receptor conducts Ca$^{2+}$
+R13	1991	works	bell-shaped Ca$^{2+}$ dependence
+R29	1991	found	subtypes differ by tissue and stage
+R32	1992	found	three receptors, not one
+R08	1995	works	release is built from quantal puffs
+R05	2002	works	structure of the IP$_3$-binding core
+R114	1996	disease	$Itpr1$ null mice are ataxic
+R38	2007	disease	$ITPR1$ deletion causes SCA15
+R45	2014	disease	$ITPR2$ loss abolishes sweating
+R22	2015	works	cryo-EM: the tetramer at 4.7 Å
+R15	2016	works	all four sites must be occupied
+R24	2018	works	paralogue structures with Ca$^{2+}$ and IP$_3$
+R46	2020	disease	$ITPR3$ variants cause CMT1J
+R59	2022	works	activation and gating across a ligand series
+R48	2024	disease	$ITPR3$ variant causes multisystem disease
+R47	2025	disease	recurrent CMT1J variant in nine families

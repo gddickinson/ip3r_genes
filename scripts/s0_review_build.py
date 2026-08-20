@@ -23,6 +23,7 @@ missing from the manifest, or if the PDF stage was asked for and failed.
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import shutil
 import subprocess
@@ -42,6 +43,21 @@ SUBTITLE = ("Architecture, gating, evolution and disease — a verified baseline
             "for a genome-scale census of ITPR1/2/3")
 
 CITE_RE = re.compile(r"\[((?:R\d{2,3})(?:\s*,\s*R\d{2,3})*)\]")
+
+#: Figures are placed as a bare image followed by a caption paragraph, and are
+#: numbered here in order of first appearance — the same treatment the
+#: citations get, and for the same reason: nothing in the source files carries
+#: a number that a later edit could invalidate.
+#:
+#:     ![](figures/domain_architecture.png)
+#:
+#:     **{fig:domain_architecture}.** Caption text, which may cite [R22].
+#:
+#: `{fig:slug}` resolves to "Figure N" wherever it appears, so a caption opens
+#: with it in bold and prose refers to it inline.
+FIG_IMG_RE = re.compile(r"!\[\]\(figures/([A-Za-z0-9_]+)\.png\)")
+FIG_REF_RE = re.compile(r"\{fig:([A-Za-z0-9_]+)\}")
+FIG_DIR = ROOT / "docs" / "figures"
 
 
 def read_refs() -> dict[str, dict]:
@@ -90,6 +106,29 @@ def assemble(refs: dict[str, dict]) -> tuple[str, list[str], list[str]]:
 
     body = CITE_RE.sub(repl, body)
 
+    fig_order = []
+    for m in FIG_IMG_RE.finditer(body):
+        if m.group(1) not in fig_order:
+            fig_order.append(m.group(1))
+    fig_num = {slug: i for i, slug in enumerate(fig_order, 1)}
+    bad_ref, missing_file = [], []
+    for slug in fig_order:
+        if not (FIG_DIR / f"{slug}.png").exists():
+            missing_file.append(f"{slug}.png")
+        if not (FIG_DIR / f"{slug}.pdf").exists():
+            missing_file.append(f"{slug}.pdf")
+
+    def fig_repl(m: re.Match) -> str:
+        slug = m.group(1)
+        if slug not in fig_num:
+            bad_ref.append(slug)
+            return f"Figure ?{slug}?"
+        return f"Figure {fig_num[slug]}"
+
+    body = FIG_REF_RE.sub(fig_repl, body)
+    figs = {"order": fig_order, "bad_ref": bad_ref,
+            "missing_file": missing_file}
+
     biblio = ["", "## References", ""]
     for i, key in enumerate(order, 1):
         r = refs[key]
@@ -111,7 +150,7 @@ def assemble(refs: dict[str, dict]) -> tuple[str, list[str], list[str]]:
     biblio.append("")
 
     uncited = [k for k in refs if k not in order]
-    return body + "\n" + "\n".join(biblio), missing, uncited
+    return body + "\n" + "\n".join(biblio), missing, uncited, figs
 
 
 def yaml_header() -> str:
@@ -150,6 +189,7 @@ def yaml_header() -> str:
         "    \\titleformat{\\subsubsection}{\\normalfont\\normalsize\\bfseries\\sffamily}{\\thesubsubsection}{0.7em}{}",
         "    \\setlength{\\parskip}{0.35em}",
         "    \\usepackage{longtable,booktabs,array}",
+        "    \\usepackage{graphicx}",
         "    \\setlength{\\emergencystretch}{3em}",
         "---",
         "",
@@ -172,6 +212,17 @@ def for_latex(markdown: str) -> str:
     The leading H1 is also removed: the YAML block already supplies the title,
     and leaving both prints it twice and puts it in its own table of contents.
     """
+    # The PNG is what GitHub renders; the typeset document gets the vector
+    # PDF of the same figure. Wrapping it in `center` rather than letting
+    # pandoc build a float keeps every figure where the text puts it, which
+    # is what the manual numbering assumes.
+    markdown = FIG_IMG_RE.sub(
+        lambda m: ("\\begin{center}\n"
+                   f"\\includegraphics[width=\\linewidth,"
+                   f"height=0.80\\textheight,keepaspectratio]"
+                   f"{{docs/figures/{m.group(1)}.pdf}}\n"
+                   "\\end{center}"),
+        markdown)
     markdown = SUB_RE.sub(r"~\1~", markdown)
     markdown = SUP_RE.sub(r"^\1^", markdown)
     lines = markdown.splitlines()
@@ -194,8 +245,10 @@ def build_pdf(markdown: str) -> int:
     BUILD_MD.write_text(yaml_header() + for_latex(markdown),
                         encoding="utf-8")
     cmd = ["pandoc", str(BUILD_MD), "-o", str(PDF_OUT),
-           f"--pdf-engine={engine}", "--from",
-           "markdown+smart+pipe_tables+footnotes+tex_math_dollars"]
+           f"--pdf-engine={engine}", "--resource-path", f".{os.pathsep}docs",
+           "--from",
+           "markdown+smart+pipe_tables+footnotes+tex_math_dollars"
+           "+raw_tex-implicit_figures"]
     print(f"  {' '.join(cmd)}")
     proc = subprocess.run(cmd, capture_output=True, text=True, cwd=str(ROOT))
     if proc.returncode != 0:
@@ -219,7 +272,7 @@ def main() -> int:
     refs = read_refs()
     files = section_files()
     print(f"sections: {len(files)}  references available: {len(refs)}")
-    markdown, missing, uncited = assemble(refs)
+    markdown, missing, uncited, figs = assemble(refs)
 
     n_cited = len(set(CITE_RE.findall(
         "\n".join(f.read_text(encoding='utf-8') for f in files))))
@@ -229,10 +282,20 @@ def main() -> int:
             cited_keys.update(k.strip() for k in m.group(1).split(","))
     print(f"distinct references cited: {len(cited_keys)}")
 
+    print(f"figures placed: {len(figs['order'])}")
     if missing:
         print(f"ERROR: cited but not in references.tsv: {missing}",
               file=sys.stderr)
         return 2
+    if figs["bad_ref"]:
+        print(f"ERROR: {{fig:...}} references with no image in the text: "
+              f"{sorted(set(figs['bad_ref']))}", file=sys.stderr)
+        return 3
+    if figs["missing_file"]:
+        print(f"ERROR: figure files missing from docs/figures — run "
+              f"scripts/s0_review_figures.py: {figs['missing_file']}",
+              file=sys.stderr)
+        return 4
     if uncited:
         print(f"NOTE: in references.tsv but never cited ({len(uncited)}): "
               f"{', '.join(sorted(uncited))}")

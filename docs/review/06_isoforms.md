@@ -21,6 +21,11 @@ lineage-specific intron gain, differential loss, or selection related to the
 paralogues' distinct expression programmes is not established, and it is a
 question the genomic literature has largely not asked.
 
+![](figures/gene_architecture.png)
+
+**{fig:gene_architecture}.** Three genes that make near-identical proteins out of very different amounts of DNA. (**a**) Genomic span; the exon count and protein length that stay constant are printed with each gene. (**b**) The asymmetry as one number: *ITPR2* spends 184 bp of locus per residue of protein and *ITPR3* spends 29. Re-derived from Ensembl release 15.12 for this review — the claim this replaced, that all three span "hundreds of kb", is one of the four that failed audit (§12.2).
+
+
 ### 6.2 Functional differences between paralogues
 
 The paralogues are not interchangeable. Single-channel analysis showed
@@ -33,6 +38,11 @@ remains the finding that Ca<sup>2+</sup> signal *encoding* — the shape and
 frequency of the response — is set by which subtypes a cell expresses [R101],
 which recasts subtype composition as a tuning parameter rather than redundancy.
 They also differ in the ER–mitochondrial contacts they support [R12].
+
+![](figures/conservation_profile.png)
+
+**{fig:conservation_profile}.** Constraint across the family, and how far apart its members actually are. (**a**) Per-column conservation from an alignment of the 25 control positives — IP<sub>3</sub>R1/2/3 across a vertebrate panel plus the invertebrate and non-metazoan single-*itpr* grade — mapped onto human IP<sub>3</sub>R1 numbering, over that protein's domain architecture. The ligand-contact and pore positions measured in {fig:channel_structure} are marked; both sit on conservation maxima. The gap trace shows where the alignment is carrying indels, and the deepest troughs are the linkers between domains rather than the domains themselves. (**b**, **c**) All-pairs identity over mutually covered columns. The three human paralogues are 66–72% identical to each other and about 25% identical to a ryanodine receptor — and the fly receptor is closer to human IP<sub>3</sub>R1 (62%) than any IP<sub>3</sub>R is to any RyR. Paralogue identity is high enough that the differences of §6.2 are differences of tuning, not of kind.
+
 
 ### 6.3 Heterotetramers
 

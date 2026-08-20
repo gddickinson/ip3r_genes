@@ -1,0 +1,561 @@
+window	kind	accession	label	group	itpr3_pos	itpr1_pos	column	residue	is_marked
+IP$_3$ contact 1	ligand	Q14643	ITPR1 H. sapiens	ITPR1	262	261	371	H	0
+IP$_3$ contact 1	ligand	Q14643	ITPR1 H. sapiens	ITPR1	263	262	376	V	0
+IP$_3$ contact 1	ligand	Q14643	ITPR1 H. sapiens	ITPR1	264	263	377	F	0
+IP$_3$ contact 1	ligand	Q14643	ITPR1 H. sapiens	ITPR1	265	264	378	L	0
+IP$_3$ contact 1	ligand	Q14643	ITPR1 H. sapiens	ITPR1	266	265	379	R	1
+IP$_3$ contact 1	ligand	Q14643	ITPR1 H. sapiens	ITPR1	267	266	380	T	0
+IP$_3$ contact 1	ligand	Q14643	ITPR1 H. sapiens	ITPR1	268	267	381	T	1
+IP$_3$ contact 1	ligand	Q14643	ITPR1 H. sapiens	ITPR1	269	268	382	G	1
+IP$_3$ contact 1	ligand	Q14643	ITPR1 H. sapiens	ITPR1	270	269	383	R	1
+IP$_3$ contact 1	ligand	Q14643	ITPR1 H. sapiens	ITPR1	271	270	384	Q	0
+IP$_3$ contact 1	ligand	Q14643	ITPR1 H. sapiens	ITPR1	272	271	385	S	0
+IP$_3$ contact 1	ligand	Q14643	ITPR1 H. sapiens	ITPR1	273	272	386	A	0
+IP$_3$ contact 1	ligand	Q14643	ITPR1 H. sapiens	ITPR1	274	273	387	T	0
+IP$_3$ contact 1	ligand	Q14571	ITPR2 H. sapiens	ITPR2	262	261	371	H	0
+IP$_3$ contact 1	ligand	Q14571	ITPR2 H. sapiens	ITPR2	263	262	376	I	0
+IP$_3$ contact 1	ligand	Q14571	ITPR2 H. sapiens	ITPR2	264	263	377	F	0
+IP$_3$ contact 1	ligand	Q14571	ITPR2 H. sapiens	ITPR2	265	264	378	L	0
+IP$_3$ contact 1	ligand	Q14571	ITPR2 H. sapiens	ITPR2	266	265	379	R	1
+IP$_3$ contact 1	ligand	Q14571	ITPR2 H. sapiens	ITPR2	267	266	380	T	0
+IP$_3$ contact 1	ligand	Q14571	ITPR2 H. sapiens	ITPR2	268	267	381	T	1
+IP$_3$ contact 1	ligand	Q14571	ITPR2 H. sapiens	ITPR2	269	268	382	L	1
+IP$_3$ contact 1	ligand	Q14571	ITPR2 H. sapiens	ITPR2	270	269	383	R	1
+IP$_3$ contact 1	ligand	Q14571	ITPR2 H. sapiens	ITPR2	271	270	384	Q	0
+IP$_3$ contact 1	ligand	Q14571	ITPR2 H. sapiens	ITPR2	272	271	385	S	0
+IP$_3$ contact 1	ligand	Q14571	ITPR2 H. sapiens	ITPR2	273	272	386	A	0
+IP$_3$ contact 1	ligand	Q14571	ITPR2 H. sapiens	ITPR2	274	273	387	T	0
+IP$_3$ contact 1	ligand	Q14573	ITPR3 H. sapiens	ITPR3	262	261	371	Q	0
+IP$_3$ contact 1	ligand	Q14573	ITPR3 H. sapiens	ITPR3	263	262	376	V	0
+IP$_3$ contact 1	ligand	Q14573	ITPR3 H. sapiens	ITPR3	264	263	377	F	0
+IP$_3$ contact 1	ligand	Q14573	ITPR3 H. sapiens	ITPR3	265	264	378	L	0
+IP$_3$ contact 1	ligand	Q14573	ITPR3 H. sapiens	ITPR3	266	265	379	R	1
+IP$_3$ contact 1	ligand	Q14573	ITPR3 H. sapiens	ITPR3	267	266	380	T	0
+IP$_3$ contact 1	ligand	Q14573	ITPR3 H. sapiens	ITPR3	268	267	381	T	1
+IP$_3$ contact 1	ligand	Q14573	ITPR3 H. sapiens	ITPR3	269	268	382	L	1
+IP$_3$ contact 1	ligand	Q14573	ITPR3 H. sapiens	ITPR3	270	269	383	R	1
+IP$_3$ contact 1	ligand	Q14573	ITPR3 H. sapiens	ITPR3	271	270	384	Q	0
+IP$_3$ contact 1	ligand	Q14573	ITPR3 H. sapiens	ITPR3	272	271	385	S	0
+IP$_3$ contact 1	ligand	Q14573	ITPR3 H. sapiens	ITPR3	273	272	386	A	0
+IP$_3$ contact 1	ligand	Q14573	ITPR3 H. sapiens	ITPR3	274	273	387	T	0
+IP$_3$ contact 1	ligand	P29993	Itpr D. melanogaster	invert_grade	262	261	371	H	0
+IP$_3$ contact 1	ligand	P29993	Itpr D. melanogaster	invert_grade	263	262	376	V	0
+IP$_3$ contact 1	ligand	P29993	Itpr D. melanogaster	invert_grade	264	263	377	F	0
+IP$_3$ contact 1	ligand	P29993	Itpr D. melanogaster	invert_grade	265	264	378	L	0
+IP$_3$ contact 1	ligand	P29993	Itpr D. melanogaster	invert_grade	266	265	379	R	1
+IP$_3$ contact 1	ligand	P29993	Itpr D. melanogaster	invert_grade	267	266	380	T	0
+IP$_3$ contact 1	ligand	P29993	Itpr D. melanogaster	invert_grade	268	267	381	T	1
+IP$_3$ contact 1	ligand	P29993	Itpr D. melanogaster	invert_grade	269	268	382	G	1
+IP$_3$ contact 1	ligand	P29993	Itpr D. melanogaster	invert_grade	270	269	383	R	1
+IP$_3$ contact 1	ligand	P29993	Itpr D. melanogaster	invert_grade	271	270	384	T	0
+IP$_3$ contact 1	ligand	P29993	Itpr D. melanogaster	invert_grade	272	271	385	S	0
+IP$_3$ contact 1	ligand	P29993	Itpr D. melanogaster	invert_grade	273	272	386	A	0
+IP$_3$ contact 1	ligand	P29993	Itpr D. melanogaster	invert_grade	274	273	387	T	0
+IP$_3$ contact 1	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	262	261	371	P	0
+IP$_3$ contact 1	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	263	262	376	V	0
+IP$_3$ contact 1	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	264	263	377	F	0
+IP$_3$ contact 1	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	265	264	378	L	0
+IP$_3$ contact 1	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	266	265	379	R	1
+IP$_3$ contact 1	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	267	266	380	M	0
+IP$_3$ contact 1	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	268	267	381	T	1
+IP$_3$ contact 1	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	269	268	382	N	1
+IP$_3$ contact 1	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	270	269	383	R	1
+IP$_3$ contact 1	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	271	270	384	P	0
+IP$_3$ contact 1	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	272	271	385	S	0
+IP$_3$ contact 1	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	273	272	386	A	0
+IP$_3$ contact 1	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	274	273	387	A	0
+IP$_3$ contact 1	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	262	261	371	D	0
+IP$_3$ contact 1	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	263	262	376	-	0
+IP$_3$ contact 1	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	264	263	377	-	0
+IP$_3$ contact 1	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	265	264	378	-	0
+IP$_3$ contact 1	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	266	265	379	R	1
+IP$_3$ contact 1	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	267	266	380	L	0
+IP$_3$ contact 1	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	268	267	381	V	1
+IP$_3$ contact 1	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	269	268	382	Y	1
+IP$_3$ contact 1	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	270	269	383	Y	1
+IP$_3$ contact 1	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	271	270	384	E	0
+IP$_3$ contact 1	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	272	271	385	G	0
+IP$_3$ contact 1	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	273	272	386	G	0
+IP$_3$ contact 1	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	274	273	387	A	0
+IP$_3$ contact 1	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	262	261	371	E	0
+IP$_3$ contact 1	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	263	262	376	-	0
+IP$_3$ contact 1	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	264	263	377	-	0
+IP$_3$ contact 1	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	265	264	378	-	0
+IP$_3$ contact 1	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	266	265	379	R	1
+IP$_3$ contact 1	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	267	266	380	T	0
+IP$_3$ contact 1	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	268	267	381	V	1
+IP$_3$ contact 1	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	269	268	382	H	1
+IP$_3$ contact 1	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	270	269	383	Y	1
+IP$_3$ contact 1	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	271	270	384	E	0
+IP$_3$ contact 1	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	272	271	385	G	0
+IP$_3$ contact 1	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	273	272	386	G	0
+IP$_3$ contact 1	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	274	273	387	A	0
+IP$_3$ contact 1	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	262	261	371	S	0
+IP$_3$ contact 1	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	263	262	376	-	0
+IP$_3$ contact 1	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	264	263	377	-	0
+IP$_3$ contact 1	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	265	264	378	-	0
+IP$_3$ contact 1	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	266	265	379	R	1
+IP$_3$ contact 1	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	267	266	380	R	0
+IP$_3$ contact 1	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	268	267	381	I	1
+IP$_3$ contact 1	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	269	268	382	F	1
+IP$_3$ contact 1	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	270	269	383	Y	1
+IP$_3$ contact 1	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	271	270	384	E	0
+IP$_3$ contact 1	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	272	271	385	A	0
+IP$_3$ contact 1	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	273	272	386	G	0
+IP$_3$ contact 1	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	274	273	387	G	0
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	499	500	680	S	0
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	500	501	681	K	0
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	501	502	682	P	0
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	502	503	683	N	0
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	503	504	684	R	1
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	504	505	685	E	0
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	505	506	686	R	0
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	506	507	687	Q	0
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	507	508	688	K	1
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	508	509	689	L	0
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	509	510	690	M	0
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	510	511	691	R	1
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	511	512	692	E	0
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	512	513	693	Q	0
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	513	514	694	N	0
+IP$_3$ contact 2	ligand	Q14643	ITPR1 H. sapiens	ITPR1	514	515	695	I	0
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	499	500	680	T	0
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	500	501	681	K	0
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	501	502	682	P	0
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	502	503	683	N	0
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	503	504	684	R	1
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	504	505	685	E	0
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	505	506	686	R	0
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	506	507	687	Q	0
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	507	508	688	K	1
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	508	509	689	L	0
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	509	510	690	M	0
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	510	511	691	R	1
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	511	512	692	E	0
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	512	513	693	Q	0
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	513	514	694	N	0
+IP$_3$ contact 2	ligand	Q14571	ITPR2 H. sapiens	ITPR2	514	515	695	I	0
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	499	500	680	T	0
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	500	501	681	K	0
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	501	502	682	P	0
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	502	503	683	N	0
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	503	504	684	R	1
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	504	505	685	E	0
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	505	506	686	R	0
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	506	507	687	Q	0
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	507	508	688	K	1
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	508	509	689	L	0
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	509	510	690	M	0
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	510	511	691	R	1
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	511	512	692	E	0
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	512	513	693	Q	0
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	513	514	694	N	0
+IP$_3$ contact 2	ligand	Q14573	ITPR3 H. sapiens	ITPR3	514	515	695	I	0
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	499	500	680	K	0
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	500	501	681	N	0
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	501	502	682	P	0
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	502	503	683	I	0
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	503	504	684	R	1
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	504	505	685	D	0
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	505	506	686	R	0
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	506	507	687	Q	0
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	507	508	688	K	1
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	508	509	689	L	0
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	509	510	690	L	0
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	510	511	691	R	1
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	511	512	692	E	0
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	512	513	693	Q	0
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	513	514	694	Y	0
+IP$_3$ contact 2	ligand	P29993	Itpr D. melanogaster	invert_grade	514	515	695	I	0
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	499	500	680	F	0
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	500	501	681	S	0
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	501	502	682	P	0
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	502	503	683	S	0
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	503	504	684	R	1
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	504	505	685	D	0
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	505	506	686	R	0
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	506	507	687	Q	0
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	507	508	688	K	1
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	508	509	689	L	0
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	509	510	690	L	0
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	510	511	691	R	1
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	511	512	692	E	0
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	512	513	693	Q	0
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	513	514	694	E	0
+IP$_3$ contact 2	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	514	515	695	V	0
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	499	500	680	-	0
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	500	501	681	R	0
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	501	502	682	S	0
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	502	503	683	L	0
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	503	504	684	R	1
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	504	505	685	N	0
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	505	506	686	R	0
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	506	507	687	Q	0
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	507	508	688	S	1
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	508	509	689	L	0
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	509	510	690	F	0
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	510	511	691	Q	1
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	511	512	692	E	0
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	512	513	693	E	0
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	513	514	694	G	0
+IP$_3$ contact 2	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	514	515	695	M	0
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	499	500	680	-	0
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	500	501	681	R	0
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	501	502	682	A	0
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	502	503	683	L	0
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	503	504	684	K	1
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	504	505	685	N	0
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	505	506	686	R	0
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	506	507	687	Q	0
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	507	508	688	N	1
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	508	509	689	L	0
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	509	510	690	F	0
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	510	511	691	Q	1
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	511	512	692	E	0
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	512	513	693	E	0
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	513	514	694	G	0
+IP$_3$ contact 2	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	514	515	695	M	0
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	499	500	680	-	0
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	500	501	681	R	0
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	501	502	682	S	0
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	502	503	683	L	0
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	503	504	684	K	1
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	504	505	685	N	0
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	505	506	686	R	0
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	506	507	687	Q	0
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	507	508	688	N	1
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	508	509	689	L	0
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	509	510	690	F	0
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	510	511	691	K	1
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	511	512	692	E	0
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	512	513	693	E	0
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	513	514	694	G	0
+IP$_3$ contact 2	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	514	515	695	M	0
+IP$_3$ contact 3	ligand	Q14643	ITPR1 H. sapiens	ITPR1	563	563	763	S	0
+IP$_3$ contact 3	ligand	Q14643	ITPR1 H. sapiens	ITPR1	564	564	764	Q	0
+IP$_3$ contact 3	ligand	Q14643	ITPR1 H. sapiens	ITPR1	565	565	765	Q	0
+IP$_3$ contact 3	ligand	Q14643	ITPR1 H. sapiens	ITPR1	566	566	766	D	0
+IP$_3$ contact 3	ligand	Q14643	ITPR1 H. sapiens	ITPR1	567	567	767	Y	1
+IP$_3$ contact 3	ligand	Q14643	ITPR1 H. sapiens	ITPR1	568	568	768	R	1
+IP$_3$ contact 3	ligand	Q14643	ITPR1 H. sapiens	ITPR1	569	569	769	K	1
+IP$_3$ contact 3	ligand	Q14643	ITPR1 H. sapiens	ITPR1	570	570	770	N	0
+IP$_3$ contact 3	ligand	Q14643	ITPR1 H. sapiens	ITPR1	571	571	771	Q	0
+IP$_3$ contact 3	ligand	Q14643	ITPR1 H. sapiens	ITPR1	572	572	772	E	0
+IP$_3$ contact 3	ligand	Q14643	ITPR1 H. sapiens	ITPR1	573	573	773	Y	0
+IP$_3$ contact 3	ligand	Q14571	ITPR2 H. sapiens	ITPR2	563	563	763	S	0
+IP$_3$ contact 3	ligand	Q14571	ITPR2 H. sapiens	ITPR2	564	564	764	Q	0
+IP$_3$ contact 3	ligand	Q14571	ITPR2 H. sapiens	ITPR2	565	565	765	Q	0
+IP$_3$ contact 3	ligand	Q14571	ITPR2 H. sapiens	ITPR2	566	566	766	D	0
+IP$_3$ contact 3	ligand	Q14571	ITPR2 H. sapiens	ITPR2	567	567	767	Y	1
+IP$_3$ contact 3	ligand	Q14571	ITPR2 H. sapiens	ITPR2	568	568	768	R	1
+IP$_3$ contact 3	ligand	Q14571	ITPR2 H. sapiens	ITPR2	569	569	769	K	1
+IP$_3$ contact 3	ligand	Q14571	ITPR2 H. sapiens	ITPR2	570	570	770	N	0
+IP$_3$ contact 3	ligand	Q14571	ITPR2 H. sapiens	ITPR2	571	571	771	Q	0
+IP$_3$ contact 3	ligand	Q14571	ITPR2 H. sapiens	ITPR2	572	572	772	E	0
+IP$_3$ contact 3	ligand	Q14571	ITPR2 H. sapiens	ITPR2	573	573	773	Y	0
+IP$_3$ contact 3	ligand	Q14573	ITPR3 H. sapiens	ITPR3	563	563	763	S	0
+IP$_3$ contact 3	ligand	Q14573	ITPR3 H. sapiens	ITPR3	564	564	764	Q	0
+IP$_3$ contact 3	ligand	Q14573	ITPR3 H. sapiens	ITPR3	565	565	765	E	0
+IP$_3$ contact 3	ligand	Q14573	ITPR3 H. sapiens	ITPR3	566	566	766	D	0
+IP$_3$ contact 3	ligand	Q14573	ITPR3 H. sapiens	ITPR3	567	567	767	Y	1
+IP$_3$ contact 3	ligand	Q14573	ITPR3 H. sapiens	ITPR3	568	568	768	R	1
+IP$_3$ contact 3	ligand	Q14573	ITPR3 H. sapiens	ITPR3	569	569	769	K	1
+IP$_3$ contact 3	ligand	Q14573	ITPR3 H. sapiens	ITPR3	570	570	770	N	0
+IP$_3$ contact 3	ligand	Q14573	ITPR3 H. sapiens	ITPR3	571	571	771	Q	0
+IP$_3$ contact 3	ligand	Q14573	ITPR3 H. sapiens	ITPR3	572	572	772	E	0
+IP$_3$ contact 3	ligand	Q14573	ITPR3 H. sapiens	ITPR3	573	573	773	H	0
+IP$_3$ contact 3	ligand	P29993	Itpr D. melanogaster	invert_grade	563	563	763	S	0
+IP$_3$ contact 3	ligand	P29993	Itpr D. melanogaster	invert_grade	564	564	764	Q	0
+IP$_3$ contact 3	ligand	P29993	Itpr D. melanogaster	invert_grade	565	565	765	Q	0
+IP$_3$ contact 3	ligand	P29993	Itpr D. melanogaster	invert_grade	566	566	766	D	0
+IP$_3$ contact 3	ligand	P29993	Itpr D. melanogaster	invert_grade	567	567	767	Y	1
+IP$_3$ contact 3	ligand	P29993	Itpr D. melanogaster	invert_grade	568	568	768	R	1
+IP$_3$ contact 3	ligand	P29993	Itpr D. melanogaster	invert_grade	569	569	769	K	1
+IP$_3$ contact 3	ligand	P29993	Itpr D. melanogaster	invert_grade	570	570	770	N	0
+IP$_3$ contact 3	ligand	P29993	Itpr D. melanogaster	invert_grade	571	571	771	Q	0
+IP$_3$ contact 3	ligand	P29993	Itpr D. melanogaster	invert_grade	572	572	772	E	0
+IP$_3$ contact 3	ligand	P29993	Itpr D. melanogaster	invert_grade	573	573	773	Y	0
+IP$_3$ contact 3	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	563	563	763	S	0
+IP$_3$ contact 3	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	564	564	764	Q	0
+IP$_3$ contact 3	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	565	565	765	V	0
+IP$_3$ contact 3	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	566	566	766	S	0
+IP$_3$ contact 3	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	567	567	767	Y	1
+IP$_3$ contact 3	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	568	568	768	R	1
+IP$_3$ contact 3	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	569	569	769	K	1
+IP$_3$ contact 3	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	570	570	770	N	0
+IP$_3$ contact 3	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	571	571	771	Q	0
+IP$_3$ contact 3	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	572	572	772	E	0
+IP$_3$ contact 3	ligand	Q9Y0A1	itr-1 C. elegans	invert_grade	573	573	773	F	0
+IP$_3$ contact 3	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	563	563	763	N	0
+IP$_3$ contact 3	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	564	564	764	C	0
+IP$_3$ contact 3	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	565	565	765	A	0
+IP$_3$ contact 3	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	566	566	766	L	0
+IP$_3$ contact 3	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	567	567	767	F	1
+IP$_3$ contact 3	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	568	568	768	S	1
+IP$_3$ contact 3	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	569	569	769	T	1
+IP$_3$ contact 3	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	570	570	770	N	0
+IP$_3$ contact 3	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	571	571	771	L	0
+IP$_3$ contact 3	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	572	572	772	D	0
+IP$_3$ contact 3	ligand	P21817	RYR1 H. sapiens	RyR (sister family)	573	573	773	W	0
+IP$_3$ contact 3	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	563	563	763	N	0
+IP$_3$ contact 3	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	564	564	764	C	0
+IP$_3$ contact 3	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	565	565	765	A	0
+IP$_3$ contact 3	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	566	566	766	Q	0
+IP$_3$ contact 3	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	567	567	767	F	1
+IP$_3$ contact 3	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	568	568	768	S	1
+IP$_3$ contact 3	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	569	569	769	G	1
+IP$_3$ contact 3	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	570	570	770	S	0
+IP$_3$ contact 3	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	571	571	771	L	0
+IP$_3$ contact 3	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	572	572	772	D	0
+IP$_3$ contact 3	ligand	Q92736	RYR2 H. sapiens	RyR (sister family)	573	573	773	W	0
+IP$_3$ contact 3	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	563	563	763	N	0
+IP$_3$ contact 3	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	564	564	764	C	0
+IP$_3$ contact 3	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	565	565	765	A	0
+IP$_3$ contact 3	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	566	566	766	Q	0
+IP$_3$ contact 3	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	567	567	767	F	1
+IP$_3$ contact 3	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	568	568	768	S	1
+IP$_3$ contact 3	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	569	569	769	N	1
+IP$_3$ contact 3	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	570	570	770	N	0
+IP$_3$ contact 3	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	571	571	771	L	0
+IP$_3$ contact 3	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	572	572	772	D	0
+IP$_3$ contact 3	ligand	Q15413	RYR3 H. sapiens	RyR (sister family)	573	573	773	W	0
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2468	2549	5563	H	0
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2469	2550	5564	G	0
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2470	2551	5565	L	0
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2471	2552	5566	R	0
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2472	2553	5567	S	0
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2473	2554	5568	G	1
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2474	2555	5569	G	1
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2475	2556	5570	G	1
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2476	2557	5571	V	1
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2477	2558	5572	G	1
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2478	2559	5573	D	1
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2479	2560	5574	V	0
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2480	2561	5575	L	0
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2481	2562	5576	R	0
+selectivity filter	pore	Q14643	ITPR1 H. sapiens	ITPR1	2482	2563	5577	K	0
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2468	2549	5563	Q	0
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2469	2550	5564	G	0
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2470	2551	5565	L	0
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2471	2552	5566	R	0
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2472	2553	5567	N	0
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2473	2554	5568	G	1
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2474	2555	5569	G	1
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2475	2556	5570	G	1
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2476	2557	5571	V	1
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2477	2558	5572	G	1
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2478	2559	5573	D	1
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2479	2560	5574	V	0
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2480	2561	5575	L	0
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2481	2562	5576	R	0
+selectivity filter	pore	Q14571	ITPR2 H. sapiens	ITPR2	2482	2563	5577	R	0
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2468	2549	5563	H	0
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2469	2550	5564	G	0
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2470	2551	5565	L	0
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2471	2552	5566	R	0
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2472	2553	5567	N	0
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2473	2554	5568	G	1
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2474	2555	5569	G	1
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2475	2556	5570	G	1
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2476	2557	5571	V	1
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2477	2558	5572	G	1
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2478	2559	5573	D	1
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2479	2560	5574	I	0
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2480	2561	5575	L	0
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2481	2562	5576	R	0
+selectivity filter	pore	Q14573	ITPR3 H. sapiens	ITPR3	2482	2563	5577	K	0
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2468	2549	5563	Q	0
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2469	2550	5564	G	0
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2470	2551	5565	L	0
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2471	2552	5566	R	0
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2472	2553	5567	N	0
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2473	2554	5568	G	1
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2474	2555	5569	G	1
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2475	2556	5570	G	1
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2476	2557	5571	I	1
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2477	2558	5572	G	1
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2478	2559	5573	D	1
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2479	2560	5574	I	0
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2480	2561	5575	L	0
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2481	2562	5576	R	0
+selectivity filter	pore	P29993	Itpr D. melanogaster	invert_grade	2482	2563	5577	A	0
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2468	2549	5563	Q	0
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2469	2550	5564	G	0
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2470	2551	5565	L	0
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2471	2552	5566	R	0
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2472	2553	5567	N	0
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2473	2554	5568	G	1
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2474	2555	5569	G	1
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2475	2556	5570	G	1
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2476	2557	5571	I	1
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2477	2558	5572	G	1
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2478	2559	5573	D	1
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2479	2560	5574	V	0
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2480	2561	5575	L	0
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2481	2562	5576	R	0
+selectivity filter	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2482	2563	5577	N	0
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2468	2549	5563	V	0
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2469	2550	5564	G	0
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2470	2551	5565	V	0
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2471	2552	5566	R	0
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2472	2553	5567	A	0
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2473	2554	5568	G	1
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2474	2555	5569	G	1
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2475	2556	5570	G	1
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2476	2557	5571	I	1
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2477	2558	5572	G	1
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2478	2559	5573	D	1
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2479	2560	5574	E	0
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2480	2561	5575	I	0
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2481	2562	5576	E	0
+selectivity filter	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2482	2563	5577	D	0
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2468	2549	5563	V	0
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2469	2550	5564	G	0
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2470	2551	5565	V	0
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2471	2552	5566	R	0
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2472	2553	5567	A	0
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2473	2554	5568	G	1
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2474	2555	5569	G	1
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2475	2556	5570	G	1
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2476	2557	5571	I	1
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2477	2558	5572	G	1
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2478	2559	5573	D	1
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2479	2560	5574	E	0
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2480	2561	5575	I	0
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2481	2562	5576	E	0
+selectivity filter	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2482	2563	5577	D	0
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2468	2549	5563	V	0
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2469	2550	5564	G	0
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2470	2551	5565	V	0
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2471	2552	5566	R	0
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2472	2553	5567	A	0
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2473	2554	5568	G	1
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2474	2555	5569	G	1
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2475	2556	5570	G	1
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2476	2557	5571	I	1
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2477	2558	5572	G	1
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2478	2559	5573	D	1
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2479	2560	5574	E	0
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2480	2561	5575	I	0
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2481	2562	5576	E	0
+selectivity filter	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2482	2563	5577	D	0
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2508	2589	5603	V	0
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2509	2590	5604	L	0
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2510	2591	5605	N	0
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2511	2592	5606	L	0
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2512	2593	5607	I	0
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2513	2594	5608	F	1
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2514	2595	5609	G	0
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2515	2596	5610	V	0
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2516	2597	5611	I	0
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2517	2598	5612	I	1
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2518	2599	5613	D	0
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2519	2600	5614	T	0
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2520	2601	5615	F	0
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2521	2602	5616	A	0
+gate	pore	Q14643	ITPR1 H. sapiens	ITPR1	2522	2603	5617	D	0
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2508	2589	5603	V	0
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2509	2590	5604	L	0
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2510	2591	5605	N	0
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2511	2592	5606	L	0
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2512	2593	5607	I	0
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2513	2594	5608	F	1
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2514	2595	5609	G	0
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2515	2596	5610	V	0
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2516	2597	5611	I	0
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2517	2598	5612	I	1
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2518	2599	5613	D	0
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2519	2600	5614	T	0
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2520	2601	5615	F	0
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2521	2602	5616	A	0
+gate	pore	Q14571	ITPR2 H. sapiens	ITPR2	2522	2603	5617	D	0
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2508	2589	5603	V	0
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2509	2590	5604	L	0
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2510	2591	5605	N	0
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2511	2592	5606	L	0
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2512	2593	5607	I	0
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2513	2594	5608	F	1
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2514	2595	5609	G	0
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2515	2596	5610	V	0
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2516	2597	5611	I	0
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2517	2598	5612	I	1
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2518	2599	5613	D	0
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2519	2600	5614	T	0
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2520	2601	5615	F	0
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2521	2602	5616	A	0
+gate	pore	Q14573	ITPR3 H. sapiens	ITPR3	2522	2603	5617	D	0
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2508	2589	5603	V	0
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2509	2590	5604	L	0
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2510	2591	5605	N	0
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2511	2592	5606	L	0
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2512	2593	5607	I	0
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2513	2594	5608	F	1
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2514	2595	5609	G	0
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2515	2596	5610	V	0
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2516	2597	5611	I	0
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2517	2598	5612	I	1
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2518	2599	5613	D	0
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2519	2600	5614	T	0
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2520	2601	5615	F	0
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2521	2602	5616	A	0
+gate	pore	P29993	Itpr D. melanogaster	invert_grade	2522	2603	5617	D	0
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2508	2589	5603	V	0
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2509	2590	5604	L	0
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2510	2591	5605	N	0
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2511	2592	5606	L	0
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2512	2593	5607	I	0
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2513	2594	5608	F	1
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2514	2595	5609	G	0
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2515	2596	5610	V	0
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2516	2597	5611	I	0
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2517	2598	5612	I	1
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2518	2599	5613	D	0
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2519	2600	5614	T	0
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2520	2601	5615	F	0
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2521	2602	5616	G	0
+gate	pore	Q9Y0A1	itr-1 C. elegans	invert_grade	2522	2603	5617	D	0
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2508	2589	5603	L	0
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2509	2590	5604	L	0
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2510	2591	5605	A	0
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2511	2592	5606	I	0
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2512	2593	5607	I	0
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2513	2594	5608	Q	1
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2514	2595	5609	G	0
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2515	2596	5610	L	0
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2516	2597	5611	I	0
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2517	2598	5612	I	1
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2518	2599	5613	D	0
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2519	2600	5614	A	0
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2520	2601	5615	F	0
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2521	2602	5616	G	0
+gate	pore	P21817	RYR1 H. sapiens	RyR (sister family)	2522	2603	5617	E	0
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2508	2589	5603	L	0
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2509	2590	5604	L	0
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2510	2591	5605	A	0
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2511	2592	5606	I	0
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2512	2593	5607	I	0
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2513	2594	5608	Q	1
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2514	2595	5609	G	0
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2515	2596	5610	L	0
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2516	2597	5611	I	0
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2517	2598	5612	I	1
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2518	2599	5613	D	0
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2519	2600	5614	A	0
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2520	2601	5615	F	0
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2521	2602	5616	G	0
+gate	pore	Q92736	RYR2 H. sapiens	RyR (sister family)	2522	2603	5617	E	0
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2508	2589	5603	L	0
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2509	2590	5604	L	0
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2510	2591	5605	A	0
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2511	2592	5606	I	0
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2512	2593	5607	I	0
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2513	2594	5608	Q	1
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2514	2595	5609	G	0
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2515	2596	5610	L	0
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2516	2597	5611	I	0
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2517	2598	5612	I	1
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2518	2599	5613	D	0
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2519	2600	5614	A	0
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2520	2601	5615	F	0
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2521	2602	5616	G	0
+gate	pore	Q15413	RYR3 H. sapiens	RyR (sister family)	2522	2603	5617	E	0

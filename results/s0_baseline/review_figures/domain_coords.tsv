@@ -1,0 +1,80 @@
+symbol	accession	family	length_aa	pfam	pfam_name	label	shared_class	start	end
+ITPR1	Q14643	ITPR	2758	PF08709	Inositol 1,4,5-trisphosphate/ryanodine receptor	IP$_3$-binding core (β-trefoil)	shared	5	229
+ITPR1	Q14643	ITPR	2758	PF02815	MIR domain	MIR	shared	233	432
+ITPR1	Q14643	ITPR	2758	PF01365	RIH domain	RIH	shared	474	670
+ITPR1	Q14643	ITPR	2758	PF01365	RIH domain	RIH	shared	1204	1352
+ITPR1	Q14643	ITPR	2758	PF08454	RyR and IP3R Homology associated	RIH-associated	shared	1971	2077
+ITPR1	Q14643	ITPR	2758	PF00520	Ion transport protein	Ion_trans pore	generic	2363	2608
+ITPR2	Q14571	ITPR	2701	PF08709	Inositol 1,4,5-trisphosphate/ryanodine receptor	IP$_3$-binding core (β-trefoil)	shared	5	227
+ITPR2	Q14571	ITPR	2701	PF02815	MIR domain	MIR	shared	232	431
+ITPR2	Q14571	ITPR	2701	PF01365	RIH domain	RIH	shared	473	670
+ITPR2	Q14571	ITPR	2701	PF01365	RIH domain	RIH	shared	1194	1344
+ITPR2	Q14571	ITPR	2701	PF08454	RyR and IP3R Homology associated	RIH-associated	shared	1915	2021
+ITPR2	Q14571	ITPR	2701	PF00520	Ion transport protein	Ion_trans pore	generic	2265	2551
+ITPR3	Q14573	ITPR	2671	PF08709	Inositol 1,4,5-trisphosphate/ryanodine receptor	IP$_3$-binding core (β-trefoil)	shared	3	229
+ITPR3	Q14573	ITPR	2671	PF02815	MIR domain	MIR	shared	234	431
+ITPR3	Q14573	ITPR	2671	PF01365	RIH domain	RIH	shared	474	670
+ITPR3	Q14573	ITPR	2671	PF01365	RIH domain	RIH	shared	1188	1327
+ITPR3	Q14573	ITPR	2671	PF08454	RyR and IP3R Homology associated	RIH-associated	shared	1867	1973
+ITPR3	Q14573	ITPR	2671	PF00520	Ion transport protein	Ion_trans pore	generic	2240	2527
+Itpr	P29993	ITPR_grade	2837	PF08709	Inositol 1,4,5-trisphosphate/ryanodine receptor	IP$_3$-binding core (β-trefoil)	shared	9	234
+Itpr	P29993	ITPR_grade	2837	PF02815	MIR domain	MIR	shared	239	451
+Itpr	P29993	ITPR_grade	2837	PF01365	RIH domain	RIH	shared	494	696
+Itpr	P29993	ITPR_grade	2837	PF01365	RIH domain	RIH	shared	1296	1443
+Itpr	P29993	ITPR_grade	2837	PF08454	RyR and IP3R Homology associated	RIH-associated	shared	2038	2146
+Itpr	P29993	ITPR_grade	2837	PF00520	Ion transport protein	Ion_trans pore	generic	2401	2690
+iplA	Q9NA13	ITPR_grade	3177	PF01365	RIH domain	RIH	shared	622	797
+iplA	Q9NA13	ITPR_grade	3177	PF01365	RIH domain	RIH	shared	1502	1626
+iplA	Q9NA13	ITPR_grade	3177	PF08454	RyR and IP3R Homology associated	RIH-associated	shared	2415	2513
+itr-1	Q9Y0A1	ITPR_grade	2892	PF08709	Inositol 1,4,5-trisphosphate/ryanodine receptor	IP$_3$-binding core (β-trefoil)	shared	79	317
+itr-1	Q9Y0A1	ITPR_grade	2892	PF02815	MIR domain	MIR	shared	321	548
+itr-1	Q9Y0A1	ITPR_grade	2892	PF01365	RIH domain	RIH	shared	591	791
+itr-1	Q9Y0A1	ITPR_grade	2892	PF01365	RIH domain	RIH	shared	1326	1470
+itr-1	Q9Y0A1	ITPR_grade	2892	PF08454	RyR and IP3R Homology associated	RIH-associated	shared	2070	2175
+itr-1	Q9Y0A1	ITPR_grade	2892	PF00520	Ion transport protein	Ion_trans pore	generic	2573	2762
+RYR1	P21817	RYR	5038	PF08709	Inositol 1,4,5-trisphosphate/ryanodine receptor	IP$_3$-binding core (β-trefoil)	shared	9	209
+RYR1	P21817	RYR	5038	PF02815	MIR domain	MIR	shared	211	389
+RYR1	P21817	RYR	5038	PF01365	RIH domain	RIH	shared	443	636
+RYR1	P21817	RYR	5038	PF00622	SPRY domain	SPRY	ryr_only	660	794
+RYR1	P21817	RYR	5038	PF02026	RyR domain	RyR repeat	ryr_only	850	939
+RYR1	P21817	RYR	5038	PF02026	RyR domain	RyR repeat	ryr_only	964	1053
+RYR1	P21817	RYR	5038	PF00622	SPRY domain	SPRY	ryr_only	1086	1205
+RYR1	P21817	RYR	5038	PF00622	SPRY domain	SPRY	ryr_only	1432	1568
+RYR1	P21817	RYR	5038	PF21119	Ryanodine receptor junctional solenoid repeat	RyR jsol	ryr_only	1662	2126
+RYR1	P21817	RYR	5038	PF01365	RIH domain	RIH	shared	2160	2368
+RYR1	P21817	RYR	5038	PF02026	RyR domain	RyR repeat	ryr_only	2735	2825
+RYR1	P21817	RYR	5038	PF02026	RyR domain	RyR repeat	ryr_only	2855	2939
+RYR1	P21817	RYR	5038	PF08454	RyR and IP3R Homology associated	RIH-associated	shared	3876	3991
+RYR1	P21817	RYR	5038	PF06459	Ryanodine Receptor TM 4-6	RyR TM4-6	ryr_only	4383	4671
+RYR1	P21817	RYR	5038	PF00520	Ion transport protein	Ion_trans pore	generic	4790	4948
+RYR2	Q92736	RYR	4967	PF08709	Inositol 1,4,5-trisphosphate/ryanodine receptor	IP$_3$-binding core (β-trefoil)	shared	10	222
+RYR2	Q92736	RYR	4967	PF02815	MIR domain	MIR	shared	226	405
+RYR2	Q92736	RYR	4967	PF01365	RIH domain	RIH	shared	455	648
+RYR2	Q92736	RYR	4967	PF00622	SPRY domain	SPRY	ryr_only	672	806
+RYR2	Q92736	RYR	4967	PF02026	RyR domain	RyR repeat	ryr_only	862	950
+RYR2	Q92736	RYR	4967	PF02026	RyR domain	RyR repeat	ryr_only	976	1065
+RYR2	Q92736	RYR	4967	PF00622	SPRY domain	SPRY	ryr_only	1100	1219
+RYR2	Q92736	RYR	4967	PF00622	SPRY domain	SPRY	ryr_only	1426	1559
+RYR2	Q92736	RYR	4967	PF21119	Ryanodine receptor junctional solenoid repeat	RyR jsol	ryr_only	1654	2090
+RYR2	Q92736	RYR	4967	PF01365	RIH domain	RIH	shared	2124	2335
+RYR2	Q92736	RYR	4967	PF02026	RyR domain	RyR repeat	ryr_only	2701	2791
+RYR2	Q92736	RYR	4967	PF02026	RyR domain	RyR repeat	ryr_only	2821	2904
+RYR2	Q92736	RYR	4967	PF08454	RyR and IP3R Homology associated	RIH-associated	shared	3831	3947
+RYR2	Q92736	RYR	4967	PF13499	EF-hand domain pair	EF-hand pair	ryr_only	4031	4086
+RYR2	Q92736	RYR	4967	PF06459	Ryanodine Receptor TM 4-6	RyR TM4-6	ryr_only	4333	4599
+RYR2	Q92736	RYR	4967	PF00520	Ion transport protein	Ion_trans pore	generic	4729	4877
+RYR3	Q15413	RYR	4870	PF08709	Inositol 1,4,5-trisphosphate/ryanodine receptor	IP$_3$-binding core (β-trefoil)	shared	11	210
+RYR3	Q15413	RYR	4870	PF02815	MIR domain	MIR	shared	216	397
+RYR3	Q15413	RYR	4870	PF01365	RIH domain	RIH	shared	441	635
+RYR3	Q15413	RYR	4870	PF00622	SPRY domain	SPRY	ryr_only	659	793
+RYR3	Q15413	RYR	4870	PF02026	RyR domain	RyR repeat	ryr_only	849	938
+RYR3	Q15413	RYR	4870	PF02026	RyR domain	RyR repeat	ryr_only	963	1052
+RYR3	Q15413	RYR	4870	PF00622	SPRY domain	SPRY	ryr_only	1086	1205
+RYR3	Q15413	RYR	4870	PF00622	SPRY domain	SPRY	ryr_only	1328	1459
+RYR3	Q15413	RYR	4870	PF21119	Ryanodine receptor junctional solenoid repeat	RyR jsol	ryr_only	1558	1988
+RYR3	Q15413	RYR	4870	PF01365	RIH domain	RIH	shared	2022	2232
+RYR3	Q15413	RYR	4870	PF02026	RyR domain	RyR repeat	ryr_only	2598	2688
+RYR3	Q15413	RYR	4870	PF02026	RyR domain	RyR repeat	ryr_only	2716	2799
+RYR3	Q15413	RYR	4870	PF08454	RyR and IP3R Homology associated	RIH-associated	shared	3728	3843
+RYR3	Q15413	RYR	4870	PF06459	Ryanodine Receptor TM 4-6	RyR TM4-6	ryr_only	4234	4504
+RYR3	Q15413	RYR	4870	PF00520	Ion transport protein	Ion_trans pore	generic	4631	4780

@@ -92,6 +92,10 @@ The modern consolidations of this literature are the two *Physiological
 Reviews* treatments [17,18], a structural-functional synthesis [19], and
 the historical account by one of the field's founders [20].
 
+![](figures/discovery_timeline.png)
+
+**Figure 1.** Four decades, and the order in which the questions were settled. (**a**) Twenty results that changed what the receptor was taken to be, coloured by the kind of question each answered. The resemblance to the ryanodine receptor is not a later refinement: it is in the title of one of the two 1989 cloning papers [8]. (**b**) The 137 references this review cites, by year, with the milestones marked — the two peaks are the cloning era and the cryo-EM era. No year in this figure is transcribed; each is read from the reference table the bibliography is rendered from.
+
 ## 2. Molecular architecture
 
 ### 2.1 Domain organisation
@@ -112,7 +116,12 @@ PF01365), the RIH-associated domain (PF08454) and the Ion_trans pore domain
 fourth — the pore — is shared with most of the cation-channel world. This is
 not a technicality of database annotation but a statement about descent
 (§7.1), and it is why domain content alone cannot assign a sequence to one
-family or the other.
+family or the other (Figure 2).
+
+![](figures/domain_architecture.png)
+
+**Figure 2.** Every signature that defines an IP<sub>3</sub> receptor is also carried by a ryanodine receptor. (**a**) The six human proteins drawn to one scale from InterPro coordinates. (**b**) Copies per subunit; a blank cell means the signature is absent. The four shared signatures and the generic pore are identical in content between the families — including copy number, down to the two RIH domains. What separates them is what RyR carries *in addition*: four further domains and some 2,200 extra residues. A search built on the domains in the blue and amber columns cannot distinguish the two families, which is the practical form of §7.1's argument about descent.
+
 
 ### 2.2 The cryo-EM structures
 
@@ -140,7 +149,10 @@ pre-2018 state of the field is available [32].
 ### 2.3 The pore and permeation
 
 The pore is formed between TM5 and TM6, with a short selectivity filter and a
-gate at the cytosolic end of the TM6 bundle [22,27,29]. The channel is not
+gate at the cytosolic end of the TM6 bundle [22,27,29]. Both
+constrictions are recovered directly from the ligand-bound type-3 structure
+(Figure 3c): the luminal one sits on the GGGVGD filter motif,
+the cytosolic one on Phe2513 and Ile2517. The channel is not
 a precision Ca<sup>2+</sup> filter in the sense that voltage-gated
 Ca<sup>2+</sup> channels are: single-channel recordings from cerebellar
 preparations established a large conductance with modest discrimination among
@@ -151,7 +163,9 @@ high concentration, so throughput matters more than selectivity.
 ### 2.4 Long-range allosteric coupling
 
 The defining structural problem of this receptor is distance. IP<sub>3</sub>
-binds at the N-terminal core, roughly 100 Å from the gate. The cryo-EM series
+binds at the N-terminal core, roughly 100 Å from the gate — measured on that
+structure, 103 Å along the pore axis, and 120 Å through space, because the
+site also sits 62 Å out from the axis (Figure 3a). The cryo-EM series
 resolves the coupling path: ligand binding closes the clam-shell of the
 binding core, that motion is transmitted through the armadillo solenoid, and
 the C-terminal tail — which runs from beyond TM6 back up into the cytosolic
@@ -167,6 +181,10 @@ behaviour of heterozygous variants in a tetramer (§9). And because the
 C-terminal tail is a load-bearing mechanical element rather than a tail in the
 dispensable sense, variants there are not peripheral — they sit on the path
 that makes the channel a channel.
+
+![](figures/channel_structure.png)
+
+**Figure 3.** The channel measured from its own coordinates — PDB 6DQN, the human type-3 receptor with IP<sub>3</sub> bound at 3.33 Å [27]. (**a**) Cα trace of the tetramer, coloured by Pfam domain, with the four bound ligands in red; the mushroom is 178 Å tall and the pore domain occupies the shaded band. The distance IP<sub>3</sub> acts across resolves into two numbers rather than one: the site sits **103 Å above the gate along the pore axis** — the quantity §2.4 quotes as "roughly 100 Å" — but also 62 Å out from it, so the through-space separation is **120 Å**. (**b**) The same particle down the four-fold axis; the deposit is C4-symmetric to 0.06 Å RMSD, so one subunit is committed and the other three are drawn by rotation. (**c**) Minimum distance from any heavy atom to the axis, along it. Two constrictions appear, and neither was given to the calculation: the luminal one falls on the GGGVGD selectivity-filter motif, and the cytosolic one on Phe2513 and Ile2517 — one helical turn apart, the arrangement reported for the IP<sub>3</sub>R1 gate. The filter is wide (5.1 Å to the nearest atom), which is what a high-conductance, weakly selective channel should look like (§2.3).
 
 ## 3. Ligand binding and gating
 
@@ -206,6 +224,11 @@ maps, mutagenesis identified which are actually required for activation [31].
 The inhibitory limb of the bell — high Ca<sup>2+</sup> closing the channel —
 remains the less well resolved half of the mechanism.
 
+![](figures/gating_logic.png)
+
+**Figure 4.** The three properties that make this a detector rather than a valve. (**a**) The bell: the same ion activates at low concentration and inhibits at high [11], so open probability is a band, not a threshold. (**b**) The two ligands bind in a fixed order — IP<sub>3</sub> first, Ca<sup>2+</sup> second [38] — which is why a rise in cytosolic Ca<sup>2+</sup> alone does not open the channel. (**c**) Requiring all four sites [43] turns a graded input into a switch: at 50% site occupancy, a channel needing one site is 94% activated and a channel needing four is 6%. The curves are drawn to the shape of the cited results with illustrative constants; they are not digitised data.
+
+
 ### 3.3 Stoichiometry: all four sites
 
 Concatenated-subunit constructs, in which individual binding sites could be
@@ -241,6 +264,11 @@ a scaffold that happens to conduct. Its cytosolic mass presents a large surface
 for protein and post-translational input, and the collected partner list runs
 to dozens of proteins [46]. What follows is organised by mechanism rather
 than by partner, and is deliberately selective.
+
+![](figures/regulation_map.png)
+
+**Figure 5.** The inputs of §3–§4, grouped by the mechanism through which they act and signed by their effect on release. Two patterns are worth reading off directly. Every covalent modification is grey: the sign of phosphorylation depends on the paralogue and the cell type, so "PKA phosphorylates the receptor" does not predict a direction. And inhibition dominates the protein-partner column — the receptor's default is restraint, imposed from the cytosol (Bcl-2, IRBIT), from the lumen (ERp44) and by disposal (ubiquitination). Positions along the chain are deliberately not drawn: for most of these partners the cited work localises the interaction to a region, not to residues.
+
 
 ### 4.1 Phosphorylation
 
@@ -337,6 +365,11 @@ particularly clearly, with agonist-evoked release beginning in a restricted
 apical pole before spreading [13], and waves propagate between coupled cells
 via IP<sub>3</sub> diffusion through gap junctions [14].
 
+![](figures/signal_hierarchy.png)
+
+**Figure 6.** The signal is built, not switched on. (**a**) The three event classes, each on its own scale — a single channel's blip, a cluster's puff, and the cell-wide wave that recruitment produces [70,12]; the amplitudes differ about tenfold, so they are drawn in separate bands rather than on one axis. (**b**) The same three events placed by extent and duration: four orders of magnitude separate the smallest from the largest. (**c**) Raising agonist raises the *frequency* of spikes more than their size [71,72], which is what makes frequency the carried variable (§5.2). Illustrative traces, not recordings.
+
+
 ### 5.2 Oscillations: frequency as the encoded variable
 
 That repetitive Ca<sup>2+</sup> spikes are not an epiphenomenon was established
@@ -425,6 +458,11 @@ lineage-specific intron gain, differential loss, or selection related to the
 paralogues' distinct expression programmes is not established, and it is a
 question the genomic literature has largely not asked.
 
+![](figures/gene_architecture.png)
+
+**Figure 7.** Three genes that make near-identical proteins out of very different amounts of DNA. (**a**) Genomic span; the exon count and protein length that stay constant are printed with each gene. (**b**) The asymmetry as one number: *ITPR2* spends 184 bp of locus per residue of protein and *ITPR3* spends 29. Re-derived from Ensembl release 15.12 for this review — the claim this replaced, that all three span "hundreds of kb", is one of the four that failed audit (§12.2).
+
+
 ### 6.2 Functional differences between paralogues
 
 The paralogues are not interchangeable. Single-channel analysis showed
@@ -437,6 +475,11 @@ remains the finding that Ca<sup>2+</sup> signal *encoding* — the shape and
 frequency of the response — is set by which subtypes a cell expresses [91],
 which recasts subtype composition as a tuning parameter rather than redundancy.
 They also differ in the ER–mitochondrial contacts they support [82].
+
+![](figures/conservation_profile.png)
+
+**Figure 8.** Constraint across the family, and how far apart its members actually are. (**a**) Per-column conservation from an alignment of the 25 control positives — IP<sub>3</sub>R1/2/3 across a vertebrate panel plus the invertebrate and non-metazoan single-*itpr* grade — mapped onto human IP<sub>3</sub>R1 numbering, over that protein's domain architecture. The ligand-contact and pore positions measured in Figure 3 are marked; both sit on conservation maxima. The gap trace shows where the alignment is carrying indels, and the deepest troughs are the linkers between domains rather than the domains themselves. (**b**, **c**) All-pairs identity over mutually covered columns. The three human paralogues are 66–72% identical to each other and about 25% identical to a ryanodine receptor — and the fly receptor is closer to human IP<sub>3</sub>R1 (62%) than any IP<sub>3</sub>R is to any RyR. Paralogue identity is high enough that the differences of §6.2 are differences of tuning, not of kind.
+
 
 ### 6.3 Heterotetramers
 
@@ -511,9 +554,19 @@ computational study of the family.
 2. **RyR is the natural outgroup** for rooting an IP<sub>3</sub>R phylogeny —
    better conditioned than any invertebrate IP<sub>3</sub>R, because it is a
    genuine sister clade rather than a long branch within the ingroup.
+
+![](figures/family_separation.png)
+
+**Figure 9.** Separating the families by evidence rather than by name. (**a**) Every one of the 56 S1 controls scored against a labelled IP<sub>3</sub>R bait and a labelled RyR bait; the two families fall on opposite sides of the diagonal with nothing in between. (**b**) The same data as a margin. True IP<sub>3</sub>Rs run from +0.04 to +0.74 and ryanodine receptors from −0.72 to −0.44; the shaded strip is the ±0.10 band inside which the project declines to call either way, and the one positive sitting in it is *Dictyostelium* iplA. No gene symbol is consulted anywhere in this test. (**c**) Why it is needed: a single query for the IP<sub>3</sub>-binding-core domain in zebrafish returns 109 protein records, of which 53 are ryanodine receptors — including seven from an unnamed 4,900-residue locus.
+
 3. **Size is a filter, not evidence.** The two families separate cleanly by
    length in well-annotated genomes, but that is a property of annotation
    quality in those genomes, not a phylogenetic argument.
+
+![](figures/alignment_windows.png)
+
+**Figure 10.** Where the two families agree, and where they stop agreeing. Five windows of a MAFFT alignment of both families, each anchored on a site **measured** in the 6DQN structure (Figure 3) rather than on a residue list taken from a paper: the three stretches that contact the bound IP<sub>3</sub>, the selectivity filter and the gate. Cells are shaded where the residue matches the IP<sub>3</sub>R consensus. At the pore the families are interchangeable — GGGVGD against GGGIGD in the filter, and a gate that differs by conservative substitution — which is the shared descent of §7.1 made visible. At the ligand site they are not: the arginines and lysines that grip the trisphosphate are absent from all three RyRs, one window carries a three-residue deletion, and the fly and worm receptors side with the vertebrate IP<sub>3</sub>Rs throughout. The same superfamily, and a binding site only one of the two families uses.
+
 
 ### 7.2 Origins: the split predates animals
 
@@ -582,6 +635,20 @@ mis-annotation or contamination. **Whether the famous absences are facts about
 genomes or facts about proteome databases is, at present, unresolved**, and it
 cannot be settled from database counts alone.
 
+The error also runs the other way, and that direction matters more for a
+census. *Dictyostelium discoideum* iplA is a characterised IP<sub>3</sub>
+receptor — it is in this project's own positive control panel — and it
+carries neither the IP<sub>3</sub>-binding core, nor the MIR domain, nor the
+Ion_trans pore: three of the five signatures of §2.1. An enumeration built on
+the domain that *defines* this family would not return it at all
+(Figure 11b). Absence from a signature's protein set is not
+absence from a genome, and the two are routinely reported as though they
+were the same statement.
+
+![](figures/taxonomic_range.png)
+
+**Figure 11.** The signature's reach, and its two failure directions. (**a**) Proteins carrying the IP<sub>3</sub>-binding core by lineage: 12,149 of 12,338 are metazoan, yet the set contains 41 fungal and 40 plant entries — while the reference proteomes of *Arabidopsis* and *S. cerevisiae* contain none. Either the counts are wrong or the textbooks are. (**b**) The opposite error, and the sharper one for a census: *Dictyostelium* iplA is a characterised IP<sub>3</sub> receptor that carries neither the IP<sub>3</sub>-binding core nor the MIR nor the pore domain — three of the five signatures — so an enumeration built on the family's defining domain would not return it at all. A database count is a statement about annotation before it is a statement about genomes.
+
 ## 8. Organismal physiology: what the genetic models show
 
 ### 8.1 *Itpr1* — the cerebellar phenotype
@@ -636,6 +703,11 @@ paralogues, three largely distinct phenotypes, and dominant, dominant-negative
 and recessive mechanisms all represented. This makes it a test case for the
 proposition that pathogenic variants concentrate in the constrained parts of a
 protein — a proposition that can be checked against the structures of §2.
+
+![](figures/disease_map.png)
+
+**Figure 12.** The clinical panel placed on the three paralogues, coloured by mechanism. The figure is drawn at the resolution the sources give, and the three resolutions are distinguished deliberately: a marker where the source names a residue, an outlined box where it localises the variant to a domain and no further, and a bar under the gene where it does neither. Read this way the panel is thinner than it looks — only two of the nine entries have a residue behind them. Both are in *ITPR3*, and the recurrent multisystem variant p.Arg2524Cys sits seven residues past the gate measured in Figure 3, on the load-bearing stretch of §2.4. SCA29 is marked unresolved rather than dominant-negative: §9.1's sources establish that it is dominant and missense, and that at least one variant is a *gain* of function [37], which is not the same mechanism as the Gillespie and *ITPR3* variants.
+
 
 ### 9.1 *ITPR1*: cerebellar ataxia and Gillespie syndrome
 
@@ -799,7 +871,10 @@ claim is only as good as the assembly and annotation behind it.
 across gene models, unnamed, or filed under the wrong paralogue — or as a
 ryanodine receptor? The last risk is not hypothetical: the domain that
 *defines* this family returns ryanodine receptors at close to a 1:1 ratio in a
-routine query (§7.1), and at least one of them is an unnamed locus.
+routine query (§7.1), and at least one of them is an unnamed locus. The
+converse failure is just as real — *Dictyostelium* iplA is a characterised
+receptor that the defining signature does not find at all (§7.5) — so a
+census cannot be a single domain query in either direction.
 
 **Q5 — Constraint and mechanism.** Do the pathogenic variants of §9 sit in the
 most constrained parts of the channel, and is the constrained core the same in
@@ -845,6 +920,23 @@ distributions from the InterPro API, protein lengths and domain architectures
 from UniProt, and gene structure from Ensembl release 15.12. The scripts are
 `scripts/s0_db_snapshot.py` and `scripts/s0_gene_structure.py`; the outputs are
 the committed tables in `results/s0_baseline/`.
+
+**Figures.** Every figure is generated rather than drawn.
+`scripts/s0_review_figures.py` renders each one from committed tables in
+`results/s0_baseline/review_figures/`, which four data scripts produce:
+domain coordinates from InterPro, structural measurements from PDB 6DQN,
+alignments with MAFFT over the committed control panels, and the curated
+milestone / regulator / variant tables — whose every citation key is
+checked against `references.tsv`, so a figure cannot cite something the
+bibliography lacks. Figures are numbered by the build in order of first
+appearance, like the citations. Each carries a provenance tag —
+*measured*, *computed*, *schematic* or *curated* — which is the `[db]` /
+`[lit]` discipline of the planning document applied to pictures. Two
+structural results are worth flagging as checks rather than claims: the
+narrowest luminal point of the pore falls on the GGGVGD selectivity-filter
+motif, and the cytosolic constriction on Phe2513/Ile2517, one helical turn
+apart — neither the motif nor the published gate residues were given to
+the calculation, which sees only coordinates.
 
 **Limitations.** This is a narrative review, not a systematic one: there is no
 pre-registered protocol, no PRISMA flow, and no formal inclusion criteria

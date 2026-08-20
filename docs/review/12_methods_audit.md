@@ -24,6 +24,23 @@ from UniProt, and gene structure from Ensembl release 15.12. The scripts are
 `scripts/s0_db_snapshot.py` and `scripts/s0_gene_structure.py`; the outputs are
 the committed tables in `results/s0_baseline/`.
 
+**Figures.** Every figure is generated rather than drawn.
+`scripts/s0_review_figures.py` renders each one from committed tables in
+`results/s0_baseline/review_figures/`, which four data scripts produce:
+domain coordinates from InterPro, structural measurements from PDB 6DQN,
+alignments with MAFFT over the committed control panels, and the curated
+milestone / regulator / variant tables — whose every citation key is
+checked against `references.tsv`, so a figure cannot cite something the
+bibliography lacks. Figures are numbered by the build in order of first
+appearance, like the citations. Each carries a provenance tag —
+*measured*, *computed*, *schematic* or *curated* — which is the `[db]` /
+`[lit]` discipline of the planning document applied to pictures. Two
+structural results are worth flagging as checks rather than claims: the
+narrowest luminal point of the pore falls on the GGGVGD selectivity-filter
+motif, and the cytosolic constriction on Phe2513/Ile2517, one helical turn
+apart — neither the motif nor the published gate residues were given to
+the calculation, which sees only coordinates.
+
 **Limitations.** This is a narrative review, not a systematic one: there is no
 pre-registered protocol, no PRISMA flow, and no formal inclusion criteria
 beyond topical relevance and the preference for primary sources over reviews

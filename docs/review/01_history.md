@@ -49,3 +49,8 @@ to differ in ligand sensitivity, regulation and cellular role (§6).
 The modern consolidations of this literature are the two *Physiological
 Reviews* treatments [R133, R134], a structural-functional synthesis [R50], and
 the historical account by one of the field's founders [R135].
+
+![](figures/discovery_timeline.png)
+
+**{fig:discovery_timeline}.** Four decades, and the order in which the questions were settled. (**a**) Twenty results that changed what the receptor was taken to be, coloured by the kind of question each answered. The resemblance to the ryanodine receptor is not a later refinement: it is in the title of one of the two 1989 cloning papers [R04]. (**b**) The 137 references this review cites, by year, with the milestones marked — the two peaks are the cloning era and the cryo-EM era. No year in this figure is transcribed; each is read from the reference table the bibliography is rendered from.
+

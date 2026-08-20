@@ -36,6 +36,11 @@ maps, mutagenesis identified which are actually required for activation [R61].
 The inhibitory limb of the bell — high Ca<sup>2+</sup> closing the channel —
 remains the less well resolved half of the mechanism.
 
+![](figures/gating_logic.png)
+
+**{fig:gating_logic}.** The three properties that make this a detector rather than a valve. (**a**) The bell: the same ion activates at low concentration and inhibits at high [R13], so open probability is a band, not a threshold. (**b**) The two ligands bind in a fixed order — IP<sub>3</sub> first, Ca<sup>2+</sup> second [R14] — which is why a rise in cytosolic Ca<sup>2+</sup> alone does not open the channel. (**c**) Requiring all four sites [R15] turns a graded input into a switch: at 50% site occupancy, a channel needing one site is 94% activated and a channel needing four is 6%. The curves are drawn to the shape of the cited results with illustrative constants; they are not digitised data.
+
+
 ### 3.3 Stoichiometry: all four sites
 
 Concatenated-subunit constructs, in which individual binding sites could be

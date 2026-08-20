@@ -1,0 +1,10 @@
+gene	label	kind	where	mechanism	refs
+ITPR1	SCA15/16 — heterozygous deletion	gene		haploinsufficiency	R38,R118,R119
+ITPR1	SCA29 — missense	gene		unresolved	R41,R42
+ITPR1	gain-of-function ataxia	domain	PF08709	gain of function	R120
+ITPR1	Gillespie — de novo	domain	PF00520	dominant negative	R44
+ITPR1	Gillespie — biallelic	gene		recessive loss	R43
+ITPR2	isolated anhidrosis — homozygous missense	domain	PF00520	recessive loss	R45
+ITPR3	CMT1J — p.Thr1424Met	point	1424	dominant negative	R47
+ITPR3	multisystem disorder — p.Arg2524Cys	point	2524	dominant negative	R48
+ITPR3	CMT1J — segregating families	gene		dominant negative	R46,R51

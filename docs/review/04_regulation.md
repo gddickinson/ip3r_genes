@@ -6,6 +6,11 @@ for protein and post-translational input, and the collected partner list runs
 to dozens of proteins [R136]. What follows is organised by mechanism rather
 than by partner, and is deliberately selective.
 
+![](figures/regulation_map.png)
+
+**{fig:regulation_map}.** The inputs of §3–§4, grouped by the mechanism through which they act and signed by their effect on release. Two patterns are worth reading off directly. Every covalent modification is grey: the sign of phosphorylation depends on the paralogue and the cell type, so "PKA phosphorylates the receptor" does not predict a direction. And inhibition dominates the protein-partner column — the receptor's default is restraint, imposed from the cytosol (Bcl-2, IRBIT), from the lumen (ERp44) and by disposal (ubiquitination). Positions along the chain are deliberately not drawn: for most of these partners the cited work localises the interaction to a region, not to residues.
+
+
 ### 4.1 Phosphorylation
 
 PKA-dependent phosphorylation was the first covalent modification described,

@@ -1,0 +1,119 @@
+{
+  "reference_numbering": "Q14643",
+  "window_numbering": "Q14573",
+  "family_set": [
+    "A0A6I8RGU0",
+    "A0A8J0T3U5",
+    "A0A8M2BDG0",
+    "A0A8M6Z266",
+    "A0A8M9PQQ3",
+    "A0A8V0ZJT0",
+    "A0A8V1ACE6",
+    "A0AB32TXG4",
+    "A4ZYX8",
+    "F1P1X4",
+    "P11881",
+    "P29993",
+    "P29994",
+    "P29995",
+    "P70227",
+    "Q14571",
+    "Q14573",
+    "Q14643",
+    "Q63269",
+    "Q8WN95",
+    "Q8WN96",
+    "Q9NA13",
+    "Q9TU34",
+    "Q9Y0A1",
+    "Q9Z329"
+  ],
+  "superfamily_set": [
+    "Q14643",
+    "Q14571",
+    "Q14573",
+    "P29993",
+    "Q9Y0A1",
+    "P21817",
+    "Q92736",
+    "Q15413"
+  ],
+  "mafft": [
+    {
+      "tag": "family",
+      "returncode": 0,
+      "n_seqs": 25,
+      "n_columns": 4145,
+      "version": "v7.526",
+      "command": "/opt/homebrew/bin/mafft --auto --anysymbol --quiet --thread 6 <fasta>"
+    },
+    {
+      "tag": "superfamily",
+      "returncode": 0,
+      "n_seqs": 8,
+      "n_columns": 5775,
+      "version": "v7.526",
+      "command": "/opt/homebrew/bin/mafft --auto --anysymbol --quiet --thread 6 <fasta>"
+    }
+  ],
+  "windows": [
+    {
+      "name": "IP$_3$ contact 1",
+      "kind": "ligand",
+      "start": 262,
+      "end": 274,
+      "marks": [
+        266,
+        268,
+        269,
+        270
+      ]
+    },
+    {
+      "name": "IP$_3$ contact 2",
+      "kind": "ligand",
+      "start": 499,
+      "end": 514,
+      "marks": [
+        503,
+        507,
+        510
+      ]
+    },
+    {
+      "name": "IP$_3$ contact 3",
+      "kind": "ligand",
+      "start": 563,
+      "end": 573,
+      "marks": [
+        567,
+        568,
+        569
+      ]
+    },
+    {
+      "name": "selectivity filter",
+      "kind": "pore",
+      "start": 2468,
+      "end": 2482,
+      "marks": [
+        2473,
+        2474,
+        2475,
+        2476,
+        2477,
+        2478
+      ]
+    },
+    {
+      "name": "gate",
+      "kind": "pore",
+      "start": 2508,
+      "end": 2522,
+      "marks": [
+        2513,
+        2517
+      ]
+    }
+  ]
+}
