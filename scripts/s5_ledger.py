@@ -11,6 +11,9 @@ Outputs -> results/genome_ledger/
   ledger_status_counts.tsv status x class tally, and the same split by vclass
   control_failures.tsv     genomes where the RyR positive control did not fire
   locus_margins.tsv        every found locus's family and paralog margins
+  rescue_regions.tsv       every tblastn rescue region, its attribution and
+                           the genes it overlaps — fragment-level evidence,
+                           which is what the attribution margin acts on
   ledger_stats.json        totals, coverage of the manifest, run timings
 
 Usage:
@@ -34,6 +37,7 @@ for p in (PROJECT_ROOT, PROJECT_ROOT / "scripts"):
 
 from src.utils.data_root import get_data_root            # noqa: E402
 import s5_sweep_lib as lib                                # noqa: E402
+import s5_classify as clf                                # noqa: E402
 
 OUT_DIR = PROJECT_ROOT / "results" / "genome_ledger"
 MANIFEST = PROJECT_ROOT / "results" / "genome_manifest.tsv"
@@ -150,6 +154,55 @@ def margin_rows(s: dict) -> list[dict]:
     return out
 
 
+def region_rows(s: dict) -> list[dict]:
+    """Every rescue region, with the attribution it received and why.
+
+    S5a could only calibrate the attribution margin on *complete* loci, which
+    bounds a fragment's separation from above without measuring it. These are
+    the fragments themselves. A region overlapping a gene the assembly names
+    for a paralog carries an identity established independently of the bait
+    scores — the same trick, one evidence level down, and the calibration
+    S5a deferred to here.
+    """
+    out = []
+    for cell_class in ALL_CELLS:
+        cell = s["cells"][cell_class]
+        for kind in ("rescue_regions", "ambiguous_regions",
+                     "attributed_elsewhere"):
+            for r in cell.get(kind, []):
+                genes = r.get("genes") or []
+                named = ""
+                for g in genes:
+                    p = clf.name_paralog(g.get("name", ""))
+                    if p:
+                        named = p
+                        break
+                out.append({
+                    "accession": s["accession"], "organism": s["organism"],
+                    "vclass": s.get("vclass", ""),
+                    "cell": cell_class, "cell_status": cell["status"],
+                    "region_kind": kind,
+                    "contig": r.get("contig", ""), "start": r.get("start", ""),
+                    "end": r.get("end", ""),
+                    "n_hsps": r.get("n_hsps", ""),
+                    "aligned_aa": r.get("aligned_aa", ""),
+                    "best_evalue": r.get("best_evalue", ""),
+                    "best_pident": r.get("best_pident", ""),
+                    "assigned_clade": r.get("assigned_clade", ""),
+                    "attribution_rel_margin": r.get("attribution_rel_margin", ""),
+                    "family_call": r.get("family_call", ""),
+                    "family_rel_margin": r.get("family_rel_margin", ""),
+                    "clade_bits": ";".join(
+                        f"{k}={v}" for k, v in (r.get("clade_bits") or {}).items()),
+                    "overlapping_genes": ";".join(
+                        g.get("name", "") for g in genes[:4]),
+                    "annot_paralog": named,
+                    "annot_agrees": int(bool(named)
+                                        and named == r.get("assigned_clade")),
+                })
+    return out
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -162,11 +215,12 @@ def main() -> None:
         raise SystemExit("no completed sweeps found — run scripts/s5_run_sweep.py")
     evidence_dir = str(get_data_root() / "genome_sweep")
 
-    rows, margins, wide = [], [], []
+    rows, margins, wide, regions = [], [], [], []
     for s in summaries:
         for cell_class in ALL_CELLS:
             rows.append(cell_row(s, cell_class, evidence_dir))
         margins.extend(margin_rows(s))
+        regions.extend(region_rows(s))
         w = {"accession": s["accession"], "organism": s["organism"],
              "vclass": s.get("vclass", ""), "vorder": s.get("vorder", ""),
              "annotated": s.get("annotated", ""),
@@ -220,6 +274,14 @@ def main() -> None:
                "paralog_margin", "assigned_via", "bait", "annot_gene",
                "annot_paralog", "annot_agrees"], margins)
 
+    write_tsv(OUT_DIR / "rescue_regions.tsv",
+              ["accession", "organism", "vclass", "cell", "cell_status",
+               "region_kind", "contig", "start", "end", "n_hsps",
+               "aligned_aa", "best_evalue", "best_pident", "assigned_clade",
+               "attribution_rel_margin", "family_call", "family_rel_margin",
+               "clade_bits", "overlapping_genes", "annot_paralog",
+               "annot_agrees"], regions)
+
     by_status: dict[tuple, int] = Counter()
     by_class_vclass: dict[tuple, int] = Counter()
     for r in rows:
@@ -252,6 +314,7 @@ def main() -> None:
         "manifest_remaining": len([m for m in manifest
                                    if m["accession"] not in swept]),
         "cells": len(rows), "loci_recorded": len(margins),
+        "rescue_regions": len(regions),
         "control_failures": len(failures),
         "itpr_span_stats": lib.itpr_span_stats(),
         "genomes_below_contiguity_bar": sum(

@@ -74,6 +74,7 @@ STATUS = {
     "found_annotated": "#184f95",
     "found_unannotated": "#2a78d6",
     "found_no_annotation": "#86b6ef",
+    "fragment": "#c9d8e8",
     "assembly_gap": "#d6d5cf",
     "tblastn_trace_ambiguous": "#a9a79e",
     "tblastn_trace": "#ef9a90",
@@ -82,13 +83,15 @@ STATUS = {
 #: Reading order for stacked bars and legends: best evidence first.
 STATUS_ORDER = [
     "found_annotated", "found_unannotated", "found_no_annotation",
-    "assembly_gap", "tblastn_trace_ambiguous", "tblastn_trace", "absent",
+    "fragment", "assembly_gap", "tblastn_trace_ambiguous", "tblastn_trace",
+    "absent",
 ]
 #: Short labels — the raw status strings are too long for a legend at 7 pt.
 STATUS_LABEL = {
     "found_annotated": "found, annotated",
     "found_unannotated": "found, not annotated",
     "found_no_annotation": "found, no gene set",
+    "fragment": "partial locus",
     "assembly_gap": "assembly gap",
     "tblastn_trace_ambiguous": "trace, ambiguous",
     "tblastn_trace": "remnant",

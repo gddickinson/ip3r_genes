@@ -1,11 +1,12 @@
 {
- "built_at": "2026-09-04T13:55:10+00:00",
- "is_pilot": true,
- "genomes_swept": 6,
+ "built_at": "2026-09-04T14:21:20+00:00",
+ "is_pilot": false,
+ "genomes_swept": 21,
  "genomes_in_manifest": 309,
- "manifest_remaining": 303,
- "cells": 24,
- "loci_recorded": 43,
+ "manifest_remaining": 288,
+ "cells": 84,
+ "loci_recorded": 194,
+ "rescue_regions": 84,
  "control_failures": 0,
  "itpr_span_stats": {
   "n": 28,
@@ -13,27 +14,35 @@
   "max": 497888,
   "median": 142212
  },
- "genomes_below_contiguity_bar": 3,
- "novel_models": 22,
+ "genomes_below_contiguity_bar": 9,
+ "novel_models": 160,
  "status_counts": {
-  "ITPR1:tblastn_trace": 2,
-  "ITPR2:tblastn_trace": 2,
-  "ITPR3:found_annotated": 5,
-  "RYR:found_unannotated": 1,
-  "RYR:assembly_gap": 2,
-  "ITPR1:assembly_gap": 1,
-  "ITPR2:assembly_gap": 1,
-  "ITPR3:assembly_gap": 1,
-  "ITPR1:found_annotated": 3,
-  "ITPR2:found_annotated": 3,
-  "RYR:found_annotated": 3
+  "ITPR1:found_unannotated": 3,
+  "ITPR2:found_unannotated": 4,
+  "ITPR3:found_unannotated": 3,
+  "RYR:found_annotated": 9,
+  "ITPR1:tblastn_trace": 3,
+  "ITPR2:tblastn_trace": 3,
+  "ITPR3:found_annotated": 10,
+  "RYR:found_unannotated": 3,
+  "RYR:tblastn_trace_ambiguous": 1,
+  "RYR:assembly_gap": 5,
+  "ITPR1:found_annotated": 7,
+  "ITPR1:assembly_gap": 5,
+  "ITPR2:assembly_gap": 5,
+  "ITPR3:assembly_gap": 5,
+  "ITPR2:found_annotated": 6,
+  "ITPR1:found_no_annotation": 3,
+  "ITPR2:found_no_annotation": 3,
+  "ITPR3:found_no_annotation": 3,
+  "RYR:found_no_annotation": 3
  },
  "itpr_found_per_genome": {
-  "1": 2,
-  "0": 1,
-  "3": 3
+  "3": 13,
+  "1": 3,
+  "0": 5
  },
- "median_sweep_s": 0.4,
- "total_sweep_s": 57.5,
- "total_genome_bp": 5414378639
+ "median_sweep_s": 29.9,
+ "total_sweep_s": 762.8,
+ "total_genome_bp": 17988972144
 }

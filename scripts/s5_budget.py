@@ -34,8 +34,22 @@ MANIFEST = PROJECT_ROOT / "results" / "genome_manifest.tsv"
 #: Measured on clean recomputes in the S5a pilot: miniprot with 8 threads
 #: over the 121,294-residue panel ran at 36 s/Gbp on both a 0.85 Gbp bird
 #: (Todus, 30.6 s) and a 1.86 Gbp mammal (Ornithorhynchus, 67.5 s). Stated
-#: here rather than re-derived so a rerun that drifts is visible.
+#: here rather than re-derived so a rerun that drifts is visible. S5b's own
+#: running sweep measures it lower still — 15 s/Gbp at 3 threads across six
+#: shards — so the compute side of this budget is, if anything, pessimistic.
 MINIPROT_S_PER_GBP = 36.0
+
+#: **The number S5a's budget did not have, and the one that governs.**
+#: That budget modelled compute and treated download as hidden behind the
+#: prefetch thread. It is not: measured across the running S5b sweep, NCBI
+#: delivers ~5.5 MB/s in aggregate, and that total barely moves with the
+#: number of concurrent shards (2 shards ~3.4 MB/s, 6 shards ~5.5 MB/s), so
+#: it is a bandwidth ceiling rather than a concurrency problem. At 164 GB of
+#: assemblies that is ~8 h of pure transfer against ~2.5 h of compute — the
+#: sweep is network-bound, and adding workers past ~4 buys almost nothing.
+#: Recorded because "3.4 h wall at 2 shards" was wrong by a factor of three
+#: and the error was in what the model left out, not in what it measured.
+DOWNLOAD_MB_PER_S = 5.5
 
 #: tblastn rescue only fires on a cell miniprot left empty, so its cost is
 #: per *genome that needs it*, not per Gbp: 22.3 s for two empty cells on a
@@ -91,16 +105,22 @@ def main() -> None:
         fasta_gb = sum(float(r["fasta_gb"]) for r in rs)
         miniprot_h = gbp * MINIPROT_S_PER_GBP / 3600
         rescue_h = len(rs) * RESCUE_FRACTION * RESCUE_S_PER_GENOME / 3600
+        download_h = zip_gb * 1000 / DOWNLOAD_MB_PER_S / 3600
         rows.append({
             "group": label, "genomes": len(rs), "gbp": round(gbp, 1),
             "download_gb": round(zip_gb, 1), "fasta_gb": round(fasta_gb, 1),
             "miniprot_h": round(miniprot_h, 1),
             "rescue_h": round(rescue_h, 1),
             "compute_h": round(miniprot_h + rescue_h, 1),
-            "wall_h_at_workers": round((miniprot_h + rescue_h) / args.workers, 1),
+            "download_h": round(download_h, 1),
+            # Compute shards in parallel, but download does not scale: the
+            # wall clock is whichever of the two is larger.
+            "wall_h": round(max(download_h,
+                                (miniprot_h + rescue_h) / args.workers), 1),
         })
         if label != "swept (S5a pilot)":
-            for k in ("genomes", "gbp", "download_gb", "fasta_gb", "compute_h"):
+            for k in ("genomes", "gbp", "download_gb", "fasta_gb",
+                      "compute_h", "download_h"):
                 totals[k] = round(totals.get(k, 0) + rows[-1][k], 1)
 
     span = lib.itpr_span_stats()
@@ -150,7 +170,12 @@ def main() -> None:
                                  "121,294-residue panel"},
         "groups": rows, "remaining_totals": totals,
         "workers_assumed": args.workers,
-        "wall_h_remaining": round(totals.get("compute_h", 0) / args.workers, 1),
+        "wall_h_remaining": round(max(
+            totals.get("download_h", 0),
+            totals.get("compute_h", 0) / args.workers), 1),
+        "bound_by": ("download" if totals.get("download_h", 0)
+                     > totals.get("compute_h", 0) / args.workers
+                     else "compute"),
         "storage": {
             "free_gb_now": round(free_gb, 1),
             "fasta_gb_if_kept": totals.get("fasta_gb", 0),
@@ -173,7 +198,7 @@ def main() -> None:
 
     write_tsv(OUT_DIR / "s5b_budget.tsv",
               ["group", "genomes", "gbp", "download_gb", "fasta_gb",
-               "miniprot_h", "rescue_h", "compute_h", "wall_h_at_workers"],
+               "miniprot_h", "rescue_h", "compute_h", "download_h", "wall_h"],
               rows)
     (OUT_DIR / "s5b_budget.json").write_text(json.dumps(stats, indent=1) + "\n")
 
@@ -181,10 +206,12 @@ def main() -> None:
     for r in rows:
         print(f"  {r['group']:<22} {r['genomes']:>4} genomes  "
               f"{r['gbp']:>6.1f} Gbp  {r['download_gb']:>6.1f} GB download  "
-              f"{r['compute_h']:>5.1f} h compute")
+              f"{r['compute_h']:>5.1f} h compute  {r['download_h']:>5.1f} h transfer")
     print(f"  remaining total: {totals.get('genomes')} genomes, "
-          f"{totals.get('compute_h')} h compute -> "
-          f"{stats['wall_h_remaining']} h wall at {args.workers} workers")
+          f"{totals.get('compute_h')} h compute / "
+          f"{totals.get('download_h')} h transfer -> "
+          f"{stats['wall_h_remaining']} h wall "
+          f"({stats['bound_by']}-bound at {args.workers} workers)")
     print(f"  storage: {totals.get('fasta_gb')} GB of FASTA if kept, "
           f"{free_gb:.0f} GB free "
           f"({'fits' if stats['storage']['fits_without_delete_after'] else 'use --delete-after'})")

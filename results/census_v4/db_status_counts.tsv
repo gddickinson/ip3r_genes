@@ -1,0 +1,14 @@
+cell	db_status	n_loci
+ITPR1	annotated_named	6
+ITPR1	annotated_unnamed	5
+ITPR1	genome_only	12
+ITPR2	annotated_named	4
+ITPR2	annotated_unnamed	2
+ITPR2	genome_only	8
+ITPR3	annotated_named	4
+ITPR3	annotated_other_paralog	1
+ITPR3	annotated_unnamed	4
+ITPR3	genome_only	10
+RYR	annotated_named	21
+RYR	annotated_unnamed	18
+RYR	genome_only	24

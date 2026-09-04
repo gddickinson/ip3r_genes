@@ -21,10 +21,14 @@ rather than by spliced alignment, so it separates paralogs less well than a
 complete locus does. The bound is what makes the measurement decisive in one
 direction only — if complete loci separate by less than the threshold, then
 fragments certainly do, and every rescue trace would be reported ambiguous.
-It cannot, on its own, say what the threshold *should* be. Rescue regions of
-known identity are what would settle that, and they arrive with the full
-sweep: a genome carrying two paralogs and genuinely missing the third gives
-traces whose identity the other two cells establish.
+It cannot, on its own, say what the threshold *should* be.
+
+**S5b closes that gap directly.** The full sweep produces rescue regions that
+overlap an annotated gene the assembly itself names for a paralog, so their
+identity is established independently of the bait scores — the same trick as
+above, one evidence level down, on exactly the fragments the threshold acts
+on. Those are reported here as `fragment_*` groups, and they are what the
+threshold should actually be set from.
 
 Outputs -> results/genome_ledger/margin_calibration.tsv + .json
 
@@ -48,6 +52,13 @@ import s5_sweep_lib as lib                                # noqa: E402
 from s5_rescue import ATTRIBUTION_REL_MARGIN              # noqa: E402
 
 LEDGER_DIR = PROJECT_ROOT / "results" / "genome_ledger"
+
+#: The value this project inherited from the PIEZO port — that project's 1.5x
+#: bit-score ratio restated in D7's units. Kept as a literal so the report can
+#: say what was inherited even after `ATTRIBUTION_REL_MARGIN` has been moved
+#: off it; comparing the data against the live constant alone would quietly
+#: rename whatever is currently in force as "inherited".
+INHERITED_REL_MARGIN = 0.333
 
 
 def read_tsv(path: Path) -> list[dict]:
@@ -74,6 +85,61 @@ def describe(values: list[float]) -> dict:
             "p05": round(v[max(0, int(0.05 * len(v)) - 1)], 4),
             "p25": round(v[max(0, int(0.25 * len(v)) - 1)], 4),
             "mean": round(statistics.fmean(v), 4)}
+
+
+def fragment_calibration(fval) -> tuple[dict, list[str], list[float]]:
+    """The measurement S5a could not make: margins on rescue *fragments*
+    whose paralog the assembly's own annotation names."""
+    path = LEDGER_DIR / "rescue_regions.tsv"
+    if not path.exists():
+        return {}, ["No rescue-region table yet — run scripts/s5_ledger.py "
+                    "after a sweep that produced rescues."], []
+    regions = read_tsv(path)
+    known = [r for r in regions if r["annot_paralog"]]
+    agree = [r for r in known if r["annot_agrees"] == "1"]
+    wrong = [r for r in known if r["annot_agrees"] != "1"]
+    vals = [v for v in (fval(r, "attribution_rel_margin") for r in agree)
+            if v is not None]
+    wrong_vals = [v for v in (fval(r, "attribution_rel_margin") for r in wrong)
+                  if v is not None]
+    groups = {
+        "fragment_all": [fval(r, "attribution_rel_margin") for r in regions],
+        "fragment_annotation_known": [fval(r, "attribution_rel_margin")
+                                      for r in known],
+        "fragment_annotation_agrees": vals,
+        "fragment_annotation_disagrees": wrong_vals,
+    }
+    summary = {k: describe([v for v in vv if v is not None])
+               for k, vv in groups.items()}
+    lines = []
+    if vals:
+        below = sum(1 for v in vals if v < ATTRIBUTION_REL_MARGIN)
+        would_lose = sum(1 for v in vals if v < INHERITED_REL_MARGIN)
+        lines.append(
+            f"**Fragment-level, the measurement S5a deferred**: {len(known)} "
+            f"rescue region(s) overlap a gene the assembly names for a "
+            f"paralog. The attribution agrees with that name on "
+            f"{len(agree)}/{len(known)}, over margins {min(vals):.3f}-"
+            f"{max(vals):.3f}.")
+        lines.append(
+            f"{below}/{len(vals)} of the correct fragment attributions fall "
+            f"below the threshold in force ({ATTRIBUTION_REL_MARGIN}); "
+            f"{would_lose}/{len(vals)} would have fallen below the inherited "
+            f"{INHERITED_REL_MARGIN} and been reported ambiguous.")
+        if wrong_vals:
+            lines.append(
+                f"{len(wrong)} region(s) were attributed to a paralog the "
+                f"annotation names differently, at margins up to "
+                f"{max(wrong_vals):.3f} — the population any threshold has to "
+                "exclude, and the reason the floor is not simply the minimum "
+                "correct margin.")
+        else:
+            lines.append(
+                "No region was attributed against its annotation, so this "
+                "evidence bounds the threshold from below only: it says how "
+                "low the floor must be to keep correct calls, not how high it "
+                "may go before wrong ones enter.")
+    return summary, lines, vals
 
 
 def main() -> None:
@@ -112,7 +178,9 @@ def main() -> None:
 
     contested_vals = [v for v in groups["annotation_agrees_contested"]
                       if v is not None]
-    n_below = sum(1 for v in contested_vals if v < ATTRIBUTION_REL_MARGIN)
+    n_below_inherited = sum(1 for v in contested_vals
+                            if v < INHERITED_REL_MARGIN)
+    n_below_live = sum(1 for v in contested_vals if v < ATTRIBUTION_REL_MARGIN)
     # A threshold every correct, contested, complete locus clears — rounded
     # down to two places so it is a stated number rather than a data point.
     suggested = (int(min(contested_vals) * 100) / 100 if contested_vals
@@ -124,16 +192,18 @@ def main() -> None:
     verdict = []
     if contested_vals:
         verdict.append(
-            f"{n_below}/{len(contested_vals)} contested loci of known, "
-            f"correctly-called identity sit below the inherited threshold "
-            f"{ATTRIBUTION_REL_MARGIN:.3f}.")
-        if n_below:
+            f"{n_below_inherited}/{len(contested_vals)} contested loci of "
+            f"known, correctly-called identity sit below the **inherited** "
+            f"threshold {INHERITED_REL_MARGIN:.3f}; "
+            f"{n_below_live}/{len(contested_vals)} sit below the threshold "
+            f"**in force** ({ATTRIBUTION_REL_MARGIN:.3f}).")
+        if n_below_inherited:
             verdict.append(
                 "Complete loci are an upper bound on rescue fragments, so a "
                 "threshold that complete evidence fails cannot be met by a "
-                "fragment: under it every rescue trace would be reported "
-                "`tblastn_trace_ambiguous`, and no absence claim would ever "
-                "be attributed. The inherited constant does not transfer.")
+                "fragment: under the inherited value every rescue trace would "
+                "be reported `tblastn_trace_ambiguous` and no absence claim "
+                "would ever be attributed. That constant does not transfer.")
         verdict.append(
             f"Observed separation at contested loci: median "
             f"{summary['annotation_agrees_contested']['median']}, min "
@@ -154,16 +224,26 @@ def main() -> None:
             "— the ITPR and RyR panels never contested a locus, so the family "
             "separation was decided before any margin had to be applied.")
 
+    frag_summary, frag_lines, frag_vals = fragment_calibration(fval)
+    summary.update(frag_summary)
+    verdict.extend(frag_lines)
+
     out_rows = [{"group": k, **v} for k, v in summary.items()]
     write_tsv(LEDGER_DIR / "margin_calibration.tsv",
               ["group", "n", "min", "p05", "p25", "median", "mean", "max"],
               out_rows)
     (LEDGER_DIR / "margin_calibration.json").write_text(json.dumps({
-        "inherited_threshold": ATTRIBUTION_REL_MARGIN,
+        "inherited_threshold": INHERITED_REL_MARGIN,
         "inherited_from": "PIEZO port, 1.5x bit-score ratio",
-        "n_contested_below_threshold": n_below,
+        "threshold_in_force": ATTRIBUTION_REL_MARGIN,
+        "n_contested_below_inherited": n_below_inherited,
+        "n_contested_below_in_force": n_below_live,
         "n_contested": len(contested_vals),
         "suggested_floor": suggested,
+        "fragment_n_correct": len(frag_vals),
+        "fragment_min_margin": (min(frag_vals) if frag_vals else None),
+        "fragment_below_threshold": sum(
+            1 for v in frag_vals if v < ATTRIBUTION_REL_MARGIN),
         "measures": "paralog margin at complete loci — an upper bound on "
                     "rescue fragments, not a direct calibration of them",
         "groups": summary, "verdict": verdict}, indent=2) + "\n")

@@ -1,63 +1,108 @@
 {
-  "inherited_threshold": 0.22,
+  "inherited_threshold": 0.333,
   "inherited_from": "PIEZO port, 1.5x bit-score ratio",
-  "n_contested_below_threshold": 0,
-  "n_contested": 9,
-  "suggested_floor": 0.22,
+  "threshold_in_force": 0.22,
+  "n_contested_below_inherited": 24,
+  "n_contested_below_in_force": 3,
+  "n_contested": 29,
+  "suggested_floor": 0.15,
+  "fragment_n_correct": 11,
+  "fragment_min_margin": 0.227,
+  "fragment_below_threshold": 0,
   "measures": "paralog margin at complete loci \u2014 an upper bound on rescue fragments, not a direct calibration of them",
   "groups": {
     "all_itpr_loci": {
-      "n": 22,
-      "min": 0.2249,
+      "n": 91,
+      "min": 0.1351,
       "max": 1.0,
-      "median": 0.3187,
-      "p05": 0.2249,
-      "p25": 0.2809,
-      "mean": 0.4303
+      "median": 0.2959,
+      "p05": 0.1897,
+      "p25": 0.2461,
+      "mean": 0.4049
     },
     "annotation_known": {
-      "n": 10,
-      "min": 0.2249,
+      "n": 40,
+      "min": 0.159,
       "max": 1.0,
-      "median": 0.2901,
-      "p05": 0.2249,
-      "p25": 0.2264,
-      "mean": 0.3576
+      "median": 0.3011,
+      "p05": 0.1601,
+      "p25": 0.233,
+      "mean": 0.4552
     },
     "annotation_agrees": {
-      "n": 10,
-      "min": 0.2249,
+      "n": 39,
+      "min": 0.159,
       "max": 1.0,
-      "median": 0.2901,
-      "p05": 0.2249,
-      "p25": 0.2264,
-      "mean": 0.3576
+      "median": 0.2993,
+      "p05": 0.159,
+      "p25": 0.2312,
+      "mean": 0.459
     },
     "annotation_agrees_contested": {
-      "n": 9,
-      "min": 0.2249,
-      "max": 0.3472,
+      "n": 29,
+      "min": 0.159,
+      "max": 0.3601,
       "median": 0.2809,
-      "p05": 0.2249,
-      "p25": 0.2264,
-      "mean": 0.2863
+      "p05": 0.159,
+      "p25": 0.2306,
+      "mean": 0.2725
     },
     "annotation_disagrees": {
-      "n": 0
+      "n": 1,
+      "min": 0.306,
+      "max": 0.306,
+      "median": 0.306,
+      "p05": 0.306,
+      "p25": 0.306,
+      "mean": 0.306
     },
     "family_margin_all": {
-      "n": 43,
+      "n": 194,
       "min": 1.0,
       "max": 1.0,
       "median": 1.0,
       "p05": 1.0,
       "p25": 1.0,
       "mean": 1.0
+    },
+    "fragment_all": {
+      "n": 84,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.24,
+      "p05": 0.0,
+      "p25": 0.11,
+      "mean": 0.2383
+    },
+    "fragment_annotation_known": {
+      "n": 11,
+      "min": 0.227,
+      "max": 0.37,
+      "median": 0.284,
+      "p05": 0.227,
+      "p25": 0.227,
+      "mean": 0.302
+    },
+    "fragment_annotation_agrees": {
+      "n": 11,
+      "min": 0.227,
+      "max": 0.37,
+      "median": 0.284,
+      "p05": 0.227,
+      "p25": 0.227,
+      "mean": 0.302
+    },
+    "fragment_annotation_disagrees": {
+      "n": 0
     }
   },
   "verdict": [
-    "0/9 contested loci of known, correctly-called identity sit below the inherited threshold 0.220.",
-    "Observed separation at contested loci: median 0.2809, min 0.2249. A threshold of 0.22 is cleared by every one of them.",
-    "D14: at all 43 loci only one family's baits aligned \u2014 the ITPR and RyR panels never contested a locus, so the family separation was decided before any margin had to be applied."
+    "24/29 contested loci of known, correctly-called identity sit below the **inherited** threshold 0.333; 3/29 sit below the threshold **in force** (0.220).",
+    "Complete loci are an upper bound on rescue fragments, so a threshold that complete evidence fails cannot be met by a fragment: under the inherited value every rescue trace would be reported `tblastn_trace_ambiguous` and no absence claim would ever be attributed. That constant does not transfer.",
+    "Observed separation at contested loci: median 0.2809, min 0.159. A threshold of 0.15 is cleared by every one of them.",
+    "D14: at all 194 loci only one family's baits aligned \u2014 the ITPR and RyR panels never contested a locus, so the family separation was decided before any margin had to be applied.",
+    "**Fragment-level, the measurement S5a deferred**: 11 rescue region(s) overlap a gene the assembly names for a paralog. The attribution agrees with that name on 11/11, over margins 0.227-0.370.",
+    "0/11 of the correct fragment attributions fall below the threshold in force (0.22); 7/11 would have fallen below the inherited 0.333 and been reported ambiguous.",
+    "No region was attributed against its annotation, so this evidence bounds the threshold from below only: it says how low the floor must be to keep correct calls, not how high it may go before wrong ones enter."
   ]
 }
