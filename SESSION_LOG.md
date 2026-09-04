@@ -631,3 +631,63 @@ figure panel *b* to the data (the third trace was clipped off-canvas by a
 y-limit chosen for the two-seed case).
 
 **Next: S4** — the declared assembly manifest.
+
+---
+
+## 2026-09-04 (session 5, part 2) — S4: the genome manifest
+
+**Task.** S4 — declare the assembly manifest that is the denominator for
+every later absence claim, and build the download tooling.
+
+**Scope decision (put to the user).** Order representatives are fixed by the
+roadmap; the choice was which margin set joins them. Chosen: the **full
+margin union**, so the bird question is answered per species rather than by
+sample. Alternatives offered were dropping the 100 fragment-only species, or
+capping Aves at a stratified ~25.
+
+**What ran.** `datasets summary genome taxon 7742 --reference` → 6,205
+vertebrate reference assemblies; taxonomy for 6,185 taxids in 400-taxid
+chunks; both dumps archived under `<data_root>/raw_api/ncbi_datasets/` so
+the build reruns offline. Then `s4_build_manifest.py` (32 s cold, 2 s cached).
+
+**Result: 309 genomes**, 161 orders ∪ 169 margin species, 552.5 Gbp —
+≈553 GB of FASTA, ≈166 GB as zip, against 1,434 GB free on the drive.
+
+**The margin species are derived, not typed.** This is the one real
+departure from the PIEZO port, whose margin list was 28 hand-written species.
+Here four rules with stated thresholds run over the committed census tables
+(`s4_manifest_lib.derive_margins`): `zero_hit_proteome` 15, `missing_paralog`
+(<3 paralogs) 101, `fragment_only` (longest record < `family.MIN_LENGTH_AA`)
+100, `anchor` 5. 61 genomes carry two reasons, 11 carry three. The
+denominator therefore rebuilds from the census and cannot drift from it.
+
+**130 of the 169 margin species are birds** — S3's annotation-depth result
+(Aves median 13,894 proteins vs Mammalia 34,127) reappearing as a scope
+requirement. D9 is live in the manifest too: 168 RefSeq / 141 GenBank, and
+**33 genomes carry no gene set at all**.
+
+**`fetch_genomes.py` tested end to end** on the three smallest genomes
+(*Takifugu rubripes*, *Genypterus blacodes*, *Lepidogalaxias
+salamandroides*, ~1.4 GB total, ~30 s each): md5 verification against NCBI's
+own `md5sum.txt`, `.done` resume, `--verify`, fetch → search → purge, and a
+failing `--search-cmd` correctly keeping its genome.
+
+**Two bugs the testing found.**
+1. Margin species were matched to an assembly by a **last-wins taxid
+   lookup** while order reps used the rank function; a species with two
+   reference assemblies entered the manifest twice under two accessions
+   (310 rows / 309 taxids, and zebrafish lost its `anchor` reason). Both
+   paths now use `rank_key`.
+2. `--verify` **silently skipped** any checksummed file the install does not
+   keep (`dataset_catalog.json`), so a deleted or truncated `.fna` would have
+   verified clean. The install now rewrites `md5sum.txt` to exactly the
+   files it kept, and a missing name is a hard failure — proved by deleting
+   `sequence_report.jsonl` and watching `--verify` exit 1.
+
+**Files.** `scripts/s4_manifest_lib.py`, `scripts/s4_build_manifest.py`,
+`scripts/s4_notes.py`, `scripts/fetch_genomes.py`;
+`results/genome_manifest.tsv` (309 rows), `results/genome_manifest_notes.md`.
+
+**Next session: S5** — tblastn + miniprot over these 309 genomes, producing
+the found / lost / assembly-gap ledger. Start with the 130 bird margin
+species; the three >10 Gbp assemblies should be scheduled deliberately.

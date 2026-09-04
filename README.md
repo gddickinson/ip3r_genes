@@ -140,9 +140,9 @@ One task per session. Full ledger with dependencies and results in
 | S0 | Literature baseline + scope confirmation | ✅ completed 2026-08-18 |
 | S1 | Toolchain + positive/negative controls (RyR is the sharp decoy) | ✅ completed 2026-08-18 |
 | S2 | Uncapped InterPro enumeration → census v2 | ✅ completed 2026-09-03 |
-| S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) + convergence argument | ✅ completed 2026-09-03 |
-| S4 | Genome scope manifest (the denominator) | ⏳ pending — **next** |
-| S5 | Genomic sweep → per-genome ledger + novel gene models | ⏳ pending |
+| S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) + convergence argument | ✅ completed 2026-09-04 |
+| S4 | Genome scope manifest (the denominator) | ✅ completed 2026-09-04 |
+| S5 | Genomic sweep → per-genome ledger + novel gene models | ⏳ pending — **next** |
 | S20 | Non-vertebrate sweep — the family's true range | ⏳ pending |
 | S23 | Invertebrate / protist / plant / fungal genome sweep | ⏳ pending |
 | S6 | Alignment upgrade (MAFFT L-INS-i + trimAl) | ⏳ pending |

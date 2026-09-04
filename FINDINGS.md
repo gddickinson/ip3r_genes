@@ -433,3 +433,39 @@ caught only by the blunt rule that a search which has not settled after ten
 rounds cannot support a completeness claim. The lesson is recorded as a
 decision: keep the blunt rule, and always report what a search is actually
 built from rather than only whether it stopped growing.
+
+---
+
+## 2026-09-04 — S4: the denominator, and the discovery that this is a bird problem
+
+**Every claim this project makes about a missing gene will be a claim about
+309 genomes, and about nothing else.** That list is now fixed and published:
+one best assembly for each of 161 vertebrate orders, plus every species the
+protein-level census could not settle. It comes to 552 billion bases of DNA.
+
+**What the census could not settle turned out to be, overwhelmingly, birds.**
+Of the 169 species pulled in because their receptor complement looks wrong —
+too few copies, only broken fragments, or nothing at all — **130 are birds**,
+against 21 ray-finned fishes and 10 mammals. This is the same finding S3
+reported from the other side: bird genomes are described by roughly a third
+as many proteins as mammal genomes, so the family's three receptors are
+routinely missing from bird protein sets. Whether that means a bird has lost
+a receptor gene or merely that nobody has annotated it is precisely what
+searching the DNA will decide, and every one of those 130 birds is now in
+the list to be searched. *(pending: S5)*
+
+**Thirty-three of the 309 genomes have no gene list at all.** They are raw
+sequence: assembled DNA nobody has yet marked up with where the genes are.
+For those species the project may say what the DNA contains but must never
+quote an annotation, and the manifest records which ones they are so the
+distinction cannot be lost later.
+
+**Three genomes are enormous and will dominate the work.** The African
+lungfish assembly alone is 40 billion bases — thirteen times the human
+genome — with a newt at 23 billion and a fire-bellied toad at 10 billion
+close behind. Amphibian and lungfish genomes are famously bloated with
+repetitive DNA, and searching them for a receptor gene costs accordingly.
+
+**Nothing was dropped for want of a genome.** All 169 uncertain species have
+a sequenced assembly available. Every absence this project eventually reports
+will therefore be an absence measured in DNA, not an absence of data.
