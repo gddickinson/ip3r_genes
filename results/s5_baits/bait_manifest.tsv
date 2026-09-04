@@ -1,0 +1,39 @@
+id	accession	family	clade	paralog	band	slot	species	order	length	arch	reviewed	origin	note
+A0A672IUQ7|ITPR1|Salarias_fasciatus	A0A672IUQ7	ITPR	ITPR1	ITPR1	actinopteri	ITPR1@actinopteri	Salarias fasciatus (Jewelled blenny) (Blennius fasciatus)	Blenniiformes	2748	5	0	s5_addition	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A8M2BDG0|itpr1a|Danio_rerio|ITPR1	A0A8M2BDG0	ITPR	ITPR1	ITPR1	actinopteri	ITPR1@actinopteri	Danio rerio	Cypriniformes	2711	5/5	0	s3_seed	zebrafish itpr1a (3R duplicate)
+A0A8J0T3U5|itpr1|Xenopus_tropicalis|ITPR1	A0A8J0T3U5	ITPR	ITPR1	ITPR1	amphibia	ITPR1@amphibia	Xenopus tropicalis	Anura	2743	5/5	0	s3_seed	Xenopus tropicalis
+A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	A0A8V0ZJT0	ITPR	ITPR1	ITPR1	aves	ITPR1@aves	Gallus gallus	Galliformes	2779	5/5	0	s3_seed	chicken
+A0ABM4F3U0|ITPR1|Apteryx_mantelli	A0ABM4F3U0	ITPR	ITPR1	ITPR1	aves	ITPR1@aves	Apteryx mantelli (North Island brown kiwi)	Apterygiformes	2750	5	0	s5_addition	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+P11881|Itpr1|Mus_musculus|ITPR1	P11881	ITPR	ITPR1	ITPR1	mammalia	ITPR1@mammalia	Mus musculus	Rodentia	2749	5/5	1	s3_seed	mouse, Swiss-Prot
+Q14643|ITPR1|Homo_sapiens|ITPR1	Q14643	ITPR	ITPR1	ITPR1	mammalia	ITPR1@mammalia	Homo sapiens	Primates	2758	5/5	1	s3_seed	human, Swiss-Prot, the reference
+A0A670JBK6|ITPR1|Podarcis_muralis	A0A670JBK6	ITPR	ITPR1	ITPR1	reptilia	ITPR1@reptilia	Podarcis muralis (Wall lizard) (Lacerta muralis)	Squamata	2747	5	0	s5_addition	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+H3A1P5|ITPR1|Latimeria_chalumnae|ITPR1	H3A1P5	ITPR	ITPR1	ITPR1	sarcopterygian_fish	ITPR1@sarcopterygian_fish	Latimeria chalumnae	Coelacanthiformes	2725	5/5	0	s3_seed	coelacanth — the sarcopterygian outgroup
+A0A8M9PQQ3|itpr2|Danio_rerio|ITPR2	A0A8M9PQQ3	ITPR	ITPR2	ITPR2	actinopteri	ITPR2@actinopteri	Danio rerio	Cypriniformes	2665	5/5	0	s3_seed	zebrafish
+A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	A0AAX7UHL1	ITPR	ITPR2	ITPR2	actinopteri	ITPR2@actinopteri	Astatotilapia calliptera (Eastern river bream) (Chromis callipterus)	Cichliformes	2701	5	0	s5_addition	itpr.hmm wins at 89% margin over an envelope covering 100% in 1 segment(s)
+A0A6I8RGU0|itpr2|Xenopus_tropicalis|ITPR2	A0A6I8RGU0	ITPR	ITPR2	ITPR2	amphibia	ITPR2@amphibia	Xenopus tropicalis	Anura	2705	5/5	0	s3_seed	Xenopus tropicalis
+A0A672UP22|ITPR2|Strigops_habroptila	A0A672UP22	ITPR	ITPR2	ITPR2	aves	ITPR2@aves	Strigops habroptila (Kakapo)	Psittaciformes	2700	5	0	s5_addition	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+F1P1X4|ITPR2|Gallus_gallus|ITPR2	F1P1X4	ITPR	ITPR2	ITPR2	aves	ITPR2@aves	Gallus gallus	Galliformes	2700	5/5	0	s3_seed	chicken
+Q14571|ITPR2|Homo_sapiens|ITPR2	Q14571	ITPR	ITPR2	ITPR2	mammalia	ITPR2@mammalia	Homo sapiens	Primates	2701	5/5	1	s3_seed	human, Swiss-Prot
+Q9Z329|Itpr2|Mus_musculus|ITPR2	Q9Z329	ITPR	ITPR2	ITPR2	mammalia	ITPR2@mammalia	Mus musculus	Rodentia	2701	5/5	1	s3_seed	mouse, Swiss-Prot
+A0ABM1LG32|ITPR2|Gekko_japonicus	A0ABM1LG32	ITPR	ITPR2	ITPR2	reptilia	ITPR2@reptilia	Gekko japonicus (Schlegel's Japanese gecko)	Squamata	2701	5	0	s5_addition	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	A0A8C6KWV8	ITPR	ITPR3	ITPR3	actinopteri	ITPR3@actinopteri	Nothobranchius furzeri (Turquoise killifish)	Cyprinodontiformes	2670	5	0	s5_addition	itpr.hmm wins at 89% margin over an envelope covering 99% in 1 segment(s)
+A0A8M6Z266|itpr3|Danio_rerio|ITPR3	A0A8M6Z266	ITPR	ITPR3	ITPR3	actinopteri	ITPR3@actinopteri	Danio rerio	Cypriniformes	2635	5/5	0	s3_seed	zebrafish
+A0A8J0SYK9|itpr3|Xenopus_tropicalis|ITPR3	A0A8J0SYK9	ITPR	ITPR3	ITPR3	amphibia	ITPR3@amphibia	Xenopus tropicalis	Anura	2673	5/5	0	s3_seed	Xenopus tropicalis
+A0A7K6LHC3|ITPR3|Falcunculus_frontatus	A0A7K6LHC3	ITPR	ITPR3	ITPR3	aves	ITPR3@aves	Falcunculus frontatus (Eastern shriketit)	Passeriformes	2670	5	0	s5_addition	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	A0A8V1ACE6	ITPR	ITPR3	ITPR3	aves	ITPR3@aves	Gallus gallus	Galliformes	2664	5/5	0	s3_seed	chicken
+A0A4W3GWE7|ITPR3|Callorhinchus_milii	A0A4W3GWE7	ITPR	ITPR3	ITPR3	chondrichthyes	ITPR3@chondrichthyes	Callorhinchus milii (Ghost shark)	Chimaeriformes	2630	5	0	s5_addition	itpr.hmm wins at 89% margin over an envelope covering 100% in 1 segment(s)
+P70227|Itpr3|Mus_musculus|ITPR3	P70227	ITPR	ITPR3	ITPR3	mammalia	ITPR3@mammalia	Mus musculus	Rodentia	2670	5/5	1	s3_seed	mouse, Swiss-Prot
+Q14573|ITPR3|Homo_sapiens|ITPR3	Q14573	ITPR	ITPR3	ITPR3	mammalia	ITPR3@mammalia	Homo sapiens	Primates	2671	5/5	1	s3_seed	human, Swiss-Prot
+A0A6J0TV85|ITPR3|Pogona_vitticeps	A0A6J0TV85	ITPR	ITPR3	ITPR3	reptilia	ITPR3@reptilia	Pogona vitticeps (central bearded dragon)	Squamata	2666	5	0	s5_addition	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+H3B932|ITPR3|Latimeria_chalumnae	H3B932	ITPR	ITPR3	ITPR3	sarcopterygian_fish	ITPR3@sarcopterygian_fish	Latimeria chalumnae (Coelacanth)	Coelacanthiformes	2675	5	0	s5_addition	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+W5MYT2|unnamed|Lepisosteus_oculatus|vertebrate_basal	W5MYT2	ITPR	vertebrate_basal		actinopteri	vertebrate_basal@actinopteri	Lepisosteus oculatus	Semionotiformes	2772	5/5	0	s3_seed	spotted gar — non-teleost actinopt.
+A0A4W3JHJ0|unnamed|Callorhinchus_milii|vertebrate_basal	A0A4W3JHJ0	ITPR	vertebrate_basal		chondrichthyes	vertebrate_basal@chondrichthyes	Callorhinchus milii	Chimaeriformes	2683	5/5	0	s3_seed	elephant shark — chondrichthyan
+A0AAJ7U4X1|LOC116952798|Petromyzon_marinus|vertebrate_basal	A0AAJ7U4X1	ITPR	vertebrate_basal		cyclostomata	vertebrate_basal@cyclostomata	Petromyzon marinus	Petromyzontiformes	2838	5/5	0	s3_seed	sea lamprey — cyclostome, pre-2R
+A0AC58GZ77|ryr2a|Danio_rerio|RYR2	A0AC58GZ77	RYR	RYR	RYR2	actinopteri	RYR@actinopteri	Danio rerio	Cypriniformes	4961	5/5	0	s3_seed	zebrafish ryr2a
+A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	A0A6I8Q6P7	RYR	RYR	RYR1	amphibia	RYR@amphibia	Xenopus tropicalis	Anura	5037	5/5	0	s3_seed	Xenopus tropicalis
+A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	A0A8V0Y8K1	RYR	RYR	RYR2	aves	RYR@aves	Gallus gallus	Galliformes	4968	5/5	0	s3_seed	chicken
+A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal	A0A4W3I1N0	RYR	RYR		chondrichthyes	RYR@chondrichthyes	Callorhinchus milii	Chimaeriformes	4982	5/5	0	s3_seed	elephant shark — chondrichthyan
+A0AAJ7XD62|LOC116953891|Petromyzon_marinus|vertebrate_basal	A0AAJ7XD62	RYR	RYR		cyclostomata	RYR@cyclostomata	Petromyzon marinus	Petromyzontiformes	5168	5/5	0	s3_seed	sea lamprey — cyclostome
+Q92736|RYR2|Homo_sapiens|RYR2	Q92736	RYR	RYR	RYR2	mammalia	RYR@mammalia	Homo sapiens	Primates	4967	5/5	1	s3_seed	human, Swiss-Prot
+A0A3Q0HBW9|RYR|Alligator_sinensis	A0A3Q0HBW9	RYR	RYR	RYR2	reptilia	RYR@reptilia	Alligator sinensis (Chinese alligator)	Crocodylia	4986	5	0	s5_addition	ryr.hmm wins at 91% margin over an envelope covering 99% in 2 segment(s)
+H3BGR5|RYR|Latimeria_chalumnae	H3BGR5	RYR	RYR	RYR1	sarcopterygian_fish	RYR@sarcopterygian_fish	Latimeria chalumnae (Coelacanth)	Coelacanthiformes	5024	5	0	s5_addition	ryr.hmm wins at 91% margin over an envelope covering 100% in 1 segment(s)

@@ -1,0 +1,51 @@
+{
+ "itpr": {
+  "n": 28,
+  "median_max_intron": 28499,
+  "max_max_intron": 106668,
+  "max_any_transcript": 152216,
+  "n_over_200kb": 0,
+  "widest": "homo_sapiens/ITPR1",
+  "widest_bp": 152216,
+  "max_intron_per_gbp": 49900.8,
+  "steepest": "oryzias_latipes/ITPR3"
+ },
+ "ryr": {
+  "n": 23,
+  "median_max_intron": 16327,
+  "max_max_intron": 227927,
+  "max_any_transcript": 227927,
+  "n_over_200kb": 2,
+  "widest": "homo_sapiens/RYR2",
+  "widest_bp": 227927,
+  "max_intron_per_gbp": 91951.8,
+  "steepest": "petromyzon_marinus/RYR2"
+ },
+ "max_intron_rule": {
+  "widest_measured_bp": 227927,
+  "anchor_genome_bp": 3099750718,
+  "scale_bp": 500000,
+  "floor_bp": 200000,
+  "cap_bp": 2000000,
+  "safety_factor": 2.0,
+  "formula": "min(cap, max(floor, scale_bp * genome_bp / anchor_genome_bp))"
+ },
+ "n_rows": 51,
+ "misses": [
+  "taeniopygia_guttata/RYR1",
+  "xenopus_tropicalis/RYR2",
+  "danio_rerio/ITPR1",
+  "danio_rerio/RYR1",
+  "danio_rerio/RYR2",
+  "oryzias_latipes/RYR1",
+  "oryzias_latipes/RYR3",
+  "latimeria_chalumnae/RYR2",
+  "callorhinchus_milii/ITPR1",
+  "callorhinchus_milii/RYR1",
+  "petromyzon_marinus/ITPR1",
+  "petromyzon_marinus/ITPR2",
+  "petromyzon_marinus/ITPR3",
+  "petromyzon_marinus/RYR1",
+  "petromyzon_marinus/RYR3"
+ ]
+}

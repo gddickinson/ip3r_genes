@@ -1,0 +1,193 @@
+{
+ "rates": {
+  "miniprot_s_per_gbp": 36.0,
+  "rescue_s_per_genome": 30.0,
+  "rescue_fraction": 0.5,
+  "measured_on": "S5a pilot clean recomputes, 8 threads, 121,294-residue panel"
+ },
+ "groups": [
+  {
+   "group": "swept (S5a pilot)",
+   "genomes": 6,
+   "gbp": 5.4,
+   "download_gb": 1.6,
+   "fasta_gb": 5.4,
+   "miniprot_h": 0.1,
+   "rescue_h": 0.0,
+   "compute_h": 0.1,
+   "wall_h_at_workers": 0.0
+  },
+  {
+   "group": "remaining, standard",
+   "genomes": 301,
+   "gbp": 483.9,
+   "download_gb": 145.2,
+   "fasta_gb": 483.9,
+   "miniprot_h": 4.8,
+   "rescue_h": 1.3,
+   "compute_h": 6.1,
+   "wall_h_at_workers": 3.0
+  },
+  {
+   "group": "remaining, giants",
+   "genomes": 2,
+   "gbp": 63.2,
+   "download_gb": 19.0,
+   "fasta_gb": 63.2,
+   "miniprot_h": 0.6,
+   "rescue_h": 0.0,
+   "compute_h": 0.6,
+   "wall_h_at_workers": 0.3
+  }
+ ],
+ "remaining_totals": {
+  "genomes": 303,
+  "gbp": 547.1,
+  "download_gb": 164.2,
+  "fasta_gb": 547.1,
+  "compute_h": 6.7
+ },
+ "workers_assumed": 2,
+ "wall_h_remaining": 3.4,
+ "storage": {
+  "free_gb_now": 1427.4,
+  "fasta_gb_if_kept": 547.1,
+  "fits_without_delete_after": true,
+  "note": "--delete-after keeps the peak footprint at ~2 genomes; keeping the FASTAs costs the fasta_gb total but saves re-downloading for S8 synteny and S10 validation"
+ },
+ "flags": {
+  "genomes_below_contiguity_bar": 120,
+  "contiguity_breakdown": [
+   {
+    "group": "class",
+    "name": "Aves",
+    "below": 101,
+    "total": 152,
+    "pct": 66.4
+   },
+   {
+    "group": "class",
+    "name": "Actinopteri",
+    "below": 10,
+    "total": 88,
+    "pct": 11.4
+   },
+   {
+    "group": "class",
+    "name": "Mammalia",
+    "below": 7,
+    "total": 37,
+    "pct": 18.9
+   },
+   {
+    "group": "class",
+    "name": "Chondrichthyes",
+    "below": 0,
+    "total": 12,
+    "pct": 0.0
+   },
+   {
+    "group": "class",
+    "name": "Amphibia",
+    "below": 0,
+    "total": 8,
+    "pct": 0.0
+   },
+   {
+    "group": "class",
+    "name": "Lepidosauria",
+    "below": 2,
+    "total": 5,
+    "pct": 40.0
+   },
+   {
+    "group": "class",
+    "name": "Cladistia",
+    "below": 0,
+    "total": 1,
+    "pct": 0.0
+   },
+   {
+    "group": "class",
+    "name": "Coelacanthimorpha",
+    "below": 0,
+    "total": 1,
+    "pct": 0.0
+   },
+   {
+    "group": "class",
+    "name": "Crocodylia",
+    "below": 0,
+    "total": 1,
+    "pct": 0.0
+   },
+   {
+    "group": "class",
+    "name": "Dipnoi",
+    "below": 0,
+    "total": 1,
+    "pct": 0.0
+   },
+   {
+    "group": "class",
+    "name": "Hyperoartia",
+    "below": 0,
+    "total": 1,
+    "pct": 0.0
+   },
+   {
+    "group": "class",
+    "name": "Myxini",
+    "below": 0,
+    "total": 1,
+    "pct": 0.0
+   },
+   {
+    "group": "class",
+    "name": "Testudines",
+    "below": 0,
+    "total": 1,
+    "pct": 0.0
+   },
+   {
+    "group": "scope",
+    "name": "margin species",
+    "below": 101,
+    "total": 148,
+    "pct": 68.2
+   },
+   {
+    "group": "scope",
+    "name": "order reps",
+    "below": 19,
+    "total": 161,
+    "pct": 11.8
+   },
+   {
+    "group": "total",
+    "name": "all manifest genomes",
+    "below": 120,
+    "total": 309,
+    "pct": 38.8
+   }
+  ],
+  "contiguity_bar_bp": 142212,
+  "genomes_with_capped_max_intron": 2,
+  "capped_accessions": [
+   "GCF_964261635.1",
+   "GCF_019279795.1"
+  ],
+  "giants_needing_chunked_miniprot": [
+   {
+    "accession": "GCF_964261635.1",
+    "organism": "Lissotriton helveticus",
+    "fasta_gb": "23.17"
+   },
+   {
+    "accession": "GCF_019279795.1",
+    "organism": "Protopterus annectens",
+    "fasta_gb": "40.05"
+   }
+  ]
+ }
+}

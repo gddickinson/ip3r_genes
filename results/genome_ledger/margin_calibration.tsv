@@ -1,0 +1,7 @@
+group	n	min	p05	p25	median	mean	max
+all_itpr_loci	22	0.2249	0.2249	0.2809	0.3187	0.4303	1.0
+annotation_known	10	0.2249	0.2249	0.2264	0.2901	0.3576	1.0
+annotation_agrees	10	0.2249	0.2249	0.2264	0.2901	0.3576	1.0
+annotation_agrees_contested	9	0.2249	0.2249	0.2264	0.2809	0.2863	0.3472
+annotation_disagrees	0						
+family_margin_all	43	1.0	1.0	1.0	1.0	1.0	1.0

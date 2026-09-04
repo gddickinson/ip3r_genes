@@ -33,7 +33,14 @@ records**; the profiles resolve **2,314 of the 3,361 the architecture rule
 could not call**, and add **618 proteins the domain search never returned**.
 Census v3 is **16,039 records — 8,000 IP3 receptors, 7,432 ryanodine
 receptors, 605 uncallable, 2 conflicts**
-([`results/census_v3/`](results/census_v3/)). The next session runs **S4**.
+([`results/census_v3/`](results/census_v3/)). S4 declared the genome
+denominator — **309 assemblies, 161 vertebrate orders ∪ 169 margin species,
+552.5 Gbp** ([`results/genome_manifest.tsv`](results/genome_manifest.tsv)) —
+and S5a built and calibrated the genomic sweep that runs over them: a
+**38-bait panel derived from the census by seven enforced rules**, three
+measured thresholds, and a six-genome pilot
+([`results/genome_ledger/`](results/genome_ledger/)). The next session runs
+**S5b**, the full sweep.
 
 ---
 
@@ -142,7 +149,8 @@ One task per session. Full ledger with dependencies and results in
 | S2 | Uncapped InterPro enumeration → census v2 | ✅ completed 2026-09-03 |
 | S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) + convergence argument | ✅ completed 2026-09-04 |
 | S4 | Genome scope manifest (the denominator) | ✅ completed 2026-09-04 |
-| S5 | Genomic sweep → per-genome ledger + novel gene models | ⏳ pending — **next** |
+| S5a | Genomic sweep: bait panel, calibrated pipeline, pilot | ✅ completed 2026-09-04 |
+| S5b | The full 309-genome sweep → ledger + census v4 | ⏳ pending — **next** |
 | S20 | Non-vertebrate sweep — the family's true range | ⏳ pending |
 | S23 | Invertebrate / protist / plant / fungal genome sweep | ⏳ pending |
 | S6 | Alignment upgrade (MAFFT L-INS-i + trimAl) | ⏳ pending |
@@ -170,6 +178,40 @@ One task per session. Full ledger with dependencies and results in
 ## Findings so far
 
 Plain-language entries per task: [`FINDINGS.md`](FINDINGS.md). Headlines:
+
+**S5a — the genomes we suspected are mostly the genomes we cannot read.**
+The 169 "margin" species were flagged because their protein sets were missing
+an IP3 receptor or held only fragments. Before searching them we asked whether
+their assembled pieces are even long enough to hold the gene, which spans
+80–500 kb. **120 of the 309 genomes are not** — and not at random: **66 % of
+birds against 11 % of ray-finned fishes, 68 % of margin species against 12 %
+of order representatives.** The suspicion and the artefact that would
+manufacture it live in the same genomes. Worse, the bias runs the same
+direction as the biology: below the bar the pilot recovers the compact ITPR3
+(82 kb) in 2 of 3 genomes and the sprawling ITPR1 (186 kb) and ITPR2 (231 kb)
+in none — a broken assembly loses the *big* paralogs first, which is exactly
+the pattern that would be read as birds having lost ITPR1 and ITPR2.
+→ [`results/genome_ledger/report.md`](results/genome_ledger/report.md)
+
+**S5a — two inherited constants that did not survive measurement.** This
+project's machinery is ported from the PIEZO project, whose decisions are
+carried forward as pre-agreed rules. Two of them were numbers, and numbers do
+not port. miniprot's max-intron setting is a threshold on the ledger's own
+call — too small, and a gene is *split* and reads as a fragment — so it was
+measured: **no IP3 receptor in an 11-species panel has an intron over the
+200 kb default**, though the ryanodine control exceeds it twice. And the
+margin used to attribute a fragmentary trace to a paralog came from a family
+whose paralogs are 40–50 % identical, where these are 61–68 %: at complete
+loci of independently-known identity, **7 of 9 fall below it**, so under the
+inherited value no absence could ever have been attributed (new decision
+**D25**).
+
+**S5a — searched as DNA, the two families stop confusing each other.**
+Ryanodine receptors carry every protein signature that identifies an IP3
+receptor, and at the protein level they fooled this project's own detector
+completely (S1). Across the pilot's **43 genomic loci, every one was matched
+by one family's baits and simply not by the other's.** The ambiguity is a
+property of searching protein fragments, not of the two families.
 
 **S3 — a second opinion on 15,000 proteins, and one correction.** The
 domain rule and the sequence profiles read completely different evidence —

@@ -469,3 +469,72 @@ repetitive DNA, and searching them for a receptor gene costs accordingly.
 **Nothing was dropped for want of a genome.** All 169 uncertain species have
 a sequenced assembly available. Every absence this project eventually reports
 will therefore be an absence measured in DNA, not an absence of data.
+
+---
+
+## 2026-09-04 — S5a: what a fragmented genome does to a missing gene
+
+**The genomes chosen because their proteins looked incomplete are largely the
+genomes that were never assembled well enough to show the gene.** This
+project's list of 309 genomes was built in two halves: one representative per
+vertebrate order, plus 169 "margin" species flagged because their protein
+sets were missing an IP3 receptor, or held only fragments of one. Almost all
+of those margin species are birds.
+
+Before searching any of them, we asked a simple question of the genomes
+themselves: are the assembled pieces even long enough to contain an IP3
+receptor gene? An IP3 receptor spans roughly 80,000 to 500,000 bases of DNA.
+If a genome has been assembled into pieces shorter than that, the gene cannot
+sit whole on any one of them, and its apparent absence says nothing about the
+animal.
+
+**120 of the 309 genomes fail that test — and not at random.** Two thirds of
+the birds fail it, against one in nine of the ray-finned fishes. Sixty-eight
+per cent of the margin species fail it, against twelve per cent of the order
+representatives. The suspicion that made these species interesting and the
+technical shortcoming that would manufacture that same suspicion are very
+largely the same set of genomes. Nothing about bird IP3 receptor loss can be
+read from this evidence until the two are told apart.
+
+**Worse, the bias points the same way as the biology would.** The three human
+paralogs encode near-identical proteins but occupy wildly different amounts
+of DNA — ITPR3 is compact, ITPR1 and ITPR2 sprawl over two to three times as
+much. In the six-genome pilot, every paralog was found in every well-assembled
+genome. In the poorly-assembled ones, the compact ITPR3 was still found in
+two of three, while the two sprawling paralogs were found in none. A broken
+assembly does not lose receptor genes at random: **it loses the big ones
+first** — which is exactly the pattern that would be mistaken for birds having
+lost ITPR1 and ITPR2. *(pending: S5b, which tests this across all 309.)*
+
+**A ryanodine receptor was carried into every search as a tripwire, and it
+worked.** Ryanodine receptors are the IP3 receptor's sister family, present in
+every vertebrate genome in three copies. If a search finds none of them, the
+problem is the search or the assembly, not the animal. In *Todus mexicanus* —
+the Puerto Rican tody, the bird whose protein set contained no IP3 receptor at
+all — the tripwire found a single ryanodine receptor where there should be
+three, and even that one unnamed. That genome is not missing calcium channels.
+It is missing continuous DNA.
+
+**Where the sequences are good, the two families do not confuse each other at
+all.** The ryanodine receptors have shadowed this project from the start:
+they carry every protein signature that identifies an IP3 receptor, and at the
+protein level they fooled an early version of our own detector completely.
+Searched against genomic DNA instead, the confusion vanishes — across all 43
+gene loci examined, each was matched by one family's sequences and simply not
+by the other's. The ambiguity that dogs protein databases is not intrinsic to
+the two families; it is a property of searching fragments rather than genes.
+
+**One thing the databases are quietly getting wrong.** In both pufferfish and
+pink cusk-eel, the two copies of ITPR1 that fish carry sit side by side in the
+genome, one properly named and the other left with a placeholder identifier.
+The same is true of two of their ryanodine receptors. These are real, complete,
+correctly-placed genes that no search by name will ever find — which is why
+every locus whose annotation does not already name it correctly is being
+carried forward rather than discarded. *(pending: S18, the annotation audit.)*
+
+**And a limit worth stating plainly.** Below the well-studied vertebrates, the
+paralog names simply run out. Across the entire protein census there is no
+complete, full-length, correctly-named ITPR1 or ITPR2 from any shark, ray or
+chimaera, none from lampreys or hagfish, and no ITPR2 from the coelacanth
+lineage. The search can still find those genes — it just cannot say which of
+the three they are. That question belongs to the family tree, not to a name.

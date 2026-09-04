@@ -1,0 +1,85 @@
+{
+ "built_at": "2026-09-04T13:55:09+00:00",
+ "census": "results/census_v3/census_v3.tsv",
+ "n_baits": 38,
+ "n_itpr": 30,
+ "n_ryr": 8,
+ "total_residues": 121294,
+ "n_s3_seeds": 25,
+ "n_s5_additions": 13,
+ "reference_lengths": {
+  "RYR3": 4870,
+  "RYR2": 4966,
+  "RYR1": 5035,
+  "ITPR1": 2749,
+  "ITPR2": 2701,
+  "ITPR3": 2670
+ },
+ "slots": {
+  "ITPR1@mammalia": "2/1",
+  "ITPR2@mammalia": "2/1",
+  "ITPR3@mammalia": "2/1",
+  "RYR@mammalia": "1/1",
+  "ITPR1@aves": "2/2",
+  "ITPR2@aves": "2/2",
+  "ITPR3@aves": "2/2",
+  "RYR@aves": "1/1",
+  "ITPR1@reptilia": "1/1",
+  "ITPR2@reptilia": "1/1",
+  "ITPR3@reptilia": "1/1",
+  "RYR@reptilia": "1/1",
+  "ITPR1@amphibia": "1/1",
+  "ITPR2@amphibia": "1/1",
+  "ITPR3@amphibia": "1/1",
+  "RYR@amphibia": "1/1",
+  "ITPR1@actinopteri": "2/2",
+  "ITPR2@actinopteri": "2/2",
+  "ITPR3@actinopteri": "2/2",
+  "RYR@actinopteri": "1/1",
+  "ITPR1@chondrichthyes": "0/1",
+  "ITPR2@chondrichthyes": "0/1",
+  "ITPR3@chondrichthyes": "1/1",
+  "RYR@chondrichthyes": "1/1",
+  "ITPR1@sarcopterygian_fish": "1/1",
+  "ITPR2@sarcopterygian_fish": "0/1",
+  "ITPR3@sarcopterygian_fish": "1/1",
+  "RYR@sarcopterygian_fish": "1/1",
+  "ITPR1@cyclostomata": "0/1",
+  "ITPR2@cyclostomata": "0/1",
+  "ITPR3@cyclostomata": "0/1",
+  "RYR@cyclostomata": "1/1"
+ },
+ "unfilled_slots": [
+  "ITPR1@chondrichthyes (0/1)",
+  "ITPR2@chondrichthyes (0/1)",
+  "ITPR2@sarcopterygian_fish (0/1)",
+  "ITPR1@cyclostomata (0/1)",
+  "ITPR2@cyclostomata (0/1)",
+  "ITPR3@cyclostomata (0/1)"
+ ],
+ "screened": 57,
+ "screen_failures": 0,
+ "archive_misses": [],
+ "thresholds": {
+  "bait_band_aa": [
+   2400,
+   3100
+  ],
+  "ryr_band_aa": [
+   4600,
+   5400
+  ],
+  "min_envelope_frac": 0.55,
+  "max_internal_gap_aa": 400,
+  "rel_margin": 0.1,
+  "min_score": 30.0
+ },
+ "screen_self_test": {
+  "fusion_itpr_ryr": true,
+  "insertion_in_itpr": true,
+  "truncated_itpr": true
+ },
+ "sha256": {
+  "baits.faa": "5d9f3d4e72feb6abfa97bcace5f8bf7a6d5a44b5ee54a2a564a4175d0a1306f5"
+ }
+}

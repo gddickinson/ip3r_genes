@@ -691,3 +691,87 @@ failing `--search-cmd` correctly keeping its genome.
 **Next session: S5** — tblastn + miniprot over these 309 genomes, producing
 the found / lost / assembly-gap ledger. Start with the 130 bird margin
 species; the three >10 Gbp assemblies should be scheduled deliberately.
+
+---
+
+## 2026-09-04 — S5a: the genomic sweep's instrument, built and calibrated
+
+**Task.** S5 (genomic tblastn + miniprot sweep → per-genome ledger → census
+v4). Scope is S4's 309 genomes / 552.5 Gbp, so it was split per the session
+protocol: **S5a** builds and calibrates the instrument and pilots it,
+**S5b** runs the full sweep.
+
+**The bait panel** (`s5_bait_spec.py` + `s5_build_baits.py` +
+`s5_bait_screen.py`). 38 baits — 30 ITPR + 8 RyR control, 121,294 residues —
+**derived from `census_v3.tsv` by seven enforced rules**, not hand-listed, in
+the shape S4 used for its margin species. 25 reused S3 seeds + 13 additions
+(a Passeriform, a percomorph and a squamate per paralog; the bands that
+dominate the scope take two baits each). D5's chimera screen is this
+project's own instrument: both S3 profiles under S3's relative margin, plus a
+profile-envelope test. Six slots could not be filled from the whole census —
+no labelled full-length record exists for ITPR1/ITPR2 in chondrichthyans,
+ITPR2 in the coelacanth grade, or any paralog in cyclostomes.
+
+**The screen has its own negative control**, run on every build: three
+synthetic failures built from real panel baits, each aimed at the rule
+responsible. It earned its place by *failing on first run* — it asked the
+envelope to reject a truncation, which it cannot and should not, since a
+truncated protein aligns 100 % of *itself* in one clean segment. Truncation
+is the length band's job; the envelope's job is fusion.
+
+**Three calibrations a port could not supply.**
+
+1. **miniprot's `-G`** (`s5_intron_calibration.py`). A too-small max-intron
+   does not lose a gene, it *splits* one, and a split ITPR reads out of the
+   ledger as `fragment`. Measured across 11 Ensembl species: **0/28 ITPR
+   genes have an intron over the 200 kb default** (widest 152,216 bp, human
+   ITPR1); the RyR control exceeds it twice (RYR2 227,927 bp). The rule
+   scales from the widest measured intron, deliberately *not* from the
+   intron-per-Gbp ratio — that statistic is largest in the smallest genomes
+   and extrapolates to a 7.4 Mbp `-G` on the lungfish.
+2. **The unlabelled baits were competing as a fourth paralog.** Rescue
+   attribution ranked `vertebrate_basal` (gar/chimaera/lamprey — evidence
+   that a region is *an* ITPR, not a hypothesis about which) against the real
+   paralogs. In *Todus* an ITPR1 trace at a true 0.235 margin over ITPR2 was
+   reported at 0.027. Three cells moved from `tblastn_trace_ambiguous` to
+   `tblastn_trace` once the ranking was restricted to canonical paralogs.
+3. **`ATTRIBUTION_REL_MARGIN` does not transfer** (new **D25**). Inherited as
+   the PIEZO port's 1.5x ratio restated as 0.333, from a family 40–50 %
+   identical where these are 61–68 %. At complete loci whose paralog identity
+   the annotation independently establishes, **7/9 sit below it** (0.225–
+   0.347, median 0.281). A complete locus is an upper bound on a rescue
+   fragment, so under 0.333 no absence could ever be attributed → **0.22**,
+   limitation stated in the code, per-region margins recorded so S5b can
+   re-cut without re-running.
+
+**The pilot.** 6 genomes spanning the classification space (2 teleosts, 3
+birds incl. the `zero_hit_proteome` and an unannotated assembly, 1 mammal);
+24 cells, 43 loci, **0 RyR control failures**, 0 `absent` calls. The RyR
+control paid immediately: in *Todus mexicanus* it found **one** RyR locus
+where a bird has three, and unannotated — what is missing there is
+contiguity, not genes.
+
+**D14 at genome scale: at all 43 loci only one family's baits aligned at
+all.** The ITPR and RyR panels never contested a locus — sharper than the
+protein level, where S1 had all six RyR decoys promoted at 45 before the
+sister test existed.
+
+**D4's contiguity bar**, set at the median measured ITPR span (142,212 bp)
+rather than an invented number: **120/309 manifest genomes fail it — 66 % of
+Aves vs 11 % of Actinopteri, 68 % of margin species vs 12 % of order reps.**
+And below the bar the pilot recovers ITPR3 (82 kb span) 2/3 while ITPR1
+(186 kb) and ITPR2 (231 kb) are 0/3 — the detection bias points the same way
+as the loss signal.
+
+**Files.** `scripts/s5_bait_spec.py`, `s5_build_baits.py`,
+`s5_bait_screen.py`, `s5_intron_calibration.py`, `s5_calibration.py`,
+`s5_sweep_lib.py`, `s5_genome_io.py`, `s5_classify.py`, `s5_rescue.py`,
+`s5_run_sweep.py`, `s5_ledger.py`, `s5_calibrate_margin.py`, `s5_budget.py`,
+`s5_report.py`; `results/s5_baits/`, `results/genome_ledger/`.
+
+**Next session: S5b** — the full sweep. Budget measured, not estimated: 303
+genomes, 547 Gbp, **6.7 h compute** (miniprot 36 s/Gbp at 8 threads), 3.4 h
+wall at 2 shards, 164 GB download; 547 GB of FASTA fits in 1,427 GB free, so
+keep it for S8/S10. Run the two giants (*Protopterus* 40 Gbp, *Lissotriton*
+23 Gbp) separately on the chunked path. Re-calibrate the attribution margin
+on rescue regions of known identity, and test the span-bias result at 309.

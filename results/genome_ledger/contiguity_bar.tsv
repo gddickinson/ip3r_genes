@@ -1,0 +1,17 @@
+group	name	below	total	pct
+class	Aves	101	152	66.4
+class	Actinopteri	10	88	11.4
+class	Mammalia	7	37	18.9
+class	Chondrichthyes	0	12	0.0
+class	Amphibia	0	8	0.0
+class	Lepidosauria	2	5	40.0
+class	Cladistia	0	1	0.0
+class	Coelacanthimorpha	0	1	0.0
+class	Crocodylia	0	1	0.0
+class	Dipnoi	0	1	0.0
+class	Hyperoartia	0	1	0.0
+class	Myxini	0	1	0.0
+class	Testudines	0	1	0.0
+scope	margin species	101	148	68.2
+scope	order reps	19	161	11.8
+total	all manifest genomes	120	309	38.8

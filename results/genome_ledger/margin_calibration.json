@@ -1,0 +1,63 @@
+{
+  "inherited_threshold": 0.22,
+  "inherited_from": "PIEZO port, 1.5x bit-score ratio",
+  "n_contested_below_threshold": 0,
+  "n_contested": 9,
+  "suggested_floor": 0.22,
+  "measures": "paralog margin at complete loci \u2014 an upper bound on rescue fragments, not a direct calibration of them",
+  "groups": {
+    "all_itpr_loci": {
+      "n": 22,
+      "min": 0.2249,
+      "max": 1.0,
+      "median": 0.3187,
+      "p05": 0.2249,
+      "p25": 0.2809,
+      "mean": 0.4303
+    },
+    "annotation_known": {
+      "n": 10,
+      "min": 0.2249,
+      "max": 1.0,
+      "median": 0.2901,
+      "p05": 0.2249,
+      "p25": 0.2264,
+      "mean": 0.3576
+    },
+    "annotation_agrees": {
+      "n": 10,
+      "min": 0.2249,
+      "max": 1.0,
+      "median": 0.2901,
+      "p05": 0.2249,
+      "p25": 0.2264,
+      "mean": 0.3576
+    },
+    "annotation_agrees_contested": {
+      "n": 9,
+      "min": 0.2249,
+      "max": 0.3472,
+      "median": 0.2809,
+      "p05": 0.2249,
+      "p25": 0.2264,
+      "mean": 0.2863
+    },
+    "annotation_disagrees": {
+      "n": 0
+    },
+    "family_margin_all": {
+      "n": 43,
+      "min": 1.0,
+      "max": 1.0,
+      "median": 1.0,
+      "p05": 1.0,
+      "p25": 1.0,
+      "mean": 1.0
+    }
+  },
+  "verdict": [
+    "0/9 contested loci of known, correctly-called identity sit below the inherited threshold 0.220.",
+    "Observed separation at contested loci: median 0.2809, min 0.2249. A threshold of 0.22 is cleared by every one of them.",
+    "D14: at all 43 loci only one family's baits aligned \u2014 the ITPR and RyR panels never contested a locus, so the family separation was decided before any margin had to be applied."
+  ]
+}

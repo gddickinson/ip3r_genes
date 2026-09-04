@@ -1,0 +1,58 @@
+id	slot	origin	rank	passed	assignment	rel_margin	itpr_score	ryr_score	envelope_frac	max_internal_gap	n_segments	reason
+Q14643|ITPR1|Homo_sapiens|ITPR1	ITPR1@mammalia	s3_seed	0	1	ITPR	0.9018	4442.9	436.2	0.9996	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+P11881|Itpr1|Mus_musculus|ITPR1	ITPR1@mammalia	s3_seed	0	1	ITPR	0.9022	4442.8	434.4	0.9996	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	ITPR1@aves	s3_seed	0	1	ITPR	0.9025	4413.3	430.1	0.9946	0	1	itpr.hmm wins at 90% margin over an envelope covering 99% in 1 segment(s)
+A0A8J0T3U5|itpr1|Xenopus_tropicalis|ITPR1	ITPR1@amphibia	s3_seed	0	1	ITPR	0.9033	4365.5	422.2	0.9996	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A8M2BDG0|itpr1a|Danio_rerio|ITPR1	ITPR1@actinopteri	s3_seed	0	1	ITPR	0.8993	4289.4	432.1	0.9996	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+H3A1P5|ITPR1|Latimeria_chalumnae|ITPR1	ITPR1@sarcopterygian_fish	s3_seed	0	1	ITPR	0.9005	4112.7	409.4	0.9996	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+Q14571|ITPR2|Homo_sapiens|ITPR2	ITPR2@mammalia	s3_seed	0	1	ITPR	0.8955	4274.3	446.8	0.9978	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+Q9Z329|Itpr2|Mus_musculus|ITPR2	ITPR2@mammalia	s3_seed	0	1	ITPR	0.8935	4266.1	454.2	0.9978	0	1	itpr.hmm wins at 89% margin over an envelope covering 100% in 1 segment(s)
+F1P1X4|ITPR2|Gallus_gallus|ITPR2	ITPR2@aves	s3_seed	0	1	ITPR	0.8978	4282.0	437.7	0.9978	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A6I8RGU0|itpr2|Xenopus_tropicalis|ITPR2	ITPR2@amphibia	s3_seed	0	1	ITPR	0.8962	4231.1	439.1	0.9978	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A8M9PQQ3|itpr2|Danio_rerio|ITPR2	ITPR2@actinopteri	s3_seed	0	1	ITPR	0.8924	3986.5	428.8	0.9977	0	1	itpr.hmm wins at 89% margin over an envelope covering 100% in 1 segment(s)
+Q14573|ITPR3|Homo_sapiens|ITPR3	ITPR3@mammalia	s3_seed	0	1	ITPR	0.8962	4045.7	420.1	0.9989	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+P70227|Itpr3|Mus_musculus|ITPR3	ITPR3@mammalia	s3_seed	0	1	ITPR	0.8965	4034.9	417.5	0.9993	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	ITPR3@aves	s3_seed	0	1	ITPR	0.8984	4065.1	413.1	1.0	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A8J0SYK9|itpr3|Xenopus_tropicalis|ITPR3	ITPR3@amphibia	s3_seed	0	1	ITPR	0.8944	3997.2	422.2	0.9959	0	1	itpr.hmm wins at 89% margin over an envelope covering 100% in 1 segment(s)
+A0A8M6Z266|itpr3|Danio_rerio|ITPR3	ITPR3@actinopteri	s3_seed	0	1	ITPR	0.8987	3898.6	394.8	0.9879	14	2	itpr.hmm wins at 90% margin over an envelope covering 99% in 2 segment(s)
+A0A4W3JHJ0|unnamed|Callorhinchus_milii|vertebrate_basal	vertebrate_basal@chondrichthyes	s3_seed	0	1	ITPR	0.894	4070.7	431.4	0.9638	23	2	itpr.hmm wins at 89% margin over an envelope covering 96% in 2 segment(s)
+A0AAJ7U4X1|LOC116952798|Petromyzon_marinus|vertebrate_basal	vertebrate_basal@cyclostomata	s3_seed	0	1	ITPR	0.8955	4201.2	439.1	0.9986	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+W5MYT2|unnamed|Lepisosteus_oculatus|vertebrate_basal	vertebrate_basal@actinopteri	s3_seed	0	1	ITPR	0.9046	4409.0	420.6	0.9996	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	RYR@amphibia	s3_seed	0	1	RYR	0.9108	750.1	8405.8	0.9998	0	1	ryr.hmm wins at 91% margin over an envelope covering 100% in 1 segment(s)
+Q92736|RYR2|Homo_sapiens|RYR2	RYR@mammalia	s3_seed	0	1	RYR	0.9136	736.3	8518.3	1.0	0	1	ryr.hmm wins at 91% margin over an envelope covering 100% in 1 segment(s)
+A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	RYR@aves	s3_seed	0	1	RYR	0.9134	736.1	8504.8	1.0	0	1	ryr.hmm wins at 91% margin over an envelope covering 100% in 1 segment(s)
+A0AC58GZ77|ryr2a|Danio_rerio|RYR2	RYR@actinopteri	s3_seed	0	1	RYR	0.9124	737.0	8408.8	0.9994	0	1	ryr.hmm wins at 91% margin over an envelope covering 100% in 1 segment(s)
+A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal	RYR@chondrichthyes	s3_seed	0	1	RYR	0.9125	723.0	8262.4	0.9976	0	1	ryr.hmm wins at 91% margin over an envelope covering 100% in 1 segment(s)
+A0AAJ7XD62|LOC116953891|Petromyzon_marinus|vertebrate_basal	RYR@cyclostomata	s3_seed	0	1	RYR	0.9136	699.7	8097.0	0.9996	0	1	ryr.hmm wins at 91% margin over an envelope covering 100% in 1 segment(s)
+A0A672IUQ7|ITPR1|Salarias_fasciatus	ITPR1@actinopteri	s5_addition	0	1	ITPR	0.904	4340.9	416.7	0.9996	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A8C4IPK8|ITPR1|Dicentrarchus_labrax	ITPR1@actinopteri	s5_addition	1	1	ITPR	0.9074	4294.6	397.7	0.9996	0	1	slot already filled
+A0A9F7QNX4|ITPR1|Ictalurus_punctatus	ITPR1@actinopteri	s5_addition	2	1	ITPR	0.9049	4316.6	410.7	0.9996	0	1	slot already filled
+A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	ITPR2@actinopteri	s5_addition	0	1	ITPR	0.8872	3931.5	443.5	0.9981	0	1	itpr.hmm wins at 89% margin over an envelope covering 100% in 1 segment(s)
+A0A6P8F820|ITPR2|Clupea_harengus	ITPR2@actinopteri	s5_addition	1	1	ITPR	0.8888	4033.3	448.7	0.9974	0	1	slot already filled
+A0A8C5FAW6|ITPR2|Gadus_morhua	ITPR2@actinopteri	s5_addition	2	1	ITPR	0.8877	3971.4	446.0	0.9948	0	1	slot already filled
+A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	ITPR3@actinopteri	s5_addition	0	1	ITPR	0.8949	3867.2	406.6	0.9925	0	1	itpr.hmm wins at 89% margin over an envelope covering 99% in 1 segment(s)
+A0A6J2W569|ITPR3|Chanos_chanos	ITPR3@actinopteri	s5_addition	1	1	ITPR	0.8961	3906.8	405.8	0.994	0	1	slot already filled
+A0A3B4EJE4|ITPR3|Pygocentrus_nattereri	ITPR3@actinopteri	s5_addition	2	1	ITPR	0.8991	3902.5	393.8	0.994	0	1	slot already filled
+A0ABM4F3U0|ITPR1|Apteryx_mantelli	ITPR1@aves	s5_addition	0	1	ITPR	0.9038	4430.4	426.4	0.9996	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+H0ZJ48|ITPR1|Taeniopygia_guttata	ITPR1@aves	s5_addition	1	1	ITPR	0.9037	4420.8	425.9	0.9985	0	1	slot already filled
+A0A672VCS0|ITPR1|Strigops_habroptila	ITPR1@aves	s5_addition	2	1	ITPR	0.9035	4421.5	426.5	0.9989	0	1	slot already filled
+A0A672UP22|ITPR2|Strigops_habroptila	ITPR2@aves	s5_addition	0	1	ITPR	0.8973	4276.2	439.3	0.9978	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A674H2A0|ITPR2|Taeniopygia_guttata	ITPR2@aves	s5_addition	1	1	ITPR	0.8964	4275.1	443.0	0.9978	0	1	slot already filled
+A0A6J3CSN9|ITPR2|Aythya_fuligula	ITPR2@aves	s5_addition	2	1	ITPR	0.8984	4215.0	428.1	0.9978	0	1	slot already filled
+A0A7K6LHC3|ITPR3|Falcunculus_frontatus	ITPR3@aves	s5_addition	0	1	ITPR	0.8975	4043.8	414.4	1.0	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A7L2HCD9|ITPR3|Sagittarius_serpentarius	ITPR3@aves	s5_addition	1	1	ITPR	0.8986	4048.8	410.4	1.0	0	1	slot already filled
+A0A7K6T1X4|ITPR3|Caloenas_nicobarica	ITPR3@aves	s5_addition	2	1	ITPR	0.8987	4047.5	409.9	1.0	0	1	slot already filled
+A0A4W3GWE7|ITPR3|Callorhinchus_milii	ITPR3@chondrichthyes	s5_addition	0	1	ITPR	0.8909	3827.0	417.5	0.9981	0	1	itpr.hmm wins at 89% margin over an envelope covering 100% in 1 segment(s)
+A0A670JBK6|ITPR1|Podarcis_muralis	ITPR1@reptilia	s5_addition	0	1	ITPR	0.9022	4401.1	430.4	0.9996	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A8C3HP94|ITPR1|Chrysemys_picta_bellii	ITPR1@reptilia	s5_addition	1	1	ITPR	0.903	4417.9	428.5	0.9996	0	1	slot already filled
+A0A3Q0GVK6|ITPR1|Alligator_sinensis	ITPR1@reptilia	s5_addition	2	1	ITPR	0.9042	4416.4	423.2	0.9996	0	1	slot already filled
+A0ABM1LG32|ITPR2|Gekko_japonicus	ITPR2@reptilia	s5_addition	0	1	ITPR	0.8978	4231.2	432.4	0.9978	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+A0A674KE30|ITPR2|Terrapene_triunguis	ITPR2@reptilia	s5_addition	1	1	ITPR	0.8969	4257.3	438.8	0.9963	0	1	slot already filled
+A0A6J0TV85|ITPR3|Pogona_vitticeps	ITPR3@reptilia	s5_addition	0	1	ITPR	0.8973	4033.7	414.4	0.9996	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+K7G568|ITPR3|Pelodiscus_sinensis	ITPR3@reptilia	s5_addition	1	1	ITPR	0.8937	3996.9	424.9	0.9993	0	1	slot already filled
+A0A7M4F8Y9|ITPR3|Crocodylus_porosus	ITPR3@reptilia	s5_addition	2	1	ITPR	0.8951	4044.0	424.4	1.0	0	1	slot already filled
+A0A3Q0HBW9|RYR|Alligator_sinensis	RYR@reptilia	s5_addition	0	1	RYR	0.9122	739.7	8426.0	0.9906	27	2	ryr.hmm wins at 91% margin over an envelope covering 99% in 2 segment(s)
+A0ABM3ZIZ0|RYR|Pantherophis_guttatus	RYR@reptilia	s5_addition	1	1	RYR	0.9122	736.6	8385.0	0.9996	0	1	slot already filled
+A0A8C3F922|RYR|Chrysemys_picta_bellii	RYR@reptilia	s5_addition	2	1	RYR	0.9123	726.8	8289.9	0.9972	0	1	slot already filled
+H3B932|ITPR3|Latimeria_chalumnae	ITPR3@sarcopterygian_fish	s5_addition	0	1	ITPR	0.8965	3705.8	383.7	0.9989	0	1	itpr.hmm wins at 90% margin over an envelope covering 100% in 1 segment(s)
+H3BGR5|RYR|Latimeria_chalumnae	RYR@sarcopterygian_fish	s5_addition	0	1	RYR	0.9122	705.1	8033.1	0.9998	0	1	ryr.hmm wins at 91% margin over an envelope covering 100% in 1 segment(s)
