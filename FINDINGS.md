@@ -237,3 +237,70 @@ missense, but its *direction* of effect is not established — one variant is a
 gain of function — so it is now marked unresolved rather than lumped in with
 the dominant-negative mechanisms.
 
+
+---
+
+## 2026-09-03 — S2: how many IP3 receptors are there, and where do they live?
+
+**We counted the family.** Asking the domain databases for every protein
+carrying one of the IP3 receptor's three diagnostic domains returns
+**15,421 proteins from 1,488 organisms**. Just under half of them
+(**6,433**) are IP3 receptors; slightly more (**6,807**) are ryanodine
+receptors, the sister family that shares every one of those domains; and
+**2,181** are fragments too partial to call either way. The near-even split
+is worth pausing on: a search built to find IP3 receptors returns as many
+ryanodine receptors as targets, which is exactly the hazard this project
+was designed around.
+
+**Where the family lives is more interesting than how big it is.** Outside
+the animals the records are not scattered noise — they fall into a clean
+pattern:
+
+- In **green plants**, every single IP3-receptor call is in the **green
+  algae** (*Chlamydomonas*, *Volvox*, and relatives — 11 species, one with
+  the complete five-domain architecture). The **land-plant lineage has
+  none**, despite contributing 15 proteins to the search.
+- In **fungi**, every call sits in an **early-diverging phylum** —
+  Mucoromycota, Chytridiomycota, Basidiobolomycota, Entomophthoromycota.
+  The familiar fungi — yeasts, moulds, mushrooms — contribute **no
+  proteins to the search at all**.
+
+So the receptor is not simply "absent from plants and fungi", as the
+textbook framing goes. It is present in the early branches of both
+kingdoms and gone from the derived ones — the shape you would expect from
+two independent losses. That is still a statement about what the protein
+databases hold rather than about genomes themselves. *(pending: S20, S23)*
+
+**We nearly built the census on the wrong domain.** The obvious way to
+enumerate this family is to ask for the domain that defines it — the
+IP3-binding core. Doing that would have missed **2,914 proteins, 758 of
+them real IP3 receptors, across 385 species**, because plenty of family
+members are annotated with only one or two of the three domains. The
+sharpest case is *Dictyostelium* iplA, a characterised IP3 receptor that
+carries neither the binding core nor two other family domains; last
+session we predicted the census would miss it, and it does not, because the
+census asks for any of three domains rather than the one. It comes back —
+and then sits in the uncallable pile, because two domains out of five is
+not enough evidence to call it anything. Resolving records like that is
+what next session's profile search is for. *(pending: S3)*
+
+**How we know the calls are right.** Each record is assigned by what
+domains it carries, never by its name — so the names are free to serve as
+an independent check. Across **6,191 proteins with an unambiguous gene
+symbol, the domain-based call and the name agree every single time**. We
+then re-ran the separation a second, completely different way, on raw
+sequence similarity to six labelled human reference proteins, over one
+representative from each of 32 phyla: **agreement wherever that test has
+the power to decide (27 of 27)**, and the handful of coin-flips all fall in
+the band where the sequence test explicitly declines to choose — which is
+precisely where the deepest, oldest branches sit.
+
+**A byproduct: seven broken database entries.** Because protein length is
+recorded but never used to make a call, it was free to catch something
+else. Seven records carry the *complete* five-domain architecture of a
+full-length IP3 receptor packed into 1,528–1,993 residues — roughly 700
+short of the shortest real one. An intact architecture in two-thirds of the
+length means the gene model is truncated, and none of the seven is flagged
+as a fragment by the database, because a truncated model submitted as a
+whole protein is not marked as one. The biology is right and the record is
+wrong. *(pending: S18)*

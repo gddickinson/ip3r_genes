@@ -19,18 +19,18 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S1 complete — the search is now a tested instrument.** The
-literature baseline is verified with a citation on every claim
-([`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md), 32 pages, 12 figures), the database
-snapshot is re-derived ([`results/s0_baseline/`](results/s0_baseline/)), and
-the discovery scorer has been benchmarked against 25 known IP3 receptors and
-31 impostors: **recall 96 %, specificity 100 %**
-([`results/benchmark_controls/`](results/benchmark_controls/)). It reached
-100 % only because the benchmark first caught it promoting **every one of the
-six ryanodine-receptor decoys**, and S1 built the ITPR-vs-RyR separation test
-the roadmap requires. The full toolchain is installed and version-pinned
-([`results/toolchain_manifest.txt`](results/toolchain_manifest.txt)). The next
-session runs **S2**.
+**Status: S2 complete — the family is now counted.** The literature
+baseline is verified with a citation on every claim
+([`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md), 32 pages, 12 figures),
+the discovery scorer is benchmarked at **96 % recall / 100 % specificity**
+against 25 known receptors and 31 impostors
+([`results/benchmark_controls/`](results/benchmark_controls/)), and the domain
+enumeration has now returned **15,421 proteins across 1,488 taxa — 6,433
+IP3 receptors, 6,807 ryanodine receptors and 2,181 fragments too partial to
+call** ([`results/census_v2/`](results/census_v2/)). Every record carries a
+positive architecture call with its reason; the rule agrees with all 6,191
+gene symbols it never sees, and with an independent sequence test wherever
+that test can decide. The next session runs **S3**.
 
 ---
 
@@ -88,20 +88,28 @@ is a positive test at every stage (roadmap Decisions **D14**) — and, turned
 around, it is an opportunity: both families get counted by the same
 instrument, and RyR gives the ITPR tree a proper outgroup.
 
-### What is already visible, before any analysis
+### What is already visible
 
-Re-derived by S0 on 2026-08-18 — every number below reproduced the planning
-snapshot exactly ([`results/s0_baseline/`](results/s0_baseline/)). Still to be
-enumerated to exhaustion in S2 before any of it is a result:
+Re-derived by S0 on 2026-08-18 and enumerated to exhaustion by S2 on
+2026-09-03 ([`results/census_v2/`](results/census_v2/)):
 
-- The family looks overwhelmingly like an animal family — **12,149 of the
-  12,338** proteins carrying PF08709 are metazoan.
-- But there are **40 plant and 41 fungal records** in a family textbooks say
-  plants and fungi lack, while *Arabidopsis* and *S. cerevisiae* have
-  **none**. Real branch of the family, mis-annotation, or contamination?
+- The family is overwhelmingly an animal family — **10,936 of the 15,421**
+  enumerated proteins are vertebrate, another 3,706 non-vertebrate metazoan.
+- **Outside the animals it survives in a pattern, not at random.** Every
+  green-plant call is in the **green algae** (Streptophyta, the land-plant
+  lineage, has none from 15 records in 13 taxa); every fungal call is in an
+  **early-diverging phylum**, and Dikarya — the yeasts and moulds —
+  contributes no records at all. Two independent losses, if the genomes
+  agree with the proteomes (S20, S23).
+- **Half of what the search returns is the wrong family.** 6,807 of the
+  15,421 records are ryanodine receptors, which carry every ITPR-diagnostic
+  Pfam. Separating them is a positive test at every stage (**D14**).
+- **One signature is not enough to find the family.** Enumerating on
+  PF08709 alone — the IP3-binding core, the domain that names it — would
+  miss 2,914 records, 758 of them real IP3 receptors across 385 taxa
+  (**D21**).
 - Zebrafish carries **four**: `itpr1a`, `itpr1b`, `itpr2`, `itpr3` — the
-  first two look like a teleost-duplication pair. **But the query that shows
-  this returns 109 records, and 53 of them (49 %) are ryanodine receptors.**
+  first two look like a teleost-duplication pair.
 
 ### The questions the project answers
 
@@ -128,8 +136,8 @@ One task per session. Full ledger with dependencies and results in
 |----|------|--------|
 | S0 | Literature baseline + scope confirmation | ✅ completed 2026-08-18 |
 | S1 | Toolchain + positive/negative controls (RyR is the sharp decoy) | ✅ completed 2026-08-18 |
-| S2 | Uncapped InterPro enumeration → census v2 | ⏳ pending — **next** |
-| S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) + convergence argument | ⏳ pending |
+| S2 | Uncapped InterPro enumeration → census v2 | ✅ completed 2026-09-03 |
+| S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) + convergence argument | ⏳ pending — **next** |
 | S4 | Genome scope manifest (the denominator) | ⏳ pending |
 | S5 | Genomic sweep → per-genome ledger + novel gene models | ⏳ pending |
 | S20 | Non-vertebrate sweep — the family's true range | ⏳ pending |

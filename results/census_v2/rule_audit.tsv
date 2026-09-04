@@ -1,0 +1,8 @@
+test	n	agree	disagree	unassigned	accuracy_of_decided
+architecture call vs symbol ITPR	3249	2479	0	770	1.0000
+architecture call vs symbol RYR	2942	2492	0	450	1.0000
+no symbol-labelled ITPR carries SPRY (PF00622)	3249	3249	0	0	1.0000
+RyR (PF02026) → symbol RYR	2341	2341	0	0	1.0000
+RR_TM4-6 (PF06459) → symbol RYR	2274	2274	0	0	1.0000
+RYDR_Jsol (PF21119) → symbol RYR	2408	2408	0	0	1.0000
+SPRY (PF00622) → symbol RYR	2335	2335	0	0	1.0000

@@ -1,0 +1,14 @@
+{
+ "v1_accessions": 1571,
+ "v2_accessions": 15421,
+ "shared": 705,
+ "only_v1": 866,
+ "only_v2": 14716,
+ "bundles": [
+  "2026-08-18_091322_itpr1_itpr2_itpr3",
+  "2026-08-18_092259_itpr1a_itpr1b_itpr2",
+  "2026-08-18_123301_itpr1_itpr2_itpr3",
+  "2026-08-18_123618_s0_smoke_human"
+ ],
+ "growth_factor": 9.8
+}

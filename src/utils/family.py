@@ -53,8 +53,17 @@ SISTER_PARALOGS = ["RYR1", "RYR2", "RYR3"]
 FAMILY_PFAM_IDS = ["PF08709", "PF02815", "PF01365", "PF08454"]
 PORE_PFAM_IDS = ["PF00520"]
 
-#: Pfam IDs whose protein lists define the enumerated search space (S2).
-CENSUS_PFAM_IDS = ["PF08709", "PF01365", "PF08454", "PF02815"]
+#: Pfam IDs whose protein lists define the enumerated search space (S2's
+#: census v2, roadmap D21). Deliberately **not** the same set as
+#: `FAMILY_PFAM_IDS`: PF02815 (MIR) is carried by the
+#: O-mannosyltransferases as well as by both receptor families, so
+#: enumerating it widens the search space without adding family evidence.
+#: It is recorded as an annotation column on every census row instead.
+#:
+#: The union matters in the other direction too — PF08709 alone, the
+#: signature that names the family, is absent from 2,911 of the 15,417
+#: enumerated proteins, 758 of them called ITPR across 385 taxa (S2).
+CENSUS_PFAM_IDS = ["PF08709", "PF01365", "PF08454"]
 
 #: Size band for a plausible full-length family member, in residues. Human
 #: ITPR1/2/3 are 2,758 / 2,701 / 2,671 aa and invertebrate Itpr is ~2,800;

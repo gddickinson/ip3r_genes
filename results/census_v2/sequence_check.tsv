@@ -1,0 +1,97 @@
+accession	species	group	phylum	arch_call	confidence	seq_call	agrees	decisive	margin	best_itpr_bait	id_to_itpr	best_ryr_bait	id_to_ryr	metric
+A0AAV2LHX1	Knipowitschia caucasica (Caucasian dwarf goby) (Pomatoschistus caucasicus)	Vertebrata	Chordata	RYR	high	RYR	1	1	-0.6027	BAIT_ITPR|Hs_ITPR2_Q14571	0.2251	BAIT_RYR|Hs_RYR2_Q92736	0.8278	covered_only
+A0ACM8CH91	Saccoglossus kowalevskii (Acorn worm)	Metazoa (non-vertebrate)	Hemichordata	RYR	high	RYR	1	1	-0.291	BAIT_ITPR|Hs_ITPR3_Q14573	0.2289	BAIT_RYR|Hs_RYR2_Q92736	0.5198	covered_only
+A0A1S3I436	Lingula anatina (Brachiopod) (Lingula unguis)	Metazoa (non-vertebrate)	Brachiopoda	RYR	high	RYR	1	1	-0.2869	BAIT_ITPR|Hs_ITPR2_Q14571	0.2348	BAIT_RYR|Hs_RYR2_Q92736	0.5216	covered_only
+Q8TA74	Hemicentrotus pulcherrimus (Sea urchin) (Strongylocentrotus pulcherrimus)	Metazoa (non-vertebrate)	Echinodermata	RYR	high	RYR	1	1	-0.2775	BAIT_ITPR|Hs_ITPR3_Q14573	0.2308	BAIT_RYR|Hs_RYR2_Q92736	0.5082	covered_only
+A0AAE0Y8B9	Elysia crispata (lettuce slug)	Metazoa (non-vertebrate)	Mollusca	RYR	high	RYR	1	1	-0.2733	BAIT_ITPR|Hs_ITPR2_Q14571	0.2374	BAIT_RYR|Hs_RYR2_Q92736	0.5107	covered_only
+A0ABM1DXK4	Priapulus caudatus (Priapulid worm)	Metazoa (non-vertebrate)	Priapulida	RYR	high	RYR	1	1	-0.2706	BAIT_ITPR|Hs_ITPR1_Q14643	0.2008	BAIT_RYR|Hs_RYR2_Q92736	0.4714	covered_only
+X1Z8I7	Capitella teleta (Polychaete worm)	Metazoa (non-vertebrate)	Annelida	RYR	high	RYR	1	1	-0.2641	BAIT_ITPR|Hs_ITPR2_Q14571	0.2323	BAIT_RYR|Hs_RYR2_Q92736	0.4964	covered_only
+A0A4S2KV39	Temnothorax longispinosus	Metazoa (non-vertebrate)	Arthropoda	RYR	high	RYR	1	1	-0.2543	BAIT_ITPR|Hs_ITPR2_Q14571	0.24	BAIT_RYR|Hs_RYR2_Q92736	0.4942	covered_only
+A0A1W0WNM8	Hypsibius exemplaris (Freshwater tardigrade)	Metazoa (non-vertebrate)	Tardigrada	RYR	high	RYR	1	1	-0.2538	BAIT_ITPR|Hs_ITPR2_Q14571	0.2185	BAIT_RYR|Hs_RYR2_Q92736	0.4723	covered_only
+A0A813R8P9	Rotaria sordida	Metazoa (non-vertebrate)	Rotifera	RYR	high	RYR	1	1	-0.2337	BAIT_ITPR|Hs_ITPR2_Q14571	0.2296	BAIT_RYR|Hs_RYR2_Q92736	0.4634	covered_only
+A0A7J7KHS8	Bugula neritina (Brown bryozoan) (Sertularia neritina)	Metazoa (non-vertebrate)	Bryozoa	RYR	medium	RYR	1	1	-0.233	BAIT_ITPR|Hs_ITPR2_Q14571	0.2568	BAIT_RYR|Hs_RYR2_Q92736	0.4898	covered_only
+A0A915EYX6	Echinococcus canadensis	Metazoa (non-vertebrate)	Platyhelminthes	RYR	high	RYR	1	1	-0.2092	BAIT_ITPR|Hs_ITPR2_Q14571	0.2378	BAIT_RYR|Hs_RYR2_Q92736	0.447	covered_only
+B3RK74	Trichoplax adhaerens (Trichoplax reptans)	Metazoa (non-vertebrate)	Placozoa	RYR	high	RYR	1	1	-0.2041	BAIT_ITPR|Hs_ITPR1_Q14643	0.2148	BAIT_RYR|Hs_RYR2_Q92736	0.4188	covered_only
+A8XUM8	Caenorhabditis briggsae	Metazoa (non-vertebrate)	Nematoda	RYR	high	RYR	1	1	-0.2025	BAIT_ITPR|Hs_ITPR2_Q14571	0.2383	BAIT_RYR|Hs_RYR2_Q92736	0.4408	covered_only
+A0A0D2WXI6	Capsaspora owczarzaki (strain ATCC 30864)	Eukaryota (other)		RYR	high	RYR	1	0	-0.0899	BAIT_ITPR|Hs_ITPR3_Q14573	0.2133	BAIT_RYR|Hs_RYR2_Q92736	0.3032	covered_only
+A0AAV7K8I1	Oopsacas minuta	Metazoa (non-vertebrate)	Porifera	RYR	high	RYR	1	0	-0.0884	BAIT_ITPR|Hs_ITPR1_Q14643	0.1948	BAIT_RYR|Hs_RYR2_Q92736	0.2832	covered_only
+A0A0M0J4V2	Chrysochromulina tobinii	Eukaryota (other)	Haptophyta	ITPR	medium	RYR	0	0	-0.0007	BAIT_ITPR|Hs_ITPR1_Q14643	0.244	BAIT_RYR|Hs_RYR2_Q92736	0.2447	covered_only
+A0A1X0NWX8	Trypanosoma theileri	Discoba	Euglenozoa	ITPR	medium	ITPR	1	0	0.0003	BAIT_ITPR|Hs_ITPR1_Q14643	0.22	BAIT_RYR|Hs_RYR2_Q92736	0.2197	covered_only
+A0A152A7I8	Tieghemostelium lacteum (Slime mold) (Dictyostelium lacteum)	Amoebozoa	Evosea	RYR	medium	ITPR	0	0	0.0005	BAIT_ITPR|Hs_ITPR3_Q14573	0.1926	BAIT_RYR|Hs_RYR2_Q92736	0.192	covered_only
+A0A1Q9CN86	Symbiodinium microadriaticum (Dinoflagellate) (Zooxanthella microadriatica)	SAR		RYR	low	ITPR	0	0	0.005	BAIT_ITPR|Hs_ITPR2_Q14571	0.1973	BAIT_RYR|Hs_RYR1_P21817	0.1924	covered_only
+A0AAE0LDZ1	Cymbomonas tetramitiformis	Viridiplantae	Chlorophyta	ITPR	medium	ITPR	1	0	0.011	BAIT_ITPR|Hs_ITPR2_Q14571	0.2185	BAIT_RYR|Hs_RYR2_Q92736	0.2074	covered_only
+A0ABQ8UZM6	Paratrimastix pyriformis	Eukaryota (other)	Preaxostyla	ITPR	medium	ITPR	1	0	0.0129	BAIT_ITPR|Hs_ITPR1_Q14643	0.2256	BAIT_RYR|Hs_RYR2_Q92736	0.2127	covered_only
+A0A1X2IXV9	Absidia repens	Fungi	Mucoromycota	ITPR	medium	ITPR	1	0	0.0147	BAIT_ITPR|Hs_ITPR1_Q14643	0.235	BAIT_RYR|Hs_RYR2_Q92736	0.2203	covered_only
+A0ABR4NID5	Polyrhizophydium stewartii	Fungi	Chytridiomycota	ITPR	high	ITPR	1	0	0.0213	BAIT_ITPR|Hs_ITPR3_Q14573	0.2507	BAIT_RYR|Hs_RYR2_Q92736	0.2294	covered_only
+A0A078A1U0	Stylonychia lemnae (Ciliate)	SAR	Ciliophora	ITPR	medium	ITPR	1	0	0.0233	BAIT_ITPR|Hs_ITPR2_Q14571	0.2183	BAIT_RYR|Hs_RYR2_Q92736	0.195	covered_only
+A0A9W7FTI7	Triparma laevis f. longispina	SAR		ITPR	high	ITPR	1	0	0.0244	BAIT_ITPR|Hs_ITPR1_Q14643	0.2249	BAIT_RYR|Hs_RYR1_P21817	0.2005	covered_only
+A0A1S3H6V5	Lingula anatina (Brachiopod) (Lingula unguis)	Metazoa (non-vertebrate)	Brachiopoda	ITPR	medium	ITPR	1	0	0.0255	BAIT_ITPR|Hs_ITPR1_Q14643	0.2304	BAIT_RYR|Hs_RYR2_Q92736	0.2049	covered_only
+A0AAN7YWK4	Dictyostelium firmibasis	Amoebozoa	Evosea	ITPR	medium	ITPR	1	0	0.0282	BAIT_ITPR|Hs_ITPR1_Q14643	0.2304	BAIT_RYR|Hs_RYR2_Q92736	0.2022	covered_only
+A0ACC2TPX2	Entomophthora muscae	Fungi	Entomophthoromycota	ITPR	high	ITPR	1	0	0.0303	BAIT_ITPR|Hs_ITPR1_Q14643	0.2372	BAIT_RYR|Hs_RYR2_Q92736	0.2069	covered_only
+A0A8S4Q492	Owenia fusiformis (Polychaete worm)	Metazoa (non-vertebrate)	Annelida	ITPR	high	ITPR	1	0	0.0307	BAIT_ITPR|Hs_ITPR1_Q14643	0.2403	BAIT_RYR|Hs_RYR2_Q92736	0.2095	covered_only
+A0ABR2W6A1	Basidiobolus ranarum	Fungi	Basidiobolomycota	ITPR	high	ITPR	1	0	0.0411	BAIT_ITPR|Hs_ITPR2_Q14571	0.2591	BAIT_RYR|Hs_RYR3_Q15413	0.218	covered_only
+A0AAE1AEW6	Elysia crispata (lettuce slug)	Metazoa (non-vertebrate)	Mollusca	ITPR	medium	ITPR	1	0	0.0415	BAIT_ITPR|Hs_ITPR2_Q14571	0.2371	BAIT_RYR|Hs_RYR2_Q92736	0.1956	covered_only
+A0A8T1W1U0	Phytophthora pseudosyringae	SAR	Oomycota	ITPR	high	ITPR	1	0	0.0486	BAIT_ITPR|Hs_ITPR2_Q14571	0.2641	BAIT_RYR|Hs_RYR3_Q15413	0.2155	covered_only
+A0ACM8C709	Saccoglossus kowalevskii (Acorn worm)	Metazoa (non-vertebrate)	Hemichordata	ITPR	high	ITPR	1	0	0.0492	BAIT_ITPR|Hs_ITPR1_Q14643	0.2583	BAIT_RYR|Hs_RYR2_Q92736	0.2091	covered_only
+A0AA88KEU5	Naegleria lovaniensis (Amoeba)	Discoba	Heterolobosea	ITPR	high	ITPR	1	0	0.0496	BAIT_ITPR|Hs_ITPR1_Q14643	0.2755	BAIT_RYR|Hs_RYR3_Q15413	0.226	covered_only
+L8GF85	Acanthamoeba castellanii (strain ATCC 30010 / Neff)	Amoebozoa	Discosea	ITPR	high	ITPR	1	0	0.0693	BAIT_ITPR|Hs_ITPR1_Q14643	0.322	BAIT_RYR|Hs_RYR3_Q15413	0.2527	covered_only
+A0A058ZDJ2	Fonticula alba (Slime mold)	Eukaryota (other)		ITPR	high	ITPR	1	1	0.1239	BAIT_ITPR|Hs_ITPR2_Q14571	0.373	BAIT_RYR|Hs_RYR2_Q92736	0.2491	covered_only
+A0A922ILK8	Schistosoma haematobium (Blood fluke)	Metazoa (non-vertebrate)	Platyhelminthes	ITPR	high	ITPR	1	1	0.1518	BAIT_ITPR|Hs_ITPR1_Q14643	0.3338	BAIT_RYR|Hs_RYR3_Q15413	0.182	covered_only
+A0A914HHK4	Globodera rostochiensis (Golden nematode worm) (Heterodera rostochiensis)	Metazoa (non-vertebrate)	Nematoda	ITPR	high	ITPR	1	1	0.2149	BAIT_ITPR|Hs_ITPR1_Q14643	0.4264	BAIT_RYR|Hs_RYR2_Q92736	0.2115	covered_only
+A0AAN0JIF7	Amphimedon queenslandica (Sponge)	Metazoa (non-vertebrate)	Porifera	ITPR	high	ITPR	1	1	0.2565	BAIT_ITPR|Hs_ITPR1_Q14643	0.46	BAIT_RYR|Hs_RYR3_Q15413	0.2036	covered_only
+A0A1W0X7F9	Hypsibius exemplaris (Freshwater tardigrade)	Metazoa (non-vertebrate)	Tardigrada	ITPR	high	ITPR	1	1	0.2806	BAIT_ITPR|Hs_ITPR1_Q14643	0.4944	BAIT_RYR|Hs_RYR2_Q92736	0.2138	covered_only
+A0A813MDQ0	Brachionus calyciflorus	Metazoa (non-vertebrate)	Rotifera	ITPR	high	ITPR	1	1	0.3126	BAIT_ITPR|Hs_ITPR1_Q14643	0.5273	BAIT_RYR|Hs_RYR3_Q15413	0.2147	covered_only
+A0ACF8YJV4	Mnemiopsis leidyi (Sea walnut) (Warty comb jellyfish)	Metazoa (non-vertebrate)	Ctenophora	ITPR	high	ITPR	1	1	0.3402	BAIT_ITPR|Hs_ITPR1_Q14643	0.5718	BAIT_RYR|Hs_RYR1_P21817	0.2316	covered_only
+A0AAV1LM52	Parnassius mnemosyne (clouded apollo)	Metazoa (non-vertebrate)	Arthropoda	ITPR	high	ITPR	1	1	0.3514	BAIT_ITPR|Hs_ITPR1_Q14643	0.5684	BAIT_RYR|Hs_RYR3_Q15413	0.2171	covered_only
+A0A6P8IUM8	Actinia tenebrosa (Australian red waratah sea anemone)	Metazoa (non-vertebrate)	Cnidaria	ITPR	high	ITPR	1	1	0.4361	BAIT_ITPR|Hs_ITPR1_Q14643	0.6591	BAIT_RYR|Hs_RYR3_Q15413	0.223	covered_only
+A0A7M7MY00	Strongylocentrotus purpuratus (Purple sea urchin)	Metazoa (non-vertebrate)	Echinodermata	ITPR	high	ITPR	1	1	0.4471	BAIT_ITPR|Hs_ITPR1_Q14643	0.671	BAIT_RYR|Hs_RYR2_Q92736	0.2239	covered_only
+B3RXX7	Trichoplax adhaerens (Trichoplax reptans)	Metazoa (non-vertebrate)	Placozoa	ITPR	medium	ITPR	1	1	0.448	BAIT_ITPR|Hs_ITPR1_Q14643	0.6715	BAIT_RYR|Hs_RYR3_Q15413	0.2235	covered_only
+A0ACB8WNY4	Scortum barcoo (barcoo grunter)	Vertebrata	Chordata	ITPR	high	ITPR	1	1	0.6412	BAIT_ITPR|Hs_ITPR1_Q14643	0.8655	BAIT_RYR|Hs_RYR2_Q92736	0.2243	covered_only
+A0AAV2LHX1	Knipowitschia caucasica (Caucasian dwarf goby) (Pomatoschistus caucasicus)	Vertebrata	Chordata	RYR	high	RYR	1	1	-0.5533	BAIT_ITPR|Hs_ITPR2_Q14571	0.0698	BAIT_RYR|Hs_RYR2_Q92736	0.6232	full_alignment
+A0ACM8CH91	Saccoglossus kowalevskii (Acorn worm)	Metazoa (non-vertebrate)	Hemichordata	RYR	high	RYR	1	1	-0.3645	BAIT_ITPR|Hs_ITPR3_Q14573	0.0826	BAIT_RYR|Hs_RYR2_Q92736	0.4471	full_alignment
+Q8TA74	Hemicentrotus pulcherrimus (Sea urchin) (Strongylocentrotus pulcherrimus)	Metazoa (non-vertebrate)	Echinodermata	RYR	high	RYR	1	1	-0.3529	BAIT_ITPR|Hs_ITPR3_Q14573	0.0812	BAIT_RYR|Hs_RYR2_Q92736	0.4342	full_alignment
+A0AAE0Y8B9	Elysia crispata (lettuce slug)	Metazoa (non-vertebrate)	Mollusca	RYR	high	RYR	1	1	-0.3527	BAIT_ITPR|Hs_ITPR1_Q14643	0.0855	BAIT_RYR|Hs_RYR2_Q92736	0.4382	full_alignment
+X1Z8I7	Capitella teleta (Polychaete worm)	Metazoa (non-vertebrate)	Annelida	RYR	high	RYR	1	1	-0.3493	BAIT_ITPR|Hs_ITPR2_Q14571	0.0866	BAIT_RYR|Hs_RYR2_Q92736	0.4359	full_alignment
+A0A813R8P9	Rotaria sordida	Metazoa (non-vertebrate)	Rotifera	RYR	high	RYR	1	1	-0.3128	BAIT_ITPR|Hs_ITPR1_Q14643	0.0834	BAIT_RYR|Hs_RYR2_Q92736	0.3962	full_alignment
+A0A1S3I436	Lingula anatina (Brachiopod) (Lingula unguis)	Metazoa (non-vertebrate)	Brachiopoda	RYR	high	RYR	1	1	-0.3107	BAIT_ITPR|Hs_ITPR2_Q14571	0.0858	BAIT_RYR|Hs_RYR2_Q92736	0.3965	full_alignment
+B3RK74	Trichoplax adhaerens (Trichoplax reptans)	Metazoa (non-vertebrate)	Placozoa	RYR	high	RYR	1	1	-0.2622	BAIT_ITPR|Hs_ITPR1_Q14643	0.0812	BAIT_RYR|Hs_RYR2_Q92736	0.3434	full_alignment
+A0A4S2KV39	Temnothorax longispinosus	Metazoa (non-vertebrate)	Arthropoda	RYR	high	RYR	1	1	-0.2531	BAIT_ITPR|Hs_ITPR2_Q14571	0.0689	BAIT_RYR|Hs_RYR2_Q92736	0.322	full_alignment
+A8XUM8	Caenorhabditis briggsae	Metazoa (non-vertebrate)	Nematoda	RYR	high	RYR	1	1	-0.2359	BAIT_ITPR|Hs_ITPR2_Q14571	0.071	BAIT_RYR|Hs_RYR2_Q92736	0.3069	full_alignment
+A0A915EYX6	Echinococcus canadensis	Metazoa (non-vertebrate)	Platyhelminthes	RYR	high	RYR	1	1	-0.2335	BAIT_ITPR|Hs_ITPR1_Q14643	0.0743	BAIT_RYR|Hs_RYR2_Q92736	0.3078	full_alignment
+A0ABM1DXK4	Priapulus caudatus (Priapulid worm)	Metazoa (non-vertebrate)	Priapulida	RYR	high	RYR	1	1	-0.2201	BAIT_ITPR|Hs_ITPR1_Q14643	0.0533	BAIT_RYR|Hs_RYR2_Q92736	0.2734	full_alignment
+A0A1W0WNM8	Hypsibius exemplaris (Freshwater tardigrade)	Metazoa (non-vertebrate)	Tardigrada	RYR	high	RYR	1	1	-0.186	BAIT_ITPR|Hs_ITPR2_Q14571	0.0551	BAIT_RYR|Hs_RYR2_Q92736	0.2411	full_alignment
+A0AAV7K8I1	Oopsacas minuta	Metazoa (non-vertebrate)	Porifera	RYR	high	RYR	1	1	-0.137	BAIT_ITPR|Hs_ITPR1_Q14643	0.0701	BAIT_RYR|Hs_RYR3_Q15413	0.2072	full_alignment
+A0A7J7KHS8	Bugula neritina (Brown bryozoan) (Sertularia neritina)	Metazoa (non-vertebrate)	Bryozoa	RYR	medium	RYR	1	1	-0.1277	BAIT_ITPR|Hs_ITPR2_Q14571	0.0637	BAIT_RYR|Hs_RYR3_Q15413	0.1914	full_alignment
+A0A0D2WXI6	Capsaspora owczarzaki (strain ATCC 30864)	Eukaryota (other)		RYR	high	RYR	1	1	-0.1117	BAIT_ITPR|Hs_ITPR2_Q14571	0.067	BAIT_RYR|Hs_RYR2_Q92736	0.1786	full_alignment
+A0A1Q9CN86	Symbiodinium microadriaticum (Dinoflagellate) (Zooxanthella microadriatica)	SAR		RYR	low	RYR	1	0	-0.0263	BAIT_ITPR|Hs_ITPR1_Q14643	0.0483	BAIT_RYR|Hs_RYR1_P21817	0.0746	full_alignment
+A0A0M0J4V2	Chrysochromulina tobinii	Eukaryota (other)	Haptophyta	ITPR	medium	ITPR	1	0	0.0235	BAIT_ITPR|Hs_ITPR1_Q14643	0.116	BAIT_RYR|Hs_RYR2_Q92736	0.0925	full_alignment
+A0A152A7I8	Tieghemostelium lacteum (Slime mold) (Dictyostelium lacteum)	Amoebozoa	Evosea	RYR	medium	ITPR	0	0	0.0261	BAIT_ITPR|Hs_ITPR3_Q14573	0.0938	BAIT_RYR|Hs_RYR2_Q92736	0.0677	full_alignment
+A0A078A1U0	Stylonychia lemnae (Ciliate)	SAR	Ciliophora	ITPR	medium	ITPR	1	0	0.0302	BAIT_ITPR|Hs_ITPR2_Q14571	0.1072	BAIT_RYR|Hs_RYR2_Q92736	0.077	full_alignment
+A0ABR4NID5	Polyrhizophydium stewartii	Fungi	Chytridiomycota	ITPR	high	ITPR	1	0	0.0328	BAIT_ITPR|Hs_ITPR2_Q14571	0.1018	BAIT_RYR|Hs_RYR2_Q92736	0.0689	full_alignment
+A0A9W7FTI7	Triparma laevis f. longispina	SAR		ITPR	high	ITPR	1	0	0.0345	BAIT_ITPR|Hs_ITPR1_Q14643	0.1076	BAIT_RYR|Hs_RYR3_Q15413	0.0731	full_alignment
+A0ABQ8UZM6	Paratrimastix pyriformis	Eukaryota (other)	Preaxostyla	ITPR	medium	ITPR	1	0	0.036	BAIT_ITPR|Hs_ITPR2_Q14571	0.1067	BAIT_RYR|Hs_RYR3_Q15413	0.0707	full_alignment
+A0A1X0NWX8	Trypanosoma theileri	Discoba	Euglenozoa	ITPR	medium	ITPR	1	0	0.0376	BAIT_ITPR|Hs_ITPR3_Q14573	0.1179	BAIT_RYR|Hs_RYR2_Q92736	0.0803	full_alignment
+A0AAE0LDZ1	Cymbomonas tetramitiformis	Viridiplantae	Chlorophyta	ITPR	medium	ITPR	1	0	0.0396	BAIT_ITPR|Hs_ITPR2_Q14571	0.1229	BAIT_RYR|Hs_RYR2_Q92736	0.0833	full_alignment
+A0AAN7YWK4	Dictyostelium firmibasis	Amoebozoa	Evosea	ITPR	medium	ITPR	1	0	0.0479	BAIT_ITPR|Hs_ITPR1_Q14643	0.1173	BAIT_RYR|Hs_RYR2_Q92736	0.0693	full_alignment
+A0A8T1W1U0	Phytophthora pseudosyringae	SAR	Oomycota	ITPR	high	ITPR	1	0	0.0579	BAIT_ITPR|Hs_ITPR3_Q14573	0.1318	BAIT_RYR|Hs_RYR3_Q15413	0.0739	full_alignment
+A0AAE1AEW6	Elysia crispata (lettuce slug)	Metazoa (non-vertebrate)	Mollusca	ITPR	medium	ITPR	1	0	0.0612	BAIT_ITPR|Hs_ITPR2_Q14571	0.1256	BAIT_RYR|Hs_RYR2_Q92736	0.0643	full_alignment
+A0A8S4Q492	Owenia fusiformis (Polychaete worm)	Metazoa (non-vertebrate)	Annelida	ITPR	high	ITPR	1	0	0.0651	BAIT_ITPR|Hs_ITPR1_Q14643	0.1389	BAIT_RYR|Hs_RYR3_Q15413	0.0738	full_alignment
+A0A1S3H6V5	Lingula anatina (Brachiopod) (Lingula unguis)	Metazoa (non-vertebrate)	Brachiopoda	ITPR	medium	ITPR	1	0	0.0691	BAIT_ITPR|Hs_ITPR1_Q14643	0.1468	BAIT_RYR|Hs_RYR2_Q92736	0.0777	full_alignment
+A0AA88KEU5	Naegleria lovaniensis (Amoeba)	Discoba	Heterolobosea	ITPR	high	ITPR	1	0	0.0698	BAIT_ITPR|Hs_ITPR1_Q14643	0.1544	BAIT_RYR|Hs_RYR3_Q15413	0.0846	full_alignment
+A0A1X2IXV9	Absidia repens	Fungi	Mucoromycota	ITPR	medium	ITPR	1	0	0.0701	BAIT_ITPR|Hs_ITPR1_Q14643	0.1494	BAIT_RYR|Hs_RYR2_Q92736	0.0792	full_alignment
+A0ACC2TPX2	Entomophthora muscae	Fungi	Entomophthoromycota	ITPR	high	ITPR	1	0	0.0766	BAIT_ITPR|Hs_ITPR3_Q14573	0.1535	BAIT_RYR|Hs_RYR3_Q15413	0.0769	full_alignment
+L8GF85	Acanthamoeba castellanii (strain ATCC 30010 / Neff)	Amoebozoa	Discosea	ITPR	high	ITPR	1	0	0.0796	BAIT_ITPR|Hs_ITPR1_Q14643	0.1596	BAIT_RYR|Hs_RYR3_Q15413	0.08	full_alignment
+A0ABR2W6A1	Basidiobolus ranarum	Fungi	Basidiobolomycota	ITPR	high	ITPR	1	0	0.0883	BAIT_ITPR|Hs_ITPR2_Q14571	0.1694	BAIT_RYR|Hs_RYR3_Q15413	0.0812	full_alignment
+A0ACM8C709	Saccoglossus kowalevskii (Acorn worm)	Metazoa (non-vertebrate)	Hemichordata	ITPR	high	ITPR	1	0	0.0891	BAIT_ITPR|Hs_ITPR1_Q14643	0.1665	BAIT_RYR|Hs_RYR3_Q15413	0.0774	full_alignment
+A0A058ZDJ2	Fonticula alba (Slime mold)	Eukaryota (other)		ITPR	high	ITPR	1	0	0.0987	BAIT_ITPR|Hs_ITPR2_Q14571	0.1891	BAIT_RYR|Hs_RYR2_Q92736	0.0904	full_alignment
+A0A922ILK8	Schistosoma haematobium (Blood fluke)	Metazoa (non-vertebrate)	Platyhelminthes	ITPR	high	ITPR	1	1	0.1526	BAIT_ITPR|Hs_ITPR2_Q14571	0.224	BAIT_RYR|Hs_RYR3_Q15413	0.0714	full_alignment
+A0A914HHK4	Globodera rostochiensis (Golden nematode worm) (Heterodera rostochiensis)	Metazoa (non-vertebrate)	Nematoda	ITPR	high	ITPR	1	1	0.2121	BAIT_ITPR|Hs_ITPR1_Q14643	0.286	BAIT_RYR|Hs_RYR2_Q92736	0.0739	full_alignment
+A0AAV1LM52	Parnassius mnemosyne (clouded apollo)	Metazoa (non-vertebrate)	Arthropoda	ITPR	high	ITPR	1	1	0.24	BAIT_ITPR|Hs_ITPR1_Q14643	0.3034	BAIT_RYR|Hs_RYR3_Q15413	0.0635	full_alignment
+A0AAN0JIF7	Amphimedon queenslandica (Sponge)	Metazoa (non-vertebrate)	Porifera	ITPR	high	ITPR	1	1	0.3087	BAIT_ITPR|Hs_ITPR1_Q14643	0.3876	BAIT_RYR|Hs_RYR3_Q15413	0.0789	full_alignment
+A0A1W0X7F9	Hypsibius exemplaris (Freshwater tardigrade)	Metazoa (non-vertebrate)	Tardigrada	ITPR	high	ITPR	1	1	0.3378	BAIT_ITPR|Hs_ITPR1_Q14643	0.4196	BAIT_RYR|Hs_RYR3_Q15413	0.0818	full_alignment
+A0A813MDQ0	Brachionus calyciflorus	Metazoa (non-vertebrate)	Rotifera	ITPR	high	ITPR	1	1	0.3446	BAIT_ITPR|Hs_ITPR1_Q14643	0.4272	BAIT_RYR|Hs_RYR3_Q15413	0.0826	full_alignment
+A0ACF8YJV4	Mnemiopsis leidyi (Sea walnut) (Warty comb jellyfish)	Metazoa (non-vertebrate)	Ctenophora	ITPR	high	ITPR	1	1	0.4063	BAIT_ITPR|Hs_ITPR1_Q14643	0.4909	BAIT_RYR|Hs_RYR1_P21817	0.0846	full_alignment
+B3RXX7	Trichoplax adhaerens (Trichoplax reptans)	Metazoa (non-vertebrate)	Placozoa	ITPR	medium	ITPR	1	1	0.4513	BAIT_ITPR|Hs_ITPR1_Q14643	0.5284	BAIT_RYR|Hs_RYR3_Q15413	0.0771	full_alignment
+A0A6P8IUM8	Actinia tenebrosa (Australian red waratah sea anemone)	Metazoa (non-vertebrate)	Cnidaria	ITPR	high	ITPR	1	1	0.5056	BAIT_ITPR|Hs_ITPR1_Q14643	0.5912	BAIT_RYR|Hs_RYR3_Q15413	0.0856	full_alignment
+A0A7M7MY00	Strongylocentrotus purpuratus (Purple sea urchin)	Metazoa (non-vertebrate)	Echinodermata	ITPR	high	ITPR	1	1	0.535	BAIT_ITPR|Hs_ITPR1_Q14643	0.6223	BAIT_RYR|Hs_RYR2_Q92736	0.0873	full_alignment
+A0ACB8WNY4	Scortum barcoo (barcoo grunter)	Vertebrata	Chordata	ITPR	high	ITPR	1	1	0.5372	BAIT_ITPR|Hs_ITPR1_Q14643	0.6088	BAIT_RYR|Hs_RYR3_Q15413	0.0716	full_alignment

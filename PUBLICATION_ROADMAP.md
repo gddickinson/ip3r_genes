@@ -152,7 +152,7 @@ Full step-by-step briefs: `docs/session_briefs.md`.
 |----|-------------------------|---------|--------|--------------------|
 | S0 | Literature baseline + scope confirmation: verify every `[lit]` claim in `docs/ip3r_background.md`, build `docs/ip3r_review_2026.md`, smoke-test the app against live APIs | — | completed 2026-08-18 | **19 `[lit]` claims audited vs 51 refs (45 primary): 12 verified, 3 qualified, 2 struck, 1 → `[open]`, 1 → `[db]`.** `docs/ip3r_review_2026.md` written. All `[db]` numbers re-derived exactly. **D14 measured: 49 % (53/109) of zebrafish PF08709 records are RyRs.** Exon/span claim false — ITPR3 spans 76 kb, not "hundreds of kb"; span varies 6.5× across paralogs, length 3 %. Ensembl `/xrefs/symbol/homo_sapiens/` stalls (species-specific, `BRCA2` too); client switched to `/lookup/symbol/` → human ITPR1 **0 → 24 variants**. Smoke 3/3 on human (UniProt 34 / NCBI 44 / Ensembl 41) and on zebrafish; the 8-species panel is 2/3 on Ensembl latency alone. → `results/s0_baseline/report.md` **Extended 2026-08-19 (user request): the review is now illustrated** — 12 generated figures, 24 → 32 pages, rendered by `scripts/s0_review_figures.py` from committed tables only (D13, D19). Measuring the structure for the figures produced three results the text did not have: the pore's two constrictions recovered blind and landing on the GGGVGD filter motif and on Phe2513/Ile2517; the IP₃→gate distance resolved into 103 Å axial vs 120 Å through space; and ***Dictyostelium* iplA carries none of PF08709, PF02815 or PF00520** — a characterised receptor the family's defining signature does not find. |
 | S1 | Toolchain install + positive/negative control benchmark (RyR is the sharp decoy) | S0 | completed 2026-08-18 | **Recall 24/25 (96 %); specificity 31/31 (100 %) — but only after S1 had to implement D14.** All 12 binaries resolve with recorded versions (`results/toolchain_manifest.txt`); MAFFT proven invoked (rc=0, 56 seqs → 9,494 cols). **On the first run all six RyR decoys were promoted at 45** — they carry all four diagnostic Pfams, so `pfam+20` also satisfies the D3 gate; specificity was 25/31 and every failure was a RyR. Added the **labelled-bait sister-family test** to `discovery/candidates.py` (D14/D7, margin 0.10, positive test on distances, name never consulted, length band not the call) → all six now capped at 39 with the margin recorded. The margin is 31/31 correct under both identity metrics (true-ITPR +0.065…+0.874 vs RyR −0.868…−0.536). **Caveat: the deepest true member, *Dictyostelium* iplA, has a margin of +0.065 — inside the D7 no-call band**, so profile-based assignment is mandatory for the deep branches. One recall miss: fly `Itpr` at 35, its nearest sibling 0.342 vs the 0.35 breadth threshold (0.420 under `covered_only`). → `results/benchmark_controls/report.md` |
-| S2 | Uncapped InterPro enumeration of the family Pfams → census v2, with a positive ITPR/RYR call on every record | S1 | pending | |
+| S2 | Uncapped InterPro enumeration of the family Pfams → census v2, with a positive ITPR/RYR call on every record | S1 | completed 2026-09-03 | **15,421 proteins across 1,488 taxa; ITPR 6,433 / RYR 6,807 / unassigned 2,181 (14.1 %).** All three seeds walked their cursor chains to the end (63 + 67 + 60 pages, 0 restarts). **InterPro's advertised `count` is wrong in both directions** — PF08709 +168, PF01365 +56, PF08454 −176 — while what it *serves* matches UniProt's independent count to within 2 records every time (D20); the first version of this task's own completeness test failed PF08454 on a complete walk because of it. The documented API host answered 1 request in 12 during the run while `/interpro/wwwapi/` answered 12 of 12, so the client now fails over between them. **The call is a positive architecture test audited against a label it never sees (D14b): 6,191 symbol-labelled records, 0 disagreements**, and re-checked on sequence alone over the per-phylum core panel — 27/27 and 26/26 agreement wherever the bait margin decides, with all four sign flips inside D7's no-call band. **A PF08709-only census would have missed 2,914 records, 758 of them called ITPR across 385 taxa** (D21) — including *Dictyostelium* iplA, which the union recovers and correctly leaves `unassigned` at 2/5 signatures. **The plant and fungal records resolve phylogenetically**: every Viridiplantae call is Chlorophyta (Streptophyta 0/15 records, 13 taxa) and every fungal call is in an early-diverging phylum (Dikarya contributes no records at all). Delta vs census v1 ×9.8 with **no enumeration holes** — all 866 absences verdicted. 7 records carry the complete architecture in 1,528–1,993 aa: truncated gene models UniProt does not flag. → `results/census_v2/report.md` |
 | S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) over vertebrate reference proteomes + jackhmmer-to-convergence completeness argument → census v3 | S1, S2 | pending | |
 | S4 | Genome scope: declared assembly manifest (the denominator) + download tooling | S1 | pending | |
 | S5 | Genomic tblastn + miniprot sweep → per-genome ledger (found / lost / assembly-gap) + novel gene models → census v4 | S4 | pending | |
@@ -196,7 +196,7 @@ than expanding the task in progress.
 | Added | From | Task | Status |
 |-------|------|------|--------|
 | 2026-08-18 | setup | Confirm the external drive is attached and `data_root.txt` points at it before S4/S5 | open |
-| 2026-08-18 | setup | 40 Viridiplantae + 41 Fungi PF08709 records exist in a family textbooks say plants and fungi lack. Identify what they are (real gene / mis-annotation / contamination) — this is Q1's sharpest edge | open (S2 → S20) |
+| 2026-08-18 | setup | ~~40 Viridiplantae + 41 Fungi PF08709 records exist in a family textbooks say plants and fungi lack~~ — **narrowed by S2, not closed.** The records are not scattered: in Viridiplantae *all* 20 ITPR calls are **Chlorophyta** (11 taxa, incl. *Chlamydomonas reinhardtii* with the complete five-signature architecture) and **Streptophyta — the land-plant lineage — has 0 calls from 15 records in 13 taxa**; in Fungi every call is in an early-diverging phylum (Mucoromycota 15, Chytridiomycota 6, Basidiobolomycota 3, Entomophthoromycota 1) and **Dikarya contributes no records to the search space at all**. That is the shape of a loss in the derived lineage of both kingdoms, and it is still a statement about what UniProt holds. → `results/census_v2/lineage_calls.tsv` | open (S20 → S23) |
 | 2026-08-18 | setup | ~~**Ensembl REST is unreliable right now**~~ — **diagnosed and fixed in S0.** Not general flakiness: `/xrefs/symbol/**homo_sapiens**/{symbol}` stalls indefinitely (no response, no error) for `BRCA2` as well as `ITPR1`, while the same endpoint answers in 0.6 s for `danio_rerio` and `/lookup/symbol/homo_sapiens/` answers normally. `src/databases/ensembl.py:_symbol_to_ids` now uses `lookup/symbol` with `xrefs` as fallback. Evidence: `results/s0_baseline/ensembl_endpoint_probe.tsv` | closed 2026-08-18 |
 | 2026-08-18 | S0 | **Ensembl is slow enough to be a scheduling problem, separate from the stall.** Measured: 14 s for a 451-byte `lookup/symbol`, 11 s for a `lookup/id?expand=1`; one gene in one species costs ~95 s end to end. The default 8-species panel × 3 genes therefore needs ~38 min, so `run_headless`'s budget went 300 s → 900 s and a full panel sweep still needs `--species`. The real fix is to parallelise `EnsemblClient.search`'s per-species loop (the other clients already return in seconds) — a client change, not a session's worth of work, but out of S0's scope | open |
 | 2026-08-18 | S0 | **Genomic span varies 6.5× across the three human paralogs (ITPR3 76 kb → ITPR2 498 kb) while protein length varies 3 %.** Found while correcting a false `[lit]` claim. Intron-content asymmetry between paralogs of identical architecture is a result, not a footnote — and D16 says the comparison must be paired within genome | open (S21) |
@@ -209,6 +209,9 @@ than expanding the task in progress.
 | 2026-08-19 | review figures | ***Dictyostelium* iplA (Q9NA13) carries neither PF08709 nor PF02815 nor PF00520** — three of the five family signatures, including the one that *defines* the family. It is a characterised IP₃ receptor and it is in this project's own positive panel, so the InterPro enumeration of S2 would not return it. The census cannot be a single-domain query in either direction: PF08709 over-returns RyRs (49 % in zebrafish) **and** under-returns real members. S3's profile HMMs must be built to find it, and any absence claim resting on signature counts is unsafe until they are | open (S2 → S3 → S20) |
 | 2026-08-19 | review figures | **The literature variant set is thinner than §9 reads.** Of the nine disease entries the review catalogues, only two carry a residue the cited source names (both *ITPR3*: p.Thr1424Met, p.Arg2524Cys); the rest are localised to a domain or not at all. S17's constraint analysis therefore cannot be built from the review — it needs a real variant table (ClinVar / gnomAD) with its own provenance | open (S17) |
 | 2026-08-19 | review figures | **p.Arg2524Cys sits 7 residues past the measured gate** (Phe2513/Ile2517 in 6DQN). The recurrent multisystem variant is on the C-terminal load-bearing stretch of §2.4, which is a structural prediction S17/S12 can test rather than a coincidence to note | open (S17) |
+| 2026-09-03 | S2 | **Seven records carry the complete five-signature ITPR architecture in 1,528–1,993 aa** — 700+ residues short of the shortest real family member — and none is flagged `Fragment` by UniProt, because a truncated gene model submitted as a whole protein is not marked as one. All are unnamed locus tags, five from *Hymenochirus boettgeri* (two loci) and two from chironomid midges. The call on them is correct and the records are wrong: a starting list for the correction register, and the reason length stays a recorded column after it stopped being part of the call. → `results/census_v2/short_complete.tsv` | open (S18) |
+| 2026-09-03 | S2 | **2,177 records (14.1 %) are `unassigned`** — a partial architecture cannot be called by a rule that reads absence as evidence. They are a fragment population (median 678 aa vs 2,671 for a called ITPR; only 5 % inside the size band), so this is the intended behaviour rather than a shortfall, but it is 14 % of the census and S3's profile sweep is what resolves it. The deepest true members are in here: *Dictyostelium* iplA carries 2 of 5 signatures and is `unassigned` | open (S3) |
+| 2026-09-03 | S2 | **The seeded search space holds one bacterial record** (Bacteroidota, no ITPR call). Almost certainly a horizontal-transfer or contamination artefact rather than a real prokaryotic family member, but it is the only prokaryote any of this project's searches has returned and S20's negative claims should name it rather than be surprised by it | open (S20) |
 | 2026-08-18 | setup | AlphaFold DB returned models for 8/8 human ITPR queries in the smoke test — better coverage than the PIEZO family had. Worth checking early whether AFDB covers full-length ITPRs or only fragments, since it changes S11's scope | open (S11) |
 
 ---
@@ -297,6 +300,50 @@ only the size component, never the call. It needs at least one *labelled*
 sister bait in the analysis set to measure against; a search that omits the
 RyR panel silently loses the test. Measured: without it, 6/6 RyR decoys
 promoted at 45.
+
+**D14b — At census scale D14 is a positive architecture test, audited
+against a label it never sees** (S2, 2026-09-03). A record is called RYR
+because it carries a RyR-specific signature (PF02026 / PF06459 / PF21119 /
+PF00622), and ITPR because it carries the *complete* IP3-receptor
+architecture (PF08709 + PF01365 + PF08454 + PF02815 + PF00520) and none of
+them. Absence of RyR evidence is allowed to count **only** when the ITPR
+architecture is complete, because a RyR annotated well enough to show all
+five shared signatures would also show its own; a partial record stays
+`unassigned` and is counted. Length is on every row and enters only as
+support for a medium-confidence call. Two things make this auditable rather
+than assumed: gene symbols are scored against the architecture call but
+never fed into it (`rule_audit.tsv` — 6,191 labelled records, 0
+disagreements), and the whole call is re-checked on sequence alone over the
+per-phylum core panel with the labelled-bait margin. Note the rule's one
+conditional claim: PF00622 (SPRY) sits in ~114,000 UniProt proteins and is
+in no sense RyR-specific — it is diagnostic *inside this search space*, and
+that is what the audit row tests.
+
+**D20 — Enumeration completeness is cursor exhaustion plus an independent
+second count, never the API's advertised total** (S2, 2026-09-03).
+InterPro's `count` field for PF08709 reports 12,339 while the same endpoint
+serves 12,507 distinct accessions, stably across re-queries; UniProt's
+independent count for the same signature is 12,506. A census that stopped
+at the advertised number would have dropped 168 proteins silently. Record
+all three numbers, treat the cursor chain running out as the completeness
+test, and archive every raw page so the parse can be redone offline. The
+same decision covers host failover: InterPro answers on `/interpro/api/`
+and `/interpro/wwwapi/`, which fail independently — during S2 the
+documented host answered 1 request in 12 and the website's host 12 of 12 —
+so every request tries both before it sleeps.
+
+**D21 — A domain census is a union of signatures, never a query on the
+defining one** (S2, 2026-09-03). Measured: PF08709, the IP3-binding core
+that names the family, is absent from 2,911 of the 15,417 enumerated
+records, 758 of which this census calls ITPR across 385 taxa — among them
+*Dictyostelium* iplA (Q9NA13), a characterised receptor in the project's
+own positive panel, which carries PF01365 and PF08454 and none of PF08709 /
+PF02815 / PF00520. Only 66.5 % of the search space carries all three seeds.
+Conversely a single-signature census over-returns: 49 % of zebrafish
+PF08709 records are RyRs (S0). Both directions fail, so the seed set is
+declared in `src/utils/family.py:CENSUS_PFAM_IDS` and MIR is deliberately
+excluded from it — carried by the O-mannosyltransferases too, it widens the
+space without adding evidence, and is kept as an annotation column.
 
 **D19 — The review's figures are generated, never drawn, and every one
 declares its provenance.** `scripts/s0_review_figures.py` renders all 12

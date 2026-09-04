@@ -20,13 +20,43 @@ import json
 import time
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Optional
+from typing import Callable, Optional
 
 import requests
 
 from ..utils.family import FAMILY_PFAM_IDS
 
 INTERPRO_BASE = "https://www.ebi.ac.uk/interpro/api"
+
+#: InterPro answers the same queries on two hosts: the documented API and
+#: the one the InterPro website's own front-end calls. They serve identical
+#: payloads (same `count`, same `metadata` keys) but fail independently —
+#: during S2 the documented host was returning HTTP 500 to 11 of every 12
+#: requests while `wwwapi` served 12 of 12. Every request therefore tries
+#: both hosts before it sleeps, which turns a multi-hour outage into a
+#: half-second detour. Pagination cursors are host-agnostic: a `next` URL
+#: handed back by one host is accepted by the other.
+INTERPRO_HOSTS = [
+    "https://www.ebi.ac.uk/interpro/api",
+    "https://www.ebi.ac.uk/interpro/wwwapi",
+]
+
+
+def host_variants(url: str) -> list[str]:
+    """`url` rewritten onto every InterPro host, its own host first."""
+    for base in INTERPRO_HOSTS:
+        if url.startswith(base + "/") or url == base:
+            others = [h for h in INTERPRO_HOSTS if h != base]
+            return [url] + [base_swap(url, base, h) for h in others]
+    return [url]
+
+
+def base_swap(url: str, old_base: str, new_base: str) -> str:
+    return new_base + url[len(old_base):]
+
+
+class CursorExpired(RuntimeError):
+    """A resumed pagination cursor was rejected by the API."""
 
 
 @dataclass
@@ -97,6 +127,9 @@ def list_proteins_with_pfam(
     strict: bool = False,
     max_retries: int = 4,
     stats: Optional[dict] = None,
+    start_url: Optional[str] = None,
+    start_page: int = 0,
+    on_page: Optional[Callable[[int, dict, Optional[str]], None]] = None,
 ) -> list[ProteinWithDomain]:
     """Return every UniProt protein InterPro has annotated with `pfam_id`.
 
@@ -116,26 +149,46 @@ def list_proteins_with_pfam(
                   and return what was fetched, the legacy behavior).
       stats     — caller-supplied dict, filled with `count` (the API's own
                   total), `pages`, `fetched`, `complete`.
+      start_url — resume a partly-walked cursor chain from this URL instead
+                  of starting at page 1. Cursors are opaque and can expire;
+                  a dead one comes back 400/404, which `strict` callers are
+                  expected to catch and restart from the beginning.
+      start_page— page number already fetched before `start_url`, so
+                  archived page files keep counting up across a resume.
+      on_page   — called as `(page_no, raw_page, next_url)` after every
+                  successful page, before the polite sleep. This is the
+                  hook a resumable driver persists its cursor from.
+
+    Backoff is exponential with a 60 s cap rather than a fixed ladder: the
+    InterPro API returns runs of 500s lasting minutes, and a ladder that
+    tops out in under a minute turns a transient outage into a truncated
+    census.
     """
     out: list[ProteinWithDomain] = []
-    url: Optional[str] = (
+    url: Optional[str] = start_url or (
         f"{INTERPRO_BASE}/protein/UniProt/entry/pfam/{pfam_id}/"
         f"?page_size={page_size}"
     )
-    page_no = 0
+    page_no = start_page
     api_count: Optional[int] = None
-    backoffs = [2, 5, 15, 30]
     while url and (max_results is None or len(out) < max_results):
         data = None
         for attempt in range(max_retries + 1):
-            try:
-                r = requests.get(url, timeout=timeout_s)
-                r.raise_for_status()
-                data = r.json()
+            for candidate in host_variants(url):
+                try:
+                    r = requests.get(candidate, timeout=timeout_s)
+                    if r.status_code in (400, 404) and start_url:
+                        raise CursorExpired(
+                            f"cursor rejected with HTTP {r.status_code}: {url}")
+                    r.raise_for_status()
+                    data = r.json()
+                    break
+                except (requests.RequestException, ValueError):
+                    continue
+            if data is not None:
                 break
-            except (requests.RequestException, ValueError):
-                if attempt < max_retries:
-                    time.sleep(backoffs[min(attempt, len(backoffs) - 1)])
+            if attempt < max_retries:
+                time.sleep(min(60.0, 2.0 ** (attempt + 1)))
         if data is None:
             if strict:
                 raise RuntimeError(
@@ -157,6 +210,8 @@ def list_proteins_with_pfam(
             if max_results is not None and len(out) >= max_results:
                 break
         url = data.get("next")
+        if on_page is not None:
+            on_page(page_no, data, url)
         if url:
             time.sleep(polite_sleep_s)
     if stats is not None:

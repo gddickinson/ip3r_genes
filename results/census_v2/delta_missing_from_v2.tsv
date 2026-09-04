@@ -1,0 +1,867 @@
+accession	verdict	gene	species	length	pfams	origin	source
+A0A3B3IS59	no seed signature annotated	ITPR1	Homo sapiens	408		bundle:2026-08-18_123618_s0_smoke_human	UniProt
+A0A3B3ISE3	no seed signature annotated	ITPR1	Homo sapiens	249		bundle:2026-08-18_123618_s0_smoke_human	UniProt
+A0A3B3ISR4	no seed signature annotated	ITPR1	Homo sapiens	177		bundle:2026-08-18_123618_s0_smoke_human	UniProt
+A0A3B3ITM1	no seed signature annotated	ITPR1	Homo sapiens	175		bundle:2026-08-18_123618_s0_smoke_human	UniProt
+A0A3B3ITQ4	no seed signature annotated	ITPR1	Homo sapiens	188	PF00520	bundle:2026-08-18_123618_s0_smoke_human	UniProt
+AAB04947.2	outside UniProt namespace	ITPR1		2710		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+AAC50064.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+AAI44564.1	outside UniProt namespace	ITPR1		721		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+AAI46647.1	outside UniProt namespace	ITPR3		1049		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+AAI54571.1	outside UniProt namespace	itpr3		226		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+ABM22418.1	outside UniProt namespace	ryr3		274		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+AFI41831.1	outside UniProt namespace	ITPR2		50		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+BAF73476.1	outside UniProt namespace	ryr1b		5076		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+BAF75948.1	outside UniProt namespace	ryr3		409		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+CAR5219793.1	outside UniProt namespace	ITPR1		2575		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5220162.1	outside UniProt namespace	ITPR1		2580		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5221941.1	outside UniProt namespace	ITPR2		2371		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5221943.1	outside UniProt namespace	ITPR2		187		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5223730.1	outside UniProt namespace	ITPR3		367		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5223731.1	outside UniProt namespace	ITPR3		2331		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5351519.1	outside UniProt namespace	ITPR1		2594		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5353052.1	outside UniProt namespace	ITPR1		2592		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5353133.1	outside UniProt namespace	ITPR1		3001		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5353553.1	outside UniProt namespace	ITPR1		2619		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5354184.1	outside UniProt namespace	ITPR1		2616		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5355023.1	outside UniProt namespace	ITPR1		2501		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5355210.1	outside UniProt namespace	ITPR1		2489		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5355518.1	outside UniProt namespace	ITPR1		2592		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5356334.1	outside UniProt namespace	ITPR1		2547		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5357574.1	outside UniProt namespace	ITPR1		2549		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5358621.1	outside UniProt namespace	ITPR1		2592		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5358735.1	outside UniProt namespace	ITPR1		2592		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5360563.1	outside UniProt namespace	ITPR1		2505		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5360718.1	outside UniProt namespace	ITPR1		2518		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5363954.1	outside UniProt namespace	ITPR2		2649		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5365531.1	outside UniProt namespace	ITPR2		2657		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5365660.1	outside UniProt namespace	ITPR2		2581		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5366616.1	outside UniProt namespace	ITPR2		2716		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5367842.1	outside UniProt namespace	ITPR2		2630		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5370800.1	outside UniProt namespace	ITPR2		2806		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5371062.1	outside UniProt namespace	ITPR2		2581		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5374228.1	outside UniProt namespace	ITPR3		382		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5374235.1	outside UniProt namespace	ITPR3		2201		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5375785.1	outside UniProt namespace	ITPR3		4853		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5375819.1	outside UniProt namespace	ITPR3		392		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5375826.1	outside UniProt namespace	ITPR3		2375		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5377091.1	outside UniProt namespace	ITPR3		392		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5377097.1	outside UniProt namespace	ITPR3		2329		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5378057.1	outside UniProt namespace	ITPR3		382		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5378064.1	outside UniProt namespace	ITPR3		2329		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5381278.1	outside UniProt namespace	ITPR3		392		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5381285.1	outside UniProt namespace	ITPR3		2327		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5381415.1	outside UniProt namespace	ITPR3		151		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5381422.1	outside UniProt namespace	ITPR3		2141		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR5381430.1	outside UniProt namespace	ITPR3		367		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR8075925.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR8082497.1	outside UniProt namespace	ITPR2		2699		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR8082498.1	outside UniProt namespace	ITPR2		2737		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR8082499.1	outside UniProt namespace	ITPR2		1632		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR8091055.1	outside UniProt namespace	ITPR1		2685		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR8091056.1	outside UniProt namespace	ITPR1		2681		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR8091057.1	outside UniProt namespace	ITPR1		2696		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR8091058.1	outside UniProt namespace	ITPR1		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR8091059.1	outside UniProt namespace	ITPR1		2712		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR8091060.1	outside UniProt namespace	ITPR1		2708		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR8091061.1	outside UniProt namespace	ITPR1		2727		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+CAR8091062.1	outside UniProt namespace	ITPR1		2723		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+EAW63908.1	outside UniProt namespace	ITPR1		1034		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+EAW63909.1	outside UniProt namespace	ITPR1		1058		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+EAW63910.1	outside UniProt namespace	ITPR1		1034		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+EAW63911.1	outside UniProt namespace	ITPR1		1049		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+EAW63912.1	outside UniProt namespace	ITPR1		1049		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+EAW63913.1	outside UniProt namespace	ITPR1		2710		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+EAW63914.1	outside UniProt namespace	ITPR1		1049		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+EAW63915.1	outside UniProt namespace	ITPR1		2695		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+EAW96534.1	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+EAW96535.1	outside UniProt namespace	ITPR2		2726		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+EAX03744.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+ENSDARP00000032856	outside UniProt namespace	ryr1b	Danio rerio	5078		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000033695	outside UniProt namespace	itpr1b	Danio rerio	2782		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000061133	outside UniProt namespace	itpr2	Danio rerio	1947		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000065091	outside UniProt namespace	itpr1a	Danio rerio	2730		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000116513	outside UniProt namespace	itpr3	Danio rerio	2293		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000116678	outside UniProt namespace	ryr3	Danio rerio	4984		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000123064	outside UniProt namespace	itpr3	Danio rerio	332		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000123931	outside UniProt namespace	itpr1a	Danio rerio	2682		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000128737	outside UniProt namespace	itpr2	Danio rerio	2008		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000131111	outside UniProt namespace	ryr3	Danio rerio	4987		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000133340	outside UniProt namespace	itpr3	Danio rerio	2634		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000139056	outside UniProt namespace	itpr1b	Danio rerio	2731		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000145195	outside UniProt namespace	itpr1b	Danio rerio	2717		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000145528	outside UniProt namespace	itpr1a	Danio rerio	2730		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000147521	outside UniProt namespace	itpr1a	Danio rerio	708		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000147809	outside UniProt namespace	itpr1a	Danio rerio	2715		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000148003	outside UniProt namespace	itpr1b	Danio rerio	2715		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000148139	outside UniProt namespace	itpr1b	Danio rerio	2638		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000148141	outside UniProt namespace	itpr1b	Danio rerio	2533		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000149110	outside UniProt namespace	itpr1a	Danio rerio	2726		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000149287	outside UniProt namespace	itpr1a	Danio rerio	990		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000149967	outside UniProt namespace	itpr1b	Danio rerio	2580		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000150035	outside UniProt namespace	itpr1b	Danio rerio	2740		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000151485	outside UniProt namespace	itpr1a	Danio rerio	2707		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000151640	outside UniProt namespace	itpr1a	Danio rerio	2745		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000152154	outside UniProt namespace	itpr1a	Danio rerio	2726		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000152307	outside UniProt namespace	itpr1a	Danio rerio	594		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000152700	outside UniProt namespace	itpr1a	Danio rerio	708		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000154446	outside UniProt namespace	itpr1b	Danio rerio	595		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000154606	outside UniProt namespace	itpr1b	Danio rerio	2581		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000155491	outside UniProt namespace	itpr1a	Danio rerio	2707		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000155915	outside UniProt namespace	itpr1b	Danio rerio	2576		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSDARP00000156373	outside UniProt namespace	itpr1a	Danio rerio	2745		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	Ensembl
+ENSP00000242737	outside UniProt namespace	ITPR2	Homo sapiens	181		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000306253	outside UniProt namespace	ITPR1	Homo sapiens	1668		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000346595	outside UniProt namespace	ITPR1	Homo sapiens	2750		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000349597	outside UniProt namespace	ITPR1	Homo sapiens	2710		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000363435	outside UniProt namespace	ITPR3	Homo sapiens	2671		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000370744	outside UniProt namespace	ITPR2	Homo sapiens	2701		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000397885	outside UniProt namespace	ITPR1	Homo sapiens	2695		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000401671	outside UniProt namespace	ITPR1	Homo sapiens	2743		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000408287	outside UniProt namespace	ITPR2	Homo sapiens	102		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000440548	outside UniProt namespace	ITPR2	Homo sapiens	79		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000440564	outside UniProt namespace	ITPR1	Homo sapiens	721		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000475177	outside UniProt namespace	ITPR3	Homo sapiens	2671		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000496893	outside UniProt namespace	ITPR1	Homo sapiens	1548		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000496995	outside UniProt namespace	ITPR1	Homo sapiens	296		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000497026	outside UniProt namespace	ITPR1	Homo sapiens	2734		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000497099	outside UniProt namespace	ITPR1	Homo sapiens	408		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000497186	outside UniProt namespace	ITPR1	Homo sapiens	249		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000497226	outside UniProt namespace	ITPR1	Homo sapiens	175		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000497404	outside UniProt namespace	ITPR1	Homo sapiens	177		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000497605	outside UniProt namespace	ITPR1	Homo sapiens	2758		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000497614	outside UniProt namespace	ITPR1	Homo sapiens	175		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000497835	outside UniProt namespace	ITPR1	Homo sapiens	175		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000497851	outside UniProt namespace	ITPR1	Homo sapiens	714		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000497872	outside UniProt namespace	ITPR1	Homo sapiens	2012		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000497999	outside UniProt namespace	ITPR1	Homo sapiens	188		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000498014	outside UniProt namespace	ITPR1	Homo sapiens	2749		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000498022	outside UniProt namespace	ITPR1	Homo sapiens	1739		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000498056	outside UniProt namespace	ITPR1	Homo sapiens	2744		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000498149	outside UniProt namespace	ITPR1	Homo sapiens	1818		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000601699	outside UniProt namespace	ITPR3	Homo sapiens	2661		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000672712	outside UniProt namespace	ITPR2	Homo sapiens	55		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000686362	outside UniProt namespace	ITPR3	Homo sapiens	250		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000742240	outside UniProt namespace	ITPR3	Homo sapiens	1221		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000777889	outside UniProt namespace	ITPR2	Homo sapiens	1075		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000777890	outside UniProt namespace	ITPR2	Homo sapiens	322		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000790150	outside UniProt namespace	ITPR2	Homo sapiens	65		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000790151	outside UniProt namespace	ITPR2	Homo sapiens	45		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000790458	outside UniProt namespace	ITPR3	Homo sapiens	30		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000811227	outside UniProt namespace	ITPR2	Homo sapiens	2701		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000814523	outside UniProt namespace	ITPR3	Homo sapiens	2671		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+ENSP00000815149	outside UniProt namespace	ITPR1	Homo sapiens	2758		bundle:2026-08-18_123618_s0_smoke_human	Ensembl
+H7C2X9	no seed signature annotated	ITPR2	Homo sapiens	102		bundle:2026-08-18_123618_s0_smoke_human	UniProt
+KAM4046678.1	outside UniProt namespace	ITPR3		2677		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAM4046679.1	outside UniProt namespace	ITPR3		2593		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAM6314509.1	outside UniProt namespace	ITPR2		2715		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAM6930006.1	outside UniProt namespace	ITPR3		2688		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAM8861047.1	outside UniProt namespace	ITPR2		2690		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAM8930308.1	outside UniProt namespace	ITPR1		2696		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAM8930309.1	outside UniProt namespace	ITPR1		2683		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAM8938017.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAM8979432.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAM9172715.1	outside UniProt namespace	ITPR2		2699		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAM9172716.1	outside UniProt namespace	ITPR2		2624		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAM9203046.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAM9203047.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAM9389892.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN3695036.1	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN3695037.1	outside UniProt namespace	ITPR2		2639		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN3695038.1	outside UniProt namespace	ITPR2		2626		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN3695039.1	outside UniProt namespace	ITPR2		2517		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN3949701.1	outside UniProt namespace	ITPR3		2656		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN3949702.1	outside UniProt namespace	ITPR3		2655		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN3949703.1	outside UniProt namespace	ITPR3		2220		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN4315348.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN6968415.1	outside UniProt namespace	ITPR2		2660		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN7288953.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN7288954.1	outside UniProt namespace	ITPR2		2695		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN7400215.1	outside UniProt namespace	ITPR1		2746		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN8461899.1	outside UniProt namespace	ITPR3		2696		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN8461900.1	outside UniProt namespace	ITPR3		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN8461901.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN8468730.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN8531752.1	outside UniProt namespace	ITPR3		2696		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN8531753.1	outside UniProt namespace	ITPR3		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN8531754.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN9730985.1	outside UniProt namespace	ITPR2		2702		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN9730986.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN9730987.1	outside UniProt namespace	ITPR2		2529		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN9730988.1	outside UniProt namespace	ITPR2		2168		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAN9744666.1	outside UniProt namespace	ITPR3		2662		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0077082.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0077083.1	outside UniProt namespace	ITPR3		2670		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0077084.1	outside UniProt namespace	ITPR3		2692		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0077085.1	outside UniProt namespace	ITPR3		2722		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0095807.1	outside UniProt namespace	ITPR3		2667		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0095808.1	outside UniProt namespace	ITPR3		2650		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0095809.1	outside UniProt namespace	ITPR3		2625		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0184237.1	outside UniProt namespace	ITPR3		2670		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0279777.1	outside UniProt namespace	ITPR3		138		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0279779.1	outside UniProt namespace	ITPR3		487		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0279781.1	outside UniProt namespace	ITPR3		1260		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0279783.1	outside UniProt namespace	ITPR3		851		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0884365.1	outside UniProt namespace	ITPR1		2748		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0897779.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0897780.1	outside UniProt namespace	ITPR3		2670		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0897781.1	outside UniProt namespace	ITPR3		2722		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+KAO0905863.1	outside UniProt namespace	ITPR2		2702		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+NP_001093422.2	outside UniProt namespace	ITPR1		2710		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+NP_001096041.1	outside UniProt namespace	ryr1b		5076		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+NP_001161744.1	outside UniProt namespace	ITPR1		2743		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+NP_001300740.1	outside UniProt namespace	itpr3		2634		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+NP_001365381.1	outside UniProt namespace	ITPR1		2758		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+NP_001401103.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+NP_001401104.1	outside UniProt namespace	ITPR2		2628		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+NP_002213.5	outside UniProt namespace	ITPR1		2695		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+NP_002214.2	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+NP_002215.2	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+NP_034716.1	outside UniProt namespace	ITPR2		2668		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+NP_064307.2	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+NP_542120.2	outside UniProt namespace	ITPR3		2670		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+O00555	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+P11881-1	isoform of censused P11881	ITPR1	Mus musculus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P11881-2	isoform of censused P11881	ITPR1	Mus musculus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P11881-3	isoform of censused P11881	ITPR1	Mus musculus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P11881-4	isoform of censused P11881	ITPR1	Mus musculus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P11881-5	isoform of censused P11881	ITPR1	Mus musculus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P11881-6	isoform of censused P11881	ITPR1	Mus musculus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P11881-7	isoform of censused P11881	ITPR1	Mus musculus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P11881-8	isoform of censused P11881	ITPR1	Mus musculus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P21333	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+P26039	s1_decoy (correctly absent)		Mus musculus			panel:panel_decoys	S1
+P29994-1	isoform of censused P29994	ITPR1	Rattus norvegicus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P29994-2	isoform of censused P29994	ITPR1	Rattus norvegicus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P29994-3	isoform of censused P29994	ITPR1	Rattus norvegicus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P29994-4	isoform of censused P29994	ITPR1	Rattus norvegicus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P29994-5	isoform of censused P29994	ITPR1	Rattus norvegicus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P29994-6	isoform of censused P29994	ITPR1	Rattus norvegicus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P29994-7	isoform of censused P29994	ITPR1	Rattus norvegicus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P29994-8	isoform of censused P29994	ITPR1	Rattus norvegicus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+P35498	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+P46939	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+P70227.3	outside UniProt namespace	ITPR3		2670		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+P98161	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q01082	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q13315	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q13402	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q13936	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q14204	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q14524	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q14571-1	isoform of censused Q14571	ITPR2	Homo sapiens			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+Q14571-2	isoform of censused Q14571	ITPR2	Homo sapiens			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+Q14571.2	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+Q14573.2	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+Q14643-1	isoform of censused Q14643	ITPR1	Homo sapiens			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+Q14643-2	isoform of censused Q14643	ITPR1	Homo sapiens			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+Q14643-3	isoform of censused Q14643	ITPR1	Homo sapiens			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+Q14643-4	isoform of censused Q14643	ITPR1	Homo sapiens			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+Q14643-5	isoform of censused Q14643	ITPR1	Homo sapiens			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+Q14643-6	isoform of censused Q14643	ITPR1	Homo sapiens			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+Q14643-7	isoform of censused Q14643	ITPR1	Homo sapiens			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+Q14643-8	isoform of censused Q14643	ITPR1	Homo sapiens			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+Q14643.3	outside UniProt namespace	ITPR1		2758		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+Q15858	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q15878	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q5S007	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q63269.1	outside UniProt namespace	ITPR3		2670		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+Q7Z442	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q8NFP9	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q8TDX9	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q8WN96.1	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+Q96QT4	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q96RL7	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q9BX84	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q9BZ29	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q9UKY4	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q9Y490	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q9Y6A1	s1_decoy (correctly absent)		Homo sapiens			panel:panel_decoys	S1
+Q9Z329-1	isoform of censused Q9Z329	ITPR2	Mus musculus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+Q9Z329-2	isoform of censused Q9Z329	ITPR2	Mus musculus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+Q9Z329-3	isoform of censused Q9Z329	ITPR2	Mus musculus			bundle:2026-08-18_091322_itpr1_itpr2_itpr3	UniProt
+Q9Z329.4	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_001363102.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_003128393.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_005166152.1	outside UniProt namespace	itpr1a		2711		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_006140375.2	outside UniProt namespace	ITPR2		2767		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_009293048.2	outside UniProt namespace	ryr3		4863		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_009293049.2	outside UniProt namespace	ryr3		4857		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_009293050.2	outside UniProt namespace	ryr3		4856		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_009300860.1	outside UniProt namespace	itpr1a		2710		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_009300862.1	outside UniProt namespace	itpr1a		2696		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_009300863.1	outside UniProt namespace	itpr1a		2683		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_009982439.2	outside UniProt namespace	ITPR1		2712		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_009982440.2	outside UniProt namespace	ITPR1		2709		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_009982441.2	outside UniProt namespace	ITPR1		2694		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_011512879.1	outside UniProt namespace	ITPR3		2610		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_013833248.1	outside UniProt namespace	ITPR3		2670		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_014441251.1	outside UniProt namespace	ITPR1		2760		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_014441252.1	outside UniProt namespace	ITPR1		2751		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_014441253.1	outside UniProt namespace	ITPR1		2745		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_014441254.1	outside UniProt namespace	ITPR1		2737		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_014441255.1	outside UniProt namespace	ITPR1		2736		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_014441256.1	outside UniProt namespace	ITPR1		2720		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_014441257.1	outside UniProt namespace	ITPR1		2711		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_014441258.1	outside UniProt namespace	ITPR1		2696		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_014441661.1	outside UniProt namespace	ITPR3		2661		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_015740819.2	outside UniProt namespace	ITPR3		2691		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_015740820.2	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_016810751.3	outside UniProt namespace	ITPR3		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_016810752.3	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_016866321.1	outside UniProt namespace	ITPR3		1312		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_016874755.1	outside UniProt namespace	ITPR2		2721		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_016874758.1	outside UniProt namespace	ITPR2		1733		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_017207446.1	outside UniProt namespace	ryr1b		5109		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_017212153.1	outside UniProt namespace	itpr1a		2695		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_017212154.1	outside UniProt namespace	itpr1a		2682		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_017212155.1	outside UniProt namespace	itpr1a		2667		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_017212869.1	outside UniProt namespace	itpr3		2635		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_017709133.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_019516379.1	outside UniProt namespace	ITPR3		2643		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_020924936.2	outside UniProt namespace	ITPR1		2749		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_020924938.2	outside UniProt namespace	ITPR1		2748		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_020924941.2	outside UniProt namespace	ITPR1		2709		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_020924942.2	outside UniProt namespace	ITPR1		2694		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_020924943.2	outside UniProt namespace	ITPR1		2733		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_020948578.2	outside UniProt namespace	ITPR2		2702		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_021041402.2	outside UniProt namespace	ITPR3		2771		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_021323455.1	outside UniProt namespace	itpr2		2665		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_021394344.2	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_021394346.2	outside UniProt namespace	ITPR2		2685		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_021398322.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_024212919.2	outside UniProt namespace	ITPR3		2658		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_024622064.1	outside UniProt namespace	ITPR3		2670		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_025238513.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_025257851.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_025786146.2	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_027625575.1	outside UniProt namespace	ITPR1		2759		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_027625576.1	outside UniProt namespace	ITPR1		2736		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_027625577.1	outside UniProt namespace	ITPR1		2744		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_031791519.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_032302128.2	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_034516455.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_040472778.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_047274687.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_047274688.1	outside UniProt namespace	ITPR3		2610		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_047274689.1	outside UniProt namespace	ITPR3		2610		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_047274690.1	outside UniProt namespace	ITPR3		2610		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_047284757.1	outside UniProt namespace	ITPR2		2699		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_054211326.1	outside UniProt namespace	ITPR3		2698		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_054211327.1	outside UniProt namespace	ITPR3		2610		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_054211328.1	outside UniProt namespace	ITPR3		2610		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_054211329.1	outside UniProt namespace	ITPR3		2610		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_054211330.1	outside UniProt namespace	ITPR3		1339		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_054227945.1	outside UniProt namespace	ITPR2		2721		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_054227946.1	outside UniProt namespace	ITPR2		2699		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_054227947.1	outside UniProt namespace	ITPR2		1733		bundle:2026-08-18_123618_s0_smoke_human	NCBI
+XP_056674026.1	outside UniProt namespace	ITPR3		2668		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_068071751.2	outside UniProt namespace	ryr3		4861		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_068080493.2	outside UniProt namespace	itpr1b		2819		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_068080496.2	outside UniProt namespace	itpr1b		2807		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_068080497.2	outside UniProt namespace	itpr1b		2807		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_068080498.2	outside UniProt namespace	itpr1b		2806		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_068080499.2	outside UniProt namespace	itpr1b		2804		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_068080501.2	outside UniProt namespace	itpr1b		2795		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_068080505.2	outside UniProt namespace	itpr1b		2780		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_068080506.2	outside UniProt namespace	itpr1b		2779		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_068080507.2	outside UniProt namespace	itpr1b		2764		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_068080510.2	outside UniProt namespace	itpr1b		2756		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_068080511.2	outside UniProt namespace	itpr1b		2716		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773056.1	outside UniProt namespace	itpr1b		2794		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773057.1	outside UniProt namespace	itpr1b		2792		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773058.1	outside UniProt namespace	itpr1b		2792		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773059.1	outside UniProt namespace	itpr1b		2791		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773060.1	outside UniProt namespace	itpr1b		2782		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773061.1	outside UniProt namespace	itpr1b		2781		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773062.1	outside UniProt namespace	itpr1b		2779		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773063.1	outside UniProt namespace	itpr1b		2767		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773064.1	outside UniProt namespace	itpr1b		2767		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773065.1	outside UniProt namespace	itpr1b		2766		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773066.1	outside UniProt namespace	itpr1b		2760		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773067.1	outside UniProt namespace	itpr1b		2758		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773068.1	outside UniProt namespace	itpr1b		2757		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773069.1	outside UniProt namespace	itpr1b		2756		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773070.1	outside UniProt namespace	itpr1b		2755		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773071.1	outside UniProt namespace	itpr1b		2751		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773072.1	outside UniProt namespace	itpr1b		2749		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773074.1	outside UniProt namespace	itpr1b		2748		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773075.1	outside UniProt namespace	itpr1b		2747		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773076.1	outside UniProt namespace	itpr1b		2746		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773077.1	outside UniProt namespace	itpr1b		2745		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773078.1	outside UniProt namespace	itpr1b		2744		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773079.1	outside UniProt namespace	itpr1b		2742		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773080.1	outside UniProt namespace	itpr1b		2739		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773081.1	outside UniProt namespace	itpr1b		2732		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773082.1	outside UniProt namespace	itpr1b		2730		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773083.1	outside UniProt namespace	itpr1b		2729		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073773085.1	outside UniProt namespace	itpr1b		2726		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785568.1	outside UniProt namespace	ryr1b		5104		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785570.1	outside UniProt namespace	ryr1b		5103		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785571.1	outside UniProt namespace	ryr1b		5103		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785572.1	outside UniProt namespace	ryr1b		5102		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785573.1	outside UniProt namespace	ryr1b		5099		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785574.1	outside UniProt namespace	ryr1b		5098		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785575.1	outside UniProt namespace	ryr1b		5098		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785576.1	outside UniProt namespace	ryr1b		5097		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785577.1	outside UniProt namespace	ryr1b		5093		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785578.1	outside UniProt namespace	ryr1b		5093		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785579.1	outside UniProt namespace	ryr1b		5092		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785581.1	outside UniProt namespace	ryr1b		5089		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785582.1	outside UniProt namespace	ryr1b		5088		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785583.1	outside UniProt namespace	ryr1b		5087		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785584.1	outside UniProt namespace	ryr1b		5084		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785585.1	outside UniProt namespace	ryr1b		5083		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785586.1	outside UniProt namespace	ryr1b		5083		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785587.1	outside UniProt namespace	ryr1b		5082		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785588.1	outside UniProt namespace	ryr1b		5078		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785589.1	outside UniProt namespace	ryr1b		5078		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785590.1	outside UniProt namespace	ryr1b		5077		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785591.1	outside UniProt namespace	ryr1b		5072		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785592.1	outside UniProt namespace	ryr1b		5076		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073785593.1	outside UniProt namespace	ryr1b		5071		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073810471.1	outside UniProt namespace	itpr1a		2698		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073810472.1	outside UniProt namespace	itpr1a		2695		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073810473.1	outside UniProt namespace	itpr1a		2694		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073810474.1	outside UniProt namespace	itpr1a		2684		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073810475.1	outside UniProt namespace	itpr1a		2683		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073810476.1	outside UniProt namespace	itpr1a		2668		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_073810477.1	outside UniProt namespace	itpr1a		2165		bundle:2026-08-18_092259_itpr1a_itpr1b_itpr2	NCBI
+XP_077645204.1	outside UniProt namespace	ITPR3		2663		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083216559.1	outside UniProt namespace	ITPR3		2665		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083216560.1	outside UniProt namespace	ITPR3		2252		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083255332.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083255333.1	outside UniProt namespace	ITPR2		2699		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083255334.1	outside UniProt namespace	ITPR2		2684		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083255335.1	outside UniProt namespace	ITPR2		2660		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083255336.1	outside UniProt namespace	ITPR2		2596		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083255337.1	outside UniProt namespace	ITPR2		2516		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083255338.1	outside UniProt namespace	ITPR2		2514		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083255339.1	outside UniProt namespace	ITPR2		2304		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083301735.1	outside UniProt namespace	ITPR3		2665		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083320254.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083320255.1	outside UniProt namespace	ITPR2		2697		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083320256.1	outside UniProt namespace	ITPR2		2682		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083320257.1	outside UniProt namespace	ITPR2		2658		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083320258.1	outside UniProt namespace	ITPR2		2594		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083320259.1	outside UniProt namespace	ITPR2		2514		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083320260.1	outside UniProt namespace	ITPR2		2512		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083365276.1	outside UniProt namespace	ITPR3		2665		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083409836.1	outside UniProt namespace	ITPR3		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083409837.1	outside UniProt namespace	ITPR3		2697		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083430969.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083430970.1	outside UniProt namespace	ITPR2		2699		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083430971.1	outside UniProt namespace	ITPR2		2684		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083430972.1	outside UniProt namespace	ITPR2		2660		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083430973.1	outside UniProt namespace	ITPR2		2596		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083430974.1	outside UniProt namespace	ITPR2		2516		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083430975.1	outside UniProt namespace	ITPR2		2514		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083476129.1	outside UniProt namespace	ITPR3		2665		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083513249.1	outside UniProt namespace	ITPR3		2666		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083522938.1	outside UniProt namespace	ITPR2		2666		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083522939.1	outside UniProt namespace	ITPR2		2665		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083522940.1	outside UniProt namespace	ITPR2		2663		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083522941.1	outside UniProt namespace	ITPR2		2662		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083530577.1	outside UniProt namespace	ITPR3		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083530578.1	outside UniProt namespace	ITPR3		2680		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083601028.1	outside UniProt namespace	ITPR3		2665		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083626131.1	outside UniProt namespace	ITPR3		2680		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083668319.1	outside UniProt namespace	ITPR3		2665		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083668320.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083668321.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083668322.1	outside UniProt namespace	ITPR3		2648		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083668323.1	outside UniProt namespace	ITPR3		2604		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083668324.1	outside UniProt namespace	ITPR3		2604		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083734599.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083750921.1	outside UniProt namespace	ITPR3		2660		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083772602.1	outside UniProt namespace	ITPR2		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083776119.1	outside UniProt namespace	ITPR3		2695		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083776120.1	outside UniProt namespace	ITPR3		2670		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083799289.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083799290.1	outside UniProt namespace	ITPR2		2167		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083818856.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083829876.1	outside UniProt namespace	ITPR2		2704		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083829877.1	outside UniProt namespace	ITPR2		2697		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083829878.1	outside UniProt namespace	ITPR2		2697		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083829879.1	outside UniProt namespace	ITPR2		2690		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083829880.1	outside UniProt namespace	ITPR2		2642		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083831728.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083871023.1	outside UniProt namespace	ITPR3		2677		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083871024.1	outside UniProt namespace	ITPR3		2675		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083926346.1	outside UniProt namespace	ITPR3		2696		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083926347.1	outside UniProt namespace	ITPR3		2686		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083994628.1	outside UniProt namespace	ITPR3		2657		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_083994629.1	outside UniProt namespace	ITPR3		2640		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084076932.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084084130.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084131914.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084158214.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084189542.1	outside UniProt namespace	ITPR3		2005		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084223885.1	outside UniProt namespace	ITPR3		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084223886.1	outside UniProt namespace	ITPR3		2686		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084245026.1	outside UniProt namespace	ITPR3		2657		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084245027.1	outside UniProt namespace	ITPR3		2640		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084292548.1	outside UniProt namespace	ITPR3		2666		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084333170.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084333171.1	outside UniProt namespace	ITPR2		2697		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084333172.1	outside UniProt namespace	ITPR2		2697		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084333173.1	outside UniProt namespace	ITPR2		2693		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084335346.1	outside UniProt namespace	ITPR3		2714		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084354147.1	outside UniProt namespace	ITPR3		2665		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084354148.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084354149.1	outside UniProt namespace	ITPR3		2648		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084369554.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084369555.1	outside UniProt namespace	ITPR2		2685		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084369556.1	outside UniProt namespace	ITPR2		2630		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084410160.1	outside UniProt namespace	ITPR3		2682		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084410161.1	outside UniProt namespace	ITPR3		2679		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084410162.1	outside UniProt namespace	ITPR3		2672		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084410163.1	outside UniProt namespace	ITPR3		2657		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084410684.1	outside UniProt namespace	ITPR2		2689		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084410685.1	outside UniProt namespace	ITPR2		2504		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084467391.1	outside UniProt namespace	ITPR3		2663		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084487748.1	outside UniProt namespace	ITPR2		2699		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084529263.1	outside UniProt namespace	ITPR2		2702		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084529265.1	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084529266.1	outside UniProt namespace	ITPR2		2691		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084529267.1	outside UniProt namespace	ITPR2		2690		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084535866.1	outside UniProt namespace	ITPR3		2655		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084535867.1	outside UniProt namespace	ITPR3		2654		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084535868.1	outside UniProt namespace	ITPR3		2653		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084576286.1	outside UniProt namespace	ITPR3		2693		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084591282.1	outside UniProt namespace	ITPR2		2685		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084609831.1	outside UniProt namespace	ITPR3		2670		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084621001.1	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084621002.1	outside UniProt namespace	ITPR2		2639		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084667655.1	outside UniProt namespace	ITPR2		2729		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084667656.1	outside UniProt namespace	ITPR2		2728		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084667657.1	outside UniProt namespace	ITPR2		2728		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084667658.1	outside UniProt namespace	ITPR2		2702		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084667659.1	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084667660.1	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084667662.1	outside UniProt namespace	ITPR2		2682		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084667663.1	outside UniProt namespace	ITPR2		2655		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084667664.1	outside UniProt namespace	ITPR2		2506		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084667665.1	outside UniProt namespace	ITPR2		2378		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084696436.1	outside UniProt namespace	ITPR1		2739		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084696437.1	outside UniProt namespace	ITPR1		2736		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084696438.1	outside UniProt namespace	ITPR1		2731		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084696439.1	outside UniProt namespace	ITPR1		2730		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084696440.1	outside UniProt namespace	ITPR1		2729		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084696441.1	outside UniProt namespace	ITPR1		2721		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084696442.1	outside UniProt namespace	ITPR1		2714		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084696443.1	outside UniProt namespace	ITPR1		2711		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084696444.1	outside UniProt namespace	ITPR1		2709		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084696445.1	outside UniProt namespace	ITPR1		2699		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084696446.1	outside UniProt namespace	ITPR1		2746		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084696447.1	outside UniProt namespace	ITPR1		2218		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084709126.1	outside UniProt namespace	ITPR3		2670		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084709127.1	outside UniProt namespace	ITPR3		2669		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084733272.1	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084747119.1	outside UniProt namespace	ITPR3		2695		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084747120.1	outside UniProt namespace	ITPR3		2670		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084747121.1	outside UniProt namespace	ITPR3		2667		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084758370.1	outside UniProt namespace	ITPR1		2699		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084772456.1	outside UniProt namespace	ITPR3		2696		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084772457.1	outside UniProt namespace	ITPR3		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084789192.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084789193.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084789194.1	outside UniProt namespace	ITPR2		2560		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084812640.1	outside UniProt namespace	ITPR2		2518		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084845344.1	outside UniProt namespace	ITPR1		2734		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084845345.1	outside UniProt namespace	ITPR1		2601		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084845346.1	outside UniProt namespace	ITPR1		2586		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084905205.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084905206.1	outside UniProt namespace	ITPR2		2685		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084928353.1	outside UniProt namespace	ITPR1		2788		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084928355.1	outside UniProt namespace	ITPR1		2779		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084928356.1	outside UniProt namespace	ITPR1		2773		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084928357.1	outside UniProt namespace	ITPR1		2765		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084928358.1	outside UniProt namespace	ITPR1		2764		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084928359.1	outside UniProt namespace	ITPR1		2750		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084928360.1	outside UniProt namespace	ITPR1		2749		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084928361.1	outside UniProt namespace	ITPR1		2740		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084928362.1	outside UniProt namespace	ITPR1		2735		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084928363.1	outside UniProt namespace	ITPR1		2726		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084928364.1	outside UniProt namespace	ITPR1		2711		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_084939178.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085003353.1	outside UniProt namespace	ITPR3		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085003354.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085024541.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085024542.1	outside UniProt namespace	ITPR2		2675		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085066843.1	outside UniProt namespace	ITPR3		2674		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085066844.1	outside UniProt namespace	ITPR3		2669		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085066845.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085066846.1	outside UniProt namespace	ITPR3		2657		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085088083.1	outside UniProt namespace	ITPR2		2683		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085088089.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085088100.1	outside UniProt namespace	ITPR2		2668		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085092351.1	outside UniProt namespace	ITPR1		2749		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085115083.1	outside UniProt namespace	ITPR3		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085115084.1	outside UniProt namespace	ITPR3		2662		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085137946.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085156150.1	outside UniProt namespace	ITPR1		2712		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085156151.1	outside UniProt namespace	ITPR1		2697		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085156152.1	outside UniProt namespace	ITPR1		2604		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085166725.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085180597.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085180598.1	outside UniProt namespace	ITPR2		2699		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085180599.1	outside UniProt namespace	ITPR2		2641		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085187201.1	outside UniProt namespace	ITPR1		2750		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085187203.1	outside UniProt namespace	ITPR1		2750		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085187204.1	outside UniProt namespace	ITPR1		2749		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085187205.1	outside UniProt namespace	ITPR1		2735		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085187206.1	outside UniProt namespace	ITPR1		2735		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085187207.1	outside UniProt namespace	ITPR1		2733		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085187208.1	outside UniProt namespace	ITPR1		2727		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085187209.1	outside UniProt namespace	ITPR1		2726		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085187210.1	outside UniProt namespace	ITPR1		2710		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085187211.1	outside UniProt namespace	ITPR1		2734		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085187212.1	outside UniProt namespace	ITPR1		2695		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085193450.1	outside UniProt namespace	ITPR3		2607		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085201474.1	outside UniProt namespace	ITPR3		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085215221.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085248701.1	outside UniProt namespace	ITPR3		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085248702.1	outside UniProt namespace	ITPR3		2625		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085248703.1	outside UniProt namespace	ITPR3		2264		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085268012.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085300292.1	outside UniProt namespace	ITPR3		2696		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085317610.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372226.1	outside UniProt namespace	ITPR1		2802		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372227.1	outside UniProt namespace	ITPR1		2788		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372229.1	outside UniProt namespace	ITPR1		2787		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372230.1	outside UniProt namespace	ITPR1		2765		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372231.1	outside UniProt namespace	ITPR1		2763		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372232.1	outside UniProt namespace	ITPR1		2764		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372233.1	outside UniProt namespace	ITPR1		2750		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372234.1	outside UniProt namespace	ITPR1		2749		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372235.1	outside UniProt namespace	ITPR1		2749		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372236.1	outside UniProt namespace	ITPR1		2747		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372237.1	outside UniProt namespace	ITPR1		2708		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372238.1	outside UniProt namespace	ITPR1		2655		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372240.1	outside UniProt namespace	ITPR1		2641		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372241.1	outside UniProt namespace	ITPR1		1965		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372242.1	outside UniProt namespace	ITPR1		2750		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372243.1	outside UniProt namespace	ITPR1		2712		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372244.1	outside UniProt namespace	ITPR1		2736		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085372245.1	outside UniProt namespace	ITPR1		2697		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085382999.1	outside UniProt namespace	ITPR3		2647		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085397752.1	outside UniProt namespace	ITPR2		2699		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085397757.1	outside UniProt namespace	ITPR2		2685		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085397763.1	outside UniProt namespace	ITPR2		2620		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085397771.1	outside UniProt namespace	ITPR2		1724		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085397781.1	outside UniProt namespace	ITPR2		1696		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085426478.1	outside UniProt namespace	ITPR2		2689		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085426479.1	outside UniProt namespace	ITPR2		2638		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085426480.1	outside UniProt namespace	ITPR2		2638		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085426481.1	outside UniProt namespace	ITPR2		2638		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085426482.1	outside UniProt namespace	ITPR2		2631		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085426483.1	outside UniProt namespace	ITPR2		2625		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085426484.1	outside UniProt namespace	ITPR2		2516		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085426486.1	outside UniProt namespace	ITPR2		2516		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085426487.1	outside UniProt namespace	ITPR2		2191		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446370.1	outside UniProt namespace	ITPR1		2782		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446371.1	outside UniProt namespace	ITPR1		2777		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446373.1	outside UniProt namespace	ITPR1		2769		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446374.1	outside UniProt namespace	ITPR1		2769		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446375.1	outside UniProt namespace	ITPR1		2768		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446376.1	outside UniProt namespace	ITPR1		2761		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446377.1	outside UniProt namespace	ITPR1		2755		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446378.1	outside UniProt namespace	ITPR1		2754		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446379.1	outside UniProt namespace	ITPR1		2745		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446380.1	outside UniProt namespace	ITPR1		2783		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446381.1	outside UniProt namespace	ITPR1		2609		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446382.1	outside UniProt namespace	ITPR1		2768		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446383.1	outside UniProt namespace	ITPR1		2753		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446384.1	outside UniProt namespace	ITPR1		2731		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085446385.1	outside UniProt namespace	ITPR1		2716		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085480633.1	outside UniProt namespace	ITPR1		2797		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085480634.1	outside UniProt namespace	ITPR1		2712		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085480635.1	outside UniProt namespace	ITPR1		2709		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085480636.1	outside UniProt namespace	ITPR1		2714		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085480637.1	outside UniProt namespace	ITPR1		2699		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085503275.1	outside UniProt namespace	ITPR3		2964		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085508910.1	outside UniProt namespace	ITPR2		2712		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085508911.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085508912.1	outside UniProt namespace	ITPR2		2683		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085508913.1	outside UniProt namespace	ITPR2		2669		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085536252.1	outside UniProt namespace	ITPR3		2573		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085542944.1	outside UniProt namespace	ITPR1		2757		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085543480.1	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085635697.1	outside UniProt namespace	ITPR2		2690		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085636936.1	outside UniProt namespace	ITPR3		2691		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085695904.1	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085696320.1	outside UniProt namespace	ITPR1		2747		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085696321.1	outside UniProt namespace	ITPR1		2746		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085766420.1	outside UniProt namespace	ITPR3		2683		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085766427.1	outside UniProt namespace	ITPR3		2682		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085766436.1	outside UniProt namespace	ITPR3		2661		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085766444.1	outside UniProt namespace	ITPR3		2643		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085766453.1	outside UniProt namespace	ITPR3		2630		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085766460.1	outside UniProt namespace	ITPR3		2621		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085766470.1	outside UniProt namespace	ITPR3		2618		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085766479.1	outside UniProt namespace	ITPR3		2160		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085771207.1	outside UniProt namespace	ITPR2		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085771208.1	outside UniProt namespace	ITPR2		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085771209.1	outside UniProt namespace	ITPR2		2683		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085771210.1	outside UniProt namespace	ITPR2		2655		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085866078.1	outside UniProt namespace	ITPR2		2699		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085867522.1	outside UniProt namespace	ITPR3		2666		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085867523.1	outside UniProt namespace	ITPR3		2657		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085883861.1	outside UniProt namespace	ITPR2		2702		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085883862.1	outside UniProt namespace	ITPR2		2674		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085883863.1	outside UniProt namespace	ITPR2		2670		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085902084.1	outside UniProt namespace	ITPR3		2707		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085902091.1	outside UniProt namespace	ITPR3		2707		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085902099.1	outside UniProt namespace	ITPR3		2699		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085902105.1	outside UniProt namespace	ITPR3		2690		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085902109.1	outside UniProt namespace	ITPR3		2686		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085902119.1	outside UniProt namespace	ITPR3		2685		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085902128.1	outside UniProt namespace	ITPR3		2682		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085902139.1	outside UniProt namespace	ITPR3		2377		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085902148.1	outside UniProt namespace	ITPR3		2352		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085902155.1	outside UniProt namespace	ITPR3		2348		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085902165.1	outside UniProt namespace	ITPR3		2311		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085902174.1	outside UniProt namespace	ITPR3		2199		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085926001.1	outside UniProt namespace	ITPR3		2683		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085926002.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085926004.1	outside UniProt namespace	ITPR3		2658		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085926005.1	outside UniProt namespace	ITPR3		2643		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085926006.1	outside UniProt namespace	ITPR3		2248		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085926007.1	outside UniProt namespace	ITPR3		2231		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085929196.1	outside UniProt namespace	ITPR2		2695		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085929197.1	outside UniProt namespace	ITPR2		2683		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085929198.1	outside UniProt namespace	ITPR2		2663		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085964675.1	outside UniProt namespace	ITPR2		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085964676.1	outside UniProt namespace	ITPR2		2655		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085964677.1	outside UniProt namespace	ITPR2		2351		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085983607.1	outside UniProt namespace	ITPR3		2688		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_085983616.1	outside UniProt namespace	ITPR3		2683		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086015128.1	outside UniProt namespace	ITPR3		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086019159.1	outside UniProt namespace	ITPR2		2689		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086064177.1	outside UniProt namespace	ITPR2		2691		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086064178.1	outside UniProt namespace	ITPR2		2689		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086069045.1	outside UniProt namespace	ITPR3		2686		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086069046.1	outside UniProt namespace	ITPR3		2683		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086132848.1	outside UniProt namespace	ITPR3		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086132849.1	outside UniProt namespace	ITPR3		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086154401.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086154402.1	outside UniProt namespace	ITPR2		2694		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086222746.1	outside UniProt namespace	ITPR1		2709		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086222747.1	outside UniProt namespace	ITPR1		2709		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086222748.1	outside UniProt namespace	ITPR1		2694		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086222749.1	outside UniProt namespace	ITPR1		2694		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086222750.1	outside UniProt namespace	ITPR1		2687		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086222751.1	outside UniProt namespace	ITPR1		2087		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086222752.1	outside UniProt namespace	ITPR1		1691		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086222753.1	outside UniProt namespace	ITPR1		2748		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086227327.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086257778.1	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086257779.1	outside UniProt namespace	ITPR2		2639		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086257780.1	outside UniProt namespace	ITPR2		2517		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086322625.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086326640.1	outside UniProt namespace	ITPR1		2764		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086326641.1	outside UniProt namespace	ITPR1		2773		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086326642.1	outside UniProt namespace	ITPR1		2749		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086326643.1	outside UniProt namespace	ITPR1		2712		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086326644.1	outside UniProt namespace	ITPR1		2721		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086326645.1	outside UniProt namespace	ITPR1		2697		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086326646.1	outside UniProt namespace	ITPR1		2764		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086332552.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086332553.1	outside UniProt namespace	ITPR3		2662		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086467384.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086475035.1	outside UniProt namespace	ITPR1		2764		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086475036.1	outside UniProt namespace	ITPR1		2764		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086475037.1	outside UniProt namespace	ITPR1		2759		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086475039.1	outside UniProt namespace	ITPR1		2756		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086475040.1	outside UniProt namespace	ITPR1		2741		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086483532.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086553668.1	outside UniProt namespace	ITPR1		2749		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086553669.1	outside UniProt namespace	ITPR1		2749		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086553670.1	outside UniProt namespace	ITPR1		2748		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086553671.1	outside UniProt namespace	ITPR1		2748		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086553672.1	outside UniProt namespace	ITPR1		2734		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086553673.1	outside UniProt namespace	ITPR1		2733		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086553674.1	outside UniProt namespace	ITPR1		2709		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086553675.1	outside UniProt namespace	ITPR1		2709		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086553676.1	outside UniProt namespace	ITPR1		2694		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086562737.1	outside UniProt namespace	ITPR3		2671		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086562738.1	outside UniProt namespace	ITPR3		2668		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086562739.1	outside UniProt namespace	ITPR3		2349		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086569919.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086569920.1	outside UniProt namespace	ITPR2		2665		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086569921.1	outside UniProt namespace	ITPR2		2639		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086569922.1	outside UniProt namespace	ITPR2		2639		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086569923.1	outside UniProt namespace	ITPR2		2517		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086584505.1	outside UniProt namespace	ITPR1		2764		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086587306.1	outside UniProt namespace	ITPR2		2699		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086587307.1	outside UniProt namespace	ITPR2		2667		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086587308.1	outside UniProt namespace	ITPR2		2627		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086612157.1	outside UniProt namespace	ITPR1		2750		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086613113.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086621552.1	outside UniProt namespace	ITPR3		2691		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086621553.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702317.1	outside UniProt namespace	ITPR1		2787		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702318.1	outside UniProt namespace	ITPR1		2786		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702319.1	outside UniProt namespace	ITPR1		2778		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702320.1	outside UniProt namespace	ITPR1		2778		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702321.1	outside UniProt namespace	ITPR1		2777		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702322.1	outside UniProt namespace	ITPR1		2773		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702324.1	outside UniProt namespace	ITPR1		2773		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702325.1	outside UniProt namespace	ITPR1		2772		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702326.1	outside UniProt namespace	ITPR1		2765		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702327.1	outside UniProt namespace	ITPR1		2759		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702328.1	outside UniProt namespace	ITPR1		2758		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702329.1	outside UniProt namespace	ITPR1		2758		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702330.1	outside UniProt namespace	ITPR1		2749		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702331.1	outside UniProt namespace	ITPR1		2740		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702332.1	outside UniProt namespace	ITPR1		2744		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702333.1	outside UniProt namespace	ITPR1		2727		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702335.1	outside UniProt namespace	ITPR1		2718		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702336.1	outside UniProt namespace	ITPR1		2613		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702337.1	outside UniProt namespace	ITPR1		2764		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702338.1	outside UniProt namespace	ITPR1		2763		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702339.1	outside UniProt namespace	ITPR1		2735		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702340.1	outside UniProt namespace	ITPR1		2726		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702341.1	outside UniProt namespace	ITPR1		2748		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086702342.1	outside UniProt namespace	ITPR1		2711		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086717874.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086741137.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086741138.1	outside UniProt namespace	ITPR2		2700		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086741139.1	outside UniProt namespace	ITPR2		2699		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086741140.1	outside UniProt namespace	ITPR2		2684		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086741141.1	outside UniProt namespace	ITPR2		2658		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086741143.1	outside UniProt namespace	ITPR2		2643		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086741144.1	outside UniProt namespace	ITPR2		2638		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086741145.1	outside UniProt namespace	ITPR2		2633		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086741146.1	outside UniProt namespace	ITPR2		2623		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086741147.1	outside UniProt namespace	ITPR2		2623		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086741148.1	outside UniProt namespace	ITPR2		2618		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086741149.1	outside UniProt namespace	ITPR2		2596		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086741150.1	outside UniProt namespace	ITPR2		2581		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086776353.1	outside UniProt namespace	ITPR2		2712		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086776359.1	outside UniProt namespace	ITPR2		2698		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086776362.1	outside UniProt namespace	ITPR2		2697		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086776368.1	outside UniProt namespace	ITPR2		2683		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086776372.1	outside UniProt namespace	ITPR2		2669		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086779316.1	outside UniProt namespace	ITPR3		2677		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086795335.1	outside UniProt namespace	ITPR1		2735		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086991398.1	outside UniProt namespace	ITPR1		2766		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086991399.1	outside UniProt namespace	ITPR1		2761		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086991400.1	outside UniProt namespace	ITPR1		2760		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086991401.1	outside UniProt namespace	ITPR1		2755		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086991402.1	outside UniProt namespace	ITPR1		2749		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086991403.1	outside UniProt namespace	ITPR1		2747		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+XP_086991404.1	outside UniProt namespace	ITPR1		2743		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+YEX57634.1	outside UniProt namespace	ITPR3		2665		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+YEX57635.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+YFO13674.1	outside UniProt namespace	ITPR2		2701		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+YFO13675.1	outside UniProt namespace	ITPR2		2517		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+YFO49862.1	outside UniProt namespace	ITPR1		2749		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+YFO49863.1	outside UniProt namespace	ITPR1		2749		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+YFO49864.1	outside UniProt namespace	ITPR1		2748		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+YFO49865.1	outside UniProt namespace	ITPR1		2734		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+YFO49866.1	outside UniProt namespace	ITPR1		2734		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+YFO49867.1	outside UniProt namespace	ITPR1		2719		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+YFO49868.1	outside UniProt namespace	ITPR1		2709		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI
+YFO52091.1	outside UniProt namespace	ITPR3		2664		bundle:2026-08-18_091322_itpr1_itpr2_itpr3	NCBI

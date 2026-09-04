@@ -1,0 +1,10 @@
+pfam_id	name	role	long_name
+PF08709	Ins145_P3_rec	seed	Inositol 1,4,5-trisphosphate/ryanodine receptor
+PF01365	RYDR_ITPR	seed	RIH domain
+PF08454	RIH_assoc	seed	RyR and IP3R Homology associated
+PF02815	MIR	context	MIR domain
+PF00520	Ion_trans	context	Ion transport protein
+PF02026	RyR	ryr	RyR domain
+PF06459	RR_TM4-6	ryr	Ryanodine Receptor TM 4-6
+PF21119	RYDR_Jsol	ryr	Ryanodine receptor junctional solenoid repeat
+PF00622	SPRY	ryr	SPRY domain

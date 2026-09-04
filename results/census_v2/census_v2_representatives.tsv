@@ -1,0 +1,1252 @@
+accession	call	confidence	rule	core	gene	species	taxon_id	group	phylum	class	order	length
+L8GF85	ITPR	high	longest per species	1	ACA1_256780	Acanthamoeba castellanii (strain ATCC 30010 / Neff)	1257118	Amoebozoa	Discosea		Longamoebia	3344
+F4Q324	ITPR	medium	longest per species	0	iplA	Cavenderia fasciculata (Slime mold) (Dictyostelium fasciculatum)	261658	Amoebozoa	Evosea	Eumycetozoa	Acytosteliales	2843
+A0AAN7YWK4	ITPR	medium	longest per species	1	RB653_003929	Dictyostelium firmibasis	79012	Amoebozoa	Evosea	Eumycetozoa	Dictyosteliales	3071
+D3AX88	ITPR	medium	longest per species	0	iplA	Heterostelium pallidum (strain ATCC 26659 / Pp 5 / PN500) (Cellular slime mold) (Polysphondylium pallidum)	670386	Amoebozoa	Evosea	Eumycetozoa	Acytosteliales	2616
+A0A2P6NT28	ITPR	medium	longest per species	0	PROFUN_04764	Planoprotostelium fungivorum	1890364	Amoebozoa	Evosea	Variosea	Cavosteliida	2332
+A0A8J4VAF2	ITPR	medium	longest per species	0	CYY_001636	Polysphondylium violaceum	133409	Amoebozoa	Evosea	Eumycetozoa	Dictyosteliales	2866
+A0A151Z3P6	ITPR	medium	longest per species	0	DLAC_11299	Tieghemostelium lacteum (Slime mold) (Dictyostelium lacteum)	361077	Amoebozoa	Evosea	Eumycetozoa	Dictyosteliales	2929
+A0A0S4INB1	ITPR	medium	longest per species	0	BSAL_56455	Bodo saltans (Flagellated protozoan)	75058	Discoba	Euglenozoa	Kinetoplastea	Eubodonida	2655
+A0A3S7WTR9	ITPR	medium	longest per species	0	LdCL_160007800	Leishmania donovani	5661	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	2874
+A0A836KP41	ITPR	medium	longest per species	0	CUR178_05618	Leishmania enriettii	5663	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	2901
+A4HWS7	ITPR	medium	longest per species	0	LINJ_16_0290	Leishmania infantum	5671	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	2874
+Q4QEZ2	ITPR	medium	longest per species	0	LMJF_16_0280	Leishmania major	5664	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	2874
+A0A836HD65	ITPR	medium	longest per species	0	LSCM1_05662	Leishmania martiniquensis	1580590	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	2853
+E9AQI5	ITPR	medium	longest per species	0	LMXM_16_0280	Leishmania mexicana (strain MHOM/GT/2001/U1103)	929439	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	2873
+A0A836GHV8	ITPR	medium	longest per species	0	LSCM4_05560	Leishmania orientalis	2249476	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	2900
+A0A0N0DTZ2	ITPR	medium	longest per species	0	ABB37_06626	Leptomonas pyrrhocoris (Firebug parasite)	157538	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	2978
+A0A0N0P7Y1	ITPR	medium	longest per species	0	ABL78_1548	Leptomonas seymouri	5684	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	2946
+A0A6A5C524	ITPR	high	longest per species	0	FDP41_012062	Naegleria fowleri (Brain eating amoeba)	5763	Discoba	Heterolobosea	Eutetramitea	Acrasida	3056
+D2VKL2	ITPR	medium	longest per species	0	NAEGRDRAFT_80324	Naegleria gruberi (Amoeba)	5762	Discoba	Heterolobosea	Eutetramitea	Acrasida	2827
+A0AA88KEU5	ITPR	high	longest per species	1	C9374_011999	Naegleria lovaniensis (Amoeba)	51637	Discoba	Heterolobosea	Eutetramitea	Acrasida	3074
+A0AAW0EUE4	ITPR	medium	longest per species	0	NESM_000719400	Novymonas esmeraldas	1808958	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	2930
+Q57XB2	ITPR	medium	longest per species	0	Tb08.26A17.880	Trypanosoma brucei brucei (strain 927/4 GUTat10.1)	185431	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	3099
+A0A422P9J5	ITPR	medium	longest per species	0	Tco025E_05866	Trypanosoma conorhini	83891	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	3023
+K7ZR76	ITPR	medium	longest per species	0		Trypanosoma cruzi	5693	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	3011
+Q4DBL7	ITPR	medium	longest per species	0	Tc00.1047053509461.90	Trypanosoma cruzi (strain CL Brener)	353153	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	3011
+K2LW12	ITPR	medium	longest per species	0	MOQ_009372	Trypanosoma cruzi marinkellei	85056	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	3014
+A0A1G4I324	ITPR	medium	longest per species	0	TEOVI_000592500	Trypanosoma equiperdum	5694	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	3099
+A0A1X0NWX8	ITPR	medium	longest per species	1	TM35_000132200	Trypanosoma theileri	67003	Discoba	Euglenozoa	Kinetoplastea	Trypanosomatida	3141
+A0A0D2UGF9	ITPR	high	longest per species	0	CAOG_004826	Capsaspora owczarzaki (strain ATCC 30864)	595528	Eukaryota (other)		Filasterea		3232
+A0A0M0J4V2	ITPR	medium	longest per species	1	Ctob_001957	Chrysochromulina tobinii	1460289	Eukaryota (other)	Haptophyta		Prymnesiales	3272
+A0A0D3J326	ITPR	medium	longest per species	0		Emiliania huxleyi (strain CCMP1516)	280463	Eukaryota (other)	Haptophyta		Isochrysidales	2712
+A0A058ZDJ2	ITPR	high	longest per species	1	H696_01395	Fonticula alba (Slime mold)	691883	Eukaryota (other)			Rotosphaerida	3443
+L1JC12	ITPR	medium	longest per species	0		Guillardia theta (strain CCMP2712) (Cryptophyte)	905079	Eukaryota (other)		Cryptophyceae	Pyrenomonadales	3048
+A9VBU8	ITPR	medium	longest per species	0	MONBRDRAFT_29689	Monosiga brevicollis (Choanoflagellate)	81824	Eukaryota (other)		Choanoflagellata	Craspedida	2869
+A0ABQ8UZM6	ITPR	medium	longest per species	1	PAPYR_841	Paratrimastix pyriformis	342808	Eukaryota (other)	Preaxostyla			2857
+A0AB34IS99	ITPR	medium	longest per species	0	AB1Y20_010572	Prymnesium parvum (Toxic golden alga)	97485	Eukaryota (other)	Haptophyta		Prymnesiales	2751
+F2U743	ITPR	medium	longest per species	0	PTSG_04281	Salpingoeca rosetta (Choanoflagellate)	946362	Eukaryota (other)		Choanoflagellata	Craspedida	2909
+A0A0L0DIL6	ITPR	medium	longest per species	0	AMSG_00953	Thecamonas trahens ATCC 50062	461836	Eukaryota (other)			Apusomonadida	3179
+A0A168RJ50	ITPR	medium	longest per species	0	ABSGL_12645.1	Absidia glauca (Pin mould)	4829	Fungi	Mucoromycota	Mucoromycetes	Mucorales	2540
+A0A1X2IXV9	ITPR	medium	longest per species	1	BCR42DRAFT_402338	Absidia repens	90262	Fungi	Mucoromycota	Mucoromycetes	Mucorales	2651
+A0A8H7BU48	ITPR	high	longest per species	0	EC973_001941	Apophysomyces ossiformis	679940	Fungi	Mucoromycota	Mucoromycetes	Mucorales	2391
+A0A1Y1XHY3	ITPR	high	longest per species	0	K493DRAFT_341790	Basidiobolus meristosporus CBS 931.73	1314790	Fungi	Basidiobolomycota	Basidiobolomycetes	Basidiobolales	2495
+A0ABR2W6A1	ITPR	high	longest per species	1	K7432_003395	Basidiobolus ranarum	34480	Fungi	Basidiobolomycota	Basidiobolomycetes	Basidiobolales	2502
+A0A1C7NSC1	ITPR	high	longest per species	0	Itpr3	Choanephora cucurbitarum	101091	Fungi	Mucoromycota	Mucoromycetes	Mucorales	2547
+A0A507FK04	ITPR	high	longest per species	0	CcCBS67573_g02688	Chytriomyces confervae	246404	Fungi	Chytridiomycota	Chytridiomycetes	Chytridiales	3329
+A0AAD5U9K5	ITPR	high	longest per species	0	HK099_005063	Clydaea vesicula	447962	Fungi	Chytridiomycota	Chytridiomycetes	Lobulomycetales	2759
+A0ACC2TPX2	ITPR	high	longest per species	1	DSO57_1024190	Entomophthora muscae	34485	Fungi	Entomophthoromycota	Entomophthoromycetes	Entomophthorales	2567
+A0A1X2G6S3	ITPR	medium	longest per species	0	DM01DRAFT_321913	Hesseltinella vesiculosa	101127	Fungi	Mucoromycota	Mucoromycetes	Mucorales	2642
+A0A433QY11	ITPR	high	longest per species	0	BC938DRAFT_479224	Jimgerdemannia flammicorona	994334	Fungi	Mucoromycota	Endogonomycetes	Endogonales	2599
+A0AAD7UQL8	ITPR	medium	longest per species	0	O0I10_012669	Lichtheimia ornata	688661	Fungi	Mucoromycota	Mucoromycetes	Mucorales	2610
+A0A0C9M4R7	ITPR	medium	longest per species	0	MAM1_0060c03786	Mucor ambiguus	91626	Fungi	Mucoromycota	Mucoromycetes	Mucorales	2599
+S2J437	ITPR	medium	longest per species	0	HMPREF1544_08383	Mucor circinelloides f. circinelloides (strain 1006PhL) (Mucormycosis agent) (Calyptromyces circinelloides)	1220926	Fungi	Mucoromycota	Mucoromycetes	Mucorales	2592
+A0A168KKP7	ITPR	medium	longest per species	0	MUCCIDRAFT_111891	Mucor lusitanicus CBS 277.49	747725	Fungi	Mucoromycota	Mucoromycetes	Mucorales	2620
+A0A8H7VCW8	ITPR	medium	longest per species	0	INT46_007433	Mucor plumbeus	97098	Fungi	Mucoromycota	Mucoromycetes	Mucorales	2604
+A0AAN7D8C4	ITPR	medium	longest per species	0	ATC70_007105	Mucor velutinosus	708070	Fungi	Mucoromycota	Mucoromycetes	Mucorales	2613
+A0AAD5K078	ITPR	high	longest per species	0	BDA99DRAFT_575816	Phascolomyces articulosus	60185	Fungi	Mucoromycota	Mucoromycetes	Mucorales	2588
+A0ABR3B852	ITPR	medium	longest per species	0	J3Q64DRAFT_1846802	Phycomyces blakesleeanus	4837	Fungi	Mucoromycota	Mucoromycetes	Mucorales	2551
+A0A162V9Q6	ITPR	medium	longest per species	0	PHYBLDRAFT_184553	Phycomyces blakesleeanus (strain ATCC 8743b / DSM 1359 / FGSC 10004 / NBRC 33097 / NRRL 1555)	763407	Fungi	Mucoromycota	Mucoromycetes	Mucorales	2551
+A0AAD5SYU5	ITPR	medium	longest per species	0	HK100_001428	Physocladia obscura	109957	Fungi	Chytridiomycota	Chytridiomycetes	Chytridiales	2858
+A0ABR4NID5	ITPR	high	longest per species	1	HK105_200862	Polyrhizophydium stewartii	2732419	Fungi	Chytridiomycota	Chytridiomycetes	Rhizophydiales	4446
+A0A1Y2B255	ITPR	high	longest per species	0	BCR33DRAFT_724882	Rhizoclosmatium globosum	329046	Fungi	Chytridiomycota	Chytridiomycetes	Chytridiales	3246
+A0A8B7ZNI0	ITPR	high	longest per species	0	LOC110986922	Acanthaster planci (Crown-of-thorns starfish)	133434	Metazoa (non-vertebrate)	Echinodermata	Asteroidea	Valvatida	2760
+A0A498S7B5	ITPR	medium	longest per species	0	NAV_LOCUS491	Acanthocheilonema viteae (Filarial nematode worm) (Dipetalonema viteae)	6277	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2507
+A0A914CMA8	ITPR	high	longest per species	0		Acrobeloides nanus	290746	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2702
+A0A836G3N5	ITPR	high	longest per species	0	Itpr83a	Acromyrmex charruanus	2715315	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2801
+F4WB91	ITPR	high	longest per species	0	G5I_02797	Acromyrmex echinatior (Panamanian leafcutter ant) (Acromyrmex octospinosus echinatior)	103372	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2848
+A0A836GDL8	ITPR	high	longest per species	0	Itpr83a	Acromyrmex heyeri	230685	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2801
+A0A836ETG8	ITPR	high	longest per species	0	Itpr83a	Acromyrmex insinuator	230686	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2804
+A0AAD9QVF6	ITPR	high	longest per species	0	P5673_008061	Acropora cervicornis (Staghorn coral)	6130	Metazoa (non-vertebrate)	Cnidaria	Anthozoa	Scleractinia	2331
+A0A6P8IUM8	ITPR	high	longest per species	1	LOC116304295	Actinia tenebrosa (Australian red waratah sea anemone)	6105	Metazoa (non-vertebrate)	Cnidaria	Anthozoa	Actiniaria	2745
+A0A8R2B851	ITPR	high	longest per species	0		Acyrthosiphon pisum (Pea aphid)	7029	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	3831
+A0A814SIK2	ITPR	high	longest per species	0	XAT740_LOCUS20825	Adineta ricciae (Rotifer)	249248	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Adinetida	2733
+A0A815EH62	ITPR	high	longest per species	0	QVE165_LOCUS31834	Adineta steineri	433720	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Adinetida	2854
+A0A6I8U9W2	ITPR	high	longest per species	0	5564815	Aedes aegypti (Yellowfever mosquito) (Culex aegypti)	7159	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2992
+A0ABM1Y6G0	ITPR	high	longest per species	0		Aedes albopictus (Asian tiger mosquito) (Stegomyia albopicta)	7160	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2995
+A0A1W4WKP9	ITPR	high	longest per species	0	LOC108733799	Agrilus planipennis (Emerald ash borer) (Agrilus marcopoli)	224129	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2752
+A0A8J2P5M4	ITPR	high	longest per species	0	AFUS01_LOCUS20469	Allacma fusca	39272	Metazoa (non-vertebrate)	Arthropoda	Collembola	Symphypleona	2636
+A0A6A4VLS6	ITPR	low	longest per species	0	Itp-r83A_0	Amphibalanus amphitrite (Striped barnacle) (Balanus amphitrite)	1232801	Metazoa (non-vertebrate)	Arthropoda	Thecostraca	Balanomorpha	1697
+A0AAN0JIF7	ITPR	high	longest per species	1		Amphimedon queenslandica (Sponge)	400682	Metazoa (non-vertebrate)	Porifera	Demospongiae	Haplosclerida	2766
+A0A016VX80	ITPR	medium	longest per species	0	Acey_s0004.g2123	Ancylostoma ceylanicum	53326	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2012
+A0A158PMT1	ITPR	high	longest per species	0	ASIM_LOCUS9855	Anisakis simplex (Herring worm)	6269	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2921
+A0A182FDY1	ITPR	high	longest per species	0		Anopheles albimanus (New world malaria mosquito)	7167	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3200
+A0A182I460	ITPR	high	longest per species	0		Anopheles arabiensis (Mosquito)	7173	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3096
+A0AAG5DBZ0	ITPR	high	longest per species	0		Anopheles atroparvus (European mosquito)	41427	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3028
+A0A182K7K4	ITPR	medium	longest per species	0		Anopheles christyi	43041	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2054
+A0A6E8VQ97	ITPR	high	longest per species	0		Anopheles coluzzii (African malaria mosquito)	1518534	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2924
+A0A182MHW8	ITPR	high	longest per species	0		Anopheles culicifacies	139723	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3012
+W5JDA7	ITPR	high	longest per species	0		Anopheles darlingi (Mosquito)	43151	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3041
+A0A182NJ16	ITPR	high	longest per species	0		Anopheles dirus	7168	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3155
+A0A182PPG3	ITPR	medium	longest per species	0		Anopheles epiroticus	199890	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2373
+A0A182Q3P2	ITPR	high	longest per species	0		Anopheles farauti	69004	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3134
+A0A1S4GS95	ITPR	high	longest per species	0		Anopheles gambiae (African malaria mosquito)	7165	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3101
+A0A182UY18	ITPR	high	longest per species	0		Anopheles merus (Mosquito)	30066	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3107
+A0A182WC14	ITPR	high	longest per species	0		Anopheles minimus	112268	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3165
+A0A903ZG16	ITPR	high	longest per species	0		Anopheles quadriannulatus (Mosquito)	34691	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3103
+A0A084W6J0	ITPR	high	longest per species	0		Anopheles sinensis (Mosquito)	74873	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2987
+A0A182YFI7	ITPR	high	longest per species	0		Anopheles stephensi (Indo-Pakistan malaria mosquito)	30069	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3112
+A0ACE0G5X1	ITPR	high	longest per species	0	ANTPLA_LOCUS10045	Anthophora plagiata	597819	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2788
+A0ACE0EYC5	ITPR	high	longest per species	0	ANTQUA_LOCUS3940	Anthophora quadrimaculata	597840	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2809
+A0ACE0GP25	ITPR	high	longest per species	0	ANTRET_LOCUS4100	Anthophora retusa	597843	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2809
+A0A834XV93	ITPR	high	longest per species	0	HCN44_010041	Aphidius gifuensis (Parasitoid wasp)	684658	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2797
+A0A6G0ZEY4	ITPR	high	longest per species	0	FWK35_00004179	Aphis craccivora (Cowpea aphid)	307492	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	3826
+A0A6G0T1B7	ITPR	high	longest per species	0	AGLY_015161	Aphis glycines (Soybean aphid)	307491	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	3835
+A0A9P0J6M3	ITPR	high	longest per species	0	APHIGO_LOCUS7800	Aphis gossypii (Cotton aphid)	80765	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	3832
+V9IAK4	ITPR	high	longest per species	0	ACCB00201.3	Apis cerana (Indian honeybee)	7461	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2788
+A0A2A3ES56	ITPR	high	longest per species	0	APICC_05838	Apis cerana cerana (Oriental honeybee)	94128	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2797
+A0ABM1VQL4	ITPR	high	longest per species	0	LOC101856168	Aplysia californica (California sea hare)	6500	Metazoa (non-vertebrate)	Mollusca	Gastropoda	Aplysiida	2959
+A0A8K0ZQE8	ITPR	high	longest per species	0	IP3R	Apolygus lucorum (Small green plant bug) (Lygocoris lucorum)	248454	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	2721
+A0AAN7S606	ITPR	high	longest per species	0	RN001_016165	Aquatica leii	1421715	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2723
+A0A4Y2EYJ3	ITPR	high	longest per species	0	ITPR1_3	Araneus ventricosus (Orbweaver spider) (Epeira ventricosa)	182803	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	2796
+A0A8S1ACF0	ITPR	high	longest per species	0	APLA_LOCUS9104	Arctia plantaginis (Wood tiger moth) (Phalaena plantaginis)	874455	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2728
+A0A8T0EWH3	ITPR	medium	longest per species	0	HNY73_012953	Argiope bruennichi (Wasp spider) (Aranea bruennichi)	94029	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	2210
+A0A5N5T554	ITPR	low	longest per species	0	Itp-r83A	Armadillidium nasatum	96803	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Isopoda	582
+A0AA88L6A2	ITPR	high	longest per species	0	QYM36_013271	Artemia franciscana (Brine shrimp) (Artemia sanfranciscana)	6661	Metazoa (non-vertebrate)	Arthropoda	Branchiopoda	Anostraca	2618
+A0A0M3HW48	ITPR	high	longest per species	0		Ascaris lumbricoides (Giant roundworm)	6252	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2879
+F1KPZ0	ITPR	medium	longest per species	0		Ascaris suum (Pig roundworm) (Ascaris lumbricoides)	6253	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2269
+A0A158NQV4	ITPR	high	longest per species	0	105623125	Atta cephalotes (Leafcutter ant)	12957	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2646
+A0A195BFQ8	ITPR	high	longest per species	0	ALC53_06282	Atta colombica	520822	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2815
+A0A6I9VWT0	ITPR	high	longest per species	0	LOC105229928	Bactrocera dorsalis (Oriental fruit fly) (Dacus dorsalis)	27457	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2880
+A0ABD0KHF1	ITPR	high	longest per species	0	BaRGS_00022278	Batillaria attramentaria	370345	Metazoa (non-vertebrate)	Mollusca	Gastropoda		2627
+A0A222AFM6	ITPR	high	longest per species	0	IP3R	Bemisia tabaci (Sweetpotato whitefly) (Aleurodes tabaci)	7038	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	2733
+A0ABM3M1M3	ITPR	high	longest per species	0	LOC112056286	Bicyclus anynana (Squinting bush brown butterfly)	110368	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2708
+A0A9W3AWE7	ITPR	high	longest per species	0	LOC106060158	Biomphalaria glabrata (Bloodfluke planorb) (Freshwater snail)	6526	Metazoa (non-vertebrate)	Mollusca	Gastropoda		2967
+A0AAD8F3D8	ITPR	high	longest per species	0	Bpfe_020757	Biomphalaria pfeifferi (Bloodfluke planorb) (Freshwater snail)	112525	Metazoa (non-vertebrate)	Mollusca	Gastropoda		2723
+A0A9Q0LYR5	ITPR	high	longest per species	0	RDWZM_010207	Blomia tropicalis (Mite)	40697	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Sarcoptiformes	3204
+A0A6P8MIW1	ITPR	high	longest per species	0	LOC117206478	Bombus bifarius	103933	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2817
+A0A6P8LNL4	ITPR	high	longest per species	0	LOC100747875	Bombus impatiens (Bumblebee)	132113	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2817
+A0A9C6SMK1	ITPR	high	longest per species	0	LOC100643559	Bombus terrestris (Buff-tailed bumblebee) (Apis terrestris)	30195	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2824
+A0A6J3KGZ0	ITPR	high	longest per species	0	LOC117234765	Bombus vosnesenskii	207650	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2817
+A0A8R2M816	ITPR	high	longest per species	0		Bombyx mori (Silk moth)	7091	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2750
+A0A813MDQ0	ITPR	high	longest per species	1	OXX778_LOCUS2086	Brachionus calyciflorus	104777	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Ploima	3060
+A0A3M7T2M2	ITPR	medium	longest per species	0	BpHYR1_030911	Brachionus plicatilis (Marine rotifer) (Brachionus muelleri)	10195	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Ploima	2297
+A0A6P4ZVN0	ITPR	high	longest per species	0	LOC109477077	Branchiostoma belcheri (Amphioxus)	7741	Metazoa (non-vertebrate)	Chordata	Leptocardii	Amphioxiformes	2843
+A0A9J7MRS8	ITPR	high	longest per species	0	LOC118415973	Branchiostoma floridae (Florida lancelet) (Amphioxus)	7739	Metazoa (non-vertebrate)	Chordata	Leptocardii	Amphioxiformes	2960
+A0A8K0EWL2	ITPR	high	longest per species	0	ITPR1	Branchiostoma lanceolatum (Common lancelet) (Amphioxus lanceolatum)	7740	Metazoa (non-vertebrate)	Chordata	Leptocardii	Amphioxiformes	2885
+A0A9P0FLM4	ITPR	high	longest per species	0	MELIAE_LOCUS11475	Brassicogethes aeneus (Rape pollen beetle) (Meligethes aeneus)	1431903	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2758
+A0A8J9YHZ5	ITPR	high	longest per species	0	BINO364_LOCUS16357	Brenthis ino (lesser marbled fritillary)	405034	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2719
+A0A0H5S2G8	ITPR	high	longest per species	0	bma-itr-1	Brugia malayi (Filarial nematode worm)	6279	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2850
+A0A158PS69	ITPR	high	longest per species	0	BPAG_LOCUS12254	Brugia pahangi (Filarial nematode worm)	6280	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2801
+A0A811KTK4	ITPR	high	longest per species	0	BOKJ2_LOCUS8689	Bursaphelenchus okinawaensis	465554	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2965
+A0A811LJE4	ITPR	high	longest per species	0	BXYJ_LOCUS9806	Bursaphelenchus xylophilus (Pinewood nematode worm) (Aphelenchoides xylophilus)	6326	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2968
+A0A9P1IMW4	ITPR	high	longest per species	0	CAMP_LOCUS10867	Caenorhabditis angaria	860376	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2903
+A0A8S1H9P0	ITPR	high	longest per species	0	CAUJ_LOCUS7217	Caenorhabditis auriculariae	2777116	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2909
+A0A8S1FA22	ITPR	high	longest per species	0	CBOVIS_LOCUS11401	Caenorhabditis bovis	2654633	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2860
+G0NRS2	ITPR	high	longest per species	0	CAEBREN_29382	Caenorhabditis brenneri (Nematode worm)	135651	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2869
+Q9GS15	ITPR	high	longest per species	0	itr-1	Caenorhabditis briggsae	6238	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2933
+Q9Y0A1	ITPR	high	longest per species	0	itr-1	Caenorhabditis elegans	6239	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2892
+A0A8R1DSV6	ITPR	high	longest per species	0		Caenorhabditis japonica	281687	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2916
+A0A261BQG3	ITPR	high	longest per species	0	FL83_12881	Caenorhabditis latens	1503980	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2864
+A0A2G5U3K6	ITPR	high	longest per species	0	Cni-itr-1	Caenorhabditis nigoni	1611254	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2843
+E3M7H8	ITPR	high	longest per species	0	Cre-itr-1	Caenorhabditis remanei (Caenorhabditis vulgaris)	31234	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2951
+A0AAV4T4X4	ITPR	high	longest per species	0	Itpr1	Caerostris darwini	1538125	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	2800
+A0AAV4SJP2	ITPR	low	longest per species	0	Itpr	Caerostris extrusa (Bark spider) (Caerostris bankana)	172846	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	1138
+E1ZY22	ITPR	high	longest per species	0	EAG_09974	Camponotus floridanus (Florida carpenter ant)	104421	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2711
+R7TPX0	ITPR	high	longest per species	0		Capitella teleta (Polychaete worm)	283909	Metazoa (non-vertebrate)	Annelida	Polychaeta		2718
+A0AAW2GTP8	ITPR	high	longest per species	0	PUN28_002308	Cardiocondyla obscurior	286306	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2808
+A0AAJ7CFN0	ITPR	high	longest per species	0	LOC107274736	Cephus cinctus (Wheat stem sawfly)	211228	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2815
+W8B8C9	ITPR	high	longest per species	0	ITPR	Ceratitis capitata (Mediterranean fruit fly) (Tephritis capitata)	7213	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2872
+A0AAJ6VKI8	ITPR	high	longest per species	0	LOC105359496	Ceratosolen solmsi marchali	326594	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2820
+A0A8J2M9V3	ITPR	medium	longest per species	0	CJOHNSTONI_LOCUS8371	Cercopithifilaria johnstoni	2874296	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2434
+A0A9N9M9D7	ITPR	high	longest per species	0	CEUTPL_LOCUS331	Ceutorhynchus assimilis (cabbage seed weevil)	467358	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2713
+A0ABN8BA09	ITPR	high	longest per species	0	CHILSU_LOCUS6799	Chilo suppressalis (Asiatic rice borer moth)	168631	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2707
+A0A8J4XVZ7	ITPR	low	longest per species	0	ITPR1_1	Chionoecetes opilio (Atlantic snow crab) (Cancer opilio)	41210	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	236
+A0A9N9WYD0	ITPR	high	longest per species	0	CHIRRI_LOCUS13800	Chironomus riparius	315576	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2709
+A0A9P0FTX1	ITPR	high	longest per species	0	CINC_LOCUS8495	Chrysodeixis includens (Soybean looper) (Pseudoplusia includens)	689277	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2710
+A0ABD2QH23	ITPR	low	longest per species	0	ITPR2	Cichlidogyrus casuarinus	1844966	Metazoa (non-vertebrate)	Platyhelminthes	Monogenea	Dactylogyridea	639
+A0A8I6REX6	ITPR	high	longest per species	0		Cimex lectularius (Bed bug) (Acanthia lectularia)	79782	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	2735
+A0A5E4MZD1	ITPR	high	longest per species	0	CINCED_3A015582	Cinara cedri	506608	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	3828
+H2YYU4	ITPR	high	longest per species	0		Ciona savignyi (Pacific transparent sea squirt)	51511	Metazoa (non-vertebrate)	Chordata	Ascidiacea	Phlebobranchia	2776
+A0ABP0G8H4	ITPR	high	longest per species	0	CVLEPA_LOCUS20152	Clavelina lepadiformis (Light-bulb sea squirt) (Ascidia lepadiformis)	159417	Metazoa (non-vertebrate)	Chordata	Ascidiacea	Aplousobranchia	2836
+A0A8S1DS22	ITPR	high	longest per species	0	CLODIP_2_CD00020	Cloeon dipterum	197152	Metazoa (non-vertebrate)	Arthropoda	Insecta	Ephemeroptera	2745
+A0A8T1MMW7	ITPR	medium	longest per species	0	CSKR_103133	Clonorchis sinensis (Chinese liver fluke)	79923	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Opisthorchiida	2821
+A0A1J1I8G9	ITPR	high	longest per species	0	putative	Clunio marinus	568069	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2689
+A0A7M5V9X5	ITPR	high	longest per species	0		Clytia hemisphaerica	252671	Metazoa (non-vertebrate)	Cnidaria	Hydrozoa	Leptothecata	2739
+A0A6L2Q503	ITPR	high	longest per species	0	Cfor_01649	Coptotermes formosanus (Formosan subterranean termite)	36987	Metazoa (non-vertebrate)	Arthropoda	Insecta	Blattodea	2742
+W4VS92	ITPR	high	longest per species	0		Corethrella appendiculata	1370023	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2973
+A0AAV7I3W7	ITPR	high	longest per species	0	ITPR83A	Cotesia glomerata (Lepidopteran parasitic wasp) (Apanteles glomeratus)	32391	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2773
+A0A8J5UYL7	ITPR	high	longest per species	0	G9C98_000036	Cotesia typhae	2053667	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2810
+A0A8B8F144	ITPR	high	longest per species	0	LOC111138392	Crassostrea virginica (Eastern oyster)	6565	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Ostreida	2892
+A0ABD2PGD6	ITPR	high	longest per species	0	HHI36_023360	Cryptolaemus montrouzieri	559131	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2711
+A0A2J7QR08	ITPR	high	longest per species	0	Itp-r83A	Cryptotermes secundus	105785	Metazoa (non-vertebrate)	Arthropoda	Insecta	Blattodea	2547
+A0ABD1DU12	ITPR	high	longest per species	0	pipiens_005756	Culex pipiens pipiens (Northern house mosquito)	38569	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2917
+A0AA36GZ85	ITPR	high	longest per species	0	CYNAS_LOCUS13094	Cylicocyclus nassatus (Nematode worm)	53992	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2898
+A0A195CBD1	ITPR	high	longest per species	0	ALC62_11715	Cyphomyrmex costatus	456900	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2912
+A0A8J2QXP1	ITPR	high	longest per species	0	DCHRY22_LOCUS9060	Danaus chrysippus (African queen)	151541	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2726
+A0A212FL15	ITPR	high	longest per species	0	KGM_214491B	Danaus plexippus plexippus	278856	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2580
+A0A0P5ZUN0	ITPR	high	longest per species	0	APZ42_022906	Daphnia magna	35525	Metazoa (non-vertebrate)	Arthropoda	Branchiopoda	Diplostraca	2851
+E9H9P2	ITPR	high	longest per species	0	DAPPUDRAFT_227934	Daphnia pulex (Water flea)	6669	Metazoa (non-vertebrate)	Arthropoda	Branchiopoda	Diplostraca	2510
+A0AAD5PX35	ITPR	high	longest per species	0	GHT06_010000	Daphnia sinensis	1820382	Metazoa (non-vertebrate)	Arthropoda	Branchiopoda	Diplostraca	2845
+A0AAR5PI72	ITPR	high	longest per species	0		Dendroctonus ponderosae (Mountain pine beetle)	77166	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2716
+A0ACC1CHJ9	ITPR	high	longest per species	0	K1T71_013248	Dendrolimus kikuchii	765133	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2700
+A0ACM7Z4C8	ITPR	high	longest per species	0	Itpr	Dermacentor variabilis (American dog tick)	34621	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Ixodida	2725
+A0A922HXT2	ITPR	high	longest per species	0	ITPR1_1	Dermatophagoides farinae (American house dust mite)	6954	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Sarcoptiformes	3487
+A0ABQ8JTA7	ITPR	high	longest per species	0	ITPR1	Dermatophagoides pteronyssinus (European house dust mite)	6956	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Sarcoptiformes	3122
+A0A9X0CMW0	ITPR	low	longest per species	0	IP3R	Desmophyllum pertusum	174260	Metazoa (non-vertebrate)	Cnidaria	Anthozoa	Scleractinia	455
+A0A9N9SRZ5	ITPR	high	longest per species	0	DIABBA_LOCUS2163	Diabrotica balteata (Banded cucumber beetle)	107213	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2737
+A0ABM5JH36	ITPR	high	longest per species	0		Diabrotica virgifera virgifera (western corn rootworm)	50390	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2755
+A0A3Q0IVR9	ITPR	medium	longest per species	0	LOC103507937	Diaphorina citri (Asian citrus psyllid)	121845	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	2570
+A0A9P0G179	ITPR	high	longest per species	0	DIATSA_LOCUS13421	Diatraea saccharalis (sugarcane borer)	40085	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2654
+A0A7I8V9P9	ITPR	medium	longest per species	0	DGYR_LOCUS1664	Dimorphilus gyrociliatus	2664684	Metazoa (non-vertebrate)	Annelida	Polychaeta		2772
+A0A6P3Y8W6	ITPR	high	longest per species	0	LOC106750778	Dinoponera quadriceps (South American ant)	609295	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2796
+A0A3S3NU49	ITPR	high	longest per species	0	B4U79_11644	Dinothrombium tinctorium	1965070	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Trombidiformes	2889
+A0A2A2LN25	ITPR	high	longest per species	0	WR25_26593	Diploscapter pachys	2018661	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2637
+A0AAD4MIP4	ITPR	high	longest per species	0	DdX_19300	Ditylenchus destructor	166010	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3043
+A0A915CQ64	ITPR	medium	longest per species	0		Ditylenchus dipsaci	166011	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2955
+A0A158Q3L2	ITPR	high	longest per species	0	DME_LOCUS6999	Dracunculus medinensis (Guinea worm)	318479	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2564
+A0A9D4G694	ITPR	high	longest per species	0	DPMN_137980	Dreissena polymorpha (Zebra mussel) (Mytilus polymorpha)	45954	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Myida	2389
+A0A9C6TD39	ITPR	high	longest per species	0	LOC117576871	Drosophila albomicans (Fruit fly)	7291	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2827
+B3LZ38	ITPR	high	longest per species	0	Dana\GF17257	Drosophila ananassae (Fruit fly)	7217	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2838
+A0A0M4EUA4	ITPR	high	longest per species	0	Dbus_chr3Rg1392	Drosophila busckii (Fruit fly)	30019	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2843
+B3P2E7	ITPR	high	longest per species	0	Dere\GG12871	Drosophila erecta (Fruit fly)	7220	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2838
+B4JHU9	ITPR	high	longest per species	0	Dgri\GH18600	Drosophila grimshawi (Hawaiian fruit fly) (Idiomyia grimshawi)	7222	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2865
+A0A3B0KF80	ITPR	high	longest per species	0	DGUA_6G016940	Drosophila guanche (Fruit fly)	7266	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2860
+A0A6J2SX58	ITPR	high	longest per species	0	LOC115483351	Drosophila hydei (Fruit fly)	7224	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2845
+A0A6P4I5M1	ITPR	high	longest per species	0	Itpr	Drosophila kikkawai (Fruit fly)	30033	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2829
+A0A6J2TKC6	ITPR	high	longest per species	0	LOC115625531	Drosophila lebanonensis (Fruit fly) (Scaptodrosophila lebanonensis)	7225	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2846
+A0AAU9F4B9	ITPR	high	longest per species	0	DMAD_08481	Drosophila madeirensis (Fruit fly)	30013	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2868
+A0A6P8K8T0	ITPR	high	longest per species	0	LOC117144259	Drosophila mauritiana (Fruit fly)	7226	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2828
+P29993	ITPR	high	longest per species	0	Itpr	Drosophila melanogaster (Fruit fly)	7227	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2837
+B4KD89	ITPR	high	longest per species	0	Dmoj\GI23082	Drosophila mojavensis (Fruit fly)	7230	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2843
+A0A484BH43	ITPR	high	longest per species	0	AWZ03_006011	Drosophila navojoa (Fruit fly)	7232	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2845
+B4GF82	ITPR	medium	longest per species	0	Dper\GL21668	Drosophila persimilis (Fruit fly)	7234	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2390
+A0A6I8VBI6	ITPR	high	longest per species	0	Itpr	Drosophila pseudoobscura pseudoobscura (Fruit fly)	46245	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2864
+A0ABM5J2E5	ITPR	high	longest per species	0		Drosophila rhopaloa (Fruit fly)	1041015	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2838
+A0AAD4PHT2	ITPR	high	longest per species	0	KR093_004208	Drosophila rubida	30044	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2873
+B4QWW9	ITPR	high	longest per species	0	Dsim\GD19791	Drosophila simulans (Fruit fly)	7240	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2837
+A0ABM4TSZ9	ITPR	high	longest per species	0	Itpr	Drosophila suzukii (Spotted-wing drosophila fruit fly)	28584	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2829
+A0A0Q9WQK8	ITPR	high	longest per species	0	Dvir\GJ22702	Drosophila virilis (Fruit fly)	7244	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2849
+B4MUL1	ITPR	high	longest per species	0	Dwil\GK15332	Drosophila willistoni (Fruit fly)	7260	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2843
+B4PVB2	ITPR	high	longest per species	0	Dyak\GE25474	Drosophila yakuba (Fruit fly)	7245	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2840
+A0A154P6Q2	ITPR	high	longest per species	0	WN55_08313	Dufourea novaeangliae (Sweat bee)	178035	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2712
+R9S1J3	ITPR	high	longest per species	0		Dugesia japonica (Planarian)	6161	Metazoa (non-vertebrate)	Platyhelminthes		Tricladida	2666
+A0A158Q836	ITPR	high	longest per species	0		Elaeophora elaphi	1147741	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2839
+A0A433UB23	ITPR	high	longest per species	0	EGW08_001276	Elysia chlorotica (Eastern emerald elysia) (Sea slug)	188477	Metazoa (non-vertebrate)	Mollusca	Gastropoda		2799
+A0AAE1AEW6	ITPR	medium	longest per species	1	RRG08_064494	Elysia crispata (lettuce slug)	231223	Metazoa (non-vertebrate)	Mollusca	Gastropoda		3110
+A0A0N4V2Y0	ITPR	high	longest per species	0	EVEC_LOCUS4090	Enterobius vermicularis (Human pinworm)	51028	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2709
+A0ACC2PB19	ITPR	high	longest per species	0	QAD02_014747	Eretmocerus hayati	131215	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2710
+A0A310SI82	ITPR	high	longest per species	0	WN48_10483	Eufriesea mexicana	516756	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2772
+A0A4C1SDP3	ITPR	low	longest per species	0	Itp-r83A	Eumeta variegata (Bagworm moth) (Eumeta japonica)	151549	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	985
+A0AAU9UHG9	ITPR	high	longest per species	0	EEDITHA_LOCUS14101	Euphydryas editha (Edith's checkerspot)	104508	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2709
+A0A913WYC7	ITPR	high	longest per species	0		Exaiptasia diaphana (Tropical sea anemone) (Aiptasia pulchella)	2652724	Metazoa (non-vertebrate)	Cnidaria	Anthozoa	Actiniaria	2714
+A0AAV8WC50	ITPR	high	longest per species	0	NQ315_010164	Exocentrus adspersus	1586481	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2641
+A0A504YK77	ITPR	medium	longest per species	0	FGIG_06159	Fasciola gigantica (Giant liver fluke)	46835	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Plagiorchiida	2366
+A0A4E0RYC0	ITPR	high	longest per species	0	D915_000340	Fasciola hepatica (Liver fluke)	6192	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Plagiorchiida	2838
+A0A226F1K6	ITPR	high	longest per species	0	Fcan01_03939	Folsomia candida (Springtail)	158441	Metazoa (non-vertebrate)	Arthropoda	Collembola	Entomobryomorpha	2636
+A0A9R1U4U1	ITPR	high	longest per species	0	Itpr	Fopius arisanus	64838	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2795
+A0ABQ7S8H2	ITPR	high	longest per species	0	IP3R	Fragariocoptes setiger	1670756	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Trombidiformes	2386
+A0AAE1LT79	ITPR	high	longest per species	0	KUF71_020973	Frankliniella fusca	407009	Metazoa (non-vertebrate)	Arthropoda	Insecta	Thysanoptera	2730
+A0A6J1ST83	ITPR	high	longest per species	0	LOC113210326	Frankliniella occidentalis (Western flower thrips) (Euthrips occidentalis)	133901	Metazoa (non-vertebrate)	Arthropoda	Insecta	Thysanoptera	2737
+A0AAJ7SIH5	ITPR	high	longest per species	0	LOC100902659	Galendromus occidentalis (western predatory mite)	34638	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Mesostigmata	2893
+A0ABM3MHV0	ITPR	high	longest per species	0	LOC113510486	Galleria mellonella (Greater wax moth)	7137	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2667
+A0A183CC87	ITPR	high	longest per species	0		Globodera pallida (Potato cyst nematode worm) (Heterodera pallida)	36090	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3298
+A0A914HHK4	ITPR	high	longest per species	1		Globodera rostochiensis (Golden nematode worm) (Heterodera rostochiensis)	31243	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3709
+A0A1A9VB51	ITPR	high	longest per species	0		Glossina austeni (Savannah tsetse fly)	7395	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2856
+A0A1A9X1V5	ITPR	high	longest per species	0		Glossina brevipalpis	37001	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2756
+A0A9C5ZFN5	ITPR	high	longest per species	0	LOC119642635	Glossina fuscipes	7396	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2760
+A0A1B0FD97	ITPR	high	longest per species	0		Glossina morsitans morsitans (Savannah tsetse fly)	37546	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2775
+A0A1A9Z8G3	ITPR	high	longest per species	0		Glossina pallidipes (Tsetse fly)	7398	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2764
+A0A1B0AXI4	ITPR	high	longest per species	0		Glossina palpalis gambiensis	67801	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2820
+A0AAN9W1H0	ITPR	high	longest per species	0	R5R35_003837	Gryllus longicercus	2509291	Metazoa (non-vertebrate)	Arthropoda	Insecta	Orthoptera	2735
+A0A0L7R9I1	ITPR	high	longest per species	0	WH47_10941	Habropoda laboriosa	597456	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2988
+A0A7I4YKH1	ITPR	high	longest per species	0		Haemonchus contortus (Barber pole worm)	6289	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2834
+A0AAN8XQG7	ITPR	low	longest per species	0	ITPR1_2	Halocaridina rubra (Hawaiian red shrimp)	373956	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	1399
+E2C6L2	ITPR	high	longest per species	0	EAI_16051	Harpegnathos saltator (Jerdon's jumping ant)	610380	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2630
+A0AAW1V2D9	ITPR	high	longest per species	0	WA026_004699	Henosepilachna vigintioctopunctata	420089	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2750
+A0A7R8Z5B6	ITPR	high	longest per species	0	HERILL_LOCUS16184	Hermetia illucens (Black soldier fly)	343691	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2765
+A0ABD2IY74	ITPR	high	longest per species	0	niasHS_010607	Heterodera schachtii (Sugarbeet cyst nematode worm) (Tylenchus schachtii)	97005	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3099
+A0ABD2LXH7	ITPR	high	longest per species	0	niasHT_007103	Heterodera trifolii	157864	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3127
+A0A6V7HEH7	ITPR	high	longest per species	0	MHI_LOCUS807305	Heterotrigona itama	395501	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2580
+A0A6A7G5P7	ITPR	high	longest per species	0		Hirondellea gigas	1518452	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Amphipoda	2775
+A0A9Q1HIR2	ITPR	high	longest per species	0	HOLleu_04993	Holothuria leucospilota (Black long sea cucumber) (Mertensiothuria leucospilota)	206669	Metazoa (non-vertebrate)	Echinodermata	Holothuroidea	Aspidochirotida	2757
+A0A8J5JZN9	ITPR	high	longest per species	0	Itp-r83A-L	Homarus americanus (American lobster)	6706	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	2114
+A0A8B7N5U0	ITPR	high	longest per species	0	LOC108666338	Hyalella azteca (Mexican freshwater shrimp) (Ampithoe aztecus)	294128	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Amphipoda	2754
+A0ACB7S0Q7	ITPR	high	longest per species	0	HPB50_016883	Hyalomma asiaticum (Tick)	266040	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Ixodida	2450
+A0ABM4D4D9	ITPR	high	longest per species	0	LOC100202979	Hydra vulgaris (Hydra) (Hydra attenuata)	6087	Metazoa (non-vertebrate)	Cnidaria	Hydrozoa	Anthoathecata	2668
+A0ABD1EEW5	ITPR	high	longest per species	0	ABEB36_011294	Hypothenemus hampei (Coffee berry borer)	57062	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2707
+A0A1W0X7F9	ITPR	high	longest per species	1	BV898_02971	Hypsibius exemplaris (Freshwater tardigrade)	2072580	Metazoa (non-vertebrate)	Tardigrada	Eutardigrada	Parachela	2727
+A0ABN8IK88	ITPR	high	longest per species	0	IPOD504_LOCUS11097	Iphiclides podalirius (scarce swallowtail)	110791	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2710
+A0A131XWU7	ITPR	medium	longest per species	0		Ixodes ricinus (Common tick) (Acarus ricinus)	34613	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Ixodida	2225
+A0ACM8FBX0	ITPR	high	longest per species	0	Itpr	Ixodes scapularis (Black-legged tick) (Deer tick)	6945	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Ixodida	2728
+A0ACH3JMQ0	ITPR	high	longest per species	0	PGB90_009149	Kerria lacca (common lac scale)	473130	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	2722
+A0A482XLK3	ITPR	high	longest per species	0	LSTR_LSTR012029	Laodelphax striatellus (Small brown planthopper) (Delphax striatella)	195883	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	2748
+A0AAV2AIN0	ITPR	high	longest per species	0	LARSCL_LOCUS12808	Larinioides sclopetarius	280406	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	2815
+A0AAV2N4X5	ITPR	high	longest per species	0	LPLAT_LOCUS1334	Lasius platythorax	488582	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2796
+A0AAV1JCG6	ITPR	high	longest per species	0	LNINA_LOCUS6193	Leptosia nina	320188	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2819
+A0A443SIG1	ITPR	medium	longest per species	0	B4U80_06599	Leptotrombidium deliense	299467	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Trombidiformes	2233
+A0ABM1SEU2	ITPR	high	longest per species	0	LOC106459878	Limulus polyphemus (Atlantic horseshoe crab)	6850	Metazoa (non-vertebrate)	Arthropoda	Merostomata	Xiphosura	2810
+A0A1S3H6V5	ITPR	medium	longest per species	1	LOC106152615	Lingula anatina (Brachiopod) (Lingula unguis)	7574	Metazoa (non-vertebrate)	Brachiopoda	Lingulata	Lingulida	2808
+A0A3P6SQ38	ITPR	high	longest per species	0	NLS_LOCUS1663	Litomosoides sigmodontis (Filarial nematode worm)	42156	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2711
+A0AAN9C066	ITPR	high	longest per species	0	V1264_000891	Littorina saxatilis	31220	Metazoa (non-vertebrate)	Mollusca	Gastropoda	Littorinimorpha	2837
+A0A1I7VYX4	ITPR	high	longest per species	0		Loa loa (Eye worm) (Filaria loa)	7209	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2959
+V4BQ56	ITPR	high	longest per species	0	LOTGIDRAFT_163525	Lottia gigantea (Giant owl limpet)	225164	Metazoa (non-vertebrate)	Mollusca	Gastropoda		2890
+A0ABR3H490	ITPR	high	longest per species	0	ABMA27_010755	Loxostege sticticalis (Beet webworm moth)	481309	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2718
+A0A0L0CKU0	ITPR	high	longest per species	0	FF38_03739	Lucilia cuprina (Green bottle fly) (Australian sheep blowfly)	7375	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2810
+A0AAV2IEK8	ITPR	high	longest per species	0	GSLYS_00017757001	Lymnaea stagnalis (Great pond snail) (Helix stagnalis)	6523	Metazoa (non-vertebrate)	Mollusca	Gastropoda		2753
+A0AAV0WNE1	ITPR	high	longest per species	0	MEUPH1_LOCUS12973	Macrosiphum euphorbiae (potato aphid)	13131	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	3832
+A0A267FZQ8	ITPR	high	longest per species	0	BOX15_Mlig001931g5	Macrostomum lignano	282301	Metazoa (non-vertebrate)	Platyhelminthes			2918
+A0ACF7KHB0	ITPR	high	longest per species	0	ACF0H5_005634	Mactra antiquata	2302425	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Venerida	2872
+A0A8W8K1L7	ITPR	high	longest per species	0		Magallana gigas (Pacific oyster) (Crassostrea gigas)	29159	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Ostreida	2905
+A0A921Z0H7	ITPR	high	longest per species	0	O3G_MSEX005940	Manduca sexta (Tobacco hawkmoth) (Tobacco hornworm)	7130	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2721
+A0A7R9PTU4	ITPR	medium	longest per species	0	OSB1V03_LOCUS865	Medioppia subpectinata	1979941	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Sarcoptiformes	2685
+A0AAV7XRM6	ITPR	high	longest per species	0	ONE63_009288	Megalurothrips usitatus (bean blossom thrips)	439358	Metazoa (non-vertebrate)	Arthropoda	Insecta	Thysanoptera	2737
+A0ACF8ZNZ8	ITPR	high	longest per species	0	ACFFRR_000912	Megaselia abdita (Humpbacked fly)	88686	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2772
+A0AA40G5S4	ITPR	high	longest per species	0	K0M31_017920	Melipona bicolor	60889	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2663
+A0A0N0BFT7	ITPR	high	longest per species	0	WN51_13890	Melipona quadrifasciata	166423	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2689
+A0ACB0ZYK3	ITPR	high	longest per species	0	MENTE1834_LOCUS31451	Meloidogyne enterolobii (Root-knot nematode worm) (Meloidogyne mayaguensis)	390850	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3101
+A0A8T0A4H6	ITPR	medium	longest per species	0	Mgra_00000106	Meloidogyne graminicola	189291	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2592
+A0A914LTT6	ITPR	high	longest per species	0		Meloidogyne incognita (Southern root-knot nematode worm) (Oxyuris incognita)	6306	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3169
+A0A915LDK8	ITPR	medium	longest per species	0		Meloidogyne javanica (Root-knot nematode worm)	6303	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2103
+A0AAF3EE84	ITPR	high	longest per species	0		Mesorhabditis belari	2138241	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2874
+A0AA36D5Z0	ITPR	medium	longest per species	0	MSPICULIGERA_LOCUS18647	Mesorhabditis spiculigera	96644	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2058
+A0AA39FR95	ITPR	high	longest per species	0	PV328_007337	Microctonus aethiopoides	144406	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2785
+A0AA39FGH5	ITPR	high	longest per species	0	PV327_002902	Microctonus hyperodae (Parasitoid wasp)	165561	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2785
+A0A210PH43	ITPR	high	longest per species	0	KP79_PYT13685	Mizuhopecten yessoensis (Japanese scallop) (Patinopecten yessoensis)	6573	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Pectinida	2888
+A0ACF8YJV4	ITPR	high	longest per species	1	ACHWQZ_G010582	Mnemiopsis leidyi (Sea walnut) (Warty comb jellyfish)	27923	Metazoa (non-vertebrate)	Ctenophora	Tentaculata	Lobata	2773
+A0ABQ9K8B6	ITPR	high	longest per species	0	NQ317_006242	Molorchus minor	1323400	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2571
+A0ABM3VFJ9	ITPR	high	longest per species	0	LOC101897637	Musca domestica (House fly)	7370	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2852
+A0ABY7EXB8	ITPR	high	longest per species	0	MAR_027536	Mya arenaria (Soft-shell clam)	6604	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Myida	2647
+A0A151WNH1	ITPR	high	longest per species	0	ALC60_11475	Mycetomoellerius zeteki	64791	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	3266
+A0ACC2Q698	ITPR	high	longest per species	0	PYW08_010609	Mythimna loreyi	667449	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2704
+A0AAD7Y757	ITPR	high	longest per species	0	PYW07_011044	Mythimna separata (Oriental armyworm) (Pseudaletia separata)	271217	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	3571
+A0A6J7ZXT9	ITPR	high	longest per species	0	MCOR_1136	Mytilus coruscus (Sea mussel)	42192	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Mytilida	2794
+A0A8S3SVZ1	ITPR	high	longest per species	0	MEDL_35951	Mytilus edulis (Blue mussel)	6550	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Mytilida	2750
+A0A8B6H069	ITPR	high	longest per species	0	MGAL_10B065373	Mytilus galloprovincialis (Mediterranean mussel)	29158	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Mytilida	2827
+A0A7M7Q941	ITPR	high	longest per species	0		Nasonia vitripennis (Parasitic wasp)	7425	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2888
+A0ABR1DII6	ITPR	high	longest per species	0	Necator_chrIV.g15627	Necator americanus (Human hookworm)	51031	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2915
+A7SEK1	ITPR	high	longest per species	0	NEMVEDRAFT_v1g244707	Nematostella vectensis (Starlet sea anemone)	45351	Metazoa (non-vertebrate)	Cnidaria	Anthozoa	Actiniaria	2623
+A0ABM3G555	ITPR	high	longest per species	0	LOC107228096	Neodiprion lecontei (Redheaded pine sawfly)	441921	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2808
+A0A8X6UF11	ITPR	high	longest per species	0	Itpr1	Nephila pilipes (Giant wood spider) (Nephila maculata)	299642	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	2806
+A0A9P0H4A7	ITPR	high	longest per species	0	NEZAVI_LOCUS3906	Nezara viridula (Southern green stink bug) (Cimex viridulus)	85310	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	2712
+A0ABM1N051	ITPR	high	longest per species	0	LOC108565321	Nicrophorus vespilloides (Boreal carrion beetle)	110193	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2780
+A0A7E6ELE5	ITPR	high	longest per species	0	LOC115222534	Octopus sinensis (East Asian common octopus)	2607531	Metazoa (non-vertebrate)	Mollusca	Cephalopoda	Octopoda	2732
+A0AA36EXV5	ITPR	high	longest per species	0	OCTVUL_1B011408	Octopus vulgaris (Common octopus)	6645	Metazoa (non-vertebrate)	Mollusca	Cephalopoda	Octopoda	2723
+A0AAD9VX40	ITPR	high	longest per species	0	KPH14_001879	Odynerus spinipes	1348599	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2773
+A0AAV6VY60	ITPR	high	longest per species	0	JTE90_011244	Oedothorax gibbosus	931172	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	2813
+A0ABN7SZC1	ITPR	high	longest per species	0	OKIOD_LOCUS14004	Oikopleura dioica (Tunicate)	34765	Metazoa (non-vertebrate)	Chordata	Appendicularia	Copelata	3013
+A0A238BHZ9	ITPR	high	longest per species	0	X798_08037	Onchocerca flexuosa	387005	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2846
+A0A8R1TU45	ITPR	high	longest per species	0		Onchocerca volvulus	6282	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2870
+A0A026VT77	ITPR	high	longest per species	0	X777_00544	Ooceraea biroi (Clonal raider ant) (Cerapachys biroi)	2015173	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2719
+A0AAV7JUR8	ITPR	high	longest per species	0	LOD99_4139	Oopsacas minuta	111878	Metazoa (non-vertebrate)	Porifera	Hexactinellida	Lyssacinosida	2698
+A0A4S2MCV9	ITPR	medium	longest per species	0	CRM22_000929	Opisthorchis felineus	147828	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Opisthorchiida	2848
+A0A074Z731	ITPR	medium	longest per species	0	T265_14735	Opisthorchis viverrini (Southeast Asian liver fluke)	6198	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Opisthorchiida	2826
+A0A7R9QHI5	ITPR	medium	longest per species	0	ONB1V03_LOCUS5484	Oppiella nova	334625	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Sarcoptiformes	2445
+A0A1D2MPJ9	ITPR	high	longest per species	0	Ocin01_11690	Orchesella cincta (Springtail) (Podura cincta)	48709	Metazoa (non-vertebrate)	Arthropoda	Collembola	Entomobryomorpha	2428
+A0ABP1R053	ITPR	high	longest per species	0	ODALV1_LOCUS16698	Orchesella dallaii	48710	Metazoa (non-vertebrate)	Arthropoda	Collembola	Entomobryomorpha	2683
+A0A0T6ATW9	ITPR	medium	longest per species	0	AMK59_7474	Oryctes borbonicus	1629725	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2034
+A0A8S4Q492	ITPR	high	longest per species	1	OFUS_LOCUS22813	Owenia fusiformis (Polychaete worm)	6347	Metazoa (non-vertebrate)	Annelida	Polychaeta	Sabellida	3071
+A0A7E4V1T4	ITPR	high	longest per species	0		Panagrellus redivivus (Microworm)	6233	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2937
+A0A914YSR1	ITPR	high	longest per species	0		Panagrolaimus superbus	310955	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2775
+O77089	ITPR	high	longest per species	0	IP3R	Panulirus argus (Caribbean spiny lobster) (Palinurus argus)	6737	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	2783
+A0A0N1IGP3	ITPR	high	longest per species	0	RR48_05931	Papilio machaon (Old World swallowtail butterfly)	76193	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2911
+A0A0N1PF50	ITPR	medium	longest per species	0	RR46_01024	Papilio xuthus (Asian swallowtail butterfly)	66420	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2362
+A0AAD9J7D1	ITPR	high	longest per species	0	LSH36_550g03045	Paralvinella palmiformis	53620	Metazoa (non-vertebrate)	Annelida	Polychaeta	Terebellida	2757
+A0A915CCB2	ITPR	high	longest per species	0		Parascaris univalens (Nematode worm)	6257	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2957
+A0A0N4ZIS5	ITPR	high	longest per species	0		Parastrongyloides trichosuri (Possum-specific nematode worm)	131310	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2933
+A0AAD5MUV5	ITPR	high	longest per species	0	ITR1_2	Parelaphostrongylus tenuis (Meningeal worm)	148309	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2206
+A0AAV1LM52	ITPR	high	longest per species	1	PARMNEM_LOCUS14880	Parnassius mnemosyne (clouded apollo)	213953	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	4718
+A0AAN9TX74	ITPR	high	longest per species	0	V9T40_002529	Parthenolecanium corni	536013	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	2743
+A0AAN8PQX2	ITPR	high	longest per species	0	SNE40_013589	Patella caerulea (Rayed Mediterranean limpet)	87958	Metazoa (non-vertebrate)	Mollusca	Gastropoda		2701
+A0A913ZRM3	ITPR	high	longest per species	0		Patiria miniata (Bat star) (Asterina miniata)	46514	Metazoa (non-vertebrate)	Echinodermata	Asteroidea	Valvatida	2765
+Q8WSR4	ITPR	high	longest per species	0	IP3R	Patiria pectinifera (Starfish) (Asterina pectinifera)	7594	Metazoa (non-vertebrate)	Echinodermata	Asteroidea	Valvatida	2698
+E0VHU9	ITPR	high	longest per species	0	8237499	Pediculus humanus subsp. corporis (Body louse)	121224	Metazoa (non-vertebrate)	Arthropoda	Insecta	Psocodea	2680
+A0AAE1K5Z4	ITPR	high	longest per species	0	Pcinc_029236	Petrolisthes cinctipes (Flat porcelain crab)	88211	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	3048
+A0AAE1Q838	ITPR	medium	longest per species	0	Pmani_007659	Petrolisthes manimaculis	1843537	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	2191
+A0A9P0GR02	ITPR	high	longest per species	0	PHAECO_LOCUS4234	Phaedon cochleariae (Mustard beetle)	80249	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2740
+A0A6F9DES0	ITPR	high	longest per species	0	Itpr2	Phallusia mammillata	59560	Metazoa (non-vertebrate)	Chordata	Ascidiacea	Phlebobranchia	2802
+A0A1Y1NA90	ITPR	high	longest per species	0	PPYR_05817	Photinus pyralis (Common eastern firefly) (Lampyris pyralis)	7054	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2719
+A0A9N9TF60	ITPR	high	longest per species	0	PHYEVI_LOCUS1538	Phyllotreta striolata (Striped flea beetle) (Crioceris striolata)	444603	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2746
+A0A9P0TPV2	ITPR	high	longest per species	0	PIBRA_LOCUS9122	Pieris brassicae (White butterfly) (Large white butterfly)	7116	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2712
+A0A821WKI6	ITPR	high	longest per species	0	PMACD_LOCUS13303	Pieris macdunnoughi	345717	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2692
+A0AA89BNM5	ITPR	medium	longest per species	0	FSP39_005468	Pinctada imbricata (Atlantic pearl-oyster) (Pinctada martensii)	66713	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Pterioida	2706
+A0ABQ7PVY8	ITPR	medium	longest per species	0	JYU34_020113	Plutella xylostella (Diamondback moth) (Plutella maculipennis)	51655	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2509
+A0A3M6TGS7	ITPR	high	longest per species	0	pdam_00007499	Pocillopora damicornis (Cauliflower coral) (Millepora damicornis)	46731	Metazoa (non-vertebrate)	Cnidaria	Anthozoa	Scleractinia	2667
+A0A8N1S4P7	ITPR	high	longest per species	0	LOC105425708	Pogonomyrmex barbatus (red harvester ant)	144034	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2743
+A0ABM1J5S6	ITPR	high	longest per species	0	LOC107072419	Polistes dominula (European paper wasp) (Vespa dominula)	743375	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2820
+A0A9J6C9M0	ITPR	high	longest per species	0	PVAND_008274	Polypedilum vanderplanki (Sleeping chironomid midge)	319348	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	1880
+A0ABR1B9V7	ITPR	high	longest per species	0	RUM44_008351	Polyplax serrata (Common mouse louse)	468196	Metazoa (non-vertebrate)	Arthropoda	Insecta	Psocodea	2701
+A0A2T7NJX4	ITPR	medium	longest per species	0	C0Q70_19629	Pomacea canaliculata (Golden apple snail)	400727	Metazoa (non-vertebrate)	Mollusca	Gastropoda	Architaenioglossa	2819
+A0AAW1N9J3	ITPR	high	longest per species	0	QE152_g503	Popillia japonica (Japanese beetle)	7064	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2726
+A0ABN8M8W6	ITPR	high	longest per species	0	PEVE_00025478	Porites evermanni	104178	Metazoa (non-vertebrate)	Cnidaria	Anthozoa	Scleractinia	2697
+A0ABN8N199	ITPR	high	longest per species	0	PLOB_00042910	Porites lobata	104759	Metazoa (non-vertebrate)	Cnidaria	Anthozoa	Scleractinia	2717
+A0A5B7CE02	ITPR	low	longest per species	0	Itp-r83A_0	Portunus trituberculatus (Swimming crab) (Neptunus trituberculatus)	210409	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	235
+A0AAE0W7B9	ITPR	high	longest per species	0	CHS0354_042780	Potamilus streckersoni	2493646	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Unionida	2780
+A0AAV5TRG8	ITPR	high	longest per species	0	PENTCL1PPCAC_18754	Pristionchus entomophagus	358040	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2885
+A0AAN5CS19	ITPR	high	longest per species	0	PMAYCL1PPCAC_19729	Pristionchus mayeri	1317129	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2895
+A0A2A6BHW5	ITPR	high	longest per species	0	WBGene00115426	Pristionchus pacificus (Parasitic nematode worm)	54126	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3136
+A0A836EAI2	ITPR	high	longest per species	0	Itpr83a	Pseudoatta argentina	621737	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2790
+A0A9P0CRU2	ITPR	high	longest per species	0	PSYICH_LOCUS4456	Psylliodes chrysocephalus	3402493	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2729
+A0AAN7ZFY7	ITPR	high	longest per species	0	RI129_011498	Pyrocoelia pectoralis	417401	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2719
+A0A1D1V0T1	ITPR	high	longest per species	0	RvY_05495-1	Ramazzottius varieornatus (Water bear) (Tardigrade)	947166	Metazoa (non-vertebrate)	Tardigrada	Eutardigrada	Parachela	2692
+T1HK15	ITPR	high	longest per species	0		Rhodnius prolixus (Triatomid bug)	13249	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	2715
+A0A834IY04	ITPR	high	longest per species	0	GWI33_001409	Rhynchophorus ferrugineus (Red palm weevil) (Curculio ferrugineus)	354439	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2746
+A0AAD9KQF7	ITPR	high	longest per species	0	NP493_708g03050	Ridgeia piscesae (Tubeworm)	27915	Metazoa (non-vertebrate)	Annelida	Polychaeta	Sabellida	2931
+A0A819CKF8	ITPR	high	longest per species	0	OVN521_LOCUS4954	Rotaria magnacalcarata	392030	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Philodinida	2827
+A0A819Y5W7	ITPR	high	longest per species	0	UJA718_LOCUS3122	Rotaria socialis	392032	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Philodinida	2863
+A0A815CSR2	ITPR	medium	longest per species	0	JXQ802_LOCUS29035	Rotaria sordida	392033	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Philodinida	2440
+A0ACM8C709	ITPR	high	longest per species	1	LOC100375107	Saccoglossus kowalevskii (Acorn worm)	10224	Metazoa (non-vertebrate)	Hemichordata	Enteropneusta		2596
+A0A834RG89	ITPR	high	longest per species	0		Sarcoptes scabiei (Itch mite) (Acarus scabiei)	52283	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Sarcoptiformes	3237
+A0A8E5JSV7	ITPR	high	longest per species	0		Schistocerca gregaria (Desert locust) (Gryllus gregarius)	7010	Metazoa (non-vertebrate)	Arthropoda	Insecta	Orthoptera	2667
+A0A922ILK8	ITPR	high	longest per species	1	ITPR2	Schistosoma haematobium (Blood fluke)	6185	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	3083
+A0A4Z2DCZ4	ITPR	high	longest per species	0	EWB00_002260	Schistosoma japonicum (Blood fluke)	6182	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	2922
+A0A5K4FB58	ITPR	medium	longest per species	0		Schistosoma mansoni (Blood fluke)	6183	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	2890
+A0AAE2D5K1	ITPR	medium	longest per species	0	MN116_006470	Schistosoma mekongi (Parasitic worm)	38744	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	2892
+A0AA85FYS4	ITPR	high	longest per species	0		Schistosoma rodhaini	6188	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	2938
+A0AAW0TKI5	ITPR	high	longest per species	0	O3P69_020115	Scylla paramamosain (Mud crab)	85552	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	2817
+A0ACF8WMC7	ITPR	high	longest per species	0	ACI65C_004244	Semiaphis heraclei	796293	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	3830
+A0ACE7EH65	ITPR	high	longest per species	0	DMENIID0001_028900	Sergentomyia squamirostris	2283857	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2738
+A0A915PLW3	ITPR	high	longest per species	0		Setaria digitata	48799	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2714
+A0ABD3VGB7	ITPR	high	longest per species	0	ACJMK2_009798	Sinanodonta woodiana (Chinese pond mussel) (Anodonta woodiana)	1069815	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Unionida	2808
+A0A8B8GE66	ITPR	high	longest per species	0	LOC112691291	Sipha flava (yellow sugarcane aphid)	143950	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	3813
+A0A6J2XBG4	ITPR	high	longest per species	0	LOC115876815	Sitophilus oryzae (Rice weevil) (Curculio oryzae)	7048	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2756
+A0ACF8S931	ITPR	medium	longest per species	0	ScPMuIL_002056	Solemya velum (Atlantic awningclam)	13268	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Solemyida	2818
+A0A9R0DYJ4	ITPR	high	longest per species	0	LOC118280811	Spodoptera frugiperda (Fall armyworm)	7108	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2740
+A0A9P0I9F3	ITPR	high	longest per species	0	SPLIT_LOCUS9221	Spodoptera littoralis (Egyptian cotton leafworm)	7109	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2725
+A0A9J7J438	ITPR	high	longest per species	0	LOC111364442	Spodoptera litura (Asian cotton leafworm)	69820	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2750
+A0A1I7YYR9	ITPR	high	longest per species	0		Steinernema glaseri	37863	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2887
+A0AA39LKA4	ITPR	high	longest per species	0	QR680_003453	Steinernema hermaphroditum	289476	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2871
+A0A1I8P727	ITPR	high	longest per species	0	106090477	Stomoxys calcitrans (Stable fly) (Conops calcitrans)	35570	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2911
+T1IW96	ITPR	high	longest per species	0		Strigamia maritima (European centipede) (Geophilus maritimus)	126957	Metazoa (non-vertebrate)	Arthropoda	Chilopoda	Geophilomorpha	2752
+A0A7M7MY00	ITPR	high	longest per species	1		Strongylocentrotus purpuratus (Purple sea urchin)	7668	Metazoa (non-vertebrate)	Echinodermata	Echinoidea	Camarodonta	2820
+A0A0N5C5P1	ITPR	high	longest per species	0		Strongyloides papillosus (Intestinal threadworm)	174720	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2898
+A0A090KQI1	ITPR	high	longest per species	0	SRAE_X000152300	Strongyloides ratti (Parasitic roundworm)	34506	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2979
+A0A913HZP3	ITPR	high	longest per species	0		Strongyloides stercoralis (Threadworm)	6248	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2976
+A0A0K0EWY3	ITPR	high	longest per species	0		Strongyloides venezuelensis (Threadworm)	75913	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2987
+A0A2B4T0S0	ITPR	high	longest per species	0	ITPR1	Stylophora pistillata (Smooth cauliflower coral)	50429	Metazoa (non-vertebrate)	Cnidaria	Anthozoa	Scleractinia	2000
+A0A158R5B0	ITPR	high	longest per species	0		Syphacia muris	451379	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2880
+A0ABQ9EDD3	ITPR	high	longest per species	0	KUTeg_018990	Tegillarca granosa (Malaysian cockle) (Anadara granosa)	220873	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Arcoida	2757
+A0A6J1PYU8	ITPR	high	longest per species	0	LOC112456326	Temnothorax curvispinosus	300111	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2749
+A0A4S2JP25	ITPR	high	longest per species	0	DBV15_08353	Temnothorax longispinosus	300112	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2740
+A0AAW0ZST9	ITPR	high	longest per species	0	QLX08_007324	Tetragonisca angustula	166442	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2812
+T1KF94	ITPR	high	longest per species	0	107363591	Tetranychus urticae (Two-spotted spider mite)	32264	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Trombidiformes	2754
+A0A6P8YZV9	ITPR	high	longest per species	0	LOC117644439	Thrips palmi (Melon thrips)	161013	Metazoa (non-vertebrate)	Arthropoda	Insecta	Thysanoptera	2733
+A0ABN7NJD3	ITPR	medium	longest per species	0	TPAB3V08_LOCUS93	Timema podura (Walking stick)	61482	Metazoa (non-vertebrate)	Arthropoda	Insecta	Phasmatodea	2459
+A0A0B2VE71	ITPR	high	longest per species	0	ITPR1	Toxocara canis (Canine roundworm)	6265	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3051
+A0A195EIV8	ITPR	high	longest per species	0	ALC57_02537	Trachymyrmex cornetzi	471704	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2860
+A0A195F4X6	ITPR	high	longest per species	0	ALC56_10281	Trachymyrmex septentrionalis	34720	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2892
+A0A023F2G4	ITPR	high	longest per species	0		Triatoma infestans (Assassin bug)	30076	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	2724
+D6W7E2	ITPR	high	longest per species	0	GLEAN_05176	Tribolium castaneum (Red flour beetle)	7070	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2733
+A0A0V1CWN1	ITPR	high	longest per species	0	itr-1	Trichinella britovi (Parasitic roundworm)	45882	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	2701
+A0A0V0U3U1	ITPR	high	longest per species	0	itr-1	Trichinella murrelli	144512	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	2695
+A0A0V1LAA3	ITPR	high	longest per species	0	itr-1	Trichinella nativa	6335	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	2706
+A0A0V0SN43	ITPR	high	longest per species	0	itr-1	Trichinella nelsoni	6336	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	2735
+A0A0V1MT52	ITPR	high	longest per species	0	itr-1	Trichinella papuae	268474	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	2721
+A0A0V1A3Q0	ITPR	high	longest per species	0	itr-1	Trichinella patagoniensis	990121	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	2706
+A0A0V1IZL4	ITPR	high	longest per species	0	itr-1	Trichinella pseudospiralis (Parasitic roundworm)	6337	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	2748
+A0A0V1C2W0	ITPR	high	longest per species	0	itr-1	Trichinella spiralis (Trichina worm)	6334	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	2753
+A0A0V1HGL2	ITPR	high	longest per species	0	itr-1	Trichinella zimbabwensis	268475	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	2707
+A0AA85ITV4	ITPR	high	longest per species	0		Trichobilharzia regenti (Nasal bird schistosome)	157069	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	3002
+A0A6H5IAA8	ITPR	high	longest per species	0	TBRA_LOCUS5324	Trichogramma brassicae	86971	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2752
+A0ABD2XM03	ITPR	high	longest per species	0	TKK_001818	Trichogramma kaykai	54128	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2790
+A0A232FML4	ITPR	high	longest per species	0	TSAR_006468	Trichomalopsis sarcophagae	543379	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2848
+A0A8X6FX91	ITPR	high	longest per species	0	Itpr1	Trichonephila clavata (Joro spider) (Nephila clavata)	2740835	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	2793
+A0A8X7C684	ITPR	high	longest per species	0	Itpr1	Trichonephila inaurata madagascariensis	2747483	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	2663
+B3RXX7	ITPR	medium	longest per species	1	TRIADDRAFT_56365	Trichoplax adhaerens (Trichoplax reptans)	10228	Metazoa (non-vertebrate)	Placozoa	Uniplacotomia	Trichoplacea	2524
+A0A7E5W0L4	ITPR	high	longest per species	0	LOC113498357	Trichoplusia ni (Cabbage looper)	7111	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2726
+A0A5S6QTU2	ITPR	high	longest per species	0		Trichuris muris (Mouse whipworm)	70415	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	2668
+A0A077YYA4	ITPR	high	longest per species	0	TTRE_0000103301	Trichuris trichiura (Whipworm) (Trichocephalus trichiurus)	36087	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	2639
+A0ACF7I1T5	ITPR	high	longest per species	0	QTP88_011097	Uroleucon formosanum	796250	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	3850
+A0ABM4AVE1	ITPR	high	longest per species	0	LOC113392840	Vanessa tameamea (Kamehameha butterfly)	334116	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2745
+A0A7M7K4U3	ITPR	high	longest per species	0		Varroa destructor (Honeybee mite)	109461	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Mesostigmata	2950
+A0A834NS71	ITPR	high	longest per species	0	H0235_011616	Vespula pensylvanica (Western yellow jacket) (Wasp)	30213	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2813
+A0ABD2A0Z0	ITPR	high	longest per species	0	V1478_016674	Vespula squamosa (Southern yellow jacket) (Wasp)	30214	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2817
+A0A3P7G9M1	ITPR	high	longest per species	0	WBA_LOCUS10603	Wuchereria bancrofti	6293	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2843
+A0ABP1N676	ITPR	high	longest per species	0	XYLVIOL_LOCUS2189	Xylocopa violacea (Violet carpenter bee) (Apis violacea)	135666	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2798
+A0AA38HMA3	ITPR	high	longest per species	0	Zmor_003130	Zophobas morio	2755281	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2757
+A0A1V9Y6E0	ITPR	medium	longest per species	0	ACHHYP_16527	Achlya hypogyna (Oomycete) (Protoachlya hypogyna)	1202772	SAR	Oomycota	Saprolegniomycetes	Saprolegniales	2932
+A0A3R7Z6R1	ITPR	high	longest per species	0	B5M09_003701	Aphanomyces astaci (Crayfish plague agent)	112090	SAR	Oomycota	Saprolegniomycetes	Saprolegniales	2983
+A0A6G0XG54	ITPR	high	longest per species	0	Ae201684_005054	Aphanomyces euteiches	100861	SAR	Oomycota	Saprolegniomycetes	Saprolegniales	2775
+A0A418B910	ITPR	medium	longest per species	0	DYB32_000720	Aphanomyces invadans	157072	SAR	Oomycota	Saprolegniomycetes	Saprolegniales	2890
+A0A485LKA4	ITPR	medium	longest per species	0	Aste57867_22165	Aphanomyces stellatus	120398	SAR	Oomycota	Saprolegniomycetes	Saprolegniales	2873
+A0ABR1G3T0	ITPR	medium	longest per species	0	SO694_00086026	Aureococcus anophagefferens (Harmful bloom alga)	44056	SAR		Pelagophyceae	Pelagomonadales	3171
+A0AAU9K1L3	ITPR	medium	longest per species	0	BSTOLATCC_MIC59556	Blepharisma stoltei	1481888	SAR	Ciliophora	Heterotrichea	Heterotrichida	3101
+A0AAD7UD70	ITPR	high	longest per species	0	CTAYLR_006814	Chrysophaeum taylorii	2483200	SAR		Pelagophyceae	Pelagomonadales	3368
+A0AAD1YC61	ITPR	medium	longest per species	0	ECRASSUSDP1_LOCUS28628	Euplotes crassus	5936	SAR	Ciliophora	Spirotrichea	Euplotida	3034
+A0A2R5GVV0	ITPR	medium	longest per species	0	FCC1311_090182	Hondaea fermentalgiana	2315210	SAR		Bigyra	Thraustochytrida	3220
+G0QWJ8	ITPR	medium	longest per species	0	IMG5_132830	Ichthyophthirius multifiliis (White spot disease agent) (Ich)	5932	SAR	Ciliophora	Oligohymenophorea	Hymenostomatida	2997
+A0AAV2ZCN3	ITPR	high	longest per species	0	N0F65_004162	Lagenidium giganteum	4803	SAR	Oomycota	Peronosporomycetes	Pythiales	3684
+A0A8S1S0V9	ITPR	medium	longest per species	0	POCTA_138.1.T0040420	Paramecium octaurelia	43137	SAR	Ciliophora	Oligohymenophorea	Peniculida	3130
+A0A8S1SJB1	ITPR	medium	longest per species	0	PPENT_87.1.T0080108	Paramecium pentaurelia	43138	SAR	Ciliophora	Oligohymenophorea	Peniculida	3132
+A0A8S1JS52	ITPR	medium	longest per species	0	PPRIM_AZ9-3.1.T0080434	Paramecium primaurelia	5886	SAR	Ciliophora	Oligohymenophorea	Peniculida	3132
+A0A8S1LDJ1	ITPR	medium	longest per species	0	PSON_ATCC_30995.1.T0150056	Paramecium sonneborni	65129	SAR	Ciliophora	Oligohymenophorea	Peniculida	3424
+A0CWY9	ITPR	medium	longest per species	0	GSPATT00001509001	Paramecium tetraurelia	5888	SAR	Ciliophora	Oligohymenophorea	Peniculida	3130
+A0A329SCW7	ITPR	high	longest per species	0	PC110_g9223	Phytophthora cactorum	29920	SAR	Oomycota	Peronosporomycetes	Peronosporales	3782
+A0AAD9LIJ6	ITPR	high	longest per species	0	P3T76_010134	Phytophthora citrophthora	4793	SAR	Oomycota	Peronosporomycetes	Peronosporales	3785
+A0A9W6U7T9	ITPR	medium	longest per species	0	Pfra01_000567300	Phytophthora fragariaefolia	1490495	SAR	Oomycota	Peronosporomycetes	Peronosporales	3461
+A0A833TJ41	ITPR	high	longest per species	0	GN244_ATG03275	Phytophthora infestans (Potato late blight agent) (Botrytis infestans)	4787	SAR	Oomycota	Peronosporomycetes	Peronosporales	3786
+D0MSD5	ITPR	medium	longest per species	0	PITG_01069	Phytophthora infestans (strain T30-4) (Potato late blight agent)	403677	SAR	Oomycota	Peronosporomycetes	Peronosporales	2916
+A0A9W6WNM1	ITPR	medium	longest per species	0	Plil01_000142000	Phytophthora lilii	2077276	SAR	Oomycota	Peronosporomycetes	Peronosporales	3332
+A0A225WCH2	ITPR	medium	longest per species	0	PHMEG_00011505	Phytophthora megakarya	4795	SAR	Oomycota	Peronosporomycetes	Peronosporales	3032
+V9FIB5	ITPR	high	longest per species	0	F443_05696	Phytophthora nicotianae P1569	1317065	SAR	Oomycota	Peronosporomycetes	Peronosporales	3787
+A0A8T1W1U0	ITPR	high	longest per species	1	PHYPSEUDO_000592	Phytophthora pseudosyringae	221518	SAR	Oomycota	Peronosporomycetes	Peronosporales	3854
+G4YJZ1	ITPR	medium	longest per species	0	PHYSODRAFT_308549	Phytophthora sojae (strain P6497) (Soybean stem and root rot agent) (Phytophthora megasperma f. sp. glycines)	1094619	SAR	Oomycota	Peronosporomycetes	Peronosporales	3001
+A0A0V0QEF2	ITPR	medium	longest per species	0	PPERSA_12821	Pseudocohnilembus persalinus (Ciliate)	266149	SAR	Ciliophora	Oligohymenophorea	Philasterida	3260
+A0AAD5M469	ITPR	high	longest per species	0	P43SY_003040	Pythium insidiosum (Pythiosis disease agent)	114742	SAR	Oomycota	Peronosporomycetes	Pythiales	3660
+T0PXG3	ITPR	medium	longest per species	0	SDRG_16422	Saprolegnia diclina (strain VS20)	1156394	SAR	Oomycota	Saprolegniomycetes	Saprolegniales	2913
+A0A067CZC0	ITPR	medium	longest per species	0	SPRG_00668	Saprolegnia parasitica (strain CBS 223.65)	695850	SAR	Oomycota	Saprolegniomycetes	Saprolegniales	2875
+A0A1R2BTQ3	ITPR	medium	longest per species	0	SteCoe_19775	Stentor coeruleus	5963	SAR	Ciliophora	Heterotrichea	Heterotrichida	2802
+A0A078A1U0	ITPR	medium	longest per species	1	Contig1440.g1580	Stylonychia lemnae (Ciliate)	5949	SAR	Ciliophora	Spirotrichea	Sporadotrichida	3530
+A0A812KVT5	ITPR	low	longest per species	0	itr-1	Symbiodinium natans	878477	SAR		Dinophyceae	Suessiales	3168
+A0A812L420	ITPR	low	longest per species	0	IP3R	Symbiodinium pilosum (Dinoflagellate)	2952	SAR		Dinophyceae	Suessiales	1148
+A0ACF7UXB7	ITPR	medium	longest per species	0	ABPG74_006930	Tetrahymena malaccensis	5901	SAR	Ciliophora	Oligohymenophorea	Hymenostomatida	3525
+Q238R0	ITPR	medium	longest per species	0	TTHERM_00454060	Tetrahymena thermophila (strain SB210)	312017	SAR	Ciliophora	Oligohymenophorea	Hymenostomatida	3525
+A0ACF7XD53	ITPR	medium	longest per species	0	ABPG72_018427	Tetrahymena utriculariae	2486642	SAR	Ciliophora	Oligohymenophorea	Hymenostomatida	3508
+A0ABQ6MQV0	ITPR	medium	longest per species	0	TeGR_g1844	Tetraparma gracilis	2962635	SAR		Bolidophyceae	Parmales	3403
+A0A1W0AAR6	ITPR	high	longest per species	0	THRCLA_00584	Thraustotheca clavata	74557	SAR	Oomycota	Saprolegniomycetes	Saprolegniales	3092
+A0A9W7GCC0	ITPR	medium	longest per species	0	TrCOL_g8184	Triparma columacea	722753	SAR		Bolidophyceae	Parmales	3288
+A0A9W7FTI7	ITPR	high	longest per species	1	TrLO_g4475	Triparma laevis f. longispina	1714387	SAR		Bolidophyceae	Parmales	3564
+A0A9W6ZFP1	ITPR	medium	longest per species	0	TrRE_jg4446	Triparma retinervis	2557542	SAR		Bolidophyceae	Parmales	3122
+A0A9W7A812	ITPR	high	longest per species	0	TrST_g2071	Triparma strigata	1606541	SAR		Bolidophyceae	Parmales	3258
+A0A9W7F662	ITPR	high	longest per species	0	TrVE_jg12128	Triparma verrucosa	1606542	SAR		Bolidophyceae	Parmales	3258
+A0A3Q1GDH2	ITPR	high	longest per vertebrate order	0		Acanthochromis polyacanthus (spiny chromis)	80966	Vertebrata	Chordata	Actinopteri		2726
+A0A8T3D5M1	ITPR	high	longest per vertebrate order	0	AGOR_G00158330	Albula goreensis	1534307	Vertebrata	Chordata	Actinopteri	Albuliformes	2788
+A0AAD7WTX7	ITPR	high	longest per vertebrate order	0	AAFF_G00263920	Aldrovandia affinis	143900	Vertebrata	Chordata	Actinopteri	Notacanthiformes	2812
+A0A3Q0GTU7	ITPR	high	longest per vertebrate order	0	ITPR3	Alligator sinensis (Chinese alligator)	38654	Vertebrata	Chordata		Crocodylia	2748
+A0AAQ6AB71	ITPR	high	longest per vertebrate order	0		Amphiprion ocellaris (Clown anemonefish)	80972	Vertebrata	Chordata	Actinopteri		2799
+A0A3P8SU81	ITPR	high	longest per vertebrate order	0		Amphiprion percula (Orange clownfish) (Lutjanus percula)	161767	Vertebrata	Chordata	Actinopteri		2701
+A0A7L3GV12	ITPR	high	longest per vertebrate order	0	Itpr3	Anhinga rufa (African darter)	317792	Vertebrata	Chordata	Aves	Suliformes	2667
+A0ABM4F3U0	ITPR	high	longest per vertebrate order	0	ITPR1	Apteryx mantelli (North Island brown kiwi)	2696672	Vertebrata	Chordata	Aves	Apterygiformes	2750
+A0A7K8LFL5	ITPR	high	longest per vertebrate order	0	Itpr3	Ardeotis kori	89386	Vertebrata	Chordata	Aves	Otidiformes	2699
+A0A663M6S8	ITPR	high	longest per vertebrate order	0	ITPR1	Athene cunicularia (Burrowing owl) (Speotyto cunicularia)	194338	Vertebrata	Chordata	Aves	Strigiformes	2759
+A0A8J7NQM2	ITPR	high	longest per vertebrate order	0	Itpr2	Atractosteus spatula (Alligator gar) (Lepisosteus spatula)	7917	Vertebrata	Chordata	Actinopteri	Semionotiformes	3128
+A0A2I4CBP5	ITPR	high	longest per vertebrate order	0	itpr1b	Austrofundulus limnaeus (Annual killifish)	52670	Vertebrata	Chordata	Actinopteri	Cyprinodontiformes	2782
+A0A6P7MH46	ITPR	high	longest per vertebrate order	0	itpr1b	Betta splendens (Siamese fighting fish)	158456	Vertebrata	Chordata	Actinopteri	Anabantiformes	2797
+A0A6B0QUI8	ITPR	high	longest per vertebrate order	0	E5288_WYG013682	Bos mutus (wild yak)	72004	Vertebrata	Chordata	Mammalia	Artiodactyla	3020
+A0A7K4YV60	ITPR	high	longest per vertebrate order	0	Itpr3	Bucorvus abyssinicus (Northern ground-hornbill) (Abyssinian ground-hornbill)	153643	Vertebrata	Chordata	Aves	Bucerotiformes	2685
+A0A8C0C0A2	ITPR	high	longest per vertebrate order	0		Buteo japonicus	224669	Vertebrata	Chordata	Aves	Accipitriformes	2742
+A0A8C3C7P5	ITPR	high	longest per vertebrate order	0		Cairina moschata (Muscovy duck)	8855	Vertebrata	Chordata	Aves	Anseriformes	2775
+A0A8C3JCE8	ITPR	high	longest per vertebrate order	0		Calidris pygmaea (Spoon-billed sandpiper)	425635	Vertebrata	Chordata	Aves	Charadriiformes	2750
+A0A5F4W3M3	ITPR	high	longest per vertebrate order	0		Callithrix jacchus (White-tufted-ear marmoset) (Simia Jacchus)	9483	Vertebrata	Chordata	Mammalia	Primates	2809
+A0A4W3JHJ0	ITPR	high	longest per vertebrate order	0		Callorhinchus milii (Ghost shark)	7868	Vertebrata	Chordata	Chondrichthyes	Chimaeriformes	2683
+A0A091IH39	ITPR	high	longest per vertebrate order	0	N300_04391	Calypte anna (Anna's hummingbird) (Archilochus anna)	9244	Vertebrata	Chordata	Aves	Apodiformes	2706
+A0AC58MR87	ITPR	high	longest per vertebrate order	0	Itpr2	Castor canadensis (American beaver)	51338	Vertebrata	Chordata	Mammalia	Rodentia	3181
+A0A6J2VJN0	ITPR	high	longest per vertebrate order	0	itpr1b	Chanos chanos (Milkfish) (Mugil chanos)	29144	Vertebrata	Chordata	Actinopteri	Gonorynchiformes	2716
+A0A401SQC9	ITPR	high	longest per vertebrate order	0	chiPu_0011025	Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)	137246	Vertebrata	Chordata	Chondrichthyes	Orectolobiformes	2705
+A0A8C3P7L2	ITPR	high	longest per vertebrate order	0	ITPR1	Chrysemys picta bellii (Western painted turtle) (Emys bellii)	8478	Vertebrata	Chordata		Testudines	2755
+A0A7K5GSQ7	ITPR	high	longest per vertebrate order	0	Itpr3	Chunga burmeisteri (Black-legged seriema)	1352770	Vertebrata	Chordata	Aves	Cariamiformes	2667
+A0ABD1JXB3	ITPR	high	longest per vertebrate order	0	ACEWY4_013771	Coilia grayii (Gray's grenadier anchovy)	363190	Vertebrata	Chordata	Actinopteri	Clupeiformes	2881
+A0A4U5UB83	ITPR	high	longest per vertebrate order	0	D9C73_005332	Collichthys lucidus (Big head croaker) (Sciaena lucida)	240159	Vertebrata	Chordata	Actinopteri		3038
+A0A9Q1CVA8	ITPR	high	longest per vertebrate order	0	COCON_G00229900	Conger conger (Conger eel) (Muraena conger)	82655	Vertebrata	Chordata	Actinopteri	Anguilliformes	3065
+A0A851LEI5	ITPR	high	longest per vertebrate order	0	Itpr3	Corythaeola cristata (Great blue turaco)	103954	Vertebrata	Chordata	Aves	Musophagiformes	2383
+A0A7K5I2R7	ITPR	high	longest per vertebrate order	0	Itpr3	Crotophaga sulcirostris (Groove-billed ani)	33598	Vertebrata	Chordata	Aves	Cuculiformes	2672
+A0A553PXC2	ITPR	high	longest per vertebrate order	0	DNTS_000065	Danionella cerebrum	2873325	Vertebrata	Chordata	Actinopteri	Cypriniformes	3258
+A0A8C4ILV8	ITPR	high	longest per vertebrate order	0	itpr1b	Dicentrarchus labrax (European seabass) (Morone labrax)	13489	Vertebrata	Chordata	Actinopteri		2784
+A0A8C4KAW9	ITPR	high	longest per vertebrate order	0		Dromaius novaehollandiae (Emu)	8790	Vertebrata	Chordata	Aves	Casuariiformes	2767
+A0A665X7W6	ITPR	high	longest per vertebrate order	0	LOC115043925	Echeneis naucrates (Live sharksucker)	173247	Vertebrata	Chordata	Actinopteri	Carangiformes	2736
+A0AC55D8Z7	ITPR	high	longest per vertebrate order	0	ITPR3	Echinops telfairi (Lesser hedgehog tenrec)	9371	Vertebrata	Chordata	Mammalia	Afrosoricida	2748
+A0A091JMH3	ITPR	high	longest per vertebrate order	0	Z169_04880	Egretta garzetta (Little egret)	188379	Vertebrata	Chordata	Aves	Pelecaniformes	2722
+A0AAD8ZI76	ITPR	high	longest per vertebrate order	0	P4O66_006475	Electrophorus voltai	2609070	Vertebrata	Chordata	Actinopteri	Gymnotiformes	2769
+A0A8C4PYR8	ITPR	high	longest per vertebrate order	0		Eptatretus burgeri (Inshore hagfish)	7764	Vertebrata	Chordata	Myxini	Myxiniformes	2627
+F6YA86	ITPR	high	longest per vertebrate order	0	ITPR1	Equus caballus (Horse)	9796	Vertebrata	Chordata	Mammalia	Perissodactyla	2749
+A0A8C4T454	ITPR	high	longest per vertebrate order	0	ITPR1	Erpetoichthys calabaricus (Rope fish) (Calamoichthys calabaricus)	27687	Vertebrata	Chordata	Cladistia	Polypteriformes	2740
+A0A7K8XHH6	ITPR	high	longest per vertebrate order	0	Itpr1	Eubucco bourcierii (red-headed barbet)	91767	Vertebrata	Chordata	Aves	Piciformes	2724
+A0A8C4UN02	ITPR	high	longest per vertebrate order	0		Falco tinnunculus (Common kestrel)	100819	Vertebrata	Chordata	Aves	Falconiformes	2770
+A0A8J6AEE6	ITPR	high	longest per vertebrate order	0	J0S82_013409	Galemys pyrenaicus (Iberian desman) (Pyrenean desman)	202257	Vertebrata	Chordata	Mammalia	Eulipotyphla	3338
+A0ABM0RGP6	ITPR	high	longest per vertebrate order	0	LOC103597698	Galeopterus variegatus (Malayan flying lemur) (Cynocephalus variegatus)	482537	Vertebrata	Chordata	Mammalia	Dermoptera	2610
+A0A8V0ZJT0	ITPR	high	longest per vertebrate order	0	ITPR1	Gallus gallus (Chicken)	9031	Vertebrata	Chordata	Aves	Galliformes	2779
+A0A6P8Q340	ITPR	high	longest per vertebrate order	0	ITPR1	Geotrypetes seraphini (Gaboon caecilian) (Caecilia seraphini)	260995	Vertebrata	Chordata	Amphibia	Gymnophiona	2719
+A0ABC9X9M5	ITPR	high	longest per vertebrate order	0	GRJ2_001904900	Grus japonensis (Japanese crane) (Red-crowned crane)	30415	Vertebrata	Chordata	Aves	Gruiformes	2712
+A0A851Z7G9	ITPR	high	longest per vertebrate order	0	Itpr3	Halcyon senegalensis	342381	Vertebrata	Chordata	Aves	Coraciiformes	2694
+A0AAE0Q2V1	ITPR	high	longest per vertebrate order	0	QTP70_023157	Hemibagrus guttatus	175788	Vertebrata	Chordata	Actinopteri	Siluriformes	3154
+A0A3Q2ZNF4	ITPR	medium	longest per vertebrate order	0		Hippocampus comes (Tiger tail seahorse)	109280	Vertebrata	Chordata	Actinopteri	Syngnathiformes	2026
+A0A8C5JQL5	ITPR	high	longest per vertebrate order	0		Junco hyemalis (Dark-eyed junco)	40217	Vertebrata	Chordata	Aves	Passeriformes	2900
+A0AAV2M5C6	ITPR	medium	longest per vertebrate order	0	KC01_LOCUS35397	Knipowitschia caucasica (Caucasian dwarf goby) (Pomatoschistus caucasicus)	637954	Vertebrata	Chordata	Actinopteri	Gobiiformes	2978
+A0A6G0J372	ITPR	high	longest per vertebrate order	0	D5F01_LYC02416	Larimichthys crocea (Large yellow croaker) (Pseudosciaena crocea)	215358	Vertebrata	Chordata	Actinopteri		2734
+A0A4W6FEP0	ITPR	high	longest per vertebrate order	0	ITPR1	Lates calcarifer (Barramundi) (Holocentrus calcarifer)	8187	Vertebrata	Chordata	Actinopteri		2745
+H3A1P5	ITPR	high	longest per vertebrate order	0	ITPR1	Latimeria chalumnae (Coelacanth)	7897	Vertebrata	Chordata		Coelacanthiformes	2725
+G3SRG2	ITPR	high	longest per vertebrate order	0	ITPR1	Loxodonta africana (African elephant)	9785	Vertebrata	Chordata	Mammalia	Proboscidea	2700
+A0A7N8XFT6	ITPR	high	longest per vertebrate order	0		Mastacembelus armatus (zig-zag eel)	205130	Vertebrata	Chordata	Actinopteri	Synbranchiformes	2726
+A0A9D3Q621	ITPR	high	longest per vertebrate order	0	MATL_G00075650	Megalops atlanticus (Tarpon) (Clupea gigantea)	7932	Vertebrata	Chordata	Actinopteri	Elopiformes	2782
+A0A8S4BH40	ITPR	high	longest per vertebrate order	0	MMEN_LOCUS16758	Menidia menidia (Atlantic silverside)	238744	Vertebrata	Chordata	Actinopteri	Atheriniformes	2783
+A0ACE1L864	ITPR	high	longest per vertebrate order	0	MERMERHAK_LOCUS17180	Merluccius merluccius (European hake)	8063	Vertebrata	Chordata	Actinopteri	Gadiformes	3324
+F6VQP7	ITPR	high	longest per vertebrate order	0	ITPR1	Monodelphis domestica (Gray short-tailed opossum)	13616	Vertebrata	Chordata	Mammalia	Didelphimorphia	2733
+A0A8U0RTG8	ITPR	high	longest per vertebrate order	0	ITPR3	Mustela putorius furo (European domestic ferret) (Mustela furo)	9669	Vertebrata	Chordata	Mammalia	Carnivora	2860
+A0AAN7MMK0	ITPR	high	longest per vertebrate order	0	QYF61_004063	Mycteria americana (Wood stork)	33587	Vertebrata	Chordata	Aves	Ciconiiformes	2726
+A0A668AT64	ITPR	high	longest per vertebrate order	0	LOC115359857	Myripristis murdjan (pinecone soldierfish)	586833	Vertebrata	Chordata	Actinopteri	Holocentriformes	2736
+A0A091S5A7	ITPR	high	longest per vertebrate order	0	N333_13397	Nestor notabilis (Kea)	176057	Vertebrata	Chordata	Aves	Psittaciformes	2753
+A0ACB7F0N6	ITPR	low	longest per vertebrate order	0	ITPR1.4	Nibea albiflora (Yellow drum) (Corvina albiflora)	240163	Vertebrata	Chordata	Actinopteri		120
+A0A8C6ZR43	ITPR	high	longest per vertebrate order	0	ITPR1	Nothoprocta perdicaria (Chilean tinamou) (Crypturus perdicarius)	30464	Vertebrata	Chordata	Aves	Tinamiformes	2731
+A0A7L2GDX7	ITPR	high	longest per vertebrate order	0	Itpr1	Nyctibius grandis (Great potoo)	48427	Vertebrata	Chordata	Aves	Nyctibiiformes	2686
+A0A7K8TMS5	ITPR	high	longest per vertebrate order	0	Itpr1_0	Oceanites oceanicus (Wilson's storm petrel) (Procellaria oceanica)	79653	Vertebrata	Chordata	Aves	Procellariiformes	2721
+A0A091VJR8	ITPR	high	longest per vertebrate order	0	N306_02092	Opisthocomus hoazin (Hoatzin) (Phasianus hoazin)	30419	Vertebrata	Chordata	Aves	Opisthocomiformes	2719
+A0A6I8NN70	ITPR	high	longest per vertebrate order	0	ITPR1	Ornithorhynchus anatinus (Duckbill platypus)	9258	Vertebrata	Chordata	Mammalia	Monotremata	2747
+A0AC54ZAE1	ITPR	high	longest per vertebrate order	0	ITPR1	Orycteropus afer afer	1230840	Vertebrata	Chordata	Mammalia	Tubulidentata	2748
+A0A5F9CAK2	ITPR	high	longest per vertebrate order	0	ITPR1	Oryctolagus cuniculus (Rabbit)	9986	Vertebrata	Chordata	Mammalia	Lagomorpha	2756
+A0A437DBY3	ITPR	high	longest per vertebrate order	0	OJAV_G00042510	Oryzias javanicus (Javanese ricefish) (Aplocheilus javanicus)	123683	Vertebrata	Chordata	Actinopteri	Beloniformes	2782
+A0A6P7IB24	ITPR	high	longest per vertebrate order	0	LOC114436047	Parambassis ranga (Indian glassy fish)	210632	Vertebrata	Chordata	Actinopteri		2767
+A0A1V4J217	ITPR	high	longest per vertebrate order	0	ITPR2	Patagioenas fasciata monilis	372326	Vertebrata	Chordata	Aves	Columbiformes	2724
+A0AAJ7U4X1	ITPR	high	longest per vertebrate order	0	LOC116952798	Petromyzon marinus (Sea lamprey)	7757	Vertebrata	Chordata	Hyperoartia	Petromyzontiformes	2838
+A0A6P5IST1	ITPR	high	longest per vertebrate order	0	ITPR1	Phascolarctos cinereus (Koala)	38626	Vertebrata	Chordata	Mammalia	Diprotodontia	2750
+A0AAV7SL23	ITPR	high	longest per vertebrate order	0	NDU88_005210	Pleurodeles waltl (Iberian ribbed newt)	8319	Vertebrata	Chordata	Amphibia	Caudata	2679
+A0A7L4GIG2	ITPR	high	longest per vertebrate order	0	Itpr3	Podargus strigoides (Tawny frogmouth) (Caprimulgus strigoides)	8905	Vertebrata	Chordata	Aves	Caprimulgiformes	2677
+A0A7L0SP58	ITPR	high	longest per vertebrate order	0	Itpr3	Podilymbus podiceps (Pied-billed grebe)	9252	Vertebrata	Chordata	Aves	Podicipediformes	2672
+A0ABS2YQ63	ITPR	high	longest per vertebrate order	0	Itpr1	Polyodon spathula (North American paddlefish) (Squalus spathula)	7913	Vertebrata	Chordata	Actinopteri	Acipenseriformes	2793
+L5KKD2	ITPR	high	longest per vertebrate order	0	PAL_GLEAN10015688	Pteropus alecto (Black flying fox)	9402	Vertebrata	Chordata	Mammalia	Chiroptera	3308
+A0A3B4CJG4	ITPR	high	longest per vertebrate order	0		Pygocentrus nattereri (Red-bellied piranha)	42514	Vertebrata	Chordata	Actinopteri	Characiformes	2778
+A0A093P5H9	ITPR	high	longest per vertebrate order	0	AS28_04633	Pygoscelis adeliae (Adelie penguin)	9238	Vertebrata	Chordata	Aves	Sphenisciformes	2701
+A0ABN9M2F5	ITPR	high	longest per vertebrate order	0	RIMI_LOCUS15858663	Ranitomeya imitator (mimic poison frog)	111125	Vertebrata	Chordata	Amphibia	Anura	2876
+A0A7K6RWC0	ITPR	high	longest per vertebrate order	0	Itpr3	Rhynochetos jubatus (kagu)	54386	Vertebrata	Chordata	Aves	Eurypygiformes	2643
+A0A672IUW3	ITPR	high	longest per vertebrate order	0	itpr1	Salarias fasciatus (Jewelled blenny) (Blennius fasciatus)	181472	Vertebrata	Chordata	Actinopteri	Blenniiformes	2753
+A0A1S3P2N3	ITPR	high	longest per vertebrate order	0	itpr1b	Salmo salar (Atlantic salmon)	8030	Vertebrata	Chordata	Actinopteri	Salmoniformes	2787
+A0A7N4PQI8	ITPR	high	longest per vertebrate order	0	ITPR2	Sarcophilus harrisii (Tasmanian devil) (Sarcophilus laniarius)	9305	Vertebrata	Chordata	Mammalia	Dasyuromorphia	2710
+A0ACF7CYY6	ITPR	high	longest per vertebrate order	0	ACER0C_018849	Sarotherodon galilaeus (mango tilapia)	8144	Vertebrata	Chordata	Actinopteri	Cichliformes	3080
+A0A8C9SFJ8	ITPR	high	longest per vertebrate order	0	itpr1b	Scleropages formosus (Asian bonytongue) (Osteoglossum formosum)	113540	Vertebrata	Chordata	Actinopteri	Osteoglossiformes	2772
+A0AAV1NH58	ITPR	high	longest per vertebrate order	0	FSCOSCO3_A016787	Scomber scombrus (Atlantic mackerel) (Scomber vernalis)	13677	Vertebrata	Chordata	Actinopteri	Scombriformes	2755
+A0ACB8WNY4	ITPR	high	longest per vertebrate order	1	L3Q82_007739	Scortum barcoo (barcoo grunter)	214431	Vertebrata	Chordata	Actinopteri	Centrarchiformes	3722
+A0A401PCL8	ITPR	high	longest per vertebrate order	0	scyTo_0005792	Scyliorhinus torazame (Cloudy catshark) (Catulus torazame)	75743	Vertebrata	Chordata	Chondrichthyes	Carcharhiniformes	2700
+A0AAV6QL79	ITPR	high	longest per vertebrate order	0	JOB18_024306	Solea senegalensis (Senegalese sole)	28829	Vertebrata	Chordata	Actinopteri	Pleuronectiformes	2800
+A0A671YC95	ITPR	high	longest per vertebrate order	0	LOC115582679	Sparus aurata (Gilthead sea bream)	8175	Vertebrata	Chordata	Actinopteri	Spariformes	2737
+A0A673C1I8	ITPR	high	longest per vertebrate order	0	itpr1b	Sphaeramia orbicularis (orbiculate cardinalfish)	375764	Vertebrata	Chordata	Actinopteri	Kurtiformes	2734
+A0A8D0GA44	ITPR	high	longest per vertebrate order	0		Sphenodon punctatus (Tuatara) (Hatteria punctata)	8508	Vertebrata	Chordata	Lepidosauria	Sphenodontia	2724
+A0A9Y4TZ72	ITPR	high	longest per vertebrate order	0	LOC103376586	Stegastes partitus (bicolor damselfish)	144197	Vertebrata	Chordata	Actinopteri		2744
+A0A093HD50	ITPR	high	longest per vertebrate order	0	N308_11477	Struthio camelus australis	441894	Vertebrata	Chordata	Aves	Struthioniformes	2724
+A0A7L3B3C3	ITPR	high	longest per vertebrate order	0	Itpr3	Syrrhaptes paradoxus (Pallas's sandgrouse)	302527	Vertebrata	Chordata	Aves	Pterocliformes	2652
+A0A5C6N671	ITPR	high	longest per vertebrate order	0	D4764_04G0008750	Takifugu flavidus (sansaifugu)	433684	Vertebrata	Chordata	Actinopteri	Tetraodontiformes	2817
+A0A6I9XMS9	ITPR	high	longest per vertebrate order	0	ITPR3	Thamnophis sirtalis	35019	Vertebrata	Chordata	Lepidosauria	Squamata	2792
+A0A2Y9RBL0	ITPR	high	longest per vertebrate order	0	ITPR1	Trichechus manatus latirostris (Florida manatee)	127582	Vertebrata	Chordata	Mammalia	Sirenia	2715
+A0A7L0EIB1	ITPR	high	longest per vertebrate order	0	Itpr3	Trogon melanurus (Black-tailed trogon)	56311	Vertebrata	Chordata	Aves	Trogoniformes	2613
+L9L474	ITPR	high	longest per vertebrate order	0	TREES_T100009679	Tupaia chinensis (Chinese tree shrew) (Tupaia belangeri chinensis)	246437	Vertebrata	Chordata	Mammalia	Scandentia	2646
+A0ABD0WQN1	ITPR	high	longest per vertebrate order	0	UPYG_G00173150	Umbra pygmaea (Eastern mudminnow)	75934	Vertebrata	Chordata	Actinopteri	Esociformes	2785
+A0A852KHV6	ITPR	low	longest per vertebrate order	0	Itpr1_1	Urocolius indicus (Red-faced mousebird) (Colius indicus)	458196	Vertebrata	Chordata	Aves	Coliiformes	288
+A0AAV1EQX6	ITPR	high	longest per vertebrate order	0	XNOV1_A034147	Xyrichtys novacula (Pearly razorfish) (Hemipteronotus novacula)	13765	Vertebrata	Chordata	Actinopteri	Labriformes	2807
+A0AAW1F2R9	ITPR	high	longest per vertebrate order	0	VZT92_013260	Zoarces viviparus (Viviparous eelpout) (Blennius viviparus)	48416	Vertebrata	Chordata	Actinopteri	Perciformes	2805
+A0A835TB45	ITPR	medium	longest per species	0	HXX76_003529	Chlamydomonas incerta	51695	Viridiplantae	Chlorophyta	Chlorophyceae	Chlamydomonadales	3182
+A0A2K3CTW4	ITPR	high	longest per species	0	CHLRE_16g665450v5	Chlamydomonas reinhardtii (Chlamydomonas smithii)	3055	Viridiplantae	Chlorophyta	Chlorophyceae	Chlamydomonadales	3210
+A0A836B9Y3	ITPR	medium	longest per species	0	HYH02_003409	Chlamydomonas schloesseri	2026947	Viridiplantae	Chlorophyta	Chlorophyceae	Chlamydomonadales	3219
+A0AAE0LDZ1	ITPR	medium	longest per species	1	CYMTET_10314	Cymbomonas tetramitiformis	36881	Viridiplantae	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	3375
+A0A835Y1X9	ITPR	medium	longest per species	0	HYH03_010506	Edaphochlamys debaryana	47281	Viridiplantae	Chlorophyta	Chlorophyceae	Chlamydomonadales	3268
+A0A150GRF6	ITPR	medium	longest per species	0	GPECTOR_9g418	Gonium pectorale (Green alga)	33097	Viridiplantae	Chlorophyta	Chlorophyceae	Chlamydomonadales	2580
+A0A8S1J4S2	ITPR	medium	longest per species	0	OSTQU699_LOCUS8069	Ostreobium quekettii	121088	Viridiplantae	Chlorophyta	Ulvophyceae	Bryopsidales	2446
+A0A9W6C1N2	ITPR	medium	longest per species	0	PLEST011099	Pleodorina starrii	330485	Viridiplantae	Chlorophyta	Chlorophyceae	Chlamydomonadales	3372
+A0A2J8AAQ9	ITPR	medium	longest per species	0	TSOC_003768	Tetrabaena socialis	47790	Viridiplantae	Chlorophyta	Chlorophyceae	Chlamydomonadales	2680
+A0ABQ5SNM9	ITPR	medium	longest per species	0	VaNZ11_016878	Volvox africanus	51714	Viridiplantae	Chlorophyta	Chlorophyceae	Chlamydomonadales	3236
+D8UKJ4	ITPR	medium	longest per species	0	VOLCADRAFT_121781	Volvox carteri f. nagariensis	3068	Viridiplantae	Chlorophyta	Chlorophyceae	Chlamydomonadales	3167
+A0A152A7I8	RYR	medium	longest per species	1	DLAC_01018	Tieghemostelium lacteum (Slime mold) (Dictyostelium lacteum)	361077	Amoebozoa	Evosea	Eumycetozoa	Dictyosteliales	2845
+A0A0D2WXI6	RYR	high	longest per species	1	CAOG_007989	Capsaspora owczarzaki (strain ATCC 30864)	595528	Eukaryota (other)		Filasterea		6625
+F2UC37	RYR	high	longest per species	0	PTSG_06153	Salpingoeca rosetta (Choanoflagellate)	946362	Eukaryota (other)		Choanoflagellata	Craspedida	5340
+A0A8B7ZN74	RYR	high	longest per species	0	LOC110986867	Acanthaster planci (Crown-of-thorns starfish)	133434	Metazoa (non-vertebrate)	Echinodermata	Asteroidea	Valvatida	5283
+A0A9P0MMS1	RYR	high	longest per species	0	ACAOBT_LOCUS34893	Acanthoscelides obtectus (Bean weevil) (Bruchus obtectus)	200917	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5142
+A0A812DS02	RYR	high	longest per species	0	SPHA_58076	Acanthosepion pharaonis (Pharaoh cuttlefish) (Sepia pharaonis)	158019	Metazoa (non-vertebrate)	Mollusca	Cephalopoda	Sepiida	2912
+A0A914EFK3	RYR	high	longest per species	0		Acrobeloides nanus	290746	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	1883
+A0A836FDY8	RYR	high	longest per species	0	Ryr	Acromyrmex charruanus	2715315	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5128
+A0A836FFX1	RYR	high	longest per species	0	Ryr	Acromyrmex heyeri	230685	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5136
+A0A836JHR0	RYR	high	longest per species	0	Ryr_1	Acromyrmex insinuator	230686	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	4697
+A0A8R2H7N0	RYR	high	longest per species	0		Acyrthosiphon pisum (Pea aphid)	7029	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5101
+A0A815JFZ8	RYR	high	longest per species	0	XAT740_LOCUS33116	Adineta ricciae (Rotifer)	249248	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Adinetida	4154
+A0A813NCM0	RYR	high	longest per species	0	QVE165_LOCUS19907	Adineta steineri	433720	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Adinetida	5242
+A0A2H4QG92	RYR	high	longest per species	0	RyR1	Adoxophyes orana (Summer fruit tortrix moth)	480707	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5113
+A0A6I8T8R3	RYR	high	longest per species	0	5579122	Aedes aegypti (Yellowfever mosquito) (Culex aegypti)	7159	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5124
+A0ABM1ZYA0	RYR	high	longest per species	0		Aedes albopictus (Asian tiger mosquito) (Stegomyia albopicta)	7160	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5013
+A0A7F5QZ06	RYR	high	longest per species	0	LOC108744616	Agrilus planipennis (Emerald ash borer) (Agrilus marcopoli)	224129	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5123
+A0A8J2MA65	RYR	medium	longest per species	0	AFUS01_LOCUS45220	Allacma fusca	39272	Metazoa (non-vertebrate)	Arthropoda	Collembola	Symphypleona	1602
+A0AAQ4E921	RYR	high	longest per species	0	V5799_025594	Amblyomma americanum (Lone star tick)	6943	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Ixodida	1288
+A0A6A4WJ60	RYR	high	longest per species	0	RyR_0	Amphibalanus amphitrite (Striped barnacle) (Balanus amphitrite)	1232801	Metazoa (non-vertebrate)	Arthropoda	Thecostraca	Balanomorpha	4233
+A0AAN0JF00	RYR	high	longest per species	0		Amphimedon queenslandica (Sponge)	400682	Metazoa (non-vertebrate)	Porifera	Demospongiae	Haplosclerida	4753
+A0A368H5X8	RYR	high	longest per species	0	ANCCAN_03288	Ancylostoma caninum (Dog hookworm)	29170	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2871
+A0A016U0Q9	RYR	high	longest per species	0	Acey_s0063.g3426	Ancylostoma ceylanicum	53326	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3941
+A0A0C2GYJ8	RYR	high	longest per species	0	ANCDUO_07507	Ancylostoma duodenale	51022	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2116
+A0A158P902	RYR	high	longest per species	0		Angiostrongylus cantonensis (Rat lungworm)	6313	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	4798
+A0A158PDE3	RYR	high	longest per species	0	ACOC_LOCUS575	Angiostrongylus costaricensis (Nematode worm)	334426	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	4328
+A0A0M3IZX2	RYR	medium	longest per species	0	ASIM_LOCUS705	Anisakis simplex (Herring worm)	6269	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	513
+A0A182FUC1	RYR	high	longest per species	0		Anopheles albimanus (New world malaria mosquito)	7167	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5119
+A0A182I5V4	RYR	high	longest per species	0		Anopheles arabiensis (Mosquito)	7173	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5081
+A0AAG5DRS8	RYR	high	longest per species	0		Anopheles atroparvus (European mosquito)	41427	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5111
+A0A182JT73	RYR	high	longest per species	0		Anopheles christyi	43041	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	4995
+A0A6E8W3D1	RYR	high	longest per species	0		Anopheles coluzzii (African malaria mosquito)	1518534	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5109
+A0A182MMK6	RYR	high	longest per species	0		Anopheles culicifacies	139723	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5039
+W5JDV8	RYR	high	longest per species	0		Anopheles darlingi (Mosquito)	43151	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5004
+A0A182ND92	RYR	high	longest per species	0		Anopheles dirus	7168	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5078
+A0A182PDB6	RYR	high	longest per species	0		Anopheles epiroticus	199890	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5107
+A0A182QKY2	RYR	high	longest per species	0		Anopheles farauti	69004	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5013
+A0A1S4H4U6	RYR	high	longest per species	0		Anopheles gambiae (African malaria mosquito)	7165	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5111
+A0A182TIU4	RYR	high	longest per species	0		Anopheles melas	34690	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	4934
+A0A182UXB4	RYR	high	longest per species	0		Anopheles merus (Mosquito)	30066	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	4955
+A0A182WFR7	RYR	high	longest per species	0		Anopheles minimus	112268	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5113
+A0A903Z5W0	RYR	high	longest per species	0		Anopheles quadriannulatus (Mosquito)	34691	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5106
+A0A084WAS3	RYR	high	longest per species	0		Anopheles sinensis (Mosquito)	74873	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5077
+A0A182Y6U7	RYR	high	longest per species	0		Anopheles stephensi (Indo-Pakistan malaria mosquito)	30069	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5085
+A0ACE0G7E8	RYR	high	longest per species	0	ANTPLA_LOCUS10220	Anthophora plagiata	597819	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5492
+A0A835CM71	RYR	high	longest per species	0	HCN44_008223	Aphidius gifuensis (Parasitoid wasp)	684658	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5145
+A0A0H3XSN1	RYR	high	longest per species	0	RyR	Aphis citricidus (Brown citrus aphid) (Toxoptera citricida)	223852	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5104
+A0A6G0Z6V5	RYR	high	longest per species	0	FWK35_00003306	Aphis craccivora (Cowpea aphid)	307492	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	3427
+A0A6G0U418	RYR	high	longest per species	0	AGLY_002320	Aphis glycines (Soybean aphid)	307491	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5104
+A0A9P0J9A2	RYR	high	longest per species	0	APHIGO_LOCUS8226	Aphis gossypii (Cotton aphid)	80765	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5104
+A0A2A3ESZ8	RYR	high	longest per species	0	APICC_03182	Apis cerana cerana (Oriental honeybee)	94128	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5051
+A0A7M7GWS7	RYR	high	longest per species	0	LOC408680	Apis mellifera (Honeybee)	7460	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5142
+A0ABM1W3T6	RYR	high	longest per species	0	LOC101858456	Aplysia californica (California sea hare)	6500	Metazoa (non-vertebrate)	Mollusca	Gastropoda	Aplysiida	2135
+A0A8S9WWE8	RYR	high	longest per species	0	GE061_005499	Apolygus lucorum (Small green plant bug) (Lygocoris lucorum)	248454	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	2639
+A0A2G8L782	RYR	medium	longest per species	0	BSL78_07018	Apostichopus japonicus (Japanese spiky sea cucumber) (Stichopus japonicus)	307972	Metazoa (non-vertebrate)	Echinodermata	Holothuroidea	Aspidochirotida	1723
+A0AAN7SKY1	RYR	high	longest per species	0	RN001_015072	Aquatica leii	1421715	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5086
+A0A4Y2G0P6	RYR	high	longest per species	0	RyR_3	Araneus ventricosus (Orbweaver spider) (Epeira ventricosa)	182803	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	4723
+A0A8S1BAV5	RYR	high	longest per species	0	APLA_LOCUS15128	Arctia plantaginis (Wood tiger moth) (Phalaena plantaginis)	874455	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	3315
+A0A8T0EY51	RYR	high	longest per species	0	HNY73_013474	Argiope bruennichi (Wasp spider) (Aranea bruennichi)	94029	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	5244
+A0AAV8Z8B1	RYR	high	longest per species	0	NQ318_022100	Aromia moschata	1265417	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2215
+A0AA88HIW1	RYR	high	longest per species	0	QYM36_016513	Artemia franciscana (Brine shrimp) (Artemia sanfranciscana)	6661	Metazoa (non-vertebrate)	Arthropoda	Branchiopoda	Anostraca	2646
+A0A9J2Q184	RYR	high	longest per species	0		Ascaris lumbricoides (Giant roundworm)	6252	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	1973
+F1KPF8	RYR	high	longest per species	0		Ascaris suum (Pig roundworm) (Ascaris lumbricoides)	6253	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	4959
+A0A158P0A3	RYR	high	longest per species	0	105626523	Atta cephalotes (Leafcutter ant)	12957	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5126
+A0A195B655	RYR	high	longest per species	0	ALC53_09852	Atta colombica	520822	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5074
+A0ABM3JCZ7	RYR	high	longest per species	0	LOC105232171	Bactrocera dorsalis (Oriental fruit fly) (Dacus dorsalis)	27457	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5142
+A0ABD0L2J9	RYR	high	longest per species	0	BaRGS_00015256	Batillaria attramentaria	370345	Metazoa (non-vertebrate)	Mollusca	Gastropoda		3798
+I3VR33	RYR	high	longest per species	0		Bemisia tabaci (Sweetpotato whitefly) (Aleurodes tabaci)	7038	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5142
+A0ABM3LVF0	RYR	high	longest per species	0	LOC112049806	Bicyclus anynana (Squinting bush brown butterfly)	110368	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5150
+A0A9W2ZVE5	RYR	high	longest per species	0	LOC106054240	Biomphalaria glabrata (Bloodfluke planorb) (Freshwater snail)	6526	Metazoa (non-vertebrate)	Mollusca	Gastropoda		5224
+A0AAD8B2N2	RYR	high	longest per species	0	Bpfe_023625	Biomphalaria pfeifferi (Bloodfluke planorb) (Freshwater snail)	112525	Metazoa (non-vertebrate)	Mollusca	Gastropoda		4080
+A0A9Q0RJZ4	RYR	high	longest per species	0	RDWZM_008333	Blomia tropicalis (Mite)	40697	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Sarcoptiformes	5152
+A0A6P8LNL7	RYR	high	longest per species	0	LOC117206696	Bombus bifarius	103933	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5158
+A0A6P8L8T1	RYR	high	longest per species	0	LOC100749661	Bombus impatiens (Bumblebee)	132113	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5158
+A0A9C6SJC6	RYR	high	longest per species	0	LOC100643070	Bombus terrestris (Buff-tailed bumblebee) (Apis terrestris)	30195	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5158
+A0A6J3KG89	RYR	high	longest per species	0	LOC117234761	Bombus vosnesenskii	207650	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	4060
+A0A6J2KJN8	RYR	high	longest per species	0	LOC114250644	Bombyx mandarina (Wild silk moth) (Wild silkworm)	7092	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5161
+A0A8R2M7J7	RYR	high	longest per species	0		Bombyx mori (Silk moth)	7091	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5167
+A0A813MD17	RYR	high	longest per species	0	OXX778_LOCUS1568	Brachionus calyciflorus	104777	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Ploima	5152
+A0A3M7Q4L9	RYR	medium	longest per species	0	BpHYR1_032501	Brachionus plicatilis (Marine rotifer) (Brachionus muelleri)	10195	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Ploima	1626
+A0A6P4XJ96	RYR	high	longest per species	0	LOC109464113	Branchiostoma belcheri (Amphioxus)	7741	Metazoa (non-vertebrate)	Chordata	Leptocardii	Amphioxiformes	4960
+A0A9J7MUA9	RYR	high	longest per species	0	LOC118419221	Branchiostoma floridae (Florida lancelet) (Amphioxus)	7739	Metazoa (non-vertebrate)	Chordata	Leptocardii	Amphioxiformes	4992
+A0A8J9ZXK5	RYR	high	longest per species	0	RYR2	Branchiostoma lanceolatum (Common lancelet) (Amphioxus lanceolatum)	7740	Metazoa (non-vertebrate)	Chordata	Leptocardii	Amphioxiformes	4975
+A0A9P0ARV5	RYR	high	longest per species	0	MELIAE_LOCUS384	Brassicogethes aeneus (Rape pollen beetle) (Meligethes aeneus)	1431903	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5109
+A0A8J9VTZ2	RYR	high	longest per species	0	BINO364_LOCUS4949	Brenthis ino (lesser marbled fritillary)	405034	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5139
+A0A1P6C3Y0	RYR	high	longest per species	0		Brugia malayi (Filarial nematode worm)	6279	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5034
+A0A158PQQ2	RYR	high	longest per species	0	BPAG_LOCUS8158	Brugia pahangi (Filarial nematode worm)	6280	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5139
+A0A0R3QJC6	RYR	high	longest per species	0	BTMF_LOCUS5758	Brugia timori	42155	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3602
+A0A7J7KHS8	RYR	medium	longest per species	1	EB796_004477	Bugula neritina (Brown bryozoan) (Sertularia neritina)	10212	Metazoa (non-vertebrate)	Bryozoa	Gymnolaemata	Cheilostomatida	2099
+A0A811LFJ3	RYR	high	longest per species	0	BOKJ2_LOCUS11826	Bursaphelenchus okinawaensis	465554	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5318
+A0A7I8XKB2	RYR	high	longest per species	0	BXYJ_LOCUS10953	Bursaphelenchus xylophilus (Pinewood nematode worm) (Aphelenchoides xylophilus)	6326	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5250
+A0A9P1N8E4	RYR	high	longest per species	0	CAMP_LOCUS14568	Caenorhabditis angaria	860376	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5212
+A0A8S1I045	RYR	high	longest per species	0	CAUJ_LOCUS15469	Caenorhabditis auriculariae	2777116	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3871
+A0A8S1E5U6	RYR	high	longest per species	0	CBOVIS_LOCUS2262	Caenorhabditis bovis	2654633	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5259
+G0MY32	RYR	high	longest per species	0	Cbn-unc-68	Caenorhabditis brenneri (Nematode worm)	135651	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5370
+A8XUM8	RYR	high	longest per species	1	unc-68	Caenorhabditis briggsae	6238	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	6513
+A0A2C9C3E8	RYR	high	longest per species	0	unc-68	Caenorhabditis elegans	6239	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5202
+A0A8R1HP75	RYR	high	longest per species	0		Caenorhabditis japonica	281687	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5076
+A0A261BHR6	RYR	high	longest per species	0	FL83_15641	Caenorhabditis latens	1503980	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5209
+A0A2G5TLD0	RYR	high	longest per species	0	Cni-unc-68	Caenorhabditis nigoni	1611254	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3896
+A0A260YZI1	RYR	high	longest per species	0	FL82_11448	Caenorhabditis remanei (Caenorhabditis vulgaris)	31234	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5269
+A0A1I7T9I4	RYR	high	longest per species	0		Caenorhabditis tropicalis	1561998	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2979
+A0AAV4NLR5	RYR	high	longest per species	0	RyR	Caerostris darwini	1538125	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	4311
+A0AAV4Y703	RYR	high	longest per species	0	RyR	Caerostris extrusa (Bark spider) (Caerostris bankana)	172846	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	1514
+A0ACE1DKF8	RYR	high	longest per species	0	CDAUBV1_LOCUS16675	Calicophoron daubneyi (Rumen fluke) (Paramphistomum daubneyi)	300641	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Plagiorchiida	5674
+A0A653DA39	RYR	high	longest per species	0	CALMAC_LOCUS15312	Callosobruchus maculatus (Southern cowpea weevil) (Pulse bruchid)	64391	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2381
+E2AGR1	RYR	high	longest per species	0	EAG_04785	Camponotus floridanus (Florida carpenter ant)	104421	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	3132
+X1Z8I7	RYR	high	longest per species	1		Capitella teleta (Polychaete worm)	283909	Metazoa (non-vertebrate)	Annelida	Polychaeta		5038
+A0AAW2FGZ5	RYR	high	longest per species	0	PUN28_010669	Cardiocondyla obscurior	286306	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5136
+A0A0H4P5L6	RYR	high	longest per species	0		Carposina sasakii (Peach fruit moth) (Carposina niponensis)	252295	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5134
+A0AAJ7CFC2	RYR	high	longest per species	0	LOC107274666	Cephus cinctus (Wheat stem sawfly)	211228	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5147
+A0AAJ7N459	RYR	high	longest per species	0	LOC108623053	Ceratina calcarata	156304	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5153
+W8B6P9	RYR	high	longest per species	0	RY44	Ceratitis capitata (Mediterranean fruit fly) (Tephritis capitata)	7213	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5128
+A0AAJ6YF89	RYR	high	longest per species	0	LOC105361468	Ceratosolen solmsi marchali	326594	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5090
+A0A8J2LX31	RYR	high	longest per species	0	CJOHNSTONI_LOCUS879	Cercopithifilaria johnstoni	2874296	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5013
+A0A9N9MGQ0	RYR	high	longest per species	0	CEUTPL_LOCUS2435	Ceutorhynchus assimilis (cabbage seed weevil)	467358	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5124
+A0AAW0YJS6	RYR	high	longest per species	0	OTU49_010995	Cherax quadricarinatus (Australian red claw crayfish)	27406	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	5066
+A0A059XHF1	RYR	high	longest per species	0	RyR	Chilo suppressalis (Asiatic rice borer moth)	168631	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5133
+A0A9N9RUB9	RYR	high	longest per species	0	CHIRRI_LOCUS6670	Chironomus riparius	315576	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5105
+A0ACC0KBC1	RYR	high	longest per species	0	MSG28_015736	Choristoneura fumiferana (Spruce budworm moth) (Archips fumiferana)	7141	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	3625
+A0A9P0BYQ2	RYR	high	longest per species	0	CINC_LOCUS8343	Chrysodeixis includens (Soybean looper) (Pseudoplusia includens)	689277	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	3766
+A0ABD2QM95	RYR	high	longest per species	0	RYR3_1	Cichlidogyrus casuarinus	1844966	Metazoa (non-vertebrate)	Platyhelminthes	Monogenea	Dactylogyridea	3114
+A0A8I6SMR1	RYR	high	longest per species	0		Cimex lectularius (Bed bug) (Acanthia lectularia)	79782	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5121
+A0A5E4LY32	RYR	high	longest per species	0	CINCED_3A010629	Cinara cedri	506608	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	3669
+H2XSF3	RYR	high	longest per species	0		Ciona intestinalis (Transparent sea squirt) (Ascidia intestinalis)	7719	Metazoa (non-vertebrate)	Chordata	Ascidiacea	Phlebobranchia	5075
+H2Y884	RYR	high	longest per species	0		Ciona savignyi (Pacific transparent sea squirt)	51511	Metazoa (non-vertebrate)	Chordata	Ascidiacea	Phlebobranchia	5011
+A0ABP0GL45	RYR	high	longest per species	0	CVLEPA_LOCUS24856	Clavelina lepadiformis (Light-bulb sea squirt) (Ascidia lepadiformis)	159417	Metazoa (non-vertebrate)	Chordata	Ascidiacea	Aplousobranchia	5090
+A0A8S1C2V6	RYR	high	longest per species	0	CLODIP_2_CD14363	Cloeon dipterum	197152	Metazoa (non-vertebrate)	Arthropoda	Insecta	Ephemeroptera	5116
+A0A8T1LXK5	RYR	high	longest per species	0	CSKR_103171	Clonorchis sinensis (Chinese liver fluke)	79923	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Opisthorchiida	5698
+A0A1J1IT56	RYR	high	longest per species	0	CLUMA_CG014907	Clunio marinus	568069	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	6190
+I1XB02	RYR	high	longest per species	0	RyR	Cnaphalocrocis medinalis (Rice leaffolder moth)	437488	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5087
+A0A6L2Q4W7	RYR	high	longest per species	0	Cfor_08988	Coptotermes formosanus (Formosan subterranean termite)	36987	Metazoa (non-vertebrate)	Arthropoda	Insecta	Blattodea	4766
+A0ABY6K664	RYR	high	longest per species	0	LAZ67_3000352	Cordylochernes scorpioides	51811	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Pseudoscorpiones	1255
+A0A8J2HCS1	RYR	high	longest per species	0	HICCMSTLAB_LOCUS7171	Cotesia congregata (Parasitoid wasp) (Apanteles congregatus)	51543	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5056
+A0AAV7I734	RYR	high	longest per species	0	KQX54_004882	Cotesia glomerata (Lepidopteran parasitic wasp) (Apanteles glomeratus)	32391	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	4857
+A0A8J5QYZ6	RYR	high	longest per species	0	G9C98_003424	Cotesia typhae	2053667	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	4885
+A0A8B8DQA7	RYR	high	longest per species	0	LOC111128529	Crassostrea virginica (Eastern oyster)	6565	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Ostreida	5210
+A0ABD2P1J4	RYR	high	longest per species	0	HHI36_018934	Cryptolaemus montrouzieri	559131	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5108
+A0A2J7QMF8	RYR	high	longest per species	0	B7P43_G10849	Cryptotermes secundus	105785	Metazoa (non-vertebrate)	Arthropoda	Insecta	Blattodea	2487
+A0ABD1DFM7	RYR	high	longest per species	0	pipiens_008938	Culex pipiens pipiens (Northern house mosquito)	38569	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5051
+B0W2H2	RYR	medium	longest per species	0	6032343	Culex quinquefasciatus (Southern house mosquito) (Culex pungens)	7176	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	1339
+T1E1N4	RYR	high	longest per species	0		Cupiennius salei (American wandering spider)	6928	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	5056
+A0ACF6EIU8	RYR	high	longest per species	0	WDU94_007794	Cyamophila willieti	2604842	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	2264
+A0AA36DST8	RYR	high	longest per species	0	CYNAS_LOCUS4082	Cylicocyclus nassatus (Nematode worm)	53992	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5216
+A0A151K2J5	RYR	high	longest per species	0	ALC62_15196	Cyphomyrmex costatus	456900	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5133
+A0A8J2QY98	RYR	high	longest per species	0	DCHRY22_LOCUS10234	Danaus chrysippus (African queen)	151541	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	3237
+A0A212F8V6	RYR	high	longest per species	0	KGM_211070	Danaus plexippus plexippus	278856	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	4951
+A0A8J2W1B1	RYR	high	longest per species	0	DGAL_LOCUS3205	Daphnia galeata	27404	Metazoa (non-vertebrate)	Arthropoda	Branchiopoda	Diplostraca	5083
+A0ABQ9ZR46	RYR	high	longest per species	0	OUZ56_030163	Daphnia magna	35525	Metazoa (non-vertebrate)	Arthropoda	Branchiopoda	Diplostraca	5172
+E9FTU9	RYR	high	longest per species	0	DAPPUDRAFT_310496	Daphnia pulex (Water flea)	6669	Metazoa (non-vertebrate)	Arthropoda	Branchiopoda	Diplostraca	5119
+A0AAD5L6S9	RYR	high	longest per species	0	GHT06_016909	Daphnia sinensis	1820382	Metazoa (non-vertebrate)	Arthropoda	Branchiopoda	Diplostraca	5164
+A0A7R8WZ42	RYR	high	longest per species	0	DSTB1V02_LOCUS927	Darwinula stevensoni	69355	Metazoa (non-vertebrate)	Arthropoda	Ostracoda	Podocopida	4163
+A0AAR5QBW0	RYR	high	longest per species	0		Dendroctonus ponderosae (Mountain pine beetle)	77166	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5120
+A0ACC1CG49	RYR	high	longest per species	0	K1T71_013922	Dendrolimus kikuchii	765133	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	4995
+A0ACB8C567	RYR	high	longest per species	0	HPB49_020194	Dermacentor silvarum (Tick)	543639	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Ixodida	1679
+A0ACM7X729	RYR	high	longest per species	0	RyR	Dermacentor variabilis (American dog tick)	34621	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Ixodida	5213
+A0A922HHF9	RYR	high	longest per species	0	RYR2_1	Dermatophagoides farinae (American house dust mite)	6954	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Sarcoptiformes	3322
+A0ABQ8IR18	RYR	high	longest per species	0	RYR2	Dermatophagoides pteronyssinus (European house dust mite)	6956	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Sarcoptiformes	5324
+A0A9N9TDL6	RYR	high	longest per species	0	DIABBA_LOCUS13617	Diabrotica balteata (Banded cucumber beetle)	107213	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5121
+A0ABM5L3U1	RYR	high	longest per species	0		Diabrotica virgifera virgifera (western corn rootworm)	50390	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5130
+A0A141BN13	RYR	high	longest per species	0	RyR	Dialeurodes citri (Citrus whitefly) (Aleurodes citri)	298404	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5126
+A0A1S4EE60	RYR	high	longest per species	0	LOC103511157	Diaphorina citri (Asian citrus psyllid)	121845	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	3137
+A0A9N9R5I0	RYR	high	longest per species	0	DIATSA_LOCUS7660	Diatraea saccharalis (sugarcane borer)	40085	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5122
+A0A3P7KV74	RYR	medium	longest per species	0	DILT_LOCUS4696	Dibothriocephalus latus (Fish tapeworm) (Diphyllobothrium latum)	60516	Metazoa (non-vertebrate)	Platyhelminthes	Cestoda	Diphyllobothriidea	803
+A0A0D8Y979	RYR	medium	longest per species	0	DICVIV_00331	Dictyocaulus viviparus (Bovine lungworm)	29172	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	1335
+A0A813QCU3	RYR	high	longest per species	0	GPM918_LOCUS1611	Didymodactylos carnosus	1234261	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Philodinida	5233
+A0A7I8W5Y9	RYR	high	longest per species	0	DGYR_LOCUS11565	Dimorphilus gyrociliatus	2664684	Metazoa (non-vertebrate)	Annelida	Polychaeta		1982
+A0A6P3XEL1	RYR	high	longest per species	0	LOC106745598	Dinoponera quadriceps (South American ant)	609295	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5107
+A0A3S3QRZ4	RYR	high	longest per species	0	B4U79_08199	Dinothrombium tinctorium	1965070	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Trombidiformes	5145
+A0AAD8EPN1	RYR	high	longest per species	0	L9F63_011316	Diploptera punctata (Pacific beetle cockroach)	6984	Metazoa (non-vertebrate)	Arthropoda	Insecta	Blattodea	1798
+A0A2A2JM86	RYR	high	longest per species	0	WR25_23787	Diploscapter pachys	2018661	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	4249
+A0AAD4R815	RYR	high	longest per species	0	DdX_03476	Ditylenchus destructor	166010	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5178
+A0A915DIR8	RYR	high	longest per species	0		Ditylenchus dipsaci	166011	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	1855
+A0A3P7SYB0	RYR	high	longest per species	0	DME_LOCUS9899	Dracunculus medinensis (Guinea worm)	318479	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	4014
+A0A9C6W5B0	RYR	high	longest per species	0	LOC117568791	Drosophila albomicans (Fruit fly)	7291	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5148
+B3MFE1	RYR	high	longest per species	0	Dana\GF12384	Drosophila ananassae (Fruit fly)	7217	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5106
+A0ABM1PIB9	RYR	high	longest per species	0	LOC108616347	Drosophila arizonae (Fruit fly)	7263	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5149
+A0A0Q5WNI3	RYR	high	longest per species	0	Dere\GG23389	Drosophila erecta (Fruit fly)	7220	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5134
+B4JVD7	RYR	high	longest per species	0	Dgri\GH23101	Drosophila grimshawi (Hawaiian fruit fly) (Idiomyia grimshawi)	7222	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5174
+A0A3B0J281	RYR	high	longest per species	0	DGUA_6G002971	Drosophila guanche (Fruit fly)	7266	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5142
+A0A9P9YFB4	RYR	high	longest per species	0	M5D96_011493	Drosophila gunungcola (fruit fly)	103775	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5165
+A0A6J1LN04	RYR	high	longest per species	0	LOC111598039	Drosophila hydei (Fruit fly)	7224	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5132
+A0ABM4G9K7	RYR	high	longest per species	0	RyR	Drosophila kikkawai (Fruit fly)	30033	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5117
+A0A6J2SWD8	RYR	high	longest per species	0	LOC115619985	Drosophila lebanonensis (Fruit fly) (Scaptodrosophila lebanonensis)	7225	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5133
+A0AAU9G7M0	RYR	high	longest per species	0	DMAD_03051	Drosophila madeirensis (Fruit fly)	30013	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5148
+A0A6P8K2C8	RYR	high	longest per species	0	LOC117138542	Drosophila mauritiana (Fruit fly)	7226	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5135
+A0A0B4K719	RYR	high	longest per species	0	RyR	Drosophila melanogaster (Fruit fly)	7227	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5134
+A0A0Q9XB63	RYR	high	longest per species	0	Dmoj\GI18926	Drosophila mojavensis (Fruit fly)	7230	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5137
+A0A484BQ74	RYR	high	longest per species	0	AWZ03_002651	Drosophila navojoa (Fruit fly)	7232	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5144
+B4GGJ5	RYR	medium	longest per species	0	Dper\GL17126	Drosophila persimilis (Fruit fly)	7234	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	1184
+A0A6I8VTB1	RYR	high	longest per species	0	RyR	Drosophila pseudoobscura pseudoobscura (Fruit fly)	46245	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5143
+A0A6P4FG33	RYR	high	longest per species	0	108049608	Drosophila rhopaloa (Fruit fly)	1041015	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5130
+A0AAD4K9G6	RYR	high	longest per species	0	KR093_010363	Drosophila rubida	30044	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5131
+B4HSA0	RYR	high	longest per species	0	Dsec\GM21070	Drosophila sechellia (Fruit fly)	7238	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3814
+B4QG94	RYR	high	longest per species	0	Dsim\GD10606	Drosophila simulans (Fruit fly)	7240	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3487
+A0AB39ZTW8	RYR	high	longest per species	0	RyR	Drosophila suzukii (Spotted-wing drosophila fruit fly)	28584	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5135
+A0A0Q9W2M0	RYR	high	longest per species	0	Dvir\GJ21297	Drosophila virilis (Fruit fly)	7244	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5143
+A0A0Q9X0Z3	RYR	high	longest per species	0	Dwil\GK20678	Drosophila willistoni (Fruit fly)	7260	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5142
+A0A0R1DMC8	RYR	high	longest per species	0	Dyak\GE19231	Drosophila yakuba (Fruit fly)	7245	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5146
+A0A154NXT6	RYR	high	longest per species	0	WN55_02786	Dufourea novaeangliae (Sweat bee)	178035	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	4734
+A0A915EYX6	RYR	high	longest per species	1		Echinococcus canadensis	519352	Metazoa (non-vertebrate)	Platyhelminthes	Cestoda	Cyclophyllidea	6373
+W6U4N9	RYR	high	longest per species	0	EGR_09047	Echinococcus granulosus (Hydatid tapeworm)	6210	Metazoa (non-vertebrate)	Platyhelminthes	Cestoda	Cyclophyllidea	3636
+A0A068Y0W3	RYR	high	longest per species	0	EmuJ_000544400	Echinococcus multilocularis (Fox tapeworm)	6211	Metazoa (non-vertebrate)	Platyhelminthes	Cestoda	Cyclophyllidea	4760
+A0A183AK78	RYR	high	longest per species	0	ECPE_LOCUS7363	Echinostoma caproni	27848	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Plagiorchiida	1774
+A0A158Q797	RYR	high	longest per species	0		Elaeophora elaphi	1147741	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5055
+A0A3S1B3Q2	RYR	medium	longest per species	0	EGW08_017975	Elysia chlorotica (Eastern emerald elysia) (Sea slug)	188477	Metazoa (non-vertebrate)	Mollusca	Gastropoda		1126
+A0AAE0Y8B9	RYR	high	longest per species	1	RRG08_000604	Elysia crispata (lettuce slug)	231223	Metazoa (non-vertebrate)	Mollusca	Gastropoda		5260
+A0AAV4GNW6	RYR	high	longest per species	0	ElyMa_002480000	Elysia marginata	1093978	Metazoa (non-vertebrate)	Mollusca	Gastropoda		1287
+A0A0N4V1U6	RYR	medium	longest per species	0	EVEC_LOCUS3651	Enterobius vermicularis (Human pinworm)	51028	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2974
+A0ACC2N2H0	RYR	high	longest per species	0	QAD02_007004	Eretmocerus hayati	131215	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5019
+A0A4C1VKE3	RYR	high	longest per species	0	RyR	Eumeta variegata (Bagworm moth) (Eumeta japonica)	151549	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	3532
+A0AAU9UM41	RYR	high	longest per species	0	EEDITHA_LOCUS13799	Euphydryas editha (Edith's checkerspot)	104508	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	3253
+A0A1Y3B5P7	RYR	high	longest per species	0	BLA29_000325	Euroglyphus maynei (Mayne's house dust mite)	6958	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Sarcoptiformes	2355
+A0AAV8W0J6	RYR	high	longest per species	0	NQ315_006545	Exocentrus adspersus	1586481	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2680
+A0A504YGJ9	RYR	high	longest per species	0	FGIG_03553	Fasciola gigantica (Giant liver fluke)	46835	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Plagiorchiida	5566
+A0A4E0RMD6	RYR	high	longest per species	0	D915_002172	Fasciola hepatica (Liver fluke)	6192	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Plagiorchiida	5599
+A0A8E0VKM4	RYR	high	longest per species	0	FBUS_04555	Fasciolopsis buskii	27845	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Plagiorchiida	5541
+A0A226ESW6	RYR	high	longest per species	0	Fcan01_06170	Folsomia candida (Springtail)	158441	Metazoa (non-vertebrate)	Arthropoda	Collembola	Entomobryomorpha	3178
+A0A9R1TY94	RYR	high	longest per species	0	RyR	Fopius arisanus	64838	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5124
+A0ABQ7S901	RYR	high	longest per species	0	RyR	Fragariocoptes setiger	1670756	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Trombidiformes	6761
+A0AAE1GY24	RYR	high	longest per species	0	KUF71_021040	Frankliniella fusca	407009	Metazoa (non-vertebrate)	Arthropoda	Insecta	Thysanoptera	5165
+A0A9C6U8W4	RYR	high	longest per species	0	LOC113213149	Frankliniella occidentalis (Western flower thrips) (Euthrips occidentalis)	133901	Metazoa (non-vertebrate)	Arthropoda	Insecta	Thysanoptera	4775
+A0A833VJX3	RYR	high	longest per species	0	E2986_04037	Frieseomelitta varia	561572	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	4968
+A0AAJ7SIU4	RYR	high	longest per species	0	LOC100906902	Galendromus occidentalis (western predatory mite)	34638	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Mesostigmata	5151
+A0ABM3M9C1	RYR	high	longest per species	0	LOC113523215	Galleria mellonella (Greater wax moth)	7137	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5164
+A0AA35WZQ4	RYR	high	longest per species	0	GBAR_LOCUS19477	Geodia barretti (Barrett's horny sponge)	519541	Metazoa (non-vertebrate)	Porifera	Demospongiae	Tetractinellida	3421
+A0A183BIF4	RYR	high	longest per species	0		Globodera pallida (Potato cyst nematode worm) (Heterodera pallida)	36090	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3683
+A0A914H380	RYR	high	longest per species	0		Globodera rostochiensis (Golden nematode worm) (Heterodera rostochiensis)	31243	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5463
+A0A1A9VXJ3	RYR	high	longest per species	0		Glossina austeni (Savannah tsetse fly)	7395	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5011
+A0A1A9W9U7	RYR	high	longest per species	0		Glossina brevipalpis	37001	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5096
+A0A9C5Z257	RYR	high	longest per species	0	LOC119636659	Glossina fuscipes	7396	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5125
+A0A1B0G1T7	RYR	high	longest per species	0		Glossina morsitans morsitans (Savannah tsetse fly)	37546	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5092
+A0A1B0A7F3	RYR	high	longest per species	0		Glossina pallidipes (Tsetse fly)	7398	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3171
+A0A1B0BLM4	RYR	high	longest per species	0		Glossina palpalis gambiensis	67801	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3168
+A0A183CVJ1	RYR	medium	longest per species	0	GPUH_LOCUS482	Gongylonema pulchrum	637853	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	407
+A0A0S1Z233	RYR	high	longest per species	0		Grapholitha molesta	499550	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5141
+A0AAN9YVG3	RYR	high	longest per species	0	R5R35_007854	Gryllus longicercus	2509291	Metazoa (non-vertebrate)	Arthropoda	Insecta	Orthoptera	5148
+A0A9J6GZJ5	RYR	medium	longest per species	0	HPB48_013788	Haemaphysalis longicornis (Bush tick)	44386	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Ixodida	1343
+A0A7I4YT81	RYR	high	longest per species	0		Haemonchus contortus (Barber pole worm)	6289	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5055
+A0A158QNM0	RYR	high	longest per species	0	HPLM_LOCUS10705	Haemonchus placei (Barber's pole worm)	6290	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	1330
+A0AAN8ZTZ2	RYR	high	longest per species	0	RYR2_3	Halocaridina rubra (Hawaiian red shrimp)	373956	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	3266
+E2BZJ9	RYR	high	longest per species	0	EAI_02310	Harpegnathos saltator (Jerdon's jumping ant)	610380	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5080
+V5RE97	RYR	high	longest per species	0	RyR	Helicoverpa armigera (Cotton bollworm) (Heliothis armigera)	29058	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5142
+A0A3P8ALE8	RYR	high	longest per species	0		Heligmosomoides polygyrus (Parasitic roundworm)	6339	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2653
+O96309	RYR	low	longest per species	0	ryr	Heliothis virescens (Tobacco budworm moth)	7102	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	573
+T1G0R3	RYR	high	longest per species	0	20214661	Helobdella robusta (Californian leech)	6412	Metazoa (non-vertebrate)	Annelida	Clitellata	Rhynchobdellida	1734
+Q8TA74	RYR	high	longest per species	1		Hemicentrotus pulcherrimus (Sea urchin) (Strongylocentrotus pulcherrimus)	7650	Metazoa (non-vertebrate)	Echinodermata	Echinoidea	Camarodonta	5317
+A0AAW1UQP2	RYR	high	longest per species	0	WA026_013661	Henosepilachna vigintioctopunctata	420089	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2763
+A0A7R8YZN5	RYR	high	longest per species	0	HERILL_LOCUS10618	Hermetia illucens (Black soldier fly)	343691	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5141
+A0ABD2II26	RYR	high	longest per species	0	niasHS_014703	Heterodera schachtii (Sugarbeet cyst nematode worm) (Tylenchus schachtii)	97005	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5380
+A0A1I7XLA4	RYR	medium	longest per species	0		Heterorhabditis bacteriophora (Entomopathogenic nematode worm)	37862	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	1167
+A0A6V7H6T5	RYR	high	longest per species	0	MHI_LOCUS459446	Heterotrigona itama	395501	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	2289
+A0A6A7FWC2	RYR	high	longest per species	0		Hirondellea gigas	1518452	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Amphipoda	2664
+A0A9Q1CGM9	RYR	high	longest per species	0	HOLleu_07872	Holothuria leucospilota (Black long sea cucumber) (Mertensiothuria leucospilota)	206669	Metazoa (non-vertebrate)	Echinodermata	Holothuroidea	Aspidochirotida	4119
+A0ACB9TXB3	RYR	high	longest per species	0	MML48_1g04376	Holotrichia oblita (Chafer beetle)	644536	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5073
+A0A8J5JM50	RYR	high	longest per species	0	RyR-L3	Homarus americanus (American lobster)	6706	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	4088
+A0A979FWP3	RYR	high	longest per species	0	LOC108667979	Hyalella azteca (Mexican freshwater shrimp) (Ampithoe aztecus)	294128	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Amphipoda	2276
+A0A3P7G6U0	RYR	high	longest per species	0	TTAC_LOCUS903	Hydatigera taeniaeformis (Feline tapeworm) (Taenia taeniaeformis)	6205	Metazoa (non-vertebrate)	Platyhelminthes	Cestoda	Cyclophyllidea	5152
+A0A564YS66	RYR	high	longest per species	0	WMSIL1_LOCUS8477	Hymenolepis diminuta (Rat tapeworm)	6216	Metazoa (non-vertebrate)	Platyhelminthes	Cestoda	Cyclophyllidea	4964
+A0A5B9D5X3	RYR	high	longest per species	0		Hypothenemus hampei (Coffee berry borer)	57062	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5107
+A0A1W0WNM8	RYR	high	longest per species	1	BV898_08999	Hypsibius exemplaris (Freshwater tardigrade)	2072580	Metazoa (non-vertebrate)	Tardigrada	Eutardigrada	Parachela	3045
+A0A8K0C7S9	RYR	high	longest per species	0	ILUMI_23592	Ignelater luminosus (Cucubano) (Pyrophorus luminosus)	2038154	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2166
+A0ABN8ILP6	RYR	high	longest per species	0	IPOD504_LOCUS11494	Iphiclides podalirius (scarce swallowtail)	110791	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	3263
+A0A131XZ16	RYR	medium	longest per species	0		Ixodes ricinus (Common tick) (Acarus ricinus)	34613	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Ixodida	2114
+A0ACM8F2K1	RYR	high	longest per species	0	LOC8026823	Ixodes scapularis (Black-legged tick) (Deer tick)	6945	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Ixodida	5156
+A0ACH3JT27	RYR	high	longest per species	0	PGB90_003701	Kerria lacca (common lac scale)	473130	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	3977
+A0A8K0KDG3	RYR	high	longest per species	0	J437_LFUL009412	Ladona fulva (Scarce chaser dragonfly) (Libellula fulva)	123851	Metazoa (non-vertebrate)	Arthropoda	Insecta	Odonata	3379
+A0A059XRL5	RYR	high	longest per species	0	RyR	Laodelphax striatellus (Small brown planthopper) (Delphax striatella)	195883	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5135
+A0AAV1ZCR3	RYR	high	longest per species	0	LARSCL_LOCUS4026	Larinioides sclopetarius	280406	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	5064
+A0A0J7L472	RYR	high	longest per species	0	RF55_1969	Lasius niger (Black garden ant)	67767	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	1889
+A0AAV2PB15	RYR	high	longest per species	0	LPLAT_LOCUS14199	Lasius platythorax	488582	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5118
+A0A7R8CVF9	RYR	high	longest per species	0	LSAA_9985	Lepeophtheirus salmonis (Salmon louse) (Caligus salmonis)	72036	Metazoa (non-vertebrate)	Arthropoda	Copepoda	Siphonostomatoida	2112
+A0A5E4QI94	RYR	high	longest per species	0	LSINAPIS_LOCUS8215	Leptidea sinapis	189913	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	3842
+A0A023NE85	RYR	high	longest per species	0		Leptinotarsa decemlineata (Colorado potato beetle) (Doryphora decemlineata)	7539	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5128
+A0AAV1JI68	RYR	high	longest per species	0	LNINA_LOCUS8543	Leptosia nina	320188	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2340
+A0A443SEG0	RYR	medium	longest per species	0	B4U80_02374	Leptotrombidium deliense	299467	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Trombidiformes	1462
+A0ABM1SHV1	RYR	high	longest per species	0	LOC106460719	Limulus polyphemus (Atlantic horseshoe crab)	6850	Metazoa (non-vertebrate)	Arthropoda	Merostomata	Xiphosura	5186
+A0A1S3I436	RYR	high	longest per species	1	LOC106160817	Lingula anatina (Brachiopod) (Lingula unguis)	7574	Metazoa (non-vertebrate)	Brachiopoda	Lingulata	Lingulida	4715
+A0A3P6UQP9	RYR	high	longest per species	0	NLS_LOCUS4645	Litomosoides sigmodontis (Filarial nematode worm)	42156	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3662
+A0AAN9GD88	RYR	high	longest per species	0	V1264_018248	Littorina saxatilis	31220	Metazoa (non-vertebrate)	Mollusca	Gastropoda	Littorinimorpha	5241
+A0A1I7VT37	RYR	high	longest per species	0		Loa loa (Eye worm) (Filaria loa)	7209	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	4961
+V4AA46	RYR	high	longest per species	0	LOTGIDRAFT_123762	Lottia gigantea (Giant owl limpet)	225164	Metazoa (non-vertebrate)	Mollusca	Gastropoda		5045
+A0ABR3H4X6	RYR	high	longest per species	0	ABMA27_010192	Loxostege sticticalis (Beet webworm moth)	481309	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	4357
+A0A0L0BUZ9	RYR	high	longest per species	0	FF38_06409	Lucilia cuprina (Green bottle fly) (Australian sheep blowfly)	7375	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5136
+A0A1B0ETX9	RYR	medium	longest per species	0		Lutzomyia longipalpis (Sand fly)	7200	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	1751
+A0AAV2I6U5	RYR	high	longest per species	0	GSLYS_00016015001	Lymnaea stagnalis (Great pond snail) (Helix stagnalis)	6523	Metazoa (non-vertebrate)	Mollusca	Gastropoda		5191
+A0AAV0WCS0	RYR	high	longest per species	0	MEUPH1_LOCUS9620	Macrosiphum euphorbiae (potato aphid)	13131	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5101
+A0A1I8H4L8	RYR	high	longest per species	0		Macrostomum lignano	282301	Metazoa (non-vertebrate)	Platyhelminthes			4842
+A0ACF7KUW5	RYR	high	longest per species	0	ACF0H5_002837	Mactra antiquata	2302425	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Venerida	5161
+A0A8W8I0E5	RYR	high	longest per species	0		Magallana gigas (Pacific oyster) (Crassostrea gigas)	29159	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Ostreida	5084
+A0A921YRC0	RYR	high	longest per species	0	O3G_MSEX003225	Manduca sexta (Tobacco hawkmoth) (Tobacco hornworm)	7130	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5127
+A0A7R9PVA5	RYR	high	longest per species	0	OSB1V03_LOCUS2509	Medioppia subpectinata	1979941	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Sarcoptiformes	3592
+A0AAV7XDJ1	RYR	high	longest per species	0	ONE63_003195	Megalurothrips usitatus (bean blossom thrips)	439358	Metazoa (non-vertebrate)	Arthropoda	Insecta	Thysanoptera	5138
+A0AAV2Q4J1	RYR	high	longest per species	0	MNOR_LOCUS7529	Meganyctiphanes norvegica (Northern krill) (Thysanopoda norvegica)	48144	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Euphausiacea	3455
+A0ACF9AK27	RYR	high	longest per species	0	ACFFRR_007348	Megaselia abdita (Humpbacked fly)	88686	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5125
+T1GUW0	RYR	medium	longest per species	0		Megaselia scalaris (Humpbacked fly) (Phora scalaris)	36166	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	350
+A0AA40G5E2	RYR	high	longest per species	0	K0M31_017517	Melipona bicolor	60889	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5069
+A0A0M8ZYB0	RYR	high	longest per species	0	WN51_13662	Melipona quadrifasciata	166423	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5082
+A0ACB0ZJ18	RYR	high	longest per species	0	MENTE1834_LOCUS25926	Meloidogyne enterolobii (Root-knot nematode worm) (Meloidogyne mayaguensis)	390850	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3021
+A0A1I8C1W2	RYR	high	longest per species	0		Meloidogyne hapla (Root-knot nematode worm)	6305	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2680
+A0A914MJJ0	RYR	high	longest per species	0		Meloidogyne incognita (Southern root-knot nematode worm) (Oxyuris incognita)	6306	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2614
+A0A915MAC2	RYR	medium	longest per species	0		Meloidogyne javanica (Root-knot nematode worm)	6303	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	1056
+A0A0R3UJQ6	RYR	high	longest per species	0	MCOS_LOCUS7761	Mesocestoides corti (Flatworm)	53468	Metazoa (non-vertebrate)	Platyhelminthes	Cestoda	Cyclophyllidea	5743
+A0AAF3EW03	RYR	high	longest per species	0		Mesorhabditis belari	2138241	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5247
+A0AA36D6A0	RYR	high	longest per species	0	MSPICULIGERA_LOCUS20029	Mesorhabditis spiculigera	96644	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5069
+A0AA39FIZ9	RYR	high	longest per species	0	PV328_010986	Microctonus aethiopoides	144406	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	4909
+A0AA39KH72	RYR	high	longest per species	0	PV327_008421	Microctonus hyperodae (Parasitoid wasp)	165561	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5071
+A0ABQ9JY03	RYR	medium	longest per species	0	NQ317_014034	Molorchus minor	1323400	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	1605
+A0A1I8MDA8	RYR	high	longest per species	0	LOC101888405	Musca domestica (House fly)	7370	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5131
+A0ABY7FBH2	RYR	high	longest per species	0	MAR_001356	Mya arenaria (Soft-shell clam)	6604	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Myida	2884
+A0ACC2Q884	RYR	high	longest per species	0	PYW08_010418	Mythimna loreyi	667449	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5118
+A0AAD8DKG6	RYR	high	longest per species	0	PYW07_010827	Mythimna separata (Oriental armyworm) (Pseudaletia separata)	271217	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5857
+A0A8S3T6A8	RYR	medium	longest per species	0	MEDL_39092	Mytilus edulis (Blue mussel)	6550	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Mytilida	291
+A0A8B6HKR7	RYR	high	longest per species	0	MGAL_10B085564	Mytilus galloprovincialis (Mediterranean mussel)	29158	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Mytilida	5025
+A0A0A7RS32	RYR	high	longest per species	0		Myzus persicae (Green peach aphid) (Aphis persicae)	13164	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5101
+A0A7M7T6K6	RYR	high	longest per species	0		Nasonia vitripennis (Parasitic wasp)	7425	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5176
+W2TAC6	RYR	high	longest per species	0	NECAME_10550	Necator americanus (Human hookworm)	51031	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	4907
+A0ABM3GP40	RYR	high	longest per species	0	LOC107223078	Neodiprion lecontei (Redheaded pine sawfly)	441921	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5128
+A0A8X6MDD5	RYR	high	longest per species	0	RyR	Nephila pilipes (Giant wood spider) (Nephila maculata)	299642	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	1874
+A0ABN7B5W3	RYR	high	longest per species	0	NTJ_12608	Nesidiocoris tenuis	355587	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5083
+A0A9P0H1M9	RYR	high	longest per species	0	NEZAVI_LOCUS491	Nezara viridula (Southern green stink bug) (Cimex viridulus)	85310	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5073
+A0ABM1MTS5	RYR	high	longest per species	0	LOC108563731	Nicrophorus vespilloides (Boreal carrion beetle)	110193	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5054
+U3PWV7	RYR	high	longest per species	0		Nilaparvata lugens (Brown planthopper)	108931	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5140
+A0A158R0H1	RYR	high	longest per species	0	NBR_LOCUS11808	Nippostrongylus brasiliensis (Rat hookworm)	27835	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	1389
+A0A7R9BQ83	RYR	high	longest per species	0	NMOB1V02_LOCUS6969	Notodromas monacha	399045	Metazoa (non-vertebrate)	Arthropoda	Ostracoda	Podocopida	3631
+A0A7E6F791	RYR	high	longest per species	0	LOC115217695	Octopus sinensis (East Asian common octopus)	2607531	Metazoa (non-vertebrate)	Mollusca	Cephalopoda	Octopoda	4022
+A0AA36B9A0	RYR	high	longest per species	0	OCTVUL_1B000142	Octopus vulgaris (Common octopus)	6645	Metazoa (non-vertebrate)	Mollusca	Cephalopoda	Octopoda	5170
+A0AAD9RL42	RYR	high	longest per species	0	KPH14_005126	Odynerus spinipes	1348599	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5110
+A0AAV6UMA4	RYR	high	longest per species	0	JTE90_012099	Oedothorax gibbosus	931172	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	5046
+L7MM06	RYR	high	longest per species	0		Oesophagostomum dentatum (Nodular worm)	61180	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5075
+A0ABN7S0R9	RYR	high	longest per species	0	OKIOD_LOCUS2548	Oikopleura dioica (Tunicate)	34765	Metazoa (non-vertebrate)	Chordata	Appendicularia	Copelata	5011
+A0A238BWD7	RYR	high	longest per species	0	X798_03325	Onchocerca flexuosa	387005	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2326
+A0A182E4C5	RYR	high	longest per species	0	NOO_LOCUS2844	Onchocerca ochengi (Filarial nematode worm)	42157	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2618
+A0A8R1TZT6	RYR	high	longest per species	0		Onchocerca volvulus	6282	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5043
+A0A026W7Q8	RYR	high	longest per species	0	X777_09115	Ooceraea biroi (Clonal raider ant) (Cerapachys biroi)	2015173	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5061
+A0AAV7K8I1	RYR	high	longest per species	1	LOD99_255	Oopsacas minuta	111878	Metazoa (non-vertebrate)	Porifera	Hexactinellida	Lyssacinosida	4959
+A0A0L7LMR0	RYR	high	longest per species	0	OBRU01_01730	Operophtera brumata (Winter moth) (Phalaena brumata)	104452	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	3507
+A0A4S2LT93	RYR	high	longest per species	0	CRM22_004998	Opisthorchis felineus	147828	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Opisthorchiida	5609
+A0A075A5M8	RYR	high	longest per species	0	T265_09254	Opisthorchis viverrini (Southeast Asian liver fluke)	6198	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Opisthorchiida	5727
+A0A7R9LP60	RYR	medium	longest per species	0	ONB1V03_LOCUS5058	Oppiella nova	334625	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Sarcoptiformes	1742
+A0A1D2N817	RYR	high	longest per species	0	Ocin01_05279	Orchesella cincta (Springtail) (Podura cincta)	48709	Metazoa (non-vertebrate)	Arthropoda	Collembola	Entomobryomorpha	2712
+A0ABP1QU76	RYR	high	longest per species	0	ODALV1_LOCUS14843	Orchesella dallaii	48710	Metazoa (non-vertebrate)	Arthropoda	Collembola	Entomobryomorpha	5046
+A0A0T6BEI4	RYR	high	longest per species	0	AMK59_1464	Oryctes borbonicus	1629725	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	2235
+M4T4G3	RYR	high	longest per species	0		Ostrinia furnacalis (Asian corn borer)	93504	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5108
+A0A8S4PI77	RYR	high	longest per species	0	OFUS_LOCUS17749	Owenia fusiformis (Polychaete worm)	6347	Metazoa (non-vertebrate)	Annelida	Polychaeta	Sabellida	1987
+A0A7E4VY38	RYR	high	longest per species	0		Panagrellus redivivus (Microworm)	6233	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	4039
+A0A914QJS4	RYR	medium	longest per species	0		Panagrolaimus davidi	227884	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	1228
+A0A914Z1U8	RYR	medium	longest per species	0		Panagrolaimus superbus	310955	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	820
+A0A194RNL9	RYR	high	longest per species	0	RR48_07099	Papilio machaon (Old World swallowtail butterfly)	76193	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	2892
+A0A194QMY4	RYR	high	longest per species	0	RR46_01779	Papilio xuthus (Asian swallowtail butterfly)	66420	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	3275
+A0A8J4THQ5	RYR	high	longest per species	0	PHET_01364	Paragonimus heterotremus	100268	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Plagiorchiida	5627
+A0A8S9Z2A3	RYR	high	longest per species	0	EG68_01789	Paragonimus skrjabini miyazakii	59628	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Plagiorchiida	5491
+A0A5J4NXI2	RYR	high	longest per species	0	DEA37_0004027	Paragonimus westermani	34504	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Plagiorchiida	5606
+A0AAD9N3M2	RYR	high	longest per species	0	LSH36_286g03070	Paralvinella palmiformis	53620	Metazoa (non-vertebrate)	Annelida	Polychaeta	Terebellida	3804
+A0A8S4S2J2	RYR	high	longest per species	0	jg7116	Pararge aegeria aegeria	348720	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5125
+A0A915B3X3	RYR	high	longest per species	0		Parascaris univalens (Nematode worm)	6257	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	4739
+A0A0N4ZPH7	RYR	high	longest per species	0		Parastrongyloides trichosuri (Possum-specific nematode worm)	131310	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5293
+A0AAD5MDZ9	RYR	medium	longest per species	0	KIN20_002293	Parelaphostrongylus tenuis (Meningeal worm)	148309	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	1639
+A0A8S3X2A4	RYR	high	longest per species	0	PAPOLLO_LOCUS12961	Parnassius apollo (Apollo butterfly) (Papilio apollo)	110799	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5166
+A0AAV1LIQ1	RYR	high	longest per species	0	PARMNEM_LOCUS14535	Parnassius mnemosyne (clouded apollo)	213953	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5092
+A0AAN9TKK1	RYR	high	longest per species	0	V9T40_012523	Parthenolecanium corni	536013	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5107
+A0A914BA11	RYR	high	longest per species	0		Patiria miniata (Bat star) (Asterina miniata)	46514	Metazoa (non-vertebrate)	Echinodermata	Asteroidea	Valvatida	2795
+E0VEK3	RYR	high	longest per species	0	8234224	Pediculus humanus subsp. corporis (Body louse)	121224	Metazoa (non-vertebrate)	Arthropoda	Insecta	Psocodea	5058
+A0A423U9Z0	RYR	high	longest per species	0	C7M84_012532	Penaeus vannamei (Whiteleg shrimp) (Litopenaeus vannamei)	6689	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	2399
+A0ABQ8T696	RYR	medium	longest per species	0	ANN_11867	Periplaneta americana (American cockroach) (Blatta americana)	6978	Metazoa (non-vertebrate)	Arthropoda	Insecta	Blattodea	1387
+A0AAE1F6E0	RYR	high	longest per species	0	Pcinc_026695	Petrolisthes cinctipes (Flat porcelain crab)	88211	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	5490
+A0AAE1NS39	RYR	high	longest per species	0	Pmani_032231	Petrolisthes manimaculis	1843537	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	5556
+A0A9P0GQZ3	RYR	high	longest per species	0	PHAECO_LOCUS3844	Phaedon cochleariae (Mustard beetle)	80249	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5115
+A0A6F9DS65	RYR	high	longest per species	0	Ryr3	Phallusia mammillata	59560	Metazoa (non-vertebrate)	Chordata	Ascidiacea	Phlebobranchia	5072
+A0A1B0D1T0	RYR	high	longest per species	0		Phlebotomus papatasi (Sandfly)	29031	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	2076
+A0A5N4A4Q8	RYR	high	longest per species	0	PPYR_14264	Photinus pyralis (Common eastern firefly) (Lampyris pyralis)	7054	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5100
+A0A9N9T9N1	RYR	high	longest per species	0	PHYEVI_LOCUS329	Phyllotreta striolata (Striped flea beetle) (Crioceris striolata)	444603	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5111
+A0A9P0TSB5	RYR	high	longest per species	0	PIBRA_LOCUS13194	Pieris brassicae (White butterfly) (Large white butterfly)	7116	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5162
+A0A821VFV6	RYR	high	longest per species	0	PMACD_LOCUS11707	Pieris macdunnoughi	345717	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	3242
+R9R5D5	RYR	high	longest per species	0		Pieris rapae (Small white butterfly) (Artogeia rapae)	64459	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5107
+A0AA88Y1D7	RYR	high	longest per species	0	FSP39_023525	Pinctada imbricata (Atlantic pearl-oyster) (Pinctada martensii)	66713	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Pterioida	5203
+A0AAV4CU45	RYR	high	longest per species	0	PoB_006189600	Plakobranchus ocellatus	259542	Metazoa (non-vertebrate)	Mollusca	Gastropoda		3331
+A0A914WBU0	RYR	high	longest per species	0		Plectus sambesii	2011161	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Plectida	1370
+A0ABQ7PQG9	RYR	high	longest per species	0	JYU34_022202	Plutella xylostella (Diamondback moth) (Plutella maculipennis)	51655	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5164
+A0A8N1SB51	RYR	high	longest per species	0	LOC105431823	Pogonomyrmex barbatus (red harvester ant)	144034	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5130
+A0ABM1HYJ6	RYR	high	longest per species	0	LOC107064648	Polistes dominula (European paper wasp) (Vespa dominula)	743375	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5161
+A0A9J6CJ21	RYR	high	longest per species	0	PVAND_011393	Polypedilum vanderplanki (Sleeping chironomid midge)	319348	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5072
+A0AAN0LPN8	RYR	high	longest per species	0	RyR	Polyphagotarsonemus latus	1204166	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Trombidiformes	5392
+A0ABR1B0T0	RYR	high	longest per species	0	RUM44_007463	Polyplax serrata (Common mouse louse)	468196	Metazoa (non-vertebrate)	Arthropoda	Insecta	Psocodea	3872
+A0A2T7NWF8	RYR	high	longest per species	0	C0Q70_13166	Pomacea canaliculata (Golden apple snail)	400727	Metazoa (non-vertebrate)	Mollusca	Gastropoda	Architaenioglossa	5035
+A0AAW1M9L9	RYR	high	longest per species	0	QE152_g8309	Popillia japonica (Japanese beetle)	7064	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	3675
+A0A5B7CR75	RYR	high	longest per species	0	RyR_5	Portunus trituberculatus (Swimming crab) (Neptunus trituberculatus)	210409	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	918
+A0AAE0TEQ7	RYR	high	longest per species	0	CHS0354_042592	Potamilus streckersoni	2493646	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Unionida	5165
+A0ABM1DXK4	RYR	high	longest per species	1	LOC106806993	Priapulus caudatus (Priapulid worm)	37621	Metazoa (non-vertebrate)	Priapulida	Priapulimorpha	Priapulimorphida	3274
+A0AAV5SCC0	RYR	high	longest per species	0	PENTCL1PPCAC_3146	Pristionchus entomophagus	358040	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2637
+A0AAV5V408	RYR	high	longest per species	0	PFISCL1PPCAC_3867	Pristionchus fissidentatus	1538716	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	4684
+A0AAN5DCL9	RYR	high	longest per species	0	PMAYCL1PPCAC_29932	Pristionchus mayeri	1317129	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5244
+A0A2A6CRA2	RYR	high	longest per species	0	WBGene00276305	Pristionchus pacificus (Parasitic nematode worm)	54126	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5221
+A0A836ED53	RYR	high	longest per species	0	Ryr	Pseudoatta argentina	621737	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5138
+A0A9Q0S6L4	RYR	high	longest per species	0	RyR	Pseudolycoriella hygida	35572	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	1167
+A0A9P0D3I1	RYR	high	longest per species	0	PSYICH_LOCUS13587	Psylliodes chrysocephalus	3402493	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5121
+A0AAN7ZFM5	RYR	high	longest per species	0	RI129_011468	Pyrocoelia pectoralis	417401	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5103
+A0A1D1VU71	RYR	high	longest per species	0	RvY_12740-1	Ramazzottius varieornatus (Water bear) (Tardigrade)	947166	Metazoa (non-vertebrate)	Tardigrada	Eutardigrada	Parachela	2875
+A0ABD0YNJ7	RYR	high	longest per species	0	AAG570_001433	Ranatra chinensis	642074	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5037
+A0AAV8WK04	RYR	high	longest per species	0	NQ314_021073	Rhamnusium bicolor	1586634	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	832
+A0A9J6EDA9	RYR	medium	longest per species	0	HPB51_022636	Rhipicephalus microplus (Cattle tick) (Boophilus microplus)	6941	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Ixodida	1450
+T1ICG6	RYR	high	longest per species	0		Rhodnius prolixus (Triatomid bug)	13249	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5107
+A0A834M383	RYR	high	longest per species	0	GWI33_017947	Rhynchophorus ferrugineus (Red palm weevil) (Curculio ferrugineus)	354439	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5144
+A0AAW1DJ36	RYR	high	longest per species	0	O3M35_005062	Rhynocoris fuscipes	488301	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	4992
+A0AAD9KZI4	RYR	high	longest per species	0	NP493_449g01032	Ridgeia piscesae (Tubeworm)	27915	Metazoa (non-vertebrate)	Annelida	Polychaeta	Sabellida	2394
+A0A158QIV9	RYR	medium	longest per species	0	HNAJ_LOCUS10317	Rodentolepis nana (Dwarf tapeworm) (Hymenolepis nana)	102285	Metazoa (non-vertebrate)	Platyhelminthes	Cestoda	Cyclophyllidea	2819
+A0A915J9D7	RYR	medium	longest per species	0		Romanomermis culicivorax (Nematode worm)	13658	Metazoa (non-vertebrate)	Nematoda	Enoplea	Mermithida	878
+A0A819LAN5	RYR	medium	longest per species	0	OVN521_LOCUS12912	Rotaria magnacalcarata	392030	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Philodinida	2282
+A0A820LXG1	RYR	high	longest per species	0	UJA718_LOCUS16619	Rotaria socialis	392032	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Philodinida	2627
+A0A813R8P9	RYR	high	longest per species	1	JXQ802_LOCUS4555	Rotaria sordida	392033	Metazoa (non-vertebrate)	Rotifera	Eurotatoria	Philodinida	5245
+A0ACM8CH91	RYR	high	longest per species	1	LOC100328999	Saccoglossus kowalevskii (Acorn worm)	10224	Metazoa (non-vertebrate)	Hemichordata	Enteropneusta		5221
+A0A834VC47	RYR	high	longest per species	0		Sarcoptes scabiei (Itch mite) (Acarus scabiei)	52283	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Sarcoptiformes	5042
+A0A3P7E2Z7	RYR	medium	longest per species	0	SSLN_LOCUS7196	Schistocephalus solidus (Tapeworm)	70667	Metazoa (non-vertebrate)	Platyhelminthes	Cestoda	Diphyllobothriidea	1838
+A0A430QFW0	RYR	high	longest per species	0	DC041_0003976	Schistosoma bovis (Blood fluke)	6184	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	2337
+A0A183K1U8	RYR	high	longest per species	0	SCUD_LOCUS8961	Schistosoma curassoni	6186	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	1576
+A0A922LUH1	RYR	high	longest per species	0	RYR3	Schistosoma haematobium (Blood fluke)	6185	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	5605
+A0A4Z2DNF4	RYR	high	longest per species	0	EWB00_010886	Schistosoma japonicum (Blood fluke)	6182	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	5688
+A0A3Q0KS03	RYR	high	longest per species	0		Schistosoma mansoni (Blood fluke)	6183	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	5669
+A0A183MSI1	RYR	high	longest per species	0	SMRZ_LOCUS19006	Schistosoma margrebowiei	48269	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	1599
+A0A183NXT8	RYR	medium	longest per species	0	SMTD_LOCUS6924	Schistosoma mattheei	31246	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	1190
+A0AAE1ZFP2	RYR	high	longest per species	0	MN116_004276	Schistosoma mekongi (Parasitic worm)	38744	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	5688
+A0AA85FAP7	RYR	high	longest per species	0		Schistosoma rodhaini	6188	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	5669
+A0ACF8L3D0	RYR	high	longest per species	0	ACJJTC_011404	Scirpophaga incertulas	72366	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	1566
+A0AAW0SKF4	RYR	high	longest per species	0	O3P69_008335	Scylla paramamosain (Mud crab)	85552	Metazoa (non-vertebrate)	Arthropoda	Malacostraca	Decapoda	2969
+A0ACF8WPY9	RYR	high	longest per species	0	ACI65C_006122	Semiaphis heraclei	796293	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5101
+A0ACE7F6K6	RYR	high	longest per species	0	DMENIID0001_119260	Sergentomyia squamirostris	2283857	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	3985
+A0A2Z5BST2	RYR	high	longest per species	0	RyR	Sesamia inferens (Purple stem borer)	492764	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5139
+A0A915Q2X8	RYR	high	longest per species	0		Setaria digitata	48799	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3050
+A0ABD3WLX5	RYR	high	longest per species	0	ACJMK2_037916	Sinanodonta woodiana (Chinese pond mussel) (Anodonta woodiana)	1069815	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Unionida	5152
+A0A8B8GT52	RYR	high	longest per species	0	LOC112694533	Sipha flava (yellow sugarcane aphid)	143950	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5102
+A0A6J2XGA9	RYR	high	longest per species	0	LOC115877801	Sitophilus oryzae (Rice weevil) (Curculio oryzae)	7048	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5122
+A0A183IJH0	RYR	high	longest per species	0	SBAD_LOCUS3766	Soboliphyme baturini	241478	Metazoa (non-vertebrate)	Nematoda	Enoplea	Dioctophymatida	2376
+A0A023NEE5	RYR	high	longest per species	0		Sogatella furcifera (White-backed planthopper)	113103	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5128
+A0ACF8R2W1	RYR	high	longest per species	0	ScPMuIL_014959	Solemya velum (Atlantic awningclam)	13268	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Solemyida	5149
+A0A0P0QM39	RYR	high	longest per species	0	RyR	Spodoptera exigua (Beet armyworm) (Noctua fulgens)	7107	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5141
+A0A9R0DY57	RYR	high	longest per species	0	LOC118276673	Spodoptera frugiperda (Fall armyworm)	7108	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5165
+A0A9P0IA62	RYR	high	longest per species	0	SPLIT_LOCUS7521	Spodoptera littoralis (Egyptian cotton leafworm)	7109	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5121
+A0A9J7EHB1	RYR	high	longest per species	0	LOC111357922	Spodoptera litura (Asian cotton leafworm)	69820	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5098
+A0A087TIZ4	RYR	high	longest per species	0	X975_01126	Stegodyphus mimosarum (African social velvet spider)	407821	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	1626
+A0A4U5NUG2	RYR	high	longest per species	0	L596_011471	Steinernema carpocapsae (Entomopathogenic nematode)	34508	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	2297
+A0A1I7Z333	RYR	high	longest per species	0		Steinernema glaseri	37863	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	1968
+A0AA39HTB0	RYR	high	longest per species	0	QR680_005766	Steinernema hermaphroditum	289476	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5288
+A0A1I8P9C9	RYR	high	longest per species	0	106095874	Stomoxys calcitrans (Stable fly) (Conops calcitrans)	35570	Metazoa (non-vertebrate)	Arthropoda	Insecta	Diptera	5129
+T1J5U5	RYR	high	longest per species	0		Strigamia maritima (European centipede) (Geophilus maritimus)	126957	Metazoa (non-vertebrate)	Arthropoda	Chilopoda	Geophilomorpha	4116
+A0A7M7T5D0	RYR	high	longest per species	0		Strongylocentrotus purpuratus (Purple sea urchin)	7668	Metazoa (non-vertebrate)	Echinodermata	Echinoidea	Camarodonta	4609
+A0A0N5BIM7	RYR	high	longest per species	0		Strongyloides papillosus (Intestinal threadworm)	174720	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5177
+A0A090MUA7	RYR	high	longest per species	0	SRAE_1000038700	Strongyloides ratti (Parasitic roundworm)	34506	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5303
+A0AAF5DMV8	RYR	high	longest per species	0		Strongyloides stercoralis (Threadworm)	6248	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5295
+A0A0K0FNZ1	RYR	high	longest per species	0		Strongyloides venezuelensis (Threadworm)	75913	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5313
+A0A3P7IZ60	RYR	medium	longest per species	0	SVUK_LOCUS13189	Strongylus vulgaris (Blood worm)	40348	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	933
+A0A0N5AR96	RYR	high	longest per species	0		Syphacia muris	451379	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	4873
+A0A0R3WD36	RYR	high	longest per species	0	TASK_LOCUS8662	Taenia asiatica (Asian tapeworm)	60517	Metazoa (non-vertebrate)	Platyhelminthes	Cestoda	Cyclophyllidea	5267
+A0ABR4Q6E9	RYR	high	longest per species	0	TcWFU_006570	Taenia crassiceps	6207	Metazoa (non-vertebrate)	Platyhelminthes	Cestoda	Cyclophyllidea	5781
+A0ABQ9EYP8	RYR	high	longest per species	0	KUTeg_013945	Tegillarca granosa (Malaysian cockle) (Anadara granosa)	220873	Metazoa (non-vertebrate)	Mollusca	Bivalvia	Arcoida	5194
+A0A2G9U3T6	RYR	medium	longest per species	0	TELCIR_13418	Teladorsagia circumcincta (Brown stomach worm) (Ostertagia circumcincta)	45464	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	962
+A0A6J1Q3K4	RYR	high	longest per species	0	LOC112457761	Temnothorax curvispinosus	300111	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5140
+A0A4S2KV39	RYR	high	longest per species	1	DBV15_05574	Temnothorax longispinosus	300112	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	6896
+A0A8J6H6D8	RYR	high	longest per species	0	GEV33_013841	Tenebrio molitor (Yellow mealworm beetle)	7067	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	4154
+A0AAW1A662	RYR	high	longest per species	0	QLX08_003525	Tetragonisca angustula	166442	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5132
+T1K6F3	RYR	high	longest per species	0		Tetranychus urticae (Two-spotted spider mite)	32264	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Trombidiformes	5235
+A0A0N5CZR3	RYR	high	longest per species	0	TCLT_LOCUS5985	Thelazia callipaeda (Oriental eyeworm) (Parasitic nematode)	103827	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3363
+A0A6P8Z5B9	RYR	high	longest per species	0	LOC117647578	Thrips palmi (Melon thrips)	161013	Metazoa (non-vertebrate)	Arthropoda	Insecta	Thysanoptera	5163
+A0A553P1H5	RYR	high	longest per species	0	TCAL_01091	Tigriopus californicus (Marine copepod)	6832	Metazoa (non-vertebrate)	Arthropoda	Copepoda	Harpacticoida	4758
+A0ABN7NI84	RYR	medium	longest per species	0	TPAB3V08_LOCUS2049	Timema podura (Walking stick)	61482	Metazoa (non-vertebrate)	Arthropoda	Insecta	Phasmatodea	670
+A0A183UDS7	RYR	high	longest per species	0		Toxocara canis (Canine roundworm)	6265	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	4894
+A0A151IVU0	RYR	high	longest per species	0	ALC57_15864	Trachymyrmex cornetzi	471704	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5093
+A0A195FCN9	RYR	high	longest per species	0	ALC56_07591	Trachymyrmex septentrionalis	34720	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5023
+A0A023F678	RYR	high	longest per species	0		Triatoma infestans (Assassin bug)	30076	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5065
+A0A097P7A6	RYR	high	longest per species	0		Tribolium castaneum (Red flour beetle)	7070	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	5094
+A0A0V1DD79	RYR	high	longest per species	0	Rya-r44F	Trichinella britovi (Parasitic roundworm)	45882	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	5150
+A0A0V0UGK5	RYR	high	longest per species	0	Rya-r44F	Trichinella murrelli	144512	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	5150
+A0A0V1LTI1	RYR	high	longest per species	0	Ryr2	Trichinella nativa	6335	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	5150
+A0A0V0SMI2	RYR	high	longest per species	0	Rya-r44F	Trichinella nelsoni	6336	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	5112
+A0A0V1N0Y7	RYR	high	longest per species	0	Rya-r44F	Trichinella papuae	268474	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	3473
+A0A0V1AFC9	RYR	high	longest per species	0	Rya-r44F	Trichinella patagoniensis	990121	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	5150
+A0A0V1JF63	RYR	high	longest per species	0	Rya-r44F	Trichinella pseudospiralis (Parasitic roundworm)	6337	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	5151
+A0A0V1C2E6	RYR	high	longest per species	0	Rya-r44F	Trichinella spiralis (Trichina worm)	6334	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	5115
+A0A0V1HV04	RYR	high	longest per species	0	Rya-r44F	Trichinella zimbabwensis	268475	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	5064
+A0AA85JZA6	RYR	high	longest per species	0		Trichobilharzia regenti (Nasal bird schistosome)	157069	Metazoa (non-vertebrate)	Platyhelminthes	Trematoda	Strigeidida	4994
+A0A6H5I7I9	RYR	high	longest per species	0	TBRA_LOCUS5086	Trichogramma brassicae	86971	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5053
+A0ABD2VZJ9	RYR	high	longest per species	0	TKK_018783	Trichogramma kaykai	54128	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5126
+A0A232EYM9	RYR	high	longest per species	0	TSAR_011015	Trichomalopsis sarcophagae	543379	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5113
+A0A8X6LRW5	RYR	high	longest per species	0	RyR	Trichonephila clavata (Joro spider) (Nephila clavata)	2740835	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	3395
+A0A8X6Y091	RYR	high	longest per species	0	RyR	Trichonephila inaurata madagascariensis	2747483	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Araneae	1423
+B3RK74	RYR	high	longest per species	1	TRIADDRAFT_52741	Trichoplax adhaerens (Trichoplax reptans)	10228	Metazoa (non-vertebrate)	Placozoa	Uniplacotomia	Trichoplacea	4949
+A0A7E5WRJ5	RYR	high	longest per species	0	LOC113505095	Trichoplusia ni (Cabbage looper)	7111	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5114
+A0AAN8EZV3	RYR	high	longest per species	0	GCK32_001814	Trichostrongylus colubriformis (Black scour worm)	6319	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	3596
+A0A5S6QXR5	RYR	high	longest per species	0		Trichuris muris (Mouse whipworm)	70415	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	5075
+A0A085LRI9	RYR	high	longest per species	0	M513_11549	Trichuris suis (pig whipworm)	68888	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	5145
+A0A077YYK0	RYR	high	longest per species	0	TTRE_0000115801	Trichuris trichiura (Whipworm) (Trichocephalus trichiurus)	36087	Metazoa (non-vertebrate)	Nematoda	Enoplea	Trichinellida	5172
+A0A1V9WZ08	RYR	high	longest per species	0	BIW11_02334	Tropilaelaps mercedesae	418985	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Mesostigmata	2990
+A0A1J0I9Q3	RYR	high	longest per species	0		Tuta absoluta (South American tomato moth) (Tomato leafminer)	702717	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5121
+A0ACF7J0R1	RYR	high	longest per species	0	QTP88_000316	Uroleucon formosanum	796250	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hemiptera	5101
+A0ABM4AVN2	RYR	high	longest per species	0	LOC113392068	Vanessa tameamea (Kamehameha butterfly)	334116	Metazoa (non-vertebrate)	Arthropoda	Insecta	Lepidoptera	5162
+A0A7M7KDA0	RYR	high	longest per species	0		Varroa destructor (Honeybee mite)	109461	Metazoa (non-vertebrate)	Arthropoda	Arachnida	Mesostigmata	5165
+A0A834U2V9	RYR	high	longest per species	0	HZH68_003236	Vespula germanica (German yellow jacket) (Paravespula germanica)	30212	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	3737
+A0ABD2CS54	RYR	high	longest per species	0	V1477_003848	Vespula maculifrons (Eastern yellow jacket) (Wasp)	7453	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	3780
+A0ABD2ABN5	RYR	high	longest per species	0	V1478_012965	Vespula squamosa (Southern yellow jacket) (Wasp)	30214	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	3780
+A0A834KKM1	RYR	high	longest per species	0	HZH66_002907	Vespula vulgaris (Yellow jacket) (Wasp)	7454	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5055
+A0A3P7G7P7	RYR	high	longest per species	0	WBA_LOCUS10141	Wuchereria bancrofti	6293	Metazoa (non-vertebrate)	Nematoda	Chromadorea	Rhabditida	5126
+A0ABP1N951	RYR	high	longest per species	0	XYLVIOL_LOCUS2399	Xylocopa violacea (Violet carpenter bee) (Apis violacea)	135666	Metazoa (non-vertebrate)	Arthropoda	Insecta	Hymenoptera	5113
+A0AA38MLI7	RYR	high	longest per species	0	Zmor_006596	Zophobas morio	2755281	Metazoa (non-vertebrate)	Arthropoda	Insecta	Coleoptera	3844
+A0A1Q9CN86	RYR	low	longest per species	1	RYR1	Symbiodinium microadriaticum (Dinoflagellate) (Zooxanthella microadriatica)	2951	SAR		Dinophyceae	Suessiales	9504
+A0A812UDA1	RYR	low	longest per species	0	RYR1	Symbiodinium natans	878477	SAR		Dinophyceae	Suessiales	878
+A0A812TWL6	RYR	low	longest per species	0	RYR1	Symbiodinium necroappetens	1628268	SAR		Dinophyceae	Suessiales	1384
+A0A812J375	RYR	low	longest per species	0	RYR1	Symbiodinium pilosum (Dinoflagellate)	2952	SAR		Dinophyceae	Suessiales	224
+A0A3Q1GLA0	RYR	high	longest per vertebrate order	0		Acanthochromis polyacanthus (spiny chromis)	80966	Vertebrata	Chordata	Actinopteri		5033
+A0AAD8LNK0	RYR	high	longest per vertebrate order	0	RYR2	Acipenser oxyrinchus oxyrinchus	40147	Vertebrata	Chordata	Actinopteri	Acipenseriformes	4951
+A0A7K6TTY8	RYR	high	longest per vertebrate order	0	Ryr2_1	Aegotheles bennettii	48278	Vertebrata	Chordata	Aves	Caprimulgiformes	4878
+A0A8T3E2R4	RYR	high	longest per vertebrate order	0	AGOR_G00027850	Albula goreensis	1534307	Vertebrata	Chordata	Actinopteri	Albuliformes	5099
+A0AAD7SGP1	RYR	high	longest per vertebrate order	0	AAFF_G00370470	Aldrovandia affinis	143900	Vertebrata	Chordata	Actinopteri	Notacanthiformes	5056
+A0A3Q0HBM0	RYR	high	longest per vertebrate order	0	RYR2	Alligator sinensis (Chinese alligator)	38654	Vertebrata	Chordata		Crocodylia	5130
+A0A3Q1CUN5	RYR	high	longest per vertebrate order	0		Amphiprion ocellaris (Clown anemonefish)	80972	Vertebrata	Chordata	Actinopteri		5078
+A0A3P8T829	RYR	high	longest per vertebrate order	0		Amphiprion percula (Orange clownfish) (Lutjanus percula)	161767	Vertebrata	Chordata	Actinopteri		5072
+A0ABM4ED99	RYR	high	longest per vertebrate order	0	RYR2	Apteryx mantelli (North Island brown kiwi)	2696672	Vertebrata	Chordata	Aves	Apterygiformes	4967
+A0A7L1TDU0	RYR	high	longest per vertebrate order	0	Ryr2	Aramus guarauna (Limpkin) (Scolopax guarauna)	54356	Vertebrata	Chordata	Aves	Gruiformes	4899
+A0ACF8G8N9	RYR	high	longest per vertebrate order	0	RYR1	Arapaima gigas (Giant arapaima) (Sudis gigas)	113544	Vertebrata	Chordata	Actinopteri	Osteoglossiformes	5070
+A0A8J7NS32	RYR	high	longest per vertebrate order	0	Ryr1	Atractosteus spatula (Alligator gar) (Lepisosteus spatula)	7917	Vertebrata	Chordata	Actinopteri	Semionotiformes	5730
+A0A2I4ASY3	RYR	high	longest per vertebrate order	0	LOC106514048	Austrofundulus limnaeus (Annual killifish)	52670	Vertebrata	Chordata	Actinopteri	Cyprinodontiformes	5068
+A0A6J3CU09	RYR	high	longest per vertebrate order	0	RYR2	Aythya fuligula (Tufted duck) (Anas fuligula)	219594	Vertebrata	Chordata	Aves	Anseriformes	5094
+A0A6P7PC10	RYR	high	longest per vertebrate order	0	ryr1b	Betta splendens (Siamese fighting fish)	158456	Vertebrata	Chordata	Actinopteri	Anabantiformes	5106
+A0A7K4Z463	RYR	high	longest per vertebrate order	0	Ryr2	Bucorvus abyssinicus (Northern ground-hornbill) (Abyssinian ground-hornbill)	153643	Vertebrata	Chordata	Aves	Bucerotiformes	4923
+A0A8C3JI06	RYR	high	longest per vertebrate order	0		Calidris pygmaea (Spoon-billed sandpiper)	425635	Vertebrata	Chordata	Aves	Charadriiformes	4964
+A0A4W3I1N0	RYR	high	longest per vertebrate order	0	LOC103190328	Callorhinchus milii (Ghost shark)	7868	Vertebrata	Chordata	Chondrichthyes	Chimaeriformes	4982
+A0ACE3BPC2	RYR	high	longest per vertebrate order	0	ACLRTB_LOCUS23085	Caretta caretta (Loggerhead sea turtle)	8467	Vertebrata	Chordata		Testudines	5005
+A0A7K8N305	RYR	high	longest per vertebrate order	0	Ryr2	Casuarius casuarius (Southern cassowary) (Struthio casuarius)	8787	Vertebrata	Chordata	Aves	Casuariiformes	4915
+A0A7K4ZJ48	RYR	high	longest per vertebrate order	0	Ryr2	Centropus unirufus	1118519	Vertebrata	Chordata	Aves	Cuculiformes	4916
+A0A6J2UPT0	RYR	high	longest per vertebrate order	0	ryr1b	Chanos chanos (Milkfish) (Mugil chanos)	29144	Vertebrata	Chordata	Actinopteri	Gonorynchiformes	5122
+A0A401T1B4	RYR	high	longest per vertebrate order	0	chiPu_0014933	Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)	137246	Vertebrata	Chordata	Chondrichthyes	Orectolobiformes	4997
+A0A7K5GP07	RYR	high	longest per vertebrate order	0	Ryr2	Chunga burmeisteri (Black-legged seriema)	1352770	Vertebrata	Chordata	Aves	Cariamiformes	4908
+A0A7L0B8W4	RYR	high	longest per vertebrate order	0	Ryr2	Ciconia maguari	52777	Vertebrata	Chordata	Aves	Ciconiiformes	4902
+A0A7K8PTY2	RYR	high	longest per vertebrate order	0	Ryr2	Cochlearius cochlearius (Boat-billed heron)	110676	Vertebrata	Chordata	Aves	Pelecaniformes	4908
+A0ABD1KI20	RYR	high	longest per vertebrate order	0	ACEWY4_005121	Coilia grayii (Gray's grenadier anchovy)	363190	Vertebrata	Chordata	Actinopteri	Clupeiformes	5415
+A0A4U5V040	RYR	high	longest per vertebrate order	0	D9C73_014780	Collichthys lucidus (Big head croaker) (Sciaena lucida)	240159	Vertebrata	Chordata	Actinopteri		5052
+A0A2I0MVC2	RYR	high	longest per vertebrate order	0	RYR2	Columba livia (Rock dove)	8932	Vertebrata	Chordata	Aves	Columbiformes	4959
+A0A9Q1HRT6	RYR	high	longest per vertebrate order	0	COCON_G00187770	Conger conger (Conger eel) (Muraena conger)	82655	Vertebrata	Chordata	Actinopteri	Anguilliformes	5071
+A0AAN8KVX8	RYR	high	longest per vertebrate order	0	J4Q44_G00340070	Coregonus suidteri	861788	Vertebrata	Chordata	Actinopteri	Salmoniformes	5117
+A0A6J2QWP3	RYR	high	longest per vertebrate order	0	ryr1b	Cottoperca gobio (Frogmouth) (Aphritis gobio)	56716	Vertebrata	Chordata	Actinopteri	Perciformes	5093
+A0A7K4KM52	RYR	high	longest per vertebrate order	0	Ryr2	Crypturellus soui	458187	Vertebrata	Chordata	Aves	Tinamiformes	4921
+A0A8P4G6Z9	RYR	high	longest per vertebrate order	0	LOC127364044	Dicentrarchus labrax (European seabass) (Morone labrax)	13489	Vertebrata	Chordata	Actinopteri		5079
+A0AC55DEI1	RYR	high	longest per vertebrate order	0	RYR2	Echinops telfairi (Lesser hedgehog tenrec)	9371	Vertebrata	Chordata	Mammalia	Afrosoricida	5082
+A0AAD9DVN5	RYR	high	longest per vertebrate order	0	P4O66_011363	Electrophorus voltai	2609070	Vertebrata	Chordata	Actinopteri	Gymnotiformes	5470
+A0A8J6F0J6	RYR	high	longest per vertebrate order	0	GDO78_013298	Eleutherodactylus coqui (Puerto Rican coqui)	57060	Vertebrata	Chordata	Amphibia	Anura	5055
+A0A2Y9J2Y3	RYR	high	longest per vertebrate order	0	LOC111144745	Enhydra lutris kenyoni (northern sea otter)	391180	Vertebrata	Chordata	Mammalia	Carnivora	5099
+A0A8C4NJ27	RYR	high	longest per vertebrate order	0		Eptatretus burgeri (Inshore hagfish)	7764	Vertebrata	Chordata	Myxini	Myxiniformes	4440
+A0ABM4QH91	RYR	high	longest per vertebrate order	0	RYR1	Equus przewalskii (Przewalski's horse) (Equus caballus przewalskii)	9798	Vertebrata	Chordata	Mammalia	Perissodactyla	5040
+A0A8C4T1S6	RYR	high	longest per vertebrate order	0	RYR2	Erpetoichthys calabaricus (Rope fish) (Calamoichthys calabaricus)	27687	Vertebrata	Chordata	Cladistia	Polypteriformes	4942
+A0A6Q2XA40	RYR	high	longest per vertebrate order	0		Esox lucius (Northern pike)	8010	Vertebrata	Chordata	Actinopteri	Esociformes	5077
+A0AA97KHJ9	RYR	high	longest per vertebrate order	0	RYR1	Eublepharis macularius (Leopard gecko) (Cyrtodactylus macularius)	481883	Vertebrata	Chordata	Lepidosauria	Squamata	5069
+A0A093JJJ1	RYR	medium	longest per vertebrate order	0	N326_13211	Eurypyga helias (Sunbittern) (Ardea helias)	54383	Vertebrata	Chordata	Aves	Eurypygiformes	267
+A0A7K9TAJ7	RYR	high	longest per vertebrate order	0	Ryr2	Galbula dea	1109041	Vertebrata	Chordata	Aves	Piciformes	4912
+A0A8J6AML9	RYR	high	longest per vertebrate order	0	J0S82_006840	Galemys pyrenaicus (Iberian desman) (Pyrenean desman)	202257	Vertebrata	Chordata	Mammalia	Eulipotyphla	5141
+A0ABM0QUY6	RYR	high	longest per vertebrate order	0	RYR1	Galeopterus variegatus (Malayan flying lemur) (Cynocephalus variegatus)	482537	Vertebrata	Chordata	Mammalia	Dermoptera	4873
+A0A6P8RXT2	RYR	high	longest per vertebrate order	0	RYR1	Geotrypetes seraphini (Gaboon caecilian) (Caecilia seraphini)	260995	Vertebrata	Chordata	Amphibia	Gymnophiona	5066
+A0A851Z027	RYR	high	longest per vertebrate order	0	Ryr2	Halcyon senegalensis	342381	Vertebrata	Chordata	Aves	Coraciiformes	4907
+A0AAE0QZQ6	RYR	high	longest per vertebrate order	0	QTP70_027392	Hemibagrus guttatus	175788	Vertebrata	Chordata	Actinopteri	Siluriformes	6286
+A0A7K9DNM1	RYR	high	longest per vertebrate order	0	Ryr2	Hemiprocne comata	243314	Vertebrata	Chordata	Aves	Apodiformes	4915
+A0A7L0GLC6	RYR	high	longest per vertebrate order	0	Ryr2	Herpetotheres cachinnans (Laughing falcon) (Falco cachinnans)	56343	Vertebrata	Chordata	Aves	Falconiformes	4927
+A0A3Q2YEG7	RYR	high	longest per vertebrate order	0		Hippocampus comes (Tiger tail seahorse)	109280	Vertebrata	Chordata	Actinopteri	Syngnathiformes	5000
+A0A3M0KP41	RYR	high	longest per vertebrate order	0	DUI87_10295	Hirundo rustica rustica	333673	Vertebrata	Chordata	Aves	Passeriformes	4953
+P21817	RYR	high	longest per vertebrate order	0	RYR1	Homo sapiens (Human)	9606	Vertebrata	Chordata	Mammalia	Primates	5038
+A0AAV2LHX1	RYR	high	longest per vertebrate order	1	KC01_LOCUS28313	Knipowitschia caucasica (Caucasian dwarf goby) (Pomatoschistus caucasicus)	637954	Vertebrata	Chordata	Actinopteri	Gobiiformes	6419
+A0A498N3J0	RYR	high	longest per vertebrate order	0	ROHU_036400	Labeo rohita (Indian major carp) (Cyprinus rohita)	84645	Vertebrata	Chordata	Actinopteri	Cypriniformes	5667
+A0A6G0I8K0	RYR	high	longest per vertebrate order	0	D5F01_LYC13598	Larimichthys crocea (Large yellow croaker) (Pseudosciaena crocea)	215358	Vertebrata	Chordata	Actinopteri		5032
+A0A4W6CQB0	RYR	high	longest per vertebrate order	0	RYR1	Lates calcarifer (Barramundi) (Holocentrus calcarifer)	8187	Vertebrata	Chordata	Actinopteri		5028
+A0AAD3M965	RYR	high	longest per vertebrate order	0	AKAME5_000332500	Lates japonicus (Japanese lates)	270547	Vertebrata	Chordata	Actinopteri		4481
+H3BGR5	RYR	high	longest per vertebrate order	0	RYR1	Latimeria chalumnae (Coelacanth)	7897	Vertebrata	Chordata		Coelacanthiformes	5024
+A0A7K8K5K2	RYR	high	longest per vertebrate order	0	Ryr2	Lophotis ruficrista	172689	Vertebrata	Chordata	Aves	Otidiformes	4906
+G3UG01	RYR	high	longest per vertebrate order	0	RYR1	Loxodonta africana (African elephant)	9785	Vertebrata	Chordata	Mammalia	Proboscidea	4982
+O13054	RYR	high	longest per vertebrate order	0	RyR1	Makaira nigricans (Atlantic blue marlin)	13604	Vertebrata	Chordata	Actinopteri	Istiophoriformes	5081
+A0A8C5YQC0	RYR	high	longest per vertebrate order	0	RYR1	Marmota marmota marmota (Alpine marmot)	9994	Vertebrata	Chordata	Mammalia	Rodentia	5558
+A0A7N8XHN7	RYR	high	longest per vertebrate order	0		Mastacembelus armatus (zig-zag eel)	205130	Vertebrata	Chordata	Actinopteri	Synbranchiformes	5021
+A0A9D3Q0Z7	RYR	high	longest per vertebrate order	0	MATL_G00121190	Megalops atlanticus (Tarpon) (Clupea gigantea)	7932	Vertebrata	Chordata	Actinopteri	Elopiformes	5086
+B4XW97	RYR	high	longest per vertebrate order	0	alpha-RYR	Meleagris gallopavo (Wild turkey)	9103	Vertebrata	Chordata	Aves	Galliformes	5050
+A0A8C6K6N8	RYR	high	longest per vertebrate order	0	LOC101874747	Melopsittacus undulatus (Budgerigar) (Psittacus undulatus)	13146	Vertebrata	Chordata	Aves	Psittaciformes	4952
+A0A8S4AVK7	RYR	high	longest per vertebrate order	0	MMEN_LOCUS5205	Menidia menidia (Atlantic silverside)	238744	Vertebrata	Chordata	Actinopteri	Atheriniformes	5087
+A0AA47MC02	RYR	high	longest per vertebrate order	0	Ryr2_0	Merluccius polli (Benguela hake) (Merluccius cadenati)	89951	Vertebrata	Chordata	Actinopteri	Gadiformes	5265
+A0A5F8GGE3	RYR	high	longest per vertebrate order	0	RYR2	Monodelphis domestica (Gray short-tailed opossum)	13616	Vertebrata	Chordata	Mammalia	Didelphimorphia	4900
+A0A667ZI75	RYR	high	longest per vertebrate order	0	LOC115371805	Myripristis murdjan (pinecone soldierfish)	586833	Vertebrata	Chordata	Actinopteri	Holocentriformes	5082
+A0A7L2GS92	RYR	high	longest per vertebrate order	0	Ryr3_1	Nyctibius grandis (Great potoo)	48427	Vertebrata	Chordata	Aves	Nyctibiiformes	4184
+A0ABM4GUM2	RYR	high	longest per vertebrate order	0	RYR1	Odocoileus virginianus (White-tailed deer)	9874	Vertebrata	Chordata	Mammalia	Artiodactyla	5069
+A0A091X8F0	RYR	high	longest per vertebrate order	0	N306_02740	Opisthocomus hoazin (Hoatzin) (Phasianus hoazin)	30419	Vertebrata	Chordata	Aves	Opisthocomiformes	4899
+A0A6I8PHX0	RYR	high	longest per vertebrate order	0	RYR1	Ornithorhynchus anatinus (Duckbill platypus)	9258	Vertebrata	Chordata	Mammalia	Monotremata	5024
+A0A8B7A406	RYR	high	longest per vertebrate order	0	RYR2	Orycteropus afer afer	1230840	Vertebrata	Chordata	Mammalia	Tubulidentata	5031
+P11716	RYR	high	longest per vertebrate order	0	RYR1	Oryctolagus cuniculus (Rabbit)	9986	Vertebrata	Chordata	Mammalia	Lagomorpha	5037
+A0A3B3DVI6	RYR	high	longest per vertebrate order	0		Oryzias melastigma (Marine medaka)	30732	Vertebrata	Chordata	Actinopteri	Beloniformes	4992
+A0A8C8EFM0	RYR	high	longest per vertebrate order	0		Otus sunia (Oriental scops-owl)	257818	Vertebrata	Chordata	Aves	Strigiformes	4913
+A0A6P7JMQ9	RYR	high	longest per vertebrate order	0	LOC114446700	Parambassis ranga (Indian glassy fish)	210632	Vertebrata	Chordata	Actinopteri		5091
+A0A7L3BI79	RYR	high	longest per vertebrate order	0	Ryr2_0	Pelecanoides urinatrix (Common diving petrel) (Procellaria urinatrix)	37079	Vertebrata	Chordata	Aves	Procellariiformes	262
+A0AAJ7XD62	RYR	high	longest per vertebrate order	0	LOC116953891	Petromyzon marinus (Sea lamprey)	7757	Vertebrata	Chordata	Hyperoartia	Petromyzontiformes	5168
+A0A093Q3N4	RYR	high	longest per vertebrate order	0	N336_07644	Phalacrocorax carbo (Great cormorant) (Pelecanus carbo)	9209	Vertebrata	Chordata	Aves	Suliformes	2627
+A0A6P5JJ00	RYR	high	longest per vertebrate order	0	RYR1	Phascolarctos cinereus (Koala)	38626	Vertebrata	Chordata	Mammalia	Diprotodontia	5051
+A0AAV7MYQ2	RYR	high	longest per vertebrate order	0	NDU88_006147	Pleurodeles waltl (Iberian ribbed newt)	8319	Vertebrata	Chordata	Amphibia	Caudata	5043
+A0A7L0SLC4	RYR	high	longest per vertebrate order	0	Ryr2	Podilymbus podiceps (Pied-billed grebe)	9252	Vertebrata	Chordata	Aves	Podicipediformes	4929
+A0A7K5Y608	RYR	high	longest per vertebrate order	0	Ryr2	Pterocles burchelli	2585816	Vertebrata	Chordata	Aves	Pterocliformes	4927
+A0A9Y6M6M8	RYR	high	longest per vertebrate order	0	ryr1b	Pundamilia nyererei	303518	Vertebrata	Chordata	Actinopteri	Cichliformes	5090
+A0A3B4EP93	RYR	high	longest per vertebrate order	0		Pygocentrus nattereri (Red-bellied piranha)	42514	Vertebrata	Chordata	Actinopteri	Characiformes	4984
+A0AA40L2U5	RYR	high	longest per vertebrate order	0	Ryr2	Pygoscelis papua (Gentoo penguin)	30457	Vertebrata	Chordata	Aves	Sphenisciformes	4914
+A0A7J8CLL8	RYR	high	longest per vertebrate order	0	HJG63_017094	Rousettus aegyptiacus (Egyptian fruit bat) (Pteropus aegyptiacus)	9407	Vertebrata	Chordata	Mammalia	Chiroptera	5063
+A0A672IZ60	RYR	high	longest per vertebrate order	0	ryr1b	Salarias fasciatus (Jewelled blenny) (Blennius fasciatus)	181472	Vertebrata	Chordata	Actinopteri	Blenniiformes	4758
+G3W4H4	RYR	high	longest per vertebrate order	0	RYR3	Sarcophilus harrisii (Tasmanian devil) (Sarcophilus laniarius)	9305	Vertebrata	Chordata	Mammalia	Dasyuromorphia	4877
+A0AAV1NEA5	RYR	high	longest per vertebrate order	0	FSCOSCO3_A011795	Scomber scombrus (Atlantic mackerel) (Scomber vernalis)	13677	Vertebrata	Chordata	Actinopteri	Scombriformes	5088
+A0ACB8X2G5	RYR	high	longest per vertebrate order	0	L3Q82_006477	Scortum barcoo (barcoo grunter)	214431	Vertebrata	Chordata	Actinopteri	Centrarchiformes	4988
+A0A401PEZ4	RYR	high	longest per vertebrate order	0	scyTo_0006043	Scyliorhinus torazame (Cloudy catshark) (Catulus torazame)	75743	Vertebrata	Chordata	Chondrichthyes	Carcharhiniformes	5073
+A0A3B4T4J8	RYR	high	longest per vertebrate order	0		Seriola dumerili (Greater amberjack) (Caranx dumerili)	41447	Vertebrata	Chordata	Actinopteri	Carangiformes	5037
+A0AAV6SHM4	RYR	high	longest per vertebrate order	0	JOB18_035750	Solea senegalensis (Senegalese sole)	28829	Vertebrata	Chordata	Actinopteri	Pleuronectiformes	5075
+A0A671X656	RYR	high	longest per vertebrate order	0	ryr1b	Sparus aurata (Gilthead sea bream)	8175	Vertebrata	Chordata	Actinopteri	Spariformes	5039
+A0A673BU35	RYR	high	longest per vertebrate order	0	ryr1b	Sphaeramia orbicularis (orbiculate cardinalfish)	375764	Vertebrata	Chordata	Actinopteri	Kurtiformes	5023
+A0A8D0HT65	RYR	high	longest per vertebrate order	0		Sphenodon punctatus (Tuatara) (Hatteria punctata)	8508	Vertebrata	Chordata	Lepidosauria	Sphenodontia	4803
+A0A7L0BL57	RYR	high	longest per vertebrate order	0	Ryr2	Spizaetus tyrannus (black hawk-eagle)	252798	Vertebrata	Chordata	Aves	Accipitriformes	4914
+A0A9Y4NDA3	RYR	high	longest per vertebrate order	0	LOC103368261	Stegastes partitus (bicolor damselfish)	144197	Vertebrata	Chordata	Actinopteri		5094
+A0A5C6PAS5	RYR	high	longest per vertebrate order	0	D4764_12G0002420	Takifugu flavidus (sansaifugu)	433684	Vertebrata	Chordata	Actinopteri	Tetraodontiformes	5158
+A0A093D6H4	RYR	high	longest per vertebrate order	0	N340_04650	Tauraco erythrolophus (Red-crested turaco)	121530	Vertebrata	Chordata	Aves	Musophagiformes	4697
+A0A2Y9QKD8	RYR	high	longest per vertebrate order	0	RYR2	Trichechus manatus latirostris (Florida manatee)	127582	Vertebrata	Chordata	Mammalia	Sirenia	5041
+A0A7L0EX22	RYR	high	longest per vertebrate order	0	Ryr1_1	Trogon melanurus (Black-tailed trogon)	56311	Vertebrata	Chordata	Aves	Trogoniformes	269
+L8YHG1	RYR	high	longest per vertebrate order	0	TREES_T100006874	Tupaia chinensis (Chinese tree shrew) (Tupaia belangeri chinensis)	246437	Vertebrata	Chordata	Mammalia	Scandentia	4763
+A0A852KF89	RYR	high	longest per vertebrate order	0	Ryr2_0	Urocolius indicus (Red-faced mousebird) (Colius indicus)	458196	Vertebrata	Chordata	Aves	Coliiformes	4860
+A0AAV1FTN0	RYR	high	longest per vertebrate order	0	XNOV1_A018318	Xyrichtys novacula (Pearly razorfish) (Hemipteronotus novacula)	13765	Vertebrata	Chordata	Actinopteri	Labriformes	5078

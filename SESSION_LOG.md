@@ -393,3 +393,103 @@ Review: 24 → 32 pages.
 from the *Dictyostelium* result: the InterPro enumeration cannot be the whole
 census, because the defining signature demonstrably misses a real member.
 
+
+---
+
+## 2026-09-03 — S2: uncapped InterPro enumeration (census v2)
+
+**Task.** Enumerate the family's Pfam signatures to exhaustion, make a
+positive ITPR/RYR call on every record, and deliver census v2 with a delta
+against what the app's own searches found.
+
+**Result.** 15,421 proteins across 1,488 taxa — ITPR 6,433, RYR 6,807,
+unassigned 2,181 (14.1 %). All three seed signatures walked their cursor
+chains to the end (63 + 67 + 60 pages, no restarts). Raw pages, both parsed
+intermediates, the 47 MB seeded-space FASTA and the full 1,251-sequence
+representative set are under the data root; the repo gets the census, the
+audit tables and a 48-sequence per-phylum core panel.
+
+**The API is not what its own count says it is.** InterPro advertises a
+`count` per signature and it is wrong in both directions — PF08709 +168,
+PF01365 +56, PF08454 −176 against what the same endpoint actually serves,
+stable across re-queries. In all three cases the *served* set matches
+UniProt's independent count to within two records, so the advertised number
+is the wrong one. Both directions bite, and the second one bit here: the
+first version of this task's completeness test used `served ≥ advertised`
+and failed PF08454 on a walk that had run its cursor to the end. The test
+is now cursor exhaustion with both counts recorded beside it (**D20**).
+
+**And the documented host was down for the whole run.** `/interpro/api/`
+answered 1 request in 12 while `/interpro/wwwapi/` — the host the InterPro
+website itself calls, same payloads, same counts — answered 12 of 12.
+`list_proteins_with_pfam` now tries both hosts before it sleeps, and got
+resume support (`start_url`/`on_page`, `CursorExpired`) so a dead cursor
+restarts a signature rather than silently resuming onto a shifted set.
+
+**The call.** Positive architecture test (**D14b**): RYR on any RyR-specific
+signature, ITPR on the *complete* five-signature architecture with none of
+them. Absence counts as evidence only when the architecture is complete,
+because a RyR annotated well enough to show all five shared signatures
+would also show its own. Length is on every row and never decides.
+Audited two ways: against 6,191 gene symbols the rule never sees (**0
+disagreements**), and on sequence alone via D14's bait margin over the core
+panel — 27/27 and 26/26 agreement wherever the margin decides, with all
+four sign flips inside D7's no-call band, exactly where S1 predicted the
+deep branches would land.
+
+**Getting the architecture cheaply was the design move.** Per-protein
+InterPro lookups would have been ~15,000 requests against an API answering
+one in twelve. UniProt returns the same Pfam matches as a *field*
+(`xref_pfam`) — one streamed query gives the whole search space with its
+architecture, lineage and length. That also made the two databases
+independent views to reconcile rather than pool: they agree on 15,417 of
+15,421, and the four InterPro-only rows are *Taenia solium* fragments with
+newly-issued accessions where UniProt's cross-reference has not caught up.
+
+**Three results the task was not asked for.**
+
+*A single-signature census fails.* PF08709 is the IP3-binding core, the
+signature that names the family, and building the census on it alone would
+have missed 2,914 records — 758 of them called ITPR, across 385 taxa. Only
+66.5 % of the space carries all three seeds. This closes the question the
+review-figure session raised: *Dictyostelium* iplA carries PF01365 and
+PF08454 and none of PF08709/PF02815/PF00520, and last session's note said
+S2's enumeration would not return it. It does — the union recovers it — and
+it is correctly `unassigned` at 2 of 5 signatures, which is the honest
+outcome and the argument for S3's profiles (**D21**).
+
+*The plant and fungal records are phylogenetically clean.* Every one of the
+20 Viridiplantae ITPR calls is **Chlorophyta** (11 taxa, *Chlamydomonas
+reinhardtii* with the complete architecture) and **Streptophyta has zero**
+from 15 records in 13 taxa. Every fungal call sits in an early-diverging
+phylum — Mucoromycota 15, Chytridiomycota 6, Basidiobolomycota 3,
+Entomophthoromycota 1 — and Dikarya contributes no records to the search
+space at all. That is the shape of a loss in the derived lineage of both
+kingdoms. It is still a statement about what UniProt holds; S20/S23 make it
+a statement about genomes.
+
+*The size band caught what the architecture could not.* Seven records carry
+the complete five-signature architecture in 1,528–1,993 aa — 700+ residues
+short of the shortest real member — and none is flagged `Fragment`, because
+a truncated gene model submitted as a whole protein is not marked as one.
+The call on them is right and the records are wrong. That is the case for
+keeping length as a column after it stopped being part of the call.
+
+**Two figure fixes worth recording.** The first draft of `census_space` and
+`census_growth` were stacked bars on a log axis, where segments do not add
+up — the ITPR share looked like 80 % of a bar it was 45 % of. Both are now
+size-on-log and composition-on-linear as separate panels. And
+`census_growth` carries its own caveat in its title, because census v1 is
+the app's search bundles rather than a family-wide harvest, so "100 % new"
+outside the vertebrates is the searches' scope, not their failure.
+
+**Files.** `scripts/s2_{lib,interpro,uniprot,call,sequences,verify,delta,
+figures,report,run}.py`; `results/census_v2/` (14 tables, 5 figures,
+`report.md`); `src/databases/interpro.py` (host failover, resume, backoff);
+`src/utils/family.py` (`CENSUS_PFAM_IDS` is now the three enumeration seeds,
+MIR excluded with the reason).
+
+**Next session: S3** — profile-HMM sweep (`itpr.hmm` + `ryr.hmm`) over
+vertebrate reference proteomes, jackhmmer to convergence, census v3. It
+inherits two jobs from here: resolve the 2,181 unassigned records, and give
+the deep branches the best-profile assignment the bait margin cannot.

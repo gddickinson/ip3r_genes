@@ -1,0 +1,8 @@
+accession	gene	species	group	length	fragment	protein_existence	reviewed	pfams
+A0A8T2J808	GDO86_004943	Hymenochirus boettgeri (Congo dwarf clawed frog)	Vertebrata	1528		Inferred from homology	0	PF00520;PF01365;PF02815;PF08454;PF08709
+A0A8T2J034	GDO86_004943	Hymenochirus boettgeri (Congo dwarf clawed frog)	Vertebrata	1556		Inferred from homology	0	PF00520;PF01365;PF02815;PF08454;PF08709
+A0A8T2J539	GDO86_004943	Hymenochirus boettgeri (Congo dwarf clawed frog)	Vertebrata	1563		Inferred from homology	0	PF00520;PF01365;PF02815;PF08454;PF08709
+A0A9J6C9M0	PVAND_008274	Polypedilum vanderplanki (Sleeping chironomid midge)	Metazoa (non-vertebrate)	1880		Inferred from homology	0	PF00520;PF01365;PF02815;PF08454;PF08709
+A0A9N9RQE9	CHIRRI_LOCUS3757	Chironomus riparius	Metazoa (non-vertebrate)	1950		Inferred from homology	0	PF00520;PF01365;PF02815;PF08454;PF08709
+A0A8T2IWK9	GDO86_007249	Hymenochirus boettgeri (Congo dwarf clawed frog)	Vertebrata	1986		Inferred from homology	0	PF00520;PF01365;PF02815;PF08454;PF08709
+A0A8T2IVU7	GDO86_007249	Hymenochirus boettgeri (Congo dwarf clawed frog)	Vertebrata	1993		Inferred from homology	0	PF00520;PF01365;PF02815;PF08454;PF08709

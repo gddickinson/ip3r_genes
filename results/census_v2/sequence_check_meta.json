@@ -1,0 +1,34 @@
+{
+ "panel": "census_v2_core_panel.faa",
+ "n_panel": 48,
+ "n_baits": 6,
+ "mafft_calls": [
+  {
+   "argv": [
+    "mafft",
+    "--auto",
+    "--quiet",
+    "/dev/stdin"
+   ],
+   "returncode": 0,
+   "stdout_bytes": 1160952
+  }
+ ],
+ "alignment_columns": 21133,
+ "seconds": 331,
+ "no_call_band": 0.1,
+ "agreement": {
+  "full_alignment": {
+   "decisive_n": 27,
+   "decisive_agree": 27,
+   "band_n": 21,
+   "band_agree": 20
+  },
+  "covered_only": {
+   "decisive_n": 26,
+   "decisive_agree": 26,
+   "band_n": 22,
+   "band_agree": 19
+  }
+ }
+}
