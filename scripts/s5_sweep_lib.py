@@ -113,7 +113,23 @@ def load_baits() -> tuple[dict[str, str], dict[str, dict]]:
 
 # Per-chunk reference size for giant genomes. miniprot has no reference-index
 # batching, so a 40 Gbp assembly cannot be indexed in one pass.
-CHUNK_BP = 4_000_000_000
+#
+# **Measured, not inherited.** The PIEZO port used 4 Gbp on the strength of a
+# 32 GB machine. `s5_test_chunked.py` measured miniprot's actual appetite on
+# this project's panel: 11.76 GB peak RSS over a 1.86 Gbp reference at 2
+# threads, i.e. **6.32 GB per Gbp**, which projects a 4 Gbp chunk to ~25 GB.
+# That fits the 34 GB machine only just, and the giants run unattended. 2.5
+# Gbp projects to ~16 GB and leaves real headroom; the cost is more chunks
+# (Protopterus 40 Gbp -> ~16 rather than 10), and chunk count is cheap because
+# a locus never spans a chunk boundary — chunks hold whole contigs.
+#
+# Note the cap cannot bind below one contig: a single 2 Gbp lungfish
+# chromosome forms a 2 Gbp chunk whatever this says, because splitting a
+# contig would require remapping every coordinate.
+CHUNK_BP = 2_500_000_000
+
+#: Measured RSS per Gbp of reference, for the headroom check above.
+MINIPROT_GB_RSS_PER_GBP = 6.32
 
 def run_miniprot(fna: Path, baits_faa: Path, out_gff: Path, threads: int = 8,
                  max_intron: int = DEFAULT_MAX_INTRON) -> None:
