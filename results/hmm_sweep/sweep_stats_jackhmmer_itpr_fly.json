@@ -1,0 +1,30 @@
+{
+ "db": "/Volumes/FANTOM/IP3R_DATA/proteomes/vertebrata_refprot.fasta",
+ "evalue": "1e-5",
+ "cpu": 8,
+ "max_iter": 10,
+ "jackhmmer": {
+  "itpr_fly": {
+   "tag": "itpr_fly",
+   "accession": "P29993",
+   "rounds": 10,
+   "converged": true,
+   "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/jackhmmer_itpr_fly.domtblout",
+   "log": "/Volumes/FANTOM/IP3R_DATA/hmmer/jackhmmer_itpr_fly.log",
+   "rounds_json": "/Volumes/FANTOM/IP3R_DATA/hmmer/jackhmmer_itpr_fly_rounds.json",
+   "new_targets": [
+    5914,
+    695,
+    71,
+    58,
+    470,
+    24,
+    1,
+    2,
+    0,
+    0
+   ],
+   "elapsed_s": 9033.2
+  }
+ }
+}

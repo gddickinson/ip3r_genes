@@ -1,0 +1,49 @@
+{
+ "rel_margin": 0.1,
+ "min_score": 30.0,
+ "evalue": "1e-5",
+ "records_scored": 15381,
+ "census_v2_records": 15421,
+ "seeds_in_set": 56,
+ "all_records": {
+  "agree": 11930,
+  "disagree": 1,
+  "profile_unassigned": 89,
+  "truth_unassigned": 3361,
+  "not_in_truth": 0,
+  "agreement": 0.9999
+ },
+ "seeds_excluded": {
+  "agree": 11875,
+  "disagree": 1,
+  "profile_unassigned": 89,
+  "truth_unassigned": 3360,
+  "not_in_truth": 0,
+  "agreement": 0.9999
+ },
+ "vs_call_with_symbol_fallback": {
+  "agree": 12612,
+  "disagree": 2,
+  "profile_unassigned": 570,
+  "truth_unassigned": 2141,
+  "not_in_truth": 0,
+  "agreement": 0.9998
+ },
+ "confusion_s2_vs_profile": {
+  "ITPR \u2192 ITPR": 5663,
+  "RYR \u2192 ITPR": 1,
+  "RYR \u2192 RYR": 6267,
+  "RYR \u2192 unassigned": 89,
+  "unassigned \u2192 ITPR": 2074,
+  "unassigned \u2192 RYR": 240,
+  "unassigned \u2192 unassigned": 1047
+ },
+ "s2_arch_unassigned_called_by_profile": 2314,
+ "symbol_fallback_records": 1219,
+ "symbol_fallback_overturned": 1,
+ "profile_calls": {
+  "RYR": 6507,
+  "ITPR": 7738,
+  "unassigned": 1136
+ }
+}

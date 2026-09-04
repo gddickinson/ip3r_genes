@@ -1,0 +1,11 @@
+seed_tag	accession	round	new_targets	targets_in_msa	n_included	converged
+itpr_fly	P29993	1	5914	5914	5914	True
+itpr_fly	P29993	2	695	6609	6609	True
+itpr_fly	P29993	3	71	6677	6677	True
+itpr_fly	P29993	4	58	6734	6734	True
+itpr_fly	P29993	5	470	7203	7203	True
+itpr_fly	P29993	6	24	7225	7225	True
+itpr_fly	P29993	7	1	7226	7226	True
+itpr_fly	P29993	8	2	7228	7228	True
+itpr_fly	P29993	9	0	7228	7228	True
+itpr_fly	P29993	10	0		7228	True

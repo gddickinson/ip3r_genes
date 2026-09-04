@@ -19,18 +19,21 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S2 complete — the family is now counted.** The literature
-baseline is verified with a citation on every claim
-([`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md), 32 pages, 12 figures),
-the discovery scorer is benchmarked at **96 % recall / 100 % specificity**
-against 25 known receptors and 31 impostors
-([`results/benchmark_controls/`](results/benchmark_controls/)), and the domain
-enumeration has now returned **15,421 proteins across 1,488 taxa — 6,433
-IP3 receptors, 6,807 ryanodine receptors and 2,181 fragments too partial to
-call** ([`results/census_v2/`](results/census_v2/)). Every record carries a
-positive architecture call with its reason; the rule agrees with all 6,191
-gene symbols it never sees, and with an independent sequence test wherever
-that test can decide. The next session runs **S3**.
+**Status: S3 complete — the census now carries two independent verdicts on
+every protein.** The literature baseline is verified with a citation on every
+claim ([`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md), 32 pages,
+12 figures), the discovery scorer is benchmarked at **96 % recall / 100 %
+specificity** ([`results/benchmark_controls/`](results/benchmark_controls/)),
+and the domain enumeration returned **15,421 proteins across 1,488 taxa**
+([`results/census_v2/`](results/census_v2/)). S3 then built two profile
+HMMs — `itpr.hmm` and `ryr.hmm` — and swept **763 vertebrate reference
+proteomes (14.4 M proteins)**. Profile assignment and the domain-architecture
+rule read entirely different evidence and **agree on 11,875 of 11,876
+records**; the profiles resolve **2,314 of the 3,361 the architecture rule
+could not call**, and add **618 proteins the domain search never returned**.
+Census v3 is **16,039 records — 8,000 IP3 receptors, 7,432 ryanodine
+receptors, 605 uncallable, 2 conflicts**
+([`results/census_v3/`](results/census_v3/)). The next session runs **S4**.
 
 ---
 
@@ -137,8 +140,8 @@ One task per session. Full ledger with dependencies and results in
 | S0 | Literature baseline + scope confirmation | ✅ completed 2026-08-18 |
 | S1 | Toolchain + positive/negative controls (RyR is the sharp decoy) | ✅ completed 2026-08-18 |
 | S2 | Uncapped InterPro enumeration → census v2 | ✅ completed 2026-09-03 |
-| S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) + convergence argument | ⏳ pending — **next** |
-| S4 | Genome scope manifest (the denominator) | ⏳ pending |
+| S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) + convergence argument | ✅ completed 2026-09-03 |
+| S4 | Genome scope manifest (the denominator) | ⏳ pending — **next** |
 | S5 | Genomic sweep → per-genome ledger + novel gene models | ⏳ pending |
 | S20 | Non-vertebrate sweep — the family's true range | ⏳ pending |
 | S23 | Invertebrate / protist / plant / fungal genome sweep | ⏳ pending |
@@ -167,6 +170,33 @@ One task per session. Full ledger with dependencies and results in
 ## Findings so far
 
 Plain-language entries per task: [`FINDINGS.md`](FINDINGS.md). Headlines:
+
+**S3 — a second opinion on 15,000 proteins, and one correction.** The
+domain rule and the sequence profiles read completely different evidence —
+one reads what a database says a protein carries, the other reads the
+residues — and they disagree on **exactly one record in 11,876**. That one
+is a real correction: a 2,845-aa slime-mould protein filed as a ryanodine
+receptor because it carries a domain *named* "Ryanodine Receptor TM 4-6",
+which is in fact the pore both families share. The profiles score it 303 to
+133 the other way. Meanwhile the profiles resolve **2,314 of the 3,361
+records the domain rule had to leave uncallable**, and the sweep's misses,
+checked one by one against the search database, include **zero sensitivity
+failures**.
+→ [`results/census_v3/report.md`](results/census_v3/report.md)
+
+![Profile separation](results/census_v3/figures/profile_separation.png)
+
+**S3 — the sister family's shared module nearly wrecked the sweep.** The
+first run called **14,981 vertebrate proteins ryanodine receptors** —
+troponins, calcium-binding proteins, ubiquitin ligases — because `ryr.hmm`
+contains SPRY, a small module that sits in thousands of unrelated proteins
+and that `itpr.hmm` has nothing to match against. The gate is measured, not
+chosen: a match must span **200 model positions**, which is the shortest this
+project has measured the family's own defining domain (PF08709) to be, and
+comfortably above the longest SPRY it has measured (137). A by-product is
+the project's largest annotation lead so far — **1,794 hits carrying a real
+family gene name that fall under the gate**, because their gene models have
+been broken into pieces too short to recognise.
 
 **S1 — the search called all six ryanodine receptors IP3 receptors.**
 Benchmarked against 25 known family members and 31 impostors, the discovery

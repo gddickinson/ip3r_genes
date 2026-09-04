@@ -1,0 +1,28 @@
+{
+ "db_path": "/Volumes/FANTOM/IP3R_DATA/proteomes/vertebrata_refprot.fasta",
+ "n_proteomes": 763,
+ "n_seqs": 14414821,
+ "n_residues": 6972755129,
+ "db_bytes": 8803983604,
+ "concat_elapsed_s": 381.1,
+ "group": "vertebrata",
+ "query": "taxonomy_id:7742+AND+reference:true",
+ "download": {
+  "counts": {
+   "ok": 763,
+   "cached": 0,
+   "failed": 0
+  },
+  "failures": [],
+  "elapsed_s": 131.4
+ },
+ "first_header_parsed": {
+  "name": "tr|A0A0G2JEH0|A0A0G2JEH0_MOUSE",
+  "accession": "A0A0G2JEH0",
+  "reviewed": false,
+  "gene": "Igkv4-71",
+  "species": "Mus musculus",
+  "taxon_id": 10090,
+  "protein_name": "Immunoglobulin kappa chain variable 4-71 (Fragment)"
+ }
+}

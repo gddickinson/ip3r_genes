@@ -1,0 +1,100 @@
+{
+ "v2_rows": 15421,
+ "novel_rows": 618,
+ "v3_rows": 16039,
+ "calls": {
+  "RYR": 7432,
+  "ITPR": 8000,
+  "unassigned": 605,
+  "conflict": 2
+ },
+ "instruments": {
+  "both": 12669,
+  "profile": 2194,
+  "neither": 605,
+  "architecture": 571
+ },
+ "call_changes": 1578,
+ "changes_by_transition": {
+  "unassigned \u2192 RYR": 197,
+  "unassigned \u2192 ITPR": 1379,
+  "RYR \u2192 conflict": 2
+ },
+ "conflicts": 2,
+ "missed_by_hmm": {
+  "total": 2787,
+  "by_verdict": {
+   "not in the sweep DB \u2014 never searched": 800,
+   "not in the DB; another entry of the same gene was hit": 1987
+  },
+  "sensitivity_failures": 0
+ },
+ "swept_proteomes": 763,
+ "proteomes_without_itpr": 15,
+ "novel_calls": {
+  "ITPR": 188,
+  "RYR": 430
+ },
+ "novel_evidence": {
+  "partial": 618
+ },
+ "module_only_declined": 12609,
+ "subthreshold_family_fragments": 1794,
+ "subthreshold_fragment_genes": {
+  "Ryr3_1": 224,
+  "Itpr2_0": 212,
+  "Itpr1_0": 198,
+  "Ryr3_0": 182,
+  "Ryr3_2": 169,
+  "Ryr1": 89,
+  "Ryr2_1": 77,
+  "Itpr1_2": 69,
+  "Ryr1_0": 56,
+  "Ryr2_0": 54,
+  "Ryr1_1": 52,
+  "Ryr3_3": 50
+ },
+ "module_only_top_genes": {
+  "Rspry1": 263,
+  "Tnnc2": 263,
+  "Ddx1": 241,
+  "Cabp1": 241,
+  "Ccm1": 238,
+  "Rnf123": 234,
+  "Ryr3_1": 224,
+  "Ranbp10": 219,
+  "Cabp2": 214,
+  "Itpr2_0": 212,
+  "Ranbp9": 204,
+  "Itpr1_0": 198
+ },
+ "jackhmmer": {
+  "itpr1_human": {
+   "verdict": "killed",
+   "accepted_rounds": 9,
+   "killed_at": 10,
+   "rule": "K3",
+   "reason": "reached the 10-round ceiling without converging; no completeness claim may rest on this run",
+   "tag": "itpr1_human",
+   "accession": "Q14643",
+   "converged": false,
+   "n_rounds": 10,
+   "accepted_targets": 7226,
+   "offfamily_growth": 1.72
+  },
+  "itpr_fly": {
+   "verdict": "clean",
+   "accepted_rounds": 10,
+   "killed_at": null,
+   "rule": "",
+   "reason": "no kill rule fired",
+   "tag": "itpr_fly",
+   "accession": "P29993",
+   "converged": true,
+   "n_rounds": 10,
+   "accepted_targets": 7235,
+   "offfamily_growth": 1.75
+  }
+ },
+ "elapsed_s": 25.9
+}

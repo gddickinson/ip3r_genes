@@ -304,3 +304,98 @@ length means the gene model is truncated, and none of the seven is flagged
 as a fragment by the database, because a truncated model submitted as a
 whole protein is not marked as one. The biology is right and the record is
 wrong. *(pending: S18)*
+
+---
+
+## S3 — 2026-09-04 — a second opinion on every protein, and it agrees
+
+**Two completely different ways of asking "is this an IP3 receptor?" now
+agree on 11,875 of 11,876 proteins.** The first, built last session, reads
+what a database says about a protein: which domain signatures it carries,
+and — crucially — which ryanodine-receptor-specific ones it does not. The
+second, built this session, ignores annotation entirely and reads the
+protein's own sequence against two statistical models, one distilled from
+34 known IP3 receptors spanning humans to amoebae, the other from 22 known
+ryanodine receptors. Every protein is scored against both; whichever model
+fits better wins, but only if it wins by a clear margin.
+
+They should agree, and they do — but that is worth something precisely
+because they could have disagreed. One instrument reads a label, the other
+reads the molecule. The two families they are separating share every domain
+that defines either of them, which is the hazard this whole project is
+built around.
+
+**The single disagreement is a genuine correction.** A slime mould protein
+from *Tieghemostelium lacteum*, 2,845 residues — IP3-receptor-sized, not
+ryanodine-receptor-sized — was filed as a ryanodine receptor last session
+because it carries a domain literally named "Ryanodine Receptor TM 4-6".
+That domain is the channel's *pore*, which is the part the two families
+share; naming it after one of them was a historical accident of which
+protein got sequenced first. The sequence models are unambiguous: it scores
+303 against the IP3-receptor model and 133 against the ryanodine one. Last
+session's own write-up flagged that one of its domain rules was only
+conditionally trustworthy. This is that caution turning out to be right,
+once, in 11,876 chances.
+
+**The uncallable pile shrinks by 70 %.** Last session left 3,361 records
+that the domain rule could not call, because you cannot conclude anything
+from a protein having *some* of the domains — an absence might mean the
+protein lacks it or that nobody annotated it. A sequence model has no such
+problem. **2,314 of those 3,361 now have a call** (1,379 IP3 receptors,
+197 ryanodine receptors among the records already in the census). What is
+left is 605 records that neither method can call — genuinely too fragmentary
+to be anything to anyone.
+
+**The search found 618 proteins the domain search never returned.** These
+are proteins sitting in curated vertebrate reference proteomes — hagfish,
+plaice, a bat, an Antarctic icefish — that the domain-based census missed
+entirely. They are all short, 209–942 residues, which is the explanation:
+a fragmentary gene model carries too few domains to be enumerated by a
+domain query, but a sequence model recognises what is there. This is a
+measure of what an annotation-derived census costs. *(pending: S18)*
+
+**And in the other direction, nothing was missed.** The stronger claim is
+the one that could have failed: of 2,787 IP3-receptor records from the
+searched species that the sweep did *not* return, every single one was
+checked against the search database itself — and **not one of them was in
+the database and overlooked**. All 2,787 are entries the curated
+per-species protein sets simply do not contain, so they were never searched
+at all. Within its declared search space the sweep has no known blind spot.
+
+**The trap we walked into, and out of.** The first run of the search called
+**14,981 vertebrate proteins ryanodine receptors** — an absurd number, about
+twenty per species. The cause: ryanodine receptors contain a small module
+called SPRY that also sits in thousands of entirely unrelated proteins, so
+troponins, calcium-binding proteins and ubiquitin ligases were all scoring
+against the ryanodine model and winning by default, because the IP3 model
+has no SPRY to compete with. The fix is a rule with a measured basis rather
+than a chosen one: a match only counts as family evidence if it spans at
+least 200 positions of the model, because 200 is the shortest we have ever
+measured the family's own defining domain to be, and 137 is the longest we
+have measured SPRY to be. There is a clean gap between those two numbers and
+the threshold sits in it.
+
+**A side-effect of that rule is the project's biggest annotation lead yet.**
+1,794 of the proteins the gate turns away carry an IP3- or ryanodine-receptor
+gene name of their own. They are not impostors — they are real family genes
+whose database entries have been broken into pieces too small to recognise.
+That is a concrete, per-species list of broken gene models to check against
+the actual DNA. *(pending: S18, S10)*
+
+**Three receptors per species is the norm.** Across 758 vertebrate species,
+the commonest number of IP3-receptor records is exactly three — the three
+paralogues — and species with many more turn out to be the ones with the
+deepest annotation, not the ones with extra genes. Fifteen species have
+none at all, and those fifteen have unusually thin protein sets (a median of
+10,042 proteins, against a well-annotated ~20,000+). On this evidence they
+are gaps in annotation, not absences of the gene, and the project's own
+rules forbid calling them losses until the genomes themselves are searched.
+*(pending: S4, S5)*
+
+**One methodological embarrassment, caught and fixed.** Rebuilding the two
+models after an unrelated edit produced *different models* from identical
+input — the alignment program had been left to use as many processor cores
+as it liked, and combines its results in whatever order they finish. A model
+that changes when you rebuild it cannot be the model any published result
+was produced with. Both are now built single-threaded and byte-identical
+across repeated runs, and every file records its own checksum.

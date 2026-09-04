@@ -1,0 +1,11 @@
+seed_tag	accession	round	new_targets	targets_in_msa	n_included	converged
+itpr1_human	Q14643	1	5934	5934	5934	False
+itpr1_human	Q14643	2	681	6613	6613	False
+itpr1_human	Q14643	3	71	6683	6683	False
+itpr1_human	Q14643	4	42	6725	6725	False
+itpr1_human	Q14643	5	452	7176	7176	False
+itpr1_human	Q14643	6	20	7194	7194	False
+itpr1_human	Q14643	7	6	7199	7199	False
+itpr1_human	Q14643	8	12	7210	7210	False
+itpr1_human	Q14643	9	9	7219	7219	False
+itpr1_human	Q14643	10	3		7222	False

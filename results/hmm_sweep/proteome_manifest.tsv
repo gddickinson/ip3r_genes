@@ -1,0 +1,764 @@
+Proteome Id	Organism	Organism Id	Protein count
+UP000000589	Mus musculus (Mouse)	10090	54855
+UP000002494	Rattus norvegicus (Rat)	10116	52824
+UP000005640	Homo sapiens (Human)	9606	147520
+UP000009136	Bos taurus (Bovine)	9913	51611
+UP000000437	Danio rerio (Zebrafish) (Brachydanio rerio)	7955	69241
+UP000001073	Nomascus leucogenys (Northern white-cheeked gibbon) (Hylobates leucogenys)	61853	40414
+UP000001074	Myotis lucifugus (Little brown bat)	59463	20651
+UP000001595	Pongo abelii (Sumatran orangutan) (Pongo pygmaeus abelii)	9601	39473
+UP000001811	Oryctolagus cuniculus (Rabbit)	9986	41466
+UP000002279	Ornithorhynchus anatinus (Duckbill platypus)	9258	32824
+UP000005215	Ictidomys tridecemlineatus (Thirteen-lined ground squirrel) (Spermophilus tridecemlineatus)	43179	25333
+UP000005225	Otolemur garnettii (Small-eared galago) (Garnett's greater bushbaby)	30611	19931
+UP000005447	Cavia porcellus (Guinea pig)	10141	25047
+UP000007267	Pelodiscus sinensis (Chinese softshell turtle) (Trionyx sinensis)	13735	20509
+UP000007646	Loxodonta africana (African elephant)	9785	25615
+UP000007648	Sarcophilus harrisii (Tasmanian devil) (Sarcophilus laniarius)	9305	36299
+UP000007754	Taeniopygia guttata (Zebra finch) (Poephila guttata)	59729	31341
+UP000008227	Sus scrofa (Pig)	9823	46004
+UP000008912	Ailuropoda melanoleuca (Giant panda)	9646	38536
+UP000029965	Chlorocebus sabaeus (Green monkey) (Simia sabaea)	60711	19229
+UP000233040	Cebus imitator (Panamanian white-faced capuchin) (Cebus capucinus imitator)	2715852	40117
+UP000291000	Capra hircus (Goat)	9925	32605
+UP000472240	Rhinolophus ferrumequinum (Greater horseshoe bat)	59479	33505
+UP000472266	Strigops habroptila (Kakapo)	2489341	24356
+UP000472275	Aquila chrysaetos chrysaetos	223781	24817
+UP000594220	Crocodylus porosus (Saltwater crocodile) (Estuarine crocodile)	8502	27142
+UP000681084	Bothrops jararaca (Jararaca) (Bothrops jajaraca)	8724	84
+UP000694381	Nannospalax galili (Northern Israeli blind subterranean mole rat) (Spalax galili)	1026970	26759
+UP000694385	Jaculus jaculus (Lesser Egyptian jerboa)	51337	25129
+UP000694391	Canis lupus dingo (dingo)	286419	33928
+UP000694394	Microcebus murinus (Gray mouse lemur) (Lemur murinus)	30608	36769
+UP000694398	Chinchilla lanigera (Long-tailed chinchilla) (Chinchilla villidera)	34839	25185
+UP000694399	Panthera leo (Lion)	9689	31097
+UP000694407	Marmota marmota marmota (Alpine marmot)	9994	27309
+UP000694409	Serinus canaria (Island canary) (Fringilla canaria)	9135	23421
+UP000694412	Coturnix japonica (Japanese quail) (Coturnix coturnix japonica)	93934	27309
+UP000694414	Prolemur simus (Greater bamboo lemur) (Hapalemur simus)	1328070	37838
+UP000694417	Urocitellus parryii (Arctic ground squirrel) (Spermophilus parryii)	9999	29187
+UP000694426	Anser brachyrhynchus (Pink-footed goose)	132585	26558
+UP000694540	Catagonus wagneri (Chacoan peccary)	51154	29374
+UP000694544	Moschus moschiferus (Siberian musk deer) (Moschus sibiricus)	68415	32989
+UP000694547	Peromyscus maniculatus bairdii (Prairie deer mouse)	230844	28057
+UP000694554	Phocoena sinus (Vaquita)	42100	31318
+UP000694561	Monodon monoceros (Narwhal) (Ceratodon monodon)	40151	30226
+UP000694564	Sciurus vulgaris (Eurasian red squirrel)	55149	33006
+UP000805418	Canis lupus familiaris (Dog) (Canis familiaris)	9615	43615
+UP001501940	Amphiprion ocellaris (Clown anemonefish)	80972	69194
+UP000000539	Gallus gallus (Chicken)	9031	43712
+UP000000715	Mustela putorius furo (European domestic ferret) (Mustela furo)	9669	46261
+UP000001038	Oryzias latipes (Japanese rice fish) (Japanese killifish)	8090	36128
+UP000001519	Gorilla gorilla gorilla (Western lowland gorilla)	9595	44723
+UP000001645	Meleagris gallopavo (Wild turkey)	9103	28235
+UP000001646	Anolis carolinensis (Green anole) (American chameleon)	28377	32752
+UP000002277	Pan troglodytes (Chimpanzee)	9598	48769
+UP000002280	Monodelphis domestica (Gray short-tailed opossum)	13616	36220
+UP000002281	Equus caballus (Horse)	9796	69432
+UP000002852	Xiphophorus maculatus (Southern platyfish) (Platypoecilus maculatus)	8083	35279
+UP000005207	Oreochromis niloticus (Nile tilapia) (Tilapia nilotica)	8128	74622
+UP000005226	Takifugu rubripes (Japanese pufferfish) (Fugu rubripes)	31033	51079
+UP000006718	Macaca mulatta (Rhesus macaque)	9544	44389
+UP000007303	Tetraodon nigroviridis (Spotted green pufferfish) (Chelonodon nigroviridis)	99883	23074
+UP000007635	Gasterosteus aculeatus aculeatus (three-spined stickleback)	481459	61640
+UP000008143	Xenopus tropicalis (Western clawed frog) (Silurana tropicalis)	8364	37711
+UP000008225	Callithrix jacchus (White-tufted-ear marmoset) (Simia Jacchus)	9483	48338
+UP000008672	Latimeria chalumnae (Coelacanth)	7897	23431
+UP000010552	Pteropus alecto (Black flying fox)	9402	19520
+UP000010556	Myotis davidii (David's myotis) (Vespertilio davidii)	225400	15446
+UP000011518	Tupaia chinensis (Chinese tree shrew) (Tupaia belangeri chinensis)	246437	20824
+UP000016665	Ficedula albicollis (Collared flycatcher) (Muscicapa albicollis)	59894	28852
+UP000016666	Anas platyrhynchos platyrhynchos (Northern mallard)	8840	27053
+UP000018467	Astyanax mexicanus (Blind cave fish) (Astyanax fasciatus mexicanus)	7994	39383
+UP000018468	Lepisosteus oculatus (Spotted gar)	7918	22463
+UP000018936	Ophiophagus hannah (King cobra) (Naja hannah)	8665	18387
+UP000028760	Poecilia formosa (Amazon molly) (Limia formosa)	48698	30440
+UP000028761	Papio anubis (Olive baboon)	9555	43406
+UP000028990	Fukomys damarensis (Damaraland mole rat) (Cryptomys damarensis)	885580	20405
+UP000031443	Chelonia mydas (Green sea-turtle) (Chelonia agassizi)	8469	18960
+UP000031515	Chaetura pelagica (Chimney swift) (Hirundo pelagica)	8897	3162
+UP000050525	Alligator mississippiensis (American alligator)	8496	31974
+UP000051836	Amazona aestiva (Blue-fronted Amazon parrot)	12930	16092
+UP000052967	Merops nubicus (Northern carmine bee-eater)	57421	7657
+UP000052976	Corvus brachyrhynchos (American crow)	85066	13621
+UP000052978	Myotis brandtii (Brandt's bat)	109478	19243
+UP000053001	Leptosomus discolor (Madagascar cuckoo roller) (Cuculus discolor)	188344	9574
+UP000053119	Egretta garzetta (Little egret)	188379	13489
+UP000053149	Pterocles gutturalis (yellow-throated sandgrouse)	240206	11309
+UP000053238	Phalacrocorax carbo (Great cormorant) (Pelecanus carbo)	9209	8990
+UP000053258	Manacus vitellinus (golden-collared manakin)	328815	12707
+UP000053283	Nipponia nippon (Crested ibis) (Ibis nippon)	128390	14132
+UP000053286	Aptenodytes forsteri (Emperor penguin)	9233	13704
+UP000053309	Balearica regulorum gibbericeps (East African grey crowned-crane)	100784	8821
+UP000053330	Chlamydotis macqueenii (Macqueen's bustard)	187382	8277
+UP000053369	Mesitornis unicolor (brown roatelo)	54374	9395
+UP000053537	Acanthisitta chloris (rifleman)	57068	9650
+UP000053584	Struthio camelus australis	441894	13815
+UP000053605	Opisthocomus hoazin (Hoatzin) (Phasianus hoazin)	30419	12773
+UP000053615	Colius striatus (Speckled mousebird)	57412	7080
+UP000053620	Antrostomus carolinensis (Chuck-will's-widow) (Caprimulgus carolinensis)	279965	8957
+UP000053638	Phaethon lepturus (White-tailed tropicbird)	97097	9152
+UP000053641	Tinamus guttatus (White-throated tinamou)	94827	13379
+UP000053661	Tauraco erythrolophus (Red-crested turaco)	121530	10099
+UP000053700	Phoenicopterus ruber ruber	9218	8220
+UP000053745	Cathartes aura (Turkey vulture) (Vultur aura)	43455	7760
+UP000053760	Cuculus canorus (Common cuckoo)	55661	13582
+UP000053806	Fulmarus glacialis (Northern fulmar)	30455	8115
+UP000053840	Nestor notabilis (Kea)	176057	9137
+UP000053854	Podiceps cristatus (Great crested grebe)	345573	7899
+UP000053858	Charadrius vociferus (Killdeer) (Aegialitis vocifera)	50402	14257
+UP000053872	Columba livia (Rock dove)	8932	17309
+UP000053875	Dryobates pubescens (Downy woodpecker) (Picoides pubescens)	118200	13097
+UP000054064	Buceros rhinoceros silvestris	175836	10603
+UP000054081	Pygoscelis adeliae (Adelie penguin)	9238	12848
+UP000054116	Cariama cristata (Red-legged seriema)	54380	8694
+UP000054150	Pelecanus crispus (Dalmatian pelican)	36300	8686
+UP000054190	Tyto alba (Barn owl)	56313	9263
+UP000054232	Eurypyga helias (Sunbittern) (Ardea helias)	54383	7979
+UP000054244	Apaloderma vittatum (Bar-tailed trogon)	57397	7903
+UP000054308	Calypte anna (Anna's hummingbird) (Archilochus anna)	9244	13267
+UP000054313	Gavia stellata (Red-throated diver) (Colymbus stellatus)	37040	7730
+UP000081671	Dipodomys ordii (Ord's kangaroo rat)	10020	26496
+UP000092124	Neotoma lepida (Desert woodrat)	56216	24274
+UP000186698	Xenopus laevis (African clawed frog)	8355	62027
+UP000189704	Carlito syrichta (Philippine tarsier) (Tarsius syrichta)	1868482	30230
+UP000189705	Alligator sinensis (Chinese alligator)	38654	34855
+UP000190648	Patagioenas fasciata monilis	372326	24737
+UP000192220	Austrofundulus limnaeus (Annual killifish)	52670	32322
+UP000197619	Lonchura striata (white-rumped munia)	40157	15252
+UP000198323	Callipepla squamata (Scaled quail)	9009	16973
+UP000221080	Ictalurus punctatus (Channel catfish) (Silurus punctatus)	7998	42996
+UP000228934	Aquarana catesbeiana (American bullfrog) (Rana catesbeiana)	8400	25491
+UP000233020	Aotus nancymaae (Ma's night monkey)	37293	41725
+UP000233060	Cercocebus atys (Sooty mangabey) (Cercocebus torquatus atys)	9531	45022
+UP000233080	Colobus angolensis palliatus (Peters' Angolan colobus)	336983	40241
+UP000233100	Macaca fascicularis (Crab-eating macaque) (Cynomolgus monkey)	9541	50204
+UP000233120	Macaca nemestrina (Pig-tailed macaque)	9545	45001
+UP000233140	Mandrillus leucophaeus (Drill) (Papio leucophaeus)	9568	40661
+UP000233160	Propithecus coquereli (Coquerel's sifaka) (Propithecus verreauxi coquereli)	379532	32113
+UP000233180	Rhinopithecus bieti (Black snub-nosed monkey) (Pygathrix bieti)	61621	42660
+UP000233200	Rhinopithecus roxellana (Golden snub-nosed monkey) (Pygathrix roxellana)	61622	44576
+UP000233220	Saimiri boliviensis boliviensis (Bolivian squirrel monkey)	39432	39640
+UP000233556	Limosa lapponica baueri	1758121	22950
+UP000237246	Bambusicola thoracicus (Chinese bamboo-partridge) (Perdix thoracica)	9083	17669
+UP000240080	Pan paniscus (Pygmy chimpanzee) (Bonobo)	9597	42996
+UP000242450	Cervus elaphus hippelaphus (Central European red deer)	46360	19232
+UP000242638	Poecilia reticulata (Guppy) (Acanthophacelus reticulatus)	8081	33943
+UP000245320	Tursiops truncatus (Atlantic bottle-nosed dolphin) (Delphinus truncatus)	9739	50385
+UP000245340	Odobenus rosmarus divergens (Pacific walrus)	9708	25136
+UP000245341	Leptonychotes weddellii (Weddell seal) (Otaria weddellii)	9713	34127
+UP000246464	Scophthalmus maximus (Turbot) (Psetta maxima)	52904	24929
+UP000248480	Trichechus manatus latirostris (Florida manatee)	127582	31514
+UP000248481	Neomonachus schauinslandi (Hawaiian monk seal) (Monachus schauinslandi)	29088	31927
+UP000248482	Enhydra lutris kenyoni (northern sea otter)	391180	32812
+UP000248483	Delphinapterus leucas (Beluga whale)	9749	40685
+UP000248484	Physeter macrocephalus (Sperm whale) (Physeter catodon)	9755	42599
+UP000250572	Gambusia affinis (Western mosquitofish) (Heterandria affinis)	33528	19443
+UP000252040	Neophocaena asiaeorientalis asiaeorientalis (Yangtze finless porpoise) (Neophocaena phocaenoides subsp. asiaeorientalis)	1706337	32061
+UP000257200	Acanthochromis polyacanthus (spiny chromis)	80966	33479
+UP000261340	Amphilophus citrinellus (Midas cichlid) (Cichlasoma citrinellum)	61819	31741
+UP000261360	Seriola lalandi dorsalis	1841481	33056
+UP000261380	Xiphophorus couchianus (Monterrey platyfish)	32473	28020
+UP000261420	Seriola dumerili (Greater amberjack) (Caranx dumerili)	41447	32409
+UP000261480	Poecilia mexicana	48701	33125
+UP000261500	Poecilia latipinna (sailfin molly)	48699	30911
+UP000261520	Periophthalmus magnuspinnatus	409849	30051
+UP000261540	Paramormyrops kingsleyae	1676925	39949
+UP000261560	Oryzias melastigma (Marine medaka)	30732	34855
+UP000261580	Neolamprologus brichardi (Fairy cichlid) (Lamprologus brichardi)	32507	31886
+UP000261600	Monopterus albus (Asian swamp eel) (Muraena alba)	43700	32112
+UP000261620	Mola mola (Ocean sunfish) (Tetraodon mola)	94237	28962
+UP000261640	Mastacembelus armatus (zig-zag eel)	205130	59113
+UP000261660	Labrus bergylta (ballan wrasse)	56723	37792
+UP000261680	Ursus maritimus (Polar bear) (Thalarctos maritimus)	29073	34868
+UP000264800	Kryptolebias marmoratus (Mangrove killifish) (Rivulus marmoratus)	37003	29685
+UP000264820	Hippocampus comes (Tiger tail seahorse)	109280	27735
+UP000264840	Haplochromis burtoni (Burton's mouthbrooder) (Chromis burtoni)	8153	34332
+UP000265000	Fundulus heteroclitus (Killifish) (Mummichog)	8078	33571
+UP000265020	Cyprinodon variegatus (Sheepshead minnow)	28743	31881
+UP000265040	Anabas testudineus (Climbing perch) (Anthias testudineus)	64144	64128
+UP000265080	Amphiprion percula (Orange clownfish) (Lutjanus percula)	161767	33681
+UP000265100	Astatotilapia calliptera (Eastern river bream) (Chromis callipterus)	8154	74908
+UP000265120	Cynoglossus semilaevis (Tongue sole)	244447	32408
+UP000265140	Esox lucius (Northern pike)	8010	74441
+UP000265160	Maylandia zebra (zebra mbuna)	106582	37294
+UP000265300	Lipotes vexillifer (Yangtze river dolphin)	118797	24991
+UP000269221	Hirundo rustica rustica	333673	34534
+UP000269945	Gulo gulo (Wolverine) (Gluton)	48420	19667
+UP000276834	Chloebia gouldiae (Gouldian finch) (Erythrura gouldiae)	44316	18274
+UP000281406	Anabarilius grahami (Kanglang fish) (Barilius grahami)	495550	23663
+UP000283210	Oryzias javanicus (Javanese ricefish) (Aplocheilus javanicus)	123683	21400
+UP000286641	Callorhinus ursinus (Northern fur seal)	34884	45213
+UP000287033	Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)	137246	33497
+UP000288216	Scyliorhinus torazame (Cloudy catshark) (Catulus torazame)	75743	27602
+UP000289886	Acipenser ruthenus (Sterlet sturgeon) (Huso ruthenus)	7906	22004
+UP000290572	Labeo rohita (Indian major carp) (Cyprinus rohita)	84645	32379
+UP000291020	Gopherus agassizii (Agassiz's desert tortoise)	38772	31812
+UP000291022	Ursus americanus (American black bear) (Euarctos americanus)	9643	32512
+UP000295070	Perca flavescens (American yellow perch) (Morone flavescens)	8167	21644
+UP000296049	Anas platyrhynchos (Mallard) (Anas boschas)	8839	16592
+UP000297703	Platysternon megacephalum (big-headed turtle)	55544	21371
+UP000298787	Collichthys lucidus (Big head croaker) (Sciaena lucida)	240159	27208
+UP000299084	Camelus dromedarius (Dromedary) (Arabian camel)	9838	31080
+UP000314980	Lates calcarifer (Barramundi) (Holocentrus calcarifer)	8187	57546
+UP000314981	Bos indicus x Bos taurus (Hybrid cattle)	30522	42150
+UP000314982	Hucho hucho (huchen)	62062	90501
+UP000314983	Electrophorus electricus (Electric eel) (Gymnotus electricus)	8005	52901
+UP000314986	Callorhinchus milii (Ghost shark)	7868	49246
+UP000314987	Vombatus ursinus (Common wombat)	29139	31139
+UP000316079	Danionella cerebrum	2873325	32815
+UP000319801	Bagarius yarrelli (Goonch) (Bagrus yarrelli)	175774	17117
+UP000322234	Bos mutus (wild yak)	72004	21168
+UP000324632	Triplophysa tibetana	1572043	23866
+UP000326062	Muntiacus reevesi (Reeves' muntjac) (Cervus reevesi)	9886	25423
+UP000326458	Muntiacus muntjak (Barking deer) (Indian muntjac)	9888	24841
+UP000327468	Pangasianodon hypophthalmus (Striped catfish) (Helicophagus hypophthalmus)	310915	21221
+UP000327493	Etheostoma spectabile (orangethroat darter)	54343	18371
+UP000335636	Marmota monax (Woodchuck)	9995	39793
+UP000386466	Lynx pardinus (Iberian lynx) (Felis pardina)	191816	30929
+UP000424527	Larimichthys crocea (Large yellow croaker) (Pseudosciaena crocea)	215358	23960
+UP000437017	Balaenoptera physalus (Fin whale) (Balaena physalus)	9770	19643
+UP000465112	Perca fluviatilis (European perch)	8168	24246
+UP000472241	Lynx canadensis (Canada lynx) (Felis canadensis)	61383	35025
+UP000472260	Sinocyclocheilus anshuiensis	1608454	100275
+UP000472261	Phasianus colchicus (Common pheasant)	9054	25507
+UP000472262	Sinocyclocheilus grahami (Dianchi golden-line fish) (Barbus grahami)	75366	102126
+UP000472263	Myripristis murdjan (pinecone soldierfish)	586833	55953
+UP000472264	Echeneis naucrates (Live sharksucker)	173247	54685
+UP000472265	Sparus aurata (Gilthead sea bream)	8175	69199
+UP000472267	Salarias fasciatus (Jewelled blenny) (Blennius fasciatus)	181472	55738
+UP000472268	Suricata suricatta (Meerkat)	37032	37195
+UP000472269	Athene cunicularia (Burrowing owl) (Speotyto cunicularia)	194338	22627
+UP000472270	Sinocyclocheilus rhinocerous	307959	97522
+UP000472271	Sphaeramia orbicularis (orbiculate cardinalfish)	375764	57747
+UP000472272	Podarcis muralis (Wall lizard) (Lacerta muralis)	64176	36445
+UP000472273	Pseudonaja textilis (Eastern brown snake)	8673	27546
+UP000472274	Terrapene triunguis (Three-toed box turtle)	2587831	31610
+UP000472276	Oreochromis aureus (Israeli tilapia) (Chromis aureus)	47969	47152
+UP000472277	Salmo trutta (Brown trout)	8032	114756
+UP000475037	Crocuta crocuta (Spotted hyena)	9678	16983
+UP000503349	Channa argus (Northern snakehead) (Ophicephalus argus)	215402	22264
+UP000504602	Geospiza fortis (Medium ground-finch)	48883	19288
+UP000504611	Notothenia coriiceps (black rockcod)	8208	29852
+UP000504612	Notechis scutatus (mainland tiger snake)	8663	26669
+UP000504617	Thamnophis sirtalis	35019	22845
+UP000504623	Chrysochloris asiatica (Cape golden mole)	185453	24871
+UP000504624	Lepidothrix coronata (blue-crowned manakin)	321398	28808
+UP000504627	Pipra filicauda (Wire-tailed manakin)	649802	29367
+UP000504628	Phyllostomus discolor (pale spear-nosed bat)	89673	38708
+UP000504630	Cottoperca gobio (Frogmouth) (Aphritis gobio)	56716	32803
+UP000504632	Chanos chanos (Milkfish) (Mugil chanos)	29144	28969
+UP000504639	Aythya fuligula (Tufted duck) (Anas fuligula)	219594	23986
+UP000504640	Sapajus apella (Brown-capped capuchin) (Cebus apella)	9515	49214
+UP000515126	Mus caroli (Ryukyu mouse) (Ricefield mouse)	10089	38135
+UP000515129	Carassius auratus (Goldfish)	7957	82898
+UP000515131	Puma concolor (Mountain lion) (Felis concolor)	9696	22782
+UP000515140	Phascolarctos cinereus (Koala)	38626	37507
+UP000515145	Parambassis ranga (Indian glassy fish)	210632	35462
+UP000515150	Betta splendens (Siamese fighting fish)	158456	43456
+UP000515152	Clupea harengus (Atlantic herring)	7950	40751
+UP000515156	Microcaecilia unicolor	1415580	30222
+UP000515159	Geotrypetes seraphini (Gaboon caecilian) (Caecilia seraphini)	260995	38603
+UP000515161	Gymnodraco acuticeps (Antarctic dragonfish)	8218	39778
+UP000515165	Zalophus californianus (California sealion)	9704	47365
+UP000515202	Pteropus vampyrus (Large flying fox)	132908	34712
+UP000515203	Octodon degus (Degu) (Sciurus degus)	10160	35368
+UP000515208	Bison bison bison (North American plains bison)	43346	29505
+UP000516260	Takifugu bimaculatus	433685	19991
+UP000516988	Steatornis caripensis (Oilbird)	48435	14501
+UP000517678	Cnemophilus loriae (Loria's bird-of-paradise)	254448	14099
+UP000517892	Centropus unirufus	1118519	13993
+UP000518266	Dissostichus mawsoni (Antarctic cod)	36200	29104
+UP000518305	Hemiprocne comata	243314	13784
+UP000518911	Atlantisia rogersi (Inaccessible Island rail)	2478892	13649
+UP000519115	Spizaetus tyrannus (black hawk-eagle)	252798	14343
+UP000519225	Pluvianellus socialis (Magellanic plover)	227228	14306
+UP000519239	Ceuthmochares aereus	1961834	12202
+UP000519684	Catharus fuscescens (Veery) (Turdus fuscescens)	159581	13906
+UP000520463	Formicarius rufipectus	1118560	13577
+UP000520535	Brachypteracias leptosomus (short-legged ground-roller)	135165	13408
+UP000520962	Piprites chloris (Wing-barred manakin)	114369	14125
+UP000521322	Dasyornis broadbenti (rufous bristle-bird)	243059	14364
+UP000521525	Agelaius phoeniceus (Red-winged blackbird) (Oriolus phoeniceus)	39638	14089
+UP000521578	Menura novaehollandiae (superb lyrebird)	47692	14416
+UP000522270	Pterocles burchelli	2585816	13839
+UP000522331	Leucopsar rothschildi (Bali myna) (Rothschild's mynah)	127929	13433
+UP000522663	Odontophorus gujanensis (marbled wood quail)	886794	13809
+UP000523146	Toxostoma redivivum (California thrasher)	99882	14127
+UP000523279	Dicaeum eximium	667154	13622
+UP000524007	Leiothrix lutea (Red-billed leiothrix) (Sylvia lutea)	36275	13253
+UP000524187	Casuarius casuarius (Southern cassowary) (Struthio casuarius)	8787	13719
+UP000524451	Cettia cetti	68486	14828
+UP000524542	Urocynchramus pylzowi	571890	13671
+UP000524558	Chroicocephalus maculipennis (Brown-hooded gull) (Larus maculipennis)	287016	13922
+UP000525089	Pachyramphus minor	369605	13717
+UP000525158	Smutsornis africanus (Double-banded courser) (Rhinoptilus africanus)	240209	13665
+UP000525205	Cochlearius cochlearius (Boat-billed heron)	110676	14058
+UP000525319	Drymodes brunneopygia	626378	13533
+UP000525416	Rynchops niger (Black skimmer)	227184	14305
+UP000525565	Asarcornis scutulata	75869	14696
+UP000525714	Mionectes macconnelli (McConnell's flycatcher)	254557	14138
+UP000526602	Orthonyx spaldingii (Chowchilla)	38397	14263
+UP000526889	Edolisoma coerulescens	2585810	13645
+UP000526942	Corythaixoides concolor (Grey go-away-bird)	103956	14210
+UP000527178	Hippolais icterina (icterine warbler)	68497	13629
+UP000527232	Oceanodroma tethys (Wedge-rumped storm-petrel) (Hydrobates tethys)	79633	13990
+UP000527355	Myotis myotis (Greater mouse-eared bat) (Vespertilio myotis)	51298	45799
+UP000528411	Balaeniceps rex (Shoebill)	33584	12216
+UP000528690	Anhinga rufa (African darter)	317792	10475
+UP000529728	Regulus satrapa (Golden-crowned kinglet)	13245	12984
+UP000529852	Furnarius figulus	463165	13848
+UP000529965	Erithacus rubecula (European robin)	37610	13660
+UP000530263	Columbina picui (Picui ground-dove)	115618	12280
+UP000530962	Irena cyanogastra (Philippine fairy-bluebird)	175120	14199
+UP000531151	Geococcyx californianus (Greater roadrunner) (Saurothera californiana)	8947	13463
+UP000531168	Amazona guildingii	175529	14181
+UP000531559	Nothocercus julius	2585813	13353
+UP000531938	Nothoprocta ornata	83376	13721
+UP000532252	Motacilla alba (White wagtail) (Pied wagtail)	45807	13502
+UP000532437	Erythrocercus mccallii	107208	14010
+UP000532545	Bombycilla garrulus (Bohemian waxwing) (Lanius garrulus)	125297	13775
+UP000532908	Stercorarius parasiticus (Parasitic jaeger) (Arctic skua)	54059	13851
+UP000533896	Lophotis ruficrista	172689	13899
+UP000533954	Eudromia elegans (Elegant crested-tinamou)	8805	13636
+UP000534107	Bucco capensis (collared puffbird)	135168	14383
+UP000534407	Oriolus oriolus (Eurasian golden oriole) (Coracias oriolus)	181099	13920
+UP000534426	Crypturellus undulatus	48396	14020
+UP000534626	Falcunculus frontatus (Eastern shriketit)	254539	14436
+UP000534634	Illadopsis cleaveri (blackcap illadopsis)	201329	13397
+UP000534930	Myiagra hebetior	381031	13880
+UP000535403	Calonectris borealis (Cory's shearwater)	1323832	14417
+UP000535478	Uria aalge (Common mure) (Colymbus aalge)	13746	14163
+UP000535705	Pycnonotus jocosus (Red-whiskered bulbul) (Lanius jocosus)	182897	13881
+UP000536033	Alca torda (Razorbill)	28689	13958
+UP000536092	Certhia brachydactyla (short-toed tree-creeper)	73330	13859
+UP000536260	Syrrhaptes paradoxus (Pallas's sandgrouse)	302527	13505
+UP000536381	Semnornis frantzii	91796	10801
+UP000537039	Ciconia maguari	52777	13285
+UP000537234	Dicrurus megarhynchus	450177	14215
+UP000537522	Chauna torquata (Southern screamer)	30388	13466
+UP000537747	Mystacornis crossleyi	98133	10563
+UP000537779	Tyrannus savana (Fork-tailed flycatcher) (Muscivora tyrannus)	137541	13553
+UP000538472	Nyctibius bracteatus (Rufous potoo)	48426	13937
+UP000538515	Sylvia borin (Garden warbler) (Motacilla borin)	73324	13496
+UP000538725	Melanocharis versteri (Fan-tailed berrypecker)	254552	13955
+UP000538817	Nothoprocta pentlandii	2585814	13401
+UP000539032	Scopus umbretta (Hammerkop)	33581	12270
+UP000539599	Sagittarius serpentarius (Secretary bird)	56258	12811
+UP000539920	Ploceus nigricollis	441696	13506
+UP000540071	Poecile atricapillus (Black-capped chickadee) (Parus atricapillus)	48891	14163
+UP000540089	Rissa tridactyla (Black-legged kittiwake) (Larus tridactyla)	75485	14770
+UP000540150	Eulacestoma nigropectus (wattled ploughbill)	461239	14287
+UP000540762	Brachypodius melanocephalos (black-headed bulbul)	3235156	12859
+UP000540952	Tachuris rubrigastra	495162	14316
+UP000541181	Chunga burmeisteri (Black-legged seriema)	1352770	14396
+UP000541249	Eurystomus gularis	325343	13936
+UP000541332	Pampusana beccarii (Western bronze ground-dove)	2953425	14573
+UP000541605	Chaetorhynchus papuensis (pygmy drongo)	254446	14303
+UP000541811	Arenaria interpres (Ruddy turnstone) (Tringa interpres)	54971	13845
+UP000542358	Oreocharis arfaki (tit berrypecker)	979223	13980
+UP000542434	Ciccaba nigrolineata	1118524	13820
+UP000542689	Ifrita kowaldi (blue-capped ifrita)	461245	14004
+UP000543364	Cephalopterus ornatus (Amazonian umbrellabird)	114276	13893
+UP000544127	Upupa epops (Eurasian hoopoe)	57439	13728
+UP000545329	Erpornis zantholeuca	1112836	13291
+UP000545332	Crypturellus soui	458187	14071
+UP000545435	Rostratula benghalensis (greater painted-snipe)	118793	14195
+UP000545574	Panurus biarmicus (Bearded tit)	181101	12783
+UP000546235	Caloenas nicobarica (Nicobar pigeon)	187106	14055
+UP000546986	Cisticola juncidis	52622	13372
+UP000547499	Lanius ludovicianus (Loggerhead shrike)	28713	13675
+UP000547721	Ptilorrhoa leucosticta	449384	13491
+UP000548317	Struthidea cinerea	181839	14122
+UP000549091	Nesospiza acunhae	381881	14047
+UP000549157	Zosterops hypoxanthus	2485327	13698
+UP000549499	Crotophaga sulcirostris (Groove-billed ani)	33598	13847
+UP000549775	Acrocephalus arundinaceus (Great reed-warbler)	39621	13628
+UP000550059	Setophaga kirtlandii (Kirtland's warbler) (Dendroica kirtlandii)	298831	13871
+UP000550086	Jacana jacana (Wattled jacana) (Parra jacana)	54508	13209
+UP000550309	Onychorhynchus coronatus (Royal flycatcher)	360224	14340
+UP000550660	Trogon melanurus (Black-tailed trogon)	56311	14123
+UP000550707	Molossus molossus (Pallas' mastiff bat) (Vespertilio molossus)	27622	53557
+UP000551127	Bucorvus abyssinicus (Northern ground-hornbill) (Abyssinian ground-hornbill)	153643	14386
+UP000551443	Xiphorhynchus elegans (elegant woodcreeper)	269412	13517
+UP000551758	Diceros bicornis minor (South-central black rhinoceros)	77932	19602
+UP000551823	Nyctiprogne leucopyga	382315	13366
+UP000552319	Quiscalus mexicanus (Great-tailed grackle) (Cassidix mexicanus)	64278	13590
+UP000553648	Serilophus lunatus (silver-breasted broadbill)	239386	14091
+UP000553798	Prunella fulvescens (Brown accentor)	670355	13347
+UP000553862	Molothrus ater (Brown-headed cowbird)	84834	15960
+UP000554720	Anthoscopus minutus (Southern penduline-tit)	156561	13552
+UP000555275	Podilymbus podiceps (Pied-billed grebe)	9252	14192
+UP000555367	Pelecanoides urinatrix (Common diving petrel) (Procellaria urinatrix)	37079	14741
+UP000555649	Herpetotheres cachinnans (Laughing falcon) (Falco cachinnans)	56343	14321
+UP000556165	Phaetusa simplex (large-billed tern)	297813	13248
+UP000556200	Neopipo cinnamomea	456388	13978
+UP000556761	Thalassarche chlororhynchos (Atlantic yellow-nosed albatross) (Diomedea chlororhynchos)	54017	11811
+UP000557196	Aleadryas rufinucha (rufous-naped whistler)	461220	13884
+UP000557230	Indicator maculatus (spotted honeyguide)	545262	13941
+UP000557268	Hylia prasina (green hylia)	208073	13444
+UP000557271	Chionis minor (Black-faced sheathbill)	227182	14280
+UP000557315	Daphoenositta chrysoptera (varied sittella)	254528	13857
+UP000557426	Zapornia atra (Henderson crake)	2585822	13329
+UP000558164	Leptocoma aspasia	2585812	13699
+UP000558460	Horornis vulcanius	2585811	9840
+UP000558488	Pipistrellus kuhlii (Kuhl's pipistrelle)	59472	39728
+UP000558509	Thryothorus ludovicianus (Carolina wren) (Sylvia ludoviciana)	74200	13660
+UP000558958	Sakesphorus luctuosus	419690	14098
+UP000559068	Aegotheles bennettii	48278	13683
+UP000560066	Neodrepanis coruscans (wattled asity)	254563	8830
+UP000560247	Melospiza melodia (Song sparrow) (Fringilla melodia)	44397	13912
+UP000560386	Ardeotis kori	89386	13689
+UP000561178	Rhipidura dahli	667186	14156
+UP000562238	Circaetus pectoralis (black-chested snake-eagle)	321084	14132
+UP000562322	Alectura lathami (Australian brush turkey)	81907	13377
+UP000562415	Probosciger aterrimus (Palm cockatoo)	141839	13967
+UP000563060	Fregetta grallaria (White-bellied storm-petrel) (Procellaria grallaria)	79628	13503
+UP000563107	Chaetops frenatus (Rufous rock-jumper)	221966	13217
+UP000564407	Malurus elegans (Red-winged fairywren)	720584	14016
+UP000564466	Oxyruncus cristatus (sharpbill)	114331	14018
+UP000564784	Loxia curvirostra (Red crossbill)	64802	14544
+UP000564948	Rhagologus leucostigma	156170	14205
+UP000565207	Pedionomus torquatus (Plains-wanderer)	227192	13302
+UP000565698	Thinocorus orbignyianus	161742	14037
+UP000565754	Oenanthe oenanthe (Northern wheatear)	279966	13538
+UP000565785	Rhinopomastus cyanomelas (Common scimitarbill)	113115	14764
+UP000566314	Buphagus erythrorhynchus (red-billed oxpecker)	245048	11060
+UP000566440	Galbula dea	1109041	14637
+UP000566454	Prunella himalayana	670356	13876
+UP000567570	Aramus guarauna (Limpkin) (Scolopax guarauna)	54356	14274
+UP000567624	Smithornis capensis	363769	13835
+UP000567822	Sylvietta virens (Green crombec)	208069	13764
+UP000567826	Nyctibius grandis (Great potoo)	48427	14050
+UP000567872	Anseranas semipalmata (Magpie goose) (Anas semipalmata)	8851	14206
+UP000568556	Chordeiles acutipennis (Lesser nighthawk) (Caprimulgus acutipennis)	118183	14023
+UP000569728	Oceanites oceanicus (Wilson's storm petrel) (Procellaria oceanica)	79653	14204
+UP000570016	Rhynochetos jubatus (kagu)	54386	13676
+UP000570288	Oxylabes madagascariensis (white-throated Oxylabes)	98144	8969
+UP000570547	Pachycephala philippinensis (yellow-belllied whistler)	449367	13318
+UP000570592	Pardalotus punctatus (spotted pardalote)	254575	13660
+UP000571324	Origma solitaria	720586	14437
+UP000571567	Himantopus himantopus (Black-winged stilt) (Charadrius himantopus)	225398	14268
+UP000571582	Alaudala cheleensis (Asian short-toed lark)	670337	14234
+UP000572057	Helopsaltes ochotensis (Middendorff's grasshopper-warbler)	3150915	13910
+UP000572325	Sterrhoptilus dennistouni	2585820	13232
+UP000572837	Pomatorhinus ruficollis (streak-breasted scimitar babbler)	932028	12947
+UP000573697	Polioptila caerulea (Blue-grey gnatcatcher)	66707	13534
+UP000573793	Loxia leucoptera (White-winged crossbill)	96539	13967
+UP000573818	Sylvia atricapilla (blackcap)	48155	13252
+UP000574191	Hypocryptadius cinnamomeus	589841	12372
+UP000574210	Rhodinocichla rosea	58203	14100
+UP000574277	Mesembrinibis cayennensis	1118748	13857
+UP000574528	Psilopogon haemacephalus (coppersmith barbet)	2585815	13526
+UP000574691	Burhinus bistriatus	240201	13960
+UP000574967	Machaerirhynchus nigripectus	1160894	13938
+UP000575029	Grantiella picta	266360	14054
+UP000575874	Aphelocoma coerulescens (Florida scrub-jay) (Corvus coerulescens)	39617	14551
+UP000576729	Callaeas wilsoni (North Island kokako)	1347786	14554
+UP000578259	Pheucticus melanocephalus (Black-headed grosbeak) (Guiraca melanocephala)	371919	12775
+UP000578343	Baryphthengus martii (Rufous motmot)	176943	13377
+UP000578766	Cepphus grylle (Black guillemot) (Alca grylle)	28697	14757
+UP000579406	Chloroceryle aenea (American pygmy kingfisher)	176938	12192
+UP000579558	Notiomystis cincta	366454	13629
+UP000579685	Phainopepla nitens (Phainopepla)	161653	13527
+UP000579812	Onychostoma macrolepis	369639	24720
+UP000579904	Oreotrochilus melanogaster	689266	12132
+UP000579941	Gymnorhina tibicen (Australian magpie) (Cracticus tibicen)	9132	14291
+UP000580171	Pandion haliaetus (Osprey) (Falco haliaetus)	56262	12585
+UP000580681	Emberiza fucata	337179	13193
+UP000580691	Sinosuthora webbiana	337173	14232
+UP000580825	Scytalopus superciliaris	312124	13826
+UP000580879	Climacteris rufus (rufous treecreeper)	47695	14074
+UP000582182	Turnix velox (Little buttonquail)	2529409	13120
+UP000583049	Glareola pratincola (Collared pratincole) (Hirundo pratincola)	43316	13760
+UP000583164	Rhabdornis inornatus	237438	14339
+UP000583496	Pomatostomus ruficeps (Chestnut-crowned babbler)	9176	13287
+UP000583613	Eubucco bourcierii (red-headed barbet)	91767	14131
+UP000583740	Cardinalis cardinalis (Northern cardinal)	98964	13821
+UP000583915	Sitta europaea (Eurasian nuthatch)	50251	13526
+UP000584326	Podargus strigoides (Tawny frogmouth) (Caprimulgus strigoides)	8905	13990
+UP000584415	Platysteira castanea	1160851	13995
+UP000584880	Ptilonorhynchus violaceus (Satin bowerbird) (Pyrrhocorax violaceus)	28724	13901
+UP000585422	Haliaeetus albicilla (White-tailed sea-eagle) (Falco albicilla)	8969	15042
+UP000586634	Nycticryphes semicollaris	227226	14293
+UP000586671	Dromas ardeola	458190	13881
+UP000586704	Ceyx cyanopectus (Indigo-banded kingfisher)	390723	11903
+UP000586926	Mohoua ochrocephala	874463	13564
+UP000587472	Psophia crepitans (common trumpeter)	54359	13853
+UP000587587	Promerops cafer (Cape sugarbird)	254652	14071
+UP000587655	Ibidorhyncha struthersii	425643	13835
+UP000587697	Rhadina sibilatrix	2585818	13615
+UP000588334	Sclerurus mexicanus (tawny-throated leaftosser)	265632	14009
+UP000589485	Sapayoa aenigma (broad-billed sapayoa)	239371	13839
+UP000589495	Vireo altiloquus (Black-whiskered vireo) (Muscicapa altiloqua)	34956	14067
+UP000590623	Cinclus mexicanus (American dipper)	161649	13465
+UP000590868	Heliornis fulica (sungrebe)	54369	13523
+UP000591073	Glaucidium brasilianum (Ferruginous pygmy-owl)	78217	14183
+UP000591535	Grallaria varia (variegated antpitta)	117165	13896
+UP000593565	Ameiurus melas (Black bullhead) (Silurus melas)	219545	24332
+UP000593571	Rousettus aegyptiacus (Egyptian fruit bat) (Pteropus aegyptiacus)	9407	60832
+UP000603297	Pteruthius melanotis	357074	11955
+UP000603627	Calcarius ornatus (Chestnut-collared longspur)	198940	13652
+UP000604080	Dryoscopus gambensis	85069	12293
+UP000606274	Silurus meridionalis (Southern catfish) (Silurus soldatovi meridionalis)	175797	22753
+UP000611227	Ramphastos sulfuratus	322582	14017
+UP000611277	Certhia familiaris (Eurasian treecreeper)	73333	13143
+UP000613066	Penelope pileata	1118817	13915
+UP000614027	Campylorhamphus procurvoides	190295	14067
+UP000614263	Chloropsis cyanopogon	1218682	12540
+UP000618051	Lamprotornis superbus	245042	14245
+UP000618746	Spizella passerina (Chipping sparrow)	40210	9048
+UP000619137	Sula dactylatra (Masked booby)	56068	12940
+UP000620207	Larus smithsonianus (American herring gull)	243888	14049
+UP000621168	Corythaeola cristata (Great blue turaco)	103954	11501
+UP000623542	Elachura formosa (spotted wren-babbler)	1463973	13998
+UP000625584	Passerina amoena (Lazuli bunting)	142471	12951
+UP000627253	Tricholaema leucomelas (pied barbet)	240729	14305
+UP000628412	Aegithalos caudatus (Long-tailed tit) (Acredula caudata)	73327	13234
+UP000629438	Tichodroma muraria	237442	11478
+UP000629713	Peucedramus taeniatus (Olive warbler)	135441	13643
+UP000631391	Picathartes gymnocephalus (White-necked rockfowl)	175131	13505
+UP000631545	Tychaedon coryphoeus (Karoo scrub-robin) (Erythropygia coryphaeus)	614051	13529
+UP000632118	Fregata magnificens (Magnificent frigatebird)	37042	13159
+UP000632886	Centropus bengalensis (lesser coucal)	1463675	13146
+UP000633448	Pitta sordida (Hooded pitta)	9163	13848
+UP000634236	Vidua chalybeata (Village indigobird)	81927	14570
+UP000637704	Eolophus roseicapilla (Galah cockatoo) (Cacatua roseicapilla)	176039	13310
+UP000640762	Grus americana (Whooping crane)	9117	13771
+UP000640999	Chloropsis hardwickii	667144	13502
+UP000642973	Calyptomena viridis (Lesser green broadbill)	135972	13204
+UP000645828	Nyctereutes procyonoides (Raccoon dog) (Canis procyonoides)	34880	26676
+UP000648918	Halcyon senegalensis	342381	14252
+UP000653271	Piaya cayana (Common squirrel cuckoo)	33601	13976
+UP000653383	Nicator chloris	237433	13575
+UP000654395	Urocolius indicus (Red-faced mousebird) (Colius indicus)	458196	14054
+UP000656497	Vidua macroura (Pin-tailed whydah)	187451	13045
+UP000657035	Anhinga anhinga (Anhinga) (Plotus anhinga)	56067	13584
+UP000658642	Atrichornis clamosus	449594	14584
+UP000659062	Copsychus sechellarum	797021	14377
+UP000660247	Todus mexicanus (Puerto Rican tody)	135184	10042
+UP000660704	Donacobius atricapilla	237420	13711
+UP000661971	Nothocercus nigrocapillus	1977171	13104
+UP000675900	Panthera tigris altaica (Siberian tiger)	74533	26484
+UP000677803	Menidia menidia (Atlantic silverside)	238744	21059
+UP000693946	Solea senegalensis (Senegalese sole)	28829	44389
+UP000694380	Chrysemys picta bellii (Western painted turtle) (Emys bellii)	8478	37046
+UP000694382	Geospiza parvula (Small tree-finch) (Camarhynchus parvulus)	87175	24736
+UP000694383	Oryzias sinensis (Chinese medaka)	183150	51767
+UP000694387	Equus asinus (Donkey) (Equus africanus asinus)	9793	48973
+UP000694388	Eptatretus burgeri (Inshore hagfish)	7764	25419
+UP000694389	Dicentrarchus labrax (European seabass) (Morone labrax)	13489	66288
+UP000694390	Gopherus evgoodei (Goodes thornscrub tortoise)	1825980	30199
+UP000694392	Sphenodon punctatus (Tuatara) (Hatteria punctata)	8508	24853
+UP000694393	Pelusios castaneus (West African mud turtle)	367368	26820
+UP000694395	Oncorhynchus mykiss (Rainbow trout) (Salmo gairdneri)	8022	119611
+UP000694396	Cyanoderma ruficeps (rufous-capped babbler)	181631	21562
+UP000694397	Scleropages formosus (Asian bonytongue) (Osteoglossum formosum)	113540	68105
+UP000694401	Zosterops lateralis melanops	1220523	21599
+UP000694402	Oncorhynchus tshawytscha (Chinook salmon) (Salmo tshawytscha)	74940	121708
+UP000694403	Chelydra serpentina (Snapping turtle) (Testudo serpentina)	8475	28613
+UP000694404	Chelonoidis abingdonii (Abingdon island giant tortoise) (Testudo abingdonii)	106734	31592
+UP000694405	Melopsittacus undulatus (Budgerigar) (Psittacus undulatus)	13146	25030
+UP000694406	Laticauda laticaudata (Blue-ringed sea krait) (Blue-lipped sea krait)	8630	25227
+UP000694408	Junco hyemalis (Dark-eyed junco)	40217	22411
+UP000694410	Cyanistes caeruleus (Eurasian blue tit) (Parus caeruleus)	156563	27051
+UP000694411	Theropithecus gelada (Gelada baboon)	9565	35917
+UP000694413	Zonotrichia albicollis (White-throated sparrow) (Fringilla albicollis)	44394	23103
+UP000694415	Mus spicilegus (Mound-building mouse)	10103	35596
+UP000694416	Piliocolobus tephrosceles (Ugandan red Colobus)	591936	39892
+UP000694419	Calidris pygmaea (Spoon-billed sandpiper)	425635	26111
+UP000694420	Nothoprocta perdicaria (Chilean tinamou) (Crypturus perdicarius)	30464	21914
+UP000694421	Salvator merianae (Argentine black and white tegu) (Tupinambis merianae)	96440	29536
+UP000694422	Spermophilus dauricus (Daurian ground squirrel)	99837	27244
+UP000694423	Dromaius novaehollandiae (Emu)	8790	26023
+UP000694424	Apteryx owenii (Little spotted kiwi)	8824	27523
+UP000694425	Neogale vison (American mink) (Mustela vison)	452646	31301
+UP000694427	Cyprinus carpio (Common carp)	7962	121350
+UP000694428	Pavo cristatus (Indian peafowl) (Blue peafowl)	9049	25675
+UP000694520	Bos grunniens (Wild yak) (Bos mutus grunniens)	30521	39898
+UP000694521	Anser cygnoides (Swan goose)	8845	26655
+UP000694522	Amazona collaria (yellow-billed parrot)	241587	25605
+UP000694523	Neogobius melanostomus (round goby)	47308	44788
+UP000694541	Accipiter nisus (Eurasian sparrowhawk)	211598	26996
+UP000694543	Chrysolophus pictus (Golden pheasant) (Phasianus pictus)	9089	18740
+UP000694545	Varanus komodoensis (Komodo dragon)	61221	29080
+UP000694546	Gadus morhua (Atlantic cod)	8049	61790
+UP000694548	Nothobranchius furzeri (Turquoise killifish)	105023	54480
+UP000694549	Anas zonorhyncha (Eastern spot-billed duck)	75864	28886
+UP000694551	Strix occidentalis caurina (northern spotted owl)	311401	23547
+UP000694552	Otus sunia (Oriental scops-owl)	257818	24027
+UP000694553	Corvus moneduloides (New Caledonian crow)	1196302	28261
+UP000694555	Buteo japonicus	224669	25714
+UP000694556	Cairina moschata (Muscovy duck)	8855	28574
+UP000694557	Oncorhynchus kisutch (Coho salmon) (Salmo kisutch)	8019	115433
+UP000694559	Naja naja (Indian cobra)	35670	29718
+UP000694560	Malurus cyaneus samueli	2593467	23024
+UP000694562	Falco tinnunculus (Common kestrel)	100819	25297
+UP000694563	Catharus ustulatus (Russet-backed thrush) (Hylocichla ustulatus)	91951	28921
+UP000694565	Cyclopterus lumpus (Lumpsucker)	8103	50861
+UP000694567	Bubo bubo (Eurasian eagle-owl) (Strix bubo)	30461	25032
+UP000694568	Sander lucioperca (Pike-perch) (Perca lucioperca)	283035	61000
+UP000694569	Leptobrachium leishanense (Leishan spiny toad)	445787	48917
+UP000694580	Denticeps clupeoides (denticle herring)	299321	61792
+UP000694620	Erpetoichthys calabaricus (Rope fish) (Calamoichthys calabaricus)	27687	33804
+UP000694680	Gouania willdenowi (Blunt-snouted clingfish) (Lepadogaster willdenowi)	441366	56004
+UP000694850	Orycteropus afer afer	1230840	18921
+UP000694851	Hipposideros armiger (Great Himalayan leaf-nosed bat)	186990	36412
+UP000694856	Camelus ferus (Wild bactrian camel) (Camelus bactrianus ferus)	419612	43046
+UP000694857	Balaenoptera musculus (Blue whale)	9771	42275
+UP000694863	Echinops telfairi (Lesser hedgehog tenrec)	9371	28957
+UP000694871	Gekko japonicus (Schlegel's Japanese gecko)	146911	22751
+UP000694891	Stegastes partitus (bicolor damselfish)	144197	28784
+UP000694906	Heterocephalus glaber (Naked mole rat)	10181	48019
+UP000694910	Ceratotherium simum simum (Southern white rhinoceros)	73337	30463
+UP000694915	Microtus ochrogaster (Prairie vole)	79684	32284
+UP000694923	Galeopterus variegatus (Malayan flying lemur) (Cynocephalus variegatus)	482537	29842
+UP000695023	Pundamilia nyererei	303518	33589
+UP000695026	Python bivittatus (Burmese python) (Python molurus bivittatus)	176946	27875
+UP000700334	Galemys pyrenaicus (Iberian desman) (Pyrenean desman)	202257	20755
+UP000716595	Eudyptes chrysocome (Western rockhopper penguin) (Aptenodytes chrysocome)	79626	12771
+UP000725257	Eudyptes sclateri (Erect-crested penguin)	92688	12730
+UP000727407	Clarias magur (Asian catfish) (Macropteronotus magur)	1594786	23377
+UP000736164	Atractosteus spatula (Alligator gar) (Lepisosteus spatula)	7917	14758
+UP000751161	Aptenodytes patagonicus (King penguin)	9234	13684
+UP000765507	Chelydra serpentina (Snapping turtle) (Testudo serpentina)	8475	20878
+UP000770717	Eleutherodactylus coqui (Puerto Rican coqui)	57060	32432
+UP000782854	Eudyptula minor (Little blue penguin) (Aptenodytes minor)	37083	14871
+UP000785099	Spheniscus mendiculus (Galapagos penguin)	156760	14344
+UP000793456	Larimichthys crocea (Large yellow croaker) (Pseudosciaena crocea)	215358	22140
+UP000796761	Zosterops borbonicus	364589	22327
+UP000799811	Eudyptes filholi (Southern rockhopper penguin)	1419345	12878
+UP000805704	Nibea albiflora (Yellow drum) (Corvina albiflora)	240163	15319
+UP000808372	Salvelinus namaycush (Lake trout) (Salmo namaycush)	8040	52131
+UP000809102	Ovis aries (Sheep)	9940	44722
+UP000812440	Hymenochirus boettgeri (Congo dwarf clawed frog)	247094	25860
+UP000823561	Alosa alosa (allis shad)	278164	26341
+UP000823872	Felis catus (Cat) (Felis silvestris catus)	9685	58973
+UP000824219	Hemibagrus wyckioides	337641	22691
+UP000824540	Albula glossodonta (roundjaw bonefish)	121402	27914
+UP000824782	Engystomops pustulosus (Tungara frog) (Physalaemus pustulosus)	76066	55186
+UP000826234	Phrynosoma platyrhinos (Desert horned lizard)	52577	16743
+UP000827872	Sphaerodactylus townsendi	933632	28225
+UP000827986	Mauremys mutica (yellowpond turtle)	74926	23328
+UP000829447	Pangasianodon gigas (Mekong giant catfish) (Pangasius gigas)	30993	21988
+UP000829720	Albula goreensis	1534307	23548
+UP000830375	Labeo rohita (Indian major carp) (Cyprinus rohita)	84645	25337
+UP000830395	Pangasius djambal	1691987	22046
+UP000831701	Scortum barcoo (barcoo grunter)	214431	26905
+UP000886611	Polypterus senegalus (Senegal bichir)	55291	16186
+UP000886700	Mesocricetus auratus (Golden hamster)	10036	43274
+UP001044222	Anguilla anguilla (European freshwater eel) (Muraena anguilla)	7936	28122
+UP001046870	Megalops atlanticus (Tarpon) (Clupea gigantea)	7932	23830
+UP001057279	Ovis ammon polii x Ovis aries	2918886	21252
+UP001057452	Chaenocephalus aceratus (Blackfin icefish) (Chaenichthys aceratus)	36190	28945
+UP001059041	Triplophysa rosa (Cave loach)	992332	25644
+UP001108240	Cyprinus carpio carpio	630221	140941
+UP001108280	Cricetulus griseus (Chinese hamster) (Cricetulus barabensis griseus)	10029	38999
+UP001142489	Phrynocephalus forsythii	171643	20168
+UP001145742	Willisornis vidua (Xingu scale-backed antbird)	1566151	16481
+UP001148018	Muraenolepis orangiensis (Patagonian moray cod)	630683	33976
+UP001152803	Conger conger (Conger eel) (Muraena conger)	82655	23596
+UP001152836	Phodopus roborovskii (Roborovski's desert hamster) (Cricetulus roborovskii)	109678	21818
+UP001153269	Pleuronectes platessa (European plaice)	8262	47956
+UP001157502	Dallia pectoralis (Alaska blackfish)	75939	34041
+UP001159641	Eschrichtius robustus (California gray whale) (Eschrichtius gibbosus)	9764	22991
+UP001165780	Panthera pardus (Leopard) (Felis pardus)	9691	45253
+UP001165941	Pontoporia blainvillei (Franciscana) (Delphinus blainvillei)	48723	4277
+UP001166052	Polypterus senegalus (Senegal bichir)	55291	5765
+UP001166093	Polyodon spathula (North American paddlefish) (Squalus spathula)	7913	18302
+UP001166674	Sciurus carolinensis (Eastern gray squirrel)	30640	22862
+UP001174136	Merluccius polli (Benguela hake) (Merluccius cadenati)	89951	25543
+UP001176940	Ranitomeya imitator (mimic poison frog)	111125	25526
+UP001176941	Rangifer tarandus platyrhynchus (Svalbard reindeer)	3082113	31565
+UP001177209	Pygoscelis papua (Gentoo penguin)	30457	13880
+UP001177744	Cnephaeus nilssonii (Northern bat) (Eptesicus nilssonii)	3371016	19772
+UP001178461	Podarcis lilfordi (Lilford's wall lizard)	74358	38311
+UP001178508	Xyrichtys novacula (Pearly razorfish) (Hemipteronotus novacula)	13765	39134
+UP001181693	Pyxicephalus adspersus (African bullfrog)	30357	20788
+UP001187315	Tachysurus vachellii (Darkbarbel catfish) (Pelteobagrus vachellii)	175792	23495
+UP001187343	Cirrhinus molitorella (mud carp)	172907	25689
+UP001187415	Channa striata (Snakehead murrel) (Ophicephalus striatus)	64152	26451
+UP001190640	Eublepharis macularius (Leopard gecko) (Cyrtodactylus macularius)	481883	29440
+UP001205998	Silurus asotus (Amur catfish) (Parasilurus asotus)	30991	24039
+UP001214576	Ovis ammon polii	230172	20730
+UP001219934	Pogonophryne albipinna	1090488	30547
+UP001221898	Aldrovandia affinis	143900	44049
+UP001228049	Dissostichus eleginoides (Patagonian toothfish) (Dissostichus amissus)	100907	31920
+UP001230051	Acipenser oxyrinchus oxyrinchus	40147	26589
+UP001239994	Electrophorus voltai	2609070	23099
+UP001266305	Saguinus oedipus (Cotton-top tamarin) (Oedipomidas oedipus)	9490	40187
+UP001274896	Hemibagrus guttatus	175788	35222
+UP001279410	Lates japonicus (Japanese lates)	270547	29183
+UP001295444	Pelobates cultripes (Western spadefoot toad)	61616	49580
+UP001311232	Crenichthys baileyi (White River springfish)	28760	25884
+UP001314169	Pipistrellus nathusii (Nathusius' pipistrelle)	59473	18936
+UP001314229	Scomber scombrus (Atlantic mackerel) (Scomber vernalis)	13677	35480
+UP001331515	Champsocephalus gunnari (Mackerel icefish)	52237	30382
+UP001333110	Mycteria americana (Wood stork)	33587	27343
+UP001335648	Champsocephalus esox (pike icefish)	159716	30821
+UP001345963	Ataeniobius toweri	208326	31592
+UP001346869	Eleginops maclovinus (Patagonian blennie) (Eleginus maclovinus)	56733	27212
+UP001352852	Characodon lateralis	208331	32603
+UP001356427	Coregonus suidteri	861788	39316
+UP001364617	Phoxinus phoxinus (Eurasian minnow)	58324	29140
+UP001369086	Huso huso (Beluga) (Acipenser huso)	61971	28089
+UP001434883	Xenoophorus captivus	1517983	29565
+UP001444071	Xenotaenia resolanae	208358	20666
+UP001460270	Mugilogobius chulae (yellowstripe goby)	88201	34369
+UP001469553	Ameca splendens	208324	38588
+UP001474421	Crotalus adamanteus (Eastern diamondback rattlesnake)	8729	21667
+UP001476798	Goodea atripinnis	208336	33005
+UP001479290	Culter alburnus (Topmouth culter)	194366	29015
+UP001482620	Ilyodon furcidens (goldbreast splitfin)	33524	37929
+UP001488805	Zoarces viviparus (Viviparous eelpout) (Blennius viviparus)	48416	28155
+UP001488838	Myodes glareolus (Bank vole) (Clethrionomys glareolus)	447135	26641
+UP001497482	Knipowitschia caucasica (Caucasian dwarf goby) (Pomatoschistus caucasicus)	637954	48583
+UP001501920	Pygocentrus nattereri (Red-bellied piranha)	42514	72717
+UP001529510	Cirrhinus mrigala (Mrigala)	683832	57290
+UP001557470	Umbra pygmaea (Eastern mudminnow)	75934	24484
+UP001558613	Cirrhinus molitorella (mud carp)	172907	36179
+UP001591681	Coilia grayii (Gray's grenadier anchovy)	363190	27792
+UP001610411	Daubentonia madagascariensis (Aye-aye) (Sciurus madagascariensis)	31869	22162
+UP001619887	Pagothenia borchgrevinki (Bald rockcod) (Trematomus borchgrevinki)	8213	27042
+UP001623348	Grus japonensis (Japanese crane) (Red-crowned crane)	30415	34534
+UP001623349	Apodemus speciosus (Large Japanese field mouse)	105296	18652
+UP001652580	Balaenoptera acutorostrata (Common minke whale) (Balaena rostrata)	9767	42806
+UP001652581	Vicugna pacos (Alpaca) (Lama pacos)	30538	42363
+UP001652583	Acinonyx jubatus (Cheetah)	32536	49690
+UP001652622	Pantherophis guttatus (Corn snake) (Elaphe guttata)	94885	35276
+UP001652624	Erinaceus europaeus (Western European hedgehog)	9365	43155
+UP001652627	Apteryx mantelli (North Island brown kiwi)	2696672	28723
+UP001652640	Odocoileus virginianus (White-tailed deer)	9874	43449
+UP001652641	Vulpes vulpes (Red fox)	9627	49968
+UP001652642	Pogona vitticeps (central bearded dragon)	103695	37261
+UP001652662	Equus przewalskii (Przewalski's horse) (Equus caballus przewalskii)	9798	60947
+UP001652663	Bos indicus (Zebu)	9915	46689
+UP001652741	Salmo salar (Atlantic salmon)	8030	80784
+UP001667331	Leuciscus waleckii (Amur ide)	155063	42211
+UP001669759	Sigmodon hispidus (Hispid cotton rat)	42415	24600
+UP001673243	Mimus melanotis (San Cristobal mockingbird)	245851	17811
+UP001684356	Sarotherodon galilaeus (mango tilapia)	8144	29698
+UP001705113	Arapaima gigas (Giant arapaima) (Sudis gigas)	113544	24438
+UP001710656	Pygathrix nigripes (Black-shanked douc langur)	310352	22758
+UP001710657	Semnopithecus entellus (Northern plains gray langur) (Presbytis entellus)	88029	17646
+UP001715597	Nasalis larvatus (Proboscis monkey)	43780	22641
+UP001730802	Lota lota (Burbot) (Gadus lota)	69944	23785
+UP001730803	Arctogadus glacialis (Arctic cod) (Gadus glacialis)	185735	39354
+UP001730804	Merluccius merluccius (European hake)	8063	21772
+UP001730820	Boreogadus saida (Polar cod) (Gadus saida)	44932	39732
+UP001730821	Gadus morhua 'NCC'	328277	34302
+UP001732271	Caretta caretta (Loggerhead sea turtle)	8467	25785
+UP001732273	Lepidochelys olivacea (Olive Ridley Sea turtle) (Chelonia olivacea)	27788	21318
+UP001732657	Leuciscus chuanchicus	3231064	33581
+UP001732660	Lepidochelys kempii (Kemp's ridley sea turtle) (Thalassochelys kempii)	8472	25689
+UP001732720	Castor canadensis (American beaver)	51338	48533
+UP001732780	Camelus bactrianus (Bactrian camel)	9837	45470
+UP001735300	Petromyzon marinus (Sea lamprey)	7757	37132
+UP000295264	Sousa chinensis (Indo-pacific humpbacked dolphin) (Steno chinensis)	103600	8382
+UP000314294	Liparis tanakae (Tanaka's snailfish)	230148	68164
+UP000324091	Takifugu flavidus (sansaifugu)	433684	29076
+UP000631465	Cervus hanglu yarkandensis (Yarkand deer)	84702	713
+UP001066276	Pleurodeles waltl (Iberian ribbed newt)	8319	137737
+UP001152622	Synaphobranchus kaupii (Kaup's arrowtooth eel)	118154	42723
+UP001162483	Staurois parvus	386267	91370
+UP001642463	Bufotes viridis (European green toad) (Pseudepidalea viridis)	30338	65624

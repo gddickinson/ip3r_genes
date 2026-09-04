@@ -1,0 +1,30 @@
+{
+ "db": "/Volumes/FANTOM/IP3R_DATA/proteomes/vertebrata_refprot.fasta",
+ "evalue": "1e-5",
+ "cpu": 8,
+ "max_iter": 10,
+ "jackhmmer": {
+  "itpr1_human": {
+   "tag": "itpr1_human",
+   "accession": "Q14643",
+   "rounds": 10,
+   "converged": false,
+   "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/jackhmmer_itpr1_human.domtblout",
+   "log": "/Volumes/FANTOM/IP3R_DATA/hmmer/jackhmmer_itpr1_human.log",
+   "rounds_json": "/Volumes/FANTOM/IP3R_DATA/hmmer/jackhmmer_itpr1_human_rounds.json",
+   "new_targets": [
+    5934,
+    681,
+    71,
+    42,
+    452,
+    20,
+    6,
+    12,
+    9,
+    3
+   ],
+   "elapsed_s": 8801.0
+  }
+ }
+}

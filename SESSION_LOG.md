@@ -493,3 +493,105 @@ MIR excluded with the reason).
 vertebrate reference proteomes, jackhmmer to convergence, census v3. It
 inherits two jobs from here: resolve the 2,181 unassigned records, and give
 the deep branches the best-profile assignment the bait margin cannot.
+
+---
+
+## S3 — 2026-09-04 — profile-HMM sweep, census v3
+
+**Task.** Build `itpr.hmm` and `ryr.hmm`, sweep the vertebrate reference
+proteomes, iterate jackhmmer to convergence, merge into census v3 with an
+ITPR-vs-RYR margin on every hit.
+
+**Ran.** `s3_build_seed.py` (34 ITPR + 22 RyR seeds from the S2 census,
+MAFFT L-INS-i, hmmbuild → 2,684 and 4,930 match states) · `s3_fetch_
+proteomes.py` (763 vertebrate reference proteomes, 14,414,821 canonical
+proteins, 6.97 G residues, 8.8 GB) · `s3_calibrate.py` (both profiles over
+S2's archived seeded space) · `s3_run_sweep.py` (2 × hmmsearch, 3 ×
+jackhmmer) · `s3_census_v3.py` · `s3_figures.py` · `s3_report.py`.
+
+**The instrument was measured before it was used.** Both profiles were run
+over S2's whole seeded space and the assignment scored against S2's
+architecture call — different evidence entirely, one reading annotation and
+one reading residues. **11,875 agree, 1 disagrees** (seeds excluded), and
+the profiles resolve **2,314 of the 3,361 records the architecture rule
+could not call**. S2's one non-architectural step, the low-confidence
+gene-symbol fallback on 1,219 records, is overturned exactly **once**.
+
+**The single disagreement is a real correction.** *Tieghemostelium lacteum*
+A0A152A7I8, 2,845 aa, called RYR by S2 on **PF06459** — "Ryanodine Receptor
+TM 4-6", which is the *pore*, the part both families share. `itpr.hmm` beats
+`ryr.hmm` 303 to 133 bits. D14b wrote down that one of its RyR signatures
+was only conditionally specific; this is that caveat firing, once, in
+11,876 chances.
+
+**The trap, and D22.** The first sweep called **14,981 vertebrate proteins
+RYR**, 12,874 of them matching under a tenth of the profile and named
+*Tnnc2*, *Rspry1*, *Cabp1*, *Rnf123*, *Ash2l*. Cause: `ryr.hmm` carries
+SPRY, which `itpr.hmm` has nothing to match against, so every EF-hand and
+SPRY protein in the proteome won by default. The gate is **200 match
+states**, measured from this project's own S0 domain coordinates — the
+shortest PF08709 it has ever measured is 200 aa, the longest SPRY 137 aa,
+and the floor sits in that gap. It costs 86 of 12,020 architecture-called
+records their profile verdict and keeps split gene models, whose 200–300
+position band is almost entirely `Itpr1_0` / `Itpr2_1` / `Ryr3_0`.
+
+**Completeness, measured the expensive way.** Of 2,787 census-v2 ITPR
+records from a swept proteome that the sweep did not return, every one was
+looked up in the 8.8 GB database itself: **zero were in it and missed**. All
+2,787 are UniProtKB entries the taxon's reference proteome does not contain,
+so they were never searched. And in the other direction the sweep adds
+**618 proteins the InterPro census never returned** — all 209–942 aa,
+fragmentary gene models a signature query cannot enumerate.
+
+**Census v3: 16,039 records — ITPR 8,000, RYR 7,432, unassigned 605,
+conflict 2**, every row carrying both instruments' verdicts and which of
+them spoke (**D23**). 1,578 records change call from v2, all of them
+`unassigned` → a call.
+
+**Three things the session had to fix in its own method.**
+
+*MAFFT is not reproducible with `--thread -1`* (**D24**). Rebuilding the
+profiles after an unrelated edit changed them: the same 22 RyR seeds gave
+8,510 and 8,468 columns on consecutive runs, and profiles of 4,933 and
+4,908 match states. Found by noticing the match-state count had moved. Now
+pinned to `--thread 1` (byte-identical across three runs) with a SHA-256 on
+every seed set, alignment and profile. Both hmmsearch stages were re-run
+against the rebuilt profiles; the calibration numbers moved by ≤ 3 records.
+
+*D10's kill criterion measured the wrong thing* (**D10a**). K1 was coded as
+a flat 5 % ceiling on sister-family content and fired on every run at round
+1, because a single ITPR1 sequence at E ≤ 1e-5 already returns **32 % RyRs
+before any iteration**. That is shared ancestry, not contamination. K1 now
+takes round 1 as the baseline and kills on a **rise** of more than 10
+points; the accepted runs are flat to falling (−2.2 to 0.0).
+
+*K3 punished a converged run.* It fired on the ceiling without consulting
+jackhmmer's own convergence verdict, so the run that converged **on** round
+10 was marked killed. `evaluate()` now takes `converged`.
+
+**jackhmmer.** `itpr_fly` **converged in 10 rounds** (5914 → 695 → 71 → 58
+→ 470 → 24 → 1 → 2 → 0 → 0), D10 clean. `itpr1_human` reached the ceiling
+at an asymptote of 3–12 new targets a round (K3, 9 of 10 rounds accepted).
+The two final models differ by **single targets in every category** despite
+seeds ~600 My apart — a completeness statement that does not rest on either
+converging. A third of both models is module-only matches, which is why they
+asymptote rather than reach zero. The third seed, *Acanthamoeba* L8GF85,
+was **still running at session end** and is left to finish: it passes
+**17.0 % of the database through HMMER's MSV filter against an expected
+2.0 %**, so 2.46 M sequences reach the expensive stages of every round and
+one round costs more than either other seed's entire run. Its log is
+archived; `s3_run_sweep.py --stage jackhmmer --parse-only --seed-tag
+itpr_acanthamoeba` folds it in without searching again. Nothing in census v3
+depends on it.
+
+**Files.** `scripts/s3_{hmm_lib,seed_spec,build_seed,assign,kill,fetch_
+proteomes,calibrate,run_sweep,census_v3,figures,report}.py`;
+`results/hmm_sweep/` (both profiles, seed manifest, calibration, sweep
+assignments); `results/census_v3/` (census, novel hits, conflicts, the
+two-directional completeness tables, convergence, model composition, 4
+figures, `report.md`).
+
+**Next session: S4** — the declared assembly manifest, which is the
+denominator every later absence claim is measured against. S3 hands it a
+concrete starting list: 15 swept taxa with no ITPR record at all, whose
+gene sets are thin enough that annotation is the likelier explanation.

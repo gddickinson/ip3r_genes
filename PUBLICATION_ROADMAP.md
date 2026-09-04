@@ -112,9 +112,10 @@ Claude: follow this protocol in every session that touches this project.
 Statuses: `pending` / `in_progress` / `completed YYYY-MM-DD`.
 Full step-by-step briefs: `docs/session_briefs.md`.
 
-> **Next session: S2.** S0 and S1 are complete. Read
-> `results/benchmark_controls/report.md` before S2 — it changes how the
-> census must be run.
+> **Next session: S4.** S0–S3 are complete. Read
+> `results/census_v3/report.md` before S4 — its zero-hit list is where the
+> genome scope starts, and D22/D24 change how any later profile or
+> alignment is built.
 >
 > **Three S1 results S2 depends on.** (1) The scorer promoted every RyR
 > decoy at 45 before S1 added the sister-family test; the test is now the
@@ -153,7 +154,7 @@ Full step-by-step briefs: `docs/session_briefs.md`.
 | S0 | Literature baseline + scope confirmation: verify every `[lit]` claim in `docs/ip3r_background.md`, build `docs/ip3r_review_2026.md`, smoke-test the app against live APIs | — | completed 2026-08-18 | **19 `[lit]` claims audited vs 51 refs (45 primary): 12 verified, 3 qualified, 2 struck, 1 → `[open]`, 1 → `[db]`.** `docs/ip3r_review_2026.md` written. All `[db]` numbers re-derived exactly. **D14 measured: 49 % (53/109) of zebrafish PF08709 records are RyRs.** Exon/span claim false — ITPR3 spans 76 kb, not "hundreds of kb"; span varies 6.5× across paralogs, length 3 %. Ensembl `/xrefs/symbol/homo_sapiens/` stalls (species-specific, `BRCA2` too); client switched to `/lookup/symbol/` → human ITPR1 **0 → 24 variants**. Smoke 3/3 on human (UniProt 34 / NCBI 44 / Ensembl 41) and on zebrafish; the 8-species panel is 2/3 on Ensembl latency alone. → `results/s0_baseline/report.md` **Extended 2026-08-19 (user request): the review is now illustrated** — 12 generated figures, 24 → 32 pages, rendered by `scripts/s0_review_figures.py` from committed tables only (D13, D19). Measuring the structure for the figures produced three results the text did not have: the pore's two constrictions recovered blind and landing on the GGGVGD filter motif and on Phe2513/Ile2517; the IP₃→gate distance resolved into 103 Å axial vs 120 Å through space; and ***Dictyostelium* iplA carries none of PF08709, PF02815 or PF00520** — a characterised receptor the family's defining signature does not find. |
 | S1 | Toolchain install + positive/negative control benchmark (RyR is the sharp decoy) | S0 | completed 2026-08-18 | **Recall 24/25 (96 %); specificity 31/31 (100 %) — but only after S1 had to implement D14.** All 12 binaries resolve with recorded versions (`results/toolchain_manifest.txt`); MAFFT proven invoked (rc=0, 56 seqs → 9,494 cols). **On the first run all six RyR decoys were promoted at 45** — they carry all four diagnostic Pfams, so `pfam+20` also satisfies the D3 gate; specificity was 25/31 and every failure was a RyR. Added the **labelled-bait sister-family test** to `discovery/candidates.py` (D14/D7, margin 0.10, positive test on distances, name never consulted, length band not the call) → all six now capped at 39 with the margin recorded. The margin is 31/31 correct under both identity metrics (true-ITPR +0.065…+0.874 vs RyR −0.868…−0.536). **Caveat: the deepest true member, *Dictyostelium* iplA, has a margin of +0.065 — inside the D7 no-call band**, so profile-based assignment is mandatory for the deep branches. One recall miss: fly `Itpr` at 35, its nearest sibling 0.342 vs the 0.35 breadth threshold (0.420 under `covered_only`). → `results/benchmark_controls/report.md` |
 | S2 | Uncapped InterPro enumeration of the family Pfams → census v2, with a positive ITPR/RYR call on every record | S1 | completed 2026-09-03 | **15,421 proteins across 1,488 taxa; ITPR 6,433 / RYR 6,807 / unassigned 2,181 (14.1 %).** All three seeds walked their cursor chains to the end (63 + 67 + 60 pages, 0 restarts). **InterPro's advertised `count` is wrong in both directions** — PF08709 +168, PF01365 +56, PF08454 −176 — while what it *serves* matches UniProt's independent count to within 2 records every time (D20); the first version of this task's own completeness test failed PF08454 on a complete walk because of it. The documented API host answered 1 request in 12 during the run while `/interpro/wwwapi/` answered 12 of 12, so the client now fails over between them. **The call is a positive architecture test audited against a label it never sees (D14b): 6,191 symbol-labelled records, 0 disagreements**, and re-checked on sequence alone over the per-phylum core panel — 27/27 and 26/26 agreement wherever the bait margin decides, with all four sign flips inside D7's no-call band. **A PF08709-only census would have missed 2,914 records, 758 of them called ITPR across 385 taxa** (D21) — including *Dictyostelium* iplA, which the union recovers and correctly leaves `unassigned` at 2/5 signatures. **The plant and fungal records resolve phylogenetically**: every Viridiplantae call is Chlorophyta (Streptophyta 0/15 records, 13 taxa) and every fungal call is in an early-diverging phylum (Dikarya contributes no records at all). Delta vs census v1 ×9.8 with **no enumeration holes** — all 866 absences verdicted. 7 records carry the complete architecture in 1,528–1,993 aa: truncated gene models UniProt does not flag. → `results/census_v2/report.md` |
-| S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) over vertebrate reference proteomes + jackhmmer-to-convergence completeness argument → census v3 | S1, S2 | pending | |
+| S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) over vertebrate reference proteomes + jackhmmer-to-convergence completeness argument → census v3 | S1, S2 | completed 2026-09-04 | **Census v3: 16,039 records — ITPR 8,000, RYR 7,432, unassigned 605, conflict 2 — with two independent verdicts on every row (D23).** Two profiles built from the S2 census under enforced selection rules (34 ITPR / 22 RyR seeds, 2,684 / 4,930 match states) and swept over **763 vertebrate reference proteomes, 14,414,821 canonical proteins, 6.97 G residues**. **The instrument was calibrated before use**: profile assignment vs S2's architecture call over the whole seeded space agrees **11,875 / 11,876** (seeds excluded), and resolves **2,314 of the 3,361 records the architecture rule could not call**; S2's gene-symbol fallback on 1,219 records is overturned exactly once. **The one genuine disagreement is a correction**: *Tieghemostelium lacteum* A0A152A7I8 (2,845 aa), called RYR by S2 on PF06459 — "Ryanodine Receptor TM 4-6", which is the pore both families share — beaten 303 to 133 bits by `itpr.hmm`. That is D14b's own conditional-specificity caveat firing, once. **The sweep needed a gate the roadmap did not have (D22)**: the first run called **14,981 vertebrate proteins RYR**, 12,874 under a tenth of the profile and named *Tnnc2* / *Rspry1* / *Cabp1* / *Rnf123*, because `ryr.hmm` carries SPRY and `itpr.hmm` has nothing to match it. The floor is **200 match states**, measured from this project's own S0 coordinates (shortest PF08709 200 aa, longest SPRY 137 aa); it costs 86 of 12,020 records their profile verdict and keeps split gene models. **Completeness measured in both directions**: of 2,787 v2 ITPR records from a swept proteome the sweep did not return, **zero were in the database and missed** — all 2,787 are UniProtKB entries the reference proteomes do not contain; and the sweep adds **618 proteins the InterPro census never returned**, all 209–942 aa fragmentary gene models. **jackhmmer**: `itpr_fly` converged in 10 rounds (D10 clean), `itpr1_human` reached the ceiling at an asymptote of 3–12 new targets/round (K3), and the two final models differ by single targets in every category despite seeds ~600 My apart. A third of each model is module-only matches, which is why they asymptote rather than reach zero. The third seed, *Acanthamoeba* L8GF85, was **still running at session end** — it passes 17.0 % of the database through HMMER's MSV filter against an expected 2.0 %, so one round costs more than either other seed's whole run; its log is archived and folds in with `s3_run_sweep.py --stage jackhmmer --parse-only --seed-tag itpr_acanthamoeba`. **Three method fixes**: MAFFT is not reproducible at `--thread -1` (**D24**), K1 measured sister-family *level* where only its *rise* is evidence (**D10a**), and K3 punished a run that converged on its last round. → `results/census_v3/report.md` |
 | S4 | Genome scope: declared assembly manifest (the denominator) + download tooling | S1 | pending | |
 | S5 | Genomic tblastn + miniprot sweep → per-genome ledger (found / lost / assembly-gap) + novel gene models → census v4 | S4 | pending | |
 | S20 | **Non-vertebrate sweep** — the family's true range across eukaryotic reference proteomes, and whether the land-plant / dikarya absence is a genome fact or a database fact | S3 | pending | |
@@ -212,6 +213,11 @@ than expanding the task in progress.
 | 2026-09-03 | S2 | **Seven records carry the complete five-signature ITPR architecture in 1,528–1,993 aa** — 700+ residues short of the shortest real family member — and none is flagged `Fragment` by UniProt, because a truncated gene model submitted as a whole protein is not marked as one. All are unnamed locus tags, five from *Hymenochirus boettgeri* (two loci) and two from chironomid midges. The call on them is correct and the records are wrong: a starting list for the correction register, and the reason length stays a recorded column after it stopped being part of the call. → `results/census_v2/short_complete.tsv` | open (S18) |
 | 2026-09-03 | S2 | **2,177 records (14.1 %) are `unassigned`** — a partial architecture cannot be called by a rule that reads absence as evidence. They are a fragment population (median 678 aa vs 2,671 for a called ITPR; only 5 % inside the size band), so this is the intended behaviour rather than a shortfall, but it is 14 % of the census and S3's profile sweep is what resolves it. The deepest true members are in here: *Dictyostelium* iplA carries 2 of 5 signatures and is `unassigned` | open (S3) |
 | 2026-09-03 | S2 | **The seeded search space holds one bacterial record** (Bacteroidota, no ITPR call). Almost certainly a horizontal-transfer or contamination artefact rather than a real prokaryotic family member, but it is the only prokaryote any of this project's searches has returned and S20's negative claims should name it rather than be surprised by it | open (S20) |
+| 2026-09-04 | S3 | **A deep-branch seed is 8.5× more expensive to search with, and the cost is measurable up front.** The *Acanthamoeba* ITPR passes **17.0 % of the 14.4 M-protein database through HMMER's MSV filter** against an expected 2.0 %, so 2.46 M sequences reach the expensive Viterbi/Forward stages; the human and fly seeds behave normally. Its round-1 search took longer than the other two seeds' entire runs. S20 sweeps non-vertebrate proteomes with exactly this kind of seed, so its runtime budget should assume the filter is near-useless for protist queries — and the filter pass rate is printed in every log, so it can be checked after one round rather than discovered after a day | open (S20) |
+| 2026-09-03 | S3 | **The one record the two instruments genuinely disagree on is *Tieghemostelium lacteum* A0A152A7I8** — 2,845 aa, ITPR-sized, which S2 called RYR because it carries PF06459 ("Ryanodine Receptor TM 4-6") and which `itpr.hmm` beats `ryr.hmm` on by 303 to 133 bits. PF06459 is the RyR *transmembrane* module — the part the two families share structurally — so this is D14b's own conditional-specificity caveat firing on a real amoebozoan receptor. One record in 11,965, and it is a genuine correction rather than noise. The second conflict, *Symbiodinium* A0A1Q9CN86, is a 9,504-aa protein where only 11 % of the target aligns, and should not be called by either instrument | open (S20) |
+| 2026-09-03 | S3 | **1,794 sweep hits carry an ITPR or RYR gene symbol but fall under D22's 200-position gate** (`results/census_v3/subthreshold_family_fragments.tsv`) — pieces of split or truncated gene models, headed by `Ryr3_1` (224), `Itpr2_0` (212), `Itpr1_0` (198). They are real family genes whose annotation has been broken into fragments too short to span a family domain. This is the largest concrete lead the project has for the annotation-quality audit, and it is a *per-proteome* count, so S5's genome sweep can test each one against the DNA | open (S18 → S10) |
+| 2026-09-03 | S3 | **604 proteins in vertebrate reference proteomes are absent from the InterPro census entirely** (`results/census_v3/novel_hits.tsv`) — 188 called ITPR, 416 RYR, every one of them a partial-evidence record 209–942 aa long in species like *Eptatretus burgeri* (hagfish), *Pleuronectes platessa* and *Myotis davidii*. A signature census misses fragmentary gene models because a fragment carries too few signatures to be enumerated; a profile finds them because it does not need the annotation. Quantifies what "annotation-derived census" costs | open (S18, S19) |
+| 2026-09-03 | S3 | **15 of 758 swept vertebrate taxa have no ITPR record at all**, and their gene sets are small (median 10,042 proteins vs a modal well-annotated proteome). On this evidence they are thin annotations, not losses — but they are the concrete starting list for the genome sweep, and D4 requires both bars before any of them is called an absence. → `results/census_v3/proteomes_without_hits.tsv` | open (S4 → S5) |
 | 2026-08-18 | setup | AlphaFold DB returned models for 8/8 human ITPR queries in the smoke test — better coverage than the PIEZO family had. Worth checking early whether AFDB covers full-length ITPRs or only fragments, since it changes S11's scope | open (S11) |
 
 ---
@@ -344,6 +350,67 @@ PF08709 records are RyRs (S0). Both directions fail, so the seed set is
 declared in `src/utils/family.py:CENSUS_PFAM_IDS` and MIR is deliberately
 excluded from it — carried by the O-mannosyltransferases too, it widens the
 space without adding evidence, and is kept as an annotation column.
+
+**D24 — Anything a committed artefact is built from is aligned
+single-threaded** (S3, 2026-09-03). MAFFT L-INS-i with `--thread -1` is not
+reproducible: the same 22 RyR seeds aligned twice on this machine gave 8,510
+and 8,468 columns, and the profiles built from them 4,933 and 4,908 match
+states, because the iterative refinement stage combines partial results in
+whatever order the threads finish. Discovered by rebuilding the profiles
+after an unrelated edit and finding the match-state count had moved. A
+profile that changes when it is rebuilt cannot be the profile a committed
+result was produced with, so `scripts/s3_build_seed.py` pins `--thread 1`
+(byte-identical across three runs, 87 s instead of 15 s, once) and records
+the SHA-256 of every seed set, alignment and profile in
+`seed_build_stats.json` so a future drift is visible in the committed data
+rather than only in a count. This applies to S6's alignment upgrade too.
+
+**D10a — For this family, sister-family *level* is not evidence of drift;
+only its *rise* is** (S3, 2026-09-04). D10's kill criterion was first coded
+as a flat ceiling — kill a jackhmmer run when more than 5 % of the model's
+included targets are assigned to the sister family. It fired on every run at
+round 1, because a single human ITPR1 sequence searched at E ≤ 1e-5 already
+returns **32 % ryanodine receptors before any iteration has happened**. That
+is not contamination: ITPR and RyR are genuine homologues sharing the entire
+pore, and a search sensitive enough to find *Acanthamoeba* is necessarily
+sensitive enough to find RYR1. The level is a fact about the two families'
+shared ancestry; only the change in it can be attributed to iterating the
+model. K1 now takes round 1 as the baseline and kills on a rise of more than
+10 percentage points. Measured: across the accepted runs the sister share is
+flat or falling (−2.2 to +0.0 points), which is what a run that has not
+drifted looks like — and the threshold was reasoned from what round 1 *is*,
+not fitted to the observed numbers.
+
+**D22 — A profile match is family evidence only if it spans a family
+domain** (S3, 2026-09-03). Both profiles are full-length channel models, so
+a protein sharing one small module with either of them scores against it —
+and `ryr.hmm` carries SPRY (PF00622), which D14b already recorded as sitting
+in ~114,000 UniProt proteins and being "in no sense RyR-specific". Measured:
+without a gate the first run of the vertebrate sweep called **14,981
+proteins RYR, 12,874 of them matching under a tenth of the profile** and
+named *Tnnc2*, *Rspry1*, *Cabp1*, *Rnf123*, *Ash2l* — EF-hand and SPRY
+proteins, not receptors. So the winning profile must span at least **200
+match states** before its score counts. The number is measured rather than
+tuned, from this project's own S0 domain coordinates: the shortest observed
+instance of PF08709 — the IP3-binding core that names the family — is 200
+aa, and the longest observed SPRY is 137 aa, so the floor sits in that gap.
+It admits any match spanning a family domain, excludes any match spanning
+only the shared module, and keeps split gene models (the 200–300 position
+band is almost entirely `Itpr1_0` / `Itpr2_1` / `Ryr3_0`, pieces of real
+genes). Cost on the calibration set: 86 of 12,020 architecture-called
+records lose their profile verdict (0.7 %). Every row carries an `evidence`
+class — `architecture` (≥ 50 % of the profile), `partial`, `module` — so the
+gate is visible in the table rather than only in the code.
+
+**D23 — Census v3 states two verdicts per record and never silently
+reconciles them** (S3, 2026-09-03). The architecture rule (D14b) reads
+InterPro's annotation; profile assignment reads the residues. Where they
+agree the call is `high`; where only one speaks the row says which; where
+they disagree the record is `conflict`, kept and reported. This is what
+makes the 3,353 records S2 could not call resolvable — a partial
+architecture defeats a rule that reads absence as evidence and does not
+defeat a sequence profile — and it is what stops the second instrument from
+being used to quietly overwrite the first.
 
 **D19 — The review's figures are generated, never drawn, and every one
 declares its provenance.** `scripts/s0_review_figures.py` renders all 12

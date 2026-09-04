@@ -1,0 +1,21 @@
+seed_tag	accession	round	new_targets	n_included	n_own	n_sister	n_offfamily	sister_frac	sister_rise	growth	converged	verdict	kill_rule
+itpr1_human	Q14643	1	5934	5934	2608	1910	1416	0.3219	0.0		False	killed	K3
+itpr1_human	Q14643	2	681	6613	2608	2110	1895	0.3191	-0.0028	1.11	False	killed	K3
+itpr1_human	Q14643	3	71	6683	2608	2146	1929	0.3211	-0.0008	1.01	False	killed	K3
+itpr1_human	Q14643	4	42	6725	2608	2156	1961	0.3206	-0.0013	1.01	False	killed	K3
+itpr1_human	Q14643	5	452	7176	2608	2160	2408	0.301	-0.0209	1.07	False	killed	K3
+itpr1_human	Q14643	6	20	7194	2608	2161	2425	0.3004	-0.0215	1.0	False	killed	K3
+itpr1_human	Q14643	7	6	7199	2608	2164	2427	0.3006	-0.0213	1.0	False	killed	K3
+itpr1_human	Q14643	8	12	7210	2608	2174	2428	0.3015	-0.0204	1.0	False	killed	K3
+itpr1_human	Q14643	9	9	7219	2608	2179	2432	0.3018	-0.0201	1.0	False	killed	K3
+itpr1_human	Q14643	10	3	7222	2608	2182	2432	0.3021	-0.0198	1.0	False	killed	K3
+itpr_fly	P29993	1	5914	5914	2608	1915	1391	0.3238	0.0		True	clean	
+itpr_fly	P29993	2	695	6609	2608	2104	1897	0.3184	-0.0054	1.12	True	clean	
+itpr_fly	P29993	3	71	6677	2608	2149	1920	0.3219	-0.0019	1.01	True	clean	
+itpr_fly	P29993	4	58	6734	2608	2168	1958	0.3219	-0.0019	1.01	True	clean	
+itpr_fly	P29993	5	470	7203	2608	2183	2412	0.3031	-0.0207	1.07	True	clean	
+itpr_fly	P29993	6	24	7225	2608	2188	2429	0.3028	-0.021	1.0	True	clean	
+itpr_fly	P29993	7	1	7226	2608	2188	2430	0.3028	-0.021	1.0	True	clean	
+itpr_fly	P29993	8	2	7228	2608	2189	2431	0.3029	-0.0209	1.0	True	clean	
+itpr_fly	P29993	9	0	7228	2608	2189	2431	0.3029	-0.0209	1.0	True	clean	
+itpr_fly	P29993	10	0	7228	2608	2189	2431	0.3029	-0.0209	1.0	True	clean	

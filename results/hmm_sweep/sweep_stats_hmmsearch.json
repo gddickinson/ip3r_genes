@@ -1,0 +1,28 @@
+{
+ "db": "/Volumes/FANTOM/IP3R_DATA/proteomes/vertebrata_refprot.fasta",
+ "evalue": "1e-5",
+ "cpu": 3,
+ "max_iter": 10,
+ "hmmsearch": {
+  "profiles": {
+   "itpr": {
+    "targets": 6640,
+    "elapsed_s": 505.2,
+    "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/hmmsearch_itpr_vs_vertref.domtblout"
+   },
+   "ryr": {
+    "targets": 17137,
+    "elapsed_s": 2595.5,
+    "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/hmmsearch_ryr_vs_vertref.domtblout"
+   }
+  },
+  "assignment": {
+   "targets": 18501,
+   "calls": {
+    "ITPR": 2608,
+    "RYR": 2522,
+    "unassigned": 13371
+   }
+  }
+ }
+}

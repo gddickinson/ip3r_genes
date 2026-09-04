@@ -1,0 +1,13 @@
+seed_tag	round	profile_call	sweep_evidence	targets	share
+itpr1_human	10	unassigned	module	2425	0.3358
+itpr1_human	10	ITPR	architecture	1656	0.2293
+itpr1_human	10	RYR	architecture	1565	0.2167
+itpr1_human	10	ITPR	partial	952	0.1318
+itpr1_human	10	RYR	partial	617	0.0854
+itpr1_human	10	unassigned	no sweep hit	7	0.001
+itpr_fly	10	unassigned	module	2424	0.3354
+itpr_fly	10	ITPR	architecture	1656	0.2291
+itpr_fly	10	RYR	architecture	1566	0.2167
+itpr_fly	10	ITPR	partial	952	0.1317
+itpr_fly	10	RYR	partial	623	0.0862
+itpr_fly	10	unassigned	no sweep hit	7	0.001

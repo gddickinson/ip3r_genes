@@ -1,0 +1,57 @@
+profile	id	accession	clade	call	gene	species	taxon_id	phylum	length	arch	reviewed	note
+itpr	Q14643|ITPR1|Homo_sapiens|ITPR1	Q14643	ITPR1	ITPR	ITPR1	Homo sapiens	9606	Chordata	2758	5/5	1	human, Swiss-Prot, the reference
+itpr	P11881|Itpr1|Mus_musculus|ITPR1	P11881	ITPR1	ITPR	Itpr1	Mus musculus	10090	Chordata	2749	5/5	1	mouse, Swiss-Prot
+itpr	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	A0A8V0ZJT0	ITPR1	ITPR	ITPR1	Gallus gallus	9031	Chordata	2779	5/5	0	chicken
+itpr	A0A8J0T3U5|itpr1|Xenopus_tropicalis|ITPR1	A0A8J0T3U5	ITPR1	ITPR	itpr1	Xenopus tropicalis	8364	Chordata	2743	5/5	0	Xenopus tropicalis
+itpr	A0A8M2BDG0|itpr1a|Danio_rerio|ITPR1	A0A8M2BDG0	ITPR1	ITPR	itpr1a	Danio rerio	7955	Chordata	2711	5/5	0	zebrafish itpr1a (3R duplicate)
+itpr	H3A1P5|ITPR1|Latimeria_chalumnae|ITPR1	H3A1P5	ITPR1	ITPR	ITPR1	Latimeria chalumnae	7897	Chordata	2725	5/5	0	coelacanth — the sarcopterygian outgroup
+itpr	Q14571|ITPR2|Homo_sapiens|ITPR2	Q14571	ITPR2	ITPR	ITPR2	Homo sapiens	9606	Chordata	2701	5/5	1	human, Swiss-Prot
+itpr	Q9Z329|Itpr2|Mus_musculus|ITPR2	Q9Z329	ITPR2	ITPR	Itpr2	Mus musculus	10090	Chordata	2701	5/5	1	mouse, Swiss-Prot
+itpr	F1P1X4|ITPR2|Gallus_gallus|ITPR2	F1P1X4	ITPR2	ITPR	ITPR2	Gallus gallus	9031	Chordata	2700	5/5	0	chicken
+itpr	A0A6I8RGU0|itpr2|Xenopus_tropicalis|ITPR2	A0A6I8RGU0	ITPR2	ITPR	itpr2	Xenopus tropicalis	8364	Chordata	2705	5/5	0	Xenopus tropicalis
+itpr	A0A8M9PQQ3|itpr2|Danio_rerio|ITPR2	A0A8M9PQQ3	ITPR2	ITPR	itpr2	Danio rerio	7955	Chordata	2665	5/5	0	zebrafish
+itpr	Q14573|ITPR3|Homo_sapiens|ITPR3	Q14573	ITPR3	ITPR	ITPR3	Homo sapiens	9606	Chordata	2671	5/5	1	human, Swiss-Prot
+itpr	P70227|Itpr3|Mus_musculus|ITPR3	P70227	ITPR3	ITPR	Itpr3	Mus musculus	10090	Chordata	2670	5/5	1	mouse, Swiss-Prot
+itpr	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	A0A8V1ACE6	ITPR3	ITPR	ITPR3	Gallus gallus	9031	Chordata	2664	5/5	0	chicken
+itpr	A0A8J0SYK9|itpr3|Xenopus_tropicalis|ITPR3	A0A8J0SYK9	ITPR3	ITPR	itpr3	Xenopus tropicalis	8364	Chordata	2673	5/5	0	Xenopus tropicalis
+itpr	A0A8M6Z266|itpr3|Danio_rerio|ITPR3	A0A8M6Z266	ITPR3	ITPR	itpr3	Danio rerio	7955	Chordata	2635	5/5	0	zebrafish
+itpr	A0A4W3JHJ0|unnamed|Callorhinchus_milii|vertebrate_basal	A0A4W3JHJ0	vertebrate_basal	ITPR		Callorhinchus milii	7868	Chordata	2683	5/5	0	elephant shark — chondrichthyan
+itpr	A0AAJ7U4X1|LOC116952798|Petromyzon_marinus|vertebrate_basal	A0AAJ7U4X1	vertebrate_basal	ITPR	LOC116952798	Petromyzon marinus	7757	Chordata	2838	5/5	0	sea lamprey — cyclostome, pre-2R
+itpr	W5MYT2|unnamed|Lepisosteus_oculatus|vertebrate_basal	W5MYT2	vertebrate_basal	ITPR		Lepisosteus oculatus	7918	Chordata	2772	5/5	0	spotted gar — non-teleost actinopt.
+itpr	P29993|Itpr|Drosophila_melanogaster|invertebrate	P29993	invertebrate	ITPR	Itpr	Drosophila melanogaster	7227	Arthropoda	2837	5/5	1	Drosophila Itpr, Swiss-Prot
+itpr	Q9Y0A1|itr-1|Caenorhabditis_elegans|invertebrate	Q9Y0A1	invertebrate	ITPR	itr-1	Caenorhabditis elegans	6239	Nematoda	2892	5/5	1	C. elegans itr-1, Swiss-Prot
+itpr	Q8WSR4|IP3R|Patiria_pectinifera|invertebrate	Q8WSR4	invertebrate	ITPR	IP3R	Patiria pectinifera	7594	Echinodermata	2698	5/5	1	starfish IP3R, Swiss-Prot
+itpr	A0A7M7MY00|unnamed|Strongylocentrotus_purpuratus|invertebrate	A0A7M7MY00	invertebrate	ITPR		Strongylocentrotus purpuratus	7668	Echinodermata	2820	5/5	0	sea urchin — echinoderm
+itpr	A0A6P8IUM8|LOC116304295|Actinia_tenebrosa|invertebrate	A0A6P8IUM8	invertebrate	ITPR	LOC116304295	Actinia tenebrosa	6105	Cnidaria	2745	5/5	0	sea anemone — cnidarian
+itpr	A0AAN0JIF7|unnamed|Amphimedon_queenslandica|invertebrate	A0AAN0JIF7	invertebrate	ITPR		Amphimedon queenslandica	400682	Porifera	2766	5/5	0	Amphimedon — sponge, basal metazoan
+itpr	A0A1S3H6V5|LOC106152615|Lingula_anatina|invertebrate	A0A1S3H6V5	invertebrate	ITPR	LOC106152615	Lingula anatina	7574	Brachiopoda	2808	4/5	0	Lingula — brachiopod; 4/5, lophotroch. breadth
+itpr	B3RXX7|TRIADDRAFT_56365|Trichoplax_adhaerens|invertebrate	B3RXX7	invertebrate	ITPR	TRIADDRAFT_56365	Trichoplax adhaerens	10228	Placozoa	2524	4/5	0	Trichoplax — placozoan; 4/5, basal breadth
+itpr	L8GF85|ACA1_256780|Acanthamoeba_castellanii|non_metazoan	L8GF85	non_metazoan	ITPR	ACA1_256780	Acanthamoeba castellanii	1257118	Discosea	3344	5/5	0	Acanthamoeba — Amoebozoa/Discosea
+itpr	Q9NA13|iplA|Dictyostelium_discoideum|non_metazoan	Q9NA13	non_metazoan	unassigned	iplA	Dictyostelium discoideum	44689	Evosea	3177	2/5	1	Dictyostelium iplA — characterised receptor, 2/5 signatures; the R3 exception (D21)
+itpr	A0AA88KEU5|C9374_011999|Naegleria_lovaniensis|non_metazoan	A0AA88KEU5	non_metazoan	ITPR	C9374_011999	Naegleria lovaniensis	51637	Heterolobosea	3074	5/5	0	Naegleria — Discoba
+itpr	A0A058ZDJ2|H696_01395|Fonticula_alba|non_metazoan	A0A058ZDJ2	non_metazoan	ITPR	H696_01395	Fonticula alba	691883		3443	5/5	0	Fonticula alba — Holomycota
+itpr	A0A8T1W1U0|PHYPSEUDO_000592|Phytophthora_pseudosyringae|non_metazoan	A0A8T1W1U0	non_metazoan	ITPR	PHYPSEUDO_000592	Phytophthora pseudosyringae	221518	Oomycota	3854	5/5	0	Phytophthora — SAR/oomycete
+itpr	A0ABR2W6A1|K7432_003395|Basidiobolus_ranarum|non_metazoan	A0ABR2W6A1	non_metazoan	ITPR	K7432_003395	Basidiobolus ranarum	34480	Basidiobolomycota	2502	5/5	0	Basidiobolus — early-diverging fungus
+itpr	A0AAE0LDZ1|CYMTET_10314|Cymbomonas_tetramitiformis|non_metazoan	A0AAE0LDZ1	non_metazoan	ITPR	CYMTET_10314	Cymbomonas tetramitiformis	36881	Chlorophyta	3375	3/5	0	Cymbomonas — Chlorophyta; 3/5, the green algal record the plant question rests on
+ryr	P21817|RYR1|Homo_sapiens|RYR1	P21817	RYR1	RYR	RYR1	Homo sapiens	9606	Chordata	5038	5/5	1	human, Swiss-Prot
+ryr	E9PZQ0|Ryr1|Mus_musculus|RYR1	E9PZQ0	RYR1	RYR	Ryr1	Mus musculus	10090	Chordata	5035	5/5	1	mouse, Swiss-Prot
+ryr	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	A0A6I8Q6P7	RYR1	RYR	ryr1	Xenopus tropicalis	8364	Chordata	5037	5/5	0	Xenopus tropicalis
+ryr	A0A8M6YTI2|ryr1b|Danio_rerio|RYR1	A0A8M6YTI2	RYR1	RYR	ryr1b	Danio rerio	7955	Chordata	5109	5/5	0	zebrafish ryr1b
+ryr	Q92736|RYR2|Homo_sapiens|RYR2	Q92736	RYR2	RYR	RYR2	Homo sapiens	9606	Chordata	4967	5/5	1	human, Swiss-Prot
+ryr	E9Q401|Ryr2|Mus_musculus|RYR2	E9Q401	RYR2	RYR	Ryr2	Mus musculus	10090	Chordata	4966	5/5	1	mouse, Swiss-Prot
+ryr	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	A0A8V0Y8K1	RYR2	RYR	RYR2	Gallus gallus	9031	Chordata	4968	5/5	0	chicken
+ryr	A0AC58GZ77|ryr2a|Danio_rerio|RYR2	A0AC58GZ77	RYR2	RYR	ryr2a	Danio rerio	7955	Chordata	4961	5/5	0	zebrafish ryr2a
+ryr	Q15413|RYR3|Homo_sapiens|RYR3	Q15413	RYR3	RYR	RYR3	Homo sapiens	9606	Chordata	4870	5/5	1	human, Swiss-Prot
+ryr	A2AGL3|Ryr3|Mus_musculus|RYR3	A2AGL3	RYR3	RYR	Ryr3	Mus musculus	10090	Chordata	4863	5/5	1	mouse, Swiss-Prot
+ryr	A0A8V0ZGY9|RYR3|Gallus_gallus|RYR3	A0A8V0ZGY9	RYR3	RYR	RYR3	Gallus gallus	9031	Chordata	4876	5/5	0	chicken
+ryr	A0A8J1INJ9|ryr3|Xenopus_tropicalis|RYR3	A0A8J1INJ9	RYR3	RYR	ryr3	Xenopus tropicalis	8364	Chordata	4884	5/5	0	Xenopus tropicalis
+ryr	A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal	A0A4W3I1N0	vertebrate_basal	RYR	LOC103190328	Callorhinchus milii	7868	Chordata	4982	5/5	0	elephant shark — chondrichthyan
+ryr	A0AAJ7XD62|LOC116953891|Petromyzon_marinus|vertebrate_basal	A0AAJ7XD62	vertebrate_basal	RYR	LOC116953891	Petromyzon marinus	7757	Chordata	5168	5/5	0	sea lamprey — cyclostome
+ryr	Q24498|RyR|Drosophila_melanogaster|invertebrate	Q24498	invertebrate	RYR	RyR	Drosophila melanogaster	7227	Arthropoda	5127	5/5	1	Drosophila RyR, Swiss-Prot
+ryr	Q94279|unc-68|Caenorhabditis_elegans|invertebrate	Q94279	invertebrate	RYR	unc-68	Caenorhabditis elegans	6239	Nematoda	5201	5/5	0	C. elegans unc-68, Swiss-Prot
+ryr	Q8TA74|unnamed|Hemicentrotus_pulcherrimus|invertebrate	Q8TA74	invertebrate	RYR		Hemicentrotus pulcherrimus	7650	Echinodermata	5317	5/5	0	sea urchin — echinoderm
+ryr	X1Z8I7|unnamed|Capitella_teleta|invertebrate	X1Z8I7	invertebrate	RYR		Capitella teleta	283909	Annelida	5038	5/5	0	Capitella — annelid
+ryr	A0A1S3I436|LOC106160817|Lingula_anatina|invertebrate	A0A1S3I436	invertebrate	RYR	LOC106160817	Lingula anatina	7574	Brachiopoda	4715	5/5	0	Lingula — brachiopod
+ryr	B3RK74|TRIADDRAFT_52741|Trichoplax_adhaerens|invertebrate	B3RK74	invertebrate	RYR	TRIADDRAFT_52741	Trichoplax adhaerens	10228	Placozoa	4949	5/5	0	Trichoplax — placozoan
+ryr	A0AAV7K8I1|LOD99_255|Oopsacas_minuta|invertebrate	A0AAV7K8I1	invertebrate	RYR	LOD99_255	Oopsacas minuta	111878	Porifera	4959	4/5	0	Oopsacas — glass sponge; 4/5 shared signatures but 3 RyR-specific ones, so the call is firm
+ryr	A0A0D2WXI6|CAOG_007989|Capsaspora_owczarzaki|non_metazoan	A0A0D2WXI6	non_metazoan	RYR	CAOG_007989	Capsaspora owczarzaki	595528		6625	5/5	0	Capsaspora — filasterean, sister to Metazoa
