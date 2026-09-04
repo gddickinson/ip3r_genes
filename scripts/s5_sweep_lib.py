@@ -133,13 +133,29 @@ MINIPROT_GB_RSS_PER_GBP = 6.32
 
 def run_miniprot(fna: Path, baits_faa: Path, out_gff: Path, threads: int = 8,
                  max_intron: int = DEFAULT_MAX_INTRON) -> None:
+    """Align the panel to one reference, writing `out_gff` **atomically**.
+
+    The output goes to a `.partial` sibling and is renamed only after miniprot
+    exits 0. This matters because the driver reuses any existing non-empty
+    GFF: a run killed mid-write — an interrupted sweep, an OOM during the
+    chunked path, a machine restart — would otherwise leave a truncated file
+    that the next run silently accepts as complete, producing a genome whose
+    ledger row looks clean and is short of loci. A partial file is invisible
+    after the fact, because a GFF cut at a line boundary parses perfectly.
+    """
+    tmp = out_gff.with_suffix(out_gff.suffix + ".partial")
     cmd = ["miniprot", "-t", str(threads), "--gff", "--trans",
            "--outs=0.3", "-N", "60", "-G", str(max_intron),
            str(fna), str(baits_faa)]
-    with open(out_gff, "w") as out:
-        proc = subprocess.run(cmd, stdout=out, stderr=subprocess.PIPE, text=True)
-    if proc.returncode != 0:
-        raise RuntimeError(f"miniprot failed: {proc.stderr.strip()[:300]}")
+    try:
+        with open(tmp, "w") as out:
+            proc = subprocess.run(cmd, stdout=out, stderr=subprocess.PIPE,
+                                  text=True)
+        if proc.returncode != 0:
+            raise RuntimeError(f"miniprot failed: {proc.stderr.strip()[:300]}")
+        tmp.replace(out_gff)
+    finally:
+        tmp.unlink(missing_ok=True)
 
 
 def split_fasta_by_contig(fna: Path, out_dir: Path,
@@ -210,13 +226,18 @@ def run_miniprot_chunked(fna: Path, baits_faa: Path, out_gff: Path,
         if not part.exists() or part.stat().st_size == 0:
             run_miniprot(chunk, baits_faa, part, threads, max_intron)
         parts.append(part)
-    with open(out_gff, "w") as out:
-        out.write("##gff-version 3\n")
-        for part in parts:
-            with open(part) as fh:
-                for line in fh:
-                    if not line.startswith("##gff-version"):
-                        out.write(line)
+    tmp = out_gff.with_suffix(out_gff.suffix + ".partial")
+    try:
+        with open(tmp, "w") as out:
+            out.write("##gff-version 3\n")
+            for part in parts:
+                with open(part) as fh:
+                    for line in fh:
+                        if not line.startswith("##gff-version"):
+                            out.write(line)
+        tmp.replace(out_gff)          # atomic, as in run_miniprot
+    finally:
+        tmp.unlink(missing_ok=True)
     return len(chunks)
 
 

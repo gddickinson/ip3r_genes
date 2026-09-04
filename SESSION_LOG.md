@@ -775,3 +775,90 @@ wall at 2 shards, 164 GB download; 547 GB of FASTA fits in 1,427 GB free, so
 keep it for S8/S10. Run the two giants (*Protopterus* 40 Gbp, *Lissotriton*
 23 Gbp) separately on the chunked path. Re-calibrate the attribution margin
 on rescue regions of known identity, and test the span-bias result at 309.
+
+---
+
+## 2026-09-04 — S5b: the full sweep (running), and hardening it while it runs
+
+**Task.** S5b — the 309-genome sweep → ledger + census v4. User decided to
+keep every genome on disk (547 GB against 1,427 GB free) rather than
+`--delete-after`, since S8 synteny and S10 validation both want the loci back.
+
+**Running.** Six shards (`s5_run_sweep.py --shard i/6 --threads 3`) plus a
+supervisor (`<data_root>/genome_sweep/_overnight.sh`) that logs progress every
+10 min and sweeps the two giants on the chunked path once the shards drain.
+All detached (PPID 1). Zero failures through 77/307.
+
+**The budget was wrong, and the error was an omission.** S5a projected 3.4 h
+wall from compute rates. Measured on the running sweep: **the sweep is
+download-bound.** NCBI delivers ~5.5 MB/s in aggregate and that barely moves
+with shard count (2 shards ~3.4, 6 shards ~5.5), so it is a bandwidth ceiling
+rather than a concurrency problem — 164 GB is ~8 h of transfer against ~2.5 h
+of compute. Going 2 → 6 shards did help (42 genomes/hour measured on a settled
+window, ~6.4 h to go) but nothing like linearly. miniprot itself is **faster**
+than budgeted: 15 s/Gbp at 3 threads, not 36. `s5_budget.py` now carries a
+`DOWNLOAD_MB_PER_S` term and reports which side binds.
+
+**Census v4** (`s5_census_v4.py`). Merges the sweep's gene models into v3,
+scoring each against `itpr.hmm`/`ryr.hmm` so a v4 row rests on the instrument
+that called v3 (D23). It records **how** a database holds a locus rather than
+only whether: `genome_only`, `annotated_unnamed`, `annotated_other_paralog`,
+`annotated_named`. The PIEZO port filtered on cell status alone and would have
+dropped the most useful population here — an annotated gene carrying no family
+name, like *Takifugu*'s second ITPR1 3R duplicate beside `itpr1b` as
+`LOC101074739`. The disagreement label is named for the observation, not a
+verdict, and `sibling_locus_for_annot_paralog` records what makes a case
+coherent (the genome also carrying a separate locus for the paralog the
+annotation names). First case found: *Nibea albiflora*, a locus annotated
+`ITPR2` that the ITPR3 cell claims at 100 % coverage and paralog margin 0.306,
+in a genome that carries a separate ITPR2 locus.
+
+**The fragment-level margin calibration S5a deferred is done.** Rescue regions
+are now a committed table, and those overlapping a gene the assembly names for
+a paralog carry an identity independent of the bait scores. 11 such regions so
+far: the attribution agrees **11/11**, over margins 0.227–0.370. **0/11 fall
+below the 0.22 threshold S5a set; 7/11 would have fallen below the inherited
+0.333** and been reported ambiguous. The recalibration is vindicated on the
+fragments it was actually for. (Also fixed a wording bug that would have
+printed whatever constant is live as "the inherited threshold".)
+
+**Hardening — the chunked miniprot path, before the giants run on it.**
+`s5_test_chunked.py` runs a genome both ways and requires the same loci, baits,
+coverage and cell statuses. On *Takifugu*: 10 loci and all 4 cell statuses
+identical, worst boundary difference 9 bp (tolerance 50, justified — miniprot
+extends a terminal exon from flanking context and there is less at a chunk
+edge, while a real offset bug moves loci by megabases). Three findings:
+1. **The mRNA-ID collision is real** — 167 rows carry 60 distinct raw IDs over
+   6 chunks. The dedup guard in `parse_miniprot_gff` is load-bearing.
+2. **The test's own memory measurement was wrong**: `ru_maxrss` is a
+   high-water mark, so per-phase `after − before` reported 0.00 GB for the
+   chunked run whatever it used.
+3. **`CHUNK_BP` was too large.** Measured, miniprot wants **6.3–8.0 GB RSS per
+   Gbp**, putting the ported 4 Gbp chunk at ~25 GB on a 34 GB machine → now
+   2.5 Gbp (~20 GB). Extra chunks are nearly free: a locus never spans a chunk
+   boundary.
+
+**Hardening — resume correctness.** The driver reuses any non-empty
+`miniprot.gff`, and miniprot wrote it directly, so an interrupted run left a
+truncated file the next run accepted as complete — undetectable afterwards,
+because a GFF cut at a line boundary parses perfectly. **Audited the live run:
+74 completed GFFs all end on a complete record, and 0 genomes were marked done
+after the 6-shard restart while carrying a GFF from before it**, so the earlier
+shard kills corrupted nothing (they landed during download, not alignment).
+`run_miniprot` and the chunk concatenation now write atomically via a
+`.partial` rename. `s5_test_resume.py` proves both properties: a failed run
+leaves neither file, and a re-run reproduces the summary **including through
+miniprot** — D24's question asked of a second tool, and miniprot is
+reproducible at a fixed thread count where MAFFT is not at `--thread -1`.
+
+**Four ledger figures** (`s5_figures.py`), from committed tables only. The
+contiguity panel bins rather than smooths: a sliding window straddling D4's bar
+reports a contiguity no genome in it has and draws the curve through the very
+threshold the panel exists to show. `figstyle.STATUS` gained the `fragment` key
+it lacked.
+
+**Next.** Finish the sweep, then `s5_ledger.py` → `s5_calibrate_margin.py` →
+`s5_census_v4.py` → `s5_budget.py` → `s5_figures.py` → `s5_report.py`. Decide
+the attribution margin last, on the full fragment distribution — changing it
+re-derives the rescue attribution only, not the sweep. `s5_report.py` still
+carries S5a's pilot framing and needs reworking for 309 genomes.
