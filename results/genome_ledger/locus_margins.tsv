@@ -1,4 +1,17 @@
 accession	organism	vclass	class	status	contig	start	coverage	identity	family_margin	paralog_margin	assigned_via	bait	annot_gene	annot_paralog	annot_agrees
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR3	found_annotated	KZ509852.1	4513	0.9801	0.8623	1.0	0.3829	primary	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	llap_16032		0
+GCA_002844005.1	Limosa lapponica baueri	Aves	RYR	found_unannotated	KZ505650.1	1556943	1.0	0.9845	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_002844005.1	Limosa lapponica baueri	Aves	RYR	found_unannotated	KZ505716.1	586247	1.0	0.6774	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	llap_3383		0
+GCA_002909625.1	Bambusicola thoracicus	Aves	ITPR1	assembly_gap	PPHD01000413.1	7648	0.3516	1.0	1.0	0.3007	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_002909625.1	Bambusicola thoracicus	Aves	ITPR1	assembly_gap	PPHD01008249.1	590	0.3188	0.9989	1.0	1.0	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	CIB84_004674		0
+GCA_002909625.1	Bambusicola thoracicus	Aves	ITPR2	assembly_gap	PPHD01003807.1	6160	0.2111	0.9	1.0	1.0	primary	F1P1X4|ITPR2|Gallus_gallus|ITPR2	CIB84_002931		0
+GCA_002909625.1	Bambusicola thoracicus	Aves	ITPR2	assembly_gap	PPHD01002362.1	4881	0.1589	0.9837	1.0	1.0	primary	F1P1X4|ITPR2|Gallus_gallus|ITPR2			0
+GCA_002909625.1	Bambusicola thoracicus	Aves	ITPR3	assembly_gap	PPHD01009884.1	3	0.6295	0.9988	1.0	0.3408	primary	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	CIB84_005232		0
+GCA_002909625.1	Bambusicola thoracicus	Aves	ITPR3	assembly_gap	PPHD01019520.1	82	0.2042	0.9963	1.0	1.0	primary	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	CIB84_007851		0
+GCA_002909625.1	Bambusicola thoracicus	Aves	RYR	assembly_gap	PPHD01005234.1	2410	0.1985	0.9929	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_002909625.1	Bambusicola thoracicus	Aves	RYR	assembly_gap	PPHD01004762.1	949	0.1795	0.9832	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_002909625.1	Bambusicola thoracicus	Aves	RYR	assembly_gap	PPHD01004103.1	719	0.2694	0.6254	1.0	1.0	primary	A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal			0
+GCA_002909625.1	Bambusicola thoracicus	Aves	RYR	assembly_gap	PPHD01048816.1	168	0.1336	0.6774	1.0	1.0	primary	H3BGR5|RYR|Latimeria_chalumnae			0
 GCA_011823955.1	Dissostichus mawsoni	Actinopteri	ITPR1	found_unannotated	JAAKFY010000006.1	25372485	1.0	0.9528	1.0	0.2963	primary	A0A672IUQ7|ITPR1|Salarias_fasciatus			0
 GCA_011823955.1	Dissostichus mawsoni	Actinopteri	ITPR1	found_unannotated	JAAKFY010000006.1	12061969	1.0	0.847	1.0	0.2301	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus	F7725_016552		0
 GCA_011823955.1	Dissostichus mawsoni	Actinopteri	ITPR2	found_unannotated	JAAKFY010000007.1	17781036	1.0	0.8622	1.0	0.2894	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera			0
@@ -9,16 +22,250 @@ GCA_011823955.1	Dissostichus mawsoni	Actinopteri	RYR	found_annotated	JAAKFY01000
 GCA_011823955.1	Dissostichus mawsoni	Actinopteri	RYR	found_annotated	JAAKFY010000015.1	14893862	1.0	0.6669	1.0	1.0	primary	Q92736|RYR2|Homo_sapiens|RYR2	F7725_007914		0
 GCA_011823955.1	Dissostichus mawsoni	Actinopteri	RYR	found_annotated	JAAKFY010000019.1	13853216	1.0	0.6456	1.0	1.0	primary	Q92736|RYR2|Homo_sapiens|RYR2			0
 GCA_011823955.1	Dissostichus mawsoni	Actinopteri	RYR	found_annotated	JAAKFY010000011.1	18743167	1.0	0.6069	1.0	1.0	primary	A0AAJ7XD62|LOC116953891|Petromyzon_marinus|vertebrate_basal	F7725_019825		0
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR1	found_unannotated	VWPW01023980.1	74623	1.0	0.9867	1.0	0.3377	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR2	found_unannotated	VWPW01014676.1	286425	1.0	0.98	1.0	0.3104	primary	F1P1X4|ITPR2|Gallus_gallus|ITPR2			0
+GCA_013389825.1	Crypturellus undulatus	Aves	RYR	found_annotated	VWPW01022533.1	2613	0.9386	0.9768	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2_1	RYR2	1
+GCA_013389825.1	Crypturellus undulatus	Aves	RYR	found_annotated	VWPW01021686.1	6388	1.0	0.6769	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
 GCA_013389965.1	Todus mexicanus	Aves	ITPR3	found_annotated	WEIS01036230.1	1967	1.0	0.9476	1.0	0.3324	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	TODMEX_R03131		0
 GCA_013389965.1	Todus mexicanus	Aves	RYR	found_unannotated	WEIS01025216.1	1	0.8074	0.6968	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013389985.1	Dryoscopus gambensis	Aves	ITPR1	found_unannotated	WEIT01025007.1	6149	1.0	0.9853	1.0	0.3198	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013389985.1	Dryoscopus gambensis	Aves	ITPR2	found_unannotated	WEIT01016686.1	1	0.763	0.9456	1.0	1.0	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013389985.1	Dryoscopus gambensis	Aves	ITPR3	found_annotated	WEIT01027115.1	18120	1.0	0.9925	1.0	0.3491	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	DRYGAM_R08247		0
+GCA_013389985.1	Dryoscopus gambensis	Aves	RYR	assembly_gap	WEIT01008220.1	2604	0.1707	0.7488	1.0	1.0	primary	A0A3Q0HBW9|RYR|Alligator_sinensis			0
+GCA_013389985.1	Dryoscopus gambensis	Aves	RYR	assembly_gap	WEIT01027086.1	2446	0.1035	0.9443	1.0	1.0	primary	A0A3Q0HBW9|RYR|Alligator_sinensis			0
+GCA_013390065.1	Chloropsis hardwickii	Aves	ITPR1	found_unannotated	WEIW01000372.1	584206	1.0	0.9661	1.0	0.3292	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013390065.1	Chloropsis hardwickii	Aves	ITPR2	found_unannotated	WEIW01000437.1	216914	1.0	0.9554	1.0	0.3112	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013390065.1	Chloropsis hardwickii	Aves	ITPR3	found_annotated	WEIW01003401.1	12699	0.9337	0.9224	1.0	1.0	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	CHLHAR_R12659		0
+GCA_013390065.1	Chloropsis hardwickii	Aves	RYR	found_annotated	WEIW01000007.1	603461	1.0	0.9679	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	CHLHAR_R11689		0
+GCA_013390065.1	Chloropsis hardwickii	Aves	RYR	found_annotated	WEIW01000336.1	3014	1.0	0.6669	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
 GCA_013390105.1	Tichodroma muraria	Aves	ITPR3	found_annotated	WAAG01017736.1	29323	1.0	0.9899	1.0	0.346	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013396355.1	Menura novaehollandiae	Aves	ITPR1	found_unannotated	VWPS01000057.1	1454359	1.0	0.9863	1.0	0.3305	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013396355.1	Menura novaehollandiae	Aves	ITPR2	found_unannotated	VWPS01000128.1	596224	1.0	0.9719	1.0	0.3134	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013396355.1	Menura novaehollandiae	Aves	ITPR3	found_annotated	VWPS01000164.1	595136	1.0	0.9931	1.0	0.395	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	MENNOV_R13731		0
+GCA_013396355.1	Menura novaehollandiae	Aves	RYR	found_annotated	VWPS01000054.1	947597	0.9974	0.9788	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013396355.1	Menura novaehollandiae	Aves	RYR	found_annotated	VWPS01000022.1	4514479	1.0	0.6757	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013396465.1	Smithornis capensis	Aves	ITPR1	found_unannotated	VWYW01000920.1	2801	0.9712	0.9856	1.0	0.3366	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013396465.1	Smithornis capensis	Aves	ITPR2	found_unannotated	VWYW01000229.1	449541	1.0	0.9848	1.0	0.3074	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013396465.1	Smithornis capensis	Aves	ITPR3	found_annotated	VWYW01001199.1	8	0.8573	0.84	1.0	1.0	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013396465.1	Smithornis capensis	Aves	RYR	found_annotated	VWYW01000101.1	1644478	1.0	0.9783	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013396465.1	Smithornis capensis	Aves	RYR	found_annotated	VWYW01000072.1	911143	1.0	0.6559	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013396875.1	Vireo altiloquus	Aves	ITPR1	found_unannotated	VZRF01009815.1	164036	1.0	0.9849	1.0	0.3258	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013396875.1	Vireo altiloquus	Aves	ITPR2	found_unannotated	VZRF01000017.1	33571	1.0	0.9796	1.0	0.3102	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013396875.1	Vireo altiloquus	Aves	ITPR3	found_annotated	VZRF01014545.1	203966	1.0	0.9973	1.0	0.3894	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013396875.1	Vireo altiloquus	Aves	RYR	found_annotated	VZRF01001132.1	258552	0.9974	0.9782	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013396875.1	Vireo altiloquus	Aves	RYR	found_annotated	VZRF01009222.1	594031	1.0	0.6724	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013396975.1	Bucco capensis	Aves	ITPR1	found_unannotated	VWZO01019971.1	305321	1.0	0.9867	1.0	0.3235	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013396975.1	Bucco capensis	Aves	ITPR3	assembly_gap	VWZO01010546.1	42	0.6854	0.9858	1.0	1.0	primary	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	Itpr3_0	ITPR3	1
+GCA_013396975.1	Bucco capensis	Aves	ITPR3	assembly_gap	VWZO01013041.1	21178	0.2924	0.9846	1.0	1.0	primary	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3			0
+GCA_013396975.1	Bucco capensis	Aves	RYR	assembly_gap	VWZO01001808.1	57	0.5366	0.9711	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013396975.1	Bucco capensis	Aves	RYR	assembly_gap	VWZO01021750.1	85276	0.4636	0.9739	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013396975.1	Bucco capensis	Aves	RYR	assembly_gap	VWZO01002875.1	878	0.411	0.6816	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013396975.1	Bucco capensis	Aves	RYR	assembly_gap	VWZO01015568.1	1351	0.4259	0.6611	1.0	1.0	primary	A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal			0
+GCA_013397015.1	Myiagra hebetior	Aves	ITPR1	found_annotated	VWZQ01007131.1	499494	1.0	0.9845	1.0	0.3283	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	MYIHEB_R06248		0
+GCA_013397015.1	Myiagra hebetior	Aves	ITPR2	found_unannotated	VWZQ01006530.1	363409	0.9885	0.982	1.0	0.3105	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013397015.1	Myiagra hebetior	Aves	ITPR3	found_annotated	VWZQ01007200.1	310561	1.0	0.9965	1.0	0.3915	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013397015.1	Myiagra hebetior	Aves	RYR	found_annotated	VWZQ01001806.1	609461	0.9974	0.978	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013397015.1	Myiagra hebetior	Aves	RYR	found_annotated	VWZQ01008955.1	470059	1.0	0.6748	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013397245.1	Thryothorus ludovicianus	Aves	ITPR1	assembly_gap	VZTB01016242.1	12021	0.5156	0.9767	1.0	0.4235	primary	A0ABM4F3U0|ITPR1|Apteryx_mantelli			0
+GCA_013397245.1	Thryothorus ludovicianus	Aves	ITPR1	assembly_gap	VZTB01012331.1	363128	0.4901	0.9634	1.0	1.0	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013397245.1	Thryothorus ludovicianus	Aves	ITPR2	found_unannotated	VZTB01004788.1	1910	0.877	0.978	1.0	0.3146	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013397245.1	Thryothorus ludovicianus	Aves	ITPR3	assembly_gap	VZTB01002909.1	45	0.6157	0.9927	1.0	1.0	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus			0
+GCA_013397245.1	Thryothorus ludovicianus	Aves	ITPR3	assembly_gap	VZTB01014641.1	197054	0.385	0.987	1.0	1.0	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus			0
+GCA_013397245.1	Thryothorus ludovicianus	Aves	RYR	assembly_gap	VZTB01006589.1	395	0.6804	0.9595	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013397245.1	Thryothorus ludovicianus	Aves	RYR	assembly_gap	VZTB01009153.1	168	0.5954	0.6748	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	THRLUD_R12892		0
+GCA_013397245.1	Thryothorus ludovicianus	Aves	RYR	assembly_gap	VZTB01011882.1	217828	0.2524	0.9681	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013397245.1	Thryothorus ludovicianus	Aves	RYR	assembly_gap	VZTB01014661.1	171938	0.2907	0.6569	1.0	1.0	primary	A0AC58GZ77|ryr2a|Danio_rerio|RYR2			0
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR2	found_unannotated	VYXF01001320.1	235431	1.0	0.98	1.0	0.295	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR3	found_annotated	VYXF01003972.1	2335	1.0	0.9732	1.0	0.3663	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013397295.1	Polioptila caerulea	Aves	RYR	found_annotated	VYXF01004723.1	45110	0.9974	0.977	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	POLCAE_R12426		0
+GCA_013397295.1	Polioptila caerulea	Aves	RYR	found_annotated	VYXF01009487.1	85514	1.0	0.6768	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013397395.1	Sinosuthora webbiana	Aves	ITPR1	found_unannotated	VXBN01013252.1	1291350	1.0	0.9842	1.0	0.33	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013397395.1	Sinosuthora webbiana	Aves	ITPR2	found_unannotated	VXBN01011463.1	166562	1.0	0.9819	1.0	0.3128	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013397395.1	Sinosuthora webbiana	Aves	ITPR3	found_annotated	VXBN01011685.1	297	0.9652	0.9551	1.0	0.4067	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013397395.1	Sinosuthora webbiana	Aves	RYR	found_annotated	VXBN01012045.1	281508	1.0	0.9773	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013397395.1	Sinosuthora webbiana	Aves	RYR	found_annotated	VXBN01015030.1	901189	1.0	0.676	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013397465.1	Furnarius figulus	Aves	ITPR1	found_annotated	VYZD01000015.1	3558831	1.0	0.9853	1.0	0.3303	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	FURFIG_R11996		0
+GCA_013397465.1	Furnarius figulus	Aves	ITPR2	found_unannotated	VYZD01000396.1	298467	1.0	0.9796	1.0	0.3072	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013397465.1	Furnarius figulus	Aves	ITPR3	found_annotated	VYZD01000217.1	676899	1.0	0.9888	1.0	0.3907	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013397465.1	Furnarius figulus	Aves	RYR	assembly_gap	VYZD01002042.1	234	0.6228	0.6506	1.0	1.0	primary	A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal	FURFIG_R02901		0
+GCA_013397465.1	Furnarius figulus	Aves	RYR	assembly_gap	VYZD01000784.1	143411	0.215	0.9794	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013397465.1	Furnarius figulus	Aves	RYR	assembly_gap	VYZD01003068.1	373	0.2037	0.7391	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR1	assembly_gap	VYZC01000789.1	167834	0.6189	0.9849	1.0	1.0	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR2	found_unannotated	VYZC01000147.1	1147216	1.0	0.9819	1.0	0.3053	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013397495.1	Mionectes macconnelli	Aves	RYR	found_annotated	VYZC01000047.1	483865	1.0	0.9783	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013397495.1	Mionectes macconnelli	Aves	RYR	found_annotated	VYZC01000019.1	1653182	1.0	0.6711	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013397815.1	Aleadryas rufinucha	Aves	ITPR1	found_unannotated	VZTH01000998.1	284869	1.0	0.986	1.0	0.3252	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013397815.1	Aleadryas rufinucha	Aves	ITPR2	found_unannotated	VZTH01019192.1	239755	0.9956	0.9792	1.0	0.3104	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013397815.1	Aleadryas rufinucha	Aves	ITPR3	found_annotated	VZTH01008759.1	1293	0.9652	0.9981	1.0	0.4016	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	ALERUF_R06457		0
+GCA_013397815.1	Aleadryas rufinucha	Aves	RYR	found_unannotated	VZTH01000269.1	550972	0.9312	0.9769	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013397815.1	Aleadryas rufinucha	Aves	RYR	found_unannotated	VZTH01018405.1	213306	1.0	0.6732	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013397895.1	Origma solitaria	Aves	ITPR1	found_unannotated	VZRL01005794.1	229952	1.0	0.9856	1.0	0.328	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013397895.1	Origma solitaria	Aves	ITPR2	found_unannotated	VZRL01002161.1	388382	0.9885	0.982	1.0	0.3159	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013397895.1	Origma solitaria	Aves	ITPR3	found_annotated	VZRL01001132.1	236819	0.7067	0.9942	1.0	1.0	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3_0	ITPR3	1
+GCA_013397895.1	Origma solitaria	Aves	ITPR3	found_annotated	VZRL01004771.1	2311	0.2936	0.9836	1.0	1.0	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus			0
+GCA_013397895.1	Origma solitaria	Aves	RYR	found_annotated	VZRL01003992.1	573360	0.9976	0.9782	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013397895.1	Origma solitaria	Aves	RYR	found_annotated	VZRL01002523.1	468171	1.0	0.6754	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013397955.1	Grantiella picta	Aves	ITPR1	found_unannotated	VZRM01002778.1	346574	1.0	0.9867	1.0	0.3276	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013397955.1	Grantiella picta	Aves	ITPR2	found_unannotated	VZRM01003629.1	237073	1.0	0.98	1.0	0.3184	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013397955.1	Grantiella picta	Aves	ITPR3	found_annotated	VZRM01006298.1	16047	1.0	0.9819	1.0	0.3927	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	GRAPIC_R11688		0
+GCA_013397955.1	Grantiella picta	Aves	RYR	found_annotated	VZRM01002603.1	1392669	0.9976	0.9754	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013397955.1	Grantiella picta	Aves	RYR	found_annotated	VZRM01007608.1	60189	1.0	0.6765	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013398125.1	Aegotheles bennettii	Aves	ITPR1	found_unannotated	VZRW01010862.1	518735	1.0	0.9899	1.0	0.3247	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013398125.1	Aegotheles bennettii	Aves	ITPR2	assembly_gap	VZRW01011159.1	524789	0.5063	0.9832	1.0	0.3823	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013398125.1	Aegotheles bennettii	Aves	ITPR3	found_annotated	VZRW01011544.1	62	0.708	0.9857	1.0	1.0	primary	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	Itpr3_1	ITPR3	1
+GCA_013398125.1	Aegotheles bennettii	Aves	ITPR3	found_annotated	VZRW01006512.1	7118	0.2936	0.9835	1.0	1.0	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus			0
+GCA_013398125.1	Aegotheles bennettii	Aves	RYR	found_annotated	VZRW01002778.1	7683	0.9764	0.9823	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2_1	RYR2	1
+GCA_013398125.1	Aegotheles bennettii	Aves	RYR	found_annotated	VZRW01014125.1	219985	0.9248	0.6709	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013398175.1	Climacteris rufus	Aves	ITPR1	found_annotated	VZRZ01002771.1	821575	1.0	0.9813	1.0	0.3308	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	CLIRUF_R00391		0
+GCA_013398175.1	Climacteris rufus	Aves	ITPR2	found_unannotated	VZRZ01004463.1	409686	1.0	0.9763	1.0	0.3113	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013398175.1	Climacteris rufus	Aves	ITPR3	found_annotated	VZRZ01005358.1	42484	1.0	0.9903	1.0	0.394	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013398175.1	Climacteris rufus	Aves	RYR	found_annotated	VZRZ01007597.1	193079	0.9974	0.9782	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013398175.1	Climacteris rufus	Aves	RYR	found_annotated	VZRZ01002579.1	769125	1.0	0.6783	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013398455.1	Loxia curvirostra	Aves	ITPR1	found_unannotated	VZSM01004910.1	1210115	1.0	0.9806	1.0	0.3246	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013398455.1	Loxia curvirostra	Aves	ITPR2	found_unannotated	VZSM01004385.1	562622	1.0	0.9789	1.0	0.3135	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013398455.1	Loxia curvirostra	Aves	ITPR3	found_annotated	VZSM01006023.1	1096375	1.0	0.9959	1.0	0.3981	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	LOXCUR_R12629		0
+GCA_013398455.1	Loxia curvirostra	Aves	RYR	found_annotated	VZSM01006932.1	2392609	0.9974	0.9766	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013398455.1	Loxia curvirostra	Aves	RYR	found_annotated	VZSM01002731.1	5502326	1.0	0.6737	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
 GCA_013398615.1	Brachypodius melanocephalos	Aves	ITPR1	found_unannotated	VZSR01001459.1	10232712	1.0	0.9856	1.0	0.3255	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
 GCA_013398615.1	Brachypodius melanocephalos	Aves	ITPR2	found_unannotated	VZSR01002340.1	8119033	1.0	0.98	1.0	0.3156	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
 GCA_013398615.1	Brachypodius melanocephalos	Aves	ITPR3	found_annotated	VZSR01002526.1	2552752	1.0	0.9522	1.0	0.3971	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	BRAATR_R04662		0
 GCA_013398615.1	Brachypodius melanocephalos	Aves	RYR	found_annotated	VZSR01003807.1	4412913	1.0	0.9775	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
 GCA_013398615.1	Brachypodius melanocephalos	Aves	RYR	found_annotated	VZSR01000520.1	18929082	1.0	0.674	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013398795.1	Elachura formosa	Aves	ITPR1	found_unannotated	WBNG01000009.1	5257043	1.0	0.9838	1.0	0.3299	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013398795.1	Elachura formosa	Aves	ITPR2	found_unannotated	WBNG01000249.1	103434	1.0	0.9793	1.0	0.3103	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013398795.1	Elachura formosa	Aves	RYR	found_annotated	WBNG01000058.1	2626492	1.0	0.9716	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	ELAFOR_R07682		0
+GCA_013398795.1	Elachura formosa	Aves	RYR	found_annotated	WBNG01000069.1	2325252	1.0	0.6735	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013398835.1	Emberiza fucata	Aves	ITPR1	assembly_gap	VYZJ01000868.1	159473	0.6222	0.9902	1.0	1.0	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013398835.1	Emberiza fucata	Aves	ITPR2	found_unannotated	VYZJ01000507.1	235276	1.0	0.9744	1.0	0.2945	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013398835.1	Emberiza fucata	Aves	ITPR3	found_annotated	VYZJ01001343.1	32354	1.0	0.9066	1.0	0.3658	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	EMBFUC_R03987		0
+GCA_013398835.1	Emberiza fucata	Aves	RYR	found_annotated	VYZJ01000130.1	910050	1.0	0.9664	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013398835.1	Emberiza fucata	Aves	RYR	found_annotated	VYZJ01000340.1	650006	0.9476	0.6638	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013398955.1	Callaeas wilsoni	Aves	ITPR1	assembly_gap	VWPU01015536.1	7010	0.6715	0.9861	1.0	1.0	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013398955.1	Callaeas wilsoni	Aves	ITPR2	found_unannotated	VWPU01018490.1	68	1.0	0.9811	1.0	0.3014	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013398955.1	Callaeas wilsoni	Aves	ITPR3	found_annotated	VWPU01009981.1	60	0.7457	0.998	1.0	1.0	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3_1	ITPR3	1
+GCA_013398955.1	Callaeas wilsoni	Aves	ITPR3	found_annotated	VWPU01006914.1	422	0.2547	0.9826	1.0	1.0	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3_0	ITPR3	1
+GCA_013398955.1	Callaeas wilsoni	Aves	RYR	found_annotated	VWPU01018445.1	10607	0.9974	0.9776	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013398955.1	Callaeas wilsoni	Aves	RYR	found_annotated	VWPU01007266.1	89750	1.0	0.6746	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013398975.1	Catharus fuscescens	Aves	ITPR1	assembly_gap	VWYD01006567.1	45680	0.6956	0.9778	1.0	1.0	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013398975.1	Catharus fuscescens	Aves	ITPR1	assembly_gap	VWYD01006459.1	14553	0.2454	0.9853	1.0	1.0	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013398975.1	Catharus fuscescens	Aves	ITPR2	found_unannotated	VWYD01008180.1	280667	1.0	0.98	1.0	0.2984	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013398975.1	Catharus fuscescens	Aves	ITPR3	found_annotated	VWYD01019667.1	23153	1.0	0.9944	1.0	0.3744	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013398975.1	Catharus fuscescens	Aves	RYR	found_annotated	VWYD01013793.1	182214	0.9974	0.978	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	CATFUS_R13731		0
+GCA_013398975.1	Catharus fuscescens	Aves	RYR	found_annotated	VWYD01065695.1	559436	1.0	0.6764	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013399035.1	Quiscalus mexicanus	Aves	ITPR1	assembly_gap	VWYF01032520.1	539	0.6887	0.9667	1.0	0.3426	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	QUIMEX_R00733		0
+GCA_013399035.1	Quiscalus mexicanus	Aves	ITPR1	assembly_gap	VWYF01007789.1	8	0.2479	0.9884	1.0	1.0	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013399035.1	Quiscalus mexicanus	Aves	ITPR2	assembly_gap	VWYF01003474.1	3497	0.5615	0.9802	1.0	1.0	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013399035.1	Quiscalus mexicanus	Aves	ITPR3	found_annotated	VWYF01000032.1	12893	1.0	0.9935	1.0	0.3446	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013399035.1	Quiscalus mexicanus	Aves	RYR	found_unannotated	VWYF01012987.1	44475	0.7816	0.9761	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013399035.1	Quiscalus mexicanus	Aves	RYR	found_unannotated	VWYF01015411.1	217625	0.8878	0.6693	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013399075.1	Chloroceryle aenea	Aves	ITPR1	found_annotated	VWZY01001946.1	2207	0.991	0.9848	1.0	0.3197	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	CHLAEN_R10158		0
+GCA_013399075.1	Chloroceryle aenea	Aves	ITPR2	found_unannotated	VWZY01002652.1	47359	0.7715	0.9827	1.0	1.0	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013399075.1	Chloroceryle aenea	Aves	ITPR3	found_annotated	VWZY01000040.1	258710	0.991	0.9753	1.0	0.3562	primary	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	CHLAEN_R07046		0
+GCA_013399075.1	Chloroceryle aenea	Aves	RYR	found_annotated	VWZY01006903.1	70555	0.9386	0.9811	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2_1	RYR2	1
+GCA_013399455.1	Anthoscopus minutus	Aves	ITPR1	found_unannotated	VWYI01047507.1	143620	1.0	0.9824	1.0	0.3163	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013399455.1	Anthoscopus minutus	Aves	ITPR2	assembly_gap	VWYI01032194.1	1677	0.5941	0.9707	1.0	1.0	primary	F1P1X4|ITPR2|Gallus_gallus|ITPR2			0
+GCA_013399455.1	Anthoscopus minutus	Aves	ITPR3	assembly_gap	VWYI01048517.1	78475	0.5045	0.9941	1.0	1.0	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus			0
+GCA_013399455.1	Anthoscopus minutus	Aves	ITPR3	assembly_gap	VWYI01021686.1	24039	0.4963	0.9962	1.0	1.0	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus			0
+GCA_013399455.1	Anthoscopus minutus	Aves	RYR	assembly_gap	VWYI01043680.1	1686	0.5712	0.6704	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	Ryr3_3	RYR3	1
+GCA_013399455.1	Anthoscopus minutus	Aves	RYR	assembly_gap	VWYI01026173.1	264	0.2286	0.71	1.0	1.0	primary	A0A3Q0HBW9|RYR|Alligator_sinensis			0
+GCA_013399735.1	Tyrannus savana	Aves	ITPR1	found_unannotated	VXAW01003770.1	651721	1.0	0.986	1.0	0.3218	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013399735.1	Tyrannus savana	Aves	ITPR2	assembly_gap	VXAW01003906.1	106432	0.5733	0.9793	1.0	1.0	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013399735.1	Tyrannus savana	Aves	ITPR3	found_annotated	VXAW01010101.1	229002	1.0	0.9764	1.0	0.3426	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	TYRSAV_R08019		0
+GCA_013399735.1	Tyrannus savana	Aves	RYR	found_unannotated	VXAW01002520.1	14	0.7391	0.9739	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013399735.1	Tyrannus savana	Aves	RYR	found_unannotated	VXAW01003324.1	332648	1.0	0.6757	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013399795.1	Zosterops hypoxanthus	Aves	ITPR1	assembly_gap	VWYL01013425.1	753	0.6956	0.9829	1.0	1.0	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013399795.1	Zosterops hypoxanthus	Aves	ITPR1	assembly_gap	VWYL01029682.1	143906	0.2508	0.9871	1.0	1.0	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013399795.1	Zosterops hypoxanthus	Aves	ITPR2	found_unannotated	VWYL01018137.1	130450	1.0	0.98	1.0	0.2939	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013399795.1	Zosterops hypoxanthus	Aves	ITPR3	found_annotated	VWYL01030448.1	54891	0.9809	0.9909	1.0	0.3739	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	ZOSHYP_R11060		0
+GCA_013399795.1	Zosterops hypoxanthus	Aves	RYR	found_unannotated	VWYL01030747.1	1951	0.7558	0.9766	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013399795.1	Zosterops hypoxanthus	Aves	RYR	found_unannotated	VWYL01031540.1	1636	0.7362	0.6697	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013399795.1	Zosterops hypoxanthus	Aves	RYR	found_unannotated	VWYL01017432.1	219987	0.6031	0.6664	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013399855.1	Oxyruncus cristatus	Aves	ITPR1	found_unannotated	VXAY01004762.1	2375397	1.0	0.9881	1.0	0.3344	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013399855.1	Oxyruncus cristatus	Aves	ITPR2	found_unannotated	VXAY01004465.1	75393	1.0	0.9826	1.0	0.3098	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013399855.1	Oxyruncus cristatus	Aves	ITPR3	found_annotated	VXAY01006930.1	717935	1.0	0.9854	1.0	0.396	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	OXYCRI_R01550		0
+GCA_013399855.1	Oxyruncus cristatus	Aves	RYR	found_unannotated	VXAY01002711.1	6765	0.8893	0.9774	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013399855.1	Oxyruncus cristatus	Aves	RYR	found_unannotated	VXAY01001352.1	293252	1.0	0.6751	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013399895.1	Serilophus lunatus	Aves	ITPR1	found_unannotated	VXBA01004282.1	417809	1.0	0.9819	1.0	0.333	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013399895.1	Serilophus lunatus	Aves	ITPR2	found_unannotated	VXBA01005702.1	411321	1.0	0.9815	1.0	0.3074	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013399895.1	Serilophus lunatus	Aves	ITPR3	found_annotated	VXBA01002447.1	184804	1.0	0.9873	1.0	0.3959	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013399895.1	Serilophus lunatus	Aves	RYR	found_annotated	VXBA01001840.1	56628	1.0	0.9767	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013399895.1	Serilophus lunatus	Aves	RYR	found_annotated	VXBA01005560.1	402796	1.0	0.6742	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013400075.1	Hippolais icterina	Aves	ITPR1	assembly_gap	VWYN01021473.1	2592	0.5185	0.9806	1.0	1.0	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013400075.1	Hippolais icterina	Aves	ITPR2	found_unannotated	VWYN01013987.1	375873	0.9885	0.9801	1.0	0.3008	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013400075.1	Hippolais icterina	Aves	ITPR3	found_annotated	VWYN01026794.1	9189	1.0	0.9944	1.0	0.3704	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013400075.1	Hippolais icterina	Aves	RYR	found_unannotated	VWYN01024224.1	215696	0.93	0.9768	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013400075.1	Hippolais icterina	Aves	RYR	found_unannotated	VWYN01009831.1	147031	0.6897	0.6748	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013400215.1	Cisticola juncidis	Aves	ITPR1	found_unannotated	VXBR01003613.1	1069633	1.0	0.9683	1.0	0.3266	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013400215.1	Cisticola juncidis	Aves	ITPR2	found_unannotated	VXBR01000324.1	451987	0.9885	0.9798	1.0	0.3169	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013400215.1	Cisticola juncidis	Aves	ITPR3	found_annotated	VXBR01010904.1	32883	0.9895	0.9853	1.0	0.3931	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013400215.1	Cisticola juncidis	Aves	RYR	found_annotated	VXBR01009377.1	36364	0.9974	0.9756	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013400215.1	Cisticola juncidis	Aves	RYR	found_annotated	VXBR01005532.1	2477378	1.0	0.6763	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013400415.1	Scytalopus superciliaris	Aves	ITPR1	found_annotated	VXBX01005888.1	25951	0.9705	0.9867	1.0	0.3249	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	SCYSUP_R07630		0
+GCA_013400415.1	Scytalopus superciliaris	Aves	ITPR2	found_unannotated	VXBX01000030.1	39	0.9137	0.9765	1.0	0.3722	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013400415.1	Scytalopus superciliaris	Aves	ITPR3	found_annotated	VXBX01001803.1	124156	1.0	0.9854	1.0	0.3477	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013400415.1	Scytalopus superciliaris	Aves	RYR	found_unannotated	VXBX01009827.1	154	0.8831	0.9703	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013400415.1	Scytalopus superciliaris	Aves	RYR	found_unannotated	VXBX01004616.1	1983150	1.0	0.6811	1.0	1.0	primary	Q92736|RYR2|Homo_sapiens|RYR2			0
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR2	found_unannotated	VXBY01000177.1	219864	1.0	0.9819	1.0	0.2995	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR3	found_annotated	VXBY01000669.1	42710	1.0	0.9914	1.0	0.3636	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013400445.1	Leiothrix lutea	Aves	RYR	found_unannotated	VXBY01000496.1	123605	0.7107	0.9774	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013400445.1	Leiothrix lutea	Aves	RYR	found_unannotated	VXBY01003370.1	3917	0.5405	0.6541	1.0	1.0	primary	A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal			0
+GCA_013400445.1	Leiothrix lutea	Aves	RYR	found_unannotated	VXBY01001508.1	798	0.3073	0.6901	1.0	1.0	primary	A0AAJ7XD62|LOC116953891|Petromyzon_marinus|vertebrate_basal			0
+GCA_013400445.1	Leiothrix lutea	Aves	RYR	found_unannotated	VXBY01000171.1	731473	0.2805	0.6707	1.0	1.0	primary	H3BGR5|RYR|Latimeria_chalumnae			0
+GCA_013400515.1	Erpornis zantholeuca	Aves	ITPR1	found_annotated	VZTN01006051.1	6019	1.0	0.9842	1.0	0.3267	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	ERPZAN_R11818		0
+GCA_013400515.1	Erpornis zantholeuca	Aves	ITPR2	found_unannotated	VZTN01005749.1	81967	0.9885	0.9805	1.0	0.3109	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013400515.1	Erpornis zantholeuca	Aves	ITPR3	found_annotated	VZTN01001861.1	496957	1.0	0.9954	1.0	0.3967	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013400515.1	Erpornis zantholeuca	Aves	RYR	assembly_gap	VZTN01021505.1	391	0.3158	0.8941	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013400515.1	Erpornis zantholeuca	Aves	RYR	assembly_gap	VZTN01020667.1	3134	0.2856	0.6913	1.0	1.0	primary	H3BGR5|RYR|Latimeria_chalumnae			0
+GCA_013400515.1	Erpornis zantholeuca	Aves	RYR	assembly_gap	VZTN01007637.1	596	0.2355	0.644	1.0	1.0	primary	H3BGR5|RYR|Latimeria_chalumnae			0
+GCA_013400515.1	Erpornis zantholeuca	Aves	RYR	assembly_gap	VZTN01004341.1	877	0.133	0.9578	1.0	1.0	primary	A0A3Q0HBW9|RYR|Alligator_sinensis			0
+GCA_013400515.1	Erpornis zantholeuca	Aves	RYR	assembly_gap	VZTN01004512.1	6359	0.1252	0.9198	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013400585.1	Chloropsis cyanopogon	Aves	ITPR1	found_unannotated	WEZZ01015506.1	399273	1.0	0.9845	1.0	0.3282	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013400585.1	Chloropsis cyanopogon	Aves	ITPR2	found_unannotated	WEZZ01021076.1	268745	0.9885	0.979	1.0	0.3121	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013400585.1	Chloropsis cyanopogon	Aves	ITPR3	found_annotated	WEZZ01019221.1	51647	1.0	0.9899	1.0	0.3978	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	CHLCYA_R08772		0
+GCA_013400585.1	Chloropsis cyanopogon	Aves	RYR	assembly_gap	WEZZ01037339.1	1846	0.186	0.6839	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013400585.1	Chloropsis cyanopogon	Aves	RYR	assembly_gap	WEZZ01034000.1	1103	0.1448	0.7386	1.0	1.0	primary	A0A3Q0HBW9|RYR|Alligator_sinensis			0
+GCA_013400585.1	Chloropsis cyanopogon	Aves	RYR	assembly_gap	WEZZ01001230.1	146	0.2215	0.546	1.0	1.0	primary	H3BGR5|RYR|Latimeria_chalumnae			0
+GCA_013400585.1	Chloropsis cyanopogon	Aves	RYR	assembly_gap	WEZZ01009356.1	60	0.1017	0.9723	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013400585.1	Chloropsis cyanopogon	Aves	RYR	assembly_gap	WEZZ01003677.1	324	0.1318	0.6079	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
 GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR3	found_annotated	VYZP01027902.1	2862	1.0	0.9973	1.0	0.3472	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
 GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	RYR	assembly_gap	VYZP01073347.1	429	0.1935	0.5834	1.0	1.0	primary	H3BGR5|RYR|Latimeria_chalumnae			0
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR2	fragment	VYZS01089185.1	12126	0.187	0.9743	1.0	0.2715	primary	A0A672UP22|ITPR2|Strigops_habroptila	Itpr2	ITPR2	1
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR2	fragment	VYZS01106126.1	1228	0.17	0.963	1.0	0.3186	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR3	assembly_gap	VYZS01345020.1	186	0.1345	0.9805	1.0	1.0	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus			0
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR3	assembly_gap	VYZS01345552.1	30	0.1351	0.9722	1.0	0.4769	primary	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3			0
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR3	assembly_gap	VYZS01347926.1	27	0.1182	0.981	1.0	0.2494	primary	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3			0
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR3	assembly_gap	VYZS01335199.1	110	0.1013	0.9333	1.0	0.2549	primary	A0A6J0TV85|ITPR3|Pogona_vitticeps			0
+GCA_013400695.1	Neodrepanis coruscans	Aves	RYR	assembly_gap	VYZS01026334.1	165	0.2589	0.5349	1.0	1.0	primary	A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal			0
+GCA_013400695.1	Neodrepanis coruscans	Aves	RYR	assembly_gap	VYZS01020745.1	596	0.1152	0.6506	1.0	1.0	primary	H3BGR5|RYR|Latimeria_chalumnae			0
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR2	assembly_gap	VYZT01016493.1	3485	0.5607	0.9808	1.0	0.3058	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR3	found_annotated	VYZT01008480.1	5930	1.0	0.9668	1.0	0.3547	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013400735.1	Pomatostomus ruficeps	Aves	RYR	assembly_gap	VYZT01023010.1	472	0.2017	0.984	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013400735.1	Pomatostomus ruficeps	Aves	RYR	assembly_gap	VYZT01017135.1	5530	0.1915	0.9508	1.0	1.0	primary	A0A3Q0HBW9|RYR|Alligator_sinensis			0
+GCA_013400735.1	Pomatostomus ruficeps	Aves	RYR	assembly_gap	VYZT01044222.1	1038	0.1109	0.7549	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013400735.1	Pomatostomus ruficeps	Aves	RYR	assembly_gap	VYZT01004917.1	390	0.1616	0.5483	1.0	1.0	primary	H3BGR5|RYR|Latimeria_chalumnae			0
+GCA_013400815.1	Centropus bengalensis	Aves	ITPR1	assembly_gap	WBNK01000178.1	3	0.5002	0.9906	1.0	1.0	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013400815.1	Centropus bengalensis	Aves	ITPR2	found_unannotated	WBNK01000445.1	319066	1.0	0.9848	1.0	0.3016	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013400815.1	Centropus bengalensis	Aves	ITPR3	found_annotated	WBNK01000718.1	263841	0.9655	0.9833	1.0	0.3687	primary	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	CENBEN_R07917		0
+GCA_013400815.1	Centropus bengalensis	Aves	RYR	found_annotated	WBNK01000420.1	54288	1.0	0.974	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	CENBEN_R03704		0
+GCA_013400815.1	Centropus bengalensis	Aves	RYR	found_annotated	WBNK01000174.1	122183	1.0	0.6681	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR2	assembly_gap	VZTT01023994.1	4807	0.5981	0.8931	1.0	0.3063	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR2	assembly_gap	VZTT01070297.1	2862	0.2278	0.9724	1.0	0.2692	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	RYR	assembly_gap	VZTT01031201.1	622	0.1558	0.8965	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	RYR	assembly_gap	VZTT01043608.1	1260	0.1232	0.7974	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_013400915.1	Pardalotus punctatus	Aves	ITPR1	assembly_gap	VZTX01001947.1	930	0.4538	0.9857	1.0	0.3621	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013400915.1	Pardalotus punctatus	Aves	ITPR2	assembly_gap	VZTX01002558.1	2785	0.4722	0.9804	1.0	1.0	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013400915.1	Pardalotus punctatus	Aves	ITPR2	assembly_gap	VZTX01024490.1	8220	0.3752	0.9714	1.0	0.3043	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013400915.1	Pardalotus punctatus	Aves	ITPR3	assembly_gap	VZTX01008829.1	251	0.6157	0.9951	1.0	0.3264	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus			0
+GCA_013400915.1	Pardalotus punctatus	Aves	ITPR3	assembly_gap	VZTX01013977.1	5407	0.2708	0.9836	1.0	0.3764	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus			0
+GCA_013400915.1	Pardalotus punctatus	Aves	RYR	found_annotated	VZTX01026248.1	120870	0.9976	0.9778	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013400915.1	Pardalotus punctatus	Aves	RYR	found_annotated	VZTX01001965.1	1190075	1.0	0.6753	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_013400955.1	Drymodes brunneopygia	Aves	ITPR1	found_unannotated	VZTZ01014074.1	2	0.706	0.9806	1.0	0.3387	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_013400955.1	Drymodes brunneopygia	Aves	ITPR2	assembly_gap	VZTZ01029620.1	9881	0.6263	0.9704	1.0	0.2838	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013400955.1	Drymodes brunneopygia	Aves	ITPR3	found_annotated	VZTZ01042630.1	3037	0.9652	0.9965	1.0	0.3566	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	Itpr3	ITPR3	1
+GCA_013400955.1	Drymodes brunneopygia	Aves	RYR	found_annotated	VZTZ01040289.1	383272	0.9764	0.9771	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2_1	RYR2	1
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR2	found_unannotated	VZSW01000361.1	364566	1.0	0.9815	1.0	0.2971	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	RYR	found_annotated	VZSW01000052.1	2382872	1.0	0.9781	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	Ryr2	RYR2	1
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	RYR	found_annotated	VZSW01000030.1	1555614	1.0	0.6661	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
 GCA_014281875.1	Nibea albiflora	Actinopteri	ITPR1	found_annotated	CM024790.1	23069459	1.0	0.9595	1.0	0.3043	primary	A0A672IUQ7|ITPR1|Salarias_fasciatus	ITPR1	ITPR1	1
 GCA_014281875.1	Nibea albiflora	Actinopteri	ITPR1	found_annotated	CM024790.1	3836243	1.0	0.8654	1.0	0.2283	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus			0
 GCA_014281875.1	Nibea albiflora	Actinopteri	ITPR2	found_unannotated	CM024800.1	12447838	1.0	0.8663	1.0	0.2931	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera			0
@@ -43,6 +290,27 @@ GCA_014363365.1	Leucopsar rothschildi	Aves	RYR	assembly_gap	BMBG01011160.1	1889	
 GCA_014363365.1	Leucopsar rothschildi	Aves	RYR	assembly_gap	BMBG01011865.1	122984	0.5372	0.6875	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
 GCA_014363365.1	Leucopsar rothschildi	Aves	RYR	assembly_gap	BMBG01009196.1	437	0.317	0.9772	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
 GCA_014363365.1	Leucopsar rothschildi	Aves	RYR	assembly_gap	BMBG01009090.1	688	0.4221	0.6573	1.0	1.0	primary	A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal			0
+GCA_014839755.1	Sylvia borin	Aves	ITPR1	found_annotated	CM025968.1	1262639	1.0	0.9838	1.0	0.3285	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	ITPR1	ITPR1	1
+GCA_014839755.1	Sylvia borin	Aves	ITPR2	found_annotated	CM025960.1	9884209	1.0	0.9807	1.0	0.3116	primary	A0A672UP22|ITPR2|Strigops_habroptila	ITPR2	ITPR2	1
+GCA_014839755.1	Sylvia borin	Aves	ITPR3	found_annotated	CM025980.1	3602897	1.0	0.9925	1.0	0.3942	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	ITPR3	ITPR3	1
+GCA_014839755.1	Sylvia borin	Aves	RYR	found_annotated	CM025959.1	44443883	1.0	0.9773	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	RYR2	RYR2	1
+GCA_014839755.1	Sylvia borin	Aves	RYR	found_annotated	JACEWE010000088.1	45824	1.0	0.7575	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	RYR1	RYR1	1
+GCA_014839755.1	Sylvia borin	Aves	RYR	found_annotated	CM025962.1	31504005	1.0	0.6756	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	RYR3	RYR3	1
+GCA_015883425.2	Lamprotornis superbus	Aves	ITPR1	found_annotated	CM040317.1	19158054	1.0	0.9817	1.0	0.3258	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	IHE44_0003641		0
+GCA_015883425.2	Lamprotornis superbus	Aves	ITPR2	found_annotated	CM040303.1	6953731	1.0	0.9807	1.0	0.3114	primary	A0A672UP22|ITPR2|Strigops_habroptila	IHE44_0011934		0
+GCA_015883425.2	Lamprotornis superbus	Aves	ITPR3	found_annotated	CM040330.1	3579629	1.0	0.9959	1.0	0.3955	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	IHE44_0008417		0
+GCA_015883425.2	Lamprotornis superbus	Aves	RYR	found_annotated	CM040305.1	44034396	1.0	0.9783	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	IHE44_0009251		0
+GCA_015883425.2	Lamprotornis superbus	Aves	RYR	found_annotated	CM040308.1	31928689	1.0	0.6761	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	IHE44_0013890		0
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	ITPR1	found_annotated	CM043789.1	23300234	1.0	0.9363	1.0	0.2909	primary	A0A672IUQ7|ITPR1|Salarias_fasciatus	KUCAC02_030453		0
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	ITPR1	found_annotated	CM043789.1	39026518	1.0	0.8566	1.0	0.225	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus	KUCAC02_030490		0
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	ITPR2	found_annotated	CM043790.1	21534207	1.0	0.8615	1.0	0.288	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	KUCAC02_021225		0
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	ITPR3	fragment	JAMFTG010000131.1	71109	0.6933	0.8689	1.0	1.0	primary	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	KUCAC02_020530		0
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	RYR	found_unannotated	JAMFTG010000034.1	5122522	1.0	0.8541	1.0	1.0	primary	A0AC58GZ77|ryr2a|Danio_rerio|RYR2			0
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	RYR	found_unannotated	CM043798.1	27895918	1.0	0.7886	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	KUCAC02_003163		0
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	RYR	found_unannotated	CM043797.1	4456321	1.0	0.7945	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	KUCAC02_005149		0
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	RYR	found_unannotated	CM043799.1	17635115	1.0	0.6687	1.0	1.0	primary	Q92736|RYR2|Homo_sapiens|RYR2	KUCAC02_025721		0
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	RYR	found_unannotated	CM043808.1	28620203	0.9972	0.6363	1.0	1.0	primary	A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal	KUCAC02_019985		0
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	RYR	found_unannotated	CM043806.1	27459891	1.0	0.6388	1.0	1.0	primary	Q92736|RYR2|Homo_sapiens|RYR2	KUCAC02_023889		0
 GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	ITPR1	found_annotated	CM051002.1	10936378	1.0	0.9279	1.0	0.2908	primary	A0A672IUQ7|ITPR1|Salarias_fasciatus	NHX12_030004		0
 GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	ITPR1	found_annotated	CM051002.1	17934113	1.0	0.842	1.0	0.2133	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus			0
 GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	ITPR2	found_annotated	CM051010.1	6378630	1.0	0.8234	1.0	0.2606	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	NHX12_002558		0
@@ -63,6 +331,11 @@ GCA_031216635.1	Dissostichus eleginoides	Actinopteri	RYR	found_annotated	CM06227
 GCA_031216635.1	Dissostichus eleginoides	Actinopteri	RYR	found_annotated	CM062275.1	16223837	1.0	0.6726	1.0	1.0	primary	Q92736|RYR2|Homo_sapiens|RYR2			0
 GCA_031216635.1	Dissostichus eleginoides	Actinopteri	RYR	found_annotated	CM062281.1	22588045	0.9972	0.6428	1.0	1.0	primary	A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal	KUDE01_014032		0
 GCA_031216635.1	Dissostichus eleginoides	Actinopteri	RYR	found_annotated	CM062278.1	21247394	1.0	0.6439	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	KUDE01_013069		0
+GCA_032275445.1	Crypturellus soui	Aves	ITPR1	found_no_annotation	JAUBNY010000656.1	1626283	1.0	0.9719	1.0	0.3317	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_032275445.1	Crypturellus soui	Aves	ITPR2	found_no_annotation	JAUBNY010001198.1	778048	1.0	0.9804	1.0	0.3118	primary	F1P1X4|ITPR2|Gallus_gallus|ITPR2			0
+GCA_032275445.1	Crypturellus soui	Aves	ITPR3	found_no_annotation	JAUBNY010000997.1	1486226	1.0	0.9654	1.0	0.3947	primary	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3			0
+GCA_032275445.1	Crypturellus soui	Aves	RYR	found_no_annotation	JAUBNY010000465.1	80009	0.9974	0.8949	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_032275445.1	Crypturellus soui	Aves	RYR	found_no_annotation	JAUBNY010000184.1	1020968	0.9248	0.6739	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
 GCA_033238685.1	Lates japonicus	Actinopteri	ITPR1	found_annotated	BRZM01000050.1	1574299	1.0	0.8541	1.0	0.2291	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus	AKAME5_001391900		0
 GCA_033238685.1	Lates japonicus	Actinopteri	ITPR1	found_annotated	BRZM01000069.1	1149756	1.0	0.6863	1.0	1.0	primary	A0A672IUQ7|ITPR1|Salarias_fasciatus	AKAME5_001590300		0
 GCA_033238685.1	Lates japonicus	Actinopteri	ITPR2	found_annotated	BRZM01000040.1	2192503	1.0	0.5799	1.0	1.0	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	AKAME5_001216000		0
@@ -75,6 +348,16 @@ GCA_033238685.1	Lates japonicus	Actinopteri	RYR	found_unannotated	BRZM01000008.1
 GCA_033238685.1	Lates japonicus	Actinopteri	RYR	found_unannotated	BRZM01000065.1	1502864	1.0	0.6507	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	AKAME5_001555600		0
 GCA_033238685.1	Lates japonicus	Actinopteri	RYR	found_unannotated	BRZM01000003.1	2361416	0.7502	0.8054	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	AKAME5_000111200		0
 GCA_033238685.1	Lates japonicus	Actinopteri	RYR	found_unannotated	BRZM01000052.1	2634345	0.9972	0.6131	1.0	1.0	primary	A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal			0
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	ITPR1	found_unannotated	CM070012.1	25047339	1.0	0.9691	1.0	0.3209	primary	A0A8M2BDG0|itpr1a|Danio_rerio|ITPR1			0
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	ITPR1	found_unannotated	CM070017.1	6969879	1.0	0.88	1.0	0.2327	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus			0
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	ITPR2	found_unannotated	CM070024.1	10536323	1.0	0.9288	1.0	0.3543	primary	A0A8M9PQQ3|itpr2|Danio_rerio|ITPR2			0
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	ITPR3	found_unannotated	CM070014.1	10417496	1.0	0.9425	1.0	0.3384	primary	A0A8M6Z266|itpr3|Danio_rerio|ITPR3			0
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	RYR	found_unannotated	CM070018.1	329852	1.0	0.971	1.0	1.0	primary	A0AC58GZ77|ryr2a|Danio_rerio|RYR2			0
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	RYR	found_unannotated	CM070016.1	19907049	1.0	0.8133	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	RYR	found_unannotated	CM070024.1	19819194	1.0	0.8028	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	RYR	found_unannotated	CM070023.1	6053681	1.0	0.6796	1.0	1.0	primary	Q92736|RYR2|Homo_sapiens|RYR2			0
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	RYR	found_unannotated	CM070026.1	20868657	1.0	0.6588	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	RYR	found_unannotated	CM070023.1	4005047	0.9996	0.5462	1.0	1.0	primary	A0AAJ7XD62|LOC116953891|Petromyzon_marinus|vertebrate_basal			0
 GCA_036250305.1	Ataeniobius toweri	Actinopteri	ITPR1	assembly_gap	JAHUTI010000884.1	4498	0.4967	0.9116	1.0	0.2941	primary	A0A672IUQ7|ITPR1|Salarias_fasciatus	ITPR1_10	ITPR1	1
 GCA_036250305.1	Ataeniobius toweri	Actinopteri	ITPR1	assembly_gap	JAHUTI010042598.1	997	0.3777	0.8826	1.0	0.2308	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus	ITPR1_6	ITPR1	1
 GCA_036250305.1	Ataeniobius toweri	Actinopteri	ITPR2	assembly_gap	JAHUTI010019866.1	10266	0.3688	0.8064	1.0	1.0	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	ITPR2_1	ITPR2	1
@@ -130,6 +413,59 @@ GCA_040091305.1	Ilyodon furcidens	Actinopteri	RYR	assembly_gap	JAHRIQ010035639.1
 GCA_040091305.1	Ilyodon furcidens	Actinopteri	RYR	assembly_gap	JAHRIQ010062061.1	288	0.1686	0.8528	1.0	1.0	primary	H3BGR5|RYR|Latimeria_chalumnae	RYR1_6	RYR1	1
 GCA_040091305.1	Ilyodon furcidens	Actinopteri	RYR	assembly_gap	JAHRIQ010035938.1	1270	0.2242	0.6382	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	RYR3_2	RYR3	1
 GCA_040091305.1	Ilyodon furcidens	Actinopteri	RYR	assembly_gap	JAHRIQ010083533.1	1067	0.1383	0.8237	1.0	1.0	primary	A0AC58GZ77|ryr2a|Danio_rerio|RYR2	RYR2_7	RYR2	1
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR1	assembly_gap	JAHRIO010081053.1	830	0.4967	0.9088	1.0	0.2901	primary	A0A672IUQ7|ITPR1|Salarias_fasciatus	GOODEAATRI_015021		0
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR1	assembly_gap	JAHRIO010012619.1	2555	0.3777	0.8845	1.0	0.2326	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus	GOODEAATRI_023992		0
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR1	assembly_gap	JAHRIO010040257.1	9876	0.2664	0.8868	1.0	1.0	primary	A0A672IUQ7|ITPR1|Salarias_fasciatus			0
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR2	assembly_gap	JAHRIO010070237.1	9264	0.3688	0.8083	1.0	0.2918	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera			0
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR2	assembly_gap	JAHRIO010031817.1	4172	0.3602	0.7638	1.0	1.0	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	GOODEAATRI_020028		0
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR2	assembly_gap	JAHRIO010020706.1	6875	0.2007	0.895	1.0	0.159	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	ITPR2	ITPR2	1
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR3	assembly_gap	JAHRIO010062185.1	408	0.306	0.9114	1.0	1.0	primary	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri			0
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR3	assembly_gap	JAHRIO010014175.1	206	0.1813	0.8998	1.0	1.0	primary	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	ITPR3_3	ITPR3	1
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR3	assembly_gap	JAHRIO010051160.1	5865	0.1315	0.9573	1.0	1.0	primary	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	GOODEAATRI_015781		0
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR3	assembly_gap	JAHRIO010040554.1	254	0.117	0.7412	1.0	1.0	primary	H3B932|ITPR3|Latimeria_chalumnae	ITPR1_1	ITPR1	0
+GCA_040091325.1	Goodea atripinnis	Actinopteri	RYR	assembly_gap	JAHRIO010060328.1	341	0.5952	0.7911	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_040091325.1	Goodea atripinnis	Actinopteri	RYR	assembly_gap	JAHRIO010070261.1	928	0.4932	0.6515	1.0	1.0	primary	A0A3Q0HBW9|RYR|Alligator_sinensis	GOODEAATRI_006242		0
+GCA_040091325.1	Goodea atripinnis	Actinopteri	RYR	assembly_gap	JAHRIO010050443.1	303	0.3707	0.7832	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	GOODEAATRI_008688		0
+GCA_040091325.1	Goodea atripinnis	Actinopteri	RYR	assembly_gap	JAHRIO010040339.1	5216	0.3682	0.6905	1.0	1.0	primary	A0A3Q0HBW9|RYR|Alligator_sinensis	GOODEAATRI_007225		0
+GCA_040091325.1	Goodea atripinnis	Actinopteri	RYR	assembly_gap	JAHRIO010051001.1	1562	0.2746	0.8284	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	RYR1_1	RYR1	1
+GCA_040091325.1	Goodea atripinnis	Actinopteri	RYR	assembly_gap	JAHRIO010080948.1	403	0.2305	0.6565	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_040091325.1	Goodea atripinnis	Actinopteri	RYR	assembly_gap	JAHRIO010070036.1	36061	0.23	0.6411	1.0	1.0	primary	A0AC58GZ77|ryr2a|Danio_rerio|RYR2			0
+GCA_040091325.1	Goodea atripinnis	Actinopteri	RYR	assembly_gap	JAHRIO010061373.1	333	0.2526	0.587	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	RYR3_3	RYR3	1
+GCA_040091325.1	Goodea atripinnis	Actinopteri	RYR	assembly_gap	JAHRIO010071782.1	1963	0.2347	0.5766	1.0	1.0	primary	A0A3Q0HBW9|RYR|Alligator_sinensis			0
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR1	assembly_gap	JAHRIN010036437.1	160	0.3402	0.8947	1.0	0.3142	primary	A0A672IUQ7|ITPR1|Salarias_fasciatus			0
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR1	assembly_gap	JAHRIN010042419.1	2154	0.2667	0.8856	1.0	1.0	primary	A0A672IUQ7|ITPR1|Salarias_fasciatus			0
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR1	assembly_gap	JAHRIN010012333.1	1848	0.2606	0.8856	1.0	0.242	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus	ITPR1_5	ITPR1	1
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR1	assembly_gap	JAHRIN010081074.1	1916	0.1148	0.8594	1.0	1.0	unresolved:vertebrate_basal	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR2	assembly_gap	JAHRIN010008558.1	569	0.5065	0.7882	1.0	0.2162	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera			0
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR2	assembly_gap	JAHRIN010026214.1	419	0.324	0.7995	1.0	0.259	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera			0
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR3	assembly_gap	JAHRIN010060839.1	654	0.306	0.9102	1.0	1.0	primary	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri			0
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR3	assembly_gap	JAHRIN010046157.1	442	0.1813	0.9018	1.0	1.0	primary	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	ITPR3_4	ITPR3	1
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR3	assembly_gap	JAHRIN010009234.1	1818	0.1315	0.9573	1.0	0.2591	primary	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri			0
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR3	assembly_gap	JAHRIN010059419.1	17041	0.1084	0.8175	1.0	1.0	primary	A0A4W3GWE7|ITPR3|Callorhinchus_milii	ITPR2_2	ITPR2	0
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	RYR	found_unannotated	JAHRIN010033797.1	1111	0.7449	0.7978	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	RYR	found_unannotated	JAHRIN010008780.1	2287	0.4048	0.7999	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	RYR	found_unannotated	JAHRIN010042328.1	5434	0.3694	0.6939	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	ITPR1	assembly_gap	JAHRIM010090959.1	4623	0.4967	0.9116	1.0	0.2934	primary	A0A672IUQ7|ITPR1|Salarias_fasciatus			0
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	ITPR1	assembly_gap	JAHRIM010092897.1	1078	0.3777	0.8826	1.0	0.2289	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus	ITPR1_4	ITPR1	1
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	ITPR2	assembly_gap	JAHRIM010030361.1	2743	0.3688	0.8064	1.0	1.0	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	ITPR2_3	ITPR2	1
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	ITPR2	assembly_gap	JAHRIM010082012.1	84	0.3602	0.7648	1.0	1.0	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	ITPR2_2	ITPR2	1
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	ITPR2	assembly_gap	JAHRIM010070217.1	16562	0.2121	0.8955	1.0	0.1577	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera			0
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	ITPR3	assembly_gap	JAHRIM010070462.1	9526	0.5622	0.9068	1.0	0.3423	primary	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri			0
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	RYR	assembly_gap	JAHRIM010070216.1	1755	0.5078	0.6574	1.0	1.0	primary	A0A3Q0HBW9|RYR|Alligator_sinensis			0
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	RYR	assembly_gap	JAHRIM010090740.1	403	0.3264	0.8257	1.0	1.0	primary	H3BGR5|RYR|Latimeria_chalumnae			0
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	RYR	assembly_gap	JAHRIM010020309.1	346	0.3549	0.6933	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	XENORESO_009240		0
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	RYR	assembly_gap	JAHRIM010091130.1	1547	0.2746	0.8284	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	RYR1_1	RYR1	1
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	RYR	assembly_gap	JAHRIM010013138.1	938	0.2552	0.7337	1.0	1.0	primary	H3BGR5|RYR|Latimeria_chalumnae	XENORESO_010084		0
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	RYR	assembly_gap	JAHRIM010001033.1	2482	0.2899	0.5956	1.0	1.0	primary	A0AC58GZ77|ryr2a|Danio_rerio|RYR2			0
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	RYR	assembly_gap	JAHRIM010080551.1	1876	0.175	0.8435	1.0	1.0	primary	A0AC58GZ77|ryr2a|Danio_rerio|RYR2	RYR2_2	RYR2	1
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	RYR	assembly_gap	JAHRIM010081442.1	327	0.2342	0.5863	1.0	1.0	primary	A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal			0
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	RYR	assembly_gap	JAHRIM010061514.1	1880	0.1861	0.6401	1.0	1.0	primary	A0AC58GZ77|ryr2a|Danio_rerio|RYR2	RYR3_2	RYR3	1
+GCA_043380575.1	Atractosteus spatula	Actinopteri	ITPR1	found_no_annotation	CM092437.1	12011053	1.0	0.9042	1.0	0.2523	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus			0
+GCA_043380575.1	Atractosteus spatula	Actinopteri	ITPR2	found_no_annotation	CM092440.1	51804679	1.0	0.8197	1.0	0.2306	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_043380575.1	Atractosteus spatula	Actinopteri	ITPR3	found_no_annotation	CM092438.1	20753442	1.0	0.8361	1.0	0.2294	primary	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri			0
+GCA_043380575.1	Atractosteus spatula	Actinopteri	RYR	found_no_annotation	CM092448.1	5802523	1.0	0.9029	1.0	1.0	primary	A0AC58GZ77|ryr2a|Danio_rerio|RYR2			0
+GCA_043380575.1	Atractosteus spatula	Actinopteri	RYR	found_no_annotation	CM092436.1	65620117	1.0	0.8403	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCA_043380575.1	Atractosteus spatula	Actinopteri	RYR	found_no_annotation	CM092441.1	37135664	1.0	0.6938	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
 GCA_050084785.1	Liparis tanakae	Actinopteri	ITPR1	found_no_annotation	CM114425.1	14184100	1.0	0.9435	1.0	0.2951	primary	A0A672IUQ7|ITPR1|Salarias_fasciatus			0
 GCA_050084785.1	Liparis tanakae	Actinopteri	ITPR1	found_no_annotation	CM114425.1	21265958	1.0	0.8504	1.0	0.2211	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus			0
 GCA_050084785.1	Liparis tanakae	Actinopteri	ITPR2	found_no_annotation	CM114422.1	10483677	0.9981	0.8572	1.0	0.2828	primary	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera			0
@@ -140,6 +476,11 @@ GCA_050084785.1	Liparis tanakae	Actinopteri	RYR	found_no_annotation	CM114433.1	2
 GCA_050084785.1	Liparis tanakae	Actinopteri	RYR	found_no_annotation	CM114430.1	14558494	1.0	0.6755	1.0	1.0	primary	Q92736|RYR2|Homo_sapiens|RYR2			0
 GCA_050084785.1	Liparis tanakae	Actinopteri	RYR	found_no_annotation	CM114435.1	3942056	0.9972	0.646	1.0	1.0	primary	A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal			0
 GCA_050084785.1	Liparis tanakae	Actinopteri	RYR	found_no_annotation	CM114432.1	18386616	1.0	0.5596	1.0	1.0	primary	A0AAJ7XD62|LOC116953891|Petromyzon_marinus|vertebrate_basal			0
+GCA_054084135.1	Copsychus sechellarum	Aves	ITPR1	found_no_annotation	CM133787.1	719788	1.0	0.9773	1.0	0.3226	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1			0
+GCA_054084135.1	Copsychus sechellarum	Aves	ITPR2	found_no_annotation	CM133781.1	7006064	1.0	0.9804	1.0	0.3116	primary	A0A672UP22|ITPR2|Strigops_habroptila			0
+GCA_054084135.1	Copsychus sechellarum	Aves	ITPR3	found_no_annotation	CM133804.1	2574051	1.0	0.9959	1.0	0.3944	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus			0
+GCA_054084135.1	Copsychus sechellarum	Aves	RYR	found_no_annotation	CM133779.1	45400159	1.0	0.9777	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
+GCA_054084135.1	Copsychus sechellarum	Aves	RYR	found_no_annotation	CM133782.1	33373297	1.0	0.6744	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
 GCA_054883375.1	Arapaima gigas	Actinopteri	ITPR1	found_no_annotation	CM142465.1	765235	1.0	0.909	1.0	0.2616	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus			0
 GCA_054883375.1	Arapaima gigas	Actinopteri	ITPR1	found_no_annotation	CM142465.1	21852238	1.0	0.8891	1.0	0.2413	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus			0
 GCA_054883375.1	Arapaima gigas	Actinopteri	ITPR2	found_no_annotation	CM142463.1	6210260	1.0	0.7795	1.0	0.1938	primary	Q14571|ITPR2|Homo_sapiens|ITPR2			0
@@ -157,6 +498,27 @@ GCA_056783665.1	Albula glossodonta	Actinopteri	RYR	found_no_annotation	CM165711.
 GCA_056783665.1	Albula glossodonta	Actinopteri	RYR	found_no_annotation	CM165702.1	15074351	1.0	0.8241	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
 GCA_056783665.1	Albula glossodonta	Actinopteri	RYR	found_no_annotation	CM165710.1	20434967	1.0	0.6843	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2			0
 GCA_056783665.1	Albula glossodonta	Actinopteri	RYR	found_no_annotation	CM165707.1	9655061	1.0	0.6623	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1			0
+GCF_000695815.1	Acanthisitta chloris	Aves	ITPR1	found_annotated	NW_008667845.1	5417	0.9946	0.9787	1.0	0.3201	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	LOC103800315		0
+GCF_000695815.1	Acanthisitta chloris	Aves	ITPR2	fragment	NW_008681905.1	13577	0.6148	0.9843	1.0	1.0	primary	A0A672UP22|ITPR2|Strigops_habroptila	LOC103805612		0
+GCF_000695815.1	Acanthisitta chloris	Aves	ITPR3	found_annotated	NW_008652443.1	269	0.7918	0.9663	1.0	1.0	primary	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	LOC103804766		0
+GCF_000695815.1	Acanthisitta chloris	Aves	RYR	found_annotated	NW_008649756.1	792	0.9455	0.9715	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	RYR2	RYR2	1
+GCF_000696875.1	Nestor notabilis	Aves	ITPR1	found_annotated	NW_009932375.1	2343	0.9971	0.9895	1.0	0.3203	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	ITPR1	ITPR1	1
+GCF_000696875.1	Nestor notabilis	Aves	ITPR2	assembly_gap	NW_009917756.1	13201	0.6237	0.9816	1.0	1.0	primary	A0A672UP22|ITPR2|Strigops_habroptila	LOC104401715		0
+GCF_000696875.1	Nestor notabilis	Aves	ITPR3	found_annotated	NW_009909990.1	5103	0.9887	0.9655	1.0	0.3442	primary	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	ITPR3	ITPR3	1
+GCF_000696875.1	Nestor notabilis	Aves	RYR	assembly_gap	NW_009936419.1	22370	0.5058	0.6975	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	RYR3	RYR3	1
+GCF_000696875.1	Nestor notabilis	Aves	RYR	assembly_gap	NW_009937010.1	54862	0.3112	0.9793	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	LOC104408888		0
+GCF_000696875.1	Nestor notabilis	Aves	RYR	assembly_gap	NW_009933355.1	2230	0.4135	0.6578	1.0	1.0	primary	A0A4W3I1N0|LOC103190328|Callorhinchus_milii|vertebrate_basal	LOC104407535		0
+GCF_000696875.1	Nestor notabilis	Aves	RYR	assembly_gap	NW_009918034.1	272	0.2281	0.9788	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	LOC104401818		0
+GCF_000696875.1	Nestor notabilis	Aves	RYR	assembly_gap	NW_009913265.1	1985	0.2206	0.9518	1.0	1.0	primary	A0A3Q0HBW9|RYR|Alligator_sinensis	LOC104412396		0
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR1	found_annotated	NW_010586921.1	15921	1.0	0.986	1.0	0.3224	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	ITPR1	ITPR1	1
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR3	assembly_gap	NW_010580621.1	261234	0.5679	0.9881	1.0	1.0	primary	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	ITPR3	ITPR3	1
+GCF_000705375.1	Tinamus guttatus	Aves	RYR	found_annotated	NW_010585014.1	4760	0.993	0.9767	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	RYR2	RYR2	1
+GCF_000705375.1	Tinamus guttatus	Aves	RYR	found_annotated	NW_010578151.1	58592	0.9504	0.6628	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	LOC104580300		0
+GCF_003957555.1	Calypte anna	Aves	ITPR1	found_annotated	NC_044258.1	19887535	1.0	0.9878	1.0	0.3326	primary	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	ITPR1	ITPR1	1
+GCF_003957555.1	Calypte anna	Aves	ITPR2	found_annotated	NC_044244.1	42102890	1.0	0.9814	1.0	0.3116	primary	A0A672UP22|ITPR2|Strigops_habroptila	ITPR2	ITPR2	1
+GCF_003957555.1	Calypte anna	Aves	ITPR3	found_annotated	NC_044271.1	5719989	0.9854	0.9644	1.0	0.4002	primary	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	ITPR3	ITPR3	1
+GCF_003957555.1	Calypte anna	Aves	RYR	found_annotated	NC_044246.1	6821233	1.0	0.9722	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	RYR2	RYR2	1
+GCF_003957555.1	Calypte anna	Aves	RYR	found_annotated	NC_044251.1	11677553	1.0	0.6734	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	RYR3	RYR3	1
 GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	ITPR1	found_annotated	NC_041749.1	96266008	1.0	0.9637	1.0	0.3117	primary	P11881|Itpr1|Mus_musculus|ITPR1	ITPR1	ITPR1	1
 GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	ITPR2	found_annotated	NC_041729.1	161959785	1.0	0.9178	1.0	0.2713	primary	Q14571|ITPR2|Homo_sapiens|ITPR2	ITPR2	ITPR2	1
 GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	ITPR3	found_annotated	NC_041734.1	67217745	1.0	0.9148	1.0	0.3423	primary	Q14573|ITPR3|Homo_sapiens|ITPR3	ITPR3	ITPR3	1
@@ -193,3 +555,13 @@ GCF_901000725.3	Takifugu rubripes	Actinopteri	RYR	found_annotated	NC_042285.1	58
 GCF_901000725.3	Takifugu rubripes	Actinopteri	RYR	found_annotated	NC_042286.1	10200686	1.0	0.6735	1.0	1.0	primary	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	LOC101061096		0
 GCF_901000725.3	Takifugu rubripes	Actinopteri	RYR	found_annotated	NC_042300.1	9850796	1.0	0.6578	1.0	1.0	primary	Q92736|RYR2|Homo_sapiens|RYR2	ryr3	RYR3	1
 GCF_901000725.3	Takifugu rubripes	Actinopteri	RYR	found_annotated	NC_042288.1	5114135	1.0	0.6127	1.0	1.0	primary	Q92736|RYR2|Homo_sapiens|RYR2	ryr2b	RYR2	1
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	ITPR1	found_annotated	NC_136886.1	10749556	1.0	0.9683	1.0	0.3232	primary	A0A8M2BDG0|itpr1a|Danio_rerio|ITPR1	itpr1a	ITPR1	1
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	ITPR1	found_annotated	NC_136897.1	24043985	1.0	0.8677	1.0	0.2334	unresolved:vertebrate_basal	A0A672IUQ7|ITPR1|Salarias_fasciatus	itpr1b	ITPR1	1
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	ITPR2	found_annotated	NC_136883.1	28287642	1.0	0.9124	1.0	0.3453	primary	A0A8M9PQQ3|itpr2|Danio_rerio|ITPR2	itpr2	ITPR2	1
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	ITPR3	found_annotated	NC_136890.1	23826566	1.0	0.9421	1.0	0.3412	primary	A0A8M6Z266|itpr3|Danio_rerio|ITPR3	itpr3	ITPR3	1
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	RYR	found_annotated	NC_136896.1	427819	1.0	0.9553	1.0	1.0	primary	A0AC58GZ77|ryr2a|Danio_rerio|RYR2	ryr2a	RYR2	1
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	RYR	found_annotated	NC_136898.1	9598853	1.0	0.8044	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	ryr1a	RYR1	1
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	RYR	found_annotated	NC_136883.1	35433470	1.0	0.8016	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	ryr1b	RYR1	1
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	RYR	found_annotated	NC_136888.1	35261156	1.0	0.6688	1.0	1.0	primary	Q92736|RYR2|Homo_sapiens|RYR2	LOC307009684		0
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	RYR	found_annotated	NC_136891.1	31944076	1.0	0.6477	1.0	1.0	primary	A0A6I8Q6P7|ryr1|Xenopus_tropicalis|RYR1	ryr3	RYR3	1
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	RYR	found_annotated	NC_136888.1	17331917	0.9996	0.551	1.0	1.0	primary	A0AAJ7XD62|LOC116953891|Petromyzon_marinus|vertebrate_basal	ryr2b	RYR2	1

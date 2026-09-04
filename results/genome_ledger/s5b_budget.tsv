@@ -1,4 +1,4 @@
 group	genomes	gbp	download_gb	fasta_gb	miniprot_h	rescue_h	compute_h	download_h	wall_h
-swept (S5a pilot)	26	22.9	6.9	22.9	0.2	0.1	0.3	0.3	0.3
-remaining, standard	281	466.4	139.9	466.5	4.7	1.2	5.8	7.1	7.1
+swept (S5a pilot)	83	82.2	24.7	82.2	0.8	0.3	1.2	1.2	1.2
+remaining, standard	224	407.1	122.1	407.1	4.1	0.9	5.0	6.2	6.2
 remaining, giants	2	63.2	19.0	63.2	0.6	0.0	0.6	1.0	1.0

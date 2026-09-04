@@ -862,3 +862,40 @@ it lacked.
 the attribution margin last, on the full fragment distribution — changing it
 re-derives the rescue attribution only, not the sweep. `s5_report.py` still
 carries S5a's pilot framing and needs reworking for 309 genomes.
+
+### S5b addendum — the report generator, and a control that changed the answer
+
+Drafted the full-sweep report as `s5_report.py` (instrument sections) +
+`s5_report_results.py` (results), following the `s3_report.py` /
+`s3_report_d10.py` split so both stay under 500 lines and share the caller's
+table loader.
+
+**The design constraint: the generator must test S5a's pilot claims, not
+narrate them.** Six-genome findings are hypotheses at 309. Each results
+section computes its statistic, compares it against the pilot's value recorded
+in `PILOT`, and renders `confirmed` / `not confirmed` / `contradicted` /
+`underpowered` from the comparison, printing the pilot's number beside the new
+one. A generator written around the pilot's answers would print them whatever
+the sweep found.
+
+Exercised against the partial sweep (81 genomes), it already earned itself
+three times:
+
+1. **Caught a latent break**: the S5a section still read
+   `n_contested_below_threshold`, a JSON key renamed when the calibration
+   started distinguishing inherited from in-force. It would have failed at the
+   end of the sweep instead of now.
+2. **The span-bias hypothesis renders `Confirmed` but much weaker than the
+   pilot** — below the bar ITPR3 67 % vs ITPR1 52 % (pilot: 67 % vs 0 %). The
+   verdict is right and the magnitude is honest, which is what printing the
+   pilot's number beside it is for.
+3. **A control that reversed a finding.** Per-paralog annotation completeness
+   looked dramatic uncontrolled — ITPR3 correctly named at 54 % of found loci
+   against ITPR2 at 14 %, a 39-point gap. Holding contiguity constant (only
+   assemblies whose contigs can carry the gene) it **vanishes**: 38 % / 44 % /
+   40 %, within 6 points. The apparent annotation-quality difference was
+   assembly quality. The section now reports both blocks, says which one the
+   verdict reads, and warns when there are too few above-bar loci to control.
+
+Also of note in the partial ledger: **0 cells are `absent` at 81 genomes**, and
+D14 still holds absolutely — at all 566 loci only one family's baits aligned.

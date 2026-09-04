@@ -8,27 +8,27 @@
  "groups": [
   {
    "group": "swept (S5a pilot)",
-   "genomes": 26,
-   "gbp": 22.9,
-   "download_gb": 6.9,
-   "fasta_gb": 22.9,
-   "miniprot_h": 0.2,
-   "rescue_h": 0.1,
-   "compute_h": 0.3,
-   "download_h": 0.3,
-   "wall_h": 0.3
+   "genomes": 83,
+   "gbp": 82.2,
+   "download_gb": 24.7,
+   "fasta_gb": 82.2,
+   "miniprot_h": 0.8,
+   "rescue_h": 0.3,
+   "compute_h": 1.2,
+   "download_h": 1.2,
+   "wall_h": 1.2
   },
   {
    "group": "remaining, standard",
-   "genomes": 281,
-   "gbp": 466.4,
-   "download_gb": 139.9,
-   "fasta_gb": 466.5,
-   "miniprot_h": 4.7,
-   "rescue_h": 1.2,
-   "compute_h": 5.8,
-   "download_h": 7.1,
-   "wall_h": 7.1
+   "genomes": 224,
+   "gbp": 407.1,
+   "download_gb": 122.1,
+   "fasta_gb": 407.1,
+   "miniprot_h": 4.1,
+   "rescue_h": 0.9,
+   "compute_h": 5.0,
+   "download_h": 6.2,
+   "wall_h": 6.2
   },
   {
    "group": "remaining, giants",
@@ -44,19 +44,19 @@
   }
  ],
  "remaining_totals": {
-  "genomes": 283,
-  "gbp": 529.6,
-  "download_gb": 158.9,
-  "fasta_gb": 529.7,
-  "compute_h": 6.4,
-  "download_h": 8.1
+  "genomes": 226,
+  "gbp": 470.3,
+  "download_gb": 141.1,
+  "fasta_gb": 470.3,
+  "compute_h": 5.6,
+  "download_h": 7.2
  },
- "workers_assumed": 6,
- "wall_h_remaining": 8.1,
+ "workers_assumed": 2,
+ "wall_h_remaining": 7.2,
  "bound_by": "download",
  "storage": {
-  "free_gb_now": 1401.9,
-  "fasta_gb_if_kept": 529.7,
+  "free_gb_now": 1337.6,
+  "fasta_gb_if_kept": 470.3,
   "fits_without_delete_after": true,
   "note": "--delete-after keeps the peak footprint at ~2 genomes; keeping the FASTAs costs the fasta_gb total but saves re-downloading for S8 synteny and S10 validation"
  },

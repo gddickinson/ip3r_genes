@@ -1,38 +1,38 @@
 {
- "built_at": "2026-09-04T14:07:21+00:00",
+ "built_at": "2026-09-04T15:44:46+00:00",
  "min_aa": 200,
- "genomes_contributing": 13,
+ "genomes_contributing": 77,
  "v3_records": 16039,
- "v4_records": 16123,
- "models_collected": 84,
- "models_enrolled": 84,
+ "v4_records": 16441,
+ "models_collected": 402,
+ "models_enrolled": 402,
  "models_unassigned": 0,
- "itpr_models": 42,
- "ryr_models": 42,
+ "itpr_models": 213,
+ "ryr_models": 189,
  "itpr_by_db_status": {
-  "annotated_unnamed": 11,
-  "genome_only": 30,
-  "annotated_other_paralog": 1
+  "annotated_unnamed": 52,
+  "genome_only": 158,
+  "annotated_other_paralog": 3
  },
  "itpr_by_cell": {
-  "ITPR3": 15,
-  "ITPR1": 17,
-  "ITPR2": 10
+  "ITPR3": 61,
+  "ITPR1": 81,
+  "ITPR2": 71
  },
  "loci_by_db_status": {
-  "ITPR3:annotated_unnamed": 4,
-  "RYR:genome_only": 24,
-  "ITPR1:genome_only": 12,
-  "ITPR2:genome_only": 8,
-  "RYR:annotated_named": 21,
-  "ITPR3:annotated_named": 4,
-  "ITPR1:annotated_named": 6,
-  "ITPR3:annotated_other_paralog": 1,
-  "ITPR3:genome_only": 10,
-  "ITPR1:annotated_unnamed": 5,
-  "ITPR2:annotated_unnamed": 2,
-  "RYR:annotated_unnamed": 18,
-  "ITPR2:annotated_named": 4
+  "ITPR3:annotated_unnamed": 24,
+  "RYR:genome_only": 138,
+  "RYR:annotated_unnamed": 51,
+  "ITPR1:genome_only": 61,
+  "ITPR1:annotated_unnamed": 20,
+  "ITPR2:annotated_unnamed": 8,
+  "ITPR2:genome_only": 63,
+  "ITPR3:genome_only": 34,
+  "RYR:annotated_named": 81,
+  "ITPR3:annotated_named": 42,
+  "ITPR2:annotated_named": 19,
+  "ITPR1:annotated_named": 22,
+  "ITPR3:annotated_other_paralog": 3
  },
  "skipped_short": 0
 }
