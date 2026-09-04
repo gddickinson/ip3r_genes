@@ -150,10 +150,15 @@ def fig_jackhmmer_convergence():
                  xytext=(0, 3), textcoords="offset points", ha="right",
                  fontsize=figstyle.FS_TICK, color="#b3261e")
     ax2.axhline(0, color=figstyle.GRID, lw=0.6)
-    ax2.set_ylim(-6, MAX_SISTER_RISE * 100 + 3)
+    # Scale to the data, not to the rule: a run that drifts off-family drives
+    # the sister share *down* (the accretion dilutes it), and a fixed window
+    # around K1's ceiling would clip exactly the trace worth seeing.
+    lo = min(float(r["sister_rise"]) for r in rows) * 100
+    ax2.set_ylim(min(lo - 3, -6), MAX_SISTER_RISE * 100 + 3)
     ax2.set_xlabel("jackhmmer iteration")
     ax2.set_ylabel("RyR share of the model,\nchange from round 1 (points)")
-    ax2.legend(frameon=False, fontsize=figstyle.FS_TICK, loc="lower left")
+    ax2.legend(frameon=False, fontsize=figstyle.FS_TICK,
+               loc="upper left")
     figstyle.panel(ax2, "b", "did iterating drift it into the sister family?")
     figstyle.despine(ax2)
     figstyle.hgrid(ax2)

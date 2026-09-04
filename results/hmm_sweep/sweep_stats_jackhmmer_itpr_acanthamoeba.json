@@ -1,0 +1,30 @@
+{
+ "db": "/Volumes/FANTOM/IP3R_DATA/proteomes/vertebrata_refprot.fasta",
+ "evalue": "1e-5",
+ "cpu": 3,
+ "max_iter": 10,
+ "jackhmmer": {
+  "itpr_acanthamoeba": {
+   "tag": "itpr_acanthamoeba",
+   "accession": "L8GF85",
+   "rounds": 10,
+   "converged": false,
+   "elapsed_s": 27242.0,
+   "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/jackhmmer_itpr_acanthamoeba.domtblout",
+   "log": "/Volumes/FANTOM/IP3R_DATA/hmmer/jackhmmer_itpr_acanthamoeba.log",
+   "rounds_json": "/Volumes/FANTOM/IP3R_DATA/hmmer/jackhmmer_itpr_acanthamoeba_rounds.json",
+   "new_targets": [
+    5246,
+    2562,
+    1185,
+    8678,
+    1075,
+    677,
+    3300,
+    867,
+    1312,
+    1421
+   ]
+  }
+ }
+}

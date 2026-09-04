@@ -82,6 +82,19 @@
    "accepted_targets": 7226,
    "offfamily_growth": 1.72
   },
+  "itpr_acanthamoeba": {
+   "verdict": "killed",
+   "accepted_rounds": 9,
+   "killed_at": 10,
+   "rule": "K3",
+   "reason": "reached the 10-round ceiling without converging; no completeness claim may rest on this run",
+   "tag": "itpr_acanthamoeba",
+   "accession": "L8GF85",
+   "converged": false,
+   "n_rounds": 10,
+   "accepted_targets": 24902,
+   "offfamily_growth": 29.0
+  },
   "itpr_fly": {
    "verdict": "clean",
    "accepted_rounds": 10,
@@ -96,5 +109,5 @@
    "offfamily_growth": 1.75
   }
  },
- "elapsed_s": 25.9
+ "elapsed_s": 221.3
 }

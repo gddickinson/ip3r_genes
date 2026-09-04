@@ -399,3 +399,37 @@ as it liked, and combines its results in whatever order they finish. A model
 that changes when you rebuild it cannot be the model any published result
 was produced with. Both are now built single-threaded and byte-identical
 across repeated runs, and every file records its own checksum.
+
+---
+
+## 2026-09-04 — S3 addendum: the third seed finished
+
+**The family looks the same from anywhere on the tree of life.** The
+completeness argument was built by starting an iterative search from a
+single receptor sequence and letting it pull in everything it could reach.
+Three such searches were run, from a human, a fruit fly and *Acanthamoeba*
+— an amoeba whose lineage split from ours long before animals existed. The
+third took 7.6 hours and only finished after the last session ended. Its
+result: all three searches recover **exactly the same family**. The same
+1,656 full-architecture IP3 receptors, the same 952 partial ones, in every
+run. Which sequence you start from does not change what the family turns
+out to contain, and that is a far stronger statement about completeness
+than any one search converging.
+
+**What the deep-branching seed did change is how much rubbish it dragged
+in.** The amoeba search ended up resting on 26,266 sequences against the
+human search's 7,222, and 18,670 of those extras are proteins that neither
+of the project's two receptor models recognises at all. Starting from a
+sequence 1.5 billion years from the reference does not find more receptors
+— it finds the same receptors plus a great deal of unrelated protein.
+
+**And that failure had a shape nobody had anticipated.** The safeguard
+built into this project watches for a search sliding into the ryanodine
+receptors, the sister family that shares the same architecture. This search
+did the opposite: it filled up with unrelated protein so fast that the
+ryanodine fraction *fell* by 27 percentage points, making a badly drifting
+search look, by that measure, cleaner than the ones that behaved. It was
+caught only by the blunt rule that a search which has not settled after ten
+rounds cannot support a completeness claim. The lesson is recorded as a
+decision: keep the blunt rule, and always report what a search is actually
+built from rather than only whether it stopped growing.

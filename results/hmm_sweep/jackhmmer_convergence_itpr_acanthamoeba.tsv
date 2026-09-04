@@ -1,0 +1,11 @@
+seed_tag	accession	round	new_targets	targets_in_msa	n_included	converged
+itpr_acanthamoeba	L8GF85	1	5246	5246	5246	False
+itpr_acanthamoeba	L8GF85	2	2562	7808	7808	False
+itpr_acanthamoeba	L8GF85	3	1185	8988	8988	False
+itpr_acanthamoeba	L8GF85	4	8678	17666	17666	False
+itpr_acanthamoeba	L8GF85	5	1075	18740	18740	False
+itpr_acanthamoeba	L8GF85	6	677	19410	19410	False
+itpr_acanthamoeba	L8GF85	7	3300	22703	22703	False
+itpr_acanthamoeba	L8GF85	8	867	23560	23560	False
+itpr_acanthamoeba	L8GF85	9	1312	24863	24863	False
+itpr_acanthamoeba	L8GF85	10	1421		26266	False

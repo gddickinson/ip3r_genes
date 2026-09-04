@@ -9,6 +9,16 @@ itpr1_human	Q14643	7	6	7199	2608	2164	2427	0.3006	-0.0213	1.0	False	killed	K3
 itpr1_human	Q14643	8	12	7210	2608	2174	2428	0.3015	-0.0204	1.0	False	killed	K3
 itpr1_human	Q14643	9	9	7219	2608	2179	2432	0.3018	-0.0201	1.0	False	killed	K3
 itpr1_human	Q14643	10	3	7222	2608	2182	2432	0.3021	-0.0198	1.0	False	killed	K3
+itpr_acanthamoeba	L8GF85	1	5246	5246	2592	1919	735	0.3658	0.0		False	killed	K3
+itpr_acanthamoeba	L8GF85	2	2562	7808	2608	2118	3082	0.2713	-0.0945	1.49	False	killed	K3
+itpr_acanthamoeba	L8GF85	3	1185	8988	2608	2244	4136	0.2497	-0.1161	1.15	False	killed	K3
+itpr_acanthamoeba	L8GF85	4	8678	17666	2608	2273	12785	0.1287	-0.2371	1.97	False	killed	K3
+itpr_acanthamoeba	L8GF85	5	1075	18740	2608	2321	13811	0.1239	-0.2419	1.06	False	killed	K3
+itpr_acanthamoeba	L8GF85	6	677	19410	2608	2339	14463	0.1205	-0.2453	1.04	False	killed	K3
+itpr_acanthamoeba	L8GF85	7	3300	22703	2608	2341	17754	0.1031	-0.2627	1.17	False	killed	K3
+itpr_acanthamoeba	L8GF85	8	867	23560	2608	2342	18610	0.0994	-0.2664	1.04	False	killed	K3
+itpr_acanthamoeba	L8GF85	9	1312	24863	2608	2345	19910	0.0943	-0.2715	1.06	False	killed	K3
+itpr_acanthamoeba	L8GF85	10	1421	26266	2608	2345	21313	0.0893	-0.2765	1.06	False	killed	K3
 itpr_fly	P29993	1	5914	5914	2608	1915	1391	0.3238	0.0		True	clean	
 itpr_fly	P29993	2	695	6609	2608	2104	1897	0.3184	-0.0054	1.12	True	clean	
 itpr_fly	P29993	3	71	6677	2608	2149	1920	0.3219	-0.0019	1.01	True	clean	

@@ -595,3 +595,39 @@ figures, `report.md`).
 denominator every later absence claim is measured against. S3 hands it a
 concrete starting list: 15 swept taxa with no ITPR record at all, whose
 gene sets are thin enough that annotation is the likelier explanation.
+
+---
+
+## 2026-09-04 (session 5, part 1) — S3 addendum: third jackhmmer seed folded in
+
+**What ran.** The *Acanthamoeba* jackhmmer run left going at the end of the
+S3 session finished (10 rounds, 27,242 s = 7.6 h, not converged) and had
+been re-parsed from its archived log. Folded in: `s3_census_v3.py` (221 s,
+now 3/3 seeds), `s3_figures.py`, `s3_report.py`.
+
+**Result.** D10 verdict `killed (K3)` — the ceiling without convergence.
+The three final models were then compared by composition, and the
+family-called categories are *identical*: ITPR/architecture 1,656 and
+ITPR/partial 952 in all three; RYR/architecture 1,565–1,569. The models
+differ only outside the family: `itpr_acanthamoeba` rests on 26,266 targets
+against `itpr1_human`'s 7,222, **18,670 of them with no sweep hit from
+either profile** (7 in each of the other runs).
+
+**New decision D10b — K1 is blind to off-family drift.** The off-family
+accretion *diluted* the sister-family share: K1's statistic **fell 27
+points** while the model grew 5×. A maximally divergent run reads as
+maximally clean on the rule written to catch divergence. K3 is the only
+rule that fires on it. Recorded in the roadmap with the instruction not to
+replace K3 with a convergence test in S20.
+
+**Code.** `scripts/s3_report.py` had grown to 530 lines with the rewrite, so
+section 4 moved to **`scripts/s3_report_d10.py`** (367 + 207 lines). The
+two stale hand-written sentences it contained ("about a third is
+module-only", "the two seeds differ by single targets") are now computed
+per evidence class from `jackhmmer_model_composition.tsv` — with three
+seeds the first was true of two runs and the second of none. Added a
+wall-clock column read from the per-seed sweep-stats JSONs, and rescaled
+figure panel *b* to the data (the third trace was clipped off-canvas by a
+y-limit chosen for the two-seed case).
+
+**Next: S4** — the declared assembly manifest.

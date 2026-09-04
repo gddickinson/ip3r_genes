@@ -1,6 +1,6 @@
 # S3 — profile-HMM sweep and the completeness argument
 
-_Rendered from the committed tables on 2026-09-04 01:48 by `scripts/s3_report.py` (D13)._
+_Rendered from the committed tables on 2026-09-04 07:51 by `scripts/s3_report.py` (D13)._
 
 The census this project can defend rests on two instruments that see different evidence. S2 built the first: a positive **architecture** test over InterPro's annotation of each record (D14b). S3 builds the second: **best-profile assignment** — score every sequence against `itpr.hmm` and `ryr.hmm` and take the winner, but only when it wins by a margin (D7, D14). Where the two agree the call is firm; where only one speaks it says which; where they disagree the record is kept as a conflict rather than resolved by preference.
 
@@ -83,36 +83,38 @@ Of those, **1,794 carry a gene symbol from this family or its sister** (`subthre
 
 ## 4. jackhmmer to convergence, and D10
 
-> **Still running: `itpr_acanthamoeba` (L8GF85, the non-metazoan grade — a complete architecture outside Metazoa).** The *Acanthamoeba* seed passes 17.0 % of the database through HMMER's MSV filter against an expected 2.0 %, so 2.46 M sequences reach the expensive stages of every round and one round costs longer than either other seed's entire run. Its log is archived; fold it in with `python3 scripts/s3_run_sweep.py --stage jackhmmer --parse-only --seed-tag itpr_acanthamoeba` followed by `s3_census_v3.py`, `s3_figures.py` and this script. Nothing below depends on it: the completeness argument rests on the runs that finished.
-
-| Seed | Rounds | New targets per round | Converged | D10 verdict |
-|---|---:|---|---|---|
-| `itpr1_human` | 10 | 5934 → 681 → 71 → 42 → 452 → 20 → 6 → 12 → 9 → 3 | False | killed (K3) |
-| `itpr_fly` | 10 | 5914 → 695 → 71 → 58 → 470 → 24 → 1 → 2 → 0 → 0 | True | clean |
+| Seed | Rounds | New targets per round | Converged | Wall clock | D10 verdict |
+|---|---:|---|---|---:|---|
+| `itpr1_human` | 10 | 5934 → 681 → 71 → 42 → 452 → 20 → 6 → 12 → 9 → 3 | False | 2.4 h | killed (K3) |
+| `itpr_acanthamoeba` | 10 | 5246 → 2562 → 1185 → 8678 → 1075 → 677 → 3300 → 867 → 1312 → 1421 | False | 7.6 h | killed (K3) |
+| `itpr_fly` | 10 | 5914 → 695 → 71 → 58 → 470 → 24 → 1 → 2 → 0 → 0 | True | 2.5 h | clean |
 
 D10 requires a coded kill criterion rather than a judgement by eye. For this family the failure mode is specific: an ITPR-seeded run drifts across the shared domain architecture into the ryanodine receptors and reports a converged, confident, wrong answer. Three rules, evaluated per round on that round's own inclusion list (`scripts/s3_kill.py`): **K1** the sister family's share of the model rising more than 10 percentage points above its round-1 value; **K2** the included set growing more than 10× in one round; **K3** hitting the 10-round ceiling without converging. Rounds from the first firing on are reported but excluded from the merge.
 
-**K1 measures the rise, not the level, and that is a result in itself** (D10a). The rule was first coded as a flat 5 % ceiling on sister-family content, and it fired on every run at round 1 — because a single ITPR sequence searched at E ≤ 1e-5 already returns 32% ryanodine receptors before any iteration has happened (itpr1_human, itpr_fly). That is not contamination: the two families are genuine homologues sharing the whole pore, and a search sensitive enough to reach *Acanthamoeba* is necessarily sensitive enough to reach RYR1. The level is a fact about their shared ancestry; only the change in it can be attributed to iterating the model.
+**K1 measures the rise, not the level, and that is a result in itself** (D10a). The rule was first coded as a flat 5 % ceiling on sister-family content, and it fired on every run at round 1 — because a single ITPR sequence searched at E ≤ 1e-5 already returns 32%–37% ryanodine receptors before any iteration has happened (itpr1_human, itpr_acanthamoeba, itpr_fly). That is not contamination: the two families are genuine homologues sharing the whole pore, and a search sensitive enough to reach *Acanthamoeba* is necessarily sensitive enough to reach RYR1. The level is a fact about their shared ancestry; only the change in it can be attributed to iterating the model.
 
 * `itpr1_human` (Q14643): killed — reached the 10-round ceiling without converging; no completeness claim may rest on this run; 9 of 10 rounds accepted, 7,226 targets.
+* `itpr_acanthamoeba` (L8GF85): killed — reached the 10-round ceiling without converging; no completeness claim may rest on this run; 9 of 10 rounds accepted, 24,902 targets.
 * `itpr_fly` (P29993): clean — no kill rule fired; 10 of 10 rounds accepted, 7,235 targets.
 
 ### What an iterated model is actually built from
 
 A convergence curve says a search has stopped finding things. It does not say what it found. Every target supporting each run's final model was therefore classified by the sweep's own two-profile verdict and D22 evidence class:
 
-| Composition of the final model | `itpr1_human` | `itpr_fly` |
-|---|---:|---:|
-| unassigned, module | 2,425 (33.6%) | 2,424 (33.5%) |
-| ITPR, architecture | 1,656 (22.9%) | 1,656 (22.9%) |
-| RYR, architecture | 1,565 (21.7%) | 1,566 (21.7%) |
-| ITPR, partial | 952 (13.2%) | 952 (13.2%) |
-| RYR, partial | 617 (8.5%) | 623 (8.6%) |
-| unassigned, no sweep hit | 7 (0.1%) | 7 (0.1%) |
+| Composition of the final model | `itpr1_human` | `itpr_acanthamoeba` | `itpr_fly` |
+|---|---:|---:|---:|
+| unassigned, module | 2,425 (33.6%) | 2,643 (10.1%) | 2,424 (33.5%) |
+| ITPR, architecture | 1,656 (22.9%) | 1,656 (6.3%) | 1,656 (22.9%) |
+| RYR, architecture | 1,565 (21.7%) | 1,569 (6.0%) | 1,566 (21.7%) |
+| ITPR, partial | 952 (13.2%) | 952 (3.6%) | 952 (13.2%) |
+| RYR, partial | 617 (8.5%) | 776 (2.9%) | 623 (8.6%) |
+| unassigned, no sweep hit | 7 (0.1%) | 18,670 (71.1%) | 7 (0.1%) |
 
-**About a third of it (34%) is module-only matches** — the SPRY and EF-hand proteins D22's span gate keeps out of the census. That is what an iterative search at E ≤ 1e-5 accretes if nothing stops it, and it is also why these runs decay to an asymptote of a few new targets a round rather than to zero: the tail being walked is the long tail of proteins sharing one small domain, not the family.
+**Module-only matches are 10.1%–33.6% of these models** — the SPRY and EF-hand proteins D22's span gate keeps out of the census. That is what an iterative search at E ≤ 1e-5 accretes if nothing stops it, and it is also why these runs decay to an asymptote of a few new targets a round rather than to zero: the tail being walked is the long tail of proteins sharing one small domain, not the family.
 
-**The seeds agree with each other.** The runs started from sequences separated by roughly 600 million years of evolution, and their final models differ by single targets in every category. Two independent starting points reaching the same model is a completeness statement that does not depend on either one converging.
+**The family core is the same whichever seed finds it.** The runs started from a human ITPR1, a fly Itpr and an *Acanthamoeba* receptor — a vertebrate, an insect and an amoebozoan — and their final models carry the same family-called content: ITPR/architecture 1,656 in all 3; RYR/architecture 1,565–1,569; ITPR/partial 952 in all 3; RYR/partial 617–776. Starting points that far apart reaching the same core is a completeness statement that does not depend on any one of them converging.
+
+**What differs between them is everything that is not the family.** `itpr_acanthamoeba`'s final model rests on 26,266 targets against `itpr1_human`'s 7,222, and 18,670 of them are proteins neither profile scores at all (7 in `itpr1_human`). **K1 cannot see that drift**: off-family accretion *dilutes* the sister-family share instead of raising it — across this run it falls from 36.6% to 8.9% while the model grows 5.0× — so K1 reads divergence as the opposite. K3 is what caught it, and the composition table above is why the run is reported rather than silently dropped.
 
 ## 5. Census v3
 

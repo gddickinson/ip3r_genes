@@ -5,6 +5,12 @@ itpr1_human	10	RYR	architecture	1565	0.2167
 itpr1_human	10	ITPR	partial	952	0.1318
 itpr1_human	10	RYR	partial	617	0.0854
 itpr1_human	10	unassigned	no sweep hit	7	0.001
+itpr_acanthamoeba	10	unassigned	no sweep hit	18670	0.7108
+itpr_acanthamoeba	10	unassigned	module	2643	0.1006
+itpr_acanthamoeba	10	ITPR	architecture	1656	0.063
+itpr_acanthamoeba	10	RYR	architecture	1569	0.0597
+itpr_acanthamoeba	10	ITPR	partial	952	0.0362
+itpr_acanthamoeba	10	RYR	partial	776	0.0295
 itpr_fly	10	unassigned	module	2424	0.3354
 itpr_fly	10	ITPR	architecture	1656	0.2291
 itpr_fly	10	RYR	architecture	1566	0.2167
