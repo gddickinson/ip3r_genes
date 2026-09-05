@@ -37,7 +37,9 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
 import figstyle as fs  # noqa: E402
-from scripts.s20_lib import CENSUS_V5_DIR, FIG_DIR, S20_DIR, log, read_tsv  # noqa: E402
+from scripts.s20_lib import (  # noqa: E402
+    CENSUS_V5_DIR, FIG_DIR, S20_DIR, log, read_json, read_tsv,
+)
 from scripts.s20_verdicts import CONTAMINANT_PIDENT, OUTLIER_PIDENT  # noqa: E402
 from scripts.s3_assign import MIN_SCORE, REL_MARGIN  # noqa: E402
 
@@ -255,38 +257,76 @@ def plant_fungal_chase(stem: Path) -> None:
 
 # ----------------------------------------------------- 4. jackhmmer per group
 def jackhmmer_s20(stem: Path) -> None:
+    """Per-group convergence beside the drift K1 watches — and the drift it
+    does not.
+
+    Panel b plots the sister-family share (what K1 evaluates) *and* the
+    off-family share on the same axes, because that contrast is the finding.
+    S3 recorded it as D10b: off-family accretion dilutes the sister share
+    instead of raising it, so a model can grow thirty-fold into proteins of
+    neither family with K1 reading a flat zero throughout. A panel showing
+    only the sister trace would be a flat line at 0 and would look like a
+    clean run.
+    """
     rows = _rows("jackhmmer_convergence_s20.tsv")
     if not rows:
         raise SystemExit("no jackhmmer_convergence_s20.tsv — "
                          "run s20_jackhmmer.py")
     groups = sorted({r["group"] for r in rows})
-    fig, axes = plt.subplots(1, 2, figsize=(fs.W_FULL, 2.5))
-    shades = [fs.BLUES[-1], fs.BLUES[-2], fs.BLUES[-3], fs.BLUES[-4],
-              fs.BLUES[-5]]
+    verdicts = ((read_json(S20_DIR / "jackhmmer_verdicts_s20.json") or {})
+                .get("verdicts", {}))
+    fig, axes = plt.subplots(1, 2, figsize=(fs.W_FULL, 2.6))
+    shades = [fs.BLUES[-1], fs.BLUES[-3], fs.BLUES[-5], fs.MUTED]
     for i, g in enumerate(groups):
         sub = sorted((r for r in rows if r["group"] == g),
                      key=lambda r: int(r["round"]))
         xs = [int(r["round"]) for r in sub]
-        axes[0].plot(xs, [int(r["n_included"] or 0) for r in sub],
-                     marker="o", ms=2.6, lw=1.0,
-                     color=shades[i % len(shades)], label=g)
+        colour = shades[i % len(shades)]
+        n_inc = [int(r["n_included"] or 0) for r in sub]
+        axes[0].plot(xs, n_inc, marker="o", ms=2.6, lw=1.0,
+                     color=colour, label=g)
+        # Mark the round the rule actually fired on. `kill_rule` in the
+        # convergence table is a run-level field repeated on every row, so
+        # reading it per row would mark round 1 for a run killed at round 3;
+        # `killed_at` is the round, and it lives in the verdicts JSON.
+        v = verdicts.get(g, {})
+        at = v.get("killed_at")
+        if at:
+            here = [r for r in sub if int(r["round"]) == int(at)]
+            if here:
+                y = int(here[0]["n_included"] or 0)
+                axes[0].scatter([at], [y], s=44, facecolors="none",
+                                edgecolors=fs.STATUS["absent"], linewidths=1.0,
+                                zorder=5)
+                axes[0].annotate(v.get("rule", ""), (at, y),
+                                 textcoords="offset points", xytext=(5, -11),
+                                 fontsize=fs.FS_NOTE,
+                                 color=fs.STATUS["absent"])
         axes[1].plot(xs, [float(r["sister_frac"] or 0) for r in sub],
-                     marker="o", ms=2.6, lw=1.0,
-                     color=shades[i % len(shades)], label=g)
+                     marker="o", ms=2.6, lw=1.1, color=colour,
+                     label=f"{g} — sister family")
+        off = [int(r["n_offfamily"] or 0) / max(int(r["n_included"] or 1), 1)
+               for r in sub]
+        axes[1].plot(xs, off, marker="^", ms=2.6, lw=1.0, ls=(0, (3, 2)),
+                     color=colour, label=f"{g} — neither family")
+
     axes[0].set_yscale("log")
     axes[0].set_xlabel("jackhmmer round", fontsize=fs.FS_LABEL)
     axes[0].set_ylabel("targets in the model", fontsize=fs.FS_LABEL)
-    axes[0].legend(fontsize=fs.FS_NOTE, frameon=False)
+    axes[0].legend(fontsize=fs.FS_NOTE, frameon=False, loc="lower right")
     fs.despine(axes[0]); fs.hgrid(axes[0])
-    fs.panel(axes[0], "a", "Convergence")
+    fs.panel(axes[0], "a", "Convergence, and where D10 killed it")
 
+    axes[1].set_ylim(-0.03, 1.03)
     axes[1].set_xlabel("jackhmmer round", fontsize=fs.FS_LABEL)
-    axes[1].set_ylabel("share of the model called RYR", fontsize=fs.FS_LABEL)
-    axes[1].text(0.03, 0.96, "K1 watches the rise, not the level",
-                 transform=axes[1].transAxes, fontsize=fs.FS_NOTE,
-                 va="top", color=fs.MUTED)
+    axes[1].set_ylabel("share of the model", fontsize=fs.FS_LABEL)
+    axes[1].legend(fontsize=fs.FS_NOTE, frameon=False, loc="center right")
+    axes[1].text(0.03, 0.96, "K1 watches the solid line;\nthe dashed one is "
+                 "what it cannot see", transform=axes[1].transAxes,
+                 fontsize=fs.FS_NOTE, va="top", color=fs.MUTED,
+                 linespacing=1.4)
     fs.despine(axes[1]); fs.hgrid(axes[1])
-    fs.panel(axes[1], "b", "Sister-family drift")
+    fs.panel(axes[1], "b", "Drift, sister and off-family")
     fig.tight_layout()
     fs.save(fig, stem)
     plt.close(fig)

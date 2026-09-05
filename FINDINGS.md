@@ -675,6 +675,29 @@ Either that lineage has genuinely expanded the family, or its assembly is
 duplicated. A proteome cannot tell those apart *(pending: S23, the
 assembly-level search.)*
 
+**Searching harder does not find them either.** For each group the search was
+run again the hard way — starting from a single receptor native to that group
+and letting the model rebuild itself from whatever it found, round after round,
+until it stopped changing. In the green algae it settled after five rounds on
+seventy proteins, **every one of them a green alga**, including the six that
+only this deeper search could reach. In the fungi it reached the yeasts and
+moulds exactly twice in ten rounds, and both times what it reached was a
+mannosyltransferase — a protein that shares one module with the receptor and
+was already in this project's list of known look-alikes. So the absences are
+not an artefact of not looking hard enough. They are absences.
+
+**And the deeper search failed in an instructive way.** The fungal run did not
+settle at all: at round three the model grew thirty-four-fold, from 42 proteins
+to 1,442, and by round ten it rested on 6,302 — while the number of actual
+receptors in it went from 33 to 35. It had stopped being a model of the family
+and become a model of fungal proteins in general. The rule that watches for
+this project's expected failure — drifting into the sister family — saw
+nothing at all, because the flood was of proteins belonging to *neither*
+family, which dilutes the sister share rather than raising it. A second rule,
+watching for explosive growth, caught it. That is the same lesson S3 recorded
+from a different direction, and it is worth stating plainly: a model that has
+gone wrong does not always go wrong in the way you are watching for.
+
 **A caution about our own counting.** The sweep reports 142 "ryanodine
 receptor" hits in fungi, green algae and protists, where no ryanodine receptor
 is thought to exist. They are proteins of a few hundred to two thousand

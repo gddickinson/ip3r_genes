@@ -1038,7 +1038,18 @@ architecture-level against 1 % of RYR calls.
   taxa, 0 conflicts, lineage columns on every row including S5b's 488 genomic
   gene models, joined to S4's manifest.
 
-**Next.** The three remaining jackhmmer runs (protista, fungi, metazoa) and
+- **jackhmmer, fungi: ran the ceiling, D10's K2 fired at round 3.** The
+  included set grew **34.3×**, 42 → 1,442, and by round 10 rested on 6,302 —
+  while the family content went 33 → 35. The growth is *entirely* off-family,
+  so **K1 read 0.000 in every round**: this is S3's D10b in a new setting,
+  caught by K2 rather than by the round ceiling. The accepted model (rounds
+  1–2) reaches Ascomycota exactly twice, and both records are
+  dolichyl-phosphate-mannose mannosyltransferases — the MIR-domain sharer S1's
+  decoy panel was built around, not a receptor. Iteration-only targets are now
+  named in `jackhmmer_iteration_only_s20.tsv` rather than counted, and the
+  report only calls them known decoys when their own protein names say so.
+
+**Next.** The two remaining jackhmmer runs (protista, metazoa) and
 then S23, which S20 sharpens: the absences to take to genome level are
 Streptophyta, Dikarya, Glomeromycota/Mortierellomycota, Apicomplexa (0/60) and
 the *Cymbomonas* copy-number question.
