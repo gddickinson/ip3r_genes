@@ -1,6 +1,6 @@
 # S20 — the non-vertebrate sweep: the family's true range
 
-_Rendered from the committed tables on 2026-09-05 11:27 by `scripts/s20_report.py` (D13)._
+_Rendered from the committed tables on 2026-09-05 11:48 by `scripts/s20_report.py` (D13)._
 
 S3 swept the vertebrate reference proteomes and found where the three paralogs live. This task asks the opposite question — how far the family reaches — and the one it was set up to answer: the databases hold a few tens of plant and fungal records while *Arabidopsis* and *S. cerevisiae* hold none. Which of those is a fact about genomes and which about databases?
 
@@ -33,13 +33,24 @@ The same two profiles S3 built and calibrated — `itpr.hmm` and `ryr.hmm` — w
 **One search, two sensitivities.** Every `hmmsearch` ran at `-E 10` and the primary call was taken by filtering the same output at E ≤ 1e-5, so the relaxed set is a superset of the strict one from the same search rather than a second experiment that might have differed some other way.
 
 
-That design was **tested rather than assumed** (`scripts/s20_test_sensitivity.py`). Running `itpr.hmm` over `protista_other` at both thresholds and filtering the relaxed output: the two agree on **all 798 targets**, on **798 assignments** and on every D22 gate decision, with 11 marginal domain-row difference(s) and 1 evidence-class change(s).
+**That design was tested rather than assumed** (`scripts/s20_test_sensitivity.py`), and the test disproved the assumption it was written to confirm. Running each profile over a group DB at both thresholds and filtering the relaxed output:
+
+| profile × group | targets compared | assignments that move | D22 gate crossings | domain rows that differ | targets on one side only |
+|---|---|---|---|---|---|
+| `itpr.hmm` × `protista_other` | 798 | 0 | 0 | 11 | 0 (0 called) |
+| `ryr.hmm` × `viridiplantae` | 13,728 | 0 | 0 | 81 | 42 (0 called) |
 
 
-1 further run(s) are on disk but not quoted: the test refuses to pass on a comparison of fewer than 25 targets, because two empty sets agree perfectly and prove nothing.
+**No assignment and no D22 gate decision moves**, which is what the primary calls rest on. But the two files are not identical, and the differences are worth naming because the first version of this report claimed there were none.
 
 
-The differences are real and worth stating, because the first version of this report asserted there were none. `-E` is a *sequence* reporting threshold, but `--domE` (default 10.0) is applied to the **conditional** E-value, which is normalised by how many sequences passed — so a looser `-E` inflates every c-Evalue by a constant factor and pushes marginal domains out of the report. Every row that differs scores at or below 0 bits. They are not harmless: merged into `hmm_coverage`, a −2.0-bit alignment spanning 1,386 match states counts as coverage and can move a target's evidence class. This task uses the **relaxed** side, which excludes them — the more conservative reading.
+*Domain rows.* `-E` is a **sequence** reporting threshold, but `--domE` (default 10.0) is applied to the **conditional** E-value, which is normalised by how many sequences passed — so a looser `-E` inflates every c-Evalue by a constant factor (1.41× measured) and pushes marginal domains out of the report. Every differing row scores at or below 0 bits. They are not cosmetic: merged into `hmm_coverage`, a −2.0-bit alignment spanning 1,386 match states counts as coverage, and it moved one target's evidence class. This task uses the **relaxed** side, which excludes them — the more conservative reading.
+
+
+*Boundary targets.* HMMER prints the sequence E-value to two significant figures, so a target whose true E-value sits just above 1e-5 prints as `1e-05` and a `<=` filter admits it while a `-E 1e-5` run never reports it. That is 42 of 13,770 plant targets on the RyR profile, every one at 31.2 bits, and **every one of them declined by the D22 gate** — so they enter no call. The test passes on whether a one-sided target is *called*, not on set equality, because set equality would fail on a printing artefact that cannot reach a result.
+
+
+1 further run(s) are on disk but not quoted: the test refuses to pass on a comparison of fewer than 25 targets, because two empty sets agree perfectly and prove nothing. Its first run went green that way, on a group with no hit at either threshold.
 
 
 The relaxed panel adds the family's four Pfam domain models:

@@ -1,0 +1,185 @@
+{
+ "n_strict": 13728,
+ "n_filtered": 13770,
+ "only_in_strict_run": [],
+ "n_only_in_strict_run": 0,
+ "only_in_filtered_relaxed": [
+  "tr|A0A0D2TZ86|A0A0D2TZ86_GOSRA",
+  "tr|A0A251VAM3|A0A251VAM3_HELAN",
+  "tr|A0A2G5DFQ2|A0A2G5DFQ2_AQUCA",
+  "tr|A0A2G9HG03|A0A2G9HG03_9LAMI",
+  "tr|A0A2I0A0T2|A0A2I0A0T2_9ASPA",
+  "tr|A0A2P6RNH3|A0A2P6RNH3_ROSCH",
+  "tr|A0A2R6PFM0|A0A2R6PFM0_ACTCC",
+  "tr|A0A3B6GMA1|A0A3B6GMA1_WHEAT",
+  "tr|A0A3S4PAW3|A0A3S4PAW3_9MAGN",
+  "tr|A0A453DTS9|A0A453DTS9_AEGTS",
+  "tr|A0A5D2CVA0|A0A5D2CVA0_GOSDA",
+  "tr|A0A5D2VCJ8|A0A5D2VCJ8_GOSMU",
+  "tr|A0A5N5F9I0|A0A5N5F9I0_9ROSA",
+  "tr|A0A6G1E5D4|A0A6G1E5D4_9ORYZ",
+  "tr|A0A7I8L8L7|A0A7I8L8L7_SPIIN",
+  "tr|A0A7N0UUP4|A0A7N0UUP4_KALFE",
+  "tr|A0A804IYB0|A0A804IYB0_MUSAM",
+  "tr|A0A835UVL4|A0A835UVL4_VANPL",
+  "tr|A0A9C6TXA6|A0A9C6TXA6_ARADU",
+  "tr|A0AA36E5G3|A0AA36E5G3_LACSI"
+ ],
+ "n_only_in_filtered_relaxed": 42,
+ "differing_fields": [
+  {
+   "target": "tr|A0A0D3HHW6|A0A0D3HHW6_9ORYZ",
+   "field": "n_domains",
+   "strict": 2,
+   "filtered": 1
+  },
+  {
+   "target": "tr|A0A0D3HHW6|A0A0D3HHW6_9ORYZ",
+   "field": "target_coverage",
+   "strict": 0.106,
+   "filtered": 0.061
+  },
+  {
+   "target": "tr|A0A150G7H6|A0A150G7H6_GONPE",
+   "field": "n_domains",
+   "strict": 6,
+   "filtered": 5
+  },
+  {
+   "target": "tr|A0A150G7H6|A0A150G7H6_GONPE",
+   "field": "target_coverage",
+   "strict": 0.105,
+   "filtered": 0.088
+  },
+  {
+   "target": "tr|A0A2K3CTW4|A0A2K3CTW4_CHLRE",
+   "field": "n_domains",
+   "strict": 4,
+   "filtered": 2
+  },
+  {
+   "target": "tr|A0A2K3CTW4|A0A2K3CTW4_CHLRE",
+   "field": "hmm_coverage",
+   "strict": 0.12,
+   "filtered": 0.091
+  },
+  {
+   "target": "tr|A0A2K3CTW4|A0A2K3CTW4_CHLRE",
+   "field": "target_coverage",
+   "strict": 0.202,
+   "filtered": 0.154
+  },
+  {
+   "target": "tr|A0A2R6P817|A0A2R6P817_ACTCC",
+   "field": "n_domains",
+   "strict": 2,
+   "filtered": 1
+  },
+  {
+   "target": "tr|A0A2R6P817|A0A2R6P817_ACTCC",
+   "field": "hmm_coverage",
+   "strict": 0.015,
+   "filtered": 0.013
+  },
+  {
+   "target": "tr|A0A2R6P817|A0A2R6P817_ACTCC",
+   "field": "target_coverage",
+   "strict": 0.767,
+   "filtered": 0.535
+  },
+  {
+   "target": "tr|A0A4D6MBH9|A0A4D6MBH9_VIGUN",
+   "field": "n_domains",
+   "strict": 4,
+   "filtered": 3
+  },
+  {
+   "target": "tr|A0A4D6MBH9|A0A4D6MBH9_VIGUN",
+   "field": "target_coverage",
+   "strict": 0.326,
+   "filtered": 0.247
+  },
+  {
+   "target": "tr|A0A540N592|A0A540N592_MALBA",
+   "field": "n_domains",
+   "strict": 2,
+   "filtered": 1
+  },
+  {
+   "target": "tr|A0A540N592|A0A540N592_MALBA",
+   "field": "hmm_coverage",
+   "strict": 0.015,
+   "filtered": 0.013
+  },
+  {
+   "target": "tr|A0A540N592|A0A540N592_MALBA",
+   "field": "target_coverage",
+   "strict": 0.397,
+   "filtered": 0.274
+  },
+  {
+   "target": "tr|A0A7J9FF16|A0A7J9FF16_9ROSI",
+   "field": "n_domains",
+   "strict": 2,
+   "filtered": 1
+  },
+  {
+   "target": "tr|A0A7J9FF16|A0A7J9FF16_9ROSI",
+   "field": "target_coverage",
+   "strict": 0.746,
+   "filtered": 0.475
+  },
+  {
+   "target": "tr|A0A835SHP2|A0A835SHP2_CHLIN",
+   "field": "n_domains",
+   "strict": 7,
+   "filtered": 5
+  },
+  {
+   "target": "tr|A0A835SHP2|A0A835SHP2_CHLIN",
+   "field": "target_coverage",
+   "strict": 0.117,
+   "filtered": 0.083
+  },
+  {
+   "target": "tr|A0A835TB45|A0A835TB45_CHLIN",
+   "field": "n_domains",
+   "strict": 4,
+   "filtered": 2
+  }
+ ],
+ "n_differing_fields": 81,
+ "compared_fields": [
+  "full_evalue",
+  "full_score",
+  "n_domains",
+  "hmm_coverage",
+  "target_coverage",
+  "tlen",
+  "qlen"
+ ],
+ "call_effect": {
+  "n_compared": 13728,
+  "n_one_sided": 42,
+  "n_one_sided_called": 0,
+  "one_sided_assignments": {
+   "unassigned": 42
+  },
+  "one_sided_called": [],
+  "one_sided_example_reason": "ryr.hmm matched only 59 profile positions (< 200) \u2014 a shared module, not a family assignment",
+  "n_call_changed": 0,
+  "call_changed": [],
+  "n_evidence_changed": 0,
+  "evidence_changed": [],
+  "n_d22_gate_changed": 0,
+  "d22_gate_changed": []
+ },
+ "group": "viridiplantae",
+ "profile": "ryr",
+ "strict_evalue": "1e-5",
+ "relaxed_evalue": "10",
+ "strict_domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/test_strict_ryr_viridiplantae.domtblout",
+ "relaxed_domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_ryr_vs_viridiplantae.domtblout",
+ "min_targets": 25,
+ "equivalent": true
+}

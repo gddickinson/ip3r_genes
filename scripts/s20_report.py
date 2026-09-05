@@ -137,35 +137,52 @@ def main() -> int:
            for pth in sorted(S20_DIR.glob("sensitivity_equivalence_*.json"))]
     passing = [e for e in eqs if e.get("equivalent")]
     if passing:
-        A(f"\nThat design was **tested rather than assumed** "
-          f"(`scripts/s20_test_sensitivity.py`). "
-          + " ".join(
-              f"Running `{e['profile']}.hmm` over `{e['group']}` at both "
-              f"thresholds and filtering the relaxed output: the two agree on "
-              f"**all {e.get('n_strict', 0):,} targets**, on "
-              f"**{e.get('call_effect', {}).get('n_compared', 0):,} "
-              f"assignments** and on every D22 gate decision, with "
-              f"{e.get('n_differing_fields', 0)} marginal domain-row "
-              f"difference(s) and "
-              f"{e.get('call_effect', {}).get('n_evidence_changed', 0)} "
-              f"evidence-class change(s)." for e in passing)
-          + "\n")
+        A("\n**That design was tested rather than assumed** "
+          "(`scripts/s20_test_sensitivity.py`), and the test disproved the "
+          "assumption it was written to confirm. Running each profile over a "
+          "group DB at both thresholds and filtering the relaxed output:\n")
+        A(table(["profile × group", "targets compared", "assignments that move",
+                 "D22 gate crossings", "domain rows that differ",
+                 "targets on one side only"],
+                [[f"`{e['profile']}.hmm` × `{e['group']}`",
+                  f"{e.get('call_effect', {}).get('n_compared', 0):,}",
+                  e.get("call_effect", {}).get("n_call_changed", 0),
+                  e.get("call_effect", {}).get("n_d22_gate_changed", 0),
+                  e.get("n_differing_fields", 0),
+                  f"{e.get('call_effect', {}).get('n_one_sided', 0)} "
+                  f"({e.get('call_effect', {}).get('n_one_sided_called', 0)} "
+                  "called)"] for e in passing]))
+        A("\n**No assignment and no D22 gate decision moves**, which is what "
+          "the primary calls rest on. But the two files are not identical, "
+          "and the differences are worth naming because the first version of "
+          "this report claimed there were none.\n")
+        A("\n*Domain rows.* `-E` is a **sequence** reporting threshold, but "
+          "`--domE` (default 10.0) is applied to the **conditional** E-value, "
+          "which is normalised by how many sequences passed — so a looser "
+          "`-E` inflates every c-Evalue by a constant factor (1.41× measured) "
+          "and pushes marginal domains out of the report. Every differing row "
+          "scores at or below 0 bits. They are not cosmetic: merged into "
+          "`hmm_coverage`, a −2.0-bit alignment spanning 1,386 match states "
+          "counts as coverage, and it moved one target's evidence class. This "
+          "task uses the **relaxed** side, which excludes them — the more "
+          "conservative reading.\n")
+        A("\n*Boundary targets.* HMMER prints the sequence E-value to two "
+          "significant figures, so a target whose true E-value sits just "
+          "above 1e-5 prints as `1e-05` and a `<=` filter admits it while a "
+          "`-E 1e-5` run never reports it. That is 42 of 13,770 plant targets "
+          "on the RyR profile, every one at 31.2 bits, and **every one of "
+          "them declined by the D22 gate** — so they enter no call. The test "
+          "passes on whether a one-sided target is *called*, not on set "
+          "equality, because set equality would fail on a printing artefact "
+          "that cannot reach a result.\n")
         if len(eqs) > len(passing):
             A(f"\n{len(eqs) - len(passing)} further run(s) are on disk but "
               "not quoted: the test refuses to pass on a comparison of fewer "
               f"than {passing[0].get('min_targets', 25)} targets, because two "
-              "empty sets agree perfectly and prove nothing.\n")
-        A("\nThe differences are real and worth stating, because the first "
-          "version of this report asserted there were none. `-E` is a "
-          "*sequence* reporting threshold, but `--domE` (default 10.0) is "
-          "applied to the **conditional** E-value, which is normalised by how "
-          "many sequences passed — so a looser `-E` inflates every c-Evalue "
-          "by a constant factor and pushes marginal domains out of the "
-          "report. Every row that differs scores at or below 0 bits. They are "
-          "not harmless: merged into `hmm_coverage`, a −2.0-bit alignment "
-          "spanning 1,386 match states counts as coverage and can move a "
-          "target's evidence class. This task uses the **relaxed** side, "
-          "which excludes them — the more conservative reading.\n")
+              "empty sets agree perfectly and prove nothing. Its first run "
+              "went green that way, on a group with no hit at either "
+              "threshold.\n")
+
     if panel.get("pfam"):
         A(f"\nThe relaxed panel adds the family's four Pfam domain models:\n")
         A(table(["Pfam", "name", "match states", "why it is in the panel"],
