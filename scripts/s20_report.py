@@ -126,11 +126,46 @@ def main() -> int:
       "vertebrate and non-vertebrate numbers comparable at all.\n")
     A(f"\n**One search, two sensitivities.** Every `hmmsearch` ran at "
       f"`-E {EVALUE_RELAXED}` and the primary call was taken by filtering "
-      f"the same output at E ≤ {EVALUE_PRIMARY}. `-E` is a reporting "
-      "threshold and does not touch hmmsearch's acceleration filters, so the "
-      "strict set is exactly what a strict run would have produced and the "
-      "relaxed set is a superset of it from the same search — not a second "
+      f"the same output at E ≤ {EVALUE_PRIMARY}, so the relaxed set is a "
+      "superset of the strict one from the same search rather than a second "
       "experiment that might have differed some other way.\n")
+    # Cite only the runs that had power. The test refuses to pass on an
+    # empty comparison, and one such record is on disk (archaea has no ITPR
+    # hit at either threshold); quoting it would report "agree on all 0
+    # targets" as though it were evidence.
+    eqs = [read_json(pth) or {}
+           for pth in sorted(S20_DIR.glob("sensitivity_equivalence_*.json"))]
+    passing = [e for e in eqs if e.get("equivalent")]
+    if passing:
+        A(f"\nThat design was **tested rather than assumed** "
+          f"(`scripts/s20_test_sensitivity.py`). "
+          + " ".join(
+              f"Running `{e['profile']}.hmm` over `{e['group']}` at both "
+              f"thresholds and filtering the relaxed output: the two agree on "
+              f"**all {e.get('n_strict', 0):,} targets**, on "
+              f"**{e.get('call_effect', {}).get('n_compared', 0):,} "
+              f"assignments** and on every D22 gate decision, with "
+              f"{e.get('n_differing_fields', 0)} marginal domain-row "
+              f"difference(s) and "
+              f"{e.get('call_effect', {}).get('n_evidence_changed', 0)} "
+              f"evidence-class change(s)." for e in passing)
+          + "\n")
+        if len(eqs) > len(passing):
+            A(f"\n{len(eqs) - len(passing)} further run(s) are on disk but "
+              "not quoted: the test refuses to pass on a comparison of fewer "
+              f"than {passing[0].get('min_targets', 25)} targets, because two "
+              "empty sets agree perfectly and prove nothing.\n")
+        A("\nThe differences are real and worth stating, because the first "
+          "version of this report asserted there were none. `-E` is a "
+          "*sequence* reporting threshold, but `--domE` (default 10.0) is "
+          "applied to the **conditional** E-value, which is normalised by how "
+          "many sequences passed — so a looser `-E` inflates every c-Evalue "
+          "by a constant factor and pushes marginal domains out of the "
+          "report. Every row that differs scores at or below 0 bits. They are "
+          "not harmless: merged into `hmm_coverage`, a −2.0-bit alignment "
+          "spanning 1,386 match states counts as coverage and can move a "
+          "target's evidence class. This task uses the **relaxed** side, "
+          "which excludes them — the more conservative reading.\n")
     if panel.get("pfam"):
         A(f"\nThe relaxed panel adds the family's four Pfam domain models:\n")
         A(table(["Pfam", "name", "match states", "why it is in the panel"],

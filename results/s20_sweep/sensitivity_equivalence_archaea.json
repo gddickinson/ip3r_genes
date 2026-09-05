@@ -1,0 +1,27 @@
+{
+ "n_strict": 0,
+ "n_filtered": 0,
+ "only_in_strict_run": [],
+ "n_only_in_strict_run": 0,
+ "only_in_filtered_relaxed": [],
+ "n_only_in_filtered_relaxed": 0,
+ "differing_fields": [],
+ "n_differing_fields": 0,
+ "compared_fields": [
+  "full_evalue",
+  "full_score",
+  "n_domains",
+  "hmm_coverage",
+  "target_coverage",
+  "tlen",
+  "qlen"
+ ],
+ "group": "archaea",
+ "profile": "itpr",
+ "strict_evalue": "1e-5",
+ "relaxed_evalue": "10",
+ "strict_domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/test_strict_itpr_archaea.domtblout",
+ "relaxed_domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_itpr_vs_archaea.domtblout",
+ "min_targets": 25,
+ "equivalent": false
+}

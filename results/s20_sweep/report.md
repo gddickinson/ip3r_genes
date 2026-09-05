@@ -1,6 +1,6 @@
 # S20 — the non-vertebrate sweep: the family's true range
 
-_Rendered from the committed tables on 2026-09-05 11:21 by `scripts/s20_report.py` (D13)._
+_Rendered from the committed tables on 2026-09-05 11:27 by `scripts/s20_report.py` (D13)._
 
 S3 swept the vertebrate reference proteomes and found where the three paralogs live. This task asks the opposite question — how far the family reaches — and the one it was set up to answer: the databases hold a few tens of plant and fungal records while *Arabidopsis* and *S. cerevisiae* hold none. Which of those is a fact about genomes and which about databases?
 
@@ -30,7 +30,16 @@ Bacteria are sampled and archaea are not: one proteome per genus (first token of
 The same two profiles S3 built and calibrated — `itpr.hmm` and `ryr.hmm` — with the same margin assignment: a target is called only when the winning profile beats the loser by more than 10% of its own score, clears 30 bits, and spans at least 200 match states (D22). Reusing S3's instrument rather than building a new one is what makes the vertebrate and non-vertebrate numbers comparable at all.
 
 
-**One search, two sensitivities.** Every `hmmsearch` ran at `-E 10` and the primary call was taken by filtering the same output at E ≤ 1e-5. `-E` is a reporting threshold and does not touch hmmsearch's acceleration filters, so the strict set is exactly what a strict run would have produced and the relaxed set is a superset of it from the same search — not a second experiment that might have differed some other way.
+**One search, two sensitivities.** Every `hmmsearch` ran at `-E 10` and the primary call was taken by filtering the same output at E ≤ 1e-5, so the relaxed set is a superset of the strict one from the same search rather than a second experiment that might have differed some other way.
+
+
+That design was **tested rather than assumed** (`scripts/s20_test_sensitivity.py`). Running `itpr.hmm` over `protista_other` at both thresholds and filtering the relaxed output: the two agree on **all 798 targets**, on **798 assignments** and on every D22 gate decision, with 11 marginal domain-row difference(s) and 1 evidence-class change(s).
+
+
+1 further run(s) are on disk but not quoted: the test refuses to pass on a comparison of fewer than 25 targets, because two empty sets agree perfectly and prove nothing.
+
+
+The differences are real and worth stating, because the first version of this report asserted there were none. `-E` is a *sequence* reporting threshold, but `--domE` (default 10.0) is applied to the **conditional** E-value, which is normalised by how many sequences passed — so a looser `-E` inflates every c-Evalue by a constant factor and pushes marginal domains out of the report. Every row that differs scores at or below 0 bits. They are not harmless: merged into `hmm_coverage`, a −2.0-bit alignment spanning 1,386 match states counts as coverage and can move a target's evidence class. This task uses the **relaxed** side, which excludes them — the more conservative reading.
 
 
 The relaxed panel adds the family's four Pfam domain models:

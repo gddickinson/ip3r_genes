@@ -1,0 +1,109 @@
+{
+ "n_strict": 798,
+ "n_filtered": 798,
+ "only_in_strict_run": [],
+ "n_only_in_strict_run": 0,
+ "only_in_filtered_relaxed": [],
+ "n_only_in_filtered_relaxed": 0,
+ "differing_fields": [
+  {
+   "target": "tr|A0A0S4IRR4|A0A0S4IRR4_BODSA",
+   "field": "n_domains",
+   "strict": 4,
+   "filtered": 3
+  },
+  {
+   "target": "tr|A0A0S4IRR4|A0A0S4IRR4_BODSA",
+   "field": "hmm_coverage",
+   "strict": 0.421,
+   "filtered": 0.408
+  },
+  {
+   "target": "tr|A0A0S4IRR4|A0A0S4IRR4_BODSA",
+   "field": "target_coverage",
+   "strict": 0.439,
+   "filtered": 0.427
+  },
+  {
+   "target": "tr|A0A8S1Y4U0|A0A8S1Y4U0_9CILI",
+   "field": "n_domains",
+   "strict": 3,
+   "filtered": 2
+  },
+  {
+   "target": "tr|A0A8S1Y4U0|A0A8S1Y4U0_9CILI",
+   "field": "hmm_coverage",
+   "strict": 0.835,
+   "filtered": 0.319
+  },
+  {
+   "target": "tr|A0A8S1Y4U0|A0A8S1Y4U0_9CILI",
+   "field": "target_coverage",
+   "strict": 0.829,
+   "filtered": 0.3
+  },
+  {
+   "target": "tr|A0AAD1Y9H2|A0AAD1Y9H2_EUPCR",
+   "field": "n_domains",
+   "strict": 3,
+   "filtered": 1
+  },
+  {
+   "target": "tr|A0AAD1Y9H2|A0AAD1Y9H2_EUPCR",
+   "field": "hmm_coverage",
+   "strict": 0.324,
+   "filtered": 0.262
+  },
+  {
+   "target": "tr|A0AAD1Y9H2|A0AAD1Y9H2_EUPCR",
+   "field": "target_coverage",
+   "strict": 0.396,
+   "filtered": 0.328
+  },
+  {
+   "target": "tr|I7M298|I7M298_TETTS",
+   "field": "n_domains",
+   "strict": 4,
+   "filtered": 3
+  },
+  {
+   "target": "tr|I7M298|I7M298_TETTS",
+   "field": "target_coverage",
+   "strict": 0.768,
+   "filtered": 0.736
+  }
+ ],
+ "n_differing_fields": 11,
+ "compared_fields": [
+  "full_evalue",
+  "full_score",
+  "n_domains",
+  "hmm_coverage",
+  "target_coverage",
+  "tlen",
+  "qlen"
+ ],
+ "call_effect": {
+  "n_compared": 798,
+  "n_call_changed": 0,
+  "call_changed": [],
+  "n_evidence_changed": 1,
+  "evidence_changed": [
+   {
+    "accession": "A0A8S1Y4U0",
+    "strict": "architecture",
+    "relaxed": "partial"
+   }
+  ],
+  "n_d22_gate_changed": 0,
+  "d22_gate_changed": []
+ },
+ "group": "protista_other",
+ "profile": "itpr",
+ "strict_evalue": "1e-5",
+ "relaxed_evalue": "10",
+ "strict_domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/test_strict_itpr_protista_other.domtblout",
+ "relaxed_domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_itpr_vs_protista_other.domtblout",
+ "min_targets": 25,
+ "equivalent": true
+}
