@@ -1,6 +1,6 @@
 # S20 — the non-vertebrate sweep: the family's true range
 
-_Rendered from the committed tables on 2026-09-05 11:54 by `scripts/s20_report.py` (D13)._
+_Rendered from the committed tables on 2026-09-05 11:55 by `scripts/s20_report.py` (D13)._
 
 S3 swept the vertebrate reference proteomes and found where the three paralogs live. This task asks the opposite question — how far the family reaches — and the one it was set up to answer: the databases hold a few tens of plant and fungal records while *Arabidopsis* and *S. cerevisiae* hold none. Which of those is a fact about genomes and which about databases?
 
@@ -310,6 +310,16 @@ Reported at E ≤ 10 / of those, spanning at least half the model at E ≤ 1e-5:
 - **land plants**: 0 substantial PF08709 match(es), against 26 in *Chlorophyta*, the nearest lineage in the same kingdom where the family is present.
 
 - **Dikarya**: 0 substantial PF08709 match(es), against 16 in *Mucoromycota*, the nearest lineage in the same kingdom where the family is present.
+
+
+The table is not all zeros, and the exceptions are named rather than left in a cell. 1 record(s) in a lineage this task calls empty clear the bar on some profile other than the shared MIR domain:
+
+| profile | accession | species | length | E-value | model coverage | match states | what it is |
+|---|---|---|---|---|---|---|---|
+| PF08454 | A0A0D3H7Y6 | *Oryza barthii* | 2260 | 4.7e-06 | 71% | 70 | Protein kinase domain-containing protein |
+
+
+None is a receptor, and that is checked rather than asserted: not one of them clears the same bar on PF08709 or on either full-length profile, which is the combination a call would require. Each rests on a *short accessory* domain over a few dozen residues.
 
 
 And the search is demonstrably sensitive in those very genomes: PF02815 (MIR, which the family shares with POMT1/2 and every eukaryote therefore carries) returns 633 substantial matches in land plants, 4,376 substantial matches in Dikarya. The promiscuous domain finds thousands where the family-defining one finds none, which is what an absence looks like when the instrument is working rather than blind.

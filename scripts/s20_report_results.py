@@ -417,6 +417,51 @@ def section_negatives(A, table, relaxed, taxa, assignments, groups_relaxed,
           + (f", against {ctrl_got} in *{ctrl}*, "
              "the nearest lineage in the same kingdom where the family is "
              "present." if ctrl else ".") + "\n")
+    # Nothing in a lineage called empty is left as a number in a cell. Any
+    # record clearing the bar on any profile other than the shared MIR domain
+    # is named, so a reader does not have to take "0 substantial PF08709
+    # matches" as covering the whole row.
+    shared = "PF02815"
+    residue = [r for r in relaxed
+               if clade_of(r) in sum(lineages.values(), [])
+               and r["profile"] != shared
+               and float(r["hmm_coverage"] or 0) >= 0.5
+               and float(r["full_evalue"]) <= float(e_primary)]
+    if residue:
+        A(f"\nThe table is not all zeros, and the exceptions are named rather "
+          f"than left in a cell. {len(residue)} record(s) in a lineage this "
+          "task calls empty clear the bar on some profile other than the "
+          "shared MIR domain:\n")
+        A(table(["profile", "accession", "species", "length", "E-value",
+                 "model coverage", "match states", "what it is"],
+                [[r["profile"], r["accession"], f"*{r['species']}*",
+                  r["length"], r["full_evalue"],
+                  f"{float(r['hmm_coverage']):.0%}", r["positions"],
+                  r["protein_name"]] for r in
+                 sorted(residue, key=lambda r: float(r["full_evalue"]))[:10]]))
+        # Verified, not asserted: does any of them *also* clear the bar on
+        # the family-defining domain or on a full-length profile? That is the
+        # combination required to call a receptor, and if one ever did, this
+        # paragraph has to say the opposite of what it says now.
+        decisive = {"PF08709", "itpr", "ryr"}
+        accs = {r["accession"] for r in residue}
+        also = [r for r in relaxed if r["accession"] in accs
+                and r["profile"] in decisive
+                and float(r["hmm_coverage"] or 0) >= 0.5
+                and float(r["full_evalue"]) <= float(e_primary)]
+        if also:
+            A(f"\n**{len(also)} of them also clear the bar on "
+              + ", ".join(sorted({r["profile"] for r in also}))
+              + " — that is the combination required to call a receptor, so "
+              "the absence claim above does not hold for them and they need "
+              "chasing individually.**\n")
+        else:
+            A("\nNone is a receptor, and that is checked rather than "
+              "asserted: not one of them clears the same bar on PF08709 or "
+              "on either full-length profile, which is the combination a "
+              "call would require. Each rests on a *short accessory* domain "
+              "over a few dozen residues.\n")
+
     mir = "PF02815"
     A(f"\nAnd the search is demonstrably sensitive in those very genomes: "
       f"{mir} (MIR, which the family shares with POMT1/2 and every eukaryote "
