@@ -1,4 +1,14 @@
 group	seed_tag	accession	round	new_targets	n_included	n_own	n_sister	n_offfamily	sister_frac	sister_rise	growth	converged	verdict	kill_rule
+metazoa_nonvert	s20_metazoa_nonvert	A0AAV1LM52	1	1952	1952	1081	635	236	0.3253	0.0		False	killed	K3
+metazoa_nonvert	s20_metazoa_nonvert	A0AAV1LM52	2	407	2358	1174	807	377	0.3422	0.0169	1.21	False	killed	K3
+metazoa_nonvert	s20_metazoa_nonvert	A0AAV1LM52	3	188	2541	1188	925	428	0.364	0.0387	1.08	False	killed	K3
+metazoa_nonvert	s20_metazoa_nonvert	A0AAV1LM52	4	50	2585	1188	941	456	0.364	0.0387	1.02	False	killed	K3
+metazoa_nonvert	s20_metazoa_nonvert	A0AAV1LM52	5	69	2646	1194	971	481	0.367	0.0417	1.02	False	killed	K3
+metazoa_nonvert	s20_metazoa_nonvert	A0AAV1LM52	6	73	2716	1194	982	540	0.3616	0.0363	1.03	False	killed	K3
+metazoa_nonvert	s20_metazoa_nonvert	A0AAV1LM52	7	70	2786	1194	991	601	0.3557	0.0304	1.03	False	killed	K3
+metazoa_nonvert	s20_metazoa_nonvert	A0AAV1LM52	8	42	2828	1194	1001	633	0.354	0.0287	1.02	False	killed	K3
+metazoa_nonvert	s20_metazoa_nonvert	A0AAV1LM52	9	62	2888	1194	1004	690	0.3476	0.0223	1.02	False	killed	K3
+metazoa_nonvert	s20_metazoa_nonvert	A0AAV1LM52	10	34	2921	1194	1005	722	0.3441	0.0188	1.01	False	killed	K3
 fungi	s20_fungi	A0ABR2W6A1	1	39	39	33	0	6	0.0	0.0		False	killed	K2
 fungi	s20_fungi	A0ABR2W6A1	2	3	42	33	0	9	0.0	0.0	1.08	False	killed	K2
 fungi	s20_fungi	A0ABR2W6A1	3	1400	1442	33	0	1409	0.0	0.0	34.33	False	killed	K2

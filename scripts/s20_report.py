@@ -224,10 +224,15 @@ def main() -> int:
                if taxa.get(int(r["taxid"]), {}).get("clade") == clade]
         return (sum(1 for r in sub if r["itpr_status"] == "present"), len(sub))
 
+    def single_pass(group: str) -> int:
+        """ITPR calls the one-pass sweep made in this group."""
+        return sum(1 for r in rows(S20_DIR / f"assignments_{group}.tsv")
+                   if r["assignment"] == "ITPR")
+
     section_jackhmmer(A, table, conv, conv_json,
                       rows(S20_DIR / "jackhmmer_model_composition_s20.tsv"),
                       rows(S20_DIR / "jackhmmer_iteration_only_s20.tsv"),
-                      presence_rate)
+                      presence_rate, single_pass)
     section_census(A, table, v5, changes, conflicts, by_group)
 
     # ------------------------------------------------------------ figures

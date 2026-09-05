@@ -675,6 +675,14 @@ Either that lineage has genuinely expanded the family, or its assembly is
 duplicated. A proteome cannot tell those apart *(pending: S23, the
 assembly-level search.)*
 
+**Searching harder finds nothing new anywhere.** In all four groups — plants,
+fungi, protists and invertebrates — the deeper iterative search settles on
+**exactly** the number of receptors the ordinary search had already found: 54,
+35, 729 and 1,194. It then kept going, in the protists' case swallowing another
+twenty-four thousand proteins that are not receptors at all, and never found a
+fifty-fifth green algal receptor or a seven-hundred-and-thirtieth protist one.
+The ordinary search had them all.
+
 **Searching harder does not find them either.** For each group the search was
 run again the hard way — starting from a single receptor native to that group
 and letting the model rebuild itself from whatever it found, round after round,
@@ -707,9 +715,16 @@ watching for explosive growth, caught it.
 The protist run went wrong the same way but *slowly* — never more than
 threefold in any single round — so the growth rule missed it too, and its
 sister-family share actually **fell** while it drifted. Only the hard limit on
-the number of rounds stopped it. Three groups, three different outcomes from
-the same rules: one clean, one caught by growth, one caught only by the
-ceiling. It is worth stating plainly: a model that has gone wrong does not
+the number of rounds stopped it. The invertebrate run failed in yet another way — or rather, did not fail at
+all. It also ran out of rounds, but nothing had gone wrong with it: three
+quarters of what it held were still receptors of one family or the other, and
+it was simply still finding a few more each round when the limit stopped it.
+Four groups, four outcomes from the same rules: one settled, one caught by
+growth, one caught by the ceiling after drifting badly, and one caught by the
+ceiling while perfectly healthy. The rule cannot tell the last two apart,
+because it counts rounds rather than looking at what the model holds — which is
+the right way for a safety limit to behave, and a reason to look at the model
+as well as the verdict. It is worth stating plainly: a model that has gone wrong does not
 always go wrong in the way you are watching for, and the value of writing the
 kill rules down in advance is that they still catch it when it does not.
 

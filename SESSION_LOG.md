@@ -1066,16 +1066,32 @@ architecture-level against 1 % of RYR calls.
   rounds before the drift are usable. The composition rows now carry the
   verdict and a `supports_completeness` flag, and the report presents a
   disowned run separately instead of mixing it into the completeness table.
+- **jackhmmer, metazoa_nonvert: 10 rounds, K3 — and the fourth outcome is a
+  K3 that means the opposite of the protists'.** Nothing drifted: growth never
+  exceeded **1.21×**, `sister_rise` peaked at **+0.042** against K1's 0.10
+  limit, and the finished model is **2,198/2,908 (76 %) records the profiles
+  call ITPR or RYR**, its largest single contribution 451 arthropod RyRs. It
+  simply had not finished — new targets were still trickling in at ~35–70 a
+  round. Against the protist K3, whose model is **772/22,913 (3 %) family** and
+  whose largest contribution is 11,344 apicomplexan proteins. **The rule
+  returns the same verdict for both**, because K3 is about rounds rather than
+  content — which is right for a ceiling, and a reason to read the composition
+  beside the verdict rather than instead of it. The report now tabulates that
+  contrast instead of pooling the two.
 - **Family saturation, read off every run, killed or not.** The count of
   family members settles early while the model keeps growing: viridiplantae
   at round 2 (54), protista at round 3 (729 — exactly what the single pass
   found, after which the model grew 1,995 → 26,148 without adding one),
-  fungi at round 4 (35). Iteration finds no receptor the single pass missed
-  in any group.
+  fungi at round 4 (35), metazoa at round 5 (1,194). **In all four groups the
+  saturated count is *exactly* the single pass's ITPR count** — 54, 729, 35,
+  1,194 — so iteration finds no receptor the single pass missed anywhere in the
+  non-vertebrate tree, and that statement does not depend on the two D10
+  verdicts. What the extra rounds bought was 24,153 more non-family targets in
+  the protists and 870 in the fungi.
 
-**Ledger split (S20 → S20a / S20b).** Everything in S20's completion criteria is delivered, and both convergence runs the negative claims rest on are done. The other two are cost-bound rather than unfinished-in-principle: the per-round cost is the *alignment*, not the search, and it does not fall with more cores — a round over a group with thousands of included targets runs ~45-65 min whatever thread count this machine gives it, so protista needs ~5 h and the invertebrates ~8 h. Both were launched here and are still iterating; S20b collects them.
+**Ledger split (S20 → S20a / S20b), both now complete.** Everything in S20's completion criteria is delivered, and both convergence runs the negative claims rest on are done. The other two are cost-bound rather than unfinished-in-principle: the per-round cost is the *alignment*, not the search, and it does not fall with more cores — a round over a group with thousands of included targets runs ~45-65 min whatever thread count this machine gives it, so protista needs ~5 h and the invertebrates ~8 h. Both were launched here and are still iterating; S20b collects them.
 
-**Next.** S20b (`s20_jackhmmer.py --all --parse-only` once the two logs exist, then re-render figures and report) and
+**Next.** S23,
 then S23, which S20 sharpens: the absences to take to genome level are
 Streptophyta, Dikarya, Glomeromycota/Mortierellomycota, Apicomplexa (0/60) and
 the *Cymbomonas* copy-number question.

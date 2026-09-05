@@ -1,6 +1,6 @@
 # S20 — the non-vertebrate sweep: the family's true range
 
-_Rendered from the committed tables on 2026-09-05 17:09 by `scripts/s20_report.py` (D13)._
+_Rendered from the committed tables on 2026-09-05 18:17 by `scripts/s20_report.py` (D13)._
 
 S3 swept the vertebrate reference proteomes and found where the three paralogs live. This task asks the opposite question — how far the family reaches — and the one it was set up to answer: the databases hold a few tens of plant and fungal records while *Arabidopsis* and *S. cerevisiae* hold none. Which of those is a fact about genomes and which about databases?
 
@@ -358,6 +358,7 @@ A single profile pass can only find what it is already close enough to. Each gro
 | group | seed | rounds | converged | D10 verdict | rule fired | targets in the accepted model |
 |---|---|---|---|---|---|---|
 | fungi | A0ABR2W6A1 | 10 | no | killed | K2 | 42 |
+| metazoa_nonvert | A0AAV1LM52 | 10 | no | killed | K3 | 2,908 |
 | protista_other | A0A0D2UGF9 | 10 | no | killed | K3 | 22,913 |
 | viridiplantae | A0AAE0LDZ1 | 5 | yes | clean | none | 70 |
 
@@ -370,8 +371,8 @@ The completeness statement the iterated search exists to make. A model seeded in
 |---|---|---|---|---|---|
 | fungi | Mucoromycota | ITPR | 17 | 17 | 0 |
 | fungi | Chytridiomycota | ITPR | 9 | 9 | 0 |
-| fungi | Mucoromycota | unassigned | 5 | 5 | 0 |
 | fungi | Basidiobolomycota | ITPR | 5 | 5 | 0 |
+| fungi | Mucoromycota | unassigned | 5 | 5 | 0 |
 | fungi | Ascomycota | not called by the single pass | 2 | 0 | 2 |
 | fungi | Zoopagomycota | ITPR | 1 | 1 | 0 |
 | fungi | Mucoromycota | not called by the single pass | 1 | 0 | 1 |
@@ -403,44 +404,35 @@ The completeness statement the iterated search exists to make. A model seeded in
 Every one is a mannosyltransferase — the MIR-domain sharer S1's decoy panel was built around (POMT1/2), not a receptor. The iterated search reaches these lineages exactly far enough to pick up the known false positive and no further.
 
 
-### The run D10 disowned
+### The runs D10 disowned — and why the rule is blunter than the situations
 
-`protista_other` reached the ceiling without converging, and D10's own words for that outcome are that **no completeness claim may rest on the run**. `s3_kill` still reports its pre-ceiling rounds as accepted — the right semantics for K1 and K2, where the rounds before the drift are usable — so its composition is reported here separately and excluded from the table above rather than being quietly mixed into a completeness argument it cannot support.
-
-
-What it accreted, which is the point:
-
-| group | clade | profile call | targets |
-|---|---|---|---|
-| protista_other | Apicomplexa | not called by the single pass | 11344 |
-| protista_other | Dinophyceae | not called by the single pass | 5141 |
-| protista_other | Oomycota | not called by the single pass | 1235 |
-| protista_other | Ciliophora | not called by the single pass | 928 |
-| protista_other | Choanoflagellata | not called by the single pass | 420 |
-| protista_other | Evosea | not called by the single pass | 405 |
-| protista_other | Bolidophyceae | not called by the single pass | 389 |
-| protista_other | Ciliophora | ITPR | 387 |
-| protista_other | Bacillariophyta | not called by the single pass | 360 |
-| protista_other | Euglenozoa | not called by the single pass | 307 |
-| protista_other | Haptophyta | not called by the single pass | 233 |
-| protista_other | Cryptophyceae | not called by the single pass | 178 |
+`metazoa_nonvert, protista_other` reached the ceiling without converging. D10's words for that outcome are that **no completeness claim may rest on the run**, and `s3_kill` still reports the pre-ceiling rounds as accepted — the right semantics for K1 and K2, where the rounds before the drift are usable. So these are reported separately and excluded from the completeness table above rather than quietly mixed into an argument they cannot support.
 
 
-772 of its 22,913 targets are records either profile calls; the rest are proteins of neither family. Its largest single contribution is **11,344 Apicomplexa proteins**, a clade in which this task's own sweep called the family in 0/60 (0%) of its proteomes — which is what a model that has stopped being a model of the family looks like.
+But the two runs K3 caught are not the same thing at all, and the composition of what each one ended up holding is the difference:
+
+| group | targets in the model | that either profile calls | largest single contribution | the family, in that clade's proteomes |
+|---|---|---|---|---|
+| metazoa_nonvert | 2,908 | 2,198/2,908 (76%) | Arthropoda (451, RYR) | 292/311 (94%) |
+| protista_other | 22,913 | 772/22,913 (3%) | Apicomplexa (11,344, not called by the single pass) | 0/60 (0%) |
+
+
+One of them stopped being a model of the family and the other did not. A model whose largest contribution is a clade this sweep found the family in **no proteome at all** has drifted; a model still three-quarters composed of records the profiles call ITPR or RYR has simply not finished. **K3 returns the same verdict for both**, because it is a rule about rounds rather than about content — which is the right way for a ceiling to behave, and a reason to read the composition beside the verdict rather than instead of it.
 
 
 ### Where each model stopped finding the family
 
 The one thing even a disowned run still reports. If the count of family members stops moving while the model keeps growing, iteration has stopped finding receptors and started finding everything else — and the single pass had already found them all.
 
-| group | family members, round 1 | final | settled at round | model grew from → to after that |
-|---|---|---|---|---|
-| fungi | 33 | 35 | 4 | 5,432 → 6,302 |
-| protista_other | 686 | 729 | 3 | 1,995 → 26,148 |
-| viridiplantae | 49 | 54 | 2 | 68 → 70 |
+| group | family members, round 1 | final | settled at round | model grew from → to after that | the single pass found |
+|---|---|---|---|---|---|
+| fungi | 33 | 35 | 4 | 5,432 → 6,302 | 35 |
+| metazoa_nonvert | 1081 | 1194 | 5 | 2,646 → 2,921 | 1,194 |
+| protista_other | 686 | 729 | 3 | 1,995 → 26,148 | 729 |
+| viridiplantae | 49 | 54 | 2 | 68 → 70 | 54 |
 
 
-1 group(s) had not finished iterating when this report was rendered and are reported as unfinished rather than summarised from a partial log: metazoa_nonvert. The bottleneck is the per-round alignment, not the search — a round over a group with thousands of included targets costs far more to align than to scan, and that cost is not reduced by more cores.
+**In every one of the 4 groups the iterated model settles on exactly the number of family members the single profile pass already had.** Iteration is the expensive way to ask whether one pass missed anything, and across the whole non-vertebrate tree the answer is that it did not — including in the two runs D10 disowned, because this statement does not depend on their verdict. What the extra rounds bought was 24,153 more non-family targets in protista_other, 870 more non-family targets in fungi.
 
 
 ## Census v5

@@ -1,12 +1,23 @@
 {
  "groups_without_seed": [],
- "groups_not_completed": [
-  "metazoa_nonvert"
- ],
+ "groups_not_completed": [],
  "min_seed_coverage": 0.5,
  "max_iter": 10,
  "evalue": "1e-5",
  "verdicts": {
+  "metazoa_nonvert": {
+   "verdict": "killed",
+   "accepted_rounds": 9,
+   "killed_at": 10,
+   "rule": "K3",
+   "reason": "reached the 10-round ceiling without converging; no completeness claim may rest on this run",
+   "group": "metazoa_nonvert",
+   "tag": "s20_metazoa_nonvert",
+   "accession": "A0AAV1LM52",
+   "converged": false,
+   "n_rounds": 10,
+   "accepted_targets": 2908
+  },
   "fungi": {
    "verdict": "killed",
    "accepted_rounds": 2,
