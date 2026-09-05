@@ -1,8 +1,7 @@
 {
  "groups_without_seed": [],
  "groups_not_completed": [
-  "metazoa_nonvert",
-  "protista_other"
+  "metazoa_nonvert"
  ],
  "min_seed_coverage": 0.5,
  "max_iter": 10,
@@ -33,6 +32,19 @@
    "converged": true,
    "n_rounds": 5,
    "accepted_targets": 70
+  },
+  "protista_other": {
+   "verdict": "killed",
+   "accepted_rounds": 9,
+   "killed_at": 10,
+   "rule": "K3",
+   "reason": "reached the 10-round ceiling without converging; no completeness claim may rest on this run",
+   "group": "protista_other",
+   "tag": "s20_protista_other",
+   "accession": "A0A0D2UGF9",
+   "converged": false,
+   "n_rounds": 10,
+   "accepted_targets": 22913
   }
  }
 }

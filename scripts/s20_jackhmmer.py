@@ -60,13 +60,24 @@ CONV_FIELDS = ["group", "seed_tag", "accession", "round", "new_targets",
                "sister_frac", "sister_rise", "growth", "converged",
                "verdict", "kill_rule"]
 COMP_FIELDS = ["group", "clade", "profile_call", "targets",
-               "found_by_single_pass", "iteration_only"]
+               "found_by_single_pass", "iteration_only", "d10_verdict",
+               "supports_completeness"]
 ONLY_FIELDS = ["group", "accession", "species", "clade", "length",
                "protein_name"]
 
+#: D10's own words for K3: "reached the ceiling without converging; **no
+#: completeness claim may rest on this run**". `s3_kill` still reports
+#: `accepted_rounds = killed_at - 1` for it, which is the right semantics for
+#: K1 and K2 — the rounds before the drift are usable — but for K3 it would
+#: let a model the criterion has disowned be read as a completeness
+#: statement. So the composition rows carry the verdict, and a K3 run's rows
+#: are marked as supporting no such claim rather than being silently mixed in
+#: with the runs that do.
+NO_COMPLETENESS_RULES = ("K3",)
+
 
 def model_composition(group: str, targets: set[str], assign: dict,
-                      taxa: dict) -> list[dict]:
+                      taxa: dict, verdict: dict | None = None) -> list[dict]:
     """What the accepted model is actually built from, by lineage.
 
     This is the completeness statement the iterated search exists to make:
@@ -122,11 +133,20 @@ def model_composition(group: str, targets: set[str], assign: dict,
                      "clade": taxa.get(taxid, {}).get("clade", "unresolved"),
                      "length": len(meta.get("sequence", "")) or "",
                      "protein_name": meta.get("protein_name", "")})
+    rule = (verdict or {}).get("rule") or ""
+    supports = 0 if rule in NO_COMPLETENESS_RULES else 1
     rows = [{"group": group, "clade": clade, "profile_call": call,
              "targets": v[0], "found_by_single_pass": v[1],
-             "iteration_only": v[2]}
+             "iteration_only": v[2],
+             "d10_verdict": rule or (verdict or {}).get("verdict", ""),
+             "supports_completeness": supports}
             for (clade, call), v in sorted(agg.items(),
                                            key=lambda kv: -kv[1][0])]
+    if not supports:
+        # A run the criterion has disowned contributes tens of thousands of
+        # accreted records; naming them would be a 3 MB table of things the
+        # model should never have contained.
+        only = []
     return rows, only
 
 
@@ -308,7 +328,7 @@ def main() -> int:
                   for a in read_tsv(S20_DIR / f"assignments_{g}.tsv")}
         c, o = model_composition(
             g, accepted_targets(data["rounds"], v["accepted_rounds"]),
-            assign, taxa)
+            assign, taxa, v)
         comp += c
         only_rows += o
 

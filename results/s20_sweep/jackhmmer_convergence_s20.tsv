@@ -14,3 +14,13 @@ viridiplantae	s20_viridiplantae	A0AAE0LDZ1	2	12	68	54	0	14	0.0	0.0	1.21	True	cle
 viridiplantae	s20_viridiplantae	A0AAE0LDZ1	3	1	69	54	0	15	0.0	0.0	1.01	True	clean	
 viridiplantae	s20_viridiplantae	A0AAE0LDZ1	4	1	70	54	0	16	0.0	0.0	1.01	True	clean	
 viridiplantae	s20_viridiplantae	A0AAE0LDZ1	5	0	70	54	0	16	0.0	0.0	1.0	True	clean	
+protista_other	s20_protista_other	A0A0D2UGF9	1	721	721	686	2	33	0.0028	0.0		False	killed	K3
+protista_other	s20_protista_other	A0A0D2UGF9	2	182	903	728	2	173	0.0022	-0.0006	1.25	False	killed	K3
+protista_other	s20_protista_other	A0A0D2UGF9	3	1096	1995	729	2	1264	0.001	-0.0018	2.21	False	killed	K3
+protista_other	s20_protista_other	A0A0D2UGF9	4	4356	6351	729	42	5580	0.0066	0.0038	3.18	False	killed	K3
+protista_other	s20_protista_other	A0A0D2UGF9	5	1449	7796	729	43	7024	0.0055	0.0027	1.23	False	killed	K3
+protista_other	s20_protista_other	A0A0D2UGF9	6	553	8346	729	43	7574	0.0052	0.0024	1.07	False	killed	K3
+protista_other	s20_protista_other	A0A0D2UGF9	7	559	8894	729	43	8122	0.0048	0.002	1.07	False	killed	K3
+protista_other	s20_protista_other	A0A0D2UGF9	8	7657	16530	729	43	15758	0.0026	-0.0002	1.86	False	killed	K3
+protista_other	s20_protista_other	A0A0D2UGF9	9	6364	22248	729	43	21476	0.0019	-0.0009	1.35	False	killed	K3
+protista_other	s20_protista_other	A0A0D2UGF9	10	4767	26148	729	43	25376	0.0016	-0.0012	1.18	False	killed	K3

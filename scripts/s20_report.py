@@ -218,9 +218,16 @@ def main() -> int:
     section_negatives(A, table, relaxed, taxa, assignments,
                       [g for g in ALL_GROUPS if GROUPS[g]["relaxed"]],
                       EVALUE_RELAXED, EVALUE_PRIMARY)
+    def presence_rate(clade: str) -> tuple[int, int]:
+        """(proteomes with an ITPR call, proteomes swept) for one clade."""
+        sub = [r for r in presence
+               if taxa.get(int(r["taxid"]), {}).get("clade") == clade]
+        return (sum(1 for r in sub if r["itpr_status"] == "present"), len(sub))
+
     section_jackhmmer(A, table, conv, conv_json,
                       rows(S20_DIR / "jackhmmer_model_composition_s20.tsv"),
-                      rows(S20_DIR / "jackhmmer_iteration_only_s20.tsv"))
+                      rows(S20_DIR / "jackhmmer_iteration_only_s20.tsv"),
+                      presence_rate)
     section_census(A, table, v5, changes, conflicts, by_group)
 
     # ------------------------------------------------------------ figures

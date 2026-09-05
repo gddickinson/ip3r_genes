@@ -686,6 +686,14 @@ mannosyltransferase — a protein that shares one module with the receptor and
 was already in this project's list of known look-alikes. So the absences are
 not an artefact of not looking hard enough. They are absences.
 
+**In the protists the deeper search found nothing new either, and failed in a
+different way again.** It settled on 729 receptors by its third round — exactly
+what the ordinary search had already found — and then spent seven more rounds
+growing from two thousand proteins to twenty-six thousand without adding a
+single further receptor. Most of what it swallowed were **apicomplexan
+proteins**: the malaria parasites and their relatives, a group in which this
+same sweep found no receptor in any of sixty genomes.
+
 **And the deeper search failed in an instructive way.** The fungal run did not
 settle at all: at round three the model grew thirty-four-fold, from 42 proteins
 to 1,442, and by round ten it rested on 6,302 — while the number of actual
@@ -694,9 +702,16 @@ and become a model of fungal proteins in general. The rule that watches for
 this project's expected failure — drifting into the sister family — saw
 nothing at all, because the flood was of proteins belonging to *neither*
 family, which dilutes the sister share rather than raising it. A second rule,
-watching for explosive growth, caught it. That is the same lesson S3 recorded
-from a different direction, and it is worth stating plainly: a model that has
-gone wrong does not always go wrong in the way you are watching for.
+watching for explosive growth, caught it.
+
+The protist run went wrong the same way but *slowly* — never more than
+threefold in any single round — so the growth rule missed it too, and its
+sister-family share actually **fell** while it drifted. Only the hard limit on
+the number of rounds stopped it. Three groups, three different outcomes from
+the same rules: one clean, one caught by growth, one caught only by the
+ceiling. It is worth stating plainly: a model that has gone wrong does not
+always go wrong in the way you are watching for, and the value of writing the
+kill rules down in advance is that they still catch it when it does not.
 
 **A caution about our own counting.** The sweep reports 142 "ryanodine
 receptor" hits in fungi, green algae and protists, where no ryanodine receptor

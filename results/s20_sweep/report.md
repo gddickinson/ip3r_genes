@@ -1,6 +1,6 @@
 # S20 — the non-vertebrate sweep: the family's true range
 
-_Rendered from the committed tables on 2026-09-05 11:55 by `scripts/s20_report.py` (D13)._
+_Rendered from the committed tables on 2026-09-05 17:09 by `scripts/s20_report.py` (D13)._
 
 S3 swept the vertebrate reference proteomes and found where the three paralogs live. This task asks the opposite question — how far the family reaches — and the one it was set up to answer: the databases hold a few tens of plant and fungal records while *Arabidopsis* and *S. cerevisiae* hold none. Which of those is a fact about genomes and which about databases?
 
@@ -358,10 +358,11 @@ A single profile pass can only find what it is already close enough to. Each gro
 | group | seed | rounds | converged | D10 verdict | rule fired | targets in the accepted model |
 |---|---|---|---|---|---|---|
 | fungi | A0ABR2W6A1 | 10 | no | killed | K2 | 42 |
+| protista_other | A0A0D2UGF9 | 10 | no | killed | K3 | 22,913 |
 | viridiplantae | A0AAE0LDZ1 | 5 | yes | clean | none | 70 |
 
 
-### What each converged model is built from
+### What each accepted model is built from
 
 The completeness statement the iterated search exists to make. A model seeded in one lineage and iterated to convergence either reaches a neighbouring lineage or it does not, and the targets **only iteration found** are the ones that matter: if they sit in the same lineage as the seed, the absence next door is not a sensitivity artefact.
 
@@ -369,13 +370,13 @@ The completeness statement the iterated search exists to make. A model seeded in
 |---|---|---|---|---|---|
 | fungi | Mucoromycota | ITPR | 17 | 17 | 0 |
 | fungi | Chytridiomycota | ITPR | 9 | 9 | 0 |
-| fungi | Basidiobolomycota | ITPR | 5 | 5 | 0 |
 | fungi | Mucoromycota | unassigned | 5 | 5 | 0 |
+| fungi | Basidiobolomycota | ITPR | 5 | 5 | 0 |
 | fungi | Ascomycota | not called by the single pass | 2 | 0 | 2 |
-| fungi | Chytridiomycota | unassigned | 1 | 1 | 0 |
 | fungi | Zoopagomycota | ITPR | 1 | 1 | 0 |
 | fungi | Mucoromycota | not called by the single pass | 1 | 0 | 1 |
 | fungi | Entomophthoromycota | ITPR | 1 | 1 | 0 |
+| fungi | Chytridiomycota | unassigned | 1 | 1 | 0 |
 | viridiplantae | Chlorophyta | ITPR | 54 | 54 | 0 |
 | viridiplantae | Chlorophyta | unassigned | 10 | 10 | 0 |
 | viridiplantae | Chlorophyta | not called by the single pass | 6 | 0 | 6 |
@@ -402,7 +403,44 @@ The completeness statement the iterated search exists to make. A model seeded in
 Every one is a mannosyltransferase — the MIR-domain sharer S1's decoy panel was built around (POMT1/2), not a receptor. The iterated search reaches these lineages exactly far enough to pick up the known false positive and no further.
 
 
-2 group(s) had not finished iterating when this report was rendered and are reported as unfinished rather than summarised from a partial log: metazoa_nonvert, protista_other. The bottleneck is the per-round alignment, not the search — a round over a group with thousands of included targets costs far more to align than to scan, and that cost is not reduced by more cores.
+### The run D10 disowned
+
+`protista_other` reached the ceiling without converging, and D10's own words for that outcome are that **no completeness claim may rest on the run**. `s3_kill` still reports its pre-ceiling rounds as accepted — the right semantics for K1 and K2, where the rounds before the drift are usable — so its composition is reported here separately and excluded from the table above rather than being quietly mixed into a completeness argument it cannot support.
+
+
+What it accreted, which is the point:
+
+| group | clade | profile call | targets |
+|---|---|---|---|
+| protista_other | Apicomplexa | not called by the single pass | 11344 |
+| protista_other | Dinophyceae | not called by the single pass | 5141 |
+| protista_other | Oomycota | not called by the single pass | 1235 |
+| protista_other | Ciliophora | not called by the single pass | 928 |
+| protista_other | Choanoflagellata | not called by the single pass | 420 |
+| protista_other | Evosea | not called by the single pass | 405 |
+| protista_other | Bolidophyceae | not called by the single pass | 389 |
+| protista_other | Ciliophora | ITPR | 387 |
+| protista_other | Bacillariophyta | not called by the single pass | 360 |
+| protista_other | Euglenozoa | not called by the single pass | 307 |
+| protista_other | Haptophyta | not called by the single pass | 233 |
+| protista_other | Cryptophyceae | not called by the single pass | 178 |
+
+
+772 of its 22,913 targets are records either profile calls; the rest are proteins of neither family. Its largest single contribution is **11,344 Apicomplexa proteins**, a clade in which this task's own sweep called the family in 0/60 (0%) of its proteomes — which is what a model that has stopped being a model of the family looks like.
+
+
+### Where each model stopped finding the family
+
+The one thing even a disowned run still reports. If the count of family members stops moving while the model keeps growing, iteration has stopped finding receptors and started finding everything else — and the single pass had already found them all.
+
+| group | family members, round 1 | final | settled at round | model grew from → to after that |
+|---|---|---|---|---|
+| fungi | 33 | 35 | 4 | 5,432 → 6,302 |
+| protista_other | 686 | 729 | 3 | 1,995 → 26,148 |
+| viridiplantae | 49 | 54 | 2 | 68 → 70 |
+
+
+1 group(s) had not finished iterating when this report was rendered and are reported as unfinished rather than summarised from a partial log: metazoa_nonvert. The bottleneck is the per-round alignment, not the search — a round over a group with thousands of included targets costs far more to align than to scan, and that cost is not reduced by more cores.
 
 
 ## Census v5

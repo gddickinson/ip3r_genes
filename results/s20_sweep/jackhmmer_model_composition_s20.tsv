@@ -1,13 +1,79 @@
-group	clade	profile_call	targets	found_by_single_pass	iteration_only
-fungi	Mucoromycota	ITPR	17	17	0
-fungi	Chytridiomycota	ITPR	9	9	0
-fungi	Basidiobolomycota	ITPR	5	5	0
-fungi	Mucoromycota	unassigned	5	5	0
-fungi	Ascomycota	not called by the single pass	2	0	2
-fungi	Chytridiomycota	unassigned	1	1	0
-fungi	Zoopagomycota	ITPR	1	1	0
-fungi	Mucoromycota	not called by the single pass	1	0	1
-fungi	Entomophthoromycota	ITPR	1	1	0
-viridiplantae	Chlorophyta	ITPR	54	54	0
-viridiplantae	Chlorophyta	unassigned	10	10	0
-viridiplantae	Chlorophyta	not called by the single pass	6	0	6
+group	clade	profile_call	targets	found_by_single_pass	iteration_only	d10_verdict	supports_completeness
+fungi	Mucoromycota	ITPR	17	17	0	K2	1
+fungi	Chytridiomycota	ITPR	9	9	0	K2	1
+fungi	Mucoromycota	unassigned	5	5	0	K2	1
+fungi	Basidiobolomycota	ITPR	5	5	0	K2	1
+fungi	Ascomycota	not called by the single pass	2	0	2	K2	1
+fungi	Zoopagomycota	ITPR	1	1	0	K2	1
+fungi	Mucoromycota	not called by the single pass	1	0	1	K2	1
+fungi	Entomophthoromycota	ITPR	1	1	0	K2	1
+fungi	Chytridiomycota	unassigned	1	1	0	K2	1
+viridiplantae	Chlorophyta	ITPR	54	54	0	clean	1
+viridiplantae	Chlorophyta	unassigned	10	10	0	clean	1
+viridiplantae	Chlorophyta	not called by the single pass	6	0	6	clean	1
+protista_other	Apicomplexa	not called by the single pass	11344	0	11344	K3	0
+protista_other	Dinophyceae	not called by the single pass	5141	0	5141	K3	0
+protista_other	Oomycota	not called by the single pass	1235	0	1235	K3	0
+protista_other	Ciliophora	not called by the single pass	928	0	928	K3	0
+protista_other	Choanoflagellata	not called by the single pass	420	0	420	K3	0
+protista_other	Evosea	not called by the single pass	405	0	405	K3	0
+protista_other	Bolidophyceae	not called by the single pass	389	0	389	K3	0
+protista_other	Ciliophora	ITPR	387	387	0	K3	0
+protista_other	Bacillariophyta	not called by the single pass	360	0	360	K3	0
+protista_other	Euglenozoa	not called by the single pass	307	0	307	K3	0
+protista_other	Haptophyta	not called by the single pass	233	0	233	K3	0
+protista_other	Cryptophyceae	not called by the single pass	178	0	178	K3	0
+protista_other	Pelagophyceae	not called by the single pass	110	0	110	K3	0
+protista_other	Oomycota	ITPR	105	105	0	K3	0
+protista_other	Bigyra	not called by the single pass	104	0	104	K3	0
+protista_other	Perkinsozoa	not called by the single pass	102	0	102	K3	0
+protista_other	Filasterea	not called by the single pass	94	0	94	K3	0
+protista_other	Foraminifera	not called by the single pass	91	0	91	K3	0
+protista_other	Rhodophyta	not called by the single pass	88	0	88	K3	0
+protista_other	Xanthophyceae	not called by the single pass	61	0	61	K3	0
+protista_other	Rotosphaerida	not called by the single pass	61	0	61	K3	0
+protista_other	Oomycota	unassigned	56	56	0	K3	0
+protista_other	Bolidophyceae	ITPR	51	51	0	K3	0
+protista_other	Parabasalia	not called by the single pass	51	0	51	K3	0
+protista_other	Heterolobosea	not called by the single pass	49	0	49	K3	0
+protista_other	Metamonada	not called by the single pass	47	0	47	K3	0
+protista_other	Eustigmatophyceae	not called by the single pass	42	0	42	K3	0
+protista_other	Oomycota	RYR	41	41	0	K3	0
+protista_other	Preaxostyla	not called by the single pass	39	0	39	K3	0
+protista_other	Dinophyceae	ITPR	37	37	0	K3	0
+protista_other	Phaeophyceae	not called by the single pass	37	0	37	K3	0
+protista_other	Euglenozoa	ITPR	36	36	0	K3	0
+protista_other	Apusozoa	not called by the single pass	32	0	32	K3	0
+protista_other	Endomyxa	not called by the single pass	24	0	24	K3	0
+protista_other	Heterolobosea	ITPR	22	22	0	K3	0
+protista_other	Fornicata	not called by the single pass	21	0	21	K3	0
+protista_other	Ichthyosporea	not called by the single pass	19	0	19	K3	0
+protista_other	Discosea	not called by the single pass	19	0	19	K3	0
+protista_other	Haptophyta	ITPR	16	16	0	K3	0
+protista_other	Pelagophyceae	ITPR	16	16	0	K3	0
+protista_other	Choanoflagellata	ITPR	15	15	0	K3	0
+protista_other	Ichthyosporea	unassigned	15	15	0	K3	0
+protista_other	Ciliophora	unassigned	15	15	0	K3	0
+protista_other	Evosea	ITPR	11	11	0	K3	0
+protista_other	Preaxostyla	ITPR	10	10	0	K3	0
+protista_other	Cryptophyceae	ITPR	9	9	0	K3	0
+protista_other	Dinophyceae	unassigned	8	8	0	K3	0
+protista_other	Cryptophyceae	unassigned	3	3	0	K3	0
+protista_other	Perkinsozoa	ITPR	3	3	0	K3	0
+protista_other	Pelagophyceae	unassigned	3	3	0	K3	0
+protista_other	Bolidophyceae	unassigned	3	3	0	K3	0
+protista_other	Euglenozoa	unassigned	2	2	0	K3	0
+protista_other	Haptophyta	unassigned	2	2	0	K3	0
+protista_other	Ichthyosporea	ITPR	2	2	0	K3	0
+protista_other	Filasterea	ITPR	2	2	0	K3	0
+protista_other	Apusozoa	ITPR	2	2	0	K3	0
+protista_other	Choanoflagellata	unassigned	1	1	0	K3	0
+protista_other	Xanthophyceae	ITPR	1	1	0	K3	0
+protista_other	Discosea	unassigned	1	1	0	K3	0
+protista_other	Jakobea	not called by the single pass	1	0	1	K3	0
+protista_other	Rotosphaerida	ITPR	1	1	0	K3	0
+protista_other	Discosea	ITPR	1	1	0	K3	0
+protista_other	Filasterea	RYR	1	1	0	K3	0
+protista_other	Choanoflagellata	RYR	1	1	0	K3	0
+protista_other	Bigyra	ITPR	1	1	0	K3	0
+protista_other	Phaeophyceae	ITPR	1	1	0	K3	0

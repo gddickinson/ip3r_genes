@@ -1053,6 +1053,26 @@ architecture-level against 1 % of RYR calls.
   named in `jackhmmer_iteration_only_s20.tsv` rather than counted, and the
   report only calls them known decoys when their own protein names say so.
 
+- **jackhmmer, protista_other: 10 rounds, D10's K3.** The third distinct
+  outcome from the same coded criterion, and the sharpest D10b case yet. The
+  model grew 721 → 26,148 targets, but **never by more than 3.18× in one
+  round, so K2 never fired**; and the sister share *fell* from 0.28 % to
+  0.16 %, with `sister_rise` **negative in 6 of 10 rounds**, so K1 not only
+  missed it but moved the wrong way. Only the ceiling caught it. What it
+  accreted is the point: **11,344 Apicomplexa proteins**, a clade in which
+  this task's own sweep called the family in 0/60 proteomes. D10's words for
+  K3 are that no completeness claim may rest on the run, but `s3_kill` still
+  reports its pre-ceiling rounds as `accepted` — correct for K1/K2, where the
+  rounds before the drift are usable. The composition rows now carry the
+  verdict and a `supports_completeness` flag, and the report presents a
+  disowned run separately instead of mixing it into the completeness table.
+- **Family saturation, read off every run, killed or not.** The count of
+  family members settles early while the model keeps growing: viridiplantae
+  at round 2 (54), protista at round 3 (729 — exactly what the single pass
+  found, after which the model grew 1,995 → 26,148 without adding one),
+  fungi at round 4 (35). Iteration finds no receptor the single pass missed
+  in any group.
+
 **Ledger split (S20 → S20a / S20b).** Everything in S20's completion criteria is delivered, and both convergence runs the negative claims rest on are done. The other two are cost-bound rather than unfinished-in-principle: the per-round cost is the *alignment*, not the search, and it does not fall with more cores — a round over a group with thousands of included targets runs ~45-65 min whatever thread count this machine gives it, so protista needs ~5 h and the invertebrates ~8 h. Both were launched here and are still iterating; S20b collects them.
 
 **Next.** S20b (`s20_jackhmmer.py --all --parse-only` once the two logs exist, then re-render figures and report) and

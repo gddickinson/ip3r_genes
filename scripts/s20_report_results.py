@@ -487,7 +487,8 @@ def section_negatives(A, table, relaxed, taxa, assignments, groups_relaxed,
 
 
 def section_jackhmmer(A, table, conv, verdicts_json,
-                      composition=(), iteration_only=()) -> None:
+                      composition=(), iteration_only=(),
+                      presence_rate=lambda clade: (0, 0)) -> None:
     A("\n## Iterated search, per group (D10)\n")
     if not conv:
         A("_`jackhmmer_convergence_s20.tsv` missing — run "
@@ -507,8 +508,12 @@ def section_jackhmmer(A, table, conv, verdicts_json,
               f"{val.get('accepted_targets', ''):,}"
               if isinstance(val.get("accepted_targets"), int) else ""]
              for g, val in sorted(v.items())]))
-    if composition:
-        A("\n### What each converged model is built from\n")
+    usable = [r for r in composition
+              if str(r.get("supports_completeness", "1")) == "1"]
+    disowned = [r for r in composition
+                if str(r.get("supports_completeness", "1")) == "0"]
+    if usable:
+        A("\n### What each accepted model is built from\n")
         A("The completeness statement the iterated search exists to make. A "
           "model seeded in one lineage and iterated to convergence either "
           "reaches a neighbouring lineage or it does not, and the targets "
@@ -519,8 +524,8 @@ def section_jackhmmer(A, table, conv, verdicts_json,
                  "found by the single pass", "iteration only"],
                 [[r["group"], r["clade"], r["profile_call"], r["targets"],
                   r["found_by_single_pass"], r["iteration_only"]]
-                 for r in composition]))
-        only = sum(int(r["iteration_only"]) for r in composition)
+                 for r in usable]))
+        only = sum(int(r["iteration_only"]) for r in usable)
         A(f"\n{only} target(s) entered an accepted model that the single "
           "profile pass never reported. Those are the ones iteration was run "
           "to find, so they are named rather than counted:\n")
@@ -538,10 +543,6 @@ def section_jackhmmer(A, table, conv, verdicts_json,
                   "calls empty** — so the absence there is not quite "
                   "absolute, and what they are decides whether that matters: "
                   + "; ".join(names) + ".\n")
-                # The identification is made from the record's own name, not
-                # asserted: if a rerun finds something else sitting there, this
-                # sentence has to stop appearing rather than keep explaining
-                # away a different record.
                 if all(any(k in n.lower() for k in DECOY_MARKERS)
                        for n in names):
                     A("\nEvery one is a mannosyltransferase — the MIR-domain "
@@ -555,6 +556,63 @@ def section_jackhmmer(A, table, conv, verdicts_json,
                       "by them and they need chasing individually.\n")
             else:
                 A("\nNone of them sits in a lineage this task calls empty.\n")
+
+    if disowned:
+        groups_d = sorted({r["group"] for r in disowned})
+        A(f"\n### The run D10 disowned\n")
+        A(f"`{', '.join(groups_d)}` reached the ceiling without converging, "
+          "and D10's own words for that outcome are that **no completeness "
+          "claim may rest on the run**. `s3_kill` still reports its "
+          "pre-ceiling rounds as accepted — the right semantics for K1 and "
+          "K2, where the rounds before the drift are usable — so its "
+          "composition is reported here separately and excluded from the "
+          "table above rather than being quietly mixed into a completeness "
+          "argument it cannot support.\n")
+        A("\nWhat it accreted, which is the point:\n")
+        A(table(["group", "clade", "profile call", "targets"],
+                [[r["group"], r["clade"], r["profile_call"], r["targets"]]
+                 for r in sorted(disowned,
+                                 key=lambda r: -int(r["targets"]))[:12]]))
+        fam = sum(int(r["targets"]) for r in disowned
+                  if r["profile_call"] in ("ITPR", "RYR"))
+        tot = sum(int(r["targets"]) for r in disowned)
+        top = max(disowned, key=lambda r: int(r["targets"]))
+        got, swept = presence_rate(top["clade"])
+        A(f"\n{fam:,} of its {tot:,} targets are records either profile "
+          f"calls; the rest are proteins of neither family. Its largest "
+          f"single contribution is **{int(top['targets']):,} "
+          f"{top['clade']} proteins**, a clade in which this task's own "
+          f"sweep called the family in {_rate(got, swept)} of its "
+          "proteomes — which is what a model that has stopped being a model "
+          "of the family looks like.\n")
+
+    # Family saturation is worth reading off every run, killed or not: it is
+    # the one thing a disowned model can still tell you. If `n_own` stops
+    # moving while the model keeps growing, iteration has stopped finding
+    # family members — which bears on whether the single pass missed any.
+    sat = []
+    for g in sorted({r["group"] for r in conv}):
+        sub = sorted((r for r in conv if r["group"] == g),
+                     key=lambda r: int(r["round"]))
+        own = [int(r["n_own"] or 0) for r in sub]
+        inc = [int(r["n_included"] or 0) for r in sub]
+        if len(own) < 3:
+            continue
+        plateau = next((i for i in range(len(own) - 1)
+                        if own[i] == own[-1]), len(own) - 1)
+        sat.append({"group": g, "round": sub[plateau]["round"],
+                    "own": own[-1], "own_first": own[0],
+                    "grew_to": inc[-1], "grew_from": inc[plateau]})
+    if sat:
+        A("\n### Where each model stopped finding the family\n")
+        A("The one thing even a disowned run still reports. If the count of "
+          "family members stops moving while the model keeps growing, "
+          "iteration has stopped finding receptors and started finding "
+          "everything else — and the single pass had already found them all.\n")
+        A(table(["group", "family members, round 1", "final",
+                 "settled at round", "model grew from → to after that"],
+                [[r["group"], r["own_first"], r["own"], r["round"],
+                  f"{r['grew_from']:,} → {r['grew_to']:,}"] for r in sat]))
 
     unfinished = (verdicts_json or {}).get("groups_not_completed") or []
     if unfinished:
