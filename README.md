@@ -47,7 +47,7 @@ positive control inside the same search, and all 99 plant and fungal records
 chased individually to **47 real genes, 52 fragmentary models and zero
 contaminants**. Census v5 is **17,882 records, 8,807 IP3 receptors across
 1,401 taxa** ([`results/s20_sweep/report.md`](results/s20_sweep/report.md)).
-The next session runs **S23**, taking those absences to genome level.
+The next session finishes **S20b** — two long iterated searches left running — and then runs **S23**, taking those absences to genome level.
 
 ---
 
@@ -159,7 +159,8 @@ One task per session. Full ledger with dependencies and results in
 | S4 | Genome scope manifest (the denominator) | ✅ completed 2026-09-04 |
 | S5a | Genomic sweep: bait panel, calibrated pipeline, pilot | ✅ completed 2026-09-04 |
 | S5b | The full 309-genome sweep → ledger + census v4 | ✅ completed 2026-09-05 |
-| S20 | Non-vertebrate sweep — the family's true range | ✅ completed 2026-09-05 |
+| S20a | Non-vertebrate sweep — the family's true range | ✅ completed 2026-09-05 |
+| S20b | The two remaining per-group convergence runs | 🔄 in progress |
 | S23 | Invertebrate / protist / plant / fungal genome sweep | ⏳ pending |
 | S6 | Alignment upgrade (MAFFT L-INS-i + trimAl) | ⏳ pending |
 | S7 | ML phylogeny, rooted on RyR; which paralogs are sisters | ⏳ pending |

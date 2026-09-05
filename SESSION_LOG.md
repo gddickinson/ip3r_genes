@@ -1053,7 +1053,9 @@ architecture-level against 1 % of RYR calls.
   named in `jackhmmer_iteration_only_s20.tsv` rather than counted, and the
   report only calls them known decoys when their own protein names say so.
 
-**Next.** The two remaining jackhmmer runs (protista, metazoa) and
+**Ledger split (S20 → S20a / S20b).** Everything in S20's completion criteria is delivered, and both convergence runs the negative claims rest on are done. The other two are cost-bound rather than unfinished-in-principle: the per-round cost is the *alignment*, not the search, and it does not fall with more cores — a round over a group with thousands of included targets runs ~45-65 min whatever thread count this machine gives it, so protista needs ~5 h and the invertebrates ~8 h. Both were launched here and are still iterating; S20b collects them.
+
+**Next.** S20b (`s20_jackhmmer.py --all --parse-only` once the two logs exist, then re-render figures and report) and
 then S23, which S20 sharpens: the absences to take to genome level are
 Streptophyta, Dikarya, Glomeromycota/Mortierellomycota, Apicomplexa (0/60) and
 the *Cymbomonas* copy-number question.
