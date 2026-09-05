@@ -1,0 +1,17 @@
+{
+ "n_candidates": 99,
+ "tally": {
+  "Fungi/other_early_diverging/fragment": 10,
+  "Fungi/other_early_diverging/real_gene": 25,
+  "Viridiplantae/green_alga/fragment": 42,
+  "Viridiplantae/green_alga/real_gene": 22
+ },
+ "thresholds": {
+  "contaminant_pident": 95.0,
+  "contaminant_qcov": 0.5,
+  "outlier_pident": 80.0,
+  "min_profile_positions": 200,
+  "min_length_aa": 2000
+ },
+ "n_background": 1402
+}

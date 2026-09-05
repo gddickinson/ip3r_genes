@@ -1,0 +1,23 @@
+{
+ "n_records": 17882,
+ "n_novel_from_s20": 785,
+ "calls": {
+  "RYR": 8468,
+  "ITPR": 8809,
+  "unassigned": 605
+ },
+ "n_call_changes": 2,
+ "n_conflicts": 0,
+ "n_itpr": 8809,
+ "n_itpr_taxa": 1402,
+ "itpr_groups": {
+  "Metazoa (non-vertebrate)": 1860,
+  "Eukaryota (other)": 57,
+  "SAR": 610,
+  "Vertebrata": 6112,
+  "Fungi": 35,
+  "Discoba": 59,
+  "Viridiplantae": 64,
+  "Amoebozoa": 12
+ }
+}

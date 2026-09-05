@@ -1,0 +1,1532 @@
+Proteome Id	Organism	Organism Id	Protein count
+UP000002311	Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast)	559292	6067
+UP000002485	Schizosaccharomyces pombe (strain 972 / ATCC 24843) (Fission yeast)	284812	5130
+UP000000559	Candida albicans (strain SC5314 / ATCC MYA-2876) (Yeast)	237561	6041
+UP000000267	Vanderwaltozyma polyspora (strain ATCC 22028 / DSM 70294 / BCRC 21397 / CBS 2163 / NBRC 10782 / NRRL Y-8283 / UCD 57-17) (Kluyveromyces polysporus)	436907	5353
+UP000000314	Komagataella phaffii (strain GS115 / ATCC 20864) (Yeast) (Pichia pastoris)	644223	5075
+UP000000560	Emericella nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139) (Aspergillus nidulans)	227321	10561
+UP000000561	Mycosarcoma maydis (Corn smut fungus) (Ustilago maydis)	5270	6805
+UP000000591	Eremothecium gossypii (strain ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL Y-1056) (Yeast) (Ashbya gossypii)	284811	4760
+UP000000598	Kluyveromyces lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 / WM37) (Yeast) (Candida sphaerica)	284590	5071
+UP000000599	Debaryomyces hansenii (strain ATCC 36239 / CBS 767 / BCRC 21394 / JCM 1990 / NBRC 0083 / IGC 2968) (Yeast) (Torulaspora hansenii)	284592	6284
+UP000000689	Naumovozyma dairenensis (strain ATCC 10597 / BCRC 20456 / CBS 421 / NBRC 0211 / NRRL Y-12639) (Saccharomyces dairenensis)	1071378	5523
+UP000000707	Candida tenuis (strain ATCC 10573 / BCRC 21748 / CBS 615 / JCM 9827 / NBRC 10315 / NRRL Y-1498 / VKM Y-70) (Yeast) (Yamadazyma tenuis)	590646	6051
+UP000000709	Spathaspora passalidarum (strain NRRL Y-27907 / 11-Y1)	619300	5973
+UP000000724	Penicillium rubens (strain ATCC 28089 / DSM 1075 / NRRL 1951 / Wisconsin 54-1255) (Penicillium chrysogenum)	500485	12788
+UP000000819	Encephalitozoon cuniculi (strain GB-M1) (Microsporidian parasite)	284813	2041
+UP000001056	Chaetomium globosum (strain ATCC 6205 / CBS 148.51 / DSM 1962 / NBRC 6347 / NRRL 1970) (Soil fungus)	306901	11036
+UP000001067	Pyrenophora teres f. teres (strain 0-1) (Barley net blotch fungus) (Drechslera teres f. teres)	861557	11705
+UP000001072	Melampsora larici-populina (strain 98AG31 / pathotype 3-4-7) (Poplar leaf rust fungus)	747676	16237
+UP000001197	Podospora anserina (strain S / ATCC MYA-4624 / DSM 980 / FGSC 10383) (Pleurage anserina)	515849	10657
+UP000001261	Coccidioides immitis (strain RS) (Valley fever fungus)	246410	9712
+UP000001294	Talaromyces marneffei (strain ATCC 18224 / CBS 334.59 / QM 7333) (Penicillium marneffei)	441960	10448
+UP000001300	Yarrowia lipolytica (strain CLIB 122 / E 150) (Yeast) (Candida lipolytica)	284591	6454
+UP000001312	Sclerotinia sclerotiorum (strain ATCC 18683 / 1980 / Ss-1) (White mold) (Whetzelinia sclerotiorum)	665079	14445
+UP000001429	Candida albicans (strain WO-1) (Yeast)	294748	5742
+UP000001610	Cordyceps militaris (strain CM01) (Caterpillar fungus)	983644	9651
+UP000001628	Paracoccidioides brasiliensis (strain Pb18)	502780	8399
+UP000001631	Ajellomyces capsulatus (strain G186AR / H82 / ATCC MYA-2454 / RMSCC 2432) (Darling's disease fungus) (Histoplasma capsulatum)	447093	9214
+UP000001640	Naumovozyma castellii (Yeast) (Saccharomyces castellii)	27288	5565
+UP000001699	Aspergillus fumigatus (strain CBS 144.89 / FGSC A1163 / CEA10) (Neosartorya fumigata)	451804	9942
+UP000001744	Schizosaccharomyces japonicus (strain yFS275 / FY16936) (Fission yeast)	402676	4862
+UP000001745	Talaromyces stipitatus (strain ATCC 10500 / CBS 375.48 / QM 6759 / NRRL 1006) (Penicillium stipitatum)	441959	13021
+UP000001798	Botrytis cinerea (strain B05.10) (Noble rot fungus) (Botryotinia fuckeliana)	332648	13036
+UP000001805	Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987)	367110	10255
+UP000001861	Coprinopsis cinerea (strain Okayama-7 / 130 / ATCC MYA-4618 / FGSC 9003) (Inky cap fungus) (Hormographiella aspergillata)	240176	13335
+UP000001881	Sordaria macrospora (strain ATCC MYA-333 / DSM 997 / K(L3346) / K-hell)	771870	9890
+UP000001996	Lodderomyces elongisporus (strain ATCC 11503 / CBS 2605 / JCM 1781 / NBRC 1676 / NRRL YB-4239) (Yeast) (Saccharomyces elongisporus)	379508	5779
+UP000001997	Meyerozyma guilliermondii (strain ATCC 6260 / CBS 566 / DSM 6381 / JCM 1539 / NBRC 10279 / NRRL Y-324) (Yeast) (Candida guilliermondii)	294746	5919
+UP000002035	Arthroderma otae (strain ATCC MYA-4605 / CBS 113480) (Microsporum canis)	554155	8764
+UP000002036	Lachancea thermotolerans (strain ATCC 56472 / CBS 6340 / NRRL Y-8284) (Yeast) (Kluyveromyces thermotolerans)	559295	5093
+UP000002037	Candida tropicalis (strain ATCC MYA-3404 / T1) (Yeast)	294747	6226
+UP000002038	Blastomyces gilchristii (strain SLH14081) (Blastomyces dermatitidis)	559298	10303
+UP000002039	Ajellomyces dermatitidis (strain ER-3 / ATCC MYA-2586) (Blastomyces dermatitidis)	559297	10398
+UP000002058	Uncinocarpus reesii (strain UAMH 1704) (Gymnoascus siglerae)	336963	7760
+UP000002059	Paracoccidioides lutzii (strain ATCC MYA-826 / Pb01) (Paracoccidioides brasiliensis)	502779	8811
+UP000002149	Cryptococcus deneoformans (strain JEC21 / ATCC MYA-565) (Cryptococcus neoformans var. neoformans serotype D)	214684	6740
+UP000002258	Scheffersomyces stipitis (strain ATCC 58785 / CBS 6054 / NBRC 10063 / NRRL Y-11545) (Yeast) (Pichia stipitis)	322104	5797
+UP000002313	Encephalitozoon intestinalis (strain ATCC 50506) (Microsporidian parasite) (Septata intestinalis)	876142	1934
+UP000002428	Candida glabrata (strain ATCC 2001 / BCRC 20586 / JCM 3761 / NBRC 0622 / NRRL Y-65 / CBS 138) (Yeast) (Nakaseomyces glabratus)	284593	5200
+UP000002498	Metarhizium robertsii (strain ARSEF 23 / ATCC MYA-3075) (Metarhizium anisopliae (strain ARSEF 23))	655844	11684
+UP000002499	Metarhizium acridum (strain CQMa 102)	655827	9830
+UP000002530	Aspergillus fumigatus (strain ATCC MYA-4609 / CBS 101355 / FGSC A1100 / Af293) (Neosartorya fumigata)	330879	9647
+UP000002605	Candida dubliniensis (strain CD36 / ATCC MYA-646 / CBS 7987 / NCPF 3949 / NRRL Y-17841) (Yeast)	573826	5829
+UP000002668	Leptosphaeria maculans (strain JN3 / isolate v23.1.3 / race Av1-4-5-6-7-8) (Blackleg fungus) (Phoma lingam)	985895	12608
+UP000002669	Arthroderma gypseum (strain ATCC MYA-4604 / CBS 118893) (Microsporum gypseum)	535722	8921
+UP000002753	Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) (Yeast)	226230	3745
+UP000002762	Beauveria bassiana (strain ARSEF 2860) (White muscardine disease fungus) (Tritirachium shiotae)	655819	10363
+UP000002866	Henningerozyma blattae (strain ATCC 34711 / CBS 6284 / DSM 70876 / NBRC 10599 / NRRL Y-10934 / UCD 77-7) (Yeast) (Tetrapisispora blattae)	1071380	5385
+UP000002872	Nematocida parisii (strain ERTm3) (Nematode killer fungus)	935791	2724
+UP000005018	Candida orthopsilosis (strain 90-125) (Yeast)	1136231	5676
+UP000005220	Kazachstania africana (strain ATCC 22294 / BCRC 22015 / CBS 2517 / CECT 1963 / NBRC 1671 / NRRL Y-8276) (Yeast) (Kluyveromyces africanus)	1071382	5354
+UP000005221	Candida parapsilosis (strain CDC 317 / ATCC MYA-4646) (Yeast) (Monilia parapsilosis)	578454	5777
+UP000005222	Pichia sorbitophila (strain ATCC MYA-4447 / BCRC 22081 / CBS 7064 / NBRC 10061 / NRRL Y-12695) (Hybrid yeast)	559304	8826
+UP000005240	Puccinia triticina (isolate 1-1 / race 1 (BBBD)) (Brown leaf rust fungus)	630390	15356
+UP000005242	Wallemia mellicola (strain ATCC MYA-4683 / CBS 633.66) (Wallemia sebi (CBS 633.66))	671144	5262
+UP000005426	Trichoderma atroviride (strain ATCC 20476 / IMI 206040) (Hypocrea atroviridis)	452589	11815
+UP000005446	Glarea lozoyensis (strain ATCC 74030 / MF5533)	1104152	7926
+UP000005627	Torulaspora delbrueckii (strain ATCC 10662 / CBS 1146 / NBRC 0425 / NCYC 2629 / NRRL Y-866) (Yeast) (Candida colliculosa)	1076872	4974
+UP000005666	Tetrapisispora phaffii (strain ATCC 24235 / CBS 4417 / NBRC 1672 / NRRL Y-8282 / UCD 70-5) (Yeast) (Fabospora phaffii)	1071381	5235
+UP000006039	Gaeumannomyces tritici (strain R3-111a-1) (Wheat and barley take-all root rot fungus) (Gaeumannomyces graminis var. tritici)	644352	14597
+UP000006174	Ustilago hordei (Barley covered smut fungus)	120017	7111
+UP000006310	Huiozyma naganishii (strain ATCC MYA-139 / BCRC 22969 / CBS 8797 / KCTC 17520 / NBRC 10181 / NCYC 3082 / Yp74L-3) (Yeast) (Kazachstania naganishii)	1071383	5301
+UP000006352	Fibroporia radiculosa	599839	9251
+UP000006564	Aspergillus oryzae (strain ATCC 42149 / RIB 40) (Yellow koji mold)	510516	12061
+UP000006701	Aspergillus clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 3887 / NRRL 1 / QM 1276 / 107)	344612	9120
+UP000006702	Aspergillus fischeri (strain ATCC 1020 / DSM 3700 / CBS 544.65 / FGSC A1164 / JCM 1740 / NRRL 181 / WB 181) (Neosartorya fischeri)	331117	10387
+UP000006706	Aspergillus niger (strain ATCC MYA-4892 / CBS 513.88 / FGSC A1513)	425011	14085
+UP000006753	Marssonina brunnea f. sp. multigermtubi (strain MB_m1) (Marssonina leaf spot fungus)	1072389	10037
+UP000006757	Trichosporon asahii var. asahii (strain CBS 8904) (Yeast)	1220162	8515
+UP000006790	Eremothecium cymbalariae (strain CBS 270.75 / DBVPG 7215 / KCTC 17166 / NRRL Y-17582) (Yeast)	931890	4429
+UP000006853	Komagataella phaffii (strain ATCC 76273 / CBS 7435 / CECT 11047 / NRRL Y-11430 / Wegner 21-1) (Yeast) (Pichia pastoris)	981350	5284
+UP000006911	Tuber melanosporum (strain Mel28) (Perigord black truffle)	656061	7494
+UP000006968	Saccharomyces arboricola (strain H-6 / AS 2.3317 / CBS 10644) (Yeast)	1160507	3653
+UP000007115	Hypocrea virens (strain Gv29-8 / FGSC 10586) (Gliocladium virens) (Trichoderma virens)	413071	12389
+UP000007148	Serendipita indica (strain DSM 11827) (Root endophyte fungus) (Piriformospora indica)	1109443	11780
+UP000007241	Batrachochytrium dendrobatidis (strain JAM81 / FGSC 10211) (Frog chytrid fungus)	684364	8610
+UP000007304	Exophiala dermatitidis (strain ATCC 34100 / CBS 525.76 / NIH/UT8656) (Black yeast) (Wangiella dermatitidis)	858893	9391
+UP000007322	Thermothelomyces thermophilus (strain ATCC 42464 / BCRC 31852 / DSM 1799) (Sporotrichum thermophile)	573729	9079
+UP000007703	Clavispora lusitaniae (strain ATCC 42720) (Yeast) (Candida lusitaniae)	306902	5932
+UP000007796	Grosmannia clavigera (strain kw1407 / UAMH 11150) (Blue stain fungus) (Graphiocladiella clavigera)	655863	8311
+UP000007805	Cryptococcus gattii serotype B (strain WM276 / ATCC MYA-4071) (Filobasidiella gattii) (Cryptococcus bacillisporus)	367775	6560
+UP000008062	Zymoseptoria tritici (strain CBS 115943 / IPO323) (Speckled leaf blotch fungus) (Septoria tritici)	336722	10951
+UP000008063	Serpula lacrymans var. lacrymans (strain S7.3) (Dry rot fungus)	936435	14339
+UP000008065	Neurospora tetrasperma (strain FGSC 2508 / ATCC MYA-4615 / P0657)	510951	10378
+UP000008066	Thermochaetoides thermophila (strain DSM 1495 / CBS 144.50 / DAOM 24625 / IMI 039719) (Chaetomium thermophilum)	759272	7186
+UP000008181	Thermothielavioides terrestris (strain ATCC 38088 / NRRL 8126) (Thielavia terrestris)	578455	9760
+UP000008335	Saccharomyces cerevisiae (strain RM11-1a) (Baker's yeast)	285006	5357
+UP000008370	Phanerochaete carnosa (strain HHB-10118-sp) (White-rot fungus) (Peniophora carnosa)	650164	13867
+UP000008383	Trichophyton verrucosum (strain HKI 0517)	663202	8028
+UP000008493	Agaricus bisporus var. burnettii (strain JB137-S8 / ATCC MYA-4627 / FGSC 10392) (White button mushroom)	597362	11211
+UP000008536	Zygosaccharomyces rouxii (strain ATCC 2623 / CBS 732 / NBRC 1130 / NCYC 568 / NRRL Y-229)	559307	4987
+UP000008673	Ogataea parapolymorpha (strain ATCC 26012 / BCRC 20466 / JCM 22074 / NRRL Y-7560 / DL-1) (Yeast) (Hansenula polymorpha)	871575	5319
+UP000008698	Verticillium alfalfae (strain VaMs.102 / ATCC MYA-4576 / FGSC 10136) (Verticillium wilt of alfalfa) (Verticillium albo-atrum)	526221	10233
+UP000008782	Colletotrichum graminicola (strain M1.001 / M2 / FGSC 10212) (Maize anthracnose fungus) (Glomerella graminicola)	645133	12019
+UP000008783	Puccinia graminis f. sp. tritici (strain CRL 75-36-700-3 / race SCCL) (Black stem rust fungus)	418459	15808
+UP000008784	Arthrobotrys oligospora (strain ATCC 24927 / CBS 115.81 / DSM 1491) (Nematode-trapping fungus) (Didymozoophaga oligospora)	756982	11478
+UP000008837	Malassezia globosa (strain ATCC MYA-4612 / CBS 7966) (Dandruff-associated fungus)	425265	4271
+UP000008864	Trichophyton rubrum (strain ATCC MYA-4607 / CBS 118892) (Athlete's foot fungus)	559305	10005
+UP000008866	Arthroderma benhamiae (strain ATCC MYA-4681 / CBS 112371) (Trichophyton mentagrophytes)	663331	7976
+UP000008867	Sporisorium reilianum (strain SRZ2) (Maize head smut fungus)	999809	6673
+UP000008984	Trichoderma reesei (strain QM6a) (Filamentous fungus) (Hypocrea jecorina)	431241	9115
+UP000009009	Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) (Yeast)	1095631	9076
+UP000009058	Pyricularia oryzae (strain 70-15 / ATCC MYA-4617 / FGSC 8958) (Rice blast fungus) (Magnaporthe oryzae)	242507	12811
+UP000009096	Gibberella moniliformis (strain M3125 / FGSC 7600) (Maize ear and stalk rot fungus) (Fusarium verticillioides)	334819	17955
+UP000009131	Mixia osmundae (strain CBS 9802 / IAM 14324 / JCM 22182 / KY 12970)	764103	6725
+UP000009138	Rhizopus delemar (strain RA 99-880 / ATCC MYA-4621 / FGSC 9543 / NRRL 43880) (Mucormycosis agent) (Rhizopus arrhizus var. delemar)	246409	16971
+UP000009169	Trichophyton equinum (strain ATCC MYA-4606 / CBS 127.97) (Horse ringworm fungus)	559882	8676
+UP000009172	Trichophyton tonsurans (strain CBS 112818) (Scalp ringworm fungus)	647933	8520
+UP000009297	Histoplasma mississippiense (Darling's disease fungus)	2059318	9252
+UP000009328	Wickerhamomyces ciferrii (strain ATCC 14091 / BCRC 22168 / CBS 111 / JCM 3599 / NBRC 0793 / NRRL Y-1031 F-60-10) (Yeast) (Pichia ciferrii)	1206466	6698
+UP000009882	Penicillium digitatum (strain PHI26 / CECT 20796) (Green mold)	1170229	9101
+UP000010091	Cryptococcus neoformans (strain H99 / ATCC 208821 / CBS 10515 / FGSC 9487) (Cryptococcus neoformans var. grubii serotype A)	235443	7427
+UP000010094	Encephalitozoon romaleae (strain SJ-2008) (Microsporidian parasite)	1178016	1826
+UP000011064	Pseudogymnoascus destructans (strain ATCC MYA-4855 / 20631-21) (Bat white-nose syndrome fungus) (Geomyces destructans)	658429	9122
+UP000011081	Vavraia culicis subsp. floridensis (Microsporidian parasite) (Vavraia culicis (isolate floridensis))	948595	2768
+UP000011082	Vittaforma corneae (strain ATCC 50505) (Microsporidian parasite) (Nosema corneum)	993615	2236
+UP000011096	Colletotrichum fructicola (strain Nara gc5) (Anthracnose fungus) (Colletotrichum gloeosporioides (strain Nara gc5))	1213859	17182
+UP000011668	Thanatephorus cucumeris (strain AG1-IA) (Rice sheath blight fungus) (Rhizoctonia solani)	983506	10482
+UP000011715	Magnaporthiopsis poae (strain ATCC 64411 / 73-15) (Kentucky bluegrass fungus) (Magnaporthe poae)	644358	11303
+UP000011761	Baudoinia panamericana (strain UAMH 10762) (Angels' share fungus) (Baudoinia compniacensis (strain UAMH 10762))	717646	10508
+UP000011777	Candida maltosa (strain Xu316) (Yeast)	1245528	5976
+UP000011958	Pneumocystis murina (strain B123) (Mouse pneumocystis pneumonia agent) (Pneumocystis carinii f. sp. muris)	1069680	3635
+UP000012174	Eutypa lata (strain UCR-EL1) (Grapevine dieback disease fungus) (Eutypa armeniacae)	1287681	11684
+UP000012338	Cochliobolus heterostrophus (strain C4 / ATCC 48331 / race T) (Southern corn leaf blight fungus) (Bipolaris maydis)	665024	12705
+UP000013776	Taphrina deformans (strain PYCC 5710 / ATCC 11124 / CBS 356.35 / IMI 108563 / JCM 9778 / NBRC 8474) (Peach leaf curl fungus) (Lalaria deformans)	1097556	4659
+UP000014064	Wallemia ichthyophaga (strain EXF-994 / CBS 113033)	1299270	4836
+UP000014071	Pseudozyma hubeiensis (strain SY62) (Yeast)	1305764	7472
+UP000014074	Phaeoacremonium minimum (strain UCR-PA7) (Esca disease fungus) (Togninia minima)	1286976	8833
+UP000014254	Mucor circinelloides f. circinelloides (strain 1006PhL) (Mucormycosis agent) (Calyptromyces circinelloides)	1220926	12143
+UP000014480	Colletotrichum orbiculare (strain 104-T / ATCC 96160 / CBS 514.97 / LARS 414 / MAFF 240422) (Cucumber anthracnose fungus) (Colletotrichum lagenarium)	1213857	13227
+UP000014978	Spraguea lophii (strain 42_110) (Microsporidian parasite)	1358809	2499
+UP000015100	Dactylellina haptotyla (strain CBS 200.50) (Nematode-trapping fungus) (Monacrosporium haptotylum)	1284197	10959
+UP000015241	Fomitopsis schrenkii (Brown rot fungus)	2126942	13806
+UP000015441	Blumeria graminis f. sp. hordei (strain DH14) (Barley powdery mildew) (Oidium monilioides f. sp. hordei)	546991	6486
+UP000015464	Schizosaccharomyces cryophilus (strain OY26 / ATCC MYA-4695 / CBS 11777 / NBRC 106824 / NRRL Y48691) (Fission yeast)	653667	5150
+UP000016088	Schizosaccharomyces octosporus (strain yFS286) (Fission yeast) (Octosporomyces octosporus)	483514	4964
+UP000016800	Gibberella fujikuroi (strain CBS 195.34 / IMI 58289 / NRRL A-6831) (Bakanae and foot rot disease fungus) (Fusarium fujikuroi)	1279085	14792
+UP000016801	Claviceps purpurea (strain 20.1) (Ergot fungus) (Sphacelia segetum)	1111077	8814
+UP000016922	Glarea lozoyensis (strain ATCC 20868 / MF5171)	1116229	13082
+UP000016923	Ophiostoma piceae (strain UAMH 11346) (Sap stain fungus)	1262450	8878
+UP000016924	Coniosporium apollinis (strain CBS 100218) (Rock-inhabiting black yeast)	1168221	9306
+UP000016926	Rhodotorula toruloides (strain NP11) (Yeast) (Rhodosporidium toruloides)	1130832	8160
+UP000016929	Fusarium oxysporum f. sp. cubense (strain race 4) (Panama disease fungus)	2502994	14157
+UP000016930	Ceriporiopsis subvermispora (strain B) (White-rot fungus) (Gelatoporia subvermispora)	914234	12078
+UP000016931	Sphaerulina musiva (strain SO2202) (Poplar stem canker fungus) (Septoria musiva)	692275	10154
+UP000016932	Pseudocercospora fijiensis (strain CIRAD86) (Black leaf streak disease fungus) (Mycosphaerella fijiensis)	383855	13062
+UP000016933	Dothistroma septosporum (strain NZE10 / CBS 128990) (Red band needle blight fungus) (Mycosphaerella pini)	675120	12414
+UP000016934	Cochliobolus sativus (strain ND90Pr / ATCC 201652) (Common root rot and spot blotch fungus) (Bipolaris sorokiniana)	665912	12174
+UP000016935	Exserohilum turcicum (strain 28A) (Northern leaf blight fungus) (Setosphaeria turcica)	671987	11687
+UP000016936	Cochliobolus heterostrophus (strain C5 / ATCC 48332 / race O) (Southern corn leaf blight fungus) (Bipolaris maydis)	701091	12857
+UP000017200	Microbotryum lychnidis-dioicae (strain p1A1 Lamole / MvSl-1064) (Anther smut fungus)	683840	7656
+UP000017559	Moniliophthora roreri (strain MCA 2997) (Cocoa frosty pod rot fungus) (Crinipellis roreri)	1381753	17907
+UP000018001	Paecilomyces variotii (strain NBRC 109023 / No. 5) (Byssochlamys spectabilis)	1356009	8877
+UP000018087	Sporothrix schenckii (strain ATCC 58251 / de Perez 2211183) (Rose-picker's disease fungus)	1391915	8673
+UP000018144	Pyronema omphalodes (strain CBS 100304) (Pyronema confluens)	1076935	13306
+UP000019373	Endocarpon pusillum (strain Z07020 / HMAS-L-300199) (Lichen-forming fungus)	1263415	9228
+UP000019375	Zygosaccharomyces bailii (strain CLIB 213 / ATCC 58445 / CBS 680 / BCRC 21525 / NBRC 1098 / NCYC 1416 / NRRL Y-2227)	1333698	4722
+UP000019376	Penicillium oxalicum (strain 114-2 / CGMCC 5302) (Penicillium decumbens)	933388	9977
+UP000019377	Kalmanozyma brasiliensis (strain GHG001) (Yeast) (Pseudozyma brasiliensis)	1365824	5650
+UP000019384	Kuraishia capsulata CBS 1993	1382522	6027
+UP000019462	Moesziomyces aphidis (Pseudozyma aphidis)	84754	6011
+UP000019471	Cladophialophora psammophila CBS 110553	1182543	13417
+UP000019473	Cladophialophora yegresii CBS 114405	1182544	10118
+UP000019478	Capronia epimyces CBS 606.96	1182542	10469
+UP000019484	Capronia coronata CBS 617.96	1182541	9230
+UP000019487	Sclerotinia borealis (strain F-4128)	1432307	10165
+UP000019804	Aspergillus ruber (strain CBS 135680)	1388766	10054
+UP000020467	Colletotrichum fioriniae PJ7	1445577	13759
+UP000023623	Trichophyton soudanense CBS 452.61	1215331	10303
+UP000024533	Trichophyton interdigitale (strain MR816)	1215338	8217
+UP000024837	Drechslerella stenobrocha 248	1043628	5595
+UP000027002	Ustilaginoidea virens (Rice false smut fungus) (Villosiclava virens)	1159556	8297
+UP000027195	Botryobasidium botryosum (strain FD-172 SS1)	930990	16484
+UP000027222	Galerina marginata (strain CBS 339.88)	685588	21357
+UP000027238	Colletotrichum sublineola (Sorghum anthracnose fungus)	1173701	12697
+UP000027265	Jaapia argillacea MUCL 33604	933084	16341
+UP000027361	Tilletiaria anomala (strain ATCC 24038 / CBS 436.72 / UBC 951)	1037660	6806
+UP000027456	Rhizoctonia solani 123E	1423351	10990
+UP000027586	Lichtheimia corymbifera JMRC:FSU:9682	1263082	13257
+UP000027730	Aureobasidium namibiae CBS 147.97	1043004	10258
+UP000027920	Exophiala aquamarina CBS 119918	1182545	13118
+UP000028045	Stachybotrys chartarum (strain CBS 109288 / IBT 7711) (Toxic black mold) (Stilbospora chartarum)	1280523	11510
+UP000028524	Stachybotrys chlorohalonatus (strain IBT 40285)	1283841	10676
+UP000028545	Pseudallescheria apiosperma (Scedosporium apiospermum)	563466	8375
+UP000029665	Pycnoporus cinnabarinus (Cinnabar-red polypore) (Trametes cinnabarina)	5643	10180
+UP000029725	Mitosporidium daphniae	1485682	3256
+UP000029964	Hapsidospora chrysogenum (strain ATCC 11550 / CBS 779.69 / DSM 880 / IAM 14645 / JCM 23072 / IMI 49137) (Acremonium chrysogenum)	857340	8900
+UP000030104	Penicillium italicum (Blue mold)	40296	9993
+UP000030143	Penicillium expansum (Blue mold rot fungus)	27334	11060
+UP000030641	Aureobasidium subglaciale (strain EXF-2481) (Aureobasidium pullulans var. subglaciale)	1043005	10792
+UP000030651	Pestalotiopsis fici (strain W106-1 / CGMCC3.15140)	1229662	15412
+UP000030653	Dacryopinax primogenitus (Brown rot fungus)	1858805	10233
+UP000030663	Fusarium oxysporum f. sp. raphani 54005	1089458	22754
+UP000030669	Gloeophyllum trabeum (strain ATCC 11539 / FP-39264 / Madison 617) (Brown rot fungus)	670483	11735
+UP000030671	Heterobasidion irregulare (strain TC 32-1)	747525	13159
+UP000030672	Aureobasidium melanogenum (strain CBS 110374) (Aureobasidium pullulans var. melanogenum)	1043003	10583
+UP000030686	Penicillium roqueforti (strain FM164)	1365484	12315
+UP000030706	Aureobasidium pullulans EXF-150	1043002	11844
+UP000030752	Cyphellophora europaea (strain CBS 101466) (Phialophora europaea)	1220924	11090
+UP000030755	Rozella allomycis (strain CSF55)	988480	6337
+UP000030816	Metarhizium album (strain ARSEF 1941)	1081103	8389
+UP000030854	Erysiphe necator (Grape powdery mildew) (Uncinula necator)	52586	6482
+UP000031056	Ordospora colligata OC4	1354746	1810
+UP000031186	Metarhizium anisopliae (strain ARSEF 549)	3151832	10855
+UP000031192	Metarhizium guizhouense (strain ARSEF 977)	1276136	11727
+UP000031516	Kluyveromyces dobzhanskii CBS 2104	1427455	4952
+UP000031575	Sporothrix brasiliensis 5110	1398154	9091
+UP000033140	Saitoella complicata (strain BCRC 22490 / CBS 7301 / JCM 7358 / NBRC 10748 / NRRL Y-17804)	698492	7118
+UP000033483	Thielaviopsis punctulata	72032	5254
+UP000033647	Zymoseptoria brevis	1047168	10566
+UP000034291	Aspergillus rambellii	308745	7761
+UP000034680	Diaporthe ampelina	1214573	10703
+UP000034841	Ceratocystis fimbriata f. sp. platani	88771	5620
+UP000034947	Aspergillus ochraceoroseus	138278	7828
+UP000036947	Tolypocladium ophioglossoides (strain CBS 100239) (Snaketongue truffleclub) (Elaphocordyceps ophioglossoides)	1163406	9303
+UP000037136	Ophiocordyceps unilateralis (Zombie-ant fungus) (Torrubia unilateralis)	268505	8572
+UP000037505	Aspergillus nomiae NRRL (strain ATCC 15546 / NRRL 13137 / CBS 260.88 / M93)	1509407	11916
+UP000037696	Penicillium nordicum	229535	12938
+UP000037751	Malassezia pachydermatis	77020	4201
+UP000037904	Fusarium langsethiae	179993	11939
+UP000038010	Cyphellophora attinorum	1664694	11848
+UP000039046	[Torrubiella] hemipterigena	1531966	11466
+UP000042958	Penicillium brasilianum	104259	11933
+UP000044602	Verticillium longisporum (Verticillium dahliae var. longisporum)	100787	20580
+UP000044841	Rhizoctonia solani	456999	11878
+UP000050424	Neonectria ditissima	78410	12683
+UP000053029	Fonsecaea pedrosoi CBS 271.37	1442368	12525
+UP000053095	Talaromyces pinophilus (Penicillium pinophilum)	128442	10883
+UP000053201	Spizellomyces punctatus (strain DAOM BR117)	645134	9267
+UP000053257	Phlebiopsis gigantea (strain 11061_1 CR5-6) (White-rot fungus) (Peniophora gigantea)	745531	11848
+UP000053259	Verruconis gallopava	253628	10768
+UP000053263	Plicaturopsis crispa FD-325 SS-3	944288	2710
+UP000053317	Phaeomoniella chlamydospora (Phaeoacremonium chlamydosporum)	158046	6907
+UP000053328	Exophiala spinifera	91928	12047
+UP000053342	Exophiala oligosperma	215243	12793
+UP000053392	Cryptococcus deuterogattii Ram5	1296110	6462
+UP000053411	Fonsecaea multimorphosa CBS 102226	1442371	12368
+UP000053424	Hebeloma cylindrosporum	76867	15327
+UP000053447	Pneumocystis jirovecii (strain RU7) (Human pneumocystis pneumonia agent)	1408657	3746
+UP000053475	Aspergillus ustus	40382	706
+UP000053477	Schizopora paradoxa	27342	17051
+UP000053558	Coniophora puteana (strain RWD-64-598) (Brown rot fungus)	741705	13735
+UP000053573	Blastomyces silverae	2060906	8561
+UP000053593	Collybiopsis luxurians FD-317 M1	944289	14588
+UP000053611	Cutaneotrichosporon oleaginosum	879819	8317
+UP000053617	Rhinocladiella mackenziei (strain CBS 650.93)	1442369	11378
+UP000053647	Paxillus involutus ATCC 200175	664439	11689
+UP000053732	Penicillium camemberti (strain FM 013)	1429867	14391
+UP000053758	Moesziomyces antarcticus (Yeast) (Pseudozyma antarctica)	84753	4672
+UP000053789	Cladophialophora bantiana (strain ATCC 10958 / CBS 173.52 / CDC B-1940 / NIH 8579) (Xylohypha bantiana)	1442370	12238
+UP000053800	Cryptococcus bacillisporus CA1873	1296111	6631
+UP000053815	Mucor ambiguus	91626	11311
+UP000053820	Hydnomerulius pinastri MD-312	994086	7783
+UP000053831	Escovopsis weberi	150374	6869
+UP000053841	Cochliobolus carbonum (strain 26-R-13) (Maize leaf spot fungus) (Bipolaris zeicola)	930089	12851
+UP000053890	Rhodotorula graminis (strain WP1)	578459	7228
+UP000053958	Rasamsonia emersonii (strain ATCC 16479 / CBS 393.64 / IMI 116815)	1408163	9842
+UP000053989	Scleroderma citrinum Foug A	1036808	20903
+UP000054007	Cylindrobasidium torrendii FP15055 ss-10	1314674	13901
+UP000054032	Bipolaris oryzae ATCC 44560	930090	12000
+UP000054097	Serendipita vermifera MAFF 305830	933852	15021
+UP000054107	Parasitella parasitica	35722	13357
+UP000054144	Fistulina hepatica ATCC 64428	1128425	9322
+UP000054166	Piloderma croceum (strain F 1598)	765440	21360
+UP000054196	Punctularia strigosozonata (strain HHB-11173) (White-rot fungus)	741275	2093
+UP000054248	Tulasnella calospora MUT 4182	1051891	19357
+UP000054251	Debaryomyces fabryi	58627	6022
+UP000054266	Phialophora macrospora	1851006	11503
+UP000054270	Hypholoma sublateritium (strain FD-334 SS-4)	945553	17638
+UP000054272	Cryptococcus gattii EJB2	1296103	6761
+UP000054302	Exophiala mesophila (Black yeast-like fungus)	212818	10000
+UP000054304	Lachancea lanzarotensis	1245769	5055
+UP000054321	Oidiodendron maius (strain Zn)	913774	16697
+UP000054337	Bipolaris victoriae (strain FI3) (Victoria blight of oats agent) (Cochliobolus victoriae)	930091	12702
+UP000054342	Exophiala xenobiotica	348802	12773
+UP000054350	Allomyces macrogynus (strain ATCC 38327) (Allomyces javanicus var. macrogynus)	578462	19092
+UP000054383	Talaromyces islandicus (Penicillium islandicum)	28573	9928
+UP000054399	Cryptococcus tetragattii IND107	1296105	6640
+UP000054454	Pneumocystis carinii (strain B80) (Rat pneumocystis pneumonia agent) (Pneumocystis carinii f. sp. carinii)	1408658	3641
+UP000054466	Cladophialophora immunda	569365	13606
+UP000054477	Laccaria amethystina LaAM-08-1	1095629	20893
+UP000054481	Hirsutella minnesotensis 3608	1043627	9072
+UP000054485	Suillus luteus UH-Slu-Lm8-n1	930992	18277
+UP000054516	Rosellinia necatrix (White root-rot fungus)	77044	12440
+UP000054524	Nematocida ausubeli (strain ATCC PRA-371 / ERTm2) (Nematode killer fungus)	1913371	2428
+UP000054544	Metarhizium anisopliae BRIP 53293	1291518	11404
+UP000054549	Amanita muscaria (strain Koide BX008)	946122	17954
+UP000054564	Puccinia striiformis f. sp. tritici PST-78	1165861	19932
+UP000054771	Aspergillus calidoustus	454130	15359
+UP000054821	Trichoderma gamsii	398673	11178
+UP000054845	Ceraceosorus bombacis	401625	8017
+UP000055045	Penicillium freii	48697	11722
+UP000059188	Thanatephorus cucumeris (strain AG1-IB / isolate 7/3/14) (Lettuce bottom rot fungus) (Rhizoctonia solani)	1108050	12613
+UP000070054	Colletotrichum nymphaeae SA-01	1460502	14402
+UP000070121	Colletotrichum salicis	1209931	13783
+UP000070133	Pseudocercospora eumusae	321146	11956
+UP000070168	Penicillium patulum (Penicillium griseofulvum)	5078	9628
+UP000070328	Colletotrichum simmondsii	703756	13884
+UP000070444	Conidiobolus coronatus (strain ATCC 28846 / CBS 209.66 / NRRL 28638) (Delacroixia coronata)	796925	10567
+UP000070501	Microdochium bolleyi	196109	13164
+UP000070544	Gonapodya prolifera (strain JEL478) (Monoblepharis prolifera)	1344416	13801
+UP000070700	Mollisia scopiformis (Conifer needle endophyte fungus) (Phialocephala scopiformis)	149040	18561
+UP000070720	Gibberella zeae (strain ATCC MYA-4620 / CBS 123657 / FGSC 9075 / NRRL 31084 / PH-1) (Wheat head blight fungus) (Fusarium graminearum)	229533	14147
+UP000073492	Pseudocercospora musae	113226	11907
+UP000076154	Hypsizygus marmoreus (White beech mushroom) (Agaricus marmoreus)	39966	16572
+UP000076552	Colletotrichum tofieldiae	708197	12499
+UP000076584	Colletotrichum incanum (Soybean anthracnose fungus)	1573173	12796
+UP000076632	Xylona heveae (strain CBS 132557 / TC161)	1328760	8201
+UP000076722	Sistotremastrum niveocremeum HHB9708	1314777	13037
+UP000076727	Daedalea quercina L-15889	1314783	12170
+UP000076738	Calocera viscosa (strain TUFC12733)	1330018	12323
+UP000076744	Cordyceps fumosorosea (strain ARSEF 2679) (Isaria fumosorosea)	1081104	10050
+UP000076761	Neolentinus lepideus HHB14362 ss-1	1314782	13108
+UP000076798	Sistotremastrum suecicum HHB10207 ss-3	1314776	13633
+UP000076837	Didymella rabiei (Chickpea ascochyta blight fungus) (Mycosphaerella rabiei)	5454	10558
+UP000076842	Calocera cornea HHB12733	1353952	13078
+UP000076863	Beauveria brongniartii RCEF 3172	1081107	9594
+UP000076871	Laetiporus sulphureus 93-53	1314785	13712
+UP000076874	Niveomyces insectorum RCEF 264	1081102	9495
+UP000076881	Akanthomyces lecanii RCEF 1005	1081108	11019
+UP000077002	Fonsecaea monophora	254056	11984
+UP000077051	Mucor lusitanicus CBS 277.49	747725	11586
+UP000077069	Paraphaeosphaeria sporulosa	1460663	14732
+UP000077248	Alternaria alternata (Alternaria rot fungus) (Torula alternata)	5599	13463
+UP000077266	Exidia glandulosa HHB12029	1314781	26313
+UP000077315	Phycomyces blakesleeanus (strain ATCC 8743b / DSM 1359 / FGSC 10004 / NBRC 33097 / NRRL 1555)	763407	16155
+UP000077521	Tilletia indica	43049	9656
+UP000077684	Tilletia controversa (dwarf bunt fungus)	13291	9880
+UP000078113	Tilletia walkeri	117179	7880
+UP000078237	Madurella mycetomatis	100816	9733
+UP000078343	Fonsecaea erecta	1367422	12089
+UP000078512	Linnemannia elongata AG-77	1314771	14849
+UP000078544	Moelleriella libera RCEF 2490	1081109	8458
+UP000078561	Absidia glauca (Pin mould)	4829	14825
+UP000078576	Cytospora mali (Apple Valsa canker fungus) (Valsa mali)	578113	10741
+UP000078595	Kwoniella dejecticola CBS 10117	1296121	8630
+UP000091918	Emergomyces africanus	1955775	8745
+UP000091956	Pseudogymnoascus verrucosus	342668	10683
+UP000091967	Fusarium poae	36050	14048
+UP000092154	Rhizopogon vinicolor AM-OR11-026	1314800	14447
+UP000092321	Hanseniaspora valbyensis NRRL Y-1626	766949	4754
+UP000092555	Metschnikowia bicuspidata var. bicuspidata NRRL YB-4993	869754	5827
+UP000092583	Kwoniella mangroviensis CBS 10435	1331196	8428
+UP000092666	Kwoniella heveanensis BCC8398	1296120	7924
+UP000092730	Kwoniella bestiolae CBS 10118	1296100	9104
+UP000092993	Grifola frondosa (Maitake) (Polyporus frondosus)	5627	14985
+UP000093000	Choanephora cucurbitarum	101091	11924
+UP000094020	Kwoniella pini CBS 10737	1296096	7807
+UP000094043	Cryptococcus depauperatus CBS 7841	1295531	6334
+UP000094065	Cryptococcus amylolentus CBS 6039	1295533	9877
+UP000094112	Wickerhamomyces anomalus (strain ATCC 58044 / CBS 1984 / NCYC 433 / NRRL Y-366-8) (Yeast) (Hansenula anomala)	683960	6406
+UP000094236	Pachysolen tannophilus NRRL Y-2460	669874	5645
+UP000094285	Suhomyces tanzawaensis NRRL Y-17324	984487	5882
+UP000094336	Babjeviella inositovora NRRL Y-12698	984486	6394
+UP000094385	Lipomyces starkeyi NRRL Y-11557	675824	8136
+UP000094389	Cyberlindnera jadinii (strain ATCC 18201 / CBS 1600 / BCRC 20928 / JCM 3617 / NBRC 0987 / NRRL Y-1542) (Torula yeast) (Candida utilis)	983966	5994
+UP000094444	Diaporthe helianthi	158607	13137
+UP000094455	Pichia membranifaciens NRRL Y-2026	763406	5536
+UP000094526	Cladophialophora carrionii	86049	11181
+UP000094565	Komagataella pastoris (Yeast) (Pichia pastoris)	4922	5034
+UP000094569	Aspergillus cristatus (Chinese Fuzhuan brick tea-fermentation fungus) (Eurotium cristatum)	573508	10115
+UP000094801	[Candida] arabinofermentans NRRL YB-2248	983967	5827
+UP000094819	Cryptococcus wingfieldii CBS 7118	1295528	8085
+UP000095009	Nadsonia fulvescens var. elongata DSM 6958	857566	5636
+UP000095023	Tortispora caseinolytica NRRL Y-17796	767744	4657
+UP000095038	Ascoidea rubescens DSM 1968	1344418	6735
+UP000095085	Hyphopichia burtonii NRRL Y-1933	984485	5994
+UP000095358	Hanseniaspora uvarum (Yeast) (Kloeckera apiculata)	29833	4059
+UP000095605	Hanseniaspora opuntiae	211096	4166
+UP000095728	Hanseniaspora osmophila	56408	4653
+UP000176998	Colletotrichum orchidophilum	1209926	14495
+UP000177622	Penicillium arizonense	1835702	12121
+UP000177625	Rhynchosporium secalis (Barley scald fungus)	38038	13144
+UP000178129	Rhynchosporium graminicola	2792576	12208
+UP000178912	Rhynchosporium agropyri	914238	13667
+UP000179179	Aspergillus bombycis	109264	12265
+UP000182235	Emergomyces pasteurianus Ep9510	1447872	8944
+UP000182334	Sungouiella intermedia	45354	5921
+UP000182658	Coniochaeta ligniaria NRRL 30616	1408157	13658
+UP000183365	Hanseniaspora guilliermondii	56406	4070
+UP000183567	Rhizopogon vesiculosus	180088	14146
+UP000183809	Diplodia corticola	236234	10836
+UP000183971	Fusarium proliferatum (strain ET1) (Orchid endophyte fungus)	1227346	16122
+UP000184073	Aspergillus versicolor CBS 583.65	1036611	13222
+UP000184188	Penicilliopsis zonata CBS 506.65	1073090	9870
+UP000184255	Fusarium mangiferae (Mango malformation disease fungus)	192010	15798
+UP000184267	Trametes pubescens (White-rot fungus)	154538	14147
+UP000184300	Aspergillus glaucus CBS 516.65	1160497	11245
+UP000184304	Aspergillus tubingensis (strain CBS 134.48)	767770	12335
+UP000184330	Phialocephala subalpina	576137	20170
+UP000184356	Aspergillus sydowii CBS 593.65	1036612	13568
+UP000184383	Aspergillus wentii DTO 134E9	1073089	12389
+UP000184499	Aspergillus brasiliensis (strain CBS 101740 / IMI 381727 / IBT 21946)	767769	12982
+UP000184546	Aspergillus aculeatus (strain ATCC 16872 / CBS 172.66 / WB 5094)	690307	10843
+UP000185904	Fonsecaea nubica	856822	11681
+UP000185944	Nematocida displodere	1805483	2241
+UP000186136	Pichia membranifaciens	4926	4160
+UP000186303	Malassezia sympodialis (strain ATCC 42132) (Atopic eczema-associated yeast)	1230383	4501
+UP000186583	Colletotrichum chlorophyti	708187	10302
+UP000186594	Neolecta irregularis (strain DAH-3)	1198029	5551
+UP000186601	Hermanssonia centrifuga	98765	13628
+UP000186955	Penicillium subrubescens	1316194	14038
+UP000187283	Smittium culicis	133412	10832
+UP000187429	Smittium culicis	133412	10576
+UP000187455	Smittium mucronatum	133383	7962
+UP000188318	Aspergillus carbonarius (strain ITEM 5010)	602072	11037
+UP000188320	Zancudomyces culisetae (Gut fungus) (Smittium culisetae)	1213189	7387
+UP000188533	Lentinula edodes (Shiitake mushroom) (Lentinus edodes)	5353	12046
+UP000189513	Cyberlindnera fabianii (Yeast) (Hansenula fabianii)	36022	5507
+UP000189580	Sugiyamaella lignohabitans	796027	5131
+UP000189911	Lachancea nothofagi CBS 11611	1266666	5149
+UP000190274	Lachancea dasiensis	1072105	5089
+UP000190831	Lachancea fermentati (Zygosaccharomyces fermentati)	4955	5229
+UP000191004	Trichoderma guizhouense	1491466	11254
+UP000191024	Lachancea mirantina	1230905	5053
+UP000191144	Lachancea meyersii CBS 8951	1266667	4993
+UP000191285	Penicillium steckii	303698	10355
+UP000191342	Penicillium flavigenum	254877	10875
+UP000191408	Penicillium polonicum	60169	10627
+UP000191500	Penicillium coprophilum	36646	8993
+UP000191518	Penicillium vulpinum	29845	10245
+UP000191522	Penicillium decumbens	69771	7144
+UP000191612	Penicillium solitum	60172	11867
+UP000191672	Penicillium antarcticum	416450	11372
+UP000191691	Penicillium nalgiovense	60175	11728
+UP000192596	Cryoendolithus antarcticus	1507870	18598
+UP000192639	Enterospora canceri	1081671	2147
+UP000192927	Lasallia pustulata	136370	8267
+UP000193067	Trametes coccinea (strain BRFM310) (Pycnoporus coccineus)	1353009	12648
+UP000193144	Clohesyomyces aquaticus	1231657	15806
+UP000193218	Kockovaella imperatae	4999	7388
+UP000193240	Epicoccum nigrum (Soil fungus) (Epicoccum purpurascens)	105696	12021
+UP000193411	Catenaria anguillulae PL171	765915	12599
+UP000193467	Leucosporidium creatinivorum	106004	9828
+UP000193498	Basidiobolus meristosporus CBS 931.73	1314790	15513
+UP000193560	Absidia repens	90262	14767
+UP000193642	Rhizoclosmatium globosum	329046	16725
+UP000193648	Lobosporangium transversale	64571	11597
+UP000193685	Protomyces lactucae-debilis	2754530	6702
+UP000193689	Pseudomassariella vexata	1141098	12557
+UP000193719	Piromyces finnis	1754191	10787
+UP000193922	Linderina pennispora	61395	9274
+UP000193944	Anaeromyces robustus	1754192	12666
+UP000193986	Naematelia encephala	71784	7963
+UP000194127	Postia placenta MAD-698-R-SB12	670580	12517
+UP000194280	Hortaea werneckii EXF-2000	1157616	15464
+UP000196158	Maudiozyma saulgeensis	1789683	5290
+UP000198372	Microbotryum intermedium	269621	8013
+UP000199069	Rhodotorula toruloides (Yeast) (Rhodosporidium toruloides)	5286	7496
+UP000214365	Talaromyces atroroseus	1441469	9520
+UP000215127	Zymoseptoria tritici (strain ST99CH_3D7)	1276538	11722
+UP000215289	Aspergillus turcosus	1245748	9174
+UP000215305	Aspergillus thermomutatus (Neosartorya pseudofischeri)	41047	9702
+UP000217790	Armillaria gallica (Bulbous honey fungus) (Armillaria bulbosa)	47427	25522
+UP000218334	Armillaria solidipes	1076256	20715
+UP000218811	Wolfiporia cocos (strain MD-104) (Brown rot fungus)	742152	12196
+UP000219286	Trichoderma parareesei (Filamentous fungus)	858221	9061
+UP000219338	Armillaria ostoyae (Armillaria root rot fungus)	47428	22192
+UP000222788	Ceratocystis fimbriata CBS 114723	1035309	7264
+UP000223968	Helicocarpus griseus UAMH5409	1447875	10216
+UP000224080	Blastomyces parvus	2060905	8197
+UP000224634	Polytolypa hystricis (strain UAMH7299)	1447883	9934
+UP000224854	Ophiocordyceps australis	1399860	7986
+UP000225277	Ramularia collo-cygni	112498	11621
+UP000226031	[Emmonsia] crescens	73230	8899
+UP000226192	Ophiocordyceps australis	1399860	8168
+UP000226431	Ophiocordyceps camponoti-rufipedis	2004952	7618
+UP000230002	Ganoderma sinense ZZ0214-1	1077348	15394
+UP000230249	Candidozyma auris (Yeast) (Candida auris)	498019	5433
+UP000231358	Aspergillus arachidicola	656916	12090
+UP000232875	Malassezia vespertilionis	2020962	3791
+UP000233524	Lomentospora prolificans	41688	8533
+UP000234254	Aspergillus campestris (strain IBT 28561)	1392248	9702
+UP000234275	Aspergillus steynii IBT 23096	1392250	12965
+UP000234474	Aspergillus novofumigatus (strain IBT 16806)	1392255	11480
+UP000234585	Aspergillus candidus	41067	9639
+UP000235023	Aspergillus taichungensis	482145	9689
+UP000235371	Hyaloscypha bicolor E	1095630	18616
+UP000235388	Puccinia coronata f. sp. avenae	200324	25533
+UP000235672	Hyaloscypha hepaticicola	2082293	16778
+UP000235786	Hyaloscypha variabilis (strain UAMH 11265 / GT02V1 / F) (Meliniomyces variabilis)	1149755	20347
+UP000236544	Lachancea quebecensis	1654605	5071
+UP000236621	Tolypocladium capitatum	45235	7634
+UP000236664	Gibberella nygamai (Bean root rot disease fungus) (Fusarium nygamai)	42673	16018
+UP000237144	Rhodotorula taiwanensis	741276	7012
+UP000237438	Erysiphe pulchra	225359	6853
+UP000237481	Tolypocladium paradoxum	94208	8979
+UP000237631	Cercospora berteroae	357750	11903
+UP000238274	Puccinia striiformis	27350	14536
+UP000238350	Wickerhamiella sorbophila	45607	4707
+UP000239156	Puccinia striiformis	27350	14992
+UP000240493	Trichoderma asperellum (strain ATCC 204424 / CBS 433.97 / NBRC 101777)	1042311	12547
+UP000240760	Trichoderma longibrachiatum ATCC 18648	983965	10930
+UP000240830	Paramicrosporidium saccamoebae	1246581	3754
+UP000240883	Corynespora cassiicola Philippines	1448308	17125
+UP000241107	Candidozyma pseudohaemuli	418784	5132
+UP000241462	Coniella lustricola	2025994	11309
+UP000241546	Trichoderma citrinoviride	58853	9735
+UP000241587	Fusarium culmorum	5516	12360
+UP000241690	Trichoderma harzianum (strain CBS 226.95 / KCTC 16976) (Green mold) (Hypocrea lixii)	983964	14049
+UP000241818	Amorphotheca resinae ATCC 22711	857342	9640
+UP000242146	Hesseltinella vesiculosa	101127	11058
+UP000242180	Syncephalastrum racemosum (Filamentous fungus)	13706	11037
+UP000242254	Rhizopus microsporus ATCC 52813	1340429	10804
+UP000242287	Amanita thiersii Skay4041	703135	10343
+UP000242474	Coemansia reversa (strain ATCC 12441 / NRRL 1564)	763665	7317
+UP000242519	Diplocarpon coronariae	2795749	9355
+UP000242525	Geotrichum candidum (Oospora lactis) (Dipodascus geotrichum)	1173061	6774
+UP000242770	Sporisorium scitamineum	49012	7711
+UP000242791	Blastomyces percursus	1658174	10283
+UP000242875	Bifiguratus adelaidae	1938954	5718
+UP000242877	Ascosphaera apis ARSEF 7405	392613	6442
+UP000243052	Eremothecium sinecaudum	45286	4524
+UP000243081	Cordyceps confragosa (Lecanicillium lecanii)	2714763	8125
+UP000243308	Podila verticillata NRRL 6337	1069443	1514
+UP000243498	Metarhizium rileyi (Nomuraea rileyi)	1649241	8763
+UP000243515	Elaphomyces granulatus	519963	7169
+UP000243519	Trichophyton violaceum	34388	7035
+UP000243723	Elsinoe australis	40998	9222
+UP000243797	Sphaceloma murrayae	2082308	8255
+UP000243876	Sporidiobolus salmonicolor (Yeast-like fungus) (Sporobolomyces salmonicolor)	5005	4663
+UP000244309	Candidozyma haemuli	45357	5240
+UP000244406	Candidozyma duobushaemuli	1231522	5170
+UP000244722	Tuber borchii (White truffle)	42251	12324
+UP000244855	Periconia macrospinosa	97972	18722
+UP000245383	Smittium simulii	133385	6456
+UP000245591	Smittium angustum	133377	6707
+UP000245609	Smittium megazygosporum	133381	6835
+UP000245626	Violaceomyces palustris	1673888	8058
+UP000245699	Furculomyces boomerangus	61424	6645
+UP000245768	Acaromyces ingoldii	215250	8019
+UP000245771	Meira miltonrushii	1280837	7452
+UP000245783	Ceraceosorus guamensis	1522189	7822
+UP000245884	Jaminaea rosea	1569628	6858
+UP000245910	Fusarium venenatum	56646	13945
+UP000245942	Microstroma glucosiphilum	1684307	6679
+UP000245946	Tilletiopsis washingtonensis	58919	7007
+UP000246171	Aspergillus eucalypticola (strain CBS 122712 / IBT 29274)	1448314	11883
+UP000246702	Aspergillus sclerotioniger CBS 115572	1450535	12304
+UP000246740	Testicularia cyperi	1882483	7036
+UP000246991	Tuber magnatum (white Piedmont truffle)	42249	9390
+UP000247233	Aspergillus heteromorphus CBS 117.55	1448321	10837
+UP000247647	Aspergillus neoniger (strain CBS 115656)	1448310	11937
+UP000247702	Rhizophagus clarus	94130	27461
+UP000247810	Aspergillus ellipticus CBS 707.79	1448320	12861
+UP000248340	Aspergillus uvarum CBS 121591	1448315	12014
+UP000248349	Aspergillus saccharolyticus JOP 1030-1	1450539	10061
+UP000248405	Aspergillus vadensis (strain CBS 113365 / IMI 142717 / IBT 24658)	1448311	12060
+UP000248423	Aspergillus sclerotiicarbonarius (strain CBS 121057 / IBT 28362)	1448318	12562
+UP000248817	Aspergillus indologenus CBS 114.80	1450541	12161
+UP000248961	Aspergillus homomorphus (strain CBS 101889)	1450537	11360
+UP000249056	Monilinia fructigena	38457	10740
+UP000249057	Aspergillus brunneoviolaceus CBS 621.78	1450534	12073
+UP000249293	Pichia kudriavzevii (Yeast) (Issatchenkia orientalis)	4909	5146
+UP000249363	Talaromyces amestolkiae	1196081	10407
+UP000249402	Aspergillus ibericus CBS 121593	1448316	11680
+UP000249464	Microbotryum silenes-dioicae	796604	12674
+UP000249497	Aspergillus japonicus CBS 114.51	1448312	12019
+UP000249526	Aspergillus piperis CBS 112811	1448313	12061
+UP000249619	Stemphylium lycopersici (Tomato gray leaf spot disease fungus) (Thyrospora lycopersici)	183478	9079
+UP000249661	Aspergillus aculeatinus CBS 121060	1448322	12015
+UP000249723	Microbotryum saponariae	289078	10396
+UP000249748	Aspergillus costaricaensis CBS 115574	1448317	11865
+UP000249757	Pyrenophora tritici-repentis (Wheat tan spot fungus) (Drechslera tritici-repentis)	45151	13351
+UP000249789	Aspergillus fijiensis CBS 313.89	1448319	12018
+UP000249829	Aspergillus violaceofuscus (strain CBS 115571)	1450538	12074
+UP000250043	Obba rivulosa	1052685	13191
+UP000250078	Cenococcum geophilum 1.58	794803	1910
+UP000250140	Glonium stellatum	574774	14277
+UP000250266	Lepidopterella palustris CBS 459.81	1314670	13861
+UP000252139	Rhizopus azygosporus (Rhizopus microsporus var. azygosporus)	86630	15771
+UP000253153	Fusarium coffeatum	231269	11778
+UP000253472	Candida viswanathii	5486	10576
+UP000253551	Rhizopus stolonifer (Rhizopus nigricans)	4846	13951
+UP000253664	Ophiocordyceps polyrhachis-furcata BCC 54312	1330021	10104
+UP000253729	Aspergillus welwitschiae	1341132	13680
+UP000254866	Venustampulla echinocandica	2656787	10697
+UP000254937	Aspergillus phoenicis ATCC 13157	1353007	11665
+UP000256328	Coleophoma crateriformis	565419	13254
+UP000256645	Coleophoma cylindrospora	1849047	14176
+UP000256690	Aspergillus mulundensis	1810919	11569
+UP000256964	Lentinus brumalis	2498619	18174
+UP000258309	Scytalidium lignicola (Hyphomycete)	5539	12794
+UP000262825	Saccharomycodes ludwigii	36035	4013
+UP000265631	Fusarium flagelliforme	2675880	13039
+UP000265663	Pyrenophora seminiperda CCB06	1302712	8702
+UP000266152	Fusarium sporotrichioides	5514	11960
+UP000266188	Aspergillus sclerotialis	2070753	11306
+UP000266234	Fusarium longipes	694270	11420
+UP000266272	Trichoderma arundinaceum	490622	10471
+UP000267145	Verticillium nonalfalfae	1051616	9427
+UP000267251	Piptocephalis cylindrospora	1907219	4271
+UP000267821	Terfezia boudieri ATCC MYA-4762	1051890	12026
+UP000268093	Jimgerdemannia flammicorona	994334	13497
+UP000268162	Dimargaris cristalligena	215637	7376
+UP000268321	Australozyma monospora	3459182	4707
+UP000269721	Blyttiomyces helicus	388810	12137
+UP000269793	Malassezia restricta (strain ATCC 96810 / NBRC 103918 / CBS 7877) (Seborrheic dermatitis infection agent)	425264	4097
+UP000271241	Thamnocephalis sphaerospora	78915	6769
+UP000272025	Sodiomyces alkalinus (strain CBS 110278 / VKM F-3762 / F11) (Alkaliphilic filamentous fungus)	1314773	9397
+UP000274822	Jimgerdemannia flammicorona	994334	13695
+UP000274922	Caulochytrium protostelioides	1555241	6161
+UP000275078	Ascobolus immersus RN42	1160509	17778
+UP000275385	Coniochaeta pulveracea	177199	10012
+UP000276215	Choiromyces venosus 120613-1	1336337	17720
+UP000277212	Fusarium kuroshium	2010991	16484
+UP000277580	Morchella conica CCBAS932	1392247	11578
+UP000278143	Syncephalis pseudoplumigaleata	1712513	5997
+UP000279236	Apiotrichum porosum	105984	9145
+UP000279259	Saitozyma podzolica	1890683	10205
+UP000280685	Podospora comata	48703	10445
+UP000283090	Arthrobotrys flagrans (Nematode-trapping fungus) (Trichothecium flagrans)	97331	10325
+UP000283269	Psilocybe cyanescens	93625	15931
+UP000283383	Golovinomyces cichoracearum	62708	6757
+UP000283841	Paecilomyces variotii (Byssochlamys spectabilis)	264951	9264
+UP000283895	Cytospora schulzeri	448051	10560
+UP000284375	Cytospora chrysosperma (Cytospora canker fungus) (Sphaeria chrysosperma)	252740	9818
+UP000284706	Gymnopilus dilepis	231916	16218
+UP000284842	Panaeolus cyanescens	181874	13419
+UP000285146	Cytospora leucostoma	1230097	10071
+UP000286045	Xylaria grammica	363999	12125
+UP000286134	Erysiphe neolycopersici	212602	6847
+UP000286921	Aspergillus awamori (Black koji mold)	105351	11139
+UP000287124	Fusarium euwallaceae	1147111	17627
+UP000287144	Fusarium oligoseptatum	2604345	17739
+UP000287166	Sparassis crispa	139825	13078
+UP000287972	Fusarium floridanum	1325733	16761
+UP000288168	Fusarium duplospermum	1325734	16262
+UP000288429	Fusarium ambrosium	131363	17261
+UP000289152	Tremella mesenterica (Jelly fungus)	5217	8061
+UP000290288	Candolleomyces aberdarensis	2316362	14686
+UP000290900	Brettanomyces naardenensis (Yeast)	13370	5175
+UP000292082	Dichomitus squalens	114155	15221
+UP000292447	Metschnikowia aff. pulcherrima	2163413	5795
+UP000292702	Steccherinum ochraceum	92696	12246
+UP000293195	Alternaria tenuissima	119927	13806
+UP000293360	Monosporascus ibericus	155417	11059
+UP000293547	Alternaria gaisen	167740	13201
+UP000293823	Alternaria arborescens	156630	12852
+UP000294003	Monosporascus cannonballus	155416	10677
+UP000294933	Rickenella mellea	50990	17053
+UP000295083	Colletotrichum spinosum	1347390	12539
+UP000295604	Colletotrichum sidae	1347389	12442
+UP000295703	Colletotrichum trifolii	5466	12236
+UP000297229	Botrytis elliptica	278938	12555
+UP000297280	Botrytis porri	87229	11857
+UP000297299	Botryotinia calthae	38488	12263
+UP000297452	Botryotinia narcissicola	278944	12236
+UP000297527	Botryotinia convoluta	54673	12417
+UP000297716	Xylaria hypoxylon	37992	11037
+UP000297777	Botrytis tulipae	87230	12564
+UP000297814	Botrytis hyacinthi	278943	12130
+UP000297910	Botrytis paeoniae	278948	12045
+UP000298030	Coprinellus micaceus (Glistening ink-cap mushroom) (Coprinus micaceus)	71717	23011
+UP000298061	Hericium alpestre	135208	11000
+UP000298138	Ascodesmis nigricans	341454	9617
+UP000298327	Dentipellis fragilis	205917	11715
+UP000298493	Venturia nashicola	86259	11754
+UP000301737	Zygosaccharomyces mellis	42258	4737
+UP000305067	Pterulicium gracile	1884261	12852
+UP000305948	Heliocybe sulcata	5364	12554
+UP000306050	Sporisorium graminicola	280036	6585
+UP000307173	Pichia inconspicua	52247	5046
+UP000307440	Coprinopsis marcescibilis (Agaric fungus) (Psathyrella marcescibilis)	230819	14526
+UP000308092	Aspergillus tanneri	1220188	13554
+UP000308197	Polyporus arcularius HHB13444	1314778	17473
+UP000308199	Phellinidium pouzarii	167371	8697
+UP000308549	Salinomyces thailandicus	706561	8771
+UP000308652	Crucibulum laeve	68775	14180
+UP000308671	Botrytis galanthina	278940	12388
+UP000308730	Antrodiella citrinella	2447956	9798
+UP000308768	Cryomyces minteri	331657	13291
+UP000309038	Hermanssonia centrifuga	98765	8464
+UP000309340	Friedmanniomyces simplex	329884	13631
+UP000310108	Colletotrichum tanaceti	1306861	12168
+UP000310158	Bondarzewia mesenterica	1095465	10514
+UP000310189	Wallemia hederae	1540922	4107
+UP000311382	Rhodotorula diobovata	5288	7905
+UP000313359	Lentinus tigrinus ALCF2SS1-6	1328759	15512
+UP000315522	Lachnellula willkommii	215461	8978
+UP000315783	Cordyceps javanica	43265	11436
+UP000316270	Venturia effusa	50376	10819
+UP000317494	Synchytrium endobioticum	286115	7895
+UP000318582	Powellomyces hirtus	109895	6533
+UP000319160	Xylaria flabelliformis	2512241	11403
+UP000319257	Thyridium curvatum	1093900	12104
+UP000319663	Monascus purpureus (Red mold) (Monascus anka)	5098	8080
+UP000319731	Synchytrium microbalum	1806994	6304
+UP000320333	Chytriomyces confervae	246404	10661
+UP000320762	Schizophyllum amplum	97359	15404
+UP000322225	Kwoniella shandongensis	1734106	7347
+UP000322245	Cryptococcus floricola	2591691	8188
+UP000322873	Monilinia fructicola (Brown rot fungus) (Ciboria fructicola)	38448	13749
+UP000323386	Pseudozyma flocculosa	84751	7767
+UP000324022	Ustilago trichophora	86804	13002
+UP000324639	Blumeria graminis f. sp. tritici	62690	8255
+UP000324748	Puccinia graminis f. sp. tritici	56615	36348
+UP000325008	Moesziomyces antarcticus (Yeast) (Pseudozyma antarctica)	84753	7050
+UP000325395	Aspergillus pseudocaelatus	1825620	13895
+UP000325433	Aspergillus transmontanensis	1034304	14200
+UP000325579	Aspergillus pseudonomiae	1506151	13384
+UP000325672	Aspergillus pseudotamarii	132259	13426
+UP000325780	Aspergillus avenaceus	36643	11290
+UP000325902	Lasiodiplodia theobromae	45133	12895
+UP000325945	Aspergillus sergii	1034303	13713
+UP000326198	Aspergillus bertholletiae	1226010	12944
+UP000326268	Aspergillus caelatus	61420	13914
+UP000326289	Aspergillus minisclerotigenes	656917	13415
+UP000326340	Colletotrichum shisoi	2078593	11847
+UP000326532	Aspergillus parasiticus	5067	13769
+UP000326565	Aspergillus leporis	41062	12743
+UP000326757	Monilinia laxa (Brown rot fungus) (Sclerotinia laxa)	61186	12416
+UP000326799	Aspergillus novoparasiticus	986946	14181
+UP000326924	Sphaerosporella brunnea	1250544	12382
+UP000326950	Aspergillus tamarii	41984	13330
+UP000327118	Aspergillus coremiiformis	138285	9078
+UP000383932	Ceratobasidium theobromae	1582974	9256
+UP000398389	Magnusiomyces paraingens	2606893	6465
+UP000422736	Kluyveromyces marxianus (Yeast) (Candida kefyr)	4911	5070
+UP000431533	Lachnellula hyalina	1316788	9156
+UP000434172	Colletotrichum asianum	702518	17925
+UP000443090	Lachnellula occidentalis	215460	8908
+UP000449547	Diutina rugosa (Yeast) (Candida rugosa)	5481	5811
+UP000452235	Aspergillus terreus	33178	10118
+UP000462212	Lachnellula subtilissima	602034	8945
+UP000465220	Aspergillus lentulus	293939	10351
+UP000465266	Aspergillus udagawae	91492	10693
+UP000467700	Cyclocybe aegerita (Black poplar mushroom) (Agrocybe aegerita)	1973307	13316
+UP000469558	Lachnellula suecica	602035	10312
+UP000469559	Lachnellula arida	1316785	9593
+UP000473826	Vanrija humicola (Yeast) (Cryptococcus humicola)	5417	4373
+UP000478008	Dekkera bruxellensis (Brettanomyces custersii)	5007	4659
+UP000481288	Lachnellula cervina	1316786	9411
+UP000481858	Xylaria multiplex	323545	10963
+UP000481861	Massariosphaeria phaeospora	100035	14012
+UP000490939	Venturia inaequalis (Apple scab fungus)	5025	11755
+UP000501346	Saccharomyces pastorianus (Lager yeast) (Saccharomyces cerevisiae x Saccharomyces eubayanus)	27292	10697
+UP000503462	Peltaster fructicola	286661	8072
+UP000504636	Mytilinidion resinicola	574789	16739
+UP000504637	Dissoconium aciculare CBS 342.82	1314786	10290
+UP000504638	Eremomyces bilateralis CBS 781.70	1392243	9854
+UP000509510	Talaromyces rugulosus (Penicillium rugulosum)	121627	11830
+UP000509704	Zygotorulaspora mrakii (Zygosaccharomyces mrakii)	42260	5020
+UP000510647	Torulaspora globosa	48254	4924
+UP000510686	Metarhizium brunneum	500148	11401
+UP000515153	Pyricularia grisea (Crabgrass-specific blast fungus) (Magnaporthe grisea)	148305	12457
+UP000515788	Torulaspora globosa	48254	4918
+UP000518752	Collybiopsis confluens	2823264	14895
+UP000521872	Agrocybe pediades	84607	12863
+UP000521943	Ephemerocybe angulata	980116	25427
+UP000522262	Fusarium mexicanum	751941	14382
+UP000530670	Fusarium tjaetaba	1567544	14180
+UP000531561	Botrytis fragariae	1964551	12345
+UP000532311	Fusarium globosum	78864	14587
+UP000536711	Fusarium acutatum	78861	14072
+UP000537989	Fusarium austroamericanum	282268	11983
+UP000541154	Petromyces alliaceus (Aspergillus alliaceus)	209559	12705
+UP000541558	Ephemerocybe angulata	980116	14934
+UP000544095	Fusarium pseudoanthophilum	48495	14083
+UP000544331	Fusarium mundagurra	1567541	15662
+UP000546213	Fusarium pseudocircinatum	56676	14261
+UP000547976	Gibberella subglutinans (Fusarium subglutinans)	42677	14039
+UP000554235	Fusarium albosuccineum	1237068	17167
+UP000557566	Ophiocordyceps sinensis	72228	9923
+UP000559027	Leucocoprinus leucothites	201217	11472
+UP000559256	Tetrapyrgos nigripes	182062	18656
+UP000562682	Fusarium denticulatum	48507	14090
+UP000562929	Ophiocordyceps camponoti-floridani	2030778	7427
+UP000565441	Tricholomella constricta	117010	10525
+UP000566819	Cudoniella acicularis	354080	15764
+UP000567179	Psilocybe cf. subviscida	2480587	13652
+UP000567885	Fusarium heterosporum	42747	11330
+UP000572754	Fusarium circinatum (Pitch canker fungus) (Gibberella circinata)	48490	13897
+UP000572817	Botryosphaeria dothidea	55169	13104
+UP000573603	Fusarium anthophilum	48485	14795
+UP000574317	Fusarium napiforme	42672	13892
+UP000578531	Letharia columbiana	112416	13254
+UP000582016	Fusarium phyllophilum	47803	14159
+UP000593566	Letharia lupina	560253	11006
+UP000594364	Epichloe festucae (strain Fl1)	877507	7031
+UP000596276	Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / IAM 13836 / NRRL 3357 / JCM 12722 / SRRC 167)	332952	13728
+UP000596902	Alternaria burnsii	1187904	11309
+UP000603453	Mucor saturninus	64648	12977
+UP000604273	Fusarium gaditjirri	282569	13451
+UP000605846	Apophysomyces ossiformis	679940	9501
+UP000605986	Fusarium austroafricanum	2364996	14500
+UP000606974	Endocarpon pusillum	364733	12489
+UP000612746	Umbelopsis vinacea	44442	9235
+UP000613177	Thamnidium elegans	101142	9698
+UP000613401	Colletotrichum gloeosporioides (Anthracnose fungus) (Glomerella cingulata)	474922	15372
+UP000613580	Mycena chlorophos (Agaric fungus) (Agaricus chlorophos)	658473	13463
+UP000620104	Naganishia liquefaciens	104408	6879
+UP000620124	Mycena venus	2733690	24807
+UP000622797	Fusarium sarcochroum	1208366	14826
+UP000623467	Mycena sanguinolenta	230812	23955
+UP000623687	Pleurotus ostreatus (Oyster mushroom) (Agaricus ostreatus)	5322	11624
+UP000624404	Sclerotinia trifoliorum	28548	10617
+UP000630445	Aspergillus hiratsukae	1194566	9685
+UP000631181	Penicillium ucsense	2839758	8173
+UP000635477	Fusarium zealandicum	1053134	10733
+UP000636479	Mycena indigotica	2126181	13684
+UP000637239	Aspergillus chevalieri (Eurotium chevalieri)	182096	10232
+UP000639643	Colletotrichum musicola	2175873	16822
+UP000641853	Aspergillus felis	1287682	10242
+UP000644660	Maudiozyma barnettii	61262	5237
+UP000646827	Circinella minor	1195481	14115
+UP000649328	Metschnikowia pulcherrima (Yeast)	27326	6905
+UP000650833	Mucor plumbeus	97098	11657
+UP000651452	Ascochyta lentis	205686	11599
+UP000652219	Colletotrichum sojae	2175907	16124
+UP000653565	Aspergillus fumigatiaffinis	340414	10467
+UP000654370	Mortierella isabellina (Filamentous fungus) (Umbelopsis isabellina)	91625	9021
+UP000654913	Aspergillus puulaauensis	1220207	13616
+UP000654918	Colletotrichum plurivorum	2175906	16152
+UP000658997	Ustilago bromivora	307758	6051
+UP000660729	Pseudocercospora fuligena	685502	13738
+UP000661280	Aspergillus kawachii (White koji mold) (Aspergillus awamori var. kawachi)	1069201	12636
+UP000662569	Collybia sordida	123925	44
+UP000662931	Eeniella nana (Yeast) (Brettanomyces nanus)	13502	4703
+UP000663193	Phaeosphaeria nodorum (strain SN15 / ATCC MYA-4574 / FGSC 10173) (Glume blotch fungus) (Parastagonospora nodorum)	321614	17749
+UP000663699	Pneumocystis wakefieldiae	38082	3181
+UP000664032	Psilocybe cubensis (Psychedelic mushroom) (Stropharia cubensis)	181762	13113
+UP000664132	Cadophora malorum	108018	16399
+UP000664169	Gomphillus americanus	1940652	8300
+UP000664203	Alectoria fallacina	1903189	11126
+UP000664521	Heterodermia speciosa	116794	10570
+UP000664534	Imshaugia aleurites	172621	11111
+UP000669133	Candida metapsilosis	273372	5714
+UP000672032	Monilinia vaccinii-corymbosi	61207	9386
+UP000673691	Olpidium bornovanus	278681	8467
+UP000676310	Alternaria atra	119953	11938
+UP000683000	Boletus reticuloceps	495285	12954
+UP000694255	[Candida] subhashii	561895	6132
+UP000696280	Hymenoscyphus fraxineus	746836	13821
+UP000696485	Podila minutissima	64525	11340
+UP000696573	Clonostachys rhizophaga	160324	18835
+UP000697127	Pichia californica	460514	5369
+UP000697297	Ogataea haglerorum	1937702	5403
+UP000698800	Glutinoglossum americanum	1670608	7645
+UP000699042	Colletotrichum scovillei	1209932	15676
+UP000700596	Dendryphion nanum	256645	13872
+UP000701341	Penicillium crustosum (Blue mold fungus)	36656	10566
+UP000701801	Hymenoscyphus albidus	595503	13612
+UP000703269	Phanerochaete sordida	48140	17146
+UP000703661	Entomortierella chlamydospora	101097	11718
+UP000706124	Claviceps pazoutovae	1649127	7857
+UP000707071	Claviceps aff. purpurea	1967640	8194
+UP000707451	Linnemannia hyalina	64524	12531
+UP000710440	Aspergillus viridinutans	75553	10039
+UP000710849	Botrytis byssoidea	139641	12209
+UP000711996	Colletotrichum siamense (Anthracnose fungus)	690259	15043
+UP000714275	Suillus placidus	48579	14951
+UP000714618	Aureobasidium mustum	2773714	10231
+UP000716291	Rhizopus oryzae (Mucormycosis agent) (Rhizopus arrhizus var. delemar)	64495	15531
+UP000716446	Aureobasidium vineae	2773715	9680
+UP000717328	Sphagnurus paluster	117069	12256
+UP000717696	Dactylonectria estremocensis	1079267	19072
+UP000719766	Suillus plorans	116603	16092
+UP000720189	Fusarium redolens	48865	17005
+UP000722485	Cylindrodendrum hubeiense	595255	13744
+UP000723463	Mortierella hygrophila	979708	12181
+UP000724584	Chaetomium tenue	1854479	11568
+UP000724874	Gymnopilus junonius (Spectacular rustgill mushroom) (Gymnopilus spectabilis subsp. junonius)	109634	16328
+UP000726737	Mortierella polycephala	41804	10180
+UP000729357	Aureobasidium melanogenum (Aureobasidium pullulans var. melanogenum)	46634	22224
+UP000730481	Fusarium beomiforme	44412	14518
+UP000732380	Claviceps humidiphila	1294629	8318
+UP000736335	Thelephora terrestris	56493	13184
+UP000736672	Fusarium solani (Filamentous fungus)	169388	17641
+UP000737391	Fusarium agapanthi	1803897	13309
+UP000738325	Dissophora globulifera	979702	10385
+UP000738349	Dactylonectria macrodidyma	307937	21132
+UP000738359	Mortierella alpina (Oleaginous fungus) (Mortierella renispora)	64518	10605
+UP000740883	Nosema granulosis	83296	3639
+UP000740926	Rhizopus delemar	936053	18650
+UP000742024	Claviceps arundinis	1623583	8116
+UP000742417	Candida africana	241526	2850
+UP000744676	Geotrichum galactomycetum	27317	4730
+UP000745764	Aureobasidium uvarum	2773716	9771
+UP000748025	Claviceps pusilla	123648	8618
+UP000748756	Linnemannia schmuckeri	64567	12054
+UP000749293	Geosmithia morbida	1094350	7805
+UP000749646	Modicella reniformis	1440133	12893
+UP000750334	Maudiozyma exigua (Yeast) (Kazachstania exigua)	34358	5380
+UP000750502	Fusarium xylarioides	221167	14677
+UP000750711	Trichoglossum hirsutum	265104	8948
+UP000754883	Clonostachys byssicola	160290	18485
+UP000756132	Fulvia fulva (Tomato leaf mold) (Passalora fulva)	5499	14687
+UP000756346	Microdochium trichocladiopsis	1682393	15903
+UP000756921	Paraphaeosphaeria minitans	565426	13540
+UP000757232	Sanghuangporus baumii (Phellinus baumii)	108892	8445
+UP000758155	Didymella heteroderae	1769908	11640
+UP000758603	Truncatella angustata	152316	14769
+UP000759537	Russula ochroleuca	152965	11812
+UP000761534	Trichomonascus ciferrii	44093	6902
+UP000764110	Metarhizium humberi	2596975	10545
+UP000766486	Bionectria ochroleuca (Gliocladium roseum)	29856	18204
+UP000768646	Pneumocystis oryctolagi	42067	2856
+UP000769157	Ogataea philodendri	1378263	7446
+UP000769528	Wickerhamomyces mucosus	1378264	5967
+UP000770015	Plectosphaerella plurivora	936078	12431
+UP000772434	Rhodocollybia butyracea	206335	22626
+UP000774326	Wickerhamomyces pijperi (Yeast) (Pichia pijperi)	599730	10143
+UP000774617	Macrophomina phaseolina (Charcoal rot fungus) (Macrophoma phaseolina)	35725	14827
+UP000775547	Asterophora parasitica	117018	9415
+UP000775872	Clonostachys solani	160281	18026
+UP000777438	Thelonectria olida	1576542	16586
+UP000777482	Rhodotorula mucilaginosa (Yeast) (Rhodotorula rubra)	5537	7020
+UP000780801	Lunasporangiospora selenospora	979761	10949
+UP000781932	Colletotrichum karsti	1095194	13328
+UP000782241	Fusarium avenaceum	40199	11232
+UP000783213	Botrytis deweyae	2478750	12473
+UP000785200	Hyphodiscus hymeniophilus	353542	8215
+UP000788993	Ogataea polymorpha	460523	6801
+UP000789572	Paraglomus occultum	144539	11373
+UP000789739	Paraglomus brasilianum	144538	11837
+UP000789831	Ambispora gerdemannii	144530	13681
+UP000790377	Hygrophoropsis aurantiaca	72124	14072
+UP000790709	Leucogyrophana mollusca	85980	14607
+UP000790833	Scheffersomyces spartinae	45513	5041
+UP000799291	Lentithecium fluviatile CBS 122367	1168545	16710
+UP000799302	Microthyrium microscopicum	703497	12491
+UP000799324	Lophiostoma macrostomum CBS 122681	1314788	16140
+UP000799421	Piedraia hortae CBS 480.64	1314780	7550
+UP000799423	Plenodomus tracheiphilus IPT5	1408161	13190
+UP000799424	Ophiobolus disseminans	1469910	16026
+UP000799428	Pleomassaria siparia CBS 279.74	1314801	13452
+UP000799429	Patellaria atrata CBS 101060	1346257	9745
+UP000799436	Teratosphaeria nubilosa	161662	10998
+UP000799437	Pseudovirgaria hyperparasitica	470096	11212
+UP000799438	Aplosporella prunicola CBS 121167	1176127	12493
+UP000799439	Myriangium duriaei CBS 260.36	1168546	10674
+UP000799440	Sporormia fimetaria CBS 119925	1340428	10772
+UP000799441	Polychaeton citri CBS 116435	1314669	10579
+UP000799444	Polyplosphaeria fusca	682080	15190
+UP000799536	Delitschia confertaspora ATCC 74209	1513339	10166
+UP000799537	Zasmidium cellare ATCC 36951	1080233	16014
+UP000799538	Elsinoe ampelina	302913	10204
+UP000799539	Cercospora zeae-maydis SCOH1-5	717836	12005
+UP000799640	Trichodelitschia bisporula	703511	10177
+UP000799750	Lophium mytilinum	390894	15150
+UP000799753	Massarina eburnea CBS 473.64	1395130	12931
+UP000799754	Macroventuria anomochaeta	301207	12954
+UP000799755	Lindgomyces ingoldianus	673940	15954
+UP000799757	Melanomma pulvis-pyrius CBS 109.77	1314802	15833
+UP000799764	Karstenula rhodostoma CBS 690.94	1392251	15037
+UP000799766	Lineolata rhizophorae	578093	10220
+UP000799767	Neohortaea acidophila	245834	9823
+UP000799770	Lophiotrema nucula	690887	18116
+UP000799771	Dothidotthia symphoricarpi CBS 119687	1392245	11786
+UP000799772	Rhizodiscina lignyota	1504668	12801
+UP000799776	Saccharata proteae CBS 121410	1314787	9222
+UP000799777	Setomelanomma holmii	210430	14385
+UP000799778	Aaosphaeria arxii CBS 175.79	1450172	14198
+UP000799779	Amniculicola lignicola CBS 123094	1392246	15571
+UP000800035	Byssothecium circinans	147558	15612
+UP000800036	Bimuria novae-zelandiae CBS 107.79	1447943	16571
+UP000800038	Clathrospora elynae	706981	13560
+UP000800039	Cucurbitaria berberidis CBS 394.84	1168544	12428
+UP000800040	Decorospora gaudefroyi	184978	11811
+UP000800041	Aulographum hederae CBS 113979	1176131	12052
+UP000800082	Didymella exigua CBS 183.55	1150837	12355
+UP000800092	Viridothelium virens (Speckled blister lichen) (Trypethelium virens)	1048519	11845
+UP000800093	Lojkania enalia	147567	13746
+UP000800094	Trematosphaeria pertusa	390896	17304
+UP000800096	Ampelomyces quisqualis (Powdery mildew agent)	50730	11147
+UP000800097	Westerdykella ornata	318751	10407
+UP000800200	Zopfia rhizophila CBS 207.26	1314779	21463
+UP000800235	Tothia fuscella	1048955	13684
+UP000801428	Curvularia kusanoi (Cochliobolus kusanoi)	90978	11490
+UP000801864	Trichoderma lentiforme	1567552	12977
+UP000803844	Cryphonectria parasitica (strain ATCC 38755 / EP155)	660469	11639
+UP000803884	Cladosporium halotolerans	1052096	9709
+UP000805649	Colletotrichum truncatum (Anthracnose fungus) (Colletotrichum capsici)	5467	15830
+UP000807025	Pleurotus eryngii (Boletus of the steppes)	5323	15897
+UP000807306	Crepidotus variabilis	179855	14534
+UP000807342	Macrolepiota fuliginosa MF-IS2	1400762	15707
+UP000807353	Collybia nuda	64659	14792
+UP000807469	Pholiota conissans	109636	16576
+UP000807716	Actinomortierella ambigua	1343610	9890
+UP000807769	Suillus subaureus	48587	15516
+UP000809789	Elsinoe batatas	2601811	9395
+UP000811619	Claviceps africana	83212	7993
+UP000812287	Guyanagaster necrorhizus	856835	14190
+UP000812966	Filobasidium floriforme	5210	7226
+UP000813385	Plectosphaerella cucumerina	40658	12941
+UP000813427	Fusarium tricinctum	61284	14098
+UP000813444	Stachybotrys elegans	80388	14899
+UP000813461	Paraphoma chrysanthemicola	798071	14975
+UP000813824	Cristinia sonorae	1940300	11322
+UP000814033	Auriscalpium vulgare	40419	16942
+UP000814128	Vararia minispora EC-137	1314806	10966
+UP000814140	Artomyces pyxidatus	48021	15125
+UP000814176	Rhodofomes roseus	34475	12864
+UP000815677	Mycena chlorophos (Agaric fungus) (Agaricus chlorophos)	658473	19060
+UP000818624	Malassezia furfur (Pityriasis versicolor infection agent) (Pityrosporum furfur)	55194	4532
+UP000823399	Suillus discolor	1912936	16383
+UP000823405	Linnemannia gamsii	64522	13255
+UP000824881	Pleurotus cornucopiae (Cornucopia mushroom)	5321	10437
+UP000824998	Amylocarpus encephaloides	45428	11868
+UP000825434	Candidozyma haemuli	45357	4677
+UP000825890	Cercospora kikuchii	84275	13445
+UP000826573	Trichoderma semiorbis	1491008	11026
+UP000826661	Trichoderma simmonsii	1491479	13864
+UP000827133	Fusarium musae	1042133	13672
+UP000827284	Entomortierella parvispora (Mortierella parvispora)	205924	11493
+UP000827549	Vanrija pseudolonga	143232	9897
+UP000827724	Trichoderma cornu-damae	654480	8525
+UP000829364	Purpureocillium takamizusanense	2060973	11839
+UP000829685	Neoarthrinium moseri	1658444	14143
+UP000830671	Colletotrichum lupini	145971	18335
+UP000830768	Fusarium solani subsp. cucurbitae (Neocosmosporum cucurbitae)	2747967	15320
+UP000836387	Clonostachys rosea f. rosea IK726	1349383	21141
+UP000836402	Tilletia caries (wheat bunt fungus)	13290	10036
+UP000836404	Tilletia laevis	157183	10301
+UP000837801	[Candida] railenensis	45579	5922
+UP000838763	Parascedosporium putredinis	1442378	10053
+UP000886501	Thelephora ganbajun (Ganba fungus)	370292	12640
+UP000886653	Cronartium quercuum f. sp. fusiforme G11	708437	13713
+UP000887226	Calycina marina	1763456	9556
+UP000887229	Emericellopsis atlantica	2614577	9961
+UP001043456	Aspergillus pseudoviridinutans	1517512	11276
+UP001049176	Marasmius oreades (fairy-ring Marasmius)	181124	14997
+UP001050691	Clathrus columnatus	1419009	10486
+UP001055072	Irpex rosettiformis	378272	12421
+UP001055115	Colletotrichum spaethianum	700344	12773
+UP001055172	Colletotrichum liriopes	708192	13983
+UP001055219	Emericellopsis cladophorae	2686198	8522
+UP001056384	Septoria linicola	215465	13096
+UP001056436	Colletotrichum abscissum	1671311	15493
+UP001056679	Purpureocillium lilacinum (Paecilomyces lilacinus)	33203	10536
+UP001059893	Pyricularia grisea (Crabgrass-specific blast fungus) (Magnaporthe grisea)	148305	12207
+UP001060170	Puccinia striiformis f. sp. tritici	168172	17945
+UP001063166	Lyophyllum shimeji (Hon-shimeji) (Tricholoma shimeji)	47721	12787
+UP001065298	Fusarium keratoplasticum	1328300	14424
+UP001107250	Coccidioides posadasii (strain RMSCC 757 / Silveira) (Valley fever fungus)	443226	8456
+UP001138500	Teratosphaeria destructans	418781	10356
+UP001139887	Coemansia brasiliensis	2650707	6205
+UP001139981	Coemansia aciculifera	417176	6511
+UP001140011	Coemansia pectinata	1052879	7143
+UP001140066	Coemansia linderi	2663919	6584
+UP001140074	Coemansia aciculifera	417176	6332
+UP001140087	Coemansia helicoidea	1286919	7109
+UP001140091	Candolleomyces eurysporus	2828524	16526
+UP001140094	Coemansia guatemalensis	2761395	7310
+UP001140096	Coemansia furcata	417177	7122
+UP001140172	Coemansia interrupta	1126814	4890
+UP001140217	Coemansia javaensis	2761396	5906
+UP001140234	Coemansia nantahalensis	2789366	6996
+UP001140453	Gnomoniopsis smithogilvyi	1191159	10250
+UP001140502	Fusarium piperis	1435070	12529
+UP001140510	Didymella pomorum	749634	11270
+UP001140511	Trichoderma breve	2034170	11591
+UP001140513	Didymosphaeria variabile	1932322	12534
+UP001140560	Neocucurbitaria cava	798079	10938
+UP001140562	Didymella glomerata	749621	10617
+UP001141434	Penicillium alfredii	1506179	10128
+UP001142393	Lentinula detonsa	2804962	12184
+UP001143856	Xylaria curta	42375	10891
+UP001143910	Zarea fungicola	93591	11409
+UP001143981	Coemansia biformis	1286918	7019
+UP001144978	Trametes sanguinea	158606	14760
+UP001145021	Coemansia asiatica	1052880	6369
+UP001145114	Spiromyces aspiralis	68401	8881
+UP001146351	Penicillium capsulatum	69766	10686
+UP001147733	Penicillium citrinum	5077	11663
+UP001147746	Penicillium atrosanguineum	1132637	11550
+UP001147747	Penicillium cosmopolitanum	1131564	14250
+UP001147752	Penicillium concentricum	293559	11704
+UP001147760	Penicillium desertorum	1303715	12892
+UP001147782	Penicillium cataractarum	2100454	12811
+UP001148299	Penicillium brevicompactum	5074	12015
+UP001148312	Penicillium diatomitis	2819901	9546
+UP001148614	Xylaria arbuscula	114810	11454
+UP001148629	Fusarium decemcellulare	57161	17201
+UP001148662	Phlebia brevispora	194682	9452
+UP001148737	Lecanicillium saksenae	468837	11361
+UP001148786	Agrocybe chaxingu	84603	12416
+UP001149074	Penicillium argentinense	1131581	12075
+UP001149079	Penicillium bovifimosum	126998	10371
+UP001149163	Penicillium canariense	189055	10808
+UP001149165	Penicillium angulare	116970	13712
+UP001149813	Coemansia erecta	147472	6526
+UP001149954	Penicillium fimorum	1882269	10960
+UP001150217	Lentinula lateritia	40482	13286
+UP001150266	Lentinula aciculospora	153920	11238
+UP001150538	Mycoemilia scoparia	417184	6288
+UP001150569	Tieghemiomyces parasiticus	78921	11924
+UP001150581	Kickxella alabastrina	61397	12153
+UP001150603	Linderina macrospora	4868	7268
+UP001150879	Penicillium cf. griseofulvum	2972120	11288
+UP001150904	Penicillium cinerascens	70096	11010
+UP001150907	Coemansia thaxteri	2663907	6183
+UP001150925	Dispira parvispora	1520584	6829
+UP001150941	Penicillium chermesinum	63820	10811
+UP001150942	Penicillium cf. viridicatum	2972119	12499
+UP001151295	Coemansia umbellata	1424467	6548
+UP001151516	Coemansia spiralis	417178	6471
+UP001151582	Dimargaris verticillata	2761393	6444
+UP001152024	Fusarium equiseti (Fusarium scirpi)	61235	11882
+UP001152049	Fusarium torreyae	1237075	14532
+UP001152087	Fusarium falciforme	195108	14923
+UP001152130	Fusarium irregulare	2494466	12531
+UP001152300	Sclerotinia nivalis	352851	14110
+UP001152531	[Candida] jaroonii	467808	5820
+UP001152533	Colletotrichum noveboracense	2664923	14902
+UP001152607	Periconia digitata	1303443	15519
+UP001152649	Penicillium salamii	1612424	11441
+UP001152885	Candida verbasci	1227364	5312
+UP001152964	Saccharomyces eubayanus (Yeast)	1080349	5608
+UP001153331	Boeremia exigua	749465	10740
+UP001153334	Nemania bipapillata	110536	7823
+UP001153365	Phakopsora pachyrhizi (Asian soybean rust disease fungus)	170000	17220
+UP001153618	Penicillium olsonii	99116	9525
+UP001154252	Penicillium egyptiacum	1303716	10627
+UP001160390	Clonostachys chloroleuca	1926264	19331
+UP001161017	Ramalina farinacea	258253	8764
+UP001161438	Saccharomyces mikatae IFO 1815	226126	5497
+UP001162085	Saccharomyces uvarum (Yeast) (Saccharomyces bayanus var. uvarum)	230603	5489
+UP001162087	Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) (Yeast)	226230	5539
+UP001163105	Purpureocillium lavendulum	1247861	11191
+UP001163324	Trichothecium roseum	47278	9102
+UP001163798	Lentinula aff. detonsa	2804958	11868
+UP001163828	Lentinula boryana	40481	11925
+UP001163835	Lentinula aff. lateritia	2804960	12631
+UP001163846	Lentinula raphanica	153919	14781
+UP001164286	Dioszegia hungarica	4972	8217
+UP001164743	Puccinia triticina	208348	12669
+UP001165063	Ambrosiozyma monospora (Yeast) (Endomycopsis monosporus)	43982	10235
+UP001165064	Ambrosiozyma monospora (Yeast) (Endomycopsis monosporus)	43982	13436
+UP001165101	Candida boidinii (Yeast)	5477	6792
+UP001165120	Candida boidinii (Yeast)	5477	6988
+UP001165186	Neofusicoccum parvum	310453	13313
+UP001165189	Aspergillus oryzae var. brunneus	332754	13597
+UP001166286	Cladonia borealis	184061	10739
+UP001169217	Colletotrichum limetticola	1209924	15246
+UP001172101	Lasiosphaeria miniovina	1954250	14919
+UP001172102	Lasiosphaeris hirsuta	260670	14118
+UP001172155	Schizothecium vesticola	314040	12636
+UP001172159	Apiosordaria backusii	314023	12364
+UP001172386	Neophaeococcomyces mojaviensis	3383035	10924
+UP001172673	Cladophialophora chaetospira	386627	13629
+UP001172680	Coniosporium tulheliwenetii	3383036	9226
+UP001172681	Knufia peltigerae	1002370	12559
+UP001172684	Coniosporium apollinis	61459	9379
+UP001174691	Coniochaeta hoffmannii	91930	10381
+UP001174694	Pleurostoma richardsiae	41990	12539
+UP001174934	Bombardia bombarda	252184	12098
+UP001174936	Cercophora newfieldiana	92897	14519
+UP001174997	Cercophora samala	330535	11248
+UP001175000	Immersiella caudata	314043	14542
+UP001175001	Lasiodiplodia hormozganensis	869390	12766
+UP001175211	Armillaria tabescens (Ringless honey mushroom) (Agaricus tabescens)	1929756	18900
+UP001175226	Armillaria borealis	47425	19856
+UP001175227	Armillaria novae-zelandiae	153914	18310
+UP001175228	Armillaria luteobubalina	153913	20125
+UP001175261	Sarocladium strictum (Black bundle disease fungus) (Acremonium strictum)	5046	9969
+UP001175353	Friedmanniomyces endolithicus	329885	26852
+UP001176059	Lentinula guzmanii	2804957	12179
+UP001176517	Tilletia horrida	155126	6893
+UP001176521	Tilletia horrida	155126	7964
+UP001177260	Aspergillus melleus	138277	11016
+UP001182556	Papiliotrema laurentii (Cryptococcus laurentii)	5418	7476
+UP001186974	Coniosporium uncinatum	93489	15103
+UP001187682	Cephalotrichum gorgonifer	2041049	10460
+UP001187734	Fusarium torulosum	33205	13950
+UP001194468	Boletus edulis BED1	1328754	18020
+UP001194580	Linnemannia exigua	604196	12114
+UP001194696	Linnemannia gamsii	64522	12690
+UP001194746	Aspergillus nanangensis	2582783	12935
+UP001195769	Suillus fuscotomentosus	1912939	18020
+UP001197093	Staphylotrichum longicolle	669026	10761
+UP001197328	Pichia angusta (Yeast) (Hansenula polymorpha)	870730	5426
+UP001199106	Alternaria panax	48097	11684
+UP001201163	Lactarius akahatsu	416441	12639
+UP001201262	Talaromyces proteolyticus	1131652	13586
+UP001201980	Zalerion maritima	339359	10668
+UP001202479	Candida oxycetoniae	497107	4871
+UP001203297	Multifurca ochricompacta	376703	10406
+UP001203852	Exophiala viscosa	2486360	11358
+UP001204833	Candida theae	1198502	5372
+UP001206595	Umbelopsis ramanniana AG	1314678	9906
+UP001207468	Russula earlei	71964	12153
+UP001209540	Phascolomyces articulosus	60185	14436
+UP001210925	Boothiomyces macroporosus	261099	7392
+UP001211065	Clydaea vesicula	447962	8639
+UP001211907	Physocladia obscura	109957	12780
+UP001212152	Geranomyces variabilis	109894	8696
+UP001212411	Schizosaccharomyces osmophilus	2545709	5060
+UP001212841	Rhizophlyctis rosea	64517	11454
+UP001212997	Meripilus lineatus	2056292	13278
+UP001213000	Leucocoprinus birnbaumii	56174	13088
+UP001213623	Malassezia nana	180528	3953
+UP001213681	Penicillium daleae	63821	12804
+UP001213799	Penicillium hordei	40994	12329
+UP001214415	Malassezia equina	1381935	3686
+UP001214603	Malassezia obtusa	76774	3333
+UP001214628	Malassezia psittaci	1821823	4006
+UP001215151	Trametes cubensis	1111947	13518
+UP001215280	Mycena maculata	230809	25566
+UP001215712	Penicillium malachiteum	1324776	12029
+UP001216150	Penicillium hetheringtonii	911720	11883
+UP001216638	Malassezia brasiliensis	1821822	3911
+UP001217417	Lipomyces tetrasporus	54092	7976
+UP001217582	Malassezia arunalokei	1514897	3785
+UP001217754	Malassezia japonica	223818	4299
+UP001217918	Phyllachora maydis	1825666	9341
+UP001217963	Encephalitozoon hellem (Microsporidian parasite)	27973	2037
+UP001219355	Emydomyces testavorans	2070801	7468
+UP001219567	Malassezia yamatoensis	253288	4036
+UP001219568	Penicillium canescens	5083	13937
+UP001219933	Malassezia cuniculi	948313	3871
+UP001220256	Penicillium chrysogenum (Penicillium notatum)	5076	12232
+UP001220324	Penicillium frequentans	3151616	13224
+UP001220961	Malassezia caprae	1381934	3557
+UP001221142	Roridomyces roridus	1738132	26012
+UP001221413	Drechslerella dactyloides (Nematode-trapping fungus) (Arthrobotrys dactyloides)	74499	9277
+UP001222325	Mycena belliarum	1033014	17737
+UP001222932	Cutaneotrichosporon spelunceum	1672016	6719
+UP001224890	Colletotrichum godetiae	1209918	16026
+UP001227192	Penicillium thymicola	293382	12898
+UP001227268	Naganishia friedmannii	89922	7205
+UP001227543	Colletotrichum tamarilloi	1209934	17379
+UP001230504	Colletotrichum navitas	681940	14680
+UP001230649	Naganishia adeliensis	92952	7686
+UP001232148	Colletotrichum zoysiae	1216348	15321
+UP001233271	Cutaneotrichosporon cavernicola	279322	7768
+UP001234202	Naganishia onofrii	1851511	6962
+UP001234581	Lichtheimia ornata	688661	12926
+UP001239213	Colletotrichum cuscutae	1209917	17287
+UP001239445	Echria macrotheca	438768	12288
+UP001239795	Colletotrichum melonis	1209925	16823
+UP001240678	Colletotrichum costaricense	1209916	17124
+UP001241169	Colletotrichum paranaense	1914294	16774
+UP001241377	Naganishia cerealis	610337	9284
+UP001243330	Colletotrichum chrysophilum	1836956	20023
+UP001243375	Naganishia vaughanmartiniae	1424756	6621
+UP001243989	Colletotrichum phormii	359342	15194
+UP001244011	Phialemonium atrogriseum	1093897	11399
+UP001244207	Glomerella acutata (Colletotrichum acutatum)	27357	15030
+UP001251528	Conoideocrella luteorostrata	1105319	12842
+UP001265746	Diaporthe amygdali (Fusicoccum amygdali)	1214568	14455
+UP001270362	Podospora appendiculata	314037	11840
+UP001271007	Extremus antarcticus	702011	12873
+UP001273166	Chaetomium strumarium	1170767	10184
+UP001273209	Trichoderma aggressivum f. europaeum	173218	10998
+UP001274830	Recurvomyces mirabilis	574656	10970
+UP001275084	Lasiosphaeria hispida	260671	14637
+UP001276659	Lepraria neglecta	209136	10839
+UP001278500	Neurospora tetraspora	94610	11229
+UP001278766	Chaetomium fimeti	1854472	11422
+UP001280581	Pseudopithomyces chartarum	1892770	11624
+UP001281003	Sordaria brevicollis	83679	10923
+UP001281147	Vermiconidia calcicola	1690605	21515
+UP001281614	Colletotrichum kahawae (Coffee berry disease fungus)	34407	19151
+UP001283341	Apodospora peruviana	516989	13377
+UP001285354	Diplocarpon rosae	946125	7155
+UP001285441	Podospora didyma	330526	14814
+UP001285908	Neurospora hispaniola	588809	10445
+UP001286181	Elasticomyces elasticus	574655	28037
+UP001286456	Cercophora scortea	314031	11777
+UP001287286	Purpureocillium lilacinum (Paecilomyces lilacinus)	33203	14419
+UP001287356	Lasiosphaeria ovina	92902	14878
+UP001294444	Melanopsichium pennsylvanicum	63383	6857
+UP001295740	Anthostomella pinea	933095	14721
+UP001295794	Mycena citricolor	2018698	20747
+UP001296104	Lecanosticta acicola	111012	10195
+UP001301769	Rhypophila decipiens	261697	14581
+UP001301958	Podospora fimiseda	252190	12262
+UP001302126	Podospora australis	1536484	12015
+UP001302321	Triangularia setosa	2587417	11393
+UP001302367	Cercospora beticola (Sugarbeet leaf spot fungus)	122368	13144
+UP001302602	Parathielavia appendiculata	2587402	11914
+UP001302676	Dichotomopilus funicola	1934379	9289
+UP001302745	Chaetomidium leptoderma	669021	10261
+UP001302812	Canariomyces notabilis	2074819	10945
+UP001303115	Parachaetomium inaequale	2588326	11222
+UP001303160	Triangularia verruculosa	2587418	11837
+UP001303222	Pseudoneurospora amorphoporcata	241081	10634
+UP001303373	Acrodontium crateriforme	150365	7899
+UP001303473	Diplogelasinospora grovesii	303347	13053
+UP001303647	Corynascus novoguineensis	1126955	9527
+UP001303760	Achaetomium macrosporum	79813	10292
+UP001303889	Staphylotrichum tortipilum	2831512	10720
+UP001304243	Mucor velutinosus	708070	12849
+UP001304895	Trichocladium antarcticum	1450529	9185
+UP001305414	Xylaria bambusicola	326684	13421
+UP001305647	Parathielavia hyrcaniae	113614	11295
+UP001305779	Zasmidium cellare (Wine cellar mold) (Racodium cellare)	395010	15199
+UP001306508	Arxiozyma heterogenica	278026	4998
+UP001307849	Arthrobotrys conoides	74498	11985
+UP001308179	Rachicladosporium monterosium	1507873	7772
+UP001309876	Lithohypha guttulata	1690604	8745
+UP001310890	Meristemomyces frigidus	1508187	8740
+UP001313282	Orbilia javanica	47235	11813
+UP001313983	Meristemomyces frigidus	1508187	9028
+UP001316803	Knufia fluminis	191047	11220
+UP001320245	Cytospora paraplurivora	2898453	9284
+UP001320420	Diatrype stigma	117547	11291
+UP001320706	Zalaria obscura	2024903	7859
+UP001321749	Cladorrhinum samala	585594	10892
+UP001321760	Podospora aff. communis PSN243	3040156	14462
+UP001322138	Podospora bellae-mahoneyi	2093777	11050
+UP001322277	Colletotrichum destructivum	34406	15608
+UP001323405	Podospora pseudocomata	2093779	11325
+UP001323617	Podospora pseudoanserina	2609844	11140
+UP001324427	Oleoguttula mirabilis	1507867	10983
+UP001326199	Podospora pseudopauciseta	2093780	11168
+UP001327957	Colletotrichum tabaci	1209068	13348
+UP001329825	Kwoniella shivajii	564305	7877
+UP001334248	Knufia obscura	1635080	11241
+UP001337655	Saxophila tyrrhenica	1690608	11205
+UP001338080	Meristemomyces frigidus	1508187	12125
+UP001338125	Cladobotryum mycophilum	491253	12204
+UP001338582	Australozyma saopauloensis	291208	5012
+UP001341245	Aureobasidium pullulans (Black yeast) (Pullularia pullulans)	5580	9595
+UP001342314	Rhodotorula paludigena	86838	7709
+UP001345013	Lithohypha guttulata	1690604	10557
+UP001345691	Exophiala sideris	1016849	11434
+UP001352854	Elasticomyces elasticus	574655	17683
+UP001355207	Kwoniella dendrophila CBS 6074	1295534	8022
+UP001357485	Cryomyces antarcticus	329879	12792
+UP001358417	Exophiala bonariae	1690606	13061
+UP001358614	Kwoniella europaea PYCC6329	1423913	8573
+UP001360560	Saccharomycopsis crataegensis	43959	6397
+UP001360953	Phyllosticta citribraziliensis	989973	10673
+UP001362899	Starmerella bacillaris (Yeast) (Candida zemplinina)	1247836	4324
+UP001363622	Phyllosticta citriasiana	595635	10025
+UP001365128	Phyllosticta citricarpa	55181	10295
+UP001365542	Orbilia ellipsospora	2528407	12679
+UP001367316	Phyllosticta paracitricarpa	2016321	10060
+UP001369815	Daldinia eschscholtzii	292717	10464
+UP001370758	Arthrobotrys musiformis	47236	12686
+UP001373714	Orbilia blumenaviensis	1796055	11795
+UP001375240	Orbilia brochopaga	3140254	10395
+UP001377567	Maudiozyma humilis (Sour dough yeast) (Kazachstania humilis)	51915	5749
+UP001378960	Pichia kluyveri (Yeast)	36015	5590
+UP001383192	Paramarasmius palmivorus	297713	18633
+UP001385951	Cerrena zonata	2478898	20494
+UP001388673	Kwoniella newhampshirensis	1651941	7143
+UP001391051	Apiospora aurea	335848	15169
+UP001392437	Apiospora kogelbergensis	1337665	14801
+UP001396898	Apiospora marii	335849	16303
+UP001397290	Beauveria asiatica	1069075	10448
+UP001408356	Seiridium unicorne	138068	14112
+UP001412239	Tuber aestivum (summer truffle)	59557	9295
+UP001430584	Diplodia seriata	420778	10534
+UP001430848	Diaporthe eres (Phomopsis oblonga)	83184	14066
+UP001432216	Cryptococcus decagattii	1859122	6540
+UP001433268	Apiospora hydei	1337664	15449
+UP001433508	Lipomyces kononenkoae (Yeast)	34357	7799
+UP001437256	Marasmius tenuissimus	585030	16292
+UP001444661	Apiospora rasikravindrae	990691	15290
+UP001446871	Apiospora saccharicola	335842	16174
+UP001447188	Maublancomyces gigas	1032678	10752
+UP001448207	Phycomyces blakesleeanus	4837	12409
+UP001449341	Lipomyces kononenkoae (Yeast)	34357	7138
+UP001449819	Lipomyces mesembrius	56874	6757
+UP001451303	Neurospora intermedia	5142	11278
+UP001456524	Phyllosticta citrichinensis	1130410	10226
+UP001465668	Seiridium cardinale	138064	14054
+UP001465976	Marasmius crinis-equi	585013	19187
+UP001473302	Mucor flavus	439312	11235
+UP001475598	Lipomyces doorenjongii	383834	7538
+UP001476247	Helicostylum pulchrum	562976	11917
+UP001477159	Lipomyces chichibuensis	1546026	6544
+UP001479436	Basidiobolus ranarum	34480	19542
+UP001480595	Apiospora phragmitis	2905665	15406
+UP001481841	Kockiozyma suomiensis	1337062	6128
+UP001489719	Lipomyces orientalis	1233043	7763
+UP001489902	Fusarium acuminatum	5515	11335
+UP001492380	Phyllosticta capitalensis	121624	11104
+UP001497383	Lodderomyces beijingensis	1775926	5549
+UP001497453	Somion occarium	3059160	23670
+UP001497600	[Candida] anglica	148631	5979
+UP001497680	Hypoxylon rubiginosum	110542	13953
+UP001497700	Hypoxylon rubiginosum	110542	12726
+UP001497720	Camillea tinctor	110548	11859
+UP001498398	Stygiomarasmius scandens	2682957	20037
+UP001498421	Neonectria magnoliae	2732573	12394
+UP001498476	Neonectria punicea	979145	13207
+UP001498771	Myxozyma melibiosi	54550	6273
+UP001516464	Astathelohania contejeani	164912	2865
+UP001521116	Neofusicoccum ribis	45134	12143
+UP001521184	Diplodia intermedia	856260	11221
+UP001521222	Nothophoma quercina	749835	9970
+UP001521785	Paraconiothyrium brasiliense	300254	12000
+UP001527925	Polyrhizophydium stewartii	2732419	9229
+UP001556367	Hohenbuehelia grisea	104357	16440
+UP001562354	Neodothiora populina	2781224	8591
+UP001562357	Epichloe bromicola	79588	7810
+UP001565368	Vanrija albida	181172	9025
+UP001583172	Humicola insolens (Soft-rot fungus)	85995	7689
+UP001583177	Diaporthe australafricana	127596	14403
+UP001583186	Sporothrix stenoceras	5173	10257
+UP001583193	Paecilomyces lecythidis	3004212	9578
+UP001583280	Ceratocystis pirilliformis	259994	6655
+UP001586593	Phialemonium thermophilum	223376	10412
+UP001590950	Stereocaulon virgatum	373712	10871
+UP001590951	Lepraria finkii	1340010	12478
+UP001595075	Oculimacula yallundae	86028	16505
+UP001600064	Remersonia thermophila	72144	7598
+UP001600888	Diaporthe vaccinii	105482	19245
+UP001610334	Aspergillus granulosus	176169	12856
+UP001610335	Aspergillus cavernicola	176166	12854
+UP001610432	Aspergillus lucknowensis	176173	11538
+UP001610444	Aspergillus pseudodeflectus	176178	14445
+UP001610446	Aspergillus pseudoustus	1810923	15533
+UP001610563	Aspergillus keveii	714993	15687
+UP001610728	Ceratocystis lukuohia	2019550	7468
+UP001623330	Nakaseomyces bracarensis	273131	5117
+UP001628179	Madurella fahalii	1157608	11349
+UP001629113	Phlyctema vagabunda	108571	11475
+UP001642405	Sporothrix curviconia	1260050	9798
+UP001642406	Sporothrix bragantina	671064	10044
+UP001642482	Sporothrix eucalyptigena	1812306	10647
+UP001642501	Sporothrix epigloea	1892477	6635
+UP001642502	Sporothrix epigloea	1892477	6635
+UP001642720	Trichoderma ghanense	65468	10416
+UP001648503	Batrachochytrium salamandrivorans	1357716	11223
+UP001656597	Scheffersomyces amazonensis	1078765	6045
+UP001656878	Meristemomyces frigidus	1508187	10941
+UP001657017	Scheffersomyces coipomensis	1788519	6156
+UP001657018	Scheffersomyces xylosifermentans	1304137	6165
+UP001658139	Arthrobotrys megalospora	2528406	12425
+UP001663967	Hanseniaspora menglaensis	3081051	4365
+UP001670338	Gibberella pulicaris	5128	12890
+UP001694485	Penicillium ochrochloron	69780	10480
+UP001712045	Fusarium chlamydosporum	86545	11054
+UP001725542	Trichoderma cf. simile WF8	3060474	12851
+UP001730040	Penicillium discolor	74830	12324
+UP001730041	Penicillium palitans	293373	11942
+UP001730042	Penicillium glandicola	197659	10262
+UP001730043	Penicillium bialowiezense	293381	11242
+UP001730044	Penicillium pancosmium	1131562	12657
+UP001730045	Penicillium viridicatum	60134	11371
+UP001730046	Penicillium manginii	203109	12520
+UP001730740	Penicillium psychrofluorescens	3158075	9535
+UP001730793	Monosporozyma unispora	27294	5519
+UP001730806	Xanthoria parietina	107463	11100
+UP001730882	Monosporozyma servazzii (Yeast) (Kazachstania servazzii)	27293	5413
+UP000001194	Laccaria bicolor (strain S238N-H82 / ATCC MYA-4686) (Bicoloured deceiver) (Laccaria laccata var. bicolor)	486041	17895
+UP000001611	Verticillium dahliae (strain VdLs.17 / ATCC MYA-4575 / FGSC 10137) (Verticillium wilt)	498257	10398
+UP000003163	Edhazardia aedis (strain USNM 41457) (Microsporidian parasite)	1003232	4189
+UP000005206	Fusarium vanettenii (strain ATCC MYA-4622 / CBS 123669 / FGSC 9596 / NRRL 45880 / 77-13-4) (Fusarium solani subsp. pisi)	660122	15679
+UP000006514	Auricularia subglabra (strain TFB-10046 / SS5) (White-rot fungus) (Auricularia delicata (strain TFB10046))	717982	5290
+UP000007963	Aspergillus terreus (strain NIH 2624 / FGSC A1156)	341663	10419
+UP000007978	Fusarium pseudograminearum (strain CS3096) (Wheat and barley crown-rot fungus)	1028729	12448
+UP000011185	Trachipleistophora hominis (Microsporidian parasite)	72359	3212
+UP000016927	Nosema bombycis (strain CQ1 / CVCC 102059) (Microsporidian parasite) (Pebrine of silkworm)	578461	4398
+UP000018888	Rhizophagus irregularis (strain DAOM 181602 / DAOM 197198 / MUCL 43194) (Arbuscular mycorrhizal fungus) (Glomus intraradices)	747089	25981
+UP000022910	Rhizophagus irregularis (strain DAOM 197198w) (Glomus intraradices)	1432141	28669
+UP000029445	Cryptococcus deuterogattii (strain R265) (Cryptococcus gattii VGII (strain R265))	294750	2945
+UP000030655	Anncaliia algerae PRA339	1288291	3576
+UP000034350	Vairimorpha ceranae (Microsporidian parasite) (Nosema ceranae)	40302	3200
+UP000037035	Puccinia sorghi	27349	21032
+UP000051530	Pseudoloma neurophilia	146866	3636
+UP000053630	Fomitiporia mediterranea (strain MF3/22) (Grapevine white-rot fungus)	694068	531
+UP000053780	Vairimorpha apis BRL 01	1037528	2727
+UP000053927	Stereum hirsutum (strain FP-91666) (White-rot fungus)	721885	1613
+UP000054018	Pisolithus microcarpus 441	765257	20748
+UP000054217	Pisolithus tinctorius Marx 270	870435	22409
+UP000054279	Sphaerobolus stellatus (strain SS14)	990650	24609
+UP000054317	Trametes versicolor (strain FP-101664) (White-rot fungus) (Coriolus versicolor)	717944	1022
+UP000054538	Paxillus rubicundulus Ve08.2h10	930991	21906
+UP000076532	Athelia psychrophila	1759441	29994
+UP000076580	Drechmeria coniospora (Nematophagous fungus) (Meria coniospora)	98403	8231
+UP000078397	Pochonia chlamydosporia 170	1380566	14143
+UP000078559	Cytospora mali (Apple Valsa canker fungus) (Valsa mali)	578113	11165
+UP000092177	Colletotrichum higginsianum (strain IMI 349063) (Crucifer anthracnose fungus)	759273	14636
+UP000192356	Hepatospora eriocheir	1081669	2687
+UP000192758	Ecytonucleospora hepatopenaei	646526	2431
+UP000217199	Pyrrhoderma noxium	2282107	9911
+UP000234323	Rhizophagus irregularis	588596	25735
+UP000265703	Glomus cerebriforme	658196	20972
+UP000266673	Gigaspora rosea	44941	31020
+UP000266861	Diversispora epigaea	1348612	28108
+UP000282876	Tubulinosema ratisbonensis	291195	2996
+UP000291404	Hamiltosporidium magnivora	148818	4459
+UP000292282	Hamiltosporidium tvaerminnensis	1176355	5820
+UP000297245	Dendrothele bispora (strain CBS 962.96)	1314807	33018
+UP000308600	Pluteus cervinus	181527	19812
+UP000439903	Gigaspora margarita	4874	29434
+UP000671143	Histoplasma ohiense	2902605	9215
+UP000765509	Austropuccinia psidii MF-1	1389203	133953
+UP000789342	Acaulospora morrowiae	94023	18358
+UP000789366	Cetraspora pellucida	1433469	18058
+UP000789375	Funneliformis mosseae (Endomycorrhizal fungus) (Glomus mosseae)	27381	16849
+UP000789396	Racocetra fulgida	60492	19869
+UP000789405	Dentiscutata erythropus	1348616	28754
+UP000789508	Ambispora leptoticha	144679	14625
+UP000789525	Acaulospora colombiana	27376	14505
+UP000789570	Funneliformis caledonium	1117310	17941
+UP000789702	Dentiscutata heterogama	1316150	16277
+UP000789706	Diversispora eburnea	1213867	12016
+UP000789759	Cetraspora pellucida	1433469	22048
+UP000789860	Scutellospora calospora	85575	11479
+UP000789901	Gigaspora margarita	4874	46482
+UP000789920	Racocetra persica	160502	37045
+UP000799118	Gymnopus androsaceus JB14	1447944	29201
+UP000824596	Hirsutella rhossiliensis	111463	13920
+UP000886523	Hydnum rufescens UP504	1448309	18582
+UP001144673	Akanthomyces muscarius (Entomopathogenic fungus) (Lecanicillium muscarium)	2231603	12956
+UP001153678	Funneliformis geosporum	1117311	20089
+UP001165960	Entomophthora muscae	34485	42657
+UP001215598	Mycena metata	1033252	40607
+UP001218188	Mycena alexandri	1745969	31324
+UP001218218	Mycena albidolilacea	1033008	36688
+UP001219525	Mycena pura	153505	28264
+UP001221757	Mycena rosella (Pink bonnet) (Agaricus rosellus)	1033263	33823
+UP001334084	Vairimorpha necatrix	6039	3147
+UP001362999	Favolaschia claudopus	2862362	47595
+UP001390339	Apiospora arundinis	335852	14704
+UP001497681	Schizophyllum commune Tattone D	1314663	15039
+UP001578633	Alternaria dauci	48095	9961
+UP001652987	Rhizophagus irregularis	588596	30873
+UP001655667	Seiridium cupressi	138065	13375
+UP001656528	Vairimorpha bombi	40135	1853
+UP001686810	Scleroderma citrinum	68788	10146
+UP001686851	Scleroderma yunnanense	1163567	10150
+UP001698266	Pleurotus pulmonarius (Pale oyster mushroom) (Agaricus pulmonarius)	28995	15440
+UP001698321	Abortiporus biennis	137743	12845

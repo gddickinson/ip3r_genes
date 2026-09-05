@@ -1,0 +1,6 @@
+group	seed_tag	accession	round	new_targets	n_included	n_own	n_sister	n_offfamily	sister_frac	sister_rise	growth	converged	verdict	kill_rule
+viridiplantae	s20_viridiplantae	A0AAE0LDZ1	1	56	56	49	0	7	0.0	0.0		True	clean	
+viridiplantae	s20_viridiplantae	A0AAE0LDZ1	2	12	68	54	0	14	0.0	0.0	1.21	True	clean	
+viridiplantae	s20_viridiplantae	A0AAE0LDZ1	3	1	69	54	0	15	0.0	0.0	1.01	True	clean	
+viridiplantae	s20_viridiplantae	A0AAE0LDZ1	4	1	70	54	0	16	0.0	0.0	1.01	True	clean	
+viridiplantae	s20_viridiplantae	A0AAE0LDZ1	5	0	70	54	0	16	0.0	0.0	1.0	True	clean	

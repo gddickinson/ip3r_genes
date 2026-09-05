@@ -1,0 +1,37 @@
+group	phylum	records	taxa
+Amoebozoa	Evosea	11	8
+Amoebozoa	Discosea	1	1
+Discoba	Euglenozoa	37	21
+Discoba	Heterolobosea	22	3
+Eukaryota (other)	unclassified	31	7
+Eukaryota (other)	Haptophyta	16	4
+Eukaryota (other)	Preaxostyla	10	2
+Fungi	Mucoromycota	19	18
+Fungi	Chytridiomycota	9	6
+Fungi	Basidiobolomycota	5	2
+Fungi	Zoopagomycota	1	1
+Fungi	Entomophthoromycota	1	1
+Metazoa (non-vertebrate)	Arthropoda	810	298
+Metazoa (non-vertebrate)	Mollusca	316	31
+Metazoa (non-vertebrate)	Nematoda	286	99
+Metazoa (non-vertebrate)	Platyhelminthes	132	23
+Metazoa (non-vertebrate)	Annelida	62	6
+Metazoa (non-vertebrate)	Rotifera	59	8
+Metazoa (non-vertebrate)	Porifera	54	3
+Metazoa (non-vertebrate)	Chordata	33	8
+Metazoa (non-vertebrate)	Cnidaria	29	14
+Metazoa (non-vertebrate)	Echinodermata	20	6
+Metazoa (non-vertebrate)	Brachiopoda	19	1
+Metazoa (non-vertebrate)	Bryozoa	11	1
+Metazoa (non-vertebrate)	Ctenophora	10	1
+Metazoa (non-vertebrate)	Orthonectida	6	1
+Metazoa (non-vertebrate)	Hemichordata	5	1
+Metazoa (non-vertebrate)	Tardigrada	3	2
+Metazoa (non-vertebrate)	Placozoa	3	1
+Metazoa (non-vertebrate)	Priapulida	2	1
+SAR	Ciliophora	388	15
+SAR	unclassified	113	19
+SAR	Oomycota	106	26
+SAR	Perkinsozoa	3	3
+Vertebrata	Chordata	6112	747
+Viridiplantae	Chlorophyta	64	14

@@ -1,0 +1,40 @@
+{
+ "db_path": "/Volumes/FANTOM/IP3R_DATA/proteomes/metazoa_nonvert_refprot.fasta",
+ "n_proteomes": 546,
+ "n_seqs": 11396529,
+ "n_residues": 4562607015,
+ "db_bytes": 6033131218,
+ "concat_elapsed_s": 402.5,
+ "group": "metazoa_nonvert",
+ "query": "taxonomy_id:33208+NOT+taxonomy_id:7742+AND+reference:true",
+ "sample": {
+  "rule": "none",
+  "rule_text": "every reference proteome",
+  "n_available": 547,
+  "n_selected": 547,
+  "proteins_available": 12595550,
+  "proteins_selected": 12595550
+ },
+ "download": {
+  "counts": {
+   "ok": 546,
+   "cached": 0,
+   "failed": 1
+  },
+  "failures": [
+   "UP001732900 failed:404"
+  ],
+  "elapsed_s": 86.1
+ },
+ "n_unavailable": 1,
+ "n_swept_proteomes": 546,
+ "first_header_parsed": {
+  "name": "tr|A0A0B4K684|A0A0B4K684_DROME",
+  "accession": "A0A0B4K684",
+  "reviewed": false,
+  "gene": "Dmel\\CG43210",
+  "species": "Drosophila melanogaster",
+  "taxon_id": 7227,
+  "protein_name": "Uncharacterized protein"
+ }
+}

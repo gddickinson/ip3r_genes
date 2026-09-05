@@ -607,3 +607,80 @@ these channels share with unrelated proteins, stitched across millions of
 bases of empty DNA. The real gene was never in doubt, but the copy count was,
 and copy count is a result. It is now filtered on sequence identity, using a
 threshold with a wide empty gap on either side of it.
+
+---
+
+## 2026-09-05 — S20: where the IP₃ receptor actually lives
+
+**The family is not a metazoan invention, and it is not universal either.**
+Searching 6,928 reference proteomes — 63 million proteins, every non-vertebrate
+eukaryote UniProt calls a reference, plus all the archaea and one bacterium
+per genus — the receptor turns up in 662 of them, and the pattern is not
+random. It is in every animal phylum we looked at, in the amoebae, in the
+ciliates and oomycetes and dinoflagellates, in the haptophytes, in the
+euglenids, in the green algae, and in several early-diverging fungal phyla.
+It is in the two closest single-celled relatives of animals — a filasterean
+and a choanoflagellate — which already carry **both** this receptor and its
+sister the ryanodine receptor, full length. The two channels had already
+split before animals existed.
+
+**The land plants really do not have it.** This was the question the task was
+set to answer, and it had an unglamorous possible answer: that the handful of
+plant records in the databases were there because someone had annotated them,
+and *Arabidopsis* had none because nobody had. That is not what happened.
+Across **384 land-plant reference proteomes and 16 million proteins — every
+flowering plant, moss, fern and conifer in the set — there is not one.** Its
+green-algal cousins have it: 15 of 48 chlorophyte proteomes, including
+*Chlamydomonas*. So the gene was there in the green lineage and the plants
+lost it, somewhere on the way onto land.
+
+**The yeasts and moulds have lost it too, and they are not alone.** Zero in
+1,353 Ascomycota and Basidiomycota proteomes. But the fungal picture is
+patchier than "early fungi kept it": it is present in the Mucoromycota (18 of
+34), the chytrids (6 of 16), *Basidiobolus*, the Zoopagomycota and
+*Entomophthora* — and absent from the Glomeromycota, the Mortierellomycota,
+the Kickxellomycota and the microsporidia. The receptor has been lost
+repeatedly and independently across the fungi, not once at their base.
+
+**And it is absent from bacteria and archaea entirely** — 0 of 3,537 bacterial
+and 0 of 634 archaeal proteomes.
+
+**Why these absences can be believed.** An absence is only as good as the
+search that failed to find anything, so each one was re-made with a
+deliberately blunter instrument — the family's own Pfam domain models at a
+sensitivity a thousand-fold looser — and checked against a positive control
+inside the same search. In land plants the IP₃-binding domain that names the
+family returns **nothing** substantial, while in the green algae next door it
+returns 26. In the Dikarya it returns nothing, against 16 in the Mucoromycota.
+And the shared MIR domain, which every eukaryote carries on other proteins,
+comes back **633 times in land plants and 4,376 times in the Dikarya** — so
+the search is demonstrably working in those very genomes. It is finding
+everything except the receptor.
+
+**The plant and fungal records are real genes, not database mistakes.** All 99
+of them were chased one at a time. The obvious worry was contamination: a
+sequencing project picks up an animal, its DNA lands in the assembly, and a
+"green algal IP₃ receptor" turns out to be 99 % identical to a mouse. Every
+record was therefore compared to its nearest relative outside its own kingdom.
+The identities run from **20 % to 46 %, median 24 %** — the ordinary range for
+genes that parted a billion years ago, and nowhere near the 95 % that would
+signal a sequence in the wrong assembly. Not one record was a contaminant, and
+not one lacked a genome to sit in. Forty-seven are complete genes; the other
+fifty-two are real but fragmentary gene models, which says something about how
+well algal and fungal genomes are annotated rather than about the receptor.
+
+**One oddity worth chasing.** A single green alga, *Cymbomonas
+tetramitiformis*, contributes twelve of the twenty-two complete plant genes.
+Either that lineage has genuinely expanded the family, or its assembly is
+duplicated. A proteome cannot tell those apart *(pending: S23, the
+assembly-level search.)*
+
+**A caution about our own counting.** The sweep reports 142 "ryanodine
+receptor" hits in fungi, green algae and protists, where no ryanodine receptor
+is thought to exist. They are proteins of a few hundred to two thousand
+residues matching **4–9 %** of a five-thousand-residue channel model — the
+module these families share with each other and with unrelated proteins, not
+the gene. Counted as genes they would invent a receptor family across half the
+eukaryotic tree. Every call in this task is therefore reported with how much of
+the model it actually covers: 63 % of the IP₃-receptor calls span at least half
+their model, against 1 % of the ryanodine ones.

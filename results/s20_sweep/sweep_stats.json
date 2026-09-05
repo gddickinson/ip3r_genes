@@ -1,0 +1,172 @@
+{
+ "groups": {
+  "protista_other": {
+   "group": "protista_other",
+   "db": "/Volumes/FANTOM/IP3R_DATA/proteomes/protista_other_refprot.fasta",
+   "search_evalue": "10",
+   "primary_evalue": "1e-5",
+   "profiles": {
+    "itpr": {
+     "targets_relaxed": 1126,
+     "targets_primary": 798,
+     "elapsed_s": 100.1,
+     "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_itpr_vs_protista_other.domtblout"
+    },
+    "ryr": {
+     "targets_relaxed": 8871,
+     "targets_primary": 2580,
+     "elapsed_s": 458.3,
+     "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_ryr_vs_protista_other.domtblout"
+    }
+   },
+   "assignment": {
+    "targets": 2721,
+    "calls": {
+     "ITPR": 729,
+     "RYR": 121,
+     "unassigned": 1871
+    }
+   }
+  },
+  "viridiplantae": {
+   "group": "viridiplantae",
+   "db": "/Volumes/FANTOM/IP3R_DATA/proteomes/viridiplantae_refprot.fasta",
+   "search_evalue": "10",
+   "primary_evalue": "1e-5",
+   "profiles": {
+    "itpr": {
+     "targets_relaxed": 890,
+     "targets_primary": 71,
+     "elapsed_s": 279.4,
+     "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_itpr_vs_viridiplantae.domtblout"
+    },
+    "ryr": {
+     "targets_relaxed": 33461,
+     "targets_primary": 13770,
+     "elapsed_s": 518.0,
+     "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_ryr_vs_viridiplantae.domtblout"
+    }
+   },
+   "assignment": {
+    "targets": 13791,
+    "calls": {
+     "ITPR": 54,
+     "RYR": 1,
+     "unassigned": 13736
+    }
+   }
+  },
+  "fungi": {
+   "group": "fungi",
+   "db": "/Volumes/FANTOM/IP3R_DATA/proteomes/fungi_refprot.fasta",
+   "search_evalue": "10",
+   "primary_evalue": "1e-5",
+   "profiles": {
+    "itpr": {
+     "targets_relaxed": 893,
+     "targets_primary": 44,
+     "elapsed_s": 406.5,
+     "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_itpr_vs_fungi.domtblout"
+    },
+    "ryr": {
+     "targets_relaxed": 8349,
+     "targets_primary": 2942,
+     "elapsed_s": 908.9,
+     "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_ryr_vs_fungi.domtblout"
+    }
+   },
+   "assignment": {
+    "targets": 2952,
+    "calls": {
+     "ITPR": 35,
+     "RYR": 20,
+     "unassigned": 2897
+    }
+   }
+  },
+  "metazoa_nonvert": {
+   "group": "metazoa_nonvert",
+   "db": "/Volumes/FANTOM/IP3R_DATA/proteomes/metazoa_nonvert_refprot.fasta",
+   "search_evalue": "10",
+   "primary_evalue": "1e-5",
+   "profiles": {
+    "itpr": {
+     "targets_relaxed": 3437,
+     "targets_primary": 2513,
+     "elapsed_s": 181.7,
+     "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_itpr_vs_metazoa_nonvert.domtblout"
+    },
+    "ryr": {
+     "targets_relaxed": 19753,
+     "targets_primary": 8125,
+     "elapsed_s": 911.8,
+     "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_ryr_vs_metazoa_nonvert.domtblout"
+    }
+   },
+   "assignment": {
+    "targets": 8607,
+    "calls": {
+     "ITPR": 1194,
+     "RYR": 1156,
+     "unassigned": 6257
+    }
+   }
+  },
+  "archaea": {
+   "group": "archaea",
+   "db": "/Volumes/FANTOM/IP3R_DATA/proteomes/archaea_refprot.fasta",
+   "search_evalue": "10",
+   "primary_evalue": "1e-5",
+   "profiles": {
+    "itpr": {
+     "targets_relaxed": 25,
+     "targets_primary": 0,
+     "elapsed_s": 19.0,
+     "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_itpr_vs_archaea.domtblout"
+    },
+    "ryr": {
+     "targets_relaxed": 40,
+     "targets_primary": 7,
+     "elapsed_s": 17.3,
+     "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_ryr_vs_archaea.domtblout"
+    }
+   },
+   "assignment": {
+    "targets": 7,
+    "calls": {
+     "ITPR": 0,
+     "RYR": 0,
+     "unassigned": 7
+    }
+   }
+  },
+  "bacteria_genus": {
+   "group": "bacteria_genus",
+   "db": "/Volumes/FANTOM/IP3R_DATA/proteomes/bacteria_genus_refprot.fasta",
+   "search_evalue": "10",
+   "primary_evalue": "1e-5",
+   "profiles": {
+    "itpr": {
+     "targets_relaxed": 72,
+     "targets_primary": 0,
+     "elapsed_s": 203.3,
+     "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_itpr_vs_bacteria_genus.domtblout"
+    },
+    "ryr": {
+     "targets_relaxed": 326,
+     "targets_primary": 59,
+     "elapsed_s": 161.3,
+     "domtblout": "/Volumes/FANTOM/IP3R_DATA/hmmer/s20/hmmsearch_ryr_vs_bacteria_genus.domtblout"
+    }
+   },
+   "assignment": {
+    "targets": 59,
+    "calls": {
+     "ITPR": 0,
+     "RYR": 0,
+     "unassigned": 59
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "db_path": "/Volumes/FANTOM/IP3R_DATA/proteomes/protista_other_refprot.fasta",
+ "n_proteomes": 252,
+ "n_seqs": 3636524,
+ "n_residues": 1781905318,
+ "db_bytes": 2274493341,
+ "concat_elapsed_s": 56.5,
+ "group": "protista_other",
+ "query": "taxonomy_id:2759+NOT+taxonomy_id:33208+NOT+taxonomy_id:33090+NOT+taxonomy_id:4751+AND+reference:true",
+ "sample": {
+  "rule": "none",
+  "rule_text": "every reference proteome",
+  "n_available": 253,
+  "n_selected": 253,
+  "proteins_available": 3756055,
+  "proteins_selected": 3756055
+ },
+ "download": {
+  "counts": {
+   "ok": 0,
+   "cached": 252,
+   "failed": 1
+  },
+  "failures": [
+   "UP000041254 failed:404"
+  ],
+  "elapsed_s": 1.4
+ },
+ "n_unavailable": 1,
+ "n_swept_proteomes": 252,
+ "first_header_parsed": {
+  "name": "sp|B0G185|AP1S2_DICDI",
+  "accession": "B0G185",
+  "reviewed": true,
+  "gene": "ap1s2",
+  "species": "Dictyostelium discoideum",
+  "taxon_id": 44689,
+  "protein_name": "AP-1 complex subunit sigma-2"
+ }
+}

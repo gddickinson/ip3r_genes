@@ -1,0 +1,53 @@
+{
+ "db_path": "/Volumes/FANTOM/IP3R_DATA/proteomes/bacteria_genus_refprot.fasta",
+ "n_proteomes": 3537,
+ "n_seqs": 13903732,
+ "n_residues": 4483486660,
+ "db_bytes": 6388721775,
+ "concat_elapsed_s": 310.2,
+ "group": "bacteria_genus",
+ "query": "taxonomy_id:2+AND+reference:true",
+ "sample": {
+  "rule": "largest_per_genus",
+  "rule_text": "one proteome per genus (first token of the organism name), the one with the most proteins \u2014 the most sensitive member of each genus, so the negative claim is made in the places most likely to break it",
+  "n_available": 17981,
+  "n_genera": 3546,
+  "n_selected": 3546,
+  "proteins_available": 73754061,
+  "proteins_selected": 13933246,
+  "largest_genus": [
+   "Streptomyces",
+   752
+  ]
+ },
+ "download": {
+  "counts": {
+   "ok": 3537,
+   "cached": 0,
+   "failed": 9
+  },
+  "failures": [
+   "UP001600165 failed:404",
+   "UP001202402 failed:404",
+   "UP000433706 failed:404",
+   "UP001298691 failed:404",
+   "UP001556606 failed:404",
+   "UP000010386 failed:404",
+   "UP000070490 failed:404",
+   "UP000255043 failed:404",
+   "UP000199472 failed:404"
+  ],
+  "elapsed_s": 231.8
+ },
+ "n_unavailable": 9,
+ "n_swept_proteomes": 3537,
+ "first_header_parsed": {
+  "name": "tr|A0A4P6M8L8|A0A4P6M8L8_9MOLU",
+  "accession": "A0A4P6M8L8",
+  "reviewed": false,
+  "gene": "EXT02_00590",
+  "species": "'Catharanthus roseus' aster yellows phytoplasma",
+  "taxon_id": 1193712,
+  "protein_name": "SAM-dependent methyltransferase"
+ }
+}

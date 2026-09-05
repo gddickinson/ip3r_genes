@@ -1,0 +1,548 @@
+upid	organism	taxid	protein_count	group	genus	genus_n_available	status
+UP000000803	Drosophila melanogaster (Fruit fly)	7227	21947	metazoa_nonvert			swept
+UP000001940	Caenorhabditis elegans	6239	26629	metazoa_nonvert			swept
+UP000008549	Caenorhabditis briggsae	6238	21744	metazoa_nonvert			swept
+UP000069940	Aedes albopictus (Asian tiger mosquito) (Stegomyia albopicta)	7160	26331	metazoa_nonvert			swept
+UP000000304	Drosophila simulans (Fruit fly)	7240	15361	metazoa_nonvert			swept
+UP000000305	Daphnia pulex (Water flea)	6669	30137	metazoa_nonvert			swept
+UP000000311	Camponotus floridanus (Florida carpenter ant)	104421	14787	metazoa_nonvert			swept
+UP000000673	Anopheles darlingi (Mosquito)	43151	10595	metazoa_nonvert			swept
+UP000001070	Drosophila grimshawi (Hawaiian fruit fly) (Idiomyia grimshawi)	7222	14754	metazoa_nonvert			swept
+UP000001292	Drosophila sechellia (Fruit fly)	7238	16129	metazoa_nonvert			swept
+UP000001307	Oikopleura dioica (Tunicate)	34765	17050	metazoa_nonvert			swept
+UP000001554	Branchiostoma floridae (Florida lancelet) (Amphioxus)	7739	38650	metazoa_nonvert			swept
+UP000001593	Nematostella vectensis (Starlet sea anemone)	45351	24435	metazoa_nonvert			swept
+UP000001819	Drosophila pseudoobscura pseudoobscura (Fruit fly)	46245	23331	metazoa_nonvert			swept
+UP000002282	Drosophila yakuba (Fruit fly)	7245	20727	metazoa_nonvert			swept
+UP000002320	Culex quinquefasciatus (Southern house mosquito) (Culex pungens)	7176	18868	metazoa_nonvert			swept
+UP000002358	Nasonia vitripennis (Parasitic wasp)	7425	24858	metazoa_nonvert			swept
+UP000005203	Apis mellifera (Honeybee)	7460	19057	metazoa_nonvert			swept
+UP000005204	Bombyx mori (Silk moth)	7091	23640	metazoa_nonvert			swept
+UP000005205	Atta cephalotes (Leafcutter ant)	12957	10634	metazoa_nonvert			swept
+UP000005237	Caenorhabditis japonica	281687	35024	metazoa_nonvert			swept
+UP000005239	Pristionchus pacificus (Parasitic nematode worm)	54126	26122	metazoa_nonvert			swept
+UP000005408	Magallana gigas (Pacific oyster) (Crassostrea gigas)	29159	57874	metazoa_nonvert			swept
+UP000006672	Brugia malayi (Filarial nematode worm)	6279	15168	metazoa_nonvert			swept
+UP000007062	Anopheles gambiae (African malaria mosquito)	7165	14559	metazoa_nonvert			swept
+UP000007110	Strongylocentrotus purpuratus (Purple sea urchin)	7668	34417	metazoa_nonvert			swept
+UP000007151	Danaus plexippus plexippus	278856	15140	metazoa_nonvert			swept
+UP000007266	Tribolium castaneum (Red flour beetle)	7070	18505	metazoa_nonvert			swept
+UP000007755	Acromyrmex echinatior (Panamanian leafcutter ant) (Acromyrmex octospinosus echinatior)	103372	13962	metazoa_nonvert			swept
+UP000007798	Drosophila willistoni (Fruit fly)	7260	14806	metazoa_nonvert			swept
+UP000007801	Drosophila ananassae (Fruit fly)	7217	19362	metazoa_nonvert			swept
+UP000007819	Acyrthosiphon pisum (Pea aphid)	7029	23442	metazoa_nonvert			swept
+UP000007875	Ciona savignyi (Pacific transparent sea squirt)	51511	20004	metazoa_nonvert			swept
+UP000007879	Amphimedon queenslandica (Sponge)	400682	22831	metazoa_nonvert			swept
+UP000008068	Caenorhabditis brenneri (Nematode worm)	135651	29982	metazoa_nonvert			swept
+UP000008144	Ciona intestinalis (Transparent sea squirt) (Ascidia intestinalis)	7719	17311	metazoa_nonvert			swept
+UP000008237	Harpegnathos saltator (Jerdon's jumping ant)	610380	15029	metazoa_nonvert			swept
+UP000008281	Caenorhabditis remanei (Caenorhabditis vulgaris)	31234	31252	metazoa_nonvert			swept
+UP000008711	Drosophila erecta (Fruit fly)	7220	17348	metazoa_nonvert			swept
+UP000008744	Drosophila persimilis (Fruit fly)	7234	16754	metazoa_nonvert			swept
+UP000008792	Drosophila virilis (Fruit fly)	7244	18316	metazoa_nonvert			swept
+UP000008820	Aedes aegypti (Yellowfever mosquito) (Culex aegypti)	7159	20643	metazoa_nonvert			swept
+UP000008854	Schistosoma mansoni (Blood fluke)	6183	10771	metazoa_nonvert			swept
+UP000008909	Clonorchis sinensis (Chinese liver fluke)	79923	13606	metazoa_nonvert			swept
+UP000009022	Trichoplax adhaerens (Trichoplax reptans)	10228	11520	metazoa_nonvert			swept
+UP000009046	Pediculus humanus subsp. corporis (Body louse)	121224	10776	metazoa_nonvert			swept
+UP000009192	Drosophila mojavensis (Fruit fly)	7230	18165	metazoa_nonvert			swept
+UP000014500	Strigamia maritima (European centipede) (Geophilus maritimus)	126957	14972	metazoa_nonvert			swept
+UP000014760	Capitella teleta (Polychaete worm)	283909	31857	metazoa_nonvert			swept
+UP000015101	Helobdella robusta (Californian leech)	6412	23328	metazoa_nonvert			swept
+UP000015102	Megaselia scalaris (Humpbacked fly) (Phora scalaris)	36166	11463	metazoa_nonvert			swept
+UP000015103	Rhodnius prolixus (Triatomid bug)	13249	14974	metazoa_nonvert			swept
+UP000015104	Tetranychus urticae (Two-spotted spider mite)	32264	17526	metazoa_nonvert			swept
+UP000017246	Echinococcus multilocularis (Fox tapeworm)	6211	10472	metazoa_nonvert			swept
+UP000019118	Dendroctonus ponderosae (Mountain pine beetle)	77166	17726	metazoa_nonvert			swept
+UP000019149	Echinococcus granulosus (Hydatid tapeworm)	6210	11279	metazoa_nonvert			swept
+UP000024404	Onchocerca volvulus	6282	12223	metazoa_nonvert			swept
+UP000024635	Ancylostoma ceylanicum	53326	65375	metazoa_nonvert			swept
+UP000025227	Haemonchus contortus (Barber pole worm)	6289	20964	metazoa_nonvert			swept
+UP000027135	Zootermopsis nevadensis (Dampwood termite)	136037	14539	metazoa_nonvert			swept
+UP000030665	Trichuris trichiura (Whipworm) (Trichocephalus trichiurus)	36087	9624	metazoa_nonvert			swept
+UP000030746	Lottia gigantea (Giant owl limpet)	225164	23675	metazoa_nonvert			swept
+UP000030764	Trichuris suis (pig whipworm)	68888	14189	metazoa_nonvert			swept
+UP000030765	Anopheles sinensis (Mosquito)	74873	19343	metazoa_nonvert			swept
+UP000031036	Toxocara canis (Canine roundworm)	6265	18499	metazoa_nonvert			swept
+UP000035642	Angiostrongylus cantonensis (Rat lungworm)	6313	14504	metazoa_nonvert			swept
+UP000035680	Strongyloides venezuelensis (Threadworm)	75913	16624	metazoa_nonvert			swept
+UP000035681	Strongyloides stercoralis (Threadworm)	6248	15552	metazoa_nonvert			swept
+UP000035682	Strongyloides ratti (Parasitic roundworm)	34506	12456	metazoa_nonvert			swept
+UP000036403	Lasius niger (Black garden ant)	67767	18044	metazoa_nonvert			swept
+UP000037069	Lucilia cuprina (Green bottle fly) (Australian sheep blowfly)	7375	14353	metazoa_nonvert			swept
+UP000037510	Operophtera brumata (Winter moth) (Phalaena brumata)	104452	16814	metazoa_nonvert			swept
+UP000038045	Parastrongyloides trichosuri (Possum-specific nematode worm)	131310	14892	metazoa_nonvert			swept
+UP000046392	Strongyloides papillosus (Intestinal threadworm)	174720	18232	metazoa_nonvert			swept
+UP000046393	Syphacia muris	451379	11114	metazoa_nonvert			swept
+UP000046395	Trichuris muris (Mouse whipworm)	70415	13960	metazoa_nonvert			swept
+UP000050640	Elaeophora elaphi	1147741	10407	metazoa_nonvert			swept
+UP000050741	Globodera pallida (Potato cyst nematode worm) (Heterodera pallida)	36090	16295	metazoa_nonvert			swept
+UP000050792	Schistosoma rodhaini	6188	19435	metazoa_nonvert			swept
+UP000050794	Toxocara canis (Canine roundworm)	6265	20249	metazoa_nonvert			swept
+UP000050795	Trichobilharzia regenti (Nasal bird schistosome)	157069	20231	metazoa_nonvert			swept
+UP000051574	Oryctes borbonicus	1629725	8820	metazoa_nonvert			swept
+UP000053097	Ooceraea biroi (Clonal raider ant) (Cerapachys biroi)	2015173	16497	metazoa_nonvert			swept
+UP000053105	Melipona quadrifasciata	166423	14253	metazoa_nonvert			swept
+UP000053240	Papilio machaon (Old World swallowtail butterfly)	76193	15461	metazoa_nonvert			swept
+UP000053268	Papilio xuthus (Asian swallowtail butterfly)	66420	15265	metazoa_nonvert			swept
+UP000053660	Oesophagostomum dentatum (Nodular worm)	61180	25133	metazoa_nonvert			swept
+UP000053676	Necator americanus (Human hookworm)	51031	19125	metazoa_nonvert			swept
+UP000053766	Dictyocaulus viviparus (Bovine lungworm)	29172	14161	metazoa_nonvert			swept
+UP000053825	Habropoda laboriosa	597456	12781	metazoa_nonvert			swept
+UP000054047	Ancylostoma duodenale	51022	27403	metazoa_nonvert			swept
+UP000054324	Opisthorchis viverrini (Southeast Asian liver fluke)	6198	16307	metazoa_nonvert			swept
+UP000054359	Stegodyphus mimosarum (African social velvet spider)	407821	27009	metazoa_nonvert			swept
+UP000054495	Ancylostoma ceylanicum	53326	15861	metazoa_nonvert			swept
+UP000054630	Trichinella nelsoni	6336	16597	metazoa_nonvert			swept
+UP000054653	Trichinella britovi (Parasitic roundworm)	45882	19931	metazoa_nonvert			swept
+UP000054721	Trichinella nativa	6335	16771	metazoa_nonvert			swept
+UP000054776	Trichinella spiralis (Trichina worm)	6334	18572	metazoa_nonvert			swept
+UP000054783	Trichinella patagoniensis	990121	18337	metazoa_nonvert			swept
+UP000054805	Trichinella pseudospiralis (Parasitic roundworm)	6337	16171	metazoa_nonvert			swept
+UP000054843	Trichinella papuae	268474	15285	metazoa_nonvert			swept
+UP000054995	Trichinella pseudospiralis (Parasitic roundworm)	6337	14319	metazoa_nonvert			swept
+UP000055024	Trichinella zimbabwensis	268475	18195	metazoa_nonvert			swept
+UP000055048	Trichinella murrelli	144512	17983	metazoa_nonvert			swept
+UP000069272	Anopheles albimanus (New world malaria mosquito)	7167	12489	metazoa_nonvert			swept
+UP000070412	Sarcoptes scabiei (Itch mite) (Acarus scabiei)	52283	9161	metazoa_nonvert			swept
+UP000075809	Mycetomoellerius zeteki	64791	14302	metazoa_nonvert			swept
+UP000075840	Anopheles arabiensis (Mosquito)	7173	13818	metazoa_nonvert			swept
+UP000075880	Anopheles atroparvus (European mosquito)	41427	15529	metazoa_nonvert			swept
+UP000075881	Anopheles christyi	43041	10929	metazoa_nonvert			swept
+UP000075883	Anopheles culicifacies	139723	14342	metazoa_nonvert			swept
+UP000075884	Anopheles dirus	7168	13101	metazoa_nonvert			swept
+UP000075885	Anopheles epiroticus	199890	11991	metazoa_nonvert			swept
+UP000075886	Anopheles farauti	69004	13014	metazoa_nonvert			swept
+UP000075901	Anopheles maculatus	74869	14865	metazoa_nonvert			swept
+UP000075902	Anopheles melas	34690	15232	metazoa_nonvert			swept
+UP000075903	Anopheles merus (Mosquito)	30066	13295	metazoa_nonvert			swept
+UP000075920	Anopheles minimus	112268	12975	metazoa_nonvert			swept
+UP000076407	Anopheles quadriannulatus (Mosquito)	34691	13801	metazoa_nonvert			swept
+UP000076408	Anopheles stephensi (Indo-Pakistan malaria mosquito)	30069	11768	metazoa_nonvert			swept
+UP000076502	Dufourea novaeangliae (Sweat bee)	178035	11355	metazoa_nonvert			swept
+UP000076858	Daphnia magna	35525	26600	metazoa_nonvert			swept
+UP000078046	Intoshia linei	1819745	8720	metazoa_nonvert			swept
+UP000078200	Glossina austeni (Savannah tsetse fly)	7395	19647	metazoa_nonvert			swept
+UP000078492	Trachymyrmex cornetzi	471704	18657	metazoa_nonvert			swept
+UP000078540	Atta colombica	520822	14143	metazoa_nonvert			swept
+UP000078541	Trachymyrmex septentrionalis	34720	15167	metazoa_nonvert			swept
+UP000078542	Cyphomyrmex costatus	456900	15716	metazoa_nonvert			swept
+UP000079169	Diaphorina citri (Asian citrus psyllid)	121845	21517	metazoa_nonvert			swept
+UP000085678	Lingula anatina (Brachiopod) (Lingula unguis)	7574	34415	metazoa_nonvert			swept
+UP000091820	Glossina brevipalpis	37001	14631	metazoa_nonvert			swept
+UP000092443	Glossina fuscipes	7396	17759	metazoa_nonvert			swept
+UP000092444	Glossina morsitans morsitans (Savannah tsetse fly)	37546	12910	metazoa_nonvert			swept
+UP000092445	Glossina pallidipes (Tsetse fly)	7398	19235	metazoa_nonvert			swept
+UP000092460	Glossina palpalis gambiensis	67801	19957	metazoa_nonvert			swept
+UP000092461	Lutzomyia longipalpis (Sand fly)	7200	10419	metazoa_nonvert			swept
+UP000092462	Phlebotomus papatasi (Sandfly)	29031	11386	metazoa_nonvert			swept
+UP000094527	Orchesella cincta (Springtail) (Podura cincta)	48709	20218	metazoa_nonvert			swept
+UP000095280	Macrostomum lignano	282301	52448	metazoa_nonvert			swept
+UP000095281	Meloidogyne hapla (Root-knot nematode worm)	6305	14379	metazoa_nonvert			swept
+UP000095282	Caenorhabditis tropicalis	1561998	27198	metazoa_nonvert			swept
+UP000095285	Loa loa (Eye worm) (Filaria loa)	7209	12226	metazoa_nonvert			swept
+UP000095300	Stomoxys calcitrans (Stable fly) (Conops calcitrans)	35570	18841	metazoa_nonvert			swept
+UP000183832	Clunio marinus	568069	22544	metazoa_nonvert			swept
+UP000186922	Ramazzottius varieornatus (Water bear) (Tardigrade)	947166	22940	metazoa_nonvert			swept
+UP000192223	Agrilus planipennis (Emerald ash borer) (Agrilus marcopoli)	224129	18772	metazoa_nonvert			swept
+UP000192247	Tropilaelaps mercedesae	418985	14292	metazoa_nonvert			swept
+UP000192578	Hypsibius exemplaris (Freshwater tardigrade)	2072580	20832	metazoa_nonvert			swept
+UP000194236	Euroglyphus maynei (Mayne's house dust mite)	6958	15246	metazoa_nonvert			swept
+UP000198287	Folsomia candida (Springtail)	158441	28565	metazoa_nonvert			swept
+UP000215335	Trichomalopsis sarcophagae	543379	16064	metazoa_nonvert			swept
+UP000215902	Macrostomum lignano	282301	43466	metazoa_nonvert			swept
+UP000216463	Caenorhabditis latens	1503980	25394	metazoa_nonvert			swept
+UP000216624	Caenorhabditis remanei (Caenorhabditis vulgaris)	31234	25466	metazoa_nonvert			swept
+UP000218231	Diploscapter pachys	2018661	33981	metazoa_nonvert			swept
+UP000225706	Stylophora pistillata (Smooth cauliflower coral)	50429	23873	metazoa_nonvert			swept
+UP000230066	Fasciola hepatica (Liver fluke)	6192	11190	metazoa_nonvert			swept
+UP000230423	Teladorsagia circumcincta (Brown stomach worm) (Ostertagia circumcincta)	45464	25373	metazoa_nonvert			swept
+UP000230750	Apostichopus japonicus (Japanese spiky sea cucumber) (Stichopus japonicus)	307972	30032	metazoa_nonvert			swept
+UP000235965	Cryptotermes secundus	105785	27252	metazoa_nonvert			swept
+UP000242188	Mizuhopecten yessoensis (Japanese scallop) (Patinopecten yessoensis)	6573	22409	metazoa_nonvert			swept
+UP000242457	Apis cerana cerana (Oriental honeybee)	94128	9931	metazoa_nonvert			swept
+UP000242913	Onchocerca flexuosa	387005	8122	metazoa_nonvert			swept
+UP000243686	Opisthorchis viverrini (Southeast Asian liver fluke)	6198	10745	metazoa_nonvert			swept
+UP000249218	Helicoverpa armigera (Cotton bollworm) (Heliothis armigera)	29058	8765	metazoa_nonvert			swept
+UP000250275	Eufriesea mexicana	516756	7068	metazoa_nonvert			swept
+UP000252519	Ancylostoma caninum (Dog hookworm)	29170	29972	metazoa_nonvert			swept
+UP000267027	Angiostrongylus costaricensis (Nematode worm)	334426	13350	metazoa_nonvert			swept
+UP000267029	Mesocestoides corti (Flatworm)	53468	10572	metazoa_nonvert			swept
+UP000267096	Anisakis simplex (Herring worm)	6269	20779	metazoa_nonvert			swept
+UP000267606	Onchocerca flexuosa	387005	16057	metazoa_nonvert			swept
+UP000268014	Haemonchus placei (Barber's pole worm)	6290	21409	metazoa_nonvert			swept
+UP000268350	Drosophila guanche (Fruit fly)	7266	17569	metazoa_nonvert			swept
+UP000270094	Strongylus vulgaris (Blood worm)	40348	20844	metazoa_nonvert			swept
+UP000270296	Soboliphyme baturini	241478	13153	metazoa_nonvert			swept
+UP000270924	Wuchereria bancrofti	6293	13000	metazoa_nonvert			swept
+UP000271087	Onchocerca ochengi (Filarial nematode worm)	42157	13353	metazoa_nonvert			swept
+UP000271098	Gongylonema pulchrum	637853	26895	metazoa_nonvert			swept
+UP000271162	Nippostrongylus brasiliensis (Rat hookworm)	27835	22636	metazoa_nonvert			swept
+UP000271889	Cylicostephanus goldi (Nematode worm)	71465	13786	metazoa_nonvert			swept
+UP000271974	Elysia chlorotica (Eastern emerald elysia) (Sea slug)	188477	23836	metazoa_nonvert			swept
+UP000272942	Echinostoma caproni	27848	18535	metazoa_nonvert			swept
+UP000274131	Enterobius vermicularis (Human pinworm)	51028	12840	metazoa_nonvert			swept
+UP000274429	Hydatigera taeniaeformis (Feline tapeworm) (Taenia taeniaeformis)	6205	11591	metazoa_nonvert			swept
+UP000274756	Dracunculus medinensis (Guinea worm)	318479	10868	metazoa_nonvert			swept
+UP000275408	Pocillopora damicornis (Cauliflower coral) (Millepora damicornis)	46731	25411	metazoa_nonvert			swept
+UP000275846	Schistocephalus solidus (Tapeworm)	70667	20172	metazoa_nonvert			swept
+UP000276776	Thelazia callipaeda (Oriental eyeworm) (Parasitic nematode)	103827	10885	metazoa_nonvert			swept
+UP000276991	Acanthocheilonema viteae (Filarial nematode worm) (Dipetalonema viteae)	6277	10007	metazoa_nonvert			swept
+UP000277928	Litomosoides sigmodontis (Filarial nematode worm)	42156	9894	metazoa_nonvert			swept
+UP000278627	Brugia pahangi (Filarial nematode worm)	6280	14545	metazoa_nonvert			swept
+UP000278807	Rodentolepis nana (Dwarf tapeworm) (Hymenolepis nana)	102285	13592	metazoa_nonvert			swept
+UP000280834	Brugia timori	42155	15861	metazoa_nonvert			swept
+UP000281553	Dibothriocephalus latus (Fish tapeworm) (Diphyllobothrium latum)	60516	19927	metazoa_nonvert			swept
+UP000282613	Taenia asiatica (Asian tapeworm)	60517	10244	metazoa_nonvert			swept
+UP000283509	Penaeus vannamei (Whiteleg shrimp) (Litopenaeus vannamei)	6689	25399	metazoa_nonvert			swept
+UP000285301	Dinothrombium tinctorium	1965070	13518	metazoa_nonvert			swept
+UP000288716	Leptotrombidium deliense	299467	14651	metazoa_nonvert			swept
+UP000290809	Schistosoma bovis (Blood fluke)	6184	11348	metazoa_nonvert			swept
+UP000291343	Laodelphax striatellus (Small brown planthopper) (Delphax striatella)	195883	17309	metazoa_nonvert			swept
+UP000292052	Asbolus verrucosus (Blue death-feigning beetle)	1661398	15225	metazoa_nonvert			swept
+UP000295192	Drosophila navojoa (Fruit fly)	7232	15505	metazoa_nonvert			swept
+UP000297026	Diachasma alloeum	454923	431	metazoa_nonvert			swept
+UP000301870	Spodoptera litura (Asian cotton leafworm)	69820	20624	metazoa_nonvert			swept
+UP000308267	Opisthorchis felineus	147828	18330	metazoa_nonvert			swept
+UP000310200	Temnothorax longispinosus	300112	13035	metazoa_nonvert			swept
+UP000311919	Schistosoma japonicum (Blood fluke)	6182	14733	metazoa_nonvert			swept
+UP000316759	Fasciola gigantica (Giant liver fluke)	46835	12643	metazoa_nonvert			swept
+UP000321570	Hymenolepis diminuta (Rat tapeworm)	6216	18691	metazoa_nonvert			swept
+UP000322000	Trichoplusia ni (Cabbage looper)	7111	20891	metazoa_nonvert			swept
+UP000324629	Paragonimus westermani	34504	12535	metazoa_nonvert			swept
+UP000324832	Leptidea sinapis	189913	19862	metazoa_nonvert			swept
+UP000325440	Cinara cedri	506608	22140	metazoa_nonvert			swept
+UP000326759	Armadillidium nasatum	96803	14427	metazoa_nonvert			swept
+UP000327044	Photinus pyralis (Common eastern firefly) (Lampyris pyralis)	7054	14952	metazoa_nonvert			swept
+UP000410492	Callosobruchus maculatus (Southern cowpea weevil) (Pulse bruchid)	64391	30448	metazoa_nonvert			swept
+UP000440578	Amphibalanus amphitrite (Striped barnacle) (Balanus amphitrite)	1232801	26159	metazoa_nonvert			swept
+UP000466442	Apolygus lucorum (Small green plant bug) (Lygocoris lucorum)	248454	19942	metazoa_nonvert			swept
+UP000471633	Schistosoma haematobium (Blood fluke)	6185	14543	metazoa_nonvert			swept
+UP000475862	Aphis glycines (Soybean aphid)	307491	18358	metazoa_nonvert			swept
+UP000479190	Trichogramma brassicae	86971	16797	metazoa_nonvert			swept
+UP000479987	Nylanderia fulva	613905	426	metazoa_nonvert			swept
+UP000492821	Panagrellus redivivus (Microworm)	6233	26334	metazoa_nonvert			swept
+UP000494040	Cimex lectularius (Bed bug) (Acanthia lectularia)	79782	20637	metazoa_nonvert			swept
+UP000494106	Arctia plantaginis (Wood tiger moth) (Phalaena plantaginis)	874455	19669	metazoa_nonvert			swept
+UP000494163	Drosophila busckii (Fruit fly)	30019	11911	metazoa_nonvert			swept
+UP000494165	Cloeon dipterum	197152	29886	metazoa_nonvert			swept
+UP000494206	Caenorhabditis bovis	2654633	15096	metazoa_nonvert			swept
+UP000502823	Coptotermes formosanus (Formosan subterranean termite)	36987	12806	metazoa_nonvert			swept
+UP000504606	Frankliniella occidentalis (Western flower thrips) (Euthrips occidentalis)	133901	23245	metazoa_nonvert			swept
+UP000504615	Pogonomyrmex barbatus (red harvester ant)	144034	16171	metazoa_nonvert			swept
+UP000504618	Temnothorax curvispinosus	300111	21925	metazoa_nonvert			swept
+UP000504629	Bombyx mandarina (Wild silk moth) (Wild silkworm)	7092	17282	metazoa_nonvert			swept
+UP000504631	Bombus vosnesenskii	207650	19375	metazoa_nonvert			swept
+UP000504633	Drosophila hydei (Fruit fly)	7224	18596	metazoa_nonvert			swept
+UP000504634	Drosophila lebanonensis (Fruit fly) (Scaptodrosophila lebanonensis)	7225	17832	metazoa_nonvert			swept
+UP000504635	Sitophilus oryzae (Rice weevil) (Curculio oryzae)	7048	20363	metazoa_nonvert			swept
+UP000507470	Mytilus coruscus (Sea mussel)	42192	64248	metazoa_nonvert			swept
+UP000515135	Branchiostoma belcheri (Amphioxus)	7741	31616	metazoa_nonvert			swept
+UP000515154	Octopus sinensis (East Asian common octopus)	2607531	30311	metazoa_nonvert			swept
+UP000515158	Thrips palmi (Melon thrips)	161013	20983	metazoa_nonvert			swept
+UP000515160	Drosophila albomicans (Fruit fly)	7291	21410	metazoa_nonvert			swept
+UP000515162	Drosophila mauritiana (Fruit fly)	7226	20916	metazoa_nonvert			swept
+UP000515163	Actinia tenebrosa (Australian red waratah sea anemone)	6105	23843	metazoa_nonvert			swept
+UP000515164	Bombus bifarius	103933	19309	metazoa_nonvert			swept
+UP000515180	Bombus impatiens (Bumblebee)	132113	19194	metazoa_nonvert			swept
+UP000515204	Dinoponera quadriceps (South American ant)	609295	17673	metazoa_nonvert			swept
+UP000549394	Dimorphilus gyrociliatus	2664684	16145	metazoa_nonvert			swept
+UP000593567	Bugula neritina (Brown bryozoan) (Sertularia neritina)	10212	25017	metazoa_nonvert			swept
+UP000594260	Varroa destructor (Honeybee mite)	109461	20096	metazoa_nonvert			swept
+UP000594262	Clytia hemisphaerica	252671	24557	metazoa_nonvert			swept
+UP000594454	Hermetia illucens (Black soldier fly)	343691	17495	metazoa_nonvert			swept
+UP000596742	Mytilus galloprovincialis (Mediterranean mussel)	29158	77763	metazoa_nonvert			swept
+UP000600918	Vespula pensylvanica (Western yellow jacket) (Wasp)	30213	18484	metazoa_nonvert			swept
+UP000605970	Meloidogyne graminicola	189291	10083	metazoa_nonvert			swept
+UP000606786	Ceratitis capitata (Mediterranean fruit fly) (Tephritis capitata)	7213	19878	metazoa_nonvert			swept
+UP000614350	Vespula vulgaris (Yellow jacket) (Wasp)	7454	15506	metazoa_nonvert			swept
+UP000614601	Bursaphelenchus okinawaensis	465554	14486	metazoa_nonvert			swept
+UP000617340	Vespula germanica (German yellow jacket) (Paravespula germanica)	30212	17178	metazoa_nonvert			swept
+UP000625711	Rhynchophorus ferrugineus (Red palm weevil) (Curculio ferrugineus)	354439	24802	metazoa_nonvert			swept
+UP000639338	Aphidius gifuensis (Parasitoid wasp)	684658	11457	metazoa_nonvert			swept
+UP000648187	Spodoptera exigua (Beet armyworm) (Noctua fulgens)	7107	14288	metazoa_nonvert			swept
+UP000653454	Plutella xylostella (Diamondback moth) (Plutella maculipennis)	51655	16948	metazoa_nonvert			swept
+UP000655588	Frieseomelitta varia	561572	11113	metazoa_nonvert			swept
+UP000659654	Bursaphelenchus xylophilus (Pinewood nematode worm) (Aphelenchoides xylophilus)	6326	15766	metazoa_nonvert			swept
+UP000663828	Adineta ricciae (Rotifer)	249248	64111	metazoa_nonvert			swept
+UP000663829	Didymodactylos carnosus	1234261	46721	metazoa_nonvert			swept
+UP000663832	Adineta steineri	433720	58276	metazoa_nonvert			swept
+UP000663866	Rotaria magnacalcarata	392030	50840	metazoa_nonvert			swept
+UP000663870	Rotaria sordida	392033	56912	metazoa_nonvert			swept
+UP000663873	Rotaria socialis	392032	49357	metazoa_nonvert			swept
+UP000663879	Brachionus calyciflorus	104777	24300	metazoa_nonvert			swept
+UP000663880	Pieris macdunnoughi	345717	18615	metazoa_nonvert			swept
+UP000667349	Acromyrmex insinuator	230686	8949	metazoa_nonvert			swept
+UP000668214	Pseudoatta argentina	621737	9266	metazoa_nonvert			swept
+UP000669903	Acromyrmex charruanus	2715315	8957	metazoa_nonvert			swept
+UP000670152	Acromyrmex heyeri	230685	9100	metazoa_nonvert			swept
+UP000675881	Lepeophtheirus salmonis (Salmon louse) (Caligus salmonis)	72036	17041	metazoa_nonvert			swept
+UP000677054	Darwinula stevensoni	69355	15613	metazoa_nonvert			swept
+UP000678393	Candidula unifasciata	100452	22446	metazoa_nonvert			swept
+UP000678499	Notodromas monacha	399045	14003	metazoa_nonvert			swept
+UP000683360	Mytilus edulis (Blue mussel)	6550	73624	metazoa_nonvert			swept
+UP000691718	Parnassius apollo (Apollo butterfly) (Papilio apollo)	110799	29850	metazoa_nonvert			swept
+UP000694843	Hyalella azteca (Mexican freshwater shrimp) (Ampithoe aztecus)	294128	21129	metazoa_nonvert			swept
+UP000694844	Crassostrea virginica (Eastern oyster)	6565	50256	metazoa_nonvert			swept
+UP000694845	Acanthaster planci (Crown-of-thorns starfish)	133434	25685	metazoa_nonvert			swept
+UP000694846	Sipha flava (yellow sugarcane aphid)	143950	18157	metazoa_nonvert			swept
+UP000694865	Saccoglossus kowalevskii (Acorn worm)	10224	22982	metazoa_nonvert			swept
+UP000694866	Fopius arisanus	64838	15684	metazoa_nonvert			swept
+UP000694867	Galendromus occidentalis (western predatory mite)	34638	11652	metazoa_nonvert			swept
+UP000694888	Aplysia californica (California sea hare)	6500	23268	metazoa_nonvert			swept
+UP000694904	Drosophila arizonae (Fruit fly)	7263	18139	metazoa_nonvert			swept
+UP000694920	Cephus cinctus (Wheat stem sawfly)	211228	23690	metazoa_nonvert			swept
+UP000694924	Polistes dominula (European paper wasp) (Vespa dominula)	743375	16591	metazoa_nonvert			swept
+UP000694925	Ceratina calcarata	156304	18564	metazoa_nonvert			swept
+UP000694941	Limulus polyphemus (Atlantic horseshoe crab)	6850	31306	metazoa_nonvert			swept
+UP000695000	Nicrophorus vespilloides (Boreal carrion beetle)	110193	17606	metazoa_nonvert			swept
+UP000695007	Ceratosolen solmsi marchali	326594	11647	metazoa_nonvert			swept
+UP000695022	Priapulus caudatus (Priapulid worm)	37621	18404	metazoa_nonvert			swept
+UP000699462	Paragonimus westermani	34504	12048	metazoa_nonvert			swept
+UP000708208	Allacma fusca	39272	50569	metazoa_nonvert			swept
+UP000719412	Tenebrio molitor (Yellow mealworm beetle)	7067	15190	metazoa_nonvert			swept
+UP000728032	Oppiella nova	334625	23438	metazoa_nonvert			swept
+UP000728185	Fasciolopsis buskii	27845	11809	metazoa_nonvert			swept
+UP000729913	Cotesia typhae	2053667	8420	metazoa_nonvert			swept
+UP000746747	Cercopithifilaria johnstoni	2874296	11543	metazoa_nonvert			swept
+UP000747542	Homarus americanus (American lobster)	6706	24357	metazoa_nonvert			swept
+UP000748531	Paragonimus heterotremus	100268	12468	metazoa_nonvert			swept
+UP000749559	Owenia fusiformis (Polychaete worm)	6347	30622	metazoa_nonvert			swept
+UP000752696	Heterotrigona itama	395501	9721	metazoa_nonvert			swept
+UP000759131	Medioppia subpectinata	1979941	23182	metazoa_nonvert			swept
+UP000770661	Chionoecetes opilio (Atlantic snow crab) (Cancer opilio)	41210	22426	metazoa_nonvert			swept
+UP000786811	Cotesia congregata (Parasitoid wasp) (Apanteles congregatus)	51543	13934	metazoa_nonvert			swept
+UP000789390	Daphnia galeata	27404	15633	metazoa_nonvert			swept
+UP000789524	Danaus chrysippus (African queen)	151541	19335	metazoa_nonvert			swept
+UP000790347	Dermatophagoides farinae (American house dust mite)	6954	16377	metazoa_nonvert			swept
+UP000791440	Manduca sexta (Tobacco hawkmoth) (Tobacco hornworm)	7130	21008	metazoa_nonvert			swept
+UP000792457	Ladona fulva (Scarce chaser dragonfly) (Libellula fulva)	123851	18636	metazoa_nonvert			swept
+UP000801492	Ignelater luminosus (Cucubano) (Pyrophorus luminosus)	2038154	27488	metazoa_nonvert			swept
+UP000805193	Ixodes persulcatus (Taiga tick)	34615	28396	metazoa_nonvert			swept
+UP000807504	Argiope bruennichi (Wasp spider) (Aranea bruennichi)	94029	26272	metazoa_nonvert			swept
+UP000821845	Hyalomma asiaticum (Tick)	266040	27599	metazoa_nonvert			swept
+UP000821865	Dermacentor silvarum (Tick)	543639	25660	metazoa_nonvert			swept
+UP000822476	Paragonimus skrjabini miyazakii	59628	12629	metazoa_nonvert			swept
+UP000824380	Venturia canescens	32260	82	metazoa_nonvert			swept
+UP000824533	Dendrolimus kikuchii	765133	15321	metazoa_nonvert			swept
+UP000825002	Fragariocoptes setiger	1670756	3047	metazoa_nonvert			swept
+UP000826195	Cotesia glomerata (Lepidopteran parasitic wasp) (Apanteles glomeratus)	32391	19150	metazoa_nonvert			swept
+UP000827092	Oedothorax gibbosus	931172	31999	metazoa_nonvert			swept
+UP000829291	Neodiprion lecontei (Redheaded pine sawfly)	441921	22250	metazoa_nonvert			swept
+UP000829354	Caenorhabditis briggsae	6238	29167	metazoa_nonvert			swept
+UP000829999	Spodoptera frugiperda (Fall armyworm)	7108	24899	metazoa_nonvert			swept
+UP000835052	Caenorhabditis auriculariae	2777116	16237	metazoa_nonvert			swept
+UP000835206	Bombus terrestris (Buff-tailed bumblebee) (Apis terrestris)	30195	19626	metazoa_nonvert			swept
+UP000837675	Hyalomma marginatum	34627	1152	metazoa_nonvert			swept
+UP000837857	Iphiclides podalirius (scarce swallowtail)	110791	20151	metazoa_nonvert			swept
+UP000838412	Branchiostoma lanceolatum (Common lancelet) (Amphioxus lanceolatum)	7740	38783	metazoa_nonvert			swept
+UP000838756	Pararge aegeria aegeria	348720	28746	metazoa_nonvert			swept
+UP000838878	Brenthis ino (lesser marbled fritillary)	405034	19196	metazoa_nonvert			swept
+UP000887458	Dermatophagoides pteronyssinus (European house dust mite)	6956	14675	metazoa_nonvert			swept
+UP000887540	Acrobeloides nanus	290746	35203	metazoa_nonvert			swept
+UP000887560	Meloidogyne floridensis	298350	12653	metazoa_nonvert			swept
+UP000887561	Meloidogyne javanica (Root-knot nematode worm)	6303	24441	metazoa_nonvert			swept
+UP000887563	Meloidogyne incognita (Southern root-knot nematode worm) (Oxyuris incognita)	6306	42381	metazoa_nonvert			swept
+UP000887566	Plectus sambesii	2011161	39995	metazoa_nonvert			swept
+UP000887567	Exaiptasia diaphana (Tropical sea anemone) (Aiptasia pulchella)	2652724	25273	metazoa_nonvert			swept
+UP000887568	Patiria miniata (Bat star) (Asterina miniata)	46514	30311	metazoa_nonvert			swept
+UP000887569	Parascaris univalens (Nematode worm)	6257	31353	metazoa_nonvert			swept
+UP000887572	Globodera rostochiensis (Golden nematode worm) (Heterodera rostochiensis)	31243	21016	metazoa_nonvert			swept
+UP000887575	Mesorhabditis belari	2138241	22421	metazoa_nonvert			swept
+UP000887577	Panagrolaimus superbus	310955	19584	metazoa_nonvert			swept
+UP000887581	Setaria digitata	48799	10089	metazoa_nonvert			swept
+UP001059596	Drosophila gunungcola (fruit fly)	103775	13885	metazoa_nonvert			swept
+UP001064048	Choristoneura fumiferana (Spruce budworm moth) (Archips fumiferana)	7141	22898	metazoa_nonvert			swept
+UP001105220	Anopheles coluzzii (African malaria mosquito)	1518534	14043	metazoa_nonvert			swept
+UP001152562	Pieris brassicae (White butterfly) (Large white butterfly)	7116	16176	metazoa_nonvert			swept
+UP001152747	Caenorhabditis angaria	860376	19291	metazoa_nonvert			swept
+UP001152759	Bemisia tabaci (Sweetpotato whitefly) (Aleurodes tabaci)	7038	16554	metazoa_nonvert			swept
+UP001152798	Nezara viridula (Southern green stink bug) (Cimex viridulus)	85310	19915	metazoa_nonvert			swept
+UP001152799	Ceutorhynchus assimilis (cabbage seed weevil)	467358	15296	metazoa_nonvert			swept
+UP001152888	Acanthoscelides obtectus (Bean weevil) (Bruchus obtectus)	200917	56839	metazoa_nonvert			swept
+UP001153148	Timema podura (Walking stick)	61482	16641	metazoa_nonvert			swept
+UP001153292	Chilo suppressalis (Asiatic rice borer moth)	168631	12895	metazoa_nonvert			swept
+UP001153321	Spodoptera littoralis (Egyptian cotton leafworm)	7109	13280	metazoa_nonvert			swept
+UP001153620	Chironomus riparius	315576	16483	metazoa_nonvert			swept
+UP001153636	Psylliodes chrysocephalus	3402493	17451	metazoa_nonvert			swept
+UP001153709	Diabrotica balteata (Banded cucumber beetle)	107213	15880	metazoa_nonvert			swept
+UP001153712	Phyllotreta striolata (Striped flea beetle) (Crioceris striolata)	444603	12162	metazoa_nonvert			swept
+UP001153714	Diatraea saccharalis (sugarcane borer)	40085	16115	metazoa_nonvert			swept
+UP001153737	Phaedon cochleariae (Mustard beetle)	80249	13351	metazoa_nonvert			swept
+UP001153954	Euphydryas editha (Edith's checkerspot)	104508	25698	metazoa_nonvert			swept
+UP001154078	Brassicogethes aeneus (Rape pollen beetle) (Meligethes aeneus)	1431903	15965	metazoa_nonvert			swept
+UP001154114	Chrysodeixis includens (Soybean looper) (Pseudoplusia includens)	689277	14731	metazoa_nonvert			swept
+UP001154329	Aphis gossypii (Cotton aphid)	80765	15271	metazoa_nonvert			swept
+UP001158576	Oikopleura dioica (Tunicate)	34765	18603	metazoa_nonvert			swept
+UP001159042	Exocentrus adspersus	1586481	16827	metazoa_nonvert			swept
+UP001159405	Porites lobata	104759	42611	metazoa_nonvert			swept
+UP001159427	Porites evermanni	104178	39801	metazoa_nonvert			swept
+UP001159428	Pocillopora meandrina	46732	31944	metazoa_nonvert			swept
+UP001160148	Macrosiphum euphorbiae (potato aphid)	13131	33432	metazoa_nonvert			swept
+UP001162156	Rhamnusium bicolor	1586634	19372	metazoa_nonvert			swept
+UP001162162	Aromia moschata	1265417	22090	metazoa_nonvert			swept
+UP001162164	Molorchus minor	1323400	18551	metazoa_nonvert			swept
+UP001162480	Octopus vulgaris (Common octopus)	6645	29931	metazoa_nonvert			swept
+UP001163046	Desmophyllum pertusum	174260	37379	metazoa_nonvert			swept
+UP001164746	Mya arenaria (Soft-shell clam)	6604	37840	metazoa_nonvert			swept
+UP001165289	Oopsacas minuta	111878	16257	metazoa_nonvert			swept
+UP001165740	Biomphalaria glabrata (Bloodfluke planorb) (Freshwater snail)	6526	35507	metazoa_nonvert			swept
+UP001168821	Zophobas morio	2755281	29607	metazoa_nonvert			swept
+UP001168972	Microctonus hyperodae (Parasitoid wasp)	165561	12896	metazoa_nonvert			swept
+UP001168990	Microctonus aethiopoides	144406	13908	metazoa_nonvert			swept
+UP001174909	Geodia barretti (Barrett's horny sponge)	519541	60916	metazoa_nonvert			swept
+UP001175271	Steinernema hermaphroditum	289476	36137	metazoa_nonvert			swept
+UP001176961	Cylicocyclus nassatus (Nematode worm)	53992	22417	metazoa_nonvert			swept
+UP001177023	Mesorhabditis spiculigera	96644	26039	metazoa_nonvert			swept
+UP001177670	Melipona bicolor	60889	21279	metazoa_nonvert			swept
+UP001186944	Pinctada imbricata (Atlantic pearl-oyster) (Pinctada martensii)	66713	25352	metazoa_nonvert			swept
+UP001187531	Artemia franciscana (Brine shrimp) (Artemia sanfranciscana)	6661	23911	metazoa_nonvert			swept
+UP001195483	Potamilus streckersoni	2493646	36954	metazoa_nonvert			swept
+UP001200034	Drosophila rubida	30044	11829	metazoa_nonvert			swept
+UP001201812	Ditylenchus destructor	166010	21174	metazoa_nonvert			swept
+UP001208570	Paralvinella palmiformis	53620	24621	metazoa_nonvert			swept
+UP001209878	Ridgeia piscesae (Tubeworm)	27915	30930	metazoa_nonvert			swept
+UP001217089	Tegillarca granosa (Malaysian cockle) (Anadara granosa)	220873	24806	metazoa_nonvert			swept
+UP001219518	Frankliniella fusca	407009	25147	metazoa_nonvert			swept
+UP001231649	Mythimna loreyi	667449	16857	metazoa_nonvert			swept
+UP001233172	Biomphalaria pfeifferi (Bloodfluke planorb) (Freshwater snail)	112525	30570	metazoa_nonvert			swept
+UP001233999	Diploptera punctata (Pacific beetle cockroach)	6984	28315	metazoa_nonvert			swept
+UP001234178	Daphnia magna	35525	32367	metazoa_nonvert			swept
+UP001235939	Cordylochernes scorpioides	51811	24935	metazoa_nonvert			swept
+UP001239111	Eretmocerus hayati	131215	24463	metazoa_nonvert			swept
+UP001249851	Acropora cervicornis (Staghorn coral)	6130	27986	metazoa_nonvert			swept
+UP001258017	Odynerus spinipes	1348599	14696	metazoa_nonvert			swept
+UP001286313	Petrolisthes cinctipes (Flat porcelain crab)	88211	45198	metazoa_nonvert			swept
+UP001292079	Schistosoma mekongi (Parasitic worm)	38744	9068	metazoa_nonvert			swept
+UP001292094	Petrolisthes manimaculis	1843537	41106	metazoa_nonvert			swept
+UP001303046	Necator americanus (Human hookworm)	51031	41575	metazoa_nonvert			swept
+UP001307889	Nesidiocoris tenuis	355587	16182	metazoa_nonvert			swept
+UP001314205	Parnassius mnemosyne (clouded apollo)	213953	25482	metazoa_nonvert			swept
+UP001321473	Amblyomma americanum (Lone star tick)	6943	33540	metazoa_nonvert			swept
+UP001328107	Pristionchus mayeri	1317129	32572	metazoa_nonvert			swept
+UP001331761	Trichostrongylus colubriformis (Black scour worm)	6319	22279	metazoa_nonvert			swept
+UP001347796	Patella caerulea (Rayed Mediterranean limpet)	87958	28822	metazoa_nonvert			swept
+UP001353858	Aquatica leii	1421715	16446	metazoa_nonvert			swept
+UP001359485	Polyplax serrata (Common mouse louse)	468196	13864	metazoa_nonvert			swept
+UP001367676	Parthenolecanium corni	536013	14559	metazoa_nonvert			swept
+UP001374579	Littorina saxatilis	31220	28814	metazoa_nonvert			swept
+UP001378592	Gryllus longicercus	2509291	18922	metazoa_nonvert			swept
+UP001381693	Halocaridina rubra (Hawaiian red shrimp)	373956	25261	metazoa_nonvert			swept
+UP001430953	Cardiocondyla obscurior	286306	36213	metazoa_nonvert			swept
+UP001431783	Henosepilachna vigintioctopunctata	420089	23681	metazoa_nonvert			swept
+UP001432027	Pristionchus entomophagus	358040	30008	metazoa_nonvert			swept
+UP001432146	Tetragonisca angustula	166442	17407	metazoa_nonvert			swept
+UP001432322	Pristionchus fissidentatus	1538716	28245	metazoa_nonvert			swept
+UP001445076	Cherax quadricarinatus (Australian red claw crayfish)	27406	31051	metazoa_nonvert			swept
+UP001458880	Popillia japonica (Japanese beetle)	7064	35961	metazoa_nonvert			swept
+UP001461498	Rhynocoris fuscipes	488301	15700	metazoa_nonvert			swept
+UP001487740	Scylla paramamosain (Mud crab)	85552	30388	metazoa_nonvert			swept
+UP001497382	Larinioides sclopetarius	280406	40304	metazoa_nonvert			swept
+UP001497472	Leptosia nina	320188	16432	metazoa_nonvert			swept
+UP001497497	Lymnaea stagnalis (Great pond snail) (Helix stagnalis)	6523	22445	metazoa_nonvert			swept
+UP001497535	Meloidogyne enterolobii (Root-knot nematode worm) (Meloidogyne mayaguensis)	390850	45048	metazoa_nonvert			swept
+UP001497623	Meganyctiphanes norvegica (Northern krill) (Thysanopoda norvegica)	48144	41975	metazoa_nonvert			swept
+UP001497644	Lasius platythorax	488582	17870	metazoa_nonvert			swept
+UP001500889	Drosophila madeirensis (Fruit fly)	30013	17869	metazoa_nonvert			swept
+UP001516400	Cryptolaemus montrouzieri	559131	25106	metazoa_nonvert			swept
+UP001519460	Batillaria attramentaria	370345	40206	metazoa_nonvert			swept
+UP001549920	Loxostege sticticalis (Beet webworm moth)	481309	19850	metazoa_nonvert			swept
+UP001558632	Trichinella spiralis (Trichina worm)	6334	12252	metazoa_nonvert			swept
+UP001558652	Ranatra chinensis	642074	14301	metazoa_nonvert			swept
+UP001562425	Culex pipiens pipiens (Northern house mosquito)	38569	20262	metazoa_nonvert			swept
+UP001566132	Hypothenemus hampei (Coffee berry borer)	57062	18281	metazoa_nonvert			swept
+UP001607302	Vespula squamosa (Southern yellow jacket) (Wasp)	30214	18658	metazoa_nonvert			swept
+UP001607303	Vespula maculifrons (Eastern yellow jacket) (Wasp)	7453	21080	metazoa_nonvert			swept
+UP001608902	Gnathostoma spinigerum	75299	11854	metazoa_nonvert			swept
+UP001620626	Heterodera trifolii	157864	37880	metazoa_nonvert			swept
+UP001620645	Heterodera schachtii (Sugarbeet cyst nematode worm) (Tylenchus schachtii)	97005	17674	metazoa_nonvert			swept
+UP001626550	Cichlidogyrus casuarinus	1844966	14453	metazoa_nonvert			swept
+UP001627154	Trichogramma kaykai	54128	24487	metazoa_nonvert			swept
+UP001634394	Sinanodonta woodiana (Chinese pond mussel) (Anodonta woodiana)	1069815	44962	metazoa_nonvert			swept
+UP001642483	Clavelina lepadiformis (Light-bulb sea squirt) (Ascidia lepadiformis)	159417	25263	metazoa_nonvert			swept
+UP001642520	Xylocopa violacea (Violet carpenter bee) (Apis violacea)	135666	19738	metazoa_nonvert			swept
+UP001642540	Orchesella dallaii	48710	33789	metazoa_nonvert			swept
+UP001651158	Taenia crassiceps	6207	10155	metazoa_nonvert			swept
+UP001652582	Bicyclus anynana (Squinting bush brown butterfly)	110368	19296	metazoa_nonvert			swept
+UP001652620	Bactrocera dorsalis (Oriental fruit fly) (Dacus dorsalis)	27457	22491	metazoa_nonvert			swept
+UP001652621	Musca domestica (House fly)	7370	22566	metazoa_nonvert			swept
+UP001652625	Hydra vulgaris (Hydra) (Hydra attenuata)	6087	28759	metazoa_nonvert			swept
+UP001652626	Vanessa tameamea (Kamehameha butterfly)	334116	17371	metazoa_nonvert			swept
+UP001652628	Drosophila suzukii (Spotted-wing drosophila fruit fly)	28584	23889	metazoa_nonvert			swept
+UP001652661	Drosophila kikkawai (Fruit fly)	30033	21108	metazoa_nonvert			swept
+UP001652680	Drosophila rhopaloa (Fruit fly)	1041015	20735	metazoa_nonvert			swept
+UP001652700	Diabrotica virgifera virgifera (western corn rootworm)	50390	27738	metazoa_nonvert			swept
+UP001652740	Galleria mellonella (Greater wax moth)	7137	20018	metazoa_nonvert			swept
+UP001667357	Cyamophila willieti	2604842	15426	metazoa_nonvert			swept
+UP001672501	Sergentomyia squamirostris	2283857	14736	metazoa_nonvert			swept
+UP001674779	Kerria lacca (common lac scale)	473130	10648	metazoa_nonvert			swept
+UP001675883	Semiaphis heraclei	796293	13495	metazoa_nonvert			swept
+UP001697639	Mactra antiquata	2302425	24667	metazoa_nonvert			swept
+UP001724931	Solemya velum (Atlantic awningclam)	13268	18903	metazoa_nonvert			swept
+UP001729258	Megaselia abdita (Humpbacked fly)	88686	17639	metazoa_nonvert			swept
+UP001729289	Mnemiopsis leidyi (Sea walnut) (Warty comb jellyfish)	27923	25028	metazoa_nonvert			swept
+UP001730561	Anthophora quadrimaculata	597840	12666	metazoa_nonvert			swept
+UP001730562	Anthophora plagiata	597819	13647	metazoa_nonvert			swept
+UP001730563	Anthophora retusa	597843	13164	metazoa_nonvert			swept
+UP001730760	Calicophoron daubneyi (Rumen fluke) (Paramphistomum daubneyi)	300641	13072	metazoa_nonvert			swept
+UP001735302	Dermacentor variabilis (American dog tick)	34621	31650	metazoa_nonvert			swept
+UP001735580	Ixodes scapularis (Black-legged tick) (Deer tick)	6945	31574	metazoa_nonvert			swept
+UP000031668	Thelohanellus kitauei (Myxosporean)	669202	14792	metazoa_nonvert			swept
+UP000036681	Ascaris lumbricoides (Giant roundworm)	6252	23559	metazoa_nonvert			swept
+UP000050761	Heligmosomoides polygyrus (Parasitic roundworm)	6339	27451	metazoa_nonvert			swept
+UP000095283	Heterorhabditis bacteriophora (Entomopathogenic nematode worm)	37862	20849	metazoa_nonvert			swept
+UP000095287	Steinernema glaseri	37863	37085	metazoa_nonvert			swept
+UP000230233	Caenorhabditis nigoni	1611254	44209	metazoa_nonvert			swept
+UP000245119	Pomacea canaliculata (Golden apple snail)	400727	21377	metazoa_nonvert			swept
+UP000266721	Mytilus galloprovincialis (Mediterranean mussel)	29158	3147	metazoa_nonvert			swept
+UP000269396	Schistosoma mattheei	31246	22244	metazoa_nonvert			swept
+UP000276133	Brachionus plicatilis (Marine rotifer) (Brachionus muelleri)	10195	52387	metazoa_nonvert			swept
+UP000277204	Schistosoma margrebowiei	48269	25527	metazoa_nonvert			swept
+UP000279833	Schistosoma curassoni	6186	22688	metazoa_nonvert			swept
+UP000286415	Clonorchis sinensis (Chinese liver fluke)	79923	14344	metazoa_nonvert			swept
+UP000298663	Steinernema carpocapsae (Entomopathogenic nematode)	34508	35146	metazoa_nonvert			swept
+UP000299102	Eumeta variegata (Bagworm moth) (Eumeta japonica)	151549	96130	metazoa_nonvert			swept
+UP000318571	Tigriopus californicus (Marine copepod)	6832	15551	metazoa_nonvert			swept
+UP000324222	Portunus trituberculatus (Swimming crab) (Neptunus trituberculatus)	210409	99420	metazoa_nonvert			swept
+UP000478052	Aphis craccivora (Cowpea aphid)	307492	31792	metazoa_nonvert			swept
+UP000479000	Nesidiocoris tenuis	355587	23052	metazoa_nonvert			swept
+UP000499080	Araneus ventricosus (Orbweaver spider) (Epeira ventricosa)	182803	246601	metazoa_nonvert			swept
+UP000595437	Caligus rogercresseyi (Sea louse)	217165	18197	metazoa_nonvert			swept
+UP000597762	Acanthosepion pharaonis (Pharaoh cuttlefish) (Sepia pharaonis)	158019	53515	metazoa_nonvert			swept
+UP000735302	Plakobranchus ocellatus	259542	77140	metazoa_nonvert			swept
+UP000762676	Elysia marginata	1093978	70727	metazoa_nonvert			swept
+UP000784294	Protopolystoma xenopodis	117903	37827	metazoa_nonvert			swept
+UP000820818	Daphnia sinensis	1820382	16523	metazoa_nonvert			swept
+UP000821837	Rhipicephalus sanguineus (Brown dog tick) (Ixodes sanguineus)	34632	25506	metazoa_nonvert			swept
+UP000821853	Haemaphysalis longicornis (Bush tick)	44386	25603	metazoa_nonvert			swept
+UP000821866	Rhipicephalus microplus (Cattle tick) (Boophilus microplus)	6941	29322	metazoa_nonvert			swept
+UP000823941	Plutella xylostella (Diamondback moth) (Plutella maculipennis)	51655	18670	metazoa_nonvert			swept
+UP000828390	Dreissena polymorpha (Zebra mussel) (Mytilus polymorpha)	45954	181328	metazoa_nonvert			swept
+UP000886998	Trichonephila inaurata madagascariensis	2747483	50567	metazoa_nonvert			swept
+UP000887013	Nephila pilipes (Giant wood spider) (Nephila maculata)	299642	67446	metazoa_nonvert			swept
+UP000887116	Trichonephila clavata (Joro spider) (Nephila clavata)	2740835	66373	metazoa_nonvert			swept
+UP000887159	Trichonephila clavipes (Golden silk orbweaver) (Nephila clavipes)	2585209	50497	metazoa_nonvert			swept
+UP000887562	Echinococcus canadensis	519352	1306	metazoa_nonvert			swept
+UP000887564	Parascaris equorum (Equine roundworm)	6256	14468	metazoa_nonvert			swept
+UP000887565	Romanomermis culicivorax (Nematode worm)	13658	48309	metazoa_nonvert			swept
+UP000887574	Ditylenchus dipsaci	166011	27614	metazoa_nonvert			swept
+UP000887578	Panagrolaimus davidi	227884	25683	metazoa_nonvert			swept
+UP001054837	Caerostris darwini	1538125	55519	metazoa_nonvert			swept
+UP001054945	Caerostris extrusa (Bark spider) (Caerostris bankana)	172846	82696	metazoa_nonvert			swept
+UP001056778	Holotrichia oblita (Chafer beetle)	644536	18108	metazoa_nonvert			swept
+UP001075354	Megalurothrips usitatus (bean blossom thrips)	439358	12582	metazoa_nonvert			swept
+UP001107558	Polypedilum vanderplanki (Sleeping chironomid midge)	319348	19076	metazoa_nonvert			swept
+UP001142055	Blomia tropicalis (Mite)	40697	10628	metazoa_nonvert			swept
+UP001148838	Periplaneta americana (American cockroach) (Blatta americana)	6978	27025	metazoa_nonvert			swept
+UP001151699	Pseudolycoriella hygida	35572	17665	metazoa_nonvert			swept
+UP001152320	Holothuria leucospilota (Black long sea cucumber) (Mertensiothuria leucospilota)	206669	33658	metazoa_nonvert			swept
+UP001152795	Paramuricea clavata (Red gorgonian) (Violescent sea-whip)	317549	69559	metazoa_nonvert			swept
+UP001159363	Dryococelus australis	614101	33087	metazoa_nonvert			swept
+UP001189180	Fasciola hepatica (Liver fluke)	6192	851	metazoa_nonvert			swept
+UP001196413	Parelaphostrongylus tenuis (Meningeal worm)	148309	29076	metazoa_nonvert			swept
+UP001231518	Mythimna separata (Oriental armyworm) (Pseudaletia separata)	271217	16944	metazoa_nonvert			swept
+UP001283361	Elysia crispata (lettuce slug)	231223	69785	metazoa_nonvert			swept
+UP001329430	Pyrocoelia pectoralis	417401	13125	metazoa_nonvert			swept
+UP001688483	Uroleucon formosanum	796250	31408	metazoa_nonvert			swept
+UP001712102	Scirpophaga incertulas	72366	19873	metazoa_nonvert			swept
+UP001732900	Taenia solium (Pork tapeworm)	6204	11854	metazoa_nonvert			unavailable

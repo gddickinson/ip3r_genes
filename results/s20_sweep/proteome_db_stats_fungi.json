@@ -1,0 +1,43 @@
+{
+ "db_path": "/Volumes/FANTOM/IP3R_DATA/proteomes/fungi_refprot.fasta",
+ "n_proteomes": 1527,
+ "n_seqs": 17339036,
+ "n_residues": 7793957705,
+ "db_bytes": 10238735271,
+ "concat_elapsed_s": 655.2,
+ "group": "fungi",
+ "query": "taxonomy_id:4751+AND+reference:true",
+ "sample": {
+  "rule": "none",
+  "rule_text": "every reference proteome",
+  "n_available": 1531,
+  "n_selected": 1531,
+  "proteins_available": 17469835,
+  "proteins_selected": 17469835
+ },
+ "download": {
+  "counts": {
+   "ok": 1527,
+   "cached": 0,
+   "failed": 4
+  },
+  "failures": [
+   "UP000005627 failed:404",
+   "UP000268321 failed:404",
+   "UP000007963 failed:404",
+   "UP000078559 failed:404"
+  ],
+  "elapsed_s": 156.8
+ },
+ "n_unavailable": 4,
+ "n_swept_proteomes": 1527,
+ "first_header_parsed": {
+  "name": "sp|P04387|GAL80_YEAST",
+  "accession": "P04387",
+  "reviewed": true,
+  "gene": "GAL80",
+  "species": "Saccharomyces cerevisiae (strain ATCC 204508 / S288c)",
+  "taxon_id": 559292,
+  "protein_name": "Galactose/lactose metabolism regulatory protein GAL80"
+ }
+}

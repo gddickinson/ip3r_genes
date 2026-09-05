@@ -1,0 +1,46 @@
+{
+ "db_path": "/Volumes/FANTOM/IP3R_DATA/proteomes/archaea_refprot.fasta",
+ "n_proteomes": 634,
+ "n_seqs": 1754814,
+ "n_residues": 499185199,
+ "db_bytes": 744377975,
+ "concat_elapsed_s": 49.2,
+ "group": "archaea",
+ "query": "taxonomy_id:2157+AND+reference:true",
+ "sample": {
+  "rule": "none",
+  "rule_text": "every reference proteome",
+  "n_available": 641,
+  "n_selected": 641,
+  "proteins_available": 1770981,
+  "proteins_selected": 1770981
+ },
+ "download": {
+  "counts": {
+   "ok": 634,
+   "cached": 0,
+   "failed": 7
+  },
+  "failures": [
+   "UP000006469 failed:404",
+   "UP001564723 failed:404",
+   "UP001596343 failed:404",
+   "UP001596396 failed:404",
+   "UP001596428 failed:404",
+   "UP001596465 failed:404",
+   "UP001653824 failed:404"
+  ],
+  "elapsed_s": 50.9
+ },
+ "n_unavailable": 7,
+ "n_swept_proteomes": 634,
+ "first_header_parsed": {
+  "name": "sp|A4YCN4|RADA_METS5",
+  "accession": "A4YCN4",
+  "reviewed": true,
+  "gene": "radA",
+  "species": "Metallosphaera sedula (strain ATCC 51363 / DSM 5348 / JCM 9185 / NBRC 15509 / TH2)",
+  "taxon_id": 399549,
+  "protein_name": "DNA repair and recombination protein RadA"
+ }
+}

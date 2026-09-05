@@ -1,0 +1,40 @@
+{
+ "db_path": "/Volumes/FANTOM/IP3R_DATA/proteomes/viridiplantae_refprot.fasta",
+ "n_proteomes": 432,
+ "n_seqs": 15114263,
+ "n_residues": 5806648049,
+ "db_bytes": 7782230185,
+ "concat_elapsed_s": 330.2,
+ "group": "viridiplantae",
+ "query": "taxonomy_id:33090+AND+reference:true",
+ "sample": {
+  "rule": "none",
+  "rule_text": "every reference proteome",
+  "n_available": 433,
+  "n_selected": 433,
+  "proteins_available": 17014625,
+  "proteins_selected": 17014625
+ },
+ "download": {
+  "counts": {
+   "ok": 432,
+   "cached": 0,
+   "failed": 1
+  },
+  "failures": [
+   "UP000835761 failed:404"
+  ],
+  "elapsed_s": 105.1
+ },
+ "n_unavailable": 1,
+ "n_swept_proteomes": 432,
+ "first_header_parsed": {
+  "name": "tr|A0A1I9LNN3|A0A1I9LNN3_ARATH",
+  "accession": "A0A1I9LNN3",
+  "reviewed": false,
+  "gene": "At3g50040",
+  "species": "Arabidopsis thaliana",
+  "taxon_id": 3702,
+  "protein_name": "Uncharacterized protein"
+ }
+}

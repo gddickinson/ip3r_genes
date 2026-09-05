@@ -952,3 +952,93 @@ throughout.
   family name.
 
 **Next: S20**, the non-vertebrate sweep — now the topmost unblocked row.
+
+---
+
+## 2026-09-05 — S20: the non-vertebrate sweep
+
+**Task.** The family's true range across eukaryotic reference proteomes, and
+whether the land-plant / Dikarya absence is a genome fact or a database fact.
+
+**Instrument.** S3's two profiles reused unchanged — building a new one would
+have made the vertebrate and non-vertebrate numbers incomparable, which is the
+whole point of the exercise. Thirteen new modules (`scripts/s20_*.py`), all
+under 500 lines.
+
+**Scope.** Six groups: the four non-vertebrate eukaryote groups that partition
+Eukaryota with S3's `vertebrata`, plus all 634 archaeal reference proteomes and
+a genus-stratified bacterial sample of 3,537 drawn from 17,981. Sampling rule
+stated and deliberately generous to the hypothesis it tests — one proteome per
+genus, the one with the *most* proteins, because a bigger proteome is a more
+sensitive place to find a homolog. **6,928 proteomes, 63,144,898 proteins,
+24.93 G residues.** 23 proteomes UniProt lists are not published in the release
+FTP tree and 404 permanently; recorded as exclusions rather than aborting the
+fetch.
+
+**One search, two sensitivities.** Every `hmmsearch` ran at `-E 10` and the
+primary E ≤ 1e-5 call was taken by filtering the same domtblout, since `-E` is
+a reporting threshold and does not touch the acceleration filters. The relaxed
+claim is therefore a superset of the strict one from the same search, not a
+second experiment that might have differed some other way.
+
+**Three silent bugs, all found by checking rather than by failure.**
+1. **The presence table was being overwritten with a fraction of its own
+   denominator.** The sweeps run one group at a time and `presence()` was
+   computing over only the groups of that invocation. Now always over every
+   group with an assignment table.
+2. **Hits were attributed to proteomes by taxid.** 3 protist, 18 plant and 27
+   fungal taxids carry *two* reference proteomes each, so a taxid key credits
+   both with either one's hits. Attribution is now measured, by a header-only
+   pass over each proteome file, cached under the data root.
+3. **UniProt's `tax_id:` search is hierarchical.** `tax_id:3702` matches
+   *Arabidopsis* and every strain under it, so a 100-term OR batch matched more
+   than 100 records, the page capped at `size`, and requested taxids fell off
+   as blank rows — *Arabidopsis* and *Chlamydomonas* among them, which are not
+   taxa this task can afford to lose. Switched to the exact `taxonIds/`
+   endpoint, whose page cap (25, measured) now sits above the batch size, so a
+   short page can only mean genuine absence. The fetch also verifies that
+   nothing came back that was not asked for.
+
+**A fourth thing that would have become a result.** The sweep reports 142 RYR
+calls in fungi, green algae and protists. They are 500–2,000 aa proteins
+matching 4–9 % of a 4,930-state model — the shared module, not the gene. The
+report now breaks every call out by model coverage: 63 % of ITPR calls are
+architecture-level against 1 % of RYR calls.
+
+**Results.**
+- **662/6,928 proteomes carry an ITPR call.** Present across Metazoa, SAR,
+  Discoba, Amoebozoa, Haptophyta, Chlorophyta and five early fungal phyla.
+- **Streptophyta 0/384** (16.3 M proteins) — S2's seeded-space finding
+  CONFIRMED with the seeding filter removed. Chlorophyta 15/48.
+- **Dikarya 0/1,353** — CONFIRMED. But the fungal losses are patchy, not
+  basal: Glomeromycota 0/27, Mortierellomycota 0/18, Kickxellomycota 0/35 and
+  Microsporidia 0/29 are also empty.
+- **Archaea 0/634, Bacteria 0/3,537.**
+- **The negatives have positive controls inside the same search.** At E ≤ 10
+  with the four family Pfam models: PF08709 returns 0 substantial matches in
+  land plants against 26 in Chlorophyta, and 0 in Dikarya against 16 in
+  Mucoromycota — while PF02815 (MIR, which every eukaryote carries on other
+  proteins) returns 633 and 4,376 in those same genomes. The instrument works
+  there; it finds everything except the receptor.
+- **All 99 plant and fungal records chased individually: 47 `real_gene`, 52
+  `fragment`, zero contaminants, zero without genome backing.** Cross-kingdom
+  identity to the nearest relative runs 19.9–45.8 %, median 24.1 % — the deep
+  homology range, nowhere near the 95 % contamination call.
+- **D14 outside the vertebrates: 0 of 704** targets scored by both profiles
+  above the bit floor fall inside the no-call band.
+- **The two architecture-level RYR records outside Metazoa are genuine**, in
+  *Capsaspora owczarzaki* (a `ryr.hmm` seed, so circular, and flagged as such)
+  and *Salpingoeca rosetta* (not a seed) — the two closest unicellular
+  relatives of animals carry both families at full length.
+- **jackhmmer, viridiplantae: converged in 5 rounds, D10 clean**, zero
+  sister-family content in every round. All 70 targets in the converged model
+  are Chlorophyta, including all 6 that only iteration found — so the
+  land-plant absence is not a sensitivity artefact.
+- **Census v5: 17,882 records** (+785 from this sweep), 8,809 ITPR across 1,402
+  taxa, 0 conflicts, lineage columns on every row including S5b's 488 genomic
+  gene models, joined to S4's manifest.
+
+**Next.** The three remaining jackhmmer runs (protista, fungi, metazoa) and
+then S23, which S20 sharpens: the absences to take to genome level are
+Streptophyta, Dikarya, Glomeromycota/Mortierellomycota, Apicomplexa (0/60) and
+the *Cymbomonas* copy-number question.

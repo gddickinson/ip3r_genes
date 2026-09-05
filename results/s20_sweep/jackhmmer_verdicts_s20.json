@@ -1,0 +1,21 @@
+{
+ "groups_without_seed": [],
+ "min_seed_coverage": 0.5,
+ "max_iter": 10,
+ "evalue": "1e-5",
+ "verdicts": {
+  "viridiplantae": {
+   "verdict": "clean",
+   "accepted_rounds": 5,
+   "killed_at": null,
+   "rule": "",
+   "reason": "no kill rule fired",
+   "group": "viridiplantae",
+   "tag": "s20_viridiplantae",
+   "accession": "A0AAE0LDZ1",
+   "converged": true,
+   "n_rounds": 5,
+   "accepted_targets": 70
+  }
+ }
+}

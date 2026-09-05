@@ -1,0 +1,2 @@
+group	accession	species	taxon_id	gene	length	itpr_score	itpr_coverage	rel_margin	n_qualifying	runner_up	runner_up_score	rule
+metazoa_nonvert	A0AAV1LM52	Parnassius mnemosyne	213953	PARMNEM_LOCUS14880	4718	4762.4	0.909	0.8629	617	A0A913ZRM3	4068.1	highest itpr.hmm bit score with coverage >= 0.5

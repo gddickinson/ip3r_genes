@@ -1,0 +1,642 @@
+upid	organism	taxid	protein_count	group	genus	genus_n_available	status
+UP000000242	Metallosphaera sedula (strain ATCC 51363 / DSM 5348 / JCM 9185 / NBRC 15509 / TH2)	399549	2256	archaea			swept
+UP000000254	Staphylothermus marinus (strain ATCC 43588 / DSM 3639 / JCM 9404 / F1)	399550	1570	archaea			swept
+UP000000262	Ignicoccus hospitalis (strain KIN4/I / DSM 18386 / JCM 14125)	453591	1434	archaea			swept
+UP000000345	Methanothermobacter marburgensis (strain ATCC BAA-927 / DSM 2133 / JCM 14651 / NBRC 100331 / OCM 82 / Marburg) (Methanobacterium thermoautotrophicum)	79929	1756	archaea			swept
+UP000000346	Acidilobus saccharovorans (strain DSM 16705 / JCM 18335 / VKM B-2471 / 345-15)	666510	1499	archaea			swept
+UP000000365	Methanocorpusculum labreanum (strain ATCC 43576 / DSM 4855 / Z)	410358	1739	archaea			swept
+UP000000391	Methanohalobium evestigatum (strain ATCC BAA-1072 / DSM 3721 / NBRC 107634 / OCM 161 / Z-7303)	644295	2250	archaea			swept
+UP000000536	Thermococcus kodakarensis (strain ATCC BAA-918 / JCM 12380 / KOD1) (Pyrococcus kodakaraensis (strain KOD1))	69014	2301	archaea			swept
+UP000000554	Halobacterium salinarum (strain ATCC 700922 / JCM 11081 / NRC-1) (Halobacterium halobium)	64091	2427	archaea			swept
+UP000000578	Nanoarchaeum equitans (strain Kin4-M)	228908	536	archaea			swept
+UP000000590	Methanococcus maripaludis (strain DSM 14266 / JCM 13030 / NBRC 101832 / S2 / LL)	267377	1722	archaea			swept
+UP000000595	Methanosarcina mazei (strain ATCC BAA-159 / DSM 3647 / Goe1 / Go1 / JCM 11833 / OCM 88) (Methanosarcina frisia)	192952	3303	archaea			swept
+UP000000641	Thermofilum pendens (strain DSM 2475 / Hrk 5)	368408	1876	archaea			swept
+UP000000663	Methanocella arvoryzae (strain DSM 22066 / NBRC 105507 / MRE50)	351160	3071	archaea			swept
+UP000000674	Methanothrix thermoacetophila (strain DSM 6194 / JCM 14653 / NBRC 101360 / PT) (Methanosaeta thermophila)	349307	1673	archaea			swept
+UP000000740	Halorubrum lacusprofundi (strain ATCC 49239 / DSM 5036 / JCM 8891 / ACAM 34)	416348	3495	archaea			swept
+UP000000752	Pyrococcus horikoshii (strain ATCC 700860 / DSM 12428 / JCM 9974 / NBRC 100139 / OT-3)	70601	2077	archaea			swept
+UP000000758	Cenarchaeum symbiosum (strain A)	414004	2022	archaea			swept
+UP000000792	Nitrosopumilus maritimus (strain SCM1)	436308	1795	archaea			swept
+UP000000805	Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) (Methanococcus jannaschii)	243232	1786	archaea			swept
+UP000000810	Pyrococcus abyssi (strain GE5 / Orsay)	272844	1788	archaea			swept
+UP000001013	Pyrococcus furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1)	186497	2044	archaea			swept
+UP000001015	Sulfurisphaera tokodaii (strain DSM 16993 / JCM 10545 / NBRC 100140 / 7) (Sulfolobus tokodaii)	273063	2805	archaea			swept
+UP000001017	Thermoplasma volcanium (strain ATCC 51530 / DSM 4299 / JCM 9571 / NBRC 15438 / GSS1)	273116	1523	archaea			swept
+UP000001018	Sulfolobus acidocaldarius (strain ATCC 33909 / DSM 639 / JCM 8929 / NBRC 15157 / NCIMB 11770)	330779	2223	archaea			swept
+UP000001024	Thermoplasma acidophilum (strain ATCC 25905 / DSM 1728 / JCM 9062 / NBRC 15155 / AMRC-C165)	273075	1482	archaea			swept
+UP000001037	Pyrolobus fumarii (strain DSM 11204 / 1A)	694429	1967	archaea			swept
+UP000001059	Methanohalophilus mahii (strain ATCC 35705 / DSM 5219 / SLP)	547558	1986	archaea			swept
+UP000001068	Desulfurococcus mucosus (strain ATCC 35584 / DSM 2162 / JCM 9187 / O7/1)	765177	1345	archaea			swept
+UP000001106	Methanococcus aeolicus (strain ATCC BAA-1280 / DSM 17508 / OCM 812 / Nankai-3)	419665	1490	archaea			swept
+UP000001107	Methanococcus vannielii (strain ATCC 35089 / DSM 1224 / JCM 13029 / OCM 148 / SB)	406327	1661	archaea			swept
+UP000001137	Caldivirga maquilingensis (strain ATCC 700844 / DSM 13496 / JCM 10307 / IC-167)	397948	1962	archaea			swept
+UP000001169	Haloarcula marismortui (strain ATCC 43049 / DSM 3752 / JCM 8966 / VKM B-1809) (Halobacterium marismortui)	272569	4235	archaea			swept
+UP000001304	Ignisphaera aggregans (strain DSM 17230 / JCM 13409 / AQ1.S1)	583356	1929	archaea			swept
+UP000001400	Aciduliprofundum boonei (strain DSM 19572 / T469)	439481	1539	archaea			swept
+UP000001431	Pyrobaculum calidifontis (strain DSM 21063 / JCM 11548 / VA1)	410359	2151	archaea			swept
+UP000001488	Thermococcus gammatolerans (strain DSM 15229 / JCM 11827 / EJ3)	593117	2157	archaea			swept
+UP000001495	Methanocaldococcus fervens (strain DSM 4213 / JCM 15782 / AG86) (Methanococcus fervens)	573064	1581	archaea			swept
+UP000001686	Korarchaeum cryptofilum (strain OPF8)	374847	1602	archaea			swept
+UP000001694	Pyrobaculum neutrophilum (strain DSM 2338 / JCM 9278 / NBRC 100436 / V24Sta) (Thermoproteus neutrophilus)	444157	1965	archaea			swept
+UP000001746	Halomicrobium mukohataei (strain ATCC 700874 / DSM 12286 / JCM 9738 / NCIMB 13541) (Haloarcula mukohataei)	485914	3343	archaea			swept
+UP000001826	Methanopyrus kandleri (strain AV19 / DSM 6324 / JCM 9639 / NBRC 100938)	190192	1687	archaea			swept
+UP000001879	Natrialba magadii (strain ATCC 43099 / DSM 3394 / CCM 3739 / CIP 104546 / IAM 13178 / JCM 8861 / NBRC 102185 / NCIMB 2190 / MS3) (Natronobacterium magadii)	547559	4203	archaea			swept
+UP000001882	Methanocella paludicola (strain DSM 17711 / JCM 13418 / NBRC 101707 / SANAE)	304371	2993	archaea			swept
+UP000001901	Archaeoglobus profundus (strain DSM 5631 / JCM 9629 / NBRC 100127 / Av18)	572546	1822	archaea			swept
+UP000001903	Haloterrigena turkmenica (strain ATCC 51198 / DSM 5511 / JCM 9101 / NCIMB 13204 / VKM B-1734 / 4k) (Halococcus turkmenicus)	543526	5113	archaea			swept
+UP000001931	Methanosphaera stadtmanae (strain ATCC 43021 / DSM 3091 / JCM 11832 / MCB-3)	339860	1533	archaea			swept
+UP000001941	Methanospirillum hungatei JF-1 (strain ATCC 27890 / DSM 864 / NBRC 100397 / JF-1)	323259	3087	archaea			swept
+UP000001974	Saccharolobus solfataricus (strain ATCC 35092 / DSM 1617 / JCM 11322 / P2) (Sulfolobus solfataricus)	273057	2938	archaea			swept
+UP000001975	Haloquadratum walsbyi (strain DSM 16790 / HBSQ001)	362976	2558	archaea			swept
+UP000001979	Methanococcoides burtonii (strain DSM 6242 / NBRC 107633 / OCM 468 / ACE-M)	259564	2242	archaea			swept
+UP000001992	Methanobrevibacter smithii (strain ATCC 35061 / DSM 861 / OCM 144 / PS)	420247	1783	archaea			swept
+UP000002061	Methanocaldococcus infernus (strain DSM 11812 / JCM 15783 / ME)	573063	1439	archaea			swept
+UP000002063	Methanocaldococcus vulcanius (strain ATCC 700851 / DSM 12094 / M7) (Methanococcus vulcanius)	579137	1740	archaea			swept
+UP000002071	Halorhabdus utahensis (strain DSM 12940 / JCM 11049 / AX-2)	519442	2998	archaea			swept
+UP000002146	Methanoculleus marisnigri (strain ATCC 35101 / DSM 1498 / JR1)	368407	2476	archaea			swept
+UP000002199	Archaeoglobus fulgidus (strain ATCC 49558 / DSM 4304 / JCM 9628 / NBRC 100126 / VC-16)	224325	2394	archaea			swept
+UP000002315	Methanothermus fervidus (strain ATCC 43054 / DSM 2088 / JCM 10308 / V24 S)	523846	1283	archaea			swept
+UP000002376	Thermosphaera aggregans (strain DSM 11486 / M11TL)	633148	1387	archaea			swept
+UP000002408	Methanoregula boonei (strain DSM 21154 / JCM 14090 / 6A8)	456442	2450	archaea			swept
+UP000002439	Pyrobaculum aerophilum (strain ATCC 51768 / DSM 7523 / JCM 9630 / CIP 104966 / NBRC 100827 / IM2)	178306	2590	archaea			swept
+UP000002457	Methanosphaerula palustris (strain ATCC BAA-1556 / DSM 19958 / E1-9c)	521011	2655	archaea			swept
+UP000002487	Methanosarcina acetivorans (strain ATCC 35395 / DSM 2834 / JCM 12185 / C2A)	188937	4468	archaea			swept
+UP000002518	Aeropyrum pernix (strain ATCC 700893 / DSM 11879 / JCM 9820 / NBRC 100138 / K1)	272557	1700	archaea			swept
+UP000002573	Staphylothermus hellenicus (strain DSM 12710 / JCM 10830 / BK20S6-10-b1 / P8)	591019	1599	archaea			swept
+UP000002593	Hyperthermus butylicus (strain DSM 5456 / JCM 9403 / PLM1-5)	415426	1602	archaea			swept
+UP000002595	Pyrobaculum islandicum (strain DSM 4184 / JCM 9189 / GEO3)	384616	1976	archaea			swept
+UP000002613	Ferroglobus placidus (strain DSM 10642 / AEDII12DO)	589924	2463	archaea			swept
+UP000002654	Thermoproteus tenax (strain ATCC 35583 / DSM 2078 / JCM 9277 / NBRC 100435 / Kra 1)	768679	2047	archaea			swept
+UP000002664	Saccharolobus islandicus (strain REY15A) (Sulfolobus islandicus)	930945	2631	archaea			swept
+UP000002698	Natronomonas pharaonis (strain ATCC 35678 / DSM 2160 / CIP 103997 / JCM 8858 / NBRC 14720 / NCIMB 2260 / Gabara) (Halobacterium pharaonis)	348780	2764	archaea			swept
+UP000002727	Thermococcus onnurineus (strain NA1)	523850	1976	archaea			swept
+UP000003423	Candidatus Nitrosopumilus salarius BD31	859350	2154	archaea			swept
+UP000003706	Methanotorris formicicus Mc-S-70	647171	2000	archaea			swept
+UP000004440	Nitrosarchaeum koreense MY1	1001994	1945	archaea			swept
+UP000005095	Methanofollis liminatans DSM 4140	28892	2423	archaea			swept
+UP000005223	Methanothermobacter thermautotrophicus (strain ATCC 29096 / DSM 1053 / JCM 10044 / NBRC 100330 / Delta H) (Methanobacterium thermoautotrophicum)	187420	1868	archaea			swept
+UP000005233	Methanocella conradii (strain DSM 24694 / JCM 17849 / CGMCC 1.5162 / HZ254)	1041930	2448	archaea			swept
+UP000005270	Thermogladius calderae (strain DSM 22663 / VKM B-2946 / 1633)	1184251	1414	archaea			swept
+UP000005741	Methanoplanus limicola DSM 2279	937775	2928	archaea			swept
+UP000005867	Pyrobaculum ferrireducens	1104324	2825	archaea			swept
+UP000005877	Methanothrix harundinacea (strain 6Ac) (Methanosaeta harundinacea)	1110509	2358	archaea			swept
+UP000006064	Thermococcus cleftensis (strain DSM 27260 / KACC 17922 / CL1)	163003	2017	archaea			swept
+UP000006100	Candidatus Nitrosopumilus sediminis	1229909	1974	archaea			swept
+UP000006101	Candidatus Nitrosopumilus koreensis AR1	1229908	1890	archaea			swept
+UP000006175	Desulfurococcus amylolyticus DSM 16532	768672	1421	archaea			swept
+UP000006565	Methanolacinia petrolearia (strain DSM 11571 / OCM 486 / SEBR 4847) (Methanoplanus petrolearius)	679926	2779	archaea			swept
+UP000006622	Methanosalsum zhilinae (strain DSM 4017 / NBRC 107636 / OCM 62 / WeN5) (Methanohalophilus zhilinae)	679901	1972	archaea			swept
+UP000006663	Halogeometricum borinquense (strain ATCC 700274 / DSM 11551 / JCM 10706 / KCTC 4070 / PR3)	469382	3894	archaea			swept
+UP000006681	Vulcanisaeta distributa (strain DSM 14429 / JCM 11212 / NBRC 100878 / IC-017)	572478	2493	archaea			swept
+UP000006794	Halopiger xanaduensis (strain DSM 18323 / JCM 14033 / SH-6)	797210	4221	archaea			swept
+UP000007360	Methanobacterium formicicum (strain DSM 3637 / PP1)	1204725	2519	archaea			swept
+UP000007391	Fervidicoccus fontis (strain DSM 19380 / JCM 18336 / VKM B-2539 / Kam940)	1163730	1384	archaea			swept
+UP000007478	Thermococcus barophilus (strain DSM 11836 / MP)	391623	2265	archaea			swept
+UP000007485	Vulcanisaeta moutnovskia (strain 768-28)	985053	2318	archaea			swept
+UP000007490	Methanobacterium lacus (strain AL-21)	877455	2493	archaea			swept
+UP000007722	Methanococcus voltae (strain ATCC BAA-1334 / A3)	456320	1658	archaea			swept
+UP000007807	Methanothrix soehngenii (strain ATCC 5969 / DSM 3671 / JCM 10134 / NBRC 103675 / OCM 69 / GP-6) (Methanosaeta concilii)	990316	2791	archaea			swept
+UP000007812	Metallosphaera cuprina (strain Ar-4)	1006006	2029	archaea			swept
+UP000008136	Archaeoglobus veneficus (strain DSM 11195 / SNP6)	693661	2065	archaea			swept
+UP000008138	Thermoproteus uzoniensis (strain 768-20)	999630	2185	archaea			swept
+UP000008243	Haloferax volcanii (strain ATCC 29605 / DSM 3757 / JCM 8879 / NBRC 14742 / NCIMB 2012 / VKM B-1768 / DS2) (Halobacterium volcanii)	309800	3922	archaea			swept
+UP000008386	Pyrococcus yayanosii (strain CH1 / JCM 16557)	529709	1865	archaea			swept
+UP000008458	Acidianus hospitalis (strain W1)	933801	2329	archaea			swept
+UP000008680	Methanobrevibacter ruminantium (strain ATCC 35063 / DSM 1093 / JCM 13430 / OCM 146 / M1) (Methanobacterium ruminantium)	634498	2209	archaea			swept
+UP000009007	Methanoculleus bourgensis (strain ATCC 43281 / DSM 3045 / OCM 15 / MS2) (Methanogenium bourgense)	1201294	2575	archaea			swept
+UP000009062	Pyrobaculum oguniense (strain DSM 13380 / JCM 10595 / TE7)	698757	2833	archaea			swept
+UP000009079	Thermococcus sibiricus (strain DSM 12597 / MM 739)	604354	2035	archaea			swept
+UP000009227	Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5)	880724	1753	archaea			swept
+UP000009231	Methanobacterium paludis (strain DSM 25820 / JCM 18151 / SWAN1)	868131	2394	archaea			swept
+UP000009296	Methanothermococcus okinawensis (strain DSM 14208 / JCM 11175 / IH1)	647113	1583	archaea			swept
+UP000010468	Natronobacterium gregoryi (strain ATCC 43098 / DSM 3393 / CCM 3738 / CIP 104747 / IAM 13177 / JCM 8860 / NBRC 102187 / NCIMB 2189 / SP2)	797304	3624	archaea			swept
+UP000010469	Caldisphaera lagunensis (strain DSM 15908 / JCM 11604 / ANMR 0165 / IC-154)	1056495	1477	archaea			swept
+UP000010824	Methanoregula formicica (strain DSM 22288 / NBRC 105244 / SMSP)	593750	2815	archaea			swept
+UP000010846	Halovivax ruber (strain DSM 18193 / JCM 13892 / XH-70)	797302	3099	archaea			swept
+UP000010866	Methanomethylovorans hollandica (strain DSM 15978 / NBRC 107637 / DMS1)	867904	2551	archaea			swept
+UP000010878	Natronococcus occultus SP4	694430	4153	archaea			swept
+UP000011508	Haloferax sulfurifontis ATCC BAA-897	662480	3789	archaea			swept
+UP000011509	Halorubrum coriense DSM 10284	1227466	3463	archaea			swept
+UP000011511	Natrinema altunense (strain JCM 12890 / CGMCC 1.3731 / AJ2)	1227494	3732	archaea			swept
+UP000011513	Halogeometricum pallidum JCM 14848	1227487	4246	archaea			swept
+UP000011514	Halorubrum saccharovorum DSM 1137	1227484	3231	archaea			swept
+UP000011519	Natrialba hulunbeirensis JCM 10989	1227493	3852	archaea			swept
+UP000011523	Halorubrum tebenquichense DSM 14210	1227485	3234	archaea			swept
+UP000011524	Haloarcula japonica (strain ATCC 49778 / DSM 6131 / JCM 7785 / NBRC 101032 / NCIMB 13157 / TR-1)	1227453	4235	archaea			swept
+UP000011526	Halorubrum distributum JCM 9100	1227467	3133	archaea			swept
+UP000011531	Natronococcus jeotgali DSM 18795	1227498	4417	archaea			swept
+UP000011534	Haloarcula vallismortis ATCC 29715	662477	3961	archaea			swept
+UP000011546	Halorubrum kocurii JCM 14978	1230456	3433	archaea			swept
+UP000011550	Haloferax mucosum ATCC BAA-1512	662479	3395	archaea			swept
+UP000011553	Haloferax denitrificans ATCC 35960	662478	3769	archaea			swept
+UP000011554	Natrialba asiatica (strain ATCC 700177 / DSM 12278 / JCM 9576 / FERM P-10747 / NBRC 102637 / 172P1)	29540	4175	archaea			swept
+UP000011555	Natronobacterium lacisalsi AJ5	358396	4151	archaea			swept
+UP000011559	Haloferax prahovense (strain DSM 18310 / JCM 13924 / TL6)	1227461	3913	archaea			swept
+UP000011560	Halovivax asiaticus JCM 14624	1227490	3131	archaea			swept
+UP000011566	Halococcus hamelinensis 100A6	1132509	3400	archaea			swept
+UP000011568	Halococcus morrhuae DSM 1307	931277	3035	archaea			swept
+UP000011571	Haloferax gibbonsii (strain ATCC 33959 / DSM 4427 / JCM 8863 / NBRC 102184 / NCIMB 2188 / Ma 2.38)	1227459	3945	archaea			swept
+UP000011575	Halorubrum aidingense JCM 13560	1230454	2981	archaea			swept
+UP000011586	Halorubrum californiense DSM 19288	1227465	3454	archaea			swept
+UP000011591	Natrialba aegyptia DSM 13077	1227491	4399	archaea			swept
+UP000011592	Natrinema gari JCM 14663	1230459	4056	archaea			swept
+UP000011593	Natrinema pellirubrum (strain DSM 15624 / CIP 106293 / JCM 10476 / NCIMB 786 / 157)	797303	4176	archaea			swept
+UP000011599	Natronorubrum tibetense GA33	1114856	4671	archaea			swept
+UP000011602	Natronolimnohabitans innermongolicus JCM 12255	1227499	4400	archaea			swept
+UP000011603	Haloferax mediterranei (strain ATCC 33500 / DSM 1411 / JCM 8866 / NBRC 14739 / NCIMB 2177 / R-4) (Halobacterium mediterranei)	523841	3848	archaea			swept
+UP000011607	Halobiforma nitratireducens JCM 10879	1227454	3534	archaea			swept
+UP000011612	Haloferax elongans ATCC BAA-1513	1230453	3847	archaea			swept
+UP000011615	Natrinema limicola JCM 13563	1230457	3519	archaea			swept
+UP000011623	Haloarcula amylolytica JCM 13557	1227452	4156	archaea			swept
+UP000011625	Halococcus salifodinae DSM 8989	1227456	4078	archaea			swept
+UP000011626	Halosimplex carlsbadense 2-9-1	797114	4458	archaea			swept
+UP000011632	Natrinema versiforme JCM 10478	1227496	4160	archaea			swept
+UP000011645	Halalkalicoccus jeotgali (strain DSM 18796 / CECT 7217 / JCM 14584 / KCTC 4019 / B3)	795797	3802	archaea			swept
+UP000011648	Natrialba taiwanensis DSM 12281	1230458	4374	archaea			swept
+UP000011650	Halorubrum lipolyticum DSM 21995	1227482	3220	archaea			swept
+UP000011657	Haloterrigena salina JCM 13891	1227488	4563	archaea			swept
+UP000011661	Natronorubrum sulfidifaciens JCM 14089	1230460	3428	archaea			swept
+UP000011669	Halococcus saccharolyticus DSM 5350	1227455	3441	archaea			swept
+UP000011680	Halococcus thailandensis JCM 13552	1227457	4030	archaea			swept
+UP000011688	Natronococcus amylolyticus DSM 10524	1227497	4317	archaea			swept
+UP000011689	Halorubrum hochstenium ATCC 700873	1227481	2931	archaea			swept
+UP000011690	Natronorubrum bangense JCM 10635	1227500	3979	archaea			swept
+UP000011693	Natrialba chahannaoensis JCM 10990	1227492	4030	archaea			swept
+UP000011867	Natronomonas moolapensis (strain DSM 18674 / CECT 7526 / JCM 14361 / 8.8.11)	268739	2723	archaea			swept
+UP000012672	Methanomethylophilus alvi (strain Mx1201)	1236689	1643	archaea			swept
+UP000013307	Archaeoglobus sulfaticallidus PM70-1	387631	2213	archaea			swept
+UP000014065	Candidatus Nitrosarchaeum limnium BG20	859192	2621	archaea			swept
+UP000014070	Methanomassiliicoccus intestinalis (strain Issoire-Mx1)	1295009	1826	archaea			swept
+UP000014660	Ferroplasma acidarmanus Fer1	333146	1927	archaea			swept
+UP000015381	Halorhabdus tiamatea SARL4B	1033806	2988	archaea			swept
+UP000015502	Thermococcus litoralis (strain ATCC 51850 / DSM 5473 / JCM 8560 / NS-C)	523849	2506	archaea			swept
+UP000015543	Thermofilum adornatum	1365176	1896	archaea			swept
+UP000016887	Aeropyrum camini SY1 = JCM 12091	1198449	1645	archaea			swept
+UP000016986	Halarchaeum acidiphilum MH1-52-1	1261545	2706	archaea			swept
+UP000017840	Candidatus Halobonum tyrrellensis G22	1324957	3445	archaea			swept
+UP000018159	Candidatus Nitrosotenuis uzonensis	1407055	1944	archaea			swept
+UP000018572	Haloarcula hispanica N601	1417673	3926	archaea			swept
+UP000019024	Halostagnicola larsenii XH-48	797299	4086	archaea			swept
+UP000019027	Thermococcus paralvinellae	582419	2014	archaea			swept
+UP000019434	Thermococcus nautili	195522	2236	archaea			swept
+UP000019483	Methanolobus tindarius DSM 2278	1090322	2912	archaea			swept
+UP000024332	Candidatus Acidianus copahuensis	1160895	2328	archaea			swept
+UP000027093	Nitrososphaera viennensis EN76	926571	3117	archaea			swept
+UP000027153	Candidatus Methanoperedens nitratireducens	1392998	3430	archaea			swept
+UP000027981	Palaeococcus pacificus DY20341	1343739	1991	archaea			swept
+UP000028027	Marine Group I thaumarchaeote SCGC AAA799-E16	1502292	1908	archaea			swept
+UP000028059	Marine Group I thaumarchaeote SCGC AAA799-N04	1502293	1757	archaea			swept
+UP000028781	Methanocaldococcus bathoardescens	1301915	1632	archaea			swept
+UP000029383	Marine Group I thaumarchaeote SCGC RSA3	1503183	2404	archaea			swept
+UP000029384	Marine Group I thaumarchaeote SCGC AAA799-B03	1502289	1339	archaea			swept
+UP000029386	Marine Group I thaumarchaeote SCGC AAA799-D11	1502291	1722	archaea			swept
+UP000029387	Marine Group I thaumarchaeote SCGC AAA799-P11	1502295	1432	archaea			swept
+UP000029859	Methanococcoides methylutens	2226	2187	archaea			swept
+UP000029980	Thermococcus eurythermalis	1505907	2100	archaea			swept
+UP000030787	Candidatus Methanoplasma termitum	1577791	1393	archaea			swept
+UP000032027	Nitrosopumilus piranensis	1582439	2161	archaea			swept
+UP000032408	Nitrosopumilus adriaticus	1580092	2184	archaea			swept
+UP000033033	Methanosarcina barkeri MS	1434108	3468	archaea			swept
+UP000033048	Methanococcoides methylutens MM1	1434104	2203	archaea			swept
+UP000033066	Methanosarcina barkeri 3	1434107	3460	archaea			swept
+UP000033072	Methanosarcina lacustris Z-7289	1434111	3201	archaea			swept
+UP000033096	Methanosarcina vacuolata Z-761	1434123	3478	archaea			swept
+UP000033101	Methanosarcina horonobensis HB-1 = JCM 15518	1434110	4070	archaea			swept
+UP000033111	Methanosarcina siciliae T4/M	1434120	3953	archaea			swept
+UP000034578	Methanosarcina mazei (Methanosarcina frisia)	2209	3460	archaea			swept
+UP000034723	Geoglobus ahangari	113653	1973	archaea			swept
+UP000035301	Methanoculleus sediminis	1550566	2268	archaea			swept
+UP000037729	Haloarcula rubripromontorii	1705562	3788	archaea			swept
+UP000037747	Halorubrum tropicale	1765655	3245	archaea			swept
+UP000050301	Acidiplasma cupricumulans	312540	1683	archaea			swept
+UP000050320	Acidiplasma aeolicum	507754	1696	archaea			swept
+UP000050535	Halolamina pelagica	699431	3464	archaea			swept
+UP000053087	Methanosarcina flavescens	1715806	2671	archaea			swept
+UP000053157	Haloferax profundi	1544718	3440	archaea			swept
+UP000053279	Nanobsidianus stetteri	1294122	647	archaea			swept
+UP000053331	Halorubrum saccharovorum	2248	2334	archaea			swept
+UP000053352	Pyrodictium occultum	2309	1602	archaea			swept
+UP000053462	Thermococcus celericrescens	227598	2330	archaea			swept
+UP000053621	Haloferax marisrubri	1544719	3741	archaea			swept
+UP000053695	Methanocaldococcus villosus KIN24-T80	1069083	1295	archaea			swept
+UP000054284	Candidatus Aramenus sulfurataquae	1326980	1975	archaea			swept
+UP000054387	Haloprofundus marisrubri	1514971	3761	archaea			swept
+UP000060778	Ignicoccus islandicus DSM 13165	940295	1510	archaea			swept
+UP000062043	Thermococcus guaymasensis DSM 11113	1432656	2092	archaea			swept
+UP000062768	Methanobacterium formicicum	2162	2401	archaea			swept
+UP000066376	Methanobrevibacter olleyae	294671	1830	archaea			swept
+UP000066529	Methanosarcina thermophila (strain ATCC 43570 / DSM 1825 / OCM 12 / VKM B-1830 / TM-1)	523844	2553	archaea			swept
+UP000066737	Halobacterium hubeiense	1407499	3340	archaea			swept
+UP000067434	Infirmifilum uzonense	1550241	1454	archaea			swept
+UP000067738	Methanobrevibacter millerae	230361	2260	archaea			swept
+UP000069906	Halanaeroarchaeum sulfurireducens	1604004	2225	archaea			swept
+UP000070035	candidate division MSBL1 archaeon SCGC-AAA261F17	1698274	559	archaea			swept
+UP000070038	candidate division MSBL1 archaeon SCGC-AAA833K04	1698258	196	archaea			swept
+UP000070076	candidate division MSBL1 archaeon SCGC-AAA261O19	1698277	779	archaea			swept
+UP000070155	candidate division MSBL1 archaeon SCGC-AAA259I07	1698266	671	archaea			swept
+UP000070163	candidate division MSBL1 archaeon SCGC-AAA259A05	1698259	1212	archaea			swept
+UP000070175	candidate division MSBL1 archaeon SCGC-AAA382N08	1698285	431	archaea			swept
+UP000070184	candidate division MSBL1 archaeon SCGC-AAA259B11	1698260	852	archaea			swept
+UP000070195	candidate division MSBL1 archaeon SCGC-AAA259D18	1698262	389	archaea			swept
+UP000070256	candidate division MSBL1 archaeon SCGC-AAA385D11	1698286	299	archaea			swept
+UP000070257	candidate division MSBL1 archaeon SCGC-AAA259J03	1698269	964	archaea			swept
+UP000070263	candidate division MSBL1 archaeon SCGC-AAA382A20	1698280	947	archaea			swept
+UP000070284	candidate division MSBL1 archaeon SCGC-AAA259E19	1698264	1417	archaea			swept
+UP000070311	candidate division MSBL1 archaeon SCGC-AAA382A13	1698279	450	archaea			swept
+UP000070341	candidate division MSBL1 archaeon SCGC-AAA259M10	1698270	893	archaea			swept
+UP000070344	candidate division MSBL1 archaeon SCGC-AAA259O05	1698271	1138	archaea			swept
+UP000070373	candidate division MSBL1 archaeon SCGC-AAA259E17	1698263	891	archaea			swept
+UP000070399	candidate division MSBL1 archaeon SCGC-AAA833F18	1698257	278	archaea			swept
+UP000070400	candidate division MSBL1 archaeon SCGC-AAA261D19	1698273	687	archaea			swept
+UP000070404	candidate division MSBL1 archaeon SCGC-AAA382C18	1698281	551	archaea			swept
+UP000070405	candidate division MSBL1 archaeon SCGC-AAA261G05	1698276	601	archaea			swept
+UP000070414	candidate division MSBL1 archaeon SCGC-AAA259I14	1698268	774	archaea			swept
+UP000070463	candidate division MSBL1 archaeon SCGC-AAA259I09	1698267	1400	archaea			swept
+UP000070491	candidate division MSBL1 archaeon SCGC-AAA382F02	1698282	344	archaea			swept
+UP000070504	candidate division MSBL1 archaeon SCGC-AAA382K21	1698283	218	archaea			swept
+UP000070520	candidate division MSBL1 archaeon SCGC-AAA261C02	1698272	703	archaea			swept
+UP000070549	candidate division MSBL1 archaeon SCGC-AAA382A03	1698278	427	archaea			swept
+UP000070565	candidate division MSBL1 archaeon SCGC-AAA261F19	1698275	687	archaea			swept
+UP000070589	candidate division MSBL1 archaeon SCGC-AAA259D14	1698261	885	archaea			swept
+UP000070633	candidate division MSBL1 archaeon SCGC-AAA382M17	1698284	356	archaea			swept
+UP000070657	candidate division MSBL1 archaeon SCGC-AAA259E22	1698265	843	archaea			swept
+UP000073604	Thermococcus peptonophilus	53952	1967	archaea			swept
+UP000075321	Halalkalicoccus paucihalophilus	1008153	4161	archaea			swept
+UP000076969	Thermococcus piezophilus	1712654	1866	archaea			swept
+UP000077066	Methanobrevibacter filiformis	55758	1920	archaea			swept
+UP000077245	Methanobrevibacter curvatus	49547	1968	archaea			swept
+UP000077275	Methanobrevibacter cuticularis	47311	2061	archaea			swept
+UP000077428	Methanobrevibacter oralis	66851	1993	archaea			swept
+UP000094707	Methanobacterium congolense	118062	2340	archaea			swept
+UP000183275	Natrinema salifodinae	1202768	4090	archaea			swept
+UP000183769	Halolamina pelagica	699431	3217	archaea			swept
+UP000184203	Haladaptatus paucihalophilus DX253	797209	4339	archaea			swept
+UP000184357	Halobaculum gomorrense	43928	3149	archaea			swept
+UP000185687	Natronorubrum daqingense	588898	3795	archaea			swept
+UP000185744	Methanohalarchaeum thermophilum	1903181	2152	archaea			swept
+UP000185779	Candidatus Syntropharchaeum butanivorans	1839936	1592	archaea			swept
+UP000185936	Natronorubrum thiooxidans	308853	4231	archaea			swept
+UP000186165	Halodesulfurarchaeum formicicum	1873524	2099	archaea			swept
+UP000186879	Methanohalophilus halophilus	2177	1979	archaea			swept
+UP000186914	Haladaptatus litoreus	553468	4885	archaea			swept
+UP000186940	Candidatus Syntropharchaeum caldarium	1838285	1784	archaea			swept
+UP000187822	Cuniculiplasma divulgatum	1673428	1812	archaea			swept
+UP000189370	Natrinema saccharevitans	301967	3699	archaea			swept
+UP000191661	Methanobrevibacter arboriphilus JCM 13429 = DSM 1125	1300164	1961	archaea			swept
+UP000192050	Ferroplasma acidiphilum	74969	1749	archaea			swept
+UP000192315	Picrophilus torridus (strain ATCC 700027 / DSM 9790 / JCM 10055 / NBRC 100828 / KAW 2/3)	1122961	1527	archaea			swept
+UP000193404	Acidianus manzaensis	282676	2641	archaea			swept
+UP000193969	Methanohalophilus portucalensis FDF-1	523843	2075	archaea			swept
+UP000195137	Methanonatronarchaeum thermophilum	1927129	1510	archaea			swept
+UP000196084	Natronolimnobius baerhuensis	253108	3662	archaea			swept
+UP000196239	Nitrosotalea devaniterrae	1078905	2102	archaea			swept
+UP000196694	Pyrodictium delaneyi	1273541	1990	archaea			swept
+UP000197156	Thermococcus celer (strain ATCC 35543 / DSM 2476 / JCM 8558 / Vu 13)	1293037	1903	archaea			swept
+UP000197418	Thermococcus pacificus	71998	1872	archaea			swept
+UP000197679	Candidatus Mancarchaeum acidiphilum	1920749	944	archaea			swept
+UP000198397	Halorubrum vacuolatum (Natronobacterium vacuolatum)	63740	3371	archaea			swept
+UP000198518	Halobacterium jilantaiense	355548	3054	archaea			swept
+UP000198531	Halogeometricum rufum	553469	4155	archaea			swept
+UP000198535	Methanolobus profundi	487685	2902	archaea			swept
+UP000198775	Halorientalis persicus	1367881	5137	archaea			swept
+UP000198848	Natronobacterium texcoconense	1095778	4046	archaea			swept
+UP000198856	Halovenus aranensis	890420	3354	archaea			swept
+UP000198876	Halopelagius inordinatus	553467	3559	archaea			swept
+UP000198882	Natronorubrum texcoconense	1095776	4464	archaea			swept
+UP000198888	Halohasta litchfieldiae	1073996	3425	archaea			swept
+UP000198902	Haloferax massiliensis	1476858	3877	archaea			swept
+UP000198932	Halorubrum sodomense	35743	2994	archaea			swept
+UP000199062	Halomicrobium zhouii	767519	4091	archaea			swept
+UP000199076	Halorientalis regularis	660518	4204	archaea			swept
+UP000199079	Halopenitus persicus	1048396	3343	archaea			swept
+UP000199112	Natronorubrum sediminis	640943	3617	archaea			swept
+UP000199114	Natrinema salaciae	1186196	4688	archaea			swept
+UP000199126	Halogranum amylolyticum	660520	5247	archaea			swept
+UP000199161	Natronobacterium haloterrestre (Halobiforma haloterrestris)	148448	4334	archaea			swept
+UP000199170	Halobellus clavatus	660517	3679	archaea			swept
+UP000199199	Halostagnicola kamekurae	619731	4009	archaea			swept
+UP000199215	Halopenitus malekzadehii	1267564	3119	archaea			swept
+UP000199259	Methanolobus vulcani	38026	2801	archaea			swept
+UP000199320	Natrinema hispanicum	392421	4122	archaea			swept
+UP000199370	Haloarchaeobius iranensis	996166	3852	archaea			swept
+UP000199451	Halogranum gelatinilyticum	660521	3752	archaea			swept
+UP000199607	Halogranum rubrum	553466	4515	archaea			swept
+UP000216308	Halorubrum halodurans	1383851	3137	archaea			swept
+UP000217528	Methanosphaera cuniculi	1077256	1593	archaea			swept
+UP000217726	Methanohalophilus euhalobius	51203	2039	archaea			swept
+UP000217784	Methanobacterium bryantii	2161	3168	archaea			swept
+UP000218083	Halorubrum salipaludis	2032630	3214	archaea			swept
+UP000218164	Methanosarcina spelaei	1036679	3728	archaea			swept
+UP000218615	Candidatus Methanoperedens nitratireducens	1392998	4098	archaea			swept
+UP000219453	Natronoarchaeum philippinense	558529	3284	archaea			swept
+UP000219689	Natrinema ejinorense	373386	4191	archaea			swept
+UP000222824	Halorubrum persicum	1383844	3256	archaea			swept
+UP000230607	Candidatus Nitrosotalea okcheonensis	1903276	2462	archaea			swept
+UP000232412	Nitrosotalea sinensis	1499975	1881	archaea			swept
+UP000232631	Methanobacterium subterraneum	59277	2320	archaea			swept
+UP000236248	Candidatus Nitrosocaldus cavascurensis	2058097	1766	archaea			swept
+UP000236584	Salinigranum rubrum	755307	4473	archaea			swept
+UP000236740	Halobellus limi	699433	3637	archaea			swept
+UP000236755	Haloplanus vescus	555874	2791	archaea			swept
+UP000241022	Candidatus Nitrosopelagicus brevis	1410606	1419	archaea			swept
+UP000242917	Haloarcula taiwanensis	1932004	3614	archaea			swept
+UP000243250	Halogeometricum limi	555875	3607	archaea			swept
+UP000243338	Methanococcoides vulcani	1353158	2177	archaea			swept
+UP000243820	Methanocorpusculum parvum	2193	1675	archaea			swept
+UP000244727	Halococcoides cellulosivorans	1679096	2532	archaea			swept
+UP000245577	Methanobrevibacter woesei	190976	1581	archaea			swept
+UP000245657	Methanospirillum lacunae	668570	3377	archaea			swept
+UP000245829	Nitrosopumilus zosterae	718286	2032	archaea			swept
+UP000245934	Methanospirillum stamsii	1277351	3519	archaea			swept
+UP000247586	Metallosphaera hakonensis JCM 8857 = DSM 7519	1293036	2365	archaea			swept
+UP000248044	Acidianus brierleyi	41673	2858	archaea			swept
+UP000248410	Acidianus sulfidivorans JP7	619593	2255	archaea			swept
+UP000249782	Methanothermobacter tenebrarum	680118	1556	archaea			swept
+UP000249949	Candidatus Nitrosomarinus catalinensis	1898749	1677	archaea			swept
+UP000250085	Thermococcus radiotolerans	187880	1986	archaea			swept
+UP000250088	Natrarchaeobaculum aegyptiacum	745377	3626	archaea			swept
+UP000250125	Thermococcus siculi	72803	2097	archaea			swept
+UP000250134	Thermococcus gorgonarius	71997	1781	archaea			swept
+UP000250136	Thermococcus thioreducens	277988	2222	archaea			swept
+UP000250179	Thermococcus profundus	49899	2076	archaea			swept
+UP000250189	Thermococcus chitonophagus	54262	2061	archaea			swept
+UP000250272	Thermococcus barossii	54077	1997	archaea			swept
+UP000251717	Methanobrevibacter thaueri	190975	2136	archaea			swept
+UP000252189	Haloplanus salinus	1126245	3354	archaea			swept
+UP000253099	Candidatus Methanobinarius endosymbioticus	2006182	1736	archaea			swept
+UP000253273	Haloplanus rubicundus	1547898	3427	archaea			swept
+UP000255421	Halopelagius longus	1236180	3653	archaea			swept
+UP000256864	Methanothermobacter defluvii	49339	1737	archaea			swept
+UP000258613	Natrarchaeobaculum sulfurireducens	2044521	3734	archaea			swept
+UP000263012	Halalkaliarchaeum desulfuricum	2055893	3224	archaea			swept
+UP000266745	Candidatus Nitrosotenuis cloacae	1603555	1717	archaea			swept
+UP000268233	Haloarcula quadrata	182779	4371	archaea			swept
+UP000270581	Halosegnis longus	2216012	2582	archaea			swept
+UP000271783	Methanobrevibacter gottschalkii DSM 11977	1122229	1800	archaea			swept
+UP000273828	Natrarchaeobius halalkaliphilus	1679091	3330	archaea			swept
+UP000276588	Halonotius aquaticus	2216978	2460	archaea			swept
+UP000276741	Sulfodiicoccus acidiphilus	1670455	2410	archaea			swept
+UP000281431	Natrarchaeobius oligotrophus	3455743	4321	archaea			swept
+UP000281564	Halonotius pteroides	268735	2948	archaea			swept
+UP000282007	Haloplanus aerogenes	660522	3463	archaea			swept
+UP000282322	Halocatena pleomorpha	1785090	3340	archaea			swept
+UP000282323	Natrarchaeobius chitinivorans	1679083	4237	archaea			swept
+UP000283805	Halopiger aswanensis	148449	4631	archaea			swept
+UP000289691	Halorientalis pallida	2479928	3984	archaea			swept
+UP000290527	Methanofervidicoccus abyssi	2082189	1246	archaea			swept
+UP000290932	Methanoculleus taiwanensis	1550565	2433	archaea			swept
+UP000292580	Methanofollis fontis	2052832	2257	archaea			swept
+UP000294855	Methanimicrococcus blatticola	91560	1537	archaea			swept
+UP000296706	Halapricum salinum	1457250	3303	archaea			swept
+UP000297295	Methanolobus halotolerans	2052935	2452	archaea			swept
+UP000298568	Metallosphaera prunae	43687	2310	archaea			swept
+UP000304382	Haloarcula mannanilytica	2509225	4215	archaea			swept
+UP000306007	Thermococcus indicus	2586643	2272	archaea			swept
+UP000307562	Natrinema pallidum	69527	3600	archaea			swept
+UP000308037	Natronomonas salsuginis	2217661	2818	archaea			swept
+UP000315385	Halonotius roseus	2511997	2603	archaea			swept
+UP000318864	Salinadaptatus halalkaliphilus	2419781	4165	archaea			swept
+UP000319335	Methanolobus vulcani	38026	2664	archaea			swept
+UP000319712	Halorubrum cibi	413815	3112	archaea			swept
+UP000319894	Haloglomus irregulare	2234134	3668	archaea			swept
+UP000322631	Thermococcus aciditolerans	2598455	2263	archaea			swept
+UP000322983	Sulfuracidifex tepidarius	1294262	2770	archaea			swept
+UP000323439	Methanobrevibacter millerae	230361	2380	archaea			swept
+UP000323537	Halorubrum aquaticum	387340	3113	archaea			swept
+UP000324020	Halorubrum xinjiangense	261291	3113	archaea			swept
+UP000324104	Natrialba swarupiae	2448032	3817	archaea			swept
+UP000326170	Natronorubrum aibiense	348826	3995	archaea			swept
+UP000326500	Methanoculleus thermophilus (Methanogenium thermophilicum)	2200	2250	archaea			swept
+UP000326865	Halosegnis rubeus	2212850	2485	archaea			swept
+UP000332487	Candidatus Micrarchaeum acidiphilum ARMAN-2	425595	1025	archaea			swept
+UP000377803	Candidatus Nanohalobium constans	2565781	1162	archaea			swept
+UP000423396	Stygiolobus azoricus	41675	2042	archaea			swept
+UP000426328	Acidianus ambivalens (Desulfurolobus ambivalens)	2283	2373	archaea			swept
+UP000427373	Sulfurisphaera ohwakuensis	69656	2759	archaea			swept
+UP000428325	Haloplanus rallus	1816183	3448	archaea			swept
+UP000434101	Natronorubrum halalkaliphilum	2691917	4155	archaea			swept
+UP000437065	Halobaculum saliterrae	2073113	3606	archaea			swept
+UP000439022	Haloferax litoreum	2666140	3493	archaea			swept
+UP000440125	Acidianus infernus	12915	2293	archaea			swept
+UP000443423	Haloferax marinum	2666143	3370	archaea			swept
+UP000451471	Halomarina oriensis	671145	4092	archaea			swept
+UP000466535	Halovenus carboxidivorans	2692199	3185	archaea			swept
+UP000470772	Sulfuracidifex metallicus DSM 6482 = JCM 9184	523847	2195	archaea			swept
+UP000471521	Halobacterium bonnevillei	2692200	3549	archaea			swept
+UP000474628	Haloferax marinisediminis	2666142	3333	archaea			swept
+UP000505020	Halorubrum salinarum	2739057	3250	archaea			swept
+UP000509241	Natrinema halophilum	1699371	3981	archaea			swept
+UP000509301	Metallosphaera tengchongensis	1532350	2154	archaea			swept
+UP000509346	Halosimplex pelagicum	869886	4954	archaea			swept
+UP000509441	Nitrosopumilus oxyclinae	1959104	1762	archaea			swept
+UP000509448	Conexivisphaera calida	1874277	1603	archaea			swept
+UP000509478	Nitrosopumilus ureiphilus	1470067	2422	archaea			swept
+UP000509594	Methanolobus zinderi	536044	2600	archaea			swept
+UP000509626	Halorarum salinum	2743089	4124	archaea			swept
+UP000509667	Halosimplex rubrum	869889	4307	archaea			swept
+UP000509750	Halorarum halophilum	2743090	4176	archaea			swept
+UP000509771	Nitrosopumilus cobalaminigenes	1470066	1800	archaea			swept
+UP000510869	Natrinema zhouii	1710539	3597	archaea			swept
+UP000516304	Thermococcus camini	2016373	2192	archaea			swept
+UP000546257	Halobellus ruber	2761102	3285	archaea			swept
+UP000554454	Marine Group I thaumarchaeote	2511932	1258	archaea			swept
+UP000554766	Pyrobaculum arsenaticum	121277	2265	archaea			swept
+UP000570823	Methanofollis tationis	81417	2183	archaea			swept
+UP000593766	Thermosphaera chiliense	3402707	1399	archaea			swept
+UP000594121	Infirmifilum lucidum	2776706	1763	archaea			swept
+UP000595001	Halosimplex litoreum	1198301	4010	archaea			swept
+UP000604391	Candidatus Undinarchaeum marinum	2756141	709	archaea			swept
+UP000605784	Haloarcula pellucida	1427151	4005	archaea			swept
+UP000607197	Halocalculus aciditolerans	1383812	3498	archaea			swept
+UP000608850	Halarchaeum nitratireducens	489913	3221	archaea			swept
+UP000610960	Thermocladium modestius	62609	1937	archaea			swept
+UP000614609	Halarchaeum rubridurum	489911	2860	archaea			swept
+UP000628840	Halarchaeum grantii	1193105	3116	archaea			swept
+UP000632195	Thermogymnomonas acidicola	399579	1715	archaea			swept
+UP000637819	Haloterrigena salifodinae	2675099	4728	archaea			swept
+UP000646946	Candidatus Naiadarchaeum limnaeum	2756139	1101	archaea			swept
+UP000653099	Halobellus salinus	931585	2946	archaea			swept
+UP000662973	Halapricum desulfuricans	2841257	3010	archaea			swept
+UP000663191	Natrinema longum	370324	3429	archaea			swept
+UP000663203	Haloterrigena alkaliphila	2816475	3632	archaea			swept
+UP000663292	Halapricum desulfuricans	2841257	2859	archaea			swept
+UP000663586	Natranaeroarchaeum sulfidigenes	2784880	3117	archaea			swept
+UP000679213	Methanocaldococcus lauensis	2546128	1604	archaea			swept
+UP000679341	Halorubrum ruber	2982524	2786	archaea			swept
+UP000680656	Methanospirillum purgamenti	2834276	3237	archaea			swept
+UP000681041	Methanobacterium alkalithermotolerans	2731220	2119	archaea			swept
+UP000694036	Saccharolobus shibatae	2286	3121	archaea			swept
+UP000705823	Halonotius terrestris	2487750	2832	archaea			swept
+UP000730161	Methanocalculus chunghsingensis	156457	2064	archaea			swept
+UP000766550	Haloarcula limicola	1429915	3863	archaea			swept
+UP000766904	Natronococcus pandeyae	2055836	4930	archaea			swept
+UP000770586	Halorubrum trapanicum	29284	3036	archaea			swept
+UP000783863	Haloarcula salinisoli	2487746	4027	archaea			swept
+UP000823588	Halorubrum alkaliphilum	261290	3129	archaea			swept
+UP000823736	Halolamina salifodinae	1202767	2878	archaea			swept
+UP000824969	Methanoculleus chikugoensis	118126	2572	archaea			swept
+UP000825015	Methanobrevibacter arboriphilus	39441	2063	archaea			swept
+UP000825123	Stygiolobus caldivivus	2824673	2971	archaea			swept
+UP000825933	Methanobacterium spitsbergense	2874285	2697	archaea			swept
+UP000826254	Halobaculum magnesiiphilum	1017351	3639	archaea			swept
+UP000826709	Methanofollis formosanus	299308	2568	archaea			swept
+UP000830434	Halorussus gelatinilyticus	2937524	3634	archaea			swept
+UP000830542	Halococcus dombrowskii	179637	3769	archaea			swept
+UP000830729	Halorussus limi	2938695	4521	archaea			swept
+UP000831768	Halocatena salina	2934340	3723	archaea			swept
+UP000831817	Methanothermobacter tenebrarum	680118	1635	archaea			swept
+UP001016761	Haloterrigena gelatinilytica	2741724	4359	archaea			swept
+UP001042704	Methanofollis aquaemaris	126734	2478	archaea			swept
+UP001055553	Nanobdella aerobiophila	2586965	736	archaea			swept
+UP001055732	Thermococcus aggregans	110163	1991	archaea			swept
+UP001056425	Thermococcus argininiproducens	2866384	2049	archaea			swept
+UP001056766	Methanococcoides seepicolus	2828780	2619	archaea			swept
+UP001056855	Natronosalvus rutilus	2953753	4060	archaea			swept
+UP001057580	Salinirubellus salinus	1364945	4358	archaea			swept
+UP001058330	Haloferax larsenii	302484	3668	archaea			swept
+UP001060368	Methanoplanus endosymbiosus	33865	2795	archaea			swept
+UP001060771	Vulcanisaeta souniana JCM 11219	1293586	2661	archaea			swept
+UP001063698	Ignicoccus pacificus DSM 13166	940294	1860	archaea			swept
+UP001065682	Methanoculleus formosensis	2590886	2504	archaea			swept
+UP001068021	Methanobacterium veterum	408577	3262	archaea			swept
+UP001139494	Natronomonas aquatica	2841590	3189	archaea			swept
+UP001140258	Methanococcus voltae PS	523842	1625	archaea			swept
+UP001141336	Methanocorpusculum vombati	3002864	1920	archaea			swept
+UP001141422	Methanocorpusculum petauri	3002863	2030	archaea			swept
+UP001143747	Methanogenium marinum	348610	2074	archaea			swept
+UP001149411	Halorutilus salinus	2487751	2290	archaea			swept
+UP001154061	Natrinema salsiterrestre	2950540	4600	archaea			swept
+UP001156196	Methanoculleus submarinus	204050	2444	archaea			swept
+UP001163096	Methanogenium organophilum	2199	2510	archaea			swept
+UP001166304	Haloarcula salina	1429914	3782	archaea			swept
+UP001168338	Methanoculleus frigidifontis	2584085	2957	archaea			swept
+UP001168423	Methanoculleus methanifontis	2584086	2513	archaea			swept
+UP001182908	Methanolobus sediminis	3072978	2678	archaea			swept
+UP001183006	Methanolobus mangrovi	3072977	2488	archaea			swept
+UP001185015	Methanococcoides alaskense	325778	2443	archaea			swept
+UP001202674	Natranaeroarchaeum aerophilus	2917711	3287	archaea			swept
+UP001203207	Natronocalculus amylovorans	2917812	3246	archaea			swept
+UP001206983	Methanolobus chelungpuianus	502115	2318	archaea			swept
+UP001208186	Halapricum hydrolyticum	2979991	3282	archaea			swept
+UP001208689	Candidatus Lokiarchaeum ossiferum	2951803	5112	archaea			swept
+UP001210528	Halorubrum ezzemoulense (Halorubrum chaoviator)	337243	4020	archaea			swept
+UP001215956	Candidatus Methanocrinis alkalitolerans	3033395	2422	archaea			swept
+UP001218034	Candidatus Nanohalococcus occultus	2978047	1046	archaea			swept
+UP001218895	Methanomicrobium antiquum	487686	2287	archaea			swept
+UP001220010	Candidatus Methanocrinis natronophilus	3033396	2393	archaea			swept
+UP001224926	Natrinema thermotolerans	121872	3956	archaea			swept
+UP001245683	Thermococcus waiotapuensis	90909	1913	archaea			swept
+UP001246244	Methanosarcina baikalica	3073890	3150	archaea			swept
+UP001248536	Haloarcula argentinensis	43776	3984	archaea			swept
+UP001253439	Haloarcula terrestris	2950533	4118	archaea			swept
+UP001254813	Halogeometricum luteum	2950537	4569	archaea			swept
+UP001257060	Halogeometricum salsisoli	2950536	4365	archaea			swept
+UP001259659	Haloarcula saliterrae	2950534	4206	archaea			swept
+UP001268864	Haloarcula onubensis	2950539	4289	archaea			swept
+UP001271789	Methanolapillus africanus	3028297	1741	archaea			swept
+UP001272052	Methanimicrococcus hacksteinii	3028293	1700	archaea			swept
+UP001273136	Methanorbis furvi	3028299	1835	archaea			swept
+UP001273768	Methanoculleus nereidis	2735141	2559	archaea			swept
+UP001281203	Methanoculleus caldifontis	2651577	2490	archaea			swept
+UP001283212	Methanorbis rubei	3028300	1814	archaea			swept
+UP001301797	Methanochimaera problematica	2609417	2198	archaea			swept
+UP001302662	Methanimicrococcus stummii	3028294	1598	archaea			swept
+UP001302978	Methanimicrococcus hongohii	3028295	1761	archaea			swept
+UP001303587	Methanolapillus millepedarum	3028296	1758	archaea			swept
+UP001304970	Methanolapillus ohkumae	3028298	1548	archaea			swept
+UP001305652	Methanoculleus receptaculi	394967	1991	archaea			swept
+UP001319921	Saccharolobus caldissimus	1702097	3274	archaea			swept
+UP001320159	Methanooceanicella nereidis	2052831	3016	archaea			swept
+UP001320972	Natronoglomus mannanivorans	2979990	4924	archaea			swept
+UP001321047	Natronosalvus hydrolyticus	2979988	4160	archaea			swept
+UP001341135	Pyrodictium abyssi	54256	2463	archaea			swept
+UP001369247	Methanothermobacter wolfeii (Methanobacterium wolfei)	145261	1778	archaea			swept
+UP001396646	Methanococcoides cohabitans	3136559	2238	archaea			swept
+UP001430377	Haloarcula rubra	2487747	4663	archaea			swept
+UP001430455	Haloarcula nitratireducens	2487749	5094	archaea			swept
+UP001432202	Sulfolobus tengchongensis	207809	2714	archaea			swept
+UP001451606	Oxyplasma meridianum	3073602	1649	archaea			swept
+UP001492541	Geoglobus acetivorans	565033	2159	archaea			swept
+UP001500194	Salarchaeum japonicum	555573	2569	archaea			swept
+UP001500420	Natronoarchaeum mannanilyticum	926360	3566	archaea			swept
+UP001500837	Halarchaeum salinum	489912	2833	archaea			swept
+UP001501729	Haladaptatus pallidirubidus	1008152	5836	archaea			swept
+UP001523230	Methanoculleus oceani	2184756	2349	archaea			swept
+UP001524383	Methanocalculus taiwanensis	106207	2244	archaea			swept
+UP001529235	Ignisphaera cupida	3050454	1791	archaea			swept
+UP001567571	Halorubrum ejinorense	425309	3324	archaea			swept
+UP001567572	Halorubrum miltondacostae	3076378	3433	archaea			swept
+UP001570511	Halobellus rubicundus	2996466	3250	archaea			swept
+UP001571980	Pyrococcus kukulkanii	1609559	2300	archaea			swept
+UP001589559	Haloarcula sebkhae	932660	4126	archaea			swept
+UP001589595	Halobaculum roseum	2175149	3670	archaea			swept
+UP001595660	Halobacterium litoreum	2039234	2920	archaea			swept
+UP001595846	Halovivax cerinus	1487865	3612	archaea			swept
+UP001595898	Halosolutus amylolyticus	2932267	4414	archaea			swept
+UP001595921	Halobium salinum	1364940	4334	archaea			swept
+UP001595925	Saliphagus infecundisoli	1849069	4417	archaea			swept
+UP001595945	Halorussus aquaticus	2953748	4522	archaea			swept
+UP001596099	Halomarina salina	1872699	4316	archaea			swept
+UP001596118	Halorubrum rubrum	1126240	3113	archaea			swept
+UP001596145	Halorubrum glutamatedens	2707018	3491	archaea			swept
+UP001596201	Salinirubrum litoreum	1126234	3910	archaea			swept
+UP001596296	Halopenitus salinus	1198295	2906	archaea			swept
+UP001596312	Halalkalicoccus tibetensis	175632	3683	archaea			swept
+UP001596333	Halorubrum trueperi	2004704	3577	archaea			swept
+UP001596352	Halovenus rubra	869890	3350	archaea			swept
+UP001596388	Halobaculum marinum	3031996	3367	archaea			swept
+UP001596390	Halorubrum yunnanense	1526162	3077	archaea			swept
+UP001596395	Halorubellus litoreus	755308	4335	archaea			swept
+UP001596398	Halosegnis marinus	3034023	2932	archaea			swept
+UP001596406	Halomarina ordinaria	3033939	3649	archaea			swept
+UP001596407	Halorussus caseinilyticus	3034025	3737	archaea			swept
+UP001596408	Halopelagius fulvigenes	1198324	3840	archaea			swept
+UP001596432	Halosimplex aquaticum	3026162	4928	archaea			swept
+UP001596434	Haloplanus litoreus	767515	3580	archaea			swept
+UP001596442	Halorubrum tibetense	175631	3513	archaea			swept
+UP001596443	Halobaculum halobium	3032281	3331	archaea			swept
+UP001596445	Halovenus salina	1510225	3257	archaea			swept
+UP001596447	Halospeciosus flavus	3032283	3757	archaea			swept
+UP001596460	Haloferax chudinovii	1109010	3731	archaea			swept
+UP001596461	Halobaculum lipolyticum	3032001	3462	archaea			swept
+UP001596481	Haloferax namakaokahaiae	1748331	3567	archaea			swept
+UP001596545	Halorubrum rutilum	1364933	3152	archaea			swept
+UP001596547	Halomarina halobia	3033386	4080	archaea			swept
+UP001597034	Haloarchaeobius litoreus	755306	4024	archaea			swept
+UP001597052	Halohasta litorea	869891	3806	archaea			swept
+UP001597075	Haloplanus ruber	869892	3321	archaea			swept
+UP001597076	Haloarchaeobius amylolyticus	1198296	3908	archaea			swept
+UP001597085	Halobellus rarus	1126237	3754	archaea			swept
+UP001597092	Halobellus litoreus	755310	3657	archaea			swept
+UP001597111	Halolamina salina	1220023	3137	archaea			swept
+UP001597119	Halorientalis brevis	1126241	4176	archaea			swept
+UP001597139	Halolamina litorea	1515593	3125	archaea			swept
+UP001597185	Halorubrum laminariae	1433523	3518	archaea			swept
+UP001597187	Halomarina rubra	2071873	4186	archaea			swept
+UP001626603	Methanoculleus palmolei	72612	1903	archaea			swept
+UP001667326	Sulfurisphaera javensis	2049879	2780	archaea			swept
+UP001675858	Methanobrevibacter acididurans	120963	1592	archaea			swept
+UP001702790	Methanobrevibacter intestini	2911853	1785	archaea			swept
+UP000003980	Metallosphaera yellowstonensis MK1	671065	3340	archaea			swept
+UP000006469	Haloferax mediterranei (strain ATCC 33500 / DSM 1411 / JCM 8866 / NBRC 14739 / NCIMB 2177 / R-4) (Halobacterium mediterranei)	523841	3828	archaea			unavailable
+UP000008037	Nitrososphaera gargensis (strain Ga9.2)	1237085	3523	archaea			swept
+UP000028194	Candidatus Nitrososphaera evergladensis SR1	1459636	3486	archaea			swept
+UP000058925	Candidatus Nitrosocosmicus oleophilus	1353260	3684	archaea			swept
+UP000070248	candidate division MSBL1 archaeon SCGC-AAA385M02	1698287	156	archaea			swept
+UP000277582	Candidatus Methanodesulfokora washburnensis	2478471	3193	archaea			swept
+UP000294299	Candidatus Nitrosocosmicus franklandianus	1798806	3135	archaea			swept
+UP000315289	Candidatus Nitrosocosmicus arcticus	2035267	3069	archaea			swept
+UP000321408	Promethearchaeum syntrophicum	2594042	3856	archaea			swept
+UP001564723	Natrarchaeobius versutus	1679078	2221	archaea			unavailable
+UP001596274	Halorubrum pallidum	1526114	2588	archaea			swept
+UP001596328	Halobium palmae	1776492	4210	archaea			swept
+UP001596343	Haloarcula pelagica	3033389	3943	archaea			unavailable
+UP001596368	Halobaculum litoreum	3031998	2729	archaea			swept
+UP001596383	Natrinema soli	1930624	6394	archaea			swept
+UP001596396	Halobellus marinus	3075123	245	archaea			unavailable
+UP001596417	Halocatena marina	2934937	4789	archaea			swept
+UP001596428	Salinibaculum marinum	3131993	1500	archaea			unavailable
+UP001596465	Haloarcula halophila	3032584	3930	archaea			unavailable
+UP001653824	Candidatus Methanosphaera massiliense	3017187	500	archaea			unavailable
+UP001683510	Methanosarcina hadiensis	3078083	3574	archaea			swept

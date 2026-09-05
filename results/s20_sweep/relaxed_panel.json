@@ -1,0 +1,56 @@
+{
+ "panel": [
+  "itpr",
+  "ryr",
+  "PF08709",
+  "PF02815",
+  "PF01365",
+  "PF08454"
+ ],
+ "pfam": [
+  {
+   "pfam": "PF08709",
+   "path": "/Users/george/claude_test/ip3r_genes/results/s20_sweep/pfam/PF08709.hmm",
+   "status": "fetched",
+   "bytes": 100263,
+   "name": "Ins145_P3_rec",
+   "acc": "PF08709.18",
+   "desc": "Inositol 1,4,5-trisphosphate/ryanodine receptor",
+   "leng": "213",
+   "why": "IP3-binding core \u2014 the signature that names the family"
+  },
+  {
+   "pfam": "PF02815",
+   "path": "/Users/george/claude_test/ip3r_genes/results/s20_sweep/pfam/PF02815.hmm",
+   "status": "fetched",
+   "bytes": 87205,
+   "name": "MIR",
+   "acc": "PF02815.26",
+   "desc": "MIR domain",
+   "leng": "185",
+   "why": "MIR \u2014 shared with POMT1/2"
+  },
+  {
+   "pfam": "PF01365",
+   "path": "/Users/george/claude_test/ip3r_genes/results/s20_sweep/pfam/PF01365.hmm",
+   "status": "fetched",
+   "bytes": 94650,
+   "name": "RYDR_ITPR",
+   "acc": "PF01365.28",
+   "desc": "RIH domain",
+   "leng": "201",
+   "why": "RYDR_ITPR \u2014 shared with the ryanodine receptors"
+  },
+  {
+   "pfam": "PF08454",
+   "path": "/Users/george/claude_test/ip3r_genes/results/s20_sweep/pfam/PF08454.hmm",
+   "status": "fetched",
+   "bytes": 47241,
+   "name": "RIH_assoc",
+   "acc": "PF08454.18",
+   "desc": "RyR and IP3R Homology associated",
+   "leng": "99",
+   "why": "RIH_assoc \u2014 shared with the ryanodine receptors"
+  }
+ ]
+}
