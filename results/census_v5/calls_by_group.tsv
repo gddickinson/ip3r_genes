@@ -1,10 +1,10 @@
 group	ITPR	RYR	conflict	unassigned	total
-Amoebozoa	12	1	0	0	13
+Amoebozoa	11	1	1	0	13
 Bacteria	0	0	0	1	1
 Discoba	59	19	0	3	81
 Eukaryota (other)	57	5	0	10	72
 Fungi	35	20	0	14	69
 Metazoa (non-vertebrate)	1860	2147	0	211	4218
-SAR	610	99	0	20	729
+SAR	609	99	1	20	729
 Vertebrata	6112	6176	0	324	12612
 Viridiplantae	64	1	0	22	87

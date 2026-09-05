@@ -173,10 +173,23 @@ def main() -> int:
 
     # ------------------------------------------------------------ figures
     A("\n## Figures\n")
+    captions = {
+        "range_by_phylum": "Where the family is, as a fraction of the "
+                           "reference proteomes actually swept in each clade.",
+        "profile_separation": "Both profiles' scores on every S20 target, "
+                              "with D7's no-call band drawn rather than "
+                              "described.",
+        "plant_fungal_chase": "The verdict on every plant and fungal record, "
+                              "and the cross-kingdom identities the "
+                              "contamination test rests on.",
+        "jackhmmer_s20": "Per-group convergence, where D10 killed a run, and "
+                         "the off-family drift K1 cannot see.",
+    }
     figs = sorted((S20_DIR / "figures").glob("*.png"))
     if figs:
         for f in figs:
-            A(f"![{f.stem}](figures/{f.name})\n")
+            A(f"![{captions.get(f.stem, f.stem)}](figures/{f.name})\n")
+            A(f"**{f.stem}.** {captions.get(f.stem, '')}\n")
     else:
         A("_No figures rendered yet — run `scripts/s20_figures.py`._\n")
 

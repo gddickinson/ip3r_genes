@@ -1,5 +1,5 @@
 group	phylum	records	taxa
-Amoebozoa	Evosea	11	8
+Amoebozoa	Evosea	10	8
 Amoebozoa	Discosea	1	1
 Discoba	Euglenozoa	37	21
 Discoba	Heterolobosea	22	3
@@ -30,7 +30,7 @@ Metazoa (non-vertebrate)	Tardigrada	3	2
 Metazoa (non-vertebrate)	Placozoa	3	1
 Metazoa (non-vertebrate)	Priapulida	2	1
 SAR	Ciliophora	388	15
-SAR	unclassified	113	19
+SAR	unclassified	112	18
 SAR	Oomycota	106	26
 SAR	Perkinsozoa	3	3
 Vertebrata	Chordata	6112	747

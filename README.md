@@ -45,8 +45,8 @@ then swept the rest of the tree — 6,928 non-vertebrate reference proteomes,
 question: **land plants 0/384 and Dikarya 0/1,353**, each negative carrying a
 positive control inside the same search, and all 99 plant and fungal records
 chased individually to **47 real genes, 52 fragmentary models and zero
-contaminants**. Census v5 is **17,882 records, 8,809 IP3 receptors across
-1,402 taxa** ([`results/s20_sweep/report.md`](results/s20_sweep/report.md)).
+contaminants**. Census v5 is **17,882 records, 8,807 IP3 receptors across
+1,401 taxa** ([`results/s20_sweep/report.md`](results/s20_sweep/report.md)).
 The next session runs **S23**, taking those absences to genome level.
 
 ---

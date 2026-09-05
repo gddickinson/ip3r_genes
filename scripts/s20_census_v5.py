@@ -67,7 +67,27 @@ V5_FIELDS = V4_FIELDS + V5_EXTRA
 
 def merge_call(prev_call: str, prev_conf: str, s20_call: str,
                s20_conf: str) -> tuple[str, str, str, str]:
-    """(call, confidence, reason, instruments) — S3's D23 rule, verbatim."""
+    """(call, confidence, reason, instruments) — S3's D23 rule, verbatim.
+
+    With one addition D23 did not have to make: **a census v4 `conflict`
+    stays a conflict.** The obvious-looking alternative is to let this sweep
+    break the tie, and the first version of this function did exactly that —
+    it moved two records from `conflict` to `ITPR`. But S20 scores with
+    `itpr.hmm` and `ryr.hmm`, which are *the same profiles* that produced one
+    side of the disagreement in S3. The same profile re-scoring the same
+    protein in a different database is not a third opinion, and treating it
+    as one would quietly resolve conflicts with the instrument that helped
+    cause them. Where the record is one S3 never reached — every
+    non-vertebrate proteome record — the verdict is genuinely new, and those
+    records reach this function with no previous call at all.
+    """
+    if prev_call == "conflict":
+        agrees = (" — this sweep's profile verdict agrees with the profile "
+                  "side of it, but that is the same instrument, not a third "
+                  "opinion" if s20_call in ("ITPR", "RYR") else "")
+        return ("conflict", "none",
+                f"census v4 recorded a conflict and it stands{agrees}",
+                "v4")
     prev_spoke = prev_call in ("ITPR", "RYR")
     s20_spoke = s20_call in ("ITPR", "RYR")
     if prev_spoke and s20_spoke:

@@ -51,7 +51,7 @@ DECOY_MARKERS = ("mannosyltransferase", "pomt", "dolichyl")
 
 
 def _rate(hit: int, tot: int) -> str:
-    return f"{hit}/{tot} ({hit / tot:.0%})" if tot else "n/a"
+    return f"{hit:,}/{tot:,} ({hit / tot:.0%})" if tot else "n/a"
 
 
 def _verdict(prior_zero: bool, found: int, n_proteomes: int) -> tuple[str, str]:
@@ -201,25 +201,37 @@ def section_d14(A, table, assignments, min_score, rel_margin,
                      f"{cov[len(cov) // 2]:.0%}"])
     A(table(["group", "call", "records", "architecture (≥50 % of the model)",
              "partial", "median coverage"], body))
-    itpr_arch = sum(1 for r in assignments if r["assignment"] == "ITPR"
-                    and r["evidence"] == "architecture")
-    itpr_all = sum(1 for r in assignments if r["assignment"] == "ITPR")
-    ryr_arch = sum(1 for r in assignments if r["assignment"] == "RYR"
-                   and r["evidence"] == "architecture")
-    ryr_all = sum(1 for r in assignments if r["assignment"] == "RYR")
-    A(f"\n**{_rate(itpr_arch, itpr_all)} of the ITPR calls span at least half "
-      f"the model, against {_rate(ryr_arch, ryr_all)} of the RYR ones.** The "
-      "RYR calls out here are overwhelmingly module-level matches to a "
-      "4,930-state channel model by proteins a few hundred to two thousand "
-      "residues long — the shared architecture D14 exists to see through, "
-      "not ryanodine receptors. Read as gene counts they would put RyRs in "
-      "fungi and green algae; read as coverage they do not.\n")
+    # The contrast is computed per group, not asserted globally. When this
+    # paragraph was first written the sweep held no invertebrates and *every*
+    # RYR call outside the vertebrates was module-level; with the
+    # invertebrates in, 441 of them are real full-length ryanodine receptors.
+    # A sentence that kept saying "overwhelmingly module-level" would have
+    # been contradicted by the table directly above it.
+    def _arch(call, groups):
+        sub = [r for r in assignments if r["assignment"] == call
+               and r.get("group") in groups]
+        return sum(1 for r in sub if r["evidence"] == "architecture"), len(sub)
+
+    metazoan = {"metazoa_nonvert"}
+    others = {r.get("group") for r in assignments} - metazoan
+    A(f"\nThe split runs along the one line that matters. Where ryanodine "
+      f"receptors are expected — the invertebrates — the RYR calls are real: "
+      f"{_rate(*_arch('RYR', metazoan))} span at least half the model. "
+      f"Everywhere else they are not: {_rate(*_arch('RYR', others))}. The "
+      f"ITPR calls hold up in both ({_rate(*_arch('ITPR', metazoan))} and "
+      f"{_rate(*_arch('ITPR', others))}). So the module-level RYR calls in "
+      "fungi, green algae and protists are the shared architecture D14 exists "
+      "to see through, not receptors: read as gene counts they would invent a "
+      "ryanodine receptor family across half the eukaryotic tree, and read as "
+      "coverage they do not.\n")
+
     arch_ryr = [r for r in assignments if r["assignment"] == "RYR"
-                and r["evidence"] == "architecture"]
+                and r["evidence"] == "architecture"
+                and r.get("group") in others]
     if arch_ryr:
-        A(f"\nThe {len(arch_ryr)} that *are* architecture-level are worth "
-          "naming, because where the sister family is tells you when the two "
-          "families split:\n")
+        A(f"\nThe {len(arch_ryr)} architecture-level RYR call(s) outside the "
+          "invertebrates are worth naming, because where the sister family "
+          "is tells you when the two families split:\n")
         A(table(["accession", "species", "length", "ryr bits", "coverage",
                  "margin", "a profile seed?"],
                 [[r["accession"], f"*{r['species']}*", r["length"],
@@ -228,10 +240,12 @@ def section_d14(A, table, assignments, min_score, rel_margin,
                   "yes — circular" if r["accession"] in seed_accessions
                   else "no"]
                  for r in sorted(arch_ryr,
-                                 key=lambda r: -float(r["ryr_score"] or 0))]))
+                                 key=lambda r: -float(r["ryr_score"] or 0))[:15]]))
         A("\nA record that is itself one of `ryr.hmm`'s seeds scores well "
           "against a profile built partly from it, so its score is not "
           "independent evidence and the column says so. The rest are.\n")
+
+
     if contested:
         A("\nThe contested targets — kept and reported, not resolved:\n")
         A(table(["accession", "species", "itpr bits", "ryr bits", "margin"],
@@ -528,8 +542,14 @@ def section_census(A, table, v5, changes, conflicts, by_group) -> None:
       "resolved (D23).\n")
     if by_group:
         A(table(["group", "ITPR", "RYR", "conflict", "unassigned", "total"],
-                [[r["group"], r["ITPR"], r["RYR"], r["conflict"],
-                  r["unassigned"], r["total"]] for r in by_group]))
+                [[r["group"]] + [f"{int(r[k]):,}" for k in
+                                 ("ITPR", "RYR", "conflict", "unassigned",
+                                  "total")] for r in by_group]))
+    if changes:
+        A(f"\nThe {len(changes)} record(s) whose call moved:\n")
+        A(table(["accession", "species", "census v4", "census v5", "why"],
+                [[c["accession"], f"*{c['species']}*", c["v4_call"],
+                  c["call"], c["reason"]] for c in changes[:10]]))
     if conflicts:
         A("\nThe conflicts:\n")
         A(table(["accession", "species", "census v4", "S20 sweep", "reason"],

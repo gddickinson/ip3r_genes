@@ -1034,9 +1034,13 @@ architecture-level against 1 % of RYR calls.
   sister-family content in every round. All 70 targets in the converged model
   are Chlorophyta, including all 6 that only iteration found — so the
   land-plant absence is not a sensitivity artefact.
-- **Census v5: 17,882 records** (+785 from this sweep), 8,809 ITPR across 1,402
-  taxa, 0 conflicts, lineage columns on every row including S5b's 488 genomic
-  gene models, joined to S4's manifest.
+- **Census v5: 17,882 records** (+785 from this sweep), 8,807 ITPR across 1,401
+  taxa, lineage columns on every row including S5b's 488 genomic gene models,
+  joined to S4's manifest. **No v4 call is overturned and the 2 conflicts stand**:
+  the first version of the merge let this sweep break them, but S20 scores with
+  the same two profiles that produced one side of each disagreement, so it is
+  the same instrument re-scoring the same protein in a different database, not
+  a third opinion.
 
 - **jackhmmer, fungi: ran the ceiling, D10's K2 fired at round 3.** The
   included set grew **34.3×**, 42 → 1,442, and by round 10 rested on 6,302 —
