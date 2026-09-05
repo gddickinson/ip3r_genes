@@ -8,55 +8,55 @@
  "groups": [
   {
    "group": "swept (S5a pilot)",
-   "genomes": 83,
-   "gbp": 82.2,
-   "download_gb": 24.7,
-   "fasta_gb": 82.2,
-   "miniprot_h": 0.8,
-   "rescue_h": 0.3,
-   "compute_h": 1.2,
-   "download_h": 1.2,
-   "wall_h": 1.2
+   "genomes": 309,
+   "gbp": 552.5,
+   "download_gb": 165.8,
+   "fasta_gb": 552.5,
+   "miniprot_h": 5.5,
+   "rescue_h": 1.3,
+   "compute_h": 6.8,
+   "download_h": 8.4,
+   "wall_h": 8.4
   },
   {
    "group": "remaining, standard",
-   "genomes": 224,
-   "gbp": 407.1,
-   "download_gb": 122.1,
-   "fasta_gb": 407.1,
-   "miniprot_h": 4.1,
-   "rescue_h": 0.9,
-   "compute_h": 5.0,
-   "download_h": 6.2,
-   "wall_h": 6.2
+   "genomes": 0,
+   "gbp": 0.0,
+   "download_gb": 0,
+   "fasta_gb": 0,
+   "miniprot_h": 0.0,
+   "rescue_h": 0.0,
+   "compute_h": 0.0,
+   "download_h": 0.0,
+   "wall_h": 0.0
   },
   {
    "group": "remaining, giants",
-   "genomes": 2,
-   "gbp": 63.2,
-   "download_gb": 19.0,
-   "fasta_gb": 63.2,
-   "miniprot_h": 0.6,
+   "genomes": 0,
+   "gbp": 0.0,
+   "download_gb": 0,
+   "fasta_gb": 0,
+   "miniprot_h": 0.0,
    "rescue_h": 0.0,
-   "compute_h": 0.6,
-   "download_h": 1.0,
-   "wall_h": 1.0
+   "compute_h": 0.0,
+   "download_h": 0.0,
+   "wall_h": 0.0
   }
  ],
  "remaining_totals": {
-  "genomes": 226,
-  "gbp": 470.3,
-  "download_gb": 141.1,
-  "fasta_gb": 470.3,
-  "compute_h": 5.6,
-  "download_h": 7.2
+  "genomes": 0,
+  "gbp": 0.0,
+  "download_gb": 0,
+  "fasta_gb": 0,
+  "compute_h": 0.0,
+  "download_h": 0.0
  },
- "workers_assumed": 2,
- "wall_h_remaining": 7.2,
- "bound_by": "download",
+ "workers_assumed": 6,
+ "wall_h_remaining": 0.0,
+ "bound_by": "compute",
  "storage": {
-  "free_gb_now": 1337.6,
-  "fasta_gb_if_kept": 470.3,
+  "free_gb_now": 857.9,
+  "fasta_gb_if_kept": 0,
   "fits_without_delete_after": true,
   "note": "--delete-after keeps the peak footprint at ~2 genomes; keeping the FASTAs costs the fasta_gb total but saves re-downloading for S8 synteny and S10 validation"
  },
@@ -182,17 +182,6 @@
    "GCF_964261635.1",
    "GCF_019279795.1"
   ],
-  "giants_needing_chunked_miniprot": [
-   {
-    "accession": "GCF_964261635.1",
-    "organism": "Lissotriton helveticus",
-    "fasta_gb": "23.17"
-   },
-   {
-    "accession": "GCF_019279795.1",
-    "organism": "Protopterus annectens",
-    "fasta_gb": "40.05"
-   }
-  ]
+  "giants_needing_chunked_miniprot": []
  }
 }

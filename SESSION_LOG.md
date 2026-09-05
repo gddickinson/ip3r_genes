@@ -899,3 +899,56 @@ three times:
 
 Also of note in the partial ledger: **0 cells are `absent` at 81 genomes**, and
 D14 still holds absolutely — at all 566 loci only one family's baits aligned.
+
+### S5b complete — 309/309, 0 failures
+
+**The sweep.** 309 genomes, 1,236 cells, 2,144 loci, zero failures. Six shards
+plus a supervisor that picked up the two giants once they drained; both giants
+completed on the chunked path (*Protopterus* 40 Gbp / 25 chunks / 1.8 h,
+*Lissotriton* 23 Gbp / 14 chunks / 2.5 h). Wall clock ~19 h, download-bound
+throughout.
+
+**Two instrument fixes the run itself surfaced.**
+
+1. **`MIN_LOCUS_IDENTITY` = 0.40.** The giants came back with ITPR3 at 10 loci
+   (*Lissotriton*) and 8 (*Protopterus*). Inspection: exactly one locus per
+   paralog was real (coverage 1.0, identity 0.79–0.91, annotated), and every
+   extra sat at 10–27 % coverage and **23–34 % identity**, often overlapping
+   unrelated genes (PSME4, TRAPPC9, CDH20, EXOC1) — the shared channel module,
+   chained across megabases by a 2 Mbp `-G`. 51 % of loci in assemblies over
+   5 Gbp were like this, against 9 % elsewhere. The floor is measured from a
+   clean gap: the **571 loci whose paralog an annotation independently
+   confirms have a minimum identity of 0.759**, and any floor in 0.35–0.50
+   drops the same 22 junk loci and zero real ones. No *status* was ever wrong
+   (the real gene always scored best) but `n_loci` was inflated, and copy
+   number is a result. All 309 re-derived from cached GFFs after the fix.
+2. **Atomic miniprot output.** The driver reuses any non-empty `miniprot.gff`,
+   so a run killed mid-write left a truncated file the next run accepted as
+   complete — undetectable afterwards, since a GFF cut at a line boundary
+   parses perfectly. Audited before fixing: 74 GFFs all ended on a complete
+   record and 0 genomes were marked done carrying a pre-restart GFF, so the
+   earlier shard kills corrupted nothing.
+
+**Results.**
+- **RyR positive control fired in 309/309.** Nothing excluded on control grounds.
+- **D14 held absolutely**: across all 2,144 loci only one family's baits
+  aligned. The two panels never contested a locus.
+- **4 `absent` cells, all cyclostome**: lamprey and hagfish each carry ITPR1
+  and lack ITPR2/ITPR3, both above the contiguity bar with a firing control.
+- **D4's bar**: 120/309 genomes cannot hold the gene on one contig. Recovery
+  98–99 % above it, 57–70 % below.
+- **Span bias confirmed at 13 points** (ITPR3 70 %, ITPR1 61 %, ITPR2 57 %
+  below the bar). It read 15 → 8 → 12.5 → 13 as the sample composition shifted
+  during the sweep, which is exactly why the report generator was built to
+  render the verdict from the final table rather than narrate the pilot.
+- **Attribution margin validated on fragments**: 53 rescue regions of
+  annotation-established identity agree 53/53, margins 0.227–0.445; 0 below
+  the 0.22 in force, **31 of 53 below the inherited 0.333**.
+- **Annotation quality differs by paralog** — contiguity-controlled over 487
+  loci, ITPR3 88 % correctly named vs ITPR1 65 %. Uncontrolled the same data
+  said something different and wrong; the comparison reversed twice as n grew.
+- **Census v4 = 17,097 records**: +1,058 gene models, of which **318 ITPR
+  models exist only as DNA** and 167 more sit in an annotated gene with no
+  family name.
+
+**Next: S20**, the non-vertebrate sweep — now the topmost unblocked row.

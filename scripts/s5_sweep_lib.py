@@ -50,6 +50,24 @@ CONTROL_CLASS = "RYR"
 #: `s5_classify.classify_class`) — but only within its own family.
 UNRESOLVED_ITPR_CLADES = ("vertebrate_basal",)
 
+#: Minimum identity for a cluster of alignments to count as a locus at all.
+#:
+#: **Measured, with a wide empty gap.** Across the 309-genome sweep, the 571
+#: loci whose paralog an assembly's own annotation independently confirms have
+#: a minimum identity of **0.759** — not one below it. The population it
+#: excludes sits at 0.23-0.34: the shared channel module matching unrelated
+#: proteins (PSME4, TRAPPC9, CDH20, EXOC1 ...), chained into apparent loci by
+#: a large `-G`. Any floor from 0.35 to 0.50 drops exactly those 22 and zero
+#: confirmed loci, so this is a gap rather than a tuned cut; 0.40 sits in the
+#: middle of it, well above the ~0.25 cross-family noise S1 measured between
+#: ITPR and RyR and well below the 0.759 floor of real loci.
+#:
+#: It matters most in the giant genomes, where `-G` is 2 Mbp: 51 % of loci in
+#: assemblies over 5 Gbp were under 30 % coverage, against 9 % elsewhere. The
+#: *status* was never wrong — the best locus wins and the real gene always
+#: scored best — but `n_loci` was inflated, and copy number is a result.
+MIN_LOCUS_IDENTITY = 0.40
+
 COV_FOUND = 0.70          # bait coverage for a "found" call
 LOCUS_GAP = 10_000        # merge alignments this close on one strand
 EDGE_BP = 10_000          # locus within this of a contig end -> edge
@@ -439,6 +457,16 @@ class Locus:
             return 1.0
         return (round((mine.score - max(others)) / mine.score, 4)
                 if mine.score > 0 else 0.0)
+
+
+def filter_loci(loci: list[Locus],
+                min_identity: float = MIN_LOCUS_IDENTITY) -> list[Locus]:
+    """Drop clusters whose best alignment is below the identity floor.
+
+    Applied to the *locus*, not to each alignment, so a real locus carrying a
+    few poorly-aligned exons survives on the strength of its best one.
+    """
+    return [L for L in loci if L.best.identity >= min_identity]
 
 
 def cluster_loci(alns: list[Aln], gap: int = LOCUS_GAP) -> list[Locus]:

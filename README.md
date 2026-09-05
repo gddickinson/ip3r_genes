@@ -36,11 +36,11 @@ receptors, 605 uncallable, 2 conflicts**
 ([`results/census_v3/`](results/census_v3/)). S4 declared the genome
 denominator — **309 assemblies, 161 vertebrate orders ∪ 169 margin species,
 552.5 Gbp** ([`results/genome_manifest.tsv`](results/genome_manifest.tsv)) —
-and S5a built and calibrated the genomic sweep that runs over them: a
-**38-bait panel derived from the census by seven enforced rules**, three
-measured thresholds, and a six-genome pilot
-([`results/genome_ledger/`](results/genome_ledger/)). The next session runs
-**S5b**, the full sweep.
+and S5a built and calibrated the genomic sweep that runs over them. **S5b then
+swept all 309 genomes — 2,144 gene loci, zero failures** — producing the
+found/lost/assembly-gap ledger and census v4 (17,097 records)
+([`results/genome_ledger/report.md`](results/genome_ledger/report.md)). The
+next session runs **S20**, the non-vertebrate sweep.
 
 ---
 
@@ -150,7 +150,7 @@ One task per session. Full ledger with dependencies and results in
 | S3 | Profile-HMM sweep (itpr.hmm + ryr.hmm) + convergence argument | ✅ completed 2026-09-04 |
 | S4 | Genome scope manifest (the denominator) | ✅ completed 2026-09-04 |
 | S5a | Genomic sweep: bait panel, calibrated pipeline, pilot | ✅ completed 2026-09-04 |
-| S5b | The full 309-genome sweep → ledger + census v4 | ⏳ pending — **next** |
+| S5b | The full 309-genome sweep → ledger + census v4 | ✅ completed 2026-09-05 |
 | S20 | Non-vertebrate sweep — the family's true range | ⏳ pending |
 | S23 | Invertebrate / protist / plant / fungal genome sweep | ⏳ pending |
 | S6 | Alignment upgrade (MAFFT L-INS-i + trimAl) | ⏳ pending |
@@ -178,6 +178,36 @@ One task per session. Full ledger with dependencies and results in
 ## Findings so far
 
 Plain-language entries per task: [`FINDINGS.md`](FINDINGS.md). Headlines:
+
+**S5b — searched as DNA, the two families never once get confused.** Across
+**2,144 gene loci in 309 genomes, every one was matched by one family's
+sequences and not at all by the other's** — not one close call. This is the
+family that defeated this project's own detector completely at the protein
+level, where ryanodine receptors carry every signature that identifies an IP3
+receptor. The ambiguity is a property of searching protein fragments, not of
+the two families.
+→ [`results/genome_ledger/report.md`](results/genome_ledger/report.md)
+
+![Recovery against assembly contiguity](results/genome_ledger/figures/contiguity_confound.png)
+
+**S5b — lampreys and hagfish have one receptor where other vertebrates have
+three.** The only `absent` calls in 309 genomes, and there are four of them:
+*Petromyzon marinus* and *Myxine glutinosa* each carry ITPR1 and lack ITPR2 and
+ITPR3. Both genomes clear the contiguity bar and both fired the positive
+control, so the call survives the two gates that disqualify every other
+candidate absence. Jawless fishes split before the genome duplications thought
+to have produced most vertebrate gene trios. **Everywhere else in the jawed
+vertebrates — sharks, rays, coelacanth, lungfish, and every bird, fish, mammal,
+amphibian and reptile in scope — there is no evidence of loss at all**: 98–99 %
+recovery in any genome assembled well enough to hold the gene.
+
+**S5b — 485 receptor genes no name-based search can reach.** 318 exist only as
+DNA, and 167 more sit inside a gene the databases record but never named. And
+the databases are not equally good at the three paralogs: controlling for
+assembly quality, a gene model names the right paralog 88 % of the time for
+ITPR3 but only **65 % for ITPR1** — genes of near-identical protein length in
+the same genomes, so any count built from names reports a copy-number
+difference that does not exist.
 
 **S5a — the genomes we suspected are mostly the genomes we cannot read.**
 The 169 "margin" species were flagged because their protein sets were missing

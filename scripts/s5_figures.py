@@ -174,7 +174,7 @@ def fig_contiguity(ledger: list[dict]) -> None:
             ax.text(i, 1.04, f"n={n_per_bin[i]}", ha="center", fontsize=5.8,
                     color="#52514e")
     ax.axvline(1.5, color="#b3261e", lw=1.1, ls="--")
-    ax.text(1.42, 0.60, "D4 bar — below this a\ncontig cannot hold the gene",
+    ax.text(1.42, 0.16, "D4 bar — below this a\ncontig cannot hold the gene",
             fontsize=6.0, color="#b3261e", va="center", ha="right")
     ax.set_xticks(range(len(labels)))
     ax.set_xticklabels(labels, fontsize=6.3)

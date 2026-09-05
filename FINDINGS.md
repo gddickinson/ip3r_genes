@@ -538,3 +538,72 @@ complete, full-length, correctly-named ITPR1 or ITPR2 from any shark, ray or
 chimaera, none from lampreys or hagfish, and no ITPR2 from the coelacanth
 lineage. The search can still find those genes — it just cannot say which of
 the three they are. That question belongs to the family tree, not to a name.
+
+---
+
+## 2026-09-05 — S5b: what 309 genomes say, read straight from the DNA
+
+**Every one of the 309 genomes was searched, and the tripwire held in all of
+them.** A ryanodine receptor — the IP3 receptor's sister, present in every
+vertebrate — travelled with every search as a check that the search worked. It
+was found in all 309. Nothing below is a case of a search failing quietly.
+
+**Searched as DNA, the two families never once got confused.** Across 2,144
+gene locations, every single one was matched by one family's sequences and
+simply not by the other's. Not one was a close call. This is the family that
+defeated our own detector completely at the protein level, where ryanodine
+receptors carry every signature that identifies an IP3 receptor. The ambiguity
+that has dogged these two families in protein databases is not a property of
+the proteins — it is a property of searching fragments of them.
+
+**Lampreys and hagfish have one IP3 receptor where other vertebrates have
+three.** These are the only two genomes out of 309 where the search found
+nothing at all for a paralog, and it found nothing twice in each: both carry
+the equivalent of ITPR1 and neither carries ITPR2 or ITPR3. Both genomes are
+well assembled and both passed the tripwire, so this is not a technical
+failure. Jawless fishes split from the rest of the vertebrates before the
+genome duplications that are thought to have produced most vertebrate gene
+trios, so a single receptor there is what that history predicts. The honest
+statement is *one findable receptor*, not *two specific absences*: no properly
+named lamprey or hagfish ITPR2 or ITPR3 exists anywhere in the protein
+databases for the search to use as a template. *(pending: S7, the family tree,
+which is what turns this into a statement about genome duplication.)*
+
+**Everywhere else, the receptors are there.** In genomes assembled well enough
+to hold a gene of this size on one piece of DNA, all three paralogs were found
+in 98–99 % of cases — sharks, rays, a coelacanth, a lungfish, a reedfish, and
+every bird, fish, mammal, amphibian and reptile in the scope. **There is no
+evidence of IP3 receptor loss anywhere in the jawed vertebrates.**
+
+**And the apparent exceptions are a property of the assemblies.** In the 120
+genomes too fragmented to hold the gene on one contig, recovery drops to
+57–70 %. That is not biology; it is the same shortcoming reappearing, and it
+falls hardest on exactly the species that were flagged as suspicious in the
+first place. The bias even has a direction: the compact ITPR3 is recovered 13
+points more often than the sprawling ITPR1 and ITPR2, because a short gene
+fits on a short contig. A broken assembly loses the big receptors first, which
+is precisely the pattern that would be misread as birds having lost two of
+their three.
+
+**485 IP3 receptor genes are effectively invisible to anyone searching by
+name.** 318 exist only as DNA — no gene model at the locus, or an assembly
+with no gene list at all — and another 167 sit inside a gene the databases do
+record but never named, so no search for "ITPR" will ever return them. They
+are real, complete, correctly placed genes.
+
+**The databases are not equally good at the three receptors.** Comparing only
+well-assembled genomes, so that assembly quality cannot masquerade as
+annotation quality, a gene model names the right paralog 88 % of the time for
+ITPR3 and 87 % for ITPR2 — but only **65 % for ITPR1**. These are genes of
+near-identical protein length sitting in the same genomes, so a count built
+from gene names will report a difference in copy number that does not exist.
+*(pending: S18, the annotation audit.)*
+
+**A caution about our own method, worth recording.** In the two largest
+genomes — a newt and a lungfish, twenty and forty times the size of a typical
+bird genome — the search initially reported up to ten copies of a receptor
+where there is one. Each phantom was a fragment of the pore module, the part
+these channels share with unrelated proteins, stitched across millions of
+bases of empty DNA. The real gene was never in doubt, but the copy count was,
+and copy count is a result. It is now filtered on sequence identity, using a
+threshold with a wide empty gap on either side of it.

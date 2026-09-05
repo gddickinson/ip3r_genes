@@ -157,7 +157,8 @@ def run_alignment(row: dict, fna: Path, baits: Path, out: Path,
     else:
         n_chunks = prev.get("miniprot_chunks", 1)
     alns = lib.parse_miniprot_gff(gff, lib.load_baits()[1])
-    return alns, lib.cluster_loci(alns), max_intron, n_chunks, baits_version
+    loci = lib.filter_loci(lib.cluster_loci(alns))
+    return alns, loci, max_intron, n_chunks, baits_version
 
 
 def run_rescue(cells: dict, fna: Path, out: Path, rescue: dict, baits: Path,
@@ -296,6 +297,7 @@ def process_genome(row: dict, baits: Path, rescue: dict, bait_meta: dict,
         "contig_n50": int(row.get("contig_n50") or 0),
         "run_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "n_alignments": len(alns), "n_loci": len(loci),
+        "min_locus_identity": lib.MIN_LOCUS_IDENTITY,
         "cells": cells, "other_loci": others,
         "control_ok": control["status"] not in ("absent", "no_locus"),
         "control_status": control["status"],

@@ -1,11 +1,11 @@
 group	n	min	p05	p25	median	mean	max
-all_itpr_loci	296	0.1351	0.225	0.2963	0.3271	0.4727	1.0
-annotation_known	86	0.159	0.1897	0.2909	0.3466	0.4937	1.0
-annotation_agrees	83	0.159	0.1897	0.2809	0.346	0.4837	1.0
-annotation_agrees_contested	62	0.159	0.1601	0.2516	0.3214	0.3088	0.4067
+all_itpr_loci	1059	0.0237	0.2161	0.2797	0.3156	0.3767	1.0
+annotation_known	574	0.1358	0.2149	0.2708	0.3165	0.3441	1.0
+annotation_agrees	571	0.1358	0.2149	0.2697	0.3165	0.3418	1.0
+annotation_agrees_contested	542	0.1358	0.2142	0.2637	0.3145	0.3066	0.4114
 annotation_disagrees	3	0.306	0.306	0.306	1.0	0.7687	1.0
-family_margin_all	566	1.0	1.0	1.0	1.0	1.0	1.0
-fragment_all	228	0.0	0.0	0.152	0.2765	0.2656	1.0
-fragment_annotation_known	30	0.227	0.227	0.282	0.304	0.3187	0.445
-fragment_annotation_agrees	30	0.227	0.227	0.282	0.304	0.3187	0.445
+family_margin_all	2144	1.0	1.0	1.0	1.0	1.0	1.0
+fragment_all	451	0.0	0.055	0.153	0.27	0.2656	1.0
+fragment_annotation_known	53	0.227	0.227	0.282	0.309	0.3202	0.445
+fragment_annotation_agrees	53	0.227	0.227	0.282	0.309	0.3202	0.445
 fragment_annotation_disagrees	0						

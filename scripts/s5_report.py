@@ -367,10 +367,15 @@ def main() -> None:
     A("\n## Outputs\n")
     A("- `results/s5_baits/` — the panel, its per-candidate screen, the "
       "screen's own negative controls, and the intron calibration\n"
-      "- `results/genome_ledger/` — the pilot ledger (long and wide), status "
-      "counts, per-locus margins, the margin calibration, the contiguity "
-      "table and the S5b budget\n"
-      f"- `{ledger_stats['genomes_swept']}` per-genome evidence directories "
+      "- `results/genome_ledger/` — the "
+      + ("pilot ledger" if is_pilot else "ledger")
+      + " (long and wide), status counts, per-locus margins, the rescue "
+      "regions, the margin calibration, the contiguity table, the budget and "
+      "four figures\n"
+      + ("" if is_pilot else
+         "- `results/census_v4/` — census v3 plus the sweep's gene models, "
+         "with how each database holds its locus\n")
+      + f"- `{ledger_stats['genomes_swept']}` per-genome evidence directories "
       "under the data root (`genome_sweep/<acc>/`), each with its raw "
       "miniprot GFF, rescue output and `summary.json`\n")
 
