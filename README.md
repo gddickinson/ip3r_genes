@@ -39,8 +39,15 @@ denominator — **309 assemblies, 161 vertebrate orders ∪ 169 margin species,
 and S5a built and calibrated the genomic sweep that runs over them. **S5b then
 swept all 309 genomes — 2,144 gene loci, zero failures** — producing the
 found/lost/assembly-gap ledger and census v4 (17,097 records)
-([`results/genome_ledger/report.md`](results/genome_ledger/report.md)). The
-next session runs **S20**, the non-vertebrate sweep.
+([`results/genome_ledger/report.md`](results/genome_ledger/report.md)). **S20
+then swept the rest of the tree — 6,928 non-vertebrate reference proteomes,
+63.1 M proteins, 24.93 G residues** — and settled the plant and fungal
+question: **land plants 0/384 and Dikarya 0/1,353**, each negative carrying a
+positive control inside the same search, and all 99 plant and fungal records
+chased individually to **47 real genes, 52 fragmentary models and zero
+contaminants**. Census v5 is **17,882 records, 8,809 IP3 receptors across
+1,402 taxa** ([`results/s20_sweep/report.md`](results/s20_sweep/report.md)).
+The next session runs **S23**, taking those absences to genome level.
 
 ---
 
@@ -105,12 +112,13 @@ Re-derived by S0 on 2026-08-18 and enumerated to exhaustion by S2 on
 
 - The family is overwhelmingly an animal family — **10,936 of the 15,421**
   enumerated proteins are vertebrate, another 3,706 non-vertebrate metazoan.
-- **Outside the animals it survives in a pattern, not at random.** Every
-  green-plant call is in the **green algae** (Streptophyta, the land-plant
-  lineage, has none from 15 records in 13 taxa); every fungal call is in an
-  **early-diverging phylum**, and Dikarya — the yeasts and moulds —
-  contributes no records at all. Two independent losses, if the genomes
-  agree with the proteomes (S20, S23).
+- **Outside the animals it survives in a pattern, not at random — and S20
+  showed the pattern is real.** Sweeping the proteomes themselves, with no
+  Pfam-annotation filter: **Streptophyta 0/384 reference proteomes** against
+  15/48 in the green algae, and **Dikarya 0/1,353** against 28/1,527 across
+  the fungi. The fungal losses are patchy rather than basal — Glomeromycota,
+  Mortierellomycota, Kickxellomycota and Microsporidia are empty too. Absent
+  from bacteria (0/3,537) and archaea (0/634) entirely.
 - **Half of what the search returns is the wrong family.** 6,807 of the
   15,421 records are ryanodine receptors, which carry every ITPR-diagnostic
   Pfam. Separating them is a positive test at every stage (**D14**).
@@ -151,7 +159,7 @@ One task per session. Full ledger with dependencies and results in
 | S4 | Genome scope manifest (the denominator) | ✅ completed 2026-09-04 |
 | S5a | Genomic sweep: bait panel, calibrated pipeline, pilot | ✅ completed 2026-09-04 |
 | S5b | The full 309-genome sweep → ledger + census v4 | ✅ completed 2026-09-05 |
-| S20 | Non-vertebrate sweep — the family's true range | ⏳ pending |
+| S20 | Non-vertebrate sweep — the family's true range | ✅ completed 2026-09-05 |
 | S23 | Invertebrate / protist / plant / fungal genome sweep | ⏳ pending |
 | S6 | Alignment upgrade (MAFFT L-INS-i + trimAl) | ⏳ pending |
 | S7 | ML phylogeny, rooted on RyR; which paralogs are sisters | ⏳ pending |
@@ -178,6 +186,30 @@ One task per session. Full ledger with dependencies and results in
 ## Findings so far
 
 Plain-language entries per task: [`FINDINGS.md`](FINDINGS.md). Headlines:
+
+**S20 — the land plants really did lose it, and the search that says so can
+be checked.** Zero IP3 receptors in 384 land-plant reference proteomes and 16
+million proteins — every flowering plant, moss, fern and conifer in the set —
+while the green algae next door have it. The same for the yeasts and moulds:
+zero in 1,353 proteomes. What makes those numbers worth believing is what the
+same search finds in the same genomes: the domain the family shares with
+unrelated proteins comes back **633 times in land plants and 4,376 times in
+the Dikarya**, and the domain that names the family comes back **not once**.
+The instrument is working there; it is finding everything except the receptor.
+→ [`results/s20_sweep/report.md`](results/s20_sweep/report.md)
+
+![Where the family is, per swept proteome](results/s20_sweep/figures/range_by_phylum.png)
+
+**S20 — the plant and fungal records are real genes, not database mistakes.**
+All 99 were chased one at a time against the obvious worry, that a sequencing
+project had picked up an animal and filed its DNA under an alga. Every record's
+nearest relative outside its own kingdom sits at **20–46 % identity, median
+24 %** — the ordinary range for genes that parted a billion years ago, nowhere
+near the 95 % that would mean a sequence in the wrong assembly. Not one
+contaminant, and not one without a genome to sit in.
+→ [`results/s20_sweep/report.md`](results/s20_sweep/report.md)
+
+![The plant and fungal chase](results/s20_sweep/figures/plant_fungal_chase.png)
 
 **S5b — searched as DNA, the two families never once get confused.** Across
 **2,144 gene loci in 309 genomes, every one was matched by one family's

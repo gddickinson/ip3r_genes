@@ -1,9 +1,23 @@
 {
  "groups_without_seed": [],
+ "groups_not_completed": [],
  "min_seed_coverage": 0.5,
  "max_iter": 10,
  "evalue": "1e-5",
  "verdicts": {
+  "fungi": {
+   "verdict": "killed",
+   "accepted_rounds": 2,
+   "killed_at": 3,
+   "rule": "K2",
+   "reason": "round 3 grew the included set to 1442 targets, 34.33\u00d7 the previous round's 42 (limit 10.0\u00d7)",
+   "group": "fungi",
+   "tag": "s20_fungi",
+   "accession": "A0ABR2W6A1",
+   "converged": false,
+   "n_rounds": 10,
+   "accepted_targets": 42
+  },
   "viridiplantae": {
    "verdict": "clean",
    "accepted_rounds": 5,

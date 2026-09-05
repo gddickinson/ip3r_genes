@@ -1,6 +1,6 @@
 # S20 — the non-vertebrate sweep: the family's true range
 
-_Rendered from the committed tables on 2026-09-05 10:49 by `scripts/s20_report.py` (D13)._
+_Rendered from the committed tables on 2026-09-05 11:17 by `scripts/s20_report.py` (D13)._
 
 S3 swept the vertebrate reference proteomes and found where the three paralogs live. This task asks the opposite question — how far the family reaches — and the one it was set up to answer: the databases hold a few tens of plant and fungal records while *Arabidopsis* and *S. cerevisiae* hold none. Which of those is a fact about genomes and which about databases?
 
@@ -768,6 +768,7 @@ A single profile pass can only find what it is already close enough to. Each gro
 
 | group | seed | rounds | converged | D10 verdict | rule fired | targets in the accepted model |
 |---|---|---|---|---|---|---|
+| fungi | A0ABR2W6A1 | 10 | no | killed | K2 | 42 |
 | viridiplantae | A0AAE0LDZ1 | 5 | yes | clean | none | 70 |
 
 
@@ -777,12 +778,39 @@ The completeness statement the iterated search exists to make. A model seeded in
 
 | group | clade | profile call | targets | found by the single pass | iteration only |
 |---|---|---|---|---|---|
+| fungi | Mucoromycota | ITPR | 17 | 17 | 0 |
+| fungi | Chytridiomycota | ITPR | 9 | 9 | 0 |
+| fungi | Basidiobolomycota | ITPR | 5 | 5 | 0 |
+| fungi | Mucoromycota | unassigned | 5 | 5 | 0 |
+| fungi | Ascomycota | not called by the single pass | 2 | 0 | 2 |
+| fungi | Chytridiomycota | unassigned | 1 | 1 | 0 |
+| fungi | Mucoromycota | not called by the single pass | 1 | 0 | 1 |
+| fungi | Entomophthoromycota | ITPR | 1 | 1 | 0 |
+| fungi | Zoopagomycota | ITPR | 1 | 1 | 0 |
 | viridiplantae | Chlorophyta | ITPR | 54 | 54 | 0 |
 | viridiplantae | Chlorophyta | unassigned | 10 | 10 | 0 |
 | viridiplantae | Chlorophyta | not called by the single pass | 6 | 0 | 6 |
 
 
-6 target(s) across all groups entered a converged model that the single profile pass never reported, and they fall in 1 clade(s) — the same ones the single pass already reached.
+9 target(s) entered an accepted model that the single profile pass never reported. Those are the ones iteration was run to find, so they are named rather than counted:
+
+| group | accession | species | clade | length | what it is |
+|---|---|---|---|---|---|
+| fungi | A0A433P6E3 | *Jimgerdemannia flammicorona* | Mucoromycota | 260 | Uncharacterized protein (Fragment) |
+| fungi | G8BQA4 | *Tetrapisispora phaffii (strain ATCC 24235 / CBS 4417 / NBRC 1672 / NRRL Y-8282 / UCD 70-5)* | Ascomycota | 756 | Dolichyl-phosphate-mannose--protein mannosyltransferase |
+| fungi | H2AW46 | *Kazachstania africana (strain ATCC 22294 / BCRC 22015 / CBS 2517 / CECT 1963 / NBRC 1671 / NRRL Y-8276)* | Ascomycota | 759 | Dolichyl-phosphate-mannose--protein mannosyltransferase |
+| viridiplantae | A0A150FXB1 | *Gonium pectorale* | Chlorophyta | 1735 | Uncharacterized protein |
+| viridiplantae | A0A2J7ZQW2 | *Tetrabaena socialis* | Chlorophyta | 450 | Uncharacterized protein |
+| viridiplantae | A0A8J4D7B9 | *Volvox reticuliferus* | Chlorophyta | 142 | Uncharacterized protein (Fragment) |
+| viridiplantae | A0AAE0F7T8 | *Cymbomonas tetramitiformis* | Chlorophyta | 114 | Uncharacterized protein (Fragment) |
+| viridiplantae | A0AAE0F895 | *Cymbomonas tetramitiformis* | Chlorophyta | 324 | MIR domain-containing protein (Fragment) |
+| viridiplantae | A0AAE0G568 | *Cymbomonas tetramitiformis* | Chlorophyta | 300 | RyR/IP3R Homology associated domain-containing protein (Fragment) |
+
+
+**2 of them sit in a lineage this task calls empty** — so the absence there is not quite absolute, and what they are decides whether that matters: Dolichyl-phosphate-mannose--protein mannosyltransferase.
+
+
+Every one is a mannosyltransferase — the MIR-domain sharer S1's decoy panel was built around (POMT1/2), not a receptor. The iterated search reaches these lineages exactly far enough to pick up the known false positive and no further.
 
 
 ## Census v5

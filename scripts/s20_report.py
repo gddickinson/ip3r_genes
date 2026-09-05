@@ -167,7 +167,8 @@ def main() -> int:
                       [g for g in ALL_GROUPS if GROUPS[g]["relaxed"]],
                       EVALUE_RELAXED, EVALUE_PRIMARY)
     section_jackhmmer(A, table, conv, conv_json,
-                      rows(S20_DIR / "jackhmmer_model_composition_s20.tsv"))
+                      rows(S20_DIR / "jackhmmer_model_composition_s20.tsv"),
+                      rows(S20_DIR / "jackhmmer_iteration_only_s20.tsv"))
     section_census(A, table, v5, changes, conflicts, by_group)
 
     # ------------------------------------------------------------ figures

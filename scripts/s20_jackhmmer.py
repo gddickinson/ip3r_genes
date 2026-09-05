@@ -61,6 +61,8 @@ CONV_FIELDS = ["group", "seed_tag", "accession", "round", "new_targets",
                "verdict", "kill_rule"]
 COMP_FIELDS = ["group", "clade", "profile_call", "targets",
                "found_by_single_pass", "iteration_only"]
+ONLY_FIELDS = ["group", "accession", "species", "clade", "length",
+               "protein_name"]
 
 
 def model_composition(group: str, targets: set[str], assign: dict,
@@ -90,9 +92,9 @@ def model_composition(group: str, targets: set[str], assign: dict,
     unresolved = {a for a in by_acc if a not in assign}
     extra: dict[str, dict] = {}
     if unresolved:
-        for a, (header, _) in extract(group_paths(group)["db"],
-                                      unresolved).items():
-            extra[a] = parse_uniprot_header(header)
+        for a, (header, seq) in extract(group_paths(group)["db"],
+                                        unresolved).items():
+            extra[a] = {**parse_uniprot_header(header), "sequence": seq}
         log("s20_jack", f"{group}: {len(extra)}/{len(unresolved)} "
                         "iteration-only targets resolved from the group FASTA")
 
@@ -106,11 +108,26 @@ def model_composition(group: str, targets: set[str], assign: dict,
         cell[0] += 1
         cell[1] += int(row is not None)
         cell[2] += int(row is None)
-    return [{"group": group, "clade": clade, "profile_call": call,
+    # The iteration-only records are named, not just counted. In the fungal
+    # run they are what decides whether the Dikarya absence has a loophole,
+    # and "2 Ascomycota targets" and "2 Ascomycota mannosyltransferases" are
+    # very different findings — the second is the MIR-domain sharer S1's own
+    # decoy panel was built around.
+    only = []
+    for acc in sorted(unresolved):
+        meta = extra.get(acc, {})
+        taxid = int(meta.get("taxon_id") or 0)
+        only.append({"group": group, "accession": acc,
+                     "species": meta.get("species", ""),
+                     "clade": taxa.get(taxid, {}).get("clade", "unresolved"),
+                     "length": len(meta.get("sequence", "")) or "",
+                     "protein_name": meta.get("protein_name", "")})
+    rows = [{"group": group, "clade": clade, "profile_call": call,
              "targets": v[0], "found_by_single_pass": v[1],
              "iteration_only": v[2]}
             for (clade, call), v in sorted(agg.items(),
                                            key=lambda kv: -kv[1][0])]
+    return rows, only
 
 
 def pick_seed(group: str) -> dict | None:
@@ -265,7 +282,7 @@ def main() -> int:
 
     from scripts.s20_taxa import load_table
     taxa = load_table()
-    rows, verdicts, comp = [], {}, []
+    rows, verdicts, comp, only_rows, incomplete = [], {}, [], [], []
     for i, seed in enumerate(seeds):
         g = seed["group"]
         live([("fetch proteomes", True), ("sweep", True),
@@ -273,6 +290,14 @@ def main() -> int:
              + [(f"jackhmmer {s['group']}", s["group"] in
                  [x["group"] for x in seeds[:i]]) for s in seeds]
              + [("census v5", False)])
+        if args.parse_only and not (raw_dir / f"jackhmmer_s20_{g}.log").exists():
+            # A run still in flight has only a `.log.part`, which the driver
+            # never reads. Recording the group as unfinished is the whole
+            # point of the atomic rename: a partial log must not be parsed
+            # into a convergence table that looks like a completed run.
+            incomplete.append(g)
+            log("s20_jack", f"{g}: no completed log — reported as unfinished")
+            continue
         dt = None if args.parse_only else run_group(g, seed, args.cpu, raw_dir)
         r, v = parse_group(g, seed, raw_dir, dt)
         rows += r
@@ -281,15 +306,20 @@ def main() -> int:
             (raw_dir / f"jackhmmer_s20_{g}_rounds.json").read_text())
         assign = {acc_key(a["accession"]): a
                   for a in read_tsv(S20_DIR / f"assignments_{g}.tsv")}
-        comp += model_composition(
+        c, o = model_composition(
             g, accepted_targets(data["rounds"], v["accepted_rounds"]),
             assign, taxa)
+        comp += c
+        only_rows += o
 
     write_tsv(S20_DIR / "jackhmmer_convergence_s20.tsv", CONV_FIELDS, rows)
     write_tsv(S20_DIR / "jackhmmer_model_composition_s20.tsv",
               COMP_FIELDS, comp)
+    write_tsv(S20_DIR / "jackhmmer_iteration_only_s20.tsv",
+              ONLY_FIELDS, only_rows)
     write_json(S20_DIR / "jackhmmer_verdicts_s20.json",
                {"groups_without_seed": no_seed,
+                "groups_not_completed": incomplete,
                 "min_seed_coverage": MIN_SEED_COVERAGE,
                 "max_iter": MAX_ITER, "evalue": EVALUE_PRIMARY,
                 "verdicts": {g: {k: v for k, v in val.items()

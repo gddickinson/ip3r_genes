@@ -42,6 +42,13 @@ MIN_PROTEOMES_FOR_ABSENCE = 10
 
 DIKARYA = ("Ascomycota", "Basidiomycota")
 
+#: Protein-name markers for the family's *known* false positives — the
+#: MIR-domain sharers S1's decoy panel was built around. Used only to decide
+#: whether an iteration-only record in a lineage called empty is already
+#: accounted for; a record that matches none of these is reported as
+#: unexplained rather than explained away.
+DECOY_MARKERS = ("mannosyltransferase", "pomt", "dolichyl")
+
 
 def _rate(hit: int, tot: int) -> str:
     return f"{hit}/{tot} ({hit / tot:.0%})" if tot else "n/a"
@@ -421,7 +428,7 @@ def section_negatives(A, table, relaxed, taxa, assignments, groups_relaxed,
 
 
 def section_jackhmmer(A, table, conv, verdicts_json,
-                      composition=()) -> None:
+                      composition=(), iteration_only=()) -> None:
     A("\n## Iterated search, per group (D10)\n")
     if not conv:
         A("_`jackhmmer_convergence_s20.tsv` missing — run "
@@ -455,11 +462,49 @@ def section_jackhmmer(A, table, conv, verdicts_json,
                   r["found_by_single_pass"], r["iteration_only"]]
                  for r in composition]))
         only = sum(int(r["iteration_only"]) for r in composition)
-        clades = {r["clade"] for r in composition}
-        A(f"\n{only} target(s) across all groups entered a converged model "
-          f"that the single profile pass never reported, and they fall in "
-          f"{len(clades)} clade(s) — the same ones the single pass already "
-          "reached.\n")
+        A(f"\n{only} target(s) entered an accepted model that the single "
+          "profile pass never reported. Those are the ones iteration was run "
+          "to find, so they are named rather than counted:\n")
+        if iteration_only:
+            A(table(["group", "accession", "species", "clade", "length",
+                     "what it is"],
+                    [[r["group"], r["accession"], f"*{r['species']}*",
+                      r["clade"], r["length"], r["protein_name"]]
+                     for r in iteration_only]))
+            outside = [r for r in iteration_only
+                       if r["clade"] in DIKARYA or r["clade"] == "Streptophyta"]
+            if outside:
+                names = sorted({r["protein_name"] for r in outside})
+                A(f"\n**{len(outside)} of them sit in a lineage this task "
+                  "calls empty** — so the absence there is not quite "
+                  "absolute, and what they are decides whether that matters: "
+                  + "; ".join(names) + ".\n")
+                # The identification is made from the record's own name, not
+                # asserted: if a rerun finds something else sitting there, this
+                # sentence has to stop appearing rather than keep explaining
+                # away a different record.
+                if all(any(k in n.lower() for k in DECOY_MARKERS)
+                       for n in names):
+                    A("\nEvery one is a mannosyltransferase — the MIR-domain "
+                      "sharer S1's decoy panel was built around (POMT1/2), "
+                      "not a receptor. The iterated search reaches these "
+                      "lineages exactly far enough to pick up the known false "
+                      "positive and no further.\n")
+                else:
+                    A("\nThese are not all accounted for by the family's "
+                      "known decoys, so the absence claim above is qualified "
+                      "by them and they need chasing individually.\n")
+            else:
+                A("\nNone of them sits in a lineage this task calls empty.\n")
+
+    unfinished = (verdicts_json or {}).get("groups_not_completed") or []
+    if unfinished:
+        A(f"\n{len(unfinished)} group(s) had not finished iterating when this "
+          f"report was rendered and are reported as unfinished rather than "
+          f"summarised from a partial log: {', '.join(unfinished)}. The "
+          "bottleneck is the per-round alignment, not the search — a round "
+          "over a group with thousands of included targets costs far more to "
+          "align than to scan, and that cost is not reduced by more cores.\n")
 
     missing = (verdicts_json or {}).get("groups_without_seed") or []
     if missing:
