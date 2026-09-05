@@ -1,6 +1,6 @@
 # S20 — the non-vertebrate sweep: the family's true range
 
-_Rendered from the committed tables on 2026-09-05 11:48 by `scripts/s20_report.py` (D13)._
+_Rendered from the committed tables on 2026-09-05 11:54 by `scripts/s20_report.py` (D13)._
 
 S3 swept the vertebrate reference proteomes and found where the three paralogs live. This task asks the opposite question — how far the family reaches — and the one it was set up to answer: the databases hold a few tens of plant and fungal records while *Arabidopsis* and *S. cerevisiae* hold none. Which of those is a fact about genomes and which about databases?
 
@@ -363,9 +363,9 @@ The completeness statement the iterated search exists to make. A model seeded in
 | fungi | Mucoromycota | unassigned | 5 | 5 | 0 |
 | fungi | Ascomycota | not called by the single pass | 2 | 0 | 2 |
 | fungi | Chytridiomycota | unassigned | 1 | 1 | 0 |
+| fungi | Zoopagomycota | ITPR | 1 | 1 | 0 |
 | fungi | Mucoromycota | not called by the single pass | 1 | 0 | 1 |
 | fungi | Entomophthoromycota | ITPR | 1 | 1 | 0 |
-| fungi | Zoopagomycota | ITPR | 1 | 1 | 0 |
 | viridiplantae | Chlorophyta | ITPR | 54 | 54 | 0 |
 | viridiplantae | Chlorophyta | unassigned | 10 | 10 | 0 |
 | viridiplantae | Chlorophyta | not called by the single pass | 6 | 0 | 6 |
@@ -390,6 +390,9 @@ The completeness statement the iterated search exists to make. A model seeded in
 
 
 Every one is a mannosyltransferase — the MIR-domain sharer S1's decoy panel was built around (POMT1/2), not a receptor. The iterated search reaches these lineages exactly far enough to pick up the known false positive and no further.
+
+
+2 group(s) had not finished iterating when this report was rendered and are reported as unfinished rather than summarised from a partial log: metazoa_nonvert, protista_other. The bottleneck is the per-round alignment, not the search — a round over a group with thousands of included targets costs far more to align than to scan, and that cost is not reduced by more cores.
 
 
 ## Census v5

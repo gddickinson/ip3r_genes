@@ -1,6 +1,9 @@
 {
  "groups_without_seed": [],
- "groups_not_completed": [],
+ "groups_not_completed": [
+  "metazoa_nonvert",
+  "protista_other"
+ ],
  "min_seed_coverage": 0.5,
  "max_iter": 10,
  "evalue": "1e-5",
