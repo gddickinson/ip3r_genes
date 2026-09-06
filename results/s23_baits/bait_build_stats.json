@@ -1,0 +1,31 @@
+{
+ "built_at": "2026-09-06T01:09:02+00:00",
+ "census": "results/census_v5/census_v5.tsv",
+ "census_rows": 17882,
+ "in_scope_rows": 5063,
+ "band_aa": [
+  2450,
+  3250
+ ],
+ "arch_floor_bits": 751.8,
+ "measured_on_records": 1057,
+ "band_aa_unstratified": [
+  2550,
+  3100
+ ],
+ "measure_cap_per_band": 20,
+ "bands_in_measurement": 25,
+ "baits": 80,
+ "itpr": 37,
+ "ryr": 16,
+ "mir_controls": 27,
+ "mir_controls_rejected": 1,
+ "residues": 208582,
+ "reused_s3_seeds": 21,
+ "arch_exceptions": 3,
+ "unfilled_slots": 13,
+ "control_clades": 28,
+ "control_clades_unfilled": 0,
+ "self_test_cases": 3,
+ "baits_sha256": "a62d779c251b4e794091bd9a4186f66e4f52df0ca10c8c0195ee3d5ab4f7ad8a"
+}

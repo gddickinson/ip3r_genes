@@ -1,0 +1,36 @@
+rank	clade	swept_proteomes	genomes_swept	genomes_controlled	genomes_with_full_itpr	genomes_with_trace_only	verdict
+phylum	Ascomycota	1034	2	2	0	0	absence holds at assembly level
+phylum	Streptophyta	384	3	3	0	0	absence holds at assembly level
+phylum	Basidiomycota	319	0	0	0	0	not yet swept
+phylum	Apicomplexa	60	1	0	0	0	uncontrolled
+phylum	Kickxellomycota	35	0	0	0	0	not yet swept
+phylum	Microsporidia	29	1	1	0	0	absence holds at assembly level
+phylum	Glomeromycota	27	0	0	0	0	not yet swept
+phylum	Mortierellomycota	18	0	0	0	0	not yet swept
+phylum	Bacillariophyta	16	0	0	0	0	not yet swept
+phylum	Rhodophyta	12	0	0	0	0	not yet swept
+class	Magnoliopsida	367	2	2	0	0	absence holds at assembly level
+class	Sordariomycetes	355	1	1	0	0	absence holds at assembly level
+class	Eurotiomycetes	235	0	0	0	0	not yet swept
+class	Agaricomycetes	194	0	0	0	0	not yet swept
+class	Dothideomycetes	176	0	0	0	0	not yet swept
+class	Pichiomycetes	69	0	0	0	0	not yet swept
+class	Leotiomycetes	64	0	0	0	0	not yet swept
+class	Saccharomycetes	61	1	1	0	0	absence holds at assembly level
+class	Tremellomycetes	44	0	0	0	0	not yet swept
+class	Aconoidasida	36	0	0	0	0	not yet swept
+class	Glomeromycetes	27	0	0	0	0	not yet swept
+class	Conoidasida	24	1	0	0	0	uncontrolled
+class	Kickxellomycetes	23	0	0	0	0	not yet swept
+class	Trebouxiophyceae	19	0	0	0	0	not yet swept
+class	Mortierellomycetes	18	0	0	0	0	not yet swept
+class	Ustilaginomycetes	16	0	0	0	0	not yet swept
+class	Malasseziomycetes	16	0	0	0	0	not yet swept
+class	Exobasidiomycetes	15	0	0	0	0	not yet swept
+class	Pucciniomycetes	14	0	0	0	0	not yet swept
+class	Microbotryomycetes	13	0	0	0	0	not yet swept
+class	Lecanoromycetes	13	0	0	0	0	not yet swept
+class	Pezizomycetes	12	0	0	0	0	not yet swept
+class	Orbiliomycetes	12	0	0	0	0	not yet swept
+class	Cestoda	11	0	0	0	0	not yet swept
+class	Lipomycetes	10	0	0	0	0	not yet swept

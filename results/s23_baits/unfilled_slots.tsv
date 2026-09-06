@@ -1,0 +1,14 @@
+band	role	wanted	filled	records	shape_ok	with_sequence	why
+Bryozoa	ITPR	1	0	11	0	0	11 census record(s), none passing the shape rules (length band / architecture); the band's records are fragmentary or divergent
+Bryozoa	RYR	1	0	2	0	0	2 census record(s), none passing the shape rules (length band / architecture); the band's records are fragmentary or divergent
+Cnidaria	RYR	1	0	2	0	0	2 census record(s), none passing the shape rules (length band / architecture); the band's records are fragmentary or divergent
+Ctenophora	RYR	1	0	0	0	0	no census record in this band at all
+Priapulida	ITPR	1	0	2	0	0	2 census record(s), none passing the shape rules (length band / architecture); the band's records are fragmentary or divergent
+Priapulida	RYR	1	0	3	0	0	3 census record(s), none passing the shape rules (length band / architecture); the band's records are fragmentary or divergent
+Tardigrada	RYR	1	0	7	0	0	7 census record(s), none passing the shape rules (length band / architecture); the band's records are fragmentary or divergent
+Orthonectida	ITPR	1	0	6	0	0	6 census record(s), none passing the shape rules (length band / architecture); the band's records are fragmentary or divergent
+Orthonectida	RYR	1	0	5	0	0	5 census record(s), none passing the shape rules (length band / architecture); the band's records are fragmentary or divergent
+Zoopagomycota	ITPR	1	0	1	0	0	1 census record(s), none passing the shape rules (length band / architecture); the band's records are fragmentary or divergent
+Perkinsozoa	ITPR	1	0	3	0	0	3 census record(s), none passing the shape rules (length band / architecture); the band's records are fragmentary or divergent
+Euglenozoa	ITPR	1	0	37	0	0	37 census record(s), none passing the shape rules (length band / architecture); the band's records are fragmentary or divergent
+Preaxostyla	ITPR	1	0	10	0	0	10 census record(s), none passing the shape rules (length band / architecture); the band's records are fragmentary or divergent

@@ -1,0 +1,15 @@
+accession	organism	group	expects_ryr	mir_loci	ryr_loci	verdict	why
+GCF_000001215.4	Drosophila melanogaster	metazoa	True	1	1	controlled_by_target	1 full ITPR locus/loci found — the search reached this assembly, so no separate proof-of-search is needed
+GCF_000001735.4	Arabidopsis thaliana	viridiplantae	False	1	0	controlled	1 MIR-domain locus/loci found
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	True	1	1	controlled_by_target	1 full ITPR locus/loci found — the search reached this assembly, so no separate proof-of-search is needed
+GCF_000002425.5	Physcomitrium patens	viridiplantae	False	2	0	controlled	2 MIR-domain locus/loci found
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	False	0	0	controlled_by_target	1 full ITPR locus/loci found — the search reached this assembly, so no separate proof-of-search is needed
+GCF_000002985.6	Caenorhabditis elegans	metazoa	True	1	1	controlled_by_target	1 full ITPR locus/loci found — the search reached this assembly, so no separate proof-of-search is needed
+GCF_000004695.1	Dictyostelium discoideum AX4	amoebozoa	False	0	0	controlled_by_target	1 full ITPR locus/loci found — the search reached this assembly, so no separate proof-of-search is needed
+GCF_000006565.2	Toxoplasma gondii ME49	sar	False	0	0	uncontrolled	neither the MIR-domain control nor an expected RyR was found; no absence claim may rest on this genome
+GCF_000091225.2	Encephalitozoon cuniculi GB-M1	fungi	False	1	0	controlled	1 MIR-domain locus/loci found
+GCF_000146045.2	Saccharomyces cerevisiae S288C	fungi	False	4	0	controlled	4 MIR-domain locus/loci found
+GCF_000182925.2	Neurospora crassa OR74A	fungi	False	2	0	controlled	2 MIR-domain locus/loci found
+GCF_000203795.2	Batrachochytrium dendrobatidis JAM81	fungi	False	2	0	controlled	2 MIR-domain locus/loci found
+GCF_034140825.1	Oryza sativa Japonica Group	viridiplantae	False	2	0	controlled	2 MIR-domain locus/loci found
+GCF_932526225.1	Nematostella vectensis	metazoa	True	1	0	controlled_by_target	1 full ITPR locus/loci found — the search reached this assembly, so no separate proof-of-search is needed

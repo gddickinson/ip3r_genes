@@ -47,7 +47,9 @@ positive control inside the same search, and all 99 plant and fungal records
 chased individually to **47 real genes, 52 fragmentary models and zero
 contaminants**. Census v5 is **17,882 records, 8,807 IP3 receptors across
 1,401 taxa** ([`results/s20_sweep/report.md`](results/s20_sweep/report.md)).
-**S20b** then iterated each group's search to convergence and found the same answer the expensive way: in all four groups the iterated model settles on **exactly** the single pass's receptor count, so nothing was missed. The next session runs **S23**, taking those absences to genome level.
+**S20b** then iterated each group's search to convergence and found the same answer the expensive way: in all four groups the iterated model settles on **exactly** the single pass's receptor count, so nothing was missed.
+
+**S23a** built the instrument that takes those absences to *genome* level — a declared **194-genome, 100 Gbp** denominator, thresholds re-measured for a tree where the family's gene span varies 100× rather than 6.5×, and a **new positive control**, because S5's ryanodine-receptor control does not exist in plants or fungi and would have made every negative claim look controlled while being unfalsifiable ([`results/s23_scope/report.md`](results/s23_scope/report.md)). Piloted on the 14 anchor genomes, **0 failures**: every positive control recovered and annotation-matched, and the Dikarya and land-plant absences are now *controlled* genome facts — while *Toxoplasma* comes back `uncontrolled`, so the Apicomplexa absence cannot yet be taken to assembly level.
 
 ---
 
@@ -161,7 +163,8 @@ One task per session. Full ledger with dependencies and results in
 | S5b | The full 309-genome sweep → ledger + census v4 | ✅ completed 2026-09-05 |
 | S20a | Non-vertebrate sweep — the family's true range | ✅ completed 2026-09-05 |
 | S20b | The remaining per-group convergence runs | ✅ completed 2026-09-05 |
-| S23 | Invertebrate / protist / plant / fungal genome sweep | ⏳ pending |
+| S23a | Non-vertebrate sweep: scope, calibration, bait panel, pilot | ✅ completed 2026-09-05 |
+| S23b | The full 194-genome non-vertebrate sweep → census v6 | ⏳ pending |
 | S6 | Alignment upgrade (MAFFT L-INS-i + trimAl) | ⏳ pending |
 | S7 | ML phylogeny, rooted on RyR; which paralogs are sisters | ⏳ pending |
 | S8 | Synteny across the ITPR loci | ⏳ pending |

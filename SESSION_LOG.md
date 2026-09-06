@@ -1095,3 +1095,199 @@ architecture-level against 1 % of RYR calls.
 then S23, which S20 sharpens: the absences to take to genome level are
 Streptophyta, Dikarya, Glomeromycota/Mortierellomycota, Apicomplexa (0/60) and
 the *Cymbomonas* copy-number question.
+
+---
+
+## 2026-09-05 — S23a: the non-vertebrate sweep's instrument
+
+**Ledger split.** S23 is a genome-scale sweep, so it was split on the S5a/S5b
+precedent: **S23a** builds and measures the instrument (scope, calibration,
+bait panel, copy-number classifier, pilot), **S23b** runs it. Downstream deps
+(S7, S14a) repointed to S23b.
+
+**The headline is a method finding, and it would have voided the task's own
+results if it had gone unnoticed: S5's positive control does not transfer,
+and neither did three of its thresholds.** New decision **D26**.
+
+### The control (D26)
+
+S5b can write "the RyR positive control fired in every one of the 309, so no
+genome is excluded on control grounds" because every vertebrate has three
+RyRs. S20 measured architecture-level RyR in **2 of 6,928** non-vertebrate
+proteomes. Carrying that control into a land-plant or Dikarya genome would
+have made *every negative claim in S23 unfalsifiable while looking
+controlled*: a plant with no RyR locus is the correct answer, so its silence
+says nothing about whether the search ran.
+
+The replacement is the **MIR-domain sharer** (PF02815 — the protein
+O-mannosyltransferases S1's decoy panel was built from and S20 already used
+as its in-search control at proteome level, where PF08709 returns 0 matches in
+land plants and PF02815 returns 633). It is inside the family's own signature
+set, it is drawn **per control clade** (a chlorophyte mannosyltransferase is
+not a control for *Arabidopsis*), and it doubles as the sharpest available
+decoy for D14.
+
+Two corollaries, each of which cost a rebuild:
+
+- **A control's selection rule must not be tuned to what the control usually
+  looks like.** The first build required 600 aa, which selects the full
+  mannosyltransferases — and silently left five clades with no control at all,
+  **including both apicomplexan classes**, i.e. it deleted the hardest
+  negative claim rather than reporting it. The floor is now the PF02815
+  model's own length.
+- **A control has to be graded.** 22 of 28 control clades get a `strong`
+  control (a named, full-length mannosyltransferase across ≥ 25 % of the
+  clade's proteomes); 6 are `weak`, with the reason in the row. **The
+  apicomplexan clades carry one PF02815 protein each across 60 swept
+  proteomes** (3–4 % coverage), so "Apicomplexa 0/60" at genome level rests on
+  a 233 aa control found once → emergent task.
+
+**The screen rejected one control on its first run**, which is exactly what a
+negative control is for: `A0A0R3TP59` from the tapeworm *Rodentolepis nana*,
+which UniProt calls a "MIR domain-containing protein", scores **1,121 bits on
+`ryr.hmm` against 179 on `itpr.hmm`**. A MIR protein the profiles call a
+family member is a finding, not a control.
+
+### Three thresholds that had to be stratified, all the same error
+
+Each was first measured over the whole in-scope population, and that
+population is 53 % Arthropoda. A threshold measured on the best-sampled clade
+describes the sampling, not the family — the same correction S20 made when it
+stratified its bacterial sample by genus.
+
+| threshold | unstratified | stratified | what the unstratified value deleted |
+|---|---|---|---|
+| bait length band | 2,550–3,100 aa | **2,450–3,250 aa** | *Bodo saltans*, a 2,356–4,222 aa euglenozoan ITPR |
+| architecture-exception floor | ~1,095 bits | **752 bits** | the same records, at 735–782 bits |
+| contiguity bar / `-G` | one global bar | **per group** | see below |
+
+**The contiguity bar is per group because the family's span varies ~100×
+outside the vertebrates against 6.5× inside.** Measured from NCBI's own gene
+annotations (deliberately not from miniprot, whose `-G` shapes the loci it
+reports, so a measurement taken that way cannot falsify the setting it
+calibrates) over 16 genes in 16 species across 14 bands: spans run **3,739 bp
+(*Perkinsus*) to 324,840 bp (*Octopus*)**, and **metazoan genes are ~9× longer
+than protist and fungal ones** (83 kb median vs 7–9 kb). S5's single
+vertebrate bar was 142,212 bp and 120 of 309 genomes failed it — S5b's
+headline caveat. Here only **21 of 194** fall below their group's bar, and the
+genomes carrying this task's negative claims are judged against ~9 kb.
+
+`-G` moves the other way and is floored at miniprot's own default: a `-G`
+below an unmeasured species' largest intron **splits** its gene, and a split
+ITPR reads out of a *copy-number* ledger as `fragment` — worse here than in
+S5, because in this task the count is the result.
+
+### The denominator
+
+**194 genomes, 100.4 Gbp** (≈100 GB FASTA, ≈30 GB zip against 805 GB free),
+from 24,596 NCBI eukaryote reference assemblies less 6,216 vertebrate ones.
+Five rules under one principle — **sample most finely where the negative claim
+is** — all derived from S20's committed presence table except the anchors,
+which are hand-written deliberately because an anchor is a genome whose answer
+is known from the literature.
+
+G1 phylum_rep 66 · G2 class_rep 87 · G3 absence_clade 35 · G4 anchor 14 ·
+G5 copy_number 36. Every one of the 35 absence clades has at least one genome.
+
+Two bugs the build found in itself:
+
+- **NCBI files a reference assembly under the *strain* taxid**, not the
+  species, so a species-taxid lookup missed four of fourteen anchors —
+  *Toxoplasma*, *Encephalitozoon*, *Batrachochytrium* and *Dictyostelium*,
+  i.e. the apicomplexan, the microsporidian, the chytrid and the amoebozoan
+  the negative claims are named after. Fixed by indexing every ancestor taxid.
+- **The unfilled-slot table blamed the census for a threshold's work.** Its
+  first version printed "no census record in this band at all" for seven
+  bands, four of which have dozens of records that fail the *shape* rules. It
+  now names the stage that lost each slot.
+
+### Copy number, not paralog cells
+
+`s23_classify.py` replaces S5's three named cells: loci won by the ITPR baits
+are graded `full` / `fragment` / `scrap` and the genome's copy number is its
+count of `full` ones, with `merge_split_loci` folding neighbouring same-strand
+loci whose bait spans are *complementary* — a split gene inflates the very
+number this task reports, which is the error S5 could tolerate (its best locus
+always won) and this one cannot. Both counts are kept so the merge is
+auditable.
+
+The control verdict gained a case the pilot found immediately:
+**`controlled_by_target`**. *Dictyostelium* recovers its iplA gene and matches
+it to its own annotation, and the first version still reported it
+**UNCONTROLLED**, because no MIR bait exists for Amoebozoa (controls are built
+for the clades carrying a negative claim). A control exists to make a
+*negative* interpretable; a genome where the family itself was found has
+already proved the search reached it. `no_control_bait` is likewise
+distinguished from `uncontrolled` — a silent control and an absent one are
+different facts.
+
+### Regression check
+
+`s5_bait_screen.py` was parameterised by spec module so one screen serves both
+panels (and S5's own negative controls still run on every S23 build).
+Re-running `s5_build_baits.py` reproduces the committed S5 panel **byte for
+byte apart from its build timestamp**, which was reverted.
+
+### What the pilot found — two more ported thresholds, and a rule I failed to port
+
+The pilot's job is to break the instrument before 100 GB is spent on it, and
+it did, twice.
+
+**1. A positive control failed, and the first diagnosis was wrong.**
+*Chlamydomonas reinhardtii* carries a documented complete 5/5 receptor
+(A0A2K3CTW4, 3,210 aa, 705 bits) and the pilot returned `no_locus`. The
+alignments were there — **9 of them at 24.6–28.4 % identity** — and
+`MIN_LOCUS_IDENTITY` = 0.40 had discarded all nine, so the obvious reading was
+that a fourth S5 threshold does not transfer, and that is what went into the
+emergent list.
+
+It was the **bait panel**. The only Chlorophyta bait was a *Cymbomonas*
+prasinophyte, and 25–28 % is what a chained module match to a distant bait
+looks like — precisely the population that floor exists to remove. Once the
+panel carried *Chlamydomonas*' own record the locus came back cleanly
+(`found_annotated`, one full locus, annotation-matched). The floor did not
+misfire; the row has been corrected to say so.
+
+What survives is a narrower caution. S5b justified 0.40 by a wide empty gap
+(confirmed loci ≥ 0.759 against junk at 0.23–0.34) measured where *every*
+genome has a same-class bait. Bands here are whole phyla and 13 slots are
+unbaited, so a genome whose nearest bait is a phylum away could still lose a
+real locus to it. S23b should re-measure it S5b's way and report how many
+`no_locus` calls sit just under the floor.
+
+**2. S5's R3 spread rule was not ported, and that is what left *Chlamydomonas*
+with no near bait.** S5 required a band's second bait to come from a different
+NCBI order than its first. S23's bands are whole **phyla**, far wider than
+S5's classes, so the rule matters more — and without it Chlorophyta filled
+both its slots with two *Cymbomonas* records of one genus while
+*Chlamydomonas*, hundreds of millions of years away, got none.
+
+Porting the rule as a *filter* made things worse, which is worth recording:
+applied only at selection time it removed the duplicate *Cymbomonas* without
+admitting *Chlamydomonas*, taking the panel from 85 baits to 78 and Chlorophyta
+down to one. The reason is that the shortlist handed to the screen was ranked
+by profile score alone, and Chlorophyta's nine shape-passing records are led by
+**seven *Cymbomonas* ones at 814–1,039 bits against *Chlamydomonas* at 705** —
+so a six-deep score-ranked shortlist never reached it. **A spread rule has to
+shape the shortlist, not filter its output.** `wanted` now takes the best
+candidate per order first, in score order, and fills the remainder from the
+rest.
+
+**3. B6 was letting a reused seed consume its band's quota** rather than add
+to it, which is the mechanism behind (2): Chlorophyta's single slot went to
+S3's *Cymbomonas* seed and no census bait was derived at all. "Reused, not
+re-derived" means the seeds are kept; it never meant they replace the
+derivation. Fixing it took the panel from 68 baits to 85 (42 ITPR + 16 RyR +
+27 MIR control, 221,994 residues).
+
+Two reporting bugs were fixed alongside: the control manifest was writing its
+`strength` / `clade_frac` columns nowhere, so the report rendered "0 strong,
+0 weak"; and the unfilled-slot test compared against quota+seeds, marking
+seed-only bands as gaps.
+
+**Next.** S23b, in this order: (1) re-measure `MIN_LOCUS_IDENTITY` for this
+scope against annotation-confirmed loci; (2) find a second, non-MIR control
+for Apicomplexa, without which "0/60" cannot go to assembly level; (3) measure
+locus-span / CDS-footprint and, where chaining is severe, count non-overlapping
+full-length alignments rather than loci; then the full 194-genome sweep, the
+absence claims at assembly level, and census v6.

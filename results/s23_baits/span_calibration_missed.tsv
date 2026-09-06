@@ -1,0 +1,42 @@
+accession	band	gene	species	taxid	why
+A0AAV4SWV3	Arthropoda	Itpr1	Caerostris darwini	1538125	no annotated gene of that symbol at NCBI
+A0A8X6L000	Arthropoda	Itpr1	Trichonephila clavata (Joro spider) (Nephila clavata)	2740835	no annotated gene of that symbol at NCBI
+A0A8X6UFZ3	Arthropoda	Itpr1	Nephila pilipes (Giant wood spider) (Nephila maculata)	299642	no annotated gene of that symbol at NCBI
+H8WGV2	Nematoda	itr-1	Caenorhabditis briggsae	6238	no annotated gene of that symbol at NCBI
+A0A0B2VE71	Nematoda	ITPR1	Toxocara canis (Canine roundworm)	6265	no annotated gene of that symbol at NCBI
+A0AAN8PFL6	Mollusca	SNE40_013589	Patella caerulea (Rayed Mediterranean limpet)	87958	no annotated gene of that symbol at NCBI
+A0AAN9BAK1	Mollusca	V1264_020598	Littorina saxatilis	31220	no annotated gene of that symbol at NCBI
+A0AAD9J7D1	Annelida	LSH36_550g03045	Paralvinella palmiformis	53620	no annotated gene of that symbol at NCBI
+A0A7I8W6S8	Annelida	DGYR_LOCUS11827	Dimorphilus gyrociliatus	2664684	no annotated gene of that symbol at NCBI
+A0AAD9KPF5	Annelida	NP493_759g01031	Ridgeia piscesae (Tubeworm)	27915	no annotated gene of that symbol at NCBI
+A0ABD2QH23	Platyhelminthes	ITPR2	Cichlidogyrus casuarinus	1844966	no annotated gene of that symbol at NCBI
+A0A267FK94	Platyhelminthes	BOX15_Mlig001931g6	Macrostomum lignano	282301	no annotated gene of that symbol at NCBI
+A0A813MP72	Rotifera	OXX778_LOCUS2086	Brachionus calyciflorus	104777	no annotated gene of that symbol at NCBI
+A0A819Y5W7	Rotifera	UJA718_LOCUS3122	Rotaria socialis	392032	no annotated gene of that symbol at NCBI
+A0A819CKF8	Rotifera	OVN521_LOCUS4954	Rotaria magnacalcarata	392030	no annotated gene of that symbol at NCBI
+A0A7J7JRK8	Bryozoa	EB796_013617	Bugula neritina (Brown bryozoan) (Sertularia neritina)	10212	no annotated gene of that symbol at NCBI
+Q8WSR4	Echinodermata	IP3R	Patiria pectinifera (Starfish) (Asterina pectinifera)	7594	no annotated gene of that symbol at NCBI
+A0A9Q1HIR2	Echinodermata	HOLleu_04993	Holothuria leucospilota (Black long sea cucumber) (Mertensiothuria leucospilota)	206669	no annotated gene of that symbol at NCBI
+A0A8K0A0Y4	Chordata	ITPR1	Branchiostoma lanceolatum (Common lancelet) (Amphioxus lanceolatum)	7740	no annotated gene of that symbol at NCBI
+T2MDQ2	Cnidaria	ITPR1	Hydra vulgaris (Hydra) (Hydra attenuata)	6087	no annotated gene of that symbol at NCBI
+A0A2B4T0S0	Cnidaria	ITPR1	Stylophora pistillata (Smooth cauliflower coral)	50429	no annotated gene of that symbol at NCBI
+A0A9X0CMW0	Cnidaria	IP3R	Desmophyllum pertusum	174260	no annotated gene of that symbol at NCBI
+A0ACF8YJ40	Ctenophora	ACHWQZ_G010582	Mnemiopsis leidyi (Sea walnut) (Warty comb jellyfish)	27923	no annotated gene of that symbol at NCBI
+A0AAV7JYY9	Porifera	LOD99_3002	Oopsacas minuta	111878	no annotated gene of that symbol at NCBI
+A0A1X7VBQ9	Porifera	100632615	Amphimedon queenslandica (Sponge)	400682	no annotated gene of that symbol at NCBI
+A0AA35SCV4	Porifera	GBAR_LOCUS15389	Geodia barretti (Barrett's horny sponge)	519541	no annotated gene of that symbol at NCBI
+A0A1W0X7L5	Tardigrada	BV898_02971	Hypsibius exemplaris (Freshwater tardigrade)	2072580	no annotated gene of that symbol at NCBI
+A0A1D1V0T1	Tardigrada	RvY_05495-1	Ramazzottius varieornatus (Water bear) (Tardigrade)	947166	no annotated gene of that symbol at NCBI
+A0A177AYP9	Orthonectida	A3Q56_05306	Intoshia linei	1819745	no annotated gene of that symbol at NCBI
+A0A2J8AAQ9	Chlorophyta	TSOC_003768	Tetrabaena socialis	47790	no annotated gene of that symbol at NCBI
+A0A830HKN8	Chlorophyta	PPROV_000485800	Pycnococcus provasolii	41880	no annotated gene of that symbol at NCBI
+A0AAD5U9K5	Chytridiomycota	HK099_005063	Clydaea vesicula	447962	no annotated gene of that symbol at NCBI
+A0A1C7NSC1	Mucoromycota	Itpr3	Choanephora cucurbitarum	101091	no annotated gene of that symbol at NCBI
+A0A168RJ50	Mucoromycota	ABSGL_12645.1	Absidia glauca (Pin mould)	4829	no annotated gene of that symbol at NCBI
+A0A8S1VH15	Ciliophora	POCTA_138.1.T0680154	Paramecium octaurelia	43137	no annotated gene of that symbol at NCBI
+A0A1V9Z7F2	Oomycota	ACHHYP_02105	Achlya hypogyna (Oomycete) (Protoachlya hypogyna)	1202772	no annotated gene of that symbol at NCBI
+Q9NA13	Evosea	iplA	Dictyostelium discoideum (Social amoeba)	44689	no annotated gene of that symbol at NCBI
+Q4DBL7	Euglenozoa	Tc00.1047053509461.90	Trypanosoma cruzi (strain CL Brener)	353153	no annotated gene of that symbol at NCBI
+K2LW12	Euglenozoa	MOQ_009372	Trypanosoma cruzi marinkellei	85056	no annotated gene of that symbol at NCBI
+A0AB34IS99	Haptophyta	AB1Y20_010572	Prymnesium parvum (Toxic golden alga)	97485	no annotated gene of that symbol at NCBI
+A0ABQ9Y4L8	Preaxostyla	BLNAU_6456	Blattamonas nauphoetae	2049346	no annotated gene of that symbol at NCBI

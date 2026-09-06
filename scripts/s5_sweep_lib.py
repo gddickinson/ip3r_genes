@@ -100,23 +100,27 @@ def write_fasta(seqs: dict[str, str], path: Path) -> Path:
     return path
 
 
-def load_baits() -> tuple[dict[str, str], dict[str, dict]]:
+def load_baits(baits_dir: Path | None = None
+               ) -> tuple[dict[str, str], dict[str, dict]]:
     """(id -> sequence, id -> {clade, family, band, length}).
 
-    Only the committed S5 panel: `s5_build_baits.py` enforces the selection
-    rules, so falling back to a raw seed set would quietly run the sweep on
-    an unscreened panel.
+    Only a *committed, screened* panel: the builders enforce the selection
+    rules, so falling back to a raw seed set would quietly run the sweep on an
+    unscreened panel. `baits_dir` selects which panel — S5's vertebrate one by
+    default, S23's non-vertebrate one when that sweep passes its directory.
     """
-    faa, manifest = S5_BAITS / "baits.faa", S5_BAITS / "bait_manifest.tsv"
+    root = baits_dir or S5_BAITS
+    faa, manifest = root / "baits.faa", root / "bait_manifest.tsv"
     if not faa.exists() or not manifest.exists():
-        raise SystemExit(f"S5 bait panel missing under {S5_BAITS}\n"
-                         "  run: python scripts/s5_build_baits.py")
+        raise SystemExit(f"bait panel missing under {root}\n"
+                         "  run the panel builder for that task first")
     seqs = read_fasta(faa)
     meta: dict[str, dict] = {}
     with open(manifest) as fh:
         for row in csv.DictReader(fh, delimiter="\t"):
             meta[row["id"]] = {"clade": row["clade"], "family": row["family"],
-                               "band": row["band"], "paralog": row["paralog"],
+                               "band": row.get("band", row["clade"]),
+                               "paralog": row["paralog"],
                                "length": int(row["length"] or 0)}
     unknown = set(seqs) - set(meta)
     if unknown:

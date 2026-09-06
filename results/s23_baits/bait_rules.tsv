@@ -1,0 +1,8 @@
+rule	statement	threshold
+B1	family from the census call, never a gene symbol	call in (ITPR, RYR)
+B2	RyR is a positive control only where RyR is expected; the MIR-domain sharer is the control everywhere	RYR_CONTROL_GROUPS = metazoa
+B3	measured length band + one bait per band, two in the deep bands	DEEP_BANDS = Arthropoda,Mollusca,Nematoda
+B4	chimera screen: S3's margin + envelope coverage, S5's module	MIN_ENVELOPE_FRAC=0.55, MAX_INTERNAL_GAP_AA=400
+B5	architecture exception for a measured incomplete architecture above the derived score floor	percentile=0.05
+B6	S3 seeds reused where they fall in a band	seed_manifest.tsv
+B7	vertebrate baits left out — S5 owns that panel	band_of() == ''

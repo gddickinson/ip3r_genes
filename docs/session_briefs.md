@@ -226,10 +226,53 @@ their sensitivity; census v5 + figure committed.
 
 ---
 
-## S23 — Invertebrate, protist and plant/fungal genome sweep
+## S23a — The non-vertebrate sweep's instrument  *(completed 2026-09-05)*
 
-**Goal.** Take the negative claims to genome level. A proteome absence is an
-annotation fact; only an assembly search makes it a biological one.
+**Goal.** Build and *measure* the instrument before spending 100 GB on it.
+Delivered: the declared 194-genome manifest (`s23_scope.py` G1-G5), the
+gene-span calibration (`s23_span_calibration.py`, read back by
+`s23_calibration.py`), the 80-bait panel with its MIR-domain positive control
+(`s23_bait_spec.py` B1-B7, `s23_controls.py`), the copy-number classifier
+(`s23_classify.py`) and a 14-genome anchor pilot. → `results/s23_scope/report.md`
+
+**What it established, and S23b must not undo.** Four S5 thresholds and one
+S5 selection rule do not transfer outside the vertebrates: the contiguity bar
+and `-G` (now per group), the bait length band and the architecture-exception
+floor (now stratified per band), `MIN_LOCUS_IDENTITY` (**still unfixed — see
+below**) and R3's taxonomic spread rule. And **D26**: S5's RyR positive
+control does not exist in plants or fungi, so the MIR-domain sharer replaces
+it, drawn per control clade and graded strong/weak.
+
+---
+
+## S23b — The full non-vertebrate sweep
+
+**Blocking work first**, in this order, all from S23a's pilot:
+
+1. **Re-measure `MIN_LOCUS_IDENTITY` for this scope, and report the margin.**
+   S5b's 0.40 came from a wide empty gap in the vertebrates (confirmed loci
+   >= 0.759, junk 0.23-0.34) measured where every genome has a same-class
+   bait. Bands here are whole phyla and 13 slots are unbaited. (The
+   *Chlamydomonas* case that first looked like a failure of this floor was
+   the bait panel — see S23a — so this is a caution, not a known defect.)
+   Measure it the way S5b did, against loci whose identity an assembly's own
+   annotation confirms, and report how many `no_locus` calls sit just under
+   the floor.
+2. **Find a second, non-MIR control for Apicomplexa.** Both apicomplexan
+   classes carry one PF02815 protein each across 60 swept proteomes, and in
+   the pilot *Toxoplasma gondii* came back with neither a receptor nor a
+   control — `uncontrolled`, supporting no absence claim. Without a working
+   control "Apicomplexa 0/60" cannot go to assembly level. A conserved
+   single-copy ortholog panel, or the assembly's own annotated gene set as the
+   proof-of-search.
+3. **Measure locus span against CDS footprint.** The metazoan `-G` is 650 kb
+   (from the 325 kb *Octopus* gene) and a *Drosophila* Itpr spans 22 kb; in the
+   pilot its locus chained 20 alignments across 297 kb, 13x the gene. The call
+   was right (`frac_cds` 1.0) but two real genes within 650 kb would be
+   counted once — and **copy number is this task's deliverable**.
+
+**Goal.** Then take the negative claims to genome level. A proteome absence is
+an annotation fact; only an assembly search makes it a biological one.
 
 **Steps.**
 1. Manifest: best assembly per invertebrate phylum and per class in the big

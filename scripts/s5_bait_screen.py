@@ -144,7 +144,15 @@ def screen(seqs: dict[str, str], work: Path) -> dict[str, dict]:
     return verdicts
 
 
-def verdict(v: dict, want_family: str) -> tuple[bool, str]:
+def verdict(v: dict, want_family: str, spec_mod=None) -> tuple[bool, str]:
+    """D5's verdict on one candidate.
+
+    `spec_mod` lets a second panel be screened against its own thresholds and
+    its own length band without copying this module. S23 passes
+    `s23_bait_spec`; everything else gets S5's. The screen itself is
+    deliberately *not* parameterised — one screen, one instrument.
+    """
+    spec = spec_mod or globals()["spec"]
     if v["assignment"] != want_family:
         return False, (f"profile assignment {v['assignment']} != {want_family} "
                        f"({v['profile_reason']})")
@@ -205,7 +213,7 @@ def _build_cases(panel: dict[str, str], meta: dict[str, dict]
 
 
 def self_test(panel: dict[str, str], meta: dict[str, dict],
-              work: Path) -> list[dict]:
+              work: Path, spec_mod=None) -> list[dict]:
     """Negative controls for the selection rules. Every case must be rejected.
 
     Run on every build. Without it the screen is machinery no result depends
@@ -213,19 +221,20 @@ def self_test(panel: dict[str, str], meta: dict[str, dict],
     shortlist or a screen that cannot fire, and those look identical from the
     outside.
     """
+    spec_here = spec_mod or spec
     cases, described = _build_cases(panel, meta)
     verdicts = screen(cases, work)
     rows = []
     for name, seq in cases.items():
         by_rule, built, note = described[name]
         if by_rule == "length_band":
-            ok, why = spec.passes_shape("ITPR", len(seq), "5")
+            ok, why = spec_here.passes_shape("ITPR", len(seq), "5")
             passed = ok
             v = dict(NO_HIT)
             why = why or "inside the bait length band"
         else:
             v = verdicts.get(name, dict(NO_HIT))
-            passed, why = verdict(v, "ITPR")
+            passed, why = verdict(v, "ITPR", spec_here)
         rows.append({"case": name, "rejected_by": by_rule, "built_from": built,
                      "description": note, "rejected": int(not passed),
                      "reason": why, "length": len(seq), **v})

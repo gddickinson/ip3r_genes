@@ -1,0 +1,102 @@
+{
+ "assemblies_in_pool": 24596,
+ "vertebrate_excluded": 6216,
+ "no_taxonomy": 0,
+ "genomes": 194,
+ "total_gbp": 100.4,
+ "fasta_gb": 100.4,
+ "zip_gb": 30.1,
+ "free_gb": 804.6,
+ "below_contiguity_bar": 21,
+ "by_group": {
+  "amoebozoa": 4,
+  "discoba": 3,
+  "fungi": 66,
+  "metazoa": 66,
+  "other": 15,
+  "sar": 11,
+  "viridiplantae": 29
+ },
+ "by_reason": {
+  "phylum_rep": 66,
+  "absence_clade": 35,
+  "class_rep": 87,
+  "copy_number": 36,
+  "anchor": 14
+ },
+ "genomes_with_multiple_reasons": 33,
+ "unresolved": 0,
+ "rules": {
+  "big_phyla": {
+   "Arthropoda": 311,
+   "Nematoda": 110,
+   "Ascomycota": 1034,
+   "Basidiomycota": 319,
+   "Streptophyta": 384
+  },
+  "n_phyla": 66,
+  "n_big_phylum_classes": 87,
+  "n_absence_clades": 35,
+  "n_anchors": 14,
+  "n_copy_number": 36
+ },
+ "calibration": {
+  "n_spans": 16,
+  "n_species": 16,
+  "n_bands": 14,
+  "min_span_bp": 3739,
+  "median_span_bp": 19435,
+  "p90_span_bp": 142753,
+  "max_span_bp": 324840,
+  "contiguity_bar_bp": 19435,
+  "bar_quantile": 0.5,
+  "max_intron_upper_bound_bp": 324840,
+  "derived_max_intron_bp": 649680,
+  "miniprot_default_g": 200000,
+  "default_g_adequate": false,
+  "g_safety_factor": 2.0,
+  "by_group": {
+   "amoebozoa": {
+    "n": 2,
+    "min_bp": 8692,
+    "median_bp": 8813,
+    "max_bp": 8934,
+    "contiguity_bar_bp": 8813,
+    "max_intron_bp": 200000
+   },
+   "discoba": {
+    "n": 1,
+    "min_bp": 9426,
+    "median_bp": 9426,
+    "max_bp": 9426,
+    "contiguity_bar_bp": 9426,
+    "max_intron_bp": 200000
+   },
+   "fungi": {
+    "n": 1,
+    "min_bp": 9363,
+    "median_bp": 9363,
+    "max_bp": 9363,
+    "contiguity_bar_bp": 9363,
+    "max_intron_bp": 200000
+   },
+   "metazoa": {
+    "n": 10,
+    "min_bp": 8564,
+    "median_bp": 83321,
+    "max_bp": 324840,
+    "contiguity_bar_bp": 83321,
+    "max_intron_bp": 649680
+   },
+   "sar": {
+    "n": 2,
+    "min_bp": 3739,
+    "median_bp": 7305,
+    "max_bp": 10871,
+    "contiguity_bar_bp": 7305,
+    "max_intron_bp": 200000
+   }
+  },
+  "s5_vertebrate_bar_bp": 142212
+ }
+}

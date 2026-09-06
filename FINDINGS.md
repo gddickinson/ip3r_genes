@@ -737,3 +737,81 @@ the gene. Counted as genes they would invent a receptor family across half the
 eukaryotic tree. Every call in this task is therefore reported with how much of
 the model it actually covers: 63 % of the IP₃-receptor calls span at least half
 their model, against 1 % of the ryanodine ones.
+
+---
+
+## 2026-09-05 — S23a: taking the absences to the genome, and what it takes to be allowed to
+
+Everything this project has said about where the IP3 receptor is *missing* has
+so far been said about protein databases. A protein database holds what a
+gene-finder found. This task builds the machinery to ask the genomes
+themselves, and the first thing it found is how easy it would have been to ask
+badly.
+
+**A negative needs a witness, and the witness we had does not live in plants.**
+When we searched vertebrate genomes, every one of them could be checked: the
+ryanodine receptor, the IP3 receptor's big cousin, is in every vertebrate
+genome, so finding it proved the search had worked and a genome where it was
+missing was a broken search rather than a discovery. Outside the animals that
+cousin is essentially absent — we found it at full length in two of nearly
+seven thousand non-animal species — so in a plant or a yeast its absence is
+the right answer and it can witness nothing. Had we carried it over anyway,
+"no IP3 receptor in *Arabidopsis*" and "the search never ran on *Arabidopsis*"
+would have looked identical, and every absence in this task would have been
+unfalsifiable while appearing carefully controlled.
+
+The replacement is a protein that shares one of the receptor's four signature
+domains and is carried by essentially every eukaryote on something else
+entirely — the enzyme that attaches sugars to proteins. It is the same
+molecule this project used as its hardest decoy in the very first control
+experiment. Finding it proves the search reached the assembly; it must never
+be mistaken for the receptor, and it wasn't.
+
+**The pilot immediately showed why witnesses have to be graded rather than
+counted.** In yeast, in *Neurospora*, in a microsporidian and in a chytrid the
+witness appeared and the receptor did not — those absences are now genome
+facts, not annotation facts. But in *Toxoplasma*, one of the headline targets,
+**neither the receptor nor the witness turned up**, so that genome tells us
+nothing at all. The apicomplexans, it turns out, barely carry the witness
+protein either: one copy between them across sixty species. The honest
+conclusion is that the apicomplexan absence cannot yet be taken to the genome,
+and saying so is the point of having a control.
+
+**The receptor's gene is a very different shape outside the vertebrates.** In
+us it sprawls: three-quarters of a megabase for one gene in the largest case,
+and it was the single biggest caveat on the vertebrate survey, because a third
+of those assemblies are too fragmentary to hold a gene that long. Elsewhere it
+is compact — a fly's is twenty-two thousand bases, a *Perkinsus*'s under four
+thousand — and the whole range across the tree spans a hundredfold where the
+three human copies span sixfold. Animal genes are about nine times longer than
+those of protists and fungi. The practical consequence is good news for the
+absences: the assemblies carrying them need only a fraction of the contiguity
+vertebrate assemblies did, and almost all of them have it.
+
+**Some lineages carry the receptor and no one has looked.** Deriving the list
+of empty lineages from our own measurements rather than restating the previous
+summary turned up three nobody had named: diatoms, red algae, and — the
+interesting one — **tapeworms**, eleven species with no record between them.
+Tapeworms are animals. Every animal absence this project has seen so far has
+been a fragmentary genome rather than a missing gene, so if this one survives
+the genome search it would be the first real loss inside the animals.
+*(pending: S23b)*
+
+**And the copies keep multiplying in odd places.** A flatworm carries
+sixty-two records of a gene most animals have one of; a ciliate fifty-one;
+*Paramecium* thirty-nine; a sponge thirty-seven; a green alga thirty-six.
+Whether those are real gene families or the same gene written down many times
+is exactly what a genome search settles, and thirty-six of these species are
+now in the queue. *(pending: S23b)*
+
+A closing note on our own instrument, in the spirit of the last one. Four
+numerical thresholds were carried over from the vertebrate survey; **all four
+turned out to describe the vertebrates rather than the family.** Three were
+caught before the pilot — they had been measured on a set that is half insects
+and, applied to the whole tree, they quietly discarded a genuine receptor from
+a deep-branching flagellate. The fourth was caught by the pilot itself: in
+*Chlamydomonas*, an alga we know carries a complete receptor, the search found
+nine pieces of one and threw all nine away, because they resembled the bait
+only a quarter as closely as a vertebrate gene resembles a vertebrate bait —
+and the nearest bait available to it was an amoeba's. A threshold measured on
+the best-studied corner of a tree describes the studying, not the tree.
