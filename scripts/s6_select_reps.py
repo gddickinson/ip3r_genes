@@ -132,7 +132,8 @@ class Picker:
                 cands.append((r, note))
         if not cands and new_species:            # fall back rather than skip
             return self.take(pool, n, rule=rule, cell=cell,
-                             diverse_key=diverse_key, allow_short=allow_short)
+                             diverse_key=diverse_key, allow_short=allow_short,
+                             unique_key=unique_key)
         if not cands:
             self.unfilled.append({"rule": rule, "cell": cell, "wanted": n,
                                   "filled": 0, "pool": len(pool),

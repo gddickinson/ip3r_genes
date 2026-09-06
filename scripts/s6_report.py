@@ -98,7 +98,20 @@ def section_scope(reps: list[dict], sel: dict) -> list[str]:
     L += [f"Total {num(sel.get('total_residues', 0))} residues; longest "
           f"{num(sel.get('longest', 0))} aa (a ryanodine receptor — the "
           f"outgroup is ~5,000 aa against the family's ~2,700, which is why "
-          f"the alignment is mostly gap).", ""]
+          f"the alignment is mostly gap).", "",
+          "**One stated deviation from the brief.** The brief asks for "
+          "\"every novel model from S5/S23\". There are 424 full-length "
+          "`genome_only` models across the two sweeps; putting all of them "
+          "in would triple the alignment, put it past the size where "
+          "L-INS-i is affordable single-threaded, and — the real objection "
+          "— fill the tree with vertebrate gene models, since 206 of the "
+          "241 vertebrate ones are Aves and Actinopteri. R7 instead takes "
+          "one per (clade band, paralog cell) and one per non-vertebrate "
+          "group, which is what the brief's requirement is *for*: that "
+          "sequences no public database contains are in the tree, and that "
+          "each clade and cell where they are the only evidence has one. "
+          "The full set stays in census v4/v6 and is what S18's audit "
+          "works from.", ""]
     return L
 
 

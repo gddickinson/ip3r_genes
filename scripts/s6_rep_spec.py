@@ -137,19 +137,6 @@ EUKARYOTE_GROUPS = ["SAR", "Discoba", "Amoebozoa", "Viridiplantae",
 EUKARYOTE_DEEP_GROUPS = {"SAR": 5, "Discoba": 3, "Viridiplantae": 3,
                          "Amoebozoa": 2, "Fungi": 2, "Eukaryota (other)": 3}
 
-# ------------------------------------------------------- R6 copy number
-
-#: R6 — genomes whose measured copy number exceeds the vertebrate paralog
-#: count get more than one tip. Threshold is `len(PARALOGS)` rather than a
-#: typed 3, so it moves with the family definition.
-COPY_NUMBER_THRESHOLD = len(PARALOGS)
-
-#: R6 — how many genomes are sampled this way, and how many copies each
-#: contributes. The cap exists because *Macrostomum lignano* alone carries
-#: 18 full copies: uncapped, one flatworm would be 12 % of the alignment.
-COPY_GENOMES = 4
-COPY_PER_GENOME = 4
-
 #: R5 — the S20 verdict a plant or fungal record must carry to be eligible.
 #: S20 chased every plant and fungal ITPR record individually and wrote a
 #: verdict on each; `contaminant_suspect` records are 95-100 % identical to
@@ -167,6 +154,19 @@ PLANT_FUNGAL_REJECT = {"contaminant_suspect", "fragment", "no_genome_backing",
 def plant_fungal_ok(verdict: str) -> bool:
     return (verdict or "").strip() not in PLANT_FUNGAL_REJECT
 
+
+# ------------------------------------------------------- R6 copy number
+
+#: R6 — genomes whose measured copy number exceeds the vertebrate paralog
+#: count get more than one tip. Threshold is `len(PARALOGS)` rather than a
+#: typed 3, so it moves with the family definition.
+COPY_NUMBER_THRESHOLD = len(PARALOGS)
+
+#: R6 — how many genomes are sampled this way, and how many copies each
+#: contributes. The cap exists because *Macrostomum lignano* alone carries
+#: 18 full copies: uncapped, one flatworm would be 12 % of the alignment.
+COPY_GENOMES = 4
+COPY_PER_GENOME = 4
 
 # ------------------------------------------------- R7 novel gene models
 

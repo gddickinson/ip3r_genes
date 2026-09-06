@@ -35,6 +35,8 @@ Composition by group:
 
 Total 374,650 residues; longest 5,317 aa (a ryanodine receptor — the outgroup is ~5,000 aa against the family's ~2,700, which is why the alignment is mostly gap).
 
+**One stated deviation from the brief.** The brief asks for "every novel model from S5/S23". There are 424 full-length `genome_only` models across the two sweeps; putting all of them in would triple the alignment, put it past the size where L-INS-i is affordable single-threaded, and — the real objection — fill the tree with vertebrate gene models, since 206 of the 241 vertebrate ones are Aves and Actinopteri. R7 instead takes one per (clade band, paralog cell) and one per non-vertebrate group, which is what the brief's requirement is *for*: that sequences no public database contains are in the tree, and that each clade and cell where they are the only evidence has one. The full set stays in census v4/v6 and is what S18's audit works from.
+
 ### 1.1 What actually decided each pick
 
 The quality key is lexicographic, not a weighted sum, so the audit can name the component that chose the winner. Identity appears nowhere in it: S23 (**D29**) retired identity as a call gate for this family outside the vertebrates after finding it separates neither confirmed from contradicted loci (Youden J 0.70/0.71), and a selection rule stated in a statistic that does not separate the populations is not a rule.
@@ -76,7 +78,7 @@ The length-fit component scores a record against **its own group's median**, mea
 | R1 | `ITPR3@cyclostomata` | 1 | 0 | 0 | no census record |
 | R3 | `basal@sarcopterygian_fish:Latimeria_chalumnae` | 3 | 1 | 1 | pool exhausted |
 
-Each of those cells, against what the census actually holds in that clade band — because "no record" and "no *labelled* record" are different statements, and only the second is a result:
+Each of those cells against what the census actually holds in that clade band, because three statements have to be told apart: no record at all, no record carrying an annotation label, and no record whose label is a paralog *assignment* rather than a bait attribution. Only the last two are results.
 
 | cell | ITPR records | distinct loci | with any label | with a *usable* label | labels present |
 |---|---|---|---|---|---|

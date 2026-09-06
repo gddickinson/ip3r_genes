@@ -216,9 +216,39 @@ def matrices(stats: dict) -> dict:
         "mean_conservation": round(sum(cons) / len(cons), 4),
         "columns_over_0.9": sum(1 for c in cons if c >= 0.9),
     }
+    stats["sites"] = site_classes(trimmed, labels)
     print(f"  matrices: {len(labels)} labels, mean conservation "
           f"{stats['matrices']['mean_conservation']}", flush=True)
     return stats
+
+
+def site_classes(trimmed: dict[str, str], labels: list[str]) -> dict:
+    """Constant / variable-uninformative / parsimony-informative columns.
+
+    The number S7 actually has to work with. trimAl `-automated1` is a
+    heuristic, and a trimming that kept plenty of columns but cut the
+    informative ones would look fine in a percentage and starve the tree;
+    this counts what is left. A column is parsimony-informative when at
+    least two different residues each appear at least twice — the standard
+    definition, and the one IQ-TREE reports, so the two can be compared.
+    """
+    from collections import Counter
+    L = len(next(iter(trimmed.values())))
+    const = uninf = inf = allgap = 0
+    for k in range(L):
+        col = Counter(trimmed[l][k] for l in labels
+                      if trimmed[l][k] not in "-Xx")
+        if not col:
+            allgap += 1
+        elif len(col) == 1:
+            const += 1
+        elif sum(1 for c in col.values() if c >= 2) >= 2:
+            inf += 1
+        else:
+            uninf += 1
+    return {"constant": const, "variable_uninformative": uninf,
+            "parsimony_informative": inf, "all_gap_or_X": allgap,
+            "pct_informative": round(100 * inf / L, 1)}
 
 
 def main() -> int:

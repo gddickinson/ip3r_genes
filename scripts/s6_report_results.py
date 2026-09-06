@@ -47,7 +47,20 @@ PRIOR = {
 }
 
 
-def _verdict(observed, prior, tol=0.06):
+#: How much the two estimators may differ before the comparison means
+#: something. S1's numbers come from *pairwise* alignments of a 31-sequence
+#: control panel, each positive scored against its nearest bait; this
+#: table's come from all pairs of a 134-sequence trimmed MSA. Those are
+#: different estimators of the same quantity, so a small absolute
+#: difference is expected and is not evidence about the family. The
+#: comparison that is load-bearing is the **separation** — how far the
+#: within-family identity sits above the cross-family one — and the
+#: tolerance is set wide enough that only a real collapse of that
+#: separation reads as `contradicted`.
+TOLERANCE = 0.15
+
+
+def _verdict(observed, prior, tol=TOLERANCE):
     if prior is None:
         return "no prior"
     if abs(observed - prior) <= tol:
@@ -89,14 +102,24 @@ def render(*, load, load_json, table, num, reps, stats) -> list[str]:
         return sum(vals) / len(vals) if vals else float("nan")
 
     L = ["## 4. What the alignment shows", ""]
+    # Sections are written with a `§` placeholder and numbered here, in the
+    # order they are assembled. Hand-numbered headings collide the moment a
+    # section is inserted, and a report that renumbers itself cannot.
     L += _section_family_separation(table, num, idx, mean_between, spec)
     L += _section_sister_preview(table, num, idx, mean_between, cov, labels,
                                  meta, spec)
+    L += _section_cyclostome(table, num, labels, cov, meta, spec, idx)
     L += _section_coverage(load, table, num, spec)
     L += _section_fragment_effect(table, num, labels, cov, cls, meta)
     L += _section_conservation(load, load_json, table, num, stats)
+    L += _section_sites(load_json, table, num)
     L += _section_caveats(load_json, spec)
     L += _section_figures()
+    n = 0
+    for i, line in enumerate(L):
+        if line.startswith("### § "):
+            n += 1
+            L[i] = f"### 4.{n} " + line[len("### § "):]
     return L
 
 
@@ -111,25 +134,38 @@ def _section_family_separation(table, num, idx, mean_between, spec) -> list[str]
     across = sum(mean_between(a, "RYR") for a in trio) / len(trio)
     p_w = PRIOR["itpr_within_covered"]
     p_a = PRIOR["itpr_vs_ryr_covered"]
-    v_w, v_a = _verdict(within, p_w["value"]), _verdict(across, p_a["value"])
-    L = ["### 4.1 The family separation the whole project rests on (D14)", "",
+    sep, p_sep = within - across, p_w["value"] - p_a["value"]
+    L = ["### § The family separation the whole project rests on (D14)", "",
          "The ryanodine receptors are in this alignment on purpose — they "
          "root the tree — and D14 says their separation from ITPR is a "
-         "positive test at every stage, never an assumption. Measured on "
-         "this alignment, under the same covered-only identity metric S1 "
-         "used:", ""]
-    L += table(["quantity", "this alignment", "prior", "verdict"],
+         "positive test at every stage, never an assumption. Measured here "
+         "under the same covered-only identity metric S1 used, against what "
+         "S1 measured:", ""]
+    L += table(["quantity", "this alignment", "S1 prior", "Δ"],
                [["mean identity within a vertebrate paralog group",
-                 f"**{within:.3f}**", f"{p_w['value']:.3f}", f"**{v_w}**"],
+                 f"**{within:.3f}**", f"{p_w['value']:.3f}",
+                 f"{within - p_w['value']:+.3f}"],
                 ["mean identity, each paralog group to the RyR outgroup",
-                 f"**{across:.3f}**", f"{p_a['value']:.3f}", f"**{v_a}**"]])
-    L += [f"Prior source: {p_w['where']}; {p_a['where']}.", "",
-          f"The gap is {within - across:.3f} identity units. That is the "
-          f"margin every stage of this project has had to work inside, and "
-          f"it is the reason the length band is support and never the call: "
-          f"a 5,000 aa RyR and a 2,700 aa ITPR are {across:.0%} identical "
-          f"over the columns they share, which is not far enough apart for "
-          f"a heuristic to be trusted with.", ""]
+                 f"**{across:.3f}**", f"{p_a['value']:.3f}",
+                 f"{across - p_a['value']:+.3f}"],
+                ["**the separation between them**", f"**{sep:.3f}**",
+                 f"{p_sep:.3f}", f"{sep - p_sep:+.3f}"]])
+    L += [f"Verdict on the separation: **{_verdict(sep, p_sep)}** "
+          f"(tolerance {TOLERANCE:.2f}).", "",
+          f"Prior source: {p_w['where']}; {p_a['where']}.", "",
+          "The two estimators are not identical and are not expected to "
+          "agree to three decimals: S1 scored each of 31 control-panel "
+          f"sequences against its *nearest* bait on a pairwise alignment, "
+          f"and this table averages **all** pairs of a {sum(len(v) for v in idx.values())}-sequence trimmed MSA. "
+          "So the comparison is made on the separation, which is what every "
+          "later stage actually depends on, rather than on either absolute "
+          "value.", "",
+          f"The separation is {sep:.3f} identity units. That is the margin "
+          f"every stage of this project has had to work inside, and it is "
+          f"why the length band is support and never the call: a 5,000 aa "
+          f"RyR and a 2,700 aa ITPR are {across:.0%} identical over the "
+          f"columns they share, which is not far enough apart to trust a "
+          f"heuristic with.", ""]
     return L
 
 
@@ -144,7 +180,7 @@ def _section_sister_preview(table, num, idx, mean_between, cov, labels,
     scored = sorted(((mean_between(a, b), a, b) for a, b in pairs),
                     reverse=True)
     lead, second = scored[0], scored[1]
-    L = ["### 4.2 The sister question — a preview, not an answer", "",
+    L = ["### § The sister question — a preview, not an answer", "",
          f"Prior: {PRIOR['sister_pair']['where']}.", "",
          "This alignment can rank the three between-paralog identities. "
          "That is not a phylogenetic estimate — it ignores the outgroup, "
@@ -170,6 +206,61 @@ def _section_sister_preview(table, num, idx, mean_between, cov, labels,
     return L
 
 
+# ----------------------------------------------------------- cyclostomes
+
+def _section_cyclostome(table, num, labels, cov, meta, spec, idx) -> list[str]:
+    """Each pre-2R locus against the three paralog groups.
+
+    The one question this alignment can put a number on that no earlier
+    task could: are the three cyclostome loci each closest to a *different*
+    vertebrate paralog (what 1:1 orthology from 2R would look like), or all
+    equidistant (what a lineage-specific expansion would look like)?
+    """
+    trio = [g for g in spec.PARALOGS if g in idx]
+    rows = [(i, l) for i, l in enumerate(labels)
+            if meta.get(l, {}).get("band") == "cyclostomata"]
+    if len(trio) < 3 or len(rows) < 2:
+        return []
+    out, best_counts = [], {}
+    for i, l in rows:
+        means = {g: sum(cov[i][j] for j in idx[g]) / len(idx[g]) for g in trio}
+        best = max(means, key=means.get)
+        rest = sorted(means.values(), reverse=True)
+        best_counts[best] = best_counts.get(best, 0) + 1
+        out.append([f"`{meta[l]['species'].split('(')[0].strip()}` "
+                    f"{meta[l]['accession'].split('|')[-1][:22]}",
+                    *[f"{means[g]:.3f}" for g in trio],
+                    f"**{best}**", f"{rest[0] - rest[1]:+.3f}"])
+    L = ["### § The cyclostome trio, previewed", "",
+         "Every cyclostome in this set carries three ITPR loci, and the "
+         "sweep's ITPR1 bait won all of them (§1.2), so nothing before now "
+         "could say which locus is which. The alignment can at least ask "
+         "the question: is each locus closest to a *different* vertebrate "
+         "paralog — what 1:1 orthology from 2R would look like — or are "
+         "they all equidistant, which is what a cyclostome-specific "
+         "expansion would look like?", ""]
+    L += table(["locus", *trio, "nearest", "margin over 2nd"], out)
+    spread = len(best_counts)
+    if spread >= 3:
+        L += [f"The {len(rows)} loci divide across **{spread}** paralog "
+              f"groups. That is the shape 1:1 orthology would produce, and "
+              f"it is a reason to test the 2R hypothesis in S7 rather than "
+              f"a demonstration of it — mean identity to a group is not an "
+              f"orthology assignment, and the margins above say how thin "
+              f"the distinctions are.", ""]
+    else:
+        L += [f"All {len(rows)} loci fall nearest the same "
+              f"{'group' if spread == 1 else 'two groups'} "
+              f"({', '.join(sorted(best_counts))}). On identity alone the "
+              f"three copies are not separable into ITPR1/2/3, which is "
+              f"what a lineage-specific expansion looks like — and equally "
+              f"what three fast-evolving 1:1 orthologs would look like at "
+              f"this depth. **S7's tree and S8's synteny are what "
+              f"distinguish them**; this table says only that the easy "
+              f"answer is not available.", ""]
+    return L
+
+
 # ------------------------------------------------------------- coverage
 
 def _section_coverage(load, table, num, spec) -> list[str]:
@@ -182,7 +273,7 @@ def _section_coverage(load, table, num, spec) -> list[str]:
     by_group = defaultdict(list)
     for r in rows:
         by_group[r["group"]].append(float(r["coverage"]))
-    L = ["### 4.3 How much of the trimmed alignment each tip actually "
+    L = ["### § How much of the trimmed alignment each tip actually "
          "carries", "",
          f"Median coverage **{med:.2f}**; "
          f"{sum(1 for v in vals if v < 0.5)} of {len(vals)} tips cover less "
@@ -212,7 +303,7 @@ def _section_fragment_effect(table, num, labels, cov, cls, meta) -> list[str]:
     diffs.sort(reverse=True)
     if not diffs:
         return []
-    L = ["### 4.4 Why both identity matrices are committed", "",
+    L = ["### § Why both identity matrices are committed", "",
          "`identity_covered.tsv` scores identity over mutually covered "
          "columns only; `identity_classic.tsv` counts a gap as a mismatch. "
          "For a set that deliberately contains fragments and a ~5,000 aa "
@@ -236,7 +327,7 @@ def _section_conservation(load, load_json, table, num, stats) -> list[str]:
     vals = [float(r["conservation"]) for r in cons]
     n = len(vals)
     hi = sum(1 for v in vals if v >= 0.9)
-    L = ["### 4.5 Where the family is conserved", "",
+    L = ["### § Where the family is conserved", "",
          f"Over the {num(n)} trimmed columns, mean conservation "
          f"**{sum(vals) / n:.3f}**, with **{num(hi)} columns "
          f"({100 * hi / n:.1f} %) at or above 0.9** — invariant or nearly "
@@ -247,6 +338,30 @@ def _section_conservation(load, load_json, table, num, stats) -> list[str]:
          "domain bands are drawn where the alignment put those residues, "
          "by walking the human row and counting ungapped positions, not by "
          "scaling residue coordinates onto column coordinates.", ""]
+    return L
+
+
+# ----------------------------------------------------------------- sites
+
+def _section_sites(load_json, table, num) -> list[str]:
+    s = load_json("align_stats.json").get("sites", {})
+    if not s:
+        return []
+    tot = sum(v for k, v in s.items() if k != "pct_informative")
+    L = ["### § What is left for the tree to work with", "",
+         "trimAl `-automated1` is a heuristic, and a percentage of columns "
+         "kept says nothing about whether the *informative* ones survived. "
+         "Counted on the trimmed alignment, by the same definition IQ-TREE "
+         "reports (a column is parsimony-informative when at least two "
+         "residues each appear at least twice):", ""]
+    L += table(["column class", "n", "% of trimmed"],
+               [[k.replace("_", " "), num(v), f"{100 * v / tot:.1f} %"]
+                for k, v in s.items() if k != "pct_informative"])
+    L += [f"**{s['pct_informative']} % of the trimmed alignment is "
+          f"parsimony-informative** — {num(s['parsimony_informative'])} "
+          f"columns. That is the number S7's support values are estimated "
+          f"from, and the number to quote if a node's bootstrap is "
+          f"questioned.", ""]
     return L
 
 
