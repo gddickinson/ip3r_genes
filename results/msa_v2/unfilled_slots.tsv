@@ -1,0 +1,6 @@
+rule	cell	wanted	filled	pool	why
+R1	ITPR2@sarcopterygian_fish	1	0	1	no record passes the length gate
+R1	ITPR1@cyclostomata	1	0	0	no census record
+R1	ITPR2@cyclostomata	1	0	0	no census record
+R1	ITPR3@cyclostomata	1	0	0	no census record
+R3	basal@sarcopterygian_fish:Latimeria_chalumnae	3	1	1	pool exhausted

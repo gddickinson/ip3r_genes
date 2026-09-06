@@ -55,15 +55,24 @@ PARALOG_ORDER = ["ITPR1", "ITPR2", "ITPR3"]
 #: which root the tree — gets the accent violet so it is never mistaken for an
 #: ITPR. Used by the alignment figures and by every figure that colours a
 #: representative-alignment row.
+#:
+#: `vertebrate_basal` (added in S6) is a vertebrate tip whose paralog is not
+#: established — the cyclostome, chondrichthyan and coelacanth grades, where
+#: no labelled ITPR1/2/3 record exists and the tree is what assigns them. It
+#: is a desaturated blue-grey rather than a fourth categorical hue: reading
+#: as vertebrate-adjacent without claiming one of the three, and distinct
+#: from the warm neutrals the non-vertebrate grades use.
 GROUP = {
     "ITPR1": PARALOG["ITPR1"], "ITPR2": PARALOG["ITPR2"],
-    "ITPR3": PARALOG["ITPR3"], "invert_metazoa": "#52514e",
+    "ITPR3": PARALOG["ITPR3"], "vertebrate_basal": "#7d8fa6",
+    "invert_metazoa": "#52514e",
     "plant": "#a9a79e", "protist": "#c9c3b0", "fungi": "#8a897f",
     "RYR": "#4a3aa7",
 }
-GROUP_ORDER = ["ITPR1", "ITPR2", "ITPR3", "invert_metazoa", "plant",
-               "protist", "fungi", "RYR"]
+GROUP_ORDER = ["ITPR1", "ITPR2", "ITPR3", "vertebrate_basal",
+               "invert_metazoa", "plant", "protist", "fungi", "RYR"]
 GROUP_LABEL = {"ITPR1": "ITPR1", "ITPR2": "ITPR2", "ITPR3": "ITPR3",
+               "vertebrate_basal": "vertebrates, paralog unassigned",
                "invert_metazoa": "invertebrates", "plant": "plants",
                "protist": "protists", "fungi": "fungi",
                "RYR": "ryanodine receptors"}

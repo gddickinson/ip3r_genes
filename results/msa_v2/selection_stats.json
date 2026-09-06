@@ -1,0 +1,135 @@
+{
+ "census_rows": 18065,
+ "selected": 134,
+ "unfilled_context": {
+  "ITPR2@sarcopterygian_fish": {
+   "band": "sarcopterygian_fish",
+   "itpr_records_in_band": 5,
+   "with_any_label": 4,
+   "with_a_usable_label": 3,
+   "labels_present": [
+    "ITPR1",
+    "ITPR2",
+    "ITPR3"
+   ],
+   "label_sources": [
+    "gene_symbol",
+    "s5_cell"
+   ],
+   "loci_in_band": 5
+  },
+  "ITPR1@cyclostomata": {
+   "band": "cyclostomata",
+   "itpr_records_in_band": 19,
+   "with_any_label": 6,
+   "with_a_usable_label": 0,
+   "labels_present": [
+    "ITPR1"
+   ],
+   "label_sources": [
+    "s5_cell"
+   ],
+   "loci_in_band": 12
+  },
+  "ITPR2@cyclostomata": {
+   "band": "cyclostomata",
+   "itpr_records_in_band": 19,
+   "with_any_label": 6,
+   "with_a_usable_label": 0,
+   "labels_present": [
+    "ITPR1"
+   ],
+   "label_sources": [
+    "s5_cell"
+   ],
+   "loci_in_band": 12
+  },
+  "ITPR3@cyclostomata": {
+   "band": "cyclostomata",
+   "itpr_records_in_band": 19,
+   "with_any_label": 6,
+   "with_a_usable_label": 0,
+   "labels_present": [
+    "ITPR1"
+   ],
+   "label_sources": [
+    "s5_cell"
+   ],
+   "loci_in_band": 12
+  },
+  "basal@sarcopterygian_fish:Latimeria_chalumnae": {
+   "band": "sarcopterygian_fish",
+   "itpr_records_in_band": 5,
+   "with_any_label": 4,
+   "with_a_usable_label": 3,
+   "labels_present": [
+    "ITPR1",
+    "ITPR2",
+    "ITPR3"
+   ],
+   "label_sources": [
+    "gene_symbol",
+    "s5_cell"
+   ],
+   "loci_in_band": 5
+  }
+ },
+ "by_rule": {
+  "R1": 32,
+  "R2": 4,
+  "R7": 11,
+  "R3": 13,
+  "R4": 34,
+  "R6": 16,
+  "R5": 18,
+  "R8": 6
+ },
+ "by_group": {
+  "ITPR1": 15,
+  "ITPR2": 11,
+  "ITPR3": 18,
+  "vertebrate_basal": 13,
+  "invert_metazoa": 47,
+  "plant": 3,
+  "protist": 19,
+  "fungi": 2,
+  "RYR": 6
+ },
+ "by_seq_store": {
+  "s2_seeded": 90,
+  "s5_models": 14,
+  "s23_models": 30
+ },
+ "by_decided_by": {
+  "is_bait": 28,
+  "length_fit": 50,
+  "sole_candidate": 22,
+  "protein_existence": 8,
+  "forced": 6,
+  "profile_score": 8,
+  "complete_architecture": 6,
+  "reviewed": 5,
+  "profile_high": 1
+ },
+ "length_targets": {
+  "Metazoa (non-vertebrate)": 2771.5,
+  "Eukaryota (other)": 2641.0,
+  "SAR": 2973,
+  "Vertebrata": 2671,
+  "Fungi": 2588,
+  "Viridiplantae": 2694,
+  "Discoba": 2801,
+  "Amoebozoa": 2694,
+  "__default__": 2694
+ },
+ "short_exceptions": [
+  "invert_metazoa_Bugula_neritina_Brown_bryozoan_Sertula_A0A7J7J401",
+  "invert_metazoa_Intoshia_linei_GCA_001642005.1_copy1_548",
+  "invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861",
+  "invert_metazoa_Tubiluchus_corallicola_GCA_030141605.1_copy1_290621"
+ ],
+ "unfilled_slots": 5,
+ "missing_sequence": [],
+ "total_residues": 374650,
+ "longest": 5317
+}
