@@ -1,0 +1,40 @@
+{
+ "mafft": {
+  "aligner": "L-INS-i",
+  "why": "n=134 <= 200, the brief's L-INS-i applies",
+  "command": "mafft --localpair --maxiterate 1000 --thread 1 --anysymbol /Users/george/claude_test/ip3r_genes/results/msa_v2/representatives.fasta",
+  "version": "v7.526 (2024/Apr/26)",
+  "threads": 1,
+  "thread_note": "D24 \u2014 pinned; --thread -1 is not reproducible for this pipeline",
+  "runtime_s": 3852.2,
+  "n_sequences": 134,
+  "columns": 11796,
+  "gap_pct": 76.3,
+  "sha256_in": "184a77925f78147414f9ea5d6124f6d9d0130dbd58ffdd6873dd89fd32cd4092",
+  "sha256_out": "7f5c627857741dfb4eccab2df326a7018e3e4e74e3525f070c67c0c57f7d16ae"
+ },
+ "trimal": {
+  "command": "trimal -in /Users/george/claude_test/ip3r_genes/results/msa_v2/aln.fasta -out /Users/george/claude_test/ip3r_genes/results/msa_v2/trimmed.fasta -automated1",
+  "version": "trimAl v1.5.rev1 build[2025-11-25]",
+  "runtime_s": 0.5,
+  "columns_in": 11796,
+  "columns_kept": 1790,
+  "pct_kept": 15.2,
+  "gap_pct": 7.83,
+  "sha256_out": "de42f82c1c9cc93fbae6503bdae4d0866bcd1ca5f6e94660f390cc05bdc42079",
+  "column_map": "column_map.tsv"
+ },
+ "matrices": {
+  "n_labels": 134,
+  "trimmed_columns": 1790,
+  "mean_conservation": 0.5509,
+  "columns_over_0.9": 81
+ },
+ "sites": {
+  "constant": 23,
+  "variable_uninformative": 37,
+  "parsimony_informative": 1730,
+  "all_gap_or_X": 0,
+  "pct_informative": 96.6
+ }
+}

@@ -1508,3 +1508,105 @@ population S18 will want.
 **Next.** S6 — the alignment upgrade. Two things it inherits: copy number
 ranges 0–18, so a representative rule assuming one gene per species is wrong;
 and any rule stated in sequence identity has to be re-derived (D29).
+
+---
+
+## 2026-09-06 — S6: the representative alignment
+
+**Task.** S6 — alignment upgrade. MAFFT L-INS-i + trimAl over census
+representatives chosen per clade × per kingdom (D8), RyR outgroup included.
+→ `results/msa_v2/`.
+
+### What ran
+
+`s6_select_reps.py` (census v6 → 134 representatives), `s6_msa.py`
+(MAFFT L-INS-i 64.2 min single-threaded, trimAl, both identity matrices,
+conservation, coverage, site classes), `s6_figures.py` (4 figures),
+`s6_report.py` + `s6_report_results.py` (`report.md`, `stats.md`),
+`s6_test_selection.py` (21 controls, all passing).
+
+### The two rule changes the data forced, before the alignment was built
+
+Both were found by looking at what the selector actually picked, not by
+planning:
+
+- **A paralog label is vertebrate-only.** The first dry run grouped
+  *Acanthamoeba castellanii* and *Tetrabaena socialis* as `ITPR2`, from a
+  UniProt protein name reading "receptor type 2". ITPR1/2/3 are a 2R
+  product; those numbers are annotation transfer. `group_of()` now returns
+  a paralog only inside the vertebrates, and the raw label survives in the
+  audit with `paralog_source`.
+- **A bait attribution is not a paralog label where it is constant.**
+  Checking why the cyclostome grid cells were thin turned up 19 ITPR
+  records over 12 loci with six labels, *all* `ITPR1`, *all* from the S5
+  bait attribution. The sea lamprey and both hagfishes carry three
+  full-length loci each and the ITPR1 bait wins all six.
+  `informative_attribution()` now decides per band by counting distinct
+  attributed cells, and R3 takes the complete copy set of two species per
+  band rather than one tip per species — three lamprey genes against
+  ITPR1/2/3 is a test of 2R, one is a sample. (**D30**)
+
+The second change cost a restart of a 40-minute MAFFT run. It was worth it:
+two thirds of the cyclostome evidence would not have been in the alignment.
+
+### Bugs found and fixed
+
+- **The domain track was in the wrong coordinate system** — it counted
+  ungapped positions in the *trimmed* human row and called that the residue
+  number, which renumbers every residue after the first discarded column.
+  Domains landed at ~2/3 of their true position and the two C-terminal ones
+  vanished off the end. Fixed by committing trimAl's own `-colnumbering`
+  output as `column_map.tsv`. Found by looking at the figure (D11); no
+  table check could have caught it. (**D31**)
+- Tip labels collided: the three *Myxine* loci are all
+  `GCF_964187855.1|ITPR1|…`, so a two-field label made one name for three
+  sequences. The duplicate-label guard rejected the set rather than
+  silently aligning 132 of 134.
+- `pick_diverse` reset its per-key tally each wave, so wave 2 could add two
+  more of a key wave 1 had already taken — five SAR slots went to three
+  *Triparma* species. Keys are also nested now: `(phylum, genus)` spreads
+  on phylum first, which is what stopped three oomycetes taking the slots
+  Ciliophora should have had.
+- A species-dedup key on the raw census string treated *Prymnesium parvum*
+  and "Prymnesium parvum (Toxic golden alga)" as two species.
+- `s6_msa.py` now refuses an `aln.fasta` that is not an alignment of the
+  current `representatives.fasta`. A long single-threaded MAFFT and an
+  edited selector overlap easily and the failure is silent —
+  `align_stats.json` would carry the SHA-256 of a file the alignment was
+  not built from, which is the drift D24 exists to make visible.
+
+### Results
+
+**The alignment.** 134 representatives, 374,650 residues → **11,796
+columns** (76.3 % gaps) → trimAl `-automated1` → **1,790 columns kept
+(15.2 %)**, 7.83 % gaps, **96.6 % parsimony-informative** (1,730 columns).
+Median tip coverage 0.96; one tip of 134 below half.
+
+**D14 confirmed on the separation.** Within a vertebrate paralog group
+0.908, each paralog group to the RyR outgroup 0.259, **separation 0.650**
+against S1's 0.579. Compared on the separation rather than the absolute
+values, because S1 scored 31 control sequences against their nearest bait
+on pairwise alignments and this table averages all pairs of a trimmed MSA —
+different estimators of the same quantity.
+
+**The sister question, previewed.** ITPR1 × ITPR2 **0.788**, ITPR2 × ITPR3
+0.746, ITPR1 × ITPR3 0.736. The leading pair's interquartile range
+(0.773–0.806) does not overlap either other pair's, so the ranking holds
+across the middle half of every comparison. It is still not a phylogenetic
+estimate; S7's AU test is the answer.
+
+**The cyclostome trio, and its control.** All six cyclostome loci fall
+nearest ITPR1 (0.73–0.85). The obvious objection is that ITPR1 may simply
+be the slowest-evolving paralog, so everything deep is nearest it — so the
+same statistic was run over the groups that are certainly not vertebrate
+paralogs. Invertebrates lean ITPR1 31/47 but at a **median margin of
+0.007**; protists 0.001; the RyR outgroup 0.002. The cyclostome margin is
+**0.043, six times that**. The lean is a fact about those loci. Whether it
+means a cyclostome-specific expansion from an ITPR1-like ancestor or 1:1
+orthologs with ITPR2/ITPR3 diverging after the cyclostome split, identity
+cannot say — S7 and S8 can.
+
+**Next.** S7 — the ML phylogeny. It reads `trimmed.fasta`, roots on the six
+RyR tips, and has three things to test that S6 handed it as hypotheses and
+not results: ITPR1/2/3 monophyly, the ITPR1 × ITPR2 sister preview, and the
+cyclostome trio.

@@ -8,6 +8,7 @@ Writes results/msa_v2/aln.fasta         full L-INS-i alignment
        results/msa_v2/identity_classic.tsv    gaps count as mismatch
        results/msa_v2/conservation.tsv        per-column, trimmed MSA
        results/msa_v2/coverage.tsv            per-sequence, trimmed MSA
+       results/msa_v2/column_map.tsv          trimmed column -> aln column
 
 **Single-threaded, by decision (D24).** MAFFT L-INS-i at `--thread -1` is
 not reproducible on this machine: S3 aligned the same 22 RyR seeds twice and
@@ -46,6 +47,7 @@ REPS_TSV = MSA_DIR / "representatives.tsv"
 ALN = MSA_DIR / "aln.fasta"
 TRIMMED = MSA_DIR / "trimmed.fasta"
 STATS = MSA_DIR / "align_stats.json"
+COLMAP = MSA_DIR / "column_map.tsv"
 
 #: The brief allows `--auto` "if size forces it", and the choice must be
 #: recorded. L-INS-i is O(N^2) full pairwise DP before the progressive
@@ -82,6 +84,29 @@ def run_logged(cmd: list[str], stdout_path: Path | None,
             subprocess.run(cmd, stdout=log, stderr=subprocess.STDOUT,
                            check=True)
     return time.time() - t0
+
+
+def kept_columns() -> list[int]:
+    """Which untrimmed columns trimAl kept, 0-based, in order.
+
+    Without this the alignment has two coordinate systems and no way
+    between them, and anything that starts from a *protein residue* — the
+    domain track, S11's variant mapping, S22's ligand sites — has to guess.
+    Guessing by counting ungapped positions in the trimmed row is the
+    obvious wrong answer: it silently renumbers every residue after the
+    first trimmed column, which dropped human ITPR1's two C-terminal
+    domains off the end of the conservation figure.
+    """
+    p = subprocess.run(["trimal", "-in", str(ALN), "-out", "/dev/null",
+                        "-automated1", "-colnumbering"],
+                       capture_output=True, text=True, check=True)
+    body = p.stdout.split("#ColumnsMap", 1)[-1]
+    cols = [int(x) for x in body.replace("\t", " ").split(",") if x.strip()]
+    with open(COLMAP, "w") as fh:
+        fh.write("trimmed_column\taln_column\n")
+        for i, c in enumerate(cols, 1):
+            fh.write(f"{i}\t{c + 1}\n")
+    return cols
 
 
 def gap_pct(seqs: dict[str, str]) -> float:
@@ -157,6 +182,7 @@ def align(stats: dict) -> dict:
 def trim(stats: dict) -> dict:
     cmd = ["trimal", "-in", str(ALN), "-out", str(TRIMMED), "-automated1"]
     t = run_logged(cmd, None, MSA_DIR / "trimal.log")
+    kept = kept_columns()
     trimmed = {k.split()[0]: v for k, v in read_fasta(TRIMMED).items()}
     bad = ragged(trimmed)
     if bad:
@@ -170,7 +196,11 @@ def trim(stats: dict) -> dict:
         "columns_kept": len(next(iter(trimmed.values()))),
         "pct_kept": round(100 * len(next(iter(trimmed.values()))) / aln_cols, 1),
         "gap_pct": round(gap_pct(trimmed), 2), "sha256_out": sha256(TRIMMED),
+        "column_map": str(COLMAP.relative_to(MSA_DIR)),
     }
+    if len(kept) != stats["trimal"]["columns_kept"]:
+        raise SystemExit(f"trimAl kept {stats['trimal']['columns_kept']} "
+                         f"columns but -colnumbering listed {len(kept)}")
     print(f"  trimAl: {stats['trimal']['columns_kept']} of {aln_cols} columns "
           f"kept ({stats['trimal']['pct_kept']}%)", flush=True)
     return stats

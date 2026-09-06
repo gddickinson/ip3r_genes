@@ -7,4 +7,15 @@
 | representatives | 134 |
 | total residues | 374,650 |
 | longest sequence (aa) | 5,317 |
+| aligner | MAFFT L-INS-i (v7.526 (2024/Apr/26)) |
+| threads | 1 (D24) |
+| MAFFT runtime | 64.2 min |
+| alignment length (columns) | 11,796 |
+| alignment gaps | 76.3 % |
+| trimAl | trimAl v1.5.rev1 build[2025-11-25] |
+| trimAl mode | -automated1 |
+| columns kept | 1,790 (15.2 %) |
+| trimmed gaps | 7.83 % |
+| median tip coverage of trimmed MSA | 0.96 |
+| tips under 0.5 coverage | 1 of 134 |
 

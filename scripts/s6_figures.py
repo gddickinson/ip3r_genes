@@ -99,9 +99,16 @@ def fig_identity_heatmap() -> Path:
         s.set_visible(False)
     # Legend under the panel, not inside it: over a 134 x 134 heatmap an
     # inset legend sits on top of the data it is explaining.
-    ax.legend([Patch(facecolor=fs.GROUP[g]) for g in groups],
-              [fs.GROUP_LABEL[g] for g in groups], fontsize=6,
-              loc="upper center", bbox_to_anchor=(0.5, -0.02), ncol=5,
+    # matplotlib fills a multi-column legend column-major, so the entries
+    # would read ITPR1, ITPR3, invertebrates, ... across the first row.
+    # Reorder so it reads in GROUP_ORDER left to right.
+    ncol = 5
+    nrow = -(-len(groups) // ncol)
+    order = [r * ncol + c for c in range(ncol) for r in range(nrow)]
+    seq = [groups[i] for i in order if i < len(groups)]
+    ax.legend([Patch(facecolor=fs.GROUP[g]) for g in seq],
+              [fs.GROUP_LABEL[g] for g in seq], fontsize=6,
+              loc="upper center", bbox_to_anchor=(0.5, -0.02), ncol=ncol,
               frameon=False, handlelength=1.0, columnspacing=1.2)
     cb = plt.colorbar(im, ax=ax, fraction=0.035, pad=0.02)
     cb.set_label("identity (covered columns)")
@@ -113,33 +120,43 @@ def fig_identity_heatmap() -> Path:
 def human_domain_columns() -> list[tuple[str, int, int, str]]:
     """Human ITPR1's Pfam spans, in *trimmed-MSA column* coordinates.
 
-    The domain table is in residue coordinates on Q14643. Mapping it onto
-    the alignment means walking that row of the trimmed MSA and counting
-    ungapped positions — so a domain lands where the alignment actually put
-    it, not where a proportional guess would.
+    Three coordinate systems, walked in order, because skipping the middle
+    one is wrong in a way that looks right: protein residue -> **untrimmed**
+    alignment column (from `aln.fasta`) -> trimmed column (from
+    `column_map.tsv`, which is trimAl's own `-colnumbering` output).
+
+    The tempting shortcut — count ungapped positions in the *trimmed*
+    human row and call that the residue number — renumbers every residue
+    after the first discarded column. On this alignment it put the domains
+    at roughly two thirds of their true position and dropped the two
+    C-terminal ones (RIH-associated and the pore) off the end entirely,
+    which is exactly the kind of error D11 exists to catch: the figure
+    rendered, the bands looked plausible, and they were in the wrong place.
     """
-    if not DOMAINS.exists():
+    colmap = MSA_DIR / "column_map.tsv"
+    if not DOMAINS.exists() or not colmap.exists():
         return []
-    trimmed = {k.split()[0]: v for k, v in
-               read_fasta(MSA_DIR / "trimmed.fasta").items()}
+    aln = read_fasta(MSA_DIR / "aln.fasta")
     meta = load_meta()
-    row = next((l for l in trimmed
+    row = next((l for l in aln
                 if meta.get(l, {}).get("accession") == HUMAN_ITPR1), None)
     if row is None:
         return []
-    seq = trimmed[row]
-    res_to_col: dict[int, int] = {}
+    res_to_aln: dict[int, int] = {}
     n = 0
-    for col, ch in enumerate(seq):
+    for col, ch in enumerate(aln[row], start=1):
         if ch != "-":
             n += 1
-            res_to_col.setdefault(n, col)
+            res_to_aln.setdefault(n, col)
+    aln_to_trim = {int(r["aln_column"]): int(r["trimmed_column"])
+                   for r in read_tsv(colmap)}
     out = []
     for d in read_tsv(DOMAINS):
         if d["accession"] != HUMAN_ITPR1:
             continue
-        cols = [res_to_col[r] for r in range(int(d["start"]), int(d["end"]) + 1)
-                if r in res_to_col]
+        cols = [aln_to_trim[res_to_aln[r]]
+                for r in range(int(d["start"]), int(d["end"]) + 1)
+                if r in res_to_aln and res_to_aln[r] in aln_to_trim]
         if cols:
             out.append((d["label"], min(cols), max(cols), d["shared_class"]))
     return out
@@ -171,25 +188,33 @@ def fig_conservation() -> Path:
     seen = []
     for label, c0, c1, cls in doms:
         w = c1 - c0 + 1
-        dax.barh(0, w, left=c0 + 1, height=0.55,
-                 color=palette.get(cls, "#8a897f"))
-        # A 107 aa domain is ~40 columns wide here; its name does not fit
-        # inside the bar, and drawn anyway it overprints its neighbours.
-        if w >= 0.055 * len(cons):
-            dax.text((c0 + c1) / 2 + 1, 0, label, ha="center", va="center",
+        # A hairline edge, because the IP3-binding core ends at residue 229
+        # and MIR starts at 233: abutting bars read as one domain.
+        dax.barh(0, w, left=c0, height=0.55,
+                 color=palette.get(cls, "#8a897f"),
+                 edgecolor="white", linewidth=0.6)
+        # Fit is a property of the *label*, not of the bar alone. At 5 pt
+        # across a 6.7-inch axis spanning the whole alignment, a character
+        # is about `per_char` columns wide; "IP3-binding core (beta-trefoil)"
+        # needs three times the room "RIH" does, and centred inside a bar
+        # too narrow for it, it ran off the left edge of the canvas and
+        # overprinted MIR.
+        per_char = len(cons) / (fs.W_FULL * 20.0)
+        if w >= per_char * (len(label) + 2):
+            dax.text((c0 + c1) / 2, 0, label, ha="center", va="center",
                      fontsize=5, color="white")
         else:
-            dax.text((c0 + c1) / 2 + 1, -0.62, label, ha="center", va="top",
-                     fontsize=4.4, color="#3a3936", rotation=0)
+            dax.text((c0 + c1) / 2, -0.55, label, ha="center", va="top",
+                     fontsize=4.4, color="#3a3936")
         if cls not in seen:
             seen.append(cls)
     names = {"shared": "shared with RyR", "generic": "generic pore",
              "ryr_only": "RyR-only"}
     dax.legend([Patch(facecolor=palette.get(c, "#8a897f")) for c in seen],
                [names.get(c, c) for c in seen], fontsize=5, ncol=len(seen),
-               loc="upper right", bbox_to_anchor=(1.0, 2.9), frameon=False,
-               handlelength=1.0)
-    dax.set_ylim(-1.4, 0.5)
+               loc="lower center", bbox_to_anchor=(0.5, -1.75),
+               frameon=False, handlelength=1.0)
+    dax.set_ylim(-1.0, 0.45)
     dax.set_yticks([])
     dax.set_xlabel("trimmed MSA column")
     for s in dax.spines.values():
@@ -268,6 +293,15 @@ def fig_group_identity() -> Path:
     ax.set_ylabel("mean identity (covered)")
     ax.set_title("Between-paralog identity", pad=5)
     ax.set_xlim(-0.5, len(pairs) - 0.5)
+    # Round bounds with a floor on the span. Left to autoscale, the axis
+    # fits itself to the three means and a 0.04 difference fills the panel,
+    # which overstates it; a fixed minimum span keeps the zoom honest while
+    # still showing the interquartile bars the comparison rests on.
+    lo = min(spread[p][0] for p in pairs)
+    hi = max(spread[p][1] for p in pairs)
+    mid, span = (lo + hi) / 2, max(hi - lo, 0.10) * 1.15
+    ax.set_ylim(round((mid - span / 2) * 50) / 50,
+                round((mid + span / 2) * 50) / 50)
     fs.despine(ax)
     fs.hgrid(ax)
 

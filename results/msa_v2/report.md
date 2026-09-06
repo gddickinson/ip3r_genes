@@ -99,9 +99,178 @@ Each of those cells against what the census actually holds in that clade band, b
 
 ## 2. The alignment
 
-*Not yet built.*
+- Aligner: **MAFFT L-INS-i** (v7.526 (2024/Apr/26)) — n=134 <= 200, the brief's L-INS-i applies.
+- Command: `mafft --localpair --maxiterate 1000 --thread 1 --anysymbol /Users/george/claude_test/ip3r_genes/results/msa_v2/representatives.fasta`
+- **Single-threaded, by decision (D24).** MAFFT L-INS-i at `--thread -1` is not reproducible on this machine: S3 aligned the same 22 RyR seeds twice and got 8,510 and 8,468 columns, because the iterative refinement stage combines partial results in whatever order the threads finish. Everything downstream of this file is built from it, so it is pinned to one thread and the SHA-256 of input and output are recorded.
+- Runtime: 64.2 min (3,852 s).
+- Result: **11,796 columns**, 76.3 % gaps, 134 sequences.
+- `sha256(representatives.fasta)` = `184a77925f781474…`; `sha256(aln.fasta)` = `7f5c627857741dfb…`.
 
-## 4. Results
+The alignment is checked for raggedness before anything reads it. S1 established that a silent MAFFT failure does not error — it degrades to a star alignment with no other symptom — so unequal row lengths are a hard failure here rather than a warning.
 
-*The alignment has not been built yet; re-run `scripts/s6_msa.py` and then this report.*
+## 3. Trimming
+
+- trimAl v1.5.rev1 build[2025-11-25]
+- Command: `trimal -in /Users/george/claude_test/ip3r_genes/results/msa_v2/aln.fasta -out /Users/george/claude_test/ip3r_genes/results/msa_v2/trimmed.fasta -automated1` (0.5 s)
+- **1,790 of 11,796 columns kept (15.2 %)**, 7.83 % gaps after trimming.
+
+`-automated1` is trimAl's own heuristic for a phylogeny-bound alignment; the choice is recorded rather than tuned, because a trimming threshold picked by looking at the resulting tree is a threshold fitted to the answer.
+
+## 4. What the alignment shows
+
+### 4.1 The family separation the whole project rests on (D14)
+
+The ryanodine receptors are in this alignment on purpose — they root the tree — and D14 says their separation from ITPR is a positive test at every stage, never an assumption. Measured here under the same covered-only identity metric S1 used, against what S1 measured:
+
+| quantity | this alignment | S1 prior | Δ |
+|---|---|---|---|
+| mean identity within a vertebrate paralog group | **0.908** | 0.828 | +0.080 |
+| mean identity, each paralog group to the RyR outgroup | **0.259** | 0.249 | +0.010 |
+| **the separation between them** | **0.650** | 0.579 | +0.071 |
+
+Verdict on the separation: **confirmed** (tolerance 0.15).
+
+Prior source: S1, the same 25 positives to their nearest labelled ITPR bait; S1 `benchmark_controls/bait_margin.tsv`, mean covered-only identity of the 25 ITPR positives to their nearest labelled RyR bait (the same metric this table uses).
+
+The two estimators are not identical and are not expected to agree to three decimals: S1 scored each of 31 control-panel sequences against its *nearest* bait on a pairwise alignment, and this table averages **all** pairs of a 134-sequence trimmed MSA. So the comparison is made on the separation, which is what every later stage actually depends on, rather than on either absolute value.
+
+The separation is 0.650 identity units. That is the margin every stage of this project has had to work inside, and it is why the length band is support and never the call: a 5,000 aa RyR and a 2,700 aa ITPR are 26% identical over the columns they share, which is not far enough apart to trust a heuristic with.
+
+### 4.2 The sister question — a preview, not an answer
+
+Prior: the review (§7.4): which two of the three vertebrate paralogues are sisters *is not fixed by any published, support-annotated ML analysis with an RyR outgroup*.
+
+This alignment can rank the three between-paralog identities. That is not a phylogenetic estimate — it ignores the outgroup, the rate variation and the branch lengths S7's model fits — so it is reported as a preview with the ranking's own margin, and **S7's AU test over the three rooted topologies is the answer**.
+
+| pair | mean identity (covered) | interquartile range | n pairs |
+|---|---|---|---|
+| ITPR1 × ITPR2 | 0.788 | 0.773 – 0.806 | 165 |
+| ITPR2 × ITPR3 | 0.746 | 0.729 – 0.761 | 198 |
+| ITPR1 × ITPR3 | 0.736 | 0.729 – 0.746 | 270 |
+
+**ITPR1 × ITPR2 leads by 0.042** over ITPR2 × ITPR3.
+
+The leading pair's interquartile range (0.773 – 0.806) does not overlap either other pair's (highest upper quartile 0.761), so the ranking is not an artefact of a few close pairs — it holds across the middle half of every comparison. It is still not a phylogenetic estimate.
+
+The margin is large enough to be worth carrying into S7 as a hypothesis to test, and small enough that the AU test is what settles it.
+
+### 4.3 The cyclostome trio, previewed
+
+Every cyclostome in this set carries three ITPR loci, and the sweep's ITPR1 bait won all of them (§1.2), so nothing before now could say which locus is which. The alignment can at least ask the question: is each locus closest to a *different* vertebrate paralog — what 1:1 orthology from 2R would look like — or are they all equidistant, which is what a cyclostome-specific expansion would look like?
+
+| locus | ITPR1 | ITPR2 | ITPR3 | nearest | margin over 2nd |
+|---|---|---|---|---|---|
+| `Myxine glutinosa` NC_136272.1:86116883-8 | 0.732 | 0.716 | 0.679 | **ITPR1** | +0.015 |
+| `Myxine glutinosa` NC_136264.1:122839381- | 0.777 | 0.734 | 0.698 | **ITPR1** | +0.043 |
+| `Myxine glutinosa` NC_136261.1:297520938- | 0.791 | 0.751 | 0.706 | **ITPR1** | +0.040 |
+| `Petromyzon marinus` A0AAJ7U4X1 | 0.849 | 0.779 | 0.726 | **ITPR1** | +0.069 |
+| `Petromyzon marinus` A0ACM8BRT5 | 0.823 | 0.774 | 0.724 | **ITPR1** | +0.049 |
+| `Petromyzon marinus` A0ACM8C056 | 0.779 | 0.744 | 0.711 | **ITPR1** | +0.036 |
+
+All 6 loci fall nearest the same group (ITPR1). On identity alone the three copies are not separable into ITPR1/2/3, which is what a lineage-specific expansion looks like — and equally what three fast-evolving 1:1 orthologs would look like at this depth. **S7's tree and S8's synteny are what distinguish them**; this table says only that the easy answer is not available.
+
+**The control that table needs.** Leaning towards one paralog could be a fact about the cyclostomes or a fact about the metric — ITPR1 may simply be the slowest-evolving of the three, in which case everything deep is nearest it. The same statistic over the groups that are certainly *not* vertebrate paralogs says what no signal looks like here:
+
+| group | n | nearest paralog | median margin |
+|---|---|---|---|
+| invert_metazoa | 47 | ITPR1 31, ITPR2 11, ITPR3 5 | 0.007 |
+| protist | 19 | ITPR1 12, ITPR2 5, ITPR3 2 | 0.001 |
+| RYR | 6 | ITPR2 4, ITPR1 2 | 0.002 |
+| **cyclostome loci** | 6 | ITPR1 6 | **0.043** |
+
+The non-vertebrate groups do lean towards ITPR1 more often than chance, but at a median margin of 0.007 — no signal. The cyclostome margin is 6× that. So the lean is a fact about these loci and not an artefact of ITPR1 being the conserved paralog: **the three cyclostome copies are genuinely closer to ITPR1 than to ITPR2 or ITPR3**. That is what a cyclostome-specific expansion from an ITPR1-like ancestor would produce; it is also what 1:1 orthologs would produce if ITPR2 and ITPR3 diverged after the cyclostome split. S7 separates those; S6 can only say the signal is real.
+
+### 4.4 How much of the trimmed alignment each tip actually carries
+
+Median coverage **0.96**; 1 of 134 tips cover less than half the trimmed alignment. A tip below half is not wrong, but it contributes gaps to every column the tree is inferred from, so it is named here rather than left inside a median.
+
+| group | n | median coverage | lowest |
+|---|---|---|---|
+| ITPR1 | 15 | 0.98 | 0.96 |
+| ITPR2 | 11 | 0.98 | 0.97 |
+| ITPR3 | 18 | 0.97 | 0.96 |
+| vertebrate_basal | 13 | 0.98 | 0.78 |
+| invert_metazoa | 47 | 0.94 | 0.30 |
+| plant | 3 | 0.89 | 0.71 |
+| protist | 19 | 0.88 | 0.85 |
+| fungi | 2 | 0.88 | 0.88 |
+| RYR | 6 | 0.87 | 0.87 |
+
+Lowest eight tips:
+
+| tip | group | coverage |
+|---|---|---|
+| `invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861` | invert_metazoa | 0.30 |
+| `invert_metazoa_Intoshia_linei_GCA_001642005.1_copy1_548` | invert_metazoa | 0.54 |
+| `invert_metazoa_Bugula_neritina_Brown_bryozoan_Sertula_A0A7J7J401` | invert_metazoa | 0.57 |
+| `invert_metazoa_Tubiluchus_corallicola_GCA_030141605.1_copy1_290621` | invert_metazoa | 0.61 |
+| `plant_Tetrabaena_socialis_A0A2J8AAQ9` | plant | 0.71 |
+| `vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401RNU3` | vertebrate_basal | 0.78 |
+| `invert_metazoa_Dysidea_avara_GCF_963678975.1_copy6_5305343` | invert_metazoa | 0.82 |
+| `invert_metazoa_Dysidea_avara_GCF_963678975.1_copy2_7972063` | invert_metazoa | 0.84 |
+
+### 4.5 Why both identity matrices are committed
+
+`identity_covered.tsv` scores identity over mutually covered columns only; `identity_classic.tsv` counts a gap as a mismatch. For a set that deliberately contains fragments and a ~5,000 aa outgroup, those are different measurements, and the difference is not small. The largest divergences:
+
+| pair | covered | classic | Δ |
+|---|---|---|---|
+| `invert_metazoa_Epiperipatus_broadwayi_GCA_028023455.1_copy1_8600421` × `invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861` | 0.59 | 0.16 | +0.43 |
+| `invert_metazoa_Lingula_anatina_Brachiopod_Lingula_ung_A0A1S3JYY5` × `invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861` | 0.58 | 0.16 | +0.42 |
+| `invert_metazoa_Branchiostoma_lanceolatum_Common_lance_A0A8K0A0Y4` × `invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861` | 0.61 | 0.19 | +0.42 |
+| `invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861` × `invert_metazoa_Tubiluchus_corallicola_GCA_030141605.1_copy1_290621` | 0.55 | 0.14 | +0.41 |
+| `invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861` × `invert_metazoa_Patiria_pectinifera_Starfish_Asterina__Q8WSR4` | 0.59 | 0.18 | +0.41 |
+| `invert_metazoa_Brachionus_calyciflorus_A0A813MP72` × `invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861` | 0.59 | 0.18 | +0.41 |
+| `invert_metazoa_Littorina_saxatilis_A0AAN9BAK1` × `invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861` | 0.59 | 0.18 | +0.41 |
+| `ITPR2_Gallus_gallus_Chicken_F1P1X4` × `invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861` | 0.59 | 0.18 | +0.41 |
+
+Every identity quoted in this report is the covered-only one. The classic matrix is committed beside it so a later task can see what a gap-counting metric would have said instead.
+
+### 4.6 Where the family is conserved
+
+Over the 1,790 trimmed columns, mean conservation **0.551**, with **81 columns (4.5 %) at or above 0.9** — invariant or nearly so across an alignment that spans vertebrates, invertebrates, plants, protists, fungi and the sister family.
+
+Conservation here is 1 − normalised Shannon entropy over the column, **counting a gap as a character** (`src/analysis/evolution.py`). On a trimmed alignment that is the right convention — a column half of the tips do not have is less conserved across the family, not more — but it means the profile is not comparable to one computed over residues only.
+
+`figures/msa_conservation.png` maps human ITPR1's Pfam architecture onto this profile **through the alignment** — the domain bands are drawn where the alignment put those residues, by walking the human row and counting ungapped positions, not by scaling residue coordinates onto column coordinates.
+
+### 4.7 What is left for the tree to work with
+
+trimAl `-automated1` is a heuristic, and a percentage of columns kept says nothing about whether the *informative* ones survived. Counted on the trimmed alignment, by the same definition IQ-TREE reports (a column is parsimony-informative when at least two residues each appear at least twice):
+
+| column class | n | % of trimmed |
+|---|---|---|
+| constant | 23 | 1.3 % |
+| variable uninformative | 37 | 2.1 % |
+| parsimony informative | 1,730 | 96.6 % |
+| all gap or X | 0 | 0.0 % |
+
+**96.6 % of the trimmed alignment is parsimony-informative** — 1,730 columns. That is the number S7's support values are estimated from, and the number to quote if a node's bootstrap is questioned.
+
+## 5. Caveats
+
+- **The paralog label on a non-vertebrate tip is annotation transfer, not descent.** ITPR1/2/3 are a 2R product. Four representatives outside the vertebrates carry a type number in their UniProt gene symbol or protein name; the audit table keeps that in `paralog` with `paralog_source`, and the figure group is the taxonomic grade regardless. Colouring such a tip as a vertebrate paralog would assert the thing S7 is being run to test.
+- **A novel model's group is its bait's hypothesis, not a result.** The R7 tips are loci no database annotates; their ITPR1/2/3 group comes from which bait won them in the S5 sweep, recorded as `paralog_source = s5_cell`. Where that attribution is constant across a clade's loci it is not used at all (the cyclostome grade, §1.2). Where it is used, the tree is what tests it — that is the question those tips are in the alignment to ask.
+- **Coverage is not evidence of quality.** A short tip covers less of the alignment; that is what short means. Whether a short tip is a real short gene or a broken model is S15's question, not this one's.
+- **The 3R pairs are in by rule, and they are a stress test.** Two teleost species contribute both `itprXa` and `itprXb`. If the tree does not recover them as sisters, the naming is wrong or the alignment is — either way S7 finds out rather than S6 assuming.
+- **The RyR outgroup is six sequences against 120.** It roots the tree; it is not a sample of the ryanodine receptors, and no statement about RyR evolution can be read off this alignment.
+- **4 tips are below the family's own length band**, admitted under the architecture-exception floor so their clade has a tip at all. They are listed in §1.2 and flagged `short_exception` in `representatives.tsv`.
+
+## 6. Figures
+
+![msa_identity_heatmap](figures/msa_identity_heatmap.png)
+
+*Pairwise identity over mutually covered columns, ordered by group. The block structure is the result: the three vertebrate paralogs are tight blocks, the non-vertebrate grade is not a block at all, and the RyR outgroup is a uniformly dark band against everything.*
+
+![msa_conservation](figures/msa_conservation.png)
+
+*Per-column conservation of the trimmed alignment with human ITPR1's Pfam architecture mapped through the alignment onto it.*
+
+![msa_coverage](figures/msa_coverage.png)
+
+*Per-sequence coverage of the trimmed alignment by group, bar at the group median — which tips are fragments and which groups they are in.*
+
+![msa_group_identity](figures/msa_group_identity.png)
+
+*Left: mean between-paralog identity with its interquartile range, the alignment's preview of S7's sister question. Right: mean identity between every pair of groups.*
 

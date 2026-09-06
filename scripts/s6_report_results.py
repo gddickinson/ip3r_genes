@@ -188,12 +188,28 @@ def _section_sister_preview(table, num, idx, mean_between, cov, labels,
          "is reported as a preview with the ranking's own margin, and "
          "**S7's AU test over the three rooted topologies is the answer**.",
          ""]
-    L += table(["pair", "mean identity (covered)", "n pairs"],
+    iqr = {}
+    for a, b in pairs:
+        vals = sorted(cov[i][j] for i in idx[a] for j in idx[b])
+        iqr[(a, b)] = (vals[len(vals) // 4], vals[3 * len(vals) // 4])
+    L += table(["pair", "mean identity (covered)", "interquartile range",
+                "n pairs"],
                [[f"{a} × {b}", f"{v:.3f}",
+                 f"{iqr[(a, b)][0]:.3f} – {iqr[(a, b)][1]:.3f}",
                  len(idx[a]) * len(idx[b])] for v, a, b in scored])
     gap = lead[0] - second[0]
+    lead_lo = iqr[(lead[1], lead[2])][0]
+    others_hi = max(iqr[(a, b)][1] for a, b in pairs
+                    if (a, b) != (lead[1], lead[2]))
     L += [f"**{lead[1]} × {lead[2]} leads by {gap:.3f}** over "
-          f"{second[1]} × {second[2]}. ", ""]
+          f"{second[1]} × {second[2]}.", ""]
+    if lead_lo > others_hi:
+        L += [f"The leading pair's interquartile range "
+              f"({lead_lo:.3f} – {iqr[(lead[1], lead[2])][1]:.3f}) does not "
+              f"overlap either other pair's (highest upper quartile "
+              f"{others_hi:.3f}), so the ranking is not an artefact of a few "
+              f"close pairs — it holds across the middle half of every "
+              f"comparison. It is still not a phylogenetic estimate.", ""]
     if gap < 0.02:
         L += ["That margin is inside the noise of a mean over hundreds of "
               "pairs of unequal-rate sequences; the alignment does not "
@@ -231,6 +247,27 @@ def _section_cyclostome(table, num, labels, cov, meta, spec, idx) -> list[str]:
                     f"{meta[l]['accession'].split('|')[-1][:22]}",
                     *[f"{means[g]:.3f}" for g in trio],
                     f"**{best}**", f"{rest[0] - rest[1]:+.3f}"])
+    # The control this table needs: is "nearest ITPR1" a fact about the
+    # cyclostomes, or about the metric? Every deep group is scored the same
+    # way, so the same statistic over the non-vertebrate grades says what a
+    # no-signal answer looks like on this alignment.
+    baseline = {}
+    for g in ("invert_metazoa", "protist", "RYR"):
+        if g not in idx:
+            continue
+        counts, margins = {}, []
+        for i in idx[g]:
+            means = {p: sum(cov[i][j] for j in idx[p]) / len(idx[p])
+                     for p in trio}
+            s = sorted(means.values(), reverse=True)
+            counts[max(means, key=means.get)] = counts.get(
+                max(means, key=means.get), 0) + 1
+            margins.append(s[0] - s[1])
+        margins.sort()
+        baseline[g] = (len(margins), counts, margins[len(margins) // 2])
+    cyc_margins = sorted(float(r[-1]) for r in out)
+    cyc_med = cyc_margins[len(cyc_margins) // 2]
+
     L = ["### § The cyclostome trio, previewed", "",
          "Every cyclostome in this set carries three ITPR loci, and the "
          "sweep's ITPR1 bait won all of them (§1.2), so nothing before now "
@@ -258,6 +295,42 @@ def _section_cyclostome(table, num, labels, cov, meta, spec, idx) -> list[str]:
               f"this depth. **S7's tree and S8's synteny are what "
               f"distinguish them**; this table says only that the easy "
               f"answer is not available.", ""]
+    if baseline:
+        L += ["**The control that table needs.** Leaning towards one "
+              "paralog could be a fact about the cyclostomes or a fact "
+              "about the metric — ITPR1 may simply be the slowest-evolving "
+              "of the three, in which case everything deep is nearest it. "
+              "The same statistic over the groups that are certainly *not* "
+              "vertebrate paralogs says what no signal looks like here:",
+              ""]
+        L += table(["group", "n", "nearest paralog", "median margin"],
+                   [[g, n, ", ".join(f"{k} {v}" for k, v in
+                                     sorted(c.items(), key=lambda kv: -kv[1])),
+                     f"{m:.3f}"] for g, (n, c, m) in baseline.items()]
+                   + [["**cyclostome loci**", len(out), "ITPR1 "
+                       f"{best_counts.get('ITPR1', 0)}", f"**{cyc_med:.3f}**"]])
+        worst = max(m for _, _, m in baseline.values())
+        if cyc_med > 3 * worst:
+            L += [f"The non-vertebrate groups do lean towards ITPR1 more "
+                  f"often than chance, but at a median margin of "
+                  f"{worst:.3f} — no signal. The cyclostome margin is "
+                  f"{cyc_med / worst:.0f}× that. So the lean is a fact "
+                  f"about these loci and not an artefact of ITPR1 being the "
+                  f"conserved paralog: **the three cyclostome copies are "
+                  f"genuinely closer to ITPR1 than to ITPR2 or ITPR3**. "
+                  f"That is what a "
+                  f"cyclostome-specific expansion from an ITPR1-like "
+                  f"ancestor would produce; it is also what 1:1 orthologs "
+                  f"would produce if ITPR2 and ITPR3 diverged after the "
+                  f"cyclostome split. S7 separates those; S6 can only say "
+                  f"the signal is real.", ""]
+        else:
+            L += [f"The non-vertebrate groups lean the same way at a median "
+                  f"margin of {worst:.3f} against the cyclostomes' "
+                  f"{cyc_med:.3f}. The lean is therefore a property of the "
+                  f"metric — ITPR1 is the paralog everything deep is "
+                  f"nearest — and carries no information about the "
+                  f"cyclostome loci specifically.", ""]
     return L
 
 
@@ -333,6 +406,12 @@ def _section_conservation(load, load_json, table, num, stats) -> list[str]:
          f"({100 * hi / n:.1f} %) at or above 0.9** — invariant or nearly "
          f"so across an alignment that spans vertebrates, invertebrates, "
          f"plants, protists, fungi and the sister family.", "",
+         "Conservation here is 1 − normalised Shannon entropy over the "
+         "column, **counting a gap as a character** "
+         "(`src/analysis/evolution.py`). On a trimmed alignment that is the "
+         "right convention — a column half of the tips do not have is less "
+         "conserved across the family, not more — but it means the profile "
+         "is not comparable to one computed over residues only.", "",
          "`figures/msa_conservation.png` maps human ITPR1's Pfam "
          "architecture onto this profile **through the alignment** — the "
          "domain bands are drawn where the alignment put those residues, "

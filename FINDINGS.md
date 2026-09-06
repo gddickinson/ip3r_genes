@@ -961,3 +961,75 @@ list of names was short; the model was right. We have left the disagreement on
 the record rather than quietly fixing the list, because a name that matches
 "IPR1" also matches every InterPro accession number in existence, and a fix
 that creates a thousand new errors is not a fix.
+
+---
+
+## 2026-09-06 — Lampreys have three of them, and we cannot yet say which
+
+*(from S6, the alignment every later result stands on)*
+
+The three human IP₃ receptors are supposed to come from the two rounds of
+whole-genome duplication that happened at the base of the vertebrates. If
+that is right, an animal that branched off *before* those duplications
+should have one receptor, and everything after them should have three.
+
+Lampreys and hagfishes are the animals that sit closest to that boundary.
+They have **three**.
+
+That was not the surprise. The surprise was that our own search cannot tell
+them apart. Every one of the six loci we found — three in the sea lamprey,
+three in the hagfish — is matched best by the same reference gene, human
+ITPR1. Not one of them looks like an ITPR2 or an ITPR3. Six for six.
+
+That could mean two very different things. Either the lamprey's three copies
+are the same three genes we have, and the three simply have not diverged as
+far in that lineage; or the lamprey duplicated its single ancestral receptor
+on its own, separately from us, and the resemblance to three-ness is a
+coincidence of counting. The first would confirm the textbook story. The
+second would mean the textbook story rests on a coincidence.
+
+We checked the obvious objection first: perhaps ITPR1 is just the most
+conserved of the three, so *everything* distantly related looks most like
+it. That would make the result meaningless. So we ran the same measurement
+over animals that certainly do not have vertebrate paralogues — insects,
+molluscs, worms, amoebae, algae — and over the ryanodine receptors. They do
+drift towards ITPR1 slightly more often than chance, but by a margin of
+about seven parts in a thousand: no signal at all. The lamprey and hagfish
+margin is six times larger. The lean is real.
+
+So the question is genuinely open, and it is now sharp enough to answer. The
+tree we build next, and the gene-neighbourhood evidence after it, are what
+separate the two stories. *(pending: S7 for the tree, S8 for the synteny)*
+
+Two smaller things came out of the same work.
+
+**Which two of the three are closest relatives** — a question the published
+literature has never settled with a proper rooted analysis — has a first
+answer from the alignment: **ITPR1 and ITPR2**, and not narrowly. Across
+every one of the 165 comparisons between them, they are more similar to each
+other than either is to ITPR3, and the middle half of those comparisons does
+not overlap the middle half of the other two pairings. This is a strong
+hypothesis, not yet a result: similarity is not ancestry, and the formal
+test comes with the tree. *(pending: S7)*
+
+**Some databases have put a vertebrate gene number on an amoeba.** Four
+records outside the vertebrates are labelled "receptor type 2" or ITPR1 —
+in a pond alga, an amoeba, a lancelet and a sea squirt. None of those
+animals has vertebrate paralogues to be a type 2 *of*; the number has been
+copied across from a human entry by automatic annotation. We have kept the
+labels visible in our own tables rather than deleting them, and grouped
+those sequences by what they actually are. It is a small thing, but it is
+the same failure mode as the unnamed genes and the mis-typed pseudogenes:
+a database asserting more than it knows. *(pending: S18, the annotation
+audit)*
+
+And one methodological note worth recording, because it nearly became a
+wrong figure. When you cut the poorly-aligned columns out of an alignment,
+the positions renumber. Our first version of the domain diagram forgot
+that, and drew the receptor's binding core, its pore and everything between
+at roughly two thirds of their true positions — with the pore itself pushed
+off the end of the plot entirely. Nothing in the numbers looked wrong; the
+picture just was. After the fix, the pore lands exactly on the single most
+conserved stretch of the whole alignment, across a billion years of
+evolution — which is where it should be, and which nothing in the
+correction knew to aim for.
