@@ -70,7 +70,6 @@ def _load_identity(path):
 
 
 def render(*, load, load_json, table, num, reps, stats) -> list[str]:
-    from pathlib import Path
     import s6_rep_spec as spec
     from s6_lib import MSA_DIR
 
@@ -264,6 +263,14 @@ def _section_caveats(load_json, spec) -> list[str]:
          "the taxonomic grade regardless. Colouring such a tip as a "
          "vertebrate paralog would assert the thing S7 is being run to "
          "test.",
+         "- **A novel model's group is its bait's hypothesis, not a "
+         "result.** The R7 tips are loci no database annotates; their "
+         "ITPR1/2/3 group comes from which bait won them in the S5 sweep, "
+         "recorded as `paralog_source = s5_cell`. Where that attribution "
+         "is constant across a clade's loci it is not used at all (the "
+         "cyclostome grade, §1.2). Where it is used, the tree is what "
+         "tests it — that is the question those tips are in the alignment "
+         "to ask.",
          "- **Coverage is not evidence of quality.** A short tip covers "
          "less of the alignment; that is what short means. Whether a short "
          "tip is a real short gene or a broken model is S15's question, not "

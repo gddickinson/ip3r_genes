@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import statistics
 import sys
 from collections import Counter, defaultdict
@@ -45,6 +46,12 @@ FIELDS = ["label", "accession", "rule", "cell", "group", "paralog",
           "source", "db_status", "genome_accession", "copy_index",
           "copy_number", "shape_note", "decided_by", "runner_up",
           "n_candidates", "seq_store", "seq_length", "x_count"]
+
+
+#: R2 — the teleost 3R co-ortholog naming convention. `paralog_of` has
+#: already reduced the symbol to `itpr[123][ab]?`, so this only asks
+#: whether the suffix is there.
+TELEOST_3R_SYMBOL = re.compile(r"^itpr[123][ab]$")
 
 
 def bait_ids() -> set[str]:
@@ -284,8 +291,8 @@ def select(rows: list[dict]) -> Picker:
         if src != "gene_symbol" or para not in spec.PARALOGS:
             continue
         sym = (r.get("gene") or "").lower()
-        if len(sym) == 6 and sym[-1] in "ab":          # itpr1a / itpr1b
-            pairs[(r["species"], para)][sym].append(r)
+        if TELEOST_3R_SYMBOL.match(sym):               # itpr1a / itpr1b
+            pairs[(binomial(r["species"]), para)][sym].append(r)
     ready = [(sp_para, d) for sp_para, d in pairs.items() if len(d) == 2]
     ready.sort(key=lambda kv: -max(
         as_float(r.get("itpr_score")) for v in kv[1].values() for r in v))

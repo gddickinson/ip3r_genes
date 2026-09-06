@@ -50,7 +50,7 @@ STATS = MSA_DIR / "align_stats.json"
 #: The brief allows `--auto` "if size forces it", and the choice must be
 #: recorded. L-INS-i is O(N^2) full pairwise DP before the progressive
 #: stage; at this family's ~2,800 aa subunit the practical ceiling on one
-#: thread is around here. 126 representatives is inside it.
+#: thread is around here; the set S6 selects is inside it.
 LINSI_MAX = 200
 
 
@@ -120,6 +120,18 @@ def align(stats: dict) -> dict:
     aln = read_fasta(ALN)
     if len(aln) != n:
         raise SystemExit(f"MAFFT returned {len(aln)} of {n} sequences")
+    # The alignment must be of *this* input, not of whatever was on disk
+    # when the run started. A long MAFFT and an edited selector overlap
+    # easily, and the failure is silent: `align_stats.json` would record
+    # the SHA-256 of a file the alignment was not built from, which is
+    # exactly the drift D24 exists to make visible.
+    drift = [k for k, v in aln.items()
+             if v.replace("-", "").upper() != reps.get(k, "").upper()]
+    if drift or set(aln) != set(reps):
+        raise SystemExit(
+            f"aln.fasta is not an alignment of the current "
+            f"representatives.fasta: {len(drift)} sequences differ, "
+            f"{len(set(aln) ^ set(reps))} labels differ. Re-run MAFFT.")
     bad = ragged(aln)
     if bad:
         raise SystemExit(f"alignment is ragged, lengths {bad} — MAFFT failed "
