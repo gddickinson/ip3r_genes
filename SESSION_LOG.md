@@ -1415,3 +1415,96 @@ absence claim.
 **Next.** S23c: resume the sweep, then `s23_calibrate_loci.py` → a `--redo`
 reclassify pass to apply the measured floor → ledger → figures → census v6 →
 report.
+
+---
+
+## 2026-09-06 (cont.) — S23c: the sweep completes, and the identity floor is retired
+
+The 194-genome sweep finished (**194/194, 0 failures, 100 Gbp**), which
+unblocked the whole downstream chain. What was meant to be a mechanical
+finish turned into the session's sharpest methodological result.
+
+### The calibration could not be done the way the brief asked
+
+The brief said to measure `MIN_LOCUS_IDENTITY` "against loci whose identity an
+assembly's own annotation confirms", as S5b did over 571 loci. Outside the
+vertebrates that evidence barely exists: of **917 recorded clusters, 21** sit
+on a gene whose name says anything — 10 name the family, 11 name something
+else. Most gene models here carry locus tags (*Chlamydomonas*'s receptor is
+`CHLRE_16g665450v5`; *Strongylocentrotus*'s is `LOC594527`).
+
+So a **second axis** was added: every recorded cluster's translated model
+scored against `itpr.hmm` / `ryr.hmm` (D23), re-derived from the archived
+miniprot GFFs so the calibration reruns offline. 226 profile-confirmed.
+
+### And then the measurement said the threshold does not work
+
+- **Identity does not separate.** Confirmed loci reach down to **0.193**;
+  contradicted ones reach up to **0.318**.
+- **Coverage is no better.** Youden J 0.710 against identity's 0.695. A draft
+  of the report claimed coverage separates where identity does not; the
+  measurement contradicted it and the claim was removed.
+- **S5b's inherited 0.40 would discard 87 confirmed loci, 56 of them complete
+  gene models** — a third of everything the sweep found.
+
+The reason is structural: with bands a whole phylum wide, a locus's identity
+to its nearest bait measures *how far away the nearest bait is*.
+
+**So identity was retired as a call gate** (set to the recording floor) and
+the **profile call** carries it — which is where this project puts every other
+family call (D14/D23). A retired threshold has to be validated against
+evidence the replacement does not share, so the gate was scored against the
+annotation axis: **10/10** on loci the assembly names for the family,
+declining **10 of 11** it names for something else. → **D29**.
+
+The one exception is worth naming: *Emiliania huxleyi* gene **`IPR1`**, at
+1,008 bits over 95 % of its bait against 329 for `ryr.hmm`. `IPR1` is not in
+the family name list, so the annotation axis scored it as naming a different
+gene. On the evidence the name list is short, not the gate wrong — but `ipr1`
+was **not** added as a name substring, because it collides with every InterPro
+accession. It is reported as a conflict.
+
+### Three bugs, two of them pre-existing in shared code
+
+- `s3_assign.assign` crashed twice on a hit whose full-sequence bit score is
+  exactly 0.0 with no counterpart from the other profile: `winner` was picked
+  by score comparison and then used to subscript a record that is `None`.
+  Never fired in S3 or S5; fired immediately when the profiles were first run
+  over genomic gene models, where marginal alignments at or below 0 bits are
+  normal. The winner is now picked as a *record*. Ties still resolve to
+  `unassigned`, so no existing call changes.
+- The rescue HSP filter (S23a) read `h["start"]`/`h["end"]`, which
+  `parse_tblastn` does not produce. Replaced with S5's own
+  `filter_hsps_outside`.
+- **The control now requires a complete recovery**, symmetric with the family
+  call: a fragmentary control shows the search finds fragments, which is not
+  what an absence rests on. Admissibility is stated as an explicit set, not a
+  `startswith("controlled")` prefix test — which is exactly how the new
+  `controlled_partial` verdict would have been admitted silently.
+
+### Results
+
+**All 35 absence clades hold at assembly level, and all 35 are controlled.**
+Ascomycota 0/31, Streptophyta 0/25, Basidiomycota 0/17, Magnoliopsida 0/3,
+**Apicomplexa 0/3**, Microsporidia 0/2, and 29 more. **Zero genomes
+uncontrolled** — 115 `controlled_cross_kingdom`, 77 `controlled_by_target`, 1
+`controlled_partial`, 1 `no_control_bait` — against 1 of 14 uncontrolled in
+the pilot.
+
+**Copy number**, the deliverable: 0 in 116 genomes, 1 in 43, 2–6 in 32, then
+*Dysidea avara* 8, ***Stentor coeruleus* 13**, ***Macrostomum lignano* 18**.
+That answers S20a's open question — *Macrostomum*'s 62 database records
+resolve to **18 real genes** — and *Cymbomonas* to **3 copies from 2
+clusters**, the other one. D28's copy rule recovered **7 genes in 7 genomes**
+(174 against 167) that cluster-counting merges.
+
+**D14 held everywhere**: 189 of 195 graded loci have a family margin of 1.0,
+minimum 0.597, and **0 control loci were ever called ITPR**.
+
+Census v6: **18,065 rows** (+183 genomic models). 100 of them are
+`annotated_unnamed` — the dominant class outside the vertebrates, and the
+population S18 will want.
+
+**Next.** S6 — the alignment upgrade. Two things it inherits: copy number
+ranges 0–18, so a representative rule assuming one gene per species is wrong;
+and any rule stated in sequence identity has to be re-derived (D29).

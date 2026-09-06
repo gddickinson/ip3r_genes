@@ -271,7 +271,7 @@ Panel rebuilt 80 → 108 baits. → `results/s23_baits/control_profile_choice.ts
 
 ---
 
-## S23c — The full non-vertebrate sweep
+## S23c — The full non-vertebrate sweep  *(completed 2026-09-06)*
 
 **Goal.** Take the negative claims to genome level. A proteome absence is an
 annotation fact; only an assembly search makes it a biological one.
@@ -294,6 +294,17 @@ annotation fact; only an assembly search makes it a biological one.
 paths; the plant/fungal/apicomplexan absence claims are backed by assembly
 searches at a stated sensitivity, counting controlled genomes only; census v6
 and the four figures committed; the report renders at full-sweep scale.
+**All met.** 194/194, 0 failures; 35/35 absence clades hold and are
+controlled; 0 uncontrolled genomes; copy number 0-18; census v6 = 18,065 rows.
+
+**What it changed, and S6/S7 inherit.** Step 2 could not be done as written —
+the annotation axis is 21 of 917 clusters outside the vertebrates — so a
+second axis (the S3 profiles, D23) was added, and it showed that **no
+threshold on identity separates real genes from junk here** (confirmed reach
+down to 0.193, contradicted up to 0.318; the inherited 0.40 discards 87
+confirmed loci, 56 complete). Identity is retired as a call gate and the
+profile carries it (**D29**), validated 10/10 and 10-of-11 against the
+annotation axis.
 
 ---
 

@@ -86,26 +86,61 @@ def section_locus_calibration(A, table, cal: dict, spans: list[dict]) -> None:
       "every genome with a bait from its own class. Neither holds here — the "
       "bands are whole phyla and 13 bait slots are unfilled — so this sweep "
       f"**recorded** every cluster down to {cal.get('record_min_identity')} "
-      "and the call floor was measured afterwards from what it recorded. A "
-      "floor measured from the population it has already filtered is "
-      "circular; this one is not.\n")
+      "and the threshold was measured afterwards from what it recorded. A "
+      "threshold measured from the population it has already filtered is "
+      "circular; this one is not (D27).\n")
     A(f"Over {cal.get('genomes')} genomes the sweep recorded "
-      f"{cal.get('loci_recorded')} clusters: **{conf} whose identity the "
-      f"assembly's own annotation confirms** (a gene it names for this "
-      f"family), {counts.get('contradicted', 0)} it contradicts (the "
-      f"alignment's exons sit inside a differently-named gene), "
-      f"{counts.get('sister', 0)} on a gene named for a ryanodine receptor, "
-      f"and {counts.get('unnamed', 0) + counts.get('no_annotation', 0)} with "
-      "no informative annotation.\n")
-    A(f"**`call_min_identity` = {cal.get('call_min_identity'):.2f}.** "
+      f"{cal.get('loci_recorded')} clusters. Two evidence axes were used, and "
+      "the first is thin for a reason worth stating: **only "
+      f"{conf + counts.get('contradicted', 0) + counts.get('sister', 0)} of "
+      f"{cal.get('loci_recorded')} clusters sit on a gene whose name says "
+      "anything at all.** Outside the vertebrates most gene models carry "
+      "locus tags — *Chlamydomonas* files its receptor as "
+      "`CHLRE_16g665450v5`, *Strongylocentrotus* as `LOC594527` — so the "
+      "evidence S5b calibrated 571 loci against does not exist at that depth "
+      "in this scope.\n")
+    A(table(["evidence axis", "confirmed", "contradicted"],
+            [["the assembly's own annotation", conf,
+              counts.get("contradicted", 0) + counts.get("sister", 0)],
+             ["the S3 profiles (itpr.hmm / ryr.hmm)",
+              counts.get("profile_confirmed", 0),
+              counts.get("profile_contradicted", 0)],
+             ["**pooled**", counts.get("confirmed_pooled", 0),
+              counts.get("contradicted_pooled", 0)]]))
+
+    seps = cal.get("separation") or {}
+    if seps:
+        A("\n**No threshold on either statistic separates them.**\n")
+        A(table(["statistic", "confirmed reach down to", "contradicted up to",
+                 "separates?"],
+                [[k, f"{s.get('confirmed_min', 0):.3f}",
+                  f"{s.get('contradicted_max', 0):.3f}",
+                  "yes" if s.get("separates") else "**no — they overlap**"]
+                 for k, s in seps.items()]))
+    A(f"\n**`call_min_identity` = {cal.get('call_min_identity'):.2f}.** "
       f"{cal.get('call_min_identity_why')}\n")
+    gate = cal.get("profile_gate_vs_annotation") or {}
+    if gate:
+        A(f"\n**The gate that replaces it, scored against the one axis it does "
+          f"not share.** {gate.get('why')}.\n")
+        for a in gate.get("admitted", []):
+            A(f"The one exception is *{a['organism']}* gene `{a['gene']}` — "
+              f"{a['coverage']} of its bait at {a['itpr_score']} bits against "
+              f"{a['ryr_score']} for `ryr.hmm`. `IPR1` is not in the family "
+              "name list, so the annotation axis scored it as naming a "
+              "different gene; on the evidence it is more likely the name "
+              "list is short than that the gate is wrong. It is reported as a "
+              "conflict rather than reconciled — adding `ipr1` as a name "
+              "substring would collide with every InterPro accession.\n")
     scan = cal.get("floor_scan") or []
     if scan:
+        A("\nWhat each candidate floor would have cost, for the record:\n")
         A(table(["floor", "confirmed kept", "confirmed lost",
-                 "contradicted kept", "unannotated kept"],
+                 "contradicted kept", "no evidence either way"],
                 [[f"{s['floor']:.2f}", s["confirmed_kept"],
                   s["confirmed_lost"], s["contradicted_kept"],
-                  s["unannotated_kept"]] for s in scan]))
+                  s.get("no_evidence_kept", s.get("unannotated_kept", ""))]
+                 for s in scan]))
     misses = cal.get("near_miss_no_locus") or []
     A(f"\n**{len(misses)} `no_locus` genome(s) carry a cluster within 0.05 of "
       "the floor.** The brief asked for this number explicitly: a genome "

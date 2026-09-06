@@ -1,6 +1,6 @@
 rank	clade	swept_proteomes	genomes_swept	genomes_controlled	genomes_with_full_itpr	genomes_with_trace_only	verdict
 phylum	Ascomycota	1034	31	31	0	0	absence holds at assembly level
-phylum	Streptophyta	384	6	6	0	1	absence holds at assembly level
+phylum	Streptophyta	384	25	25	0	2	absence holds at assembly level
 phylum	Basidiomycota	319	17	17	0	0	absence holds at assembly level
 phylum	Apicomplexa	60	3	3	0	0	absence holds at assembly level
 phylum	Kickxellomycota	35	1	1	0	0	absence holds at assembly level
@@ -9,7 +9,7 @@ phylum	Glomeromycota	27	1	1	0	0	absence holds at assembly level
 phylum	Mortierellomycota	18	1	1	0	0	absence holds at assembly level
 phylum	Bacillariophyta	16	1	1	0	0	absence holds at assembly level
 phylum	Rhodophyta	12	1	1	0	0	absence holds at assembly level
-class	Magnoliopsida	367	1	1	0	0	absence holds at assembly level
+class	Magnoliopsida	367	3	3	0	0	absence holds at assembly level
 class	Sordariomycetes	355	2	2	0	0	absence holds at assembly level
 class	Eurotiomycetes	235	1	1	0	0	absence holds at assembly level
 class	Agaricomycetes	194	1	1	0	0	absence holds at assembly level
@@ -32,5 +32,5 @@ class	Microbotryomycetes	13	1	1	0	0	absence holds at assembly level
 class	Lecanoromycetes	13	1	1	0	0	absence holds at assembly level
 class	Pezizomycetes	12	1	1	0	0	absence holds at assembly level
 class	Orbiliomycetes	12	1	1	0	0	absence holds at assembly level
-class	Cestoda	11	0	0	0	0	not yet swept
+class	Cestoda	11	1	1	0	0	absence holds at assembly level
 class	Lipomycetes	10	1	1	0	0	absence holds at assembly level

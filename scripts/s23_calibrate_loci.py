@@ -16,6 +16,24 @@ annotation** establishes, which is evidence the alignment score did not
 produce. A floor measured from the population it filters would be circular;
 this one is not.
 
+**The annotation axis is too thin here, and that is itself a result.** Of 917
+recorded clusters across the 194 genomes, **21** sit on a gene whose name says
+anything at all: 10 name the family, 11 name something else. Outside the
+vertebrates most gene models carry locus tags — *Chlamydomonas* files its
+receptor as `CHLRE_16g665450v5`, *Strongylocentrotus* as `LOC594527` — so the
+evidence S5b calibrated 571 loci against does not exist at that depth in this
+scope. The floor is therefore measured against a **second instrument** as
+well: every recorded locus's translated model is scored with `itpr.hmm` and
+`ryr.hmm` under S3's margin (D23), re-derived from the archived miniprot GFFs
+so the calibration reruns offline.
+
+That second axis is a different algorithm on different data — spliced
+DNA-protein alignment against one bait versus a ~4,900-state profile built
+from ~30 seeds — but it is **not independent of the family definition** the
+way an assembly's own annotation is, and the report says so rather than
+presenting the two as equivalent. Both are reported separately as well as
+pooled, so a reader can see what each one alone would have given.
+
 It also answers the question the brief asked directly: how many `no_locus`
 genomes have a cluster sitting just under the floor? A genome called absent
 because its best evidence scored 0.39 is a different claim from one whose best
@@ -57,7 +75,11 @@ sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
 
 from src.utils.data_root import require_data_root          # noqa: E402
+import s23_bait_spec as spec                               # noqa: E402
 import s23_calibration as cal                              # noqa: E402
+import s5_sweep_lib as lib                                 # noqa: E402
+from s23_run_sweep import ensure_bait_files                # noqa: E402
+from s5_census_v4 import score_models                      # noqa: E402
 from s5_classify import name_family                        # noqa: E402
 
 OUT_DIR = PROJECT_ROOT / "results" / "s23_scope"
@@ -157,15 +179,29 @@ def _evidence(locus: dict) -> tuple[str, str]:
     return "unnamed", (good[0].get("name") or "")
 
 
-def collect(summaries: list[dict]) -> list[dict]:
+def collect(summaries: list[dict],
+            profiles: dict[str, dict] | None = None) -> list[dict]:
     """Every recorded locus, called or not, with its evidence class."""
+    profiles = profiles or {}
     rows = []
     for s in summaries:
         for called, pool in ((1, s.get("loci") or []),
-                             (0, s.get("below_floor_loci") or [])):
+                             (0, s.get("below_gate_loci")
+                                 or s.get("below_floor_loci") or [])):
             for d in pool:
                 klass, gene = _evidence(d)
+                key = (f"{s['accession']}|"
+                       f"{_addr(d['contig'], d['start'], d['end'])}")
+                v = profiles.get(key) or {}
+                pcall = v.get("profile_call", "")
                 rows.append({
+                    "profile_call": pcall,
+                    "profile_confidence": v.get("profile_confidence", ""),
+                    "itpr_score": v.get("itpr_score", ""),
+                    "ryr_score": v.get("ryr_score", ""),
+                    "profile_evidence": ("profile_confirmed" if pcall == "ITPR"
+                                         else "profile_contradicted"
+                                         if pcall == "RYR" else ""),
                     "accession": s["accession"], "organism": s["organism"],
                     "group": s.get("group", ""), "phylum": s.get("phylum", ""),
                     "called": called, "identity": d.get("identity", 0.0),
@@ -181,11 +217,73 @@ def collect(summaries: list[dict]) -> list[dict]:
     return rows
 
 
+# ------------------------------------------------------------ the profiles
+
+def _addr(contig: str, start: int, end: int) -> str:
+    return f"{contig}:{start}-{end}"
+
+
+def profile_evidence(summaries: list[dict]) -> dict[str, dict]:
+    """Score every recorded locus's model with itpr.hmm / ryr.hmm.
+
+    The loci are re-derived from each genome's **archived** `miniprot.gff`,
+    the same discipline S2 and S3 apply to their raw output: the translations
+    exist only in that file, and being able to re-parse them offline is what
+    makes this calibration re-checkable without re-running the sweep.
+    """
+    root = require_data_root() / "s23_sweep"
+    _panel, _rescue, _seqs, meta = ensure_bait_files()
+    models: dict[str, str] = {}
+    for s in summaries:
+        gff = root / s["accession"] / "miniprot.gff"
+        if not gff.exists() or gff.stat().st_size == 0:
+            continue
+        alns = lib.parse_miniprot_gff(gff, meta)
+        loci = lib.filter_loci(lib.cluster_loci(alns),
+                              min_identity=cal.RECORD_MIN_IDENTITY)
+        for L in loci:
+            if L.family != spec.FAMILY_ITPR:
+                continue
+            best = L.best_of_family(spec.FAMILY_ITPR) or L.best
+            seq = (best.translation or "").replace("*", "")
+            if len(seq) < 60:
+                continue
+            models[f"{s['accession']}|{_addr(L.contig, L.start, L.end)}"] = seq
+    if not models:
+        return {}
+    return score_models(models)
+
+
 # --------------------------------------------------------------- the floor
 
+#: The two evidence axes, pooled. The annotation axis is the independent one
+#: and is nearly empty in this scope; the profile axis is a second instrument
+#: on the same alignment's translation. Pooled for the decision, reported
+#: separately as well, so what each one alone would have given stays visible.
+def is_confirmed(r: dict) -> bool:
+    return (r["evidence"] == "confirmed"
+            or r.get("profile_evidence") == "profile_confirmed")
+
+
+def is_contradicted(r: dict) -> bool:
+    """Annotation names a different gene, or the profiles call it RyR.
+
+    A locus the profiles decline entirely is **not** counted here: declining
+    is what the D22 length gate does to a short scrap, and a scrap is absence
+    of evidence rather than evidence of junk.
+    """
+    if r["evidence"] in ("contradicted", "sister"):
+        return True
+    if r.get("profile_evidence") == "profile_contradicted":
+        return True
+    # An annotation-contradicted locus stays contradicted even if the
+    # profiles were silent about it.
+    return False
+
+
 def floor_scan(rows: list[dict]) -> list[dict]:
-    conf = [r for r in rows if r["evidence"] == "confirmed"]
-    contra = [r for r in rows if r["evidence"] in ("contradicted", "sister")]
+    conf = [r for r in rows if is_confirmed(r)]
+    contra = [r for r in rows if is_contradicted(r)]
     out = []
     for f in CANDIDATE_FLOORS:
         out.append({
@@ -193,48 +291,122 @@ def floor_scan(rows: list[dict]) -> list[dict]:
             "confirmed_kept": sum(1 for r in conf if r["identity"] >= f),
             "confirmed_lost": sum(1 for r in conf if r["identity"] < f),
             "contradicted_kept": sum(1 for r in contra if r["identity"] >= f),
-            "unannotated_kept": sum(1 for r in rows
-                                    if r["evidence"] in ("no_annotation",
-                                                         "unnamed")
+            "no_evidence_kept": sum(1 for r in rows
+                                    if not is_confirmed(r)
+                                    and not is_contradicted(r)
                                     and r["identity"] >= f)})
     return out
 
 
-def choose_floor(rows: list[dict], scan: list[dict]) -> tuple[float, str]:
-    """The widest band that keeps every confirmed locus and no contradicted one.
+def separation(rows: list[dict], key: str) -> dict:
+    """How well one statistic separates confirmed loci from contradicted ones.
 
-    Reported as the *midpoint* of that band, exactly as S5b did, so the value
-    is not sitting on either population's edge. Where no such band exists the
-    inherited value is kept and the reason says so — a threshold that the data
-    cannot separate must not be presented as measured.
+    Reported for **identity** and for **coverage**, because the question S23b
+    has to answer is not only "what floor" but "on which statistic". S5b never
+    had to ask: in the vertebrates identity separated with a wide empty gap.
     """
-    conf = sorted(r["identity"] for r in rows if r["evidence"] == "confirmed")
-    contra = sorted(r["identity"] for r in rows
-                    if r["evidence"] in ("contradicted", "sister"))
+    conf = sorted(float(r[key]) for r in rows if is_confirmed(r))
+    contra = sorted(float(r[key]) for r in rows if is_contradicted(r))
+    if not conf or not contra:
+        return {"statistic": key, "n_confirmed": len(conf),
+                "n_contradicted": len(contra), "separates": False,
+                "why": "one of the two populations is empty"}
+    q = lambda v, f: v[min(len(v) - 1, int(f * len(v)))]        # noqa: E731
+    overlap = max(contra) >= min(conf)
+    return {
+        "statistic": key, "n_confirmed": len(conf),
+        "n_contradicted": len(contra),
+        "confirmed_min": round(conf[0], 4),
+        "confirmed_q1": round(q(conf, 0.25), 4),
+        "confirmed_median": round(q(conf, 0.5), 4),
+        "contradicted_median": round(q(contra, 0.5), 4),
+        "contradicted_q3": round(q(contra, 0.75), 4),
+        "contradicted_max": round(contra[-1], 4),
+        "separates": not overlap,
+        "why": (f"confirmed loci reach down to {conf[0]:.3f} and contradicted "
+                f"ones up to {contra[-1]:.3f}"
+                + (" — the two populations overlap, so no threshold on this "
+                   "statistic separates them" if overlap else
+                   " — a gap separates them")),
+    }
+
+
+def choose_floor(rows: list[dict], scan: list[dict]) -> tuple[float, str]:
+    """The identity a cluster must reach to be called, and why.
+
+    **This scope's answer is that identity is the wrong statistic**, and that
+    is a measurement rather than a preference. S5b's 0.40 came from a wide
+    empty gap in the vertebrates, where every genome has a bait from its own
+    class. Here the bands are whole phyla, so a real gene's identity to its
+    nearest bait is not a measure of whether it is a gene — it is a measure of
+    how far away the nearest bait happens to be. When the two populations
+    overlap, the floor is set at the recording floor (identity retired as a
+    call gate) and the report says which statistic does separate them instead.
+    """
+    conf = sorted(r["identity"] for r in rows if is_confirmed(r))
+    contra = sorted(r["identity"] for r in rows if is_contradicted(r))
     if not conf:
         return cal.INHERITED_CALL_MIN_IDENTITY, (
-            "no annotation-confirmed locus in the sweep, so this scope offers "
-            f"no measurement; S5b's {cal.INHERITED_CALL_MIN_IDENTITY:.2f} is "
-            "kept and is an inheritance, not a measurement")
-    lo_conf = conf[0]
-    hi_contra = max(contra) if contra else 0.0
-    if hi_contra >= lo_conf:
-        clean = [s for s in scan if s["confirmed_lost"] == 0]
-        best = min(clean, key=lambda s: s["contradicted_kept"]) if clean else None
-        keep = best["floor"] if best else cal.INHERITED_CALL_MIN_IDENTITY
-        return keep, (
-            f"the two populations overlap — confirmed loci reach down to "
-            f"{lo_conf:.3f} and annotation-contradicted ones up to "
-            f"{hi_contra:.3f} — so no floor separates them. {keep:.2f} is the "
-            "lowest floor that loses no confirmed locus; the "
-            f"{best['contradicted_kept'] if best else 0} contradicted loci it "
-            "keeps are reported rather than filtered")
-    mid = round((lo_conf + hi_contra) / 2, 2)
-    return mid, (
-        f"measured: {len(conf)} annotation-confirmed loci reach down to "
-        f"{lo_conf:.3f} and {len(contra)} annotation-contradicted ones top out "
-        f"at {hi_contra:.3f}; any floor between them separates the two, and "
-        f"{mid:.2f} is the midpoint of that gap")
+            "no confirmed locus in the sweep on either evidence axis, so this "
+            f"scope offers no measurement; S5b's "
+            f"{cal.INHERITED_CALL_MIN_IDENTITY:.2f} is kept and is an "
+            "inheritance, not a measurement")
+    lo_conf, hi_contra = conf[0], (max(contra) if contra else 0.0)
+    if hi_contra < lo_conf:
+        mid = round((lo_conf + hi_contra) / 2, 2)
+        return mid, (
+            f"measured: {len(conf)} confirmed loci reach down to "
+            f"{lo_conf:.3f} and {len(contra)} contradicted ones top out at "
+            f"{hi_contra:.3f}; {mid:.2f} is the midpoint of that gap")
+    lost_at_inherited = sum(1 for r in rows if is_confirmed(r)
+                            and r["identity"] < cal.INHERITED_CALL_MIN_IDENTITY)
+    full_lost = sum(1 for r in rows if is_confirmed(r)
+                    and r.get("grade") == "full"
+                    and r["identity"] < cal.INHERITED_CALL_MIN_IDENTITY)
+    return cal.RECORD_MIN_IDENTITY, (
+        f"**neither identity nor coverage separates the two populations in "
+        f"this scope.** {len(conf)} confirmed loci reach down to "
+        f"{lo_conf:.3f} on identity while {len(contra)} contradicted ones "
+        f"reach up to {hi_contra:.3f}, and the best achievable threshold on "
+        f"either statistic still discards a large part of the confirmed set "
+        f"(see `separation` in this file). S5b's inherited "
+        f"{cal.INHERITED_CALL_MIN_IDENTITY:.2f} would discard "
+        f"{lost_at_inherited} confirmed loci, {full_lost} of them **complete "
+        f"gene models**. Outside the vertebrates a locus's identity to its "
+        f"nearest bait measures how far away the nearest bait is — a whole "
+        f"phylum — not whether it is a gene. Identity is therefore retired as "
+        f"a call gate (set to the recording floor) and the **profile call** "
+        f"carries it (D14/D23), which is where this project puts every other "
+        f"family call. That gate is validated against the one axis it does "
+        f"not share: see `profile_gate_vs_annotation`")
+
+
+def profile_gate_audit(rows: list[dict]) -> dict:
+    """Score the profile gate against the assembly's own annotation.
+
+    The annotation axis is the only evidence here that the gate does not
+    share, so it is the only thing that can validate it. It is small — the
+    annotations outside the vertebrates mostly carry locus tags — and being
+    small is itself reported rather than smoothed over.
+    """
+    conf = [r for r in rows if r["evidence"] == "confirmed"]
+    contra = [r for r in rows if r["evidence"] in ("contradicted", "sister")]
+    tp = sum(1 for r in conf if r.get("profile_call") == "ITPR")
+    fp = sum(1 for r in contra if r.get("profile_call") == "ITPR")
+    return {
+        "annotation_confirmed": len(conf), "gate_agrees": tp,
+        "annotation_contradicted": len(contra), "gate_declines": len(contra) - fp,
+        "gate_admits": fp,
+        "admitted": [{"organism": r["organism"], "gene": r["annot_gene"],
+                      "identity": r["identity"], "coverage": r["coverage"],
+                      "itpr_score": r.get("itpr_score", ""),
+                      "ryr_score": r.get("ryr_score", "")}
+                     for r in contra if r.get("profile_call") == "ITPR"],
+        "why": (f"the profile gate agrees with {tp} of {len(conf)} loci the "
+                f"assembly's own annotation names for this family, and "
+                f"declines {len(contra) - fp} of {len(contra)} it names for "
+                f"something else"),
+    }
 
 
 def near_miss(rows: list[dict], floor: float, window: float = 0.05) -> list[dict]:
@@ -316,21 +488,32 @@ def main() -> int:
     summaries = load_summaries()
     if not summaries:
         raise SystemExit("no per-genome summaries under <data_root>/s23_sweep")
-    rows = collect(summaries)
+    print(f"{len(summaries)} genome(s); scoring every recorded locus against "
+          "itpr.hmm / ryr.hmm from the archived GFFs")
+    profiles = profile_evidence(summaries)
+    rows = collect(summaries, profiles)
     scan = floor_scan(rows)
     floor, why = choose_floor(rows, scan)
     misses = near_miss(rows, floor)
     spans = span_stats(rows)
+    seps = {k: separation(rows, k) for k in ("identity", "coverage")}
+    gate_audit = profile_gate_audit(rows)
     pairs, overlap, overlap_why = copy_overlap(summaries)
 
     counts = defaultdict(int)
     for r in rows:
         counts[r["evidence"]] += 1
+        if r.get("profile_evidence"):
+            counts[r["profile_evidence"]] += 1
+    counts["confirmed_pooled"] = sum(1 for r in rows if is_confirmed(r))
+    counts["contradicted_pooled"] = sum(1 for r in rows if is_contradicted(r))
 
     write_tsv(OUT_DIR / "locus_identity.tsv",
               ["accession", "organism", "group", "phylum", "called",
                "identity", "coverage", "grade", "evidence", "annot_gene",
-               "bait", "band", "status"], rows)
+               "profile_call", "profile_confidence", "itpr_score",
+               "ryr_score", "profile_evidence", "bait", "band", "status"],
+              rows)
     write_tsv(OUT_DIR / "locus_span.tsv",
               ["accession", "organism", "group", "called", "identity",
                "coverage", "span_bp", "cds_footprint_bp", "span_inflation",
@@ -340,7 +523,7 @@ def main() -> int:
               ["accession", "contig", "frac"], pairs)
     write_tsv(OUT_DIR / "identity_floor_scan.tsv",
               ["floor", "confirmed_kept", "confirmed_lost",
-               "contradicted_kept", "unannotated_kept"], scan)
+               "contradicted_kept", "no_evidence_kept"], scan)
 
     out = {
         "genomes": len(summaries), "loci_recorded": len(rows),
@@ -348,16 +531,18 @@ def main() -> int:
         "inherited_call_min_identity": cal.INHERITED_CALL_MIN_IDENTITY,
         "evidence_counts": dict(counts),
         "call_min_identity": floor, "call_min_identity_why": why,
+        "separation": seps,
+        "profile_gate_vs_annotation": gate_audit,
         "copy_max_overlap": overlap, "copy_max_overlap_why": overlap_why,
         "near_miss_no_locus": misses,
         "span_inflation_by_group": spans,
         "floor_scan": scan,
     }
     thin = (len(summaries) < MIN_GENOMES
-            or counts["confirmed"] < MIN_CONFIRMED)
+            or counts["confirmed_pooled"] < MIN_CONFIRMED)
     if thin and not args.allow_thin:
         print(f"\nNOT WRITING locus_calibration.json: {len(summaries)} genome(s) "
-              f"and {counts['confirmed']} annotation-confirmed locus/loci, "
+              f"and {counts['confirmed_pooled']} confirmed locus/loci, "
               f"below the floor of {MIN_GENOMES} / {MIN_CONFIRMED}.\n"
               "  The tables above are written and are diagnostics. The sweep "
               "reads the JSON back as a measured threshold, so writing one "
@@ -366,10 +551,16 @@ def main() -> int:
         return 2
     out["thin_sample"] = bool(thin)
     (OUT_DIR / "locus_calibration.json").write_text(json.dumps(out, indent=1))
-    print(f"{len(summaries)} genomes, {len(rows)} recorded loci "
-          f"({counts['confirmed']} annotation-confirmed, "
-          f"{counts['contradicted']} contradicted, "
-          f"{counts['no_annotation']} unannotated)")
+    print(f"{len(summaries)} genomes, {len(rows)} recorded loci")
+    print(f"  annotation axis: {counts['confirmed']} confirmed, "
+          f"{counts['contradicted'] + counts['sister']} contradicted")
+    print(f"  profile axis:    {counts['profile_confirmed']} confirmed, "
+          f"{counts['profile_contradicted']} contradicted")
+    print(f"  pooled:          {counts['confirmed_pooled']} confirmed, "
+          f"{counts['contradicted_pooled']} contradicted")
+    for k, s in seps.items():
+        print(f"  {k:9s} separates={s['separates']}  {s['why']}")
+    print(f"  profile gate vs annotation: {gate_audit['why']}")
     print(f"call_min_identity = {floor:.2f}\n  {why}")
     print(f"copy_max_overlap  = {overlap:.2f}\n  {overlap_why}")
     if misses:

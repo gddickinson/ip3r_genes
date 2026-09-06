@@ -1,21 +1,227 @@
 accession	organism	group	called	identity	coverage	span_bp	cds_footprint_bp	span_inflation	evidence	annot_gene
+GCA_001247695.2	Cymbomonas tetramitiformis	viridiplantae	1	1.0	1.0	23058	10128	2.28	unnamed	CYMTET_10314
+GCA_001247695.2	Cymbomonas tetramitiformis	viridiplantae	1	0.2362	0.6998	21358	7038	3.03	unnamed	CYMTET_11329
+GCA_001247695.2	Cymbomonas tetramitiformis	viridiplantae	1	0.2153	0.9404	8807	7194	1.22	unnamed	CYMTET_21539
+GCA_001247695.2	Cymbomonas tetramitiformis	viridiplantae	1	0.2888	0.1941	20969	1528	13.72	unnamed	CYMTET_3114
+GCA_001460835.1	Bodo saltans	discoba	1	0.2307	0.6199	6363	6069	1.05	unnamed	BSAL_52665
+GCA_001460835.1	Bodo saltans	discoba	1	0.2434	0.5264	13214	4239	3.12	unnamed	BSAL_18940
+GCA_001460835.1	Bodo saltans	discoba	1	0.2276	0.6129	5703	4794	1.19	unnamed	BSAL_55895
+GCA_001460835.1	Bodo saltans	discoba	1	0.1993	0.961	14175	7392	1.92	unnamed	BSAL_56455
+GCA_001460835.1	Bodo saltans	discoba	1	0.2402	0.3094	2634	2376	1.11	unnamed	BSAL_37210
+GCA_001460835.1	Bodo saltans	discoba	1	0.271	0.2527	1986	1986	1.0	unnamed	BSAL_91055
+GCA_001606155.1	Tieghemostelium lacteum	amoebozoa	1	0.4975	1.0	79119	8790	9.0	unnamed	DLAC_11299
+GCA_001642005.1	Intoshia linei	metazoa	1	0.4038	0.5913	20888	4587	4.55	unnamed	A3Q56_04067
+GCA_001642005.1	Intoshia linei	metazoa	1	0.4208	0.4414	10320	3529	2.92	unnamed	A3Q56_05306
+GCA_001642005.1	Intoshia linei	metazoa	1	0.3581	0.3536	8749	2802	3.12	unnamed	A3Q56_05269
+GCA_001970955.1	Stentor coeruleus	sar	1	0.2295	0.7913	24188	8004	3.02	unnamed	SteCoe_24932
+GCA_001970955.1	Stentor coeruleus	sar	1	0.2252	0.7706	60634	7719	7.86	unnamed	SteCoe_13976
+GCA_001970955.1	Stentor coeruleus	sar	1	0.2066	0.7928	67991	7731	8.79	unnamed	SteCoe_1330
+GCA_001970955.1	Stentor coeruleus	sar	1	0.2214	0.9698	7814	7519	1.04	unnamed	SteCoe_31151
+GCA_001970955.1	Stentor coeruleus	sar	1	0.2166	0.9802	7821	7605	1.03	unnamed	SteCoe_18318
+GCA_001970955.1	Stentor coeruleus	sar	1	0.2107	0.7213	7968	7044	1.13	unnamed	SteCoe_25135
+GCA_001970955.1	Stentor coeruleus	sar	1	0.2245	0.8038	13844	5999	2.31	no_annotation	
+GCA_001970955.1	Stentor coeruleus	sar	1	0.2102	0.9866	24512	7335	3.34	unnamed	SteCoe_5764
+GCA_001970955.1	Stentor coeruleus	sar	1	0.2081	0.9538	7552	7200	1.05	no_annotation	
+GCA_001970955.1	Stentor coeruleus	sar	1	0.2084	0.9688	10638	6993	1.52	unnamed	SteCoe_19775
+GCA_001970955.1	Stentor coeruleus	sar	1	0.2042	0.9484	7604	7167	1.06	no_annotation	
+GCA_001970955.1	Stentor coeruleus	sar	1	0.2535	0.2999	8006	2535	3.16	unnamed	SteCoe_25455
+GCA_001970955.1	Stentor coeruleus	sar	1	0.193	0.9438	7452	7302	1.02	unnamed	SteCoe_14590
+GCA_002104905.1	Basidiobolus meristosporus CBS 931.73	fungi	1	0.8755	1.0	9770	7517	1.3	unnamed	K493DRAFT_341790
+GCA_002104905.1	Basidiobolus meristosporus CBS 931.73	fungi	1	0.8051	1.0	8312	7548	1.1	unnamed	K493DRAFT_348021
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.9986	1.0	290176	8757	33.14	unnamed	BOX15_Mlig001931g6
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.9921	1.0	34844	8769	3.97	no_annotation	
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.9918	1.0	288820	8757	32.98	unnamed	BOX15_Mlig001931g5
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.4679	0.9954	208407	8254	25.25	unnamed	BOX15_Mlig011719g6
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.4596	0.9954	125848	8218	15.31	unnamed	BOX15_Mlig006095g2
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.4775	0.9523	53961	7923	6.81	unnamed	BOX15_Mlig032795g1
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.4608	0.9804	94455	8176	11.55	unnamed	BOX15_Mlig006095g3
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.4641	0.9964	57799	8219	7.03	unnamed	BOX15_Mlig011719g2
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.4577	0.9886	131416	8419	15.61	unnamed	BOX15_Mlig033347g2
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.4572	0.9886	48399	8388	5.77	unnamed	BOX15_Mlig033347g1
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.48	0.9834	24718	7710	3.21	no_annotation	
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.479	0.9834	27403	7705	3.56	no_annotation	
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.4682	0.9985	40721	7826	5.2	unnamed	BOX15_Mlig001198g2
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.4433	0.8426	83797	7024	11.93	no_annotation	
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.4124	0.9988	218611	7720	28.32	unnamed	BOX15_Mlig033498g2
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.415	0.985	34371	7596	4.52	unnamed	BOX15_Mlig025693g1
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.47	0.7639	21038	6354	3.31	no_annotation	
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.2561	0.6093	28233	4585	6.16	unnamed	BOX15_Mlig011719g3
+GCA_002269645.1	Macrostomum lignano	metazoa	1	0.2677	0.5079	24929	3864	6.45	unnamed	BOX15_Mlig033347g5
+GCA_002796945.1	Plectus sambesii	metazoa	1	0.5912	0.4668	16140	4047	3.99	no_annotation	
+GCA_002796945.1	Plectus sambesii	metazoa	1	0.3217	0.9052	22397	6968	3.21	no_annotation	
+GCA_002796945.1	Plectus sambesii	metazoa	1	0.5223	0.3582	8178	3066	2.67	no_annotation	
+GCA_002796945.1	Plectus sambesii	metazoa	1	0.1971	0.4613	5021	3798	1.32	no_annotation	
+GCA_009757345.1	Campodea augens	metazoa	1	0.6451	0.5314	101473	4227	24.01	no_annotation	
+GCA_009757345.1	Campodea augens	metazoa	1	0.686	0.3591	33130	3075	10.77	no_annotation	
+GCA_010279815.1	Brachionus plicatilis	metazoa	1	0.8187	0.9993	34426	8979	3.83	no_annotation	
+GCA_010279815.1	Brachionus plicatilis	metazoa	1	0.4525	0.9842	17868	7995	2.23	no_annotation	
+GCA_011109175.1	Dicyema japonicum	metazoa	1	0.3953	0.9823	295257	7770	38.0	no_annotation	
+GCA_014839935.2	Entomophthora muscae	fungi	1	1.0	1.0	7892	7704	1.02	unnamed	DSO57_1024190
+GCA_019649035.1	Elysia marginata	metazoa	1	0.6612	0.9592	388446	7897	49.19	unnamed	ElyMa_003498200
+GCA_019649035.1	Elysia marginata	metazoa	1	0.4762	0.9822	333150	8169	40.78	no_annotation	
+GCA_019649035.1	Elysia marginata	metazoa	1	0.4487	0.9954	86309	8129	10.62	no_annotation	
+GCA_019649035.1	Elysia marginata	metazoa	1	0.4566	0.9927	114052	7427	15.36	no_annotation	
+GCA_019973955.1	Trichonephila inaurata madagascariensis	metazoa	1	0.9142	1.0	65326	8202	7.96	no_annotation	
+GCA_020696425.1	Vermamoeba vermiformis	amoebozoa	1	0.3636	0.7404	9509	7591	1.25	no_annotation	
+GCA_020696425.1	Vermamoeba vermiformis	amoebozoa	1	0.3127	0.8155	65715	8207	8.01	no_annotation	
+GCA_020696425.1	Vermamoeba vermiformis	amoebozoa	1	0.2246	0.8735	36956	6878	5.37	no_annotation	
+GCA_021613535.1	Adineta vaga	metazoa	1	0.503	0.991	320096	8203	39.02	unnamed	I4U23_007190
+GCA_021613535.1	Adineta vaga	metazoa	1	0.4941	0.995	381052	8205	46.44	unnamed	I4U23_026087
+GCA_025603285.1	Piptocephalis tieghemiana	fungi	1	0.313	0.9908	44230	8292	5.33	unnamed	DHS80DRAFT_24427
+GCA_028023455.1	Epiperipatus broadwayi	metazoa	1	0.7295	0.9683	893499	7987	111.87	no_annotation	
+GCA_030141605.1	Tubiluchus corallicola	metazoa	1	0.6105	0.657	35333	5349	6.61	no_annotation	
+GCA_030141605.1	Tubiluchus corallicola	metazoa	1	0.7521	0.1755	12867	1434	8.97	no_annotation	
+GCA_030141605.1	Tubiluchus corallicola	metazoa	1	0.7521	0.1755	12866	1434	8.97	no_annotation	
+GCA_030141605.1	Tubiluchus corallicola	metazoa	1	0.6275	0.1808	5606	1458	3.84	no_annotation	
+GCA_030267625.1	Triparma retinervis	other	1	0.2949	0.1549	1929	1485	1.3	unnamed	TrRE_jg11506
+GCA_030267625.1	Triparma retinervis	other	1	0.2299	0.3152	3082	2739	1.13	unnamed	TrRE_jg3548
+GCA_034508575.1	Petrolisthes manimaculis	metazoa	1	0.6259	1.0	431392	8232	52.4	unnamed	Pmani_007659
+GCA_034694345.1	Allopauropus danicus	metazoa	1	0.6426	0.2462	2764	2154	1.28	no_annotation	
+GCA_034694345.1	Allopauropus danicus	metazoa	1	0.8127	0.1129	1464	942	1.55	no_annotation	
+GCA_034698405.1	Symphylella vulgaris	metazoa	1	0.6055	0.1366	2086	1167	1.79	no_annotation	
+GCA_034698405.1	Symphylella vulgaris	metazoa	1	0.7143	0.1136	2101	903	2.33	no_annotation	
+GCA_034698405.1	Symphylella vulgaris	metazoa	1	0.4791	0.101	3172	789	4.02	no_annotation	
+GCA_036172245.1	Raillietiella orientalis	metazoa	1	0.5908	0.9939	311923	8114	38.44	no_annotation	
+GCA_040529105.1	Prymnesium parvum	other	1	0.9786	1.0	12690	8289	1.53	no_annotation	
+GCA_040529105.1	Prymnesium parvum	other	1	0.2386	0.9495	490810	9501	51.66	no_annotation	
+GCA_040529105.1	Prymnesium parvum	other	1	0.2264	0.9897	405686	7446	54.48	no_annotation	
+GCA_047495785.1	Lepidodermella squamata	metazoa	1	0.4401	0.9836	203412	8247	24.66	no_annotation	
+GCA_051530055.1	Neoechinorhynchus agilis	metazoa	1	0.4372	0.9896	410454	7919	51.83	unnamed	ACOME3_006142
+GCA_054772095.1	Chamberlinius hualienensis	metazoa	1	0.6465	0.9942	119869	8271	14.49	unnamed	CHUAL_005626
+GCA_055505105.1	Phoronis australis	metazoa	1	0.712	0.9982	369629	8238	44.87	no_annotation	
+GCA_055505105.1	Phoronis australis	metazoa	1	0.5692	0.9808	157914	8304	19.02	no_annotation	
+GCA_055505105.1	Phoronis australis	metazoa	1	0.5164	0.9988	59668	7737	7.71	no_annotation	
+GCA_056362285.1	Galeolaria caespitosa	metazoa	1	0.7628	1.0	148406	8172	18.16	confirmed	ITPR1
+GCA_056362285.1	Galeolaria caespitosa	metazoa	1	0.5058	1.0	369128	8205	44.99	unnamed	ABL822_012480
+GCA_056362285.1	Galeolaria caespitosa	metazoa	1	0.5087	0.985	135416	7575	17.88	no_annotation	
+GCA_056362285.1	Galeolaria caespitosa	metazoa	1	0.2976	0.1051	2912	795	3.66	unnamed	ABL822_010561
+GCA_056869335.1	Trichinella zimbabwensis	metazoa	1	0.969	1.0	310735	8130	38.22	unnamed	Tri11_006499
+GCA_900618415.1	Soboliphyme baturini	metazoa	1	0.4509	0.364	23231	3043	7.63	unnamed	SBAD_LOCUS5368
+GCA_900618415.1	Soboliphyme baturini	metazoa	1	0.6341	0.2246	10648	1861	5.72	unnamed	SBAD_LOCUS8070
+GCA_900618415.1	Soboliphyme baturini	metazoa	1	0.5476	0.2422	14880	2034	7.32	unnamed	SBAD_LOCUS1235
+GCA_902702795.2	Paramuricea clavata	metazoa	1	0.5927	0.3359	14372	2700	5.32	unnamed	PACLA_8A007027
+GCA_902702795.2	Paramuricea clavata	metazoa	1	0.7495	0.2039	29411	1665	17.66	unnamed	PACLA_8A021814
+GCA_902702795.2	Paramuricea clavata	metazoa	1	0.6045	0.2255	13047	1836	7.11	unnamed	PACLA_8A015823
+GCA_902702795.2	Paramuricea clavata	metazoa	1	0.5565	0.2455	14821	1995	7.43	unnamed	PACLA_8A011686
+GCA_904063045.1	Dimorphilus gyrociliatus	metazoa	1	0.6344	0.9989	342995	8001	42.87	unnamed	DGYR_LOCUS11827
+GCA_904063045.1	Dimorphilus gyrociliatus	metazoa	1	0.4757	0.9927	477250	7608	62.73	unnamed	DGYR_LOCUS112
+GCA_904063045.1	Dimorphilus gyrociliatus	metazoa	1	0.4559	0.9505	241884	7926	30.52	unnamed	DGYR_LOCUS4844
+GCA_904063045.1	Dimorphilus gyrociliatus	metazoa	1	0.4543	0.9923	254840	7660	33.27	unnamed	DGYR_LOCUS2404
+GCA_904063045.1	Dimorphilus gyrociliatus	metazoa	1	0.3783	0.9523	11945	7739	1.54	unnamed	DGYR_LOCUS6260
+GCA_905338385.1	Darwinula stevensoni	metazoa	1	0.675	0.9964	199016	8287	24.02	unnamed	DSTB1V02_LOCUS639
+GCA_905338405.1	Notodromas monacha	metazoa	1	0.5578	0.6557	26421	6041	4.37	unnamed	NMOB1V02_LOCUS9934
+GCA_905338405.1	Notodromas monacha	metazoa	1	0.6477	0.5262	12600	4649	2.71	unnamed	NMOB1V02_LOCUS11322
+GCA_916720795.1	Danaus chrysippus	metazoa	1	0.6218	1.0	100705	8076	12.47	unnamed	DCHRY22_LOCUS9060
+GCA_944472135.2	Trichobilharzia regenti	metazoa	1	0.3093	0.9548	757593	7834	96.71	unnamed	TREG1_LOCUS7676
+GCA_946863485.1	Moneuplotes crassus	sar	1	0.2962	1.0	8252	8049	1.03	unnamed	ECRASSUSDP1_LOCUS9132
+GCA_946863485.1	Moneuplotes crassus	sar	1	0.2923	0.9942	8463	7951	1.06	unnamed	ECRASSUSDP1_LOCUS7706
+GCA_946863485.1	Moneuplotes crassus	sar	1	0.2236	0.2542	2331	1998	1.17	unnamed	ECRASSUSDP1_LOCUS4635
+GCA_963970005.1	Durusdinium trenchii	other	1	0.2303	0.3219	140863	2460	57.26	unnamed	CCMP2556_LOCUS50432
+GCA_963970005.1	Durusdinium trenchii	other	1	0.2398	0.2792	6890	2255	3.06	unnamed	CCMP2556_LOCUS50732
+GCA_963970005.1	Durusdinium trenchii	other	1	0.2246	0.2864	2514	2388	1.05	unnamed	CCMP2556_LOCUS19710
+GCA_963970005.1	Durusdinium trenchii	other	1	0.2915	0.1143	858	840	1.02	unnamed	CCMP2556_LOCUS19786
+GCA_964035545.1	Bugula neritina	metazoa	1	0.6599	0.9982	656050	7996	82.05	no_annotation	
+GCA_964035545.1	Bugula neritina	metazoa	1	0.476	0.9935	75853	7608	9.97	no_annotation	
+GCA_964442445.1	Pycnogonum litorale	metazoa	1	0.7237	0.995	60161	8257	7.29	confirmed	ITPR1 (predicted)
+GCA_965153355.1	Flaccisagitta enflata	metazoa	1	0.5649	0.9834	829313	8228	100.79	no_annotation	
+GCA_976986565.1	Gordionus wolterstorffii	metazoa	1	0.5223	0.9893	106716	7989	13.36	no_annotation	
+GCA_982266715.1	Scolopendra cingulata	metazoa	1	0.7283	0.9953	486730	8286	58.74	unnamed	SCOCING_LOCUS16015
 GCF_000001215.4	Drosophila melanogaster	metazoa	1	1.0	1.0	297487	8514	34.94	confirmed	Itpr
 GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	1	1.0	1.0	431279	8463	50.96	unnamed	LOC594527
-GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	1	0.2978	0.1656	542279	1584	342.35	no_annotation	
-GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	1	0.2942	0.1668	377802	1545	244.53	no_annotation	
-GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	1	0.2649	0.1643	313905	1436	218.6	no_annotation	
-GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	1	0.2824	0.1662	317368	1524	208.25	no_annotation	
 GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	1	0.9997	1.0	17790	9633	1.85	unnamed	CHLRE_16g665450v5
-GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	1	0.2841	0.2811	619313	2772	223.42	no_annotation	
-GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	1	0.2767	0.2578	426549	2602	163.93	no_annotation	
-GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	1	0.2777	0.2718	398857	2691	148.22	no_annotation	
-GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	1	0.2511	0.2461	297207	2514	118.22	no_annotation	
-GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	1	0.2857	0.103	277060	954	290.42	no_annotation	
+GCF_000002725.2	Leishmania major strain Friedlin	discoba	1	0.2214	0.456	85019	4920	17.28	no_annotation	
 GCF_000002985.6	Caenorhabditis elegans	metazoa	1	1.0	1.0	293012	8679	33.76	confirmed	itr-1
 GCF_000004695.1	Dictyostelium discoideum AX4	amoebozoa	1	1.0	1.0	79006	9534	8.29	confirmed	iplA
-GCF_000182925.2	Neurospora crassa OR74A	fungi	1	0.268	0.2368	166928	2251	74.16	no_annotation	
-GCF_034140825.1	Oryza sativa Japonica Group	viridiplantae	1	0.3088	0.1637	325946	1500	217.3	no_annotation	
+GCF_000090795.2	Amphimedon queenslandica	metazoa	1	0.9924	1.0	13957	8340	1.67	unnamed	LOC100639431
+GCF_000090795.2	Amphimedon queenslandica	metazoa	1	0.3087	0.9572	396216	7234	54.77	unnamed	LOC100634093
+GCF_000090795.2	Amphimedon queenslandica	metazoa	1	0.3014	0.985	17490	7549	2.32	unnamed	LOC100632615
+GCF_000090795.2	Amphimedon queenslandica	metazoa	1	0.3064	0.9499	14916	7305	2.04	unnamed	LOC100638515
+GCF_000090795.2	Amphimedon queenslandica	metazoa	1	0.2976	0.9576	13467	7259	1.86	unnamed	LOC100640027
+GCF_000090795.2	Amphimedon queenslandica	metazoa	1	0.2608	0.9184	16337	6775	2.41	unnamed	LOC109580834
+GCF_000150275.1	Trichoplax adhaerens	metazoa	1	1.0	1.0	36964	7575	4.88	unnamed	TRIADDRAFT_56365
+GCF_000150275.1	Trichoplax adhaerens	metazoa	1	0.4574	0.9985	25733	7546	3.41	unnamed	TRIADDRAFT_55241
+GCF_000186865.1	Aureococcus anophagefferens	other	1	0.2291	0.9399	540393	9487	56.96	no_annotation	
+GCF_000186865.1	Aureococcus anophagefferens	other	1	0.2146	0.9479	8376	7479	1.12	no_annotation	
+GCF_000186865.1	Aureococcus anophagefferens	other	1	0.246	0.2478	2005	2005	1.0	no_annotation	
+GCF_000188695.1	Salpingoeca rosetta	other	1	0.395	0.9889	329324	7731	42.6	unnamed	PTSG_07655
+GCF_000188695.1	Salpingoeca rosetta	other	1	0.3297	0.9777	341674	7306	46.77	unnamed	PTSG_06996
+GCF_000188695.1	Salpingoeca rosetta	other	1	0.3045	0.8846	331855	7327	45.29	unnamed	PTSG_02461
+GCF_000189635.1	Tetrahymena thermophila SB210	sar	1	0.3199	0.107	925	708	1.31	unnamed	TTHERM_00762850
+GCF_000220395.1	Ichthyophthirius multifiliis	sar	1	0.3307	0.1056	828	739	1.12	unnamed	IMG5_078330
+GCF_000220395.1	Ichthyophthirius multifiliis	sar	1	0.3241	0.1046	1114	687	1.62	unnamed	IMG5_083820
+GCF_000313135.1	Acanthamoeba castellanii str. Neff	amoebozoa	1	1.0	1.0	189156	10035	18.85	unnamed	ACA1_256780
+GCF_000315625.1	Guillardia theta CCMP2712	other	1	0.2391	0.9291	631765	9701	65.12	unnamed	GUITHDRAFT_108096
+GCF_000315625.1	Guillardia theta CCMP2712	other	1	0.229	0.9979	144375	9927	14.54	unnamed	GUITHDRAFT_143965
+GCF_000315625.1	Guillardia theta CCMP2712	other	1	0.2221	0.9943	324580	9802	33.11	unnamed	GUITHDRAFT_160866
+GCF_000315625.1	Guillardia theta CCMP2712	other	1	0.1965	0.9947	303099	7936	38.19	unnamed	GUITHDRAFT_101463
+GCF_000326865.2	Helobdella robusta	metazoa	1	0.5938	0.9945	426416	8114	52.55	unnamed	HELRODRAFT_194356
+GCF_000326865.2	Helobdella robusta	metazoa	1	0.5248	0.9516	29784	7917	3.76	no_annotation	
+GCF_000326865.2	Helobdella robusta	metazoa	1	0.5205	0.9541	206868	7932	26.08	no_annotation	
+GCF_000372725.1	Emiliania huxleyi CCMP1516	other	1	0.3184	0.9553	270058	8032	33.62	contradicted	IPR1
+GCF_000520075.1	Aphanomyces astaci	sar	1	0.4253	0.9925	12018	9425	1.28	unnamed	H257_13636
+GCF_000520075.1	Aphanomyces astaci	sar	1	0.3723	0.9365	8909	7866	1.13	unnamed	H257_16727
+GCF_000520075.1	Aphanomyces astaci	sar	1	0.2322	0.9955	75602	10102	7.48	unnamed	H257_04629
+GCF_000520075.1	Aphanomyces astaci	sar	1	0.2269	0.2574	3230	1995	1.62	unnamed	H257_12507
+GCF_000520075.1	Aphanomyces astaci	sar	1	0.2327	0.258	2541	2076	1.22	unnamed	H257_12506
+GCF_000699445.3	Schistosoma haematobium	metazoa	1	0.3078	0.9479	453219	7681	59.01	confirmed	ITPR2
+GCF_002217175.1	Folsomia candida	metazoa	1	0.3863	0.9736	12761	7873	1.62	unnamed	LOC110845940
+GCF_004210375.1	Tachypleus tridentatus	metazoa	1	0.8768	1.0	263792	8247	31.99	unnamed	LOC143250353
+GCF_004210375.1	Tachypleus tridentatus	metazoa	1	0.8074	0.9932	120854	8217	14.71	confirmed	Itpr
+GCF_006345805.1	Octopus sinensis	metazoa	1	0.7101	1.0	653311	8016	81.5	unnamed	LOC115222534
+GCF_006345805.1	Octopus sinensis	metazoa	1	0.5315	0.302	39621	2548	15.55	unnamed	LOC115231115
+GCF_006345805.1	Octopus sinensis	metazoa	1	0.5347	0.2739	48013	2304	20.84	unnamed	LOC115228294
+GCF_006345805.1	Octopus sinensis	metazoa	1	0.5703	0.1891	32700	1558	20.99	unnamed	LOC115231408
+GCF_006345805.1	Octopus sinensis	metazoa	1	0.5444	0.1471	29723	1206	24.65	no_annotation	
+GCF_006345805.1	Octopus sinensis	metazoa	1	0.2449	0.762	7047	6234	1.13	no_annotation	
+GCF_008403515.1	Naegleria fowleri	discoba	1	0.9215	1.0	142807	9153	15.6	unnamed	FDP41_012062
+GCF_008403515.1	Naegleria fowleri	discoba	1	0.2455	0.779	77296	8031	9.62	unnamed	FDP41_001802
+GCF_008403515.1	Naegleria fowleri	discoba	1	0.2282	0.9223	10406	6401	1.63	unnamed	FDP41_007007
+GCF_008403515.1	Naegleria fowleri	discoba	1	0.2001	0.9629	7383	7032	1.05	unnamed	FDP41_005992
+GCF_011947565.3	Pollicipes pollicipes	metazoa	1	0.5803	0.9629	357886	7552	47.39	unnamed	LOC119113092
+GCF_019649055.1	Paramacrobiotus metropolitanus	metazoa	1	0.5185	0.9978	13766	8593	1.6	unnamed	LOC129588179
+GCF_020536995.1	Dreissena polymorpha	metazoa	1	0.6782	0.997	167316	7877	21.24	unnamed	LOC127861130
+GCF_020536995.1	Dreissena polymorpha	metazoa	1	0.5056	0.9847	319076	8220	38.82	unnamed	LOC127845039
+GCF_020536995.1	Dreissena polymorpha	metazoa	1	0.4932	0.9825	160283	8050	19.91	unnamed	LOC127832127
+GCF_020536995.1	Dreissena polymorpha	metazoa	1	0.4898	0.985	443975	8107	54.76	unnamed	LOC127831400
+GCF_020536995.1	Dreissena polymorpha	metazoa	1	0.4723	0.9838	177312	7366	24.07	unnamed	LOC127833498
+GCF_021134715.1	Daphnia pulex	metazoa	1	0.6331	0.9942	9855	8538	1.15	unnamed	LOC124198492
+GCF_021134715.1	Daphnia pulex	metazoa	1	0.24	0.4812	344069	4769	72.15	no_annotation	
+GCF_021134715.1	Daphnia pulex	metazoa	1	0.2261	0.5164	236117	5099	46.31	no_annotation	
+GCF_021134715.1	Daphnia pulex	metazoa	1	0.2426	0.4788	186260	4354	42.78	no_annotation	
+GCF_021134715.1	Daphnia pulex	metazoa	1	0.2293	0.4761	79051	4599	17.19	no_annotation	
+GCF_026151205.1	Bolinopsis microptera	metazoa	1	0.9273	1.0	239599	8079	29.66	unnamed	LOC134815388
+GCF_032362555.1	Amyelois transitella	metazoa	1	0.6296	0.9996	348870	8097	43.09	unnamed	LOC106139652
+GCF_032884065.1	Artemia franciscana	metazoa	1	0.5265	0.9943	206030	8172	25.21	unnamed	LOC136027136
+GCF_036898095.1	Palaemon carinicauda	metazoa	1	0.6104	1.0	319284	8342	38.27	confirmed	Itpr
+GCF_037890685.1	Hydra vulgaris	metazoa	1	0.5971	0.9948	126274	7938	15.91	unnamed	LOC100202979
+GCF_039555335.1	Amphiura filiformis	metazoa	1	0.7148	1.0	152822	8289	18.44	unnamed	LOC140171196
+GCF_041260155.1	Ptychodera flava	metazoa	1	0.7286	0.9925	222895	8325	26.77	unnamed	LOC139135603
+GCF_041260155.1	Ptychodera flava	metazoa	1	0.7179	0.9981	126688	7777	16.29	unnamed	LOC139118054
+GCF_041260155.1	Ptychodera flava	metazoa	1	0.6849	0.9981	93060	7794	11.94	unnamed	LOC139118691
+GCF_043290135.1	Rhipicephalus microplus	metazoa	1	0.7255	0.9939	323169	8148	39.66	confirmed	Itpr
+GCF_051362555.1	Lingula anatina	metazoa	1	0.9996	1.0	45880	8427	5.44	unnamed	LOC106152615
+GCF_051362555.1	Lingula anatina	metazoa	1	0.7445	0.9952	326179	8163	39.96	unnamed	LOC106177103
+GCF_051362555.1	Lingula anatina	metazoa	1	0.4612	0.9857	47324	7653	6.18	unnamed	LOC106153780
+GCF_053477335.1	Acartia tonsa	metazoa	1	0.6042	0.9921	147263	7989	18.43	confirmed	Itpr
+GCF_053919585.1	Euprymna scolopes	metazoa	1	0.7254	0.9981	381734	7932	48.13	unnamed	LOC145249624
+GCF_053919585.1	Euprymna scolopes	metazoa	1	0.5118	0.943	687485	7884	87.2	unnamed	LOC145254652
+GCF_053919585.1	Euprymna scolopes	metazoa	1	0.4875	1.0	697429	8172	85.34	unnamed	LOC145278009
 GCF_932526225.1	Nematostella vectensis	metazoa	1	0.8456	1.0	530414	8166	64.95	unnamed	LOC5509439
-GCF_932526225.1	Nematostella vectensis	metazoa	1	0.2582	0.3138	313154	2714	115.38	no_annotation	
-GCF_932526225.1	Nematostella vectensis	metazoa	1	0.2632	0.3261	137681	2668	51.6	no_annotation	
-GCF_932526225.1	Nematostella vectensis	metazoa	1	0.2599	0.2496	397382	2317	171.51	no_annotation	
+GCF_963576615.1	Watersipora subatra	metazoa	1	0.663	0.9982	89979	8106	11.1	unnamed	LOC137393680
+GCF_963576615.1	Watersipora subatra	metazoa	1	0.4725	0.9935	208331	7692	27.08	unnamed	LOC137406297
+GCF_963678975.1	Dysidea avara	metazoa	1	0.4411	0.986	19184	8190	2.34	unnamed	LOC136259578
+GCF_963678975.1	Dysidea avara	metazoa	1	0.3356	0.985	362817	7597	47.76	no_annotation	
+GCF_963678975.1	Dysidea avara	metazoa	1	0.3328	1.0	265000	7631	34.73	unnamed	LOC136262168
+GCF_963678975.1	Dysidea avara	metazoa	1	0.3446	0.9322	17760	7144	2.49	unnamed	LOC136259845
+GCF_963678975.1	Dysidea avara	metazoa	1	0.3327	0.9303	317046	6816	46.51	unnamed	LOC136269116
+GCF_963678975.1	Dysidea avara	metazoa	1	0.319	0.9488	26241	7303	3.59	unnamed	LOC136260598
+GCF_963678975.1	Dysidea avara	metazoa	1	0.3078	0.9954	359435	7834	45.88	unnamed	LOC136246667
+GCF_964194025.1	Convolutriloba macropyga	metazoa	1	0.5241	0.986	173615	8496	20.43	unnamed	LOC142342608
+GCF_964194025.1	Convolutriloba macropyga	metazoa	1	0.4233	1.0	356961	7575	47.12	unnamed	LOC142342611
+GCF_964204645.1	Tubulanus polymorphus	metazoa	1	0.7522	0.9945	336991	8122	41.49	unnamed	LOC141901918
+GCF_964204645.1	Tubulanus polymorphus	metazoa	1	0.5253	1.0	36286	8168	4.44	unnamed	LOC141915454
+GCF_964204645.1	Tubulanus polymorphus	metazoa	1	0.467	0.985	162606	8302	19.59	unnamed	LOC141905417
+GCF_965202585.1	Thalia democratica	metazoa	1	0.5243	0.9899	57871	8001	7.23	unnamed	LOC145838089
+GCF_978046115.1	Saccoglossus kowalevskii	metazoa	1	0.9973	1.0	93275	7806	11.95	unnamed	LOC100375107
+GCF_978046115.1	Saccoglossus kowalevskii	metazoa	1	0.7185	0.9907	158374	8178	19.37	unnamed	LOC102806067
+GCF_978046115.1	Saccoglossus kowalevskii	metazoa	1	0.3866	0.9345	37435	7322	5.11	unnamed	LOC100375251

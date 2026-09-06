@@ -113,10 +113,19 @@ def assign(itpr_hits: dict[str, dict], ryr_hits: dict[str, dict],
         lose = min(i_score, r_score)
         margin = win - lose
         rel = round(margin / win, 4) if win > 0 else 0.0
-        winner = "ITPR" if i_score > r_score else "RYR"
-        win_pos = i_pos if winner == "ITPR" else r_pos
-        win_cov = (i if winner == "ITPR" else r)["hmm_coverage"] if (i or r) \
-            else 0.0
+        # The winner is picked as a *record*, not by score alone. A hit whose
+        # full-sequence bit score is exactly 0.0 with no hit from the other
+        # profile made `i_score > r_score` false and sent `winner` to the
+        # profile that has no record at all — which S23b hit the first time
+        # these profiles were run over genomic gene models, where marginal
+        # alignments at or below 0 bits are normal (the same population
+        # `s20_test_sensitivity.py` found). Ties still resolve to `unassigned`
+        # through the margin test below, so no existing call changes.
+        if i is not None and (r is None or i_score >= r_score):
+            winner, win_rec, win_pos = "ITPR", i, i_pos
+        else:
+            winner, win_rec, win_pos = "RYR", r, r_pos
+        win_cov = win_rec["hmm_coverage"] if win_rec else 0.0
         evidence = ("architecture" if win_cov >= COMPLETE_COVERAGE
                     else "partial" if win_pos >= min_positions
                     else "module")
@@ -154,7 +163,7 @@ def assign(itpr_hits: dict[str, dict], ryr_hits: dict[str, dict],
             "itpr_coverage": i["hmm_coverage"] if i else 0.0,
             "ryr_coverage": r["hmm_coverage"] if r else 0.0,
             "itpr_positions": i_pos, "ryr_positions": r_pos,
-            "target_coverage": (i if i_score >= r_score else r)["target_coverage"],
+            "target_coverage": win_rec["target_coverage"] if win_rec else 0.0,
             "length": meta["tlen"], "gene": meta["gene"],
             "species": meta["species"],
             "taxon_id": meta["taxon_id"] or "",

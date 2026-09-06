@@ -1,29 +1,51 @@
 {
- "built_at": "2026-09-06T04:52:55+00:00",
+ "built_at": "2026-09-06T14:49:56+00:00",
  "census_v5_rows": 17882,
- "census_v6_rows": 17885,
- "models_found": 5,
- "models_enrolled": 3,
+ "census_v6_rows": 18065,
+ "models_found": 185,
+ "models_enrolled": 183,
  "models_declined": 2,
  "min_aa": 200,
  "db_status": {
   "amoebozoa": {
+   "annotated_unnamed": 2,
+   "genome_only": 3,
    "annotated_named": 1
   },
-  "fungi": {
+  "discoba": {
+   "annotated_unnamed": 10,
    "genome_only": 1
   },
+  "fungi": {
+   "annotated_unnamed": 4
+  },
   "metazoa": {
-   "annotated_named": 2,
-   "annotated_unnamed": 2,
-   "genome_only": 7
+   "annotated_unnamed": 100,
+   "genome_only": 47,
+   "annotated_named": 9
+  },
+  "other": {
+   "annotated_unnamed": 14,
+   "genome_only": 6
+  },
+  "sar": {
+   "annotated_unnamed": 21,
+   "genome_only": 3
   },
   "viridiplantae": {
-   "annotated_unnamed": 1,
-   "genome_only": 6
+   "annotated_unnamed": 5
   }
  },
  "copy_number_rows": {
-  "1": 3
+  "3": 38,
+  "2": 25,
+  "1": 42,
+  "0": 12,
+  "13": 12,
+  "18": 19,
+  "4": 12,
+  "5": 10,
+  "6": 6,
+  "8": 7
  }
 }

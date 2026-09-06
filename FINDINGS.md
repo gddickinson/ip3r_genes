@@ -893,3 +893,71 @@ different category on the strength of two data points. The measurement now
 refuses to answer until it has enough to answer with. It is a small thing, but
 it is the same failure as a fixed control: a procedure that always returns
 something will always be believed.
+
+---
+
+## 2026-09-06 (cont.) — The answer, and the ruler that turned out to be wrong
+
+The search finished: 194 genomes, a hundred billion letters of DNA, no
+failures. Two kinds of thing came out of it.
+
+**First, the absences are real.** Every one of the thirty-five groups the
+databases said had no IP₃ receptor still has none when you go to the DNA, and
+every one of them has a working positive control — so in each case we know the
+search would have found the gene had it been there. The ascomycete fungi
+(thirty-one genomes), the mushrooms and their relatives (seventeen), the land
+plants (twenty-five), the flowering plants, the malaria parasites and
+*Toxoplasma*, the microsporidian parasites: none of them has this receptor.
+**Not one genome was excluded for want of a control**, which is the thing that
+was in doubt yesterday.
+
+So the picture the databases gave was, in this respect, right — and now it is
+a statement about genomes rather than about gene-finding software.
+
+**Second, the copy numbers.** Most invertebrates have one. But the range is far
+wider than anyone would guess from the vertebrates' tidy three:
+
+- a flatworm, *Macrostomum lignano* — **eighteen** complete genes
+- a giant single-celled ciliate, *Stentor coeruleus* — **thirteen**
+- sponges — six and eight
+- a green alga, *Cymbomonas* — three
+
+The flatworm number settles a question we flagged last session. The databases
+held **sixty-two** records for that species, and there was no way to tell
+whether that meant sixty-two genes or one gene written down sixty-two times.
+It is eighteen genes. Something in that lineage has been copying this receptor
+repeatedly, and eighteen is six times what a human has.
+
+**And then the ruler.** This is the part worth telling on ourselves.
+
+To decide whether a stretch of DNA is a copy of the gene, the vertebrate survey
+used a simple test: how closely does it resemble the reference gene we searched
+with? Below 40 % similar, discard it. That works when your references come from
+close relatives. Across the whole eukaryotic tree it does not, and we measured
+how badly. **The genuine genes reach down to 19 % similarity; the junk reaches
+up to 32 %. There is no line you can draw between them.** Applying the
+inherited cut-off would have thrown away eighty-seven real genes — fifty-six of
+them complete, intact ones. A third of everything we found.
+
+The reason is almost embarrassing once stated. Similarity to the nearest
+reference measures *how far away the nearest reference is*. In the vertebrates
+that is a few tens of millions of years. Out here it can be an entire phylum.
+The number was never measuring what we thought it measured; it was measuring
+our own sampling.
+
+We checked whether a different simple measure would do better — how much of the
+reference gene is covered — and it is no better. So the test was retired
+rather than retuned, and the decision handed to the tool that was already
+making every other family call in this project: a statistical model of the
+receptor built from thirty examples. Against the only independent evidence
+available — what the genome's own curators named each gene — that model agrees
+with ten out of ten real ones and rejects ten of eleven impostors.
+
+The eleventh is a nice ending. It is a gene in the alga *Emiliania huxleyi*
+that the curators called **IPR1**, which our name-matching did not recognise
+and so filed as an impostor. The model scored it as a receptor, emphatically.
+`IPR1` is almost certainly short for *inositol trisphosphate receptor 1*. Our
+list of names was short; the model was right. We have left the disagreement on
+the record rather than quietly fixing the list, because a name that matches
+"IPR1" also matches every InterPro accession number in existence, and a fix
+that creates a thousand new errors is not a fix.

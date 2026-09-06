@@ -1,0 +1,204 @@
+{
+ "genomes": 194,
+ "loci_recorded": 917,
+ "record_min_identity": 0.15,
+ "inherited_call_min_identity": 0.4,
+ "evidence_counts": {
+  "unnamed": 273,
+  "profile_confirmed": 226,
+  "no_annotation": 623,
+  "confirmed": 10,
+  "contradicted": 11,
+  "confirmed_pooled": 226,
+  "contradicted_pooled": 11
+ },
+ "call_min_identity": 0.15,
+ "call_min_identity_why": "**neither identity nor coverage separates the two populations in this scope.** 226 confirmed loci reach down to 0.193 on identity while 11 contradicted ones reach up to 0.318, and the best achievable threshold on either statistic still discards a large part of the confirmed set (see `separation` in this file). S5b's inherited 0.40 would discard 87 confirmed loci, 56 of them **complete gene models**. Outside the vertebrates a locus's identity to its nearest bait measures how far away the nearest bait is \u2014 a whole phylum \u2014 not whether it is a gene. Identity is therefore retired as a call gate (set to the recording floor) and the **profile call** carries it (D14/D23), which is where this project puts every other family call. That gate is validated against the one axis it does not share: see `profile_gate_vs_annotation`",
+ "separation": {
+  "identity": {
+   "statistic": "identity",
+   "n_confirmed": 226,
+   "n_contradicted": 11,
+   "confirmed_min": 0.193,
+   "confirmed_q1": 0.2962,
+   "confirmed_median": 0.47,
+   "contradicted_median": 0.2352,
+   "contradicted_q3": 0.2554,
+   "contradicted_max": 0.3184,
+   "separates": false,
+   "why": "confirmed loci reach down to 0.193 and contradicted ones up to 0.318 \u2014 the two populations overlap, so no threshold on this statistic separates them"
+  },
+  "coverage": {
+   "statistic": "coverage",
+   "n_confirmed": 226,
+   "n_contradicted": 11,
+   "confirmed_min": 0.101,
+   "confirmed_q1": 0.6557,
+   "confirmed_median": 0.9823,
+   "contradicted_median": 0.2177,
+   "contradicted_q3": 0.3966,
+   "contradicted_max": 0.9553,
+   "separates": false,
+   "why": "confirmed loci reach down to 0.101 and contradicted ones up to 0.955 \u2014 the two populations overlap, so no threshold on this statistic separates them"
+  }
+ },
+ "profile_gate_vs_annotation": {
+  "annotation_confirmed": 10,
+  "gate_agrees": 10,
+  "annotation_contradicted": 11,
+  "gate_declines": 10,
+  "gate_admits": 1,
+  "admitted": [
+   {
+    "organism": "Emiliania huxleyi CCMP1516",
+    "gene": "IPR1",
+    "identity": 0.3184,
+    "coverage": 0.9553,
+    "itpr_score": 1007.7,
+    "ryr_score": 328.6
+   }
+  ],
+  "why": "the profile gate agrees with 10 of 10 loci the assembly's own annotation names for this family, and declines 10 of 11 it names for something else"
+ },
+ "copy_max_overlap": 0.2,
+ "copy_max_overlap_why": "16 same-contig copy pairs, largest residual overlap 4%; the rule's threshold is not contradicted by the data it produced",
+ "near_miss_no_locus": [],
+ "span_inflation_by_group": {
+  "amoebozoa": {
+   "n": 6,
+   "median": 8.15,
+   "max": 18.85,
+   "over_5x": 5,
+   "over_10x": 1
+  },
+  "discoba": {
+   "n": 11,
+   "median": 1.63,
+   "max": 17.28,
+   "over_5x": 3,
+   "over_10x": 2
+  },
+  "fungi": {
+   "n": 4,
+   "median": 1.2,
+   "max": 5.33,
+   "over_5x": 1,
+   "over_10x": 0
+  },
+  "metazoa": {
+   "n": 156,
+   "median": 15.76,
+   "max": 111.87,
+   "over_5x": 116,
+   "over_10x": 93
+  },
+  "other": {
+   "n": 20,
+   "median": 33.36,
+   "max": 65.12,
+   "over_5x": 12,
+   "over_10x": 12
+  },
+  "sar": {
+   "n": 24,
+   "median": 1.25,
+   "max": 8.79,
+   "over_5x": 3,
+   "over_10x": 0
+  },
+  "viridiplantae": {
+   "n": 5,
+   "median": 2.28,
+   "max": 13.72,
+   "over_5x": 1,
+   "over_10x": 1
+  }
+ },
+ "floor_scan": [
+  {
+   "floor": 0.15,
+   "confirmed_kept": 226,
+   "confirmed_lost": 0,
+   "contradicted_kept": 11,
+   "no_evidence_kept": 681
+  },
+  {
+   "floor": 0.2,
+   "confirmed_kept": 222,
+   "confirmed_lost": 4,
+   "contradicted_kept": 11,
+   "no_evidence_kept": 648
+  },
+  {
+   "floor": 0.25,
+   "confirmed_kept": 179,
+   "confirmed_lost": 47,
+   "contradicted_kept": 3,
+   "no_evidence_kept": 262
+  },
+  {
+   "floor": 0.3,
+   "confirmed_kept": 167,
+   "confirmed_lost": 59,
+   "contradicted_kept": 1,
+   "no_evidence_kept": 27
+  },
+  {
+   "floor": 0.35,
+   "confirmed_kept": 147,
+   "confirmed_lost": 79,
+   "contradicted_kept": 0,
+   "no_evidence_kept": 0
+  },
+  {
+   "floor": 0.4,
+   "confirmed_kept": 139,
+   "confirmed_lost": 87,
+   "contradicted_kept": 0,
+   "no_evidence_kept": 0
+  },
+  {
+   "floor": 0.45,
+   "confirmed_kept": 128,
+   "confirmed_lost": 98,
+   "contradicted_kept": 0,
+   "no_evidence_kept": 0
+  },
+  {
+   "floor": 0.5,
+   "confirmed_kept": 98,
+   "confirmed_lost": 128,
+   "contradicted_kept": 0,
+   "no_evidence_kept": 0
+  },
+  {
+   "floor": 0.55,
+   "confirmed_kept": 79,
+   "confirmed_lost": 147,
+   "contradicted_kept": 0,
+   "no_evidence_kept": 0
+  },
+  {
+   "floor": 0.6,
+   "confirmed_kept": 68,
+   "confirmed_lost": 158,
+   "contradicted_kept": 0,
+   "no_evidence_kept": 0
+  },
+  {
+   "floor": 0.65,
+   "confirmed_kept": 52,
+   "confirmed_lost": 174,
+   "contradicted_kept": 0,
+   "no_evidence_kept": 0
+  },
+  {
+   "floor": 0.7,
+   "confirmed_kept": 45,
+   "confirmed_lost": 181,
+   "contradicted_kept": 0,
+   "no_evidence_kept": 0
+  }
+ ],
+ "thin_sample": false
+}

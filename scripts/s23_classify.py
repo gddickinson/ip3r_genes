@@ -57,25 +57,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import s23_calibration as cal                                       # noqa: E402
+from s23_copy_number import (COV_FULL, COV_SCRAP, MERGE_GAP_BP,     # noqa: E402
+                             MERGE_MAX_QUERY_OVERLAP, cds_footprint_bp,
+                             full_copies, grade, merge_split_loci)
 from s5_classify import _annotate_locus, _locus_flags, name_family  # noqa: E402
-from s5_sweep_lib import COV_FOUND, Aln, Locus                      # noqa: E402
-
-#: Locus grades by bait coverage. `COV_FOUND` (0.70) is S5's own "found" bar,
-#: reused so a full locus here and a found cell there mean the same thing.
-COV_FULL = COV_FOUND
-#: Below this a locus is a `scrap` — the shared channel module matching
-#: something, not a gene model. Set at the coverage S5b measured its junk
-#: population topping out at (30 %), one level of evidence below `fragment`.
-COV_SCRAP = 0.30
-
-#: Merge rule (2). Two same-strand loci within this distance are candidates
-#: for being one split gene. Ten times `s5_sweep_lib.LOCUS_GAP`, because the
-#: clustering gap is what already failed to join them.
-MERGE_GAP_BP = 100_000
-#: ...and they are only merged if their bait query spans overlap by no more
-#: than this fraction of the shorter one. Complementary halves of a bait are
-#: one gene; two loci each covering the same half are two genes.
-MERGE_MAX_QUERY_OVERLAP = 0.20
+from s5_sweep_lib import Locus                                      # noqa: E402
 
 #: Kingdom-level buckets, so a bait's origin and a genome's group can be
 #: compared. The two vocabularies differ by history — the bait's `group` is
@@ -94,6 +80,15 @@ def kingdom_group(g: str) -> str:
     return KINGDOM_GROUP.get((g or "").strip(), (g or "").strip())
 
 
+#: Which control verdicts let a genome carry an absence claim. Stated as a
+#: set rather than tested with `startswith("controlled")`, because that prefix
+#: test is exactly how `controlled_partial` — a control the search recovered
+#: only in pieces — would have been admitted silently.
+ADMISSIBLE_CONTROL = frozenset({
+    "controlled_by_target", "controlled_cross_kingdom", "controlled",
+    "controlled_ryr_only",
+})
+
 #: The three roles a bait can carry, matching `s23_bait_spec`.
 FAMILY_ITPR = "ITPR"
 FAMILY_RYR = "RYR"
@@ -101,121 +96,7 @@ CONTROL_ROLE = "CONTROL"
 CONTROL_MIR = CONTROL_ROLE
 
 
-# ------------------------------------------------------------------ merging
-
-def _query_overlap_frac(a, b) -> float:
-    lo = max(a.q_start, b.q_start)
-    hi = min(a.q_end, b.q_end)
-    if hi < lo:
-        return 0.0
-    shorter = min(a.q_end - a.q_start + 1, b.q_end - b.q_start + 1)
-    return (hi - lo + 1) / shorter if shorter > 0 else 1.0
-
-
-def merge_split_loci(loci: list[Locus], gap: int = MERGE_GAP_BP,
-                     max_overlap: float = MERGE_MAX_QUERY_OVERLAP
-                     ) -> tuple[list[Locus], list[dict]]:
-    """Fold neighbouring loci that look like one split gene.
-
-    Returns (merged loci, merge records). A merge record names both loci and
-    the two numbers the decision was made on, so the ledger can show its
-    working — the alternative is a copy number nobody can check.
-    """
-    by_key: dict[tuple, list[Locus]] = {}
-    for L in loci:
-        by_key.setdefault((L.contig, L.strand), []).append(L)
-    out: list[Locus] = []
-    merges: list[dict] = []
-    for (contig, strand), group in by_key.items():
-        group.sort(key=lambda L: L.start)
-        cur = None
-        for L in group:
-            if cur is None:
-                cur = Locus(contig, strand, L.start, L.end, list(L.alns))
-                continue
-            dist = L.start - cur.end
-            ov = _query_overlap_frac(cur.best, L.best)
-            if 0 <= dist <= gap and ov <= max_overlap:
-                merges.append({
-                    "contig": contig, "strand": strand,
-                    "kept_start": cur.start, "kept_end": cur.end,
-                    "merged_start": L.start, "merged_end": L.end,
-                    "gap_bp": dist, "query_overlap": round(ov, 3),
-                    "kept_bait": cur.best.bait, "merged_bait": L.best.bait,
-                    "why": (f"{dist:,} bp apart on one strand and their bait "
-                            f"spans overlap {ov:.0%} — complementary parts of "
-                            "one gene, counted once")})
-                cur.end = max(cur.end, L.end)
-                cur.alns.extend(L.alns)
-            else:
-                out.append(cur)
-                cur = Locus(contig, strand, L.start, L.end, list(L.alns))
-        if cur is not None:
-            out.append(cur)
-    return out, merges
-
-
-# ------------------------------------------------------------ copy counting
-
-def cds_footprint_bp(a: Aln) -> int:
-    """The genomic bases the alignment's exons actually occupy."""
-    return sum(e - s + 1 for s, e in (a.cds_blocks or [])) or (a.end - a.start + 1)
-
-
-def _overlap_frac(a: Aln, b: Aln) -> float:
-    ov = min(a.end, b.end) - max(a.start, b.start) + 1
-    if ov <= 0:
-        return 0.0
-    shorter = min(a.end - a.start + 1, b.end - b.start + 1)
-    return ov / shorter if shorter > 0 else 1.0
-
-
-def full_copies(loci: list[Locus], family: str,
-                cov_full: float = None,
-                max_overlap: float = None) -> list[Aln]:
-    """The distinct complete gene models the sweep found, genome-wide.
-
-    **Why this is not a count of loci.** A locus is a cluster of alignments
-    chained at `LOCUS_GAP`, and outside the vertebrates `-G` is 650 kb for the
-    metazoa, so a cluster is a large object: in the S23a pilot *Drosophila*'s
-    single 22 kb Itpr gene sat inside a locus spanning 297 kb — 13x the gene —
-    because 26 alignments from other baits chained across it. The status call
-    was right (the best alignment covered the gene's CDS completely), but two
-    real genes inside one such chain would have been counted **once**, and
-    copy number is what this task delivers.
-
-    So a copy is defined on the evidence rather than on the cluster: a genomic
-    interval carrying an alignment that covers a complete bait. Two alignments
-    that overlap are the same copy — several baits hitting one gene is the
-    normal case, not two genes — and two that do not are two copies, however
-    the clustering happened to group them. Greedy by score, so the copy is
-    anchored on the best evidence for it.
-    """
-    if cov_full is None:
-        cov_full = COV_FULL
-    if max_overlap is None:
-        max_overlap = cal.copy_max_overlap()[0]
-    cands = [a for L in loci for a in L.alns
-             if a.family == family and a.coverage >= cov_full]
-    cands.sort(key=lambda a: (-a.score, a.contig, a.start))
-    kept: list[Aln] = []
-    for a in cands:
-        if any(a.contig == b.contig and _overlap_frac(a, b) > max_overlap
-               for b in kept):
-            continue
-        kept.append(a)
-    return sorted(kept, key=lambda a: (a.contig, a.start))
-
-
 # ------------------------------------------------------------------ grading
-
-def grade(coverage: float) -> str:
-    if coverage >= COV_FULL:
-        return "full"
-    if coverage >= COV_SCRAP:
-        return "fragment"
-    return "scrap"
-
 
 def locus_row(L: Locus, family: str) -> dict:
     a = L.best_of_family(family) or L.best
@@ -230,6 +111,11 @@ def locus_row(L: Locus, family: str) -> dict:
         "n_baits": len(L.alns), "grade": grade(a.coverage),
         "family_margin": L.family_margin(),
     }
+
+
+def locus_addr(L: Locus) -> str:
+    """The key a locus's profile verdict is filed under."""
+    return f"{L.contig}:{L.start}-{L.end}"
 
 
 def _describe(L: Locus, family: str, gene_index) -> dict:
@@ -281,25 +167,51 @@ def cross_group_support(loci: list[Locus], family: str, own_group: str,
 
 def classify_genome(loci: list[Locus], gene_index, seqlens: dict, fetch_fn,
                     merge: bool = True, call_floor: float | None = None,
-                    bait_meta: dict | None = None, own_group: str = ""
-                    ) -> dict:
+                    bait_meta: dict | None = None, own_group: str = "",
+                    profiles: dict | None = None) -> dict:
     """One genome's copy-number row, its control cells and its loci.
 
     `fetch_fn(contig, start, end) -> str` supplies sequence for the N-run and
     contig-edge flags, exactly as in S5.
 
     `loci` arrives filtered only at the **recording** floor
-    (`s23_calibration.RECORD_MIN_IDENTITY`). The **call** floor is applied
-    here, and the clusters it excludes are kept in the summary as
-    `below_floor_loci` — they are the population the floor is calibrated
-    against, and a sweep that filtered them out at search time could not
-    measure its own threshold.
+    (`s23_calibration.RECORD_MIN_IDENTITY`). What decides whether a cluster is
+    *called* is `profiles`: `{addr -> verdict}` from scoring each cluster's
+    translated model against `itpr.hmm` / `ryr.hmm`, the instrument that made
+    every family call from census v3 onward (D14/D23).
+
+    **The identity floor it replaces could not do the job outside the
+    vertebrates, and S23b measured that rather than assuming it.** S5b's 0.40
+    rests on a wide empty gap; here the confirmed and contradicted populations
+    overlap on identity (0.193 up, 0.318 down) *and* on coverage, and the best
+    threshold on either statistic still discards ~70 of 226 confirmed loci —
+    because outside the vertebrates a gene's identity to its nearest bait
+    measures how far away the nearest bait is, and the nearest bait is a whole
+    phylum away. Against the independent annotation axis the profile gate is
+    **10/10** on confirmed loci and declines **10 of 11** contradicted ones.
+
+    Clusters the gate declines are kept in the summary as `below_gate_loci`:
+    they are the population the gate is measured against, and a sweep that
+    dropped them at search time could not check its own instrument. Genuine
+    short remnants that the profiles decline under D22's length floor are not
+    lost — the tblastn rescue reports them as `tblastn_trace`, which is a
+    different instrument saying so.
     """
     if call_floor is None:
         call_floor, _ = cal.call_min_identity()
     itpr_all = [L for L in loci if L.family == FAMILY_ITPR]
-    itpr_raw = [L for L in itpr_all if L.best.identity >= call_floor]
-    below = [L for L in itpr_all if L.best.identity < call_floor]
+    if profiles is None:
+        # No profile verdicts supplied — fall back to the identity floor so
+        # the classifier still runs standalone, and say which gate was used.
+        gate = "identity_floor"
+        itpr_raw = [L for L in itpr_all if L.best.identity >= call_floor]
+        below = [L for L in itpr_all if L.best.identity < call_floor]
+    else:
+        gate = "profile_call"
+        itpr_raw = [L for L in itpr_all
+                    if (profiles.get(locus_addr(L)) or {}
+                        ).get("profile_call") == FAMILY_ITPR]
+        below = [L for L in itpr_all if L not in itpr_raw]
     # The control cells are held to the *same* floor as the family, and to the
     # same grade bar. A control that can be satisfied by evidence too weak to
     # be called a gene is not a control: it would let a genome be declared
@@ -323,14 +235,23 @@ def classify_genome(loci: list[Locus], gene_index, seqlens: dict, fetch_fn,
     if merge:
         itpr, merges = merge_split_loci(itpr_raw)
 
+    def _with_profile(L: Locus) -> dict:
+        d = _describe(L, FAMILY_ITPR, gene_index)
+        v = (profiles or {}).get(locus_addr(L)) or {}
+        d.update({"profile_call": v.get("profile_call", ""),
+                  "profile_confidence": v.get("profile_confidence", ""),
+                  "profile_itpr_score": v.get("itpr_score", ""),
+                  "profile_ryr_score": v.get("ryr_score", "")})
+        return d
+
     rows = []
     for L in sorted(itpr, key=lambda L: -L.best.score):
-        d = _describe(L, FAMILY_ITPR, gene_index)
+        d = _with_profile(L)
         region = fetch_fn(L.contig, L.start - 2000, L.end + 2000)
         d.update(_locus_flags(L, seqlens, region))
         rows.append(d)
 
-    below_rows = [_describe(L, FAMILY_ITPR, gene_index)
+    below_rows = [_with_profile(L)
                   for L in sorted(below, key=lambda L: -L.best.score)[:40]]
 
     copies = full_copies(itpr, FAMILY_ITPR)
@@ -353,21 +274,22 @@ def classify_genome(loci: list[Locus], gene_index, seqlens: dict, fetch_fn,
 
     return {
         "status": status,
+        "gate": gate,
         "call_min_identity": round(call_floor, 4),
         # `n_full` is the copy number: distinct non-overlapping complete gene
         # models (`full_copies`), not the count of full-graded clusters, which
         # is kept beside it as `n_full_loci` so the difference is visible.
         "n_full": len(copies), "n_full_loci": len(full),
         "n_fragment": len(frag), "n_scrap": len(scrap),
-        "n_below_floor": len(below),
-        "best_below_floor_identity": (round(max(
+        "n_below_gate": len(below),
+        "best_below_gate_identity": (round(max(
             (L.best.identity for L in below), default=0.0), 4)),
         "copies": [{"contig": a.contig, "start": a.start, "end": a.end,
                     "strand": a.strand, "bait": a.bait,
                     "identity": round(a.identity, 4),
                     "coverage": round(a.coverage, 4), "score": a.score,
                     "cds_footprint_bp": cds_footprint_bp(a)} for a in copies],
-        "below_floor_loci": below_rows,
+        "below_gate_loci": below_rows,
         "n_loci_raw": len(itpr_raw), "n_loci_merged": len(itpr),
         "n_merges": len(merges),
         "best_coverage": rows[0]["coverage"] if rows else 0.0,
@@ -415,8 +337,11 @@ def control_verdict(row: dict, expects_ryr: bool,
                               kingdom-level divergence in this assembly, which
                               is the distance any receptor here would have to
                               be found across.
-      `controlled`            a control locus was found, from this genome's
-                              own clade only.
+      `controlled`            a complete control locus was found, from this
+                              genome's own clade only.
+      `controlled_partial`    control loci were found but none complete. Not
+                              admissible: the search has shown it finds
+                              fragments, not genes.
       `controlled_ryr_only`   no control locus, but a RyR one where RyR is
                               expected.
       `no_control_bait`       the panel carries no control bait for this
@@ -435,7 +360,11 @@ def control_verdict(row: dict, expects_ryr: bool,
         return "controlled_by_target", (
             f"{row['n_full']} full ITPR locus/loci found — the search reached "
             "this assembly, so no separate proof-of-search is needed")
-    ctl_ok = row["control_loci"] > 0
+    # A control has to demonstrate what the family call demands: recovery of a
+    # *complete* gene. A fragmentary control shows the search finds fragments,
+    # which is not the claim an absence rests on. Symmetric with `n_full`.
+    ctl_ok = row.get("control_full", 0) > 0
+    ctl_partial = row["control_loci"] > 0 and not ctl_ok
     ryr_ok = row["ryr_loci"] > 0
     cross = row.get("control_cross_groups") or []
     if ctl_ok and cross:
@@ -455,6 +384,12 @@ def control_verdict(row: dict, expects_ryr: bool,
             f"no control locus but {row['ryr_loci']} RyR locus/loci — the "
             "search "
             "reached the assembly")
+    if ctl_partial:
+        return "controlled_partial", (
+            f"{row['control_loci']} control locus/loci found, none complete — "
+            "the search finds pieces of the control here, which is not the "
+            "recovery an absence claim needs; no absence claim rests on this "
+            "genome")
     if not has_control_bait and not expects_ryr:
         return "no_control_bait", (
             "the panel carries no control bait for this genome's clade "

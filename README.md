@@ -69,13 +69,11 @@ is now counted on complete alignments rather than on alignment clusters after
 *Drosophila*'s 22 kb receptor was found sitting inside a **297 kb cluster —
 35× its own coding footprint** (**D28**).
 
-**S23c** is the sweep itself, running. At **127 of 194 genomes, 0 failures**,
-**every one of the 34 absence clades we can currently speak for holds at
-assembly level** — Ascomycota 0/31, Basidiomycota 0/17, Apicomplexa 0/3,
-Streptophyta 0/6. Two positives stand out: the annelid *Dimorphilus
-gyrociliatus* with **four** complete copies, and *Basidiobolus* — an
-early-branching fungus, well outside Dikarya — with two, which sharpens the
-fungal story rather than undermining it.
+**S23c** ran it: **194 genomes, 100 Gbp, 0 failures**. **All 35 absence clades hold at assembly level and all 35 are controlled** — Ascomycota 0/31, Streptophyta 0/25, Basidiomycota 0/17, **Apicomplexa 0/3** — with **zero genomes uncontrolled**, against 1 of 14 in the pilot. **Copy number outside the vertebrates runs 0 to 18**: most invertebrates have one, but the flatworm *Macrostomum lignano* has **18** complete genes (its 62 database records resolve to 18 real ones), the ciliate *Stentor coeruleus* 13, sponges 6 and 8. And the sweep retired a threshold rather than retuning it: **identity to the nearest bait does not separate real genes from junk out here** — the genuine ones reach down to 19 %, the junk up to 32 %, and S5b's inherited 0.40 would have discarded **87 confirmed loci, 56 of them complete genes**. Similarity to the nearest reference measures how far away the nearest reference is, which outside the vertebrates is a whole phylum (**D29**). The family call is now the profile's, validated 10/10 and 10-of-11 against the assemblies' own annotations. → [`results/s23_scope/report.md`](results/s23_scope/report.md)
+
+![Copy number outside the vertebrates](results/s23_scope/figures/copy_number.png)
+
+![Identity does not separate](results/s23_scope/figures/identity_floor.png)
 
 ---
 
@@ -191,7 +189,7 @@ One task per session. Full ledger with dependencies and results in
 | S20b | The remaining per-group convergence runs | ✅ completed 2026-09-05 |
 | S23a | Non-vertebrate sweep: scope, calibration, bait panel, pilot | ✅ completed 2026-09-05 |
 | S23b | The blocking measurements, and the instrument they change | ✅ completed 2026-09-06 |
-| S23c | The full 194-genome non-vertebrate sweep → census v6 | 🔄 in progress (127/194 swept) |
+| S23c | The full 194-genome non-vertebrate sweep → census v6 | ✅ completed 2026-09-06 |
 | S6 | Alignment upgrade (MAFFT L-INS-i + trimAl) | ⏳ pending |
 | S7 | ML phylogeny, rooted on RyR; which paralogs are sisters | ⏳ pending |
 | S8 | Synteny across the ITPR loci | ⏳ pending |

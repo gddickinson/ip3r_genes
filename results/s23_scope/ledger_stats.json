@@ -1,74 +1,87 @@
 {
- "genomes": 128,
+ "genomes": 194,
  "manifest_genomes": 194,
  "status": {
-  "no_locus": 86,
-  "tblastn_trace": 14,
-  "found_annotated": 19,
-  "assembly_gap": 4,
-  "found_no_annotation": 5
+  "no_locus": 100,
+  "found_annotated": 62,
+  "assembly_gap": 10,
+  "found_no_annotation": 12,
+  "tblastn_trace": 5,
+  "found_unannotated": 2,
+  "fragment_only": 3
  },
  "control_verdicts": {
-  "controlled_cross_kingdom": 87,
-  "no_control_bait": 9,
-  "controlled_by_target": 24,
-  "uncontrolled": 2,
-  "controlled": 5,
-  "controlled_ryr_only": 1
+  "controlled_cross_kingdom": 115,
+  "controlled_by_target": 77,
+  "controlled_partial": 1,
+  "no_control_bait": 1
  },
- "uncontrolled": 2,
+ "uncontrolled": 0,
  "by_group": {
   "amoebozoa": {
    "found_annotated": 3,
-   "no_locus": 1
+   "found_no_annotation": 1
   },
   "discoba": {
-   "tblastn_trace": 1,
-   "no_locus": 1,
-   "found_annotated": 1
+   "found_annotated": 2,
+   "fragment_only": 1
   },
   "fungi": {
-   "no_locus": 64,
-   "found_annotated": 1
+   "no_locus": 63,
+   "found_annotated": 3
   },
   "metazoa": {
-   "assembly_gap": 4,
-   "found_no_annotation": 5,
-   "no_locus": 2,
-   "found_annotated": 12
+   "assembly_gap": 8,
+   "found_annotated": 46,
+   "found_no_annotation": 10,
+   "found_unannotated": 1,
+   "no_locus": 1
   },
   "other": {
    "no_locus": 6,
-   "tblastn_trace": 7
+   "assembly_gap": 1,
+   "tblastn_trace": 2,
+   "found_no_annotation": 1,
+   "fragment_only": 1,
+   "found_unannotated": 1,
+   "found_annotated": 3
   },
   "sar": {
-   "tblastn_trace": 5,
+   "found_annotated": 3,
+   "tblastn_trace": 1,
    "no_locus": 5,
-   "found_annotated": 1
+   "fragment_only": 1,
+   "assembly_gap": 1
   },
   "viridiplantae": {
-   "no_locus": 7,
-   "tblastn_trace": 1,
-   "found_annotated": 1
+   "no_locus": 25,
+   "found_annotated": 2,
+   "tblastn_trace": 2
   }
  },
- "total_full_loci": 34,
- "total_loci_raw": 43,
+ "total_full_loci": 174,
+ "total_loci_raw": 226,
  "total_merges": 0,
- "novel_models": 36,
- "below_contiguity_bar": 11,
+ "novel_models": 185,
+ "below_contiguity_bar": 21,
  "copy_number": {
-  "0": 104,
-  "1": 17,
-  "2": 5,
-  "4": 1,
-  "3": 1
+  "0": 117,
+  "3": 14,
+  "2": 11,
+  "1": 43,
+  "13": 1,
+  "18": 1,
+  "4": 3,
+  "5": 2,
+  "6": 1,
+  "8": 1
  },
- "total_full_loci_unmerged": 34,
- "genomes_copy_differs_from_loci": 0,
- "loci_below_floor": 344,
- "call_min_identity": 0.4,
- "absence_clades_covered": 34,
+ "total_full_loci_unmerged": 167,
+ "genomes_copy_differs_from_loci": 7,
+ "loci_below_gate": 694,
+ "gate": "profile_call",
+ "call_min_identity": 0.15,
+ "absence_clades_covered": 35,
  "absence_clades": 35,
- "wall_clock_s": 3442.3
+ "wall_clock_s": 6121.4
 }

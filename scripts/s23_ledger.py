@@ -27,6 +27,7 @@ for _p in (PROJECT_ROOT, PROJECT_ROOT / "scripts"):
         sys.path.insert(0, str(_p))
 
 from src.utils.data_root import get_data_root                  # noqa: E402
+import s23_classify as clf                                     # noqa: E402
 import s23_scope as scope                                      # noqa: E402
 from s5_build_baits import read_tsv, write_tsv                 # noqa: E402
 
@@ -39,7 +40,7 @@ MANIFEST = OUT_DIR / "genome_manifest_s23.tsv"
 #: or where several baits hit one, and that difference is a result.
 LEDGER_COLS = ["accession", "organism", "group", "kingdom", "phylum", "class",
                "reasons", "status", "n_full", "n_full_loci", "n_fragment",
-               "n_scrap", "n_below_floor", "best_below_floor_identity",
+               "n_scrap", "n_below_gate", "best_below_gate_identity",
                "n_loci_raw", "n_merges", "best_coverage", "best_identity",
                "annotated_full", "family_named_full", "control_loci",
                "ryr_loci",
@@ -80,6 +81,7 @@ def build(summaries: list[dict]) -> dict:
             "accession": s["accession"], "organism": s["organism"],
             "group": s.get("group", ""), "expects_ryr": s.get("expects_ryr"),
             "control_loci": s.get("control_loci", 0),
+            "control_full": s.get("control_full", 0),
             "ryr_loci": s.get("ryr_loci", 0),
             "cross_kingdom_baits": ",".join(s.get("control_cross_groups")
                                             or []),
@@ -125,7 +127,7 @@ def absence_table(summaries: list[dict]) -> list[dict]:
                (row.get("class") == c["clade"] and c["rank"] == "class"):
                 hits.append(s)
         controlled = [s for s in hits
-                      if s.get("control_verdict", "").startswith("controlled")]
+                      if s.get("control_verdict", "") in clf.ADMISSIBLE_CONTROL]
         with_itpr = [s for s in controlled if s.get("n_full", 0) > 0]
         traces = [s for s in controlled
                   if s.get("n_full", 0) == 0
@@ -170,7 +172,8 @@ def main() -> int:
     write_tsv(OUT_DIR / "control_ledger.tsv",
               ["accession", "organism", "group", "expects_ryr",
                "control_loci",
-               "ryr_loci", "cross_kingdom_baits", "verdict", "why"],
+               "control_full", "ryr_loci", "cross_kingdom_baits", "verdict",
+               "why"],
               t["controls"])
     absences = absence_table(summaries)
     write_tsv(OUT_DIR / "absence_at_genome.tsv",
@@ -202,7 +205,8 @@ def main() -> int:
         "genomes_copy_differs_from_loci": sum(
             1 for s in summaries
             if s.get("n_full", 0) != s.get("n_full_loci", 0)),
-        "loci_below_floor": sum(s.get("n_below_floor", 0) for s in summaries),
+        "loci_below_gate": sum(s.get("n_below_gate", 0) for s in summaries),
+        "gate": (summaries[0].get("gate") if summaries else None),
         "call_min_identity": (summaries[0].get("call_min_identity")
                               if summaries else None),
         "absence_clades_covered": sum(1 for a in absences

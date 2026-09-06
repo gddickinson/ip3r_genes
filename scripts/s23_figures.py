@@ -52,13 +52,29 @@ FIGDIR = OUT / "figures"
 #: colours come from `figstyle.GROUP`, which already encodes plant / protist /
 #: fungi / invertebrate, so an S23 figure and an S6 alignment figure name the
 #: same lineage in the same colour.
+#: The sweep's seven kingdom-level groups collapsed onto the four lineage
+#: classes `figstyle.GROUP` encodes. SAR, Amoebozoa, Discoba and "other" all
+#: map to `protist` in that palette, so drawing them as four series drew four
+#: bars in one colour — a distinction the reader cannot see is not a
+#: distinction, and inventing colours outside the palette would break the one
+#: style system every figure in this project goes through. The per-group
+#: numbers are in `copy_number_ledger.tsv` for anyone who needs them split.
+LINEAGE = {"metazoa": "invert_metazoa", "viridiplantae": "plant",
+           "fungi": "fungi", "sar": "protist", "amoebozoa": "protist",
+           "discoba": "protist", "other": "protist"}
 GROUPS = [("metazoa", "invert_metazoa"), ("viridiplantae", "plant"),
-          ("fungi", "fungi"), ("sar", "protist"), ("amoebozoa", "protist"),
-          ("discoba", "protist"), ("other", "protist")]
+          ("fungi", "fungi"), ("protist", "protist")]
 GROUP_COLOUR = {g: fs.GROUP[k] for g, k in GROUPS}
 GROUP_LABEL = {"metazoa": "Metazoa (non-vert.)", "viridiplantae": "Viridiplantae",
-               "fungi": "Fungi", "sar": "SAR", "amoebozoa": "Amoebozoa",
-               "discoba": "Discoba", "other": "other eukaryotes"}
+               "fungi": "Fungi", "protist": "protists (SAR, Amoebozoa, "
+                                            "Discoba, other)"}
+
+
+def lineage_of(group: str) -> str:
+    """Which of the four palette classes a sweep group belongs to."""
+    key = LINEAGE.get(group or "other", "protist")
+    return {"invert_metazoa": "metazoa", "plant": "viridiplantae",
+            "fungi": "fungi", "protist": "protist"}[key]
 
 
 def read_tsv(path: Path) -> list[dict]:
@@ -91,7 +107,7 @@ def fig_copy_number(ledger: list[dict]) -> None:
             if (r.get("control_verdict") or "").startswith("controlled")]
     by_group: dict[str, Counter] = defaultdict(Counter)
     for r in rows:
-        by_group[r.get("group") or "other"][_int(r.get("n_full"))] += 1
+        by_group[lineage_of(r.get("group"))][_int(r.get("n_full"))] += 1
     groups = [g for g in order if by_group.get(g)]
     max_n = max((max(c) for c in by_group.values() if c), default=0)
     bins = list(range(0, min(max_n, 6) + 1))
@@ -151,48 +167,64 @@ def fig_absence(absences: list[dict]) -> None:
 
 
 def fig_identity_floor(loci: list[dict], cal: dict | None) -> None:
-    """The measured floor: confirmed loci against contradicted ones."""
-    pops = {
-        "confirmed": [_float(r["identity"]) for r in loci
-                      if r["evidence"] == "confirmed"],
-        "contradicted": [_float(r["identity"]) for r in loci
-                         if r["evidence"] in ("contradicted", "sister")],
-        "unnamed": [_float(r["identity"]) for r in loci
-                    if r["evidence"] in ("unnamed", "no_annotation")],
-    }
-    colours = {"confirmed": fs.STATUS["found_annotated"],
-               "contradicted": fs.STATUS["absent"],
-               "unnamed": "#a9a79e"}
-    labels = {"confirmed": "the assembly's own annotation names a family gene",
-              "contradicted": "…names a different gene (or a RyR)",
-              "unnamed": "no informative annotation"}
+    """What the identity floor would have cost, and why it was retired.
 
-    fig, ax = plt.subplots(figsize=(fs.W_FULL, 2.6))
-    for i, (k, vals) in enumerate(pops.items()):
-        if not vals:
+    The figure the measurement demands, not the one S5b's version would have
+    drawn. There the two populations were separated by a wide empty gap and
+    the picture was "here is the gap and here is the floor in it". Here they
+    overlap, so the picture is the overlap — with the inherited 0.40 drawn
+    where it would have fallen and labelled with what it would have discarded.
+    """
+    def conf(r):
+        return (r.get("profile_evidence") == "profile_confirmed"
+                or r["evidence"] == "confirmed")
+
+    def contra(r):
+        return (r["evidence"] in ("contradicted", "sister")
+                or r.get("profile_evidence") == "profile_contradicted")
+
+    pops = [
+        ("confirmed", [r for r in loci if conf(r)],
+         fs.STATUS["found_annotated"],
+         "confirmed a family gene (profile call, or the assembly's own name)"),
+        ("contradicted", [r for r in loci if contra(r)], fs.STATUS["absent"],
+         "the annotation names a different gene, or the profiles call RyR"),
+        ("no evidence", [r for r in loci if not conf(r) and not contra(r)],
+         "#c9c3b0", "neither axis says anything"),
+    ]
+
+    fig, ax = plt.subplots(figsize=(fs.W_FULL, 2.9))
+    for i, (_lab, rows, colour, legend) in enumerate(pops):
+        if not rows:
             continue
-        ax.scatter(vals, [i + 0.0] * len(vals), s=11, alpha=0.55,
-                   color=colours[k], edgecolors="none",
-                   label=f"{labels[k]} (n={len(vals)})")
+        xs = [_float(r["identity"]) for r in rows]
+        ax.scatter(xs, [i] * len(xs), s=13, alpha=0.45, color=colour,
+                   edgecolors="none", label=f"{legend} (n={len(rows)})")
+    inherited = 0.40
     if cal:
-        floor = float(cal.get("call_min_identity", 0))
-        rec = float(cal.get("record_min_identity", 0))
-        ax.axvline(floor, color="#52514e", lw=1.0)
-        ax.text(floor + 0.004, len(pops) - 0.35,
-                f"call floor {floor:.2f}", fontsize=6.4, color="#52514e")
-        ax.axvline(rec, color="#a9a79e", lw=0.8, ls=":")
-        ax.text(rec + 0.004, -0.42, f"recorded from {rec:.2f}", fontsize=6.0,
+        inherited = float(cal.get("inherited_call_min_identity", 0.40))
+    lost = sum(1 for r in loci if conf(r) and _float(r["identity"]) < inherited)
+    lost_full = sum(1 for r in loci if conf(r) and r.get("grade") == "full"
+                    and _float(r["identity"]) < inherited)
+    ax.axvline(inherited, color="#b3261e", lw=1.1, ls="--")
+    ax.text(inherited + 0.015, 2.46,
+            f"S5b's inherited floor {inherited:.2f} would discard\n{lost} "
+            f"confirmed loci, {lost_full} of them complete genes",
+            fontsize=6.3, color="#b3261e", ha="left", va="top")
+    if cal:
+        rec = float(cal.get("record_min_identity", 0.15))
+        ax.axvline(rec, color="#8a897f", lw=0.8, ls=":")
+        ax.text(rec + 0.006, -0.46, f"recorded from {rec:.2f}", fontsize=6.0,
                 color="#8a897f")
     ax.set_yticks(range(len(pops)))
-    ax.set_yticklabels(["confirmed", "contradicted", "no evidence"],
-                       fontsize=6.6)
-    ax.set_ylim(-0.6, len(pops) - 0.4)
-    ax.set_xlabel("locus identity (best alignment)")
-    ax.set_title("Where the locus identity floor sits, and what it separates",
-                 loc="left")
+    ax.set_yticklabels([p[0] for p in pops], fontsize=6.8)
+    ax.set_ylim(-0.65, len(pops) - 0.15)
+    ax.set_xlabel("locus identity to its nearest bait")
+    ax.set_title("Identity does not separate real genes from junk outside "
+                 "the vertebrates", loc="left")
     fs.despine(ax)
     ax.legend(fontsize=6.0, frameon=False, loc="upper left",
-              bbox_to_anchor=(0.0, -0.32), ncol=1)
+              bbox_to_anchor=(0.0, -0.30), ncol=1)
     fig.tight_layout()
     fs.save(fig, str(FIGDIR / "identity_floor"))
     plt.close(fig)
@@ -204,7 +236,7 @@ def fig_span_inflation(spans: list[dict]) -> None:
     for r in spans:
         v = _float(r.get("span_inflation"))
         if v > 0:
-            by_group[r.get("group") or "other"].append(v)
+            by_group[lineage_of(r.get("group"))].append(v)
     groups = [g for g, _ in GROUPS if by_group.get(g)]
 
     fig, ax = plt.subplots(figsize=(fs.W_FULL, 2.6))

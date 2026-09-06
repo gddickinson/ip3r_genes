@@ -59,9 +59,10 @@ import s23_classify as clf                                     # noqa: E402
 import s5_genome_io as gio                                     # noqa: E402
 import s5_rescue as rescue_lib                                 # noqa: E402
 from s5_run_sweep import filter_hsps_outside                   # noqa: E402
+from s5_census_v4 import score_models                          # noqa: E402
 import s5_sweep_lib as lib                                     # noqa: E402
 
-SWEEP_VERSION = "s23.2"
+SWEEP_VERSION = "s23.3"
 MANIFEST = PROJECT_ROOT / "results" / "s23_scope" / "genome_manifest_s23.tsv"
 BAITS_DIR = PROJECT_ROOT / "results" / "s23_baits"
 #: How many ITPR baits a rescue query carries, spread across clade bands.
@@ -170,6 +171,40 @@ def run_alignment(row: dict, fna: Path, panel: Path, out: Path, meta: dict,
     return alns, loci, max_intron, n_chunks, baits_version
 
 
+def score_loci(loci: list, out: Path) -> dict:
+    """Score every recorded ITPR cluster's model with itpr.hmm / ryr.hmm.
+
+    This is the sweep's family gate (D14/D23) — the same instrument that
+    called census v3 — and it replaces the inherited identity floor, which
+    S23b measured and found cannot separate real deep homologs from chained
+    junk outside the vertebrates. Cached per genome so a reclassify pass does
+    not re-score what has not changed.
+    """
+    models = {}
+    for L in loci:
+        if L.family != spec.FAMILY_ITPR:
+            continue
+        best = L.best_of_family(spec.FAMILY_ITPR) or L.best
+        seq = (best.translation or "").replace("*", "")
+        if len(seq) >= 60:
+            models[clf.locus_addr(L)] = seq
+    if not models:
+        return {}
+    cache = out / "locus_profiles.json"
+    if cache.exists():
+        try:
+            prev = json.loads(cache.read_text())
+            if set(prev.get("models", {})) == set(models):
+                return prev["verdicts"]
+        except (json.JSONDecodeError, KeyError):
+            pass
+    verdicts = score_models(models)
+    cache.write_text(json.dumps(
+        {"models": {k: len(v) for k, v in models.items()},
+         "verdicts": verdicts}, indent=1))
+    return verdicts
+
+
 def run_rescue(fna: Path, out: Path, rescue_faa: Path, panel: Path,
                meta: dict, gene_index, known: list, fetch_fn,
                threads: int) -> dict:
@@ -251,9 +286,13 @@ def process_genome(row: dict, panel: Path, rescue_faa: Path, meta: dict,
     # classifier's rows lose the Aln objects
     by_pos = {(a.contig, a.start): a.translation for a in alns}
     call_floor, call_why = cal.call_min_identity()
+    t = time.time()
+    profiles = score_loci(loci, out)
+    timings["profile_s"] = round(time.time() - t, 1)
     cn = clf.classify_genome(loci, gene_index, seqlens, fetch_fn,
                              call_floor=call_floor, bait_meta=meta,
-                             own_group=row.get("group") or "")
+                             own_group=row.get("group") or "",
+                             profiles=profiles)
     for d in cn["loci"]:
         d["_translation"] = by_pos.get((d["contig"], d["start"]), "")
 
@@ -320,8 +359,8 @@ def one_line(s: dict) -> str:
     bits = [f"{s['status']}", f"copies={s['n_full']}"]
     if s["n_fragment"] or s["n_scrap"]:
         bits.append(f"(+{s['n_fragment']}frag/{s['n_scrap']}scrap)")
-    if s.get("n_below_floor"):
-        bits.append(f"[{s['n_below_floor']} under floor]")
+    if s.get("n_below_gate"):
+        bits.append(f"[{s['n_below_gate']} declined]")
     if s["n_merges"]:
         bits.append(f"[{s['n_merges']} split-merge]")
     bits.append(f"ctl:{s['control_loci']}")
