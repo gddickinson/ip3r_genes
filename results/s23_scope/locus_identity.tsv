@@ -1,0 +1,50 @@
+accession	organism	group	phylum	called	identity	coverage	grade	evidence	annot_gene	bait	band	status
+GCA_001661475.1	Tortispora caseinolytica NRRL Y-17796	fungi	Ascomycota	0	0.2301	0.1992	scrap	no_annotation		L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	no_locus
+GCA_001661475.1	Tortispora caseinolytica NRRL Y-17796	fungi	Ascomycota	0	0.1944	0.113	scrap	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	no_locus
+GCF_000001215.4	Drosophila melanogaster	metazoa	Arthropoda	1	1.0	1.0	full	confirmed	Itpr	P29993|Itpr|Drosophila_melanogaster|Arthropoda|ITPR	Arthropoda	found_annotated
+GCF_000001215.4	Drosophila melanogaster	metazoa	Arthropoda	0	0.244	0.3966	fragment	contradicted	Myo81F	Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated
+GCF_000001215.4	Drosophila melanogaster	metazoa	Arthropoda	0	0.2173	0.2641	scrap	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	Echinodermata	1	1.0	1.0	full	unnamed	LOC594527	A0A7M7MY00|unnamed|Strongylocentrotus_purpuratus|Echinodermata|ITPR	Echinodermata	found_annotated
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	Echinodermata	1	0.2978	0.1656	scrap	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	Echinodermata	1	0.2942	0.1668	scrap	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	Echinodermata	1	0.2649	0.1643	scrap	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	Echinodermata	1	0.2824	0.1662	scrap	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	Echinodermata	0	0.2301	0.4356	fragment	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	Echinodermata	0	0.2127	0.1684	scrap	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	Echinodermata	0	0.2187	0.1228	scrap	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	Echinodermata	0	0.2407	0.1083	scrap	unnamed	LOC583678	Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	Echinodermata	0	0.1932	0.6638	fragment	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	Chlorophyta	1	0.9997	1.0	full	unnamed	CHLRE_16g665450v5	A0A2K3CTW4|CHLRE_16g665450v5|Chlamydomonas_reinhardtii|Chlorophyta|ITPR	Chlorophyta	found_annotated
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	Chlorophyta	1	0.2841	0.2811	scrap	no_annotation		L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	found_annotated
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	Chlorophyta	1	0.2767	0.2578	scrap	no_annotation		L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	found_annotated
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	Chlorophyta	1	0.2777	0.2718	scrap	no_annotation		L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	found_annotated
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	Chlorophyta	1	0.2511	0.2461	scrap	no_annotation		L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	found_annotated
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	Chlorophyta	1	0.2857	0.103	scrap	no_annotation		A0A267FK94|BOX15_Mlig001931g6|Macrostomum_lignano|Platyhelminthes|ITPR	Platyhelminthes	found_annotated
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	Chlorophyta	0	0.2463	0.506	fragment	no_annotation		L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	found_annotated
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	Chlorophyta	0	0.2483	0.2563	scrap	no_annotation		L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	found_annotated
+GCF_000002985.6	Caenorhabditis elegans	metazoa	Nematoda	1	1.0	1.0	full	confirmed	itr-1	Q9Y0A1|itr-1|Caenorhabditis_elegans|Nematoda|ITPR	Nematoda	found_annotated
+GCF_000004695.1	Dictyostelium discoideum AX4	amoebozoa	Evosea	1	1.0	1.0	full	confirmed	iplA	Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated
+GCF_000004695.1	Dictyostelium discoideum AX4	amoebozoa	Evosea	0	0.1923	0.2193	scrap	unnamed	DDB_G0282963	A0AA88KEU5|C9374_011999|Naegleria_lovaniensis|Heterolobosea|ITPR	Heterolobosea	found_annotated
+GCF_000006565.2	Toxoplasma gondii ME49	sar	Apicomplexa	0	0.2657	0.1737	scrap	no_annotation		L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	no_locus
+GCF_000146045.2	Saccharomyces cerevisiae S288C	fungi	Ascomycota	0	0.2088	0.6503	fragment	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	no_locus
+GCF_000182925.2	Neurospora crassa OR74A	fungi	Ascomycota	1	0.268	0.2368	scrap	no_annotation		L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	fragment_only
+GCF_000182925.2	Neurospora crassa OR74A	fungi	Ascomycota	0	0.2352	0.244	scrap	contradicted	NCU05047	L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	fragment_only
+GCF_000182925.2	Neurospora crassa OR74A	fungi	Ascomycota	0	0.2085	0.2497	scrap	no_annotation		L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	fragment_only
+GCF_000182925.2	Neurospora crassa OR74A	fungi	Ascomycota	0	0.2216	0.1042	scrap	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	fragment_only
+GCF_000182925.2	Neurospora crassa OR74A	fungi	Ascomycota	0	0.1858	0.1693	scrap	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	fragment_only
+GCF_000203795.2	Batrachochytrium dendrobatidis JAM81	fungi	Chytridiomycota	0	0.1955	0.2494	scrap	unnamed	BATDEDRAFT_86540	L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	no_locus
+GCF_000203795.2	Batrachochytrium dendrobatidis JAM81	fungi	Chytridiomycota	0	0.2196	0.181	scrap	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	no_locus
+GCF_000349005.2	Pneumocystis murina B123	fungi	Ascomycota	0	0.2176	0.169	scrap	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	no_locus
+GCF_000349005.2	Pneumocystis murina B123	fungi	Ascomycota	0	0.2335	0.1007	scrap	unnamed	PNEG_03332	Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	no_locus
+GCF_000349005.2	Pneumocystis murina B123	fungi	Ascomycota	0	0.2305	0.1007	scrap	unnamed	PNEG_02613	Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	no_locus
+GCF_000400465.1	Wallemia ichthyophaga EXF-994	fungi	Basidiomycota	0	0.2175	0.2817	scrap	no_annotation		L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	no_locus
+GCF_000400465.1	Wallemia ichthyophaga EXF-994	fungi	Basidiomycota	0	0.2114	0.2766	scrap	unnamed	J056_004507	L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	no_locus
+GCF_000400465.1	Wallemia ichthyophaga EXF-994	fungi	Basidiomycota	0	0.1998	0.2452	scrap	no_annotation		L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	no_locus
+GCF_000400465.1	Wallemia ichthyophaga EXF-994	fungi	Basidiomycota	0	0.2091	0.1656	scrap	unnamed	J056_000101	Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	no_locus
+GCF_000400465.1	Wallemia ichthyophaga EXF-994	fungi	Basidiomycota	0	0.1982	0.3324	fragment	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	no_locus
+GCF_034140825.1	Oryza sativa Japonica Group	viridiplantae	Streptophyta	1	0.3088	0.1637	scrap	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	fragment_only
+GCF_034140825.1	Oryza sativa Japonica Group	viridiplantae	Streptophyta	0	0.2464	0.2404	scrap	no_annotation		L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	Discosea	fragment_only
+GCF_932526225.1	Nematostella vectensis	metazoa	Cnidaria	1	0.8456	1.0	full	unnamed	LOC5509439	A0A6P8IUM8|LOC116304295|Actinia_tenebrosa|Cnidaria|ITPR	Cnidaria	found_annotated
+GCF_932526225.1	Nematostella vectensis	metazoa	Cnidaria	1	0.2582	0.3138	fragment	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated
+GCF_932526225.1	Nematostella vectensis	metazoa	Cnidaria	1	0.2632	0.3261	fragment	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated
+GCF_932526225.1	Nematostella vectensis	metazoa	Cnidaria	1	0.2599	0.2496	scrap	no_annotation		Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	Evosea	found_annotated

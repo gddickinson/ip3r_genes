@@ -9,9 +9,10 @@ whether any trace is there at all.
 **The control logic is where this differs from S5 and it is not a detail.**
 S5 can say "a genome with no RyR locus is broken" because every vertebrate has
 three RyRs. Outside Metazoa that is false — S20 found architecture-level RyR in
-2 of 6,928 non-metazoan proteomes — so this sweep carries the **MIR-domain
-sharer** as its universal positive control (bait rule B2) and RyR only where a
-RyR is expected. A genome that fails its control is not a negative result; it
+2 of 6,928 non-metazoan proteomes — so this sweep carries a **proof-of-search
+control drawn from the clade the claim is about** (bait rule B2), whose
+protein family is measured per clade by `s23_control_select`, and RyR only
+where a RyR is expected. A genome that fails its control is not a negative result; it
 is excluded from every absence claim, and `s23_classify.control_verdict` is
 what decides which.
 
@@ -57,9 +58,10 @@ import s23_calibration as cal                                  # noqa: E402
 import s23_classify as clf                                     # noqa: E402
 import s5_genome_io as gio                                     # noqa: E402
 import s5_rescue as rescue_lib                                 # noqa: E402
+from s5_run_sweep import filter_hsps_outside                   # noqa: E402
 import s5_sweep_lib as lib                                     # noqa: E402
 
-SWEEP_VERSION = "s23.1"
+SWEEP_VERSION = "s23.2"
 MANIFEST = PROJECT_ROOT / "results" / "s23_scope" / "genome_manifest_s23.tsv"
 BAITS_DIR = PROJECT_ROOT / "results" / "s23_baits"
 #: How many ITPR baits a rescue query carries, spread across clade bands.
@@ -160,7 +162,11 @@ def run_alignment(row: dict, fna: Path, panel: Path, out: Path, meta: dict,
     else:
         n_chunks = prev.get("miniprot_chunks", 1)
     alns = lib.parse_miniprot_gff(gff, meta)
-    loci = lib.filter_loci(lib.cluster_loci(alns))
+    # Filtered at the **recording** floor, not the call floor: the call floor
+    # is measured from what this records (`s23_calibration`), so a sweep that
+    # applied it here would have discarded its own calibration data.
+    loci = lib.filter_loci(lib.cluster_loci(alns),
+                           min_identity=cal.RECORD_MIN_IDENTITY)
     return alns, loci, max_intron, n_chunks, baits_version
 
 
@@ -174,9 +180,14 @@ def run_rescue(fna: Path, out: Path, rescue_faa: Path, panel: Path,
     if fresh:
         rescue_lib.run_makeblastdb(fna, db)
         rescue_lib.run_tblastn(rescue_faa, db, tsv, threads=threads)
-    hsps = [h for h in rescue_lib.parse_tblastn(tsv)
-            if not any(h["contig"] == c and h["start"] <= e + 5000
-                       and h["end"] >= s - 5000 for c, s, e in known)]
+    # S5's own filter, imported rather than reimplemented. The inline version
+    # this replaces read `h["start"]`/`h["end"]`, which `parse_tblastn` does
+    # not produce (`sstart`/`send`), and it also ignored that tblastn reports
+    # them reversed on the minus strand. It never fired because every
+    # `no_locus` genome up to *Salpingoeca rosetta* returned zero HSPs, so the
+    # generator's predicate was never evaluated — a bug that waits for the
+    # first genome where the rescue has something to say.
+    hsps = filter_hsps_outside(rescue_lib.parse_tblastn(tsv), known)
     summ = rescue_lib.summarize_tblastn(hsps) or {"n_hsps": 0}
     regions = rescue_lib.cluster_hsps(hsps)[:rescue_lib.MAX_REGIONS]
     for r in regions:
@@ -239,7 +250,10 @@ def process_genome(row: dict, panel: Path, rescue_faa: Path, meta: dict,
     # keep each locus's translation for the novel-model FASTA before the
     # classifier's rows lose the Aln objects
     by_pos = {(a.contig, a.start): a.translation for a in alns}
-    cn = clf.classify_genome(loci, gene_index, seqlens, fetch_fn)
+    call_floor, call_why = cal.call_min_identity()
+    cn = clf.classify_genome(loci, gene_index, seqlens, fetch_fn,
+                             call_floor=call_floor, bait_meta=meta,
+                             own_group=row.get("group") or "")
     for d in cn["loci"]:
         d["_translation"] = by_pos.get((d["contig"], d["start"]), "")
 
@@ -249,7 +263,7 @@ def process_genome(row: dict, panel: Path, rescue_faa: Path, meta: dict,
     # Controls are built per *absence* clade (bait rule B2), so most genomes
     # have none, and "no control fired" there means nothing.
     clades = {row.get("class", ""), row.get("phylum", "")}
-    has_ctl = any(m.get("family") == spec.CONTROL_MIR
+    has_ctl = any(m.get("family") == spec.CONTROL_ROLE
                   and m.get("band") in clades for m in meta.values())
     verdict, why = clf.control_verdict(cn, expects_ryr, has_ctl)
 
@@ -286,7 +300,9 @@ def process_genome(row: dict, panel: Path, rescue_faa: Path, meta: dict,
         "spans_gene": holds, "contiguity_bar_bp": bar, "bar_source": bar_why,
         "run_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "n_alignments": len(alns), "n_loci_all_families": len(loci),
-        "min_locus_identity": lib.MIN_LOCUS_IDENTITY,
+        "record_min_identity": cal.RECORD_MIN_IDENTITY,
+        "call_min_identity_why": call_why,
+        "copy_max_overlap": cal.copy_max_overlap()[0],
         "expects_ryr": expects_ryr, "has_control_bait": has_ctl,
         "control_verdict": verdict, "control_why": why,
         "rescue": rescue,
@@ -301,16 +317,20 @@ def process_genome(row: dict, panel: Path, rescue_faa: Path, meta: dict,
 
 
 def one_line(s: dict) -> str:
-    bits = [f"{s['status']}", f"n_full={s['n_full']}"]
+    bits = [f"{s['status']}", f"copies={s['n_full']}"]
     if s["n_fragment"] or s["n_scrap"]:
         bits.append(f"(+{s['n_fragment']}frag/{s['n_scrap']}scrap)")
+    if s.get("n_below_floor"):
+        bits.append(f"[{s['n_below_floor']} under floor]")
     if s["n_merges"]:
         bits.append(f"[{s['n_merges']} split-merge]")
-    bits.append(f"MIR:{s['mir_loci']}")
+    bits.append(f"ctl:{s['control_loci']}")
     if s["expects_ryr"]:
         bits.append(f"RYR:{s['ryr_loci']}")
     if s["control_verdict"] == "uncontrolled":
         bits.append("** UNCONTROLLED **")
+    elif s["control_verdict"] == "controlled_cross_kingdom":
+        bits.append("ctl:x-kingdom")
     if not s["spans_gene"]:
         bits.append("[below contiguity bar]")
     return "  ".join(bits)
@@ -320,7 +340,7 @@ def write_live(done: int, total: int, current: str) -> None:
     path = PROJECT_ROOT / "results" / "session_live.json"
     try:
         path.write_text(json.dumps({
-            "task": "S23a", "workers": 1,
+            "task": "S23b", "workers": 1,
             "steps": [{"label": f"genomes swept {done}/{total}",
                        "done": done >= total},
                       {"label": f"current: {current}", "done": False}],

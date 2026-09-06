@@ -124,7 +124,9 @@ BANDS: dict[str, str] = {
 #: B2 — the groups where a RyR locus is *expected*, so a RyR bait is a
 #: positive control there. Everywhere else RyR is a decoy and its absence is
 #: a result (S20: 2 architecture-level RyR proteomes outside Metazoa in
-#: 6,928). The MIR-sharer control (`CONTROL_MIR`) runs in every genome.
+#: 6,928). The proof-of-search control (`CONTROL_ROLE`) runs in every
+#: genome, and which protein family it is drawn from is measured per clade
+#: by `s23_control_select` rather than fixed here.
 RYR_CONTROL_GROUPS = {"metazoa"}
 
 #: B3 — bands taking two ITPR baits, because they dominate the scope. Set
@@ -136,13 +138,19 @@ DEEP_BANDS = {"Arthropoda", "Mollusca", "Nematoda"}
 #: Band ordering for reports and figures.
 BAND_ORDER = list(BANDS)
 
-#: The three bait roles. `CONTROL_MIR` baits are not family members: they are
+#: The three bait roles. `CONTROL_ROLE` baits are not family members: they are
 #: the proof-of-search (B2) and simultaneously the sharpest available decoy,
 #: since MIR is the one family domain every eukaryote carries on something
 #: else.
 FAMILY_ITPR = "ITPR"
 FAMILY_RYR = "RYR"
-CONTROL_MIR = "MIR"
+#: The role tag was `"MIR"` while PF02815 was the only control profile. It
+#: is `"CONTROL"` now because it is not: S23b measures the control profile
+#: per clade, and a myosin bait tagged `MIR` would be a label that lies.
+#: `CONTROL_MIR` stays as an alias for the callers that still name the
+#: MIR-specific selector.
+CONTROL_ROLE = "CONTROL"
+CONTROL_MIR = CONTROL_ROLE
 
 #: B4 — the chimera-screen thresholds. Imported from S5's spec rather than
 #: retyped, so the two panels cannot be screened to different standards.

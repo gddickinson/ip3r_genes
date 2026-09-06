@@ -39,7 +39,9 @@ for _p in (PROJECT_ROOT, PROJECT_ROOT / "scripts"):
         sys.path.insert(0, str(_p))
 
 import s23_bait_spec as spec                                   # noqa: E402
-import s23_controls as controls                                # noqa: E402
+import s23_control_profiles as ctl_profiles                    # noqa: E402
+import s23_control_select as controls                          # noqa: E402
+import s23_controls as mir_controls                            # noqa: E402
 import s5_bait_screen as screen_lib                            # noqa: E402
 from s3_hmm_lib import acc_key                                 # noqa: E402
 from s5_build_baits import (read_tsv, sha256,                  # noqa: E402
@@ -57,9 +59,13 @@ OUT_DIR = PROJECT_ROOT / "results" / "s23_baits"
 RULES = [
     ("B1", "family from the census call, never a gene symbol",
      "call in (ITPR, RYR)"),
-    ("B2", "RyR is a positive control only where RyR is expected; the "
-           "MIR-domain sharer is the control everywhere",
-     "RYR_CONTROL_GROUPS = " + ",".join(sorted(spec.RYR_CONTROL_GROUPS))),
+    ("B2", "RyR is a positive control only where RyR is expected; every "
+           "other genome carries a control drawn from the clade the claim is "
+           "about, and **which profile** that control uses is measured per "
+           "clade rather than fixed in advance (s23_control_select)",
+     "RYR_CONTROL_GROUPS = " + ",".join(sorted(spec.RYR_CONTROL_GROUPS))
+     + "; candidates = "
+     + ",".join(c["pfam"] for c in ctl_profiles.CANDIDATES)),
     ("B3", "measured length band + one bait per band, two in the deep bands",
      "DEEP_BANDS = " + ",".join(sorted(spec.DEEP_BANDS))),
     ("B4", "chimera screen: S3's margin + envelope coverage, S5's module",
@@ -82,7 +88,13 @@ MANIFEST_COLS = ["id", "accession", "band", "group", "role", "paralog",
 def manifest_row(m: dict) -> dict:
     return {
         "id": m["id"], "accession": m["accession"], "band": m["band"],
-        "group": spec.group_of_band(m["band"]), "role": m["role"],
+        # A control bait's group is the reference-proteome DB it came out of,
+        # not the band it controls for: the cross-kingdom control tier
+        # (`s23_classify.cross_group_support`) compares a bait's origin
+        # against the genome's, and a class-level band name resolves to no
+        # group at all.
+        "group": m.get("db_group") or spec.group_of_band(m["band"]),
+        "role": m["role"],
         # `paralog` and `clade` keep the S5 column names so `s5_sweep_lib`'s
         # bait loader reads this manifest unchanged; outside the vertebrates
         # the paralog is the band (B1).
@@ -128,15 +140,39 @@ def main() -> int:
         panel, unfilled, screen_rows = fill(slots, seeds, args.shortlist,
                                             work, in_band_counts)
 
-        ctl_rows, ctl_unfilled, ctl_seqs = controls.build(
+        ctl_rows, ctl_unfilled, ctl_seqs, ctl_stats, ctl_choice = \
+            controls.build(args.threads, args.force_controls)
+        controls.write_tables(ctl_stats, ctl_choice)
+        # **Both controls travel, and they do different jobs.** The measured
+        # one above is the proof-of-search: whichever profile a clade actually
+        # carries, chosen by coverage. The MIR one below stays because it is
+        # the only control that is *in the family's own signature set* — a MIR
+        # protein called ITPR is the sharpest possible failure of D14, and the
+        # panel is what gives that failure somewhere to show up. Dropping it
+        # for the better proof-of-search would buy a control and sell a
+        # negative control. Where a clade's measured choice *is* PF02815 the
+        # two coincide and the duplicate is dropped.
+        mir_rows, mir_unfilled, mir_seqs = mir_controls.build(
             args.threads, args.force_controls)
+        have = {r["accession"] for r in ctl_rows}
+        for r in mir_rows:
+            if r["accession"] in have:
+                continue
+            ctl_rows.append(dict(r, pfam="PF02815", profile_label="MIR",
+                                 reason="D14 decoy control for "
+                                        f"{r['control_for']}: " + r["reason"]))
+            have.add(r["accession"])
+        ctl_seqs = {**mir_seqs, **ctl_seqs}
+        ctl_unfilled = [u for u in ctl_unfilled
+                        if u["clade"] in {m["clade"] for m in mir_unfilled}]
         ctl_meta: dict[str, dict] = {}
         for r in ctl_rows:
-            bid = bait_id(r, r["control_for"], spec.CONTROL_MIR)
+            bid = bait_id(r, r["control_for"], spec.CONTROL_ROLE)
             ctl_meta[bid] = dict(r, id=bid, band=r["control_for"],
-                                 role=spec.CONTROL_MIR,
+                                 role=spec.CONTROL_ROLE,
                                  sequence=ctl_seqs[r["accession"]],
-                                 origin="PF02815 over the archived "
+                                 db_group=r["group"],
+                                 origin=f"{r['pfam']} over the archived "
                                         f"{r['group']} proteome DB",
                                  shape_reason=r["reason"])
         ctl_verdicts = screen_lib.screen(
@@ -152,7 +188,7 @@ def main() -> int:
             ctl_meta[bid]["screen_ok"] = assigned not in ("ITPR", "RYR")
             screen_rows.append({"id": bid, "accession": ctl_meta[bid]["accession"],
                                 "band": ctl_meta[bid]["band"],
-                                "role": spec.CONTROL_MIR,
+                                "role": spec.CONTROL_ROLE,
                                 "length": len(ctl_meta[bid]["sequence"]),
                                 "passed": int(ctl_meta[bid]["screen_ok"]),
                                 "reason": ctl_meta[bid]["screen_reason"], **v})
@@ -187,10 +223,11 @@ def main() -> int:
               ["band", "role", "wanted", "filled", "records", "shape_ok",
                "with_sequence", "why"], unfilled)
     write_tsv(OUT_DIR / "control_manifest.tsv",
-              ["id", "accession", "control_for", "control_rank", "swept",
-               "organism", "taxid", "length", "score", "named", "candidates",
-               "clade_frac", "strength", "strength_note", "group",
-               "protein_name", "kept", "screen_reason", "reason"],
+              ["id", "accession", "pfam", "profile_label", "control_for",
+               "control_rank", "swept", "organism", "taxid", "length",
+               "score", "model_cov", "candidates", "clade_frac", "strength",
+               "strength_note", "group", "protein_name", "kept",
+               "screen_reason", "reason"],
               [dict(m, kept=int(m["screen_ok"]),
                     protein_name=m["protein_name"][:80])
                for m in ctl_meta.values()])
@@ -229,7 +266,7 @@ def main() -> int:
     }
     (OUT_DIR / "bait_build_stats.json").write_text(json.dumps(stats, indent=1))
     print(f"\n{len(all_rows)} baits ({n_itpr} ITPR + {n_ryr} RyR + "
-          f"{len(controls_kept)} MIR control), "
+          f"{len(controls_kept)} proof-of-search control), "
           f"{stats['residues']:,} residues, "
           f"{stats['reused_s3_seeds']} reused S3 seeds, "
           f"{stats['arch_exceptions']} architecture exceptions")

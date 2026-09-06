@@ -1,0 +1,169 @@
+rank	clade	pfam	label	searched	swept_proteomes	with_hit	frac	median_len	chosen
+class	Aconoidasida	PF02815	MIR	1	36	0	0.0000	0	0
+class	Aconoidasida	PF00063	Myosin_head	1	36	36	1.0000	1415	1
+class	Aconoidasida	PF00122	E1-E2_ATPase	1	36	36	1.0000	1322	0
+class	Aconoidasida	PF02463	SMC_N	1	36	36	1.0000	1206	0
+class	Aconoidasida	PF00225	Kinesin	1	36	35	0.9722	1300	0
+class	Aconoidasida	PF00004	AAA	0					0
+class	Agaricomycetes	PF02815	MIR	1	191	186	0.9738	785	0
+class	Agaricomycetes	PF00063	Myosin_head	1	191	184	0.9634	1897	1
+class	Agaricomycetes	PF00122	E1-E2_ATPase	1	191	187	0.9791	1075	0
+class	Agaricomycetes	PF02463	SMC_N	1	191	187	0.9791	1205	0
+class	Agaricomycetes	PF00225	Kinesin	1	191	185	0.9686	958	0
+class	Agaricomycetes	PF00004	AAA	0					0
+class	Cestoda	PF02815	MIR	1	11	3	0.2727	702	0
+class	Cestoda	PF00063	Myosin_head	1	11	11	1.0000	1627	1
+class	Cestoda	PF00122	E1-E2_ATPase	1	11	11	1.0000	1075	0
+class	Cestoda	PF02463	SMC_N	1	11	11	1.0000	1138	0
+class	Cestoda	PF00225	Kinesin	1	11	11	1.0000	916	0
+class	Cestoda	PF00004	AAA	0					0
+class	Conoidasida	PF02815	MIR	1	23	0	0.0000	0	0
+class	Conoidasida	PF00063	Myosin_head	1	23	23	1.0000	1476	1
+class	Conoidasida	PF00122	E1-E2_ATPase	1	23	23	1.0000	1338	0
+class	Conoidasida	PF02463	SMC_N	1	23	23	1.0000	1242	0
+class	Conoidasida	PF00225	Kinesin	1	23	23	1.0000	921	0
+class	Conoidasida	PF00004	AAA	0					0
+class	Dothideomycetes	PF02815	MIR	1	172	171	0.9942	780	0
+class	Dothideomycetes	PF00063	Myosin_head	1	172	171	0.9942	1843	1
+class	Dothideomycetes	PF00122	E1-E2_ATPase	1	172	171	0.9942	1087	0
+class	Dothideomycetes	PF02463	SMC_N	1	172	170	0.9884	1214	0
+class	Dothideomycetes	PF00225	Kinesin	1	172	172	1.0000	951	0
+class	Dothideomycetes	PF00004	AAA	0					0
+class	Eurotiomycetes	PF02815	MIR	1	234	233	0.9957	776	0
+class	Eurotiomycetes	PF00063	Myosin_head	1	234	233	0.9957	1574	1
+class	Eurotiomycetes	PF00122	E1-E2_ATPase	1	234	234	1.0000	1117	0
+class	Eurotiomycetes	PF02463	SMC_N	1	234	234	1.0000	1257	0
+class	Eurotiomycetes	PF00225	Kinesin	1	234	233	0.9957	948	0
+class	Eurotiomycetes	PF00004	AAA	0					0
+class	Exobasidiomycetes	PF02815	MIR	1	14	14	1.0000	922	0
+class	Exobasidiomycetes	PF00063	Myosin_head	1	14	14	1.0000	1692	1
+class	Exobasidiomycetes	PF00122	E1-E2_ATPase	1	14	14	1.0000	1156	0
+class	Exobasidiomycetes	PF02463	SMC_N	1	14	14	1.0000	1226	0
+class	Exobasidiomycetes	PF00225	Kinesin	1	14	14	1.0000	1119	0
+class	Exobasidiomycetes	PF00004	AAA	0					0
+class	Glomeromycetes	PF02815	MIR	1	24	23	0.9583	743	0
+class	Glomeromycetes	PF00063	Myosin_head	1	24	23	0.9583	1565	1
+class	Glomeromycetes	PF00122	E1-E2_ATPase	1	24	24	1.0000	1026	0
+class	Glomeromycetes	PF02463	SMC_N	1	24	22	0.9167	1131	0
+class	Glomeromycetes	PF00225	Kinesin	1	24	24	1.0000	893	0
+class	Glomeromycetes	PF00004	AAA	0					0
+class	Kickxellomycetes	PF02815	MIR	1	22	22	1.0000	766	0
+class	Kickxellomycetes	PF00063	Myosin_head	1	22	22	1.0000	1673	1
+class	Kickxellomycetes	PF00122	E1-E2_ATPase	1	22	22	1.0000	1093	0
+class	Kickxellomycetes	PF02463	SMC_N	1	22	22	1.0000	1180	0
+class	Kickxellomycetes	PF00225	Kinesin	1	22	22	1.0000	980	0
+class	Kickxellomycetes	PF00004	AAA	0					0
+class	Lecanoromycetes	PF02815	MIR	1	13	13	1.0000	781	0
+class	Lecanoromycetes	PF00063	Myosin_head	1	13	13	1.0000	1871	1
+class	Lecanoromycetes	PF00122	E1-E2_ATPase	1	13	13	1.0000	1144	0
+class	Lecanoromycetes	PF02463	SMC_N	1	13	13	1.0000	1179	0
+class	Lecanoromycetes	PF00225	Kinesin	1	13	13	1.0000	965	0
+class	Lecanoromycetes	PF00004	AAA	0					0
+class	Leotiomycetes	PF02815	MIR	1	64	63	0.9844	771	0
+class	Leotiomycetes	PF00063	Myosin_head	1	64	64	1.0000	1591	1
+class	Leotiomycetes	PF00122	E1-E2_ATPase	1	64	64	1.0000	1127	0
+class	Leotiomycetes	PF02463	SMC_N	1	64	64	1.0000	1209	0
+class	Leotiomycetes	PF00225	Kinesin	1	64	64	1.0000	996	0
+class	Leotiomycetes	PF00004	AAA	0					0
+class	Lipomycetes	PF02815	MIR	1	9	9	1.0000	746	0
+class	Lipomycetes	PF00063	Myosin_head	1	9	9	1.0000	1419	1
+class	Lipomycetes	PF00122	E1-E2_ATPase	1	9	9	1.0000	1059	0
+class	Lipomycetes	PF02463	SMC_N	1	9	9	1.0000	1202	0
+class	Lipomycetes	PF00225	Kinesin	1	9	9	1.0000	938	0
+class	Lipomycetes	PF00004	AAA	0					0
+class	Magnoliopsida	PF02815	MIR	1	353	4	0.0113	678	0
+class	Magnoliopsida	PF00063	Myosin_head	1	353	344	0.9745	1508	1
+class	Magnoliopsida	PF00122	E1-E2_ATPase	1	353	352	0.9972	987	0
+class	Magnoliopsida	PF02463	SMC_N	1	353	351	0.9943	1054	0
+class	Magnoliopsida	PF00225	Kinesin	1	353	352	0.9972	978	0
+class	Magnoliopsida	PF00004	AAA	0					0
+class	Malasseziomycetes	PF02815	MIR	1	16	16	1.0000	791	0
+class	Malasseziomycetes	PF00063	Myosin_head	1	16	16	1.0000	1511	1
+class	Malasseziomycetes	PF00122	E1-E2_ATPase	1	16	16	1.0000	1090	0
+class	Malasseziomycetes	PF02463	SMC_N	1	16	16	1.0000	1205	0
+class	Malasseziomycetes	PF00225	Kinesin	1	16	16	1.0000	870	0
+class	Malasseziomycetes	PF00004	AAA	0					0
+class	Microbotryomycetes	PF02815	MIR	1	13	13	1.0000	870	0
+class	Microbotryomycetes	PF00063	Myosin_head	1	13	13	1.0000	1647	1
+class	Microbotryomycetes	PF00122	E1-E2_ATPase	1	13	13	1.0000	1089	0
+class	Microbotryomycetes	PF02463	SMC_N	1	13	13	1.0000	1205	0
+class	Microbotryomycetes	PF00225	Kinesin	1	13	13	1.0000	1095	0
+class	Microbotryomycetes	PF00004	AAA	0					0
+class	Mortierellomycetes	PF02815	MIR	1	17	17	1.0000	871	0
+class	Mortierellomycetes	PF00063	Myosin_head	1	17	16	0.9412	1618	1
+class	Mortierellomycetes	PF00122	E1-E2_ATPase	1	17	17	1.0000	1040	0
+class	Mortierellomycetes	PF02463	SMC_N	1	17	17	1.0000	1247	0
+class	Mortierellomycetes	PF00225	Kinesin	1	17	16	0.9412	1050	0
+class	Mortierellomycetes	PF00004	AAA	0					0
+class	Orbiliomycetes	PF02815	MIR	1	12	11	0.9167	739	0
+class	Orbiliomycetes	PF00063	Myosin_head	1	12	12	1.0000	1817	1
+class	Orbiliomycetes	PF00122	E1-E2_ATPase	1	12	12	1.0000	1143	0
+class	Orbiliomycetes	PF02463	SMC_N	1	12	12	1.0000	1205	0
+class	Orbiliomycetes	PF00225	Kinesin	1	12	12	1.0000	966	0
+class	Orbiliomycetes	PF00004	AAA	0					0
+class	Pezizomycetes	PF02815	MIR	1	12	12	1.0000	768	0
+class	Pezizomycetes	PF00063	Myosin_head	1	12	12	1.0000	1603	1
+class	Pezizomycetes	PF00122	E1-E2_ATPase	1	12	12	1.0000	1101	0
+class	Pezizomycetes	PF02463	SMC_N	1	12	12	1.0000	1173	0
+class	Pezizomycetes	PF00225	Kinesin	1	12	12	1.0000	931	0
+class	Pezizomycetes	PF00004	AAA	0					0
+class	Pichiomycetes	PF02815	MIR	1	66	66	1.0000	764	0
+class	Pichiomycetes	PF00063	Myosin_head	1	66	65	0.9848	1548	1
+class	Pichiomycetes	PF00122	E1-E2_ATPase	1	66	66	1.0000	1101	0
+class	Pichiomycetes	PF02463	SMC_N	1	66	66	1.0000	1187	0
+class	Pichiomycetes	PF00225	Kinesin	1	66	66	1.0000	705	0
+class	Pichiomycetes	PF00004	AAA	0					0
+class	Pucciniomycetes	PF02815	MIR	1	13	13	1.0000	825	0
+class	Pucciniomycetes	PF00063	Myosin_head	1	13	13	1.0000	1718	1
+class	Pucciniomycetes	PF00122	E1-E2_ATPase	1	13	13	1.0000	1002	0
+class	Pucciniomycetes	PF02463	SMC_N	1	13	13	1.0000	1112	0
+class	Pucciniomycetes	PF00225	Kinesin	1	13	13	1.0000	1047	0
+class	Pucciniomycetes	PF00004	AAA	0					0
+class	Saccharomycetes	PF02815	MIR	1	59	59	1.0000	757	0
+class	Saccharomycetes	PF00063	Myosin_head	1	59	59	1.0000	1558	1
+class	Saccharomycetes	PF00122	E1-E2_ATPase	1	59	59	1.0000	1090	0
+class	Saccharomycetes	PF02463	SMC_N	1	59	59	1.0000	1193	0
+class	Saccharomycetes	PF00225	Kinesin	1	59	59	1.0000	715	0
+class	Saccharomycetes	PF00004	AAA	0					0
+class	Sordariomycetes	PF02815	MIR	1	350	349	0.9971	773	0
+class	Sordariomycetes	PF00063	Myosin_head	1	350	350	1.0000	1711	1
+class	Sordariomycetes	PF00122	E1-E2_ATPase	1	350	350	1.0000	1117	0
+class	Sordariomycetes	PF02463	SMC_N	1	350	350	1.0000	1245	0
+class	Sordariomycetes	PF00225	Kinesin	1	350	350	1.0000	948	0
+class	Sordariomycetes	PF00004	AAA	0					0
+class	Trebouxiophyceae	PF02815	MIR	1	17	4	0.2353	213	0
+class	Trebouxiophyceae	PF00063	Myosin_head	1	17	17	1.0000	1648	1
+class	Trebouxiophyceae	PF00122	E1-E2_ATPase	1	17	17	1.0000	1061	0
+class	Trebouxiophyceae	PF02463	SMC_N	1	17	17	1.0000	1200	0
+class	Trebouxiophyceae	PF00225	Kinesin	1	17	17	1.0000	900	0
+class	Trebouxiophyceae	PF00004	AAA	0					0
+class	Tremellomycetes	PF02815	MIR	1	44	44	1.0000	817	0
+class	Tremellomycetes	PF00063	Myosin_head	1	44	44	1.0000	1643	1
+class	Tremellomycetes	PF00122	E1-E2_ATPase	1	44	44	1.0000	1098	0
+class	Tremellomycetes	PF02463	SMC_N	1	44	44	1.0000	1213	0
+class	Tremellomycetes	PF00225	Kinesin	1	44	44	1.0000	1007	0
+class	Tremellomycetes	PF00004	AAA	0					0
+class	Ustilaginomycetes	PF02815	MIR	1	15	15	1.0000	873	0
+class	Ustilaginomycetes	PF00063	Myosin_head	1	15	15	1.0000	1626	1
+class	Ustilaginomycetes	PF00122	E1-E2_ATPase	1	15	15	1.0000	1120	0
+class	Ustilaginomycetes	PF02463	SMC_N	1	15	15	1.0000	1236	0
+class	Ustilaginomycetes	PF00225	Kinesin	1	15	15	1.0000	1102	0
+class	Ustilaginomycetes	PF00004	AAA	0					0
+phylum	Bacillariophyta	PF02815	MIR	1	16	10	0.6250	219	0
+phylum	Bacillariophyta	PF00063	Myosin_head	1	16	16	1.0000	1213	1
+phylum	Bacillariophyta	PF00122	E1-E2_ATPase	1	16	16	1.0000	1078	0
+phylum	Bacillariophyta	PF02463	SMC_N	1	16	16	1.0000	1106	0
+phylum	Bacillariophyta	PF00225	Kinesin	1	16	16	1.0000	984	0
+phylum	Bacillariophyta	PF00004	AAA	0					0
+phylum	Microsporidia	PF02815	MIR	1	29	22	0.7586	670	0
+phylum	Microsporidia	PF00063	Myosin_head	1	29	25	0.8621	1405	1
+phylum	Microsporidia	PF00122	E1-E2_ATPase	1	29	29	1.0000	993	0
+phylum	Microsporidia	PF02463	SMC_N	1	29	29	1.0000	1001	0
+phylum	Microsporidia	PF00225	Kinesin	1	29	29	1.0000	492	0
+phylum	Microsporidia	PF00004	AAA	0					0
+phylum	Rhodophyta	PF02815	MIR	1	12	0	0.0000	0	0
+phylum	Rhodophyta	PF00063	Myosin_head	1	12	1	0.0833	1736	0
+phylum	Rhodophyta	PF00122	E1-E2_ATPase	1	12	12	1.0000	1045	0
+phylum	Rhodophyta	PF02463	SMC_N	1	12	12	1.0000	1186	1
+phylum	Rhodophyta	PF00225	Kinesin	1	12	12	1.0000	913	0
+phylum	Rhodophyta	PF00004	AAA	0					0

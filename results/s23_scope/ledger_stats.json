@@ -1,22 +1,24 @@
 {
- "genomes": 14,
+ "genomes": 19,
  "manifest_genomes": 194,
  "status": {
+  "no_locus": 11,
   "found_annotated": 6,
-  "no_locus": 8
+  "fragment_only": 2
  },
  "control_verdicts": {
+  "controlled_cross_kingdom": 7,
   "controlled_by_target": 6,
-  "controlled": 7,
-  "uncontrolled": 1
+  "controlled": 6
  },
- "uncontrolled": 1,
+ "uncontrolled": 0,
  "by_group": {
   "amoebozoa": {
    "found_annotated": 1
   },
   "fungi": {
-   "no_locus": 4
+   "no_locus": 8,
+   "fragment_only": 1
   },
   "metazoa": {
    "found_annotated": 4
@@ -25,20 +27,25 @@
    "no_locus": 1
   },
   "viridiplantae": {
-   "no_locus": 3,
-   "found_annotated": 1
+   "no_locus": 2,
+   "found_annotated": 1,
+   "fragment_only": 1
   }
  },
  "total_full_loci": 6,
- "total_loci_raw": 6,
+ "total_loci_raw": 20,
  "total_merges": 0,
- "novel_models": 4,
+ "novel_models": 5,
  "below_contiguity_bar": 0,
  "copy_number": {
-  "1": 6,
-  "0": 8
+  "0": 13,
+  "1": 6
  },
- "absence_clades_covered": 6,
+ "total_full_loci_unmerged": 6,
+ "genomes_copy_differs_from_loci": 0,
+ "loci_below_floor": 29,
+ "call_min_identity": 0.4,
+ "absence_clades_covered": 10,
  "absence_clades": 35,
- "wall_clock_s": 360.0
+ "wall_clock_s": 322.5
 }

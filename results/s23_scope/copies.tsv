@@ -1,0 +1,7 @@
+accession	organism	group	phylum	contig	start	end	strand	bait	identity	coverage	score	cds_footprint_bp
+GCF_000001215.4	Drosophila melanogaster	metazoa	Arthropoda	NT_033777.3	5527819	5538651	+	P29993|Itpr|Drosophila_melanogaster|Arthropoda|ITPR	1.0	1.0	14592.0	8514
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	Echinodermata	NW_022145612.1	50950215	51051598	+	A0A7M7MY00|unnamed|Strongylocentrotus_purpuratus|Echinodermata|ITPR	1.0	1.0	14600.0	8463
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	Chlorophyta	NC_057019.1	3086978	3104767	+	A0A2K3CTW4|CHLRE_16g665450v5|Chlamydomonas_reinhardtii|Chlorophyta|ITPR	0.9997	1.0	16579.0	9633
+GCF_000002985.6	Caenorhabditis elegans	metazoa	Nematoda	NC_003282.8	7675174	7696703	+	Q9Y0A1|itr-1|Caenorhabditis_elegans|Nematoda|ITPR	1.0	1.0	15026.0	8679
+GCF_000004695.1	Dictyostelium discoideum AX4	amoebozoa	Evosea	NC_007092.3	1805115	1814945	-	Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	1.0	1.0	16440.0	9534
+GCF_932526225.1	Nematostella vectensis	metazoa	Cnidaria	NC_064043.1	14436060	14485577	-	A0A6P8IUM8|LOC116304295|Actinia_tenebrosa|Cnidaria|ITPR	0.8456	1.0	11982.0	8166

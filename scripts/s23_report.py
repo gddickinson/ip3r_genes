@@ -18,6 +18,7 @@ for _p in (PROJECT_ROOT, PROJECT_ROOT / "scripts"):
     if str(_p) not in sys.path:
         sys.path.insert(0, str(_p))
 
+import s23_report_results as res                                # noqa: E402
 from s5_build_baits import read_tsv                            # noqa: E402
 
 OUT = PROJECT_ROOT / "results" / "s23_scope"
@@ -50,6 +51,48 @@ def n(x) -> str:
 
 
 # ------------------------------------------------------------------ sections
+
+def table_rows(headers: list[str], rows: list[list]) -> str:
+    """Markdown table from a header list and row lists.
+
+    Passed to `s23_report_results` so both halves format identically — the
+    `s3_report.py` / `s3_report_d10.py` rule that a split report must not be
+    able to render the same numbers two ways.
+    """
+    out = ["| " + " | ".join(str(h) for h in headers) + " |",
+           "|" + "|".join("---" for _ in headers) + "|"]
+    for r in rows:
+        out.append("| " + " | ".join("" if c is None else str(c)
+                                     for c in r) + " |")
+    return "\n".join(out) + "\n"
+
+
+FIGURES = [
+    ("copy_number", "How many ITPR genes a genome has outside the "
+                    "vertebrates, by kingdom-level group, with the vertebrate "
+                    "paralog count drawn as a reference line."),
+    ("absence_at_genome", "Every absence clade: genomes searched, genomes "
+                          "whose control fired, and genomes with a complete "
+                          "gene model. A claim whose control bar is short is "
+                          "standing on nothing, and the figure shows it."),
+    ("identity_floor", "The measured locus identity floor — "
+                       "annotation-confirmed loci against "
+                       "annotation-contradicted ones, with the floor drawn "
+                       "where the measurement put it."),
+    ("span_inflation", "Locus span divided by aligned CDS footprint, per "
+                       "group: why copy number is counted on alignments "
+                       "rather than on clusters."),
+]
+
+
+def sec_figures() -> str:
+    lines = ["\n## Figures\n"]
+    for slug, caption in FIGURES:
+        if (OUT / "figures" / f"{slug}.png").exists():
+            lines.append(f"![]({'figures/' + slug + '.png'})\n")
+            lines.append(f"**{slug}.** {caption}\n")
+    return "\n".join(lines)
+
 
 def sec_scope(mstats: dict, manifest: list[dict]) -> str:
     r = mstats.get("rules", {})
@@ -144,7 +187,9 @@ def sec_calibration(cal: dict) -> str:
 
 
 def sec_panel(bstats: dict, manifest: list[dict], unfilled: list[dict],
-              controls: list[dict], selftest: list[dict]) -> str:
+              controls: list[dict], selftest: list[dict],
+              choice: list[dict] | None = None) -> str:
+    choice = choice or []
     by_role = Counter(r["role"] for r in manifest)
     strong = sum(1 for c in controls if c.get("strength") == "strong"
                  and c.get("kept") == "1")
@@ -155,7 +200,8 @@ def sec_panel(bstats: dict, manifest: list[dict], unfilled: list[dict],
         "## 3. The bait panel, and the control that had to be replaced\n",
         f"**{n(bstats.get('baits'))} baits, {n(bstats.get('residues'))} "
         f"residues**: {by_role.get('ITPR', 0)} ITPR, {by_role.get('RYR', 0)} "
-        f"RyR and {by_role.get('MIR', 0)} MIR-domain control, derived from "
+        f"RyR and {by_role.get('CONTROL', 0)} proof-of-search control, "
+        f"derived from "
         f"census v5 by seven enforced rules, {bstats.get('reused_s3_seeds')} "
         "of them S3 seeds reused unchanged (B6).\n",
         "### 3.1 S5's positive control does not transfer\n",
@@ -168,20 +214,48 @@ def sec_panel(bstats: dict, manifest: list[dict], unfilled: list[dict],
         "*Arabidopsis*\" is indistinguishable from \"the sweep did not run "
         "properly on *Arabidopsis*\". Every negative claim in this task rests "
         "on closing that gap.\n",
-        "The replacement is the **MIR-domain sharer** — the protein "
-        "O-mannosyltransferase family S1's decoy panel was built around and "
-        "S20 used as its in-search positive control, where PF08709 returns 0 "
-        "matches in land plants and PF02815 returns 633. It is in the "
-        "family's own signature set, it is drawn from the clade each claim is "
-        "about, and it is simultaneously the sharpest available decoy.\n",
+        "S23a's replacement was the **MIR-domain sharer** (PF02815) — the "
+        "protein O-mannosyltransferase family S1's decoy panel was built "
+        "around and S20 used as its in-search positive control, where PF08709 "
+        "returns 0 matches in land plants and PF02815 returns 633. It is in "
+        "the family's own signature set, it is drawn from the clade each "
+        "claim is about, and it is simultaneously the sharpest available "
+        "decoy.\n",
+        "**It was still one profile fixed in advance for every clade, and "
+        "that is what failed.** Both apicomplexan classes carry a single "
+        "PF02815 protein each across 60 swept proteomes, and the S23a pilot's "
+        "*Toxoplasma gondii* came back `uncontrolled`. S23b therefore chooses "
+        "the control profile **per clade, by measurement**: six candidate "
+        "profiles — all large, deeply conserved, multi-exon eukaryotic "
+        "families — run over each clade's own swept reference proteomes, and "
+        "each clade takes the one that is actually there "
+        "(`control_profile_coverage.tsv` carries every candidate's number, "
+        "not only the winner's). The MIR bait stays in the panel whatever the "
+        "measurement says, because dropping it would buy a proof-of-search "
+        "and sell D14's negative control.\n",
         f"**{strong + weak} usable control baits across {len(controls)} "
         f"control clades: {strong} strong, {weak} weak.** A control is strong "
-        "when it is a "
-        "named, full-length mannosyltransferase present across at least a "
-        "quarter of the clade's swept proteomes; the classification is "
-        "recorded per clade rather than resolved, because it is the reader's "
-        "to weigh.\n",
+        "when it is present across at least a quarter of the clade's swept "
+        "proteomes, carries most of its profile's own model, and is a "
+        "substantial multi-exon protein rather than a lone domain; the "
+        "classification is recorded per clade rather than resolved, because "
+        "it is the reader's to weigh.\n",
     ]
+    if choice:
+        from collections import Counter as _C
+        by_pfam = _C(c.get("pfam", "") for c in choice if c.get("pfam"))
+        lines += [
+            table([{"profile": f"{p_} ({next((c['label'] for c in choice if c.get('pfam') == p_), '')})",
+                    "clades": n_,
+                    "example": next((f"{c['clade']} — {c['frac']} of its "
+                                     f"{c['swept']} swept proteomes"
+                                     for c in choice if c.get("pfam") == p_),
+                                    "")}
+                   for p_, n_ in by_pfam.most_common()],
+                  ["profile", "clades", "example"],
+                  ["chosen profile", "clades it controls", "example"]),
+            "",
+        ]
     weak_rows = [c for c in controls if c.get("strength") == "weak"
                  and c.get("kept") == "1"]
     if weak_rows:
@@ -189,29 +263,34 @@ def sec_panel(bstats: dict, manifest: list[dict], unfilled: list[dict],
                                     "score", "clade_frac", "strength_note"],
                         ["clade", "bait", "aa", "bits", "clade coverage",
                          "why weak"]), ""]
-    lines += [
-        "**The apicomplexan control is the thin one and it is the one that "
-        "matters.** Aconoidasida and Conoidasida carry a single PF02815 "
-        "protein each across 60 swept proteomes (3–4 % clade coverage), so "
-        "the Apicomplexa absence — one of S20a's headline targets — rests on "
-        "a 231–233 aa control found in one proteome. That is stated rather "
-        "than smoothed over, and it is the strongest argument for a "
-        "second, non-MIR control in that clade.\n",
-    ]
+    apis = [c for c in choice
+            if c.get("clade") in ("Aconoidasida", "Conoidasida")]
+    if apis:
+        lines += [
+            "**The apicomplexan control was the thin one, and it is the one "
+            "that mattered.** Under PF02815 alone both classes carried a "
+            "single control protein across 60 swept proteomes (3–4 % clade "
+            "coverage) and *Toxoplasma* returned neither a receptor nor a "
+            "control. Measured, they take: "
+            + "; ".join(f"**{c['clade']}** {c.get('label', '')} "
+                        f"({c.get('pfam', '')}) in {c.get('with_hit', '')} of "
+                        f"{c.get('swept_proteomes', '')} swept proteomes"
+                        for c in apis) + ".\n",
+        ]
     if rejected:
         lines += [
             "### 3.2 The screen rejected a control on its first run\n",
-            "A control bait must be assigned to **neither** family — a MIR "
-            "protein the profiles call a family member is a finding, not a "
-            "control. One was:\n",
+            "A control bait must be assigned to **neither** family — a "
+            "control protein the profiles call a family member is a finding, "
+            "not a control. One was:\n",
             table(rejected, ["control_for", "accession", "organism", "length",
                              "protein_name", "screen_reason"],
                   ["clade", "accession", "organism", "aa", "its own name",
                    "screen verdict"]),
             "\nA tapeworm protein UniProt calls a \"MIR domain-containing "
             "protein\" is a ryanodine receptor. Cestoda is a metazoan clade, "
-            "so its genomes keep the RyR control; the MIR slot is left "
-            "empty rather than filled with a family member.\n",
+            "so its genomes keep the RyR control; the slot is left empty "
+            "rather than filled with a family member.\n",
         ]
     if unfilled:
         lines += [
@@ -272,8 +351,8 @@ def sec_pilot(lstats: dict, ledger: list[dict], absences: list[dict],
                                   sorted(status.items(), key=lambda x: -x[1]))
         + ".\n",
         table(ledger, ["organism", "group", "status", "n_full", "n_fragment",
-                       "mir_loci", "ryr_loci", "control_verdict"],
-              ["organism", "group", "status", "full", "frag", "MIR", "RyR",
+                       "control_loci", "ryr_loci", "control_verdict"],
+              ["organism", "group", "status", "full", "frag", "ctl", "RyR",
                "control"]),
         "",
         f"**Control:** " + ", ".join(
@@ -306,28 +385,60 @@ def main() -> int:
     bstats = jload(BAITS / "bait_build_stats.json")
     cal = jload(BAITS / "span_calibration.json")
     lstats = jload(OUT / "ledger_stats.json")
+    lcal = jload(OUT / "locus_calibration.json")
     manifest = tload(BAITS / "bait_manifest.tsv")
+    ledger = tload(OUT / "copy_number_ledger.tsv")
+    absences = tload(OUT / "absence_at_genome.tsv")
+    controls = tload(OUT / "control_ledger.tsv")
+    loci = tload(OUT / "loci.tsv")
+    spans = tload(OUT / "locus_span.tsv")
+    choice = tload(BAITS / "control_profile_choice.tsv")
+
+    # The report titles itself from the scale it is rendering, exactly as
+    # `s5_report.py` does: a 14-genome pilot and a 194-genome sweep are
+    # different documents and must not be able to wear each other's heading.
+    swept = lstats.get("genomes", 0)
+    declared = lstats.get("manifest_genomes") or mstats.get("genomes", 0)
+    full_run = swept >= max(1, int(0.9 * declared)) if declared else False
+    title = ("# S23 — the non-vertebrate genomic sweep\n" if full_run else
+             "# S23a — the non-vertebrate genomic sweep's instrument\n")
+    lede = (
+        f"S20 swept 6,928 reference **proteomes** and found the family absent "
+        f"from the land plants, the Dikarya, the Apicomplexa and a scatter of "
+        f"fungal phyla. Every one of those is an annotation fact: a proteome "
+        f"is what a gene-caller found, a genome is what is there. S23 takes "
+        f"them to assembly level."
+        + (f" **{swept} of {declared} declared genomes swept.**\n"
+           if full_run else
+           " This half builds and measures the instrument; S23b runs it.\n"))
+
     parts = [
-        "# S23a — the non-vertebrate genomic sweep's instrument\n",
+        title,
         "*Generated by `scripts/s23_report.py` from the committed tables "
         "only (D13). Nothing here is hand-written.*\n",
-        "S20 swept 6,928 reference **proteomes** and found the family absent "
-        "from the land plants, the Dikarya, the Apicomplexa and a scatter of "
-        "fungal phyla. Every one of those is an annotation fact: a proteome "
-        "is what a gene-caller found, a genome is what is there. S23 takes "
-        "them to assembly level. This half builds and measures the "
-        "instrument; S23b runs it.\n",
+        lede,
         sec_scope(mstats, tload(OUT / "genome_manifest_s23.tsv")),
         sec_calibration(cal),
         sec_panel(bstats, manifest, tload(BAITS / "unfilled_slots.tsv"),
                   tload(BAITS / "control_manifest.tsv"),
-                  tload(BAITS / "screen_self_test.tsv")),
-        sec_pilot(lstats, tload(OUT / "copy_number_ledger.tsv"),
-                  tload(OUT / "absence_at_genome.tsv"),
-                  tload(OUT / "control_ledger.tsv")),
+                  tload(BAITS / "screen_self_test.tsv"), choice),
     ]
+    if not full_run:
+        parts.append(sec_pilot(lstats, ledger, absences, controls))
+    else:
+        chunks: list[str] = []
+        A = chunks.append
+        res.section_locus_calibration(A, table_rows, lcal, spans)
+        res.section_control(A, table_rows, ledger, controls, choice, lstats)
+        res.section_copy_number(A, table_rows, ledger, lstats)
+        res.section_absences(A, table_rows, absences, ledger, lstats)
+        res.section_d14(A, table_rows, loci, controls)
+        parts.append("".join(chunks))
+        parts.append(sec_figures())
     (OUT / "report.md").write_text("\n".join(parts))
-    print(f"wrote {OUT / 'report.md'}")
+    print(f"wrote {OUT / 'report.md'} "
+          f"({'full sweep' if full_run else 'instrument'} scale, "
+          f"{swept} genome(s))")
     return 0
 
 

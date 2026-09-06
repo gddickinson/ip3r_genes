@@ -121,6 +121,11 @@ def load_baits(baits_dir: Path | None = None
             meta[row["id"]] = {"clade": row["clade"], "family": row["family"],
                                "band": row.get("band", row["clade"]),
                                "paralog": row["paralog"],
+                               # S23 only: which kingdom-level group the bait
+                               # itself came from, so a control locus can be
+                               # told apart from a *cross-kingdom* one. S5's
+                               # manifest has no such column and gets "".
+                               "group": row.get("group", ""),
                                "length": int(row["length"] or 0)}
     unknown = set(seqs) - set(meta)
     if unknown:

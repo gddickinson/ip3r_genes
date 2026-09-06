@@ -93,9 +93,16 @@ def proteome_db(group: str) -> Path:
     return require_data_root() / "proteomes" / f"{group}_refprot.fasta"
 
 
-def run_search(group: str, threads: int = 6, force: bool = False) -> Path:
-    """PF02815 over one group's archived proteome DB. Cached on the output."""
-    out = hmmer_dir() / f"PF02815_{group}.domtblout"
+def run_search(group: str, threads: int = 6, force: bool = False,
+               pfam: str = "PF02815", hmm: Path | None = None) -> Path:
+    """One control profile over one group's archived proteome DB.
+
+    Cached on the output. `pfam` defaults to the incumbent MIR profile so
+    every existing caller is unchanged; `s23_control_profiles` passes the
+    other candidates through it, which is what makes the control choice a
+    measurement rather than a constant.
+    """
+    out = hmmer_dir() / f"{pfam}_{group}.domtblout"
     if out.exists() and out.stat().st_size > 0 and not force:
         return out
     db = proteome_db(group)
@@ -103,15 +110,19 @@ def run_search(group: str, threads: int = 6, force: bool = False) -> Path:
         raise SystemExit(
             f"archived proteome DB missing: {db}\n"
             "  rerun scripts/s20_fetch.py --groups " + group)
+    model = hmm or (PFAM_MIR if pfam == "PF02815" else None)
+    if model is None or not Path(model).exists():
+        raise SystemExit(f"no HMM for {pfam} (looked at {model})\n"
+                         "  run scripts/s23_control_profiles.py --fetch")
     log = out.with_suffix(".log")
     tmp = out.with_suffix(".domtblout.partial")
     cmd = ["hmmsearch", "--cpu", str(threads), "-E", str(CONTROL_E),
-           "--domtblout", str(tmp), str(PFAM_MIR), str(db)]
+           "--domtblout", str(tmp), str(model), str(db)]
     with open(log, "w") as fh:
         proc = subprocess.run(cmd, stdout=fh, stderr=subprocess.STDOUT)
     if proc.returncode != 0:
         tmp.unlink(missing_ok=True)
-        raise RuntimeError(f"hmmsearch PF02815 on {group} failed "
+        raise RuntimeError(f"hmmsearch {pfam} on {group} failed "
                            f"(rc={proc.returncode}); see {log}")
     tmp.replace(out)
     return out
@@ -136,6 +147,7 @@ def parse_hits(domtbl: Path, group: str) -> dict[str, dict]:
             if len(f) < 23:
                 continue
             target, tlen, score = f[0], int(f[2]), float(f[7])
+            qlen, hmm_from, hmm_to = int(f[5]), int(f[15]), int(f[16])
             desc = f[22]
             parts = target.split("|")
             acc = parts[1] if len(parts) >= 3 else target
@@ -143,6 +155,12 @@ def parse_hits(domtbl: Path, group: str) -> dict[str, dict]:
                                 _GN_RE.search(desc))
             row = {"accession": acc, "target": target, "length": tlen,
                    "score": score, "group": group,
+                   # How much of the *model* this hit covers. A control bait
+                   # carrying a fragment of the domain is a weaker control
+                   # than one carrying all of it, and only the model
+                   # coordinates say which — the sequence length does not.
+                   "model_cov": round((hmm_to - hmm_from + 1) / max(1, qlen), 4),
+                   "model_len": qlen,
                    "organism": (os_m.group(1).strip() if os_m else ""),
                    "taxid": (ox_m.group(1) if ox_m else ""),
                    "gene": (gn_m.group(1) if gn_m else ""),

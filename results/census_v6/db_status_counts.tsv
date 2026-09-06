@@ -1,0 +1,8 @@
+group	status	loci
+amoebozoa	annotated_named	1
+fungi	genome_only	1
+metazoa	annotated_named	2
+metazoa	annotated_unnamed	2
+metazoa	genome_only	7
+viridiplantae	annotated_unnamed	1
+viridiplantae	genome_only	6

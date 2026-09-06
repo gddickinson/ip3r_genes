@@ -46,15 +46,17 @@ The S5 vertebrate bar was 142,212 bp and 120 of 309 genomes failed it — S5b's 
 
 ## 3. The bait panel, and the control that had to be replaced
 
-**80 baits, 208,582 residues**: 37 ITPR, 16 RyR and 27 MIR-domain control, derived from census v5 by seven enforced rules, 21 of them S3 seeds reused unchanged (B6).
+**80 baits, 208,582 residues**: 37 ITPR, 16 RyR and 0 proof-of-search control, derived from census v5 by seven enforced rules, 21 of them S3 seeds reused unchanged (B6).
 
 ### 3.1 S5's positive control does not transfer
 
 S5 can write "the RyR control fired in all 309 genomes, so none is excluded on control grounds" because every vertebrate has three RyRs. Outside Metazoa that argument collapses: S20 found architecture-level RyR in **2 of 6,928** non-metazoan proteomes. A land plant with no RyR locus is the *correct* answer, so RyR cannot be that genome's proof-of-search — and without one, "no ITPR in *Arabidopsis*" is indistinguishable from "the sweep did not run properly on *Arabidopsis*". Every negative claim in this task rests on closing that gap.
 
-The replacement is the **MIR-domain sharer** — the protein O-mannosyltransferase family S1's decoy panel was built around and S20 used as its in-search positive control, where PF08709 returns 0 matches in land plants and PF02815 returns 633. It is in the family's own signature set, it is drawn from the clade each claim is about, and it is simultaneously the sharpest available decoy.
+S23a's replacement was the **MIR-domain sharer** (PF02815) — the protein O-mannosyltransferase family S1's decoy panel was built around and S20 used as its in-search positive control, where PF08709 returns 0 matches in land plants and PF02815 returns 633. It is in the family's own signature set, it is drawn from the clade each claim is about, and it is simultaneously the sharpest available decoy.
 
-**27 usable control baits across 28 control clades: 22 strong, 5 weak.** A control is strong when it is a named, full-length mannosyltransferase present across at least a quarter of the clade's swept proteomes; the classification is recorded per clade rather than resolved, because it is the reader's to weigh.
+**It was still one profile fixed in advance for every clade, and that is what failed.** Both apicomplexan classes carry a single PF02815 protein each across 60 swept proteomes, and the S23a pilot's *Toxoplasma gondii* came back `uncontrolled`. S23b therefore chooses the control profile **per clade, by measurement**: six candidate profiles — all large, deeply conserved, multi-exon eukaryotic families — run over each clade's own swept reference proteomes, and each clade takes the one that is actually there (`control_profile_coverage.tsv` carries every candidate's number, not only the winner's). The MIR bait stays in the panel whatever the measurement says, because dropping it would buy a proof-of-search and sell D14's negative control.
+
+**27 usable control baits across 28 control clades: 22 strong, 5 weak.** A control is strong when it is present across at least a quarter of the clade's swept proteomes, carries most of its profile's own model, and is a substantial multi-exon protein rather than a lone domain; the classification is recorded per clade rather than resolved, because it is the reader's to weigh.
 
 | clade | bait | aa | bits | clade coverage | why weak |
 |---|---|---|---|---|---|
@@ -64,17 +66,15 @@ The replacement is the **MIR-domain sharer** — the protein O-mannosyltransfera
 | Bacillariophyta | A0ABD3PUM4 | 217 | 60.2 | 1.0 | not named a mannosyltransferase; 217 aa — a short MIR-only protein, not the full PMT (< 600) |
 | Rhodophyta | A0A2V3J3L8 | 219 | 66.6 | 0.9167 | not named a mannosyltransferase; 219 aa — a short MIR-only protein, not the full PMT (< 600) |
 
-**The apicomplexan control is the thin one and it is the one that matters.** Aconoidasida and Conoidasida carry a single PF02815 protein each across 60 swept proteomes (3–4 % clade coverage), so the Apicomplexa absence — one of S20a's headline targets — rests on a 231–233 aa control found in one proteome. That is stated rather than smoothed over, and it is the strongest argument for a second, non-MIR control in that clade.
-
 ### 3.2 The screen rejected a control on its first run
 
-A control bait must be assigned to **neither** family — a MIR protein the profiles call a family member is a finding, not a control. One was:
+A control bait must be assigned to **neither** family — a control protein the profiles call a family member is a finding, not a control. One was:
 
 | clade | accession | organism | aa | its own name | screen verdict |
 |---|---|---|---|---|---|
 | Cestoda | A0A0R3TP59 | Rodentolepis nana | 931 | MIR domain-containing protein | assigned RYR by the screen (itpr 179 / ryr 1121 bits) |
 
-A tapeworm protein UniProt calls a "MIR domain-containing protein" is a ryanodine receptor. Cestoda is a metazoan clade, so its genomes keep the RyR control; the MIR slot is left empty rather than filled with a family member.
+A tapeworm protein UniProt calls a "MIR domain-containing protein" is a ryanodine receptor. Cestoda is a metazoan clade, so its genomes keep the RyR control; the slot is left empty rather than filled with a family member.
 
 ### 3.3 Unfilled slots
 
@@ -108,28 +108,28 @@ The chimera screen is S5's module unchanged (D5), and its own negative controls 
 
 **14 genomes of the 194 in the manifest**, chosen as G4's anchors: the organisms whose answer is known from the literature. Half are positive controls (a characterised ITPR) and half are the negative claims (*Arabidopsis*, rice, a moss, *S. cerevisiae*, *Neurospora*, a microsporidian, *Toxoplasma*), so the pilot tests the pipeline in both directions at once.
 
-Statuses: `no_locus` 8, `found_annotated` 6.
+Statuses: `found_annotated` 6, `no_locus` 5, `fragment_only` 3.
 
-| organism | group | status | full | frag | MIR | RyR | control |
+| organism | group | status | full | frag | ctl | RyR | control |
 |---|---|---|---|---|---|---|---|
-| Drosophila melanogaster | metazoa | found_annotated | 1 | 0 | 1 | 1 | controlled_by_target |
-| Arabidopsis thaliana | viridiplantae | no_locus | 0 | 0 | 1 | 0 | controlled |
-| Strongylocentrotus purpuratus | metazoa | found_annotated | 1 | 0 | 1 | 1 | controlled_by_target |
-| Physcomitrium patens | viridiplantae | no_locus | 0 | 0 | 2 | 0 | controlled |
-| Chlamydomonas reinhardtii | viridiplantae | found_annotated | 1 | 0 | 0 | 0 | controlled_by_target |
-| Caenorhabditis elegans | metazoa | found_annotated | 1 | 0 | 1 | 1 | controlled_by_target |
-| Dictyostelium discoideum AX4 | amoebozoa | found_annotated | 1 | 0 | 0 | 0 | controlled_by_target |
-| Toxoplasma gondii ME49 | sar | no_locus | 0 | 0 | 0 | 0 | uncontrolled |
-| Encephalitozoon cuniculi GB-M1 | fungi | no_locus | 0 | 0 | 1 | 0 | controlled |
-| Saccharomyces cerevisiae S288C | fungi | no_locus | 0 | 0 | 4 | 0 | controlled |
-| Neurospora crassa OR74A | fungi | no_locus | 0 | 0 | 2 | 0 | controlled |
-| Batrachochytrium dendrobatidis JAM81 | fungi | no_locus | 0 | 0 | 2 | 0 | controlled |
-| Oryza sativa Japonica Group | viridiplantae | no_locus | 0 | 0 | 2 | 0 | controlled |
-| Nematostella vectensis | metazoa | found_annotated | 1 | 0 | 1 | 0 | controlled_by_target |
+| Drosophila melanogaster | metazoa | found_annotated | 1 | 0 |  | 1 | controlled_by_target |
+| Arabidopsis thaliana | viridiplantae | no_locus | 0 | 0 |  | 0 | controlled |
+| Strongylocentrotus purpuratus | metazoa | found_annotated | 1 | 0 |  | 1 | controlled_by_target |
+| Physcomitrium patens | viridiplantae | no_locus | 0 | 0 |  | 0 | controlled |
+| Chlamydomonas reinhardtii | viridiplantae | found_annotated | 1 | 0 |  | 0 | controlled_by_target |
+| Caenorhabditis elegans | metazoa | found_annotated | 1 | 0 |  | 1 | controlled_by_target |
+| Dictyostelium discoideum AX4 | amoebozoa | found_annotated | 1 | 0 |  | 0 | controlled_by_target |
+| Toxoplasma gondii ME49 | sar | fragment_only | 0 | 0 |  | 0 | uncontrolled |
+| Encephalitozoon cuniculi GB-M1 | fungi | no_locus | 0 | 0 |  | 0 | controlled |
+| Saccharomyces cerevisiae S288C | fungi | no_locus | 0 | 0 |  | 0 | controlled |
+| Neurospora crassa OR74A | fungi | fragment_only | 0 | 0 |  | 0 | controlled |
+| Batrachochytrium dendrobatidis JAM81 | fungi | no_locus | 0 | 0 |  | 0 | controlled |
+| Oryza sativa Japonica Group | viridiplantae | fragment_only | 0 | 0 |  | 0 | controlled |
+| Nematostella vectensis | metazoa | found_annotated | 1 | 2 |  | 0 | controlled_by_target |
 
 **Control:** 6 controlled_by_target, 7 controlled, 1 uncontrolled. 1 genome(s) uncontrolled — no absence claim may rest on those.
 
-**Copy number:** 6 full ITPR loci from 6 raw clusters, with 0 pair(s) folded by the conservative split-gene rule. 4 novel model(s) written.
+**Copy number:** 6 full ITPR loci from 21 raw clusters, with 0 pair(s) folded by the conservative split-gene rule. 5 novel model(s) written.
 
 ### 4.1 The absence claims at assembly level
 

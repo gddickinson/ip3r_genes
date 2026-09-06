@@ -6,7 +6,7 @@ is read out of `results/s23_baits/span_calibration.json`, which
 in the sweep may hard-code a span or a max-intron, because both are results
 and a retyped result silently stops tracking the table it came from.
 
-Two thresholds, and the reason each one is a measurement:
+Four thresholds, and the reason each one is a measurement:
 
   `max_intron_for(group)`   miniprot's `-G`. Too small does not lose a gene,
                             it **splits** one, and a split ITPR reads out of
@@ -25,6 +25,23 @@ Two thresholds, and the reason each one is a measurement:
                             bar across that range is either far too strict for
                             the protists or far too lax for the metazoans.
 
+  `call_min_identity()`     the identity a cluster must reach before it is
+                            called a locus at all. S5b measured 0.40 in the
+                            vertebrates, where a wide empty gap separates
+                            confirmed loci (>= 0.759) from chained junk
+                            (0.23-0.34) and every genome has a bait from its
+                            own class. Neither holds here, so the sweep
+                            *records* at `RECORD_MIN_IDENTITY` and the call
+                            floor is measured afterwards from what it recorded
+                            — and until that measurement exists this returns
+                            S5b's number labelled as inherited.
+
+  `copy_max_overlap()`      how far two complete alignments may overlap and
+                            still be one copy. Copy number is this task's
+                            deliverable, so what counts as *one* gene is a
+                            threshold like any other rather than an
+                            implementation detail.
+
 The per-group split is also why S5b's headline caveat mostly does not apply
 here. There, 120 of 309 genomes could not hold the gene on one contig and
 recovery fell from 98-99 % above the bar to 57-70 % below it. The genomes
@@ -39,6 +56,26 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CALIBRATION = PROJECT_ROOT / "results" / "s23_baits" / "span_calibration.json"
+LOCUS_CALIBRATION = (PROJECT_ROOT / "results" / "s23_scope"
+                     / "locus_calibration.json")
+
+#: The **recording** floor. Every cluster whose best alignment reaches this
+#: identity is written to the per-genome summary, whether or not it is
+#: called. It is deliberately far below any plausible call floor, because
+#: the call floor is measured *from* what was recorded: a sweep that filters
+#: at the threshold it wants to calibrate has thrown away its own evidence,
+#: and S5b could only measure 0.40 because it had the loci 0.40 excluded.
+#: Set at the level S1 measured cross-family ITPR-vs-RyR noise at (~0.25),
+#: less a margin, so the recorded population brackets the junk as well as
+#: the genes.
+RECORD_MIN_IDENTITY = 0.15
+
+#: What S5b measured in the vertebrates, kept as a literal so the report can
+#: say what was inherited even after the measured value has replaced it.
+#: Comparing the data against the live value alone would quietly rename
+#: whatever is currently in force as "inherited".
+INHERITED_CALL_MIN_IDENTITY = 0.40
+
 
 
 def _load() -> dict:
@@ -87,6 +124,41 @@ def spans_a_gene(contig_n50: int, group: str) -> tuple[bool, int, str]:
     return int(contig_n50 or 0) >= bar, bar, why
 
 
+# ------------------------------------------------------- the locus thresholds
+
+def locus_calibration() -> dict | None:
+    """S23b's own locus measurements, or None before they have been made."""
+    if not LOCUS_CALIBRATION.exists():
+        return None
+    return json.loads(LOCUS_CALIBRATION.read_text())
+
+
+def call_min_identity() -> tuple[float, str]:
+    """The identity a cluster must reach to be *called* a locus, and why.
+
+    S5b's 0.40 came from a wide empty gap measured in the vertebrates, where
+    every genome has a bait from its own class. Here the bands are whole phyla
+    and 13 slots are unbaited, so the same number is an inheritance, not a
+    measurement — and this returns which of the two it currently is, so no
+    report can present one as the other.
+    """
+    cal = locus_calibration()
+    if not cal or "call_min_identity" not in cal:
+        return INHERITED_CALL_MIN_IDENTITY, (
+            f"inherited from S5b ({INHERITED_CALL_MIN_IDENTITY:.2f}); this "
+            "scope's own measurement has not been made yet")
+    return float(cal["call_min_identity"]), cal.get("call_min_identity_why", "")
+
+
+def copy_max_overlap() -> tuple[float, str]:
+    """How far two complete alignments may overlap and still be one copy."""
+    cal = locus_calibration()
+    if not cal or "copy_max_overlap" not in cal:
+        return 0.20, ("default 0.20; this scope's own measurement has not "
+                      "been made yet")
+    return float(cal["copy_max_overlap"]), cal.get("copy_max_overlap_why", "")
+
+
 def measured_groups() -> list[str]:
     return sorted(_load().get("by_group", {}))
 
@@ -100,6 +172,9 @@ def summary() -> str:
     for g, s in cal.get("by_group", {}).items():
         lines.append(f"  {g:14s} n={s['n']:2d}  bar {s['contiguity_bar_bp']:>9,} bp"
                      f"   -G {s['max_intron_bp']:>9,} bp")
+    floor, why = call_min_identity()
+    lines.append(f"  locus identity: record >= {RECORD_MIN_IDENTITY:.2f}, "
+                 f"call >= {floor:.2f} — {why}")
     return "\n".join(lines)
 
 

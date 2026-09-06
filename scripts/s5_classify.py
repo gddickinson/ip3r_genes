@@ -23,6 +23,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from src.utils import family                    # noqa: E402
 from s5_genome_io import longest_n_run          # noqa: E402
 from s5_sweep_lib import (CLASSES, CONTROL_CLASS, COV_FOUND,  # noqa: E402
                           EDGE_BP, NGAP_RUN, UNRESOLVED_ITPR_CLADES, Locus)
@@ -32,8 +34,14 @@ from s5_sweep_lib import (CLASSES, CONTROL_CLASS, COV_FOUND,  # noqa: E402
 #: `iplA` is the *Dictyostelium* name S0 found the family signature does not
 #: even reach, kept here because the same annotation habit reaches other
 #: non-model assemblies.
-ITPR_NAME_HINTS = ("itpr", "ip3r", "insp3r", "ipla",
-                   "inositol 1,4,5-trisphosphate receptor")
+#: Sourced from the family definition rather than retyped (CLAUDE.md's rule:
+#: the family lives in one place). The local copy had drifted — it was missing
+#: `itr-1`, the *C. elegans* receptor's own symbol, so S23's pilot read a
+#: correctly-recovered nematode gene as an annotation that names something
+#: else. No vertebrate symbol changes, so S5's calls are unaffected.
+ITPR_NAME_HINTS = tuple(
+    sorted({h.lower() for h in family.KNOWN_NAME_SUBSTRINGS}
+           | {"inositol 1,4,5-trisphosphate receptor"}))
 RYR_NAME_HINTS = ("ryr", "ryanodine receptor")
 
 ANNOT_CDS_FRAC = 0.50     # gene must cover this much of the alignment's CDS bp

@@ -1,0 +1,29 @@
+{
+ "built_at": "2026-09-06T04:52:55+00:00",
+ "census_v5_rows": 17882,
+ "census_v6_rows": 17885,
+ "models_found": 5,
+ "models_enrolled": 3,
+ "models_declined": 2,
+ "min_aa": 200,
+ "db_status": {
+  "amoebozoa": {
+   "annotated_named": 1
+  },
+  "fungi": {
+   "genome_only": 1
+  },
+  "metazoa": {
+   "annotated_named": 2,
+   "annotated_unnamed": 2,
+   "genome_only": 7
+  },
+  "viridiplantae": {
+   "annotated_unnamed": 1,
+   "genome_only": 6
+  }
+ },
+ "copy_number_rows": {
+  "1": 3
+ }
+}

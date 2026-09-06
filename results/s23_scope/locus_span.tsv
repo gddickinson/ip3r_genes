@@ -1,0 +1,21 @@
+accession	organism	group	called	identity	coverage	span_bp	cds_footprint_bp	span_inflation	evidence	annot_gene
+GCF_000001215.4	Drosophila melanogaster	metazoa	1	1.0	1.0	297487	8514	34.94	confirmed	Itpr
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	1	1.0	1.0	431279	8463	50.96	unnamed	LOC594527
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	1	0.2978	0.1656	542279	1584	342.35	no_annotation	
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	1	0.2942	0.1668	377802	1545	244.53	no_annotation	
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	1	0.2649	0.1643	313905	1436	218.6	no_annotation	
+GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	1	0.2824	0.1662	317368	1524	208.25	no_annotation	
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	1	0.9997	1.0	17790	9633	1.85	unnamed	CHLRE_16g665450v5
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	1	0.2841	0.2811	619313	2772	223.42	no_annotation	
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	1	0.2767	0.2578	426549	2602	163.93	no_annotation	
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	1	0.2777	0.2718	398857	2691	148.22	no_annotation	
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	1	0.2511	0.2461	297207	2514	118.22	no_annotation	
+GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	1	0.2857	0.103	277060	954	290.42	no_annotation	
+GCF_000002985.6	Caenorhabditis elegans	metazoa	1	1.0	1.0	293012	8679	33.76	confirmed	itr-1
+GCF_000004695.1	Dictyostelium discoideum AX4	amoebozoa	1	1.0	1.0	79006	9534	8.29	confirmed	iplA
+GCF_000182925.2	Neurospora crassa OR74A	fungi	1	0.268	0.2368	166928	2251	74.16	no_annotation	
+GCF_034140825.1	Oryza sativa Japonica Group	viridiplantae	1	0.3088	0.1637	325946	1500	217.3	no_annotation	
+GCF_932526225.1	Nematostella vectensis	metazoa	1	0.8456	1.0	530414	8166	64.95	unnamed	LOC5509439
+GCF_932526225.1	Nematostella vectensis	metazoa	1	0.2582	0.3138	313154	2714	115.38	no_annotation	
+GCF_932526225.1	Nematostella vectensis	metazoa	1	0.2632	0.3261	137681	2668	51.6	no_annotation	
+GCF_932526225.1	Nematostella vectensis	metazoa	1	0.2599	0.2496	397382	2317	171.51	no_annotation	

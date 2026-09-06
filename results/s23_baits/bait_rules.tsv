@@ -1,6 +1,6 @@
 rule	statement	threshold
 B1	family from the census call, never a gene symbol	call in (ITPR, RYR)
-B2	RyR is a positive control only where RyR is expected; the MIR-domain sharer is the control everywhere	RYR_CONTROL_GROUPS = metazoa
+B2	RyR is a positive control only where RyR is expected; every other genome carries a control drawn from the clade the claim is about, and **which profile** that control uses is measured per clade rather than fixed in advance (s23_control_select)	RYR_CONTROL_GROUPS = metazoa; candidates = PF02815,PF00063,PF00122,PF02463,PF00225,PF00004
 B3	measured length band + one bait per band, two in the deep bands	DEEP_BANDS = Arthropoda,Mollusca,Nematoda
 B4	chimera screen: S3's margin + envelope coverage, S5's module	MIN_ENVELOPE_FRAC=0.55, MAX_INTERNAL_GAP_AA=400
 B5	architecture exception for a measured incomplete architecture above the derived score floor	percentile=0.05
