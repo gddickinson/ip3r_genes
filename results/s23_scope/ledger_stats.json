@@ -1,51 +1,74 @@
 {
- "genomes": 19,
+ "genomes": 128,
  "manifest_genomes": 194,
  "status": {
-  "no_locus": 11,
-  "found_annotated": 6,
-  "fragment_only": 2
+  "no_locus": 86,
+  "tblastn_trace": 14,
+  "found_annotated": 19,
+  "assembly_gap": 4,
+  "found_no_annotation": 5
  },
  "control_verdicts": {
-  "controlled_cross_kingdom": 7,
-  "controlled_by_target": 6,
-  "controlled": 6
+  "controlled_cross_kingdom": 87,
+  "no_control_bait": 9,
+  "controlled_by_target": 24,
+  "uncontrolled": 2,
+  "controlled": 5,
+  "controlled_ryr_only": 1
  },
- "uncontrolled": 0,
+ "uncontrolled": 2,
  "by_group": {
   "amoebozoa": {
+   "found_annotated": 3,
+   "no_locus": 1
+  },
+  "discoba": {
+   "tblastn_trace": 1,
+   "no_locus": 1,
    "found_annotated": 1
   },
   "fungi": {
-   "no_locus": 8,
-   "fragment_only": 1
+   "no_locus": 64,
+   "found_annotated": 1
   },
   "metazoa": {
-   "found_annotated": 4
+   "assembly_gap": 4,
+   "found_no_annotation": 5,
+   "no_locus": 2,
+   "found_annotated": 12
+  },
+  "other": {
+   "no_locus": 6,
+   "tblastn_trace": 7
   },
   "sar": {
-   "no_locus": 1
+   "tblastn_trace": 5,
+   "no_locus": 5,
+   "found_annotated": 1
   },
   "viridiplantae": {
-   "no_locus": 2,
-   "found_annotated": 1,
-   "fragment_only": 1
+   "no_locus": 7,
+   "tblastn_trace": 1,
+   "found_annotated": 1
   }
  },
- "total_full_loci": 6,
- "total_loci_raw": 20,
+ "total_full_loci": 34,
+ "total_loci_raw": 43,
  "total_merges": 0,
- "novel_models": 5,
- "below_contiguity_bar": 0,
+ "novel_models": 36,
+ "below_contiguity_bar": 11,
  "copy_number": {
-  "0": 13,
-  "1": 6
+  "0": 104,
+  "1": 17,
+  "2": 5,
+  "4": 1,
+  "3": 1
  },
- "total_full_loci_unmerged": 6,
+ "total_full_loci_unmerged": 34,
  "genomes_copy_differs_from_loci": 0,
- "loci_below_floor": 29,
+ "loci_below_floor": 344,
  "call_min_identity": 0.4,
- "absence_clades_covered": 10,
+ "absence_clades_covered": 34,
  "absence_clades": 35,
- "wall_clock_s": 322.5
+ "wall_clock_s": 3442.3
 }

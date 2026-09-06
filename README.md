@@ -51,6 +51,32 @@ contaminants**. Census v5 is **17,882 records, 8,807 IP3 receptors across
 
 **S23a** built the instrument that takes those absences to *genome* level — a declared **194-genome, 100 Gbp** denominator, thresholds re-measured for a tree where the family's gene span varies 100× rather than 6.5×, and a **new positive control**, because S5's ryanodine-receptor control does not exist in plants or fungi and would have made every negative claim look controlled while being unfalsifiable ([`results/s23_scope/report.md`](results/s23_scope/report.md)). Piloted on the 14 anchor genomes, **0 failures**: every positive control recovered and annotation-matched, and the Dikarya and land-plant absences are now *controlled* genome facts — while *Toxoplasma* comes back `uncontrolled`, so the Apicomplexa absence cannot yet be taken to assembly level.
 
+**S23b** then had to fix the control before the sweep could run. S23a's
+apicomplexan genome came back `uncontrolled` — no receptor *and* no control —
+so the Apicomplexa absence was unprovable. The fault was not the control
+protein; it was **choosing one control protein in advance for every clade**.
+Which family makes a good control is a property of the clade and can be
+measured: six candidate profiles run over each clade's own swept proteomes,
+each clade takes the one that is there. **Apicomplexa takes myosin — present
+in 36/36 and 23/23 of its swept proteomes** against the old control's one
+protein per class — and *Toxoplasma* is now controlled *across a kingdom
+boundary*. **Red algae make the same point in reverse**: they have largely
+lost myosin (8 % of proteomes), so they take a chromosome-maintenance protein
+at 12/12. Two thresholds were re-measured the same way — a locus identity
+floor that could not be measured at all until the sweep stopped discarding the
+evidence at the very cut-off being calibrated (**D27**), and copy number, which
+is now counted on complete alignments rather than on alignment clusters after
+*Drosophila*'s 22 kb receptor was found sitting inside a **297 kb cluster —
+35× its own coding footprint** (**D28**).
+
+**S23c** is the sweep itself, running. At **127 of 194 genomes, 0 failures**,
+**every one of the 34 absence clades we can currently speak for holds at
+assembly level** — Ascomycota 0/31, Basidiomycota 0/17, Apicomplexa 0/3,
+Streptophyta 0/6. Two positives stand out: the annelid *Dimorphilus
+gyrociliatus* with **four** complete copies, and *Basidiobolus* — an
+early-branching fungus, well outside Dikarya — with two, which sharpens the
+fungal story rather than undermining it.
+
 ---
 
 ## Quickstart
@@ -164,7 +190,8 @@ One task per session. Full ledger with dependencies and results in
 | S20a | Non-vertebrate sweep — the family's true range | ✅ completed 2026-09-05 |
 | S20b | The remaining per-group convergence runs | ✅ completed 2026-09-05 |
 | S23a | Non-vertebrate sweep: scope, calibration, bait panel, pilot | ✅ completed 2026-09-05 |
-| S23b | The full 194-genome non-vertebrate sweep → census v6 | ⏳ pending |
+| S23b | The blocking measurements, and the instrument they change | ✅ completed 2026-09-06 |
+| S23c | The full 194-genome non-vertebrate sweep → census v6 | 🔄 in progress (127/194 swept) |
 | S6 | Alignment upgrade (MAFFT L-INS-i + trimAl) | ⏳ pending |
 | S7 | ML phylogeny, rooted on RyR; which paralogs are sisters | ⏳ pending |
 | S8 | Synteny across the ITPR loci | ⏳ pending |

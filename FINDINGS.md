@@ -815,3 +815,81 @@ nine pieces of one and threw all nine away, because they resembled the bait
 only a quarter as closely as a vertebrate gene resembles a vertebrate bait —
 and the nearest bait available to it was an amoeba's. A threshold measured on
 the best-studied corner of a tree describes the studying, not the tree.
+
+---
+
+## 2026-09-06 — What it takes to be allowed to say "it isn't there"
+
+Most of this project's remaining claims are absences. The family is missing
+from the flowering plants, from the mushrooms and moulds of Dikarya, from the
+malaria parasites and their relatives — or so the protein databases say. A
+database absence is a statement about what a gene-finding program noticed. To
+turn it into a statement about the organism you have to go to the DNA, and to
+be allowed to report *that* absence you need one more thing: proof the search
+would have found the gene if it had been there.
+
+That proof is called a positive control, and this session it nearly failed us
+in the one place it mattered most.
+
+**The malaria parasites.** The control we had been using is a different
+protein that shares one domain with the receptor — a sugar-transferring enzyme
+almost every organism carries. Find it, and the search demonstrably works.
+Except that the apicomplexans, the group containing *Toxoplasma* and the
+malaria parasites, barely have it: one such protein across sixty sequenced
+species. So when *Toxoplasma* came back with no receptor *and* no control, we
+could not tell whether the receptor is absent or the search had failed. The
+absence claim about a clade of major medical importance was stuck.
+
+The fix turned out not to be a better control protein. It was to stop
+choosing the control in advance. **Which protein makes a good control is a
+fact about the group you are asking about, and it can simply be measured**:
+take a handful of large, ancient, well-conserved proteins, count how many of
+the group's species actually have each one, and use the winner. For the
+apicomplexans that is myosin — the motor protein muscles are built from,
+which these parasites use to glide into host cells. Every one of the fifty-nine
+apicomplexan species we checked has it, and it is a big multi-part gene, so
+finding it proves the search can find a big multi-part gene here. *Toxoplasma*
+is now controlled, and "no IP₃ receptor in Apicomplexa" is a claim we are
+entitled to test.
+
+The same measurement caught something we would otherwise have got wrong in the
+opposite direction. **Red algae have largely lost myosin** — only one in twelve
+species has one — so myosin would have been a terrible control for them. They
+get a chromosome-maintenance protein instead, present in all twelve. Neither
+choice was ours; both fell out of counting.
+
+**And the control now has two strengths.** Because every group's control
+protein is searched in every genome, we can see not just whether a control
+fired but *how far away* the bait that found it came from. A control found
+using a bait from the same group shows the assembly is readable. A control
+found using a bait from a different kingdom shows the search reaches across
+the kind of evolutionary distance any hidden receptor would have to be found
+across. Eighty-seven of the first hundred and twenty-seven genomes clear the
+higher bar.
+
+**Meanwhile, the search itself.** Two thirds of the way through, the picture
+so far: **every one of the thirty-four absence groups we can currently speak
+for holds up in the DNA.** Thirty-one ascomycete genomes, seventeen
+basidiomycete ones, six land plants — no receptor in any of them, with the
+control firing in every case. These are still small genomes, since we are
+working from the smallest up, and the animals are mostly still to come.
+*(pending: S23c)*
+
+Two positives stand out. A marine worm, *Dimorphilus gyrociliatus*, carries
+**four** complete copies of a gene most invertebrates have one of. And one
+fungus does have the receptor — *Basidiobolus*, an early-branching fungus that
+sits well outside the Dikarya, so it sharpens rather than undermines the
+fungal story: the family looks lost on the branch leading to the familiar
+fungi, not absent from fungi as a whole. *(pending: S23c)*
+
+**One more note on our own instrument**, continuing last session's. A
+threshold we needed to measure could not be measured, because the pipeline was
+throwing away the evidence before anyone could look at it — the search
+discarded weak matches at the very cut-off we were trying to justify. It now
+keeps everything and decides later. And a first attempt at the measurement,
+run on a single genome as a test, produced a number, wrote it down, and was
+promptly believed by the next run, which moved three organisms into a
+different category on the strength of two data points. The measurement now
+refuses to answer until it has enough to answer with. It is a small thing, but
+it is the same failure as a fixed control: a procedure that always returns
+something will always be believed.

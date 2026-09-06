@@ -1,7 +1,35 @@
 accession	organism	group	phylum	contig	start	end	strand	bait	identity	coverage	score	cds_footprint_bp
+GCA_001606155.1	Tieghemostelium lacteum	amoebozoa	Evosea	LODT01000051.1	849428	858373	-	Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	0.4975	1.0	7202.0	8790
+GCA_002104905.1	Basidiobolus meristosporus CBS 931.73	fungi	Basidiobolomycota	MCFE01000086.1	24011	32322	-	A0ABR2W6A1|K7432_003395|Basidiobolus_ranarum|Basidiobolomycota|ITPR	0.8051	1.0	10564.0	7548
+GCA_002104905.1	Basidiobolus meristosporus CBS 931.73	fungi	Basidiobolomycota	MCFE01000591.1	14328	22639	-	A0ABR2W6A1|K7432_003395|Basidiobolus_ranarum|Basidiobolomycota|ITPR	0.8755	1.0	11380.0	7517
+GCA_010279815.1	Brachionus plicatilis	metazoa	Rotifera	QEOQ01000486.1	777348	811773	+	A0A813MP72|OXX778_LOCUS2086|Brachionus_calyciflorus|Rotifera|ITPR	0.8187	0.9993	12687.0	8979
+GCA_010279815.1	Brachionus plicatilis	metazoa	Rotifera	QEOQ01000527.1	2556	20399	-	A0A8K0A0Y4|ITPR1|Branchiostoma_lanceolatum|Chordata|ITPR	0.4525	0.9842	5802.0	7995
+GCA_021613535.1	Adineta vaga	metazoa	Rotifera	CP075494.1	12906306	12919288	-	A0A4Y2F2N2|ITPR1_3|Araneus_ventricosus|Arthropoda|ITPR	0.4941	0.995	6331.0	8205
+GCA_021613535.1	Adineta vaga	metazoa	Rotifera	CP075495.1	4490299	4505041	+	A0A8K0A0Y4|ITPR1|Branchiostoma_lanceolatum|Chordata|ITPR	0.503	0.991	6505.0	8203
+GCA_036172245.1	Raillietiella orientalis	metazoa	Arthropoda	JAYWIR010000015.1	449716	467748	-	A0A4Y2F2N2|ITPR1_3|Araneus_ventricosus|Arthropoda|ITPR	0.5908	0.9939	8149.0	8114
+GCA_047495785.1	Lepidodermella squamata	metazoa	Gastrotricha	JBLDXI010000002.1	1478289	1490233	+	A0A1S3H6V5|LOC106152615|Lingula_anatina|Brachiopoda|ITPR	0.4401	0.9836	5811.0	8247
+GCA_051530055.1	Neoechinorhynchus agilis	metazoa	Acanthocephala	CM121342.1	6343218	6356290	-	A0A8K0A0Y4|ITPR1|Branchiostoma_lanceolatum|Chordata|ITPR	0.4372	0.9896	5319.0	7919
+GCA_054772095.1	Chamberlinius hualienensis	metazoa	Arthropoda	BAAGAE010000030.1	9259813	9279160	+	A0A4Y2F2N2|ITPR1_3|Araneus_ventricosus|Arthropoda|ITPR	0.6465	0.9942	8951.0	8271
+GCA_056869335.1	Trichinella zimbabwensis	metazoa	Nematoda	CM166519.1	696585	710093	+	A0A0V1CUW8|itr-1|Trichinella_britovi|Nematoda|ITPR	0.969	1.0	13609.0	8130
+GCA_904063045.1	Dimorphilus gyrociliatus	metazoa	Annelida	CAJFCJ010000001.1	599301	609198	-	A0ACM8C709|LOC100375107|Saccoglossus_kowalevskii|Hemichordata|ITPR	0.4757	0.9927	6144.0	7608
+GCA_904063045.1	Dimorphilus gyrociliatus	metazoa	Annelida	CAJFCJ010000003.1	2842975	2851892	-	A0ACM8C709|LOC100375107|Saccoglossus_kowalevskii|Hemichordata|ITPR	0.4543	0.9923	5747.0	7660
+GCA_904063045.1	Dimorphilus gyrociliatus	metazoa	Annelida	CAJFCJ010000006.1	3649905	3658034	-	A0A1S3H6V5|LOC106152615|Lingula_anatina|Brachiopoda|ITPR	0.4559	0.9505	5880.0	7926
+GCA_904063045.1	Dimorphilus gyrociliatus	metazoa	Annelida	CAJFCJ010000020.1	1267714	1282517	+	R7TPX0|unnamed|Capitella_teleta|Annelida|ITPR	0.6344	0.9989	8532.0	8001
+GCA_964035545.1	Bugula neritina	metazoa	Bryozoa	OZ037765.1	1670281	1712081	+	R7TPX0|unnamed|Capitella_teleta|Annelida|ITPR	0.6599	0.9982	8895.0	7996
+GCA_964035545.1	Bugula neritina	metazoa	Bryozoa	OZ037771.1	2368133	2443985	+	A0ACM8C709|LOC100375107|Saccoglossus_kowalevskii|Hemichordata|ITPR	0.476	0.9935	6045.0	7608
+GCA_976986565.1	Gordionus wolterstorffii	metazoa	Nematomorpha	OZ335996.1	11909076	12015779	-	R7TPX0|unnamed|Capitella_teleta|Annelida|ITPR	0.5223	0.9893	6923.0	7989
 GCF_000001215.4	Drosophila melanogaster	metazoa	Arthropoda	NT_033777.3	5527819	5538651	+	P29993|Itpr|Drosophila_melanogaster|Arthropoda|ITPR	1.0	1.0	14592.0	8514
-GCF_000002235.5	Strongylocentrotus purpuratus	metazoa	Echinodermata	NW_022145612.1	50950215	51051598	+	A0A7M7MY00|unnamed|Strongylocentrotus_purpuratus|Echinodermata|ITPR	1.0	1.0	14600.0	8463
 GCF_000002595.2	Chlamydomonas reinhardtii	viridiplantae	Chlorophyta	NC_057019.1	3086978	3104767	+	A0A2K3CTW4|CHLRE_16g665450v5|Chlamydomonas_reinhardtii|Chlorophyta|ITPR	0.9997	1.0	16579.0	9633
 GCF_000002985.6	Caenorhabditis elegans	metazoa	Nematoda	NC_003282.8	7675174	7696703	+	Q9Y0A1|itr-1|Caenorhabditis_elegans|Nematoda|ITPR	1.0	1.0	15026.0	8679
 GCF_000004695.1	Dictyostelium discoideum AX4	amoebozoa	Evosea	NC_007092.3	1805115	1814945	-	Q9NA13|iplA|Dictyostelium_discoideum|Evosea|ITPR	1.0	1.0	16440.0	9534
-GCF_932526225.1	Nematostella vectensis	metazoa	Cnidaria	NC_064043.1	14436060	14485577	-	A0A6P8IUM8|LOC116304295|Actinia_tenebrosa|Cnidaria|ITPR	0.8456	1.0	11982.0	8166
+GCF_000090795.2	Amphimedon queenslandica	metazoa	Porifera	NW_003546249.1	797106	811062	+	A0AAN0JIF7|unnamed|Amphimedon_queenslandica|Porifera|ITPR	0.9924	1.0	14196.0	8340
+GCF_000150275.1	Trichoplax adhaerens	metazoa	Placozoa	NW_002060946.1	1089890	1115622	+	A0ACM8C709|LOC100375107|Saccoglossus_kowalevskii|Hemichordata|ITPR	0.4574	0.9985	5692.0	7546
+GCF_000150275.1	Trichoplax adhaerens	metazoa	Placozoa	NW_002060947.1	2342837	2359949	-	B3RXX7|TRIADDRAFT_56365|Trichoplax_adhaerens|Placozoa|ITPR	1.0	1.0	13042.0	7575
+GCF_000313135.1	Acanthamoeba castellanii str. Neff	amoebozoa	Discosea	NW_004457268.1	83486	98632	-	L8GF85|ACA1_256780|Acanthamoeba_castellanii|Discosea|ITPR	1.0	1.0	17048.0	10035
+GCF_000326865.2	Helobdella robusta	metazoa	Annelida	NW_008704865.1	423738	453488	+	A0A1S3H6V5|LOC106152615|Lingula_anatina|Brachiopoda|ITPR	0.5248	0.9516	7021.0	7917
+GCF_000326865.2	Helobdella robusta	metazoa	Annelida	NW_008704902.1	7243410	7316495	+	A0A1S3H6V5|LOC106152615|Lingula_anatina|Brachiopoda|ITPR	0.5205	0.9541	6997.0	7932
+GCF_000326865.2	Helobdella robusta	metazoa	Annelida	NW_008705420.1	521450	558233	-	R7TPX0|unnamed|Capitella_teleta|Annelida|ITPR	0.5938	0.9945	7992.0	8114
+GCF_000520075.1	Aphanomyces astaci	sar	Oomycota	NW_009798313.1	70941	82958	-	A0A1V9ZAA8|THRCLA_08090|Thraustotheca_clavata|Oomycota|ITPR	0.4253	0.9925	5728.0	9425
+GCF_008403515.1	Naegleria fowleri	discoba	Heterolobosea	NW_025407944.1	829058	838707	-	A0AA88KEU5|C9374_011999|Naegleria_lovaniensis|Heterolobosea|ITPR	0.9215	1.0	14476.0	9153
+GCF_019649055.1	Paramacrobiotus metropolitanus	metazoa	Tardigrada	NW_026570248.1	399216	412972	-	A0A1W0X7L5|BV898_02971|Hypsibius_exemplaris|Tardigrada|ITPR	0.5185	0.9978	6958.0	8593
+GCF_021134715.1	Daphnia pulex	metazoa	Arthropoda	NC_060023.1	12194005	12203814	+	A0A4Y2F2N2|ITPR1_3|Araneus_ventricosus|Arthropoda|ITPR	0.6331	0.9942	8997.0	8538

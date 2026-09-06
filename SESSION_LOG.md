@@ -1291,3 +1291,127 @@ for Apicomplexa, without which "0/60" cannot go to assembly level; (3) measure
 locus-span / CDS-footprint and, where chaining is severe, count non-overlapping
 full-length alignments rather than loci; then the full 194-genome sweep, the
 absence claims at assembly level, and census v6.
+
+---
+
+## 2026-09-06 — S23b: the blocking measurements, and a control chosen by data
+
+**Task.** S23b as the brief defined it: three blocking items before the full
+sweep, then the sweep. The three turned into a session; the sweep is running
+and became S23c.
+
+### 1. The control (blocking item 2) — and it was blocking a headline claim
+
+S23a left *Toxoplasma gondii* `uncontrolled`: neither a receptor nor a MIR
+locus, so "Apicomplexa 0/60" could not go to assembly level at all. The
+diagnosis in the S23a report was "find a second, non-MIR control". That was
+half right. **The fault was not PF02815, it was fixing one profile in advance
+for every clade.** A control's job is to fire in the clade whose absence is
+the claim, so which protein family makes the best control is a property of the
+clade — and it is measurable.
+
+`s23_control_profiles.py` declares six candidates, every one a large, deeply
+conserved, multi-exon eukaryotic family (MIR, Myosin_head, E1-E2_ATPase,
+SMC_N, Kinesin, and AAA as an explicit fallback), so whichever a clade picks
+the control exercises spliced alignment over a long gene rather than one small
+domain. `s23_control_select.py` runs each over each clade's own swept
+reference proteomes — 20 searches over the four archived DBs — and takes the
+one that is actually there.
+
+- **Apicomplexa takes Myosin_head: 36/36 Aconoidasida and 23/23 Conoidasida
+  swept proteomes, median ~1,450 aa**, against PF02815's one protein per class
+  across 60. *Toxoplasma* now returns 2 control loci and is
+  `controlled_cross_kingdom`.
+- **Rhodophyta vindicates the design independently.** Red algae carry myosin
+  in **8 %** of their swept proteomes — the fixed-profile approach would have
+  handed them a control found in 1 of 12. Measured, they take SMC_N at 12/12.
+- 27 clades take Myosin_head, 1 takes SMC_N. 56 control baits, 48 strong / 8
+  weak.
+- **The MIR bait stays in the panel regardless.** It is the only control
+  inside the family's own signature set, so a MIR locus called ITPR is D14's
+  sharpest possible failure. Dropping it for the better proof-of-search would
+  buy a control and sell a negative control.
+- AAA is marked `fallback` and is *searched only if the ranked candidates
+  leave a clade empty*. None did, so it was not run, and
+  `control_profile_coverage.tsv` records it as `not_searched` rather than
+  leaving a blank a reader would mistake for "searched, found nothing".
+
+**A second tier came free.** The panel already searches every clade's control
+bait in every genome, so "a bait from another kingdom also aligns across this
+locus" costs nothing to record and says far more than "the assembly is
+readable": it shows the search crosses the divergence any receptor here would
+have to be found across. 87 of the first 127 genomes are
+`controlled_cross_kingdom`.
+
+### 2. `MIN_LOCUS_IDENTITY` (blocking item 1) → D27
+
+The brief asked for a re-measurement. The measurement could not be made at
+all as the pipeline stood: the sweep filtered at the floor, so the loci a
+calibration needs were never recorded. **S5b could measure 0.40 only because
+it had the loci 0.40 excludes.** The sweep now records to
+`RECORD_MIN_IDENTITY` = 0.15 and applies the call floor downstream, read back
+from the committed calibration; `call_min_identity()` returns *whether* the
+number in force is measured or inherited, so no report can present one as the
+other.
+
+`s23_calibrate_loci.py` measures it against loci whose identity the
+assembly's **own annotation** establishes, classifying each recorded cluster
+`confirmed` / `sister` / `contradicted` / `unnamed` / `no_annotation`. It
+**refuses to write below 50 genomes / 15 confirmed loci** — and that guard
+earned its place inside an hour: a smoke-test over the single re-swept pilot
+genome derived 0.25 from two loci, wrote it, and the next sweep read it back
+and moved *Neurospora*, *Toxoplasma* and *Oryza* out of `no_locus`.
+
+Making the evidence class right mattered more than expected. `unnamed` had to
+be separated from `contradicted` by a positive test on the name: outside the
+vertebrates most gene models carry locus tags, and *Chlamydomonas* files its
+receptor as `CHLRE_16g665450v5`, *Strongylocentrotus* as `LOC594527`. Treating
+an uninformative name as a contradiction would have put two correctly-
+recovered genes in the junk population.
+
+### 3. Span against CDS footprint (blocking item 3) → D28
+
+Measured: *Drosophila*'s 22 kb *Itpr* sits in a **297,487 bp cluster around an
+8,514 bp CDS footprint — 35×**, because `-G` is 650 kb for the metazoa and 26
+alignments chained across it. The status call was right; a copy count would
+not be, because two real genes inside one such chain are counted once. Copy
+number is now counted on **non-overlapping complete alignments**, not on
+clusters. The *Drosophila* copy is bounded at 10.8 kb.
+
+### 4. Two latent bugs, both found by the work above
+
+- `s5_classify.ITPR_NAME_HINTS` had drifted from `family.KNOWN_NAME_SUBSTRINGS`
+  and was missing `itr-1`, so the pilot read *C. elegans*'s correctly-recovered
+  receptor as an annotation naming something else. Now sourced from
+  `family.py` (CLAUDE.md's one-place rule). No vertebrate symbol changes.
+- The rescue HSP filter read `h["start"]`/`h["end"]`, which `parse_tblastn`
+  does not produce (`sstart`/`send`). It never fired because every `no_locus`
+  genome up to *Salpingoeca rosetta* returned zero HSPs, so the generator's
+  predicate was never evaluated. Replaced with S5's own `filter_hsps_outside`
+  rather than a second reimplementation. *Salpingoeca* now returns
+  `tblastn_trace`.
+- Also closed: the recording floor had quietly made the control cells easier
+  to satisfy than the family call (they were counted with no floor and no
+  grade bar), so a genome could have been declared `controlled` on a chained
+  fragment. Controls are now held to the same floor and grade bar.
+
+### 5. The sweep
+
+Panel rebuilt 80 → **108 baits** (37 ITPR + 16 RyR + 55 control), 277,611
+residues. Launched over all 194 genomes; **127 done, 0 failures** at the time
+of writing, ~8 h of miniprot left. All five downstream modules
+(`s23_ledger`, `s23_calibrate_loci`, `s23_figures`, `s23_census_v6`,
+`s23_report`) run clean against the partial set, and the report renders itself
+at three scales so a 127-of-194 run cannot wear the finished sweep's heading.
+
+**Partial results (127 genomes, smallest-first, so biased to small
+assemblies):** 34 of 35 absence clades have at least one controlled genome and
+**every one holds at assembly level** — Ascomycota 0/31, Basidiomycota 0/17,
+Apicomplexa 0/3, Streptophyta 0/6 (one trace-only). Copy number 0/1/2/4 =
+104/17/5/1. Two genomes `uncontrolled` (*Intoshia linei*, *Allopauropus
+danicus*, both reduced metazoan genomes), correctly excluded from every
+absence claim.
+
+**Next.** S23c: resume the sweep, then `s23_calibrate_loci.py` → a `--redo`
+reclassify pass to apply the measured floor → ledger → figures → census v6 →
+report.

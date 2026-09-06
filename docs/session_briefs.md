@@ -245,53 +245,55 @@ it, drawn per control clade and graded strong/weak.
 
 ---
 
-## S23b — The full non-vertebrate sweep
+## S23b — The blocking measurements  *(completed 2026-09-06)*
 
-**Blocking work first**, in this order, all from S23a's pilot:
+**Goal.** The three items S23a's pilot left in front of the sweep. All three
+turned out to be instrument changes rather than parameter tweaks.
 
-1. **Re-measure `MIN_LOCUS_IDENTITY` for this scope, and report the margin.**
-   S5b's 0.40 came from a wide empty gap in the vertebrates (confirmed loci
-   >= 0.759, junk 0.23-0.34) measured where every genome has a same-class
-   bait. Bands here are whole phyla and 13 slots are unbaited. (The
-   *Chlamydomonas* case that first looked like a failure of this floor was
-   the bait panel — see S23a — so this is a caution, not a known defect.)
-   Measure it the way S5b did, against loci whose identity an assembly's own
-   annotation confirms, and report how many `no_locus` calls sit just under
-   the floor.
-2. **Find a second, non-MIR control for Apicomplexa.** Both apicomplexan
-   classes carry one PF02815 protein each across 60 swept proteomes, and in
-   the pilot *Toxoplasma gondii* came back with neither a receptor nor a
-   control — `uncontrolled`, supporting no absence claim. Without a working
-   control "Apicomplexa 0/60" cannot go to assembly level. A conserved
-   single-copy ortholog panel, or the assembly's own annotated gene set as the
-   proof-of-search.
-3. **Measure locus span against CDS footprint.** The metazoan `-G` is 650 kb
-   (from the 325 kb *Octopus* gene) and a *Drosophila* Itpr spans 22 kb; in the
-   pilot its locus chained 20 alignments across 297 kb, 13x the gene. The call
-   was right (`frac_cds` 1.0) but two real genes within 650 kb would be
-   counted once — and **copy number is this task's deliverable**.
+1. **`MIN_LOCUS_IDENTITY`** could not be re-measured as the pipeline stood:
+   the sweep filtered at the floor, so the loci a calibration needs were never
+   recorded. Split into a **recording floor** (0.15, applied at search) and a
+   **call floor** (applied downstream, read back from the committed
+   calibration) — **D27**. `s23_calibrate_loci.py` measures the call floor
+   against loci whose identity the assembly's own annotation establishes, and
+   refuses to write below 50 genomes / 15 confirmed loci.
+2. **The control.** Not a second profile for Apicomplexa — stop fixing one
+   profile in advance. `s23_control_profiles.py` / `s23_control_select.py`
+   measure six candidates over each clade's own swept proteomes and take the
+   winner. Apicomplexa → Myosin_head (36/36, 23/23); Rhodophyta → SMC_N
+   (12/12, myosin being 8 %). The MIR bait stays as D14's decoy. Plus a
+   cross-kingdom control tier, free from the existing panel.
+3. **Span vs CDS footprint.** *Drosophila* 297,487 bp cluster / 8,514 bp
+   footprint = 35×. Copy number is counted on non-overlapping complete
+   alignments, not clusters — **D28**.
 
-**Goal.** Then take the negative claims to genome level. A proteome absence is
-an annotation fact; only an assembly search makes it a biological one.
+Panel rebuilt 80 → 108 baits. → `results/s23_baits/control_profile_choice.tsv`
+
+---
+
+## S23c — The full non-vertebrate sweep
+
+**Goal.** Take the negative claims to genome level. A proteome absence is an
+annotation fact; only an assembly search makes it a biological one.
 
 **Steps.**
-1. Manifest: best assembly per invertebrate phylum and per class in the big
-   phyla, plus the S20 priority species — every lineage whose proteome was
-   zero-hit, and specifically *Arabidopsis*, rice, a moss, a
-   chlorophyte, *S. cerevisiae*, *Neurospora*, a chytrid and a
-   microsporidian. Size guard so a fragmentary assembly is not scored.
-2. Bait panel from the S6/msa representatives, one per phylum where
-   possible, chimera-screened (D5).
-3. **Copy-number** classification (not the 3-paralog cell model — outside
-   vertebrates the question is how many ITPRs a genome has): full /
-   fragment / scrap loci, conservative `n_full`, statuses found /
-   fragment_only / assembly_gap / no_locus.
-4. tblastn rescue for zero-locus genomes; per-genome evidence under the data
-   root; ledger + copy-number figure + pooled novel models.
+1. **Resume the sweep**: `python3 scripts/s23_run_sweep.py --threads 8
+   --smallest-first`. It skips completed genomes on their `.sweep.done`
+   markers. ~8 h of miniprot from 127/194.
+2. **`python3 scripts/s23_calibrate_loci.py`** — writes the measured
+   `call_min_identity` (and reports how many `no_locus` genomes sit within
+   0.05 of it, which the S23b brief asked for explicitly).
+3. **Reclassify**: `python3 scripts/s23_run_sweep.py --threads 8 --redo`. The
+   miniprot GFFs are cached, so this is parse + classify only (~40 min).
+   **Do not skip it** — until step 2 has run, every call rests on S5b's
+   inherited 0.40, which `s23_calibration.call_min_identity()` reports as an
+   inheritance rather than a measurement.
+4. `s23_ledger.py` → `s23_figures.py` → `s23_census_v6.py` → `s23_report.py`.
 
 **Done when.** Every manifest genome has a copy-number row with evidence
-paths; the plant/fungal absence claims are backed by assembly searches at a
-stated sensitivity; figure committed.
+paths; the plant/fungal/apicomplexan absence claims are backed by assembly
+searches at a stated sensitivity, counting controlled genomes only; census v6
+and the four figures committed; the report renders at full-sweep scale.
 
 ---
 

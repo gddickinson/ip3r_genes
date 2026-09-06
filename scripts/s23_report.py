@@ -22,6 +22,13 @@ import s23_report_results as res                                # noqa: E402
 from s5_build_baits import read_tsv                            # noqa: E402
 
 OUT = PROJECT_ROOT / "results" / "s23_scope"
+
+#: Below this many swept genomes the report renders the instrument document
+#: and its pilot section; at or above it, the results sections. The number is
+#: the sample floor `s23_calibrate_loci` refuses to calibrate below, reused so
+#: the report cannot start reporting results the calibration will not stand
+#: behind.
+MIN_GENOMES_FOR_RESULTS = 50
 BAITS = PROJECT_ROOT / "results" / "s23_baits"
 
 
@@ -399,18 +406,35 @@ def main() -> int:
     # different documents and must not be able to wear each other's heading.
     swept = lstats.get("genomes", 0)
     declared = lstats.get("manifest_genomes") or mstats.get("genomes", 0)
-    full_run = swept >= max(1, int(0.9 * declared)) if declared else False
-    title = ("# S23 — the non-vertebrate genomic sweep\n" if full_run else
-             "# S23a — the non-vertebrate genomic sweep's instrument\n")
+    frac = swept / declared if declared else 0.0
+    full_run = frac >= 0.9
+    # Three states, not two. A report rendered over 127 of 194 genomes is
+    # neither the instrument document nor the finished sweep, and letting it
+    # wear either heading would misstate the denominator every number in it
+    # is divided by.
+    results_scale = swept >= MIN_GENOMES_FOR_RESULTS
+    if full_run:
+        title = "# S23 — the non-vertebrate genomic sweep\n"
+        scope_note = f" **{swept} of {declared} declared genomes swept.**\n"
+    elif results_scale:
+        title = ("# S23 — the non-vertebrate genomic sweep "
+                 f"*(partial: {swept} of {declared} genomes)*\n")
+        scope_note = (
+            f" **This is a partial run: {swept} of {declared} declared "
+            f"genomes ({frac:.0%}).** Every number below is over those "
+            f"{swept}, and the sweep is ordered smallest genome first, so "
+            "the completed set is biased towards small assemblies. Nothing "
+            "here is a final denominator.\n")
+    else:
+        title = "# S23a — the non-vertebrate genomic sweep's instrument\n"
+        scope_note = (" This half builds and measures the instrument; "
+                      "S23b runs it.\n")
     lede = (
-        f"S20 swept 6,928 reference **proteomes** and found the family absent "
-        f"from the land plants, the Dikarya, the Apicomplexa and a scatter of "
-        f"fungal phyla. Every one of those is an annotation fact: a proteome "
-        f"is what a gene-caller found, a genome is what is there. S23 takes "
-        f"them to assembly level."
-        + (f" **{swept} of {declared} declared genomes swept.**\n"
-           if full_run else
-           " This half builds and measures the instrument; S23b runs it.\n"))
+        "S20 swept 6,928 reference **proteomes** and found the family absent "
+        "from the land plants, the Dikarya, the Apicomplexa and a scatter of "
+        "fungal phyla. Every one of those is an annotation fact: a proteome "
+        "is what a gene-caller found, a genome is what is there. S23 takes "
+        "them to assembly level." + scope_note)
 
     parts = [
         title,
@@ -423,7 +447,7 @@ def main() -> int:
                   tload(BAITS / "control_manifest.tsv"),
                   tload(BAITS / "screen_self_test.tsv"), choice),
     ]
-    if not full_run:
+    if not results_scale:
         parts.append(sec_pilot(lstats, ledger, absences, controls))
     else:
         chunks: list[str] = []
@@ -436,9 +460,9 @@ def main() -> int:
         parts.append("".join(chunks))
         parts.append(sec_figures())
     (OUT / "report.md").write_text("\n".join(parts))
-    print(f"wrote {OUT / 'report.md'} "
-          f"({'full sweep' if full_run else 'instrument'} scale, "
-          f"{swept} genome(s))")
+    scale = ("full sweep" if full_run else
+             f"partial sweep {frac:.0%}" if results_scale else "instrument")
+    print(f"wrote {OUT / 'report.md'} ({scale} scale, {swept} genome(s))")
     return 0
 
 
