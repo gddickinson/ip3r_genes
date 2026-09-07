@@ -1,0 +1,348 @@
+IQ-TREE multicore version 2.3.6 for MacOS ARM 64-bit built Jul 30 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MacBookPro.lan (SSE4.2, 32 GB RAM)
+Command: iqtree2 -s /Users/george/claude_test/ip3r_genes/results/phylogeny/input.fasta --prefix /Users/george/claude_test/ip3r_genes/results/phylogeny/model_matrix -m MF -T 4 -seed 42 --mrate G4,I+G4
+Seed:    42 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Sep  6 19:49:35 2026
+Kernel:  SSE2 - 4 threads (10 CPU cores detected)
+
+Reading alignment file /Users/george/claude_test/ip3r_genes/results/phylogeny/input.fasta ... Fasta format detected
+Reading fasta file: done in 0.00267005 secs using 88.61% CPU
+Alignment most likely contains protein sequences
+Alignment has 134 sequences with 1797 columns, 1796 distinct patterns
+1739 parsimony-informative, 36 singleton sites, 22 constant sites
+                                                                        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000102043 secs using 336.1% CPU
+   1  ITPR1_Apteryx_mantelli_North_Island_brown_ki_A0ABM4F3U0                   2.39%    passed     99.69%
+   2  ITPR1_Bos_taurus_Bovine_Q9TU34                                            2.45%    passed     99.77%
+   3  ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VNY7                      2.39%    passed     88.69%
+   4  ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VJN0                      2.39%    passed     99.39%
+   5  ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M2BDG0                   2.50%    passed     82.05%
+   6  ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AC58JVG8                   2.50%    passed     82.05%
+   7  ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AB32U288                   2.45%    passed     99.00%
+   8  ITPR1_Gallus_gallus_Chicken_A0A8V0ZJT0                                    2.39%    passed     99.72%
+   9  ITPR1_Homo_sapiens_Human_Q14643                                           2.39%    passed     99.76%
+  10  ITPR1_Latimeria_chalumnae_Coelacanth_H3A1P5                               3.84%    passed     99.97%
+  11  ITPR1_Mus_musculus_Mouse_P11881                                           2.39%    passed     99.80%
+  12  ITPR1_Podarcis_muralis_Wall_lizard_Lacerta_m_A0A670JBK6                   2.39%    passed     99.85%
+  13  ITPR1_Salarias_fasciatus_Jewelled_blenny_Ble_A0A672IUQ7                   2.39%    passed     99.59%
+  14  ITPR1_Somniosus_microcephalus_GCF_052327205.1_ITPR1_147905519             2.78%    passed     99.75%
+  15  ITPR1_Xenopus_tropicalis_Western_clawed_frog_A0A8J0T3U5                   2.50%    passed     99.46%
+  16  ITPR2_Astatotilapia_calliptera_Eastern_river_A0AAX7UHL1                   2.67%    passed     94.09%
+  17  ITPR2_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M9PQQ3                   2.50%    passed     99.17%
+  18  ITPR2_Echinorhinus_cookei_GCA_057876775.1_ITPR2_17288896                  2.45%    passed     99.72%
+  19  ITPR2_Gallus_gallus_Chicken_F1P1X4                                        2.62%    passed     99.06%
+  20  ITPR2_Gekko_japonicus_Schlegel_s_Japanese_ge_A0ABM1LG32                   2.62%    passed     99.77%
+  21  ITPR2_Homo_sapiens_Human_Q14571                                           2.62%    passed     99.82%
+  22  ITPR2_Mus_musculus_Mouse_Q9Z329                                           2.62%    passed     99.52%
+  23  ITPR2_Nibea_albiflora_GCA_014281875.1_ITPR2_12447838                      2.78%    passed     99.16%
+  24  ITPR2_Rattus_norvegicus_Rat_P29995                                        2.62%    passed     99.88%
+  25  ITPR2_Strigops_habroptila_Kakapo_A0A672UP22                               2.62%    passed     98.37%
+  26  ITPR2_Xenopus_tropicalis_Western_clawed_frog_A0A6I8RGU0                   2.56%    passed     99.37%
+  27  ITPR3_Athene_cunicularia_Burrowing_owl_Speot_A0A663MIF9                   2.62%    passed     96.64%
+  28  ITPR3_Callorhinchus_milii_Ghost_shark_A0A4W3GWE7                          4.34%    passed     88.82%
+  29  ITPR3_Copsychus_sechellarum_GCA_054084135.1_ITPR3_2574051                 2.56%    passed     93.94%
+  30  ITPR3_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M6Z266                   2.95%    passed     85.54%
+  31  ITPR3_Echinorhinus_cookei_GCA_057876775.1_ITPR3_46076206                  4.34%    passed     98.44%
+  32  ITPR3_Gallus_gallus_Chicken_A0A8V1ACE6                                    2.62%    passed     96.02%
+  33  ITPR3_Homo_sapiens_Human_Q14573                                           2.62%    passed     99.97%
+  34  ITPR3_Hymenochirus_boettgeri_GCA_019447015.1_ITPR3_126480658              2.73%    passed     98.62%
+  35  ITPR3_Latimeria_chalumnae_Coelacanth_H3B932                               2.67%    passed    100.00%
+  36  ITPR3_Mus_musculus_Mouse_P70227                                           2.67%    passed     99.58%
+  37  ITPR3_Nothobranchius_furzeri_Turquoise_killi_A0A8C6KWV8                   2.95%    passed     91.80%
+  38  ITPR3_Pogona_vitticeps_central_bearded_drago_A0A6J0TV85                   2.62%    passed     96.99%
+  39  ITPR3_Rattus_norvegicus_Rat_Q63269                                        2.67%    passed     99.45%
+  40  ITPR3_Saguinus_oedipus_GCA_031835075.1_ITPR3_43596197                     2.62%    passed     99.93%
+  41  ITPR3_Sousa_chinensis_GCA_007760645.1_ITPR3_5949234                       2.62%    passed     99.84%
+  42  ITPR3_Sphenodon_punctatus_GCA_003113815.1_ITPR3_3264626                   2.62%    passed     98.94%
+  43  ITPR3_Spizella_passerina_GCA_056776345.1_ITPR3_2783550                    2.56%    passed     94.51%
+  44  ITPR3_Xenopus_tropicalis_Western_clawed_frog_A0A8J0SYK9                   2.62%    passed     99.39%
+  45  vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JHJ0               4.79%    passed     99.78%
+  46  vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3IQL0               4.56%    passed     99.91%
+  47  vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JQ24               2.73%    passed     99.76%
+  48  vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401SQC9        5.01%    passed     99.99%
+  49  vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401S8Q3        7.68%    passed     98.35%
+  50  vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401RNU3       22.87%    passed     98.24%
+  51  vertebrate_basal_Latimeria_chalumnae_GCF_037176945.1_ITPR1_35775795       4.34%    passed     99.97%
+  52  vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_86116883          2.73%    passed     89.06%
+  53  vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_122839381         2.56%    passed      6.59%
+  54  vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_297520938         2.45%    passed     83.71%
+  55  vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0AAJ7U4X1                2.39%    passed     65.45%
+  56  vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8BRT5                2.39%    passed     67.00%
+  57  vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8C056                2.45%    passed     90.29%
+  58  invert_metazoa_Actinia_tenebrosa_Australian_red_warat_A0A6P8IUM8          2.62%    passed    100.00%
+  59  invert_metazoa_Amphimedon_queenslandica_Sponge_A0AAN0JIF7                 4.28%    passed     92.98%
+  60  invert_metazoa_Araneus_ventricosus_Orbweaver_spider_E_A0A4Y2F2N2          2.39%    passed     97.38%
+  61  invert_metazoa_Brachionus_calyciflorus_A0A813MP72                         2.45%    failed      0.01%
+  62  invert_metazoa_Branchiostoma_lanceolatum_Common_lance_A0A8K0A0Y4          2.45%    passed     98.46%
+  63  invert_metazoa_Bugula_neritina_Brown_bryozoan_Sertula_A0A7J7J401         43.07%    failed      0.95%
+  64  invert_metazoa_Caenorhabditis_elegans_Q9Y0A1                              3.23%    passed     91.65%
+  65  invert_metazoa_Capitella_teleta_Polychaete_worm_R7TPX0                    3.45%    passed     99.77%
+  66  invert_metazoa_Convolutriloba_macropyga_GCF_964194025.1_copy1_11915090    4.01%    passed     97.74%
+  67  invert_metazoa_Dicyema_japonicum_GCA_011109175.1_copy1_1388155            6.62%    failed      0.00%
+  68  invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy4_2597059    11.85%    passed      7.69%
+  69  invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy1_1267705     3.73%    passed     87.48%
+  70  invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy5_3583648    10.63%    failed      0.96%
+  71  invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy2_131952     10.35%    passed     29.41%
+  72  invert_metazoa_Drosophila_melanogaster_Fruit_fly_P29993                   2.95%    passed     99.75%
+  73  invert_metazoa_Dugesia_japonica_Planarian_R9S1J3                          3.51%    passed      9.30%
+  74  invert_metazoa_Dysidea_avara_GCF_963678975.1_copy7_13836631              13.86%    failed      1.68%
+  75  invert_metazoa_Dysidea_avara_GCF_963678975.1_copy5_27474136              14.80%    passed     29.78%
+  76  invert_metazoa_Dysidea_avara_GCF_963678975.1_copy2_7972063               15.58%    passed     57.78%
+  77  invert_metazoa_Dysidea_avara_GCF_963678975.1_copy6_5305343               17.75%    failed      0.72%
+  78  invert_metazoa_Epiperipatus_broadwayi_GCA_028023455.1_copy1_8600421       6.18%    passed     98.64%
+  79  invert_metazoa_Fasciola_hepatica_Liver_fluke_A0A4E0RYC0                   5.95%    failed      0.01%
+  80  invert_metazoa_Flaccisagitta_enflata_GCA_965153355.1_copy1_35611522       8.51%    passed     73.27%
+  81  invert_metazoa_Gordionus_wolterstorffii_GCA_976986565.1_copy1_11909076    4.62%    failed      0.18%
+  82  invert_metazoa_Hirondellea_gigas_A0A6A7G5P7                               2.39%    passed     99.16%
+  83  invert_metazoa_Hypsibius_exemplaris_Freshwater_tardig_A0A1W0X7L5          3.12%    passed     47.94%
+  84  invert_metazoa_Intoshia_linei_GCA_001642005.1_copy1_548                  44.80%    failed      0.00%
+  85  invert_metazoa_Lepidodermella_squamata_GCA_047495785.1_copy1_1478289      9.63%    passed     10.45%
+  86  invert_metazoa_Limulus_polyphemus_Atlantic_horseshoe__A0ABM1SEU6          2.39%    passed     98.22%
+  87  invert_metazoa_Lingula_anatina_Brachiopod_Lingula_ung_A0A1S3JYY5          8.96%    passed     98.73%
+  88  invert_metazoa_Littorina_saxatilis_A0AAN9BAK1                             2.56%    passed     99.43%
+  89  invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy10_370736          9.91%    passed     27.30%
+  90  invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy8_50053            9.91%    passed     30.65%
+  91  invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy5_191213          10.02%    passed     78.36%
+  92  invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy2_9986             2.50%    passed     36.11%
+  93  invert_metazoa_Mnemiopsis_leidyi_Sea_walnut_Warty_com_A0ACF8YJ40          3.06%    passed     98.06%
+  94  invert_metazoa_Mytilus_coruscus_Sea_mussel_A0A6J7ZY28                    10.07%    passed     16.47%
+  95  invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861    70.62%    passed     16.64%
+  96  invert_metazoa_Patiria_pectinifera_Starfish_Asterina__Q8WSR4              2.78%    passed     99.75%
+  97  invert_metazoa_Phallusia_mammillata_A0A6F9DES0                            2.67%    passed     91.87%
+  98  invert_metazoa_Phoronis_australis_GCA_055505105.1_copy2_18943062          9.96%    failed      1.90%
+  99  invert_metazoa_Raillietiella_orientalis_GCA_036172245.1_copy1_155838     12.74%    passed     65.66%
+ 100  invert_metazoa_Saccoglossus_kowalevskii_Acorn_worm_A0ACM8C709            10.74%    failed      1.98%
+ 101  invert_metazoa_Trichinella_britovi_Parasitic_roundwor_A0A0V1CUW8          4.67%    passed     97.82%
+ 102  invert_metazoa_Trichoplax_adhaerens_Trichoplax_reptan_B3RUD1             11.69%    passed      8.90%
+ 103  invert_metazoa_Tubiluchus_corallicola_GCA_030141605.1_copy1_290621       38.95%    passed     51.81%
+ 104  invert_metazoa_Tubulanus_polymorphus_GCF_964204645.1_copy2_7918633       10.74%    passed     10.78%
+ 105  plant_Chlamydomonas_reinhardtii_Chlamydomona_A0A2K3CTW4                  10.96%    failed      0.00%
+ 106  plant_Cymbomonas_tetramitiformis_A0AAE0G204                               8.51%    failed      0.71%
+ 107  plant_Volvox_carteri_f._nagariensis_D8UKJ4                               14.86%    failed      0.00%
+ 108  protist_Acanthamoeba_castellanii_strain_ATCC_3_L8GF85                    10.13%    passed     10.35%
+ 109  protist_Aphanomyces_stellatus_A0A485LKV7                                  9.57%    failed      0.20%
+ 110  protist_Aureococcus_anophagefferens_GCF_000186865.1_copy2_139898         14.91%    failed      0.01%
+ 111  protist_Dictyostelium_discoideum_Social_amoeba_Q9NA13                    11.85%    failed      0.00%
+ 112  protist_Fonticula_alba_Slime_mold_A0A058ZDJ2                              7.90%    failed      0.00%
+ 113  protist_Leishmania_martiniquensis_A0A836HD65                             12.19%    failed      0.00%
+ 114  protist_Naegleria_fowleri_Brain_eating_amoeba_A0A6A5C2J4                 11.57%    failed      0.00%
+ 115  protist_Naegleria_lovaniensis_Amoeba_A0AA88KEU5                           9.18%    failed      0.00%
+ 116  protist_Paratrimastix_pyriformis_A0ABQ8UZM6                              14.80%    failed      0.00%
+ 117  protist_Prymnesium_parvum_Toxic_golden_alga_A0AB34K5R9                   14.13%    passed      5.75%
+ 118  protist_Saprolegnia_diclina_strain_VS20_T0QLN2                            9.24%    failed      0.00%
+ 119  protist_Stentor_coeruleus_GCA_001970955.1_copy5_35430                    11.46%    failed      0.00%
+ 120  protist_Stentor_coeruleus_GCA_001970955.1_copy3_5764                     13.58%    failed      0.00%
+ 121  protist_Stentor_coeruleus_GCA_001970955.1_copy2_370                      13.19%    failed      0.00%
+ 122  protist_Stentor_coeruleus_GCA_001970955.1_copy1_8516                     12.24%    failed      0.00%
+ 123  protist_Stylonychia_lemnae_Ciliate_A0A078ASZ8                            11.41%    failed      0.00%
+ 124  protist_Triparma_laevis_f._longispina_A0A9W7DWA0                          7.74%    failed      0.21%
+ 125  protist_Triparma_retinervis_A0A9W7AFH6                                   11.69%    failed      0.01%
+ 126  protist_Vermamoeba_vermiformis_GCA_020696425.1_copy1_85472               10.07%    passed     20.60%
+ 127  fungi_Entomophthora_muscae_A0ACC2TPX2                                    11.52%    failed      0.14%
+ 128  fungi_Jimgerdemannia_flammicorona_A0A433QY11                             12.63%    failed      1.18%
+ 129  RYR_Caenorhabditis_elegans_Q94279                                        11.74%    passed      8.74%
+ 130  RYR_Drosophila_melanogaster_Fruit_fly_Q24498                             11.74%    passed      7.77%
+ 131  RYR_Hemicentrotus_pulcherrimus_Sea_urchin__Q8TA74                        11.46%    failed      1.51%
+ 132  RYR_Homo_sapiens_Human_P21817                                            11.74%    failed      0.01%
+ 133  RYR_Homo_sapiens_Human_Q92736                                            11.41%    failed      0.75%
+ 134  RYR_Homo_sapiens_Human_Q15413                                            11.85%    failed      1.06%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                                     7.69%  36 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AC58JVG8 is identical to ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M2BDG0 but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.082 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -216597.153
+Optimal log-likelihood: -216597.068
+Proportion of invariable sites: 0.001
+Gamma shape alpha: 1.142
+Parameters optimization took 1 rounds (1.626 sec)
+Time for fast ML tree search: 16.860 seconds
+
+NOTE: ModelFinder requires 150 MB RAM!
+ModelFinder will test up to 112 protein models (sample size: 1797 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG+G4         216599.302   266 433730.605   433823.444   435191.975
+  2  LG+I+G4       216597.068   267 433728.136   433821.735   435195.001
+  3  LG+F+G4       216657.679   285 433885.358   433993.247   435451.112
+  4  LG+F+I+G4     216656.218   286 433884.436   433993.154   435455.684
+  5  WAG+G4        218202.659   266 436937.318   437030.157   438398.688
+  6  WAG+I+G4      218202.161   267 436938.322   437031.920   438405.186
+  7  WAG+F+G4      217716.850   285 436003.701   436111.589   437569.455
+  8  WAG+F+I+G4    217716.901   286 436005.803   436114.520   437577.050
+  9  JTT+G4        218368.068   266 437268.137   437360.976   438729.507
+ 10  JTT+I+G4      218364.522   267 437263.043   437356.642   438729.908
+ 11  JTT+F+G4      217505.222   285 435580.444   435688.333   437146.198
+ 12  JTT+F+I+G4    217503.226   286 435578.451   435687.169   437149.699
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 13  Q.pfam+G4     216776.961   266 434085.921   434178.761   435547.292
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 14  Q.pfam+I+G4   216772.377   267 434078.754   434172.352   435545.618
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 15  Q.pfam+F+G4   216825.758   285 434221.515   434329.404   435787.269
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 16  Q.pfam+F+I+G4 216822.210   286 434216.420   434325.138   435787.668
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 17  Q.bird+G4     221806.194   266 444144.389   444237.228   445605.759
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 18  Q.bird+I+G4   221799.124   267 444132.249   444225.847   445599.113
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 19  Q.bird+F+G4   221012.134   285 442594.268   442702.156   444160.022
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 20  Q.bird+F+I+G4 221004.916   286 442581.832   442690.550   444153.080
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 21  Q.mammal+G4   220335.349   266 441202.697   441295.537   442664.068
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 22  Q.mammal+I+G4 220329.382   267 441192.764   441286.363   442659.629
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 23  Q.mammal+F+G4 219483.388   285 439536.775   439644.664   441102.529
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 24  Q.mammal+F+I+G4 219476.684   286 439525.368   439634.086   441096.616
+ 25  Q.insect+G4   216210.130   266 432952.260   433045.099   434413.630
+ 26  Q.insect+I+G4 216203.911   267 432941.822   433035.421   434408.687
+ 27  Q.insect+F+G4 216466.907   285 433503.814   433611.703   435069.568
+ 28  Q.insect+F+I+G4 216462.407   286 433496.813   433605.531   435068.061
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 29  Q.plant+G4    217968.421   266 436468.841   436561.681   437930.212
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 30  Q.plant+I+G4  217961.869   267 436457.738   436551.336   437924.602
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 31  Q.plant+F+G4  218142.002   285 436854.003   436961.892   438419.757
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 32  Q.plant+F+I+G4 218137.683   286 436847.366   436956.084   438418.614
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 33  Q.yeast+G4    216680.774   266 433893.547   433986.386   435354.918
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 34  Q.yeast+I+G4  216673.061   267 433880.122   433973.720   435346.986
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 35  Q.yeast+F+G4  216446.044   285 433462.089   433569.977   435027.843
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 36  Q.yeast+F+I+G4 216440.037   286 433452.074   433560.792   435023.322
+ 37  JTTDCMut+G4   218397.028   266 437326.057   437418.896   438787.427
+ 38  JTTDCMut+I+G4 218393.866   267 437321.732   437415.331   438788.597
+ 39  JTTDCMut+F+G4 217543.329   285 435656.658   435764.546   437222.412
+ 40  JTTDCMut+F+I+G4 217541.584   286 435655.168   435763.886   437226.416
+ 41  DCMut+G4      220873.748   266 442279.495   442372.335   443740.866
+ 42  DCMut+I+G4    220871.556   267 442277.112   442370.711   443743.977
+ 43  DCMut+F+G4    219183.351   285 438936.701   439044.590   440502.455
+ 44  DCMut+F+I+G4  219182.999   286 438937.999   439046.716   440509.246
+ 45  VT+G4         218220.215   266 436972.429   437065.268   438433.800
+ 46  VT+I+G4       218216.514   267 436967.029   437060.627   438433.893
+ 47  VT+F+G4       217896.920   285 436363.841   436471.730   437929.595
+ 48  VT+F+I+G4     217894.677   286 436361.355   436470.073   437932.603
+ 49  PMB+G4        219609.808   266 439751.616   439844.456   441212.987
+ 50  PMB+I+G4      219608.838   267 439751.676   439845.275   441218.540
+ 51  PMB+F+G4      219727.721   285 440025.441   440133.330   441591.195
+ 52  PMB+F+I+G4    219727.505   286 440027.009   440135.727   441598.257
+ 53  Blosum62+G4   219319.711   266 439171.423   439264.262   440632.793
+ 54  Blosum62+I+G4 219318.759   267 439171.518   439265.117   440638.383
+ 55  Blosum62+F+G4 219438.643   285 439447.287   439555.176   441013.041
+ 56  Blosum62+F+I+G4 219438.245   286 439448.491   439557.208   441019.738
+ 57  Dayhoff+G4    220864.640   266 442261.279   442354.119   443722.650
+ 58  Dayhoff+I+G4  220862.524   267 442259.048   442352.646   443725.912
+ 59  Dayhoff+F+G4  219175.309   285 438920.617   439028.506   440486.371
+ 60  Dayhoff+F+I+G4 219174.982   286 438921.964   439030.682   440493.212
+ 61  mtREV+G4      226949.616   266 454431.232   454524.071   455892.602
+ 62  mtREV+I+G4    226947.166   267 454428.333   454521.931   455895.197
+ 63  mtREV+F+G4    220798.169   285 442166.339   442274.228   443732.093
+ 64  mtREV+F+I+G4  220798.094   286 442168.189   442276.907   443739.437
+ 65  mtART+G4      228078.301   266 456688.602   456781.441   458149.972
+ 66  mtART+I+G4    228062.894   267 456659.788   456753.387   458126.653
+ 67  mtART+F+G4    222167.082   285 444904.165   445012.053   446469.919
+ 68  mtART+F+I+G4  222156.439   286 444884.878   444993.596   446456.126
+ 69  mtZOA+G4      223391.597   266 447315.194   447408.033   448776.565
+ 70  mtZOA+I+G4    223375.381   267 447284.761   447378.360   448751.626
+ 71  mtZOA+F+G4    219503.754   285 439577.508   439685.397   441143.262
+ 72  mtZOA+F+I+G4  219497.588   286 439567.176   439675.894   441138.424
+ 73  mtMet+G4      225945.331   266 452422.662   452515.502   453884.033
+ 74  mtMet+I+G4    225934.277   267 452402.554   452496.152   453869.418
+ 75  mtMet+F+G4    219802.993   285 440175.987   440283.875   441741.741
+ 76  mtMet+F+I+G4  219799.794   286 440171.588   440280.306   441742.836
+ 77  mtVer+G4      228969.557   266 458471.115   458563.954   459932.485
+ 78  mtVer+I+G4    228960.422   267 458454.844   458548.443   459921.708
+ 79  mtVer+F+G4    223063.969   285 446697.938   446805.827   448263.692
+ 80  mtVer+F+I+G4  223060.507   286 446693.013   446801.731   448264.261
+ 81  mtInv+G4      226653.509   266 453839.019   453931.858   455300.389
+ 82  mtInv+I+G4    226643.131   267 453820.261   453913.859   455287.125
+ 83  mtInv+F+G4    218503.873   285 437577.745   437685.634   439143.499
+ 84  mtInv+F+I+G4  218500.476   286 437572.952   437681.670   439144.200
+ 85  mtMAM+G4      231308.057   266 463148.114   463240.953   464609.485
+ 86  mtMAM+I+G4    231302.558   267 463139.117   463232.715   464605.981
+ 87  mtMAM+F+G4    225264.785   285 451099.571   451207.459   452665.325
+ 88  mtMAM+F+I+G4  225261.532   286 451095.064   451203.782   452666.312
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 89  FLAVI+G4      226686.784   266 453905.568   453998.407   455366.938
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 90  FLAVI+I+G4    226685.735   267 453905.470   453999.069   455372.335
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 91  FLAVI+F+G4    225408.854   285 451387.708   451495.596   452953.462
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 92  FLAVI+F+I+G4  225408.738   286 451389.476   451498.194   452960.724
+ 93  HIVb+G4       222885.414   266 446302.828   446395.667   447764.199
+ 94  HIVb+I+G4     222882.313   267 446298.627   446392.225   447765.491
+ 95  HIVb+F+G4     221668.046   285 443906.093   444013.981   445471.847
+ 96  HIVb+F+I+G4   221665.404   286 443902.808   444011.526   445474.056
+ 97  HIVw+G4       232609.313   266 465750.626   465843.465   467211.996
+ 98  HIVw+I+G4     232604.221   267 465742.442   465836.040   467209.306
+ 99  HIVw+F+G4     227633.260   285 455836.521   455944.409   457402.275
+100  HIVw+F+I+G4   227623.960   286 455819.919   455928.637   457391.167
+101  FLU+G4        222550.997   266 445633.995   445726.834   447095.365
+102  FLU+I+G4      222551.078   267 445636.157   445729.755   447103.021
+103  FLU+F+G4      221505.428   285 443580.857   443688.746   445146.611
+104  FLU+F+I+G4    221505.334   286 443582.668   443691.386   445153.916
+105  rtREV+G4      219253.588   266 439039.176   439132.015   440500.546
+106  rtREV+I+G4    219249.003   267 439032.007   439125.605   440498.871
+107  rtREV+F+G4    217790.012   285 436150.025   436257.913   437715.779
+108  rtREV+F+I+G4  217785.581   286 436143.163   436251.881   437714.411
+109  cpREV+G4      219115.135   266 438762.271   438855.110   440223.641
+110  cpREV+I+G4    219111.322   267 438756.643   438850.242   440223.508
+111  cpREV+F+G4    219319.628   285 439209.256   439317.145   440775.010
+112  cpREV+F+I+G4  219317.269   286 439206.538   439315.256   440777.786
+Akaike Information Criterion:           Q.insect+I+G4
+Corrected Akaike Information Criterion: Q.insect+I+G4
+Bayesian Information Criterion:         Q.insect+I+G4
+Best-fit model: Q.insect+I+G4 chosen according to BIC
+
+All model information printed to /Users/george/claude_test/ip3r_genes/results/phylogeny/model_matrix.model.gz
+CPU time for ModelFinder: 2320.531 seconds (0h:38m:40s)
+Wall-clock time for ModelFinder: 739.647 seconds (0h:12m:19s)
+
+NOTE: 150 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.185 / Estimate: 0.002, 1.100 / LogL: -216203.910
+Init pinv, alpha: 0.001, 1.185 / Estimate: 0.002, 1.100 / LogL: -216203.911
+Init pinv, alpha: 0.003, 1.185 / Estimate: 0.002, 1.100 / LogL: -216203.911
+Init pinv, alpha: 0.004, 1.185 / Estimate: 0.002, 1.100 / LogL: -216203.911
+Init pinv, alpha: 0.005, 1.185 / Estimate: 0.002, 1.100 / LogL: -216203.911
+Init pinv, alpha: 0.007, 1.185 / Estimate: 0.002, 1.100 / LogL: -216203.911
+Init pinv, alpha: 0.008, 1.185 / Estimate: 0.002, 1.100 / LogL: -216203.911
+Init pinv, alpha: 0.010, 1.185 / Estimate: 0.002, 1.100 / LogL: -216203.911
+Init pinv, alpha: 0.011, 1.185 / Estimate: 0.002, 1.100 / LogL: -216203.911
+Init pinv, alpha: 0.012, 1.185 / Estimate: 0.002, 1.100 / LogL: -216203.911
+Optimal pinv,alpha: 0.002, 1.100 / LogL: -216203.910
+
+Parameters optimization took 91.116 sec
+Wrote distance file to... 
+BEST SCORE FOUND : -216203.910
+Total tree length: 67.819
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 2606.347 sec (0h:43m:26s)
+Total wall-clock time used: 830.772 sec (0h:13m:50s)
+
+Analysis results written to: 
+  IQ-TREE report:                /Users/george/claude_test/ip3r_genes/results/phylogeny/model_matrix.iqtree
+  Tree used for ModelFinder:     /Users/george/claude_test/ip3r_genes/results/phylogeny/model_matrix.treefile
+  Screen log file:               /Users/george/claude_test/ip3r_genes/results/phylogeny/model_matrix.log
+
+Date and Time: Sun Sep  6 20:03:26 2026

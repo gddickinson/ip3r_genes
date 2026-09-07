@@ -1,0 +1,39 @@
+{
+ "final_model": "Q.insect+R7",
+ "matrix": "Q.insect",
+ "stage_a": {
+  "models_scored": 112,
+  "rates_tested": "G4,I+G4",
+  "matrices_scored": 28,
+  "best_model": "Q.insect+I+G4",
+  "best_bic": 434408.687,
+  "runner_up_matrix": "Q.yeast",
+  "runner_up_bic": 435023.322,
+  "bic_margin": 614.635
+ },
+ "stage_b": {
+  "models_scored": 20,
+  "best_model": "Q.insect+R7",
+  "best_bic": 433299.281,
+  "bic_gain_over_stage_a": 1109.406
+ },
+ "threads": 4,
+ "seed": 42,
+ "exhaustive_probe": {
+  "models_scored": 11,
+  "of_up_to": 1232,
+  "seconds": 672,
+  "threads": 8,
+  "projection_hours": 20.9,
+  "why_freerate_matters": {
+   "LG+I+G4_bic": 433732.851,
+   "LG+R5_bic": 433050.518,
+   "bic_gain": 682.333
+  }
+ },
+ "runtimes_s": {
+  "stage_a_s": 830.8,
+  "stage_b_s": 2462.1
+ },
+ "why_two_stage": "the exhaustive -m MFP scan was measured at 20.9 h on this alignment; see the module docstring"
+}

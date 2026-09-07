@@ -1,0 +1,5 @@
+idx	tree	hypothesis	logL	deltaL	bp_RELL	p_KH	p_SH	c_ELW	p_AU
+1	ML	unconstrained ML tree	-215453.5453	0	0.507	0.508	1	0.507	0.525
+2	H1_12	ITPR1 + ITPR2 sisters, ITPR3 outside	-215567.5627	114.02	0	0	0.0002	4e-12	1.8e-05
+3	H2_13	ITPR1 + ITPR3 sisters, ITPR2 outside	-215567.5279	113.98	0	0	0.0002	4.53e-12	1.65e-05
+4	H3_23	ITPR2 + ITPR3 sisters, ITPR1 outside	-215454.0292	0.48399	0.493	0.492	0.696	0.493	0.476

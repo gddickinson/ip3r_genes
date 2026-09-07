@@ -1,0 +1,14 @@
+claim	n_tips	is_clade	alrt	ufboot	well_supported
+ITPR1 core clade	13	yes	47.8	95	no
+ITPR2 core clade	10	yes	96.7	100	yes
+ITPR3 core clade	16	yes	98.2	99	yes
+ITPR1 clade incl. unlabelled tips	19	yes	100	100	yes
+ITPR2 clade incl. unlabelled tips	13	yes	100	100	yes
+ITPR3 clade incl. unlabelled tips	19	yes	100	100	yes
+ITPR1 + ITPR2	32	no			no
+ITPR1 + ITPR3	38	no			no
+ITPR2 + ITPR3	32	yes	100	100	yes
+all three paralogs	51	no			no
+vertebrate ITPRs (incl. unassigned)	57	yes	100	100	yes
+ITPR family (all non-RyR)	128	yes	100	100	yes
+RyR outgroup	6	yes	100	100	yes

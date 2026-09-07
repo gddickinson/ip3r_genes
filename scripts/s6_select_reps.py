@@ -66,21 +66,80 @@ def bait_ids() -> set[str]:
     return out
 
 
-def length_targets(itpr: list[dict]) -> dict[str, float]:
-    """Per-group median length over the census's cleanest ITPR records."""
-    by = defaultdict(list)
+#: A record clean enough to help set a group's length target. Not the
+#: complete-architecture test: requiring all five signatures left
+#: Viridiplantae with 2 qualifying records and Amoebozoa with 1, and a
+#: median of one record is not a ruler. At four of five the well-populated
+#: groups barely move (Vertebrata 2671 -> 2671, Metazoa 2771.5 -> 2770,
+#: SAR 2973 -> 2978) while the starved ones gain a real one of their own
+#: (Viridiplantae 2 -> 13 records, Amoebozoa 1 -> 4).
+MIN_ARCH_FOR_TARGET = 4
+
+#: How many of a group's own records a median needs before it beats
+#: borrowing. Three is low, and deliberately: an imprecise ruler of the
+#: right kind is better than a precise ruler of the wrong one.
+MIN_RECORDS_FOR_TARGET = 3
+
+
+def length_targets(itpr: list[dict]) -> tuple[dict[str, float], list[dict]]:
+    """Per-group median length, plus the provenance of every target.
+
+    **A group is never scored against another group's ruler while it has
+    clean records of its own.** The first version used a group's own
+    median only when the group held at least five non-fragment
+    *complete-architecture* records, and otherwise fell back to the
+    **global** median — a number set by the 3,749 vertebrate and 930
+    invertebrate records, so a metazoan one. Two groups fell through it,
+    Viridiplantae (2 qualifying records) and Amoebozoa (1), and in
+    Viridiplantae it decided a tree tip: every plant candidate below the
+    top two ties on rank components 1-7, so `length_fit` chose the third,
+    and against the borrowed 2,694 aa *Tetrabaena socialis* (2,680 aa,
+    three of five signatures) beat *Volvox carteri* (3,167 aa, four of
+    five, S20 verdict `real_gene`) by 459 aa. Against the plant grade's
+    own ruler the order reverses. `rank_key`'s docstring already promised
+    the group's own median "so the plant grade is not scored against a
+    vertebrate ruler"; this is the rule doing what it says.
+
+    Three tiers, and the one that fired is returned beside the number so
+    a target computed from four records is visible as such (D13):
+
+      `own`      the group's non-fragment records carrying at least
+                 `MIN_ARCH_FOR_TARGET` of the five signatures, when there
+                 are at least `MIN_RECORDS_FOR_TARGET` of them
+      `own_thin` the group's non-fragment complete-architecture records,
+                 however few — still the group's own ruler
+      `global`   the global median, and only for a group with no clean
+                 record of its own at all
+    """
+    strict, wide = defaultdict(list), defaultdict(list)
     for r in itpr:
         if (r.get("fragment") or "").strip():
             continue
-        if str(r.get("n_itpr_arch")).strip() != "5":
+        L, arch = as_int(r.get("length")), as_int(r.get("n_itpr_arch"))
+        if not L:
             continue
-        L = as_int(r.get("length"))
-        if L:
-            by[r["grp"]].append(L)
-    allL = [L for v in by.values() for L in v]
+        if (arch or 0) >= MIN_ARCH_FOR_TARGET:
+            wide[r["grp"]].append(L)
+        if str(r.get("n_itpr_arch")).strip() == "5":
+            strict[r["grp"]].append(L)
+
+    allL = [L for v in wide.values() for L in v]
     default = statistics.median(allL) if allL else 2700.0
-    return {g: statistics.median(v) if len(v) >= 5 else default
-            for g, v in by.items()} | {"__default__": default}
+    out: dict[str, float] = {"__default__": default}
+    audit: list[dict] = []
+    for g in sorted(set(wide) | set(strict)):
+        if len(wide[g]) >= MIN_RECORDS_FOR_TARGET:
+            tier, n, t = "own", len(wide[g]), statistics.median(wide[g])
+        elif strict[g]:
+            tier, n, t = "own_thin", len(strict[g]), statistics.median(strict[g])
+        else:
+            tier, n, t = "global", 0, default
+        out[g] = t
+        audit.append({"group": g, "target_aa": f"{t:g}", "tier": tier,
+                      "n_records": n,
+                      "n_arch5": len(strict[g]), "n_arch4plus": len(wide[g]),
+                      "global_default_aa": f"{default:g}"})
+    return out, audit
 
 
 class Picker:
@@ -264,9 +323,11 @@ def select(rows: list[dict]) -> Picker:
     itpr = [r for r in rows if r["call"] == "ITPR"]
     ryr = [r for r in rows if r["call"] == "RYR"]
     by_acc = {r["accession"]: r for r in rows}
-    p = Picker(length_targets(itpr), bait_ids(),
+    targets, target_audit = length_targets(itpr)
+    p = Picker(targets, bait_ids(),
                informative_bands([r for r in itpr
                                   if r["grp"] == "Vertebrata"]))
+    p.target_audit = target_audit
 
     # R1 -- the vertebrate paralog grid ------------------------------------
     for acc, label in spec.FORCED_ITPR.items():
@@ -497,6 +558,14 @@ def main() -> int:
     write_tsv(MSA_DIR / "representatives.tsv", FIELDS, chosen)
     write_fasta({c["label"]: out_seqs[c["label"]] for c in chosen},
                 MSA_DIR / "representatives.fasta")
+    # The ruler each group was measured against, and where it came from.
+    # A target borrowed from another group decided a tip once already
+    # (see `length_targets`), so the tier is committed rather than
+    # inferable only from the code (D13).
+    write_tsv(MSA_DIR / "length_targets.tsv",
+              ["group", "target_aa", "tier", "n_records", "n_arch5",
+               "n_arch4plus", "global_default_aa"],
+              getattr(picker, "target_audit", []))
     write_tsv(MSA_DIR / "unfilled_slots.tsv",
               ["rule", "cell", "wanted", "filled", "pool", "why"],
               picker.unfilled)

@@ -46,3 +46,10 @@ results/constraint/fel/*.log
 # Dashboard live-progress file: written continuously by whichever task is
 # running, read by scripts/dashboard.py, meaningless once the task is done.
 results/session_live.json
+
+# IQ-TREE prefix locks (scripts/s7_run.py:claim) — process-local, never committed
+results/**/*.lock
+
+# IQ-TREE raw bootstrap tree sets — bulk, regenerable from the run;
+# the consensus (.contree) and splits (.splits.nex) are what we keep
+results/**/*.ufboot

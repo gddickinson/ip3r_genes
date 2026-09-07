@@ -6,35 +6,35 @@
   "version": "v7.526 (2024/Apr/26)",
   "threads": 1,
   "thread_note": "D24 \u2014 pinned; --thread -1 is not reproducible for this pipeline",
-  "runtime_s": 3852.2,
+  "runtime_s": 3670.8,
   "n_sequences": 134,
-  "columns": 11796,
-  "gap_pct": 76.3,
-  "sha256_in": "184a77925f78147414f9ea5d6124f6d9d0130dbd58ffdd6873dd89fd32cd4092",
-  "sha256_out": "7f5c627857741dfb4eccab2df326a7018e3e4e74e3525f070c67c0c57f7d16ae"
+  "columns": 11777,
+  "gap_pct": 76.23,
+  "sha256_in": "1bb3f87482e83c2ed9ccfc1c8ae69570f1d8c67e4339a369b6e9c0efb04c281c",
+  "sha256_out": "d5418b8e222c3a20216e03096be98a7c71b2c7f3f4fe1ce818869b7c5cd5a5bc"
  },
  "trimal": {
   "command": "trimal -in /Users/george/claude_test/ip3r_genes/results/msa_v2/aln.fasta -out /Users/george/claude_test/ip3r_genes/results/msa_v2/trimmed.fasta -automated1",
   "version": "trimAl v1.5.rev1 build[2025-11-25]",
-  "runtime_s": 0.5,
-  "columns_in": 11796,
-  "columns_kept": 1790,
-  "pct_kept": 15.2,
-  "gap_pct": 7.83,
-  "sha256_out": "de42f82c1c9cc93fbae6503bdae4d0866bcd1ca5f6e94660f390cc05bdc42079",
+  "runtime_s": 0.6,
+  "columns_in": 11777,
+  "columns_kept": 1797,
+  "pct_kept": 15.3,
+  "gap_pct": 7.68,
+  "sha256_out": "7e7a9e0851dceb660152ee3855439a875345997ee406faf716124ab0308ae9aa",
   "column_map": "column_map.tsv"
  },
  "matrices": {
   "n_labels": 134,
-  "trimmed_columns": 1790,
-  "mean_conservation": 0.5509,
-  "columns_over_0.9": 81
+  "trimmed_columns": 1797,
+  "mean_conservation": 0.5521,
+  "columns_over_0.9": 83
  },
  "sites": {
-  "constant": 23,
-  "variable_uninformative": 37,
-  "parsimony_informative": 1730,
+  "constant": 22,
+  "variable_uninformative": 36,
+  "parsimony_informative": 1739,
   "all_gap_or_X": 0,
-  "pct_informative": 96.6
+  "pct_informative": 96.8
  }
 }

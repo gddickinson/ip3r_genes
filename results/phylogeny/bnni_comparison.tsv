@@ -1,0 +1,14 @@
+claim	n_tips	main_is_clade	main_alrt	main_ufboot	alt_is_clade	alt_alrt	alt_ufboot	verdict
+ITPR1 core clade	13	yes	47.8	95	yes	47.5	73	unsupported in both
+ITPR2 core clade	10	yes	96.7	100	yes	96.7	98	held
+ITPR3 core clade	16	yes	98.2	99	yes	98.2	97	held
+ITPR1 clade incl. unlabelled tips	19	yes	100	100	yes	100	100	held
+ITPR2 clade incl. unlabelled tips	13	yes	100	100	yes	100	100	held
+ITPR3 clade incl. unlabelled tips	19	yes	100	100	yes	100	100	held
+ITPR1 + ITPR2	32	no						not a clade in the main tree
+ITPR1 + ITPR3	38	no						not a clade in the main tree
+ITPR2 + ITPR3	32	yes	100	100	yes	100	100	held
+all three paralogs	51	no						not a clade in the main tree
+vertebrate ITPRs (incl. unassigned)	57	yes	100	100	yes	100	100	held
+ITPR family (all non-RyR)	128	yes	100	100	yes	100	100	held
+RyR outgroup	6	yes	100	100	yes	100	100	held

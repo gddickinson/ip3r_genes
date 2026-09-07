@@ -1,0 +1,6 @@
+label	census_group	rule	assigned_to	clade_size	neighbours	alrt	ufboot	why
+ITPR1_Latimeria_chalumnae_Coelacanth_H3A1P5	ITPR1	unconstrained		121		47.8	95.0	nearest neighbourhood is mixed (ITPR2:10;ITPR3:16;unlabelled:94)
+ITPR1_Somniosus_microcephalus_GCF_052327205.1_ITPR1_147905519	ITPR1	unconstrained		4		99.3	100.0	nearest neighbourhood is mixed (unlabelled:3)
+ITPR2_Echinorhinus_cookei_GCA_057876775.1_ITPR2_17288896	ITPR2	unconstrained		13		100.0	100.0	nearest neighbourhood is mixed (ITPR2:10;unlabelled:2)
+ITPR3_Callorhinchus_milii_Ghost_shark_A0A4W3GWE7	ITPR3	unconstrained		19		100.0	100.0	nearest neighbourhood is mixed (ITPR3:16;unlabelled:2)
+ITPR3_Echinorhinus_cookei_GCA_057876775.1_ITPR3_46076206	ITPR3	unconstrained		19		100.0	100.0	nearest neighbourhood is mixed (ITPR3:16;unlabelled:2)

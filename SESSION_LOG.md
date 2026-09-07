@@ -1610,3 +1610,100 @@ cannot say — S7 and S8 can.
 RyR tips, and has three things to test that S6 handed it as hypotheses and
 not results: ITPR1/2/3 monophyly, the ITPR1 × ITPR2 sister preview, and the
 cyclostome trio.
+
+## 2026-09-06/07 — S7, the ML phylogeny (and an S6 re-run it forced)
+
+**Task.** S7, picked as the single `in_progress` ledger row. The tree, the
+model, the AU test on the three sister hypotheses, RBH on every naming call
+the tree contradicts, figures and report.
+
+### What ran
+
+The session opened onto a partly-built S7: a finished ML tree and analysis
+tables, three constrained trees, and an AU test that had never been run.
+Finishing it exposed three method defects, two of which had already
+invalidated the AU result sitting on disk.
+
+**D32 — the constraint named every tip.** IQ-TREE's `-g` places freely
+exactly the taxa a constraint *omits*; a taxon that is listed, even in a
+top-level polytomy, is pinned outside every group the constraint declares.
+The constraint files named all 134 tips and so forced the unlabelled
+vertebrate tips out of the paralog clades the tree nests them in, equally in
+all three hypotheses. The AU test rejected every one at ΔlogL ≈ 1,500 —
+including the arrangement the ML tree itself holds at 100/100. `T5` now
+fails a constraint that names a free tip.
+
+**A prefix collision, found by reading `ps`.** The previous session's `au`
+had been interrupted and its three constrained searches orphaned; they were
+still running 50 minutes later, writing the same `--prefix` as the three I
+had just started. The AU test was reading whichever checkpoint `.treefile`
+happened to be on disk. Fixed twice over: every stage now resumes on the
+`.iqtree` report rather than the checkpoint treefile, and `claim()` refuses
+a prefix a live process owns.
+
+**The RBH step could not fire.** It filtered `naming_conflicts.tsv` to
+`reassigned`, of which this tree has none, and reported "the tree
+contradicts no census label" while the table it had just read held five.
+Widened to the whole table; `compared_against` records whether a row was
+tested against the tree's proposal or the census name.
+
+**D35 — and this one came from a reader's question.** Asked why *Volvox
+carteri* was missing from the figure, the answer turned out not to be "it
+isn't in the census": it is there, called ITPR at high confidence by both
+instruments, 4 of 5 signatures, S20 verdict `real_gene`. It lost the S6
+representative slot on `length_fit` — against a ruler borrowed from another
+kingdom. `length_targets()` used a group's own median only with ≥5
+complete-architecture records and otherwise took the *global* median
+(2,694 aa, a metazoan number); Viridiplantae had 2 and Amoebozoa 1.
+Fixing that alone gave the slot to a *second Chlamydomonas*, because
+`pick_diverse()` throttles on a key level that has one value across the
+candidates. Both fixed, both now carry negative controls (C7, C8), and C7
+was verified to fail against the pre-fix implementation.
+
+**The re-run.** S6 and S7 end to end: selection → MAFFT L-INS-i (61 min,
+single-threaded by D24) → trimAl → matrices → model selection (55 min) →
+ML search (71 min) → analyse → AU + `--bnni` in parallel (~2.5 h) → RBH →
+figures → report. One interruption: `s6_msa.py` was launched with system
+`python3` and died at the identity matrices with no biopython — *after*
+MAFFT had succeeded. Recovered with `--stats-only`, which reused the
+alignment on a SHA-256 match rather than repeating the hour. The stale
+`matrices` section it left behind had already been picked up by S6's
+figures and report; caught by checking mtimes against the input.
+
+### Results
+
+**The sister question is answered: ITPR2 + ITPR3, ITPR1 outside.** AU over
+10,000 RELL replicates rejects ITPR1+ITPR2 (p-AU 1.8e-05) and ITPR1+ITPR3
+(1.65e-05); ITPR2+ITPR3 (0.476) and the ML tree (0.525) survive and carry
+the same pair. **S6's identity preview picked ITPR1+ITPR2 and is
+contradicted** — the pair identity ranked highest is the one likelihood
+rejects hardest.
+
+**The tree.** 134 tips × 1,797 columns, `Q.insect+R7`, logL −215,452.0,
+69.5 % of 131 internal nodes clearing both thresholds. `--bnni` weakened
+and lost nothing; the one claim not clearing both thresholds, the bare
+ITPR1 core, was already below them (47.8/95 → 47.5/73), and the tree
+prefers a slightly different ITPR1 grouping — the 19-tip extended clade at
+100/100.
+
+**All 5 disputed names upheld by RBH**, so those are the tree's uncertainty
+about where to hang a tip, not annotation error.
+
+**The cyclostomes are neither of S6's two readings.** All six loci sit in
+two well-supported cyclostome-only clades, each holding hagfish *and*
+lamprey — duplications older than the hagfish/lamprey split, not a
+lineage-specific expansion and not three 1:1 ohnologs. *(pending: S8)*
+
+**S6's 3R stress test failed for the right reason (D33).** Neither
+same-species pair is sisters, but both are broken *only by other tips of
+the same paralog* — the signature of a duplication older than the species,
+which is what teleost 3R is. The naming passes; the expectation was wrong.
+
+**The re-run changed one tip and no conclusion.** *Volvox carteri* replaces
+*Tetrabaena socialis*; it pairs with *Chlamydomonas reinhardtii* at 100/100.
+The model was re-selected independently and came back `Q.insect+R7` again.
+Support improved (64.9 % → 69.5 % of nodes). The sister answer held.
+
+**Next.** S8 — synteny. It inherits two questions this tree could not
+settle: which side of the vertebrate duplication each cyclostome lineage
+attaches to, and the ITPR1 core's weak support.

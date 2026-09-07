@@ -1,0 +1,3 @@
+paralog	species	n	sisters	alrt	ufboot	largest_pure_subset	subset_alrt	subset_ufboot	mrca_size	mrca_intruders	labels
+ITPR1	Chanos chanos (Milkfish) (Mugil chanos)	2	no			1			6	ITPR1:4	ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VJN0;ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VNY7
+ITPR1	Danio rerio (Zebrafish) (Brachydanio rerio)	3	no			2	100	100	6	ITPR1:3	ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M2BDG0;ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AB32U288;ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AC58JVG8

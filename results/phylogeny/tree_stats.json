@@ -1,0 +1,48 @@
+{
+ "iqtree": {
+  "version": "IQ-TREE multicore version 2.3.6 for MacOS ARM 64-bit built Jul 30 2024",
+  "command": "iqtree2 -s /Users/george/claude_test/ip3r_genes/results/phylogeny/input.fasta --prefix /Users/george/claude_test/ip3r_genes/results/phylogeny/itpr_ml -m Q.insect+R7 -B 1000 -alrt 1000 -T 4 -seed 42",
+  "threads": 4,
+  "thread_note": "D24 \u2014 pinned; -T AUTO chooses from machine load and is not reproducible",
+  "seed": 42,
+  "runtime_s": 4252.2,
+  "n_sequences": 134,
+  "columns": 1797,
+  "model": "Q.insect+R7",
+  "model_selected_by": "scripts/s7_model.py (two-stage, greedy)",
+  "log_likelihood": -215451.998,
+  "ufboot_replicates": 1000,
+  "alrt_replicates": 1000,
+  "sha256_in": "7e7a9e0851dceb660152ee3855439a875345997ee406faf716124ab0308ae9aa",
+  "sha256_treefile": "0992b792fa382851c5321e59389c8f4a079dc9c5c92010423567df8842363a7d"
+ },
+ "analysis": {
+  "n_tips": 134,
+  "n_reassigned": 0,
+  "n_unconstrained": 5,
+  "paralogs_monophyletic_raw": 0,
+  "paralogs_monophyletic_corrected": 3,
+  "paralogs_clean_extended_clade": 3,
+  "unlabelled_tips_placed_inside_a_paralog": 7,
+  "outgroup_monophyletic": "yes",
+  "pct_nodes_both_thresholds": "69.5"
+ },
+ "au_test": {
+  "model": "Q.insect+R7",
+  "constrained_search_threads": 3,
+  "constrained_searches_run_in_parallel": 3,
+  "au_replicates": 10000,
+  "seed": 42,
+  "hypotheses": "H1_12 / H2_13 / H3_23 \u2014 see scripts/s7_constraints.py"
+ },
+ "bnni_check": {
+  "command": "iqtree2 -s /Users/george/claude_test/ip3r_genes/results/phylogeny/input.fasta --prefix /Users/george/claude_test/ip3r_genes/results/phylogeny/itpr_ml_bnni -m Q.insect+R7 -B 1000 -alrt 1000 --bnni -T 4 -seed 42",
+  "threads": 4,
+  "seed": 42,
+  "runtime_s": 10167.9,
+  "model": "Q.insect+R7",
+  "log_likelihood": -215451.2488,
+  "sha256_treefile": "2386d10a8ded2ee547b6d1ebe29dc4cdeb85e9476cc948a9646621eeabb5f3a8",
+  "why": "UFBoot is optimistic under model violation; --bnni is its own guard. A check, not a second answer \u2014 the reported tree is the main search's. Claim-by-claim comparison: bnni_comparison.tsv"
+ }
+}

@@ -1,0 +1,7 @@
+label	species	home	clade_size	n_home	alrt	ufboot	composition
+vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_122839381	Myxine glutinosa		4		99.5	100	unlabelled:3
+vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_297520938	Myxine glutinosa		4		99.5	100	unlabelled:3
+vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_86116883	Myxine glutinosa		34		83.1	77	ITPR2:10;ITPR3:16;unlabelled:7
+vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0AAJ7U4X1	Petromyzon marinus (Sea lamprey)		4		99.5	100	unlabelled:3
+vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8BRT5	Petromyzon marinus (Sea lamprey)		4		99.5	100	unlabelled:3
+vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8C056	Petromyzon marinus (Sea lamprey)		34		83.1	77	ITPR2:10;ITPR3:16;unlabelled:7

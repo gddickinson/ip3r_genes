@@ -1,0 +1,490 @@
+IQ-TREE 2.3.6 built Jul 30 2024
+
+Input file name: /Users/george/claude_test/ip3r_genes/results/phylogeny/input.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 42
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 134 sequences with 1797 amino-acid sites
+Number of constant sites: 22 (= 1.22426% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 22 (= 1.22426% of all sites)
+Number of parsimony informative sites: 1739
+Number of distinct site patterns: 1796
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.insect+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+Q.insect+I+G4   -216203.911  432941.822 +    0.995  433035.421 +    0.992  434408.687 +    0.922
+Q.insect+G4     -216210.130  432952.260 -  0.00539  433045.099 -  0.00785  434413.630 +   0.0779
+Q.yeast+F+I+G4  -216440.037  433452.074 - 1.58e-111  433560.792 - 8.2e-115  435023.322 - 3.15e-134
+Q.yeast+F+G4    -216446.044  433462.089 - 1.06e-113  433569.977 - 8.3e-117  435027.843 - 3.29e-135
+Q.insect+F+I+G4 -216462.407  433496.813 - 3.04e-121  433605.531 - 1.58e-124  435068.061 - 6.07e-144
+Q.insect+F+G4   -216466.907  433503.814 - 9.18e-123  433611.703 - 7.22e-126  435069.568 - 2.86e-144
+LG+G4           -216599.302  433730.605 - 5.2e-172  433823.444 - 7.58e-172  435191.975 - 7.51e-171
+LG+I+G4         -216597.068  433728.136 - 1.79e-171  433821.735 - 1.78e-171  435195.001 - 1.66e-171
+Q.yeast+I+G4    -216673.061  433880.122 - 1.77e-204  433973.720 - 1.77e-204  435346.986 - 1.64e-204
+Q.yeast+G4      -216680.774  433893.547 - 2.15e-207  433986.386 - 3.14e-207  435354.918 - 3.11e-206
+LG+F+G4         -216657.679  433885.358 - 1.29e-205  433993.247 - 1.02e-208  435451.112 - 4.03e-227
+LG+F+I+G4       -216656.218  433884.436 - 2.05e-205  433993.154 - 1.07e-208  435455.684 - 4.09e-228
+Q.pfam+I+G4     -216772.377  434078.754 - 1.31e-247  434172.352 - 1.3e-247  435545.618 - 1.21e-247
+Q.pfam+G4       -216776.961  434085.921 - 3.63e-249  434178.761 - 5.29e-249  435547.292 - 5.25e-248
+Q.pfam+F+G4     -216825.758  434221.515 - 1.31e-278  434329.404 - 1.03e-281  435787.269 - 4.07e-300
+Q.pfam+F+I+G4   -216822.210  434216.420 - 1.67e-277  434325.138 - 8.67e-281  435787.668 - 3.33e-300
+JTT+F+G4        -217505.222  435580.444 -        0  435688.333 -        0  437146.198 -        0
+JTT+F+I+G4      -217503.226  435578.451 -        0  435687.169 -        0  437149.699 -        0
+JTTDCMut+F+G4   -217543.329  435656.658 -        0  435764.546 -        0  437222.412 -        0
+JTTDCMut+F+I+G4 -217541.584  435655.168 -        0  435763.886 -        0  437226.416 -        0
+WAG+F+G4        -217716.850  436003.701 -        0  436111.589 -        0  437569.455 -        0
+WAG+F+I+G4      -217716.901  436005.803 -        0  436114.520 -        0  437577.051 -        0
+rtREV+F+I+G4    -217785.582  436143.163 -        0  436251.881 -        0  437714.411 -        0
+rtREV+F+G4      -217790.012  436150.025 -        0  436257.913 -        0  437715.779 -        0
+Q.plant+I+G4    -217961.869  436457.738 -        0  436551.336 -        0  437924.602 -        0
+VT+F+G4         -217896.920  436363.841 -        0  436471.730 -        0  437929.595 -        0
+Q.plant+G4      -217968.421  436468.841 -        0  436561.680 -        0  437930.212 -        0
+VT+F+I+G4       -217894.677  436361.355 -        0  436470.072 -        0  437932.603 -        0
+WAG+G4          -218202.659  436937.318 -        0  437030.157 -        0  438398.688 -        0
+WAG+I+G4        -218202.161  436938.322 -        0  437031.920 -        0  438405.186 -        0
+Q.plant+F+I+G4  -218137.683  436847.366 -        0  436956.084 -        0  438418.614 -        0
+Q.plant+F+G4    -218142.002  436854.003 -        0  436961.892 -        0  438419.757 -        0
+VT+G4           -218220.215  436972.429 -        0  437065.268 -        0  438433.800 -        0
+VT+I+G4         -218216.514  436967.029 -        0  437060.627 -        0  438433.893 -        0
+JTT+G4          -218368.068  437268.137 -        0  437360.976 -        0  438729.507 -        0
+JTT+I+G4        -218364.522  437263.043 -        0  437356.642 -        0  438729.908 -        0
+JTTDCMut+G4     -218397.028  437326.057 -        0  437418.896 -        0  438787.427 -        0
+JTTDCMut+I+G4   -218393.866  437321.732 -        0  437415.331 -        0  438788.597 -        0
+mtInv+F+G4      -218503.873  437577.745 -        0  437685.634 -        0  439143.499 -        0
+mtInv+F+I+G4    -218500.476  437572.952 -        0  437681.670 -        0  439144.200 -        0
+cpREV+I+G4      -219111.322  438756.643 -        0  438850.242 -        0  440223.508 -        0
+cpREV+G4        -219115.136  438762.271 -        0  438855.110 -        0  440223.641 -        0
+Dayhoff+F+G4    -219175.309  438920.617 -        0  439028.506 -        0  440486.371 -        0
+Dayhoff+F+I+G4  -219174.982  438921.964 -        0  439030.682 -        0  440493.212 -        0
+rtREV+I+G4      -219249.003  439032.007 -        0  439125.605 -        0  440498.871 -        0
+rtREV+G4        -219253.588  439039.176 -        0  439132.015 -        0  440500.546 -        0
+DCMut+F+G4      -219183.351  438936.701 -        0  439044.590 -        0  440502.455 -        0
+DCMut+F+I+G4    -219182.999  438937.999 -        0  439046.716 -        0  440509.247 -        0
+Blosum62+G4     -219319.712  439171.423 -        0  439264.262 -        0  440632.793 -        0
+Blosum62+I+G4   -219318.759  439171.518 -        0  439265.117 -        0  440638.383 -        0
+cpREV+F+G4      -219319.628  439209.256 -        0  439317.145 -        0  440775.010 -        0
+cpREV+F+I+G4    -219317.269  439206.538 -        0  439315.256 -        0  440777.786 -        0
+Blosum62+F+G4   -219438.643  439447.287 -        0  439555.176 -        0  441013.041 -        0
+Blosum62+F+I+G4 -219438.245  439448.491 -        0  439557.208 -        0  441019.739 -        0
+Q.mammal+F+I+G4 -219476.684  439525.368 -        0  439634.086 -        0  441096.616 -        0
+Q.mammal+F+G4   -219483.388  439536.775 -        0  439644.664 -        0  441102.529 -        0
+mtZOA+F+I+G4    -219497.588  439567.176 -        0  439675.894 -        0  441138.424 -        0
+mtZOA+F+G4      -219503.754  439577.508 -        0  439685.397 -        0  441143.262 -        0
+PMB+G4          -219609.808  439751.616 -        0  439844.456 -        0  441212.987 -        0
+PMB+I+G4        -219608.838  439751.676 -        0  439845.275 -        0  441218.541 -        0
+PMB+F+G4        -219727.721  440025.441 -        0  440133.330 -        0  441591.195 -        0
+PMB+F+I+G4      -219727.505  440027.009 -        0  440135.727 -        0  441598.257 -        0
+mtMet+F+G4      -219802.993  440175.987 -        0  440283.875 -        0  441741.741 -        0
+mtMet+F+I+G4    -219799.794  440171.588 -        0  440280.306 -        0  441742.836 -        0
+Q.mammal+I+G4   -220329.382  441192.764 -        0  441286.363 -        0  442659.629 -        0
+Q.mammal+G4     -220335.349  441202.697 -        0  441295.537 -        0  442664.068 -        0
+Dayhoff+G4      -220864.640  442261.279 -        0  442354.119 -        0  443722.650 -        0
+Dayhoff+I+G4    -220862.524  442259.048 -        0  442352.646 -        0  443725.912 -        0
+mtREV+F+G4      -220798.169  442166.339 -        0  442274.228 -        0  443732.093 -        0
+mtREV+F+I+G4    -220798.094  442168.189 -        0  442276.907 -        0  443739.437 -        0
+DCMut+G4        -220873.748  442279.495 -        0  442372.334 -        0  443740.866 -        0
+DCMut+I+G4      -220871.556  442277.112 -        0  442370.711 -        0  443743.977 -        0
+Q.bird+F+I+G4   -221004.916  442581.832 -        0  442690.550 -        0  444153.080 -        0
+Q.bird+F+G4     -221012.134  442594.268 -        0  442702.156 -        0  444160.022 -        0
+FLU+F+G4        -221505.428  443580.857 -        0  443688.746 -        0  445146.611 -        0
+FLU+F+I+G4      -221505.334  443582.668 -        0  443691.386 -        0  445153.916 -        0
+HIVb+F+G4       -221668.046  443906.093 -        0  444013.981 -        0  445471.847 -        0
+HIVb+F+I+G4     -221665.404  443902.808 -        0  444011.526 -        0  445474.056 -        0
+Q.bird+I+G4     -221799.124  444132.249 -        0  444225.847 -        0  445599.113 -        0
+Q.bird+G4       -221806.194  444144.389 -        0  444237.228 -        0  445605.759 -        0
+mtART+F+I+G4    -222156.439  444884.878 -        0  444993.596 -        0  446456.126 -        0
+mtART+F+G4      -222167.082  444904.165 -        0  445012.053 -        0  446469.919 -        0
+FLU+G4          -222550.997  445633.995 -        0  445726.834 -        0  447095.365 -        0
+FLU+I+G4        -222551.078  445636.157 -        0  445729.755 -        0  447103.021 -        0
+HIVb+G4         -222885.414  446302.828 -        0  446395.667 -        0  447764.199 -        0
+HIVb+I+G4       -222882.313  446298.627 -        0  446392.225 -        0  447765.491 -        0
+mtVer+F+G4      -223063.969  446697.938 -        0  446805.827 -        0  448263.692 -        0
+mtVer+F+I+G4    -223060.506  446693.013 -        0  446801.731 -        0  448264.261 -        0
+mtZOA+I+G4      -223375.381  447284.761 -        0  447378.360 -        0  448751.626 -        0
+mtZOA+G4        -223391.597  447315.194 -        0  447408.033 -        0  448776.565 -        0
+mtMAM+F+G4      -225264.785  451099.571 -        0  451207.459 -        0  452665.325 -        0
+mtMAM+F+I+G4    -225261.532  451095.064 -        0  451203.782 -        0  452666.312 -        0
+FLAVI+F+G4      -225408.854  451387.708 -        0  451495.596 -        0  452953.462 -        0
+FLAVI+F+I+G4    -225408.738  451389.476 -        0  451498.194 -        0  452960.724 -        0
+mtMet+I+G4      -225934.277  452402.554 -        0  452496.152 -        0  453869.418 -        0
+mtMet+G4        -225945.331  452422.662 -        0  452515.502 -        0  453884.033 -        0
+mtInv+I+G4      -226643.130  453820.261 -        0  453913.859 -        0  455287.125 -        0
+mtInv+G4        -226653.509  453839.019 -        0  453931.858 -        0  455300.389 -        0
+FLAVI+G4        -226686.784  453905.568 -        0  453998.407 -        0  455366.938 -        0
+FLAVI+I+G4      -226685.735  453905.470 -        0  453999.069 -        0  455372.335 -        0
+mtREV+G4        -226949.616  454431.232 -        0  454524.071 -        0  455892.602 -        0
+mtREV+I+G4      -226947.166  454428.333 -        0  454521.931 -        0  455895.197 -        0
+HIVw+F+I+G4     -227623.960  455819.919 -        0  455928.637 -        0  457391.167 -        0
+HIVw+F+G4       -227633.260  455836.521 -        0  455944.409 -        0  457402.275 -        0
+mtART+I+G4      -228062.894  456659.788 -        0  456753.387 -        0  458126.653 -        0
+mtART+G4        -228078.301  456688.602 -        0  456781.441 -        0  458149.972 -        0
+mtVer+I+G4      -228960.422  458454.844 -        0  458548.443 -        0  459921.709 -        0
+mtVer+G4        -228969.557  458471.115 -        0  458563.954 -        0  459932.485 -        0
+mtMAM+I+G4      -231302.558  463139.117 -        0  463232.715 -        0  464605.981 -        0
+mtMAM+G4        -231308.057  463148.114 -        0  463240.953 -        0  464609.485 -        0
+HIVw+I+G4       -232604.221  465742.442 -        0  465836.040 -        0  467209.306 -        0
+HIVw+G4         -232609.313  465750.626 -        0  465843.465 -        0  467211.996 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.insect+I+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.0016
+Gamma shape alpha: 1.0996
+
+ Category  Relative_rate  Proportion
+  0         0              0.0016
+  1         0.1566         0.2496
+  2         0.5056         0.2496
+  3         1.0163         0.2496
+  4         2.3278         0.2496
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+TREE USED FOR ModelFinder
+-------------------------
+
+Log-likelihood of the tree: -216203.9096 (s.e. 2311.4309)
+Unconstrained log-likelihood (without tree): -13465.1051
+Number of free parameters (#branches + #model parameters): 267
+Akaike information criterion (AIC) score: 432941.8193
+Corrected Akaike information criterion (AICc) score: 433035.4177
+Bayesian information criterion (BIC) score: 434408.6836
+
+Total tree length (sum of branch lengths): 67.8188
+Sum of internal branch lengths: 22.2666 (32.8324% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'ITPR1_Apteryx_mantelli_North_Island_brown_ki_A0ABM4F3U0' is drawn at root
+
++**ITPR1_Apteryx_mantelli_North_Island_brown_ki_A0ABM4F3U0
+|
+|           +--ITPR1_Bos_taurus_Bovine_Q9TU34
+|        +--|
+|        |  +--ITPR1_Mus_musculus_Mouse_P11881
+|     +--|
+|     |  +--ITPR1_Homo_sapiens_Human_Q14643
+|  +--|
+|  |  +--ITPR1_Podarcis_muralis_Wall_lizard_Lacerta_m_A0A670JBK6
++--|
+|  |              +--ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VNY7
+|  |           +--|
+|  |           |  |  +**ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M2BDG0
+|  |           |  +--|
+|  |           |     +**ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AC58JVG8
+|  |        +--|
+|  |        |  +--ITPR1_Salarias_fasciatus_Jewelled_blenny_Ble_A0A672IUQ7
+|  |     +--|
+|  |     |  |  +--ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VJN0
+|  |     |  +--|
+|  |     |     +--ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AB32U288
+|  |  +--|
+|  |  |  +--ITPR1_Xenopus_tropicalis_Western_clawed_frog_A0A8J0T3U5
+|  +--|
+|     |     +--ITPR1_Latimeria_chalumnae_Coelacanth_H3A1P5
+|     |  +--|
+|     |  |  +--vertebrate_basal_Latimeria_chalumnae_GCF_037176945.1_ITPR1_35775795
+|     +--|
+|        |        +--ITPR1_Somniosus_microcephalus_GCF_052327205.1_ITPR1_147905519
+|        |     +--|
+|        |     |  +--vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401SQC9
+|        |  +--|
+|        |  |  |  +--vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JHJ0
+|        |  |  +--|
+|        |  |     +--vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3IQL0
+|        +--|
+|           |                    +--ITPR2_Astatotilapia_calliptera_Eastern_river_A0AAX7UHL1
+|           |                 +--|
+|           |                 |  +--ITPR2_Nibea_albiflora_GCA_014281875.1_ITPR2_12447838
+|           |              +--|
+|           |              |  +--ITPR2_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M9PQQ3
+|           |           +--|
+|           |           |  |           +--ITPR2_Gallus_gallus_Chicken_F1P1X4
+|           |           |  |        +--|
+|           |           |  |        |  +--ITPR2_Strigops_habroptila_Kakapo_A0A672UP22
+|           |           |  |     +--|
+|           |           |  |     |  +--ITPR2_Gekko_japonicus_Schlegel_s_Japanese_ge_A0ABM1LG32
+|           |           |  |  +--|
+|           |           |  |  |  |  +--ITPR2_Homo_sapiens_Human_Q14571
+|           |           |  |  |  +--|
+|           |           |  |  |     |  +--ITPR2_Mus_musculus_Mouse_Q9Z329
+|           |           |  |  |     +--|
+|           |           |  |  |        +--ITPR2_Rattus_norvegicus_Rat_P29995
+|           |           |  +--|
+|           |           |     +--ITPR2_Xenopus_tropicalis_Western_clawed_frog_A0A6I8RGU0
+|           |        +--|
+|           |        |  |     +--ITPR2_Echinorhinus_cookei_GCA_057876775.1_ITPR2_17288896
+|           |        |  |  +--|
+|           |        |  |  |  +--vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401RNU3
+|           |        |  +--|
+|           |        |     +--vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JQ24
+|           |     +--|
+|           |     |  |                    +--ITPR3_Athene_cunicularia_Burrowing_owl_Speot_A0A663MIF9
+|           |     |  |                 +--|
+|           |     |  |                 |  |  +**ITPR3_Copsychus_sechellarum_GCA_054084135.1_ITPR3_2574051
+|           |     |  |                 |  +--|
+|           |     |  |                 |     +--ITPR3_Spizella_passerina_GCA_056776345.1_ITPR3_2783550
+|           |     |  |              +--|
+|           |     |  |              |  +**ITPR3_Gallus_gallus_Chicken_A0A8V1ACE6
+|           |     |  |           +--|
+|           |     |  |           |  |  +--ITPR3_Pogona_vitticeps_central_bearded_drago_A0A6J0TV85
+|           |     |  |           |  +--|
+|           |     |  |           |     +--ITPR3_Sphenodon_punctatus_GCA_003113815.1_ITPR3_3264626
+|           |     |  |        +--|
+|           |     |  |        |  |        +--ITPR3_Homo_sapiens_Human_Q14573
+|           |     |  |        |  |     +--|
+|           |     |  |        |  |     |  +--ITPR3_Saguinus_oedipus_GCA_031835075.1_ITPR3_43596197
+|           |     |  |        |  |  +--|
+|           |     |  |        |  |  |  +--ITPR3_Sousa_chinensis_GCA_007760645.1_ITPR3_5949234
+|           |     |  |        |  +--|
+|           |     |  |        |     |  +--ITPR3_Mus_musculus_Mouse_P70227
+|           |     |  |        |     +--|
+|           |     |  |        |        +--ITPR3_Rattus_norvegicus_Rat_Q63269
+|           |     |  |     +--|
+|           |     |  |     |  |  +--ITPR3_Hymenochirus_boettgeri_GCA_019447015.1_ITPR3_126480658
+|           |     |  |     |  +--|
+|           |     |  |     |     +--ITPR3_Xenopus_tropicalis_Western_clawed_frog_A0A8J0SYK9
+|           |     |  |  +--|
+|           |     |  |  |  |     +--ITPR3_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M6Z266
+|           |     |  |  |  |  +--|
+|           |     |  |  |  |  |  +--ITPR3_Nothobranchius_furzeri_Turquoise_killi_A0A8C6KWV8
+|           |     |  |  |  +--|
+|           |     |  |  |     +--ITPR3_Latimeria_chalumnae_Coelacanth_H3B932
+|           |     |  +--|
+|           |     |     |  +--ITPR3_Callorhinchus_milii_Ghost_shark_A0A4W3GWE7
+|           |     |     +--|
+|           |     |        |  +--ITPR3_Echinorhinus_cookei_GCA_057876775.1_ITPR3_46076206
+|           |     |        +--|
+|           |     |           +--vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401S8Q3
+|           |  +--|
+|           |  |  |  +--vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_86116883
+|           |  |  +--|
+|           |  |     +--vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8C056
+|           +--|
+|              |        +--vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_122839381
+|              |     +--|
+|              |     |  +--vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_297520938
+|              |  +--|
+|              |  |  |  +--vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0AAJ7U4X1
+|              |  |  +--|
+|              |  |     +--vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8BRT5
+|              +--|
+|                 |  +--invert_metazoa_Actinia_tenebrosa_Australian_red_warat_A0A6P8IUM8
+|                 +--|
+|                    |                             +--------invert_metazoa_Amphimedon_queenslandica_Sponge_A0AAN0JIF7
+|                    |                          +--|
+|                    |                          |  |   +------invert_metazoa_Caenorhabditis_elegans_Q9Y0A1
+|                    |                          |  +---|
+|                    |                          |      +-----invert_metazoa_Trichinella_britovi_Parasitic_roundwor_A0A0V1CUW8
+|                    |                       +--|
+|                    |                       |  +-------invert_metazoa_Hypsibius_exemplaris_Freshwater_tardig_A0A1W0X7L5
+|                    |                    +--|
+|                    |                    |  +----invert_metazoa_Mnemiopsis_leidyi_Sea_walnut_Warty_com_A0ACF8YJ40
+|                    |                 +--|
+|                    |                 |  +---invert_metazoa_Phallusia_mammillata_A0A6F9DES0
+|                    |              +--|
+|                    |              |  |     +----invert_metazoa_Brachionus_calyciflorus_A0A813MP72
+|                    |              |  |  +--|
+|                    |              |  |  |  +-------invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861
+|                    |              |  +--|
+|                    |              |     +----invert_metazoa_Convolutriloba_macropyga_GCF_964194025.1_copy1_11915090
+|                    |           +--|
+|                    |           |  |                                                      +-----invert_metazoa_Bugula_neritina_Brown_bryozoan_Sertula_A0A7J7J401
+|                    |           |  |                                                   +--|
+|                    |           |  |                                                   |  |  +--invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy4_2597059
+|                    |           |  |                                                   |  +--|
+|                    |           |  |                                                   |     +--invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy2_131952
+|                    |           |  |                                                +--|
+|                    |           |  |                                                |  +----------invert_metazoa_Intoshia_linei_GCA_001642005.1_copy1_548
+|                    |           |  |                                             +--|
+|                    |           |  |                                             |  |  +-----------invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy5_3583648
+|                    |           |  |                                             |  +--|
+|                    |           |  |                                             |     |     +--------invert_metazoa_Lepidodermella_squamata_GCA_047495785.1_copy1_1478289
+|                    |           |  |                                             |     |  +--|
+|                    |           |  |                                             |     |  |  +----invert_metazoa_Phoronis_australis_GCA_055505105.1_copy2_18943062
+|                    |           |  |                                             |     +--|
+|                    |           |  |                                             |        |          +--invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy10_370736
+|                    |           |  |                                             |        |     +----|
+|                    |           |  |                                             |        |     |    |  +--invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy8_50053
+|                    |           |  |                                             |        |     |    +--|
+|                    |           |  |                                             |        |     |       +--invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy5_191213
+|                    |           |  |                                             |        |  +--|
+|                    |           |  |                                             |        |  |  +--invert_metazoa_Tubulanus_polymorphus_GCF_964204645.1_copy2_7918633
+|                    |           |  |                                             |        +--|
+|                    |           |  |                                             |           +----invert_metazoa_Mytilus_coruscus_Sea_mussel_A0A6J7ZY28
+|                    |           |  |                                          +--|
+|                    |           |  |                                          |  +-----invert_metazoa_Saccoglossus_kowalevskii_Acorn_worm_A0ACM8C709
+|                    |           |  |                                       +--|
+|                    |           |  |                                       |  +------invert_metazoa_Trichoplax_adhaerens_Trichoplax_reptan_B3RUD1
+|                    |           |  |                              +--------|
+|                    |           |  |                              |        |             +--invert_metazoa_Dysidea_avara_GCF_963678975.1_copy7_13836631
+|                    |           |  |                              |        |        +----|
+|                    |           |  |                              |        |        |    +--invert_metazoa_Dysidea_avara_GCF_963678975.1_copy6_5305343
+|                    |           |  |                              |        +--------|
+|                    |           |  |                              |                 |   +--invert_metazoa_Dysidea_avara_GCF_963678975.1_copy5_27474136
+|                    |           |  |                              |                 +---|
+|                    |           |  |                              |                     +--invert_metazoa_Dysidea_avara_GCF_963678975.1_copy2_7972063
+|                    |           |  |                           +--|
+|                    |           |  |                           |  |      +-------------fungi_Entomophthora_muscae_A0ACC2TPX2
+|                    |           |  |                           |  +------|
+|                    |           |  |                           |         +----------fungi_Jimgerdemannia_flammicorona_A0A433QY11
+|                    |           |  |                        +--|
+|                    |           |  |                        |  +----------------------------protist_Dictyostelium_discoideum_Social_amoeba_Q9NA13
+|                    |           |  |                     +--|
+|                    |           |  |                     |  |          +---------protist_Acanthamoeba_castellanii_strain_ATCC_3_L8GF85
+|                    |           |  |                     |  |     +----|
+|                    |           |  |                     |  |     |    +---------protist_Vermamoeba_vermiformis_GCA_020696425.1_copy1_85472
+|                    |           |  |                     |  |  +--|
+|                    |           |  |                     |  |  |  |        +-------------protist_Naegleria_fowleri_Brain_eating_amoeba_A0A6A5C2J4
+|                    |           |  |                     |  |  |  +--------|
+|                    |           |  |                     |  |  |           +----------protist_Naegleria_lovaniensis_Amoeba_A0AA88KEU5
+|                    |           |  |                     |  +--|
+|                    |           |  |                     |     +-----------------------protist_Prymnesium_parvum_Toxic_golden_alga_A0AB34K5R9
+|                    |           |  |              +------|
+|                    |           |  |              |      |                                           +--plant_Chlamydomonas_reinhardtii_Chlamydomona_A0A2K3CTW4
+|                    |           |  |              |      |              +----------------------------|
+|                    |           |  |              |      |              |                            +----plant_Volvox_carteri_f._nagariensis_D8UKJ4
+|                    |           |  |              |      |           +--|
+|                    |           |  |              |      |           |  +--------------------------------protist_Paratrimastix_pyriformis_A0ABQ8UZM6
+|                    |           |  |              |      |        +--|
+|                    |           |  |              |      |        |  |                         +----protist_Triparma_laevis_f._longispina_A0A9W7DWA0
+|                    |           |  |              |      |        |  +-------------------------|
+|                    |           |  |              |      |        |                            +----protist_Triparma_retinervis_A0A9W7AFH6
+|                    |           |  |              |      |     +--|
+|                    |           |  |              |      |     |  +-------------------------------------protist_Leishmania_martiniquensis_A0A836HD65
+|                    |           |  |              |      |  +--|
+|                    |           |  |              |      |  |  |               +-----------plant_Cymbomonas_tetramitiformis_A0AAE0G204
+|                    |           |  |              |      |  |  |  +------------|
+|                    |           |  |              |      |  |  |  |            +------------protist_Aureococcus_anophagefferens_GCF_000186865.1_copy2_139898
+|                    |           |  |              |      |  |  +--|
+|                    |           |  |              |      |  |     |                    +---protist_Aphanomyces_stellatus_A0A485LKV7
+|                    |           |  |              |      |  |     +--------------------|
+|                    |           |  |              |      |  |                          +---protist_Saprolegnia_diclina_strain_VS20_T0QLN2
+|                    |           |  |              |      +--|
+|                    |           |  |              |         |                    +-----------protist_Stentor_coeruleus_GCA_001970955.1_copy5_35430
+|                    |           |  |              |         |     +--------------|
+|                    |           |  |              |         |     |              |  +-----------protist_Stentor_coeruleus_GCA_001970955.1_copy3_5764
+|                    |           |  |              |         |     |              +--|
+|                    |           |  |              |         |     |                 |      +--protist_Stentor_coeruleus_GCA_001970955.1_copy2_370
+|                    |           |  |              |         |     |                 +------|
+|                    |           |  |              |         |     |                        +--protist_Stentor_coeruleus_GCA_001970955.1_copy1_8516
+|                    |           |  |              |         |  +--|
+|                    |           |  |              |         |  |  |                             +-----RYR_Caenorhabditis_elegans_Q94279
+|                    |           |  |              |         |  |  |                          +--|
+|                    |           |  |              |         |  |  |                          |  +--RYR_Drosophila_melanogaster_Fruit_fly_Q24498
+|                    |           |  |              |         |  |  |                       +--|
+|                    |           |  |              |         |  |  |                       |  +--RYR_Hemicentrotus_pulcherrimus_Sea_urchin__Q8TA74
+|                    |           |  |              |         |  |  +-----------------------|
+|                    |           |  |              |         |  |                          |     +--RYR_Homo_sapiens_Human_P21817
+|                    |           |  |              |         |  |                          |  +--|
+|                    |           |  |              |         |  |                          |  |  +--RYR_Homo_sapiens_Human_Q15413
+|                    |           |  |              |         |  |                          +--|
+|                    |           |  |              |         |  |                             +--RYR_Homo_sapiens_Human_Q92736
+|                    |           |  |              |         +--|
+|                    |           |  |              |            +---------------------protist_Stylonychia_lemnae_Ciliate_A0A078ASZ8
+|                    |           |  |           +--|
+|                    |           |  |           |  +---------------protist_Fonticula_alba_Slime_mold_A0A058ZDJ2
+|                    |           |  |        +--|
+|                    |           |  |        |  +-----------------invert_metazoa_Fasciola_hepatica_Liver_fluke_A0A4E0RYC0
+|                    |           |  |     +--|
+|                    |           |  |     |  +-----------invert_metazoa_Dicyema_japonicum_GCA_011109175.1_copy1_1388155
+|                    |           |  |  +--|
+|                    |           |  |  |  |  +----invert_metazoa_Dugesia_japonica_Planarian_R9S1J3
+|                    |           |  |  |  +--|
+|                    |           |  |  |     +---invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy2_9986
+|                    |           |  +--|
+|                    |           |     +------invert_metazoa_Gordionus_wolterstorffii_GCA_976986565.1_copy1_11909076
+|                    |        +--|
+|                    |        |  +--invert_metazoa_Tubiluchus_corallicola_GCA_030141605.1_copy1_290621
+|                    |     +--|
+|                    |     |  |           +--invert_metazoa_Araneus_ventricosus_Orbweaver_spider_E_A0A4Y2F2N2
+|                    |     |  |        +--|
+|                    |     |  |        |  +--invert_metazoa_Limulus_polyphemus_Atlantic_horseshoe__A0ABM1SEU6
+|                    |     |  |     +--|
+|                    |     |  |     |  |  +--invert_metazoa_Drosophila_melanogaster_Fruit_fly_P29993
+|                    |     |  |     |  +--|
+|                    |     |  |     |     |  +---invert_metazoa_Hirondellea_gigas_A0A6A7G5P7
+|                    |     |  |     |     +--|
+|                    |     |  |     |        +---invert_metazoa_Raillietiella_orientalis_GCA_036172245.1_copy1_155838
+|                    |     |  |  +--|
+|                    |     |  |  |  +--invert_metazoa_Epiperipatus_broadwayi_GCA_028023455.1_copy1_8600421
+|                    |     |  +--|
+|                    |     |     |           +--invert_metazoa_Capitella_teleta_Polychaete_worm_R7TPX0
+|                    |     |     |        +--|
+|                    |     |     |        |  +--invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy1_1267705
+|                    |     |     |     +--|
+|                    |     |     |     |  +--invert_metazoa_Lingula_anatina_Brachiopod_Lingula_ung_A0A1S3JYY5
+|                    |     |     |  +--|
+|                    |     |     |  |  +--invert_metazoa_Littorina_saxatilis_A0AAN9BAK1
+|                    |     |     +--|
+|                    |     |        +----invert_metazoa_Flaccisagitta_enflata_GCA_965153355.1_copy1_35611522
+|                    |  +--|
+|                    |  |  +--invert_metazoa_Patiria_pectinifera_Starfish_Asterina__Q8WSR4
+|                    +--|
+|                       +--invert_metazoa_Branchiostoma_lanceolatum_Common_lance_A0A8K0A0Y4
+|
++--ITPR1_Gallus_gallus_Chicken_A0A8V0ZJT0
+
+Tree in newick format:
+
+(ITPR1_Apteryx_mantelli_North_Island_brown_ki_A0ABM4F3U0:0.0000020980,((((ITPR1_Bos_taurus_Bovine_Q9TU34:0.0081275165,ITPR1_Mus_musculus_Mouse_P11881:0.0012393589):0.0012295962,ITPR1_Homo_sapiens_Human_Q14643:0.0006310027):0.0062834559,ITPR1_Podarcis_muralis_Wall_lizard_Lacerta_m_A0A670JBK6:0.0075206951):0.0012902791,(((((ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VNY7:0.0211977342,(ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M2BDG0:0.0000010041,ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AC58JVG8:0.0000010041):0.0336448562):0.0415895088,ITPR1_Salarias_fasciatus_Jewelled_blenny_Ble_A0A672IUQ7:0.0226724940):0.0171782090,(ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VJN0:0.0016812052,ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AB32U288:0.0172620922):0.0203741799):0.0214538175,ITPR1_Xenopus_tropicalis_Western_clawed_frog_A0A8J0T3U5:0.0242859519):0.0071848260,((ITPR1_Latimeria_chalumnae_Coelacanth_H3A1P5:0.0017015048,vertebrate_basal_Latimeria_chalumnae_GCF_037176945.1_ITPR1_35775795:0.0048353089):0.0596335950,(((ITPR1_Somniosus_microcephalus_GCF_052327205.1_ITPR1_147905519:0.0427421884,vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401SQC9:0.0031935937):0.0025832194,(vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JHJ0:0.0159189416,vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3IQL0:0.0012317211):0.0268257061):0.0143801829,(((((((ITPR2_Astatotilapia_calliptera_Eastern_river_A0AAX7UHL1:0.0683078914,ITPR2_Nibea_albiflora_GCA_014281875.1_ITPR2_12447838:0.0308672540):0.0419443308,ITPR2_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M9PQQ3:0.1074554358):0.0709651888,((((ITPR2_Gallus_gallus_Chicken_F1P1X4:0.0045592873,ITPR2_Strigops_habroptila_Kakapo_A0A672UP22:0.0017310009):0.0106634263,ITPR2_Gekko_japonicus_Schlegel_s_Japanese_ge_A0ABM1LG32:0.0407362128):0.0030406829,(ITPR2_Homo_sapiens_Human_Q14571:0.0064424753,(ITPR2_Mus_musculus_Mouse_Q9Z329:0.0019563780,ITPR2_Rattus_norvegicus_Rat_P29995:0.0062185453):0.0116356009):0.0102006634):0.0125389579,ITPR2_Xenopus_tropicalis_Western_clawed_frog_A0A6I8RGU0:0.0375931625):0.0238096199):0.0178530417,((ITPR2_Echinorhinus_cookei_GCA_057876775.1_ITPR2_17288896:0.0223776942,vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401RNU3:0.0411852314):0.0266418412,vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JQ24:0.0408503874):0.0313893069):0.0640344058,(((((((ITPR3_Athene_cunicularia_Burrowing_owl_Speot_A0A663MIF9:0.0186746743,(ITPR3_Copsychus_sechellarum_GCA_054084135.1_ITPR3_2574051:0.0004332586,ITPR3_Spizella_passerina_GCA_056776345.1_ITPR3_2783550:0.0008380213):0.0048998557):0.0013681084,ITPR3_Gallus_gallus_Chicken_A0A8V1ACE6:0.0000026108):0.0129005308,(ITPR3_Pogona_vitticeps_central_bearded_drago_A0A6J0TV85:0.0214835155,ITPR3_Sphenodon_punctatus_GCA_003113815.1_ITPR3_3264626:0.0211770897):0.0065492544):0.0122349804,(((ITPR3_Homo_sapiens_Human_Q14573:0.0037606488,ITPR3_Saguinus_oedipus_GCA_031835075.1_ITPR3_43596197:0.0049867732):0.0040949626,ITPR3_Sousa_chinensis_GCA_007760645.1_ITPR3_5949234:0.0059954417):0.0007867612,(ITPR3_Mus_musculus_Mouse_P70227:0.0043832678,ITPR3_Rattus_norvegicus_Rat_Q63269:0.0031481972):0.0172754207):0.0336729415):0.0238473003,(ITPR3_Hymenochirus_boettgeri_GCA_019447015.1_ITPR3_126480658:0.0446052294,ITPR3_Xenopus_tropicalis_Western_clawed_frog_A0A8J0SYK9:0.0288494970):0.0436822572):0.0255734335,((ITPR3_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M6Z266:0.0766597949,ITPR3_Nothobranchius_furzeri_Turquoise_killi_A0A8C6KWV8:0.0595235804):0.0745625568,ITPR3_Latimeria_chalumnae_Coelacanth_H3B932:0.1366903444):0.0113928285):0.0228222791,(ITPR3_Callorhinchus_milii_Ghost_shark_A0A4W3GWE7:0.0430833220,(ITPR3_Echinorhinus_cookei_GCA_057876775.1_ITPR3_46076206:0.0257933894,vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401S8Q3:0.0378590511):0.0356018528):0.0421415755):0.1718266871):0.0631438182,(vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_86116883:0.2151264694,vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8C056:0.1046819477):0.1193209723):0.0185322777,(((vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_122839381:0.1872612588,vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_297520938:0.1671080523):0.0291710487,(vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0AAJ7U4X1:0.0748321659,vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8BRT5:0.1422028348):0.0082680005):0.0283417462,(invert_metazoa_Actinia_tenebrosa_Australian_red_warat_A0A6P8IUM8:0.2272529257,((((((((((invert_metazoa_Amphimedon_queenslandica_Sponge_A0AAN0JIF7:0.7228570506,(invert_metazoa_Caenorhabditis_elegans_Q9Y0A1:0.5945786939,invert_metazoa_Trichinella_britovi_Parasitic_roundwor_A0A0V1CUW8:0.4886674214):0.3184373586):0.1051291129,invert_metazoa_Hypsibius_exemplaris_Freshwater_tardig_A0A1W0X7L5:0.6295776130):0.0549711161,invert_metazoa_Mnemiopsis_leidyi_Sea_walnut_Warty_com_A0ACF8YJ40:0.4263409545):0.0352334059,invert_metazoa_Phallusia_mammillata_A0A6F9DES0:0.3514712388):0.0387987504,((invert_metazoa_Brachionus_calyciflorus_A0A813MP72:0.3976224123,invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861:0.6580840913):0.1144419702,invert_metazoa_Convolutriloba_macropyga_GCF_964194025.1_copy1_11915090:0.4085531977):0.0597026970):0.0323200931,(((((((((((((((invert_metazoa_Bugula_neritina_Brown_bryozoan_Sertula_A0A7J7J401:0.4848193750,(invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy4_2597059:0.2852170002,invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy2_131952:0.2555932469):0.2788851502):0.0427649607,invert_metazoa_Intoshia_linei_GCA_001642005.1_copy1_548:0.8960165235):0.1111853228,(invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy5_3583648:0.9227325284,((invert_metazoa_Lepidodermella_squamata_GCA_047495785.1_copy1_1478289:0.7245633072,invert_metazoa_Phoronis_australis_GCA_055505105.1_copy2_18943062:0.3968000958):0.0956994122,(((invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy10_370736:0.1478654949,(invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy8_50053:0.1185127675,invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy5_191213:0.1043918192):0.0552394672):0.4203609726,invert_metazoa_Tubulanus_polymorphus_GCF_964204645.1_copy2_7918633:0.2623267126):0.0681908436,invert_metazoa_Mytilus_coruscus_Sea_mussel_A0A6J7ZY28:0.4109738723):0.0522641833):0.1323884294):0.1557397184):0.0519917170,invert_metazoa_Saccoglossus_kowalevskii_Acorn_worm_A0ACM8C709:0.4677372054):0.1047611321,invert_metazoa_Trichoplax_adhaerens_Trichoplax_reptan_B3RUD1:0.5614924305):0.2331679555,((invert_metazoa_Dysidea_avara_GCF_963678975.1_copy7_13836631:0.2963326633,invert_metazoa_Dysidea_avara_GCF_963678975.1_copy6_5305343:0.1080091941):0.4060724198,(invert_metazoa_Dysidea_avara_GCF_963678975.1_copy5_27474136:0.1473927804,invert_metazoa_Dysidea_avara_GCF_963678975.1_copy2_7972063:0.1355410156):0.3362143250):0.7128846298):0.7301459178,(fungi_Entomophthora_muscae_A0ACC2TPX2:1.1134821570,fungi_Jimgerdemannia_flammicorona_A0A433QY11:0.8420815909):0.5543342014):0.2183670829,protist_Dictyostelium_discoideum_Social_amoeba_Q9NA13:2.2392845812):0.1914525677,(((protist_Acanthamoeba_castellanii_strain_ATCC_3_L8GF85:0.7750493831,protist_Vermamoeba_vermiformis_GCA_020696425.1_copy1_85472:0.8210961030):0.3864119905,(protist_Naegleria_fowleri_Brain_eating_amoeba_A0A6A5C2J4:1.0990565644,protist_Naegleria_lovaniensis_Amoeba_A0AA88KEU5:0.8544501248):0.7091780159):0.1055386618,protist_Prymnesium_parvum_Toxic_golden_alga_A0AB34K5R9:1.8700400018):0.0827974926):0.1439736332,((((((plant_Chlamydomonas_reinhardtii_Chlamydomona_A0A2K3CTW4:0.2661725362,plant_Volvox_carteri_f._nagariensis_D8UKJ4:0.3760539873):2.2073128179,protist_Paratrimastix_pyriformis_A0ABQ8UZM6:2.4736007660):0.2124771925,(protist_Triparma_laevis_f._longispina_A0A9W7DWA0:0.4050158503,protist_Triparma_retinervis_A0A9W7AFH6:0.3827673795):1.9778541588):0.0747999798,protist_Leishmania_martiniquensis_A0A836HD65:2.8649471963):0.1074630134,((plant_Cymbomonas_tetramitiformis_A0AAE0G204:0.9050930626,protist_Aureococcus_anophagefferens_GCF_000186865.1_copy2_139898:1.0075787099):1.0010074282,(protist_Aphanomyces_stellatus_A0A485LKV7:0.3565979735,protist_Saprolegnia_diclina_strain_VS20_T0QLN2:0.3176502216):1.6399670062):0.1695183021):0.1174701747,(((protist_Stentor_coeruleus_GCA_001970955.1_copy5_35430:0.9017791932,(protist_Stentor_coeruleus_GCA_001970955.1_copy3_5764:0.9481681436,(protist_Stentor_coeruleus_GCA_001970955.1_copy2_370:0.1386642720,protist_Stentor_coeruleus_GCA_001970955.1_copy1_8516:0.1498469008):0.5401421366):0.2992962502):1.1549885946,(((RYR_Caenorhabditis_elegans_Q94279:0.4702074065,RYR_Drosophila_melanogaster_Fruit_fly_Q24498:0.2386424331):0.1550249174,RYR_Hemicentrotus_pulcherrimus_Sea_urchin__Q8TA74:0.2951399004):0.0563558516,((RYR_Homo_sapiens_Human_P21817:0.1861363346,RYR_Homo_sapiens_Human_Q15413:0.1559462549):0.0548672006,RYR_Homo_sapiens_Human_Q92736:0.0886482000):0.1967010026):1.8672566956):0.1487046625,protist_Stylonychia_lemnae_Ciliate_A0A078ASZ8:1.7114398095):0.0670845950):0.0646072556):0.5576986059,protist_Fonticula_alba_Slime_mold_A0A058ZDJ2:1.2149892920):0.1593424407,invert_metazoa_Fasciola_hepatica_Liver_fluke_A0A4E0RYC0:1.3901797823):0.1118107213,invert_metazoa_Dicyema_japonicum_GCA_011109175.1_copy1_1388155:0.9166449329):0.1280172950,(invert_metazoa_Dugesia_japonica_Planarian_R9S1J3:0.4013327724,invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy2_9986:0.3706418757):0.0319529550):0.0478457793,invert_metazoa_Gordionus_wolterstorffii_GCA_976986565.1_copy1_11909076:0.5272187051):0.0383935109):0.0139941191,invert_metazoa_Tubiluchus_corallicola_GCA_030141605.1_copy1_290621:0.2605441774):0.0290361016,((((invert_metazoa_Araneus_ventricosus_Orbweaver_spider_E_A0A4Y2F2N2:0.0586623015,invert_metazoa_Limulus_polyphemus_Atlantic_horseshoe__A0ABM1SEU6:0.0833207591):0.0570217229,(invert_metazoa_Drosophila_melanogaster_Fruit_fly_P29993:0.1828958736,(invert_metazoa_Hirondellea_gigas_A0A6A7G5P7:0.3346659841,invert_metazoa_Raillietiella_orientalis_GCA_036172245.1_copy1_155838:0.3307834017):0.0279169522):0.0703463295):0.0336755159,invert_metazoa_Epiperipatus_broadwayi_GCA_028023455.1_copy1_8600421:0.1309760558):0.0296428159,((((invert_metazoa_Capitella_teleta_Polychaete_worm_R7TPX0:0.0881903168,invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy1_1267705:0.2925573124):0.0139407660,invert_metazoa_Lingula_anatina_Brachiopod_Lingula_ung_A0A1S3JYY5:0.1360676471):0.0110849756,invert_metazoa_Littorina_saxatilis_A0AAN9BAK1:0.1902294895):0.0188773749,invert_metazoa_Flaccisagitta_enflata_GCA_965153355.1_copy1_35611522:0.4271542635):0.0138517342):0.0130767299):0.0187486725,invert_metazoa_Patiria_pectinifera_Starfish_Asterina__Q8WSR4:0.1558196430):0.0141415756,invert_metazoa_Branchiostoma_lanceolatum_Common_lance_A0A8K0A0Y4:0.1235546641):0.0272066243):0.0814355175):0.0111237758):0.0594750232):0.0173100107):0.0071742148):0.0085134973):0.0052290832,ITPR1_Gallus_gallus_Chicken_A0A8V0ZJT0:0.0024898734);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /Users/george/claude_test/ip3r_genes/results/phylogeny/model_matrix.treefile -m "Q.insect+I{0.00155646}+G4{1.09958}" --length 1797
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /Users/george/claude_test/ip3r_genes/results/phylogeny/input.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /Users/george/claude_test/ip3r_genes/results/phylogeny/input.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Sep  6 20:03:26 2026
+Total CPU time used: 2606.35 seconds (0h:43m:26s)
+Total wall-clock time used: 830.776 seconds (0h:13m:50s)
+

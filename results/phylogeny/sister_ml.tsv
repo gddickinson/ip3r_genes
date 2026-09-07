@@ -1,0 +1,4 @@
+paralog	is_clade	sister_n	sister_composition	sister_majority
+ITPR1	yes	2	ITPR1:1;vertebrate_basal:1	ITPR1
+ITPR2	yes	3	vertebrate_basal:2;ITPR2:1	vertebrate_basal
+ITPR3	yes	3	ITPR3:2;vertebrate_basal:1	ITPR3

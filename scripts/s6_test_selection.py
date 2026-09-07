@@ -110,6 +110,53 @@ def c6_diversity_spread() -> None:
           len(phyla) == 3, f"phyla chosen: {sorted(phyla)}")
 
 
+def c7_single_valued_level_does_not_throttle() -> None:
+    """A key level with one value must not eat the deeper level's spread.
+
+    The C6 pool has three phyla, so the phylum level does real work there
+    and the bug hid. Here every row is one phylum and the spread has to
+    come from the genus level. Before the fix the phylum prefix admitted
+    one row per wave, and by wave 3 the genus quota was 3 — loose enough
+    to take a second Chlamydomonas while six other genera waited.
+    """
+    rows = [{"p": "Chlorophyta", "g": "Chlamydomonas", "s": 9},
+            {"p": "Chlorophyta", "g": "Cymbomonas", "s": 8},
+            {"p": "Chlorophyta", "g": "Chlamydomonas", "s": 7},
+            {"p": "Chlorophyta", "g": "Volvox", "s": 6},
+            {"p": "Chlorophyta", "g": "Gonium", "s": 5}]
+    got = pick_diverse(rows, 3, lambda r: (r["p"], r["g"]),
+                       lambda r: r["s"])
+    genera = [r["g"] for r in got]
+    check("C7 one phylum, many genera: the spread falls to the genus level",
+          len(set(genera)) == 3, f"genera chosen: {genera}")
+
+
+def c8_no_group_borrows_another_groups_ruler() -> None:
+    """Every group with a clean record of its own is measured by it.
+
+    The failure was silent and systematic: a group under the record floor
+    took the *global* median, which is a metazoan number, and in the plant
+    grade that decided a tip. A group may legitimately have nothing of its
+    own — that is what the `global` tier is for — but it must then be a
+    group with no clean record at all, not merely a sparse one.
+    """
+    itpr = [r for r in load_census() if r["call"] == "ITPR"]
+    _, audit = sel.length_targets(itpr)
+    borrowed = [a for a in audit
+                if a["tier"] == "global" and int(a["n_arch4plus"]) > 0]
+    check("C8 no group with clean records of its own borrows the global "
+          "ruler", not borrowed,
+          "; ".join(f"{a['group']} ({a['n_arch4plus']} records)"
+                    for a in borrowed) or f"{len(audit)} groups, all own")
+    thin = [a for a in audit if a["tier"] != "global"
+            and int(a["n_records"]) < 3]
+    check("C8b a group's own ruler rests on at least 3 of its records",
+          not thin,
+          "; ".join(f"{a['group']} n={a['n_records']}" for a in thin)
+          or "all >= 3")
+
+
+
 # --------------------------------------------------------- the properties
 
 def p1_determinism(rows) -> None:
@@ -165,6 +212,8 @@ def main() -> int:
     c4_name_transfer()
     c5_same_species_twice()
     c6_diversity_spread()
+    c7_single_valued_level_does_not_throttle()
+    c8_no_group_borrows_another_groups_ruler()
     rows = load_census()
     picker = p1_determinism(rows)
     p2_labels(picker)

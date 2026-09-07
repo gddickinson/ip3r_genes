@@ -112,15 +112,15 @@
   "profile_high": 1
  },
  "length_targets": {
-  "Metazoa (non-vertebrate)": 2771.5,
-  "Eukaryota (other)": 2641.0,
-  "SAR": 2973,
+  "__default__": 2692.0,
+  "Amoebozoa": 2886.0,
+  "Discoba": 2853,
+  "Eukaryota (other)": 2669,
+  "Fungi": 2599.0,
+  "Metazoa (non-vertebrate)": 2770.0,
+  "SAR": 2978.0,
   "Vertebrata": 2671,
-  "Fungi": 2588,
-  "Viridiplantae": 2694,
-  "Discoba": 2801,
-  "Amoebozoa": 2694,
-  "__default__": 2694
+  "Viridiplantae": 3182
  },
  "short_exceptions": [
   "invert_metazoa_Bugula_neritina_Brown_bryozoan_Sertula_A0A7J7J401",
@@ -130,6 +130,6 @@
  ],
  "unfilled_slots": 5,
  "missing_sequence": [],
- "total_residues": 374650,
+ "total_residues": 375137,
  "longest": 5317
 }

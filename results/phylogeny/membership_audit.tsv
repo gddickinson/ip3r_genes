@@ -1,0 +1,45 @@
+label	census_group	rule	assigned_to	clade_size	neighbours	alrt	ufboot	why
+ITPR1_Apteryx_mantelli_North_Island_brown_ki_A0ABM4F3U0	ITPR1	core	ITPR1	13	12			inside the largest pure ITPR1 clade
+ITPR1_Bos_taurus_Bovine_Q9TU34	ITPR1	core	ITPR1	13	12			inside the largest pure ITPR1 clade
+ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VJN0	ITPR1	core	ITPR1	13	12			inside the largest pure ITPR1 clade
+ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VNY7	ITPR1	core	ITPR1	13	12			inside the largest pure ITPR1 clade
+ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M2BDG0	ITPR1	core	ITPR1	13	12			inside the largest pure ITPR1 clade
+ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AB32U288	ITPR1	core	ITPR1	13	12			inside the largest pure ITPR1 clade
+ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AC58JVG8	ITPR1	core	ITPR1	13	12			inside the largest pure ITPR1 clade
+ITPR1_Gallus_gallus_Chicken_A0A8V0ZJT0	ITPR1	core	ITPR1	13	12			inside the largest pure ITPR1 clade
+ITPR1_Homo_sapiens_Human_Q14643	ITPR1	core	ITPR1	13	12			inside the largest pure ITPR1 clade
+ITPR1_Latimeria_chalumnae_Coelacanth_H3A1P5	ITPR1	unconstrained		121		47.8	95.0	nearest neighbourhood is mixed (ITPR2:10;ITPR3:16;unlabelled:94)
+ITPR1_Mus_musculus_Mouse_P11881	ITPR1	core	ITPR1	13	12			inside the largest pure ITPR1 clade
+ITPR1_Podarcis_muralis_Wall_lizard_Lacerta_m_A0A670JBK6	ITPR1	core	ITPR1	13	12			inside the largest pure ITPR1 clade
+ITPR1_Salarias_fasciatus_Jewelled_blenny_Ble_A0A672IUQ7	ITPR1	core	ITPR1	13	12			inside the largest pure ITPR1 clade
+ITPR1_Somniosus_microcephalus_GCF_052327205.1_ITPR1_147905519	ITPR1	unconstrained		4		99.3	100.0	nearest neighbourhood is mixed (unlabelled:3)
+ITPR1_Xenopus_tropicalis_Western_clawed_frog_A0A8J0T3U5	ITPR1	core	ITPR1	13	12			inside the largest pure ITPR1 clade
+ITPR2_Astatotilapia_calliptera_Eastern_river_A0AAX7UHL1	ITPR2	core	ITPR2	10	9			inside the largest pure ITPR2 clade
+ITPR2_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M9PQQ3	ITPR2	core	ITPR2	10	9			inside the largest pure ITPR2 clade
+ITPR2_Echinorhinus_cookei_GCA_057876775.1_ITPR2_17288896	ITPR2	unconstrained		13		100.0	100.0	nearest neighbourhood is mixed (ITPR2:10;unlabelled:2)
+ITPR2_Gallus_gallus_Chicken_F1P1X4	ITPR2	core	ITPR2	10	9			inside the largest pure ITPR2 clade
+ITPR2_Gekko_japonicus_Schlegel_s_Japanese_ge_A0ABM1LG32	ITPR2	core	ITPR2	10	9			inside the largest pure ITPR2 clade
+ITPR2_Homo_sapiens_Human_Q14571	ITPR2	core	ITPR2	10	9			inside the largest pure ITPR2 clade
+ITPR2_Mus_musculus_Mouse_Q9Z329	ITPR2	core	ITPR2	10	9			inside the largest pure ITPR2 clade
+ITPR2_Nibea_albiflora_GCA_014281875.1_ITPR2_12447838	ITPR2	core	ITPR2	10	9			inside the largest pure ITPR2 clade
+ITPR2_Rattus_norvegicus_Rat_P29995	ITPR2	core	ITPR2	10	9			inside the largest pure ITPR2 clade
+ITPR2_Strigops_habroptila_Kakapo_A0A672UP22	ITPR2	core	ITPR2	10	9			inside the largest pure ITPR2 clade
+ITPR2_Xenopus_tropicalis_Western_clawed_frog_A0A6I8RGU0	ITPR2	core	ITPR2	10	9			inside the largest pure ITPR2 clade
+ITPR3_Athene_cunicularia_Burrowing_owl_Speot_A0A663MIF9	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Callorhinchus_milii_Ghost_shark_A0A4W3GWE7	ITPR3	unconstrained		19		100.0	100.0	nearest neighbourhood is mixed (ITPR3:16;unlabelled:2)
+ITPR3_Copsychus_sechellarum_GCA_054084135.1_ITPR3_2574051	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M6Z266	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Echinorhinus_cookei_GCA_057876775.1_ITPR3_46076206	ITPR3	unconstrained		19		100.0	100.0	nearest neighbourhood is mixed (ITPR3:16;unlabelled:2)
+ITPR3_Gallus_gallus_Chicken_A0A8V1ACE6	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Homo_sapiens_Human_Q14573	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Hymenochirus_boettgeri_GCA_019447015.1_ITPR3_126480658	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Latimeria_chalumnae_Coelacanth_H3B932	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Mus_musculus_Mouse_P70227	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Nothobranchius_furzeri_Turquoise_killi_A0A8C6KWV8	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Pogona_vitticeps_central_bearded_drago_A0A6J0TV85	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Rattus_norvegicus_Rat_Q63269	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Saguinus_oedipus_GCA_031835075.1_ITPR3_43596197	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Sousa_chinensis_GCA_007760645.1_ITPR3_5949234	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Sphenodon_punctatus_GCA_003113815.1_ITPR3_3264626	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Spizella_passerina_GCA_056776345.1_ITPR3_2783550	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade
+ITPR3_Xenopus_tropicalis_Western_clawed_frog_A0A8J0SYK9	ITPR3	core	ITPR3	16	15			inside the largest pure ITPR3 clade

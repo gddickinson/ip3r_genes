@@ -1,0 +1,9 @@
+group	target_aa	tier	n_records	n_arch5	n_arch4plus	global_default_aa
+Amoebozoa	2886	own	4	1	4	2692
+Discoba	2853	own	27	7	27	2692
+Eukaryota (other)	2669	own	21	12	21	2692
+Fungi	2599	own	24	11	24	2692
+Metazoa (non-vertebrate)	2770	own	994	930	994	2692
+SAR	2978	own	164	71	164	2692
+Vertebrata	2671	own	3879	3749	3879	2692
+Viridiplantae	3182	own	13	2	13	2692

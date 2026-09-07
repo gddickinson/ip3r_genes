@@ -72,7 +72,7 @@ is now counted on complete alignments rather than on alignment clusters after
 **S23c** ran it: **194 genomes, 100 Gbp, 0 failures**. **All 35 absence clades hold at assembly level and all 35 are controlled** — Ascomycota 0/31, Streptophyta 0/25, Basidiomycota 0/17, **Apicomplexa 0/3** — with **zero genomes uncontrolled**, against 1 of 14 in the pilot. **Copy number outside the vertebrates runs 0 to 18**: most invertebrates have one, but the flatworm *Macrostomum lignano* has **18** complete genes (its 62 database records resolve to 18 real ones), the ciliate *Stentor coeruleus* 13, sponges 6 and 8. And the sweep retired a threshold rather than retuning it: **identity to the nearest bait does not separate real genes from junk out here** — the genuine ones reach down to 19 %, the junk up to 32 %, and S5b's inherited 0.40 would have discarded **87 confirmed loci, 56 of them complete genes**. Similarity to the nearest reference measures how far away the nearest reference is, which outside the vertebrates is a whole phylum (**D29**). The family call is now the profile's, validated 10/10 and 10-of-11 against the assemblies' own annotations. → [`results/s23_scope/report.md`](results/s23_scope/report.md)
 
 **S6** built the alignment every later result stands on — **134
-representatives, 11,796 columns, trimmed to 1,790 of which 96.6 % are
+representatives, 11,777 columns, trimmed to 1,797 of which 96.8 % are
 parsimony-informative** ([`results/msa_v2/report.md`](results/msa_v2/report.md))
 — and two of its eight selection rules had to be rewritten by what the data
 showed. A paralog number outside the vertebrates is annotation transfer, not
@@ -90,9 +90,30 @@ separation from the ryanodine receptors is **confirmed** at 0.650 identity
 units, and the unsettled question of which two paralogues are sisters has
 its first quantitative answer — **ITPR1 × ITPR2, with a non-overlapping
 interquartile range** — carried into S7 as the hypothesis its AU test is run
-against, not as a result.
+against, not as a result. **S7 rejected it.**
 
 ![The representative alignment](results/msa_v2/figures/msa_identity_heatmap.png)
+
+**S7** answered the question the literature has never settled with a rooted,
+support-annotated analysis: **ITPR2 and ITPR3 are sisters, and ITPR1 is
+outside the pair**. The unconstrained ML tree groups them at SH-aLRT 100 /
+UFBoot 100, and an AU test over the three constrained topologies at 10,000
+RELL replicates **rejects ITPR1+ITPR2 (p-AU 1.8 × 10⁻⁵) and ITPR1+ITPR3
+(1.65 × 10⁻⁵)** while leaving ITPR2+ITPR3 (0.476) and the ML tree (0.525)
+standing — both survivors carrying the same pair. So the pairing S6's
+identity ranking put *first* is the one likelihood rejects *hardest*, which
+is the difference between resemblance and ancestry stated as a number.
+134 tips × 1,797 columns under `Q.insect+R7`, **69.5 %** of 131 internal
+nodes clearing SH-aLRT ≥ 80 *and* UFBoot ≥ 95, and a `--bnni` re-run that
+weakens and loses nothing. All five names the tree declines to place are
+upheld by reciprocal best hits, so those are the tree's uncertainty and not
+a database's error. And the six cyclostome loci resolve into **two
+well-supported clades that each hold both hagfish and lamprey** — neither
+the lineage-specific expansion nor the three 1:1 orthologues S6 offered,
+but duplications older than the hagfish/lamprey split.
+→ [`results/phylogeny/report.md`](results/phylogeny/report.md)
+
+![The ML phylogeny](results/phylogeny/figures/tree_ml_rooted.png)
 
 ![Conservation and the domain architecture](results/msa_v2/figures/msa_conservation.png)
 
@@ -216,7 +237,7 @@ One task per session. Full ledger with dependencies and results in
 | S23b | The blocking measurements, and the instrument they change | ✅ completed 2026-09-06 |
 | S23c | The full 194-genome non-vertebrate sweep → census v6 | ✅ completed 2026-09-06 |
 | S6 | Alignment upgrade (MAFFT L-INS-i + trimAl) | ✅ completed 2026-09-06 |
-| S7 | ML phylogeny, rooted on RyR; which paralogs are sisters | ⏳ pending |
+| S7 | ML phylogeny, rooted on RyR; which paralogs are sisters | ✅ completed 2026-09-07 |
 | S8 | Synteny across the ITPR loci | ⏳ pending |
 | S9 | ML selection (codeml, HyPhy RELAX) | ⏳ pending |
 | S10 | Annotation-bug molecular validation | ⏳ pending |

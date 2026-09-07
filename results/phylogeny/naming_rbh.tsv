@@ -1,0 +1,6 @@
+label	census_group	tree_rule	tree_says	forward_hit	forward_paralog	forward_pident	reciprocal_ok	rbh_call	compared_against	agrees
+ITPR1_Latimeria_chalumnae_Coelacanth_H3A1P5	ITPR1	unconstrained		sp|Q14643|ITPR1_HUMAN Inositol 1,4,5-trisphosphate-gated cal	ITPR1	86.0	yes	confirmed	census_group	yes
+ITPR1_Somniosus_microcephalus_GCF_052327205.1_ITPR1_147905519	ITPR1	unconstrained		sp|Q14643|ITPR1_HUMAN Inositol 1,4,5-trisphosphate-gated cal	ITPR1	84.2	—	forward_only	census_group	yes
+ITPR2_Echinorhinus_cookei_GCA_057876775.1_ITPR2_17288896	ITPR2	unconstrained		sp|Q14571|ITPR2_HUMAN Inositol 1,4,5-trisphosphate-gated cal	ITPR2	81.4	—	forward_only	census_group	yes
+ITPR3_Callorhinchus_milii_Ghost_shark_A0A4W3GWE7	ITPR3	unconstrained		sp|Q14573|ITPR3_HUMAN Inositol 1,4,5-trisphosphate-gated cal	ITPR3	76.0	yes	confirmed	census_group	yes
+ITPR3_Echinorhinus_cookei_GCA_057876775.1_ITPR3_46076206	ITPR3	unconstrained		sp|Q14573|ITPR3_HUMAN Inositol 1,4,5-trisphosphate-gated cal	ITPR3	75.6	—	forward_only	census_group	yes

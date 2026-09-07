@@ -1,0 +1,237 @@
+IQ-TREE multicore version 2.3.6 for MacOS ARM 64-bit built Jul 30 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    MacBookPro.lan (SSE4.2, 32 GB RAM)
+Command: iqtree2 -s /Users/george/claude_test/ip3r_genes/results/phylogeny/input.fasta --prefix /Users/george/claude_test/ip3r_genes/results/phylogeny/model_rate -m MF -T 4 -seed 42 --mset Q.insect
+Seed:    42 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Sep  6 20:03:26 2026
+Kernel:  SSE2 - 4 threads (10 CPU cores detected)
+
+Reading alignment file /Users/george/claude_test/ip3r_genes/results/phylogeny/input.fasta ... Fasta format detected
+Reading fasta file: done in 0.00258994 secs using 87.49% CPU
+Alignment most likely contains protein sequences
+Alignment has 134 sequences with 1797 columns, 1796 distinct patterns
+1739 parsimony-informative, 36 singleton sites, 22 constant sites
+                                                                        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000123978 secs using 267.8% CPU
+   1  ITPR1_Apteryx_mantelli_North_Island_brown_ki_A0ABM4F3U0                   2.39%    passed     99.69%
+   2  ITPR1_Bos_taurus_Bovine_Q9TU34                                            2.45%    passed     99.77%
+   3  ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VNY7                      2.39%    passed     88.69%
+   4  ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VJN0                      2.39%    passed     99.39%
+   5  ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M2BDG0                   2.50%    passed     82.05%
+   6  ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AC58JVG8                   2.50%    passed     82.05%
+   7  ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AB32U288                   2.45%    passed     99.00%
+   8  ITPR1_Gallus_gallus_Chicken_A0A8V0ZJT0                                    2.39%    passed     99.72%
+   9  ITPR1_Homo_sapiens_Human_Q14643                                           2.39%    passed     99.76%
+  10  ITPR1_Latimeria_chalumnae_Coelacanth_H3A1P5                               3.84%    passed     99.97%
+  11  ITPR1_Mus_musculus_Mouse_P11881                                           2.39%    passed     99.80%
+  12  ITPR1_Podarcis_muralis_Wall_lizard_Lacerta_m_A0A670JBK6                   2.39%    passed     99.85%
+  13  ITPR1_Salarias_fasciatus_Jewelled_blenny_Ble_A0A672IUQ7                   2.39%    passed     99.59%
+  14  ITPR1_Somniosus_microcephalus_GCF_052327205.1_ITPR1_147905519             2.78%    passed     99.75%
+  15  ITPR1_Xenopus_tropicalis_Western_clawed_frog_A0A8J0T3U5                   2.50%    passed     99.46%
+  16  ITPR2_Astatotilapia_calliptera_Eastern_river_A0AAX7UHL1                   2.67%    passed     94.09%
+  17  ITPR2_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M9PQQ3                   2.50%    passed     99.17%
+  18  ITPR2_Echinorhinus_cookei_GCA_057876775.1_ITPR2_17288896                  2.45%    passed     99.72%
+  19  ITPR2_Gallus_gallus_Chicken_F1P1X4                                        2.62%    passed     99.06%
+  20  ITPR2_Gekko_japonicus_Schlegel_s_Japanese_ge_A0ABM1LG32                   2.62%    passed     99.77%
+  21  ITPR2_Homo_sapiens_Human_Q14571                                           2.62%    passed     99.82%
+  22  ITPR2_Mus_musculus_Mouse_Q9Z329                                           2.62%    passed     99.52%
+  23  ITPR2_Nibea_albiflora_GCA_014281875.1_ITPR2_12447838                      2.78%    passed     99.16%
+  24  ITPR2_Rattus_norvegicus_Rat_P29995                                        2.62%    passed     99.88%
+  25  ITPR2_Strigops_habroptila_Kakapo_A0A672UP22                               2.62%    passed     98.37%
+  26  ITPR2_Xenopus_tropicalis_Western_clawed_frog_A0A6I8RGU0                   2.56%    passed     99.37%
+  27  ITPR3_Athene_cunicularia_Burrowing_owl_Speot_A0A663MIF9                   2.62%    passed     96.64%
+  28  ITPR3_Callorhinchus_milii_Ghost_shark_A0A4W3GWE7                          4.34%    passed     88.82%
+  29  ITPR3_Copsychus_sechellarum_GCA_054084135.1_ITPR3_2574051                 2.56%    passed     93.94%
+  30  ITPR3_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M6Z266                   2.95%    passed     85.54%
+  31  ITPR3_Echinorhinus_cookei_GCA_057876775.1_ITPR3_46076206                  4.34%    passed     98.44%
+  32  ITPR3_Gallus_gallus_Chicken_A0A8V1ACE6                                    2.62%    passed     96.02%
+  33  ITPR3_Homo_sapiens_Human_Q14573                                           2.62%    passed     99.97%
+  34  ITPR3_Hymenochirus_boettgeri_GCA_019447015.1_ITPR3_126480658              2.73%    passed     98.62%
+  35  ITPR3_Latimeria_chalumnae_Coelacanth_H3B932                               2.67%    passed    100.00%
+  36  ITPR3_Mus_musculus_Mouse_P70227                                           2.67%    passed     99.58%
+  37  ITPR3_Nothobranchius_furzeri_Turquoise_killi_A0A8C6KWV8                   2.95%    passed     91.80%
+  38  ITPR3_Pogona_vitticeps_central_bearded_drago_A0A6J0TV85                   2.62%    passed     96.99%
+  39  ITPR3_Rattus_norvegicus_Rat_Q63269                                        2.67%    passed     99.45%
+  40  ITPR3_Saguinus_oedipus_GCA_031835075.1_ITPR3_43596197                     2.62%    passed     99.93%
+  41  ITPR3_Sousa_chinensis_GCA_007760645.1_ITPR3_5949234                       2.62%    passed     99.84%
+  42  ITPR3_Sphenodon_punctatus_GCA_003113815.1_ITPR3_3264626                   2.62%    passed     98.94%
+  43  ITPR3_Spizella_passerina_GCA_056776345.1_ITPR3_2783550                    2.56%    passed     94.51%
+  44  ITPR3_Xenopus_tropicalis_Western_clawed_frog_A0A8J0SYK9                   2.62%    passed     99.39%
+  45  vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JHJ0               4.79%    passed     99.78%
+  46  vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3IQL0               4.56%    passed     99.91%
+  47  vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JQ24               2.73%    passed     99.76%
+  48  vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401SQC9        5.01%    passed     99.99%
+  49  vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401S8Q3        7.68%    passed     98.35%
+  50  vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401RNU3       22.87%    passed     98.24%
+  51  vertebrate_basal_Latimeria_chalumnae_GCF_037176945.1_ITPR1_35775795       4.34%    passed     99.97%
+  52  vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_86116883          2.73%    passed     89.06%
+  53  vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_122839381         2.56%    passed      6.59%
+  54  vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_297520938         2.45%    passed     83.71%
+  55  vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0AAJ7U4X1                2.39%    passed     65.45%
+  56  vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8BRT5                2.39%    passed     67.00%
+  57  vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8C056                2.45%    passed     90.29%
+  58  invert_metazoa_Actinia_tenebrosa_Australian_red_warat_A0A6P8IUM8          2.62%    passed    100.00%
+  59  invert_metazoa_Amphimedon_queenslandica_Sponge_A0AAN0JIF7                 4.28%    passed     92.98%
+  60  invert_metazoa_Araneus_ventricosus_Orbweaver_spider_E_A0A4Y2F2N2          2.39%    passed     97.38%
+  61  invert_metazoa_Brachionus_calyciflorus_A0A813MP72                         2.45%    failed      0.01%
+  62  invert_metazoa_Branchiostoma_lanceolatum_Common_lance_A0A8K0A0Y4          2.45%    passed     98.46%
+  63  invert_metazoa_Bugula_neritina_Brown_bryozoan_Sertula_A0A7J7J401         43.07%    failed      0.95%
+  64  invert_metazoa_Caenorhabditis_elegans_Q9Y0A1                              3.23%    passed     91.65%
+  65  invert_metazoa_Capitella_teleta_Polychaete_worm_R7TPX0                    3.45%    passed     99.77%
+  66  invert_metazoa_Convolutriloba_macropyga_GCF_964194025.1_copy1_11915090    4.01%    passed     97.74%
+  67  invert_metazoa_Dicyema_japonicum_GCA_011109175.1_copy1_1388155            6.62%    failed      0.00%
+  68  invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy4_2597059    11.85%    passed      7.69%
+  69  invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy1_1267705     3.73%    passed     87.48%
+  70  invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy5_3583648    10.63%    failed      0.96%
+  71  invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy2_131952     10.35%    passed     29.41%
+  72  invert_metazoa_Drosophila_melanogaster_Fruit_fly_P29993                   2.95%    passed     99.75%
+  73  invert_metazoa_Dugesia_japonica_Planarian_R9S1J3                          3.51%    passed      9.30%
+  74  invert_metazoa_Dysidea_avara_GCF_963678975.1_copy7_13836631              13.86%    failed      1.68%
+  75  invert_metazoa_Dysidea_avara_GCF_963678975.1_copy5_27474136              14.80%    passed     29.78%
+  76  invert_metazoa_Dysidea_avara_GCF_963678975.1_copy2_7972063               15.58%    passed     57.78%
+  77  invert_metazoa_Dysidea_avara_GCF_963678975.1_copy6_5305343               17.75%    failed      0.72%
+  78  invert_metazoa_Epiperipatus_broadwayi_GCA_028023455.1_copy1_8600421       6.18%    passed     98.64%
+  79  invert_metazoa_Fasciola_hepatica_Liver_fluke_A0A4E0RYC0                   5.95%    failed      0.01%
+  80  invert_metazoa_Flaccisagitta_enflata_GCA_965153355.1_copy1_35611522       8.51%    passed     73.27%
+  81  invert_metazoa_Gordionus_wolterstorffii_GCA_976986565.1_copy1_11909076    4.62%    failed      0.18%
+  82  invert_metazoa_Hirondellea_gigas_A0A6A7G5P7                               2.39%    passed     99.16%
+  83  invert_metazoa_Hypsibius_exemplaris_Freshwater_tardig_A0A1W0X7L5          3.12%    passed     47.94%
+  84  invert_metazoa_Intoshia_linei_GCA_001642005.1_copy1_548                  44.80%    failed      0.00%
+  85  invert_metazoa_Lepidodermella_squamata_GCA_047495785.1_copy1_1478289      9.63%    passed     10.45%
+  86  invert_metazoa_Limulus_polyphemus_Atlantic_horseshoe__A0ABM1SEU6          2.39%    passed     98.22%
+  87  invert_metazoa_Lingula_anatina_Brachiopod_Lingula_ung_A0A1S3JYY5          8.96%    passed     98.73%
+  88  invert_metazoa_Littorina_saxatilis_A0AAN9BAK1                             2.56%    passed     99.43%
+  89  invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy10_370736          9.91%    passed     27.30%
+  90  invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy8_50053            9.91%    passed     30.65%
+  91  invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy5_191213          10.02%    passed     78.36%
+  92  invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy2_9986             2.50%    passed     36.11%
+  93  invert_metazoa_Mnemiopsis_leidyi_Sea_walnut_Warty_com_A0ACF8YJ40          3.06%    passed     98.06%
+  94  invert_metazoa_Mytilus_coruscus_Sea_mussel_A0A6J7ZY28                    10.07%    passed     16.47%
+  95  invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861    70.62%    passed     16.64%
+  96  invert_metazoa_Patiria_pectinifera_Starfish_Asterina__Q8WSR4              2.78%    passed     99.75%
+  97  invert_metazoa_Phallusia_mammillata_A0A6F9DES0                            2.67%    passed     91.87%
+  98  invert_metazoa_Phoronis_australis_GCA_055505105.1_copy2_18943062          9.96%    failed      1.90%
+  99  invert_metazoa_Raillietiella_orientalis_GCA_036172245.1_copy1_155838     12.74%    passed     65.66%
+ 100  invert_metazoa_Saccoglossus_kowalevskii_Acorn_worm_A0ACM8C709            10.74%    failed      1.98%
+ 101  invert_metazoa_Trichinella_britovi_Parasitic_roundwor_A0A0V1CUW8          4.67%    passed     97.82%
+ 102  invert_metazoa_Trichoplax_adhaerens_Trichoplax_reptan_B3RUD1             11.69%    passed      8.90%
+ 103  invert_metazoa_Tubiluchus_corallicola_GCA_030141605.1_copy1_290621       38.95%    passed     51.81%
+ 104  invert_metazoa_Tubulanus_polymorphus_GCF_964204645.1_copy2_7918633       10.74%    passed     10.78%
+ 105  plant_Chlamydomonas_reinhardtii_Chlamydomona_A0A2K3CTW4                  10.96%    failed      0.00%
+ 106  plant_Cymbomonas_tetramitiformis_A0AAE0G204                               8.51%    failed      0.71%
+ 107  plant_Volvox_carteri_f._nagariensis_D8UKJ4                               14.86%    failed      0.00%
+ 108  protist_Acanthamoeba_castellanii_strain_ATCC_3_L8GF85                    10.13%    passed     10.35%
+ 109  protist_Aphanomyces_stellatus_A0A485LKV7                                  9.57%    failed      0.20%
+ 110  protist_Aureococcus_anophagefferens_GCF_000186865.1_copy2_139898         14.91%    failed      0.01%
+ 111  protist_Dictyostelium_discoideum_Social_amoeba_Q9NA13                    11.85%    failed      0.00%
+ 112  protist_Fonticula_alba_Slime_mold_A0A058ZDJ2                              7.90%    failed      0.00%
+ 113  protist_Leishmania_martiniquensis_A0A836HD65                             12.19%    failed      0.00%
+ 114  protist_Naegleria_fowleri_Brain_eating_amoeba_A0A6A5C2J4                 11.57%    failed      0.00%
+ 115  protist_Naegleria_lovaniensis_Amoeba_A0AA88KEU5                           9.18%    failed      0.00%
+ 116  protist_Paratrimastix_pyriformis_A0ABQ8UZM6                              14.80%    failed      0.00%
+ 117  protist_Prymnesium_parvum_Toxic_golden_alga_A0AB34K5R9                   14.13%    passed      5.75%
+ 118  protist_Saprolegnia_diclina_strain_VS20_T0QLN2                            9.24%    failed      0.00%
+ 119  protist_Stentor_coeruleus_GCA_001970955.1_copy5_35430                    11.46%    failed      0.00%
+ 120  protist_Stentor_coeruleus_GCA_001970955.1_copy3_5764                     13.58%    failed      0.00%
+ 121  protist_Stentor_coeruleus_GCA_001970955.1_copy2_370                      13.19%    failed      0.00%
+ 122  protist_Stentor_coeruleus_GCA_001970955.1_copy1_8516                     12.24%    failed      0.00%
+ 123  protist_Stylonychia_lemnae_Ciliate_A0A078ASZ8                            11.41%    failed      0.00%
+ 124  protist_Triparma_laevis_f._longispina_A0A9W7DWA0                          7.74%    failed      0.21%
+ 125  protist_Triparma_retinervis_A0A9W7AFH6                                   11.69%    failed      0.01%
+ 126  protist_Vermamoeba_vermiformis_GCA_020696425.1_copy1_85472               10.07%    passed     20.60%
+ 127  fungi_Entomophthora_muscae_A0ACC2TPX2                                    11.52%    failed      0.14%
+ 128  fungi_Jimgerdemannia_flammicorona_A0A433QY11                             12.63%    failed      1.18%
+ 129  RYR_Caenorhabditis_elegans_Q94279                                        11.74%    passed      8.74%
+ 130  RYR_Drosophila_melanogaster_Fruit_fly_Q24498                             11.74%    passed      7.77%
+ 131  RYR_Hemicentrotus_pulcherrimus_Sea_urchin__Q8TA74                        11.46%    failed      1.51%
+ 132  RYR_Homo_sapiens_Human_P21817                                            11.74%    failed      0.01%
+ 133  RYR_Homo_sapiens_Human_Q92736                                            11.41%    failed      0.75%
+ 134  RYR_Homo_sapiens_Human_Q15413                                            11.85%    failed      1.06%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                                     7.69%  36 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AC58JVG8 is identical to ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M2BDG0 but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.082 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -216597.153
+Optimal log-likelihood: -216597.068
+Proportion of invariable sites: 0.001
+Gamma shape alpha: 1.142
+Parameters optimization took 1 rounds (1.634 sec)
+Time for fast ML tree search: 16.874 seconds
+
+NOTE: ModelFinder requires 375 MB RAM!
+ModelFinder will test up to 44 protein models (sample size: 1797 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  Q.insect      224956.554   265 450443.109   450535.192   451898.985
+  2  Q.insect+I    224876.730   266 450285.460   450378.299   451746.831
+  3  Q.insect+G4   216210.145   266 432952.290   433045.129   434413.660
+  4  Q.insect+I+G4 216203.915   267 432941.830   433035.429   434408.695
+  5  Q.insect+R2   218216.984   267 436967.968   437061.566   438434.832
+  6  Q.insect+R3   216693.586   269 433925.173   434020.300   435403.025
+  7  Q.insect+R4   216050.570   271 432643.141   432739.812   434131.981
+  8  Q.insect+R5   215806.300   273 432158.600   432256.830   433658.427
+  9  Q.insect+R6   215661.707   275 431873.415   431973.218   433384.230
+ 10  Q.insect+R7   215611.739   277 431777.477   431878.868   433299.281
+ 11  Q.insect+R8   215607.275   279 431772.550   431875.543   433305.341
+ 14  Q.insect+I+R2 218179.211   268 436894.422   436988.784   438366.781
+ 15  Q.insect+I+R3 216671.536   270 433883.072   433978.969   435366.418
+ 16  Q.insect+I+R4 216044.585   272 432633.169   432730.618   434127.503
+ 17  Q.insect+I+R5 215803.897   274 432155.794   432254.808   433661.115
+ 18  Q.insect+I+R6 215663.373   276 431878.747   431979.342   433395.056
+ 19  Q.insect+I+R7 215613.204   278 431782.408   431884.598   433309.705
+ 20  Q.insect+I+R8 215608.513   280 431777.027   431880.826   433315.311
+ 32  Q.insect+F+R7 215867.491   296 432326.982   432444.198   433953.169
+ 33  Q.insect+F+R8 215858.673   298 432313.347   432432.308   433950.521
+Akaike Information Criterion:           Q.insect+R8
+Corrected Akaike Information Criterion: Q.insect+R8
+Bayesian Information Criterion:         Q.insect+R7
+Best-fit model: Q.insect+R7 chosen according to BIC
+
+All model information printed to /Users/george/claude_test/ip3r_genes/results/phylogeny/model_rate.model.gz
+CPU time for ModelFinder: 7400.379 seconds (2h:3m:20s)
+Wall-clock time for ModelFinder: 2326.849 seconds (0h:38m:46s)
+
+NOTE: 263 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -215612.681
+2. Current log-likelihood: -215610.160
+3. Current log-likelihood: -215609.951
+4. Current log-likelihood: -215609.820
+5. Current log-likelihood: -215609.726
+6. Current log-likelihood: -215609.647
+7. Current log-likelihood: -215609.586
+8. Current log-likelihood: -215609.535
+9. Current log-likelihood: -215609.496
+10. Current log-likelihood: -215609.464
+11. Current log-likelihood: -215609.430
+12. Current log-likelihood: -215609.395
+13. Current log-likelihood: -215609.377
+14. Current log-likelihood: -215609.362
+15. Current log-likelihood: -215609.341
+16. Current log-likelihood: -215609.325
+Optimal log-likelihood: -215609.309
+Site proportion and rates:  (0.062,0.085) (0.174,0.279) (0.273,0.512) (0.239,0.926) (0.147,1.575) (0.082,2.665) (0.023,5.778)
+Parameters optimization took 16 rounds (135.003 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -215609.309
+Total tree length: 68.811
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 7830.875 sec (2h:10m:30s)
+Total wall-clock time used: 2462.037 sec (0h:41m:2s)
+
+Analysis results written to: 
+  IQ-TREE report:                /Users/george/claude_test/ip3r_genes/results/phylogeny/model_rate.iqtree
+  Tree used for ModelFinder:     /Users/george/claude_test/ip3r_genes/results/phylogeny/model_rate.treefile
+  Screen log file:               /Users/george/claude_test/ip3r_genes/results/phylogeny/model_rate.log
+
+Date and Time: Sun Sep  6 20:44:28 2026

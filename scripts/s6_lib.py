@@ -343,6 +343,23 @@ def pick_diverse(rows: list[dict], n: int, key, score) -> list[dict]:
     three Discoba slots went to two *Naegleria* species.
     """
     ranked = sorted(rows, key=score, reverse=True)
+    # A level with only one distinct value among the candidates carries
+    # no diversity information — it exists to spread picks across its
+    # values, and there is nothing to spread. Left in, it only throttles:
+    # every Viridiplantae candidate is Chlorophyta, so the phylum prefix
+    # admitted exactly one row per wave and by wave 3 the genus quota was
+    # 3, loose enough to let a *second* Chlamydomonas through. The plant
+    # grade got two congeners and no Volvox while six other genera waited.
+    depth = max((len(key(r)) if isinstance(key(r), tuple) else 1)
+                for r in ranked) if ranked else 0
+    live = set()
+    for i in range(depth):
+        vals = {(key(r) if isinstance(key(r), tuple) else (key(r),))[:i + 1]
+                for r in ranked}
+        if len({v[i] for v in vals}) > 1:
+            live.add(i)
+    if not live:                 # every level degenerate: rank order only
+        live = {depth - 1} if depth else set()
     out: list[dict] = []
     picked: set = set()          # by identity, not by dict equality
     for wave in range(1, len(ranked) + 1):
@@ -355,7 +372,8 @@ def pick_diverse(rows: list[dict], n: int, key, score) -> list[dict]:
             kd = key(done)
             kds = kd if isinstance(kd, tuple) else (kd,)
             for i in range(len(kds)):
-                seen[kds[:i + 1]] = seen.get(kds[:i + 1], 0) + 1
+                if i in live:
+                    seen[kds[:i + 1]] = seen.get(kds[:i + 1], 0) + 1
         for r in ranked:
             if len(out) >= n:
                 return out
@@ -363,7 +381,7 @@ def pick_diverse(rows: list[dict], n: int, key, score) -> list[dict]:
                 continue
             k = key(r)
             ks = k if isinstance(k, tuple) else (k,)
-            prefixes = [ks[:i + 1] for i in range(len(ks))]
+            prefixes = [ks[:i + 1] for i in range(len(ks)) if i in live]
             if any(seen.get(pre, 0) >= wave for pre in prefixes):
                 continue
             for pre in prefixes:

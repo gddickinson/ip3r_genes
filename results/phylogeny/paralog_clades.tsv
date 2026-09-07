@@ -1,0 +1,4 @@
+paralog	n_labelled	n_core	n_extended	alrt	ufboot	n_added	added_groups	n_labelled_outside	verdict	added	labelled_outside
+ITPR1	15	13	19	100	100	4	vertebrate_basal:4	0	labelled set plus unlabelled vertebrate tips	vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3IQL0;vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JHJ0;vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401SQC9;vertebrate_basal_Latimeria_chalumnae_GCF_037176945.1_ITPR1_35775795	
+ITPR2	11	10	13	100	100	2	vertebrate_basal:2	0	labelled set plus unlabelled vertebrate tips	vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JQ24;vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401RNU3	
+ITPR3	18	16	19	100	100	1	vertebrate_basal:1	0	labelled set plus unlabelled vertebrate tips	vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401S8Q3	

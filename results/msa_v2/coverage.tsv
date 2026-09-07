@@ -1,135 +1,135 @@
 label	group	species	coverage	ungapped_aa
-ITPR1_Apteryx_mantelli_North_Island_brown_ki_A0ABM4F3U0	ITPR1	Apteryx mantelli (North Island brown kiwi)	0.9777	1750
-ITPR1_Bos_taurus_Bovine_Q9TU34	ITPR1	Bos taurus (Bovine)	0.9777	1750
-ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VNY7	ITPR1	Chanos chanos (Milkfish) (Mugil chanos)	0.9777	1750
-ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VJN0	ITPR1	Chanos chanos (Milkfish) (Mugil chanos)	0.9777	1750
-ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M2BDG0	ITPR1	Danio rerio (Zebrafish) (Brachydanio rerio)	0.9760	1747
-ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AC58JVG8	ITPR1	Danio rerio (Zebrafish) (Brachydanio rerio)	0.9760	1747
-ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AB32U288	ITPR1	Danio rerio (Zebrafish) (Brachydanio rerio)	0.9777	1750
-ITPR1_Gallus_gallus_Chicken_A0A8V0ZJT0	ITPR1	Gallus gallus (Chicken)	0.9777	1750
-ITPR1_Homo_sapiens_Human_Q14643	ITPR1	Homo sapiens (Human)	0.9777	1750
-ITPR1_Latimeria_chalumnae_Coelacanth_H3A1P5	ITPR1	Latimeria chalumnae (Coelacanth)	0.9620	1722
-ITPR1_Mus_musculus_Mouse_P11881	ITPR1	Mus musculus (Mouse)	0.9777	1750
-ITPR1_Podarcis_muralis_Wall_lizard_Lacerta_m_A0A670JBK6	ITPR1	Podarcis muralis (Wall lizard) (Lacerta muralis)	0.9777	1750
-ITPR1_Salarias_fasciatus_Jewelled_blenny_Ble_A0A672IUQ7	ITPR1	Salarias fasciatus (Jewelled blenny) (Blennius fasciatus)	0.9777	1750
-ITPR1_Somniosus_microcephalus_GCF_052327205.1_ITPR1_147905519	ITPR1	Somniosus microcephalus	0.9732	1742
-ITPR1_Xenopus_tropicalis_Western_clawed_frog_A0A8J0T3U5	ITPR1	Xenopus tropicalis (Western clawed frog) (Silurana tropicalis)	0.9754	1746
-ITPR2_Astatotilapia_calliptera_Eastern_river_A0AAX7UHL1	ITPR2	Astatotilapia calliptera (Eastern river bream) (Chromis callipterus)	0.9788	1752
-ITPR2_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M9PQQ3	ITPR2	Danio rerio (Zebrafish) (Brachydanio rerio)	0.9771	1749
-ITPR2_Echinorhinus_cookei_GCA_057876775.1_ITPR2_17288896	ITPR2	Echinorhinus cookei	0.9777	1750
-ITPR2_Gallus_gallus_Chicken_F1P1X4	ITPR2	Gallus gallus (Chicken)	0.9760	1747
-ITPR2_Gekko_japonicus_Schlegel_s_Japanese_ge_A0ABM1LG32	ITPR2	Gekko japonicus (Schlegel's Japanese gecko)	0.9760	1747
-ITPR2_Homo_sapiens_Human_Q14571	ITPR2	Homo sapiens (Human)	0.9760	1747
-ITPR2_Mus_musculus_Mouse_Q9Z329	ITPR2	Mus musculus (Mouse)	0.9760	1747
-ITPR2_Nibea_albiflora_GCA_014281875.1_ITPR2_12447838	ITPR2	Nibea albiflora	0.9749	1745
-ITPR2_Rattus_norvegicus_Rat_P29995	ITPR2	Rattus norvegicus (Rat)	0.9760	1747
-ITPR2_Strigops_habroptila_Kakapo_A0A672UP22	ITPR2	Strigops habroptila (Kakapo)	0.9760	1747
-ITPR2_Xenopus_tropicalis_Western_clawed_frog_A0A6I8RGU0	ITPR2	Xenopus tropicalis (Western clawed frog) (Silurana tropicalis)	0.9765	1748
-ITPR3_Athene_cunicularia_Burrowing_owl_Speot_A0A663MIF9	ITPR3	Athene cunicularia (Burrowing owl) (Speotyto cunicularia)	0.9737	1743
-ITPR3_Callorhinchus_milii_Ghost_shark_A0A4W3GWE7	ITPR3	Callorhinchus milii (Ghost shark)	0.9587	1716
-ITPR3_Copsychus_sechellarum_GCA_054084135.1_ITPR3_2574051	ITPR3	Copsychus sechellarum	0.9743	1744
-ITPR3_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M6Z266	ITPR3	Danio rerio (Zebrafish) (Brachydanio rerio)	0.9732	1742
-ITPR3_Echinorhinus_cookei_GCA_057876775.1_ITPR3_46076206	ITPR3	Echinorhinus cookei	0.9592	1717
-ITPR3_Gallus_gallus_Chicken_A0A8V1ACE6	ITPR3	Gallus gallus (Chicken)	0.9737	1743
-ITPR3_Homo_sapiens_Human_Q14573	ITPR3	Homo sapiens (Human)	0.9737	1743
-ITPR3_Hymenochirus_boettgeri_GCA_019447015.1_ITPR3_126480658	ITPR3	Hymenochirus boettgeri	0.9726	1741
-ITPR3_Latimeria_chalumnae_Coelacanth_H3B932	ITPR3	Latimeria chalumnae (Coelacanth)	0.9754	1746
-ITPR3_Mus_musculus_Mouse_P70227	ITPR3	Mus musculus (Mouse)	0.9732	1742
-ITPR3_Nothobranchius_furzeri_Turquoise_killi_A0A8C6KWV8	ITPR3	Nothobranchius furzeri (Turquoise killifish)	0.9749	1745
-ITPR3_Pogona_vitticeps_central_bearded_drago_A0A6J0TV85	ITPR3	Pogona vitticeps (central bearded dragon)	0.9737	1743
-ITPR3_Rattus_norvegicus_Rat_Q63269	ITPR3	Rattus norvegicus (Rat)	0.9732	1742
-ITPR3_Saguinus_oedipus_GCA_031835075.1_ITPR3_43596197	ITPR3	Saguinus oedipus	0.9737	1743
-ITPR3_Sousa_chinensis_GCA_007760645.1_ITPR3_5949234	ITPR3	Sousa chinensis	0.9737	1743
-ITPR3_Sphenodon_punctatus_GCA_003113815.1_ITPR3_3264626	ITPR3	Sphenodon punctatus	0.9737	1743
-ITPR3_Spizella_passerina_GCA_056776345.1_ITPR3_2783550	ITPR3	Spizella passerina	0.9743	1744
-ITPR3_Xenopus_tropicalis_Western_clawed_frog_A0A8J0SYK9	ITPR3	Xenopus tropicalis (Western clawed frog) (Silurana tropicalis)	0.9737	1743
-vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JHJ0	vertebrate_basal	Callorhinchus milii (Ghost shark)	0.9542	1708
-vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3IQL0	vertebrate_basal	Callorhinchus milii (Ghost shark)	0.9553	1710
-vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JQ24	vertebrate_basal	Callorhinchus milii (Ghost shark)	0.9765	1748
-vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401SQC9	vertebrate_basal	Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)	0.9542	1708
-vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401S8Q3	vertebrate_basal	Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)	0.9212	1649
-vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401RNU3	vertebrate_basal	Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)	0.7760	1389
-vertebrate_basal_Latimeria_chalumnae_GCF_037176945.1_ITPR1_35775795	vertebrate_basal	Latimeria chalumnae	0.9570	1713
-vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_86116883	vertebrate_basal	Myxine glutinosa	0.9754	1746
-vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_122839381	vertebrate_basal	Myxine glutinosa	0.9777	1750
-vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_297520938	vertebrate_basal	Myxine glutinosa	0.9777	1750
-vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0AAJ7U4X1	vertebrate_basal	Petromyzon marinus (Sea lamprey)	0.9777	1750
-vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8BRT5	vertebrate_basal	Petromyzon marinus (Sea lamprey)	0.9771	1749
-vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8C056	vertebrate_basal	Petromyzon marinus (Sea lamprey)	0.9777	1750
-invert_metazoa_Actinia_tenebrosa_Australian_red_warat_A0A6P8IUM8	invert_metazoa	Actinia tenebrosa (Australian red waratah sea anemone)	0.9765	1748
-invert_metazoa_Amphimedon_queenslandica_Sponge_A0AAN0JIF7	invert_metazoa	Amphimedon queenslandica (Sponge)	0.9642	1726
-invert_metazoa_Araneus_ventricosus_Orbweaver_spider_E_A0A4Y2F2N2	invert_metazoa	Araneus ventricosus (Orbweaver spider) (Epeira ventricosa)	0.9771	1749
-invert_metazoa_Brachionus_calyciflorus_A0A813MP72	invert_metazoa	Brachionus calyciflorus	0.9777	1750
-invert_metazoa_Branchiostoma_lanceolatum_Common_lance_A0A8K0A0Y4	invert_metazoa	Branchiostoma lanceolatum (Common lancelet) (Amphioxus lanceolatum)	0.9771	1749
-invert_metazoa_Bugula_neritina_Brown_bryozoan_Sertula_A0A7J7J401	invert_metazoa	Bugula neritina (Brown bryozoan) (Sertularia neritina)	0.5676	1016
-invert_metazoa_Caenorhabditis_elegans_Q9Y0A1	invert_metazoa	Caenorhabditis elegans	0.9704	1737
-invert_metazoa_Capitella_teleta_Polychaete_worm_R7TPX0	invert_metazoa	Capitella teleta (Polychaete worm)	0.9648	1727
-invert_metazoa_Convolutriloba_macropyga_GCF_964194025.1_copy1_11915090	invert_metazoa	Convolutriloba macropyga	0.9620	1722
-invert_metazoa_Dicyema_japonicum_GCA_011109175.1_copy1_1388155	invert_metazoa	Dicyema japonicum	0.9447	1691
-invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy4_2597059	invert_metazoa	Dimorphilus gyrociliatus	0.8721	1561
-invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy1_1267705	invert_metazoa	Dimorphilus gyrociliatus	0.9642	1726
-invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy5_3583648	invert_metazoa	Dimorphilus gyrociliatus	0.8927	1598
-invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy2_131952	invert_metazoa	Dimorphilus gyrociliatus	0.8849	1584
-invert_metazoa_Drosophila_melanogaster_Fruit_fly_P29993	invert_metazoa	Drosophila melanogaster (Fruit fly)	0.9709	1738
-invert_metazoa_Dugesia_japonica_Planarian_R9S1J3	invert_metazoa	Dugesia japonica (Planarian)	0.9648	1727
-invert_metazoa_Dysidea_avara_GCF_963678975.1_copy7_13836631	invert_metazoa	Dysidea avara	0.8598	1539
-invert_metazoa_Dysidea_avara_GCF_963678975.1_copy5_27474136	invert_metazoa	Dysidea avara	0.8525	1526
-invert_metazoa_Dysidea_avara_GCF_963678975.1_copy2_7972063	invert_metazoa	Dysidea avara	0.8436	1510
-invert_metazoa_Dysidea_avara_GCF_963678975.1_copy6_5305343	invert_metazoa	Dysidea avara	0.8162	1461
-invert_metazoa_Epiperipatus_broadwayi_GCA_028023455.1_copy1_8600421	invert_metazoa	Epiperipatus broadwayi	0.9397	1682
-invert_metazoa_Fasciola_hepatica_Liver_fluke_A0A4E0RYC0	invert_metazoa	Fasciola hepatica (Liver fluke)	0.9458	1693
-invert_metazoa_Flaccisagitta_enflata_GCA_965153355.1_copy1_35611522	invert_metazoa	Flaccisagitta enflata	0.9240	1654
-invert_metazoa_Gordionus_wolterstorffii_GCA_976986565.1_copy1_11909076	invert_metazoa	Gordionus wolterstorffii	0.9587	1716
-invert_metazoa_Hirondellea_gigas_A0A6A7G5P7	invert_metazoa	Hirondellea gigas	0.9782	1751
-invert_metazoa_Hypsibius_exemplaris_Freshwater_tardig_A0A1W0X7L5	invert_metazoa	Hypsibius exemplaris (Freshwater tardigrade)	0.9743	1744
-invert_metazoa_Intoshia_linei_GCA_001642005.1_copy1_548	invert_metazoa	Intoshia linei	0.5380	963
-invert_metazoa_Lepidodermella_squamata_GCA_047495785.1_copy1_1478289	invert_metazoa	Lepidodermella squamata	0.8989	1609
-invert_metazoa_Limulus_polyphemus_Atlantic_horseshoe__A0ABM1SEU6	invert_metazoa	Limulus polyphemus (Atlantic horseshoe crab)	0.9777	1750
-invert_metazoa_Lingula_anatina_Brachiopod_Lingula_ung_A0A1S3JYY5	invert_metazoa	Lingula anatina (Brachiopod) (Lingula unguis)	0.9140	1636
-invert_metazoa_Littorina_saxatilis_A0AAN9BAK1	invert_metazoa	Littorina saxatilis	0.9760	1747
-invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy10_370736	invert_metazoa	Macrostomum lignano	0.8933	1599
-invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy8_50053	invert_metazoa	Macrostomum lignano	0.8950	1602
-invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy5_191213	invert_metazoa	Macrostomum lignano	0.8939	1600
-invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy2_9986	invert_metazoa	Macrostomum lignano	0.9765	1748
-invert_metazoa_Mnemiopsis_leidyi_Sea_walnut_Warty_com_A0ACF8YJ40	invert_metazoa	Mnemiopsis leidyi (Sea walnut) (Warty comb jellyfish)	0.9721	1740
-invert_metazoa_Mytilus_coruscus_Sea_mussel_A0A6J7ZY28	invert_metazoa	Mytilus coruscus (Sea mussel)	0.8916	1596
-invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861	invert_metazoa	Neoechinorhynchus agilis	0.3028	542
-invert_metazoa_Patiria_pectinifera_Starfish_Asterina__Q8WSR4	invert_metazoa	Patiria pectinifera (Starfish) (Asterina pectinifera)	0.9743	1744
-invert_metazoa_Phallusia_mammillata_A0A6F9DES0	invert_metazoa	Phallusia mammillata	0.9749	1745
-invert_metazoa_Phoronis_australis_GCA_055505105.1_copy2_18943062	invert_metazoa	Phoronis australis	0.8966	1605
-invert_metazoa_Raillietiella_orientalis_GCA_036172245.1_copy1_155838	invert_metazoa	Raillietiella orientalis	0.8743	1565
-invert_metazoa_Saccoglossus_kowalevskii_Acorn_worm_A0ACM8C709	invert_metazoa	Saccoglossus kowalevskii (Acorn worm)	0.8855	1585
-invert_metazoa_Trichinella_britovi_Parasitic_roundwor_A0A0V1CUW8	invert_metazoa	Trichinella britovi (Parasitic roundworm)	0.9665	1730
-invert_metazoa_Trichoplax_adhaerens_Trichoplax_reptan_B3RUD1	invert_metazoa	Trichoplax adhaerens (Trichoplax reptans)	0.8704	1558
-invert_metazoa_Tubiluchus_corallicola_GCA_030141605.1_copy1_290621	invert_metazoa	Tubiluchus corallicola	0.6123	1096
-invert_metazoa_Tubulanus_polymorphus_GCF_964204645.1_copy2_7918633	invert_metazoa	Tubulanus polymorphus	0.8849	1584
-plant_Chlamydomonas_reinhardtii_Chlamydomona_A0A2K3CTW4	plant	Chlamydomonas reinhardtii (Chlamydomonas smithii)	0.8927	1598
-plant_Cymbomonas_tetramitiformis_A0AAE0G204	plant	Cymbomonas tetramitiformis	0.9128	1634
-plant_Tetrabaena_socialis_A0A2J8AAQ9	plant	Tetrabaena socialis	0.7134	1277
-protist_Acanthamoeba_castellanii_strain_ATCC_3_L8GF85	protist	Acanthamoeba castellanii (strain ATCC 30010 / Neff)	0.9017	1614
-protist_Aphanomyces_stellatus_A0A485LKV7	protist	Aphanomyces stellatus	0.9011	1613
-protist_Aureococcus_anophagefferens_GCF_000186865.1_copy2_139898	protist	Aureococcus anophagefferens	0.8486	1519
-protist_Dictyostelium_discoideum_Social_amoeba_Q9NA13	protist	Dictyostelium discoideum (Social amoeba)	0.8749	1566
-protist_Fonticula_alba_Slime_mold_A0A058ZDJ2	protist	Fonticula alba (Slime mold)	0.9291	1663
-protist_Leishmania_martiniquensis_A0A836HD65	protist	Leishmania martiniquensis	0.8687	1555
-protist_Naegleria_fowleri_Brain_eating_amoeba_A0A6A5C2J4	protist	Naegleria fowleri (Brain eating amoeba)	0.8821	1579
-protist_Naegleria_lovaniensis_Amoeba_A0AA88KEU5	protist	Naegleria lovaniensis (Amoeba)	0.8916	1596
-protist_Paratrimastix_pyriformis_A0ABQ8UZM6	protist	Paratrimastix pyriformis	0.8559	1532
-protist_Prymnesium_parvum_Toxic_golden_alga_A0AB34K5R9	protist	Prymnesium parvum (Toxic golden alga)	0.8553	1531
-protist_Saprolegnia_diclina_strain_VS20_T0QLN2	protist	Saprolegnia diclina (strain VS20)	0.9028	1616
-protist_Stentor_coeruleus_GCA_001970955.1_copy5_35430	protist	Stentor coeruleus	0.8888	1591
-protist_Stentor_coeruleus_GCA_001970955.1_copy3_5764	protist	Stentor coeruleus	0.8642	1547
-protist_Stentor_coeruleus_GCA_001970955.1_copy2_370	protist	Stentor coeruleus	0.8726	1562
-protist_Stentor_coeruleus_GCA_001970955.1_copy1_8516	protist	Stentor coeruleus	0.8799	1575
-protist_Stylonychia_lemnae_Ciliate_A0A078ASZ8	protist	Stylonychia lemnae (Ciliate)	0.8927	1598
-protist_Triparma_laevis_f._longispina_A0A9W7DWA0	protist	Triparma laevis f. longispina	0.9045	1619
-protist_Triparma_retinervis_A0A9W7AFH6	protist	Triparma retinervis	0.8709	1559
-protist_Vermamoeba_vermiformis_GCA_020696425.1_copy1_85472	protist	Vermamoeba vermiformis	0.8827	1580
-fungi_Entomophthora_muscae_A0ACC2TPX2	fungi	Entomophthora muscae	0.8844	1583
-fungi_Jimgerdemannia_flammicorona_A0A433QY11	fungi	Jimgerdemannia flammicorona	0.8760	1568
-RYR_Caenorhabditis_elegans_Q94279	RYR	Caenorhabditis elegans	0.8687	1555
-RYR_Drosophila_melanogaster_Fruit_fly_Q24498	RYR	Drosophila melanogaster (Fruit fly)	0.8709	1559
-RYR_Hemicentrotus_pulcherrimus_Sea_urchin__Q8TA74	RYR	Hemicentrotus pulcherrimus (Sea urchin) (Strongylocentrotus pulcherrimus)	0.8715	1560
-RYR_Homo_sapiens_Human_P21817	RYR	Homo sapiens (Human)	0.8749	1566
-RYR_Homo_sapiens_Human_Q92736	RYR	Homo sapiens (Human)	0.8743	1565
-RYR_Homo_sapiens_Human_Q15413	RYR	Homo sapiens (Human)	0.8654	1549
+ITPR1_Apteryx_mantelli_North_Island_brown_ki_A0ABM4F3U0	ITPR1	Apteryx mantelli (North Island brown kiwi)	0.9761	1754
+ITPR1_Bos_taurus_Bovine_Q9TU34	ITPR1	Bos taurus (Bovine)	0.9761	1754
+ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VNY7	ITPR1	Chanos chanos (Milkfish) (Mugil chanos)	0.9761	1754
+ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VJN0	ITPR1	Chanos chanos (Milkfish) (Mugil chanos)	0.9761	1754
+ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M2BDG0	ITPR1	Danio rerio (Zebrafish) (Brachydanio rerio)	0.9750	1752
+ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AC58JVG8	ITPR1	Danio rerio (Zebrafish) (Brachydanio rerio)	0.9750	1752
+ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AB32U288	ITPR1	Danio rerio (Zebrafish) (Brachydanio rerio)	0.9755	1753
+ITPR1_Gallus_gallus_Chicken_A0A8V0ZJT0	ITPR1	Gallus gallus (Chicken)	0.9761	1754
+ITPR1_Homo_sapiens_Human_Q14643	ITPR1	Homo sapiens (Human)	0.9761	1754
+ITPR1_Latimeria_chalumnae_Coelacanth_H3A1P5	ITPR1	Latimeria chalumnae (Coelacanth)	0.9616	1728
+ITPR1_Mus_musculus_Mouse_P11881	ITPR1	Mus musculus (Mouse)	0.9761	1754
+ITPR1_Podarcis_muralis_Wall_lizard_Lacerta_m_A0A670JBK6	ITPR1	Podarcis muralis (Wall lizard) (Lacerta muralis)	0.9761	1754
+ITPR1_Salarias_fasciatus_Jewelled_blenny_Ble_A0A672IUQ7	ITPR1	Salarias fasciatus (Jewelled blenny) (Blennius fasciatus)	0.9761	1754
+ITPR1_Somniosus_microcephalus_GCF_052327205.1_ITPR1_147905519	ITPR1	Somniosus microcephalus	0.9727	1748
+ITPR1_Xenopus_tropicalis_Western_clawed_frog_A0A8J0T3U5	ITPR1	Xenopus tropicalis (Western clawed frog) (Silurana tropicalis)	0.9750	1752
+ITPR2_Astatotilapia_calliptera_Eastern_river_A0AAX7UHL1	ITPR2	Astatotilapia calliptera (Eastern river bream) (Chromis callipterus)	0.9733	1749
+ITPR2_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M9PQQ3	ITPR2	Danio rerio (Zebrafish) (Brachydanio rerio)	0.9750	1752
+ITPR2_Echinorhinus_cookei_GCA_057876775.1_ITPR2_17288896	ITPR2	Echinorhinus cookei	0.9755	1753
+ITPR2_Gallus_gallus_Chicken_F1P1X4	ITPR2	Gallus gallus (Chicken)	0.9738	1750
+ITPR2_Gekko_japonicus_Schlegel_s_Japanese_ge_A0ABM1LG32	ITPR2	Gekko japonicus (Schlegel's Japanese gecko)	0.9738	1750
+ITPR2_Homo_sapiens_Human_Q14571	ITPR2	Homo sapiens (Human)	0.9738	1750
+ITPR2_Mus_musculus_Mouse_Q9Z329	ITPR2	Mus musculus (Mouse)	0.9738	1750
+ITPR2_Nibea_albiflora_GCA_014281875.1_ITPR2_12447838	ITPR2	Nibea albiflora	0.9722	1747
+ITPR2_Rattus_norvegicus_Rat_P29995	ITPR2	Rattus norvegicus (Rat)	0.9738	1750
+ITPR2_Strigops_habroptila_Kakapo_A0A672UP22	ITPR2	Strigops habroptila (Kakapo)	0.9738	1750
+ITPR2_Xenopus_tropicalis_Western_clawed_frog_A0A6I8RGU0	ITPR2	Xenopus tropicalis (Western clawed frog) (Silurana tropicalis)	0.9744	1751
+ITPR3_Athene_cunicularia_Burrowing_owl_Speot_A0A663MIF9	ITPR3	Athene cunicularia (Burrowing owl) (Speotyto cunicularia)	0.9738	1750
+ITPR3_Callorhinchus_milii_Ghost_shark_A0A4W3GWE7	ITPR3	Callorhinchus milii (Ghost shark)	0.9566	1719
+ITPR3_Copsychus_sechellarum_GCA_054084135.1_ITPR3_2574051	ITPR3	Copsychus sechellarum	0.9744	1751
+ITPR3_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M6Z266	ITPR3	Danio rerio (Zebrafish) (Brachydanio rerio)	0.9705	1744
+ITPR3_Echinorhinus_cookei_GCA_057876775.1_ITPR3_46076206	ITPR3	Echinorhinus cookei	0.9572	1720
+ITPR3_Gallus_gallus_Chicken_A0A8V1ACE6	ITPR3	Gallus gallus (Chicken)	0.9738	1750
+ITPR3_Homo_sapiens_Human_Q14573	ITPR3	Homo sapiens (Human)	0.9738	1750
+ITPR3_Hymenochirus_boettgeri_GCA_019447015.1_ITPR3_126480658	ITPR3	Hymenochirus boettgeri	0.9727	1748
+ITPR3_Latimeria_chalumnae_Coelacanth_H3B932	ITPR3	Latimeria chalumnae (Coelacanth)	0.9733	1749
+ITPR3_Mus_musculus_Mouse_P70227	ITPR3	Mus musculus (Mouse)	0.9733	1749
+ITPR3_Nothobranchius_furzeri_Turquoise_killi_A0A8C6KWV8	ITPR3	Nothobranchius furzeri (Turquoise killifish)	0.9705	1744
+ITPR3_Pogona_vitticeps_central_bearded_drago_A0A6J0TV85	ITPR3	Pogona vitticeps (central bearded dragon)	0.9738	1750
+ITPR3_Rattus_norvegicus_Rat_Q63269	ITPR3	Rattus norvegicus (Rat)	0.9733	1749
+ITPR3_Saguinus_oedipus_GCA_031835075.1_ITPR3_43596197	ITPR3	Saguinus oedipus	0.9738	1750
+ITPR3_Sousa_chinensis_GCA_007760645.1_ITPR3_5949234	ITPR3	Sousa chinensis	0.9738	1750
+ITPR3_Sphenodon_punctatus_GCA_003113815.1_ITPR3_3264626	ITPR3	Sphenodon punctatus	0.9738	1750
+ITPR3_Spizella_passerina_GCA_056776345.1_ITPR3_2783550	ITPR3	Spizella passerina	0.9744	1751
+ITPR3_Xenopus_tropicalis_Western_clawed_frog_A0A8J0SYK9	ITPR3	Xenopus tropicalis (Western clawed frog) (Silurana tropicalis)	0.9738	1750
+vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JHJ0	vertebrate_basal	Callorhinchus milii (Ghost shark)	0.9521	1711
+vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3IQL0	vertebrate_basal	Callorhinchus milii (Ghost shark)	0.9544	1715
+vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JQ24	vertebrate_basal	Callorhinchus milii (Ghost shark)	0.9727	1748
+vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401SQC9	vertebrate_basal	Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)	0.9499	1707
+vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401S8Q3	vertebrate_basal	Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)	0.9232	1659
+vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401RNU3	vertebrate_basal	Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)	0.7713	1386
+vertebrate_basal_Latimeria_chalumnae_GCF_037176945.1_ITPR1_35775795	vertebrate_basal	Latimeria chalumnae	0.9566	1719
+vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_86116883	vertebrate_basal	Myxine glutinosa	0.9727	1748
+vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_122839381	vertebrate_basal	Myxine glutinosa	0.9744	1751
+vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_297520938	vertebrate_basal	Myxine glutinosa	0.9755	1753
+vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0AAJ7U4X1	vertebrate_basal	Petromyzon marinus (Sea lamprey)	0.9761	1754
+vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8BRT5	vertebrate_basal	Petromyzon marinus (Sea lamprey)	0.9761	1754
+vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8C056	vertebrate_basal	Petromyzon marinus (Sea lamprey)	0.9755	1753
+invert_metazoa_Actinia_tenebrosa_Australian_red_warat_A0A6P8IUM8	invert_metazoa	Actinia tenebrosa (Australian red waratah sea anemone)	0.9738	1750
+invert_metazoa_Amphimedon_queenslandica_Sponge_A0AAN0JIF7	invert_metazoa	Amphimedon queenslandica (Sponge)	0.9572	1720
+invert_metazoa_Araneus_ventricosus_Orbweaver_spider_E_A0A4Y2F2N2	invert_metazoa	Araneus ventricosus (Orbweaver spider) (Epeira ventricosa)	0.9761	1754
+invert_metazoa_Brachionus_calyciflorus_A0A813MP72	invert_metazoa	Brachionus calyciflorus	0.9755	1753
+invert_metazoa_Branchiostoma_lanceolatum_Common_lance_A0A8K0A0Y4	invert_metazoa	Branchiostoma lanceolatum (Common lancelet) (Amphioxus lanceolatum)	0.9755	1753
+invert_metazoa_Bugula_neritina_Brown_bryozoan_Sertula_A0A7J7J401	invert_metazoa	Bugula neritina (Brown bryozoan) (Sertularia neritina)	0.5693	1023
+invert_metazoa_Caenorhabditis_elegans_Q9Y0A1	invert_metazoa	Caenorhabditis elegans	0.9677	1739
+invert_metazoa_Capitella_teleta_Polychaete_worm_R7TPX0	invert_metazoa	Capitella teleta (Polychaete worm)	0.9655	1735
+invert_metazoa_Convolutriloba_macropyga_GCF_964194025.1_copy1_11915090	invert_metazoa	Convolutriloba macropyga	0.9599	1725
+invert_metazoa_Dicyema_japonicum_GCA_011109175.1_copy1_1388155	invert_metazoa	Dicyema japonicum	0.9338	1678
+invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy4_2597059	invert_metazoa	Dimorphilus gyrociliatus	0.8815	1584
+invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy1_1267705	invert_metazoa	Dimorphilus gyrociliatus	0.9627	1730
+invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy5_3583648	invert_metazoa	Dimorphilus gyrociliatus	0.8937	1606
+invert_metazoa_Dimorphilus_gyrociliatus_GCA_904063045.1_copy2_131952	invert_metazoa	Dimorphilus gyrociliatus	0.8965	1611
+invert_metazoa_Drosophila_melanogaster_Fruit_fly_P29993	invert_metazoa	Drosophila melanogaster (Fruit fly)	0.9705	1744
+invert_metazoa_Dugesia_japonica_Planarian_R9S1J3	invert_metazoa	Dugesia japonica (Planarian)	0.9649	1734
+invert_metazoa_Dysidea_avara_GCF_963678975.1_copy7_13836631	invert_metazoa	Dysidea avara	0.8614	1548
+invert_metazoa_Dysidea_avara_GCF_963678975.1_copy5_27474136	invert_metazoa	Dysidea avara	0.8520	1531
+invert_metazoa_Dysidea_avara_GCF_963678975.1_copy2_7972063	invert_metazoa	Dysidea avara	0.8442	1517
+invert_metazoa_Dysidea_avara_GCF_963678975.1_copy6_5305343	invert_metazoa	Dysidea avara	0.8230	1479
+invert_metazoa_Epiperipatus_broadwayi_GCA_028023455.1_copy1_8600421	invert_metazoa	Epiperipatus broadwayi	0.9382	1686
+invert_metazoa_Fasciola_hepatica_Liver_fluke_A0A4E0RYC0	invert_metazoa	Fasciola hepatica (Liver fluke)	0.9405	1690
+invert_metazoa_Flaccisagitta_enflata_GCA_965153355.1_copy1_35611522	invert_metazoa	Flaccisagitta enflata	0.9154	1645
+invert_metazoa_Gordionus_wolterstorffii_GCA_976986565.1_copy1_11909076	invert_metazoa	Gordionus wolterstorffii	0.9538	1714
+invert_metazoa_Hirondellea_gigas_A0A6A7G5P7	invert_metazoa	Hirondellea gigas	0.9761	1754
+invert_metazoa_Hypsibius_exemplaris_Freshwater_tardig_A0A1W0X7L5	invert_metazoa	Hypsibius exemplaris (Freshwater tardigrade)	0.9688	1741
+invert_metazoa_Intoshia_linei_GCA_001642005.1_copy1_548	invert_metazoa	Intoshia linei	0.5520	992
+invert_metazoa_Lepidodermella_squamata_GCA_047495785.1_copy1_1478289	invert_metazoa	Lepidodermella squamata	0.9037	1624
+invert_metazoa_Limulus_polyphemus_Atlantic_horseshoe__A0ABM1SEU6	invert_metazoa	Limulus polyphemus (Atlantic horseshoe crab)	0.9761	1754
+invert_metazoa_Lingula_anatina_Brachiopod_Lingula_ung_A0A1S3JYY5	invert_metazoa	Lingula anatina (Brachiopod) (Lingula unguis)	0.9104	1636
+invert_metazoa_Littorina_saxatilis_A0AAN9BAK1	invert_metazoa	Littorina saxatilis	0.9744	1751
+invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy10_370736	invert_metazoa	Macrostomum lignano	0.9009	1619
+invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy8_50053	invert_metazoa	Macrostomum lignano	0.9009	1619
+invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy5_191213	invert_metazoa	Macrostomum lignano	0.8998	1617
+invert_metazoa_Macrostomum_lignano_GCA_002269645.1_copy2_9986	invert_metazoa	Macrostomum lignano	0.9750	1752
+invert_metazoa_Mnemiopsis_leidyi_Sea_walnut_Warty_com_A0ACF8YJ40	invert_metazoa	Mnemiopsis leidyi (Sea walnut) (Warty comb jellyfish)	0.9694	1742
+invert_metazoa_Mytilus_coruscus_Sea_mussel_A0A6J7ZY28	invert_metazoa	Mytilus coruscus (Sea mussel)	0.8993	1616
+invert_metazoa_Neoechinorhynchus_agilis_GCA_051530055.1_copy1_5945861	invert_metazoa	Neoechinorhynchus agilis	0.2944	529
+invert_metazoa_Patiria_pectinifera_Starfish_Asterina__Q8WSR4	invert_metazoa	Patiria pectinifera (Starfish) (Asterina pectinifera)	0.9722	1747
+invert_metazoa_Phallusia_mammillata_A0A6F9DES0	invert_metazoa	Phallusia mammillata	0.9733	1749
+invert_metazoa_Phoronis_australis_GCA_055505105.1_copy2_18943062	invert_metazoa	Phoronis australis	0.9009	1619
+invert_metazoa_Raillietiella_orientalis_GCA_036172245.1_copy1_155838	invert_metazoa	Raillietiella orientalis	0.8726	1568
+invert_metazoa_Saccoglossus_kowalevskii_Acorn_worm_A0ACM8C709	invert_metazoa	Saccoglossus kowalevskii (Acorn worm)	0.8926	1604
+invert_metazoa_Trichinella_britovi_Parasitic_roundwor_A0A0V1CUW8	invert_metazoa	Trichinella britovi (Parasitic roundworm)	0.9533	1713
+invert_metazoa_Trichoplax_adhaerens_Trichoplax_reptan_B3RUD1	invert_metazoa	Trichoplax adhaerens (Trichoplax reptans)	0.8831	1587
+invert_metazoa_Tubiluchus_corallicola_GCA_030141605.1_copy1_290621	invert_metazoa	Tubiluchus corallicola	0.6105	1097
+invert_metazoa_Tubulanus_polymorphus_GCF_964204645.1_copy2_7918633	invert_metazoa	Tubulanus polymorphus	0.8926	1604
+plant_Chlamydomonas_reinhardtii_Chlamydomona_A0A2K3CTW4	plant	Chlamydomonas reinhardtii (Chlamydomonas smithii)	0.8904	1600
+plant_Cymbomonas_tetramitiformis_A0AAE0G204	plant	Cymbomonas tetramitiformis	0.9149	1644
+plant_Volvox_carteri_f._nagariensis_D8UKJ4	plant	Volvox carteri f. nagariensis	0.8514	1530
+protist_Acanthamoeba_castellanii_strain_ATCC_3_L8GF85	protist	Acanthamoeba castellanii (strain ATCC 30010 / Neff)	0.8987	1615
+protist_Aphanomyces_stellatus_A0A485LKV7	protist	Aphanomyces stellatus	0.9043	1625
+protist_Aureococcus_anophagefferens_GCF_000186865.1_copy2_139898	protist	Aureococcus anophagefferens	0.8509	1529
+protist_Dictyostelium_discoideum_Social_amoeba_Q9NA13	protist	Dictyostelium discoideum (Social amoeba)	0.8815	1584
+protist_Fonticula_alba_Slime_mold_A0A058ZDJ2	protist	Fonticula alba (Slime mold)	0.9210	1655
+protist_Leishmania_martiniquensis_A0A836HD65	protist	Leishmania martiniquensis	0.8781	1578
+protist_Naegleria_fowleri_Brain_eating_amoeba_A0A6A5C2J4	protist	Naegleria fowleri (Brain eating amoeba)	0.8843	1589
+protist_Naegleria_lovaniensis_Amoeba_A0AA88KEU5	protist	Naegleria lovaniensis (Amoeba)	0.9082	1632
+protist_Paratrimastix_pyriformis_A0ABQ8UZM6	protist	Paratrimastix pyriformis	0.8520	1531
+protist_Prymnesium_parvum_Toxic_golden_alga_A0AB34K5R9	protist	Prymnesium parvum (Toxic golden alga)	0.8587	1543
+protist_Saprolegnia_diclina_strain_VS20_T0QLN2	protist	Saprolegnia diclina (strain VS20)	0.9076	1631
+protist_Stentor_coeruleus_GCA_001970955.1_copy5_35430	protist	Stentor coeruleus	0.8854	1591
+protist_Stentor_coeruleus_GCA_001970955.1_copy3_5764	protist	Stentor coeruleus	0.8648	1554
+protist_Stentor_coeruleus_GCA_001970955.1_copy2_370	protist	Stentor coeruleus	0.8681	1560
+protist_Stentor_coeruleus_GCA_001970955.1_copy1_8516	protist	Stentor coeruleus	0.8776	1577
+protist_Stylonychia_lemnae_Ciliate_A0A078ASZ8	protist	Stylonychia lemnae (Ciliate)	0.8859	1592
+protist_Triparma_laevis_f._longispina_A0A9W7DWA0	protist	Triparma laevis f. longispina	0.9226	1658
+protist_Triparma_retinervis_A0A9W7AFH6	protist	Triparma retinervis	0.8831	1587
+protist_Vermamoeba_vermiformis_GCA_020696425.1_copy1_85472	protist	Vermamoeba vermiformis	0.8993	1616
+fungi_Entomophthora_muscae_A0ACC2TPX2	fungi	Entomophthora muscae	0.8848	1590
+fungi_Jimgerdemannia_flammicorona_A0A433QY11	fungi	Jimgerdemannia flammicorona	0.8737	1570
+RYR_Caenorhabditis_elegans_Q94279	RYR	Caenorhabditis elegans	0.8826	1586
+RYR_Drosophila_melanogaster_Fruit_fly_Q24498	RYR	Drosophila melanogaster (Fruit fly)	0.8826	1586
+RYR_Hemicentrotus_pulcherrimus_Sea_urchin__Q8TA74	RYR	Hemicentrotus pulcherrimus (Sea urchin) (Strongylocentrotus pulcherrimus)	0.8854	1591
+RYR_Homo_sapiens_Human_P21817	RYR	Homo sapiens (Human)	0.8826	1586
+RYR_Homo_sapiens_Human_Q92736	RYR	Homo sapiens (Human)	0.8859	1592
+RYR_Homo_sapiens_Human_Q15413	RYR	Homo sapiens (Human)	0.8815	1584

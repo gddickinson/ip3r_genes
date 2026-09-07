@@ -1033,3 +1033,67 @@ picture just was. After the fix, the pore lands exactly on the single most
 conserved stretch of the whole alignment, across a billion years of
 evolution — which is where it should be, and which nothing in the
 correction knew to aim for.
+
+## 2026-09-07 — Which two of the three are closest relatives, at last
+
+**ITPR2 and ITPR3 are each other's nearest relatives. ITPR1 is the odd one
+out.** This is the question the published literature has never settled with
+a proper rooted analysis, and the tree settles it decisively: the two
+alternatives — pairing ITPR1 with either of the others — are rejected with
+p-values around two in a hundred thousand, while the ITPR2/ITPR3 pairing
+survives comfortably. Two independent lines of evidence in the same run
+agree, and the ryanodine receptors root the tree so the statement is about
+ancestry and not merely similarity.
+
+**This overturns what our own alignment predicted.** Last session, raw
+sequence similarity ranked ITPR1 and ITPR2 as the closest pair, and by a
+margin that looked convincing. The tree rejects exactly that pairing
+hardest. The lesson is an old one worth restating: similarity is not
+ancestry. Two proteins can resemble each other because they are close
+relatives, or because one of them has simply changed less than its
+siblings, and only a model of how sequences actually evolve can tell those
+apart. We flagged the similarity result as a hypothesis rather than an
+answer at the time, which is why finding it wrong costs nothing.
+
+**The hagfish and lamprey receptors are older than they looked.** These
+jawless fish sit just outside the group where the three-receptor system
+arose, so what they carry is a direct clue to how the family got its three
+members. Each of the two species has three receptors. They do not, as we
+half-expected, correspond one-to-one with ITPR1, ITPR2 and ITPR3 — nor are
+they a recent local expansion. Instead they fall into two ancient
+groupings, each containing both a hagfish and a lamprey gene. That means
+the duplications that produced them happened *before* hagfish and lampreys
+went their separate ways, several hundred million years ago. Which of them
+corresponds to which of our three receptors is still open. *(pending: S8,
+the gene-neighbourhood analysis)*
+
+**A test we set ourselves failed, and the test was wrong, not the data.**
+We had asked whether a fish carrying two copies of the same receptor puts
+them side by side on the tree, treating anything else as a sign our naming
+was wrong. Neither fish passed. But looking at what actually separates the
+copies, each one sits with the *matching* copy from another fish species —
+which is precisely what you see when the duplication is older than the
+species themselves. It is: these copies date from a whole-genome
+duplication early in fish evolution. The naming was right; our expectation
+was not.
+
+**Every disputed name held up.** Five records sit somewhere the tree cannot
+confidently place. Checked against an entirely separate method — matching
+each protein to the human genome and back again — all five come back
+correctly named. So these are cases of the tree being unsure where to hang
+a branch, not of a database being wrong about what a gene is.
+
+**And a green alga that was missing from the picture.** A reader asked why
+*Volvox carteri*, a well-studied alga known to carry one of these
+receptors, was absent from our figure. It was not absent from our data —
+we had found it, and confirmed it as a genuine gene. It had been dropped
+from the illustration by a rule that judged how long a "typical" family
+member should be. For the algae, that yardstick had quietly been borrowed
+from animals, which are built to a different scale, and the alga was
+discarded for being the wrong size against the wrong ruler. Fixed, the
+whole analysis re-run from scratch, and *Volvox* now sits where it belongs,
+beside its close relative *Chlamydomonas*. Every conclusion above survived
+the re-run unchanged — which is the reassuring half of the story. The
+sobering half is that the error was invisible in every table we had, and
+surfaced only because someone looked at the picture and asked where a
+familiar name had gone.

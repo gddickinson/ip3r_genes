@@ -1,0 +1,8 @@
+statistic	value
+internal nodes	131
+UFBoot >= 95	97
+SH-aLRT >= 80	107
+both thresholds	91
+pct both	69.5
+median UFBoot	100
+median SH-aLRT	99.2
