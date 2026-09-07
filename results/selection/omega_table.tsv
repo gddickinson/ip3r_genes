@@ -1,4 +1,10 @@
 job	set	model	lnL	np	kappa	tree_length	omega	omegas	minutes	description
+bs_alt_ITPR1_w0.5	ITPR1	bs	-189199	116	1.88488	49.6756			468.99	branch-site model A on the ITPR1 stem, initial ω = 0.5
+bs_alt_ITPR1_w1.5	ITPR1	bs	-189199	116	1.88487	49.6754			510.23	branch-site model A on the ITPR1 stem, initial ω = 1.5
+bs_alt_ITPR1_w2.5	ITPR1	bs	-189199	116	1.88487	49.6755			421.2	branch-site model A on the ITPR1 stem, initial ω = 2.5
+bs_alt_ITPR1_w4	ITPR1	bs	-189208	116	1.89047	52.5027			522.89	branch-site model A on the ITPR1 stem, initial ω = 4
+bs_alt_ITPR2_w0.5	ITPR2	bs	-189181	116	1.88347	49.1234			515.17	branch-site model A on the ITPR2 stem, initial ω = 0.5
+bs_null_ITPR2	ITPR2	bs	-189172	115	1.88576	49.3826			433.61	branch-site model A null on the ITPR2 stem
 m0_ITPR1	ITPR1	m0	-56620	37	1.633	11.3653	0.02375	0.0238	0	one-ratio ω within ITPR1
 m0_ITPR1_curated	ITPR1	m0	-53721.6	33	1.61502	11.6183	0.02118	0.0212	2.01	one-ratio ω within ITPR1, curated CDS only (no genome gene models)
 m0_ITPR2	ITPR2	m0	-48941.1	25	1.80902	8.84971	0.04303	0.0430		(recovered from mlc)

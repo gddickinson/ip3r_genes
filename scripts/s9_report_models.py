@@ -216,6 +216,18 @@ def _site_models(lrts: list[dict], beb: list[dict], site: list[dict],
 
 # ---- 4.6 RELAX -------------------------------------------------------------
 
+def _pval(x, num) -> str:
+    """A p-value HyPhy reports as exactly 0 has underflowed double
+    precision, not been measured as zero. Printing `0` invites a reader to
+    treat it as an exact quantity."""
+    v = _f(x)
+    if v is None:
+        return "—"
+    if v <= 0:
+        return "< 1e-300 (underflow)"
+    return num(v, "{:.3g}")
+
+
 def _relax(relax: list[dict], num) -> list[str]:
     out = ["### 4.6 RELAX — is any paralog's selection *relaxed*?", "",
            "codeml's branch models ask whether a foreground's ω differs. "
@@ -227,30 +239,65 @@ def _relax(relax: list[dict], num) -> list[str]:
     if not relax:
         out += ["*not run yet* — `scripts/s9_relax.py`.", ""]
         return out
-    out += ["| test set | k | p | LRT | test branches | reference branches |",
-            "|---|---|---|---|---|---|"]
+    out += ["| test set | k | direction | p | LRT | test branches | "
+            "reference branches |", "|---|---|---|---|---|---|---|"]
     for r in relax:
+        if r.get("status") not in ("ok", None, ""):
+            out.append(f"| {r['paralog']} | — | — | — | — | — | "
+                       f"**{r.get('status')}** |")
+            continue
         out.append(f"| {r['paralog']} | **{num(r['k'], '{:.3f}')}** | "
-                   f"{num(r['p'], '{:.3g}')} | {num(r['LRT'], '{:.2f}')} | "
-                   f"{r['n_test_branches']} | {r['n_reference_branches']} |")
+                   f"{r.get('direction', '')} | {_pval(r['p'], num)} | "
+                   f"{num(r['LRT'], '{:.1f}')} | {r['n_test_branches']} | "
+                   f"{r['n_reference_branches']} |")
     out.append("")
-    sig = [r for r in relax if (_f(r["p"]) or 1.0) < SIG]
+
+    ok = [r for r in relax if r.get("status") in ("ok", None, "")]
+    sig = [r for r in ok if (_f(r["p"]) if _f(r["p"]) is not None else 1.0) < SIG]
     for r in sig:
         k = _f(r["k"])
         if k is None:
             continue
-        out.append(f"- **{r['paralog']}**: k = {num(k, '{:.3f}')}, "
-                   + ("selection is *relaxed* relative to the other two "
-                      "paralogs" if k < 1 else
-                      "selection is *intensified* relative to the other two "
-                      "paralogs")
-                   + f" (p = {num(r['p'], '{:.3g}')}).")
+        out.append(f"- **{r['paralog']}**: k = {num(k, '{:.3f}')} — selection "
+                   + ("is *relaxed*" if k < 1 else "is *intensified*")
+                   + " relative to the other two paralogs "
+                     f"(p {_pval(r['p'], num)}).")
     if sig:
         out.append("")
-    else:
+    intens = [r for r in sig if (_f(r["k"]) or 1) > 1]
+    relaxed = [r for r in sig if (_f(r["k"]) or 1) < 1]
+    if intens and relaxed and len(sig) == len(ok):
+        names_i = ", ".join(r["paralog"] for r in intens)
+        names_r = ", ".join(r["paralog"] for r in relaxed)
+        out += [f"**The three copies have not been held to the same standard "
+                f"since 2R.** {names_i} is under *intensified* selection "
+                f"relative to the other two, and {names_r} under *relaxed* "
+                "selection relative to theirs. That is the same ordering "
+                "§4.1's one-ratio ω gives, arrived at by a different "
+                "statistic on a different model — ω compares point "
+                "estimates, k compares the whole distribution — so the two "
+                "are a check on each other rather than one number told "
+                "twice.", ""]
+    elif not sig:
         out += ["No paralog's ω distribution differs from the other two "
                 "under RELAX. The three copies have been held to the same "
                 "standard since 2R.", ""]
+    failed = [r for r in relax if r.get("status") not in ("ok", None, "")]
+    if failed:
+        out += ["Runs whose output could not be read are marked in the "
+                "status column rather than reported as `k = None`: a failed "
+                "parse beside two real answers reads as a negative result, "
+                "and it is not one.", ""]
+    repaired = sum(int(r.get("nonfinite_repaired") or 0) for r in relax)
+    if repaired:
+        out += [f"*{repaired} non-finite literal(s) repaired while reading "
+                "HyPhy's json.* The partitioned descriptive model estimates "
+                "a per-branch ω, and a branch with no synonymous change gets "
+                "an infinite one, which HyPhy writes as the bare token "
+                "`inf` — not legal JSON. It is normal output, but the "
+                "failure it causes is silent in the wrong direction: the "
+                "analysis succeeds and the *parse* throws. On the first run "
+                "that turned ITPR1's result into a blank row.", ""]
     out += ["The unlabelled vertebrate tips the S7 tree places in no paralog "
             "clade are left **unlabelled** in these runs rather than swept "
             "into the reference: a branch whose paralog identity is "

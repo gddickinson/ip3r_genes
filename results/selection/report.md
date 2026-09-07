@@ -149,7 +149,21 @@ It is also consistent with everything else here: §4.1 puts ω between 0.02 and 
 
 codeml's branch models ask whether a foreground's ω differs. RELAX asks whether the whole ω distribution on the test branches is pulled towards ω = 1 (relaxation, k < 1) or away from it (intensification, k > 1). In a family where every ω is far below 1, that is the sharper question, and it comes with its own test.
 
-*not run yet* — `scripts/s9_relax.py`.
+| test set | k | direction | p | LRT | test branches | reference branches |
+|---|---|---|---|---|---|---|
+| ITPR1 | **9.359** | intensified | < 1e-300 (underflow) | 11317.2 | 37 | 63 |
+| ITPR2 | **0.908** | relaxed | 4.08e-11 | 43.6 | 25 | 74 |
+| ITPR3 | **0.836** | relaxed | < 1e-300 (underflow) | 199.5 | 37 | 62 |
+
+- **ITPR1**: k = 9.359 — selection is *intensified* relative to the other two paralogs (p < 1e-300 (underflow)).
+- **ITPR2**: k = 0.908 — selection is *relaxed* relative to the other two paralogs (p 4.08e-11).
+- **ITPR3**: k = 0.836 — selection is *relaxed* relative to the other two paralogs (p < 1e-300 (underflow)).
+
+**The three copies have not been held to the same standard since 2R.** ITPR1 is under *intensified* selection relative to the other two, and ITPR2, ITPR3 under *relaxed* selection relative to theirs. That is the same ordering §4.1's one-ratio ω gives, arrived at by a different statistic on a different model — ω compares point estimates, k compares the whole distribution — so the two are a check on each other rather than one number told twice.
+
+*1 non-finite literal(s) repaired while reading HyPhy's json.* The partitioned descriptive model estimates a per-branch ω, and a branch with no synonymous change gets an infinite one, which HyPhy writes as the bare token `inf` — not legal JSON. It is normal output, but the failure it causes is silent in the wrong direction: the analysis succeeds and the *parse* throws. On the first run that turned ITPR1's result into a blank row.
+
+The unlabelled vertebrate tips the S7 tree places in no paralog clade are left **unlabelled** in these runs rather than swept into the reference: a branch whose paralog identity is unresolved is not evidence about either side of the contrast.
 
 ## 5. What this does not establish
 

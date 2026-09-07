@@ -5,16 +5,17 @@
     2.5,
     4.0
   ],
-  "n_jobs": 19,
-  "n_lrt": 6,
+  "n_jobs": 25,
+  "n_lrt": 7,
   "saturated_ds_bar": 1.5,
   "sha256": {
-    "beb_sites.tsv": "ce95a864164a4ac2134f229d13e83f80c9e256d35da30b63095c64a837cb52ec",
-    "bs_restarts.tsv": "4a2d7c881e323058cb9b6b0ca32c9a26a7005fadabec8d8906fe36f7bad57bf4",
+    "beb_sites.tsv": "9a6ff23d5feb2b76a8c35b6a904cadd7f27e1df06d615a4b735b763641bdc134",
+    "bs_restarts.tsv": "76eadf777f8de61d1645e0d3347a21fd9e88e39b65ac2a7da1511e5c00be3bb8",
     "cds_status.tsv": "8a85d809836293436a95dbbf7dd12836748d767df640c8ab04876a3f6d3eb1e0",
-    "lrt_table.tsv": "f92789bce33e7e342cab05e925a9b80b5e35bf801b7befd33a2b69773400b3f8",
-    "omega_table.tsv": "11c7bdc0a74cd58e9d972bbd15cb371caaff4cfc5122711d3c8332278a85683d",
+    "lrt_table.tsv": "49777249bb05fe3a136f62e6d70bb8d7d5b2da92fadbe53ff7aef1275e86e7ca",
+    "omega_table.tsv": "150107173e119f14f5a867a23bf86e96d7b8e2bc256c0284c9db0cc4e313b2d2",
     "pairwise_dnds.tsv": "83e41cc52a3aeffa7179aba7d3ec885e826d983d71a791b03c42f3f2e7890867",
+    "relax_table.tsv": "b6f5d79b9a8611ce85d56adbd986f59a9cfc751e45518f08ddb5838c2e4ee1d8",
     "site_models.tsv": "c43741cf54c6225cc0d782bac27f148e227a3beaba88aff49dca4863081a5d36",
     "tip_codes.tsv": "abd3a9b4414c664124239593eb243ca5fff983fc86041aa7483c93b681fd7e4c"
   }

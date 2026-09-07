@@ -1,0 +1,4 @@
+paralog	k	p	LRT	direction	n_test_branches	n_reference_branches	nonfinite_repaired	status	minutes
+ITPR1	9.358685495606336	0	11317.19066756475	intensified	37	63	1	ok	0.0
+ITPR2	0.9084665220829636	4.080291660102375e-11	43.57494638708886	relaxed	25	74	0	ok	0.0
+ITPR3	0.83558929131743	0	199.4522135477746	relaxed	37	62	0	ok	0.0

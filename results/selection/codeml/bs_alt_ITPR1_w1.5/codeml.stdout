@@ -1,0 +1,394 @@
+0122  72.1604 CC    189225.781245  1 0.0003 19358 | 2/116
+160 h-m-p  0.0003 0.0033  56.7155 C     189225.650906  0 0.0003 19477 | 2/116
+161 h-m-p  0.0003 0.0145  52.0248 YC    189225.572106  1 0.0002 19597 | 2/116
+162 h-m-p  0.0003 0.0050  40.3350 C     189225.493536  0 0.0003 19716 | 2/116
+163 h-m-p  0.0004 0.0220  30.3349 C     189225.431859  0 0.0004 19835 | 2/116
+164 h-m-p  0.0004 0.0328  28.2554 CC    189225.361514  1 0.0005 19956 | 2/116
+165 h-m-p  0.0004 0.0560  34.5555 C     189225.284724  0 0.0004 20075 | 2/116
+166 h-m-p  0.0004 0.0169  37.3595 CC    189225.186402  1 0.0005 20196 | 2/116
+167 h-m-p  0.0005 0.0192  39.6063 C     189225.097602  0 0.0004 20315 | 2/116
+168 h-m-p  0.0004 0.0140  40.4745 C     189224.997808  0 0.0004 20434 | 2/116
+169 h-m-p  0.0005 0.0204  36.4831 CC    189224.828239  1 0.0008 20555 | 2/116
+170 h-m-p  0.0005 0.0340  62.2143 C     189224.632988  0 0.0005 20674 | 2/116
+171 h-m-p  0.0005 0.0239  63.6173 CC    189224.317563  1 0.0007 20795 | 2/116
+172 h-m-p  0.0005 0.0075 101.7791 YC    189223.677214  1 0.0009 20915 | 2/116
+173 h-m-p  0.0007 0.0092 133.0711 CC    189223.133368  1 0.0006 21036 | 2/116
+174 h-m-p  0.0006 0.0151 137.9929 CC    189222.315615  1 0.0008 21157 | 2/116
+175 h-m-p  0.0005 0.0115 236.2205 C     189221.524720  0 0.0005 21276 | 2/116
+176 h-m-p  0.0006 0.0129 185.2160 YC    189220.160422  1 0.0010 21396 | 2/116
+177 h-m-p  0.0012 0.0104 159.8560 YC    189219.076597  1 0.0009 21516 | 2/116
+178 h-m-p  0.0006 0.0076 241.5143 CC    189218.168642  1 0.0005 21637 | 2/116
+179 h-m-p  0.0008 0.0098 158.4417 CC    189217.351926  1 0.0007 21758 | 2/116
+180 h-m-p  0.0008 0.0182 138.5451 CC    189216.660333  1 0.0007 21879 | 2/116
+181 h-m-p  0.0009 0.0243 104.8544 C     189216.017077  0 0.0009 21998 | 2/116
+182 h-m-p  0.0010 0.0171  95.6929 YC    189215.653421  1 0.0006 22118 | 2/116
+183 h-m-p  0.0009 0.0135  58.0976 CC    189215.350497  1 0.0008 22239 | 2/116
+184 h-m-p  0.0010 0.0313  48.4212 YC    189215.149419  1 0.0007 22359 | 2/116
+185 h-m-p  0.0007 0.0115  49.5437 YC    189215.017291  1 0.0005 22479 | 2/116
+186 h-m-p  0.0009 0.0893  24.0405 CC    189214.918544  1 0.0008 22600 | 2/116
+187 h-m-p  0.0013 0.0447  14.9753 CC    189214.817432  1 0.0015 22721 | 2/116
+188 h-m-p  0.0008 0.0397  26.3206 C     189214.717828  0 0.0009 22840 | 2/116
+189 h-m-p  0.0010 0.0618  22.6393 C     189214.616289  0 0.0011 22959 | 2/116
+190 h-m-p  0.0012 0.0252  21.0808 YC    189214.546670  1 0.0009 23079 | 2/116
+191 h-m-p  0.0010 0.0621  18.8442 C     189214.481927  0 0.0009 23198 | 2/116
+192 h-m-p  0.0008 0.0594  21.8617 YC    189214.336751  1 0.0018 23318 | 2/116
+193 h-m-p  0.0011 0.0265  37.6305 CC    189214.128494  1 0.0016 23439 | 2/116
+194 h-m-p  0.0012 0.0501  50.4686 CC    189213.895853  1 0.0013 23560 | 2/116
+195 h-m-p  0.0010 0.0081  66.4638 CC    189213.609315  1 0.0012 23681 | 2/116
+196 h-m-p  0.0010 0.0524  83.8965 CC    189213.209015  1 0.0014 23802 | 2/116
+197 h-m-p  0.0009 0.0111 131.4351 YC    189212.394214  1 0.0017 23922 | 2/116
+198 h-m-p  0.0018 0.0349 126.0909 YC    189211.880091  1 0.0012 24042 | 2/116
+199 h-m-p  0.0016 0.0245  91.3344 YC    189211.493656  1 0.0012 24162 | 2/116
+200 h-m-p  0.0010 0.0644 114.9998 CC    189210.899627  1 0.0015 24283 | 2/116
+201 h-m-p  0.0021 0.0607  82.8626 CC    189210.271830  1 0.0023 24404 | 2/116
+202 h-m-p  0.0043 0.0985  44.6519 YC    189210.016128  1 0.0018 24524 | 2/116
+203 h-m-p  0.0017 0.0701  46.9303 CC    189209.741970  1 0.0019 24645 | 2/116
+204 h-m-p  0.0039 0.1480  22.9255 CC    189209.663440  1 0.0012 24766 | 2/116
+205 h-m-p  0.0022 0.1310  12.4841 YC    189209.610588  1 0.0016 24886 | 2/116
+206 h-m-p  0.0024 0.3206   8.6951 C     189209.565859  0 0.0022 25005 | 2/116
+207 h-m-p  0.0027 0.2903   7.1069 YC    189209.538567  1 0.0017 25125 | 2/116
+208 h-m-p  0.0016 0.7012   7.1201 +CC   189209.440018  1 0.0056 25247 | 2/116
+209 h-m-p  0.0012 0.0939  32.2476 CC    189209.279819  1 0.0020 25368 | 2/116
+210 h-m-p  0.0027 0.1895  23.5707 CC    189209.085813  1 0.0032 25489 | 2/116
+211 h-m-p  0.0019 0.1346  39.4867 CC    189208.809892  1 0.0027 25610 | 2/116
+212 h-m-p  0.0014 0.0774  74.6971 CC    189208.440101  1 0.0019 25731 | 2/116
+213 h-m-p  0.0022 0.0881  64.0791 CC    189208.006313  1 0.0026 25852 | 2/116
+214 h-m-p  0.0026 0.0720  64.1872 YC    189207.756681  1 0.0015 25972 | 2/116
+215 h-m-p  0.0029 0.1190  33.4107 CC    189207.487928  1 0.0033 26093 | 2/116
+216 h-m-p  0.0038 0.0759  29.6316 YC    189207.338093  1 0.0023 26213 | 2/116
+217 h-m-p  0.0031 0.1104  21.4459 YC    189207.266746  1 0.0017 26333 | 2/116
+218 h-m-p  0.0035 0.2062  10.2417 YC    189207.237382  1 0.0018 26453 | 2/116
+219 h-m-p  0.0032 0.3523   5.6662 Y     189207.228009  0 0.0014 26572 | 2/116
+220 h-m-p  0.0026 0.4037   3.0179 Y     189207.223394  0 0.0018 26691 | 2/116
+221 h-m-p  0.0024 1.1827   2.9145 YC    189207.214167  1 0.0045 26811 | 2/116
+222 h-m-p  0.0029 0.3785   4.5111 Y     189207.208363  0 0.0020 26930 | 2/116
+223 h-m-p  0.0018 0.8864   5.1756 +YC   189207.192120  1 0.0048 27051 | 2/116
+224 h-m-p  0.0021 0.3628  11.9543 YC    189207.160264  1 0.0041 27171 | 2/116
+225 h-m-p  0.0046 0.3791  10.7309 +YC   189207.074624  1 0.0126 27292 | 2/116
+226 h-m-p  0.0021 0.0604  64.7098 YC    189206.882243  1 0.0047 27412 | 2/116
+227 h-m-p  0.0022 0.0262 137.2847 CC    189206.630821  1 0.0029 27533 | 2/116
+228 h-m-p  0.0018 0.0143 224.2467 CCC   189206.249520  2 0.0026 27656 | 2/116
+229 h-m-p  0.0099 0.0495  53.2287 C     189206.177164  0 0.0022 27775 | 2/116
+230 h-m-p  0.0046 0.1012  25.2932 YC    189206.123062  1 0.0037 27895 | 2/116
+231 h-m-p  0.0185 0.5042   5.0294 C     189206.109152  0 0.0059 28014 | 2/116
+232 h-m-p  0.0023 0.1915  12.8873 YC    189206.081467  1 0.0048 28134 | 2/116
+233 h-m-p  0.0027 0.1050  22.6176 YC    189206.016387  1 0.0065 28254 | 2/116
+234 h-m-p  0.0024 0.0356  62.2188 +YCCCC 189205.608842  4 0.0119 28381 | 2/116
+235 h-m-p  0.0077 0.0387  38.5085 YC    189205.521540  1 0.0049 28501 | 2/116
+236 h-m-p  0.0392 0.2970   4.8341 YC    189205.498824  1 0.0075 28621 | 2/116
+237 h-m-p  0.0104 0.4637   3.4890 +YC   189205.393153  1 0.0295 28742 | 2/116
+238 h-m-p  0.0128 0.2042   8.0532 +YC   189204.992736  1 0.0349 28863 | 2/116
+239 h-m-p  0.0092 0.0464  30.4883 +YC   189203.728431  1 0.0231 28984 | 2/116
+240 h-m-p  0.2166 1.0832   2.8812 -CC   189203.603203  1 0.0184 29106 | 2/116
+241 h-m-p  0.0080 0.5589   6.6309 ++YC  189201.698755  1 0.0922 29228 | 2/116
+242 h-m-p  0.0854 0.4271   6.6018 -C    189201.627841  0 0.0053 29348 | 2/116
+243 h-m-p  0.0443 2.2607   0.7921 ++YYC 189200.502005  2 0.5831 29471 | 2/116
+244 h-m-p  1.6000 8.0000   0.2759 YC    189199.697305  1 0.9531 29705 | 2/116
+245 h-m-p  0.9195 8.0000   0.2860 YC    189199.484212  1 0.9195 29939 | 2/116
+246 h-m-p  1.0070 8.0000   0.2612 CC    189199.287155  1 1.4098 30174 | 2/116
+247 h-m-p  1.2391 8.0000   0.2972 CCC   189199.140618  2 1.4421 30411 | 2/116
+248 h-m-p  1.6000 8.0000   0.2427 C     189199.036513  0 1.6000 30644 | 2/116
+249 h-m-p  0.9885 8.0000   0.3928 C     189198.977434  0 1.0199 30877 | 2/116
+250 h-m-p  1.0216 8.0000   0.3921 YC    189198.934816  1 1.6535 31111 | 2/116
+251 h-m-p  1.6000 8.0000   0.1962 C     189198.909028  0 2.3752 31344 | 2/116
+252 h-m-p  1.2527 8.0000   0.3721 Y     189198.898683  0 0.8109 31577 | 2/116
+253 h-m-p  1.0061 8.0000   0.2999 C     189198.893066  0 1.0061 31810 | 2/116
+254 h-m-p  0.6106 8.0000   0.4941 C     189198.889794  0 0.6106 32043 | 2/116
+255 h-m-p  1.3763 8.0000   0.2192 C     189198.885473  0 1.9361 32276 | 2/116
+256 h-m-p  1.6000 8.0000   0.1739 C     189198.883437  0 1.6000 32509 | 2/116
+257 h-m-p  1.6000 8.0000   0.0638 C     189198.882066  0 2.0734 32742 | 2/116
+258 h-m-p  0.6858 8.0000   0.1929 +Y    189198.879872  0 2.2462 32976 | 2/116
+259 h-m-p  1.6000 8.0000   0.0205 +Y    189198.875279  0 4.0007 33210 | 2/116
+260 h-m-p  0.5447 8.0000   0.1508 ++    189198.854092  m 8.0000 33443 | 2/116
+261 h-m-p  1.4399 7.1993   0.7060 Y     189198.848746  0 0.5870 33676 | 2/116
+262 h-m-p  1.2268 8.0000   0.3378 C     189198.845469  0 0.4224 33909 | 2/116
+263 h-m-p  0.7856 8.0000   0.1816 C     189198.844696  0 1.1571 34142 | 2/116
+264 h-m-p  1.6000 8.0000   0.0397 C     189198.844519  0 1.6129 34375 | 2/116
+265 h-m-p  1.6000 8.0000   0.0014 Y     189198.844508  0 1.2052 34608 | 2/116
+266 h-m-p  0.7458 8.0000   0.0023 -C    189198.844508  0 0.0466 34842 | 2/116
+267 h-m-p  0.0727 8.0000   0.0015 -Y    189198.844508  0 0.0045 35076 | 2/116
+268 h-m-p  0.0160 8.0000   0.0047 -------------..  | 2/116
+269 h-m-p  0.0000 0.0054   0.4514 -------- | 2/116
+270 h-m-p  0.0000 0.0054   0.4514 --------
+Out..
+lnL  = -189198.844508
+35799 lfun, 178995 eigenQcodon, 15894756 P(t)
+
+BEBing (dim = 4).  This may take many minutes.
+Trying to get 0.6M memory in lfunNSsites_ACD
+
+Calculating f(x_h|w) for 121 w's
+
+	   10 / 121 sets.  w for branches:  0.9500 0.9500 lnfX = -324874.8582
+	   20 / 121 sets.  w for branches:  0.0500 9.5000 lnfX = -192379.6881
+	   30 / 121 sets.  w for branches:  0.1500 9.5000 lnfX = -206842.9364
+	   40 / 121 sets.  w for branches:  0.2500 9.5000 lnfX = -225656.4478
+	   50 / 121 sets.  w for branches:  0.3500 9.5000 lnfX = -243939.7541
+	   60 / 121 sets.  w for branches:  0.4500 9.5000 lnfX = -260863.6789
+	   70 / 121 sets.  w for branches:  0.5500 9.5000 lnfX = -276314.7639
+	   80 / 121 sets.  w for branches:  0.6500 9.5000 lnfX = -290377.3978
+	   90 / 121 sets.  w for branches:  0.7500 9.5000 lnfX = -303186.4420
+	  100 / 121 sets.  w for branches:  0.8500 9.5000 lnfX = -314879.8697
+	  110 / 121 sets.  w for branches:  0.9500 9.5000 lnfX = -325584.6174
+	  120 / 121 sets.  w for branches:  1.0000 9.5000 lnfX = -330601.9165
+	  121 / 121 sets.  w for branches:  1.0000 10.5000 lnfX = -330664.5088
+Time: 8:30:12
+Calculating the marginal likelihood f(X).
+	1000 / 10000 grid points, 8:30:12
+	2000 / 10000 grid points, 8:30:12
+	3000 / 10000 grid points, 8:30:12
+	4000 / 10000 grid points, 8:30:12
+	5000 / 10000 grid points, 8:30:12
+	6000 / 10000 grid points, 8:30:12
+	7000 / 10000 grid points, 8:30:12
+	8000 / 10000 grid points, 8:30:12
+	9000 / 10000 grid points, 8:30:12
+	10000 / 10000 grid points, 8:30:12
+	log(fX) = -189876.807602  S = -186239.189757 -3634.628643
+Calculating f(w_k|X), posterior for site classes for each site.  Slow!
+
+	did  10 / 2442 site patterns  8:30:12
+	did  20 / 2442 site patterns  8:30:12
+	did  30 / 2442 site patterns  8:30:12
+	did  40 / 2442 site patterns  8:30:12
+	did  50 / 2442 site patterns  8:30:12
+	did  60 / 2442 site patterns  8:30:12
+	did  70 / 2442 site patterns  8:30:12
+	did  80 / 2442 site patterns  8:30:12
+	did  90 / 2442 site patterns  8:30:12
+	did 100 / 2442 site patterns  8:30:12
+	did 110 / 2442 site patterns  8:30:12
+	did 120 / 2442 site patterns  8:30:12
+	did 130 / 2442 site patterns  8:30:12
+	did 140 / 2442 site patterns  8:30:12
+	did 150 / 2442 site patterns  8:30:12
+	did 160 / 2442 site patterns  8:30:12
+	did 170 / 2442 site patterns  8:30:12
+	did 180 / 2442 site patterns  8:30:12
+	did 190 / 2442 site patterns  8:30:12
+	did 200 / 2442 site patterns  8:30:12
+	did 210 / 2442 site patterns  8:30:12
+	did 220 / 2442 site patterns  8:30:12
+	did 230 / 2442 site patterns  8:30:12
+	did 240 / 2442 site patterns  8:30:12
+	did 250 / 2442 site patterns  8:30:12
+	did 260 / 2442 site patterns  8:30:12
+	did 270 / 2442 site patterns  8:30:12
+	did 280 / 2442 site patterns  8:30:12
+	did 290 / 2442 site patterns  8:30:12
+	did 300 / 2442 site patterns  8:30:12
+	did 310 / 2442 site patterns  8:30:12
+	did 320 / 2442 site patterns  8:30:12
+	did 330 / 2442 site patterns  8:30:12
+	did 340 / 2442 site patterns  8:30:12
+	did 350 / 2442 site patterns  8:30:12
+	did 360 / 2442 site patterns  8:30:12
+	did 370 / 2442 site patterns  8:30:12
+	did 380 / 2442 site patterns  8:30:12
+	did 390 / 2442 site patterns  8:30:12
+	did 400 / 2442 site patterns  8:30:12
+	did 410 / 2442 site patterns  8:30:12
+	did 420 / 2442 site patterns  8:30:12
+	did 430 / 2442 site patterns  8:30:12
+	did 440 / 2442 site patterns  8:30:12
+	did 450 / 2442 site patterns  8:30:12
+	did 460 / 2442 site patterns  8:30:12
+	did 470 / 2442 site patterns  8:30:12
+	did 480 / 2442 site patterns  8:30:12
+	did 490 / 2442 site patterns  8:30:12
+	did 500 / 2442 site patterns  8:30:12
+	did 510 / 2442 site patterns  8:30:12
+	did 520 / 2442 site patterns  8:30:12
+	did 530 / 2442 site patterns  8:30:12
+	did 540 / 2442 site patterns  8:30:12
+	did 550 / 2442 site patterns  8:30:12
+	did 560 / 2442 site patterns  8:30:12
+	did 570 / 2442 site patterns  8:30:12
+	did 580 / 2442 site patterns  8:30:12
+	did 590 / 2442 site patterns  8:30:12
+	did 600 / 2442 site patterns  8:30:12
+	did 610 / 2442 site patterns  8:30:12
+	did 620 / 2442 site patterns  8:30:12
+	did 630 / 2442 site patterns  8:30:12
+	did 640 / 2442 site patterns  8:30:12
+	did 650 / 2442 site patterns  8:30:12
+	did 660 / 2442 site patterns  8:30:12
+	did 670 / 2442 site patterns  8:30:12
+	did 680 / 2442 site patterns  8:30:12
+	did 690 / 2442 site patterns  8:30:12
+	did 700 / 2442 site patterns  8:30:12
+	did 710 / 2442 site patterns  8:30:12
+	did 720 / 2442 site patterns  8:30:12
+	did 730 / 2442 site patterns  8:30:12
+	did 740 / 2442 site patterns  8:30:12
+	did 750 / 2442 site patterns  8:30:12
+	did 760 / 2442 site patterns  8:30:12
+	did 770 / 2442 site patterns  8:30:12
+	did 780 / 2442 site patterns  8:30:12
+	did 790 / 2442 site patterns  8:30:12
+	did 800 / 2442 site patterns  8:30:12
+	did 810 / 2442 site patterns  8:30:12
+	did 820 / 2442 site patterns  8:30:12
+	did 830 / 2442 site patterns  8:30:12
+	did 840 / 2442 site patterns  8:30:12
+	did 850 / 2442 site patterns  8:30:12
+	did 860 / 2442 site patterns  8:30:12
+	did 870 / 2442 site patterns  8:30:12
+	did 880 / 2442 site patterns  8:30:12
+	did 890 / 2442 site patterns  8:30:12
+	did 900 / 2442 site patterns  8:30:12
+	did 910 / 2442 site patterns  8:30:12
+	did 920 / 2442 site patterns  8:30:12
+	did 930 / 2442 site patterns  8:30:12
+	did 940 / 2442 site patterns  8:30:12
+	did 950 / 2442 site patterns  8:30:12
+	did 960 / 2442 site patterns  8:30:12
+	did 970 / 2442 site patterns  8:30:12
+	did 980 / 2442 site patterns  8:30:12
+	did 990 / 2442 site patterns  8:30:12
+	did 1000 / 2442 site patterns  8:30:12
+	did 1010 / 2442 site patterns  8:30:12
+	did 1020 / 2442 site patterns  8:30:12
+	did 1030 / 2442 site patterns  8:30:12
+	did 1040 / 2442 site patterns  8:30:12
+	did 1050 / 2442 site patterns  8:30:12
+	did 1060 / 2442 site patterns  8:30:12
+	did 1070 / 2442 site patterns  8:30:12
+	did 1080 / 2442 site patterns  8:30:12
+	did 1090 / 2442 site patterns  8:30:12
+	did 1100 / 2442 site patterns  8:30:12
+	did 1110 / 2442 site patterns  8:30:12
+	did 1120 / 2442 site patterns  8:30:12
+	did 1130 / 2442 site patterns  8:30:12
+	did 1140 / 2442 site patterns  8:30:12
+	did 1150 / 2442 site patterns  8:30:12
+	did 1160 / 2442 site patterns  8:30:12
+	did 1170 / 2442 site patterns  8:30:12
+	did 1180 / 2442 site patterns  8:30:12
+	did 1190 / 2442 site patterns  8:30:12
+	did 1200 / 2442 site patterns  8:30:12
+	did 1210 / 2442 site patterns  8:30:12
+	did 1220 / 2442 site patterns  8:30:12
+	did 1230 / 2442 site patterns  8:30:12
+	did 1240 / 2442 site patterns  8:30:12
+	did 1250 / 2442 site patterns  8:30:12
+	did 1260 / 2442 site patterns  8:30:12
+	did 1270 / 2442 site patterns  8:30:12
+	did 1280 / 2442 site patterns  8:30:12
+	did 1290 / 2442 site patterns  8:30:12
+	did 1300 / 2442 site patterns  8:30:12
+	did 1310 / 2442 site patterns  8:30:12
+	did 1320 / 2442 site patterns  8:30:12
+	did 1330 / 2442 site patterns  8:30:12
+	did 1340 / 2442 site patterns  8:30:12
+	did 1350 / 2442 site patterns  8:30:12
+	did 1360 / 2442 site patterns  8:30:12
+	did 1370 / 2442 site patterns  8:30:12
+	did 1380 / 2442 site patterns  8:30:12
+	did 1390 / 2442 site patterns  8:30:12
+	did 1400 / 2442 site patterns  8:30:12
+	did 1410 / 2442 site patterns  8:30:12
+	did 1420 / 2442 site patterns  8:30:12
+	did 1430 / 2442 site patterns  8:30:12
+	did 1440 / 2442 site patterns  8:30:12
+	did 1450 / 2442 site patterns  8:30:12
+	did 1460 / 2442 site patterns  8:30:12
+	did 1470 / 2442 site patterns  8:30:12
+	did 1480 / 2442 site patterns  8:30:12
+	did 1490 / 2442 site patterns  8:30:12
+	did 1500 / 2442 site patterns  8:30:12
+	did 1510 / 2442 site patterns  8:30:12
+	did 1520 / 2442 site patterns  8:30:12
+	did 1530 / 2442 site patterns  8:30:13
+	did 1540 / 2442 site patterns  8:30:13
+	did 1550 / 2442 site patterns  8:30:13
+	did 1560 / 2442 site patterns  8:30:13
+	did 1570 / 2442 site patterns  8:30:13
+	did 1580 / 2442 site patterns  8:30:13
+	did 1590 / 2442 site patterns  8:30:13
+	did 1600 / 2442 site patterns  8:30:13
+	did 1610 / 2442 site patterns  8:30:13
+	did 1620 / 2442 site patterns  8:30:13
+	did 1630 / 2442 site patterns  8:30:13
+	did 1640 / 2442 site patterns  8:30:13
+	did 1650 / 2442 site patterns  8:30:13
+	did 1660 / 2442 site patterns  8:30:13
+	did 1670 / 2442 site patterns  8:30:13
+	did 1680 / 2442 site patterns  8:30:13
+	did 1690 / 2442 site patterns  8:30:13
+	did 1700 / 2442 site patterns  8:30:13
+	did 1710 / 2442 site patterns  8:30:13
+	did 1720 / 2442 site patterns  8:30:13
+	did 1730 / 2442 site patterns  8:30:13
+	did 1740 / 2442 site patterns  8:30:13
+	did 1750 / 2442 site patterns  8:30:13
+	did 1760 / 2442 site patterns  8:30:13
+	did 1770 / 2442 site patterns  8:30:13
+	did 1780 / 2442 site patterns  8:30:13
+	did 1790 / 2442 site patterns  8:30:13
+	did 1800 / 2442 site patterns  8:30:13
+	did 1810 / 2442 site patterns  8:30:13
+	did 1820 / 2442 site patterns  8:30:13
+	did 1830 / 2442 site patterns  8:30:13
+	did 1840 / 2442 site patterns  8:30:13
+	did 1850 / 2442 site patterns  8:30:13
+	did 1860 / 2442 site patterns  8:30:13
+	did 1870 / 2442 site patterns  8:30:13
+	did 1880 / 2442 site patterns  8:30:13
+	did 1890 / 2442 site patterns  8:30:13
+	did 1900 / 2442 site patterns  8:30:13
+	did 1910 / 2442 site patterns  8:30:13
+	did 1920 / 2442 site patterns  8:30:13
+	did 1930 / 2442 site patterns  8:30:13
+	did 1940 / 2442 site patterns  8:30:13
+	did 1950 / 2442 site patterns  8:30:13
+	did 1960 / 2442 site patterns  8:30:13
+	did 1970 / 2442 site patterns  8:30:13
+	did 1980 / 2442 site patterns  8:30:13
+	did 1990 / 2442 site patterns  8:30:13
+	did 2000 / 2442 site patterns  8:30:13
+	did 2010 / 2442 site patterns  8:30:13
+	did 2020 / 2442 site patterns  8:30:13
+	did 2030 / 2442 site patterns  8:30:13
+	did 2040 / 2442 site patterns  8:30:13
+	did 2050 / 2442 site patterns  8:30:13
+	did 2060 / 2442 site patterns  8:30:13
+	did 2070 / 2442 site patterns  8:30:13
+	did 2080 / 2442 site patterns  8:30:13
+	did 2090 / 2442 site patterns  8:30:13
+	did 2100 / 2442 site patterns  8:30:13
+	did 2110 / 2442 site patterns  8:30:13
+	did 2120 / 2442 site patterns  8:30:13
+	did 2130 / 2442 site patterns  8:30:13
+	did 2140 / 2442 site patterns  8:30:13
+	did 2150 / 2442 site patterns  8:30:13
+	did 2160 / 2442 site patterns  8:30:13
+	did 2170 / 2442 site patterns  8:30:13
+	did 2180 / 2442 site patterns  8:30:13
+	did 2190 / 2442 site patterns  8:30:13
+	did 2200 / 2442 site patterns  8:30:13
+	did 2210 / 2442 site patterns  8:30:13
+	did 2220 / 2442 site patterns  8:30:13
+	did 2230 / 2442 site patterns  8:30:13
+	did 2240 / 2442 site patterns  8:30:13
+	did 2250 / 2442 site patterns  8:30:13
+	did 2260 / 2442 site patterns  8:30:13
+	did 2270 / 2442 site patterns  8:30:13
+	did 2280 / 2442 site patterns  8:30:13
+	did 2290 / 2442 site patterns  8:30:13
+	did 2300 / 2442 site patterns  8:30:13
+	did 2310 / 2442 site patterns  8:30:13
+	did 2320 / 2442 site patterns  8:30:13
+	did 2330 / 2442 site patterns  8:30:13
+	did 2340 / 2442 site patterns  8:30:13
+	did 2350 / 2442 site patterns  8:30:13
+	did 2360 / 2442 site patterns  8:30:13
+	did 2370 / 2442 site patterns  8:30:13
+	did 2380 / 2442 site patterns  8:30:13
+	did 2390 / 2442 site patterns  8:30:13
+	did 2400 / 2442 site patterns  8:30:13
+	did 2410 / 2442 site patterns  8:30:13
+	did 2420 / 2442 site patterns  8:30:13
+	did 2430 / 2442 site patterns  8:30:13
+	did 2440 / 2442 site patterns  8:30:13
+	did 2442 / 2442 site patterns  8:30:13
