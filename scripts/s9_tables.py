@@ -241,6 +241,46 @@ def beb_row(job: str) -> dict | None:
             "median_p": probs[len(probs) // 2], "max_p": probs[-1]}
 
 
+# ---- site classes ----------------------------------------------------------
+
+SITE_COLS = ["job", "set", "n_classes", "omegas", "props", "omega_max",
+             "p_omega_max", "class_above_one"]
+
+
+def site_class_row(job: str) -> dict | None:
+    """The fitted ω distribution of a site model, and whether any class of
+    it is actually **above** 1.
+
+    This is the difference between "M8 beats M7" and "there is positive
+    selection", and they are not the same statement. M8 adds one class to
+    M7's beta distribution, and that class is free to sit anywhere in
+    [0, ∞); codeml holds it at exactly 1.0 when the data want a class of
+    *unconstrained* sites rather than a positively selected one. A pipeline
+    that reports the LRT without the class it is testing turns "0.4 % of
+    sites are free to drift" into "this gene is under positive selection".
+    """
+    mlc = CODEML_DIR / job / "mlc"
+    if not mlc.exists():
+        return None
+    text = mlc.read_text()
+    m_p = re.search(r"^p:\s+([\d.eE+\- ]+)$", text, re.M)
+    m_w = re.search(r"^w:\s+([\d.eE+\- ]+)$", text, re.M)
+    if not m_p or not m_w:
+        return None
+    props = [float(x) for x in m_p.group(1).split()]
+    omegas = [float(x) for x in m_w.group(1).split()]
+    if not omegas or len(props) != len(omegas):
+        return None
+    i = max(range(len(omegas)), key=lambda k: omegas[k])
+    return {"job": job, "set": _set_of(job), "n_classes": len(omegas),
+            "omegas": ";".join(f"{x:.5f}" for x in omegas),
+            "props": ";".join(f"{x:.5f}" for x in props),
+            "omega_max": omegas[i], "p_omega_max": props[i],
+            # codeml pins a boundary class at exactly 1; "> 1" has to mean
+            # strictly greater or the boundary reads as positive selection.
+            "class_above_one": int(omegas[i] > 1.0 + 1e-6)}
+
+
 # ---- LRTs ------------------------------------------------------------------
 
 LRT_COLS = ["test", "set", "null", "alt", "lnL_null", "lnL_alt", "stat",
@@ -310,6 +350,9 @@ def main() -> None:
     beb += [r for r in (beb_row(best_bs_alt(res, p) or "") for p in PARALOGS)
             if r]
     write_tsv(OUT_DIR / "beb_sites.tsv", BEB_COLS, beb)
+    site = [r for r in (site_class_row(f"{m}_{p}") for p in PARALOGS
+                        for m in ("m1a", "m2a", "m7", "m8")) if r]
+    write_tsv(OUT_DIR / "site_models.tsv", SITE_COLS, site)
     rows = lrt_rows(res)
     write_tsv(OUT_DIR / "lrt_table.tsv", LRT_COLS, rows)
 

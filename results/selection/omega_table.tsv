@@ -3,6 +3,18 @@ m0_ITPR1	ITPR1	m0	-56620	37	1.633	11.3653	0.02375	0.0238	0	one-ratio ω within I
 m0_ITPR1_curated	ITPR1	m0	-53721.6	33	1.61502	11.6183	0.02118	0.0212	2.01	one-ratio ω within ITPR1, curated CDS only (no genome gene models)
 m0_ITPR2	ITPR2	m0	-48941.1	25	1.80902	8.84971	0.04303	0.0430		(recovered from mlc)
 m0_ITPR2_curated	ITPR2	m0	-43016.9	21	1.86205	10.5285	0.0318	0.0318		(recovered from mlc)
+m0_ITPR3	ITPR3	m0	-62257.4	37	1.97279	11.1168	0.04152	0.0415		(recovered from mlc)
+m0_ITPR3_curated	ITPR3	m0	-49167.5	23	1.89193	10.9137	0.03714	0.0371		(recovered from mlc)
 m1a_ITPR1	ITPR1	m1a	-56301.7	38	1.6715	10.9448			7.8	site model M1A within ITPR1
 m1a_ITPR2	ITPR2	m1a	-48397	26	1.93806	8.76748				(recovered from mlc)
+m1a_ITPR3	ITPR3	m1a	-61559.2	38	2.08465	10.9379			6.93	site model M1A within ITPR3
+m2a_ITPR1	ITPR1	m2a	-56301.7	40	1.67149	10.9448			20.31	site model M2A within ITPR1
+m2a_ITPR2	ITPR2	m2a	-48397	28	1.93806	8.76768				(recovered from mlc)
+m2a_ITPR3	ITPR3	m2a	-61559.2	40	2.0847	10.9383			20.42	site model M2A within ITPR3
+m7_ITPR1	ITPR1	m7	-55688.6	38	1.60484	11.5469			43.6	site model M7 within ITPR1
+m7_ITPR2	ITPR2	m7	-47804.8	26	1.78745	9.39761				(recovered from mlc)
+m7_ITPR3	ITPR3	m7	-60635.2	38	1.95816	11.8152			35.16	site model M7 within ITPR3
+m8_ITPR1	ITPR1	m8	-55678.9	40	1.61394	11.5081			54.21	site model M8 within ITPR1
+m8_ITPR2	ITPR2	m8	-47796.1	28	1.7964	9.42179				(recovered from mlc)
+m8_ITPR3	ITPR3	m8	-60625.5	40	1.96358	11.826			54.73	site model M8 within ITPR3
 pair_ITPR1	ITPR1	pair	0	0					0.24	pairwise ML dN/dS within ITPR1

@@ -1,0 +1,16 @@
+{
+  "description": "site model M8 within ITPR3",
+  "kappa": 1.96358,
+  "lnL": -60625.52927,
+  "minutes": 54.73,
+  "np": 40,
+  "omegas": [],
+  "settings": {
+    "NSsites": "8",
+    "model": "0",
+    "ncatG": "10",
+    "omega": "0.4"
+  },
+  "site_classes": "",
+  "tree_length": 11.826021
+}

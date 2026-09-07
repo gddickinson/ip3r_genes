@@ -1,0 +1,1 @@
+/opt/anaconda3/envs/piezo1/bin/hyphy CPU=3 relax --alignment /Users/george/claude_test/ip3r_genes/results/selection/codon_trimmed.fasta --tree /Users/george/claude_test/ip3r_genes/results/selection/hyphy/tree_relax_ITPR1.nwk --test Test --reference Reference --code Universal --output /Users/george/claude_test/ip3r_genes/results/selection/hyphy/relax_ITPR1.json

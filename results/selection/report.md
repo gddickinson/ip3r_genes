@@ -27,7 +27,7 @@ The tree nests **7** `vertebrate_basal` loci carrying no paralog label of their 
 
 **6** tips sit in no paralog clade at all. They stay in the whole-tree analyses, because dropping them would change the branch lengths every other estimate is made on, and they are in no foreground, because a locus the tree could not place is not evidence about a paralog.
 
-They are *basal Myxine* ×3, *basal Petromyzon* ×3 — which is the *same six loci* S7 placed in two cyclostome-only clades and handed to S8, and that S8 reported as underpowered because after ~550 Myr there is no shared flank vocabulary left to compare. A third instrument now declines the same question for a third reason: a codon model can only ask about a paralog whose clade the tree defines, and for these six it defines none.
+They are *Myxine glutinosa* ×3, *Petromyzon marinus* ×3 — which is the *same six loci* S7 placed in two cyclostome-only clades and handed to S8, and that S8 reported as underpowered because after ~550 Myr there is no shared flank vocabulary left to compare. A third instrument now declines the same question for a third reason: a codon model can only ask about a paralog whose clade the tree defines, and for these six it defines none.
 
 ### 1.1 The codon alignment
 
@@ -49,8 +49,8 @@ They are *basal Myxine* ×3, *basal Petromyzon* ×3 — which is the *same six l
 
 PAL2NAL builds the codon alignment and an **independent in-house protein→codon mapping is computed beside it**; a single nucleotide of disagreement aborts the build. trimAl's `-automated1` columns are chosen on the protein and applied codon-aware, whole triplets only.
 
-- codeml jobs run: **7**, 0.2 h of CPU time
-- likelihood-ratio tests: **0**, Benjamini–Hochberg corrected across the whole family
+- codeml jobs run: **19**, 4.1 h of CPU time
+- likelihood-ratio tests: **6**, Benjamini–Hochberg corrected across the whole family
 - branch-site model A restarted from initial ω = 0.5, 1.5, 2.5, 4.0 on every paralog stem
 - pairwise dS above **1.5** is flagged saturated
 
@@ -76,9 +76,13 @@ Prior: S6 §4.1 — mean covered-only identity *within* a vertebrate paralog gro
 |---|---|---|---|---|
 | ITPR1 | **0.0238** | 0.0212 | 1.633 | 11.37 |
 | ITPR2 | **0.0430** | 0.0318 | 1.809 | 8.85 |
-| ITPR3 | **—** | — | — | — |
+| ITPR3 | **0.0415** | 0.0371 | 1.973 | 11.12 |
 
-**underpowered** — only 2 of 3 one-ratio jobs have finished — the verdict is withheld rather than taken on the paralogs that happened to run first
+The highest of the three is **ω = 0.0430** (ITPR2), which is 23× below neutrality.
+
+**confirmed** — the identity S6 measured (mean 0.91 within a paralog) is a distance; this is a rate, and it says the same thing far more sharply — a 2,700-residue channel accumulating one non-synonymous change per 23 synonymous ones
+
+The sensitivity subsets — the same paralogs with every genome gene model removed, so no masked frameshift or stop codon contributes — move ω by at most **0.0112**. The estimates are not an artefact of the miniprot models.
 
 ### 4.2 Synonymous sites are saturated across the vertebrate span — inside a paralog, not only between them
 
@@ -88,6 +92,7 @@ Prior: S6 §4.2 — mean covered-only identity *between* paralog groups is 0.791
 |---|---|---|---|---|
 | ITPR1 | 171 | 5.721 | 0.0659 | **94.2 %** |
 | ITPR2 | 78 | 4.638 | 0.1017 | **84.6 %** |
+| ITPR3 | 171 | 13.48 | 0.0977 | **85.4 %** |
 
 This is the result that qualifies every ratio in this report, and it is stronger than the prior expected. S6's identities led S9 to expect saturation *between* the 2R paralogs. It is already reached **within** them: 94.2 % of within-paralog pairs in the worst set exceed dS = 1.5, because a single paralog set spans shark to teleost to mammal — 450 Myr of fourfold-degenerate sites.
 
@@ -97,7 +102,19 @@ This is the result that qualifies every ratio in this report, and it is stronger
 
 Two priors meet here, and they are priors about different things. S8 measured how well each paralog's *neighbourhood* travels; the background records which paralog carries the family's *clinical* burden. ω is neither of those — it is the coding sequence's own rate — so the verdicts below say what kind of agreement was available, not merely whether the numbers matched.
 
-**underpowered** — only 2 of 3 one-ratio jobs have finished; a ranking of the three cannot be read off two of them
+| rank | paralog | one-ratio ω |
+|---|---|---|
+| 1 | ITPR1 | 0.0238 |
+| 2 | ITPR3 | 0.0415 |
+| 3 | ITPR2 | 0.0430 |
+
+Most constrained → least: **ITPR1 < ITPR3 < ITPR2**.
+
+**confirmed** — ITPR1 is the most constrained of the three (ω 0.0238), which is what a paralog carrying a dominant missense disease burden should look like
+
+**orthogonal** — ITPR3's neighbourhood is the one that does not travel, but its coding sequence is not the least constrained (ITPR2 is). Neighbourhood conservation is rearrangement history and ω is coding-sequence rate; they are different quantities and this is not a disagreement
+
+**orthogonal** — recovery rate is a property of the assembly and the bait panel. S9 measures the gene's evolutionary rate, and the two are not comparable — stated so the reader is not invited to read one as the other
 
 ### 4.4 Branch-site model A on each paralog stem
 
@@ -109,7 +126,24 @@ The stem branch is where a duplicate's fate is decided: it is the interval betwe
 
 M2a vs M1a and M8 vs M7 ask whether *any* site in a paralog has ω > 1 across the whole clade — a different question from the stem, and the one that would find a site under recurrent positive selection anywhere in the vertebrate history of that copy.
 
-*not run yet*
+| test | 2ΔlnL | df | q (BH) | ω of the extra class | its share of sites | sites at BEB ≥ 0.95 |
+|---|---|---|---|---|---|---|
+| M2a vs M1a within ITPR1 | 0.00 | 2 | 1 | **20.816** | 0.00000 | 0 |
+| M8 vs M7 within ITPR1 | 19.35 | 2 | 0.000188 | **1.000** | 0.00307 | 0 |
+| M2a vs M1a within ITPR2 | 0.00 | 2 | 1 | **36.481** | 0.00000 | 0 |
+| M8 vs M7 within ITPR2 | 17.36 | 2 | 0.000339 | **1.000** | 0.00680 | 0 |
+| M2a vs M1a within ITPR3 | 0.00 | 2 | 1 | **94.213** | 0.00000 | 0 |
+| M8 vs M7 within ITPR3 | 19.43 | 2 | 0.000188 | **1.000** | 0.00394 | 1 |
+
+**3 of 6 tests are significant after BH, and 0 of them is evidence of positive selection.** The likelihood-ratio test and the claim are different statements, and the columns above are what separates them:
+
+- *M8 vs M7 within ITPR1* — the extra class sits at **ω = 1.00000**, codeml's boundary — a class of *unconstrained* sites, not positively selected ones, carrying 0.31 % of the alignment, with 0 site(s) reaching a 0.95 posterior.
+- *M8 vs M7 within ITPR2* — the extra class sits at **ω = 1.00000**, codeml's boundary — a class of *unconstrained* sites, not positively selected ones, carrying 0.68 % of the alignment, with 0 site(s) reaching a 0.95 posterior.
+- *M8 vs M7 within ITPR3* — the extra class sits at **ω = 1.00000**, codeml's boundary — a class of *unconstrained* sites, not positively selected ones, carrying 0.39 % of the alignment, with 1 site(s) reaching a 0.95 posterior.
+
+So the honest reading is that **M8 fits better than M7 because this family has a small class of sites that are free to drift, not because any site is being driven**. A beta distribution on [0, 1] cannot represent a spike at the neutral boundary, so adding one class that lands exactly there improves the fit significantly and says nothing about adaptation. Reporting the three q-values without the class they are testing would turn "under 1 % of sites are unconstrained" into "positive selection in all three paralogs".
+
+It is also consistent with everything else here: §4.1 puts ω between 0.02 and 0.05 across the whole protein, and M2a — which *is* free to place a class above 1, and does estimate one — gives it a proportion of exactly zero in all three paralogs.
 
 ### 4.6 RELAX — is any paralog's selection *relaxed*?
 
@@ -119,7 +153,7 @@ codeml's branch models ask whether a foreground's ω differs. RELAX asks whether
 
 ## 5. What this does not establish
 
-1. **Synonymous saturation.** 91.2 % of all within-paralog pairs exceed the dS bar. Tree-based models handle this far better than pairwise ML, but they do not repeal it: an ω estimated where dS is poorly determined is a ratio whose denominator is soft, and every number here should be read as a lower bound on precision, not a point estimate with a small error.
+1. **Synonymous saturation.** 88.8 % of all within-paralog pairs exceed the dS bar. Tree-based models handle this far better than pairwise ML, but they do not repeal it: an ω estimated where dS is poorly determined is a ratio whose denominator is soft, and every number here should be read as a lower bound on precision, not a point estimate with a small error.
 2. **Genome gene models.** 14 of the CDS come from miniprot reconstructions with masked frameshift or stop codons. The curated sensitivity subsets in §4.1 show ω barely moves without them, but those models are also the only evidence for several lineages, so the subset is a control, not a replacement.
 3. **The tree is conditioned on.** Every branch test is run on S7's topology. If the sister arrangement were wrong, the stems S9 marks would be the wrong branches — which is why S7 ran an AU test over all three arrangements before this task started, and why §4.4 records the dependency instead of quietly relying on it.
 4. **This is a vertebrate result.** The non-vertebrate grade is not in the codon alignment at all. Nothing here says anything about the constraint on the single-copy receptors S20 and S23 found outside the vertebrates.

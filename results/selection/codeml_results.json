@@ -49,6 +49,22 @@
     "site_classes": "",
     "tree_length": 10.944819
   },
+  "m1a_ITPR3": {
+    "description": "site model M1A within ITPR3",
+    "kappa": 2.08465,
+    "lnL": -61559.154035,
+    "minutes": 6.93,
+    "np": 38,
+    "omegas": [],
+    "settings": {
+      "NSsites": "1",
+      "model": "0",
+      "ncatG": "3",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 10.937914
+  },
   "m2a_ITPR1": {
     "description": "site model M2A within ITPR1",
     "kappa": 1.67149,
@@ -64,6 +80,86 @@
     },
     "site_classes": "",
     "tree_length": 10.944807
+  },
+  "m2a_ITPR3": {
+    "description": "site model M2A within ITPR3",
+    "kappa": 2.0847,
+    "lnL": -61559.154317,
+    "minutes": 20.42,
+    "np": 40,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "model": "0",
+      "ncatG": "3",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 10.938267
+  },
+  "m7_ITPR1": {
+    "description": "site model M7 within ITPR1",
+    "kappa": 1.60484,
+    "lnL": -55688.590253,
+    "minutes": 43.6,
+    "np": 38,
+    "omegas": [],
+    "settings": {
+      "NSsites": "7",
+      "model": "0",
+      "ncatG": "10",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 11.546887
+  },
+  "m7_ITPR3": {
+    "description": "site model M7 within ITPR3",
+    "kappa": 1.95816,
+    "lnL": -60635.246731,
+    "minutes": 35.16,
+    "np": 38,
+    "omegas": [],
+    "settings": {
+      "NSsites": "7",
+      "model": "0",
+      "ncatG": "10",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 11.815213
+  },
+  "m8_ITPR1": {
+    "description": "site model M8 within ITPR1",
+    "kappa": 1.61394,
+    "lnL": -55678.913882,
+    "minutes": 54.21,
+    "np": 40,
+    "omegas": [],
+    "settings": {
+      "NSsites": "8",
+      "model": "0",
+      "ncatG": "10",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 11.508111
+  },
+  "m8_ITPR3": {
+    "description": "site model M8 within ITPR3",
+    "kappa": 1.96358,
+    "lnL": -60625.52927,
+    "minutes": 54.73,
+    "np": 40,
+    "omegas": [],
+    "settings": {
+      "NSsites": "8",
+      "model": "0",
+      "ncatG": "10",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 11.826021
   },
   "pair_ITPR1": {
     "description": "pairwise ML dN/dS within ITPR1",

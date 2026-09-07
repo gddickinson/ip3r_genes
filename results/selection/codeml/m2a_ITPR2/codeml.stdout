@@ -1,0 +1,400 @@
+
+CODONML in paml version 4.10.10, 29 Jan 2026
+
+----------------------------------------------
+Phe F TTT | Ser S TCT | Tyr Y TAT | Cys C TGT
+      TTC |       TCC |       TAC |       TGC
+Leu L TTA |       TCA | *** * TAA | *** * TGA
+      TTG |       TCG |       TAG | Trp W TGG
+----------------------------------------------
+Leu L CTT | Pro P CCT | His H CAT | Arg R CGT
+      CTC |       CCC |       CAC |       CGC
+      CTA |       CCA | Gln Q CAA |       CGA
+      CTG |       CCG |       CAG |       CGG
+----------------------------------------------
+Ile I ATT | Thr T ACT | Asn N AAT | Ser S AGT
+      ATC |       ACC |       AAC |       AGC
+      ATA |       ACA | Lys K AAA | Arg R AGA
+Met M ATG |       ACG |       AAG |       AGG
+----------------------------------------------
+Val V GTT | Ala A GCT | Asp D GAT | Gly G GGT
+      GTC |       GCC |       GAC |       GGC
+      GTA |       GCA | Glu E GAA |       GGA
+      GTG |       GCG |       GAG |       GGG
+----------------------------------------------
+Nice code, uuh?
+ns = 13  	ls = 7377
+Reading sequences, sequential format..
+Reading seq # 1: T2_Astato_calli       
+Reading seq # 2: T2_basal_Chilo       
+Reading seq # 3: T2_Gallus_gallu       
+Reading seq # 4: T2_Mus_muscu       
+Reading seq # 5: T2_basal_Callo       
+Reading seq # 6: T2_Echino_cooke       
+Reading seq # 7: T2_Gekko_japon       
+Reading seq # 8: T2_Xenopu_tropi       
+Reading seq # 9: T2_Strigo_habro       
+Reading seq #10: T2_Homo_sapie       
+Reading seq #11: T2_Nibea_albif       
+Reading seq #12: T2_Danio_rerio       
+Reading seq #13: T2_Rattus_norve       
+Sequences read..
+Counting site patterns..  0:00
+
+Compressing,   2347 patterns at   2459 /   2459 sites (100.0%),  0:00
+
+Collecting fpatt[] & pose[],   2347 patterns at   2459 /   2459 sites (100.0%),  0:00
+1 ambiguous codons are seen in the data:
+ ---
+Counting codons..
+NG distances for seqs.:
+   1   2   3   4   5   6   7   8   9  10  11  12  13
+
+      624 bytes for distance
+  2290672 bytes for conP
+    56328 bytes for fhK
+  5000000 bytes for space
+
+TREE #  1
+(((6, 2), 5), ((1, 11), 12), ((((3, 9), (10, (4, 13))), 7), 8));   MP score: -1
+   1    3.256538
+   2    3.256538
+   3    3.256538
+ 12598696 bytes for conP, adjusted
+
+initial w for M2:NSpselection reset.
+
+    0.520805    0.362528    0.262864    0.351871    0.661317    0.402615    0.594745    0.295202    0.221665    0.804769    0.045457    0.260903    0.033010    0.593740    0.083703    0.123299    0.328981    0.304734    0.415966    0.166813    0.023804    0.813568    1.080292    2.280253    1.644046    0.291066    0.284448    2.997040
+
+ntime & nrate & np:    23     3    28
+
+Bounds (np=28):
+   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000004   0.000100 -99.000000 -99.000000   0.000001   1.000000
+  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000  50.000000 999.000000  99.000000  99.000000   1.000000 999.000000
+Qfactor_NS = 5.281686
+
+np =    28
+lnL0 = -52647.595184
+
+Iterating by ming2
+Initial: fx= 52647.595184
+x=  0.52081  0.36253  0.26286  0.35187  0.66132  0.40261  0.59474  0.29520  0.22167  0.80477  0.04546  0.26090  0.03301  0.59374  0.08370  0.12330  0.32898  0.30473  0.41597  0.16681  0.02380  0.81357  1.08029  2.28025  1.64405  0.29107  0.28445  2.99704
+
+  1 h-m-p  0.0000 0.0000 12320.1208 +YYYCYCCCC 50016.677209  8 0.0000    47 | 0/28
+  2 h-m-p  0.0001 0.0036 2732.3303 +CYCCC 49135.911182  4 0.0003    86 | 0/28
+  3 h-m-p  0.0001 0.0006 995.8072 +YYCCCC 48904.680945  5 0.0004   126 | 0/28
+  4 h-m-p  0.0002 0.0010 597.1309 CYC   48875.572049  2 0.0002   160 | 0/28
+  5 h-m-p  0.0000 0.0001 3573.3610 +YCCC 48805.994360  3 0.0001   197 | 0/28
+  6 h-m-p  0.0004 0.0022 420.6380 CYC   48784.572605  2 0.0004   231 | 0/28
+  7 h-m-p  0.0002 0.0008 335.0028 YCCC  48772.889516  3 0.0004   267 | 0/28
+  8 h-m-p  0.0003 0.0023 359.2292 CCCC  48759.249866  3 0.0005   304 | 0/28
+  9 h-m-p  0.0014 0.0101 138.2798 CCC   48749.463904  2 0.0016   339 | 0/28
+ 10 h-m-p  0.0008 0.0038 246.9848 CCC   48742.561685  2 0.0007   374 | 0/28
+ 11 h-m-p  0.0008 0.0059 221.7287 CC    48734.270650  1 0.0012   407 | 0/28
+ 12 h-m-p  0.0009 0.0121 284.7716 +YCC  48714.212902  2 0.0024   442 | 0/28
+ 13 h-m-p  0.0008 0.0127 890.9932 YCCC  48677.499945  3 0.0015   478 | 0/28
+ 14 h-m-p  0.0009 0.0044 1115.3261 CCC   48647.491391  2 0.0010   513 | 0/28
+ 15 h-m-p  0.0026 0.0132 299.5471 YCCC  48633.121394  3 0.0019   549 | 0/28
+ 16 h-m-p  0.0032 0.0170 181.7573 YC    48624.949057  1 0.0020   581 | 0/28
+ 17 h-m-p  0.0021 0.0104 154.9741 YCC   48620.655648  2 0.0014   615 | 0/28
+ 18 h-m-p  0.0038 0.0289  56.7174 YC    48618.928301  1 0.0018   647 | 0/28
+ 19 h-m-p  0.0038 0.0432  26.8685 CCC   48617.700030  2 0.0031   682 | 0/28
+ 20 h-m-p  0.0039 0.1120  21.5596 YCC   48614.711834  2 0.0076   716 | 0/28
+ 21 h-m-p  0.0019 0.0428  84.7612 +YYYC 48600.764674  3 0.0071   751 | 0/28
+ 22 h-m-p  0.0023 0.0114 243.7560 CCCCC 48584.033212  4 0.0028   790 | 0/28
+ 23 h-m-p  0.0049 0.0245  56.3268 YCCC  48579.085408  3 0.0029   826 | 0/28
+ 24 h-m-p  0.0045 0.0632  36.6314 CCC   48565.386907  2 0.0071   861 | 0/28
+ 25 h-m-p  0.0062 0.0364  41.8680 CCC   48531.148607  2 0.0077   896 | 0/28
+ 26 h-m-p  0.0023 0.0113 104.0459 CCCCC 48483.409029  4 0.0037   935 | 0/28
+ 27 h-m-p  0.0042 0.0209  54.8442 CC    48480.754963  1 0.0016   968 | 0/28
+ 28 h-m-p  0.0170 0.2852   5.2800 CC    48479.244741  1 0.0166  1001 | 0/28
+ 29 h-m-p  0.0135 0.1284   6.4929 +CCC  48451.283078  2 0.0571  1037 | 0/28
+ 30 h-m-p  0.0050 0.0250  46.4536 CCC   48442.582686  2 0.0054  1072 | 0/28
+ 31 h-m-p  0.3336 1.6678   0.5695 CCCC  48427.811260  3 0.4663  1109 | 0/28
+ 32 h-m-p  0.2724 6.0159   0.9749 +CCC  48417.185270  2 1.1367  1173 | 0/28
+ 33 h-m-p  1.1013 8.0000   1.0062 CC    48410.080957  1 1.0708  1234 | 0/28
+ 34 h-m-p  1.0183 8.0000   1.0581 CCC   48406.327233  2 0.9612  1269 | 0/28
+ 35 h-m-p  0.5908 3.7428   1.7215 YYYC  48403.749596  3 0.5660  1303 | 0/28
+ 36 h-m-p  0.9121 8.0000   1.0683 CCC   48401.275489  2 1.2380  1338 | 0/28
+ 37 h-m-p  1.2246 8.0000   1.0800 CCC   48399.673262  2 1.3342  1373 | 0/28
+ 38 h-m-p  1.4472 8.0000   0.9956 CC    48398.621169  1 1.4684  1406 | 0/28
+ 39 h-m-p  0.9208 8.0000   1.5878 C     48398.042011  0 0.9208  1465 | 0/28
+ 40 h-m-p  1.1321 8.0000   1.2914 CYC   48397.601936  2 1.3264  1499 | 0/28
+ 41 h-m-p  1.2921 8.0000   1.3257 C     48397.360873  0 1.2996  1530 | 0/28
+ 42 h-m-p  1.4893 8.0000   1.1568 CCC   48397.225967  2 1.1418  1565 | 0/28
+ 43 h-m-p  0.9198 8.0000   1.4359 YC    48397.120417  1 1.5363  1597 | 0/28
+ 44 h-m-p  1.6000 8.0000   1.3518 YC    48397.075177  1 1.0533  1629 | 0/28
+ 45 h-m-p  0.8381 8.0000   1.6990 CC    48397.042422  1 1.0432  1662 | 0/28
+ 46 h-m-p  1.4118 8.0000   1.2555 C     48397.024347  0 1.4118  1693 | 0/28
+ 47 h-m-p  1.2727 8.0000   1.3927 C     48397.013910  0 1.2727  1724 | 0/28
+ 48 h-m-p  1.1717 8.0000   1.5127 C     48397.007209  0 1.5885  1755 | 0/28
+ 49 h-m-p  1.6000 8.0000   1.0287 C     48397.004247  0 1.4087  1786 | 0/28
+ 50 h-m-p  1.4298 8.0000   1.0135 C     48397.002919  0 1.2117  1817 | 0/28
+ 51 h-m-p  1.6000 8.0000   0.7626 C     48397.002078  0 1.5760  1848 | 0/28
+ 52 h-m-p  0.6022 8.0000   1.9958 +Y    48397.001243  0 1.7987  1908 | 0/28
+ 53 h-m-p  1.6000 8.0000   1.1201 Y     48397.001012  0 0.7759  1939 | 0/28
+ 54 h-m-p  0.8148 8.0000   1.0666 --------Y 48397.001012  0 0.0000  1978 | 0/28
+ 55 h-m-p  0.0000 0.0222 1786.8383 ---------..  | 0/28
+ 56 h-m-p  0.0003 0.1688   5.7492 ---Y  48397.000995  0 0.0000  2050 | 0/28
+ 57 h-m-p  0.0006 0.3018   0.5281 Y     48397.000983  0 0.0001  2081 | 0/28
+ 58 h-m-p  0.0018 0.9123   0.4088 -C    48397.000973  0 0.0002  2141 | 0/28
+ 59 h-m-p  0.0055 2.7709   0.1734 -C    48397.000969  0 0.0004  2201 | 0/28
+ 60 h-m-p  0.0054 2.6779   0.1609 -C    48397.000967  0 0.0003  2261 | 0/28
+ 61 h-m-p  0.0057 2.8379   0.0799 --Y   48397.000967  0 0.0002  2322 | 0/28
+ 62 h-m-p  0.0073 3.6530   0.1260 --C   48397.000967  0 0.0001  2383 | 0/28
+ 63 h-m-p  0.0160 8.0000   0.0634 --C   48397.000966  0 0.0004  2444 | 0/28
+ 64 h-m-p  0.0160 8.0000   0.0503 --C   48397.000966  0 0.0003  2505 | 0/28
+ 65 h-m-p  0.0160 8.0000   0.0272 -Y    48397.000966  0 0.0007  2565 | 0/28
+ 66 h-m-p  0.0160 8.0000   0.0301 --C   48397.000966  0 0.0004  2626 | 0/28
+ 67 h-m-p  0.0160 8.0000   0.0110 -C    48397.000966  0 0.0010  2686 | 0/28
+ 68 h-m-p  0.0160 8.0000   0.0112 -Y    48397.000966  0 0.0006  2746 | 0/28
+ 69 h-m-p  0.0160 8.0000   0.0074 -C    48397.000966  0 0.0010  2806 | 0/28
+ 70 h-m-p  0.0160 8.0000   0.0038 --Y   48397.000966  0 0.0003  2867 | 0/28
+ 71 h-m-p  0.0160 8.0000   0.0020 -------------..  | 0/28
+ 72 h-m-p  0.0160 8.0000   0.0181 ------------- | 0/28
+ 73 h-m-p  0.0160 8.0000   0.0181 -------------
+Out..
+lnL  = -48397.000966
+3078 lfun, 12312 eigenQcodon, 212382 P(t)
+
+BEBing (dim = 4).  This may take several minutes.
+Calculating f(x_h|w): 10 categories 21 w sets.
+Calculating f(X), the marginal likelihood.
+	log(fX) = -48583.859418  S = -47289.198076 -1285.451002
+Calculating f(w|X), posterior probabilities of site classes.
+
+	did  10 / 2347 patterns   5:48
+	did  20 / 2347 patterns   5:48
+	did  30 / 2347 patterns   5:48
+	did  40 / 2347 patterns   5:48
+	did  50 / 2347 patterns   5:48
+	did  60 / 2347 patterns   5:48
+	did  70 / 2347 patterns   5:48
+	did  80 / 2347 patterns   5:48
+	did  90 / 2347 patterns   5:48
+	did 100 / 2347 patterns   5:48
+	did 110 / 2347 patterns   5:48
+	did 120 / 2347 patterns   5:48
+	did 130 / 2347 patterns   5:48
+	did 140 / 2347 patterns   5:48
+	did 150 / 2347 patterns   5:48
+	did 160 / 2347 patterns   5:48
+	did 170 / 2347 patterns   5:48
+	did 180 / 2347 patterns   5:48
+	did 190 / 2347 patterns   5:48
+	did 200 / 2347 patterns   5:48
+	did 210 / 2347 patterns   5:48
+	did 220 / 2347 patterns   5:48
+	did 230 / 2347 patterns   5:48
+	did 240 / 2347 patterns   5:48
+	did 250 / 2347 patterns   5:48
+	did 260 / 2347 patterns   5:48
+	did 270 / 2347 patterns   5:48
+	did 280 / 2347 patterns   5:48
+	did 290 / 2347 patterns   5:48
+	did 300 / 2347 patterns   5:48
+	did 310 / 2347 patterns   5:48
+	did 320 / 2347 patterns   5:48
+	did 330 / 2347 patterns   5:48
+	did 340 / 2347 patterns   5:48
+	did 350 / 2347 patterns   5:48
+	did 360 / 2347 patterns   5:48
+	did 370 / 2347 patterns   5:48
+	did 380 / 2347 patterns   5:48
+	did 390 / 2347 patterns   5:48
+	did 400 / 2347 patterns   5:48
+	did 410 / 2347 patterns   5:48
+	did 420 / 2347 patterns   5:48
+	did 430 / 2347 patterns   5:48
+	did 440 / 2347 patterns   5:48
+	did 450 / 2347 patterns   5:48
+	did 460 / 2347 patterns   5:48
+	did 470 / 2347 patterns   5:48
+	did 480 / 2347 patterns   5:48
+	did 490 / 2347 patterns   5:48
+	did 500 / 2347 patterns   5:48
+	did 510 / 2347 patterns   5:48
+	did 520 / 2347 patterns   5:48
+	did 530 / 2347 patterns   5:48
+	did 540 / 2347 patterns   5:48
+	did 550 / 2347 patterns   5:48
+	did 560 / 2347 patterns   5:48
+	did 570 / 2347 patterns   5:48
+	did 580 / 2347 patterns   5:48
+	did 590 / 2347 patterns   5:48
+	did 600 / 2347 patterns   5:48
+	did 610 / 2347 patterns   5:48
+	did 620 / 2347 patterns   5:49
+	did 630 / 2347 patterns   5:49
+	did 640 / 2347 patterns   5:49
+	did 650 / 2347 patterns   5:49
+	did 660 / 2347 patterns   5:49
+	did 670 / 2347 patterns   5:49
+	did 680 / 2347 patterns   5:49
+	did 690 / 2347 patterns   5:49
+	did 700 / 2347 patterns   5:49
+	did 710 / 2347 patterns   5:49
+	did 720 / 2347 patterns   5:49
+	did 730 / 2347 patterns   5:49
+	did 740 / 2347 patterns   5:49
+	did 750 / 2347 patterns   5:49
+	did 760 / 2347 patterns   5:49
+	did 770 / 2347 patterns   5:49
+	did 780 / 2347 patterns   5:49
+	did 790 / 2347 patterns   5:49
+	did 800 / 2347 patterns   5:49
+	did 810 / 2347 patterns   5:49
+	did 820 / 2347 patterns   5:49
+	did 830 / 2347 patterns   5:49
+	did 840 / 2347 patterns   5:49
+	did 850 / 2347 patterns   5:49
+	did 860 / 2347 patterns   5:49
+	did 870 / 2347 patterns   5:49
+	did 880 / 2347 patterns   5:49
+	did 890 / 2347 patterns   5:49
+	did 900 / 2347 patterns   5:49
+	did 910 / 2347 patterns   5:49
+	did 920 / 2347 patterns   5:49
+	did 930 / 2347 patterns   5:49
+	did 940 / 2347 patterns   5:49
+	did 950 / 2347 patterns   5:49
+	did 960 / 2347 patterns   5:49
+	did 970 / 2347 patterns   5:49
+	did 980 / 2347 patterns   5:49
+	did 990 / 2347 patterns   5:49
+	did 1000 / 2347 patterns   5:49
+	did 1010 / 2347 patterns   5:49
+	did 1020 / 2347 patterns   5:49
+	did 1030 / 2347 patterns   5:49
+	did 1040 / 2347 patterns   5:49
+	did 1050 / 2347 patterns   5:49
+	did 1060 / 2347 patterns   5:49
+	did 1070 / 2347 patterns   5:49
+	did 1080 / 2347 patterns   5:49
+	did 1090 / 2347 patterns   5:49
+	did 1100 / 2347 patterns   5:49
+	did 1110 / 2347 patterns   5:49
+	did 1120 / 2347 patterns   5:49
+	did 1130 / 2347 patterns   5:49
+	did 1140 / 2347 patterns   5:49
+	did 1150 / 2347 patterns   5:49
+	did 1160 / 2347 patterns   5:49
+	did 1170 / 2347 patterns   5:49
+	did 1180 / 2347 patterns   5:49
+	did 1190 / 2347 patterns   5:49
+	did 1200 / 2347 patterns   5:49
+	did 1210 / 2347 patterns   5:49
+	did 1220 / 2347 patterns   5:49
+	did 1230 / 2347 patterns   5:49
+	did 1240 / 2347 patterns   5:49
+	did 1250 / 2347 patterns   5:49
+	did 1260 / 2347 patterns   5:49
+	did 1270 / 2347 patterns   5:49
+	did 1280 / 2347 patterns   5:49
+	did 1290 / 2347 patterns   5:49
+	did 1300 / 2347 patterns   5:49
+	did 1310 / 2347 patterns   5:49
+	did 1320 / 2347 patterns   5:49
+	did 1330 / 2347 patterns   5:49
+	did 1340 / 2347 patterns   5:49
+	did 1350 / 2347 patterns   5:49
+	did 1360 / 2347 patterns   5:49
+	did 1370 / 2347 patterns   5:49
+	did 1380 / 2347 patterns   5:49
+	did 1390 / 2347 patterns   5:49
+	did 1400 / 2347 patterns   5:49
+	did 1410 / 2347 patterns   5:49
+	did 1420 / 2347 patterns   5:49
+	did 1430 / 2347 patterns   5:49
+	did 1440 / 2347 patterns   5:49
+	did 1450 / 2347 patterns   5:49
+	did 1460 / 2347 patterns   5:49
+	did 1470 / 2347 patterns   5:49
+	did 1480 / 2347 patterns   5:49
+	did 1490 / 2347 patterns   5:49
+	did 1500 / 2347 patterns   5:49
+	did 1510 / 2347 patterns   5:49
+	did 1520 / 2347 patterns   5:49
+	did 1530 / 2347 patterns   5:49
+	did 1540 / 2347 patterns   5:49
+	did 1550 / 2347 patterns   5:49
+	did 1560 / 2347 patterns   5:49
+	did 1570 / 2347 patterns   5:49
+	did 1580 / 2347 patterns   5:49
+	did 1590 / 2347 patterns   5:49
+	did 1600 / 2347 patterns   5:49
+	did 1610 / 2347 patterns   5:49
+	did 1620 / 2347 patterns   5:49
+	did 1630 / 2347 patterns   5:49
+	did 1640 / 2347 patterns   5:49
+	did 1650 / 2347 patterns   5:49
+	did 1660 / 2347 patterns   5:49
+	did 1670 / 2347 patterns   5:49
+	did 1680 / 2347 patterns   5:49
+	did 1690 / 2347 patterns   5:49
+	did 1700 / 2347 patterns   5:49
+	did 1710 / 2347 patterns   5:49
+	did 1720 / 2347 patterns   5:49
+	did 1730 / 2347 patterns   5:49
+	did 1740 / 2347 patterns   5:49
+	did 1750 / 2347 patterns   5:49
+	did 1760 / 2347 patterns   5:49
+	did 1770 / 2347 patterns   5:49
+	did 1780 / 2347 patterns   5:49
+	did 1790 / 2347 patterns   5:49
+	did 1800 / 2347 patterns   5:49
+	did 1810 / 2347 patterns   5:49
+	did 1820 / 2347 patterns   5:49
+	did 1830 / 2347 patterns   5:49
+	did 1840 / 2347 patterns   5:49
+	did 1850 / 2347 patterns   5:49
+	did 1860 / 2347 patterns   5:49
+	did 1870 / 2347 patterns   5:49
+	did 1880 / 2347 patterns   5:49
+	did 1890 / 2347 patterns   5:49
+	did 1900 / 2347 patterns   5:49
+	did 1910 / 2347 patterns   5:49
+	did 1920 / 2347 patterns   5:49
+	did 1930 / 2347 patterns   5:49
+	did 1940 / 2347 patterns   5:49
+	did 1950 / 2347 patterns   5:49
+	did 1960 / 2347 patterns   5:49
+	did 1970 / 2347 patterns   5:49
+	did 1980 / 2347 patterns   5:49
+	did 1990 / 2347 patterns   5:49
+	did 2000 / 2347 patterns   5:49
+	did 2010 / 2347 patterns   5:49
+	did 2020 / 2347 patterns   5:49
+	did 2030 / 2347 patterns   5:49
+	did 2040 / 2347 patterns   5:49
+	did 2050 / 2347 patterns   5:49
+	did 2060 / 2347 patterns   5:49
+	did 2070 / 2347 patterns   5:49
+	did 2080 / 2347 patterns   5:49
+	did 2090 / 2347 patterns   5:49
+	did 2100 / 2347 patterns   5:49
+	did 2110 / 2347 patterns   5:49
+	did 2120 / 2347 patterns   5:49
+	did 2130 / 2347 patterns   5:49
+	did 2140 / 2347 patterns   5:49
+	did 2150 / 2347 patterns   5:49
+	did 2160 / 2347 patterns   5:49
+	did 2170 / 2347 patterns   5:49
+	did 2180 / 2347 patterns   5:49
+	did 2190 / 2347 patterns   5:49
+	did 2200 / 2347 patterns   5:49
+	did 2210 / 2347 patterns   5:49
+	did 2220 / 2347 patterns   5:49
+	did 2230 / 2347 patterns   5:49
+	did 2240 / 2347 patterns   5:49
+	did 2250 / 2347 patterns   5:49
+	did 2260 / 2347 patterns   5:49
+	did 2270 / 2347 patterns   5:49
+	did 2280 / 2347 patterns   5:49
+	did 2290 / 2347 patterns   5:49
+	did 2300 / 2347 patterns   5:49
+	did 2310 / 2347 patterns   5:49
+	did 2320 / 2347 patterns   5:49
+	did 2330 / 2347 patterns   5:49
+	did 2340 / 2347 patterns   5:49
+	did 2347 / 2347 patterns   5:49

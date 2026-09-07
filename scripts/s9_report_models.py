@@ -120,7 +120,8 @@ def _branch_site(lrts: list[dict], bs: list[dict], beb: list[dict],
 
 # ---- 4.5 site models -------------------------------------------------------
 
-def _site_models(lrts: list[dict], beb: list[dict], num) -> list[str]:
+def _site_models(lrts: list[dict], beb: list[dict], site: list[dict],
+                 num) -> list[str]:
     rows = [r for r in lrts if " within " in r["test"]]
     out = ["### 4.5 Site models within each paralog", "",
            "M2a vs M1a and M8 vs M7 ask whether *any* site in a paralog has "
@@ -131,16 +132,21 @@ def _site_models(lrts: list[dict], beb: list[dict], num) -> list[str]:
     if not rows:
         out += ["*not run yet*", ""]
         return out
-    out += ["| test | 2ΔlnL | df | p | q (BH) | sites P ≥ 0.95 |",
-            "|---|---|---|---|---|---|"]
     bebs = {b["job"]: b for b in beb}
+    sites = {r["job"]: r for r in site}
+    out += ["| test | 2ΔlnL | df | q (BH) | ω of the extra class | "
+            "its share of sites | sites at BEB ≥ 0.95 |",
+            "|---|---|---|---|---|---|---|"]
     for r in rows:
+        sc = sites.get(r["alt"], {})
         b = bebs.get(r["alt"], {})
         out.append(f"| {r['test']} | {num(r['stat'], '{:.2f}')} | {r['df']} | "
-                   f"{num(r['p_reported'], '{:.3g}')} | "
                    f"{num(r.get('q_bh'), '{:.3g}')} | "
+                   f"**{num(sc.get('omega_max'), '{:.3f}')}** | "
+                   f"{num(sc.get('p_omega_max'), '{:.5f}')} | "
                    f"{b.get('n_p95', '—')} |")
     out.append("")
+
     sig = [r for r in rows if _sig(r)]
     if not sig:
         out += ["No site model is significant after correction in any "
@@ -148,13 +154,63 @@ def _site_models(lrts: list[dict], beb: list[dict], num) -> list[str]:
                 "rather than an absence of one: a channel whose ω is under "
                 "0.05 everywhere has very little room for a site class "
                 "above 1 to hide in.", ""]
-    else:
-        out += ["Significant: " + ", ".join(r["test"] for r in sig)
-                + ". Every one is qualified by §4.2 — the same saturated "
-                "synonymous sites that make the pairwise matrix a "
-                "diagnostic also inflate a site model's ability to find a "
-                "high-ω class, and the BEB column is what distinguishes a "
-                "handful of identifiable sites from a flat posterior.", ""]
+        return out
+
+    # A significant LRT is not the claim. The claim is about the class the
+    # test adds, and that class has to be *strictly* above 1 with a share
+    # of sites above zero before "positive selection" is the right words.
+    real = [r for r in sig
+            if sites.get(r["alt"], {}).get("class_above_one") == "1"
+            and (_f(sites.get(r["alt"], {}).get("p_omega_max")) or 0.0) > 0]
+    empty = [r for r in sig if r not in real]
+    out += [f"**{len(sig)} of {len(rows)} tests are significant after BH, and "
+            f"{len(real)} of them is evidence of positive selection.** The "
+            "likelihood-ratio test and the claim are different statements, "
+            "and the columns above are what separates them:", ""]
+    for r in empty:
+        sc = sites.get(r["alt"], {})
+        om = _f(sc.get("omega_max"))
+        share = _f(sc.get("p_omega_max"))
+        b = bebs.get(r["alt"], {})
+        if share is not None and share <= 0:
+            why = ("the extra class carries **no sites at all** (proportion "
+                   f"{num(share, '{:.5f}')}), so the alternative has "
+                   "collapsed onto its own null — which is why 2ΔlnL is "
+                   f"{num(r['stat'], '{:.2f}')}")
+        elif om is not None and abs(om - 1.0) < 1e-6:
+            why = (f"the extra class sits at **ω = {num(om, '{:.5f}')}**, "
+                   "codeml's boundary — a class of *unconstrained* sites, "
+                   "not positively selected ones, carrying "
+                   f"{100 * (share or 0):.2f} % of the alignment, with "
+                   f"{b.get('n_p95', '0')} site(s) reaching a 0.95 posterior")
+        else:
+            why = (f"the extra class is at ω = {num(om, '{:.3f}')} with "
+                   f"{num(share, '{:.5f}')} of sites")
+        out.append(f"- *{r['test']}* — {why}.")
+    for r in real:
+        sc = sites.get(r["alt"], {})
+        b = bebs.get(r["alt"], {})
+        out.append(f"- *{r['test']}* — ω = "
+                   f"{num(sc.get('omega_max'), '{:.3f}')} over "
+                   f"{100 * (_f(sc.get('p_omega_max')) or 0):.2f} % of "
+                   f"sites, {b.get('n_p95', '0')} of them at BEB ≥ 0.95.")
+    out.append("")
+    if not real:
+        out += ["So the honest reading is that **M8 fits better than M7 "
+                "because this family has a small class of sites that are "
+                "free to drift, not because any site is being driven**. A "
+                "beta distribution on [0, 1] cannot represent a spike at "
+                "the neutral boundary, so adding one class that lands "
+                "exactly there improves the fit significantly and says "
+                "nothing about adaptation. Reporting the three q-values "
+                "without the class they are testing would turn \"under 1 % "
+                "of sites are unconstrained\" into \"positive selection in "
+                "all three paralogs\".", "",
+                "It is also consistent with everything else here: §4.1 puts "
+                "ω between 0.02 and 0.05 across the whole protein, and "
+                "M2a — which *is* free to place a class above 1, and does "
+                "estimate one — gives it a proportion of exactly zero in "
+                "all three paralogs.", ""]
     return out
 
 
@@ -240,12 +296,13 @@ def model_sections(load_tsv, num, pct) -> list[str]:
     lrts = load_tsv("lrt_table.tsv")
     bs = load_tsv("bs_restarts.tsv")
     beb = load_tsv("beb_sites.tsv")
+    site = load_tsv("site_models.tsv")
     relax = load_tsv("relax_table.tsv")
     pairs = load_tsv("pairwise_dnds.tsv")
     status = load_tsv("cds_status.tsv")
     out: list[str] = []
     out += _branch_site(lrts, bs, beb, num)
-    out += _site_models(lrts, beb, num)
+    out += _site_models(lrts, beb, site, num)
     out += _relax(relax, num)
     out += _caveats(pairs, status, num, pct)
     out += ["## 6. Figures", "",
