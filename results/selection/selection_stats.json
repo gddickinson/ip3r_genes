@@ -1,0 +1,20 @@
+{
+  "bs_init_omegas": [
+    0.5,
+    1.5,
+    2.5,
+    4.0
+  ],
+  "n_jobs": 7,
+  "n_lrt": 0,
+  "saturated_ds_bar": 1.5,
+  "sha256": {
+    "beb_sites.tsv": "695e4080b36a625c97b8041caedd3d0bb1c8523078be9309af938953b11ad6e8",
+    "bs_restarts.tsv": "4a2d7c881e323058cb9b6b0ca32c9a26a7005fadabec8d8906fe36f7bad57bf4",
+    "cds_status.tsv": "8a85d809836293436a95dbbf7dd12836748d767df640c8ab04876a3f6d3eb1e0",
+    "lrt_table.tsv": "2312e73e32e90c5fc74f807e89d6830daf4a3aacb47090b6e0951dde4aa6c940",
+    "omega_table.tsv": "be0dd16fecec8fbe7df8498a2d116556133ad10655e746b903007a05889b42d6",
+    "pairwise_dnds.tsv": "f7e1d9aa4ac1873bd88847781b9e97a8d93ff024d75f78126d868eb682ecf3ef",
+    "tip_codes.tsv": "8ad43da475db6ddf74ca730eee432fd82b820fda9e89463be79149f8cfffd013"
+  }
+}

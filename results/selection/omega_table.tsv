@@ -1,0 +1,8 @@
+job	set	model	lnL	np	kappa	tree_length	omega	omegas	minutes	description
+m0_ITPR1	ITPR1	m0	-56620	37	1.633	11.3653	0.02375	0.0238	0	one-ratio ω within ITPR1
+m0_ITPR1_curated	ITPR1	m0	-53721.6	33	1.61502	11.6183	0.02118	0.0212	2.01	one-ratio ω within ITPR1, curated CDS only (no genome gene models)
+m0_ITPR2	ITPR2	m0	-48941.1	25	1.80902	8.84971	0.04303	0.0430		(recovered from mlc)
+m0_ITPR2_curated	ITPR2	m0	-43016.9	21	1.86205	10.5285	0.0318	0.0318		(recovered from mlc)
+m1a_ITPR1	ITPR1	m1a	-56301.7	38	1.6715	10.9448			7.8	site model M1A within ITPR1
+m1a_ITPR2	ITPR2	m1a	-48397	26	1.93806	8.76748				(recovered from mlc)
+pair_ITPR1	ITPR1	pair	0	0					0.24	pairwise ML dN/dS within ITPR1

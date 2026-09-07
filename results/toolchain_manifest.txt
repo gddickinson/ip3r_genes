@@ -1,7 +1,7 @@
 S1 toolchain manifest — IP3R publication project
-generated: 2026-08-18 15:14:17 MST
-host:      macOS-26.6.1-arm64-arm-64bit / arm64
-python:    3.12.3  (/opt/anaconda3/bin/python3)
+generated: 2026-09-07 07:44:22 CDT
+host:      macOS-26.6.2-arm64-arm-64bit / arm64
+python:    3.11.15  (/opt/anaconda3/envs/piezo1/bin/python)
 conda env: piezo1  (/opt/anaconda3/envs/piezo1)
 
 External binaries
@@ -30,15 +30,23 @@ ok datasets     18.35.0                            [env] needed by S4
    /opt/anaconda3/envs/piezo1/bin/datasets
 ok foldseek     10.941cd33                         [env] needed by S11 (opt)
    /opt/anaconda3/envs/piezo1/bin/foldseek
+ok yn00         4.10.10                            [env] needed by S9
+   /opt/anaconda3/envs/piezo1/bin/yn00
+ok codeml       4.10.10 (via yn00)                 [env] needed by S9
+   /opt/anaconda3/envs/piezo1/bin/codeml
+ok pal2nal.pl   14                                 [env] needed by S9
+   /opt/anaconda3/envs/piezo1/bin/pal2nal.pl
+ok hyphy        2.5.101(MP)                        [env] needed by S9
+   /opt/anaconda3/envs/piezo1/bin/hyphy
 
 Python packages
 ---------------
-   Bio          MISSING
-   requests     2.32.3
-   matplotlib   3.10.1
-   numpy        1.26.4
-   scipy        1.15.2
-   pandas       2.2.3
+   Bio          1.87
+   requests     2.34.2
+   matplotlib   3.11.1
+   numpy        2.4.6
+   scipy        1.17.1
+   pandas       2.3.3
 
 Notes
 -----

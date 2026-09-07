@@ -138,6 +138,23 @@ question S7 handed it: all six cyclostome loci score no better than a random
 stretch of their own genome, so the answer is *underpowered*, not negative.
 → [`results/synteny/report.md`](results/synteny/report.md)
 
+**S9a** built the codon alignment every selection test stands on: a
+nucleotide sequence for all **57** vertebrate tips that provably encodes the
+exact protein S6 aligned, 3,253 codons of which trimAl keeps 2,459. Two of
+those 57 needed more than one attempt, and both are human — UniProt
+cross-references five Ensembl transcripts for ITPR1 and two for ITPR2, and
+in each the *first* is not the isoform the tree was built on, so a route
+that returns the first CDS it can download silently analyses a different
+protein (D36). First results, on a family held about as tightly as a gene
+can be: **ω = 0.024 (ITPR1) and 0.043 (ITPR2)** — twenty-five to forty
+silent changes for every one that alters the protein — and synonymous sites
+that are saturated *within* a single paralogue, not only between them
+(94 % of within-ITPR1 pairs past dS = 1.5), so the pairwise matrix is a
+diagnostic here and every reported ω comes from a tree-based model.
+→ [`results/selection/report.md`](results/selection/report.md)
+
+![Purifying selection on every paralogue](results/selection/figures/s9_omega_by_paralog.png)
+
 ![The 2R paralogon around the three receptors](results/synteny/figures/synteny_paralogon.png)
 
 ![Conservation and the domain architecture](results/msa_v2/figures/msa_conservation.png)
@@ -264,7 +281,8 @@ One task per session. Full ledger with dependencies and results in
 | S6 | Alignment upgrade (MAFFT L-INS-i + trimAl) | ✅ completed 2026-09-06 |
 | S7 | ML phylogeny, rooted on RyR; which paralogs are sisters | ✅ completed 2026-09-07 |
 | S8 | Synteny across the ITPR loci | ✅ completed 2026-09-07 |
-| S9 | ML selection (codeml, HyPhy RELAX) | ⏳ pending |
+| S9a | The codon alignment every selection test stands on | ✅ completed 2026-09-07 |
+| S9b | ML selection (codeml branch/site models, HyPhy RELAX) | 🔄 in progress |
 | S10 | Annotation-bug molecular validation | ⏳ pending |
 | S11 | Structures + TM-align vs cryo-EM references | ⏳ pending |
 | S12 | Expression evidence (SRA junction reads) | ⏳ pending |

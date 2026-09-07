@@ -1775,3 +1775,102 @@ carries a final tiebreak. T11 now tests order invariance on every build,
 and `synteny_stats.json` records the SHA-256 of every table.
 
 **Next.** S9 — ML selection (dN/dS), deps S6 only, which is complete.
+
+## 2026-09-07 (cont.) — S9a: the codon alignment, and two silent failures it walked into
+
+**Task.** S9 as written is one session's worth of instrument and several
+sessions' worth of PAML, so it was split in the ledger the way S5 was:
+**S9a** builds the codon alignment every selection test stands on, **S9b**
+runs the models. S9a is complete; S9b's suite is running and resumable.
+
+**What the instrument had to guarantee.** dN/dS is a statement about codons,
+so every sequence in the alignment has to provably encode the *exact*
+protein S6 aligned and S7 built its tree from. 57 vertebrate family tips,
+43 through UniProt cross-references (Ensembl → ENA → RefSeq `coded_by`) and
+14 through a miniprot locus realignment. **57 / 57 validated.**
+
+**The first silent failure was in the ported route itself, and it hit the
+two records the paper leans on hardest.** The PIEZO implementation returns
+the first CDS a route successfully downloads. A UniProt entry cross-references
+every Ensembl transcript of its gene, and the entry's own sequence is one
+particular isoform: human ITPR1 lists **five** transcripts and human ITPR2
+**two**, and in each the first is not the isoform S6 aligned. That does not
+fail — it substitutes a different isoform for the protein the tree was built
+on, which is a *wrong* codon alignment rather than a missing one. First run:
+`validation_failed` on human ITPR1 and human ITPR2 and nothing else. The
+routes are now candidate generators and the caller keeps the first that
+**validates** (D36); human ITPR1 needed nine candidates, ITPR2 three.
+
+**Masking is now total, not partial.** The port masks internal stops. It
+leaves any *other* translation/protein disagreement in place, which hands
+pal2nal a pair that does not agree — and pal2nal resolves that by dropping
+the sequence, quietly. Every disagreement is masked to `NNN` now (24 codons
+across the whole set, 15 of them internal stops), and the aligned protein is
+written with `X` at those positions so the two files always agree.
+
+That change is also what recovered the 57th tip. *Hymenochirus boettgeri*
+ITPR3 spans 795 kb; a locus rerun indexes 800 kb where the sweep indexed
+3.2 Gbp, so miniprot placed the **first exon** differently — 9 residues of
+2,666, same length, everything else exact. The port refuses anything but an
+exact match. Same length and within 1 % is now accepted as the same gene
+model with those nine codons masked, and beyond that is still refused
+(`s9_test_codon.py` T11 tests all three directions).
+
+**Selection sets come from the tree, not the census.** codeml's branch
+models mark a *node*: a foreground that is not a clade does not fail, it
+marks a larger one and returns a well-formed ω for a hypothesis nobody
+asked. So the three sets are S7's **extended paralog clades**, re-derived
+from `rooted.nwk` with S7's own rule and cross-checked against
+`paralog_clades.tsv` — a size or membership disagreement is a hard failure.
+ITPR1 19, ITPR2 13, ITPR3 19. That nests **7 unlabelled `vertebrate_basal`
+tips** inside paralog clades (D30 read forwards) and leaves **6 in no clade
+at all — exactly the six cyclostome loci S7 handed to S8 and S8 reported
+underpowered.** They stay in the whole-tree analyses as background, because
+dropping them would change the branch lengths every other estimate is made
+on, and they are in no foreground.
+
+**The second silent failure was mine, and the self-tests did not have it
+until it happened.** The per-paralog subset files were written from a
+`set`, so their row order is hash-seed dependent: same alignment, same
+likelihood, different SHA-256 on every run — and rebuilding to add a column
+rewrote `codon_ITPR1.phy` underneath a running codeml job. This is S8's T11
+in a new place. Fixed by writing rows in the order they are asked for, and
+now tested two ways: T13 that the order follows the input, and **T14 that
+three separate interpreters at different `PYTHONHASHSEED` values agree** —
+same-process repetition cannot see this class of bug. Confirmed T14 fires on
+the set-based version before trusting it.
+
+**S1's toolchain manifest never probed this task's tools.** codeml, yn00,
+`pal2nal.pl` and `hyphy` have been in the `piezo1` env all along and were
+not in `TOOLS`, so S9 opened by reporting `pal2nal.pl` missing on a machine
+that had it. Added, along with `stdin=DEVNULL` and a scratch cwd in
+`probe()` — codeml *prompts* for a control file on a terminal, and in a
+directory holding a `codeml.ctl` it would start a real analysis instead of
+printing its banner. codeml reports no version of its own; yn00 from the
+same build does, and the manifest records that the number is borrowed.
+PAML 4.10.10, pal2nal v14, HyPhy 2.5.101.
+
+**Numbers.** 3,253 codons; trimAl `-automated1` keeps 2,459 (75.6 %),
+chosen on the protein and applied codon-aware. PAL2NAL cross-checked
+nucleotide-by-nucleotide against an independent in-house mapping for all 57
+sequences. 14 negative controls pass on every build.
+
+**S9b, in flight.** ITPR1 ω = **0.0238**, ITPR2 ω = **0.0430**; the
+curated-CDS sensitivity subsets give 0.0212 and 0.0318, so the genome gene
+models are not driving the estimates. The result that changes how the rest
+must be read: **synonymous saturation is reached inside a single paralog,
+not only between them** — 94 % of within-ITPR1 and 85 % of within-ITPR2
+pairs exceed dS = 1.5, and dN plateaus near 0.1 while pairwise dS runs past
+50. A paralog set spanning shark to teleost to mammal has burned its
+fourfold-degenerate sites. The pairwise matrix is therefore a diagnostic and
+not an estimate, and every ω reported comes from a tree-based model. Logged
+as an emergent task: re-estimate ω inside a shallow clade where dS is still
+determined, and report the two side by side.
+
+**Branch-site model A is restarted by construction (D37)** — four initial ω
+on every paralog stem, with the spread committed — rather than repaired
+after the fact the way the PIEZO project had to.
+
+**Next.** S9b: finish the codeml suite (`python scripts/s9_codeml.py`, fully
+resumable), then `s9_relax.py`, `s9_tables.py`, `s9_report.py`,
+`s9_figures.py`.

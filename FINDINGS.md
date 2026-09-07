@@ -1170,3 +1170,74 @@ same genome. That is not a negative answer; it is the honest report that
 this instrument cannot reach the question, and the next one will have to
 compare the neighbours by what they *are* rather than by what they are
 called. *(pending: a name-independent synteny instrument)*
+
+## 2026-09-07 (cont.) — How hard evolution has been holding on to these genes
+
+Everything so far has measured *similarity*: how alike two receptors are.
+That is a good instrument but it cannot separate two very different
+histories. A protein can look almost unchanged because it has been protected
+by natural selection for half a billion years — or because not much time has
+passed. To tell those apart you have to compare the changes that alter the
+protein against the changes that do not, and the ratio between them is the
+closest thing biology has to a direct read-out of how strongly a gene is
+being held in place.
+
+**These receptors are held about as tightly as a gene can be.** For every
+change that alters the protein, roughly **twenty-five to forty** silent
+changes have accumulated instead. Put another way: almost every mutation that
+would have changed one of these 2,700 amino acids has been removed by
+selection. That is not a mild constraint. It is the profile of a protein
+where nearly every position matters — consistent with a channel that has to
+fold into a four-part assembly, bind its messenger at one end and open a
+gate 100 Å away at the other.
+
+**And the three copies are not held equally.** ITPR1 — the receptor that
+carries almost all of this family's known human disease mutations — is the
+most tightly constrained of the ones measured so far, ITPR2 the least. If
+that ordering holds when the third receptor lands, it says something worth
+saying: the gene where a single amino-acid change most often causes disease
+in people is the same gene evolution has been most reluctant to let change at
+all, across 450 million years of vertebrates. Those two facts come from
+completely different places — one from clinics, one from genomes — and they
+agree. *(pending: S9b, which finishes the third receptor and the statistical
+tests)*
+
+**The silent positions, meanwhile, have been completely rewritten.** This is
+the surprise of the session. We expected the silent sites to be saturated —
+turned over so many times that they carry no more information — *between* the
+three receptors, which were made by whole-genome duplications more than 500
+million years ago. They turn out to be saturated **within a single receptor**,
+comparing a shark to a fish to a mammal. Over 90 % of such comparisons are
+past the point where the silent clock can still be read.
+
+The picture that gives is striking. Take human ITPR1 and its shark
+counterpart: the protein is nearly the same protein, while the DNA
+underneath it has been rewritten at essentially every position that was free
+to change. The gene has been running in place, very fast, for a very long
+time — and the protein has not moved. It also means every number in this
+analysis has to be read as a firm *direction* rather than a precise value,
+and we have logged the follow-up that would sharpen it: repeat the
+measurement inside a shallower group, such as the mammals alone, where the
+clock has not yet run out.
+
+**The lampreys and hagfish drop out again — for a third distinct reason.**
+Six receptor genes in those two ancient lineages have now been asked three
+times which of ITPR1/2/3 they correspond to. The family tree put them in
+their own separate groups and could not attach them. The neighbouring genes
+could not say, because after 550 million years there is no shared vocabulary
+of gene names left to compare. And now the selection analysis has to decline
+as well, for a reason of its own: it can only ask a question about a group
+the tree actually defines, and for these six it defines none. Three
+instruments, three different kinds of silence. That is not a failure to
+answer — it is the same answer arriving from three directions, that these
+genes sit outside the vertebrate three rather than inside them.
+
+**A footnote on how nearly this went wrong.** Building this analysis needs a
+DNA sequence for each protein, and the databases offer several for the same
+gene — one per alternative version of the protein. Taking the first one
+offered silently substituted the *wrong version* of human ITPR1 and human
+ITPR2, the two best-studied genes in the whole family. Nothing would have
+crashed; the numbers would simply have been about a slightly different
+protein than the one every other result in this project is about. The fix is
+to translate every candidate and keep the one that actually matches. Human
+ITPR1 needed nine tries.

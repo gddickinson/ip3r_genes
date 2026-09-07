@@ -11,3 +11,7 @@ trimal	v1.5.rev1	ok	PATH	S6	/opt/homebrew/bin/trimal
 iqtree2	2.3.6	ok	PATH	S7	/opt/homebrew/bin/iqtree2
 datasets	18.35.0	ok	env	S4	/opt/anaconda3/envs/piezo1/bin/datasets
 foldseek	10.941cd33	ok	env	S11 (opt)	/opt/anaconda3/envs/piezo1/bin/foldseek
+yn00	4.10.10	ok	env	S9	/opt/anaconda3/envs/piezo1/bin/yn00
+codeml	4.10.10 (via yn00)	ok	env	S9	/opt/anaconda3/envs/piezo1/bin/codeml
+pal2nal.pl	14	ok	env	S9	/opt/anaconda3/envs/piezo1/bin/pal2nal.pl
+hyphy	2.5.101(MP)	ok	env	S9	/opt/anaconda3/envs/piezo1/bin/hyphy

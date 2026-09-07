@@ -22,6 +22,7 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
 from pathlib import Path
 
@@ -50,7 +51,20 @@ TOOLS: list[tuple[str, list[str], str | None, str]] = [
     ("iqtree2",     ["--version"],  r"version ([\d.]+)",            "S7"),
     ("datasets",    ["--version"],  r"version: ([\d.]+)",           "S4"),
     ("foldseek",    ["version"],    None,                           "S11 (opt)"),
+    # S9's selection toolchain. It was installed all along and never
+    # probed, so the first run of S9 discovered `pal2nal.pl` "missing" on a
+    # machine that had it — a manifest that omits a tool is a manifest that
+    # cannot warn about it. codeml reports no version of its own; yn00,
+    # from the same PAML build, does, and `VERSION_FROM` records that the
+    # number is borrowed rather than measured.
+    ("yn00",        [],             r"paml version ([\d.]+)",        "S9"),
+    ("codeml",      [],             r"paml version ([\d.]+)",        "S9"),
+    ("pal2nal.pl",  [],             r"pal2nal.pl\s+\(v([\d.]+)\)",  "S9"),
+    ("hyphy",       ["--version"],  r"HYPHY ([\d.()A-Za-z]+)",       "S9"),
 ]
+
+#: A tool whose version has to be read off a sibling from the same build.
+VERSION_FROM = {"codeml": "yn00"}
 
 #: Python packages the pipeline imports.
 PY_PACKAGES = ["Bio", "requests", "matplotlib", "numpy", "scipy", "pandas"]
@@ -73,8 +87,14 @@ def probe(name: str, argv: list[str], pattern: str | None) -> dict:
         return {"tool": name, "version": "", "status": "MISSING",
                 "path": "", "location": ""}
     try:
-        p = subprocess.run([path, *argv], capture_output=True, text=True,
-                           timeout=60)
+        # stdin=DEVNULL and a scratch cwd, both because of PAML: with a
+        # terminal on stdin `codeml` *prompts* for a control file and the
+        # probe hangs, and in a directory that happens to hold a
+        # `codeml.ctl` it would start a real analysis instead of printing
+        # its banner.
+        with tempfile.TemporaryDirectory() as td:
+            p = subprocess.run([path, *argv], capture_output=True, text=True,
+                               timeout=60, stdin=subprocess.DEVNULL, cwd=td)
     except (OSError, subprocess.SubprocessError) as exc:
         return {"tool": name, "version": "", "status": f"ERROR: {exc}",
                 "path": path, "location": where}
@@ -103,6 +123,11 @@ def py_versions() -> list[tuple[str, str]]:
 def main() -> int:
     rows = [probe(n, argv, pat) for n, argv, pat, _ in TOOLS]
     need = {n: task for n, _, _, task in TOOLS}
+    by_name = {r["tool"]: r for r in rows}
+    for tool, donor in VERSION_FROM.items():
+        r, d = by_name.get(tool), by_name.get(donor)
+        if r and d and d["status"] == "ok" and r["status"] == "ok":
+            r["version"] = f"{d['version']} (via {donor})"
     OUT_TSV.parent.mkdir(parents=True, exist_ok=True)
     cols = ["tool", "version", "status", "location", "needed_by", "path"]
     with OUT_TSV.open("w") as f:

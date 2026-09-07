@@ -1,0 +1,84 @@
+{
+  "m0_ITPR1": {
+    "description": "one-ratio \u03c9 within ITPR1",
+    "kappa": 1.633,
+    "lnL": -56619.9785,
+    "minutes": 0.0,
+    "np": 37,
+    "omegas": [
+      0.02375
+    ],
+    "settings": {
+      "NSsites": "0",
+      "model": "0",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 11.365328
+  },
+  "m0_ITPR1_curated": {
+    "description": "one-ratio \u03c9 within ITPR1, curated CDS only (no genome gene models)",
+    "kappa": 1.61502,
+    "lnL": -53721.564982,
+    "minutes": 2.01,
+    "np": 33,
+    "omegas": [
+      0.02118
+    ],
+    "settings": {
+      "NSsites": "0",
+      "model": "0",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 11.618318
+  },
+  "m1a_ITPR1": {
+    "description": "site model M1A within ITPR1",
+    "kappa": 1.6715,
+    "lnL": -56301.659834,
+    "minutes": 7.8,
+    "np": 38,
+    "omegas": [],
+    "settings": {
+      "NSsites": "1",
+      "model": "0",
+      "ncatG": "3",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 10.944819
+  },
+  "m2a_ITPR1": {
+    "description": "site model M2A within ITPR1",
+    "kappa": 1.67149,
+    "lnL": -56301.659841,
+    "minutes": 20.31,
+    "np": 40,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "model": "0",
+      "ncatG": "3",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 10.944807
+  },
+  "pair_ITPR1": {
+    "description": "pairwise ML dN/dS within ITPR1",
+    "kappa": null,
+    "lnL": 0.0,
+    "minutes": 0.24,
+    "np": 0,
+    "omegas": [],
+    "settings": {
+      "NSsites": "0",
+      "model": "0",
+      "omega": "0.4",
+      "runmode": "-2"
+    },
+    "site_classes": "pairwise",
+    "tree_length": null
+  }
+}

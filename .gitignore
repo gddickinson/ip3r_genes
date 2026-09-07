@@ -27,8 +27,16 @@ docs/findings_summary.pdf
 results/phylogeny/**/*.ckp.gz
 results/phylogeny/**/*.parstree
 
-# PAML optimiser iteration traces (regenerate with the run; not evidence)
+# PAML per-run scratch (regenerates with the run; not evidence). `mlc` is
+# the primary output and is kept, along with codeml.ctl, the tree, the
+# 2ML.* pairwise matrices and result.json — everything needed to re-check a
+# run. `lnf` (per-site likelihoods) and `rst` grow with the site models.
 results/selection/codeml/*/rub
+results/selection/codeml/*/lnf
+results/selection/codeml/*/rst
+results/selection/codeml/*/rst1
+results/selection/codeml/*/2NG.*
+results/selection/codeml/*/RUNNING
 
 # PAML scratch files if codeml is ever invoked from the repo root
 /rst

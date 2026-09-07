@@ -1,0 +1,58 @@
+code	label	species	class	census_group	set	route	why
+T1_Aptery_mante	ITPR1_Apteryx_mantelli_North_Island_brown_ki_A0ABM4F3U0	Apteryx mantelli (North Island brown kiwi)	Aves	ITPR1	ITPR1	uniprot	census label, in the tree's clade
+T1_Bos_tauru	ITPR1_Bos_taurus_Bovine_Q9TU34	Bos taurus (Bovine)	Mammalia	ITPR1	ITPR1	uniprot	census label, in the tree's clade
+T1_Chanos_chano	ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VJN0	Chanos chanos (Milkfish) (Mugil chanos)	Actinopteri	ITPR1	ITPR1	uniprot	census label, in the tree's clade
+T1_Chanos_chano2	ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VNY7	Chanos chanos (Milkfish) (Mugil chanos)	Actinopteri	ITPR1	ITPR1	uniprot	census label, in the tree's clade
+T1_Danio_rerio	ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M2BDG0	Danio rerio (Zebrafish) (Brachydanio rerio)	Actinopteri	ITPR1	ITPR1	uniprot	census label, in the tree's clade
+T1_Danio_rerio2	ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AB32U288	Danio rerio (Zebrafish) (Brachydanio rerio)	Actinopteri	ITPR1	ITPR1	uniprot	census label, in the tree's clade
+T1_Danio_rerio3	ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AC58JVG8	Danio rerio (Zebrafish) (Brachydanio rerio)	Actinopteri	ITPR1	ITPR1	uniprot	census label, in the tree's clade
+T1_Gallus_gallu	ITPR1_Gallus_gallus_Chicken_A0A8V0ZJT0	Gallus gallus (Chicken)	Aves	ITPR1	ITPR1	uniprot	census label, in the tree's clade
+T1_Homo_sapie	ITPR1_Homo_sapiens_Human_Q14643	Homo sapiens (Human)	Mammalia	ITPR1	ITPR1	uniprot	census label, in the tree's clade
+T1_Latime_chalu	ITPR1_Latimeria_chalumnae_Coelacanth_H3A1P5	Latimeria chalumnae (Coelacanth)		ITPR1	ITPR1	uniprot	census label, in the tree's clade
+T1_Mus_muscu	ITPR1_Mus_musculus_Mouse_P11881	Mus musculus (Mouse)	Mammalia	ITPR1	ITPR1	uniprot	census label, in the tree's clade
+T1_Podarc_mural	ITPR1_Podarcis_muralis_Wall_lizard_Lacerta_m_A0A670JBK6	Podarcis muralis (Wall lizard) (Lacerta muralis)	Lepidosauria	ITPR1	ITPR1	uniprot	census label, in the tree's clade
+T1_Salari_fasci	ITPR1_Salarias_fasciatus_Jewelled_blenny_Ble_A0A672IUQ7	Salarias fasciatus (Jewelled blenny) (Blennius fasciatus)	Actinopteri	ITPR1	ITPR1	uniprot	census label, in the tree's clade
+T1_Somnio_micro	ITPR1_Somniosus_microcephalus_GCF_052327205.1_ITPR1_147905519	Somniosus microcephalus	Chondrichthyes	ITPR1	ITPR1	miniprot	census label, in the tree's clade
+T1_Xenopu_tropi	ITPR1_Xenopus_tropicalis_Western_clawed_frog_A0A8J0T3U5	Xenopus tropicalis (Western clawed frog) (Silurana tropicalis)	Amphibia	ITPR1	ITPR1	uniprot	census label, in the tree's clade
+T1_basal_Callo	vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3IQL0	Callorhinchus milii (Ghost shark)	Chondrichthyes	vertebrate_basal	ITPR1	uniprot	tree places a vertebrate_basal tip in the ITPR1 clade
+T1_basal_Callo2	vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JHJ0	Callorhinchus milii (Ghost shark)	Chondrichthyes	vertebrate_basal	ITPR1	uniprot	tree places a vertebrate_basal tip in the ITPR1 clade
+T1_basal_Chilo	vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401SQC9	Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)	Chondrichthyes	vertebrate_basal	ITPR1	uniprot	tree places a vertebrate_basal tip in the ITPR1 clade
+T1_basal_Latim	vertebrate_basal_Latimeria_chalumnae_GCF_037176945.1_ITPR1_35775795	Latimeria chalumnae	Coelacanthimorpha	vertebrate_basal	ITPR1	miniprot	tree places a vertebrate_basal tip in the ITPR1 clade
+T2_Astato_calli	ITPR2_Astatotilapia_calliptera_Eastern_river_A0AAX7UHL1	Astatotilapia calliptera (Eastern river bream) (Chromis callipterus)	Actinopteri	ITPR2	ITPR2	uniprot	census label, in the tree's clade
+T2_Danio_rerio	ITPR2_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M9PQQ3	Danio rerio (Zebrafish) (Brachydanio rerio)	Actinopteri	ITPR2	ITPR2	uniprot	census label, in the tree's clade
+T2_Echino_cooke	ITPR2_Echinorhinus_cookei_GCA_057876775.1_ITPR2_17288896	Echinorhinus cookei	Chondrichthyes	ITPR2	ITPR2	miniprot	census label, in the tree's clade
+T2_Gallus_gallu	ITPR2_Gallus_gallus_Chicken_F1P1X4	Gallus gallus (Chicken)	Aves	ITPR2	ITPR2	uniprot	census label, in the tree's clade
+T2_Gekko_japon	ITPR2_Gekko_japonicus_Schlegel_s_Japanese_ge_A0ABM1LG32	Gekko japonicus (Schlegel's Japanese gecko)	Lepidosauria	ITPR2	ITPR2	uniprot	census label, in the tree's clade
+T2_Homo_sapie	ITPR2_Homo_sapiens_Human_Q14571	Homo sapiens (Human)	Mammalia	ITPR2	ITPR2	uniprot	census label, in the tree's clade
+T2_Mus_muscu	ITPR2_Mus_musculus_Mouse_Q9Z329	Mus musculus (Mouse)	Mammalia	ITPR2	ITPR2	uniprot	census label, in the tree's clade
+T2_Nibea_albif	ITPR2_Nibea_albiflora_GCA_014281875.1_ITPR2_12447838	Nibea albiflora	Actinopteri	ITPR2	ITPR2	miniprot	census label, in the tree's clade
+T2_Rattus_norve	ITPR2_Rattus_norvegicus_Rat_P29995	Rattus norvegicus (Rat)	Mammalia	ITPR2	ITPR2	uniprot	census label, in the tree's clade
+T2_Strigo_habro	ITPR2_Strigops_habroptila_Kakapo_A0A672UP22	Strigops habroptila (Kakapo)	Aves	ITPR2	ITPR2	uniprot	census label, in the tree's clade
+T2_Xenopu_tropi	ITPR2_Xenopus_tropicalis_Western_clawed_frog_A0A6I8RGU0	Xenopus tropicalis (Western clawed frog) (Silurana tropicalis)	Amphibia	ITPR2	ITPR2	uniprot	census label, in the tree's clade
+T2_basal_Callo	vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JQ24	Callorhinchus milii (Ghost shark)	Chondrichthyes	vertebrate_basal	ITPR2	uniprot	tree places a vertebrate_basal tip in the ITPR2 clade
+T2_basal_Chilo	vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401RNU3	Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)	Chondrichthyes	vertebrate_basal	ITPR2	uniprot	tree places a vertebrate_basal tip in the ITPR2 clade
+T3_Athene_cunic	ITPR3_Athene_cunicularia_Burrowing_owl_Speot_A0A663MIF9	Athene cunicularia (Burrowing owl) (Speotyto cunicularia)	Aves	ITPR3	ITPR3	uniprot	census label, in the tree's clade
+T3_Callor_milii	ITPR3_Callorhinchus_milii_Ghost_shark_A0A4W3GWE7	Callorhinchus milii (Ghost shark)	Chondrichthyes	ITPR3	ITPR3	uniprot	census label, in the tree's clade
+T3_Copsyc_seche	ITPR3_Copsychus_sechellarum_GCA_054084135.1_ITPR3_2574051	Copsychus sechellarum	Aves	ITPR3	ITPR3	miniprot	census label, in the tree's clade
+T3_Danio_rerio	ITPR3_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M6Z266	Danio rerio (Zebrafish) (Brachydanio rerio)	Actinopteri	ITPR3	ITPR3	uniprot	census label, in the tree's clade
+T3_Echino_cooke	ITPR3_Echinorhinus_cookei_GCA_057876775.1_ITPR3_46076206	Echinorhinus cookei	Chondrichthyes	ITPR3	ITPR3	miniprot	census label, in the tree's clade
+T3_Gallus_gallu	ITPR3_Gallus_gallus_Chicken_A0A8V1ACE6	Gallus gallus (Chicken)	Aves	ITPR3	ITPR3	uniprot	census label, in the tree's clade
+T3_Homo_sapie	ITPR3_Homo_sapiens_Human_Q14573	Homo sapiens (Human)	Mammalia	ITPR3	ITPR3	uniprot	census label, in the tree's clade
+T3_Hymeno_boett	ITPR3_Hymenochirus_boettgeri_GCA_019447015.1_ITPR3_126480658	Hymenochirus boettgeri	Amphibia	ITPR3	ITPR3	miniprot	census label, in the tree's clade
+T3_Latime_chalu	ITPR3_Latimeria_chalumnae_Coelacanth_H3B932	Latimeria chalumnae (Coelacanth)		ITPR3	ITPR3	uniprot	census label, in the tree's clade
+T3_Mus_muscu	ITPR3_Mus_musculus_Mouse_P70227	Mus musculus (Mouse)	Mammalia	ITPR3	ITPR3	uniprot	census label, in the tree's clade
+T3_Nothob_furze	ITPR3_Nothobranchius_furzeri_Turquoise_killi_A0A8C6KWV8	Nothobranchius furzeri (Turquoise killifish)	Actinopteri	ITPR3	ITPR3	uniprot	census label, in the tree's clade
+T3_Pogona_vitti	ITPR3_Pogona_vitticeps_central_bearded_drago_A0A6J0TV85	Pogona vitticeps (central bearded dragon)	Lepidosauria	ITPR3	ITPR3	uniprot	census label, in the tree's clade
+T3_Rattus_norve	ITPR3_Rattus_norvegicus_Rat_Q63269	Rattus norvegicus (Rat)	Mammalia	ITPR3	ITPR3	uniprot	census label, in the tree's clade
+T3_Saguin_oedip	ITPR3_Saguinus_oedipus_GCA_031835075.1_ITPR3_43596197	Saguinus oedipus	Mammalia	ITPR3	ITPR3	miniprot	census label, in the tree's clade
+T3_Sousa_chine	ITPR3_Sousa_chinensis_GCA_007760645.1_ITPR3_5949234	Sousa chinensis	Mammalia	ITPR3	ITPR3	miniprot	census label, in the tree's clade
+T3_Spheno_punct	ITPR3_Sphenodon_punctatus_GCA_003113815.1_ITPR3_3264626	Sphenodon punctatus	Lepidosauria	ITPR3	ITPR3	miniprot	census label, in the tree's clade
+T3_Spizel_passe	ITPR3_Spizella_passerina_GCA_056776345.1_ITPR3_2783550	Spizella passerina	Aves	ITPR3	ITPR3	miniprot	census label, in the tree's clade
+T3_Xenopu_tropi	ITPR3_Xenopus_tropicalis_Western_clawed_frog_A0A8J0SYK9	Xenopus tropicalis (Western clawed frog) (Silurana tropicalis)	Amphibia	ITPR3	ITPR3	uniprot	census label, in the tree's clade
+T3_basal_Chilo	vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401S8Q3	Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)	Chondrichthyes	vertebrate_basal	ITPR3	uniprot	tree places a vertebrate_basal tip in the ITPR3 clade
+BG_basal_Myxin	vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_122839381	Myxine glutinosa	Myxini	vertebrate_basal	background	miniprot	no paralog clade contains it
+BG_basal_Myxin2	vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_297520938	Myxine glutinosa	Myxini	vertebrate_basal	background	miniprot	no paralog clade contains it
+BG_basal_Myxin3	vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_86116883	Myxine glutinosa	Myxini	vertebrate_basal	background	miniprot	no paralog clade contains it
+BG_basal_Petro	vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0AAJ7U4X1	Petromyzon marinus (Sea lamprey)	Hyperoartia	vertebrate_basal	background	uniprot	no paralog clade contains it
+BG_basal_Petro2	vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8BRT5	Petromyzon marinus (Sea lamprey)	Hyperoartia	vertebrate_basal	background	uniprot	no paralog clade contains it
+BG_basal_Petro3	vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8C056	Petromyzon marinus (Sea lamprey)	Hyperoartia	vertebrate_basal	background	uniprot	no paralog clade contains it
