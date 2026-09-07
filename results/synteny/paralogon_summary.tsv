@@ -1,0 +1,13 @@
+pair	n_shared	n_at_10	n_at_25	n_at_50	n_shared_bg_lt_05	n_shared_bg_lt_01	n_control_windows	top
+ITPR1_vs_ITPR2@fixed10	1	1	1	1	1	1	674	BHLHE(bg 0.007, 0.62)
+ITPR1_vs_ITPR3@fixed10	1	1	1	0	1	1	674	GRM(bg 0.004, 0.42)
+ITPR1_vs_RYR@fixed10	0	0	0	0	0	0	674	
+ITPR2_vs_ITPR3@fixed10	0	0	0	0	0	0	674	
+ITPR2_vs_RYR@fixed10	0	0	0	0	0	0	674	
+ITPR3_vs_RYR@fixed10	0	0	0	0	0	0	674	
+ITPR1_vs_ITPR2@informative10	1	1	1	1	1	1	680	BHLHE(bg 0.009, 0.62)
+ITPR1_vs_ITPR3@informative10	2	2	1	0	2	2	680	GRM(bg 0.004, 0.42); EDEM(bg 0.003, 0.14)
+ITPR1_vs_RYR@informative10	0	0	0	0	0	0	680	
+ITPR2_vs_ITPR3@informative10	0	0	0	0	0	0	680	
+ITPR2_vs_RYR@informative10	0	0	0	0	0	0	680	
+ITPR3_vs_RYR@informative10	0	0	0	0	0	0	680	

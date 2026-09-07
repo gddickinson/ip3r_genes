@@ -1,0 +1,504 @@
+label	organism	vclass	cell	truth	call	best	best_score	margin	n_keys	score_ITPR1	score_ITPR2	score_ITPR3
+Alca_torda|GCA_008658365.1|ITPR1.0	Alca torda	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Alligator_mississippiensis|GCF_030867095.1|ITPR1.0	Alligator mississippiensis	Crocodylia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Ameca_splendens|GCA_040091285.1|ITPR1.0	Ameca splendens	Actinopteri	ITPR1	ITPR1	no_call		0	0	0	0	0	0
+Amia_ocellicauda|GCF_036373705.1|ITPR1.0	Amia ocellicauda	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	7	7	20	7	0	0
+Anas_platyrhynchos|GCF_047663525.1|ITPR1.0	Anas platyrhynchos	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Antennarius_striatus|GCF_040054535.1|ITPR1.0	Antennarius striatus	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Aphelocoma_coerulescens|GCF_041296385.2|ITPR1.0	Aphelocoma coerulescens	Aves	ITPR1	ITPR1	ITPR1	ITPR1	13	13	20	13	0	0
+Aptenodytes_forsteri|GCF_000699145.1|ITPR1.0	Aptenodytes forsteri	Aves	ITPR1	ITPR1	ITPR1	ITPR1	13	13	17	13	0	0
+Aptenodytes_patagonicus|GCF_965638725.1|ITPR1.0	Aptenodytes patagonicus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Apteryx_mantelli|GCF_036417845.1|ITPR1.0	Apteryx mantelli	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Apus_apus|GCF_020740795.1|ITPR1.0	Apus apus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Ataeniobius_toweri|GCA_036250305.1|ITPR1.0	Ataeniobius toweri	Actinopteri	ITPR1	ITPR1	no_call		0	0	0	0	0	0
+Balearica_regulorum_gibbericeps|GCF_011004875.1|ITPR1.0	Balearica regulorum gibbericeps	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Bombina_bombina|GCF_027579735.1|ITPR1.0	Bombina bombina	Amphibia	ITPR1	ITPR1	ITPR1	ITPR1	6	6	20	6	0	0
+Borostomias_antarcticus|GCF_949987555.1|ITPR1.0	Borostomias antarcticus	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Bucorvus_abyssinicus|GCA_009769605.1|ITPR1.0	Bucorvus abyssinicus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Callorhinchus_milii|GCF_018977255.1|ITPR1.0	Callorhinchus milii	Chondrichthyes	ITPR1	ITPR1	ITPR1	ITPR1	6	6	20	6	0	0
+Caloenas_nicobarica|GCF_036013445.1|ITPR1.0	Caloenas nicobarica	Aves	ITPR1	ITPR1	ITPR1	ITPR1	9	9	20	9	0	0
+Calonectris_borealis|GCF_964195595.1|ITPR1.0	Calonectris borealis	Aves	ITPR1	ITPR1	ITPR1	ITPR1	12	12	20	12	0	0
+Calypte_anna|GCF_003957555.1|ITPR1.0	Calypte anna	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Caprimulgus_europaeus|GCF_907165065.1|ITPR1.0	Caprimulgus europaeus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Carcharodon_carcharias|GCF_017639515.1|ITPR1.0	Carcharodon carcharias	Chondrichthyes	ITPR1	ITPR1	ITPR1	ITPR1	11	11	20	11	0	0
+Cariama_cristata|GCF_000690535.1|ITPR1.0	Cariama cristata	Aves	ITPR1	ITPR1	no_call		0	0	0	0	0	0
+Ceyx_cyanopectus|GCA_013401355.1|ITPR1.0	Ceyx cyanopectus	Aves	ITPR1	ITPR1	no_call		0	0	0	0	0	0
+Chaetura_pelagica|GCF_000747805.2|ITPR1.0	Chaetura pelagica	Aves	ITPR1	ITPR1	ITPR1	ITPR1	13	13	17	13	0	0
+Chanos_chanos|GCF_902362185.1|ITPR1.0	Chanos chanos	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Characodon_lateralis|GCA_036250325.1|ITPR1.0	Characodon lateralis	Actinopteri	ITPR1	ITPR1	no_call		0	0	0	0	0	0
+Charadrius_vociferus|GCF_000708025.1|ITPR1.0	Charadrius vociferus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	18	14	0	0
+Chiloscyllium_punctatum|GCF_047496795.1|ITPR1.0	Chiloscyllium punctatum	Chondrichthyes	ITPR1	ITPR1	ITPR1	ITPR1	10	10	20	10	0	0
+Chlamydotis_macqueenii|GCF_036417535.1|ITPR1.0	Chlamydotis macqueenii	Aves	ITPR1	ITPR1	ITPR1	ITPR1	13	13	20	13	0	0
+Ciconia_boyciana|GCF_034638445.1|ITPR1.0	Ciconia boyciana	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Cnephaeus_nilssonii|GCF_951640355.1|ITPR1.0	Cnephaeus nilssonii	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	8	8	20	8	0	0
+Colius_striatus|GCF_028858725.1|ITPR1.0	Colius striatus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Cololabis_saira|GCF_033807715.1|ITPR1.0	Cololabis saira	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Columbina_picui|GCA_013397635.1|ITPR1.0	Columbina picui	Aves	ITPR1	ITPR1	no_call	ITPR1	1	1	1	1	0	0
+Corvus_brachyrhynchos|GCF_000691975.1|ITPR1.0	Corvus brachyrhynchos	Aves	ITPR1	ITPR1	ITPR1	ITPR1	13	13	16	13	0	0
+Cricetulus_griseus|GCF_003668045.3|ITPR1.0	Cricetulus griseus	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Cuculus_canorus|GCF_017976375.1|ITPR1.0	Cuculus canorus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	13	13	20	13	0	0
+Cynocephalus_volans|GCF_027409185.1|ITPR1.0	Cynocephalus volans	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Danio_rerio|GCF_052040795.1|ITPR1.0	Danio rerio	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Dasypus_novemcinctus|GCF_030445035.2|ITPR1.0	Dasypus novemcinctus	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	13	13	20	13	0	0
+Diceros_bicornis_minor|GCF_020826845.1|ITPR1.0	Diceros bicornis minor	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Dromaius_novaehollandiae|GCF_036370855.1|ITPR1.0	Dromaius novaehollandiae	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Dromiciops_gliroides|GCF_019393635.1|ITPR1.0	Dromiciops gliroides	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Dryobates_pubescens|GCF_014839835.1|ITPR1.0	Dryobates pubescens	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Egretta_garzetta|GCF_000687185.1|ITPR1.0	Egretta garzetta	Aves	ITPR1	ITPR1	ITPR1	ITPR1	9	9	13	9	0	0
+Electrophorus_electricus|GCF_041902795.1|ITPR1.0	Electrophorus electricus	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Elephantulus_edwardii|GCF_000299155.1|ITPR1.0	Elephantulus edwardii	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	9	9	12	9	0	0
+Elephas_maximus_indicus|GCF_024166365.1|ITPR1.0	Elephas maximus indicus	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Eleutherodactylus_coqui|GCF_035609145.1|ITPR1.0	Eleutherodactylus coqui	Amphibia	ITPR1	ITPR1	ITPR1	ITPR1	13	13	20	13	0	0
+Engraulis_encrasicolus|GCF_034702125.1|ITPR1.0	Engraulis encrasicolus	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Equus_quagga|GCF_021613505.1|ITPR1.0	Equus quagga	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Eubucco_bourcierii|GCA_013396675.1|ITPR1.0	Eubucco bourcierii	Aves	ITPR1	ITPR1	ITPR1	ITPR1	3	3	4	3	0	0
+Eurypyga_helias|GCF_000690775.1|ITPR1.0	Eurypyga helias	Aves	ITPR1	ITPR1	no_call		0	0	0	0	0	0
+Falco_peregrinus|GCF_023634155.1|ITPR1.0	Falco peregrinus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Fulmarus_glacialis|GCF_000690835.1|ITPR1.0	Fulmarus glacialis	Aves	ITPR1	ITPR1	no_call		0	0	0	0	0	0
+Gadus_morhua|GCF_902167405.1|ITPR1.0	Gadus morhua	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Gallinula_chloropus|GCF_964237585.1|ITPR1.0	Gallinula chloropus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Gallus_gallus|GCF_016699485.2|ITPR1.0	Gallus gallus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Gavia_stellata|GCF_030936135.1|ITPR1.0	Gavia stellata	Aves	ITPR1	ITPR1	ITPR1	ITPR1	13	13	20	13	0	0
+Genypterus_blacodes|GCF_046128005.1|ITPR1.0	Genypterus blacodes	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Giraffa_tippelskirchi|GCF_054371585.1|ITPR1.0	Giraffa tippelskirchi	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Gopherus_flavomarginatus|GCF_025201925.1|ITPR1.0	Gopherus flavomarginatus	Testudines	ITPR1	ITPR1	ITPR1	ITPR1	12	12	20	12	0	0
+Gracilinanus_agilis|GCF_016433145.1|ITPR1.0	Gracilinanus agilis	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	13	13	20	13	0	0
+Gymnogyps_californianus|GCF_018139145.2|ITPR1.0	Gymnogyps californianus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Haliaeetus_albicilla|GCF_947461875.1|ITPR1.0	Haliaeetus albicilla	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Hemicordylus_capensis|GCF_027244095.1|ITPR1.0	Hemicordylus capensis	Lepidosauria	ITPR1	ITPR1	ITPR1	ITPR1	12	12	20	12	0	0
+Hemitrygon_akajei|GCF_048418815.1|ITPR1.0	Hemitrygon akajei	Chondrichthyes	ITPR1	ITPR1	ITPR1	ITPR1	11	11	20	11	0	0
+Heptranchias_perlo|GCF_035084215.1|ITPR1.0	Heptranchias perlo	Chondrichthyes	ITPR1	ITPR1	ITPR1	ITPR1	11	11	20	11	0	0
+Heterodontus_francisci|GCF_036365525.1|ITPR1.0	Heterodontus francisci	Chondrichthyes	ITPR1	ITPR1	ITPR1	ITPR1	11	11	20	11	0	0
+Heterohyrax_brucei|GCA_028571685.1|ITPR1.0	Heterohyrax brucei	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Homo_sapiens|GCF_000001405.40|ITPR1.0	Homo sapiens	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	19	14	0	0
+Hoplias_malabaricus|GCF_029633855.1|ITPR1.0	Hoplias malabaricus	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Ilyodon_furcidens|GCA_040091305.1|ITPR1.0	Ilyodon furcidens	Actinopteri	ITPR1	ITPR1	no_call		0	0	0	0	0	0
+Larus_argentatus|GCF_964417175.1|ITPR1.0	Larus argentatus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Lathamus_discolor|GCF_037157495.1|ITPR1.0	Lathamus discolor	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Lepisosteus_oculatus|GCF_040954835.1|ITPR1.0	Lepisosteus oculatus	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	7	7	20	7	0	0
+Leptosomus_discolor|GCF_034619465.1|ITPR1.0	Leptosomus discolor	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Lissotriton_helveticus|GCF_964261635.1|ITPR1.0	Lissotriton helveticus	Amphibia	ITPR1	ITPR1	ITPR1	ITPR1	13	13	20	13	0	0
+Lutjanus_erythropterus|GCF_056507025.1|ITPR1.0	Lutjanus erythropterus	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Macaca_mulatta|GCF_049350105.2|ITPR1.0	Macaca mulatta	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Macrotis_lagotis|GCF_037893015.1|ITPR1.0	Macrotis lagotis	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Manacus_vitellinus|GCF_001715985.3|ITPR1.0	Manacus vitellinus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Manis_pentadactyla|GCF_030020395.1|ITPR1.0	Manis pentadactyla	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Mesitornis_unicolor|GCF_000695765.1|ITPR1.0	Mesitornis unicolor	Aves	ITPR1	ITPR1	no_call		0	0	0	0	0	0
+Microchirus_variegatus|GCF_963457635.1|ITPR1.0	Microchirus variegatus	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Mus_musculus|GCF_000001635.27|ITPR1.0	Mus musculus	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Mycteria_americana|GCF_035582795.1|ITPR1.0	Mycteria americana	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Narcine_bancroftii|GCF_036971445.1|ITPR1.0	Narcine bancroftii	Chondrichthyes	ITPR1	ITPR1	ITPR1	ITPR1	7	7	20	7	0	0
+Neoarius_graeffei|GCF_027579695.1|ITPR1.0	Neoarius graeffei	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	11	1	0	0
+Neogale_vison|GCF_020171115.1|ITPR1.0	Neogale vison	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	13	13	20	13	0	0
+Nestor_notabilis|GCF_000696875.1|ITPR1.0	Nestor notabilis	Aves	ITPR1	ITPR1	no_call		0	0	0	0	0	0
+Nibea_albiflora|GCA_014281875.1|ITPR1.0	Nibea albiflora	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Nipponia_nippon|GCF_047370975.1|ITPR1.0	Nipponia nippon	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Notamacropus_eugenii|GCF_028372415.1|ITPR1.0	Notamacropus eugenii	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	13	13	20	13	0	0
+Nothoprocta_perdicaria|GCF_003342845.1|ITPR1.0	Nothoprocta perdicaria	Aves	ITPR1	ITPR1	ITPR1	ITPR1	9	9	20	9	0	0
+Notothenia_rossii|GCF_949606895.1|ITPR1.0	Notothenia rossii	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Nyctibius_grandis|GCF_013368605.1|ITPR1.0	Nyctibius grandis	Aves	ITPR1	ITPR1	ITPR1	ITPR1	13	13	20	13	0	0
+Opisthocomus_hoazin|GCF_030867145.1|ITPR1.0	Opisthocomus hoazin	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Ornithorhynchus_anatinus|GCF_004115215.2|ITPR1.0	Ornithorhynchus anatinus	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Orycteropus_afer_afer|GCF_000298275.1|ITPR1.0	Orycteropus afer afer	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	4	4	4	4	0	0
+Oryctolagus_cuniculus|GCF_964237555.1|ITPR1.0	Oryctolagus cuniculus	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	18	14	0	0
+Pelecanus_crispus|GCF_030463565.1|ITPR1.0	Pelecanus crispus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Phaethon_aethereus|GCF_964289735.1|ITPR1.0	Phaethon aethereus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	13	13	20	13	0	0
+Phaethon_lepturus|GCF_000687285.1|ITPR1.0	Phaethon lepturus	Aves	ITPR1	ITPR1	no_call		0	0	0	0	0	0
+Phalacrocorax_carbo|GCF_963921805.1|ITPR1.0	Phalacrocorax carbo	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Phoenicopterus_ruber_ruber|GCA_009819775.1|ITPR1.0	Phoenicopterus ruber ruber	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Phoxinus_phoxinus|GCF_949152265.1|ITPR1.0	Phoxinus phoxinus	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Platalea_leucorodia|GCF_965183815.1|ITPR1.0	Platalea leucorodia	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Poecile_atricapillus|GCF_030490865.1|ITPR1.0	Poecile atricapillus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Polyodon_spathula|GCF_017654505.1|ITPR1.1	Polyodon spathula	Actinopteri	ITPR1	ITPR1	no_call		0	0	20	0	0	0
+Pristis_pectinata|GCF_009764475.1|ITPR1.0	Pristis pectinata	Chondrichthyes	ITPR1	ITPR1	ITPR1	ITPR1	11	11	20	11	0	0
+Protopterus_annectens|GCF_019279795.1|ITPR1.0	Protopterus annectens	Dipnoi	ITPR1	ITPR1	ITPR1	ITPR1	8	8	20	8	0	0
+Pterocles_gutturalis|GCF_000699245.1|ITPR1.0	Pterocles gutturalis	Aves	ITPR1	ITPR1	no_call		0	0	0	0	0	0
+Pygoscelis_adeliae|GCF_000699105.1|ITPR1.0	Pygoscelis adeliae	Aves	ITPR1	ITPR1	ITPR1	ITPR1	9	9	11	9	0	0
+Rhea_pennata|GCF_028389875.1|ITPR1.0	Rhea pennata	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Rhinatrema_bivittatum|GCF_901001135.2|ITPR1.0	Rhinatrema bivittatum	Amphibia	ITPR1	ITPR1	ITPR1	ITPR1	12	12	20	12	0	0
+Saccopteryx_bilineata|GCF_036850765.1|ITPR1.0	Saccopteryx bilineata	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	9	9	20	9	0	0
+Scyliorhinus_torazame|GCF_047496885.1|ITPR1.0	Scyliorhinus torazame	Chondrichthyes	ITPR1	ITPR1	ITPR1	ITPR1	8	8	20	8	0	0
+Sminthopsis_crassicaudata|GCF_048593235.1|ITPR1.0	Sminthopsis crassicaudata	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Sorex_araneus|GCF_027595985.1|ITPR1.0	Sorex araneus	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	12	12	16	12	0	0
+Sphaeramia_orbicularis|GCF_902148855.1|ITPR1.0	Sphaeramia orbicularis	Actinopteri	ITPR1	ITPR1	ITPR1	ITPR1	1	1	20	1	0	0
+Sphaerodactylus_townsendi|GCF_021028975.2|ITPR1.0	Sphaerodactylus townsendi	Lepidosauria	ITPR1	ITPR1	ITPR1	ITPR1	12	12	20	12	0	0
+Steatornis_caripensis|GCA_054099775.1|ITPR1.0	Steatornis caripensis	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Strix_uralensis|GCF_047716275.1|ITPR1.0	Strix uralensis	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Struthio_camelus|GCF_040807025.1|ITPR1.0	Struthio camelus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Struthio_camelus_australis|GCF_000698965.1|ITPR1.0	Struthio camelus australis	Aves	ITPR1	ITPR1	ITPR1	ITPR1	6	6	10	6	0	0
+Sylvia_borin|GCA_014839755.1|ITPR1.0	Sylvia borin	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Tamandua_tetradactyla|GCF_023851605.1|ITPR1.0	Tamandua tetradactyla	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	9	9	20	9	0	0
+Tauraco_erythrolophus|GCF_009769465.1|ITPR1.0	Tauraco erythrolophus	Aves	ITPR1	ITPR1	ITPR1	ITPR1	14	14	20	14	0	0
+Tenrec_ecaudatus|GCF_050624435.1|ITPR1.0	Tenrec ecaudatus	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	6	6	20	6	0	0
+Tinamus_guttatus|GCF_000705375.1|ITPR1.0	Tinamus guttatus	Aves	ITPR1	ITPR1	no_call	ITPR1	2	2	2	2	0	0
+Trichechus_manatus_latirostris|GCF_000243295.1|ITPR1.0	Trichechus manatus latirostris	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	13	13	15	13	0	0
+Tupaia_belangeri_chinensis|GCF_000334495.1|ITPR1.0	Tupaia belangeri chinensis	Mammalia	ITPR1	ITPR1	ITPR1	ITPR1	4	4	4	4	0	0
+Tyto_alba|GCF_018691265.1|ITPR1.0	Tyto alba	Aves	ITPR1	ITPR1	ITPR1	ITPR1	12	12	20	12	0	0
+Xenopus_tropicalis|GCF_000004195.4|ITPR1.0	Xenopus tropicalis	Amphibia	ITPR1	ITPR1	ITPR1	ITPR1	12	12	20	12	0	0
+Alca_torda|GCA_008658365.1|ITPR2.0	Alca torda	Aves	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Alligator_mississippiensis|GCF_030867095.1|ITPR2.0	Alligator mississippiensis	Crocodylia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Ameca_splendens|GCA_040091285.1|ITPR2.0	Ameca splendens	Actinopteri	ITPR2	ITPR2	no_call		0	0	0	0	0	0
+Amia_ocellicauda|GCF_036373705.1|ITPR2.0	Amia ocellicauda	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Ammodytes_marinus|GCF_949987685.1|ITPR2.0	Ammodytes marinus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Anas_platyrhynchos|GCF_047663525.1|ITPR2.0	Anas platyrhynchos	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Antennarius_striatus|GCF_040054535.1|ITPR2.0	Antennarius striatus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Aphelocoma_coerulescens|GCF_041296385.2|ITPR2.0	Aphelocoma coerulescens	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Aplochiton_taeniatus|GCA_017639675.1|ITPR2.0	Aplochiton taeniatus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Aptenodytes_forsteri|GCF_000699145.1|ITPR2.0	Aptenodytes forsteri	Aves	ITPR2	ITPR2	ITPR2	ITPR2	9	9	20	0	9	0
+Aptenodytes_patagonicus|GCF_965638725.1|ITPR2.0	Aptenodytes patagonicus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Apteryx_mantelli|GCF_036417845.1|ITPR2.0	Apteryx mantelli	Aves	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Apus_apus|GCF_020740795.1|ITPR2.0	Apus apus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Aquarana_catesbeiana|GCF_042186555.1|ITPR2.0	Aquarana catesbeiana	Amphibia	ITPR2	ITPR2	ITPR2	ITPR2	9	9	20	0	9	0
+Ataeniobius_toweri|GCA_036250305.1|ITPR2.0	Ataeniobius toweri	Actinopteri	ITPR2	ITPR2	no_call		0	0	0	0	0	0
+Balearica_regulorum_gibbericeps|GCF_011004875.1|ITPR2.0	Balearica regulorum gibbericeps	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Bombina_bombina|GCF_027579735.1|ITPR2.0	Bombina bombina	Amphibia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Borostomias_antarcticus|GCF_949987555.1|ITPR2.0	Borostomias antarcticus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Bucorvus_abyssinicus|GCA_009769605.1|ITPR2.0	Bucorvus abyssinicus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	6	6	16	0	6	0
+Callorhinchus_milii|GCF_018977255.1|ITPR2.0	Callorhinchus milii	Chondrichthyes	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Caloenas_nicobarica|GCF_036013445.1|ITPR2.0	Caloenas nicobarica	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Calonectris_borealis|GCF_964195595.1|ITPR2.0	Calonectris borealis	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Calypte_anna|GCF_003957555.1|ITPR2.0	Calypte anna	Aves	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Caprimulgus_europaeus|GCF_907165065.1|ITPR2.0	Caprimulgus europaeus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Carcharodon_carcharias|GCF_017639515.1|ITPR2.0	Carcharodon carcharias	Chondrichthyes	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Chaetodon_trifascialis|GCF_039877785.1|ITPR2.0	Chaetodon trifascialis	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Chaetura_pelagica|GCF_000747805.2|ITPR2.0	Chaetura pelagica	Aves	ITPR2	ITPR2	ITPR2	ITPR2	4	4	10	0	4	0
+Channa_argus|GCF_033026475.1|ITPR2.0	Channa argus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Chanos_chanos|GCF_902362185.1|ITPR2.0	Chanos chanos	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Characodon_lateralis|GCA_036250325.1|ITPR2.0	Characodon lateralis	Actinopteri	ITPR2	ITPR2	no_call		0	0	0	0	0	0
+Charadrius_vociferus|GCF_000708025.1|ITPR2.0	Charadrius vociferus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	6	6	20	0	6	0
+Cheilinus_undulatus|GCF_018320785.1|ITPR2.0	Cheilinus undulatus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Chelon_labrosus|GCF_963514085.1|ITPR2.0	Chelon labrosus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Chiloscyllium_punctatum|GCF_047496795.1|ITPR2.0	Chiloscyllium punctatum	Chondrichthyes	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Chlamydotis_macqueenii|GCF_036417535.1|ITPR2.0	Chlamydotis macqueenii	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Ciconia_boyciana|GCF_034638445.1|ITPR2.0	Ciconia boyciana	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Cnephaeus_nilssonii|GCF_951640355.1|ITPR2.0	Cnephaeus nilssonii	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Colius_striatus|GCF_028858725.1|ITPR2.0	Colius striatus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Cololabis_saira|GCF_033807715.1|ITPR2.0	Cololabis saira	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Conger_conger|GCF_963514075.1|ITPR2.0	Conger conger	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Corvus_brachyrhynchos|GCF_000691975.1|ITPR2.0	Corvus brachyrhynchos	Aves	ITPR2	ITPR2	ITPR2	ITPR2	7	7	20	0	7	0
+Cricetulus_griseus|GCF_003668045.3|ITPR2.0	Cricetulus griseus	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Cuculus_canorus|GCF_017976375.1|ITPR2.0	Cuculus canorus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Cynocephalus_volans|GCF_027409185.1|ITPR2.0	Cynocephalus volans	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Danio_rerio|GCF_052040795.1|ITPR2.0	Danio rerio	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	2	2	20	0	2	0
+Dasypus_novemcinctus|GCF_030445035.2|ITPR2.0	Dasypus novemcinctus	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Diceros_bicornis_minor|GCF_020826845.1|ITPR2.0	Diceros bicornis minor	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Dromaius_novaehollandiae|GCF_036370855.1|ITPR2.0	Dromaius novaehollandiae	Aves	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Dromiciops_gliroides|GCF_019393635.1|ITPR2.0	Dromiciops gliroides	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Dryobates_pubescens|GCF_014839835.1|ITPR2.0	Dryobates pubescens	Aves	ITPR2	ITPR2	ITPR2	ITPR2	7	7	12	0	7	0
+Egretta_garzetta|GCF_000687185.1|ITPR2.0	Egretta garzetta	Aves	ITPR2	ITPR2	ITPR2	ITPR2	9	9	20	0	9	0
+Electrophorus_electricus|GCF_041902795.1|ITPR2.0	Electrophorus electricus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Elephantulus_edwardii|GCF_000299155.1|ITPR2.0	Elephantulus edwardii	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	7	7	13	0	7	0
+Elephas_maximus_indicus|GCF_024166365.1|ITPR2.0	Elephas maximus indicus	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Eleutherodactylus_coqui|GCF_035609145.1|ITPR2.0	Eleutherodactylus coqui	Amphibia	ITPR2	ITPR2	ITPR2	ITPR2	6	6	14	0	6	0
+Engraulis_encrasicolus|GCF_034702125.1|ITPR2.0	Engraulis encrasicolus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	15	0	3	0
+Entelurus_aequoreus|GCF_033978785.1|ITPR2.0	Entelurus aequoreus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Equus_quagga|GCF_021613505.1|ITPR2.0	Equus quagga	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Erpetoichthys_calabaricus|GCF_900747795.2|ITPR2.0	Erpetoichthys calabaricus	Cladistia	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Esox_lucius|GCF_011004845.1|ITPR2.0	Esox lucius	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Falco_peregrinus|GCF_023634155.1|ITPR2.0	Falco peregrinus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Gadus_morhua|GCF_902167405.1|ITPR2.0	Gadus morhua	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Gallinula_chloropus|GCF_964237585.1|ITPR2.0	Gallinula chloropus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Gallus_gallus|GCF_016699485.2|ITPR2.0	Gallus gallus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Gambusia_affinis|GCF_019740435.1|ITPR2.0	Gambusia affinis	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Gavia_stellata|GCF_030936135.1|ITPR2.0	Gavia stellata	Aves	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Genypterus_blacodes|GCF_046128005.1|ITPR2.0	Genypterus blacodes	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Giraffa_tippelskirchi|GCF_054371585.1|ITPR2.0	Giraffa tippelskirchi	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Gobius_niger|GCF_951799975.1|ITPR2.0	Gobius niger	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Gopherus_flavomarginatus|GCF_025201925.1|ITPR2.0	Gopherus flavomarginatus	Testudines	ITPR2	ITPR2	ITPR2	ITPR2	9	9	20	0	9	0
+Gouania_willdenowi|GCF_900634775.2|ITPR2.0	Gouania willdenowi	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Gracilinanus_agilis|GCF_016433145.1|ITPR2.0	Gracilinanus agilis	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Gymnogyps_californianus|GCF_018139145.2|ITPR2.0	Gymnogyps californianus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Haliaeetus_albicilla|GCF_947461875.1|ITPR2.0	Haliaeetus albicilla	Aves	ITPR2	ITPR2	ITPR2	ITPR2	7	7	20	0	7	0
+Hemicordylus_capensis|GCF_027244095.1|ITPR2.0	Hemicordylus capensis	Lepidosauria	ITPR2	ITPR2	ITPR2	ITPR2	9	9	20	0	9	0
+Hemitrygon_akajei|GCF_048418815.1|ITPR2.0	Hemitrygon akajei	Chondrichthyes	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Heptranchias_perlo|GCF_035084215.1|ITPR2.0	Heptranchias perlo	Chondrichthyes	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Heterodontus_francisci|GCF_036365525.1|ITPR2.0	Heterodontus francisci	Chondrichthyes	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Heterohyrax_brucei|GCA_028571685.1|ITPR2.0	Heterohyrax brucei	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Homo_sapiens|GCF_000001405.40|ITPR2.0	Homo sapiens	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Hoplias_malabaricus|GCF_029633855.1|ITPR2.0	Hoplias malabaricus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Hypomesus_nipponensis|GCF_054491055.1|ITPR2.0	Hypomesus nipponensis	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Ilyodon_furcidens|GCA_040091305.1|ITPR2.1	Ilyodon furcidens	Actinopteri	ITPR2	ITPR2	no_call		0	0	0	0	0	0
+Lampris_incognitus|GCF_029633865.1|ITPR2.0	Lampris incognitus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	15	0	4	0
+Larus_argentatus|GCF_964417175.1|ITPR2.0	Larus argentatus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Lathamus_discolor|GCF_037157495.1|ITPR2.0	Lathamus discolor	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Latimeria_chalumnae|GCF_037176945.1|ITPR2.0	Latimeria chalumnae	Coelacanthimorpha	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Lepisosteus_oculatus|GCF_040954835.1|ITPR2.0	Lepisosteus oculatus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Leptosomus_discolor|GCF_034619465.1|ITPR2.0	Leptosomus discolor	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Lissotriton_helveticus|GCF_964261635.1|ITPR2.0	Lissotriton helveticus	Amphibia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Lutjanus_erythropterus|GCF_056507025.1|ITPR2.0	Lutjanus erythropterus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Macaca_mulatta|GCF_049350105.2|ITPR2.0	Macaca mulatta	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Macrotis_lagotis|GCF_037893015.1|ITPR2.0	Macrotis lagotis	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Manacus_vitellinus|GCF_001715985.3|ITPR2.0	Manacus vitellinus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	9	9	20	0	9	0
+Manis_pentadactyla|GCF_030020395.1|ITPR2.0	Manis pentadactyla	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Mastacembelus_armatus|GCF_900324485.3|ITPR2.0	Mastacembelus armatus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Megalops_cyprinoides|GCF_013368585.1|ITPR2.0	Megalops cyprinoides	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Merops_nubicus|GCF_000691845.1|ITPR2.0	Merops nubicus	Aves	ITPR2	ITPR2	no_call		0	0	0	0	0	0
+Mesitornis_unicolor|GCF_000695765.1|ITPR2.0	Mesitornis unicolor	Aves	ITPR2	ITPR2	no_call		0	0	0	0	0	0
+Microchirus_variegatus|GCF_963457635.1|ITPR2.0	Microchirus variegatus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Micropterus_dolomieu|GCF_021292245.1|ITPR2.0	Micropterus dolomieu	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Mus_musculus|GCF_000001635.27|ITPR2.0	Mus musculus	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Mycteria_americana|GCF_035582795.1|ITPR2.0	Mycteria americana	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Myripristis_murdjan|GCF_902150065.1|ITPR2.0	Myripristis murdjan	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Nansenia_antarctica|GCF_963989245.1|ITPR2.0	Nansenia antarctica	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Narcine_bancroftii|GCF_036971445.1|ITPR2.0	Narcine bancroftii	Chondrichthyes	ITPR2	ITPR2	ITPR2	ITPR2	2	2	20	0	2	0
+Neoarius_graeffei|GCF_027579695.1|ITPR2.0	Neoarius graeffei	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Neodrepanis_coruscans|GCA_013400695.1|ITPR2.0	Neodrepanis coruscans	Aves	ITPR2	ITPR2	no_call		0	0	0	0	0	0
+Neogale_vison|GCF_020171115.1|ITPR2.0	Neogale vison	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Nipponia_nippon|GCF_047370975.1|ITPR2.0	Nipponia nippon	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Notamacropus_eugenii|GCF_028372415.1|ITPR2.0	Notamacropus eugenii	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Nothobranchius_furzeri|GCF_043380555.1|ITPR2.0	Nothobranchius furzeri	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Nothoprocta_perdicaria|GCF_003342845.1|ITPR2.0	Nothoprocta perdicaria	Aves	ITPR2	ITPR2	ITPR2	ITPR2	5	5	8	0	5	0
+Notothenia_rossii|GCF_949606895.1|ITPR2.0	Notothenia rossii	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Nyctibius_grandis|GCF_013368605.1|ITPR2.0	Nyctibius grandis	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Opisthocomus_hoazin|GCF_030867145.1|ITPR2.0	Opisthocomus hoazin	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Ornithorhynchus_anatinus|GCF_004115215.2|ITPR2.0	Ornithorhynchus anatinus	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Orycteropus_afer_afer|GCF_000298275.1|ITPR2.0	Orycteropus afer afer	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	10	10	18	0	10	0
+Oryctolagus_cuniculus|GCF_964237555.1|ITPR2.0	Oryctolagus cuniculus	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Paramormyrops_kingsleyae|GCF_048594095.1|ITPR2.0	Paramormyrops kingsleyae	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Pelecanus_crispus|GCF_030463565.1|ITPR2.0	Pelecanus crispus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Pempheris_klunzingeri|GCF_042242105.1|ITPR2.0	Pempheris klunzingeri	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Phaethon_aethereus|GCF_964289735.1|ITPR2.0	Phaethon aethereus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Phalacrocorax_carbo|GCF_963921805.1|ITPR2.0	Phalacrocorax carbo	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Phoenicopterus_ruber_ruber|GCA_009819775.1|ITPR2.0	Phoenicopterus ruber ruber	Aves	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Phoxinus_phoxinus|GCF_949152265.1|ITPR2.0	Phoxinus phoxinus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Platalea_leucorodia|GCF_965183815.1|ITPR2.0	Platalea leucorodia	Aves	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Poromitra_crassiceps|GCF_964638095.1|ITPR2.0	Poromitra crassiceps	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Pristis_pectinata|GCF_009764475.1|ITPR2.0	Pristis pectinata	Chondrichthyes	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Protopterus_annectens|GCF_019279795.1|ITPR2.0	Protopterus annectens	Dipnoi	ITPR2	ITPR2	ITPR2	ITPR2	5	5	20	0	5	0
+Pygoscelis_adeliae|GCF_000699105.1|ITPR2.0	Pygoscelis adeliae	Aves	ITPR2	ITPR2	ITPR2	ITPR2	7	7	20	0	7	0
+Raja_brachyura|GCF_963514005.1|ITPR2.0	Raja brachyura	Chondrichthyes	ITPR2	ITPR2	ITPR2	ITPR2	2	2	20	0	2	0
+Rhamphochromis_longiceps|GCF_057381845.1|ITPR2.0	Rhamphochromis longiceps	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Rhea_pennata|GCF_028389875.1|ITPR2.0	Rhea pennata	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Rhinatrema_bivittatum|GCF_901001135.2|ITPR2.0	Rhinatrema bivittatum	Amphibia	ITPR2	ITPR2	ITPR2	ITPR2	8	8	20	0	8	0
+Saccopteryx_bilineata|GCF_036850765.1|ITPR2.0	Saccopteryx bilineata	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	5	5	20	0	5	0
+Scomber_japonicus|GCF_027409825.1|ITPR2.0	Scomber japonicus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Scyliorhinus_torazame|GCF_047496885.1|ITPR2.0	Scyliorhinus torazame	Chondrichthyes	ITPR2	ITPR2	ITPR2	ITPR2	2	2	20	0	2	0
+Sminthopsis_crassicaudata|GCF_048593235.1|ITPR2.0	Sminthopsis crassicaudata	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Somniosus_microcephalus|GCF_052327205.1|ITPR2.0	Somniosus microcephalus	Chondrichthyes	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Sorex_araneus|GCF_027595985.1|ITPR2.0	Sorex araneus	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Sparus_aurata|GCF_900880675.2|ITPR2.0	Sparus aurata	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Sphaeramia_orbicularis|GCF_902148855.1|ITPR2.0	Sphaeramia orbicularis	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Sphaerodactylus_townsendi|GCF_021028975.2|ITPR2.0	Sphaerodactylus townsendi	Lepidosauria	ITPR2	ITPR2	ITPR2	ITPR2	8	8	20	0	8	0
+Steatornis_caripensis|GCA_054099775.1|ITPR2.0	Steatornis caripensis	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Strix_uralensis|GCF_047716275.1|ITPR2.0	Strix uralensis	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Struthio_camelus|GCF_040807025.1|ITPR2.0	Struthio camelus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Struthio_camelus_australis|GCF_000698965.1|ITPR2.0	Struthio camelus australis	Aves	ITPR2	ITPR2	ITPR2	ITPR2	3	3	10	0	3	0
+Sylvia_borin|GCA_014839755.1|ITPR2.0	Sylvia borin	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Takifugu_rubripes|GCF_901000725.3|ITPR2.0	Takifugu rubripes	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Tamandua_tetradactyla|GCF_023851605.1|ITPR2.0	Tamandua tetradactyla	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Tauraco_erythrolophus|GCF_009769465.1|ITPR2.0	Tauraco erythrolophus	Aves	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Telmatherina_bonti|GCF_933228915.1|ITPR2.0	Telmatherina bonti	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Tenrec_ecaudatus|GCF_050624435.1|ITPR2.0	Tenrec ecaudatus	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Thalassophryne_amazonica|GCF_902500255.1|ITPR2.0	Thalassophryne amazonica	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Trachurus_japonicus|GCF_045865225.1|ITPR2.0	Trachurus japonicus	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Trichechus_manatus_latirostris|GCF_000243295.1|ITPR2.0	Trichechus manatus latirostris	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Tupaia_belangeri_chinensis|GCF_000334495.1|ITPR2.0	Tupaia belangeri chinensis	Mammalia	ITPR2	ITPR2	ITPR2	ITPR2	11	11	20	0	11	0
+Tyto_alba|GCF_018691265.1|ITPR2.0	Tyto alba	Aves	ITPR2	ITPR2	ITPR2	ITPR2	10	10	20	0	10	0
+Xenopus_tropicalis|GCF_000004195.4|ITPR2.0	Xenopus tropicalis	Amphibia	ITPR2	ITPR2	ITPR2	ITPR2	7	7	20	0	7	0
+Xenotaenia_resolanae|GCA_040091345.1|ITPR2.0	Xenotaenia resolanae	Actinopteri	ITPR2	ITPR2	no_call		0	0	0	0	0	0
+Xiphias_gladius|GCF_016859285.1|ITPR2.0	Xiphias gladius	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	3	3	20	0	3	0
+Zeus_faber|GCF_960531495.1|ITPR2.0	Zeus faber	Actinopteri	ITPR2	ITPR2	ITPR2	ITPR2	4	4	20	0	4	0
+Aegotheles_bennettii|GCA_013398125.1|ITPR3.0	Aegotheles bennettii	Aves	ITPR3	ITPR3	ITPR3	ITPR3	2	2	10	0	0	2
+Alca_torda|GCA_008658365.1|ITPR3.0	Alca torda	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Alligator_mississippiensis|GCF_030867095.1|ITPR3.0	Alligator mississippiensis	Crocodylia	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Ameca_splendens|GCA_040091285.1|ITPR3.0	Ameca splendens	Actinopteri	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Amia_ocellicauda|GCF_036373705.1|ITPR3.0	Amia ocellicauda	Actinopteri	ITPR3	ITPR3	ITPR3	ITPR3	1	1	20	0	0	1
+Ammodytes_marinus|GCF_949987685.1|ITPR3.0	Ammodytes marinus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Anas_platyrhynchos|GCF_047663525.1|ITPR3.0	Anas platyrhynchos	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Antennarius_striatus|GCF_040054535.1|ITPR3.0	Antennarius striatus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Antrostomus_carolinensis|GCF_000700745.2|ITPR3.0	Antrostomus carolinensis	Aves	ITPR3	ITPR3	no_call		0	0	1	0	0	0
+Apaloderma_vittatum|GCF_000703405.1|ITPR3.0	Apaloderma vittatum	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Aphelocoma_coerulescens|GCF_041296385.2|ITPR3.0	Aphelocoma coerulescens	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Aplochiton_taeniatus|GCA_017639675.1|ITPR3.0	Aplochiton taeniatus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Aptenodytes_forsteri|GCF_000699145.1|ITPR3.0	Aptenodytes forsteri	Aves	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Aptenodytes_patagonicus|GCF_965638725.1|ITPR3.0	Aptenodytes patagonicus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Apteryx_mantelli|GCF_036417845.1|ITPR3.0	Apteryx mantelli	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Apus_apus|GCF_020740795.1|ITPR3.0	Apus apus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Aquarana_catesbeiana|GCF_042186555.1|ITPR3.0	Aquarana catesbeiana	Amphibia	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Aramus_guarauna|GCA_013400195.1|ITPR3.0	Aramus guarauna	Aves	ITPR3	ITPR3	ITPR3	ITPR3	7	7	17	0	0	7
+Ataeniobius_toweri|GCA_036250305.1|ITPR3.0	Ataeniobius toweri	Actinopteri	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Balaeniceps_rex|GCA_013401315.1|ITPR3.0	Balaeniceps rex	Aves	ITPR3	ITPR3	no_call	ITPR3	1	1	1	0	0	1
+Balearica_regulorum_gibbericeps|GCF_011004875.1|ITPR3.0	Balearica regulorum gibbericeps	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Bombina_bombina|GCF_027579735.1|ITPR3.0	Bombina bombina	Amphibia	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Borostomias_antarcticus|GCF_949987555.1|ITPR3.0	Borostomias antarcticus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Bucco_capensis|GCA_013396975.1|ITPR3.0	Bucco capensis	Aves	ITPR3	ITPR3	no_call	ITPR3	1	1	1	0	0	1
+Buceros_rhinoceros_silvestris|GCF_000710305.1|ITPR3.0	Buceros rhinoceros silvestris	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Bucorvus_abyssinicus|GCA_009769605.1|ITPR3.0	Bucorvus abyssinicus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Callaeas_wilsoni|GCA_013398955.1|ITPR3.0	Callaeas wilsoni	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Callorhinchus_milii|GCF_018977255.1|ITPR3.0	Callorhinchus milii	Chondrichthyes	ITPR3	ITPR3	ITPR3	ITPR3	2	2	20	0	0	2
+Caloenas_nicobarica|GCF_036013445.1|ITPR3.0	Caloenas nicobarica	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Calonectris_borealis|GCF_964195595.1|ITPR3.0	Calonectris borealis	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Calypte_anna|GCF_003957555.1|ITPR3.0	Calypte anna	Aves	ITPR3	ITPR3	ITPR3	ITPR3	6	6	20	0	0	6
+Caprimulgus_europaeus|GCF_907165065.1|ITPR3.0	Caprimulgus europaeus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Carcharodon_carcharias|GCF_017639515.1|ITPR3.0	Carcharodon carcharias	Chondrichthyes	ITPR3	ITPR3	ITPR3	ITPR3	1	1	20	0	0	1
+Cariama_cristata|GCF_000690535.1|ITPR3.0	Cariama cristata	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Catharus_fuscescens|GCA_013398975.1|ITPR3.0	Catharus fuscescens	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Certhia_familiaris|GCA_013398575.1|ITPR3.0	Certhia familiaris	Aves	ITPR3	ITPR3	no_call		0	0	1	0	0	0
+Chaetodon_trifascialis|GCF_039877785.1|ITPR3.0	Chaetodon trifascialis	Actinopteri	ITPR3	ITPR3	no_call		0	0	19	0	0	0
+Chaetura_pelagica|GCF_000747805.2|ITPR3.0	Chaetura pelagica	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Channa_argus|GCF_033026475.1|ITPR3.0	Channa argus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Chanos_chanos|GCF_902362185.1|ITPR3.0	Chanos chanos	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Characodon_lateralis|GCA_036250325.1|ITPR3.0	Characodon lateralis	Actinopteri	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Charadrius_vociferus|GCF_000708025.1|ITPR3.0	Charadrius vociferus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	5	5	20	0	0	5
+Cheilinus_undulatus|GCF_018320785.1|ITPR3.0	Cheilinus undulatus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Chelon_labrosus|GCF_963514085.1|ITPR3.0	Chelon labrosus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Chiloscyllium_punctatum|GCF_047496795.1|ITPR3.0	Chiloscyllium punctatum	Chondrichthyes	ITPR3	ITPR3	ITPR3	ITPR3	1	1	20	0	0	1
+Chlamydotis_macqueenii|GCF_036417535.1|ITPR3.0	Chlamydotis macqueenii	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Ciconia_boyciana|GCF_034638445.1|ITPR3.0	Ciconia boyciana	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Cisticola_juncidis|GCA_013400215.1|ITPR3.0	Cisticola juncidis	Aves	ITPR3	ITPR3	ITPR3	ITPR3	2	2	5	0	0	2
+Climacteris_rufus|GCA_013398175.1|ITPR3.0	Climacteris rufus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	4	4	7	0	0	4
+Cnephaeus_nilssonii|GCF_951640355.1|ITPR3.0	Cnephaeus nilssonii	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Colius_striatus|GCF_028858725.1|ITPR3.0	Colius striatus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Cololabis_saira|GCF_033807715.1|ITPR3.0	Cololabis saira	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Conger_conger|GCF_963514075.1|ITPR3.0	Conger conger	Actinopteri	ITPR3	ITPR3	ITPR3	ITPR3	1	1	20	0	0	1
+Corvus_brachyrhynchos|GCF_000691975.1|ITPR3.0	Corvus brachyrhynchos	Aves	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Cuculus_canorus|GCF_017976375.1|ITPR3.0	Cuculus canorus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Cynocephalus_volans|GCF_027409185.1|ITPR3.0	Cynocephalus volans	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Danio_rerio|GCF_052040795.1|ITPR3.0	Danio rerio	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Dasypus_novemcinctus|GCF_030445035.2|ITPR3.0	Dasypus novemcinctus	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Diceros_bicornis_minor|GCF_020826845.1|ITPR3.0	Diceros bicornis minor	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Diretmus_argenteus|GCA_048569125.1|ITPR3.0	Diretmus argenteus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Dromaius_novaehollandiae|GCF_036370855.1|ITPR3.0	Dromaius novaehollandiae	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Dromiciops_gliroides|GCF_019393635.1|ITPR3.0	Dromiciops gliroides	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Drymodes_brunneopygia|GCA_013400955.1|ITPR3.0	Drymodes brunneopygia	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Dryobates_pubescens|GCF_014839835.1|ITPR3.0	Dryobates pubescens	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Egretta_garzetta|GCF_000687185.1|ITPR3.0	Egretta garzetta	Aves	ITPR3	ITPR3	ITPR3	ITPR3	5	5	20	0	0	5
+Electrophorus_electricus|GCF_041902795.1|ITPR3.0	Electrophorus electricus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Elephantulus_edwardii|GCF_000299155.1|ITPR3.0	Elephantulus edwardii	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	5	5	20	0	0	5
+Elephas_maximus_indicus|GCF_024166365.1|ITPR3.0	Elephas maximus indicus	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Eleutherodactylus_coqui|GCF_035609145.1|ITPR3.0	Eleutherodactylus coqui	Amphibia	ITPR3	ITPR3	ITPR3	ITPR3	3	3	20	0	0	3
+Engraulis_encrasicolus|GCF_034702125.1|ITPR3.0	Engraulis encrasicolus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Entelurus_aequoreus|GCF_033978785.1|ITPR3.0	Entelurus aequoreus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Equus_quagga|GCF_021613505.1|ITPR3.0	Equus quagga	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Erpetoichthys_calabaricus|GCF_900747795.2|ITPR3.0	Erpetoichthys calabaricus	Cladistia	ITPR3	ITPR3	ITPR3	ITPR3	1	1	15	0	0	1
+Erpornis_zantholeuca|GCA_013400515.1|ITPR3.0	Erpornis zantholeuca	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	16	0	0	8
+Esox_lucius|GCF_011004845.1|ITPR3.0	Esox lucius	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Eubucco_bourcierii|GCA_013396675.1|ITPR3.0	Eubucco bourcierii	Aves	ITPR3	ITPR3	ITPR3	ITPR3	2	2	5	0	0	2
+Eurypyga_helias|GCF_000690775.1|ITPR3.0	Eurypyga helias	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Falco_peregrinus|GCF_023634155.1|ITPR3.0	Falco peregrinus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Fulmarus_glacialis|GCF_000690835.1|ITPR3.0	Fulmarus glacialis	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Furnarius_figulus|GCA_013397465.1|ITPR3.0	Furnarius figulus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Gadus_morhua|GCF_902167405.1|ITPR3.0	Gadus morhua	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Gallinula_chloropus|GCF_964237585.1|ITPR3.0	Gallinula chloropus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Gallus_gallus|GCF_016699485.2|ITPR3.0	Gallus gallus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Gambusia_affinis|GCF_019740435.1|ITPR3.0	Gambusia affinis	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Gavia_stellata|GCF_030936135.1|ITPR3.0	Gavia stellata	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Giraffa_tippelskirchi|GCF_054371585.1|ITPR3.0	Giraffa tippelskirchi	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Glareola_pratincola|GCA_013401295.1|ITPR3.0	Glareola pratincola	Aves	ITPR3	ITPR3	ITPR3	ITPR3	1	1	4	0	0	1
+Gobius_niger|GCF_951799975.1|ITPR3.0	Gobius niger	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Gopherus_flavomarginatus|GCF_025201925.1|ITPR3.0	Gopherus flavomarginatus	Testudines	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Gouania_willdenowi|GCF_900634775.2|ITPR3.0	Gouania willdenowi	Actinopteri	ITPR3	ITPR3	no_call		0	0	11	0	0	0
+Gracilinanus_agilis|GCF_016433145.1|ITPR3.0	Gracilinanus agilis	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Gymnogyps_californianus|GCF_018139145.2|ITPR3.0	Gymnogyps californianus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Haliaeetus_albicilla|GCF_947461875.1|ITPR3.0	Haliaeetus albicilla	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Hemicordylus_capensis|GCF_027244095.1|ITPR3.0	Hemicordylus capensis	Lepidosauria	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Hemitrygon_akajei|GCF_048418815.1|ITPR3.0	Hemitrygon akajei	Chondrichthyes	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Heptranchias_perlo|GCF_035084215.1|ITPR3.0	Heptranchias perlo	Chondrichthyes	ITPR3	ITPR3	ITPR3	ITPR3	1	1	20	0	0	1
+Heterodontus_francisci|GCF_036365525.1|ITPR3.0	Heterodontus francisci	Chondrichthyes	ITPR3	ITPR3	ITPR3	ITPR3	1	1	20	0	0	1
+Heterohyrax_brucei|GCA_028571685.1|ITPR3.0	Heterohyrax brucei	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	6	6	20	0	0	6
+Hiodon_alosoides|GCA_056783565.1|ITPR3.0	Hiodon alosoides	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Hippolais_icterina|GCA_013400075.1|ITPR3.0	Hippolais icterina	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Homo_sapiens|GCF_000001405.40|ITPR3.0	Homo sapiens	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Hoplias_malabaricus|GCF_029633855.1|ITPR3.0	Hoplias malabaricus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Hypocryptadius_cinnamomeus|GCA_013400635.1|ITPR3.0	Hypocryptadius cinnamomeus	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Hypomesus_nipponensis|GCF_054491055.1|ITPR3.0	Hypomesus nipponensis	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Ilyodon_furcidens|GCA_040091305.1|ITPR3.0	Ilyodon furcidens	Actinopteri	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Larus_argentatus|GCF_964417175.1|ITPR3.0	Larus argentatus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Lathamus_discolor|GCF_037157495.1|ITPR3.0	Lathamus discolor	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Latimeria_chalumnae|GCF_037176945.1|ITPR3.0	Latimeria chalumnae	Coelacanthimorpha	ITPR3	ITPR3	ITPR3	ITPR3	2	2	19	0	0	2
+Leiothrix_lutea|GCA_013400445.1|ITPR3.0	Leiothrix lutea	Aves	ITPR3	ITPR3	ITPR3	ITPR3	6	6	6	0	0	6
+Lepisosteus_oculatus|GCF_040954835.1|ITPR3.0	Lepisosteus oculatus	Actinopteri	ITPR3	ITPR3	ITPR3	ITPR3	1	1	20	0	0	1
+Leptosomus_discolor|GCF_034619465.1|ITPR3.0	Leptosomus discolor	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Lissotriton_helveticus|GCF_964261635.1|ITPR3.0	Lissotriton helveticus	Amphibia	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Lutjanus_erythropterus|GCF_056507025.1|ITPR3.0	Lutjanus erythropterus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Macaca_mulatta|GCF_049350105.2|ITPR3.0	Macaca mulatta	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Macrotis_lagotis|GCF_037893015.1|ITPR3.0	Macrotis lagotis	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Manacus_vitellinus|GCF_001715985.3|ITPR3.0	Manacus vitellinus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	5	5	20	0	0	5
+Manis_pentadactyla|GCF_030020395.1|ITPR3.0	Manis pentadactyla	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Mastacembelus_armatus|GCF_900324485.3|ITPR3.0	Mastacembelus armatus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Megalops_cyprinoides|GCF_013368585.1|ITPR3.0	Megalops cyprinoides	Actinopteri	ITPR3	ITPR3	ITPR3	ITPR3	1	1	19	0	0	1
+Merops_nubicus|GCF_000691845.1|ITPR3.0	Merops nubicus	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Mesitornis_unicolor|GCF_000695765.1|ITPR3.0	Mesitornis unicolor	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Microchirus_variegatus|GCF_963457635.1|ITPR3.0	Microchirus variegatus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Micropterus_dolomieu|GCF_021292245.1|ITPR3.0	Micropterus dolomieu	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Mus_musculus|GCF_000001635.27|ITPR3.0	Mus musculus	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Mycteria_americana|GCF_035582795.1|ITPR3.0	Mycteria americana	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Myiagra_hebetior|GCA_013397015.1|ITPR3.0	Myiagra hebetior	Aves	ITPR3	ITPR3	ITPR3	ITPR3	4	4	12	0	0	4
+Myripristis_murdjan|GCF_902150065.1|ITPR3.0	Myripristis murdjan	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Nannobrachium_achirus|GCF_963921795.1|ITPR3.0	Nannobrachium achirus	Actinopteri	ITPR3	ITPR3	ITPR3	ITPR3	1	1	20	0	0	1
+Nansenia_antarctica|GCF_963989245.1|ITPR3.0	Nansenia antarctica	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Narcine_bancroftii|GCF_036971445.1|ITPR3.0	Narcine bancroftii	Chondrichthyes	ITPR3	ITPR3	ITPR3	ITPR3	2	2	20	0	0	2
+Neoarius_graeffei|GCF_027579695.1|ITPR3.0	Neoarius graeffei	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Neogale_vison|GCF_020171115.1|ITPR3.0	Neogale vison	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Nestor_notabilis|GCF_000696875.1|ITPR3.0	Nestor notabilis	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Nipponia_nippon|GCF_047370975.1|ITPR3.0	Nipponia nippon	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Notamacropus_eugenii|GCF_028372415.1|ITPR3.0	Notamacropus eugenii	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Nothobranchius_furzeri|GCF_043380555.1|ITPR3.0	Nothobranchius furzeri	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Nothoprocta_perdicaria|GCF_003342845.1|ITPR3.0	Nothoprocta perdicaria	Aves	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Notothenia_rossii|GCF_949606895.1|ITPR3.0	Notothenia rossii	Actinopteri	ITPR3	ITPR3	no_call		0	0	19	0	0	0
+Nyctibius_grandis|GCF_013368605.1|ITPR3.0	Nyctibius grandis	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Nyctiprogne_leucopyga|GCA_013399395.1|ITPR3.0	Nyctiprogne leucopyga	Aves	ITPR3	ITPR3	ITPR3	ITPR3	2	2	7	0	0	2
+Opisthocomus_hoazin|GCF_030867145.1|ITPR3.0	Opisthocomus hoazin	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Origma_solitaria|GCA_013397895.1|ITPR3.0	Origma solitaria	Aves	ITPR3	ITPR3	ITPR3	ITPR3	2	2	6	0	0	2
+Ornithorhynchus_anatinus|GCF_004115215.2|ITPR3.0	Ornithorhynchus anatinus	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Orycteropus_afer_afer|GCF_000298275.1|ITPR3.0	Orycteropus afer afer	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	6	6	20	0	0	6
+Oryctolagus_cuniculus|GCF_964237555.1|ITPR3.0	Oryctolagus cuniculus	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Paramormyrops_kingsleyae|GCF_048594095.1|ITPR3.0	Paramormyrops kingsleyae	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Pedionomus_torquatus|GCA_013398155.1|ITPR3.0	Pedionomus torquatus	Aves	ITPR3	ITPR3	no_call	ITPR3	1	1	2	0	0	1
+Pelecanus_crispus|GCF_030463565.1|ITPR3.0	Pelecanus crispus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Pempheris_klunzingeri|GCF_042242105.1|ITPR3.0	Pempheris klunzingeri	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Phaethon_aethereus|GCF_964289735.1|ITPR3.0	Phaethon aethereus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Phalacrocorax_carbo|GCF_963921805.1|ITPR3.0	Phalacrocorax carbo	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Phoenicopterus_ruber_ruber|GCA_009819775.1|ITPR3.0	Phoenicopterus ruber ruber	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Phoxinus_phoxinus|GCF_949152265.1|ITPR3.0	Phoxinus phoxinus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Platalea_leucorodia|GCF_965183815.1|ITPR3.0	Platalea leucorodia	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Podilymbus_podiceps|GCA_013399565.1|ITPR3.0	Podilymbus podiceps	Aves	ITPR3	ITPR3	ITPR3	ITPR3	6	6	19	0	0	6
+Poecile_atricapillus|GCF_030490865.1|ITPR3.0	Poecile atricapillus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Polioptila_caerulea|GCA_013397295.1|ITPR3.0	Polioptila caerulea	Aves	ITPR3	ITPR3	no_call	ITPR3	1	1	1	0	0	1
+Pomatostomus_ruficeps|GCA_013400735.1|ITPR3.0	Pomatostomus ruficeps	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Poromitra_crassiceps|GCF_964638095.1|ITPR3.0	Poromitra crassiceps	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Pristis_pectinata|GCF_009764475.1|ITPR3.0	Pristis pectinata	Chondrichthyes	ITPR3	ITPR3	ITPR3	ITPR3	1	1	20	0	0	1
+Protopterus_annectens|GCF_019279795.1|ITPR3.0	Protopterus annectens	Dipnoi	ITPR3	ITPR3	ITPR3	ITPR3	3	3	20	0	0	3
+Pterocles_gutturalis|GCF_000699245.1|ITPR3.0	Pterocles gutturalis	Aves	ITPR3	ITPR3	no_call		0	0	0	0	0	0
+Pygoscelis_adeliae|GCF_000699105.1|ITPR3.0	Pygoscelis adeliae	Aves	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Quiscalus_mexicanus|GCA_013399035.1|ITPR3.0	Quiscalus mexicanus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	1	1	4	0	0	1
+Raja_brachyura|GCF_963514005.1|ITPR3.0	Raja brachyura	Chondrichthyes	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Rhamphochromis_longiceps|GCF_057381845.1|ITPR3.0	Rhamphochromis longiceps	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Rhea_pennata|GCF_028389875.1|ITPR3.0	Rhea pennata	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Rhinatrema_bivittatum|GCF_901001135.2|ITPR3.0	Rhinatrema bivittatum	Amphibia	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Rostratula_benghalensis|GCA_013399305.1|ITPR3.0	Rostratula benghalensis	Aves	ITPR3	ITPR3	ITPR3	ITPR3	2	2	4	0	0	2
+Saccopteryx_bilineata|GCF_036850765.1|ITPR3.0	Saccopteryx bilineata	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Scomber_japonicus|GCF_027409825.1|ITPR3.0	Scomber japonicus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Scyliorhinus_torazame|GCF_047496885.1|ITPR3.0	Scyliorhinus torazame	Chondrichthyes	ITPR3	ITPR3	ITPR3	ITPR3	1	1	20	0	0	1
+Scytalopus_superciliaris|GCA_013400415.1|ITPR3.0	Scytalopus superciliaris	Aves	ITPR3	ITPR3	ITPR3	ITPR3	3	3	11	0	0	3
+Serilophus_lunatus|GCA_013399895.1|ITPR3.0	Serilophus lunatus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	14	0	0	8
+Sinosuthora_webbiana|GCA_013397395.1|ITPR3.0	Sinosuthora webbiana	Aves	ITPR3	ITPR3	no_call	ITPR3	1	1	3	0	0	1
+Sminthopsis_crassicaudata|GCF_048593235.1|ITPR3.0	Sminthopsis crassicaudata	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Smithornis_capensis|GCA_013396465.1|ITPR3.0	Smithornis capensis	Aves	ITPR3	ITPR3	ITPR3	ITPR3	1	1	4	0	0	1
+Somniosus_microcephalus|GCF_052327205.1|ITPR3.0	Somniosus microcephalus	Chondrichthyes	ITPR3	ITPR3	ITPR3	ITPR3	1	1	20	0	0	1
+Sorex_araneus|GCF_027595985.1|ITPR3.0	Sorex araneus	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Sparus_aurata|GCF_900880675.2|ITPR3.0	Sparus aurata	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Sphaeramia_orbicularis|GCF_902148855.1|ITPR3.0	Sphaeramia orbicularis	Actinopteri	ITPR3	ITPR3	no_call		0	0	19	0	0	0
+Sphaerodactylus_townsendi|GCF_021028975.2|ITPR3.0	Sphaerodactylus townsendi	Lepidosauria	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Steatornis_caripensis|GCA_054099775.1|ITPR3.0	Steatornis caripensis	Aves	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Strix_uralensis|GCF_047716275.1|ITPR3.0	Strix uralensis	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Struthio_camelus|GCF_040807025.1|ITPR3.0	Struthio camelus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	6	6	20	0	0	6
+Struthio_camelus_australis|GCF_000698965.1|ITPR3.0	Struthio camelus australis	Aves	ITPR3	ITPR3	ITPR3	ITPR3	5	5	15	0	0	5
+Sylvia_borin|GCA_014839755.1|ITPR3.0	Sylvia borin	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Takifugu_rubripes|GCF_901000725.3|ITPR3.0	Takifugu rubripes	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Tamandua_tetradactyla|GCF_023851605.1|ITPR3.0	Tamandua tetradactyla	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Tauraco_erythrolophus|GCF_009769465.1|ITPR3.0	Tauraco erythrolophus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	9	9	20	0	0	9
+Telmatherina_bonti|GCF_933228915.1|ITPR3.0	Telmatherina bonti	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Tenrec_ecaudatus|GCF_050624435.1|ITPR3.0	Tenrec ecaudatus	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Thalassarche_chlororhynchos|GCA_013400895.1|ITPR3.0	Thalassarche chlororhynchos	Aves	ITPR3	ITPR3	no_call	ITPR3	2	2	2	0	0	2
+Thalassophryne_amazonica|GCF_902500255.1|ITPR3.0	Thalassophryne amazonica	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Tichodroma_muraria|GCA_013390105.1|ITPR3.0	Tichodroma muraria	Aves	ITPR3	ITPR3	ITPR3	ITPR3	6	6	10	0	0	6
+Tinamus_guttatus|GCF_000705375.1|ITPR3.0	Tinamus guttatus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	5	5	8	0	0	5
+Trachurus_japonicus|GCF_045865225.1|ITPR3.0	Trachurus japonicus	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Trichechus_manatus_latirostris|GCF_000243295.1|ITPR3.0	Trichechus manatus latirostris	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	7	7	20	0	0	7
+Tupaia_belangeri_chinensis|GCF_000334495.1|ITPR3.0	Tupaia belangeri chinensis	Mammalia	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Tyto_alba|GCF_018691265.1|ITPR3.0	Tyto alba	Aves	ITPR3	ITPR3	ITPR3	ITPR3	8	8	20	0	0	8
+Vireo_altiloquus|GCA_013396875.1|ITPR3.0	Vireo altiloquus	Aves	ITPR3	ITPR3	ITPR3	ITPR3	6	6	12	0	0	6
+Xenopus_tropicalis|GCF_000004195.4|ITPR3.0	Xenopus tropicalis	Amphibia	ITPR3	ITPR3	ITPR3	ITPR3	2	2	20	0	0	2
+Xiphias_gladius|GCF_016859285.1|ITPR3.0	Xiphias gladius	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0
+Zeus_faber|GCF_960531495.1|ITPR3.0	Zeus faber	Actinopteri	ITPR3	ITPR3	no_call		0	0	20	0	0	0

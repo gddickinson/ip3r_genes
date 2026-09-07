@@ -1097,3 +1097,76 @@ the re-run unchanged — which is the reassuring half of the story. The
 sobering half is that the error was invisible in every table we had, and
 surfaced only because someone looked at the picture and asked where a
 familiar name had gone.
+
+## 2026-09-07 — The three receptors are where they should be, and the neighbours say who is related to whom
+
+Until now every statement about which of the three human receptor genes is
+which has rested on one kind of evidence: how similar the proteins are. That
+is a good instrument, but it is a single one, and the whole family is built
+from copies of the same gene — so it is fair to ask whether the labels would
+survive being checked a completely different way.
+
+This week we checked them by looking at the *neighbours*. In a genome, genes
+sit in stretches that stay together over very long spans of time. If our
+ITPR1 in a mouse and our ITPR1 in a lizard really are the same gene inherited
+from a common ancestor, they should still be surrounded by many of the same
+neighbouring genes — even though nothing about the neighbours was used to
+identify them.
+
+**They are.** Across 274 annotated genomes, two loci we call the same
+receptor share their neighbourhood two to four *hundred* times more than two
+randomly chosen stretches of the same two genomes do, and this holds for
+98–99.8 % of individual comparisons. Two loci we call *different* receptors
+share essentially nothing — and neither do our receptors and the ryanodine
+receptors, the look-alike family that has shadowed this project from the
+start. The labels hold up under an instrument that never saw the protein.
+
+**The neighbourhood also remembers the ancient duplication.** The three
+vertebrate receptors were made by two rounds of whole-genome duplication
+more than 500 million years ago. When a genome is duplicated, the genes
+*beside* the receptor are duplicated too — so a family should have left
+cousins beside two different receptors. We found exactly two such surviving
+pairs, and both of them link ITPR1 to one of the others: a circadian-clock
+gene (BHLHE40 beside ITPR1, BHLHE41 beside ITPR2) and a glutamate receptor
+(GRM7 beside ITPR1, GRM4 beside ITPR3). Between ITPR2 and ITPR3 there is
+nothing left at all.
+
+That is worth stating carefully, because last session's family tree
+concluded that ITPR2 and ITPR3 are each other's closest relatives — and they
+are the one pair whose neighbourhoods retain nothing in common. The two
+findings are not in conflict: a tree records the *order* in which the copies
+were made, while a shared neighbour records which copies happened to *escape
+deletion* afterwards, and those are different histories. But it does mean
+the ancestral block that ITPR1 sits in is the one that survived best, and
+that reconstructing the full picture will need the whole quartet of
+duplicated regions, not the two pairs that happen to have lasted. *(pending:
+a dedicated paralogon reconstruction — logged as an emergent task)*
+
+**One receptor's ground is much less stable than the others'.** ITPR3's
+neighbourhood is conserved within a class of animals but breaks down between
+classes about two and a half times faster than ITPR1's or ITPR2's. In humans
+ITPR3 sits inside the major histocompatibility region on chromosome 6 —
+famously the most rearranged, most variable neighbourhood in the vertebrate
+genome. So the gene that is *easiest* to find across genomes is the one
+sitting on the shakiest ground, and those two facts are measuring different
+things.
+
+**131 genes gained a name from their neighbours.** Where a genome's own
+annotation left a receptor unlabelled — or filed a second copy without
+saying which of the three it was — the neighbourhood can often say. After
+demanding that each assignment beat the best any random stretch of genome
+achieved, 131 loci now carry a receptor identity they did not have, 87 of
+them where the database says nothing at all.
+
+**And the lamprey question stays open.** Last session's tree found that
+lampreys and hagfish carry three receptors of their own, in lineages older
+than the split between the two animals, and left it to this analysis to say
+which of the vertebrate three each one corresponds to. It cannot. Matching
+neighbours across species means matching gene *names*, and after roughly 550
+million years of rearrangement — with only about a quarter of lamprey and
+hagfish genes carrying a name at all — there is no shared vocabulary left to
+compare. Every one of the six scores no better than a random stretch of the
+same genome. That is not a negative answer; it is the honest report that
+this instrument cannot reach the question, and the next one will have to
+compare the neighbours by what they *are* rather than by what they are
+called. *(pending: a name-independent synteny instrument)*

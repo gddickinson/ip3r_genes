@@ -1,0 +1,6 @@
+pair	key	frac_a	frac_b	n_species_a	n_species_b	n_vclass_a	n_vclass_b	background	enrichment	vclass_a	vclass_b
+ITPR1_vs_ITPR2@fixed10	BHLHE	0.6232	0.8512	207	215	11	10	0.0074	84.0058	Actinopteri;Amphibia;Aves;Chondrichthyes;Cladistia;Coelacanthimorpha;Crocodylia;Dipnoi;Lepidosauria;Mammalia;Testudines	Actinopteri;Amphibia;Aves;Chondrichthyes;Cladistia;Coelacanthimorpha;Crocodylia;Dipnoi;Lepidosauria;Mammalia
+ITPR1_vs_ITPR3@fixed10	GRM	0.4155	0.5349	207	215	6	8	0.0045	93.3398	Amphibia;Aves;Crocodylia;Lepidosauria;Mammalia;Testudines	Actinopteri;Amphibia;Aves;Crocodylia;Dipnoi;Lepidosauria;Mammalia;Testudines
+ITPR1_vs_ITPR2@informative10	BHLHE	0.6232	0.8519	207	216	11	10	0.0088	70.6280	Actinopteri;Amphibia;Aves;Chondrichthyes;Cladistia;Coelacanthimorpha;Crocodylia;Dipnoi;Lepidosauria;Mammalia;Testudines	Actinopteri;Amphibia;Aves;Chondrichthyes;Cladistia;Coelacanthimorpha;Crocodylia;Dipnoi;Lepidosauria;Mammalia
+ITPR1_vs_ITPR3@informative10	GRM	0.4155	0.5349	207	215	6	8	0.0044	94.1707	Amphibia;Aves;Crocodylia;Lepidosauria;Mammalia;Testudines	Actinopteri;Amphibia;Aves;Crocodylia;Dipnoi;Lepidosauria;Mammalia;Testudines
+ITPR1_vs_ITPR3@informative10	EDEM	0.6522	0.1442	207	215	11	1	0.0029	49.0233	Actinopteri;Amphibia;Aves;Chondrichthyes;Cladistia;Coelacanthimorpha;Crocodylia;Dipnoi;Lepidosauria;Mammalia;Testudines	Actinopteri

@@ -1,0 +1,109 @@
+{
+ "generated": "2026-09-07 06:35",
+ "runtime_s": 56.9,
+ "flank_n": 10,
+ "min_keys": 4,
+ "primary_window": "fixed10",
+ "call_window": "informative10",
+ "primary_key": "relaxed",
+ "n_control_replicates": 3,
+ "control_seed": 20260907,
+ "n_loci": 2144,
+ "n_excluded_cells": 0,
+ "n_missing_summary": 0,
+ "n_genomes_with_gene_table": 274,
+ "n_loci_without_gene_table": 270,
+ "n_control_genomes": 242,
+ "self_tests": [
+  "T1",
+  "T2",
+  "T3",
+  "T4",
+  "T5",
+  "T6",
+  "T7",
+  "T8",
+  "T9",
+  "T10",
+  "T11"
+ ],
+ "excluded": [],
+ "subset_sizes": {
+  "ITPR1": 257,
+  "ITPR2": 258,
+  "ITPR3": 262,
+  "RYR": 273
+ },
+ "caller": {
+  "n": 503,
+  "n_called": 405,
+  "call_rate": 0.805168986083499,
+  "n_correct": 405,
+  "accuracy": 1.0,
+  "per_class": {
+   "ITPR1": {
+    "n": 136,
+    "n_called": 121,
+    "n_correct": 121,
+    "accuracy": 1.0
+   },
+   "ITPR2": {
+    "n": 163,
+    "n_called": 155,
+    "n_correct": 155,
+    "accuracy": 1.0
+   },
+   "ITPR3": {
+    "n": 204,
+    "n_called": 129,
+    "n_correct": 129,
+    "accuracy": 1.0
+   }
+  },
+  "consensus_frac": 0.4,
+  "consensus_frac_rule": "maximises call rate - random-window false-call rate (0.805 - 0.008 = 0.797); accuracy on labelled loci 1.000",
+  "consensus_sizes": {
+   "ITPR1": 15,
+   "ITPR2": 11,
+   "ITPR3": 9
+  }
+ },
+ "caller_null": {
+  "n": 726,
+  "n_called": 6,
+  "false_call_rate": 0.008264462809917356,
+  "max_best_score": 2,
+  "frac_best_ge_1": 0.008264462809917356,
+  "frac_best_ge_2": 0.005509641873278237,
+  "frac_best_ge_3": 0.0,
+  "score_distribution": {
+   "0": 720,
+   "1": 2,
+   "2": 4
+  }
+ },
+ "unplaced_supported": 131,
+ "unplaced_within_null": 57,
+ "paralogon_min_frac": 0.1,
+ "background_windows": {
+  "fixed10": 674,
+  "informative10": 680
+ },
+ "table_sha256": {
+  "caller_calibration.tsv": "253cb4b0122d63b8419263208e2bd97058d6cb08e47c58698e823542796e9128",
+  "caller_frac_sweep.tsv": "058c325efb99fca1b09b5a0b89fcb30972c74a312ae72bf1afbc9e0f5b8ae90b",
+  "caller_null.tsv": "a4cf6f375ea3965bcce4cb89f988a6761f5a299e96033284ad8de411dbe2d4c4",
+  "flank_consensus.tsv": "b8a0bb7fc369212555eb323cd3bdbcd0d46f089244da281f58b5996b8495e784",
+  "flanks.tsv": "6932df864d1f9c87d41ca9be5bddbbd08a7ea73821f1510b223e01076d536fd6",
+  "jaccard_ITPR1.tsv": "3ff7b13e69f65ff5a032a6d8b674421738f15016327f7b23e30d8cbfd6021792",
+  "jaccard_ITPR2.tsv": "5447ec3cf56b24af45b2f0ce0b9bf772fadcdbacf5e1c9682b48b1bab96bf570",
+  "jaccard_ITPR3.tsv": "1d5da086ecbaa5d713e24eff044006b04e05da12698e2920db108a0b4fd6f5a5",
+  "jaccard_RYR.tsv": "056776215aa1ba37e2f1738f14010370e4ae6419f3b687b9b907a28d1b4ed516",
+  "loci.tsv": "394b66f8fb0530b911d2c8e6fbc3ac5efbc4849322242fbb8235de7332605b2a",
+  "locus_sets.tsv": "25d882b93c8c3fdf388947dda4396213f9ce4f628a2e9675632eaed1cf22da7c",
+  "pair_stats.tsv": "37675f92ab0d2ca703550186ae9ac6f3ac82e580bcfad524da1e826ea91219ff",
+  "paralogon_shared.tsv": "5fddc14afed399faca187ddecabfc496dc98c3911918ac834ec61c06cb15375d",
+  "paralogon_summary.tsv": "6020c960980936e41577de5bf158f4e319a669c8473fff6887dccba087babe30",
+  "unplaced_loci.tsv": "418b12cf9328f9646becb42d93890113e970e2b047abd93e3902870a6e5166d7"
+ }
+}

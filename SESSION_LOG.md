@@ -1707,3 +1707,71 @@ Support improved (64.9 % → 69.5 % of nodes). The sister answer held.
 **Next.** S8 — synteny. It inherits two questions this tree could not
 settle: which side of the vertebrate duplication each cyclostome lineage
 attaches to, and the ITPR1 core's weak support.
+
+## 2026-09-07 — S8: synteny, and a null for every number in it
+
+**Task.** S8 — flanking-gene analysis across the ITPR loci. Deps S2 and S5b
+were complete; the row was the topmost unblocked `pending`.
+
+**What was built.** Ten modules, all under the 500-line budget:
+`s8_flank_lib.py` (loci, windows, symbol keys, Jaccard), `s8_control.py`
+(the matched random-window null), `s8_paralogon.py` (the 2R test and the
+consensus caller), `s8_run_synteny.py` (driver), `s8_tables.py`,
+`s8_test_flanks.py` (11 negative controls), `s8_priors.py`,
+`s8_figures.py`, `s8_report.py` + `s8_report_results.py`. Full run 45–60 s
+over 2,144 loci in 309 genomes; 274 of them carry a gene table.
+
+**Three method decisions that changed the answer.**
+
+*Loci come from the per-genome `summary.json`, not the ledger.* The ledger
+carries one row per genome × cell and therefore only the best locus. A
+teleost ITPR1 cell holds *itpr1a* and *itpr1b*; the sea lamprey's holds
+three. Reading the best one would have compared *itpr1a* in one species
+against *itpr1b* in the next and reported the mismatch as a synteny result.
+
+*Every Jaccard is scored against a matched control pair in the same two
+genomes.* Naming density across this genome set varies ~4× (human 97 % of
+coding genes named, sea lamprey 27 %), so a raw Jaccard confounds orthology
+with annotation depth. The control holds the two genomes, their naming
+conventions, the window and the key rule constant; the paired comparison is
+a sign test with both-zero ties dropped and counted.
+
+*The paralogon is invisible to symbol matching by construction.* 2R
+ohnologs almost never share a symbol, so cross-paralog Jaccard is zero
+whether or not a paralogon exists. The root key (`BHLHE40`, `BHLHE41` →
+`BHLHE`) is what makes the pair visible, and the same rule applied to the
+random windows is what stops a promiscuous root family manufacturing one.
+
+**Results.** Within-paralog Jaccard 216×–413× its own matched null, with
+98–99.8 % of individual pairs beating their own control; every
+cross-paralog and cross-family class at or below the null (max mean J
+0.0002 over 168,241 ITPR × RyR pairs). Exactly two ohnologous flank
+families survive, **both connected to ITPR1** — BHLHE40/41 (ITPR1–ITPR2,
+62 %/85 % of species, 84× background) and GRM7/GRM4 (ITPR1–ITPR3,
+42 %/53 %, 93×) — and **ITPR2/ITPR3 share none at any bar from 10 % to
+50 %**. ITPR3's neighbourhood is the one that does not travel: cross-class
+J 0.062 against 0.160/0.158.
+
+**The caller.** A flank consensus paralog caller, leave-one-species-out,
+threshold chosen by maximising call rate minus random-window false-call
+rate (0.4; accuracy is 1.000 across the whole sweep, so it separates
+nothing and is not what is optimised). 405/405 correct on 503
+annotation-confirmed loci, 6/726 random windows called. It adds **131
+paralog assignments above the null's own maximum**, 87 of them at loci
+whose annotation names no paralog.
+
+**What it could not do.** S7 handed S8 the cyclostome question explicitly.
+All six loci carry 20 informative flank symbols — the window is not the
+limit — but the best overlap any reaches with a gnathostome consensus is 2,
+and random windows reach 2. Reported `underpowered`, not negative, and
+logged as an emergent task needing a name-independent instrument.
+
+**Two bugs the discipline caught.** `frac_sweep()` originally varied a
+module constant that `ConsensusCaller.consensus()` had bound as a default
+argument, so the sweep silently reported one threshold six times. And a
+two-run diff found `flank_consensus.tsv` differing between processes:
+ranked tables built by walking a Python set are hash-seeded unless the sort
+carries a final tiebreak. T11 now tests order invariance on every build,
+and `synteny_stats.json` records the SHA-256 of every table.
+
+**Next.** S9 — ML selection (dN/dS), deps S6 only, which is complete.

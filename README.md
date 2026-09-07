@@ -115,6 +115,31 @@ but duplications older than the hagfish/lamprey split.
 
 ![The ML phylogeny](results/phylogeny/figures/tree_ml_rooted.png)
 
+**S8** checked those paralogue labels with an instrument that never sees the
+protein: the *neighbouring* genes. Across 2,144 loci in 309 genomes, two loci
+carrying the same paralogue label share their flanking-gene symbols
+**216×–413× more than two matched random neighbourhoods in the same two
+genomes** — the null every number here is read against — with 98–99.8 % of
+individual pairs beating their own control, while every cross-paralogue and
+every ITPR × RyR class sits at or below that null (max mean Jaccard 0.0002
+over 168,241 pairs). The 2R paralogon is invisible to symbol matching by
+construction, since ohnologues almost never share a symbol; scored on gene
+*family* roots against the same random background, exactly two shared
+families survive and **both connect to ITPR1** — BHLHE40/BHLHE41
+(ITPR1–ITPR2, 84× background) and GRM7/GRM4 (ITPR1–ITPR3, 93×) — while
+**ITPR2 and ITPR3 retain none**, which is a tension with S7's sister pair
+worth stating rather than smoothing, because flank retention records
+deletion and a tree records duplication order. A leave-one-species-out
+consensus caller, its threshold chosen by maximising call rate minus
+random-window false-call rate, is **405/405 correct on the
+annotation-confirmed loci** and adds **131 paralogue assignments** no random
+neighbourhood could have produced. The one thing it cannot do is the
+question S7 handed it: all six cyclostome loci score no better than a random
+stretch of their own genome, so the answer is *underpowered*, not negative.
+→ [`results/synteny/report.md`](results/synteny/report.md)
+
+![The 2R paralogon around the three receptors](results/synteny/figures/synteny_paralogon.png)
+
 ![Conservation and the domain architecture](results/msa_v2/figures/msa_conservation.png)
 
 ![Copy number outside the vertebrates](results/s23_scope/figures/copy_number.png)
@@ -238,7 +263,7 @@ One task per session. Full ledger with dependencies and results in
 | S23c | The full 194-genome non-vertebrate sweep → census v6 | ✅ completed 2026-09-06 |
 | S6 | Alignment upgrade (MAFFT L-INS-i + trimAl) | ✅ completed 2026-09-06 |
 | S7 | ML phylogeny, rooted on RyR; which paralogs are sisters | ✅ completed 2026-09-07 |
-| S8 | Synteny across the ITPR loci | ⏳ pending |
+| S8 | Synteny across the ITPR loci | ✅ completed 2026-09-07 |
 | S9 | ML selection (codeml, HyPhy RELAX) | ⏳ pending |
 | S10 | Annotation-bug molecular validation | ⏳ pending |
 | S11 | Structures + TM-align vs cryo-EM references | ⏳ pending |
