@@ -190,6 +190,10 @@ def fig_branch_contrast() -> None:
     ax1.set_xticks(range(len(PARALOGS)))
     ax1.set_xticklabels(PARALOGS)
     ax1.set_ylabel("ω")
+    if not have_tr:
+        ax1.text(0.5, 0.5, "two-ratio models not run yet",
+                 transform=ax1.transAxes, ha="center", va="center",
+                 color=fs.MUTED, fontsize=fs.FS_TICK)
     ax1.legend(handles=[
         Line2D([], [], marker="s", ls="", color=fs.MUTED, label="background"),
         Line2D([], [], marker="s", ls="", color=fs.INK, label="foreground clade")],
@@ -200,12 +204,26 @@ def fig_branch_contrast() -> None:
 
     ks = [f(relax.get(p, {}).get("k")) for p in PARALOGS]
     for i, p in enumerate(PARALOGS):
-        if ks[i] is not None:
-            ax2.bar(i, ks[i], 0.55, color=fs.PARALOG[p], zorder=3)
+        if ks[i] is not None and ks[i] > 0:
+            # drawn from k = 1, so a bar's length is the size of the effect
+            # and its side of the line is the direction
+            ax2.bar(i, ks[i] - 1.0, 0.55, bottom=1.0, color=fs.PARALOG[p],
+                    zorder=3)
     ax2.axhline(1.0, color=fs.INK, lw=1.0, ls="--", zorder=4)
-    ax2.annotate("k = 1 (no change)", xy=(len(PARALOGS) - 0.6, 1.0),
-                 xytext=(0, 4), textcoords="offset points", ha="right",
+    # k is an exponent on the ω distribution, so relaxation and
+    # intensification are multiplicative around 1 — k = 0.5 and k = 2 are
+    # the same size of effect in opposite directions. On a linear axis an
+    # intensified paralog at k = 9 flattens every relaxed one onto the
+    # k = 1 line and hides the direction the panel exists to show.
+    ks_ok = [k for k in ks if k is not None and k > 0]
+    if ks_ok:
+        ax2.set_yscale("log")
+        lo, hi = min(ks_ok + [1.0]), max(ks_ok + [1.0])
+        ax2.set_ylim(lo / 2.5, hi * 2.5)
+    ax2.annotate("k = 1 (no change)", xy=(-0.42, 1.0),
+                 xytext=(0, 3), textcoords="offset points", ha="left",
                  va="bottom", fontsize=fs.FS_TICK, color=fs.INK)
+    ax2.set_xlim(-0.55, len(PARALOGS) - 0.45)
     ax2.set_xticks(range(len(PARALOGS)))
     ax2.set_xticklabels(PARALOGS)
     ax2.set_ylabel("RELAX k")
