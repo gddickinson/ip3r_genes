@@ -1,0 +1,17 @@
+{
+  "description": "one-ratio over the whole vertebrate family tree (the branch-model null)",
+  "kappa": 1.79534,
+  "lnL": -190363.868957,
+  "minutes": 95.48,
+  "np": 113,
+  "omegas": [
+    0.03495
+  ],
+  "settings": {
+    "NSsites": "0",
+    "model": "0",
+    "omega": "0.4"
+  },
+  "site_classes": "",
+  "tree_length": 52.86577
+}

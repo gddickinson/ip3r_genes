@@ -1874,3 +1874,84 @@ after the fact the way the PIEZO project had to.
 **Next.** S9b: finish the codeml suite (`python scripts/s9_codeml.py`, fully
 resumable), then `s9_relax.py`, `s9_tables.py`, `s9_report.py`,
 `s9_figures.py`.
+
+## 2026-09-08 — S9b: the models land, and three significant tests that do not mean what they say
+
+**Task.** The codeml suite finished overnight: **40/40 jobs in 22.7 h** on
+7 workers, plus 3 HyPhy RELAX runs. 12 likelihood-ratio tests, BH-corrected
+across the family. `scripts/s9_run.py` ran `codeml → relax → tables →
+report → figures` unattended and all five stages returned clean.
+
+**The headline is agreed on by three instruments that share no
+machinery.** ITPR1 is held roughly twice as tightly as the other two:
+
+| | ITPR1 | ITPR2 | ITPR3 |
+|---|---|---|---|
+| one-ratio ω | **0.0238** | 0.0430 | 0.0415 |
+| two-ratio ω (foreground vs background) | **0.0241** vs 0.0432 | 0.0435 vs 0.0317 | 0.0455 vs 0.0308 |
+| RELAX k | **9.36 intensified** | 0.908 relaxed | 0.836 relaxed |
+
+Every two-ratio test is significant (ITPR1 q = 2.9e-63). RELAX compares
+whole ω distributions rather than point estimates, so its agreement with
+the one-ratio ranking is a check rather than the same number twice.
+
+**Three significant tests needed the fitted parameter before they could be
+stated, and none of them meant what its p-value looked like. This became
+D38.**
+
+*M8 vs M7* beats its null in all three paralogs at q ≈ 2e-4 — and the class
+it adds sits at **ω = 1.00000**, codeml's boundary, on 0.3–0.7 % of sites,
+with 0 / 0 / 1 sites reaching BEB ≥ 0.95. A beta distribution on [0, 1]
+cannot represent a spike at the neutral boundary, so adding one class that
+lands exactly there fits significantly better and says nothing about
+adaptation. *M2a vs M1a* is 2ΔlnL = 0.00 in all three: the positive class is
+estimated at ω = 20–94 with a proportion of **exactly zero**.
+
+*Branch-site model A* is significant on all three stems, and on two of them
+ω₂ is pinned at codeml's **999 upper bound** with the likelihood flat above
+it — ITPR2's restarts reach the same lnL at ω₂ = 162 and 999, which is the
+definition of an unidentified parameter, and exactly what §4.2's saturation
+predicts for a branch that old. **Only the ITPR1 stem is reported as a
+result**: ω₂ = 5.53 on 11.0 % of sites, stable across three restarts, 8
+sites at BEB ≥ 0.95 and 5 at ≥ 0.99. A pipeline that printed the three
+q-values would have reported its strongest signal on the stem whose
+parameter is least determined.
+
+**D37 earned its keep, measurably.** 3 of the 12 branch-site restarts
+converged *below* their own nested null — one on every stem — and at a
+**different initial ω each time** (ITPR1 ω₀ = 4, ITPR2 0.5, ITPR3 1.5). No
+single starting value would have been safe, so this is the case for
+restarting rather than for choosing better, and it is now a measurement
+rather than an argument. The figure shows it at a glance: three points left
+of the zero line, one per colour.
+
+**One silent failure, in the direction that hides a result.** HyPhy writes
+non-finite per-branch ω estimates as the bare token `inf`, which is not
+legal JSON. The ITPR1 RELAX run *succeeded* — its log carries a complete
+fit — but `json.loads` threw, `run_one` returned `{}` on the exception, and
+ITPR1 came back as `k = None` with 0 branches. Beside two real answers that
+reads as a negative result, and it would have buried k = 9.36, the largest
+effect in the analysis. Now repaired on read, counted in the table, and a
+run whose output cannot be parsed gets a `status` rather than a blank `k`.
+
+**Scheduling notes, for the next long task.** Longest-first ordering put 18
+expensive whole-tree jobs ahead of 6 cheap site models, which then waited a
+day behind them; a second driver on the cheap ones cleared them in 2.5 h.
+That is only safe because `run_job` now takes a **per-job process lock** —
+two codeml processes in one directory interleave their fixed output
+filenames and still parse into a plausible number (`s7_run.claim`'s incident
+in a second tool). RELAX was moved off the critical path entirely once it
+was noticed that it depends only on the codon alignment and the tree, both
+of which existed twelve hours earlier; it then took 80 minutes.
+
+**Estimating.** My first estimate (6–8 h) was a guess and wrong by ~4×.
+Calibrating codeml's own `rub` round counter against finished jobs —
+rounds-to-convergence per free parameter, and minutes per round — gave
+7.0–8.7 h per whole-tree job against the 10–11 h I had extrapolated from
+M2a, and predicted 05:30; it finished 06:37.
+
+**Next.** S10 — annotation-bug molecular validation (deps S5b, complete).
+S9's one live lead is logged as emergent: the eight ITPR1-stem BEB sites
+should be carried onto the cryo-EM channel in S17, because "a handful of
+sites changed fast on the branch that made ITPR1" means something very
+different in the IP₃-binding core than in a disordered linker.

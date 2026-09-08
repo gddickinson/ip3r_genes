@@ -1,0 +1,18 @@
+{
+  "description": "two-ratio: the whole ITPR3 clade as foreground",
+  "kappa": 1.79669,
+  "lnL": -190300.368946,
+  "minutes": 112.6,
+  "np": 114,
+  "omegas": [
+    0.03085,
+    0.04553
+  ],
+  "settings": {
+    "NSsites": "0",
+    "model": "2",
+    "omega": "0.4"
+  },
+  "site_classes": "",
+  "tree_length": 53.895308
+}

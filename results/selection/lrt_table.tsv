@@ -1,8 +1,13 @@
 test	set	null	alt	lnL_null	lnL_alt	stat	df	p	p_reported	q_bh	mixture	note
+two-ratio (ITPR1 clade) vs one-ratio	ITPR1	m0_all	two_ratio_ITPR1	-190364	-190220	286.86	1	2.40265e-64	2.40265e-64	2.88318e-63	0	
+branch-site model A on the ITPR1 stem	ITPR1	bs_null_ITPR1	bs_alt_ITPR1_w0.5	-189202	-189199	6.56555	1	0.0103972	0.00519858	0.00693144	1	best of 4 restarts
 M2a vs M1a within ITPR1	ITPR1	m1a_ITPR1	m2a_ITPR1	-56301.7	-56301.7	0	2	1	1	1	0	
-M8 vs M7 within ITPR1	ITPR1	m7_ITPR1	m8_ITPR1	-55688.6	-55678.9	19.3527	2	6.27488e-05	6.27488e-05	0.000219621	0	
-branch-site model A on the ITPR2 stem	ITPR2	bs_null_ITPR2	bs_alt_ITPR2_w0.5	-189172	-189181	0	1	1	0.5	0.875	1	best restart still below its own null — local optimum, not evidence
+M8 vs M7 within ITPR1	ITPR1	m7_ITPR1	m8_ITPR1	-55688.6	-55678.9	19.3527	2	6.27488e-05	6.27488e-05	0.000107569	0	
+two-ratio (ITPR2 clade) vs one-ratio	ITPR2	m0_all	two_ratio_ITPR2	-190364	-190324	79.3052	1	5.32192e-19	5.32192e-19	2.12877e-18	0	
+branch-site model A on the ITPR2 stem	ITPR2	bs_null_ITPR2	bs_alt_ITPR2_w1.5	-189172	-189156	32.0126	1	1.53176e-08	7.65879e-09	1.83811e-08	1	best of 4 restarts
 M2a vs M1a within ITPR2	ITPR2	m1a_ITPR2	m2a_ITPR2	-48397	-48397	0	2	1	1	1	0	
-M8 vs M7 within ITPR2	ITPR2	m7_ITPR2	m8_ITPR2	-47804.8	-47796.1	17.3646	2	0.000169559	0.000169559	0.000395638	0	
+M8 vs M7 within ITPR2	ITPR2	m7_ITPR2	m8_ITPR2	-47804.8	-47796.1	17.3646	2	0.000169559	0.000169559	0.000254338	0	
+two-ratio (ITPR3 clade) vs one-ratio	ITPR3	m0_all	two_ratio_ITPR3	-190364	-190300	127	1	1.85771e-29	1.85771e-29	1.11463e-28	0	
+branch-site model A on the ITPR3 stem	ITPR3	bs_null_ITPR3	bs_alt_ITPR3_w0.5	-189061	-189025	73.4525	1	1.03087e-17	5.15437e-18	1.54631e-17	1	best of 4 restarts
 M2a vs M1a within ITPR3	ITPR3	m1a_ITPR3	m2a_ITPR3	-61559.2	-61559.2	0	2	1	1	1	0	
-M8 vs M7 within ITPR3	ITPR3	m7_ITPR3	m8_ITPR3	-60635.2	-60625.5	19.4349	2	6.02227e-05	6.02227e-05	0.000219621	0	
+M8 vs M7 within ITPR3	ITPR3	m7_ITPR3	m8_ITPR3	-60635.2	-60625.5	19.4349	2	6.02227e-05	6.02227e-05	0.000107569	0	

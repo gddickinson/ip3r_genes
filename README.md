@@ -145,12 +145,28 @@ those 57 needed more than one attempt, and both are human — UniProt
 cross-references five Ensembl transcripts for ITPR1 and two for ITPR2, and
 in each the *first* is not the isoform the tree was built on, so a route
 that returns the first CDS it can download silently analyses a different
-protein (D36). First results, on a family held about as tightly as a gene
-can be: **ω = 0.024 (ITPR1) and 0.043 (ITPR2)** — twenty-five to forty
-silent changes for every one that alters the protein — and synonymous sites
-that are saturated *within* a single paralogue, not only between them
-(94 % of within-ITPR1 pairs past dS = 1.5), so the pairwise matrix is a
-diagnostic here and every reported ω comes from a tree-based model.
+protein (D36).
+
+**S9b** ran the models — 40 codeml jobs and 3 HyPhy RELAX runs. **ITPR1 is
+held about twice as tightly as ITPR2 and ITPR3**, and three instruments that
+share no machinery agree: one-ratio ω 0.024 against 0.043 and 0.042; a
+whole-tree two-ratio test putting ITPR1's clade at 0.024 against a 0.043
+background (q = 3e-63); and RELAX finding selection on ITPR1 **intensified**
+(k = 9.4) while ITPR2 and ITPR3 are **relaxed** (k = 0.91, 0.84). The gene
+carrying almost all of this family's human disease is the gene evolution has
+been least willing to let change.
+
+**Nothing in the family is under positive selection today, and saying so
+took the fitted parameter rather than the p-value (D38).** M8 beats M7 in
+all three paralogues at q ≈ 2×10⁻⁴, but the class it adds sits at exactly
+ω = 1 — codeml's boundary — on under 1 % of sites: a sliver of *unguarded*
+positions, not adaptation. Branch-site model A is significant on all three
+duplication stems, but on two of them the foreground ω runs to codeml's 999
+ceiling with the likelihood flat above it, so only the **ITPR1 stem** is
+reported as a result — ω = 5.5 on 11 % of sites, stable across restarts,
+with 8 positions identified at posterior ≥ 0.95. Synonymous sites turn out
+to be saturated *within* a single paralogue (89 % of pairs past dS = 1.5),
+so every ω here is tree-based and the pairwise matrix is a diagnostic.
 → [`results/selection/report.md`](results/selection/report.md)
 
 ![Purifying selection on every paralogue](results/selection/figures/s9_omega_by_paralog.png)
@@ -282,7 +298,7 @@ One task per session. Full ledger with dependencies and results in
 | S7 | ML phylogeny, rooted on RyR; which paralogs are sisters | ✅ completed 2026-09-07 |
 | S8 | Synteny across the ITPR loci | ✅ completed 2026-09-07 |
 | S9a | The codon alignment every selection test stands on | ✅ completed 2026-09-07 |
-| S9b | ML selection (codeml branch/site models, HyPhy RELAX) | 🔄 in progress |
+| S9b | ML selection (codeml branch/site models, HyPhy RELAX) | ✅ completed 2026-09-08 |
 | S10 | Annotation-bug molecular validation | ⏳ pending |
 | S11 | Structures + TM-align vs cryo-EM references | ⏳ pending |
 | S12 | Expression evidence (SRA junction reads) | ⏳ pending |

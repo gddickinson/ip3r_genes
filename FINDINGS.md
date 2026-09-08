@@ -1241,3 +1241,66 @@ crashed; the numbers would simply have been about a slightly different
 protein than the one every other result in this project is about. The fix is
 to translate every candidate and keep the one that actually matches. Human
 ITPR1 needed nine tries.
+
+## 2026-09-08 — One of the three has been guarded twice as closely as the others
+
+Yesterday's entry could only compare two of the receptors. All three are now
+measured, three different ways, and they agree.
+
+**ITPR1 is held about twice as tightly as ITPR2 and ITPR3.** For every change
+that alters the ITPR1 protein, roughly forty silent changes have accumulated
+instead; for the other two it is about twenty-three. Measured on each
+receptor by itself, measured again by testing each one against the other two
+on the same tree, and measured a third time by a method that compares the
+whole spread of rates rather than an average — the answer is the same every
+time, and the third method puts it most sharply: **selection on ITPR1 is
+*intensified* relative to its siblings, while ITPR2 and ITPR3 are *relaxed*
+relative to theirs.**
+
+That is worth pausing on. ITPR1 is the receptor that carries almost all of
+this family's known human disease — the ataxias, Gillespie syndrome — while
+ITPR2 and ITPR3 have a handful of families each. The clinical record and the
+evolutionary record are completely independent kinds of evidence, and they
+point at the same gene. A gene where a single amino-acid change causes
+disease in people is a gene where a single amino-acid change was removed by
+selection in every other vertebrate for 450 million years.
+
+**Something happened on the branch that made ITPR1, and only on that one.**
+When the ancestral receptor was duplicated, each new copy had a period alone
+before it began diversifying — the branch on which a duplicate's fate is
+decided. Asking whether any part of the protein was changing *faster than
+neutral* on those three branches gives an answer for one of them: on the
+ITPR1 branch, about a ninth of the protein was evolving several times faster
+than the neutral rate, with eight individual positions identifiable with
+high confidence — while everything else in the family sat at a fortieth of
+neutral. This is the one place in the whole analysis where the receptors
+look like they were being *changed* rather than merely preserved.
+
+We are deliberately not making the same claim for ITPR2 and ITPR3. Their
+tests come out significant too, but the rate itself cannot be measured on
+those branches — the estimate runs off the end of what the method can
+express, which means the data cannot say *how* fast, only that the model
+prefers "fast". Significant and unmeasurable are different things, and only
+the ITPR1 answer is a number. *(pending: S17, which will place those eight
+positions on the cryo-EM structure — "a few sites changed fast" means
+something very different in the messenger-binding pocket than in a floppy
+linker)*
+
+**And nothing in this family is under positive selection today.** The tests
+that ask whether any position in a living receptor is being actively driven
+come back with a clear negative once you look at what they actually fitted.
+Two of them appear significant, and both turn out to be describing a small
+fraction of positions — under one percent — that are simply *unguarded*,
+drifting freely rather than being pushed. In a 2,700-residue protein where
+everything else is locked down, less than one percent of slack is itself a
+statement about how little of this channel is expendable.
+
+**A note on how nearly the biggest number went missing.** The analysis that
+found ITPR1's intensified selection wrote its answer into a file that could
+not be read back, because one branch had an unmeasurably large rate and the
+program spelled that as a word its own output format does not allow. The
+analysis had succeeded; the reading of it failed, and silently — the result
+came back blank, and a blank sitting beside two real answers looks like a
+negative finding rather than a broken pipe. It is the same lesson as the
+plant genome that vanished from a figure last week: the failures that matter
+are the ones that produce something plausible rather than an error.

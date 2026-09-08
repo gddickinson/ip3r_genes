@@ -1,0 +1,16 @@
+{
+  "description": "pairwise ML dN/dS within ITPR2",
+  "kappa": null,
+  "lnL": 0.0,
+  "minutes": null,
+  "np": 0,
+  "omegas": [],
+  "settings": {
+    "NSsites": "0",
+    "model": "0",
+    "omega": "0.4",
+    "runmode": "-2"
+  },
+  "site_classes": "pairwise",
+  "tree_length": null
+}

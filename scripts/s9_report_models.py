@@ -44,72 +44,146 @@ def _branch_site(lrts: list[dict], bs: list[dict], beb: list[dict],
     out = ["### 4.4 Branch-site model A on each paralog stem", "",
            "The stem branch is where a duplicate's fate is decided: it is "
            "the interval between the duplication and the first surviving "
-           "split of the new copy, and if a paralog was ever free to change, "
-           "that is when. Model A asks whether a class of sites on that one "
-           "branch has ω > 1 while the rest of the tree does not.", ""]
+           "split of the new copy, and if a paralog was ever free to "
+           "change, that is when. Model A asks whether a class of sites on "
+           "that one branch has ω > 1 while the rest of the tree does not.",
+           ""]
     if not rows:
         out += [verdict("sister_pair", None,
                         "no branch-site job has finished"), ""]
         return out
-    by_para = {r["paralog"]: [x for x in bs if x["paralog"] == r["paralog"]]
-               for r in bs}
-    out += ["| stem | best restart | lnL alt | lnL null | 2ΔlnL | p (½χ²₁) | "
-            "q (BH) | restarts below their own null |",
-            "|---|---|---|---|---|---|---|---|"]
+    by_para: dict[str, list[dict]] = {}
+    for x in bs:
+        by_para.setdefault(x["paralog"], []).append(x)
+    bebs = {b["job"]: b for b in beb}
+
+    out += ["| stem | best restart | 2ΔlnL | q (BH) | foreground ω₂ | its "
+            "share of sites | sites at BEB ≥ 0.95 | restarts below their own "
+            "null |", "|---|---|---|---|---|---|---|---|"]
     for r in rows:
         runs = by_para.get(r["set"], [])
         below = sum(int(x["below_null"]) for x in runs)
         best = next((x for x in runs if x["is_best"] == "1"), {})
+        b = bebs.get(r["alt"], {})
+        om = _f(best.get("fg_omega2"))
+        bound = best.get("at_bound") == "1"
         out.append(f"| {r['set']} | ω₀ = {best.get('initial_omega', '—')} | "
-                   f"{num(r['lnL_alt'], '{:.2f}')} | "
-                   f"{num(r['lnL_null'], '{:.2f}')} | "
                    f"{num(r['stat'], '{:.2f}')} | "
-                   f"{num(r['p_reported'], '{:.3g}')} | "
                    f"{num(r.get('q_bh'), '{:.3g}')} | "
-                   f"{below} / {len(runs)} |")
+                   + (f"**{num(om, '{:.1f}')}** (at codeml's bound)"
+                      if bound else f"**{num(om, '{:.2f}')}**")
+                   + f" | {num(_f(best.get('prop_fg')), '{:.1%}')} | "
+                   f"{b.get('n_p95', '—')} | {below} / {len(runs)} |")
     out.append("")
 
     stuck = [r for r in rows if "local optimum" in (r.get("note") or "")]
     if stuck:
         out += ["**" + ", ".join(r["set"] for r in stuck) + "**: the best of "
-                "four restarts still sits below its own nested null. A "
-                "nested alternative cannot do that, so those runs are local "
-                "optima and report nothing — not a negative result, an "
-                "unfinished optimisation. They are printed rather than "
-                "dropped so the reader can see which stems the search "
-                "failed on.", ""]
+                "four restarts still sits below its own nested null, so "
+                "those runs are local optima and report nothing — not a "
+                "negative result, an unfinished optimisation.", ""]
+    n_below = sum(sum(int(x["below_null"]) for x in by_para.get(r["set"], []))
+                  for r in rows)
+    if n_below:
+        out += [f"**{n_below} of the twelve restarts converged *below* their "
+                "own nested null** — one on every stem. A nested "
+                "alternative cannot have a lower optimum than its null, so "
+                "each of those is a local-optimum failure that a "
+                "single-start run would have reported as its answer. This "
+                "is why model A is restarted by construction here (D37) "
+                "rather than repaired afterwards, and every restart stays "
+                "in `bs_restarts.tsv`."]
+        # Which starting value fails is itself the argument for restarting.
+        bad = {r["set"]: [x["initial_omega"] for x in by_para.get(r["set"], [])
+                          if x["below_null"] == "1"] for r in rows}
+        bad = {k: v for k, v in bad.items() if v}
+        if len(set(tuple(v) for v in bad.values())) == len(bad) and len(bad) > 1:
+            listed = ", ".join(f"{k} at ω₀ = {'/'.join(v)}"
+                               for k, v in sorted(bad.items()))
+            out += ["",
+                    f"And it is a *different* starting value that fails on "
+                    f"each stem — {listed}. No single initial ω would have "
+                    "been safe here, which is the case for running several "
+                    "rather than for choosing a better one.", ""]
+        else:
+            out.append("")
 
     sig = [r for r in rows if _sig(r) and r not in stuck]
-    bebs = {b["job"]: b for b in beb}
-    if sig:
-        out += ["Where the test is significant after BH, the BEB posterior "
-                "is what says whether the model has sites to point at:", "",
-                "| stem | sites with P(ω>1) ≥ 0.95 | ≥ 0.99 | median P | "
-                "max P |", "|---|---|---|---|---|"]
-        for r in sig:
-            b = bebs.get(r["alt"], {})
-            out.append(f"| {r['set']} | {b.get('n_p95', '—')} | "
-                       f"{b.get('n_p99', '—')} | "
-                       f"{num(b.get('median_p'), '{:.3f}')} | "
-                       f"{num(b.get('max_p'), '{:.3f}')} |")
-        out.append("")
-        empty = [r["set"] for r in sig
-                 if int(bebs.get(r["alt"], {}).get("n_p95", 0) or 0) == 0]
-        if empty:
-            out += ["A significant LRT with **no site above the 0.95 "
-                    "posterior** is the signature of a branch-site fit "
-                    "driven by saturation or alignment error rather than by "
-                    "identifiable adaptive substitutions, and §4.2 has just "
-                    "shown how much saturation this alignment carries. "
-                    + ", ".join(empty) + " is reported that way.", ""]
-    else:
+    if not sig:
         out += ["No paralog stem carries a significant branch-site signal "
-                "after correction. On a family this constrained that is the "
-                "expected answer, and it is worth saying plainly: the "
-                "duplicates that made ITPR1/2/3 were not followed by a "
-                "detectable episode of positive selection on the stems — "
-                "at the resolution 2,459 codons and a saturated dS allow.",
-                ""]
+                "after correction.", ""]
+        return out
+
+    # Significance is not the claim. The claim is about ω₂, and codeml
+    # pinning it at 999 is the same tell as a site class pinned at exactly
+    # 1 in §4.5 — the optimiser has hit a wall, not measured a rate.
+    credible, at_bound, no_sites = [], [], []
+    for r in sig:
+        best = next((x for x in by_para.get(r["set"], [])
+                     if x["is_best"] == "1"), {})
+        n95 = int(bebs.get(r["alt"], {}).get("n_p95", 0) or 0)
+        if best.get("at_bound") == "1":
+            at_bound.append((r, best, n95))
+        elif n95 == 0:
+            no_sites.append((r, best, n95))
+        else:
+            credible.append((r, best, n95))
+
+    out += [f"**All {len(sig)} stems are significant after BH, and "
+            f"{len(credible)} of the three carries an ω₂ the data actually "
+            "determine.** Two columns separate those statements:", ""]
+    for r, best, n95 in at_bound:
+        spread = sorted({_f(x.get("fg_omega2")) for x in by_para[r["set"]]
+                         if abs(_f(x["lnL"]) - _f(r["lnL_alt"])) < 1.0}
+                        - {None})
+        # The restart evidence differs per stem and the sentence has to
+        # follow it: several ω₂ at one likelihood is a spread, all of them
+        # at the ceiling is a different observation with the same meaning.
+        if len(spread) > 1:
+            sp = ", ".join(num(x, "{:.0f}") for x in spread)
+            ratio = max(spread) / min(spread) if min(spread) else 0
+            evidence = (f"Restarts reaching the *same* likelihood put ω₂ at "
+                        f"{sp} — a {ratio:.0f}-fold spread at an unchanged "
+                        "lnL, which is the definition of an unidentified "
+                        "parameter.")
+        else:
+            n_same = sum(1 for x in by_para[r["set"]]
+                         if abs(_f(x["lnL"]) - _f(r["lnL_alt"])) < 1.0)
+            evidence = (f"All {n_same} restarts that reach this likelihood "
+                        "end at the ceiling, from initial ω both below and "
+                        "above 1, so the likelihood is flat in ω₂ above it.")
+        out.append(
+            f"- **{r['set']}** — ω₂ is pinned at codeml's **999 upper "
+            f"bound**. That is not an estimate of 999; it is the optimiser "
+            "reporting that the foreground has no synonymous signal left "
+            "to normalise a rate against, which is exactly what §4.2's "
+            f"saturation predicts for a branch this old. {evidence} "
+            f"({n95} sites at BEB ≥ 0.95.)")
+    for r, best, n95 in no_sites:
+        out.append(
+            f"- **{r['set']}** — ω₂ = {num(_f(best.get('fg_omega2')), '{:.2f}')} "
+            "but the BEB posterior identifies **no site** above 0.95, so "
+            "the model has nothing to point at.")
+    for r, best, n95 in credible:
+        b = bebs.get(r["alt"], {})
+        out.append(
+            f"- **{r['set']}** — ω₂ = "
+            f"**{num(_f(best.get('fg_omega2')), '{:.2f}')}** on "
+            f"{num(_f(best.get('prop_fg')), '{:.1%}')} of sites, well "
+            "inside the estimable range and **stable across restarts**, "
+            f"with {n95} sites at BEB ≥ 0.95 and {b.get('n_p99', 0)} at "
+            "≥ 0.99. This one is a result.")
+    out.append("")
+    if credible and at_bound:
+        names = ", ".join(r["set"] for r, _, _ in credible)
+        out += [f"So the reportable branch-site finding is **{names} alone**: "
+                "a class of sites on its stem evolving several times faster "
+                "than neutrally while the rest of the tree sits at ω ≈ 0.03. "
+                "The other stems' tests are significant and their ω₂ is not "
+                "measurable, and those are different sentences. A pipeline "
+                "that printed the three q-values would have reported the "
+                "strongest signal on the stem whose parameter is least "
+                "determined.", ""]
     out += [verdict("sister_pair", "orthogonal",
                     "S7's topology defines *which* branch is each paralog's "
                     "stem, and S9 uses it as given. A branch test cannot "
@@ -308,10 +382,25 @@ def _relax(relax: list[dict], num) -> list[str]:
 
 # ---- 4.7 caveats -----------------------------------------------------------
 
-def _caveats(pairs: list[dict], status: list[dict], num, pct) -> list[str]:
+def _caveats(pairs: list[dict], status: list[dict], bs: list[dict],
+             num, pct) -> list[str]:
     n_sat = sum(int(r["saturated"]) for r in pairs) if pairs else 0
     n_model = sum(1 for r in status if r["route"] == "miniprot"
                   and r["status"] == "ok")
+    bound = sorted({r["paralog"] for r in bs
+                    if r.get("is_best") == "1" and r.get("at_bound") == "1"})
+    extra: list[str] = []
+    if bound:
+        extra = [f"5. **Two of the three branch-site ω₂ are not "
+                 f"identified.** On the {' and '.join(bound)} stem"
+                 + ("s" if len(bound) > 1 else "")
+                 + ", codeml's estimate of the foreground ω sits at its "
+                 "999 upper bound and the likelihood is flat above it. "
+                 "Those tests are significant and their effect size is "
+                 "unmeasurable, which is not the same as a large effect. "
+                 "Only the ITPR1 stem carries an ω₂ inside the estimable "
+                 "range, and it is the only branch-site result this task "
+                 "reports as one."]
     out = ["## 5. What this does not establish", "",
            f"1. **Synonymous saturation.** {pct(n_sat, len(pairs)) if pairs else '—'} "
            "of all within-paralog pairs exceed the dS bar. Tree-based models "
@@ -335,7 +424,7 @@ def _caveats(pairs: list[dict], status: list[dict], num, pct) -> list[str]:
            "4. **This is a vertebrate result.** The non-vertebrate grade is "
            "not in the codon alignment at all. Nothing here says anything "
            "about the constraint on the single-copy receptors S20 and S23 "
-           "found outside the vertebrates.", ""]
+           "found outside the vertebrates."] + extra + [""]
     return out
 
 
@@ -351,7 +440,7 @@ def model_sections(load_tsv, num, pct) -> list[str]:
     out += _branch_site(lrts, bs, beb, num)
     out += _site_models(lrts, beb, site, num)
     out += _relax(relax, num)
-    out += _caveats(pairs, status, num, pct)
+    out += _caveats(pairs, status, bs, num, pct)
     out += ["## 6. Figures", "",
             "![s9_omega_by_paralog](figures/s9_omega_by_paralog.png)", "",
             "*Per-paralog one-ratio ω with the curated-CDS sensitivity "

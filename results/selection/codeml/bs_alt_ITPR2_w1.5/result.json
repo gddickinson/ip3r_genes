@@ -1,0 +1,16 @@
+{
+  "description": "branch-site model A on the ITPR2 stem, initial \u03c9 = 1.5",
+  "kappa": 1.88406,
+  "lnL": -189156.334613,
+  "minutes": 429.67,
+  "np": 116,
+  "omegas": [],
+  "settings": {
+    "NSsites": "2",
+    "fix_omega": "0",
+    "model": "2",
+    "omega": "1.5"
+  },
+  "site_classes": "p=(['0.82623', '0.03228', '0.13617', '0.00532']) bg=(['0.03473', '1.00000', '0.03473', '1.00000']) fg=(['0.03473', '1.00000', '999.00000', '999.00000'])",
+  "tree_length": 49.103986
+}

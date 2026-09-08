@@ -49,8 +49,8 @@ They are *Myxine glutinosa* ×3, *Petromyzon marinus* ×3 — which is the *same
 
 PAL2NAL builds the codon alignment and an **independent in-house protein→codon mapping is computed beside it**; a single nucleotide of disagreement aborts the build. trimAl's `-automated1` columns are chosen on the protein and applied codon-aware, whole triplets only.
 
-- codeml jobs run: **19**, 4.1 h of CPU time
-- likelihood-ratio tests: **6**, Benjamini–Hochberg corrected across the whole family
+- codeml jobs run: **40**, 136.1 h of CPU time
+- likelihood-ratio tests: **12**, Benjamini–Hochberg corrected across the whole family
 - branch-site model A restarted from initial ω = 0.5, 1.5, 2.5, 4.0 on every paralog stem
 - pairwise dS above **1.5** is flagged saturated
 
@@ -61,6 +61,10 @@ Three of those are decisions, not settings.
 **The branch-site LRT is tested against a 50:50 mixture.** Its null fixes ω₂ = 1 on the boundary of the parameter space, so 2ΔlnL is distributed as ½χ²₀ + ½χ²₁ and a plain χ²₁ p-value is twice too small. `lrt_table.tsv` carries both; the halved one is reported.
 
 **BH runs across the whole LRT family.** S9 asks the same question three times, once per paralog. Reporting the smallest of three p-values uncorrected is the multiple-testing error this project's self-tests exist to avoid.
+
+### 2.1 The tree is an input, not a result
+
+Every branch model is run on S7's topology pruned to the tips with a validated CDS, unrooted for PAML. S9 fits branch lengths to it and never re-estimates it, so a selection result cannot quietly re-open the sister question. Whole-tree one-ratio: lnL -190364.0, tree length 52.87, κ 1.795.
 
 ## 3. Self-tests
 
@@ -110,6 +114,14 @@ Two priors meet here, and they are priors about different things. S8 measured ho
 
 Most constrained → least: **ITPR1 < ITPR3 < ITPR2**.
 
+Each paralog clade tested against the rest of the family as a two-ratio branch model (`m0_all` is the null):
+
+| foreground | ω background | ω foreground | 2ΔlnL | p | q (BH) |
+|---|---|---|---|---|---|
+| ITPR1 | 0.0432 | **0.0241** | 286.9 | 2.4e-64 | 2.88e-63 |
+| ITPR2 | 0.0317 | **0.0435** | 79.3 | 5.32e-19 | 2.13e-18 |
+| ITPR3 | 0.0308 | **0.0455** | 127.0 | 1.86e-29 | 1.11e-28 |
+
 **confirmed** — ITPR1 is the most constrained of the three (ω 0.0238), which is what a paralog carrying a dominant missense disease burden should look like
 
 **orthogonal** — ITPR3's neighbourhood is the one that does not travel, but its coding sequence is not the least constrained (ITPR2 is). Neighbourhood conservation is rearrangement history and ω is coding-sequence rate; they are different quantities and this is not a disagreement
@@ -120,7 +132,25 @@ Most constrained → least: **ITPR1 < ITPR3 < ITPR2**.
 
 The stem branch is where a duplicate's fate is decided: it is the interval between the duplication and the first surviving split of the new copy, and if a paralog was ever free to change, that is when. Model A asks whether a class of sites on that one branch has ω > 1 while the rest of the tree does not.
 
-**underpowered** — no branch-site job has finished
+| stem | best restart | 2ΔlnL | q (BH) | foreground ω₂ | its share of sites | sites at BEB ≥ 0.95 | restarts below their own null |
+|---|---|---|---|---|---|---|---|
+| ITPR1 | ω₀ = 0.5 | 6.57 | 0.00693 | **5.53** | 11.0% | 8 | 1 / 4 |
+| ITPR2 | ω₀ = 1.5 | 32.01 | 1.84e-08 | **999.0** (at codeml's bound) | 14.1% | 0 | 1 / 4 |
+| ITPR3 | ω₀ = 0.5 | 73.45 | 1.55e-17 | **999.0** (at codeml's bound) | 27.8% | 65 | 1 / 4 |
+
+**3 of the twelve restarts converged *below* their own nested null** — one on every stem. A nested alternative cannot have a lower optimum than its null, so each of those is a local-optimum failure that a single-start run would have reported as its answer. This is why model A is restarted by construction here (D37) rather than repaired afterwards, and every restart stays in `bs_restarts.tsv`.
+
+And it is a *different* starting value that fails on each stem — ITPR1 at ω₀ = 4, ITPR2 at ω₀ = 0.5, ITPR3 at ω₀ = 1.5. No single initial ω would have been safe here, which is the case for running several rather than for choosing a better one.
+
+**All 3 stems are significant after BH, and 1 of the three carries an ω₂ the data actually determine.** Two columns separate those statements:
+
+- **ITPR2** — ω₂ is pinned at codeml's **999 upper bound**. That is not an estimate of 999; it is the optimiser reporting that the foreground has no synonymous signal left to normalise a rate against, which is exactly what §4.2's saturation predicts for a branch this old. Restarts reaching the *same* likelihood put ω₂ at 162, 999 — a 6-fold spread at an unchanged lnL, which is the definition of an unidentified parameter. (0 sites at BEB ≥ 0.95.)
+- **ITPR3** — ω₂ is pinned at codeml's **999 upper bound**. That is not an estimate of 999; it is the optimiser reporting that the foreground has no synonymous signal left to normalise a rate against, which is exactly what §4.2's saturation predicts for a branch this old. All 3 restarts that reach this likelihood end at the ceiling, from initial ω both below and above 1, so the likelihood is flat in ω₂ above it. (65 sites at BEB ≥ 0.95.)
+- **ITPR1** — ω₂ = **5.53** on 11.0% of sites, well inside the estimable range and **stable across restarts**, with 8 sites at BEB ≥ 0.95 and 5 at ≥ 0.99. This one is a result.
+
+So the reportable branch-site finding is **ITPR1 alone**: a class of sites on its stem evolving several times faster than neutrally while the rest of the tree sits at ω ≈ 0.03. The other stems' tests are significant and their ω₂ is not measurable, and those are different sentences. A pipeline that printed the three q-values would have reported the strongest signal on the stem whose parameter is least determined.
+
+**orthogonal** — S7's topology defines *which* branch is each paralog's stem, and S9 uses it as given. A branch test cannot corroborate the topology it is conditioned on, and saying so is the point of listing it here
 
 ### 4.5 Site models within each paralog
 
@@ -129,11 +159,11 @@ M2a vs M1a and M8 vs M7 ask whether *any* site in a paralog has ω > 1 across th
 | test | 2ΔlnL | df | q (BH) | ω of the extra class | its share of sites | sites at BEB ≥ 0.95 |
 |---|---|---|---|---|---|---|
 | M2a vs M1a within ITPR1 | 0.00 | 2 | 1 | **20.816** | 0.00000 | 0 |
-| M8 vs M7 within ITPR1 | 19.35 | 2 | 0.000188 | **1.000** | 0.00307 | 0 |
+| M8 vs M7 within ITPR1 | 19.35 | 2 | 0.000108 | **1.000** | 0.00307 | 0 |
 | M2a vs M1a within ITPR2 | 0.00 | 2 | 1 | **36.481** | 0.00000 | 0 |
-| M8 vs M7 within ITPR2 | 17.36 | 2 | 0.000339 | **1.000** | 0.00680 | 0 |
+| M8 vs M7 within ITPR2 | 17.36 | 2 | 0.000254 | **1.000** | 0.00680 | 0 |
 | M2a vs M1a within ITPR3 | 0.00 | 2 | 1 | **94.213** | 0.00000 | 0 |
-| M8 vs M7 within ITPR3 | 19.43 | 2 | 0.000188 | **1.000** | 0.00394 | 1 |
+| M8 vs M7 within ITPR3 | 19.43 | 2 | 0.000108 | **1.000** | 0.00394 | 1 |
 
 **3 of 6 tests are significant after BH, and 0 of them is evidence of positive selection.** The likelihood-ratio test and the claim are different statements, and the columns above are what separates them:
 
@@ -171,6 +201,7 @@ The unlabelled vertebrate tips the S7 tree places in no paralog clade are left *
 2. **Genome gene models.** 14 of the CDS come from miniprot reconstructions with masked frameshift or stop codons. The curated sensitivity subsets in §4.1 show ω barely moves without them, but those models are also the only evidence for several lineages, so the subset is a control, not a replacement.
 3. **The tree is conditioned on.** Every branch test is run on S7's topology. If the sister arrangement were wrong, the stems S9 marks would be the wrong branches — which is why S7 ran an AU test over all three arrangements before this task started, and why §4.4 records the dependency instead of quietly relying on it.
 4. **This is a vertebrate result.** The non-vertebrate grade is not in the codon alignment at all. Nothing here says anything about the constraint on the single-copy receptors S20 and S23 found outside the vertebrates.
+5. **Two of the three branch-site ω₂ are not identified.** On the ITPR2 and ITPR3 stems, codeml's estimate of the foreground ω sits at its 999 upper bound and the likelihood is flat above it. Those tests are significant and their effect size is unmeasurable, which is not the same as a large effect. Only the ITPR1 stem carries an ω₂ inside the estimable range, and it is the only branch-site result this task reports as one.
 
 ## 6. Figures
 

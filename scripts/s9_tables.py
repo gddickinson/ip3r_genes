@@ -165,15 +165,41 @@ def pairwise_rows() -> list[dict]:
 # ---- branch-site restarts --------------------------------------------------
 
 BS_COLS = ["paralog", "run", "initial_omega", "lnL", "np",
-           "lnL_null", "below_null", "is_best", "foreground_omega"]
+           "lnL_null", "below_null", "is_best", "foreground_omega",
+           "fg_omega2", "prop_fg", "at_bound"]
+
+#: codeml's upper limit on ω. An estimate sitting here is the optimiser
+#: hitting a wall, not a measurement — the same tell as a site class pinned
+#: at exactly 1 in §4.5, at the other end of the range.
+OMEGA_BOUND = 999.0
 
 
-def foreground_omega(job: str) -> str:
+def bs_site_classes(job: str) -> dict:
+    """Model A's four site classes: proportions and foreground ω.
+
+    The foreground ω of classes 2a/2b is *the* quantity a branch-site claim
+    is about, and the likelihood-ratio test does not report it. A run can
+    be highly significant with that ω pinned at codeml's 999 bound, which
+    means the foreground has no synonymous signal left to normalise
+    against — not that ω is 999.
+    """
     mlc = CODEML_DIR / job / "mlc"
     if not mlc.exists():
-        return ""
-    m = re.search(r"^foreground w\s+(.*)$", mlc.read_text(), re.M)
-    return ";".join(m.group(1).split()) if m else ""
+        return {}
+    text = mlc.read_text()
+    m_p = re.search(r"^proportion\s+(.*)$", text, re.M)
+    m_f = re.search(r"^foreground w\s+(.*)$", text, re.M)
+    if not m_f:
+        return {}
+    fg = [float(x) for x in m_f.group(1).split()]
+    props = [float(x) for x in m_p.group(1).split()] if m_p else []
+    out = {"foreground_omega": ";".join(f"{x:.5f}" for x in fg)}
+    if len(fg) >= 3:
+        out["fg_omega2"] = fg[2]
+        out["at_bound"] = int(fg[2] >= OMEGA_BOUND - 1e-6)
+    if len(props) >= 4:
+        out["prop_fg"] = props[2] + props[3]
+    return out
 
 
 def bs_rows(res: dict) -> list[dict]:
@@ -194,7 +220,7 @@ def bs_rows(res: dict) -> list[dict]:
                          "lnL_null": null["lnL"],
                          "below_null": int(r["lnL"] < null["lnL"]),
                          "is_best": int(name == best),
-                         "foreground_omega": foreground_omega(name)})
+                         **bs_site_classes(name)})
     return rows
 
 

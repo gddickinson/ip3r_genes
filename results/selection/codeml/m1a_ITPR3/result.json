@@ -2,7 +2,7 @@
   "description": "site model M1A within ITPR3",
   "kappa": 2.08465,
   "lnL": -61559.154035,
-  "minutes": 6.93,
+  "minutes": null,
   "np": 38,
   "omegas": [],
   "settings": {

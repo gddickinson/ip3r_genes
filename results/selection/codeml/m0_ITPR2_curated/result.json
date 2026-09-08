@@ -1,0 +1,17 @@
+{
+  "description": "one-ratio \u03c9 within ITPR2, curated CDS only (no genome gene models)",
+  "kappa": 1.86205,
+  "lnL": -43016.917163,
+  "minutes": null,
+  "np": 21,
+  "omegas": [
+    0.0318
+  ],
+  "settings": {
+    "NSsites": "0",
+    "model": "0",
+    "omega": "0.4"
+  },
+  "site_classes": "",
+  "tree_length": 10.528514
+}

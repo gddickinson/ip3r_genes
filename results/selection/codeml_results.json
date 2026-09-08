@@ -1,4 +1,244 @@
 {
+  "bs_alt_ITPR1_w0.5": {
+    "description": "branch-site model A on the ITPR1 stem, initial \u03c9 = 0.5",
+    "kappa": 1.88488,
+    "lnL": -189198.844507,
+    "minutes": 468.99,
+    "np": 116,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "0",
+      "model": "2",
+      "omega": "0.5"
+    },
+    "site_classes": "p=(['0.85636', '0.03344', '0.10606', '0.00414']) bg=(['0.03451', '1.00000', '0.03451', '1.00000']) fg=(['0.03451', '1.00000', '5.52937', '5.52937'])",
+    "tree_length": 49.675567
+  },
+  "bs_alt_ITPR1_w1.5": {
+    "description": "branch-site model A on the ITPR1 stem, initial \u03c9 = 1.5",
+    "kappa": 1.88487,
+    "lnL": -189198.844508,
+    "minutes": 510.23,
+    "np": 116,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "0",
+      "model": "2",
+      "omega": "1.5"
+    },
+    "site_classes": "p=(['0.85635', '0.03344', '0.10607', '0.00414']) bg=(['0.03451', '1.00000', '0.03451', '1.00000']) fg=(['0.03451', '1.00000', '5.53160', '5.53160'])",
+    "tree_length": 49.675361
+  },
+  "bs_alt_ITPR1_w2.5": {
+    "description": "branch-site model A on the ITPR1 stem, initial \u03c9 = 2.5",
+    "kappa": 1.88487,
+    "lnL": -189198.844507,
+    "minutes": 421.2,
+    "np": 116,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "0",
+      "model": "2",
+      "omega": "2.5"
+    },
+    "site_classes": "p=(['0.85635', '0.03344', '0.10607', '0.00414']) bg=(['0.03451', '1.00000', '0.03451', '1.00000']) fg=(['0.03451', '1.00000', '5.53559', '5.53559'])",
+    "tree_length": 49.675494
+  },
+  "bs_alt_ITPR1_w4": {
+    "description": "branch-site model A on the ITPR1 stem, initial \u03c9 = 4",
+    "kappa": 1.89047,
+    "lnL": -189208.159094,
+    "minutes": 522.89,
+    "np": 116,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "0",
+      "model": "2",
+      "omega": "4.0"
+    },
+    "site_classes": "p=(['0.94850', '0.03663', '0.01432', '0.00055']) bg=(['0.03446', '1.00000', '0.03446', '1.00000']) fg=(['0.03446', '1.00000', '134.50535', '134.50535'])",
+    "tree_length": 52.502677
+  },
+  "bs_alt_ITPR2_w0.5": {
+    "description": "branch-site model A on the ITPR2 stem, initial \u03c9 = 0.5",
+    "kappa": 1.88347,
+    "lnL": -189181.271856,
+    "minutes": 515.17,
+    "np": 116,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "0",
+      "model": "2",
+      "omega": "0.5"
+    },
+    "site_classes": "p=(['0.00000', '0.00000', '0.96242', '0.03758']) bg=(['0.03470', '1.00000', '0.03470', '1.00000']) fg=(['0.03470', '1.00000', '933.12018', '933.12018'])",
+    "tree_length": 49.123439
+  },
+  "bs_alt_ITPR2_w1.5": {
+    "description": "branch-site model A on the ITPR2 stem, initial \u03c9 = 1.5",
+    "kappa": 1.88406,
+    "lnL": -189156.334613,
+    "minutes": 429.67,
+    "np": 116,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "0",
+      "model": "2",
+      "omega": "1.5"
+    },
+    "site_classes": "p=(['0.82623', '0.03228', '0.13617', '0.00532']) bg=(['0.03473', '1.00000', '0.03473', '1.00000']) fg=(['0.03473', '1.00000', '999.00000', '999.00000'])",
+    "tree_length": 49.103986
+  },
+  "bs_alt_ITPR2_w2.5": {
+    "description": "branch-site model A on the ITPR2 stem, initial \u03c9 = 2.5",
+    "kappa": 1.88405,
+    "lnL": -189156.441604,
+    "minutes": 925.5,
+    "np": 116,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "0",
+      "model": "2",
+      "omega": "2.5"
+    },
+    "site_classes": "p=(['0.82633', '0.03229', '0.13606', '0.00532']) bg=(['0.03473', '1.00000', '0.03473', '1.00000']) fg=(['0.03473', '1.00000', '162.42729', '162.42729'])",
+    "tree_length": 49.105837
+  },
+  "bs_alt_ITPR2_w4": {
+    "description": "branch-site model A on the ITPR2 stem, initial \u03c9 = 4",
+    "kappa": 1.88407,
+    "lnL": -189156.334613,
+    "minutes": 522.0,
+    "np": 116,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "0",
+      "model": "2",
+      "omega": "4.0"
+    },
+    "site_classes": "p=(['0.82623', '0.03228', '0.13617', '0.00532']) bg=(['0.03473', '1.00000', '0.03473', '1.00000']) fg=(['0.03473', '1.00000', '999.00000', '999.00000'])",
+    "tree_length": 49.1041
+  },
+  "bs_alt_ITPR3_w0.5": {
+    "description": "branch-site model A on the ITPR3 stem, initial \u03c9 = 0.5",
+    "kappa": 1.87039,
+    "lnL": -189024.728697,
+    "minutes": 387.31,
+    "np": 116,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "0",
+      "model": "2",
+      "omega": "0.5"
+    },
+    "site_classes": "p=(['0.69427', '0.02773', '0.26732', '0.01068']) bg=(['0.03502', '1.00000', '0.03502', '1.00000']) fg=(['0.03502', '1.00000', '999.00000', '999.00000'])",
+    "tree_length": 47.443752
+  },
+  "bs_alt_ITPR3_w1.5": {
+    "description": "branch-site model A on the ITPR3 stem, initial \u03c9 = 1.5",
+    "kappa": 1.86889,
+    "lnL": -189085.025923,
+    "minutes": 585.5,
+    "np": 116,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "0",
+      "model": "2",
+      "omega": "1.5"
+    },
+    "site_classes": "p=(['0.00000', '0.00000', '0.96145', '0.03855']) bg=(['0.03486', '1.00000', '0.03486', '1.00000']) fg=(['0.03486', '1.00000', '999.00000', '999.00000'])",
+    "tree_length": 47.533989
+  },
+  "bs_alt_ITPR3_w2.5": {
+    "description": "branch-site model A on the ITPR3 stem, initial \u03c9 = 2.5",
+    "kappa": 1.87039,
+    "lnL": -189024.728697,
+    "minutes": 389.82,
+    "np": 116,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "0",
+      "model": "2",
+      "omega": "2.5"
+    },
+    "site_classes": "p=(['0.69427', '0.02773', '0.26732', '0.01068']) bg=(['0.03502', '1.00000', '0.03502', '1.00000']) fg=(['0.03502', '1.00000', '999.00000', '999.00000'])",
+    "tree_length": 47.443762
+  },
+  "bs_alt_ITPR3_w4": {
+    "description": "branch-site model A on the ITPR3 stem, initial \u03c9 = 4",
+    "kappa": 1.87039,
+    "lnL": -189024.728697,
+    "minutes": 481.63,
+    "np": 116,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "0",
+      "model": "2",
+      "omega": "4.0"
+    },
+    "site_classes": "p=(['0.69427', '0.02773', '0.26732', '0.01068']) bg=(['0.03502', '1.00000', '0.03502', '1.00000']) fg=(['0.03502', '1.00000', '999.00000', '999.00000'])",
+    "tree_length": 47.44377
+  },
+  "bs_null_ITPR1": {
+    "description": "branch-site model A null on the ITPR1 stem",
+    "kappa": 1.88751,
+    "lnL": -189202.127282,
+    "minutes": 697.11,
+    "np": 115,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "1",
+      "model": "2",
+      "omega": "1"
+    },
+    "site_classes": "p=(['0.84931', '0.03305', '0.11323', '0.00441']) bg=(['0.03446', '1.00000', '0.03446', '1.00000']) fg=(['0.03446', '1.00000', '1.00000', '1.00000'])",
+    "tree_length": 49.850478
+  },
+  "bs_null_ITPR2": {
+    "description": "branch-site model A null on the ITPR2 stem",
+    "kappa": 1.88576,
+    "lnL": -189172.340913,
+    "minutes": 433.61,
+    "np": 115,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "1",
+      "model": "2",
+      "omega": "1"
+    },
+    "site_classes": "p=(['0.74862', '0.02916', '0.21389', '0.00833']) bg=(['0.03459', '1.00000', '0.03459', '1.00000']) fg=(['0.03459', '1.00000', '1.00000', '1.00000'])",
+    "tree_length": 49.38265
+  },
+  "bs_null_ITPR3": {
+    "description": "branch-site model A null on the ITPR3 stem",
+    "kappa": 1.86778,
+    "lnL": -189061.454947,
+    "minutes": 421.38,
+    "np": 115,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "fix_omega": "1",
+      "model": "2",
+      "omega": "1"
+    },
+    "site_classes": "p=(['0.62669', '0.02492', '0.33506', '0.01332']) bg=(['0.03473', '1.00000', '0.03473', '1.00000']) fg=(['0.03473', '1.00000', '1.00000', '1.00000'])",
+    "tree_length": 47.899992
+  },
   "m0_ITPR1": {
     "description": "one-ratio \u03c9 within ITPR1",
     "kappa": 1.633,
@@ -33,6 +273,91 @@
     "site_classes": "",
     "tree_length": 11.618318
   },
+  "m0_ITPR2": {
+    "description": "one-ratio \u03c9 within ITPR2",
+    "kappa": 1.80902,
+    "lnL": -48941.1097,
+    "minutes": null,
+    "np": 25,
+    "omegas": [
+      0.04303
+    ],
+    "settings": {
+      "NSsites": "0",
+      "model": "0",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 8.849711
+  },
+  "m0_ITPR2_curated": {
+    "description": "one-ratio \u03c9 within ITPR2, curated CDS only (no genome gene models)",
+    "kappa": 1.86205,
+    "lnL": -43016.917163,
+    "minutes": null,
+    "np": 21,
+    "omegas": [
+      0.0318
+    ],
+    "settings": {
+      "NSsites": "0",
+      "model": "0",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 10.528514
+  },
+  "m0_ITPR3": {
+    "description": "one-ratio \u03c9 within ITPR3",
+    "kappa": 1.97279,
+    "lnL": -62257.356239,
+    "minutes": null,
+    "np": 37,
+    "omegas": [
+      0.04152
+    ],
+    "settings": {
+      "NSsites": "0",
+      "model": "0",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 11.116847
+  },
+  "m0_ITPR3_curated": {
+    "description": "one-ratio \u03c9 within ITPR3, curated CDS only (no genome gene models)",
+    "kappa": 1.89193,
+    "lnL": -49167.455234,
+    "minutes": null,
+    "np": 23,
+    "omegas": [
+      0.03714
+    ],
+    "settings": {
+      "NSsites": "0",
+      "model": "0",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 10.913671
+  },
+  "m0_all": {
+    "description": "one-ratio over the whole vertebrate family tree (the branch-model null)",
+    "kappa": 1.79534,
+    "lnL": -190363.868957,
+    "minutes": 95.48,
+    "np": 113,
+    "omegas": [
+      0.03495
+    ],
+    "settings": {
+      "NSsites": "0",
+      "model": "0",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 52.86577
+  },
   "m1a_ITPR1": {
     "description": "site model M1A within ITPR1",
     "kappa": 1.6715,
@@ -49,11 +374,27 @@
     "site_classes": "",
     "tree_length": 10.944819
   },
+  "m1a_ITPR2": {
+    "description": "site model M1A within ITPR2",
+    "kappa": 1.93806,
+    "lnL": -48397.000283,
+    "minutes": null,
+    "np": 26,
+    "omegas": [],
+    "settings": {
+      "NSsites": "1",
+      "model": "0",
+      "ncatG": "3",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 8.767481
+  },
   "m1a_ITPR3": {
     "description": "site model M1A within ITPR3",
     "kappa": 2.08465,
     "lnL": -61559.154035,
-    "minutes": 6.93,
+    "minutes": null,
     "np": 38,
     "omegas": [],
     "settings": {
@@ -81,11 +422,27 @@
     "site_classes": "",
     "tree_length": 10.944807
   },
+  "m2a_ITPR2": {
+    "description": "site model M2A within ITPR2",
+    "kappa": 1.93806,
+    "lnL": -48397.000966,
+    "minutes": null,
+    "np": 28,
+    "omegas": [],
+    "settings": {
+      "NSsites": "2",
+      "model": "0",
+      "ncatG": "3",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 8.767677
+  },
   "m2a_ITPR3": {
     "description": "site model M2A within ITPR3",
     "kappa": 2.0847,
     "lnL": -61559.154317,
-    "minutes": 20.42,
+    "minutes": null,
     "np": 40,
     "omegas": [],
     "settings": {
@@ -101,7 +458,7 @@
     "description": "site model M7 within ITPR1",
     "kappa": 1.60484,
     "lnL": -55688.590253,
-    "minutes": 43.6,
+    "minutes": null,
     "np": 38,
     "omegas": [],
     "settings": {
@@ -113,11 +470,27 @@
     "site_classes": "",
     "tree_length": 11.546887
   },
+  "m7_ITPR2": {
+    "description": "site model M7 within ITPR2",
+    "kappa": 1.78745,
+    "lnL": -47804.769481,
+    "minutes": null,
+    "np": 26,
+    "omegas": [],
+    "settings": {
+      "NSsites": "7",
+      "model": "0",
+      "ncatG": "10",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 9.397614
+  },
   "m7_ITPR3": {
     "description": "site model M7 within ITPR3",
     "kappa": 1.95816,
     "lnL": -60635.246731,
-    "minutes": 35.16,
+    "minutes": null,
     "np": 38,
     "omegas": [],
     "settings": {
@@ -133,7 +506,7 @@
     "description": "site model M8 within ITPR1",
     "kappa": 1.61394,
     "lnL": -55678.913882,
-    "minutes": 54.21,
+    "minutes": null,
     "np": 40,
     "omegas": [],
     "settings": {
@@ -145,11 +518,27 @@
     "site_classes": "",
     "tree_length": 11.508111
   },
+  "m8_ITPR2": {
+    "description": "site model M8 within ITPR2",
+    "kappa": 1.7964,
+    "lnL": -47796.087171,
+    "minutes": null,
+    "np": 28,
+    "omegas": [],
+    "settings": {
+      "NSsites": "8",
+      "model": "0",
+      "ncatG": "10",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 9.421794
+  },
   "m8_ITPR3": {
     "description": "site model M8 within ITPR3",
     "kappa": 1.96358,
     "lnL": -60625.52927,
-    "minutes": 54.73,
+    "minutes": null,
     "np": 40,
     "omegas": [],
     "settings": {
@@ -176,5 +565,91 @@
     },
     "site_classes": "pairwise",
     "tree_length": null
+  },
+  "pair_ITPR2": {
+    "description": "pairwise ML dN/dS within ITPR2",
+    "kappa": null,
+    "lnL": 0.0,
+    "minutes": null,
+    "np": 0,
+    "omegas": [],
+    "settings": {
+      "NSsites": "0",
+      "model": "0",
+      "omega": "0.4",
+      "runmode": "-2"
+    },
+    "site_classes": "pairwise",
+    "tree_length": null
+  },
+  "pair_ITPR3": {
+    "description": "pairwise ML dN/dS within ITPR3",
+    "kappa": null,
+    "lnL": 0.0,
+    "minutes": null,
+    "np": 0,
+    "omegas": [],
+    "settings": {
+      "NSsites": "0",
+      "model": "0",
+      "omega": "0.4",
+      "runmode": "-2"
+    },
+    "site_classes": "pairwise",
+    "tree_length": null
+  },
+  "two_ratio_ITPR1": {
+    "description": "two-ratio: the whole ITPR1 clade as foreground",
+    "kappa": 1.78656,
+    "lnL": -190220.438829,
+    "minutes": 115.41,
+    "np": 114,
+    "omegas": [
+      0.04324,
+      0.02406
+    ],
+    "settings": {
+      "NSsites": "0",
+      "model": "2",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 48.78805
+  },
+  "two_ratio_ITPR2": {
+    "description": "two-ratio: the whole ITPR2 clade as foreground",
+    "kappa": 1.80034,
+    "lnL": -190324.216353,
+    "minutes": 102.62,
+    "np": 114,
+    "omegas": [
+      0.03168,
+      0.04351
+    ],
+    "settings": {
+      "NSsites": "0",
+      "model": "2",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 54.807106
+  },
+  "two_ratio_ITPR3": {
+    "description": "two-ratio: the whole ITPR3 clade as foreground",
+    "kappa": 1.79669,
+    "lnL": -190300.368946,
+    "minutes": 112.6,
+    "np": 114,
+    "omegas": [
+      0.03085,
+      0.04553
+    ],
+    "settings": {
+      "NSsites": "0",
+      "model": "2",
+      "omega": "0.4"
+    },
+    "site_classes": "",
+    "tree_length": 53.895308
   }
 }

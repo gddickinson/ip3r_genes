@@ -1,0 +1,17 @@
+{
+  "description": "one-ratio \u03c9 within ITPR1",
+  "kappa": 1.633,
+  "lnL": -56619.9785,
+  "minutes": 0.0,
+  "np": 37,
+  "omegas": [
+    0.02375
+  ],
+  "settings": {
+    "NSsites": "0",
+    "model": "0",
+    "omega": "0.4"
+  },
+  "site_classes": "",
+  "tree_length": 11.365328
+}
