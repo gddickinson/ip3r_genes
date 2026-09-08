@@ -1368,3 +1368,82 @@ lenient: the alignment program runs a little way past the true junction, far
 enough to fool the rule. The rule was tightened and the control now reads
 zero, which is what makes the real zero meaningful. A test that never fires
 and a test that finds nothing look identical in the output.
+
+## 2026-09-08 (cont.) — S11: the shape is right, and almost nobody has looked
+
+**The receptors fold like receptors, and nothing else does.** Every complete
+IP3 receptor structure in this project's panel — three cryo-EM references,
+six conformational states of one of them, and eleven predicted models across
+mammals, fish and a starfish — is identified as an IP3 receptor and not as a
+ryanodine receptor by shape alone, with no gene name, no domain annotation
+and no alignment involved. Twenty out of twenty. Three deliberately chosen
+decoys — a molecular motor, a calcium channel and a cytoskeletal protein,
+each about the same size as a receptor — are correctly identified as none of
+the above. This is the sixth completely different kind of evidence to
+separate these two families in this project, and the first that looks only
+at the physical arrangement of atoms in space.
+
+**The part that does the receptor's defining job is the part that is
+modelled best.** AlphaFold's confidence, measured domain by domain along the
+protein, is highest at the IP3-binding pocket at the N-terminus and *lowest*
+at the channel pore. That ordering is fortunate: the pocket is what makes an
+IP3 receptor an IP3 receptor rather than a ryanodine receptor, and it is
+where the project's later questions about constraint and disease variants
+are aimed. Those questions can be asked of predicted structures. Questions
+about the pore cannot, or not as confidently.
+
+**Almost none of this family has ever been folded.** AlphaFold DB — the
+public database of predicted protein structures, which covers most of the
+protein universe — holds a usable model for **13 of the 5,861 full-length IP3
+receptor records this project has catalogued**. Two tenths of one percent.
+The reason is mundane and complete: the prediction pipeline that built the
+database stops at about 2,700 residues, and a vertebrate IP3 receptor is
+about 2,700 residues. The sister family, at 5,000, is not in the database at
+all. So the structural coverage of this family is not poor because it is
+obscure — a great deal is known about it — but because it is *long*. Where
+the database does hold models of these proteins, they are overwhelmingly the
+short fragments: the median modelled record is 392 residues and the median
+unmodelled one is 2,674.
+
+**And where it does hold something, it may not be what you asked for.** Ask
+AlphaFold DB for the human ITPR2 structure and it returns a model — of a
+181-residue splice variant, not the 2,701-residue protein. Ask for ITPR1 and
+it returns a 2,695-residue isoform rather than the 2,758-residue canonical
+form. Only ITPR3 comes back as the protein you asked for. Anyone counting
+"does this protein have a structure?" as a yes/no question gets three yeses
+and one badly wrong picture of the family.
+
+**A structure-based search of the whole reviewed proteome finds this family
+and one other thing.** Searching every predicted structure of every reviewed
+protein for anything shaped like an IP3 receptor returns the receptors
+themselves and, apart from them, exactly one class of protein: SDF2 and
+SDF2L1, in humans, mice, cattle, a plant and a slime mould. These are small
+proteins built almost entirely from a single domain — the MIR domain — that
+the receptors also carry. They match about 9 % of a receptor, extremely well.
+Nothing else in the reviewed proteome is shaped like an IP3 receptor. It is
+a modest negative, because the database being searched is missing most of
+this family, but within what was searched it is clean.
+
+**The deep branches remain unsettled, and honestly so.** The plant, fungal
+and protist receptors — the ones this project has argued hardest for, since
+they are held on sequence evidence alone — cannot be confirmed structurally,
+because the only models available for them are partial (about 1,100 of 2,700
+residues) and low-confidence. They lean towards the IP3 receptors over the
+ryanodine receptors by about two to one, which is the right direction, but
+they do not reach the bar. Crucially, this is a statement about the models
+and not a verdict on the genes: each one had enough length to have passed if
+it had matched well enough, and each got roughly two-thirds of the way. The
+test did not fail here; it did not arrive. *(pending: predicted models
+generated for the project would settle it — an emergent task.)*
+
+**A note on negative controls doing their job.** The rule for deciding
+whether a structure is an IP3 receptor or a ryanodine receptor was inherited
+from earlier stages of this project, where it works. Applied to structures,
+it confidently identified a molecular motor, a calcium channel and a talin
+as IP3 receptors — because it asked only whether one answer beat the other,
+and a clear winner between two wrong answers is still a clear winner. The
+fix was to require the winner to be a *good* match before comparing at all.
+The controls were the only thing that revealed this; without them the
+report would have said twenty-six out of twenty-six agreed — and would have
+called a dynein motor, a calcium channel and a talin IP3 receptors on the
+same page.

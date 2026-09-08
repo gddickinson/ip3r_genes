@@ -1,0 +1,12 @@
+slot	outcome	filled_with	n_census_records	stage_lost
+Amoebozoa	unfilled		16	no AFDB model at any coverage
+Discoba	filled from census	A0A6A5BJU9	63	
+Eukaryota (other)	filled from census	A0AAN0K328	865	
+Fungi	filled from census	A0A4P9Y2S6	36	
+ITPR1	met by representative		1358	
+ITPR2	met by representative		1006	
+ITPR3	met by representative		813	
+Metazoa (non-vertebrate)	met by representative		1808	
+SAR	filled from census	G0QNB9	521	
+Vertebrata	filled from census	A0AAD9FCG5	2447	
+Viridiplantae	filled from census	A0AAE0F2K9	57	

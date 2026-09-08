@@ -1,0 +1,14 @@
+role	entry_id	call	paralog	control_class	decoy_gene	decoy_accession	organism	resolution	sample_length	uniprot_length	sample_fraction	state	ligand_note	released	selection_rule	title
+reference	7LHF	ITPR	ITPR1				Rattus norvegicus	2.96	2736			apo		2021-06-02	R5 best resolution for paralog	Structure of full-length IP3R1 channel solubilized in LNMG & lipid in the apo-state
+reference	9YKK	ITPR	ITPR2				Homo sapiens	2.95	2769			apo		2026-07-01	R5 best resolution for paralog	Human type 2 IP3 receptor in apo state
+reference	8TKG	ITPR	ITPR3				Homo sapiens	2.5	2671			resting	ATP+Ca2++IP3	2023-11-08	R5 best resolution for paralog	Human Type 3 IP3 Receptor - Resting State (+IP3/ATP)
+reference	9NMO	RYR	RYR1				Mus musculus	2.4	5035			closed	ATP+Ca2++caffeine	2025-10-08	R5 best resolution for paralog	Structure of mouse RyR1 (Ca2+/CFF/ATP dataset; closed pore)
+reference	7U9X	RYR	RYR2				Homo sapiens	2.58	4967			closed	ATP	2022-08-03	R5 best resolution for paralog	Structure of PKA phosphorylated human RyR2-R2474S in the closed state
+state_panel	8TKF	ITPR	ITPR3				Homo sapiens	3.2	2671			activated	ATP+Ca2++IP3	2023-11-08	R6 best resolution for ITPR3 state 'activated'	Human Type 3 IP3 Receptor - Activated State (+IP3/ATP/JD Ca2+)
+state_panel	6DQJ	ITPR	ITPR3				Homo sapiens	3.49	2671			apo		2018-08-01	R6 best resolution for ITPR3 state 'apo'	Human type 3 1,4,5-inositol trisphosphate receptor in a ligand-free state
+state_panel	8TLA	ITPR	ITPR3				Homo sapiens	3.2	2671			higher-order inhibited	ATP+Ca2++IP3	2023-11-08	R6 best resolution for ITPR3 state 'higher-order inhibited'	Human Type 3 IP3 Receptor - Higher-Order Inhibited State - Symmetry Mate 1
+state_panel	8TKH	ITPR	ITPR3				Homo sapiens	3.5	2671			labile resting	ATP+IP3	2023-11-08	R6 best resolution for ITPR3 state 'labile resting'	Human Type 3 IP3 Receptor - Labile Resting State 1 (+IP3/ATP)
+state_panel	7T3P	ITPR	ITPR3				Homo sapiens	3.2	2633			preactivated	ATP+IP3	2022-03-23	R6 best resolution for ITPR3 state 'preactivated'	IP3 and ATP bound type 3 IP3 receptor in the pre-active A state
+control	9BLZ	control		giant (out of band)	DYNC1H1	Q14204	Homo sapiens	2.2	4646	4646	1.0			2025-04-23	R7 closest to 2736 aa in class 'giant (out of band)'	State-1(phi motor) of full-length human dynein-1 in 5mM ATP
+control	8X93	control		in-band channel	CACNA1A	O00555	Homo sapiens	2.92	2549	2506	1.017			2024-03-20	R7 closest to 2736 aa in class 'in-band channel'	P/Q type calcium channel in complex with omega-Agatoxin IVA
+control	8VDO	control		in-band non-channel	Tln1	P26039	Mus musculus	2.7	2804	2541	1.104			2024-10-02	R7 closest to 2736 aa in class 'in-band non-channel'	Cryogenic electron microscopy model of full-length talin lacking F2, R12 and FABD.

@@ -1,0 +1,20 @@
+scope	group	n_records	n_applicable	full	partial	isoform	absent	not_applicable	usable_ge_95pct	usable_fraction	n_with_xref	xref_agrees	xref_agreement
+reps	Fungi	2	2	0	0	0	2	0	0	0.0	0	0	
+reps	ITPR1	15	14	0	0	2	12	1	2	0.1429	0	0	
+reps	ITPR2	11	9	1	0	2	6	2	2	0.2222	0	0	
+reps	ITPR3	18	11	4	0	0	7	7	4	0.3636	0	0	
+reps	RYR	6	6	0	0	0	6	0	0	0.0	0	0	
+reps	invert_metazoa	47	23	1	0	1	21	24	1	0.0435	0	0	
+reps	plant	3	3	0	0	0	3	0	0	0.0	0	0	
+reps	protist	19	13	0	0	0	13	6	0	0.0	0	0	
+reps	vertebrate_basal	13	9	0	0	0	9	4	0	0.0	0	0	
+reps	ALL	134	90	6	0	5	79	44	9	0.1	0	0	
+census	Amoebozoa	16	11	0	0	0	11	5	0	0.0	11	11	1.0
+census	Discoba	63	53	7	1	0	45	10	7	0.1321	53	53	1.0
+census	Eukaryota (other)	865	364	258	0	0	106	501	258	0.7088	45	45	1.0
+census	Fungi	36	32	2	0	0	30	4	2	0.0625	32	32	1.0
+census	Metazoa (non-vertebrate)	1808	1678	376	0	1	1301	130	376	0.2241	1678	1677	0.9994
+census	SAR	521	504	58	0	0	446	17	58	0.1151	504	504	1.0
+census	Vertebrata	5624	5624	1023	7	5	4589	0	1027	0.1826	5436	5431	0.9991
+census	Viridiplantae	57	53	11	0	0	42	4	11	0.2075	53	53	1.0
+census	ALL	8990	8319	1735	8	6	6570	671	1739	0.209	7812	7806	0.9992

@@ -1,0 +1,30 @@
+id	role	call	paralog	group	source	resolved_residues	model_coverage	best_itpr	best_itpr_ref	best_ryr	best_ryr_ref	tm_ceiling	margin	rel_margin	structural_call	call_agrees	note
+reference_ITPR1_7LHF	reference	ITPR	ITPR1	reference	PDB	2300	0.8406	0.9607	reference_ITPR2_9YKK	0.3965	reference_RYR2_7U9X	1.0	0.5642	0.5873	ITPR	1	
+reference_ITPR2_9YKK	reference	ITPR	ITPR2	reference	PDB	2168	0.783	0.9298	state_panel_ITPR3_6DQJ	0.389	reference_RYR2_7U9X	0.994	0.5408	0.5816	ITPR	1	
+reference_ITPR3_8TKG	reference	ITPR	ITPR3	reference	PDB	2210	0.8274	0.9708	state_panel_ITPR3_8TLA	0.4139	reference_RYR2_7U9X	1.0	0.5569	0.5737	ITPR	1	
+reference_RYR1_9NMO	reference	RYR	RYR1	reference	PDB	4373	0.8685	0.7547	state_panel_ITPR3_7T3P	0.9313	reference_RYR2_7U9X	1.0	0.1766	0.1896	RYR	1	
+reference_RYR2_7U9X	reference	RYR	RYR2	reference	PDB	4224	0.8504	0.7603	state_panel_ITPR3_7T3P	0.9003	reference_RYR1_9NMO	0.9659	0.14	0.1555	RYR	1	
+state_panel_ITPR3_8TKF	state_panel	ITPR	ITPR3	reference	PDB	2272	0.8506	0.9623	state_panel_ITPR3_7T3P	0.4072	reference_RYR2_7U9X	1.0	0.5551	0.5768	ITPR	1	
+state_panel_ITPR3_6DQJ	state_panel	ITPR	ITPR3	reference	PDB	2181	0.8165	0.945	state_panel_ITPR3_8TKH	0.3943	reference_RYR2_7U9X	0.9616	0.5507	0.5828	ITPR	1	
+state_panel_ITPR3_8TLA	state_panel	ITPR	ITPR3	reference	PDB	2034	0.7615	0.8939	reference_ITPR3_8TKG	0.3823	reference_RYR2_7U9X	0.9204	0.5116	0.5723	ITPR	1	
+state_panel_ITPR3_8TKH	state_panel	ITPR	ITPR3	reference	PDB	2268	0.8491	0.9825	state_panel_ITPR3_6DQJ	0.398	reference_RYR2_7U9X	1.0	0.5845	0.5949	ITPR	1	
+state_panel_ITPR3_7T3P	state_panel	ITPR	ITPR3	reference	PDB	2047	0.7774	0.8692	state_panel_ITPR3_8TKF	0.3968	reference_RYR2_7U9X	0.901	0.4724	0.5435	ITPR	1	
+control_DYNC1H1_9BLZ	control	control	giant (out of band)	giant (out of band)	PDB	2889	0.6218	0.2645	state_panel_ITPR3_7T3P	0.1834	reference_RYR1_9NMO	1.0	0.0811	0.3066	below_fold_bar		top score 0.2645 is below the 0.5 same-fold bar — no family call
+control_CACNA1A_8X93	control	control	in-band channel	in-band channel	PDB	1371	0.5379	0.173	state_panel_ITPR3_7T3P	0.0969	reference_RYR2_7U9X	0.6698	0.0761	0.4399	below_fold_bar		top score 0.173 is below the 0.5 same-fold bar — no family call
+control_Tln1_8VDO	control	control	in-band non-channel	in-band non-channel	PDB	1740	0.6205	0.2385	state_panel_ITPR3_7T3P	0.1513	reference_RYR2_7U9X	0.85	0.0872	0.3656	below_fold_bar		top score 0.2385 is below the 0.5 same-fold bar — no family call
+model_A0A4P9Y2S6	model	ITPR	BJ684DRAFT_20267	Fungi	AFDB	1019	1.0	0.2953	state_panel_ITPR3_8TLA	0.1616	reference_RYR2_7U9X	0.501	0.1337	0.4528	below_fold_bar		top score 0.2953 is below the 0.5 same-fold bar — no family call
+model_A0A6A5BJU9	model	ITPR	FDP41_006910	Discoba	AFDB	1238	1.0	0.3554	state_panel_ITPR3_7T3P	0.1694	reference_RYR2_7U9X	0.6048	0.186	0.5234	below_fold_bar		top score 0.3554 is below the 0.5 same-fold bar — no family call
+model_A0A8M6Z266	model	ITPR	ITPR3	ITPR3	AFDB	2635	1.0	0.9616	state_panel_ITPR3_6DQJ	0.433	reference_RYR2_7U9X	1.0	0.5286	0.5497	ITPR	1	
+model_A0A8M9PQQ3	model	ITPR	ITPR2	ITPR2	AFDB	2665	1.0	0.9053	state_panel_ITPR3_8TLA	0.3979	reference_RYR2_7U9X	1.0	0.5074	0.5605	ITPR	1	
+model_A0AAD9FCG5	model	ITPR	KUDE01_003980	Vertebrata	AFDB	1274	1.0	0.454	state_panel_ITPR3_7T3P	0.2165	reference_RYR2_7U9X	0.6224	0.2375	0.5231	below_fold_bar		top score 0.454 is below the 0.5 same-fold bar — no family call
+model_A0AAE0F2K9	model	ITPR	CYMTET_42485	Viridiplantae	AFDB	1135	1.0	0.4116	state_panel_ITPR3_7T3P	0.1922	reference_RYR2_7U9X	0.5545	0.2194	0.533	below_fold_bar		top score 0.4116 is below the 0.5 same-fold bar — no family call
+model_A0AAN0K328	model	ITPR		Eukaryota (other)	AFDB	1274	1.0	0.3666	state_panel_ITPR3_8TLA	0.1923	reference_RYR2_7U9X	0.6264	0.1743	0.4755	below_fold_bar		top score 0.3666 is below the 0.5 same-fold bar — no family call
+model_G0QNB9	model	ITPR	IMG5_057070	SAR	AFDB	1273	1.0	0.3459	state_panel_ITPR3_7T3P	0.1664	reference_RYR2_7U9X	0.6219	0.1795	0.5189	below_fold_bar		top score 0.3459 is below the 0.5 same-fold bar — no family call
+model_P11881	model	ITPR	ITPR1	ITPR1	AFDB	2694	0.98	0.9498	state_panel_ITPR3_6DQJ	0.4312	reference_RYR2_7U9X	1.0	0.5186	0.546	ITPR	1	
+model_P70227	model	ITPR	ITPR3	ITPR3	AFDB	2670	1.0	0.9729	state_panel_ITPR3_6DQJ	0.4186	reference_RYR2_7U9X	1.0	0.5543	0.5697	ITPR	1	
+model_Q14573	model	ITPR	ITPR3	ITPR3	AFDB	2671	1.0	0.9574	state_panel_ITPR3_6DQJ	0.4262	reference_RYR2_7U9X	1.0	0.5312	0.5548	ITPR	1	
+model_Q14643	model	ITPR	ITPR1	ITPR1	AFDB	2695	0.9772	0.9512	state_panel_ITPR3_6DQJ	0.4332	reference_RYR2_7U9X	1.0	0.518	0.5446	ITPR	1	
+model_Q63269	model	ITPR	ITPR3	ITPR3	AFDB	2670	1.0	0.9623	state_panel_ITPR3_6DQJ	0.4161	reference_RYR2_7U9X	1.0	0.5462	0.5676	ITPR	1	
+model_Q8WSR4	model	ITPR		invert_metazoa	AFDB	2698	1.0	0.9446	state_panel_ITPR3_6DQJ	0.4307	reference_RYR2_7U9X	1.0	0.5139	0.544	ITPR	1	
+model_Q9Y0A1	model	ITPR		invert_metazoa	AFDB	1713	0.5923	0.5745	state_panel_ITPR3_7T3P	0.2798	reference_RYR2_7U9X	0.8368	0.2947	0.513	ITPR	1	
+model_Q9Z329	model	ITPR	ITPR2	ITPR2	AFDB	2668	0.9878	0.9413	state_panel_ITPR3_8TKH	0.42	reference_RYR2_7U9X	1.0	0.5213	0.5538	ITPR	1	

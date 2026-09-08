@@ -1,0 +1,78 @@
+{
+  "generated": "2026-09-08T15:15:02+00:00",
+  "parameters": {
+    "call_floor": 0.5,
+    "foldseek_subset": "afdb_swissprot",
+    "full_coverage_bar": 0.95,
+    "min_chain_residues": 300,
+    "min_domain_cover": 0.6,
+    "panel_size": 30,
+    "rel_margin": 0.1,
+    "tm_fold_bar": 0.5,
+    "tm_random_bar": 0.17
+  },
+  "self_tests": {
+    "s11_test_structures": "pass",
+    "tmalign_self_test": "pass"
+  },
+  "tables": {
+    "afdb_coverage_census.tsv": {
+      "bytes": 1491845,
+      "sha256": "3979690ddb5bd449cd976d10bccda2689aa86a09114245a69d1865206b92e78a"
+    },
+    "afdb_coverage_reps.tsv": {
+      "bytes": 28039,
+      "sha256": "7ad535dea6686b40fb217fa72664b09f7c8a4a667b98d5a501fb7e9595888059"
+    },
+    "afdb_coverage_summary.tsv": {
+      "bytes": 1120,
+      "sha256": "d94267f988d08f88ae2a4b6cc3aa1cfca193ed4810eedbcad9ad238e6a23a172"
+    },
+    "control_candidates.tsv": {
+      "bytes": 71360,
+      "sha256": "7bcc55265e0d3bf02bf22c52412ea34dc713bb4dfe65f3a0733ff2623a1d2257"
+    },
+    "foldseek_hits.tsv": {
+      "bytes": 118521,
+      "sha256": "b2e5fca2b4f8fb01c528422bb611fc256331f0011de99a3d3cb766b0eae51391"
+    },
+    "model_slots.tsv": {
+      "bytes": 529,
+      "sha256": "0f9d9c75db39991a9e4e1dc04ad745ca670687b4c08eafab8d6cf0cda9f05291"
+    },
+    "plddt_domains.tsv": {
+      "bytes": 16628,
+      "sha256": "dd8d66e78384ede65f8cb1aeac6b8b5743b364254b9dc1b6f1da44ec56cde85e"
+    },
+    "plddt_summary.tsv": {
+      "bytes": 438,
+      "sha256": "44f3f4f0bccdc285b76d324dcd5df61698c0037804fbcf0014ab3561de4be66c"
+    },
+    "reference_candidates.tsv": {
+      "bytes": 128513,
+      "sha256": "abaf24801dd40645ab344e82bb6d0a111a9fb4a49ed8b4deaa0db30d606effef"
+    },
+    "reference_selection.tsv": {
+      "bytes": 2719,
+      "sha256": "e079c4c187983ab52086a1bf22bb9f63e929e0c23eb521a10b66f4ee282648ba"
+    },
+    "structure_manifest.tsv": {
+      "bytes": 10307,
+      "sha256": "f86aaefd7af4ec7e1b8d288bc3f7d8792f07c1f8892715ed8d2eaf7026c9fd50"
+    },
+    "tm_scores.tsv": {
+      "bytes": 55110,
+      "sha256": "618b1617803db454c6f892947f43dd6c437fdf46f20349cfaccbfd87206427ea"
+    },
+    "tm_vs_reference.tsv": {
+      "bytes": 5136,
+      "sha256": "0d13ddbf21d3e4600675819e1dd83db19e78bcdf9d238b2bdfe35507b052db85"
+    },
+    "unfilled_controls.tsv": {
+      "bytes": 76,
+      "sha256": "5039ed7feacab63765921488ceef1002fdfb495d7c94e8ab2f72066b38fbad16"
+    }
+  },
+  "task": "S11",
+  "tmalign_version": "20240303"
+}

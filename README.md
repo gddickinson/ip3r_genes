@@ -200,6 +200,39 @@ IP3-receptor genes in the DNA, zero IP3-receptor protein records in any
 database.**
 → [`results/annotation_bugs/report.md`](results/annotation_bugs/report.md)
 
+**S11** asked whether what the census calls an IP3 receptor *folds* like one,
+and whether it can be told from a ryanodine receptor by shape alone. **It
+can: 20 of 20 structures the fold test could call agree with the census, and
+0 of 3 negative controls receives a family call** — a sixth instrument for
+D14, and the first that reads no gene symbol, no domain annotation, no
+alignment score and no tree. The references were resolved by an RCSB query
+over the family's own Pfam signatures and assigned a family by this
+project's census, never by an entry title; enumerating on the union of the
+four signatures is load-bearing, because RCSB's annotation of the project's
+own IP3R reference (6DQN) carries no PF08709. **The negative controls earned
+their place immediately**: gated on the inherited relative margin alone the
+rule calls a dynein heavy chain, a Cav2.1 and a talin IP3 receptors — a
+margin between two non-matches is still a margin — so a family call now
+requires the winner to clear TM-align's own 0.50 same-fold bar first (D39).
+
+**Almost none of this family has ever been folded.** AlphaFold DB holds a
+usable model for **13 of the 5,861 census records at or above the family's
+2,000 aa floor (0.2 %)**, and for 9 of S6's 134 representatives. The reason
+is length, not obscurity: the monomer pipeline stops near 2,700 residues and
+a vertebrate subunit is ~2,700, so the coverage that exists is concentrated
+on fragments (median modelled record 392 aa against 2,674 aa unmodelled).
+**AFDB also answers a canonical accession with an isoform** — human ITPR2
+comes back as 181 residues of a 2,701-residue protein — so coverage here is
+the modelled span against the census length, and that model is rejected by
+rule rather than used. Per-domain confidence puts the **IP3-binding core
+highest (median pLDDT 83.9) and the pore lowest (71.0)**, which is the
+answer S17 and S22 needed. A Foldseek sweep of AFDB's Swiss-Prot subset
+returns the family and, apart from it, only SDF2/SDF2L1 across five
+kingdoms — PF02815 and nothing else, the one control class the PDB could not
+fill. → [`results/structures/report.md`](results/structures/report.md)
+
+![The family call, by shape alone, with its negative controls](results/structures/figures/s11_tm_calibration.png)
+
 ![What the annotation put on two genes that are demonstrably there](results/annotation_bugs/figures/exon_tracks.png)
 
 ![Purifying selection on every paralogue](results/selection/figures/s9_omega_by_paralog.png)
@@ -333,7 +366,7 @@ One task per session. Full ledger with dependencies and results in
 | S9a | The codon alignment every selection test stands on | ✅ completed 2026-09-07 |
 | S9b | ML selection (codeml branch/site models, HyPhy RELAX) | ✅ completed 2026-09-08 |
 | S10 | Annotation-bug molecular validation | ✅ completed 2026-09-08 |
-| S11 | Structures + TM-align vs cryo-EM references | ⏳ pending |
+| S11 | Structures + TM-align vs cryo-EM references | ✅ completed 2026-09-08 |
 | S12 | Expression evidence (SRA junction reads) | ⏳ pending |
 | S13 | Reconciliation & dating | ⏳ pending |
 | S15 | Loss dynamics | ⏳ pending |

@@ -2034,3 +2034,121 @@ in the roadmap's next-session note; the sharpest is that AFDB coverage has to
 be measured against census *records*, since a locus with no protein record
 cannot have a model, and S10 found two swept species with three complete
 genes and zero records between them.
+
+## 2026-09-08 (cont.) — S11: structures, and a family AlphaFold DB does not hold
+
+**Task.** S11 — AFDB coverage, TM-align against the cryo-EM IP3R and RyR
+references, per-domain pLDDT, optional Foldseek sweep. Dependencies S2 and
+S6 both completed. Completion criteria: `structure_manifest.tsv`, a TM-score
+table, per-domain pLDDT, a `report.md` rendered from the tables, and a
+calibration figure showing the negative controls. All pass.
+
+**What ran.** Fifteen new modules (`scripts/s11_*.py`, 4,300 lines, every
+file inside the 500-line budget), driven by `s11_run.py` through ordered
+stages `afdb → panel → tmalign → plddt → foldseek → tables → figures →
+report`. The whole pipeline reproduces from cache in 25 s; the cold run was
+dominated by TM-align at 5,373 s of wall clock over 435 pairs.
+
+### Results
+
+**AlphaFold DB does not hold this family.** 20.9 % of the census's 8,319
+UniProt-shaped ITPR records have a model covering ≥ 95 % of the protein —
+but of the **5,861 records at or above the family's own 2,000 aa floor, 13
+do (0.2 %)**. Median modelled record 392 aa against 2,674 aa unmodelled.
+Coverage is a function of length, not taxonomy, and it is concentrated
+exactly on the fragments a structural argument can do least with. Of S6's
+134 representatives — the set every alignment, tree and selection result in
+this project stands on — **9** have a usable model.
+
+**AFDB answers a canonical accession with an isoform.** Asked for the three
+human paralogs it returns `Q14643-4` (2,695 of 2,758 aa), `Q14571-2` —
+**181 residues of a 2,701-residue ITPR2** — and only ITPR3 canonical. A
+probe taking `payload[0]` reports all three as modelled. `afdb_probe` now
+ranks every record in the response, prefers the queried accession, and
+records what was served; the 181-residue model enters the panel and is
+rejected there by the minimum-chain rule rather than quietly used.
+
+**References resolved by query.** 237 RCSB entries / 414 polymer entities
+enumerated on the family's own Pfam signatures, each entity's family decided
+by *this project's census* on the UniProt accession RCSB maps it to — no
+title is read. Enumerating on the **union** of the four signatures is
+load-bearing: RCSB's Pfam annotation of 6DQN carries PF02815/PF08454/
+PF01365/PF00520 and **not** PF08709, so a query on the naming signature
+alone misses the project's own IP3R reference. Primary references 7LHF
+(ITPR1, 2.96 Å), 9YKK (ITPR2, 2.95 Å), 8TKG (ITPR3, 2.50 Å), 9NMO (RYR1,
+2.40 Å), 7U9X (RYR2, 2.58 Å). **No full-length RYR3 cryo-EM entry exists.**
+Plus a six-state ITPR3 panel and three negative controls derived from S1's
+committed decoy panel; the MIR-sharer class is reported unfilled — no
+experimental entry.
+
+**D14 confirmed by a sixth instrument that reads only coordinates: 20/20
+(100 %) of the callable census-named structures agree, and 0/3 negative
+controls receives a family call.** Calibration on the panel itself: same
+protein in different conformations 0.78, IP3R × IP3R 0.43, IP3R × RyR 0.39
+(0.64 the other way round), controls 0.19 with **0 of 81** control pairs
+reaching the 0.50 same-fold bar under either normalisation.
+
+**Per-domain confidence: the IP3-binding core is the best-modelled domain
+(median pLDDT 83.9) and the pore the worst (71.0)**, against 69.5 outside
+the annotated domains. That is the answer S17 and S22 needed — the part
+those tasks are scoped around is the part predicted structures carry best.
+
+**Foldseek over the AFDB Swiss-Prot subset returns the family and nothing
+else.** 36 hits confirm census ITPR records, 545 fall below the fold bar,
+and all 8 distinct above-bar hits the census has never held are SDF2 and
+SDF2L1 across human, mouse, cow, *Arabidopsis* and *Dictyostelium* —
+verified from UniProt to carry **PF02815 and nothing else**. Zero novel
+structural leads. AFDB holds no RyR model at all, so a sister-family verdict
+there is unreachable by construction and the report says so.
+
+### Three things the controls and the self-tests caught
+
+**The negative controls broke the family call, which is what they are for.**
+Gated on the relative margin alone — D7's 10 %, inherited from every earlier
+stage — the rule calls **all three controls ITPR**: a dynein heavy chain, a
+Cav2.1 and a talin each beat their own runner-up by ~30 % of their score
+while scoring 0.17–0.27 against everything. A margin between two non-matches
+is still a margin. The call now requires the winner to clear TM-align's
+published 0.50 same-fold bar before the margin is read (**D39**). With the
+gate the controls are declined and 20/20 real structures still agree.
+
+**A killed process was cached as a permanent negative.** An early ad-hoc
+TM-align run was interrupted; killing its children left the Python parent
+orphaned to init, and it spawned work beside the driver that replaced it for
+~20 minutes — S7 recorded the same incident for IQ-TREE. Worse, the
+SIGKILLed pairs were written to the cache as zero-score results with empty
+error text: **ten permanent false negatives, all against one control**,
+caught only by `s11_tmalign_run.self_test`'s requirement that every pair
+parse a score. Fixed both ways (**D41**): a non-`ok` result is never
+written, and the stage claims a pid-checked lock that a *dead* pid does not
+hold. Both now have negative controls in the self-test.
+
+**Two claims I wrote that the data falsified.** I stated that every X-ray
+ITPR entry is a ≤ 604 aa binding-core construct — 5GUG and 5X9Z are 2,217 aa
+cytosolic-domain crystals at 7.3–7.4 Å, and the report now computes the
+ranges instead of asserting them. And I explained the declined
+non-vertebrate models as "too short to reach the bar however good they are";
+adding the **arithmetic ceiling** (residues over reference length) showed
+every one of them had the headroom — ceilings 0.50–0.63 against scores of
+0.30–0.45 — so they fall short on similarity, not on length alone. That
+column is now in the table (**D40**).
+
+### Instrument notes
+
+- The self-test is 26 constructed checks and was **mutation-tested**: three
+  deliberate rule breakages (drop the compound-state pattern, invert the
+  TM normalisation, make `largest_chain` return the first chain) and all
+  three were caught.
+- The pair classifier was duplicated in the figure and the report with
+  different label strings, and a whole class silently vanished from one
+  panel. Now one function, `s11_tables.pair_class`, with a shared ordering.
+- `structures_stats.json` hashes every `.tsv` in the directory rather than
+  the ones a given invocation wrote — a `--from tmalign` run had been
+  recording 8 of 14.
+
+### Next
+
+S12 — expression evidence (SRA junction-spanning reads) for whichever
+paralog or lineage the census leaves in doubt. S10 left it two validated
+loci with committed junction probes and measured RNA-seq availability
+(182 and 19 runs), which is the natural starting panel.

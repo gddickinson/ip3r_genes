@@ -1,0 +1,7 @@
+label	pfam	shared_class	n_models	mean_plddt	median_plddt	min_plddt	max_plddt	n_ge_70
+IP$_3$-binding core (β-trefoil)	PF08709	shared	14	81.53	83.88	69.09	84.79	13
+MIR	PF02815	shared	11	77.05	77.43	67.9	81.86	10
+RIH	PF01365	shared	22	79.75	79.75	73.25	87.32	22
+RIH-associated	PF08454	shared	10	83.0	82.0	79.94	86.41	10
+Ion_trans pore	PF00520	generic	11	72.3	71.01	66.07	82.13	9
+outside annotated domains	-	none	16	67.24	69.5	56.16	73.85	6
