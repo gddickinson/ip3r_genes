@@ -2627,6 +2627,20 @@ and every result is this family's own.
   reproduces all 24 committed tables byte for byte, SHA-256 against
   SHA-256, from the `duplication_stats.json` the first run wrote.
 
+### Emergent
+
+Three rows added or updated at session end. **S8's paralogon headline needs
+one qualification**: it reports two retained ohnolog families between the
+ITPR neighbourhoods, and dating them leaves **one** — any manuscript
+sentence built on the pair must say one (S14a). **Separating 2R round R1
+from R2 needs a non-symbol instrument**; S8 and S16 have now hit the same
+wall from opposite sides, and the cyclostome loci are the evidence that
+would resolve it. And the S5a row on half-named teleost 3R duplicates is
+**now quantified**: of the 73 ray-finned genomes carrying two ITPR1 copies,
+only 20 name both, 34 name one and leave the other a `LOC`, and 19 name
+neither — with `itpr1b` used 45 times against `itpr1a` 15, so the databases
+are systematically better at one 3R co-ortholog than the other (S18).
+
 ### Next
 
 S17 — constraint & function. S16 hands it an asymmetry that singles out
