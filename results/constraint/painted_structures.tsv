@@ -1,0 +1,34 @@
+structure	layer	paralog	role	file	n_residues	n_painted	n_mapped	frac_painted	note
+reference_ITPR1_7LHF	constraint	ITPR1	reference	constraint_reference_ITPR1_7LHF.pdb	2300	2299	2299	0.9996	b-factor = deep_jsd x 100; -1 = no score
+reference_ITPR1_7LHF	selection	ITPR1	reference	selection_reference_ITPR1_7LHF.pdb	2300	2221	2299	0.9657	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+reference_ITPR2_9YKK	constraint	ITPR2	reference	constraint_reference_ITPR2_9YKK.pdb	2168	2165	2168	0.9986	b-factor = deep_jsd x 100; -1 = no score
+reference_ITPR2_9YKK	selection	ITPR2	reference	selection_reference_ITPR2_9YKK.pdb	2168	2120	2168	0.9779	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+reference_ITPR3_8TKG	constraint	ITPR3	reference	constraint_reference_ITPR3_8TKG.pdb	2210	2208	2210	0.9991	b-factor = deep_jsd x 100; -1 = no score
+reference_ITPR3_8TKG	selection	ITPR3	reference	selection_reference_ITPR3_8TKG.pdb	2210	2157	2210	0.976	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+state_panel_ITPR3_8TKF	constraint	ITPR3	state_panel	constraint_state_panel_ITPR3_8TKF.pdb	2272	2270	2272	0.9991	b-factor = deep_jsd x 100; -1 = no score
+state_panel_ITPR3_8TKF	selection	ITPR3	state_panel	selection_state_panel_ITPR3_8TKF.pdb	2272	2217	2272	0.9758	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+state_panel_ITPR3_6DQJ	constraint	ITPR3	state_panel	constraint_state_panel_ITPR3_6DQJ.pdb	2181	2179	2181	0.9991	b-factor = deep_jsd x 100; -1 = no score
+state_panel_ITPR3_6DQJ	selection	ITPR3	state_panel	selection_state_panel_ITPR3_6DQJ.pdb	2181	2126	2181	0.9748	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+state_panel_ITPR3_8TLA	constraint	ITPR3	state_panel	constraint_state_panel_ITPR3_8TLA.pdb	2034	2031	2034	0.9985	b-factor = deep_jsd x 100; -1 = no score
+state_panel_ITPR3_8TLA	selection	ITPR3	state_panel	selection_state_panel_ITPR3_8TLA.pdb	2034	1995	2034	0.9808	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+state_panel_ITPR3_8TKH	constraint	ITPR3	state_panel	constraint_state_panel_ITPR3_8TKH.pdb	2268	2268	2268	1.0	b-factor = deep_jsd x 100; -1 = no score
+state_panel_ITPR3_8TKH	selection	ITPR3	state_panel	selection_state_panel_ITPR3_8TKH.pdb	2268	2212	2268	0.9753	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+state_panel_ITPR3_7T3P	constraint	ITPR3	state_panel	constraint_state_panel_ITPR3_7T3P.pdb	2047	2047	2047	1.0	b-factor = deep_jsd x 100; -1 = no score
+state_panel_ITPR3_7T3P	selection	ITPR3	state_panel	selection_state_panel_ITPR3_7T3P.pdb	2047	1999	2047	0.9766	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+model_A0A8M6Z266	constraint	ITPR3	model	constraint_model_A0A8M6Z266.pdb	2635	2592	2608	0.9837	b-factor = deep_jsd x 100; -1 = no score
+model_A0A8M6Z266	selection	ITPR3	model	selection_model_A0A8M6Z266.pdb	2635	2439	2608	0.9256	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+model_A0A8M9PQQ3	constraint	ITPR2	model	constraint_model_A0A8M9PQQ3.pdb	2665	2635	2658	0.9887	b-factor = deep_jsd x 100; -1 = no score
+model_A0A8M9PQQ3	selection	ITPR2	model	selection_model_A0A8M9PQQ3.pdb	2665	2442	2658	0.9163	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+model_P11881	constraint	ITPR1	model	constraint_model_P11881.pdb	2694	2691	2694	0.9989	b-factor = deep_jsd x 100; -1 = no score
+model_P11881	selection	ITPR1	model	selection_model_P11881.pdb	2694	2449	2694	0.9091	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+model_P70227	constraint	ITPR3	model	constraint_model_P70227.pdb	2670	2646	2670	0.991	b-factor = deep_jsd x 100; -1 = no score
+model_P70227	selection	ITPR3	model	selection_model_P70227.pdb	2670	2457	2670	0.9202	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+model_Q14571		ITPR2	model		0	0	0	0.0	181 residues < 300
+model_Q14573	constraint	ITPR3	model	constraint_model_Q14573.pdb	2671	2647	2671	0.991	b-factor = deep_jsd x 100; -1 = no score
+model_Q14573	selection	ITPR3	model	selection_model_Q14573.pdb	2671	2457	2671	0.9199	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+model_Q14643	constraint	ITPR1	model	constraint_model_Q14643.pdb	2695	2691	2695	0.9985	b-factor = deep_jsd x 100; -1 = no score
+model_Q14643	selection	ITPR1	model	selection_model_Q14643.pdb	2695	2449	2695	0.9087	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+model_Q63269	constraint	ITPR3	model	constraint_model_Q63269.pdb	2670	2646	2670	0.991	b-factor = deep_jsd x 100; -1 = no score
+model_Q63269	selection	ITPR3	model	selection_model_Q63269.pdb	2670	2457	2670	0.9202	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score
+model_Q9Z329	constraint	ITPR2	model	constraint_model_Q9Z329.pdb	2668	2638	2668	0.9888	b-factor = deep_jsd x 100; -1 = no score
+model_Q9Z329	selection	ITPR2	model	selection_model_Q9Z329.pdb	2668	2422	2668	0.9078	b-factor = (1 - min(dN rate, 1)) x 100; -1 = no score

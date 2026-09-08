@@ -51,6 +51,15 @@ results/selection/codeml/*/RUNNING
 results/constraint/mafft_*.log
 results/constraint/fel/*.log
 
+# S17's shape-screen intermediates. The screen needs a first alignment to
+# measure each sequence's shape on (s17_orthologs.screen), so `_pass1` is a
+# working file and not a result: the sequence it drops is named in
+# `ortholog_shape.tsv`, the bar and both gap edges are in `align_stats.json`,
+# and the SHA-256 of every input and output is recorded there — so the
+# committed ortholog sets plus a `--thread 1` MAFFT (D24) regenerate it.
+results/constraint/*_pass1.fasta
+results/constraint/*_pass1.log
+
 # Dashboard live-progress file: written continuously by whichever task is
 # running, read by scripts/dashboard.py, meaningless once the task is done.
 results/session_live.json

@@ -2651,3 +2651,152 @@ a constraint question, and S9's per-paralog ω estimates are already
 committed. `results/duplication/loci.tsv` is the per-locus table S8, S15a
 and S16 each had to rebuild from the sweep summaries — anything downstream
 needing more than one locus per cell should read it rather than the ledger.
+
+---
+
+## 2026-09-08 — S17: constraint & function
+
+**Task.** The project's mechanistic payoff: which parts of the IP₃ receptor
+are evolutionarily intolerant, is the IP₃-binding core under different
+constraint from the pore, and is per-site conservation good enough to help
+read the family's human variants. Dependencies S6, S9b and S11 all
+completed; S17 was the topmost unblocked `pending` row in the analysis
+block.
+
+### What ran
+
+`scripts/s17_run.py`, nine ordered stages, 79 s warm on a full rerun
+(~15 min cold, of which HyPhy FEL is ~8 min and the two MAFFT passes ~4.5).
+Fourteen constructed negative controls run before anything is written.
+
+| stage | what it produced |
+|---|---|
+| `domains` | `domain_map.tsv`, `functional_sites.tsv` — the architecture in all three human numberings |
+| `orthologs` | 264 / 249 / 265 orthologues per paralog from the 309 sweep `summary.json` files, plus the shape screen |
+| `conservation` | four layers on every residue of every human paralog, the element tests, the metric controls |
+| `variants` | 1,753 ClinVar missense records + 27 UniProt variants, the AUC and the paralog audit |
+| `fel` | HyPhy FEL on S9's three codon alignments, 2,459 sites each |
+| `paint` | 16 S11 ITPR structures × 2 layers into the B-factor column |
+| `tables` / `figures` / `report` | 26 hashed tables, 4 figures, `report.md` |
+
+### What resulted
+
+**Depth first.** msa_v2 carries 19 / 13 / 19 tips per paralog, which cannot
+score a column of a 2,700-residue protein. The sweep's `##STA` translations,
+joined to `summary.json` by `mp_id`, gave **249–265 full-length orthologues
+per paralog** — an instrument that had been on disk since S5b and had not
+been used.
+
+**The screen the coverage bar could not do.** Bait coverage is
+`aligned_aa / bait_len`, so a model that covers the bait *and* carries two
+thousand extra residues passes every quality bar — which is exactly what
+S5b recorded a large `-G` manufacturing in the giant genomes. Scoring each
+sequence on the fraction of its **own** residues inside reference columns
+found one: *Lissotriton helveticus* ITPR2, 4,976 aa, 0.483 against a curated
+minimum of 0.972 and a next-lowest of 0.944. The bar went in that gap
+(0.713, both edges committed). With it in, MAFFT opened the ITPR2 alignment
+to 5,676 columns; without it, 3,380. One chimeric model was inflating the
+alignment every ITPR2 per-site score is read off by 68 %.
+
+**The gate is the answer to the first question.** The gate and the
+selectivity filter are the most constrained elements on both the JSD and the
+composition-free metric, in all three paralogs, and **the gate's five
+residues are 100 % identical between all three human copies**. RIH-associated
+is the most constrained *domain*.
+
+**The Pfam name for the ligand site does not contain the ligand site.**
+Joining S0's per-accession InterPro coordinates to S0's 6DQN measurements
+showed that **none of the ten IP₃ contacts lies in PF08709**, the signature
+Pfam calls *Inositol 1,4,5-trisphosphate/ryanodine receptor*. They sit in
+MIR and RIH — the domains shared with the ryanodine receptor. So the ligand
+question was asked of the measured contacts throughout, and they are more
+constrained than the rest of the domains carrying them (p = 0.013 / 6e-4 /
+4e-3 against their own elements).
+
+**One element was hiding inside another, and finding it changed the
+headline.** Unresolved, the Pfam channel domain read as *less* constrained
+than the receptor's own linkers — JSD 0.697, p = 0.96 for the one-sided
+test. That is a strange thing to report about the pore of an ion channel, so
+three explanations were measured rather than argued: a JSD/composition
+artefact (ruled out — the composition-free metric agreed), a miniprot
+gene-model artefact in the exon-dense TM region (ruled out — the curated
+subset agreed), and an unresolved element (confirmed). A **50-residue
+luminal loop, located by geometry** on 6DQN's own membrane span rather than
+drawn on the conservation profile, is the cause. With it separated the pore
+module clears the linker control (p = 0.005), and the loop is the least
+conserved element in the receptor on every instrument available.
+
+**The variant test came out against this task's own design.** 1,753 ClinVar
+missense records, **0 dropped** by the transcript-numbering check — all
+three genes file on a transcript whose translated CDS *is* the UniProt
+canonical, which is a result of the check and not a reason it was
+unnecessary (the same code on PIEZO2 found 512 of 773 positions
+disagreeing). Both of S0's residue-level citations were recovered by the
+positive control. **1,546 records (88 %) are VUS.** On one fixed set of 44
+pathogenic and 34 benign positions, AUC = **family 0.872 > vert 0.854 >
+deep 0.758 > shallow 0.684**: the depth was worth building (the `shallow`
+control is the worst layer) but **taxonomic breadth beats within-gene
+depth**, and this task's own instrument is the second-best of four. §7.2
+says so with the number.
+
+**FEL corroborates §5 with a different instrument.** 5,766 purifying sites
+and **1** diversifying across the three paralogs — inside BH's own error
+budget of ~288 false rejections, so not evidence of a selected site. Per
+element: gate, filter and IP₃ contacts 100 % purifying at median β = 0;
+luminal loop median β 0.33–0.40 with 27–33 % purifying against 71–86 %
+protein-wide.
+
+### Two things the self-tests and the report caught
+
+**T8 found a real bug on its first run.** The within-protein control was
+selected by a `startswith` test on `nterm`, `cterm` and `linker_` — and
+`nterm_trefoil` is a *domain* whose name begins with `nterm`. 225 residues
+of the element §2.1 is about were quietly inside the control set, so every
+other element was being compared against a set containing one of them. The
+membership test is now a prefix for linkers and an exact match for the
+termini.
+
+**S6's identity number is a different measurement, and it checks out.** S6
+reports between-paralog covered identity at 0.741–0.791 and S17 measures
+0.640–0.703. Neither is wrong: **S6 measured on `trimmed.fasta`**. S17
+cannot, because trimAl deletes 39 of the luminal loop's 51 residues — the
+element the headline rests on. Every row of
+`paralog_identity_by_element.tsv` now carries the same pair measured S6's
+way, and it reproduces S6's committed matrix exactly (0.753 / 0.773 /
+0.812). The verdict is `orthogonal`, not `confirmed`.
+
+### Decisions
+
+**D54** — a coordinate carried from one protein to another must arrive on an
+anchor the alignment does not know about (the filter's GGGVGD motif, the
+gate's lining residues), and a failed anchor aborts rather than writing a
+plausible number; and an element no annotation carries must be located by
+measurement rather than drawn, or it is the profile explaining itself.
+
+### Emergent
+
+Five rows. The **luminal loop** is a new object — 50 residues, the least
+conserved element in the receptor, paralog identity 0.13–0.31, worst-resolved
+in cryo-EM — and two questions follow that are not S17's (is it the luminal
+Ca²⁺/ERp44 insert, and is its length variable across the sweep, which S21
+would see as a single variable exon). The **family layer beats the deep
+layer** as a classifier, so S22 and any published variant resource should
+read `family_jsd`. **ITPR2's one pathogenic record** becomes a falsifiable
+prediction, since its gate and IP₃ contacts are as constrained as ITPR1's —
+the emptiness is ascertainment. **1,546 scored VUS** are a submittable
+artefact S14a's deposit rules do not currently mention. And **the gate
+cannot distinguish the paralogs**, so a pore-motif shortcut for paralog
+assignment is unavailable in principle — one line beside D14.
+
+### Next
+
+S18 — annotation-quality audit (`S5b, S15`, both completed; the topmost
+unblocked `pending` row). S17 touches it only indirectly: it read the
+annotation solely through S5's gene models, so the correction list is
+unaffected. What S17 does hand forward is `constraint_<gene>_<acc>.tsv` for
+S22's ligand-site question and S24's supplementary figures, and `painted/`
+for any structure figure. The one S17 finding S18 should carry is that the
+luminal loop is where a database "fragment" boundary would be least
+surprising and least informative — a 50-residue low-complexity insert that
+trimAl deletes and cryo-EM cannot resolve is exactly where gene callers
+disagree.

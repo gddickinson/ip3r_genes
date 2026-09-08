@@ -1,0 +1,48 @@
+{
+  "mafft_version": "v7.526 (2024/Apr/26)",
+  "min_coverage": 0.8,
+  "min_identity": 0.4,
+  "min_aligned_aa": 1800,
+  "shape_calibration": {
+    "bar": 0.7133,
+    "gap_low": 0.4829,
+    "gap_high": 0.9437,
+    "gap_width": 0.4608,
+    "curated_min": 0.9722,
+    "n_curated": 39,
+    "n_below_bar": 1,
+    "rule": "midpoint of the largest gap below the lowest curated record",
+    "dropped": {
+      "ITPR2": [
+        "ITPR2|Lissotriton_helveticus|GCF_964261635.1"
+      ]
+    }
+  },
+  "alignments": [
+    {
+      "paralog": "ITPR1",
+      "cached": true,
+      "n_seq": 264,
+      "n_col": 3519,
+      "sha256_in": "3323a984ed85af920e8c4c46cda46d4fd3615a22d5cecf6b7affeaa92272e51c",
+      "sha256_out": "0967016362ff2aeb7b4467d4e941458c33fe3066d1940d8dc014e0a88cb4aab7"
+    },
+    {
+      "paralog": "ITPR2",
+      "cached": false,
+      "n_seq": 249,
+      "n_col": 3380,
+      "runtime_s": 32.5,
+      "sha256_in": "17546d92673d4c46b2567bee54b4b2fe10b30632ba75949844891c209433fd6e",
+      "sha256_out": "045235bc4b9e70a112e7b774163300ad1cd3997c411af23ee008dcf51c4bb784"
+    },
+    {
+      "paralog": "ITPR3",
+      "cached": true,
+      "n_seq": 265,
+      "n_col": 3738,
+      "sha256_in": "5f7c8b7dbbe59b79dd48ca9a435e71207abd50d44dac6f341cfbf7fe184bfe53",
+      "sha256_out": "8e83ea1ba55fc2cac835cc852349f3941dad24c11c949871d01e3732ede39541"
+    }
+  ]
+}

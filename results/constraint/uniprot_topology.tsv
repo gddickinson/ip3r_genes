@@ -1,0 +1,40 @@
+gene	acc	feature	start	end	description
+ITPR1	Q14643	Topological domain	1	2282	Cytoplasmic
+ITPR1	Q14643	Transmembrane	2283	2303	Helical
+ITPR1	Q14643	Topological domain	2304	2314	Lumenal
+ITPR1	Q14643	Transmembrane	2315	2335	Helical
+ITPR1	Q14643	Topological domain	2336	2361	Cytoplasmic
+ITPR1	Q14643	Transmembrane	2362	2382	Helical
+ITPR1	Q14643	Topological domain	2383	2405	Lumenal
+ITPR1	Q14643	Transmembrane	2406	2426	Helical
+ITPR1	Q14643	Topological domain	2427	2448	Cytoplasmic
+ITPR1	Q14643	Transmembrane	2449	2469	Helical
+ITPR1	Q14643	Topological domain	2470	2577	Lumenal
+ITPR1	Q14643	Transmembrane	2578	2598	Helical
+ITPR1	Q14643	Topological domain	2599	2758	Cytoplasmic
+ITPR2	Q14571	Topological domain	1	2227	Cytoplasmic
+ITPR2	Q14571	Transmembrane	2228	2248	Helical
+ITPR2	Q14571	Topological domain	2249	2260	Extracellular
+ITPR2	Q14571	Transmembrane	2261	2281	Helical
+ITPR2	Q14571	Topological domain	2282	2307	Cytoplasmic
+ITPR2	Q14571	Transmembrane	2308	2328	Helical
+ITPR2	Q14571	Topological domain	2329	2351	Extracellular
+ITPR2	Q14571	Transmembrane	2352	2372	Helical
+ITPR2	Q14571	Topological domain	2373	2394	Cytoplasmic
+ITPR2	Q14571	Transmembrane	2395	2415	Helical
+ITPR2	Q14571	Topological domain	2416	2521	Extracellular
+ITPR2	Q14571	Transmembrane	2522	2542	Helical
+ITPR2	Q14571	Topological domain	2543	2701	Cytoplasmic
+ITPR3	Q14573	Topological domain	1	2202	Cytoplasmic
+ITPR3	Q14573	Transmembrane	2203	2223	Helical
+ITPR3	Q14573	Topological domain	2224	2235	Extracellular
+ITPR3	Q14573	Transmembrane	2236	2256	Helical
+ITPR3	Q14573	Topological domain	2257	2264	Cytoplasmic
+ITPR3	Q14573	Transmembrane	2265	2285	Helical
+ITPR3	Q14573	Topological domain	2286	2325	Extracellular
+ITPR3	Q14573	Transmembrane	2326	2346	Helical
+ITPR3	Q14573	Topological domain	2347	2368	Cytoplasmic
+ITPR3	Q14573	Transmembrane	2369	2389	Helical
+ITPR3	Q14573	Topological domain	2390	2496	Extracellular
+ITPR3	Q14573	Transmembrane	2497	2517	Helical
+ITPR3	Q14573	Topological domain	2518	2671	Cytoplasmic

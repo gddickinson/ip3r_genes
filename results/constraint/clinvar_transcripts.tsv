@@ -1,0 +1,4 @@
+transcript	protein_len	n_mapped	identical_to_canonical	gene	n_variants	n_kept
+NM_001378452.1	2758	2758	True	ITPR1	1006	1006
+NM_002223.4	2701	2701	True	ITPR2	299	299
+NM_002224.4	2671	2671	True	ITPR3	448	448

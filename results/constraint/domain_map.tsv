@@ -1,0 +1,31 @@
+paralog	ref_acc	reference	element	kind	source	start	end	n_residues	transferred_from	n_check_ok	n_check_fail	check	anchor	disagreements
+ITPR1	Q14643	human ITPR1	nterm_trefoil	pfam	InterPro PF08709	5	229	225				not_applicable_measured_on_this_accession		
+ITPR1	Q14643	human ITPR1	MIR	pfam	InterPro PF02815	233	432	200				not_applicable_measured_on_this_accession		
+ITPR1	Q14643	human ITPR1	RIH_N	pfam	InterPro PF01365	474	670	197				not_applicable_measured_on_this_accession		
+ITPR1	Q14643	human ITPR1	RIH_C	pfam	InterPro PF01365	1204	1352	149				not_applicable_measured_on_this_accession		
+ITPR1	Q14643	human ITPR1	RIH_assoc	pfam	InterPro PF08454	1971	2077	107				not_applicable_measured_on_this_accession		
+ITPR1	Q14643	human ITPR1	channel	pfam	InterPro PF00520	2363	2608	246				not_applicable_measured_on_this_accession		
+ITPR1	Q14643	human ITPR1	selectivity_filter	structural	6DQN 3.33 A	2553	2559	7	Q14573	6	1	anchor_confirmed	GGGVGD at 2554	N2472->S2553
+ITPR1	Q14643	human ITPR1	gate	structural	6DQN 3.33 A	2594	2598	5	Q14573	5	0	anchor_confirmed	lining residues identical	
+ITPR1	Q14643	human ITPR1	luminal_loop	structural	6DQN 3.33 A	2481	2531	51	Q14573	12	38	anchor_confirmed	inside channel 2363-2608	N2405->E2485; H2406->T2486; S2407->A2487; T2408->V2488; A2409->P2489; S2410->E2490; P2411->T2491; L2412->G2492; G2413->E2493; M2414->S2494; P2415->L2495; H2416->A2496; G2417->S2497; A2418->E2498; A2419->F2499; A2420->L2500; V2422->S2502; T2424->V2504; D2428->E2511; K2429->unaligned; M2430->unaligned; D2431->N2512; V2433->S2514; G2435->P2516; L2436->A2517; S2437->P2518; V2438->R2519; P2439->E2520; V2441->L2522; L2442->V2523; E2443->P2524; E2444->A2525; D2445->E2526; R2446->E2527; E2447->T2528; L2448->E2529; D2449->Q2530; S2450->D2531
+ITPR1	Q14643	human ITPR1	ip3_contact_set	structural	6DQN IP3 contacts <= 4.5 A	265	569	10	Q14573	9	1	placed_with_substitutions	9/10 contacts identical	L269->G268
+ITPR2	Q14571	human ITPR2	nterm_trefoil	pfam	InterPro PF08709	5	227	223				not_applicable_measured_on_this_accession		
+ITPR2	Q14571	human ITPR2	MIR	pfam	InterPro PF02815	232	431	200				not_applicable_measured_on_this_accession		
+ITPR2	Q14571	human ITPR2	RIH_N	pfam	InterPro PF01365	473	670	198				not_applicable_measured_on_this_accession		
+ITPR2	Q14571	human ITPR2	RIH_C	pfam	InterPro PF01365	1194	1344	151				not_applicable_measured_on_this_accession		
+ITPR2	Q14571	human ITPR2	RIH_assoc	pfam	InterPro PF08454	1915	2021	107				not_applicable_measured_on_this_accession		
+ITPR2	Q14571	human ITPR2	channel	pfam	InterPro PF00520	2265	2551	287				not_applicable_measured_on_this_accession		
+ITPR2	Q14571	human ITPR2	selectivity_filter	structural	6DQN 3.33 A	2496	2502	7	Q14573	7	0	anchor_confirmed	GGGVGD at 2497	
+ITPR2	Q14571	human ITPR2	gate	structural	6DQN 3.33 A	2537	2541	5	Q14573	5	0	anchor_confirmed	lining residues identical	
+ITPR2	Q14571	human ITPR2	luminal_loop	structural	6DQN 3.33 A	2427	2474	48	Q14573	10	40	anchor_confirmed	inside channel 2265-2551	P2403->K2429; N2405->R2431; H2406->T2432; S2407->P2433; T2408->V2434; A2409->T2435; S2410->G2436; P2411->S2437; L2412->H2438; G2413->Q2439; M2414->V2440; H2416->T2442; G2417->M2443; A2418->T2444; A2419->T2446; A2420->T2447; F2421->M2448; V2422->M2449; D2423->E2450; T2424->A2451; S2426->A2453; G2427->unaligned; D2428->unaligned; M2430->E2455; D2431->N2456; V2433->S2458; S2434->P2459; G2435->T2460; L2436->I2461; S2437->P2462; V2438->A2463; P2439->S2464; E2440->N2465; V2441->T2466; L2442->A2467; E2443->D2468; D2445->E2470; R2446->Y2471; L2448->unaligned; S2450->G2474
+ITPR2	Q14571	human ITPR2	ip3_contact_set	structural	6DQN IP3 contacts <= 4.5 A	265	569	10	Q14573	10	0	all_identical	10/10 contacts identical	
+ITPR3	Q14573	human ITPR3	nterm_trefoil	pfam	InterPro PF08709	3	229	227				not_applicable_measured_on_this_accession		
+ITPR3	Q14573	human ITPR3	MIR	pfam	InterPro PF02815	234	431	198				not_applicable_measured_on_this_accession		
+ITPR3	Q14573	human ITPR3	RIH_N	pfam	InterPro PF01365	474	670	197				not_applicable_measured_on_this_accession		
+ITPR3	Q14573	human ITPR3	RIH_C	pfam	InterPro PF01365	1188	1327	140				not_applicable_measured_on_this_accession		
+ITPR3	Q14573	human ITPR3	RIH_assoc	pfam	InterPro PF08454	1867	1973	107				not_applicable_measured_on_this_accession		
+ITPR3	Q14573	human ITPR3	channel	pfam	InterPro PF00520	2240	2527	288				not_applicable_measured_on_this_accession		
+ITPR3	Q14573	human ITPR3	selectivity_filter	structural	6DQN 3.33 A	2472	2478	7		7	0	measured_here		
+ITPR3	Q14573	human ITPR3	gate	structural	6DQN 3.33 A	2513	2517	5		5	0	measured_here		
+ITPR3	Q14573	human ITPR3	luminal_loop	structural	6DQN 3.33 A	2401	2450	50		50	0	measured_here		
+ITPR3	Q14573	human ITPR3	ip3_contact_set	structural	6DQN IP3 contacts <= 4.5 A	266	569	10		10	0	measured_here	10/10 contacts identical	

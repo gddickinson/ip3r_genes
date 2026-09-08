@@ -1,0 +1,4 @@
+paralog	n_sites	n_mapped	n_aa_agree	aa_agreement	n_alpha_at_bound	n_purifying_q05	n_diversifying_q05
+ITPR1	2459	2459	2456	0.9988	11	2114	0
+ITPR2	2459	2459	2455	0.9984	13	1752	0
+ITPR3	2459	2459	2457	0.9992	13	1900	1

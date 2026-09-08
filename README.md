@@ -19,17 +19,19 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S16 complete — the census is enumerated, aligned, dated,
-audited, counted, stress-tested and now traced back to the duplications
-that made it; 24 of the 33 ledger rows are done.** **The three human IP3
-receptors are three pieces of one ancient neighbourhood, and the paralogy
-runs through ITPR1**: its flanking genes have relatives beside ITPR2 in
-141 of 175 vertebrate genomes and beside ITPR3 in 89 of 152, against
-**2.6 %** of matched random neighbourhoods in the same genomes — while
-ITPR2 and ITPR3 share nothing above background. And **the teleost genome
-duplication doubled ITPR1 and only ITPR1**, kept in 97 % of ray-finned
-genomes while the same fish kept all six of their ryanodine receptors
-(§ *S16* below).
+**Status: S17 complete — the census is enumerated, aligned, dated,
+audited, counted, traced back to the duplications that made it, and now
+scored residue by residue; 25 of the 33 ledger rows are done.** **The gate
+has not changed.** The five residues that line the closing point of the
+channel are the most invariant sequence in the receptor and are
+**identical in all three human copies**, which have been separate genes
+since before jawed vertebrates and are only 64–70 % identical overall. Two
+things came with that. **The domain the databases name after IP3 contains
+none of the ten residues that touch IP3** — those sit in MIR and RIH, the
+domains shared with the ryanodine receptors. And **a 50-residue loop
+hanging into the ER lumen is the least conserved sequence in the protein**
+(13–31 % identity between copies), fifty residues from the most conserved,
+inside the same domain (§ *S17* below).
 
 The build-up. The literature baseline is verified with a citation on every
 claim ([`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md), 32 pages,
@@ -451,7 +453,7 @@ One task per session. Full ledger with dependencies and results in
 | S15a | Loss dynamics — the instrument and the character matrix | ✅ completed 2026-09-08 |
 | S15b | Loss dynamics — the counts and the sensitivity matrix | ✅ completed 2026-09-08 |
 | S16 | Duplication history (2R / 3R, and the RyR parallel) | ✅ completed 2026-09-08 |
-| S17 | Constraint & function — the clinical-variant test | ⏳ pending |
+| S17 | Constraint & function — the clinical-variant test | ✅ completed 2026-09-08 |
 | S18 | Annotation-quality audit + correction list | ⏳ pending |
 | S19 | Methods results | ⏳ pending |
 | S21 | Gene architecture (~58 exons) | ⏳ pending |
@@ -466,6 +468,38 @@ One task per session. Full ledger with dependencies and results in
 ## Findings so far
 
 Plain-language entries per task: [`FINDINGS.md`](FINDINGS.md). Headlines:
+
+**S17 — the gate has not changed, and the domain named after IP3 is not the
+IP3 site.** With 250 orthologues of each human copy pulled out of the 309
+swept genomes, constraint can be read residue by residue. The five gate
+residues are the most invariant sequence in the receptor and are **identical
+in ITPR1, ITPR2 and ITPR3**; the selectivity filter is 86–100 % identical
+between copies and the ten measured IP3 contacts are more conserved than the
+rest of the domains they sit in. Those domains are **MIR and RIH** — the ones
+shared with the ryanodine receptors — because **not one of the ten contacts
+lies inside PF08709**, the signature every database record calls "Inositol
+1,4,5-trisphosphate/ryanodine receptor". Meanwhile a **50-residue ER-luminal
+loop inside the pore domain is the least conserved sequence in the protein**
+(13–31 % identity between copies against 64–70 % overall; the same answer
+from residue conservation and from per-site dN/dS). Unresolved, its
+variability dragged the whole pore domain below the receptor's floppy
+linkers, which would have meant reporting that the pore of an ion channel is
+less constrained than its spacers.
+
+![constraint by element](results/constraint/figures/s17_elements.png)
+
+**S17 — conservation does read the variants, and 88 % of them are
+unreadable.** Against ClinVar's own labels, pathogenic positions are markedly
+more conserved than benign ones (AUC **0.872** on a fixed set of 44 vs 34
+positions) — and the layer that does it best is conservation across the
+*whole* family, protists to humans, not deep conservation within one human
+gene (0.758). But **1,546 of 1,753 missense records are of uncertain
+significance**, and **ITPR2's entire pathogenic record is one variant** —
+which is ascertainment, not tolerance: its gate is identical to the others'
+and its IP3 contacts are the most conserved of the three, with 8 of 10
+invariant across 249 species. All 1,753 records now carry a per-site score.
+
+![the variant classifier](results/constraint/figures/s17_variant_classifier.png)
 
 **S16 — the family's origin is still visible in the genome, and it runs
 through ITPR1.** Two rounds of whole-genome duplication made the vertebrate

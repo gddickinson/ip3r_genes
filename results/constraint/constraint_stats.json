@@ -1,0 +1,172 @@
+{
+  "task": "S17",
+  "references": {
+    "ITPR1": "Q14643",
+    "ITPR2": "Q14571",
+    "ITPR3": "Q14573"
+  },
+  "structure_reference": "ITPR3",
+  "rules": {
+    "orthologs": {
+      "min_coverage": 0.8,
+      "min_identity": 0.4,
+      "min_aligned_aa": 1800,
+      "one_locus_per_genome_x_paralog": true,
+      "s15a_lesion_exclusion": true
+    },
+    "conservation": {
+      "metric": "Jensen-Shannon divergence vs BLOSUM62 background (Capra & Singh 2007), sequence-weighted (Henikoff & Henikoff 1994)",
+      "min_occupancy": 0.5,
+      "layers": [
+        "deep",
+        "shallow",
+        "vert",
+        "family"
+      ],
+      "within_protein_control": "linkers and termini only"
+    },
+    "domains": {
+      "pfam_source": "InterPro coordinates measured per accession (S0 domain_coords.tsv) \u2014 no transfer",
+      "structural_source": "PDB 6DQN measured in S0 \u2014 transferred with an anchor test",
+      "primary_order": [
+        "selectivity_filter",
+        "gate",
+        "luminal_loop",
+        "nterm_trefoil",
+        "MIR",
+        "RIH_N",
+        "RIH_C",
+        "RIH_assoc",
+        "channel"
+      ]
+    },
+    "variants": {
+      "sources": [
+        "ClinVar missense SNV",
+        "UniProt natural variant"
+      ],
+      "numbering": "every cited transcript's own translated CDS aligned to the canonical; the reference amino acid must match or the variant is dropped",
+      "layers_tested": [
+        "deep",
+        "shallow",
+        "vert",
+        "family"
+      ]
+    },
+    "fel": {
+      "tool": "HyPhy FEL",
+      "fdr": "Benjamini-Hochberg",
+      "alpha_usable_max": 100.0
+    }
+  },
+  "self_test": {
+    "n_tests": 14,
+    "passed": true
+  },
+  "tables": {
+    "domain_map.tsv": {
+      "sha256": "e6ae09666d00d17f47d6e6127990c8dce8895579031c8809d6264a0e1ba58a82",
+      "bytes": 4818
+    },
+    "functional_sites.tsv": {
+      "sha256": "ac746b059d7fc89d53f4da8abc2213934c50a264b9cb036712ba5281b099ae13",
+      "bytes": 2662
+    },
+    "orthologs_manifest.tsv": {
+      "sha256": "504aa188b041b1b894a28175268eaca22ce60a1a3defe462504fdeee21d8ca36",
+      "bytes": 183800
+    },
+    "ortholog_shape.tsv": {
+      "sha256": "2af73975c4bf0abfb1d087d54cdf063eea5dad9c413f4d0f677f626b7b36ef7f",
+      "bytes": 57384
+    },
+    "layer_sizes.tsv": {
+      "sha256": "02f203226c1ea9912dc6476078b7da61c73f5a30fce36bad906bfaa1a1a932c1",
+      "bytes": 561
+    },
+    "constraint_by_element.tsv": {
+      "sha256": "8a7b82362399b0f402e1a467daec05d1cb829762a07cc615f4b3045fe3abdbfb",
+      "bytes": 4116
+    },
+    "metric_controls.tsv": {
+      "sha256": "f10c490e14c1dd38387eda49e2ece31e481debb060504e9ead3190960d9cc24c",
+      "bytes": 4200
+    },
+    "functional_site_constraint.tsv": {
+      "sha256": "73e0e1b1ade856b99b56f34022f320f3c868630509f463b88a66b6694b0ca495",
+      "bytes": 775
+    },
+    "paralog_identity_by_element.tsv": {
+      "sha256": "02101b7d59c37fa0ed0bdee70fd5101bbd51b20d6cd8ea4532c28b6ac6bb052b",
+      "bytes": 3407
+    },
+    "variants.tsv": {
+      "sha256": "55ba1c7ceea0d26ebbb862aa4779c07434a7de4cbec70379a8693c17c931fb1b",
+      "bytes": 386199
+    },
+    "variant_parsing.tsv": {
+      "sha256": "721be89aeb3d2c0dd5bf49caaccd9b54cacc454a0c8b7f6462bc6fe396b3ed13",
+      "bytes": 139
+    },
+    "clinvar_transcripts.tsv": {
+      "sha256": "fd01d8f117902ea5569dce3adcaa6dd146ffe27d447a2b46b8c93a05b6a1d616",
+      "bytes": 210
+    },
+    "curated_variant_control.tsv": {
+      "sha256": "1c6a7b148fb1f9904821fb482e6af7ed0672eec67ecd8be80e24bff745259278",
+      "bytes": 224
+    },
+    "variant_constraint_test.tsv": {
+      "sha256": "69304e26c9cf933e9a10de9c9b871d04b71f88a7e74ed0ef30da40921ad57cb7",
+      "bytes": 3386
+    },
+    "paralog_variant_audit.tsv": {
+      "sha256": "4f9d2b179d4715a2fe6e9313b37b97007994fc5a7a74f66816b046b82f18913a",
+      "bytes": 2176
+    },
+    "paralog_variant_positions.tsv": {
+      "sha256": "7572ea735d609c596e7b45db1cc3e53e92d917832bcca289ec3ab4e534043bb2",
+      "bytes": 129751
+    },
+    "variant_by_element.tsv": {
+      "sha256": "8f1fbce78c8f3b664ea8cb4cf5e842a5e633252de497acedb1d8edad5cdbf08e",
+      "bytes": 4874
+    },
+    "vus_stratification.tsv": {
+      "sha256": "27bba01738e26b06a77cb630b22a6bb97a7e1a8fca0ee50da85af048ec9a5437",
+      "bytes": 971
+    },
+    "uniprot_topology.tsv": {
+      "sha256": "8599468eb11c0144d4c3822db728dc065be87c83869e6747f0bf607641b0aa7e",
+      "bytes": 2014
+    },
+    "fel_sites.tsv": {
+      "sha256": "b3f338776c6bcd62f816344288057eef88c54317debe7ce8ef4e21a547a299f1",
+      "bytes": 864743
+    },
+    "fel_status.tsv": {
+      "sha256": "1d1ec6f4b8e5fde3211943b1d7f978c172c9bb2bc70d3f715b7b18e8f2b7f73e",
+      "bytes": 219
+    },
+    "selection_by_element.tsv": {
+      "sha256": "8eadfb3999d251b228b16f8fa94693feeb416918fe6aa85e809a97ae3a4dd5d1",
+      "bytes": 3017
+    },
+    "painted_structures.tsv": {
+      "sha256": "65ac4b6b41d4372544eb7fc9683344cb5c2955ca91a81ba3499a96524a19aaf7",
+      "bytes": 4814
+    },
+    "constraint_ITPR1_Q14643.tsv": {
+      "sha256": "9f2650c4e2d3f60ab366e74dd6757fad23fd87e6947c9db86d22df4b76172956",
+      "bytes": 436730
+    },
+    "constraint_ITPR2_Q14571.tsv": {
+      "sha256": "e3d46322af364feb25f16cd8d4131ba4066596aca644a8eb62b4bc663069a495",
+      "bytes": 428434
+    },
+    "constraint_ITPR3_Q14573.tsv": {
+      "sha256": "d908c520c298b5434764e8403bae8f1d7911257b71b8a3da1e2438f2db40ec75",
+      "bytes": 424638
+    }
+  }
+}

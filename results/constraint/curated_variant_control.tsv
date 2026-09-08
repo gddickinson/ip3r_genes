@@ -1,0 +1,3 @@
+gene	label	resi	expected_aa	found	n_clinvar_at_resi	sources	verdict
+ITPR3	CMT1J — p.Thr1424Met	1424	T	True	2	clinvar;uniprot	recovered
+ITPR3	multisystem disorder — p.Arg2524Cys	2524	R	True	4	clinvar;uniprot	recovered

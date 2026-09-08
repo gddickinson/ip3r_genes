@@ -1,0 +1,9 @@
+layer	paralog	n_sequences	note
+deep	ITPR1	264	S5 gene models + curated, one locus per genome
+shallow	ITPR1	19	msa_v2, this paralog only — the depth control
+deep	ITPR2	249	S5 gene models + curated, one locus per genome
+shallow	ITPR2	13	msa_v2, this paralog only — the depth control
+deep	ITPR3	265	S5 gene models + curated, one locus per genome
+shallow	ITPR3	19	msa_v2, this paralog only — the depth control
+vert	all three	57	msa_v2 vertebrate ITPR tips incl. vertebrate_basal
+family	all	128	every msa_v2 ITPR tip; the 6 RyR outgroup tips excluded

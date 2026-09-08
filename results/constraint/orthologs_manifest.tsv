@@ -1,0 +1,971 @@
+paralog	accession	organism	vclass	vorder	mp_id	bait	coverage	identity	aligned_aa	frameshifts	stop_codons	integrity	seq_len	source	kept	reason	name
+ITPR1	GCA_000699545.1	Podiceps cristatus	Aves	Podicipediformes			0.3343	0.9925					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_000699545.1	Podiceps cristatus	Aves	Podicipediformes			0.387	0.9542					0	sweep_model	False	below_quality_bar(fragment)	
+ITPR3	GCA_000699545.1	Podiceps cristatus	Aves	Podicipediformes	MP000028	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.8239	0.9903	2195	1	0	intact	2195	sweep_model	True	ok	ITPR3|Podiceps_cristatus|GCA_000699545.1
+ITPR1	GCA_000699945.1	Cathartes aura	Aves	Accipitriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_000699945.1	Cathartes aura	Aves	Accipitriformes			0.3752	0.9852					0	sweep_model	False	below_quality_bar(fragment)	
+ITPR3	GCA_000699945.1	Cathartes aura	Aves	Accipitriformes			0.7477	0.9781					0	sweep_model	False	below_quality_bar(found_annotated)	
+ITPR1	GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	Artiodactyla	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.8879	2758	1	0	intact	2672	sweep_model	True	ok	ITPR1|Cervus_elaphus_hippelaphus|GCA_002197005.1
+ITPR2	GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	Artiodactyla	MP000007	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.8296	2701	1	0	intact	2661	sweep_model	True	ok	ITPR2|Cervus_elaphus_hippelaphus|GCA_002197005.1
+ITPR3	GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	Artiodactyla									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR1	GCA_002844005.1	Limosa lapponica baueri	Aves	Charadriiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_002844005.1	Limosa lapponica baueri	Aves	Charadriiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCA_002844005.1	Limosa lapponica baueri	Aves	Charadriiformes	MP000014	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9801	0.8623	2611	2	1	intact	2474	sweep_model	True	ok	ITPR3|Limosa_lapponica_baueri|GCA_002844005.1
+ITPR1	GCA_002909625.1	Bambusicola thoracicus	Aves	Galliformes			0.3516	1.0					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_002909625.1	Bambusicola thoracicus	Aves	Galliformes			0.2111	0.9					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_002909625.1	Bambusicola thoracicus	Aves	Galliformes			0.6295	0.9988					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_003113815.1	Sphenodon punctatus	Lepidosauria	Sphenodontia	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.9975	0.9524	2772	0	0	intact	2759	sweep_model	True	ok	ITPR1|Sphenodon_punctatus|GCA_003113815.1
+ITPR2	GCA_003113815.1	Sphenodon punctatus	Lepidosauria	Sphenodontia	MP000010	F1P1X4|ITPR2|Gallus_gallus|ITPR2	1.0	0.9338	2700	0	0	intact	2703	sweep_model	True	ok	ITPR2|Sphenodon_punctatus|GCA_003113815.1
+ITPR3	GCA_003113815.1	Sphenodon punctatus	Lepidosauria	Sphenodontia	MP000017	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9415	2664	0	0	intact	2666	sweep_model	True	ok	ITPR3|Sphenodon_punctatus|GCA_003113815.1
+ITPR1	GCA_004320025.1	Laticauda laticaudata	Lepidosauria	Squamata			0.5817	0.9671					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_004320025.1	Laticauda laticaudata	Lepidosauria	Squamata			0.5616	0.913					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_004320025.1	Laticauda laticaudata	Lepidosauria	Squamata			0.5911	0.9385					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_006937325.1	Anomalopteryx didiformis	Aves	Dinornithiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9412	2779	1	0	intact	2779	sweep_model	True	ok	ITPR1|Anomalopteryx_didiformis|GCA_006937325.1
+ITPR2	GCA_006937325.1	Anomalopteryx didiformis	Aves	Dinornithiformes	MP000010	F1P1X4|ITPR2|Gallus_gallus|ITPR2	1.0	0.9404	2700	0	0	intact	2712	sweep_model	True	ok	ITPR2|Anomalopteryx_didiformis|GCA_006937325.1
+ITPR3	GCA_006937325.1	Anomalopteryx didiformis	Aves	Dinornithiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9589	2664	0	0	intact	2676	sweep_model	True	ok	ITPR3|Anomalopteryx_didiformis|GCA_006937325.1
+ITPR1	GCA_007760645.1	Sousa chinensis	Mammalia	Artiodactyla	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9797	2758	0	0	intact	2760	sweep_model	True	ok	ITPR1|Sousa_chinensis|GCA_007760645.1
+ITPR2	GCA_007760645.1	Sousa chinensis	Mammalia	Artiodactyla	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9594	2701	0	0	intact	2733	sweep_model	True	ok	ITPR2|Sousa_chinensis|GCA_007760645.1
+ITPR3	GCA_007760645.1	Sousa chinensis	Mammalia	Artiodactyla	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9738	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Sousa_chinensis|GCA_007760645.1
+ITPR1	GCA_008658365.1	Alca torda	Aves	Charadriiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9903	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Alca_torda|GCA_008658365.1
+ITPR2	GCA_008658365.1	Alca torda	Aves	Charadriiformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9772	2700	5	1	elevated_lesions	2695	sweep_model	False	s15a_elevated_lesions	
+ITPR3	GCA_008658365.1	Alca torda	Aves	Charadriiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9831	2664	15	0	elevated_lesions	2655	sweep_model	False	s15a_elevated_lesions	
+ITPR1	GCA_009769605.1	Bucorvus abyssinicus	Aves	Bucerotiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9888	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Bucorvus_abyssinicus|GCA_009769605.1
+ITPR2	GCA_009769605.1	Bucorvus abyssinicus	Aves	Bucerotiformes	MP000049	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9767	2700	0	0	intact	2700	sweep_model	True	ok	ITPR2|Bucorvus_abyssinicus|GCA_009769605.1
+ITPR3	GCA_009769605.1	Bucorvus abyssinicus	Aves	Bucerotiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9865	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Bucorvus_abyssinicus|GCA_009769605.1
+ITPR1	GCA_009819775.1	Phoenicopterus ruber ruber	Aves	Phoenicopteriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9928	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Phoenicopterus_ruber_ruber|GCA_009819775.1
+ITPR2	GCA_009819775.1	Phoenicopterus ruber ruber	Aves	Phoenicopteriformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9865	2700	3	0	intact	2698	sweep_model	True	ok	ITPR2|Phoenicopterus_ruber_ruber|GCA_009819775.1
+ITPR3	GCA_009819775.1	Phoenicopterus ruber ruber	Aves	Phoenicopteriformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9899	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Phoenicopterus_ruber_ruber|GCA_009819775.1
+ITPR1	GCA_010411085.1	Cervus hanglu yarkandensis	Mammalia	Artiodactyla	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9815	2758	0	0	intact	2760	sweep_model	True	ok	ITPR1|Cervus_hanglu_yarkandensis|GCA_010411085.1
+ITPR2	GCA_010411085.1	Cervus hanglu yarkandensis	Mammalia	Artiodactyla	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9785	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Cervus_hanglu_yarkandensis|GCA_010411085.1
+ITPR3	GCA_010411085.1	Cervus hanglu yarkandensis	Mammalia	Artiodactyla	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9715	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Cervus_hanglu_yarkandensis|GCA_010411085.1
+ITPR1	GCA_011823955.1	Dissostichus mawsoni	Actinopteri	Perciformes	MP000083	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9528	2748	4	0	intact	2739	sweep_model	False	s15a_elevated_lesions	
+ITPR2	GCA_011823955.1	Dissostichus mawsoni	Actinopteri	Perciformes	MP000085	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8622	2701	4	0	intact	2685	sweep_model	True	ok	ITPR2|Dissostichus_mawsoni|GCA_011823955.1
+ITPR3	GCA_011823955.1	Dissostichus mawsoni	Actinopteri	Perciformes	MP000087	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8856	2670	9	0	elevated_lesions	2680	sweep_model	False	s15a_elevated_lesions	
+ITPR1	GCA_013389825.1	Crypturellus undulatus	Aves	Tinamiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9867	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Crypturellus_undulatus|GCA_013389825.1
+ITPR2	GCA_013389825.1	Crypturellus undulatus	Aves	Tinamiformes	MP000010	F1P1X4|ITPR2|Gallus_gallus|ITPR2	1.0	0.98	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Crypturellus_undulatus|GCA_013389825.1
+ITPR3	GCA_013389825.1	Crypturellus undulatus	Aves	Tinamiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR1	GCA_013389885.1	Geococcyx californianus	Aves	Cuculiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.987	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Geococcyx_californianus|GCA_013389885.1
+ITPR2	GCA_013389885.1	Geococcyx californianus	Aves	Cuculiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCA_013389885.1	Geococcyx californianus	Aves	Cuculiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR1	GCA_013389965.1	Todus mexicanus	Aves	Coraciiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_013389965.1	Todus mexicanus	Aves	Coraciiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCA_013389965.1	Todus mexicanus	Aves	Coraciiformes	MP000031	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9476	2670	0	0	intact	2610	sweep_model	True	ok	ITPR3|Todus_mexicanus|GCA_013389965.1
+ITPR1	GCA_013389985.1	Dryoscopus gambensis	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9853	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Dryoscopus_gambensis|GCA_013389985.1
+ITPR2	GCA_013389985.1	Dryoscopus gambensis	Aves	Passeriformes			0.763	0.9456					0	sweep_model	False	below_quality_bar(found_unannotated)	
+ITPR3	GCA_013389985.1	Dryoscopus gambensis	Aves	Passeriformes	MP000049	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9925	2670	0	1	intact	2678	sweep_model	True	ok	ITPR3|Dryoscopus_gambensis|GCA_013389985.1
+ITPR1	GCA_013390065.1	Chloropsis hardwickii	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9661	2779	0	0	intact	2798	sweep_model	True	ok	ITPR1|Chloropsis_hardwickii|GCA_013390065.1
+ITPR2	GCA_013390065.1	Chloropsis hardwickii	Aves	Passeriformes	MP000048	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9554	2700	0	0	intact	2704	sweep_model	True	ok	ITPR2|Chloropsis_hardwickii|GCA_013390065.1
+ITPR3	GCA_013390065.1	Chloropsis hardwickii	Aves	Passeriformes	MP000049	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	0.9337	0.9224	2493	0	0	intact	2468	sweep_model	True	ok	ITPR3|Chloropsis_hardwickii|GCA_013390065.1
+ITPR1	GCA_013390105.1	Tichodroma muraria	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_013390105.1	Tichodroma muraria	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCA_013390105.1	Tichodroma muraria	Aves	Passeriformes	MP000025	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9899	2670	0	0	intact	2686	sweep_model	True	ok	ITPR3|Tichodroma_muraria|GCA_013390105.1
+ITPR1	GCA_013396355.1	Menura novaehollandiae	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9863	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Menura_novaehollandiae|GCA_013396355.1
+ITPR2	GCA_013396355.1	Menura novaehollandiae	Aves	Passeriformes	MP000049	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9719	2700	0	0	intact	2704	sweep_model	True	ok	ITPR2|Menura_novaehollandiae|GCA_013396355.1
+ITPR3	GCA_013396355.1	Menura novaehollandiae	Aves	Passeriformes	MP000050	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9931	2670	1	0	intact	2669	sweep_model	True	ok	ITPR3|Menura_novaehollandiae|GCA_013396355.1
+ITPR1	GCA_013396465.1	Smithornis capensis	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.9712	0.9856	2699	0	0	intact	2699	sweep_model	True	ok	ITPR1|Smithornis_capensis|GCA_013396465.1
+ITPR2	GCA_013396465.1	Smithornis capensis	Aves	Passeriformes	MP000052	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9848	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Smithornis_capensis|GCA_013396465.1
+ITPR3	GCA_013396465.1	Smithornis capensis	Aves	Passeriformes	MP000053	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	0.8573	0.84	2289	0	0	intact	2242	sweep_model	True	ok	ITPR3|Smithornis_capensis|GCA_013396465.1
+ITPR1	GCA_013396485.1	Ptilorrhoa leucosticta	Aves	Passeriformes	MP000004	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.8395	0.9655	2333	0	0	intact	2343	sweep_model	True	ok	ITPR1|Ptilorrhoa_leucosticta|GCA_013396485.1
+ITPR2	GCA_013396485.1	Ptilorrhoa leucosticta	Aves	Passeriformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9798	2669	0	0	intact	2672	sweep_model	True	ok	ITPR2|Ptilorrhoa_leucosticta|GCA_013396485.1
+ITPR3	GCA_013396485.1	Ptilorrhoa leucosticta	Aves	Passeriformes			0.5311	0.8709					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_013396675.1	Eubucco bourcierii	Aves	Piciformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.9971	0.982	2771	0	0	intact	2777	sweep_model	True	ok	ITPR1|Eubucco_bourcierii|GCA_013396675.1
+ITPR2	GCA_013396675.1	Eubucco bourcierii	Aves	Piciformes			0.6381	0.9565					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013396675.1	Eubucco bourcierii	Aves	Piciformes	MP000056	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9738	2670	0	0	intact	2674	sweep_model	True	ok	ITPR3|Eubucco_bourcierii|GCA_013396675.1
+ITPR1	GCA_013396835.1	Psilopogon haemacephalus	Aves	Piciformes	MP000049	A0ABM4F3U0|ITPR1|Apteryx_mantelli	0.8178	0.9835	2249	0	0	intact	2250	sweep_model	True	ok	ITPR1|Psilopogon_haemacephalus|GCA_013396835.1
+ITPR2	GCA_013396835.1	Psilopogon haemacephalus	Aves	Piciformes			0.5256	0.9626					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013396835.1	Psilopogon haemacephalus	Aves	Piciformes	MP000053	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9719	2670	1	0	intact	2670	sweep_model	True	ok	ITPR3|Psilopogon_haemacephalus|GCA_013396835.1
+ITPR1	GCA_013396875.1	Vireo altiloquus	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9849	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Vireo_altiloquus|GCA_013396875.1
+ITPR2	GCA_013396875.1	Vireo altiloquus	Aves	Passeriformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9796	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Vireo_altiloquus|GCA_013396875.1
+ITPR3	GCA_013396875.1	Vireo altiloquus	Aves	Passeriformes	MP000051	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9973	2670	1	0	intact	2670	sweep_model	True	ok	ITPR3|Vireo_altiloquus|GCA_013396875.1
+ITPR1	GCA_013396935.1	Baryphthengus martii	Aves	Coraciiformes			0.6715	0.9936					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_013396935.1	Baryphthengus martii	Aves	Coraciiformes	MP000081	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9768	2669	0	0	intact	2676	sweep_model	True	ok	ITPR2|Baryphthengus_martii|GCA_013396935.1
+ITPR3	GCA_013396935.1	Baryphthengus martii	Aves	Coraciiformes	MP000026	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9771	2664	1	0	intact	2659	sweep_model	True	ok	ITPR3|Baryphthengus_martii|GCA_013396935.1
+ITPR1	GCA_013396975.1	Bucco capensis	Aves	Piciformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9867	2779	0	0	intact	2779	sweep_model	True	ok	ITPR1|Bucco_capensis|GCA_013396975.1
+ITPR2	GCA_013396975.1	Bucco capensis	Aves	Piciformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCA_013396975.1	Bucco capensis	Aves	Piciformes			0.6854	0.9858					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_013397015.1	Myiagra hebetior	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9845	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Myiagra_hebetior|GCA_013397015.1
+ITPR2	GCA_013397015.1	Myiagra hebetior	Aves	Passeriformes	MP000048	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.982	2669	0	0	intact	2668	sweep_model	True	ok	ITPR2|Myiagra_hebetior|GCA_013397015.1
+ITPR3	GCA_013397015.1	Myiagra hebetior	Aves	Passeriformes	MP000049	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9965	2670	1	0	intact	2670	sweep_model	True	ok	ITPR3|Myiagra_hebetior|GCA_013397015.1
+ITPR1	GCA_013397245.1	Thryothorus ludovicianus	Aves	Passeriformes			0.5156	0.9767					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_013397245.1	Thryothorus ludovicianus	Aves	Passeriformes	MP000069	A0A672UP22|ITPR2|Strigops_habroptila	0.877	0.978	2368	0	0	intact	2367	sweep_model	True	ok	ITPR2|Thryothorus_ludovicianus|GCA_013397245.1
+ITPR3	GCA_013397245.1	Thryothorus ludovicianus	Aves	Passeriformes			0.6157	0.9927					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_013397295.1	Polioptila caerulea	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_013397295.1	Polioptila caerulea	Aves	Passeriformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.98	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Polioptila_caerulea|GCA_013397295.1
+ITPR3	GCA_013397295.1	Polioptila caerulea	Aves	Passeriformes	MP000051	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9732	2670	1	0	intact	2693	sweep_model	True	ok	ITPR3|Polioptila_caerulea|GCA_013397295.1
+ITPR1	GCA_013397395.1	Sinosuthora webbiana	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9842	2779	0	1	intact	2778	sweep_model	True	ok	ITPR1|Sinosuthora_webbiana|GCA_013397395.1
+ITPR2	GCA_013397395.1	Sinosuthora webbiana	Aves	Passeriformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9819	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Sinosuthora_webbiana|GCA_013397395.1
+ITPR3	GCA_013397395.1	Sinosuthora webbiana	Aves	Passeriformes	MP000052	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	0.9652	0.9551	2577	0	0	intact	2585	sweep_model	True	ok	ITPR3|Sinosuthora_webbiana|GCA_013397395.1
+ITPR1	GCA_013397465.1	Furnarius figulus	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9853	2779	0	0	intact	2780	sweep_model	True	ok	ITPR1|Furnarius_figulus|GCA_013397465.1
+ITPR2	GCA_013397465.1	Furnarius figulus	Aves	Passeriformes	MP000054	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9796	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Furnarius_figulus|GCA_013397465.1
+ITPR3	GCA_013397465.1	Furnarius figulus	Aves	Passeriformes	MP000055	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9888	2670	0	0	intact	2677	sweep_model	True	ok	ITPR3|Furnarius_figulus|GCA_013397465.1
+ITPR1	GCA_013397495.1	Mionectes macconnelli	Aves	Passeriformes			0.6189	0.9849					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_013397495.1	Mionectes macconnelli	Aves	Passeriformes	MP000045	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9819	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Mionectes_macconnelli|GCA_013397495.1
+ITPR3	GCA_013397495.1	Mionectes macconnelli	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR1	GCA_013397535.1	Pterocles burchelli	Aves	Pterocliformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9914	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Pterocles_burchelli|GCA_013397535.1
+ITPR2	GCA_013397535.1	Pterocles burchelli	Aves	Pterocliformes	MP000045	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9865	2669	0	0	intact	2668	sweep_model	True	ok	ITPR2|Pterocles_burchelli|GCA_013397535.1
+ITPR3	GCA_013397535.1	Pterocles burchelli	Aves	Pterocliformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9857	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Pterocles_burchelli|GCA_013397535.1
+ITPR1	GCA_013397635.1	Columbina picui	Aves	Columbiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9773	2779	0	0	intact	2765	sweep_model	True	ok	ITPR1|Columbina_picui|GCA_013397635.1
+ITPR2	GCA_013397635.1	Columbina picui	Aves	Columbiformes	MP000048	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9693	2669	0	0	intact	2665	sweep_model	True	ok	ITPR2|Columbina_picui|GCA_013397635.1
+ITPR3	GCA_013397635.1	Columbina picui	Aves	Columbiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR1	GCA_013397815.1	Aleadryas rufinucha	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.986	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Aleadryas_rufinucha|GCA_013397815.1
+ITPR2	GCA_013397815.1	Aleadryas rufinucha	Aves	Passeriformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	0.9956	0.9792	2688	0	0	intact	2687	sweep_model	True	ok	ITPR2|Aleadryas_rufinucha|GCA_013397815.1
+ITPR3	GCA_013397815.1	Aleadryas rufinucha	Aves	Passeriformes	MP000052	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	0.9652	0.9981	2577	0	0	intact	2577	sweep_model	True	ok	ITPR3|Aleadryas_rufinucha|GCA_013397815.1
+ITPR1	GCA_013397895.1	Origma solitaria	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9856	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Origma_solitaria|GCA_013397895.1
+ITPR2	GCA_013397895.1	Origma solitaria	Aves	Passeriformes	MP000054	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.982	2669	0	0	intact	2668	sweep_model	True	ok	ITPR2|Origma_solitaria|GCA_013397895.1
+ITPR3	GCA_013397895.1	Origma solitaria	Aves	Passeriformes			0.7067	0.9942					0	sweep_model	False	below_quality_bar(found_annotated)	
+ITPR1	GCA_013397955.1	Grantiella picta	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9867	2779	0	0	intact	2779	sweep_model	True	ok	ITPR1|Grantiella_picta|GCA_013397955.1
+ITPR2	GCA_013397955.1	Grantiella picta	Aves	Passeriformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.98	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Grantiella_picta|GCA_013397955.1
+ITPR3	GCA_013397955.1	Grantiella picta	Aves	Passeriformes	MP000052	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9819	2670	1	0	intact	2688	sweep_model	True	ok	ITPR3|Grantiella_picta|GCA_013397955.1
+ITPR1	GCA_013398125.1	Aegotheles bennettii	Aves	Caprimulgiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9899	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Aegotheles_bennettii|GCA_013398125.1
+ITPR2	GCA_013398125.1	Aegotheles bennettii	Aves	Caprimulgiformes			0.5063	0.9832					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013398125.1	Aegotheles bennettii	Aves	Caprimulgiformes			0.708	0.9857					0	sweep_model	False	below_quality_bar(found_annotated)	
+ITPR1	GCA_013398155.1	Pedionomus torquatus	Aves	Charadriiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9824	2779	0	0	intact	2779	sweep_model	True	ok	ITPR1|Pedionomus_torquatus|GCA_013398155.1
+ITPR2	GCA_013398155.1	Pedionomus torquatus	Aves	Charadriiformes	MP000047	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9809	2669	0	0	intact	2668	sweep_model	True	ok	ITPR2|Pedionomus_torquatus|GCA_013398155.1
+ITPR3	GCA_013398155.1	Pedionomus torquatus	Aves	Charadriiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9887	0.9871	2634	0	0	intact	2637	sweep_model	True	ok	ITPR3|Pedionomus_torquatus|GCA_013398155.1
+ITPR1	GCA_013398175.1	Climacteris rufus	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9813	2779	0	0	intact	2777	sweep_model	True	ok	ITPR1|Climacteris_rufus|GCA_013398175.1
+ITPR2	GCA_013398175.1	Climacteris rufus	Aves	Passeriformes	MP000049	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9763	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Climacteris_rufus|GCA_013398175.1
+ITPR3	GCA_013398175.1	Climacteris rufus	Aves	Passeriformes	MP000050	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9903	2670	0	0	intact	2677	sweep_model	True	ok	ITPR3|Climacteris_rufus|GCA_013398175.1
+ITPR1	GCA_013398455.1	Loxia curvirostra	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9806	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Loxia_curvirostra|GCA_013398455.1
+ITPR2	GCA_013398455.1	Loxia curvirostra	Aves	Passeriformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9789	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Loxia_curvirostra|GCA_013398455.1
+ITPR3	GCA_013398455.1	Loxia curvirostra	Aves	Passeriformes	MP000051	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9959	2670	0	0	intact	2670	sweep_model	True	ok	ITPR3|Loxia_curvirostra|GCA_013398455.1
+ITPR1	GCA_013398575.1	Certhia familiaris	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.823	0.9821	2287	0	0	intact	2286	sweep_model	True	ok	ITPR1|Certhia_familiaris|GCA_013398575.1
+ITPR2	GCA_013398575.1	Certhia familiaris	Aves	Passeriformes			0.7848	0.9802					0	sweep_model	False	below_quality_bar(found_unannotated)	
+ITPR3	GCA_013398575.1	Certhia familiaris	Aves	Passeriformes	MP000050	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.995	2670	1	0	intact	2670	sweep_model	True	ok	ITPR3|Certhia_familiaris|GCA_013398575.1
+ITPR1	GCA_013398615.1	Brachypodius melanocephalos	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9856	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Brachypodius_melanocephalos|GCA_013398615.1
+ITPR2	GCA_013398615.1	Brachypodius melanocephalos	Aves	Passeriformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.98	2700	0	0	intact	2703	sweep_model	True	ok	ITPR2|Brachypodius_melanocephalos|GCA_013398615.1
+ITPR3	GCA_013398615.1	Brachypodius melanocephalos	Aves	Passeriformes	MP000052	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9522	2670	1	0	intact	2606	sweep_model	True	ok	ITPR3|Brachypodius_melanocephalos|GCA_013398615.1
+ITPR1	GCA_013398795.1	Elachura formosa	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9838	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Elachura_formosa|GCA_013398795.1
+ITPR2	GCA_013398795.1	Elachura formosa	Aves	Passeriformes	MP000048	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9793	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Elachura_formosa|GCA_013398795.1
+ITPR3	GCA_013398795.1	Elachura formosa	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR1	GCA_013398835.1	Emberiza fucata	Aves	Passeriformes			0.6222	0.9902					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_013398835.1	Emberiza fucata	Aves	Passeriformes	MP000059	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9744	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Emberiza_fucata|GCA_013398835.1
+ITPR3	GCA_013398835.1	Emberiza fucata	Aves	Passeriformes	MP000060	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9066	2670	2	0	intact	2572	sweep_model	True	ok	ITPR3|Emberiza_fucata|GCA_013398835.1
+ITPR1	GCA_013398935.1	Ceuthmochares aereus	Aves	Cuculiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9856	2779	0	0	intact	2777	sweep_model	True	ok	ITPR1|Ceuthmochares_aereus|GCA_013398935.1
+ITPR2	GCA_013398935.1	Ceuthmochares aereus	Aves	Cuculiformes	MP000044	A0A672UP22|ITPR2|Strigops_habroptila	0.9963	0.973	2690	0	0	intact	2703	sweep_model	True	ok	ITPR2|Ceuthmochares_aereus|GCA_013398935.1
+ITPR3	GCA_013398935.1	Ceuthmochares aereus	Aves	Cuculiformes			0.4749	0.9535					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_013398955.1	Callaeas wilsoni	Aves	Passeriformes			0.6715	0.9861					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_013398955.1	Callaeas wilsoni	Aves	Passeriformes	MP000053	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9811	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Callaeas_wilsoni|GCA_013398955.1
+ITPR3	GCA_013398955.1	Callaeas wilsoni	Aves	Passeriformes			0.7457	0.998					0	sweep_model	False	below_quality_bar(found_annotated)	
+ITPR1	GCA_013398975.1	Catharus fuscescens	Aves	Passeriformes			0.6956	0.9778					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_013398975.1	Catharus fuscescens	Aves	Passeriformes	MP000061	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.98	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Catharus_fuscescens|GCA_013398975.1
+ITPR3	GCA_013398975.1	Catharus fuscescens	Aves	Passeriformes	MP000062	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9944	2670	0	0	intact	2670	sweep_model	True	ok	ITPR3|Catharus_fuscescens|GCA_013398975.1
+ITPR1	GCA_013399035.1	Quiscalus mexicanus	Aves	Passeriformes			0.6887	0.9667					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_013399035.1	Quiscalus mexicanus	Aves	Passeriformes			0.5615	0.9802					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013399035.1	Quiscalus mexicanus	Aves	Passeriformes	MP000059	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9935	2670	1	0	intact	2670	sweep_model	True	ok	ITPR3|Quiscalus_mexicanus|GCA_013399035.1
+ITPR1	GCA_013399075.1	Chloroceryle aenea	Aves	Coraciiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.991	0.9848	2754	0	1	intact	2762	sweep_model	True	ok	ITPR1|Chloroceryle_aenea|GCA_013399075.1
+ITPR2	GCA_013399075.1	Chloroceryle aenea	Aves	Coraciiformes			0.7715	0.9827					0	sweep_model	False	below_quality_bar(found_unannotated)	
+ITPR3	GCA_013399075.1	Chloroceryle aenea	Aves	Coraciiformes	MP000021	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.991	0.9753	2640	1	0	intact	2637	sweep_model	True	ok	ITPR3|Chloroceryle_aenea|GCA_013399075.1
+ITPR1	GCA_013399305.1	Rostratula benghalensis	Aves	Charadriiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9892	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Rostratula_benghalensis|GCA_013399305.1
+ITPR2	GCA_013399305.1	Rostratula benghalensis	Aves	Charadriiformes	MP000049	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9779	2669	0	0	intact	2668	sweep_model	True	ok	ITPR2|Rostratula_benghalensis|GCA_013399305.1
+ITPR3	GCA_013399305.1	Rostratula benghalensis	Aves	Charadriiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9887	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Rostratula_benghalensis|GCA_013399305.1
+ITPR1	GCA_013399395.1	Nyctiprogne leucopyga	Aves	Caprimulgiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.991	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Nyctiprogne_leucopyga|GCA_013399395.1
+ITPR2	GCA_013399395.1	Nyctiprogne leucopyga	Aves	Caprimulgiformes			0.7678	0.9301					0	sweep_model	False	below_quality_bar(found_unannotated)	
+ITPR3	GCA_013399395.1	Nyctiprogne leucopyga	Aves	Caprimulgiformes	MP000024	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9876	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Nyctiprogne_leucopyga|GCA_013399395.1
+ITPR1	GCA_013399455.1	Anthoscopus minutus	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9824	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Anthoscopus_minutus|GCA_013399455.1
+ITPR2	GCA_013399455.1	Anthoscopus minutus	Aves	Passeriformes			0.5941	0.9707					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013399455.1	Anthoscopus minutus	Aves	Passeriformes			0.5045	0.9941					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_013399495.1	Corythaixoides concolor	Aves	Musophagiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.9712	0.9915	2699	0	0	intact	2698	sweep_model	True	ok	ITPR1|Corythaixoides_concolor|GCA_013399495.1
+ITPR2	GCA_013399495.1	Corythaixoides concolor	Aves	Musophagiformes	MP000045	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9742	2669	0	0	intact	2672	sweep_model	True	ok	ITPR2|Corythaixoides_concolor|GCA_013399495.1
+ITPR3	GCA_013399495.1	Corythaixoides concolor	Aves	Musophagiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.988	2664	0	1	intact	2664	sweep_model	True	ok	ITPR3|Corythaixoides_concolor|GCA_013399495.1
+ITPR1	GCA_013399565.1	Podilymbus podiceps	Aves	Podicipediformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9903	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Podilymbus_podiceps|GCA_013399565.1
+ITPR2	GCA_013399565.1	Podilymbus podiceps	Aves	Podicipediformes			0.6622	0.9832					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013399565.1	Podilymbus podiceps	Aves	Podicipediformes	MP000024	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9906	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Podilymbus_podiceps|GCA_013399565.1
+ITPR1	GCA_013399735.1	Tyrannus savana	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.986	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Tyrannus_savana|GCA_013399735.1
+ITPR2	GCA_013399735.1	Tyrannus savana	Aves	Passeriformes			0.5733	0.9793					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013399735.1	Tyrannus savana	Aves	Passeriformes	MP000053	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9764	2670	1	0	intact	2697	sweep_model	True	ok	ITPR3|Tyrannus_savana|GCA_013399735.1
+ITPR1	GCA_013399775.1	Semnornis frantzii	Aves	Piciformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_013399775.1	Semnornis frantzii	Aves	Piciformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCA_013399775.1	Semnornis frantzii	Aves	Piciformes	MP000047	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9727	2670	0	1	intact	2674	sweep_model	True	ok	ITPR3|Semnornis_frantzii|GCA_013399775.1
+ITPR1	GCA_013399795.1	Zosterops hypoxanthus	Aves	Passeriformes			0.6956	0.9829					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_013399795.1	Zosterops hypoxanthus	Aves	Passeriformes	MP000066	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.98	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Zosterops_hypoxanthus|GCA_013399795.1
+ITPR3	GCA_013399795.1	Zosterops hypoxanthus	Aves	Passeriformes	MP000067	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	0.9809	0.9909	2619	0	0	intact	2627	sweep_model	True	ok	ITPR3|Zosterops_hypoxanthus|GCA_013399795.1
+ITPR1	GCA_013399855.1	Oxyruncus cristatus	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9881	2779	0	0	intact	2777	sweep_model	True	ok	ITPR1|Oxyruncus_cristatus|GCA_013399855.1
+ITPR2	GCA_013399855.1	Oxyruncus cristatus	Aves	Passeriformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9826	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Oxyruncus_cristatus|GCA_013399855.1
+ITPR3	GCA_013399855.1	Oxyruncus cristatus	Aves	Passeriformes	MP000052	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9854	2670	0	1	intact	2677	sweep_model	True	ok	ITPR3|Oxyruncus_cristatus|GCA_013399855.1
+ITPR1	GCA_013399895.1	Serilophus lunatus	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9819	2779	1	0	intact	2787	sweep_model	True	ok	ITPR1|Serilophus_lunatus|GCA_013399895.1
+ITPR2	GCA_013399895.1	Serilophus lunatus	Aves	Passeriformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9815	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Serilophus_lunatus|GCA_013399895.1
+ITPR3	GCA_013399895.1	Serilophus lunatus	Aves	Passeriformes	MP000051	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9873	2670	0	0	intact	2679	sweep_model	True	ok	ITPR3|Serilophus_lunatus|GCA_013399895.1
+ITPR1	GCA_013400075.1	Hippolais icterina	Aves	Passeriformes			0.5185	0.9806					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_013400075.1	Hippolais icterina	Aves	Passeriformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9801	2669	0	0	intact	2668	sweep_model	True	ok	ITPR2|Hippolais_icterina|GCA_013400075.1
+ITPR3	GCA_013400075.1	Hippolais icterina	Aves	Passeriformes	MP000052	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9944	2670	0	0	intact	2674	sweep_model	True	ok	ITPR3|Hippolais_icterina|GCA_013400075.1
+ITPR1	GCA_013400195.1	Aramus guarauna	Aves	Gruiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9917	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Aramus_guarauna|GCA_013400195.1
+ITPR2	GCA_013400195.1	Aramus guarauna	Aves	Gruiformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9856	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Aramus_guarauna|GCA_013400195.1
+ITPR3	GCA_013400195.1	Aramus guarauna	Aves	Gruiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9891	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Aramus_guarauna|GCA_013400195.1
+ITPR1	GCA_013400215.1	Cisticola juncidis	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9683	2779	0	0	intact	2752	sweep_model	True	ok	ITPR1|Cisticola_juncidis|GCA_013400215.1
+ITPR2	GCA_013400215.1	Cisticola juncidis	Aves	Passeriformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9798	2669	0	0	intact	2668	sweep_model	True	ok	ITPR2|Cisticola_juncidis|GCA_013400215.1
+ITPR3	GCA_013400215.1	Cisticola juncidis	Aves	Passeriformes	MP000052	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	0.9895	0.9853	2642	0	0	intact	2652	sweep_model	True	ok	ITPR3|Cisticola_juncidis|GCA_013400215.1
+ITPR1	GCA_013400415.1	Scytalopus superciliaris	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.9705	0.9867	2697	0	0	intact	2697	sweep_model	True	ok	ITPR1|Scytalopus_superciliaris|GCA_013400415.1
+ITPR2	GCA_013400415.1	Scytalopus superciliaris	Aves	Passeriformes	MP000049	A0A672UP22|ITPR2|Strigops_habroptila	0.9137	0.9765	2467	0	0	intact	2467	sweep_model	True	ok	ITPR2|Scytalopus_superciliaris|GCA_013400415.1
+ITPR3	GCA_013400415.1	Scytalopus superciliaris	Aves	Passeriformes	MP000050	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9854	2670	0	0	intact	2675	sweep_model	True	ok	ITPR3|Scytalopus_superciliaris|GCA_013400415.1
+ITPR1	GCA_013400445.1	Leiothrix lutea	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_013400445.1	Leiothrix lutea	Aves	Passeriformes	MP000053	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9819	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Leiothrix_lutea|GCA_013400445.1
+ITPR3	GCA_013400445.1	Leiothrix lutea	Aves	Passeriformes	MP000054	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9914	2670	0	0	intact	2678	sweep_model	True	ok	ITPR3|Leiothrix_lutea|GCA_013400445.1
+ITPR1	GCA_013400515.1	Erpornis zantholeuca	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9842	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Erpornis_zantholeuca|GCA_013400515.1
+ITPR2	GCA_013400515.1	Erpornis zantholeuca	Aves	Passeriformes	MP000066	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9805	2669	0	0	intact	2668	sweep_model	True	ok	ITPR2|Erpornis_zantholeuca|GCA_013400515.1
+ITPR3	GCA_013400515.1	Erpornis zantholeuca	Aves	Passeriformes	MP000067	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9954	2670	1	0	intact	2670	sweep_model	True	ok	ITPR3|Erpornis_zantholeuca|GCA_013400515.1
+ITPR1	GCA_013400585.1	Chloropsis cyanopogon	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9845	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Chloropsis_cyanopogon|GCA_013400585.1
+ITPR2	GCA_013400585.1	Chloropsis cyanopogon	Aves	Passeriformes	MP000068	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.979	2669	0	0	intact	2668	sweep_model	True	ok	ITPR2|Chloropsis_cyanopogon|GCA_013400585.1
+ITPR3	GCA_013400585.1	Chloropsis cyanopogon	Aves	Passeriformes	MP000069	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9899	2670	1	0	intact	2677	sweep_model	True	ok	ITPR3|Chloropsis_cyanopogon|GCA_013400585.1
+ITPR1	GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	Passeriformes	MP000031	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9973	2670	1	0	intact	2670	sweep_model	True	ok	ITPR3|Hypocryptadius_cinnamomeus|GCA_013400635.1
+ITPR1	GCA_013400655.1	Mystacornis crossleyi	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_013400655.1	Mystacornis crossleyi	Aves	Passeriformes			0.7374	0.9238					0	sweep_model	False	below_quality_bar(found_annotated)	
+ITPR3	GCA_013400655.1	Mystacornis crossleyi	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR1	GCA_013400675.1	Oxylabes madagascariensis	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_013400675.1	Oxylabes madagascariensis	Aves	Passeriformes			0.3204	0.6387					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013400675.1	Oxylabes madagascariensis	Aves	Passeriformes			0.1734	0.9914					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_013400695.1	Neodrepanis coruscans	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_013400695.1	Neodrepanis coruscans	Aves	Passeriformes			0.187	0.9743					0	sweep_model	False	below_quality_bar(fragment)	
+ITPR3	GCA_013400695.1	Neodrepanis coruscans	Aves	Passeriformes			0.1345	0.9805					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_013400735.1	Pomatostomus ruficeps	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_013400735.1	Pomatostomus ruficeps	Aves	Passeriformes			0.5607	0.9808					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013400735.1	Pomatostomus ruficeps	Aves	Passeriformes	MP000057	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9668	2670	1	0	intact	2668	sweep_model	True	ok	ITPR3|Pomatostomus_ruficeps|GCA_013400735.1
+ITPR1	GCA_013400815.1	Centropus bengalensis	Aves	Cuculiformes			0.5002	0.9906					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_013400815.1	Centropus bengalensis	Aves	Cuculiformes	MP000054	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9848	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Centropus_bengalensis|GCA_013400815.1
+ITPR3	GCA_013400815.1	Centropus bengalensis	Aves	Cuculiformes	MP000024	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9655	0.9833	2572	0	0	intact	2571	sweep_model	True	ok	ITPR3|Centropus_bengalensis|GCA_013400815.1
+ITPR1	GCA_013400855.1	Buphagus erythrorhynchus	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_013400855.1	Buphagus erythrorhynchus	Aves	Passeriformes			0.5981	0.8931					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013400855.1	Buphagus erythrorhynchus	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR1	GCA_013400895.1	Thalassarche chlororhynchos	Aves	Procellariiformes			0.7629	0.9914					0	sweep_model	False	below_quality_bar(found_annotated)	
+ITPR2	GCA_013400895.1	Thalassarche chlororhynchos	Aves	Procellariiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCA_013400895.1	Thalassarche chlororhynchos	Aves	Procellariiformes	MP000022	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9906	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Thalassarche_chlororhynchos|GCA_013400895.1
+ITPR1	GCA_013400915.1	Pardalotus punctatus	Aves	Passeriformes			0.4538	0.9857					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_013400915.1	Pardalotus punctatus	Aves	Passeriformes			0.4722	0.9804					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013400915.1	Pardalotus punctatus	Aves	Passeriformes			0.6157	0.9951					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_013400955.1	Drymodes brunneopygia	Aves	Passeriformes			0.706	0.9806					0	sweep_model	False	below_quality_bar(found_unannotated)	
+ITPR2	GCA_013400955.1	Drymodes brunneopygia	Aves	Passeriformes			0.6263	0.9704					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013400955.1	Drymodes brunneopygia	Aves	Passeriformes	MP000065	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	0.9652	0.9965	2577	0	0	intact	2577	sweep_model	True	ok	ITPR3|Drymodes_brunneopygia|GCA_013400955.1
+ITPR1	GCA_013400995.1	Oreotrochilus melanogaster	Aves	Apodiformes			0.5934	0.9915					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_013400995.1	Oreotrochilus melanogaster	Aves	Apodiformes			0.7311	0.9818					0	sweep_model	False	below_quality_bar(found_unannotated)	
+ITPR3	GCA_013400995.1	Oreotrochilus melanogaster	Aves	Apodiformes	MP000033	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9655	0.9567	2572	2	0	intact	2561	sweep_model	True	ok	ITPR3|Oreotrochilus_melanogaster|GCA_013400995.1
+ITPR1	GCA_013401035.1	Horornis vulcanius	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_013401035.1	Horornis vulcanius	Aves	Passeriformes			0.1804	0.8941					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013401035.1	Horornis vulcanius	Aves	Passeriformes			0.2019	0.9944					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_013401195.1	Pomatorhinus ruficollis	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCA_013401195.1	Pomatorhinus ruficollis	Aves	Passeriformes	MP000034	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9815	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Pomatorhinus_ruficollis|GCA_013401195.1
+ITPR3	GCA_013401195.1	Pomatorhinus ruficollis	Aves	Passeriformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR1	GCA_013401215.1	Atlantisia rogersi	Aves	Gruiformes			0.636	0.9903					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_013401215.1	Atlantisia rogersi	Aves	Gruiformes			0.2878	0.9768					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013401215.1	Atlantisia rogersi	Aves	Gruiformes			0.5315	0.9845					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_013401255.1	Urocolius indicus	Aves	Coliiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9881	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Urocolius_indicus|GCA_013401255.1
+ITPR2	GCA_013401255.1	Urocolius indicus	Aves	Coliiformes			0.6622	0.9787					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013401255.1	Urocolius indicus	Aves	Coliiformes			0.5757	0.9844					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_013401295.1	Glareola pratincola	Aves	Charadriiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9914	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Glareola_pratincola|GCA_013401295.1
+ITPR2	GCA_013401295.1	Glareola pratincola	Aves	Charadriiformes			0.7444	0.9856					0	sweep_model	False	below_quality_bar(found_unannotated)	
+ITPR3	GCA_013401295.1	Glareola pratincola	Aves	Charadriiformes			0.6107	0.9852					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_013401315.1	Balaeniceps rex	Aves	Pelecaniformes	MP000045	A0ABM4F3U0|ITPR1|Apteryx_mantelli	0.8793	0.9909	2418	0	0	intact	2418	sweep_model	True	ok	ITPR1|Balaeniceps_rex|GCA_013401315.1
+ITPR2	GCA_013401315.1	Balaeniceps rex	Aves	Pelecaniformes			0.4748	0.9119					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_013401315.1	Balaeniceps rex	Aves	Pelecaniformes	MP000020	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9125	0.9868	2431	0	0	intact	2431	sweep_model	True	ok	ITPR3|Balaeniceps_rex|GCA_013401315.1
+ITPR1	GCA_013401355.1	Ceyx cyanopectus	Aves	Coraciiformes			0.1979	0.9873					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_013401355.1	Ceyx cyanopectus	Aves	Coraciiformes			0.783	0.9782					0	sweep_model	False	below_quality_bar(found_unannotated)	
+ITPR3	GCA_013401355.1	Ceyx cyanopectus	Aves	Coraciiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR1	GCA_014281875.1	Nibea albiflora	Actinopteri		MP000094	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9595	2748	2	0	intact	2750	sweep_model	True	ok	ITPR1|Nibea_albiflora|GCA_014281875.1
+ITPR2	GCA_014281875.1	Nibea albiflora	Actinopteri		MP000096	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8663	2701	2	0	intact	2672	sweep_model	True	ok	ITPR2|Nibea_albiflora|GCA_014281875.1
+ITPR3	GCA_014281875.1	Nibea albiflora	Actinopteri		MP000097	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8823	2670	1	0	intact	2727	sweep_model	False	s15a_elevated_lesions	
+ITPR1	GCA_014363365.1	Leucopsar rothschildi	Aves	Passeriformes			0.4959	0.9753					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_014363365.1	Leucopsar rothschildi	Aves	Passeriformes			0.5363	0.982					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_014363365.1	Leucopsar rothschildi	Aves	Passeriformes			0.4052	0.9935					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_014839755.1	Sylvia borin	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9838	2779	0	0	intact	2779	sweep_model	True	ok	ITPR1|Sylvia_borin|GCA_014839755.1
+ITPR2	GCA_014839755.1	Sylvia borin	Aves	Passeriformes	MP000053	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9807	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Sylvia_borin|GCA_014839755.1
+ITPR3	GCA_014839755.1	Sylvia borin	Aves	Passeriformes	MP000054	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9925	2670	0	0	intact	2678	sweep_model	True	ok	ITPR3|Sylvia_borin|GCA_014839755.1
+ITPR1	GCA_015883425.2	Lamprotornis superbus	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9817	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Lamprotornis_superbus|GCA_015883425.2
+ITPR2	GCA_015883425.2	Lamprotornis superbus	Aves	Passeriformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9807	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Lamprotornis_superbus|GCA_015883425.2
+ITPR3	GCA_015883425.2	Lamprotornis superbus	Aves	Passeriformes	MP000051	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9959	2670	0	0	intact	2670	sweep_model	True	ok	ITPR3|Lamprotornis_superbus|GCA_015883425.2
+ITPR1	GCA_017639675.1	Aplochiton taeniatus	Actinopteri	Galaxiiformes	MP000065	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9274	2748	0	0	intact	2756	sweep_model	True	ok	ITPR1|Aplochiton_taeniatus|GCA_017639675.1
+ITPR2	GCA_017639675.1	Aplochiton taeniatus	Actinopteri	Galaxiiformes	MP000066	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8088	2701	0	0	intact	2685	sweep_model	True	ok	ITPR2|Aplochiton_taeniatus|GCA_017639675.1
+ITPR3	GCA_017639675.1	Aplochiton taeniatus	Actinopteri	Galaxiiformes	MP000068	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8678	2670	0	0	intact	2680	sweep_model	True	ok	ITPR3|Aplochiton_taeniatus|GCA_017639675.1
+ITPR1	GCA_018340635.1	Bothrops jararaca	Lepidosauria	Squamata	MP000045	A0A670JBK6|ITPR1|Podarcis_muralis	0.9701	0.9678	2665	1	1	intact	2665	sweep_model	True	ok	ITPR1|Bothrops_jararaca|GCA_018340635.1
+ITPR2	GCA_018340635.1	Bothrops jararaca	Lepidosauria	Squamata									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCA_018340635.1	Bothrops jararaca	Lepidosauria	Squamata	MP000048	A0A6J0TV85|ITPR3|Pogona_vitticeps	1.0	0.9468	2666	0	0	intact	2666	sweep_model	True	ok	ITPR3|Bothrops_jararaca|GCA_018340635.1
+ITPR1	GCA_019447015.1	Hymenochirus boettgeri	Amphibia	Anura	MP000007	A0A8J0T3U5|itpr1|Xenopus_tropicalis|ITPR1	1.0	0.7451	2743	5	2	elevated_lesions	2611	sweep_model	False	s15a_elevated_lesions	
+ITPR2	GCA_019447015.1	Hymenochirus boettgeri	Amphibia	Anura	MP000020	A0A6I8RGU0|itpr2|Xenopus_tropicalis|ITPR2	1.0	0.6135	2705	6	1	elevated_lesions	2495	sweep_model	False	s15a_elevated_lesions	
+ITPR3	GCA_019447015.1	Hymenochirus boettgeri	Amphibia	Anura	MP000028	A0A8J0SYK9|itpr3|Xenopus_tropicalis|ITPR3	1.0	0.8874	2673	2	0	intact	2665	sweep_model	True	ok	ITPR3|Hymenochirus_boettgeri|GCA_019447015.1
+ITPR1	GCA_020745705.1	Hemiprocne comata	Aves	Apodiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9899	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Hemiprocne_comata|GCA_020745705.1
+ITPR2	GCA_020745705.1	Hemiprocne comata	Aves	Apodiformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9793	2700	1	0	intact	2682	sweep_model	True	ok	ITPR2|Hemiprocne_comata|GCA_020745705.1
+ITPR3	GCA_020745705.1	Hemiprocne comata	Aves	Apodiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9865	2664	3	0	intact	2664	sweep_model	True	ok	ITPR3|Hemiprocne_comata|GCA_020745705.1
+ITPR1	GCA_022829145.1	Albula goreensis	Actinopteri	Albuliformes	MP000077	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9123	2748	2	0	intact	2752	sweep_model	True	ok	ITPR1|Albula_goreensis|GCA_022829145.1
+ITPR2	GCA_022829145.1	Albula goreensis	Actinopteri	Albuliformes	MP000085	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.8055	2700	1	0	intact	2684	sweep_model	True	ok	ITPR2|Albula_goreensis|GCA_022829145.1
+ITPR3	GCA_022829145.1	Albula goreensis	Actinopteri	Albuliformes	MP000082	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8328	2670	3	0	intact	2694	sweep_model	True	ok	ITPR3|Albula_goreensis|GCA_022829145.1
+ITPR1	GCA_023764695.1	Pygathrix nigripes	Mammalia	Primates	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9956	2758	1	0	intact	2757	sweep_model	True	ok	ITPR1|Pygathrix_nigripes|GCA_023764695.1
+ITPR2	GCA_023764695.1	Pygathrix nigripes	Mammalia	Primates	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9907	2701	0	0	intact	2700	sweep_model	True	ok	ITPR2|Pygathrix_nigripes|GCA_023764695.1
+ITPR3	GCA_023764695.1	Pygathrix nigripes	Mammalia	Primates	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9731	2671	3	0	intact	2689	sweep_model	True	ok	ITPR3|Pygathrix_nigripes|GCA_023764695.1
+ITPR1	GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	Perciformes	MP000083	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9363	2748	9	0	elevated_lesions	2767	sweep_model	False	s15a_elevated_lesions	
+ITPR2	GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	Perciformes	MP000085	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8615	2701	3	0	intact	2692	sweep_model	True	ok	ITPR2|Chaenocephalus_aceratus|GCA_023974075.1
+ITPR3	GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	Perciformes			0.6933	0.8689					0	sweep_model	False	below_quality_bar(fragment)	
+ITPR1	GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	Gadiformes	MP000085	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9279	2748	1	0	intact	2760	sweep_model	True	ok	ITPR1|Muraenolepis_orangiensis|GCA_027704905.1
+ITPR2	GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	Gadiformes	MP000087	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8234	2701	0	0	intact	2687	sweep_model	True	ok	ITPR2|Muraenolepis_orangiensis|GCA_027704905.1
+ITPR3	GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	Gadiformes	MP000090	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8403	2670	0	0	intact	2659	sweep_model	True	ok	ITPR3|Muraenolepis_orangiensis|GCA_027704905.1
+ITPR1	GCA_028571685.1	Heterohyrax brucei	Mammalia	Hyracoidea	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9837	2758	0	0	intact	2757	sweep_model	True	ok	ITPR1|Heterohyrax_brucei|GCA_028571685.1
+ITPR2	GCA_028571685.1	Heterohyrax brucei	Mammalia	Hyracoidea	MP000007	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9722	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Heterohyrax_brucei|GCA_028571685.1
+ITPR3	GCA_028571685.1	Heterohyrax brucei	Mammalia	Hyracoidea	MP000015	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9708	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Heterohyrax_brucei|GCA_028571685.1
+ITPR1	GCA_029706075.1	Aldrovandia affinis	Actinopteri	Notacanthiformes	MP000077	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.892	2748	0	1	intact	2745	sweep_model	True	ok	ITPR1|Aldrovandia_affinis|GCA_029706075.1
+ITPR2	GCA_029706075.1	Aldrovandia affinis	Actinopteri	Notacanthiformes	MP000079	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.7976	2701	1	0	intact	2673	sweep_model	True	ok	ITPR2|Aldrovandia_affinis|GCA_029706075.1
+ITPR3	GCA_029706075.1	Aldrovandia affinis	Actinopteri	Notacanthiformes	MP000082	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8241	2670	4	0	intact	2662	sweep_model	True	ok	ITPR3|Aldrovandia_affinis|GCA_029706075.1
+ITPR1	GCA_031216635.1	Dissostichus eleginoides	Actinopteri	Perciformes	MP000081	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9535	2748	4	0	intact	2737	sweep_model	False	s15a_elevated_lesions	
+ITPR2	GCA_031216635.1	Dissostichus eleginoides	Actinopteri	Perciformes	MP000083	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.863	2701	1	0	intact	2690	sweep_model	True	ok	ITPR2|Dissostichus_eleginoides|GCA_031216635.1
+ITPR3	GCA_031216635.1	Dissostichus eleginoides	Actinopteri	Perciformes	MP000085	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8884	2670	2	0	intact	2686	sweep_model	True	ok	ITPR3|Dissostichus_eleginoides|GCA_031216635.1
+ITPR1	GCA_031835075.1	Saguinus oedipus	Mammalia	Primates	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9924	2758	0	0	intact	2756	sweep_model	True	ok	ITPR1|Saguinus_oedipus|GCA_031835075.1
+ITPR2	GCA_031835075.1	Saguinus oedipus	Mammalia	Primates	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9904	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Saguinus_oedipus|GCA_031835075.1
+ITPR3	GCA_031835075.1	Saguinus oedipus	Mammalia	Primates	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9869	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Saguinus_oedipus|GCA_031835075.1
+ITPR1	GCA_032275445.1	Crypturellus soui	Aves	Tinamiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9719	2779	0	0	intact	2766	sweep_model	True	ok	ITPR1|Crypturellus_soui|GCA_032275445.1
+ITPR2	GCA_032275445.1	Crypturellus soui	Aves	Tinamiformes	MP000010	F1P1X4|ITPR2|Gallus_gallus|ITPR2	1.0	0.9804	2700	0	0	intact	2700	sweep_model	True	ok	ITPR2|Crypturellus_soui|GCA_032275445.1
+ITPR3	GCA_032275445.1	Crypturellus soui	Aves	Tinamiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9654	2664	0	0	intact	2681	sweep_model	True	ok	ITPR3|Crypturellus_soui|GCA_032275445.1
+ITPR1	GCA_033238685.1	Lates japonicus	Actinopteri		MP000075	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.8541	2748	7	0	elevated_lesions	2748	sweep_model	False	s15a_elevated_lesions	
+ITPR2	GCA_033238685.1	Lates japonicus	Actinopteri		MP000080	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.5799	2701	19	1	elevated_lesions	2606	sweep_model	False	s15a_elevated_lesions	
+ITPR3	GCA_033238685.1	Lates japonicus	Actinopteri		MP000082	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9058	2670	3	0	intact	2686	sweep_model	False	s15a_elevated_lesions	
+ITPR1	GCA_035590135.1	Circaetus pectoralis	Aves	Accipitriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9924	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Circaetus_pectoralis|GCA_035590135.1
+ITPR2	GCA_035590135.1	Circaetus pectoralis	Aves	Accipitriformes	MP000053	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9884	2669	0	0	intact	2668	sweep_model	True	ok	ITPR2|Circaetus_pectoralis|GCA_035590135.1
+ITPR3	GCA_035590135.1	Circaetus pectoralis	Aves	Accipitriformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9899	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Circaetus_pectoralis|GCA_035590135.1
+ITPR1	GCA_036247105.2	Cirrhinus mrigala	Actinopteri	Cypriniformes	MP000009	A0A8M2BDG0|itpr1a|Danio_rerio|ITPR1	1.0	0.9691	2711	0	0	intact	2712	sweep_model	True	ok	ITPR1|Cirrhinus_mrigala|GCA_036247105.2
+ITPR2	GCA_036247105.2	Cirrhinus mrigala	Actinopteri	Cypriniformes	MP000029	A0A8M9PQQ3|itpr2|Danio_rerio|ITPR2	1.0	0.9288	2665	0	0	intact	2690	sweep_model	True	ok	ITPR2|Cirrhinus_mrigala|GCA_036247105.2
+ITPR3	GCA_036247105.2	Cirrhinus mrigala	Actinopteri	Cypriniformes	MP000046	A0A8M6Z266|itpr3|Danio_rerio|ITPR3	1.0	0.9425	2635	0	0	intact	2641	sweep_model	True	ok	ITPR3|Cirrhinus_mrigala|GCA_036247105.2
+ITPR1	GCA_036250305.1	Ataeniobius toweri	Actinopteri	Cyprinodontiformes			0.4967	0.9116					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_036250305.1	Ataeniobius toweri	Actinopteri	Cyprinodontiformes			0.3688	0.8064					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_036250305.1	Ataeniobius toweri	Actinopteri	Cyprinodontiformes			0.5712	0.909					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_036250325.1	Characodon lateralis	Actinopteri	Cyprinodontiformes			0.4949	0.9128					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_036250325.1	Characodon lateralis	Actinopteri	Cyprinodontiformes			0.6312	0.8172					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_036250325.1	Characodon lateralis	Actinopteri	Cyprinodontiformes			0.3618	0.9059					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_040091285.1	Ameca splendens	Actinopteri	Cyprinodontiformes			0.4967	0.9088					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_040091285.1	Ameca splendens	Actinopteri	Cyprinodontiformes			0.3688	0.8093					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_040091285.1	Ameca splendens	Actinopteri	Cyprinodontiformes			0.4869	0.9093					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_040091305.1	Ilyodon furcidens	Actinopteri	Cyprinodontiformes			0.4967	0.9116					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_040091305.1	Ilyodon furcidens	Actinopteri	Cyprinodontiformes			0.3595	0.7992					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_040091305.1	Ilyodon furcidens	Actinopteri	Cyprinodontiformes			0.306	0.9078					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_040091325.1	Goodea atripinnis	Actinopteri	Cyprinodontiformes			0.4967	0.9088					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_040091325.1	Goodea atripinnis	Actinopteri	Cyprinodontiformes			0.3688	0.8083					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_040091325.1	Goodea atripinnis	Actinopteri	Cyprinodontiformes			0.306	0.9114					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_040091335.1	Xenoophorus captivus	Actinopteri	Cyprinodontiformes			0.3402	0.8947					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_040091335.1	Xenoophorus captivus	Actinopteri	Cyprinodontiformes			0.5065	0.7882					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_040091335.1	Xenoophorus captivus	Actinopteri	Cyprinodontiformes			0.306	0.9102					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_040091345.1	Xenotaenia resolanae	Actinopteri	Cyprinodontiformes			0.4967	0.9116					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_040091345.1	Xenotaenia resolanae	Actinopteri	Cyprinodontiformes			0.3688	0.8064					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_040091345.1	Xenotaenia resolanae	Actinopteri	Cyprinodontiformes			0.5622	0.9068					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_043380575.1	Atractosteus spatula	Actinopteri	Semionotiformes	MP000053	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9042	2748	0	0	intact	2737	sweep_model	True	ok	ITPR1|Atractosteus_spatula|GCA_043380575.1
+ITPR2	GCA_043380575.1	Atractosteus spatula	Actinopteri	Semionotiformes	MP000058	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.8197	2700	0	0	intact	2683	sweep_model	True	ok	ITPR2|Atractosteus_spatula|GCA_043380575.1
+ITPR3	GCA_043380575.1	Atractosteus spatula	Actinopteri	Semionotiformes	MP000056	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8361	2670	0	0	intact	2667	sweep_model	True	ok	ITPR3|Atractosteus_spatula|GCA_043380575.1
+ITPR1	GCA_046255725.1	Amblyopsis spelaea	Actinopteri	Percopsiformes	MP000088	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9386	2748	0	0	intact	2745	sweep_model	True	ok	ITPR1|Amblyopsis_spelaea|GCA_046255725.1
+ITPR2	GCA_046255725.1	Amblyopsis spelaea	Actinopteri	Percopsiformes	MP000090	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8094	2701	1	0	intact	2680	sweep_model	True	ok	ITPR2|Amblyopsis_spelaea|GCA_046255725.1
+ITPR3	GCA_046255725.1	Amblyopsis spelaea	Actinopteri	Percopsiformes	MP000093	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8624	2670	0	0	intact	2673	sweep_model	True	ok	ITPR3|Amblyopsis_spelaea|GCA_046255725.1
+ITPR1	GCA_047511595.1	Polymixia lowei	Actinopteri	Polymixiiformes	MP000083	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9458	2748	0	0	intact	2748	sweep_model	True	ok	ITPR1|Polymixia_lowei|GCA_047511595.1
+ITPR2	GCA_047511595.1	Polymixia lowei	Actinopteri	Polymixiiformes	MP000085	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	0.9956	0.8559	2689	1	0	intact	2717	sweep_model	True	ok	ITPR2|Polymixia_lowei|GCA_047511595.1
+ITPR3	GCA_047511595.1	Polymixia lowei	Actinopteri	Polymixiiformes	MP000087	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8277	2670	1	0	intact	2647	sweep_model	True	ok	ITPR3|Polymixia_lowei|GCA_047511595.1
+ITPR1	GCA_048126345.2	Notoryctes typhlops	Mammalia	Notoryctemorphia	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.972	2749	0	0	intact	2749	sweep_model	True	ok	ITPR1|Notoryctes_typhlops|GCA_048126345.2
+ITPR2	GCA_048126345.2	Notoryctes typhlops	Mammalia	Notoryctemorphia	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9467	2701	0	0	intact	2698	sweep_model	True	ok	ITPR2|Notoryctes_typhlops|GCA_048126345.2
+ITPR3	GCA_048126345.2	Notoryctes typhlops	Mammalia	Notoryctemorphia	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9394	2671	0	0	intact	2668	sweep_model	True	ok	ITPR3|Notoryctes_typhlops|GCA_048126345.2
+ITPR1	GCA_048569125.1	Diretmus argenteus	Actinopteri	Trachichthyiformes	MP000093	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9451	2748	0	0	intact	2762	sweep_model	True	ok	ITPR1|Diretmus_argenteus|GCA_048569125.1
+ITPR2	GCA_048569125.1	Diretmus argenteus	Actinopteri	Trachichthyiformes	MP000095	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8557	2701	1	0	intact	2703	sweep_model	True	ok	ITPR2|Diretmus_argenteus|GCA_048569125.1
+ITPR3	GCA_048569125.1	Diretmus argenteus	Actinopteri	Trachichthyiformes	MP000097	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8739	2670	0	0	intact	2676	sweep_model	True	ok	ITPR3|Diretmus_argenteus|GCA_048569125.1
+ITPR1	GCA_050084785.1	Liparis tanakae	Actinopteri	Perciformes	MP000083	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9435	2748	0	0	intact	2755	sweep_model	True	ok	ITPR1|Liparis_tanakae|GCA_050084785.1
+ITPR2	GCA_050084785.1	Liparis tanakae	Actinopteri	Perciformes	MP000085	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	0.9981	0.8572	2696	2	0	intact	2688	sweep_model	True	ok	ITPR2|Liparis_tanakae|GCA_050084785.1
+ITPR3	GCA_050084785.1	Liparis tanakae	Actinopteri	Perciformes	MP000088	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.883	2670	0	0	intact	2680	sweep_model	True	ok	ITPR3|Liparis_tanakae|GCA_050084785.1
+ITPR1	GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	Lepidogalaxiiformes			0.4312	0.9055					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	Lepidogalaxiiformes			0.1126	0.8371					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	Lepidogalaxiiformes			0.1468	0.6778					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_054084135.1	Copsychus sechellarum	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9773	2779	0	0	intact	2776	sweep_model	True	ok	ITPR1|Copsychus_sechellarum|GCA_054084135.1
+ITPR2	GCA_054084135.1	Copsychus sechellarum	Aves	Passeriformes	MP000049	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9804	2700	0	0	intact	2697	sweep_model	True	ok	ITPR2|Copsychus_sechellarum|GCA_054084135.1
+ITPR3	GCA_054084135.1	Copsychus sechellarum	Aves	Passeriformes	MP000050	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9959	2670	0	0	intact	2670	sweep_model	True	ok	ITPR3|Copsychus_sechellarum|GCA_054084135.1
+ITPR1	GCA_054099775.1	Steatornis caripensis	Aves	Caprimulgiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9899	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Steatornis_caripensis|GCA_054099775.1
+ITPR2	GCA_054099775.1	Steatornis caripensis	Aves	Caprimulgiformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.987	2700	0	0	intact	2700	sweep_model	True	ok	ITPR2|Steatornis_caripensis|GCA_054099775.1
+ITPR3	GCA_054099775.1	Steatornis caripensis	Aves	Caprimulgiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9895	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Steatornis_caripensis|GCA_054099775.1
+ITPR1	GCA_054644205.1	Lestoros inca	Mammalia	Paucituberculata	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.9705	2749	0	0	intact	2749	sweep_model	True	ok	ITPR1|Lestoros_inca|GCA_054644205.1
+ITPR2	GCA_054644205.1	Lestoros inca	Mammalia	Paucituberculata	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.95	2701	0	0	intact	2698	sweep_model	True	ok	ITPR2|Lestoros_inca|GCA_054644205.1
+ITPR3	GCA_054644205.1	Lestoros inca	Mammalia	Paucituberculata	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9371	2671	0	0	intact	2668	sweep_model	True	ok	ITPR3|Lestoros_inca|GCA_054644205.1
+ITPR1	GCA_054883175.1	Datnioides polota	Actinopteri	Lobotiformes	MP000085	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9659	2748	0	0	intact	2741	sweep_model	True	ok	ITPR1|Datnioides_polota|GCA_054883175.1
+ITPR2	GCA_054883175.1	Datnioides polota	Actinopteri	Lobotiformes	MP000087	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8773	2701	1	0	intact	2691	sweep_model	True	ok	ITPR2|Datnioides_polota|GCA_054883175.1
+ITPR3	GCA_054883175.1	Datnioides polota	Actinopteri	Lobotiformes	MP000088	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9131	2670	0	0	intact	2691	sweep_model	True	ok	ITPR3|Datnioides_polota|GCA_054883175.1
+ITPR1	GCA_054883375.1	Arapaima gigas	Actinopteri	Osteoglossiformes	MP000076	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.909	2748	0	0	intact	2741	sweep_model	True	ok	ITPR1|Arapaima_gigas|GCA_054883375.1
+ITPR2	GCA_054883375.1	Arapaima gigas	Actinopteri	Osteoglossiformes	MP000013	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.7795	2701	0	1	intact	2689	sweep_model	True	ok	ITPR2|Arapaima_gigas|GCA_054883375.1
+ITPR3	GCA_054883375.1	Arapaima gigas	Actinopteri	Osteoglossiformes	MP000082	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8292	2670	0	0	intact	2667	sweep_model	True	ok	ITPR3|Arapaima_gigas|GCA_054883375.1
+ITPR1	GCA_056506795.1	Pristigenys meyeri	Actinopteri	Priacanthiformes	MP000085	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9584	2748	0	0	intact	2762	sweep_model	True	ok	ITPR1|Pristigenys_meyeri|GCA_056506795.1
+ITPR2	GCA_056506795.1	Pristigenys meyeri	Actinopteri	Priacanthiformes	MP000087	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8771	2701	2	0	intact	2706	sweep_model	True	ok	ITPR2|Pristigenys_meyeri|GCA_056506795.1
+ITPR3	GCA_056506795.1	Pristigenys meyeri	Actinopteri	Priacanthiformes	MP000088	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.91	2670	0	0	intact	2689	sweep_model	True	ok	ITPR3|Pristigenys_meyeri|GCA_056506795.1
+ITPR1	GCA_056776345.1	Spizella passerina	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9827	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Spizella_passerina|GCA_056776345.1
+ITPR2	GCA_056776345.1	Spizella passerina	Aves	Passeriformes	MP000053	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9807	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Spizella_passerina|GCA_056776345.1
+ITPR3	GCA_056776345.1	Spizella passerina	Aves	Passeriformes	MP000054	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9946	2670	1	0	intact	2670	sweep_model	True	ok	ITPR3|Spizella_passerina|GCA_056776345.1
+ITPR1	GCA_056783565.1	Hiodon alosoides	Actinopteri	Hiodontiformes	MP000085	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9129	2748	0	0	intact	2742	sweep_model	True	ok	ITPR1|Hiodon_alosoides|GCA_056783565.1
+ITPR2	GCA_056783565.1	Hiodon alosoides	Actinopteri	Hiodontiformes	MP000087	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.792	2701	0	0	intact	2677	sweep_model	True	ok	ITPR2|Hiodon_alosoides|GCA_056783565.1
+ITPR3	GCA_056783565.1	Hiodon alosoides	Actinopteri	Hiodontiformes	MP000091	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8347	2670	0	0	intact	2658	sweep_model	True	ok	ITPR3|Hiodon_alosoides|GCA_056783565.1
+ITPR1	GCA_056783665.1	Albula glossodonta	Actinopteri	Albuliformes	MP000077	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9103	2748	0	0	intact	2733	sweep_model	True	ok	ITPR1|Albula_glossodonta|GCA_056783665.1
+ITPR2	GCA_056783665.1	Albula glossodonta	Actinopteri	Albuliformes	MP000021	F1P1X4|ITPR2|Gallus_gallus|ITPR2	1.0	0.8079	2700	0	0	intact	2688	sweep_model	True	ok	ITPR2|Albula_glossodonta|GCA_056783665.1
+ITPR3	GCA_056783665.1	Albula glossodonta	Actinopteri	Albuliformes	MP000082	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8455	2670	0	0	intact	2667	sweep_model	True	ok	ITPR3|Albula_glossodonta|GCA_056783665.1
+ITPR1	GCA_056824565.1	Stylephorus chordatus	Actinopteri	Stylephoriformes	MP000085	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9414	2748	0	0	intact	2732	sweep_model	True	ok	ITPR1|Stylephorus_chordatus|GCA_056824565.1
+ITPR2	GCA_056824565.1	Stylephorus chordatus	Actinopteri	Stylephoriformes	MP000087	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8119	2701	1	2	intact	2679	sweep_model	True	ok	ITPR2|Stylephorus_chordatus|GCA_056824565.1
+ITPR3	GCA_056824565.1	Stylephorus chordatus	Actinopteri	Stylephoriformes	MP000090	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8361	2670	0	0	intact	2675	sweep_model	True	ok	ITPR3|Stylephorus_chordatus|GCA_056824565.1
+ITPR1	GCA_056824585.1	Alepocephalus tenebrosus	Actinopteri	Alepocephaliformes	MP000009	A0A8M2BDG0|itpr1a|Danio_rerio|ITPR1	1.0	0.8932	2711	0	0	intact	2730	sweep_model	True	ok	ITPR1|Alepocephalus_tenebrosus|GCA_056824585.1
+ITPR2	GCA_056824585.1	Alepocephalus tenebrosus	Actinopteri	Alepocephaliformes	MP000029	A0A8M9PQQ3|itpr2|Danio_rerio|ITPR2	1.0	0.8097	2665	0	0	intact	2695	sweep_model	True	ok	ITPR2|Alepocephalus_tenebrosus|GCA_056824585.1
+ITPR3	GCA_056824585.1	Alepocephalus tenebrosus	Actinopteri	Alepocephaliformes	MP000083	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8486	2670	1	0	intact	2654	sweep_model	True	ok	ITPR3|Alepocephalus_tenebrosus|GCA_056824585.1
+ITPR1	GCA_057876775.1	Echinorhinus cookei	Chondrichthyes	Echinorhiniformes	MP000053	A0ABM4F3U0|ITPR1|Apteryx_mantelli	1.0	0.8767	2750	0	0	intact	2759	sweep_model	True	ok	ITPR1|Echinorhinus_cookei|GCA_057876775.1
+ITPR2	GCA_057876775.1	Echinorhinus cookei	Chondrichthyes	Echinorhiniformes	MP000055	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.8127	2700	0	0	intact	2703	sweep_model	True	ok	ITPR2|Echinorhinus_cookei|GCA_057876775.1
+ITPR3	GCA_057876775.1	Echinorhinus cookei	Chondrichthyes	Echinorhiniformes	MP000032#102	A0A4W3GWE7|ITPR3|Callorhinchus_milii	1.0	0.8534	2630	1	1	intact	0	sweep_model	False	no_translation	
+ITPR1	GCA_058224745.1	Acrocephalus arundinaceus	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9842	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Acrocephalus_arundinaceus|GCA_058224745.1
+ITPR2	GCA_058224745.1	Acrocephalus arundinaceus	Aves	Passeriformes	MP000052	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9819	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Acrocephalus_arundinaceus|GCA_058224745.1
+ITPR3	GCA_058224745.1	Acrocephalus arundinaceus	Aves	Passeriformes	MP000053	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9948	2670	0	0	intact	2674	sweep_model	True	ok	ITPR3|Acrocephalus_arundinaceus|GCA_058224745.1
+ITPR1	GCA_058707665.1	Platax teira	Actinopteri	Ephippiformes	MP000084	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9612	2748	0	0	intact	2755	sweep_model	True	ok	ITPR1|Platax_teira|GCA_058707665.1
+ITPR2	GCA_058707665.1	Platax teira	Actinopteri	Ephippiformes	MP000086	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8696	2701	0	0	intact	2728	sweep_model	True	ok	ITPR2|Platax_teira|GCA_058707665.1
+ITPR3	GCA_058707665.1	Platax teira	Actinopteri	Ephippiformes	MP000087	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9105	2670	0	0	intact	2691	sweep_model	True	ok	ITPR3|Platax_teira|GCA_058707665.1
+ITPR1	GCA_900312595.1	Guentherus altivela	Actinopteri	Ateleopodiformes			0.1739	0.9289					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCA_900312595.1	Guentherus altivela	Actinopteri	Ateleopodiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCA_900312595.1	Guentherus altivela	Actinopteri	Ateleopodiformes			0.109	0.8454					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_951230385.1	Staurois parvus	Amphibia	Anura	MP000004	A0A8J0T3U5|itpr1|Xenopus_tropicalis|ITPR1	0.9606	0.9278	2635	11	0	elevated_lesions	2638	sweep_model	False	s15a_elevated_lesions	
+ITPR2	GCA_951230385.1	Staurois parvus	Amphibia	Anura			0.4935	0.9412					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCA_951230385.1	Staurois parvus	Amphibia	Anura			0.6955	0.8606					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCA_965364685.1	Capros aper	Actinopteri	Caproiformes	MP000083	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9556	2748	0	0	intact	2732	sweep_model	True	ok	ITPR1|Capros_aper|GCA_965364685.1
+ITPR2	GCA_965364685.1	Capros aper	Actinopteri	Caproiformes	MP000085	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8634	2701	0	1	intact	2705	sweep_model	True	ok	ITPR2|Capros_aper|GCA_965364685.1
+ITPR3	GCA_965364685.1	Capros aper	Actinopteri	Caproiformes	MP000086	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	0.9895	0.9011	2642	1	0	intact	2660	sweep_model	True	ok	ITPR3|Capros_aper|GCA_965364685.1
+ITPR1	GCA_980438365.1	Acanthurus tractus	Actinopteri	Acanthuriformes	MP000087	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9618	2748	0	0	intact	2735	sweep_model	True	ok	ITPR1|Acanthurus_tractus|GCA_980438365.1
+ITPR2	GCA_980438365.1	Acanthurus tractus	Actinopteri	Acanthuriformes	MP000089	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8714	2701	1	0	intact	2693	sweep_model	True	ok	ITPR2|Acanthurus_tractus|GCA_980438365.1
+ITPR3	GCA_980438365.1	Acanthurus tractus	Actinopteri	Acanthuriformes	MP000090	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9056	2670	0	0	intact	2691	sweep_model	True	ok	ITPR3|Acanthurus_tractus|GCA_980438365.1
+ITPR1	GCA_984656905.1	Parequula melbournensis	Actinopteri	Gerreiformes	MP000083	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9601	2748	0	0	intact	2755	sweep_model	True	ok	ITPR1|Parequula_melbournensis|GCA_984656905.1
+ITPR2	GCA_984656905.1	Parequula melbournensis	Actinopteri	Gerreiformes	MP000085	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8743	2701	1	0	intact	2687	sweep_model	True	ok	ITPR2|Parequula_melbournensis|GCA_984656905.1
+ITPR3	GCA_984656905.1	Parequula melbournensis	Actinopteri	Gerreiformes	MP000086	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9076	2670	0	0	intact	2695	sweep_model	True	ok	ITPR3|Parequula_melbournensis|GCA_984656905.1
+ITPR1	GCA_987193245.1	Pontoporia blainvillei	Mammalia	Artiodactyla	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9786	2758	0	0	intact	2762	sweep_model	True	ok	ITPR1|Pontoporia_blainvillei|GCA_987193245.1
+ITPR2	GCA_987193245.1	Pontoporia blainvillei	Mammalia	Artiodactyla	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9693	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Pontoporia_blainvillei|GCA_987193245.1
+ITPR3	GCA_987193245.1	Pontoporia blainvillei	Mammalia	Artiodactyla	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9682	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Pontoporia_blainvillei|GCA_987193245.1
+ITPR1	GCF_000001405.40	Homo sapiens	Mammalia	Primates	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9993	2758	0	0	intact	2758	sweep_model	True	ok	ITPR1|Homo_sapiens|GCF_000001405.40
+ITPR2	GCF_000001405.40	Homo sapiens	Mammalia	Primates	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	1.0	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Homo_sapiens|GCF_000001405.40
+ITPR3	GCF_000001405.40	Homo sapiens	Mammalia	Primates	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	1.0	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Homo_sapiens|GCF_000001405.40
+ITPR1	GCF_000001635.27	Mus musculus	Mammalia	Rodentia	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.9989	2749	0	0	intact	2751	sweep_model	True	ok	ITPR1|Mus_musculus|GCF_000001635.27
+ITPR2	GCF_000001635.27	Mus musculus	Mammalia	Rodentia	MP000009	Q9Z329|Itpr2|Mus_musculus|ITPR2	1.0	1.0	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Mus_musculus|GCF_000001635.27
+ITPR3	GCF_000001635.27	Mus musculus	Mammalia	Rodentia	MP000017	P70227|Itpr3|Mus_musculus|ITPR3	1.0	1.0	2670	0	0	intact	2670	sweep_model	True	ok	ITPR3|Mus_musculus|GCF_000001635.27
+ITPR1	GCF_000004195.4	Xenopus tropicalis	Amphibia	Anura	MP000004	A0A8J0T3U5|itpr1|Xenopus_tropicalis|ITPR1	1.0	0.9993	2743	0	0	intact	2743	sweep_model	True	ok	ITPR1|Xenopus_tropicalis|GCF_000004195.4
+ITPR2	GCF_000004195.4	Xenopus tropicalis	Amphibia	Anura	MP000014	A0A6I8RGU0|itpr2|Xenopus_tropicalis|ITPR2	1.0	1.0	2705	0	0	intact	2705	sweep_model	True	ok	ITPR2|Xenopus_tropicalis|GCF_000004195.4
+ITPR3	GCF_000004195.4	Xenopus tropicalis	Amphibia	Anura	MP000026	A0A8J0SYK9|itpr3|Xenopus_tropicalis|ITPR3	1.0	1.0	2673	0	0	intact	2673	sweep_model	True	ok	ITPR3|Xenopus_tropicalis|GCF_000004195.4
+ITPR1	GCF_000243295.1	Trichechus manatus latirostris	Mammalia	Sirenia	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9637	2758	0	0	intact	2750	sweep_model	True	ok	ITPR1|Trichechus_manatus_latirostris|GCF_000243295.1
+ITPR2	GCF_000243295.1	Trichechus manatus latirostris	Mammalia	Sirenia	MP000007	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.8752	2701	0	0	intact	2683	sweep_model	True	ok	ITPR2|Trichechus_manatus_latirostris|GCF_000243295.1
+ITPR3	GCF_000243295.1	Trichechus manatus latirostris	Mammalia	Sirenia	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9757	2671	0	0	intact	2670	sweep_model	True	ok	ITPR3|Trichechus_manatus_latirostris|GCF_000243295.1
+ITPR1	GCF_000298275.1	Orycteropus afer afer	Mammalia	Tubulidentata	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9826	2758	0	0	intact	2757	sweep_model	True	ok	ITPR1|Orycteropus_afer_afer|GCF_000298275.1
+ITPR2	GCF_000298275.1	Orycteropus afer afer	Mammalia	Tubulidentata	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9789	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Orycteropus_afer_afer|GCF_000298275.1
+ITPR3	GCF_000298275.1	Orycteropus afer afer	Mammalia	Tubulidentata	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9753	2671	0	0	intact	2670	sweep_model	True	ok	ITPR3|Orycteropus_afer_afer|GCF_000298275.1
+ITPR1	GCF_000299155.1	Elephantulus edwardii	Mammalia	Macroscelidea	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.9742	2749	0	0	intact	2747	sweep_model	True	ok	ITPR1|Elephantulus_edwardii|GCF_000299155.1
+ITPR2	GCF_000299155.1	Elephantulus edwardii	Mammalia	Macroscelidea	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9752	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Elephantulus_edwardii|GCF_000299155.1
+ITPR3	GCF_000299155.1	Elephantulus edwardii	Mammalia	Macroscelidea	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9734	2671	0	0	intact	2667	sweep_model	True	ok	ITPR3|Elephantulus_edwardii|GCF_000299155.1
+ITPR1	GCF_000334495.1	Tupaia belangeri chinensis	Mammalia	Scandentia	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9785	2758	1	0	intact	2770	sweep_model	True	ok	ITPR1|Tupaia_belangeri_chinensis|GCF_000334495.1
+ITPR2	GCF_000334495.1	Tupaia belangeri chinensis	Mammalia	Scandentia	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	0.9885	0.9749	2670	0	0	intact	2668	sweep_model	True	ok	ITPR2|Tupaia_belangeri_chinensis|GCF_000334495.1
+ITPR3	GCF_000334495.1	Tupaia belangeri chinensis	Mammalia	Scandentia	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9568	2671	1	0	intact	2673	sweep_model	True	ok	ITPR3|Tupaia_belangeri_chinensis|GCF_000334495.1
+ITPR1	GCF_000687185.1	Egretta garzetta	Aves	Pelecaniformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9888	2779	1	0	intact	2777	sweep_model	True	ok	ITPR1|Egretta_garzetta|GCF_000687185.1
+ITPR2	GCF_000687185.1	Egretta garzetta	Aves	Pelecaniformes	MP000049	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9768	2669	0	0	intact	2676	sweep_model	True	ok	ITPR2|Egretta_garzetta|GCF_000687185.1
+ITPR3	GCF_000687185.1	Egretta garzetta	Aves	Pelecaniformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9765	2664	1	0	intact	2679	sweep_model	True	ok	ITPR3|Egretta_garzetta|GCF_000687185.1
+ITPR1	GCF_000687285.1	Phaethon lepturus	Aves	Phaethontiformes			0.6222	0.9936					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCF_000687285.1	Phaethon lepturus	Aves	Phaethontiformes			0.457	0.9838					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCF_000687285.1	Phaethon lepturus	Aves	Phaethontiformes	MP000026	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9801	0.9697	2611	2	0	intact	2641	sweep_model	True	ok	ITPR3|Phaethon_lepturus|GCF_000687285.1
+ITPR1	GCF_000690535.1	Cariama cristata	Aves	Cariamiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9917	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Cariama_cristata|GCF_000690535.1
+ITPR2	GCF_000690535.1	Cariama cristata	Aves	Cariamiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCF_000690535.1	Cariama cristata	Aves	Cariamiformes	MP000019	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9801	0.9897	2611	0	0	intact	2611	sweep_model	True	ok	ITPR3|Cariama_cristata|GCF_000690535.1
+ITPR1	GCF_000690775.1	Eurypyga helias	Aves	Eurypygiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9888	2779	0	1	intact	2778	sweep_model	True	ok	ITPR1|Eurypyga_helias|GCF_000690775.1
+ITPR2	GCF_000690775.1	Eurypyga helias	Aves	Eurypygiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCF_000690775.1	Eurypyga helias	Aves	Eurypygiformes	MP000019	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9906	0.9826	2639	0	0	intact	2639	sweep_model	True	ok	ITPR3|Eurypyga_helias|GCF_000690775.1
+ITPR1	GCF_000690835.1	Fulmarus glacialis	Aves	Procellariiformes			0.5934	0.9945					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCF_000690835.1	Fulmarus glacialis	Aves	Procellariiformes			0.3381	0.9704					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCF_000690835.1	Fulmarus glacialis	Aves	Procellariiformes	MP000030	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.8574	0.9908	2284	0	0	intact	2284	sweep_model	True	ok	ITPR3|Fulmarus_glacialis|GCF_000690835.1
+ITPR1	GCF_000691845.1	Merops nubicus	Aves	Coraciiformes			0.3293	0.9825					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCF_000691845.1	Merops nubicus	Aves	Coraciiformes			0.4552	0.9805					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCF_000691845.1	Merops nubicus	Aves	Coraciiformes			0.5083	0.9815					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCF_000691975.1	Corvus brachyrhynchos	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9856	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Corvus_brachyrhynchos|GCF_000691975.1
+ITPR2	GCF_000691975.1	Corvus brachyrhynchos	Aves	Passeriformes	MP000048	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9798	2669	0	0	intact	2668	sweep_model	True	ok	ITPR2|Corvus_brachyrhynchos|GCF_000691975.1
+ITPR3	GCF_000691975.1	Corvus brachyrhynchos	Aves	Passeriformes	MP000049	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9929	2670	0	0	intact	2677	sweep_model	True	ok	ITPR3|Corvus_brachyrhynchos|GCF_000691975.1
+ITPR1	GCF_000695765.1	Mesitornis unicolor	Aves	Mesitornithiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9903	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Mesitornis_unicolor|GCF_000695765.1
+ITPR2	GCF_000695765.1	Mesitornis unicolor	Aves	Mesitornithiformes			0.6148	0.9886					0	sweep_model	False	below_quality_bar(fragment)	
+ITPR3	GCF_000695765.1	Mesitornis unicolor	Aves	Mesitornithiformes	MP000024	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9576	0.9813	2551	0	0	intact	2562	sweep_model	True	ok	ITPR3|Mesitornis_unicolor|GCF_000695765.1
+ITPR1	GCF_000695815.1	Acanthisitta chloris	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.9946	0.9787	2764	1	0	intact	2763	sweep_model	True	ok	ITPR1|Acanthisitta_chloris|GCF_000695815.1
+ITPR2	GCF_000695815.1	Acanthisitta chloris	Aves	Passeriformes			0.6148	0.9843					0	sweep_model	False	below_quality_bar(fragment)	
+ITPR3	GCF_000695815.1	Acanthisitta chloris	Aves	Passeriformes			0.7918	0.9663					0	sweep_model	False	below_quality_bar(found_annotated)	
+ITPR1	GCF_000696875.1	Nestor notabilis	Aves	Psittaciformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.9971	0.9895	2771	0	0	intact	2768	sweep_model	True	ok	ITPR1|Nestor_notabilis|GCF_000696875.1
+ITPR2	GCF_000696875.1	Nestor notabilis	Aves	Psittaciformes			0.6237	0.9816					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR3	GCF_000696875.1	Nestor notabilis	Aves	Psittaciformes	MP000024	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9887	0.9655	2634	1	0	intact	2618	sweep_model	True	ok	ITPR3|Nestor_notabilis|GCF_000696875.1
+ITPR1	GCF_000698965.1	Struthio camelus australis	Aves	Struthioniformes			0.7236	0.9856					0	sweep_model	False	below_quality_bar(found_annotated)	
+ITPR2	GCF_000698965.1	Struthio camelus australis	Aves	Struthioniformes	MP000057	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9709	2669	0	0	intact	2680	sweep_model	True	ok	ITPR2|Struthio_camelus_australis|GCF_000698965.1
+ITPR3	GCF_000698965.1	Struthio camelus australis	Aves	Struthioniformes	MP000024	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9739	2664	0	1	intact	2683	sweep_model	True	ok	ITPR3|Struthio_camelus_australis|GCF_000698965.1
+ITPR1	GCF_000699105.1	Pygoscelis adeliae	Aves	Sphenisciformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9917	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Pygoscelis_adeliae|GCF_000699105.1
+ITPR2	GCF_000699105.1	Pygoscelis adeliae	Aves	Sphenisciformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9835	2669	0	0	intact	2667	sweep_model	True	ok	ITPR2|Pygoscelis_adeliae|GCF_000699105.1
+ITPR3	GCF_000699105.1	Pygoscelis adeliae	Aves	Sphenisciformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.991	0.9856	2640	1	0	intact	2639	sweep_model	True	ok	ITPR3|Pygoscelis_adeliae|GCF_000699105.1
+ITPR1	GCF_000699145.1	Aptenodytes forsteri	Aves	Sphenisciformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9914	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Aptenodytes_forsteri|GCF_000699145.1
+ITPR2	GCF_000699145.1	Aptenodytes forsteri	Aves	Sphenisciformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9873	2669	0	0	intact	2668	sweep_model	True	ok	ITPR2|Aptenodytes_forsteri|GCF_000699145.1
+ITPR3	GCF_000699145.1	Aptenodytes forsteri	Aves	Sphenisciformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.991	0.9841	2640	0	0	intact	2649	sweep_model	True	ok	ITPR3|Aptenodytes_forsteri|GCF_000699145.1
+ITPR1	GCF_000699245.1	Pterocles gutturalis	Aves	Pterocliformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.9705	0.9911	2697	0	0	intact	2697	sweep_model	True	ok	ITPR1|Pterocles_gutturalis|GCF_000699245.1
+ITPR2	GCF_000699245.1	Pterocles gutturalis	Aves	Pterocliformes			0.6152	0.9777					0	sweep_model	False	below_quality_bar(fragment)	
+ITPR3	GCF_000699245.1	Pterocles gutturalis	Aves	Pterocliformes	MP000024	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9906	0.9576	2639	0	0	intact	2639	sweep_model	True	ok	ITPR3|Pterocles_gutturalis|GCF_000699245.1
+ITPR1	GCF_000700745.2	Antrostomus carolinensis	Aves	Caprimulgiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.9917	0.988	2756	1	0	intact	2755	sweep_model	True	ok	ITPR1|Antrostomus_carolinensis|GCF_000700745.2
+ITPR2	GCF_000700745.2	Antrostomus carolinensis	Aves	Caprimulgiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCF_000700745.2	Antrostomus carolinensis	Aves	Caprimulgiformes	MP000019	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9677	2664	0	0	intact	2650	sweep_model	True	ok	ITPR3|Antrostomus_carolinensis|GCF_000700745.2
+ITPR1	GCF_000703405.1	Apaloderma vittatum	Aves	Trogoniformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCF_000703405.1	Apaloderma vittatum	Aves	Trogoniformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCF_000703405.1	Apaloderma vittatum	Aves	Trogoniformes	MP000014	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9801	0.9666	2611	0	0	intact	2621	sweep_model	True	ok	ITPR3|Apaloderma_vittatum|GCF_000703405.1
+ITPR1	GCF_000705375.1	Tinamus guttatus	Aves	Tinamiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.986	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Tinamus_guttatus|GCF_000705375.1
+ITPR2	GCF_000705375.1	Tinamus guttatus	Aves	Tinamiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCF_000705375.1	Tinamus guttatus	Aves	Tinamiformes			0.5679	0.9881					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR1	GCF_000708025.1	Charadrius vociferus	Aves	Charadriiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9924	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Charadrius_vociferus|GCF_000708025.1
+ITPR2	GCF_000708025.1	Charadrius vociferus	Aves	Charadriiformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.9809	2669	0	0	intact	2668	sweep_model	True	ok	ITPR2|Charadrius_vociferus|GCF_000708025.1
+ITPR3	GCF_000708025.1	Charadrius vociferus	Aves	Charadriiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9861	0.9871	2627	0	0	intact	2627	sweep_model	True	ok	ITPR3|Charadrius_vociferus|GCF_000708025.1
+ITPR1	GCF_000710305.1	Buceros rhinoceros silvestris	Aves	Bucerotiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR2	GCF_000710305.1	Buceros rhinoceros silvestris	Aves	Bucerotiformes									0	sweep_model	False	below_quality_bar(tblastn_trace)	
+ITPR3	GCF_000710305.1	Buceros rhinoceros silvestris	Aves	Bucerotiformes	MP000014	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.991	0.9727	2640	1	0	intact	2672	sweep_model	True	ok	ITPR3|Buceros_rhinoceros_silvestris|GCF_000710305.1
+ITPR1	GCF_000747805.2	Chaetura pelagica	Aves	Apodiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.987	2779	0	0	intact	2773	sweep_model	True	ok	ITPR1|Chaetura_pelagica|GCF_000747805.2
+ITPR2	GCF_000747805.2	Chaetura pelagica	Aves	Apodiformes			0.783	0.9849					0	sweep_model	False	below_quality_bar(found_annotated)	
+ITPR3	GCF_000747805.2	Chaetura pelagica	Aves	Apodiformes	MP000020	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9906	0.9841	2639	0	0	intact	2641	sweep_model	True	ok	ITPR3|Chaetura_pelagica|GCF_000747805.2
+ITPR1	GCF_001715985.3	Manacus vitellinus	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9874	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Manacus_vitellinus|GCF_001715985.3
+ITPR2	GCF_001715985.3	Manacus vitellinus	Aves	Passeriformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9811	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Manacus_vitellinus|GCF_001715985.3
+ITPR3	GCF_001715985.3	Manacus vitellinus	Aves	Passeriformes	MP000052	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	0.9888	0.9868	2640	0	0	intact	2647	sweep_model	True	ok	ITPR3|Manacus_vitellinus|GCF_001715985.3
+ITPR1	GCF_003342845.1	Nothoprocta perdicaria	Aves	Tinamiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.987	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Nothoprocta_perdicaria|GCF_003342845.1
+ITPR2	GCF_003342845.1	Nothoprocta perdicaria	Aves	Tinamiformes	MP000009	F1P1X4|ITPR2|Gallus_gallus|ITPR2	1.0	0.9748	2700	0	0	intact	2700	sweep_model	True	ok	ITPR2|Nothoprocta_perdicaria|GCF_003342845.1
+ITPR3	GCF_003342845.1	Nothoprocta perdicaria	Aves	Tinamiformes	MP000017	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9801	2664	0	0	intact	2666	sweep_model	True	ok	ITPR3|Nothoprocta_perdicaria|GCF_003342845.1
+ITPR1	GCF_003668045.3	Cricetulus griseus	Mammalia	Rodentia	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.9956	2749	0	0	intact	2749	sweep_model	True	ok	ITPR1|Cricetulus_griseus|GCF_003668045.3
+ITPR2	GCF_003668045.3	Cricetulus griseus	Mammalia	Rodentia	MP000009	Q9Z329|Itpr2|Mus_musculus|ITPR2	1.0	0.9708	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Cricetulus_griseus|GCF_003668045.3
+ITPR3	GCF_003668045.3	Cricetulus griseus	Mammalia	Rodentia	MP000017	P70227|Itpr3|Mus_musculus|ITPR3	1.0	0.9678	2670	0	0	intact	2669	sweep_model	True	ok	ITPR3|Cricetulus_griseus|GCF_003668045.3
+ITPR1	GCF_003957555.1	Calypte anna	Aves	Apodiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9878	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Calypte_anna|GCF_003957555.1
+ITPR2	GCF_003957555.1	Calypte anna	Aves	Apodiformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9814	2700	1	0	intact	2699	sweep_model	True	ok	ITPR2|Calypte_anna|GCF_003957555.1
+ITPR3	GCF_003957555.1	Calypte anna	Aves	Apodiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9854	0.9644	2625	4	0	intact	2626	sweep_model	True	ok	ITPR3|Calypte_anna|GCF_003957555.1
+ITPR1	GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	Monotremata	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.9637	2749	0	0	intact	2756	sweep_model	True	ok	ITPR1|Ornithorhynchus_anatinus|GCF_004115215.2
+ITPR2	GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	Monotremata	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9178	2701	0	0	intact	2697	sweep_model	True	ok	ITPR2|Ornithorhynchus_anatinus|GCF_004115215.2
+ITPR3	GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	Monotremata	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9148	2671	0	0	intact	2668	sweep_model	True	ok	ITPR3|Ornithorhynchus_anatinus|GCF_004115215.2
+ITPR1	GCF_009764475.1	Pristis pectinata	Chondrichthyes	Rhinopristiformes	MP000071	A0ABM4F3U0|ITPR1|Apteryx_mantelli	1.0	0.8723	2750	3	1	intact	2758	sweep_model	True	ok	ITPR1|Pristis_pectinata|GCF_009764475.1
+ITPR2	GCF_009764475.1	Pristis pectinata	Chondrichthyes	Rhinopristiformes	MP000013	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.8149	2701	0	1	intact	2699	sweep_model	True	ok	ITPR2|Pristis_pectinata|GCF_009764475.1
+ITPR3	GCF_009764475.1	Pristis pectinata	Chondrichthyes	Rhinopristiformes	MP000079	A0A4W3GWE7|ITPR3|Callorhinchus_milii	1.0	0.824	2630	1	0	intact	2625	sweep_model	True	ok	ITPR3|Pristis_pectinata|GCF_009764475.1
+ITPR1	GCF_009769465.1	Tauraco erythrolophus	Aves	Musophagiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.991	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Tauraco_erythrolophus|GCF_009769465.1
+ITPR2	GCF_009769465.1	Tauraco erythrolophus	Aves	Musophagiformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9874	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Tauraco_erythrolophus|GCF_009769465.1
+ITPR3	GCF_009769465.1	Tauraco erythrolophus	Aves	Musophagiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9895	2664	1	0	intact	2663	sweep_model	True	ok	ITPR3|Tauraco_erythrolophus|GCF_009769465.1
+ITPR1	GCF_011004845.1	Esox lucius	Actinopteri	Esociformes	MP000079	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9201	2748	0	0	intact	2729	sweep_model	True	ok	ITPR1|Esox_lucius|GCF_011004845.1
+ITPR2	GCF_011004845.1	Esox lucius	Actinopteri	Esociformes	MP000081	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8035	2701	0	0	intact	2707	sweep_model	True	ok	ITPR2|Esox_lucius|GCF_011004845.1
+ITPR3	GCF_011004845.1	Esox lucius	Actinopteri	Esociformes	MP000084	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8594	2670	0	0	intact	2676	sweep_model	True	ok	ITPR3|Esox_lucius|GCF_011004845.1
+ITPR1	GCF_011004875.1	Balearica regulorum gibbericeps	Aves	Gruiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9917	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Balearica_regulorum_gibbericeps|GCF_011004875.1
+ITPR2	GCF_011004875.1	Balearica regulorum gibbericeps	Aves	Gruiformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9856	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Balearica_regulorum_gibbericeps|GCF_011004875.1
+ITPR3	GCF_011004875.1	Balearica regulorum gibbericeps	Aves	Gruiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9899	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Balearica_regulorum_gibbericeps|GCF_011004875.1
+ITPR1	GCF_013368585.1	Megalops cyprinoides	Actinopteri	Elopiformes	MP000076	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9109	2748	0	0	intact	2752	sweep_model	True	ok	ITPR1|Megalops_cyprinoides|GCF_013368585.1
+ITPR2	GCF_013368585.1	Megalops cyprinoides	Actinopteri	Elopiformes	MP000078	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8081	2701	0	0	intact	2654	sweep_model	True	ok	ITPR2|Megalops_cyprinoides|GCF_013368585.1
+ITPR3	GCF_013368585.1	Megalops cyprinoides	Actinopteri	Elopiformes	MP000081	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8507	2670	0	0	intact	2652	sweep_model	True	ok	ITPR3|Megalops_cyprinoides|GCF_013368585.1
+ITPR1	GCF_013368605.1	Nyctibius grandis	Aves	Nyctibiiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9906	2779	0	0	intact	2779	sweep_model	True	ok	ITPR1|Nyctibius_grandis|GCF_013368605.1
+ITPR2	GCF_013368605.1	Nyctibius grandis	Aves	Nyctibiiformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9878	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Nyctibius_grandis|GCF_013368605.1
+ITPR3	GCF_013368605.1	Nyctibius grandis	Aves	Nyctibiiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9891	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Nyctibius_grandis|GCF_013368605.1
+ITPR1	GCF_014839835.1	Dryobates pubescens	Aves	Piciformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.9971	0.9845	2771	0	0	intact	2770	sweep_model	True	ok	ITPR1|Dryobates_pubescens|GCF_014839835.1
+ITPR2	GCF_014839835.1	Dryobates pubescens	Aves	Piciformes	MP000049	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9582	2700	0	0	intact	2704	sweep_model	True	ok	ITPR2|Dryobates_pubescens|GCF_014839835.1
+ITPR3	GCF_014839835.1	Dryobates pubescens	Aves	Piciformes	MP000050	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9716	2670	0	0	intact	2671	sweep_model	True	ok	ITPR3|Dryobates_pubescens|GCF_014839835.1
+ITPR1	GCF_016433145.1	Gracilinanus agilis	Mammalia	Didelphimorphia	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9264	2758	1	0	intact	2713	sweep_model	True	ok	ITPR1|Gracilinanus_agilis|GCF_016433145.1
+ITPR2	GCF_016433145.1	Gracilinanus agilis	Mammalia	Didelphimorphia	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9448	2701	0	0	intact	2698	sweep_model	True	ok	ITPR2|Gracilinanus_agilis|GCF_016433145.1
+ITPR3	GCF_016433145.1	Gracilinanus agilis	Mammalia	Didelphimorphia	MP000015	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9128	2671	0	0	intact	2662	sweep_model	True	ok	ITPR3|Gracilinanus_agilis|GCF_016433145.1
+ITPR1	GCF_016699485.2	Gallus gallus	Aves	Galliformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	1.0	2779	0	0	intact	2779	sweep_model	True	ok	ITPR1|Gallus_gallus|GCF_016699485.2
+ITPR2	GCF_016699485.2	Gallus gallus	Aves	Galliformes	MP000010	F1P1X4|ITPR2|Gallus_gallus|ITPR2	1.0	1.0	2700	0	0	intact	2700	sweep_model	True	ok	ITPR2|Gallus_gallus|GCF_016699485.2
+ITPR3	GCF_016699485.2	Gallus gallus	Aves	Galliformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	1.0	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Gallus_gallus|GCF_016699485.2
+ITPR1	GCF_016859285.1	Xiphias gladius	Actinopteri	Istiophoriformes	MP000086	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9659	2748	0	0	intact	2742	sweep_model	True	ok	ITPR1|Xiphias_gladius|GCF_016859285.1
+ITPR2	GCF_016859285.1	Xiphias gladius	Actinopteri	Istiophoriformes	MP000088	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8775	2701	1	0	intact	2716	sweep_model	True	ok	ITPR2|Xiphias_gladius|GCF_016859285.1
+ITPR3	GCF_016859285.1	Xiphias gladius	Actinopteri	Istiophoriformes	MP000089	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9064	2670	0	0	intact	2691	sweep_model	True	ok	ITPR3|Xiphias_gladius|GCF_016859285.1
+ITPR1	GCF_017639515.1	Carcharodon carcharias	Chondrichthyes	Lamniformes	MP000066	A0ABM4F3U0|ITPR1|Apteryx_mantelli	1.0	0.8759	2750	0	0	intact	2757	sweep_model	True	ok	ITPR1|Carcharodon_carcharias|GCF_017639515.1
+ITPR2	GCF_017639515.1	Carcharodon carcharias	Chondrichthyes	Lamniformes	MP000068	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.8086	2700	0	0	intact	2710	sweep_model	True	ok	ITPR2|Carcharodon_carcharias|GCF_017639515.1
+ITPR3	GCF_017639515.1	Carcharodon carcharias	Chondrichthyes	Lamniformes	MP000074	A0A4W3GWE7|ITPR3|Callorhinchus_milii	1.0	0.8501	2630	1	0	intact	2625	sweep_model	True	ok	ITPR3|Carcharodon_carcharias|GCF_017639515.1
+ITPR1	GCF_017654505.1	Polyodon spathula	Actinopteri	Acipenseriformes	MP000116	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.8856	2748	0	0	intact	2761	sweep_model	True	ok	ITPR1|Polyodon_spathula|GCF_017654505.1
+ITPR2	GCF_017654505.1	Polyodon spathula	Actinopteri	Acipenseriformes	MP000029	F1P1X4|ITPR2|Gallus_gallus|ITPR2	1.0	0.8327	2700	1	1	intact	2690	sweep_model	True	ok	ITPR2|Polyodon_spathula|GCF_017654505.1
+ITPR3	GCF_017654505.1	Polyodon spathula	Actinopteri	Acipenseriformes	MP000122	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.7998	2670	0	0	intact	2663	sweep_model	True	ok	ITPR3|Polyodon_spathula|GCF_017654505.1
+ITPR1	GCF_017976375.1	Cuculus canorus	Aves	Cuculiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9867	2779	0	0	intact	2777	sweep_model	True	ok	ITPR1|Cuculus_canorus|GCF_017976375.1
+ITPR2	GCF_017976375.1	Cuculus canorus	Aves	Cuculiformes	MP000054	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9815	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Cuculus_canorus|GCF_017976375.1
+ITPR3	GCF_017976375.1	Cuculus canorus	Aves	Cuculiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9861	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Cuculus_canorus|GCF_017976375.1
+ITPR1	GCF_018139145.2	Gymnogyps californianus	Aves	Accipitriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9914	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Gymnogyps_californianus|GCF_018139145.2
+ITPR2	GCF_018139145.2	Gymnogyps californianus	Aves	Accipitriformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9915	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Gymnogyps_californianus|GCF_018139145.2
+ITPR3	GCF_018139145.2	Gymnogyps californianus	Aves	Accipitriformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9873	2664	3	0	intact	2668	sweep_model	True	ok	ITPR3|Gymnogyps_californianus|GCF_018139145.2
+ITPR1	GCF_018320785.1	Cheilinus undulatus	Actinopteri	Labriformes	MP000086	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9571	2748	0	1	intact	2737	sweep_model	True	ok	ITPR1|Cheilinus_undulatus|GCF_018320785.1
+ITPR2	GCF_018320785.1	Cheilinus undulatus	Actinopteri	Labriformes	MP000088	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.869	2701	1	0	intact	2697	sweep_model	True	ok	ITPR2|Cheilinus_undulatus|GCF_018320785.1
+ITPR3	GCF_018320785.1	Cheilinus undulatus	Actinopteri	Labriformes	MP000089	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9025	2670	0	0	intact	2696	sweep_model	True	ok	ITPR3|Cheilinus_undulatus|GCF_018320785.1
+ITPR1	GCF_018691265.1	Tyto alba	Aves	Strigiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9903	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Tyto_alba|GCF_018691265.1
+ITPR2	GCF_018691265.1	Tyto alba	Aves	Strigiformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9881	2700	1	0	intact	2698	sweep_model	True	ok	ITPR2|Tyto_alba|GCF_018691265.1
+ITPR3	GCF_018691265.1	Tyto alba	Aves	Strigiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.991	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Tyto_alba|GCF_018691265.1
+ITPR1	GCF_018977255.1	Callorhinchus milii	Chondrichthyes	Chimaeriformes	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.8704	2758	0	0	intact	2763	sweep_model	True	ok	ITPR1|Callorhinchus_milii|GCF_018977255.1
+ITPR2	GCF_018977255.1	Callorhinchus milii	Chondrichthyes	Chimaeriformes	MP000075	A0A672UP22|ITPR2|Strigops_habroptila	0.9885	0.8119	2669	0	1	intact	2679	sweep_model	True	ok	ITPR2|Callorhinchus_milii|GCF_018977255.1
+ITPR3	GCF_018977255.1	Callorhinchus milii	Chondrichthyes	Chimaeriformes	MP000081	A0A4W3GWE7|ITPR3|Callorhinchus_milii	1.0	0.9972	2630	1	0	intact	2637	sweep_model	True	ok	ITPR3|Callorhinchus_milii|GCF_018977255.1
+ITPR1	GCF_019279795.1	Protopterus annectens	Dipnoi	Ceratodontiformes	MP000034	A0ABM4F3U0|ITPR1|Apteryx_mantelli	1.0	0.8021	2750	0	0	intact	2753	sweep_model	True	ok	ITPR1|Protopterus_annectens|GCF_019279795.1
+ITPR2	GCF_019279795.1	Protopterus annectens	Dipnoi	Ceratodontiformes	MP000009#90	F1P1X4|ITPR2|Gallus_gallus|ITPR2	1.0	0.8144	2700	0	0	intact	0	sweep_model	False	no_translation	
+ITPR3	GCF_019279795.1	Protopterus annectens	Dipnoi	Ceratodontiformes	MP000020	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.79	2664	0	0	intact	2735	sweep_model	True	ok	ITPR3|Protopterus_annectens|GCF_019279795.1
+ITPR1	GCF_019393635.1	Dromiciops gliroides	Mammalia	Microbiotheria	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.972	2749	0	0	intact	2749	sweep_model	True	ok	ITPR1|Dromiciops_gliroides|GCF_019393635.1
+ITPR2	GCF_019393635.1	Dromiciops gliroides	Mammalia	Microbiotheria	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9496	2701	0	0	intact	2698	sweep_model	True	ok	ITPR2|Dromiciops_gliroides|GCF_019393635.1
+ITPR3	GCF_019393635.1	Dromiciops gliroides	Mammalia	Microbiotheria	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.942	2671	0	0	intact	2668	sweep_model	True	ok	ITPR3|Dromiciops_gliroides|GCF_019393635.1
+ITPR1	GCF_019740435.1	Gambusia affinis	Actinopteri	Cyprinodontiformes	MP000082	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9067	2748	0	0	intact	2745	sweep_model	True	ok	ITPR1|Gambusia_affinis|GCF_019740435.1
+ITPR2	GCF_019740435.1	Gambusia affinis	Actinopteri	Cyprinodontiformes	MP000084	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.7961	2701	3	0	intact	2762	sweep_model	True	ok	ITPR2|Gambusia_affinis|GCF_019740435.1
+ITPR3	GCF_019740435.1	Gambusia affinis	Actinopteri	Cyprinodontiformes	MP000087	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8809	2670	0	0	intact	2686	sweep_model	True	ok	ITPR3|Gambusia_affinis|GCF_019740435.1
+ITPR1	GCF_020171115.1	Neogale vison	Mammalia	Carnivora	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.9865	2749	0	0	intact	2749	sweep_model	True	ok	ITPR1|Neogale_vison|GCF_020171115.1
+ITPR2	GCF_020171115.1	Neogale vison	Mammalia	Carnivora	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9763	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Neogale_vison|GCF_020171115.1
+ITPR3	GCF_020171115.1	Neogale vison	Mammalia	Carnivora	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9738	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Neogale_vison|GCF_020171115.1
+ITPR1	GCF_020740795.1	Apus apus	Aves	Apodiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9896	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Apus_apus|GCF_020740795.1
+ITPR2	GCF_020740795.1	Apus apus	Aves	Apodiformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9841	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Apus_apus|GCF_020740795.1
+ITPR3	GCF_020740795.1	Apus apus	Aves	Apodiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9869	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Apus_apus|GCF_020740795.1
+ITPR1	GCF_020826845.1	Diceros bicornis minor	Mammalia	Perissodactyla	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9855	2758	0	0	intact	2757	sweep_model	True	ok	ITPR1|Diceros_bicornis_minor|GCF_020826845.1
+ITPR2	GCF_020826845.1	Diceros bicornis minor	Mammalia	Perissodactyla	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9811	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Diceros_bicornis_minor|GCF_020826845.1
+ITPR3	GCF_020826845.1	Diceros bicornis minor	Mammalia	Perissodactyla	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.976	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Diceros_bicornis_minor|GCF_020826845.1
+ITPR1	GCF_021028975.2	Sphaerodactylus townsendi	Lepidosauria	Squamata	MP000059	A0A670JBK6|ITPR1|Podarcis_muralis	1.0	0.8344	2747	2	0	intact	2735	sweep_model	True	ok	ITPR1|Sphaerodactylus_townsendi|GCF_021028975.2
+ITPR2	GCF_021028975.2	Sphaerodactylus townsendi	Lepidosauria	Squamata	MP000060	A0ABM1LG32|ITPR2|Gekko_japonicus	1.0	0.9472	2701	3	0	intact	2699	sweep_model	True	ok	ITPR2|Sphaerodactylus_townsendi|GCF_021028975.2
+ITPR3	GCF_021028975.2	Sphaerodactylus townsendi	Lepidosauria	Squamata	MP000061	A0A6J0TV85|ITPR3|Pogona_vitticeps	0.9539	0.9463	2543	1	0	intact	2545	sweep_model	True	ok	ITPR3|Sphaerodactylus_townsendi|GCF_021028975.2
+ITPR1	GCF_021292245.1	Micropterus dolomieu	Actinopteri	Centrarchiformes	MP000085	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9544	2748	0	0	intact	2750	sweep_model	True	ok	ITPR1|Micropterus_dolomieu|GCF_021292245.1
+ITPR2	GCF_021292245.1	Micropterus dolomieu	Actinopteri	Centrarchiformes	MP000087	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8729	2701	1	0	intact	2709	sweep_model	True	ok	ITPR2|Micropterus_dolomieu|GCF_021292245.1
+ITPR3	GCF_021292245.1	Micropterus dolomieu	Actinopteri	Centrarchiformes	MP000088	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9001	2670	0	0	intact	2671	sweep_model	True	ok	ITPR3|Micropterus_dolomieu|GCF_021292245.1
+ITPR1	GCF_021613505.1	Equus quagga	Mammalia	Perissodactyla	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9884	2758	0	0	intact	2757	sweep_model	True	ok	ITPR1|Equus_quagga|GCF_021613505.1
+ITPR2	GCF_021613505.1	Equus quagga	Mammalia	Perissodactyla	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9819	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Equus_quagga|GCF_021613505.1
+ITPR3	GCF_021613505.1	Equus quagga	Mammalia	Perissodactyla	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9779	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Equus_quagga|GCF_021613505.1
+ITPR1	GCF_023634155.1	Falco peregrinus	Aves	Falconiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9924	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Falco_peregrinus|GCF_023634155.1
+ITPR2	GCF_023634155.1	Falco peregrinus	Aves	Falconiformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9896	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Falco_peregrinus|GCF_023634155.1
+ITPR3	GCF_023634155.1	Falco peregrinus	Aves	Falconiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9899	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Falco_peregrinus|GCF_023634155.1
+ITPR1	GCF_023851605.1	Tamandua tetradactyla	Mammalia	Pilosa	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.983	2758	0	0	intact	2756	sweep_model	True	ok	ITPR1|Tamandua_tetradactyla|GCF_023851605.1
+ITPR2	GCF_023851605.1	Tamandua tetradactyla	Mammalia	Pilosa	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9789	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Tamandua_tetradactyla|GCF_023851605.1
+ITPR3	GCF_023851605.1	Tamandua tetradactyla	Mammalia	Pilosa	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9626	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Tamandua_tetradactyla|GCF_023851605.1
+ITPR1	GCF_024166365.1	Elephas maximus indicus	Mammalia	Proboscidea	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9855	2758	0	0	intact	2757	sweep_model	True	ok	ITPR1|Elephas_maximus_indicus|GCF_024166365.1
+ITPR2	GCF_024166365.1	Elephas maximus indicus	Mammalia	Proboscidea	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9815	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Elephas_maximus_indicus|GCF_024166365.1
+ITPR3	GCF_024166365.1	Elephas maximus indicus	Mammalia	Proboscidea	MP000015	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9738	2671	0	0	intact	2670	sweep_model	True	ok	ITPR3|Elephas_maximus_indicus|GCF_024166365.1
+ITPR1	GCF_025201925.1	Gopherus flavomarginatus	Testudines	Testudines	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.9975	0.8932	2772	0	0	intact	2744	sweep_model	True	ok	ITPR1|Gopherus_flavomarginatus|GCF_025201925.1
+ITPR2	GCF_025201925.1	Gopherus flavomarginatus	Testudines	Testudines	MP000054	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9526	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Gopherus_flavomarginatus|GCF_025201925.1
+ITPR3	GCF_025201925.1	Gopherus flavomarginatus	Testudines	Testudines	MP000019	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9414	2664	0	0	intact	2663	sweep_model	True	ok	ITPR3|Gopherus_flavomarginatus|GCF_025201925.1
+ITPR1	GCF_027244095.1	Hemicordylus capensis	Lepidosauria	Squamata	MP000060	A0A670JBK6|ITPR1|Podarcis_muralis	1.0	0.9807	2747	0	0	intact	2751	sweep_model	True	ok	ITPR1|Hemicordylus_capensis|GCF_027244095.1
+ITPR2	GCF_027244095.1	Hemicordylus capensis	Lepidosauria	Squamata	MP000061	A0ABM1LG32|ITPR2|Gekko_japonicus	1.0	0.9441	2701	1	0	intact	2705	sweep_model	True	ok	ITPR2|Hemicordylus_capensis|GCF_027244095.1
+ITPR3	GCF_027244095.1	Hemicordylus capensis	Lepidosauria	Squamata	MP000062	A0A6J0TV85|ITPR3|Pogona_vitticeps	1.0	0.9618	2666	0	0	intact	2670	sweep_model	True	ok	ITPR3|Hemicordylus_capensis|GCF_027244095.1
+ITPR1	GCF_027409185.1	Cynocephalus volans	Mammalia	Dermoptera	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.988	2758	0	0	intact	2756	sweep_model	True	ok	ITPR1|Cynocephalus_volans|GCF_027409185.1
+ITPR2	GCF_027409185.1	Cynocephalus volans	Mammalia	Dermoptera	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9815	2701	0	0	intact	2700	sweep_model	True	ok	ITPR2|Cynocephalus_volans|GCF_027409185.1
+ITPR3	GCF_027409185.1	Cynocephalus volans	Mammalia	Dermoptera	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.976	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Cynocephalus_volans|GCF_027409185.1
+ITPR1	GCF_027409825.1	Scomber japonicus	Actinopteri	Scombriformes	MP000081	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9629	2748	0	0	intact	2736	sweep_model	True	ok	ITPR1|Scomber_japonicus|GCF_027409825.1
+ITPR2	GCF_027409825.1	Scomber japonicus	Actinopteri	Scombriformes	MP000083	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8673	2701	1	1	intact	2687	sweep_model	True	ok	ITPR2|Scomber_japonicus|GCF_027409825.1
+ITPR3	GCF_027409825.1	Scomber japonicus	Actinopteri	Scombriformes			0.7251	0.888					0	sweep_model	False	below_quality_bar(found_annotated)	
+ITPR1	GCF_027579695.1	Neoarius graeffei	Actinopteri	Siluriformes	MP000009	A0A8M2BDG0|itpr1a|Danio_rerio|ITPR1	1.0	0.929	2711	0	0	intact	2712	sweep_model	True	ok	ITPR1|Neoarius_graeffei|GCF_027579695.1
+ITPR2	GCF_027579695.1	Neoarius graeffei	Actinopteri	Siluriformes	MP000029	A0A8M9PQQ3|itpr2|Danio_rerio|ITPR2	1.0	0.8259	2665	0	0	intact	2663	sweep_model	True	ok	ITPR2|Neoarius_graeffei|GCF_027579695.1
+ITPR3	GCF_027579695.1	Neoarius graeffei	Actinopteri	Siluriformes	MP000048	A0A8M6Z266|itpr3|Danio_rerio|ITPR3	1.0	0.833	2635	0	0	intact	2642	sweep_model	True	ok	ITPR3|Neoarius_graeffei|GCF_027579695.1
+ITPR1	GCF_027579735.1	Bombina bombina	Amphibia	Anura	MP000004#41	A0A8J0T3U5|itpr1|Xenopus_tropicalis|ITPR1	1.0	0.9189	2743	0	0	intact	0	sweep_model	False	no_translation	
+ITPR2	GCF_027579735.1	Bombina bombina	Amphibia	Anura	MP000013#50	A0A6I8RGU0|itpr2|Xenopus_tropicalis|ITPR2	1.0	0.9234	2705	0	0	intact	0	sweep_model	False	no_translation	
+ITPR3	GCF_027579735.1	Bombina bombina	Amphibia	Anura	MP000015	A0A8J0SYK9|itpr3|Xenopus_tropicalis|ITPR3	1.0	0.8812	2673	36	1	elevated_lesions	2668	sweep_model	False	s15a_elevated_lesions	
+ITPR1	GCF_027595985.1	Sorex araneus	Mammalia	Eulipotyphla	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.9585	2749	0	0	intact	2749	sweep_model	True	ok	ITPR1|Sorex_araneus|GCF_027595985.1
+ITPR2	GCF_027595985.1	Sorex araneus	Mammalia	Eulipotyphla	MP000007	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9158	2701	2	0	intact	2702	sweep_model	True	ok	ITPR2|Sorex_araneus|GCF_027595985.1
+ITPR3	GCF_027595985.1	Sorex araneus	Mammalia	Eulipotyphla	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9558	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Sorex_araneus|GCF_027595985.1
+ITPR1	GCF_028372415.1	Notamacropus eugenii	Mammalia	Diprotodontia	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.9692	2749	0	0	intact	2760	sweep_model	True	ok	ITPR1|Notamacropus_eugenii|GCF_028372415.1
+ITPR2	GCF_028372415.1	Notamacropus eugenii	Mammalia	Diprotodontia	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9504	2701	0	0	intact	2698	sweep_model	True	ok	ITPR2|Notamacropus_eugenii|GCF_028372415.1
+ITPR3	GCF_028372415.1	Notamacropus eugenii	Mammalia	Diprotodontia	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9397	2671	0	0	intact	2668	sweep_model	True	ok	ITPR3|Notamacropus_eugenii|GCF_028372415.1
+ITPR1	GCF_028389875.1	Rhea pennata	Aves	Rheiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9896	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Rhea_pennata|GCF_028389875.1
+ITPR2	GCF_028389875.1	Rhea pennata	Aves	Rheiformes	MP000054	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9833	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Rhea_pennata|GCF_028389875.1
+ITPR3	GCF_028389875.1	Rhea pennata	Aves	Rheiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9876	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Rhea_pennata|GCF_028389875.1
+ITPR1	GCF_028858725.1	Colius striatus	Aves	Coliiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9885	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Colius_striatus|GCF_028858725.1
+ITPR2	GCF_028858725.1	Colius striatus	Aves	Coliiformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9826	2700	0	0	intact	2698	sweep_model	True	ok	ITPR2|Colius_striatus|GCF_028858725.1
+ITPR3	GCF_028858725.1	Colius striatus	Aves	Coliiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9835	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Colius_striatus|GCF_028858725.1
+ITPR1	GCF_029633855.1	Hoplias malabaricus	Actinopteri	Characiformes	MP000009	A0A8M2BDG0|itpr1a|Danio_rerio|ITPR1	1.0	0.9308	2711	0	0	intact	2717	sweep_model	True	ok	ITPR1|Hoplias_malabaricus|GCF_029633855.1
+ITPR2	GCF_029633855.1	Hoplias malabaricus	Actinopteri	Characiformes	MP000029	A0A8M9PQQ3|itpr2|Danio_rerio|ITPR2	1.0	0.8149	2665	0	0	intact	2673	sweep_model	True	ok	ITPR2|Hoplias_malabaricus|GCF_029633855.1
+ITPR3	GCF_029633855.1	Hoplias malabaricus	Actinopteri	Characiformes	MP000048	A0A8M6Z266|itpr3|Danio_rerio|ITPR3	1.0	0.8435	2635	0	0	intact	2641	sweep_model	True	ok	ITPR3|Hoplias_malabaricus|GCF_029633855.1
+ITPR1	GCF_029633865.1	Lampris incognitus	Actinopteri	Lampriformes	MP000082	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9473	2748	0	0	intact	2732	sweep_model	True	ok	ITPR1|Lampris_incognitus|GCF_029633865.1
+ITPR2	GCF_029633865.1	Lampris incognitus	Actinopteri	Lampriformes	MP000084	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8575	2701	1	0	intact	2685	sweep_model	True	ok	ITPR2|Lampris_incognitus|GCF_029633865.1
+ITPR3	GCF_029633865.1	Lampris incognitus	Actinopteri	Lampriformes	MP000118	H3B932|ITPR3|Latimeria_chalumnae	0.9944	0.5153	2660	8	0	elevated_lesions	2426	sweep_model	False	s15a_elevated_lesions	
+ITPR1	GCF_030020395.1	Manis pentadactyla	Mammalia	Pholidota	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.9833	2749	0	0	intact	2749	sweep_model	True	ok	ITPR1|Manis_pentadactyla|GCF_030020395.1
+ITPR2	GCF_030020395.1	Manis pentadactyla	Mammalia	Pholidota	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9678	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Manis_pentadactyla|GCF_030020395.1
+ITPR3	GCF_030020395.1	Manis pentadactyla	Mammalia	Pholidota	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9716	2671	0	0	intact	2672	sweep_model	True	ok	ITPR3|Manis_pentadactyla|GCF_030020395.1
+ITPR1	GCF_030445035.2	Dasypus novemcinctus	Mammalia	Cingulata	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9837	2758	0	0	intact	2757	sweep_model	True	ok	ITPR1|Dasypus_novemcinctus|GCF_030445035.2
+ITPR2	GCF_030445035.2	Dasypus novemcinctus	Mammalia	Cingulata	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9648	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Dasypus_novemcinctus|GCF_030445035.2
+ITPR3	GCF_030445035.2	Dasypus novemcinctus	Mammalia	Cingulata	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9501	2671	1	0	intact	2666	sweep_model	True	ok	ITPR3|Dasypus_novemcinctus|GCF_030445035.2
+ITPR1	GCF_030463565.1	Pelecanus crispus	Aves	Pelecaniformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9917	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Pelecanus_crispus|GCF_030463565.1
+ITPR2	GCF_030463565.1	Pelecanus crispus	Aves	Pelecaniformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9882	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Pelecanus_crispus|GCF_030463565.1
+ITPR3	GCF_030463565.1	Pelecanus crispus	Aves	Pelecaniformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9895	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Pelecanus_crispus|GCF_030463565.1
+ITPR1	GCF_030490865.1	Poecile atricapillus	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9827	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Poecile_atricapillus|GCF_030490865.1
+ITPR2	GCF_030490865.1	Poecile atricapillus	Aves	Passeriformes	MP000066	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9807	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Poecile_atricapillus|GCF_030490865.1
+ITPR3	GCF_030490865.1	Poecile atricapillus	Aves	Passeriformes	MP000068	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9974	2670	0	0	intact	2670	sweep_model	True	ok	ITPR3|Poecile_atricapillus|GCF_030490865.1
+ITPR1	GCF_030867095.1	Alligator mississippiensis	Crocodylia	Crocodylia	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.9978	0.9659	2773	0	0	intact	2783	sweep_model	True	ok	ITPR1|Alligator_mississippiensis|GCF_030867095.1
+ITPR2	GCF_030867095.1	Alligator mississippiensis	Crocodylia	Crocodylia	MP000053	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9552	2700	0	0	intact	2701	sweep_model	True	ok	ITPR2|Alligator_mississippiensis|GCF_030867095.1
+ITPR3	GCF_030867095.1	Alligator mississippiensis	Crocodylia	Crocodylia	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.952	2664	0	0	intact	2667	sweep_model	True	ok	ITPR3|Alligator_mississippiensis|GCF_030867095.1
+ITPR1	GCF_030867145.1	Opisthocomus hoazin	Aves	Opisthocomiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9888	2779	0	0	intact	2776	sweep_model	True	ok	ITPR1|Opisthocomus_hoazin|GCF_030867145.1
+ITPR2	GCF_030867145.1	Opisthocomus hoazin	Aves	Opisthocomiformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9841	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Opisthocomus_hoazin|GCF_030867145.1
+ITPR3	GCF_030867145.1	Opisthocomus hoazin	Aves	Opisthocomiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9884	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Opisthocomus_hoazin|GCF_030867145.1
+ITPR1	GCF_030936135.1	Gavia stellata	Aves	Gaviiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9924	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Gavia_stellata|GCF_030936135.1
+ITPR2	GCF_030936135.1	Gavia stellata	Aves	Gaviiformes	MP000054	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9889	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Gavia_stellata|GCF_030936135.1
+ITPR3	GCF_030936135.1	Gavia stellata	Aves	Gaviiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9899	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Gavia_stellata|GCF_030936135.1
+ITPR1	GCF_033026475.1	Channa argus	Actinopteri	Anabantiformes	MP000080	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9431	2748	1	0	intact	2770	sweep_model	True	ok	ITPR1|Channa_argus|GCF_033026475.1
+ITPR2	GCF_033026475.1	Channa argus	Actinopteri	Anabantiformes	MP000082	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8588	2701	1	0	intact	2696	sweep_model	True	ok	ITPR2|Channa_argus|GCF_033026475.1
+ITPR3	GCF_033026475.1	Channa argus	Actinopteri	Anabantiformes	MP000084	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.902	2670	0	0	intact	2680	sweep_model	True	ok	ITPR3|Channa_argus|GCF_033026475.1
+ITPR1	GCF_033807715.1	Cololabis saira	Actinopteri	Beloniformes	MP000091	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9447	2748	0	1	intact	2743	sweep_model	True	ok	ITPR1|Cololabis_saira|GCF_033807715.1
+ITPR2	GCF_033807715.1	Cololabis saira	Actinopteri	Beloniformes	MP000093	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8567	2701	1	1	intact	2711	sweep_model	True	ok	ITPR2|Cololabis_saira|GCF_033807715.1
+ITPR3	GCF_033807715.1	Cololabis saira	Actinopteri	Beloniformes	MP000094	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8897	2670	0	0	intact	2691	sweep_model	True	ok	ITPR3|Cololabis_saira|GCF_033807715.1
+ITPR1	GCF_033978785.1	Entelurus aequoreus	Actinopteri	Syngnathiformes	MP000093	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9415	2748	0	0	intact	2766	sweep_model	True	ok	ITPR1|Entelurus_aequoreus|GCF_033978785.1
+ITPR2	GCF_033978785.1	Entelurus aequoreus	Actinopteri	Syngnathiformes	MP000095	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8124	2701	0	0	intact	2711	sweep_model	True	ok	ITPR2|Entelurus_aequoreus|GCF_033978785.1
+ITPR3	GCF_033978785.1	Entelurus aequoreus	Actinopteri	Syngnathiformes	MP000098	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	0.9989	0.8854	2667	0	0	intact	2672	sweep_model	True	ok	ITPR3|Entelurus_aequoreus|GCF_033978785.1
+ITPR1	GCF_034619465.1	Leptosomus discolor	Aves	Leptosomiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9903	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Leptosomus_discolor|GCF_034619465.1
+ITPR2	GCF_034619465.1	Leptosomus discolor	Aves	Leptosomiformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9889	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Leptosomus_discolor|GCF_034619465.1
+ITPR3	GCF_034619465.1	Leptosomus discolor	Aves	Leptosomiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9899	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Leptosomus_discolor|GCF_034619465.1
+ITPR1	GCF_034638445.1	Ciconia boyciana	Aves	Ciconiiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9921	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Ciconia_boyciana|GCF_034638445.1
+ITPR2	GCF_034638445.1	Ciconia boyciana	Aves	Ciconiiformes	MP000052	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.99	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Ciconia_boyciana|GCF_034638445.1
+ITPR3	GCF_034638445.1	Ciconia boyciana	Aves	Ciconiiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9902	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Ciconia_boyciana|GCF_034638445.1
+ITPR1	GCF_034702125.1	Engraulis encrasicolus	Actinopteri	Clupeiformes	MP000009	A0A8M2BDG0|itpr1a|Danio_rerio|ITPR1	1.0	0.8786	2711	0	0	intact	2733	sweep_model	True	ok	ITPR1|Engraulis_encrasicolus|GCF_034702125.1
+ITPR2	GCF_034702125.1	Engraulis encrasicolus	Actinopteri	Clupeiformes	MP000029	A0A8M9PQQ3|itpr2|Danio_rerio|ITPR2	1.0	0.8087	2665	0	0	intact	2662	sweep_model	True	ok	ITPR2|Engraulis_encrasicolus|GCF_034702125.1
+ITPR3	GCF_034702125.1	Engraulis encrasicolus	Actinopteri	Clupeiformes	MP000083	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8021	2670	0	0	intact	2669	sweep_model	True	ok	ITPR3|Engraulis_encrasicolus|GCF_034702125.1
+ITPR1	GCF_035084215.1	Heptranchias perlo	Chondrichthyes	Hexanchiformes	MP000068	A0ABM4F3U0|ITPR1|Apteryx_mantelli	1.0	0.876	2750	0	0	intact	2760	sweep_model	True	ok	ITPR1|Heptranchias_perlo|GCF_035084215.1
+ITPR2	GCF_035084215.1	Heptranchias perlo	Chondrichthyes	Hexanchiformes	MP000013	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.811	2701	0	0	intact	2703	sweep_model	True	ok	ITPR2|Heptranchias_perlo|GCF_035084215.1
+ITPR3	GCF_035084215.1	Heptranchias perlo	Chondrichthyes	Hexanchiformes	MP000076	A0A4W3GWE7|ITPR3|Callorhinchus_milii	1.0	0.8577	2630	1	0	intact	2649	sweep_model	True	ok	ITPR3|Heptranchias_perlo|GCF_035084215.1
+ITPR1	GCF_035582795.1	Mycteria americana	Aves	Ciconiiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9932	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Mycteria_americana|GCF_035582795.1
+ITPR2	GCF_035582795.1	Mycteria americana	Aves	Ciconiiformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9893	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Mycteria_americana|GCF_035582795.1
+ITPR3	GCF_035582795.1	Mycteria americana	Aves	Ciconiiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9891	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Mycteria_americana|GCF_035582795.1
+ITPR1	GCF_035609145.1	Eleutherodactylus coqui	Amphibia	Anura	MP000004	A0A8J0T3U5|itpr1|Xenopus_tropicalis|ITPR1	1.0	0.9304	2743	0	1	intact	2728	sweep_model	True	ok	ITPR1|Eleutherodactylus_coqui|GCF_035609145.1
+ITPR2	GCF_035609145.1	Eleutherodactylus coqui	Amphibia	Anura	MP000013	A0A6I8RGU0|itpr2|Xenopus_tropicalis|ITPR2	0.8828	0.8915	2388	0	0	intact	2386	sweep_model	True	ok	ITPR2|Eleutherodactylus_coqui|GCF_035609145.1
+ITPR3	GCF_035609145.1	Eleutherodactylus coqui	Amphibia	Anura	MP000022	A0A8J0SYK9|itpr3|Xenopus_tropicalis|ITPR3	1.0	0.886	2673	0	0	intact	2683	sweep_model	True	ok	ITPR3|Eleutherodactylus_coqui|GCF_035609145.1
+ITPR1	GCF_036013445.1	Caloenas nicobarica	Aves	Columbiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9914	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Caloenas_nicobarica|GCF_036013445.1
+ITPR2	GCF_036013445.1	Caloenas nicobarica	Aves	Columbiformes	MP000052	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9885	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Caloenas_nicobarica|GCF_036013445.1
+ITPR3	GCF_036013445.1	Caloenas nicobarica	Aves	Columbiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9769	2664	0	0	intact	2688	sweep_model	True	ok	ITPR3|Caloenas_nicobarica|GCF_036013445.1
+ITPR1	GCF_036365525.1	Heterodontus francisci	Chondrichthyes	Heterodontiformes	MP000067	A0ABM4F3U0|ITPR1|Apteryx_mantelli	1.0	0.8784	2750	0	0	intact	2757	sweep_model	True	ok	ITPR1|Heterodontus_francisci|GCF_036365525.1
+ITPR2	GCF_036365525.1	Heterodontus francisci	Chondrichthyes	Heterodontiformes	MP000013	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.8149	2701	0	1	intact	2700	sweep_model	True	ok	ITPR2|Heterodontus_francisci|GCF_036365525.1
+ITPR3	GCF_036365525.1	Heterodontus francisci	Chondrichthyes	Heterodontiformes	MP000075	A0A4W3GWE7|ITPR3|Callorhinchus_milii	1.0	0.8483	2630	2	0	intact	2636	sweep_model	True	ok	ITPR3|Heterodontus_francisci|GCF_036365525.1
+ITPR1	GCF_036370855.1	Dromaius novaehollandiae	Aves	Casuariiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9906	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Dromaius_novaehollandiae|GCF_036370855.1
+ITPR2	GCF_036370855.1	Dromaius novaehollandiae	Aves	Casuariiformes	MP000054	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9841	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Dromaius_novaehollandiae|GCF_036370855.1
+ITPR3	GCF_036370855.1	Dromaius novaehollandiae	Aves	Casuariiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9891	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Dromaius_novaehollandiae|GCF_036370855.1
+ITPR1	GCF_036373705.1	Amia ocellicauda	Actinopteri	Amiiformes	MP000053	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9096	2748	0	0	intact	2733	sweep_model	True	ok	ITPR1|Amia_ocellicauda|GCF_036373705.1
+ITPR2	GCF_036373705.1	Amia ocellicauda	Actinopteri	Amiiformes	MP000013	F1P1X4|ITPR2|Gallus_gallus|ITPR2	1.0	0.8125	2700	0	0	intact	2691	sweep_model	True	ok	ITPR2|Amia_ocellicauda|GCF_036373705.1
+ITPR3	GCF_036373705.1	Amia ocellicauda	Actinopteri	Amiiformes	MP000056	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8297	2670	0	0	intact	2668	sweep_model	True	ok	ITPR3|Amia_ocellicauda|GCF_036373705.1
+ITPR1	GCF_036417535.1	Chlamydotis macqueenii	Aves	Otidiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9881	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Chlamydotis_macqueenii|GCF_036417535.1
+ITPR2	GCF_036417535.1	Chlamydotis macqueenii	Aves	Otidiformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9874	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Chlamydotis_macqueenii|GCF_036417535.1
+ITPR3	GCF_036417535.1	Chlamydotis macqueenii	Aves	Otidiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9884	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Chlamydotis_macqueenii|GCF_036417535.1
+ITPR1	GCF_036417845.1	Apteryx mantelli	Aves	Apterygiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9896	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Apteryx_mantelli|GCF_036417845.1
+ITPR2	GCF_036417845.1	Apteryx mantelli	Aves	Apterygiformes	MP000010	F1P1X4|ITPR2|Gallus_gallus|ITPR2	1.0	0.9833	2700	0	0	intact	2700	sweep_model	True	ok	ITPR2|Apteryx_mantelli|GCF_036417845.1
+ITPR3	GCF_036417845.1	Apteryx mantelli	Aves	Apterygiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9895	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Apteryx_mantelli|GCF_036417845.1
+ITPR1	GCF_036850765.1	Saccopteryx bilineata	Mammalia	Chiroptera	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9753	2758	0	0	intact	2757	sweep_model	True	ok	ITPR1|Saccopteryx_bilineata|GCF_036850765.1
+ITPR2	GCF_036850765.1	Saccopteryx bilineata	Mammalia	Chiroptera	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9674	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Saccopteryx_bilineata|GCF_036850765.1
+ITPR3	GCF_036850765.1	Saccopteryx bilineata	Mammalia	Chiroptera	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9622	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Saccopteryx_bilineata|GCF_036850765.1
+ITPR1	GCF_036971445.1	Narcine bancroftii	Chondrichthyes	Torpediniformes	MP000068	A0ABM4F3U0|ITPR1|Apteryx_mantelli	1.0	0.8717	2750	0	0	intact	2752	sweep_model	True	ok	ITPR1|Narcine_bancroftii|GCF_036971445.1
+ITPR2	GCF_036971445.1	Narcine bancroftii	Chondrichthyes	Torpediniformes	MP000070	A0A672UP22|ITPR2|Strigops_habroptila	0.9985	0.7951	2696	0	1	intact	2712	sweep_model	True	ok	ITPR2|Narcine_bancroftii|GCF_036971445.1
+ITPR3	GCF_036971445.1	Narcine bancroftii	Chondrichthyes	Torpediniformes	MP000076	A0A4W3GWE7|ITPR3|Callorhinchus_milii	1.0	0.8161	2630	1	0	intact	2634	sweep_model	True	ok	ITPR3|Narcine_bancroftii|GCF_036971445.1
+ITPR1	GCF_037157495.1	Lathamus discolor	Aves	Psittaciformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9896	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Lathamus_discolor|GCF_037157495.1
+ITPR2	GCF_037157495.1	Lathamus discolor	Aves	Psittaciformes	MP000049	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9907	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Lathamus_discolor|GCF_037157495.1
+ITPR3	GCF_037157495.1	Lathamus discolor	Aves	Psittaciformes	MP000017	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9854	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Lathamus_discolor|GCF_037157495.1
+ITPR1	GCF_037176945.1	Latimeria chalumnae	Coelacanthimorpha	Coelacanthiformes	MP000007	H3A1P5|ITPR1|Latimeria_chalumnae|ITPR1	1.0	0.9847	2725	1	0	intact	2729	sweep_model	True	ok	ITPR1|Latimeria_chalumnae|GCF_037176945.1
+ITPR2	GCF_037176945.1	Latimeria chalumnae	Coelacanthimorpha	Coelacanthiformes	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.8422	2701	0	0	intact	2709	sweep_model	True	ok	ITPR2|Latimeria_chalumnae|GCF_037176945.1
+ITPR3	GCF_037176945.1	Latimeria chalumnae	Coelacanthimorpha	Coelacanthiformes	MP000077	H3B932|ITPR3|Latimeria_chalumnae	1.0	0.9827	2675	2	1	intact	2714	sweep_model	True	ok	ITPR3|Latimeria_chalumnae|GCF_037176945.1
+ITPR1	GCF_037893015.1	Macrotis lagotis	Mammalia	Peramelemorphia	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.9713	2749	0	0	intact	2749	sweep_model	True	ok	ITPR1|Macrotis_lagotis|GCF_037893015.1
+ITPR2	GCF_037893015.1	Macrotis lagotis	Mammalia	Peramelemorphia	MP000007	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.926	2701	0	0	intact	2675	sweep_model	True	ok	ITPR2|Macrotis_lagotis|GCF_037893015.1
+ITPR3	GCF_037893015.1	Macrotis lagotis	Mammalia	Peramelemorphia	MP000015	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9379	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Macrotis_lagotis|GCF_037893015.1
+ITPR1	GCF_039877785.1	Chaetodon trifascialis	Actinopteri	Chaetodontiformes	MP000084	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9673	2748	0	0	intact	2743	sweep_model	True	ok	ITPR1|Chaetodon_trifascialis|GCF_039877785.1
+ITPR2	GCF_039877785.1	Chaetodon trifascialis	Actinopteri	Chaetodontiformes	MP000086	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.876	2701	2	0	intact	2694	sweep_model	True	ok	ITPR2|Chaetodon_trifascialis|GCF_039877785.1
+ITPR3	GCF_039877785.1	Chaetodon trifascialis	Actinopteri	Chaetodontiformes	MP000087	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9076	2670	0	0	intact	2695	sweep_model	True	ok	ITPR3|Chaetodon_trifascialis|GCF_039877785.1
+ITPR1	GCF_040054535.1	Antennarius striatus	Actinopteri	Lophiiformes	MP000086	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9486	2748	0	0	intact	2759	sweep_model	True	ok	ITPR1|Antennarius_striatus|GCF_040054535.1
+ITPR2	GCF_040054535.1	Antennarius striatus	Actinopteri	Lophiiformes	MP000088	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.859	2701	1	0	intact	2685	sweep_model	True	ok	ITPR2|Antennarius_striatus|GCF_040054535.1
+ITPR3	GCF_040054535.1	Antennarius striatus	Actinopteri	Lophiiformes	MP000090	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8844	2670	0	0	intact	2713	sweep_model	True	ok	ITPR3|Antennarius_striatus|GCF_040054535.1
+ITPR1	GCF_040807025.1	Struthio camelus	Aves	Struthioniformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9889	2779	0	0	intact	2781	sweep_model	True	ok	ITPR1|Struthio_camelus|GCF_040807025.1
+ITPR2	GCF_040807025.1	Struthio camelus	Aves	Struthioniformes	MP000054	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9841	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Struthio_camelus|GCF_040807025.1
+ITPR3	GCF_040807025.1	Struthio camelus	Aves	Struthioniformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9899	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Struthio_camelus|GCF_040807025.1
+ITPR1	GCF_040954835.1	Lepisosteus oculatus	Actinopteri	Semionotiformes	MP000053	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9042	2748	0	0	intact	2737	sweep_model	True	ok	ITPR1|Lepisosteus_oculatus|GCF_040954835.1
+ITPR2	GCF_040954835.1	Lepisosteus oculatus	Actinopteri	Semionotiformes	MP000058	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.8174	2700	0	0	intact	2691	sweep_model	True	ok	ITPR2|Lepisosteus_oculatus|GCF_040954835.1
+ITPR3	GCF_040954835.1	Lepisosteus oculatus	Actinopteri	Semionotiformes	MP000056	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8367	2670	0	0	intact	2671	sweep_model	True	ok	ITPR3|Lepisosteus_oculatus|GCF_040954835.1
+ITPR1	GCF_041296385.2	Aphelocoma coerulescens	Aves	Passeriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.986	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Aphelocoma_coerulescens|GCF_041296385.2
+ITPR2	GCF_041296385.2	Aphelocoma coerulescens	Aves	Passeriformes	MP000053	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9807	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Aphelocoma_coerulescens|GCF_041296385.2
+ITPR3	GCF_041296385.2	Aphelocoma coerulescens	Aves	Passeriformes	MP000054	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	1.0	0.9933	2670	0	0	intact	2677	sweep_model	True	ok	ITPR3|Aphelocoma_coerulescens|GCF_041296385.2
+ITPR1	GCF_041902795.1	Electrophorus electricus	Actinopteri	Gymnotiformes	MP000009	A0A8M2BDG0|itpr1a|Danio_rerio|ITPR1	1.0	0.9205	2711	1	0	intact	2714	sweep_model	True	ok	ITPR1|Electrophorus_electricus|GCF_041902795.1
+ITPR2	GCF_041902795.1	Electrophorus electricus	Actinopteri	Gymnotiformes	MP000029	A0A8M9PQQ3|itpr2|Danio_rerio|ITPR2	1.0	0.7986	2665	0	0	intact	2644	sweep_model	True	ok	ITPR2|Electrophorus_electricus|GCF_041902795.1
+ITPR3	GCF_041902795.1	Electrophorus electricus	Actinopteri	Gymnotiformes	MP000046	A0A8M6Z266|itpr3|Danio_rerio|ITPR3	1.0	0.8437	2635	0	0	intact	2666	sweep_model	True	ok	ITPR3|Electrophorus_electricus|GCF_041902795.1
+ITPR1	GCF_042186555.1	Aquarana catesbeiana	Amphibia	Anura			0.545	0.878					0	sweep_model	False	below_quality_bar(assembly_gap)	
+ITPR2	GCF_042186555.1	Aquarana catesbeiana	Amphibia	Anura	MP000016	A0A6I8RGU0|itpr2|Xenopus_tropicalis|ITPR2	1.0	0.9011	2705	0	0	intact	1190	sweep_model	True	ok	ITPR2|Aquarana_catesbeiana|GCF_042186555.1
+ITPR3	GCF_042186555.1	Aquarana catesbeiana	Amphibia	Anura	MP000024	A0A8J0SYK9|itpr3|Xenopus_tropicalis|ITPR3	1.0	0.8903	2673	0	0	intact	1143	sweep_model	True	ok	ITPR3|Aquarana_catesbeiana|GCF_042186555.1
+ITPR1	GCF_042242105.1	Pempheris klunzingeri	Actinopteri	Acropomatiformes	MP000086	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9604	2748	0	0	intact	2743	sweep_model	True	ok	ITPR1|Pempheris_klunzingeri|GCF_042242105.1
+ITPR2	GCF_042242105.1	Pempheris klunzingeri	Actinopteri	Acropomatiformes	MP000088	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8757	2701	0	0	intact	2686	sweep_model	True	ok	ITPR2|Pempheris_klunzingeri|GCF_042242105.1
+ITPR3	GCF_042242105.1	Pempheris klunzingeri	Actinopteri	Acropomatiformes	MP000089	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9085	2670	0	0	intact	2686	sweep_model	True	ok	ITPR3|Pempheris_klunzingeri|GCF_042242105.1
+ITPR1	GCF_043380555.1	Nothobranchius furzeri	Actinopteri	Cyprinodontiformes	MP000088	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.8949	2748	0	0	intact	2736	sweep_model	True	ok	ITPR1|Nothobranchius_furzeri|GCF_043380555.1
+ITPR2	GCF_043380555.1	Nothobranchius furzeri	Actinopteri	Cyprinodontiformes	MP000090	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.7827	2701	2	0	intact	2706	sweep_model	True	ok	ITPR2|Nothobranchius_furzeri|GCF_043380555.1
+ITPR3	GCF_043380555.1	Nothobranchius furzeri	Actinopteri	Cyprinodontiformes	MP000093	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	1.0	2670	0	0	intact	2670	sweep_model	True	ok	ITPR3|Nothobranchius_furzeri|GCF_043380555.1
+ITPR1	GCF_045865225.1	Trachurus japonicus	Actinopteri	Carangiformes	MP000086	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9629	2748	0	0	intact	2732	sweep_model	True	ok	ITPR1|Trachurus_japonicus|GCF_045865225.1
+ITPR2	GCF_045865225.1	Trachurus japonicus	Actinopteri	Carangiformes	MP000088	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8688	2701	0	1	intact	2723	sweep_model	True	ok	ITPR2|Trachurus_japonicus|GCF_045865225.1
+ITPR3	GCF_045865225.1	Trachurus japonicus	Actinopteri	Carangiformes	MP000089	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9087	2670	0	0	intact	2691	sweep_model	True	ok	ITPR3|Trachurus_japonicus|GCF_045865225.1
+ITPR1	GCF_046128005.1	Genypterus blacodes	Actinopteri	Ophidiiformes	MP000084	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9476	2748	0	0	intact	2757	sweep_model	True	ok	ITPR1|Genypterus_blacodes|GCF_046128005.1
+ITPR2	GCF_046128005.1	Genypterus blacodes	Actinopteri	Ophidiiformes	MP000086	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8204	2701	1	0	intact	2688	sweep_model	True	ok	ITPR2|Genypterus_blacodes|GCF_046128005.1
+ITPR3	GCF_046128005.1	Genypterus blacodes	Actinopteri	Ophidiiformes	MP000089	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	0.8944	0.8721	2388	1	0	intact	2404	sweep_model	True	ok	ITPR3|Genypterus_blacodes|GCF_046128005.1
+ITPR1	GCF_047370975.1	Nipponia nippon	Aves	Pelecaniformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9921	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Nipponia_nippon|GCF_047370975.1
+ITPR2	GCF_047370975.1	Nipponia nippon	Aves	Pelecaniformes	MP000054	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9889	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Nipponia_nippon|GCF_047370975.1
+ITPR3	GCF_047370975.1	Nipponia nippon	Aves	Pelecaniformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9869	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Nipponia_nippon|GCF_047370975.1
+ITPR1	GCF_047496795.1	Chiloscyllium punctatum	Chondrichthyes	Orectolobiformes	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.8726	2749	0	0	intact	2697	sweep_model	True	ok	ITPR1|Chiloscyllium_punctatum|GCF_047496795.1
+ITPR2	GCF_047496795.1	Chiloscyllium punctatum	Chondrichthyes	Orectolobiformes	MP000055	A0ABM1LG32|ITPR2|Gekko_japonicus	1.0	0.814	2701	0	0	intact	2693	sweep_model	True	ok	ITPR2|Chiloscyllium_punctatum|GCF_047496795.1
+ITPR3	GCF_047496795.1	Chiloscyllium punctatum	Chondrichthyes	Orectolobiformes	MP000051	A0A4W3GWE7|ITPR3|Callorhinchus_milii	1.0	0.8382	2630	3	1	intact	2650	sweep_model	True	ok	ITPR3|Chiloscyllium_punctatum|GCF_047496795.1
+ITPR1	GCF_047496885.1	Scyliorhinus torazame	Chondrichthyes	Carcharhiniformes	MP000063	A0ABM4F3U0|ITPR1|Apteryx_mantelli	1.0	0.8749	2750	0	0	intact	2759	sweep_model	True	ok	ITPR1|Scyliorhinus_torazame|GCF_047496885.1
+ITPR2	GCF_047496885.1	Scyliorhinus torazame	Chondrichthyes	Carcharhiniformes	MP000013	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.8065	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Scyliorhinus_torazame|GCF_047496885.1
+ITPR3	GCF_047496885.1	Scyliorhinus torazame	Chondrichthyes	Carcharhiniformes	MP000071	A0A4W3GWE7|ITPR3|Callorhinchus_milii	1.0	0.8405	2630	2	0	intact	2626	sweep_model	True	ok	ITPR3|Scyliorhinus_torazame|GCF_047496885.1
+ITPR1	GCF_047663525.1	Anas platyrhynchos	Aves	Anseriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9914	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Anas_platyrhynchos|GCF_047663525.1
+ITPR2	GCF_047663525.1	Anas platyrhynchos	Aves	Anseriformes	MP000010	F1P1X4|ITPR2|Gallus_gallus|ITPR2	1.0	0.9826	2700	0	0	intact	2700	sweep_model	True	ok	ITPR2|Anas_platyrhynchos|GCF_047663525.1
+ITPR3	GCF_047663525.1	Anas platyrhynchos	Aves	Anseriformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9936	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Anas_platyrhynchos|GCF_047663525.1
+ITPR1	GCF_047716275.1	Strix uralensis	Aves	Strigiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9921	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Strix_uralensis|GCF_047716275.1
+ITPR2	GCF_047716275.1	Strix uralensis	Aves	Strigiformes	MP000054	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9774	2700	0	0	intact	2702	sweep_model	True	ok	ITPR2|Strix_uralensis|GCF_047716275.1
+ITPR3	GCF_047716275.1	Strix uralensis	Aves	Strigiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.991	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Strix_uralensis|GCF_047716275.1
+ITPR1	GCF_048418815.1	Hemitrygon akajei	Chondrichthyes	Myliobatiformes	MP000003	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.8681	2749	0	0	intact	2760	sweep_model	True	ok	ITPR1|Hemitrygon_akajei|GCF_048418815.1
+ITPR2	GCF_048418815.1	Hemitrygon akajei	Chondrichthyes	Myliobatiformes	MP000072	A0A672UP22|ITPR2|Strigops_habroptila	0.9985	0.806	2696	0	0	intact	2707	sweep_model	True	ok	ITPR2|Hemitrygon_akajei|GCF_048418815.1
+ITPR3	GCF_048418815.1	Hemitrygon akajei	Chondrichthyes	Myliobatiformes	MP000078	A0A4W3GWE7|ITPR3|Callorhinchus_milii	1.0	0.8002	2630	0	0	intact	2641	sweep_model	True	ok	ITPR3|Hemitrygon_akajei|GCF_048418815.1
+ITPR1	GCF_048593235.1	Sminthopsis crassicaudata	Mammalia	Dasyuromorphia	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.9716	2749	0	0	intact	2749	sweep_model	True	ok	ITPR1|Sminthopsis_crassicaudata|GCF_048593235.1
+ITPR2	GCF_048593235.1	Sminthopsis crassicaudata	Mammalia	Dasyuromorphia	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9489	2701	0	0	intact	2698	sweep_model	True	ok	ITPR2|Sminthopsis_crassicaudata|GCF_048593235.1
+ITPR3	GCF_048593235.1	Sminthopsis crassicaudata	Mammalia	Dasyuromorphia	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9368	2671	0	0	intact	2667	sweep_model	True	ok	ITPR3|Sminthopsis_crassicaudata|GCF_048593235.1
+ITPR1	GCF_048594095.1	Paramormyrops kingsleyae	Actinopteri	Osteoglossiformes	MP000075	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9067	2748	0	1	intact	2752	sweep_model	True	ok	ITPR1|Paramormyrops_kingsleyae|GCF_048594095.1
+ITPR2	GCF_048594095.1	Paramormyrops kingsleyae	Actinopteri	Osteoglossiformes	MP000021	F1P1X4|ITPR2|Gallus_gallus|ITPR2	1.0	0.7758	2700	0	0	intact	2680	sweep_model	True	ok	ITPR2|Paramormyrops_kingsleyae|GCF_048594095.1
+ITPR3	GCF_048594095.1	Paramormyrops kingsleyae	Actinopteri	Osteoglossiformes	MP000080	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8075	2670	0	0	intact	2679	sweep_model	True	ok	ITPR3|Paramormyrops_kingsleyae|GCF_048594095.1
+ITPR1	GCF_048934315.1	Petromyzon marinus	Hyperoartia	Petromyzontiformes	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.736	2758	1	0	intact	2826	sweep_model	True	ok	ITPR1|Petromyzon_marinus|GCF_048934315.1
+ITPR2	GCF_048934315.1	Petromyzon marinus	Hyperoartia	Petromyzontiformes									0	sweep_model	False	below_quality_bar(absent)	
+ITPR3	GCF_048934315.1	Petromyzon marinus	Hyperoartia	Petromyzontiformes									0	sweep_model	False	below_quality_bar(absent)	
+ITPR1	GCF_049350105.2	Macaca mulatta	Mammalia	Primates	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9956	2758	0	0	intact	2758	sweep_model	True	ok	ITPR1|Macaca_mulatta|GCF_049350105.2
+ITPR2	GCF_049350105.2	Macaca mulatta	Mammalia	Primates	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9948	2701	0	0	intact	2700	sweep_model	True	ok	ITPR2|Macaca_mulatta|GCF_049350105.2
+ITPR3	GCF_049350105.2	Macaca mulatta	Mammalia	Primates	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9921	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Macaca_mulatta|GCF_049350105.2
+ITPR1	GCF_050624435.1	Tenrec ecaudatus	Mammalia	Afrosoricida	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.9782	2749	0	0	intact	2749	sweep_model	True	ok	ITPR1|Tenrec_ecaudatus|GCF_050624435.1
+ITPR2	GCF_050624435.1	Tenrec ecaudatus	Mammalia	Afrosoricida	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9596	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Tenrec_ecaudatus|GCF_050624435.1
+ITPR3	GCF_050624435.1	Tenrec ecaudatus	Mammalia	Afrosoricida	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9577	2671	0	0	intact	2669	sweep_model	True	ok	ITPR3|Tenrec_ecaudatus|GCF_050624435.1
+ITPR1	GCF_052040795.1	Danio rerio	Actinopteri	Cypriniformes	MP000009	A0A8M2BDG0|itpr1a|Danio_rerio|ITPR1	1.0	1.0	2711	0	0	intact	2711	sweep_model	True	ok	ITPR1|Danio_rerio|GCF_052040795.1
+ITPR2	GCF_052040795.1	Danio rerio	Actinopteri	Cypriniformes	MP000029	A0A8M9PQQ3|itpr2|Danio_rerio|ITPR2	1.0	1.0	2665	0	0	intact	2665	sweep_model	True	ok	ITPR2|Danio_rerio|GCF_052040795.1
+ITPR3	GCF_052040795.1	Danio rerio	Actinopteri	Cypriniformes	MP000046	A0A8M6Z266|itpr3|Danio_rerio|ITPR3	1.0	0.9977	2635	0	0	intact	2636	sweep_model	True	ok	ITPR3|Danio_rerio|GCF_052040795.1
+ITPR1	GCF_052327205.1	Somniosus microcephalus	Chondrichthyes	Squaliformes	MP000032	A0ABM4F3U0|ITPR1|Apteryx_mantelli	1.0	0.8496	2750	2	2	intact	2602	sweep_model	True	ok	ITPR1|Somniosus_microcephalus|GCF_052327205.1
+ITPR2	GCF_052327205.1	Somniosus microcephalus	Chondrichthyes	Squaliformes	MP000017#58	F1P1X4|ITPR2|Gallus_gallus|ITPR2	1.0	0.8164	2700	0	0	intact	0	sweep_model	False	no_translation	
+ITPR3	GCF_052327205.1	Somniosus microcephalus	Chondrichthyes	Squaliformes	MP000057	A0A4W3GWE7|ITPR3|Callorhinchus_milii	1.0	0.8496	2630	0	0	intact	2655	sweep_model	True	ok	ITPR3|Somniosus_microcephalus|GCF_052327205.1
+ITPR1	GCF_054371585.1	Giraffa tippelskirchi	Mammalia	Artiodactyla	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9833	2758	0	0	intact	2757	sweep_model	True	ok	ITPR1|Giraffa_tippelskirchi|GCF_054371585.1
+ITPR2	GCF_054371585.1	Giraffa tippelskirchi	Mammalia	Artiodactyla	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9778	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Giraffa_tippelskirchi|GCF_054371585.1
+ITPR3	GCF_054371585.1	Giraffa tippelskirchi	Mammalia	Artiodactyla	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9708	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Giraffa_tippelskirchi|GCF_054371585.1
+ITPR1	GCF_054491055.1	Hypomesus nipponensis	Actinopteri	Osmeriformes	MP000079	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9325	2748	0	0	intact	2736	sweep_model	True	ok	ITPR1|Hypomesus_nipponensis|GCF_054491055.1
+ITPR2	GCF_054491055.1	Hypomesus nipponensis	Actinopteri	Osmeriformes	MP000081	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8091	2701	0	0	intact	2681	sweep_model	True	ok	ITPR2|Hypomesus_nipponensis|GCF_054491055.1
+ITPR3	GCF_054491055.1	Hypomesus nipponensis	Actinopteri	Osmeriformes	MP000084	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.86	2670	0	0	intact	2665	sweep_model	True	ok	ITPR3|Hypomesus_nipponensis|GCF_054491055.1
+ITPR1	GCF_056507025.1	Lutjanus erythropterus	Actinopteri	Lutjaniformes	MP000084	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.963	2748	0	0	intact	2743	sweep_model	True	ok	ITPR1|Lutjanus_erythropterus|GCF_056507025.1
+ITPR2	GCF_056507025.1	Lutjanus erythropterus	Actinopteri	Lutjaniformes	MP000086	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8792	2701	1	0	intact	2694	sweep_model	True	ok	ITPR2|Lutjanus_erythropterus|GCF_056507025.1
+ITPR3	GCF_056507025.1	Lutjanus erythropterus	Actinopteri	Lutjaniformes	MP000087	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9113	2670	0	0	intact	2693	sweep_model	True	ok	ITPR3|Lutjanus_erythropterus|GCF_056507025.1
+ITPR1	GCF_057381845.1	Rhamphochromis longiceps	Actinopteri	Cichliformes	MP000094	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9474	2748	0	0	intact	2754	sweep_model	True	ok	ITPR1|Rhamphochromis_longiceps|GCF_057381845.1
+ITPR2	GCF_057381845.1	Rhamphochromis longiceps	Actinopteri	Cichliformes	MP000096	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.9952	2701	0	0	intact	2702	sweep_model	True	ok	ITPR2|Rhamphochromis_longiceps|GCF_057381845.1
+ITPR3	GCF_057381845.1	Rhamphochromis longiceps	Actinopteri	Cichliformes	MP000097	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8974	2670	0	0	intact	2687	sweep_model	True	ok	ITPR3|Rhamphochromis_longiceps|GCF_057381845.1
+ITPR1	GCF_900324485.3	Mastacembelus armatus	Actinopteri	Synbranchiformes	MP000088	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9539	2748	0	0	intact	2745	sweep_model	True	ok	ITPR1|Mastacembelus_armatus|GCF_900324485.3
+ITPR2	GCF_900324485.3	Mastacembelus armatus	Actinopteri	Synbranchiformes	MP000090	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8522	2701	2	0	intact	2704	sweep_model	True	ok	ITPR2|Mastacembelus_armatus|GCF_900324485.3
+ITPR3	GCF_900324485.3	Mastacembelus armatus	Actinopteri	Synbranchiformes	MP000092	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8925	2670	0	0	intact	2671	sweep_model	True	ok	ITPR3|Mastacembelus_armatus|GCF_900324485.3
+ITPR1	GCF_900634775.2	Gouania willdenowi	Actinopteri	Blenniiformes	MP000088	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9502	2748	0	0	intact	2732	sweep_model	True	ok	ITPR1|Gouania_willdenowi|GCF_900634775.2
+ITPR2	GCF_900634775.2	Gouania willdenowi	Actinopteri	Blenniiformes	MP000090	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8353	2701	1	0	intact	2688	sweep_model	True	ok	ITPR2|Gouania_willdenowi|GCF_900634775.2
+ITPR3	GCF_900634775.2	Gouania willdenowi	Actinopteri	Blenniiformes	MP000093	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8599	2670	5	0	elevated_lesions	2672	sweep_model	False	s15a_elevated_lesions	
+ITPR1	GCF_900747795.2	Erpetoichthys calabaricus	Cladistia	Polypteriformes	MP000057	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.8922	2748	0	0	intact	2732	sweep_model	True	ok	ITPR1|Erpetoichthys_calabaricus|GCF_900747795.2
+ITPR2	GCF_900747795.2	Erpetoichthys calabaricus	Cladistia	Polypteriformes	MP000065	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.7614	2700	0	0	intact	2686	sweep_model	True	ok	ITPR2|Erpetoichthys_calabaricus|GCF_900747795.2
+ITPR3	GCF_900747795.2	Erpetoichthys calabaricus	Cladistia	Polypteriformes	MP000061	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.759	2670	0	0	intact	2655	sweep_model	True	ok	ITPR3|Erpetoichthys_calabaricus|GCF_900747795.2
+ITPR1	GCF_900880675.2	Sparus aurata	Actinopteri	Spariformes	MP000083	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9594	2748	0	0	intact	2743	sweep_model	True	ok	ITPR1|Sparus_aurata|GCF_900880675.2
+ITPR2	GCF_900880675.2	Sparus aurata	Actinopteri	Spariformes	MP000085	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8605	2701	1	1	intact	2724	sweep_model	True	ok	ITPR2|Sparus_aurata|GCF_900880675.2
+ITPR3	GCF_900880675.2	Sparus aurata	Actinopteri	Spariformes	MP000086	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9045	2670	0	0	intact	2691	sweep_model	True	ok	ITPR3|Sparus_aurata|GCF_900880675.2
+ITPR1	GCF_901000725.3	Takifugu rubripes	Actinopteri	Tetraodontiformes	MP000087	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9313	2748	0	0	intact	2770	sweep_model	True	ok	ITPR1|Takifugu_rubripes|GCF_901000725.3
+ITPR2	GCF_901000725.3	Takifugu rubripes	Actinopteri	Tetraodontiformes	MP000089	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8535	2701	0	1	intact	2667	sweep_model	True	ok	ITPR2|Takifugu_rubripes|GCF_901000725.3
+ITPR3	GCF_901000725.3	Takifugu rubripes	Actinopteri	Tetraodontiformes	MP000091	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8589	2670	43	2	elevated_lesions	2703	sweep_model	False	s15a_elevated_lesions	
+ITPR1	GCF_901001135.2	Rhinatrema bivittatum	Amphibia	Gymnophiona	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9033	2758	0	1	intact	2705	sweep_model	True	ok	ITPR1|Rhinatrema_bivittatum|GCF_901001135.2
+ITPR2	GCF_901001135.2	Rhinatrema bivittatum	Amphibia	Gymnophiona	MP000049	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9031	2700	2	0	intact	2700	sweep_model	True	ok	ITPR2|Rhinatrema_bivittatum|GCF_901001135.2
+ITPR3	GCF_901001135.2	Rhinatrema bivittatum	Amphibia	Gymnophiona	MP000014#75	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	0.9989	0.8694	2661	0	0	intact	0	sweep_model	False	no_translation	
+ITPR1	GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	Kurtiformes	MP000086	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9665	2748	0	0	intact	2745	sweep_model	True	ok	ITPR1|Sphaeramia_orbicularis|GCF_902148855.1
+ITPR2	GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	Kurtiformes	MP000088	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8477	2701	1	0	intact	2714	sweep_model	True	ok	ITPR2|Sphaeramia_orbicularis|GCF_902148855.1
+ITPR3	GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	Kurtiformes	MP000091	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9065	2670	0	0	intact	2691	sweep_model	True	ok	ITPR3|Sphaeramia_orbicularis|GCF_902148855.1
+ITPR1	GCF_902150065.1	Myripristis murdjan	Actinopteri	Holocentriformes	MP000087	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9567	2748	0	0	intact	2732	sweep_model	True	ok	ITPR1|Myripristis_murdjan|GCF_902150065.1
+ITPR2	GCF_902150065.1	Myripristis murdjan	Actinopteri	Holocentriformes	MP000089	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8612	2701	1	0	intact	2701	sweep_model	True	ok	ITPR2|Myripristis_murdjan|GCF_902150065.1
+ITPR3	GCF_902150065.1	Myripristis murdjan	Actinopteri	Holocentriformes	MP000090	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8947	2670	0	0	intact	2696	sweep_model	True	ok	ITPR3|Myripristis_murdjan|GCF_902150065.1
+ITPR1	GCF_902167405.1	Gadus morhua	Actinopteri	Gadiformes	MP000086	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9276	2748	0	0	intact	2741	sweep_model	True	ok	ITPR1|Gadus_morhua|GCF_902167405.1
+ITPR2	GCF_902167405.1	Gadus morhua	Actinopteri	Gadiformes	MP000088	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8243	2701	0	0	intact	2714	sweep_model	True	ok	ITPR2|Gadus_morhua|GCF_902167405.1
+ITPR3	GCF_902167405.1	Gadus morhua	Actinopteri	Gadiformes	MP000091	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	0.9978	0.8433	2664	1	0	intact	2682	sweep_model	True	ok	ITPR3|Gadus_morhua|GCF_902167405.1
+ITPR1	GCF_902362185.1	Chanos chanos	Actinopteri	Gonorynchiformes	MP000009	A0A8M2BDG0|itpr1a|Danio_rerio|ITPR1	1.0	0.9082	2711	0	1	intact	2722	sweep_model	True	ok	ITPR1|Chanos_chanos|GCF_902362185.1
+ITPR2	GCF_902362185.1	Chanos chanos	Actinopteri	Gonorynchiformes	MP000029	A0A8M9PQQ3|itpr2|Danio_rerio|ITPR2	1.0	0.8407	2665	0	0	intact	2689	sweep_model	True	ok	ITPR2|Chanos_chanos|GCF_902362185.1
+ITPR3	GCF_902362185.1	Chanos chanos	Actinopteri	Gonorynchiformes	MP000047	A0A8M6Z266|itpr3|Danio_rerio|ITPR3	1.0	0.8376	2635	1	0	intact	2668	sweep_model	True	ok	ITPR3|Chanos_chanos|GCF_902362185.1
+ITPR1	GCF_902500255.1	Thalassophryne amazonica	Actinopteri	Batrachoidiformes	MP000088	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9436	2748	0	0	intact	2731	sweep_model	True	ok	ITPR1|Thalassophryne_amazonica|GCF_902500255.1
+ITPR2	GCF_902500255.1	Thalassophryne amazonica	Actinopteri	Batrachoidiformes	MP000090	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8439	2701	1	0	intact	2681	sweep_model	True	ok	ITPR2|Thalassophryne_amazonica|GCF_902500255.1
+ITPR3	GCF_902500255.1	Thalassophryne amazonica	Actinopteri	Batrachoidiformes	MP000092	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8715	2670	0	0	intact	2686	sweep_model	True	ok	ITPR3|Thalassophryne_amazonica|GCF_902500255.1
+ITPR1	GCF_907165065.1	Caprimulgus europaeus	Aves	Caprimulgiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9914	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Caprimulgus_europaeus|GCF_907165065.1
+ITPR2	GCF_907165065.1	Caprimulgus europaeus	Aves	Caprimulgiformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.99	2700	0	0	intact	2700	sweep_model	True	ok	ITPR2|Caprimulgus_europaeus|GCF_907165065.1
+ITPR3	GCF_907165065.1	Caprimulgus europaeus	Aves	Caprimulgiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9869	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Caprimulgus_europaeus|GCF_907165065.1
+ITPR1	GCF_933228915.1	Telmatherina bonti	Actinopteri	Atheriniformes	MP000084	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.935	2748	0	1	intact	2738	sweep_model	True	ok	ITPR1|Telmatherina_bonti|GCF_933228915.1
+ITPR2	GCF_933228915.1	Telmatherina bonti	Actinopteri	Atheriniformes	MP000086	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8535	2701	0	0	intact	2692	sweep_model	True	ok	ITPR2|Telmatherina_bonti|GCF_933228915.1
+ITPR3	GCF_933228915.1	Telmatherina bonti	Actinopteri	Atheriniformes	MP000088	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9007	2670	0	0	intact	2688	sweep_model	True	ok	ITPR3|Telmatherina_bonti|GCF_933228915.1
+ITPR1	GCF_947461875.1	Haliaeetus albicilla	Aves	Accipitriformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9924	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Haliaeetus_albicilla|GCF_947461875.1
+ITPR2	GCF_947461875.1	Haliaeetus albicilla	Aves	Accipitriformes	MP000055	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.99	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Haliaeetus_albicilla|GCF_947461875.1
+ITPR3	GCF_947461875.1	Haliaeetus albicilla	Aves	Accipitriformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9914	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Haliaeetus_albicilla|GCF_947461875.1
+ITPR1	GCF_949152265.1	Phoxinus phoxinus	Actinopteri	Cypriniformes	MP000009	A0A8M2BDG0|itpr1a|Danio_rerio|ITPR1	1.0	0.9683	2711	0	0	intact	2715	sweep_model	True	ok	ITPR1|Phoxinus_phoxinus|GCF_949152265.1
+ITPR2	GCF_949152265.1	Phoxinus phoxinus	Actinopteri	Cypriniformes	MP000029	A0A8M9PQQ3|itpr2|Danio_rerio|ITPR2	1.0	0.9124	2665	0	0	intact	2693	sweep_model	True	ok	ITPR2|Phoxinus_phoxinus|GCF_949152265.1
+ITPR3	GCF_949152265.1	Phoxinus phoxinus	Actinopteri	Cypriniformes	MP000046	A0A8M6Z266|itpr3|Danio_rerio|ITPR3	1.0	0.9421	2635	0	0	intact	2638	sweep_model	True	ok	ITPR3|Phoxinus_phoxinus|GCF_949152265.1
+ITPR1	GCF_949606895.1	Notothenia rossii	Actinopteri	Perciformes	MP000063	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9546	2748	0	0	intact	2741	sweep_model	True	ok	ITPR1|Notothenia_rossii|GCF_949606895.1
+ITPR2	GCF_949606895.1	Notothenia rossii	Actinopteri	Perciformes	MP000064	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8634	2701	1	0	intact	2684	sweep_model	True	ok	ITPR2|Notothenia_rossii|GCF_949606895.1
+ITPR3	GCF_949606895.1	Notothenia rossii	Actinopteri	Perciformes	MP000066	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8866	2670	1	0	intact	2680	sweep_model	True	ok	ITPR3|Notothenia_rossii|GCF_949606895.1
+ITPR1	GCF_949987555.1	Borostomias antarcticus	Actinopteri	Stomiiformes	MP000073	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9353	2748	0	0	intact	2738	sweep_model	True	ok	ITPR1|Borostomias_antarcticus|GCF_949987555.1
+ITPR2	GCF_949987555.1	Borostomias antarcticus	Actinopteri	Stomiiformes	MP000075	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.7981	2701	0	0	intact	2745	sweep_model	True	ok	ITPR2|Borostomias_antarcticus|GCF_949987555.1
+ITPR3	GCF_949987555.1	Borostomias antarcticus	Actinopteri	Stomiiformes	MP000078	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8469	2670	0	0	intact	2669	sweep_model	True	ok	ITPR3|Borostomias_antarcticus|GCF_949987555.1
+ITPR1	GCF_949987685.1	Ammodytes marinus	Actinopteri	Uranoscopiformes	MP000086	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9525	2748	0	1	intact	2749	sweep_model	True	ok	ITPR1|Ammodytes_marinus|GCF_949987685.1
+ITPR2	GCF_949987685.1	Ammodytes marinus	Actinopteri	Uranoscopiformes	MP000088	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8596	2701	0	1	intact	2695	sweep_model	True	ok	ITPR2|Ammodytes_marinus|GCF_949987685.1
+ITPR3	GCF_949987685.1	Ammodytes marinus	Actinopteri	Uranoscopiformes	MP000089	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.816	2670	1	0	intact	2690	sweep_model	True	ok	ITPR3|Ammodytes_marinus|GCF_949987685.1
+ITPR1	GCF_951640355.1	Cnephaeus nilssonii	Mammalia	Chiroptera	MP000002	P11881|Itpr1|Mus_musculus|ITPR1	1.0	0.9655	2749	0	0	intact	2754	sweep_model	True	ok	ITPR1|Cnephaeus_nilssonii|GCF_951640355.1
+ITPR2	GCF_951640355.1	Cnephaeus nilssonii	Mammalia	Chiroptera	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9748	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Cnephaeus_nilssonii|GCF_951640355.1
+ITPR3	GCF_951640355.1	Cnephaeus nilssonii	Mammalia	Chiroptera	MP000015	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9682	2671	0	0	intact	2671	sweep_model	True	ok	ITPR3|Cnephaeus_nilssonii|GCF_951640355.1
+ITPR1	GCF_951799975.1	Gobius niger	Actinopteri	Gobiiformes	MP000086	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.932	2748	0	0	intact	2730	sweep_model	True	ok	ITPR1|Gobius_niger|GCF_951799975.1
+ITPR2	GCF_951799975.1	Gobius niger	Actinopteri	Gobiiformes	MP000088	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8394	2701	1	0	intact	2675	sweep_model	True	ok	ITPR2|Gobius_niger|GCF_951799975.1
+ITPR3	GCF_951799975.1	Gobius niger	Actinopteri	Gobiiformes	MP000091	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8696	2670	0	0	intact	2668	sweep_model	True	ok	ITPR3|Gobius_niger|GCF_951799975.1
+ITPR1	GCF_960531495.1	Zeus faber	Actinopteri	Zeiformes	MP000080	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.94	2748	0	0	intact	2732	sweep_model	True	ok	ITPR1|Zeus_faber|GCF_960531495.1
+ITPR2	GCF_960531495.1	Zeus faber	Actinopteri	Zeiformes	MP000082	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8527	2701	2	1	intact	2711	sweep_model	True	ok	ITPR2|Zeus_faber|GCF_960531495.1
+ITPR3	GCF_960531495.1	Zeus faber	Actinopteri	Zeiformes	MP000083	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8777	2670	0	0	intact	2680	sweep_model	True	ok	ITPR3|Zeus_faber|GCF_960531495.1
+ITPR1	GCF_963457635.1	Microchirus variegatus	Actinopteri	Pleuronectiformes	MP000085	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9504	2748	0	0	intact	2747	sweep_model	True	ok	ITPR1|Microchirus_variegatus|GCF_963457635.1
+ITPR2	GCF_963457635.1	Microchirus variegatus	Actinopteri	Pleuronectiformes	MP000087	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8581	2701	1	0	intact	2695	sweep_model	True	ok	ITPR2|Microchirus_variegatus|GCF_963457635.1
+ITPR3	GCF_963457635.1	Microchirus variegatus	Actinopteri	Pleuronectiformes	MP000089	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8984	2670	0	0	intact	2682	sweep_model	True	ok	ITPR3|Microchirus_variegatus|GCF_963457635.1
+ITPR1	GCF_963514005.1	Raja brachyura	Chondrichthyes	Rajiformes	MP000005	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	0.9953	0.8638	2766	0	0	intact	2785	sweep_model	True	ok	ITPR1|Raja_brachyura|GCF_963514005.1
+ITPR2	GCF_963514005.1	Raja brachyura	Chondrichthyes	Rajiformes	MP000013	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.7937	2701	0	0	intact	2702	sweep_model	True	ok	ITPR2|Raja_brachyura|GCF_963514005.1
+ITPR3	GCF_963514005.1	Raja brachyura	Chondrichthyes	Rajiformes	MP000076	A0A4W3GWE7|ITPR3|Callorhinchus_milii	1.0	0.8139	2630	1	0	intact	2650	sweep_model	True	ok	ITPR3|Raja_brachyura|GCF_963514005.1
+ITPR1	GCF_963514075.1	Conger conger	Actinopteri	Anguilliformes	MP000077	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9059	2748	2	0	intact	2749	sweep_model	True	ok	ITPR1|Conger_conger|GCF_963514075.1
+ITPR2	GCF_963514075.1	Conger conger	Actinopteri	Anguilliformes	MP000013	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.7886	2701	0	0	intact	2686	sweep_model	True	ok	ITPR2|Conger_conger|GCF_963514075.1
+ITPR3	GCF_963514075.1	Conger conger	Actinopteri	Anguilliformes	MP000082	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.83	2670	0	0	intact	2675	sweep_model	True	ok	ITPR3|Conger_conger|GCF_963514075.1
+ITPR1	GCF_963514085.1	Chelon labrosus	Actinopteri	Mugiliformes	MP000090	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9638	2748	0	0	intact	2751	sweep_model	True	ok	ITPR1|Chelon_labrosus|GCF_963514085.1
+ITPR2	GCF_963514085.1	Chelon labrosus	Actinopteri	Mugiliformes	MP000092	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8729	2701	1	0	intact	2691	sweep_model	True	ok	ITPR2|Chelon_labrosus|GCF_963514085.1
+ITPR3	GCF_963514085.1	Chelon labrosus	Actinopteri	Mugiliformes	MP000093	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.9044	2670	0	0	intact	2682	sweep_model	True	ok	ITPR3|Chelon_labrosus|GCF_963514085.1
+ITPR1	GCF_963921795.1	Nannobrachium achirus	Actinopteri	Myctophiformes	MP000085	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9137	2748	0	0	intact	2748	sweep_model	True	ok	ITPR1|Nannobrachium_achirus|GCF_963921795.1
+ITPR2	GCF_963921795.1	Nannobrachium achirus	Actinopteri	Myctophiformes	MP000087	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8295	2701	2	0	intact	2703	sweep_model	True	ok	ITPR2|Nannobrachium_achirus|GCF_963921795.1
+ITPR3	GCF_963921795.1	Nannobrachium achirus	Actinopteri	Myctophiformes	MP000091	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8689	2670	0	0	intact	2700	sweep_model	True	ok	ITPR3|Nannobrachium_achirus|GCF_963921795.1
+ITPR1	GCF_963921805.1	Phalacrocorax carbo	Aves	Suliformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.991	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Phalacrocorax_carbo|GCF_963921805.1
+ITPR2	GCF_963921805.1	Phalacrocorax carbo	Aves	Suliformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9841	2700	0	0	intact	2705	sweep_model	True	ok	ITPR2|Phalacrocorax_carbo|GCF_963921805.1
+ITPR3	GCF_963921805.1	Phalacrocorax carbo	Aves	Suliformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9895	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Phalacrocorax_carbo|GCF_963921805.1
+ITPR1	GCF_963971535.1	Notolepis coatsorum	Actinopteri	Aulopiformes	MP000076	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.8501	2748	0	0	intact	2752	sweep_model	True	ok	ITPR1|Notolepis_coatsorum|GCF_963971535.1
+ITPR2	GCF_963971535.1	Notolepis coatsorum	Actinopteri	Aulopiformes	MP000078	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8336	2701	1	0	intact	2695	sweep_model	True	ok	ITPR2|Notolepis_coatsorum|GCF_963971535.1
+ITPR3	GCF_963971535.1	Notolepis coatsorum	Actinopteri	Aulopiformes	MP000080	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8761	2670	1	0	intact	2688	sweep_model	True	ok	ITPR3|Notolepis_coatsorum|GCF_963971535.1
+ITPR1	GCF_963989245.1	Nansenia antarctica	Actinopteri	Argentiniformes	MP000091	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9193	2748	1	0	intact	2706	sweep_model	True	ok	ITPR1|Nansenia_antarctica|GCF_963989245.1
+ITPR2	GCF_963989245.1	Nansenia antarctica	Actinopteri	Argentiniformes	MP000093	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8177	2701	0	0	intact	2710	sweep_model	True	ok	ITPR2|Nansenia_antarctica|GCF_963989245.1
+ITPR3	GCF_963989245.1	Nansenia antarctica	Actinopteri	Argentiniformes	MP000096	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8201	2670	0	0	intact	2734	sweep_model	True	ok	ITPR3|Nansenia_antarctica|GCF_963989245.1
+ITPR1	GCF_964187855.1	Myxine glutinosa	Myxini	Myxiniformes	MP000079	A0ABM4F3U0|ITPR1|Apteryx_mantelli	1.0	0.6853	2750	0	0	intact	2737	sweep_model	True	ok	ITPR1|Myxine_glutinosa|GCF_964187855.1
+ITPR2	GCF_964187855.1	Myxine glutinosa	Myxini	Myxiniformes									0	sweep_model	False	below_quality_bar(absent)	
+ITPR3	GCF_964187855.1	Myxine glutinosa	Myxini	Myxiniformes									0	sweep_model	False	below_quality_bar(absent)	
+ITPR1	GCF_964195595.1	Calonectris borealis	Aves	Procellariiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9924	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Calonectris_borealis|GCF_964195595.1
+ITPR2	GCF_964195595.1	Calonectris borealis	Aves	Procellariiformes	MP000053	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9893	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Calonectris_borealis|GCF_964195595.1
+ITPR3	GCF_964195595.1	Calonectris borealis	Aves	Procellariiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9899	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Calonectris_borealis|GCF_964195595.1
+ITPR1	GCF_964237555.1	Oryctolagus cuniculus	Mammalia	Lagomorpha	MP000001	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9739	2758	0	0	intact	2756	sweep_model	True	ok	ITPR1|Oryctolagus_cuniculus|GCF_964237555.1
+ITPR2	GCF_964237555.1	Oryctolagus cuniculus	Mammalia	Lagomorpha	MP000008	Q14571|ITPR2|Homo_sapiens|ITPR2	1.0	0.9659	2701	0	0	intact	2701	sweep_model	True	ok	ITPR2|Oryctolagus_cuniculus|GCF_964237555.1
+ITPR3	GCF_964237555.1	Oryctolagus cuniculus	Mammalia	Lagomorpha	MP000016	Q14573|ITPR3|Homo_sapiens|ITPR3	1.0	0.9584	2671	0	0	intact	2691	sweep_model	True	ok	ITPR3|Oryctolagus_cuniculus|GCF_964237555.1
+ITPR1	GCF_964237585.1	Gallinula chloropus	Aves	Gruiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9921	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Gallinula_chloropus|GCF_964237585.1
+ITPR2	GCF_964237585.1	Gallinula chloropus	Aves	Gruiformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.987	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Gallinula_chloropus|GCF_964237585.1
+ITPR3	GCF_964237585.1	Gallinula chloropus	Aves	Gruiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9872	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Gallinula_chloropus|GCF_964237585.1
+ITPR1	GCF_964261635.1	Lissotriton helveticus	Amphibia	Caudata	MP000001#95	Q14643|ITPR1|Homo_sapiens|ITPR1	1.0	0.9077	2758	0	0	intact	0	sweep_model	False	no_translation	
+ITPR2	GCF_964261635.1	Lissotriton helveticus	Amphibia	Caudata	MP000024	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.8893	2700	0	0	intact	4976	sweep_model	True	ok	ITPR2|Lissotriton_helveticus|GCF_964261635.1
+ITPR3	GCF_964261635.1	Lissotriton helveticus	Amphibia	Caudata	MP000015#65	A0A8J0SYK9|itpr3|Xenopus_tropicalis|ITPR3	1.0	0.857	2673	0	0	intact	0	sweep_model	False	no_translation	
+ITPR1	GCF_964289735.1	Phaethon aethereus	Aves	Phaethontiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9921	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Phaethon_aethereus|GCF_964289735.1
+ITPR2	GCF_964289735.1	Phaethon aethereus	Aves	Phaethontiformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9889	2700	0	0	intact	2697	sweep_model	True	ok	ITPR2|Phaethon_aethereus|GCF_964289735.1
+ITPR3	GCF_964289735.1	Phaethon aethereus	Aves	Phaethontiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9869	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Phaethon_aethereus|GCF_964289735.1
+ITPR1	GCF_964417175.1	Larus argentatus	Aves	Charadriiformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.991	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Larus_argentatus|GCF_964417175.1
+ITPR2	GCF_964417175.1	Larus argentatus	Aves	Charadriiformes	MP000051	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.987	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Larus_argentatus|GCF_964417175.1
+ITPR3	GCF_964417175.1	Larus argentatus	Aves	Charadriiformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9906	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Larus_argentatus|GCF_964417175.1
+ITPR1	GCF_964638095.1	Poromitra crassiceps	Actinopteri	Beryciformes	MP000081	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9449	2748	0	0	intact	2749	sweep_model	True	ok	ITPR1|Poromitra_crassiceps|GCF_964638095.1
+ITPR2	GCF_964638095.1	Poromitra crassiceps	Actinopteri	Beryciformes	MP000083	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8417	2701	3	0	intact	2690	sweep_model	True	ok	ITPR2|Poromitra_crassiceps|GCF_964638095.1
+ITPR3	GCF_964638095.1	Poromitra crassiceps	Actinopteri	Beryciformes	MP000086	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.8896	2670	0	0	intact	2689	sweep_model	True	ok	ITPR3|Poromitra_crassiceps|GCF_964638095.1
+ITPR1	GCF_965183815.1	Platalea leucorodia	Aves	Pelecaniformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9917	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Platalea_leucorodia|GCF_965183815.1
+ITPR2	GCF_965183815.1	Platalea leucorodia	Aves	Pelecaniformes	MP000053	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9885	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Platalea_leucorodia|GCF_965183815.1
+ITPR3	GCF_965183815.1	Platalea leucorodia	Aves	Pelecaniformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9865	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Platalea_leucorodia|GCF_965183815.1
+ITPR1	GCF_965601325.1	Salmo salar	Actinopteri	Salmoniformes	MP000157	A0A672IUQ7|ITPR1|Salarias_fasciatus	1.0	0.9263	2748	0	0	intact	2734	sweep_model	True	ok	ITPR1|Salmo_salar|GCF_965601325.1
+ITPR2	GCF_965601325.1	Salmo salar	Actinopteri	Salmoniformes	MP000161	A0AAX7UHL1|ITPR2|Astatotilapia_calliptera	1.0	0.8173	2701	1	0	intact	2718	sweep_model	True	ok	ITPR2|Salmo_salar|GCF_965601325.1
+ITPR3	GCF_965601325.1	Salmo salar	Actinopteri	Salmoniformes	MP000167	A0A8C6KWV8|ITPR3|Nothobranchius_furzeri	1.0	0.861	2670	0	0	intact	2677	sweep_model	True	ok	ITPR3|Salmo_salar|GCF_965601325.1
+ITPR1	GCF_965638725.1	Aptenodytes patagonicus	Aves	Sphenisciformes	MP000003	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	1.0	0.9917	2779	0	0	intact	2778	sweep_model	True	ok	ITPR1|Aptenodytes_patagonicus|GCF_965638725.1
+ITPR2	GCF_965638725.1	Aptenodytes patagonicus	Aves	Sphenisciformes	MP000050	A0A672UP22|ITPR2|Strigops_habroptila	1.0	0.9885	2700	0	0	intact	2699	sweep_model	True	ok	ITPR2|Aptenodytes_patagonicus|GCF_965638725.1
+ITPR3	GCF_965638725.1	Aptenodytes patagonicus	Aves	Sphenisciformes	MP000018	A0A8V1ACE6|ITPR3|Gallus_gallus|ITPR3	1.0	0.9902	2664	0	0	intact	2664	sweep_model	True	ok	ITPR3|Aptenodytes_patagonicus|GCF_965638725.1
+ITPR1		Apteryx mantelli (North Island brown kiwi)										curated	2750	msa_v2	True	ok	ITPR1_Apteryx_mantelli_North_Island_brown_ki_A0ABM4F3U0
+ITPR1		Bos taurus (Bovine)										curated	2709	msa_v2	True	ok	ITPR1_Bos_taurus_Bovine_Q9TU34
+ITPR1		Callorhinchus milii (Ghost shark)										curated	2683	msa_v2	True	ok	vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JHJ0
+ITPR1		Callorhinchus milii (Ghost shark)										curated	2668	msa_v2	False	same_species_shorter_copy	
+ITPR1		Chanos chanos (Milkfish) (Mugil chanos)										curated	2716	msa_v2	True	ok	ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VJN0
+ITPR1		Chanos chanos (Milkfish) (Mugil chanos)										curated	2694	msa_v2	False	same_species_shorter_copy	
+ITPR1		Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)										curated	2705	msa_v2	True	ok	vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401SQC9
+ITPR1		Danio rerio (Zebrafish) (Brachydanio rerio)										curated	2716	msa_v2	True	ok	ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AB32U288
+ITPR1		Danio rerio (Zebrafish) (Brachydanio rerio)										curated	2711	msa_v2	False	same_species_shorter_copy	
+ITPR1		Danio rerio (Zebrafish) (Brachydanio rerio)										curated	2668	msa_v2	False	same_species_shorter_copy	
+ITPR1		Gallus gallus (Chicken)										curated	2779	msa_v2	True	ok	ITPR1_Gallus_gallus_Chicken_A0A8V0ZJT0
+ITPR1		Homo sapiens (Human)										curated	2758	msa_v2	True	ok	ITPR1_Homo_sapiens_Human_Q14643
+ITPR1		Latimeria chalumnae (Coelacanth)										curated	2725	msa_v2	True	ok	ITPR1_Latimeria_chalumnae_Coelacanth_H3A1P5
+ITPR1		Mus musculus (Mouse)										curated	2749	msa_v2	True	ok	ITPR1_Mus_musculus_Mouse_P11881
+ITPR1		Podarcis muralis (Wall lizard) (Lacerta muralis)										curated	2747	msa_v2	True	ok	ITPR1_Podarcis_muralis_Wall_lizard_Lacerta_m_A0A670JBK6
+ITPR1		Salarias fasciatus (Jewelled blenny) (Blennius fasciatus)										curated	2748	msa_v2	True	ok	ITPR1_Salarias_fasciatus_Jewelled_blenny_Ble_A0A672IUQ7
+ITPR1		Xenopus tropicalis (Western clawed frog) (Silurana tropicalis)										curated	2743	msa_v2	True	ok	ITPR1_Xenopus_tropicalis_Western_clawed_frog_A0A8J0T3U5
+ITPR2		Astatotilapia calliptera (Eastern river bream) (Chromis callipterus)										curated	2701	msa_v2	True	ok	ITPR2_Astatotilapia_calliptera_Eastern_river_A0AAX7UHL1
+ITPR2		Callorhinchus milii (Ghost shark)										curated	2667	msa_v2	True	ok	vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JQ24
+ITPR2		Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)										curated	2211	msa_v2	True	ok	vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401RNU3
+ITPR2		Danio rerio (Zebrafish) (Brachydanio rerio)										curated	2665	msa_v2	True	ok	ITPR2_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M9PQQ3
+ITPR2		Gallus gallus (Chicken)										curated	2700	msa_v2	True	ok	ITPR2_Gallus_gallus_Chicken_F1P1X4
+ITPR2		Gekko japonicus (Schlegel's Japanese gecko)										curated	2701	msa_v2	True	ok	ITPR2_Gekko_japonicus_Schlegel_s_Japanese_ge_A0ABM1LG32
+ITPR2		Homo sapiens (Human)										curated	2701	msa_v2	True	ok	ITPR2_Homo_sapiens_Human_Q14571
+ITPR2		Mus musculus (Mouse)										curated	2701	msa_v2	True	ok	ITPR2_Mus_musculus_Mouse_Q9Z329
+ITPR2		Rattus norvegicus (Rat)										curated	2701	msa_v2	True	ok	ITPR2_Rattus_norvegicus_Rat_P29995
+ITPR2		Strigops habroptila (Kakapo)										curated	2700	msa_v2	True	ok	ITPR2_Strigops_habroptila_Kakapo_A0A672UP22
+ITPR2		Xenopus tropicalis (Western clawed frog) (Silurana tropicalis)										curated	2705	msa_v2	True	ok	ITPR2_Xenopus_tropicalis_Western_clawed_frog_A0A6I8RGU0
+ITPR3		Athene cunicularia (Burrowing owl) (Speotyto cunicularia)										curated	2666	msa_v2	True	ok	ITPR3_Athene_cunicularia_Burrowing_owl_Speot_A0A663MIF9
+ITPR3		Callorhinchus milii (Ghost shark)										curated	2630	msa_v2	True	ok	ITPR3_Callorhinchus_milii_Ghost_shark_A0A4W3GWE7
+ITPR3		Chiloscyllium punctatum (Brownbanded bambooshark) (Hemiscyllium punctatum)										curated	2490	msa_v2	True	ok	vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401S8Q3
+ITPR3		Danio rerio (Zebrafish) (Brachydanio rerio)										curated	2635	msa_v2	True	ok	ITPR3_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M6Z266
+ITPR3		Gallus gallus (Chicken)										curated	2664	msa_v2	True	ok	ITPR3_Gallus_gallus_Chicken_A0A8V1ACE6
+ITPR3		Homo sapiens (Human)										curated	2671	msa_v2	True	ok	ITPR3_Homo_sapiens_Human_Q14573
+ITPR3		Latimeria chalumnae (Coelacanth)										curated	2675	msa_v2	True	ok	ITPR3_Latimeria_chalumnae_Coelacanth_H3B932
+ITPR3		Mus musculus (Mouse)										curated	2670	msa_v2	True	ok	ITPR3_Mus_musculus_Mouse_P70227
+ITPR3		Nothobranchius furzeri (Turquoise killifish)										curated	2670	msa_v2	True	ok	ITPR3_Nothobranchius_furzeri_Turquoise_killi_A0A8C6KWV8
+ITPR3		Pogona vitticeps (central bearded dragon)										curated	2666	msa_v2	True	ok	ITPR3_Pogona_vitticeps_central_bearded_drago_A0A6J0TV85
+ITPR3		Rattus norvegicus (Rat)										curated	2670	msa_v2	True	ok	ITPR3_Rattus_norvegicus_Rat_Q63269
+ITPR3		Xenopus tropicalis (Western clawed frog) (Silurana tropicalis)										curated	2673	msa_v2	True	ok	ITPR3_Xenopus_tropicalis_Western_clawed_frog_A0A8J0SYK9
+ITPR1		human ITPR1										curated	2758	uniprot	True	coordinate_reference	REF|ITPR1|Q14643
+ITPR2		human ITPR2										curated	2701	uniprot	True	coordinate_reference	REF|ITPR2|Q14571
+ITPR3		human ITPR3										curated	2671	uniprot	True	coordinate_reference	REF|ITPR3|Q14573

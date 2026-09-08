@@ -1,0 +1,10 @@
+paralog	site_class	n_sites	elements	mean_jsd	median_jsd	whole_protein_mean	own_element_mean	p_greater_than_protein	p_greater_than_own_element	n_invariant
+ITPR1	ip3_contact	10	MIR;RIH_N	0.8134	0.8077	0.7381	0.7626	0.013	0.0697	3
+ITPR1	filter_lining	2	selectivity_filter	0.7834	0.7834	0.7381	0.7878			1
+ITPR1	gate_lining	2	gate	0.8031	0.8031	0.7381	0.797			0
+ITPR2	ip3_contact	10	MIR;RIH_N	0.84	0.8506	0.7399	0.7672	0.0006	0.0021	8
+ITPR2	filter_lining	2	selectivity_filter	0.8216	0.8216	0.7399	0.7866			1
+ITPR2	gate_lining	2	gate	0.8396	0.8396	0.7399	0.8103			2
+ITPR3	ip3_contact	10	MIR;RIH_N	0.8236	0.8298	0.7376	0.7702	0.0042	0.0253	2
+ITPR3	filter_lining	2	selectivity_filter	0.8167	0.8167	0.7376	0.8093			1
+ITPR3	gate_lining	2	gate	0.8396	0.8396	0.7376	0.8103			2

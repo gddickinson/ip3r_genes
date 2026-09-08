@@ -1834,3 +1834,92 @@ protein is doing, not about where it sits *(pending: S17)*. Which of the two
 ancient duplication rounds made which split is also unresolved, and it needs
 the lampreys and hagfish, whose gene names are too sparse to read
 neighbourhoods from.
+
+---
+
+## 2026-09-08 — The five residues that never changed, and the fifty that did (S17)
+
+**The IP3 receptor is a gate at the end of a very long lever.** Calcium
+leaves the ER through a pore about 2,500 residues downstream of the site
+where IP3 binds. So the obvious question about the protein is which parts of
+it are actually load-bearing — and now that there are 250 orthologues of each
+of the three human copies, that question has an answer per residue rather
+than per domain.
+
+**The gate has not changed.** Five residues line the point where the channel
+closes, and across the whole vertebrate sample they are the most invariant
+sequence in the protein. More striking: **they are identical in all three
+human receptors.** ITPR1, ITPR2 and ITPR3 have been separate genes since
+before jawed vertebrates existed, they are only 64–70 % identical overall,
+and they still share those five residues exactly. Whatever the three copies
+were free to diverge in over half a billion years, it was not the gate. The
+selectivity filter just below it is nearly as conserved (86–100 % identical
+between copies), and the ten residues that actually touch IP3 are more
+conserved than the rest of the domains they sit in.
+
+**The domain named after IP3 does not contain the IP3 site.** The protein
+family's signature domain — the one the databases call "Inositol
+1,4,5-trisphosphate/ryanodine receptor" — is the N-terminal β-trefoil, and
+**not one of the ten measured IP3 contacts is inside it.** They sit in the
+two domains next door, MIR and RIH, which are also the two domains the
+ryanodine receptors share. So if you had trusted the domain name and measured
+constraint on it, you would have measured the suppressor domain and called it
+the ligand site. This is worth stating plainly because the name is in every
+database record for every one of the ~15,000 proteins in this project's
+census.
+
+**And there is one stretch that has changed enormously.** Inside the pore
+domain, on the far side of the membrane from the cytoplasm, sits a
+50-residue loop that hangs into the ER lumen. It is the **least** conserved
+sequence in the whole receptor: where the protein overall is 64–70 %
+identical between the three copies, this loop is **13–31 %**. Two completely
+different instruments agree — residue conservation across 250 orthologues,
+and the rate of protein-changing substitutions estimated from DNA — and it is
+also the region cryo-EM maps resolve worst, and the region the standard
+alignment-cleaning step deletes.
+
+So the most conserved sequence in the receptor and the least conserved sit
+about fifty residues apart, inside the same domain. Before that loop was
+separated out, its variability was dragging the whole pore domain's average
+below the receptor's floppy inter-domain linkers — which would have meant
+reporting that the pore of an ion channel is less constrained than its
+spacers. It is not; the average was hiding two opposite things. What the loop
+is *for* is not something this project has looked at *(pending: an emergent
+task)*; a paralog-specific luminal insert sitting next to an invariant gate
+is the shape of a functional difference between the three copies, but that is
+a hypothesis, not a result.
+
+**Does any of this help read a patient's variant?** Partly, and the honest
+answer has two halves.
+
+The first half: **conservation does separate the variants that matter from
+the ones that do not.** Taking ClinVar's own labels, positions called
+pathogenic are markedly more conserved than positions called benign — well
+enough to be a usable signal. But the layer that does it best is not the one
+this task was built around. Conservation measured across *all* IP3 receptors,
+from protists to humans, beats conservation measured deeply within a single
+human gene. A position that has survived both 500 million years of the three
+copies diverging *and* the whole eukaryotic history of the family is a better
+predictor than a position that merely never varies among 260 vertebrate
+copies of the same gene. That is worth knowing before anyone builds a
+prediction tool for this family.
+
+The second half is less comfortable. **88 % of the family's variant record is
+uncertain.** Of 1,753 missense variants in ClinVar across the three genes,
+1,546 have no interpretation at all. ITPR1 carries 49 pathogenic ones; ITPR3
+five; **ITPR2 has one.** That is not because ITPR2 tolerates change — its
+gate is identical to the others', its IP3 contacts are the most conserved of
+the three, and 8 of those 10 residues are invariant across 249 species. It is
+because nobody has been looking at ITPR2. It has no dominant childhood
+syndrome pulling sequencing towards it, so its variants stay unclassified.
+The prediction that follows is testable: variants at ITPR2's gate, filter and
+IP3-contact positions should turn out to be pathogenic when someone looks
+*(pending: nothing in this project can settle it — it needs patients)*.
+
+**One small check worth recording.** The recurrent ITPR3 variant that causes
+a multisystem disease with immunodeficiency sits seven residues past the
+gate. It is not in a tolerant position: that residue is invariant across all
+264 orthologues measured. And the two variants in the whole published
+literature that name a specific residue were both found again in the database
+harvest — which is the kind of check that is only worth anything because it
+could have failed.
