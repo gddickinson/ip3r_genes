@@ -1304,3 +1304,67 @@ came back blank, and a blank sitting beside two real answers looks like a
 negative finding rather than a broken pipe. It is the same lesson as the
 plant genome that vanished from a figure last week: the failures that matter
 are the ones that produce something plausible rather than an error.
+
+---
+
+## 2026-09-08 — S10: the databases are missing genes that are demonstrably there
+
+**The reassuring result first: the annotations are mostly right.** Across the
+309 vertebrate genomes, there are 382 IP3-receptor genes sitting in
+assemblies good enough that the annotation had every chance of describing
+them properly. It described 375 of them correctly — one gene model covering
+the whole gene. The family's public record is in good shape almost
+everywhere, and the failures are not a gradient of sloppiness but a short
+list: seven genes, in three genomes.
+
+**But where it fails, it fails completely, and the gene disappears from
+biology.** Two of those failures were taken apart exon by exon.
+
+**A croaker with an invisible receptor.** *Nibea albiflora* is a food fish
+with a good chromosome-level genome. Its ITPR2 gene is there — 56 coding
+exons, a complete uninterrupted protein of 2,673 amino acids, spliced at
+every junction the way a real gene is. The annotation has **nothing** on it.
+Not a partial model, not a mislabelled one: the gene-finding step walked
+right past it, having correctly described the genes on either side. And the
+gene is not in some anonymous stretch of chromosome — it sits exactly
+between SSPN and BHLHE41, the two genes that flank ITPR2 in 197 and 183 of
+the 215 vertebrates we have looked at. This is the most recognisable
+address in the genome for this gene, and the annotation still missed it.
+
+**The same fish files its whole receptor family as broken.** Every complete
+IP3-receptor and ryanodine-receptor gene in that genome is recorded as a
+*pseudogene* — a dead gene, one that makes no protein. All of them are
+intact: each reads through from start to stop with not a single premature
+stop codon, where a genuinely dead gene of that length would have collected
+a dozen or more. Nearly a third of the entire gene set of this fish is filed
+as pseudogene. And one further error compounds it: the gene the annotation
+does label "ITPR2" is not ITPR2 at all — its own protein sequence matches the
+ITPR3 gene. So the species' ITPR3 carries ITPR2's name, and ITPR2 carries no
+name at all. The net effect is stark: **search any protein database for an
+IP3 receptor in this species and you get nothing.** Three complete,
+functional receptor genes, zero protein records.
+
+**An Antarctic toothfish with one gene recorded as three.** *Dissostichus
+eleginoides* has its ITPR3 gene chopped into three separate "genes" that
+tile the protein end to end — one covering residues 1–67, the next 52–467,
+the third 468–1,593 — and then the final 41 % of the protein, including the
+entire channel that does the actual work, has no gene model at all. Anyone
+downloading this species' proteins gets three short fragments and no
+receptor. Here too: zero IP3-receptor protein records for the species.
+
+**Why this matters beyond two fish.** Every count of where a gene family
+exists, every claim that a lineage has lost a gene, every alignment built
+from database proteins, rests on annotations like these. A gene that is
+present, intact and in the right place can be entirely absent from the
+protein databases — and nothing on the protein side reveals it. That is why
+this project searched DNA rather than proteins, and these two cases are what
+that decision was for.
+
+**A note on catching your own mistakes.** The test for whether a gene's
+splice junctions appear in transcript data was checked against a case where
+the answer has to be zero — the gene's own raw DNA, which by definition
+cannot contain a spliced junction. It came back six. The test was too
+lenient: the alignment program runs a little way past the true junction, far
+enough to fool the rule. The rule was tightened and the control now reads
+zero, which is what makes the real zero meaningful. A test that never fires
+and a test that finds nothing look identical in the output.

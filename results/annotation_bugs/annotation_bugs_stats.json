@@ -1,0 +1,117 @@
+{
+  "cases": [
+    {
+      "accession": "GCA_014281875.1",
+      "case_id": "case_a",
+      "cell": "ITPR2",
+      "loss": "1.0",
+      "organism": "Nibea albiflora",
+      "selected_as": "omission"
+    },
+    {
+      "accession": "GCA_031216635.1",
+      "case_id": "case_b",
+      "cell": "ITPR3",
+      "loss": "0.581",
+      "organism": "Dissostichus eleginoides",
+      "selected_as": "fragmentation"
+    }
+  ],
+  "modes": {
+    "fragmentation": "two or more annotated models overlap the CDS footprint and none covers 50% of it",
+    "omission": "no annotated coding model overlaps the recovered gene's CDS footprint (loss = 1.0, 0 models above 0.01 of it)",
+    "truncation": "exactly one annotated model overlaps the CDS footprint and it covers less than 50% of it"
+  },
+  "parameters": {
+    "ANNOT_CDS_FRAC": 0.5,
+    "BOUNDARY_TOL_AA": 2,
+    "COV_FOUND": 0.7,
+    "FLANK_BP": 200000,
+    "FRAG_MIN_FRAC_CDS": 0.01,
+    "HEADROOM_X": 10.0,
+    "MIN_ANCHOR": 8,
+    "MIN_LONGER": 10,
+    "MIN_PROBE_COVERAGE": 0.75,
+    "PROBE_FLANK_NT": 90,
+    "remote_search": true
+  },
+  "rules": {
+    "E1": "assembly carries a gene set and the sweep indexed it",
+    "E2": "sweep recovered the gene: coverage >= 0.7, no contig edge, no N-gap",
+    "E3": "the contig holds the whole locus (D4)",
+    "E4": "contig N50 >= 10x the locus span",
+    "E5": ">= 10 annotated protein-coding genes elsewhere in the same genome are longer than the locus"
+  },
+  "self_tests": "s10_test_evidence.py passed before this run",
+  "tables": {
+    "annotated_models.tsv": {
+      "bytes": 706,
+      "sha256": "28fa5173bce3d5369172adbb7e36a28810f95cfa1cf5b3c4b60b3bc1c1e5a8a0"
+    },
+    "annotation_depth.tsv": {
+      "bytes": 20560,
+      "sha256": "97ce47d4687272f4adc31807f40a1c88844a7745981fd8a464e02ba666e67c18"
+    },
+    "assembly_audit.tsv": {
+      "bytes": 1212,
+      "sha256": "1516972c098231587670dd19e972aa361dc2a4a100107d642bcd50c740943532"
+    },
+    "block_accounting.tsv": {
+      "bytes": 425,
+      "sha256": "7b421290516a067f53e49e1706e48bf0ff6934207a18981f5f3157dc97200c42"
+    },
+    "boundary_concordance.tsv": {
+      "bytes": 4522,
+      "sha256": "f43e8963d06eab576f3698bf06788b9509907f9ebeaf574354e7c93f8e738836"
+    },
+    "case_exons.tsv": {
+      "bytes": 12974,
+      "sha256": "7b67a8396770b3bded88ffdd7705215d2fa9020a08d3c448c38c26424f3776a3"
+    },
+    "case_introns.tsv": {
+      "bytes": 11157,
+      "sha256": "8db82984ee432206b1320c5dbbefea9c410a1a818fea9fece6625ed89c618b18"
+    },
+    "case_ranking.tsv": {
+      "bytes": 254405,
+      "sha256": "2c6d1df1835f0e76196f16defbf80f9f9be3d2453a49e864b39af4e597b1c369"
+    },
+    "cases.tsv": {
+      "bytes": 1067,
+      "sha256": "92a136727b619f00741c3736d1bb19cdb4631afde293b6435b608c1934e5ae20"
+    },
+    "database_records.tsv": {
+      "bytes": 582,
+      "sha256": "00b985fa86c61db64032660bcb33fae060b248c88e6682bf9f41ed272a9a0c7c"
+    },
+    "family_named_models.tsv": {
+      "bytes": 1555,
+      "sha256": "15f87b9904118cf47b6079dac13078569841ff11848145a6e3df86d94589bbf7"
+    },
+    "flank_consensus_check.tsv": {
+      "bytes": 980,
+      "sha256": "bcd66994617d5de735533f7310633870e5405f315f8aaeae3bd46a7e2e7363ae"
+    },
+    "fragment_tiling.tsv": {
+      "bytes": 5526,
+      "sha256": "f4f3f9e59e449bc001aed480f3c86608a3bf4c82776fbd979464d2f1ac0e9c6b"
+    },
+    "junction_probes.tsv": {
+      "bytes": 18709,
+      "sha256": "8580096ede33f0baedbc49214788b73d3dbd145250d96107e5c207013b3f3fbb"
+    },
+    "locus_neighbourhood.tsv": {
+      "bytes": 3071,
+      "sha256": "c6c231e19c5932001e3695d75db703243ee0c9560c40e75f5b1cff7bdb8f647c"
+    },
+    "probe_summary.tsv": {
+      "bytes": 1778,
+      "sha256": "454e1ab75a07859d2e467818f9f00b51df69c46560ddb6befca836c9d2c4f097"
+    },
+    "reading_frame.tsv": {
+      "bytes": 2211,
+      "sha256": "80a616b14f6905506d3619bb1faeac319fe12cd86e5c9259768a3d586ad95303"
+    }
+  },
+  "task": "S10"
+}

@@ -1,0 +1,6 @@
+case_id	species	accession	gene	protein_name	length	call	confidence	fragment	reviewed	source
+case_a	Nibea albiflora	A0ACB7EEA0	RYR2.2	Ryanodine receptor 2	976	RYR	medium		0	HMM
+case_b	Dissostichus eleginoides	A0AAD9BFS8	KUDE01_022997	Ryanodine receptor 1	383	RYR	medium		0	HMM
+case_b	Dissostichus eleginoides	A0AAD9BEL3	KUDE01_023067	Ryanodine receptor 1	389	RYR	medium		0	HMM
+case_b	Dissostichus eleginoides	A0AAD9BGX7	KUDE01_023291	Ryanodine receptor 1	351	RYR	medium		0	HMM
+case_b	Dissostichus eleginoides	A0AAD9BHZ5	KUDE01_023864	Ryanodine receptor 1	893	RYR	medium		0	HMM

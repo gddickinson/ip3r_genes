@@ -1955,3 +1955,82 @@ S9's one live lead is logged as emergent: the eight ITPR1-stem BEB sites
 should be carried onto the cryo-EM channel in S17, because "a handful of
 sites changed fast on the branch that made ITPR1" means something very
 different in the IP₃-binding core than in a disordered linker.
+
+---
+
+## 2026-09-08 — S10: annotation-bug molecular validation
+
+**Task.** S10 (deps S5b, complete). Brief: take the two worst annotation
+failures the sweep surfaced and prove them at the molecular level.
+
+**Case selection, because "the two worst" has to be a rule.**
+`s10_case_spec.py` writes it out and `s10_select.py` applies it to every
+locus the sweep recovered (880). The measurement is **annotation loss** —
+the share of a gene's coding footprint no single annotated model delivers,
+read off S5's own `frac_cds` rather than recomputed. Five eligibility rules;
+**E5 is the one that earns its place**: *does this annotation build genes
+this long anywhere else in the same genome?* Without it the ranking's top
+rows are *Cirrhinus mrigala* (longest annotated gene genome-wide 42 kb) and
+*Saguinus oedipus* (138 kb against a 726 kb locus) — genome-wide length
+ceilings that would have been written up as bugs at this gene. E5 removes
+exactly those 6 loci in 2 genomes and nothing else in the sweep.
+
+**Result: 382 eligible loci, median loss 0, 360 at exactly 0, 7 failures in
+3 genomes.** Three modes labelled (`omission` / `truncation` /
+`fragmentation`); two are selectable and the rule takes the worst of each,
+one case per genome, because taking the top two of the single ranking gives
+two omissions and leaves the fragmentation claim unvalidated.
+
+**Case A — *Nibea albiflora* ITPR2, omission.** 56 coding exons, all 56 with
+no annotated model; chromosome assembly, 84× headroom; the same annotation
+gets ITPR1 and ITPR3 right. Splices into 2,673 codons with **0 internal
+stops** against 14.2 expected under neutral drift (computed from the locus's
+own codon usage, not quoted). 55/55 introns spliceable; 52/55 exon
+boundaries shared by a majority of 35 independently annotated genomes; and
+S8's committed flank consensus places it between **SSPN and BHLHE41**,
+ITPR2's two most conserved neighbours (197 and 183 of 215 species). The
+genome files **8 of 14 family-named models as pseudogenes** — 31.6 % of its
+whole gene set is pseudogene — and its "ITPR2"-named model is the **ITPR3**
+gene (89.3 % to the ITPR3 locus, its own translated protein). That
+adjudicates one of the three naming conflicts S5b deliberately left open.
+
+**Case B — *D. eleginoides* ITPR3, fragmentation.** One 68 kb gene as three
+protein-coding models tiling residues 1–67, 52–467, 468–1593, with the 3′
+41 % unmodelled. 59/59 canonical introns, 59/59 boundaries shared by a
+majority of 40 genomes, 0 internal stops.
+
+**Both species: 0 ITPR protein records in any database, 3 complete genes in
+the DNA.**
+
+**The transcript step is an honest negative with its denominator.** Remote
+BLAST was abandoned after ~50 min queued and replaced with a local search of
+every transcript record NCBI holds for each species — 43 and 10, no TSA.
+Faster, archived, offline on re-run. RNA-seq does exist (182 and 19 runs) and
+is handed to S12 with the probes committed.
+
+**The control caught a real bug in the counting rule.** Running the probes
+against the locus's own genomic DNA — where nothing can span a junction by
+construction — returned **6 false spans of 55**: blastn extends a
+high-scoring alignment a dozen bases past the junction into the intron, which
+clears an 8 nt anchor. Added a probe-coverage requirement derived from what a
+probe *is* (contiguous spliced sequence, so a genomic match tops out near
+half its length) rather than from the artefact's size. Control now 112 hits,
+0 spanning. `n_spanning_anchor_only` is committed so the difference between
+the two rules stays visible.
+
+**Two other bugs found by building.** The tiling subject set was census v4's
+*non-redundant* models, so a query whose own locus was missing landed on its
+nearest paralog 19 Mb away and read as a confident naming disagreement —
+fixed with an `at_own_locus` coordinate check plus a complete subject set.
+And the ORF step read its expected protein from `novel_models.faa`, which
+lacks 3 of the 8 family loci in these two genomes; it now reads the sweep
+GFF's `##STA` row, which exists for every model.
+
+**47 negative controls** (`s10_test_evidence.py`) run before any table is
+written and the driver refuses to write if they fail.
+
+**Next.** S11 — Structures (deps S5b, complete). Two things it inherits are
+in the roadmap's next-session note; the sharpest is that AFDB coverage has to
+be measured against census *records*, since a locus with no protein record
+cannot have a model, and S10 found two swept species with three complete
+genes and zero records between them.

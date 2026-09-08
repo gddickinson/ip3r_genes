@@ -1,0 +1,3 @@
+case_id	accession	cell	n_aligned_exons	n_aligned_cds_blocks	aligned_cds_bp	n_annotated_gene_models	n_annotated_cds_blocks	annotated_cds_bp_on_gene	frac_aligned_cds_annotated	frac_aligned_cds_translated	n_uncovered_blocks	uncovered_bp	n_untranslated_blocks	untranslated_bp
+case_a	GCA_014281875.1	ITPR2	56	56	8021	0	0	0	0.0	0.0	56	8021	56	8021
+case_b	GCA_031216635.1	ITPR3	60	60	8064	3	38	4664	0.5784	0.5784	28	3400	28	3400

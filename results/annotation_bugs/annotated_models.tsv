@@ -1,0 +1,4 @@
+case_id	accession	cell	gene_id	name	locus_tag	biotype	pseudo	start	end	strand	span	n_cds_blocks	cds_bp	n_transcripts	protein_ids	overlap_aligned_cds_bp	frac_aligned_cds	n_aligned_exons_covered	q_start	q_end	description
+case_b	GCA_031216635.1	ITPR3	gene-KUDE01_018466	KUDE01_018466	KUDE01_018466	protein_coding	0	8190452	8216681	-	26230	24	3333	1	KAK1898944.1	3291	0.4081	24	469	1587	
+case_b	GCA_031216635.1	ITPR3	gene-KUDE01_017523	KUDE01_017523	KUDE01_017523	protein_coding	0	8217040	8228356	-	11317	12	1248	1	KAK1897995.1	1210	0.15	11	55	468	
+case_b	GCA_031216635.1	ITPR3	gene-KUDE01_018062	KUDE01_018062	KUDE01_018062	protein_coding	0	8229087	8242096	-	13010	2	201	1	KAK1898538.1	163	0.0202	2	1	54	

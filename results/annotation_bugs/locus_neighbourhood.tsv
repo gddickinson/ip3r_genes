@@ -1,0 +1,21 @@
+case_id	accession	cell	side	gene_id	name	biotype	pseudo	start	end	strand	distance_bp	description
+case_a	GCA_014281875.1	ITPR2	upstream	gene-GBF38_020333	GBF38_020333	pseudogene	1	12372803	12373386	+	74452	Unknown
+case_a	GCA_014281875.1	ITPR2	upstream	gene-GBF38_020334	GBF38_020334	protein_coding	0	12382533	12384774	+	63064	ZN469_HUMAN Zinc finger protein 469 OS=Homo sapiens GN=ZNF469 PE=2 SV=3
+case_a	GCA_014281875.1	ITPR2	upstream	gene-GBF38_020335	RASSF8	protein_coding	0	12423585	12428988	+	18850	RASF8_HUMAN Ras association domain-containing protein 8 OS=Homo sapiens GN=RASSF8 PE=1 SV=2
+case_a	GCA_014281875.1	ITPR2	upstream	gene-GBF38_020336	BHLHE41	protein_coding	0	12432276	12435649	-	12189	BHE41_MOUSE Class E basic helix-loop-helix protein 41 OS=Mus musculus GN=Bhlhe41 PE=1 SV=1
+case_a	GCA_014281875.1	ITPR2	upstream	gene-GBF38_020337	SSPN	pseudogene	1	12437408	12442387	+	5451	SSPN_HUMAN Sarcospan OS=Homo sapiens GN=SSPN PE=2 SV=3
+case_a	GCA_014281875.1	ITPR2	downstream	gene-GBF38_020339	PLEKHG7	pseudogene	1	12504481	12515935	+	4175	PKHG7_HUMAN Pleckstrin-like proteiny domain-containing family G member 7 OS=Homo sapiens GN=PLEKHG7 PE=2 SV=1
+case_a	GCA_014281875.1	ITPR2	downstream	gene-GBF38_020340	EEA1	protein_coding	0	12518101	12551410	-	17795	EEA1_HUMAN Early endosome antigen 1 OS=Homo sapiens GN=EEA1 PE=1 SV=2
+case_a	GCA_014281875.1	ITPR2	downstream	gene-GBF38_020341	C1QTNF4	pseudogene	1	12557182	12558261	+	56876	C1QT4_MOUSE Complement C1q tumor necrosis factor-related protein 4 OS=Mus musculus GN=C1qtnf4 PE=1 SV=1
+case_a	GCA_014281875.1	ITPR2	downstream	gene-GBF38_020342	NR1H4	protein_coding	0	12560094	12571338	-	59788	NR1H4_HUMAN Bile acid receptor OS=Homo sapiens GN=NR1H4 PE=1 SV=2
+case_a	GCA_014281875.1	ITPR2	downstream	gene-GBF38_020343	SLC17A8	protein_coding	0	12575468	12585628	-	75162	VGLU3_DANRE Vesicular glutamate transporter 3 OS=Danio rerio GN=slc17a8 PE=3 SV=2
+case_b	GCA_031216635.1	ITPR3	upstream	gene-KUDE01_018790	KUDE01_018790	protein_coding	0	8081814	8082551	-	91543	
+case_b	GCA_031216635.1	ITPR3	upstream	gene-KUDE01_018679	KUDE01_018679	protein_coding	0	8089203	8091902	-	82192	
+case_b	GCA_031216635.1	ITPR3	upstream	gene-KUDE01_017748	KUDE01_017748	protein_coding	0	8093614	8094448	-	79646	
+case_b	GCA_031216635.1	ITPR3	upstream	gene-KUDE01_017243	KUDE01_017243	protein_coding	0	8094510	8096371	-	77723	
+case_b	GCA_031216635.1	ITPR3	upstream	gene-KUDE01_018563	KUDE01_018563	protein_coding	0	8145998	8160153	-	13941	
+case_b	GCA_031216635.1	ITPR3	downstream	gene-KUDE01_017692	KUDE01_017692	protein_coding	0	8254754	8260601	+	12658	
+case_b	GCA_031216635.1	ITPR3	downstream	gene-KUDE01_017602	KUDE01_017602	protein_coding	0	8273033	8275916	-	30937	
+case_b	GCA_031216635.1	ITPR3	downstream	gene-KUDE01_018254	KUDE01_018254	protein_coding	0	8284869	8291443	-	42773	
+case_b	GCA_031216635.1	ITPR3	downstream	gene-KUDE01_018644	KUDE01_018644	protein_coding	0	8294869	8300897	-	52773	
+case_b	GCA_031216635.1	ITPR3	downstream	gene-KUDE01_017691	KUDE01_017691	protein_coding	0	8329817	8335580	+	87721	

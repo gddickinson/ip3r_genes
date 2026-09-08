@@ -169,6 +169,39 @@ to be saturated *within* a single paralogue (89 % of pairs past dS = 1.5),
 so every ω here is tree-based and the pairwise matrix is a diagnostic.
 → [`results/selection/report.md`](results/selection/report.md)
 
+**S10** audited the annotations from the genome side and then took the two
+worst failures apart exon by exon. **The reassuring number comes first: at
+375 of the 382 loci where the annotation could reasonably have delivered the
+gene, it did** — one gene model covering the whole coding footprint, median
+annotation loss 0. The failures are a short list, not a gradient: seven
+genes in three genomes. Which two get validated is a rule applied to all 880
+recovered loci, and the rule that does the work is a control — *does this
+annotation build genes this long anywhere else in the same genome?* It
+removes exactly six loci in two assemblies whose gene sets top out below an
+IP3 receptor's length (*Cirrhinus mrigala* at 42 kb, *Saguinus oedipus* at
+138 kb against a 726 kb locus), so a genome-wide length ceiling cannot be
+written up as a bug at this gene.
+
+**In *Nibea albiflora* the ITPR2 gene is complete, spliced and invisible.**
+56 coding exons, none of them carrying an annotated gene model; 2,673 codons
+with **zero internal stops** where neutral drift would have left ~14; 55 of
+55 introns spliceable; 52 of 55 exon boundaries shared by a majority of 35
+independently annotated genomes. It sits between **SSPN and BHLHE41** —
+ITPR2's two most conserved neighbours across 197 and 183 of 215 swept
+vertebrates — so it is not merely present but at the family's most
+recognisable address. The same genome files **every complete receptor gene
+it has as a pseudogene** (31.6 % of its whole gene set), and its
+"ITPR2"-named model is, by its own translated sequence, the **ITPR3** gene —
+which settles one of the three naming conflicts S5b deliberately left open.
+In *Dissostichus eleginoides* one 68 kb ITPR3 gene is called as three
+protein-coding models tiling residues 1–67, 52–467 and 468–1593, with the
+3′ 41 % — the entire channel — unmodelled. **Both species: three complete
+IP3-receptor genes in the DNA, zero IP3-receptor protein records in any
+database.**
+→ [`results/annotation_bugs/report.md`](results/annotation_bugs/report.md)
+
+![What the annotation put on two genes that are demonstrably there](results/annotation_bugs/figures/exon_tracks.png)
+
 ![Purifying selection on every paralogue](results/selection/figures/s9_omega_by_paralog.png)
 
 ![The 2R paralogon around the three receptors](results/synteny/figures/synteny_paralogon.png)
@@ -299,7 +332,7 @@ One task per session. Full ledger with dependencies and results in
 | S8 | Synteny across the ITPR loci | ✅ completed 2026-09-07 |
 | S9a | The codon alignment every selection test stands on | ✅ completed 2026-09-07 |
 | S9b | ML selection (codeml branch/site models, HyPhy RELAX) | ✅ completed 2026-09-08 |
-| S10 | Annotation-bug molecular validation | ⏳ pending |
+| S10 | Annotation-bug molecular validation | ✅ completed 2026-09-08 |
 | S11 | Structures + TM-align vs cryo-EM references | ⏳ pending |
 | S12 | Expression evidence (SRA junction reads) | ⏳ pending |
 | S13 | Reconciliation & dating | ⏳ pending |

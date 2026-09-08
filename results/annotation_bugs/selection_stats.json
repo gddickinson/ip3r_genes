@@ -1,0 +1,45 @@
+{
+  "n_loci_recovered": 880,
+  "n_eligible": 382,
+  "n_excluded_by_rule": {
+    "E1": 103,
+    "E2": 314,
+    "E3": 23,
+    "E4": 52,
+    "E5": 6
+  },
+  "median_loss_eligible": 0.0,
+  "n_loss_zero": 360,
+  "n_by_mode": {
+    "omission": 3,
+    "fragmentation": 2,
+    "truncation": 2
+  },
+  "n_failures": 7,
+  "cases": [
+    {
+      "case_id": "case_a",
+      "selected_as": "omission",
+      "accession": "GCA_014281875.1",
+      "organism": "Nibea albiflora",
+      "cell": "ITPR2",
+      "loss": 1.0,
+      "n_fragments": 0,
+      "control_strength": 2,
+      "headroom": 84.24,
+      "n_genes_longer": 451
+    },
+    {
+      "case_id": "case_b",
+      "selected_as": "fragmentation",
+      "accession": "GCA_031216635.1",
+      "organism": "Dissostichus eleginoides",
+      "cell": "ITPR3",
+      "loss": 0.581,
+      "n_fragments": 3,
+      "control_strength": 1,
+      "headroom": 62.19,
+      "n_genes_longer": 159
+    }
+  ]
+}

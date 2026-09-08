@@ -1,0 +1,13 @@
+case_id	accession	cell	side	symbol	distance_bp	in_paralog_consensus	consensus_fraction	consensus_species	consensus_species_total	consensus_rank
+case_a	GCA_014281875.1	ITPR2	downstream	PLEKHG7	4175	1	0.2884	62	215	17
+case_a	GCA_014281875.1	ITPR2	upstream	SSPN	5451	1	0.9163	197	215	1
+case_a	GCA_014281875.1	ITPR2	upstream	BHLHE41	12189	1	0.8512	183	215	2
+case_a	GCA_014281875.1	ITPR2	downstream	EEA1	17795	1	0.2884	62	215	17
+case_a	GCA_014281875.1	ITPR2	upstream	RASSF8	18850	1	0.4791	103	215	8
+case_a	GCA_014281875.1	ITPR2	downstream	C1QTNF4	56876	0	0	0	0	
+case_b	GCA_031216635.1	ITPR3	downstream	KUDE01_017692	12658	0	0	0	0	
+case_b	GCA_031216635.1	ITPR3	upstream	KUDE01_018563	13941	0	0	0	0	
+case_b	GCA_031216635.1	ITPR3	downstream	KUDE01_017602	30937	0	0	0	0	
+case_b	GCA_031216635.1	ITPR3	downstream	KUDE01_018254	42773	0	0	0	0	
+case_b	GCA_031216635.1	ITPR3	downstream	KUDE01_018644	52773	0	0	0	0	
+case_b	GCA_031216635.1	ITPR3	upstream	KUDE01_017243	77723	0	0	0	0	
