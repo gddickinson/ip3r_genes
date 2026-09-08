@@ -2748,6 +2748,14 @@ protein-wide.
 
 ### Two things the self-tests and the report caught
 
+**Mutation-tested on four deliberate rule breakages, all four caught by the
+test responsible** — a suite that has never been shown to fail is a suite
+nobody has checked. Gaps counted as observations in `column_stats` (T2), the
+within-protein control selected by a prefix test on the termini (T8), the
+containing element placed ahead of the pore elements in `PRIMARY_ORDER` (T6),
+and the shape bar put at the lowest curated record rather than the gap
+midpoint (T10).
+
 **T8 found a real bug on its first run.** The within-protein control was
 selected by a `startswith` test on `nterm`, `cterm` and `linker_` — and
 `nterm_trefoil` is a *domain* whose name begins with `nterm`. 225 residues

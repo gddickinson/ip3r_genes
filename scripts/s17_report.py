@@ -259,7 +259,38 @@ def section_instrument(h: dict) -> str:
         "version, the runtimes and the SHA-256 of every input and output. A "
         "ragged alignment is a hard failure: S1 established that a silent "
         "MAFFT failure degrades to a star alignment with no other symptom.",
+        "",
+        "D24 is a decision about reproducibility, so it is checked rather than "
+        "asserted: each build reads the previous run's output hashes before "
+        "overwriting them, and any alignment that actually re-ran records "
+        f"whether it reproduced its own bytes. {_repro(h)}",
     )
+
+
+def _repro(h: dict) -> str:
+    rows = h.get("alignments") or []
+    ok = [r["paralog"] for r in rows
+          if r.get("reproduced_previous_sha256") == "true"]
+    bad = [r["paralog"] for r in rows
+           if r.get("reproduced_previous_sha256") == "false"]
+    skipped = [r["paralog"] for r in rows
+               if r.get("reproduced_previous_sha256") == "not_rerun_this_build"]
+    if bad:
+        return (f"**{', '.join(bad)} did not reproduce its own output** — every "
+                f"per-site score for that paralog is read off this file, so "
+                f"this is a failure and not a note.")
+    parts = []
+    if ok:
+        parts.append(f"{', '.join(ok)} re-ran and reproduced "
+                     f"{'its' if len(ok) == 1 else 'their'} own SHA-256 "
+                     f"byte for byte")
+    if skipped:
+        parts.append(f"{', '.join(skipped)} "
+                     f"{'was' if len(skipped) == 1 else 'were'} cached this "
+                     f"build and recorded as not re-run rather than as "
+                     f"reproduced")
+    return ("; ".join(parts) + "." if parts else
+            "No previous run to compare against yet.")
 
 
 def section_selftests(h: dict) -> str:
@@ -296,6 +327,19 @@ def section_selftests(h: dict) -> str:
         "| T12 | an AUC computed from fewer than three observations |",
         "| T13 | alleles counted where positions were meant |",
         "| T14 | a p-value of 2.1e-07 rendered as `0.0000` |",
+        "",
+        "**Mutation-tested on four deliberate rule breakages, all four "
+        "caught by the test responsible.** A self-test suite that has never "
+        "been shown to fail is a suite nobody has checked, so each of these "
+        "was introduced, the failure observed, and the change reverted: "
+        "counting gaps as observations in `column_stats` (T2 reported "
+        "occupancy 1.0 for a column of nine gaps), selecting the "
+        "within-protein control by a prefix test on the termini (T8 named "
+        "`nterm_trefoil`), putting the containing element ahead of the pore "
+        "elements in `PRIMARY_ORDER` (T6 found ITPR1's gate residue 2594 "
+        "filed as `channel`), and putting the shape bar at the lowest curated "
+        "record instead of the gap midpoint (T10 refused it as the most "
+        "permissive bar the data allow).",
         "",
         "**T8 found a real bug on its first run.** The within-protein control "
         "was selected by a `startswith` test on `nterm`, `cterm` and "

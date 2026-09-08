@@ -364,14 +364,38 @@ def run(out_dir: Path = L.OUT_DIR, force: bool = False) -> dict:
 
     mafft_v = subprocess.run(["mafft", "--version"], capture_output=True,
                              text=True).stderr.strip()
+    # D24 is a decision about reproducibility, so it is worth *checking* rather
+    # than asserting: the previous run's output hashes are read back before
+    # they are overwritten, and every alignment that actually re-ran records
+    # whether it reproduced its own bytes. `--thread 1` should make that true;
+    # a `false` here is the first sign it has stopped being.
+    prev_path = out_dir / "align_stats.json"
+    prev = {}
+    if prev_path.exists():
+        try:
+            prev = {a["paralog"]: a.get("sha256_out")
+                    for a in json.loads(prev_path.read_text())
+                    .get("alignments", [])}
+        except (json.JSONDecodeError, KeyError, TypeError):
+            prev = {}
+
     stats = {"mafft_version": mafft_v, "min_coverage": MIN_COVERAGE,
              "min_identity": min_identity(), "min_aligned_aa": MIN_ALIGNED_AA,
              "shape_calibration": cal, "alignments": []}
     for paralog in L.PARALOGS:
         _p, s = align(out_dir, paralog, force=True if cal.get("dropped", {})
                       .get(paralog) else force)
+        before = prev.get(paralog)
+        s["reproduced_previous_sha256"] = (
+            "no_previous_run" if before is None else
+            "not_rerun_this_build" if s.get("cached") else
+            str(before == s["sha256_out"]).lower())
+        if s["reproduced_previous_sha256"] == "false":
+            print(f"[s17] WARNING {paralog}: MAFFT did not reproduce its own "
+                  f"output ({before[:12]} -> {s['sha256_out'][:12]}) — every "
+                  f"per-site score for this paralog is read off this file")
         stats["alignments"].append(s)
-    (out_dir / "align_stats.json").write_text(json.dumps(stats, indent=2))
+    prev_path.write_text(json.dumps(stats, indent=2))
     return stats
 
 

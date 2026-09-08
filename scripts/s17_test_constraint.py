@@ -25,6 +25,19 @@ Fourteen constructed cases, each rejected by the rule responsible:
   T13 the paralog audit counts positions, not alleles
   T14 a p-value of 2.1e-07 must not render as 0.0000
 
+**T8 found a real bug on its first run**: the within-protein control was
+selected by a `startswith` test on `nterm`, `cterm` and `linker_`, and
+`nterm_trefoil` is a *domain* whose name begins with `nterm` — so 225 residues
+of PF08709 were inside the control and every other element was being compared
+against a set containing one of them.
+
+**Mutation-tested on four deliberate rule breakages, all four caught by the
+test responsible** — gaps counted as observations (T2), the control selected by
+prefix (T8), the containing element placed ahead of the pore elements in
+`PRIMARY_ORDER` (T6), and the shape bar put at the lowest curated record rather
+than the gap midpoint (T10). A suite that has never been shown to fail is a
+suite nobody has checked.
+
     python scripts/s17_test_constraint.py
 """
 

@@ -151,6 +151,10 @@ def headline(out_dir: Path = L.OUT_DIR) -> dict:
     h["shape_bar"] = shape[0]["bar"] if shape else ""
     h["shape_dropped"] = [r for r in shape if r["kept"] == "False"]
 
+    algn = out_dir / "align_stats.json"
+    h["alignments"] = (json.loads(algn.read_text()).get("alignments", [])
+                       if algn.exists() else [])
+
     dm = L.read_tsv(out_dir / "domain_map.tsv")
     h["domain_map"] = dm
     h["transfer_checks"] = {(r["paralog"], r["element"]): r["check"]

@@ -84,7 +84,11 @@ def fig_elements(out: Path) -> None:
         ctrl = [_f(r[key]) for r in rows if r["is_control"] == "True"]
         if ctrl:
             ax.axvline(st.mean(ctrl), color=F.MUTED, lw=0.8, ls="--", zorder=1)
-            ax.annotate("linker mean", xy=(st.mean(ctrl), min(y) - 0.55),
+            # offset in points from the axes floor, not in data units: at
+            # min(y) - 0.55 the label lands on the spine and is clipped by it.
+            ax.annotate("linker mean", xy=(st.mean(ctrl), 0.0),
+                        xycoords=("data", "axes fraction"),
+                        xytext=(0, -22), textcoords="offset points",
                         fontsize=6, color=F.MUTED, ha="center", va="top",
                         annotation_clip=False)
         ax.set_xlabel(lab)
@@ -194,18 +198,38 @@ def fig_classifier(out: Path) -> None:
     ax = axes[0]
     colours = {"deep": "#184f95", "shallow": "#86b6ef", "vert": "#eb6834",
                "family": "#1baf7a"}
-    for layer in ("deep", "shallow", "vert", "family"):
+    # Every curve is drawn on the **same** positions — the ones where all four
+    # layers have a reliable score — because the layers do not cover the same
+    # residues and four curves built on four different variant sets would be
+    # comparing the sets. It is also the contrast the report's §7.2 table
+    # quotes, so the figure and the table cannot show different AUCs for the
+    # same comparison (D13).
+    LAYERS = ("deep", "shallow", "vert", "family")
+
+    def _scorable(gene: str, resi: int) -> bool:
+        s = sites[gene].get(resi)
+        if not s:
+            return False
+        for ly in LAYERS:
+            if _f(s.get(f"{ly}_jsd", "")) is None:
+                return False
+            occ = s.get(f"{ly}_occupancy", "")
+            if occ not in ("", None) and float(occ) < 0.50:
+                return False
+        return True
+
+    for layer in LAYERS:
         pos, neg = [], []
         seen = set()
         for v in variants:
             if v["source"] != "clinvar":
                 continue
-            key = (v["gene"], int(v["resi"]), v["class_bucket"])
-            if key in seen:
+            resi = int(v["resi"])
+            key = (v["gene"], resi, v["class_bucket"])
+            if key in seen or not _scorable(v["gene"], resi):
                 continue
             seen.add(key)
-            s = sites[v["gene"]].get(int(v["resi"]))
-            x = _f((s or {}).get(f"{layer}_jsd", ""))
+            x = _f(sites[v["gene"]][resi].get(f"{layer}_jsd", ""))
             if x is None:
                 continue
             if v["class_bucket"] == "P/LP":
@@ -218,7 +242,7 @@ def fig_classifier(out: Path) -> None:
         tpr = [0.0] + [sum(1 for p in pos if p >= c) / len(pos) for c in cuts] + [1.0]
         fpr = [0.0] + [sum(1 for n in neg if n >= c) / len(neg) for c in cuts] + [1.0]
         auc = [r for r in tests if r["gene"] == "POOLED" and r["layer"] == layer
-               and r["contrast"] == "P/LP vs B/LB"]
+               and r["contrast"] == "P/LP vs B/LB, all layers scorable"]
         lab = f"{layer} (AUC {auc[0]['auc']})" if auc else layer
         ax.plot(fpr, tpr, color=colours[layer], lw=1.4, label=lab)
     ax.plot([0, 1], [0, 1], color=F.MUTED, lw=0.7, ls=":")
@@ -228,7 +252,7 @@ def fig_classifier(out: Path) -> None:
     ax.set_ylim(0, 1)
     ax.legend(frameon=False, fontsize=6, loc="lower right")
     F.despine(ax)
-    F.panel(ax, "a", "pathogenic vs benign, pooled over the three genes")
+    F.panel(ax, "a", "pathogenic vs benign, pooled; one fixed set of positions")
 
     ax2 = axes[1]
     strat = _rows("vus_stratification.tsv")

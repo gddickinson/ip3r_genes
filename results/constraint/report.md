@@ -77,6 +77,8 @@ It paid for itself immediately: with that one sequence in, MAFFT opened the ITPR
 
 MAFFT runs at **`--thread 1`** by decision (D24) — S3 measured the same seeds giving profiles of 4,933 and 4,908 match states on consecutive `--thread -1` runs — and `align_stats.json` records the version, the runtimes and the SHA-256 of every input and output. A ragged alignment is a hard failure: S1 established that a silent MAFFT failure degrades to a star alignment with no other symptom.
 
+D24 is a decision about reproducibility, so it is checked rather than asserted: each build reads the previous run's output hashes before overwriting them, and any alignment that actually re-ran records whether it reproduced its own bytes. ITPR2 re-ran and reproduced its own SHA-256 byte for byte; ITPR1, ITPR3 were cached this build and recorded as not re-run rather than as reproduced.
+
 ## 4. Self-tests
 
 **14 constructed negative controls run before anything is written** (`s17_test_constraint.py`), each rejected by the rule responsible. Status: **all passed**.
@@ -99,6 +101,8 @@ These are checks on *refusal*, because almost every rule in S17 returns a plausi
 | T12 | an AUC computed from fewer than three observations |
 | T13 | alleles counted where positions were meant |
 | T14 | a p-value of 2.1e-07 rendered as `0.0000` |
+
+**Mutation-tested on four deliberate rule breakages, all four caught by the test responsible.** A self-test suite that has never been shown to fail is a suite nobody has checked, so each of these was introduced, the failure observed, and the change reverted: counting gaps as observations in `column_stats` (T2 reported occupancy 1.0 for a column of nine gaps), selecting the within-protein control by a prefix test on the termini (T8 named `nterm_trefoil`), putting the containing element ahead of the pore elements in `PRIMARY_ORDER` (T6 found ITPR1's gate residue 2594 filed as `channel`), and putting the shape bar at the lowest curated record instead of the gap midpoint (T10 refused it as the most permissive bar the data allow).
 
 **T8 found a real bug on its first run.** The within-protein control was selected by a `startswith` test on `nterm`, `cterm` and `linker_` — and `nterm_trefoil` is a *domain* whose name begins with `nterm`. So 225 residues of PF08709 — the element §2.1 is about — were quietly inside the control, and every other element was being compared against a set containing one of them. The membership test is now a prefix for linkers and an exact match for the termini.
 
