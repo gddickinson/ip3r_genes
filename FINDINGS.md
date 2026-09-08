@@ -1758,3 +1758,79 @@ the vertebrates and ITPR2 and ITPR3 at the origin of the jawed vertebrates.
 That is exactly where the reconciliation two sessions ago placed the two
 duplications. It agrees because it is partly reading the same evidence from
 another side, so it is a consistency check and not a second confirmation.
+
+---
+
+## 2026-09-08 — Where the three receptors came from, and what a fish did to one of them (S16)
+
+**The three human IP3 receptors are not three unrelated genes that happen to
+be similar. They are three pieces of one ancient neighbourhood, and you can
+still see the seams.** When the vertebrates were young, the whole genome was
+duplicated twice. If the three receptors came out of that, then the stretches
+of chromosome around them should not merely look alike — they should be
+*related copies* of one another, still carrying descendants of the same
+neighbouring genes under different names. They do. In 141 of 175 vertebrate
+genomes the genes flanking ITPR1 have relatives among the genes flanking
+ITPR2, and in 89 of 152 they have relatives among the genes flanking ITPR3.
+In matched random stretches of the same genomes, picked the same way and read
+with the same dictionary, that happens 2.6 % of the time.
+
+**But ITPR2 and ITPR3 are not each other's neighbours in this sense at all.**
+Their two neighbourhoods share relatives at exactly the background rate — 4
+genomes in 149, against a background of 2.6 %. Everything the genome
+remembers about this family's origin runs through ITPR1. That is a strange
+result to sit beside the family tree, which says ITPR2 and ITPR3 are the
+closest pair. The two are not in conflict: a tree records the order in which
+genes split, while a surviving neighbour records which copies happened to
+escape deletion afterwards, and those are different histories. But it is
+worth saying plainly that the genome's memory and the gene's memory point
+different ways.
+
+**One of those two links is old enough to count, and one is not.** The
+previous session found two families of neighbouring genes shared between the
+receptors and could not say when they were duplicated. This session could.
+The pair beside ITPR1 and ITPR3 — the glutamate receptors GRM7 and GRM4 —
+was duplicated at the origin of the vertebrates, which is exactly when the
+whole-genome duplications happened, and the same link shows up in 84
+genomes. The pair beside ITPR1 and ITPR2 — the clock genes BHLHE40 and
+BHLHE41 — was duplicated hundreds of millions of years earlier, before
+animals and fungi parted company. They are relatives sitting in the right
+places for the wrong reason. Only the first is evidence about the vertebrate
+duplications.
+
+**The best control this project has is the family it spends most of its time
+trying not to confuse itself with.** The ryanodine receptors carry every
+domain the IP3 receptors do, they come in threes in vertebrates, and they are
+just as old. Everything above was measured on them too, in the same genomes,
+in the same run. They give the same answer at the same strength — which is
+how we know that a weak signal here is a limit of what one human genome can
+show, not a sign that the IP3 receptors are different.
+
+**Then there is the fish.** About 320 million years ago the ancestor of the
+teleost fishes duplicated its entire genome again. Every gene was copied,
+including all three receptors. Most duplicates are quietly lost afterwards,
+and that is what happened to two of them: in 73 well-assembled ray-finned
+genomes, ITPR2 and ITPR3 are back to single copies. **ITPR1 is not. It kept
+both copies, in 97 % of those genomes.** The ryanodine receptors in the very
+same fish kept all six of theirs, so this is not the search failing to find
+things — it is a choice the fish genome made about this one gene.
+
+**The two fish copies really are the two halves of one event.** Each of them
+sits in part of the neighbourhood their single ancestor occupied, and — the
+part that matters — they *divide* it between them rather than both keeping
+the same bits: 45 of 49 genomes show a clean partition against a
+land-vertebrate reference and 46 of 49 against gar and bowfin, the fish that
+split off before the duplication and still carry one copy. And they are the
+*same* two halves everywhere. Take any well-mapped fish as a template and ask
+which of its two copies each other fish's copies correspond to, and all 705
+comparisons agree. If ITPR1 had simply been duplicated over and over in
+different fish lineages, those answers would have been coin flips.
+
+**What is left open.** Nobody knows why ITPR1 alone was worth keeping twice.
+It is now the paralog that stands out in two independent ways — the one whose
+neighbourhood kept its ancient relatives, and the one whose fish duplicate
+survived — and whether those are one fact or two is a question about what the
+protein is doing, not about where it sits *(pending: S17)*. Which of the two
+ancient duplication rounds made which split is also unresolved, and it needs
+the lampreys and hagfish, whose gene names are too sparse to read
+neighbourhoods from.

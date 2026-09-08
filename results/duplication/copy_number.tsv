@@ -1,0 +1,1237 @@
+accession	organism	vclass	vorder	assembly_level	contig_n50	contig_spans_gene	cell	n_loci	n_copies	n_intact_copies	n_contigs	same_contig_copies	max_coverage	annot_named	copy_contigs
+GCA_000699545.1	Podiceps cristatus	Aves	Podicipediformes	Scaffold	17412	0	ITPR1	1	0	0	0	0	0.3343	0	
+GCA_000699545.1	Podiceps cristatus	Aves	Podicipediformes	Scaffold	17412	0	ITPR2	1	0	0	0	0	0.387	0	
+GCA_000699545.1	Podiceps cristatus	Aves	Podicipediformes	Scaffold	17412	0	ITPR3	1	1	1	1	0	0.8239	0	KL257532.1
+GCA_000699545.1	Podiceps cristatus	Aves	Podicipediformes	Scaffold	17412	0	RYR	3	0	0	0	0	0.4775	0	
+GCA_000699945.1	Cathartes aura	Aves	Accipitriformes	Scaffold	15248	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_000699945.1	Cathartes aura	Aves	Accipitriformes	Scaffold	15248	0	ITPR2	1	0	0	0	0	0.3752	0	
+GCA_000699945.1	Cathartes aura	Aves	Accipitriformes	Scaffold	15248	0	ITPR3	1	1	1	1	0	0.7477	1	KL301852.1
+GCA_000699945.1	Cathartes aura	Aves	Accipitriformes	Scaffold	15248	0	RYR	4	0	0	0	0	0.4831	0	
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	Artiodactyla	Chromosome	7944	0	ITPR1	1	1	1	1	0	1.0	0	CM008031.1
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	Artiodactyla	Chromosome	7944	0	ITPR2	1	1	1	1	0	1.0	0	CM008029.1
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	Artiodactyla	Chromosome	7944	0	ITPR3	0	0	0	0	0	0.0	0	
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	Artiodactyla	Chromosome	7944	0	RYR	3	3	3	3	0	1.0	0	CM008011.1;CM008019.1;CM008022.1
+GCA_002844005.1	Limosa lapponica baueri	Aves	Charadriiformes	Scaffold	21257	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_002844005.1	Limosa lapponica baueri	Aves	Charadriiformes	Scaffold	21257	0	ITPR2	0	0	0	0	0	0.0	0	
+GCA_002844005.1	Limosa lapponica baueri	Aves	Charadriiformes	Scaffold	21257	0	ITPR3	1	1	1	1	0	0.9801	1	KZ509852.1
+GCA_002844005.1	Limosa lapponica baueri	Aves	Charadriiformes	Scaffold	21257	0	RYR	2	2	2	2	0	1.0	1	KZ505650.1;KZ505716.1
+GCA_002909625.1	Bambusicola thoracicus	Aves	Galliformes	Scaffold	10597	0	ITPR1	2	0	0	0	0	0.3516	1	
+GCA_002909625.1	Bambusicola thoracicus	Aves	Galliformes	Scaffold	10597	0	ITPR2	2	0	0	0	0	0.2111	1	
+GCA_002909625.1	Bambusicola thoracicus	Aves	Galliformes	Scaffold	10597	0	ITPR3	2	1	1	1	0	0.6295	2	PPHD01009884.1
+GCA_002909625.1	Bambusicola thoracicus	Aves	Galliformes	Scaffold	10597	0	RYR	4	0	0	0	0	0.2694	0	
+GCA_003113815.1	Sphenodon punctatus	Lepidosauria	Sphenodontia	Scaffold	27065	0	ITPR1	1	1	1	1	0	0.9975	0	QEPC01008366.1
+GCA_003113815.1	Sphenodon punctatus	Lepidosauria	Sphenodontia	Scaffold	27065	0	ITPR2	1	1	1	1	0	1.0	0	QEPC01007142.1
+GCA_003113815.1	Sphenodon punctatus	Lepidosauria	Sphenodontia	Scaffold	27065	0	ITPR3	1	1	1	1	0	1.0	0	QEPC01007384.1
+GCA_003113815.1	Sphenodon punctatus	Lepidosauria	Sphenodontia	Scaffold	27065	0	RYR	3	3	2	3	0	1.0	0	QEPC01001878.1;QEPC01010682.1;QEPC01010852.1
+GCA_004320025.1	Laticauda laticaudata	Lepidosauria	Squamata	Scaffold	35581	0	ITPR1	1	1	1	1	0	0.5817	0	BHFT01002173.1
+GCA_004320025.1	Laticauda laticaudata	Lepidosauria	Squamata	Scaffold	35581	0	ITPR2	1	1	1	1	0	0.5616	0	BHFT01019722.1
+GCA_004320025.1	Laticauda laticaudata	Lepidosauria	Squamata	Scaffold	35581	0	ITPR3	1	1	1	1	0	0.5911	0	BHFT01014849.1
+GCA_004320025.1	Laticauda laticaudata	Lepidosauria	Squamata	Scaffold	35581	0	RYR	6	1	1	1	0	0.725	0	BHFT01042859.1
+GCA_006937325.1	Anomalopteryx didiformis	Aves	Dinornithiformes	Scaffold	824	0	ITPR1	1	1	1	1	0	1.0	0	SZQC01000012.1
+GCA_006937325.1	Anomalopteryx didiformis	Aves	Dinornithiformes	Scaffold	824	0	ITPR2	1	1	1	1	0	1.0	0	SZQC01000052.1
+GCA_006937325.1	Anomalopteryx didiformis	Aves	Dinornithiformes	Scaffold	824	0	ITPR3	1	1	1	1	0	1.0	0	SZQC01000046.1
+GCA_006937325.1	Anomalopteryx didiformis	Aves	Dinornithiformes	Scaffold	824	0	RYR	3	2	2	2	0	0.7081	0	SZQC01000017.1;SZQC01000381.1
+GCA_007760645.1	Sousa chinensis	Mammalia	Artiodactyla	Scaffold	113766	0	ITPR1	1	1	1	1	0	1.0	0	RWJT01005793.1
+GCA_007760645.1	Sousa chinensis	Mammalia	Artiodactyla	Scaffold	113766	0	ITPR2	1	1	1	1	0	1.0	0	RWJT01020497.1
+GCA_007760645.1	Sousa chinensis	Mammalia	Artiodactyla	Scaffold	113766	0	ITPR3	1	1	1	1	0	1.0	0	RWJT01022005.1
+GCA_007760645.1	Sousa chinensis	Mammalia	Artiodactyla	Scaffold	113766	0	RYR	3	3	3	3	0	1.0	0	RWJT01001056.1;RWJT01018246.1;RWJT01019646.1
+GCA_008658365.1	Alca torda	Aves	Charadriiformes	Chromosome	18221265	1	ITPR1	1	1	1	1	0	1.0	1	CM018086.1
+GCA_008658365.1	Alca torda	Aves	Charadriiformes	Chromosome	18221265	1	ITPR2	1	1	0	1	0	1.0	1	CM018076.1
+GCA_008658365.1	Alca torda	Aves	Charadriiformes	Chromosome	18221265	1	ITPR3	1	1	0	1	0	1.0	1	CM018095.1
+GCA_008658365.1	Alca torda	Aves	Charadriiformes	Chromosome	18221265	1	RYR	2	2	2	2	0	1.0	2	CM018078.1;CM018080.1
+GCA_009769605.1	Bucorvus abyssinicus	Aves	Bucerotiformes	Chromosome	12039478	1	ITPR1	1	1	1	1	0	1.0	1	CM020037.1
+GCA_009769605.1	Bucorvus abyssinicus	Aves	Bucerotiformes	Chromosome	12039478	1	ITPR2	1	1	1	1	0	1.0	1	CM020053.1
+GCA_009769605.1	Bucorvus abyssinicus	Aves	Bucerotiformes	Chromosome	12039478	1	ITPR3	1	1	1	1	0	1.0	1	CM020055.1
+GCA_009769605.1	Bucorvus abyssinicus	Aves	Bucerotiformes	Chromosome	12039478	1	RYR	2	2	2	2	0	1.0	2	CM020031.1;CM020042.1
+GCA_009819775.1	Phoenicopterus ruber ruber	Aves	Phoenicopteriformes	Chromosome	14700712	1	ITPR1	1	1	1	1	0	1.0	1	CM020224.1
+GCA_009819775.1	Phoenicopterus ruber ruber	Aves	Phoenicopteriformes	Chromosome	14700712	1	ITPR2	1	1	1	1	0	1.0	1	CM020215.1
+GCA_009819775.1	Phoenicopterus ruber ruber	Aves	Phoenicopteriformes	Chromosome	14700712	1	ITPR3	1	1	1	1	0	1.0	1	CM020239.1
+GCA_009819775.1	Phoenicopterus ruber ruber	Aves	Phoenicopteriformes	Chromosome	14700712	1	RYR	2	2	2	2	0	1.0	2	CM020217.1;CM020219.1
+GCA_010411085.1	Cervus hanglu yarkandensis	Mammalia	Artiodactyla	Chromosome	268660	1	ITPR1	1	1	1	1	0	1.0	1	CM021215.1
+GCA_010411085.1	Cervus hanglu yarkandensis	Mammalia	Artiodactyla	Chromosome	268660	1	ITPR2	1	1	1	1	0	1.0	1	CM021213.1
+GCA_010411085.1	Cervus hanglu yarkandensis	Mammalia	Artiodactyla	Chromosome	268660	1	ITPR3	1	1	1	1	0	1.0	1	CM021198.1
+GCA_010411085.1	Cervus hanglu yarkandensis	Mammalia	Artiodactyla	Chromosome	268660	1	RYR	3	3	3	3	0	1.0	3	CM021195.1;CM021203.1;CM021206.1
+GCA_011823955.1	Dissostichus mawsoni	Actinopteri	Perciformes	Scaffold	3015437	1	ITPR1	2	2	1	1	1	1.0	1	JAAKFY010000006.1
+GCA_011823955.1	Dissostichus mawsoni	Actinopteri	Perciformes	Scaffold	3015437	1	ITPR2	1	1	1	1	0	1.0	0	JAAKFY010000007.1
+GCA_011823955.1	Dissostichus mawsoni	Actinopteri	Perciformes	Scaffold	3015437	1	ITPR3	1	1	0	1	0	1.0	0	JAAKFY010000002.1
+GCA_011823955.1	Dissostichus mawsoni	Actinopteri	Perciformes	Scaffold	3015437	1	RYR	6	6	1	6	0	1.0	4	JAAKFY010000008.1;JAAKFY010000011.1;JAAKFY010000013.1;JAAKFY010000015.1;JAAKFY010000019.1;JAAKFY010000020.1
+GCA_013389825.1	Crypturellus undulatus	Aves	Tinamiformes	Scaffold	99502	0	ITPR1	1	1	1	1	0	1.0	0	VWPW01023980.1
+GCA_013389825.1	Crypturellus undulatus	Aves	Tinamiformes	Scaffold	99502	0	ITPR2	1	1	1	1	0	1.0	0	VWPW01014676.1
+GCA_013389825.1	Crypturellus undulatus	Aves	Tinamiformes	Scaffold	99502	0	ITPR3	0	0	0	0	0	0.0	0	
+GCA_013389825.1	Crypturellus undulatus	Aves	Tinamiformes	Scaffold	99502	0	RYR	2	2	2	2	0	1.0	1	VWPW01021686.1;VWPW01022533.1
+GCA_013389885.1	Geococcyx californianus	Aves	Cuculiformes	Scaffold	47040	0	ITPR1	1	1	1	1	0	1.0	0	VWPV01004098.1
+GCA_013389885.1	Geococcyx californianus	Aves	Cuculiformes	Scaffold	47040	0	ITPR2	0	0	0	0	0	0.0	0	
+GCA_013389885.1	Geococcyx californianus	Aves	Cuculiformes	Scaffold	47040	0	ITPR3	0	0	0	0	0	0.0	0	
+GCA_013389885.1	Geococcyx californianus	Aves	Cuculiformes	Scaffold	47040	0	RYR	3	2	2	2	0	0.5779	1	VWPV01009501.1;VWPV01031520.1
+GCA_013389965.1	Todus mexicanus	Aves	Coraciiformes	Scaffold	8743	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_013389965.1	Todus mexicanus	Aves	Coraciiformes	Scaffold	8743	0	ITPR2	0	0	0	0	0	0.0	0	
+GCA_013389965.1	Todus mexicanus	Aves	Coraciiformes	Scaffold	8743	0	ITPR3	1	1	1	1	0	1.0	1	WEIS01036230.1
+GCA_013389965.1	Todus mexicanus	Aves	Coraciiformes	Scaffold	8743	0	RYR	1	1	1	1	0	0.8074	0	WEIS01025216.1
+GCA_013389985.1	Dryoscopus gambensis	Aves	Passeriformes	Scaffold	29388	0	ITPR1	1	1	1	1	0	1.0	0	WEIT01025007.1
+GCA_013389985.1	Dryoscopus gambensis	Aves	Passeriformes	Scaffold	29388	0	ITPR2	1	1	1	1	0	0.763	0	WEIT01016686.1
+GCA_013389985.1	Dryoscopus gambensis	Aves	Passeriformes	Scaffold	29388	0	ITPR3	1	1	1	1	0	1.0	1	WEIT01027115.1
+GCA_013389985.1	Dryoscopus gambensis	Aves	Passeriformes	Scaffold	29388	0	RYR	2	0	0	0	0	0.1707	0	
+GCA_013390065.1	Chloropsis hardwickii	Aves	Passeriformes	Scaffold	39381	0	ITPR1	1	1	1	1	0	1.0	0	WEIW01000372.1
+GCA_013390065.1	Chloropsis hardwickii	Aves	Passeriformes	Scaffold	39381	0	ITPR2	1	1	1	1	0	1.0	0	WEIW01000437.1
+GCA_013390065.1	Chloropsis hardwickii	Aves	Passeriformes	Scaffold	39381	0	ITPR3	1	1	1	1	0	0.9337	1	WEIW01003401.1
+GCA_013390065.1	Chloropsis hardwickii	Aves	Passeriformes	Scaffold	39381	0	RYR	2	2	2	2	0	1.0	1	WEIW01000007.1;WEIW01000336.1
+GCA_013390105.1	Tichodroma muraria	Aves	Passeriformes	Scaffold	14901	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_013390105.1	Tichodroma muraria	Aves	Passeriformes	Scaffold	14901	0	ITPR2	0	0	0	0	0	0.0	0	
+GCA_013390105.1	Tichodroma muraria	Aves	Passeriformes	Scaffold	14901	0	ITPR3	1	1	1	1	0	1.0	1	WAAG01017736.1
+GCA_013390105.1	Tichodroma muraria	Aves	Passeriformes	Scaffold	14901	0	RYR	0	0	0	0	0	0.0	0	
+GCA_013396355.1	Menura novaehollandiae	Aves	Passeriformes	Scaffold	85461	0	ITPR1	1	1	1	1	0	1.0	0	VWPS01000057.1
+GCA_013396355.1	Menura novaehollandiae	Aves	Passeriformes	Scaffold	85461	0	ITPR2	1	1	1	1	0	1.0	0	VWPS01000128.1
+GCA_013396355.1	Menura novaehollandiae	Aves	Passeriformes	Scaffold	85461	0	ITPR3	1	1	1	1	0	1.0	1	VWPS01000164.1
+GCA_013396355.1	Menura novaehollandiae	Aves	Passeriformes	Scaffold	85461	0	RYR	2	2	2	2	0	1.0	1	VWPS01000022.1;VWPS01000054.1
+GCA_013396465.1	Smithornis capensis	Aves	Passeriformes	Scaffold	67220	0	ITPR1	1	1	1	1	0	0.9712	0	VWYW01000920.1
+GCA_013396465.1	Smithornis capensis	Aves	Passeriformes	Scaffold	67220	0	ITPR2	1	1	1	1	0	1.0	0	VWYW01000229.1
+GCA_013396465.1	Smithornis capensis	Aves	Passeriformes	Scaffold	67220	0	ITPR3	1	1	1	1	0	0.8573	1	VWYW01001199.1
+GCA_013396465.1	Smithornis capensis	Aves	Passeriformes	Scaffold	67220	0	RYR	2	2	2	2	0	1.0	1	VWYW01000072.1;VWYW01000101.1
+GCA_013396485.1	Ptilorrhoa leucosticta	Aves	Passeriformes	Scaffold	77643	0	ITPR1	1	1	1	1	0	0.8395	0	VWYY01001129.1
+GCA_013396485.1	Ptilorrhoa leucosticta	Aves	Passeriformes	Scaffold	77643	0	ITPR2	1	1	1	1	0	0.9885	0	VWYY01000731.1
+GCA_013396485.1	Ptilorrhoa leucosticta	Aves	Passeriformes	Scaffold	77643	0	ITPR3	1	1	1	1	0	0.5311	0	VWYY01003676.1
+GCA_013396485.1	Ptilorrhoa leucosticta	Aves	Passeriformes	Scaffold	77643	0	RYR	2	2	2	2	0	1.0	1	VWYY01000118.1;VWYY01000123.1
+GCA_013396675.1	Eubucco bourcierii	Aves	Piciformes	Scaffold	26549	0	ITPR1	1	1	1	1	0	0.9971	1	VWZE01010273.1
+GCA_013396675.1	Eubucco bourcierii	Aves	Piciformes	Scaffold	26549	0	ITPR2	1	1	1	1	0	0.6381	0	VWZE01018369.1
+GCA_013396675.1	Eubucco bourcierii	Aves	Piciformes	Scaffold	26549	0	ITPR3	1	1	1	1	0	1.0	1	VWZE01023714.1
+GCA_013396675.1	Eubucco bourcierii	Aves	Piciformes	Scaffold	26549	0	RYR	3	2	2	2	0	1.0	1	VWZE01005099.1;VWZE01015450.1
+GCA_013396835.1	Psilopogon haemacephalus	Aves	Piciformes	Scaffold	36269	0	ITPR1	1	1	1	1	0	0.8178	1	VWZI01023573.1
+GCA_013396835.1	Psilopogon haemacephalus	Aves	Piciformes	Scaffold	36269	0	ITPR2	1	1	1	1	0	0.5256	0	VWZI01001715.1
+GCA_013396835.1	Psilopogon haemacephalus	Aves	Piciformes	Scaffold	36269	0	ITPR3	1	1	1	1	0	1.0	1	VWZI01004865.1
+GCA_013396835.1	Psilopogon haemacephalus	Aves	Piciformes	Scaffold	36269	0	RYR	2	2	2	2	0	1.0	0	VWZI01009657.1;VWZI01019360.1
+GCA_013396875.1	Vireo altiloquus	Aves	Passeriformes	Scaffold	121572	0	ITPR1	1	1	1	1	0	1.0	0	VZRF01009815.1
+GCA_013396875.1	Vireo altiloquus	Aves	Passeriformes	Scaffold	121572	0	ITPR2	1	1	1	1	0	1.0	0	VZRF01000017.1
+GCA_013396875.1	Vireo altiloquus	Aves	Passeriformes	Scaffold	121572	0	ITPR3	1	1	1	1	0	1.0	1	VZRF01014545.1
+GCA_013396875.1	Vireo altiloquus	Aves	Passeriformes	Scaffold	121572	0	RYR	2	2	2	2	0	1.0	1	VZRF01001132.1;VZRF01009222.1
+GCA_013396935.1	Baryphthengus martii	Aves	Coraciiformes	Scaffold	70136	0	ITPR1	1	1	1	1	0	0.6715	0	VWZK01014558.1
+GCA_013396935.1	Baryphthengus martii	Aves	Coraciiformes	Scaffold	70136	0	ITPR2	1	1	1	1	0	0.9885	0	VWZK01012176.1
+GCA_013396935.1	Baryphthengus martii	Aves	Coraciiformes	Scaffold	70136	0	ITPR3	1	1	1	1	0	1.0	1	VWZK01016629.1
+GCA_013396935.1	Baryphthengus martii	Aves	Coraciiformes	Scaffold	70136	0	RYR	7	0	0	0	0	0.4229	0	
+GCA_013396975.1	Bucco capensis	Aves	Piciformes	Scaffold	66968	0	ITPR1	1	1	1	1	0	1.0	0	VWZO01019971.1
+GCA_013396975.1	Bucco capensis	Aves	Piciformes	Scaffold	66968	0	ITPR2	0	0	0	0	0	0.0	0	
+GCA_013396975.1	Bucco capensis	Aves	Piciformes	Scaffold	66968	0	ITPR3	2	1	1	1	0	0.6854	1	VWZO01010546.1
+GCA_013396975.1	Bucco capensis	Aves	Piciformes	Scaffold	66968	0	RYR	4	1	1	1	0	0.5366	0	VWZO01001808.1
+GCA_013397015.1	Myiagra hebetior	Aves	Passeriformes	Scaffold	66181	0	ITPR1	1	1	1	1	0	1.0	1	VWZQ01007131.1
+GCA_013397015.1	Myiagra hebetior	Aves	Passeriformes	Scaffold	66181	0	ITPR2	1	1	1	1	0	0.9885	0	VWZQ01006530.1
+GCA_013397015.1	Myiagra hebetior	Aves	Passeriformes	Scaffold	66181	0	ITPR3	1	1	1	1	0	1.0	1	VWZQ01007200.1
+GCA_013397015.1	Myiagra hebetior	Aves	Passeriformes	Scaffold	66181	0	RYR	2	2	2	2	0	1.0	1	VWZQ01001806.1;VWZQ01008955.1
+GCA_013397245.1	Thryothorus ludovicianus	Aves	Passeriformes	Scaffold	60402	0	ITPR1	2	1	1	1	0	0.5156	0	VZTB01016242.1
+GCA_013397245.1	Thryothorus ludovicianus	Aves	Passeriformes	Scaffold	60402	0	ITPR2	1	1	1	1	0	0.877	0	VZTB01004788.1
+GCA_013397245.1	Thryothorus ludovicianus	Aves	Passeriformes	Scaffold	60402	0	ITPR3	2	1	1	1	0	0.6157	0	VZTB01002909.1
+GCA_013397245.1	Thryothorus ludovicianus	Aves	Passeriformes	Scaffold	60402	0	RYR	4	2	2	2	0	0.6804	1	VZTB01006589.1;VZTB01009153.1
+GCA_013397295.1	Polioptila caerulea	Aves	Passeriformes	Scaffold	50944	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_013397295.1	Polioptila caerulea	Aves	Passeriformes	Scaffold	50944	0	ITPR2	1	1	1	1	0	1.0	0	VYXF01001320.1
+GCA_013397295.1	Polioptila caerulea	Aves	Passeriformes	Scaffold	50944	0	ITPR3	1	1	1	1	0	1.0	1	VYXF01003972.1
+GCA_013397295.1	Polioptila caerulea	Aves	Passeriformes	Scaffold	50944	0	RYR	2	2	2	2	0	1.0	1	VYXF01004723.1;VYXF01009487.1
+GCA_013397395.1	Sinosuthora webbiana	Aves	Passeriformes	Scaffold	78603	0	ITPR1	1	1	1	1	0	1.0	0	VXBN01013252.1
+GCA_013397395.1	Sinosuthora webbiana	Aves	Passeriformes	Scaffold	78603	0	ITPR2	1	1	1	1	0	1.0	0	VXBN01011463.1
+GCA_013397395.1	Sinosuthora webbiana	Aves	Passeriformes	Scaffold	78603	0	ITPR3	1	1	1	1	0	0.9652	1	VXBN01011685.1
+GCA_013397395.1	Sinosuthora webbiana	Aves	Passeriformes	Scaffold	78603	0	RYR	2	2	2	2	0	1.0	1	VXBN01012045.1;VXBN01015030.1
+GCA_013397465.1	Furnarius figulus	Aves	Passeriformes	Scaffold	55547	0	ITPR1	1	1	1	1	0	1.0	1	VYZD01000015.1
+GCA_013397465.1	Furnarius figulus	Aves	Passeriformes	Scaffold	55547	0	ITPR2	1	1	1	1	0	1.0	0	VYZD01000396.1
+GCA_013397465.1	Furnarius figulus	Aves	Passeriformes	Scaffold	55547	0	ITPR3	1	1	1	1	0	1.0	1	VYZD01000217.1
+GCA_013397465.1	Furnarius figulus	Aves	Passeriformes	Scaffold	55547	0	RYR	3	1	1	1	0	0.6228	1	VYZD01002042.1
+GCA_013397495.1	Mionectes macconnelli	Aves	Passeriformes	Scaffold	72805	0	ITPR1	1	1	1	1	0	0.6189	0	VYZC01000789.1
+GCA_013397495.1	Mionectes macconnelli	Aves	Passeriformes	Scaffold	72805	0	ITPR2	1	1	1	1	0	1.0	0	VYZC01000147.1
+GCA_013397495.1	Mionectes macconnelli	Aves	Passeriformes	Scaffold	72805	0	ITPR3	0	0	0	0	0	0.0	0	
+GCA_013397495.1	Mionectes macconnelli	Aves	Passeriformes	Scaffold	72805	0	RYR	2	2	2	2	0	1.0	1	VYZC01000019.1;VYZC01000047.1
+GCA_013397535.1	Pterocles burchelli	Aves	Pterocliformes	Scaffold	43196	0	ITPR1	1	1	1	1	0	1.0	0	VYZE01000085.1
+GCA_013397535.1	Pterocles burchelli	Aves	Pterocliformes	Scaffold	43196	0	ITPR2	1	1	1	1	0	0.9885	0	VYZE01000061.1
+GCA_013397535.1	Pterocles burchelli	Aves	Pterocliformes	Scaffold	43196	0	ITPR3	1	1	1	1	0	1.0	1	VYZE01000639.1
+GCA_013397535.1	Pterocles burchelli	Aves	Pterocliformes	Scaffold	43196	0	RYR	1	1	1	1	0	0.993	1	VYZE01000008.1
+GCA_013397635.1	Columbina picui	Aves	Columbiformes	Scaffold	24994	0	ITPR1	1	1	1	1	0	1.0	1	VYZG01001033.1
+GCA_013397635.1	Columbina picui	Aves	Columbiformes	Scaffold	24994	0	ITPR2	1	1	1	1	0	0.9885	0	VYZG01000419.1
+GCA_013397635.1	Columbina picui	Aves	Columbiformes	Scaffold	24994	0	ITPR3	0	0	0	0	0	0.0	0	
+GCA_013397635.1	Columbina picui	Aves	Columbiformes	Scaffold	24994	0	RYR	2	2	2	2	0	1.0	1	VYZG01000063.1;VYZG01000089.1
+GCA_013397815.1	Aleadryas rufinucha	Aves	Passeriformes	Scaffold	90297	0	ITPR1	1	1	1	1	0	1.0	0	VZTH01000998.1
+GCA_013397815.1	Aleadryas rufinucha	Aves	Passeriformes	Scaffold	90297	0	ITPR2	1	1	1	1	0	0.9956	0	VZTH01019192.1
+GCA_013397815.1	Aleadryas rufinucha	Aves	Passeriformes	Scaffold	90297	0	ITPR3	1	1	1	1	0	0.9652	1	VZTH01008759.1
+GCA_013397815.1	Aleadryas rufinucha	Aves	Passeriformes	Scaffold	90297	0	RYR	2	2	2	2	0	1.0	0	VZTH01000269.1;VZTH01018405.1
+GCA_013397895.1	Origma solitaria	Aves	Passeriformes	Scaffold	99117	0	ITPR1	1	1	1	1	0	1.0	0	VZRL01005794.1
+GCA_013397895.1	Origma solitaria	Aves	Passeriformes	Scaffold	99117	0	ITPR2	1	1	1	1	0	0.9885	0	VZRL01002161.1
+GCA_013397895.1	Origma solitaria	Aves	Passeriformes	Scaffold	99117	0	ITPR3	2	1	1	1	0	0.7067	1	VZRL01001132.1
+GCA_013397895.1	Origma solitaria	Aves	Passeriformes	Scaffold	99117	0	RYR	2	2	2	2	0	1.0	1	VZRL01002523.1;VZRL01003992.1
+GCA_013397955.1	Grantiella picta	Aves	Passeriformes	Scaffold	100624	0	ITPR1	1	1	1	1	0	1.0	0	VZRM01002778.1
+GCA_013397955.1	Grantiella picta	Aves	Passeriformes	Scaffold	100624	0	ITPR2	1	1	1	1	0	1.0	0	VZRM01003629.1
+GCA_013397955.1	Grantiella picta	Aves	Passeriformes	Scaffold	100624	0	ITPR3	1	1	1	1	0	1.0	1	VZRM01006298.1
+GCA_013397955.1	Grantiella picta	Aves	Passeriformes	Scaffold	100624	0	RYR	2	2	2	2	0	1.0	1	VZRM01002603.1;VZRM01007608.1
+GCA_013398125.1	Aegotheles bennettii	Aves	Caprimulgiformes	Scaffold	65833	0	ITPR1	1	1	1	1	0	1.0	0	VZRW01010862.1
+GCA_013398125.1	Aegotheles bennettii	Aves	Caprimulgiformes	Scaffold	65833	0	ITPR2	1	1	1	1	0	0.5063	0	VZRW01011159.1
+GCA_013398125.1	Aegotheles bennettii	Aves	Caprimulgiformes	Scaffold	65833	0	ITPR3	2	1	1	1	0	0.708	1	VZRW01011544.1
+GCA_013398125.1	Aegotheles bennettii	Aves	Caprimulgiformes	Scaffold	65833	0	RYR	2	2	2	2	0	0.9764	1	VZRW01002778.1;VZRW01014125.1
+GCA_013398155.1	Pedionomus torquatus	Aves	Charadriiformes	Scaffold	36855	0	ITPR1	1	1	1	1	0	1.0	1	VZRU01011476.1
+GCA_013398155.1	Pedionomus torquatus	Aves	Charadriiformes	Scaffold	36855	0	ITPR2	1	1	1	1	0	0.9885	0	VZRU01019648.1
+GCA_013398155.1	Pedionomus torquatus	Aves	Charadriiformes	Scaffold	36855	0	ITPR3	1	1	1	1	0	0.9887	1	VZRU01018657.1
+GCA_013398155.1	Pedionomus torquatus	Aves	Charadriiformes	Scaffold	36855	0	RYR	1	1	1	1	0	0.9974	1	VZRU01009960.1
+GCA_013398175.1	Climacteris rufus	Aves	Passeriformes	Scaffold	72434	0	ITPR1	1	1	1	1	0	1.0	1	VZRZ01002771.1
+GCA_013398175.1	Climacteris rufus	Aves	Passeriformes	Scaffold	72434	0	ITPR2	1	1	1	1	0	1.0	0	VZRZ01004463.1
+GCA_013398175.1	Climacteris rufus	Aves	Passeriformes	Scaffold	72434	0	ITPR3	1	1	1	1	0	1.0	1	VZRZ01005358.1
+GCA_013398175.1	Climacteris rufus	Aves	Passeriformes	Scaffold	72434	0	RYR	2	2	2	2	0	1.0	1	VZRZ01002579.1;VZRZ01007597.1
+GCA_013398455.1	Loxia curvirostra	Aves	Passeriformes	Scaffold	211346	1	ITPR1	1	1	1	1	0	1.0	0	VZSM01004910.1
+GCA_013398455.1	Loxia curvirostra	Aves	Passeriformes	Scaffold	211346	1	ITPR2	1	1	1	1	0	1.0	0	VZSM01004385.1
+GCA_013398455.1	Loxia curvirostra	Aves	Passeriformes	Scaffold	211346	1	ITPR3	1	1	1	1	0	1.0	1	VZSM01006023.1
+GCA_013398455.1	Loxia curvirostra	Aves	Passeriformes	Scaffold	211346	1	RYR	2	2	2	2	0	1.0	1	VZSM01002731.1;VZSM01006932.1
+GCA_013398575.1	Certhia familiaris	Aves	Passeriformes	Scaffold	48850	0	ITPR1	1	1	1	1	0	0.823	1	WBNC01000937.1
+GCA_013398575.1	Certhia familiaris	Aves	Passeriformes	Scaffold	48850	0	ITPR2	1	1	1	1	0	0.7848	0	WBNC01001413.1
+GCA_013398575.1	Certhia familiaris	Aves	Passeriformes	Scaffold	48850	0	ITPR3	1	1	1	1	0	1.0	1	WBNC01002225.1
+GCA_013398575.1	Certhia familiaris	Aves	Passeriformes	Scaffold	48850	0	RYR	2	2	2	2	0	1.0	1	WBNC01000059.1;WBNC01000130.1
+GCA_013398615.1	Brachypodius melanocephalos	Aves	Passeriformes	Scaffold	85408	0	ITPR1	1	1	1	1	0	1.0	0	VZSR01001459.1
+GCA_013398615.1	Brachypodius melanocephalos	Aves	Passeriformes	Scaffold	85408	0	ITPR2	1	1	1	1	0	1.0	0	VZSR01002340.1
+GCA_013398615.1	Brachypodius melanocephalos	Aves	Passeriformes	Scaffold	85408	0	ITPR3	1	1	1	1	0	1.0	1	VZSR01002526.1
+GCA_013398615.1	Brachypodius melanocephalos	Aves	Passeriformes	Scaffold	85408	0	RYR	2	2	2	2	0	1.0	1	VZSR01000520.1;VZSR01003807.1
+GCA_013398795.1	Elachura formosa	Aves	Passeriformes	Scaffold	43159	0	ITPR1	1	1	1	1	0	1.0	0	WBNG01000009.1
+GCA_013398795.1	Elachura formosa	Aves	Passeriformes	Scaffold	43159	0	ITPR2	1	1	1	1	0	1.0	0	WBNG01000249.1
+GCA_013398795.1	Elachura formosa	Aves	Passeriformes	Scaffold	43159	0	ITPR3	0	0	0	0	0	0.0	0	
+GCA_013398795.1	Elachura formosa	Aves	Passeriformes	Scaffold	43159	0	RYR	2	2	2	2	0	1.0	1	WBNG01000058.1;WBNG01000069.1
+GCA_013398835.1	Emberiza fucata	Aves	Passeriformes	Scaffold	19687	0	ITPR1	1	1	1	1	0	0.6222	0	VYZJ01000868.1
+GCA_013398835.1	Emberiza fucata	Aves	Passeriformes	Scaffold	19687	0	ITPR2	1	1	1	1	0	1.0	0	VYZJ01000507.1
+GCA_013398835.1	Emberiza fucata	Aves	Passeriformes	Scaffold	19687	0	ITPR3	1	1	1	1	0	1.0	1	VYZJ01001343.1
+GCA_013398835.1	Emberiza fucata	Aves	Passeriformes	Scaffold	19687	0	RYR	2	2	2	2	0	1.0	1	VYZJ01000130.1;VYZJ01000340.1
+GCA_013398935.1	Ceuthmochares aereus	Aves	Cuculiformes	Scaffold	29269	0	ITPR1	1	1	1	1	0	1.0	0	VWPQ01001063.1
+GCA_013398935.1	Ceuthmochares aereus	Aves	Cuculiformes	Scaffold	29269	0	ITPR2	1	1	1	1	0	0.9963	0	VWPQ01000308.1
+GCA_013398935.1	Ceuthmochares aereus	Aves	Cuculiformes	Scaffold	29269	0	ITPR3	1	0	0	0	0	0.4749	0	
+GCA_013398935.1	Ceuthmochares aereus	Aves	Cuculiformes	Scaffold	29269	0	RYR	2	2	2	2	0	1.0	1	VWPQ01000040.1;VWPQ01001982.1
+GCA_013398955.1	Callaeas wilsoni	Aves	Passeriformes	Scaffold	118426	0	ITPR1	1	1	1	1	0	0.6715	0	VWPU01015536.1
+GCA_013398955.1	Callaeas wilsoni	Aves	Passeriformes	Scaffold	118426	0	ITPR2	1	1	1	1	0	1.0	0	VWPU01018490.1
+GCA_013398955.1	Callaeas wilsoni	Aves	Passeriformes	Scaffold	118426	0	ITPR3	2	1	1	1	0	0.7457	2	VWPU01009981.1
+GCA_013398955.1	Callaeas wilsoni	Aves	Passeriformes	Scaffold	118426	0	RYR	2	2	2	2	0	1.0	1	VWPU01007266.1;VWPU01018445.1
+GCA_013398975.1	Catharus fuscescens	Aves	Passeriformes	Scaffold	56061	0	ITPR1	2	1	1	1	0	0.6956	0	VWYD01006567.1
+GCA_013398975.1	Catharus fuscescens	Aves	Passeriformes	Scaffold	56061	0	ITPR2	1	1	1	1	0	1.0	0	VWYD01008180.1
+GCA_013398975.1	Catharus fuscescens	Aves	Passeriformes	Scaffold	56061	0	ITPR3	1	1	1	1	0	1.0	1	VWYD01019667.1
+GCA_013398975.1	Catharus fuscescens	Aves	Passeriformes	Scaffold	56061	0	RYR	2	2	2	2	0	1.0	1	VWYD01013793.1;VWYD01065695.1
+GCA_013399035.1	Quiscalus mexicanus	Aves	Passeriformes	Scaffold	60532	0	ITPR1	2	1	1	1	0	0.6887	1	VWYF01032520.1
+GCA_013399035.1	Quiscalus mexicanus	Aves	Passeriformes	Scaffold	60532	0	ITPR2	1	1	1	1	0	0.5615	0	VWYF01003474.1
+GCA_013399035.1	Quiscalus mexicanus	Aves	Passeriformes	Scaffold	60532	0	ITPR3	1	1	1	1	0	1.0	1	VWYF01000032.1
+GCA_013399035.1	Quiscalus mexicanus	Aves	Passeriformes	Scaffold	60532	0	RYR	2	2	2	2	0	0.8878	0	VWYF01012987.1;VWYF01015411.1
+GCA_013399075.1	Chloroceryle aenea	Aves	Coraciiformes	Scaffold	34835	0	ITPR1	1	1	1	1	0	0.991	1	VWZY01001946.1
+GCA_013399075.1	Chloroceryle aenea	Aves	Coraciiformes	Scaffold	34835	0	ITPR2	1	1	1	1	0	0.7715	0	VWZY01002652.1
+GCA_013399075.1	Chloroceryle aenea	Aves	Coraciiformes	Scaffold	34835	0	ITPR3	1	1	1	1	0	0.991	1	VWZY01000040.1
+GCA_013399075.1	Chloroceryle aenea	Aves	Coraciiformes	Scaffold	34835	0	RYR	1	1	1	1	0	0.9386	1	VWZY01006903.1
+GCA_013399305.1	Rostratula benghalensis	Aves	Charadriiformes	Scaffold	78725	0	ITPR1	1	1	1	1	0	1.0	1	VXAI01000036.1
+GCA_013399305.1	Rostratula benghalensis	Aves	Charadriiformes	Scaffold	78725	0	ITPR2	1	1	1	1	0	0.9885	0	VXAI01000006.1
+GCA_013399305.1	Rostratula benghalensis	Aves	Charadriiformes	Scaffold	78725	0	ITPR3	1	1	1	1	0	1.0	1	VXAI01000357.1
+GCA_013399305.1	Rostratula benghalensis	Aves	Charadriiformes	Scaffold	78725	0	RYR	2	2	2	2	0	1.0	1	VXAI01000004.1;VXAI01000009.1
+GCA_013399395.1	Nyctiprogne leucopyga	Aves	Caprimulgiformes	Scaffold	28894	0	ITPR1	1	1	1	1	0	1.0	1	VZZU01000042.1
+GCA_013399395.1	Nyctiprogne leucopyga	Aves	Caprimulgiformes	Scaffold	28894	0	ITPR2	2	1	1	1	0	0.7678	0	VZZU01000124.1
+GCA_013399395.1	Nyctiprogne leucopyga	Aves	Caprimulgiformes	Scaffold	28894	0	ITPR3	1	1	1	1	0	1.0	1	VZZU01001619.1
+GCA_013399395.1	Nyctiprogne leucopyga	Aves	Caprimulgiformes	Scaffold	28894	0	RYR	4	0	0	0	0	0.2343	0	
+GCA_013399455.1	Anthoscopus minutus	Aves	Passeriformes	Scaffold	49651	0	ITPR1	1	1	1	1	0	1.0	0	VWYI01047507.1
+GCA_013399455.1	Anthoscopus minutus	Aves	Passeriformes	Scaffold	49651	0	ITPR2	1	1	1	1	0	0.5941	0	VWYI01032194.1
+GCA_013399455.1	Anthoscopus minutus	Aves	Passeriformes	Scaffold	49651	0	ITPR3	2	1	1	1	0	0.5045	0	VWYI01048517.1
+GCA_013399455.1	Anthoscopus minutus	Aves	Passeriformes	Scaffold	49651	0	RYR	2	1	1	1	0	0.5712	1	VWYI01043680.1
+GCA_013399495.1	Corythaixoides concolor	Aves	Musophagiformes	Scaffold	52683	0	ITPR1	1	1	1	1	0	0.9712	0	VXAM01000844.1
+GCA_013399495.1	Corythaixoides concolor	Aves	Musophagiformes	Scaffold	52683	0	ITPR2	1	1	1	1	0	0.9885	0	VXAM01000304.1
+GCA_013399495.1	Corythaixoides concolor	Aves	Musophagiformes	Scaffold	52683	0	ITPR3	1	1	1	1	0	1.0	1	VXAM01000033.1
+GCA_013399495.1	Corythaixoides concolor	Aves	Musophagiformes	Scaffold	52683	0	RYR	1	1	1	1	0	1.0	1	VXAM01000550.1
+GCA_013399565.1	Podilymbus podiceps	Aves	Podicipediformes	Scaffold	35810	0	ITPR1	1	1	1	1	0	1.0	0	VXAO01000176.1
+GCA_013399565.1	Podilymbus podiceps	Aves	Podicipediformes	Scaffold	35810	0	ITPR2	1	1	1	1	0	0.6622	0	VXAO01001455.1
+GCA_013399565.1	Podilymbus podiceps	Aves	Podicipediformes	Scaffold	35810	0	ITPR3	1	1	1	1	0	1.0	1	VXAO01000163.1
+GCA_013399565.1	Podilymbus podiceps	Aves	Podicipediformes	Scaffold	35810	0	RYR	2	2	2	2	0	1.0	1	VXAO01000097.1;VXAO01000161.1
+GCA_013399735.1	Tyrannus savana	Aves	Passeriformes	Scaffold	72317	0	ITPR1	1	1	1	1	0	1.0	0	VXAW01003770.1
+GCA_013399735.1	Tyrannus savana	Aves	Passeriformes	Scaffold	72317	0	ITPR2	1	1	1	1	0	0.5733	0	VXAW01003906.1
+GCA_013399735.1	Tyrannus savana	Aves	Passeriformes	Scaffold	72317	0	ITPR3	1	1	1	1	0	1.0	1	VXAW01010101.1
+GCA_013399735.1	Tyrannus savana	Aves	Passeriformes	Scaffold	72317	0	RYR	2	2	2	2	0	1.0	0	VXAW01002520.1;VXAW01003324.1
+GCA_013399775.1	Semnornis frantzii	Aves	Piciformes	Scaffold	8608	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_013399775.1	Semnornis frantzii	Aves	Piciformes	Scaffold	8608	0	ITPR2	0	0	0	0	0	0.0	0	
+GCA_013399775.1	Semnornis frantzii	Aves	Piciformes	Scaffold	8608	0	ITPR3	1	1	1	1	0	1.0	1	VWYK01019522.1
+GCA_013399775.1	Semnornis frantzii	Aves	Piciformes	Scaffold	8608	0	RYR	4	0	0	0	0	0.3406	0	
+GCA_013399795.1	Zosterops hypoxanthus	Aves	Passeriformes	Scaffold	48044	0	ITPR1	2	1	1	1	0	0.6956	0	VWYL01013425.1
+GCA_013399795.1	Zosterops hypoxanthus	Aves	Passeriformes	Scaffold	48044	0	ITPR2	1	1	1	1	0	1.0	0	VWYL01018137.1
+GCA_013399795.1	Zosterops hypoxanthus	Aves	Passeriformes	Scaffold	48044	0	ITPR3	1	1	1	1	0	0.9809	1	VWYL01030448.1
+GCA_013399795.1	Zosterops hypoxanthus	Aves	Passeriformes	Scaffold	48044	0	RYR	3	3	3	3	0	0.7558	0	VWYL01017432.1;VWYL01030747.1;VWYL01031540.1
+GCA_013399855.1	Oxyruncus cristatus	Aves	Passeriformes	Scaffold	75750	0	ITPR1	1	1	1	1	0	1.0	0	VXAY01004762.1
+GCA_013399855.1	Oxyruncus cristatus	Aves	Passeriformes	Scaffold	75750	0	ITPR2	1	1	1	1	0	1.0	0	VXAY01004465.1
+GCA_013399855.1	Oxyruncus cristatus	Aves	Passeriformes	Scaffold	75750	0	ITPR3	1	1	1	1	0	1.0	1	VXAY01006930.1
+GCA_013399855.1	Oxyruncus cristatus	Aves	Passeriformes	Scaffold	75750	0	RYR	2	2	2	2	0	1.0	0	VXAY01001352.1;VXAY01002711.1
+GCA_013399895.1	Serilophus lunatus	Aves	Passeriformes	Scaffold	89885	0	ITPR1	1	1	1	1	0	1.0	0	VXBA01004282.1
+GCA_013399895.1	Serilophus lunatus	Aves	Passeriformes	Scaffold	89885	0	ITPR2	1	1	1	1	0	1.0	0	VXBA01005702.1
+GCA_013399895.1	Serilophus lunatus	Aves	Passeriformes	Scaffold	89885	0	ITPR3	1	1	1	1	0	1.0	1	VXBA01002447.1
+GCA_013399895.1	Serilophus lunatus	Aves	Passeriformes	Scaffold	89885	0	RYR	2	2	2	2	0	1.0	1	VXBA01001840.1;VXBA01005560.1
+GCA_013400075.1	Hippolais icterina	Aves	Passeriformes	Scaffold	64762	0	ITPR1	1	1	1	1	0	0.5185	0	VWYN01021473.1
+GCA_013400075.1	Hippolais icterina	Aves	Passeriformes	Scaffold	64762	0	ITPR2	1	1	1	1	0	0.9885	0	VWYN01013987.1
+GCA_013400075.1	Hippolais icterina	Aves	Passeriformes	Scaffold	64762	0	ITPR3	1	1	1	1	0	1.0	1	VWYN01026794.1
+GCA_013400075.1	Hippolais icterina	Aves	Passeriformes	Scaffold	64762	0	RYR	2	2	2	2	0	0.93	0	VWYN01009831.1;VWYN01024224.1
+GCA_013400195.1	Aramus guarauna	Aves	Gruiformes	Scaffold	62981	0	ITPR1	1	1	1	1	0	1.0	1	VXBL01002157.1
+GCA_013400195.1	Aramus guarauna	Aves	Gruiformes	Scaffold	62981	0	ITPR2	1	1	1	1	0	1.0	0	VXBL01000728.1
+GCA_013400195.1	Aramus guarauna	Aves	Gruiformes	Scaffold	62981	0	ITPR3	1	1	1	1	0	1.0	1	VXBL01003098.1
+GCA_013400195.1	Aramus guarauna	Aves	Gruiformes	Scaffold	62981	0	RYR	2	2	2	2	0	1.0	1	VXBL01009441.1;VXBL01009547.1
+GCA_013400215.1	Cisticola juncidis	Aves	Passeriformes	Scaffold	74140	0	ITPR1	1	1	1	1	0	1.0	0	VXBR01003613.1
+GCA_013400215.1	Cisticola juncidis	Aves	Passeriformes	Scaffold	74140	0	ITPR2	1	1	1	1	0	0.9885	0	VXBR01000324.1
+GCA_013400215.1	Cisticola juncidis	Aves	Passeriformes	Scaffold	74140	0	ITPR3	1	1	1	1	0	0.9895	1	VXBR01010904.1
+GCA_013400215.1	Cisticola juncidis	Aves	Passeriformes	Scaffold	74140	0	RYR	2	2	2	2	0	1.0	1	VXBR01005532.1;VXBR01009377.1
+GCA_013400415.1	Scytalopus superciliaris	Aves	Passeriformes	Scaffold	60031	0	ITPR1	1	1	1	1	0	0.9705	1	VXBX01005888.1
+GCA_013400415.1	Scytalopus superciliaris	Aves	Passeriformes	Scaffold	60031	0	ITPR2	1	1	1	1	0	0.9137	0	VXBX01000030.1
+GCA_013400415.1	Scytalopus superciliaris	Aves	Passeriformes	Scaffold	60031	0	ITPR3	1	1	1	1	0	1.0	1	VXBX01001803.1
+GCA_013400415.1	Scytalopus superciliaris	Aves	Passeriformes	Scaffold	60031	0	RYR	2	2	2	2	0	1.0	0	VXBX01004616.1;VXBX01009827.1
+GCA_013400445.1	Leiothrix lutea	Aves	Passeriformes	Scaffold	27764	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_013400445.1	Leiothrix lutea	Aves	Passeriformes	Scaffold	27764	0	ITPR2	1	1	1	1	0	1.0	0	VXBY01000177.1
+GCA_013400445.1	Leiothrix lutea	Aves	Passeriformes	Scaffold	27764	0	ITPR3	1	1	1	1	0	1.0	1	VXBY01000669.1
+GCA_013400445.1	Leiothrix lutea	Aves	Passeriformes	Scaffold	27764	0	RYR	4	2	2	2	0	0.7107	0	VXBY01000496.1;VXBY01003370.1
+GCA_013400515.1	Erpornis zantholeuca	Aves	Passeriformes	Scaffold	45331	0	ITPR1	1	1	1	1	0	1.0	1	VZTN01006051.1
+GCA_013400515.1	Erpornis zantholeuca	Aves	Passeriformes	Scaffold	45331	0	ITPR2	1	1	1	1	0	0.9885	0	VZTN01005749.1
+GCA_013400515.1	Erpornis zantholeuca	Aves	Passeriformes	Scaffold	45331	0	ITPR3	1	1	1	1	0	1.0	1	VZTN01001861.1
+GCA_013400515.1	Erpornis zantholeuca	Aves	Passeriformes	Scaffold	45331	0	RYR	5	0	0	0	0	0.3158	0	
+GCA_013400585.1	Chloropsis cyanopogon	Aves	Passeriformes	Scaffold	24720	0	ITPR1	1	1	1	1	0	1.0	0	WEZZ01015506.1
+GCA_013400585.1	Chloropsis cyanopogon	Aves	Passeriformes	Scaffold	24720	0	ITPR2	1	1	1	1	0	0.9885	0	WEZZ01021076.1
+GCA_013400585.1	Chloropsis cyanopogon	Aves	Passeriformes	Scaffold	24720	0	ITPR3	1	1	1	1	0	1.0	1	WEZZ01019221.1
+GCA_013400585.1	Chloropsis cyanopogon	Aves	Passeriformes	Scaffold	24720	0	RYR	5	0	0	0	0	0.2215	0	
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	Passeriformes	Scaffold	23460	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	Passeriformes	Scaffold	23460	0	ITPR2	0	0	0	0	0	0.0	0	
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	Passeriformes	Scaffold	23460	0	ITPR3	1	1	1	1	0	1.0	1	VYZP01027902.1
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	Passeriformes	Scaffold	23460	0	RYR	1	0	0	0	0	0.1935	0	
+GCA_013400655.1	Mystacornis crossleyi	Aves	Passeriformes	Scaffold	10653	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_013400655.1	Mystacornis crossleyi	Aves	Passeriformes	Scaffold	10653	0	ITPR2	2	1	1	1	0	0.7374	1	VYZQ01028303.1
+GCA_013400655.1	Mystacornis crossleyi	Aves	Passeriformes	Scaffold	10653	0	ITPR3	0	0	0	0	0	0.0	0	
+GCA_013400655.1	Mystacornis crossleyi	Aves	Passeriformes	Scaffold	10653	0	RYR	2	0	0	0	0	0.1606	0	
+GCA_013400675.1	Oxylabes madagascariensis	Aves	Passeriformes	Scaffold	3531	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_013400675.1	Oxylabes madagascariensis	Aves	Passeriformes	Scaffold	3531	0	ITPR2	3	0	0	0	0	0.3204	1	
+GCA_013400675.1	Oxylabes madagascariensis	Aves	Passeriformes	Scaffold	3531	0	ITPR3	3	0	0	0	0	0.1734	1	
+GCA_013400675.1	Oxylabes madagascariensis	Aves	Passeriformes	Scaffold	3531	0	RYR	4	0	0	0	0	0.2806	0	
+GCA_013400695.1	Neodrepanis coruscans	Aves	Passeriformes	Scaffold	7054	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_013400695.1	Neodrepanis coruscans	Aves	Passeriformes	Scaffold	7054	0	ITPR2	2	0	0	0	0	0.187	1	
+GCA_013400695.1	Neodrepanis coruscans	Aves	Passeriformes	Scaffold	7054	0	ITPR3	4	0	0	0	0	0.1351	0	
+GCA_013400695.1	Neodrepanis coruscans	Aves	Passeriformes	Scaffold	7054	0	RYR	2	0	0	0	0	0.2589	0	
+GCA_013400735.1	Pomatostomus ruficeps	Aves	Passeriformes	Scaffold	34780	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_013400735.1	Pomatostomus ruficeps	Aves	Passeriformes	Scaffold	34780	0	ITPR2	1	1	1	1	0	0.5607	0	VYZT01016493.1
+GCA_013400735.1	Pomatostomus ruficeps	Aves	Passeriformes	Scaffold	34780	0	ITPR3	1	1	1	1	0	1.0	1	VYZT01008480.1
+GCA_013400735.1	Pomatostomus ruficeps	Aves	Passeriformes	Scaffold	34780	0	RYR	4	0	0	0	0	0.2017	0	
+GCA_013400815.1	Centropus bengalensis	Aves	Cuculiformes	Scaffold	34951	0	ITPR1	1	1	1	1	0	0.5002	0	WBNK01000178.1
+GCA_013400815.1	Centropus bengalensis	Aves	Cuculiformes	Scaffold	34951	0	ITPR2	1	1	1	1	0	1.0	0	WBNK01000445.1
+GCA_013400815.1	Centropus bengalensis	Aves	Cuculiformes	Scaffold	34951	0	ITPR3	1	1	1	1	0	0.9655	1	WBNK01000718.1
+GCA_013400815.1	Centropus bengalensis	Aves	Cuculiformes	Scaffold	34951	0	RYR	2	2	2	2	0	1.0	1	WBNK01000174.1;WBNK01000420.1
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	Passeriformes	Scaffold	13219	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	Passeriformes	Scaffold	13219	0	ITPR2	2	1	1	1	0	0.5981	0	VZTT01023994.1
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	Passeriformes	Scaffold	13219	0	ITPR3	0	0	0	0	0	0.0	0	
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	Passeriformes	Scaffold	13219	0	RYR	2	0	0	0	0	0.1558	0	
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	Procellariiformes	Scaffold	23404	0	ITPR1	1	1	1	1	0	0.7629	1	VZTW01023184.1
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	Procellariiformes	Scaffold	23404	0	ITPR2	0	0	0	0	0	0.0	0	
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	Procellariiformes	Scaffold	23404	0	ITPR3	1	1	1	1	0	1.0	1	VZTW01014806.1
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	Procellariiformes	Scaffold	23404	0	RYR	2	0	0	0	0	0.1457	0	
+GCA_013400915.1	Pardalotus punctatus	Aves	Passeriformes	Scaffold	83169	0	ITPR1	1	0	0	0	0	0.4538	0	
+GCA_013400915.1	Pardalotus punctatus	Aves	Passeriformes	Scaffold	83169	0	ITPR2	2	0	0	0	0	0.4722	0	
+GCA_013400915.1	Pardalotus punctatus	Aves	Passeriformes	Scaffold	83169	0	ITPR3	2	1	1	1	0	0.6157	0	VZTX01008829.1
+GCA_013400915.1	Pardalotus punctatus	Aves	Passeriformes	Scaffold	83169	0	RYR	2	2	2	2	0	1.0	1	VZTX01001965.1;VZTX01026248.1
+GCA_013400955.1	Drymodes brunneopygia	Aves	Passeriformes	Scaffold	79910	0	ITPR1	1	1	1	1	0	0.706	0	VZTZ01014074.1
+GCA_013400955.1	Drymodes brunneopygia	Aves	Passeriformes	Scaffold	79910	0	ITPR2	1	1	1	1	0	0.6263	0	VZTZ01029620.1
+GCA_013400955.1	Drymodes brunneopygia	Aves	Passeriformes	Scaffold	79910	0	ITPR3	1	1	1	1	0	0.9652	1	VZTZ01042630.1
+GCA_013400955.1	Drymodes brunneopygia	Aves	Passeriformes	Scaffold	79910	0	RYR	1	1	1	1	0	0.9764	1	VZTZ01040289.1
+GCA_013400995.1	Oreotrochilus melanogaster	Aves	Apodiformes	Scaffold	7679	0	ITPR1	2	1	1	1	0	0.5934	0	VZUB01000656.1
+GCA_013400995.1	Oreotrochilus melanogaster	Aves	Apodiformes	Scaffold	7679	0	ITPR2	2	1	1	1	0	0.7311	0	VZUB01003832.1
+GCA_013400995.1	Oreotrochilus melanogaster	Aves	Apodiformes	Scaffold	7679	0	ITPR3	1	1	1	1	0	0.9655	1	VZUB01029421.1
+GCA_013400995.1	Oreotrochilus melanogaster	Aves	Apodiformes	Scaffold	7679	0	RYR	3	2	2	2	0	0.5959	0	VZUB01000771.1;VZUB01001871.1
+GCA_013401035.1	Horornis vulcanius	Aves	Passeriformes	Scaffold	3129	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_013401035.1	Horornis vulcanius	Aves	Passeriformes	Scaffold	3129	0	ITPR2	4	0	0	0	0	0.1804	2	
+GCA_013401035.1	Horornis vulcanius	Aves	Passeriformes	Scaffold	3129	0	ITPR3	2	0	0	0	0	0.2019	0	
+GCA_013401035.1	Horornis vulcanius	Aves	Passeriformes	Scaffold	3129	0	RYR	2	0	0	0	0	0.1761	0	
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	Passeriformes	Scaffold	60017	0	ITPR1	0	0	0	0	0	0.0	0	
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	Passeriformes	Scaffold	60017	0	ITPR2	1	1	1	1	0	1.0	0	VZSW01000361.1
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	Passeriformes	Scaffold	60017	0	ITPR3	0	0	0	0	0	0.0	0	
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	Passeriformes	Scaffold	60017	0	RYR	2	2	2	2	0	1.0	1	VZSW01000030.1;VZSW01000052.1
+GCA_013401215.1	Atlantisia rogersi	Aves	Gruiformes	Scaffold	36139	0	ITPR1	2	1	1	1	0	0.636	0	VZUJ01128627.1
+GCA_013401215.1	Atlantisia rogersi	Aves	Gruiformes	Scaffold	36139	0	ITPR2	1	0	0	0	0	0.2878	0	
+GCA_013401215.1	Atlantisia rogersi	Aves	Gruiformes	Scaffold	36139	0	ITPR3	3	1	1	1	0	0.5315	1	VZUJ01056847.1
+GCA_013401215.1	Atlantisia rogersi	Aves	Gruiformes	Scaffold	36139	0	RYR	4	0	0	0	0	0.4193	0	
+GCA_013401255.1	Urocolius indicus	Aves	Coliiformes	Scaffold	94415	0	ITPR1	1	1	1	1	0	1.0	0	WBNH01003138.1
+GCA_013401255.1	Urocolius indicus	Aves	Coliiformes	Scaffold	94415	0	ITPR2	1	1	1	1	0	0.6622	0	WBNH01008822.1
+GCA_013401255.1	Urocolius indicus	Aves	Coliiformes	Scaffold	94415	0	ITPR3	1	1	1	1	0	0.5757	0	WBNH01011779.1
+GCA_013401255.1	Urocolius indicus	Aves	Coliiformes	Scaffold	94415	0	RYR	2	2	2	2	0	1.0	1	WBNH01001939.1;WBNH01005367.1
+GCA_013401295.1	Glareola pratincola	Aves	Charadriiformes	Scaffold	39898	0	ITPR1	1	1	1	1	0	1.0	0	VWPO01000826.1
+GCA_013401295.1	Glareola pratincola	Aves	Charadriiformes	Scaffold	39898	0	ITPR2	2	1	1	1	0	0.7444	0	VWPO01001832.1
+GCA_013401295.1	Glareola pratincola	Aves	Charadriiformes	Scaffold	39898	0	ITPR3	2	1	1	1	0	0.6107	1	VWPO01003156.1
+GCA_013401295.1	Glareola pratincola	Aves	Charadriiformes	Scaffold	39898	0	RYR	2	2	2	2	0	1.0	1	VWPO01000031.1;VWPO01000327.1
+GCA_013401315.1	Balaeniceps rex	Aves	Pelecaniformes	Scaffold	24547	0	ITPR1	1	1	1	1	0	0.8793	0	VYZW01040117.1
+GCA_013401315.1	Balaeniceps rex	Aves	Pelecaniformes	Scaffold	24547	0	ITPR2	1	0	0	0	0	0.4748	0	
+GCA_013401315.1	Balaeniceps rex	Aves	Pelecaniformes	Scaffold	24547	0	ITPR3	1	1	1	1	0	0.9125	1	VYZW01003126.1
+GCA_013401315.1	Balaeniceps rex	Aves	Pelecaniformes	Scaffold	24547	0	RYR	2	0	0	0	0	0.1394	0	
+GCA_013401355.1	Ceyx cyanopectus	Aves	Coraciiformes	Scaffold	14890	0	ITPR1	1	0	0	0	0	0.1979	1	
+GCA_013401355.1	Ceyx cyanopectus	Aves	Coraciiformes	Scaffold	14890	0	ITPR2	1	1	1	1	0	0.783	0	VYZU01018639.1
+GCA_013401355.1	Ceyx cyanopectus	Aves	Coraciiformes	Scaffold	14890	0	ITPR3	0	0	0	0	0	0.0	0	
+GCA_013401355.1	Ceyx cyanopectus	Aves	Coraciiformes	Scaffold	14890	0	RYR	2	0	0	0	0	0.2424	0	
+GCA_014281875.1	Nibea albiflora	Actinopteri		Chromosome	4420150	1	ITPR1	2	2	2	1	1	1.0	1	CM024790.1
+GCA_014281875.1	Nibea albiflora	Actinopteri		Chromosome	4420150	1	ITPR2	1	1	1	1	0	1.0	0	CM024800.1
+GCA_014281875.1	Nibea albiflora	Actinopteri		Chromosome	4420150	1	ITPR3	2	2	1	2	0	1.0	1	CM024793.1;JABGLX010000148.1
+GCA_014281875.1	Nibea albiflora	Actinopteri		Chromosome	4420150	1	RYR	6	6	6	6	0	1.0	5	CM024794.1;CM024797.1;CM024799.1;CM024802.1;CM024806.1;CM024807.1
+GCA_014363365.1	Leucopsar rothschildi	Aves	Passeriformes	Scaffold	104200	0	ITPR1	3	0	0	0	0	0.4959	0	
+GCA_014363365.1	Leucopsar rothschildi	Aves	Passeriformes	Scaffold	104200	0	ITPR2	3	1	1	1	0	0.5363	0	BMBG01010180.1
+GCA_014363365.1	Leucopsar rothschildi	Aves	Passeriformes	Scaffold	104200	0	ITPR3	3	0	0	0	0	0.4052	0	
+GCA_014363365.1	Leucopsar rothschildi	Aves	Passeriformes	Scaffold	104200	0	RYR	4	2	2	2	0	0.5938	0	BMBG01011160.1;BMBG01011865.1
+GCA_014839755.1	Sylvia borin	Aves	Passeriformes	Chromosome	31914676	1	ITPR1	1	1	1	1	0	1.0	1	CM025968.1
+GCA_014839755.1	Sylvia borin	Aves	Passeriformes	Chromosome	31914676	1	ITPR2	1	1	1	1	0	1.0	1	CM025960.1
+GCA_014839755.1	Sylvia borin	Aves	Passeriformes	Chromosome	31914676	1	ITPR3	1	1	1	1	0	1.0	1	CM025980.1
+GCA_014839755.1	Sylvia borin	Aves	Passeriformes	Chromosome	31914676	1	RYR	3	3	3	3	0	1.0	3	CM025959.1;CM025962.1;JACEWE010000088.1
+GCA_015883425.2	Lamprotornis superbus	Aves	Passeriformes	Chromosome	150307	1	ITPR1	1	1	1	1	0	1.0	1	CM040317.1
+GCA_015883425.2	Lamprotornis superbus	Aves	Passeriformes	Chromosome	150307	1	ITPR2	1	1	1	1	0	1.0	1	CM040303.1
+GCA_015883425.2	Lamprotornis superbus	Aves	Passeriformes	Chromosome	150307	1	ITPR3	1	1	1	1	0	1.0	1	CM040330.1
+GCA_015883425.2	Lamprotornis superbus	Aves	Passeriformes	Chromosome	150307	1	RYR	2	2	2	2	0	1.0	2	CM040305.1;CM040308.1
+GCA_017639675.1	Aplochiton taeniatus	Actinopteri	Galaxiiformes	Chromosome	956540	1	ITPR1	1	1	1	1	0	1.0	1	CM030173.1
+GCA_017639675.1	Aplochiton taeniatus	Actinopteri	Galaxiiformes	Chromosome	956540	1	ITPR2	1	1	1	1	0	1.0	1	CM030181.1
+GCA_017639675.1	Aplochiton taeniatus	Actinopteri	Galaxiiformes	Chromosome	956540	1	ITPR3	1	1	1	1	0	1.0	1	CM030174.1
+GCA_017639675.1	Aplochiton taeniatus	Actinopteri	Galaxiiformes	Chromosome	956540	1	RYR	6	6	6	6	0	1.0	6	CM030175.1;CM030179.1;CM030181.1;CM030184.1;CM030187.1;CM030190.1
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	Squamata	Scaffold	162550	1	ITPR1	1	1	1	1	0	0.9701	0	JAGTXL010001321.1
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	Squamata	Scaffold	162550	1	ITPR2	0	0	0	0	0	0.0	0	
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	Squamata	Scaffold	162550	1	ITPR3	1	1	1	1	0	1.0	0	JAGTXL010020449.1
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	Squamata	Scaffold	162550	1	RYR	1	1	1	1	0	1.0	0	JAGTXL010020916.1
+GCA_019447015.1	Hymenochirus boettgeri	Amphibia	Anura	Chromosome	783846	1	ITPR1	1	1	0	1	0	1.0	1	CM033472.1
+GCA_019447015.1	Hymenochirus boettgeri	Amphibia	Anura	Chromosome	783846	1	ITPR2	1	1	0	1	0	1.0	1	CM033471.1
+GCA_019447015.1	Hymenochirus boettgeri	Amphibia	Anura	Chromosome	783846	1	ITPR3	1	1	1	1	0	1.0	0	CM033470.1
+GCA_019447015.1	Hymenochirus boettgeri	Amphibia	Anura	Chromosome	783846	1	RYR	2	2	0	1	1	1.0	2	CM033476.1
+GCA_020745705.1	Hemiprocne comata	Aves	Apodiformes	Chromosome	20531774	1	ITPR1	1	1	1	1	0	1.0	0	CM036595.1
+GCA_020745705.1	Hemiprocne comata	Aves	Apodiformes	Chromosome	20531774	1	ITPR2	1	1	1	1	0	1.0	0	CM036586.1
+GCA_020745705.1	Hemiprocne comata	Aves	Apodiformes	Chromosome	20531774	1	ITPR3	1	1	1	1	0	1.0	0	CM036610.1
+GCA_020745705.1	Hemiprocne comata	Aves	Apodiformes	Chromosome	20531774	1	RYR	2	2	2	2	0	1.0	0	CM036588.1;CM036590.1
+GCA_022829145.1	Albula goreensis	Actinopteri	Albuliformes	Chromosome	17514905	1	ITPR1	2	2	2	2	0	1.0	2	CM040752.1;CM040754.1
+GCA_022829145.1	Albula goreensis	Actinopteri	Albuliformes	Chromosome	17514905	1	ITPR2	1	1	1	1	0	1.0	1	CM040765.1
+GCA_022829145.1	Albula goreensis	Actinopteri	Albuliformes	Chromosome	17514905	1	ITPR3	1	1	1	1	0	1.0	1	CM040752.1
+GCA_022829145.1	Albula goreensis	Actinopteri	Albuliformes	Chromosome	17514905	1	RYR	5	5	5	5	0	1.0	5	CM040742.1;CM040747.1;CM040749.1;CM040751.1;CM040759.1
+GCA_023764695.1	Pygathrix nigripes	Mammalia	Primates	Contig	14260291	1	ITPR1	1	1	1	1	0	1.0	0	JAKFHG010001683.1
+GCA_023764695.1	Pygathrix nigripes	Mammalia	Primates	Contig	14260291	1	ITPR2	1	1	1	1	0	1.0	0	JAKFHG010002414.1
+GCA_023764695.1	Pygathrix nigripes	Mammalia	Primates	Contig	14260291	1	ITPR3	1	1	1	1	0	1.0	0	JAKFHG010000745.1
+GCA_023764695.1	Pygathrix nigripes	Mammalia	Primates	Contig	14260291	1	RYR	3	3	2	3	0	1.0	0	JAKFHG010000439.1;JAKFHG010000719.1;JAKFHG010003308.1
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	Perciformes	Chromosome	1500626	1	ITPR1	2	2	1	1	1	1.0	2	CM043789.1
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	Perciformes	Chromosome	1500626	1	ITPR2	1	1	1	1	0	1.0	1	CM043790.1
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	Perciformes	Chromosome	1500626	1	ITPR3	1	1	1	1	0	0.6933	1	JAMFTG010000131.1
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	Perciformes	Chromosome	1500626	1	RYR	6	6	1	6	0	1.0	5	CM043797.1;CM043798.1;CM043799.1;CM043806.1;CM043808.1;JAMFTG010000034.1
+GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	Gadiformes	Chromosome	636888	1	ITPR1	2	2	2	1	1	1.0	1	CM051002.1
+GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	Gadiformes	Chromosome	636888	1	ITPR2	1	1	1	1	0	1.0	1	CM051010.1
+GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	Gadiformes	Chromosome	636888	1	ITPR3	1	1	1	1	0	1.0	1	CM051007.1
+GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	Gadiformes	Chromosome	636888	1	RYR	6	6	6	5	1	1.0	5	CM050999.1;CM051014.1;CM051016.1;CM051018.1;CM051019.1
+GCA_028571685.1	Heterohyrax brucei	Mammalia	Hyracoidea	Chromosome	78495281	1	ITPR1	1	1	1	1	0	1.0	1	CM053158.1
+GCA_028571685.1	Heterohyrax brucei	Mammalia	Hyracoidea	Chromosome	78495281	1	ITPR2	1	1	1	1	0	1.0	1	CM053142.1
+GCA_028571685.1	Heterohyrax brucei	Mammalia	Hyracoidea	Chromosome	78495281	1	ITPR3	1	1	1	1	0	1.0	1	CM053144.1
+GCA_028571685.1	Heterohyrax brucei	Mammalia	Hyracoidea	Chromosome	78495281	1	RYR	3	3	3	3	0	1.0	3	CM053151.1;CM053152.1;CM053155.1
+GCA_029706075.1	Aldrovandia affinis	Actinopteri	Notacanthiformes	Scaffold	2000165	1	ITPR1	2	2	2	2	0	1.0	2	JAINUG010000031.1;JAINUG010000036.1
+GCA_029706075.1	Aldrovandia affinis	Actinopteri	Notacanthiformes	Scaffold	2000165	1	ITPR2	1	1	1	1	0	1.0	1	JAINUG010000023.1
+GCA_029706075.1	Aldrovandia affinis	Actinopteri	Notacanthiformes	Scaffold	2000165	1	ITPR3	1	1	1	1	0	1.0	1	JAINUG010000229.1
+GCA_029706075.1	Aldrovandia affinis	Actinopteri	Notacanthiformes	Scaffold	2000165	1	RYR	5	5	4	5	0	1.0	3	JAINUG010000051.1;JAINUG010000065.1;JAINUG010000085.1;JAINUG010000136.1;JAINUG010000546.1
+GCA_031216635.1	Dissostichus eleginoides	Actinopteri	Perciformes	Chromosome	4228958	1	ITPR1	2	2	1	1	1	1.0	0	CM062265.1
+GCA_031216635.1	Dissostichus eleginoides	Actinopteri	Perciformes	Chromosome	4228958	1	ITPR2	1	1	1	1	0	1.0	0	CM062273.1
+GCA_031216635.1	Dissostichus eleginoides	Actinopteri	Perciformes	Chromosome	4228958	1	ITPR3	1	1	1	1	0	1.0	0	CM062267.1
+GCA_031216635.1	Dissostichus eleginoides	Actinopteri	Perciformes	Chromosome	4228958	1	RYR	6	6	6	6	0	1.0	4	CM062268.1;CM062275.1;CM062278.1;CM062279.1;CM062281.1;CM062284.1
+GCA_031835075.1	Saguinus oedipus	Mammalia	Primates	Chromosome	91852676	1	ITPR1	1	1	1	1	0	1.0	0	CM063184.1
+GCA_031835075.1	Saguinus oedipus	Mammalia	Primates	Chromosome	91852676	1	ITPR2	1	1	1	1	0	1.0	0	CM063177.1
+GCA_031835075.1	Saguinus oedipus	Mammalia	Primates	Chromosome	91852676	1	ITPR3	1	1	1	1	0	1.0	0	CM063172.1
+GCA_031835075.1	Saguinus oedipus	Mammalia	Primates	Chromosome	91852676	1	RYR	3	3	3	3	0	1.0	0	CM063176.1;CM063187.1;CM063188.1
+GCA_032275445.1	Crypturellus soui	Aves	Tinamiformes	Scaffold	10551	0	ITPR1	1	1	1	1	0	1.0	0	JAUBNY010000656.1
+GCA_032275445.1	Crypturellus soui	Aves	Tinamiformes	Scaffold	10551	0	ITPR2	1	1	1	1	0	1.0	0	JAUBNY010001198.1
+GCA_032275445.1	Crypturellus soui	Aves	Tinamiformes	Scaffold	10551	0	ITPR3	1	1	1	1	0	1.0	0	JAUBNY010000997.1
+GCA_032275445.1	Crypturellus soui	Aves	Tinamiformes	Scaffold	10551	0	RYR	2	2	2	2	0	0.9974	0	JAUBNY010000184.1;JAUBNY010000465.1
+GCA_033238685.1	Lates japonicus	Actinopteri		Scaffold	285591	1	ITPR1	2	2	0	2	0	1.0	2	BRZM01000050.1;BRZM01000069.1
+GCA_033238685.1	Lates japonicus	Actinopteri		Scaffold	285591	1	ITPR2	1	1	0	1	0	1.0	1	BRZM01000040.1
+GCA_033238685.1	Lates japonicus	Actinopteri		Scaffold	285591	1	ITPR3	3	3	2	3	0	1.0	0	BRZM01000063.1;BRZM01000698.1;BRZM01003583.1
+GCA_033238685.1	Lates japonicus	Actinopteri		Scaffold	285591	1	RYR	6	6	3	6	0	1.0	3	BRZM01000003.1;BRZM01000008.1;BRZM01000015.1;BRZM01000052.1;BRZM01000065.1;BRZM01000068.1
+GCA_035590135.1	Circaetus pectoralis	Aves	Accipitriformes	Scaffold	43929	0	ITPR1	1	1	1	1	0	1.0	0	JAVJGK010000037.1
+GCA_035590135.1	Circaetus pectoralis	Aves	Accipitriformes	Scaffold	43929	0	ITPR2	1	1	1	1	0	0.9885	0	JAVJGK010000024.1
+GCA_035590135.1	Circaetus pectoralis	Aves	Accipitriformes	Scaffold	43929	0	ITPR3	1	1	1	1	0	1.0	0	JAVJGK010000054.1
+GCA_035590135.1	Circaetus pectoralis	Aves	Accipitriformes	Scaffold	43929	0	RYR	3	3	3	3	0	1.0	0	JAVJGK010000032.1;JAVJGK010000051.1;JAVJGK010000078.1
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	Cypriniformes	Chromosome	3631979	1	ITPR1	2	2	2	2	0	1.0	0	CM070012.1;CM070017.1
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	Cypriniformes	Chromosome	3631979	1	ITPR2	1	1	1	1	0	1.0	0	CM070024.1
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	Cypriniformes	Chromosome	3631979	1	ITPR3	1	1	1	1	0	1.0	0	CM070014.1
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	Cypriniformes	Chromosome	3631979	1	RYR	6	6	6	5	1	1.0	0	CM070016.1;CM070018.1;CM070023.1;CM070024.1;CM070026.1
+GCA_036250305.1	Ataeniobius toweri	Actinopteri	Cyprinodontiformes	Scaffold	16136	0	ITPR1	2	0	0	0	0	0.4967	2	
+GCA_036250305.1	Ataeniobius toweri	Actinopteri	Cyprinodontiformes	Scaffold	16136	0	ITPR2	1	0	0	0	0	0.3688	1	
+GCA_036250305.1	Ataeniobius toweri	Actinopteri	Cyprinodontiformes	Scaffold	16136	0	ITPR3	3	1	1	1	0	0.5712	2	JAHUTI010049480.1
+GCA_036250305.1	Ataeniobius toweri	Actinopteri	Cyprinodontiformes	Scaffold	16136	0	RYR	5	3	3	3	0	0.7074	4	JAHUTI010009873.1;JAHUTI010039425.1;JAHUTI010059390.1
+GCA_036250325.1	Characodon lateralis	Actinopteri	Cyprinodontiformes	Scaffold	18129	0	ITPR1	2	0	0	0	0	0.4949	2	
+GCA_036250325.1	Characodon lateralis	Actinopteri	Cyprinodontiformes	Scaffold	18129	0	ITPR2	1	1	1	1	0	0.6312	1	JAHUTJ010065589.1
+GCA_036250325.1	Characodon lateralis	Actinopteri	Cyprinodontiformes	Scaffold	18129	0	ITPR3	1	0	0	0	0	0.3618	1	
+GCA_036250325.1	Characodon lateralis	Actinopteri	Cyprinodontiformes	Scaffold	18129	0	RYR	9	0	0	0	0	0.4633	7	
+GCA_040091285.1	Ameca splendens	Actinopteri	Cyprinodontiformes	Scaffold	16857	0	ITPR1	3	0	0	0	0	0.4967	2	
+GCA_040091285.1	Ameca splendens	Actinopteri	Cyprinodontiformes	Scaffold	16857	0	ITPR2	3	0	0	0	0	0.3688	3	
+GCA_040091285.1	Ameca splendens	Actinopteri	Cyprinodontiformes	Scaffold	16857	0	ITPR3	2	0	0	0	0	0.4869	2	
+GCA_040091285.1	Ameca splendens	Actinopteri	Cyprinodontiformes	Scaffold	16857	0	RYR	4	1	1	1	0	0.5952	4	JAHRIP010037930.1
+GCA_040091305.1	Ilyodon furcidens	Actinopteri	Cyprinodontiformes	Scaffold	11867	0	ITPR1	2	0	0	0	0	0.4967	2	
+GCA_040091305.1	Ilyodon furcidens	Actinopteri	Cyprinodontiformes	Scaffold	11867	0	ITPR2	3	0	0	0	0	0.3602	3	
+GCA_040091305.1	Ilyodon furcidens	Actinopteri	Cyprinodontiformes	Scaffold	11867	0	ITPR3	3	0	0	0	0	0.306	3	
+GCA_040091305.1	Ilyodon furcidens	Actinopteri	Cyprinodontiformes	Scaffold	11867	0	RYR	11	0	0	0	0	0.3575	9	
+GCA_040091325.1	Goodea atripinnis	Actinopteri	Cyprinodontiformes	Scaffold	16062	0	ITPR1	3	0	0	0	0	0.4967	2	
+GCA_040091325.1	Goodea atripinnis	Actinopteri	Cyprinodontiformes	Scaffold	16062	0	ITPR2	3	0	0	0	0	0.3688	2	
+GCA_040091325.1	Goodea atripinnis	Actinopteri	Cyprinodontiformes	Scaffold	16062	0	ITPR3	4	0	0	0	0	0.306	3	
+GCA_040091325.1	Goodea atripinnis	Actinopteri	Cyprinodontiformes	Scaffold	16062	0	RYR	9	1	1	1	0	0.5952	5	JAHRIO010060328.1
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	Cyprinodontiformes	Scaffold	19941	0	ITPR1	4	0	0	0	0	0.3402	1	
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	Cyprinodontiformes	Scaffold	19941	0	ITPR2	2	1	1	1	0	0.5065	0	JAHRIN010008558.1
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	Cyprinodontiformes	Scaffold	19941	0	ITPR3	4	0	0	0	0	0.306	2	
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	Cyprinodontiformes	Scaffold	19941	0	RYR	3	1	1	1	0	0.7449	0	JAHRIN010033797.1
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	Cyprinodontiformes	Scaffold	15690	0	ITPR1	2	0	0	0	0	0.4967	1	
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	Cyprinodontiformes	Scaffold	15690	0	ITPR2	3	0	0	0	0	0.3688	2	
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	Cyprinodontiformes	Scaffold	15690	0	ITPR3	1	1	1	1	0	0.5622	0	JAHRIM010070462.1
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	Cyprinodontiformes	Scaffold	15690	0	RYR	9	1	1	1	0	0.5078	5	JAHRIM010070216.1
+GCA_043380575.1	Atractosteus spatula	Actinopteri	Semionotiformes	Chromosome	15716625	1	ITPR1	1	1	1	1	0	1.0	0	CM092437.1
+GCA_043380575.1	Atractosteus spatula	Actinopteri	Semionotiformes	Chromosome	15716625	1	ITPR2	1	1	1	1	0	1.0	0	CM092440.1
+GCA_043380575.1	Atractosteus spatula	Actinopteri	Semionotiformes	Chromosome	15716625	1	ITPR3	1	1	1	1	0	1.0	0	CM092438.1
+GCA_043380575.1	Atractosteus spatula	Actinopteri	Semionotiformes	Chromosome	15716625	1	RYR	3	3	3	3	0	1.0	0	CM092436.1;CM092441.1;CM092448.1
+GCA_046255725.1	Amblyopsis spelaea	Actinopteri	Percopsiformes	Chromosome	3811240	1	ITPR1	2	2	2	1	1	1.0	0	CM101355.1
+GCA_046255725.1	Amblyopsis spelaea	Actinopteri	Percopsiformes	Chromosome	3811240	1	ITPR2	1	1	1	1	0	1.0	0	CM101349.1
+GCA_046255725.1	Amblyopsis spelaea	Actinopteri	Percopsiformes	Chromosome	3811240	1	ITPR3	1	1	1	1	0	1.0	0	CM101356.1
+GCA_046255725.1	Amblyopsis spelaea	Actinopteri	Percopsiformes	Chromosome	3811240	1	RYR	6	6	6	6	0	1.0	0	CM101357.1;CM101358.1;CM101361.1;CM101363.1;CM101366.1;CM101368.1
+GCA_047511595.1	Polymixia lowei	Actinopteri	Polymixiiformes	Chromosome	1880763	1	ITPR1	2	2	2	1	1	1.0	0	CM105268.1
+GCA_047511595.1	Polymixia lowei	Actinopteri	Polymixiiformes	Chromosome	1880763	1	ITPR2	1	1	1	1	0	0.9956	0	CM105265.1
+GCA_047511595.1	Polymixia lowei	Actinopteri	Polymixiiformes	Chromosome	1880763	1	ITPR3	1	1	1	1	0	1.0	0	CM105270.1
+GCA_047511595.1	Polymixia lowei	Actinopteri	Polymixiiformes	Chromosome	1880763	1	RYR	6	6	6	6	0	1.0	0	CM105260.1;CM105261.1;CM105262.1;CM105264.1;CM105272.1;CM105278.1
+GCA_048126345.2	Notoryctes typhlops	Mammalia	Notoryctemorphia	Chromosome	84282059	1	ITPR1	1	1	1	1	0	1.0	0	CM138677.1
+GCA_048126345.2	Notoryctes typhlops	Mammalia	Notoryctemorphia	Chromosome	84282059	1	ITPR2	1	1	1	1	0	1.0	0	CM138672.1
+GCA_048126345.2	Notoryctes typhlops	Mammalia	Notoryctemorphia	Chromosome	84282059	1	ITPR3	1	1	1	1	0	1.0	0	CM138675.1
+GCA_048126345.2	Notoryctes typhlops	Mammalia	Notoryctemorphia	Chromosome	84282059	1	RYR	3	3	3	3	0	1.0	0	CM138669.1;CM138674.1;CM138676.1
+GCA_048569125.1	Diretmus argenteus	Actinopteri	Trachichthyiformes	Chromosome	542425	1	ITPR1	2	2	2	1	1	1.0	2	CM109045.1
+GCA_048569125.1	Diretmus argenteus	Actinopteri	Trachichthyiformes	Chromosome	542425	1	ITPR2	2	2	2	1	1	1.0	2	CM109053.1
+GCA_048569125.1	Diretmus argenteus	Actinopteri	Trachichthyiformes	Chromosome	542425	1	ITPR3	1	1	1	1	0	1.0	1	CM109051.1
+GCA_048569125.1	Diretmus argenteus	Actinopteri	Trachichthyiformes	Chromosome	542425	1	RYR	6	6	6	6	0	1.0	6	CM109048.1;CM109052.1;CM109054.1;CM109060.1;CM109062.1;CM109064.1
+GCA_050084785.1	Liparis tanakae	Actinopteri	Perciformes	Chromosome	1346787	1	ITPR1	2	2	2	1	1	1.0	0	CM114425.1
+GCA_050084785.1	Liparis tanakae	Actinopteri	Perciformes	Chromosome	1346787	1	ITPR2	1	1	1	1	0	0.9981	0	CM114422.1
+GCA_050084785.1	Liparis tanakae	Actinopteri	Perciformes	Chromosome	1346787	1	ITPR3	1	1	1	1	0	1.0	0	CM114428.1
+GCA_050084785.1	Liparis tanakae	Actinopteri	Perciformes	Chromosome	1346787	1	RYR	6	6	6	6	0	1.0	0	CM114427.1;CM114430.1;CM114432.1;CM114433.1;CM114435.1;CM114437.1
+GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	Lepidogalaxiiformes	Scaffold	1446	0	ITPR1	4	0	0	0	0	0.4312	0	
+GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	Lepidogalaxiiformes	Scaffold	1446	0	ITPR2	1	0	0	0	0	0.1126	0	
+GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	Lepidogalaxiiformes	Scaffold	1446	0	ITPR3	1	0	0	0	0	0.1468	0	
+GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	Lepidogalaxiiformes	Scaffold	1446	0	RYR	3	0	0	0	0	0.4971	0	
+GCA_054084135.1	Copsychus sechellarum	Aves	Passeriformes	Chromosome	12529446	1	ITPR1	1	1	1	1	0	1.0	0	CM133787.1
+GCA_054084135.1	Copsychus sechellarum	Aves	Passeriformes	Chromosome	12529446	1	ITPR2	1	1	1	1	0	1.0	0	CM133781.1
+GCA_054084135.1	Copsychus sechellarum	Aves	Passeriformes	Chromosome	12529446	1	ITPR3	1	1	1	1	0	1.0	0	CM133804.1
+GCA_054084135.1	Copsychus sechellarum	Aves	Passeriformes	Chromosome	12529446	1	RYR	2	2	2	2	0	1.0	0	CM133779.1;CM133782.1
+GCA_054099775.1	Steatornis caripensis	Aves	Caprimulgiformes	Chromosome	44324291	1	ITPR1	1	1	1	1	0	1.0	1	CM133975.1
+GCA_054099775.1	Steatornis caripensis	Aves	Caprimulgiformes	Chromosome	44324291	1	ITPR2	1	1	1	1	0	1.0	1	CM133965.1
+GCA_054099775.1	Steatornis caripensis	Aves	Caprimulgiformes	Chromosome	44324291	1	ITPR3	1	1	1	1	0	1.0	1	CM133992.1
+GCA_054099775.1	Steatornis caripensis	Aves	Caprimulgiformes	Chromosome	44324291	1	RYR	2	2	2	2	0	1.0	2	CM133967.1;CM133969.1
+GCA_054644205.1	Lestoros inca	Mammalia	Paucituberculata	Chromosome	11940304	1	ITPR1	1	1	1	1	0	1.0	0	CM138377.1
+GCA_054644205.1	Lestoros inca	Mammalia	Paucituberculata	Chromosome	11940304	1	ITPR2	1	1	1	1	0	1.0	0	CM138381.1
+GCA_054644205.1	Lestoros inca	Mammalia	Paucituberculata	Chromosome	11940304	1	ITPR3	1	1	1	1	0	1.0	0	CM138380.1
+GCA_054644205.1	Lestoros inca	Mammalia	Paucituberculata	Chromosome	11940304	1	RYR	3	3	3	3	0	1.0	0	CM138378.1;CM138379.1;CM138380.1
+GCA_054883175.1	Datnioides polota	Actinopteri	Lobotiformes	Chromosome	16887846	1	ITPR1	2	2	2	1	1	1.0	0	CM142224.1
+GCA_054883175.1	Datnioides polota	Actinopteri	Lobotiformes	Chromosome	16887846	1	ITPR2	1	1	1	1	0	1.0	0	CM142228.1
+GCA_054883175.1	Datnioides polota	Actinopteri	Lobotiformes	Chromosome	16887846	1	ITPR3	1	1	1	1	0	1.0	0	CM142235.1
+GCA_054883175.1	Datnioides polota	Actinopteri	Lobotiformes	Chromosome	16887846	1	RYR	6	6	6	6	0	1.0	0	CM142227.1;CM142232.1;CM142233.1;CM142237.1;CM142238.1;CM142244.1
+GCA_054883375.1	Arapaima gigas	Actinopteri	Osteoglossiformes	Complete Genome	27159801	1	ITPR1	2	2	2	1	1	1.0	0	CM142465.1
+GCA_054883375.1	Arapaima gigas	Actinopteri	Osteoglossiformes	Complete Genome	27159801	1	ITPR2	1	1	1	1	0	1.0	0	CM142463.1
+GCA_054883375.1	Arapaima gigas	Actinopteri	Osteoglossiformes	Complete Genome	27159801	1	ITPR3	1	1	1	1	0	1.0	0	CM142469.1
+GCA_054883375.1	Arapaima gigas	Actinopteri	Osteoglossiformes	Complete Genome	27159801	1	RYR	4	4	4	4	0	1.0	0	CM142463.1;CM142465.1;CM142467.1;CM142468.1
+GCA_056506795.1	Pristigenys meyeri	Actinopteri	Priacanthiformes	Chromosome	32736534	1	ITPR1	2	2	2	1	1	1.0	0	CM151773.1
+GCA_056506795.1	Pristigenys meyeri	Actinopteri	Priacanthiformes	Chromosome	32736534	1	ITPR2	1	1	1	1	0	1.0	0	CM151776.1
+GCA_056506795.1	Pristigenys meyeri	Actinopteri	Priacanthiformes	Chromosome	32736534	1	ITPR3	1	1	1	1	0	1.0	0	CM151778.1
+GCA_056506795.1	Pristigenys meyeri	Actinopteri	Priacanthiformes	Chromosome	32736534	1	RYR	6	6	6	6	0	1.0	0	CM151777.1;CM151782.1;CM151783.1;CM151784.1;CM151786.1;CM151789.1
+GCA_056776345.1	Spizella passerina	Aves	Passeriformes	Chromosome	5055426	1	ITPR1	1	1	1	1	0	1.0	0	CM165312.1
+GCA_056776345.1	Spizella passerina	Aves	Passeriformes	Chromosome	5055426	1	ITPR2	1	1	1	1	0	1.0	0	CM165302.1
+GCA_056776345.1	Spizella passerina	Aves	Passeriformes	Chromosome	5055426	1	ITPR3	1	1	1	1	0	1.0	0	CM165329.1
+GCA_056776345.1	Spizella passerina	Aves	Passeriformes	Chromosome	5055426	1	RYR	3	3	3	3	0	1.0	0	CM165300.1;CM165304.1;CM165337.1
+GCA_056783565.1	Hiodon alosoides	Actinopteri	Hiodontiformes	Chromosome	15034530	1	ITPR1	2	2	2	2	0	1.0	2	CM165611.1;CM165617.1
+GCA_056783565.1	Hiodon alosoides	Actinopteri	Hiodontiformes	Chromosome	15034530	1	ITPR2	2	2	2	2	0	1.0	2	CM165630.1;CM165631.1
+GCA_056783565.1	Hiodon alosoides	Actinopteri	Hiodontiformes	Chromosome	15034530	1	ITPR3	1	1	1	1	0	1.0	1	CM165611.1
+GCA_056783565.1	Hiodon alosoides	Actinopteri	Hiodontiformes	Chromosome	15034530	1	RYR	4	4	4	4	0	1.0	4	CM165607.1;CM165608.1;CM165610.1;CM165622.1
+GCA_056783665.1	Albula glossodonta	Actinopteri	Albuliformes	Chromosome	36502201	1	ITPR1	2	2	2	2	0	1.0	0	CM165712.1;CM165714.1
+GCA_056783665.1	Albula glossodonta	Actinopteri	Albuliformes	Chromosome	36502201	1	ITPR2	1	1	1	1	0	1.0	0	CM165725.1
+GCA_056783665.1	Albula glossodonta	Actinopteri	Albuliformes	Chromosome	36502201	1	ITPR3	1	1	1	1	0	1.0	0	CM165714.1
+GCA_056783665.1	Albula glossodonta	Actinopteri	Albuliformes	Chromosome	36502201	1	RYR	5	5	5	5	0	1.0	0	CM165702.1;CM165707.1;CM165710.1;CM165711.1;CM165716.1
+GCA_056824565.1	Stylephorus chordatus	Actinopteri	Stylephoriformes	Chromosome	850304	1	ITPR1	2	2	2	2	0	1.0	0	CM166136.1;CM166138.1
+GCA_056824565.1	Stylephorus chordatus	Actinopteri	Stylephoriformes	Chromosome	850304	1	ITPR2	1	1	1	1	0	1.0	0	CM166139.1
+GCA_056824565.1	Stylephorus chordatus	Actinopteri	Stylephoriformes	Chromosome	850304	1	ITPR3	1	1	1	1	0	1.0	0	CM166132.1
+GCA_056824565.1	Stylephorus chordatus	Actinopteri	Stylephoriformes	Chromosome	850304	1	RYR	6	6	6	6	0	1.0	0	CM166131.1;CM166133.1;CM166135.1;CM166141.1;CM166142.1;CM166145.1
+GCA_056824585.1	Alepocephalus tenebrosus	Actinopteri	Alepocephaliformes	Chromosome	731605	1	ITPR1	2	2	2	1	1	1.0	0	CM166150.1
+GCA_056824585.1	Alepocephalus tenebrosus	Actinopteri	Alepocephaliformes	Chromosome	731605	1	ITPR2	1	1	1	1	0	1.0	0	CM166151.1
+GCA_056824585.1	Alepocephalus tenebrosus	Actinopteri	Alepocephaliformes	Chromosome	731605	1	ITPR3	1	1	1	1	0	1.0	0	CM166151.1
+GCA_056824585.1	Alepocephalus tenebrosus	Actinopteri	Alepocephaliformes	Chromosome	731605	1	RYR	6	6	6	5	1	1.0	0	CM166148.1;CM166149.1;CM166154.1;CM166157.1;CM166159.1
+GCA_057876775.1	Echinorhinus cookei	Chondrichthyes	Echinorhiniformes	Chromosome	2278199	1	ITPR1	1	1	1	1	0	1.0	0	CM174640.1
+GCA_057876775.1	Echinorhinus cookei	Chondrichthyes	Echinorhiniformes	Chromosome	2278199	1	ITPR2	1	1	1	1	0	1.0	0	CM174645.1
+GCA_057876775.1	Echinorhinus cookei	Chondrichthyes	Echinorhiniformes	Chromosome	2278199	1	ITPR3	1	1	1	1	0	1.0	0	CM174648.1
+GCA_057876775.1	Echinorhinus cookei	Chondrichthyes	Echinorhiniformes	Chromosome	2278199	1	RYR	3	3	3	3	0	1.0	0	CM174625.1;CM174631.1;CM174666.1
+GCA_058224745.1	Acrocephalus arundinaceus	Aves	Passeriformes	Scaffold	14738253	1	ITPR1	1	1	1	1	0	1.0	0	JAWJJZ010000016.1
+GCA_058224745.1	Acrocephalus arundinaceus	Aves	Passeriformes	Scaffold	14738253	1	ITPR2	1	1	1	1	0	1.0	0	JAWJJZ010000027.1
+GCA_058224745.1	Acrocephalus arundinaceus	Aves	Passeriformes	Scaffold	14738253	1	ITPR3	1	1	1	1	0	1.0	0	JAWJJZ010000071.1
+GCA_058224745.1	Acrocephalus arundinaceus	Aves	Passeriformes	Scaffold	14738253	1	RYR	3	3	3	3	0	1.0	0	JAWJJZ010000001.1;JAWJJZ010000003.1;JAWJJZ010000179.1
+GCA_058707665.1	Platax teira	Actinopteri	Ephippiformes	Complete Genome	30140486	1	ITPR1	2	2	2	1	1	1.0	0	CM178913.1
+GCA_058707665.1	Platax teira	Actinopteri	Ephippiformes	Complete Genome	30140486	1	ITPR2	1	1	1	1	0	1.0	0	CM178915.1
+GCA_058707665.1	Platax teira	Actinopteri	Ephippiformes	Complete Genome	30140486	1	ITPR3	1	1	1	1	0	1.0	0	CM178919.1
+GCA_058707665.1	Platax teira	Actinopteri	Ephippiformes	Complete Genome	30140486	1	RYR	6	6	6	6	0	1.0	0	CM178916.1;CM178923.1;CM178924.1;CM178926.1;CM178928.1;CM178931.1
+GCA_900312595.1	Guentherus altivela	Actinopteri	Ateleopodiformes	Scaffold	2928	0	ITPR1	2	0	0	0	0	0.1739	0	
+GCA_900312595.1	Guentherus altivela	Actinopteri	Ateleopodiformes	Scaffold	2928	0	ITPR2	0	0	0	0	0	0.0	0	
+GCA_900312595.1	Guentherus altivela	Actinopteri	Ateleopodiformes	Scaffold	2928	0	ITPR3	1	0	0	0	0	0.109	0	
+GCA_900312595.1	Guentherus altivela	Actinopteri	Ateleopodiformes	Scaffold	2928	0	RYR	4	0	0	0	0	0.1716	0	
+GCA_951230385.1	Staurois parvus	Amphibia	Anura	Scaffold	611229	1	ITPR1	1	1	0	1	0	0.9606	0	CATNWA010014760.1
+GCA_951230385.1	Staurois parvus	Amphibia	Anura	Scaffold	611229	1	ITPR2	2	1	1	1	0	0.5072	0	CATNWA010014941.1
+GCA_951230385.1	Staurois parvus	Amphibia	Anura	Scaffold	611229	1	ITPR3	2	1	1	1	0	0.6955	1	CATNWA010014490.1
+GCA_951230385.1	Staurois parvus	Amphibia	Anura	Scaffold	611229	1	RYR	1	1	1	1	0	1.0	0	CATNWA010007479.1
+GCA_965364685.1	Capros aper	Actinopteri	Caproiformes	Chromosome	12853060	1	ITPR1	2	2	2	1	1	1.0	0	OZ263291.1
+GCA_965364685.1	Capros aper	Actinopteri	Caproiformes	Chromosome	12853060	1	ITPR2	1	1	1	1	0	1.0	0	OZ263289.1
+GCA_965364685.1	Capros aper	Actinopteri	Caproiformes	Chromosome	12853060	1	ITPR3	1	1	1	1	0	0.9895	0	CBDTYR010000080.1
+GCA_965364685.1	Capros aper	Actinopteri	Caproiformes	Chromosome	12853060	1	RYR	6	6	6	6	0	1.0	0	OZ263286.1;OZ263287.1;OZ263288.1;OZ263289.1;OZ263290.1;OZ263302.1
+GCA_980438365.1	Acanthurus tractus	Actinopteri	Acanthuriformes	Chromosome	31041855	1	ITPR1	2	2	2	1	1	1.0	0	OZ413072.1
+GCA_980438365.1	Acanthurus tractus	Actinopteri	Acanthuriformes	Chromosome	31041855	1	ITPR2	1	1	1	1	0	1.0	0	OZ413084.1
+GCA_980438365.1	Acanthurus tractus	Actinopteri	Acanthuriformes	Chromosome	31041855	1	ITPR3	1	1	1	1	0	1.0	0	OZ413082.1
+GCA_980438365.1	Acanthurus tractus	Actinopteri	Acanthuriformes	Chromosome	31041855	1	RYR	6	6	6	6	0	1.0	0	OZ413076.1;OZ413077.1;OZ413078.1;OZ413079.1;OZ413081.1;OZ413085.1
+GCA_984656905.1	Parequula melbournensis	Actinopteri	Gerreiformes	Chromosome	5643520	1	ITPR1	2	2	2	1	1	1.0	0	OZ479485.1
+GCA_984656905.1	Parequula melbournensis	Actinopteri	Gerreiformes	Chromosome	5643520	1	ITPR2	1	1	1	1	0	1.0	0	OZ479483.1
+GCA_984656905.1	Parequula melbournensis	Actinopteri	Gerreiformes	Chromosome	5643520	1	ITPR3	1	1	1	1	0	1.0	0	OZ479491.1
+GCA_984656905.1	Parequula melbournensis	Actinopteri	Gerreiformes	Chromosome	5643520	1	RYR	6	6	6	6	0	1.0	0	OZ479481.1;OZ479489.1;OZ479492.1;OZ479495.1;OZ479500.1;OZ479502.1
+GCA_987193245.1	Pontoporia blainvillei	Mammalia	Artiodactyla	Chromosome	20985247	1	ITPR1	1	1	1	1	0	1.0	0	OZ497764.1
+GCA_987193245.1	Pontoporia blainvillei	Mammalia	Artiodactyla	Chromosome	20985247	1	ITPR2	1	1	1	1	0	1.0	0	OZ497766.1
+GCA_987193245.1	Pontoporia blainvillei	Mammalia	Artiodactyla	Chromosome	20985247	1	ITPR3	1	1	1	1	0	1.0	0	OZ497764.1
+GCA_987193245.1	Pontoporia blainvillei	Mammalia	Artiodactyla	Chromosome	20985247	1	RYR	3	3	3	3	0	1.0	0	OZ497758.1;OZ497768.1;OZ497775.1
+GCF_000001405.40	Homo sapiens	Mammalia	Primates	Chromosome	57879411	1	ITPR1	1	1	1	1	0	1.0	1	NC_000003.12
+GCF_000001405.40	Homo sapiens	Mammalia	Primates	Chromosome	57879411	1	ITPR2	1	1	1	1	0	1.0	1	NC_000012.12
+GCF_000001405.40	Homo sapiens	Mammalia	Primates	Chromosome	57879411	1	ITPR3	1	1	1	1	0	1.0	1	NC_000006.12
+GCF_000001405.40	Homo sapiens	Mammalia	Primates	Chromosome	57879411	1	RYR	3	3	3	3	0	1.0	3	NC_000001.11;NC_000015.10;NC_000019.10
+GCF_000001635.27	Mus musculus	Mammalia	Rodentia	Chromosome	59462871	1	ITPR1	1	1	1	1	0	1.0	1	NC_000072.7
+GCF_000001635.27	Mus musculus	Mammalia	Rodentia	Chromosome	59462871	1	ITPR2	1	1	1	1	0	1.0	1	NC_000072.7
+GCF_000001635.27	Mus musculus	Mammalia	Rodentia	Chromosome	59462871	1	ITPR3	1	1	1	1	0	1.0	1	NC_000083.7
+GCF_000001635.27	Mus musculus	Mammalia	Rodentia	Chromosome	59462871	1	RYR	3	3	3	3	0	1.0	3	NC_000068.8;NC_000073.7;NC_000079.7
+GCF_000004195.4	Xenopus tropicalis	Amphibia	Anura	Chromosome	14634335	1	ITPR1	1	1	1	1	0	1.0	1	NC_030680.2
+GCF_000004195.4	Xenopus tropicalis	Amphibia	Anura	Chromosome	14634335	1	ITPR2	1	1	1	1	0	1.0	1	NC_030679.2
+GCF_000004195.4	Xenopus tropicalis	Amphibia	Anura	Chromosome	14634335	1	ITPR3	1	1	1	1	0	1.0	1	NC_030678.2
+GCF_000004195.4	Xenopus tropicalis	Amphibia	Anura	Chromosome	14634335	1	RYR	2	2	2	1	1	1.0	2	NC_030684.2
+GCF_000243295.1	Trichechus manatus latirostris	Mammalia	Sirenia	Scaffold	37750	0	ITPR1	1	1	1	1	0	1.0	1	NW_004443937.1
+GCF_000243295.1	Trichechus manatus latirostris	Mammalia	Sirenia	Scaffold	37750	0	ITPR2	1	1	1	1	0	1.0	1	NW_004444048.1
+GCF_000243295.1	Trichechus manatus latirostris	Mammalia	Sirenia	Scaffold	37750	0	ITPR3	1	1	1	1	0	1.0	1	NW_004444197.1
+GCF_000243295.1	Trichechus manatus latirostris	Mammalia	Sirenia	Scaffold	37750	0	RYR	3	3	3	3	0	1.0	3	NW_004443957.1;NW_004444012.1;NW_004444143.1
+GCF_000298275.1	Orycteropus afer afer	Mammalia	Tubulidentata	Scaffold	17683	0	ITPR1	1	1	1	1	0	1.0	1	NW_006922016.1
+GCF_000298275.1	Orycteropus afer afer	Mammalia	Tubulidentata	Scaffold	17683	0	ITPR2	1	1	1	1	0	1.0	1	NW_006921841.1
+GCF_000298275.1	Orycteropus afer afer	Mammalia	Tubulidentata	Scaffold	17683	0	ITPR3	1	1	1	1	0	1.0	1	NW_006921646.1
+GCF_000298275.1	Orycteropus afer afer	Mammalia	Tubulidentata	Scaffold	17683	0	RYR	3	3	3	3	0	1.0	3	NW_006921655.1;NW_006921683.1;NW_006922094.1
+GCF_000299155.1	Elephantulus edwardii	Mammalia	Macroscelidea	Scaffold	24219	0	ITPR1	1	1	1	1	0	1.0	1	NW_006399950.1
+GCF_000299155.1	Elephantulus edwardii	Mammalia	Macroscelidea	Scaffold	24219	0	ITPR2	1	1	1	1	0	1.0	1	NW_006399907.1
+GCF_000299155.1	Elephantulus edwardii	Mammalia	Macroscelidea	Scaffold	24219	0	ITPR3	1	1	1	1	0	1.0	1	NW_006399767.1
+GCF_000299155.1	Elephantulus edwardii	Mammalia	Macroscelidea	Scaffold	24219	0	RYR	3	3	3	3	0	1.0	3	NW_006399776.1;NW_006399916.1;NW_006400016.1
+GCF_000334495.1	Tupaia belangeri chinensis	Mammalia	Scandentia	Scaffold	25938	0	ITPR1	1	1	1	1	0	1.0	1	NW_006159551.1
+GCF_000334495.1	Tupaia belangeri chinensis	Mammalia	Scandentia	Scaffold	25938	0	ITPR2	1	1	1	1	0	0.9885	1	NW_006159458.1
+GCF_000334495.1	Tupaia belangeri chinensis	Mammalia	Scandentia	Scaffold	25938	0	ITPR3	1	1	1	1	0	1.0	1	NW_006159580.1
+GCF_000334495.1	Tupaia belangeri chinensis	Mammalia	Scandentia	Scaffold	25938	0	RYR	2	2	2	2	0	1.0	2	NW_006159632.1;NW_006198801.1
+GCF_000687185.1	Egretta garzetta	Aves	Pelecaniformes	Scaffold	29019	0	ITPR1	1	1	1	1	0	1.0	1	NW_009260758.1
+GCF_000687185.1	Egretta garzetta	Aves	Pelecaniformes	Scaffold	29019	0	ITPR2	1	1	1	1	0	0.9885	1	NW_009258671.1
+GCF_000687185.1	Egretta garzetta	Aves	Pelecaniformes	Scaffold	29019	0	ITPR3	1	1	1	1	0	1.0	1	NW_009259598.1
+GCF_000687185.1	Egretta garzetta	Aves	Pelecaniformes	Scaffold	29019	0	RYR	2	2	2	2	0	1.0	2	NW_009258894.1;NW_009260144.1
+GCF_000687285.1	Phaethon lepturus	Aves	Phaethontiformes	Scaffold	22941	0	ITPR1	2	1	1	1	0	0.6222	2	NW_010532953.1
+GCF_000687285.1	Phaethon lepturus	Aves	Phaethontiformes	Scaffold	22941	0	ITPR2	1	0	0	0	0	0.457	1	
+GCF_000687285.1	Phaethon lepturus	Aves	Phaethontiformes	Scaffold	22941	0	ITPR3	1	1	1	1	0	0.9801	1	NW_010520325.1
+GCF_000687285.1	Phaethon lepturus	Aves	Phaethontiformes	Scaffold	22941	0	RYR	1	1	1	1	0	0.8941	1	NW_010548315.1
+GCF_000690535.1	Cariama cristata	Aves	Cariamiformes	Scaffold	24645	0	ITPR1	1	1	1	1	0	1.0	1	NW_009609979.1
+GCF_000690535.1	Cariama cristata	Aves	Cariamiformes	Scaffold	24645	0	ITPR2	0	0	0	0	0	0.0	0	
+GCF_000690535.1	Cariama cristata	Aves	Cariamiformes	Scaffold	24645	0	ITPR3	1	1	1	1	0	0.9801	1	NW_009636647.1
+GCF_000690535.1	Cariama cristata	Aves	Cariamiformes	Scaffold	24645	0	RYR	3	1	1	1	0	0.677	3	NW_009602005.1
+GCF_000690775.1	Eurypyga helias	Aves	Eurypygiformes	Scaffold	24402	0	ITPR1	1	1	1	1	0	1.0	1	NW_010274431.1
+GCF_000690775.1	Eurypyga helias	Aves	Eurypygiformes	Scaffold	24402	0	ITPR2	0	0	0	0	0	0.0	0	
+GCF_000690775.1	Eurypyga helias	Aves	Eurypygiformes	Scaffold	24402	0	ITPR3	1	1	1	1	0	0.9906	1	NW_010235314.1
+GCF_000690775.1	Eurypyga helias	Aves	Eurypygiformes	Scaffold	24402	0	RYR	5	0	0	0	0	0.4581	5	
+GCF_000690835.1	Fulmarus glacialis	Aves	Procellariiformes	Scaffold	25926	0	ITPR1	2	1	1	1	0	0.5934	2	NW_009188403.1
+GCF_000690835.1	Fulmarus glacialis	Aves	Procellariiformes	Scaffold	25926	0	ITPR2	1	0	0	0	0	0.3381	1	
+GCF_000690835.1	Fulmarus glacialis	Aves	Procellariiformes	Scaffold	25926	0	ITPR3	1	1	1	1	0	0.8574	1	NW_009211209.1
+GCF_000690835.1	Fulmarus glacialis	Aves	Procellariiformes	Scaffold	25926	0	RYR	3	0	0	0	0	0.4883	3	
+GCF_000691845.1	Merops nubicus	Aves	Coraciiformes	Scaffold	24675	0	ITPR1	3	0	0	0	0	0.3293	3	
+GCF_000691845.1	Merops nubicus	Aves	Coraciiformes	Scaffold	24675	0	ITPR2	2	0	0	0	0	0.4552	2	
+GCF_000691845.1	Merops nubicus	Aves	Coraciiformes	Scaffold	24675	0	ITPR3	2	1	1	1	0	0.5083	2	NW_008583346.1
+GCF_000691845.1	Merops nubicus	Aves	Coraciiformes	Scaffold	24675	0	RYR	2	2	2	2	0	0.7256	2	NW_008594366.1;NW_008624931.1
+GCF_000691975.1	Corvus brachyrhynchos	Aves	Passeriformes	Scaffold	29093	0	ITPR1	1	1	1	1	0	1.0	1	NW_008238347.1
+GCF_000691975.1	Corvus brachyrhynchos	Aves	Passeriformes	Scaffold	29093	0	ITPR2	1	1	1	1	0	0.9885	1	NW_008246056.1
+GCF_000691975.1	Corvus brachyrhynchos	Aves	Passeriformes	Scaffold	29093	0	ITPR3	1	1	1	1	0	1.0	1	NW_008236763.1
+GCF_000691975.1	Corvus brachyrhynchos	Aves	Passeriformes	Scaffold	29093	0	RYR	2	2	2	2	0	1.0	2	NW_008236217.1;NW_008239553.1
+GCF_000695765.1	Mesitornis unicolor	Aves	Mesitornithiformes	Scaffold	22740	0	ITPR1	1	1	1	1	0	1.0	1	NW_010184902.1
+GCF_000695765.1	Mesitornis unicolor	Aves	Mesitornithiformes	Scaffold	22740	0	ITPR2	1	1	1	1	0	0.6148	1	NW_010162161.1
+GCF_000695765.1	Mesitornis unicolor	Aves	Mesitornithiformes	Scaffold	22740	0	ITPR3	1	1	1	1	0	0.9576	1	NW_010171226.1
+GCF_000695765.1	Mesitornis unicolor	Aves	Mesitornithiformes	Scaffold	22740	0	RYR	6	0	0	0	0	0.4636	4	
+GCF_000695815.1	Acanthisitta chloris	Aves	Passeriformes	Scaffold	20602	0	ITPR1	1	1	1	1	0	0.9946	1	NW_008667845.1
+GCF_000695815.1	Acanthisitta chloris	Aves	Passeriformes	Scaffold	20602	0	ITPR2	1	1	1	1	0	0.6148	1	NW_008681905.1
+GCF_000695815.1	Acanthisitta chloris	Aves	Passeriformes	Scaffold	20602	0	ITPR3	1	1	1	1	0	0.7918	1	NW_008652443.1
+GCF_000695815.1	Acanthisitta chloris	Aves	Passeriformes	Scaffold	20602	0	RYR	1	1	1	1	0	0.9455	1	NW_008649756.1
+GCF_000696875.1	Nestor notabilis	Aves	Psittaciformes	Scaffold	26546	0	ITPR1	1	1	1	1	0	0.9971	1	NW_009932375.1
+GCF_000696875.1	Nestor notabilis	Aves	Psittaciformes	Scaffold	26546	0	ITPR2	1	1	1	1	0	0.6237	1	NW_009917756.1
+GCF_000696875.1	Nestor notabilis	Aves	Psittaciformes	Scaffold	26546	0	ITPR3	1	1	1	1	0	0.9887	1	NW_009909990.1
+GCF_000696875.1	Nestor notabilis	Aves	Psittaciformes	Scaffold	26546	0	RYR	5	1	1	1	0	0.5058	5	NW_009936419.1
+GCF_000698965.1	Struthio camelus australis	Aves	Struthioniformes	Scaffold	34997	0	ITPR1	1	1	1	1	0	0.7236	1	NW_009276910.1
+GCF_000698965.1	Struthio camelus australis	Aves	Struthioniformes	Scaffold	34997	0	ITPR2	1	1	1	1	0	0.9885	1	NW_009270423.1
+GCF_000698965.1	Struthio camelus australis	Aves	Struthioniformes	Scaffold	34997	0	ITPR3	1	1	1	1	0	1.0	1	NW_009270925.1
+GCF_000698965.1	Struthio camelus australis	Aves	Struthioniformes	Scaffold	34997	0	RYR	2	2	2	2	0	0.9974	2	NW_009270414.1;NW_009270711.1
+GCF_000699105.1	Pygoscelis adeliae	Aves	Sphenisciformes	Scaffold	22195	0	ITPR1	1	1	1	1	0	1.0	1	NW_008825411.1
+GCF_000699105.1	Pygoscelis adeliae	Aves	Sphenisciformes	Scaffold	22195	0	ITPR2	1	1	1	1	0	0.9885	1	NW_008825614.1
+GCF_000699105.1	Pygoscelis adeliae	Aves	Sphenisciformes	Scaffold	22195	0	ITPR3	1	1	1	1	0	0.991	1	NW_008825105.1
+GCF_000699105.1	Pygoscelis adeliae	Aves	Sphenisciformes	Scaffold	22195	0	RYR	2	2	2	2	0	1.0	2	NW_008824446.1;NW_008825216.1
+GCF_000699145.1	Aptenodytes forsteri	Aves	Sphenisciformes	Scaffold	31730	0	ITPR1	1	1	1	1	0	1.0	1	NW_008794173.1
+GCF_000699145.1	Aptenodytes forsteri	Aves	Sphenisciformes	Scaffold	31730	0	ITPR2	1	1	1	1	0	0.9885	1	NW_008795252.1
+GCF_000699145.1	Aptenodytes forsteri	Aves	Sphenisciformes	Scaffold	31730	0	ITPR3	1	1	1	1	0	0.991	1	NW_008794598.1
+GCF_000699145.1	Aptenodytes forsteri	Aves	Sphenisciformes	Scaffold	31730	0	RYR	2	2	2	2	0	1.0	2	NW_008794117.1;NW_008795853.1
+GCF_000699245.1	Pterocles gutturalis	Aves	Pterocliformes	Scaffold	26448	0	ITPR1	1	1	1	1	0	0.9705	1	NW_010106411.1
+GCF_000699245.1	Pterocles gutturalis	Aves	Pterocliformes	Scaffold	26448	0	ITPR2	1	1	1	1	0	0.6152	1	NW_010140435.1
+GCF_000699245.1	Pterocles gutturalis	Aves	Pterocliformes	Scaffold	26448	0	ITPR3	1	1	1	1	0	0.9906	1	NW_010133815.1
+GCF_000699245.1	Pterocles gutturalis	Aves	Pterocliformes	Scaffold	26448	0	RYR	2	1	1	1	0	0.7403	2	NW_010132261.1
+GCF_000700745.2	Antrostomus carolinensis	Aves	Caprimulgiformes	Scaffold	22170	0	ITPR1	1	1	1	1	0	0.9917	1	NW_010307598.1
+GCF_000700745.2	Antrostomus carolinensis	Aves	Caprimulgiformes	Scaffold	22170	0	ITPR2	0	0	0	0	0	0.0	0	
+GCF_000700745.2	Antrostomus carolinensis	Aves	Caprimulgiformes	Scaffold	22170	0	ITPR3	1	1	1	1	0	1.0	1	NW_010295133.1
+GCF_000700745.2	Antrostomus carolinensis	Aves	Caprimulgiformes	Scaffold	22170	0	RYR	6	0	0	0	0	0.4318	3	
+GCF_000703405.1	Apaloderma vittatum	Aves	Trogoniformes	Scaffold	28882	0	ITPR1	0	0	0	0	0	0.0	0	
+GCF_000703405.1	Apaloderma vittatum	Aves	Trogoniformes	Scaffold	28882	0	ITPR2	0	0	0	0	0	0.0	0	
+GCF_000703405.1	Apaloderma vittatum	Aves	Trogoniformes	Scaffold	28882	0	ITPR3	1	1	1	1	0	0.9801	1	NW_009724829.1
+GCF_000703405.1	Apaloderma vittatum	Aves	Trogoniformes	Scaffold	28882	0	RYR	6	0	0	0	0	0.3881	4	
+GCF_000705375.1	Tinamus guttatus	Aves	Tinamiformes	Scaffold	29773	0	ITPR1	1	1	1	1	0	1.0	1	NW_010586921.1
+GCF_000705375.1	Tinamus guttatus	Aves	Tinamiformes	Scaffold	29773	0	ITPR2	0	0	0	0	0	0.0	0	
+GCF_000705375.1	Tinamus guttatus	Aves	Tinamiformes	Scaffold	29773	0	ITPR3	1	1	1	1	0	0.5679	1	NW_010580621.1
+GCF_000705375.1	Tinamus guttatus	Aves	Tinamiformes	Scaffold	29773	0	RYR	2	2	2	2	0	0.993	2	NW_010578151.1;NW_010585014.1
+GCF_000708025.1	Charadrius vociferus	Aves	Charadriiformes	Scaffold	39278	0	ITPR1	1	1	1	1	0	1.0	1	NW_009647846.1
+GCF_000708025.1	Charadrius vociferus	Aves	Charadriiformes	Scaffold	39278	0	ITPR2	1	1	1	1	0	0.9885	1	NW_009647222.1
+GCF_000708025.1	Charadrius vociferus	Aves	Charadriiformes	Scaffold	39278	0	ITPR3	1	1	1	1	0	0.9861	1	NW_009649114.1
+GCF_000708025.1	Charadrius vociferus	Aves	Charadriiformes	Scaffold	39278	0	RYR	2	2	2	2	0	0.993	2	NW_009648876.1;NW_009661370.1
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	Bucerotiformes	Scaffold	14587	0	ITPR1	0	0	0	0	0	0.0	0	
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	Bucerotiformes	Scaffold	14587	0	ITPR2	0	0	0	0	0	0.0	0	
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	Bucerotiformes	Scaffold	14587	0	ITPR3	1	1	1	1	0	0.991	1	NW_010410538.1
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	Bucerotiformes	Scaffold	14587	0	RYR	2	1	1	1	0	0.7758	2	NW_010420577.1
+GCF_000747805.2	Chaetura pelagica	Aves	Apodiformes	Scaffold	30767	0	ITPR1	1	1	1	1	0	1.0	1	NW_009954216.1
+GCF_000747805.2	Chaetura pelagica	Aves	Apodiformes	Scaffold	30767	0	ITPR2	1	1	1	1	0	0.783	1	NW_009954317.1
+GCF_000747805.2	Chaetura pelagica	Aves	Apodiformes	Scaffold	30767	0	ITPR3	1	1	1	1	0	0.9906	1	NW_009970727.1
+GCF_000747805.2	Chaetura pelagica	Aves	Apodiformes	Scaffold	30767	0	RYR	2	2	2	2	0	1.0	2	NW_009952265.1;NW_009953215.1
+GCF_001715985.3	Manacus vitellinus	Aves	Passeriformes	Scaffold	290580	1	ITPR1	1	1	1	1	0	1.0	1	NW_021939063.1
+GCF_001715985.3	Manacus vitellinus	Aves	Passeriformes	Scaffold	290580	1	ITPR2	1	1	1	1	0	1.0	1	NW_021940729.1
+GCF_001715985.3	Manacus vitellinus	Aves	Passeriformes	Scaffold	290580	1	ITPR3	1	1	1	1	0	0.9888	1	NW_021940585.1
+GCF_001715985.3	Manacus vitellinus	Aves	Passeriformes	Scaffold	290580	1	RYR	2	2	2	2	0	1.0	2	NW_021940750.1;NW_021940864.1
+GCF_003342845.1	Nothoprocta perdicaria	Aves	Tinamiformes	Scaffold	95599	0	ITPR1	1	1	1	1	0	1.0	1	NW_020454760.1
+GCF_003342845.1	Nothoprocta perdicaria	Aves	Tinamiformes	Scaffold	95599	0	ITPR2	1	1	1	1	0	1.0	1	NW_020455560.1
+GCF_003342845.1	Nothoprocta perdicaria	Aves	Tinamiformes	Scaffold	95599	0	ITPR3	1	1	1	1	0	1.0	1	NW_020456276.1
+GCF_003342845.1	Nothoprocta perdicaria	Aves	Tinamiformes	Scaffold	95599	0	RYR	2	2	2	2	0	1.0	2	NW_020455171.1;NW_020456087.1
+GCF_003668045.3	Cricetulus griseus	Mammalia	Rodentia	Chromosome	2711962	1	ITPR1	1	1	1	1	0	1.0	1	NC_048601.1
+GCF_003668045.3	Cricetulus griseus	Mammalia	Rodentia	Chromosome	2711962	1	ITPR2	1	1	1	1	0	1.0	1	NC_048601.1
+GCF_003668045.3	Cricetulus griseus	Mammalia	Rodentia	Chromosome	2711962	1	ITPR3	1	1	1	1	0	1.0	1	NW_023276806.1
+GCF_003668045.3	Cricetulus griseus	Mammalia	Rodentia	Chromosome	2711962	1	RYR	3	3	3	3	0	1.0	3	NC_048596.1;NC_048599.1;NC_048602.1
+GCF_003957555.1	Calypte anna	Aves	Apodiformes	Chromosome	14522327	1	ITPR1	1	1	1	1	0	1.0	1	NC_044258.1
+GCF_003957555.1	Calypte anna	Aves	Apodiformes	Chromosome	14522327	1	ITPR2	1	1	1	1	0	1.0	1	NC_044244.1
+GCF_003957555.1	Calypte anna	Aves	Apodiformes	Chromosome	14522327	1	ITPR3	1	1	1	1	0	0.9854	1	NC_044271.1
+GCF_003957555.1	Calypte anna	Aves	Apodiformes	Chromosome	14522327	1	RYR	2	2	2	2	0	1.0	2	NC_044246.1;NC_044251.1
+GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	Monotremata	Chromosome	15146802	1	ITPR1	1	1	1	1	0	1.0	1	NC_041749.1
+GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	Monotremata	Chromosome	15146802	1	ITPR2	1	1	1	1	0	1.0	1	NC_041729.1
+GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	Monotremata	Chromosome	15146802	1	ITPR3	1	1	1	1	0	1.0	1	NC_041734.1
+GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	Monotremata	Chromosome	15146802	1	RYR	3	3	3	3	0	1.0	3	NC_041732.1;NC_041740.1;NC_041746.1
+GCF_009764475.1	Pristis pectinata	Chondrichthyes	Rhinopristiformes	Chromosome	17009522	1	ITPR1	1	1	1	1	0	1.0	1	NC_067410.1
+GCF_009764475.1	Pristis pectinata	Chondrichthyes	Rhinopristiformes	Chromosome	17009522	1	ITPR2	1	1	1	1	0	1.0	1	NC_067423.1
+GCF_009764475.1	Pristis pectinata	Chondrichthyes	Rhinopristiformes	Chromosome	17009522	1	ITPR3	1	1	1	1	0	1.0	1	NC_067424.1
+GCF_009764475.1	Pristis pectinata	Chondrichthyes	Rhinopristiformes	Chromosome	17009522	1	RYR	3	3	3	3	0	0.9992	3	NC_067405.1;NC_067407.1;NC_067439.1
+GCF_009769465.1	Tauraco erythrolophus	Aves	Musophagiformes	Chromosome	11927027	1	ITPR1	1	1	1	1	0	1.0	1	NC_141476.1
+GCF_009769465.1	Tauraco erythrolophus	Aves	Musophagiformes	Chromosome	11927027	1	ITPR2	1	1	1	1	0	1.0	1	NC_141468.1
+GCF_009769465.1	Tauraco erythrolophus	Aves	Musophagiformes	Chromosome	11927027	1	ITPR3	1	1	1	1	0	1.0	1	NC_141491.1
+GCF_009769465.1	Tauraco erythrolophus	Aves	Musophagiformes	Chromosome	11927027	1	RYR	2	2	2	2	0	1.0	2	NC_141466.1;NC_141470.1
+GCF_011004845.1	Esox lucius	Actinopteri	Esociformes	Chromosome	22630263	1	ITPR1	2	2	2	1	1	1.0	2	NC_047585.1
+GCF_011004845.1	Esox lucius	Actinopteri	Esociformes	Chromosome	22630263	1	ITPR2	1	1	1	1	0	1.0	1	NC_047587.1
+GCF_011004845.1	Esox lucius	Actinopteri	Esociformes	Chromosome	22630263	1	ITPR3	1	1	1	1	0	1.0	1	NC_047580.1
+GCF_011004845.1	Esox lucius	Actinopteri	Esociformes	Chromosome	22630263	1	RYR	6	6	6	5	1	1.0	6	NC_047569.1;NC_047574.1;NC_047575.1;NC_047583.1;NC_047591.1
+GCF_011004875.1	Balearica regulorum gibbericeps	Aves	Gruiformes	Chromosome	23326060	1	ITPR1	1	1	1	1	0	1.0	1	NC_046193.1
+GCF_011004875.1	Balearica regulorum gibbericeps	Aves	Gruiformes	Chromosome	23326060	1	ITPR2	1	1	1	1	0	1.0	1	NC_046184.1
+GCF_011004875.1	Balearica regulorum gibbericeps	Aves	Gruiformes	Chromosome	23326060	1	ITPR3	1	1	1	1	0	1.0	1	NC_046208.1
+GCF_011004875.1	Balearica regulorum gibbericeps	Aves	Gruiformes	Chromosome	23326060	1	RYR	2	2	2	2	0	1.0	2	NC_046186.1;NC_046188.1
+GCF_013368585.1	Megalops cyprinoides	Actinopteri	Elopiformes	Chromosome	26850664	1	ITPR1	2	2	2	2	0	1.0	2	NC_050588.1;NC_050589.1
+GCF_013368585.1	Megalops cyprinoides	Actinopteri	Elopiformes	Chromosome	26850664	1	ITPR2	1	1	1	1	0	1.0	1	NC_050607.1
+GCF_013368585.1	Megalops cyprinoides	Actinopteri	Elopiformes	Chromosome	26850664	1	ITPR3	1	1	1	1	0	1.0	1	NC_050589.1
+GCF_013368585.1	Megalops cyprinoides	Actinopteri	Elopiformes	Chromosome	26850664	1	RYR	5	5	4	5	0	1.0	5	NC_050583.1;NC_050585.1;NC_050591.1;NC_050594.1;NC_050599.1
+GCF_013368605.1	Nyctibius grandis	Aves	Nyctibiiformes	Chromosome	23231768	1	ITPR1	1	1	1	1	0	1.0	1	NC_090667.1
+GCF_013368605.1	Nyctibius grandis	Aves	Nyctibiiformes	Chromosome	23231768	1	ITPR2	1	1	1	1	0	1.0	1	NC_090662.1
+GCF_013368605.1	Nyctibius grandis	Aves	Nyctibiiformes	Chromosome	23231768	1	ITPR3	1	1	1	1	0	1.0	1	NC_090684.1
+GCF_013368605.1	Nyctibius grandis	Aves	Nyctibiiformes	Chromosome	23231768	1	RYR	2	2	2	2	0	1.0	2	NC_090658.1;NC_090661.1
+GCF_014839835.1	Dryobates pubescens	Aves	Piciformes	Chromosome	19150283	1	ITPR1	1	1	1	1	0	0.9971	1	NC_071612.1
+GCF_014839835.1	Dryobates pubescens	Aves	Piciformes	Chromosome	19150283	1	ITPR2	1	1	1	1	0	1.0	1	NC_071626.1
+GCF_014839835.1	Dryobates pubescens	Aves	Piciformes	Chromosome	19150283	1	ITPR3	1	1	1	1	0	1.0	1	NC_071646.1
+GCF_014839835.1	Dryobates pubescens	Aves	Piciformes	Chromosome	19150283	1	RYR	2	2	2	2	0	1.0	2	NC_071616.1;NC_071617.1
+GCF_016433145.1	Gracilinanus agilis	Mammalia	Didelphimorphia	Chromosome	73170	0	ITPR1	1	1	1	1	0	1.0	1	NC_058130.1
+GCF_016433145.1	Gracilinanus agilis	Mammalia	Didelphimorphia	Chromosome	73170	0	ITPR2	1	1	1	1	0	1.0	1	NC_058134.1
+GCF_016433145.1	Gracilinanus agilis	Mammalia	Didelphimorphia	Chromosome	73170	0	ITPR3	1	1	1	1	0	1.0	1	NC_058133.1
+GCF_016433145.1	Gracilinanus agilis	Mammalia	Didelphimorphia	Chromosome	73170	0	RYR	3	3	2	3	0	1.0	3	NC_058131.1;NC_058132.1;NC_058133.1
+GCF_016699485.2	Gallus gallus	Aves	Galliformes	Chromosome	18834961	1	ITPR1	1	1	1	1	0	1.0	1	NC_052543.1
+GCF_016699485.2	Gallus gallus	Aves	Galliformes	Chromosome	18834961	1	ITPR2	1	1	1	1	0	1.0	1	NC_052532.1
+GCF_016699485.2	Gallus gallus	Aves	Galliformes	Chromosome	18834961	1	ITPR3	1	1	1	1	0	1.0	1	NC_052557.1
+GCF_016699485.2	Gallus gallus	Aves	Galliformes	Chromosome	18834961	1	RYR	3	3	3	3	0	1.0	3	NC_052534.1;NC_052536.1;NC_052569.1
+GCF_016859285.1	Xiphias gladius	Actinopteri	Istiophoriformes	Chromosome	5252707	1	ITPR1	2	2	2	1	1	1.0	2	NC_053420.1
+GCF_016859285.1	Xiphias gladius	Actinopteri	Istiophoriformes	Chromosome	5252707	1	ITPR2	1	1	1	1	0	1.0	1	NC_053407.1
+GCF_016859285.1	Xiphias gladius	Actinopteri	Istiophoriformes	Chromosome	5252707	1	ITPR3	1	1	1	1	0	1.0	1	NC_053417.1
+GCF_016859285.1	Xiphias gladius	Actinopteri	Istiophoriformes	Chromosome	5252707	1	RYR	6	6	6	6	0	1.0	6	NC_053403.1;NC_053406.1;NC_053409.1;NC_053410.1;NC_053416.1;NW_024401803.1
+GCF_017639515.1	Carcharodon carcharias	Chondrichthyes	Lamniformes	Chromosome	6544962	1	ITPR1	1	1	1	1	0	1.0	1	NC_054473.1
+GCF_017639515.1	Carcharodon carcharias	Chondrichthyes	Lamniformes	Chromosome	6544962	1	ITPR2	1	1	1	1	0	1.0	1	NC_054479.1
+GCF_017639515.1	Carcharodon carcharias	Chondrichthyes	Lamniformes	Chromosome	6544962	1	ITPR3	1	1	1	1	0	1.0	1	NC_054475.1
+GCF_017639515.1	Carcharodon carcharias	Chondrichthyes	Lamniformes	Chromosome	6544962	1	RYR	3	3	3	3	0	0.9994	3	NC_054468.1;NC_054486.1;NC_054500.1
+GCF_017654505.1	Polyodon spathula	Actinopteri	Acipenseriformes	Chromosome	3441286	1	ITPR1	2	2	2	2	0	1.0	2	NC_054549.1;NC_054556.1
+GCF_017654505.1	Polyodon spathula	Actinopteri	Acipenseriformes	Chromosome	3441286	1	ITPR2	2	2	2	2	0	1.0	2	NC_054540.1;NC_054541.1
+GCF_017654505.1	Polyodon spathula	Actinopteri	Acipenseriformes	Chromosome	3441286	1	ITPR3	2	2	2	2	0	1.0	2	NC_054558.1;NC_054572.1
+GCF_017654505.1	Polyodon spathula	Actinopteri	Acipenseriformes	Chromosome	3441286	1	RYR	6	6	6	6	0	1.0	6	NC_054538.1;NC_054539.1;NC_054545.1;NC_054550.1;NC_054568.1;NC_054573.1
+GCF_017976375.1	Cuculus canorus	Aves	Cuculiformes	Chromosome	20797936	1	ITPR1	1	1	1	1	0	1.0	1	NC_071411.1
+GCF_017976375.1	Cuculus canorus	Aves	Cuculiformes	Chromosome	20797936	1	ITPR2	1	1	1	1	0	1.0	1	NC_071401.1
+GCF_017976375.1	Cuculus canorus	Aves	Cuculiformes	Chromosome	20797936	1	ITPR3	1	1	1	1	0	1.0	1	NC_071424.1
+GCF_017976375.1	Cuculus canorus	Aves	Cuculiformes	Chromosome	20797936	1	RYR	3	3	3	3	0	1.0	3	NC_071403.1;NC_071405.1;NC_071437.1
+GCF_018139145.2	Gymnogyps californianus	Aves	Accipitriformes	Chromosome	17075888	1	ITPR1	1	1	1	1	0	1.0	1	NC_059483.1
+GCF_018139145.2	Gymnogyps californianus	Aves	Accipitriformes	Chromosome	17075888	1	ITPR2	1	1	1	1	0	1.0	1	NC_059471.1
+GCF_018139145.2	Gymnogyps californianus	Aves	Accipitriformes	Chromosome	17075888	1	ITPR3	1	1	1	1	0	1.0	1	NC_059497.1
+GCF_018139145.2	Gymnogyps californianus	Aves	Accipitriformes	Chromosome	17075888	1	RYR	2	2	2	2	0	1.0	2	NC_059473.1;NC_059475.1
+GCF_018320785.1	Cheilinus undulatus	Actinopteri	Labriformes	Chromosome	16477222	1	ITPR1	2	2	2	1	1	1.0	2	NC_054867.1
+GCF_018320785.1	Cheilinus undulatus	Actinopteri	Labriformes	Chromosome	16477222	1	ITPR2	1	1	1	1	0	1.0	1	NC_054873.1
+GCF_018320785.1	Cheilinus undulatus	Actinopteri	Labriformes	Chromosome	16477222	1	ITPR3	1	1	1	1	0	1.0	1	NC_054875.1
+GCF_018320785.1	Cheilinus undulatus	Actinopteri	Labriformes	Chromosome	16477222	1	RYR	6	6	6	6	0	1.0	6	NC_054866.1;NC_054870.1;NC_054876.1;NC_054878.1;NC_054882.1;NC_054884.1
+GCF_018691265.1	Tyto alba	Aves	Strigiformes	Scaffold	17955177	1	ITPR1	1	1	1	1	0	1.0	1	NW_024881304.1
+GCF_018691265.1	Tyto alba	Aves	Strigiformes	Scaffold	17955177	1	ITPR2	1	1	1	1	0	1.0	1	NW_024881295.1
+GCF_018691265.1	Tyto alba	Aves	Strigiformes	Scaffold	17955177	1	ITPR3	1	1	1	1	0	1.0	1	NW_024881305.1
+GCF_018691265.1	Tyto alba	Aves	Strigiformes	Scaffold	17955177	1	RYR	2	2	2	2	0	1.0	2	NW_024881280.1;NW_024881296.1
+GCF_018977255.1	Callorhinchus milii	Chondrichthyes	Chimaeriformes	Scaffold	1626615	1	ITPR1	1	1	1	1	0	1.0	1	NW_024704753.1
+GCF_018977255.1	Callorhinchus milii	Chondrichthyes	Chimaeriformes	Scaffold	1626615	1	ITPR2	1	1	1	1	0	0.9885	1	NW_024704746.1
+GCF_018977255.1	Callorhinchus milii	Chondrichthyes	Chimaeriformes	Scaffold	1626615	1	ITPR3	1	1	1	1	0	1.0	1	NW_024704760.1
+GCF_018977255.1	Callorhinchus milii	Chondrichthyes	Chimaeriformes	Scaffold	1626615	1	RYR	3	3	3	3	0	1.0	3	NW_024704744.1;NW_024704750.1;NW_024704809.1
+GCF_019279795.1	Protopterus annectens	Dipnoi	Ceratodontiformes	Chromosome	1603140	1	ITPR1	1	1	1	1	0	1.0	1	NC_056739.1
+GCF_019279795.1	Protopterus annectens	Dipnoi	Ceratodontiformes	Chromosome	1603140	1	ITPR2	1	1	1	1	0	1.0	1	NC_056745.1
+GCF_019279795.1	Protopterus annectens	Dipnoi	Ceratodontiformes	Chromosome	1603140	1	ITPR3	1	1	1	1	0	1.0	1	NC_056739.1
+GCF_019279795.1	Protopterus annectens	Dipnoi	Ceratodontiformes	Chromosome	1603140	1	RYR	3	3	3	3	0	1.0	3	NC_056725.1;NC_056727.1;NC_056737.1
+GCF_019393635.1	Dromiciops gliroides	Mammalia	Microbiotheria	Chromosome	38230856	1	ITPR1	1	1	1	1	0	1.0	1	NC_057861.1
+GCF_019393635.1	Dromiciops gliroides	Mammalia	Microbiotheria	Chromosome	38230856	1	ITPR2	1	1	1	1	0	1.0	1	NC_057865.1
+GCF_019393635.1	Dromiciops gliroides	Mammalia	Microbiotheria	Chromosome	38230856	1	ITPR3	1	1	1	1	0	1.0	1	NC_057864.1
+GCF_019393635.1	Dromiciops gliroides	Mammalia	Microbiotheria	Chromosome	38230856	1	RYR	3	3	2	3	0	1.0	3	NC_057862.1;NC_057863.1;NC_057864.1
+GCF_019740435.1	Gambusia affinis	Actinopteri	Cyprinodontiformes	Chromosome	12906370	1	ITPR1	2	2	2	1	1	1.0	2	NC_057874.1
+GCF_019740435.1	Gambusia affinis	Actinopteri	Cyprinodontiformes	Chromosome	12906370	1	ITPR2	1	1	1	1	0	1.0	1	NC_057875.1
+GCF_019740435.1	Gambusia affinis	Actinopteri	Cyprinodontiformes	Chromosome	12906370	1	ITPR3	1	1	1	1	0	1.0	1	NC_057868.1
+GCF_019740435.1	Gambusia affinis	Actinopteri	Cyprinodontiformes	Chromosome	12906370	1	RYR	6	6	6	6	0	1.0	6	NC_057873.1;NC_057880.1;NC_057882.1;NC_057883.1;NC_057887.1;NC_057889.1
+GCF_020171115.1	Neogale vison	Mammalia	Carnivora	Chromosome	220349319	1	ITPR1	1	1	1	1	0	1.0	1	NC_058096.1
+GCF_020171115.1	Neogale vison	Mammalia	Carnivora	Chromosome	220349319	1	ITPR2	1	1	1	1	0	1.0	1	NC_058102.1
+GCF_020171115.1	Neogale vison	Mammalia	Carnivora	Chromosome	220349319	1	ITPR3	1	1	1	1	0	1.0	1	NC_058091.1
+GCF_020171115.1	Neogale vison	Mammalia	Carnivora	Chromosome	220349319	1	RYR	3	3	3	3	0	1.0	3	NC_058092.1;NC_058097.1;NC_058103.1
+GCF_020740795.1	Apus apus	Aves	Apodiformes	Chromosome	25561769	1	ITPR1	1	1	1	1	0	1.0	1	NC_067290.1
+GCF_020740795.1	Apus apus	Aves	Apodiformes	Chromosome	25561769	1	ITPR2	1	1	1	1	0	1.0	1	NC_067282.1
+GCF_020740795.1	Apus apus	Aves	Apodiformes	Chromosome	25561769	1	ITPR3	1	1	1	1	0	1.0	1	NC_067304.1
+GCF_020740795.1	Apus apus	Aves	Apodiformes	Chromosome	25561769	1	RYR	2	2	2	2	0	1.0	2	NC_067284.1;NC_067286.1
+GCF_020826845.1	Diceros bicornis minor	Mammalia	Perissodactyla	Chromosome	28468213	1	ITPR1	1	1	1	1	0	1.0	1	NC_080741.1
+GCF_020826845.1	Diceros bicornis minor	Mammalia	Perissodactyla	Chromosome	28468213	1	ITPR2	1	1	1	1	0	1.0	1	NC_080756.1
+GCF_020826845.1	Diceros bicornis minor	Mammalia	Perissodactyla	Chromosome	28468213	1	ITPR3	1	1	1	1	0	1.0	1	NC_080753.1
+GCF_020826845.1	Diceros bicornis minor	Mammalia	Perissodactyla	Chromosome	28468213	1	RYR	3	3	3	3	0	1.0	3	NC_080744.1;NC_080745.1;NC_080773.1
+GCF_021028975.2	Sphaerodactylus townsendi	Lepidosauria	Squamata	Chromosome	9459502	1	ITPR1	1	1	1	1	0	1.0	1	NC_059427.1
+GCF_021028975.2	Sphaerodactylus townsendi	Lepidosauria	Squamata	Chromosome	9459502	1	ITPR2	1	1	1	1	0	1.0	1	NC_059430.1
+GCF_021028975.2	Sphaerodactylus townsendi	Lepidosauria	Squamata	Chromosome	9459502	1	ITPR3	1	1	1	1	0	0.9539	1	NC_059429.1
+GCF_021028975.2	Sphaerodactylus townsendi	Lepidosauria	Squamata	Chromosome	9459502	1	RYR	3	3	2	3	0	1.0	2	NC_059425.1;NC_059426.1;NC_059430.1
+GCF_021292245.1	Micropterus dolomieu	Actinopteri	Centrarchiformes	Chromosome	46775	0	ITPR1	2	2	2	1	1	1.0	2	NC_060167.1
+GCF_021292245.1	Micropterus dolomieu	Actinopteri	Centrarchiformes	Chromosome	46775	0	ITPR2	1	1	1	1	0	1.0	1	NC_060171.1
+GCF_021292245.1	Micropterus dolomieu	Actinopteri	Centrarchiformes	Chromosome	46775	0	ITPR3	1	1	1	1	0	1.0	1	NC_060157.1
+GCF_021292245.1	Micropterus dolomieu	Actinopteri	Centrarchiformes	Chromosome	46775	0	RYR	6	6	6	6	0	1.0	6	NC_060159.1;NC_060160.1;NC_060163.1;NC_060164.1;NC_060166.1;NC_060172.1
+GCF_021613505.1	Equus quagga	Mammalia	Perissodactyla	Chromosome	427941	1	ITPR1	1	1	1	1	0	1.0	1	NC_060267.1
+GCF_021613505.1	Equus quagga	Mammalia	Perissodactyla	Chromosome	427941	1	ITPR2	1	1	1	1	0	1.0	1	NC_060267.1
+GCF_021613505.1	Equus quagga	Mammalia	Perissodactyla	Chromosome	427941	1	ITPR3	1	1	1	1	0	1.0	1	NC_060281.1
+GCF_021613505.1	Equus quagga	Mammalia	Perissodactyla	Chromosome	427941	1	RYR	3	3	3	2	1	1.0	3	NC_060268.1;NC_060279.1
+GCF_023634155.1	Falco peregrinus	Aves	Falconiformes	Chromosome	15744644	1	ITPR1	1	1	1	1	0	1.0	1	NC_073725.1
+GCF_023634155.1	Falco peregrinus	Aves	Falconiformes	Chromosome	15744644	1	ITPR2	1	1	1	1	0	1.0	1	NC_073726.1
+GCF_023634155.1	Falco peregrinus	Aves	Falconiformes	Chromosome	15744644	1	ITPR3	1	1	1	1	0	1.0	1	NC_073736.1
+GCF_023634155.1	Falco peregrinus	Aves	Falconiformes	Chromosome	15744644	1	RYR	2	2	2	2	0	1.0	2	NC_073721.1;NC_073727.1
+GCF_023851605.1	Tamandua tetradactyla	Mammalia	Pilosa	Chromosome	9869167	1	ITPR1	1	1	1	1	0	1.0	1	NC_135335.1
+GCF_023851605.1	Tamandua tetradactyla	Mammalia	Pilosa	Chromosome	9869167	1	ITPR2	1	1	1	1	0	1.0	1	NC_135333.1
+GCF_023851605.1	Tamandua tetradactyla	Mammalia	Pilosa	Chromosome	9869167	1	ITPR3	1	1	1	1	0	1.0	1	NC_135331.1
+GCF_023851605.1	Tamandua tetradactyla	Mammalia	Pilosa	Chromosome	9869167	1	RYR	3	3	3	3	0	1.0	3	NC_135333.1;NC_135340.1;NC_135342.1
+GCF_024166365.1	Elephas maximus indicus	Mammalia	Proboscidea	Chromosome	87987108	1	ITPR1	1	1	1	1	0	1.0	1	NC_064838.1
+GCF_024166365.1	Elephas maximus indicus	Mammalia	Proboscidea	Chromosome	87987108	1	ITPR2	1	1	1	1	0	1.0	1	NC_064822.1
+GCF_024166365.1	Elephas maximus indicus	Mammalia	Proboscidea	Chromosome	87987108	1	ITPR3	1	1	1	1	0	1.0	1	NC_064819.1
+GCF_024166365.1	Elephas maximus indicus	Mammalia	Proboscidea	Chromosome	87987108	1	RYR	3	3	3	3	0	1.0	3	NC_064828.1;NC_064829.1;NC_064842.1
+GCF_025201925.1	Gopherus flavomarginatus	Testudines	Testudines	Chromosome	6917139	1	ITPR1	1	1	1	1	0	0.9975	1	NC_066622.1
+GCF_025201925.1	Gopherus flavomarginatus	Testudines	Testudines	Chromosome	6917139	1	ITPR2	1	1	1	1	0	1.0	1	NC_066617.1
+GCF_025201925.1	Gopherus flavomarginatus	Testudines	Testudines	Chromosome	6917139	1	ITPR3	1	1	1	1	0	1.0	1	NC_066621.1
+GCF_025201925.1	Gopherus flavomarginatus	Testudines	Testudines	Chromosome	6917139	1	RYR	3	3	3	3	0	1.0	3	NC_066620.1;NC_066621.1;NC_066634.1
+GCF_027244095.1	Hemicordylus capensis	Lepidosauria	Squamata	Chromosome	160691000	1	ITPR1	1	1	1	1	0	1.0	1	NC_069658.1
+GCF_027244095.1	Hemicordylus capensis	Lepidosauria	Squamata	Chromosome	160691000	1	ITPR2	1	1	1	1	0	1.0	1	NC_069661.1
+GCF_027244095.1	Hemicordylus capensis	Lepidosauria	Squamata	Chromosome	160691000	1	ITPR3	1	1	1	1	0	1.0	1	NC_069660.1
+GCF_027244095.1	Hemicordylus capensis	Lepidosauria	Squamata	Chromosome	160691000	1	RYR	3	3	3	2	1	1.0	3	NC_069657.1;NC_069663.1
+GCF_027409185.1	Cynocephalus volans	Mammalia	Dermoptera	Chromosome	69195939	1	ITPR1	1	1	1	1	0	1.0	1	NC_084470.1
+GCF_027409185.1	Cynocephalus volans	Mammalia	Dermoptera	Chromosome	69195939	1	ITPR2	1	1	1	1	0	1.0	1	NC_084471.1
+GCF_027409185.1	Cynocephalus volans	Mammalia	Dermoptera	Chromosome	69195939	1	ITPR3	1	1	1	1	0	1.0	1	NC_084464.1
+GCF_027409185.1	Cynocephalus volans	Mammalia	Dermoptera	Chromosome	69195939	1	RYR	3	3	3	3	0	1.0	3	NC_084462.1;NC_084469.1;NC_084477.1
+GCF_027409825.1	Scomber japonicus	Actinopteri	Scombriformes	Chromosome	4898551	1	ITPR1	2	2	2	1	1	1.0	2	NC_070580.1
+GCF_027409825.1	Scomber japonicus	Actinopteri	Scombriformes	Chromosome	4898551	1	ITPR2	1	1	1	1	0	1.0	1	NC_070582.1
+GCF_027409825.1	Scomber japonicus	Actinopteri	Scombriformes	Chromosome	4898551	1	ITPR3	2	1	1	1	0	0.7251	2	NC_070581.1
+GCF_027409825.1	Scomber japonicus	Actinopteri	Scombriformes	Chromosome	4898551	1	RYR	6	6	6	6	0	1.0	5	NC_070583.1;NC_070590.1;NC_070591.1;NC_070593.1;NC_070594.1;NC_070597.1
+GCF_027579695.1	Neoarius graeffei	Actinopteri	Siluriformes	Chromosome	14859289	1	ITPR1	2	2	2	2	0	1.0	2	NC_083572.1;NC_083594.1
+GCF_027579695.1	Neoarius graeffei	Actinopteri	Siluriformes	Chromosome	14859289	1	ITPR2	1	1	1	1	0	1.0	1	NC_083574.1
+GCF_027579695.1	Neoarius graeffei	Actinopteri	Siluriformes	Chromosome	14859289	1	ITPR3	1	1	1	1	0	1.0	1	NC_083578.1
+GCF_027579695.1	Neoarius graeffei	Actinopteri	Siluriformes	Chromosome	14859289	1	RYR	6	6	6	5	1	1.0	6	NC_083571.1;NC_083574.1;NC_083579.1;NC_083582.1;NC_083593.1
+GCF_027579735.1	Bombina bombina	Amphibia	Anura	Chromosome	3759931	1	ITPR1	1	1	1	1	0	1.0	1	NC_069505.1
+GCF_027579735.1	Bombina bombina	Amphibia	Anura	Chromosome	3759931	1	ITPR2	1	1	1	1	0	1.0	1	NC_069504.1
+GCF_027579735.1	Bombina bombina	Amphibia	Anura	Chromosome	3759931	1	ITPR3	1	1	0	1	0	1.0	1	NC_069501.1
+GCF_027579735.1	Bombina bombina	Amphibia	Anura	Chromosome	3759931	1	RYR	2	2	2	2	0	1.0	2	NC_069499.1;NC_069505.1
+GCF_027595985.1	Sorex araneus	Mammalia	Eulipotyphla	Chromosome	4024507	1	ITPR1	1	1	1	1	0	1.0	1	NC_073305.1
+GCF_027595985.1	Sorex araneus	Mammalia	Eulipotyphla	Chromosome	4024507	1	ITPR2	1	1	1	1	0	1.0	1	NC_073311.1
+GCF_027595985.1	Sorex araneus	Mammalia	Eulipotyphla	Chromosome	4024507	1	ITPR3	1	1	1	1	0	1.0	1	NC_073303.1
+GCF_027595985.1	Sorex araneus	Mammalia	Eulipotyphla	Chromosome	4024507	1	RYR	3	3	3	3	0	1.0	3	NC_073304.1;NC_073309.1;NC_073310.1
+GCF_028372415.1	Notamacropus eugenii	Mammalia	Diprotodontia	Chromosome	15255043	1	ITPR1	1	1	1	1	0	1.0	1	NC_092874.1
+GCF_028372415.1	Notamacropus eugenii	Mammalia	Diprotodontia	Chromosome	15255043	1	ITPR2	1	1	1	1	0	1.0	1	NC_092874.1
+GCF_028372415.1	Notamacropus eugenii	Mammalia	Diprotodontia	Chromosome	15255043	1	ITPR3	1	1	1	1	0	1.0	1	NC_092873.1
+GCF_028372415.1	Notamacropus eugenii	Mammalia	Diprotodontia	Chromosome	15255043	1	RYR	3	3	3	3	0	1.0	3	NC_092873.1;NC_092876.1;NC_092878.1
+GCF_028389875.1	Rhea pennata	Aves	Rheiformes	Chromosome	19335416	1	ITPR1	1	1	1	1	0	1.0	1	NC_084674.1
+GCF_028389875.1	Rhea pennata	Aves	Rheiformes	Chromosome	19335416	1	ITPR2	1	1	1	1	0	1.0	1	NC_084663.1
+GCF_028389875.1	Rhea pennata	Aves	Rheiformes	Chromosome	19335416	1	ITPR3	1	1	1	1	0	1.0	1	NC_084687.1
+GCF_028389875.1	Rhea pennata	Aves	Rheiformes	Chromosome	19335416	1	RYR	3	3	3	3	0	1.0	3	NC_084665.1;NC_084667.1;NW_026907588.1
+GCF_028858725.1	Colius striatus	Aves	Coliiformes	Chromosome	21931325	1	ITPR1	1	1	1	1	0	1.0	1	NC_084773.1
+GCF_028858725.1	Colius striatus	Aves	Coliiformes	Chromosome	21931325	1	ITPR2	1	1	1	1	0	1.0	1	NC_084759.1
+GCF_028858725.1	Colius striatus	Aves	Coliiformes	Chromosome	21931325	1	ITPR3	1	1	1	1	0	1.0	1	NC_084780.1
+GCF_028858725.1	Colius striatus	Aves	Coliiformes	Chromosome	21931325	1	RYR	2	2	2	2	0	1.0	2	NC_084760.1;NC_084764.1
+GCF_029633855.1	Hoplias malabaricus	Actinopteri	Characiformes	Chromosome	3626585	1	ITPR1	2	2	2	2	0	1.0	2	NC_089802.1;NC_089804.1
+GCF_029633855.1	Hoplias malabaricus	Actinopteri	Characiformes	Chromosome	3626585	1	ITPR2	1	1	1	1	0	1.0	1	NC_089810.1
+GCF_029633855.1	Hoplias malabaricus	Actinopteri	Characiformes	Chromosome	3626585	1	ITPR3	1	1	1	1	0	1.0	1	NC_089813.1
+GCF_029633855.1	Hoplias malabaricus	Actinopteri	Characiformes	Chromosome	3626585	1	RYR	5	5	5	4	1	1.0	5	NC_089800.1;NC_089802.1;NC_089806.1;NC_089810.1
+GCF_029633865.1	Lampris incognitus	Actinopteri	Lampriformes	Chromosome	917127	1	ITPR1	2	2	2	1	1	1.0	2	NC_079212.1
+GCF_029633865.1	Lampris incognitus	Actinopteri	Lampriformes	Chromosome	917127	1	ITPR2	1	1	1	1	0	1.0	1	NC_079216.1
+GCF_029633865.1	Lampris incognitus	Actinopteri	Lampriformes	Chromosome	917127	1	ITPR3	1	1	0	1	0	0.9944	1	NC_079212.1
+GCF_029633865.1	Lampris incognitus	Actinopteri	Lampriformes	Chromosome	917127	1	RYR	6	6	6	6	0	1.0	5	NC_079217.1;NC_079218.1;NC_079223.1;NC_079225.1;NC_079226.1;NC_079227.1
+GCF_030020395.1	Manis pentadactyla	Mammalia	Pholidota	Chromosome	25547713	1	ITPR1	1	1	1	1	0	1.0	1	NC_080019.1
+GCF_030020395.1	Manis pentadactyla	Mammalia	Pholidota	Chromosome	25547713	1	ITPR2	1	1	1	1	0	1.0	1	NC_080032.1
+GCF_030020395.1	Manis pentadactyla	Mammalia	Pholidota	Chromosome	25547713	1	ITPR3	1	1	1	1	0	1.0	1	NC_080034.1
+GCF_030020395.1	Manis pentadactyla	Mammalia	Pholidota	Chromosome	25547713	1	RYR	3	3	3	3	0	1.0	3	NC_080026.1;NC_080029.1;NC_080033.1
+GCF_030445035.2	Dasypus novemcinctus	Mammalia	Cingulata	Chromosome	13963394	1	ITPR1	1	1	1	1	0	1.0	1	NC_080698.1
+GCF_030445035.2	Dasypus novemcinctus	Mammalia	Cingulata	Chromosome	13963394	1	ITPR2	1	1	1	1	0	1.0	1	NC_080692.1
+GCF_030445035.2	Dasypus novemcinctus	Mammalia	Cingulata	Chromosome	13963394	1	ITPR3	1	1	1	1	0	1.0	1	NC_080683.1
+GCF_030445035.2	Dasypus novemcinctus	Mammalia	Cingulata	Chromosome	13963394	1	RYR	3	3	3	3	0	1.0	3	NC_080675.1;NC_080685.1;NC_080690.1
+GCF_030463565.1	Pelecanus crispus	Aves	Pelecaniformes	Chromosome	9666746	1	ITPR1	1	1	1	1	0	1.0	1	NC_134649.1
+GCF_030463565.1	Pelecanus crispus	Aves	Pelecaniformes	Chromosome	9666746	1	ITPR2	1	1	1	1	0	1.0	1	NC_134643.1
+GCF_030463565.1	Pelecanus crispus	Aves	Pelecaniformes	Chromosome	9666746	1	ITPR3	1	1	1	1	0	1.0	1	NC_134659.1
+GCF_030463565.1	Pelecanus crispus	Aves	Pelecaniformes	Chromosome	9666746	1	RYR	2	2	2	2	0	1.0	2	NC_134645.1;NC_134648.1
+GCF_030490865.1	Poecile atricapillus	Aves	Passeriformes	Chromosome	8462732	1	ITPR1	1	1	1	1	0	1.0	1	NC_081257.1
+GCF_030490865.1	Poecile atricapillus	Aves	Passeriformes	Chromosome	8462732	1	ITPR2	2	2	2	2	0	1.0	2	NC_081288.1;NC_081289.1
+GCF_030490865.1	Poecile atricapillus	Aves	Passeriformes	Chromosome	8462732	1	ITPR3	1	1	1	1	0	1.0	1	NC_081271.1
+GCF_030490865.1	Poecile atricapillus	Aves	Passeriformes	Chromosome	8462732	1	RYR	3	3	3	3	0	1.0	3	NC_081249.1;NC_081251.1;NC_081279.1
+GCF_030867095.1	Alligator mississippiensis	Crocodylia	Crocodylia	Chromosome	38556409	1	ITPR1	1	1	1	1	0	0.9978	1	NC_081835.1
+GCF_030867095.1	Alligator mississippiensis	Crocodylia	Crocodylia	Chromosome	38556409	1	ITPR2	1	1	1	1	0	1.0	1	NC_081827.1
+GCF_030867095.1	Alligator mississippiensis	Crocodylia	Crocodylia	Chromosome	38556409	1	ITPR3	1	1	1	1	0	1.0	1	NC_081837.1
+GCF_030867095.1	Alligator mississippiensis	Crocodylia	Crocodylia	Chromosome	38556409	1	RYR	3	3	3	3	0	1.0	3	NC_081824.1;NC_081825.1;NC_081838.1
+GCF_030867145.1	Opisthocomus hoazin	Aves	Opisthocomiformes	Chromosome	14274197	1	ITPR1	1	1	1	1	0	1.0	1	NC_134424.1
+GCF_030867145.1	Opisthocomus hoazin	Aves	Opisthocomiformes	Chromosome	14274197	1	ITPR2	1	1	1	1	0	1.0	1	NC_134414.1
+GCF_030867145.1	Opisthocomus hoazin	Aves	Opisthocomiformes	Chromosome	14274197	1	ITPR3	1	1	1	1	0	1.0	1	NC_134438.1
+GCF_030867145.1	Opisthocomus hoazin	Aves	Opisthocomiformes	Chromosome	14274197	1	RYR	2	2	2	2	0	1.0	2	NC_134415.1;NC_134420.1
+GCF_030936135.1	Gavia stellata	Aves	Gaviiformes	Chromosome	13765203	1	ITPR1	1	1	1	1	0	1.0	1	NC_082605.1
+GCF_030936135.1	Gavia stellata	Aves	Gaviiformes	Chromosome	13765203	1	ITPR2	1	1	1	1	0	1.0	1	NC_082597.1
+GCF_030936135.1	Gavia stellata	Aves	Gaviiformes	Chromosome	13765203	1	ITPR3	1	1	1	1	0	1.0	1	NC_082623.1
+GCF_030936135.1	Gavia stellata	Aves	Gaviiformes	Chromosome	13765203	1	RYR	3	3	2	3	0	1.0	3	NC_082595.1;NC_082600.1;NC_082634.1
+GCF_033026475.1	Channa argus	Actinopteri	Anabantiformes	Chromosome	16561385	1	ITPR1	2	2	2	1	1	1.0	2	NC_090201.1
+GCF_033026475.1	Channa argus	Actinopteri	Anabantiformes	Chromosome	16561385	1	ITPR2	1	1	1	1	0	1.0	1	NC_090200.1
+GCF_033026475.1	Channa argus	Actinopteri	Anabantiformes	Chromosome	16561385	1	ITPR3	1	1	1	1	0	1.0	1	NC_090209.1
+GCF_033026475.1	Channa argus	Actinopteri	Anabantiformes	Chromosome	16561385	1	RYR	6	6	6	6	0	1.0	6	NC_090197.1;NC_090202.1;NC_090203.1;NC_090212.1;NC_090213.1;NC_090220.1
+GCF_033807715.1	Cololabis saira	Actinopteri	Beloniformes	Chromosome	8087617	1	ITPR1	2	2	2	1	1	1.0	2	NC_084594.1
+GCF_033807715.1	Cololabis saira	Actinopteri	Beloniformes	Chromosome	8087617	1	ITPR2	1	1	1	1	0	1.0	1	NC_084591.1
+GCF_033807715.1	Cololabis saira	Actinopteri	Beloniformes	Chromosome	8087617	1	ITPR3	1	1	1	1	0	1.0	1	NC_084598.1
+GCF_033807715.1	Cololabis saira	Actinopteri	Beloniformes	Chromosome	8087617	1	RYR	6	6	6	6	0	1.0	6	NC_084590.1;NC_084600.1;NC_084602.1;NC_084603.1;NC_084604.1;NC_084605.1
+GCF_033978785.1	Entelurus aequoreus	Actinopteri	Syngnathiformes	Chromosome	2039131	1	ITPR1	2	2	2	1	1	1.0	2	NC_084731.1
+GCF_033978785.1	Entelurus aequoreus	Actinopteri	Syngnathiformes	Chromosome	2039131	1	ITPR2	1	1	1	1	0	1.0	1	NC_084754.1
+GCF_033978785.1	Entelurus aequoreus	Actinopteri	Syngnathiformes	Chromosome	2039131	1	ITPR3	1	1	1	1	0	0.9989	1	NC_084737.1
+GCF_033978785.1	Entelurus aequoreus	Actinopteri	Syngnathiformes	Chromosome	2039131	1	RYR	7	7	7	6	1	1.0	7	NC_084733.1;NC_084735.1;NC_084738.1;NC_084739.1;NC_084740.1;NC_084753.1
+GCF_034619465.1	Leptosomus discolor	Aves	Leptosomiformes	Chromosome	8826436	1	ITPR1	1	1	1	1	0	1.0	1	NC_141399.1
+GCF_034619465.1	Leptosomus discolor	Aves	Leptosomiformes	Chromosome	8826436	1	ITPR2	1	1	1	1	0	1.0	1	NC_141391.1
+GCF_034619465.1	Leptosomus discolor	Aves	Leptosomiformes	Chromosome	8826436	1	ITPR3	1	1	1	1	0	1.0	1	NC_141411.1
+GCF_034619465.1	Leptosomus discolor	Aves	Leptosomiformes	Chromosome	8826436	1	RYR	2	2	2	2	0	1.0	2	NC_141392.1;NC_141393.1
+GCF_034638445.1	Ciconia boyciana	Aves	Ciconiiformes	Chromosome	35788150	1	ITPR1	1	1	1	1	0	1.0	1	NC_132944.1
+GCF_034638445.1	Ciconia boyciana	Aves	Ciconiiformes	Chromosome	35788150	1	ITPR2	1	1	1	1	0	1.0	1	NC_132934.1
+GCF_034638445.1	Ciconia boyciana	Aves	Ciconiiformes	Chromosome	35788150	1	ITPR3	1	1	1	1	0	1.0	1	NC_132956.1
+GCF_034638445.1	Ciconia boyciana	Aves	Ciconiiformes	Chromosome	35788150	1	RYR	3	3	3	3	0	1.0	3	NC_132936.1;NC_132939.1;NC_132966.1
+GCF_034702125.1	Engraulis encrasicolus	Actinopteri	Clupeiformes	Chromosome	1448200	1	ITPR1	2	2	2	1	1	1.0	2	NC_085870.1
+GCF_034702125.1	Engraulis encrasicolus	Actinopteri	Clupeiformes	Chromosome	1448200	1	ITPR2	1	1	1	1	0	1.0	1	NC_085860.1
+GCF_034702125.1	Engraulis encrasicolus	Actinopteri	Clupeiformes	Chromosome	1448200	1	ITPR3	1	1	1	1	0	1.0	1	NC_085866.1
+GCF_034702125.1	Engraulis encrasicolus	Actinopteri	Clupeiformes	Chromosome	1448200	1	RYR	6	6	6	6	0	1.0	6	NC_085863.1;NC_085864.1;NC_085873.1;NC_085874.1;NC_085875.1;NC_085880.1
+GCF_035084215.1	Heptranchias perlo	Chondrichthyes	Hexanchiformes	Chromosome	4905566	1	ITPR1	1	1	1	1	0	1.0	1	NC_090341.1
+GCF_035084215.1	Heptranchias perlo	Chondrichthyes	Hexanchiformes	Chromosome	4905566	1	ITPR2	1	1	1	1	0	1.0	1	NC_090348.1
+GCF_035084215.1	Heptranchias perlo	Chondrichthyes	Hexanchiformes	Chromosome	4905566	1	ITPR3	1	1	1	1	0	1.0	1	NC_090351.1
+GCF_035084215.1	Heptranchias perlo	Chondrichthyes	Hexanchiformes	Chromosome	4905566	1	RYR	3	3	3	3	0	1.0	3	NC_090332.1;NC_090334.1;NC_090365.1
+GCF_035582795.1	Mycteria americana	Aves	Ciconiiformes	Chromosome	36845572	1	ITPR1	1	1	1	1	0	1.0	1	NC_134375.1
+GCF_035582795.1	Mycteria americana	Aves	Ciconiiformes	Chromosome	36845572	1	ITPR2	1	1	1	1	0	1.0	1	NC_134365.1
+GCF_035582795.1	Mycteria americana	Aves	Ciconiiformes	Chromosome	36845572	1	ITPR3	1	1	1	1	0	1.0	1	NC_134384.1
+GCF_035582795.1	Mycteria americana	Aves	Ciconiiformes	Chromosome	36845572	1	RYR	2	2	2	2	0	1.0	2	NC_134367.1;NC_134369.1
+GCF_035609145.1	Eleutherodactylus coqui	Amphibia	Anura	Chromosome	10388966	1	ITPR1	1	1	1	1	0	1.0	1	NC_089839.1
+GCF_035609145.1	Eleutherodactylus coqui	Amphibia	Anura	Chromosome	10388966	1	ITPR2	1	1	1	1	0	0.8828	1	NC_089838.1
+GCF_035609145.1	Eleutherodactylus coqui	Amphibia	Anura	Chromosome	10388966	1	ITPR3	1	1	1	1	0	1.0	1	NC_089837.1
+GCF_035609145.1	Eleutherodactylus coqui	Amphibia	Anura	Chromosome	10388966	1	RYR	2	2	2	2	0	1.0	2	NC_089842.1;NC_089846.1
+GCF_036013445.1	Caloenas nicobarica	Aves	Columbiformes	Chromosome	25101800	1	ITPR1	1	1	1	1	0	1.0	1	NC_088255.1
+GCF_036013445.1	Caloenas nicobarica	Aves	Columbiformes	Chromosome	25101800	1	ITPR2	1	1	1	1	0	1.0	1	NC_088245.1
+GCF_036013445.1	Caloenas nicobarica	Aves	Columbiformes	Chromosome	25101800	1	ITPR3	1	1	1	1	0	1.0	1	NC_088265.1
+GCF_036013445.1	Caloenas nicobarica	Aves	Columbiformes	Chromosome	25101800	1	RYR	3	3	3	3	0	1.0	3	NC_088247.1;NC_088249.1;NW_027017376.1
+GCF_036365525.1	Heterodontus francisci	Chondrichthyes	Heterodontiformes	Chromosome	3418954	1	ITPR1	1	1	1	1	0	1.0	1	NC_090389.1
+GCF_036365525.1	Heterodontus francisci	Chondrichthyes	Heterodontiformes	Chromosome	3418954	1	ITPR2	1	1	1	1	0	1.0	1	NC_090397.1
+GCF_036365525.1	Heterodontus francisci	Chondrichthyes	Heterodontiformes	Chromosome	3418954	1	ITPR3	1	1	1	1	0	1.0	1	NC_090395.1
+GCF_036365525.1	Heterodontus francisci	Chondrichthyes	Heterodontiformes	Chromosome	3418954	1	RYR	3	3	3	3	0	1.0	3	NC_090379.1;NC_090383.1;NC_090410.1
+GCF_036370855.1	Dromaius novaehollandiae	Aves	Casuariiformes	Chromosome	24239989	1	ITPR1	1	1	1	1	0	1.0	1	NC_088109.1
+GCF_036370855.1	Dromaius novaehollandiae	Aves	Casuariiformes	Chromosome	24239989	1	ITPR2	1	1	1	1	0	1.0	1	NC_088098.1
+GCF_036370855.1	Dromaius novaehollandiae	Aves	Casuariiformes	Chromosome	24239989	1	ITPR3	1	1	1	1	0	1.0	1	NC_088124.1
+GCF_036370855.1	Dromaius novaehollandiae	Aves	Casuariiformes	Chromosome	24239989	1	RYR	3	3	3	3	0	1.0	3	NC_088100.1;NC_088102.1;NC_088133.1
+GCF_036373705.1	Amia ocellicauda	Actinopteri	Amiiformes	Chromosome	17465777	1	ITPR1	1	1	1	1	0	1.0	1	NC_089852.1
+GCF_036373705.1	Amia ocellicauda	Actinopteri	Amiiformes	Chromosome	17465777	1	ITPR2	1	1	1	1	0	1.0	1	NC_089854.1
+GCF_036373705.1	Amia ocellicauda	Actinopteri	Amiiformes	Chromosome	17465777	1	ITPR3	1	1	1	1	0	1.0	1	NC_089854.1
+GCF_036373705.1	Amia ocellicauda	Actinopteri	Amiiformes	Chromosome	17465777	1	RYR	3	3	3	3	0	1.0	3	NC_089854.1;NC_089870.1;NC_089872.1
+GCF_036417535.1	Chlamydotis macqueenii	Aves	Otidiformes	Chromosome	25335467	1	ITPR1	1	1	1	1	0	1.0	1	NC_141565.1
+GCF_036417535.1	Chlamydotis macqueenii	Aves	Otidiformes	Chromosome	25335467	1	ITPR2	1	1	1	1	0	1.0	1	NC_141556.1
+GCF_036417535.1	Chlamydotis macqueenii	Aves	Otidiformes	Chromosome	25335467	1	ITPR3	1	1	1	1	0	1.0	1	NC_141578.1
+GCF_036417535.1	Chlamydotis macqueenii	Aves	Otidiformes	Chromosome	25335467	1	RYR	2	2	2	2	0	1.0	2	NC_141558.1;NC_141560.1
+GCF_036417845.1	Apteryx mantelli	Aves	Apterygiformes	Chromosome	19797665	1	ITPR1	1	1	1	1	0	1.0	1	NC_089989.1
+GCF_036417845.1	Apteryx mantelli	Aves	Apterygiformes	Chromosome	19797665	1	ITPR2	1	1	1	1	0	1.0	1	NC_089978.1
+GCF_036417845.1	Apteryx mantelli	Aves	Apterygiformes	Chromosome	19797665	1	ITPR3	1	1	1	1	0	1.0	1	NC_090002.1
+GCF_036417845.1	Apteryx mantelli	Aves	Apterygiformes	Chromosome	19797665	1	RYR	3	3	2	3	0	1.0	3	NC_089980.1;NC_089981.1;NC_090012.1
+GCF_036850765.1	Saccopteryx bilineata	Mammalia	Chiroptera	Chromosome	20156883	1	ITPR1	1	1	1	1	0	1.0	1	NC_089499.1
+GCF_036850765.1	Saccopteryx bilineata	Mammalia	Chiroptera	Chromosome	20156883	1	ITPR2	1	1	1	1	0	1.0	1	NC_089490.1
+GCF_036850765.1	Saccopteryx bilineata	Mammalia	Chiroptera	Chromosome	20156883	1	ITPR3	1	1	1	1	0	1.0	1	NC_089490.1
+GCF_036850765.1	Saccopteryx bilineata	Mammalia	Chiroptera	Chromosome	20156883	1	RYR	3	3	3	3	0	1.0	3	NC_089490.1;NC_089493.1;NC_089498.1
+GCF_036971445.1	Narcine bancroftii	Chondrichthyes	Torpediniformes	Chromosome	5195315	1	ITPR1	1	1	1	1	0	1.0	1	NC_091473.1
+GCF_036971445.1	Narcine bancroftii	Chondrichthyes	Torpediniformes	Chromosome	5195315	1	ITPR2	1	1	1	1	0	0.9985	1	NC_091481.1
+GCF_036971445.1	Narcine bancroftii	Chondrichthyes	Torpediniformes	Chromosome	5195315	1	ITPR3	1	1	1	1	0	1.0	1	NC_091473.1
+GCF_036971445.1	Narcine bancroftii	Chondrichthyes	Torpediniformes	Chromosome	5195315	1	RYR	3	3	3	3	0	1.0	3	NC_091470.1;NC_091472.1;NC_091481.1
+GCF_037157495.1	Lathamus discolor	Aves	Psittaciformes	Chromosome	19972387	1	ITPR1	1	1	1	1	0	1.0	1	NC_088890.1
+GCF_037157495.1	Lathamus discolor	Aves	Psittaciformes	Chromosome	19972387	1	ITPR2	1	1	1	1	0	1.0	1	NC_088884.1
+GCF_037157495.1	Lathamus discolor	Aves	Psittaciformes	Chromosome	19972387	1	ITPR3	1	1	1	1	0	1.0	1	NC_088902.1
+GCF_037157495.1	Lathamus discolor	Aves	Psittaciformes	Chromosome	19972387	1	RYR	2	2	2	2	0	1.0	2	NC_088888.1;NC_088889.1
+GCF_037176945.1	Latimeria chalumnae	Coelacanthimorpha	Coelacanthiformes	Chromosome	42076942	1	ITPR1	1	1	1	1	0	1.0	1	NC_088152.1
+GCF_037176945.1	Latimeria chalumnae	Coelacanthimorpha	Coelacanthiformes	Chromosome	42076942	1	ITPR2	1	1	1	1	0	1.0	1	NC_088145.1
+GCF_037176945.1	Latimeria chalumnae	Coelacanthimorpha	Coelacanthiformes	Chromosome	42076942	1	ITPR3	1	1	1	1	0	1.0	1	NC_088162.1
+GCF_037176945.1	Latimeria chalumnae	Coelacanthimorpha	Coelacanthiformes	Chromosome	42076942	1	RYR	3	3	3	3	0	1.0	3	NC_088141.1;NC_088149.1;NC_088167.1
+GCF_037893015.1	Macrotis lagotis	Mammalia	Peramelemorphia	Chromosome	1227456	1	ITPR1	1	1	1	1	0	1.0	1	NC_133665.1
+GCF_037893015.1	Macrotis lagotis	Mammalia	Peramelemorphia	Chromosome	1227456	1	ITPR2	1	1	1	1	0	1.0	1	NC_133664.1
+GCF_037893015.1	Macrotis lagotis	Mammalia	Peramelemorphia	Chromosome	1227456	1	ITPR3	1	1	1	1	0	1.0	1	NC_133662.1
+GCF_037893015.1	Macrotis lagotis	Mammalia	Peramelemorphia	Chromosome	1227456	1	RYR	3	3	3	3	0	1.0	3	NC_133658.1;NC_133659.1;NC_133661.1
+GCF_039877785.1	Chaetodon trifascialis	Actinopteri	Chaetodontiformes	Chromosome	21327470	1	ITPR1	2	2	2	1	1	1.0	2	NC_092058.1
+GCF_039877785.1	Chaetodon trifascialis	Actinopteri	Chaetodontiformes	Chromosome	21327470	1	ITPR2	1	1	1	1	0	1.0	1	NC_092065.1
+GCF_039877785.1	Chaetodon trifascialis	Actinopteri	Chaetodontiformes	Chromosome	21327470	1	ITPR3	1	1	1	1	0	1.0	1	NC_092063.1
+GCF_039877785.1	Chaetodon trifascialis	Actinopteri	Chaetodontiformes	Chromosome	21327470	1	RYR	6	6	6	6	0	1.0	6	NC_092064.1;NC_092068.1;NC_092069.1;NC_092071.1;NC_092074.1;NC_092076.1
+GCF_040054535.1	Antennarius striatus	Actinopteri	Lophiiformes	Chromosome	21047747	1	ITPR1	2	2	2	1	1	1.0	2	NC_090780.1
+GCF_040054535.1	Antennarius striatus	Actinopteri	Lophiiformes	Chromosome	21047747	1	ITPR2	1	1	1	1	0	1.0	1	NC_090779.1
+GCF_040054535.1	Antennarius striatus	Actinopteri	Lophiiformes	Chromosome	21047747	1	ITPR3	1	1	1	1	0	1.0	1	NC_090777.1
+GCF_040054535.1	Antennarius striatus	Actinopteri	Lophiiformes	Chromosome	21047747	1	RYR	6	6	6	6	0	1.0	6	NC_090781.1;NC_090786.1;NC_090788.1;NC_090792.1;NC_090794.1;NC_090796.1
+GCF_040807025.1	Struthio camelus	Aves	Struthioniformes	Chromosome	28829471	1	ITPR1	1	1	1	1	0	1.0	1	NC_090955.1
+GCF_040807025.1	Struthio camelus	Aves	Struthioniformes	Chromosome	28829471	1	ITPR2	1	1	1	1	0	1.0	1	NC_090942.1
+GCF_040807025.1	Struthio camelus	Aves	Struthioniformes	Chromosome	28829471	1	ITPR3	1	1	1	1	0	1.0	1	NC_090965.1
+GCF_040807025.1	Struthio camelus	Aves	Struthioniformes	Chromosome	28829471	1	RYR	3	3	3	3	0	1.0	3	NC_090944.1;NC_090946.1;NC_090957.1
+GCF_040954835.1	Lepisosteus oculatus	Actinopteri	Semionotiformes	Chromosome	20019514	1	ITPR1	1	1	1	1	0	1.0	1	NC_090699.1
+GCF_040954835.1	Lepisosteus oculatus	Actinopteri	Semionotiformes	Chromosome	20019514	1	ITPR2	1	1	1	1	0	1.0	1	NC_090702.1
+GCF_040954835.1	Lepisosteus oculatus	Actinopteri	Semionotiformes	Chromosome	20019514	1	ITPR3	1	1	1	1	0	1.0	1	NC_090700.1
+GCF_040954835.1	Lepisosteus oculatus	Actinopteri	Semionotiformes	Chromosome	20019514	1	RYR	3	3	3	3	0	1.0	3	NC_090698.1;NC_090703.1;NC_090712.1
+GCF_041296385.2	Aphelocoma coerulescens	Aves	Passeriformes	Chromosome	17285536	1	ITPR1	1	1	1	1	0	1.0	1	NC_091026.1
+GCF_041296385.2	Aphelocoma coerulescens	Aves	Passeriformes	Chromosome	17285536	1	ITPR2	1	1	1	1	0	1.0	1	NC_091014.1
+GCF_041296385.2	Aphelocoma coerulescens	Aves	Passeriformes	Chromosome	17285536	1	ITPR3	1	1	1	1	0	1.0	1	NC_091039.1
+GCF_041296385.2	Aphelocoma coerulescens	Aves	Passeriformes	Chromosome	17285536	1	RYR	3	3	3	3	0	1.0	3	NC_091016.1;NC_091019.1;NC_091045.1
+GCF_041902795.1	Electrophorus electricus	Actinopteri	Gymnotiformes	Chromosome	22449376	1	ITPR1	2	2	2	2	0	1.0	2	NC_137503.1;NC_137518.1
+GCF_041902795.1	Electrophorus electricus	Actinopteri	Gymnotiformes	Chromosome	22449376	1	ITPR2	1	1	1	1	0	1.0	1	NC_137502.1
+GCF_041902795.1	Electrophorus electricus	Actinopteri	Gymnotiformes	Chromosome	22449376	1	ITPR3	1	1	1	1	0	1.0	1	NC_137521.1
+GCF_041902795.1	Electrophorus electricus	Actinopteri	Gymnotiformes	Chromosome	22449376	1	RYR	5	5	5	5	0	1.0	5	NC_137502.1;NC_137503.1;NC_137506.1;NC_137511.1;NC_137515.1
+GCF_042186555.1	Aquarana catesbeiana	Amphibia	Anura	Chromosome	3396515	1	ITPR1	2	1	1	1	0	0.545	2	NC_133330.1
+GCF_042186555.1	Aquarana catesbeiana	Amphibia	Anura	Chromosome	3396515	1	ITPR2	1	1	1	1	0	1.0	1	NC_133326.1
+GCF_042186555.1	Aquarana catesbeiana	Amphibia	Anura	Chromosome	3396515	1	ITPR3	1	1	1	1	0	1.0	1	NC_133325.1
+GCF_042186555.1	Aquarana catesbeiana	Amphibia	Anura	Chromosome	3396515	1	RYR	2	2	2	2	0	1.0	2	NC_133332.1;NC_133336.1
+GCF_042242105.1	Pempheris klunzingeri	Actinopteri	Acropomatiformes	Chromosome	12920725	1	ITPR1	2	2	2	1	1	1.0	2	NC_092013.1
+GCF_042242105.1	Pempheris klunzingeri	Actinopteri	Acropomatiformes	Chromosome	12920725	1	ITPR2	1	1	1	1	0	1.0	1	NC_092016.1
+GCF_042242105.1	Pempheris klunzingeri	Actinopteri	Acropomatiformes	Chromosome	12920725	1	ITPR3	1	1	1	1	0	1.0	1	NC_092022.1
+GCF_042242105.1	Pempheris klunzingeri	Actinopteri	Acropomatiformes	Chromosome	12920725	1	RYR	6	6	6	6	0	1.0	6	NC_092015.1;NC_092023.1;NC_092024.1;NC_092025.1;NC_092029.1;NC_092031.1
+GCF_043380555.1	Nothobranchius furzeri	Actinopteri	Cyprinodontiformes	Chromosome	9298000	1	ITPR1	2	2	2	1	1	1.0	2	NC_091743.1
+GCF_043380555.1	Nothobranchius furzeri	Actinopteri	Cyprinodontiformes	Chromosome	9298000	1	ITPR2	1	1	1	1	0	1.0	1	NC_091744.1
+GCF_043380555.1	Nothobranchius furzeri	Actinopteri	Cyprinodontiformes	Chromosome	9298000	1	ITPR3	1	1	1	1	0	1.0	1	NC_091755.1
+GCF_043380555.1	Nothobranchius furzeri	Actinopteri	Cyprinodontiformes	Chromosome	9298000	1	RYR	6	6	6	6	0	1.0	6	NC_091742.1;NC_091750.1;NC_091752.1;NC_091753.1;NC_091756.1;NC_091758.1
+GCF_045865225.1	Trachurus japonicus	Actinopteri	Carangiformes	Chromosome	1015092	1	ITPR1	2	2	2	1	1	1.0	2	NC_140911.1
+GCF_045865225.1	Trachurus japonicus	Actinopteri	Carangiformes	Chromosome	1015092	1	ITPR2	1	1	1	1	0	1.0	1	NC_140912.1
+GCF_045865225.1	Trachurus japonicus	Actinopteri	Carangiformes	Chromosome	1015092	1	ITPR3	1	1	1	1	0	1.0	1	NC_140913.1
+GCF_045865225.1	Trachurus japonicus	Actinopteri	Carangiformes	Chromosome	1015092	1	RYR	6	6	6	6	0	1.0	6	NC_140919.1;NC_140920.1;NC_140921.1;NC_140925.1;NC_140928.1;NC_140930.1
+GCF_046128005.1	Genypterus blacodes	Actinopteri	Ophidiiformes	Contig	4774482	1	ITPR1	2	2	2	2	0	1.0	2	NW_027466831.1;NW_027466880.1
+GCF_046128005.1	Genypterus blacodes	Actinopteri	Ophidiiformes	Contig	4774482	1	ITPR2	1	1	1	1	0	1.0	1	NW_027466834.1
+GCF_046128005.1	Genypterus blacodes	Actinopteri	Ophidiiformes	Contig	4774482	1	ITPR3	1	1	1	1	0	0.8944	1	NW_027467302.1
+GCF_046128005.1	Genypterus blacodes	Actinopteri	Ophidiiformes	Contig	4774482	1	RYR	6	6	6	6	0	1.0	6	NW_027466827.1;NW_027466845.1;NW_027466859.1;NW_027466916.1;NW_027466989.1;NW_027467090.1
+GCF_047370975.1	Nipponia nippon	Aves	Pelecaniformes	Scaffold	56735934	1	ITPR1	1	1	1	1	0	1.0	1	NW_028262413.1
+GCF_047370975.1	Nipponia nippon	Aves	Pelecaniformes	Scaffold	56735934	1	ITPR2	1	1	1	1	0	1.0	1	NW_028262347.1
+GCF_047370975.1	Nipponia nippon	Aves	Pelecaniformes	Scaffold	56735934	1	ITPR3	1	1	1	1	0	1.0	1	NW_028262342.1
+GCF_047370975.1	Nipponia nippon	Aves	Pelecaniformes	Scaffold	56735934	1	RYR	3	3	3	3	0	1.0	3	NW_028262291.1;NW_028262358.1;NW_028262365.1
+GCF_047496795.1	Chiloscyllium punctatum	Chondrichthyes	Orectolobiformes	Chromosome	5342658	1	ITPR1	1	1	1	1	0	1.0	1	NC_092750.1
+GCF_047496795.1	Chiloscyllium punctatum	Chondrichthyes	Orectolobiformes	Chromosome	5342658	1	ITPR2	1	1	1	1	0	1.0	1	NC_092782.1
+GCF_047496795.1	Chiloscyllium punctatum	Chondrichthyes	Orectolobiformes	Chromosome	5342658	1	ITPR3	1	1	1	1	0	1.0	1	NC_092783.1
+GCF_047496795.1	Chiloscyllium punctatum	Chondrichthyes	Orectolobiformes	Chromosome	5342658	1	RYR	3	3	3	3	0	1.0	3	NC_092742.1;NC_092749.1;NC_092767.1
+GCF_047496885.1	Scyliorhinus torazame	Chondrichthyes	Carcharhiniformes	Chromosome	3187150	1	ITPR1	1	1	1	1	0	1.0	1	NC_092719.1
+GCF_047496885.1	Scyliorhinus torazame	Chondrichthyes	Carcharhiniformes	Chromosome	3187150	1	ITPR2	1	1	1	1	0	1.0	1	NC_092719.1
+GCF_047496885.1	Scyliorhinus torazame	Chondrichthyes	Carcharhiniformes	Chromosome	3187150	1	ITPR3	1	1	1	1	0	1.0	1	NC_092723.1
+GCF_047496885.1	Scyliorhinus torazame	Chondrichthyes	Carcharhiniformes	Chromosome	3187150	1	RYR	3	3	3	3	0	1.0	3	NC_092707.1;NC_092708.1;NC_092731.1
+GCF_047663525.1	Anas platyrhynchos	Aves	Anseriformes	Complete Genome	80154792	1	ITPR1	1	1	1	1	0	1.0	1	NC_092599.1
+GCF_047663525.1	Anas platyrhynchos	Aves	Anseriformes	Complete Genome	80154792	1	ITPR2	1	1	1	1	0	1.0	1	NC_092587.1
+GCF_047663525.1	Anas platyrhynchos	Aves	Anseriformes	Complete Genome	80154792	1	ITPR3	1	1	1	1	0	1.0	1	NC_092613.1
+GCF_047663525.1	Anas platyrhynchos	Aves	Anseriformes	Complete Genome	80154792	1	RYR	3	3	2	3	0	1.0	3	NC_092589.1;NC_092591.1;NC_092618.1
+GCF_047716275.1	Strix uralensis	Aves	Strigiformes	Chromosome	16359274	1	ITPR1	1	1	1	1	0	1.0	1	NC_133981.1
+GCF_047716275.1	Strix uralensis	Aves	Strigiformes	Chromosome	16359274	1	ITPR2	1	1	1	1	0	1.0	1	NC_133976.1
+GCF_047716275.1	Strix uralensis	Aves	Strigiformes	Chromosome	16359274	1	ITPR3	1	1	1	1	0	1.0	1	NC_133995.1
+GCF_047716275.1	Strix uralensis	Aves	Strigiformes	Chromosome	16359274	1	RYR	3	3	3	3	0	1.0	3	NC_133974.1;NC_133975.1;NW_027436919.1
+GCF_048418815.1	Hemitrygon akajei	Chondrichthyes	Myliobatiformes	Chromosome	8940806	1	ITPR1	1	1	1	1	0	1.0	1	NC_133142.1
+GCF_048418815.1	Hemitrygon akajei	Chondrichthyes	Myliobatiformes	Chromosome	8940806	1	ITPR2	1	1	1	1	0	0.9985	1	NC_133137.1
+GCF_048418815.1	Hemitrygon akajei	Chondrichthyes	Myliobatiformes	Chromosome	8940806	1	ITPR3	1	1	1	1	0	1.0	1	NC_133150.1
+GCF_048418815.1	Hemitrygon akajei	Chondrichthyes	Myliobatiformes	Chromosome	8940806	1	RYR	3	3	3	3	0	1.0	3	NC_133126.1;NC_133130.1;NC_133148.1
+GCF_048593235.1	Sminthopsis crassicaudata	Mammalia	Dasyuromorphia	Chromosome	4359487	1	ITPR1	1	1	1	1	0	1.0	1	NC_133617.1
+GCF_048593235.1	Sminthopsis crassicaudata	Mammalia	Dasyuromorphia	Chromosome	4359487	1	ITPR2	1	1	1	1	0	1.0	1	NC_133621.1
+GCF_048593235.1	Sminthopsis crassicaudata	Mammalia	Dasyuromorphia	Chromosome	4359487	1	ITPR3	1	1	1	1	0	1.0	1	NC_133620.1
+GCF_048593235.1	Sminthopsis crassicaudata	Mammalia	Dasyuromorphia	Chromosome	4359487	1	RYR	3	3	3	3	0	1.0	3	NC_133618.1;NC_133620.1;NC_133623.1
+GCF_048594095.1	Paramormyrops kingsleyae	Actinopteri	Osteoglossiformes	Chromosome	10969524	1	ITPR1	2	2	2	2	0	1.0	2	NC_132802.1;NC_132804.1
+GCF_048594095.1	Paramormyrops kingsleyae	Actinopteri	Osteoglossiformes	Chromosome	10969524	1	ITPR2	1	1	1	1	0	1.0	1	NC_132799.1
+GCF_048594095.1	Paramormyrops kingsleyae	Actinopteri	Osteoglossiformes	Chromosome	10969524	1	ITPR3	1	1	1	1	0	1.0	1	NC_132802.1
+GCF_048594095.1	Paramormyrops kingsleyae	Actinopteri	Osteoglossiformes	Chromosome	10969524	1	RYR	4	4	4	4	0	1.0	4	NC_132810.1;NC_132813.1;NC_132814.1;NC_132816.1
+GCF_048934315.1	Petromyzon marinus	Hyperoartia	Petromyzontiformes	Chromosome	4594409	1	ITPR1	3	3	3	3	0	1.0	3	NC_133696.1;NC_133708.1;NC_133714.1
+GCF_048934315.1	Petromyzon marinus	Hyperoartia	Petromyzontiformes	Chromosome	4594409	1	ITPR2	0	0	0	0	0	0.0	0	
+GCF_048934315.1	Petromyzon marinus	Hyperoartia	Petromyzontiformes	Chromosome	4594409	1	ITPR3	0	0	0	0	0	0.0	0	
+GCF_048934315.1	Petromyzon marinus	Hyperoartia	Petromyzontiformes	Chromosome	4594409	1	RYR	2	2	2	2	0	1.0	2	NC_133672.1;NC_133719.1
+GCF_049350105.2	Macaca mulatta	Mammalia	Primates	Complete Genome	162285572	1	ITPR1	1	1	1	1	0	1.0	1	NC_133407.1
+GCF_049350105.2	Macaca mulatta	Mammalia	Primates	Complete Genome	162285572	1	ITPR2	1	1	1	1	0	1.0	1	NC_133416.1
+GCF_049350105.2	Macaca mulatta	Mammalia	Primates	Complete Genome	162285572	1	ITPR3	1	1	1	1	0	1.0	1	NC_133409.1
+GCF_049350105.2	Macaca mulatta	Mammalia	Primates	Complete Genome	162285572	1	RYR	3	3	3	3	0	1.0	3	NC_133406.1;NC_133412.1;NC_133424.1
+GCF_050624435.1	Tenrec ecaudatus	Mammalia	Afrosoricida	Chromosome	41601014	1	ITPR1	1	1	1	1	0	1.0	1	NC_134535.1
+GCF_050624435.1	Tenrec ecaudatus	Mammalia	Afrosoricida	Chromosome	41601014	1	ITPR2	1	1	1	1	0	1.0	1	NC_134535.1
+GCF_050624435.1	Tenrec ecaudatus	Mammalia	Afrosoricida	Chromosome	41601014	1	ITPR3	1	1	1	1	0	1.0	1	NC_134536.1
+GCF_050624435.1	Tenrec ecaudatus	Mammalia	Afrosoricida	Chromosome	41601014	1	RYR	3	3	3	3	0	1.0	3	NC_134537.1;NC_134543.1;NC_134547.1
+GCF_052040795.1	Danio rerio	Actinopteri	Cypriniformes	Complete Genome	59431669	1	ITPR1	2	2	2	2	0	1.0	2	NC_141026.1;NC_141031.1
+GCF_052040795.1	Danio rerio	Actinopteri	Cypriniformes	Complete Genome	59431669	1	ITPR2	1	1	1	1	0	1.0	1	NC_141038.1
+GCF_052040795.1	Danio rerio	Actinopteri	Cypriniformes	Complete Genome	59431669	1	ITPR3	1	1	1	1	0	1.0	1	NC_141028.1
+GCF_052040795.1	Danio rerio	Actinopteri	Cypriniformes	Complete Genome	59431669	1	RYR	6	6	6	5	1	1.0	6	NC_141030.1;NC_141032.1;NC_141037.1;NC_141038.1;NC_141040.1
+GCF_052327205.1	Somniosus microcephalus	Chondrichthyes	Squaliformes	Chromosome	1075145	1	ITPR1	1	1	1	1	0	1.0	1	NC_140997.1
+GCF_052327205.1	Somniosus microcephalus	Chondrichthyes	Squaliformes	Chromosome	1075145	1	ITPR2	1	1	1	1	0	1.0	1	NC_141003.1
+GCF_052327205.1	Somniosus microcephalus	Chondrichthyes	Squaliformes	Chromosome	1075145	1	ITPR3	1	1	1	1	0	1.0	1	NC_141004.1
+GCF_052327205.1	Somniosus microcephalus	Chondrichthyes	Squaliformes	Chromosome	1075145	1	RYR	3	3	3	3	0	1.0	3	NC_140989.1;NC_140998.1;NC_141020.1
+GCF_054371585.1	Giraffa tippelskirchi	Mammalia	Artiodactyla	Complete Genome	166642423	1	ITPR1	1	1	1	1	0	1.0	1	NC_137283.1
+GCF_054371585.1	Giraffa tippelskirchi	Mammalia	Artiodactyla	Complete Genome	166642423	1	ITPR2	1	1	1	1	0	1.0	1	NC_137278.1
+GCF_054371585.1	Giraffa tippelskirchi	Mammalia	Artiodactyla	Complete Genome	166642423	1	ITPR3	1	1	1	1	0	1.0	1	NC_137282.1
+GCF_054371585.1	Giraffa tippelskirchi	Mammalia	Artiodactyla	Complete Genome	166642423	1	RYR	3	3	3	2	1	1.0	3	NC_137276.1;NC_137281.1
+GCF_054491055.1	Hypomesus nipponensis	Actinopteri	Osmeriformes	Complete Genome	20232928	1	ITPR1	2	2	2	1	1	1.0	2	NC_140369.1
+GCF_054491055.1	Hypomesus nipponensis	Actinopteri	Osmeriformes	Complete Genome	20232928	1	ITPR2	1	1	1	1	0	1.0	1	NC_140374.1
+GCF_054491055.1	Hypomesus nipponensis	Actinopteri	Osmeriformes	Complete Genome	20232928	1	ITPR3	1	1	1	1	0	1.0	1	NC_140378.1
+GCF_054491055.1	Hypomesus nipponensis	Actinopteri	Osmeriformes	Complete Genome	20232928	1	RYR	6	6	6	6	0	1.0	6	NC_140363.1;NC_140365.1;NC_140366.1;NC_140371.1;NC_140373.1;NC_140375.1
+GCF_056507025.1	Lutjanus erythropterus	Actinopteri	Lutjaniformes	Chromosome	37725332	1	ITPR1	2	2	2	1	1	1.0	2	NC_139318.1
+GCF_056507025.1	Lutjanus erythropterus	Actinopteri	Lutjaniformes	Chromosome	37725332	1	ITPR2	1	1	1	1	0	1.0	1	NC_139329.1
+GCF_056507025.1	Lutjanus erythropterus	Actinopteri	Lutjaniformes	Chromosome	37725332	1	ITPR3	1	1	1	1	0	1.0	1	NC_139322.1
+GCF_056507025.1	Lutjanus erythropterus	Actinopteri	Lutjaniformes	Chromosome	37725332	1	RYR	6	6	6	6	0	1.0	6	NC_139320.1;NC_139327.1;NC_139330.1;NC_139331.1;NC_139333.1;NC_139334.1
+GCF_057381845.1	Rhamphochromis longiceps	Actinopteri	Cichliformes	Chromosome	31399844	1	ITPR1	2	2	2	1	1	1.0	2	NC_140561.1
+GCF_057381845.1	Rhamphochromis longiceps	Actinopteri	Cichliformes	Chromosome	31399844	1	ITPR2	1	1	1	1	0	1.0	1	NC_140563.1
+GCF_057381845.1	Rhamphochromis longiceps	Actinopteri	Cichliformes	Chromosome	31399844	1	ITPR3	1	1	1	1	0	1.0	1	NC_140576.1
+GCF_057381845.1	Rhamphochromis longiceps	Actinopteri	Cichliformes	Chromosome	31399844	1	RYR	7	7	7	6	1	1.0	7	NC_140564.1;NC_140566.1;NC_140569.1;NC_140570.1;NC_140571.1;NC_140575.1
+GCF_900324485.3	Mastacembelus armatus	Actinopteri	Synbranchiformes	Chromosome	8014513	1	ITPR1	2	2	2	1	1	1.0	2	NC_046637.1
+GCF_900324485.3	Mastacembelus armatus	Actinopteri	Synbranchiformes	Chromosome	8014513	1	ITPR2	1	1	1	1	0	1.0	1	NC_046638.1
+GCF_900324485.3	Mastacembelus armatus	Actinopteri	Synbranchiformes	Chromosome	8014513	1	ITPR3	1	1	1	1	0	1.0	1	NC_046639.1
+GCF_900324485.3	Mastacembelus armatus	Actinopteri	Synbranchiformes	Chromosome	8014513	1	RYR	6	6	6	6	0	1.0	6	NC_046645.1;NC_046646.1;NC_046647.1;NC_046651.1;NC_046654.1;NC_046656.1
+GCF_900634775.2	Gouania willdenowi	Actinopteri	Blenniiformes	Chromosome	1838341	1	ITPR1	2	2	2	1	1	1.0	2	NC_041048.1
+GCF_900634775.2	Gouania willdenowi	Actinopteri	Blenniiformes	Chromosome	1838341	1	ITPR2	1	1	1	1	0	1.0	1	NC_041049.1
+GCF_900634775.2	Gouania willdenowi	Actinopteri	Blenniiformes	Chromosome	1838341	1	ITPR3	1	1	0	1	0	1.0	1	NC_041050.1
+GCF_900634775.2	Gouania willdenowi	Actinopteri	Blenniiformes	Chromosome	1838341	1	RYR	6	6	6	6	0	1.0	6	NC_041056.1;NC_041057.1;NC_041058.1;NC_041062.1;NC_041065.1;NC_041066.1
+GCF_900747795.2	Erpetoichthys calabaricus	Cladistia	Polypteriformes	Chromosome	6772339	1	ITPR1	1	1	1	1	0	1.0	1	NC_041411.2
+GCF_900747795.2	Erpetoichthys calabaricus	Cladistia	Polypteriformes	Chromosome	6772339	1	ITPR2	1	1	1	1	0	1.0	1	NC_041394.2
+GCF_900747795.2	Erpetoichthys calabaricus	Cladistia	Polypteriformes	Chromosome	6772339	1	ITPR3	1	1	1	1	0	1.0	1	NC_041396.2
+GCF_900747795.2	Erpetoichthys calabaricus	Cladistia	Polypteriformes	Chromosome	6772339	1	RYR	3	3	3	3	0	1.0	3	NC_041394.2;NC_041408.2;NC_041409.2
+GCF_900880675.2	Sparus aurata	Actinopteri	Spariformes	Chromosome	2862625	1	ITPR1	2	2	2	1	1	1.0	2	NC_044192.1
+GCF_900880675.2	Sparus aurata	Actinopteri	Spariformes	Chromosome	2862625	1	ITPR2	1	1	1	1	0	1.0	1	NC_044194.1
+GCF_900880675.2	Sparus aurata	Actinopteri	Spariformes	Chromosome	2862625	1	ITPR3	1	1	1	1	0	1.0	1	NC_044193.1
+GCF_900880675.2	Sparus aurata	Actinopteri	Spariformes	Chromosome	2862625	1	RYR	6	6	6	6	0	1.0	6	NC_044188.1;NC_044199.1;NC_044201.1;NC_044202.1;NC_044206.1;NC_044208.1
+GCF_901000725.3	Takifugu rubripes	Actinopteri	Tetraodontiformes	Chromosome	3136617	1	ITPR1	2	2	2	1	1	1.0	2	NC_042303.1
+GCF_901000725.3	Takifugu rubripes	Actinopteri	Tetraodontiformes	Chromosome	3136617	1	ITPR2	1	1	1	1	0	1.0	1	NC_042293.1
+GCF_901000725.3	Takifugu rubripes	Actinopteri	Tetraodontiformes	Chromosome	3136617	1	ITPR3	1	1	0	1	0	1.0	1	NC_042287.1
+GCF_901000725.3	Takifugu rubripes	Actinopteri	Tetraodontiformes	Chromosome	3136617	1	RYR	6	6	6	6	0	1.0	6	NC_042285.1;NC_042286.1;NC_042288.1;NC_042295.1;NC_042299.1;NC_042300.1
+GCF_901001135.2	Rhinatrema bivittatum	Amphibia	Gymnophiona	Chromosome	3216284	1	ITPR1	1	1	1	1	0	1.0	1	NC_042618.1
+GCF_901001135.2	Rhinatrema bivittatum	Amphibia	Gymnophiona	Chromosome	3216284	1	ITPR2	1	1	1	1	0	1.0	1	NC_042618.1
+GCF_901001135.2	Rhinatrema bivittatum	Amphibia	Gymnophiona	Chromosome	3216284	1	ITPR3	1	1	1	1	0	0.9989	1	NC_042626.1
+GCF_901001135.2	Rhinatrema bivittatum	Amphibia	Gymnophiona	Chromosome	3216284	1	RYR	3	3	3	3	0	1.0	3	NC_042617.1;NC_042618.1;NC_042625.1
+GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	Kurtiformes	Chromosome	2360121	1	ITPR1	2	2	2	1	1	1.0	2	NC_043961.1
+GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	Kurtiformes	Chromosome	2360121	1	ITPR2	1	1	1	1	0	1.0	1	NC_043962.1
+GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	Kurtiformes	Chromosome	2360121	1	ITPR3	1	1	1	1	0	1.0	1	NC_043963.1
+GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	Kurtiformes	Chromosome	2360121	1	RYR	6	6	5	6	0	1.0	6	NC_043969.1;NC_043970.1;NC_043971.1;NC_043975.1;NC_043978.1;NC_043979.1
+GCF_902150065.1	Myripristis murdjan	Actinopteri	Holocentriformes	Chromosome	14475636	1	ITPR1	2	2	2	1	1	1.0	2	NC_043984.1
+GCF_902150065.1	Myripristis murdjan	Actinopteri	Holocentriformes	Chromosome	14475636	1	ITPR2	1	1	1	1	0	1.0	1	NC_043985.1
+GCF_902150065.1	Myripristis murdjan	Actinopteri	Holocentriformes	Chromosome	14475636	1	ITPR3	1	1	1	1	0	1.0	1	NC_043986.1
+GCF_902150065.1	Myripristis murdjan	Actinopteri	Holocentriformes	Chromosome	14475636	1	RYR	6	6	6	6	0	1.0	6	NC_043992.1;NC_043993.1;NC_043994.1;NC_043998.1;NC_044001.1;NC_044003.1
+GCF_902167405.1	Gadus morhua	Actinopteri	Gadiformes	Chromosome	1015663	1	ITPR1	2	2	2	1	1	1.0	2	NC_044060.1
+GCF_902167405.1	Gadus morhua	Actinopteri	Gadiformes	Chromosome	1015663	1	ITPR2	1	1	1	1	0	1.0	1	NC_044056.1
+GCF_902167405.1	Gadus morhua	Actinopteri	Gadiformes	Chromosome	1015663	1	ITPR3	1	1	1	1	0	0.9978	1	NC_044048.1
+GCF_902167405.1	Gadus morhua	Actinopteri	Gadiformes	Chromosome	1015663	1	RYR	6	6	5	6	0	1.0	6	NC_044052.1;NC_044054.1;NC_044062.1;NC_044063.1;NC_044065.1;NC_044068.1
+GCF_902362185.1	Chanos chanos	Actinopteri	Gonorynchiformes	Chromosome	23134051	1	ITPR1	2	2	2	1	1	1.0	2	NC_044500.1
+GCF_902362185.1	Chanos chanos	Actinopteri	Gonorynchiformes	Chromosome	23134051	1	ITPR2	1	1	1	1	0	1.0	1	NC_044507.1
+GCF_902362185.1	Chanos chanos	Actinopteri	Gonorynchiformes	Chromosome	23134051	1	ITPR3	1	1	1	1	0	1.0	1	NC_044503.1
+GCF_902362185.1	Chanos chanos	Actinopteri	Gonorynchiformes	Chromosome	23134051	1	RYR	6	6	6	6	0	1.0	5	NC_044495.1;NC_044496.1;NC_044498.1;NC_044499.1;NC_044504.1;NC_044509.1
+GCF_902500255.1	Thalassophryne amazonica	Actinopteri	Batrachoidiformes	Chromosome	2329598	1	ITPR1	2	2	2	1	1	1.0	2	NC_047105.1
+GCF_902500255.1	Thalassophryne amazonica	Actinopteri	Batrachoidiformes	Chromosome	2329598	1	ITPR2	1	1	1	1	0	1.0	1	NC_047110.1
+GCF_902500255.1	Thalassophryne amazonica	Actinopteri	Batrachoidiformes	Chromosome	2329598	1	ITPR3	1	1	1	1	0	1.0	1	NC_047108.1
+GCF_902500255.1	Thalassophryne amazonica	Actinopteri	Batrachoidiformes	Chromosome	2329598	1	RYR	6	6	5	6	0	1.0	6	NC_047106.1;NC_047111.1;NC_047115.1;NC_047120.1;NC_047121.1;NC_047123.1
+GCF_907165065.1	Caprimulgus europaeus	Aves	Caprimulgiformes	Chromosome	30622946	1	ITPR1	1	1	1	1	0	1.0	1	NC_136578.1
+GCF_907165065.1	Caprimulgus europaeus	Aves	Caprimulgiformes	Chromosome	30622946	1	ITPR2	1	1	1	1	0	1.0	1	NC_136557.1
+GCF_907165065.1	Caprimulgus europaeus	Aves	Caprimulgiformes	Chromosome	30622946	1	ITPR3	1	1	1	1	0	1.0	1	NC_136566.1
+GCF_907165065.1	Caprimulgus europaeus	Aves	Caprimulgiformes	Chromosome	30622946	1	RYR	2	2	2	2	0	1.0	2	NC_136553.1;NC_136561.1
+GCF_933228915.1	Telmatherina bonti	Actinopteri	Atheriniformes	Chromosome	1254875	1	ITPR1	2	2	2	1	1	1.0	2	NC_136624.1
+GCF_933228915.1	Telmatherina bonti	Actinopteri	Atheriniformes	Chromosome	1254875	1	ITPR2	1	1	1	1	0	1.0	1	NC_136620.1
+GCF_933228915.1	Telmatherina bonti	Actinopteri	Atheriniformes	Chromosome	1254875	1	ITPR3	1	1	1	1	0	1.0	1	NC_136622.1
+GCF_933228915.1	Telmatherina bonti	Actinopteri	Atheriniformes	Chromosome	1254875	1	RYR	6	6	6	6	0	1.0	6	NC_136614.1;NC_136627.1;NC_136628.1;NC_136629.1;NC_136630.1;NC_136631.1
+GCF_947461875.1	Haliaeetus albicilla	Aves	Accipitriformes	Chromosome	4576000	1	ITPR1	1	1	1	1	0	1.0	1	NC_091506.1
+GCF_947461875.1	Haliaeetus albicilla	Aves	Accipitriformes	Chromosome	4576000	1	ITPR2	1	1	1	1	0	1.0	1	NC_091501.1
+GCF_947461875.1	Haliaeetus albicilla	Aves	Accipitriformes	Chromosome	4576000	1	ITPR3	1	1	1	1	0	1.0	1	NC_091508.1
+GCF_947461875.1	Haliaeetus albicilla	Aves	Accipitriformes	Chromosome	4576000	1	RYR	3	3	3	3	0	1.0	3	NC_091487.1;NC_091495.1;NC_091516.1
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	Cypriniformes	Chromosome	1988965	1	ITPR1	2	2	2	2	0	1.0	2	NC_136886.1;NC_136897.1
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	Cypriniformes	Chromosome	1988965	1	ITPR2	1	1	1	1	0	1.0	1	NC_136883.1
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	Cypriniformes	Chromosome	1988965	1	ITPR3	1	1	1	1	0	1.0	1	NC_136890.1
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	Cypriniformes	Chromosome	1988965	1	RYR	6	6	6	5	1	1.0	6	NC_136883.1;NC_136888.1;NC_136891.1;NC_136896.1;NC_136898.1
+GCF_949606895.1	Notothenia rossii	Actinopteri	Perciformes	Chromosome	383412	1	ITPR1	1	1	1	1	0	1.0	1	NC_136903.1
+GCF_949606895.1	Notothenia rossii	Actinopteri	Perciformes	Chromosome	383412	1	ITPR2	1	1	1	1	0	1.0	1	NC_136903.1
+GCF_949606895.1	Notothenia rossii	Actinopteri	Perciformes	Chromosome	383412	1	ITPR3	1	1	1	1	0	1.0	1	NC_136902.1
+GCF_949606895.1	Notothenia rossii	Actinopteri	Perciformes	Chromosome	383412	1	RYR	6	6	6	6	0	1.0	6	NC_136902.1;NC_136905.1;NC_136906.1;NC_136907.1;NC_136909.1;NC_136910.1
+GCF_949987555.1	Borostomias antarcticus	Actinopteri	Stomiiformes	Chromosome	959230	1	ITPR1	2	2	2	2	0	1.0	2	NC_140240.1;NC_140244.1
+GCF_949987555.1	Borostomias antarcticus	Actinopteri	Stomiiformes	Chromosome	959230	1	ITPR2	1	1	1	1	0	1.0	1	NC_140251.1
+GCF_949987555.1	Borostomias antarcticus	Actinopteri	Stomiiformes	Chromosome	959230	1	ITPR3	1	1	1	1	0	1.0	1	NC_140236.1
+GCF_949987555.1	Borostomias antarcticus	Actinopteri	Stomiiformes	Chromosome	959230	1	RYR	6	6	6	6	0	1.0	6	NC_140234.1;NC_140235.1;NC_140238.1;NC_140239.1;NC_140248.1;NC_140262.1
+GCF_949987685.1	Ammodytes marinus	Actinopteri	Uranoscopiformes	Chromosome	2041615	1	ITPR1	2	2	2	1	1	1.0	2	NC_137233.1
+GCF_949987685.1	Ammodytes marinus	Actinopteri	Uranoscopiformes	Chromosome	2041615	1	ITPR2	1	1	1	1	0	1.0	1	NC_137234.1
+GCF_949987685.1	Ammodytes marinus	Actinopteri	Uranoscopiformes	Chromosome	2041615	1	ITPR3	1	1	1	1	0	1.0	1	NC_137211.1
+GCF_949987685.1	Ammodytes marinus	Actinopteri	Uranoscopiformes	Chromosome	2041615	1	RYR	6	6	6	6	0	1.0	6	NC_137215.1;NC_137218.1;NC_137219.1;NC_137223.1;NC_137224.1;NC_137232.1
+GCF_951640355.1	Cnephaeus nilssonii	Mammalia	Chiroptera	Chromosome	2474537	1	ITPR1	1	1	1	1	0	1.0	1	NC_137088.1
+GCF_951640355.1	Cnephaeus nilssonii	Mammalia	Chiroptera	Chromosome	2474537	1	ITPR2	1	1	1	1	0	1.0	1	NC_137077.1
+GCF_951640355.1	Cnephaeus nilssonii	Mammalia	Chiroptera	Chromosome	2474537	1	ITPR3	1	1	1	1	0	1.0	1	NC_137080.1
+GCF_951640355.1	Cnephaeus nilssonii	Mammalia	Chiroptera	Chromosome	2474537	1	RYR	3	3	3	3	0	1.0	3	NC_137075.1;NC_137091.1;NC_137094.1
+GCF_951799975.1	Gobius niger	Actinopteri	Gobiiformes	Chromosome	3365000	1	ITPR1	2	2	2	1	1	1.0	2	NC_136871.1
+GCF_951799975.1	Gobius niger	Actinopteri	Gobiiformes	Chromosome	3365000	1	ITPR2	1	1	1	1	0	1.0	1	NC_136863.1
+GCF_951799975.1	Gobius niger	Actinopteri	Gobiiformes	Chromosome	3365000	1	ITPR3	1	1	1	1	0	1.0	1	NC_136857.1
+GCF_951799975.1	Gobius niger	Actinopteri	Gobiiformes	Chromosome	3365000	1	RYR	5	5	5	5	0	1.0	5	NC_136852.1;NC_136862.1;NC_136866.1;NC_136867.1;NC_136870.1
+GCF_960531495.1	Zeus faber	Actinopteri	Zeiformes	Chromosome	1449431	1	ITPR1	2	2	2	1	1	1.0	2	NC_137192.1
+GCF_960531495.1	Zeus faber	Actinopteri	Zeiformes	Chromosome	1449431	1	ITPR2	1	1	1	1	0	1.0	1	NC_137201.1
+GCF_960531495.1	Zeus faber	Actinopteri	Zeiformes	Chromosome	1449431	1	ITPR3	1	1	1	1	0	1.0	1	NC_137194.1
+GCF_960531495.1	Zeus faber	Actinopteri	Zeiformes	Chromosome	1449431	1	RYR	6	6	6	6	0	1.0	6	NC_137189.1;NC_137197.1;NC_137198.1;NC_137200.1;NC_137202.1;NC_137207.1
+GCF_963457635.1	Microchirus variegatus	Actinopteri	Pleuronectiformes	Chromosome	2444644	1	ITPR1	2	2	2	2	0	1.0	2	NC_139805.1;NC_139808.1
+GCF_963457635.1	Microchirus variegatus	Actinopteri	Pleuronectiformes	Chromosome	2444644	1	ITPR2	1	1	1	1	0	1.0	1	NC_139809.1
+GCF_963457635.1	Microchirus variegatus	Actinopteri	Pleuronectiformes	Chromosome	2444644	1	ITPR3	1	1	1	1	0	1.0	1	NC_139810.1
+GCF_963457635.1	Microchirus variegatus	Actinopteri	Pleuronectiformes	Chromosome	2444644	1	RYR	6	6	6	6	0	1.0	6	NC_139803.1;NC_139804.1;NC_139812.1;NC_139813.1;NC_139819.1;NC_139822.1
+GCF_963514005.1	Raja brachyura	Chondrichthyes	Rajiformes	Chromosome	2048057	1	ITPR1	1	1	1	1	0	0.9953	1	NC_137376.1
+GCF_963514005.1	Raja brachyura	Chondrichthyes	Rajiformes	Chromosome	2048057	1	ITPR2	1	1	1	1	0	1.0	1	NC_137379.1
+GCF_963514005.1	Raja brachyura	Chondrichthyes	Rajiformes	Chromosome	2048057	1	ITPR3	1	1	1	1	0	1.0	1	NC_137384.1
+GCF_963514005.1	Raja brachyura	Chondrichthyes	Rajiformes	Chromosome	2048057	1	RYR	3	3	3	3	0	1.0	3	NC_137368.1;NC_137369.1;NC_137398.1
+GCF_963514075.1	Conger conger	Actinopteri	Anguilliformes	Chromosome	3090688	1	ITPR1	2	2	2	2	0	1.0	2	NC_083769.1;NC_083773.1
+GCF_963514075.1	Conger conger	Actinopteri	Anguilliformes	Chromosome	3090688	1	ITPR2	1	1	1	1	0	1.0	1	NC_083778.1
+GCF_963514075.1	Conger conger	Actinopteri	Anguilliformes	Chromosome	3090688	1	ITPR3	1	1	1	1	0	1.0	1	NC_083769.1
+GCF_963514075.1	Conger conger	Actinopteri	Anguilliformes	Chromosome	3090688	1	RYR	5	5	5	5	0	1.0	5	NC_083760.1;NC_083761.1;NC_083764.1;NC_083766.1;NC_083772.1
+GCF_963514085.1	Chelon labrosus	Actinopteri	Mugiliformes	Chromosome	2544200	1	ITPR1	2	2	2	1	1	1.0	2	NC_140340.1
+GCF_963514085.1	Chelon labrosus	Actinopteri	Mugiliformes	Chromosome	2544200	1	ITPR2	1	1	1	1	0	1.0	1	NC_140344.1
+GCF_963514085.1	Chelon labrosus	Actinopteri	Mugiliformes	Chromosome	2544200	1	ITPR3	1	1	1	1	0	1.0	1	NC_140360.1
+GCF_963514085.1	Chelon labrosus	Actinopteri	Mugiliformes	Chromosome	2544200	1	RYR	6	6	6	6	0	1.0	6	NC_140346.1;NC_140347.1;NC_140348.1;NC_140350.1;NC_140352.1;NC_140353.1
+GCF_963921795.1	Nannobrachium achirus	Actinopteri	Myctophiformes	Chromosome	1305851	1	ITPR1	2	2	2	1	1	1.0	2	NC_137815.1
+GCF_963921795.1	Nannobrachium achirus	Actinopteri	Myctophiformes	Chromosome	1305851	1	ITPR2	2	2	2	1	1	1.0	2	NC_137820.1
+GCF_963921795.1	Nannobrachium achirus	Actinopteri	Myctophiformes	Chromosome	1305851	1	ITPR3	1	1	1	1	0	1.0	1	NC_137818.1
+GCF_963921795.1	Nannobrachium achirus	Actinopteri	Myctophiformes	Chromosome	1305851	1	RYR	6	6	6	6	0	1.0	6	NC_137817.1;NC_137823.1;NC_137825.1;NC_137826.1;NC_137827.1;NC_137833.1
+GCF_963921805.1	Phalacrocorax carbo	Aves	Suliformes	Chromosome	4631399	1	ITPR1	1	1	1	1	0	1.0	1	NC_087518.1
+GCF_963921805.1	Phalacrocorax carbo	Aves	Suliformes	Chromosome	4631399	1	ITPR2	1	1	1	1	0	1.0	1	NC_087513.1
+GCF_963921805.1	Phalacrocorax carbo	Aves	Suliformes	Chromosome	4631399	1	ITPR3	1	1	1	1	0	1.0	1	NC_087535.1
+GCF_963921805.1	Phalacrocorax carbo	Aves	Suliformes	Chromosome	4631399	1	RYR	2	2	2	2	0	1.0	2	NC_087515.1;NC_087521.1
+GCF_963971535.1	Notolepis coatsorum	Actinopteri	Aulopiformes	Chromosome	444000	1	ITPR1	2	2	2	1	1	1.0	0	NC_140170.1
+GCF_963971535.1	Notolepis coatsorum	Actinopteri	Aulopiformes	Chromosome	444000	1	ITPR2	1	1	1	1	0	1.0	0	NC_140182.1
+GCF_963971535.1	Notolepis coatsorum	Actinopteri	Aulopiformes	Chromosome	444000	1	ITPR3	1	1	1	1	0	1.0	0	NC_140181.1
+GCF_963971535.1	Notolepis coatsorum	Actinopteri	Aulopiformes	Chromosome	444000	1	RYR	5	5	4	5	0	1.0	0	NC_140165.1;NC_140167.1;NC_140172.1;NC_140173.1;NC_140179.1
+GCF_963989245.1	Nansenia antarctica	Actinopteri	Argentiniformes	Chromosome	750607	1	ITPR1	2	2	2	2	0	1.0	2	NC_137685.1;NC_137691.1
+GCF_963989245.1	Nansenia antarctica	Actinopteri	Argentiniformes	Chromosome	750607	1	ITPR2	1	1	1	1	0	1.0	1	NC_137684.1
+GCF_963989245.1	Nansenia antarctica	Actinopteri	Argentiniformes	Chromosome	750607	1	ITPR3	1	1	1	1	0	1.0	1	NC_137676.1
+GCF_963989245.1	Nansenia antarctica	Actinopteri	Argentiniformes	Chromosome	750607	1	RYR	6	6	6	4	1	1.0	6	NC_137674.1;NC_137681.1;NC_137687.1;NC_137693.1
+GCF_964187855.1	Myxine glutinosa	Myxini	Myxiniformes	Chromosome	739991	1	ITPR1	3	3	3	3	0	1.0	3	NC_136261.1;NC_136264.1;NC_136272.1
+GCF_964187855.1	Myxine glutinosa	Myxini	Myxiniformes	Chromosome	739991	1	ITPR2	0	0	0	0	0	0.0	0	
+GCF_964187855.1	Myxine glutinosa	Myxini	Myxiniformes	Chromosome	739991	1	ITPR3	0	0	0	0	0	0.0	0	
+GCF_964187855.1	Myxine glutinosa	Myxini	Myxiniformes	Chromosome	739991	1	RYR	2	2	2	2	0	0.9994	2	NC_136269.1;NC_136271.1
+GCF_964195595.1	Calonectris borealis	Aves	Procellariiformes	Chromosome	4142416	1	ITPR1	1	1	1	1	0	1.0	1	NC_134321.1
+GCF_964195595.1	Calonectris borealis	Aves	Procellariiformes	Chromosome	4142416	1	ITPR2	1	1	1	1	0	1.0	1	NC_134312.1
+GCF_964195595.1	Calonectris borealis	Aves	Procellariiformes	Chromosome	4142416	1	ITPR3	1	1	1	1	0	1.0	1	NC_134337.1
+GCF_964195595.1	Calonectris borealis	Aves	Procellariiformes	Chromosome	4142416	1	RYR	3	3	3	3	0	1.0	3	NC_134314.1;NC_134316.1;NC_134343.1
+GCF_964237555.1	Oryctolagus cuniculus	Mammalia	Lagomorpha	Chromosome	2030165	1	ITPR1	1	1	1	1	0	1.0	1	NC_091441.1
+GCF_964237555.1	Oryctolagus cuniculus	Mammalia	Lagomorpha	Chromosome	2030165	1	ITPR2	1	1	1	1	0	1.0	1	NC_091440.1
+GCF_964237555.1	Oryctolagus cuniculus	Mammalia	Lagomorpha	Chromosome	2030165	1	ITPR3	1	1	1	1	0	1.0	1	NC_091436.1
+GCF_964237555.1	Oryctolagus cuniculus	Mammalia	Lagomorpha	Chromosome	2030165	1	RYR	3	3	3	3	0	1.0	3	NC_091443.1;NC_091444.1;NC_091449.1
+GCF_964237585.1	Gallinula chloropus	Aves	Gruiformes	Chromosome	3673000	1	ITPR1	1	1	1	1	0	1.0	1	NC_140097.1
+GCF_964237585.1	Gallinula chloropus	Aves	Gruiformes	Chromosome	3673000	1	ITPR2	1	1	1	1	0	1.0	1	NC_140085.1
+GCF_964237585.1	Gallinula chloropus	Aves	Gruiformes	Chromosome	3673000	1	ITPR3	1	1	1	1	0	1.0	1	NC_140112.1
+GCF_964237585.1	Gallinula chloropus	Aves	Gruiformes	Chromosome	3673000	1	RYR	2	2	2	2	0	1.0	2	NC_140087.1;NC_140088.1
+GCF_964261635.1	Lissotriton helveticus	Amphibia	Caudata	Chromosome	7795245	1	ITPR1	1	1	1	1	0	1.0	1	NC_136070.1
+GCF_964261635.1	Lissotriton helveticus	Amphibia	Caudata	Chromosome	7795245	1	ITPR2	1	1	1	1	0	1.0	1	NC_136057.1
+GCF_964261635.1	Lissotriton helveticus	Amphibia	Caudata	Chromosome	7795245	1	ITPR3	1	1	1	1	0	1.0	1	NC_136065.1
+GCF_964261635.1	Lissotriton helveticus	Amphibia	Caudata	Chromosome	7795245	1	RYR	3	3	3	2	1	1.0	3	NC_136067.1;NC_136070.1
+GCF_964289735.1	Phaethon aethereus	Aves	Phaethontiformes	Chromosome	2122569	1	ITPR1	1	1	1	1	0	1.0	1	NC_138587.1
+GCF_964289735.1	Phaethon aethereus	Aves	Phaethontiformes	Chromosome	2122569	1	ITPR2	1	1	1	1	0	1.0	1	NC_138575.1
+GCF_964289735.1	Phaethon aethereus	Aves	Phaethontiformes	Chromosome	2122569	1	ITPR3	1	1	1	1	0	1.0	1	NC_138600.1
+GCF_964289735.1	Phaethon aethereus	Aves	Phaethontiformes	Chromosome	2122569	1	RYR	2	2	2	2	0	1.0	2	NC_138576.1;NC_138579.1
+GCF_964417175.1	Larus argentatus	Aves	Charadriiformes	Chromosome	3525167	1	ITPR1	1	1	1	1	0	1.0	1	NC_138697.1
+GCF_964417175.1	Larus argentatus	Aves	Charadriiformes	Chromosome	3525167	1	ITPR2	1	1	1	1	0	1.0	1	NC_138688.1
+GCF_964417175.1	Larus argentatus	Aves	Charadriiformes	Chromosome	3525167	1	ITPR3	1	1	1	1	0	1.0	1	NC_138708.1
+GCF_964417175.1	Larus argentatus	Aves	Charadriiformes	Chromosome	3525167	1	RYR	2	2	2	2	0	1.0	2	NC_138690.1;NC_138691.1
+GCF_964638095.1	Poromitra crassiceps	Actinopteri	Beryciformes	Chromosome	841497	1	ITPR1	2	2	2	2	0	1.0	2	NC_139649.1;NC_139650.1
+GCF_964638095.1	Poromitra crassiceps	Actinopteri	Beryciformes	Chromosome	841497	1	ITPR2	1	1	1	1	0	1.0	1	NC_139636.1
+GCF_964638095.1	Poromitra crassiceps	Actinopteri	Beryciformes	Chromosome	841497	1	ITPR3	1	1	1	1	0	1.0	1	NC_139637.1
+GCF_964638095.1	Poromitra crassiceps	Actinopteri	Beryciformes	Chromosome	841497	1	RYR	6	6	6	6	0	1.0	6	NC_139623.1;NC_139625.1;NC_139626.1;NC_139630.1;NC_139633.1;NC_139642.1
+GCF_965183815.1	Platalea leucorodia	Aves	Pelecaniformes	Chromosome	3299000	1	ITPR1	1	1	1	1	0	1.0	1	NC_138831.1
+GCF_965183815.1	Platalea leucorodia	Aves	Pelecaniformes	Chromosome	3299000	1	ITPR2	1	1	1	1	0	1.0	1	NC_138826.1
+GCF_965183815.1	Platalea leucorodia	Aves	Pelecaniformes	Chromosome	3299000	1	ITPR3	1	1	1	1	0	1.0	1	NC_138841.1
+GCF_965183815.1	Platalea leucorodia	Aves	Pelecaniformes	Chromosome	3299000	1	RYR	3	3	3	3	0	1.0	3	NC_138825.1;NC_138829.1;NC_138848.1
+GCF_965601325.1	Salmo salar	Actinopteri	Salmoniformes	Chromosome	90035114	1	ITPR1	4	4	4	2	1	1.0	4	NC_138302.1;NC_138312.1
+GCF_965601325.1	Salmo salar	Actinopteri	Salmoniformes	Chromosome	90035114	1	ITPR2	2	2	2	2	0	1.0	2	NC_138300.1;NC_138306.1
+GCF_965601325.1	Salmo salar	Actinopteri	Salmoniformes	Chromosome	90035114	1	ITPR3	2	2	2	2	0	1.0	2	NC_138303.1;NC_138305.1
+GCF_965601325.1	Salmo salar	Actinopteri	Salmoniformes	Chromosome	90035114	1	RYR	10	10	10	7	1	1.0	9	NC_138291.1;NC_138294.1;NC_138296.1;NC_138299.1;NC_138301.1;NC_138305.1;NC_138308.1
+GCF_965638725.1	Aptenodytes patagonicus	Aves	Sphenisciformes	Chromosome	10636000	1	ITPR1	1	1	1	1	0	1.0	1	NC_134956.1
+GCF_965638725.1	Aptenodytes patagonicus	Aves	Sphenisciformes	Chromosome	10636000	1	ITPR2	1	1	1	1	0	1.0	1	NC_134949.1
+GCF_965638725.1	Aptenodytes patagonicus	Aves	Sphenisciformes	Chromosome	10636000	1	ITPR3	1	1	1	1	0	1.0	1	NC_134970.1
+GCF_965638725.1	Aptenodytes patagonicus	Aves	Sphenisciformes	Chromosome	10636000	1	RYR	2	2	2	2	0	1.0	2	NC_134951.1;NC_134955.1

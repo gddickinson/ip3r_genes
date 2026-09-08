@@ -2538,3 +2538,102 @@ assembly, so retention asymmetry no longer has to be stated on S6's 134
 representatives. And the per-**locus** copy table must be read out of each
 sweep `summary.json`, not out of the ledger, which holds only each cell's
 best locus.
+
+---
+
+## 2026-09-08 — S16: duplication history
+
+**Task.** S16, the only unblocked pending row (S7, S8, S13 all complete).
+Are ITPR1/2/3 2R ohnologs, are the teleost itpr1a/itpr1b copies 3R, and what
+is the copy-number landscape. Data root attached (679 GB free), dashboard
+opened and watched, `git pull` clean.
+
+### What ran
+
+Twelve new modules, `scripts/s16_*.py`, driven by `s16_run.py` in eight
+stages (`copies → map → paralogon → quartet → teleost → tables → figures →
+report`). Full run 42 s warm, ~3 min cold (25 BioMart requests). The method
+is ported from the PIEZO project's S16 (`../piezo_genes/scripts/s16_*.py`)
+and every result is this family's own.
+
+- **`copies`** — the per-locus table the brief asks for, read out of all 309
+  sweep `summary.json` files rather than the ledger: 2,146 loci, 1,841
+  copies, every count carrying D4's contiguity flag and S15a's lesion bar
+  (read back off S15a's committed verdicts, not recomputed).
+- **`map`** — human Compara paralogy from BioMart against a **pinned** dated
+  archive (`jun2026.archive.ensembl.org`, Ensembl Genes 116), with the
+  archive's own registry committed beside the map so the release is evidence
+  and not a sentence. 22,564 undirected pairs touch a neighbourhood gene;
+  2,559 of 3,567 S8/window symbols resolve (71.7 %).
+- **`paralogon` / `quartet`** — the 2R test at three window sizes × three
+  duplication-node vocabularies, against a real-window permutation null
+  (D17, 5,000 draws per direction), BH at two scopes, plus a pooled
+  one-hypothesis-per-family test, the genome-wide block scan, the quartet
+  and the 309-genome replication with its own matched-random-window null.
+- **`teleost`** — the five 3R predictions, flank sets joined out of S8's
+  committed `flanks.tsv` (which flanked every locus, so this is a join and
+  not a re-extraction), DCS against two references, and cross-anchor block
+  identity.
+
+### What resulted
+
+- **2R.** ITPR1's neighbourhood is paralogous to ITPR2's in 141/175 genomes
+  and to ITPR3's in 89/152, against **24/932 (2.6 %)** matched random
+  neighbourhoods in the same genomes. ITPR2 vs ITPR3 is 4/149 — the
+  background exactly. **Dating the links split them**: `GRM7 ↔ GRM4` is
+  *Vertebrata* (84 genomes), `BHLHE40 ↔ BHLHE41` is *Opisthokonta* and is
+  not an ohnolog pair. Both are the two families S8 found by root-key
+  symbols; the date is what S16 adds (**D51**).
+- **The RyR control is what makes the human test readable.** Pooled at ±10,
+  ITPR scores 1 dated link against a null of 0.060 (p 0.039) and RYR 1
+  against 0.022 (p 0.021). Neither survives correction across all 135 tests.
+  So the single-genome test measures the instrument's ceiling, not a
+  difference between the families, and the claim rests on the replication
+  (**D52**).
+- **3R.** 97.3 % of 73 teleost genomes above D4's bar carry two ITPR1 (mean
+  1.97) against 1.04 for ITPR2 and ITPR3 — while the same genomes carry
+  **5.82 RyRs**. Pre-3R ray-fins 1/1/1 + 3; extra-WGD lineages 3/2/2 + 8.
+  The two copies partition the ancestral block disjointly in 45/49 and 46/49
+  genomes against the two references, and **705 of 705** cross-anchor
+  assignments agree (p 1.2e-212), corroborated 6/6 by the bait (sequence)
+  call.
+
+### What was built, broken and fixed
+
+- The split-model merge **fired on 0 of 2,146 loci** — S5's own clustering
+  already chained miniprot's alignments. That zero is only reportable
+  because T1 constructs two halves that *each* clear the copy bar and
+  requires one copy out; the first version of T1 used halves below the bar
+  and would have passed whether the merge worked or not.
+- **The quartet test's six significant pairs were circular.** Each was a
+  window against the block selected, out of ~23,000, for being the most
+  paralogous to that window. Now flagged `selection_circular` in the table
+  rather than in the prose, and the headline is the 59 non-circular pairs,
+  of which 0 are enriched (**D53**).
+- The cross-anchor bait-concordance check was unrunnable because it took
+  `anchors[0]`, which is ranked on flank richness and whose two copies won
+  the same bait. It now takes the first anchor whose own copies differ; the
+  check went from 0/0 to 6/6.
+- Two anchor-selection and reporting bugs found by reading the rendered
+  output against its own tables: `n_above_bar` was written inside a per-cell
+  loop (all four cells share one denominator, so it silently reported the
+  last cell's), and the report printed "six anchors from six orders (6)"
+  because `headline()` kept only the metric value and not its note.
+- `s16_report_results.py` hit 513 lines and was split into
+  `s16_report_results` (copies + 2R) and `s16_report_3r` (3R + caveats +
+  hand-off), 281 and 259 lines. Every S16 module is now under 500.
+- 31 constructed negative controls pass before anything is written.
+- **Reproducibility checked rather than claimed** (D24): a second full run
+  reproduces all 24 committed tables byte for byte, SHA-256 against
+  SHA-256, from the `duplication_stats.json` the first run wrote.
+
+### Next
+
+S17 — constraint & function. S16 hands it an asymmetry that singles out
+ITPR1 twice over, from two independent kinds of evidence: its neighbourhood
+is the one that retained 2R ohnologs with both other paralogs, and it is the
+only paralog whose 3R duplicate was kept. Whether that is one fact or two is
+a constraint question, and S9's per-paralog ω estimates are already
+committed. `results/duplication/loci.tsv` is the per-locus table S8, S15a
+and S16 each had to rebuild from the sweep summaries — anything downstream
+needing more than one locus per cell should read it rather than the ledger.

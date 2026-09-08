@@ -1,0 +1,14 @@
+metric	value	note
+cell	ITPR1	the duplicated paralog cell under test
+two_copy_genomes_flanked	49	genomes with both ITPR1 copies flanked at >=5 symbols
+anchors	6	Nibea albiflora (order unassigned); Hoplias malabaricus (Characiformes); Electrophorus electricus (Gymnotiformes); Danio rerio (Cypriniformes); Chanos chanos (Gonorynchiformes); Gadus morhua (Gadiformes)
+anchor_pairs_compared	15	
+assignments_compared	705	genome x anchor-pair calls
+assignments_agreeing	705	
+fraction_agreeing	1.0	0.5 under independent lineage-specific duplications
+p_binomial_two_sided	1.18818e-212	
+min_anchor_pair_agreement	1.0	
+bait_concordance_reference	Hoplias malabaricus	first anchor whose own two copies won different baits
+bait_concordance_n	6	genomes where the two copies won different baits
+bait_concordance_agree	6	synteny block agrees with the sequence (bait) call
+bait_concordance_p	0.03125	independent evidence, same partition

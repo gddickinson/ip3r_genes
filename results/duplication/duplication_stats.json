@@ -1,0 +1,335 @@
+{
+ "task": "S16",
+ "generated": "2026-09-08 17:15:15",
+ "self_test": "pass",
+ "parameters": {
+  "copy_coverage_bar": 0.5,
+  "copy_min_aligned_aa": 500,
+  "copy_min_identity": 0.4,
+  "merge_gap_bp": 100000,
+  "merge_max_query_overlap": 0.2,
+  "window_sizes": [
+   10,
+   20,
+   30
+  ],
+  "primary_window": 10,
+  "primary_level_set": "2R_window",
+  "levels_2R_core": [
+   "Chordata",
+   "Vertebrata"
+  ],
+  "levels_2R_window": [
+   "Chordata",
+   "Vertebrata",
+   "Gnathostomata",
+   "Euteleostomi"
+  ],
+  "n_permutations": 5000,
+  "seed": 20260908,
+  "biomart_release": "Ensembl Genes 116",
+  "biomart_host": "https://jun2026.archive.ensembl.org/biomart/martservice",
+  "pre_3R_orders": [
+   "Amiiformes",
+   "Lepisosteiformes",
+   "Polypteriformes",
+   "Semionotiformes"
+  ],
+  "extra_wgd_orders": [
+   "Acipenseriformes",
+   "Salmoniformes"
+  ],
+  "focal_cell": "ITPR1",
+  "control_cell": "RYR"
+ },
+ "headline": {
+  "n_loci": 2146,
+  "n_merges": 0,
+  "n_copies": 1841,
+  "n_lesion_rich_copies": 47,
+  "n_genomes": 309,
+  "copies_ITPR1": 357,
+  "multi_ITPR1_above_bar": 75,
+  "copies_ITPR2": 279,
+  "multi_ITPR2_above_bar": 6,
+  "copies_ITPR3": 290,
+  "multi_ITPR3_above_bar": 4,
+  "copies_RYR": 915,
+  "multi_RYR_above_bar": 187,
+  "n_above_bar": 189,
+  "paralogon_primary": {
+   "ITPR1_vs_ITPR2": {
+    "class": "ITPR_vs_ITPR",
+    "links": 0,
+    "null_mean": 0.0167,
+    "p": 1.0,
+    "q_stratum": 1.0
+   },
+   "ITPR1_vs_ITPR3": {
+    "class": "ITPR_vs_ITPR",
+    "links": 1,
+    "null_mean": 0.0185,
+    "p": 0.0127987,
+    "q_stratum": 0.0959902
+   },
+   "ITPR1_vs_RYR1": {
+    "class": "ITPR_vs_RYR (cross-family)",
+    "links": 0,
+    "null_mean": 0.013,
+    "p": 1.0,
+    "q_stratum": 1.0
+   },
+   "ITPR1_vs_RYR2": {
+    "class": "ITPR_vs_RYR (cross-family)",
+    "links": 0,
+    "null_mean": 0.0208,
+    "p": 1.0,
+    "q_stratum": 1.0
+   },
+   "ITPR1_vs_RYR3": {
+    "class": "ITPR_vs_RYR (cross-family)",
+    "links": 0,
+    "null_mean": 0.0165,
+    "p": 1.0,
+    "q_stratum": 1.0
+   },
+   "ITPR2_vs_ITPR3": {
+    "class": "ITPR_vs_ITPR",
+    "links": 0,
+    "null_mean": 0.0065,
+    "p": 1.0,
+    "q_stratum": 1.0
+   },
+   "ITPR2_vs_RYR1": {
+    "class": "ITPR_vs_RYR (cross-family)",
+    "links": 0,
+    "null_mean": 0.0045,
+    "p": 1.0,
+    "q_stratum": 1.0
+   },
+   "ITPR2_vs_RYR2": {
+    "class": "ITPR_vs_RYR (cross-family)",
+    "links": 0,
+    "null_mean": 0.0108,
+    "p": 1.0,
+    "q_stratum": 1.0
+   },
+   "ITPR2_vs_RYR3": {
+    "class": "ITPR_vs_RYR (cross-family)",
+    "links": 0,
+    "null_mean": 0.0042,
+    "p": 1.0,
+    "q_stratum": 1.0
+   },
+   "ITPR3_vs_RYR1": {
+    "class": "ITPR_vs_RYR (cross-family)",
+    "links": 0,
+    "null_mean": 0.0116,
+    "p": 1.0,
+    "q_stratum": 1.0
+   },
+   "ITPR3_vs_RYR2": {
+    "class": "ITPR_vs_RYR (cross-family)",
+    "links": 0,
+    "null_mean": 0.0146,
+    "p": 1.0,
+    "q_stratum": 1.0
+   },
+   "ITPR3_vs_RYR3": {
+    "class": "ITPR_vs_RYR (cross-family)",
+    "links": 0,
+    "null_mean": 0.0089,
+    "p": 1.0,
+    "q_stratum": 1.0
+   },
+   "RYR1_vs_RYR2": {
+    "class": "RYR_vs_RYR (positive control)",
+    "links": 0,
+    "null_mean": 0.0089,
+    "p": 1.0,
+    "q_stratum": 1.0
+   },
+   "RYR1_vs_RYR3": {
+    "class": "RYR_vs_RYR (positive control)",
+    "links": 0,
+    "null_mean": 0.0044,
+    "p": 1.0,
+    "q_stratum": 1.0
+   },
+   "RYR2_vs_RYR3": {
+    "class": "RYR_vs_RYR (positive control)",
+    "links": 1,
+    "null_mean": 0.0064,
+    "p": 0.00529947,
+    "q_stratum": 0.079492
+   }
+  },
+  "pooled_primary": {
+   "ITPR": {
+    "links": 1,
+    "null_mean": 0.06,
+    "p": 0.0389922
+   },
+   "RYR": {
+    "links": 1,
+    "null_mean": 0.0224,
+    "p": 0.0207958
+   }
+  },
+  "itpr_links": [
+   [
+    "BHLHE40",
+    "BHLHE41",
+    "Opisthokonta"
+   ],
+   [
+    "GRM7",
+    "GRM4",
+    "Vertebrata"
+   ]
+  ],
+  "itpr_links_2R": [
+   [
+    "GRM7",
+    "GRM4",
+    "Vertebrata"
+   ]
+  ],
+  "replication": {
+   "ITPR1_vs_ITPR2": {
+    "n": 175,
+    "hit": 141,
+    "frac": 0.8057,
+    "hit_2R": 2,
+    "frac_2R": 0.0114,
+    "classes": 10,
+    "null_frac": 0.0258,
+    "p": 4.91092e-118
+   },
+   "ITPR1_vs_ITPR3": {
+    "n": 152,
+    "hit": 89,
+    "frac": 0.5855,
+    "hit_2R": 84,
+    "frac_2R": 0.5526,
+    "classes": 9,
+    "null_frac": 0.0258,
+    "p": 9.38617e-66
+   },
+   "ITPR2_vs_ITPR3": {
+    "n": 149,
+    "hit": 4,
+    "frac": 0.0268,
+    "hit_2R": 3,
+    "frac_2R": 0.0201,
+    "classes": 3,
+    "null_frac": 0.0258,
+    "p": 0.553597
+   }
+  },
+  "replication_null": {
+   "pairs": 932,
+   "with_link": 24
+  },
+  "teleost_groups": {
+   "pre_3R_outgroup": {
+    "n": 4,
+    "ITPR1": 1,
+    "ITPR2": 1,
+    "ITPR3": 1,
+    "RYR": 3,
+    "frac_ITPR1_multi": 0.0
+   },
+   "teleost": {
+    "n": 73,
+    "ITPR1": 1.973,
+    "ITPR2": 1.041,
+    "ITPR3": 1.041,
+    "RYR": 5.822,
+    "frac_ITPR1_multi": 0.9726
+   },
+   "extra_wgd": {
+    "n": 2,
+    "ITPR1": 3,
+    "ITPR2": 2,
+    "ITPR3": 2,
+    "RYR": 8,
+    "frac_ITPR1_multi": 1.0
+   }
+  },
+  "dispersion": {
+   "group": "teleost",
+   "cell": "ITPR1",
+   "n_two_copy_genomes": "71",
+   "n_different_contigs": "20",
+   "n_same_contig": "51",
+   "frac_different": "0.2817",
+   "median_gap_bp_same_contig": "8870578",
+   "min_gap_bp": "535374",
+   "note": "dispersed on one chromosome"
+  },
+  "dcs": {
+   "n_pairs": 49,
+   "both_tetrapod": 46,
+   "disjoint_tetrapod": 45,
+   "both_fish": 47,
+   "disjoint_fish": 46
+  },
+  "r3": {
+   "cell": "ITPR1",
+   "two_copy_genomes_flanked": "49",
+   "anchors": "6",
+   "anchor_pairs_compared": "15",
+   "assignments_compared": "705",
+   "assignments_agreeing": "705",
+   "fraction_agreeing": "1.0",
+   "p_binomial_two_sided": "1.18818e-212",
+   "min_anchor_pair_agreement": "1.0",
+   "bait_concordance_reference": "Hoplias malabaricus",
+   "bait_concordance_n": "6",
+   "bait_concordance_agree": "6",
+   "bait_concordance_p": "0.03125"
+  },
+  "r3_notes": {
+   "cell": "the duplicated paralog cell under test",
+   "two_copy_genomes_flanked": "genomes with both ITPR1 copies flanked at >=5 symbols",
+   "anchors": "Nibea albiflora (order unassigned); Hoplias malabaricus (Characiformes); Electrophorus electricus (Gymnotiformes); Danio rerio (Cypriniformes); Chanos chanos (Gonorynchiformes); Gadus morhua (Gadiformes)",
+   "anchor_pairs_compared": "",
+   "assignments_compared": "genome x anchor-pair calls",
+   "assignments_agreeing": "",
+   "fraction_agreeing": "0.5 under independent lineage-specific duplications",
+   "p_binomial_two_sided": "",
+   "min_anchor_pair_agreement": "",
+   "bait_concordance_reference": "first anchor whose own two copies won different baits",
+   "bait_concordance_n": "genomes where the two copies won different baits",
+   "bait_concordance_agree": "synteny block agrees with the sequence (bait) call",
+   "bait_concordance_p": "independent evidence, same partition"
+  }
+ },
+ "sha256": {
+  "loci.tsv": "af29d031109d6bcf3d658d6351bd3b864b4c9603efda262998a687275eab3d7b",
+  "merges.tsv": "66e6cb9e34752d7c4a728c03c8c2e9eb0394b2543923cea19d08d0cc2bb0dade",
+  "copy_number.tsv": "b5c5bf43d4ea5404d89b84521392b9f1bb272ce31eb41b31749272092fab8506",
+  "copy_number_wide.tsv": "03bc36bc6ad6efaae5d09a89cca79c4fd5958d6b1659a6ff9f0def4a2570fc27",
+  "copy_number_by_clade.tsv": "a058b586feefd9e21b2a6370b0e23eafd3e4c85a6c2e115e0c6eb9544ba1a565",
+  "copy_sensitivity.tsv": "ca2db40b030700e3bca396ab111f06bc3c601cea944862edc445cfb1fad4f49c",
+  "expansions.tsv": "90a1a0c7d7a0fec7ed4602ac6693f5f4d18ca9f6d209b8fd3f58c66f936cce01",
+  "paralogy_map.tsv": "43b40e138e69aeeb67a35e43efcf2ba8406452173f0b60fffc6cb9665a8d973e",
+  "symbol_to_ensembl.tsv": "ae5fb3d92cddd87da6a5fce5327c7d7a79ca9aa2f81fde8ba7a40c13bdb4f27b",
+  "windows.tsv": "32234cdc4d9cb1296558e9785da5cae4362f0b1f3ecc64ca5982a9deedb73130",
+  "paralogy_links.tsv": "f0d8ba17b3e8bb02cdb3bc05622969bd5bd0d10cb19195781a6049409edcc3b5",
+  "paralogon_test.tsv": "2aa6fc4149b6043b1122be1a49f1d41d22f54bb4be687f40d462dad1bce0e084",
+  "paralogon_blocks.tsv": "ef2c9c26d727559e2873c6e1c927b95838aef5376d14ea4bcc7e15c46030a614",
+  "pooled_test.tsv": "51bbdd7567c6dbd2edc7728436f53deaf67b129f6296af35e41f69083670fc7d",
+  "quartet_test.tsv": "8c14e40c77edeb2be00e700e749ae469dbca7864ab4c1487032cf1faf2471f28",
+  "paralogon_species.tsv": "d3a52ef5fe8e935f34d81df69f2d350ec827b70e7fb0fc5b520d60015d0c2d0b",
+  "paralogon_species_summary.tsv": "17b9289a4a5500ac7300907ef685fe5b1664a745f5a82899a78aa784b07acc06",
+  "replication_null.tsv": "8b6bf3e59c049f535f1f07fdf2a90bd3e6fe2432badcf2c0cc72513d467098e4",
+  "teleost_copies.tsv": "5541dba4e6cda86b4521a8e7e9cf2feb0a374728bc487e040e0de14efa5b7c90",
+  "dispersion.tsv": "5d8a0c256f1578324391e422da6a48dc2217c721f25e802c63dde9e953994afe",
+  "dcs_flanks.tsv": "cd07f12f1b6b273d35a44584438041d178c39fd842f7730aa2d2f996f38c4548",
+  "dcs_test.tsv": "0c5dbdfcf0761e5ca2464d2c8a9dd2b12ec2af753d204608e050c79f87b64e03",
+  "r3_summary.tsv": "e4bbe548433f2d252a69ae06155e43b96730561c188e63e85860c1eda3831d61",
+  "block_assignments.tsv": "db0b3b45b4e30638b62b6c688672720df78da46b231ca8ffecfec6d041e59ead"
+ }
+}

@@ -1,0 +1,50 @@
+accession	organism	vorder	cell	copy_a	copy_b	n_keys_a	n_keys_b	j_a_vs_b	shared_tetrapod_a	shared_tetrapod_b	both_share_tetrapod	tetrapod_partition_disjoint	shared_fish_a	shared_fish_b	both_share_fish	fish_partition_disjoint	tetrapod_symbols_a	tetrapod_symbols_b
+GCA_014281875.1	Nibea albiflora		ITPR1	Nibea_albiflora|GCA_014281875.1|ITPR1.1	Nibea_albiflora|GCA_014281875.1|ITPR1.0	17	19	0.0	1	1	1	1	4	1	1	1	LRRN1	SUMF1
+GCA_048569125.1	Diretmus argenteus	Trachichthyiformes	ITPR1	Diretmus_argenteus|GCA_048569125.1|ITPR1.0	Diretmus_argenteus|GCA_048569125.1|ITPR1.1	9	16	0.0	1	3	1	1	1	5	1	1	SUMF1	BHLHE40;LRRN1;TRNT1
+GCA_056783565.1	Hiodon alosoides	Hiodontiformes	ITPR1	Hiodon_alosoides|GCA_056783565.1|ITPR1.0	Hiodon_alosoides|GCA_056783565.1|ITPR1.1	13	11	0.0909	5	2	1	0	9	7	1	0	ARL8B;CRBN;EDEM1;LRRN1;SUMF1	ARL8B;BHLHE40
+GCF_011004845.1	Esox lucius	Esociformes	ITPR1	Esox_lucius|GCF_011004845.1|ITPR1.1	Esox_lucius|GCF_011004845.1|ITPR1.0	18	9	0.0	4	1	1	1	9	1	1	1	ARL8B;BHLHE40;LRRN1;TRNT1	SUMF1
+GCF_013368585.1	Megalops cyprinoides	Elopiformes	ITPR1	Megalops_cyprinoides|GCF_013368585.1|ITPR1.1	Megalops_cyprinoides|GCF_013368585.1|ITPR1.0	12	7	0.0	3	1	1	1	8	3	1	1	ARL8B;BHLHE40;TRNT1	SUMF1
+GCF_016859285.1	Xiphias gladius	Istiophoriformes	ITPR1	Xiphias_gladius|GCF_016859285.1|ITPR1.0	Xiphias_gladius|GCF_016859285.1|ITPR1.1	10	14	0.0	1	4	1	1	1	7	1	1	SUMF1	ARL8B;BHLHE40;LRRN1;TRNT1
+GCF_018320785.1	Cheilinus undulatus	Labriformes	ITPR1	Cheilinus_undulatus|GCF_018320785.1|ITPR1.1	Cheilinus_undulatus|GCF_018320785.1|ITPR1.0	16	9	0.0	4	1	1	1	8	1	1	1	ARL8B;BHLHE40;LRRN1;TRNT1	SUMF1
+GCF_019740435.1	Gambusia affinis	Cyprinodontiformes	ITPR1	Gambusia_affinis|GCF_019740435.1|ITPR1.1	Gambusia_affinis|GCF_019740435.1|ITPR1.0	7	9	0.0	2	1	1	1	3	1	1	1	LRRN1;TRNT1	SUMF1
+GCF_021292245.1	Micropterus dolomieu	Centrarchiformes	ITPR1	Micropterus_dolomieu|GCF_021292245.1|ITPR1.0	Micropterus_dolomieu|GCF_021292245.1|ITPR1.1	7	15	0.0	1	3	1	1	1	7	1	1	SUMF1	BHLHE40;LRRN1;TRNT1
+GCF_027409825.1	Scomber japonicus	Scombriformes	ITPR1	Scomber_japonicus|GCF_027409825.1|ITPR1.1	Scomber_japonicus|GCF_027409825.1|ITPR1.0	18	9	0.0	2	1	1	1	6	1	1	1	ARL8B;BHLHE40	SUMF1
+GCF_027579695.1	Neoarius graeffei	Siluriformes	ITPR1	Neoarius_graeffei|GCF_027579695.1|ITPR1.0	Neoarius_graeffei|GCF_027579695.1|ITPR1.1	9	16	0.0	1	0	0	0	1	5	1	1	SUMF1	
+GCF_029633855.1	Hoplias malabaricus	Characiformes	ITPR1	Hoplias_malabaricus|GCF_029633855.1|ITPR1.0	Hoplias_malabaricus|GCF_029633855.1|ITPR1.1	17	17	0.0	1	2	1	1	1	7	1	1	SUMF1	ARL8B;BHLHE40
+GCF_029633865.1	Lampris incognitus	Lampriformes	ITPR1	Lampris_incognitus|GCF_029633865.1|ITPR1.0	Lampris_incognitus|GCF_029633865.1|ITPR1.1	10	14	0.0	0	3	0	0	0	8	0	0		BHLHE40;LRRN1;TRNT1
+GCF_033026475.1	Channa argus	Anabantiformes	ITPR1	Channa_argus|GCF_033026475.1|ITPR1.1	Channa_argus|GCF_033026475.1|ITPR1.0	18	8	0.0	4	1	1	1	10	1	1	1	ARL8B;BHLHE40;LRRN1;TRNT1	SUMF1
+GCF_033807715.1	Cololabis saira	Beloniformes	ITPR1	Cololabis_saira|GCF_033807715.1|ITPR1.0	Cololabis_saira|GCF_033807715.1|ITPR1.1	9	12	0.0	1	2	1	1	1	3	1	1	SUMF1	LRRN1;TRNT1
+GCF_033978785.1	Entelurus aequoreus	Syngnathiformes	ITPR1	Entelurus_aequoreus|GCF_033978785.1|ITPR1.1	Entelurus_aequoreus|GCF_033978785.1|ITPR1.0	16	7	0.0	4	1	1	1	9	1	1	1	ARL8B;BHLHE40;LRRN1;TRNT1	SUMF1
+GCF_034702125.1	Engraulis encrasicolus	Clupeiformes	ITPR1	Engraulis_encrasicolus|GCF_034702125.1|ITPR1.0	Engraulis_encrasicolus|GCF_034702125.1|ITPR1.1	11	16	0.0	1	3	1	1	1	5	1	1	SUMF1	BHLHE40;LRRN1;TRNT1
+GCF_039877785.1	Chaetodon trifascialis	Chaetodontiformes	ITPR1	Chaetodon_trifascialis|GCF_039877785.1|ITPR1.0	Chaetodon_trifascialis|GCF_039877785.1|ITPR1.1	10	17	0.0	1	4	1	1	1	9	1	1	SUMF1	ARL8B;BHLHE40;LRRN1;TRNT1
+GCF_040054535.1	Antennarius striatus	Lophiiformes	ITPR1	Antennarius_striatus|GCF_040054535.1|ITPR1.0	Antennarius_striatus|GCF_040054535.1|ITPR1.1	9	16	0.0	1	4	1	1	1	9	1	1	SUMF1	ARL8B;BHLHE40;LRRN1;TRNT1
+GCF_041902795.1	Electrophorus electricus	Gymnotiformes	ITPR1	Electrophorus_electricus|GCF_041902795.1|ITPR1.0	Electrophorus_electricus|GCF_041902795.1|ITPR1.1	18	17	0.0	1	2	1	1	1	7	1	1	SUMF1	ARL8B;BHLHE40
+GCF_042242105.1	Pempheris klunzingeri	Acropomatiformes	ITPR1	Pempheris_klunzingeri|GCF_042242105.1|ITPR1.0	Pempheris_klunzingeri|GCF_042242105.1|ITPR1.1	9	9	0.0	1	2	1	1	1	4	1	1	SUMF1	LRRN1;TRNT1
+GCF_043380555.1	Nothobranchius furzeri	Cyprinodontiformes	ITPR1	Nothobranchius_furzeri|GCF_043380555.1|ITPR1.1	Nothobranchius_furzeri|GCF_043380555.1|ITPR1.0	12	10	0.0	3	1	1	1	5	1	1	1	BHLHE40;LRRN1;TRNT1	SUMF1
+GCF_045865225.1	Trachurus japonicus	Carangiformes	ITPR1	Trachurus_japonicus|GCF_045865225.1|ITPR1.0	Trachurus_japonicus|GCF_045865225.1|ITPR1.1	8	17	0.0	1	4	1	1	1	10	1	1	SUMF1	ARL8B;BHLHE40;LRRN1;TRNT1
+GCF_046128005.1	Genypterus blacodes	Ophidiiformes	ITPR1	Genypterus_blacodes|GCF_046128005.1|ITPR1.1	Genypterus_blacodes|GCF_046128005.1|ITPR1.0	11	10	0.0	1	1	1	1	2	1	1	1	BHLHE40	SUMF1
+GCF_048594095.1	Paramormyrops kingsleyae	Osteoglossiformes	ITPR1	Paramormyrops_kingsleyae|GCF_048594095.1|ITPR1.0	Paramormyrops_kingsleyae|GCF_048594095.1|ITPR1.1	11	11	0.0	5	2	1	1	9	7	1	1	ARL8B;CRBN;EDEM1;LRRN1;SUMF1	BHLHE40;TRNT1
+GCF_052040795.1	Danio rerio	Cypriniformes	ITPR1	Danio_rerio|GCF_052040795.1|ITPR1.0	Danio_rerio|GCF_052040795.1|ITPR1.1	18	16	0.0	1	2	1	1	1	7	1	1	SUMF1	ARL8B;BHLHE40
+GCF_054491055.1	Hypomesus nipponensis	Osmeriformes	ITPR1	Hypomesus_nipponensis|GCF_054491055.1|ITPR1.0	Hypomesus_nipponensis|GCF_054491055.1|ITPR1.1	10	16	0.0	1	4	1	1	1	10	1	1	SUMF1	ARL8B;BHLHE40;LRRN1;TRNT1
+GCF_056507025.1	Lutjanus erythropterus	Lutjaniformes	ITPR1	Lutjanus_erythropterus|GCF_056507025.1|ITPR1.1	Lutjanus_erythropterus|GCF_056507025.1|ITPR1.0	15	9	0.0	3	1	1	1	8	1	1	1	BHLHE40;LRRN1;TRNT1	SUMF1
+GCF_057381845.1	Rhamphochromis longiceps	Cichliformes	ITPR1	Rhamphochromis_longiceps|GCF_057381845.1|ITPR1.1	Rhamphochromis_longiceps|GCF_057381845.1|ITPR1.0	7	6	0.0	3	0	0	0	5	0	0	0	BHLHE40;LRRN1;TRNT1	
+GCF_900324485.3	Mastacembelus armatus	Synbranchiformes	ITPR1	Mastacembelus_armatus|GCF_900324485.3|ITPR1.1	Mastacembelus_armatus|GCF_900324485.3|ITPR1.0	17	7	0.0	4	1	1	1	10	1	1	1	ARL8B;BHLHE40;LRRN1;TRNT1	SUMF1
+GCF_900634775.2	Gouania willdenowi	Blenniiformes	ITPR1	Gouania_willdenowi|GCF_900634775.2|ITPR1.0	Gouania_willdenowi|GCF_900634775.2|ITPR1.1	8	17	0.0	1	2	1	1	1	3	1	1	SUMF1	LRRN1;TRNT1
+GCF_900880675.2	Sparus aurata	Spariformes	ITPR1	Sparus_aurata|GCF_900880675.2|ITPR1.0	Sparus_aurata|GCF_900880675.2|ITPR1.1	9	15	0.0	1	4	1	1	1	9	1	1	SUMF1	ARL8B;BHLHE40;LRRN1;TRNT1
+GCF_901000725.3	Takifugu rubripes	Tetraodontiformes	ITPR1	Takifugu_rubripes|GCF_901000725.3|ITPR1.0	Takifugu_rubripes|GCF_901000725.3|ITPR1.1	7	16	0.0	1	3	1	1	1	7	1	1	SUMF1	ARL8B;CNTN4;LRRN1
+GCF_902148855.1	Sphaeramia orbicularis	Kurtiformes	ITPR1	Sphaeramia_orbicularis|GCF_902148855.1|ITPR1.1	Sphaeramia_orbicularis|GCF_902148855.1|ITPR1.0	11	9	0.0	3	1	1	1	5	1	1	1	BHLHE40;LRRN1;TRNT1	SUMF1
+GCF_902150065.1	Myripristis murdjan	Holocentriformes	ITPR1	Myripristis_murdjan|GCF_902150065.1|ITPR1.0	Myripristis_murdjan|GCF_902150065.1|ITPR1.1	8	17	0.0	1	4	1	1	1	10	1	1	SUMF1	ARL8B;BHLHE40;LRRN1;TRNT1
+GCF_902167405.1	Gadus morhua	Gadiformes	ITPR1	Gadus_morhua|GCF_902167405.1|ITPR1.0	Gadus_morhua|GCF_902167405.1|ITPR1.1	13	16	0.0	1	3	1	1	1	8	1	1	SUMF1	ARL8B;BHLHE40;LRRN1
+GCF_902362185.1	Chanos chanos	Gonorynchiformes	ITPR1	Chanos_chanos|GCF_902362185.1|ITPR1.1	Chanos_chanos|GCF_902362185.1|ITPR1.0	16	15	0.0	3	1	1	1	9	1	1	1	BHLHE40;LRRN1;TRNT1	SUMF1
+GCF_902500255.1	Thalassophryne amazonica	Batrachoidiformes	ITPR1	Thalassophryne_amazonica|GCF_902500255.1|ITPR1.0	Thalassophryne_amazonica|GCF_902500255.1|ITPR1.1	8	12	0.0	2	2	1	1	2	3	1	1	BHLHE40;SUMF1	LRRN1;TRNT1
+GCF_933228915.1	Telmatherina bonti	Atheriniformes	ITPR1	Telmatherina_bonti|GCF_933228915.1|ITPR1.1	Telmatherina_bonti|GCF_933228915.1|ITPR1.0	11	8	0.0	4	1	1	1	9	1	1	1	ARL8B;BHLHE40;LRRN1;TRNT1	SUMF1
+GCF_949152265.1	Phoxinus phoxinus	Cypriniformes	ITPR1	Phoxinus_phoxinus|GCF_949152265.1|ITPR1.0	Phoxinus_phoxinus|GCF_949152265.1|ITPR1.1	18	16	0.0	1	2	1	1	1	7	1	1	SUMF1	ARL8B;BHLHE40
+GCF_949987555.1	Borostomias antarcticus	Stomiiformes	ITPR1	Borostomias_antarcticus|GCF_949987555.1|ITPR1.1	Borostomias_antarcticus|GCF_949987555.1|ITPR1.0	18	13	0.0	4	1	1	1	10	1	1	1	ARL8B;BHLHE40;LRRN1;TRNT1	SUMF1
+GCF_949987685.1	Ammodytes marinus	Uranoscopiformes	ITPR1	Ammodytes_marinus|GCF_949987685.1|ITPR1.1	Ammodytes_marinus|GCF_949987685.1|ITPR1.0	14	8	0.0	1	1	1	1	6	1	1	1	BHLHE40	SUMF1
+GCF_951799975.1	Gobius niger	Gobiiformes	ITPR1	Gobius_niger|GCF_951799975.1|ITPR1.1	Gobius_niger|GCF_951799975.1|ITPR1.0	17	7	0.0	4	1	1	1	10	1	1	1	ARL8B;BHLHE40;LRRN1;TRNT1	SUMF1
+GCF_960531495.1	Zeus faber	Zeiformes	ITPR1	Zeus_faber|GCF_960531495.1|ITPR1.1	Zeus_faber|GCF_960531495.1|ITPR1.0	18	8	0.0	3	1	1	1	4	1	1	1	BHLHE40;LRRN1;TRNT1	SUMF1
+GCF_963457635.1	Microchirus variegatus	Pleuronectiformes	ITPR1	Microchirus_variegatus|GCF_963457635.1|ITPR1.0	Microchirus_variegatus|GCF_963457635.1|ITPR1.1	9	17	0.0	1	3	1	1	1	5	1	1	SUMF1	BHLHE40;LRRN1;TRNT1
+GCF_963514085.1	Chelon labrosus	Mugiliformes	ITPR1	Chelon_labrosus|GCF_963514085.1|ITPR1.1	Chelon_labrosus|GCF_963514085.1|ITPR1.0	10	10	0.0	3	1	1	1	5	1	1	1	BHLHE40;LRRN1;TRNT1	SUMF1
+GCF_963921795.1	Nannobrachium achirus	Myctophiformes	ITPR1	Nannobrachium_achirus|GCF_963921795.1|ITPR1.0	Nannobrachium_achirus|GCF_963921795.1|ITPR1.1	10	16	0.0	1	4	1	1	3	10	1	1	CRBN	ARL8B;BHLHE40;LRRN1;TRNT1
+GCF_963989245.1	Nansenia antarctica	Argentiniformes	ITPR1	Nansenia_antarctica|GCF_963989245.1|ITPR1.1	Nansenia_antarctica|GCF_963989245.1|ITPR1.0	10	8	0.0	2	1	1	1	7	1	1	1	ARL8B;BHLHE40	SUMF1
+GCF_964638095.1	Poromitra crassiceps	Beryciformes	ITPR1	Poromitra_crassiceps|GCF_964638095.1|ITPR1.1	Poromitra_crassiceps|GCF_964638095.1|ITPR1.0	16	10	0.0	3	1	1	1	9	1	1	1	ARL8B;BHLHE40;LRRN1	SUMF1

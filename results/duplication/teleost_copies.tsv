@@ -1,0 +1,90 @@
+accession	organism	vclass	vorder	group	contig_spans_gene	ITPR1_copies	ITPR2_copies	ITPR3_copies	RYR_copies	ITPR1_contigs	ITPR1_same_contig
+GCF_017654505.1	Polyodon spathula	Actinopteri	Acipenseriformes	extra_wgd	1	2	2	2	6	NC_054549.1;NC_054556.1	0
+GCF_965601325.1	Salmo salar	Actinopteri	Salmoniformes	extra_wgd	1	4	2	2	10	NC_138302.1;NC_138312.1	1
+GCF_036373705.1	Amia ocellicauda	Actinopteri	Amiiformes	pre_3R_outgroup	1	1	1	1	3	NC_089852.1	0
+GCA_043380575.1	Atractosteus spatula	Actinopteri	Semionotiformes	pre_3R_outgroup	1	1	1	1	3	CM092437.1	0
+GCF_900747795.2	Erpetoichthys calabaricus	Cladistia	Polypteriformes	pre_3R_outgroup	1	1	1	1	3	NC_041411.2	0
+GCF_040954835.1	Lepisosteus oculatus	Actinopteri	Semionotiformes	pre_3R_outgroup	1	1	1	1	3	NC_090699.1	0
+GCA_980438365.1	Acanthurus tractus	Actinopteri	Acanthuriformes	teleost	1	2	1	1	6	OZ413072.1	1
+GCA_056783665.1	Albula glossodonta	Actinopteri	Albuliformes	teleost	1	2	1	1	5	CM165712.1;CM165714.1	0
+GCA_022829145.1	Albula goreensis	Actinopteri	Albuliformes	teleost	1	2	1	1	5	CM040752.1;CM040754.1	0
+GCA_029706075.1	Aldrovandia affinis	Actinopteri	Notacanthiformes	teleost	1	2	1	1	5	JAINUG010000031.1;JAINUG010000036.1	0
+GCA_056824585.1	Alepocephalus tenebrosus	Actinopteri	Alepocephaliformes	teleost	1	2	1	1	6	CM166150.1	1
+GCA_046255725.1	Amblyopsis spelaea	Actinopteri	Percopsiformes	teleost	1	2	1	1	6	CM101355.1	1
+GCA_040091285.1	Ameca splendens	Actinopteri	Cyprinodontiformes	teleost	0	0	0	0	1		0
+GCF_949987685.1	Ammodytes marinus	Actinopteri	Uranoscopiformes	teleost	1	2	1	1	6	NC_137233.1	1
+GCF_040054535.1	Antennarius striatus	Actinopteri	Lophiiformes	teleost	1	2	1	1	6	NC_090780.1	1
+GCA_017639675.1	Aplochiton taeniatus	Actinopteri	Galaxiiformes	teleost	1	1	1	1	6	CM030173.1	0
+GCA_054883375.1	Arapaima gigas	Actinopteri	Osteoglossiformes	teleost	1	2	1	1	4	CM142465.1	1
+GCA_036250305.1	Ataeniobius toweri	Actinopteri	Cyprinodontiformes	teleost	0	0	0	1	3		0
+GCF_949987555.1	Borostomias antarcticus	Actinopteri	Stomiiformes	teleost	1	2	1	1	6	NC_140240.1;NC_140244.1	0
+GCA_965364685.1	Capros aper	Actinopteri	Caproiformes	teleost	1	2	1	1	6	OZ263291.1	1
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	Perciformes	teleost	1	2	1	1	6	CM043789.1	1
+GCF_039877785.1	Chaetodon trifascialis	Actinopteri	Chaetodontiformes	teleost	1	2	1	1	6	NC_092058.1	1
+GCF_033026475.1	Channa argus	Actinopteri	Anabantiformes	teleost	1	2	1	1	6	NC_090201.1	1
+GCF_902362185.1	Chanos chanos	Actinopteri	Gonorynchiformes	teleost	1	2	1	1	6	NC_044500.1	1
+GCA_036250325.1	Characodon lateralis	Actinopteri	Cyprinodontiformes	teleost	0	0	1	0	0		0
+GCF_018320785.1	Cheilinus undulatus	Actinopteri	Labriformes	teleost	1	2	1	1	6	NC_054867.1	1
+GCF_963514085.1	Chelon labrosus	Actinopteri	Mugiliformes	teleost	1	2	1	1	6	NC_140340.1	1
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	Cypriniformes	teleost	1	2	1	1	6	CM070012.1;CM070017.1	0
+GCF_033807715.1	Cololabis saira	Actinopteri	Beloniformes	teleost	1	2	1	1	6	NC_084594.1	1
+GCF_963514075.1	Conger conger	Actinopteri	Anguilliformes	teleost	1	2	1	1	5	NC_083769.1;NC_083773.1	0
+GCF_052040795.1	Danio rerio	Actinopteri	Cypriniformes	teleost	1	2	1	1	6	NC_141026.1;NC_141031.1	0
+GCA_054883175.1	Datnioides polota	Actinopteri	Lobotiformes	teleost	1	2	1	1	6	CM142224.1	1
+GCA_048569125.1	Diretmus argenteus	Actinopteri	Trachichthyiformes	teleost	1	2	2	1	6	CM109045.1	1
+GCA_031216635.1	Dissostichus eleginoides	Actinopteri	Perciformes	teleost	1	2	1	1	6	CM062265.1	1
+GCA_011823955.1	Dissostichus mawsoni	Actinopteri	Perciformes	teleost	1	2	1	1	6	JAAKFY010000006.1	1
+GCF_041902795.1	Electrophorus electricus	Actinopteri	Gymnotiformes	teleost	1	2	1	1	5	NC_137503.1;NC_137518.1	0
+GCF_034702125.1	Engraulis encrasicolus	Actinopteri	Clupeiformes	teleost	1	2	1	1	6	NC_085870.1	1
+GCF_033978785.1	Entelurus aequoreus	Actinopteri	Syngnathiformes	teleost	1	2	1	1	7	NC_084731.1	1
+GCF_011004845.1	Esox lucius	Actinopteri	Esociformes	teleost	1	2	1	1	6	NC_047585.1	1
+GCF_902167405.1	Gadus morhua	Actinopteri	Gadiformes	teleost	1	2	1	1	6	NC_044060.1	1
+GCF_019740435.1	Gambusia affinis	Actinopteri	Cyprinodontiformes	teleost	1	2	1	1	6	NC_057874.1	1
+GCF_046128005.1	Genypterus blacodes	Actinopteri	Ophidiiformes	teleost	1	2	1	1	6	NW_027466831.1;NW_027466880.1	0
+GCF_951799975.1	Gobius niger	Actinopteri	Gobiiformes	teleost	1	2	1	1	5	NC_136871.1	1
+GCA_040091325.1	Goodea atripinnis	Actinopteri	Cyprinodontiformes	teleost	0	0	0	0	1		0
+GCF_900634775.2	Gouania willdenowi	Actinopteri	Blenniiformes	teleost	1	2	1	1	6	NC_041048.1	1
+GCA_900312595.1	Guentherus altivela	Actinopteri	Ateleopodiformes	teleost	0	0	0	0	0		0
+GCA_056783565.1	Hiodon alosoides	Actinopteri	Hiodontiformes	teleost	1	2	2	1	4	CM165611.1;CM165617.1	0
+GCF_029633855.1	Hoplias malabaricus	Actinopteri	Characiformes	teleost	1	2	1	1	5	NC_089802.1;NC_089804.1	0
+GCF_054491055.1	Hypomesus nipponensis	Actinopteri	Osmeriformes	teleost	1	2	1	1	6	NC_140369.1	1
+GCA_040091305.1	Ilyodon furcidens	Actinopteri	Cyprinodontiformes	teleost	0	0	0	0	0		0
+GCF_029633865.1	Lampris incognitus	Actinopteri	Lampriformes	teleost	1	2	1	1	6	NC_079212.1	1
+GCA_033238685.1	Lates japonicus	Actinopteri		teleost	1	2	1	3	6	BRZM01000050.1;BRZM01000069.1	0
+GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	Lepidogalaxiiformes	teleost	0	0	0	0	0		0
+GCA_050084785.1	Liparis tanakae	Actinopteri	Perciformes	teleost	1	2	1	1	6	CM114425.1	1
+GCF_056507025.1	Lutjanus erythropterus	Actinopteri	Lutjaniformes	teleost	1	2	1	1	6	NC_139318.1	1
+GCF_900324485.3	Mastacembelus armatus	Actinopteri	Synbranchiformes	teleost	1	2	1	1	6	NC_046637.1	1
+GCF_013368585.1	Megalops cyprinoides	Actinopteri	Elopiformes	teleost	1	2	1	1	5	NC_050588.1;NC_050589.1	0
+GCF_963457635.1	Microchirus variegatus	Actinopteri	Pleuronectiformes	teleost	1	2	1	1	6	NC_139805.1;NC_139808.1	0
+GCF_021292245.1	Micropterus dolomieu	Actinopteri	Centrarchiformes	teleost	0	2	1	1	6	NC_060167.1	1
+GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	Gadiformes	teleost	1	2	1	1	6	CM051002.1	1
+GCF_902150065.1	Myripristis murdjan	Actinopteri	Holocentriformes	teleost	1	2	1	1	6	NC_043984.1	1
+GCF_963921795.1	Nannobrachium achirus	Actinopteri	Myctophiformes	teleost	1	2	2	1	6	NC_137815.1	1
+GCF_963989245.1	Nansenia antarctica	Actinopteri	Argentiniformes	teleost	1	2	1	1	6	NC_137685.1;NC_137691.1	0
+GCF_027579695.1	Neoarius graeffei	Actinopteri	Siluriformes	teleost	1	2	1	1	6	NC_083572.1;NC_083594.1	0
+GCA_014281875.1	Nibea albiflora	Actinopteri		teleost	1	2	1	2	6	CM024790.1	1
+GCF_043380555.1	Nothobranchius furzeri	Actinopteri	Cyprinodontiformes	teleost	1	2	1	1	6	NC_091743.1	1
+GCF_963971535.1	Notolepis coatsorum	Actinopteri	Aulopiformes	teleost	1	2	1	1	5	NC_140170.1	1
+GCF_949606895.1	Notothenia rossii	Actinopteri	Perciformes	teleost	1	1	1	1	6	NC_136903.1	0
+GCF_048594095.1	Paramormyrops kingsleyae	Actinopteri	Osteoglossiformes	teleost	1	2	1	1	4	NC_132802.1;NC_132804.1	0
+GCA_984656905.1	Parequula melbournensis	Actinopteri	Gerreiformes	teleost	1	2	1	1	6	OZ479485.1	1
+GCF_042242105.1	Pempheris klunzingeri	Actinopteri	Acropomatiformes	teleost	1	2	1	1	6	NC_092013.1	1
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	Cypriniformes	teleost	1	2	1	1	6	NC_136886.1;NC_136897.1	0
+GCA_058707665.1	Platax teira	Actinopteri	Ephippiformes	teleost	1	2	1	1	6	CM178913.1	1
+GCA_047511595.1	Polymixia lowei	Actinopteri	Polymixiiformes	teleost	1	2	1	1	6	CM105268.1	1
+GCF_964638095.1	Poromitra crassiceps	Actinopteri	Beryciformes	teleost	1	2	1	1	6	NC_139649.1;NC_139650.1	0
+GCA_056506795.1	Pristigenys meyeri	Actinopteri	Priacanthiformes	teleost	1	2	1	1	6	CM151773.1	1
+GCF_057381845.1	Rhamphochromis longiceps	Actinopteri	Cichliformes	teleost	1	2	1	1	7	NC_140561.1	1
+GCF_027409825.1	Scomber japonicus	Actinopteri	Scombriformes	teleost	1	2	1	1	6	NC_070580.1	1
+GCF_900880675.2	Sparus aurata	Actinopteri	Spariformes	teleost	1	2	1	1	6	NC_044192.1	1
+GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	Kurtiformes	teleost	1	2	1	1	6	NC_043961.1	1
+GCA_056824565.1	Stylephorus chordatus	Actinopteri	Stylephoriformes	teleost	1	2	1	1	6	CM166136.1;CM166138.1	0
+GCF_901000725.3	Takifugu rubripes	Actinopteri	Tetraodontiformes	teleost	1	2	1	1	6	NC_042303.1	1
+GCF_933228915.1	Telmatherina bonti	Actinopteri	Atheriniformes	teleost	1	2	1	1	6	NC_136624.1	1
+GCF_902500255.1	Thalassophryne amazonica	Actinopteri	Batrachoidiformes	teleost	1	2	1	1	6	NC_047105.1	1
+GCF_045865225.1	Trachurus japonicus	Actinopteri	Carangiformes	teleost	1	2	1	1	6	NC_140911.1	1
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	Cyprinodontiformes	teleost	0	0	1	0	1		0
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	Cyprinodontiformes	teleost	0	0	0	1	1		0
+GCF_016859285.1	Xiphias gladius	Actinopteri	Istiophoriformes	teleost	1	2	1	1	6	NC_053420.1	1
+GCF_960531495.1	Zeus faber	Actinopteri	Zeiformes	teleost	1	2	1	1	6	NC_137192.1	1

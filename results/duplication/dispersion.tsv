@@ -1,0 +1,7 @@
+group	cell	n_two_copy_genomes	n_different_contigs	n_same_contig	frac_different	median_gap_bp_same_contig	min_gap_bp	note
+extra_wgd	ITPR1	1	1	0	1.0			
+extra_wgd	ITPR2	2	2	0	1.0			
+extra_wgd	ITPR3	2	2	0	1.0			
+teleost	ITPR1	71	20	51	0.2817	8870578	535374	dispersed on one chromosome
+teleost	ITPR2	3	1	2	0.3333	151271	21034	tandem
+teleost	ITPR3	1	1	0	1.0			

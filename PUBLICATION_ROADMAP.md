@@ -112,23 +112,20 @@ Claude: follow this protocol in every session that touches this project.
 Statuses: `pending` / `in_progress` / `completed YYYY-MM-DD`.
 Full step-by-step briefs: `docs/session_briefs.md`.
 
-> **Next session: S16 — duplication history.** S15b is complete:
-> `results/loss_counts/` holds the count, the sensitivity matrix that is
-> the real deliverable, and the report. Read
-> `results/loss_counts/report.md` §10 first — it is written as a hand-off.
-> **Three things S15b puts in front of S16.** (1) Dollo's unpinned gain
-> nodes independently recover S13's placement — ITPR1 at Vertebrata,
-> ITPR2 and ITPR3 at Gnathostomata — which is the 2R question restated:
-> if both WGD rounds predate the cyclostome divergence, ITPR2 and ITPR3
-> should each have a cyclostome co-ortholog and neither does. (2) The
-> 309-genome species tree (`results/loss_dynamics/species_tree_309.nwk`)
-> now exists and places every swept assembly, so a retention-asymmetry
-> statement no longer has to be made on S6's 134 representatives. (3) The
-> per-**locus** copy table S16's brief asks for must be read out of each
-> sweep `summary.json` and not out of the ledger, for the reason S8 and
-> S15a both hit: the ledger holds one row per genome × cell and therefore
-> only the best locus, which is exactly the information a duplication
-> question needs.
+> **Next session: S17 — constraint & function.** S16 is complete:
+> `results/duplication/` holds the copy table, both duplication tests and
+> the report. Read `results/duplication/report.md` §6–§7 first — it is
+> written as a hand-off. **Three things S16 puts in front of S17.** (1) The
+> family's history is now asymmetric in *two* independent ways that both
+> single out ITPR1: its neighbourhood is the one that retained 2R ohnologs
+> with both other paralogs, and it is the only paralog whose 3R duplicate
+> was kept. Whether that is one fact or two is a constraint question, and
+> S9's per-paralog ω estimates are already committed. (2) The RyR trio
+> worked as a positive control at both scales and is available to S17 the
+> same way — S11's structures and S9's selection sets both carry it. (3)
+> `results/duplication/loci.tsv` is the per-**locus** table S8, S15a and now
+> S16 each had to rebuild from the sweep summaries; anything downstream that
+> needs more than one locus per cell should read it rather than the ledger.
 
 | ID | Task (one session each) | Depends | Status | Results (headline) |
 |----|-------------------------|---------|--------|--------------------|
@@ -166,7 +163,7 @@ when several are unblocked at once.
 |----|-------------------------|---------|----------|--------|---------|
 | S15a | **The loss instrument** — the character matrix and the two things it needs before a loss can be counted: the sweep's undecided `tblastn_trace` cells disambiguated by synteny with accuracy measured *in the regime it is used in*, the ORF-integrity screen with the assembly-error confounder controlled, and the 309-genome species tree declared as an input | S5b, S13 | high | completed 2026-09-08 | **No ITPR paralog is absent from any of the 309 vertebrate genomes: 0 of 927 genome × paralog cells reaches the loss state, and in all 189 assemblies contiguous enough to carry the gene the minimum is 3.00 gene-equivalents.** Eight ordered positive-test states, exactly one countable as a loss and that one *reachable* (T8 constructs a contiguous, controlled, empty, spare-free cell and requires `absent`): 783 one locus, 90 truncated by the assembly, 7 partial, **43 reassembled across contigs**, 4 `paralog_unassignable` (D45, the cyclostomes), **0 absent**. **The brief's synteny step is answered by a number, not a call.** S8's caller is 100 % accurate at every key count it acts on (13/13, 14/14, 378/378) — but of 432 rescue regions in the undecided cells, **273 sit on a contig carrying no annotated gene at all**, 151 have too few keys and **8 reach the 4-key floor** (median region: 0 informative neighbours, contig extent 39.9 kb, shorter than the gene). Where it does reach it agrees with the alignment attribution 6/6. **So the instrument is a reference reassembled across contigs**, computed outside every locus the aligner found (the sweep's own cross-paralog exclusion), one reference at a time, with the bar *measured*: the negative is regions the 38-bait panel attributes to a paralog the aligner already placed at a locus in the same genome. Candidates median 0.795 (min 0.174), decoy median 0.030 (max 0.100), **Youden J = 1.00**, bar 0.137 at the gap's midpoint. The first calibration did **not** separate (J = 0.52) until the decoy stopped counting fragments of co-shattered paralogs — those 20 `co_trace` regions (median 0.631) are now committed as their own population and are the measured size of the paralog-attribution problem (**D46**). **The ORF screen's confounder is not contiguity, it is identity** (ρ = −0.397, p = 1.5e-67 against ρ = −0.077 for contig N50): a poorly matched bait buys alignment with frameshifts. Bar = the 0.99 quantile of 847 loci at full coverage above D4's bar whose own annotation names them family (72.3 % carry no lesion at all) → 1.59 lesions/kaa. Paired within-genome sign tests, BH-corrected across four: **ITPR3 carries excess indels against its own genome's identity-matched siblings (39:14, q = 0.0032)**; ITPR2's excess *disappears* under identity matching (q = 0.902 — it was an alignment artefact); ITPR1's deficit does not survive correction (q = 0.052); the RyR control shows no excess (q = 0.090). **D47**. **The tree is an input (D15, second source): NCBI taxonomy over all 309 genomes**, 468 internal nodes, 49 polytomies, built offline from S4's archived `datasets` dumps plus one archived call for 991 ancestor names — and 23 of 23 testable clades of S13's curated tree are recovered, 0 disagreements. 15 constructed negative controls pass before anything is written; 3 mutations applied and all 3 caught. → `results/loss_dynamics/report.md` |
 | S15b | **The loss counts** — Dollo parsimony as the primary count plus Mk fits (ER / ARD / irreversible with gain pinned to zero) over the coding × evidence × branch-length × contiguity sensitivity matrix, and the pseudogene-fossil lesion analysis against a Poisson null | S15a | high | completed 2026-09-08 | **NEXT — and S15a changed what this task is.** With 0 `absent` cells the Dollo count is zero and the *sensitivity matrix is the deliverable*, not a robustness check: what has to be reported is which combinations of coding, evidence bar, branch lengths and contiguity filter **manufacture** a loss. `loss_candidates.tsv` is built for it — every near-miss row names the rule that stopped it. Three further constraints S15a hands forward: (1) the primary coding must be **family-level presence per genome**, with the paralog-resolved matrix as the sensitivity axis, because the `co_trace` population shows per-fragment paralog attribution is unreliable in a shattered assembly; (2) **Mk fits have no variation to fit** — an invariant character has no transition rate and reporting one would report the optimiser's start, so the informative version is the irreversible model on the matrix's non-degenerate cells; (3) **there are no pseudogene fossils** — every locus above the lesion bar is at full coverage with an intact model, so the shared-lesion Poisson test has no dead loci and must be reported with its denominator, with the ITPR3 indel excess (D47) as the lead to follow instead. **The count is 0, and the deliverable is the map of fragility around it.** Dollo places **0 losses** on the family character and 0 on each of ITPR1/2/3, across 927 genome × paralog cells in 309 genomes — and the routine that returns that zero is one that finds a constructed loss on a known edge (T1), merges sister losses into their parent (T2) and bounds a polytomy's losses rather than counting them (T4). **The sensitivity matrix is the result**: 32 settings (8 evidence rungs × D45 on/off × D4 on/off) × 2 codings × 3 branch-length schemes. The **primary family-level coding manufactures a loss in 2 of 32 settings**, worst case 1 genome in 309, and only by refusing everything but a complete locus *and* ignoring D4's bar; the **paralog-resolved coding manufactures one in 18 of 32**, up to 45 loss edges (37 independent). D46 was a judgement in S15a and is a measurement now (**D48**). Moving the reconstruction bar across the whole gap its calibration measured (0.100–0.174) changes **no cell in 927**; turning D45 off alone manufactures the 4 cyclostome losses immediately; tightening the evidence alone manufactures **exactly one** cell in the whole scope — *Bothrops jararaca* ITPR2, reassembled at 0.796 across 6 contigs, the single cell whose presence rests on the reconstruction instrument alone. The branch-length axis changes a Dollo count in **0** of 32 settings and is reported as invariant rather than dropped (D48). **Mk is stated, not fitted**: every likelihood is monotone to its boundary on every model, axis and scheme — measured on a rate grid, with ARD's *gain* axis rising to the edge — so all 12 fits at the operating point are refusals; the 405 fits that are possible are fits to manufactured losses and their rate spans a factor of 495 across the three branch-length schemes. **No pseudogene fossils**: 44 of 1,760 scored loci clear the lesion bar and **44 of 44 are at full coverage**, so the shared-lesion Poisson test has no dead loci and is reported with its denominator. **D47's lead is now a bird result** — ITPR3's indel excess is 25 genomes to 2 in Aves (q = 4.5e-5) and 7 to 6 in Actinopteri (p = 1.0) — but 21 of its 27 pairs are below D4's contiguity bar, so the verdict is `underpowered` and the siblings' deficits are the same comparison read from the other side (**D49**). Bonus: Dollo's unpinned gain nodes land at **Vertebrata** for ITPR1 and **Gnathostomata** for ITPR2/ITPR3 — S13's placement, from an instrument that reads no gene tree. 21 constructed controls pass before anything is written; 3 mutations applied, all 3 caught. → `results/loss_counts/report.md` |
-| S16 | **Duplication history** — are ITPR1/2/3 2R ohnologs; are teleost itpr1a/itpr1b from 3R; copy-number landscape and retention asymmetry | S7, S8, S13 | high | pending | |
+| S16 | **Duplication history** — are ITPR1/2/3 2R ohnologs; are teleost itpr1a/itpr1b from 3R; copy-number landscape and retention asymmetry | S7, S8, S13 | high | completed 2026-09-08 | **Both questions answered, both with the RyR trio as the positive control.** **2R:** the ITPR1 neighbourhood is paralogous to ITPR2's in 141/175 genomes (80.6 %, 10 classes) and to ITPR3's in 89/152 (58.6 %, 9 classes) against **2.6 %** of 932 matched random neighbourhoods in the same genomes (p 4.9e-118, 9.4e-66); ITPR2 vs ITPR3 is 4/149 (2.7 %), exactly the background (p 0.55). Compara's duplication node then splits the two links: `GRM7 ↔ GRM4` (ITPR1–ITPR3) is **Vertebrata** and replicates in 84 genomes, `BHLHE40 ↔ BHLHE41` (ITPR1–ITPR2) is *Opisthokonta* and is **not** a 2R ohnolog pair — which S8 found and could not date. Pooled per family at ±10, ITPR 1 dated link vs null 0.060 (p 0.039) against the RyR control's 1 vs 0.022 (p 0.021): the two families are indistinguishable, so the human single-genome test measures the instrument's ceiling, not a difference. **3R:** ITPR1 alone was doubled and retained — 97.3 % of 73 teleost genomes above D4's bar carry 2 (mean 1.97) against 1.04 for ITPR2 and ITPR3, while the **same genomes carry 5.82 RyRs**; the pre-3R ray-fins (bichir, gar, bowfin) carry 1/1/1 + 3 and the extra-WGD lineages (paddlefish, salmon) 3/2/2 + 8. The two copies partition the ancestral block **disjointly** in 45/49 genomes (tetrapod reference) and 46/49 (pre-3R ray-finned), and all **705 of 705** cross-anchor assignments agree (p 1.2e-212) with 6/6 independent sequence-evidence concordance — one ancestral duplication, not a series. Split-model merge fired on 0 of 2,146 loci; 31 negative controls; the quartet test's 6 circular pairs are flagged in the data and 0 of 59 non-circular pairs are enriched. → `results/duplication/report.md` |
 | S17 | **Constraint & function** — per-site conservation mapped onto the cryo-EM channel; do the SCA15/SCA29/Gillespie, anhidrosis and neuropathy variants sit in the constrained core? Is the IP3-binding core more constrained than the pore? | S6, S9b, S11 | high | pending | |
 | S18 | **Annotation-quality audit** — how often a real ITPR locus is missing, fragmentary, split, unnamed or filed under the wrong paralog (or as a RyR) across RefSeq / Ensembl / UniProt / InterPro; the correction list | S5b, S15 | high | pending | |
 | S19 | **Methods results** — per-method contribution ("what would proteome-only searching have missed?"), assembly contiguity as a confounder of loss claims, bait-panel design sensitivity | S5b, S15, S18 | medium | pending | |
@@ -784,6 +781,34 @@ calibrated node, validated by a `--check` mode before use.
 **D16 — Cross-paralog comparisons are paired within genome.** Intron size,
 assembly quality and annotation completeness all scale with the assembly, so
 an unpaired comparison measures the assemblies.
+
+**D51 — A paralogy link is only 2R evidence if it is dated.** Ensembl
+Compara puts a duplication node on every paralog pair, and S16 reports the
+2R test at three nested vocabularies (`all_levels`, `2R_window`,
+`2R_core`). It changes the answer: of the two flanking families S8 found
+between the ITPR neighbourhoods, `GRM7 ↔ GRM4` is a *Vertebrata*
+duplication and `BHLHE40 ↔ BHLHE41` is *Opisthokonta* — real paralogy whose
+two copies happen to sit beside ITPR1 and ITPR2, and not an ohnolog pair.
+An undated paralogon test cannot tell them apart.
+
+**D52 — The ryanodine receptors are this project's positive control, not
+only its hazard.** D14 exists because RYR1/2/3 carry every ITPR-diagnostic
+domain. S16 uses the same fact the other way: they are a three-member
+vertebrate family of the same age and the same 2R and 3R candidacy, so
+running the identical instrument on them in the same genomes measures what a
+true answer scores here. It is what made S16's weak human 2R signal readable
+(the control scores the same) and what made the teleost ITPR2/ITPR3
+singletons a retention statement rather than a detection failure (the same
+genomes kept all six RyRs). Later tasks should reach for the control before
+inventing one.
+
+**D53 — A block selected for being the most paralogous to a window cannot
+then be tested against it.** S16's quartet test scores every pair of six
+windows and their six top blocks; the six window-vs-own-top-block pairs are
+significant by construction, because the block was chosen out of ~23,000 for
+that property. They are flagged `selection_circular` **in the table**, not
+only in the prose, because a reader scanning the file would otherwise read
+six results. 0 of the 59 non-circular pairs are enriched.
 
 **D17 — Permutation nulls are drawn from real genomic windows**, not from a
 uniform shuffle, and the genes under test are removed from their own windows

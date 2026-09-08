@@ -19,13 +19,17 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S15b complete — the census is enumerated, aligned, dated,
-audited, counted and now stress-tested; 23 of the 33 ledger rows are
-done.** **No vertebrate has lost an IP3 receptor gene**: 0 of 927 genome ×
-paralog cells in the 309-genome sweep supports absence, the Dollo count on
-the vertebrate tree is 0, and it takes **2 of 32** settings of the
-evidence rules to manufacture even one — against 18 of 32 if the question
-is asked per paralog rather than per family (§ *S15b* below).
+**Status: S16 complete — the census is enumerated, aligned, dated,
+audited, counted, stress-tested and now traced back to the duplications
+that made it; 24 of the 33 ledger rows are done.** **The three human IP3
+receptors are three pieces of one ancient neighbourhood, and the paralogy
+runs through ITPR1**: its flanking genes have relatives beside ITPR2 in
+141 of 175 vertebrate genomes and beside ITPR3 in 89 of 152, against
+**2.6 %** of matched random neighbourhoods in the same genomes — while
+ITPR2 and ITPR3 share nothing above background. And **the teleost genome
+duplication doubled ITPR1 and only ITPR1**, kept in 97 % of ray-finned
+genomes while the same fish kept all six of their ryanodine receptors
+(§ *S16* below).
 
 The build-up. The literature baseline is verified with a citation on every
 claim ([`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md), 32 pages,
@@ -446,7 +450,7 @@ One task per session. Full ledger with dependencies and results in
 | S13 | Reconciliation & dating | ✅ completed 2026-09-08 |
 | S15a | Loss dynamics — the instrument and the character matrix | ✅ completed 2026-09-08 |
 | S15b | Loss dynamics — the counts and the sensitivity matrix | ✅ completed 2026-09-08 |
-| S16 | Duplication history (2R / 3R, and the RyR parallel) | ⏳ pending |
+| S16 | Duplication history (2R / 3R, and the RyR parallel) | ✅ completed 2026-09-08 |
 | S17 | Constraint & function — the clinical-variant test | ⏳ pending |
 | S18 | Annotation-quality audit + correction list | ⏳ pending |
 | S19 | Methods results | ⏳ pending |
@@ -462,6 +466,36 @@ One task per session. Full ledger with dependencies and results in
 ## Findings so far
 
 Plain-language entries per task: [`FINDINGS.md`](FINDINGS.md). Headlines:
+
+**S16 — the family's origin is still visible in the genome, and it runs
+through ITPR1.** Two rounds of whole-genome duplication made the vertebrate
+trio, and the neighbourhoods around the three genes are still recognisably
+copies of one another — but not symmetrically. ITPR1's neighbours have
+relatives beside ITPR2 in **141 of 175** genomes and beside ITPR3 in **89 of
+152**; ITPR2's and ITPR3's neighbourhoods share relatives at **exactly the
+2.6 % background rate** measured on matched random neighbourhoods in the same
+genomes. Dating each link against Ensembl Compara's duplication nodes then
+splits the two that survive: the glutamate-receptor pair beside ITPR1 and
+ITPR3 was duplicated at the origin of the vertebrates, and the clock-gene
+pair beside ITPR1 and ITPR2 was duplicated before animals and fungi parted —
+relatives in the right places for the wrong reason. The ryanodine receptors,
+this project's sharpest decoy, were run through the identical test as a
+positive control and behave identically.
+
+![the 2R test](results/duplication/figures/s16_paralogon.png)
+
+**S16 — the teleost genome duplication kept ITPR1 twice and threw the other
+two away.** In 73 well-assembled ray-finned genomes ITPR1 averages **1.97**
+copies and ITPR2 and ITPR3 average 1.04 — while the ryanodine receptors in
+the very same fish average **5.82**, so this is retention and not a failure
+to find things. The pre-duplication ray-fins (bichir, gar, bowfin) carry one
+of each and three RyRs; the lineages with a *further* duplication (sturgeon,
+salmon) carry more of everything again. The two ITPR1 copies divide their
+ancestor's neighbourhood between them in **45 of 49** genomes, and all **705
+of 705** cross-anchor comparisons agree on which copy is which — one
+ancestral duplication, not a series of independent ones.
+
+![copy number](results/duplication/figures/s16_copy_number.png)
 
 **S15b — how hard you have to try to find a loss.** The count of lost IP3
 receptor genes across 309 vertebrate genomes, placed formally on the tree,

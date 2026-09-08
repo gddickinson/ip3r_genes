@@ -1,0 +1,4 @@
+pair	pair_class	n_genomes	n_with_link	frac_with_link	n_with_2R_link	frac_with_2R_link	mean_links	max_links	n_classes	classes	null_pairs	null_with_link	null_frac	p_fisher_vs_null
+ITPR1_vs_ITPR2	ITPR_vs_ITPR	175	141	0.8057	2	0.0114	0.8114	2	10	Actinopteri;Amphibia;Aves;Chondrichthyes;Cladistia;Coelacanthimorpha;Crocodylia;Dipnoi;Lepidosauria;Mammalia	932	24	0.0258	4.91092e-118
+ITPR1_vs_ITPR3	ITPR_vs_ITPR	152	89	0.5855	84	0.5526	0.5987	3	9	Actinopteri;Amphibia;Aves;Chondrichthyes;Crocodylia;Dipnoi;Lepidosauria;Mammalia;Testudines	932	24	0.0258	9.38617e-66
+ITPR2_vs_ITPR3	ITPR_vs_ITPR	149	4	0.0268	3	0.0201	0.0268	1	3	Aves;Dipnoi;Lepidosauria	932	24	0.0258	0.553597

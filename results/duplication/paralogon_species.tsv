@@ -1,0 +1,477 @@
+accession	organism	vclass	vorder	pair	pair_class	n_mapped_a	n_mapped_b	n_links	n_links_2R	n_families	link_symbols
+GCA_013398125.1	Aegotheles bennettii	Aves	Caprimulgiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	7	10	0	0	0	
+GCA_008658365.1	Alca torda	Aves	Charadriiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	17	1	0	1	BHLHE40-BHLHE41
+GCA_008658365.1	Alca torda	Aves	Charadriiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	12	1	1	1	GRM7-GRM4
+GCA_008658365.1	Alca torda	Aves	Charadriiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	17	12	0	0	0	
+GCF_030867095.1	Alligator mississippiensis	Crocodylia	Crocodylia	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	17	1	0	1	BHLHE40-BHLHE41
+GCF_030867095.1	Alligator mississippiensis	Crocodylia	Crocodylia	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	16	1	1	1	GRM7-GRM4
+GCF_030867095.1	Alligator mississippiensis	Crocodylia	Crocodylia	ITPR2_vs_ITPR3	ITPR_vs_ITPR	17	16	0	0	0	
+GCF_036373705.1	Amia ocellicauda	Actinopteri	Amiiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	14	11	1	0	1	BHLHE40-BHLHE41
+GCF_036373705.1	Amia ocellicauda	Actinopteri	Amiiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	14	5	1	0	1	ARL8B-ARL8A
+GCF_036373705.1	Amia ocellicauda	Actinopteri	Amiiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	11	5	0	0	0	
+GCF_949987685.1	Ammodytes marinus	Actinopteri	Uranoscopiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	20	14	1	0	1	BHLHE40-BHLHE41
+GCF_047663525.1	Anas platyrhynchos	Aves	Anseriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	19	1	0	1	BHLHE40-BHLHE41
+GCF_047663525.1	Anas platyrhynchos	Aves	Anseriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	17	1	1	1	GRM7-GRM4
+GCF_047663525.1	Anas platyrhynchos	Aves	Anseriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	17	0	0	0	
+GCF_040054535.1	Antennarius striatus	Actinopteri	Lophiiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	12	1	0	1	BHLHE40-BHLHE41
+GCF_040054535.1	Antennarius striatus	Actinopteri	Lophiiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	8	0	0	0	
+GCF_040054535.1	Antennarius striatus	Actinopteri	Lophiiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	12	8	0	0	0	
+GCF_041296385.2	Aphelocoma coerulescens	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	15	0	0	0	
+GCF_041296385.2	Aphelocoma coerulescens	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	16	1	1	1	GRM7-GRM4
+GCF_041296385.2	Aphelocoma coerulescens	Aves	Passeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	15	16	0	0	0	
+GCA_017639675.1	Aplochiton taeniatus	Actinopteri	Galaxiiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	8	13	0	0	0	
+GCA_017639675.1	Aplochiton taeniatus	Actinopteri	Galaxiiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	8	8	0	0	0	
+GCA_017639675.1	Aplochiton taeniatus	Actinopteri	Galaxiiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	13	8	0	0	0	
+GCF_000699145.1	Aptenodytes forsteri	Aves	Sphenisciformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	14	1	0	1	BHLHE40-BHLHE41
+GCF_000699145.1	Aptenodytes forsteri	Aves	Sphenisciformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	15	1	1	1	GRM7-GRM4
+GCF_000699145.1	Aptenodytes forsteri	Aves	Sphenisciformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	14	15	0	0	0	
+GCF_965638725.1	Aptenodytes patagonicus	Aves	Sphenisciformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	19	1	0	1	BHLHE40-BHLHE41
+GCF_965638725.1	Aptenodytes patagonicus	Aves	Sphenisciformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	17	1	1	1	GRM7-GRM4
+GCF_965638725.1	Aptenodytes patagonicus	Aves	Sphenisciformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	17	0	0	0	
+GCF_036417845.1	Apteryx mantelli	Aves	Apterygiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	19	1	0	1	BHLHE40-BHLHE41
+GCF_036417845.1	Apteryx mantelli	Aves	Apterygiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	17	1	1	1	GRM7-GRM4
+GCF_036417845.1	Apteryx mantelli	Aves	Apterygiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	17	0	0	0	
+GCF_020740795.1	Apus apus	Aves	Apodiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	19	1	0	1	BHLHE40-BHLHE41
+GCF_020740795.1	Apus apus	Aves	Apodiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	17	1	1	1	GRM7-GRM4
+GCF_020740795.1	Apus apus	Aves	Apodiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	17	0	0	0	
+GCF_042186555.1	Aquarana catesbeiana	Amphibia	Anura	ITPR1_vs_ITPR2	ITPR_vs_ITPR	9	12	1	0	1	BHLHE40-BHLHE41
+GCF_042186555.1	Aquarana catesbeiana	Amphibia	Anura	ITPR1_vs_ITPR3	ITPR_vs_ITPR	9	16	1	1	1	GRM7-GRM4
+GCF_042186555.1	Aquarana catesbeiana	Amphibia	Anura	ITPR2_vs_ITPR3	ITPR_vs_ITPR	12	16	0	0	0	
+GCA_013400195.1	Aramus guarauna	Aves	Gruiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	14	9	1	0	1	BHLHE40-BHLHE41
+GCA_013400195.1	Aramus guarauna	Aves	Gruiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	14	15	0	0	0	
+GCA_013400195.1	Aramus guarauna	Aves	Gruiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	9	15	0	0	0	
+GCF_011004875.1	Balearica regulorum gibbericeps	Aves	Gruiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	19	1	0	1	BHLHE40-BHLHE41
+GCF_011004875.1	Balearica regulorum gibbericeps	Aves	Gruiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	17	1	1	1	GRM7-GRM4
+GCF_011004875.1	Balearica regulorum gibbericeps	Aves	Gruiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	17	0	0	0	
+GCF_027579735.1	Bombina bombina	Amphibia	Anura	ITPR1_vs_ITPR2	ITPR_vs_ITPR	13	17	1	0	1	BHLHE40-BHLHE41
+GCF_027579735.1	Bombina bombina	Amphibia	Anura	ITPR1_vs_ITPR3	ITPR_vs_ITPR	13	14	1	1	1	GRM7-GRM4
+GCF_027579735.1	Bombina bombina	Amphibia	Anura	ITPR2_vs_ITPR3	ITPR_vs_ITPR	17	14	0	0	0	
+GCF_949987555.1	Borostomias antarcticus	Actinopteri	Stomiiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	23	14	1	0	1	BHLHE40-BHLHE41
+GCF_949987555.1	Borostomias antarcticus	Actinopteri	Stomiiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	23	12	0	0	0	
+GCF_949987555.1	Borostomias antarcticus	Actinopteri	Stomiiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	14	12	0	0	0	
+GCA_013398615.1	Brachypodius melanocephalos	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	13	16	1	0	1	BHLHE40-BHLHE41
+GCA_013398615.1	Brachypodius melanocephalos	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	13	15	0	0	0	
+GCA_013398615.1	Brachypodius melanocephalos	Aves	Passeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	16	15	0	0	0	
+GCA_009769605.1	Bucorvus abyssinicus	Aves	Bucerotiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	16	1	0	1	BHLHE40-BHLHE41
+GCA_009769605.1	Bucorvus abyssinicus	Aves	Bucerotiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	16	1	1	1	GRM7-GRM4
+GCA_009769605.1	Bucorvus abyssinicus	Aves	Bucerotiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	16	16	0	0	0	
+GCF_018977255.1	Callorhinchus milii	Chondrichthyes	Chimaeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	10	8	1	0	1	BHLHE40-BHLHE41
+GCF_036013445.1	Caloenas nicobarica	Aves	Columbiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	17	1	0	1	BHLHE40-BHLHE41
+GCF_036013445.1	Caloenas nicobarica	Aves	Columbiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	17	0	0	0	
+GCF_036013445.1	Caloenas nicobarica	Aves	Columbiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	17	17	0	0	0	
+GCF_964195595.1	Calonectris borealis	Aves	Procellariiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	15	19	0	0	0	
+GCF_964195595.1	Calonectris borealis	Aves	Procellariiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	15	16	1	1	1	GRM7-GRM4
+GCF_964195595.1	Calonectris borealis	Aves	Procellariiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	16	0	0	0	
+GCF_003957555.1	Calypte anna	Aves	Apodiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	15	1	0	1	BHLHE40-BHLHE41
+GCF_003957555.1	Calypte anna	Aves	Apodiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	15	1	1	1	GRM7-GRM4
+GCF_003957555.1	Calypte anna	Aves	Apodiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	15	15	0	0	0	
+GCF_907165065.1	Caprimulgus europaeus	Aves	Caprimulgiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	16	1	0	1	BHLHE40-BHLHE41
+GCF_907165065.1	Caprimulgus europaeus	Aves	Caprimulgiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	17	1	1	1	GRM7-GRM4
+GCF_907165065.1	Caprimulgus europaeus	Aves	Caprimulgiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	16	17	0	0	0	
+GCF_017639515.1	Carcharodon carcharias	Chondrichthyes	Lamniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	13	10	1	0	1	BHLHE40-BHLHE41
+GCA_013400815.1	Centropus bengalensis	Aves	Cuculiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	8	5	0	0	0	
+GCF_039877785.1	Chaetodon trifascialis	Actinopteri	Chaetodontiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	21	11	1	0	1	BHLHE40-BHLHE41
+GCF_039877785.1	Chaetodon trifascialis	Actinopteri	Chaetodontiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	21	9	0	0	0	
+GCF_039877785.1	Chaetodon trifascialis	Actinopteri	Chaetodontiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	11	9	0	0	0	
+GCF_000747805.2	Chaetura pelagica	Aves	Apodiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	8	0	0	0	
+GCF_000747805.2	Chaetura pelagica	Aves	Apodiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	15	1	1	1	GRM7-GRM4
+GCF_000747805.2	Chaetura pelagica	Aves	Apodiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	8	15	1	1	1	AICDA-APOBEC2
+GCF_033026475.1	Channa argus	Actinopteri	Anabantiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	20	13	1	0	1	BHLHE40-BHLHE41
+GCF_902362185.1	Chanos chanos	Actinopteri	Gonorynchiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	23	13	1	0	1	BHLHE40-BHLHE41
+GCF_902362185.1	Chanos chanos	Actinopteri	Gonorynchiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	23	13	1	0	1	TTLL3-TTLL7
+GCF_902362185.1	Chanos chanos	Actinopteri	Gonorynchiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	13	13	0	0	0	
+GCF_000708025.1	Charadrius vociferus	Aves	Charadriiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	12	0	0	0	
+GCF_000708025.1	Charadrius vociferus	Aves	Charadriiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	15	1	1	1	GRM7-GRM4
+GCF_000708025.1	Charadrius vociferus	Aves	Charadriiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	12	15	0	0	0	
+GCF_018320785.1	Cheilinus undulatus	Actinopteri	Labriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	20	10	1	0	1	BHLHE40-BHLHE41
+GCF_018320785.1	Cheilinus undulatus	Actinopteri	Labriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	20	7	0	0	0	
+GCF_018320785.1	Cheilinus undulatus	Actinopteri	Labriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	10	7	0	0	0	
+GCF_963514085.1	Chelon labrosus	Actinopteri	Mugiliformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	14	12	1	0	1	BHLHE40-BHLHE41
+GCF_047496795.1	Chiloscyllium punctatum	Chondrichthyes	Orectolobiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	12	12	1	0	1	BHLHE40-BHLHE41
+GCF_036417535.1	Chlamydotis macqueenii	Aves	Otidiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	18	0	0	0	
+GCF_036417535.1	Chlamydotis macqueenii	Aves	Otidiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	16	1	1	1	GRM7-GRM4
+GCF_036417535.1	Chlamydotis macqueenii	Aves	Otidiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	16	0	0	0	
+GCA_013400585.1	Chloropsis cyanopogon	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	8	6	1	0	1	BHLHE40-BHLHE41
+GCA_013390065.1	Chloropsis hardwickii	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	7	5	0	0	0	
+GCF_034638445.1	Ciconia boyciana	Aves	Ciconiiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	19	1	0	1	BHLHE40-BHLHE41
+GCF_034638445.1	Ciconia boyciana	Aves	Ciconiiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	14	1	1	1	GRM7-GRM4
+GCF_034638445.1	Ciconia boyciana	Aves	Ciconiiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	14	0	0	0	
+GCA_013400215.1	Cisticola juncidis	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	8	9	1	0	1	BHLHE40-BHLHE41
+GCA_013398175.1	Climacteris rufus	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	8	8	0	0	0	
+GCA_013398175.1	Climacteris rufus	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	8	6	0	0	0	
+GCA_013398175.1	Climacteris rufus	Aves	Passeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	8	6	0	0	0	
+GCF_951640355.1	Cnephaeus nilssonii	Mammalia	Chiroptera	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	19	1	0	1	BHLHE40-BHLHE41
+GCF_951640355.1	Cnephaeus nilssonii	Mammalia	Chiroptera	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	14	0	0	0	
+GCF_951640355.1	Cnephaeus nilssonii	Mammalia	Chiroptera	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	14	0	0	0	
+GCF_028858725.1	Colius striatus	Aves	Coliiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	16	1	0	1	BHLHE40-BHLHE41
+GCF_028858725.1	Colius striatus	Aves	Coliiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	18	1	1	1	GRM7-GRM4
+GCF_028858725.1	Colius striatus	Aves	Coliiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	16	18	0	0	0	
+GCF_033807715.1	Cololabis saira	Actinopteri	Beloniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	11	0	0	0	
+GCF_033807715.1	Cololabis saira	Actinopteri	Beloniformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	9	0	0	0	
+GCF_033807715.1	Cololabis saira	Actinopteri	Beloniformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	11	9	0	0	0	
+GCF_963514075.1	Conger conger	Actinopteri	Anguilliformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	13	5	1	0	1	BHLHE40-BHLHE41
+GCF_000691975.1	Corvus brachyrhynchos	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	10	0	0	0	
+GCF_000691975.1	Corvus brachyrhynchos	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	15	1	1	1	GRM7-GRM4
+GCF_000691975.1	Corvus brachyrhynchos	Aves	Passeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	10	15	0	0	0	
+GCA_013399495.1	Corythaixoides concolor	Aves	Musophagiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	12	14	0	0	0	
+GCF_003668045.3	Cricetulus griseus	Mammalia	Rodentia	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	15	1	0	1	BHLHE40-BHLHE41
+GCF_003668045.3	Cricetulus griseus	Mammalia	Rodentia	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	15	1	1	1	GRM7-GRM4
+GCF_003668045.3	Cricetulus griseus	Mammalia	Rodentia	ITPR2_vs_ITPR3	ITPR_vs_ITPR	15	15	0	0	0	
+GCF_017976375.1	Cuculus canorus	Aves	Cuculiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	17	0	0	0	
+GCF_017976375.1	Cuculus canorus	Aves	Cuculiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	13	1	1	1	GRM7-GRM4
+GCF_017976375.1	Cuculus canorus	Aves	Cuculiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	17	13	0	0	0	
+GCF_027409185.1	Cynocephalus volans	Mammalia	Dermoptera	ITPR1_vs_ITPR2	ITPR_vs_ITPR	15	19	1	0	1	BHLHE40-BHLHE41
+GCF_027409185.1	Cynocephalus volans	Mammalia	Dermoptera	ITPR1_vs_ITPR3	ITPR_vs_ITPR	15	20	1	1	1	GRM7-GRM4
+GCF_027409185.1	Cynocephalus volans	Mammalia	Dermoptera	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	20	0	0	0	
+GCF_052040795.1	Danio rerio	Actinopteri	Cypriniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	24	14	1	0	1	BHLHE40-BHLHE41
+GCF_052040795.1	Danio rerio	Actinopteri	Cypriniformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	24	10	0	0	0	
+GCF_052040795.1	Danio rerio	Actinopteri	Cypriniformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	14	10	0	0	0	
+GCF_030445035.2	Dasypus novemcinctus	Mammalia	Cingulata	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	18	1	0	1	BHLHE40-BHLHE41
+GCF_030445035.2	Dasypus novemcinctus	Mammalia	Cingulata	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	19	1	1	1	GRM7-GRM4
+GCF_030445035.2	Dasypus novemcinctus	Mammalia	Cingulata	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	19	0	0	0	
+GCF_020826845.1	Diceros bicornis minor	Mammalia	Perissodactyla	ITPR1_vs_ITPR2	ITPR_vs_ITPR	15	19	1	0	1	BHLHE40-BHLHE41
+GCF_020826845.1	Diceros bicornis minor	Mammalia	Perissodactyla	ITPR1_vs_ITPR3	ITPR_vs_ITPR	15	18	1	1	1	GRM7-GRM4
+GCF_020826845.1	Diceros bicornis minor	Mammalia	Perissodactyla	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	18	0	0	0	
+GCA_048569125.1	Diretmus argenteus	Actinopteri	Trachichthyiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	14	1	0	1	BHLHE40-BHLHE41
+GCA_048569125.1	Diretmus argenteus	Actinopteri	Trachichthyiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	9	0	0	0	
+GCA_048569125.1	Diretmus argenteus	Actinopteri	Trachichthyiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	14	9	0	0	0	
+GCF_036370855.1	Dromaius novaehollandiae	Aves	Casuariiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	14	18	1	0	1	BHLHE40-BHLHE41
+GCF_036370855.1	Dromaius novaehollandiae	Aves	Casuariiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	14	14	1	1	1	GRM7-GRM4
+GCF_036370855.1	Dromaius novaehollandiae	Aves	Casuariiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	14	0	0	0	
+GCF_019393635.1	Dromiciops gliroides	Mammalia	Microbiotheria	ITPR1_vs_ITPR2	ITPR_vs_ITPR	14	15	1	0	1	BHLHE40-BHLHE41
+GCF_019393635.1	Dromiciops gliroides	Mammalia	Microbiotheria	ITPR1_vs_ITPR3	ITPR_vs_ITPR	14	16	1	1	1	GRM7-GRM4
+GCF_019393635.1	Dromiciops gliroides	Mammalia	Microbiotheria	ITPR2_vs_ITPR3	ITPR_vs_ITPR	15	16	0	0	0	
+GCF_014839835.1	Dryobates pubescens	Aves	Piciformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	12	1	0	1	BHLHE40-BHLHE41
+GCF_014839835.1	Dryobates pubescens	Aves	Piciformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	17	1	1	1	GRM7-GRM4
+GCF_014839835.1	Dryobates pubescens	Aves	Piciformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	12	17	0	0	0	
+GCF_000687185.1	Egretta garzetta	Aves	Pelecaniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	12	16	0	0	0	
+GCF_000687185.1	Egretta garzetta	Aves	Pelecaniformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	12	16	0	0	0	
+GCF_000687185.1	Egretta garzetta	Aves	Pelecaniformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	16	16	0	0	0	
+GCA_013398795.1	Elachura formosa	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	9	12	0	0	0	
+GCF_041902795.1	Electrophorus electricus	Actinopteri	Gymnotiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	25	15	1	0	1	BHLHE40-BHLHE41
+GCF_041902795.1	Electrophorus electricus	Actinopteri	Gymnotiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	25	11	0	0	0	
+GCF_041902795.1	Electrophorus electricus	Actinopteri	Gymnotiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	15	11	0	0	0	
+GCF_000299155.1	Elephantulus edwardii	Mammalia	Macroscelidea	ITPR1_vs_ITPR2	ITPR_vs_ITPR	12	8	1	0	1	BHLHE40-BHLHE41
+GCF_000299155.1	Elephantulus edwardii	Mammalia	Macroscelidea	ITPR1_vs_ITPR3	ITPR_vs_ITPR	12	14	1	1	1	GRM7-GRM4
+GCF_000299155.1	Elephantulus edwardii	Mammalia	Macroscelidea	ITPR2_vs_ITPR3	ITPR_vs_ITPR	8	14	0	0	0	
+GCF_024166365.1	Elephas maximus indicus	Mammalia	Proboscidea	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	19	1	0	1	BHLHE40-BHLHE41
+GCF_024166365.1	Elephas maximus indicus	Mammalia	Proboscidea	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	19	1	1	1	GRM7-GRM4
+GCF_024166365.1	Elephas maximus indicus	Mammalia	Proboscidea	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	19	0	0	0	
+GCF_035609145.1	Eleutherodactylus coqui	Amphibia	Anura	ITPR1_vs_ITPR2	ITPR_vs_ITPR	10	9	1	0	1	BHLHE40-BHLHE41
+GCF_035609145.1	Eleutherodactylus coqui	Amphibia	Anura	ITPR1_vs_ITPR3	ITPR_vs_ITPR	10	14	1	1	1	GRM7-GRM4
+GCF_035609145.1	Eleutherodactylus coqui	Amphibia	Anura	ITPR2_vs_ITPR3	ITPR_vs_ITPR	9	14	0	0	0	
+GCF_034702125.1	Engraulis encrasicolus	Actinopteri	Clupeiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	9	1	0	1	BHLHE40-BHLHE41
+GCF_034702125.1	Engraulis encrasicolus	Actinopteri	Clupeiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	12	0	0	0	
+GCF_034702125.1	Engraulis encrasicolus	Actinopteri	Clupeiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	9	12	0	0	0	
+GCF_033978785.1	Entelurus aequoreus	Actinopteri	Syngnathiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	10	1	0	1	BHLHE40-BHLHE41
+GCF_033978785.1	Entelurus aequoreus	Actinopteri	Syngnathiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	8	0	0	0	
+GCF_033978785.1	Entelurus aequoreus	Actinopteri	Syngnathiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	10	8	0	0	0	
+GCF_021613505.1	Equus quagga	Mammalia	Perissodactyla	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	19	1	0	1	BHLHE40-BHLHE41
+GCF_021613505.1	Equus quagga	Mammalia	Perissodactyla	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	18	1	1	1	GRM7-GRM4
+GCF_021613505.1	Equus quagga	Mammalia	Perissodactyla	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	18	0	0	0	
+GCF_900747795.2	Erpetoichthys calabaricus	Cladistia	Polypteriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	13	9	1	0	1	BHLHE40-BHLHE41
+GCF_011004845.1	Esox lucius	Actinopteri	Esociformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	20	12	1	0	1	BHLHE40-BHLHE41
+GCF_011004845.1	Esox lucius	Actinopteri	Esociformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	20	7	0	0	0	
+GCF_011004845.1	Esox lucius	Actinopteri	Esociformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	12	7	0	0	0	
+GCF_023634155.1	Falco peregrinus	Aves	Falconiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	17	1	0	1	BHLHE40-BHLHE41
+GCF_023634155.1	Falco peregrinus	Aves	Falconiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	17	1	1	1	GRM7-GRM4
+GCF_023634155.1	Falco peregrinus	Aves	Falconiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	17	17	0	0	0	
+GCA_013397465.1	Furnarius figulus	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	12	8	1	0	1	BHLHE40-BHLHE41
+GCA_013397465.1	Furnarius figulus	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	12	18	0	0	0	
+GCA_013397465.1	Furnarius figulus	Aves	Passeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	8	18	0	0	0	
+GCF_902167405.1	Gadus morhua	Actinopteri	Gadiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	22	9	1	0	1	BHLHE40-BHLHE41
+GCF_902167405.1	Gadus morhua	Actinopteri	Gadiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	22	11	0	0	0	
+GCF_902167405.1	Gadus morhua	Actinopteri	Gadiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	9	11	0	0	0	
+GCF_964237585.1	Gallinula chloropus	Aves	Gruiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	19	1	0	1	BHLHE40-BHLHE41
+GCF_964237585.1	Gallinula chloropus	Aves	Gruiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	17	1	1	1	GRM7-GRM4
+GCF_964237585.1	Gallinula chloropus	Aves	Gruiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	17	0	0	0	
+GCF_016699485.2	Gallus gallus	Aves	Galliformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	19	15	1	0	1	BHLHE40-BHLHE41
+GCF_016699485.2	Gallus gallus	Aves	Galliformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	19	15	1	1	1	GRM7-GRM4
+GCF_016699485.2	Gallus gallus	Aves	Galliformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	15	15	0	0	0	
+GCF_019740435.1	Gambusia affinis	Actinopteri	Cyprinodontiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	12	11	0	0	0	
+GCF_030936135.1	Gavia stellata	Aves	Gaviiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	18	0	0	0	
+GCF_030936135.1	Gavia stellata	Aves	Gaviiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	19	1	1	1	GRM7-GRM4
+GCF_030936135.1	Gavia stellata	Aves	Gaviiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	19	0	0	0	
+GCF_046128005.1	Genypterus blacodes	Actinopteri	Ophidiiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	19	14	1	0	1	BHLHE40-BHLHE41
+GCF_054371585.1	Giraffa tippelskirchi	Mammalia	Artiodactyla	ITPR1_vs_ITPR2	ITPR_vs_ITPR	14	17	1	0	1	BHLHE40-BHLHE41
+GCF_054371585.1	Giraffa tippelskirchi	Mammalia	Artiodactyla	ITPR1_vs_ITPR3	ITPR_vs_ITPR	14	18	1	1	1	GRM7-GRM4
+GCF_054371585.1	Giraffa tippelskirchi	Mammalia	Artiodactyla	ITPR2_vs_ITPR3	ITPR_vs_ITPR	17	18	0	0	0	
+GCF_951799975.1	Gobius niger	Actinopteri	Gobiiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	20	14	1	0	1	BHLHE40-BHLHE41
+GCF_951799975.1	Gobius niger	Actinopteri	Gobiiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	20	8	0	0	0	
+GCF_951799975.1	Gobius niger	Actinopteri	Gobiiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	14	8	0	0	0	
+GCF_025201925.1	Gopherus flavomarginatus	Testudines	Testudines	ITPR1_vs_ITPR2	ITPR_vs_ITPR	13	18	0	0	0	
+GCF_025201925.1	Gopherus flavomarginatus	Testudines	Testudines	ITPR1_vs_ITPR3	ITPR_vs_ITPR	13	14	1	1	1	GRM7-GRM4
+GCF_025201925.1	Gopherus flavomarginatus	Testudines	Testudines	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	14	0	0	0	
+GCF_900634775.2	Gouania willdenowi	Actinopteri	Blenniiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	11	0	0	0	
+GCF_900634775.2	Gouania willdenowi	Actinopteri	Blenniiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	10	0	0	0	
+GCF_900634775.2	Gouania willdenowi	Actinopteri	Blenniiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	11	10	0	0	0	
+GCF_016433145.1	Gracilinanus agilis	Mammalia	Didelphimorphia	ITPR1_vs_ITPR2	ITPR_vs_ITPR	15	18	0	0	0	
+GCF_016433145.1	Gracilinanus agilis	Mammalia	Didelphimorphia	ITPR1_vs_ITPR3	ITPR_vs_ITPR	15	17	1	1	1	GRM7-GRM4
+GCF_016433145.1	Gracilinanus agilis	Mammalia	Didelphimorphia	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	17	0	0	0	
+GCA_013397955.1	Grantiella picta	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	9	11	1	0	1	BHLHE40-BHLHE41
+GCF_018139145.2	Gymnogyps californianus	Aves	Accipitriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	18	1	0	1	BHLHE40-BHLHE41
+GCF_018139145.2	Gymnogyps californianus	Aves	Accipitriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	16	1	1	1	GRM7-GRM4
+GCF_018139145.2	Gymnogyps californianus	Aves	Accipitriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	16	0	0	0	
+GCF_947461875.1	Haliaeetus albicilla	Aves	Accipitriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	20	1	0	1	BHLHE40-BHLHE41
+GCF_947461875.1	Haliaeetus albicilla	Aves	Accipitriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	17	1	1	1	GRM7-GRM4
+GCF_947461875.1	Haliaeetus albicilla	Aves	Accipitriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	20	17	0	0	0	
+GCF_027244095.1	Hemicordylus capensis	Lepidosauria	Squamata	ITPR1_vs_ITPR2	ITPR_vs_ITPR	12	17	1	0	1	BHLHE40-BHLHE41
+GCF_027244095.1	Hemicordylus capensis	Lepidosauria	Squamata	ITPR1_vs_ITPR3	ITPR_vs_ITPR	12	16	1	1	1	GRM7-GRM4
+GCF_027244095.1	Hemicordylus capensis	Lepidosauria	Squamata	ITPR2_vs_ITPR3	ITPR_vs_ITPR	17	16	1	1	1	STK38L-STK38
+GCF_048418815.1	Hemitrygon akajei	Chondrichthyes	Myliobatiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	13	10	1	0	1	BHLHE40-BHLHE41
+GCF_035084215.1	Heptranchias perlo	Chondrichthyes	Hexanchiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	10	10	1	0	1	BHLHE40-BHLHE41
+GCF_035084215.1	Heptranchias perlo	Chondrichthyes	Hexanchiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	10	5	1	0	1	ARL8B-ARL8A
+GCF_035084215.1	Heptranchias perlo	Chondrichthyes	Hexanchiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	10	5	0	0	0	
+GCF_036365525.1	Heterodontus francisci	Chondrichthyes	Heterodontiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	11	10	1	0	1	BHLHE40-BHLHE41
+GCA_028571685.1	Heterohyrax brucei	Mammalia	Hyracoidea	ITPR1_vs_ITPR2	ITPR_vs_ITPR	19	19	1	0	1	BHLHE40-BHLHE41
+GCA_028571685.1	Heterohyrax brucei	Mammalia	Hyracoidea	ITPR1_vs_ITPR3	ITPR_vs_ITPR	19	18	1	1	1	GRM7-GRM4
+GCA_028571685.1	Heterohyrax brucei	Mammalia	Hyracoidea	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	18	0	0	0	
+GCA_056783565.1	Hiodon alosoides	Actinopteri	Hiodontiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	19	12	0	0	0	
+GCA_056783565.1	Hiodon alosoides	Actinopteri	Hiodontiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	19	7	0	0	0	
+GCA_056783565.1	Hiodon alosoides	Actinopteri	Hiodontiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	12	7	0	0	0	
+GCF_000001405.40	Homo sapiens	Mammalia	Primates	ITPR1_vs_ITPR2	ITPR_vs_ITPR	19	19	1	0	1	BHLHE40-BHLHE41
+GCF_000001405.40	Homo sapiens	Mammalia	Primates	ITPR1_vs_ITPR3	ITPR_vs_ITPR	19	19	1	1	1	GRM7-GRM4
+GCF_000001405.40	Homo sapiens	Mammalia	Primates	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	19	0	0	0	
+GCF_029633855.1	Hoplias malabaricus	Actinopteri	Characiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	23	15	1	0	1	BHLHE40-BHLHE41
+GCF_029633855.1	Hoplias malabaricus	Actinopteri	Characiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	23	7	0	0	0	
+GCF_029633855.1	Hoplias malabaricus	Actinopteri	Characiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	15	7	0	0	0	
+GCF_054491055.1	Hypomesus nipponensis	Actinopteri	Osmeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	21	13	1	0	1	BHLHE40-BHLHE41
+GCF_054491055.1	Hypomesus nipponensis	Actinopteri	Osmeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	21	5	0	0	0	
+GCF_054491055.1	Hypomesus nipponensis	Actinopteri	Osmeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	13	5	0	0	0	
+GCF_029633865.1	Lampris incognitus	Actinopteri	Lampriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	11	1	0	1	BHLHE40-BHLHE41
+GCF_029633865.1	Lampris incognitus	Actinopteri	Lampriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	6	0	0	0	
+GCF_029633865.1	Lampris incognitus	Actinopteri	Lampriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	11	6	0	0	0	
+GCF_964417175.1	Larus argentatus	Aves	Charadriiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	15	18	1	0	1	BHLHE40-BHLHE41
+GCF_964417175.1	Larus argentatus	Aves	Charadriiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	15	16	1	1	1	GRM7-GRM4
+GCF_964417175.1	Larus argentatus	Aves	Charadriiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	16	0	0	0	
+GCF_037157495.1	Lathamus discolor	Aves	Psittaciformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	18	1	0	1	BHLHE40-BHLHE41
+GCF_037157495.1	Lathamus discolor	Aves	Psittaciformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	16	1	1	1	GRM7-GRM4
+GCF_037157495.1	Lathamus discolor	Aves	Psittaciformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	16	0	0	0	
+GCF_037176945.1	Latimeria chalumnae	Coelacanthimorpha	Coelacanthiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	9	11	1	0	1	BHLHE40-BHLHE41
+GCF_037176945.1	Latimeria chalumnae	Coelacanthimorpha	Coelacanthiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	9	5	0	0	0	
+GCF_037176945.1	Latimeria chalumnae	Coelacanthimorpha	Coelacanthiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	11	5	0	0	0	
+GCA_013400445.1	Leiothrix lutea	Aves	Passeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	7	6	0	0	0	
+GCF_040954835.1	Lepisosteus oculatus	Actinopteri	Semionotiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	14	10	1	0	1	BHLHE40-BHLHE41
+GCF_040954835.1	Lepisosteus oculatus	Actinopteri	Semionotiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	14	5	1	0	1	ARL8B-ARL8A
+GCF_040954835.1	Lepisosteus oculatus	Actinopteri	Semionotiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	10	5	0	0	0	
+GCF_034619465.1	Leptosomus discolor	Aves	Leptosomiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	19	1	0	1	BHLHE40-BHLHE41
+GCF_034619465.1	Leptosomus discolor	Aves	Leptosomiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	17	1	1	1	GRM7-GRM4
+GCF_034619465.1	Leptosomus discolor	Aves	Leptosomiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	17	0	0	0	
+GCF_964261635.1	Lissotriton helveticus	Amphibia	Caudata	ITPR1_vs_ITPR2	ITPR_vs_ITPR	9	17	1	0	1	BHLHE40-BHLHE41
+GCF_964261635.1	Lissotriton helveticus	Amphibia	Caudata	ITPR1_vs_ITPR3	ITPR_vs_ITPR	9	14	1	1	1	GRM7-GRM4
+GCF_964261635.1	Lissotriton helveticus	Amphibia	Caudata	ITPR2_vs_ITPR3	ITPR_vs_ITPR	17	14	0	0	0	
+GCA_013398455.1	Loxia curvirostra	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	12	10	1	0	1	BHLHE40-BHLHE41
+GCA_013398455.1	Loxia curvirostra	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	12	18	0	0	0	
+GCA_013398455.1	Loxia curvirostra	Aves	Passeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	10	18	0	0	0	
+GCF_056507025.1	Lutjanus erythropterus	Actinopteri	Lutjaniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	13	1	0	1	BHLHE40-BHLHE41
+GCF_056507025.1	Lutjanus erythropterus	Actinopteri	Lutjaniformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	7	0	0	0	
+GCF_056507025.1	Lutjanus erythropterus	Actinopteri	Lutjaniformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	13	7	0	0	0	
+GCF_049350105.2	Macaca mulatta	Mammalia	Primates	ITPR1_vs_ITPR2	ITPR_vs_ITPR	19	17	1	0	1	BHLHE40-BHLHE41
+GCF_049350105.2	Macaca mulatta	Mammalia	Primates	ITPR1_vs_ITPR3	ITPR_vs_ITPR	19	17	1	1	1	GRM7-GRM4
+GCF_049350105.2	Macaca mulatta	Mammalia	Primates	ITPR2_vs_ITPR3	ITPR_vs_ITPR	17	17	0	0	0	
+GCF_037893015.1	Macrotis lagotis	Mammalia	Peramelemorphia	ITPR1_vs_ITPR2	ITPR_vs_ITPR	14	19	0	0	0	
+GCF_037893015.1	Macrotis lagotis	Mammalia	Peramelemorphia	ITPR1_vs_ITPR3	ITPR_vs_ITPR	14	18	1	1	1	GRM7-GRM4
+GCF_037893015.1	Macrotis lagotis	Mammalia	Peramelemorphia	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	18	0	0	0	
+GCF_001715985.3	Manacus vitellinus	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	16	0	0	0	
+GCF_001715985.3	Manacus vitellinus	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	14	0	0	0	
+GCF_001715985.3	Manacus vitellinus	Aves	Passeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	16	14	0	0	0	
+GCF_030020395.1	Manis pentadactyla	Mammalia	Pholidota	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	18	1	0	1	BHLHE40-BHLHE41
+GCF_030020395.1	Manis pentadactyla	Mammalia	Pholidota	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	18	1	1	1	GRM7-GRM4
+GCF_030020395.1	Manis pentadactyla	Mammalia	Pholidota	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	18	0	0	0	
+GCF_900324485.3	Mastacembelus armatus	Actinopteri	Synbranchiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	19	14	1	0	1	BHLHE40-BHLHE41
+GCF_900324485.3	Mastacembelus armatus	Actinopteri	Synbranchiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	19	5	0	0	0	
+GCF_900324485.3	Mastacembelus armatus	Actinopteri	Synbranchiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	14	5	0	0	0	
+GCF_013368585.1	Megalops cyprinoides	Actinopteri	Elopiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	15	6	1	0	1	BHLHE40-BHLHE41
+GCA_013396355.1	Menura novaehollandiae	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	14	12	1	0	1	BHLHE40-BHLHE41
+GCA_013396355.1	Menura novaehollandiae	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	14	16	0	0	0	
+GCA_013396355.1	Menura novaehollandiae	Aves	Passeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	12	16	0	0	0	
+GCF_963457635.1	Microchirus variegatus	Actinopteri	Pleuronectiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	20	13	1	0	1	BHLHE40-BHLHE41
+GCF_963457635.1	Microchirus variegatus	Actinopteri	Pleuronectiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	20	7	0	0	0	
+GCF_963457635.1	Microchirus variegatus	Actinopteri	Pleuronectiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	13	7	0	0	0	
+GCF_021292245.1	Micropterus dolomieu	Actinopteri	Centrarchiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	11	1	0	1	BHLHE40-BHLHE41
+GCF_000001635.27	Mus musculus	Mammalia	Rodentia	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	18	1	0	1	BHLHE40-BHLHE41
+GCF_000001635.27	Mus musculus	Mammalia	Rodentia	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	19	1	1	1	GRM7-GRM4
+GCF_000001635.27	Mus musculus	Mammalia	Rodentia	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	19	0	0	0	
+GCF_035582795.1	Mycteria americana	Aves	Ciconiiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	19	1	0	1	BHLHE40-BHLHE41
+GCF_035582795.1	Mycteria americana	Aves	Ciconiiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	17	1	1	1	GRM7-GRM4
+GCF_035582795.1	Mycteria americana	Aves	Ciconiiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	17	0	0	0	
+GCA_013397015.1	Myiagra hebetior	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	9	8	1	0	1	BHLHE40-BHLHE41
+GCA_013397015.1	Myiagra hebetior	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	9	11	0	0	0	
+GCA_013397015.1	Myiagra hebetior	Aves	Passeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	8	11	0	0	0	
+GCF_902150065.1	Myripristis murdjan	Actinopteri	Holocentriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	19	14	1	0	1	BHLHE40-BHLHE41
+GCF_963921795.1	Nannobrachium achirus	Actinopteri	Myctophiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	22	15	1	0	1	BHLHE40-BHLHE41
+GCF_963921795.1	Nannobrachium achirus	Actinopteri	Myctophiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	22	7	0	0	0	
+GCF_963921795.1	Nannobrachium achirus	Actinopteri	Myctophiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	15	7	0	0	0	
+GCF_963989245.1	Nansenia antarctica	Actinopteri	Argentiniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	14	1	0	1	BHLHE40-BHLHE41
+GCF_963989245.1	Nansenia antarctica	Actinopteri	Argentiniformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	6	0	0	0	
+GCF_963989245.1	Nansenia antarctica	Actinopteri	Argentiniformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	14	6	0	0	0	
+GCF_036971445.1	Narcine bancroftii	Chondrichthyes	Torpediniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	10	10	1	1	1	PLXND1-PLXNC1
+GCF_027579695.1	Neoarius graeffei	Actinopteri	Siluriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	15	0	0	0	
+GCF_027579695.1	Neoarius graeffei	Actinopteri	Siluriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	11	0	0	0	
+GCF_027579695.1	Neoarius graeffei	Actinopteri	Siluriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	15	11	0	0	0	
+GCF_020171115.1	Neogale vison	Mammalia	Carnivora	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	18	0	0	0	
+GCF_020171115.1	Neogale vison	Mammalia	Carnivora	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	17	1	1	1	GRM7-GRM4
+GCF_020171115.1	Neogale vison	Mammalia	Carnivora	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	17	0	0	0	
+GCA_014281875.1	Nibea albiflora	Actinopteri		ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	9	1	0	1	RARB-NR1H4
+GCA_014281875.1	Nibea albiflora	Actinopteri		ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	7	0	0	0	
+GCA_014281875.1	Nibea albiflora	Actinopteri		ITPR2_vs_ITPR3	ITPR_vs_ITPR	9	7	0	0	0	
+GCF_047370975.1	Nipponia nippon	Aves	Pelecaniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	19	1	0	1	BHLHE40-BHLHE41
+GCF_047370975.1	Nipponia nippon	Aves	Pelecaniformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	14	1	1	1	GRM7-GRM4
+GCF_047370975.1	Nipponia nippon	Aves	Pelecaniformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	14	0	0	0	
+GCF_028372415.1	Notamacropus eugenii	Mammalia	Diprotodontia	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	19	1	0	1	BHLHE40-BHLHE41
+GCF_028372415.1	Notamacropus eugenii	Mammalia	Diprotodontia	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	19	1	1	1	GRM7-GRM4
+GCF_028372415.1	Notamacropus eugenii	Mammalia	Diprotodontia	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	19	0	0	0	
+GCF_043380555.1	Nothobranchius furzeri	Actinopteri	Cyprinodontiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	14	1	0	1	BHLHE40-BHLHE41
+GCF_043380555.1	Nothobranchius furzeri	Actinopteri	Cyprinodontiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	5	0	0	0	
+GCF_043380555.1	Nothobranchius furzeri	Actinopteri	Cyprinodontiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	14	5	0	0	0	
+GCF_003342845.1	Nothoprocta perdicaria	Aves	Tinamiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	6	1	0	1	BHLHE40-BHLHE41
+GCF_003342845.1	Nothoprocta perdicaria	Aves	Tinamiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	15	1	1	1	GRM7-GRM4
+GCF_003342845.1	Nothoprocta perdicaria	Aves	Tinamiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	6	15	0	0	0	
+GCF_949606895.1	Notothenia rossii	Actinopteri	Perciformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	6	13	0	0	0	
+GCF_013368605.1	Nyctibius grandis	Aves	Nyctibiiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	19	0	0	0	
+GCF_013368605.1	Nyctibius grandis	Aves	Nyctibiiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	16	1	1	1	GRM7-GRM4
+GCF_013368605.1	Nyctibius grandis	Aves	Nyctibiiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	16	0	0	0	
+GCA_013399395.1	Nyctiprogne leucopyga	Aves	Caprimulgiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	5	7	0	0	0	
+GCF_030867145.1	Opisthocomus hoazin	Aves	Opisthocomiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	19	1	0	1	BHLHE40-BHLHE41
+GCF_030867145.1	Opisthocomus hoazin	Aves	Opisthocomiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	19	1	1	1	GRM7-GRM4
+GCF_030867145.1	Opisthocomus hoazin	Aves	Opisthocomiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	19	0	0	0	
+GCA_013397895.1	Origma solitaria	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	8	8	0	0	0	
+GCA_013397895.1	Origma solitaria	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	8	15	0	0	0	
+GCA_013397895.1	Origma solitaria	Aves	Passeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	8	15	0	0	0	
+GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	Monotremata	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	19	1	0	1	BHLHE40-BHLHE41
+GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	Monotremata	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	19	1	1	1	GRM7-GRM4
+GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	Monotremata	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	19	0	0	0	
+GCF_000298275.1	Orycteropus afer afer	Mammalia	Tubulidentata	ITPR2_vs_ITPR3	ITPR_vs_ITPR	16	17	0	0	0	
+GCF_964237555.1	Oryctolagus cuniculus	Mammalia	Lagomorpha	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	17	1	0	1	BHLHE40-BHLHE41
+GCF_964237555.1	Oryctolagus cuniculus	Mammalia	Lagomorpha	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	19	1	1	1	GRM7-GRM4
+GCF_964237555.1	Oryctolagus cuniculus	Mammalia	Lagomorpha	ITPR2_vs_ITPR3	ITPR_vs_ITPR	17	19	0	0	0	
+GCA_013399855.1	Oxyruncus cristatus	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	14	11	1	0	1	BHLHE40-BHLHE41
+GCA_013399855.1	Oxyruncus cristatus	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	14	18	0	0	0	
+GCA_013399855.1	Oxyruncus cristatus	Aves	Passeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	11	18	0	0	0	
+GCF_048594095.1	Paramormyrops kingsleyae	Actinopteri	Osteoglossiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	19	7	1	0	1	BHLHE40-BHLHE41
+GCF_030463565.1	Pelecanus crispus	Aves	Pelecaniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	19	19	1	0	1	BHLHE40-BHLHE41
+GCF_030463565.1	Pelecanus crispus	Aves	Pelecaniformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	19	16	1	1	1	GRM7-GRM4
+GCF_030463565.1	Pelecanus crispus	Aves	Pelecaniformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	16	0	0	0	
+GCF_042242105.1	Pempheris klunzingeri	Actinopteri	Acropomatiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	12	14	0	0	0	
+GCF_042242105.1	Pempheris klunzingeri	Actinopteri	Acropomatiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	12	9	0	0	0	
+GCF_042242105.1	Pempheris klunzingeri	Actinopteri	Acropomatiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	14	9	0	0	0	
+GCF_964289735.1	Phaethon aethereus	Aves	Phaethontiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	18	0	0	0	
+GCF_964289735.1	Phaethon aethereus	Aves	Phaethontiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	16	1	1	1	GRM7-GRM4
+GCF_964289735.1	Phaethon aethereus	Aves	Phaethontiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	16	0	0	0	
+GCF_963921805.1	Phalacrocorax carbo	Aves	Suliformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	18	1	0	1	BHLHE40-BHLHE41
+GCF_963921805.1	Phalacrocorax carbo	Aves	Suliformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	13	1	1	1	GRM7-GRM4
+GCF_963921805.1	Phalacrocorax carbo	Aves	Suliformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	13	0	0	0	
+GCA_009819775.1	Phoenicopterus ruber ruber	Aves	Phoenicopteriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	19	1	0	1	BHLHE40-BHLHE41
+GCA_009819775.1	Phoenicopterus ruber ruber	Aves	Phoenicopteriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	17	1	1	1	GRM7-GRM4
+GCA_009819775.1	Phoenicopterus ruber ruber	Aves	Phoenicopteriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	17	0	0	0	
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	Cypriniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	23	15	1	0	1	BHLHE40-BHLHE41
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	Cypriniformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	23	9	0	0	0	
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	Cypriniformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	15	9	0	0	0	
+GCF_965183815.1	Platalea leucorodia	Aves	Pelecaniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	18	1	0	1	BHLHE40-BHLHE41
+GCF_965183815.1	Platalea leucorodia	Aves	Pelecaniformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	14	1	1	1	GRM7-GRM4
+GCF_965183815.1	Platalea leucorodia	Aves	Pelecaniformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	14	0	0	0	
+GCA_013399565.1	Podilymbus podiceps	Aves	Podicipediformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	7	14	0	0	0	
+GCF_030490865.1	Poecile atricapillus	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	18	1	1	1	GRM7-GRM4
+GCF_964638095.1	Poromitra crassiceps	Actinopteri	Beryciformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	22	13	1	0	1	BHLHE40-BHLHE41
+GCF_964638095.1	Poromitra crassiceps	Actinopteri	Beryciformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	22	5	0	0	0	
+GCF_964638095.1	Poromitra crassiceps	Actinopteri	Beryciformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	13	5	0	0	0	
+GCF_009764475.1	Pristis pectinata	Chondrichthyes	Rhinopristiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	13	13	1	0	1	BHLHE40-BHLHE41
+GCF_019279795.1	Protopterus annectens	Dipnoi	Ceratodontiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	12	17	2	1	2	BHLHE40-BHLHE41;PLXNB1-PLXNC1
+GCF_019279795.1	Protopterus annectens	Dipnoi	Ceratodontiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	12	14	1	0	1	ARL8B-ARL8A
+GCF_019279795.1	Protopterus annectens	Dipnoi	Ceratodontiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	17	14	1	0	1	UBE2N-UBE2T
+GCA_013397535.1	Pterocles burchelli	Aves	Pterocliformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	8	11	1	0	1	BHLHE40-BHLHE41
+GCA_013397535.1	Pterocles burchelli	Aves	Pterocliformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	8	9	1	1	1	GRM7-GRM4
+GCA_013397535.1	Pterocles burchelli	Aves	Pterocliformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	11	9	0	0	0	
+GCF_000699105.1	Pygoscelis adeliae	Aves	Sphenisciformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	11	12	0	0	0	
+GCF_000699105.1	Pygoscelis adeliae	Aves	Sphenisciformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	11	15	0	0	0	
+GCF_000699105.1	Pygoscelis adeliae	Aves	Sphenisciformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	12	15	0	0	0	
+GCF_963514005.1	Raja brachyura	Chondrichthyes	Rajiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	10	10	0	0	0	
+GCF_057381845.1	Rhamphochromis longiceps	Actinopteri	Cichliformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	11	12	1	0	1	BHLHE40-BHLHE41
+GCF_028389875.1	Rhea pennata	Aves	Rheiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	18	1	0	1	BHLHE40-BHLHE41
+GCF_028389875.1	Rhea pennata	Aves	Rheiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	15	1	1	1	GRM7-GRM4
+GCF_028389875.1	Rhea pennata	Aves	Rheiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	15	0	0	0	
+GCF_901001135.2	Rhinatrema bivittatum	Amphibia	Gymnophiona	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	18	1	0	1	BHLHE40-BHLHE41
+GCF_901001135.2	Rhinatrema bivittatum	Amphibia	Gymnophiona	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	18	1	1	1	GRM7-GRM4
+GCF_901001135.2	Rhinatrema bivittatum	Amphibia	Gymnophiona	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	18	0	0	0	
+GCA_013399305.1	Rostratula benghalensis	Aves	Charadriiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	9	13	1	0	1	BHLHE40-BHLHE41
+GCF_036850765.1	Saccopteryx bilineata	Mammalia	Chiroptera	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	19	1	0	1	BHLHE40-BHLHE41
+GCF_036850765.1	Saccopteryx bilineata	Mammalia	Chiroptera	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	16	0	0	0	
+GCF_036850765.1	Saccopteryx bilineata	Mammalia	Chiroptera	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	16	0	0	0	
+GCF_965601325.1	Salmo salar	Actinopteri	Salmoniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	12	10	0	0	0	
+GCF_965601325.1	Salmo salar	Actinopteri	Salmoniformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	12	5	0	0	0	
+GCF_965601325.1	Salmo salar	Actinopteri	Salmoniformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	10	5	0	0	0	
+GCF_027409825.1	Scomber japonicus	Actinopteri	Scombriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	21	12	1	0	1	BHLHE40-BHLHE41
+GCF_027409825.1	Scomber japonicus	Actinopteri	Scombriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	21	5	0	0	0	
+GCF_027409825.1	Scomber japonicus	Actinopteri	Scombriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	12	5	0	0	0	
+GCF_047496885.1	Scyliorhinus torazame	Chondrichthyes	Carcharhiniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	9	12	0	0	0	
+GCA_013400415.1	Scytalopus superciliaris	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	7	10	0	0	0	
+GCA_013399895.1	Serilophus lunatus	Aves	Passeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	12	12	0	0	0	
+GCA_013397395.1	Sinosuthora webbiana	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	10	6	1	0	1	BHLHE40-BHLHE41
+GCF_048593235.1	Sminthopsis crassicaudata	Mammalia	Dasyuromorphia	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	20	1	0	1	BHLHE40-BHLHE41
+GCF_048593235.1	Sminthopsis crassicaudata	Mammalia	Dasyuromorphia	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	19	1	1	1	GRM7-GRM4
+GCF_048593235.1	Sminthopsis crassicaudata	Mammalia	Dasyuromorphia	ITPR2_vs_ITPR3	ITPR_vs_ITPR	20	19	0	0	0	
+GCF_027595985.1	Sorex araneus	Mammalia	Eulipotyphla	ITPR1_vs_ITPR2	ITPR_vs_ITPR	15	17	1	0	1	BHLHE40-BHLHE41
+GCF_027595985.1	Sorex araneus	Mammalia	Eulipotyphla	ITPR1_vs_ITPR3	ITPR_vs_ITPR	15	18	1	1	1	GRM7-GRM4
+GCF_027595985.1	Sorex araneus	Mammalia	Eulipotyphla	ITPR2_vs_ITPR3	ITPR_vs_ITPR	17	18	0	0	0	
+GCF_900880675.2	Sparus aurata	Actinopteri	Spariformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	20	11	1	0	1	BHLHE40-BHLHE41
+GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	Kurtiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	15	13	1	0	1	BHLHE40-BHLHE41
+GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	Kurtiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	15	5	0	0	0	
+GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	Kurtiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	13	5	0	0	0	
+GCF_021028975.2	Sphaerodactylus townsendi	Lepidosauria	Squamata	ITPR1_vs_ITPR2	ITPR_vs_ITPR	13	16	1	0	1	BHLHE40-BHLHE41
+GCF_021028975.2	Sphaerodactylus townsendi	Lepidosauria	Squamata	ITPR1_vs_ITPR3	ITPR_vs_ITPR	13	18	1	1	1	GRM7-GRM4
+GCF_021028975.2	Sphaerodactylus townsendi	Lepidosauria	Squamata	ITPR2_vs_ITPR3	ITPR_vs_ITPR	16	18	1	1	1	STK38L-STK38
+GCA_054099775.1	Steatornis caripensis	Aves	Caprimulgiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	19	1	0	1	BHLHE40-BHLHE41
+GCA_054099775.1	Steatornis caripensis	Aves	Caprimulgiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	18	1	1	1	GRM7-GRM4
+GCA_054099775.1	Steatornis caripensis	Aves	Caprimulgiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	18	0	0	0	
+GCF_047716275.1	Strix uralensis	Aves	Strigiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	19	1	0	1	BHLHE40-BHLHE41
+GCF_047716275.1	Strix uralensis	Aves	Strigiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	17	1	1	1	GRM7-GRM4
+GCF_047716275.1	Strix uralensis	Aves	Strigiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	17	0	0	0	
+GCF_040807025.1	Struthio camelus	Aves	Struthioniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	15	20	1	0	1	BHLHE40-BHLHE41
+GCF_040807025.1	Struthio camelus	Aves	Struthioniformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	15	16	1	1	1	GRM7-GRM4
+GCF_040807025.1	Struthio camelus	Aves	Struthioniformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	20	16	0	0	0	
+GCF_000698965.1	Struthio camelus australis	Aves	Struthioniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	8	6	0	0	0	
+GCF_000698965.1	Struthio camelus australis	Aves	Struthioniformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	8	10	0	0	0	
+GCF_000698965.1	Struthio camelus australis	Aves	Struthioniformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	6	10	0	0	0	
+GCA_014839755.1	Sylvia borin	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	17	16	1	0	1	BHLHE40-BHLHE41
+GCA_014839755.1	Sylvia borin	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	17	16	1	1	1	GRM7-GRM4
+GCA_014839755.1	Sylvia borin	Aves	Passeriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	16	16	0	0	0	
+GCF_901000725.3	Takifugu rubripes	Actinopteri	Tetraodontiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	11	0	0	0	
+GCF_901000725.3	Takifugu rubripes	Actinopteri	Tetraodontiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	6	0	0	0	
+GCF_901000725.3	Takifugu rubripes	Actinopteri	Tetraodontiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	11	6	0	0	0	
+GCF_023851605.1	Tamandua tetradactyla	Mammalia	Pilosa	ITPR1_vs_ITPR2	ITPR_vs_ITPR	11	16	1	0	1	BHLHE40-BHLHE41
+GCF_023851605.1	Tamandua tetradactyla	Mammalia	Pilosa	ITPR1_vs_ITPR3	ITPR_vs_ITPR	11	19	1	1	1	GRM7-GRM4
+GCF_023851605.1	Tamandua tetradactyla	Mammalia	Pilosa	ITPR2_vs_ITPR3	ITPR_vs_ITPR	16	19	0	0	0	
+GCF_009769465.1	Tauraco erythrolophus	Aves	Musophagiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	19	1	0	1	BHLHE40-BHLHE41
+GCF_009769465.1	Tauraco erythrolophus	Aves	Musophagiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	16	1	1	1	GRM7-GRM4
+GCF_009769465.1	Tauraco erythrolophus	Aves	Musophagiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	19	16	0	0	0	
+GCF_933228915.1	Telmatherina bonti	Actinopteri	Atheriniformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	14	1	0	1	BHLHE40-BHLHE41
+GCF_933228915.1	Telmatherina bonti	Actinopteri	Atheriniformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	7	0	0	0	
+GCF_933228915.1	Telmatherina bonti	Actinopteri	Atheriniformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	14	7	0	0	0	
+GCF_050624435.1	Tenrec ecaudatus	Mammalia	Afrosoricida	ITPR1_vs_ITPR2	ITPR_vs_ITPR	9	15	1	0	1	BHLHE40-BHLHE41
+GCF_050624435.1	Tenrec ecaudatus	Mammalia	Afrosoricida	ITPR1_vs_ITPR3	ITPR_vs_ITPR	9	19	1	1	1	GRM7-GRM4
+GCF_050624435.1	Tenrec ecaudatus	Mammalia	Afrosoricida	ITPR2_vs_ITPR3	ITPR_vs_ITPR	15	19	0	0	0	
+GCF_902500255.1	Thalassophryne amazonica	Actinopteri	Batrachoidiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	16	13	1	0	1	BHLHE40-BHLHE41
+GCF_902500255.1	Thalassophryne amazonica	Actinopteri	Batrachoidiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	16	10	0	0	0	
+GCF_902500255.1	Thalassophryne amazonica	Actinopteri	Batrachoidiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	13	10	0	0	0	
+GCA_013397245.1	Thryothorus ludovicianus	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	5	6	0	0	0	
+GCF_045865225.1	Trachurus japonicus	Actinopteri	Carangiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	20	10	1	0	1	BHLHE40-BHLHE41
+GCF_045865225.1	Trachurus japonicus	Actinopteri	Carangiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	20	10	0	0	0	
+GCF_045865225.1	Trachurus japonicus	Actinopteri	Carangiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	10	10	0	0	0	
+GCF_000243295.1	Trichechus manatus latirostris	Mammalia	Sirenia	ITPR1_vs_ITPR2	ITPR_vs_ITPR	15	18	1	0	1	BHLHE40-BHLHE41
+GCF_000243295.1	Trichechus manatus latirostris	Mammalia	Sirenia	ITPR1_vs_ITPR3	ITPR_vs_ITPR	15	19	1	1	1	GRM7-GRM4
+GCF_000243295.1	Trichechus manatus latirostris	Mammalia	Sirenia	ITPR2_vs_ITPR3	ITPR_vs_ITPR	18	19	0	0	0	
+GCF_000334495.1	Tupaia belangeri chinensis	Mammalia	Scandentia	ITPR2_vs_ITPR3	ITPR_vs_ITPR	16	19	0	0	0	
+GCA_013399735.1	Tyrannus savana	Aves	Passeriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	11	11	0	0	0	
+GCF_018691265.1	Tyto alba	Aves	Strigiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	15	17	1	0	1	BHLHE40-BHLHE41
+GCF_018691265.1	Tyto alba	Aves	Strigiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	15	16	1	1	1	GRM7-GRM4
+GCF_018691265.1	Tyto alba	Aves	Strigiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	17	16	0	0	0	
+GCF_000004195.4	Xenopus tropicalis	Amphibia	Anura	ITPR1_vs_ITPR2	ITPR_vs_ITPR	14	14	1	0	1	BHLHE40-BHLHE41
+GCF_000004195.4	Xenopus tropicalis	Amphibia	Anura	ITPR1_vs_ITPR3	ITPR_vs_ITPR	14	18	3	1	3	CNTN4-CNTN2;CNTN4-NFASC;GRM7-GRM4
+GCF_000004195.4	Xenopus tropicalis	Amphibia	Anura	ITPR2_vs_ITPR3	ITPR_vs_ITPR	14	18	0	0	0	
+GCF_016859285.1	Xiphias gladius	Actinopteri	Istiophoriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	18	11	1	0	1	BHLHE40-BHLHE41
+GCF_016859285.1	Xiphias gladius	Actinopteri	Istiophoriformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	18	9	0	0	0	
+GCF_016859285.1	Xiphias gladius	Actinopteri	Istiophoriformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	11	9	0	0	0	
+GCF_960531495.1	Zeus faber	Actinopteri	Zeiformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	22	13	1	0	1	BHLHE40-BHLHE41
+GCF_960531495.1	Zeus faber	Actinopteri	Zeiformes	ITPR1_vs_ITPR3	ITPR_vs_ITPR	22	10	0	0	0	
+GCF_960531495.1	Zeus faber	Actinopteri	Zeiformes	ITPR2_vs_ITPR3	ITPR_vs_ITPR	13	10	0	0	0	
+GCA_013399795.1	Zosterops hypoxanthus	Aves	Passeriformes	ITPR1_vs_ITPR2	ITPR_vs_ITPR	5	6	1	0	1	BHLHE40-BHLHE41
