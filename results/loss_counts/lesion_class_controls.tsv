@@ -1,0 +1,6 @@
+cell	vclass	direction	n	q_bh	n_above_bar	pos_above	neg_above	p_above	n_below_bar	pos_below	neg_below	p_below	median_identity	median_others_identity	sibling_of	note
+ITPR1	Aves	deficit	27	0.0112006	3	0	3		24	6	18	0.0226558	0.9888	0.9841	ITPR2;ITPR3	this stratum and its siblings are the same within-genome comparison read from opposite sides
+ITPR2	Actinopteri	excess	32	0.0112006	31	23	8	0.0106738	1	1	0		0.8596	0.8696	RYR	this stratum and its siblings are the same within-genome comparison read from opposite sides
+ITPR2	Aves	deficit	24	0.0112006	5	5	0		19	0	19	3.8147e-06	0.9817	0.9869	ITPR1;ITPR3	this stratum and its siblings are the same within-genome comparison read from opposite sides
+ITPR3	Aves	excess	27	4.51803e-05	6	6	0		21	19	2	0.000221252	0.9891	0.9841	ITPR1;ITPR2	this stratum and its siblings are the same within-genome comparison read from opposite sides
+RYR	Actinopteri	deficit	38	0.0112006	37	10	27	0.00763208	1	0	1		0.8784	0.8746	ITPR2	this stratum and its siblings are the same within-genome comparison read from opposite sides

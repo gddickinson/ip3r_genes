@@ -1,0 +1,5 @@
+cell	n_scored	n_above_bar	n_fossils	frac_above_bar	median_identity	median_identity_above_bar
+ITPR1	341	7	2	0.0205	0.9585	0.8538
+ITPR2	259	3	3	0.0116	0.9674	0.6135
+ITPR3	274	8	2	0.0292	0.9672	0.8765
+RYR	886	26	10	0.0293	0.7895	0.7443

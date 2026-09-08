@@ -1,0 +1,39 @@
+cell	vclass	matched	n_genomes	n	n_pos	n_neg	n_ties	median_diff	direction	p	q_bh	underpowered
+ITPR1	Actinopteri	1	20	8	4	4	12	0	tied	1	1	0
+ITPR1	Amphibia	1	5	3	1	2	2	0	deficit			1
+ITPR1	Aves	1	108	27	6	21	81	0	deficit	0.00592461	0.0112006	0
+ITPR1	Chondrichthyes	1	6	3	1	2	3	0	deficit			1
+ITPR1	Cladistia	1	1	0	0	0	1	0	tied			1
+ITPR1	Coelacanthimorpha	1	1	1	0	1	0	-0.29325	deficit			1
+ITPR1	Crocodylia	1	1	0	0	0	1	0	tied			1
+ITPR1	Dipnoi	1	1	0	0	0	1	0	tied			1
+ITPR1	Lepidosauria	1	2	0	0	0	2	0	tied			1
+ITPR1	Mammalia	1	34	4	3	1	30	0	excess			1
+ITPR2	Actinopteri	1	45	32	24	8	13	0.1686	excess	0.00700037	0.0112006	0
+ITPR2	Amphibia	1	6	2	1	1	4	0	tied			1
+ITPR2	Aves	1	104	24	5	19	80	0	deficit	0.00661075	0.0112006	0
+ITPR2	Chondrichthyes	1	2	1	0	1	1	-0.005	deficit			1
+ITPR2	Cladistia	1	1	0	0	0	1	0	tied			1
+ITPR2	Crocodylia	1	1	0	0	0	1	0	tied			1
+ITPR2	Dipnoi	1	1	0	0	0	1	0	tied			1
+ITPR2	Lepidosauria	1	3	2	2	0	1	0.3702	excess			1
+ITPR2	Mammalia	1	34	5	0	5	29	0	deficit			1
+ITPR2	Testudines	1	1	0	0	0	1	0	tied			1
+ITPR3	Actinopteri	1	30	13	7	6	17	0	excess	1	1	0
+ITPR3	Amphibia	1	4	0	0	0	4	0	tied			1
+ITPR3	Aves	1	105	27	25	2	78	0	excess	5.64754e-06	4.51803e-05	0
+ITPR3	Chondrichthyes	1	5	4	3	1	1	0.01	excess			1
+ITPR3	Cladistia	1	1	0	0	0	1	0	tied			1
+ITPR3	Coelacanthimorpha	1	1	1	1	0	0	0.8385	excess			1
+ITPR3	Crocodylia	1	1	0	0	0	1	0	tied			1
+ITPR3	Dipnoi	1	1	0	0	0	1	0	tied			1
+ITPR3	Lepidosauria	1	3	2	0	2	1	-0.1851	deficit			1
+ITPR3	Mammalia	1	36	6	3	3	30	0	tied			1
+ITPR3	Testudines	1	1	0	0	0	1	0	tied			1
+RYR	Actinopteri	1	62	38	10	28	24	0	deficit	0.00509764	0.0112006	0
+RYR	Amphibia	1	6	2	1	1	4	0	tied			1
+RYR	Aves	1	73	12	6	6	61	0	tied	1	1	0
+RYR	Chondrichthyes	1	5	2	1	1	3	0	tied			1
+RYR	Cladistia	1	1	0	0	0	1	0	tied			1
+RYR	Coelacanthimorpha	1	1	1	0	1	0	-0.54525	deficit			1
+RYR	Mammalia	1	31	4	4	0	27	0	excess			1

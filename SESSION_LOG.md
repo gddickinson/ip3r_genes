@@ -2441,3 +2441,100 @@ presence as primary (D46); do not fit Mk rates to an invariant character;
 there are no pseudogene fossils, so the shared-lesion Poisson test must be
 reported with its denominator. The lead worth following instead is D47's
 ITPR3 indel excess, which nothing in this project explains.
+
+---
+
+## 2026-09-08 — S15b: the loss counts
+
+**Task.** S15b — Dollo parsimony as the primary count, Mk fits over the
+coding × evidence × branch-length × contiguity sensitivity matrix, and the
+pseudogene-fossil lesion analysis. Status: **completed**.
+
+### What ran
+
+`scripts/s15b_run.py`, ordered stages `dollo → sensitivity → mk → fossils
+→ tables → figures → report`, 21 constructed controls before anything is
+written, 3 mutations applied and all 3 caught. Everything it reads is
+committed (S15a's matrix, S15a's 309-genome tree, S15a's ORF-integrity
+tables, S13's node calibrations), so the whole task is offline and a rerun
+is deterministic. Full clean run: ~150 s, dominated by the 522 Mk fits.
+
+Twelve new modules, all inside the 500-line budget:
+`s15b_lib` (Newick + the three branch-length schemes), `s15b_coding` (the
+evidence ladder and the recoder), `s15b_dollo`, `s15b_mk`,
+`s15b_sensitivity`, `s15b_fossils`, `s15b_tables`, `s15b_priors`,
+`s15b_figures`, `s15b_test_counts`, `s15b_run`, and the three-way report
+split `s15b_report` + `s15b_report_results` + `s15b_report_lesions`.
+
+### What resulted
+
+- **Dollo count 0**, family-level and per paralog, across 927 cells in 309
+  genomes. The routine that returns it finds a constructed loss on a known
+  edge (T1), merges sister losses (T2) and bounds a polytomy's (T4).
+- **The sensitivity matrix is the deliverable.** 32 settings × 2 codings ×
+  3 branch-length schemes. Family coding manufactures a loss in **2 of 32**
+  settings (worst case 1 genome); paralog-resolved in **18 of 32** (up to 45
+  loss edges, 37 independent). D46 was a judgement in S15a and is a
+  measurement now → **D48**.
+- Moving the reconstruction bar across the **whole gap its calibration
+  measured** (0.100–0.174) changes no cell in 927. Turning D45 off alone
+  manufactures the 4 cyclostome losses at every rung. Tightening the
+  evidence alone, both rules on, manufactures **exactly one** cell —
+  *Bothrops jararaca* ITPR2, reassembled at 0.796 across 6 contigs.
+- **Branch lengths change a Dollo count in 0 of 32 settings**, reported as
+  invariant rather than dropped (D48).
+- **Mk stated, not fitted**: every likelihood monotone to its boundary on
+  every model, axis and scheme — measured on a rate grid, with ARD's *gain*
+  axis rising to the edge. All 12 fits at the operating point are refusals.
+  The 405 fits that are possible are fits to manufactured losses; their rate
+  spans a factor of 495 across the three branch-length schemes.
+- **No pseudogene fossils**: 44 of 1,760 scored loci clear the lesion bar
+  and **44 of 44 are at full coverage**. The generous three-reading screen
+  fires on 7 ITPR loci, all at coverage 1.00 with 1–2 internal stops.
+- **D47's lead is a bird result**: ITPR3 25 genomes to 2 in Aves
+  (q = 4.5e-5) against 7 to 6 in Actinopteri (p = 1.0) — but 21 of the 27
+  bird pairs are below D4's contiguity bar, so the verdict is
+  `underpowered` → **D49**.
+- **Unasked bonus.** Dollo's unpinned gain nodes land at **Vertebrata** for
+  ITPR1 and **Gnathostomata** for ITPR2/ITPR3 — S13's placement, from an
+  instrument that reads no gene tree, no alignment and no reconciliation.
+  Reported as *orthogonal*, not as corroboration: it rests on the same
+  cyclostome cells S13 used.
+
+### What went wrong, and what it changed
+
+- **T3 caught a real design gap on the first run.** Unpinned Dollo scores a
+  clade-wide absence as *ancestral*, not as a loss. That is right for ITPR2
+  and ITPR3 (S13 places their duplication inside the tree) and wrong for the
+  family (S20/S23 found it across the eukaryotes). The gain rule is now
+  declared per character in `s15b_sensitivity.PIN_GAIN`, with T3/T3b as its
+  two halves.
+- **The fossil screen flagged the entire RyR control.** `not_live` asked the
+  ITPR character matrix for a state the RyR cell does not have, and got
+  "not present" for all 26. The reading is now marked *unavailable* when the
+  cell has no matrix row, and T16 is the control.
+- **The first ARD likelihood profile was ER in disguise** — profiling along
+  the diagonal q01 = q10 is ER by construction and drew the same curve twice
+  in two colours. ARD is now profiled on each axis separately, and the gain
+  axis rising to the grid's edge is the better statement anyway.
+- **A figure used `hash()` for jitter**, which is not stable across runs.
+  Replaced with a point's rank in its own row (D24 applied to a jitter).
+- Two report bugs, both caught by reading the rendered output against its
+  own tables: a filter on `loosest_evidence` printed "D45 off manufactures 0
+  losses" beside a table showing 4, and the Mk sentence had its refusal
+  count inverted. Both now read the number off `dollo_counts.tsv`.
+- `s15b_report_results.py` hit 680 lines and was split into
+  `s15b_report_results` (the count) + `s15b_report_lesions` (the half that
+  argues against it), 377 and 381 lines.
+
+### Next
+
+S16 — duplication history: are ITPR1/2/3 2R ohnologs, and are teleost
+itpr1a/itpr1b from 3R. Three things S15b puts in front of it. The gain-node
+result restates the 2R question — if both WGD rounds predate the cyclostome
+divergence, ITPR2 and ITPR3 should each have a cyclostome co-ortholog and
+neither does. The 309-genome species tree exists and places every swept
+assembly, so retention asymmetry no longer has to be stated on S6's 134
+representatives. And the per-**locus** copy table must be read out of each
+sweep `summary.json`, not out of the ledger, which holds only each cell's
+best locus.

@@ -19,12 +19,13 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S15a complete — the census is enumerated, aligned, dated,
-audited and now counted; 22 of the 33 ledger rows are done.** The most
-recent result is that **no vertebrate has lost an IP3 receptor gene**: 0 of
-927 genome × paralog cells in the 309-genome sweep supports absence, and in
-every assembly contiguous enough to carry the gene all three copies are
-there (§ *S15a* below).
+**Status: S15b complete — the census is enumerated, aligned, dated,
+audited, counted and now stress-tested; 23 of the 33 ledger rows are
+done.** **No vertebrate has lost an IP3 receptor gene**: 0 of 927 genome ×
+paralog cells in the 309-genome sweep supports absence, the Dollo count on
+the vertebrate tree is 0, and it takes **2 of 32** settings of the
+evidence rules to manufacture even one — against 18 of 32 if the question
+is asked per paralog rather than per family (§ *S15b* below).
 
 The build-up. The literature baseline is verified with a citation on every
 claim ([`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md), 32 pages,
@@ -444,7 +445,7 @@ One task per session. Full ledger with dependencies and results in
 | S12 | Expression evidence (SRA junction reads) | ✅ completed 2026-09-08 |
 | S13 | Reconciliation & dating | ✅ completed 2026-09-08 |
 | S15a | Loss dynamics — the instrument and the character matrix | ✅ completed 2026-09-08 |
-| S15b | Loss dynamics — the counts and the sensitivity matrix | ⏳ pending |
+| S15b | Loss dynamics — the counts and the sensitivity matrix | ✅ completed 2026-09-08 |
 | S16 | Duplication history (2R / 3R, and the RyR parallel) | ⏳ pending |
 | S17 | Constraint & function — the clinical-variant test | ⏳ pending |
 | S18 | Annotation-quality audit + correction list | ⏳ pending |
@@ -461,6 +462,53 @@ One task per session. Full ledger with dependencies and results in
 ## Findings so far
 
 Plain-language entries per task: [`FINDINGS.md`](FINDINGS.md). Headlines:
+
+**S15b — how hard you have to try to find a loss.** The count of lost IP3
+receptor genes across 309 vertebrate genomes, placed formally on the tree,
+is **zero** — and the method that returns it is one that finds constructed
+losses on known branches, merges two losses in sister lineages into the
+single event they would have been, and refuses to over-count under
+unresolved parts of the tree. What is worth reporting is the shape of that
+zero. Across 32 settings of the evidence rules, from the most generous the
+data allow to a setting that accepts nothing but a complete uninterrupted
+gene model and ignores whether the assembly could hold one, asking *does
+this animal have an IP3 receptor at all* produces a loss in **2 of 32**
+settings, worst case one animal in 309; asking *does it have this
+particular one of the three* produces one in **18 of 32**, up to 45 at the
+extreme. None of the 45 is real. Two knobs turn out to change nothing —
+the threshold for accepting a gene reassembled from scattered pieces, moved
+across the whole range its own calibration leaves open, changes not one of
+the 927 answers; and the assumed timescale of the tree cannot change a
+count of losses at all. One knob changes a great deal: refusing to allow
+that a genome carrying spare unidentifiable family copies is not evidence
+against a particular copy immediately produces four losses, in the hagfish
+and the lamprey, both of which carry three IP3 receptor genes.
+→ [`results/loss_counts/report.md`](results/loss_counts/report.md)
+
+![the sensitivity matrix](results/loss_counts/figures/sensitivity_matrix.png)
+
+**S15b — no rate of loss can be quoted, and no dead genes exist to read.**
+A model asked for the rate at which a gene is lost, on a gene that has
+never been lost, returns whatever number it started from. That was measured
+rather than asserted: traced across eight orders of magnitude, the fit
+slides monotonically to the edge every time, under every model and every
+assumed timescale. And a gene that died long ago should leave a corpse —
+a recognisable but broken copy. Of 1,760 gene models examined, 44 carry
+enough small disruptions to be worth a second look, and **all 44 are
+complete genes**. There is no test to run for shared damage between related
+dead copies, because there are none.
+
+**S15b — the ITPR3 disruption excess is a bird result.** The previous
+session found that ITPR3's gene models carry more small reading-frame
+disruptions than its siblings do in the same animal, and could not say why.
+Split by animal group, the answer is sharp: in **25 of 27 birds** ITPR3
+carries more than its siblings; in ray-finned fishes the same test is 7 to
+6, which is nothing. The catch is printed beside it — birds have the most
+fragmented assemblies of any group here and 21 of those 27 sit below this
+project's quality bar. The six above it all point the same way and none
+points against, but six cannot settle it. The lineage is named; the
+mechanism is not *(pending: S18/S19)*.
+
 
 **S15a — nobody has lost this gene.** Across 309 vertebrate genomes, from
 hagfish to hummingbirds, there is not one case of a species that has lost an

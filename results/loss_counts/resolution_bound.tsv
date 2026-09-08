@@ -1,0 +1,8 @@
+metric	value	note
+internal_nodes	468	including the unary species nodes the sweep's one-tip-per-assembly design creates
+unary_nodes	308	one per species represented by a single assembly
+polytomies	49	internal nodes of degree 3 or more
+max_polytomy_degree	23	the largest unresolved node in the tree
+edges_below_polytomies	246	edges whose sibling relationships the tree does not resolve; a loss on one of these is bounded, not counted
+settings_with_any_loss	43	rows of dollo_counts.tsv placing at least one loss
+settings_where_bound_is_wide	16	rows where the maximum and minimum independent counts differ, i.e. where a polytomy carries more than one loss

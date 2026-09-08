@@ -1663,3 +1663,98 @@ are three genes whose loss in a mouse is lethal or nearly so, so a complete
 absence of loss across the vertebrates is what one would have predicted.
 What is new is that it has now been checked, one genome at a time, with the
 assembly's own limitations counted as limitations rather than as absences.
+
+---
+
+## 2026-09-08 — S15b: how hard you have to try to find a loss
+
+The previous session established that no vertebrate genome supplies evidence
+that an IP3 receptor gene is missing. This session asked the obvious next
+question — what would it take to make one appear? — and the answer turns out
+to be more interesting than the count.
+
+**The count.** Zero. Placed formally on a tree of all three hundred and nine
+genomes, with the method that would have found a loss had one been there: it
+was given constructed losses on known branches and found them, merged two
+losses in sister lineages into the single event they would have been, and
+refused to over-count losses under parts of the tree that are not fully
+resolved. Nine hundred and twenty-seven gene-in-genome questions, no absence.
+
+**How hard it is to manufacture one.** The rules that decide whether a gene
+counts as present were loosened and tightened across thirty-two different
+settings, from the most generous the evidence allows to the strictest — one
+that accepts nothing except a complete, uninterrupted gene model and ignores
+whether the assembly could even hold such a thing. Asking only "does this
+animal have an IP3 receptor at all", a loss appears in **two of thirty-two**
+settings, and the worst case is one animal in three hundred and nine. Asking
+"does this animal have *this particular* one of the three", a loss appears in
+**eighteen of thirty-two**, and at the extreme setting there are forty-five
+of them. None of those forty-five is real. What the comparison shows is that
+a statement about the family is robust and a statement about an individual
+paralog in a broken assembly is not — which is why the family-level statement
+is the one this project makes.
+
+**Two things that change nothing.** The threshold for accepting a gene
+reassembled from pieces scattered across an assembly was moved across the
+entire range its own calibration leaves open, and not a single one of the
+nine hundred and twenty-seven answers changed. And the assumed timescale of
+the vertebrate tree — whether branches are counted as steps, spaced evenly,
+or dated from the fossil record — cannot change a count of losses at all, for
+the simple reason that the counting method looks at branching and not at
+time. That was worth checking rather than assuming.
+
+**One thing that changes a great deal.** Refusing to make one specific
+allowance — that a genome carrying spare, unidentifiable copies of the gene
+family is not evidence that a particular copy is gone — immediately produces
+four losses, in the hagfish and the lamprey. Those two animals each carry
+three IP3 receptor genes. The four "losses" would have been an artefact of
+the search's own inability to tell which of their three is which.
+
+**The one cell that a sceptic should be handed.** Of all nine hundred and
+twenty-seven, exactly one becomes an absence when the evidence bar is
+tightened while every protective allowance is left in place: the second IP3
+receptor of the jararaca pit viper. Its gene is there — it reassembles across
+six pieces of the assembly at four-fifths of full length, in a genome
+contiguous enough to have held it whole — but it is the only gene in the whole
+survey whose presence rests on that reassembly and on nothing else.
+
+**No rate of loss can be quoted, and that is a result rather than a gap.**
+Standard models for gene gain and loss estimate how often the gene is lost.
+On a character where it has never been lost there is nothing to estimate, and
+a model asked anyway will return whatever number it started from, dressed up
+as an answer. This was measured rather than asserted: the fit was traced
+across eight orders of magnitude of loss rate and it slides monotonically to
+the edge every time. Where the loosened settings *do* manufacture losses, the
+fitted rate simply tracks how many were manufactured — a property of the
+filter, not of the animals.
+
+**No dead genes.** A gene that died long ago should leave a corpse: a
+recognisable but broken copy, its reading frame full of stops. Of one thousand
+seven hundred and sixty gene models examined, forty-four carry enough small
+disruptions to be worth a second look — and all forty-four are complete
+genes. Deliberately using the most generous definition of a corpse available,
+seven IP3 receptor loci qualify, and every one of them is a full-length gene
+carrying one or two stray stops. There is no test to run for shared damage
+between related dead copies, because there are no dead copies.
+
+**The one new biological lead, now localised.** The last session found that
+ITPR3's gene models carry more small reading-frame disruptions than its
+sibling genes do in the same animal, and could not say why. Splitting that
+comparison by animal group gives a sharp answer: **it is a bird result.**
+In twenty-five of twenty-seven birds, ITPR3 carries more disruptions than its
+siblings; in ray-finned fishes the same test is seven to six, which is
+nothing. The catch is that birds have the most fragmented genome assemblies
+of any group here, and twenty-one of those twenty-seven birds sit below the
+quality bar this project uses. The six that sit above it all point the same
+way and none points against — but six is not enough to settle it. So the
+lineage is now named and the mechanism is not, and the next step is more
+birds with better assemblies rather than a cleverer statistic
+*(pending: S18/S19)*.
+
+**An echo worth noting, not leaning on.** Asked where on the tree each of the
+three genes first appears, this method — which reads no gene tree and no
+alignment, only which animals have which gene — puts ITPR1 at the origin of
+the vertebrates and ITPR2 and ITPR3 at the origin of the jawed vertebrates.
+That is exactly where the reconciliation two sessions ago placed the two
+duplications. It agrees because it is partly reading the same evidence from
+another side, so it is a consistency check and not a second confirmation.

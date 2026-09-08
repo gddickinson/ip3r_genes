@@ -1,0 +1,129 @@
+coding	character	evidence	use_r5	use_r6	is_base	n_tips_scored	n_present	n_absent	n_undecided	n_unknown_tips	dollo_losses_max	dollo_losses_min	gain_node	gain_rule	mrca_of_present	resolution_note
+family	ITPR_family	gap_lo	1	1	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	gap_lo	1	1	0	309	309	0	0	0	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	gap_lo	1	1	0	309	307	0	2	2	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	gap_lo	1	1	0	309	307	0	2	2	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	gap_lo	1	0	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	gap_lo	1	0	0	309	309	0	0	0	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	gap_lo	1	0	0	309	307	0	2	2	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	gap_lo	1	0	0	309	307	0	2	2	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	gap_lo	0	1	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	gap_lo	0	1	0	309	309	0	0	0	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	gap_lo	0	1	0	309	307	2	0	0	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	gap_lo	0	1	0	309	307	2	0	0	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	gap_lo	0	0	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	gap_lo	0	0	0	309	309	0	0	0	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	gap_lo	0	0	0	309	307	2	0	0	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	gap_lo	0	0	0	309	307	2	0	0	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	calibrated	1	1	1	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	calibrated	1	1	1	309	309	0	0	0	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	calibrated	1	1	1	309	307	0	2	2	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	calibrated	1	1	1	309	307	0	2	2	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	calibrated	1	0	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	calibrated	1	0	0	309	309	0	0	0	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	calibrated	1	0	0	309	307	0	2	2	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	calibrated	1	0	0	309	307	0	2	2	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	calibrated	0	1	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	calibrated	0	1	0	309	309	0	0	0	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	calibrated	0	1	0	309	307	2	0	0	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	calibrated	0	1	0	309	307	2	0	0	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	calibrated	0	0	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	calibrated	0	0	0	309	309	0	0	0	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	calibrated	0	0	0	309	307	2	0	0	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	calibrated	0	0	0	309	307	2	0	0	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	gap_hi	1	1	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	gap_hi	1	1	0	309	309	0	0	0	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	gap_hi	1	1	0	309	307	0	2	2	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	gap_hi	1	1	0	309	307	0	2	2	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	gap_hi	1	0	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	gap_hi	1	0	0	309	309	0	0	0	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	gap_hi	1	0	0	309	307	0	2	2	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	gap_hi	1	0	0	309	307	0	2	2	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	gap_hi	0	1	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	gap_hi	0	1	0	309	309	0	0	0	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	gap_hi	0	1	0	309	307	2	0	0	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	gap_hi	0	1	0	309	307	2	0	0	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	gap_hi	0	0	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	gap_hi	0	0	0	309	309	0	0	0	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	gap_hi	0	0	0	309	307	2	0	0	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	gap_hi	0	0	0	309	307	2	0	0	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	recon_half	1	1	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	recon_half	1	1	0	309	303	0	6	6	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	recon_half	1	1	0	309	305	0	4	4	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	recon_half	1	1	0	309	305	0	4	4	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	recon_half	1	0	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	recon_half	1	0	0	309	303	1	5	5	1	1	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	recon_half	1	0	0	309	305	1	3	3	1	1	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	recon_half	1	0	0	309	305	1	3	3	1	1	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	recon_half	0	1	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	recon_half	0	1	0	309	303	0	6	6	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	recon_half	0	1	0	309	305	2	2	2	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	recon_half	0	1	0	309	305	2	2	2	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	recon_half	0	0	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	recon_half	0	0	0	309	303	6	0	0	6	5	Vertebrata	MRCA of present tips	Vertebrata	6 loss edges collapse to 5 independent events if every polytomy carrying more than one is resolved against them
+paralog	ITPR2	recon_half	0	0	0	309	305	4	0	0	2	2	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	recon_half	0	0	0	309	305	4	0	0	2	2	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	recon_strict	1	1	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	recon_strict	1	1	0	309	297	0	12	12	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	recon_strict	1	1	0	309	300	1	8	8	1	1	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	recon_strict	1	1	0	309	298	0	11	11	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	recon_strict	1	0	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	recon_strict	1	0	0	309	297	7	5	5	7	7	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	recon_strict	1	0	0	309	300	6	3	3	6	6	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	recon_strict	1	0	0	309	298	7	4	4	7	7	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	recon_strict	0	1	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	recon_strict	0	1	0	309	297	0	12	12	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	recon_strict	0	1	0	309	300	3	6	6	1	1	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	recon_strict	0	1	0	309	298	2	9	9	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	recon_strict	0	0	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	recon_strict	0	0	0	309	297	12	0	0	12	8	Vertebrata	MRCA of present tips	Vertebrata	12 loss edges collapse to 8 independent events if every polytomy carrying more than one is resolved against them
+paralog	ITPR2	recon_strict	0	0	0	309	300	9	0	0	7	7	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	recon_strict	0	0	0	309	298	11	0	0	9	8	Gnathostomata	MRCA of present tips	Gnathostomata	9 loss edges collapse to 8 independent events if every polytomy carrying more than one is resolved against them
+family	ITPR_family	no_recon	1	1	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	no_recon	1	1	0	309	292	0	17	17	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	no_recon	1	1	0	309	291	1	17	17	1	1	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	no_recon	1	1	0	309	297	0	12	12	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	no_recon	1	0	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	no_recon	1	0	0	309	292	12	5	5	12	11	Vertebrata	MRCA of present tips	Vertebrata	12 loss edges collapse to 11 independent events if every polytomy carrying more than one is resolved against them
+paralog	ITPR2	no_recon	1	0	0	309	291	14	4	4	14	14	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	no_recon	1	0	0	309	297	8	4	4	8	8	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	no_recon	0	1	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	no_recon	0	1	0	309	292	0	17	17	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	no_recon	0	1	0	309	291	3	15	15	1	1	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	no_recon	0	1	0	309	297	2	10	10	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	no_recon	0	0	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	no_recon	0	0	0	309	292	17	0	0	17	12	Vertebrata	MRCA of present tips	Vertebrata	17 loss edges collapse to 12 independent events if every polytomy carrying more than one is resolved against them
+paralog	ITPR2	no_recon	0	0	0	309	291	18	0	0	16	16	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	no_recon	0	0	0	309	297	12	0	0	10	9	Gnathostomata	MRCA of present tips	Gnathostomata	10 loss edges collapse to 9 independent events if every polytomy carrying more than one is resolved against them
+family	ITPR_family	locus_only	1	1	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	locus_only	1	1	0	309	292	0	17	17	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	locus_only	1	1	0	309	285	1	23	23	1	1	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	locus_only	1	1	0	309	296	0	13	13	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	locus_only	1	0	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	locus_only	1	0	0	309	292	12	5	5	12	11	Vertebrata	MRCA of present tips	Vertebrata	12 loss edges collapse to 11 independent events if every polytomy carrying more than one is resolved against them
+paralog	ITPR2	locus_only	1	0	0	309	285	19	5	5	19	18	Gnathostomata	MRCA of present tips	Gnathostomata	19 loss edges collapse to 18 independent events if every polytomy carrying more than one is resolved against them
+paralog	ITPR3	locus_only	1	0	0	309	296	8	5	5	8	8	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	locus_only	0	1	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	locus_only	0	1	0	309	292	0	17	17	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	locus_only	0	1	0	309	285	3	21	21	1	1	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	locus_only	0	1	0	309	296	3	10	10	1	1	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	locus_only	0	0	0	309	309	0	0	0	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	locus_only	0	0	0	309	292	17	0	0	17	12	Vertebrata	MRCA of present tips	Vertebrata	17 loss edges collapse to 12 independent events if every polytomy carrying more than one is resolved against them
+paralog	ITPR2	locus_only	0	0	0	309	285	24	0	0	22	20	Gnathostomata	MRCA of present tips	Gnathostomata	22 loss edges collapse to 20 independent events if every polytomy carrying more than one is resolved against them
+paralog	ITPR3	locus_only	0	0	0	309	296	13	0	0	11	10	Gnathostomata	MRCA of present tips	Gnathostomata	11 loss edges collapse to 10 independent events if every polytomy carrying more than one is resolved against them
+family	ITPR_family	full_locus_only	1	1	0	309	308	0	1	1	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	full_locus_only	1	1	0	309	261	0	48	48	0	0	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	full_locus_only	1	1	0	309	253	1	55	55	1	1	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	full_locus_only	1	1	0	309	269	0	40	40	0	0	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	full_locus_only	1	0	0	309	308	1	0	0	1	1	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	full_locus_only	1	0	0	309	261	20	28	28	20	16	Vertebrata	MRCA of present tips	Vertebrata	20 loss edges collapse to 16 independent events if every polytomy carrying more than one is resolved against them
+paralog	ITPR2	full_locus_only	1	0	0	309	253	28	28	28	25	23	Gnathostomata	MRCA of present tips	Gnathostomata	25 loss edges collapse to 23 independent events if every polytomy carrying more than one is resolved against them
+paralog	ITPR3	full_locus_only	1	0	0	309	269	13	27	27	13	13	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	full_locus_only	0	1	0	309	308	0	1	1	0	0	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	full_locus_only	0	1	0	309	261	1	47	47	1	1	Vertebrata	MRCA of present tips	Vertebrata	
+paralog	ITPR2	full_locus_only	0	1	0	309	253	4	52	52	2	2	Gnathostomata	MRCA of present tips	Gnathostomata	
+paralog	ITPR3	full_locus_only	0	1	0	309	269	4	36	36	2	2	Gnathostomata	MRCA of present tips	Gnathostomata	
+family	ITPR_family	full_locus_only	0	0	0	309	308	1	0	0	1	1	Vertebrata	pinned at root	Vertebrata	
+paralog	ITPR1	full_locus_only	0	0	0	309	261	48	0	0	41	29	Vertebrata	MRCA of present tips	Vertebrata	41 loss edges collapse to 29 independent events if every polytomy carrying more than one is resolved against them
+paralog	ITPR2	full_locus_only	0	0	0	309	253	56	0	0	45	37	Gnathostomata	MRCA of present tips	Gnathostomata	45 loss edges collapse to 37 independent events if every polytomy carrying more than one is resolved against them
+paralog	ITPR3	full_locus_only	0	0	0	309	269	40	0	0	32	27	Gnathostomata	MRCA of present tips	Gnathostomata	32 loss edges collapse to 27 independent events if every polytomy carrying more than one is resolved against them

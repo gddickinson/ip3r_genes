@@ -1,0 +1,145 @@
+{
+ "task": "S15b",
+ "written_at": "2026-09-08 16:22:36",
+ "inputs": {
+  "character_matrix": "results/loss_dynamics/character_matrix.tsv",
+  "species_tree": "results/loss_dynamics/species_tree_309.nwk",
+  "integrity_loci": "results/loss_dynamics/integrity_loci.tsv",
+  "integrity_pairs": "results/loss_dynamics/integrity_pairs.tsv",
+  "calibrations": "results/reconciliation/species_tree_calibrations.tsv"
+ },
+ "parameters": {
+  "evidence_levels": [
+   "gap_lo",
+   "calibrated",
+   "gap_hi",
+   "recon_half",
+   "recon_strict",
+   "no_recon",
+   "locus_only",
+   "full_locus_only"
+  ],
+  "recon_bar_calibrated": 0.13685,
+  "recon_bar_gap": [
+   0.1,
+   0.1737
+  ],
+  "base_setting": {
+   "evidence": "calibrated",
+   "use_r5": true,
+   "use_r6": true
+  },
+  "branch_length_schemes": [
+   "unit",
+   "ultrametric",
+   "calibrated"
+  ],
+  "mk_models": [
+   "ER",
+   "ARD",
+   "irreversible"
+  ],
+  "lesion_bar": 1.5882,
+  "class_min_n": 8
+ },
+ "base_reproduction": {
+  "n_rows": 927,
+  "n_mismatches": 0,
+  "setting": {
+   "evidence": "calibrated",
+   "use_r5": true,
+   "use_r6": true
+  },
+  "note": "the recoder is S15a's own rule chain; a mismatch here would make every comparison in this task a comparison against something that never ran"
+ },
+ "polytomy_profile": {
+  "n_internal": 468,
+  "n_polytomies": 49,
+  "n_unary": 308,
+  "max_degree": 23,
+  "n_edges_below_polytomies": 246,
+  "degree_counts": {
+   "1": 308,
+   "2": 111,
+   "3": 21,
+   "4": 12,
+   "5": 2,
+   "6": 5,
+   "7": 4,
+   "8": 1,
+   "9": 1,
+   "10": 1,
+   "17": 1,
+   "23": 1
+  }
+ },
+ "fossil": {
+  "lesion_bar": 1.5882,
+  "n_loci": 2109,
+  "n_scored": 1760,
+  "n_above_bar": 44,
+  "n_fossils": 17,
+  "n_above_bar_full_coverage": 44,
+  "n_above_bar_zero_stops": 27,
+  "n_above_bar_live_cell": 18,
+  "n_above_bar_state_unavailable": 26,
+  "n_fossils_itpr": 7,
+  "median_identity_above_bar": 0.79005,
+  "poisson_test": "not run: it needs two dead loci sharing a lesion, and there are no dead loci"
+ },
+ "headline": {
+  "n_settings": 32,
+  "dollo_family_base": 0,
+  "dollo_paralog_base": 0,
+  "n_settings_family_manufactures": 2,
+  "n_settings_paralog_manufactures": 18,
+  "max_family_losses": 1,
+  "max_paralog_losses": 45,
+  "max_paralog_losses_min": 37,
+  "n_cells_ever_absent": 144,
+  "n_cells": 927,
+  "branch_length_changes_dollo": 0,
+  "gain_node_itpr1": "Vertebrata",
+  "gain_node_itpr2": "Gnathostomata",
+  "gain_node_itpr3": "Gnathostomata",
+  "gain_node_family": "Vertebrata",
+  "n_mk_fitted_base": 0,
+  "n_mk_rows_base": 12,
+  "n_mk_fits_total": 405,
+  "n_mk_refusals_total": 117,
+  "n_scored_loci": 1760,
+  "n_above_lesion_bar": 44,
+  "n_fossils_itpr": 7,
+  "n_above_bar_full_coverage": 44,
+  "n_class_tests": 8,
+  "n_class_significant": 5,
+  "strongest_class": "Aves",
+  "strongest_class_cell": "ITPR3",
+  "strongest_class_q": 4.5180320739746094e-05
+ },
+ "self_test": {
+  "n_tests": 21,
+  "n_passed": 21,
+  "n_failed": 0,
+  "failures": [],
+  "status": "pass",
+  "mutations_caught": [
+   "counted any subtree holding an absent tip as a loss -> T1 fired",
+   "made the strictest rung admit more than the loosest -> T6 fired",
+   "let the fitter fit an invariant character -> T9 fired"
+  ]
+ },
+ "tables": {
+  "dollo_counts.tsv": "545ee3e098a40ed67c2c2626a3125d3c60b4c499d9a163e6528be1cea060e8b5",
+  "loss_edges.tsv": "d076ed410a7ef64fa063bc9ec36f69d513db74399e19222dd6443c2811f2385f",
+  "sensitivity_matrix.tsv": "ec3ba8798538bc689185994f57f515355f85ff8394b9bacd4bd3743d8e7a3719",
+  "manufactured_losses.tsv": "bc23d98e08ee0f254a9b709215f4595a48f3aa5c3767c018a269515fdee13f5e",
+  "mk_fits.tsv": "088508a08fbd7dd36c2972e0679d497132743a27455df579e03fc1107e2ecd8d",
+  "mk_profile.tsv": "15ce3981bb64780a7536b46e2abc910c3258503adb5f273d78e75b8dc888afc2",
+  "resolution_bound.tsv": "69b62b91a3cf74d02c7abeccd886bfd99d66db15833c867822a7d3d015e06185",
+  "fossil_loci.tsv": "dff4fb336e98c5ab2bafcd767311b9d6e4b085c290e8427f7656b83bdd702bf2",
+  "fossil_by_cell.tsv": "1b69ac68b48928b58e86536a79f41c695cccd8e5a7c3f2dfd26d7175bf1242c2",
+  "lesion_by_class.tsv": "e3646379db25effbaaa24c2ad0185a6521a66e50dc5b68d3dac9c70e83fe2d56",
+  "lesion_class_controls.tsv": "9d3d9771def3951e2ef4326f46c652c81a0bb0eccbdbe3240bece2ed8cdad6ab"
+ }
+}
