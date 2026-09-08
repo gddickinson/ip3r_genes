@@ -1,0 +1,157 @@
+{
+ "task": "S15a",
+ "written_at": "2026-09-08 15:44:45",
+ "parameters": {
+  "rescue_evalue": 1e-05,
+  "known_locus_pad_bp": 5000,
+  "cov_found": 0.7,
+  "recon_min_positives": 20,
+  "recon_min_negatives": 5,
+  "integrity_bar_quantile": 0.99,
+  "integrity_min_aligned_aa": 500,
+  "integrity_identity_window": 0.02,
+  "synteny_window": "informative10",
+  "synteny_min_keys": 4
+ },
+ "recon_calibration": {
+  "metric": "coverage",
+  "bar": 0.13685,
+  "gap_lo": 0.1,
+  "gap_hi": 0.1737,
+  "youden_j": 1.0,
+  "n_positive": 44,
+  "n_negative": 9,
+  "n_co_trace": 20,
+  "usable": 1,
+  "min_pos": 20,
+  "min_neg": 5,
+  "verdict": "separated: J = 1.00, gap 0.100-0.174"
+ },
+ "integrity_bar": {
+  "n_intact": 847,
+  "quantile": 0.99,
+  "bar": 1.5882,
+  "intact_median": 0.0,
+  "intact_max": 16.8539,
+  "n_zero": 612,
+  "frac_zero": 0.7225501770956316
+ },
+ "state_vocabulary": [
+  "present_single_locus",
+  "present_truncated",
+  "present_partial",
+  "present_fragmented",
+  "paralog_unassignable",
+  "undecidable_contiguity",
+  "absent",
+  "no_control"
+ ],
+ "headline": {
+  "n_cells": 927,
+  "n_genomes": 309,
+  "n_absent": 0,
+  "n_present": 923,
+  "n_undecided": 4,
+  "n_fragmented": 43,
+  "n_paralog_unassignable": 4,
+  "n_genomes_above_bar": 189,
+  "n_genomes_below_bar": 120,
+  "min_implied_above_bar": 3.0,
+  "median_implied_above_bar": 3.0,
+  "n_below_2_5_above_bar": 0,
+  "n_below_2_5_below_bar": 11,
+  "synteny_regions": 432,
+  "synteny_reached": 8,
+  "synteny_no_neighbourhood": 273
+ },
+ "self_test": {
+  "n_tests": 15,
+  "n_passed": 15,
+  "n_failed": 0,
+  "failures": [],
+  "mutations_caught": [
+   "dropped the known-locus filter from reconstruct()  -> T2 fired",
+   "moved R5 (paralog_unassignable) after R7 (absent)   -> T6 fired",
+   "used every elsewhere-attributed region as the decoy -> T9 fired"
+  ],
+  "status": "pass"
+ },
+ "tables": {
+  "reconstruction.tsv": {
+   "sha256": "816320d94f11efa662fb4377f0360d4a07b145f0df20de66501cf4ab8f74bd6a",
+   "bytes": 18713
+  },
+  "recon_calibration.tsv": {
+   "sha256": "cd70b2ab63f69ca4890040d39f473f0105c14ba2908c63e54c4ba1ec33ea567d",
+   "bytes": 476
+  },
+  "synteny_reach.tsv": {
+   "sha256": "f481edaefa7187b80718d52515fa179aff9b2e09e6825d82f4478a7fc07a5e61",
+   "bytes": 131496
+  },
+  "synteny_reach_summary.tsv": {
+   "sha256": "148d9d95f7665a7b53a11cb4a0caee8e56126055d78570f7171ee0d7d4842c92",
+   "bytes": 234
+  },
+  "synteny_calls.tsv": {
+   "sha256": "6e89afec78c2d43899e59ac75e51e3d58246fe42eed1efe4d00eb28d35259499",
+   "bytes": 1292
+  },
+  "caller_accuracy_by_keys.tsv": {
+   "sha256": "5df79c4437e1d7fac4c7037bef66b18364d1b734df9a4a7e75e48d3e3907087e",
+   "bytes": 161
+  },
+  "integrity_loci.tsv": {
+   "sha256": "ae91b8ebc9664ae24b6c8824d2c6bac4081671148a57c3003682509808a6aad0",
+   "bytes": 313046
+  },
+  "integrity_covariates.tsv": {
+   "sha256": "35cd4c7bbe5775af6819b83d87a774d25274e17d1df25bc020da275bef336d8d",
+   "bytes": 680
+  },
+  "integrity_pairs.tsv": {
+   "sha256": "3d5dba0195cfb11f3c57cb00d170b05f03c7220d0c90238f878a010503b9aa5d",
+   "bytes": 87178
+  },
+  "integrity_tests.tsv": {
+   "sha256": "d3aa4a37983fb42adf377c2b8a8d695201c7f9a4a3d3d68fa1d9972ad3bd536a",
+   "bytes": 506
+  },
+  "character_matrix.tsv": {
+   "sha256": "fea1fb655a4b0b6541348836a46e8d41c5118eb83e08c5137a428b307fbeb414",
+   "bytes": 209378
+  },
+  "character_matrix_wide.tsv": {
+   "sha256": "f79d7204abdfa60fc14dd4c128b7e8ebbd50b40196af39dc43e1ef6b959a4b1f",
+   "bytes": 45934
+  },
+  "state_counts.tsv": {
+   "sha256": "be92265a8daf11132cc3849ef168a11947d93e72a461ce166ea7f7f222e1d13a",
+   "bytes": 2048
+  },
+  "implied_copies.tsv": {
+   "sha256": "c170ed7815606dd36ea689d3175bfb7a887bfabf05cabacc7f47d0e0e5a3f9b5",
+   "bytes": 23149
+  },
+  "loss_candidates.tsv": {
+   "sha256": "22df27adf100f8fa2c7aae0576bf314854afc9ff298c8afba25b132a9cd08dfe",
+   "bytes": 1341
+  },
+  "tree_placement.tsv": {
+   "sha256": "8c852ee5a159684952838584e45634fc51afdf0ad88f9d701bf0309527c90146",
+   "bytes": 111169
+  },
+  "tree_polytomies.tsv": {
+   "sha256": "05a1cf5e793cecfdae2165f13aaa712c7063b7be2ff4d6bf1cd2a3788810834a",
+   "bytes": 17688
+  },
+  "tree_vs_s13.tsv": {
+   "sha256": "09acf634a27b897425b6f04c7790ead1b2744db7b9cdaf6641638571e7c5ddb4",
+   "bytes": 1190
+  },
+  "species_tree_309.nwk": {
+   "sha256": "58aec29e40a5d973599c343fe073972f655f90a0627ee4e0dcdb80341a936ef9",
+   "bytes": 13534
+  }
+ }
+}

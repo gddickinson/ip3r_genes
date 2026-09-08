@@ -19,10 +19,12 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S13 complete — the census is enumerated, aligned, dated and
-audited; 21 of the 32 ledger rows are done.** The most recent result is where the
-two duplications that made ITPR1/2/3 sit on the vertebrate tree (§ *S13*
-below).
+**Status: S15a complete — the census is enumerated, aligned, dated,
+audited and now counted; 22 of the 33 ledger rows are done.** The most
+recent result is that **no vertebrate has lost an IP3 receptor gene**: 0 of
+927 genome × paralog cells in the 309-genome sweep supports absence, and in
+every assembly contiguous enough to carry the gene all three copies are
+there (§ *S15a* below).
 
 The build-up. The literature baseline is verified with a citation on every
 claim ([`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md), 32 pages,
@@ -441,7 +443,8 @@ One task per session. Full ledger with dependencies and results in
 | S11 | Structures + TM-align vs cryo-EM references | ✅ completed 2026-09-08 |
 | S12 | Expression evidence (SRA junction reads) | ✅ completed 2026-09-08 |
 | S13 | Reconciliation & dating | ✅ completed 2026-09-08 |
-| S15 | Loss dynamics | ⏳ pending |
+| S15a | Loss dynamics — the instrument and the character matrix | ✅ completed 2026-09-08 |
+| S15b | Loss dynamics — the counts and the sensitivity matrix | ⏳ pending |
 | S16 | Duplication history (2R / 3R, and the RyR parallel) | ⏳ pending |
 | S17 | Constraint & function — the clinical-variant test | ⏳ pending |
 | S18 | Annotation-quality audit + correction list | ⏳ pending |
@@ -458,6 +461,35 @@ One task per session. Full ledger with dependencies and results in
 ## Findings so far
 
 Plain-language entries per task: [`FINDINGS.md`](FINDINGS.md). Headlines:
+
+**S15a — nobody has lost this gene.** Across 309 vertebrate genomes, from
+hagfish to hummingbirds, there is not one case of a species that has lost an
+IP3 receptor: all 927 species-by-gene slots come back present, and in every
+one of the 189 genomes good enough to hold the gene on a single piece of DNA
+there are exactly three copies. The raw search had left about fifty slots
+unresolved — four reading "absent", forty-four with scattered fragments, a
+hundred and twenty cut off part-way — and all of it dissolves once you ask
+what the assembly was capable of showing. The forty-four scattered cases are
+whole genes shattered by the assembly: mostly decade-old bird genomes whose
+DNA fragments are shorter than the gene, so reassembling across them
+recovers four-fifths of the protein from about six separate pieces. The
+check that this is not wishful thinking is a calibration against fragments
+belonging to a gene the search had *already* found intact elsewhere in the
+same genome — those score 3 % of the protein where the real candidates score
+80 %, with no overlap.
+→ [`results/loss_dynamics/report.md`](results/loss_dynamics/report.md)
+
+![the character matrix](results/loss_dynamics/figures/s15_character_matrix.png)
+
+**S15a — the plan to settle it by neighbourhood did not work, and the number
+is the result.** Unresolved cases were to be decided by looking at the genes
+on either side, a neighbourhood being stable over hundreds of millions of
+years. The instrument works — where it applies it is right every time, and it
+agreed with the sequence evidence on every case it reached. It reached eight
+of four hundred and thirty-two. For two hundred and seventy-three of the rest
+the piece of DNA carrying the gene fragment has no other gene on it at all:
+the reason the gene is unresolved is the same reason its neighbourhood cannot
+be read.
 
 **S13 — the three receptors were not made in one event.** The duplication
 that separated ITPR1 from the ancestor of ITPR2 and ITPR3 happened before

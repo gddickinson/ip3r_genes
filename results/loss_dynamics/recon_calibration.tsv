@@ -1,0 +1,3 @@
+metric	n_positive	n_negative	n_co_trace	positive_median	positive_min	negative_median	negative_max	co_trace_median	youden_threshold	youden_j	sensitivity	specificity	gap_lo	gap_hi	gap	operating_point	separated	verdict
+coverage	44	9	20	0.7948	0.1737	0.0303	0.1	0.6308	0.1737	1	1	1	0.1	0.1737	0.0737	0.13685	1	separated: J = 1.00, gap 0.100-0.174
+gene_equiv	44	9	20	0.9293	0.1985	0.0303	0.1355	0.71105	0.1985	1	1	1	0.1355	0.1985	0.063	0.167	1	separated: J = 1.00, gap 0.136-0.199

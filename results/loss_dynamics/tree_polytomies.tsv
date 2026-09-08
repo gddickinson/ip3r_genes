@@ -1,0 +1,469 @@
+taxid	node	rank	n_children	n_tips	is_polytomy
+9126	Passeriformes	ORDER	23	57	1
+1489922	Eupercaria	CLADE	17	21	1
+3078114	Neoaves	CLADE	10	139	1
+1489872	Percomorphaceae	CLADE	9	47	1
+192204	Corvoidea	SUPERFAMILY	8	10	1
+8906	Charadriiformes	ORDER	7	7	1
+28758	Goodeidae	FAMILY	7	7	1
+9263	Metatheria	CLADE	7	7	1
+2116661	Sylvioidea	SUPERFAMILY	7	15	1
+3073812	Aequornithes	CLADE	6	15	1
+311790	Afrotheria	SUPERORDER	6	6	1
+3073810	Coraciimorphae	CLADE	6	16	1
+314145	Laurasiatheria	SUPERORDER	6	12	1
+8783	Palaeognathae	SUPERORDER	6	10	1
+8936	Coraciiformes	ORDER	5	5	1
+9173	Timaliidae	FAMILY	5	5	1
+123368	Acanthomorphata	CLADE	4	57	1
+3073809	Australaves	CLADE	4	61	1
+117893	Batoidea	SUPERORDER	4	4	1
+1489904	Carangaria	CLADE	4	4	1
+32521	Elopomorpha	CLADE	4	5	1
+314146	Euarchontoglires	SUPERORDER	4	9	1
+1489388	Euteleosteomorpha	COHORT	4	67	1
+1489908	Ovalentaria	CLADE	4	14	1
+9205	Pelecaniformes	ORDER	4	5	1
+9219	Piciformes	ORDER	4	5	1
+41705	Protacanthopterygii	CLADE	4	4	1
+3073808	Telluraves	CLADE	4	83	1
+8342	Anura	ORDER	3	6	1
+1489913	Atherinomorphae	SUPERORDER	3	11	1
+48283	Caprimulgidae	FAMILY	3	3	1
+8902	Caprimulgiformes	ORDER	3	5	1
+66704	Certhiidae	FAMILY	3	3	1
+186628	Characiphysae	SUPERORDER	3	3	1
+3073799	Columbimorphae	CLADE	3	5	1
+8940	Cuculiformes	ORDER	3	4	1
+30727	Cyprinoidei	SUBORDER	3	3	1
+123369	Euacanthomorphacea	CLADE	3	50	1
+9347	Eutheria	CLADE	3	29	1
+119195	Galeoidea	SUPERORDER	3	3	1
+9108	Gruiformes	ORDER	3	4	1
+1931080	Meliphagoidea	SUPERFAMILY	3	3	1
+3073806	Otidimorphae	CLADE	3	7	1
+186634	Otomorpha	COHORT	3	9	1
+118040	Squalomorphii	CLADE	3	3	1
+2607030	Strisores	CLADE	3	11	1
+9170	Sturnidae	FAMILY	3	3	1
+36270	Sylviidae	FAMILY	3	4	1
+8803	Tinamidae	FAMILY	3	4	1
+2558200	Accipitriformes	ORDER	2	4	0
+8955	Accipitrinae	SUBFAMILY	2	2	0
+330750	Acrocephalinae	SUBFAMILY	2	2	0
+186623	Actinopteri	CLASS	2	88	0
+7898	Actinopterygii	SUPERCLASS	2	89	0
+54908	Albula	GENUS	2	2	0
+32524	Amniota	CLADE	2	196	0
+8292	Amphibia	CLASS	2	8	0
+1489892	Anabantaria	CLADE	2	2	0
+8893	Apodidae	FAMILY	2	3	0
+8892	Apodiformes	ORDER	2	5	0
+2607033	Apodinae	SUBFAMILY	2	2	0
+9232	Aptenodytes	GENUS	2	2	0
+1329799	Archelosauria	CLADE	2	154	0
+8492	Archosauria	CLADE	2	153	0
+91561	Artiodactyla	ORDER	2	5	0
+8782	Aves	CLASS	2	152	0
+41666	Batrachia	SUPERORDER	2	7	0
+1489869	Berycimorphaceae	CLADE	2	2	0
+1329961	Bifurcata	CLADE	2	4	0
+1437010	Boreoeutheria	CLADE	2	21	0
+57379	Bucerotiformes	ORDER	2	2	0
+9526	Catarrhini	PARVORDER	2	3	0
+8922	Cathartidae	FAMILY	2	2	0
+9527	Cercopithecidae	FAMILY	2	2	0
+9859	Cervus	GENUS	2	2	0
+175116	Chloropsis	GENUS	2	2	0
+7777	Chondrichthyes	CLASS	2	12	0
+8926	Ciconiidae	FAMILY	2	2	0
+186625	Clupeocephala	CLADE	2	76	0
+57385	Coliidae	FAMILY	2	2	0
+34989	Colubroidea	SUPERFAMILY	2	2	0
+8930	Columbidae	FAMILY	2	2	0
+28725	Corvidae	FAMILY	2	2	0
+48395	Crypturellus	GENUS	2	2	0
+123367	Ctenosquamata	CLADE	2	58	0
+8941	Cuculidae	FAMILY	2	2	0
+1476529	Cyclostomata	CLADE	2	2	0
+28738	Cyprinodontiformes	ORDER	2	9	0
+8087	Cyprinodontoidei	SUBORDER	2	8	0
+1338369	Dipnotetrapodomorpha	CLADE	2	205	0
+36199	Dissostichus	GENUS	2	2	0
+7778	Elasmobranchii	SUBCLASS	2	11	0
+81928	Eurylaimidae	FAMILY	2	2	0
+123366	Eurypterygia	CLADE	2	59	0
+117571	Euteleostomi	CLADE	2	295	0
+9133	Fringillidae	FAMILY	2	2	0
+1489843	Gadariae	CLADE	2	3	0
+8043	Gadiformes	ORDER	2	2	0
+119197	Galeomorphii	CLADE	2	4	0
+1549675	Galloanserae	SUPERORDER	2	3	0
+314147	Glires	CLADE	2	3	0
+7776	Gnathostomata	CLADE	2	307	0
+1489875	Gobiaria	CLADE	2	2	0
+1489100	Holostei	INFRACLASS	2	3	0
+8504	Lepidosauria	CLASS	2	5	0
+7915	Lepisosteidae	FAMILY	2	2	0
+40674	Mammalia	CLASS	2	37	0
+3073803	Mirandornithes	CLADE	2	3	0
+337687	Muroidea	CLADE	2	2	0
+56302	Musophagidae	FAMILY	2	2	0
+8416	Neobatrachia	SUBORDER	2	3	0
+8825	Neognathae	INFRACLASS	2	142	0
+41665	Neopterygii	SUBCLASS	2	87	0
+123365	Neoteleostei	CLADE	2	60	0
+8206	Nototheniidae	FAMILY	2	3	0
+8205	Notothenioidei	SUBORDER	2	4	0
+9722	Odontoceti	PARVORDER	2	2	0
+32519	Ostariophysi	SUBCOHORT	2	7	0
+41712	Osteoglossiformes	ORDER	2	2	0
+1489341	Osteoglossocephalai	CLADE	2	79	0
+31089	Osteoglossomorpha	CLADE	2	3	0
+186626	Otophysi	CLADE	2	6	0
+1489838	Paracanthopterygii	CLADE	2	5	0
+9153	Paridae	FAMILY	2	2	0
+175121	Passeroidea	SUPERFAMILY	2	3	0
+35500	Pecora	INFRAORDER	2	3	0
+8111	Perciformes	ORDER	2	5	0
+9787	Perissodactyla	ORDER	2	2	0
+37044	Phaethon	GENUS	2	2	0
+3073796	Phaethontimorphae	CLADE	2	3	0
+9005	Phasianidae	FAMILY	2	2	0
+8352	Pipidae	FAMILY	2	2	0
+30448	Podicipedidae	FAMILY	2	2	0
+30451	Procellariidae	FAMILY	2	2	0
+30449	Procellariiformes	ORDER	2	3	0
+9224	Psittacidae	FAMILY	2	2	0
+56296	Pterocles	GENUS	2	2	0
+9119	Rallidae	FAMILY	2	2	0
+57381	Ramphastidae	FAMILY	2	2	0
+8397	Ranidae	FAMILY	2	2	0
+8287	Sarcopterygii	SUPERCLASS	2	206	0
+32561	Sauria	CLADE	2	159	0
+119203	Selachii	INFRACLASS	2	7	0
+314293	Simiiformes	INFRAORDER	2	4	0
+9231	Spheniscidae	FAMILY	2	3	0
+1489798	Stomiati	CLADE	2	2	0
+30458	Strigiformes	ORDER	2	2	0
+8801	Struthio camelus	SPECIES	2	2	0
+32443	Teleostei	INFRACLASS	2	84	0
+32523	Tetrapoda	CLADE	2	204	0
+32525	Theria	CLADE	2	36	0
+33574	Threskiornithidae	FAMILY	2	2	0
+9242	Trochilidae	FAMILY	2	2	0
+28728	Tyrannidae	FAMILY	2	2	0
+1329950	Unidentata	CLADE	2	3	0
+7742	Vertebrata	CLADE	2	309	0
+9348	Xenarthra	SUPERORDER	2	2	0
+30560	Yangochiroptera	SUBORDER	2	2	0
+1489841	Zeiogadaria	CLADE	2	4	0
+36297	Zosteropidae	FAMILY	2	2	0
+57068	Acanthisitta chloris	SPECIES	1	1	0
+1316013	Acanthurus tractus	SPECIES	1	1	0
+39621	Acrocephalus arundinaceus	SPECIES	1	1	0
+48278	Aegotheles bennettii	SPECIES	1	1	0
+121402	Albula glossodonta	SPECIES	1	1	0
+1534307	Albula goreensis	SPECIES	1	1	0
+28689	Alca torda	SPECIES	1	1	0
+143900	Aldrovandia affinis	SPECIES	1	1	0
+461220	Aleadryas rufinucha	SPECIES	1	1	0
+170189	Alepocephalus tenebrosus	SPECIES	1	1	0
+8496	Alligator mississippiensis	SPECIES	1	1	0
+1195602	Amblyopsis spelaea	SPECIES	1	1	0
+208324	Ameca splendens	SPECIES	1	1	0
+2972642	Amia ocellicauda	SPECIES	1	1	0
+146480	Ammodytes marinus	SPECIES	1	1	0
+8839	Anas platyrhynchos	SPECIES	1	1	0
+8811	Anomalopteryx didiformis	SPECIES	1	1	0
+241820	Antennarius striatus	SPECIES	1	1	0
+156561	Anthoscopus minutus	SPECIES	1	1	0
+279965	Antrostomus carolinensis	SPECIES	1	1	0
+57397	Apaloderma vittatum	SPECIES	1	1	0
+39617	Aphelocoma coerulescens	SPECIES	1	1	0
+946358	Aplochiton taeniatus	SPECIES	1	1	0
+9233	Aptenodytes forsteri	SPECIES	1	1	0
+9234	Aptenodytes patagonicus	SPECIES	1	1	0
+2696672	Apteryx mantelli	SPECIES	1	1	0
+8895	Apus apus	SPECIES	1	1	0
+8400	Aquarana catesbeiana	SPECIES	1	1	0
+54356	Aramus guarauna	SPECIES	1	1	0
+113544	Arapaima gigas	SPECIES	1	1	0
+208326	Ataeniobius toweri	SPECIES	1	1	0
+2478892	Atlantisia rogersi	SPECIES	1	1	0
+7917	Atractosteus spatula	SPECIES	1	1	0
+33584	Balaeniceps rex	SPECIES	1	1	0
+100784	Balearica regulorum gibbericeps	SUBSPECIES	1	1	0
+9083	Bambusicola thoracicus	SPECIES	1	1	0
+176943	Baryphthengus martii	SPECIES	1	1	0
+8345	Bombina bombina	SPECIES	1	1	0
+473354	Borostomias antarcticus	SPECIES	1	1	0
+8724	Bothrops jararaca	SPECIES	1	1	0
+3235156	Brachypodius melanocephalos	SPECIES	1	1	0
+135168	Bucco capensis	SPECIES	1	1	0
+175836	Buceros rhinoceros silvestris	SUBSPECIES	1	1	0
+153643	Bucorvus abyssinicus	SPECIES	1	1	0
+245048	Buphagus erythrorhynchus	SPECIES	1	1	0
+1347786	Callaeas wilsoni	SPECIES	1	1	0
+7868	Callorhinchus milii	SPECIES	1	1	0
+187106	Caloenas nicobarica	SPECIES	1	1	0
+1323832	Calonectris borealis	SPECIES	1	1	0
+9244	Calypte anna	SPECIES	1	1	0
+111811	Caprimulgus europaeus	SPECIES	1	1	0
+206100	Capros aper	SPECIES	1	1	0
+13397	Carcharodon carcharias	SPECIES	1	1	0
+54380	Cariama cristata	SPECIES	1	1	0
+43455	Cathartes aura	SPECIES	1	1	0
+159581	Catharus fuscescens	SPECIES	1	1	0
+1463675	Centropus bengalensis	SPECIES	1	1	0
+73333	Certhia familiaris	SPECIES	1	1	0
+46360	Cervus elaphus hippelaphus	SUBSPECIES	1	1	0
+84702	Cervus hanglu yarkandensis	SUBSPECIES	1	1	0
+1961834	Ceuthmochares aereus	SPECIES	1	1	0
+390723	Ceyx cyanopectus	SPECIES	1	1	0
+36190	Chaenocephalus aceratus	SPECIES	1	1	0
+109706	Chaetodon trifascialis	SPECIES	1	1	0
+8897	Chaetura pelagica	SPECIES	1	1	0
+215402	Channa argus	SPECIES	1	1	0
+29144	Chanos chanos	SPECIES	1	1	0
+208331	Characodon lateralis	SPECIES	1	1	0
+50402	Charadrius vociferus	SPECIES	1	1	0
+241271	Cheilinus undulatus	SPECIES	1	1	0
+48171	Chelon labrosus	SPECIES	1	1	0
+137246	Chiloscyllium punctatum	SPECIES	1	1	0
+187382	Chlamydotis macqueenii	SPECIES	1	1	0
+176938	Chloroceryle aenea	SPECIES	1	1	0
+1218682	Chloropsis cyanopogon	SPECIES	1	1	0
+667144	Chloropsis hardwickii	SPECIES	1	1	0
+52775	Ciconia boyciana	SPECIES	1	1	0
+321084	Circaetus pectoralis	SPECIES	1	1	0
+683832	Cirrhinus mrigala	SPECIES	1	1	0
+52622	Cisticola juncidis	SPECIES	1	1	0
+47695	Climacteris rufus	SPECIES	1	1	0
+3371016	Cnephaeus nilssonii	SPECIES	1	1	0
+57412	Colius striatus	SPECIES	1	1	0
+129043	Cololabis saira	SPECIES	1	1	0
+115618	Columbina picui	SPECIES	1	1	0
+82655	Conger conger	SPECIES	1	1	0
+797021	Copsychus sechellarum	SPECIES	1	1	0
+85066	Corvus brachyrhynchos	SPECIES	1	1	0
+103956	Corythaixoides concolor	SPECIES	1	1	0
+10029	Cricetulus griseus	SPECIES	1	1	0
+458187	Crypturellus soui	SPECIES	1	1	0
+48396	Crypturellus undulatus	SPECIES	1	1	0
+55661	Cuculus canorus	SPECIES	1	1	0
+110931	Cynocephalus volans	SPECIES	1	1	0
+7955	Danio rerio	SPECIES	1	1	0
+9361	Dasypus novemcinctus	SPECIES	1	1	0
+428446	Datnioides polota	SPECIES	1	1	0
+77932	Diceros bicornis minor	SUBSPECIES	1	1	0
+88682	Diretmus argenteus	SPECIES	1	1	0
+100907	Dissostichus eleginoides	SPECIES	1	1	0
+36200	Dissostichus mawsoni	SPECIES	1	1	0
+8790	Dromaius novaehollandiae	SPECIES	1	1	0
+33562	Dromiciops gliroides	SPECIES	1	1	0
+626378	Drymodes brunneopygia	SPECIES	1	1	0
+118200	Dryobates pubescens	SPECIES	1	1	0
+85069	Dryoscopus gambensis	SPECIES	1	1	0
+7834	Echinorhinus cookei	SPECIES	1	1	0
+188379	Egretta garzetta	SPECIES	1	1	0
+1463973	Elachura formosa	SPECIES	1	1	0
+8005	Electrophorus electricus	SPECIES	1	1	0
+28737	Elephantulus edwardii	SPECIES	1	1	0
+99487	Elephas maximus indicus	SUBSPECIES	1	1	0
+57060	Eleutherodactylus coqui	SPECIES	1	1	0
+337179	Emberiza fucata	SPECIES	1	1	0
+184585	Engraulis encrasicolus	SPECIES	1	1	0
+161455	Entelurus aequoreus	SPECIES	1	1	0
+89248	Equus quagga	SPECIES	1	1	0
+27687	Erpetoichthys calabaricus	SPECIES	1	1	0
+1112836	Erpornis zantholeuca	SPECIES	1	1	0
+8010	Esox lucius	SPECIES	1	1	0
+91767	Eubucco bourcierii	SPECIES	1	1	0
+54383	Eurypyga helias	SPECIES	1	1	0
+8954	Falco peregrinus	SPECIES	1	1	0
+30455	Fulmarus glacialis	SPECIES	1	1	0
+463165	Furnarius figulus	SPECIES	1	1	0
+8049	Gadus morhua	SPECIES	1	1	0
+9123	Gallinula chloropus	SPECIES	1	1	0
+9031	Gallus gallus	SPECIES	1	1	0
+33528	Gambusia affinis	SPECIES	1	1	0
+37040	Gavia stellata	SPECIES	1	1	0
+154954	Genypterus blacodes	SPECIES	1	1	0
+8947	Geococcyx californianus	SPECIES	1	1	0
+439328	Giraffa tippelskirchi	SPECIES	1	1	0
+43316	Glareola pratincola	SPECIES	1	1	0
+85417	Gobius niger	SPECIES	1	1	0
+208336	Goodea atripinnis	SPECIES	1	1	0
+286002	Gopherus flavomarginatus	SPECIES	1	1	0
+441366	Gouania willdenowi	SPECIES	1	1	0
+191870	Gracilinanus agilis	SPECIES	1	1	0
+266360	Grantiella picta	SPECIES	1	1	0
+1263181	Guentherus altivela	SPECIES	1	1	0
+33616	Gymnogyps californianus	SPECIES	1	1	0
+8969	Haliaeetus albicilla	SPECIES	1	1	0
+884348	Hemicordylus capensis	SPECIES	1	1	0
+243314	Hemiprocne comata	SPECIES	1	1	0
+2704970	Hemitrygon akajei	SPECIES	1	1	0
+212740	Heptranchias perlo	SPECIES	1	1	0
+7792	Heterodontus francisci	SPECIES	1	1	0
+77598	Heterohyrax brucei	SPECIES	1	1	0
+54904	Hiodon alosoides	SPECIES	1	1	0
+68497	Hippolais icterina	SPECIES	1	1	0
+9606	Homo sapiens	SPECIES	1	1	0
+27720	Hoplias malabaricus	SPECIES	1	1	0
+2585811	Horornis vulcanius	SPECIES	1	1	0
+247094	Hymenochirus boettgeri	SPECIES	1	1	0
+589841	Hypocryptadius cinnamomeus	SPECIES	1	1	0
+182223	Hypomesus nipponensis	SPECIES	1	1	0
+33524	Ilyodon furcidens	SPECIES	1	1	0
+2546036	Lampris incognitus	SPECIES	1	1	0
+245042	Lamprotornis superbus	SPECIES	1	1	0
+35669	Larus argentatus	SPECIES	1	1	0
+270547	Lates japonicus	SPECIES	1	1	0
+678569	Lathamus discolor	SPECIES	1	1	0
+8630	Laticauda laticaudata	SPECIES	1	1	0
+7897	Latimeria chalumnae	SPECIES	1	1	0
+36275	Leiothrix lutea	SPECIES	1	1	0
+89578	Lepidogalaxias salamandroides	SPECIES	1	1	0
+7918	Lepisosteus oculatus	SPECIES	1	1	0
+188344	Leptosomus discolor	SPECIES	1	1	0
+42731	Lestoros inca	SPECIES	1	1	0
+127929	Leucopsar rothschildi	SPECIES	1	1	0
+1758121	Limosa lapponica baueri	SUBSPECIES	1	1	0
+230148	Liparis tanakae	SPECIES	1	1	0
+256425	Lissotriton helveticus	SPECIES	1	1	0
+64802	Loxia curvirostra	SPECIES	1	1	0
+211835	Lutjanus erythropterus	SPECIES	1	1	0
+9544	Macaca mulatta	SPECIES	1	1	0
+92651	Macrotis lagotis	SPECIES	1	1	0
+328815	Manacus vitellinus	SPECIES	1	1	0
+143292	Manis pentadactyla	SPECIES	1	1	0
+205130	Mastacembelus armatus	SPECIES	1	1	0
+118141	Megalops cyprinoides	SPECIES	1	1	0
+47692	Menura novaehollandiae	SPECIES	1	1	0
+57421	Merops nubicus	SPECIES	1	1	0
+54374	Mesitornis unicolor	SPECIES	1	1	0
+90074	Microchirus variegatus	SPECIES	1	1	0
+147949	Micropterus dolomieu	SPECIES	1	1	0
+254557	Mionectes macconnelli	SPECIES	1	1	0
+630683	Muraenolepis orangiensis	SPECIES	1	1	0
+10090	Mus musculus	SPECIES	1	1	0
+33587	Mycteria americana	SPECIES	1	1	0
+381031	Myiagra hebetior	SPECIES	1	1	0
+586833	Myripristis murdjan	SPECIES	1	1	0
+98133	Mystacornis crossleyi	SPECIES	1	1	0
+7769	Myxine glutinosa	SPECIES	1	1	0
+473322	Nannobrachium achirus	SPECIES	1	1	0
+443705	Nansenia antarctica	SPECIES	1	1	0
+1343680	Narcine bancroftii	SPECIES	1	1	0
+443677	Neoarius graeffei	SPECIES	1	1	0
+254563	Neodrepanis coruscans	SPECIES	1	1	0
+452646	Neogale vison	SPECIES	1	1	0
+176057	Nestor notabilis	SPECIES	1	1	0
+240163	Nibea albiflora	SPECIES	1	1	0
+128390	Nipponia nippon	SPECIES	1	1	0
+9315	Notamacropus eugenii	SPECIES	1	1	0
+105023	Nothobranchius furzeri	SPECIES	1	1	0
+30464	Nothoprocta perdicaria	SPECIES	1	1	0
+948063	Notolepis coatsorum	SPECIES	1	1	0
+37699	Notoryctes typhlops	SPECIES	1	1	0
+101497	Notothenia rossii	SPECIES	1	1	0
+48427	Nyctibius grandis	SPECIES	1	1	0
+382315	Nyctiprogne leucopyga	SPECIES	1	1	0
+30419	Opisthocomus hoazin	SPECIES	1	1	0
+689266	Oreotrochilus melanogaster	SPECIES	1	1	0
+720586	Origma solitaria	SPECIES	1	1	0
+9258	Ornithorhynchus anatinus	SPECIES	1	1	0
+1230840	Orycteropus afer afer	SUBSPECIES	1	1	0
+9986	Oryctolagus cuniculus	SPECIES	1	1	0
+98144	Oxylabes madagascariensis	SPECIES	1	1	0
+114331	Oxyruncus cristatus	SPECIES	1	1	0
+1676925	Paramormyrops kingsleyae	SPECIES	1	1	0
+254575	Pardalotus punctatus	SPECIES	1	1	0
+548269	Parequula melbournensis	SPECIES	1	1	0
+227192	Pedionomus torquatus	SPECIES	1	1	0
+36300	Pelecanus crispus	SPECIES	1	1	0
+3127111	Pempheris klunzingeri	SPECIES	1	1	0
+7757	Petromyzon marinus	SPECIES	1	1	0
+37045	Phaethon aethereus	SPECIES	1	1	0
+97097	Phaethon lepturus	SPECIES	1	1	0
+9209	Phalacrocorax carbo	SPECIES	1	1	0
+9218	Phoenicopterus ruber ruber	SUBSPECIES	1	1	0
+58324	Phoxinus phoxinus	SPECIES	1	1	0
+257867	Platalea leucorodia	SPECIES	1	1	0
+334891	Platax teira	SPECIES	1	1	0
+345573	Podiceps cristatus	SPECIES	1	1	0
+9252	Podilymbus podiceps	SPECIES	1	1	0
+48891	Poecile atricapillus	SPECIES	1	1	0
+66707	Polioptila caerulea	SPECIES	1	1	0
+143326	Polymixia lowei	SPECIES	1	1	0
+7913	Polyodon spathula	SPECIES	1	1	0
+932028	Pomatorhinus ruficollis	SPECIES	1	1	0
+9176	Pomatostomus ruficeps	SPECIES	1	1	0
+48723	Pontoporia blainvillei	SPECIES	1	1	0
+88708	Poromitra crassiceps	SPECIES	1	1	0
+1609310	Pristigenys meyeri	SPECIES	1	1	0
+685728	Pristis pectinata	SPECIES	1	1	0
+7888	Protopterus annectens	SPECIES	1	1	0
+2585815	Psilopogon haemacephalus	SPECIES	1	1	0
+2585816	Pterocles burchelli	SPECIES	1	1	0
+240206	Pterocles gutturalis	SPECIES	1	1	0
+449384	Ptilorrhoa leucosticta	SPECIES	1	1	0
+310352	Pygathrix nigripes	SPECIES	1	1	0
+9238	Pygoscelis adeliae	SPECIES	1	1	0
+64278	Quiscalus mexicanus	SPECIES	1	1	0
+223862	Raja brachyura	SPECIES	1	1	0
+304217	Rhamphochromis longiceps	SPECIES	1	1	0
+8795	Rhea pennata	SPECIES	1	1	0
+194408	Rhinatrema bivittatum	SPECIES	1	1	0
+118793	Rostratula benghalensis	SPECIES	1	1	0
+59482	Saccopteryx bilineata	SPECIES	1	1	0
+9490	Saguinus oedipus	SPECIES	1	1	0
+8030	Salmo salar	SPECIES	1	1	0
+13676	Scomber japonicus	SPECIES	1	1	0
+75743	Scyliorhinus torazame	SPECIES	1	1	0
+312124	Scytalopus superciliaris	SPECIES	1	1	0
+91796	Semnornis frantzii	SPECIES	1	1	0
+239386	Serilophus lunatus	SPECIES	1	1	0
+337173	Sinosuthora webbiana	SPECIES	1	1	0
+9301	Sminthopsis crassicaudata	SPECIES	1	1	0
+363769	Smithornis capensis	SPECIES	1	1	0
+191813	Somniosus microcephalus	SPECIES	1	1	0
+42254	Sorex araneus	SPECIES	1	1	0
+103600	Sousa chinensis	SPECIES	1	1	0
+8175	Sparus aurata	SPECIES	1	1	0
+375764	Sphaeramia orbicularis	SPECIES	1	1	0
+933632	Sphaerodactylus townsendi	SPECIES	1	1	0
+8508	Sphenodon punctatus	SPECIES	1	1	0
+40210	Spizella passerina	SPECIES	1	1	0
+386267	Staurois parvus	SPECIES	1	1	0
+48435	Steatornis caripensis	SPECIES	1	1	0
+36305	Strix uralensis	SPECIES	1	1	0
+441894	Struthio camelus australis	SUBSPECIES	1	1	0
+409996	Stylephorus chordatus	SPECIES	1	1	0
+73324	Sylvia borin	SPECIES	1	1	0
+31033	Takifugu rubripes	SPECIES	1	1	0
+48850	Tamandua tetradactyla	SPECIES	1	1	0
+121530	Tauraco erythrolophus	SPECIES	1	1	0
+446457	Telmatherina bonti	SPECIES	1	1	0
+94439	Tenrec ecaudatus	SPECIES	1	1	0
+54017	Thalassarche chlororhynchos	SPECIES	1	1	0
+390379	Thalassophryne amazonica	SPECIES	1	1	0
+74200	Thryothorus ludovicianus	SPECIES	1	1	0
+237442	Tichodroma muraria	SPECIES	1	1	0
+94827	Tinamus guttatus	SPECIES	1	1	0
+135184	Todus mexicanus	SPECIES	1	1	0
+83875	Trachurus japonicus	SPECIES	1	1	0
+127582	Trichechus manatus latirostris	SUBSPECIES	1	1	0
+246437	Tupaia belangeri chinensis	SUBSPECIES	1	1	0
+137541	Tyrannus savana	SPECIES	1	1	0
+56313	Tyto alba	SPECIES	1	1	0
+458196	Urocolius indicus	SPECIES	1	1	0
+34956	Vireo altiloquus	SPECIES	1	1	0
+1517983	Xenoophorus captivus	SPECIES	1	1	0
+8364	Xenopus tropicalis	SPECIES	1	1	0
+208358	Xenotaenia resolanae	SPECIES	1	1	0
+8245	Xiphias gladius	SPECIES	1	1	0
+64108	Zeus faber	SPECIES	1	1	0
+2485327	Zosterops hypoxanthus	SPECIES	1	1	0

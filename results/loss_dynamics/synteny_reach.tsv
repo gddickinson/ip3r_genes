@@ -1,0 +1,884 @@
+accession	organism	vclass	cell	cell_status	contig	start	end	region_kind	assigned_clade	window	n_genes_on_contig	contig_extent_bp	n_flanks	n_keys	reached	why
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	JMFT01214836.1	342	3695	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	JMFT01214836.1	342	3695	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	JMFT01111266.1	9	5636	rescue_regions	ITPR1	fixed10	1	5204	0	0	0	too_few_keys
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	JMFT01111266.1	9	5636	rescue_regions	ITPR1	informative10	1	5204	0	0	0	too_few_keys
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	KL321860.1	291	34205	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	KL321860.1	291	34205	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	KL295775.1	563	28330	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	KL295775.1	563	28330	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	JMFT01078947.1	447	9477	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	JMFT01078947.1	447	9477	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	JMFT01211073.1	976	1664	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	JMFT01211073.1	976	1664	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	JMFT01203109.1	308	980	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	JMFT01203109.1	308	980	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	JMFT01206199.1	570	767	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	JMFT01206199.1	570	767	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	JMFT01195676.1	117	320	ambiguous_regions	vertebrate_basal	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	JMFT01195676.1	117	320	ambiguous_regions	vertebrate_basal	informative10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	KL323595.1	12812	24340	attributed_elsewhere	ITPR2	fixed10	2	35568	1	0	0	too_few_keys
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	KL323595.1	12812	24340	attributed_elsewhere	ITPR2	informative10	2	35568	0	0	0	too_few_keys
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	KL318660.1	16229	34600	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	KL318660.1	16229	34600	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	KL324796.1	4011	5935	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	KL324796.1	4011	5935	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	ITPR3	tblastn_trace	CM008014.1	9615403	9649829	rescue_regions	ITPR3	fixed10	616	66628270	20	0	0	too_few_keys
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	ITPR3	tblastn_trace	CM008014.1	9615403	9649829	rescue_regions	ITPR3	informative10	616	66628270	0	0	0	too_few_keys
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	ITPR3	tblastn_trace	CM008024.1	19220185	19252763	rescue_regions	ITPR3	fixed10	251	79317407	20	0	0	too_few_keys
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	ITPR3	tblastn_trace	CM008024.1	19220185	19252763	rescue_regions	ITPR3	informative10	251	79317407	0	0	0	too_few_keys
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	ITPR3	tblastn_trace	CM008024.1	19301082	19301171	ambiguous_regions	ITPR3	fixed10	251	79317407	20	0	0	too_few_keys
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	ITPR3	tblastn_trace	CM008024.1	19301082	19301171	ambiguous_regions	ITPR3	informative10	251	79317407	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ512296.1	4813	14504	rescue_regions	ITPR1	fixed10	1	18198	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ512296.1	4813	14504	rescue_regions	ITPR1	informative10	1	18198	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ509414.1	8130	41300	rescue_regions	ITPR1	fixed10	1	34697	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ509414.1	8130	41300	rescue_regions	ITPR1	informative10	1	34697	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ517461.1	8015	9018	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ517461.1	8015	9018	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ517889.1	83	1009	ambiguous_regions	ITPR1	fixed10	1	3706	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ517889.1	83	1009	ambiguous_regions	ITPR1	informative10	1	3706	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ520196.1	406	4154	ambiguous_regions	ITPR1	fixed10	1	4345	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ520196.1	406	4154	ambiguous_regions	ITPR1	informative10	1	4345	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ520963.1	2998	4711	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ520963.1	2998	4711	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ537444.1	658	924	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ537444.1	658	924	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ512119.1	15508	20761	attributed_elsewhere	ITPR2	fixed10	1	21275	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ512119.1	15508	20761	attributed_elsewhere	ITPR2	informative10	1	21275	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ511543.1	900	23833	attributed_elsewhere	ITPR2	fixed10	1	23749	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ511543.1	900	23833	attributed_elsewhere	ITPR2	informative10	1	23749	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ507134.1	37592	58808	attributed_elsewhere	ITPR2	fixed10	1	82576	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ507134.1	37592	58808	attributed_elsewhere	ITPR2	informative10	1	82576	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ509793.1	357	12293	attributed_elsewhere	ITPR2	fixed10	1	36130	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ509793.1	357	12293	attributed_elsewhere	ITPR2	informative10	1	36130	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ507134.1	4386	13627	attributed_elsewhere	ITPR2	fixed10	1	82576	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	KZ507134.1	4386	13627	attributed_elsewhere	ITPR2	informative10	1	82576	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ512119.1	14405	20761	rescue_regions	ITPR2	fixed10	1	21275	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ512119.1	14405	20761	rescue_regions	ITPR2	informative10	1	21275	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ507134.1	513	58811	rescue_regions	ITPR2	fixed10	1	82576	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ507134.1	513	58811	rescue_regions	ITPR2	informative10	1	82576	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ511543.1	912	23833	rescue_regions	ITPR2	fixed10	1	23749	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ511543.1	912	23833	rescue_regions	ITPR2	informative10	1	23749	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ509793.1	34401	36348	rescue_regions	ITPR2	fixed10	1	36130	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ509793.1	34401	36348	rescue_regions	ITPR2	informative10	1	36130	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ507134.1	81090	82573	rescue_regions	ITPR2	fixed10	1	82576	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ507134.1	81090	82573	rescue_regions	ITPR2	informative10	1	82576	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ537444.1	658	918	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ537444.1	658	918	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ509793.1	357	12302	ambiguous_regions	ITPR2	fixed10	1	36130	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ509793.1	357	12302	ambiguous_regions	ITPR2	informative10	1	36130	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ512296.1	4813	14435	attributed_elsewhere	ITPR1	fixed10	1	18198	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ512296.1	4813	14435	attributed_elsewhere	ITPR1	informative10	1	18198	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ517889.1	83	1012	attributed_elsewhere	ITPR1	fixed10	1	3706	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ517889.1	83	1012	attributed_elsewhere	ITPR1	informative10	1	3706	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ520196.1	406	4199	attributed_elsewhere	ITPR1	fixed10	1	4345	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ520196.1	406	4199	attributed_elsewhere	ITPR1	informative10	1	4345	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ509414.1	25756	33382	attributed_elsewhere	ITPR1	fixed10	1	34697	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ509414.1	25756	33382	attributed_elsewhere	ITPR1	informative10	1	34697	0	0	0	too_few_keys
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ520963.1	4562	4711	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	KZ520963.1	4562	4711	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01071736.1	175	722	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01071736.1	175	722	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01017074.1	127	570	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01017074.1	127	570	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01077101.1	23	677	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01077101.1	23	677	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01072113.1	237	716	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01072113.1	237	716	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01084567.1	323	3834	rescue_regions	ITPR3	fixed10	1	4368	0	0	0	too_few_keys
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01084567.1	323	3834	rescue_regions	ITPR3	informative10	1	4368	0	0	0	too_few_keys
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01082139.1	113	1355	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01082139.1	113	1355	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01081707.1	85	1588	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01081707.1	85	1588	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01083502.1	31	2410	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01083502.1	31	2410	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01084284.1	1763	3512	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01084284.1	1763	3512	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01077493.1	7	833	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01077493.1	7	833	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01035065.1	2	193	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01035065.1	2	193	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01073934.1	217	737	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	VWPW01073934.1	217	737	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01005195.1	998	62896	rescue_regions	ITPR2	fixed10	1	4514	0	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01005195.1	998	62896	rescue_regions	ITPR2	informative10	1	4514	0	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01015456.1	41591	97089	rescue_regions	ITPR2	fixed10	1	20470	1	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01015456.1	41591	97089	rescue_regions	ITPR2	informative10	1	20470	0	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01015456.1	18996	20470	rescue_regions	ITPR2	fixed10	1	20470	0	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01015456.1	18996	20470	rescue_regions	ITPR2	informative10	1	20470	0	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01083129.1	1550	1744	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01083129.1	1550	1744	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01031592.1	206	5401	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01031592.1	206	5401	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01031592.1	29906	41317	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01031592.1	29906	41317	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01141137.1	3	152	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01141137.1	3	152	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01074040.1	172	3826	attributed_elsewhere	ITPR3	fixed10	1	3214	0	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01074040.1	172	3826	attributed_elsewhere	ITPR3	informative10	1	3214	0	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01000660.1	30	7449	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01000660.1	30	7449	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01029708.1	562	6978	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01029708.1	562	6978	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01202666.1	104	361	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01202666.1	104	361	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01004675.1	788	9640	attributed_elsewhere	ITPR3	fixed10	2	13175	1	1	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	VWPV01004675.1	788	9640	attributed_elsewhere	ITPR3	informative10	2	13175	1	1	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01074040.1	121	3826	rescue_regions	ITPR3	fixed10	1	3214	0	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01074040.1	121	3826	rescue_regions	ITPR3	informative10	1	3214	0	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01000660.1	30	7449	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01000660.1	30	7449	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01004675.1	373	9568	rescue_regions	ITPR3	fixed10	2	13175	1	1	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01004675.1	373	9568	rescue_regions	ITPR3	informative10	2	13175	1	1	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01029708.1	238	6978	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01029708.1	238	6978	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01202666.1	104	367	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01202666.1	104	367	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01005195.1	998	60801	attributed_elsewhere	ITPR2	fixed10	1	4514	0	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01005195.1	998	60801	attributed_elsewhere	ITPR2	informative10	1	4514	0	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01015456.1	83720	95254	attributed_elsewhere	ITPR2	fixed10	1	20470	1	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01015456.1	83720	95254	attributed_elsewhere	ITPR2	informative10	1	20470	0	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01031592.1	29954	41317	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01031592.1	29954	41317	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01015456.1	41594	61841	attributed_elsewhere	ITPR2	fixed10	1	20470	1	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01015456.1	41594	61841	attributed_elsewhere	ITPR2	informative10	1	20470	0	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01083129.1	1550	1744	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01083129.1	1550	1744	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01031592.1	206	5371	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01031592.1	206	5371	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01015456.1	20300	20467	attributed_elsewhere	ITPR2	fixed10	1	20470	0	0	0	too_few_keys
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	VWPV01015456.1	20300	20467	attributed_elsewhere	ITPR2	informative10	1	20470	0	0	0	too_few_keys
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01114839.1	570	1002	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01114839.1	570	1002	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01044297.1	1091	11058	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01044297.1	1091	11058	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01090406.1	4180	20101	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01090406.1	4180	20101	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01314767.1	209	1833	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01314767.1	209	1833	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01319799.1	17	3411	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01319799.1	17	3411	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01303555.1	480	689	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01303555.1	480	689	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01317989.1	1138	2297	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01317989.1	1138	2297	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01107487.1	1149	1421	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01107487.1	1149	1421	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01302251.1	188	531	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01302251.1	188	531	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01301934.1	400	621	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01301934.1	400	621	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01212629.1	39	215	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01212629.1	39	215	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01309985.1	1584	1751	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	WEIS01309985.1	1584	1751	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01072460.1	712	12495	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01072460.1	712	12495	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01044122.1	9142	10635	rescue_regions	ITPR2	fixed10	1	10635	0	0	0	too_few_keys
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01044122.1	9142	10635	rescue_regions	ITPR2	informative10	1	10635	0	0	0	too_few_keys
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01188287.1	3	191	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01188287.1	3	191	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01302558.1	885	1094	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01302558.1	885	1094	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01107487.1	1149	1403	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01107487.1	1149	1403	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01044297.1	2094	11058	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01044297.1	2094	11058	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01114839.1	570	1008	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01114839.1	570	1008	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01302251.1	188	504	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01302251.1	188	504	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01301934.1	391	630	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01301934.1	391	630	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01212629.1	39	215	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01212629.1	39	215	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01317989.1	1138	2294	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01317989.1	1138	2294	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01292184.1	1	168	attributed_elsewhere	vertebrate_basal	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	WEIS01292184.1	1	168	attributed_elsewhere	vertebrate_basal	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01047562.1	2	14234	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01047562.1	2	14234	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01044659.1	370	5401	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01044659.1	370	5401	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01025500.1	59	14920	rescue_regions	ITPR1	fixed10	3	183078	3	3	0	too_few_keys
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01025500.1	59	14920	rescue_regions	ITPR1	informative10	3	183078	3	3	0	too_few_keys
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01018021.1	532	32061	rescue_regions	ITPR1	fixed10	2	82056	1	1	0	too_few_keys
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01018021.1	532	32061	rescue_regions	ITPR1	informative10	2	82056	1	1	0	too_few_keys
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01201795.1	520	2327	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01201795.1	520	2327	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01097741.1	1117	20986	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01097741.1	1117	20986	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01085545.1	1	186	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01085545.1	1	186	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01029067.1	294	24308	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01029067.1	294	24308	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01047510.1	10560	15770	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01047510.1	10560	15770	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01036817.1	13735	19126	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01036817.1	13735	19126	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01048210.1	20394	40426	attributed_elsewhere	ITPR2	fixed10	2	109059	2	2	0	too_few_keys
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01048210.1	20394	40426	attributed_elsewhere	ITPR2	informative10	2	109059	2	2	0	too_few_keys
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01196009.1	483	644	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	WAAG01196009.1	483	644	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01029067.1	300	25991	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01029067.1	300	25991	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01036817.1	11964	17099	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01036817.1	11964	17099	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01166630.1	71	259	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01166630.1	71	259	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01048210.1	489	40429	rescue_regions	ITPR2	fixed10	2	109059	2	2	0	too_few_keys
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01048210.1	489	40429	rescue_regions	ITPR2	informative10	2	109059	2	2	0	too_few_keys
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01091490.1	261	21014	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01091490.1	261	21014	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01047510.1	10557	15770	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01047510.1	10557	15770	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01085983.1	395	571	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01085983.1	395	571	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01047562.1	1819	14234	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01047562.1	1819	14234	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01085545.1	1	186	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01085545.1	1	186	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01025500.1	59	14920	attributed_elsewhere	ITPR1	fixed10	3	183078	3	3	0	too_few_keys
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01025500.1	59	14920	attributed_elsewhere	ITPR1	informative10	3	183078	3	3	0	too_few_keys
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01044659.1	370	5401	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01044659.1	370	5401	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01018021.1	1599	27650	attributed_elsewhere	ITPR1	fixed10	2	82056	1	1	0	too_few_keys
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	WAAG01018021.1	1599	27650	attributed_elsewhere	ITPR1	informative10	2	82056	1	1	0	too_few_keys
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01027632.1	2	2152	ambiguous_regions	RYR	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01027632.1	2	2152	ambiguous_regions	RYR	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01133924.1	1	228	ambiguous_regions	RYR	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01133924.1	1	228	ambiguous_regions	RYR	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01079118.1	551	6005	ambiguous_regions	RYR	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01079118.1	551	6005	ambiguous_regions	RYR	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01025074.1	1419	8531	ambiguous_regions	RYR	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01025074.1	1419	8531	ambiguous_regions	RYR	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01069244.1	528	785	ambiguous_regions	RYR	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01069244.1	528	785	ambiguous_regions	RYR	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01143580.1	6	242	ambiguous_regions	RYR	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01143580.1	6	242	ambiguous_regions	RYR	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01006301.1	593	2735	ambiguous_regions	RYR	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01006301.1	593	2735	ambiguous_regions	RYR	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01062370.1	1	986	ambiguous_regions	RYR	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01062370.1	1	986	ambiguous_regions	RYR	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01167637.1	77	274	ambiguous_regions	RYR	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01167637.1	77	274	ambiguous_regions	RYR	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01046905.1	360	542	ambiguous_regions	RYR	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01046905.1	360	542	ambiguous_regions	RYR	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01144622.1	3	227	ambiguous_regions	RYR	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01144622.1	3	227	ambiguous_regions	RYR	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01014175.1	181	840	attributed_elsewhere	RYR	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	WAAG01014175.1	181	840	attributed_elsewhere	RYR	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01012999.1	6096	20780	rescue_regions	ITPR2	fixed10	2	122236	0	0	0	too_few_keys
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01012999.1	6096	20780	rescue_regions	ITPR2	informative10	2	122236	0	0	0	too_few_keys
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01012035.1	2168	47777	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01012035.1	2168	47777	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01019138.1	5528	59624	rescue_regions	ITPR2	fixed10	1	20526	0	0	0	too_few_keys
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01019138.1	5528	59624	rescue_regions	ITPR2	informative10	1	20526	0	0	0	too_few_keys
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01012035.1	88309	90914	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01012035.1	88309	90914	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01036333.1	16	168	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01036333.1	16	168	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01014393.1	111096	112487	rescue_regions	ITPR2	fixed10	4	112481	3	2	0	too_few_keys
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01014393.1	111096	112487	rescue_regions	ITPR2	informative10	4	112481	2	2	0	too_few_keys
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01012999.1	45621	64515	ambiguous_regions	ITPR2	fixed10	2	122236	1	0	0	too_few_keys
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01012999.1	45621	64515	ambiguous_regions	ITPR2	informative10	2	122236	0	0	0	too_few_keys
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01012999.1	93141	93230	ambiguous_regions	ITPR2	fixed10	2	122236	1	0	0	too_few_keys
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01012999.1	93141	93230	ambiguous_regions	ITPR2	informative10	2	122236	0	0	0	too_few_keys
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01035808.1	258	371	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	VWZO01035808.1	258	371	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR1	tblastn_trace	VYXF01005323.1	187	19535	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR1	tblastn_trace	VYXF01005323.1	187	19535	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR1	tblastn_trace	VYXF01003297.1	38	73688	rescue_regions	ITPR1	fixed10	5	176598	3	3	0	too_few_keys
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR1	tblastn_trace	VYXF01003297.1	38	73688	rescue_regions	ITPR1	informative10	5	176598	3	3	0	too_few_keys
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR1	tblastn_trace	VYXF01003602.1	439191	456438	rescue_regions	ITPR1	fixed10	8	386184	8	6	1	ok
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR1	tblastn_trace	VYXF01003602.1	439191	456438	rescue_regions	ITPR1	informative10	8	386184	6	6	1	ok
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR1	tblastn_trace	VYXF01003602.1	407561	411362	ambiguous_regions	ITPR1	fixed10	8	386184	8	6	1	ok
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR1	tblastn_trace	VYXF01003602.1	407561	411362	ambiguous_regions	ITPR1	informative10	8	386184	6	6	1	ok
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	VYZC01002337.1	1	4948	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	VYZC01002337.1	1	4948	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	VYZC01000433.1	7	9706	rescue_regions	ITPR3	fixed10	36	685003	10	10	1	ok
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	VYZC01000433.1	7	9706	rescue_regions	ITPR3	informative10	36	685003	10	10	1	ok
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	VYZC01003853.1	293	1071	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	VYZC01003853.1	293	1071	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	VYZC01000502.1	10	17639	ambiguous_regions	ITPR3	fixed10	26	512551	10	9	1	ok
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	VYZC01000502.1	10	17639	ambiguous_regions	ITPR3	informative10	26	512551	10	10	1	ok
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	VYZC01003519.1	160	1197	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	VYZC01003519.1	160	1197	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	VYZC01000389.1	33	65409	attributed_elsewhere	ITPR1	fixed10	6	585549	5	3	0	too_few_keys
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	VYZC01000389.1	33	65409	attributed_elsewhere	ITPR1	informative10	6	585549	3	3	0	too_few_keys
+GCA_013397635.1	Columbina picui	Aves	ITPR3	tblastn_trace	VYZG01003363.1	1	20311	rescue_regions	ITPR3	fixed10	2	29351	0	0	0	too_few_keys
+GCA_013397635.1	Columbina picui	Aves	ITPR3	tblastn_trace	VYZG01003363.1	1	20311	rescue_regions	ITPR3	informative10	2	29351	0	0	0	too_few_keys
+GCA_013397635.1	Columbina picui	Aves	ITPR3	tblastn_trace	VYZG01002982.1	8738	8863	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013397635.1	Columbina picui	Aves	ITPR3	tblastn_trace	VYZG01002982.1	8738	8863	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013398795.1	Elachura formosa	Aves	ITPR3	tblastn_trace	WBNG01000943.1	225902	253060	rescue_regions	ITPR3	fixed10	7	251618	6	5	1	ok
+GCA_013398795.1	Elachura formosa	Aves	ITPR3	tblastn_trace	WBNG01000943.1	225902	253060	rescue_regions	ITPR3	informative10	7	251618	5	5	1	ok
+GCA_013398795.1	Elachura formosa	Aves	ITPR3	tblastn_trace	WBNG01001225.1	3	12136	rescue_regions	ITPR3	fixed10	6	70313	5	5	1	ok
+GCA_013398795.1	Elachura formosa	Aves	ITPR3	tblastn_trace	WBNG01001225.1	3	12136	rescue_regions	ITPR3	informative10	6	70313	5	5	1	ok
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01110811.1	242	30170	rescue_regions	ITPR1	fixed10	1	3855	0	0	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01110811.1	242	30170	rescue_regions	ITPR1	informative10	1	3855	0	0	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01071262.1	13620	85911	rescue_regions	ITPR1	fixed10	1	85911	0	0	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01071262.1	13620	85911	rescue_regions	ITPR1	informative10	1	85911	0	0	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01003291.1	3076	26879	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01003291.1	3076	26879	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01218170.1	61	318	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01218170.1	61	318	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01076678.1	116187	120167	ambiguous_regions	ITPR1	fixed10	2	87338	2	2	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01076678.1	116187	120167	ambiguous_regions	ITPR1	informative10	2	87338	2	2	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01120657.1	2224	29887	attributed_elsewhere	ITPR2	fixed10	1	29887	0	0	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01120657.1	2224	29887	attributed_elsewhere	ITPR2	informative10	1	29887	0	0	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01122211.1	17245	36568	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01122211.1	17245	36568	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01130675.1	38986	93566	attributed_elsewhere	ITPR2	fixed10	2	39153	1	1	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01130675.1	38986	93566	attributed_elsewhere	ITPR2	informative10	2	39153	1	1	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01052882.1	240	8023	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01052882.1	240	8023	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01052882.1	28189	41126	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	VWYK01052882.1	28189	41126	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01052882.1	240	8026	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01052882.1	240	8026	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01120657.1	2224	29887	rescue_regions	ITPR2	fixed10	1	29887	0	0	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01120657.1	2224	29887	rescue_regions	ITPR2	informative10	1	29887	0	0	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01122211.1	15168	36568	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01122211.1	15168	36568	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01130675.1	37998	95667	rescue_regions	ITPR2	fixed10	2	39153	1	1	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01130675.1	37998	95667	rescue_regions	ITPR2	informative10	2	39153	1	1	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01052882.1	28222	41126	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01052882.1	28222	41126	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01110811.1	242	28983	attributed_elsewhere	ITPR1	fixed10	1	3855	0	0	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01110811.1	242	28983	attributed_elsewhere	ITPR1	informative10	1	3855	0	0	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01071262.1	15261	79020	attributed_elsewhere	ITPR1	fixed10	1	85911	0	0	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01071262.1	15261	79020	attributed_elsewhere	ITPR1	informative10	1	85911	0	0	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01003291.1	3076	26879	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01003291.1	3076	26879	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01218170.1	61	315	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01218170.1	61	315	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01076678.1	116205	120167	attributed_elsewhere	ITPR1	fixed10	2	87338	2	2	0	too_few_keys
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	VWYK01076678.1	116205	120167	attributed_elsewhere	ITPR1	informative10	2	87338	2	2	0	too_few_keys
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	VXBY01004248.1	28529	46263	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	VXBY01004248.1	28529	46263	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	VXBY01004970.1	1841	19799	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	VXBY01004970.1	1841	19799	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	VXBY01005896.1	3797	18160	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	VXBY01005896.1	3797	18160	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	VXBY01002460.1	1880	21563	rescue_regions	ITPR1	fixed10	4	107732	2	2	0	too_few_keys
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	VXBY01002460.1	1880	21563	rescue_regions	ITPR1	informative10	4	107732	2	2	0	too_few_keys
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	VXBY01004248.1	6927	8207	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	VXBY01004248.1	6927	8207	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	VXBY01002961.1	22041	25825	ambiguous_regions	ITPR1	fixed10	2	76646	2	2	0	too_few_keys
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	VXBY01002961.1	22041	25825	ambiguous_regions	ITPR1	informative10	2	76646	2	2	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01025208.1	962	7441	rescue_regions	ITPR1	fixed10	1	4282	0	0	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01025208.1	962	7441	rescue_regions	ITPR1	informative10	1	4282	0	0	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01032376.1	13201	38399	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01032376.1	13201	38399	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01213858.1	2102	3128	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01213858.1	2102	3128	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01214461.1	354	6346	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01214461.1	354	6346	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01209974.1	321	518	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01209974.1	321	518	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01044495.1	12279	34307	rescue_regions	ITPR1	fixed10	2	30034	0	0	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01044495.1	12279	34307	rescue_regions	ITPR1	informative10	2	30034	0	0	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01201744.1	432	647	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01201744.1	432	647	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01031320.1	177	16134	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01031320.1	177	16134	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01092110.1	328	531	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01092110.1	328	531	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01061144.1	70	39417	attributed_elsewhere	ITPR2	fixed10	1	2326	0	0	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01061144.1	70	39417	attributed_elsewhere	ITPR2	informative10	1	2326	0	0	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01030576.1	22850	47041	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01030576.1	22850	47041	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01027987.1	16014	55969	attributed_elsewhere	ITPR2	fixed10	3	132170	2	2	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	VYZP01027987.1	16014	55969	attributed_elsewhere	ITPR2	informative10	3	132170	2	2	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01061144.1	70	39417	rescue_regions	ITPR2	fixed10	1	2326	0	0	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01061144.1	70	39417	rescue_regions	ITPR2	informative10	1	2326	0	0	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01030576.1	21173	48474	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01030576.1	21173	48474	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01027987.1	14394	57282	rescue_regions	ITPR2	fixed10	3	132170	2	2	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01027987.1	14394	57282	rescue_regions	ITPR2	informative10	3	132170	2	2	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01099364.1	22	195	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01099364.1	22	195	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01041613.1	34	156	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01041613.1	34	156	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01025208.1	962	7378	attributed_elsewhere	ITPR1	fixed10	1	4282	0	0	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01025208.1	962	7378	attributed_elsewhere	ITPR1	informative10	1	4282	0	0	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01032376.1	13201	38399	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01032376.1	13201	38399	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01201744.1	444	647	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01201744.1	444	647	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01031320.1	153	16134	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01031320.1	153	16134	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01214461.1	6035	6292	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01214461.1	6035	6292	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01092110.1	328	531	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01092110.1	328	531	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01044495.1	16689	34307	attributed_elsewhere	ITPR1	fixed10	2	30034	0	0	0	too_few_keys
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	VYZP01044495.1	16689	34307	attributed_elsewhere	ITPR1	informative10	2	30034	0	0	0	too_few_keys
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01233351.1	86	523	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01233351.1	86	523	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01149918.1	1	240	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01149918.1	1	240	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01179649.1	139	636	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01179649.1	139	636	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01222198.1	1045	1239	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01222198.1	1045	1239	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01237340.1	1408	1605	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01237340.1	1408	1605	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01056383.1	39	305	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01056383.1	39	305	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01241880.1	414	2820	ambiguous_regions	vertebrate_basal	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01241880.1	414	2820	ambiguous_regions	vertebrate_basal	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01222539.1	427	1410	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01222539.1	427	1410	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01001968.1	380	622	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01001968.1	380	622	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01198836.1	285	924	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01198836.1	285	924	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01170195.1	170	607	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01170195.1	170	607	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01185192.1	3	360	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	VYZQ01185192.1	3	360	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01170195.1	158	607	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01170195.1	158	607	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01227487.1	1	1607	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01227487.1	1	1607	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01234953.1	3	1935	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01234953.1	3	1935	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01238598.1	8	2486	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01238598.1	8	2486	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01215973.1	157	592	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01215973.1	157	592	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01185192.1	3	749	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01185192.1	3	749	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01230754.1	519	1879	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01230754.1	519	1879	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01230085.1	1	385	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01230085.1	1	385	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01222539.1	427	1410	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01222539.1	427	1410	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01198836.1	333	924	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01198836.1	333	924	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01056383.1	39	293	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01056383.1	39	293	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01001968.1	380	622	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	VYZQ01001968.1	380	622	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01378676.1	1550	2541	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01378676.1	1550	2541	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01383548.1	528	2319	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01383548.1	528	2319	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01318871.1	134	334	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01318871.1	134	334	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01360399.1	267	461	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01360399.1	267	461	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01271755.1	25	303	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01271755.1	25	303	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01381383.1	415	2821	ambiguous_regions	vertebrate_basal	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01381383.1	415	2821	ambiguous_regions	vertebrate_basal	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01292874.1	3	302	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01292874.1	3	302	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01303802.1	266	433	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01303802.1	266	433	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01346519.1	30	1049	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01346519.1	30	1049	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01347474.1	148	1037	attributed_elsewhere	ITPR3	fixed10	1	1037	0	0	0	too_few_keys
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01347474.1	148	1037	attributed_elsewhere	ITPR3	informative10	1	1037	0	0	0	too_few_keys
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01282621.1	12	399	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01282621.1	12	399	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01265887.1	168	368	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	VYZR01265887.1	168	368	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01345502.1	1058	1496	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01345502.1	1058	1496	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01346806.1	1299	2329	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01346806.1	1299	2329	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01307618.1	483	677	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01307618.1	483	677	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01225639.1	11	196	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01225639.1	11	196	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01236670.1	112	282	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01236670.1	112	282	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01297329.1	402	563	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01297329.1	402	563	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01272491.1	240	515	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01272491.1	240	515	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01098498.1	85	1021	ambiguous_regions	vertebrate_basal	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01098498.1	85	1021	ambiguous_regions	vertebrate_basal	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01313572.1	424	645	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01313572.1	424	645	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01307943.1	367	597	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01307943.1	367	597	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01312860.1	71	835	attributed_elsewhere	ITPR3	fixed10	1	820	0	0	0	too_few_keys
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01312860.1	71	835	attributed_elsewhere	ITPR3	informative10	1	820	0	0	0	too_few_keys
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01066261.1	2526	4276	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	VYZS01066261.1	2526	4276	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01011340.1	743	36465	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01011340.1	743	36465	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01002692.1	14876	48854	rescue_regions	ITPR1	fixed10	2	28797	0	0	0	too_few_keys
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01002692.1	14876	48854	rescue_regions	ITPR1	informative10	2	28797	0	0	0	too_few_keys
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01123329.1	38	235	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01123329.1	38	235	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01028894.1	3271	21368	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01028894.1	3271	21368	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01032716.1	105	359	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01032716.1	105	359	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01031244.1	217569	221604	ambiguous_regions	ITPR1	fixed10	3	198545	3	3	0	too_few_keys
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01031244.1	217569	221604	ambiguous_regions	ITPR1	informative10	3	198545	3	3	0	too_few_keys
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01122154.1	49	631	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01122154.1	49	631	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01051456.1	2899	12117	attributed_elsewhere	ITPR2	fixed10	3	151441	3	2	0	too_few_keys
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01051456.1	2899	12117	attributed_elsewhere	ITPR2	informative10	3	151441	2	2	0	too_few_keys
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01051456.1	33594	53581	attributed_elsewhere	ITPR2	fixed10	3	151441	3	2	0	too_few_keys
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01051456.1	33594	53581	attributed_elsewhere	ITPR2	informative10	3	151441	2	2	0	too_few_keys
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01051456.1	74180	74347	attributed_elsewhere	ITPR2	fixed10	3	151441	2	2	0	too_few_keys
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01051456.1	74180	74347	attributed_elsewhere	ITPR2	informative10	3	151441	2	2	0	too_few_keys
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01042054.1	900	1091	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01042054.1	900	1091	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01001058.1	421	567	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	VYZT01001058.1	421	567	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01081957.1	145	1353	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01081957.1	145	1353	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01202422.1	250	474	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01202422.1	250	474	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01180523.1	59	259	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01180523.1	59	259	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01253030.1	110	304	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01253030.1	110	304	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01058446.1	2017	2271	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01058446.1	2017	2271	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01230350.1	328	603	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01230350.1	328	603	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01229881.1	289	504	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01229881.1	289	504	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01171623.1	134	319	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01171623.1	134	319	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01186048.1	30	197	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01186048.1	30	197	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01251878.1	458	1407	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01251878.1	458	1407	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01200179.1	176	439	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01200179.1	176	439	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01238387.1	668	999	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	VZTT01238387.1	668	999	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01253856.1	24	1591	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01253856.1	24	1591	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01242802.1	31	484	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01242802.1	31	484	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01236841.1	144	907	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01236841.1	144	907	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01229663.1	23	786	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01229663.1	23	786	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01191845.1	3	352	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01191845.1	3	352	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01232944.1	25	701	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01232944.1	25	701	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01180700.1	90	272	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01180700.1	90	272	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01251878.1	458	1407	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01251878.1	458	1407	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01238387.1	593	999	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01238387.1	593	999	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01084969.1	16	201	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01084969.1	16	201	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01077814.1	233	618	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01077814.1	233	618	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01200179.1	176	439	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	VZTT01200179.1	176	439	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01024782.1	141	27760	rescue_regions	ITPR2	fixed10	1	24941	0	0	0	too_few_keys
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01024782.1	141	27760	rescue_regions	ITPR2	informative10	1	24941	0	0	0	too_few_keys
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01013653.1	57347	78174	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01013653.1	57347	78174	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01013653.1	6641	21166	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01013653.1	6641	21166	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01020350.1	105533	129453	rescue_regions	ITPR2	fixed10	2	84170	2	1	0	too_few_keys
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01020350.1	105533	129453	rescue_regions	ITPR2	informative10	2	84170	1	1	0	too_few_keys
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01012247.1	885	9475	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01012247.1	885	9475	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01020350.1	82676	84170	rescue_regions	ITPR2	fixed10	2	84170	1	1	0	too_few_keys
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01020350.1	82676	84170	rescue_regions	ITPR2	informative10	2	84170	1	1	0	too_few_keys
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01044771.1	25120	25272	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01044771.1	25120	25272	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01054110.1	1	138	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01054110.1	1	138	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01014598.1	5026	7275	ambiguous_regions	ITPR2	fixed10	1	79128	0	0	0	too_few_keys
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01014598.1	5026	7275	ambiguous_regions	ITPR2	informative10	1	79128	0	0	0	too_few_keys
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01044771.1	506	2035	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01044771.1	506	2035	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01050749.1	319	429	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01050749.1	319	429	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01057456.1	173	20008	attributed_elsewhere	ITPR1	fixed10	3	78544	1	1	0	too_few_keys
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	VZTW01057456.1	173	20008	attributed_elsewhere	ITPR1	informative10	3	78544	1	1	0	too_few_keys
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01394905.1	438	876	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01394905.1	438	876	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01362464.1	45	341	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01362464.1	45	341	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01395724.1	1479	2470	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01395724.1	1479	2470	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01110760.1	907	1161	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01110760.1	907	1161	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01389888.1	349	2034	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01389888.1	349	2034	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01340881.1	231	452	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01340881.1	231	452	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01390055.1	1454	1672	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01390055.1	1454	1672	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01377943.1	311	1199	attributed_elsewhere	ITPR3	fixed10	1	1450	0	0	0	too_few_keys
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01377943.1	311	1199	attributed_elsewhere	ITPR3	informative10	1	1450	0	0	0	too_few_keys
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01281677.1	36	412	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01281677.1	36	412	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01400693.1	73	1910	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01400693.1	73	1910	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01280810.1	45	420	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01280810.1	45	420	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01360720.1	817	1138	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	VZUA01360720.1	817	1138	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01002922.1	63	17332	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01002922.1	63	17332	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01002033.1	1	28441	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01002033.1	1	28441	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01001396.1	74176	93897	rescue_regions	ITPR1	fixed10	1	12641	1	0	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01001396.1	74176	93897	rescue_regions	ITPR1	informative10	1	12641	0	0	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01000816.1	1559	37421	rescue_regions	ITPR1	fixed10	4	162032	3	3	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01000816.1	1559	37421	rescue_regions	ITPR1	informative10	4	162032	3	3	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01003387.1	795	4219	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01003387.1	795	4219	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01001396.1	34510	38284	ambiguous_regions	ITPR1	fixed10	1	12641	1	0	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01001396.1	34510	38284	ambiguous_regions	ITPR1	informative10	1	12641	0	0	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01007138.1	162	8475	attributed_elsewhere	ITPR3	fixed10	1	8810	0	0	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01007138.1	162	8475	attributed_elsewhere	ITPR3	informative10	1	8810	0	0	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01008897.1	62	1898	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01008897.1	62	1898	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01002215.1	562	16565	attributed_elsewhere	ITPR3	fixed10	2	39936	1	1	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01002215.1	562	16565	attributed_elsewhere	ITPR3	informative10	2	39936	1	1	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01012468.1	1070	1231	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01012468.1	1070	1231	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01009276.1	141	287	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	VZSW01009276.1	141	287	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01007138.1	1	8810	rescue_regions	ITPR3	fixed10	1	8810	0	0	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01007138.1	1	8810	rescue_regions	ITPR3	informative10	1	8810	0	0	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01002215.1	3	16879	rescue_regions	ITPR3	fixed10	2	39936	1	1	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01002215.1	3	16879	rescue_regions	ITPR3	informative10	2	39936	1	1	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01008897.1	62	1889	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01008897.1	62	1889	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01009276.1	141	1344	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01009276.1	141	1344	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01012468.1	1	1231	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01012468.1	1	1231	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01002922.1	3912	17329	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01002922.1	3912	17329	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01001396.1	74176	93942	attributed_elsewhere	ITPR1	fixed10	1	12641	1	0	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01001396.1	74176	93942	attributed_elsewhere	ITPR1	informative10	1	12641	0	0	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01000816.1	1559	33144	attributed_elsewhere	ITPR1	fixed10	4	162032	3	3	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01000816.1	1559	33144	attributed_elsewhere	ITPR1	informative10	4	162032	3	3	0	too_few_keys
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01002033.1	2699	27634	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01002033.1	2699	27634	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01003387.1	3070	3219	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	VZSW01003387.1	3070	3219	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01377838.1	2	1616	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01377838.1	2	1616	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01376048.1	82	1510	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01376048.1	82	1510	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01378899.1	469	1784	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01378899.1	469	1784	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01366182.1	14	969	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01366182.1	14	969	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01118701.1	229	2531	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01118701.1	229	2531	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01380221.1	444	2108	rescue_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01380221.1	444	2108	rescue_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01117005.1	152	2516	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01117005.1	152	2516	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01269636.1	1	195	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01269636.1	1	195	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01171457.1	69	245	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01171457.1	69	245	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01054921.1	2362	4141	ambiguous_regions	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01054921.1	2362	4141	ambiguous_regions	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01015125.1	15816	24382	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01015125.1	15816	24382	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01024809.1	10571	32191	attributed_elsewhere	ITPR1	fixed10	1	32863	0	0	0	too_few_keys
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	VYZU01024809.1	10571	32191	attributed_elsewhere	ITPR1	informative10	1	32863	0	0	0	too_few_keys
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	ITPR2	tblastn_trace	JAGTXL010026399.1	365	19219	rescue_regions	ITPR2		0	0	0	0	0	no_gene_table
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	ITPR2	tblastn_trace	JAGTXL010018976.1	131	63200	rescue_regions	ITPR2		0	0	0	0	0	no_gene_table
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	ITPR2	tblastn_trace	JAGTXL010000958.1	126332	126714	rescue_regions	ITPR2		0	0	0	0	0	no_gene_table
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	ITPR2	tblastn_trace	JAGTXL010024857.1	13391	19757	ambiguous_regions	ITPR2		0	0	0	0	0	no_gene_table
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	ITPR2	tblastn_trace	JAGTXL010026400.1	779	35361	ambiguous_regions	ITPR2		0	0	0	0	0	no_gene_table
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	ITPR2	tblastn_trace	JAGTXL010010122.1	913	14462	ambiguous_regions	ITPR2		0	0	0	0	0	no_gene_table
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	ITPR2	tblastn_trace	JAGTXL010004352.1	12354	12518	attributed_elsewhere	ITPR1		0	0	0	0	0	no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	OMOX01004006.1	319	1846	rescue_regions	ITPR2		0	0	0	0	0	no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	OMOX01091272.1	858	3390	ambiguous_regions	ITPR2		0	0	0	0	0	no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	OMOX01144129.1	241	738	ambiguous_regions	ITPR2		0	0	0	0	0	no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	OMOX01108976.1	116	2754	ambiguous_regions	ITPR2		0	0	0	0	0	no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	OMOX01036665.1	341	2730	ambiguous_regions	ITPR2		0	0	0	0	0	no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	OMOX01183703.1	666	3254	ambiguous_regions	ITPR2		0	0	0	0	0	no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	OMOX01028128.1	358	1437	attributed_elsewhere	ITPR1		0	0	0	0	0	no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	OMOX01173347.1	1897	4122	attributed_elsewhere	ITPR3		0	0	0	0	0	no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	OMOX01085701.1	1141	1335	attributed_elsewhere	ITPR1		0	0	0	0	0	no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	OMOX01104177.1	3	2407	attributed_elsewhere	vertebrate_basal		0	0	0	0	0	no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	OMOX01071523.1	429	1925	attributed_elsewhere	vertebrate_basal		0	0	0	0	0	no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	OMOX01149158.1	1477	1647	attributed_elsewhere	ITPR1		0	0	0	0	0	no_gene_table
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	NW_009605091.1	75228	87637	rescue_regions	ITPR2	fixed10	1	87635	0	0	0	too_few_keys
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	NW_009605091.1	75228	87637	rescue_regions	ITPR2	informative10	1	87635	0	0	0	too_few_keys
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	NW_009628528.1	14147	56081	rescue_regions	ITPR2	fixed10	1	56080	0	0	0	too_few_keys
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	NW_009628528.1	14147	56081	rescue_regions	ITPR2	informative10	1	56080	0	0	0	too_few_keys
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	NW_009596556.1	21584	76111	rescue_regions	ITPR2	fixed10	1	99420	0	0	0	too_few_keys
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	NW_009596556.1	21584	76111	rescue_regions	ITPR2	informative10	1	99420	0	0	0	too_few_keys
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	NW_009596556.1	97519	98996	rescue_regions	ITPR2	fixed10	1	99420	0	0	0	too_few_keys
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	NW_009596556.1	97519	98996	rescue_regions	ITPR2	informative10	1	99420	0	0	0	too_few_keys
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	NW_009605091.1	41929	53034	ambiguous_regions	ITPR2	fixed10	1	87635	0	0	0	too_few_keys
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	NW_009605091.1	41929	53034	ambiguous_regions	ITPR2	informative10	1	87635	0	0	0	too_few_keys
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010225713.1	5956	17872	rescue_regions	ITPR2	fixed10	1	17870	0	0	0	too_few_keys
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010225713.1	5956	17872	rescue_regions	ITPR2	informative10	1	17870	0	0	0	too_few_keys
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010259791.1	2255	22560	rescue_regions	ITPR2	fixed10	1	22581	0	0	0	too_few_keys
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010259791.1	2255	22560	rescue_regions	ITPR2	informative10	1	22581	0	0	0	too_few_keys
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010272243.1	16408	21014	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010272243.1	16408	21014	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010259194.1	6094	9216	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010259194.1	6094	9216	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010247233.1	10971	26734	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010247233.1	10971	26734	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010230884.1	2291	6229	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010230884.1	2291	6229	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010234790.1	29653	31134	rescue_regions	ITPR2	fixed10	1	30015	0	0	0	too_few_keys
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010234790.1	29653	31134	rescue_regions	ITPR2	informative10	1	30015	0	0	0	too_few_keys
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010260285.1	554	8838	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010260285.1	554	8838	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010234790.1	4437	8359	ambiguous_regions	ITPR2	fixed10	1	30015	0	0	0	too_few_keys
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010234790.1	4437	8359	ambiguous_regions	ITPR2	informative10	1	30015	0	0	0	too_few_keys
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010236556.1	30426	38977	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010236556.1	30426	38977	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010271354.1	494	2052	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	NW_010271354.1	494	2052	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	NW_010332464.1	899	66305	rescue_regions	ITPR2	fixed10	1	76771	0	0	0	too_few_keys
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	NW_010332464.1	899	66305	rescue_regions	ITPR2	informative10	1	76771	0	0	0	too_few_keys
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	NW_010289176.1	19070	34172	rescue_regions	ITPR2	fixed10	1	35138	0	0	0	too_few_keys
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	NW_010289176.1	19070	34172	rescue_regions	ITPR2	informative10	1	35138	0	0	0	too_few_keys
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	NW_010286469.1	4836	28702	rescue_regions	ITPR2	fixed10	2	106838	1	1	0	too_few_keys
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	NW_010286469.1	4836	28702	rescue_regions	ITPR2	informative10	2	106838	1	1	0	too_few_keys
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	NW_010314197.1	116	4875	rescue_regions	ITPR2	fixed10	1	4821	0	0	0	too_few_keys
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	NW_010314197.1	116	4875	rescue_regions	ITPR2	informative10	1	4821	0	0	0	too_few_keys
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	NW_010286469.1	50417	51887	rescue_regions	ITPR2	fixed10	2	106838	1	1	0	too_few_keys
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	NW_010286469.1	50417	51887	rescue_regions	ITPR2	informative10	2	106838	1	1	0	too_few_keys
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	NW_010295784.1	1198	12133	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	NW_010295784.1	1198	12133	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	NW_010348929.1	52	156	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	NW_010348929.1	52	156	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009725610.1	746	24970	rescue_regions	ITPR1	fixed10	1	24967	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009725610.1	746	24970	rescue_regions	ITPR1	informative10	1	24967	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009699948.1	4981	48424	rescue_regions	ITPR1	fixed10	1	49418	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009699948.1	4981	48424	rescue_regions	ITPR1	informative10	1	49418	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009700007.1	8704	9781	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009700007.1	8704	9781	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009708647.1	2008	19998	ambiguous_regions	ITPR1	fixed10	1	20001	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009708647.1	2008	19998	ambiguous_regions	ITPR1	informative10	1	20001	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009694027.1	3701	16076	attributed_elsewhere	ITPR2	fixed10	1	60855	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009694027.1	3701	16076	attributed_elsewhere	ITPR2	informative10	1	60855	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009710863.1	2678	27630	attributed_elsewhere	ITPR2	fixed10	1	21813	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009710863.1	2678	27630	attributed_elsewhere	ITPR2	informative10	1	21813	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009700741.1	29484	40878	attributed_elsewhere	ITPR2	fixed10	1	42633	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009700741.1	29484	40878	attributed_elsewhere	ITPR2	informative10	1	42633	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009700741.1	2649	5990	attributed_elsewhere	ITPR2	fixed10	1	42633	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009700741.1	2649	5990	attributed_elsewhere	ITPR2	informative10	1	42633	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009733190.1	39302	53705	attributed_elsewhere	ITPR2	fixed10	1	53605	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009733190.1	39302	53705	attributed_elsewhere	ITPR2	informative10	1	53605	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009694027.1	40461	51110	attributed_elsewhere	ITPR2	fixed10	1	60855	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009694027.1	40461	51110	attributed_elsewhere	ITPR2	informative10	1	60855	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009733190.1	17284	17448	attributed_elsewhere	ITPR2	fixed10	1	53605	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009733190.1	17284	17448	attributed_elsewhere	ITPR2	informative10	1	53605	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009694631.1	16123	27817	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	NW_009694631.1	16123	27817	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009694027.1	2641	16079	rescue_regions	ITPR2	fixed10	1	60855	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009694027.1	2641	16079	rescue_regions	ITPR2	informative10	1	60855	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009710863.1	2678	27630	rescue_regions	ITPR2	fixed10	1	21813	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009710863.1	2678	27630	rescue_regions	ITPR2	informative10	1	21813	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009700741.1	2655	42645	rescue_regions	ITPR2	fixed10	1	42633	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009700741.1	2655	42645	rescue_regions	ITPR2	informative10	1	42633	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009694631.1	13830	27820	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009694631.1	13830	27820	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009733190.1	39299	53606	rescue_regions	ITPR2	fixed10	1	53605	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009733190.1	39299	53606	rescue_regions	ITPR2	informative10	1	53605	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009733190.1	15881	17448	rescue_regions	ITPR2	fixed10	1	53605	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009733190.1	15881	17448	rescue_regions	ITPR2	informative10	1	53605	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009694027.1	40467	51110	ambiguous_regions	ITPR2	fixed10	1	60855	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009694027.1	40467	51110	ambiguous_regions	ITPR2	informative10	1	60855	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009725610.1	833	23925	attributed_elsewhere	ITPR1	fixed10	1	24967	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009725610.1	833	23925	attributed_elsewhere	ITPR1	informative10	1	24967	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009708647.1	2008	20022	attributed_elsewhere	ITPR1	fixed10	1	20001	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009708647.1	2008	20022	attributed_elsewhere	ITPR1	informative10	1	20001	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009699948.1	4981	43834	attributed_elsewhere	ITPR1	fixed10	1	49418	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009699948.1	4981	43834	attributed_elsewhere	ITPR1	informative10	1	49418	0	0	0	too_few_keys
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009700007.1	8704	8856	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009700007.1	8704	8856	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009720167.1	29787	29879	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	NW_009720167.1	29787	29879	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010589245.1	88294	99162	rescue_regions	ITPR2	fixed10	1	100121	0	0	0	too_few_keys
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010589245.1	88294	99162	rescue_regions	ITPR2	informative10	1	100121	0	0	0	too_few_keys
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010577028.1	916	21362	rescue_regions	ITPR2	fixed10	1	21361	0	0	0	too_few_keys
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010577028.1	916	21362	rescue_regions	ITPR2	informative10	1	21361	0	0	0	too_few_keys
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010578154.1	50909	64213	rescue_regions	ITPR2	fixed10	1	64261	0	0	0	too_few_keys
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010578154.1	50909	64213	rescue_regions	ITPR2	informative10	1	64261	0	0	0	too_few_keys
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010578154.1	3942	16271	rescue_regions	ITPR2	fixed10	1	64261	0	0	0	too_few_keys
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010578154.1	3942	16271	rescue_regions	ITPR2	informative10	1	64261	0	0	0	too_few_keys
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010583666.1	428690	467482	rescue_regions	ITPR2	fixed10	9	469427	8	8	1	ok
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010583666.1	428690	467482	rescue_regions	ITPR2	informative10	9	469427	8	8	1	ok
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010609530.1	66	194	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010609530.1	66	194	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010654042.1	1337	1516	ambiguous_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010654042.1	1337	1516	ambiguous_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010589245.1	54744	65450	ambiguous_regions	ITPR2	fixed10	1	100121	0	0	0	too_few_keys
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010589245.1	54744	65450	ambiguous_regions	ITPR2	informative10	1	100121	0	0	0	too_few_keys
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010583650.1	211207	229522	attributed_elsewhere	ITPR3	fixed10	10	230129	9	6	1	ok
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010583650.1	211207	229522	attributed_elsewhere	ITPR3	informative10	10	230129	6	6	1	ok
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010654453.1	163	1566	attributed_elsewhere	ITPR3	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010654453.1	163	1566	attributed_elsewhere	ITPR3	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010637039.1	99	667	attributed_elsewhere	ITPR3	fixed10	1	655	0	0	0	too_few_keys
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010637039.1	99	667	attributed_elsewhere	ITPR3	informative10	1	655	0	0	0	too_few_keys
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010632909.1	103	261	attributed_elsewhere	vertebrate_basal	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	NW_010632909.1	103	261	attributed_elsewhere	vertebrate_basal	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010414688.1	348	17866	rescue_regions	ITPR1	fixed10	1	18460	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010414688.1	348	17866	rescue_regions	ITPR1	informative10	1	18460	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010390215.1	45931	69429	rescue_regions	ITPR1	fixed10	1	69423	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010390215.1	45931	69429	rescue_regions	ITPR1	informative10	1	69423	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010390270.1	72	22819	rescue_regions	ITPR1	fixed10	1	22816	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010390270.1	72	22819	rescue_regions	ITPR1	informative10	1	22816	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010410248.1	8046	21590	rescue_regions	ITPR1	fixed10	1	21557	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010410248.1	8046	21590	rescue_regions	ITPR1	informative10	1	21557	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010416476.1	1720	4305	rescue_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010416476.1	1720	4305	rescue_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010417446.1	3752	3925	ambiguous_regions	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010417446.1	3752	3925	ambiguous_regions	ITPR1	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010415614.1	3095	31335	attributed_elsewhere	ITPR2	fixed10	1	76945	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010415614.1	3095	31335	attributed_elsewhere	ITPR2	informative10	1	76945	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010406637.1	2027	23956	attributed_elsewhere	ITPR2	fixed10	1	23935	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010406637.1	2027	23956	attributed_elsewhere	ITPR2	informative10	1	23935	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010413601.1	559	11159	attributed_elsewhere	ITPR2	fixed10	1	12591	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010413601.1	559	11159	attributed_elsewhere	ITPR2	informative10	1	12591	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010398439.1	20013	40696	attributed_elsewhere	ITPR2	fixed10	1	46012	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010398439.1	20013	40696	attributed_elsewhere	ITPR2	informative10	1	46012	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010415614.1	53146	64707	attributed_elsewhere	ITPR2	fixed10	1	76945	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010415614.1	53146	64707	attributed_elsewhere	ITPR2	informative10	1	76945	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010427406.1	14792	14968	attributed_elsewhere	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	NW_010427406.1	14792	14968	attributed_elsewhere	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010415614.1	3065	31335	rescue_regions	ITPR2	fixed10	1	76945	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010415614.1	3065	31335	rescue_regions	ITPR2	informative10	1	76945	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010406637.1	2027	26589	rescue_regions	ITPR2	fixed10	1	23935	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010406637.1	2027	26589	rescue_regions	ITPR2	informative10	1	23935	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010413601.1	538	12657	rescue_regions	ITPR2	fixed10	1	12591	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010413601.1	538	12657	rescue_regions	ITPR2	informative10	1	12591	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010405870.1	6572	10068	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010405870.1	6572	10068	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010398439.1	432	40699	rescue_regions	ITPR2	fixed10	1	46012	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010398439.1	432	40699	rescue_regions	ITPR2	informative10	1	46012	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010427406.1	14792	16266	rescue_regions	ITPR2	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010427406.1	14792	16266	rescue_regions	ITPR2	informative10	0	0	0	0	0	no_neighbourhood
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010415614.1	53065	64707	ambiguous_regions	ITPR2	fixed10	1	76945	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010415614.1	53065	64707	ambiguous_regions	ITPR2	informative10	1	76945	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010390215.1	45931	69429	attributed_elsewhere	ITPR1	fixed10	1	69423	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010390215.1	45931	69429	attributed_elsewhere	ITPR1	informative10	1	69423	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010414688.1	2826	16794	attributed_elsewhere	ITPR1	fixed10	1	18460	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010414688.1	2826	16794	attributed_elsewhere	ITPR1	informative10	1	18460	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010390270.1	72	22211	attributed_elsewhere	ITPR1	fixed10	1	22816	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010390270.1	72	22211	attributed_elsewhere	ITPR1	informative10	1	22816	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010410248.1	8049	21590	attributed_elsewhere	ITPR1	fixed10	1	21557	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010410248.1	8049	21590	attributed_elsewhere	ITPR1	informative10	1	21557	0	0	0	too_few_keys
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010417446.1	3752	4006	attributed_elsewhere	ITPR1	fixed10	0	0	0	0	0	no_neighbourhood
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	NW_010417446.1	3752	4006	attributed_elsewhere	ITPR1	informative10	0	0	0	0	0	no_neighbourhood

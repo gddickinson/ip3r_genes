@@ -2342,3 +2342,102 @@ cyclostome cells as losses would score two independent losses per cyclostome
 that never happened. The 43 `tblastn_trace` cells are the ones the brief
 asks S15 to disambiguate by synteny, and S8's consensus caller with its
 committed calibration and null already exists for that.
+
+---
+
+## 2026-09-08 — S15a: the loss instrument
+
+Split the S15 ledger row (the protocol's rule for a task too large for one
+session). **S15a** is the character matrix and the three things it needs
+before a loss can be counted; **S15b** is the counting, and S15a changed
+what that task is.
+
+### What ran
+
+`scripts/s15_run.py` — eight stages, `recon → synteny → integrity → tree →
+matrix → tables → figures → report`, all green, ~40 s end to end, entirely
+offline apart from one archived `datasets` call for 991 ancestor taxon
+names. 15 constructed negative controls run before anything is written.
+→ `results/loss_dynamics/` (19 tables, 4 figures, `report.md`, 2.3 MB).
+
+### What resulted
+
+**No ITPR paralog is absent from any of the 309 vertebrate genomes.** 0 of
+927 genome × paralog cells reaches the loss state; in all 189 assemblies
+contiguous enough to carry the gene the minimum is 3.00 gene-equivalents.
+783 cells are one placed locus, 90 are truncated by their contig, 7 are
+partial, **43 are a gene reassembled across contigs**, and 4 are
+`paralog_unassignable` — the cyclostomes, exactly the four S13 flagged,
+recovered here by a rule reading the sweep's own locus counts rather than
+S13's table.
+
+**The brief's synteny step is answered by a number, not a call.** S8's
+consensus caller is 100 % accurate at every key count it acts on (13/13,
+14/14, 378/378) — and of 432 rescue regions in the undecided cells, **273
+sit on a contig carrying no annotated gene at all**, 151 have too few keys
+and **8 reach the four-key floor**. The median region has 0 informative
+neighbours and its contig extends 39.9 kb, shorter than the gene. Where the
+caller does reach, it agrees with the alignment attribution 6/6. Accurate
+and unavailable.
+
+**So the instrument is a reference reassembled across contigs.** Computed
+outside every locus the aligner found (the sweep's own cross-paralog
+exclusion, inherited not re-invented), one reference at a time, with the
+bar measured against a decoy that cost no new search: regions the 38-bait
+panel attributes to a paralog the aligner already placed at a locus in the
+same genome. Candidates median 0.795 (min 0.174), decoy median 0.030 (max
+0.100), Youden J = 1.00, bar 0.137 at the gap's midpoint.
+
+### What went wrong on the way, and what it changed
+
+- **The first calibration did not separate — J = 0.52.** The decoy was every
+  region attributed elsewhere, and in a genome where two paralogs are *both*
+  shattered a fragment attributed to the other one is a piece of a real
+  gene, so the decoy contained genes. Restricting it to accounted-for
+  paralogs gives J = 1.00. The middle population is kept and committed:
+  `co_trace`, 20 regions, median 0.631 — it *is* the measured size of the
+  paralog-attribution problem in a shattered assembly, and it is why S15b's
+  primary coding has to be family-level presence per genome. **D46.**
+- **The ORF screen's confounder is not contiguity.** Contig N50 barely moves
+  lesion density (ρ = −0.077); bait identity moves it a great deal
+  (ρ = −0.397, p = 1.5e-67). So the paired within-genome test is run twice,
+  once identity-matched — and ITPR2's apparent indel excess **disappears**
+  (q = 0.902) while **ITPR3's survives** (39 genomes to 14, q = 0.0032),
+  with the RyR control showing no excess. **D47.**
+- **`_fmt` wrote floats at four decimal places**, so a p-value of 2.1e-07
+  landed in the table as `0.0000` and the report read it back as zero and
+  rendered "p < 1e-300". Floats are now `%.6g`, and the report has its own
+  `pfmt()` — a p-value at four decimal places hides how strong a claim is,
+  not how weak.
+- **Two negative controls failed on first run and both were the test's
+  fault, not the code's.** T5 used a bait key the fixture did not define;
+  T14 asserted that the human+mouse clade must be labelled `Mammalia`, when
+  `_suppress_unary` deliberately keeps the *deepest* named node of a unary
+  chain and with two mammals sampled that is `Euarchontoglires`. T14 now
+  asserts membership and that the label is *some* taxon on the shared path.
+- **`compare_with_s13()` first reported 21 of 29 curated clades as
+  unrecovered** while every matched node carried the right name: it was
+  counting assemblies of species S13 never sampled as intruders. Asked
+  correctly — do any assemblies S13 places *outside* the clade fall inside
+  it here — the answer is 23 of 23 testable clades recovered, 0
+  disagreements.
+- **`contig_spans_gene` cannot be keyed by genome.** The ledger's column is
+  a property of a cell's best locus, and a last-wins dict over cells put
+  most genomes on the wrong side of D4's bar. It now calls
+  `s5_calibration.spans_a_gene` on the genome's own contig N50.
+- Mutation-tested on three deliberate rule breakages, all three caught, and
+  the stdlib t-tail validated against seven published critical values.
+- `s15_report_results.py` is at 495 lines — inside the budget but the next
+  addition to it needs a split.
+
+### Next
+
+S15b, and S15a has changed it. There are no losses to count, so the
+**sensitivity matrix is the deliverable**: which combinations of coding,
+evidence bar, branch lengths and contiguity filter *manufacture* a loss.
+`loss_candidates.tsv` is built for it, with the rule that stopped each
+near-miss in its row. Three constraints come with it — code family-level
+presence as primary (D46); do not fit Mk rates to an invariant character;
+there are no pseudogene fossils, so the shared-lesion Poisson test must be
+reported with its denominator. The lead worth following instead is D47's
+ITPR3 indel excess, which nothing in this project explains.

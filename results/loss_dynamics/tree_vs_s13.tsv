@@ -1,0 +1,30 @@
+clade	n_s13	n_shared	recovered	matched_node	n_intruders	intruders	note
+Amniota	16	9	1	Amniota	0		
+Artiodactyla	2	1	-1				fewer than two shared assemblies
+Australaves	3	2	1	Passeriformes	0		
+Aves	6	4	1	Aves	0		
+Boreoeutheria	6	4	1	Boreoeutheria	0		
+Chondrichthyes	4	4	1	Chondrichthyes	0		
+Clupeocephala	6	4	1	Clupeocephala	0		
+Cyclostomata	2	2	1	Cyclostomata	0		
+Elasmobranchii	3	3	1	Selachii	0		
+Euarchontoglires	4	3	1	Euarchontoglires	0		
+Gnathostomata	29	20	1	Gnathostomata	0		
+Lepidosauria	4	1	-1				fewer than two shared assemblies
+Muridae	2	1	-1				fewer than two shared assemblies
+Neognathae	5	3	1	Neognathae	0		
+Ostariophysi	2	2	1	Ostariophysi	0		
+Osteichthyes	25	16	1	Euteleostomi	0		
+Ovalentaria	3	1	-1				fewer than two shared assemblies
+Passerida	2	2	1	Passeriformes	0		
+Percomorphaceae	4	2	1	Percomorphaceae	0		
+Pipidae	2	2	1	Pipidae	0		
+Primates	2	2	1	Simiiformes	0		
+Sarcopterygii	19	12	1	Sarcopterygii	0		
+Sauria	10	5	1	Sauria	0		
+Squalomorphi	2	2	1	Squalomorphii	0		
+Squamata	3	0	-1				fewer than two shared assemblies
+Telluraves	4	2	1	Passeriformes	0		
+Tetrapoda	18	11	1	Tetrapoda	0		
+Unidentata	2	0	-1				fewer than two shared assemblies
+Vertebrata	31	22	1	Vertebrata	0		

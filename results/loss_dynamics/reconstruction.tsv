@@ -1,0 +1,145 @@
+accession	organism	vclass	cell	cell_status	scope	bait	bait_len	covered_aa	coverage	exonic_nt	gene_equiv	unique_frac	n_hsps	n_regions	n_contigs	max_piece_aa	bits
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	own_clade	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	2327	0.8374	7761	0.9309	0.9854	46	8	8	103	4848.8
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	ITPR3	tblastn_trace	own_clade	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	2670	1700	0.6367	5721	0.7142	1	32	3	2	132	3114.9
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	ITPR3	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	ITPR3	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	own_clade	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	1363	0.4905	4311	0.5171	1	27	6	6	89	2789.3
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	co_trace	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	1427	0.5135	4545	0.5452	0.9951	25	6	5	97	2261.6
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	1941	0.7189	6489	0.8011	0.9959	38	7	5	92	3931.4
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	co_trace	A0A672UP22|ITPR2|Strigops_habroptila	2700	979	0.3626	3027	0.3737	1	17	5	5	95	1588.6
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	own_clade	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	2670	2024	0.7581	7431	0.9277	0.9852	35	12	12	121	4060.5
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	2575	0.9537	8994	1.1104	0.9674	53	7	5	92	5457.7
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	decoy_accounted	A0ABM1LG32|ITPR2|Gekko_japonicus	2701	86	0.0318	258	0.0318	1	1	1	1	86	154
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	co_trace	A0ABM1LG32|ITPR2|Gekko_japonicus	2701	2004	0.7419	7221	0.8912	0.994	33	4	4	189	2941.4
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	own_clade	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	2670	2470	0.9251	8925	1.1142	0.9883	45	4	4	200	5027.5
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	decoy_accounted	A0A6J0TV85|ITPR3|Pogona_vitticeps	2666	88	0.033	264	0.033	1	1	1	1	88	135
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	co_trace	A0A6J0TV85|ITPR3|Pogona_vitticeps	2666	2023	0.7588	6654	0.832	0.996	39	7	4	102	3184.6
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	own_clade	P11881|Itpr1|Mus_musculus|ITPR1	2749	1633	0.594	5412	0.6562	0.9945	29	12	12	96	3251.1
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	469	0.1737	1608	0.1985	0.9957	9	4	4	78	950.3
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	co_trace	A0A672UP22|ITPR2|Strigops_habroptila	2700	923	0.3419	2895	0.3574	1	16	7	7	86	1519.7
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	own_clade	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	2462	0.8859	8346	1.0011	0.9968	50	7	7	92	5180.9
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	decoy_accounted	A0A670JBK6|ITPR1|Podarcis_muralis	2747	54	0.0197	162	0.0197	1	1	1	1	54	105
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	co_trace	P11881|Itpr1|Mus_musculus|ITPR1	2749	1382	0.5027	4593	0.5569	1	26	4	4	89	2219.4
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	1947	0.7211	6528	0.8059	0.9851	37	7	7	88	3997.2
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	co_trace	A0ABM1LG32|ITPR2|Gekko_japonicus	2701	1720	0.6368	5790	0.7146	1	33	5	5	86	2798.1
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	own_clade	A0A8V0Y8K1|RYR2|Gallus_gallus|RYR2	4968	1198	0.2411	4983	0.3343	0.6377	23	12	12	220	2868
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	2617	0.9693	9036	1.1156	0.969	54	8	5	103	5520.2
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR1	tblastn_trace	own_clade	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	2586	0.9306	8835	1.0597	1	54	4	3	99	5406.6
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR1	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR1	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	own_clade	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	2670	2120	0.794	7975	0.9956	0.9679	44	5	5	131	4596.7
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013397635.1	Columbina picui	Aves	ITPR3	tblastn_trace	own_clade	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	2670	1214	0.4547	4542	0.567	1	19	2	2	190	2333.2
+GCA_013397635.1	Columbina picui	Aves	ITPR3	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013397635.1	Columbina picui	Aves	ITPR3	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013398795.1	Elachura formosa	Aves	ITPR3	tblastn_trace	own_clade	P70227|Itpr3|Mus_musculus|ITPR3	2670	2181	0.8169	8055	1.0056	1	42	2	2	153	4104.4
+GCA_013398795.1	Elachura formosa	Aves	ITPR3	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013398795.1	Elachura formosa	Aves	ITPR3	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	own_clade	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	2626	0.9449	9240	1.1083	0.9722	55	5	5	112	5670.9
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	co_trace	P11881|Itpr1|Mus_musculus|ITPR1	2749	2180	0.793	7626	0.9247	0.9963	40	5	4	126	3425.5
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	2589	0.9589	9498	1.1726	0.9965	51	5	4	130	5268.6
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	co_trace	A0ABM1LG32|ITPR2|Gekko_japonicus	2701	2079	0.7697	7278	0.8982	0.9707	41	5	5	86	3432.1
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	own_clade	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	2018	0.7262	6597	0.7913	0.9965	43	6	5	92	4271.2
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	own_clade	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	2323	0.8359	7713	0.9252	0.9914	45	9	9	114	4795.1
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	co_trace	P11881|Itpr1|Mus_musculus|ITPR1	2749	1658	0.6031	5580	0.6766	1	32	3	3	93	2768.3
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	2003	0.7419	6852	0.8459	0.9985	41	5	5	95	4221.6
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	co_trace	Q14571|ITPR2|Homo_sapiens|ITPR2	2701	1711	0.6335	5733	0.7075	0.9988	32	7	7	89	2813.1
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	own_clade	P11881|Itpr1|Mus_musculus|ITPR1	2749	513	0.1866	1674	0.203	0.9903	7	6	6	113	982
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	decoy_accounted	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	81	0.0291	243	0.0291	1	1	1	1	81	160
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	co_trace	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	544	0.1958	1830	0.2195	1	10	4	4	118	896.3
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	own_clade	A0A6J0TV85|ITPR3|Pogona_vitticeps	2666	1756	0.6587	6219	0.7776	0.9926	31	10	10	129	3394.2
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	decoy_accounted	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	2670	81	0.0303	243	0.0303	1	1	1	1	81	144
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	co_trace	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	2670	85	0.0318	255	0.0318	1	1	1	1	85	143
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	own_clade	A0A670JBK6|ITPR1|Podarcis_muralis	2747	647	0.2355	2109	0.2559	0.9459	10	7	7	103	1288.3
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	own_clade	P11881|Itpr1|Mus_musculus|ITPR1	2749	743	0.2703	2262	0.2743	1	11	9	9	92	1467
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	own_clade	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	2613	0.9403	9102	1.0918	0.9724	54	6	6	103	5705.7
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	decoy_accounted	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	131	0.0471	564	0.0677	1	2	1	1	114	197.7
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	own_clade	P11881|Itpr1|Mus_musculus|ITPR1	2749	669	0.2434	2220	0.2692	0.9058	11	9	9	92	1390.1
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	co_trace	P11881|Itpr1|Mus_musculus|ITPR1	2749	280	0.1019	1062	0.1288	1	5	2	2	99	487.4
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	own_clade	A0A6J0TV85|ITPR3|Pogona_vitticeps	2666	1314	0.4929	4671	0.584	0.9878	23	11	11	110	2585.5
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	2403	0.89	8382	1.0348	0.985	49	11	8	92	4978.7
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	decoy_accounted	Q14571|ITPR2|Homo_sapiens|ITPR2	2701	270	0.1	1098	0.1355	1	6	1	1	72	503.7
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	own_clade	P11881|Itpr1|Mus_musculus|ITPR1	2749	705	0.2565	2241	0.2717	0.9674	11	7	7	93	1364.4
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	own_clade	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	2373	0.8539	9705	1.1641	0.8542	61	6	5	98	6061.2
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	co_trace	P11881|Itpr1|Mus_musculus|ITPR1	2749	1293	0.4704	4398	0.5333	0.993	22	5	5	146	1794.6
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	own_clade	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	2670	1648	0.6172	6021	0.7517	0.9745	34	5	5	148	3590.5
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	co_trace	P70227|Itpr3|Mus_musculus|ITPR3	2670	1677	0.6281	6597	0.8236	0.8766	40	5	5	86	3139.6
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	own_clade	A0A7K6LHC3|ITPR3|Falcunculus_frontatus	2670	1763	0.6603	5964	0.7446	0.9847	34	10	10	89	3744.6
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	2148	0.7956	8343	1.03	0.8762	49	6	6	98	4609
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	ITPR2	tblastn_trace	decoy_accounted	A0A672UP22|ITPR2|Strigops_habroptila	2700	55	0.0204	165	0.0204	1	1	1	1	55	87.4
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	ITPR2	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	own_clade	A0ABM1LG32|ITPR2|Gekko_japonicus	2701	946	0.3502	3345	0.4128	1	17	6	6	111	1677.5
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	2539	0.9404	8985	1.1093	0.9831	50	5	3	97	5329.3
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	2570	0.9519	8403	1.0374	0.9903	52	11	10	87	5342.8
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	2570	0.9519	9048	1.117	0.9973	50	6	5	103	5320.5
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	decoy_accounted	A0ABM1LG32|ITPR2|Gekko_japonicus	2701	35	0.013	105	0.013	1	1	1	1	35	78.2
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	own_clade	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	2558	0.9205	8454	1.014	0.9945	52	4	4	87	5386.5
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	co_trace	P11881|Itpr1|Mus_musculus|ITPR1	2749	2155	0.7839	7146	0.8665	0.9749	41	8	5	111	3478.6
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	2537	0.9396	8684	1.0721	0.9886	52	7	5	99	5336.5
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	co_trace	A0ABM1LG32|ITPR2|Gekko_japonicus	2701	2123	0.786	7326	0.9041	1	41	4	4	86	3428.8
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	2573	0.953	8940	1.1037	0.9514	53	8	6	128	5507.2
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	own_clade	A0A8V0ZJT0|ITPR1|Gallus_gallus|ITPR1	2779	2550	0.9176	8259	0.9906	0.9933	51	6	6	90	5347.3
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	co_trace	P11881|Itpr1|Mus_musculus|ITPR1	2749	2061	0.7497	6912	0.8381	1	39	6	5	101	3332.9
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	own_clade	A0A672UP22|ITPR2|Strigops_habroptila	2700	2577	0.9544	9265	1.1438	0.9674	52	7	6	129	5327.9
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	co_trace	A0ABM1LG32|ITPR2|Gekko_japonicus	2701	2038	0.7545	6804	0.8397	0.9902	39	5	5	86	3277.3
+GCF_048934315.1	Petromyzon marinus	Hyperoartia	ITPR2	absent	own_clade		0	0	0	0	0	0	0	0	0	0	0
+GCF_048934315.1	Petromyzon marinus	Hyperoartia	ITPR2	absent	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCF_048934315.1	Petromyzon marinus	Hyperoartia	ITPR2	absent	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCF_048934315.1	Petromyzon marinus	Hyperoartia	ITPR3	absent	own_clade		0	0	0	0	0	0	0	0	0	0	0
+GCF_048934315.1	Petromyzon marinus	Hyperoartia	ITPR3	absent	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCF_048934315.1	Petromyzon marinus	Hyperoartia	ITPR3	absent	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCF_964187855.1	Myxine glutinosa	Myxini	ITPR2	absent	own_clade		0	0	0	0	0	0	0	0	0	0	0
+GCF_964187855.1	Myxine glutinosa	Myxini	ITPR2	absent	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCF_964187855.1	Myxine glutinosa	Myxini	ITPR2	absent	co_trace		0	0	0	0	0	0	0	0	0	0	0
+GCF_964187855.1	Myxine glutinosa	Myxini	ITPR3	absent	own_clade		0	0	0	0	0	0	0	0	0	0	0
+GCF_964187855.1	Myxine glutinosa	Myxini	ITPR3	absent	decoy_accounted		0	0	0	0	0	0	0	0	0	0	0
+GCF_964187855.1	Myxine glutinosa	Myxini	ITPR3	absent	co_trace		0	0	0	0	0	0	0	0	0	0	0

@@ -1590,3 +1590,76 @@ genes were filed under the same name and the other two slots were left
 empty. An absence in a filing cabinet is not an absence in a genome, and the
 analysis now says so explicitly rather than counting four losses that never
 happened.
+
+---
+
+## 2026-09-08 — S15a: nobody has lost this gene
+
+**The headline is a negative, and it is a strong one.** Across 309
+vertebrate genomes — from hagfish to hummingbirds — there is not a single
+case of a species that has lost one of the three IP3 receptor genes. Every
+one of the 927 species-by-gene slots examined comes back with the gene
+present. Not once does the evidence support absence.
+
+That is worth stating carefully, because the raw data looked otherwise. The
+genome search had left roughly fifty slots unresolved: four reading "absent",
+forty-four where the search found scattered pieces of the gene but could not
+assemble them into one, and a hundred and twenty where the gene was cut off
+part-way. On the face of it that is a lot of candidate gene loss. All of it
+dissolves once you ask what the genome assembly was capable of showing.
+
+**The forty-four scattered cases are whole genes, shattered by the assembly
+rather than by evolution.** These are almost all bird genomes sequenced a
+decade ago, and their problem is that the DNA fragments they are built from
+are shorter than the gene itself. An IP3 receptor gene runs to a hundred
+thousand base pairs or more; the typical fragment in these genomes stops
+after forty thousand. So the gene is genuinely in there — it just is not in
+one piece anywhere. Reassembling it across the fragments recovers, on
+average, four-fifths of the protein, spread over about six separate pieces
+of DNA. Not one of the forty-four is missing.
+
+**And the check that this is not wishful thinking.** The three IP3 receptors
+resemble each other closely enough — about two residues in three — that
+fragments of one can be mistaken for another, which would make any gene look
+present whether it was or not. So the test was calibrated against cases
+where that mistake is impossible: fragments belonging to a gene the search
+had *already* found sitting intact elsewhere in the same genome. Those score
+3 % of the protein. The real candidates score 80 %. There is no overlap
+between the two, and the calibration was rebuilt once, after the first
+version put real shattered genes into the comparison group and blurred the
+answer.
+
+**How many copies each animal actually has.** In every one of the 189
+genomes good enough to hold the gene on a single piece of DNA, all three
+copies are there — three, exactly, with no exceptions. Where more turn up it
+is either a known extra round of genome duplication (Atlantic salmon has
+eight) or a fragmented assembly counting the same gene twice.
+
+**One thing did not work, and the number matters.** The plan was to settle
+the unresolved cases by looking at the genes on either side — a
+neighbourhood, which is stable over hundreds of millions of years. That
+instrument works: where it can be applied it is right every time, and it
+agreed with the sequence evidence on every case it reached. It reached eight
+of four hundred and thirty-two. In the rest there is no neighbourhood to
+look at — for two hundred and seventy-three, the piece of DNA carrying the
+gene fragment has no other gene on it at all. The reason the gene is
+unresolved is the same reason its neighbourhood cannot be read.
+
+**And one genuinely new lead.** The gene models recovered for ITPR3 carry
+more small disruptions to their reading frame — single-base insertions and
+deletions — than ITPR1 or ITPR2 do in the same animal. That comparison was
+made within each genome, against sibling genes matched for how well the
+search sequence fit, so it is not an artefact of one gene being harder to
+find. ITPR2 showed the same pattern until that matching was applied, and
+then it vanished; ITPR3's survives. Whether this means ITPR3's coding
+sequence genuinely tolerates more disruption, or that its gene structure is
+harder to read through, is not yet known *(pending: S21/S22)*.
+
+**What has not been shown.** No gene loss found is not the same as no gene
+loss possible — nothing here rules out losses in the many vertebrate species
+with no sequenced genome, or in a lineage the project's search sequences
+cannot reach, which is still the case for hagfish and lampreys. And these
+are three genes whose loss in a mouse is lethal or nearly so, so a complete
+absence of loss across the vertebrates is what one would have predicted.
+What is new is that it has now been checked, one genome at a time, with the
+assembly's own limitations counted as limitations rather than as absences.

@@ -465,28 +465,65 @@ bracket across topologies rather than a single number.
 
 ---
 
-## S15 — Loss dynamics
+## S15a — Loss dynamics: the instrument  *(completed 2026-09-08)*
 
-**Goal.** How many independent losses per paralog, where on the tree, and
-are the remnants still recognisable?
+**Goal.** Build the character matrix a loss count can be made on, and the
+three things it needs first.
 
-**Steps.** Disambiguate the sweep's undecided tblastn traces by synteny,
-with **measured** accuracy against known loci. Build the genome × paralog
-character matrix with bitscore- and synteny-based states side by side. Run
-the ORF-integrity screen with the assembly-error confounder controlled: a
-paired within-genome test against that genome's own other paralogs, a
-disabling-density threshold calibrated on the controls, and a correlation of
-density against contig N50. Then Dollo parsimony as the primary count plus
-Mk model fits (ER / ARD / and an irreversible model with gain pinned to
-zero), over a sensitivity matrix of coding × evidence × branch lengths ×
-contiguity filter. For any dead locus, read its lesions in reference-protein
-coordinates and test shared disabling lesions against a Poisson null — with
-independently decayed pseudogenes from *different* loss events as the
-control, because tblastn keeps whatever is most conserved.
+**What it did.** A state vocabulary of eight ordered positive tests with
+exactly one state countable as a loss, and that state kept *reachable* (a
+constructed contiguous, controlled, empty, spare-free cell must come back
+`absent`). The brief's synteny step, measured rather than asserted. A
+reference reassembled across contigs, calibrated against a decoy that cost
+no new search. The ORF-integrity screen with three confounders measured and
+the paired within-genome test run identity-matched. The 309-genome NCBI
+taxonomy tree declared as an input and checked against S13's curated one.
 
-**Done when.** Loss events with per-event support, the sensitivity matrix,
-the integrity tables and the fossil tables are committed with a report and
-figure.
+**Result.** 0 of 927 cells `absent`; minimum 3.00 gene-equivalents in all
+189 assemblies above D4's contiguity bar. → `results/loss_dynamics/report.md`
+
+---
+
+## S15b — Loss dynamics: the counts
+
+**Goal.** Place and count the losses S15a's matrix licenses — and report
+honestly that it licenses none.
+
+**Read first.** `results/loss_dynamics/report.md` §11 is written as a
+hand-off. S15a changed this task: with no `absent` cell the Dollo count is
+zero, so the **sensitivity matrix is the deliverable** rather than a
+robustness check.
+
+**Steps.**
+1. **Dollo parsimony** on `character_matrix.tsv` over
+   `species_tree_309.nwk`, as the primary count. It will be zero; run it
+   anyway, and report the count with the tree's polytomy degree
+   distribution beside it, because a count of *independent* losses under a
+   polytomy is bounded by the resolution.
+2. **The sensitivity matrix — the deliverable.** Coding × evidence bar ×
+   branch lengths × contiguity filter, and the question is which
+   combinations **manufacture** a loss. `loss_candidates.tsv` is built for
+   it: every near-miss row names the rule that stopped it. The primary
+   coding must be **family-level presence per genome** (D46) with the
+   paralog-resolved matrix as an axis, not the base case — the `co_trace`
+   population measures how unreliable per-fragment paralog attribution is
+   in a shattered assembly.
+3. **Mk fits** (ER / ARD / irreversible with gain pinned to zero) —
+   **stated, not fitted, where the character is invariant.** An invariant
+   character has no transition rate and a reported one would be the
+   optimiser's starting point. The informative version is the irreversible
+   model's likelihood on whichever sensitivity cells are non-degenerate.
+4. **The fossil lesion analysis.** There are no dead loci: every locus above
+   S15a's lesion bar is at full coverage with an intact model. Report that
+   with its denominator rather than omitting the section, and follow D47's
+   lead instead — ITPR3's indel excess against its own genome's
+   identity-matched sibling loci (39:14, q = 0.0032). `integrity_pairs.tsv`
+   can be stratified by vertebrate class with no new computation.
+
+**Done when.** The Dollo count with its resolution bound, the sensitivity
+matrix naming every filter combination that manufactures a loss, the Mk
+section stating what could and could not be fitted and why, and the fossil
+section with its denominator — all committed with a report and figures.
 
 ---
 
