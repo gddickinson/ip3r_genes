@@ -1,0 +1,920 @@
+species	seq	junction_index	cds_offset	left_exon	right_exon	intron_start	intron_end	intron_length	class	annotated	donor	acceptor	splice_class	left_models	right_models
+deleginoides	ITPR1|deleginoides	1	92	1	2	23181340	23184137	2798	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	2	163	2	3	23173259	23181268	8010	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	3	273	3	4	23172578	23173148	571	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	4	360	4	5	23171739	23172490	752	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	5	519	5	6	23170877	23171579	703	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	6	618	6	7	23170068	23170777	710	model_to_gap	0	GT	AG	canonical		gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	7	702	7	8	23168478	23169983	1506	model_to_gap	0	GT	AG	canonical	gene-KUDE01_003980	
+deleginoides	ITPR1|deleginoides	8	849	8	9	23168148	23168330	183	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	9	945	9	10	23167819	23168051	233	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	10	990	10	11	23167033	23167773	741	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	11	1145	11	12	23165644	23166877	1234	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	12	1245	12	13	23165212	23165543	332	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	13	1406	13	14	23164950	23165050	101	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	14	1548	14	15	23163865	23164807	943	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	15	1707	15	16	23162592	23163705	1114	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	16	1880	16	17	23161955	23162418	464	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	17	2000	17	18	23161500	23161834	335	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	18	2195	18	19	23161146	23161304	159	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	19	2447	19	20	23160809	23160893	85	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	20	2589	20	21	23160569	23160666	98	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	21	2743	21	22	23160336	23160414	79	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	22	2934	22	23	23160000	23160144	145	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	23	3067	23	24	23159776	23159866	91	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	24	3122	24	25	23159642	23159720	79	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	25	3288	25	26	23159292	23159475	184	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	26	3462	26	27	23159000	23159117	118	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	27	3537	27	28	23158807	23158924	118	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	28	3675	28	29	23158590	23158668	79	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	29	3800	29	30	23158347	23158464	118	within_one_model	1	GT	AG	canonical	gene-KUDE01_003980;gene-KUDE01_004628	gene-KUDE01_003980
+deleginoides	ITPR1|deleginoides	30	4001	30	31	23158055	23158145	91	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_003980;gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	31	4253	31	32	23157615	23157802	188	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	32	4378	32	33	23157393	23157489	97	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	33	4507	33	34	23154727	23157263	2537	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	34	4628	34	35	23154257	23154605	349	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	35	4813	35	36	23153989	23154071	83	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	36	4962	36	37	23153737	23153839	103	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	37	5101	37	38	23148654	23153597	4944	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	38	5149	38	39	23147222	23148605	1384	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	39	5282	39	40	23145146	23147088	1943	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	40	5470	40	41	23140897	23144957	4061	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	41	5653	41	42	23140517	23140713	197	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	42	5907	42	43	23139367	23140262	896	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	43	6107	43	44	23139089	23139166	78	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	44	6218	44	45	23138309	23138977	669	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	45	6314	45	46	23138095	23138212	118	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	46	6458	46	47	23137787	23137950	164	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	47	6566	47	48	23137267	23137678	412	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	48	6759	48	49	23135234	23137073	1840	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	49	6882	49	50	23132390	23135110	2721	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	50	7058	50	51	23130889	23132213	1325	within_one_model	1	GT	AG	canonical	gene-KUDE01_004628	gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	51	7223	51	52	23129998	23130723	726	model_to_gap	0	GT	AG	canonical		gene-KUDE01_004628
+deleginoides	ITPR1|deleginoides	52	7413	52	53	23129689	23129807	119	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR1|deleginoides	53	7506	53	54	23128333	23129595	1263	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR1|deleginoides	54	7646	54	55	23127264	23128192	929	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR1|deleginoides	55	7812	55	56	23124018	23127097	3080	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR1|deleginoides	56	7973	56	57	23123031	23123856	826	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR1|deleginoides	57	8135	57	58	23122341	23122868	528	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	1	92	1	2	21941034	21945946	4913	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	2	163	2	3	21946018	21946299	282	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	3	282	3	4	21946419	21947152	734	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	4	369	4	5	21947240	21948448	1209	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	5	528	5	6	21948608	21949754	1147	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	6	627	6	7	21949854	21951427	1574	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	7	711	7	8	21951512	21951626	115	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	8	858	8	9	21951774	21952492	719	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	9	954	9	10	21952589	21952886	298	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	10	999	10	11	21952932	21955146	2215	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	11	1151	11	12	21955299	21956122	824	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	12	1251	12	13	21956223	21956457	235	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	13	1412	13	14	21956619	21956713	95	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	14	1554	14	15	21956856	21957410	555	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	15	1713	15	16	21957570	21958554	985	unannotated	0	GC	AG	minor		
+deleginoides	ITPR2|deleginoides	16	1886	16	17	21958728	21959338	611	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	17	2006	17	18	21959459	21959698	240	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	18	2189	18	19	21959882	21960504	623	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	19	2441	19	20	21960757	21960840	84	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	20	2589	20	21	21960989	21961137	149	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	21	2741	21	22	21961290	21962153	864	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	22	2929	22	23	21962342	21962459	118	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	23	3047	23	24	21962578	21962676	99	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	24	3105	24	25	21962735	21962871	137	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	25	3271	25	26	21963038	21963331	294	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	26	3439	26	27	21963500	21963980	481	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	27	3526	27	28	21964068	21964162	95	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	28	3652	28	29	21964289	21964412	124	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	29	3775	29	30	21964536	21964770	235	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	30	3976	30	31	21964972	21965066	95	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	31	4228	31	32	21965319	21965408	90	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	32	4354	32	33	21965535	21965704	170	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	33	4483	33	34	21965834	21966147	314	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	34	4604	34	35	21966269	21966640	372	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	35	4786	35	36	21966823	21967402	580	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	36	4929	36	37	21967546	21968229	684	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	37	5038	37	38	21968339	21978057	9719	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	38	5159	38	39	21978179	21978796	618	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	39	5347	39	40	21978985	21979080	96	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	40	5528	40	41	21979262	21979965	704	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	41	5782	41	42	21980220	21980310	91	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	42	5983	42	43	21980512	21981022	511	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	43	6094	43	44	21981134	21983056	1923	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	44	6190	44	45	21983153	21983232	80	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	45	6310	45	46	21983353	21984564	1212	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	46	6445	46	47	21984700	21984817	118	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	47	6638	47	48	21985011	21985214	204	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	48	6764	48	49	21985341	21987555	2215	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	49	6940	49	50	21987732	21987818	87	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	50	7105	50	51	21987984	21988086	103	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	51	7314	51	52	21988296	21990211	1916	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	52	7504	52	53	21990402	21990604	203	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	53	7670	53	54	21990771	21990865	95	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	54	7831	54	55	21991027	21997965	6939	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR2|deleginoides	55	7993	55	56	21998128	21999730	1603	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	1	92	1	2	8229196	8242004	12809	within_one_model	1	GT	AG	canonical	gene-KUDE01_018062	gene-KUDE01_018062
+deleginoides	ITPR3|deleginoides	2	163	2	3	8225580	8229124	3545	between_models	0	GT	AG	canonical	gene-KUDE01_017523	gene-KUDE01_018062
+deleginoides	ITPR3|deleginoides	3	285	3	4	8224489	8225457	969	within_one_model	1	GT	AG	canonical	gene-KUDE01_017523	gene-KUDE01_017523
+deleginoides	ITPR3|deleginoides	4	372	4	5	8221083	8224401	3319	within_one_model	1	GT	AG	canonical	gene-KUDE01_017523	gene-KUDE01_017523
+deleginoides	ITPR3|deleginoides	5	531	5	6	8220035	8220923	889	within_one_model	1	GT	AG	canonical	gene-KUDE01_017523	gene-KUDE01_017523
+deleginoides	ITPR3|deleginoides	6	630	6	7	8219835	8219935	101	within_one_model	1	GT	AG	canonical	gene-KUDE01_017523	gene-KUDE01_017523
+deleginoides	ITPR3|deleginoides	7	714	7	8	8219219	8219750	532	within_one_model	1	GT	AG	canonical	gene-KUDE01_017523	gene-KUDE01_017523
+deleginoides	ITPR3|deleginoides	8	861	8	9	8218892	8219071	180	within_one_model	1	GT	AG	canonical	gene-KUDE01_017523	gene-KUDE01_017523
+deleginoides	ITPR3|deleginoides	9	957	9	10	8218367	8218795	429	within_one_model	1	GT	AG	canonical	gene-KUDE01_017523	gene-KUDE01_017523
+deleginoides	ITPR3|deleginoides	10	1001	10	11	8218144	8218322	179	within_one_model	1	GT	AG	canonical	gene-KUDE01_017523	gene-KUDE01_017523
+deleginoides	ITPR3|deleginoides	11	1141	11	12	8217526	8218003	478	within_one_model	1	GT	AG	canonical	gene-KUDE01_017523	gene-KUDE01_017523
+deleginoides	ITPR3|deleginoides	12	1241	12	13	8217205	8217425	221	within_one_model	1	GT	AG	canonical	gene-KUDE01_017523	gene-KUDE01_017523
+deleginoides	ITPR3|deleginoides	13	1402	13	14	8216668	8217043	376	between_models	0	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_017523
+deleginoides	ITPR3|deleginoides	14	1544	14	15	8216439	8216525	87	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	15	1709	15	16	8215542	8216273	732	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	16	1882	16	17	8215282	8215368	87	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	17	2002	17	18	8214511	8215161	651	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	18	2078	18	19	8213485	8214434	950	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	19	2194	19	20	8212499	8213368	870	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	20	2446	20	21	8203824	8212246	8423	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	21	2591	21	22	8203571	8203678	108	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	22	2736	22	23	8202934	8203425	492	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	23	2945	23	24	8202415	8202724	310	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	24	3066	24	25	8201954	8202293	340	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	25	3121	25	26	8201710	8201898	189	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	26	3287	26	27	8200360	8201543	1184	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	27	3455	27	28	8198309	8200191	1883	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	28	3530	28	29	8197038	8198233	1196	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	29	3650	29	30	8196058	8196917	860	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	30	3773	30	31	8195170	8195934	765	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	31	3974	31	32	8194071	8194968	898	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	32	4090	32	33	8193107	8193954	848	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	33	4226	33	34	8192359	8192970	612	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	34	4352	34	35	8192040	8192232	193	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	35	4478	35	36	8191707	8191913	207	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	36	4599	36	37	8190634	8191585	952	within_one_model	1	GT	AG	canonical	gene-KUDE01_018466	gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	37	4781	37	38	8189792	8190451	660	model_to_gap	0	GT	AG	canonical		gene-KUDE01_018466
+deleginoides	ITPR3|deleginoides	38	4930	38	39	8189548	8189642	95	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	39	5039	39	40	8189168	8189438	271	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	40	5133	40	41	8188513	8189073	561	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	41	5309	41	42	8187743	8188336	594	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	42	5469	42	43	8186263	8187582	1320	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	43	5688	43	44	8185277	8186043	767	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	44	5889	44	45	8184634	8185075	442	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	45	6000	45	46	8183965	8184522	558	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	46	6096	46	47	8183758	8183868	111	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	47	6198	47	48	8183025	8183655	631	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	48	6282	48	49	8182295	8182940	646	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	49	6393	49	50	8181592	8182183	592	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	50	6586	50	51	8181161	8181398	238	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	51	6706	51	52	8179586	8181040	1455	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	52	6882	52	53	8178961	8179409	449	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	53	7047	53	54	8178365	8178795	431	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	54	7234	54	55	8177674	8178177	504	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	55	7339	55	56	8177487	8177568	82	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	56	7458	56	57	8176986	8177367	382	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	57	7624	57	58	8176261	8176819	559	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	58	7785	58	59	8175206	8176099	894	unannotated	0	GT	AG	canonical		
+deleginoides	ITPR3|deleginoides	59	7947	59	60	8174211	8175043	833	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	1	45	1	2	25145383	25192883	47501	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	2	165	2	3	25193004	25193794	791	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	3	276	3	4	25193906	25199463	5558	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	4	351	4	5	25199539	25200188	650	model_to_gap	0	GT	AG	canonical		gene-KUDE01_024247
+deleginoides	RYR|deleginoides	5	430	5	6	25200268	25202024	1757	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	6	543	6	7	25202138	25209026	6889	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	7	643	7	8	25209127	25210014	888	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	8	740	8	9	25210112	25211002	891	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	9	815	9	10	25211078	25220025	8948	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	10	972	10	11	25220183	25220577	395	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	11	1137	11	12	25220743	25220903	161	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	12	1259	12	13	25221026	25221663	638	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	13	1443	13	14	25221848	25222529	682	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	14	1579	14	15	25222666	25223383	718	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	15	1675	15	16	25223480	25223873	394	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	16	1794	16	17	25223993	25224391	399	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	17	1928	17	18	25224526	25224990	465	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	18	2170	18	19	25225233	25225753	521	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	19	2363	19	20	25225947	25226427	481	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	20	2568	20	21	25226633	25226749	117	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	21	2673	21	22	25226855	25229915	3061	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	22	2777	22	23	25230020	25230254	235	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	23	2861	23	24	25230339	25230428	90	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	24	3021	24	25	25230589	25231220	632	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	25	3169	25	26	25231369	25231569	201	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	26	3273	26	27	25231674	25231809	136	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	27	3378	27	28	25231915	25232021	107	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	28	3553	28	29	25232197	25232499	303	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	29	3762	29	30	25232709	25232929	221	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	30	3939	30	31	25233107	25233344	238	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	31	4085	31	32	25233491	25233644	154	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	32	4197	32	33	25233757	25236241	2485	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	33	4358	33	34	25236403	25237372	970	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	34	4518	34	35	25237533	25240648	3116	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	35	4605	35	36	25240736	25241143	408	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	36	4737	36	37	25241276	25242587	1312	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	37	4832	37	38	25242683	25242774	92	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	38	5008	38	39	25242951	25244060	1110	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	39	5643	39	40	25244696	25245456	761	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	40	5844	40	41	25245658	25246816	1159	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	41	5950	41	42	25246923	25247031	109	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	42	6094	42	43	25247176	25247282	107	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	43	6222	43	44	25247411	25248148	738	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	44	6368	44	45	25248295	25248847	553	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	45	6483	45	46	25248963	25249408	446	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	46	6616	46	47	25249542	25250559	1018	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	47	6720	47	48	25250664	25251085	422	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	48	6856	48	49	25251222	25252672	1451	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	49	7043	49	50	25252860	25253168	309	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	50	7155	50	51	25253281	25253366	86	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	51	7276	51	52	25253488	25253670	183	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	52	7446	52	53	25253841	25254650	810	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	53	7667	53	54	25254872	25254957	86	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	54	7758	54	55	25255049	25255397	349	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	55	7899	55	56	25255539	25256090	552	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	56	8063	56	57	25256255	25256462	208	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	57	8142	57	58	25256542	25256673	132	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	58	8232	58	59	25256764	25260629	3866	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	59	8370	59	60	25260768	25260879	112	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	60	8448	60	61	25260958	25261163	206	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	61	8524	61	62	25261240	25261486	247	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	62	8648	62	63	25261611	25261741	131	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	63	8764	63	64	25261858	25262059	202	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	64	8829	64	65	25262125	25263364	1240	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	65	8951	65	66	25263487	25263688	202	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	66	9001	66	67	25263739	25265072	1334	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	67	9062	67	68	25265134	25265617	484	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	68	9301	68	69	25265857	25266093	237	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	69	9383	69	70	25266176	25266932	757	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	70	9514	70	71	25267064	25267323	260	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	71	9642	71	72	25267452	25267700	249	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	72	9835	72	73	25267894	25268004	111	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	73	9918	73	74	25268088	25268271	184	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	74	10076	74	75	25268430	25278000	9571	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	75	10164	75	76	25278089	25278791	703	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	76	10257	76	77	25278885	25279040	156	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	77	10428	77	78	25279212	25280890	1679	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	78	10488	78	79	25280951	25281066	116	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	79	10623	79	80	25281202	25281722	521	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	80	10736	80	81	25281836	25281958	123	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	81	10833	81	82	25282056	25282402	347	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	82	10940	82	83	25282510	25283147	638	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	83	10992	83	84	25283200	25283287	88	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	84	11043	84	85	25283339	25283423	85	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	85	11143	85	86	25283524	25284599	1076	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	86	11223	86	87	25284680	25284828	149	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	87	11300	87	88	25284906	25285736	831	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	88	11374	88	89	25285811	25287181	1371	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	89	11392	89	90	25287200	25293048	5849	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	90	11473	90	91	25293130	25293773	644	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	91	11562	91	92	25293863	25294758	896	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	92	11691	92	93	25294888	25295386	499	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	93	11796	93	94	25295492	25295751	260	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	94	11878	94	95	25295834	25296482	649	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	95	12037	95	96	25296642	25296744	103	within_one_model	1	GC	AG	minor	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	96	12192	96	97	25296900	25297903	1004	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	97	12408	97	98	25298120	25298257	138	within_one_model	1	GT	AG	canonical	gene-KUDE01_024247	gene-KUDE01_024247
+deleginoides	RYR|deleginoides	98	12681	98	99	25298531	25301888	3358	model_to_gap	0	GT	AG	canonical	gene-KUDE01_024247	
+deleginoides	RYR|deleginoides	99	12888	99	100	25302096	25302191	96	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	100	13194	100	101	25302498	25303308	811	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	101	13265	101	102	25303380	25303768	389	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	102	13416	102	103	25303920	25304269	350	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	103	13503	103	104	25304357	25304768	412	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	104	13773	104	105	25305039	25305487	449	unannotated	0	GC	AG	minor		
+deleginoides	RYR|deleginoides	105	13904	105	106	25305619	25305783	165	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	106	13947	106	107	25305827	25306300	474	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	107	14081	107	108	25306435	25306979	545	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	108	14142	108	109	25307041	25307613	573	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	109	14289	109	110	25307761	25309734	1974	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	110	14424	110	111	25309870	25312716	2847	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	111	14581	111	112	25312874	25313381	508	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	112	14646	112	113	25313447	25313576	130	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	113	14747	113	114	25313678	25313998	321	unannotated	0	GT	AG	canonical		
+deleginoides	RYR|deleginoides	114	14799	114	115	25314051	25314874	824	unannotated	0	GT	AG	canonical		
+deleginoides	hk_EEF1A1|deleginoides	1	144	1	2	15938076	15938160	85	within_one_model	1	GT	AG	canonical	gene-KUDE01_031482	gene-KUDE01_031482
+deleginoides	hk_EEF1A1|deleginoides	2	324	2	3	15937816	15937895	80	within_one_model	1	GT	AG	canonical	gene-KUDE01_031482	gene-KUDE01_031482
+deleginoides	hk_EEF1A1|deleginoides	3	621	3	4	15937450	15937518	69	within_one_model	1	GT	AG	canonical	gene-KUDE01_031482	gene-KUDE01_031482
+deleginoides	hk_EEF1A1|deleginoides	4	772	4	5	15937089	15937298	210	within_one_model	1	GT	AG	canonical	gene-KUDE01_031482	gene-KUDE01_031482
+deleginoides	hk_EEF1A1|deleginoides	5	1354	5	6	15936434	15936506	73	within_one_model	1	GT	AG	canonical	gene-KUDE01_031482	gene-KUDE01_031482
+deleginoides	hk_GAPDH|deleginoides	1	23	1	2	10111155	10115985	4831	within_one_model	1	GT	AG	canonical	gene-KUDE01_026397	gene-KUDE01_026397
+deleginoides	hk_GAPDH|deleginoides	2	123	2	3	10116086	10116441	356	within_one_model	1	GT	AG	canonical	gene-KUDE01_026397	gene-KUDE01_026397
+deleginoides	hk_GAPDH|deleginoides	3	233	3	4	10116552	10116649	98	within_one_model	1	GT	AG	canonical	gene-KUDE01_026397	gene-KUDE01_026397
+deleginoides	hk_GAPDH|deleginoides	4	324	4	5	10116741	10117169	429	within_one_model	1	GT	AG	canonical	gene-KUDE01_026397	gene-KUDE01_026397
+deleginoides	hk_GAPDH|deleginoides	5	440	5	6	10117286	10117494	209	within_one_model	1	GT	AG	canonical	gene-KUDE01_026397	gene-KUDE01_026397
+deleginoides	hk_GAPDH|deleginoides	6	522	6	7	10117577	10118195	619	within_one_model	1	GT	AG	canonical	gene-KUDE01_026397	gene-KUDE01_026397
+deleginoides	hk_GAPDH|deleginoides	7	674	7	8	10118348	10118885	538	within_one_model	1	GT	AG	canonical	gene-KUDE01_026397	gene-KUDE01_026397
+deleginoides	hk_GAPDH|deleginoides	8	753	8	9	10118965	10119264	300	within_one_model	1	GT	AG	canonical	gene-KUDE01_026397	gene-KUDE01_026397
+deleginoides	hk_GAPDH|deleginoides	9	837	9	10	10119349	10119739	391	within_one_model	1	GT	AG	canonical	gene-KUDE01_026397	gene-KUDE01_026397
+deleginoides	hk_GAPDH|deleginoides	10	935	10	11	10119838	10119929	92	within_one_model	1	GT	AG	canonical	gene-KUDE01_026397	gene-KUDE01_026397
+deleginoides	hk_RPL13A|deleginoides	1	21	1	2	20193289	20194019	731	within_one_model	1	GT	AG	canonical	gene-KUDE01_019807	gene-KUDE01_019807
+deleginoides	hk_RPL13A|deleginoides	2	94	2	3	20194093	20194425	333	within_one_model	1	GT	AG	canonical	gene-KUDE01_019807	gene-KUDE01_019807
+deleginoides	hk_RPL13A|deleginoides	3	160	3	4	20194492	20194725	234	within_one_model	1	GT	AG	canonical	gene-KUDE01_019807	gene-KUDE01_019807
+deleginoides	hk_RPL13A|deleginoides	4	262	4	5	20194828	20195446	619	within_one_model	1	GT	AG	canonical	gene-KUDE01_019807	gene-KUDE01_019807
+deleginoides	hk_RPL13A|deleginoides	5	348	5	6	20195533	20195743	211	within_one_model	1	GT	AG	canonical	gene-KUDE01_019807	gene-KUDE01_019807
+deleginoides	hk_RPL13A|deleginoides	6	408	6	7	20195804	20196210	407	within_one_model	1	GT	AG	canonical	gene-KUDE01_019807	gene-KUDE01_019807
+dmawsoni	ITPR1|dmawsoni	1	92	1	2	25432872	25435754	2883	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	2	163	2	3	25423476	25432800	9325	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	3	273	3	4	25422795	25423365	571	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	4	360	4	5	25421955	25422707	753	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	5	519	5	6	25421087	25421795	709	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	6	618	6	7	25420278	25420987	710	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	7	702	7	8	25418679	25420193	1515	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	8	849	8	9	25418349	25418531	183	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	9	945	9	10	25418014	25418252	239	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	10	990	10	11	25417228	25417968	741	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	11	1145	11	12	25415752	25417072	1321	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	12	1245	12	13	25415320	25415651	332	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	13	1406	13	14	25415063	25415158	96	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	14	1548	14	15	25413980	25414920	941	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	15	1707	15	16	25412711	25413820	1110	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	16	1880	16	17	25412057	25412537	481	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	17	2000	17	18	25411605	25411936	332	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	18	2195	18	19	25411251	25411409	159	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	19	2447	19	20	25410914	25410998	85	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	20	2589	20	21	25410674	25410771	98	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	21	2743	21	22	25410441	25410519	79	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	22	2934	22	23	25410100	25410249	150	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	23	3067	23	24	25409876	25409966	91	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	24	3122	24	25	25409742	25409820	79	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	25	3288	25	26	25409394	25409575	182	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	26	3462	26	27	25409102	25409219	118	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	27	3537	27	28	25408905	25409026	122	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	28	3675	28	29	25408688	25408766	79	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	29	3801	29	30	25408445	25408561	117	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	30	4002	30	31	25408152	25408243	92	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	31	4254	31	32	25407709	25407899	191	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	32	4380	32	33	25407488	25407582	95	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	33	4509	33	34	25404815	25407358	2544	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	34	4630	34	35	25404414	25404693	280	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	35	4815	35	36	25404146	25404228	83	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	36	4964	36	37	25403894	25403996	103	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	37	5103	37	38	25398806	25403754	4949	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	38	5151	38	39	25397406	25398757	1352	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	39	5284	39	40	25395363	25397272	1910	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	40	5472	40	41	25391092	25395174	4083	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	41	5662	41	42	25390712	25390901	190	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	42	5916	42	43	25389565	25390457	893	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	43	6117	43	44	25389286	25389363	78	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	44	6228	44	45	25388506	25389174	669	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	45	6324	45	46	25388287	25388409	123	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	46	6468	46	47	25387980	25388142	163	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	47	6576	47	48	25387458	25387871	414	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	48	6769	48	49	25385419	25387264	1846	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	49	6892	49	50	25382548	25385295	2748	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	50	7068	50	51	25381048	25382371	1324	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	51	7232	51	52	25380160	25380883	724	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	52	7420	52	53	25379853	25379971	119	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	53	7513	53	54	25378490	25379759	1270	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	54	7653	54	55	25377234	25378349	1116	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	55	7819	55	56	25374246	25377067	2822	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	56	7979	56	57	25373262	25374085	824	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR1|dmawsoni	57	8141	57	58	25372572	25373099	528	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	1	92	1	2	17834087	17838980	4894	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	2	163	2	3	17833737	17834015	279	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	3	282	3	4	17832919	17833617	699	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	4	369	4	5	17831636	17832831	1196	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	5	528	5	6	17830270	17831476	1207	model_to_gap	0	GT	AG	canonical	gene-F7725_022703	
+dmawsoni	ITPR2|dmawsoni	6	627	6	7	17828625	17830170	1546	model_to_gap	0	GT	AG	canonical		gene-F7725_022703
+dmawsoni	ITPR2|dmawsoni	7	711	7	8	17828426	17828540	115	model_to_gap	0	GT	AG	canonical	gene-F7725_022703	
+dmawsoni	ITPR2|dmawsoni	8	858	8	9	17827561	17828278	718	within_one_model	1	GT	AG	canonical	gene-F7725_022703	gene-F7725_022703
+dmawsoni	ITPR2|dmawsoni	9	954	9	10	17827167	17827464	298	model_to_gap	0	GT	AG	canonical		gene-F7725_022703
+dmawsoni	ITPR2|dmawsoni	10	999	10	11	17824096	17827121	3026	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	11	1150	11	12	17823100	17823944	845	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	12	1250	12	13	17822760	17822999	240	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	13	1411	13	14	17822504	17822598	95	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	14	1553	14	15	17821807	17822361	555	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	15	1716	15	16	17821168	17821643	476	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	16	1879	16	17	17820414	17821004	591	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	17	1999	17	18	17820054	17820293	240	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	18	2182	18	19	17819248	17819870	623	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	19	2434	19	20	17818913	17818995	83	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	20	2582	20	21	17818616	17818764	149	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	21	2734	21	22	17817579	17818463	885	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	22	2922	22	23	17817276	17817390	115	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	23	3040	23	24	17817059	17817157	99	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	24	3098	24	25	17816864	17817000	137	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	25	3264	25	26	17816414	17816697	284	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	26	3432	26	27	17815759	17816245	487	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	27	3519	27	28	17815584	17815671	88	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	28	3644	28	29	17815377	17815458	82	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	29	3767	29	30	17815019	17815253	235	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	30	3968	30	31	17814723	17814817	95	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	31	4220	31	32	17814381	17814470	90	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	32	4346	32	33	17814085	17814254	170	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	33	4475	33	34	17813670	17813955	286	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	34	4596	34	35	17813174	17813548	375	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	35	4778	35	36	17812412	17812991	580	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	36	4921	36	37	17811632	17812268	637	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	37	5030	37	38	17801561	17811522	9962	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	38	5151	38	39	17800823	17801439	617	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	39	5338	39	40	17800540	17800635	96	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	40	5519	40	41	17799664	17800358	695	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	41	5773	41	42	17799319	17799409	91	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	42	5974	42	43	17798614	17799117	504	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	43	6085	43	44	17798069	17798502	434	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	44	6181	44	45	17797893	17797972	80	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	45	6301	45	46	17796542	17797772	1231	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	46	6436	46	47	17796289	17796406	118	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	47	6629	47	48	17795894	17796095	202	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	48	6755	48	49	17793748	17795767	2020	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	49	6931	49	50	17793491	17793571	81	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	50	7096	50	51	17793223	17793325	103	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	51	7305	51	52	17790820	17793013	2194	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	52	7495	52	53	17790425	17790629	205	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	53	7661	53	54	17790164	17790258	95	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	54	7822	54	55	17782872	17790002	7131	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR2|dmawsoni	55	7984	55	56	17781117	17782709	1593	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	1	92	1	2	32293660	32305602	11943	model_to_gap	0	GT	AG	canonical	gene-F7725_001217	
+dmawsoni	ITPR3|dmawsoni	2	163	2	3	32305674	32309396	3723	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	3	286	3	4	32309520	32310474	955	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	4	373	4	5	32310562	32313634	3073	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	5	531	5	6	32313793	32314730	938	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	6	630	6	7	32314830	32314930	101	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	7	714	7	8	32315015	32315484	470	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	8	861	8	9	32315632	32315856	225	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	9	957	9	10	32315953	32316385	433	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	10	1002	10	11	32316431	32316608	178	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	11	1142	11	12	32316749	32317224	476	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	12	1241	12	13	32317324	32317546	223	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	13	1402	13	14	32317708	32318087	380	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	14	1544	14	15	32318230	32318316	87	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	15	1708	15	16	32318481	32319214	734	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	16	1881	16	17	32319388	32319474	87	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	17	2001	17	18	32319595	32320232	638	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	18	2078	18	19	32320310	32321311	1002	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	19	2194	19	20	32321428	32322312	885	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	20	2446	20	21	32322565	32349278	26714	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	21	2588	21	22	32349421	32349527	107	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	22	2733	22	23	32349673	32350166	494	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	23	2942	23	24	32350376	32350684	309	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	24	3063	24	25	32350806	32351140	335	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	25	3118	25	26	32351196	32351411	216	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	26	3284	26	27	32351578	32353017	1440	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	27	3452	27	28	32353186	32355073	1888	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	28	3527	28	29	32355149	32356350	1202	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	29	3647	29	30	32356471	32357327	857	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	30	3770	30	31	32357451	32358213	763	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	31	3971	31	32	32358415	32359991	1577	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	32	4087	32	33	32360108	32361002	895	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	33	4223	33	34	32361139	32361527	389	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	34	4349	34	35	32361654	32361852	199	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	35	4475	35	36	32361979	32362337	359	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	36	4596	36	37	32362459	32363424	966	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	37	4778	37	38	32363607	32364306	700	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	38	4927	38	39	32364456	32364550	95	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	39	5036	39	40	32364660	32364930	271	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	40	5129	40	41	32365024	32365145	122	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	41	5305	41	42	32365322	32365913	592	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	42	5465	42	43	32366074	32367004	931	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	43	5684	43	44	32367224	32368031	808	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	44	5885	44	45	32368233	32368583	351	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	45	5996	45	46	32368695	32369838	1144	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	46	6092	46	47	32369935	32370134	200	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	47	6193	47	48	32370236	32370747	512	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	48	6277	48	49	32370832	32370915	84	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	49	6388	49	50	32371027	32371618	592	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	50	6581	50	51	32371812	32372053	242	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	51	6701	51	52	32372174	32373657	1484	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	52	6877	52	53	32373834	32374265	432	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	53	7041	53	54	32374430	32374859	430	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	54	7228	54	55	32375047	32375541	495	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	55	7333	55	56	32375647	32375728	82	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	56	7452	56	57	32375848	32376100	253	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	57	7618	57	58	32376267	32376819	553	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	58	7779	58	59	32376981	32377779	799	unannotated	0	GT	AG	canonical		
+dmawsoni	ITPR3|dmawsoni	59	7941	59	60	32377942	32378855	914	unannotated	0	GT	AG	canonical		
+dmawsoni	RYR|dmawsoni	1	45	1	2	28825784	28872737	46954	model_to_gap	0	GT	AG	canonical		gene-F7725_014812
+dmawsoni	RYR|dmawsoni	2	165	2	3	28872858	28873646	789	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	3	275	3	4	28873757	28879031	5275	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	4	350	4	5	28879107	28879802	696	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	5	429	5	6	28879882	28881664	1783	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	6	542	6	7	28881778	28888894	7117	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	7	642	7	8	28888995	28889881	887	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	8	739	8	9	28889979	28890869	891	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	9	812	9	10	28890943	28900199	9257	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	10	969	10	11	28900357	28900751	395	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	11	1134	11	12	28900917	28901077	161	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	12	1256	12	13	28901200	28901822	623	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	13	1440	13	14	28902007	28902741	735	model_to_gap	0	GT	AG	canonical	gene-F7725_014812	
+dmawsoni	RYR|dmawsoni	14	1572	14	15	28902874	28903955	1082	model_to_gap	0	GT	AG	canonical		gene-F7725_014812
+dmawsoni	RYR|dmawsoni	15	1668	15	16	28904052	28904444	393	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	16	1787	16	17	28904564	28904961	398	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	17	1921	17	18	28905096	28905583	488	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	18	2166	18	19	28905829	28906357	529	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	19	2359	19	20	28906551	28907030	480	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	20	2564	20	21	28907236	28907350	115	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	21	2669	21	22	28907456	28910492	3037	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	22	2773	22	23	28910597	28910831	235	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	23	2857	23	24	28910916	28911005	90	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	24	3017	24	25	28911166	28911800	635	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	25	3164	25	26	28911948	28912147	200	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	26	3268	26	27	28912252	28912387	136	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	27	3373	27	28	28912493	28912599	107	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	28	3548	28	29	28912775	28913076	302	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	29	3757	29	30	28913286	28913506	221	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	30	3934	30	31	28913684	28913921	238	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	31	4080	31	32	28914068	28914221	154	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	32	4192	32	33	28914334	28917566	3233	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	33	4353	33	34	28917728	28918654	927	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	34	4512	34	35	28918814	28920600	1787	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	35	4599	35	36	28920688	28921094	407	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	36	4731	36	37	28921227	28922535	1309	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	37	4826	37	38	28922631	28922724	94	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	38	5002	38	39	28922901	28924009	1109	within_one_model	1	GT	AG	canonical	gene-F7725_014812	gene-F7725_014812
+dmawsoni	RYR|dmawsoni	39	5637	39	40	28924645	28925395	751	model_to_gap	0	GT	AG	canonical	gene-F7725_014812	
+dmawsoni	RYR|dmawsoni	40	5838	40	41	28925597	28926778	1182	unannotated	0	GT	AG	canonical		
+dmawsoni	RYR|dmawsoni	41	5944	41	42	28926885	28926993	109	unannotated	0	GT	AG	canonical		
+dmawsoni	RYR|dmawsoni	42	6088	42	43	28927138	28927244	107	unannotated	0	GT	AG	canonical		
+dmawsoni	RYR|dmawsoni	43	6216	43	44	28927373	28928786	1414	unannotated	0	GT	AG	canonical		
+dmawsoni	RYR|dmawsoni	44	6362	44	45	28928933	28929469	537	unannotated	0	GT	AG	canonical		
+dmawsoni	RYR|dmawsoni	45	6477	45	46	28929585	28930029	445	model_to_gap	0	GT	AG	canonical		gene-F7725_014813
+dmawsoni	RYR|dmawsoni	46	6610	46	47	28930163	28931143	981	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	47	6714	47	48	28931248	28931664	417	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	48	6850	48	49	28931801	28940381	8581	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	49	7037	49	50	28940569	28940940	372	model_to_gap	0	GT	AG	canonical	gene-F7725_014813	
+dmawsoni	RYR|dmawsoni	50	7148	50	51	28941052	28941137	86	unannotated	0	GT	AG	canonical		
+dmawsoni	RYR|dmawsoni	51	7268	51	52	28941258	28941440	183	model_to_gap	0	GT	AG	canonical		gene-F7725_014813
+dmawsoni	RYR|dmawsoni	52	7438	52	53	28941611	28942419	809	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	53	7659	53	54	28942641	28942726	86	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	54	7750	54	55	28942818	28943166	349	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	55	7891	55	56	28943308	28943858	551	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	56	8054	56	57	28944022	28944229	208	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	57	8133	57	58	28944309	28944440	132	model_to_gap	0	GT	AG	canonical	gene-F7725_014813	
+dmawsoni	RYR|dmawsoni	58	8223	58	59	28944531	28947759	3229	model_to_gap	0	GT	AG	canonical		gene-F7725_014813
+dmawsoni	RYR|dmawsoni	59	8361	59	60	28947898	28948021	124	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	60	8439	60	61	28948100	28948305	206	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	61	8515	61	62	28948382	28948628	247	model_to_gap	0	GT	AG	canonical	gene-F7725_014813	
+dmawsoni	RYR|dmawsoni	62	8640	62	63	28948754	28948884	131	model_to_gap	0	GT	AG	canonical		gene-F7725_014813
+dmawsoni	RYR|dmawsoni	63	8756	63	64	28949001	28949202	202	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	64	8821	64	65	28949268	28950507	1240	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	65	8943	65	66	28950630	28950829	200	model_to_gap	0	GT	AG	canonical	gene-F7725_014813	
+dmawsoni	RYR|dmawsoni	66	8993	66	67	28950880	28952209	1330	unannotated	0	GT	AG	canonical		
+dmawsoni	RYR|dmawsoni	67	9054	67	68	28952271	28952756	486	model_to_gap	0	GT	AG	canonical		gene-F7725_014813
+dmawsoni	RYR|dmawsoni	68	9293	68	69	28952996	28953193	198	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	69	9375	69	70	28953276	28954040	765	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	70	9506	70	71	28954172	28954437	266	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	71	9633	71	72	28954565	28954811	247	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	72	9826	72	73	28955005	28955123	119	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	73	9909	73	74	28955207	28955400	194	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	74	10067	74	75	28955559	28956746	1188	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	75	10155	75	76	28956835	28957538	704	model_to_gap	0	GT	AG	canonical	gene-F7725_014813	
+dmawsoni	RYR|dmawsoni	76	10248	76	77	28957632	28957779	148	model_to_gap	0	GT	AG	canonical		gene-F7725_014813
+dmawsoni	RYR|dmawsoni	77	10419	77	78	28957951	28959645	1695	model_to_gap	0	GT	AG	canonical	gene-F7725_014813	
+dmawsoni	RYR|dmawsoni	78	10479	78	79	28959706	28959821	116	model_to_gap	0	GT	AG	canonical		gene-F7725_014813
+dmawsoni	RYR|dmawsoni	79	10614	79	80	28959957	28960476	520	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	80	10727	80	81	28960590	28960712	123	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	81	10845	81	82	28960831	28961170	340	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	82	10935	82	83	28961261	28961923	663	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	83	10987	83	84	28961976	28962063	88	model_to_gap	0	GT	AG	canonical	gene-F7725_014813	
+dmawsoni	RYR|dmawsoni	84	11037	84	85	28962114	28962198	85	model_to_gap	0	GT	AG	canonical		gene-F7725_014813
+dmawsoni	RYR|dmawsoni	85	11137	85	86	28962299	28969038	6740	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	86	11217	86	87	28969119	28969267	149	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	87	11294	87	88	28969345	28970174	830	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	88	11368	88	89	28970249	28971618	1370	model_to_gap	0	GT	AG	canonical	gene-F7725_014813	
+dmawsoni	RYR|dmawsoni	89	11386	89	90	28971637	28975175	3539	unannotated	0	GT	AG	canonical		
+dmawsoni	RYR|dmawsoni	90	11467	90	91	28975257	28975897	641	model_to_gap	0	GT	AG	canonical		gene-F7725_014813
+dmawsoni	RYR|dmawsoni	91	11556	91	92	28975987	28976956	970	model_to_gap	0	GT	AG	canonical	gene-F7725_014813	
+dmawsoni	RYR|dmawsoni	92	11685	92	93	28977086	28977581	496	model_to_gap	0	GT	AG	canonical		gene-F7725_014813
+dmawsoni	RYR|dmawsoni	93	11790	93	94	28977687	28977937	251	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	94	11872	94	95	28978020	28978665	646	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	95	12030	95	96	28978824	28978925	102	within_one_model	1	GC	AG	minor	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	96	12185	96	97	28979081	28980088	1008	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	97	12401	97	98	28980305	28980442	138	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	98	12674	98	99	28980716	28984034	3319	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	99	12881	99	100	28984242	28984337	96	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	100	13187	100	101	28984644	28985454	811	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	101	13258	101	102	28985526	28985915	390	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	102	13409	102	103	28986067	28986437	371	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	103	13496	103	104	28986525	28986936	412	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	104	13766	104	105	28987207	28987655	449	within_one_model	1	GC	AG	minor	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	105	13897	105	106	28987787	28987907	121	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	106	13940	106	107	28987951	28988424	474	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	107	14074	107	108	28988559	28989141	583	model_to_gap	0	GT	AG	canonical	gene-F7725_014813	
+dmawsoni	RYR|dmawsoni	108	14135	108	109	28989203	28989774	572	model_to_gap	0	GT	AG	canonical		gene-F7725_014813
+dmawsoni	RYR|dmawsoni	109	14282	109	110	28989922	28993574	3653	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	110	14417	110	111	28993710	28996530	2821	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	111	14574	111	112	28996688	28997403	716	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	112	14639	112	113	28997469	28997598	130	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	113	14740	113	114	28997700	28998063	364	within_one_model	1	GT	AG	canonical	gene-F7725_014813	gene-F7725_014813
+dmawsoni	RYR|dmawsoni	114	14792	114	115	28998116	28998935	820	model_to_gap	0	GT	AG	canonical	gene-F7725_014813	
+dmawsoni	hk_EEF1A1|dmawsoni	1	144	1	2	10385303	10385398	96	within_one_model	1	GT	AG	canonical	gene-F7725_023777	gene-F7725_023777
+dmawsoni	hk_EEF1A1|dmawsoni	2	324	2	3	10384501	10385122	622	within_one_model	1	GT	AG	canonical	gene-F7725_023777	gene-F7725_023777
+dmawsoni	hk_EEF1A1|dmawsoni	3	621	3	4	10383780	10384203	424	within_one_model	1	GT	AG	canonical	gene-F7725_023777	gene-F7725_023777
+dmawsoni	hk_EEF1A1|dmawsoni	4	772	4	5	10382964	10383628	665	within_one_model	1	GC	AG	minor	gene-F7725_023777	gene-F7725_023777
+dmawsoni	hk_EEF1A1|dmawsoni	5	1029	5	6	10382414	10382706	293	within_one_model	1	GT	AG	canonical	gene-F7725_023777	gene-F7725_023777
+dmawsoni	hk_EEF1A1|dmawsoni	6	1264	6	7	10382085	10382178	94	within_one_model	1	GT	AG	canonical	gene-F7725_023777	gene-F7725_023777
+dmawsoni	hk_GAPDH|dmawsoni	1	23	1	2	23312396	23317195	4800	model_to_gap	0	GT	AG	canonical	gene-F7725_025363;gene-F7725_025364	
+dmawsoni	hk_GAPDH|dmawsoni	2	123	2	3	23311950	23312295	346	within_one_model	1	GT	AG	canonical	gene-F7725_025363;gene-F7725_025364	gene-F7725_025363;gene-F7725_025364
+dmawsoni	hk_GAPDH|dmawsoni	3	233	3	4	23311742	23311839	98	within_one_model	1	GT	AG	canonical	gene-F7725_025363;gene-F7725_025364	gene-F7725_025363;gene-F7725_025364
+dmawsoni	hk_GAPDH|dmawsoni	4	324	4	5	23311223	23311650	428	within_one_model	1	GT	AG	canonical	gene-F7725_025363;gene-F7725_025364	gene-F7725_025363;gene-F7725_025364
+dmawsoni	hk_GAPDH|dmawsoni	5	440	5	6	23310901	23311106	206	within_one_model	1	GT	AG	canonical	gene-F7725_025363;gene-F7725_025364	gene-F7725_025363;gene-F7725_025364
+dmawsoni	hk_GAPDH|dmawsoni	6	522	6	7	23310175	23310818	644	within_one_model	1	GT	AG	canonical	gene-F7725_025363;gene-F7725_025364	gene-F7725_025363;gene-F7725_025364
+dmawsoni	hk_GAPDH|dmawsoni	7	674	7	8	23309485	23310022	538	within_one_model	1	GT	AG	canonical	gene-F7725_025363;gene-F7725_025364	gene-F7725_025363;gene-F7725_025364
+dmawsoni	hk_GAPDH|dmawsoni	8	752	8	9	23309107	23309406	300	within_one_model	1	GT	AG	canonical	gene-F7725_025363;gene-F7725_025364	gene-F7725_025363;gene-F7725_025364
+dmawsoni	hk_GAPDH|dmawsoni	9	835	9	10	23308632	23309023	392	within_one_model	1	GT	AG	canonical	gene-F7725_025363;gene-F7725_025364	gene-F7725_025363;gene-F7725_025364
+dmawsoni	hk_GAPDH|dmawsoni	10	933	10	11	23308443	23308533	91	within_one_model	1	GT	AG	canonical	gene-F7725_025363;gene-F7725_025364	gene-F7725_025363;gene-F7725_025364
+dmawsoni	hk_RPL13A|dmawsoni	1	21	1	2	18881265	18881993	729	within_one_model	1	GT	AG	canonical	gene-F7725_008116	gene-F7725_008116
+dmawsoni	hk_RPL13A|dmawsoni	2	94	2	3	18882067	18882398	332	within_one_model	1	GT	AG	canonical	gene-F7725_008116	gene-F7725_008116
+dmawsoni	hk_RPL13A|dmawsoni	3	160	3	4	18882465	18882698	234	within_one_model	1	GT	AG	canonical	gene-F7725_008116	gene-F7725_008116
+dmawsoni	hk_RPL13A|dmawsoni	4	262	4	5	18882801	18883417	617	within_one_model	1	GT	AG	canonical	gene-F7725_008116	gene-F7725_008116
+dmawsoni	hk_RPL13A|dmawsoni	5	348	5	6	18883504	18883714	211	within_one_model	1	GT	AG	canonical	gene-F7725_008116	gene-F7725_008116
+dmawsoni	hk_RPL13A|dmawsoni	6	408	6	7	18883775	18884184	410	within_one_model	1	GT	AG	canonical	gene-F7725_008116	gene-F7725_008116
+nalbiflora	ITPR1|nalbiflora	1	92	1	2	23125377	23127768	2392	within_one_model	1	GT	AG	canonical	gene-GBF38_013612	gene-GBF38_013612
+nalbiflora	ITPR1|nalbiflora	2	163	2	3	23116720	23125305	8586	between_models	0	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_013612
+nalbiflora	ITPR1|nalbiflora	3	273	3	4	23116131	23116609	479	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	4	360	4	5	23115096	23116043	948	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	5	519	5	6	23113833	23114936	1104	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	6	618	6	7	23113137	23113733	597	model_to_gap	0	GT	AG	canonical		gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	7	702	7	8	23112571	23113052	482	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR1|nalbiflora	8	849	8	9	23112204	23112423	220	model_to_gap	0	GT	AG	canonical	gene-GBF38_012862	
+nalbiflora	ITPR1|nalbiflora	9	945	9	10	23111915	23112107	193	model_to_gap	0	GT	AG	canonical		gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	10	987	10	11	23110984	23111872	889	model_to_gap	0	GT	AG	canonical	gene-GBF38_012862	
+nalbiflora	ITPR1|nalbiflora	11	1142	11	12	23109899	23110828	930	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	12	1242	12	13	23109421	23109798	378	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	13	1403	13	14	23109177	23109259	83	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	14	1545	14	15	23108869	23109034	166	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	15	1704	15	16	23108122	23108709	588	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	16	1877	16	17	23107723	23107948	226	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	17	1997	17	18	23107255	23107602	348	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	18	2192	18	19	23106920	23107059	140	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	19	2444	19	20	23106569	23106667	99	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	20	2586	20	21	23106347	23106426	80	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	21	2740	21	22	23106086	23106192	107	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	22	2931	22	23	23105808	23105894	87	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	23	3064	23	24	23105590	23105674	85	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	24	3119	24	25	23105436	23105534	99	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	25	3285	25	26	23105089	23105269	181	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	26	3459	26	27	23104832	23104914	83	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	27	3534	27	28	23104638	23104756	119	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	28	3673	28	29	23104416	23104498	83	model_to_gap	0	GT	AG	canonical		gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	29	3820	29	30	23104154	23104268	115	model_to_gap	0	GT	AG	canonical	gene-GBF38_012862	
+nalbiflora	ITPR1|nalbiflora	30	4015	30	31	23103863	23103958	96	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	31	4267	31	32	23103537	23103610	74	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	32	4393	32	33	23103320	23103410	91	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	33	4522	33	34	23102003	23103190	1188	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	34	4643	34	35	23101715	23101881	167	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	35	4828	35	36	23101447	23101529	83	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	36	4977	36	37	23101203	23101297	95	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	37	5101	37	38	23096027	23101078	5052	model_to_gap	0	GC	AG	minor		gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	38	5149	38	39	23094501	23095978	1478	model_to_gap	0	GT	AG	canonical	gene-GBF38_012862	
+nalbiflora	ITPR1|nalbiflora	39	5282	39	40	23092571	23094367	1797	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	40	5470	40	41	23087463	23092382	4920	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	41	5654	41	42	23087126	23087278	153	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	42	5908	42	43	23085879	23086871	993	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	43	6110	43	44	23085580	23085676	97	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	44	6221	44	45	23085123	23085468	346	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	45	6317	45	46	23084894	23085026	133	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	46	6461	46	47	23084645	23084749	105	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	47	6569	47	48	23084347	23084536	190	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	48	6762	48	49	23082497	23084153	1657	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	49	6885	49	50	23079822	23082373	2552	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	50	7061	50	51	23078471	23079645	1175	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	51	7226	51	52	23077682	23078305	624	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	52	7456	52	53	23077365	23077451	87	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	53	7536	53	54	23075580	23077284	1705	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	54	7679	54	55	23073781	23075436	1656	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	55	7845	55	56	23071355	23073614	2260	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	56	8006	56	57	23070392	23071193	802	within_one_model	1	GT	AG	canonical	gene-GBF38_012862	gene-GBF38_012862
+nalbiflora	ITPR1|nalbiflora	57	8168	57	58	23069546	23070229	684	model_to_gap	0	GT	AG	canonical		gene-GBF38_012862
+nalbiflora	ITPR2|nalbiflora	1	92	1	2	12495805	12500214	4410	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	2	163	2	3	12495410	12495733	324	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	3	282	3	4	12495203	12495290	88	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	4	369	4	5	12494320	12495115	796	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	5	528	5	6	12493348	12494160	813	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	6	627	6	7	12493032	12493248	217	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	7	711	7	8	12492780	12492947	168	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	8	858	8	9	12491874	12492632	759	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	9	954	9	10	12491412	12491777	366	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	10	999	10	11	12489660	12491366	1707	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	11	1151	11	12	12488788	12489507	720	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	12	1251	12	13	12488589	12488687	99	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	13	1412	13	14	12488334	12488427	94	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	14	1554	14	15	12488004	12488191	188	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	15	1713	15	16	12486435	12487844	1410	unannotated	0	GC	AG	minor		
+nalbiflora	ITPR2|nalbiflora	16	1886	16	17	12485933	12486261	329	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	17	2006	17	18	12485570	12485812	243	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	18	2189	18	19	12485214	12485386	173	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	19	2441	19	20	12484874	12484961	88	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	20	2589	20	21	12484640	12484725	86	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	21	2741	21	22	12483738	12484487	750	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	22	2929	22	23	12483468	12483549	82	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	23	3053	23	24	12483251	12483343	93	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	24	3137	24	25	12483055	12483166	112	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	25	3298	25	26	12482559	12482893	335	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	26	3466	26	27	12481836	12482390	555	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	27	3553	27	28	12481665	12481748	84	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	28	3679	28	29	12481442	12481538	97	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	29	3802	29	30	12481023	12481318	296	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	30	4003	30	31	12480700	12480821	122	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	31	4255	31	32	12480359	12480447	89	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	32	4381	32	33	12480035	12480232	198	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	33	4510	33	34	12479589	12479905	317	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	34	4631	34	35	12479357	12479467	111	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	35	4813	35	36	12478826	12479174	349	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	36	4956	36	37	12478108	12478682	575	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	37	5065	37	38	12468012	12477998	9987	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	38	5186	38	39	12467607	12467890	284	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	39	5357	39	40	12467294	12467435	142	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	40	5538	40	41	12466491	12467112	622	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	41	5792	41	42	12466130	12466236	107	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	42	5993	42	43	12465392	12465928	537	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	43	6104	43	44	12464943	12465280	338	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	44	6200	44	45	12464688	12464846	159	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	45	6320	45	46	12462673	12464567	1895	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	46	6443	46	47	12462399	12462549	151	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	47	6636	47	48	12462008	12462205	198	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	48	6762	48	49	12460411	12461881	1471	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	49	6938	49	50	12460129	12460234	106	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	50	7103	50	51	12459862	12459963	102	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	51	7329	51	52	12457232	12459635	2404	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	52	7451	52	53	12457017	12457109	93	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	53	7617	53	54	12456756	12456850	95	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	54	7778	54	55	12449780	12456594	6815	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR2|nalbiflora	55	7940	55	56	12447919	12449617	1699	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR3|nalbiflora	1	92	1	2	25715237	25721249	6013	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR3|nalbiflora	2	163	2	3	25713659	25715165	1507	model_to_gap	0	GT	AG	canonical	gene-GBF38_020338	
+nalbiflora	ITPR3|nalbiflora	3	285	3	4	25712547	25713536	990	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	4	372	4	5	25711654	25712459	806	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	5	531	5	6	25711380	25711494	115	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	6	630	6	7	25711175	25711280	106	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	7	714	7	8	25710481	25711090	610	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	8	1056	8	9	25710056	25710138	83	model_to_gap	0	GT	AG	canonical		gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	9	1101	9	10	25709885	25710010	126	model_to_gap	0	GT	AG	canonical	gene-GBF38_020338	
+nalbiflora	ITPR3|nalbiflora	10	1244	10	11	25709624	25709741	118	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	11	1345	11	12	25709431	25709522	92	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	12	1506	12	13	25709178	25709269	92	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	13	1648	13	14	25708952	25709035	84	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	14	1813	14	15	25708668	25708786	119	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	15	1986	15	16	25708411	25708494	84	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	16	2106	16	17	25708123	25708290	168	model_to_gap	0	GT	AG	canonical		gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	17	2188	17	18	25707930	25708040	111	model_to_gap	0	GT	AG	canonical	gene-GBF38_020338	
+nalbiflora	ITPR3|nalbiflora	18	2304	18	19	25707735	25707813	79	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	19	2556	19	20	25707130	25707482	353	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	20	2701	20	21	25706894	25706984	91	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	21	2846	21	22	25706672	25706748	77	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	22	3061	22	23	25706354	25706456	103	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	23	3182	23	24	25705956	25706232	277	model_to_gap	0	GT	AG	canonical		gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	24	3237	24	25	25705820	25705900	81	model_to_gap	0	GT	AG	canonical	gene-GBF38_020338	
+nalbiflora	ITPR3|nalbiflora	25	3403	25	26	25704461	25705653	1193	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	26	3571	26	27	25702564	25704292	1729	model_to_gap	0	GT	AG	canonical		gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	27	3643	27	28	25701276	25702491	1216	model_to_gap	0	GT	AG	canonical	gene-GBF38_020338	
+nalbiflora	ITPR3|nalbiflora	28	3763	28	29	25701079	25701155	77	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	29	3886	29	30	25700870	25700955	86	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	30	4087	30	31	25700591	25700668	78	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	31	4203	31	32	25700390	25700474	85	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	32	4465	32	33	25700023	25700127	105	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	33	4591	33	34	25699808	25699896	89	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	34	4712	34	35	25699594	25699686	93	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	35	4894	35	36	25699332	25699411	80	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	36	5043	36	37	25699046	25699182	137	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	37	5152	37	38	25698366	25698936	571	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	38	5276	38	39	25698154	25698241	88	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	39	5449	39	40	25697904	25697980	77	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	40	5627	40	41	25697633	25697725	93	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	41	5815	41	42	25697348	25697444	97	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	42	6016	42	43	25697051	25697146	96	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	43	6127	43	44	25696853	25696939	87	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	44	6223	44	45	25696665	25696756	92	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	45	6325	45	46	25696387	25696562	176	model_to_gap	0	GT	AG	canonical		gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	46	6409	46	47	25696209	25696302	94	unannotated	0	GT	AG	canonical		
+nalbiflora	ITPR3|nalbiflora	47	6520	47	48	25695996	25696097	102	model_to_gap	0	GT	AG	canonical	gene-GBF38_020338	
+nalbiflora	ITPR3|nalbiflora	48	6713	48	49	25695708	25695802	95	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	49	6833	49	50	25695411	25695587	177	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	50	7006	50	51	25695150	25695237	88	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	51	7171	51	52	25694899	25694984	86	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	52	7361	52	53	25694442	25694708	267	model_to_gap	0	GT	AG	canonical		gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	53	7460	53	54	25694254	25694342	89	model_to_gap	0	GT	AG	canonical	gene-GBF38_020338	
+nalbiflora	ITPR3|nalbiflora	54	7579	54	55	25694052	25694134	83	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	55	7745	55	56	25693805	25693885	81	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	56	7906	56	57	25693558	25693643	86	within_one_model	1	GT	AG	canonical	gene-GBF38_020338	gene-GBF38_020338
+nalbiflora	ITPR3|nalbiflora	57	8068	57	58	25693166	25693395	230	model_to_gap	0	GT	AG	canonical		gene-GBF38_020338
+nalbiflora	RYR|nalbiflora	1	45	1	2	1526504	1570005	43502	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	2	165	2	3	1570126	1572919	2794	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	3	270	3	4	1573025	1575687	2663	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	4	315	4	5	1575733	1580999	5267	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	5	390	5	6	1581075	1581948	874	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	6	469	6	7	1582028	1583657	1630	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	7	582	7	8	1583771	1584773	1003	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	8	682	8	9	1584874	1585376	503	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	9	779	9	10	1585474	1586276	803	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	10	854	10	11	1586352	1587011	660	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	11	1011	11	12	1587169	1591691	4523	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	12	1176	12	13	1591857	1592250	394	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	13	1298	13	14	1592373	1593849	1477	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	14	1482	14	15	1594034	1594890	857	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	15	1618	15	16	1595027	1595262	236	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	16	1714	16	17	1595359	1596161	803	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	17	1833	17	18	1596281	1596626	346	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	18	1967	18	19	1596761	1596898	138	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	19	2209	19	20	1597141	1597227	87	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	20	2402	20	21	1597421	1597853	433	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	21	2607	21	22	1598059	1598593	535	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	22	2712	22	23	1598699	1599396	698	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	23	2816	23	24	1599501	1599724	224	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	24	2900	24	25	1599809	1599971	163	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	25	3060	25	26	1600132	1601382	1251	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	26	3208	26	27	1601531	1601622	92	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	27	3309	27	28	1601724	1601816	93	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	28	3414	28	29	1601922	1602048	127	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	29	3589	29	30	1602224	1602585	362	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	30	3798	30	31	1602795	1602952	158	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	31	3975	31	32	1603130	1603433	304	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	32	4121	32	33	1603580	1603725	146	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	33	4236	33	34	1603841	1604003	163	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	34	4397	34	35	1604165	1604312	148	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	35	4557	35	36	1604473	1604631	159	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	36	4644	36	37	1604719	1605307	589	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	37	4776	37	38	1605440	1605572	133	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	38	4871	38	39	1605668	1605789	122	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	39	5047	39	40	1605966	1606278	313	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	40	5706	40	41	1606938	1607719	782	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	41	5907	41	42	1607921	1608176	256	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	42	6013	42	43	1608283	1608377	95	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	43	6157	43	44	1608522	1608671	150	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	44	6285	44	45	1608800	1609236	437	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	45	6431	45	46	1609383	1609606	224	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	46	6546	46	47	1609722	1610073	352	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	47	6679	47	48	1610207	1610505	299	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	48	6783	48	49	1610610	1611536	927	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	49	6919	49	50	1611673	1611763	91	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	50	7106	50	51	1611951	1612483	533	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	51	7218	51	52	1612596	1612692	97	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	52	7339	52	53	1612814	1612984	171	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	53	7509	53	54	1613155	1613360	206	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	54	7730	54	55	1613582	1613701	120	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	55	7821	55	56	1613793	1614170	378	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	56	7962	56	57	1614312	1614841	530	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	57	8126	57	58	1615006	1615202	197	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	58	8205	58	59	1615282	1615365	84	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	59	8295	59	60	1615456	1616970	1515	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	60	8430	60	61	1617106	1617207	102	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	61	8508	61	62	1617286	1617450	165	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	62	8584	62	63	1617527	1617841	315	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	63	8708	63	64	1617966	1618296	331	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	64	8824	64	65	1618413	1618913	501	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	65	8889	65	66	1618979	1619546	568	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	66	9011	66	67	1619669	1619938	270	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	67	9061	67	68	1619989	1621853	1865	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	68	9122	68	69	1621915	1622843	929	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	69	9361	69	70	1623083	1623174	92	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	70	9443	70	71	1623257	1624218	962	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	71	9574	71	72	1624350	1624865	516	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	72	9702	72	73	1624994	1625444	451	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	73	9895	73	74	1625638	1625814	177	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	74	9978	74	75	1625898	1626197	300	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	75	10136	75	76	1626356	1626750	395	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	76	10224	76	77	1626839	1628206	1368	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	77	10317	77	78	1628300	1628417	118	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	78	10488	78	79	1628589	1628849	261	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	79	10548	79	80	1628910	1629094	185	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	80	10683	80	81	1629230	1629486	257	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	81	10796	81	82	1629600	1629712	113	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	82	10893	82	83	1629810	1629935	126	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	83	11000	83	84	1630043	1630491	449	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	84	11052	84	85	1630544	1630697	154	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	85	11103	85	86	1630749	1630865	117	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	86	11203	86	87	1630966	1631243	278	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	87	11283	87	88	1631324	1631733	410	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	88	11360	88	89	1631811	1632494	684	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	89	11434	89	90	1632569	1633861	1293	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	90	11452	90	91	1633880	1638692	4813	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	91	11533	91	92	1638774	1639541	768	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	92	11622	92	93	1639631	1640957	1327	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	93	11751	93	94	1641087	1641308	222	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	94	11856	94	95	1641414	1641715	302	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	95	11938	95	96	1641798	1641984	187	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	96	12097	96	97	1642144	1642272	129	unannotated	0	GC	AG	minor		
+nalbiflora	RYR|nalbiflora	97	12252	97	98	1642428	1642845	418	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	98	12468	98	99	1643062	1643143	82	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	99	12741	99	100	1643417	1643993	577	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	100	12948	100	101	1644201	1644293	93	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	101	13263	101	102	1644609	1644975	367	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	102	13334	102	103	1645047	1645558	512	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	103	13482	103	104	1645707	1645859	153	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	104	13569	104	105	1645947	1646101	155	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	105	13839	105	106	1646372	1646577	206	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	106	13970	106	107	1646709	1647062	354	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	107	14013	107	108	1647106	1647278	173	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	108	14147	108	109	1647413	1647718	306	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	109	14208	109	110	1647780	1648943	1164	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	110	14355	110	111	1649091	1649274	184	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	111	14490	111	112	1649410	1652009	2600	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	112	14647	112	113	1652167	1653466	1300	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	113	14712	113	114	1653532	1653777	246	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	114	14813	114	115	1653879	1654405	527	unannotated	0	GT	AG	canonical		
+nalbiflora	RYR|nalbiflora	115	14865	115	116	1654458	1654895	438	unannotated	0	GT	AG	canonical		
+nalbiflora	hk_EEF1A1|nalbiflora	1	144	1	2	3962023	3962136	114	within_one_model	1	GT	AG	canonical	gene-GBF38_002534	gene-GBF38_002534
+nalbiflora	hk_EEF1A1|nalbiflora	2	324	2	3	3962317	3962519	203	within_one_model	1	GT	AG	canonical	gene-GBF38_002534	gene-GBF38_002534
+nalbiflora	hk_EEF1A1|nalbiflora	3	621	3	4	3962817	3963032	216	within_one_model	1	GT	AG	canonical	gene-GBF38_002534	gene-GBF38_002534
+nalbiflora	hk_EEF1A1|nalbiflora	4	772	4	5	3963184	3963319	136	within_one_model	1	GC	AG	minor	gene-GBF38_002534	gene-GBF38_002534
+nalbiflora	hk_EEF1A1|nalbiflora	5	1029	5	6	3963577	3963730	154	within_one_model	1	GT	AG	canonical	gene-GBF38_002534	gene-GBF38_002534
+nalbiflora	hk_EEF1A1|nalbiflora	6	1264	6	7	3963966	3964056	91	within_one_model	1	GT	AG	canonical	gene-GBF38_002534	gene-GBF38_002534
+nalbiflora	hk_GAPDH|nalbiflora	1	23	1	2	18225111	18228669	3559	unannotated	0	GT	AG	canonical		
+nalbiflora	hk_GAPDH|nalbiflora	2	123	2	3	18224932	18225010	79	unannotated	0	GT	AG	canonical		
+nalbiflora	hk_GAPDH|nalbiflora	3	233	3	4	18224718	18224821	104	unannotated	0	GT	AG	canonical		
+nalbiflora	hk_GAPDH|nalbiflora	4	324	4	5	18224519	18224626	108	unannotated	0	GT	AG	canonical		
+nalbiflora	hk_GAPDH|nalbiflora	5	440	5	6	18223947	18224402	456	unannotated	0	GT	AG	canonical		
+nalbiflora	hk_GAPDH|nalbiflora	6	522	6	7	18223444	18223864	421	unannotated	0	GT	AG	canonical		
+nalbiflora	hk_GAPDH|nalbiflora	7	674	7	8	18223075	18223291	217	unannotated	0	GT	AG	canonical		
+nalbiflora	hk_GAPDH|nalbiflora	8	753	8	9	18222835	18222995	161	unannotated	0	GT	AG	canonical		
+nalbiflora	hk_GAPDH|nalbiflora	9	837	9	10	18222479	18222750	272	unannotated	0	GT	AG	canonical		
+nalbiflora	hk_GAPDH|nalbiflora	10	935	10	11	18222124	18222380	257	unannotated	0	GT	AG	canonical		
+nalbiflora	hk_RPL13A|nalbiflora	1	21	1	2	22230419	22231083	665	model_to_gap	0	GT	AG	canonical		gene-GBF38_021634
+nalbiflora	hk_RPL13A|nalbiflora	2	94	2	3	22231157	22231406	250	within_one_model	1	GT	AG	canonical	gene-GBF38_021634	gene-GBF38_021634
+nalbiflora	hk_RPL13A|nalbiflora	3	160	3	4	22231473	22231684	212	within_one_model	1	GT	AG	canonical	gene-GBF38_021634	gene-GBF38_021634
+nalbiflora	hk_RPL13A|nalbiflora	4	262	4	5	22231787	22232225	439	within_one_model	1	GT	AG	canonical	gene-GBF38_021634	gene-GBF38_021634
+nalbiflora	hk_RPL13A|nalbiflora	5	348	5	6	22232312	22232520	209	within_one_model	1	GT	AG	canonical	gene-GBF38_021634	gene-GBF38_021634
+nalbiflora	hk_RPL13A|nalbiflora	6	408	6	7	22232581	22232951	371	within_one_model	1	GT	AG	canonical	gene-GBF38_021634	gene-GBF38_021634

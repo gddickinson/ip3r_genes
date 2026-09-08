@@ -121,7 +121,9 @@ def spliced_cds(region, model: dict) -> tuple[str, list[int]]:
 
 
 def build_probes(region, model: dict, introns: list[dict],
-                 flank: int = PROBE_FLANK_NT) -> list[dict]:
+                 flank: int = PROBE_FLANK_NT,
+                 classes: tuple[str, ...] = INFORMATIVE_CLASSES
+                 ) -> list[dict]:
     """One probe per informative junction, in spliced-transcript coordinates.
 
     `introns` are in coordinate order (as `classify_introns` produces them) and
@@ -130,6 +132,10 @@ def build_probes(region, model: dict, introns: list[dict],
     coordinates rather than by index, because an off-by-reversal here would
     label every probe with the wrong junction's class and the error would not
     show up anywhere downstream.
+
+    `classes` defaults to the informative ones, which is what S10 asks for.
+    S12 passes `within_one_model` as well, to probe the junctions the
+    annotation *does* model as a positive control on the same deposits.
     """
     cds, offsets = spliced_cds(region, model)
     blocks = model["cds"]
@@ -144,7 +150,7 @@ def build_probes(region, model: dict, introns: list[dict],
     for intr in introns:
         key = (intr["start"], intr["end"])
         meta = by_gap.get(key)
-        if meta is None or intr["class"] not in INFORMATIVE_CLASSES:
+        if meta is None or intr["class"] not in classes:
             continue
         off = meta["cds_offset"]
         lo, hi = max(0, off - flank), min(len(cds), off + flank)

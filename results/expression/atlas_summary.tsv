@@ -1,0 +1,20 @@
+species	organism	cell	role	annotated	probes	probes_with_hit	deposit_hits	probes_spanned	deposit_spanning	control_hits	control_spanning	deposit_status
+deleginoides	Dissostichus eleginoides	ITPR1	failed	1	48	0	0	0	0	102	0	cached
+deleginoides	Dissostichus eleginoides	ITPR1	failed	0	9	0	0	0	0	18	0	cached
+deleginoides	Dissostichus eleginoides	ITPR2	failed	0	55	0	0	0	0	114	0	cached
+deleginoides	Dissostichus eleginoides	ITPR3	failed	1	34	0	0	0	0	72	0	cached
+deleginoides	Dissostichus eleginoides	ITPR3	failed	0	25	0	0	0	0	50	0	cached
+deleginoides	Dissostichus eleginoides	RYR	control_family	1	93	0	0	0	0	194	0	cached
+deleginoides	Dissostichus eleginoides	RYR	control_family	0	21	0	0	0	0	47	0	cached
+dmawsoni	Dissostichus mawsoni	ITPR1	failed	0	57	0	0	0	0	120	0	cached
+dmawsoni	Dissostichus mawsoni	ITPR2	failed	1	1	0	0	0	0	2	0	cached
+dmawsoni	Dissostichus mawsoni	ITPR2	failed	0	54	0	0	0	0	112	0	cached
+dmawsoni	Dissostichus mawsoni	ITPR3	failed	0	59	0	0	0	0	122	0	cached
+dmawsoni	Dissostichus mawsoni	RYR	control_family	1	80	0	0	0	0	167	0	cached
+dmawsoni	Dissostichus mawsoni	RYR	control_family	0	34	0	0	0	0	77	0	cached
+nalbiflora	Nibea albiflora	ITPR1	control_paralog	1	46	0	0	0	0	94	0	cached
+nalbiflora	Nibea albiflora	ITPR1	control_paralog	0	11	0	0	0	0	26	0	cached
+nalbiflora	Nibea albiflora	ITPR2	failed	0	55	0	0	0	0	112	0	cached
+nalbiflora	Nibea albiflora	ITPR3	control_paralog	1	41	0	0	0	0	82	0	cached
+nalbiflora	Nibea albiflora	ITPR3	control_paralog	0	16	0	0	0	0	35	0	cached
+nalbiflora	Nibea albiflora	RYR	control_family	0	115	0	0	0	0	245	0	cached

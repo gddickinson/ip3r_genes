@@ -1,0 +1,13 @@
+accession	organism	cell	rule	verdict	reason
+GCA_031216635.1	Dissostichus eleginoides	ITPR2	P1	included	annotation loss 1.000 (omission)
+GCA_011823955.1	Dissostichus mawsoni	ITPR1	P1	included	annotation loss 1.000 (omission)
+GCA_014281875.1	Nibea albiflora	ITPR2	P1	included	annotation loss 1.000 (omission)
+GCA_011823955.1	Dissostichus mawsoni	ITPR3	P1	included	annotation loss 0.989 (truncation)
+GCA_011823955.1	Dissostichus mawsoni	ITPR2	P1	included	annotation loss 0.876 (truncation)
+GCA_031216635.1	Dissostichus eleginoides	ITPR3	P1	included	annotation loss 0.581 (fragmentation)
+GCA_031216635.1	Dissostichus eleginoides	ITPR1	P1	included	annotation loss 0.537 (fragmentation)
+GCA_031216635.1	Dissostichus eleginoides	RYR	P4	included	internal control (found_annotated, annotated as KUDE01_024247)
+GCA_011823955.1	Dissostichus mawsoni	RYR	P4	included	internal control (found_annotated, annotated as F7725_014813)
+GCA_014281875.1	Nibea albiflora	ITPR1	P3	included	internal control (found_annotated, annotated as ITPR1)
+GCA_014281875.1	Nibea albiflora	ITPR3	P3	included	internal control (found_annotated, annotated as ITPR2)
+GCA_014281875.1	Nibea albiflora	RYR	P4	included	internal control (found_unannotated)

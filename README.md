@@ -200,6 +200,40 @@ IP3-receptor genes in the DNA, zero IP3-receptor protein records in any
 database.**
 → [`results/annotation_bugs/report.md`](results/annotation_bugs/report.md)
 
+**S12** put S10's finding to biology rather than to software. If the seven
+genes the annotations lose are real, cells should be transcribing them —
+so 67 public RNA-seq runs (**536 million reads**, 16 studies, 11 tissues)
+were streamed against a reference built from the recovered loci themselves.
+**All seven are transcribed and spliced**, each in 6–9 tissues, and **298 of
+the 314 splice junctions no annotated model spans (94.9 %) are crossed by
+reads** — the same rate as the junctions the annotations *do* model in the
+same genes. A junction only exists in a transcript, never in the DNA, so
+those reads cannot come from genomic carryover. Read coverage also falls
+outside the annotation in the proportion S10 measured from the coding
+footprint, from aligned reads instead of a GFF. **In *Nibea albiflora* the
+family reaches no protein database by any route**: ITPR2 is unannotated and
+ITPR1 and ITPR3 are annotated *as pseudogenes* over 97–98 % of their coding
+footprint, yet all three are transcribed in 31–32 of 32 libraries. The
+deposit-based cross-check was re-asked on the one species that should have
+answered it — *D. mawsoni*'s 37,166 mRNA records — and returned **0
+spanning hits, including 0 for the annotated RyR control**; at a median
+deposit length of 547 nt against an 8 kb transcript it never could have,
+which is the verdict the report renders. **Three inherited assumptions were
+measured rather than carried over, and two changed the result**: the
+translation-identity floor for validating a reference (wrong instrument — a
+correct reference scores 1.00 with no frameshifts and 0.92 with nine),
+the ported decoy floor of zero (**42 reads here**, bounded to ~64 bp and
+changing no call), and the closed-set cross-mapping risk (measured, 0 of
+12,500).
+→ [`results/expression/report.md`](results/expression/report.md)
+
+![S12 junction support](results/expression/figures/s12_junctions.png)
+
+*Every splice junction of all seven loci the annotation loses, at its
+position in the spliced coding sequence. Violet: a junction no annotated
+gene model spans. Blue: one it does. A junction nothing crossed is marked on
+the baseline, so the denominator is in the picture.*
+
 **S11** asked whether what the census calls an IP3 receptor *folds* like one,
 and whether it can be told from a ryanodine receptor by shape alone. **It
 can: 20 of 20 structures the fold test could call agree with the census, and
@@ -367,7 +401,7 @@ One task per session. Full ledger with dependencies and results in
 | S9b | ML selection (codeml branch/site models, HyPhy RELAX) | ✅ completed 2026-09-08 |
 | S10 | Annotation-bug molecular validation | ✅ completed 2026-09-08 |
 | S11 | Structures + TM-align vs cryo-EM references | ✅ completed 2026-09-08 |
-| S12 | Expression evidence (SRA junction reads) | ⏳ pending |
+| S12 | Expression evidence (SRA junction reads) | ✅ completed 2026-09-08 |
 | S13 | Reconciliation & dating | ⏳ pending |
 | S15 | Loss dynamics | ⏳ pending |
 | S16 | Duplication history (2R / 3R, and the RyR parallel) | ⏳ pending |

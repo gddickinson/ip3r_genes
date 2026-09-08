@@ -1,0 +1,96 @@
+{
+ "task": "S12",
+ "written_at": "2026-09-08 13:21:34 CDT",
+ "self_test": "pass",
+ "tools": {
+  "hisat2": "/opt/anaconda3/envs/s12/bin/hisat2-align-s version 2.2.3",
+  "fastq-dump": "/opt/anaconda3/envs/s12/bin/fastq-dump : 3.4.1",
+  "miniprot": "0.18-r281",
+  "blastn": "Nucleotide-Nucleotide BLAST 2.16.0+"
+ },
+ "parameters": {
+  "min_junction_reads": 2,
+  "min_reads": 5,
+  "junction_anchor_nt": 8,
+  "min_mapq": 10,
+  "decoy": "reversed CDS (length- and composition-matched)"
+ },
+ "crossmap_worst_rate": 0.0,
+ "runs_quantified": 67,
+ "runs_selected": 67,
+ "runs_missing_counts": 0,
+ "tables": {
+  "run_metrics.tsv": {
+   "rows": 67,
+   "sha256": "fb6bb4f6ecc7509d058bf70b8f68020c91e28973b6b41c1aec9edf5cb2f19cd4"
+  },
+  "expression_by_run.tsv": {
+   "rows": 469,
+   "sha256": "cea3e27c010ae8d80224ddfd0d563b8dff75fb6afb156b164242dfcef806f848"
+  },
+  "expression_by_locus.tsv": {
+   "rows": 21,
+   "sha256": "9e49a3e334b058155a47ab183feb745591a08d69ef383e3dbf5132a60270064a"
+  },
+  "expression_by_tissue.tsv": {
+   "rows": 189,
+   "sha256": "ff62f072a9bc1605b3bd6e0526271afc5fe33051f8376fda7e2ce6d00a09e913"
+  },
+  "junction_support.tsv": {
+   "rows": 919,
+   "sha256": "2176420b36bcee7d0203918a46ab1cb05bd260eb6e05ed21c5a46f724b419011"
+  },
+  "annotation_gap_coverage.tsv": {
+   "rows": 12,
+   "sha256": "c83a150e02b73bd49b7dfbd0ee8d13dcb36952b1cef0cbe08981dbb8b4ed24c6"
+  },
+  "coverage_profile.tsv": {
+   "rows": 12,
+   "sha256": "eeefcfff9ff9a074c0acf18e3436325ade5991b74e535bc209bc3606eb7c4e03"
+  },
+  "atlas_probes.tsv": {
+   "rows": 854,
+   "sha256": "9f5e079fbb2101a0c7f99692a17fbc26a87391a3bf6cf8d3e04a649c40ec49ea"
+  },
+  "atlas_resources.tsv": {
+   "rows": 3,
+   "sha256": "26dc2914e927244ee32b628c673fc0d56c73c055b597d39e7ae43a8be1bca8bb"
+  },
+  "atlas_summary.tsv": {
+   "rows": 19,
+   "sha256": "005956907942aa3d0dfbe4055402066060e97564fca0b7944d4aa8c9508ecee3"
+  },
+  "crossmap_control.tsv": {
+   "rows": 21,
+   "sha256": "80a94a8c8cff9439f99d6fd3cbdfab75928c3cc3d218d9708170ea4484bea71f"
+  },
+  "junctions.tsv": {
+   "rows": 919,
+   "sha256": "2bbb21dc4b0b809bdc896e7e12c2dd768c6b3f6c080a4f93c7a8d715e9eeeb1a"
+  },
+  "panel_audit.tsv": {
+   "rows": 12,
+   "sha256": "366813e362fa20abf08b8250d2a014954a6011c674ad45c9188fd37d9ff4c947"
+  },
+  "reference_table.tsv": {
+   "rows": 42,
+   "sha256": "fce915131d5c1efe56d37b81357933c48a40340aef02780415433de6738aab71"
+  },
+  "reference_validation.tsv": {
+   "rows": 21,
+   "sha256": "fd0a299718e9747f00e4920c02ef700547ff9d5524ac7a6491a2121236ccea58"
+  },
+  "run_availability.tsv": {
+   "rows": 3,
+   "sha256": "5af7da169601a52521f7fab5bad0620c9f293f2be698e0f99dc9cb6f04b0e01b"
+  },
+  "runs_considered.tsv": {
+   "rows": 315,
+   "sha256": "0869ba6553ffe4d7c5f499525d2c5a6df8af3a149e11ddf5a30778d9ca3e1341"
+  },
+  "runs_selected.tsv": {
+   "rows": 67,
+   "sha256": "0c6bd5829e04466bc0205d0202b3c33c74d3a2837b6c1bc2cc1461719a43997b"
+  }
+ }
+}

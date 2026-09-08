@@ -1,0 +1,22 @@
+species	organism	seq	role	frameshifts	cds_bp_expected	cds_bp_built	as_built_placed	as_built_tested	as_built_rate	reversed_order_placed	reversed_order_tested	reversed_order_rate	wrong_strand_placed	wrong_strand_tested	wrong_strand_rate
+deleginoides	Dissostichus eleginoides	ITPR1|deleginoides	failed	4	8222	8222	58	58	1.0	1	58	0.0172	0	58	0.0
+deleginoides	Dissostichus eleginoides	ITPR2|deleginoides	failed	1	8074	8074	56	56	1.0	1	56	0.0179	0	56	0.0
+deleginoides	Dissostichus eleginoides	ITPR3|deleginoides	failed	2	8064	8064	59	60	0.9833	1	60	0.0167	0	60	0.0
+deleginoides	Dissostichus eleginoides	RYR|deleginoides	control_family	2	14895	14895	114	114	1.0	1	114	0.0088	0	114	0.0
+deleginoides	Dissostichus eleginoides	hk_EEF1A1|deleginoides	housekeeping	0		1440	6	6	1.0	1	6	0.1667	0	6	0.0
+deleginoides	Dissostichus eleginoides	hk_GAPDH|deleginoides	housekeeping	0		1005	10	10	1.0	1	10	0.1	0	10	0.0
+deleginoides	Dissostichus eleginoides	hk_RPL13A|deleginoides	housekeeping	0		618	6	6	1.0	1	6	0.1667	0	6	0.0
+dmawsoni	Dissostichus mawsoni	ITPR1|dmawsoni	failed	4	8228	8228	58	58	1.0	1	58	0.0172	0	58	0.0
+dmawsoni	Dissostichus mawsoni	ITPR2|dmawsoni	failed	4	8065	8065	56	56	1.0	1	56	0.0179	0	56	0.0
+dmawsoni	Dissostichus mawsoni	ITPR3|dmawsoni	failed	9	8058	8058	55	60	0.9167	1	60	0.0167	0	60	0.0
+dmawsoni	Dissostichus mawsoni	RYR|dmawsoni	control_family	17	14887	14887	109	114	0.9561	1	114	0.0088	0	114	0.0
+dmawsoni	Dissostichus mawsoni	hk_EEF1A1|dmawsoni	housekeeping	0		1389	7	7	1.0	1	7	0.1429	0	7	0.0
+dmawsoni	Dissostichus mawsoni	hk_GAPDH|dmawsoni	housekeeping	2		1003	9	10	0.9	1	10	0.1	0	10	0.0
+dmawsoni	Dissostichus mawsoni	hk_RPL13A|dmawsoni	housekeeping	0		618	6	6	1.0	1	6	0.1667	0	6	0.0
+nalbiflora	Nibea albiflora	ITPR1|nalbiflora	control_paralog	2	8255	8255	58	58	1.0	1	58	0.0172	0	58	0.0
+nalbiflora	Nibea albiflora	ITPR2|nalbiflora	failed	2	8021	8021	56	56	1.0	1	56	0.0179	0	56	0.0
+nalbiflora	Nibea albiflora	ITPR3|nalbiflora	control_paralog	1	8185	8185	58	58	1.0	1	58	0.0172	0	58	0.0
+nalbiflora	Nibea albiflora	RYR|nalbiflora	control_family	0	14961	14961	115	115	1.0	1	115	0.0087	0	115	0.0
+nalbiflora	Nibea albiflora	hk_EEF1A1|nalbiflora	housekeeping	0		1389	7	7	1.0	1	7	0.1429	0	7	0.0
+nalbiflora	Nibea albiflora	hk_GAPDH|nalbiflora	housekeeping	0		1005	10	10	1.0	1	10	0.1	0	10	0.0
+nalbiflora	Nibea albiflora	hk_RPL13A|nalbiflora	housekeeping	0		618	6	6	1.0	1	6	0.1667	0	6	0.0

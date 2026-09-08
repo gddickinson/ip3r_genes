@@ -2152,3 +2152,106 @@ S12 — expression evidence (SRA junction-spanning reads) for whichever
 paralog or lineage the census leaves in doubt. S10 left it two validated
 loci with committed junction probes and measured RNA-seq availability
 (182 and 19 runs), which is the natural starting panel.
+
+---
+
+## 2026-09-08 — S12: expression evidence
+
+**Task.** S12 — expression evidence (SRA junction-spanning reads + atlases)
+for whichever paralog or lineage the census leaves in doubt. Completed.
+
+### What the census left in doubt, and why it was this
+
+S10 finished by naming the question it could not answer. It had found 7 loci
+where the IP3-receptor gene this project recovers from the genome reaches no
+annotated gene model, in assemblies that deliver the other 375 of 382 whole,
+and it wrote: *"RNA-seq for it does exist and reaching it needs the streaming
+aligner S12 builds; these junctions are handed there rather than
+half-answered here."* So the scope was inherited, not chosen — and it is
+**derived from S10's committed ranking** by four rules in `s12_panel.py`
+rather than hand-listed: every eligible locus above 0.5 annotation loss, plus
+every other family locus in the same genome as an internal control. That
+resolves to exactly S10's 7 failures across 3 species, covering all three
+failure modes, with 5 controls beside them.
+
+### What ran
+
+67 public RNA-seq runs (**536,000,000 reads**, 16 studies, 11 tissues),
+streamed `fastq-dump -X 4000000 | hisat2` against a per-species reference
+holding every recovered family locus, three housekeeping anchors and a
+reversed decoy for each. 2 h 30 m wall clock, 0 failures, resumable per run.
+
+### Results
+
+- **7 of 7 loci are transcribed and spliced.** Each is detected in 13–31 of
+  its runs and 6–9 tissues; 15,263 reads read through their splice junctions.
+- **298 of 314 (94.9 %) of the junctions no annotated model spans are
+  crossed by reads.** At full depth that is the same rate as the junctions
+  the annotation *does* model (95.2 %).
+- **Read coverage falls outside the annotation in the proportion S10
+  measured from the coding footprint** — 7/7 within 0.25, four loci at
+  1.00 vs 1.00. Same quantity, different evidence (aligned reads vs a GFF).
+- ***Nibea albiflora* has no IP3 receptor in any protein database by any
+  route** — ITPR2 unannotated, ITPR1 and ITPR3 annotated *as pseudogenes*
+  at 0.98 and 0.97 of the coding footprint, all three transcribed in 31–32
+  of 32 runs.
+- **The deposit cross-check is still `underpowered`, now with a species
+  that should have answered it.** *D. mawsoni* has 37,166 mRNA records;
+  854 junction probes return 0 spanning hits — and 0 for the annotated RyR
+  control. Median deposit length 547 nt against an 8 kb transcript. The
+  genomic negative control fires (1,791 hits, 0 spans), so the criterion
+  discriminates rather than never firing.
+
+### Three inherited assumptions that did not survive measurement
+
+1. **The validation rule.** Validating a reference by translating it and
+   requiring high identity is the wrong instrument: a frameshift costs the
+   frame from where it sits, so a *correct* reference scores 1.00 with no
+   frameshifts and 0.92 with nine, and any floor across that range rejects
+   correct references. Replaced by **colinear block placement**, which has
+   no tuned threshold — a block may fail to place only if the model's own
+   frameshift count explains it. Reported per locus against its own broken
+   versions: reversed order 1.7 %, wrong strand 0 %.
+2. **The decoy floor does not transfer.** The PIEZO project measured 0 decoy
+   reads across 78 runs. Here: **42 reads in 2 of 469 run × locus
+   comparisons**, both on one decoy, confined to ~64 bp of 8,185 — a
+   pileup, not porous mapping. The prior renders `contradicted`; no
+   detection call moves, because the decoy is a per-run floor and the
+   affected locus clears it in the same run.
+3. **The closed-set risk is measurable and was measured.** PIEZO argued it
+   away in a caveat. Every reference tiled exhaustively with synthetic
+   reads and mapped back: **0 of 12,500 cross-mapped**.
+
+### Instrument notes
+
+- The self-test is 11 constructed checks run before anything is written, and
+  was **mutation-tested on 5 deliberate rule breakages, all 5 caught**. Two
+  slipped through the first attempt: a junction-class lookup by index rather
+  than coordinate (a one-intron test cannot distinguish them — T5 now uses a
+  two-intron minus-strand gene), and an anchor-rule break my harness had
+  applied to the wrong file.
+- `miniprot --trans` is load-bearing for the housekeeping anchors: without
+  it there is no `##STA` line, every model has an empty protein, and the
+  coverage filter rejects them all — which reads as "this genome has no
+  housekeeping genes".
+- Housekeeping bait accessions are **resolved by query against a declared
+  length band**. The first version hard-coded three and got all three wrong,
+  including a 427 aa "GAPDH" (the enzyme is 333) and an accession serving
+  nothing. A wrong bait still aligns and still produces reads.
+- The three anchors are unequal for a measured reason: EEF1A1 has 5–6
+  genomic copies, GAPDH 3, RPL13A 1–3, and copy number orders their
+  detection exactly. The reference holds one model each, so surplus copies
+  multi-map below the MAPQ floor.
+- `write_tsv` is now atomic (temp + rename): stages overlap in practice and
+  a half-written `reference_table.tsv` read by the quantifier is a short
+  table with no error.
+- `expression_stats.json` hashes every `.tsv` in the directory, not the ones
+  a given invocation wrote — the same fix S11 needed.
+
+### Next
+
+S13 — reconciliation and dating. The loss audit it owes the ledger must
+distinguish a real absence from an annotation absence, which S10 and S12
+have now separated for these 7 loci; and "present in the census" differs
+from "present in the proteome" by more than S3 measured, because a gene can
+be annotated as a pseudogene and reach no protein record at all.

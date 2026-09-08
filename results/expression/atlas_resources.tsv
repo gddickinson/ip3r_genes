@@ -1,0 +1,4 @@
+species	organism	taxid	nuccore_total	nuccore_mrna	nuccore_tsa	sra_rnaseq	mrna_fetched	mrna_available	median_record_nt	max_record_nt	fetch_status
+deleginoides	Dissostichus eleginoides	100907	2389	10	0	unavailable	10	10	1316	1630	ok
+dmawsoni	Dissostichus mawsoni	36200	37351	37166	0	unavailable	37166	37166	547	5302	ok
+nalbiflora	Nibea albiflora	240163	800	43	0	unavailable	43	43	1417	6968	ok

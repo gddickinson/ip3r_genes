@@ -1447,3 +1447,68 @@ The controls were the only thing that revealed this; without them the
 report would have said twenty-six out of twenty-six agreed — and would have
 called a dynein motor, a calcium channel and a talin IP3 receptors on the
 same page.
+
+---
+
+## 2026-09-08 — S12: the genes the databases lose are real, and they are switched on
+
+Earlier in this project a genome-by-genome search found IP3-receptor genes
+that the public annotations of those genomes do not contain. Seven of them,
+in three Antarctic and East Asian fish, sat in assemblies whose annotation
+handles the other 375 of 382 family genes perfectly well. The obvious worry
+about a finding like that is that the computer has drawn a gene where there
+isn't one. This session put the question to biology instead of to software:
+**if these are real genes, cells should be making messenger RNA from them.**
+
+Half a billion sequencing reads later, from 67 public experiments across 16
+independent studies and 11 tissues, the answer is that **all seven are real
+genes, and they are being transcribed**.
+
+**The evidence is the joins, not the gene.** A gene is written in the genome
+in pieces, and the cell splices those pieces together to make a message.
+The joins only exist in the message, never in the DNA — so a sequencing read
+that runs straight across a join can only have come from a real transcript.
+Of the 314 joins that no annotated gene model accounts for, **298 (95 %) are
+crossed by reads**. That is the same rate as the joins the annotations *do*
+account for, in the very same genes. Whatever these annotations are doing,
+they are not responding to anything different about the DNA.
+
+The genes are also not obscure. Each is switched on in six to nine different
+tissues — brain, gill, gut, kidney, liver, muscle, ovary, skin, spleen — in
+the amounts you would expect from an ordinary working gene.
+
+**One species has no IP3 receptor on record at all.** *Nibea albiflora*, the
+yellow drum, is a farmed food fish with a chromosome-level genome. Its three
+IP3-receptor genes are all present in its DNA and all three are transcribed
+in essentially every library examined. But one of them is missing from the
+annotation entirely, and the other two are filed as **pseudogenes** — the
+label for a broken relic of a gene, which means the databases serve no
+protein for them. So a biologist searching any protein database for this
+species' IP3 receptors finds nothing, and would reasonably conclude the
+family had been lost. All three genes are there, intact, and working.
+
+**Why nobody noticed.** There is another way to check whether a gene is
+transcribed: look at the sequences researchers have already deposited for
+that species. We tried it, on the species that should have been able to
+answer — 37,166 deposited messenger RNAs for the Antarctic toothfish
+*Dissostichus mawsoni*. It found nothing. Not the missing genes, and not the
+ryanodine receptor either, a closely related gene that this species' own
+annotation does name. The reason is in the lengths: those deposits are short
+fragments, half a kilobase on average, and an IP3 receptor message is more
+than eight kilobases long. The deposits were never capable of showing this.
+That is worth stating plainly, because it is the shape of the whole problem:
+**these genes are absent from the records not because they are absent from
+the animals, but because they are long, and long genes are where automated
+annotation and short-read deposition both fail.**
+
+**On being wrong about a borrowed result.** This method was ported from an
+earlier project on a different gene family, where a control designed to
+measure false signal returned exactly zero, every time. It did not do that
+here. Two libraries produced a small false signal, tightly confined to one
+64-base stretch of one control sequence — real, bounded, and not enough to
+change any conclusion. It would have been easy to write "zero" because zero
+was what the method returned last time. The number is 42, and the report
+says 42. Separately, an assumption that the method's earlier authors had
+argued away in a footnote — that these very similar sibling genes cannot be
+confused for one another — was tested directly here rather than argued, and
+holds: not one of 12,500 test reads landed on the wrong gene.

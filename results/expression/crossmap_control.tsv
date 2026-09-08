@@ -1,0 +1,22 @@
+species	source_seq	role	reads_simulated	aligned	assigned_self	assigned_other	unaligned	below_mapq	worst_other_seq	worst_other_reads	self_rate	cross_rate
+deleginoides	ITPR1|deleginoides	failed	813	813	813	0	0	0		0	1.0	0.0
+deleginoides	ITPR2|deleginoides	failed	798	798	798	0	0	0		0	1.0	0.0
+deleginoides	ITPR3|deleginoides	failed	797	797	797	0	0	0		0	1.0	0.0
+deleginoides	RYR|deleginoides	control_family	1480	1480	1480	0	0	0		0	1.0	0.0
+deleginoides	hk_EEF1A1|deleginoides	housekeeping	135	135	135	0	0	0		0	1.0	0.0
+deleginoides	hk_GAPDH|deleginoides	housekeeping	91	91	91	0	0	0		0	1.0	0.0
+deleginoides	hk_RPL13A|deleginoides	housekeeping	52	52	52	0	0	0		0	1.0	0.0
+dmawsoni	ITPR1|dmawsoni	failed	813	813	813	0	0	0		0	1.0	0.0
+dmawsoni	ITPR2|dmawsoni	failed	797	797	797	0	0	0		0	1.0	0.0
+dmawsoni	ITPR3|dmawsoni	failed	796	796	796	0	0	0		0	1.0	0.0
+dmawsoni	RYR|dmawsoni	control_family	1479	1479	1479	0	0	0		0	1.0	0.0
+dmawsoni	hk_EEF1A1|dmawsoni	housekeeping	129	129	129	0	0	0		0	1.0	0.0
+dmawsoni	hk_GAPDH|dmawsoni	housekeeping	91	91	91	0	0	0		0	1.0	0.0
+dmawsoni	hk_RPL13A|dmawsoni	housekeeping	52	52	52	0	0	0		0	1.0	0.0
+nalbiflora	ITPR1|nalbiflora	control_paralog	816	816	816	0	0	0		0	1.0	0.0
+nalbiflora	ITPR2|nalbiflora	failed	793	793	793	0	0	0		0	1.0	0.0
+nalbiflora	ITPR3|nalbiflora	control_paralog	809	809	809	0	0	0		0	1.0	0.0
+nalbiflora	RYR|nalbiflora	control_family	1487	1487	1487	0	0	0		0	1.0	0.0
+nalbiflora	hk_EEF1A1|nalbiflora	housekeeping	129	129	129	0	0	0		0	1.0	0.0
+nalbiflora	hk_GAPDH|nalbiflora	housekeeping	91	91	91	0	0	0		0	1.0	0.0
+nalbiflora	hk_RPL13A|nalbiflora	housekeeping	52	52	52	0	0	0		0	1.0	0.0

@@ -1,0 +1,13 @@
+species	organism	seq	cell	role	annotation_loss	bins_annotated	bins_unannotated	bins_annotated_with_reads	bins_unannotated_with_reads	covered_annotated	covered_unannotated	frac_coverage_unannotated
+deleginoides	Dissostichus eleginoides	ITPR1|deleginoides	ITPR1	failed	0.537	117	83	116	82	24573	22130	0.4738
+deleginoides	Dissostichus eleginoides	ITPR2|deleginoides	ITPR2	failed	1.0	0	200	0	199	0	68459	1.0
+deleginoides	Dissostichus eleginoides	ITPR3|deleginoides	ITPR3	failed	0.581	69	131	69	131	10188	30551	0.7499
+deleginoides	Dissostichus eleginoides	RYR|deleginoides	RYR	control_family		72	128	65	116	5417	13625	0.7155
+dmawsoni	Dissostichus mawsoni	ITPR1|dmawsoni	ITPR1	failed	1.0	0	200	0	200	0	85358	1.0
+dmawsoni	Dissostichus mawsoni	ITPR2|dmawsoni	ITPR2	failed	0.876	0	200	0	200	0	97609	1.0
+dmawsoni	Dissostichus mawsoni	ITPR3|dmawsoni	ITPR3	failed	0.989	0	200	0	200	0	85596	1.0
+dmawsoni	Dissostichus mawsoni	RYR|dmawsoni	RYR	control_family		57	143	45	119	10103	23118	0.6959
+nalbiflora	Nibea albiflora	ITPR1|nalbiflora	ITPR1	control_paralog	0.02	115	85	115	85	102391	67924	0.3988
+nalbiflora	Nibea albiflora	ITPR2|nalbiflora	ITPR2	failed	1.0	0	200	0	200	0	170157	1.0
+nalbiflora	Nibea albiflora	ITPR3|nalbiflora	ITPR3	control_paralog	0.034	94	106	94	106	82755	89905	0.5207
+nalbiflora	Nibea albiflora	RYR|nalbiflora	RYR	control_family		0	200	0	200	0	99115	1.0
