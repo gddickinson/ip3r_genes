@@ -1512,3 +1512,81 @@ says 42. Separately, an assumption that the method's earlier authors had
 argued away in a footnote — that these very similar sibling genes cannot be
 confused for one another — was tested directly here rather than argued, and
 holds: not one of 12,500 test reads landed on the wrong gene.
+
+---
+
+## 2026-09-08 — Two duplications, two different moments (S13)
+
+Vertebrates have three IP3 receptors where every invertebrate has one. That
+much has been in textbooks for decades. What has never been shown is *when*
+the two duplications that made the trio happened — or even which of the two
+came first. This session placed both.
+
+**They did not happen together.** The first split separated the ancestor of
+ITPR1 from the ancestor of ITPR2 and ITPR3, and it sits on the branch
+leading to all vertebrates — before the lineage that became hagfish and
+lampreys parted from the one that became everything with jaws. That is
+older than about 563 million years, and nothing in this analysis puts an
+upper limit on it. The second split, which separated ITPR2 from ITPR3,
+came later, on the branch leading to jawed vertebrates: somewhere between
+about 462 and 563 million years ago. So the trio was not made in one event.
+There was a two-receptor stage that lasted long enough to be visible in the
+tree.
+
+**The whole answer rests on six genes in two animals**, and this session
+spent most of its effort on whether they can carry it. Hagfish and lamprey
+each have three IP3 receptor genes. The tree pairs them up — one hagfish
+gene with one lamprey gene, three times over — which means all three
+lineages are older than the hagfish/lamprey split itself, roughly 459
+million years. None of the six is a copy of ITPR1, ITPR2 or ITPR3. One pair
+sits immediately beside the ITPR2/ITPR3 group; the other four form a group
+of their own, off to one side. Remove those six genes from the analysis and
+the older duplication slides forward onto the jawed-vertebrate branch. They
+are the evidence, and there is no second copy of it.
+
+So the obvious objection had to be answered: fast-evolving sequences get
+pulled to the base of trees by a well-known artefact, and hagfish and
+lamprey are the textbook case. They are not fast here. Measured against all
+57 vertebrate sequences in the tree, the six sit within four per cent of the
+median — two of them in the slower half. The artefact that would explain
+away this result is not present in these sequences.
+
+**A third ancestral lineage that only cyclostomes still have.** The
+reconstruction says the vertebrate ancestor carried *three* IP3 receptor
+lineages, not two: the one that became ITPR1, the one that became ITPR2 and
+ITPR3, and a third represented today by four hagfish and lamprey genes and
+by nothing at all in any jawed vertebrate. Either a fourth ancient copy was
+lost early on the jawed-vertebrate branch and survives in these two animals,
+or that group is something cyclostomes made themselves. Distinguishing them
+means going looking for it in jawed genomes, which nothing in this project
+has done, because every search bait it owns is labelled ITPR1, ITPR2, ITPR3
+or ryanodine receptor *(pending: S15/S16)*.
+
+**What this does not show.** The three receptors are widely assumed to come
+from the two rounds of whole-genome duplication early in vertebrate history.
+The older split lands exactly where that idea predicts. But the younger one
+does not: if both rounds of duplication happened before hagfish and lampreys
+branched off, ITPR2 and ITPR3 should each have a hagfish and lamprey
+counterpart, and neither does. That leaves two possibilities the data cannot
+yet separate — the ITPR2/ITPR3 duplication really did happen later, or
+cyclostomes lost both copies. Calling the trio a product of whole-genome
+duplication remains a reasonable expectation and not a demonstrated fact
+*(pending: S16)*.
+
+**On counting losses from a tree.** The reconstruction implies that this
+gene has been lost about fifty times across the species examined. It has
+not. Every one of those apparent losses was checked against the genome
+sweep, and all of them are bookkeeping: mostly species whose gene simply was
+not chosen for the alignment, plus a handful of species with no sequenced
+genome in the project at all. Not one is a gene that is actually gone. The
+number to remember is the genome sweep's, not the tree's.
+
+**And one that looked like biology and was not.** Four of the apparent
+losses initially survived the check: ITPR2 and ITPR3 in hagfish and in
+lamprey, where the project's own genome ledger says "absent". Both animals
+have three IP3 receptor genes. They read as absent because the search had no
+hagfish or lamprey sequence to search *with*, so all three of each animal's
+genes were filed under the same name and the other two slots were left
+empty. An absence in a filing cabinet is not an absence in a genome, and the
+analysis now says so explicitly rather than counting four losses that never
+happened.

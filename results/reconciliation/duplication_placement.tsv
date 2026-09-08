@@ -1,0 +1,28 @@
+topology	variant	rank	species_node	paralog_groups	n_gene_leaves	age_young_ma	age_old_ma	gene_node_support	age_source
+ml	with_cyclostome	1	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced	57	563.0	unbounded	100/100	root of the sampled species tree: the duplication is on the vertebrate stem and nothing in this tree bounds it from above
+ml	with_cyclostome	2	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced	53	563.0	unbounded	17.4/54	root of the sampled species tree: the duplication is on the vertebrate stem and nothing in this tree bounds it from above
+ml	with_cyclostome	3	Gnathostomata	ITPR2+ITPR3	32	462.0	563.0	100/100	TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)
+ml	without_cyclostome	1	Gnathostomata	ITPR1+ITPR2+ITPR3	51	462.0	563.0	17.4/54	TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)
+ml	without_cyclostome	2	Gnathostomata	ITPR2+ITPR3	32	462.0	563.0	100/100	TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)
+ml	support_collapsed	1	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced	57	563.0	unbounded	100/100	root of the sampled species tree: the duplication is on the vertebrate stem and nothing in this tree bounds it from above
+ml	support_collapsed	2	Gnathostomata	ITPR2+ITPR3	32	462.0	563.0	100/100	TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)
+H1_12	with_cyclostome	1	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced	57	563.0	unbounded		root of the sampled species tree: the duplication is on the vertebrate stem and nothing in this tree bounds it from above
+H1_12	with_cyclostome	2	Vertebrata	ITPR1+ITPR2+unplaced	38	563.0	unbounded		root of the sampled species tree: the duplication is on the vertebrate stem and nothing in this tree bounds it from above
+H1_12	without_cyclostome	1	Gnathostomata	ITPR1+ITPR2+ITPR3	51	462.0	563.0		TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)
+H1_12	without_cyclostome	2	Gnathostomata	ITPR1+ITPR2	32	462.0	563.0		TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)
+H2_13	with_cyclostome	1	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced	57	563.0	unbounded		root of the sampled species tree: the duplication is on the vertebrate stem and nothing in this tree bounds it from above
+H2_13	with_cyclostome	2	Vertebrata	ITPR1+ITPR3+unplaced	44	563.0	unbounded		root of the sampled species tree: the duplication is on the vertebrate stem and nothing in this tree bounds it from above
+H2_13	without_cyclostome	1	Gnathostomata	ITPR1+ITPR2+ITPR3	51	462.0	563.0		TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)
+H2_13	without_cyclostome	2	Gnathostomata	ITPR1+ITPR3	38	462.0	563.0		TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)
+H3_23	with_cyclostome	1	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced	57	563.0	unbounded		root of the sampled species tree: the duplication is on the vertebrate stem and nothing in this tree bounds it from above
+H3_23	with_cyclostome	2	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced	53	563.0	unbounded		root of the sampled species tree: the duplication is on the vertebrate stem and nothing in this tree bounds it from above
+H3_23	with_cyclostome	3	Gnathostomata	ITPR2+ITPR3	32	462.0	563.0		TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)
+H3_23	without_cyclostome	1	Gnathostomata	ITPR1+ITPR2+ITPR3	51	462.0	563.0		TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)
+H3_23	without_cyclostome	2	Gnathostomata	ITPR2+ITPR3	32	462.0	563.0		TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)
+bnni	with_cyclostome	1	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced	57	563.0	unbounded	100/100	root of the sampled species tree: the duplication is on the vertebrate stem and nothing in this tree bounds it from above
+bnni	with_cyclostome	2	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced	53	563.0	unbounded	17.7/34	root of the sampled species tree: the duplication is on the vertebrate stem and nothing in this tree bounds it from above
+bnni	with_cyclostome	3	Gnathostomata	ITPR2+ITPR3	32	462.0	563.0	100/100	TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)
+bnni	without_cyclostome	1	Gnathostomata	ITPR1+ITPR2+ITPR3	51	462.0	563.0	17.7/34	TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)
+bnni	without_cyclostome	2	Gnathostomata	ITPR2+ITPR3	32	462.0	563.0	100/100	TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)
+bnni	support_collapsed	1	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced	57	563.0	unbounded	100/100	root of the sampled species tree: the duplication is on the vertebrate stem and nothing in this tree bounds it from above
+bnni	support_collapsed	2	Gnathostomata	ITPR2+ITPR3	32	462.0	563.0	100/100	TT5 median 462; B15 crown bounds 420.7-468.4; stem = parent (Vertebrata)

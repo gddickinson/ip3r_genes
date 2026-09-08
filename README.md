@@ -19,8 +19,12 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S3 complete — the census now carries two independent verdicts on
-every protein.** The literature baseline is verified with a citation on every
+**Status: S13 complete — the census is enumerated, aligned, dated and
+audited; 21 of the 32 ledger rows are done.** The most recent result is where the
+two duplications that made ITPR1/2/3 sit on the vertebrate tree (§ *S13*
+below).
+
+The build-up. The literature baseline is verified with a citation on every
 claim ([`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md), 32 pages,
 12 figures), the discovery scorer is benchmarked at **96 % recall / 100 %
 specificity** ([`results/benchmark_controls/`](results/benchmark_controls/)),
@@ -234,6 +238,40 @@ position in the spliced coding sequence. Violet: a junction no annotated
 gene model spans. Blue: one it does. A junction nothing crossed is marked on
 the baseline, so the denominator is in the picture.*
 
+**S13** put both duplications on the vertebrate tree, and they are not on
+the same branch. The split separating **ITPR1 from ITPR2+ITPR3 sits on the
+vertebrate stem** — before hagfish and lampreys parted from the jawed
+vertebrates, older than crown Vertebrata (published estimates 480–615 Ma) —
+while the split separating **ITPR2 from ITPR3 sits on the gnathostome stem**,
+bracketed **462–563 Ma**. So the trio was not made in one event; there was a
+two-receptor stage long enough to be visible. The species tree is an **input,
+not a result** (D15): 31 species, 29 named internal nodes, each with a
+literature age, the spread of published estimates, a stem age and its source,
+validated before use. **The topology turns out to be irrelevant and the taxon
+sampling to be everything** — all five gene trees (the ML tree, the three
+AU-scored sister constraints, the `--bnni` guard) give identical counts, while
+dropping six cyclostome loci moves the older placement forward a whole branch.
+Those six therefore carry the result, so three things were measured rather than
+asserted: the placement **survives collapsing every node below S7's own support
+bar** (the ITPR1 split sits on a 17.4/54 node, and collapsing it merges two
+vertebrate-stem duplications into one carried at 100/100); **minimum-event
+rooting picks a different edge and agrees** on the placement; and the
+long-branch artefact that would explain the result away **is not present** —
+the six tips are 0.96–1.04× the median root-to-tip distance, ranking 18–55 of
+57. The reconstruction also recovers a **third ancestral vertebrate lineage
+that survives only in cyclostomes** and in no jawed vertebrate at all. And the
+loss count is the methodological result again: of **51–53 implied losses, 0
+survive contact with the genomes** — the last four to fall were ITPR2 and ITPR3
+in the two cyclostomes, which read `absent` only because the bait panel has no
+cyclostome bait to fill those cells with (**D45**).
+→ [`results/reconciliation/report.md`](results/reconciliation/report.md)
+
+![Where the duplications sit](results/reconciliation/figures/recon_dated_backbone.png)
+
+*The dated species tree with every duplication drawn on the branch it maps to.
+Ages and their published spreads are read from the committed calibration table,
+placements from the reconciliation; nothing is positioned by eye.*
+
 **S11** asked whether what the census calls an IP3 receptor *folds* like one,
 and whether it can be told from a ryanodine receptor by shape alone. **It
 can: 20 of 20 structures the fold test could call agree with the census, and
@@ -402,7 +440,7 @@ One task per session. Full ledger with dependencies and results in
 | S10 | Annotation-bug molecular validation | ✅ completed 2026-09-08 |
 | S11 | Structures + TM-align vs cryo-EM references | ✅ completed 2026-09-08 |
 | S12 | Expression evidence (SRA junction reads) | ✅ completed 2026-09-08 |
-| S13 | Reconciliation & dating | ⏳ pending |
+| S13 | Reconciliation & dating | ✅ completed 2026-09-08 |
 | S15 | Loss dynamics | ⏳ pending |
 | S16 | Duplication history (2R / 3R, and the RyR parallel) | ⏳ pending |
 | S17 | Constraint & function — the clinical-variant test | ⏳ pending |
@@ -420,6 +458,31 @@ One task per session. Full ledger with dependencies and results in
 ## Findings so far
 
 Plain-language entries per task: [`FINDINGS.md`](FINDINGS.md). Headlines:
+
+**S13 — the three receptors were not made in one event.** The duplication
+that separated ITPR1 from the ancestor of ITPR2 and ITPR3 happened before
+hagfish and lampreys split from the jawed vertebrates — more than about 563
+million years ago. The one that separated ITPR2 from ITPR3 happened later, on
+the jawed-vertebrate branch, between about 462 and 563 million years ago. The
+evidence is six genes in two animals: hagfish and lamprey each carry three IP3
+receptors, the tree pairs them one-to-one across the two species, and one of
+those pairs sits immediately beside the ITPR2/ITPR3 group. Remove them and the
+older date slides forward a whole branch. The obvious objection — that
+fast-evolving sequences get pulled to the base of trees — was measured and does
+not apply here: those six are within four per cent of the median rate for the
+57 vertebrate sequences in the tree.
+→ [`results/reconciliation/report.md`](results/reconciliation/report.md)
+
+**S13 — fifty apparent gene losses, none of them real.** The reconstruction
+implies the receptor has been lost about fifty times across the species
+examined. Checked one at a time against the genome sweep, every one is
+bookkeeping: species whose gene was simply not chosen for the alignment, or
+species with no sequenced genome in the project. The last four to fall looked
+most like biology — hagfish and lamprey each missing two of the three
+receptors — and were an artefact of the search having no hagfish or lamprey
+sequence to search with, so all three of each animal's genes were filed under
+one name. A loss count taken from a tree built on a representative sample is
+not a loss count.
 
 **S20 — the land plants really did lose it, and the search that says so can
 be checked.** Zero IP3 receptors in 384 land-plant reference proteomes and 16

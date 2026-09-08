@@ -1,0 +1,16 @@
+topology	topology_note	variant	n_tips	n_nodes_collapsed	n_duplications	implied_losses	root_species_node	root_event	deepest_paralog_dup_node	deepest_paralog_dup_groups	deepest_paralog_dup_support	n_paralog_duplications	note
+ml	unconstrained ML tree (the reported tree)	with_cyclostome	57	0	14	53	Vertebrata	duplication	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced	100/100	3	
+ml	unconstrained ML tree (the reported tree)	without_cyclostome	51	0	12	51	Gnathostomata	duplication	Gnathostomata	ITPR1+ITPR2+ITPR3	17.4/54	2	
+ml	unconstrained ML tree (the reported tree)	support_collapsed	57	40	15	83	Vertebrata	duplication	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced	100/100	2	
+H1_12	ITPR1+ITPR2 sisters (AU-rejected, p 1.8e-05)	with_cyclostome	57	0	14	53	Vertebrata	duplication	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced		2	
+H1_12	ITPR1+ITPR2 sisters (AU-rejected, p 1.8e-05)	without_cyclostome	51	0	12	51	Gnathostomata	duplication	Gnathostomata	ITPR1+ITPR2+ITPR3		2	
+H1_12	ITPR1+ITPR2 sisters (AU-rejected, p 1.8e-05)	support_collapsed											skipped: tree carries no support labels: nothing to collapse against (a constrained search computes none)
+H2_13	ITPR1+ITPR3 sisters (AU-rejected, p 1.65e-05)	with_cyclostome	57	0	14	53	Vertebrata	duplication	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced		2	
+H2_13	ITPR1+ITPR3 sisters (AU-rejected, p 1.65e-05)	without_cyclostome	51	0	12	51	Gnathostomata	duplication	Gnathostomata	ITPR1+ITPR2+ITPR3		2	
+H2_13	ITPR1+ITPR3 sisters (AU-rejected, p 1.65e-05)	support_collapsed											skipped: tree carries no support labels: nothing to collapse against (a constrained search computes none)
+H3_23	ITPR2+ITPR3 sisters (not rejected, p 0.476)	with_cyclostome	57	0	14	53	Vertebrata	duplication	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced		3	
+H3_23	ITPR2+ITPR3 sisters (not rejected, p 0.476)	without_cyclostome	51	0	12	51	Gnathostomata	duplication	Gnathostomata	ITPR1+ITPR2+ITPR3		2	
+H3_23	ITPR2+ITPR3 sisters (not rejected, p 0.476)	support_collapsed											skipped: tree carries no support labels: nothing to collapse against (a constrained search computes none)
+bnni	the --bnni model-violation guard re-search	with_cyclostome	57	0	14	53	Vertebrata	duplication	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced	100/100	3	
+bnni	the --bnni model-violation guard re-search	without_cyclostome	51	0	12	51	Gnathostomata	duplication	Gnathostomata	ITPR1+ITPR2+ITPR3	17.7/34	2	
+bnni	the --bnni model-violation guard re-search	support_collapsed	57	55	16	102	Vertebrata	duplication	Vertebrata	ITPR1+ITPR2+ITPR3+unplaced	100/100	2	

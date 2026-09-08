@@ -1,0 +1,5 @@
+species	paralog	n_gene_tree_tips	gene_tree_tips	s5_ledger_status	verdict	n_tree_unplaced_tips	n_ledger_itpr_loci	n_spare_loci
+Myxine glutinosa	ITPR2	0		absent	paralog_unassignable	3	3	2
+Myxine glutinosa	ITPR3	0		absent	paralog_unassignable	3	3	2
+Petromyzon marinus	ITPR2	0		absent	paralog_unassignable	3	3	2
+Petromyzon marinus	ITPR3	0		absent	paralog_unassignable	3	3	2

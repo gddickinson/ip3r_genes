@@ -1,0 +1,58 @@
+label	tree_paralog	root_to_tip	vs_median	rank	n_tips	is_cyclostome
+ITPR3_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M6Z266	ITPR3	3.0377	1.074	1	57	
+ITPR3_Latimeria_chalumnae_Coelacanth_H3B932	ITPR3	3.0234	1.069	2	57	
+ITPR3_Nothobranchius_furzeri_Turquoise_killi_A0A8C6KWV8	ITPR3	3.0215	1.068	3	57	
+ITPR3_Hymenochirus_boettgeri_GCA_019447015.1_ITPR3_126480658	ITPR3	2.9902	1.057	4	57	
+ITPR3_Mus_musculus_Mouse_P70227	ITPR3	2.9804	1.053	5	57	
+ITPR3_Rattus_norvegicus_Rat_Q63269	ITPR3	2.9793	1.053	6	57	
+ITPR3_Xenopus_tropicalis_Western_clawed_frog_A0A8J0SYK9	ITPR3	2.9747	1.051	7	57	
+ITPR3_Athene_cunicularia_Burrowing_owl_Speot_A0A663MIF9	ITPR3	2.9712	1.05	8	57	
+ITPR3_Saguinus_oedipus_GCA_031835075.1_ITPR3_43596197	ITPR3	2.9693	1.05	9	57	
+ITPR3_Homo_sapiens_Human_Q14573	ITPR3	2.9682	1.049	10	57	
+vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401S8Q3	ITPR3	2.968	1.049	11	57	
+ITPR3_Sousa_chinensis_GCA_007760645.1_ITPR3_5949234	ITPR3	2.9663	1.049	12	57	
+ITPR3_Pogona_vitticeps_central_bearded_drago_A0A6J0TV85	ITPR3	2.9661	1.048	13	57	
+ITPR3_Sphenodon_punctatus_GCA_003113815.1_ITPR3_3264626	ITPR3	2.966	1.048	14	57	
+ITPR3_Spizella_passerina_GCA_056776345.1_ITPR3_2783550	ITPR3	2.9588	1.046	15	57	
+ITPR3_Copsychus_sechellarum_GCA_054084135.1_ITPR3_2574051	ITPR3	2.9584	1.046	16	57	
+ITPR3_Echinorhinus_cookei_GCA_057876775.1_ITPR3_46076206	ITPR3	2.9571	1.045	17	57	
+vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_86116883	unplaced	2.9564	1.045	18	57	cyclostome
+ITPR3_Gallus_gallus_Chicken_A0A8V1ACE6	ITPR3	2.9521	1.043	19	57	
+ITPR2_Astatotilapia_calliptera_Eastern_river_A0AAX7UHL1	ITPR2	2.9431	1.04	20	57	
+ITPR2_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M9PQQ3	ITPR2	2.9414	1.04	21	57	
+ITPR3_Callorhinchus_milii_Ghost_shark_A0A4W3GWE7	ITPR3	2.9394	1.039	22	57	
+ITPR2_Nibea_albiflora_GCA_014281875.1_ITPR2_12447838	ITPR2	2.9063	1.027	23	57	
+vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401RNU3	ITPR2	2.8476	1.007	24	57	
+vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8C056	unplaced	2.8468	1.006	25	57	cyclostome
+vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_122839381	unplaced	2.8464	1.006	26	57	cyclostome
+ITPR2_Gekko_japonicus_Schlegel_s_Japanese_ge_A0ABM1LG32	ITPR2	2.836	1.002	27	57	
+ITPR2_Rattus_norvegicus_Rat_P29995	ITPR2	2.8316	1.001	28	57	
+ITPR2_Echinorhinus_cookei_GCA_057876775.1_ITPR2_17288896	ITPR2	2.8291	1.0	29	57	
+ITPR2_Mus_musculus_Mouse_Q9Z329	ITPR2	2.8277	0.999	30	57	
+ITPR2_Xenopus_tropicalis_Western_clawed_frog_A0A6I8RGU0	ITPR2	2.825	0.999	31	57	
+vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JQ24	ITPR2	2.8218	0.997	32	57	
+vertebrate_basal_Myxine_glutinosa_GCF_964187855.1_ITPR1_297520938	unplaced	2.8211	0.997	33	57	cyclostome
+ITPR2_Homo_sapiens_Human_Q14571	ITPR2	2.8203	0.997	34	57	
+ITPR2_Gallus_gallus_Chicken_F1P1X4	ITPR2	2.8193	0.997	35	57	
+ITPR2_Strigops_habroptila_Kakapo_A0A672UP22	ITPR2	2.8165	0.996	36	57	
+ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M2BDG0	ITPR1	2.7979	0.989	37	57	
+ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AC58JVG8	ITPR1	2.7979	0.989	37	57	
+ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VNY7	ITPR1	2.7857	0.985	39	57	
+vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0ACM8BRT5	unplaced	2.7719	0.98	40	57	cyclostome
+ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AB32U288	ITPR1	2.7474	0.971	41	57	
+ITPR1_Salarias_fasciatus_Jewelled_blenny_Ble_A0A672IUQ7	ITPR1	2.7472	0.971	42	57	
+vertebrate_basal_Latimeria_chalumnae_GCF_037176945.1_ITPR1_35775795	ITPR1	2.747	0.971	43	57	
+ITPR1_Latimeria_chalumnae_Coelacanth_H3A1P5	ITPR1	2.744	0.97	44	57	
+ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VJN0	ITPR1	2.731	0.965	45	57	
+ITPR1_Somniosus_microcephalus_GCF_052327205.1_ITPR1_147905519	ITPR1	2.7242	0.963	46	57	
+ITPR1_Xenopus_tropicalis_Western_clawed_frog_A0A8J0T3U5	ITPR1	2.7228	0.962	47	57	
+vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JHJ0	ITPR1	2.7218	0.962	48	57	
+ITPR1_Bos_taurus_Bovine_Q9TU34	ITPR1	2.7181	0.961	49	57	
+ITPR1_Mus_musculus_Mouse_P11881	ITPR1	2.7117	0.958	50	57	
+ITPR1_Podarcis_muralis_Wall_lizard_Lacerta_m_A0A670JBK6	ITPR1	2.7108	0.958	51	57	
+ITPR1_Homo_sapiens_Human_Q14643	ITPR1	2.71	0.958	52	57	
+ITPR1_Gallus_gallus_Chicken_A0A8V0ZJT0	ITPR1	2.7096	0.958	53	57	
+vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3IQL0	ITPR1	2.7081	0.957	54	57	
+vertebrate_basal_Petromyzon_marinus_Sea_lamprey_A0AAJ7U4X1	unplaced	2.7076	0.957	55	57	cyclostome
+ITPR1_Apteryx_mantelli_North_Island_brown_ki_A0ABM4F3U0	ITPR1	2.7072	0.957	56	57	
+vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401SQC9	ITPR1	2.6864	0.95	57	57	

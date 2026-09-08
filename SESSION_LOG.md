@@ -2255,3 +2255,90 @@ distinguish a real absence from an annotation absence, which S10 and S12
 have now separated for these 7 loci; and "present in the census" differs
 from "present in the proteome" by more than S3 measured, because a gene can
 be annotated as a pseudogene and reach no protein record at all.
+
+---
+
+## 2026-09-08 — S13: gene-tree / species-tree reconciliation
+
+**Task.** S13, the topmost pending row with its dependency (S7) complete.
+Data root attached, 681.5 GB free. Nothing bulk was downloaded: every input
+was already committed.
+
+### What ran
+
+`scripts/s13_run.py` — ordered stages `species_tree → reconcile → losses →
+cyclostome → stats → figures → report`, self-tests first. Whole task runs in
+about 5 s; the cost here was in the rules, not the compute.
+
+- **`s13_species_tree.py`** — the accepted species tree as an **input**
+  (D15): 31 species, 29 named internal nodes, each with a literature age,
+  the spread of published estimates, a **stem age** and its source.
+  `--check` validates before use.
+- **`s13_reconcile.py`** — 5 topologies (ML, the three AU-scored sister
+  constraints, the `--bnni` re-search) × 3 variants (all tips / cyclostome
+  loci pruned / unsupported nodes collapsed) = 12 reconciliations, 3
+  refused. Plus the minimum-event rooting check over all 112 edges.
+- **`s13_losses.py`** — every species × paralog cell asked of the S5 ledger.
+- **`s13_cyclostome.py`** — the six cyclostome loci joined to S8's flank
+  calls, and the long-branch check.
+- **`s13_test_recon.py`** — 14 groups of constructed negative controls.
+
+### What it found
+
+- **The two duplications are not on the same branch.** ITPR1 vs
+  ITPR2+ITPR3 sits on the **vertebrate stem** (older than crown Vertebrata,
+  published estimates 480–615 Ma, no upper bound this tree can set); ITPR2
+  vs ITPR3 sits on the **gnathostome stem**, bracketed **462–563 Ma**.
+- **The topology is irrelevant and the taxon sampling is everything.** All
+  five gene trees give 14 dup / 53 loss with the cyclostome loci and 12 / 51
+  without — including the two AU-*rejected* sister arrangements. Drop the
+  six cyclostome tips and the older placement falls back to the gnathostome
+  stem.
+- **The placement does not rest on the weak node.** The ITPR1 split sits on
+  a 17.4/54 gene-tree node; collapsing every node below S7's own bar merges
+  two vertebrate-stem duplications into one carried at 100/100 and the
+  placement holds. Minimum-event rooting picks a *different* edge (64 events
+  against the outgroup rooting's 67) and agrees on the placement.
+- **The long-branch objection was measured and does not apply.** The six
+  cyclostome tips are 0.96–1.04× the median root-to-tip distance, ranking
+  18–55 of 57.
+- **0 of 51–53 implied losses survive contact with the genomes.**
+
+### What bit, and what changed because of it
+
+- **The classic LCA duplication rule is only valid on binary trees.** The
+  support-collapsed root is a four-way polytomy mapping Cyclostomata /
+  Gnathostomata / Cyclostomata / Gnathostomata; no child maps to Vertebrata,
+  so the binary rule calls it a *speciation* — the collapse would have been
+  reported as the duplications disappearing. Replaced with the non-binary
+  rule (Vernot et al. 2008). **D44.**
+- **A constrained IQ-TREE search writes no support values**, so the collapse
+  variant dissolved all three constrained topologies into one 134-tip
+  polytomy and reported it as a collapse of 40 nodes. `collapse_unsupported`
+  now refuses a tree with no support labels, and the three cells are
+  recorded as refused with their reason.
+- **The first loss audit reported four corroborated losses and every one was
+  a bait-panel limit.** ITPR2 and ITPR3 read `absent` in both cyclostomes
+  while both genomes carry **three ITPR loci apiece**, all filed in the
+  ITPR1 cell because S5 has no cyclostome-labelled bait. Added the
+  `paralog_unassignable` verdict, a positive test on the genome's spare
+  locus count (S5) and the species' tree-unplaced tips (S7). **D45.**
+- **T11 failed first because my expected loss counts were wrong, not the
+  code.** Two copies in one species duplicate *in that species* (0 losses),
+  and a 1:1 speciation across the root implies 2. The test now carries four
+  hand-derived cases with the derivation in the docstring.
+- Mutation-tested on three deliberate rule breakages, all three caught.
+- `s13_report_results.py` hit 514 lines and was split into
+  `s13_report_results.py` (§5–§6) + `s13_report_audit.py` (§7–§11), with
+  the two matrix helpers moved into `s13_lib.py` so both halves read the
+  matrix the same way.
+
+### Next
+
+S15 — loss dynamics. Its character matrix must come from the genome sweep,
+not from tips of the tree (S13's own loss count is 0 of 51–53 once audited),
+and `paralog_unassignable` is a state it needs: a Dollo count that reads the
+cyclostome cells as losses would score two independent losses per cyclostome
+that never happened. The 43 `tblastn_trace` cells are the ones the brief
+asks S15 to disambiguate by synteny, and S8's consensus caller with its
+committed calibration and null already exists for that.

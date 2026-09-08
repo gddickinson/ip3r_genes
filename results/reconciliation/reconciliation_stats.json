@@ -1,0 +1,60 @@
+{
+  "task": "S13",
+  "written_at": "2026-09-08T14:53:12",
+  "self_test": {
+    "passed": true,
+    "n_groups": 14,
+    "problems": []
+  },
+  "parameters": {
+    "support_bar": {
+      "sh_alrt": 80.0,
+      "ufboot": 95.0,
+      "source": "S7's own 'well supported' bar"
+    },
+    "topologies": {
+      "ml": "unconstrained ML tree (the reported tree)",
+      "H1_12": "ITPR1+ITPR2 sisters (AU-rejected, p 1.8e-05)",
+      "H2_13": "ITPR1+ITPR3 sisters (AU-rejected, p 1.65e-05)",
+      "H3_23": "ITPR2+ITPR3 sisters (not rejected, p 0.476)",
+      "bnni": "the --bnni model-violation guard re-search"
+    },
+    "variants": [
+      "with_cyclostome",
+      "without_cyclostome",
+      "support_collapsed"
+    ],
+    "duplication_rule": "non-binary LCA (Vernot et al. 2008); losses per Zmasek & Eddy 2001",
+    "ledger_status_groups": {
+      "present": [
+        "found_annotated",
+        "found_no_annotation",
+        "found_unannotated"
+      ],
+      "absent": [
+        "absent"
+      ],
+      "remnant": [
+        "tblastn_trace"
+      ],
+      "undecidable": [
+        "assembly_gap",
+        "fragment",
+        "tblastn_trace_ambiguous"
+      ]
+    }
+  },
+  "sha256": {
+    "species_tree.nwk": "9cb0fa6f82dd81985f24691a63c1dcb7e6986ed2a6b60502a4b670f7309d25db",
+    "species_tree_calibrations.tsv": "e96a682801f524df3a68ba02f50b4095a285b575b3711e77d39f0c4aca701d3b",
+    "reconciliation_events.tsv": "6ea5d53339ff329154bdea5fb494c882f09ec10e64f5a5b8050e6f7d33a87801",
+    "duplication_placement.tsv": "f671f6cd83a0908fd18a31ac38b5a9d404696cc1b80cb45bcc54d326791fbd80",
+    "reconciliation_summary.tsv": "701051d06305cb860bd11f0dc4d99165881d067792930bc8251d53fc46cff443",
+    "rooting_check.tsv": "01373711e8b3acd83722b1aff9b01c5ea64bce348c21ad086fde3523f597371d",
+    "paralog_presence.tsv": "1fe3355c7f8d6589f72ba1aa119955b91638e04c905041eb3b1efbf813b608a4",
+    "loss_verdicts.tsv": "caa7259c7b6d8b43afa8006b9dcc54310aed4a9b1494d4ab3d426c351b13016f",
+    "corroborated_losses.tsv": "ca272ebffd6278e1dec05cb175b3279ee20d604522cfae39dd4185f0ea059ba7",
+    "cyclostome_loci.tsv": "383f70df1cb818c13e2ee002ab3e272dfc9463f8ccaa528270446644eb6f1f28",
+    "branch_lengths.tsv": "c141094283e3d7414b6ee128597d181d9087be07a1ce46b01490220a29c6c9cd"
+  }
+}

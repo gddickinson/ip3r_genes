@@ -1,0 +1,16 @@
+paralog	verdict	n_species
+ITPR1	sampled_in_gene_tree	14
+ITPR1	sampling_artefact	11
+ITPR1	no_genome_in_manifest	6
+ITPR2	sampled_in_gene_tree	13
+ITPR2	sampling_artefact	11
+ITPR2	paralog_unassignable	2
+ITPR2	no_genome_in_manifest	5
+ITPR3	sampled_in_gene_tree	19
+ITPR3	sampling_artefact	4
+ITPR3	paralog_unassignable	2
+ITPR3	no_genome_in_manifest	6
+all	sampled_in_gene_tree	46
+all	sampling_artefact	26
+all	paralog_unassignable	4
+all	no_genome_in_manifest	17

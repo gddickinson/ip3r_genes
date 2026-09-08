@@ -1,0 +1,94 @@
+species	paralog	n_gene_tree_tips	gene_tree_tips	s5_ledger_status	verdict	n_tree_unplaced_tips	n_ledger_itpr_loci	n_spare_loci
+Apteryx mantelli	ITPR1	1	ITPR1_Apteryx_mantelli_North_Island_brown_ki_A0ABM4F3U0	found_annotated	sampled_in_gene_tree	0	3	0
+Apteryx mantelli	ITPR2	0		found_annotated	sampling_artefact	0	3	0
+Apteryx mantelli	ITPR3	0		found_annotated	sampling_artefact	0	3	0
+Astatotilapia calliptera	ITPR1	0			no_genome_in_manifest	0		
+Astatotilapia calliptera	ITPR2	1	ITPR2_Astatotilapia_calliptera_Eastern_river_A0AAX7UHL1		sampled_in_gene_tree	0		
+Astatotilapia calliptera	ITPR3	0			no_genome_in_manifest	0		
+Athene cunicularia	ITPR1	0			no_genome_in_manifest	0		
+Athene cunicularia	ITPR2	0			no_genome_in_manifest	0		
+Athene cunicularia	ITPR3	1	ITPR3_Athene_cunicularia_Burrowing_owl_Speot_A0A663MIF9		sampled_in_gene_tree	0		
+Bos taurus	ITPR1	1	ITPR1_Bos_taurus_Bovine_Q9TU34		sampled_in_gene_tree	0		
+Bos taurus	ITPR2	0			no_genome_in_manifest	0		
+Bos taurus	ITPR3	0			no_genome_in_manifest	0		
+Callorhinchus milii	ITPR1	2	vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3IQL0;vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JHJ0	found_annotated	sampled_in_gene_tree	0	3	0
+Callorhinchus milii	ITPR2	1	vertebrate_basal_Callorhinchus_milii_Ghost_shark_A0A4W3JQ24	found_annotated	sampled_in_gene_tree	0	3	0
+Callorhinchus milii	ITPR3	1	ITPR3_Callorhinchus_milii_Ghost_shark_A0A4W3GWE7	found_annotated	sampled_in_gene_tree	0	3	0
+Chanos chanos	ITPR1	2	ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VJN0;ITPR1_Chanos_chanos_Milkfish_Mugil_chanos_A0A6J2VNY7	found_annotated	sampled_in_gene_tree	0	4	1
+Chanos chanos	ITPR2	0		found_annotated	sampling_artefact	0	4	1
+Chanos chanos	ITPR3	0		found_annotated	sampling_artefact	0	4	1
+Chiloscyllium punctatum	ITPR1	1	vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401SQC9	found_annotated	sampled_in_gene_tree	0	3	0
+Chiloscyllium punctatum	ITPR2	1	vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401RNU3	found_annotated	sampled_in_gene_tree	0	3	0
+Chiloscyllium punctatum	ITPR3	1	vertebrate_basal_Chiloscyllium_punctatum_Brownbanded_ba_A0A401S8Q3	found_annotated	sampled_in_gene_tree	0	3	0
+Copsychus sechellarum	ITPR1	0		found_no_annotation	sampling_artefact	0	3	0
+Copsychus sechellarum	ITPR2	0		found_no_annotation	sampling_artefact	0	3	0
+Copsychus sechellarum	ITPR3	1	ITPR3_Copsychus_sechellarum_GCA_054084135.1_ITPR3_2574051	found_no_annotation	sampled_in_gene_tree	0	3	0
+Danio rerio	ITPR1	3	ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M2BDG0;ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AB32U288;ITPR1_Danio_rerio_Zebrafish_Brachydanio_reri_A0AC58JVG8	found_annotated	sampled_in_gene_tree	0	4	1
+Danio rerio	ITPR2	1	ITPR2_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M9PQQ3	found_annotated	sampled_in_gene_tree	0	4	1
+Danio rerio	ITPR3	1	ITPR3_Danio_rerio_Zebrafish_Brachydanio_reri_A0A8M6Z266	found_annotated	sampled_in_gene_tree	0	4	1
+Echinorhinus cookei	ITPR1	0		found_no_annotation	sampling_artefact	0	3	0
+Echinorhinus cookei	ITPR2	1	ITPR2_Echinorhinus_cookei_GCA_057876775.1_ITPR2_17288896	found_no_annotation	sampled_in_gene_tree	0	3	0
+Echinorhinus cookei	ITPR3	1	ITPR3_Echinorhinus_cookei_GCA_057876775.1_ITPR3_46076206	found_no_annotation	sampled_in_gene_tree	0	3	0
+Gallus gallus	ITPR1	1	ITPR1_Gallus_gallus_Chicken_A0A8V0ZJT0	found_annotated	sampled_in_gene_tree	0	3	0
+Gallus gallus	ITPR2	1	ITPR2_Gallus_gallus_Chicken_F1P1X4	found_annotated	sampled_in_gene_tree	0	3	0
+Gallus gallus	ITPR3	1	ITPR3_Gallus_gallus_Chicken_A0A8V1ACE6	found_annotated	sampled_in_gene_tree	0	3	0
+Gekko japonicus	ITPR1	0			no_genome_in_manifest	0		
+Gekko japonicus	ITPR2	1	ITPR2_Gekko_japonicus_Schlegel_s_Japanese_ge_A0ABM1LG32		sampled_in_gene_tree	0		
+Gekko japonicus	ITPR3	0			no_genome_in_manifest	0		
+Homo sapiens	ITPR1	1	ITPR1_Homo_sapiens_Human_Q14643	found_annotated	sampled_in_gene_tree	0	3	0
+Homo sapiens	ITPR2	1	ITPR2_Homo_sapiens_Human_Q14571	found_annotated	sampled_in_gene_tree	0	3	0
+Homo sapiens	ITPR3	1	ITPR3_Homo_sapiens_Human_Q14573	found_annotated	sampled_in_gene_tree	0	3	0
+Hymenochirus boettgeri	ITPR1	0		found_annotated	sampling_artefact	0	3	0
+Hymenochirus boettgeri	ITPR2	0		found_annotated	sampling_artefact	0	3	0
+Hymenochirus boettgeri	ITPR3	1	ITPR3_Hymenochirus_boettgeri_GCA_019447015.1_ITPR3_126480658	found_unannotated	sampled_in_gene_tree	0	3	0
+Latimeria chalumnae	ITPR1	2	ITPR1_Latimeria_chalumnae_Coelacanth_H3A1P5;vertebrate_basal_Latimeria_chalumnae_GCF_037176945.1_ITPR1_35775795	found_annotated	sampled_in_gene_tree	0	3	0
+Latimeria chalumnae	ITPR2	0		found_annotated	sampling_artefact	0	3	0
+Latimeria chalumnae	ITPR3	1	ITPR3_Latimeria_chalumnae_Coelacanth_H3B932	found_annotated	sampled_in_gene_tree	0	3	0
+Mus musculus	ITPR1	1	ITPR1_Mus_musculus_Mouse_P11881	found_annotated	sampled_in_gene_tree	0	3	0
+Mus musculus	ITPR2	1	ITPR2_Mus_musculus_Mouse_Q9Z329	found_annotated	sampled_in_gene_tree	0	3	0
+Mus musculus	ITPR3	1	ITPR3_Mus_musculus_Mouse_P70227	found_annotated	sampled_in_gene_tree	0	3	0
+Myxine glutinosa	ITPR1	0		found_annotated	sampling_artefact	3	3	2
+Myxine glutinosa	ITPR2	0		absent	paralog_unassignable	3	3	2
+Myxine glutinosa	ITPR3	0		absent	paralog_unassignable	3	3	2
+Nibea albiflora	ITPR1	0		found_annotated	sampling_artefact	0	5	2
+Nibea albiflora	ITPR2	1	ITPR2_Nibea_albiflora_GCA_014281875.1_ITPR2_12447838	found_unannotated	sampled_in_gene_tree	0	5	2
+Nibea albiflora	ITPR3	0		found_annotated	sampling_artefact	0	5	2
+Nothobranchius furzeri	ITPR1	0		found_annotated	sampling_artefact	0	4	1
+Nothobranchius furzeri	ITPR2	0		found_annotated	sampling_artefact	0	4	1
+Nothobranchius furzeri	ITPR3	1	ITPR3_Nothobranchius_furzeri_Turquoise_killi_A0A8C6KWV8	found_annotated	sampled_in_gene_tree	0	4	1
+Petromyzon marinus	ITPR1	0		found_annotated	sampling_artefact	3	3	2
+Petromyzon marinus	ITPR2	0		absent	paralog_unassignable	3	3	2
+Petromyzon marinus	ITPR3	0		absent	paralog_unassignable	3	3	2
+Podarcis muralis	ITPR1	1	ITPR1_Podarcis_muralis_Wall_lizard_Lacerta_m_A0A670JBK6		sampled_in_gene_tree	0		
+Podarcis muralis	ITPR2	0			no_genome_in_manifest	0		
+Podarcis muralis	ITPR3	0			no_genome_in_manifest	0		
+Pogona vitticeps	ITPR1	0			no_genome_in_manifest	0		
+Pogona vitticeps	ITPR2	0			no_genome_in_manifest	0		
+Pogona vitticeps	ITPR3	1	ITPR3_Pogona_vitticeps_central_bearded_drago_A0A6J0TV85		sampled_in_gene_tree	0		
+Rattus norvegicus	ITPR1	0			no_genome_in_manifest	0		
+Rattus norvegicus	ITPR2	1	ITPR2_Rattus_norvegicus_Rat_P29995		sampled_in_gene_tree	0		
+Rattus norvegicus	ITPR3	1	ITPR3_Rattus_norvegicus_Rat_Q63269		sampled_in_gene_tree	0		
+Saguinus oedipus	ITPR1	0		found_unannotated	sampling_artefact	0	3	0
+Saguinus oedipus	ITPR2	0		found_unannotated	sampling_artefact	0	3	0
+Saguinus oedipus	ITPR3	1	ITPR3_Saguinus_oedipus_GCA_031835075.1_ITPR3_43596197	found_unannotated	sampled_in_gene_tree	0	3	0
+Salarias fasciatus	ITPR1	1	ITPR1_Salarias_fasciatus_Jewelled_blenny_Ble_A0A672IUQ7		sampled_in_gene_tree	0		
+Salarias fasciatus	ITPR2	0			no_genome_in_manifest	0		
+Salarias fasciatus	ITPR3	0			no_genome_in_manifest	0		
+Somniosus microcephalus	ITPR1	1	ITPR1_Somniosus_microcephalus_GCF_052327205.1_ITPR1_147905519	found_annotated	sampled_in_gene_tree	0	3	0
+Somniosus microcephalus	ITPR2	0		found_annotated	sampling_artefact	0	3	0
+Somniosus microcephalus	ITPR3	0		found_annotated	sampling_artefact	0	3	0
+Sousa chinensis	ITPR1	0		found_no_annotation	sampling_artefact	0	3	0
+Sousa chinensis	ITPR2	0		found_no_annotation	sampling_artefact	0	3	0
+Sousa chinensis	ITPR3	1	ITPR3_Sousa_chinensis_GCA_007760645.1_ITPR3_5949234	found_no_annotation	sampled_in_gene_tree	0	3	0
+Sphenodon punctatus	ITPR1	0		found_no_annotation	sampling_artefact	0	3	0
+Sphenodon punctatus	ITPR2	0		found_no_annotation	sampling_artefact	0	3	0
+Sphenodon punctatus	ITPR3	1	ITPR3_Sphenodon_punctatus_GCA_003113815.1_ITPR3_3264626	found_no_annotation	sampled_in_gene_tree	0	3	0
+Spizella passerina	ITPR1	0		found_no_annotation	sampling_artefact	0	3	0
+Spizella passerina	ITPR2	0		found_no_annotation	sampling_artefact	0	3	0
+Spizella passerina	ITPR3	1	ITPR3_Spizella_passerina_GCA_056776345.1_ITPR3_2783550	found_no_annotation	sampled_in_gene_tree	0	3	0
+Strigops habroptila	ITPR1	0			no_genome_in_manifest	0		
+Strigops habroptila	ITPR2	1	ITPR2_Strigops_habroptila_Kakapo_A0A672UP22		sampled_in_gene_tree	0		
+Strigops habroptila	ITPR3	0			no_genome_in_manifest	0		
+Xenopus tropicalis	ITPR1	1	ITPR1_Xenopus_tropicalis_Western_clawed_frog_A0A8J0T3U5	found_annotated	sampled_in_gene_tree	0	3	0
+Xenopus tropicalis	ITPR2	1	ITPR2_Xenopus_tropicalis_Western_clawed_frog_A0A6I8RGU0	found_annotated	sampled_in_gene_tree	0	3	0
+Xenopus tropicalis	ITPR3	1	ITPR3_Xenopus_tropicalis_Western_clawed_frog_A0A8J0SYK9	found_annotated	sampled_in_gene_tree	0	3	0
