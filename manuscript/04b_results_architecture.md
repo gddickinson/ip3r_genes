@@ -8,13 +8,14 @@ was built on, for every locus in the 189 assemblies contiguous enough to
 carry the gene — 1,378 genes, 112,254 junctions.
 
 **The instrument is corroborated before it is used.** 99.89 % of those
-112,254 junctions read as a spliceable pair off the genome itself (98.96 %
-canonical GT–AG, 0.92 % minor), which the alignment score knows nothing
-about. And across 164 genomes with an independent annotation, 177,710 of
-188,146 annotated coding edges (94.5 %) fall exactly on a boundary the
-alignment placed — higher for RefSeq annotations (94.9 %) than for
-submitter-deposited ones (91.1 %), and the whole-scope form of a check the
-annotation validation below could make on two loci (Extended Data Fig. 9).
+112,254 junctions read as a spliceable pair off the genome itself — 98.96 %
+canonical GT–AG and 1,035 minor sites — which the alignment score knows
+nothing about. And across 164 genomes carrying an independent annotation,
+177,710 of 188,146 annotated coding edges (94.5 %) fall exactly on a boundary
+the alignment placed, more often for RefSeq annotations (94.9 %) than for
+submitter-deposited ones (91.1 %) (Extended Data Fig. 9). That is the
+whole-scope form of a check the two validated annotation failures below can
+each make only on themselves.
 
 **The exon count is conserved and the genomic span is not.** All three
 paralogues are 57–58 coding exon genes carrying 8.0–8.3 kb of coding
@@ -51,5 +52,5 @@ receptor share a **median of one intron position, in 0 of 188, 0 of 184 and
 0 of 183 genomes at p < 0.05**. The two families share a fold, a pore and
 four Pfam signatures, and their exon structures have no ancestry in common.
 Whatever the domain architecture they share means, it was not inherited as a
-gene — which is the strongest form the paper's central control can take, and
-it comes from a character that no alignment of the proteins can see.
+gene. The control that every search in this paper leans on is here made by a
+character no alignment of the proteins can see.

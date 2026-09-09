@@ -247,8 +247,13 @@ C243	R5	ITPR2 by 0.0445	0.0445	0.0445	ok		results/ligand_site/module_contrast.ts
 C244	R5	ITPR3 by 0.0558	0.0558	0.0558	ok		results/ligand_site/module_contrast.tsv	cell
 C245	R5	the worst of the three reversed q values is 1.5e-41	1.53085e-41	1.53085e-41	ok		results/ligand_site/module_contrast.tsv	cell
 C246	R5	3,527 eukaryotic reference proteomes were swept for PI-PLC	3527	3527	ok		results/ligand_site/plc_repertoire.tsv	count
+C246b	R5	763 of them are the vertebrate set	763	763	ok		results/ligand_site/plc_repertoire.tsv	count
+C246c	R5	760 of those 763 carry a PI-PLC - the search's positive control	760	760	ok		results/ligand_site/pathway_cooccurrence.tsv	cell
 C247	R5	64 of them carry an ITPR and no PI-PLC	64	64	ok		results/ligand_site/pathway_cooccurrence.tsv	sum
 C248	R5	no vertebrate proteome does - the search's positive control	0	0	ok		results/ligand_site/pathway_cooccurrence.tsv	cell
+C248b	R5	pooled, the PLC-absent ligand core looks relaxed (p = 9.7e-6)	9.69475e-06	9.69475e-06	ok		results/ligand_site/deep_lineage_test.tsv	cell
+C248c	R5	on 36 PLC-absent records	36	36	ok		results/ligand_site/deep_lineage_test.tsv	cell
+C248d	R5	against 450 that carry one	450	450	ok		results/ligand_site/deep_lineage_test.tsv	cell
 C249	R5	PLC-absent records sit at a median pore identity of 0.358	0.3582	0.3582	ok		results/ligand_site/deep_lineage_covariates.tsv	cell
 C250	R5	against 0.589 for the rest	0.5886	0.5886	ok		results/ligand_site/deep_lineage_covariates.tsv	cell
 C251	R5	all 36 PLC-absent records matched on divergence	36	36	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell

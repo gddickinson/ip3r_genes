@@ -11,7 +11,7 @@ check.
 | Every manuscript figure is the figure its analysis committed | `s14_figures.py` copies, never re-plots; files not in the manifest are deleted on every build | 7 main + 16 Extended Data + 6 Supplementary, 140 files, 0 missing |
 | Every figure has a legend, every legend a figure, and panel letters match panel files | `s24_audit.py`, run on every S24 build | 23 main and Extended Data figures audited, 0 mismatches |
 | Every Extended Data figure is cited, and in order of first mention | `s24_audit.citation_order()`, run on every S24 build against the stitched body | all 16 cited; first mentions run 1 → 16 → `figure_citation_order.tsv` |
-| Every load-bearing number matches its source table | `s14_claims.py`, 271 declared claims re-read from the committed tables | 271/271 pass → `claims_check.tsv` |
+| Every load-bearing number matches its source table | `s14_claims.py`, 276 declared claims re-read from the committed tables | 276/276 pass → `claims_check.tsv` |
 | The text and the bibliography cannot drift | citations are stable keys resolved against `results/s0_baseline/references.tsv` at build time; a cited key with no row is a build error | 29 references, all resolved |
 | Every deposited file has a checksum | `s14_deposit.py` | one row per file with size and SHA-256, 1,936 files and 262.5 MB of committed results → `deposit_manifest.tsv` (the file count moves with each build, which also deposits its own outputs) |
 | Every excluded bulk class has a regeneration command | `s14_lib.BULK_EXCLUSIONS`; each command was run to produce the data it regenerates | 9 classes → `deposit_notes.md` |

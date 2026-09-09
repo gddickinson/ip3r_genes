@@ -131,7 +131,31 @@ def run(verbose: bool = False) -> int:
     print(f"[s14 claims] {len(rows) - n_fail}/{len(rows)} load-bearing numbers "
           f"re-verified against the committed tables "
           f"-> manuscript/claims_check.tsv")
+    n_fail += _checklist_total_matches(len(rows))
     return 1 if n_fail else 0
+
+
+def _checklist_total_matches(total: int) -> int:
+    """The reviewer checklist is hand-written; hold its headline count to
+    the ledger's.
+
+    Every other number in this package is generated. This one is typed, and
+    at S14c it was four editions out of date -- it claimed 175 declared
+    claims against a ledger of 180, which is exactly the kind of drift the
+    ledger exists to prevent everywhere else. So the one number that says how
+    many claims there are is itself checked.
+    """
+    path = lib.MS / "reviewer_checklist.md"
+    if not path.exists():
+        return 0
+    text = path.read_text(encoding="utf-8")
+    if f"{total} declared claims" in text and f"{total}/{total} pass" in text:
+        return 0
+    print(f"  [FAIL] reviewer_checklist.md does not say "
+          f"'{total} declared claims' and '{total}/{total} pass' — the "
+          f"hand-written self-audit has drifted from the ledger",
+          file=sys.stderr)
+    return 1
 
 
 if __name__ == "__main__":

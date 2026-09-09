@@ -77,7 +77,7 @@ q = 2 × 10⁻²⁸), and level in *ITPR2*** (−0.0005, q = 0.13). That result
 depends entirely on one boundary. Leave the 50-residue luminal loop inside
 PF00520, which is how InterPro draws the domain and therefore how the
 comparison would be made by default, and **all three paralogues flip**: the
-ligand core wins by five identity points at q < 10⁻³⁷ in every one. Neither
+ligand core wins by four to six identity points at q < 10⁻³⁷ in every one. Neither
 answer is wrong about its own module; they are answers about different
 modules, and any version of this comparison that does not declare where the
 pore stops is not interpretable.
@@ -85,13 +85,16 @@ pore stops is not interpretable.
 **Losing the enzyme that makes the ligand does not relax the site that binds
 it.** The lineages with a reduced upstream pathway were derived rather than
 read: phospholipase C profiles for both halves of the catalytic barrel were
-swept over all 3,527 eukaryotic reference proteomes, and **64 carry an IP₃
-receptor and no phosphoinositide-specific phospholipase C** — concentrated
+swept over every eukaryotic reference proteome in the scope — the 763
+vertebrate and 2,764 other eukaryotic sets, 3,527 in all, the prokaryotes
+being irrelevant to the question — and **64 carry an IP₃ receptor and no
+phosphoinositide-specific phospholipase C** — concentrated
 in the oomycetes and the early-diverging fungi, every one of them holding a
 full-length receptor, in a gene set complete enough to have held the enzyme.
-Pooled, their ligand core looks relaxed (p = 10⁻⁵), and that is a clade
-artefact: they sit at a median pore identity of 0.358 against 0.589 for the
-rest, so the comparison is largely distant against near. Matched on
+Pooled over 36 against 450 records their ligand core looks relaxed
+(p = 9.7 × 10⁻⁶), and that is a clade artefact: they sit at a median pore
+identity of 0.358 against 0.589 for the rest, so the comparison is largely
+distant against near. Matched on
 divergence — each record scored against phospholipase-carrying records
 within 0.03 pore identity of itself, all 36 matched — **the effect is gone**:
 median within-pair difference −0.0064 (95 % CI −0.016 to +0.015), 19 tips
