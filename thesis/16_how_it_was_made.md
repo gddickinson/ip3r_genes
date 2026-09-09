@@ -207,7 +207,7 @@ separation**.
 
 Chapter 14 sets out the rules in full. What is worth saying here is that this
 is where the agent's own reasoning is most visible, and it is visible because
-it was written down at the time. **83 numbered decisions** are recorded in the
+it was written down at the time. **84 numbered decisions** are recorded in the
 roadmap, each with the incident that produced it. Several changed an answer.
 An attribution margin inherited from a sister project was measured and
 overturned, because it came from a family whose paralogues are half as similar

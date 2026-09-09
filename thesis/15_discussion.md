@@ -7,41 +7,192 @@ with scattered occurrences elsewhere, three vertebrate paralogues of
 unresolved relationship, and a well-studied protein whose gene had never been
 counted.
 
-It is now a family with a measured range. It is present across the metazoa, in
-several protist lineages, in the green algae and in the early-diverging fungi.
-It is absent from land plants, from the yeasts and moulds, from
-apicomplexans, microsporidia, red algae, diatoms, tapeworms and every archaeal
-and bacterial proteome swept. Each of those absences is a claim about a
-declared space, and each of the 35 clade-level ones has been taken to the
-genome in assemblies where a measured positive control recovers a comparably
-long, deeply conserved gene.
+Six things are now measured that were not. Each is stated below with what it
+changes, because a census is only worth the questions it makes askable, and
+several of these results bear directly on literatures that have been arguing
+without the relevant numbers.
 
-The shape of that distribution is a family that is ancestrally eukaryotic and
-has been lost repeatedly and independently, and the losses have a pattern: the
-family is present in the early-diverging lineage of both green plants and
-fungi and gone from the derived one in each.
+### The family now has a measured range, and every absence names the space it was measured in
 
-The three vertebrate paralogues have a history. ITPR2 and ITPR3 are sisters,
-with both alternatives outside the confidence set of topologies. The split
-that separated ITPR1 from the other two sits on the vertebrate stem and the
-split between them on the gnathostome stem, so the two duplications are not on
-the same branch and ITPR1 is the earlier-diverging copy. The neighbourhood
-agrees that the three blocks are paralogous and that the surviving links run
-through ITPR1, with one of the two dated to the vertebrate radiation and the
-other far older. The teleost genome duplication doubled ITPR1 and only ITPR1,
-in 97 % of teleost genomes, while doubling all three ryanodine receptors in
-the same genomes.
+The receptor is present across the metazoa, in several protist lineages, in
+the green algae and in the early-diverging fungi. It is absent from land
+plants, from the yeasts and moulds, from apicomplexans, microsporidia, red
+algae, diatoms, tapeworms and every archaeal and bacterial proteome swept.
+Each of those absences is a claim about a declared space, and each of the 35
+clade-level ones has been taken to the genome in assemblies where a measured
+positive control recovers a comparably long, deeply conserved gene.
 
-They also have an architecture. Each has fifty-seven to fifty-eight coding
-exons, of which 46 to 49 positions are shared between any two paralogues in
-every genome carrying both, which is an enrichment of nearly two orders of
-magnitude over a null drawn from the alignment itself. The ryanodine
-receptors, which carry every diagnostic domain of the family, share one. What
-differs between the paralogues is intron length, by a factor of four.
+**This changes the status of the family's distribution from an impression to a
+measurement.** The receptor's occurrence outside the animals has been reported
+from whichever genomes were available when each survey was written, and the
+resulting picture is a list of sightings rather than a range [R107, R108,
+R35, R36]. A sighting list cannot support an absence, because the absence of a
+report and the report of an absence look identical in it. What is different
+here is the denominator: 7,691 reference proteomes and 194 non-vertebrate
+genomes, with a control in every genome that carries the claim.
 
-And they have not been lost. Across 927 genome by paralogue cells in 309
-vertebrate genomes, none reaches the state this project defines as an absence,
-and parsimony places no loss anywhere on the tree.
+**The land-plant absence answers a question that has been open in the plant
+literature for two decades.** Plant cells release calcium in response to
+IP₃ in physiological assays, and no plant receptor gene has ever been
+identified, so the standing review of the subject asks in its title whether
+the receptor is real [R196]. This work gives the genomic half of that answer
+in the strong form: land plants do not have the gene, and the green algae they
+descend from do [R197, R202]. That relocates the question rather than closing
+it. The physiology still needs a carrier, and the plant calcium toolkit is
+built from channel families that animals use differently or not at all [R198,
+R199], so the useful next experiment is about what performs the function in a
+lineage that demonstrably lost the receptor.
+
+**The absences in the reduced parasite genomes are the least surprising and
+the most useful as controls.** Microsporidia and apicomplexans have undergone
+severe genome reduction [R201], and the tapeworms have lost gene families
+across their entire biology as an adaptation to parasitism [R200]. A method
+that failed to find the receptor in those lineages when it is there would show
+the same pattern, which is why each of those claims is carried by a positive
+control drawn from the same clade rather than by the search returning nothing.
+The apicomplexan calcium literature has had to work around exactly this
+uncertainty [R36].
+
+**A measured range turns the receptor into an instrument for other questions.**
+Co-occurrence across genomes is one of the oldest ways of assigning function
+without an experiment [R211], and it requires a range on both sides of the
+comparison. Chapter 12 uses this one: the receptor's distribution is compared
+against the distribution of the enzyme that makes its ligand, across the same
+7,691 proteomes, and the comparison is only possible because both were swept
+rather than recalled.
+
+### The distribution has a shape, and the shape is repeated independent loss
+
+The family is present in the early-diverging lineage of both green plants and
+fungi and gone from the derived one in each. Combined with its presence across
+the metazoa and in several protist groups, that makes it ancestrally
+eukaryotic and lost repeatedly rather than invented more than once.
+
+**Loss is the expected fate of a gene family and is still the harder thing to
+demonstrate.** Gene loss is now understood as an ordinary evolutionary
+mechanism rather than as degradation [R193], but a loss claim needs a
+denominator and a control, which is what most reports of a missing channel
+lack. The pattern here is worth stating because it is convergent: the same
+receptor is retained by the chlorophyte algae and absent from land plants
+[R197, R202], and retained by the early-diverging fungi and absent from the
+Dikarya [R212]. Two kingdoms lost the same signalling component on the two
+branches where each made its largest change in cell biology, and calcium
+signalling in both is now carried by other machinery [R198].
+
+That is a comparison a physiologist can act on. It identifies the pairs of
+lineages between which the substitution happened, and it names assemblies on
+both sides of each pair.
+
+### The three vertebrate paralogues now have a dated order of duplication
+
+ITPR2 and ITPR3 are sisters, with both alternatives outside the confidence set
+of topologies. The split that separated ITPR1 from the other two sits on the
+vertebrate stem and the split between them on the gnathostome stem, so the two
+duplications are not on the same branch and ITPR1 is the earlier-diverging
+copy. The neighbourhood agrees that the three blocks are paralogous and that
+the surviving links run through ITPR1, with one of the two dated to the
+vertebrate radiation and the other far older.
+
+**The placement matters because it puts this family on the two branches the
+genome-scale reconstructions assign to the two vertebrate duplications.**
+Reconstructions of the proto-vertebrate, proto-cyclostome and proto-gnathostome
+genomes place the first round before the cyclostome and gnathostome split and
+the second after it [R203], which is the arrangement this family's two splits
+recover from an independent gene tree and its own neighbourhood evidence
+[R180, R182, R183]. A family whose duplication history matches the
+genome-scale account needs no lineage-specific explanation, and one that
+did not would have been a problem for either the family or the account.
+
+**It also changes how the functional literature should be read.** The three
+receptors are usually discussed as three coequal subtypes with different
+regulation, distribution and physiology [R33, R34, R101]. The tree says they
+are not symmetric: ITPR2 and ITPR3 are a younger pair and ITPR1 is the
+outgroup to both. A functional difference shared by ITPR2 and ITPR3 and absent
+from ITPR1 is therefore the cheaper hypothesis, because it needs one change on
+one branch rather than two.
+
+### The teleost genome duplication kept one paralogue doubled and discarded the other two
+
+The teleost genome duplication doubled ITPR1 and only ITPR1, in 97 % of
+teleost genomes, while doubling all three ryanodine receptors in the same
+genomes.
+
+**Which duplicate copies survive is one of the few things about whole-genome
+duplication that is predictable, and this result fits the prediction and
+sharpens it.** Retention after a genome duplication is biased towards
+dosage-sensitive genes, whose products work in complexes where the ratio of
+partners matters [R204], and the genes that stay duplicated are a small and
+non-random remainder of an otherwise rapid return to single copy [R205,
+R181]. The receptor is a homotetramer that also forms heterotetramers, so it
+is a dosage-sensitive gene by that argument, and the interesting part of the
+result is not that a copy was retained but that only one paralogue's was.
+The ryanodine receptors in the same genomes, under the same duplication and
+the same subsequent loss, kept all three.
+
+**The same paralogue is dosage-sensitive in humans.** Ohnologues from the
+vertebrate duplications are over-represented among the genes whose copy-number
+changes cause disease [R213], and ITPR1 is one of them: heterozygous deletion
+of ITPR1 causes spinocerebellar ataxia in humans [R38, R118, R119] and the
+gene is among the most constrained in the human population record [R210].
+A copy kept doubled for 300 million years in one clade and intolerant of
+hemizygosity in another is the same statement about dosage made twice.
+
+### The gene has one architecture that is conserved and one that is not
+
+Each paralogue has fifty-seven to fifty-eight coding exons, of which 46 to 49
+positions are shared between any two paralogues in every genome carrying both,
+which is an enrichment of nearly two orders of magnitude over a null drawn
+from the alignment itself. The ryanodine receptors, which carry every
+diagnostic domain of the family, share one. What differs between the
+paralogues is intron length, by a factor of four.
+
+**Shared intron positions are among the most durable characters a gene has**,
+conserved across kingdoms and lost or gained at rates low enough to be
+informative about deep relationships [R206, R207]. Reporting 46 to 49 shared
+positions therefore says something the sequence alignment does not: the three
+paralogues did not merely diverge from a common protein, they inherited a
+common gene, intron by intron, and have kept the boundaries through 500
+million years of sequence divergence.
+
+**The ryanodine receptor control is what makes that a statement about
+descent.** Two proteins with the same domain content and the same fold could
+share intron positions because the splicing machinery prefers the same places
+in that kind of sequence, and the way to test it is to ask the same question
+of a family with the same domains and a separate origin. One shared position
+against 46 to 49 is the answer, and it is the difference between an
+observation about splicing and an observation about ancestry.
+
+**The four-fold difference in intron length is the other half of the result,
+and it is a live question rather than a settled one.** Intron length is under
+selection, with shorter introns in highly expressed genes [R208], although the
+energetic explanation usually offered for that has itself been contested
+[R209]. Three paralogues that agree on every coding boundary and disagree
+four-fold on the DNA between them are a controlled comparison for whatever
+sets intron length, because everything a comparison of unrelated genes would
+have to control for is already matched.
+
+### No vertebrate genome in the scope has lost the gene
+
+Across 927 genome by paralogue cells in 309 vertebrate genomes, none reaches
+the state this project defines as an absence, and parsimony places no loss
+anywhere on the tree.
+
+**A zero is the least interesting result to report and the most demanding to
+defend**, which is why §15.3 is about the defence rather than the number. What
+makes it worth reporting at all is the contrast with the expectation. Gene
+loss is common enough to be a normal evolutionary mechanism [R193], and this
+family has demonstrably used it repeatedly outside the vertebrates, so a clade
+in which none of three paralogues has been lost in any of 309 genomes is a
+statement about that clade rather than about the family's general behaviour.
+
+**Every paralogue has a loss-of-function phenotype, which is the mechanism the
+retention result points at.** Deleting ITPR1 in mice produces ataxia and
+seizures [R114], the human heterozygous deletion is a recognised ataxia
+[R38, R118], loss of ITPR2 function abolishes sweat secretion in humans and
+mice [R45] and ITPR3 variants cause a peripheral neuropathy [R46]. Retention
+across a whole vertebrate clade, an ohnologue kept doubled in the teleosts,
+and dosage intolerance in humans are three independent observations pointing
+at the same conclusion, and none of them establishes it on its own.
 
 ## 15.2 Five independent measurements put ITPR1 on the same side
 
@@ -204,7 +355,7 @@ detect. Scored as classifiers of an outcome measured on the finished model,
 the sister-family rule has a sensitivity of zero on seven runs including all
 three that drifted, while the off-family share separates them perfectly.
 
-**A reference added without an audit is worse than no reference.** Nine of 58
+**A reference added without an audit is worse than no reference.** Nine of 76
 identifiers written from memory resolved to entirely different papers, each of
 which would have entered a bibliography looking completely normal.
 

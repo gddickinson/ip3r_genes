@@ -47,8 +47,8 @@ evolution) missing from it entirely and integrating them changed the Results
 structure.
 
 **The paper is not the whole of the work, and the long form is now written.**
-[`thesis/`](thesis/README.md) is **64,377 words across 16 chapters and 5
-appendices, 103 figures, 80 references, 185 typeset pages**, built by `python
+[`thesis/`](thesis/README.md) is **74,184 words across 16 chapters and 5
+appendices, 103 figures, 111 references, 194 typeset pages**, built by `python
 scripts/s25_assemble.py` in nine stages. It carries what the paper had to
 drop: why each instrument is built the way it is, what was measured and
 abandoned, and the **437 constructed negative controls** as a body of work
@@ -555,8 +555,8 @@ One task per session. Full ledger with dependencies and results in
 
 Plain-language entries per task: [`FINDINGS.md`](FINDINGS.md). Headlines:
 
-**S25 — nine of 58 new citations were not the papers they claimed to be.**
-Writing the long form needed 58 references the paper did not: the tools,
+**S25 — nine of 76 new citations were not the papers they claimed to be.**
+Writing the long form needed 76 references the paper did not: the tools,
 models and statistical procedures a document has to name when it explains
 *why* a threshold is the number it is. Nine of those identifiers, written from
 memory, resolved to entirely different papers — a citation for a

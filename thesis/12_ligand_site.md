@@ -42,12 +42,17 @@ written.
 ![](figures/supp_labelled_positions.png)
 
 **{fig:supp_labelled_positions}.** The two modules at residue resolution
-across all three paralogues, with every pathogenic position's residue printed.
-A residue-level panel exists so that a reader can check the claim, and every
-letter in it has been through the join guard described in Chapter 14: each
-variant's reference amino acid must be the residue its own paralogue's
-per-residue table holds there, and each aligned partner the residue the other
-paralogue's table holds.
+across all three paralogues, with every pathogenic position's residue
+printed. A residue-level panel exists so that a reader can check the claim,
+and every letter in it has been through the join guard described in Chapter
+14: each variant's reference amino acid must be the residue its own
+paralogue's per-residue table holds there, and each aligned partner the
+residue the other paralogue's table holds. The importance of a residue-level
+panel is that it converts the chapter's module definitions from an assertion
+into something a reader can audit position by position. Both modules are
+defined here by measurement rather than taken from a domain database, so
+printing the residues is what lets somebody disagree with a boundary and see
+exactly which positions the disagreement would move.
 
 ## 12.3 The site is measured as a distance to the ligand, not as a contact label
 
@@ -114,7 +119,13 @@ wins in two and ties in the third.
 **{fig:s22_modules}.** The core against the pore under both pore definitions
 on one axis with zero marked, because the answer reverses between them and a
 figure showing only the primary would assert the choice instead of showing
-what it costs.
+what it costs. This figure is the chapter's central result and its principal
+caveat in one panel. The pore is more conserved than the ligand core, which
+is the opposite of what a ligand-gated channel invites one to expect, and
+the comparison reverses in all three paralogues when fifty residues of
+luminal loop are left inside the pore. Drawing both definitions with zero
+marked shows what the boundary choice costs instead of hiding it in a
+methods sentence.
 
 Neither answer is wrong about its own module. They are answers about different
 modules, and the difference between them is one boundary that a comparison
@@ -145,9 +156,14 @@ particular residues.
 
 ![](figures/s22_shells.png)
 
-**{fig:s22_shells}.** Constraint against distance from the ligand, drawn as a
-scatter rather than as a bar of shells, because the claim is the absence of a
-step at the contact radius and four bars cannot show an absence.
+**{fig:s22_shells}.** Constraint against distance from the ligand, drawn as
+a scatter rather than as a bar of shells, because the claim is the absence
+of a step at the contact radius and four bars cannot show an absence. The
+importance of this figure is the absence it shows. If the constrained unit
+were the contact set, constraint would step down beyond the contact radius,
+and it does not: it declines smoothly across the pocket. That is what moves
+the claim from ten residues that touch the ligand to a pocket about 15 Å
+across, and it is a claim only a continuous distance axis can support.
 
 Every shell out to 15 Å sits above the whole-protein mean, and the step a
 contact-driven model predicts at the contact radius is not there. The gradient
@@ -167,7 +183,13 @@ pocket.
 
 ![](figures/s22_omega.png)
 
-**{fig:s22_omega}.** Per-site rates by module and by shell.
+**{fig:s22_omega}.** Per-site rates by module and by shell. The importance
+of this figure is that it asks the same question with a different quantity.
+A column's dispersion across orthologues and a site's substitution rate on a
+tree are both called constraint and are not the same measurement, so a
+result that appears on one axis and not the other is bounded rather than
+confirmed. The contact result replicates here and the module comparison does
+not, and the figure is where that distinction is visible.
 
 **The module comparison does not replicate on the rate axis, and in one
 paralogue it points the other way.** Both are computed correctly and they are
@@ -257,7 +279,13 @@ p = 0.87.**
 because a lineage test that finds nothing is only readable next to what it
 could have found. The ligand core is drawn in a neutral dark rather than a
 hue, because the palette reserves its accent colour for the ryanodine
-receptors and this figure draws them.
+receptors and this figure draws them. The importance of drawing the power
+curve beside the strata is that it makes a negative result readable.
+Lineages that lost the enzyme making the ligand show no relaxation at the
+binding site, and without a bound on what the comparison could have detected
+that would be an untestable statement. The ryanodine receptors are drawn as
+the positive control, because they carry the same pore and no ligand site,
+so the shift the design can see is measured rather than assumed.
 
 **The null is bounded rather than empty.** Measured through the same pairwise
 instrument at the same divergence as the test group, the ryanodine receptors'

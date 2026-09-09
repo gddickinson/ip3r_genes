@@ -100,19 +100,29 @@ fitted to the answer.
 ![](figures/supp_representative_alignment.png)
 
 **{fig:supp_representative_alignment}.** The alignment, with the columns the
-tree actually saw marked in the input's own coordinates. The trimmed alignment
-is the input with 9,980 columns deleted and the two share no x-axis, so only
-one raster can honestly be drawn and the cuts marked beneath it. The raster
-bins columns and plots occupancy rather than residue identity, because at
-11,777 columns one printed pixel is nine columns and a residue palette would
-draw whichever residue happened to land on it.
+tree actually saw marked in the input's own coordinates. The trimmed
+alignment is the input with 9,980 columns deleted and the two share no
+x-axis, so only one raster can honestly be drawn and the cuts marked beneath
+it. The raster bins columns and plots occupancy rather than residue
+identity, because at 11,777 columns one printed pixel is nine columns and a
+residue palette would draw whichever residue happened to land on it. The
+importance of this figure is that it lets a reader see what the tree was
+actually computed on. Trimming removed 85 % of the columns, and the ones it
+removed were the sparse ones, at a median occupancy of 0.03 against 0.98 for
+those it kept. Every tree, selection estimate and constraint layer
+downstream rests on the kept set, and a reader who wants to know how much of
+the alignment that is can read it here rather than take it on trust.
 
 ![](figures/msa_coverage.png)
 
 **{fig:msa_coverage}.** Per-sequence coverage of the trimmed alignment. The
 median is 0.96 and one tip of 134 covers less than half. A tip below half is
-not wrong, but it contributes gaps to every column the tree is inferred from,
-so it is named rather than left inside a median.
+not wrong, but it contributes gaps to every column the tree is inferred
+from, so it is named rather than left inside a median. Coverage matters
+because a tip that covers half the alignment contributes gaps to every
+column the tree is inferred from, and gaps are not neutral for a likelihood
+model. Naming the one tip below half, rather than reporting only the median,
+is what allows a reader to judge whether any deep node depends on it.
 
 ## 6.4 What the alignment says before any tree is built
 
@@ -135,13 +145,24 @@ a heuristic with.
 **{fig:msa_identity_heatmap}.** All-pairs identity across the representative
 set. Two identity matrices are committed, one scoring only mutually covered
 columns and one counting gaps, because they answer different questions and
-disagree systematically where a fragment is involved.
+disagree systematically where a fragment is involved. The importance of
+committing two identity matrices rather than one is that they answer
+different questions and disagree systematically wherever a fragment is
+involved. A metric that counts gaps as mismatches makes every partial
+sequence look divergent, which would confound sequence divergence with
+assembly quality, and that confound runs through this entire project.
 
 ![](figures/msa_group_identity.png)
 
 **{fig:msa_group_identity}.** Identity within and between groups. The three
 vertebrate paralogues sit at 0.74 to 0.79 to each other and 0.91 within
-themselves.
+themselves. This figure fixes the scale every later comparison is read
+against. The three paralogues sit at 0.74 to 0.79 to one another and at 0.91
+within themselves, which is close enough that a bait from one aligns at all
+three genes. That single fact is why the duplication detector of Chapter 8
+needed the family call before its geometry meant anything, and why the
+attribution margin inherited from a less similar family had to be
+overturned.
 
 **The alignment's preview of the sister question turns out to be wrong.** The
 alignment can rank the three between-paralogue identities: ITPR1 with ITPR2
@@ -167,11 +188,16 @@ different question, and §6.8 gives an answer neither reading predicted.
 
 ![](figures/msa_conservation.png)
 
-**{fig:msa_conservation}.** Per-column conservation with human ITPR1's domain
-architecture mapped onto it through the alignment, by walking the human row
-and counting ungapped positions, rather than by scaling residue coordinates
-onto column coordinates. The latter is the mistake that puts a domain boundary
-in the wrong place by exactly the gap content of the sequence.
+**{fig:msa_conservation}.** Per-column conservation with human ITPR1's
+domain architecture mapped onto it through the alignment, by walking the
+human row and counting ungapped positions, rather than by scaling residue
+coordinates onto column coordinates. The latter is the mistake that puts a
+domain boundary in the wrong place by exactly the gap content of the
+sequence. The importance of mapping the architecture through the alignment
+rather than by scaling coordinates is that the second method places every
+domain boundary wrong by exactly the gap content of the sequence. Since
+Chapters 11 and 12 both make claims about which element a residue belongs
+to, a systematic offset here would have propagated into every one of them.
 
 ## 6.5 The exhaustive model scan was measured and abandoned
 
@@ -229,12 +255,18 @@ do, at maximal support.
 ![](figures/tree_ml_rooted.png)
 
 **{fig:tree_ml_rooted}.** The rooted maximum-likelihood phylogram. Branches
-are in neutral ink, the three paralogue clades and the outgroup are boxed, and
-a filled dot marks every node clearing both support thresholds. No tip is
-ringed, because the relabelling rule described in §6.7 fires on none of them,
-and the legend entry for a ring appears only when a ring does, since a key
-naming a marker the figure does not carry asserts a correction that was never
-made.
+are in neutral ink, the three paralogue clades and the outgroup are boxed,
+and a filled dot marks every node clearing both support thresholds. No tip
+is ringed, because the relabelling rule described in §6.7 fires on none of
+them, and the legend entry for a ring appears only when a ring does, since a
+key naming a marker the figure does not carry asserts a correction that was
+never made. The importance of this tree is that it answers a question the
+literature did not have an answer to. The review's own audit found no
+published, support-annotated maximum-likelihood analysis with a ryanodine
+outgroup that fixes which two of the three paralogues are sisters. The
+rooting doubles as a control on the whole alignment, since a superfamily
+that did not come back as a clade would put every downstream result in
+doubt.
 
 ## 6.7 The three paralogues are clades, but only after the tree's own corrections
 
@@ -288,8 +320,13 @@ declined to place. A verification that cannot fire is not a verification.
 
 ![](figures/paralog_placement.png)
 
-**{fig:paralog_placement}.** Where the tree places each tip against its census
-label, with the five unplaced tips named.
+**{fig:paralog_placement}.** Where the tree places each tip against its
+census label, with the five unplaced tips named. The importance of this
+figure is that the tree overturns no census name. Thirty-nine tips agree
+with their label, none is reassigned, and five are left unplaced, and
+reciprocal best hits against an independent database uphold the census name
+for all five. A gene tree that had disagreed with the annotation would have
+cast doubt on the paralogue cells that every later chapter is built on.
 
 ## 6.8 ITPR2 and ITPR3 are sisters, and the other two arrangements are rejected
 
@@ -320,9 +357,16 @@ fails any constraint that names a free tip.
 ![](figures/sister_au.png)
 
 **{fig:sister_au}.** The three hypotheses under the approximately unbiased
-test [R144], with log-likelihood difference and p-value on two panels sharing
-one row of categories rather than on two y-axes. They are different measures
-on different scales, and a twin axis invites a comparison that has no meaning.
+test [R144], with log-likelihood difference and p-value on two panels
+sharing one row of categories rather than on two y-axes. They are different
+measures on different scales, and a twin axis invites a comparison that has
+no meaning. This figure is the answer to Chapter 6's central question, and
+its importance is that it excludes rather than merely prefers. Two of the
+three possible sister arrangements fall outside the 95 % confidence set of
+topologies for this alignment, at p below 2 × 10⁻⁵, so the result is not a
+ranking that a slightly different alignment could reverse. Chapter 7 then
+shows the genomic neighbourhood pointing the other way, and the two are
+reported as a disagreement rather than reconciled.
 
 **The unconstrained tree groups ITPR2 and ITPR3 at maximal support**, and the
 test agrees. The arrangement pairing ITPR1 with ITPR2 is rejected at
@@ -381,9 +425,14 @@ with a median bootstrap of 100 and a median branch-test value of 99.
 
 ![](figures/support_profile.png)
 
-**{fig:support_profile}.** Node support drawn as a scatter rather than as two
-histograms, because the claim is about the joint condition and a pair of
-marginals cannot show it.
+**{fig:support_profile}.** Node support drawn as a scatter rather than as
+two histograms, because the claim is about the joint condition and a pair of
+marginals cannot show it. Drawing support as a joint condition matters
+because a node is only trustworthy when both branch tests agree, and two
+marginal histograms cannot show that. The bootstrap alone is known to be
+optimistic under model violation, which a 134-tip alignment spanning four
+kingdoms guarantees, so every well-supported claim in this thesis requires
+both.
 
 Every node a claim rests on is listed with its own support. The ITPR2 with
 ITPR3 clade the sister result depends on is at maximal support. The one weakly

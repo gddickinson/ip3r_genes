@@ -74,7 +74,13 @@ individual pairs beating their own control.
 
 **{fig:synteny_pair_classes}.** Every pair class against its matched
 random-window control. The within-paralogue classes sit far above their null
-and every cross-paralogue class sits at or below it.
+and every cross-paralogue class sits at or below it. This figure is the
+first test in the thesis of an assumption every earlier chapter had made.
+The paralogue cells were assigned from sequence, and nothing before this had
+checked them against evidence outside the gene itself. Neighbourhood
+similarity within a paralogue runs at two to four hundred times a matched
+null while every cross-family class sits at or below it, so the cells are
+orthology groups rather than similarity bins.
 
 **Across the family boundary there is nothing.** Over 168,241 pairs of IP₃ and
 ryanodine loci the highest mean similarity of any class is 0.0002, which is
@@ -90,7 +96,13 @@ one with a teleost. Only the second is about the locus.
 
 **{fig:synteny_clade_decay}.** How far a neighbourhood travels. Within a
 vertebrate class the three paralogues span 0.254 to 0.347. Across classes,
-ITPR3 retains 0.062 against 0.160 and 0.158, which is a 2.5-fold gap.
+ITPR3 retains 0.062 against 0.160 and 0.158, which is a 2.5-fold gap. The
+importance of splitting within-class from cross-class comparisons is that a
+pooled mean answers an easy question and a hard one at once. Two mammals
+share a neighbourhood almost trivially; whether a mammal shares one with a
+teleost is the measurement that says the locus is ancient. On that axis
+ITPR3's neighbourhood is the one that does not travel, which is a result
+about genome rearrangement rather than about the gene.
 
 **ITPR3's neighbourhood is the one that does not travel.** It is still 157
 times its own null and 96.9 % of its cross-class pairs still beat their
@@ -122,9 +134,15 @@ IP₃ and ryanodine neighbourhoods.
 ![](figures/synteny_paralogon.png)
 
 **{fig:synteny_paralogon}.** The three human neighbourhoods drawn as gene
-tracks with the shared ohnologue families linked. The tracks are read out of a
-committed table rather than named in the figure code, so the figure cannot
-show a gene the data does not have.
+tracks with the shared ohnologue families linked. The tracks are read out of
+a committed table rather than named in the figure code, so the figure cannot
+show a gene the data does not have. This figure carries the neighbourhood
+half of the duplication argument. If the three paralogues arose in
+whole-genome duplications, their neighbourhoods should be paralogous rather
+than identical, and the surviving shared families are what remains of that.
+The importance of the asymmetry is that both surviving links run through
+ITPR1 and none connects ITPR2 to ITPR3, which is the first of five
+independent measurements that put ITPR1 on its own side.
 
 That is a clean measurement, since both families are under 1 % of random
 windows at every threshold from 10 % to 50 %, and it is the first result in
@@ -164,11 +182,16 @@ toward the stricter setting.
 
 ![](figures/synteny_caller.png)
 
-**{fig:synteny_caller}.** The caller calibrated and swept across its threshold
-range, with the random-window false-call rate drawn beside the call rate. At
-the chosen setting it is correct on 405 of 405 calls over 503
+**{fig:synteny_caller}.** The caller calibrated and swept across its
+threshold range, with the random-window false-call rate drawn beside the
+call rate. At the chosen setting it is correct on 405 of 405 calls over 503
 annotation-confirmed loci, calls 80.5 % of them, and calls 6 of 726 random
-control windows.
+control windows. The importance of this calibration is the rule it rejects.
+Optimising call rate alone selects the loosest setting available, which is
+how an instrument gets tuned into agreeing with itself, so the threshold is
+chosen to maximise the difference between the call rate and the rate at
+which random neighbourhoods are called. The caller then places 131 loci that
+the alignment could not label, each with a null tail probability attached.
 
 Accuracy is 1.000 across the whole range, so it separates nothing and is not
 what is optimised. It is reported rather than used.

@@ -2,8 +2,8 @@
 
 `python scripts/s25_assemble.py` builds everything here and exits non-zero on
 a failed guard. The same work is reported as a paper in `manuscript/`, and
-this directory holds its long form: about 64,000 words across 16 chapters and
-5 appendices, with 103 figures and 80 references.
+this directory holds its long form: about 74,000 words across 16 chapters and
+5 appendices, with 103 figures and 111 references.
 
 ## What is written by hand, and what is generated
 
@@ -15,7 +15,7 @@ this directory holds its long form: about 64,000 words across 16 chapters and
 | file | stage | what it is |
 |---|---|---|
 | `thesis.md` | `stitch` | the assembled document, do not edit |
-| `itpr_family_thesis.pdf` | `pdf` | the typeset document, 173 pages |
+| `itpr_family_thesis.pdf` | `pdf` | the typeset document, 194 pages |
 | `figures/` | `figures` | every placed figure, copied from the results tree, png + pdf |
 | `figure_manifest.tsv` | `figures` | chapter, number, slug, source, drawn width, SHA-256 |
 | `chapter_assignment.tsv` | `assign` | every results directory → chapter, with the rule |

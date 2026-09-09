@@ -46,8 +46,14 @@ the IP₃ series misses 3 of 512 cells and the ryanodine series misses none of
 
 **{fig:s19_contiguity}.** The measured false-negative rate against assembly
 contiguity, with the bar drawn. The two series are independent, because the
-ryanodine sister cell uses none of the state rules that define the other one,
-and the two agree.
+ryanodine sister cell uses none of the state rules that define the other
+one, and the two agree. This is the figure that licenses the retention
+result. A survey reporting zero losses is worth nothing unless somebody has
+measured how often the same search fails to find a gene that is demonstrably
+present, and that is what is plotted here. The two series are independent,
+since the sister series uses none of the state rules the family series
+depends on, and they agree, which is what stops the number being read as the
+search agreeing with itself.
 
 **The contiguity bar was chosen a priori and survives calibration.** The
 142,212 bp floor came from gene geometry, meaning the median measured genomic
@@ -86,11 +92,17 @@ than against a model of it.
 
 ![](figures/s19_panel.png)
 
-**{fig:s19_panel}.** Nineteen panels, drawn as change from the full panel on a
-symmetric-log axis. Every panel scores between 0.58 and 0.85 of the cells, so
-on an absolute linear axis the entire breadth result would be one pixel, and
-the one ablation that removes every labelled bait sits 783 cells away from the
-rest.
+**{fig:s19_panel}.** Nineteen panels, drawn as change from the full panel on
+a symmetric-log axis. Every panel scores between 0.58 and 0.85 of the cells,
+so on an absolute linear axis the entire breadth result would be one pixel,
+and the one ablation that removes every labelled bait sits 783 cells away
+from the rest. The importance of this figure is that it overturns the usual
+intuition about how to build a bait panel. Phylogenetic breadth, which is
+what a panel is normally padded with, buys almost nothing inside the
+vertebrates, while paralogue coverage buys everything. Anyone designing a
+comparable survey should spend their panel budget on paralogues and on
+clades where no labelled record exists, and this figure is the measurement
+that says so.
 
 Two readings fall out, and they point in opposite directions.
 
@@ -156,7 +168,13 @@ doing exactly what it was added for.
 
 **{fig:s19_contribution}.** What each channel contributed, drawn as
 disagreement rates rather than as stacked counts. The claim is a proportion,
-and stacking proportions on a logarithmic axis misreads them by construction.
+and stacking proportions on a logarithmic axis misreads them by
+construction. The figure matters because it prices the standard approach. A
+family profile searched over reference proteomes, which is how most
+gene-family surveys are done, returns at gene scale almost exactly what
+domain annotation already returns. Its entire gain is fragments, and the
+only place it finds whole genes that annotation missed is the clades where
+annotation is worst.
 
 **Per gene, what a protein-database search would have missed.** Asked per
 genome by cell rather than per record, with the genome sweep as ground truth
@@ -183,9 +201,15 @@ so the labels are not a judgement call.
 
 ![](figures/s19_drift.png)
 
-**{fig:s19_drift}.** Each kill rule scored as a classifier of a drift outcome
-measured on the finished model. The rule written for this family's specific
-hazard has a sensitivity of zero.
+**{fig:s19_drift}.** Each kill rule scored as a classifier of a drift
+outcome measured on the finished model. The rule written for this family's
+specific hazard has a sensitivity of zero. This figure records an instrument
+failing at the one job it was built for. The rule written to catch
+sister-family drift in an iterative search has a sensitivity of zero across
+seven runs including all three that drifted, because the drift dilutes the
+very quantity the rule measures. The correction is a one-line change to a
+different axis, and it is reported rather than applied, because it was
+validated after the fact on the runs it would reclassify.
 
 **The sister-family rule fires on none of the seven runs, including all three
 that drifted.** The reason is now measured rather than described: off-family

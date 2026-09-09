@@ -209,8 +209,8 @@ T57	ch12	the shells are measured in 6 independent depositions	6	6	ok		results/li
 T58	ch12	486 non-vertebrate records resolve both modules	486	486	ok		results/ligand_site/deep_lineage_panel.tsv	count
 T59	ch14	437 constructed negative controls are declared	437	437	ok		thesis/control_inventory.tsv	sum
 T60	ch14	across 19 test modules	19	19	ok		thesis/control_inventory.tsv	count
-T61	ch14	58 references were added for the thesis	58	58	ok		thesis/reference_audit.tsv	count
-T62	ch14	all 58 are verified against a live record	58	58	ok		thesis/reference_audit.tsv	count
+T61	ch14	76 references were added for the thesis	76	76	ok		thesis/reference_audit.tsv	count
+T62	ch14	all 76 are verified against a live record	76	76	ok		thesis/reference_audit.tsv	count
 T63	ch14	26 figure-audit findings were recorded	26	26	ok		results/supplementary/figure_findings.tsv	count
 T64	ch14	16 of them were fixed in the legend	16	16	ok		results/supplementary/figure_findings.tsv	count
 T65	ch14	10 in the figure	10	10	ok		results/supplementary/figure_findings.tsv	count
@@ -222,7 +222,7 @@ T71	ch16	35 sessions are logged	35	35	ok		thesis/production_stats.tsv	cell
 T72	ch16	they ran across 9 working days	9	9	ok		thesis/production_stats.tsv	cell
 T73	ch16	the ledger holds 35 tasks	35	35	ok		thesis/production_stats.tsv	cell
 T74	ch16	33 of them are complete	33	33	ok		thesis/production_stats.tsv	cell
-T75	ch16	83 methodological decisions are recorded	83	83	ok		thesis/production_stats.tsv	cell
+T75	ch16	83 methodological decisions are recorded	84	84	ok		thesis/production_stats.tsv	cell
 T76	ch16	372 analysis scripts were written	372	372	ok		thesis/production_stats.tsv	cell
 T77	ch16	the search application is 9,243 lines	9243	9243	ok		thesis/production_stats.tsv	cell
 T78	ch16	444 result tables are committed	444	444	ok		thesis/production_stats.tsv	cell

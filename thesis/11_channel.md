@@ -38,10 +38,17 @@ thesis stands on, **nine** do.
 
 ![](figures/s11_afdb_coverage.png)
 
-**{fig:s11_afdb_coverage}.** Coverage by group, and against record length. The
-second panel is the result: the usable-model mass sits below about 1,300
+**{fig:s11_afdb_coverage}.** Coverage by group, and against record length.
+The second panel is the result: the usable-model mass sits below about 1,300
 residues while the peak at about 2,700, which is a full-length subunit, is
-almost entirely unmodelled.
+almost entirely unmodelled. The importance of this figure is that it sets
+the ceiling on every structural argument the family can support. A reader
+who assumed the prediction database covers modern proteomes uniformly would
+expect a receptor of this size to be modelled, and the second panel shows
+the opposite: coverage falls away exactly at the lengths a full-length
+subunit occupies. Every structural statement in this chapter therefore rests
+on experimental depositions, and the figure is what makes that a measured
+constraint rather than a preference.
 
 The median modelled record is 392 residues and the median unmodelled one
 2,674. Of the 5,861 census records at or above the family's own length floor,
@@ -99,7 +106,13 @@ than met. Without that, the panel is six proteins.
 ![](figures/s11_panel.png)
 
 **{fig:s11_panel}.** Every structure in the panel, where the pale bar is the
-length the record claims and the filled bar what the structure delivers.
+length the record claims and the filled bar what the structure delivers. The
+importance of drawing the claimed and delivered lengths as two bars is that
+the gap between them is what a fold comparison is actually computed on. A
+structure resolving half its record has half its residues, and a score
+normalised by the wrong one of those two numbers is a statement about size
+rather than about shape. The panel lets a reader see, for every entry, how
+much protein each later comparison had to work with.
 
 ## 11.4 The comparison scale is calibrated on this panel before any structure is called
 
@@ -124,7 +137,14 @@ exists to establish.
 calibration behind it. Both of the alignment method's published bars are
 drawn, meaning the random-similarity floor and the same-fold bar [R166],
 rather than described. A calibration figure that asked to be believed would
-not be one.
+not be one. The importance of this figure is that it turns the family
+separation into a structural result rather than a sequence one. Everything
+before this chapter told the two families apart on sequence and domain
+content; here the same separation is recovered from shape alone, against
+published bars the project did not choose. That matters because the two
+families share every diagnostic domain, so a reader is entitled to ask
+whether the distinction survives when domain annotation is removed from the
+evidence.
 
 Both normalisations are kept, because on this panel they say different things.
 A subunit resolves to about 2,200 residues and a ryanodine receptor to about
@@ -193,10 +213,16 @@ whatever aligned.
 
 ![](figures/s11_plddt_domains.png)
 
-**{fig:s11_plddt_domains}.** Confidence per domain, ordered along the subunit,
-with the prediction method's own confident and very-high bands drawn. Every
-model gets an "outside annotated domains" contrast row, without which "the
-pore is at 85" has nothing to be high against.
+**{fig:s11_plddt_domains}.** Confidence per domain, ordered along the
+subunit, with the prediction method's own confident and very-high bands
+drawn. Every model gets an "outside annotated domains" contrast row, without
+which "the pore is at 85" has nothing to be high against. The importance of
+resolving confidence per domain is that a single mean over a 2,700-residue
+multi-domain channel is uninformative and reassuring at the same time. It
+averages a well-predicted domain with hundreds of residues of linker, and a
+claim resting on the pore needs the pore's own number. The contrast row
+outside the annotated domains is what gives a high value something to be
+high against.
 
 **The IP₃-binding core is the best-modelled domain of the receptor** at a
 median of 83.9, against 69.5 outside the annotated domains, and **the pore,
@@ -230,8 +256,14 @@ alignment from 3,380 to 5,676 columns.**
 
 **{fig:supp_paralog_alignments}.** The within-paralogue alignments the
 constraint map is computed on, shown as per-residue occupancy of the human
-reference rather than per alignment column, because the three alignments have
-three widths and no shared coordinate.
+reference rather than per alignment column, because the three alignments
+have three widths and no shared coordinate. The importance of this figure is
+that it shows the depth behind the constraint map, which is the difference
+between this resource and one built on a handful of orthologues. Between 249
+and 265 orthologues per paralogue is what makes a within-gene conservation
+score interpretable, and plotting occupancy per residue of the human
+reference lets a reader see where that depth thins out and a score should be
+trusted less.
 
 Three conventions run through every score. **Conservation is
 sequence-weighted** [R171] before any column statistic, and the column metric

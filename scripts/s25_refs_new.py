@@ -268,4 +268,92 @@ NEW_REFS: dict[str, dict] = {
                  kind="lit",
                  used_for="the assembly-quality standard behind the "
                           "contiguity bar every absence claim passes"),
+    # ------------------------------------- the general discussion's context
+    "R196": dict(pmid="17150991",
+                 expect="Inositol trisphosphate receptor in higher plants",
+                 kind="lit",
+                 used_for="the standing question in the plant literature "
+                          "that the land-plant absence answers"),
+    "R197": dict(pmid="18703378",
+                 expect="Ca2+ signalling in plants and green algae",
+                 kind="lit",
+                 used_for="the change in calcium-channel repertoire between "
+                          "the green algae and the land plants"),
+    "R198": dict(pmid="28697370",
+                 expect="Evolution of Calcium-Based Signalling in Plants",
+                 kind="lit",
+                 used_for="what carries calcium signalling in a lineage that "
+                          "has no IP3 receptor"),
+    "R199": dict(pmid="20456068",
+                 expect="Calcium channels in photosynthetic eukaryotes",
+                 kind="lit",
+                 used_for="the calcium-channel repertoires of the red algae "
+                          "and the diatoms, two of the absence clades"),
+    "R200": dict(pmid="23485966",
+                 expect="genomes of four tapeworm species", kind="lit",
+                 used_for="the gene-family losses that accompany parasitism "
+                          "in the Cestoda, one of the absence clades"),
+    "R201": dict(pmid="16188433",
+                 expect="Causes and effects of nuclear genome reduction",
+                 kind="lit",
+                 used_for="the genome reduction behind the microsporidian "
+                          "and apicomplexan absences"),
+    "R202": dict(pmid="17932292",
+                 expect="Chlamydomonas genome reveals the evolution",
+                 kind="lit",
+                 used_for="the green alga that carries the receptor the land "
+                          "plants lack"),
+    "R203": dict(pmid="34301952",
+                 expect="proto-cyclostome", kind="lit",
+                 used_for="the genome-scale placement of the two vertebrate "
+                          "duplications, against which this family's two "
+                          "splits are read"),
+    "R204": dict(pmid="22908297", expect="Gene balance hypothesis",
+                 kind="lit",
+                 used_for="the dosage-balance expectation for which "
+                          "duplicate copies are retained"),
+    "R205": dict(pmid="26578810",
+                 expect="Rapid genome reshaping by multiple-gene loss",
+                 kind="lit",
+                 used_for="the rate at which teleost genomes returned to "
+                          "single copy after their duplication"),
+    "R206": dict(pmid="12956953",
+                 expect="Remarkable interkingdom conservation of intron "
+                        "positions",
+                 kind="lit",
+                 used_for="intron positions as durable characters, which is "
+                          "what the shared-intron result rests on"),
+    "R207": dict(pmid="16485020",
+                 expect="evolution of spliceosomal introns", kind="lit",
+                 used_for="the rates of intron loss and gain that make a "
+                          "shared position informative"),
+    "R208": dict(pmid="12134150",
+                 expect="Selection for short introns in highly expressed "
+                        "genes",
+                 kind="lit",
+                 used_for="the evidence that intron length is under "
+                          "selection"),
+    "R209": dict(pmid="18492248",
+                 expect="Evidence against the energetic cost hypothesis",
+                 kind="lit",
+                 used_for="the contested mechanism behind intron-length "
+                          "selection, cited so the claim is not overstated"),
+    "R210": dict(pmid="32461654",
+                 expect="mutational constraint spectrum", kind="lit",
+                 used_for="the human population constraint on ITPR1"),
+    "R211": dict(pmid="10200254",
+                 expect="protein phylogenetic profiles", kind="method",
+                 used_for="co-occurrence across genomes as a way of asking "
+                          "about function, which a measured range enables"),
+    "R212": dict(pmid="17051209",
+                 expect="early evolution of Fungi using a six-gene phylogeny",
+                 kind="lit",
+                 used_for="the fungal backbone against which the early-"
+                          "diverging and derived lineages are named"),
+    "R213": dict(pmid="24368850",
+                 expect="Ohnologs are overrepresented in pathogenic copy "
+                        "number",
+                 kind="lit",
+                 used_for="the dosage sensitivity of vertebrate ohnologues, "
+                          "read against ITPR1's deletion phenotype"),
 }

@@ -67,7 +67,13 @@ junctions read as a canonical splice pair.**
 
 **{fig:junction_quality}.** The aligner's junction error rate, drawn on the
 complement, because at 99.9 % agreement a bar of the agreement is four full
-bars and shows nothing. Each gap bin carries the count it rests on.
+bars and shows nothing. Each gap bin carries the count it rests on. This
+figure is the instrument's own error rate, and it has to be measured before
+exon structure inferred from alignments can be used for anything. At 99.89 %
+of junctions reading as a canonical splice pair, the boundaries the
+shared-intron test depends on are the aligner's rather than an artefact, and
+the independent check against 188,146 annotated edges from 164 genomes is
+what rules out a systematic bias the dinucleotides alone could not see.
 
 That is corroborated by a second, independent pipeline: the sweep's boundaries
 against **188,146 annotated coding-sequence edges from 164 genomes**, at
@@ -112,8 +118,14 @@ them is how much intron is wrapped around nearly the same protein.
 ![](figures/architecture_by_paralog.png)
 
 **{fig:architecture_by_paralog}.** Exon count and genomic span on separate
-axes, with span logarithmic and count not. The result is that one is conserved
-and the other is not, and a shared scale would hide it.
+axes, with span logarithmic and count not. The result is that one is
+conserved and the other is not, and a shared scale would hide it. The
+importance of separating the axes is that the result is a contrast between
+two quantities measured on the same genes: one is conserved and the other is
+not. Fifty-seven to fifty-eight coding exons across 189 genomes, wrapped in
+genomic spans differing four-fold, means the paralogues inherited one coding
+architecture and then diverged in intron content alone. A shared scale would
+have hidden exactly that.
 
 The ryanodine receptors, measured through the identical instrument in the same
 assemblies, carry **104 exons over 14,910 bp** of coding sequence, which is
@@ -153,7 +165,12 @@ same places, across the vertebrates.
 ![](figures/intron_positions.png)
 
 **{fig:intron_positions}.** Intron positions by alignment column and phase,
-per paralogue. The columns line up.
+per paralogue. The columns line up. The importance of scoring a position as
+a column and a phase together is that either alone is insufficient. Two
+paralogues can carry an intron between the same two residues in different
+reading frames, which is not one ancestral intron, and a column with no
+phase would count it as shared. The columns lining up here is what the
+enrichment in §8.7 is measured on.
 
 **Between paralogues** is the test this chapter exists for. Two genes with
 about 58 introns each spread over about 2,700 aligned residues will share some
@@ -241,9 +258,17 @@ zero is a measurement rather than an unreachable code path.
 
 ![](figures/fragments_and_duplicates.png)
 
-**{fig:fragments_and_duplicates}.** The verdict on every split and fragmentary
-locus, where the annotation's internal termini sit relative to the gene model,
-and the duplication detector scored against an independent copy call.
+**{fig:fragments_and_duplicates}.** The verdict on every split and
+fragmentary locus, where the annotation's internal termini sit relative to
+the gene model, and the duplication detector scored against an independent
+copy call. The importance of this figure is that it converts a database
+label into a testable claim. A locus called fragmentary might have been
+annotated as a plausible short gene, or the annotation might have stopped
+where no splicing machinery could stop, and only the second is an error. 228
+of 291 such loci carry at least one terminus in the middle of an exon, which
+falsifies the innocent reading. The duplication panel makes the same point
+about a detector: scored against a copy call it never sees, its specificity
+goes from 0.16 to 0.977 once the family assignment is applied first.
 
 ## 8.10 What this chapter settles about the gene
 

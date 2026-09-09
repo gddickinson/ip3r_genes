@@ -50,7 +50,12 @@ combinations are refused with their reason.
 **{fig:recon_matrix}.** The topology by variant matrix, with the deepest
 paralogue duplication in every cell, and beside it every rooting of the
 vertebrate subtree scored by total events, with the outgroup rooting and the
-minimum-event rooting marked.
+minimum-event rooting marked. The matrix matters because it separates the
+placement from the topology it was read off. Twelve reconciliations across
+five topologies and three taxon treatments put the younger duplication on
+the gnathostome stem in every cell, so that placement does not depend on
+which sister arrangement is correct. The rooting panel beside it shows the
+same for the choice of root.
 
 Read plainly, on the tree with every tip in, two results follow.
 
@@ -65,12 +70,17 @@ It maps there in every cell of the matrix, cyclostomes in or out.
 
 ![](figures/recon_dated_backbone.png)
 
-**{fig:recon_dated_backbone}.** The dated backbone on a linear time axis with
-each calibration's spread drawn as a band, rather than a cladogram with ages
-written on it. The result is an interval and a cladogram cannot show one.
-Placements are deduplicated to one marker per distinct arrangement, because
-the matrix repeats the same placement across cells and drawing each would make
-agreement look like weight.
+**{fig:recon_dated_backbone}.** The dated backbone on a linear time axis
+with each calibration's spread drawn as a band, rather than a cladogram with
+ages written on it. The result is an interval and a cladogram cannot show
+one. Placements are deduplicated to one marker per distinct arrangement,
+because the matrix repeats the same placement across cells and drawing each
+would make agreement look like weight. The importance of drawing calibration
+spread as a band is that the result is an interval and a cladogram with ages
+written on it cannot show one. The deepest bracket is left open at its old
+end because nothing in this tree closes it, and the widest disagreement in
+the whole calibration set sits at exactly the node the older duplication
+maps to.
 
 **The two duplications are not on the same branch.** That is the finding, and
 it is what makes ITPR1 the earlier-diverging copy.
@@ -113,9 +123,15 @@ cyclostome loci at **0.96 to 1.04 times the median, ranking 18th to 55th of
 
 **{fig:recon_cyclostome}.** Root-to-tip distance for all 57 vertebrate tips
 with the six cyclostome loci marked, and beside it the independent
-neighbourhood call for each of those loci with the pair support the tree gives
-it. The long-branch objection does not apply, and the corroboration is inside
-its own null.
+neighbourhood call for each of those loci with the pair support the tree
+gives it. The long-branch objection does not apply, and the corroboration is
+inside its own null. The importance of the long-branch panel is that it
+removes the standard objection to this result. Cyclostome sequences are the
+classic long-branch attraction risk in vertebrate phylogeny and long
+branches are attracted to the root, which is exactly where this placement
+sits, so the objection is measured rather than argued. The six loci rank
+eighteenth to fifty-fifth of fifty-seven tips, and two sit in the shorter
+half.
 
 That negative result is the one that matters most here. It is the reason the
 placement is offered as a finding rather than as a caveat.
@@ -128,9 +144,14 @@ sample, and none is corroborated.
 ![](figures/recon_losses.png)
 
 **{fig:recon_losses}.** What each implied loss turns out to be once it is
-asked of the genome ledger, and the implied count in every cell of the matrix
-against the number the genomes corroborate. A reconciliation over a
-representative sample counts sampling.
+asked of the genome ledger, and the implied count in every cell of the
+matrix against the number the genomes corroborate. A reconciliation over a
+representative sample counts sampling. This figure is the reason a loss
+count is not read off a reconciliation. Of 47 implied losses, 26 are the
+paralogue present in the genome and absent only from the 134-tip sample, and
+none is corroborated by the genome ledger. A reconciliation over a
+representative alignment counts sampling, which is why Chapter 9 counts
+losses from 309 genomes instead.
 
 ## 7.10 Testing whole-genome duplication needs dated paralogy, not synteny
 
@@ -194,7 +215,13 @@ background rate, at 2.7 % against 2.6 %, p = 0.554.**
 **{fig:s16_paralogon}.** The two-round test with its null drawn across the
 bars rather than quoted in a caption, and the ryanodine trio run through the
 identical instrument in the same genomes beside it. A weak signal is only
-readable next to a positive control that is not in question.
+readable next to a positive control that is not in question. The importance
+of drawing the null across the bars is that the human single-genome test is
+underpowered and the report says so twice. What carries the claim is the
+replication across 309 genomes against matched random neighbourhoods, and
+what makes it readable is the sister family run through the identical
+instrument, since its two-round origin is not in question and it behaves the
+same way.
 
 The dated column splits the two links cleanly: the ITPR1 to ITPR3 link is
 vertebrate-dated in 84 genomes and the ITPR1 to ITPR2 link in 2.
@@ -219,8 +246,14 @@ the copy-number landscape says that is where all this family's variation is.
 
 **{fig:s16_copy_number}.** Copy number grouped by whole-genome-duplication
 status rather than by taxonomy, because the result is a contrast between
-lineages defined by which duplications they have been through, and a per-class
-bar buries it inside the ray-finned fish.
+lineages defined by which duplications they have been through, and a
+per-class bar buries it inside the ray-finned fish. Grouping by duplication
+history rather than by taxonomy is what makes this figure a test. The
+prediction is specific: lineages that diverged before the teleost
+duplication should carry one copy of each paralogue, teleosts two of one,
+and lineages with a further duplication more again. All three hold, and a
+second copy in the outgroup or an undoubled sister family would each have
+falsified the reading.
 
 **Above the contiguity bar, every non-teleost gnathostome genome in the sweep
 carries exactly one of each paralogue and three ryanodine receptors.**
@@ -263,7 +296,11 @@ duplications would not.
 
 **{fig:s16_dcs}.** Double-conserved synteny, with the two copies plotted
 against each other so that disjointness is a geometric fact on the figure
-rather than a number in a table.
+rather than a number in a table. The load-bearing word in this figure is
+disjoint. Two copies that each resemble the ancestral neighbourhood could be
+two independent later duplications, but two copies that partition it between
+them are what reciprocal gene loss after a single duplication produces. That
+distinction is what turns a copy count into a claim about one shared event.
 
 Two references were used rather than one, because teleost gene symbols diverge
 from tetrapod ones even after normalisation, so a tetrapod consensus
@@ -289,8 +326,15 @@ agreement is a measurement rather than a property of the routine.
 ![](figures/s16_blocks.png)
 
 **{fig:s16_blocks}.** Cross-anchor block identity, and the sensitivity of
-every count to the coverage bar. Seven bars are scanned, because a duplication
-claim that survives only one bar is a claim about the bar.
+every count to the coverage bar. Seven bars are scanned, because a
+duplication claim that survives only one bar is a claim about the bar. The
+importance of the anchor test is that it separates one ancestral duplication
+from a series of lineage-specific ones, which the copy counts alone cannot
+do. Anchors from six different orders assign every genome independently and
+agree 705 times out of 705, where independent duplications would put the
+statistic at chance. A constructed control builds exactly that case and
+requires the statistic to land there, so the agreement is a measurement
+rather than a property of the routine.
 
 It is corroborated by evidence of a different kind. Which bait won each copy
 is a sequence call made with no neighbourhood input at all, and in the six

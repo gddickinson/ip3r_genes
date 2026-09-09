@@ -90,11 +90,17 @@ on its own, at a median of 0.030 against a candidate median of 0.795.
 
 ![](figures/reconstruction.png)
 
-**{fig:reconstruction}.** The three populations the bar is read off, with the
-gap shaded and the operating point drawn, and every undecided cell against the
-number of contigs its gene is spread over. A calibration figure that asked to
-be believed would not be one, so both edges of the gap are marks rather than a
-caption.
+**{fig:reconstruction}.** The three populations the bar is read off, with
+the gap shaded and the operating point drawn, and every undecided cell
+against the number of contigs its gene is spread over. A calibration figure
+that asked to be believed would not be one, so both edges of the gap are
+marks rather than a caption. The importance of this calibration is that it
+failed on its first attempt and the failure was informative. The decoy
+originally contained regions attributed to a paralogue that was itself
+shattered, which are pieces of real genes, and separating that population
+out is what made the bar measurable. Those 20 regions are now committed as
+their own population and are the measured size of the paralogue-attribution
+problem in a broken assembly.
 
 **The first version of this calibration did not separate**, at a Youden index
 of 0.52, and why is a result in itself. The decoy was every region attributed
@@ -131,10 +137,15 @@ it acts.
 ![](figures/synteny_reach.png)
 
 **{fig:synteny_reach}.** Why synteny could not answer, showing the joint
-distribution of what a trace region has to work with, with the caller's floor
-drawn, beside the caller's own accuracy on the same axis. Putting reach and
-accuracy on one axis is what makes "accurate and unavailable" a readable
-sentence rather than an excuse.
+distribution of what a trace region has to work with, with the caller's
+floor drawn, beside the caller's own accuracy on the same axis. Putting
+reach and accuracy on one axis is what makes "accurate and unavailable" a
+readable sentence rather than an excuse. This figure is what makes accurate
+and unavailable a readable sentence rather than an excuse. The neighbourhood
+caller is right at every key count at which it acts, and it acts on 8 of 432
+regions, because a fragment's contig carries no neighbours to read. Putting
+reach and accuracy on the same axis is the only way to show that a method's
+failure here is a property of the data rather than of the method.
 
 On the 8 regions it can reach the caller returns a call for 6 and agrees with
 the alignment's own attribution on all 6. That is an independent instrument
@@ -151,9 +162,15 @@ genome.
 ![](figures/character_matrix.png)
 
 **{fig:character_matrix}.** Every genome by paralogue cell, ordered by
-assembly contiguity with the bar drawn, and the gene-equivalents each assembly
-holds. The panel exists so a reader can see that the red the genome ledger
-showed is gone, and see where it went.
+assembly contiguity with the bar drawn, and the gene-equivalents each
+assembly holds. The panel exists so a reader can see that the red the genome
+ledger showed is gone, and see where it went. This figure is the whole of
+Chapter 9's argument in one panel. Ordering the genomes by contiguity and
+drawing the bar shows that the apparent absences in the raw ledger are
+concentrated below it, and the second panel shows that in every one of the
+189 assemblies contiguous enough to carry the gene, all three paralogues are
+present. What a reader should take from it is where the red went, not merely
+that it is gone.
 
 The 43 reassembled cells are the substantive change this chapter makes to the
 ledger, because those were the cells a naive count would have read as
@@ -203,9 +220,15 @@ frameshifts.
 produce it without a gene being dead, and the paired within-genome test that
 removes both. The identity panel is drawn first because contiguity is the
 confounder everyone expects and identity is the one that turned out to be
-real. Density is logarithmic with an explicit zero band, since 72 % of intact
-loci carry no lesion and a linear axis puts the whole calibration population
-on one pixel.
+real. Density is logarithmic with an explicit zero band, since 72 % of
+intact loci carry no lesion and a linear axis puts the whole calibration
+population on one pixel. The importance of this figure is that the
+confounder everyone expects is not the one that matters. Assembly contiguity
+barely moves a lesion count, while the locus's identity to its bait moves it
+a great deal, because a poorly matched reference buys alignment with
+frameshifts. Any claim that a gene is decaying has to survive that, and the
+paired within-genome test in the third panel is what removes both
+confounders at once.
 
 So the paired within-genome test, in which each cell is compared against the
 same genome's other family loci and which removes the assembly entirely, is
@@ -290,8 +313,15 @@ asked is whether moving the bar across its own uncertainty changes anything.
 
 **{fig:sensitivity_matrix}.** The loss count in every cell of the grid, for
 the family-level coding and the paralogue-resolved one, with the operating
-point marked. A zero is drawn as an explicit zero and never as an empty cell,
-because an empty cell reads as "not measured" and the zero is the result.
+point marked. A zero is drawn as an explicit zero and never as an empty
+cell, because an empty cell reads as "not measured" and the zero is the
+result. This figure is what a zero looks like when it is defended properly.
+Rather than assert robustness, the count is recomputed under every
+combination of four analytical axes, and the asymmetry it reveals is the
+result: a family-level absence is stable across 30 of 32 settings while a
+paralogue-resolved one is fragile to every knob. Drawing a zero as an
+explicit zero rather than an empty cell matters because an empty cell reads
+as not measured.
 
 **Moving the reconstruction bar across the whole gap the calibration measured
 manufactures no loss on either coding.** The bar's position inside its own
@@ -309,7 +339,13 @@ family-level absence is not.
 
 **{fig:reconstruction_bar}.** The calibrated bar with the gap's two edges
 drawn. The within-row offset of each point is its rank in its own row, using
-no hash and no random number generator, so the figure is reproducible.
+no hash and no random number generator, so the figure is reproducible. The
+importance of drawing both edges of the calibration gap is that it makes the
+threshold's uncertainty visible and testable. The first three rungs of
+Chapter 9's evidence ladder are those two edges and the midpoint between
+them, so the first sensitivity question asked is whether moving the bar
+across its own measured uncertainty changes anything. It changes no cell in
+927.
 
 **The branch-length axis changes nothing, and that is reported rather than
 omitted.** Across all 32 settings and all three schemes, the number of
@@ -336,9 +372,15 @@ unidentifiability looks like when it is drawn rather than argued.
 
 **{fig:mk_profile}.** The likelihood along a rate grid for every model, axis
 and branch-length scheme. The all-rates-different model is profiled on its
-gain axis rather than on its diagonal, because the diagonal is the equal-rates
-model by construction and would put the same curve on the figure twice under
-two names.
+gain axis rather than on its diagonal, because the diagonal is the
+equal-rates model by construction and would put the same curve on the figure
+twice under two names. This figure is a refusal turned into a measurement.
+An invariant character contains no transition to estimate, and rather than
+assert that, the likelihood is profiled along a rate grid over eight orders
+of magnitude for every model and scheme. Every curve is monotone to the
+boundary, and the gain axis of the all-rates-different model rises where the
+loss axis falls, which is what unidentifiability looks like when it is drawn
+rather than argued.
 
 So no rate is reported for the primary character, because a fitter run on it
 would return its own starting point.
@@ -375,7 +417,14 @@ signal at all on a sample that is smaller but not small.
 ![](figures/lesion_strata.png)
 
 **{fig:lesion_strata}.** The identity-matched sign test stratified by class,
-the strongest stratum split by the contiguity bar, and the fossil denominator.
+the strongest stratum split by the contiguity bar, and the fossil
+denominator. The importance of this figure is that it names a lineage and
+then removes the ground from under it in the same panel. The indel excess is
+entirely a bird result, and 21 of the 27 informative pairs sit in assemblies
+below the contiguity bar, which is where the test has its power. Birds are
+the class with the worst assemblies in this scope, so this is precisely
+where an indel signal is hardest to separate from an assembly signal, and
+the verdict is that the mechanism is unsettled rather than found.
 
 The design makes a cell and its siblings the same observation twice, because
 the comparison is within one genome against that genome's other family loci,

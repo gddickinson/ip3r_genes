@@ -237,12 +237,19 @@ them.
 ![](figures/census_growth.png)
 
 **{fig:census_growth}.** How the census grew across its six editions, and on
-what evidence each addition rests. It is in the methods chapter rather than in
-a results chapter because it is a statement about the search rather than about
-the family: each edition is a channel, and the figure is the shape of what
-each channel was worth. The targeted database search that started the project
-returned about a tenth of what the exhaustive enumeration did, and the two
-genome sweeps together added the records no protein database holds at all.
+what evidence each addition rests. It is in the methods chapter rather than
+in a results chapter because it is a statement about the search rather than
+about the family: each edition is a channel, and the figure is the shape of
+what each channel was worth. The targeted database search that started the
+project returned about a tenth of what the exhaustive enumeration did, and
+the two genome sweeps together added the records no protein database holds
+at all. The importance of this figure to a reader planning similar work is
+that it prices four search strategies against each other on one family. A
+targeted search of the obvious databases, which is where most projects stop,
+recovers a small fraction of what exists; exhaustive enumeration by domain
+signature recovers most of what protein databases hold; and only searching
+genomes directly recovers the genes no protein database holds. The shape of
+the curve is the argument for the last of those being worth its cost.
 
 **Citations are keys resolved at build time and the bibliography is rendered
 rather than typed.** No author, title, year or journal is written into a

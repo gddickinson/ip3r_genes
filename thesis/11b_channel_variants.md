@@ -14,8 +14,14 @@ above its own protein's linker mean.
 metric drawn beside the divergence metric rather than instead of it, so a
 reader can see the two agree rather than being asked to believe it. A
 divergence from a background frequency table [R178] scores a transmembrane
-element lower at equal conservation, which is exactly the artefact §11.11 had
-to rule out.
+element lower at equal conservation, which is exactly the artefact §11.11
+had to rule out. The importance of this figure is that the headline result
+and its most obvious artefact are drawn on the same axis. The gate and the
+filter come top on both metrics, so the ranking is not a property of one
+scoring choice, and a reader can check that agreement rather than take it on
+assurance. The composition-free metric is there because a divergence against
+a background frequency table penalises transmembrane composition, which
+would have manufactured the very result the chapter reports.
 
 ## 11.11 One element inside the channel is the exception, and finding it changed the result
 
@@ -56,10 +62,15 @@ prediction that landed on the dip.
 
 ![](figures/s17_channel_profile.png)
 
-**{fig:s17_channel_profile}.** Constraint along the channel, binned, with the
-bins never crossing an element boundary. A sliding window across the luminal
-loop's edge would draw the curve straight through the boundary the panel
-exists to show.
+**{fig:s17_channel_profile}.** Constraint along the channel, binned, with
+the bins never crossing an element boundary. A sliding window across the
+luminal loop's edge would draw the curve straight through the boundary the
+panel exists to show. This figure is where the chapter's structural claim
+becomes visible as a shape rather than a table. Constraint is not uniform
+along the channel: it peaks on the residues the structure says do the work
+and collapses in the luminal loop between them. Binning within element
+boundaries matters because a window straddling that edge would smear the
+collapse into the gate and erase the contrast the panel exists to show.
 
 ## 11.12 The ligand contacts and the gate are the two extremes of paralogue divergence
 
@@ -77,7 +88,13 @@ elements are actually powered, so a p-value on two residues is not offered.
 ![](figures/s17_functional_sites.png)
 
 **{fig:s17_functional_sites}.** The measured functional residues against the
-whole protein and against the rest of their own element.
+whole protein and against the rest of their own element. The importance of
+the second comparison is that it is the harder one. Measured functional
+residues beating the whole-protein average is close to guaranteed, since
+most of a 2,700-residue receptor is linker; beating the rest of their own
+element is what shows that the structure's functional annotation picks out
+something the surrounding domain does not already have. That is the test
+that makes a constraint map useful for interpreting a new position.
 
 A second and completely independent instrument on the same question is
 identity between the paralogues, which needs no alignment depth and no
@@ -143,7 +160,13 @@ benign positions where every layer has a reliable score.
 
 **{fig:s17_variant_classifier}.** Four conservation layers as classifiers,
 drawn as full curves rather than as a bar of summary scores, because the
-layers cross.
+layers cross. This figure carries a result that runs against the chapter's
+own design, which is why it is drawn as full curves. The family-wide layer
+outperforms the deep within-paralogue layer this chapter was built to
+produce, and the shallow control is worst, so depth was worth building but
+breadth was worth more. Summary scores would have hidden the crossings that
+make the ranking readable, and a resource for this family should quote the
+layer this panel puts on top.
 
 Two things fall out, and one is against this chapter's own design.
 
@@ -181,9 +204,15 @@ paralogue's pathogenic median is a single position's score.
 ![](figures/supp_variants_on_structure.png)
 
 **{fig:supp_variants_on_structure}.** Every labelled variant with the
-per-element enrichment test beside it. An infinite odds ratio is drawn at the
-ceiling with a marker rather than allowed off the axes, where a significant
-result would simply vanish.
+per-element enrichment test beside it. An infinite odds ratio is drawn at
+the ceiling with a marker rather than allowed off the axes, where a
+significant result would simply vanish. The importance of this figure is
+that it puts the clinical record on the same coordinates as the constraint
+map, which is what a variant resource has to do to be usable. Pathogenic
+positions concentrating in the elements the structure says gate and select
+is the observation that licenses stratifying the 1,546 uncertain variants at
+all. Drawing an infinite odds ratio at the ceiling keeps the strongest
+enrichments on the figure, where otherwise they would silently leave it.
 
 The deliverable is one table per human paralogue, giving every residue in its
 own numbering, four conservation layers, the occupancy each is conditional on,
@@ -227,10 +256,17 @@ somebody else's profile.
 ![](figures/supp_constraint_on_channel.png)
 
 **{fig:supp_constraint_on_channel}.** The constraint map painted onto the
-channel, drawn from the file the painting step wrote and coloured from its own
-B-factor column, so a disagreement with the per-residue tables would be a bug
-in the painting step, which is the point of drawing it. Unscored residues are
-grey rather than the low end of the scale.
+channel, drawn from the file the painting step wrote and coloured from its
+own B-factor column, so a disagreement with the per-residue tables would be
+a bug in the painting step, which is the point of drawing it. Unscored
+residues are grey rather than the low end of the scale. The importance of
+painting the map onto the structure is that it makes the chapter's numerical
+claims checkable by eye and by a third party. A structure carrying the
+constraint layer in its own coordinate column can be opened in any viewer,
+so a disagreement between the picture and the per-residue table would be
+visible immediately. Colouring unscored residues grey rather than at the low
+end keeps missing data from reading as an absence of constraint, which
+matters most in the luminal loop, where the two coincide.
 
 **The panel is carried by experimental structures rather than predicted ones.**
 The human ITPR2 prediction is the 181-residue isoform of §11.2 and has no file

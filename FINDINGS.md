@@ -2462,3 +2462,50 @@ the project's machinery exists for that single purpose: 437 constructed checks
 across nineteen suites, most of which test that a rule *refuses* correctly,
 and a substantial number of which exist only to prove that a zero somewhere in
 this work is a measurement and not an instrument that cannot fire.
+
+---
+
+## 2026-09-09 — S25 addendum: the new results placed against the literature they change
+
+*What changed: every figure legend now says why its figure matters, and the
+discussion's opening section argues each new result against published work.*
+
+Nothing was measured again. What changed is that the results are now stated
+against what was believed before them, and doing that turned three of them
+from observations into arguments.
+
+**The land-plant absence answers a question the plant literature has left
+open for two decades.** Plant cells release calcium in response to IP₃ and no
+plant receptor gene has ever been found, to the point that the standing review
+of the subject asks in its title whether the receptor is real. This work
+supplies the genomic half of the answer: land plants do not have the gene, and
+the green algae they descend from do. That does not close the question, it
+moves it. The physiology still needs a carrier, and the useful experiment is
+now about what performs the function in a lineage that demonstrably lost the
+receptor.
+
+**The two vertebrate duplications sit on the two branches the genome-scale
+reconstructions assign to them.** Reconstructions of the proto-vertebrate,
+proto-cyclostome and proto-gnathostome genomes place the first duplication
+before the cyclostome and gnathostome split and the second after it. This
+family's two splits, dated from an independent gene tree and its own
+neighbourhood evidence, fall on those two branches. A family that agreed with
+the tree and disagreed with the genome-scale account would have been a problem
+for one of them.
+
+**The teleost result is a dosage statement made twice in two clades.** The
+teleost genome duplication kept ITPR1 doubled in 97 % of genomes and neither
+sister, while keeping all three ryanodine receptors. Retention after a genome
+duplication is biased towards dosage-sensitive genes, and the same paralogue
+is the one whose heterozygous deletion causes ataxia in humans and which sits
+among the most constrained genes in the human population record. Two
+independent lines, 300 million years apart, point at the same property of the
+same copy.
+
+**And the shared-intron result reads differently beside the ryanodine
+control.** Intron positions are among the most durable characters a gene has,
+so 46 to 49 shared between any two paralogues says the three did not merely
+diverge from a common protein but inherited a common gene boundary by
+boundary. One shared position with a family carrying the same domains and a
+separate origin is what makes that a statement about ancestry rather than
+about where splicing likes to happen.

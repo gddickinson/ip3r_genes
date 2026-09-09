@@ -54,7 +54,13 @@ non-vertebrate numbers comparable at all.
 **{fig:range_by_phylum}.** The family across the eukaryotes, drawn as a
 fraction of swept proteomes rather than of records. That denominator is the
 whole point: counted by records, a single well-sequenced alga outvotes a
-sparsely sampled phylum, and the figure would report sequencing effort.
+sparsely sampled phylum, and the figure would report sequencing effort. The
+importance of this figure is the shape rather than any single bar. A family
+present across the metazoa, in several protist lineages, in the green algae
+and in the early-diverging fungi, and absent from land plants and from the
+yeasts and moulds, is a family that was present in the eukaryotic ancestor
+and has been lost repeatedly since. That is a different claim from an animal
+innovation, and it is what the figure supports.
 
 The shape is a family that is ancestrally eukaryotic and has been lost
 repeatedly. It is in 94 % of arthropod proteomes, 96 % of nematode, and 100 %
@@ -64,12 +70,18 @@ archaeal and none of 3,537 bacterial proteomes.
 
 ![](figures/profile_separation_euk.png)
 
-**{fig:profile_separation_euk}.** The same two-profile separation outside the
-vertebrates, with the no-call band drawn. 28,137 targets were scored by at
-least one profile and 2,769 by both above the floor, which are the only ones
-where the two families can be said to compete at all. Of those, one falls
-inside the band where the instrument declines to choose. The family separation
-built for the vertebrates transfers to the eukaryotes without modification.
+**{fig:profile_separation_euk}.** The same two-profile separation outside
+the vertebrates, with the no-call band drawn. 28,137 targets were scored by
+at least one profile and 2,769 by both above the floor, which are the only
+ones where the two families can be said to compete at all. Of those, one
+falls inside the band where the instrument declines to choose. The family
+separation built for the vertebrates transfers to the eukaryotes without
+modification. The importance of this panel is that it shows the family
+separation transferring intact to organisms a billion years from where it
+was calibrated. Of 2,769 targets where the two families can be said to
+compete at all, one falls inside the band where the instrument declines to
+choose. Without that, every non-vertebrate count in Chapter 5 would be a
+mixture of two families rather than a measurement of one.
 
 ## 5.4 Land plants and Dikarya have no IP₃ receptor, and their early-diverging relatives do
 
@@ -102,8 +114,15 @@ contamination artefact.
 **{fig:plant_fungal_chase}.** Every plant and fungal record chased, with the
 cross-kingdom identities the contamination test rests on. That is the
 load-bearing axis: a genuine deep homologue is 20 to 40 % identical to its
-metazoan relatives, while an assembly contaminant is 95 to 100 % identical to
-one particular animal. Nothing here is above 40 %.
+metazoan relatives, while an assembly contaminant is 95 to 100 % identical
+to one particular animal. Nothing here is above 40 %. This figure decides
+whether the plant and fungal records are biology or contamination, which is
+the question the whole range claim turns on. A genuine deep homologue is 20
+to 40 % identical to its metazoan relatives and an assembly contaminant is
+95 to 100 % identical to one particular animal, and nothing here is above 40
+%. The surviving records are therefore real green-algal and early-diverging
+fungal genes, which is what makes the land-plant and Dikarya absences losses
+rather than the family's boundary.
 
 Twenty-two plant records and 25 fungal records survive every test, and the
 rest are fragments of real genes. The surviving plant records run from 19.9 %
@@ -160,8 +179,14 @@ same lineage as the seed, the absence next door is not a sensitivity artefact.
 
 **{fig:jackhmmer_s20}.** Per-group convergence with the sister-family trace
 beside it. One of four groups converges and the other three hit the kill
-criterion, and Chapter 4 explains why the rule that catches them is the wrong
-one.
+criterion, and Chapter 4 explains why the rule that catches them is the
+wrong one. The figure matters for what the iterated searches did not find.
+Nine targets entered an accepted model that a single pass had not reported,
+two of them in a lineage this chapter calls empty, and both are
+mannosyltransferases rather than receptors. An iterative search sensitive
+enough to reach these lineages reaches exactly far enough to pick up the
+known false positive and no further, which is the most informative result it
+could have produced.
 
 Nine targets entered an accepted model that the single pass never reported.
 They are named rather than counted, and two of them sit in a lineage this
@@ -248,10 +273,16 @@ pilot, 1 of 14 genomes was uncontrolled. Here, none.
 
 ![](figures/absence_at_genome.png)
 
-**{fig:absence_at_genome}.** Each absence claim with the number of controlled
-genomes drawn beside the number searched. A claim whose control bar is short
-is standing on nothing, and drawing the two together is the only honest way to
-present a table of zeros.
+**{fig:absence_at_genome}.** Each absence claim with the number of
+controlled genomes drawn beside the number searched. A claim whose control
+bar is short is standing on nothing, and drawing the two together is the
+only honest way to present a table of zeros. The two bars in this figure are
+the difference between a database observation and a biological claim. A
+clade with no records in any proteome may simply not have been searched
+properly, so what licenses an absence claim is the number of genomes in
+which a measured positive control recovered a comparably long, deeply
+conserved gene. Drawing the controlled count beside the searched count is
+the only honest way to present a table of zeros.
 
 **Every one of the 35 clade-level absences holds at assembly level, and none
 fails.** Ascomycota has none in 31 controlled assemblies, Streptophyta none in
@@ -276,6 +307,12 @@ then two sponges at 8 and 6.
 vertebrate paralogue count drawn as a reference line rather than as a
 category. The family's copy number is not a vertebrate story: several
 invertebrate and protist lineages carry more receptors than any vertebrate.
+The importance of drawing the vertebrate paralogue count as a reference line
+is that it shows the vertebrate three to be unremarkable. A flatworm carries
+eighteen receptors and a ciliate thirteen, so copy-number expansion in this
+family is not a vertebrate story and the three paralogues are not the
+family's high-water mark. What is specific to the vertebrates is that their
+three copies are ancient, distinct and universally retained.
 
 *Cymbomonas*, the green alga that contributed twelve of the twenty-two
 surviving plant protein records, carries **three** complete gene models across
@@ -304,12 +341,19 @@ measured from the population it has already filtered.
 
 ![](figures/identity_floor.png)
 
-**{fig:identity_floor}.** The measured identity floor and the two populations
-it separates. The negative result here is what changed the instrument: outside
-the vertebrates the annotation axis is nearly empty, with 21 of 917 clusters
-carrying an informative gene name, so a second axis was added in which every
-recorded cluster is scored against both family profiles. Neither identity nor
-coverage separates the confirmed and contradicted populations cleanly.
+**{fig:identity_floor}.** The measured identity floor and the two
+populations it separates. The negative result here is what changed the
+instrument: outside the vertebrates the annotation axis is nearly empty,
+with 21 of 917 clusters carrying an informative gene name, so a second axis
+was added in which every recorded cluster is scored against both family
+profiles. Neither identity nor coverage separates the confirmed and
+contradicted populations cleanly. The importance of this figure is a
+negative result that changed the instrument. Outside the vertebrates the
+annotation axis is nearly empty, and neither identity nor coverage separates
+the confirmed from the contradicted loci cleanly, so a threshold placed on
+either would have been a number with no population behind it. A second,
+independent axis was added for that reason, and the calibration reports both
+rather than the one that looked better.
 
 That calibration also refuses to write below a floor of genomes and confirmed
 loci, and the reason is an incident. A smoke-test run over one genome produced
@@ -322,7 +366,12 @@ pass vacuously is worse than no calibration.
 **{fig:span_inflation}.** Locus span against coding footprint, by group. A
 locus is much larger than the gene inside it, and by a factor that varies by
 group, which is the reason the intron parameter is set per group and the
-reason a locus is not a copy.
+reason a locus is not a copy. The figure matters because it shows why a
+cluster of alignments is not a gene. A locus is much larger than the coding
+sequence inside it, and by a factor that varies roughly nine-fold between
+metazoan and protist genomes, so a single intron setting and a single
+contiguity bar would be far too lax for one group and far too strict for the
+other. This is the measurement behind the decision to set both per group.
 
 ## 5.10 The family's range is stated with its scope attached
 

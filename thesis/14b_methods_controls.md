@@ -221,7 +221,7 @@ rests on it for. The build resolves each identifier against a live record,
 admits it **only if the title carries the declared phrase**, and then writes
 the bibliographic row from the fetched record.
 
-**That check caught nine of 58.** Nine identifiers written from memory
+**That check caught nine of 76.** Nine identifiers written from memory
 resolved perfectly well, to entirely different papers. A gene-duplication
 inference algorithm's identifier returned a Bayesian phylogenetics program. A
 reconciliation method's returned a paper on real-time gene expression. A

@@ -5,8 +5,8 @@ added for this document, giving the source database, the identifier queried,
 the phrase the title had to carry, the title returned, the year, the journal,
 the first author, the verdict, and what the thesis rests on the reference for.
 
-**58 references were added and 58 verified.** Nine required a corrected
-identifier before they could be.
+**76 references were added and all 76 verified.** Nine required a
+corrected identifier before they could be.
 
 ## D.1 What the rule for a new reference requires
 
@@ -33,7 +33,7 @@ Responses are archived, so the audit re-runs offline.
 
 ## D.2 What the audit caught
 
-**Nine of 58 identifiers resolved to entirely different papers.**
+**Nine of the 76 identifiers resolved to entirely different papers.**
 
 A gene-duplication inference algorithm's identifier returned a Bayesian
 phylogenetics program. A reconciliation method's returned a paper on
@@ -58,9 +58,9 @@ bibliography assembled by hand has no way to notice.**
 ## D.3 What the new references are
 
 By audit class, there are 12 tools this project actually ran, whose versions
-are recorded in the toolchain manifest; 20 methods, models or statistical
+are recorded in the toolchain manifest; 21 methods, models or statistical
 procedures implemented or applied; 10 databases, cited at the release the
-project used; and 16 substantive biological or evolutionary claims.
+project used; and 33 substantive biological or evolutionary claims.
 
 The tool and method references are the bulk of the addition and the reason it
 was needed at all. The manuscript cites 29 references and none of them is a

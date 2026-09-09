@@ -3849,3 +3849,37 @@ The ledger then caught its own chapter twice while it was being written: adding
 D79 moved the decision count from 82 to 83, and committing the new statistics
 table moved the table count. Both sentences were corrected because a check
 refused the document, which is the behaviour the chapter describes.
+
+### Addendum (same session) — legends that say why, and a discussion that cites
+
+The user read the assembled thesis again and asked for two changes: every
+figure legend to explain the importance of what its figure shows, and §15.1 to
+discuss the importance of each new result with references backing the claims.
+
+**All 103 figure legends were expanded.** Each already described the figure
+and defended its construction, which is what a legend in this project's
+per-task reports does, and none said why the panel was worth drawing. Each now
+closes with what it changes for a reader: the coverage figure with the ceiling
+it sets on every structural argument, the exon tracks with why the coding
+fraction is the point, the ablation panel with what it says about how to spend
+a bait-panel budget. The importance sentence goes last, because that is where
+it is read last.
+
+**§15.1 went from 409 words to 1,893**, restructured into six subsections, one
+per new result, each stating the result and then what it changes about a
+standing position. Three of them are arguments rather than observations once
+the literature is beside them: the land-plant absence answers a question the
+plant literature has left open for two decades, the two duplication splits
+fall on the two branches the genome-scale reconstructions assign to 1R and 2R,
+and the teleost retention of ITPR1 is the same dosage statement as its human
+deletion phenotype made 300 million years apart.
+
+**Eighteen new references, and all eighteen passed the audit first time.**
+They were declared by identifier plus a title phrase and resolved live, the
+same rule that caught nine wrong identifiers when the bibliography was first
+built. The count of added references went 58 to 76, which moved two claims and
+four sentences across three chapters and the appendix; each was corrected
+because the build refused the document.
+
+Recorded as **D80**. 74,184 words, 194 pages, 232 claims, 15/15 guards, build
+exit 0.

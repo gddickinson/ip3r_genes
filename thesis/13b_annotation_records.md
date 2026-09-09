@@ -25,9 +25,14 @@ right.
 
 ![](figures/annotation_loss.png)
 
-**{fig:annotation_loss}.** Annotation loss across every recovered locus, which
-is the denominator the two cases are chosen from: 880 loci, 382 eligible, and
-360 of them at zero loss.
+**{fig:annotation_loss}.** Annotation loss across every recovered locus,
+which is the denominator the two cases are chosen from: 880 loci, 382
+eligible, and 360 of them at zero loss. The importance of drawing the full
+distribution is that it is the denominator the two validated cases are
+chosen from, and a case study without its denominator is an anecdote. Most
+eligible loci sit at zero loss, so the failures are a tail rather than a
+norm, and the two cases taken forward are the extreme of a measured
+distribution rather than the two examples that happened to be noticed.
 
 **Case A is an omission.** It is a 52.5 kb locus in a chromosome-level fish
 assembly whose contigs are 84 times the length of the gene. The gene has 56
@@ -45,9 +50,15 @@ model at all and reaches no protein.
 ![](figures/exon_tracks.png)
 
 **{fig:exon_tracks}.** The two loci at true genomic width, with exons never
-widened to be visible. A 56-exon gene over 52 kb averages 143 bp an exon, and
-fattening them would draw a gene whose coding fraction looks like 40 % when it
-is 15 %, which is the one thing the figure exists to show.
+widened to be visible. A 56-exon gene over 52 kb averages 143 bp an exon,
+and fattening them would draw a gene whose coding fraction looks like 40 %
+when it is 15 %, which is the one thing the figure exists to show. The
+importance of true genomic width is that the coding fraction is the point. A
+reader looking at exons widened for visibility would conclude the annotation
+had missed a moderate amount of easily visible sequence, when what it missed
+is a few per cent of the locus distributed over dozens of small exons across
+tens of kilobases. That geometry is why the gene is hard to annotate and why
+the failure is systematic rather than careless.
 
 ## 13.9 What the DNA says at those two loci, and five checks on it
 
@@ -106,18 +117,31 @@ of the comparison rather than as a negative result.
 
 ![](figures/fragment_tiling.png)
 
-**{fig:fragment_tiling}.** The annotated proteins tiled back onto the genome's
-own recovered loci. The proteins are translated from the assembly's own
-annotation and genome rather than downloaded, because a locus filed as a
+**{fig:fragment_tiling}.** The annotated proteins tiled back onto the
+genome's own recovered loci. The proteins are translated from the assembly's
+own annotation and genome rather than downloaded, because a locus filed as a
 pseudogene emits no protein record and the only way to ask what its model
-encodes is to translate it. The guard that matters is that the subject set is
-the genome's own loci: a query whose own locus is missing from the subject set
-lands on its nearest paralogue instead, and the row then reads as a confident
-naming disagreement, which is exactly what happened before the check existed.
+encodes is to translate it. The guard that matters is that the subject set
+is the genome's own loci: a query whose own locus is missing from the
+subject set lands on its nearest paralogue instead, and the row then reads
+as a confident naming disagreement, which is exactly what happened before
+the check existed. The importance of this figure is that it says what the
+annotation's own models actually encode, which is the difference between a
+gene the annotation missed and a gene it broke into pieces. Translating the
+models from the assembly rather than downloading proteins is what makes the
+question askable at a locus filed as a pseudogene, and those loci are
+exactly the ones under dispute.
 
 ![](figures/case_validation.png)
 
-**{fig:case_validation}.** The five checks on each case, together.
+**{fig:case_validation}.** The five checks on each case, together. The
+importance of showing the five checks together is that no single one of them
+is decisive. Splice dinucleotides, an intact reading frame, junction probes,
+exon-boundary concordance and the neighbourhood consensus each fail in
+different circumstances, and they do not fail together. A reader asking
+whether a recovered gene is an alignment artefact is asking whether every
+one of these could be wrong at once, which is what this panel is arranged to
+answer.
 
 **One number frames both cases.** One of the two assemblies files 7,380 of its
 23,345 genes as pseudogenes, which is 31.6 % of the gene set. Its 14
@@ -173,9 +197,16 @@ own reversed decoys at zero.
 ![](figures/s12_detection.png)
 
 **{fig:s12_detection}.** Detection per locus against its own reversed decoy,
-which is the spurious-mapping floor of this particular reference rather than a
-threshold. Counts are on logarithmic axes because these libraries differ
+which is the spurious-mapping floor of this particular reference rather than
+a threshold. Counts are on logarithmic axes because these libraries differ
 roughly forty-fold in depth and the comparison that matters is within a run.
+The importance of the reversed decoy is that it replaces a chosen threshold
+with a measured floor. A decoy of identical length and composition and no
+homology collects whatever this particular reference collects by accident,
+so a locus above its own decoy is detected on evidence rather than on a cut
+somebody picked. The logarithmic axes matter because the libraries differ
+about forty-fold in depth, and the comparison that means anything is between
+a locus and its decoy in the same run.
 
 **298 of 314 junctions that no annotated model spans are crossed by reads**,
 which is 94.9 %, against 95.2 % of the annotated junctions in the same genes.
@@ -183,9 +214,15 @@ which is 94.9 %, against 95.2 % of the annotated junctions in the same genes.
 ![](figures/s12_junctions.png)
 
 **{fig:s12_junctions}.** Every junction of every reference, crossed or not,
-scored per junction rather than per gene, because a bar saying "this gene has
-junction reads" is nearly the claim the case studies could already make. The
-decoy floor is drawn rather than stated.
+scored per junction rather than per gene, because a bar saying "this gene
+has junction reads" is nearly the claim the case studies could already make.
+The decoy floor is drawn rather than stated. This figure is what makes the
+transcription evidence answer the annotation question rather than a weaker
+one. That a gene is transcribed says little when part of it is already
+annotated; that the particular junctions no model contains are crossed by
+reads is direct evidence for the exon structure the annotation is missing.
+Scoring per junction rather than per gene is what separates those two
+claims.
 
 **The confound is printed beside the ratio.** Several of these libraries are
 strongly 3′-biased, and in a truncated or fragmented gene the annotated
@@ -198,8 +235,13 @@ ratio.
 ![](figures/s12_gap_coverage.png)
 
 **{fig:s12_gap_coverage}.** Read coverage over the sequence the annotation
-loses, which is the read-level form of the loss measurement and the one number
-directly comparable with it.
+loses, which is the read-level form of the loss measurement and the one
+number directly comparable with it. The importance of this figure is that it
+is the one read-level number directly comparable with the annotation-loss
+measurement made from alignments. Two independent instruments, one aligning
+a protein to a genome and one mapping reads to a spliced reference, are
+asked about the same missing sequence. Agreement between them is what rules
+out the loss being an artefact of either.
 
 ## 13.11 Four controls make the read evidence readable
 
@@ -231,8 +273,15 @@ the denominator is half the result.
 **{fig:s12_instruments}.** The deposit cross-check with its genomic negative
 control. The same junction-probe test the case studies ran is re-asked on a
 panel that now includes a species with 37,166 transcript records against the
-other two species' 43 and 10, and it still cannot answer, which is reported as
-an underpowered measurement rather than as a negative.
+other two species' 43 and 10, and it still cannot answer, which is reported
+as an underpowered measurement rather than as a negative. The importance of
+this figure is that it reports a measurement that did not reach its
+question, rather than converting that into a negative result. A deposit
+search that returns nothing in a species with tens of thousands of
+transcript records and nothing in a species with ten is two very different
+situations, and the genomic negative control is what shows the probes
+themselves work. Reporting this as underpowered keeps a database's emptiness
+from being read as a biological absence.
 
 Eleven constructed negative controls run before anything is written, and were
 mutation-tested on five deliberate breakages, all five caught. The most

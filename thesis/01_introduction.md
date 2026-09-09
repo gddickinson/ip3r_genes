@@ -24,10 +24,17 @@ signalling device rather than merely as a pore.
 **{fig:signal_hierarchy}.** The receptor's place in the phosphoinositide
 pathway, drawn as a hierarchy of scales running from the messenger to the
 cellular output. The layer this thesis is about is a single one of these
-boxes. The figure is here to show what the rest of the pathway is doing while
-the channel opens, because two of the results in later chapters concern the
-pathway rather than the channel: the loss of the family in whole eukaryotic
-kingdoms, and the enzyme repertoire that survives beside it.
+boxes. The figure is here to show what the rest of the pathway is doing
+while the channel opens, because two of the results in later chapters
+concern the pathway rather than the channel: the loss of the family in whole
+eukaryotic kingdoms, and the enzyme repertoire that survives beside it. Its
+importance to the argument is that it fixes the level at which a
+genome-scale census can and cannot speak. A census counts genes, so it can
+say whether the channel is present and how many copies a genome carries, and
+it cannot say what a cell does with the signal. Every claim in this thesis
+lives in one box of this diagram, and Chapter 12's result about the enzyme
+that makes the ligand is the one place where the box above it is measured
+too.
 
 The receptor was identified in the decade after IP₃ was shown to release
 calcium from a non-mitochondrial store in pancreatic acinar cells [R01].
@@ -41,12 +48,18 @@ for inositol 1,4,5-trisphosphate similar to ryanodine receptor* [R04].
 ![](figures/discovery_timeline.png)
 
 **{fig:discovery_timeline}.** Four decades of work on the receptor as the
-literature records it, with each milestone drawn at the year of its published
-source. The figure is generated from a curated table in which no year is
-typed: each is read from the reference row it cites, so a milestone cannot be
-dated differently from the paper it rests on. The density on the right is the
-cryo-electron microscopy era, which is what made the structural half of this
-project possible.
+literature records it, with each milestone drawn at the year of its
+published source. The figure is generated from a curated table in which no
+year is typed: each is read from the reference row it cites, so a milestone
+cannot be dated differently from the paper it rests on. The density on the
+right is the cryo-electron microscopy era, which is what made the structural
+half of this project possible. The figure matters because it shows how
+recently the evidence this thesis depends on became available. Forty years
+of work established the receptor's biochemistry and physiology, but the
+near-atomic structures that make a residue-level constraint map
+interpretable are less than a decade old, and the genome assemblies that
+make a 503-genome census possible are more recent still. The questions asked
+here could not have been asked before the right-hand end of this figure.
 
 ## 1.2 The receptor shares its entire domain architecture with a much larger sister family
 
@@ -62,14 +75,21 @@ gate, and everything between the two is the machine that couples them.
 ![](figures/channel_structure.png)
 
 **{fig:channel_structure}.** The channel measured rather than drawn. The
-figure shows one C4-symmetric subunit's Cα trace from PDB 6DQN, a human IP₃R3
-in the IP₃-bound state at 3.33 Å [R24], together with the four-fold axis, the
-axial extent of the membrane, the pore radius profile and the two
+figure shows one C4-symmetric subunit's Cα trace from PDB 6DQN, a human
+IP₃R3 in the IP₃-bound state at 3.33 Å [R24], together with the four-fold
+axis, the axial extent of the membrane, the pore radius profile and the two
 constrictions recovered from the coordinates. The narrowest luminal point
-lands on the GGGVGD selectivity-filter motif and the cytosolic constriction on
-the gate residues, neither of which the geometry was told about. That
+lands on the GGGVGD selectivity-filter motif and the cytosolic constriction
+on the gate residues, neither of which the geometry was told about. That
 agreement is what makes the measurement usable as a coordinate system in
-Chapters 11 and 12.
+Chapters 11 and 12. This measurement is load-bearing for two later chapters
+rather than illustrative. Because the filter and the gate were recovered
+from the coordinates blind, and landed on the motif and the residues the
+literature names, the same geometry can be trusted to define a luminal loop
+boundary that no annotation carries, which is what Chapter 11 needs, and to
+define a ligand pocket by distance rather than by a contact list, which is
+what Chapter 12 needs. A structure drawn from a published residue list could
+do neither, because it would only return what was put into it.
 
 In domain-annotation terms the diagnostic signatures of the family are the MIR
 domains (PF02815) in the suppressor region, the IP₃-binding core Ins145_P3_rec
@@ -87,12 +107,18 @@ twice the size at around 4,900 to 5,000 residues.
 
 ![](figures/domain_architecture.png)
 
-**{fig:domain_architecture}.** Every signature that defines an IP₃ receptor is
-also carried by a ryanodine receptor, in the same copy number, down to the two
-RIH domains. What separates the families is what the ryanodine receptors carry
-in addition: four further domains and some 2,200 extra residues. A search
-built on the shared signatures cannot tell the two apart, which is the
-practical form of a statement about descent.
+**{fig:domain_architecture}.** Every signature that defines an IP₃ receptor
+is also carried by a ryanodine receptor, in the same copy number, down to
+the two RIH domains. What separates the families is what the ryanodine
+receptors carry in addition: four further domains and some 2,200 extra
+residues. A search built on the shared signatures cannot tell the two apart,
+which is the practical form of a statement about descent. This figure is the
+reason the project has the shape it does. Because the diagnostic signatures
+cannot separate the two families, every stage from the first enumeration to
+the last structural comparison had to carry a positive family test, and the
+sister family had to be searched alongside rather than filtered out. Roughly
+half the methodological rules in Chapter 14 exist because of what this
+figure shows.
 
 Three consequences of that shared architecture run through every chapter of
 this thesis.
@@ -137,8 +163,15 @@ and IRBIT [R19].
 **{fig:gating_logic}.** What opens the channel and what closes it, drawn as
 the logic rather than as a mechanism. The point for this thesis is the last
 row: the same channel is used to produce puffs, waves and oscillations, and
-the properties that distinguish those outputs are properties of the individual
-paralogue.
+the properties that distinguish those outputs are properties of the
+individual paralogue. The importance for a census is that the three
+vertebrate paralogues are not interchangeable parts. If they were, their
+copy number would be a matter of dosage and their individual retention would
+carry little information. Because they differ in affinity, in calcium
+sensitivity and in what downstream output they produce, the finding in
+Chapter 9 that all three are retained in every vertebrate genome is a
+statement about three distinct functions rather than about three copies of
+one.
 
 Those output differences are the reason the paralogues matter. The three
 vertebrate receptors differ in IP₃ affinity, in calcium sensitivity, in

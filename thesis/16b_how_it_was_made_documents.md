@@ -129,7 +129,7 @@ sessions, with the ledger and the session log carrying the state between them.
 An agent with no memory between sessions can do this only if the state lives
 in the repository, and the protocol is what puts it there.
 
-**It made the methodology explicit.** 83 numbered decisions with the incident
+**It made the methodology explicit.** 84 numbered decisions with the incident
 that produced each is a level of methodological record-keeping that is
 uncommon in a paper, and it exists because the agent had to write down why it
 did something in order to be able to follow the same rule three weeks later.
@@ -151,7 +151,7 @@ Three things that need watching, stated because they are the risks of the
 arrangement rather than incidental faults.
 
 **A fluent agent produces plausible prose about work it has not checked.** The
-reference audit is the clearest case: nine of fifty-eight citations were
+reference audit is the clearest case: nine of seventy-six citations were
 confidently wrong, and no amount of care in the writing would have caught them.
 The only thing that caught them was a check that resolved each identifier
 against a live record. **The general lesson is that an agent's confidence is

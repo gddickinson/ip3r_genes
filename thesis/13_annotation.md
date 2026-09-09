@@ -73,8 +73,14 @@ of.
 
 ![](figures/s18_calibration.png)
 
-**{fig:s18_calibration}.** The completeness bar drawn inside the distribution
-it sits in, because a number in a legend cannot show a tail.
+**{fig:s18_calibration}.** The completeness bar drawn inside the
+distribution it sits in, because a number in a legend cannot show a tail.
+The importance of drawing the bar inside its own distribution is that the
+whole audit turns on it. Every locus in this chapter is called complete or
+not against one coverage threshold, and a threshold quoted as a number in a
+sentence cannot show whether it sits in a gap or in the middle of a
+population. The bar was validated rather than replaced here, and this panel
+is the evidence for that decision.
 
 ## 13.4 Curated and submitter-deposited gene sets differ, and only partly because of assembly quality
 
@@ -88,7 +94,13 @@ submitter-deposited ones.**
 
 **{fig:s18_by_source}.** Locus state by annotation source, raw and above the
 contiguity bar, with the control drawn beside the raw contrast rather than
-instead of it.
+instead of it. The importance of this figure is that it separates a database
+effect from an assembly effect, which no raw comparison of annotation
+sources can do. Curated and submitter-deposited gene sets are not applied to
+the same assemblies, so a difference between them partly measures which
+genomes each was run on. Drawing the contiguity-controlled contrast beside
+the raw one shows how much of the gap survives that control and how much
+does not.
 
 The confounder is obvious and is controlled rather than argued. Submitter
 assemblies are less contiguous, and a locus on a contig too short to hold the
@@ -112,7 +124,13 @@ is recorded is how vertebrate genes of this size are recorded.**
 
 **{fig:s18_family_vs_control}.** This family against its sister in the same
 assemblies. Without this comparison, a failure rate is not a statement about
-this family at all.
+this family at all. This figure carries the result that overturns the
+chapter's own premise. The audit was built expecting a large, many-exon gene
+with a confusable sister family to be recorded badly, and the sister family
+in the same assemblies through the same pipelines fails at a comparable
+rate. Without a control of this kind, a quarter of loci not delivered as one
+model reads as an indictment of this family; with it, it reads as the
+failure rate for vertebrate genes of this size.
 
 **One state does separate, and it is the family-specific one.** An IP₃
 receptor locus is 2.7 times more likely than a ryanodine locus to be held only
@@ -155,8 +173,14 @@ family and its sister together and therefore separates neither.
 
 ![](figures/s18_protein_side.png)
 
-**{fig:s18_protein_side}.** The protein records, showing what the name claims
-against what the sequence is.
+**{fig:s18_protein_side}.** The protein records, showing what the name
+claims against what the sequence is. The importance of separating what a
+name claims from what a sequence is is that the two failure modes have
+different remedies. The family and paralogue calls turn out not to be in
+dispute, so this is not a record full of misidentified proteins; more than
+half of it simply carries no usable gene symbol. A record that is correct
+and unfindable needs a name, not a reannotation, and that distinction is
+what the panel makes visible.
 
 **Would a signature query have found them?** The signature that names this
 family reaches 95.6 % of the records both instruments agree on and 81.2 % of
