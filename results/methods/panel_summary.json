@@ -1,0 +1,155 @@
+{
+ "n_genomes": 309,
+ "full_panel_vs_ledger_mismatches": 0,
+ "cov_found": 0.7,
+ "panels": {
+  "drop_bird": {
+   "n_baits": 31,
+   "itpr_recall": 0.8468,
+   "delta_vs_full": 2,
+   "n_lost": 0,
+   "n_gained": 2
+  },
+  "full38": {
+   "n_baits": 38,
+   "itpr_recall": 0.8447,
+   "delta_vs_full": 0,
+   "n_lost": 0,
+   "n_gained": 0
+  },
+  "labelled_only": {
+   "n_baits": 35,
+   "itpr_recall": 0.8447,
+   "delta_vs_full": 0,
+   "n_lost": 0,
+   "n_gained": 0
+  },
+  "no_ryr_control": {
+   "n_baits": 30,
+   "itpr_recall": 0.8447,
+   "delta_vs_full": 0,
+   "n_lost": 0,
+   "n_gained": 0
+  },
+  "drop_amphibian": {
+   "n_baits": 34,
+   "itpr_recall": 0.8447,
+   "delta_vs_full": 0,
+   "n_lost": 0,
+   "n_gained": 0
+  },
+  "drop_cartilaginous_fish": {
+   "n_baits": 35,
+   "itpr_recall": 0.8447,
+   "delta_vs_full": 0,
+   "n_lost": 0,
+   "n_gained": 0
+  },
+  "drop_cyclostome": {
+   "n_baits": 36,
+   "itpr_recall": 0.8447,
+   "delta_vs_full": 0,
+   "n_lost": 0,
+   "n_gained": 0
+  },
+  "drop_mammal": {
+   "n_baits": 31,
+   "itpr_recall": 0.8447,
+   "delta_vs_full": 0,
+   "n_lost": 0,
+   "n_gained": 0
+  },
+  "drop_reptile": {
+   "n_baits": 34,
+   "itpr_recall": 0.8447,
+   "delta_vs_full": 0,
+   "n_lost": 0,
+   "n_gained": 0
+  },
+  "s3_seeds_only": {
+   "n_baits": 25,
+   "itpr_recall": 0.8436,
+   "delta_vs_full": -1,
+   "n_lost": 1,
+   "n_gained": 0
+  },
+  "human_only": {
+   "n_baits": 4,
+   "itpr_recall": 0.8436,
+   "delta_vs_full": -1,
+   "n_lost": 3,
+   "n_gained": 2
+  },
+  "drop_ray_finned_fish": {
+   "n_baits": 30,
+   "itpr_recall": 0.8436,
+   "delta_vs_full": -1,
+   "n_lost": 1,
+   "n_gained": 0
+  },
+  "drop_lobe_finned_fish": {
+   "n_baits": 35,
+   "itpr_recall": 0.8436,
+   "delta_vs_full": -1,
+   "n_lost": 1,
+   "n_gained": 0
+  },
+  "one_per_cell_nonhuman": {
+   "n_baits": 4,
+   "itpr_recall": 0.8436,
+   "delta_vs_full": -1,
+   "n_lost": 1,
+   "n_gained": 0
+  },
+  "amniote_only": {
+   "n_baits": 18,
+   "itpr_recall": 0.8425,
+   "delta_vs_full": -2,
+   "n_lost": 2,
+   "n_gained": 0
+  },
+  "drop_ITPR1_baits": {
+   "n_baits": 29,
+   "itpr_recall": 0.5879,
+   "delta_vs_full": -238,
+   "n_lost": 261,
+   "n_gained": 23
+  },
+  "drop_ITPR2_baits": {
+   "n_baits": 30,
+   "itpr_recall": 0.5858,
+   "delta_vs_full": -240,
+   "n_lost": 253,
+   "n_gained": 13
+  },
+  "drop_ITPR3_baits": {
+   "n_baits": 28,
+   "itpr_recall": 0.5847,
+   "delta_vs_full": -241,
+   "n_lost": 269,
+   "n_gained": 28
+  },
+  "basal_only": {
+   "n_baits": 3,
+   "itpr_recall": 0.0,
+   "delta_vs_full": -783,
+   "n_lost": 783,
+   "n_gained": 0
+  }
+ },
+ "design_rule": {
+  "identity_bin_for_95pct_recall": "0.60-0.70",
+  "n_measurements": 9199,
+  "n_no_alignment": 38,
+  "n_aligned": 9161,
+  "min_sufficient_identity_percentiles": {
+   "p50": 0.7476,
+   "p75": 0.7802,
+   "p90": 0.8244,
+   "p95": 0.8261,
+   "p99": 0.841,
+   "p100": 0.8563
+  },
+  "n_cells_with_single_bait_rescue": 1050
+ }
+}

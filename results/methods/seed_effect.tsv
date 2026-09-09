@@ -1,0 +1,5 @@
+run	seed	accepted_targets	of_which_family	of_which_not_family	family_unique_to_this_seed	targets_unique_to_this_seed	hmmsearch_family_not_in_this_run
+itpr1_human	Q14643	7226	4787	2439	0	6	343
+itpr_fly	P29993	7235	4797	2438	6	11	333
+itpr_acanthamoeba	L8GF85	24902	4953	19949	162	17685	177
+ALL THREE (intersection)			4785				170

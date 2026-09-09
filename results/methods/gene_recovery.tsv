@@ -1,0 +1,1237 @@
+accession	organism	vclass	cell	ledger_status	gene_present	has_reference_proteome	proteome_id	n_family_protein_records_species	n_records_resolving_to_any_cell	n_records_resolving_to_cell	recovery_channel
+GCA_000699545.1	Podiceps cristatus	Aves	ITPR1	assembly_gap	1	1	UP000053854	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_000699545.1	Podiceps cristatus	Aves	ITPR2	fragment	1	1	UP000053854	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_000699545.1	Podiceps cristatus	Aves	ITPR3	found_no_annotation	1	1	UP000053854	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_000699545.1	Podiceps cristatus	Aves	RYR	assembly_gap	1	1	UP000053854	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	1	1	UP000053745	1	0	0	genome_only:records_exist_but_none_full_length
+GCA_000699945.1	Cathartes aura	Aves	ITPR2	fragment	1	1	UP000053745	1	0	0	genome_only:records_exist_but_none_full_length
+GCA_000699945.1	Cathartes aura	Aves	ITPR3	found_annotated	1	1	UP000053745	1	0	0	genome_only:records_exist_but_none_full_length
+GCA_000699945.1	Cathartes aura	Aves	RYR	assembly_gap	1	1	UP000053745	1	0	0	genome_only:records_exist_but_none_full_length
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	ITPR1	found_unannotated	1	1	UP000242450	13	0	0	genome_only:records_exist_but_none_full_length
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	ITPR2	found_unannotated	1	1	UP000242450	13	0	0	genome_only:records_exist_but_none_full_length
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	ITPR3	tblastn_trace	1	1	UP000242450	13	0	0	genome_only:records_exist_but_none_full_length
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	RYR	found_unannotated	1	1	UP000242450	13	0	0	genome_only:records_exist_but_none_full_length
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	1	1	UP000233556	8	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	1	1	UP000233556	8	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR3	found_annotated	1	1	UP000233556	8	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_002844005.1	Limosa lapponica baueri	Aves	RYR	found_unannotated	1	1	UP000233556	8	1	1	protein_database_and_genome
+GCA_002909625.1	Bambusicola thoracicus	Aves	ITPR1	assembly_gap	1	1	UP000237246	8	0	0	genome_only:records_exist_but_none_full_length
+GCA_002909625.1	Bambusicola thoracicus	Aves	ITPR2	assembly_gap	1	1	UP000237246	8	0	0	genome_only:records_exist_but_none_full_length
+GCA_002909625.1	Bambusicola thoracicus	Aves	ITPR3	assembly_gap	1	1	UP000237246	8	0	0	genome_only:records_exist_but_none_full_length
+GCA_002909625.1	Bambusicola thoracicus	Aves	RYR	assembly_gap	1	1	UP000237246	8	0	0	genome_only:records_exist_but_none_full_length
+GCA_003113815.1	Sphenodon punctatus	Lepidosauria	ITPR1	found_no_annotation	1	1	UP000694392	9	5	1	protein_database_and_genome
+GCA_003113815.1	Sphenodon punctatus	Lepidosauria	ITPR2	found_no_annotation	1	1	UP000694392	9	5	0	genome_only:no_record_resolves_to_this_paralog
+GCA_003113815.1	Sphenodon punctatus	Lepidosauria	ITPR3	found_no_annotation	1	1	UP000694392	9	5	0	genome_only:no_record_resolves_to_this_paralog
+GCA_003113815.1	Sphenodon punctatus	Lepidosauria	RYR	found_no_annotation	1	1	UP000694392	9	5	4	protein_database_and_genome
+GCA_004320025.1	Laticauda laticaudata	Lepidosauria	ITPR1	assembly_gap	1	1	UP000694406	30	8	0	genome_only:no_record_resolves_to_this_paralog
+GCA_004320025.1	Laticauda laticaudata	Lepidosauria	ITPR2	assembly_gap	1	1	UP000694406	30	8	0	genome_only:no_record_resolves_to_this_paralog
+GCA_004320025.1	Laticauda laticaudata	Lepidosauria	ITPR3	assembly_gap	1	1	UP000694406	30	8	0	genome_only:no_record_resolves_to_this_paralog
+GCA_004320025.1	Laticauda laticaudata	Lepidosauria	RYR	found_no_annotation	1	1	UP000694406	30	8	8	protein_database_and_genome
+GCA_006937325.1	Anomalopteryx didiformis	Aves	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_006937325.1	Anomalopteryx didiformis	Aves	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_006937325.1	Anomalopteryx didiformis	Aves	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_006937325.1	Anomalopteryx didiformis	Aves	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_007760645.1	Sousa chinensis	Mammalia	ITPR1	found_no_annotation	1	1	UP000295264	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_007760645.1	Sousa chinensis	Mammalia	ITPR2	found_no_annotation	1	1	UP000295264	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_007760645.1	Sousa chinensis	Mammalia	ITPR3	found_no_annotation	1	1	UP000295264	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_007760645.1	Sousa chinensis	Mammalia	RYR	found_no_annotation	1	1	UP000295264	1	1	1	protein_database_and_genome
+GCA_008658365.1	Alca torda	Aves	ITPR1	found_annotated	1	1	UP000536033	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_008658365.1	Alca torda	Aves	ITPR2	found_annotated	1	1	UP000536033	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_008658365.1	Alca torda	Aves	ITPR3	found_annotated	1	1	UP000536033	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_008658365.1	Alca torda	Aves	RYR	found_annotated	1	1	UP000536033	6	1	1	protein_database_and_genome
+GCA_009769605.1	Bucorvus abyssinicus	Aves	ITPR1	found_annotated	1	1	UP000551127	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_009769605.1	Bucorvus abyssinicus	Aves	ITPR2	found_annotated	1	1	UP000551127	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_009769605.1	Bucorvus abyssinicus	Aves	ITPR3	found_annotated	1	1	UP000551127	5	2	1	protein_database_and_genome
+GCA_009769605.1	Bucorvus abyssinicus	Aves	RYR	found_annotated	1	1	UP000551127	5	2	1	protein_database_and_genome
+GCA_009819775.1	Phoenicopterus ruber ruber	Aves	ITPR1	found_annotated	1	1	UP000053700	1	0	0	genome_only:records_exist_but_none_full_length
+GCA_009819775.1	Phoenicopterus ruber ruber	Aves	ITPR2	found_annotated	1	1	UP000053700	1	0	0	genome_only:records_exist_but_none_full_length
+GCA_009819775.1	Phoenicopterus ruber ruber	Aves	ITPR3	found_annotated	1	1	UP000053700	1	0	0	genome_only:records_exist_but_none_full_length
+GCA_009819775.1	Phoenicopterus ruber ruber	Aves	RYR	found_annotated	1	1	UP000053700	1	0	0	genome_only:records_exist_but_none_full_length
+GCA_010411085.1	Cervus hanglu yarkandensis	Mammalia	ITPR1	found_annotated	1	1	UP000631465	0	0	0	genome_only:no_family_record_for_species
+GCA_010411085.1	Cervus hanglu yarkandensis	Mammalia	ITPR2	found_annotated	1	1	UP000631465	0	0	0	genome_only:no_family_record_for_species
+GCA_010411085.1	Cervus hanglu yarkandensis	Mammalia	ITPR3	found_annotated	1	1	UP000631465	0	0	0	genome_only:no_family_record_for_species
+GCA_010411085.1	Cervus hanglu yarkandensis	Mammalia	RYR	found_annotated	1	1	UP000631465	0	0	0	genome_only:no_family_record_for_species
+GCA_011823955.1	Dissostichus mawsoni	Actinopteri	ITPR1	found_unannotated	1	1	UP000518266	13	4	0	genome_only:no_record_resolves_to_this_paralog
+GCA_011823955.1	Dissostichus mawsoni	Actinopteri	ITPR2	found_unannotated	1	1	UP000518266	13	4	0	genome_only:no_record_resolves_to_this_paralog
+GCA_011823955.1	Dissostichus mawsoni	Actinopteri	ITPR3	found_unannotated	1	1	UP000518266	13	4	0	genome_only:no_record_resolves_to_this_paralog
+GCA_011823955.1	Dissostichus mawsoni	Actinopteri	RYR	found_annotated	1	1	UP000518266	13	4	4	protein_database_and_genome
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR1	found_unannotated	1	1	UP000534426	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR2	found_unannotated	1	1	UP000534426	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	1	1	UP000534426	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013389825.1	Crypturellus undulatus	Aves	RYR	found_annotated	1	1	UP000534426	6	1	1	protein_database_and_genome
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR1	found_unannotated	1	1	UP000531151	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	1	1	UP000531151	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	1	1	UP000531151	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013389885.1	Geococcyx californianus	Aves	RYR	assembly_gap	1	1	UP000531151	6	1	1	protein_database_and_genome
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	1	1	UP000660247	0	0	0	genome_only:no_family_record_for_species
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	1	1	UP000660247	0	0	0	genome_only:no_family_record_for_species
+GCA_013389965.1	Todus mexicanus	Aves	ITPR3	found_annotated	1	1	UP000660247	0	0	0	genome_only:no_family_record_for_species
+GCA_013389965.1	Todus mexicanus	Aves	RYR	found_unannotated	1	1	UP000660247	0	0	0	genome_only:no_family_record_for_species
+GCA_013389985.1	Dryoscopus gambensis	Aves	ITPR1	found_unannotated	1	1	UP000604080	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013389985.1	Dryoscopus gambensis	Aves	ITPR2	found_unannotated	1	1	UP000604080	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013389985.1	Dryoscopus gambensis	Aves	ITPR3	found_annotated	1	1	UP000604080	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013389985.1	Dryoscopus gambensis	Aves	RYR	assembly_gap	1	1	UP000604080	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013390065.1	Chloropsis hardwickii	Aves	ITPR1	found_unannotated	1	1	UP000640999	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013390065.1	Chloropsis hardwickii	Aves	ITPR2	found_unannotated	1	1	UP000640999	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013390065.1	Chloropsis hardwickii	Aves	ITPR3	found_annotated	1	1	UP000640999	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013390065.1	Chloropsis hardwickii	Aves	RYR	found_annotated	1	1	UP000640999	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	1	1	UP000629438	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	1	1	UP000629438	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR3	found_annotated	1	1	UP000629438	2	1	1	protein_database_and_genome
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	1	1	UP000629438	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013396355.1	Menura novaehollandiae	Aves	ITPR1	found_unannotated	1	1	UP000521578	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013396355.1	Menura novaehollandiae	Aves	ITPR2	found_unannotated	1	1	UP000521578	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013396355.1	Menura novaehollandiae	Aves	ITPR3	found_annotated	1	1	UP000521578	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013396355.1	Menura novaehollandiae	Aves	RYR	found_annotated	1	1	UP000521578	5	1	1	protein_database_and_genome
+GCA_013396465.1	Smithornis capensis	Aves	ITPR1	found_unannotated	1	1	UP000567624	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013396465.1	Smithornis capensis	Aves	ITPR2	found_unannotated	1	1	UP000567624	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013396465.1	Smithornis capensis	Aves	ITPR3	found_annotated	1	1	UP000567624	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013396465.1	Smithornis capensis	Aves	RYR	found_annotated	1	1	UP000567624	6	1	1	protein_database_and_genome
+GCA_013396485.1	Ptilorrhoa leucosticta	Aves	ITPR1	found_unannotated	1	1	UP000547721	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013396485.1	Ptilorrhoa leucosticta	Aves	ITPR2	found_unannotated	1	1	UP000547721	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013396485.1	Ptilorrhoa leucosticta	Aves	ITPR3	assembly_gap	1	1	UP000547721	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013396485.1	Ptilorrhoa leucosticta	Aves	RYR	found_annotated	1	1	UP000547721	5	1	1	protein_database_and_genome
+GCA_013396675.1	Eubucco bourcierii	Aves	ITPR1	found_annotated	1	1	UP000583613	5	3	1	protein_database_and_genome
+GCA_013396675.1	Eubucco bourcierii	Aves	ITPR2	assembly_gap	1	1	UP000583613	5	3	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013396675.1	Eubucco bourcierii	Aves	ITPR3	found_annotated	1	1	UP000583613	5	3	1	protein_database_and_genome
+GCA_013396675.1	Eubucco bourcierii	Aves	RYR	found_annotated	1	1	UP000583613	5	3	1	protein_database_and_genome
+GCA_013396835.1	Psilopogon haemacephalus	Aves	ITPR1	found_annotated	1	1	UP000574528	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013396835.1	Psilopogon haemacephalus	Aves	ITPR2	assembly_gap	1	1	UP000574528	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013396835.1	Psilopogon haemacephalus	Aves	ITPR3	found_annotated	1	1	UP000574528	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013396835.1	Psilopogon haemacephalus	Aves	RYR	found_unannotated	1	1	UP000574528	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013396875.1	Vireo altiloquus	Aves	ITPR1	found_unannotated	1	1	UP000589495	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013396875.1	Vireo altiloquus	Aves	ITPR2	found_unannotated	1	1	UP000589495	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013396875.1	Vireo altiloquus	Aves	ITPR3	found_annotated	1	1	UP000589495	5	2	1	protein_database_and_genome
+GCA_013396875.1	Vireo altiloquus	Aves	RYR	found_annotated	1	1	UP000589495	5	2	1	protein_database_and_genome
+GCA_013396935.1	Baryphthengus martii	Aves	ITPR1	assembly_gap	1	1	UP000578343	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013396935.1	Baryphthengus martii	Aves	ITPR2	found_unannotated	1	1	UP000578343	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013396935.1	Baryphthengus martii	Aves	ITPR3	found_annotated	1	1	UP000578343	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013396935.1	Baryphthengus martii	Aves	RYR	assembly_gap	1	1	UP000578343	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013396975.1	Bucco capensis	Aves	ITPR1	found_unannotated	1	1	UP000534107	9	0	0	genome_only:records_exist_but_none_full_length
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	1	1	UP000534107	9	0	0	genome_only:records_exist_but_none_full_length
+GCA_013396975.1	Bucco capensis	Aves	ITPR3	assembly_gap	1	1	UP000534107	9	0	0	genome_only:records_exist_but_none_full_length
+GCA_013396975.1	Bucco capensis	Aves	RYR	assembly_gap	1	1	UP000534107	9	0	0	genome_only:records_exist_but_none_full_length
+GCA_013397015.1	Myiagra hebetior	Aves	ITPR1	found_annotated	1	1	UP000534930	4	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397015.1	Myiagra hebetior	Aves	ITPR2	found_unannotated	1	1	UP000534930	4	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397015.1	Myiagra hebetior	Aves	ITPR3	found_annotated	1	1	UP000534930	4	2	1	protein_database_and_genome
+GCA_013397015.1	Myiagra hebetior	Aves	RYR	found_annotated	1	1	UP000534930	4	2	1	protein_database_and_genome
+GCA_013397245.1	Thryothorus ludovicianus	Aves	ITPR1	assembly_gap	1	1	UP000558509	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013397245.1	Thryothorus ludovicianus	Aves	ITPR2	found_unannotated	1	1	UP000558509	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013397245.1	Thryothorus ludovicianus	Aves	ITPR3	assembly_gap	1	1	UP000558509	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013397245.1	Thryothorus ludovicianus	Aves	RYR	assembly_gap	1	1	UP000558509	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR1	tblastn_trace	1	1	UP000573697	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR2	found_unannotated	1	1	UP000573697	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR3	found_annotated	1	1	UP000573697	4	1	1	protein_database_and_genome
+GCA_013397295.1	Polioptila caerulea	Aves	RYR	found_annotated	1	1	UP000573697	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397395.1	Sinosuthora webbiana	Aves	ITPR1	found_unannotated	1	1	UP000580691	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397395.1	Sinosuthora webbiana	Aves	ITPR2	found_unannotated	1	1	UP000580691	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397395.1	Sinosuthora webbiana	Aves	ITPR3	found_annotated	1	1	UP000580691	5	2	1	protein_database_and_genome
+GCA_013397395.1	Sinosuthora webbiana	Aves	RYR	found_annotated	1	1	UP000580691	5	2	1	protein_database_and_genome
+GCA_013397465.1	Furnarius figulus	Aves	ITPR1	found_annotated	1	1	UP000529852	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397465.1	Furnarius figulus	Aves	ITPR2	found_unannotated	1	1	UP000529852	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397465.1	Furnarius figulus	Aves	ITPR3	found_annotated	1	1	UP000529852	5	1	1	protein_database_and_genome
+GCA_013397465.1	Furnarius figulus	Aves	RYR	assembly_gap	1	1	UP000529852	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR1	assembly_gap	1	1	UP000525714	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR2	found_unannotated	1	1	UP000525714	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	1	1	UP000525714	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397495.1	Mionectes macconnelli	Aves	RYR	found_annotated	1	1	UP000525714	6	1	1	protein_database_and_genome
+GCA_013397535.1	Pterocles burchelli	Aves	ITPR1	found_unannotated	1	1	UP000522270	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397535.1	Pterocles burchelli	Aves	ITPR2	found_unannotated	1	1	UP000522270	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397535.1	Pterocles burchelli	Aves	ITPR3	found_annotated	1	1	UP000522270	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397535.1	Pterocles burchelli	Aves	RYR	found_annotated	1	1	UP000522270	4	1	1	protein_database_and_genome
+GCA_013397635.1	Columbina picui	Aves	ITPR1	found_annotated	1	1	UP000530263	6	2	1	protein_database_and_genome
+GCA_013397635.1	Columbina picui	Aves	ITPR2	found_unannotated	1	1	UP000530263	6	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397635.1	Columbina picui	Aves	ITPR3	tblastn_trace	1	1	UP000530263	6	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397635.1	Columbina picui	Aves	RYR	found_annotated	1	1	UP000530263	6	2	1	protein_database_and_genome
+GCA_013397815.1	Aleadryas rufinucha	Aves	ITPR1	found_unannotated	1	1	UP000557196	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013397815.1	Aleadryas rufinucha	Aves	ITPR2	found_unannotated	1	1	UP000557196	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013397815.1	Aleadryas rufinucha	Aves	ITPR3	found_annotated	1	1	UP000557196	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013397815.1	Aleadryas rufinucha	Aves	RYR	found_unannotated	1	1	UP000557196	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013397895.1	Origma solitaria	Aves	ITPR1	found_unannotated	1	1	UP000571324	9	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397895.1	Origma solitaria	Aves	ITPR2	found_unannotated	1	1	UP000571324	9	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397895.1	Origma solitaria	Aves	ITPR3	found_annotated	1	1	UP000571324	9	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397895.1	Origma solitaria	Aves	RYR	found_annotated	1	1	UP000571324	9	1	1	protein_database_and_genome
+GCA_013397955.1	Grantiella picta	Aves	ITPR1	found_unannotated	1	1	UP000575029	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397955.1	Grantiella picta	Aves	ITPR2	found_unannotated	1	1	UP000575029	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397955.1	Grantiella picta	Aves	ITPR3	found_annotated	1	1	UP000575029	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013397955.1	Grantiella picta	Aves	RYR	found_annotated	1	1	UP000575029	4	1	1	protein_database_and_genome
+GCA_013398125.1	Aegotheles bennettii	Aves	ITPR1	found_unannotated	1	1	UP000559068	8	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398125.1	Aegotheles bennettii	Aves	ITPR2	assembly_gap	1	1	UP000559068	8	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398125.1	Aegotheles bennettii	Aves	ITPR3	found_annotated	1	1	UP000559068	8	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398125.1	Aegotheles bennettii	Aves	RYR	found_annotated	1	1	UP000559068	8	1	1	protein_database_and_genome
+GCA_013398155.1	Pedionomus torquatus	Aves	ITPR1	found_annotated	1	1	UP000565207	4	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398155.1	Pedionomus torquatus	Aves	ITPR2	found_unannotated	1	1	UP000565207	4	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398155.1	Pedionomus torquatus	Aves	ITPR3	found_annotated	1	1	UP000565207	4	2	1	protein_database_and_genome
+GCA_013398155.1	Pedionomus torquatus	Aves	RYR	found_annotated	1	1	UP000565207	4	2	1	protein_database_and_genome
+GCA_013398175.1	Climacteris rufus	Aves	ITPR1	found_annotated	1	1	UP000580879	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398175.1	Climacteris rufus	Aves	ITPR2	found_unannotated	1	1	UP000580879	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398175.1	Climacteris rufus	Aves	ITPR3	found_annotated	1	1	UP000580879	5	2	1	protein_database_and_genome
+GCA_013398175.1	Climacteris rufus	Aves	RYR	found_annotated	1	1	UP000580879	5	2	1	protein_database_and_genome
+GCA_013398455.1	Loxia curvirostra	Aves	ITPR1	found_unannotated	1	1	UP000564784	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398455.1	Loxia curvirostra	Aves	ITPR2	found_unannotated	1	1	UP000564784	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398455.1	Loxia curvirostra	Aves	ITPR3	found_annotated	1	1	UP000564784	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398455.1	Loxia curvirostra	Aves	RYR	found_annotated	1	1	UP000564784	3	1	1	protein_database_and_genome
+GCA_013398575.1	Certhia familiaris	Aves	ITPR1	found_annotated	1	1	UP000611277	4	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398575.1	Certhia familiaris	Aves	ITPR2	found_unannotated	1	1	UP000611277	4	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398575.1	Certhia familiaris	Aves	ITPR3	found_annotated	1	1	UP000611277	4	2	1	protein_database_and_genome
+GCA_013398575.1	Certhia familiaris	Aves	RYR	found_annotated	1	1	UP000611277	4	2	1	protein_database_and_genome
+GCA_013398615.1	Brachypodius melanocephalos	Aves	ITPR1	found_unannotated	1	1	UP000540762	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398615.1	Brachypodius melanocephalos	Aves	ITPR2	found_unannotated	1	1	UP000540762	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398615.1	Brachypodius melanocephalos	Aves	ITPR3	found_annotated	1	1	UP000540762	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398615.1	Brachypodius melanocephalos	Aves	RYR	found_annotated	1	1	UP000540762	4	1	1	protein_database_and_genome
+GCA_013398795.1	Elachura formosa	Aves	ITPR1	found_unannotated	1	1	UP000623542	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013398795.1	Elachura formosa	Aves	ITPR2	found_unannotated	1	1	UP000623542	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013398795.1	Elachura formosa	Aves	ITPR3	tblastn_trace	1	1	UP000623542	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013398795.1	Elachura formosa	Aves	RYR	found_annotated	1	1	UP000623542	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013398835.1	Emberiza fucata	Aves	ITPR1	assembly_gap	1	1	UP000580681	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398835.1	Emberiza fucata	Aves	ITPR2	found_unannotated	1	1	UP000580681	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398835.1	Emberiza fucata	Aves	ITPR3	found_annotated	1	1	UP000580681	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398835.1	Emberiza fucata	Aves	RYR	found_annotated	1	1	UP000580681	4	1	1	protein_database_and_genome
+GCA_013398935.1	Ceuthmochares aereus	Aves	ITPR1	found_unannotated	1	1	UP000519239	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398935.1	Ceuthmochares aereus	Aves	ITPR2	found_unannotated	1	1	UP000519239	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398935.1	Ceuthmochares aereus	Aves	ITPR3	assembly_gap	1	1	UP000519239	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398935.1	Ceuthmochares aereus	Aves	RYR	found_annotated	1	1	UP000519239	6	1	1	protein_database_and_genome
+GCA_013398955.1	Callaeas wilsoni	Aves	ITPR1	assembly_gap	1	1	UP000576729	8	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398955.1	Callaeas wilsoni	Aves	ITPR2	found_unannotated	1	1	UP000576729	8	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398955.1	Callaeas wilsoni	Aves	ITPR3	found_annotated	1	1	UP000576729	8	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398955.1	Callaeas wilsoni	Aves	RYR	found_annotated	1	1	UP000576729	8	1	1	protein_database_and_genome
+GCA_013398975.1	Catharus fuscescens	Aves	ITPR1	assembly_gap	1	1	UP000519684	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398975.1	Catharus fuscescens	Aves	ITPR2	found_unannotated	1	1	UP000519684	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013398975.1	Catharus fuscescens	Aves	ITPR3	found_annotated	1	1	UP000519684	4	1	1	protein_database_and_genome
+GCA_013398975.1	Catharus fuscescens	Aves	RYR	found_annotated	1	1	UP000519684	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399035.1	Quiscalus mexicanus	Aves	ITPR1	assembly_gap	1	1	UP000552319	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399035.1	Quiscalus mexicanus	Aves	ITPR2	assembly_gap	1	1	UP000552319	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399035.1	Quiscalus mexicanus	Aves	ITPR3	found_annotated	1	1	UP000552319	5	1	1	protein_database_and_genome
+GCA_013399035.1	Quiscalus mexicanus	Aves	RYR	found_unannotated	1	1	UP000552319	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399075.1	Chloroceryle aenea	Aves	ITPR1	found_annotated	1	1	UP000579406	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399075.1	Chloroceryle aenea	Aves	ITPR2	found_unannotated	1	1	UP000579406	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399075.1	Chloroceryle aenea	Aves	ITPR3	found_annotated	1	1	UP000579406	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399075.1	Chloroceryle aenea	Aves	RYR	found_annotated	1	1	UP000579406	4	1	1	protein_database_and_genome
+GCA_013399305.1	Rostratula benghalensis	Aves	ITPR1	found_annotated	1	1	UP000545435	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399305.1	Rostratula benghalensis	Aves	ITPR2	found_unannotated	1	1	UP000545435	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399305.1	Rostratula benghalensis	Aves	ITPR3	found_annotated	1	1	UP000545435	3	1	1	protein_database_and_genome
+GCA_013399305.1	Rostratula benghalensis	Aves	RYR	found_annotated	1	1	UP000545435	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399395.1	Nyctiprogne leucopyga	Aves	ITPR1	found_annotated	1	1	UP000551823	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399395.1	Nyctiprogne leucopyga	Aves	ITPR2	found_unannotated	1	1	UP000551823	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399395.1	Nyctiprogne leucopyga	Aves	ITPR3	found_annotated	1	1	UP000551823	2	1	1	protein_database_and_genome
+GCA_013399395.1	Nyctiprogne leucopyga	Aves	RYR	assembly_gap	1	1	UP000551823	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399455.1	Anthoscopus minutus	Aves	ITPR1	found_unannotated	1	1	UP000554720	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399455.1	Anthoscopus minutus	Aves	ITPR2	assembly_gap	1	1	UP000554720	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399455.1	Anthoscopus minutus	Aves	ITPR3	assembly_gap	1	1	UP000554720	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399455.1	Anthoscopus minutus	Aves	RYR	assembly_gap	1	1	UP000554720	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399495.1	Corythaixoides concolor	Aves	ITPR1	found_unannotated	1	1	UP000526942	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399495.1	Corythaixoides concolor	Aves	ITPR2	found_unannotated	1	1	UP000526942	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399495.1	Corythaixoides concolor	Aves	ITPR3	found_annotated	1	1	UP000526942	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399495.1	Corythaixoides concolor	Aves	RYR	found_annotated	1	1	UP000526942	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399565.1	Podilymbus podiceps	Aves	ITPR1	found_unannotated	1	1	UP000555275	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399565.1	Podilymbus podiceps	Aves	ITPR2	assembly_gap	1	1	UP000555275	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399565.1	Podilymbus podiceps	Aves	ITPR3	found_annotated	1	1	UP000555275	5	2	1	protein_database_and_genome
+GCA_013399565.1	Podilymbus podiceps	Aves	RYR	found_annotated	1	1	UP000555275	5	2	1	protein_database_and_genome
+GCA_013399735.1	Tyrannus savana	Aves	ITPR1	found_unannotated	1	1	UP000537779	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399735.1	Tyrannus savana	Aves	ITPR2	assembly_gap	1	1	UP000537779	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399735.1	Tyrannus savana	Aves	ITPR3	found_annotated	1	1	UP000537779	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399735.1	Tyrannus savana	Aves	RYR	found_unannotated	1	1	UP000537779	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	1	1	UP000536381	1	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	1	1	UP000536381	1	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR3	found_annotated	1	1	UP000536381	1	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399775.1	Semnornis frantzii	Aves	RYR	assembly_gap	1	1	UP000536381	1	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399795.1	Zosterops hypoxanthus	Aves	ITPR1	assembly_gap	1	1	UP000549157	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399795.1	Zosterops hypoxanthus	Aves	ITPR2	found_unannotated	1	1	UP000549157	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399795.1	Zosterops hypoxanthus	Aves	ITPR3	found_annotated	1	1	UP000549157	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399795.1	Zosterops hypoxanthus	Aves	RYR	found_unannotated	1	1	UP000549157	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399855.1	Oxyruncus cristatus	Aves	ITPR1	found_unannotated	1	1	UP000564466	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399855.1	Oxyruncus cristatus	Aves	ITPR2	found_unannotated	1	1	UP000564466	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399855.1	Oxyruncus cristatus	Aves	ITPR3	found_annotated	1	1	UP000564466	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399855.1	Oxyruncus cristatus	Aves	RYR	found_unannotated	1	1	UP000564466	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013399895.1	Serilophus lunatus	Aves	ITPR1	found_unannotated	1	1	UP000553648	4	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399895.1	Serilophus lunatus	Aves	ITPR2	found_unannotated	1	1	UP000553648	4	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013399895.1	Serilophus lunatus	Aves	ITPR3	found_annotated	1	1	UP000553648	4	2	1	protein_database_and_genome
+GCA_013399895.1	Serilophus lunatus	Aves	RYR	found_annotated	1	1	UP000553648	4	2	1	protein_database_and_genome
+GCA_013400075.1	Hippolais icterina	Aves	ITPR1	assembly_gap	1	1	UP000527178	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400075.1	Hippolais icterina	Aves	ITPR2	found_unannotated	1	1	UP000527178	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400075.1	Hippolais icterina	Aves	ITPR3	found_annotated	1	1	UP000527178	5	1	1	protein_database_and_genome
+GCA_013400075.1	Hippolais icterina	Aves	RYR	found_unannotated	1	1	UP000527178	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400195.1	Aramus guarauna	Aves	ITPR1	found_annotated	1	1	UP000567570	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400195.1	Aramus guarauna	Aves	ITPR2	found_unannotated	1	1	UP000567570	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400195.1	Aramus guarauna	Aves	ITPR3	found_annotated	1	1	UP000567570	5	2	1	protein_database_and_genome
+GCA_013400195.1	Aramus guarauna	Aves	RYR	found_annotated	1	1	UP000567570	5	2	1	protein_database_and_genome
+GCA_013400215.1	Cisticola juncidis	Aves	ITPR1	found_unannotated	1	1	UP000546986	4	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400215.1	Cisticola juncidis	Aves	ITPR2	found_unannotated	1	1	UP000546986	4	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400215.1	Cisticola juncidis	Aves	ITPR3	found_annotated	1	1	UP000546986	4	2	1	protein_database_and_genome
+GCA_013400215.1	Cisticola juncidis	Aves	RYR	found_annotated	1	1	UP000546986	4	2	1	protein_database_and_genome
+GCA_013400415.1	Scytalopus superciliaris	Aves	ITPR1	found_annotated	1	1	UP000580825	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400415.1	Scytalopus superciliaris	Aves	ITPR2	found_unannotated	1	1	UP000580825	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400415.1	Scytalopus superciliaris	Aves	ITPR3	found_annotated	1	1	UP000580825	6	1	1	protein_database_and_genome
+GCA_013400415.1	Scytalopus superciliaris	Aves	RYR	found_unannotated	1	1	UP000580825	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	1	1	UP000524007	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR2	found_unannotated	1	1	UP000524007	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR3	found_annotated	1	1	UP000524007	6	1	1	protein_database_and_genome
+GCA_013400445.1	Leiothrix lutea	Aves	RYR	found_unannotated	1	1	UP000524007	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400515.1	Erpornis zantholeuca	Aves	ITPR1	found_annotated	1	1	UP000545329	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400515.1	Erpornis zantholeuca	Aves	ITPR2	found_unannotated	1	1	UP000545329	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400515.1	Erpornis zantholeuca	Aves	ITPR3	found_annotated	1	1	UP000545329	4	1	1	protein_database_and_genome
+GCA_013400515.1	Erpornis zantholeuca	Aves	RYR	assembly_gap	1	1	UP000545329	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400585.1	Chloropsis cyanopogon	Aves	ITPR1	found_unannotated	1	1	UP000614263	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400585.1	Chloropsis cyanopogon	Aves	ITPR2	found_unannotated	1	1	UP000614263	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400585.1	Chloropsis cyanopogon	Aves	ITPR3	found_annotated	1	1	UP000614263	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400585.1	Chloropsis cyanopogon	Aves	RYR	assembly_gap	1	1	UP000614263	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	1	1	UP000574191	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	1	1	UP000574191	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR3	found_annotated	1	1	UP000574191	2	1	1	protein_database_and_genome
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	RYR	assembly_gap	1	1	UP000574191	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	1	1	UP000537747	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR2	found_annotated	1	1	UP000537747	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	1	1	UP000537747	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400655.1	Mystacornis crossleyi	Aves	RYR	assembly_gap	1	1	UP000537747	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	1	1	UP000570288	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR2	assembly_gap	1	1	UP000570288	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR3	assembly_gap	1	1	UP000570288	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400675.1	Oxylabes madagascariensis	Aves	RYR	assembly_gap	1	1	UP000570288	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	1	1	UP000560066	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR2	fragment	1	1	UP000560066	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR3	assembly_gap	1	1	UP000560066	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400695.1	Neodrepanis coruscans	Aves	RYR	assembly_gap	1	1	UP000560066	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	1	1	UP000583496	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR2	assembly_gap	1	1	UP000583496	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR3	found_annotated	1	1	UP000583496	4	1	1	protein_database_and_genome
+GCA_013400735.1	Pomatostomus ruficeps	Aves	RYR	assembly_gap	1	1	UP000583496	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400815.1	Centropus bengalensis	Aves	ITPR1	assembly_gap	1	1	UP000632886	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400815.1	Centropus bengalensis	Aves	ITPR2	found_unannotated	1	1	UP000632886	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400815.1	Centropus bengalensis	Aves	ITPR3	found_annotated	1	1	UP000632886	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400815.1	Centropus bengalensis	Aves	RYR	found_annotated	1	1	UP000632886	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	1	1	UP000566314	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR2	assembly_gap	1	1	UP000566314	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	1	1	UP000566314	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	RYR	assembly_gap	1	1	UP000566314	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR1	found_annotated	1	1	UP000556761	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	1	1	UP000556761	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR3	found_annotated	1	1	UP000556761	2	1	1	protein_database_and_genome
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	RYR	assembly_gap	1	1	UP000556761	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400915.1	Pardalotus punctatus	Aves	ITPR1	assembly_gap	1	1	UP000570592	7	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400915.1	Pardalotus punctatus	Aves	ITPR2	assembly_gap	1	1	UP000570592	7	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400915.1	Pardalotus punctatus	Aves	ITPR3	assembly_gap	1	1	UP000570592	7	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400915.1	Pardalotus punctatus	Aves	RYR	found_annotated	1	1	UP000570592	7	1	1	protein_database_and_genome
+GCA_013400955.1	Drymodes brunneopygia	Aves	ITPR1	found_unannotated	1	1	UP000525319	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400955.1	Drymodes brunneopygia	Aves	ITPR2	assembly_gap	1	1	UP000525319	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013400955.1	Drymodes brunneopygia	Aves	ITPR3	found_annotated	1	1	UP000525319	5	2	1	protein_database_and_genome
+GCA_013400955.1	Drymodes brunneopygia	Aves	RYR	found_annotated	1	1	UP000525319	5	2	1	protein_database_and_genome
+GCA_013400995.1	Oreotrochilus melanogaster	Aves	ITPR1	assembly_gap	1	1	UP000579904	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400995.1	Oreotrochilus melanogaster	Aves	ITPR2	found_unannotated	1	1	UP000579904	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400995.1	Oreotrochilus melanogaster	Aves	ITPR3	found_annotated	1	1	UP000579904	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013400995.1	Oreotrochilus melanogaster	Aves	RYR	assembly_gap	1	1	UP000579904	5	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	1	1	UP000558460	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR2	assembly_gap	1	1	UP000558460	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR3	assembly_gap	1	1	UP000558460	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401035.1	Horornis vulcanius	Aves	RYR	assembly_gap	1	1	UP000558460	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	1	1	UP000572837	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR2	found_unannotated	1	1	UP000572837	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	1	1	UP000572837	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	RYR	found_annotated	1	1	UP000572837	5	1	1	protein_database_and_genome
+GCA_013401215.1	Atlantisia rogersi	Aves	ITPR1	assembly_gap	1	1	UP000518911	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401215.1	Atlantisia rogersi	Aves	ITPR2	assembly_gap	1	1	UP000518911	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401215.1	Atlantisia rogersi	Aves	ITPR3	assembly_gap	1	1	UP000518911	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401215.1	Atlantisia rogersi	Aves	RYR	assembly_gap	1	1	UP000518911	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401255.1	Urocolius indicus	Aves	ITPR1	found_unannotated	1	1	UP000654395	7	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013401255.1	Urocolius indicus	Aves	ITPR2	assembly_gap	1	1	UP000654395	7	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013401255.1	Urocolius indicus	Aves	ITPR3	assembly_gap	1	1	UP000654395	7	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013401255.1	Urocolius indicus	Aves	RYR	found_annotated	1	1	UP000654395	7	1	1	protein_database_and_genome
+GCA_013401295.1	Glareola pratincola	Aves	ITPR1	found_unannotated	1	1	UP000583049	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401295.1	Glareola pratincola	Aves	ITPR2	found_unannotated	1	1	UP000583049	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401295.1	Glareola pratincola	Aves	ITPR3	assembly_gap	1	1	UP000583049	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401295.1	Glareola pratincola	Aves	RYR	found_annotated	1	1	UP000583049	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401315.1	Balaeniceps rex	Aves	ITPR1	found_unannotated	1	1	UP000528411	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013401315.1	Balaeniceps rex	Aves	ITPR2	assembly_gap	1	1	UP000528411	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013401315.1	Balaeniceps rex	Aves	ITPR3	found_annotated	1	1	UP000528411	3	1	1	protein_database_and_genome
+GCA_013401315.1	Balaeniceps rex	Aves	RYR	assembly_gap	1	1	UP000528411	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR1	assembly_gap	1	1	UP000586704	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR2	found_unannotated	1	1	UP000586704	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	1	1	UP000586704	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_013401355.1	Ceyx cyanopectus	Aves	RYR	assembly_gap	1	1	UP000586704	4	0	0	genome_only:records_exist_but_none_full_length
+GCA_014281875.1	Nibea albiflora	Actinopteri	ITPR1	found_annotated	1	1	UP000805704	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_014281875.1	Nibea albiflora	Actinopteri	ITPR2	found_unannotated	1	1	UP000805704	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_014281875.1	Nibea albiflora	Actinopteri	ITPR3	found_annotated	1	1	UP000805704	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_014281875.1	Nibea albiflora	Actinopteri	RYR	found_unannotated	1	1	UP000805704	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_014363365.1	Leucopsar rothschildi	Aves	ITPR1	assembly_gap	1	1	UP000522331	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_014363365.1	Leucopsar rothschildi	Aves	ITPR2	assembly_gap	1	1	UP000522331	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_014363365.1	Leucopsar rothschildi	Aves	ITPR3	assembly_gap	1	1	UP000522331	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_014363365.1	Leucopsar rothschildi	Aves	RYR	assembly_gap	1	1	UP000522331	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_014839755.1	Sylvia borin	Aves	ITPR1	found_annotated	1	1	UP000538515	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_014839755.1	Sylvia borin	Aves	ITPR2	found_annotated	1	1	UP000538515	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_014839755.1	Sylvia borin	Aves	ITPR3	found_annotated	1	1	UP000538515	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_014839755.1	Sylvia borin	Aves	RYR	found_annotated	1	1	UP000538515	5	1	1	protein_database_and_genome
+GCA_015883425.2	Lamprotornis superbus	Aves	ITPR1	found_annotated	1	1	UP000618051	3	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_015883425.2	Lamprotornis superbus	Aves	ITPR2	found_annotated	1	1	UP000618051	3	2	1	protein_database_and_genome
+GCA_015883425.2	Lamprotornis superbus	Aves	ITPR3	found_annotated	1	1	UP000618051	3	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_015883425.2	Lamprotornis superbus	Aves	RYR	found_annotated	1	1	UP000618051	3	2	1	protein_database_and_genome
+GCA_017639675.1	Aplochiton taeniatus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_017639675.1	Aplochiton taeniatus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_017639675.1	Aplochiton taeniatus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_017639675.1	Aplochiton taeniatus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	ITPR1	found_no_annotation	1	1	UP000681084	0	0	0	genome_only:no_family_record_for_species
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	ITPR2	tblastn_trace	1	1	UP000681084	0	0	0	genome_only:no_family_record_for_species
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	ITPR3	found_no_annotation	1	1	UP000681084	0	0	0	genome_only:no_family_record_for_species
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	RYR	found_no_annotation	1	1	UP000681084	0	0	0	genome_only:no_family_record_for_species
+GCA_019447015.1	Hymenochirus boettgeri	Amphibia	ITPR1	found_annotated	1	1	UP000812440	12	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_019447015.1	Hymenochirus boettgeri	Amphibia	ITPR2	found_annotated	1	1	UP000812440	12	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_019447015.1	Hymenochirus boettgeri	Amphibia	ITPR3	found_unannotated	1	1	UP000812440	12	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_019447015.1	Hymenochirus boettgeri	Amphibia	RYR	found_annotated	1	1	UP000812440	12	1	1	protein_database_and_genome
+GCA_020745705.1	Hemiprocne comata	Aves	ITPR1	found_no_annotation	1	1	UP000518305	4	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_020745705.1	Hemiprocne comata	Aves	ITPR2	found_no_annotation	1	1	UP000518305	4	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_020745705.1	Hemiprocne comata	Aves	ITPR3	found_no_annotation	1	1	UP000518305	4	2	1	protein_database_and_genome
+GCA_020745705.1	Hemiprocne comata	Aves	RYR	found_no_annotation	1	1	UP000518305	4	2	1	protein_database_and_genome
+GCA_022829145.1	Albula goreensis	Actinopteri	ITPR1	found_annotated	1	1	UP000829720	11	7	2	protein_database_and_genome
+GCA_022829145.1	Albula goreensis	Actinopteri	ITPR2	found_annotated	1	1	UP000829720	11	7	1	protein_database_and_genome
+GCA_022829145.1	Albula goreensis	Actinopteri	ITPR3	found_annotated	1	1	UP000829720	11	7	0	genome_only:no_record_resolves_to_this_paralog
+GCA_022829145.1	Albula goreensis	Actinopteri	RYR	found_annotated	1	1	UP000829720	11	7	4	protein_database_and_genome
+GCA_023764695.1	Pygathrix nigripes	Mammalia	ITPR1	found_no_annotation	1	1	UP001710656	11	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_023764695.1	Pygathrix nigripes	Mammalia	ITPR2	found_no_annotation	1	1	UP001710656	11	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_023764695.1	Pygathrix nigripes	Mammalia	ITPR3	found_no_annotation	1	1	UP001710656	11	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_023764695.1	Pygathrix nigripes	Mammalia	RYR	found_no_annotation	1	1	UP001710656	11	1	1	protein_database_and_genome
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	ITPR1	found_annotated	1	1	UP001057452	11	4	0	genome_only:no_record_resolves_to_this_paralog
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	ITPR2	found_annotated	1	1	UP001057452	11	4	0	genome_only:no_record_resolves_to_this_paralog
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	ITPR3	fragment	1	1	UP001057452	11	4	0	genome_only:no_record_resolves_to_this_paralog
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	RYR	found_unannotated	1	1	UP001057452	11	4	4	protein_database_and_genome
+GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	ITPR1	found_annotated	1	1	UP001148018	13	6	0	genome_only:no_record_resolves_to_this_paralog
+GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	ITPR2	found_annotated	1	1	UP001148018	13	6	0	genome_only:no_record_resolves_to_this_paralog
+GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	ITPR3	found_annotated	1	1	UP001148018	13	6	0	genome_only:no_record_resolves_to_this_paralog
+GCA_027704905.1	Muraenolepis orangiensis	Actinopteri	RYR	found_annotated	1	1	UP001148018	13	6	6	protein_database_and_genome
+GCA_028571685.1	Heterohyrax brucei	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_028571685.1	Heterohyrax brucei	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_028571685.1	Heterohyrax brucei	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_028571685.1	Heterohyrax brucei	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_029706075.1	Aldrovandia affinis	Actinopteri	ITPR1	found_annotated	1	1	UP001221898	16	8	2	protein_database_and_genome
+GCA_029706075.1	Aldrovandia affinis	Actinopteri	ITPR2	found_annotated	1	1	UP001221898	16	8	1	protein_database_and_genome
+GCA_029706075.1	Aldrovandia affinis	Actinopteri	ITPR3	found_annotated	1	1	UP001221898	16	8	1	protein_database_and_genome
+GCA_029706075.1	Aldrovandia affinis	Actinopteri	RYR	found_unannotated	1	1	UP001221898	16	8	4	protein_database_and_genome
+GCA_031216635.1	Dissostichus eleginoides	Actinopteri	ITPR1	found_unannotated	1	1	UP001228049	18	3	0	genome_only:no_record_resolves_to_this_paralog
+GCA_031216635.1	Dissostichus eleginoides	Actinopteri	ITPR2	found_unannotated	1	1	UP001228049	18	3	0	genome_only:no_record_resolves_to_this_paralog
+GCA_031216635.1	Dissostichus eleginoides	Actinopteri	ITPR3	found_unannotated	1	1	UP001228049	18	3	0	genome_only:no_record_resolves_to_this_paralog
+GCA_031216635.1	Dissostichus eleginoides	Actinopteri	RYR	found_annotated	1	1	UP001228049	18	3	3	protein_database_and_genome
+GCA_031835075.1	Saguinus oedipus	Mammalia	ITPR1	found_unannotated	1	1	UP001266305	13	0	0	genome_only:records_exist_but_none_full_length
+GCA_031835075.1	Saguinus oedipus	Mammalia	ITPR2	found_unannotated	1	1	UP001266305	13	0	0	genome_only:records_exist_but_none_full_length
+GCA_031835075.1	Saguinus oedipus	Mammalia	ITPR3	found_unannotated	1	1	UP001266305	13	0	0	genome_only:records_exist_but_none_full_length
+GCA_031835075.1	Saguinus oedipus	Mammalia	RYR	found_unannotated	1	1	UP001266305	13	0	0	genome_only:records_exist_but_none_full_length
+GCA_032275445.1	Crypturellus soui	Aves	ITPR1	found_no_annotation	1	1	UP000545332	7	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_032275445.1	Crypturellus soui	Aves	ITPR2	found_no_annotation	1	1	UP000545332	7	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_032275445.1	Crypturellus soui	Aves	ITPR3	found_no_annotation	1	1	UP000545332	7	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_032275445.1	Crypturellus soui	Aves	RYR	found_no_annotation	1	1	UP000545332	7	1	1	protein_database_and_genome
+GCA_033238685.1	Lates japonicus	Actinopteri	ITPR1	found_annotated	1	1	UP001279410	22	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_033238685.1	Lates japonicus	Actinopteri	ITPR2	found_annotated	1	1	UP001279410	22	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_033238685.1	Lates japonicus	Actinopteri	ITPR3	found_unannotated	1	1	UP001279410	22	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_033238685.1	Lates japonicus	Actinopteri	RYR	found_unannotated	1	1	UP001279410	22	2	2	protein_database_and_genome
+GCA_035590135.1	Circaetus pectoralis	Aves	ITPR1	found_no_annotation	1	1	UP000562238	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_035590135.1	Circaetus pectoralis	Aves	ITPR2	found_no_annotation	1	1	UP000562238	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_035590135.1	Circaetus pectoralis	Aves	ITPR3	found_no_annotation	1	1	UP000562238	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_035590135.1	Circaetus pectoralis	Aves	RYR	found_no_annotation	1	1	UP000562238	3	0	0	genome_only:records_exist_but_none_full_length
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	ITPR1	found_unannotated	1	1	UP001529510	13	0	0	genome_only:records_exist_but_none_full_length
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	ITPR2	found_unannotated	1	1	UP001529510	13	0	0	genome_only:records_exist_but_none_full_length
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	ITPR3	found_unannotated	1	1	UP001529510	13	0	0	genome_only:records_exist_but_none_full_length
+GCA_036247105.2	Cirrhinus mrigala	Actinopteri	RYR	found_unannotated	1	1	UP001529510	13	0	0	genome_only:records_exist_but_none_full_length
+GCA_036250305.1	Ataeniobius toweri	Actinopteri	ITPR1	assembly_gap	1	1	UP001345963	39	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_036250305.1	Ataeniobius toweri	Actinopteri	ITPR2	assembly_gap	1	1	UP001345963	39	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_036250305.1	Ataeniobius toweri	Actinopteri	ITPR3	assembly_gap	1	1	UP001345963	39	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_036250305.1	Ataeniobius toweri	Actinopteri	RYR	found_annotated	1	1	UP001345963	39	2	2	protein_database_and_genome
+GCA_036250325.1	Characodon lateralis	Actinopteri	ITPR1	assembly_gap	1	1	UP001352852	46	0	0	genome_only:records_exist_but_none_full_length
+GCA_036250325.1	Characodon lateralis	Actinopteri	ITPR2	assembly_gap	1	1	UP001352852	46	0	0	genome_only:records_exist_but_none_full_length
+GCA_036250325.1	Characodon lateralis	Actinopteri	ITPR3	assembly_gap	1	1	UP001352852	46	0	0	genome_only:records_exist_but_none_full_length
+GCA_036250325.1	Characodon lateralis	Actinopteri	RYR	assembly_gap	1	1	UP001352852	46	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091285.1	Ameca splendens	Actinopteri	ITPR1	assembly_gap	1	1	UP001469553	52	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_040091285.1	Ameca splendens	Actinopteri	ITPR2	assembly_gap	1	1	UP001469553	52	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_040091285.1	Ameca splendens	Actinopteri	ITPR3	assembly_gap	1	1	UP001469553	52	2	0	genome_only:no_record_resolves_to_this_paralog
+GCA_040091285.1	Ameca splendens	Actinopteri	RYR	assembly_gap	1	1	UP001469553	52	2	2	protein_database_and_genome
+GCA_040091305.1	Ilyodon furcidens	Actinopteri	ITPR1	assembly_gap	1	1	UP001482620	47	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091305.1	Ilyodon furcidens	Actinopteri	ITPR2	assembly_gap	1	1	UP001482620	47	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091305.1	Ilyodon furcidens	Actinopteri	ITPR3	assembly_gap	1	1	UP001482620	47	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091305.1	Ilyodon furcidens	Actinopteri	RYR	assembly_gap	1	1	UP001482620	47	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR1	assembly_gap	1	1	UP001476798	34	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR2	assembly_gap	1	1	UP001476798	34	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR3	assembly_gap	1	1	UP001476798	34	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091325.1	Goodea atripinnis	Actinopteri	RYR	assembly_gap	1	1	UP001476798	34	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR1	assembly_gap	1	1	UP001434883	34	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR2	assembly_gap	1	1	UP001434883	34	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR3	assembly_gap	1	1	UP001434883	34	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	RYR	found_unannotated	1	1	UP001434883	34	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	ITPR1	assembly_gap	1	1	UP001444071	33	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	ITPR2	assembly_gap	1	1	UP001444071	33	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	ITPR3	assembly_gap	1	1	UP001444071	33	0	0	genome_only:records_exist_but_none_full_length
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	RYR	assembly_gap	1	1	UP001444071	33	0	0	genome_only:records_exist_but_none_full_length
+GCA_043380575.1	Atractosteus spatula	Actinopteri	ITPR1	found_no_annotation	1	1	UP000736164	4	4	0	genome_only:no_record_resolves_to_this_paralog
+GCA_043380575.1	Atractosteus spatula	Actinopteri	ITPR2	found_no_annotation	1	1	UP000736164	4	4	1	protein_database_and_genome
+GCA_043380575.1	Atractosteus spatula	Actinopteri	ITPR3	found_no_annotation	1	1	UP000736164	4	4	1	protein_database_and_genome
+GCA_043380575.1	Atractosteus spatula	Actinopteri	RYR	found_no_annotation	1	1	UP000736164	4	4	2	protein_database_and_genome
+GCA_046255725.1	Amblyopsis spelaea	Actinopteri	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_046255725.1	Amblyopsis spelaea	Actinopteri	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_046255725.1	Amblyopsis spelaea	Actinopteri	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_046255725.1	Amblyopsis spelaea	Actinopteri	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_047511595.1	Polymixia lowei	Actinopteri	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_047511595.1	Polymixia lowei	Actinopteri	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_047511595.1	Polymixia lowei	Actinopteri	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_047511595.1	Polymixia lowei	Actinopteri	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_048126345.2	Notoryctes typhlops	Mammalia	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_048126345.2	Notoryctes typhlops	Mammalia	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_048126345.2	Notoryctes typhlops	Mammalia	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_048126345.2	Notoryctes typhlops	Mammalia	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_048569125.1	Diretmus argenteus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_048569125.1	Diretmus argenteus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_048569125.1	Diretmus argenteus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_048569125.1	Diretmus argenteus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_050084785.1	Liparis tanakae	Actinopteri	ITPR1	found_no_annotation	1	1	UP000314294	33	0	0	genome_only:records_exist_but_none_full_length
+GCA_050084785.1	Liparis tanakae	Actinopteri	ITPR2	found_no_annotation	1	1	UP000314294	33	0	0	genome_only:records_exist_but_none_full_length
+GCA_050084785.1	Liparis tanakae	Actinopteri	ITPR3	found_no_annotation	1	1	UP000314294	33	0	0	genome_only:records_exist_but_none_full_length
+GCA_050084785.1	Liparis tanakae	Actinopteri	RYR	found_no_annotation	1	1	UP000314294	33	0	0	genome_only:records_exist_but_none_full_length
+GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	ITPR1	assembly_gap	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	ITPR2	assembly_gap	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	ITPR3	assembly_gap	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	RYR	assembly_gap	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_054084135.1	Copsychus sechellarum	Aves	ITPR1	found_no_annotation	1	1	UP000659062	7	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_054084135.1	Copsychus sechellarum	Aves	ITPR2	found_no_annotation	1	1	UP000659062	7	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_054084135.1	Copsychus sechellarum	Aves	ITPR3	found_no_annotation	1	1	UP000659062	7	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_054084135.1	Copsychus sechellarum	Aves	RYR	found_no_annotation	1	1	UP000659062	7	1	1	protein_database_and_genome
+GCA_054099775.1	Steatornis caripensis	Aves	ITPR1	found_annotated	1	1	UP000516988	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_054099775.1	Steatornis caripensis	Aves	ITPR2	found_annotated	1	1	UP000516988	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_054099775.1	Steatornis caripensis	Aves	ITPR3	found_annotated	1	1	UP000516988	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_054099775.1	Steatornis caripensis	Aves	RYR	found_annotated	1	1	UP000516988	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_054644205.1	Lestoros inca	Mammalia	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_054644205.1	Lestoros inca	Mammalia	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_054644205.1	Lestoros inca	Mammalia	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_054644205.1	Lestoros inca	Mammalia	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_054883175.1	Datnioides polota	Actinopteri	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_054883175.1	Datnioides polota	Actinopteri	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_054883175.1	Datnioides polota	Actinopteri	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_054883175.1	Datnioides polota	Actinopteri	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_054883375.1	Arapaima gigas	Actinopteri	ITPR1	found_no_annotation	1	1	UP001705113	4	4	1	protein_database_and_genome
+GCA_054883375.1	Arapaima gigas	Actinopteri	ITPR2	found_no_annotation	1	1	UP001705113	4	4	0	genome_only:no_record_resolves_to_this_paralog
+GCA_054883375.1	Arapaima gigas	Actinopteri	ITPR3	found_no_annotation	1	1	UP001705113	4	4	1	protein_database_and_genome
+GCA_054883375.1	Arapaima gigas	Actinopteri	RYR	found_no_annotation	1	1	UP001705113	4	4	2	protein_database_and_genome
+GCA_056506795.1	Pristigenys meyeri	Actinopteri	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056506795.1	Pristigenys meyeri	Actinopteri	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056506795.1	Pristigenys meyeri	Actinopteri	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056506795.1	Pristigenys meyeri	Actinopteri	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056776345.1	Spizella passerina	Aves	ITPR1	found_no_annotation	1	1	UP000618746	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_056776345.1	Spizella passerina	Aves	ITPR2	found_no_annotation	1	1	UP000618746	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_056776345.1	Spizella passerina	Aves	ITPR3	found_no_annotation	1	1	UP000618746	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_056776345.1	Spizella passerina	Aves	RYR	found_no_annotation	1	1	UP000618746	2	0	0	genome_only:records_exist_but_none_full_length
+GCA_056783565.1	Hiodon alosoides	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056783565.1	Hiodon alosoides	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056783565.1	Hiodon alosoides	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056783565.1	Hiodon alosoides	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056783665.1	Albula glossodonta	Actinopteri	ITPR1	found_no_annotation	1	1	UP000824540	14	3	0	genome_only:no_record_resolves_to_this_paralog
+GCA_056783665.1	Albula glossodonta	Actinopteri	ITPR2	found_no_annotation	1	1	UP000824540	14	3	0	genome_only:no_record_resolves_to_this_paralog
+GCA_056783665.1	Albula glossodonta	Actinopteri	ITPR3	found_no_annotation	1	1	UP000824540	14	3	0	genome_only:no_record_resolves_to_this_paralog
+GCA_056783665.1	Albula glossodonta	Actinopteri	RYR	found_no_annotation	1	1	UP000824540	14	3	3	protein_database_and_genome
+GCA_056824565.1	Stylephorus chordatus	Actinopteri	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056824565.1	Stylephorus chordatus	Actinopteri	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056824565.1	Stylephorus chordatus	Actinopteri	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056824565.1	Stylephorus chordatus	Actinopteri	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056824585.1	Alepocephalus tenebrosus	Actinopteri	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056824585.1	Alepocephalus tenebrosus	Actinopteri	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056824585.1	Alepocephalus tenebrosus	Actinopteri	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_056824585.1	Alepocephalus tenebrosus	Actinopteri	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_057876775.1	Echinorhinus cookei	Chondrichthyes	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_057876775.1	Echinorhinus cookei	Chondrichthyes	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_057876775.1	Echinorhinus cookei	Chondrichthyes	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_057876775.1	Echinorhinus cookei	Chondrichthyes	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_058224745.1	Acrocephalus arundinaceus	Aves	ITPR1	found_no_annotation	1	1	UP000549775	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_058224745.1	Acrocephalus arundinaceus	Aves	ITPR2	found_no_annotation	1	1	UP000549775	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_058224745.1	Acrocephalus arundinaceus	Aves	ITPR3	found_no_annotation	1	1	UP000549775	4	1	1	protein_database_and_genome
+GCA_058224745.1	Acrocephalus arundinaceus	Aves	RYR	found_no_annotation	1	1	UP000549775	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCA_058707665.1	Platax teira	Actinopteri	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_058707665.1	Platax teira	Actinopteri	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_058707665.1	Platax teira	Actinopteri	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_058707665.1	Platax teira	Actinopteri	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR1	assembly_gap	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR3	assembly_gap	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_900312595.1	Guentherus altivela	Actinopteri	RYR	assembly_gap	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_951230385.1	Staurois parvus	Amphibia	ITPR1	found_unannotated	1	1	UP001162483	10	0	0	genome_only:records_exist_but_none_full_length
+GCA_951230385.1	Staurois parvus	Amphibia	ITPR2	assembly_gap	1	1	UP001162483	10	0	0	genome_only:records_exist_but_none_full_length
+GCA_951230385.1	Staurois parvus	Amphibia	ITPR3	assembly_gap	1	1	UP001162483	10	0	0	genome_only:records_exist_but_none_full_length
+GCA_951230385.1	Staurois parvus	Amphibia	RYR	found_unannotated	1	1	UP001162483	10	0	0	genome_only:records_exist_but_none_full_length
+GCA_965364685.1	Capros aper	Actinopteri	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_965364685.1	Capros aper	Actinopteri	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_965364685.1	Capros aper	Actinopteri	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_965364685.1	Capros aper	Actinopteri	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_980438365.1	Acanthurus tractus	Actinopteri	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_980438365.1	Acanthurus tractus	Actinopteri	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_980438365.1	Acanthurus tractus	Actinopteri	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_980438365.1	Acanthurus tractus	Actinopteri	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_984656905.1	Parequula melbournensis	Actinopteri	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_984656905.1	Parequula melbournensis	Actinopteri	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_984656905.1	Parequula melbournensis	Actinopteri	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_984656905.1	Parequula melbournensis	Actinopteri	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCA_987193245.1	Pontoporia blainvillei	Mammalia	ITPR1	found_no_annotation	1	1	UP001165941	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_987193245.1	Pontoporia blainvillei	Mammalia	ITPR2	found_no_annotation	1	1	UP001165941	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_987193245.1	Pontoporia blainvillei	Mammalia	ITPR3	found_no_annotation	1	1	UP001165941	6	0	0	genome_only:records_exist_but_none_full_length
+GCA_987193245.1	Pontoporia blainvillei	Mammalia	RYR	found_no_annotation	1	1	UP001165941	6	0	0	genome_only:records_exist_but_none_full_length
+GCF_000001405.40	Homo sapiens	Mammalia	ITPR1	found_annotated	1	1	UP000005640	46	26	5	protein_database_and_genome
+GCF_000001405.40	Homo sapiens	Mammalia	ITPR2	found_annotated	1	1	UP000005640	46	26	1	protein_database_and_genome
+GCF_000001405.40	Homo sapiens	Mammalia	ITPR3	found_annotated	1	1	UP000005640	46	26	3	protein_database_and_genome
+GCF_000001405.40	Homo sapiens	Mammalia	RYR	found_annotated	1	1	UP000005640	46	26	17	protein_database_and_genome
+GCF_000001635.27	Mus musculus	Mammalia	ITPR1	found_annotated	1	1	UP000000589	23	6	1	protein_database_and_genome
+GCF_000001635.27	Mus musculus	Mammalia	ITPR2	found_annotated	1	1	UP000000589	23	6	1	protein_database_and_genome
+GCF_000001635.27	Mus musculus	Mammalia	ITPR3	found_annotated	1	1	UP000000589	23	6	1	protein_database_and_genome
+GCF_000001635.27	Mus musculus	Mammalia	RYR	found_annotated	1	1	UP000000589	23	6	3	protein_database_and_genome
+GCF_000004195.4	Xenopus tropicalis	Amphibia	ITPR1	found_annotated	1	1	UP000008143	37	25	12	protein_database_and_genome
+GCF_000004195.4	Xenopus tropicalis	Amphibia	ITPR2	found_annotated	1	1	UP000008143	37	25	4	protein_database_and_genome
+GCF_000004195.4	Xenopus tropicalis	Amphibia	ITPR3	found_annotated	1	1	UP000008143	37	25	2	protein_database_and_genome
+GCF_000004195.4	Xenopus tropicalis	Amphibia	RYR	found_annotated	1	1	UP000008143	37	25	7	protein_database_and_genome
+GCF_000243295.1	Trichechus manatus latirostris	Mammalia	ITPR1	found_annotated	1	1	UP000248480	6	5	1	protein_database_and_genome
+GCF_000243295.1	Trichechus manatus latirostris	Mammalia	ITPR2	found_annotated	1	1	UP000248480	6	5	1	protein_database_and_genome
+GCF_000243295.1	Trichechus manatus latirostris	Mammalia	ITPR3	found_annotated	1	1	UP000248480	6	5	1	protein_database_and_genome
+GCF_000243295.1	Trichechus manatus latirostris	Mammalia	RYR	found_annotated	1	1	UP000248480	6	5	2	protein_database_and_genome
+GCF_000298275.1	Orycteropus afer afer	Mammalia	ITPR1	found_annotated	1	1	UP000694850	6	5	1	protein_database_and_genome
+GCF_000298275.1	Orycteropus afer afer	Mammalia	ITPR2	found_annotated	1	1	UP000694850	6	5	1	protein_database_and_genome
+GCF_000298275.1	Orycteropus afer afer	Mammalia	ITPR3	found_annotated	1	1	UP000694850	6	5	1	protein_database_and_genome
+GCF_000298275.1	Orycteropus afer afer	Mammalia	RYR	found_annotated	1	1	UP000694850	6	5	2	protein_database_and_genome
+GCF_000299155.1	Elephantulus edwardii	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_000299155.1	Elephantulus edwardii	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_000299155.1	Elephantulus edwardii	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_000299155.1	Elephantulus edwardii	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_000334495.1	Tupaia belangeri chinensis	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_000334495.1	Tupaia belangeri chinensis	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_000334495.1	Tupaia belangeri chinensis	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_000334495.1	Tupaia belangeri chinensis	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_000687185.1	Egretta garzetta	Aves	ITPR1	found_annotated	1	1	UP000053119	2	2	1	protein_database_and_genome
+GCF_000687185.1	Egretta garzetta	Aves	ITPR2	found_annotated	1	1	UP000053119	2	2	1	protein_database_and_genome
+GCF_000687185.1	Egretta garzetta	Aves	ITPR3	found_annotated	1	1	UP000053119	2	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000687185.1	Egretta garzetta	Aves	RYR	found_annotated	1	1	UP000053119	2	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000687285.1	Phaethon lepturus	Aves	ITPR1	assembly_gap	1	1	UP000053638	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000687285.1	Phaethon lepturus	Aves	ITPR2	assembly_gap	1	1	UP000053638	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000687285.1	Phaethon lepturus	Aves	ITPR3	found_annotated	1	1	UP000053638	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000687285.1	Phaethon lepturus	Aves	RYR	found_annotated	1	1	UP000053638	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000690535.1	Cariama cristata	Aves	ITPR1	found_annotated	1	1	UP000054116	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	1	1	UP000054116	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000690535.1	Cariama cristata	Aves	ITPR3	found_annotated	1	1	UP000054116	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000690535.1	Cariama cristata	Aves	RYR	assembly_gap	1	1	UP000054116	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000690775.1	Eurypyga helias	Aves	ITPR1	found_annotated	1	1	UP000054232	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	1	1	UP000054232	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000690775.1	Eurypyga helias	Aves	ITPR3	found_annotated	1	1	UP000054232	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000690775.1	Eurypyga helias	Aves	RYR	assembly_gap	1	1	UP000054232	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000690835.1	Fulmarus glacialis	Aves	ITPR1	assembly_gap	1	1	UP000053806	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000690835.1	Fulmarus glacialis	Aves	ITPR2	assembly_gap	1	1	UP000053806	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000690835.1	Fulmarus glacialis	Aves	ITPR3	found_annotated	1	1	UP000053806	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000690835.1	Fulmarus glacialis	Aves	RYR	assembly_gap	1	1	UP000053806	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000691845.1	Merops nubicus	Aves	ITPR1	assembly_gap	1	1	UP000052967	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000691845.1	Merops nubicus	Aves	ITPR2	assembly_gap	1	1	UP000052967	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000691845.1	Merops nubicus	Aves	ITPR3	assembly_gap	1	1	UP000052967	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000691845.1	Merops nubicus	Aves	RYR	found_annotated	1	1	UP000052967	3	1	1	protein_database_and_genome
+GCF_000691975.1	Corvus brachyrhynchos	Aves	ITPR1	found_annotated	1	1	UP000052976	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000691975.1	Corvus brachyrhynchos	Aves	ITPR2	found_annotated	1	1	UP000052976	1	1	1	protein_database_and_genome
+GCF_000691975.1	Corvus brachyrhynchos	Aves	ITPR3	found_annotated	1	1	UP000052976	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000691975.1	Corvus brachyrhynchos	Aves	RYR	found_annotated	1	1	UP000052976	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000695765.1	Mesitornis unicolor	Aves	ITPR1	found_annotated	1	1	UP000053369	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000695765.1	Mesitornis unicolor	Aves	ITPR2	fragment	1	1	UP000053369	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000695765.1	Mesitornis unicolor	Aves	ITPR3	found_annotated	1	1	UP000053369	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000695765.1	Mesitornis unicolor	Aves	RYR	assembly_gap	1	1	UP000053369	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000695815.1	Acanthisitta chloris	Aves	ITPR1	found_annotated	1	1	UP000053537	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000695815.1	Acanthisitta chloris	Aves	ITPR2	fragment	1	1	UP000053537	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000695815.1	Acanthisitta chloris	Aves	ITPR3	found_annotated	1	1	UP000053537	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000695815.1	Acanthisitta chloris	Aves	RYR	found_annotated	1	1	UP000053537	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000696875.1	Nestor notabilis	Aves	ITPR1	found_annotated	1	1	UP000053840	3	1	1	protein_database_and_genome
+GCF_000696875.1	Nestor notabilis	Aves	ITPR2	assembly_gap	1	1	UP000053840	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000696875.1	Nestor notabilis	Aves	ITPR3	found_annotated	1	1	UP000053840	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000696875.1	Nestor notabilis	Aves	RYR	assembly_gap	1	1	UP000053840	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000698965.1	Struthio camelus australis	Aves	ITPR1	found_annotated	1	1	UP000053584	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000698965.1	Struthio camelus australis	Aves	ITPR2	found_annotated	1	1	UP000053584	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000698965.1	Struthio camelus australis	Aves	ITPR3	found_annotated	1	1	UP000053584	2	1	1	protein_database_and_genome
+GCF_000698965.1	Struthio camelus australis	Aves	RYR	found_annotated	1	1	UP000053584	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000699105.1	Pygoscelis adeliae	Aves	ITPR1	found_annotated	1	1	UP000054081	2	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000699105.1	Pygoscelis adeliae	Aves	ITPR2	found_annotated	1	1	UP000054081	2	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000699105.1	Pygoscelis adeliae	Aves	ITPR3	found_annotated	1	1	UP000054081	2	2	1	protein_database_and_genome
+GCF_000699105.1	Pygoscelis adeliae	Aves	RYR	found_annotated	1	1	UP000054081	2	2	1	protein_database_and_genome
+GCF_000699145.1	Aptenodytes forsteri	Aves	ITPR1	found_annotated	1	1	UP000053286	0	0	0	genome_only:no_family_record_for_species
+GCF_000699145.1	Aptenodytes forsteri	Aves	ITPR2	found_annotated	1	1	UP000053286	0	0	0	genome_only:no_family_record_for_species
+GCF_000699145.1	Aptenodytes forsteri	Aves	ITPR3	found_annotated	1	1	UP000053286	0	0	0	genome_only:no_family_record_for_species
+GCF_000699145.1	Aptenodytes forsteri	Aves	RYR	found_annotated	1	1	UP000053286	0	0	0	genome_only:no_family_record_for_species
+GCF_000699245.1	Pterocles gutturalis	Aves	ITPR1	found_annotated	1	1	UP000053149	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000699245.1	Pterocles gutturalis	Aves	ITPR2	fragment	1	1	UP000053149	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000699245.1	Pterocles gutturalis	Aves	ITPR3	found_annotated	1	1	UP000053149	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000699245.1	Pterocles gutturalis	Aves	RYR	found_annotated	1	1	UP000053149	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR1	found_annotated	1	1	UP000053620	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	1	1	UP000053620	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR3	found_annotated	1	1	UP000053620	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000700745.2	Antrostomus carolinensis	Aves	RYR	assembly_gap	1	1	UP000053620	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	1	1	UP000054244	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	1	1	UP000054244	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR3	found_annotated	1	1	UP000054244	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000703405.1	Apaloderma vittatum	Aves	RYR	assembly_gap	1	1	UP000054244	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR1	found_annotated	1	1	UP000053641	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	1	1	UP000053641	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR3	assembly_gap	1	1	UP000053641	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_000705375.1	Tinamus guttatus	Aves	RYR	found_annotated	1	1	UP000053641	4	1	1	protein_database_and_genome
+GCF_000708025.1	Charadrius vociferus	Aves	ITPR1	found_annotated	1	1	UP000053858	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000708025.1	Charadrius vociferus	Aves	ITPR2	found_annotated	1	1	UP000053858	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000708025.1	Charadrius vociferus	Aves	ITPR3	found_annotated	1	1	UP000053858	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000708025.1	Charadrius vociferus	Aves	RYR	found_annotated	1	1	UP000053858	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	1	1	UP000054064	3	0	0	genome_only:records_exist_but_none_full_length
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	1	1	UP000054064	3	0	0	genome_only:records_exist_but_none_full_length
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR3	found_annotated	1	1	UP000054064	3	0	0	genome_only:records_exist_but_none_full_length
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	RYR	found_annotated	1	1	UP000054064	3	0	0	genome_only:records_exist_but_none_full_length
+GCF_000747805.2	Chaetura pelagica	Aves	ITPR1	found_annotated	1	1	UP000031515	0	0	0	genome_only:no_family_record_for_species
+GCF_000747805.2	Chaetura pelagica	Aves	ITPR2	found_annotated	1	1	UP000031515	0	0	0	genome_only:no_family_record_for_species
+GCF_000747805.2	Chaetura pelagica	Aves	ITPR3	found_annotated	1	1	UP000031515	0	0	0	genome_only:no_family_record_for_species
+GCF_000747805.2	Chaetura pelagica	Aves	RYR	found_annotated	1	1	UP000031515	0	0	0	genome_only:no_family_record_for_species
+GCF_001715985.3	Manacus vitellinus	Aves	ITPR1	found_annotated	1	1	UP000053258	2	2	1	protein_database_and_genome
+GCF_001715985.3	Manacus vitellinus	Aves	ITPR2	found_annotated	1	1	UP000053258	2	2	1	protein_database_and_genome
+GCF_001715985.3	Manacus vitellinus	Aves	ITPR3	found_annotated	1	1	UP000053258	2	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_001715985.3	Manacus vitellinus	Aves	RYR	found_annotated	1	1	UP000053258	2	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_003342845.1	Nothoprocta perdicaria	Aves	ITPR1	found_annotated	1	1	UP000694420	11	8	1	protein_database_and_genome
+GCF_003342845.1	Nothoprocta perdicaria	Aves	ITPR2	found_annotated	1	1	UP000694420	11	8	1	protein_database_and_genome
+GCF_003342845.1	Nothoprocta perdicaria	Aves	ITPR3	found_annotated	1	1	UP000694420	11	8	1	protein_database_and_genome
+GCF_003342845.1	Nothoprocta perdicaria	Aves	RYR	found_annotated	1	1	UP000694420	11	8	5	protein_database_and_genome
+GCF_003668045.3	Cricetulus griseus	Mammalia	ITPR1	found_annotated	1	1	UP001108280	18	17	11	protein_database_and_genome
+GCF_003668045.3	Cricetulus griseus	Mammalia	ITPR2	found_annotated	1	1	UP001108280	18	17	3	protein_database_and_genome
+GCF_003668045.3	Cricetulus griseus	Mammalia	ITPR3	found_annotated	1	1	UP001108280	18	17	1	protein_database_and_genome
+GCF_003668045.3	Cricetulus griseus	Mammalia	RYR	found_annotated	1	1	UP001108280	18	17	2	protein_database_and_genome
+GCF_003957555.1	Calypte anna	Aves	ITPR1	found_annotated	1	1	UP000054308	2	2	1	protein_database_and_genome
+GCF_003957555.1	Calypte anna	Aves	ITPR2	found_annotated	1	1	UP000054308	2	2	1	protein_database_and_genome
+GCF_003957555.1	Calypte anna	Aves	ITPR3	found_annotated	1	1	UP000054308	2	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_003957555.1	Calypte anna	Aves	RYR	found_annotated	1	1	UP000054308	2	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	ITPR1	found_annotated	1	1	UP000002279	21	21	5	protein_database_and_genome
+GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	ITPR2	found_annotated	1	1	UP000002279	21	21	3	protein_database_and_genome
+GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	ITPR3	found_annotated	1	1	UP000002279	21	21	1	protein_database_and_genome
+GCF_004115215.2	Ornithorhynchus anatinus	Mammalia	RYR	found_annotated	1	1	UP000002279	21	21	12	protein_database_and_genome
+GCF_009764475.1	Pristis pectinata	Chondrichthyes	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_009764475.1	Pristis pectinata	Chondrichthyes	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_009764475.1	Pristis pectinata	Chondrichthyes	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_009764475.1	Pristis pectinata	Chondrichthyes	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_009769465.1	Tauraco erythrolophus	Aves	ITPR1	found_annotated	1	1	UP000053661	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_009769465.1	Tauraco erythrolophus	Aves	ITPR2	found_annotated	1	1	UP000053661	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_009769465.1	Tauraco erythrolophus	Aves	ITPR3	found_annotated	1	1	UP000053661	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_009769465.1	Tauraco erythrolophus	Aves	RYR	found_annotated	1	1	UP000053661	2	1	1	protein_database_and_genome
+GCF_011004845.1	Esox lucius	Actinopteri	ITPR1	found_annotated	1	1	UP000265140	70	45	19	protein_database_and_genome
+GCF_011004845.1	Esox lucius	Actinopteri	ITPR2	found_annotated	1	1	UP000265140	70	45	7	protein_database_and_genome
+GCF_011004845.1	Esox lucius	Actinopteri	ITPR3	found_annotated	1	1	UP000265140	70	45	3	protein_database_and_genome
+GCF_011004845.1	Esox lucius	Actinopteri	RYR	found_annotated	1	1	UP000265140	70	45	16	protein_database_and_genome
+GCF_011004875.1	Balearica regulorum gibbericeps	Aves	ITPR1	found_annotated	1	1	UP000053309	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_011004875.1	Balearica regulorum gibbericeps	Aves	ITPR2	found_annotated	1	1	UP000053309	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_011004875.1	Balearica regulorum gibbericeps	Aves	ITPR3	found_annotated	1	1	UP000053309	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_011004875.1	Balearica regulorum gibbericeps	Aves	RYR	found_annotated	1	1	UP000053309	2	0	0	genome_only:records_exist_but_none_full_length
+GCF_013368585.1	Megalops cyprinoides	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_013368585.1	Megalops cyprinoides	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_013368585.1	Megalops cyprinoides	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_013368585.1	Megalops cyprinoides	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_013368605.1	Nyctibius grandis	Aves	ITPR1	found_annotated	1	1	UP000567826	6	2	1	protein_database_and_genome
+GCF_013368605.1	Nyctibius grandis	Aves	ITPR2	found_annotated	1	1	UP000567826	6	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_013368605.1	Nyctibius grandis	Aves	ITPR3	found_annotated	1	1	UP000567826	6	2	1	protein_database_and_genome
+GCF_013368605.1	Nyctibius grandis	Aves	RYR	found_annotated	1	1	UP000567826	6	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_014839835.1	Dryobates pubescens	Aves	ITPR1	found_annotated	1	1	UP000053875	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_014839835.1	Dryobates pubescens	Aves	ITPR2	found_annotated	1	1	UP000053875	1	1	1	protein_database_and_genome
+GCF_014839835.1	Dryobates pubescens	Aves	ITPR3	found_annotated	1	1	UP000053875	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_014839835.1	Dryobates pubescens	Aves	RYR	found_annotated	1	1	UP000053875	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_016433145.1	Gracilinanus agilis	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_016433145.1	Gracilinanus agilis	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_016433145.1	Gracilinanus agilis	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_016433145.1	Gracilinanus agilis	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_016699485.2	Gallus gallus	Aves	ITPR1	found_annotated	1	1	UP000000539	44	27	6	protein_database_and_genome
+GCF_016699485.2	Gallus gallus	Aves	ITPR2	found_annotated	1	1	UP000000539	44	27	4	protein_database_and_genome
+GCF_016699485.2	Gallus gallus	Aves	ITPR3	found_annotated	1	1	UP000000539	44	27	4	protein_database_and_genome
+GCF_016699485.2	Gallus gallus	Aves	RYR	found_annotated	1	1	UP000000539	44	27	13	protein_database_and_genome
+GCF_016859285.1	Xiphias gladius	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_016859285.1	Xiphias gladius	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_016859285.1	Xiphias gladius	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_016859285.1	Xiphias gladius	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_017639515.1	Carcharodon carcharias	Chondrichthyes	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_017639515.1	Carcharodon carcharias	Chondrichthyes	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_017639515.1	Carcharodon carcharias	Chondrichthyes	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_017639515.1	Carcharodon carcharias	Chondrichthyes	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_017654505.1	Polyodon spathula	Actinopteri	ITPR1	found_annotated	1	1	UP001166093	7	3	1	protein_database_and_genome
+GCF_017654505.1	Polyodon spathula	Actinopteri	ITPR2	found_annotated	1	1	UP001166093	7	3	0	genome_only:no_record_resolves_to_this_paralog
+GCF_017654505.1	Polyodon spathula	Actinopteri	ITPR3	found_annotated	1	1	UP001166093	7	3	1	protein_database_and_genome
+GCF_017654505.1	Polyodon spathula	Actinopteri	RYR	found_annotated	1	1	UP001166093	7	3	1	protein_database_and_genome
+GCF_017976375.1	Cuculus canorus	Aves	ITPR1	found_annotated	1	1	UP000053760	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_017976375.1	Cuculus canorus	Aves	ITPR2	found_annotated	1	1	UP000053760	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_017976375.1	Cuculus canorus	Aves	ITPR3	found_annotated	1	1	UP000053760	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_017976375.1	Cuculus canorus	Aves	RYR	found_annotated	1	1	UP000053760	1	1	1	protein_database_and_genome
+GCF_018139145.2	Gymnogyps californianus	Aves	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_018139145.2	Gymnogyps californianus	Aves	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_018139145.2	Gymnogyps californianus	Aves	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_018139145.2	Gymnogyps californianus	Aves	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_018320785.1	Cheilinus undulatus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_018320785.1	Cheilinus undulatus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_018320785.1	Cheilinus undulatus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_018320785.1	Cheilinus undulatus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_018691265.1	Tyto alba	Aves	ITPR1	found_annotated	1	1	UP000054190	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_018691265.1	Tyto alba	Aves	ITPR2	found_annotated	1	1	UP000054190	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_018691265.1	Tyto alba	Aves	ITPR3	found_annotated	1	1	UP000054190	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_018691265.1	Tyto alba	Aves	RYR	found_annotated	1	1	UP000054190	3	1	1	protein_database_and_genome
+GCF_018977255.1	Callorhinchus milii	Chondrichthyes	ITPR1	found_annotated	1	1	UP000314986	66	49	9	protein_database_and_genome
+GCF_018977255.1	Callorhinchus milii	Chondrichthyes	ITPR2	found_annotated	1	1	UP000314986	66	49	10	protein_database_and_genome
+GCF_018977255.1	Callorhinchus milii	Chondrichthyes	ITPR3	found_annotated	1	1	UP000314986	66	49	10	protein_database_and_genome
+GCF_018977255.1	Callorhinchus milii	Chondrichthyes	RYR	found_annotated	1	1	UP000314986	66	49	20	protein_database_and_genome
+GCF_019279795.1	Protopterus annectens	Dipnoi	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_019279795.1	Protopterus annectens	Dipnoi	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_019279795.1	Protopterus annectens	Dipnoi	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_019279795.1	Protopterus annectens	Dipnoi	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_019393635.1	Dromiciops gliroides	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_019393635.1	Dromiciops gliroides	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_019393635.1	Dromiciops gliroides	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_019393635.1	Dromiciops gliroides	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_019740435.1	Gambusia affinis	Actinopteri	ITPR1	found_annotated	1	1	UP000250572	11	3	0	genome_only:no_record_resolves_to_this_paralog
+GCF_019740435.1	Gambusia affinis	Actinopteri	ITPR2	found_annotated	1	1	UP000250572	11	3	1	protein_database_and_genome
+GCF_019740435.1	Gambusia affinis	Actinopteri	ITPR3	found_annotated	1	1	UP000250572	11	3	0	genome_only:no_record_resolves_to_this_paralog
+GCF_019740435.1	Gambusia affinis	Actinopteri	RYR	found_annotated	1	1	UP000250572	11	3	2	protein_database_and_genome
+GCF_020171115.1	Neogale vison	Mammalia	ITPR1	found_annotated	1	1	UP000694425	19	9	4	protein_database_and_genome
+GCF_020171115.1	Neogale vison	Mammalia	ITPR2	found_annotated	1	1	UP000694425	19	9	1	protein_database_and_genome
+GCF_020171115.1	Neogale vison	Mammalia	ITPR3	found_annotated	1	1	UP000694425	19	9	1	protein_database_and_genome
+GCF_020171115.1	Neogale vison	Mammalia	RYR	found_annotated	1	1	UP000694425	19	9	3	protein_database_and_genome
+GCF_020740795.1	Apus apus	Aves	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_020740795.1	Apus apus	Aves	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_020740795.1	Apus apus	Aves	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_020740795.1	Apus apus	Aves	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_020826845.1	Diceros bicornis minor	Mammalia	ITPR1	found_annotated	1	1	UP000551758	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_020826845.1	Diceros bicornis minor	Mammalia	ITPR2	found_annotated	1	1	UP000551758	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_020826845.1	Diceros bicornis minor	Mammalia	ITPR3	found_annotated	1	1	UP000551758	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_020826845.1	Diceros bicornis minor	Mammalia	RYR	found_annotated	1	1	UP000551758	6	1	1	protein_database_and_genome
+GCF_021028975.2	Sphaerodactylus townsendi	Lepidosauria	ITPR1	found_annotated	1	1	UP000827872	20	0	0	genome_only:records_exist_but_none_full_length
+GCF_021028975.2	Sphaerodactylus townsendi	Lepidosauria	ITPR2	found_annotated	1	1	UP000827872	20	0	0	genome_only:records_exist_but_none_full_length
+GCF_021028975.2	Sphaerodactylus townsendi	Lepidosauria	ITPR3	found_annotated	1	1	UP000827872	20	0	0	genome_only:records_exist_but_none_full_length
+GCF_021028975.2	Sphaerodactylus townsendi	Lepidosauria	RYR	found_annotated	1	1	UP000827872	20	0	0	genome_only:records_exist_but_none_full_length
+GCF_021292245.1	Micropterus dolomieu	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_021292245.1	Micropterus dolomieu	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_021292245.1	Micropterus dolomieu	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_021292245.1	Micropterus dolomieu	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_021613505.1	Equus quagga	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_021613505.1	Equus quagga	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_021613505.1	Equus quagga	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_021613505.1	Equus quagga	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_023634155.1	Falco peregrinus	Aves	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_023634155.1	Falco peregrinus	Aves	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_023634155.1	Falco peregrinus	Aves	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_023634155.1	Falco peregrinus	Aves	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_023851605.1	Tamandua tetradactyla	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_023851605.1	Tamandua tetradactyla	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_023851605.1	Tamandua tetradactyla	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_023851605.1	Tamandua tetradactyla	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_024166365.1	Elephas maximus indicus	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_024166365.1	Elephas maximus indicus	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_024166365.1	Elephas maximus indicus	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_024166365.1	Elephas maximus indicus	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_025201925.1	Gopherus flavomarginatus	Testudines	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_025201925.1	Gopherus flavomarginatus	Testudines	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_025201925.1	Gopherus flavomarginatus	Testudines	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_025201925.1	Gopherus flavomarginatus	Testudines	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027244095.1	Hemicordylus capensis	Lepidosauria	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027244095.1	Hemicordylus capensis	Lepidosauria	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027244095.1	Hemicordylus capensis	Lepidosauria	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027244095.1	Hemicordylus capensis	Lepidosauria	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027409185.1	Cynocephalus volans	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027409185.1	Cynocephalus volans	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027409185.1	Cynocephalus volans	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027409185.1	Cynocephalus volans	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027409825.1	Scomber japonicus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027409825.1	Scomber japonicus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027409825.1	Scomber japonicus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027409825.1	Scomber japonicus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027579695.1	Neoarius graeffei	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027579695.1	Neoarius graeffei	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027579695.1	Neoarius graeffei	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027579695.1	Neoarius graeffei	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027579735.1	Bombina bombina	Amphibia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027579735.1	Bombina bombina	Amphibia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027579735.1	Bombina bombina	Amphibia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027579735.1	Bombina bombina	Amphibia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027595985.1	Sorex araneus	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027595985.1	Sorex araneus	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027595985.1	Sorex araneus	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_027595985.1	Sorex araneus	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_028372415.1	Notamacropus eugenii	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_028372415.1	Notamacropus eugenii	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_028372415.1	Notamacropus eugenii	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_028372415.1	Notamacropus eugenii	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_028389875.1	Rhea pennata	Aves	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_028389875.1	Rhea pennata	Aves	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_028389875.1	Rhea pennata	Aves	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_028389875.1	Rhea pennata	Aves	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_028858725.1	Colius striatus	Aves	ITPR1	found_annotated	1	1	UP000053615	3	0	0	genome_only:records_exist_but_none_full_length
+GCF_028858725.1	Colius striatus	Aves	ITPR2	found_annotated	1	1	UP000053615	3	0	0	genome_only:records_exist_but_none_full_length
+GCF_028858725.1	Colius striatus	Aves	ITPR3	found_annotated	1	1	UP000053615	3	0	0	genome_only:records_exist_but_none_full_length
+GCF_028858725.1	Colius striatus	Aves	RYR	found_annotated	1	1	UP000053615	3	0	0	genome_only:records_exist_but_none_full_length
+GCF_029633855.1	Hoplias malabaricus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_029633855.1	Hoplias malabaricus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_029633855.1	Hoplias malabaricus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_029633855.1	Hoplias malabaricus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_029633865.1	Lampris incognitus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_029633865.1	Lampris incognitus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_029633865.1	Lampris incognitus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_029633865.1	Lampris incognitus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_030020395.1	Manis pentadactyla	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_030020395.1	Manis pentadactyla	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_030020395.1	Manis pentadactyla	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_030020395.1	Manis pentadactyla	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_030445035.2	Dasypus novemcinctus	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_030445035.2	Dasypus novemcinctus	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_030445035.2	Dasypus novemcinctus	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_030445035.2	Dasypus novemcinctus	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_030463565.1	Pelecanus crispus	Aves	ITPR1	found_annotated	1	1	UP000054150	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_030463565.1	Pelecanus crispus	Aves	ITPR2	found_annotated	1	1	UP000054150	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_030463565.1	Pelecanus crispus	Aves	ITPR3	found_annotated	1	1	UP000054150	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_030463565.1	Pelecanus crispus	Aves	RYR	found_annotated	1	1	UP000054150	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_030490865.1	Poecile atricapillus	Aves	ITPR1	found_annotated	1	1	UP000540071	4	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_030490865.1	Poecile atricapillus	Aves	ITPR2	found_annotated	1	1	UP000540071	4	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_030490865.1	Poecile atricapillus	Aves	ITPR3	found_annotated	1	1	UP000540071	4	2	1	protein_database_and_genome
+GCF_030490865.1	Poecile atricapillus	Aves	RYR	found_annotated	1	1	UP000540071	4	2	1	protein_database_and_genome
+GCF_030867095.1	Alligator mississippiensis	Crocodylia	ITPR1	found_annotated	1	1	UP000050525	20	7	0	genome_only:no_record_resolves_to_this_paralog
+GCF_030867095.1	Alligator mississippiensis	Crocodylia	ITPR2	found_annotated	1	1	UP000050525	20	7	1	protein_database_and_genome
+GCF_030867095.1	Alligator mississippiensis	Crocodylia	ITPR3	found_annotated	1	1	UP000050525	20	7	1	protein_database_and_genome
+GCF_030867095.1	Alligator mississippiensis	Crocodylia	RYR	found_annotated	1	1	UP000050525	20	7	5	protein_database_and_genome
+GCF_030867145.1	Opisthocomus hoazin	Aves	ITPR1	found_annotated	1	1	UP000053605	3	2	1	protein_database_and_genome
+GCF_030867145.1	Opisthocomus hoazin	Aves	ITPR2	found_annotated	1	1	UP000053605	3	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_030867145.1	Opisthocomus hoazin	Aves	ITPR3	found_annotated	1	1	UP000053605	3	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_030867145.1	Opisthocomus hoazin	Aves	RYR	found_annotated	1	1	UP000053605	3	2	1	protein_database_and_genome
+GCF_030936135.1	Gavia stellata	Aves	ITPR1	found_annotated	1	1	UP000054313	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_030936135.1	Gavia stellata	Aves	ITPR2	found_annotated	1	1	UP000054313	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_030936135.1	Gavia stellata	Aves	ITPR3	found_annotated	1	1	UP000054313	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_030936135.1	Gavia stellata	Aves	RYR	found_annotated	1	1	UP000054313	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_033026475.1	Channa argus	Actinopteri	ITPR1	found_annotated	1	1	UP000503349	9	8	2	protein_database_and_genome
+GCF_033026475.1	Channa argus	Actinopteri	ITPR2	found_annotated	1	1	UP000503349	9	8	1	protein_database_and_genome
+GCF_033026475.1	Channa argus	Actinopteri	ITPR3	found_annotated	1	1	UP000503349	9	8	1	protein_database_and_genome
+GCF_033026475.1	Channa argus	Actinopteri	RYR	found_annotated	1	1	UP000503349	9	8	4	protein_database_and_genome
+GCF_033807715.1	Cololabis saira	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_033807715.1	Cololabis saira	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_033807715.1	Cololabis saira	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_033807715.1	Cololabis saira	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_033978785.1	Entelurus aequoreus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_033978785.1	Entelurus aequoreus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_033978785.1	Entelurus aequoreus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_033978785.1	Entelurus aequoreus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_034619465.1	Leptosomus discolor	Aves	ITPR1	found_annotated	1	1	UP000053001	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_034619465.1	Leptosomus discolor	Aves	ITPR2	found_annotated	1	1	UP000053001	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_034619465.1	Leptosomus discolor	Aves	ITPR3	found_annotated	1	1	UP000053001	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_034619465.1	Leptosomus discolor	Aves	RYR	found_annotated	1	1	UP000053001	1	0	0	genome_only:records_exist_but_none_full_length
+GCF_034638445.1	Ciconia boyciana	Aves	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_034638445.1	Ciconia boyciana	Aves	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_034638445.1	Ciconia boyciana	Aves	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_034638445.1	Ciconia boyciana	Aves	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_034702125.1	Engraulis encrasicolus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_034702125.1	Engraulis encrasicolus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_034702125.1	Engraulis encrasicolus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_034702125.1	Engraulis encrasicolus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_035084215.1	Heptranchias perlo	Chondrichthyes	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_035084215.1	Heptranchias perlo	Chondrichthyes	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_035084215.1	Heptranchias perlo	Chondrichthyes	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_035084215.1	Heptranchias perlo	Chondrichthyes	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_035582795.1	Mycteria americana	Aves	ITPR1	found_annotated	1	1	UP001333110	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_035582795.1	Mycteria americana	Aves	ITPR2	found_annotated	1	1	UP001333110	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_035582795.1	Mycteria americana	Aves	ITPR3	found_annotated	1	1	UP001333110	3	1	1	protein_database_and_genome
+GCF_035582795.1	Mycteria americana	Aves	RYR	found_annotated	1	1	UP001333110	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_035609145.1	Eleutherodactylus coqui	Amphibia	ITPR1	found_annotated	1	1	UP000770717	18	10	0	genome_only:no_record_resolves_to_this_paralog
+GCF_035609145.1	Eleutherodactylus coqui	Amphibia	ITPR2	found_annotated	1	1	UP000770717	18	10	0	genome_only:no_record_resolves_to_this_paralog
+GCF_035609145.1	Eleutherodactylus coqui	Amphibia	ITPR3	found_annotated	1	1	UP000770717	18	10	0	genome_only:no_record_resolves_to_this_paralog
+GCF_035609145.1	Eleutherodactylus coqui	Amphibia	RYR	found_annotated	1	1	UP000770717	18	10	10	protein_database_and_genome
+GCF_036013445.1	Caloenas nicobarica	Aves	ITPR1	found_annotated	1	1	UP000546235	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_036013445.1	Caloenas nicobarica	Aves	ITPR2	found_annotated	1	1	UP000546235	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_036013445.1	Caloenas nicobarica	Aves	ITPR3	found_annotated	1	1	UP000546235	5	2	1	protein_database_and_genome
+GCF_036013445.1	Caloenas nicobarica	Aves	RYR	found_annotated	1	1	UP000546235	5	2	1	protein_database_and_genome
+GCF_036365525.1	Heterodontus francisci	Chondrichthyes	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036365525.1	Heterodontus francisci	Chondrichthyes	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036365525.1	Heterodontus francisci	Chondrichthyes	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036365525.1	Heterodontus francisci	Chondrichthyes	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036370855.1	Dromaius novaehollandiae	Aves	ITPR1	found_annotated	1	1	UP000694423	26	21	6	protein_database_and_genome
+GCF_036370855.1	Dromaius novaehollandiae	Aves	ITPR2	found_annotated	1	1	UP000694423	26	21	3	protein_database_and_genome
+GCF_036370855.1	Dromaius novaehollandiae	Aves	ITPR3	found_annotated	1	1	UP000694423	26	21	2	protein_database_and_genome
+GCF_036370855.1	Dromaius novaehollandiae	Aves	RYR	found_annotated	1	1	UP000694423	26	21	10	protein_database_and_genome
+GCF_036373705.1	Amia ocellicauda	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036373705.1	Amia ocellicauda	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036373705.1	Amia ocellicauda	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036373705.1	Amia ocellicauda	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036417535.1	Chlamydotis macqueenii	Aves	ITPR1	found_annotated	1	1	UP000053330	3	1	1	protein_database_and_genome
+GCF_036417535.1	Chlamydotis macqueenii	Aves	ITPR2	found_annotated	1	1	UP000053330	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_036417535.1	Chlamydotis macqueenii	Aves	ITPR3	found_annotated	1	1	UP000053330	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_036417535.1	Chlamydotis macqueenii	Aves	RYR	found_annotated	1	1	UP000053330	3	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_036417845.1	Apteryx mantelli	Aves	ITPR1	found_annotated	1	1	UP001652627	6	5	1	protein_database_and_genome
+GCF_036417845.1	Apteryx mantelli	Aves	ITPR2	found_annotated	1	1	UP001652627	6	5	1	protein_database_and_genome
+GCF_036417845.1	Apteryx mantelli	Aves	ITPR3	found_annotated	1	1	UP001652627	6	5	1	protein_database_and_genome
+GCF_036417845.1	Apteryx mantelli	Aves	RYR	found_annotated	1	1	UP001652627	6	5	2	protein_database_and_genome
+GCF_036850765.1	Saccopteryx bilineata	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036850765.1	Saccopteryx bilineata	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036850765.1	Saccopteryx bilineata	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036850765.1	Saccopteryx bilineata	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036971445.1	Narcine bancroftii	Chondrichthyes	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036971445.1	Narcine bancroftii	Chondrichthyes	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036971445.1	Narcine bancroftii	Chondrichthyes	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_036971445.1	Narcine bancroftii	Chondrichthyes	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_037157495.1	Lathamus discolor	Aves	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_037157495.1	Lathamus discolor	Aves	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_037157495.1	Lathamus discolor	Aves	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_037157495.1	Lathamus discolor	Aves	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_037176945.1	Latimeria chalumnae	Coelacanthimorpha	ITPR1	found_annotated	1	1	UP000008672	10	4	1	protein_database_and_genome
+GCF_037176945.1	Latimeria chalumnae	Coelacanthimorpha	ITPR2	found_annotated	1	1	UP000008672	10	4	0	genome_only:no_record_resolves_to_this_paralog
+GCF_037176945.1	Latimeria chalumnae	Coelacanthimorpha	ITPR3	found_annotated	1	1	UP000008672	10	4	1	protein_database_and_genome
+GCF_037176945.1	Latimeria chalumnae	Coelacanthimorpha	RYR	found_annotated	1	1	UP000008672	10	4	2	protein_database_and_genome
+GCF_037893015.1	Macrotis lagotis	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_037893015.1	Macrotis lagotis	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_037893015.1	Macrotis lagotis	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_037893015.1	Macrotis lagotis	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_039877785.1	Chaetodon trifascialis	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_039877785.1	Chaetodon trifascialis	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_039877785.1	Chaetodon trifascialis	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_039877785.1	Chaetodon trifascialis	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_040054535.1	Antennarius striatus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_040054535.1	Antennarius striatus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_040054535.1	Antennarius striatus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_040054535.1	Antennarius striatus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_040807025.1	Struthio camelus	Aves	ITPR1	found_annotated	1	1	UP000053584	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_040807025.1	Struthio camelus	Aves	ITPR2	found_annotated	1	1	UP000053584	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_040807025.1	Struthio camelus	Aves	ITPR3	found_annotated	1	1	UP000053584	2	1	1	protein_database_and_genome
+GCF_040807025.1	Struthio camelus	Aves	RYR	found_annotated	1	1	UP000053584	2	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_040954835.1	Lepisosteus oculatus	Actinopteri	ITPR1	found_annotated	1	1	UP000018468	9	8	2	protein_database_and_genome
+GCF_040954835.1	Lepisosteus oculatus	Actinopteri	ITPR2	found_annotated	1	1	UP000018468	9	8	2	protein_database_and_genome
+GCF_040954835.1	Lepisosteus oculatus	Actinopteri	ITPR3	found_annotated	1	1	UP000018468	9	8	1	protein_database_and_genome
+GCF_040954835.1	Lepisosteus oculatus	Actinopteri	RYR	found_annotated	1	1	UP000018468	9	8	3	protein_database_and_genome
+GCF_041296385.2	Aphelocoma coerulescens	Aves	ITPR1	found_annotated	1	1	UP000575874	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_041296385.2	Aphelocoma coerulescens	Aves	ITPR2	found_annotated	1	1	UP000575874	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_041296385.2	Aphelocoma coerulescens	Aves	ITPR3	found_annotated	1	1	UP000575874	4	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_041296385.2	Aphelocoma coerulescens	Aves	RYR	found_annotated	1	1	UP000575874	4	1	1	protein_database_and_genome
+GCF_041902795.1	Electrophorus electricus	Actinopteri	ITPR1	found_annotated	1	1	UP000314983	29	22	3	protein_database_and_genome
+GCF_041902795.1	Electrophorus electricus	Actinopteri	ITPR2	found_annotated	1	1	UP000314983	29	22	4	protein_database_and_genome
+GCF_041902795.1	Electrophorus electricus	Actinopteri	ITPR3	found_annotated	1	1	UP000314983	29	22	5	protein_database_and_genome
+GCF_041902795.1	Electrophorus electricus	Actinopteri	RYR	found_annotated	1	1	UP000314983	29	22	10	protein_database_and_genome
+GCF_042186555.1	Aquarana catesbeiana	Amphibia	ITPR1	assembly_gap	1	1	UP000228934	12	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_042186555.1	Aquarana catesbeiana	Amphibia	ITPR2	found_annotated	1	1	UP000228934	12	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_042186555.1	Aquarana catesbeiana	Amphibia	ITPR3	found_annotated	1	1	UP000228934	12	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_042186555.1	Aquarana catesbeiana	Amphibia	RYR	found_annotated	1	1	UP000228934	12	1	1	protein_database_and_genome
+GCF_042242105.1	Pempheris klunzingeri	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_042242105.1	Pempheris klunzingeri	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_042242105.1	Pempheris klunzingeri	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_042242105.1	Pempheris klunzingeri	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_043380555.1	Nothobranchius furzeri	Actinopteri	ITPR1	found_annotated	1	1	UP000694548	5	5	1	protein_database_and_genome
+GCF_043380555.1	Nothobranchius furzeri	Actinopteri	ITPR2	found_annotated	1	1	UP000694548	5	5	0	genome_only:no_record_resolves_to_this_paralog
+GCF_043380555.1	Nothobranchius furzeri	Actinopteri	ITPR3	found_annotated	1	1	UP000694548	5	5	4	protein_database_and_genome
+GCF_043380555.1	Nothobranchius furzeri	Actinopteri	RYR	found_annotated	1	1	UP000694548	5	5	0	genome_only:no_record_resolves_to_this_paralog
+GCF_045865225.1	Trachurus japonicus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_045865225.1	Trachurus japonicus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_045865225.1	Trachurus japonicus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_045865225.1	Trachurus japonicus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_046128005.1	Genypterus blacodes	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_046128005.1	Genypterus blacodes	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_046128005.1	Genypterus blacodes	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_046128005.1	Genypterus blacodes	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_047370975.1	Nipponia nippon	Aves	ITPR1	found_annotated	1	1	UP000053283	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_047370975.1	Nipponia nippon	Aves	ITPR2	found_annotated	1	1	UP000053283	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_047370975.1	Nipponia nippon	Aves	ITPR3	found_annotated	1	1	UP000053283	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_047370975.1	Nipponia nippon	Aves	RYR	found_annotated	1	1	UP000053283	1	1	1	protein_database_and_genome
+GCF_047496795.1	Chiloscyllium punctatum	Chondrichthyes	ITPR1	found_annotated	1	1	UP000287033	7	6	2	protein_database_and_genome
+GCF_047496795.1	Chiloscyllium punctatum	Chondrichthyes	ITPR2	found_annotated	1	1	UP000287033	7	6	1	protein_database_and_genome
+GCF_047496795.1	Chiloscyllium punctatum	Chondrichthyes	ITPR3	found_annotated	1	1	UP000287033	7	6	0	genome_only:no_record_resolves_to_this_paralog
+GCF_047496795.1	Chiloscyllium punctatum	Chondrichthyes	RYR	found_annotated	1	1	UP000287033	7	6	3	protein_database_and_genome
+GCF_047496885.1	Scyliorhinus torazame	Chondrichthyes	ITPR1	found_annotated	1	1	UP000288216	10	5	1	protein_database_and_genome
+GCF_047496885.1	Scyliorhinus torazame	Chondrichthyes	ITPR2	found_annotated	1	1	UP000288216	10	5	1	protein_database_and_genome
+GCF_047496885.1	Scyliorhinus torazame	Chondrichthyes	ITPR3	found_annotated	1	1	UP000288216	10	5	1	protein_database_and_genome
+GCF_047496885.1	Scyliorhinus torazame	Chondrichthyes	RYR	found_annotated	1	1	UP000288216	10	5	2	protein_database_and_genome
+GCF_047663525.1	Anas platyrhynchos	Aves	ITPR1	found_annotated	1	1	UP000016666	15	9	2	protein_database_and_genome
+GCF_047663525.1	Anas platyrhynchos	Aves	ITPR2	found_annotated	1	1	UP000016666	15	9	2	protein_database_and_genome
+GCF_047663525.1	Anas platyrhynchos	Aves	ITPR3	found_annotated	1	1	UP000016666	15	9	2	protein_database_and_genome
+GCF_047663525.1	Anas platyrhynchos	Aves	RYR	found_annotated	1	1	UP000016666	15	9	3	protein_database_and_genome
+GCF_047716275.1	Strix uralensis	Aves	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_047716275.1	Strix uralensis	Aves	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_047716275.1	Strix uralensis	Aves	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_047716275.1	Strix uralensis	Aves	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_048418815.1	Hemitrygon akajei	Chondrichthyes	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_048418815.1	Hemitrygon akajei	Chondrichthyes	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_048418815.1	Hemitrygon akajei	Chondrichthyes	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_048418815.1	Hemitrygon akajei	Chondrichthyes	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_048593235.1	Sminthopsis crassicaudata	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_048593235.1	Sminthopsis crassicaudata	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_048593235.1	Sminthopsis crassicaudata	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_048593235.1	Sminthopsis crassicaudata	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_048594095.1	Paramormyrops kingsleyae	Actinopteri	ITPR1	found_annotated	1	1	UP000261540	8	7	2	protein_database_and_genome
+GCF_048594095.1	Paramormyrops kingsleyae	Actinopteri	ITPR2	found_annotated	1	1	UP000261540	8	7	1	protein_database_and_genome
+GCF_048594095.1	Paramormyrops kingsleyae	Actinopteri	ITPR3	found_annotated	1	1	UP000261540	8	7	1	protein_database_and_genome
+GCF_048594095.1	Paramormyrops kingsleyae	Actinopteri	RYR	found_annotated	1	1	UP000261540	8	7	3	protein_database_and_genome
+GCF_048934315.1	Petromyzon marinus	Hyperoartia	ITPR1	found_annotated	1	1	UP001735300	31	16	3	protein_database_and_genome
+GCF_048934315.1	Petromyzon marinus	Hyperoartia	ITPR2	absent	0	1	UP001735300	31	16	0	n/a (no gene demonstrated in this cell)
+GCF_048934315.1	Petromyzon marinus	Hyperoartia	ITPR3	absent	0	1	UP001735300	31	16	0	n/a (no gene demonstrated in this cell)
+GCF_048934315.1	Petromyzon marinus	Hyperoartia	RYR	found_annotated	1	1	UP001735300	31	16	13	protein_database_and_genome
+GCF_049350105.2	Macaca mulatta	Mammalia	ITPR1	found_annotated	1	1	UP000006718	30	22	11	protein_database_and_genome
+GCF_049350105.2	Macaca mulatta	Mammalia	ITPR2	found_annotated	1	1	UP000006718	30	22	6	protein_database_and_genome
+GCF_049350105.2	Macaca mulatta	Mammalia	ITPR3	found_annotated	1	1	UP000006718	30	22	3	protein_database_and_genome
+GCF_049350105.2	Macaca mulatta	Mammalia	RYR	found_annotated	1	1	UP000006718	30	22	2	protein_database_and_genome
+GCF_050624435.1	Tenrec ecaudatus	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_050624435.1	Tenrec ecaudatus	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_050624435.1	Tenrec ecaudatus	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_050624435.1	Tenrec ecaudatus	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_052040795.1	Danio rerio	Actinopteri	ITPR1	found_annotated	1	1	UP000000437	109	105	53	protein_database_and_genome
+GCF_052040795.1	Danio rerio	Actinopteri	ITPR2	found_annotated	1	1	UP000000437	109	105	1	protein_database_and_genome
+GCF_052040795.1	Danio rerio	Actinopteri	ITPR3	found_annotated	1	1	UP000000437	109	105	2	protein_database_and_genome
+GCF_052040795.1	Danio rerio	Actinopteri	RYR	found_annotated	1	1	UP000000437	109	105	49	protein_database_and_genome
+GCF_052327205.1	Somniosus microcephalus	Chondrichthyes	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_052327205.1	Somniosus microcephalus	Chondrichthyes	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_052327205.1	Somniosus microcephalus	Chondrichthyes	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_052327205.1	Somniosus microcephalus	Chondrichthyes	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_054371585.1	Giraffa tippelskirchi	Mammalia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_054371585.1	Giraffa tippelskirchi	Mammalia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_054371585.1	Giraffa tippelskirchi	Mammalia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_054371585.1	Giraffa tippelskirchi	Mammalia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_054491055.1	Hypomesus nipponensis	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_054491055.1	Hypomesus nipponensis	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_054491055.1	Hypomesus nipponensis	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_054491055.1	Hypomesus nipponensis	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_056507025.1	Lutjanus erythropterus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_056507025.1	Lutjanus erythropterus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_056507025.1	Lutjanus erythropterus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_056507025.1	Lutjanus erythropterus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_057381845.1	Rhamphochromis longiceps	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_057381845.1	Rhamphochromis longiceps	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_057381845.1	Rhamphochromis longiceps	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_057381845.1	Rhamphochromis longiceps	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_900324485.3	Mastacembelus armatus	Actinopteri	ITPR1	found_annotated	1	1	UP000261640	48	42	15	protein_database_and_genome
+GCF_900324485.3	Mastacembelus armatus	Actinopteri	ITPR2	found_annotated	1	1	UP000261640	48	42	8	protein_database_and_genome
+GCF_900324485.3	Mastacembelus armatus	Actinopteri	ITPR3	found_annotated	1	1	UP000261640	48	42	8	protein_database_and_genome
+GCF_900324485.3	Mastacembelus armatus	Actinopteri	RYR	found_annotated	1	1	UP000261640	48	42	11	protein_database_and_genome
+GCF_900634775.2	Gouania willdenowi	Actinopteri	ITPR1	found_annotated	1	1	UP000694680	17	16	10	protein_database_and_genome
+GCF_900634775.2	Gouania willdenowi	Actinopteri	ITPR2	found_annotated	1	1	UP000694680	17	16	6	protein_database_and_genome
+GCF_900634775.2	Gouania willdenowi	Actinopteri	ITPR3	found_annotated	1	1	UP000694680	17	16	0	genome_only:no_record_resolves_to_this_paralog
+GCF_900634775.2	Gouania willdenowi	Actinopteri	RYR	found_annotated	1	1	UP000694680	17	16	0	genome_only:no_record_resolves_to_this_paralog
+GCF_900747795.2	Erpetoichthys calabaricus	Cladistia	ITPR1	found_annotated	1	1	UP000694620	9	7	2	protein_database_and_genome
+GCF_900747795.2	Erpetoichthys calabaricus	Cladistia	ITPR2	found_annotated	1	1	UP000694620	9	7	1	protein_database_and_genome
+GCF_900747795.2	Erpetoichthys calabaricus	Cladistia	ITPR3	found_annotated	1	1	UP000694620	9	7	1	protein_database_and_genome
+GCF_900747795.2	Erpetoichthys calabaricus	Cladistia	RYR	found_annotated	1	1	UP000694620	9	7	3	protein_database_and_genome
+GCF_900880675.2	Sparus aurata	Actinopteri	ITPR1	found_annotated	1	1	UP000472265	50	41	10	protein_database_and_genome
+GCF_900880675.2	Sparus aurata	Actinopteri	ITPR2	found_annotated	1	1	UP000472265	50	41	5	protein_database_and_genome
+GCF_900880675.2	Sparus aurata	Actinopteri	ITPR3	found_annotated	1	1	UP000472265	50	41	10	protein_database_and_genome
+GCF_900880675.2	Sparus aurata	Actinopteri	RYR	found_annotated	1	1	UP000472265	50	41	16	protein_database_and_genome
+GCF_901000725.3	Takifugu rubripes	Actinopteri	ITPR1	found_annotated	1	1	UP000005226	6	6	4	protein_database_and_genome
+GCF_901000725.3	Takifugu rubripes	Actinopteri	ITPR2	found_annotated	1	1	UP000005226	6	6	2	protein_database_and_genome
+GCF_901000725.3	Takifugu rubripes	Actinopteri	ITPR3	found_annotated	1	1	UP000005226	6	6	0	genome_only:no_record_resolves_to_this_paralog
+GCF_901000725.3	Takifugu rubripes	Actinopteri	RYR	found_annotated	1	1	UP000005226	6	6	0	genome_only:no_record_resolves_to_this_paralog
+GCF_901001135.2	Rhinatrema bivittatum	Amphibia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_901001135.2	Rhinatrema bivittatum	Amphibia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_901001135.2	Rhinatrema bivittatum	Amphibia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_901001135.2	Rhinatrema bivittatum	Amphibia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	ITPR1	found_annotated	1	1	UP000472271	38	32	9	protein_database_and_genome
+GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	ITPR2	found_annotated	1	1	UP000472271	38	32	8	protein_database_and_genome
+GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	ITPR3	found_annotated	1	1	UP000472271	38	32	1	protein_database_and_genome
+GCF_902148855.1	Sphaeramia orbicularis	Actinopteri	RYR	found_annotated	1	1	UP000472271	38	32	14	protein_database_and_genome
+GCF_902150065.1	Myripristis murdjan	Actinopteri	ITPR1	found_annotated	1	1	UP000472263	48	38	10	protein_database_and_genome
+GCF_902150065.1	Myripristis murdjan	Actinopteri	ITPR2	found_annotated	1	1	UP000472263	48	38	8	protein_database_and_genome
+GCF_902150065.1	Myripristis murdjan	Actinopteri	ITPR3	found_annotated	1	1	UP000472263	48	38	1	protein_database_and_genome
+GCF_902150065.1	Myripristis murdjan	Actinopteri	RYR	found_annotated	1	1	UP000472263	48	38	19	protein_database_and_genome
+GCF_902167405.1	Gadus morhua	Actinopteri	ITPR1	found_annotated	1	1	UP000694546	74	67	20	protein_database_and_genome
+GCF_902167405.1	Gadus morhua	Actinopteri	ITPR2	found_annotated	1	1	UP000694546	74	67	11	protein_database_and_genome
+GCF_902167405.1	Gadus morhua	Actinopteri	ITPR3	found_annotated	1	1	UP000694546	74	67	11	protein_database_and_genome
+GCF_902167405.1	Gadus morhua	Actinopteri	RYR	found_annotated	1	1	UP000694546	74	67	25	protein_database_and_genome
+GCF_902362185.1	Chanos chanos	Actinopteri	ITPR1	found_annotated	1	1	UP000504632	9	9	2	protein_database_and_genome
+GCF_902362185.1	Chanos chanos	Actinopteri	ITPR2	found_annotated	1	1	UP000504632	9	9	1	protein_database_and_genome
+GCF_902362185.1	Chanos chanos	Actinopteri	ITPR3	found_annotated	1	1	UP000504632	9	9	1	protein_database_and_genome
+GCF_902362185.1	Chanos chanos	Actinopteri	RYR	found_annotated	1	1	UP000504632	9	9	5	protein_database_and_genome
+GCF_902500255.1	Thalassophryne amazonica	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_902500255.1	Thalassophryne amazonica	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_902500255.1	Thalassophryne amazonica	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_902500255.1	Thalassophryne amazonica	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_907165065.1	Caprimulgus europaeus	Aves	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_907165065.1	Caprimulgus europaeus	Aves	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_907165065.1	Caprimulgus europaeus	Aves	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_907165065.1	Caprimulgus europaeus	Aves	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_933228915.1	Telmatherina bonti	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_933228915.1	Telmatherina bonti	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_933228915.1	Telmatherina bonti	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_933228915.1	Telmatherina bonti	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_947461875.1	Haliaeetus albicilla	Aves	ITPR1	found_annotated	1	1	UP000585422	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_947461875.1	Haliaeetus albicilla	Aves	ITPR2	found_annotated	1	1	UP000585422	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_947461875.1	Haliaeetus albicilla	Aves	ITPR3	found_annotated	1	1	UP000585422	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_947461875.1	Haliaeetus albicilla	Aves	RYR	found_annotated	1	1	UP000585422	5	1	1	protein_database_and_genome
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	ITPR1	found_annotated	1	1	UP001364617	12	8	0	genome_only:no_record_resolves_to_this_paralog
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	ITPR2	found_annotated	1	1	UP001364617	12	8	1	protein_database_and_genome
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	ITPR3	found_annotated	1	1	UP001364617	12	8	1	protein_database_and_genome
+GCF_949152265.1	Phoxinus phoxinus	Actinopteri	RYR	found_annotated	1	1	UP001364617	12	8	6	protein_database_and_genome
+GCF_949606895.1	Notothenia rossii	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_949606895.1	Notothenia rossii	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_949606895.1	Notothenia rossii	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_949606895.1	Notothenia rossii	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_949987555.1	Borostomias antarcticus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_949987555.1	Borostomias antarcticus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_949987555.1	Borostomias antarcticus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_949987555.1	Borostomias antarcticus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_949987685.1	Ammodytes marinus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_949987685.1	Ammodytes marinus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_949987685.1	Ammodytes marinus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_949987685.1	Ammodytes marinus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_951640355.1	Cnephaeus nilssonii	Mammalia	ITPR1	found_annotated	1	1	UP001177744	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_951640355.1	Cnephaeus nilssonii	Mammalia	ITPR2	found_annotated	1	1	UP001177744	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_951640355.1	Cnephaeus nilssonii	Mammalia	ITPR3	found_annotated	1	1	UP001177744	6	1	1	protein_database_and_genome
+GCF_951640355.1	Cnephaeus nilssonii	Mammalia	RYR	found_annotated	1	1	UP001177744	6	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_951799975.1	Gobius niger	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_951799975.1	Gobius niger	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_951799975.1	Gobius niger	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_951799975.1	Gobius niger	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_960531495.1	Zeus faber	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_960531495.1	Zeus faber	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_960531495.1	Zeus faber	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_960531495.1	Zeus faber	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963457635.1	Microchirus variegatus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963457635.1	Microchirus variegatus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963457635.1	Microchirus variegatus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963457635.1	Microchirus variegatus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963514005.1	Raja brachyura	Chondrichthyes	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963514005.1	Raja brachyura	Chondrichthyes	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963514005.1	Raja brachyura	Chondrichthyes	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963514005.1	Raja brachyura	Chondrichthyes	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963514075.1	Conger conger	Actinopteri	ITPR1	found_annotated	1	1	UP001152803	10	8	2	protein_database_and_genome
+GCF_963514075.1	Conger conger	Actinopteri	ITPR2	found_annotated	1	1	UP001152803	10	8	1	protein_database_and_genome
+GCF_963514075.1	Conger conger	Actinopteri	ITPR3	found_annotated	1	1	UP001152803	10	8	1	protein_database_and_genome
+GCF_963514075.1	Conger conger	Actinopteri	RYR	found_annotated	1	1	UP001152803	10	8	4	protein_database_and_genome
+GCF_963514085.1	Chelon labrosus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963514085.1	Chelon labrosus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963514085.1	Chelon labrosus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963514085.1	Chelon labrosus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963921795.1	Nannobrachium achirus	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963921795.1	Nannobrachium achirus	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963921795.1	Nannobrachium achirus	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963921795.1	Nannobrachium achirus	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963921805.1	Phalacrocorax carbo	Aves	ITPR1	found_annotated	1	1	UP000053238	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_963921805.1	Phalacrocorax carbo	Aves	ITPR2	found_annotated	1	1	UP000053238	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_963921805.1	Phalacrocorax carbo	Aves	ITPR3	found_annotated	1	1	UP000053238	1	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_963921805.1	Phalacrocorax carbo	Aves	RYR	found_annotated	1	1	UP000053238	1	1	1	protein_database_and_genome
+GCF_963971535.1	Notolepis coatsorum	Actinopteri	ITPR1	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963971535.1	Notolepis coatsorum	Actinopteri	ITPR2	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963971535.1	Notolepis coatsorum	Actinopteri	ITPR3	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963971535.1	Notolepis coatsorum	Actinopteri	RYR	found_no_annotation	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963989245.1	Nansenia antarctica	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963989245.1	Nansenia antarctica	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963989245.1	Nansenia antarctica	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_963989245.1	Nansenia antarctica	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964187855.1	Myxine glutinosa	Myxini	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964187855.1	Myxine glutinosa	Myxini	ITPR2	absent	0	0		0	0	0	n/a (no gene demonstrated in this cell)
+GCF_964187855.1	Myxine glutinosa	Myxini	ITPR3	absent	0	0		0	0	0	n/a (no gene demonstrated in this cell)
+GCF_964187855.1	Myxine glutinosa	Myxini	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964195595.1	Calonectris borealis	Aves	ITPR1	found_annotated	1	1	UP000535403	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_964195595.1	Calonectris borealis	Aves	ITPR2	found_annotated	1	1	UP000535403	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_964195595.1	Calonectris borealis	Aves	ITPR3	found_annotated	1	1	UP000535403	5	1	1	protein_database_and_genome
+GCF_964195595.1	Calonectris borealis	Aves	RYR	found_annotated	1	1	UP000535403	5	1	0	genome_only:no_record_resolves_to_this_paralog
+GCF_964237555.1	Oryctolagus cuniculus	Mammalia	ITPR1	found_annotated	1	1	UP000001811	32	27	10	protein_database_and_genome
+GCF_964237555.1	Oryctolagus cuniculus	Mammalia	ITPR2	found_annotated	1	1	UP000001811	32	27	2	protein_database_and_genome
+GCF_964237555.1	Oryctolagus cuniculus	Mammalia	ITPR3	found_annotated	1	1	UP000001811	32	27	9	protein_database_and_genome
+GCF_964237555.1	Oryctolagus cuniculus	Mammalia	RYR	found_annotated	1	1	UP000001811	32	27	6	protein_database_and_genome
+GCF_964237585.1	Gallinula chloropus	Aves	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964237585.1	Gallinula chloropus	Aves	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964237585.1	Gallinula chloropus	Aves	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964237585.1	Gallinula chloropus	Aves	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964261635.1	Lissotriton helveticus	Amphibia	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964261635.1	Lissotriton helveticus	Amphibia	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964261635.1	Lissotriton helveticus	Amphibia	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964261635.1	Lissotriton helveticus	Amphibia	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964289735.1	Phaethon aethereus	Aves	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964289735.1	Phaethon aethereus	Aves	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964289735.1	Phaethon aethereus	Aves	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964289735.1	Phaethon aethereus	Aves	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964417175.1	Larus argentatus	Aves	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964417175.1	Larus argentatus	Aves	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964417175.1	Larus argentatus	Aves	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964417175.1	Larus argentatus	Aves	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964638095.1	Poromitra crassiceps	Actinopteri	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964638095.1	Poromitra crassiceps	Actinopteri	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964638095.1	Poromitra crassiceps	Actinopteri	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_964638095.1	Poromitra crassiceps	Actinopteri	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_965183815.1	Platalea leucorodia	Aves	ITPR1	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_965183815.1	Platalea leucorodia	Aves	ITPR2	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_965183815.1	Platalea leucorodia	Aves	ITPR3	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_965183815.1	Platalea leucorodia	Aves	RYR	found_annotated	1	0		0	0	0	genome_only:no_reference_proteome
+GCF_965601325.1	Salmo salar	Actinopteri	ITPR1	found_annotated	1	1	UP001652741	71	56	16	protein_database_and_genome
+GCF_965601325.1	Salmo salar	Actinopteri	ITPR2	found_annotated	1	1	UP001652741	71	56	5	protein_database_and_genome
+GCF_965601325.1	Salmo salar	Actinopteri	ITPR3	found_annotated	1	1	UP001652741	71	56	7	protein_database_and_genome
+GCF_965601325.1	Salmo salar	Actinopteri	RYR	found_annotated	1	1	UP001652741	71	56	28	protein_database_and_genome
+GCF_965638725.1	Aptenodytes patagonicus	Aves	ITPR1	found_annotated	1	1	UP000751161	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_965638725.1	Aptenodytes patagonicus	Aves	ITPR2	found_annotated	1	1	UP000751161	5	2	0	genome_only:no_record_resolves_to_this_paralog
+GCF_965638725.1	Aptenodytes patagonicus	Aves	ITPR3	found_annotated	1	1	UP000751161	5	2	1	protein_database_and_genome
+GCF_965638725.1	Aptenodytes patagonicus	Aves	RYR	found_annotated	1	1	UP000751161	5	2	1	protein_database_and_genome

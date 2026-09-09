@@ -1,0 +1,4 @@
+scope	n_genomes	n_genes_present	n_protein_db_invisible	frac	wilson_lo	wilson_hi
+order representative	140	556	413	0.7428	0.7049	0.7774
+margin species	148	592	465	0.7855	0.7506	0.8166
+both	21	84	62	0.7381	0.6351	0.8202

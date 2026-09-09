@@ -1,0 +1,183 @@
+accession	organism	vclass	cell	status	contig_n50	n_consensus_symbols	n_present	frac_present	verdict
+GCA_000699545.1	Podiceps cristatus	Aves	ITPR1	assembly_gap	17412	12			no_gene_table
+GCA_000699545.1	Podiceps cristatus	Aves	ITPR2	fragment	17412	12			no_gene_table
+GCA_000699545.1	Podiceps cristatus	Aves	RYR	assembly_gap	17412	10			no_gene_table
+GCA_000699945.1	Cathartes aura	Aves	ITPR1	tblastn_trace	15248	12	0	0.0	neighbourhood_missing
+GCA_000699945.1	Cathartes aura	Aves	ITPR2	fragment	15248	12	0	0.0	neighbourhood_missing
+GCA_000699945.1	Cathartes aura	Aves	RYR	assembly_gap	15248	10	0	0.0	neighbourhood_missing
+GCA_002197005.1	Cervus elaphus hippelaphus	Mammalia	ITPR3	tblastn_trace	7944	12	0	0.0	neighbourhood_missing
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR1	tblastn_trace	21257	12	0	0.0	neighbourhood_missing
+GCA_002844005.1	Limosa lapponica baueri	Aves	ITPR2	tblastn_trace	21257	12	0	0.0	neighbourhood_missing
+GCA_002909625.1	Bambusicola thoracicus	Aves	ITPR1	assembly_gap	10597	12	0	0.0	neighbourhood_missing
+GCA_002909625.1	Bambusicola thoracicus	Aves	ITPR2	assembly_gap	10597	12	0	0.0	neighbourhood_missing
+GCA_002909625.1	Bambusicola thoracicus	Aves	ITPR3	assembly_gap	10597	12	0	0.0	neighbourhood_missing
+GCA_002909625.1	Bambusicola thoracicus	Aves	RYR	assembly_gap	10597	10	0	0.0	neighbourhood_missing
+GCA_004320025.1	Laticauda laticaudata	Lepidosauria	ITPR1	assembly_gap	35581	12			no_gene_table
+GCA_004320025.1	Laticauda laticaudata	Lepidosauria	ITPR2	assembly_gap	35581	12			no_gene_table
+GCA_004320025.1	Laticauda laticaudata	Lepidosauria	ITPR3	assembly_gap	35581	12			no_gene_table
+GCA_013389825.1	Crypturellus undulatus	Aves	ITPR3	tblastn_trace	99502	12	8	0.667	neighbourhood_present
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR2	tblastn_trace	47040	12	8	0.667	neighbourhood_present
+GCA_013389885.1	Geococcyx californianus	Aves	ITPR3	tblastn_trace	47040	12	10	0.833	neighbourhood_present
+GCA_013389885.1	Geococcyx californianus	Aves	RYR	assembly_gap	47040	10	7	0.7	neighbourhood_present
+GCA_013389965.1	Todus mexicanus	Aves	ITPR1	tblastn_trace	8743	12	9	0.75	neighbourhood_present
+GCA_013389965.1	Todus mexicanus	Aves	ITPR2	tblastn_trace	8743	12	5	0.417	neighbourhood_missing
+GCA_013389985.1	Dryoscopus gambensis	Aves	RYR	assembly_gap	29388	10	6	0.6	neighbourhood_present
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR1	tblastn_trace	14901	12	10	0.833	neighbourhood_present
+GCA_013390105.1	Tichodroma muraria	Aves	ITPR2	tblastn_trace	14901	12	7	0.583	neighbourhood_present
+GCA_013390105.1	Tichodroma muraria	Aves	RYR	tblastn_trace_ambiguous	14901	10	6	0.6	neighbourhood_present
+GCA_013396485.1	Ptilorrhoa leucosticta	Aves	ITPR3	assembly_gap	77643	12	10	0.833	neighbourhood_present
+GCA_013396675.1	Eubucco bourcierii	Aves	ITPR2	assembly_gap	26549	12	9	0.75	neighbourhood_present
+GCA_013396835.1	Psilopogon haemacephalus	Aves	ITPR2	assembly_gap	36269	12	8	0.667	neighbourhood_present
+GCA_013396935.1	Baryphthengus martii	Aves	ITPR1	assembly_gap	70136	12	12	1.0	neighbourhood_present
+GCA_013396935.1	Baryphthengus martii	Aves	RYR	assembly_gap	70136	10	7	0.7	neighbourhood_present
+GCA_013396975.1	Bucco capensis	Aves	ITPR2	tblastn_trace	66968	12	8	0.667	neighbourhood_present
+GCA_013396975.1	Bucco capensis	Aves	ITPR3	assembly_gap	66968	12	8	0.667	neighbourhood_present
+GCA_013396975.1	Bucco capensis	Aves	RYR	assembly_gap	66968	10	9	0.9	neighbourhood_present
+GCA_013397245.1	Thryothorus ludovicianus	Aves	ITPR1	assembly_gap	60402	12	9	0.75	neighbourhood_present
+GCA_013397245.1	Thryothorus ludovicianus	Aves	ITPR3	assembly_gap	60402	12	10	0.833	neighbourhood_present
+GCA_013397245.1	Thryothorus ludovicianus	Aves	RYR	assembly_gap	60402	10	9	0.9	neighbourhood_present
+GCA_013397295.1	Polioptila caerulea	Aves	ITPR1	tblastn_trace	50944	12	10	0.833	neighbourhood_present
+GCA_013397465.1	Furnarius figulus	Aves	RYR	assembly_gap	55547	10	8	0.8	neighbourhood_present
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR1	assembly_gap	72805	12	10	0.833	neighbourhood_present
+GCA_013397495.1	Mionectes macconnelli	Aves	ITPR3	tblastn_trace	72805	12	10	0.833	neighbourhood_present
+GCA_013397635.1	Columbina picui	Aves	ITPR3	tblastn_trace	24994	12	9	0.75	neighbourhood_present
+GCA_013398125.1	Aegotheles bennettii	Aves	ITPR2	assembly_gap	65833	12	7	0.583	neighbourhood_present
+GCA_013398795.1	Elachura formosa	Aves	ITPR3	tblastn_trace	43159	12	9	0.75	neighbourhood_present
+GCA_013398835.1	Emberiza fucata	Aves	ITPR1	assembly_gap	19687	12	11	0.917	neighbourhood_present
+GCA_013398935.1	Ceuthmochares aereus	Aves	ITPR3	assembly_gap	29269	12	9	0.75	neighbourhood_present
+GCA_013398955.1	Callaeas wilsoni	Aves	ITPR1	assembly_gap	118426	12	9	0.75	neighbourhood_present
+GCA_013398975.1	Catharus fuscescens	Aves	ITPR1	assembly_gap	56061	12	11	0.917	neighbourhood_present
+GCA_013399035.1	Quiscalus mexicanus	Aves	ITPR1	assembly_gap	60532	12	8	0.667	neighbourhood_present
+GCA_013399035.1	Quiscalus mexicanus	Aves	ITPR2	assembly_gap	60532	12	8	0.667	neighbourhood_present
+GCA_013399395.1	Nyctiprogne leucopyga	Aves	RYR	assembly_gap	28894	10	7	0.7	neighbourhood_present
+GCA_013399455.1	Anthoscopus minutus	Aves	ITPR2	assembly_gap	49651	12	9	0.75	neighbourhood_present
+GCA_013399455.1	Anthoscopus minutus	Aves	ITPR3	assembly_gap	49651	12	11	0.917	neighbourhood_present
+GCA_013399455.1	Anthoscopus minutus	Aves	RYR	assembly_gap	49651	10	9	0.9	neighbourhood_present
+GCA_013399565.1	Podilymbus podiceps	Aves	ITPR2	assembly_gap	35810	12	7	0.583	neighbourhood_present
+GCA_013399735.1	Tyrannus savana	Aves	ITPR2	assembly_gap	72317	12	8	0.667	neighbourhood_present
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR1	tblastn_trace	8608	12	9	0.75	neighbourhood_present
+GCA_013399775.1	Semnornis frantzii	Aves	ITPR2	tblastn_trace	8608	12	7	0.583	neighbourhood_present
+GCA_013399775.1	Semnornis frantzii	Aves	RYR	assembly_gap	8608	10	4	0.4	neighbourhood_missing
+GCA_013399795.1	Zosterops hypoxanthus	Aves	ITPR1	assembly_gap	48044	12	10	0.833	neighbourhood_present
+GCA_013400075.1	Hippolais icterina	Aves	ITPR1	assembly_gap	64762	12	10	0.833	neighbourhood_present
+GCA_013400445.1	Leiothrix lutea	Aves	ITPR1	tblastn_trace	27764	12	10	0.833	neighbourhood_present
+GCA_013400515.1	Erpornis zantholeuca	Aves	RYR	assembly_gap	45331	10	8	0.8	neighbourhood_present
+GCA_013400585.1	Chloropsis cyanopogon	Aves	RYR	assembly_gap	24720	10	5	0.5	neighbourhood_present
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR1	tblastn_trace	23460	12	10	0.833	neighbourhood_present
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	ITPR2	tblastn_trace	23460	12	9	0.75	neighbourhood_present
+GCA_013400635.1	Hypocryptadius cinnamomeus	Aves	RYR	assembly_gap	23460	10	5	0.5	neighbourhood_present
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR1	tblastn_trace	10653	12	7	0.583	neighbourhood_present
+GCA_013400655.1	Mystacornis crossleyi	Aves	ITPR3	tblastn_trace	10653	12	5	0.417	neighbourhood_missing
+GCA_013400655.1	Mystacornis crossleyi	Aves	RYR	assembly_gap	10653	10	5	0.5	neighbourhood_present
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR1	tblastn_trace	3531	12	6	0.5	neighbourhood_present
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR2	assembly_gap	3531	12	7	0.583	neighbourhood_present
+GCA_013400675.1	Oxylabes madagascariensis	Aves	ITPR3	assembly_gap	3531	12	5	0.417	neighbourhood_missing
+GCA_013400675.1	Oxylabes madagascariensis	Aves	RYR	assembly_gap	3531	10	3	0.3	neighbourhood_missing
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR1	tblastn_trace	7054	12	2	0.167	neighbourhood_missing
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR2	fragment	7054	12	3	0.25	neighbourhood_missing
+GCA_013400695.1	Neodrepanis coruscans	Aves	ITPR3	assembly_gap	7054	12	4	0.333	neighbourhood_missing
+GCA_013400695.1	Neodrepanis coruscans	Aves	RYR	assembly_gap	7054	10	2	0.2	neighbourhood_missing
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR1	tblastn_trace	34780	12	10	0.833	neighbourhood_present
+GCA_013400735.1	Pomatostomus ruficeps	Aves	ITPR2	assembly_gap	34780	12	8	0.667	neighbourhood_present
+GCA_013400735.1	Pomatostomus ruficeps	Aves	RYR	assembly_gap	34780	10	7	0.7	neighbourhood_present
+GCA_013400815.1	Centropus bengalensis	Aves	ITPR1	assembly_gap	34951	12	11	0.917	neighbourhood_present
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR1	tblastn_trace	13219	12	8	0.667	neighbourhood_present
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR2	assembly_gap	13219	12	8	0.667	neighbourhood_present
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	ITPR3	tblastn_trace	13219	12	6	0.5	neighbourhood_present
+GCA_013400855.1	Buphagus erythrorhynchus	Aves	RYR	assembly_gap	13219	10	6	0.6	neighbourhood_present
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	ITPR2	tblastn_trace	23404	12	4	0.333	neighbourhood_missing
+GCA_013400895.1	Thalassarche chlororhynchos	Aves	RYR	assembly_gap	23404	10	3	0.3	neighbourhood_missing
+GCA_013400915.1	Pardalotus punctatus	Aves	ITPR1	assembly_gap	83169	12	10	0.833	neighbourhood_present
+GCA_013400915.1	Pardalotus punctatus	Aves	ITPR2	assembly_gap	83169	12	8	0.667	neighbourhood_present
+GCA_013400915.1	Pardalotus punctatus	Aves	ITPR3	assembly_gap	83169	12	9	0.75	neighbourhood_present
+GCA_013400955.1	Drymodes brunneopygia	Aves	ITPR2	assembly_gap	79910	12	9	0.75	neighbourhood_present
+GCA_013400995.1	Oreotrochilus melanogaster	Aves	ITPR1	assembly_gap	7679	12	11	0.917	neighbourhood_present
+GCA_013400995.1	Oreotrochilus melanogaster	Aves	RYR	assembly_gap	7679	10	8	0.8	neighbourhood_present
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR1	tblastn_trace	3129	12	8	0.667	neighbourhood_present
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR2	assembly_gap	3129	12	7	0.583	neighbourhood_present
+GCA_013401035.1	Horornis vulcanius	Aves	ITPR3	assembly_gap	3129	12	5	0.417	neighbourhood_missing
+GCA_013401035.1	Horornis vulcanius	Aves	RYR	assembly_gap	3129	10	3	0.3	neighbourhood_missing
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR1	tblastn_trace	60017	12	8	0.667	neighbourhood_present
+GCA_013401195.1	Pomatorhinus ruficollis	Aves	ITPR3	tblastn_trace	60017	12	5	0.417	neighbourhood_missing
+GCA_013401215.1	Atlantisia rogersi	Aves	ITPR1	assembly_gap	36139	12	8	0.667	neighbourhood_present
+GCA_013401215.1	Atlantisia rogersi	Aves	ITPR2	assembly_gap	36139	12	8	0.667	neighbourhood_present
+GCA_013401215.1	Atlantisia rogersi	Aves	ITPR3	assembly_gap	36139	12	6	0.5	neighbourhood_present
+GCA_013401215.1	Atlantisia rogersi	Aves	RYR	assembly_gap	36139	10	10	1.0	neighbourhood_present
+GCA_013401255.1	Urocolius indicus	Aves	ITPR2	assembly_gap	94415	12	9	0.75	neighbourhood_present
+GCA_013401255.1	Urocolius indicus	Aves	ITPR3	assembly_gap	94415	12	10	0.833	neighbourhood_present
+GCA_013401295.1	Glareola pratincola	Aves	ITPR3	assembly_gap	39898	12	10	0.833	neighbourhood_present
+GCA_013401315.1	Balaeniceps rex	Aves	ITPR2	assembly_gap	24547	12	4	0.333	neighbourhood_missing
+GCA_013401315.1	Balaeniceps rex	Aves	RYR	assembly_gap	24547	10	5	0.5	neighbourhood_present
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR1	assembly_gap	14890	12	7	0.583	neighbourhood_present
+GCA_013401355.1	Ceyx cyanopectus	Aves	ITPR3	tblastn_trace	14890	12	8	0.667	neighbourhood_present
+GCA_013401355.1	Ceyx cyanopectus	Aves	RYR	assembly_gap	14890	10	5	0.5	neighbourhood_present
+GCA_014363365.1	Leucopsar rothschildi	Aves	ITPR1	assembly_gap	104200	12			no_gene_table
+GCA_014363365.1	Leucopsar rothschildi	Aves	ITPR2	assembly_gap	104200	12			no_gene_table
+GCA_014363365.1	Leucopsar rothschildi	Aves	ITPR3	assembly_gap	104200	12			no_gene_table
+GCA_014363365.1	Leucopsar rothschildi	Aves	RYR	assembly_gap	104200	10			no_gene_table
+GCA_018340635.1	Bothrops jararaca	Lepidosauria	ITPR2	tblastn_trace	162550	12			no_gene_table
+GCA_023974075.1	Chaenocephalus aceratus	Actinopteri	ITPR3	fragment	1500626	12	0	0.0	neighbourhood_missing
+GCA_036250305.1	Ataeniobius toweri	Actinopteri	ITPR1	assembly_gap	16136	12	3	0.25	neighbourhood_missing
+GCA_036250305.1	Ataeniobius toweri	Actinopteri	ITPR2	assembly_gap	16136	12	4	0.333	neighbourhood_missing
+GCA_036250305.1	Ataeniobius toweri	Actinopteri	ITPR3	assembly_gap	16136	12	2	0.167	neighbourhood_missing
+GCA_036250325.1	Characodon lateralis	Actinopteri	ITPR1	assembly_gap	18129	12	4	0.333	neighbourhood_missing
+GCA_036250325.1	Characodon lateralis	Actinopteri	ITPR2	assembly_gap	18129	12	4	0.333	neighbourhood_missing
+GCA_036250325.1	Characodon lateralis	Actinopteri	ITPR3	assembly_gap	18129	12	2	0.167	neighbourhood_missing
+GCA_036250325.1	Characodon lateralis	Actinopteri	RYR	assembly_gap	18129	10	2	0.2	neighbourhood_missing
+GCA_040091285.1	Ameca splendens	Actinopteri	ITPR1	assembly_gap	16857	12	6	0.5	neighbourhood_present
+GCA_040091285.1	Ameca splendens	Actinopteri	ITPR2	assembly_gap	16857	12	3	0.25	neighbourhood_missing
+GCA_040091285.1	Ameca splendens	Actinopteri	ITPR3	assembly_gap	16857	12	2	0.167	neighbourhood_missing
+GCA_040091285.1	Ameca splendens	Actinopteri	RYR	assembly_gap	16857	10	0	0.0	neighbourhood_missing
+GCA_040091305.1	Ilyodon furcidens	Actinopteri	ITPR1	assembly_gap	11867	12	5	0.417	neighbourhood_missing
+GCA_040091305.1	Ilyodon furcidens	Actinopteri	ITPR2	assembly_gap	11867	12	3	0.25	neighbourhood_missing
+GCA_040091305.1	Ilyodon furcidens	Actinopteri	ITPR3	assembly_gap	11867	12	3	0.25	neighbourhood_missing
+GCA_040091305.1	Ilyodon furcidens	Actinopteri	RYR	assembly_gap	11867	10	0	0.0	neighbourhood_missing
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR1	assembly_gap	16062	12	2	0.167	neighbourhood_missing
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR2	assembly_gap	16062	12	5	0.417	neighbourhood_missing
+GCA_040091325.1	Goodea atripinnis	Actinopteri	ITPR3	assembly_gap	16062	12	3	0.25	neighbourhood_missing
+GCA_040091325.1	Goodea atripinnis	Actinopteri	RYR	assembly_gap	16062	10	0	0.0	neighbourhood_missing
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR1	assembly_gap	19941	12	2	0.167	neighbourhood_missing
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR2	assembly_gap	19941	12	3	0.25	neighbourhood_missing
+GCA_040091335.1	Xenoophorus captivus	Actinopteri	ITPR3	assembly_gap	19941	12	0	0.0	neighbourhood_missing
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	ITPR1	assembly_gap	15690	12	5	0.417	neighbourhood_missing
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	ITPR2	assembly_gap	15690	12	2	0.167	neighbourhood_missing
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	ITPR3	assembly_gap	15690	12	2	0.167	neighbourhood_missing
+GCA_040091345.1	Xenotaenia resolanae	Actinopteri	RYR	assembly_gap	15690	10	1	0.1	neighbourhood_missing
+GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	ITPR1	assembly_gap	1446	12			no_gene_table
+GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	ITPR2	assembly_gap	1446	12			no_gene_table
+GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	ITPR3	assembly_gap	1446	12			no_gene_table
+GCA_051992705.1	Lepidogalaxias salamandroides	Actinopteri	RYR	assembly_gap	1446	10			no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR1	assembly_gap	2928	12			no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR2	tblastn_trace	2928	12			no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	ITPR3	assembly_gap	2928	12			no_gene_table
+GCA_900312595.1	Guentherus altivela	Actinopteri	RYR	assembly_gap	2928	10			no_gene_table
+GCA_951230385.1	Staurois parvus	Amphibia	ITPR2	assembly_gap	611229	12	0	0.0	neighbourhood_missing
+GCA_951230385.1	Staurois parvus	Amphibia	ITPR3	assembly_gap	611229	12	0	0.0	neighbourhood_missing
+GCF_000687285.1	Phaethon lepturus	Aves	ITPR1	assembly_gap	22941	12	9	0.75	neighbourhood_present
+GCF_000687285.1	Phaethon lepturus	Aves	ITPR2	assembly_gap	22941	12	6	0.5	neighbourhood_present
+GCF_000690535.1	Cariama cristata	Aves	ITPR2	tblastn_trace	24645	12	6	0.5	neighbourhood_present
+GCF_000690535.1	Cariama cristata	Aves	RYR	assembly_gap	24645	10	8	0.8	neighbourhood_present
+GCF_000690775.1	Eurypyga helias	Aves	ITPR2	tblastn_trace	24402	12	5	0.417	neighbourhood_missing
+GCF_000690775.1	Eurypyga helias	Aves	RYR	assembly_gap	24402	10	7	0.7	neighbourhood_present
+GCF_000690835.1	Fulmarus glacialis	Aves	ITPR1	assembly_gap	25926	12	9	0.75	neighbourhood_present
+GCF_000690835.1	Fulmarus glacialis	Aves	ITPR2	assembly_gap	25926	12	5	0.417	neighbourhood_missing
+GCF_000690835.1	Fulmarus glacialis	Aves	RYR	assembly_gap	25926	10	9	0.9	neighbourhood_present
+GCF_000691845.1	Merops nubicus	Aves	ITPR1	assembly_gap	24675	12	9	0.75	neighbourhood_present
+GCF_000691845.1	Merops nubicus	Aves	ITPR2	assembly_gap	24675	12	7	0.583	neighbourhood_present
+GCF_000691845.1	Merops nubicus	Aves	ITPR3	assembly_gap	24675	12	8	0.667	neighbourhood_present
+GCF_000695765.1	Mesitornis unicolor	Aves	ITPR2	fragment	22740	12	5	0.417	neighbourhood_missing
+GCF_000695765.1	Mesitornis unicolor	Aves	RYR	assembly_gap	22740	10	7	0.7	neighbourhood_present
+GCF_000695815.1	Acanthisitta chloris	Aves	ITPR2	fragment	20602	12	6	0.5	neighbourhood_present
+GCF_000696875.1	Nestor notabilis	Aves	ITPR2	assembly_gap	26546	12	7	0.583	neighbourhood_present
+GCF_000696875.1	Nestor notabilis	Aves	RYR	assembly_gap	26546	10	7	0.7	neighbourhood_present
+GCF_000699245.1	Pterocles gutturalis	Aves	ITPR2	fragment	26448	12	7	0.583	neighbourhood_present
+GCF_000700745.2	Antrostomus carolinensis	Aves	ITPR2	tblastn_trace	22170	12	9	0.75	neighbourhood_present
+GCF_000700745.2	Antrostomus carolinensis	Aves	RYR	assembly_gap	22170	10	8	0.8	neighbourhood_present
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR1	tblastn_trace	28882	12	10	0.833	neighbourhood_present
+GCF_000703405.1	Apaloderma vittatum	Aves	ITPR2	tblastn_trace	28882	12	7	0.583	neighbourhood_present
+GCF_000703405.1	Apaloderma vittatum	Aves	RYR	assembly_gap	28882	10	7	0.7	neighbourhood_present
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR2	tblastn_trace	29773	12	8	0.667	neighbourhood_present
+GCF_000705375.1	Tinamus guttatus	Aves	ITPR3	assembly_gap	29773	12	10	0.833	neighbourhood_present
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR1	tblastn_trace	14587	12	11	0.917	neighbourhood_present
+GCF_000710305.1	Buceros rhinoceros silvestris	Aves	ITPR2	tblastn_trace	14587	12	5	0.417	neighbourhood_missing
+GCF_042186555.1	Aquarana catesbeiana	Amphibia	ITPR1	assembly_gap	3396515	12	11	0.917	neighbourhood_present

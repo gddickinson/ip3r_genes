@@ -1,0 +1,97 @@
+{
+ "n_cells": 1236,
+ "d4_bar": 142212,
+ "series": {
+  "itpr_present": {
+   "n_cells": 923,
+   "n_false_negative": 140,
+   "rate": 0.1517,
+   "wilson": [
+    0.13,
+    0.1763
+   ],
+   "above_bar": {
+    "n": 563,
+    "n_false_negative": 5,
+    "rate": 0.0089
+   },
+   "below_bar": {
+    "n": 360,
+    "n_false_negative": 135,
+    "rate": 0.375
+   }
+  },
+  "ryr_sister": {
+   "n_cells": 309,
+   "n_false_negative": 42,
+   "rate": 0.1359,
+   "wilson": [
+    0.1022,
+    0.1786
+   ],
+   "above_bar": {
+    "n": 189,
+    "n_false_negative": 0,
+    "rate": 0.0
+   },
+   "below_bar": {
+    "n": 120,
+    "n_false_negative": 42,
+    "rate": 0.35
+   }
+  }
+ },
+ "floor": {
+  "itpr_present": {
+   "0.05": {
+    "floor": 100000,
+    "genomes_retained": 194,
+    "genomes_retained_frac": 0.6278,
+    "achieved_fn_rate": 0.0156,
+    "achieved_upper_ci": 0.0293
+   },
+   "0.01": {
+    "floor": null,
+    "genomes_retained": 0,
+    "genomes_retained_frac": 0,
+    "achieved_fn_rate": null,
+    "achieved_upper_ci": null
+   },
+   "at_d4_bar": {
+    "floor": 142212,
+    "genomes_retained": 189,
+    "fn_rate": 0.0089,
+    "upper_ci": 0.0206
+   }
+  },
+  "ryr_sister": {
+   "0.05": {
+    "floor": 100000,
+    "genomes_retained": 194,
+    "genomes_retained_frac": 0.6278,
+    "achieved_fn_rate": 0.0052,
+    "achieved_upper_ci": 0.0286
+   },
+   "0.01": {
+    "floor": null,
+    "genomes_retained": 0,
+    "genomes_retained_frac": 0,
+    "achieved_fn_rate": null,
+    "achieved_upper_ci": null
+   },
+   "at_d4_bar": {
+    "floor": 142212,
+    "genomes_retained": 189,
+    "fn_rate": 0.0,
+    "upper_ci": 0.0199
+   }
+  }
+ },
+ "not_counted": 4,
+ "residual": {
+  "tested": 182,
+  "neighbourhood_missing": 57,
+  "neighbourhood_present": 106,
+  "no_gene_table": 19
+ }
+}

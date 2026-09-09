@@ -2942,3 +2942,124 @@ counterpart to S5b's 318 DNA-only models. And S19's contiguity-confounder
 step now has a measured version of exactly its question: the ITPR failure
 rate across D4's bar (26.1 % → 6.7 %), with the RyR control beside it and the
 archive (D9) separated out.
+
+---
+
+## 2026-09-08 — S19: methods results
+
+**Task.** S19 — what each search method was worth, written as results.
+Status `completed 2026-09-08`. Whole task rebuilds offline in 43 s
+(`python scripts/s19_run.py`).
+
+### What ran
+
+Eight stages over committed artefacts. One derived asset: the swept
+accession universe, built by one `grep '^>'` pass over each of the seven
+reference-proteome FASTAs (42 GB, ~15 min, cached under the data root, so a
+rerun is offline). The bait ablation re-parses the 309 retained
+`miniprot.gff` files and caches each genome's alignments in compact form.
+
+- `contribution` + `recovery` — census growth v1→v6, per-channel record
+  sets, the head-to-head inside each searched database by length band, the
+  per-gene recovery question, and cost against yield.
+- `contiguity` + `floor` — the false-negative rate on both control series,
+  its bins and strata, the tests, the floor scan and the neighbourhood check.
+- `panel` — 19 bait panels × 309 genomes × 4 cells, validated against the
+  ledger first.
+- `drift` — the seven jackhmmer runs re-derived from the raw logs, each kill
+  rule scored as a classifier.
+- `inference` — S9/S13/S15a/S17's limits recomputed from their own tables.
+- `tables`, `figures`, `report`.
+
+37 tables, 4 figures, `report.md` (564 lines), `methods_stats.json`.
+
+### What resulted
+
+**The control design.** S15b reconstructs no losses anywhere in the scope, so
+all 923 assignable cells hold a gene that is there and every ledger cell not
+`found` is a false negative of the method: **140/923 (15.2 %)**. The RyR
+sister cell is an independent replicate using none of S15a's states:
+**42/309 (13.6 %)**, Fisher *p* = 0.58. The four `paralog_unassignable`
+cyclostome cells are in neither series.
+
+**Contiguity is the whole of it.** Missed cell median contig N50 23,460 bp
+against 3,396,515 bp; odds of finding the gene 8.1× per tenfold (RyR 20.0×);
+3/512 ITPR and 0/172 RyR cells missed on chromosome-level assemblies. Below
+D4's bar: ITPR3 30.0 %, ITPR1 39.2 %, ITPR2 43.3 % — S5b's span bias as a
+false-negative rate. 57 of the 182 misses sit where the paralog's own S8
+consensus neighbourhood is also missing.
+
+**D4's a-priori bar survives calibration.** 142,212 bp gives 0.9 % residual
+on the ITPR series, 0.0 % on the RyR, retaining 189/309 genomes. Conservative
+against 5 % (reached at 100 kb), about right against 1 %. Cost: 38.8 % of the
+scope, disproportionately the margin species.
+
+**The panel ablation reproduces the ledger 1,236/1,236.** Four human baits
+recover 782 of 783; dropping a clade band costs ≤ 2 cells; dropping the RyR
+control changes no ITPR call; dropping one paralog's baits costs 238–241. The
+three unlabelled baits change 0 cells and alone recover 0. 68 of 2,179 call
+changes are gains, all one mechanism (top-*scoring* vs best-*covering* bait
+at the 0.70 bar). One bait alone recovers the gene at any identity above 0.5.
+
+**Profile HMM vs domain annotation, inside one database.** At gene scale the
+sweep adds 1 record to 3,135 in the vertebrates and 2 to 1,021 in the
+non-vertebrate metazoa; its entire gain is under 1,000 aa — except in the
+protists, where it adds 89 gene-scale records. Iteration returned no record
+the profile pair calls family that one pass had not (4,960 of 5,130, plus
+19,969 non-family). Three maximally-unlike seeds intersect on 4,785 family
+records and differ by ≤ 162.
+
+**K1 fires on 0 of 7 jackhmmer runs, including all 3 that drifted.** Scored
+against a drift outcome measured on the finished model: K1 sensitivity 0.00,
+K2 0.33, K3 1.00 at specificity 0.25. Moving K1's own 0.10 threshold to the
+off-family share gives 1.00/1.00. Proposed, not applied.
+
+**940 of 1,232 demonstrated genes (76.3 %) are unreachable from any protein
+database**, and it is not a margin-species artefact (74.3 % vs 78.5 %).
+
+### Bugs found and fixed
+
+- **A negative control was overwriting a committed table.** T11 called the
+  real `criterion_trace`, which wrote its two constructed rows over
+  `kill_criterion_trace.tsv`; the report then read 2 jackhmmer runs where
+  there are 7, and nothing failed. Fixed with a `write` flag, and T15 now
+  checks the SHA-256 of every committed table before and after the suite.
+  Mutation-tested: T15 catches it. → **D60**
+- **jackhmmer target names were never intersecting the database universe.**
+  The log names targets as `sp|ACC|NAME`, which `acc_key` deliberately leaves
+  untouched (a genome model id also carries pipes), so every membership test
+  returned empty and iteration silently looked as if it had added nothing.
+- **The head-to-head was counting raw profile targets.** 18,501 vertebrate
+  targets were scored and 5,130 called; the first version credited the sweep
+  with the 13,371 D22's gate declined.
+- **A logistic p-value printed as 0.** `1 - Φ(z)` cancels to exactly zero
+  above |z| ≈ 6 in double precision; switched to `erfc`.
+- **The self-test crashed on a clean tree.** Four checks read tables the
+  stages had not written yet; they now report *skipped* and the suite re-runs
+  from the `tables` stage.
+
+### Decisions
+
+- **D57** — a search's sensitivity is measurable, not estimable, when the
+  family has no losses; and the control must be able to fail.
+- **D58** — D4's contiguity bar was chosen a priori and is now calibrated; it
+  stands, and its cost is printed beside it.
+- **D59** — the kill rule written to catch iterative drift measures the wrong
+  axis; the replacement is proposed rather than applied.
+- **D60** — a self-test must not be able to damage the artefact it tests.
+
+### Emergent
+
+Five rows: the panel could be four baits (and the same ablation should be run
+on S23's 68-bait non-vertebrate panel, where breadth probably is not free);
+the one-line D10 fix and where it should be validated next; the three
+quarters of genes with no protein record and what a submittable form would
+be; the ablation's silence about tblastn rescue; and the 57 misses whose
+whole genomic region is absent.
+
+### Next
+
+**S21 — gene architecture.** The instrument is already validated and cached:
+S19's panel simulation reproduces the ledger 1,236/1,236 by re-parsing the
+309 retained GFFs. Scope any architecture claim above D4's bar, or it will
+measure contig lengths rather than exons.

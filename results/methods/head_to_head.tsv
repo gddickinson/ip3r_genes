@@ -1,0 +1,29 @@
+database	length_band	n_union	n_pfam	n_hmm	n_shared	n_hmm_only	n_pfam_only	n_jackhmmer_beyond_hmmsearch
+vertebrata	<1000 aa (profile tail)	2275	1681	1509	915	594	766	
+vertebrata	1000-1999 aa (partial)	485	462	485	462	23	0	
+vertebrata	>=2000 aa (gene-scale)	3136	3135	3136	3135	1	0	
+vertebrata	(all lengths; accreted targets have no recorded length)							19969
+fungi	<1000 aa (profile tail)	31	15	17	1	16	14	
+fungi	1000-1999 aa (partial)	12	5	12	5	7	0	
+fungi	>=2000 aa (gene-scale)	26	26	26	26	0	0	
+fungi	(all lengths; accreted targets have no recorded length)							9
+viridiplantae	<1000 aa (profile tail)	33	22	19	8	11	14	
+viridiplantae	1000-1999 aa (partial)	17	16	15	14	1	2	
+viridiplantae	>=2000 aa (gene-scale)	25	25	21	21	0	4	
+viridiplantae	(all lengths; accreted targets have no recorded length)							16
+metazoa_nonvert	<1000 aa (profile tail)	1121	652	916	447	469	205	
+metazoa_nonvert	1000-1999 aa (partial)	411	374	411	374	37	0	
+metazoa_nonvert	>=2000 aa (gene-scale)	1023	1021	1023	1021	2	0	
+metazoa_nonvert	(all lengths; accreted targets have no recorded length)							710
+protista_other	<1000 aa (profile tail)	184	82	152	50	102	32	
+protista_other	1000-1999 aa (partial)	124	73	121	70	51	3	
+protista_other	>=2000 aa (gene-scale)	577	488	577	488	89	0	
+protista_other	(all lengths; accreted targets have no recorded length)							22141
+archaea	<1000 aa (profile tail)	0	0	0	0	0	0	
+archaea	1000-1999 aa (partial)	0	0	0	0	0	0	
+archaea	>=2000 aa (gene-scale)	0	0	0	0	0	0	
+archaea	(all lengths; accreted targets have no recorded length)							0
+bacteria_genus	<1000 aa (profile tail)	0	0	0	0	0	0	
+bacteria_genus	1000-1999 aa (partial)	0	0	0	0	0	0	
+bacteria_genus	>=2000 aa (gene-scale)	0	0	0	0	0	0	
+bacteria_genus	(all lengths; accreted targets have no recorded length)							0

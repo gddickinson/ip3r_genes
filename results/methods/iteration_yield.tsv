@@ -1,0 +1,8 @@
+database	hmmsearch_called_family	n_runs	accepted_targets_union	of_which_called_family	of_which_not_called_family	runs
+vertebrata	5130	3	24929	4960	19969	itpr1_human;itpr_acanthamoeba;itpr_fly
+fungi	55	1	42	33	9	s20_fungi
+viridiplantae	55	1	70	54	16	s20_viridiplantae
+metazoa_nonvert	2350	1	2908	2198	710	s20_metazoa_nonvert
+protista_other	850	1	22913	772	22141	s20_protista_other
+archaea	0	0				no run
+bacteria_genus	0	0				no run

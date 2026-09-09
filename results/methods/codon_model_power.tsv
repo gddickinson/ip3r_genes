@@ -1,0 +1,5 @@
+paralog	n_sites	n_alpha_zero	n_alpha_ge_100	n_alpha_at_hyphy_bound	n_unidentifiable	frac_unidentifiable	median_usable_alpha
+ITPR1	2456	95	13	11	108	0.044	1.04
+ITPR2	2455	116	202	13	318	0.1295	0.956
+ITPR3	2457	107	138	13	245	0.0997	0.982
+ALL	7368	318	353	37	671	0.0911	0.999

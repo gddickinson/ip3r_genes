@@ -1,0 +1,5 @@
+rule	n_runs	true_positive	false_positive	false_negative	true_negative	sensitivity	specificity	fired_on_a_run_that_did_not_drift	missed_a_run_that_did
+K1 (sister-family share rises > 0.10 in a round)	7	0	0	3	4	0.0	1.0	-	itpr_acanthamoeba;s20_fungi;s20_protista_other
+K2 (a round includes > 10x the previous)	7	1	0	2	4	0.3333	1.0	-	itpr_acanthamoeba;s20_protista_other
+K3 (the 10-round ceiling)	7	3	3	0	1	1.0	0.25	itpr1_human;itpr_fly;s20_metazoa_nonvert	-
+proposed: off-family share rises > 0.10 in a round	7	3	0	0	4	1.0	1.0	-	-

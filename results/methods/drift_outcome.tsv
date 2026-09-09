@@ -1,0 +1,8 @@
+run	database	offfamily_frac_final	drifted	bar
+s20_fungi	fungi	0.9944	1	0.5
+s20_metazoa_nonvert	metazoa_nonvert	0.2472	0	0.5
+s20_protista_other	protista_other	0.9705	1	0.5
+itpr1_human	vertebrata	0.3367	0	0.5
+itpr_acanthamoeba	vertebrata	0.8114	1	0.5
+itpr_fly	vertebrata	0.3363	0	0.5
+s20_viridiplantae	viridiplantae	0.2286	0	0.5

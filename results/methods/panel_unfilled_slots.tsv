@@ -1,0 +1,7 @@
+cell	band	vclasses	n_cells	n_found_full_panel	n_found_labelled_only	n_carried_by_unlabelled	note
+ITPR1	chondrichthyes	Chondrichthyes	12	12	12	0	cells the unlabelled baits carry in a band with no labelled bait for this paralog
+ITPR1	cyclostomata	Hyperoartia;Myxini	2	2	2	0	cells the unlabelled baits carry in a band with no labelled bait for this paralog
+ITPR2	chondrichthyes	Chondrichthyes	12	12	12	0	cells the unlabelled baits carry in a band with no labelled bait for this paralog
+ITPR2	cyclostomata	Hyperoartia;Myxini	2	0	0	0	cells the unlabelled baits carry in a band with no labelled bait for this paralog
+ITPR2	sarcopterygian_fish	Coelacanthimorpha;Dipnoi	2	2	2	0	cells the unlabelled baits carry in a band with no labelled bait for this paralog
+ITPR3	cyclostomata	Hyperoartia;Myxini	2	0	0	0	cells the unlabelled baits carry in a band with no labelled bait for this paralog

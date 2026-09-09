@@ -1,0 +1,6 @@
+hypothesis	logL	delta_logL	p_AU	in_95pct_set
+unconstrained ML tree	-215453.5453	0.0	0.525	1
+ITPR1 + ITPR2 sisters, ITPR3 outside	-215567.5627	114.02	1.8e-05	0
+ITPR1 + ITPR3 sisters, ITPR2 outside	-215567.5279	113.98	1.65e-05	0
+ITPR2 + ITPR3 sisters, ITPR1 outside	-215454.0292	0.48399	0.476	1
+95 % confidence set size				2

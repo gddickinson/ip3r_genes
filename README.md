@@ -19,23 +19,26 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S18 complete — the census is enumerated, aligned, dated,
+**Status: S19 complete — the census is enumerated, aligned, dated,
 audited, counted, traced back to the duplications that made it, scored
-residue by residue, and now audited against the records that hold it; 26 of
-the 33 ledger rows are done.** **The gene is fine; the paperwork is not — and
-it is not this family's paperwork.** Across 309 vertebrate genomes the
-annotation delivers **73.9 %** of the IP3-receptor loci as one complete gene
-model, and the ryanodine receptors in the same assemblies through the same
-pipelines sit at **77.9 %**: no difference survives correction, so the audit's
-own premise is contradicted by its control. What does differ is **who wrote
-the gene list** — RefSeq 98.8 % against submitter-deposited GenBank 37.5 %,
-and only about a third of that gap is assembly quality — and **whether the DNA
-can carry the gene at all**, which accounts for three quarters of the rest.
-One failure looks like this family's own — an ITPR locus is **2.7× more
-likely** than a RyR locus to be recorded as non-coding, named correctly and
-serving no protein — but it too vanishes above the contiguity bar. And **55 %
-of the family's full-length protein records have no usable gene symbol**
-(§ *S18* below).
+residue by residue, audited against the records that hold it, and now
+measured against its own error rate; 27 of the 33 ledger rows are done.**
+**We can say exactly how often the search failed, which almost no survey
+can.** Because no IP3 receptor has been lost anywhere in the 309-genome
+scope, every cell where the search came up empty is a **false negative of the
+method** rather than a missing gene: **140 of 923 (15.2 %)**, and the
+ryanodine receptors measured independently in the same assemblies agree at
+**13.6 %**. **Every failure is the assembly** — a missed gene's contigs
+average 23 kb against 3.4 Mb for a found one, and above D4's contiguity bar
+the failure rate is **0.9 %**, which validates a threshold chosen from gene
+geometry before any error was measured. Two results change how anyone would
+run this again. **Bait-panel breadth is nearly free**: four human baits
+recover 782 of the 783 genes the 38-bait panel recovers, while dropping one
+paralog's baits costs a quarter of its copies. And **the standard guard
+against iterative-search drift fires on none of the seven runs, including all
+three that drifted**, because wandering *dilutes* the signal the guard
+watches. Meanwhile **940 of 1,232 genes we demonstrated (76.3 %) cannot be
+reached from any protein database at all** (§ *S19* below).
 
 The build-up. The literature baseline is verified with a citation on every
 claim ([`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md), 32 pages,
@@ -459,7 +462,7 @@ One task per session. Full ledger with dependencies and results in
 | S16 | Duplication history (2R / 3R, and the RyR parallel) | ✅ completed 2026-09-08 |
 | S17 | Constraint & function — the clinical-variant test | ✅ completed 2026-09-08 |
 | S18 | Annotation-quality audit + correction list | ✅ completed 2026-09-08 |
-| S19 | Methods results | ⏳ pending |
+| S19 | Methods results | ✅ completed 2026-09-08 |
 | S21 | Gene architecture (~58 exons) | ⏳ pending |
 | S22 | Ligand-site evolution | ⏳ pending |
 | S14a | Manuscript assembly | ⏳ pending |
@@ -502,6 +505,65 @@ significance**, and **ITPR2's entire pathogenic record is one variant** —
 which is ascertainment, not tolerance: its gate is identical to the others'
 and its IP3 contacts are the most conserved of the three, with 8 of 10
 invariant across 249 species. All 1,753 records now carry a per-site score.
+
+**S19 — the search missed one gene in seven, and every miss is an
+assembly.** S15b reconstructs no losses anywhere in the 309-genome scope, so
+all 923 assignable cells hold a gene that is there and every ledger cell not
+graded `found` is a **false negative of the method**: **140/923, 15.2 %**.
+The ryanodine receptor cell — present in every vertebrate, swept by the same
+aligner in the same assemblies, using none of S15a's state assignments —
+gives **42/309, 13.6 %**, indistinguishable from it (Fisher *p* = 0.58).
+A missed cell's median contig N50 is **23,460 bp against 3,396,515 bp** for a
+found one; the odds of finding the gene rise **8.1× per tenfold** of contig
+N50. On chromosome-level assemblies the search misses **3 of 512** ITPR cells
+and **0 of 172** RyR cells. **D4's contiguity bar — 142,212 bp, the median
+measured ITPR genomic span, chosen a priori with no error rate in its
+derivation — gives 0.9 % residual error and stands.** It costs 38.8 % of the
+scope, disproportionately the margin species the scope was extended for.
+→ [`results/methods/report.md`](results/methods/report.md)
+
+![S19 contiguity](results/methods/figures/fig_s19_contiguity.png)
+
+**S19 — the bait panel could have been four baits.** The ablation is exact
+rather than modelled: dropping baits from the 309 retained miniprot
+alignments and re-clustering reproduces the committed ledger **1,236 cells
+out of 1,236**. **Four human baits recover 782 of the 783 cells the 38-bait
+panel recovers.** Dropping every mammal, bird, reptile, amphibian or fish
+bait costs at most two cells each; dropping the ryanodine-receptor control
+changes **no** ITPR call, so the positive family test is free. What is not
+free is paralog coverage: removing one paralog's own baits costs **238–241
+cells**, about a quarter of its recovery. The three unlabelled
+`vertebrate_basal` baits change **0** cells and on their own recover **0** —
+an unlabelled bait cannot fill a paralog cell by itself. And a single bait
+recovers its gene at any identity above **0.5** (1,143 of 1,145 measurements
+at 0.60–0.70).
+
+![S19 panel ablation](results/methods/figures/fig_s19_panel.png)
+
+**S19 — three quarters of these genes are in no protein database, and the
+profile HMM is not what found them.** Of 1,232 demonstrated genome × cell
+genes, **940 (76.3 %) are unreachable by any protein-database search**: 386
+species with no reference proteome, 248 whose only family records are
+fragments, 286 where records exist and none resolves to that paralog. It is
+not a margin-species artefact — 74.3 % for order representatives against
+78.5 % for margin species. And inside a single searched database, at gene
+scale a family profile HMM adds **1 record to 3,135** in the vertebrates and
+2 to 1,021 in the non-vertebrate metazoa; its whole gain is under 1,000 aa.
+The exception is the **protists, where it adds 89 gene-scale records** the
+domain enumeration never returned.
+
+**S19 — the guard against iterative-search drift fires on none of the runs it
+was written for.** Scored against a drift outcome measured on the finished
+model (the seven jackhmmer runs separate at 0.34 against 0.81 with nothing
+between), **K1 — sister-family contamination — has sensitivity 0.00**, K2
+0.33, and K3 catches all three at specificity 0.25. The reason is that
+off-family accretion *dilutes* the sister share, which **fell** over the run
+in 4 of 7. Moving K1's own 0.10 threshold to the off-family share separates
+all seven at sensitivity 1.00 and specificity 1.00 — reported as a proposal
+and deliberately not applied, because seven runs cannot establish a
+specificity of 1.00 *(pending: validation on an independent set of runs)*.
+
+![S19 drift](results/methods/figures/fig_s19_drift.png)
 
 **S18 — the family is not badly recorded; vertebrate gene sets are.** Every
 one of the 2,144 gene-scale loci in the genome scope was scored *complete /

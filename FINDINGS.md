@@ -2007,3 +2007,77 @@ should say — of which 52 are cases where the gene is demonstrably present,
 the DNA is demonstrably intact, and the reading frame is unbroken. Eighteen
 more were deliberately withheld: where our own earlier analysis says the gene
 really is dead, we are not going to ask a database to bring it back.
+
+---
+
+## 2026-09-08 — S19: how much of what we found, we nearly missed
+
+This entry is about the search rather than the receptor, but it changes how
+much weight every earlier finding can carry, so it belongs in the story.
+
+**We can say exactly how often our own search failed, and almost nobody can.**
+Measuring a gene hunt's sensitivity normally means estimating it, because the
+genes you missed are the ones you cannot count. This family gave us a way
+round that. Across 309 vertebrate genomes we found that not one of the three
+IP3 receptors has ever been lost — every genome has all three. So any cell in
+our results where the search came up empty is not a missing gene. It is a
+missing answer. **The search failed on one cell in seven: 140 of 923.**
+
+**We checked that number against a second gene family and got the same
+answer.** The ryanodine receptors were searched in the same genomes by the
+same tool and are present in every vertebrate too. They failed at 42 of 309 —
+13.6 % against 15.2 %, statistically the same. The two measurements share no
+reasoning, so their agreement is real evidence rather than the method
+agreeing with itself.
+
+**Every single failure is the genome, not the gene.** Where the search missed
+a gene, the assembly was on average a hundred and fifty times more
+fragmented: a typical missed gene sits in an assembly whose contiguous pieces
+average 23,000 letters, a typical found one in an assembly averaging 3.4
+million. On the best-assembled genomes — the ones built chromosome by
+chromosome — the search missed three IP3 receptor genes out of 512, and no
+ryanodine receptor at all. **Above the quality bar this project set at the
+outset, the failure rate is 0.9 %.** That bar was chosen from the size of the
+gene itself, before anybody had measured an error rate. It turns out to land
+almost exactly where the measurement would have put it.
+
+**The gene we recover best from a broken genome is the shortest one.** Below
+the quality bar, ITPR3 is found 70 % of the time, ITPR1 61 %, ITPR2 57 % —
+and that is precisely the order of their lengths on the chromosome. This
+matters because it points the same way as a real biological signal would. Any
+future claim that one paralog is more often lost than another has to clear
+this bias first.
+
+**Three quarters of the IP3 receptor genes we found are not in any protein
+database.** Of 1,232 genes we demonstrated in these genomes, **940 cannot be
+reached by searching protein records at all.** For 386 the species has no
+protein catalogue; for 248 the only records are fragments; for 286 records
+exist but none can be assigned to that particular paralog. This is not an
+artefact of having deliberately chosen poorly-served species — the rate is
+74 % even among the genomes picked simply as representatives of their order.
+The genes are there in the DNA. Nobody has written them down.
+
+**A surprise about how to search for a gene family.** We built a 38-protein
+bait panel spanning the vertebrates — mammal, bird, reptile, amphibian,
+fish, shark, lamprey — on the assumption that a search needs a close relative
+of whatever it is looking for. Re-running the entire search with only the
+three human receptors plus one ryanodine receptor recovers **782 of the 783
+genes the full panel recovers.** Removing every bird bait, or every mammal
+bait, or every fish bait, costs at most two genes each. What does matter is
+having a bait for each paralog: remove one paralog's baits and a quarter of
+that gene's copies disappear. A single bait recovers its gene reliably even
+when it is only 50 % identical to it. For anyone searching a gene family
+across genomes, the lesson is that breadth is nearly free and specificity is
+not — spend the effort on covering the paralogs, not on sampling the tree.
+
+**And a caution about a standard safeguard.** Iterative profile searches can
+wander out of the family they started in, and the standard guard is to watch
+for contamination by the nearest sister family. We ran seven such searches
+and three of them wandered badly. **The guard fired on none of them.** The
+reason is almost funny: when a search wanders, it picks up so much unrelated
+material that the sister family's *share* of what it has collected goes
+*down*. The alarm is wired to a quantity that falls during the emergency it
+is meant to detect. Watching the share of genuinely unrelated material
+instead separates all seven searches perfectly. We report that as a proposal
+rather than a change, because seven searches is not enough to prove a rule
+*(pending: validation on an independent set of runs)*.

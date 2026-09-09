@@ -1,0 +1,8 @@
+run	seed	database	hmmsearch_targets_scored	hmmsearch_called_family	rounds_run	verdict	kill_rule	accepted_rounds	accepted_targets	final_targets	elapsed_h	timing_source	log_completed	final_over_hmmsearch_called	accepted_over_hmmsearch_called	reason
+itpr1_human	Q14643	vertebrata	18501	5130	10	killed	K3	9	7226	7222	2.44	measured	1	1.41	1.41	reached the 10-round ceiling without converging; no completeness claim may rest on this run
+itpr_fly	P29993	vertebrata	18501	5130	10	clean	-	10	7235	7228	2.51	measured	1	1.41	1.41	no kill rule fired
+itpr_acanthamoeba	L8GF85	vertebrata	18501	5130	10	killed	K3	9	24902	26266	7.57	measured	1	5.12	4.85	reached the 10-round ceiling without converging; no completeness claim may rest on this run
+s20_viridiplantae	A0AAE0LDZ1	viridiplantae	13791	55	5	clean	-	5	70	70		not recorded by the session	1	1.27	1.27	no kill rule fired
+s20_fungi	A0ABR2W6A1	fungi	2952	55	10	killed	K2	2	42	6302		not recorded by the session	1	114.58	0.76	round 3 grew the included set to 1442 targets, 34.33× the previous round's 42 (limit 10.0×)
+s20_protista_other	A0A0D2UGF9	protista_other	2721	850	10	killed	K3	9	22913	26148		not recorded by the session	1	30.76	26.96	reached the 10-round ceiling without converging; no completeness claim may rest on this run
+s20_metazoa_nonvert	A0AAV1LM52	metazoa_nonvert	8607	2350	10	killed	K3	9	2908	2921		not recorded by the session	1	1.24	1.24	reached the 10-round ceiling without converging; no completeness claim may rest on this run

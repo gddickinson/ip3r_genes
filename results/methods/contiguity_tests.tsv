@@ -1,0 +1,13 @@
+test	series	n	effect	detail	p
+mannwhitney_contig_n50_found_vs_missed	itpr_present	n_found=783, n_missed=140	median 3,396,515 vs 23,460	U=99201	5.26e-53
+fisher_chromosome_vs_lower	itpr_present	chromosome 3/512 missed; other 137/411 missed	odds=0.0118		2.61e-50
+logit_found~log10(contig_n50)	itpr_present	n=923	beta=2.092	OR per 10x=8.10, z=9.8	1.29e-22
+false_negative_rate	itpr_present	n=923	0.1517	95% CI 0.1300-0.1763	
+mannwhitney_contig_n50_found_vs_missed	ryr_sister	n_found=267, n_missed=42	median 3,299,000 vs 23,072	U=10475	7.59e-20
+fisher_chromosome_vs_lower	ryr_sister	chromosome 0/172 missed; other 42/137 missed	odds=0		2.38e-17
+logit_found~log10(contig_n50)	ryr_sister	n=309	beta=2.995	OR per 10x=19.99, z=5.0	5.54e-07
+false_negative_rate	ryr_sister	n=309	0.1359	95% CI 0.1022-0.1786	
+fisher_itpr_vs_ryr_false_negative	the two control series	ITPR 140/923; RyR 42/309	odds=1.14	two-sided	0.578
+false_negative_rate_below_bar	ITPR1	n=120	0.3917	95% CI 0.3090-0.4811	
+false_negative_rate_below_bar	ITPR2	n=120	0.4333	95% CI 0.3481-0.5227	
+false_negative_rate_below_bar	ITPR3	n=120	0.3000	95% CI 0.2253-0.3872	

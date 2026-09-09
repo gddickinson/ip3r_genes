@@ -1,0 +1,5 @@
+set	n_pairs	n_saturated	frac_saturated	median_dS	max_dS
+ITPR1	171	161	0.9415	5.721	77.132
+ITPR2	78	66	0.8462	4.53	70.715
+ITPR3	171	146	0.8538	13.483	100.696
+ALL	420	373	0.8881	8.436	100.696

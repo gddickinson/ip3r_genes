@@ -1,0 +1,7 @@
+census	channel_added	n_records	n_added	n_dropped	note
+v1	targeted database search (the app: NCBI/Ensembl/UniProt/Compara)	1571	1571	0	v1 is the app's four search bundles; S2 verdicted every accession of it that v2 does not hold
+v2	InterPro/Pfam exhaustive enumeration	15421	15421	0	705 of v1's 1571 carried forward; 866 verdicted as outside the seeded space
+v3	profile HMM + jackhmmer, vertebrate reference proteomes	16039	618	0	
+v4	genome sweep (miniprot, 309 vertebrate assemblies)	17097	1058	0	
+v5	profile HMM + jackhmmer, 6,928 other reference proteomes	17882	785	0	
+v6	genome sweep (miniprot, 194 non-vertebrate assemblies)	18065	183	0	

@@ -1,0 +1,9 @@
+method	label	universe	n_records	n_unique	note
+app_search	targeted database search (NCBI/Ensembl/UniProt/Compara)	public_databases	1571		membership not retained; count only
+pfam_enumeration	InterPro/Pfam exhaustive enumeration	uniprotkb	15421	7373	
+profile_hmm_vert	profile HMM (hmmsearch, 763 vertebrate proteomes)	vertebrata	18501	10881	
+jackhmmer_vert	jackhmmer iterative (vertebrate proteomes)	vertebrata	24929	17306	
+genome_miniprot_vert	genome sweep (miniprot, 309 vertebrate assemblies)	genomes_309	1058	1058	
+profile_hmm_nonvert	profile HMM (hmmsearch, 6,928 other proteomes)	nonvert_groups	28137	24461	
+jackhmmer_nonvert	jackhmmer iterative (non-vertebrate proteomes)	nonvert_groups	25933	22282	
+genome_miniprot_nonvert	genome sweep (miniprot, 194 other assemblies)	genomes_194	183	183	

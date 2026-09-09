@@ -1,0 +1,20 @@
+{
+ "reconciliation": {
+  "implied": 47,
+  "artefact": 26,
+  "corroborated": 0,
+  "other": 21
+ },
+ "synteny_rows": 7,
+ "fel": {
+  "n_sites": 7368,
+  "n_unidentifiable": 671,
+  "frac": 0.0911
+ },
+ "saturation": {
+  "n_pairs": 420,
+  "n_saturated": 373,
+  "frac": 0.8881
+ },
+ "tree_confidence_set": 2
+}

@@ -1,0 +1,486 @@
+{
+ "task": "S19 \u2014 methods results",
+ "rules": {
+  "control_series": "a cell is a control iff S15a states its gene present (923 ITPR cells) or it is the RyR sister cell (309); `paralog_unassignable` is in neither",
+  "false_negative": "a control cell the S5 ledger did not grade `found_*`",
+  "d4_bar_bp": 142212,
+  "fn_targets": [
+   0.05,
+   0.01
+  ],
+  "floor_grid": [
+   0,
+   10000,
+   20000,
+   50000,
+   100000,
+   142212,
+   200000,
+   500000,
+   1000000,
+   2000000,
+   5000000,
+   10000000,
+   20000000,
+   50000000
+  ],
+  "neighbourhood_present": 0.5,
+  "panel_cov_found": 0.7,
+  "drifted_offfamily_frac": 0.5,
+  "proposed_offfamily_rise": 0.1
+ },
+ "self_test": {
+  "exit_code": 0,
+  "n_checks": 32,
+  "n_failed": 0,
+  "passed": true
+ },
+ "headline": {
+  "itpr_present": {
+   "n_cells": 923,
+   "n_false_negative": 140,
+   "rate": 0.1517,
+   "wilson": [
+    0.13,
+    0.1763
+   ],
+   "rate_at_d4_bar": 0.0089,
+   "genomes_at_d4_bar": 189
+  },
+  "ryr_sister": {
+   "n_cells": 309,
+   "n_false_negative": 42,
+   "rate": 0.1359,
+   "wilson": [
+    0.1022,
+    0.1786
+   ],
+   "rate_at_d4_bar": 0.0,
+   "genomes_at_d4_bar": 189
+  },
+  "d4_bar": 142212,
+  "n_genomes": 309,
+  "not_counted_as_control": 4,
+  "contiguity_effect": {
+   "itpr_present": "OR per 10x=8.10, z=9.8",
+   "ryr_sister": "OR per 10x=19.99, z=5.0"
+  },
+  "itpr_vs_ryr_p": "0.578",
+  "panel": {
+   "drop_bird": {
+    "n_baits": 31,
+    "recall": 0.8468,
+    "found": 785,
+    "delta": 2
+   },
+   "full38": {
+    "n_baits": 38,
+    "recall": 0.8447,
+    "found": 783,
+    "delta": 0
+   },
+   "labelled_only": {
+    "n_baits": 35,
+    "recall": 0.8447,
+    "found": 783,
+    "delta": 0
+   },
+   "no_ryr_control": {
+    "n_baits": 30,
+    "recall": 0.8447,
+    "found": 783,
+    "delta": 0
+   },
+   "drop_amphibian": {
+    "n_baits": 34,
+    "recall": 0.8447,
+    "found": 783,
+    "delta": 0
+   },
+   "drop_cartilaginous_fish": {
+    "n_baits": 35,
+    "recall": 0.8447,
+    "found": 783,
+    "delta": 0
+   },
+   "drop_cyclostome": {
+    "n_baits": 36,
+    "recall": 0.8447,
+    "found": 783,
+    "delta": 0
+   },
+   "drop_mammal": {
+    "n_baits": 31,
+    "recall": 0.8447,
+    "found": 783,
+    "delta": 0
+   },
+   "drop_reptile": {
+    "n_baits": 34,
+    "recall": 0.8447,
+    "found": 783,
+    "delta": 0
+   },
+   "s3_seeds_only": {
+    "n_baits": 25,
+    "recall": 0.8436,
+    "found": 782,
+    "delta": -1
+   },
+   "human_only": {
+    "n_baits": 4,
+    "recall": 0.8436,
+    "found": 782,
+    "delta": -1
+   },
+   "drop_ray_finned_fish": {
+    "n_baits": 30,
+    "recall": 0.8436,
+    "found": 782,
+    "delta": -1
+   },
+   "drop_lobe_finned_fish": {
+    "n_baits": 35,
+    "recall": 0.8436,
+    "found": 782,
+    "delta": -1
+   },
+   "one_per_cell_nonhuman": {
+    "n_baits": 4,
+    "recall": 0.8436,
+    "found": 782,
+    "delta": -1
+   },
+   "amniote_only": {
+    "n_baits": 18,
+    "recall": 0.8425,
+    "found": 781,
+    "delta": -2
+   },
+   "drop_ITPR1_baits": {
+    "n_baits": 29,
+    "recall": 0.5879,
+    "found": 545,
+    "delta": -238
+   },
+   "drop_ITPR2_baits": {
+    "n_baits": 30,
+    "recall": 0.5858,
+    "found": 543,
+    "delta": -240
+   },
+   "drop_ITPR3_baits": {
+    "n_baits": 28,
+    "recall": 0.5847,
+    "found": 542,
+    "delta": -241
+   },
+   "basal_only": {
+    "n_baits": 3,
+    "recall": 0.0,
+    "found": 0,
+    "delta": -783
+   }
+  },
+  "panel_validation_mismatches": 0,
+  "panel_cells_validated": 1236,
+  "single_bait": [
+   {
+    "bin": "no alignment",
+    "n": 38,
+    "recall": 0.0,
+    "lo": 0.0
+   },
+   {
+    "bin": "0.50-0.60",
+    "n": 14,
+    "recall": 1.0,
+    "lo": 0.7847
+   },
+   {
+    "bin": "0.60-0.70",
+    "n": 1145,
+    "recall": 0.9983,
+    "lo": 0.9937
+   },
+   {
+    "bin": "0.70-0.80",
+    "n": 2396,
+    "recall": 1.0,
+    "lo": 0.9984
+   },
+   {
+    "bin": "0.80-0.90",
+    "n": 3047,
+    "recall": 1.0,
+    "lo": 0.9987
+   },
+   {
+    "bin": "0.90-0.95",
+    "n": 1303,
+    "recall": 1.0,
+    "lo": 0.9971
+   },
+   {
+    "bin": "0.95-1.01",
+    "n": 1256,
+    "recall": 1.0,
+    "lo": 0.997
+   }
+  ],
+  "head_to_head_gene_scale": {
+   "vertebrata": {
+    "pfam": 3135,
+    "hmm": 3136,
+    "shared": 3135,
+    "hmm_only": 1,
+    "pfam_only": 0
+   },
+   "fungi": {
+    "pfam": 26,
+    "hmm": 26,
+    "shared": 26,
+    "hmm_only": 0,
+    "pfam_only": 0
+   },
+   "viridiplantae": {
+    "pfam": 25,
+    "hmm": 21,
+    "shared": 21,
+    "hmm_only": 0,
+    "pfam_only": 4
+   },
+   "metazoa_nonvert": {
+    "pfam": 1021,
+    "hmm": 1023,
+    "shared": 1021,
+    "hmm_only": 2,
+    "pfam_only": 0
+   },
+   "protista_other": {
+    "pfam": 488,
+    "hmm": 577,
+    "shared": 488,
+    "hmm_only": 89,
+    "pfam_only": 0
+   },
+   "archaea": {
+    "pfam": 0,
+    "hmm": 0,
+    "shared": 0,
+    "hmm_only": 0,
+    "pfam_only": 0
+   },
+   "bacteria_genus": {
+    "pfam": 0,
+    "hmm": 0,
+    "shared": 0,
+    "hmm_only": 0,
+    "pfam_only": 0
+   }
+  },
+  "head_to_head_tail": {
+   "vertebrata": {
+    "pfam": 1681,
+    "hmm": 1509,
+    "hmm_only": 594,
+    "pfam_only": 766
+   },
+   "fungi": {
+    "pfam": 15,
+    "hmm": 17,
+    "hmm_only": 16,
+    "pfam_only": 14
+   },
+   "viridiplantae": {
+    "pfam": 22,
+    "hmm": 19,
+    "hmm_only": 11,
+    "pfam_only": 14
+   },
+   "metazoa_nonvert": {
+    "pfam": 652,
+    "hmm": 916,
+    "hmm_only": 469,
+    "pfam_only": 205
+   },
+   "protista_other": {
+    "pfam": 82,
+    "hmm": 152,
+    "hmm_only": 102,
+    "pfam_only": 32
+   },
+   "archaea": {
+    "pfam": 0,
+    "hmm": 0,
+    "hmm_only": 0,
+    "pfam_only": 0
+   },
+   "bacteria_genus": {
+    "pfam": 0,
+    "hmm": 0,
+    "hmm_only": 0,
+    "pfam_only": 0
+   }
+  },
+  "gene_recovery": {
+   "n_genes": 1232,
+   "by_channel": {
+    "genome_only:records_exist_but_none_full_length": 248,
+    "genome_only:no_record_resolves_to_this_paralog": 286,
+    "protein_database_and_genome": 292,
+    "genome_only:no_reference_proteome": 386,
+    "genome_only:no_family_record_for_species": 20
+   },
+   "invisible": 940,
+   "by_scope": {
+    "order representative": 0.7428,
+    "margin species": 0.7855,
+    "both": 0.7381
+   },
+   "by_cell": {
+    "ITPR1": 0.8317,
+    "ITPR2": 0.8469,
+    "ITPR3": 0.7394,
+    "RYR": 0.6343
+   }
+  },
+  "kill_rules": {
+   "K1 (sister-family share rises > 0.10 in a round)": {
+    "sensitivity": 0.0,
+    "specificity": 1.0,
+    "tp": 0,
+    "fp": 0
+   },
+   "K2 (a round includes > 10x the previous)": {
+    "sensitivity": 0.3333,
+    "specificity": 1.0,
+    "tp": 1,
+    "fp": 0
+   },
+   "K3 (the 10-round ceiling)": {
+    "sensitivity": 1.0,
+    "specificity": 0.25,
+    "tp": 3,
+    "fp": 3
+   },
+   "proposed: off-family share rises > 0.10 in a round": {
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "tp": 3,
+    "fp": 0
+   }
+  },
+  "drift": {
+   "n_runs": 7,
+   "k1_never": 7,
+   "sister_fell": 4,
+   "drifted": 3
+  },
+  "inference": {
+   "reconciliation": {
+    "implied": 47,
+    "artefact": 26,
+    "corroborated": 0,
+    "other": 21
+   },
+   "synteny_rows": 7,
+   "fel": {
+    "n_sites": 7368,
+    "n_unidentifiable": 671,
+    "frac": 0.0911
+   },
+   "saturation": {
+    "n_pairs": 420,
+    "n_saturated": 373,
+    "frac": 0.8881
+   },
+   "tree_confidence_set": 2
+  },
+  "census": [
+   {
+    "v": "v1",
+    "n": 1571,
+    "added": 1571,
+    "channel": "targeted database search (the app: NCBI/Ensembl/UniProt/Compara)"
+   },
+   {
+    "v": "v2",
+    "n": 15421,
+    "added": 15421,
+    "channel": "InterPro/Pfam exhaustive enumeration"
+   },
+   {
+    "v": "v3",
+    "n": 16039,
+    "added": 618,
+    "channel": "profile HMM + jackhmmer, vertebrate reference proteomes"
+   },
+   {
+    "v": "v4",
+    "n": 17097,
+    "added": 1058,
+    "channel": "genome sweep (miniprot, 309 vertebrate assemblies)"
+   },
+   {
+    "v": "v5",
+    "n": 17882,
+    "added": 785,
+    "channel": "profile HMM + jackhmmer, 6,928 other reference proteomes"
+   },
+   {
+    "v": "v6",
+    "n": 18065,
+    "added": 183,
+    "channel": "genome sweep (miniprot, 194 non-vertebrate assemblies)"
+   }
+  ],
+  "recorded_hours": 15.22,
+  "channels_without_timing": [
+   "app_search",
+   "pfam_enumeration",
+   "profile_hmm_nonvert",
+   "jackhmmer_nonvert"
+  ]
+ },
+ "sha256": {
+  "census_growth.tsv": "4e47bcfb95a2596654b2a705d98754cc7f89190c3e331c6ff9b900123afa5d1e",
+  "method_sets.tsv": "89d176c254392042d82c946ad1029e03eca6939a56251e1d94c9e05881f732af",
+  "method_pairwise.tsv": "240a442e3660cd740f39d24d6686cec6b4221a1a1174c428f7f43c3d3ab588cf",
+  "head_to_head.tsv": "7809063d3aef6e3917ccab85868785e8c16ea8d996544b2bcd2654ff29878b4f",
+  "gene_recovery.tsv": "94a287cbb18d3c9c9f9836911af48ccbf4a9bf0c53da8f4ca33a5ba707a7fe39",
+  "gene_recovery_by_cell.tsv": "132e4487c28de21264d8c1589c54f3aa6cca3664d6d755b916f4abe568e474c1",
+  "gene_recovery_by_scope.tsv": "452a003a3406e821fb0508401a53250bad8223919627416b07a60bee91b1ad54",
+  "db_status_combined.tsv": "266ac5459fb6e127be86cb000cd61aedb2976594c08c8c0146498dda230b9f3c",
+  "method_cost.tsv": "9b611d4b5310801ef4c44d50ecc6b4824a8c566850aef81d500b016bc9ee68e6",
+  "contiguity_cells.tsv": "bced307ee6437399b9db0b4f27dae622e3991d002a80015750e97018d6f28236",
+  "contiguity_bins.tsv": "1b8c2d12e899b1a8003d93cd5729372cbbfb4fade557d9d9d444e2d420194a91",
+  "contiguity_by_stratum.tsv": "3696e2e7fbcdfbab630011982a1579c802820697c484251de1db81ddb31dc872",
+  "contiguity_tests.tsv": "08581e9ad5e276ab3c841d367a5994e1bc400f35a3491b25b5905c2ca4098cbb",
+  "absence_floor.tsv": "67bb3ebb1f7b2f404a9231324021433e1aded1da5362a3083e153d4837a4aee5",
+  "floor_clade_composition.tsv": "095e175768c99305b452cbd648443b667953ff28666738ccae4f7d6995eed9e3",
+  "residual_neighbourhood.tsv": "0fd1be1e647b84ded179bcaed5111ddaf8a4b5abef27e16f861808508e393698",
+  "panel_cells.tsv": "4957662916d2468f0926e5859b4cf9ccefaa62188352a586138e6b79975189e9",
+  "panel_recall.tsv": "9645aeb921e9b1ae1ae0b3d2c66be2da6ca7a1a2047be497779fd687927dd417",
+  "panel_changes.tsv": "a8944aaf9773211e51208390746dd89ad63c26ce0f7239bc275993ff7fd34cda",
+  "panel_by_group.tsv": "27502726e2da5db384db000b3a0d7f81fa81e9c535f7f84124c70deb91afa875",
+  "panel_unfilled_slots.tsv": "694aede8f5e3e02b3917b64d84c1d649b59b5abc19b01540d5a86bbf75c495ca",
+  "panel_single_bait.tsv": "b39a878ca92c01a70e3d1a758c76d911c9d86b589b9146d7ec01ba9539021095",
+  "panel_identity_recall.tsv": "d5b65bdd370edf3ef4992dec8bccc2f333e3641ca77f7a56a47946499414b9f2",
+  "panel_min_identity.tsv": "aa3402faa949da1e8fc79a0e68b4ed3db07f483f494e5199b930c24eb2a8552e",
+  "panel_validation.tsv": "688d0ea7f5ac2141dcf9653f5025f77ff7a924ac14fc347d815803c78b38a5d4",
+  "jackhmmer_runs.tsv": "041ae455ff6c89afbc1b3f92b74bc52a27e2f7d4e0a783f9c5155bef376c83b8",
+  "jackhmmer_rounds.tsv": "e3a7a580bb836caaae996c4dc79de40d70f4eb1d6fb708d49e5e1821269654d6",
+  "kill_criterion_trace.tsv": "7235b1e51199237ca585c5724029668ab476627afc39feab3e4bb2c73c175733",
+  "kill_criterion_validation.tsv": "9568bfefd469360e1004c6b3513aac5e74f37383d16878084b65f2c74ebf94e7",
+  "drift_outcome.tsv": "536f339e4a44ded5a4b38fcda1c77a156a567cf28e6271d2d8788e7cdbfbcfb8",
+  "iteration_yield.tsv": "f3cde589735d73695c0651a2facbf2cd5c309227f136d76b7d9e917067b23746",
+  "seed_effect.tsv": "edd96878af5870889bd630e4938c731d189e85ece2a9ce01115aefea87c40d7e",
+  "reconciliation_loss_audit.tsv": "b0b5bb0e93957363ebfdb8712739520e6444d02e0f8f731f2b036dea111ce8e2",
+  "synteny_power.tsv": "f67691601747804d40e0d3b9e02f5ef5e96e77bb71dc76945f4c2d8042da1886",
+  "codon_model_power.tsv": "1e9ff0d22d91fff9587e161549b582a68c81290d9485870e286d3def30ee2790",
+  "saturation.tsv": "f3b8d8c35908c3ed92e14cbbe33615ab2cc55ba480e1b34db02edcc76261349e",
+  "tree_resolution.tsv": "62b78653ce4a9040a018d00344e995bdb4b328dab802e25e08d476237842e087"
+ },
+ "missing_tables": []
+}

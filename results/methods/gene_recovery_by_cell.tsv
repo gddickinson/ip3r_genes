@@ -1,0 +1,5 @@
+cell	n_genes_present	n_protein_db_invisible	frac	wilson_lo	wilson_hi
+ITPR1	309	257	0.8317	0.786	0.8693
+ITPR2	307	260	0.8469	0.8024	0.8829
+ITPR3	307	227	0.7394	0.6876	0.7853
+RYR	309	196	0.6343	0.5793	0.6861

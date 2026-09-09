@@ -1,0 +1,5 @@
+paralog	n_implied_loss_cells	n_sampling_artefact	n_corroborated	n_other_verdict	frac_artefact	verdict_breakdown
+ITPR1	17	11	0	6	0.6471	no_genome_in_manifest=6;sampling_artefact=11
+ITPR2	18	11	0	7	0.6111	no_genome_in_manifest=5;paralog_unassignable=2;sampling_artefact=11
+ITPR3	12	4	0	8	0.3333	no_genome_in_manifest=6;paralog_unassignable=2;sampling_artefact=4
+ALL	47	26	0	21	0.5532	recomputed from the per-paralog rows; S13's own `all` row totals 47 — agrees

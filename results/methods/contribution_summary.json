@@ -1,0 +1,134 @@
+{
+ "records": {
+  "pfam_enumeration": 15421,
+  "profile_hmm_vert": 18501,
+  "profile_hmm_nonvert": 28137,
+  "genome_miniprot_vert": 1058,
+  "genome_miniprot_nonvert": 183,
+  "jackhmmer_vert": 24929,
+  "jackhmmer_nonvert": 25933,
+  "app_search": 0
+ },
+ "head_to_head": {
+  "vertebrata": {
+   "db_accessions": 14414821,
+   "hmm_targets_scored": 18501,
+   "hmm_targets_declined_by_gate": 13371,
+   "pfam_in_db": 5278,
+   "hmm_in_db": 5130,
+   "shared": 4512,
+   "hmm_only": 618,
+   "pfam_only": 766,
+   "jackhmmer_beyond_hmmsearch": 19969,
+   "pfam_total_outside_db": 10143
+  },
+  "fungi": {
+   "db_accessions": 17339036,
+   "hmm_targets_scored": 2952,
+   "hmm_targets_declined_by_gate": 2897,
+   "pfam_in_db": 46,
+   "hmm_in_db": 55,
+   "shared": 32,
+   "hmm_only": 23,
+   "pfam_only": 14,
+   "jackhmmer_beyond_hmmsearch": 9,
+   "pfam_total_outside_db": 15375
+  },
+  "viridiplantae": {
+   "db_accessions": 15114263,
+   "hmm_targets_scored": 13791,
+   "hmm_targets_declined_by_gate": 13736,
+   "pfam_in_db": 63,
+   "hmm_in_db": 55,
+   "shared": 43,
+   "hmm_only": 12,
+   "pfam_only": 20,
+   "jackhmmer_beyond_hmmsearch": 16,
+   "pfam_total_outside_db": 15358
+  },
+  "metazoa_nonvert": {
+   "db_accessions": 11396529,
+   "hmm_targets_scored": 8607,
+   "hmm_targets_declined_by_gate": 6257,
+   "pfam_in_db": 2047,
+   "hmm_in_db": 2350,
+   "shared": 1842,
+   "hmm_only": 508,
+   "pfam_only": 205,
+   "jackhmmer_beyond_hmmsearch": 710,
+   "pfam_total_outside_db": 13374
+  },
+  "protista_other": {
+   "db_accessions": 3636524,
+   "hmm_targets_scored": 2721,
+   "hmm_targets_declined_by_gate": 1871,
+   "pfam_in_db": 643,
+   "hmm_in_db": 850,
+   "shared": 608,
+   "hmm_only": 242,
+   "pfam_only": 35,
+   "jackhmmer_beyond_hmmsearch": 22141,
+   "pfam_total_outside_db": 14778
+  },
+  "archaea": {
+   "db_accessions": 1754814,
+   "hmm_targets_scored": 7,
+   "hmm_targets_declined_by_gate": 7,
+   "pfam_in_db": 0,
+   "hmm_in_db": 0,
+   "shared": 0,
+   "hmm_only": 0,
+   "pfam_only": 0,
+   "jackhmmer_beyond_hmmsearch": 0,
+   "pfam_total_outside_db": 15421
+  },
+  "bacteria_genus": {
+   "db_accessions": 13903732,
+   "hmm_targets_scored": 59,
+   "hmm_targets_declined_by_gate": 59,
+   "pfam_in_db": 0,
+   "hmm_in_db": 0,
+   "shared": 0,
+   "hmm_only": 0,
+   "pfam_only": 0,
+   "jackhmmer_beyond_hmmsearch": 0,
+   "pfam_total_outside_db": 15421
+  }
+ },
+ "genes": {
+  "genomes": 309,
+  "genomes_with_reference_proteome": 212,
+  "genomes_with_reference_proteome_taxid_match": 212,
+  "genes_present": 1232,
+  "by_channel": {
+   "genome_only:records_exist_but_none_full_length": 248,
+   "genome_only:no_record_resolves_to_this_paralog": 286,
+   "protein_database_and_genome": 292,
+   "genome_only:no_reference_proteome": 386,
+   "genome_only:no_family_record_for_species": 20
+  },
+  "protein_db_invisible": 940,
+  "protein_db_invisible_frac": 0.763,
+  "by_scope": {
+   "order representative": {
+    "n_genomes": 140,
+    "n_genes": 556,
+    "n_invisible": 413,
+    "frac": 0.7428
+   },
+   "margin species": {
+    "n_genomes": 148,
+    "n_genes": 592,
+    "n_invisible": 465,
+    "frac": 0.7855
+   },
+   "both": {
+    "n_genomes": 21,
+    "n_genes": 84,
+    "n_invisible": 62,
+    "frac": 0.7381
+   }
+  }
+ },
+ "census_v6_records": 18065
+}

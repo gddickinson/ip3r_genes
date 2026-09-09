@@ -1,0 +1,9 @@
+method	label	census_step	n_records_returned	n_records_step_added_to_census	elapsed_s	elapsed_h	step_seconds_per_new_record	timing_source
+app_search	targeted database search (NCBI/Ensembl/UniProt/Compara)	targeted database search (the app: NCBI/Ensembl/UniProt/Compara)	0	1571				not recorded
+pfam_enumeration	InterPro/Pfam exhaustive enumeration	InterPro/Pfam exhaustive enumeration	15421	15421				not recorded (statistics written on a re-parse from archived pages)
+profile_hmm_vert	profile HMM (hmmsearch, 763 vertebrate proteomes)	profile HMM + jackhmmer, vertebrate reference proteomes	18501	618	3100.7	0.86	78.0	measured
+jackhmmer_vert	jackhmmer iterative (vertebrate proteomes)	profile HMM + jackhmmer, vertebrate reference proteomes	24929	618	45076.2	12.52	78.0	measured
+genome_miniprot_vert	genome sweep (miniprot, 309 vertebrate assemblies)	genome sweep (miniprot, 309 vertebrate assemblies)	1058	1058	506.1	0.14	0.5	measured (sum of per-genome sweep totals)
+profile_hmm_nonvert	profile HMM (hmmsearch, 6,928 other proteomes)	profile HMM + jackhmmer, 6,928 other reference proteomes	28137	785				not recorded
+jackhmmer_nonvert	jackhmmer iterative (non-vertebrate proteomes)	profile HMM + jackhmmer, 6,928 other reference proteomes	25933	785				not recorded
+genome_miniprot_nonvert	genome sweep (miniprot, 194 other assemblies)	genome sweep (miniprot, 194 non-vertebrate assemblies)	183	183	6121.4	1.7	33.5	measured (sum of per-genome sweep totals)
