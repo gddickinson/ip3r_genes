@@ -148,21 +148,22 @@ mitochondrion, and the apoptotic decisions downstream of it, depend on which
 paralogue is present [R12]. A cell's calcium signalling repertoire is in part
 a statement about which of ITPR1, ITPR2 and ITPR3 it expresses.
 
-## 1.4 Four things about the family that were not established
+## 1.4 Four things about the family were not established
 
 For a family this well studied, a surprising amount was not established at the
 level a genome-scale question requires.
 
-**Its taxonomic range.** The receptor is described as animal machinery with
-scattered occurrences elsewhere. Those scattered occurrences had never been
+**Its taxonomic range had never been enumerated against a declared space.**
+The receptor is described as animal machinery with scattered occurrences
+elsewhere. Those scattered occurrences had never been
 enumerated against a declared search space, and the conspicuous absences,
 meaning no IP₃ receptor in *Arabidopsis* and none in budding yeast, had never
 been tested at the level of an assembly rather than a gene set. An absence in
 a proteome is a statement about what a gene caller found. Whether it is also a
 statement about the genome is a different measurement, and nobody had made it.
 
-**Where the three vertebrate paralogues came from.** That vertebrates carry
-three is a database fact. That the three arose in the two rounds of
+**Where the three vertebrate paralogues came from had no tested answer.** That
+vertebrates carry three is a database fact. That the three arose in the two rounds of
 whole-genome duplication at the base of the vertebrates [R179, R180] is a
 reasonable inference from their number and their age, and it had not been
 tested against the genomic neighbourhoods that a duplication of that kind
@@ -172,14 +173,14 @@ happened independently, which this project's own background document asserted,
 turned out to have no primary source and had to be downgraded to an open
 question before any of the work could begin. Chapters 6 and 7 answer it.
 
-**What has happened to the paralogues since.** Gene families of this age
-normally lose copies [R193]. Whether this one has, and where, is a question
+**What has happened to the paralogues since could not be asked without a
+false-negative rate.** Gene families of this age normally lose copies [R193]. Whether this one has, and where, is a question
 that cannot be answered without a false-negative rate, because a gene that a
 search fails to find looks exactly like a gene that is not there. That single
 sentence determined the structure of a third of this thesis.
 
-**How well the family is recorded.** Every one of the questions above is
-answered using public databases, and the quality of those databases for this
+**How well the family is recorded had never been audited.** Every one of the
+questions above is answered using public databases, and the quality of those databases for this
 family had never been audited. The audit turned out to be a result in its own
 right.
 

@@ -91,7 +91,7 @@ def build_markdown() -> str:
         "---",
         "title: '" + s14_pdf.latex_safe(L.TITLE).replace("'", "''") + "'",
         "subtitle: '" + s14_pdf.latex_safe(L.SUBTITLE).replace("'", "''") + "'",
-        'author: "George Dickinson"',
+        'author: "' + L.AUTHOR + '"',
         f'date: "{date.today().isoformat()}"',
         "documentclass: report",
         "papersize: a4",

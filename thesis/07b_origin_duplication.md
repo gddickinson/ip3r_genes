@@ -75,7 +75,7 @@ agreement look like weight.
 **The two duplications are not on the same branch.** That is the finding, and
 it is what makes ITPR1 the earlier-diverging copy.
 
-## 7.9 Two objections to the deep placement, both measured
+## 7.9 Two objections to the deep placement were measured rather than argued
 
 Two objections a reader should raise are measured rather than argued.
 
@@ -302,7 +302,8 @@ makes the check unrunnable.
 
 ## 7.13 What this chapter settles, and the disagreement it leaves standing
 
-**Settled.** The three paralogue neighbourhoods are shared within a paralogue
+**Six things are settled.** The three paralogue neighbourhoods are shared
+within a paralogue
 at 216 to 413 times a matched null and share nothing across the family
 boundary. The blocks are paralogous and the paralogy runs through ITPR1. One
 of the two surviving links is vertebrate-dated and the other is far older. The
@@ -313,7 +314,8 @@ and only ITPR1, in 97 % of teleost genomes, while doubling all three ryanodine
 receptors in the same genomes, and the two copies are one ancestral
 duplication.
 
-**The disagreement.** The tree makes ITPR2 and ITPR3 sisters. The
+**One disagreement is left standing.** The tree makes ITPR2 and ITPR3
+sisters. The
 neighbourhood makes ITPR1 the block that kept its ohnologues with both of the
 others, and ITPR2 with ITPR3 the one pair that retains nothing above
 background. Two instruments give two answers, and the project's verdict is
@@ -332,7 +334,8 @@ Stating that as a disagreement rather than resolving it is a decision. The
 alternative, which is quietly preferring whichever instrument agreed with the
 headline, is how a project of this size talks itself into a wrong answer.
 
-**What it does not settle.** It does not settle which of the two duplication
+**Three things are not settled.** The chapter does not settle which of the two
+duplication
 rounds made which split, because the dated link is dated to Vertebrata, which
 is both rounds, and separating them needs the cyclostome side of the quartet,
 which §7.6 found underpowered. It does not settle whether the quartet had a

@@ -47,7 +47,7 @@ evolution) missing from it entirely and integrating them changed the Results
 structure.
 
 **The paper is not the whole of the work, and the long form is now written.**
-[`thesis/`](thesis/README.md) is **60,018 words across 15 chapters and 5
+[`thesis/`](thesis/README.md) is **60,201 words across 15 chapters and 5
 appendices, 103 figures, 80 references, 173 typeset pages**, built by `python
 scripts/s25_assemble.py` in eight stages. It carries what the paper had to
 drop: why each instrument is built the way it is, what was measured and

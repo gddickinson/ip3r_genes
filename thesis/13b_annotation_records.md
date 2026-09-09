@@ -77,9 +77,10 @@ of them. This validates the instrument at this gene rather than the individual
 locus, which is why it is reported alongside the reading frame and the splice
 sites rather than instead of them.
 
-**Transcript evidence at the junction**, where the denominator is the result.
-Probes across every junction the annotation does not model were searched
-against every transcript record for the species, and returned nothing. The
+**Transcript evidence at the junction was searched for, and the denominator is
+the result.** Probes across every junction the annotation does not model were
+searched against every transcript record for the species, and returned
+nothing. The
 species has 10 transcript records in total. A search of that many returning
 nothing has not shown the gene is untranscribed. It has shown the species has
 almost no deposits.
@@ -92,11 +93,12 @@ never fires. On its first run that control returned six false spans, which is
 how the rule acquired its second half: an anchor requirement alone admits an
 alignment that has run a dozen bases past the junction into the intron.
 
-**The rest of the family in the same genome.** Every other family locus in
-both assemblies also splices into an uninterrupted reading frame. Whatever the
+**The rest of the family in the same genome is intact.** Every other family
+locus in both assemblies also splices into an uninterrupted reading frame. Whatever the
 annotation is doing here, it is not responding to a damaged gene.
 
-**The neighbourhood.** Case A's missing gene sits between the two neighbours
+**The neighbourhood check is available for one case and not the other.**
+Case A's missing gene sits between the two neighbours
 its paralogue carries in 197 and 183 of 215 swept vertebrates. For Case B the
 check is not available at all, because that annotation names its genes by
 locus tag and there is nothing to match, and that is reported as a limitation

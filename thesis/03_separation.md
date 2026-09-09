@@ -92,7 +92,7 @@ is represented by many lineages that corroborate one another, so the artefact
 does not recur, but it is the shape of this instrument's failure and it is on
 the record.
 
-## 3.3 Enumerating the search space, and three reasons not to trust its own counts
+## 3.3 The search space was enumerated to exhaustion, and its own counts cannot be trusted
 
 The census was built by walking three Pfam signatures [R155] to exhaustion,
 through the domain database that serves them [R156]: PF08709 (the IP₃-binding
@@ -141,7 +141,7 @@ overlaps drawn. The union is 15,421 proteins across 1,488 taxa and the
 intersection of all three seeds is 10,256. The difference between those two
 numbers is the argument for enumerating a union.
 
-## 3.4 A domain-architecture call, audited against gene symbols it never sees
+## 3.4 A domain-architecture call is audited against gene symbols it never sees
 
 Every record is called by domain architecture. A record is a **ryanodine
 receptor** if it carries any of four RyR-specific signatures, namely PF02026,
@@ -212,7 +212,7 @@ because a truncated model submitted as a whole protein is not marked as one,
 and all seven are unnamed locus tags from three species. They are the first
 evidence in this project for the annotation failures Chapter 13 audits.
 
-## 3.5 Two profile models, calibrated against the architecture rule before use
+## 3.5 Two profile models are calibrated against the architecture rule before they are used
 
 The architecture rule reads annotation and a profile reads residues. Building
 both and requiring them to agree is what makes the census defensible, because
@@ -281,7 +281,7 @@ disagreement is kept and reported as a conflict rather than resolved by
 preference, and neither speaking leaves the record unassigned. Across 16,039
 records there are two conflicts.
 
-## 3.6 A sweep of 763 vertebrate proteomes, and the span gate it required
+## 3.6 A sweep of 763 vertebrate proteomes required a span gate to be usable
 
 The profiles were then run over 763 vertebrate reference proteomes [R157],
 comprising 14,414,821 canonical proteins, one per gene, because isoform sets
@@ -310,7 +310,7 @@ returned, 188 of them called IP₃ receptor. A signature-based enumeration and a
 profile sweep of the same organisms do not return the same set, and the
 difference is not small.
 
-## 3.7 Three iterative searches, and a kill criterion that had to be rewritten
+## 3.7 Three iterative searches forced the kill criterion to be rewritten
 
 The completeness argument needs a third line of evidence: iterate a model from
 a single sequence until it stops finding new things, and see whether the

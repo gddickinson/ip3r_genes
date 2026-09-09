@@ -27,12 +27,12 @@ states, comprising complete, split, fragmentary, non-coding only and
 unannotated, under three rules that decide whether the audit is measuring
 anything.
 
-**Same strand only**, because an antisense gene overlapping the locus
-perfectly is not an annotation of it.
+**Only same-strand features count**, because an antisense gene overlapping the
+locus perfectly is not an annotation of it.
 
-**Scored against coding blocks rather than gene spans**, because a gene span
-covers its own introns and these genes' introns reach 152 kb, so a passenger
-gene inside one would score as covering the locus.
+**Loci are scored against coding blocks rather than gene spans**, because a
+gene span covers its own introns and these genes' introns reach 152 kb, so a
+passenger gene inside one would score as covering the locus.
 
 **The name is read off whichever model the annotation actually places there**,
 deliberately generously, because accusing a database of failing to name a gene

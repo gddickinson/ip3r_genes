@@ -132,7 +132,7 @@ range question: a record enters this figure by carrying a domain annotation,
 and nothing in the count says whether the protein is real, whether it is in
 that organism's genome, or whether it is an IP₃ receptor at all.
 
-## 2.5 The sister-family hazard, measured in the query that was supposed to be clean
+## 2.5 The sister-family hazard was measured in the query that was supposed to be clean
 
 The background document cited a UniProt query on taxonomy 7955 and Pfam
 PF08709 as evidence that zebrafish carries four IP₃ receptors. Re-running that
@@ -167,7 +167,7 @@ drawn rather than described. The one positive inside that band is
 signature does not find. Panel **c** shows the zebrafish query and the 53
 records in it that are the sister family.
 
-## 2.6 Two sequence measurements that later chapters use as a coordinate system
+## 2.6 Two sequence measurements become a coordinate system for later chapters
 
 Two further measurements were made for the literature review, and the rest of
 this thesis uses them as a coordinate system rather than as a result.

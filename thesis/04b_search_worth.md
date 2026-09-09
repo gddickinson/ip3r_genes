@@ -215,7 +215,7 @@ carries 19,949 non-family targets against roughly 2,439 for each of the other
 two. A distant seed does not reach further into the family. It reaches further
 out of it.
 
-## 4.15 Four places where the inference ran out rather than the search
+## 4.15 The inference ran out in four places, rather than the search
 
 Four limits were met while doing something else, and each is a general result
 about the method rather than about this family.
@@ -240,7 +240,7 @@ ratio of sums is dominated by sites whose denominator is not estimable.
 **A likelihood tree need not resolve the question asked of it.** Chapter 6
 returns to this.
 
-## 4.16 Five results for anyone doing the same thing
+## 4.16 Five results here apply to anyone doing the same thing
 
 1. **A genome-scale orthologue sweep misses about one cell in seven, and every
    miss is an assembly.** A survey that reports absences without a contiguity

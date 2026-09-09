@@ -174,7 +174,7 @@ because neighbourhood conservation is rearrangement history and this is coding
 sequence rate, so the mismatch is not a disagreement, and the project's
 verdict vocabulary has a word for that rather than forcing a choice.
 
-## 10.7 The stem branches, and three optimiser failures that a single run would have hidden
+## 10.7 The stem branches carry three optimiser failures a single run would have hidden
 
 A duplicate's fate is decided on its stem, meaning the interval between the
 duplication and the first surviving split of the new copy. If a paralogue was

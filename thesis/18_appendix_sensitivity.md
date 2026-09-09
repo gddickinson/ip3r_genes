@@ -10,7 +10,7 @@ threshold-dependent result must say which settings manufacture it, and it must
 walk the threshold across its own measured uncertainty before any invented
 value.** A robustness claim asserted in prose is not checkable, and a grid is.
 
-## C.1 The loss count
+## C.1 The loss count is walked across four axes
 
 The table is `results/loss_counts/sensitivity_matrix.tsv`, with 384 rows.
 
@@ -36,7 +36,7 @@ counts edges and cannot read a length, so no scheme changes any count, and a
 matrix that quietly dropped that axis would be indistinguishable from one that
 had tested it and found nothing.
 
-## C.2 Copy number, recomputed at seven coverage bars
+## C.2 Copy number is recomputed at seven coverage bars
 
 The table is `results/duplication/copy_sensitivity.tsv`, with 56 rows.
 
@@ -45,7 +45,7 @@ bars. A duplication claim that survives only one bar is a claim about the bar,
 and the teleost result is the one this table exists to protect, because it
 holds across the range.
 
-## C.3 Gene architecture, recomputed at six coverage bars
+## C.3 Gene architecture is recomputed at six coverage bars
 
 The table is `results/gene_architecture/architecture_sensitivity.tsv`, with 24
 rows.
@@ -56,7 +56,7 @@ is not, which is a comparison between two quantities measured on the same loci
 and therefore robust to the bar by construction. But the bar decides which
 loci, and the table says so.
 
-## C.4 Annotation states, recomputed across the completeness bar
+## C.4 Annotation states are recomputed across the completeness bar
 
 The table is `results/annotation_audit/state_sensitivity.tsv`, with 21 rows.
 

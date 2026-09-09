@@ -164,7 +164,7 @@ printed beside the parameter it is about.
 **A likelihood-ratio test whose null sits on a boundary needs the right null
 distribution**, and both are written out rather than one chosen.
 
-## 14.5 Reproducibility, and four things that were not reproducible
+## 14.5 Four things in this project were not reproducible until they were pinned
 
 **Anything a committed artefact is built from is aligned single-threaded.**
 The alignment program's [R138] iterative refinement combines partial results
@@ -205,7 +205,7 @@ block the next run for ever.
 **A cache may hold what a parser found, never what a rule decided.** One audit
 cached both, and a later rule change survived into a committed table.
 
-## 14.6 Six rules that make a report unable to lie
+## 14.6 Six rules make a report unable to lie
 
 **Reports are rendered from the committed tables rather than written by hand
 alongside them.** Every report in this project's results tree is generated,
@@ -256,7 +256,7 @@ page to a reader. One early build printed the receptor's own name without its
 subscript because the document font has no subscript glyphs, and nothing in
 the build said so.
 
-## 14.7 Four rules that are specific to this family
+## 14.7 Four rules are specific to this family
 
 Four of the seventy-five decisions are about this family and could not have
 been ported from anywhere.
@@ -290,7 +290,7 @@ cell's own loci, and specificity goes to 0.977 against a copy call the
 detector never sees. **A geometric signature is only evidence once the family
 assignment has been made.**
 
-## 14.8 Two rules about the scope of an absence claim
+## 14.8 Two rules govern the scope of an absence claim
 
 **An absence claim must pass two bars rather than one:** a genome-wide
 contiguity floor, and a local check that the region itself is present.

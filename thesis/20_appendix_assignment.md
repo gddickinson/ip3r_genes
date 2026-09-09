@@ -1,6 +1,6 @@
 # Appendix E. How the results were assigned to chapters, and the build guards
 
-## E.1 The assignment table
+## E.1 What the assignment table records
 
 The assignment is committed as `thesis/chapter_assignment.tsv`, with one row
 per entry under `results/`, giving the chapter it is primary in, the rule that
@@ -40,7 +40,7 @@ by inspection against the figure manifest rather than by the build. The
 introduction, the methods chapter and the discussion are exempt as exposition,
 and the methods chapter carries one figure.
 
-## E.2 One departure the paper series should expect
+## E.2 The paper series should expect one departure from this assignment
 
 This task ran before S26, so this table is the one S26 starts from. There is
 one place where a paper series will have to choose differently, and it is
@@ -76,7 +76,7 @@ longer construction and a paper cannot. Where the two groupings differ, the
 difference is a fact about the two formats, and this appendix is where it is
 recorded rather than smoothed over.
 
-## E.3 Every guard, broken on purpose, and what it said
+## E.3 Every guard is broken on purpose, and this is what each one said
 
 Every guard in the build is broken on purpose on **every** build, by
 `scripts/s25_test_guards.py`, which runs as the first stage and writes

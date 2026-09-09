@@ -22,7 +22,7 @@ measured in Chapter 4, that says how often the search misses a gene that is
 there; and a sensitivity matrix that names, cell by cell, the analytical
 settings that would manufacture a loss out of this data.
 
-## 9.2 Eight states, of which only one can be counted as a loss
+## 9.2 Eight states are assigned, and only one of them can be counted as a loss
 
 The genome ledger's own statuses were not built to license a loss count. In
 that ledger "absent" means the rescue search attributed no region, which in a

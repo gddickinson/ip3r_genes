@@ -63,7 +63,7 @@ would be indistinguishable from a rule that cannot fire.
 Every suite runs before its task writes anything, and a failure refuses the
 build.
 
-## B.4 The controls that found something
+## B.4 Six of the controls found something
 
 Six are described in Chapter 14: the chimera screen's control that failed
 because the test was wrong rather than the rule; a reassignment rule whose

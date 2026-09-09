@@ -3762,3 +3762,43 @@ the "audited but never cited" rule fired on it immediately.
 
 Recorded as **D76**, which states the three rules and applies them to S26's
 papers as well.
+
+### Addendum (same session) — title, authorship, and a second grammar pass
+
+Three corrections after the user read the rewritten draft.
+
+**The title.** It had kept the appended-fragment pattern D76 removed
+everywhere else, in the one place a reader sees first. It is now *A
+genome-scale census of the inositol 1,4,5-trisphosphate receptor family*, with
+the scope moved into a subtitle.
+
+**The authorship.** The thesis is authored by Claude, with the correspondent
+named separately as the point of contact. Both now live in `s25_lib` and are
+read by the PDF stage rather than typed into it, so the front matter and the
+PDF metadata cannot disagree. Recorded as **D77**.
+
+**A second grammar pass**, which is the part worth recording. The first pass
+fixed the headings that were obviously confusing and removed every em-dash. A
+systematic check found more:
+
+- **30 section headings still had no finite verb**, being participles
+  (*A domain-architecture call, audited against...*), gerunds (*Enumerating
+  the search space, and...*) or bare noun phrases (*The loss count*). All are
+  now complete clauses.
+- **Fifteen bold paragraph lead-ins were fragments** (*Its taxonomic range.*,
+  *The model-violation guard.*, *Settled.*, *The neighbourhood.*). All now
+  carry a predicate.
+- **Appendix A's five class labels** were noun phrases with counts attached;
+  they are now sentences.
+- **One passage listed the figure-audit findings as five verbless fragments.**
+  It is now five sentences.
+
+The checks used are worth keeping for S26. Every heading was parsed for a
+finite verb, every bold lead-in likewise, and every body sentence scanned the
+same way, with the ten hits inspected by hand and nine confirmed as irregular
+verbs the check does not know. Dashes were counted by type: zero em-dashes
+remain in the chapter sources, and the only en-dashes are a numeric range and
+a two-name compound, both of which are correct usage rather than the
+parenthetical dash.
+
+60,201 words, 177 pages. The build passed unchanged throughout.

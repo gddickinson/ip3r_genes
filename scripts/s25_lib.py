@@ -42,10 +42,15 @@ DOCS_FIGS = ROOT / "docs" / "figures"
 W_FULL = lib.W_FULL
 W_HALF = lib.W_HALF
 
-TITLE = ("The inositol 1,4,5-trisphosphate receptor family: "
-         "a genome-scale census and its instruments")
+TITLE = ("A genome-scale census of the inositol 1,4,5-trisphosphate "
+         "receptor family")
 SUBTITLE = ("Range, origin, retention, constraint and record quality across "
             "503 genomes and 7,691 reference proteomes")
+#: The document's author. This thesis was written by Claude; the project it
+#: reports was directed by the correspondent named in the front matter, who
+#: is also the point of contact, since the author has no address of its own.
+AUTHOR = "Claude (Opus 5, Anthropic)"
+CORRESPONDENCE = "george.dickinson@gmail.com"
 
 # ------------------------------------------------------------------ chapters
 

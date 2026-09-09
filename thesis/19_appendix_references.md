@@ -8,7 +8,7 @@ the first author, the verdict, and what the thesis rests on the reference for.
 **58 references were added and 58 verified.** Nine required a corrected
 identifier before they could be.
 
-## D.1 The rule for a new reference
+## D.1 What the rule for a new reference requires
 
 The literature review's 137 references were audited when it was built, and
 this document inherits them as a frozen baseline, committed as

@@ -180,7 +180,7 @@ within-gene depth. That is worth stating because building the deep layers took
 most of a session and the honest result is that the family-wide layer, which
 was already available, discriminates better.
 
-## 15.6 Five results about method rather than about receptors
+## 15.6 Five results here are about method rather than about receptors
 
 Some of what this thesis found is not about IP₃ receptors at all.
 
@@ -231,7 +231,8 @@ measurement separates ligand binding from domain packing.
 one enzyme family says the canonical route to IP₃ is missing rather than that
 the receptor has no ligand.
 
-**The bird lesion result.** ITPR3 carries an excess of disabling indels
+**The bird lesion result is named but not explained.** ITPR3 carries an excess
+of disabling indels
 against its own genome's identity-matched sibling loci, and stratified it is
 entirely a bird result, at 25 genomes to 2. Twenty-one of the 27 informative
 pairs are in assemblies below the contiguity bar, which is where the test has

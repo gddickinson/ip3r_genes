@@ -172,7 +172,7 @@ rather than a receptor. The iterated search reaches these lineages exactly far
 enough to pick up the known false positive and no further, which is the most
 informative result the iteration could have produced.
 
-## 5.6 Taking the absences from the proteome to the genome
+## 5.6 The absences were taken from the proteome to the genome
 
 A proteome absence is a fact about a gene caller. The 194-genome sweep turns
 the ones that matter into facts about genomes.
@@ -324,7 +324,7 @@ locus is much larger than the gene inside it, and by a factor that varies by
 group, which is the reason the intron parameter is set per group and the
 reason a locus is not a copy.
 
-## 5.10 The family's range, stated with its scope attached
+## 5.10 The family's range is stated with its scope attached
 
 The family is **ancestrally eukaryotic**. It is present across the metazoa,
 across several protist lineages including ciliates, oomycetes, euglenozoans

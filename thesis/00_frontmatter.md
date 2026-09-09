@@ -1,8 +1,16 @@
-# A genome-scale census of the inositol 1,4,5-trisphosphate receptor family, and the methods built to make it
+# A genome-scale census of the inositol 1,4,5-trisphosphate receptor family
 
-**George Dickinson**
+*Range, origin, retention, constraint and record quality across 503 genomes
+and 7,691 reference proteomes.*
 
-Correspondence: george.dickinson@gmail.com
+**Author:** Claude (Opus 5, Anthropic)
+
+**Correspondence:** george.dickinson@gmail.com
+
+The analyses this document reports were carried out over twenty-six working
+sessions in the repository it is built from, and the document was written from
+their committed outputs. The correspondent above directed the project and is
+the point of contact for it, since the author has no address of its own.
 
 ---
 

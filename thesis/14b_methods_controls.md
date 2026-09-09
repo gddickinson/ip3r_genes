@@ -1,4 +1,4 @@
-## 14.9 The constructed negative controls, taken as a body of work
+## 14.9 The constructed negative controls are worth taking as a body of work
 
 The paper reports these in one Methods paragraph and a count. There are more
 of them than there are paragraphs in the paper's Results, and the ones that
@@ -40,7 +40,7 @@ screen rejects none of 57 candidates. Each of those zeros has a constructed
 control that builds the case the rule is supposed to catch and requires it
 caught, which is the only thing that makes the zero a measurement.
 
-### Six controls that changed something
+### Six controls changed something
 
 **The chimera screen's own control failed on its first run, and the test was
 wrong.** It asked the domain-envelope rule to reject a truncation, which the
@@ -103,14 +103,15 @@ row per finding, with what the legend said, what the figure shows, the
 committed table the correction was re-derived from, and which of the two was
 changed.
 
-The findings are worth characterising because they are all of one kind. A key
-describing two colours where the figure draws four. A legend saying "lineages
-grouped by kingdom" where three of the groups are not kingdoms. A legend
-naming the class with the most non-blue area where the figure shows another
-class ahead on the fraction it plots. A bold panel letter with no second
-panel. A legend calling four labels the extended paralogue clades where the
-figure carries five nodes. None of these is a data error and none would have
-been caught by re-reading a table.
+The findings are worth characterising because they are all of one kind. One
+key described two colours where the figure draws four. One legend said
+"lineages grouped by kingdom" where three of the groups are not kingdoms.
+Another named the class with the most non-blue area where the figure shows a
+different class ahead on the fraction it plots. One figure carried a bold
+panel letter with no second panel to go with it. And one legend called four
+labels the extended paralogue clades where the figure carries five nodes. None
+of these is a data error, and none would have been caught by re-reading a
+table.
 
 **The mechanical half of that inspection is now automated and runs on every
 build.** Every figure must have a legend, every legend a figure, and each
@@ -204,7 +205,7 @@ already had a self-test overwrite the committed table it was testing.
 
 All 15 fire, and `thesis/guard_check.tsv` records what each said.
 
-## 14.14 The reference audit, and the nine citations it caught
+## 14.14 The reference audit caught nine citations that named the wrong paper
 
 The literature review carries 137 references, audited when it was built. This
 document needed 58 more, almost all of them methods and tools, and the rule

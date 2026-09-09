@@ -196,7 +196,7 @@ That is the bet a greedy selection makes, and the margin it was made on is in
 a committed table rather than in a sentence, so how close the second-best
 matrix came is checkable.
 
-## 6.6 The tree search, and the guards around it
+## 6.6 The tree search is pinned and guarded, and its rooting doubles as a control
 
 The analysis used one maximum-likelihood search [R140], taking 71 minutes,
 with 1,000 ultrafast bootstrap replicates [R142] and 1,000 approximate
@@ -392,8 +392,8 @@ taken bare, at a branch-test value of 47.8, which the tree prefers to group
 slightly differently. The same clade including the unlabelled tips is at
 maximal support.
 
-**The model-violation guard.** Because the bootstrap is optimistic under model
-violation, the whole search was re-run with an extra optimisation round on
+**A model-violation guard was run over the whole search.** Because the
+bootstrap is optimistic under model violation, the whole search was re-run with an extra optimisation round on
 every bootstrap tree, and the same clade questions were asked of that tree,
 with membership read from a committed table rather than re-derived so that a
 bookkeeping difference cannot surface as a topology change.

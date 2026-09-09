@@ -1,6 +1,6 @@
-# 11. The channel: its shape, its constraint, and the clinical variants
+# 11. The channel's shape, its constraint, and the clinical variants
 
-## 11.1 Two questions about the protein rather than the gene
+## 11.1 This chapter asks two questions about the protein rather than the gene
 
 Everything so far has been about genes: where they are, where they came from,
 and whether they are still there. This chapter is about the protein.
