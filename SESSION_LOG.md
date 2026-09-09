@@ -3723,3 +3723,42 @@ bytes of 3.5 million** — two copies of a random 16-byte trailer `/ID` that
 this `xdvipdfmx` writes regardless of `FORCE_SOURCE_DATE`. So a checksum
 recorded against a typeset PDF still means nothing, and `s14_pdf.py` has the
 same defect without even the timestamp fix. Recorded as an emergent item.
+
+### Addendum (same session) — the thesis was rewritten for register
+
+The user read the draft and reported that the prose was confusing: headings
+and openings were sentence fragments that gave no context on their own, and
+em-dashes were overused. Both are fair, and both are the wrong register for a
+scientific document rather than a matter of taste.
+
+**All 27 chapter files were rewritten.** Every heading now names its subject
+without needing the one above it, so that it is legible from a table of
+contents or a search result. Every section opens by naming what it is about
+rather than pointing at it with a pronoun. And there are **zero em-dashes in
+the chapter sources**, down from 464, with each one replaced by the
+punctuation or the sentence break the sense actually wanted rather than by a
+mechanical substitution.
+
+Some examples of what changed. The title went from *a genome-scale census and
+its instruments* to *A genome-scale census of the inositol
+1,4,5-trisphosphate receptor family, and the methods built to make it*.
+*The problem stated precisely* became *Why the separation has to be a positive
+test rather than a filter*. *The claim that failed, and what it turned into*
+became *The background claim about gene size was false, and it became a
+measurement*. *Completeness, asked in the expensive direction* became
+*Completeness checked in the expensive direction: which known records the
+profiles missed*.
+
+Word count rose from 58,436 to 60,018 and the typeset document from 173 to 177
+pages, which is what saying a thing plainly costs.
+
+**The build passed unchanged throughout.** 220 claims, 103 figure placements,
+80 citations and all 15 guards survived a full-prose rewrite of the entire
+document, checked after every file. That is worth recording for its own sake:
+none of the document's checkable content lives in its prose, so the prose
+could be replaced wholesale without touching a single number. The one thing
+the guards did catch was a citation dropped when a paragraph was reworded, and
+the "audited but never cited" rule fired on it immediately.
+
+Recorded as **D76**, which states the three rules and applies them to S26's
+papers as well.

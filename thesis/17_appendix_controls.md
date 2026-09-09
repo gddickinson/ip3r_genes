@@ -1,28 +1,28 @@
-# Appendix B — the control inventory
+# Appendix B. The constructed negative controls
 
-The constructed negative controls of this project, derived from the test
-modules rather than counted by hand and committed as
+This appendix lists the constructed negative controls of this project. It is
+derived from the test modules rather than counted by hand and is committed as
 `thesis/control_inventory.tsv`.
 
-**437 named constructed checks across 19 suites.**
+There are **437 named constructed checks across 19 suites.**
 
-## What is counted, and what a unit is
+## B.1 What is counted, and what a unit is
 
 Two conventions are in use across the project and both are counted, because it
 grew them at different times and neither is wrong. Some suites group their
-checks into named test functions; others call a helper once per assertion,
-naming each check as it runs. **A named check is the finer unit, so it is
-preferred where a module has any, and the table records which unit each row
-counts** — the two are not the same size and adding them together silently
-would be worse than either.
+checks into named test functions, while others call a helper once per
+assertion, naming each check as it runs. **A named check is the finer unit, so
+it is preferred where a module has any, and the table records which unit each
+row counts**, because the two are not the same size and adding them together
+silently would be worse than either.
 
-The count is derived by parsing each module: any call to one of the project's
+The count is derived by parsing each module. Any call to one of the project's
 check helpers whose first argument is a string literal is one named control,
 and any top-level function whose name matches the project's test-function
 convention is one grouped control. A control deleted from a module disappears
-from this appendix; one added appears in it.
+from this appendix, and one added appears in it.
 
-## Where they are
+## B.2 Where the controls are
 
 | suite | unit | controls |
 |---|---|---|
@@ -47,23 +47,23 @@ from this appendix; one added appears in it.
 | `s24_test_supp.py` | named check | 17 |
 
 Further controls run inside the analysis modules themselves rather than in a
-test module — the bait screen's three synthetic failures, the chunked-genome
-equivalence test, the resume test, the one-search-two-sensitivities
-equivalence test — and are not in the table because they are not separately
-addressable checks.
+test module, comprising the bait screen's three synthetic failures, the
+chunked-genome equivalence test, the resume test and the
+one-search-two-sensitivities equivalence test. They are not in the table
+because they are not separately addressable checks.
 
-## What they are checks on
+## B.3 What the controls are checks on
 
 Almost none of them checks that a routine returns the right answer. They check
-that it **refuses**, and that it **can act**. Chapter 14 gives the argument;
-the short form is that in this project almost every rule returns a plausible
+that it **refuses**, and that it **can act**. Chapter 14 gives the argument.
+The short form is that in this project almost every rule returns a plausible
 number when it is wrong, and several of the thesis's results are zeros that
 would be indistinguishable from a rule that cannot fire.
 
 Every suite runs before its task writes anything, and a failure refuses the
 build.
 
-## The controls that found something
+## B.4 The controls that found something
 
 Six are described in Chapter 14: the chimera screen's control that failed
 because the test was wrong rather than the rule; a reassignment rule whose

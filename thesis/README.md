@@ -1,9 +1,9 @@
-# thesis/ — the long form
+# The thesis package
 
 `python scripts/s25_assemble.py` builds everything here and exits non-zero on
-a failed guard. The same work is reported as a paper in `manuscript/`; this is
-its long form, 58,000 words across 15 chapters and 5 appendices, with 103
-figures and 80 references.
+a failed guard. The same work is reported as a paper in `manuscript/`, and
+this directory holds its long form: about 60,000 words across 15 chapters and
+5 appendices, with 103 figures and 80 references.
 
 ## What is written by hand, and what is generated
 
@@ -14,7 +14,7 @@ figures and 80 references.
 
 | file | stage | what it is |
 |---|---|---|
-| `thesis.md` | `stitch` | the assembled document — do not edit |
+| `thesis.md` | `stitch` | the assembled document, do not edit |
 | `itpr_family_thesis.pdf` | `pdf` | the typeset document, 173 pages |
 | `figures/` | `figures` | every placed figure, copied from the results tree, png + pdf |
 | `figure_manifest.tsv` | `figures` | chapter, number, slug, source, drawn width, SHA-256 |
@@ -45,13 +45,15 @@ audit row.
 
 ## What fails the build
 
-A results directory neither assigned nor excluded. A missing chapter. A
+The build fails on any of the following. A results directory that is neither
+assigned to a chapter nor explicitly excluded. A missing chapter file. A
 declared figure with no file, a slug declared twice, a committed figure
-neither placed nor excluded, a figure placed in the wrong chapter, a reference
-to a figure nothing places. A cited key with no reference row, a new reference
-with no verified audit row, a reference audited and never cited. A number no
-committed table produces — and a number declared in the ledger that its own
-chapter never states. A glyph the document font cannot set.
+neither placed nor excluded, a figure placed in the wrong chapter, or a
+reference to a figure that nothing places. A cited key with no reference row,
+a new reference with no verified audit row, or a reference audited and never
+cited. A number that no committed table produces, or a number declared in the
+ledger that its own chapter never states. And a glyph the document font cannot
+set.
 
 All of them are exercised on every build by `scripts/s25_test_guards.py`,
 which runs in a sandboxed copy and verifies that it altered no committed file.
