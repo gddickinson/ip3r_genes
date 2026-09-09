@@ -41,10 +41,11 @@ Chapter 12 takes the one part the ryanodine receptors do not share.
 The band is deliberately wider than S26's P4, which allows a paper four to
 seven main figures. That is the difference between the formats stated as a
 number: a paper's figure budget is set by a journal and a chapter's by a
-reader's attention, and a chapter is allowed to be longer. The introduction,
-the methods chapter and the general discussion are exempt, they are
-exposition and carry whatever they need, which for the methods chapter is
-one figure.
+reader's attention, and a chapter is allowed to be longer. Four chapters are
+exempt because they are exposition rather than results and carry whatever they
+need: the introduction, the methods chapter (which carries one figure), the
+general discussion, and Chapter 16 on how the project was carried out (which
+carries none).
 
 **T4: a results directory is primary in exactly one chapter.** Enforced.
 Every other chapter cites it. The rule exists so that the thesis and the paper
@@ -78,11 +79,12 @@ declared figure that is never placed.
 
 ## What the rules produced
 
-Fifteen chapters, five appendices, and the departure below.
+The rules produced sixteen chapters and five appendices. The one
+departure they force from S26's paper grouping is stated below the table.
 
 | # | Chapter | Primary for |
 |---|---------|-------------|
-| 1 | The receptor, and the question |, (exposition) |
+| 1 | The receptor, and the question | none (exposition) |
 | 2 | The baseline, and what it could be trusted to say | `s0_baseline`, the four S0 smoke bundles |
 | 3 | Two families, one architecture | `benchmark_controls`, `census_v2`, `census_v3`, `hmm_sweep` |
 | 4 | The vertebrate genomic sweep, and what the search was worth | `genome_manifest.tsv`, `s5_baits`, `genome_ledger`, `census_v4`, `methods` |
@@ -96,7 +98,8 @@ Fifteen chapters, five appendices, and the departure below.
 | 12 | The part the ryanodine receptors do not share | `ligand_site` |
 | 13 | An archive that cannot find the gene | `annotation_bugs`, `expression`, `annotation_audit` |
 | 14 | Methods, and the reasoning behind them | `supplementary`, `toolchain_manifest.txt` |
-| 15 | General discussion |, (exposition) |
+| 15 | General discussion | none (exposition) |
+| 16 | How this project was carried out with Claude Code | none (exposition) |
 
 ## The one departure to expect from S26
 

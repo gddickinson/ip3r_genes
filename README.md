@@ -47,9 +47,9 @@ evolution) missing from it entirely and integrating them changed the Results
 structure.
 
 **The paper is not the whole of the work, and the long form is now written.**
-[`thesis/`](thesis/README.md) is **60,201 words across 15 chapters and 5
-appendices, 103 figures, 80 references, 173 typeset pages**, built by `python
-scripts/s25_assemble.py` in eight stages. It carries what the paper had to
+[`thesis/`](thesis/README.md) is **64,377 words across 16 chapters and 5
+appendices, 103 figures, 80 references, 185 typeset pages**, built by `python
+scripts/s25_assemble.py` in nine stages. It carries what the paper had to
 drop: why each instrument is built the way it is, what was measured and
 abandoned, and the **437 constructed negative controls** as a body of work
 rather than a Methods sentence.
@@ -65,7 +65,14 @@ references** — nine identifiers written from memory that resolved to entirely
 different papers, each of which would have looked completely normal in a
 reference list.
 
-The claims ledger extends to it and is closed in both directions: 220 numbers
+Chapter 16 describes how the whole project was carried out with Claude Code:
+how it was organised as a ledger of one-task sessions, how the literature was
+audited claim by claim, how the download scope was decided by rule and
+committed as a manifest, how the analyses ran unattended, and how the results,
+figures and documents were generated. Its numbers are measured from the
+repository on every build rather than recalled.
+
+The claims ledger extends to it and is closed in both directions: 232 numbers
 verified, 151 of them carried from the manuscript's ledger through the same
 engine so a number quoted in both documents is recovered once, and every claim
 additionally required to *appear in the chapter that declares it*, which is

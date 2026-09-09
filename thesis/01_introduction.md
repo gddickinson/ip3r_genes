@@ -230,4 +230,6 @@ constraint onto the channel and asks whether it explains the clinical
 variants. Chapter 12 takes the one part of the receptor the ryanodine
 receptors do not share. Chapter 13 audits the archive. Chapter 14 sets out the
 methods as the argument behind each instrument rather than as a procedure, and
-Chapter 15 discusses what the whole says.
+Chapter 15 discusses what the whole says. Chapter 16 describes how the project
+itself was carried out, which is a question about the work rather than about
+the receptor and is answered separately for that reason.

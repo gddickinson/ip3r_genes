@@ -5,6 +5,7 @@ Stages, in order:
   guards   break every build guard on purpose and check that it fires
   assign   commit the chapter grouping and guard it (rule T6)
   controls derive the negative-control inventory from the test modules
+  production measure how the project itself was made
   refs     audit every reference added for the thesis against a live record
   figures  copy every placed figure from the results tree it was drawn in
   claims   re-verify every load-bearing number, and that its chapter says it
@@ -39,13 +40,14 @@ import s25_assign
 import s25_claims
 import s25_controls
 import s25_figures
+import s25_production
 import s25_pdf
 import s25_refs
 import s25_stitch
 import s25_test_guards
 
-STAGES = ["guards", "assign", "controls", "refs", "figures", "claims",
-          "stitch", "pdf"]
+STAGES = ["guards", "assign", "controls", "production", "refs",
+          "figures", "claims", "stitch", "pdf"]
 
 
 def main() -> int:
@@ -78,6 +80,8 @@ def main() -> int:
             status |= s25_assign.run(verbose=args.verbose)
         elif stage == "controls":
             status |= s25_controls.run()
+        elif stage == "production":
+            status |= s25_production.run()
         elif stage == "refs":
             status |= s25_refs.audit(offline=args.refs_offline,
                                      verbose=args.verbose)

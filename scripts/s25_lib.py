@@ -86,13 +86,17 @@ CHAPTERS: list[tuple[int | None, str, str]] = [
     (14, "14b_methods_controls.md",
      "Methods, and the reasoning behind them (continued)"),
     (15, "15_discussion.md", "General discussion"),
-    (None, "16_appendix_corrections.md", "Appendix A — the correction list"),
-    (None, "17_appendix_controls.md", "Appendix B — the control inventory"),
-    (None, "18_appendix_sensitivity.md", "Appendix C — sensitivity tables"),
-    (None, "19_appendix_references.md", "Appendix D — the reference audit"),
-    (None, "20_appendix_assignment.md",
-     "Appendix E — chapters, papers and the results tree"),
-    (None, "21_references.md", "References"),
+    (16, "16_how_it_was_made.md",
+     "How this project was carried out with Claude Code"),
+    (16, "16b_how_it_was_made_documents.md",
+     "How this project was carried out with Claude Code (continued)"),
+    (None, "17_appendix_corrections.md", "Appendix A. The correction list"),
+    (None, "18_appendix_controls.md", "Appendix B. The control inventory"),
+    (None, "19_appendix_sensitivity.md", "Appendix C. Sensitivity tables"),
+    (None, "20_appendix_references.md", "Appendix D. The reference audit"),
+    (None, "21_appendix_assignment.md",
+     "Appendix E. Chapters, papers and the results tree"),
+    (None, "22_references.md", "References"),
 ]
 
 CHAPTER_FILES = [c[1] for c in CHAPTERS]
@@ -111,7 +115,7 @@ for _n, _fn, _t in CHAPTERS:
 #: chapter number -> its first file, for messages that name one.
 FILE_OF_CHAPTER = {n: f[0] for n, f in FILES_OF_CHAPTER.items()}
 
-SECTION_REFERENCES = "21_references.md"
+SECTION_REFERENCES = "22_references.md"
 
 # ---------------------------------------------------------------- assignment
 
@@ -322,9 +326,9 @@ def chapter_title(n: int) -> str:
 #: repeat every number its own appendices carry. They are listed explicitly so
 #: that this is a decision and not a side effect of the file naming.
 APPENDIX_FILES_OF_CHAPTER: dict[int, list[str]] = {
-    14: ["16_appendix_corrections.md", "17_appendix_controls.md",
-         "18_appendix_sensitivity.md", "19_appendix_references.md",
-         "20_appendix_assignment.md"],
+    14: ["17_appendix_corrections.md", "18_appendix_controls.md",
+         "19_appendix_sensitivity.md", "20_appendix_references.md",
+         "21_appendix_assignment.md"],
 }
 
 

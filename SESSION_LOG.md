@@ -3802,3 +3802,50 @@ a two-name compound, both of which are correct usage rather than the
 parenthetical dash.
 
 60,201 words, 177 pages. The build passed unchanged throughout.
+
+### Addendum (same session) — a chapter on how the project was carried out
+
+The user asked for a description of how Claude Code was used: a short section
+in the front matter, and a full chapter at the end covering how the project
+organised itself, surveyed the literature, decided what to download and
+analyse, ran the analyses unattended, and produced the results, figures and
+documents.
+
+**Chapter 16 is that chapter**, in two files, sitting after the general
+discussion and before the appendices, which were renumbered to make room. It
+covers the one-task session protocol and why it exists, the claim-by-claim
+literature audit, the download scope decided by rule and committed as a
+manifest, the analysis menu written before the analyses ran, the resumable
+stage drivers that made unattended operation possible, where the agent's
+judgement actually went (into measuring thresholds), how tables, reports and
+figures are generated rather than written, how the three documents are built
+and guarded, what the human collaborator contributed, and what the arrangement
+is bad at.
+
+**Its numbers are measured rather than recalled**, which is the part worth
+recording. `s25_production.py` is a new build stage that derives them from
+files under version control: 35 sessions across 9 days, 35 ledger tasks of
+which 33 are complete, 82 recorded decisions, 372 analysis scripts, 455
+committed tables, 111 committed figures, and 28 rendered reports totalling
+109,250 words. Twelve are declared in the claims ledger, so a sentence about
+the project's scale fails the build when the scale changes.
+
+Two things were deliberately kept out of the ledger. Total lines of code and
+the commit count change on every edit and every commit, so the chapter states
+them qualitatively and the committed table holds the exact figures.
+
+The chapter's closing section is about the failure modes of the arrangement
+rather than its strengths, because those are the useful part: a fluent agent
+produces plausible prose about work it has not checked (the reference audit
+caught nine of fifty-eight citations); a rule that fires on nothing looks
+exactly like a rule that cannot fire (which is why every zero here has a
+constructed control); and a style pass that has not been checked mechanically
+only fixes what somebody noticed (which is what the second grammar pass
+found). All three are things this project did, caught and recorded.
+
+Recorded as **D79**. 64,377 words, 185 pages, 232 claims, build exit 0.
+
+The ledger then caught its own chapter twice while it was being written: adding
+D79 moved the decision count from 82 to 83, and committing the new statistics
+table moved the table count. Both sentences were corrected because a check
+refused the document, which is the behaviour the chapter describes.

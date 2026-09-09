@@ -100,7 +100,7 @@ one part of it the ryanodine receptors do not share. Chapter 13 audits the
 archive. Chapter 14 is the methods, written as argument rather than as
 procedure, and it carries the project's decision log and its constructed
 negative controls. Chapter 15 discusses what the whole says and what it does
-not.
+not, and Chapter 16 describes how the project itself was carried out.
 
 ## What is checked in this document, and by what
 
@@ -118,3 +118,34 @@ non-zero on a missing figure, a missing chapter, a cited key with no reference
 row, a reference added without an audit, a glyph the document font cannot set,
 or a failed claim. Every one of those guards is broken on purpose on every
 build to confirm that it fires. Chapter 14 explains how.
+
+## How this project was carried out
+
+This project was carried out by Claude Code, which is Anthropic's Claude
+running as an agent in a terminal with access to the file system, the shell
+and the network. Claude Code wrote every line of the analysis software, chose
+and calibrated every threshold, ran every search, generated every table and
+figure, recorded every methodological decision, and wrote this document and
+the paper that accompanies it.
+
+The human collaborator set the goal, provided the machine and the storage,
+ran the small number of commands that need an interactive login, and read and
+corrected the drafts. He did not write the code, select the genomes, choose
+the statistical tests or draft the text.
+
+That division of labour is unusual enough to be worth describing rather than
+leaving for a reader to infer, and it is also relevant to how the work should
+be judged, because an agent that can run for hours unattended can produce a
+great deal of plausible output. **Nearly every methodological rule in this
+thesis exists because an autonomous worker needs to be stopped from
+convincing itself.** The measured thresholds, the positive controls carried
+through every stage, the negative controls that must fire, the reports
+rendered from tables rather than written, and the claims ledger that re-reads
+every number are all answers to the same question: how does anyone, including
+the agent, tell whether what it just produced is true?
+
+Chapter 16 describes the whole arrangement in detail, covering how the work
+was organised into tasks, how the literature was surveyed and audited, how the
+decisions about what to download and what to measure were made, how the
+analyses ran, and how the results, the figures and these documents were
+produced.

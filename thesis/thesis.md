@@ -105,7 +105,7 @@ one part of it the ryanodine receptors do not share. Chapter 13 audits the
 archive. Chapter 14 is the methods, written as argument rather than as
 procedure, and it carries the project's decision log and its constructed
 negative controls. Chapter 15 discusses what the whole says and what it does
-not.
+not, and Chapter 16 describes how the project itself was carried out.
 
 ## What is checked in this document, and by what
 
@@ -123,6 +123,37 @@ non-zero on a missing figure, a missing chapter, a cited key with no reference
 row, a reference added without an audit, a glyph the document font cannot set,
 or a failed claim. Every one of those guards is broken on purpose on every
 build to confirm that it fires. Chapter 14 explains how.
+
+## How this project was carried out
+
+This project was carried out by Claude Code, which is Anthropic's Claude
+running as an agent in a terminal with access to the file system, the shell
+and the network. Claude Code wrote every line of the analysis software, chose
+and calibrated every threshold, ran every search, generated every table and
+figure, recorded every methodological decision, and wrote this document and
+the paper that accompanies it.
+
+The human collaborator set the goal, provided the machine and the storage,
+ran the small number of commands that need an interactive login, and read and
+corrected the drafts. He did not write the code, select the genomes, choose
+the statistical tests or draft the text.
+
+That division of labour is unusual enough to be worth describing rather than
+leaving for a reader to infer, and it is also relevant to how the work should
+be judged, because an agent that can run for hours unattended can produce a
+great deal of plausible output. **Nearly every methodological rule in this
+thesis exists because an autonomous worker needs to be stopped from
+convincing itself.** The measured thresholds, the positive controls carried
+through every stage, the negative controls that must fire, the reports
+rendered from tables rather than written, and the claims ledger that re-reads
+every number are all answers to the same question: how does anyone, including
+the agent, tell whether what it just produced is true?
+
+Chapter 16 describes the whole arrangement in detail, covering how the work
+was organised into tasks, how the literature was surveyed and audited, how the
+decisions about what to download and what to measure were made, how the
+analyses ran, and how the results, the figures and these documents were
+produced.
 
 ---
 
@@ -358,7 +389,9 @@ constraint onto the channel and asks whether it explains the clinical
 variants. Chapter 12 takes the one part of the receptor the ryanodine
 receptors do not share. Chapter 13 audits the archive. Chapter 14 sets out the
 methods as the argument behind each instrument rather than as a procedure, and
-Chapter 15 discusses what the whole says.
+Chapter 15 discusses what the whole says. Chapter 16 describes how the project
+itself was carried out, which is a question about the work rather than about
+the receptor and is answered separately for that reason.
 
 ---
 
@@ -6074,6 +6107,409 @@ diagnostic domain, sits in every genome in triplicate at twice the length, and
 is returned by every query. Half the rules in this thesis exist because of the
 ryanodine receptors, and the other half exist because 309 genomes contain
 enough broken assemblies to manufacture any answer somebody wants.
+
+---
+
+# 16. How this project was carried out with Claude Code
+
+## 16.1 What Claude Code did, and what it did not
+
+This project was carried out by Claude Code, which is Anthropic's Claude
+running as an agent in a terminal with access to the file system, the shell
+and the network. It reads and writes files, runs commands, inspects their
+output, and decides what to do next.
+
+**Claude Code did the following.** It designed the project plan and wrote it
+down as a task ledger with dependencies. It wrote all 372 Python files under
+`scripts/`, which run to over a hundred thousand lines, together with the
+9,243 lines of the search application under `src/`. It audited the literature the project started from,
+claim by claim, against primary sources. It decided which genomes and
+proteomes to download, wrote the manifests that declare them, and fetched
+624 GB of assemblies and 60 GB of proteomes. It chose every threshold in the
+work and, in most cases, measured it rather than choosing it. It ran every
+search, alignment, tree, selection test and structural comparison. It produced
+all 444 committed result tables and all 111 committed figures. It recorded 83
+numbered methodological decisions as it made them. And it wrote the literature
+review, the manuscript, this thesis and every one of the 28 rendered task
+reports that stand behind them, which together run to 109,250 words.
+
+Every figure in that list is measured rather than recalled. The build
+re-derives them from the repository on every run and commits them as
+`thesis/production_stats.tsv`, so they move as the project does and this
+chapter cannot describe a repository that no longer exists.
+
+**The human collaborator did the following.** He stated the goal, which was a
+publication-grade genome-scale census of one gene family. He provided the
+machine, the external storage and the network access. He ran the small number
+of commands that require an interactive login or elevated privileges. He read
+the drafts and corrected them, including two corrections to this document that
+are recorded in the decisions log. And at the start of each working session he
+said, in effect, continue.
+
+He did not write the code, choose the genomes, select the statistical tests,
+set the thresholds or draft the text.
+
+**What follows is a description of that arrangement rather than a defence of
+it.** An agent that runs for hours unattended can produce a great deal of
+plausible output, and the interesting question is not whether it can but how
+anybody, including the agent, can tell whether the output is true. Almost
+every methodological rule in this thesis is an answer to that question, and
+§16.9 sets out what the answer looks like in practice.
+
+## 16.2 The work was organised as a ledger of one-task sessions
+
+The organising artefact is a single file, `PUBLICATION_ROADMAP.md`, which
+Claude Code wrote in the first session and has amended in every session since.
+It contains four things: a statement of the goal and how the claim is scoped;
+a session protocol; a task ledger; and a decisions log.
+
+**The session protocol is a fixed procedure that starts and ends every working
+session.** At the start it opens a progress dashboard, pulls the repository,
+verifies that the external storage is attached and stops if it is not, then
+picks exactly one task, which is the single row already in progress, or
+otherwise the topmost pending row whose dependencies are all complete. It
+announces that task and works only that task until its completion criteria
+pass. At the end it updates the ledger and the results column, appends to the
+session log, appends a plain-language entry to a findings document, refreshes
+the repository's README, commits and pushes.
+
+That protocol exists because of a specific failure mode. An agent with a long
+list of things to do will do several of them partially, and a project of this
+size dies of half-finished tasks rather than of hard ones. **Working one task
+to its stated completion criteria, and splitting a task in the ledger when it
+proves too large, is the rule that kept it finishable.** Several tasks were
+split this way, and each split is visible in the ledger as two rows with the
+reason recorded.
+
+**The ledger is 35 tasks, of which 33 are complete.** Each row carries the
+task, its dependencies, its status with a date, and a results column holding
+the load-bearing numbers and the paths they came from. The two incomplete rows
+are the human-gated deposit, which needs a person to create a public archive
+record, and the paper series, which is the next task.
+
+Alongside the ledger, a briefs document holds a detailed specification for
+every row: the goal, the steps, the completion criteria, the outputs, and, for
+the later rows, what would make that task a failure. Claude Code wrote those
+briefs in advance of doing the work, which matters because a brief written
+after the fact describes what happened rather than what was intended.
+
+**35 sessions were logged across 9 working days**, the first on 2026-08-18 and
+the most recent on 2026-09-09. The session log is a running technical record
+of what ran, what resulted and what is next. It is written for the next
+session rather than for a reader, and it is the mechanism by which an agent
+with no memory between sessions resumes work that is already in progress.
+
+## 16.3 The literature was surveyed and then audited claim by claim
+
+The first substantive task was not a search. It was to write down what the
+project was taking as known, and then to check it.
+
+Claude Code assembled a background document in which every statement carries a
+tag: `[db]` if it can be re-derived from a database with a stated query,
+`[lit]` if it rests on a published source, and `[open]` if it is a question
+the project answers. It then extracted nineteen atomic claims from the
+`[lit]`-tagged statements and checked each against its primary sources,
+and re-queried every `[db]` number against the live database it came from.
+
+Chapter 2 reports the outcome. Twelve claims were verified, three were
+qualified, two were corrected and one was demoted to an open question. The
+demoted one mattered most: the background asserted that the IP₃ and ryanodine
+receptor families had independently expanded to three paralogues each, no
+primary source establishes it, and leaving it in place would have made three
+later chapters into a confirmation of something already assumed.
+
+**Claude Code then wrote a full literature review**, running to 137 references
+and twelve generated figures, as a separate document. That review is not
+decoration. It is where the project's claim about what is already known lives,
+and it is built by a script from numbered source files with citations resolved
+against one reference table, so its text and its bibliography cannot drift
+apart.
+
+Two habits from that stage run through everything after it. **A number is
+quoted with the query that produces it**, and **a claim is tagged by how far
+it can be trusted**, so that a later chapter can tell the difference between a
+fact it inherited and a fact it measured.
+
+## 16.4 What to download was decided by rule and committed as a manifest
+
+The project needed 503 genome assemblies and 7,691 reference proteomes. Which
+ones was not a judgement call, because a judgement call cannot be audited.
+
+**The denominator is declared before the search runs, and it is derived from
+the data rather than hand-listed.** For the vertebrate scope, Claude Code
+wrote two rules: one best assembly per vertebrate order, ranked by a stated
+function, and a margin rule with four positive tests that reads the census to
+find species whose protein records are missing, fragmentary or absent. The
+union is 309 genomes. For the non-vertebrate scope it wrote five rules under
+one principle, which is to sample most finely where the negative claim is, and
+one of those rules re-derives its own target list from a committed presence
+table. That rule found three absences the earlier summary had never named,
+including a metazoan clade with no record at all.
+
+**Both manifests are committed tables with a reason column on every row**, so
+the scope rebuilds itself if the census changes, and a reader can see why any
+given genome is in the study.
+
+The downloads themselves were run by a script Claude Code wrote for the
+purpose, which verifies every archive against its published checksums,
+retries download, extraction and verification together because a truncated
+archive surfaces as a checksum failure rather than a download error, and can
+operate in a fetch, search and purge cycle so that a 624 GB scope can be
+processed at one genome of peak storage.
+
+## 16.5 What to analyse was decided by a menu written before the analyses ran
+
+Between building the search and running the analyses, Claude Code wrote a
+document listing what the harvested data could answer. Each entry names its
+inputs, its method, its deliverable and the caveat that would invalidate it,
+and the entries became ledger rows.
+
+Writing that menu before doing the work is the difference between a study and
+a fishing expedition. **An analysis chosen after seeing the data is chosen
+partly because of what the data shows**, and the menu is the record that these
+were not.
+
+The menu is also where the project's scope discipline is visible. Several
+entries were written and then answered as underpowered rather than dropped,
+because a measurement that did not reach its question is a result about the
+evidence and an omission is indistinguishable from a section nobody ran.
+
+## 16.6 The analyses ran unattended, and each one is a driver with stages
+
+Every analysis task is a set of small modules and one driver script with
+ordered, resumable stages. The pattern is the same throughout: a driver with
+`--only` and `--from` flags, stages that are individually re-runnable, a
+negative-control suite that runs before anything is written and refuses the
+build if it fails, and a report and figures rendered at the end from the
+tables the stages committed.
+
+**Three properties made unattended operation possible.**
+
+Stages are resumable, so a run that is interrupted resumes at the stage that
+failed rather than from the beginning. The genome sweep is resumable per
+genome, and the selection suite is resumable per job.
+
+**A failed stage does not stop the stages after it that do not depend on it**,
+and the report marks an unfinished section as unfinished. Waking up to a
+partial analysis that says which parts are partial is worth more than waking
+up to nothing.
+
+And expensive work is cached at the level that makes a re-run cheap, with the
+rule that **a cache may hold what a parser found and never what a rule
+decided**, so that changing a rule invalidates the verdicts without
+invalidating the parse.
+
+The largest single run was the selection suite, which ran for 22.7 hours
+unattended. The genome sweep processed 309 vertebrate assemblies and then 194
+non-vertebrate ones. **15.2 compute-hours are recorded across the eight search
+channels**, measured on clean recomputes rather than on cached re-runs,
+because a cached run makes a budget look free.
+
+During long runs the drivers write a small progress file that a dashboard
+reads, so the human collaborator could see what was happening without
+interrupting it.
+
+## 16.7 Thresholds were measured rather than chosen, which is where the agent's judgement went
+
+The part of this project that most needed judgement was not which analysis to
+run. It was where to put each threshold, and the answer Claude Code arrived at
+early and applied throughout is that **a threshold should be measured against
+a population the threshold has not already filtered, and reported with its
+separation**.
+
+Chapter 14 sets out the rules in full. What is worth saying here is that this
+is where the agent's own reasoning is most visible, and it is visible because
+it was written down at the time. **83 numbered decisions** are recorded in the
+roadmap, each with the incident that produced it. Several changed an answer.
+An attribution margin inherited from a sister project was measured and
+overturned, because it came from a family whose paralogues are half as similar
+to each other as this one's. An intron-length parameter was measured across
+eleven species because it is not a performance setting but a threshold on
+whether a gene reads as a fragment. A calibration refused to separate its two
+populations and sent a chapter back to find the contamination in its decoy.
+
+**The decisions log is also where the agent recorded being wrong.** A kill
+criterion written for the project's central hazard turned out to have a
+sensitivity of zero when it was finally scored. A duplication detector reached
+a specificity of 0.16 before it was scoped correctly. A self-test overwrote
+the committed table it was testing. Each is in the log with the fix and the
+rule that generalises it.
+
+---
+
+## 16.8 Results, tables and figures are generated, and nothing is typed twice
+
+Every number this project reports lives in one of 444 committed result
+tables, and every
+document that quotes one reads it from there. That rule has three parts, and
+Claude Code applied all three from the first analysis onward.
+
+**Reports are rendered from the committed tables rather than written beside
+them.** All 28 task reports are generated by a script from the tables in their
+own directory. None contains a hand-written number. That is why a text search
+against a report is a legitimate check in the claims ledger: the report cannot
+contain a number its tables do not.
+
+**Headlines are chosen by the data.** Where a task tests a prediction an
+earlier task made, the prior is stated in code together with where it was
+said, the new statistic is computed, and the verdict is rendered from the
+comparison, with both numbers printed either way. A report generator written
+to narrate the expected answer would print it whatever the data said. Several
+reports consequently say that an earlier task's finding was not corroborated,
+and one says that the task's own premise was wrong.
+
+**Figures are drawn only from committed tables, by one style module, at the
+width they will be printed at.** There are 111 committed figures. A single
+module holds the page geometry, the validated palette and a save function that
+refuses to write a figure whose layout runs off the canvas or whose text needs
+a glyph the font lacks. Figures are never re-plotted downstream: the paper and
+this thesis copy the file the analysis committed, and record its checksum.
+
+Several figure decisions are recorded because they are substantive rather than
+cosmetic. A contiguity panel bins on the threshold rather than across it,
+because a sliding window straddling the bar reports a value no genome in it
+has. An exon track draws exons at true genomic width and never widens them to
+be visible, because widening them would draw a gene whose coding fraction
+looks like 40 % when it is 15 %. A saturation panel is drawn on log-log axes,
+because on a log-linear plot the neutral diagonal is not a line and the first
+draft left the saturation bar as the only line on the figure, which reads as
+neutrality.
+
+**One check on figures cannot be automated, and Claude Code did it by hand.**
+Every main and supplementary figure was opened and read against its own
+legend, which found 26 discrepancies of the kind a table check cannot see: a
+key describing two colours where the figure draws four, a legend naming the
+wrong class as the largest, a bold panel letter with no second panel. Sixteen
+legends and ten figures were corrected, and each finding is recorded as a row
+of data with the table the correction was re-derived from. The mechanical half
+of that inspection now runs on every build.
+
+## 16.9 The final documents are built by script, and every guard is broken on purpose
+
+Three documents are produced from the same committed evidence: a
+137-reference literature review, a manuscript, and this thesis.
+
+**Each is assembled by a driver with ordered stages, and each exits non-zero
+on a defect rather than producing a document with a hole in it.** The
+manuscript's build collects figures, re-verifies its numbers, stitches its
+sections, typesets and builds a deposit manifest. The thesis's build adds
+three stages of its own: it commits the chapter grouping and fails if a
+results directory is neither assigned nor explicitly excluded, it derives the
+negative-control inventory by parsing the test modules, and it measures the
+repository to produce the statistics this chapter quotes.
+
+**Citations are keys resolved at build time and the bibliography is rendered
+rather than typed.** No author, title, year or journal appears in any source
+file of any of the three documents. A cited key with no reference row is a
+build error.
+
+**Every load-bearing number is declared with the table it comes from and the
+operation that recovers it.** The manuscript declares 276 and this thesis
+declares 220, through one shared engine so that a number quoted in both is
+recovered once and cannot disagree between them. The thesis adds a second
+condition: a declared number must also appear in the chapter that declares it,
+which is what stops a ledger being padded with checks the text never makes.
+
+**Every guard in the thesis build is broken on purpose on every build.** A
+suite runs first, in a sandboxed copy, breaking each of the fifteen guards in
+turn and requiring each to fire with the message it is supposed to, and then
+verifying that it altered no committed file. That last condition exists
+because an earlier self-test in this project overwrote the committed table it
+was testing, after which a report read two runs where there were seven and
+nothing failed.
+
+**The bibliography is audited on entry, and the audit caught nine references
+in fifty-eight.** Nothing bibliographic is typed: a new reference is declared
+by an identifier and a phrase its title must carry, resolved against a live
+record, and written from what comes back. Nine identifiers written from
+memory resolved to entirely different papers, each of which would have looked
+completely normal in a reference list. This is the clearest single example in
+the project of a check catching the agent rather than the data.
+
+## 16.10 What the human collaborator contributed
+
+The division of labour is worth stating precisely, because "written by an
+agent" is easy to overstate in either direction.
+
+**The goal and the standard came from the human.** The instruction was a
+publication-grade census of one gene family, to the evidence standard of a
+molecular-evolution journal, with an exhaustive search space, a completeness
+argument, support values, synteny-backed orthology, model-based selection
+tests, molecular validation of every annotation-error claim, and one-command
+reproducibility. That specification shaped everything.
+
+**The infrastructure came from the human**: the machine, the external drive
+that holds 700 GB of bulk data, the network access, and the credentials for
+the interactive logins that an agent cannot perform.
+
+**Continuation came from the human.** Each session began with an instruction
+to continue. The agent chose the task, but a person decided that there would
+be a session.
+
+**Correction came from the human, and it mattered.** The literature review was
+expanded to a full illustrated document at his request, outside the ledger.
+The prose of this thesis was rewritten after he read it and reported that
+sentence fragments and overused dashes made it confusing, which produced two
+recorded decisions and a full rewrite of all 27 chapter files. The title and
+the authorship of this document were corrected the same way.
+
+**And every commit carries both.** Every commit on the main branch is
+authored by the human collaborator and carries a co-author trailer naming
+Claude, which is an accurate record of how they were made: the agent wrote the
+change and the message, and the human's account and machine committed it.
+
+## 16.11 What this arrangement is good at, and where it needs watching
+
+Three things this way of working did well.
+
+**It sustained a long, dependency-ordered plan.** 35 tasks with declared
+dependencies, worked one at a time to stated completion criteria across 35
+sessions, with the ledger and the session log carrying the state between them.
+An agent with no memory between sessions can do this only if the state lives
+in the repository, and the protocol is what puts it there.
+
+**It made the methodology explicit.** 83 numbered decisions with the incident
+that produced each is a level of methodological record-keeping that is
+uncommon in a paper, and it exists because the agent had to write down why it
+did something in order to be able to follow the same rule three weeks later.
+
+That count is itself an example of the arrangement working. Writing this
+chapter added a decision to the log, the build re-measured the repository, and
+the claims ledger failed with the message that the chapter said 82 where the
+log now held 83. The number in the sentence you are reading was corrected
+because a check refused the document, which is the whole of what §16.9
+describes, applied to the chapter that describes it.
+
+**It made checking cheap enough to do everywhere.** 437 constructed negative
+controls, 496 declared claims across two documents, guards that are broken on
+every build, and reports that cannot contain a number their tables do not.
+Each of those is tedious for a person and almost free for an agent, so they
+were applied uniformly rather than where somebody remembered.
+
+Three things that need watching, stated because they are the risks of the
+arrangement rather than incidental faults.
+
+**A fluent agent produces plausible prose about work it has not checked.** The
+reference audit is the clearest case: nine of fifty-eight citations were
+confidently wrong, and no amount of care in the writing would have caught them.
+The only thing that caught them was a check that resolved each identifier
+against a live record. **The general lesson is that an agent's confidence is
+not evidence, and the fix is a mechanical check rather than more care.**
+
+**A rule that fires on nothing looks exactly like a rule that cannot fire.**
+Several of this project's results are zeros, and an agent generating both the
+rule and the result has an obvious way to produce a satisfying zero by
+accident. Every such zero here has a constructed control that builds the case
+the rule is supposed to catch and requires it caught, and that is the only
+thing that makes the zero a measurement.
+
+**Style rules are applied where somebody notices unless they are checked.**
+The first prose pass through this thesis fixed the confusing headings and
+removed every long dash, and a systematic check afterwards found thirty more
+headings with no verb and fifteen fragmentary paragraph openings. The rule
+that came out of it is the same one the science follows: **a pass that has not
+been checked mechanically is a pass that fixed the instances somebody happened
+to see.**
 
 ---
 

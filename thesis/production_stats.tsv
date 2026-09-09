@@ -1,0 +1,17 @@
+metric	value	unit	what_it_counts	source
+sessions_logged	35	sessions	dated entries in the session log, one per working session	SESSION_LOG.md
+session_days	9	days	calendar days on which at least one session ran	SESSION_LOG.md
+first_session	2026-08-18	date	the first logged session	SESSION_LOG.md
+last_session	2026-09-09	date	the most recent logged session	SESSION_LOG.md
+ledger_tasks	35	tasks	rows in the task ledger	PUBLICATION_ROADMAP.md
+ledger_completed	33	tasks	ledger rows marked completed	PUBLICATION_ROADMAP.md
+decisions_recorded	83	decisions	distinct numbered entries in the decisions log	PUBLICATION_ROADMAP.md
+analysis_scripts	372	files	Python files under scripts/, all version-controlled	scripts/
+analysis_script_lines	102324	lines	total lines across those files	scripts/
+application_lines	9243	lines	total lines of the search application under src/	src/
+committed_result_tables	444	files	version-controlled TSV tables under results/, which excludes the thesis's own generated tables	git ls-files
+committed_figures	111	files	version-controlled figure PNGs in results and review directories	git ls-files
+task_reports	28	files	rendered per-task reports, none hand-written	results/*/report.md
+task_report_words	109250	words	total words across those reports	results/*/report.md
+commits	81	commits	commits on the main branch	git rev-list
+commits_coauthored	81	commits	commits carrying the Claude co-author trailer	git log

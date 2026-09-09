@@ -218,4 +218,16 @@ T66	ch14	the manuscript ledger carries 276 declarations	276	276	ok		manuscript/c
 T68	appendix-E	15 build guards are broken on purpose and all fire	15	15	ok		thesis/guard_check.tsv	count
 T69	appendix-E	the thesis places 103 figures	103	103	ok		thesis/figure_manifest.tsv	count
 T70	appendix-E	37 results directories are assigned to a chapter	37	37	ok		thesis/chapter_assignment.tsv	count
+T71	ch16	35 sessions are logged	35	35	ok		thesis/production_stats.tsv	cell
+T72	ch16	they ran across 9 working days	9	9	ok		thesis/production_stats.tsv	cell
+T73	ch16	the ledger holds 35 tasks	35	35	ok		thesis/production_stats.tsv	cell
+T74	ch16	33 of them are complete	33	33	ok		thesis/production_stats.tsv	cell
+T75	ch16	83 methodological decisions are recorded	83	83	ok		thesis/production_stats.tsv	cell
+T76	ch16	372 analysis scripts were written	372	372	ok		thesis/production_stats.tsv	cell
+T77	ch16	the search application is 9,243 lines	9243	9243	ok		thesis/production_stats.tsv	cell
+T78	ch16	444 result tables are committed	444	444	ok		thesis/production_stats.tsv	cell
+T79	ch16	111 figures are committed	111	111	ok		thesis/production_stats.tsv	cell
+T80	ch16	28 task reports are rendered	28	28	ok		thesis/production_stats.tsv	cell
+T81	ch16	those reports run to 109,250 words	109250	109250	ok		thesis/production_stats.tsv	cell
+T82	ch16	the first session ran on 2026-08-18	2026-08-18	2026-08-18	ok		thesis/production_stats.tsv	cell
 T67	appendix-B	the control inventory is derived from 19 modules	19	19	ok		thesis/control_inventory.tsv	nunique

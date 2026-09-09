@@ -30,8 +30,10 @@ import s25_lib as L
 FIELDS = ["results_entry", "chapter", "chapter_title", "rule", "rule_text",
           "what_it_is", "why_not_elsewhere"]
 
-#: Chapters that are primary for no results directory by design.
-EXPOSITION_CHAPTERS = {1, 15}
+#: Chapters that are primary for no results directory by design:
+#: the introduction, the general discussion, and the chapter on how
+#: the project itself was carried out.
+EXPOSITION_CHAPTERS = {1, 15, 16}
 
 
 def build() -> tuple[list[dict], list[str]]:
