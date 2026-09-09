@@ -1,0 +1,576 @@
+{
+ "task": "S21",
+ "rules": {
+  "A1": "the locus is one of S16's committed gene copies (is_copy)",
+  "A2": "the contig spans the gene (D4)",
+  "A3": "the model covers >= 0.9 of its bait",
+  "A4": "the bait reaches a usable alignment frame"
+ },
+ "parameters": {
+  "COV_ARCH": 0.9,
+  "COV_BARS": [
+   0.5,
+   0.7,
+   0.8,
+   0.9,
+   0.95,
+   0.98
+  ],
+  "MIN_INTRON_FALLBACK": 30,
+  "min_intron_bp_used": 10,
+  "SPLICEABLE_BAR": 0.5,
+  "MIN_GAPS": 200,
+  "MIN_BAIT_ON_REF": 0.7,
+  "FRAME_ACC": {
+   "ITPR1": "Q14643",
+   "ITPR2": "Q14571",
+   "ITPR3": "Q14573",
+   "RYR": "Q92736"
+  },
+  "TOLERANCES": [
+   0,
+   1,
+   2
+  ],
+  "N_PERM": 1000,
+  "SEED": 20260908,
+  "PREVALENCE_BARS": [
+   0.5,
+   0.9,
+   0.99
+  ],
+  "EDGE_TOL": 2,
+  "TARGET_STATES": [
+   "split",
+   "fragmentary"
+  ],
+  "MIN_ALN_COV": 0.3,
+  "Q_OVERLAP": 0.5,
+  "TANDEM_GAP_BP": 1000000
+ },
+ "self_test": "pass",
+ "n_negative_controls": 21,
+ "mutation_tests": {
+  "n": 6,
+  "caught": 6,
+  "breakages": [
+   "s21_blocks.next_phase returns the wrong codon complement (T6)",
+   "s21_architecture.intron_phase not inverted (T7)",
+   "s21_blocks.gap_bp drops the strand branch (T3)",
+   "s21_introns.shared_pair ignores phase (T13)",
+   "s21_tandem.detect drops the cell attribution (T16)",
+   "s21_blocks.read_models keys on the raw miniprot id (T1)"
+  ]
+ },
+ "sha256": {
+  "architecture_loci.tsv": "bb85ab9e2b4a126240ead72c21f0ba8142ab982b06a4d314404a455fb553361c",
+  "architecture_by_paralog.tsv": "b484d1055e67d9543b859cb1d21a9f356e5828d6908c5efe42981b69e1d6f293",
+  "architecture_by_class.tsv": "593d9483d8d09e7b332008c976452248cac7f610d937af6d1f2f7265724eb85d",
+  "architecture_sensitivity.tsv": "81415d2315b510d41a72dc7203618ac87dd74764763bdc7c0fc75da9b7ae36c7",
+  "paired_comparisons.tsv": "16d404c7dfa520c823b49dfca371be503a39434804d335de2aaf3a3c0bc3757d",
+  "intron_positions.tsv": "cfb80762cfbf491634b12bbfc8758d59f729ed462215c750a96449f2b4c4c3e5",
+  "intron_conservation.tsv": "6c3c16c765965aa9b069d3535549124833b97125cd375370cb6e1970e1a4ac76",
+  "intron_conservation_summary.tsv": "8a8ac30485bc2580508444257ce53e0db52a3cbb3b3ddcae81c84f4014192c78",
+  "shared_introns.tsv": "d454a2cb613c417ef5a20863e25fd8aad66f729bfcf2745ac5ec6f800ce1afe4",
+  "shared_intron_summary.tsv": "3a52531954a72cad2bdd8b0b53669e5fef4c0ddecaff823194776ba780117968",
+  "intron_floor_calibration.tsv": "1fb16ab9f25c08bb3ac565ecbefa498bddcd92ec2af72ad32c95de40b31c6cbf",
+  "junction_gap_bins.tsv": "6748a07887ab8d2ab92de53228d06458aefe0029afe0f9010015c5d4de2f767b",
+  "frame_map.tsv": "03cb8314fba36cc34dc49b392ddab364b3c0af926a1fa5da1c8d4994cb166ff7",
+  "frame_anchors.tsv": "6d40663deeb0b1520c11ae69a582904472925822fc9fa93cf57b049bf8858326",
+  "junction_quality.tsv": "fcc7f028b8978d98e4a7f495a6b79f53ac38a3f59be655d277711927c58bda6b",
+  "boundary_concordance.tsv": "42a6e0eb453c7d7292c7a0e46d9f4f20a6d3e0edfa649e0c09dd4f4810259eb9",
+  "boundary_concordance_summary.tsv": "7f924db7be21055a099a7c5b8d6098c1a4cbc2f8eab0447f2711d021da00697f",
+  "fragment_termini.tsv": "4d3d6ffa04008e4d29575c17bd072fbcf6254cba9ef37dae7b1eda9f28bf6cc5",
+  "fragment_verdicts.tsv": "335fe20fa4ce9901fec7dab3dcae1f34f05f04759f87c256d795cc19cde64d45",
+  "fragment_summary.tsv": "9d3205d52d771bd287022f312160ab7c7ac10a2c5cca2f32a0a5cbee9fd0994e",
+  "tandem_pairs.tsv": "ddbda7205d634caf3eba1d32f32b8d0e90bef8bba48a1b8c50a13d7a801adbe0",
+  "tandem_by_class.tsv": "9d3748f485945240c1891d85309d05043cb914ce1ab37a386a3a6045b7829dac",
+  "tandem_control.tsv": "37990ab3545985917384bc8f22922ad070d3eddbfcddc41acce46d7b61380cfb",
+  "tandem_teleost_check.tsv": "eb3d340bd9938315399246f19a6fa94be3f5415ff25581dfe8499cd87a6806ec"
+ },
+ "headline": {
+  "n_loci_measured": 2146,
+  "n_in_scope": 1378,
+  "n_genomes_in_scope": 189,
+  "excluded_by": {
+   "A1_not_a_gene_copy": 303,
+   "A2_contig_cannot_span_the_gene": 448,
+   "A0_cell_vertebrate_basal": 2,
+   "A3_coverage_below_0.9": 15
+  },
+  "n_merges_total": 0,
+  "by_paralog": {
+   "ITPR1": {
+    "n_loci": 267,
+    "n_genomes": 188,
+    "exons": 58.0,
+    "exons_p10": 57.6,
+    "exons_p90": 62.0,
+    "exons_min": 43.0,
+    "exons_max": 63.0,
+    "cds_bp": 8250.0,
+    "span_bp": 147445.0,
+    "median_intron_bp": 909.0,
+    "max_intron_bp": 20438.0,
+    "mean_exon_bp": 141.4
+   },
+   "ITPR2": {
+    "n_loci": 190,
+    "n_genomes": 184,
+    "exons": 57.0,
+    "exons_p10": 56.0,
+    "exons_p90": 57.0,
+    "exons_min": 42.0,
+    "exons_max": 58.0,
+    "cds_bp": 8100.0,
+    "span_bp": 243700.0,
+    "median_intron_bp": 1570.5,
+    "max_intron_bp": 36306.0,
+    "mean_exon_bp": 142.2
+   },
+   "ITPR3": {
+    "n_loci": 187,
+    "n_genomes": 183,
+    "exons": 58.0,
+    "exons_p10": 57.0,
+    "exons_p90": 60.0,
+    "exons_min": 44.0,
+    "exons_max": 61.0,
+    "cds_bp": 8008.0,
+    "span_bp": 58175.0,
+    "median_intron_bp": 357.0,
+    "max_intron_bp": 9736.0,
+    "mean_exon_bp": 137.8
+   },
+   "RYR": {
+    "n_loci": 734,
+    "n_genomes": 189,
+    "exons": 104.0,
+    "exons_p10": 101.0,
+    "exons_p90": 106.0,
+    "exons_min": 71.0,
+    "exons_max": 117.0,
+    "cds_bp": 14910.0,
+    "span_bp": 142389.0,
+    "median_intron_bp": 564.8,
+    "max_intron_bp": 20557.0,
+    "mean_exon_bp": 144.5
+   }
+  },
+  "span_fold_range": 4.19,
+  "exon_count_range": [
+   57.0,
+   58.0
+  ],
+  "junctions": {
+   "n": 112254,
+   "frac_spliceable": 0.99887,
+   "frac_canonical": 0.98965,
+   "frac_frame_step": 0.00779,
+   "min_gap_bp": 10
+  },
+  "intron_floor": {
+   "floor_bp": 10,
+   "separated": 0,
+   "n_gaps": 149148,
+   "n_non_spliceable": 0,
+   "smallest_gap_bp": 10,
+   "derivation": "smallest gap the genome calls spliceable \u2014 no sub-intron population to exclude"
+  },
+  "conservation": {
+   "ITPR1": {
+    "n_loci": 188,
+    "positions_seen": 185,
+    "at_50pc": 58,
+    "at_90pc": 49,
+    "at_99pc": 26,
+    "median_per_locus": 57.6
+   },
+   "ITPR2": {
+    "n_loci": 184,
+    "positions_seen": 175,
+    "at_50pc": 55,
+    "at_90pc": 48,
+    "at_99pc": 35,
+    "median_per_locus": 55.1
+   },
+   "ITPR3": {
+    "n_loci": 183,
+    "positions_seen": 179,
+    "at_50pc": 55,
+    "at_90pc": 48,
+    "at_99pc": 26,
+    "median_per_locus": 56.8
+   },
+   "RYR": {
+    "n_loci": 189,
+    "positions_seen": 328,
+    "at_50pc": 100,
+    "at_90pc": 91,
+    "at_99pc": 60,
+    "median_per_locus": 101.2
+   }
+  },
+  "shared": {
+   "ITPR1|ITPR2": {
+    "n_genomes": 183,
+    "median_observed": 48.0,
+    "median_expected": 0.55,
+    "enrichment": 87.648,
+    "n_significant": 183,
+    "q_worst": 0.0
+   },
+   "ITPR1|ITPR3": {
+    "n_genomes": 182,
+    "median_observed": 46.0,
+    "median_expected": 0.55,
+    "enrichment": 85.616,
+    "n_significant": 182,
+    "q_worst": 0.0
+   },
+   "ITPR1|RYR": {
+    "n_genomes": 188,
+    "median_observed": 1.0,
+    "median_expected": 0.46,
+    "enrichment": 2.144,
+    "n_significant": 0,
+    "q_worst": 1.0
+   },
+   "ITPR2|ITPR3": {
+    "n_genomes": 181,
+    "median_observed": 49.0,
+    "median_expected": 0.55,
+    "enrichment": 88.434,
+    "n_significant": 181,
+    "q_worst": 0.0
+   },
+   "ITPR2|RYR": {
+    "n_genomes": 184,
+    "median_observed": 1.0,
+    "median_expected": 0.43,
+    "enrichment": 2.283,
+    "n_significant": 0,
+    "q_worst": 1.0
+   },
+   "ITPR3|RYR": {
+    "n_genomes": 183,
+    "median_observed": 1.0,
+    "median_expected": 0.44,
+    "enrichment": 2.236,
+    "n_significant": 0,
+    "q_worst": 1.0
+   }
+  },
+  "concordance": {
+   "n_edges": 188146,
+   "n_loci": 1171,
+   "n_genomes": 164,
+   "frac_exact": 0.9445,
+   "by_source": {
+    "GenBank": 0.9109,
+    "RefSeq": 0.9493
+   },
+   "by_cell": {
+    "ITPR1": 0.9382,
+    "ITPR2": 0.9572,
+    "ITPR3": 0.9645,
+    "RYR": 0.9412
+   }
+  },
+  "fragments": {
+   "state": "all",
+   "n_loci": 291,
+   "n_genomes": 87,
+   "annotation_failure": 228,
+   "broken_at_real_junctions": 3,
+   "mixed": 14,
+   "structure_disagreement": 46,
+   "internal_termini": 1448,
+   "termini_at_exon_boundary": 689,
+   "termini_mid_exon": 406,
+   "termini_in_intron": 353,
+   "termini_splice_ok": 591,
+   "frac_termini_at_boundary": 0.4758,
+   "frac_termini_splice_ok": 0.4081
+  },
+  "fragments_by_state": {
+   "split": {
+    "n_loci": "27",
+    "n_genomes": "15",
+    "annotation_failure": "20",
+    "broken_at_real_junctions": "1",
+    "mixed": "0",
+    "structure_disagreement": "6",
+    "internal_termini": "184",
+    "termini_at_exon_boundary": "40",
+    "termini_mid_exon": "66",
+    "termini_in_intron": "78",
+    "termini_splice_ok": "61",
+    "frac_termini_at_boundary": "0.2174",
+    "frac_termini_splice_ok": "0.3315"
+   },
+   "fragmentary": {
+    "n_loci": "264",
+    "n_genomes": "83",
+    "annotation_failure": "208",
+    "broken_at_real_junctions": "2",
+    "mixed": "14",
+    "structure_disagreement": "40",
+    "internal_termini": "1264",
+    "termini_at_exon_boundary": "649",
+    "termini_mid_exon": "340",
+    "termini_in_intron": "275",
+    "termini_splice_ok": "530",
+    "frac_termini_at_boundary": "0.5134",
+    "frac_termini_splice_ok": "0.4193"
+   }
+  },
+  "tandem_control": {
+   "sensitivity": 0.9971,
+   "specificity": 0.9765,
+   "n_cells": 1236,
+   "tp": 342,
+   "fn": 1,
+   "fp": 21,
+   "tn": 872
+  },
+  "tandem_classes": {
+   "tandem|all": 63,
+   "tandem|ITPR1": 29,
+   "tandem|ITPR2": 26,
+   "tandem|RYR": 8,
+   "dispersed|all": 9403,
+   "dispersed|ITPR1": 2454,
+   "dispersed|ITPR2": 72,
+   "dispersed|ITPR3": 106,
+   "dispersed|RYR": 6771
+  },
+  "n_within_locus_pairs": 0,
+  "teleost_agreement": {
+   "n": 267,
+   "agree": 261
+  },
+  "paired": {
+   "ITPR1|ITPR2|n_exons": {
+    "n": 183,
+    "median_diff": 3.0,
+    "q": 0.0
+   },
+   "ITPR1|ITPR2|cds_bp": {
+    "n": 183,
+    "median_diff": 171.0,
+    "q": 0.0
+   },
+   "ITPR1|ITPR2|span_bp": {
+    "n": 183,
+    "median_diff": -77408.0,
+    "q": 0.012339
+   },
+   "ITPR1|ITPR2|median_intron_bp": {
+    "n": 183,
+    "median_diff": -258.5,
+    "q": 0.003408
+   },
+   "ITPR1|ITPR2|max_intron_bp": {
+    "n": 183,
+    "median_diff": -1698.0,
+    "q": 0.026948
+   },
+   "ITPR1|ITPR2|mean_exon_bp": {
+    "n": 183,
+    "median_diff": -4.4,
+    "q": 0.0
+   },
+   "ITPR1|ITPR2|total_intron_bp": {
+    "n": 183,
+    "median_diff": -77512.0,
+    "q": 0.008417
+   },
+   "ITPR1|ITPR3|n_exons": {
+    "n": 182,
+    "median_diff": 2.0,
+    "q": 2e-06
+   },
+   "ITPR1|ITPR3|cds_bp": {
+    "n": 182,
+    "median_diff": 253.5,
+    "q": 0.0
+   },
+   "ITPR1|ITPR3|span_bp": {
+    "n": 182,
+    "median_diff": 119342.0,
+    "q": 0.0
+   },
+   "ITPR1|ITPR3|median_intron_bp": {
+    "n": 182,
+    "median_diff": 720.0,
+    "q": 0.0
+   },
+   "ITPR1|ITPR3|max_intron_bp": {
+    "n": 182,
+    "median_diff": 22074.0,
+    "q": 0.0
+   },
+   "ITPR1|ITPR3|mean_exon_bp": {
+    "n": 182,
+    "median_diff": -0.3,
+    "q": 0.136905
+   },
+   "ITPR1|ITPR3|total_intron_bp": {
+    "n": 182,
+    "median_diff": 119024.0,
+    "q": 0.0
+   },
+   "ITPR1|RYR|n_exons": {
+    "n": 188,
+    "median_diff": -44.0,
+    "q": 0.0
+   },
+   "ITPR1|RYR|cds_bp": {
+    "n": 188,
+    "median_diff": -6636.0,
+    "q": 0.0
+   },
+   "ITPR1|RYR|span_bp": {
+    "n": 188,
+    "median_diff": -55720.0,
+    "q": 0.0
+   },
+   "ITPR1|RYR|median_intron_bp": {
+    "n": 188,
+    "median_diff": 112.0,
+    "q": 0.011306
+   },
+   "ITPR1|RYR|max_intron_bp": {
+    "n": 188,
+    "median_diff": -13945.0,
+    "q": 0.0
+   },
+   "ITPR1|RYR|mean_exon_bp": {
+    "n": 188,
+    "median_diff": -5.3,
+    "q": 0.0
+   },
+   "ITPR1|RYR|total_intron_bp": {
+    "n": 188,
+    "median_diff": -49262.5,
+    "q": 4e-06
+   },
+   "ITPR2|ITPR3|n_exons": {
+    "n": 181,
+    "median_diff": -1.0,
+    "q": 0.0
+   },
+   "ITPR2|ITPR3|cds_bp": {
+    "n": 181,
+    "median_diff": 90.0,
+    "q": 0.0
+   },
+   "ITPR2|ITPR3|span_bp": {
+    "n": 181,
+    "median_diff": 144843.0,
+    "q": 0.0
+   },
+   "ITPR2|ITPR3|median_intron_bp": {
+    "n": 181,
+    "median_diff": 980.5,
+    "q": 0.0
+   },
+   "ITPR2|ITPR3|max_intron_bp": {
+    "n": 181,
+    "median_diff": 28179.0,
+    "q": 0.0
+   },
+   "ITPR2|ITPR3|mean_exon_bp": {
+    "n": 181,
+    "median_diff": 4.3,
+    "q": 0.0
+   },
+   "ITPR2|ITPR3|total_intron_bp": {
+    "n": 181,
+    "median_diff": 144864.0,
+    "q": 0.0
+   },
+   "ITPR2|RYR|n_exons": {
+    "n": 184,
+    "median_diff": -47.0,
+    "q": 0.0
+   },
+   "ITPR2|RYR|cds_bp": {
+    "n": 184,
+    "median_diff": -6813.0,
+    "q": 0.0
+   },
+   "ITPR2|RYR|span_bp": {
+    "n": 184,
+    "median_diff": -51424.5,
+    "q": 0.0
+   },
+   "ITPR2|RYR|median_intron_bp": {
+    "n": 184,
+    "median_diff": 145.2,
+    "q": 0.0
+   },
+   "ITPR2|RYR|max_intron_bp": {
+    "n": 184,
+    "median_diff": -12190.0,
+    "q": 0.0
+   },
+   "ITPR2|RYR|mean_exon_bp": {
+    "n": 184,
+    "median_diff": -1.3,
+    "q": 0.0
+   },
+   "ITPR2|RYR|total_intron_bp": {
+    "n": 184,
+    "median_diff": -44534.5,
+    "q": 1e-06
+   },
+   "ITPR3|RYR|n_exons": {
+    "n": 183,
+    "median_diff": -46.0,
+    "q": 0.0
+   },
+   "ITPR3|RYR|cds_bp": {
+    "n": 183,
+    "median_diff": -6918.0,
+    "q": 0.0
+   },
+   "ITPR3|RYR|span_bp": {
+    "n": 183,
+    "median_diff": -172806.0,
+    "q": 0.0
+   },
+   "ITPR3|RYR|median_intron_bp": {
+    "n": 183,
+    "median_diff": -393.0,
+    "q": 3.5e-05
+   },
+   "ITPR3|RYR|max_intron_bp": {
+    "n": 183,
+    "median_diff": -23324.0,
+    "q": 0.0
+   },
+   "ITPR3|RYR|mean_exon_bp": {
+    "n": 183,
+    "median_diff": -5.8,
+    "q": 0.0
+   },
+   "ITPR3|RYR|total_intron_bp": {
+    "n": 183,
+    "median_diff": -165944.0,
+    "q": 0.0
+   }
+  },
+  "frame": {
+   "n_pairs": 98,
+   "n_unusable": 0,
+   "min_frac_on_ref": 0.9221,
+   "n_via_cell": 9
+  },
+  "anchors": {
+   "n": 14,
+   "n_one_column": 14
+  }
+ }
+}

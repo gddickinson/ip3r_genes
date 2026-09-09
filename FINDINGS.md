@@ -2204,3 +2204,77 @@ behind the bar it was being compared with.
 one of these survived a build that re-derives 180 load-bearing numbers from
 their source tables on every run. They are the errors that only reading the
 picture can catch.
+
+---
+
+## 2026-09-08 — The same gene, packed three different ways (S21)
+
+Until now this project has measured the receptor as a *protein* — its
+sequence, its fold, the sites that never change — and as a *search*. This
+session measured it as a **gene**: the piece of chromosome it is written on,
+how that piece is broken into exons, and whether the three vertebrate copies
+inherited the same arrangement.
+
+**The three genes are built to the same plan.** Across 1,378 genes in 189
+vertebrate genomes, ITPR1 has 58 coding exons, ITPR2 has 57 and ITPR3 has 58.
+The literature's "about 58 to 60 exons" had only ever been checked in humans;
+it holds from lampreys to primates. The ryanodine receptor, the family's
+much larger cousin, has 104 — nearly twice the gene, built from exons of
+almost exactly the same average size.
+
+**But they are packed completely differently.** The three genes carry almost
+identical amounts of coding sequence — 8,250, 8,100 and 8,008 letters — and
+occupy wildly different amounts of chromosome: ITPR3 fits into about 58,000
+bases, ITPR1 needs 147,000 and ITPR2 needs 244,000. The difference is
+entirely in the introns, the non-coding spacers between exons. ITPR2's are
+four times longer than ITPR3's. This is not an average washing out
+variation: in the individual genomes that carry both, ITPR3 is the shorter
+gene than ITPR1 in 161 of 182.
+
+Why that should be is genuinely open. It is not that one gene is newer or
+less used. It may be that ITPR3, which is the copy most associated with fast
+secretory tissue, is under some pressure to be transcribed quickly, and long
+introns cost time; or it may be a chance difference in where the three copies
+landed after the duplications that made them, never corrected because nothing
+depends on it. *(pending: no task in this plan tests either reading.)*
+
+**The exons are in the same places, and that is the real finding.** Counting
+exons is weak evidence — two genes can arrive at 58 exons independently. So
+each intron was located precisely, in a coordinate system shared by all three
+proteins, and recorded with which of the three positions inside a codon it
+interrupts. The three paralogues turn out to share about **48 of their ~58
+intron positions**, in every single genome tested, where fewer than one shared
+position would be expected by chance. They did not converge on a similar
+architecture; they inherited one, from the single gene that existed before the
+duplications.
+
+**And the control is the striking part.** The ryanodine receptors are this
+project's constant hazard: they carry every protein domain that defines an
+IP₃ receptor, they turn up in every search, and telling the two families apart
+is a positive test at every stage. Measured with the identical method in the
+same genomes, an IP₃ receptor and a ryanodine receptor share **one** intron
+position — indistinguishable from chance, in none of 188 genomes. The two
+families are built from the same parts and their genes are not related at the
+level of exon structure at all. Whatever their common ancestry is, it is
+older than the exon arrangement either family now has.
+
+**What a "fragment" in a database actually is.** An earlier session found 291
+places where a public annotation holds part of an IP₃ receptor but no single
+gene model covering it, and called them fragmentary or split. That is a
+statement about coverage; it does not say whether the annotation stopped
+somewhere real. It mostly did not. In **228 of the 291**, at least one of the
+annotated pieces ends in the *middle of an exon* — a position where no
+splicing machinery could cut, so the piece cannot be a real gene boundary.
+Only three of the 291 are broken entirely at genuine junctions. The pieces in
+these records are not small genes; they are a large gene the annotation gave
+up on.
+
+**How much of this can be believed.** Two independent checks, both at scale.
+The exon boundaries used here come from aligning a known protein to raw
+chromosome sequence, so each one predicts a splice site in the DNA:
+**99.89 %** of 112,254 of them are followed and preceded by the exact two-letter
+signals real splice sites carry. And where an assembly has its own gene set,
+built by a different pipeline from evidence this method never saw, **94.5 %**
+of 188,146 annotated exon edges fall exactly on the same coordinate. An
+earlier session could make that comparison for two genes; this one makes it
+for the whole scope.

@@ -112,25 +112,25 @@ Claude: follow this protocol in every session that touches this project.
 Statuses: `pending` / `in_progress` / `completed YYYY-MM-DD`.
 Full step-by-step briefs: `docs/session_briefs.md`.
 
-> **Next session: S21 — gene architecture.** S19 is complete:
-> `results/methods/report.md` holds the false-negative measurement, the
-> panel ablation, the drift audit and the inference limits. **Four things
-> S19 puts in front of S21.** (1) The instrument S21 needs is already
-> validated: S19's panel simulation reproduces the committed ledger
-> **1,236/1,236 cells** by re-parsing the 309 retained `miniprot.gff` files,
-> and `s19_panel.genome_alignments` caches every alignment per accession —
-> so the exon/intron structure S21 wants is one parse away and offline.
-> (2) **Read the ledger's `fragment` and `assembly_gap` cells as method
-> failures, not architecture**: 15.2 % of cells are false negatives and
-> every one is an assembly, so a claim about exon structure must be scoped
-> above D4's bar (189 genomes, 0.9 % residual error) or it will measure
-> contig lengths. (3) `results/methods/contiguity_cells.tsv` carries the
-> per-cell control flag and contiguity, and `residual_neighbourhood.tsv`
-> names the 57 cells whose whole region is missing — both are joins S21 can
-> use directly rather than rebuild. (4) S19 measured the *search*; S21
-> measures the *gene*, and the one number that crosses over is that a single
-> bait at any identity above 0.5 recovers the locus, so miniprot's exon
-> boundaries at a locus are not limited by which bait won it.
+> **Next session: S22 — ligand-site evolution.** S21 is complete:
+> `results/gene_architecture/report.md` holds the exon/intron architecture,
+> the shared-ancestral-intron test, the fragment boundary audit and the
+> duplication detector. **Four things S21 puts in front of S22.** (1) The
+> alignment frame S22 needs already exists and is *anchored*: S21 built a
+> bait → human-reference → `msa_v2` column map for all 38 baits and proved
+> it against all 14 residues S0 measured on 6DQN, which land in one column
+> in all three paralogues (`frame_map.tsv`, `frame_anchors.tsv`) — so a
+> ligand-site claim can be made in alignment columns without re-deriving a
+> transfer. (2) S17's `constraint_<gene>_<acc>.tsv` already carries four
+> conservation layers per residue **and** the measured IP₃ contacts, filter
+> and gate residues, so S22's contrast is a join and not a new alignment.
+> (3) S21's `orthogonal` verdict is the one to reuse: the exon structure and
+> the coding sequence are different objects, and S22 measures a third
+> (selection on a site set), so a mismatch with S6's identities or S9's ω is
+> not a disagreement. (4) The lineages that lost the upstream PLC/IP₃
+> pathway are **not** enumerated anywhere yet — S15a's character matrix is
+> about ITPR itself — so S22 has to declare that scope before it can test
+> it, and should expect to find it is the blocking step.
 
 | ID | Task (one session each) | Depends | Status | Results (headline) |
 |----|-------------------------|---------|--------|--------------------|
@@ -172,7 +172,7 @@ when several are unblocked at once.
 | S17 | **Constraint & function** — per-site conservation mapped onto the cryo-EM channel; do the SCA15/SCA29/Gillespie, anhidrosis and neuropathy variants sit in the constrained core? Is the IP3-binding core more constrained than the pore? | S6, S9b, S11 | high | completed 2026-09-08 | **The mechanistic payoff, and one element nobody had named.** **Which parts cannot change:** the gate and the selectivity filter are the most constrained elements of the receptor on two metrics in all three paralogs, and **the gate's five residues are 100 % identical between all three human copies** — RIH-associated is the most constrained *domain* (JSD 0.798–0.804). **The ligand site is not where Pfam says it is:** none of the ten measured IP₃ contacts (6DQN, ≤ 4.5 Å) lies in PF08709, the signature named *Inositol 1,4,5-trisphosphate/ryanodine receptor* — they sit in MIR and RIH, the domains shared with RyR — and those contacts are more constrained than the rest of the domains carrying them (p = 0.013 / 6e-4 / 4e-3). **The channel domain hid an element:** unresolved, PF00520 read as *less* constrained than the linkers (JSD 0.697, p = 0.96), which survived a metric control and a gene-model control; a 50-residue **luminal loop located by geometry** on 6DQN's own membrane span (ITPR3 2401–2450) is the cause — the least conserved element in the receptor (JSD 0.45–0.49, paralog identity 0.13–0.31 against 0.64–0.70 whole-protein, FEL median β 0.33–0.40 with 27–33 % of sites purifying against 71–86 % protein-wide) — and with it separated the pore module clears the linker control (p = 0.005). The most and least constrained sequence in the receptor sit ~50 residues apart in the same Pfam domain. **The variant test:** 1,753 ClinVar missense records, **0 dropped** by the transcript-numbering check (all three genes file on the canonical), both of S0's residue-level citations recovered by the positive control; **1,546 (88 %) are VUS** and ITPR2's entire pathogenic missense record is one variant. Constraint separates P/LP from B/LB — and **against this task's own design the family-wide layer wins**: on one fixed set of 44 vs 34 positions, AUC family 0.872 > vert 0.854 > **deep 0.758** > shallow 0.684, so the 249–265-orthologue sets S17 built are the second-best of four. FEL: 5,766 purifying, **1 diversifying** site inside BH's own error budget. → `results/constraint/report.md`, `constraint_<gene>_<acc>.tsv` (per-residue, four layers), 16 painted structures, 4 figures, 14 self-tests (T8 caught `nterm_trefoil` being swept into the within-protein control). |
 | S18 | **Annotation-quality audit** — how often a real ITPR locus is missing, fragmentary, split, unnamed or filed under the wrong paralog (or as a RyR) across RefSeq / Ensembl / UniProt / InterPro; the correction list | S5b, S15 | high | completed 2026-09-08 | **The family is not badly recorded — vertebrate gene sets are, and the archive matters far more than the gene.** 2,144 gene-scale loci in 309 assemblies scored complete / split / fragmentary / non-coding / unannotated on **CDS blocks, same strand only**, with the ryanodine receptors as the control in the same assemblies through the same pipelines. ITPR: **73.9% complete, 26.1% failing**; RyR control **77.9% / 22.1%** — **no overall difference survives BH** (q = 0.13 raw, 0.82 above D4's bar), so the audit's own premise is contradicted by its control. **One state separates and it is the family-specific one, and it does not survive the contiguity control either**: an ITPR locus is **2.7x** more likely than a RyR locus to be held *only* by a non-coding feature (42 vs 16, q = 0.006) — a gene the annotation identifies and names correctly and files as `gene_biotype=other`, serving no protein and unreachable by any name-based search (*Podiceps cristatus* ITPR3 is the type case) — but above D4's bar it is 4 against 5 (q = 1.0), so the excess is confined to assemblies too broken to carry the gene. **D9 is the largest effect in the task**: RefSeq **98.8 %** complete against submitter GenBank **37.5 %** (every state q < 1e-300); controlled for contiguity it is **99.4 % vs 63.8 %** and does not close, so about a third of the archive gap is assembly quality and the rest is the gene set. **D4 is the second**: the ITPR failure rate falls 26.1% -> **6.7%** across the contiguity bar. **The bar was inherited, not invented** — `s5_classify.ANNOT_CDS_FRAC` (0.50), validated rather than re-derived: over 1077 correctly-named fully-recovered loci a single model covers a median **0.993**, so 0.50 sits at that distribution's **1.3 % point** and is conservative; across bars 0.30-0.95 `complete` moves only 76.4 % -> 68.1 %. **Protein side (11,402 full-length records, blastp vs the 38-bait panel):** the family call is not in dispute (4 sequence disagreements, 5 wrong-family names, all non-vertebrate and under 200 bits) and neither is the paralog (52/8,306 symbols, plus 74 RYR3 claims the panel cannot reach and does not score). **What is wrong is findability: 3,872 placeholder symbols + 2,395 with none = 55.0 % of full-length family records have no usable gene symbol**, and 66 more are named for the superfamily. **All 15 of S3's zero-hit proteomes are gene-caller failures** — every species has a genome in scope and every genome carries the gene; 0 `genome_also_empty`, 0 `undecidable_no_genome`. **297 corrections** (52 high priority, 18 withheld under **D6**, each with assembly, coordinates, current state, proposal and an archived evidence file). S5b's 23-point paralog naming gap is **contradicted** (1.8 points once the name is read off whichever model the annotation places there) and S10's 98.2 % is **orthogonal** (its denominator is the loci the annotation demonstrably could have delivered). 45 negative controls, mutation-tested on 9 deliberate rule breakages, all 9 caught. -> `results/annotation_audit/report.md` |
 | S19 | **Methods results** — per-method contribution ("what would proteome-only searching have missed?"), assembly contiguity as a confounder of loss claims, bait-panel design sensitivity | S5b, S15, S18 | medium | completed 2026-09-08 | **The search's sensitivity is a measurement here, not an estimate — and the two numbers a reader would most doubt are the ones that come out best.** S15b reconstructs no losses anywhere in the 309-genome scope, so all **923 assignable cells hold a gene that is there** and every ledger cell that is not `found` is a **false negative of the method**: **140/923, 15.2 %**. The **RyR sister cell is carried as an independent replicate** — present in every vertebrate, swept by the same aligner in the same assemblies, using none of S15a's states — and gives **42/309, 13.6 %**, indistinguishable from it (Fisher *p* = 0.58). The four `paralog_unassignable` cyclostome cells are in neither series (D57). **Every miss is an assembly.** A missed cell's median contig N50 is **23,460 bp against 3,396,515 bp** for a found one; the odds of finding the gene rise **8.1× per tenfold** of contig N50 (RyR 20.0×); chromosome-level assemblies miss **3/512** ITPR cells and **0/172** RyR. Below D4's bar the ordering is ITPR3 30.0 % < ITPR1 39.2 % < ITPR2 43.3 % missed — **S5b's span bias, reproduced as a false-negative rate**. **57 of the 182 misses sit where the paralog's own S8 consensus neighbourhood is missing too**, so what is gone there is the region. **D4's a-priori contiguity bar survives calibration (D58)**: 142,212 bp, chosen from gene geometry with no error rate in it, gives **0.9 % residual error on the ITPR series and 0.0 % on the RyR sister**, retaining 189/309 genomes — conservative against a 5 % target (reached at 100 kb) and about right against 1 %. Its cost is printed beside it: a floor removes 38.8 % of the scope, disproportionately the margin species the scope was extended for. **The bait-panel ablation is exact and validated first: the simulation reproduces the committed ledger 1,236/1,236 cells**, re-clustered from the 309 retained miniprot GFFs across 19 panels. **Phylogenetic breadth is nearly free — four human baits recover 782 of the 783 cells the 38-bait panel recovers**, dropping any single clade band costs at most 2 cells, and removing the sister-family control changes **no** ITPR call (D14 at genome scale is free). **Paralog coverage is everything**: dropping one paralog's baits costs 238-241 cells each. The three unlabelled `vertebrate_basal` baits change **0** cells and on their own recover **0** — an unlabelled bait cannot fill a paralog cell by itself, so S5a's fix mattered to rescue attribution and not to locus placement. **68 of 2,179 call changes are *gains*** and all are one mechanism: the cell reads its top-**scoring** bait, not its best-**covering** one, so removing a competitor can push a marginal cell across the 0.70 bar (both `drop_bird` gains are 0.6956 → 0.7022). **Design rule: one bait alone recovers the gene at any identity above 0.5** (1,143/1,145 at 0.60-0.70), measured at loci the full panel placed. **A family profile HMM over reference proteomes is not a discovery method for whole genes.** Inside the searched database, at gene scale it adds **1 record to 3,135** in the vertebrates and 2 to 1,021 in the non-vertebrate metazoa; its entire gain is under 1,000 aa (594 records). The exception is the **protists, where it adds 89 gene-scale records** the enumeration never returned. 766 vertebrate Pfam-carrying records are declined by the profile pair, all under 1,000 aa — D22's gate working. **Iteration returned no record the profile pair calls family that one pass had not**: three vertebrate jackhmmer runs hold 4,960 of the 5,130 one-pass family calls plus 19,969 that are not family. **Seed choice changes the debris, not the family** — human/fly/amoebozoan seeds intersect on 4,785 family records and differ by ≤162, while the amoebozoan run carries 19,949 non-family targets against ~2,438 for the other two. **K1 — the kill rule written for exactly this hazard — fires on 0 of 7 runs, including all 3 that drifted (D59).** Scored against a drift outcome measured on the finished model (the runs separate at 0.34 vs 0.81, nothing between): K1 sensitivity **0.00**, K2 0.33, K3 1.00 at specificity **0.25**. The sister share *fell* over the run in 4 of 7 — D10b measured rather than described. Moving K1's own 0.10 threshold to the **off-family** share separates all seven at sensitivity 1.00 and specificity 1.00; reported as a proposal and deliberately not applied. **And the archive result: 940 of 1,232 demonstrated genes (76.3 %) are not reachable by any protein-database search** — 386 species with no reference proteome, 248 with only fragmentary records, 286 where records exist and none resolves to that paralog. **Not a margin-species artefact**: 74.3 % for order representatives against 78.5 % for margin species. 32 negative controls, 5 mutation-tested; **one caught a real bug — the suite's own T11 was overwriting a committed table and the report read 2 jackhmmer runs where there are 7 (D60)**. Whole task rebuilds offline in 43 s. → `results/methods/report.md` |
-| S21 | **Gene architecture** — exon/intron structure across the genome scope from the miniprot CDS blocks; are database "fragments" real exon boundaries or annotation failures; is the ~58-exon architecture conserved | S5b, S18 | medium | pending | |
+| S21 | **Gene architecture** — exon/intron structure across the genome scope from the miniprot CDS blocks; are database "fragments" real exon boundaries or annotation failures; is the ~58-exon architecture conserved | S5b, S18 | medium | completed 2026-09-08 | **The IP₃ receptor is a 58-exon gene in all three paralogues and its genomic span is not conserved at all.** 1,378 genes in 189 genomes above D4's bar: ITPR1 58 exons / 147 kb, ITPR2 57 / 244 kb, ITPR3 58 / 58 kb, RyR control 104 / 142 kb — a **4.2-fold span spread** at essentially identical coding length (8,008–8,250 bp), consistent gene by gene within genomes (D16 paired sign tests, BH-corrected). **The three paralogues share ~48 of ~58 intron positions**, at 85–88× the chance rate, significant in **every one** of 181–183 genomes; **the ryanodine receptors share one**, in 0 of 188 — the sister family that carries every ITPR-diagnostic Pfam has an exon structure with no ancestry in common (**D68**). Each paralogue has a core of 48–49 positions in ≥90 % of its genomes. **Database "fragments" are annotation failures, not gene boundaries**: of 291 `split`/`fragmentary` loci, **228 carry a model terminus inside an exon**, where nothing splices; only 3 are broken entirely at real junctions. The instrument is corroborated twice: **99.89 % of 112,254 junctions** read as a splice pair off the genome, and **94.5 % of 188,146 annotated CDS edges** from an independent pipeline land exactly on a sweep exon boundary (S10's two-case check generalised; RefSeq 94.9 % vs GenBank 91.1 %). The brief's frameshift-pair merge **fires on nothing because no such pair exists** (D66), and the duplication detector had to be scoped to the cell's own loci or it measured paralogy at specificity 0.16 (**D67**) — rescoped it reaches 99.7 % / 97.7 % against S16's copy call, and finds **0 within-locus duplications**. 21 negative controls, 6 mutation tests, all caught. → `results/gene_architecture/report.md` |
 | S22 | **Ligand-site evolution** — the IP3-binding core is the one part RyR does not share functionally. Is it under different constraint from the pore, does it differ between paralogs, and does it change in lineages that lost the upstream PLC/IP3 pathway | S9b, S17 | medium | pending | |
 | S14c | **Manuscript rewrite pass** — one full pass over the draft once every analysis has landed, with the figure audit's lessons applied | S14a, S24 | medium | pending | |
 
@@ -1180,3 +1180,52 @@ The self-test that guards it does **not** rest on byte-identity alone: two
 saves in the same second are identical whatever the code does, so a mutation
 test found that check passing on the broken version. The property is tested
 directly — the saved pdf must carry no creation timestamp.
+
+**D66 — A threshold the data has no population for is not lowered to a
+round number; it is placed where the evidence is, and the rule is then shown
+able to act.** S21's brief asked for the pair of CDS records miniprot emits
+either side of a frameshift to be merged, "or a broken locus looks
+exon-rich". Measured over all 309 genomes, **no such pair exists**: every one
+of the 149,148 consecutive block pairs has contiguous query spans, the
+smallest genomic gap anywhere is 10 bp, and 99.9 % of the gaps read as a
+canonical or minor splice pair — an indel appears *inside* a block, as a
+block whose length differs from three times its residue count. So the
+calibration refuses to derive a bar (there is nothing on the other side of
+it), and the floor goes at the smallest gap the genome calls spliceable
+rather than at the declared 30 bp fallback, which would have merged the ten
+junctions between 10 and 29 bp that read `GT..AG`. The merge then fires on 0
+of 112,254 junctions, and `s21_test_arch` T5 constructs a 2 bp pair and
+requires it to fire, which is what makes the zero a measurement rather than a
+rule that cannot act. Same idea as D46's calibration and
+`s23_calibrate_loci.separation()`, applied to a threshold whose *negative*
+population turned out to be empty.
+
+**D67 — In a family whose members are 61-68 % identical, "the same query
+aligns twice" measures paralogy, not duplication.** S21's tandem-duplication
+detector reads the sweep's own alignments for the geometry a duplicated gene
+produces — one bait aligning twice, over the same part of the protein, at two
+disjoint places. Run on the raw alignments that fires in essentially every
+vertebrate genome, because every ITPR bait aligns at all three ITPR genes:
+sensitivity 0.997, **specificity 0.16**. The fix is D14 applied to a pairwise
+test — the pair must sit inside the cell's *own* loci, with the sweep's
+clustering and `s5_classify.cell_loci` imported unchanged, so a hit at another
+paralogue's gene belongs to that paralogue and is never offered. Specificity
+goes to 0.977 against S16's committed copy call, which the detector never
+sees. The general rule: a geometric signature is only evidence once the
+family assignment has been made, and a detector that looks like it works is
+worth scoring against an independent call before it is believed.
+
+**D68 — A shared-position count needs a null drawn from the positions both
+sequences actually have.** Two genes with ~58 introns each over ~2,700
+aligned residues share some intron positions by chance, and the size of that
+chance depends entirely on the column set the null draws from. S21 draws it
+from the columns *both* loci have residues in — not the whole alignment, and
+not the whole bait: a locus aligning residues 200-2,600 cannot carry an
+intron outside that range, and a larger shared set makes every real match
+look more surprising than it is. The count is then a Poisson-binomial whose
+upper tail is exact, so the p-value needs no RNG and no replicate count, and
+a seeded permutation without replacement is run beside it and committed as a
+cross-check (they agree to 0.015 of a position). The result the null makes
+readable is the control: the three IP₃ receptors share ~48 positions against
+0.55 expected, and the ryanodine receptors — which carry every
+ITPR-diagnostic Pfam domain — share **one**.

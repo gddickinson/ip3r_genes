@@ -3262,3 +3262,114 @@ the six new figures and not for the other 56.
 complete. Version the current draft rather than overwriting it; the PIEZO
 project froze v1 when its framing changed and that turned out to be worth
 doing. S21 and S22 remain pending in the analysis block.
+
+---
+
+## 2026-09-08 — S21: the gene itself, and what a 58-exon architecture is worth
+
+Ledger row S21, gene architecture. Everything it needed was already on the
+drive: the sweep's 309 retained `miniprot.gff` files carry one CDS record per
+aligned block with its genomic interval, its span in the bait's own residue
+numbering and its phase, the genomes are still there so splice dinucleotides
+can be read rather than assumed, and the assemblies' gene sets are there too.
+No new alignment, no new download, and the whole task rebuilds offline in 52
+seconds.
+
+### The result
+
+**The IP₃ receptor is a 58-exon gene and its genomic span is not conserved.**
+Over 1,378 genes in 189 genomes above D4's contiguity bar: ITPR1 58 exons in
+147 kb, ITPR2 57 in 244 kb, ITPR3 58 in 58 kb, with coding lengths of
+8,250 / 8,100 / 8,008 bp. A 4.2-fold span spread at a 3 % coding-length
+spread, and the ordering is consistent gene by gene inside genomes rather
+than an artefact of averaging (D16 paired sign tests, BH-corrected across the
+family; ITPR3 is the shorter gene than ITPR1 in 161 of 182 genomes carrying
+both). The RyR control, measured through the identical instrument in the same
+assemblies, is 104 exons over 14,910 bp — nearly twice the gene in both, at
+the same mean exon length.
+
+**The three paralogues share ~48 of their ~58 intron positions**, against
+0.55 expected, in every one of 181–183 genomes tested. **The ryanodine
+receptors share one**, in 0 of 188. The sister family that carries every
+ITPR-diagnostic Pfam domain — the hazard this project is built around — has
+an exon structure with no ancestry in common with this one.
+
+**Database "fragments" are annotation failures, not gene boundaries.** Of the
+291 loci S18 called `split` or `fragmentary`, 228 carry at least one annotated
+model terminus sitting *inside an exon* of the gene model, where nothing
+splices. Three are broken entirely at real junctions.
+
+### The instrument, corroborated twice
+
+99.89 % of 112,254 junctions read as a canonical or minor splice pair off the
+genome; 0.78 % carry a frame step. And 94.5 % of 188,146 annotated CDS block
+edges from an independent pipeline land *exactly* on a sweep exon boundary,
+over 1,171 loci in 164 genomes — S10's two-case check generalised to the
+scope, with D9's contrast surviving it (RefSeq 94.9 %, GenBank 91.1 %).
+
+### Three things the brief got wrong, and what replaced them (D66–D68)
+
+**The frameshift-pair merge has nothing to merge.** The brief expected
+miniprot to emit two CDS records either side of a frameshift. Measured over
+all 149,148 consecutive block pairs in the sweep, no such pair exists: query
+spans are contiguous across every one, the smallest genomic gap anywhere is
+10 bp, and it reads `GT..AG`. An indel appears *inside* a block. The
+calibration therefore refuses to derive a bar — one of its two populations is
+empty — and the floor goes where the evidence is (10 bp) rather than at the
+declared 30 bp fallback, which would have merged ten junctions the genome
+calls splice sites. The merge fires on 0 of 112,254 junctions and T5
+constructs a 2 bp pair to prove it can act (**D66**).
+
+**The tandem-duplication test measured paralogy.** "The same bait aligns
+twice at disjoint positions" fires in essentially every vertebrate genome,
+because the three paralogues are 61–68 % identical and every bait aligns at
+all three genes: sensitivity 0.997, **specificity 0.16**. Scoped to the cell's
+own loci with `s5_classify.cell_loci` imported unchanged — D14 applied to a
+pairwise test — specificity goes to 0.977 against S16's copy call, which the
+detector never sees, and the 3R teleost check agrees on 261 of 267 cells
+(**D67**). No locus in the sweep encodes the same part of the protein twice.
+
+**The fragment test had the wrong unit.** Scoring every annotated CDS block
+edge answers the boundary-concordance question a second time — a model's
+internal boundaries are its own splice sites and canonical by construction.
+The unit is the annotated *model's terminus*, with the gene's own ends
+excluded by rule because a real gene legitimately starts and stops inside an
+exon. That changed the answer's shape: 44 % of internal termini land on a
+boundary the gene model has, not 81 %.
+
+### The frame, and the anchor that could have failed
+
+Boundaries are in the bait's numbering and the sweep used 38 baits, so
+everything travels bait → its cell's human reference (pairwise MAFFT at
+`--thread 1`) → a column of S6's committed alignment. The frame is checked
+rather than assumed: all 14 residues S0 measured on 6DQN — the ten IP₃
+contacts, the two filter and the two gate residues, in each paralogue's own
+numbering from S17's `functional_sites.tsv` — land in the **same column** in
+all three paralogues. T8 shifts one row by a column and requires the gate to
+refuse.
+
+### Testing
+
+21 negative controls run before anything is written, split across
+`s21_test_arch.py` and `s21_test_claims.py` to stay inside the file budget.
+Six mutation tests, all caught. Three controls failed on their first run and
+two of the three were the rule's fault, not the test's: the terminus verdict
+had no value for "the annotation ends inside an intron of the model", which
+is the two pipelines disagreeing rather than one of them inventing a
+boundary, and the Poisson-binomial tail returned 0.9999999999999991 where the
+answer is "nothing was measured".
+
+### Housekeeping
+
+Two joins were guarded rather than trusted, and one guard earned its place
+immediately: `loci_with_mp()` requires the contig and start of every S16
+locus to match the summary it takes `mp_id` from, and found that S16 files
+two `vertebrate_basal` loci out of `other_loci` rather than out of a cell.
+
+### Next
+
+**S22 — ligand-site evolution.** Its dependencies (S9b, S17) are complete. The
+alignment frame and the anchor test are reusable as they stand, and S17's
+per-residue table already carries the measured IP₃ contacts. Expect the
+blocking step to be scope: the lineages that lost the upstream PLC/IP₃
+pathway are not enumerated anywhere in this project yet.

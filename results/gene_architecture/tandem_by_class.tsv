@@ -1,0 +1,10 @@
+class	cell	n_pairs	n_genomes	median_q_overlap	median_gap_bp	frac_same_strand
+tandem	all	63	4	1	535394	0.5873
+tandem	ITPR1	29	1	1	535406	1
+tandem	ITPR2	26	2	1	21039	0
+tandem	RYR	8	1	1	752400	1
+dispersed	all	9403	271	1	-1	0.5085
+dispersed	ITPR1	2454	81	1	6.32781e+06	0.5644
+dispersed	ITPR2	72	4	1	-1	0.4722
+dispersed	ITPR3	106	4	1	-1	0.6509
+dispersed	RYR	6771	271	1	-1	0.4863

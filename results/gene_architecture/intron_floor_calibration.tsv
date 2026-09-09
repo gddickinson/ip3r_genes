@@ -1,0 +1,2 @@
+floor_bp	chosen	derivation	separated	n_gaps	n_spliceable	n_non_spliceable	smallest_gap_bp	fallback_bp	bar	min_gaps	reason
+10	1	smallest gap the genome calls spliceable — no sub-intron population to exclude	0	149148	149148	0	10	30	0.5	200	0 gaps sit in bins the genome does not call spliceable, under the 200 needed to place a bar; the smallest gap anywhere in the sweep is 10 bp and it reads as a splice pair, so no block pair here is a frameshift artefact and the merge rule has nothing to merge

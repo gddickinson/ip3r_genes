@@ -1,0 +1,4 @@
+state	n_loci	n_genomes	annotation_failure	broken_at_real_junctions	mixed	structure_disagreement	internal_termini	termini_at_exon_boundary	termini_mid_exon	termini_in_intron	termini_splice_ok	frac_termini_at_boundary	frac_termini_splice_ok
+split	27	15	20	1	0	6	184	40	66	78	61	0.2174	0.3315
+fragmentary	264	83	208	2	14	40	1264	649	340	275	530	0.5134	0.4193
+all	291	87	228	3	14	46	1448	689	406	353	591	0.4758	0.4081

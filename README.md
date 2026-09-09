@@ -19,8 +19,8 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S24 complete — the paper is assembled, illustrated and audited;
-29 of the 33 ledger rows are done.** The submission package builds end to end
+**Status: S21 complete — the gene itself is measured; 30 of the 33 ledger
+rows are done.** The submission package builds end to end
 from the committed tables: `python scripts/s14_assemble.py` runs figures →
 claims → stitch → PDF → deposit and exits zero on **7 main + 14 Extended Data
 + 6 Supplementary figures (62 panel files, none missing), 180/180
@@ -490,7 +490,7 @@ One task per session. Full ledger with dependencies and results in
 | S17 | Constraint & function — the clinical-variant test | ✅ completed 2026-09-08 |
 | S18 | Annotation-quality audit + correction list | ✅ completed 2026-09-08 |
 | S19 | Methods results | ✅ completed 2026-09-08 |
-| S21 | Gene architecture (~58 exons) | ⏳ pending |
+| S21 | Gene architecture (~58 exons) | ✅ completed 2026-09-08 |
 | S22 | Ligand-site evolution | ⏳ pending |
 | S14a | Manuscript assembly | ✅ completed 2026-09-08 |
 | S24 | Supplementary figures + figure audit | ✅ completed 2026-09-08 |
@@ -502,6 +502,45 @@ One task per session. Full ledger with dependencies and results in
 ## Findings so far
 
 Plain-language entries per task: [`FINDINGS.md`](FINDINGS.md). Headlines:
+
+**S21 — the same gene, packed three different ways.** The exon/intron
+architecture, read off the sweep's own alignments to 309 genomes. Across
+**1,378 genes in 189 genomes** above D4's contiguity bar, ITPR1 has **58**
+coding exons, ITPR2 **57** and ITPR3 **58** — the literature's "~58-60" had
+only ever been checked in human — against **104** for the ryanodine receptor
+control. But the three carry near-identical coding sequence (8,250 / 8,100 /
+8,008 bp) in wildly different amounts of chromosome: **ITPR3 in 58 kb, ITPR1
+in 147 kb, ITPR2 in 244 kb**, a 4.2-fold spread that holds gene by gene
+*inside* genomes (ITPR3 is shorter than ITPR1 in 161 of 182), so it is not an
+averaging artefact.
+
+![S21 architecture](results/gene_architecture/figures/architecture_by_paralog.png)
+
+**S21 — the three copies inherited one exon structure, and the ryanodine
+receptors did not.** Each intron was located in a coordinate frame shared by
+all three proteins — an alignment column plus which of the three codon
+positions it interrupts — and the frame was checked against all **14
+residues S0 measured on the 6DQN structure**, which land in the same column in
+all three paralogues. The three paralogues share **~48 of their ~58 intron
+positions**, against 0.55 expected by chance, significant in **every one** of
+181–183 genomes. The ryanodine receptors — which carry every ITPR-diagnostic
+Pfam domain and are inside every search this project runs — share **one**, in
+**0 of 188**. The two families' genes are built from the same protein parts
+and have no exon structure in common.
+
+![S21 intron positions](results/gene_architecture/figures/intron_positions.png)
+
+**S21 — a database "fragment" is usually not a gene boundary.** Of the 291
+loci S18 called `split` or `fragmentary`, **228 carry an annotated model
+terminus inside an exon** of the gene model, where nothing splices; only
+**3** are broken entirely at real junctions. And the instrument behind that
+claim is corroborated twice: **99.89 %** of 112,254 exon junctions read as a
+canonical or minor splice pair off the genome, and **94.5 %** of 188,146
+annotated CDS edges produced by an independent pipeline land exactly on a
+sweep exon boundary — S10's two-case check generalised to 164 genomes, with
+D9's contrast surviving it (RefSeq 94.9 %, GenBank 91.1 %).
+
+![S21 fragments and duplicates](results/gene_architecture/figures/fragments_and_duplicates.png)
 
 **S17 — the gate has not changed, and the domain named after IP3 is not the
 IP3 site.** With 250 orthologues of each human copy pulled out of the 309
@@ -935,7 +974,9 @@ positive test at every stage rather than a filter.
 near-identical proteins (2,671–2,758 aa, within 3 %) from 57–62 exons each —
 but ITPR2 spans 498 kb and **ITPR3 spans 76 kb**. This corrected a starting
 claim that all three span "hundreds of kb". What has been adding or removing
-intronic content in one paralog and not another is an open question for S21.
+intronic content in one paralog and not another is still open, but S21
+measured the pattern across the scope: the span difference holds gene by gene
+in 189 genomes while the exon count does not move.
 
 **S0 — the audit.** 19 claims checked against 51 references: 12 verified,
 3 qualified, **2 struck**, 1 retagged as an open question (whether the IP3R

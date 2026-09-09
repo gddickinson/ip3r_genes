@@ -1,0 +1,5 @@
+cell	n_loci	n_positions_seen	n_at_50pc	n_at_90pc	n_at_99pc	median_positions_per_locus
+ITPR1	188	185	58	49	26	57.6
+ITPR2	184	175	55	48	35	55.1
+ITPR3	183	179	55	48	26	56.8
+RYR	189	328	100	91	60	101.2
