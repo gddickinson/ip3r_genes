@@ -60,6 +60,39 @@ ohnologue records which copies escaped deletion afterwards — so this is a
 tension rather than a contradiction, and the honest form of the result is to
 report both.
 
+**The two families share a fold and not a gene.** The ryanodine receptors
+carry every Pfam signature used to diagnose this family, and that is the
+single fact that shaped every search in this paper. Intron positions are a
+character no protein alignment produces, and measured on them the two
+families have nothing in common: an IP₃ receptor and a ryanodine receptor in
+the same genome share a median of one intron position, in none of 183 to 188
+genomes at p < 0.05, while the three IP₃ receptor paralogues share 46 to 49
+in every genome tested. The shared domain architecture is real and it is
+old, but it was not inherited as a gene, and the practical consequence for
+anyone searching this superfamily is that domain content is the wrong
+evidence to separate them on — which is the conclusion this project reached
+by a different route at every earlier stage.
+
+**The part that names the family is not the part selection holds hardest.**
+The IP₃-binding core is what distinguishes these receptors from the
+ryanodine receptors functionally and what the family's diagnostic Pfam
+signature is named for, so it is the natural place to expect the tightest
+constraint. Paired inside single orthologues against about 250 sequences per
+paralogue it is the *less* constrained of the two functional modules, and
+the finding that matters more than the direction is that the direction
+reverses on where the pore is taken to stop: fifty residues of luminal loop,
+which InterPro includes in PF00520, are enough to flip all three paralogues.
+A comparison between two protein modules is only as good as the boundaries
+drawn around them, and those boundaries are usually inherited from a
+database rather than declared. Within the site, what selection holds is a
+pocket about fifteen ångström across rather than the ten residues that touch
+the ligand — visible only because the site was measured as a distance in six
+independent structures rather than taken as a contact list from one. And
+losing the enzyme that makes IP₃ does not relax that pocket: matched on
+divergence the effect is a bounded null, against a positive control the same
+test detects almost always. Whatever holds the binding site in these
+lineages, the canonical route to its ligand is not required for it.
+
 **A gene the archive cannot find.** Three quarters of the genes demonstrated
 here are unreachable by any protein-database search, more than half of the
 full-length records that do exist carry no usable gene symbol, and 318 IP₃
@@ -91,5 +124,11 @@ the deepest constraint layers built here are not the best variant
 classifier: the family-wide layer is, which is a result about what
 conservation-based variant scoring should use, and a caution about assuming
 that more orthologues of the same paralogue is the same thing as more
-signal.
+signal. The module and pocket comparisons run on those same deep
+alignments, which are vertebrate by construction, so the ligand core's
+position relative to the pore is a vertebrate statement; and everything
+within 15 Å of the ligand is also inside the fold that holds it, so no
+measurement here separates constraint on ligand binding from constraint on
+domain packing. That would take a mutational or binding dataset; sequence
+will not do it.
 

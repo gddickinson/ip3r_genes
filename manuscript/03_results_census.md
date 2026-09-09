@@ -7,7 +7,8 @@ receptor) was aligned to each genome with a spliced aligner, and cells the
 alignment left empty were re-asked with a whole-genome translated search.
 All 309 completed with no failures; the ryanodine receptor positive control
 fired in every one of them, so no genome is excluded on control grounds.
-The sweep recorded 1,236 genome × cell results over 2,144 loci (Fig. 2).
+The sweep recorded 1,236 genome × cell results over 2,144 loci (Fig. 2 and
+Extended Data Fig. 2).
 
 **The sister family never once contested a locus.** Across all 2,144 loci
 only one family's baits aligned at all. That separation is sharper at the
@@ -46,7 +47,7 @@ Every miss is an assembly. A missed cell's median contig N50 is 23,460 bp
 against 3,396,515 bp for a found one; the odds of finding the gene rise
 8.1-fold per tenfold of contig N50 (19.99-fold for the ryanodine receptor
 series); and chromosome-level assemblies miss 3 of 512 IP₃ receptor cells
-and 0 of 172 ryanodine receptor cells (Extended Data Fig. 14). We therefore
+and 0 of 172 ryanodine receptor cells (Extended Data Fig. 3). We therefore
 report every downstream result twice, once over all 309 genomes and once
 over the 189 whose contigs are longer than the median measured gene span
 (142,212 bp). Above that bar the false-negative rate is 0.9 % on the IP₃

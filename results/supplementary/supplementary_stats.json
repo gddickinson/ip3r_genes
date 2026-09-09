@@ -1,6 +1,6 @@
 {
  "audit": {
-  "figures_audited": 21,
+  "figures_audited": 23,
   "findings": 26,
   "findings_by_status": {
    "fixed_figure": 10,

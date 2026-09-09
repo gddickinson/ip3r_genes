@@ -57,6 +57,21 @@ Eddy; the familiar binary rule reads a support-collapsed four-way node as a
 speciation. Five topologies × three tip variants were reconciled, and the
 vertebrate subtree re-rooted at all 112 of its edges.
 
+**Gene architecture.** Exon blocks come from the same spliced alignments the
+census was built on, read in target order so a minus-strand gene's first
+block is the one carrying residue 1. What counts as an intron was calibrated
+against the genome rather than chosen: block gaps were binned and scored by
+their splice dinucleotides, and the floor was put at the smallest gap the
+genome calls spliceable. Intron positions are a pair — the alignment column
+the upstream exon ends in, and the classical phase — carried into one frame
+through a bait-to-human-reference-to-column map whose anchor test requires
+all 14 residues measured on the reference structure to land in one column in
+all three paralogues. The shared-intron null is exact: each intron of one
+gene placed independently and uniformly on the columns both loci resolve,
+keeping its own phase, which makes the match count a Poisson-binomial whose
+upper tail needs no simulation; a seeded permutation is run beside it and
+both are committed. Every comparison is paired inside one genome.
+
 **Selection.** Every vertebrate tip carries a coding sequence that provably
 encodes the exact protein aligned: three independent routes each generate
 *candidates*, and the first that validates by translation wins, because a
@@ -86,6 +101,25 @@ aligned to the canonical and the reference amino acid required to match.
 Classifier performance is reported on three contrasts, the decisive one
 restricted to the positions every layer scores.
 
+**The ligand site.** The two functional modules are defined here rather than
+taken from Pfam, twice each: a primary definition derived from measurement
+(the ligand core as the minimal span holding every measured IP₃ contact; the
+pore as PF00520 less the geometrically located luminal loop) and a
+sensitivity definition taken from how the field draws the same region (the
+published binding core; PF00520 as InterPro draws it). Every test is run
+under all four combinations. Each definition is checked against something it
+does not contain — the core must hold all ten contacts and no filter or gate
+residue, the pore both filter and both gate residues and no contact — and a
+definition that fails raises rather than being written. The pocket was
+measured all-atom, not on Cα, within 15 Å of the ligand in six independent
+IP₃-bound depositions, with recovery of the ten published contacts required
+as a positive control. The module comparison is paired per orthologue, one
+core and one pore number per sequence, with a tip required to resolve half
+of *both* modules to enter. Phospholipase C presence requires both halves of
+the catalytic barrel in one protein; the lineage comparison is matched on
+pore identity within 0.03, and its power is reported against the shift the
+ryanodine receptor control produces on the same instrument.
+
 **Structures.** References were resolved by an RCSB query over the union of
 the family's Pfam signatures — a PF08709-only query misses this project's
 own IP₃ receptor reference — and assigned to a family by the census, never
@@ -107,9 +141,10 @@ contiguous in it.
 **Negative controls.** Every stage from the bait screen onward runs a suite
 of constructed negative controls before it writes anything, and refuses to
 write if one fails: 11 for synteny, 12 for the codon alignment, 14 for
-constraint, 15 for the loss instrument, 21 for the loss counts, 31 for
-duplication, 32 for the methods results, 44 for the annotation audit and 47
-for the annotation-bug validation. Each suite was itself mutation-tested by
+constraint, 15 for the loss instrument, 21 for the loss counts and 21 for
+gene architecture, 31 for duplication, 32 for the methods results, 44 for
+the annotation audit and 44 for the ligand site, and 47 for the
+annotation-bug validation. Each suite was itself mutation-tested by
 breaking a rule deliberately and requiring the suite to catch it. Several
 caught real defects, including a within-protein control that had swept in
 the 225-residue domain the ligand question is about, a hash-seeded

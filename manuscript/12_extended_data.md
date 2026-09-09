@@ -30,7 +30,21 @@ only substantial multi-copy signal in the family, against two to six copies
 for the control, whose three genes the sweep most often recovers as two or
 three loci.
 
-**Extended Data Fig. 3 | The representative alignment every downstream result
+**Extended Data Fig. 3 | What the search methods were worth.** (**a**) The
+false-negative rate against contig N50 for the IP₃ receptor cells and for the
+independent ryanodine receptor sister series, binned on the contiguity bar;
+the residual rate at every possible floor, with the 5 % line drawn; and what
+each floor costs in genomes retained. (**b**) The bait-panel ablation as a
+change from the full 38-bait panel on a symmetric-logarithmic axis, and the
+recall of a single bait against its identity to the target. (**c**) Where a
+profile HMM earns its place — almost entirely below 1,000 residues in the two
+well-sampled groups, and at every length in the protists; the fungal and plant
+panels above 1,000 residues rest on a dozen to two dozen records each — and the
+fraction of demonstrated genes that no protein database holds. (**d**) The kill criterion written for iteration drift, measured: the
+sister-family share it acts on, the off-family share that actually moves, and
+each rule scored as a classifier of the outcome over seven runs.
+
+**Extended Data Fig. 4 | The representative alignment every downstream result
 stands on.** (**a**) Per-column conservation of the 1,797-column trimmed
 alignment, drawn as a rolling mean of 25 columns with the alignment-wide mean
 dashed, and human *ITPR1*'s Pfam architecture mapped through the alignment
@@ -42,7 +56,7 @@ vertebrate paralogues, and the whole cross-family field is dark. (**c**)
 Per-sequence coverage of the trimmed alignment by group. Median coverage is
 0.96 and one tip of 134 falls below half.
 
-**Extended Data Fig. 4 | The sister test, node support and paralogue
+**Extended Data Fig. 5 | The sister test, node support and paralogue
 placement.** (**a**) Each of the three rooted sister hypotheses as a
 constrained maximum-likelihood tree: the log-likelihood cost against the best
 tree, and the approximately unbiased p-value over 10,000 RELL replicates.
@@ -56,7 +70,7 @@ each, and that clade's composition. Reciprocal best hits upheld the database
 name for all five names the tree disputes, so these are tree uncertainty
 rather than annotation error.
 
-**Extended Data Fig. 5 | Each paralogue has its own genomic neighbourhood.**
+**Extended Data Fig. 6 | Each paralogue has its own genomic neighbourhood.**
 (**a**) The human *ITPR1*, *ITPR2* and *ITPR3* neighbourhoods drawn as gene
 tracks at ±10 coding genes, with the two gene families shared between two
 IP₃ receptor loci linked, and the prevalence of each shared family across
@@ -70,19 +84,6 @@ confirmed loci against random windows, and the threshold sweep that chose the
 operating point by maximising call rate minus false-call rate. (**d**)
 Neighbourhood conservation within against across vertebrate classes.
 *ITPR3*'s neighbourhood is the one that does not travel.
-
-**Extended Data Fig. 6 | The teleost genome duplication and the ancestral
-block.** (**a**) Mean gene copies per genome for the three paralogues and the
-ryanodine receptor control in the pre-3R ray-finned outgroups, in the
-teleosts, and in the lineages with a further whole-genome duplication; and
-the fraction of genomes carrying more than one copy, by vertebrate class.
-(**b**) For each two-copy teleost genome, the number of ancestral-block gene
-symbols each *ITPR1* copy retains: points off both axes are genomes in which
-both copies keep part of one block, and the bar chart counts genomes meeting
-that criterion and the stricter one that the two copies' symbol sets are
-disjoint, against a tetrapod and a pre-3R ray-finned reference. (**c**) The
-cross-anchor assignment margin per reference genome, and the copy counts
-recomputed at seven coverage bars.
 
 **Extended Data Fig. 7 | Dating the duplications that made *ITPR1*, *ITPR2*
 and *ITPR3*.** (**a**) The hand-curated, literature-calibrated species tree on
@@ -101,7 +102,39 @@ site apart and drawn as one line — and each of those loci beside the
 independent flanking-gene call for it: four fall inside their own null and two
 have too few informative neighbours to call at all.
 
-**Extended Data Fig. 8 | The loss instrument, and what it takes to
+**Extended Data Fig. 8 | The teleost genome duplication and the ancestral
+block.** (**a**) Mean gene copies per genome for the three paralogues and the
+ryanodine receptor control in the pre-3R ray-finned outgroups, in the
+teleosts, and in the lineages with a further whole-genome duplication; and
+the fraction of genomes carrying more than one copy, by vertebrate class.
+(**b**) For each two-copy teleost genome, the number of ancestral-block gene
+symbols each *ITPR1* copy retains: points off both axes are genomes in which
+both copies keep part of one block, and the bar chart counts genomes meeting
+that criterion and the stricter one that the two copies' symbol sets are
+disjoint, against a tetrapod and a pre-3R ray-finned reference. (**c**) The
+cross-anchor assignment margin per reference genome, and the copy counts
+recomputed at seven coverage bars.
+
+**Extended Data Fig. 9 | The gene: exon structure, shared introns, and where
+a fragmentary annotation stops.** (**a**) Coding exons per gene (median with
+10th–90th percentiles), genomic span per locus on a logarithmic axis, and the
+median exon count recomputed at six coverage bars, for the three paralogues
+and the ryanodine receptor control across the 189 contiguous assemblies. The
+exon count does not move across the bar; the span differs 4.2-fold between
+paralogues at a 3 % difference in coding length. (**b**) Intron positions
+ranked by prevalence within each paralogue, with the 90 % line drawn, and
+shared positions against positions expected by chance, one point per genome
+per pair, with the identity line. Every IP₃ receptor pair sits far above the
+line in every genome; every IP₃ receptor against ryanodine receptor pair sits
+on it. (**c**) The instrument's own error rate: the splice dinucleotides read
+off the genome at all 112,254 junctions, the gap distribution that sets what
+counts as an intron, and agreement with 188,146 coding edges annotated by an
+independent pipeline. (**d**) The verdict on every split and fragmentary
+locus, where the annotation's internal model termini sit relative to the gene
+model, and the duplication detector scored against the copy call it never
+sees.
+
+**Extended Data Fig. 10 | The loss instrument, and what it takes to
 manufacture a loss.** (**a**) The calibration: how much of a reference protein
 is reassembled outside every placed locus, for candidate genes, for paralogues
 that are themselves shattered in the same genome, and for the decoy — a
@@ -118,7 +151,7 @@ caller is accurate at every key count it can act on. (**d**) The sensitivity
 matrix: Dollo losses under every combination of coding, evidence bar and the
 two decision rules. Zero is drawn as an explicit zero, never as an empty cell.
 
-**Extended Data Fig. 9 | Selection across the three paralogues.** (**a**)
+**Extended Data Fig. 11 | Selection across the three paralogues.** (**a**)
 One-ratio ω per paralogue on a logarithmic axis, with the estimate from
 curated coding sequences only beside each. (**b**) Whole-tree two-ratio
 contrasts, each clade against the rest of the tree, and the RELAX selection
@@ -130,7 +163,37 @@ nested null: points left of the line reached a lower optimum than the null
 they are tested against and are local optima, not results — one per stem, at a
 different starting ω each time.
 
-**Extended Data Fig. 10 | Predicted and experimental structures across the
+**Extended Data Fig. 12 | Constraint by element, at the ligand site, and as a
+variant classifier.** (**a**) Per-element constraint in all three paralogues on
+a divergence metric and on a composition-free one, with the linker control's
+mean over the three proteins drawn as one dashed line per panel; the two
+metrics agree, including on the luminal loop.
+(**b**) The ten measured IP₃ contacts, the two filter-lining residues and the
+two gate-lining residues against two controls — the whole protein and the rest
+of their own elements — and, beside it, between-paralogue identity per
+element, where the gate is at 1.00 and the luminal loop at 0.13–0.31.
+(**c**) Receiver-operating curves for all four constraint layers as
+classifiers of pathogenic against benign missense variants on one fixed set of
+positions, and where the uncertain variants fall relative to the pathogenic
+median on each layer.
+
+**Extended Data Fig. 13 | The ligand core against the pore, and the lineages
+that lost the enzyme upstream.** (**a**) The two modules drawn on the
+receptor, and the paired per-orthologue difference between them under both
+pore definitions. With the luminal loop excluded the pore is more conserved
+in *ITPR1* and *ITPR3*; with it included — as InterPro draws PF00520 — all
+three reverse. Zero is marked, and both definitions are on one axis because
+the answer turns on the choice. (**b**) Constraint against distance from the
+ligand, one point per pocket residue across six IP₃-bound depositions, with
+the 4.5 Å contact bar drawn: there is no step at it. (**c**) The same two
+modules and the same four shells measured on site-wise substitution rate
+rather than on column conservation. (**d**) The lineage test: the 64
+proteomes carrying a receptor and no phosphoinositide-specific phospholipase
+C, the divergence confound that makes the pooled comparison uninterpretable,
+the same comparison matched on divergence, and the power the matched test has
+against the shift the ryanodine receptor control actually produces.
+
+**Extended Data Fig. 14 | Predicted and experimental structures across the
 family.** (**a**) The panel: sequence length and resolved or
 modelled residues for every reference, state-panel member, negative control and
 predicted model. Twenty-nine of the thirty are long enough to score; the
@@ -147,21 +210,7 @@ AlphaFold DB coverage of the census by group, and against record length, where
 the modelled mass sits below ~1,300 residues and the peak at a full-length
 subunit is almost entirely unmodelled.
 
-**Extended Data Fig. 11 | Constraint by element, at the ligand site, and as a
-variant classifier.** (**a**) Per-element constraint in all three paralogues on
-a divergence metric and on a composition-free one, with the linker control's
-mean over the three proteins drawn as one dashed line per panel; the two
-metrics agree, including on the luminal loop.
-(**b**) The ten measured IP₃ contacts, the two filter-lining residues and the
-two gate-lining residues against two controls — the whole protein and the rest
-of their own elements — and, beside it, between-paralogue identity per
-element, where the gate is at 1.00 and the luminal loop at 0.13–0.31.
-(**c**) Receiver-operating curves for all four constraint layers as
-classifiers of pathogenic against benign missense variants on one fixed set of
-positions, and where the uncertain variants fall relative to the pathogenic
-median on each layer.
-
-**Extended Data Fig. 12 | The annotation audit against its own controls.**
+**Extended Data Fig. 15 | The annotation audit against its own controls.**
 (**a**) The completeness bar validated rather than re-derived: over 1,077 loci
 the annotation names correctly, the best single model's share of the gene, with
 the inherited 0.50 bar marked at that distribution's 1.3 % point; and every
@@ -173,7 +222,7 @@ not survive correction either way. (**c**) What the protein databases call the
 resolution of the 15 reference proteomes that returned nothing — all 15 are
 gene-caller failures.
 
-**Extended Data Fig. 13 | Two annotation failures validated at the exon and by
+**Extended Data Fig. 16 | Two annotation failures validated at the exon and by
 RNA-seq.** (**a**) Exon tracks at true genomic width for the two validated
 cases, with each exon coloured by what the annotation holds at that interval
 and the annotated models drawn beneath. *Nibea albiflora ITPR2* has no
@@ -188,18 +237,3 @@ against the number expected under neutral drift. (**d**) Every junction of
 every locus in the expression panel, at its position in the spliced coding
 sequence, coloured by whether an annotated model spans it and marked where no
 read crossed it.
-
-**Extended Data Fig. 14 | What the search methods were worth.** (**a**) The
-false-negative rate against contig N50 for the IP₃ receptor cells and for the
-independent ryanodine receptor sister series, binned on the contiguity bar;
-the residual rate at every possible floor, with the 5 % line drawn; and what
-each floor costs in genomes retained. (**b**) The bait-panel ablation as a
-change from the full 38-bait panel on a symmetric-logarithmic axis, and the
-recall of a single bait against its identity to the target. (**c**) Where a
-profile HMM earns its place — almost entirely below 1,000 residues in the two
-well-sampled groups, and at every length in the protists; the fungal and plant
-panels above 1,000 residues rest on a dozen to two dozen records each — and the
-fraction of demonstrated genes that no protein database holds. (**d**) The kill criterion written for iteration drift, measured: the
-sister-family share it acts on, the off-family share that actually moves, and
-each rule scored as a classifier of the outcome over seven runs.
-

@@ -21,7 +21,7 @@ schemes. The family-level coding manufactures a loss in **2 of 32** settings,
 worst case one genome in 309, and only by refusing everything except a
 complete locus *and* ignoring the contiguity bar; the paralogue-resolved
 coding manufactures one in **18 of 32**, up to 45 loss edges (Extended Data
-Fig. 8). Moving the reconstruction bar across the whole gap its own
+Fig. 10). Moving the reconstruction bar across the whole gap its own
 calibration measured changes no cell in 927; the branch-length axis changes
 the count in none of the 32 settings.
 
@@ -44,7 +44,7 @@ tests are significant for all three after correction: *ITPR1* foreground
 0.0317, *ITPR3* 0.0455 against 0.0308. RELAX, which compares whole ω
 distributions rather than point estimates, returns k = 9.36 **intensified**
 for *ITPR1* and k = 0.91 and k = 0.84 **relaxed** for *ITPR2* and *ITPR3*
-(Extended Data Fig. 9). *ITPR1* — the paralogue that was doubled and kept
+(Extended Data Fig. 11). *ITPR1* — the paralogue that was doubled and kept
 after the teleost duplication, and the one whose neighbourhood carries both
 surviving two-round links — is also the one held about twice as tightly.
 

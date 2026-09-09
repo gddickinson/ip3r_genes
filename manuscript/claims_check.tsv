@@ -113,6 +113,47 @@ C111	R4	88.8 % of within-paralogue pairs are past dS = 1.5	0.8881	0.8881	ok		res
 C112	R4	ITPR3 carries an indel excess against matched siblings, q=0.0032	0.00320932	0.00320932	ok		results/loss_dynamics/integrity_tests.tsv	cell
 C113	R4	ITPR2's excess disappears under identity matching (q = 0.90)	0.902159	0.902159	ok		results/loss_dynamics/integrity_tests.tsv	cell
 C114	R4	bait identity is the dominant confounder (rho = -0.397)	-0.397	-0.397	ok		results/loss_dynamics/report.md	grep
+C181	R3b	1,378 genes are in the architecture scope	1378	1378	ok		results/gene_architecture/gene_architecture_stats.json	json
+C182	R3b	they sit in 189 contiguous genomes	189	189	ok		results/gene_architecture/gene_architecture_stats.json	json
+C183	R3b	112,254 junctions were read	112254	112254	ok		results/gene_architecture/gene_architecture_stats.json	json
+C184	R3b	99.89 % of junctions read as a spliceable pair	0.99887	0.99887	ok		results/gene_architecture/gene_architecture_stats.json	json
+C185	R3b	98.96 % are canonical GT-AG	0.98965	0.98965	ok		results/gene_architecture/gene_architecture_stats.json	json
+C186	R3b	1,035 junctions carry a minor splice site	1035	1035	ok		results/gene_architecture/junction_quality.tsv	cell
+C187	R3b	188,146 independently annotated coding edges were compared	188146	188146	ok		results/gene_architecture/gene_architecture_stats.json	json
+C188	R3b	177,710 of them land exactly on a sweep exon boundary	177710	177710	ok		results/gene_architecture/boundary_concordance_summary.tsv	cell
+C189	R3b	that is 94.5 % exact agreement	0.9445	0.9445	ok		results/gene_architecture/gene_architecture_stats.json	json
+C190	R3b	across 164 genomes	164	164	ok		results/gene_architecture/gene_architecture_stats.json	json
+C191	R3b	RefSeq annotations agree at 94.9 %	0.9493	0.9493	ok		results/gene_architecture/gene_architecture_stats.json	json
+C192	R3b	submitter-deposited GenBank annotations at 91.1 %	0.9109	0.9109	ok		results/gene_architecture/gene_architecture_stats.json	json
+C193	R3b	ITPR1 has a median 58 coding exons	58.0	58.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C194	R3b	ITPR2 57	57.0	57.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C195	R3b	ITPR3 58	58.0	58.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C196	R3b	ITPR1 spans a median 147,445 bp	147445.0	147445.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C197	R3b	ITPR2 243,700 bp	243700.0	243700.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C198	R3b	ITPR3 58,175 bp	58175.0	58175.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C199	R3b	a 4.2-fold spread of genomic span	4.19	4.19	ok		results/gene_architecture/gene_architecture_stats.json	json
+C200	R3b	ITPR3 carries 8,008 bp of coding sequence	8008.0	8008.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C201	R3b	ITPR1 8,250 bp	8250.0	8250.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C202	R3b	the ryanodine receptor control is a 104-exon gene	104.0	104.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C203	R3b	over 14,910 bp of coding sequence	14910.0	14910.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C204	R3b	at a mean exon length of 144 bp against the family's 138-142	144.5	144.5	ok		results/gene_architecture/gene_architecture_stats.json	json
+C205	R3b	ITPR3 is shorter than ITPR1 in 161 of 182 genomes	161	161	ok		results/gene_architecture/paired_comparisons.tsv	cell
+C206	R3b	and shorter than ITPR2 in 146 of 181	146	146	ok		results/gene_architecture/paired_comparisons.tsv	cell
+C207	R3b	ITPR1 and ITPR2 share a median 48 intron positions	48.0	48.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C208	R3b	ITPR1 and ITPR3 46	46.0	46.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C209	R3b	ITPR2 and ITPR3 49	49.0	49.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C210	R3b	against 0.55 expected by chance	0.55	0.55	ok		results/gene_architecture/gene_architecture_stats.json	json
+C211	R3b	an 87.6-fold enrichment for ITPR1 vs ITPR2	87.648	87.648	ok		results/gene_architecture/gene_architecture_stats.json	json
+C212	R3b	85.6-fold for ITPR1 vs ITPR3	85.616	85.616	ok		results/gene_architecture/gene_architecture_stats.json	json
+C213	R3b	88.4-fold for ITPR2 vs ITPR3	88.434	88.434	ok		results/gene_architecture/gene_architecture_stats.json	json
+C214	R3b	significant in all 183 ITPR1/ITPR2 genomes	183	183	ok		results/gene_architecture/gene_architecture_stats.json	json
+C215	R3b	all 182 ITPR1/ITPR3 genomes	182	182	ok		results/gene_architecture/gene_architecture_stats.json	json
+C216	R3b	all 181 ITPR2/ITPR3 genomes	181	181	ok		results/gene_architecture/gene_architecture_stats.json	json
+C217	R3b	an ITPR and a RyR share a median of one intron position	1.0	1.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C218	R3b	in 0 of 188 ITPR1/RyR genomes at p < 0.05	0	0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C219	R3b	0 of 184 ITPR2/RyR genomes	0	0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C220	R3b	0 of 183 ITPR3/RyR genomes	0	0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C221	R3b	each paralogue has 48-49 positions in over 90 % of its genomes	49	49	ok		results/gene_architecture/gene_architecture_stats.json	json
 C115	R5	the deep layer holds 264 ITPR1 orthologues	264	264	ok		results/constraint/layer_sizes.tsv	cell
 C116	R5	249 for ITPR2	249	249	ok		results/constraint/layer_sizes.tsv	cell
 C117	R5	265 for ITPR3	265	265	ok		results/constraint/layer_sizes.tsv	cell
@@ -179,3 +220,53 @@ C177	Supplementary	the column walk covered all 134 sequences	134	134	ok		results
 C178	Supplementary	1,780 variant residues were checked against their own table	1780	1780	ok		results/supplementary/supplementary_stats.json	json
 C179	Supplementary	2,699 aligned partners were checked	2699	2699	ok		results/supplementary/supplementary_stats.json	json
 C180	Supplementary	AlphaFold DB's human ITPR1 model is the 2,695-residue Q14643-4 isoform	2695	2695	ok		results/supplementary/supplementary_stats.json	json
+C222	R5	the pocket was measured in 6 independent IP3-bound structures	6	6	ok		results/ligand_site/shell_agreement.tsv	count
+C223	R5	6DQN recovers all ten published contacts	10	10	ok		results/ligand_site/shell_agreement.tsv	cell
+C224	R5	8TKG recovers all ten and adds two	276;411	276;411	ok		results/ligand_site/shell_agreement.tsv	cell
+C225	R5	the contacts beat the rest of the core in ITPR1 (q = 0.048)	0.048	0.048	ok		results/ligand_site/contact_test.tsv	cell
+C226	R5	in ITPR2 (q = 0.017)	0.01725	0.01725	ok		results/ligand_site/contact_test.tsv	cell
+C227	R5	in ITPR3 (q = 0.041)	0.041324	0.041324	ok		results/ligand_site/contact_test.tsv	cell
+C228	R5	and beat the rest of the pocket in none - ITPR2 is the smallest q at 0.12	0.124893	0.124893	ok		results/ligand_site/contact_test.tsv	cell
+C229	R5	every ITPR1 contact site is under purifying selection	1.0	1.0	ok		results/ligand_site/omega_by_shell.tsv	cell
+C230	R5	and every ITPR3 contact site	1.0	1.0	ok		results/ligand_site/omega_by_shell.tsv	cell
+C231	R5	falling to 0.875 in ITPR1's lowest shell, a fall of 0.13	0.875	0.875	ok		results/ligand_site/omega_by_shell.tsv	cell
+C232	R5	to 0.750 in ITPR2's, a fall of 0.25	0.75	0.75	ok		results/ligand_site/omega_by_shell.tsv	cell
+C232b	R5	and to 0.825 in ITPR3's, a fall of 0.18	0.825	0.825	ok		results/ligand_site/omega_by_shell.tsv	cell
+C232c	R5	the outermost shell sits above the third in ITPR1, so the fall is not monotone	0.8966	0.8966	ok		results/ligand_site/omega_by_shell.tsv	cell
+C233	R5	the ITPR1 pore leads the core by 0.0239 identity	-0.0239	-0.0239	ok		results/ligand_site/module_contrast.tsv	cell
+C234	R5	on 223 tips against 32	223	223	ok		results/ligand_site/module_contrast.tsv	cell
+C235	R5	at q = 3.6e-34	3.64188e-34	3.64188e-34	ok		results/ligand_site/module_contrast.tsv	cell
+C236	R5	the ITPR3 pore leads by 0.0199	-0.0199	-0.0199	ok		results/ligand_site/module_contrast.tsv	cell
+C237	R5	on 218 tips against 42	218	218	ok		results/ligand_site/module_contrast.tsv	cell
+C238	R5	ITPR2 shows no difference (q = 0.13)	0.134144	0.134144	ok		results/ligand_site/module_contrast.tsv	cell
+C239	R5	the paired test runs on 260 ITPR1 orthologues	260	260	ok		results/ligand_site/module_contrast.tsv	cell
+C240	R5	246 ITPR2	246	246	ok		results/ligand_site/module_contrast.tsv	cell
+C241	R5	262 ITPR3	262	262	ok		results/ligand_site/module_contrast.tsv	cell
+C242	R5	with the luminal loop left in, ITPR1 reverses to core > pore by 0.055	0.055	0.055	ok		results/ligand_site/module_contrast.tsv	cell
+C243	R5	ITPR2 by 0.0445	0.0445	0.0445	ok		results/ligand_site/module_contrast.tsv	cell
+C244	R5	ITPR3 by 0.0558	0.0558	0.0558	ok		results/ligand_site/module_contrast.tsv	cell
+C245	R5	the worst of the three reversed q values is 1.5e-41	1.53085e-41	1.53085e-41	ok		results/ligand_site/module_contrast.tsv	cell
+C246	R5	3,527 eukaryotic reference proteomes were swept for PI-PLC	3527	3527	ok		results/ligand_site/plc_repertoire.tsv	count
+C247	R5	64 of them carry an ITPR and no PI-PLC	64	64	ok		results/ligand_site/pathway_cooccurrence.tsv	sum
+C248	R5	no vertebrate proteome does - the search's positive control	0	0	ok		results/ligand_site/pathway_cooccurrence.tsv	cell
+C249	R5	PLC-absent records sit at a median pore identity of 0.358	0.3582	0.3582	ok		results/ligand_site/deep_lineage_covariates.tsv	cell
+C250	R5	against 0.589 for the rest	0.5886	0.5886	ok		results/ligand_site/deep_lineage_covariates.tsv	cell
+C251	R5	all 36 PLC-absent records matched on divergence	36	36	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
+C252	R5	the matched within-pair difference is -0.0064	-0.0064	-0.0064	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
+C253	R5	95 % CI -0.0161	-0.0161	-0.0161	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
+C254	R5	to 0.0152	0.0152	0.0152	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
+C255	R5	19 tips against 17	19	19	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
+C256	R5	p = 0.87 on the sign test	0.867939	0.867939	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
+C257	R5	the ryanodine receptor control shifts by -0.0624 on the same instrument	-0.0624	-0.0624	ok		results/ligand_site/deep_lineage_ryr_control.tsv	grep
+C258	R5	the matched test has 0.99 power at a shift of 0.05	0.9902	0.9902	ok		results/ligand_site/deep_lineage_matched_power.tsv	cell
+C259	R5	and 0.59 at 0.03	0.5877	0.5877	ok		results/ligand_site/deep_lineage_matched_power.tsv	cell
+C260	R6	291 split or fragmentary loci were scored	291	291	ok		results/gene_architecture/gene_architecture_stats.json	json
+C261	R6	264 of them are fragmentary	264	264	ok		results/gene_architecture/gene_architecture_stats.json	json
+C262	R6	27 are split	27	27	ok		results/gene_architecture/gene_architecture_stats.json	json
+C263	R6	228 carry a terminus inside an exon	228	228	ok		results/gene_architecture/gene_architecture_stats.json	json
+C264	R6	3 are broken entirely at real junctions	3	3	ok		results/gene_architecture/gene_architecture_stats.json	json
+C265	R6	1,448 internal termini were scored	1448	1448	ok		results/gene_architecture/gene_architecture_stats.json	json
+C266	R6	406 of them sit inside an exon	406	406	ok		results/gene_architecture/gene_architecture_stats.json	json
+C267	R6	353 inside an intron	353	353	ok		results/gene_architecture/gene_architecture_stats.json	json
+C268	R6	689 on a boundary the gene model carries	689	689	ok		results/gene_architecture/gene_architecture_stats.json	json
+C269	R6	which is 47.6 % of them	0.4758	0.4758	ok		results/gene_architecture/gene_architecture_stats.json	json

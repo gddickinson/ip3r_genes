@@ -7,7 +7,8 @@ trimmed to 1,797 columns, 96.8 % of them parsimony-informative. Maximum
 likelihood under Q.insect+R7 (log-likelihood −215,452.0) recovers all three
 paralogue clades and the ryanodine receptor outgroup as monophyletic groups,
 with 69.5 % of the 131 internal nodes clearing both SH-aLRT ≥ 80 and
-UFBoot ≥ 95 (Fig. 3).
+UFBoot ≥ 95 (Fig. 3; the alignment itself, its identity structure and its
+per-sequence coverage are in Extended Data Fig. 4).
 
 **The sister question has an answer.** The unconstrained tree groups
 *ITPR2* with *ITPR3*. Testing the three rooted arrangements against each
@@ -15,7 +16,7 @@ other with the approximately unbiased test over 10,000 RELL replicates
 rejects *ITPR1*+*ITPR2* (p = 1.8 × 10⁻⁵) and *ITPR1*+*ITPR3*
 (p = 1.65 × 10⁻⁵) and does not reject *ITPR2*+*ITPR3* (p = 0.476) or the
 maximum-likelihood tree itself (p = 0.525); both surviving topologies carry
-the same pair (Extended Data Fig. 4). Because bootstrap support is
+the same pair (Extended Data Fig. 5). Because bootstrap support is
 optimistic under model violation and a four-kingdom alignment violates any
 single model by construction, we re-ran the search with an extra
 nearest-neighbour-interchange round on every bootstrap tree: no claim in the
@@ -28,7 +29,7 @@ annotation depth, naming convention and window rule are held constant.
 Within-paralogue Jaccard similarity runs 216- to 413-fold above its own
 matched null, while every cross-paralogue and every cross-family class sits
 at or below the null — the maximum mean Jaccard over 168,241 IP₃ × ryanodine
-receptor pairs is 0.0002 (Extended Data Fig. 5). A flank-consensus
+receptor pairs is 0.0002 (Extended Data Fig. 6). A flank-consensus
 paralogue caller built on this, with its operating point measured rather
 than chosen, is 405 of 405 correct on loci whose paralogue the assembly's
 own annotation establishes, at a 0.008 false-call rate on 726 random
@@ -78,7 +79,7 @@ teleost genomes above the contiguity bar, *ITPR1* is present at a mean of
 *ITPR3* — while the same genomes carry 5.82 ryanodine receptors. The pre-3R
 ray-finned outgroups (bichir, gar, bowfin) carry 1/1/1 plus 3, and the
 lineages with a further whole-genome duplication carry 3/2/2 plus 8
-(Extended Data Fig. 6). The two *ITPR1* copies are not a tandem array: 20
+(Extended Data Fig. 8). The two *ITPR1* copies are not a tandem array: 20
 of 71 two-copy genomes place them on different contigs and the remainder a
 median 8.9 Mb apart. They partition the ancestral block disjointly in 45 of
 49 genomes against a tetrapod reference and 46 of 49 against a pre-3R

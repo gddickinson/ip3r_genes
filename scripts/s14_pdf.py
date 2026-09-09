@@ -276,6 +276,11 @@ def run(keep_intermediate: bool = False) -> int:
         "--pdf-engine", engine,
         "--include-in-header", TEX_PREAMBLE.name,
         "--resource-path", ".",
+        # --verbose is what puts the LaTeX engine's own log in front of us.
+        # Without it pandoc reports only its own warnings and a dropped glyph
+        # is silent: `IP\u2083` reached an early build as `IP` because TeX Gyre
+        # Termes has no subscript digits, and nothing in the build said so.
+        "--verbose",
         "-o", PDF_OUT.name,
     ]
     proc = subprocess.run(cmd, cwd=lib.MS, capture_output=True, text=True,
@@ -285,9 +290,23 @@ def run(keep_intermediate: bool = False) -> int:
         print(proc.stderr[-4000:], file=sys.stderr)
         print(f"[s14 pdf] pandoc failed (engine {engine})", file=sys.stderr)
         return 1
-    if proc.stderr.strip():
-        for line in proc.stderr.strip().split("\n")[:10]:
-            print(f"  pandoc: {line}")
+    # The glyph guard. A font without a character does not fail the build:
+    # xelatex writes `Missing character:` to the log and carries on with a
+    # hole in the page, so the log is the only place the defect exists.
+    log = proc.stdout + proc.stderr
+    missing = sorted({line.strip() for line in log.split("\n")
+                      if "Missing character" in line})
+    if missing:
+        for line in missing[:20]:
+            print(f"  {line}", file=sys.stderr)
+        print(f"[s14 pdf] {len(missing)} distinct missing characters in the "
+              f"typeset PDF — the document font lacks a glyph the text uses",
+              file=sys.stderr)
+        return 1
+    warnings = sorted({line.strip() for line in log.split("\n")
+                       if "LaTeX Warning" in line})
+    for line in warnings[:10]:
+        print(f"  pandoc: {line}")
     if not keep_intermediate:
         MD_BUILD.unlink(missing_ok=True)
         TEX_PREAMBLE.unlink(missing_ok=True)

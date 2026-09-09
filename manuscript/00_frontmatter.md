@@ -49,10 +49,17 @@ gnathostome stem at 462–563 Ma, and the surviving two-round paralogon links
 run through *ITPR1*. *ITPR1* alone was doubled and retained after the
 teleost genome duplication (97.3 % of 73 teleost genomes), and *ITPR1* alone
 is held under roughly twice the purifying selection of its sisters
-(ω = 0.024 against 0.043 and 0.042; RELAX k = 9.36, intensified). Mapping
-constraint onto the channel identifies the gate and the selectivity filter
-as the least changeable elements, places the ten measured IP₃ contacts
-outside the Pfam domain named after the ligand, and locates a 50-residue
-luminal loop that is the least conserved sequence in the receptor and sits
-about fifty residues from the most conserved.
+(ω = 0.024 against 0.043 and 0.042; RELAX k = 9.36, intensified). The three
+paralogues share 46 to 49 of their roughly 58 intron positions in every
+genome that carries them, an 85- to 88-fold enrichment; the ryanodine
+receptors, which carry every diagnostic domain of the family, share one.
+Mapping constraint onto the channel identifies the gate and the selectivity
+filter as the least changeable elements, places the ten measured IP₃
+contacts outside the Pfam domain named after the ligand, and finds the
+constrained unit at the ligand site to be a 15 Å pocket rather than the
+contacts themselves. The IP₃-binding core is the *less* constrained of the
+two functional modules, and that comparison reverses on whether a
+50-residue luminal loop — the least conserved sequence in the receptor,
+lying about fifty residues from the most conserved — is counted as part of
+the pore.
 
