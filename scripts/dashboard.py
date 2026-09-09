@@ -74,14 +74,30 @@ def parse_ledger() -> list[dict]:
     for line in text.splitlines():
         if not line.startswith("| S"):
             continue
-        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        # Split on unescaped pipes only. A Results cell quoting a shell
+        # pipeline (`fastq-dump \| hisat2`) is legal markdown and used to
+        # add a phantom column here; the row then had 6 cells, was read as
+        # the analysis table's Priority layout, and its status was taken
+        # from the prose — which reported a completed task as pending for a
+        # day without anything failing.
+        cells = [c.replace("\\|", "|").strip()
+                 for c in re.split(r"(?<!\\)\|", line.strip().strip("|"))]
         # S14a / S14b / S14c are real rows, so the id pattern allows a suffix
         if len(cells) < 4 or not re.fullmatch(r"S\d+[a-z]?", cells[0]):
             continue
-        if len(cells) >= 6:          # analysis table has a Priority column
-            tid, title, depends, _prio, status, results = cells[:6]
-        else:
-            tid, title, depends, status, results = cells[:5]
+        # The status cell is found by *pattern*, not by position: the two
+        # ledger tables have different column counts and a positional read
+        # cannot tell a missing Priority column from a shifted row.
+        si = next((i for i, c in enumerate(cells[3:], start=3)
+                   if re.match(r"(completed|in[_ ]progress|pending|blocked|—)\b",
+                               c.strip().lower())), None)
+        if si is None:
+            print(f"[dashboard] {cells[0]}: no status cell found — skipped",
+                  file=sys.stderr)
+            continue
+        tid, title, depends = cells[0], cells[1], cells[2]
+        status = cells[si]
+        results = " | ".join(cells[si + 1:])
         if status == "—":            # the "(promoted)" placeholder row
             continue
         s = status.lower()

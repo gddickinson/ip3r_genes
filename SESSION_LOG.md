@@ -3464,3 +3464,31 @@ core-versus-pore boundary problem, which any figure or sentence about "the
 pore" now has to declare; the twelve-residue contact set against the ten the
 draft quotes; and a lineage result that is a bounded null rather than a
 caveat.
+
+### Addendum (same session) — the dashboard was reporting S12 as pending
+
+Asked whether S12 needed more work. It does not: 18 committed tables, its
+self-test passes, and its report renders every section. But the **dashboard**
+was showing it as `pending`, and the cause is worth recording because it is a
+protocol hazard rather than a display bug.
+
+S12's Results cell quotes a shell pipeline — `` `fastq-dump | hisat2` ``.
+That pipe is legal inside a markdown table cell but `dashboard.py` split the
+row on every `|`, so S12 came out with 6 cells instead of 5, was read as the
+*analysis* table's layout (which has an extra Priority column), and its
+status was taken from the Results prose. The prose does not contain the word
+"completed", so the row fell through to `pending`.
+
+Why that matters: session-protocol step 4 picks the first `in_progress` row,
+else the topmost unblocked `pending` one. A session driven from the dashboard
+rather than from the ledger text would have started **S12** this morning
+instead of S22, and redone finished work. Nothing failed; the number was
+simply wrong.
+
+Both halves fixed. The pipe is escaped in the roadmap (`\|`), and
+`parse_ledger` now splits on **unescaped** pipes only and locates the status
+cell **by pattern rather than by position** — a positional read cannot tell a
+missing Priority column from a shifted row. A row with no recognisable status
+is now skipped with a message on stderr instead of silently becoming
+`pending`. All 33 rows re-parse correctly: only S14b and S14c are pending,
+and both legitimately.
