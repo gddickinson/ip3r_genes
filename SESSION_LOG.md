@@ -3709,3 +3709,17 @@ series**, which starts from `thesis/chapter_assignment.tsv` and has one
 declared departure to resolve: the thesis puts all of S19 in the chapter that
 builds the search, and S26's proposal splits it across two papers. Appendix E
 states it in both directions rather than picking.
+
+### Addendum (same session) — the typeset PDF was not reproducible either
+
+Re-running the build after committing showed the thesis PDF changing by two
+bytes: an embedded build timestamp, which is the defect D65 fixed for figure
+PDFs one level down. Setting `SOURCE_DATE_EPOCH` in the pandoc call removes
+it.
+
+It does not make the file byte-identical, and that is stated rather than
+claimed away. Two builds of the same document now differ in **exactly 64
+bytes of 3.5 million** — two copies of a random 16-byte trailer `/ID` that
+this `xdvipdfmx` writes regardless of `FORCE_SOURCE_DATE`. So a checksum
+recorded against a typeset PDF still means nothing, and `s14_pdf.py` has the
+same defect without even the timestamp fix. Recorded as an emergent item.

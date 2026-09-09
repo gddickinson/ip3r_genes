@@ -29,6 +29,7 @@ that module rather than restated:
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import shutil
 import subprocess
@@ -138,8 +139,21 @@ def run(keep_intermediate: bool = False) -> int:
            "--include-in-header", TEX_PREAMBLE.name,
            "--resource-path", ".", "--verbose",
            "-o", PDF_OUT.name]
+    # D65 one level up: `figstyle.save()` drops the creation timestamp from a
+    # figure's pdf so a figure rebuilt from the same code on the same data is
+    # byte-identical. The *document* pdf had the same defect, which makes any
+    # checksum recorded against it meaningless, and SOURCE_DATE_EPOCH fixes
+    # it — the build date is now the epoch rather than today.
+    #
+    # It does not make the file byte-identical, and the residue is stated
+    # rather than claimed away: this xdvipdfmx still writes a random 16-byte
+    # trailer /ID, twice, so two builds of the same document differ in exactly
+    # 64 bytes of 3.5 million and in nothing else. FORCE_SOURCE_DATE=1 is set
+    # as well and does not change that on this build.
+    env = dict(os.environ, SOURCE_DATE_EPOCH="0",
+               FORCE_SOURCE_DATE="1", TZ="UTC")
     proc = subprocess.run(cmd, cwd=L.TH, capture_output=True, text=True,
-                          timeout=1800)
+                          timeout=1800, env=env)
     if proc.returncode != 0:
         print(proc.stdout[-4000:], file=sys.stderr)
         print(proc.stderr[-4000:], file=sys.stderr)
