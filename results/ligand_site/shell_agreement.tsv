@@ -1,0 +1,7 @@
+pdb_id	search_radius_A	n_residues_scored	n_contact_le_4.5A	n_s0_contacts_recovered	n_s0_contacts	extra_contacts	note
+6DQN	15.0	90	10	10	10		
+8TKG	15.0	106	12	10	10	276;411	
+8TKF	15.0	98	12	10	10	276;411	
+8TKH	15.0	94	12	10	10	276;411	
+7T3P	15.0	96	11	10	10	411	
+8TLA	15.0	121	11	10	10	276	

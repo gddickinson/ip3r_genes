@@ -1,0 +1,8 @@
+test	note	n_test	n_reference	median_test_delta	median_reference_delta	shift	cles	p_mannwhitney
+ryr_control vs every ITPR tip	positive control — the pore without the ligand	6	122	-0.1357	-0.0361	-0.0996	0.0792	0.000527
+nonvert_itpr_plc_absent vs nonvert_itpr_plc_present	the brief's lineage test	2	47	-0.1058	-0.0721	-0.0337	0.3085	0.376544
+nonvert_itpr_plc_absent (description)	no comparison — the stratum itself	2		-0.1058				
+nonvert_itpr_plc_no_reference_proteome (description)	no comparison — the stratum itself	18		-0.0718				
+nonvert_itpr_plc_present (description)	no comparison — the stratum itself	47		-0.0721				
+ryr_control (description)	no comparison — the stratum itself	6		-0.1357				
+vertebrate_itpr (description)	no comparison — the stratum itself	55		-0.0305				

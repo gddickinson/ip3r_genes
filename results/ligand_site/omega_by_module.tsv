@@ -1,0 +1,16 @@
+paralog	region	is_primary	n_sites	median_beta	mean_beta	n_beta_zero	n_usable_alpha	n_alpha_at_bound	median_omega_usable	frac_purifying_q05
+ITPR1	ligand_core	True	294	0.0	0.0251	219	284	0	0.0	0.8741
+ITPR1	ligand_core_ibc	False	370	0.0	0.0221	281	356	0	0.0	0.873
+ITPR1	pore_module	True	195	0.033	0.0446	95	191	0	0.0046	0.8718
+ITPR1	pore_module_all	False	210	0.0358	0.0673	95	206	0	0.0101	0.8286
+ITPR1	WHOLE_PROTEIN	False	2456	0.0	0.0349	1591	2355	11	0.0	0.8603
+ITPR2	ligand_core	True	294	0.0	0.0583	179	284	0	0.0	0.7585
+ITPR2	ligand_core_ibc	False	370	0.0	0.0536	235	356	0	0.0	0.7486
+ITPR2	pore_module	True	237	0.0	0.061	132	232	3	0.0	0.7511
+ITPR2	pore_module_all	False	252	0.0	0.0834	132	246	4	0.0001	0.7262
+ITPR2	WHOLE_PROTEIN	False	2455	0.0	0.0656	1427	2334	13	0.0	0.712
+ITPR3	ligand_core	True	294	0.0	0.0593	164	283	1	0.0	0.8129
+ITPR3	ligand_core_ibc	False	370	0.0	0.0548	211	355	3	0.0	0.8081
+ITPR3	pore_module	True	238	0.0	0.0386	152	232	0	0.0	0.8697
+ITPR3	pore_module_all	False	253	0.0	0.0579	153	247	0	0.0	0.834
+ITPR3	WHOLE_PROTEIN	False	2457	0.0	0.0687	1322	2343	13	0.0	0.7733

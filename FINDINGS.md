@@ -2278,3 +2278,76 @@ built by a different pipeline from evidence this method never saw, **94.5 %**
 of 188,146 annotated exon edges fall exactly on the same coordinate. An
 earlier session could make that comparison for two genes; this one makes it
 for the whole scope.
+
+---
+
+## 2026-09-09 — The part that binds the messenger is not the part evolution protects (S22)
+
+The IP₃ receptor is named after its ligand. The domain that gives the family
+its identity in every database is the one that holds inositol trisphosphate,
+and the obvious expectation is that this is the part of the protein evolution
+guards most closely. It is not.
+
+**The pore is better conserved than the binding core.** Comparing the two
+inside the same protein, in the same 250-odd animals per paralogue, so that
+neither region can be favoured by having better data: across ITPR1 the ion
+pore is about two percentage points more identical from species to species
+than the ligand-binding core, and across ITPR3 the same. In ITPR2 the two are
+level. Nowhere is the binding core ahead. What the receptor cannot afford to
+change is the machinery that lets calcium through, not the machinery that
+decides when.
+
+**The answer flips on a boundary nobody usually states, and that is the more
+useful result.** The standard domain databases draw the receptor's channel
+region so that it includes a fifty-residue loop hanging out into the lumen of
+the endoplasmic reticulum — the single most variable stretch of sequence in
+the whole protein. Leave that loop in and the comparison reverses: the ligand
+core now looks five points *better* conserved than "the pore", overwhelmingly
+so. Both numbers are correct about the region they describe. Neither is a
+statement about the pore. Any published comparison of this kind that does not
+say where it drew the line is not interpretable, and this one now says.
+
+**What selection protects is a pocket, not a set of contacts.** Ten residues
+of the receptor touch the messenger closely enough to be called contacts, and
+they are indeed more conserved than the rest of the binding core. But they are
+no more conserved than the *other* residues lining the same pocket — every
+residue within fifteen ångström of the ligand is unusually protected, and
+there is no step at the edge of physical contact. Two independent measures
+agree: every contact residue in all three paralogues is under detectable
+purifying selection, and that fraction falls away as you move out through the
+pocket. The unit evolution is holding is a small region of the protein, not a
+list of positions.
+
+**The site has twelve contact residues, not ten.** The ten came from a single
+cryo-electron microscopy structure. Measured across six independent structures
+of the same human receptor with the messenger bound, two more residues sit
+within contact distance in most of them — an alanine and, more interestingly,
+an arginine that is completely unchanged across 265 species and lies within
+4.1 to 4.6 ångström of the ligand's phosphates in every single structure. A
+basic residue that close to a trisphosphate is not a bystander. One map could
+not see it; six can.
+
+**Sixty-four organisms carry this receptor without the enzyme that makes its
+messenger.** Sweeping every eukaryotic reference proteome this project has for
+phospholipase C — the enzyme that cleaves the membrane lipid to release
+IP₃ — finds it in essentially every animal, plant and fungus that has been
+looked at, and missing from 64 that nonetheless carry a full-length IP₃
+receptor. They are not random: they are the oomycetes (the water moulds,
+including *Phytophthora*), the early-branching fungi such as *Mucor* and
+*Rhizopus*, several parasitic flatworms including four *Schistosoma* species,
+two ciliates and a handful of green algae. Every one of them has a complete
+receptor gene, so this is not a gap in the data.
+
+**And their binding site has not decayed.** This is the test the session was
+built around, and it comes with the control that makes a negative reading
+mean something. Compared naively, those 64 organisms' binding cores do look
+more degraded — but so does everything else about their proteins, because
+they are far more distant relatives than the insects and worms they were
+being compared against. Matched against relatives at the same evolutionary
+distance, the difference disappears entirely, with a confidence interval
+tight enough to exclude an effect a sixth the size of the one the same
+measurement finds in the ryanodine receptor, a sister protein that has the
+same pore and genuinely does not bind IP₃. Losing the canonical route to the
+messenger does not release the site that binds it. Either these organisms make
+IP₃ another way, or the site is held by something else — and both are open
+questions the sequence cannot answer *(pending: unassigned)*.

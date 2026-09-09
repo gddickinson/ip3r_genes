@@ -1,0 +1,6 @@
+group	n_proteomes	n_itpr	n_plc	n_both	n_itpr_no_plc	n_plc_no_itpr	n_neither	itpr_key
+fungi	1527	28	1423	6	22	1417	82	proteome
+metazoa_nonvert	546	509	524	499	10	25	12	proteome
+protista_other	252	110	169	82	28	87	55	proteome
+vertebrata	763	745	760	745	0	15	3	taxid
+viridiplantae	432	15	390	11	4	379	38	proteome

@@ -1,0 +1,274 @@
+{
+  "task": "S22",
+  "rules": {
+    "ligand_core_primary": "minimal contiguous span containing every IP3 contact measured on the structure",
+    "pore_module_primary": "PF00520 channel span less the luminal loop located by geometry in S17",
+    "sensitivity_definitions": [
+      "ibc_literature (ITPR1 224-604, R05)",
+      "channel_all (PF00520 as drawn)"
+    ],
+    "pairing": "one core and one pore number per orthologue; a tip below 0.5 coverage of either module is dropped and counted",
+    "contact_backgrounds": [
+      "rest_of_core",
+      "rest_of_pocket"
+    ],
+    "plc_definition": "a protein carrying both PF00387 and PF00388",
+    "lineage_control": "the ryanodine receptors \u2014 same pore, no IP3",
+    "divergence_matching": "each PLC-absent record matched to up to 3 PLC-present records within 0.03 pore identity of its own"
+  },
+  "parameters": {
+    "search_radius_A": 15.0,
+    "shell_edges_A": [
+      [
+        0.0,
+        4.5,
+        "contact"
+      ],
+      [
+        4.5,
+        8.0,
+        "second"
+      ],
+      [
+        8.0,
+        11.5,
+        "third"
+      ],
+      [
+        11.5,
+        15.0,
+        "fourth"
+      ]
+    ],
+    "structures": [
+      "6DQN",
+      "8TKG",
+      "8TKF",
+      "8TKH",
+      "7T3P",
+      "8TLA"
+    ],
+    "consensus_majority": 4,
+    "permutation_iters": 200000,
+    "primary_layer": "deep",
+    "plc_pfam": {
+      "PF00387": "PI-PLC-Y \u2014 the C-terminal half of the catalytic TIM barrel",
+      "PF00388": "PI-PLC-X \u2014 the N-terminal half of the catalytic TIM barrel"
+    },
+    "evalue_primary": 1e-05,
+    "evalue_sweep": 10.0,
+    "groups_swept_for_plc": [
+      "vertebrata",
+      "metazoa_nonvert",
+      "fungi",
+      "viridiplantae",
+      "protista_other"
+    ]
+  },
+  "modules": {
+    "ITPR1/contact_span": {
+      "start": "265",
+      "end": "569",
+      "n_residues": "305",
+      "check": "all_contacts_no_pore"
+    },
+    "ITPR1/ibc_literature": {
+      "start": "224",
+      "end": "604",
+      "n_residues": "381",
+      "check": "all_contacts_no_pore"
+    },
+    "ITPR1/channel_minus_luminal": {
+      "start": "2363",
+      "end": "2608",
+      "n_residues": "195",
+      "check": "both_pore_sites_no_contact"
+    },
+    "ITPR1/channel_all": {
+      "start": "2363",
+      "end": "2608",
+      "n_residues": "246",
+      "check": "both_pore_sites_no_contact"
+    },
+    "ITPR2/contact_span": {
+      "start": "265",
+      "end": "569",
+      "n_residues": "305",
+      "check": "all_contacts_no_pore"
+    },
+    "ITPR2/ibc_literature": {
+      "start": "224",
+      "end": "604",
+      "n_residues": "381",
+      "check": "all_contacts_no_pore"
+    },
+    "ITPR2/channel_minus_luminal": {
+      "start": "2265",
+      "end": "2551",
+      "n_residues": "239",
+      "check": "both_pore_sites_no_contact"
+    },
+    "ITPR2/channel_all": {
+      "start": "2265",
+      "end": "2551",
+      "n_residues": "287",
+      "check": "both_pore_sites_no_contact"
+    },
+    "ITPR3/contact_span": {
+      "start": "266",
+      "end": "569",
+      "n_residues": "304",
+      "check": "all_contacts_no_pore"
+    },
+    "ITPR3/ibc_literature": {
+      "start": "225",
+      "end": "604",
+      "n_residues": "380",
+      "check": "all_contacts_no_pore"
+    },
+    "ITPR3/channel_minus_luminal": {
+      "start": "2240",
+      "end": "2527",
+      "n_residues": "238",
+      "check": "both_pore_sites_no_contact"
+    },
+    "ITPR3/channel_all": {
+      "start": "2240",
+      "end": "2527",
+      "n_residues": "288",
+      "check": "both_pore_sites_no_contact"
+    }
+  },
+  "tables": {
+    "module_map.tsv": {
+      "sha256": "8d1af680fddadbe12e66e57f9654cf9593bc9be1edfbc43b4504d4f788777c93",
+      "rows": 12
+    },
+    "ligand_shells.tsv": {
+      "sha256": "30e449e98db3f6a9bc08b1e8e59f7b149e25a675418bfc90e26860b08aa5c407",
+      "rows": 125
+    },
+    "shell_agreement.tsv": {
+      "sha256": "9c20b672f524606178aab4c24114cb2dc579cac8bc5078db4011532903cf26dc",
+      "rows": 6
+    },
+    "shell_index.tsv": {
+      "sha256": "a2eee6029d11b894b04dd2b429a3c6b75b33a1601e1e94a7a3a3d173d5115e35",
+      "rows": 375
+    },
+    "tip_divergence.tsv": {
+      "sha256": "80e3f1643bd5f8ff58a81acbcb2aa0fc5d4e54f4dc308f9f057fd704a2cf9476",
+      "rows": 775
+    },
+    "module_contrast.tsv": {
+      "sha256": "07d22591428281dd96921b18d9e0f6213fa95be787335d5a7c57fb00f3d99dc3",
+      "rows": 12
+    },
+    "module_contrast_dropped.tsv": {
+      "sha256": "46c2117080309ca061de0cccf918af7a806ddfead59616afe7502ae083c85d51",
+      "rows": 28
+    },
+    "column_contrast.tsv": {
+      "sha256": "41fc8a03274e7d8afc85590e7c5b1462df2af70b0cde85a2c064584b297669df",
+      "rows": 24
+    },
+    "paralog_contrast.tsv": {
+      "sha256": "a8a83a8d3ab26b83685e38a862d0063502e8c031045f93cce9cfbac50dcfb8cb",
+      "rows": 6
+    },
+    "contact_test.tsv": {
+      "sha256": "aefe4080950b327772fafe1134caf0cb1288e044a7cc7a1885d49bdc57e4f121",
+      "rows": 48
+    },
+    "shell_constraint.tsv": {
+      "sha256": "ffba41ea74e000df82cd1d75d068148c346ebfff5e3bc8919bcd3f797cf63b2c",
+      "rows": 12
+    },
+    "shell_trend.tsv": {
+      "sha256": "29c390204122d256c58b5fb89d63ec3d5bb3e4996b82f9f847faf46a184ea8f1",
+      "rows": 3
+    },
+    "omega_by_module.tsv": {
+      "sha256": "3e4b3dfc24a2ff8234d13e2b8811f2a2cb6b7d45abfdfc672050afbd9c6eaa8c",
+      "rows": 15
+    },
+    "omega_module_test.tsv": {
+      "sha256": "6d3904aadc9fbc7e4dbb2afb883564ef68f8c0fd0d74f7ef32a77bffa2d7aac1",
+      "rows": 9
+    },
+    "omega_by_shell.tsv": {
+      "sha256": "2899e8357b2f0d03b5bd9a1ade369386b7d3238254481a7c4dd9c024c144a0a4",
+      "rows": 12
+    },
+    "omega_contacts.tsv": {
+      "sha256": "62c7a2a90e6b4ee04c784cbeada181e1feec3e3158cd092b3d30aaf5d0e706ea",
+      "rows": 6
+    },
+    "plc_profiles.tsv": {
+      "sha256": "2607b55d8834b48e79cce85fbfd46c8b7f6a6f6c429f2ddffa72d0571f5dbede",
+      "rows": 2
+    },
+    "plc_repertoire.tsv": {
+      "sha256": "9033651cec0c2e5cb89425524d7b4ccc431a6c38e612ed702566ad1d985baa91",
+      "rows": 3527
+    },
+    "pathway_by_proteome.tsv": {
+      "sha256": "5d814d6a934d61f566e8f36db21183e2624f8811dcfbe44cd520717df797d37a",
+      "rows": 3520
+    },
+    "pathway_cooccurrence.tsv": {
+      "sha256": "688de2b1064ade03cbf2c3281906ddd76631541c886bdf54f01ea8b12584e008",
+      "rows": 5
+    },
+    "plc_absent_taxa.tsv": {
+      "sha256": "b26e7fe00c43b9c0540d331c497f1b4c2d97c839156395b9894fe96b2190e9d0",
+      "rows": 64
+    },
+    "lineage_panel.tsv": {
+      "sha256": "9919d832648a7392903e8623d3aee0229035bc4c15ad3fa5b399d557f767a5f9",
+      "rows": 133
+    },
+    "lineage_test.tsv": {
+      "sha256": "a3e5206c83a591720e06652d3232d0cc8a20b74c5d6df7988e5dee43cd303ae6",
+      "rows": 7
+    },
+    "lineage_power.tsv": {
+      "sha256": "761ed33501ce3c67ddeb81053c9964c6da8f5618809891f525859be1a62e154a",
+      "rows": 8
+    },
+    "deep_lineage_panel.tsv": {
+      "sha256": "4d7301d31d47064caeb611b91d221fd5011081f30afe1ddcf6de0f51c2484dcb",
+      "rows": 662
+    },
+    "deep_lineage_test.tsv": {
+      "sha256": "719144452bf4055a3f853916bf6ebee07002550aa7374654d62aaf1add9bc540",
+      "rows": 29
+    },
+    "deep_lineage_covariates.tsv": {
+      "sha256": "1ac57adae4076df4ca61c301c07352a7b930f5c11acb9bdf9413bfd9def397a8",
+      "rows": 5
+    },
+    "deep_lineage_matched.tsv": {
+      "sha256": "0e6b01252304928161b44167f75af703b252cdf85b68048d42b1389181427409",
+      "rows": 36
+    },
+    "deep_lineage_matched_summary.tsv": {
+      "sha256": "9bde56b0da3f17d58f146fdd208791cf4409d3adeeceb274d6622ad8046108ed",
+      "rows": 1
+    },
+    "deep_lineage_matched_power.tsv": {
+      "sha256": "50760d27b90b8b321ba43c50ceb2fc91519db07879decb5ea95f5c4a79370f47",
+      "rows": 7
+    },
+    "deep_lineage_ryr_control.tsv": {
+      "sha256": "f2c9ed6275776094122f2e201cba0c8d64f6aba3ccaf6d31334b481be52a5723",
+      "rows": 7
+    },
+    "deep_lineage_power.tsv": {
+      "sha256": "fc7fef81075cc8470178123e84b7b6fb8194651838391b9991d6d4fd4e84597e",
+      "rows": 8
+    }
+  },
+  "tables_missing": [],
+  "self_test": "passed"
+}

@@ -1,0 +1,7 @@
+module	definition	paralog_a	paralog_b	n_shared_columns	n_identical_residues	frac_identical	mean_jsd_a	mean_jsd_b	mean_difference	n_a_higher	n_b_higher	n_ties	p_sign	p_wilcoxon	q_wilcoxon
+ligand_core	contact_span	ITPR1	ITPR2	303	216	0.7129	0.7481	0.7523	-0.0042	118	154	31	0.03363	0.24835	0.372525
+ligand_core	contact_span	ITPR1	ITPR3	303	201	0.6634	0.748	0.7537	-0.0057	130	154	19	0.172208	0.120218	0.240436
+ligand_core	contact_span	ITPR2	ITPR3	303	224	0.7393	0.7527	0.7538	-0.0011	151	133	19	0.313086	0.740111	0.740111
+pore_module	channel_minus_luminal	ITPR1	ITPR2	195	161	0.8256	0.7556	0.7735	-0.0179	56	108	31	5.97985e-05	1.25532e-07	7.53192e-07
+pore_module	channel_minus_luminal	ITPR1	ITPR3	195	152	0.7795	0.7556	0.7724	-0.0168	59	113	23	4.65489e-05	3.17923e-06	9.53769e-06
+pore_module	channel_minus_luminal	ITPR2	ITPR3	237	182	0.7679	0.7536	0.7532	0.0004	106	77	54	0.038178	0.424156	0.508987

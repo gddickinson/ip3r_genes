@@ -1,0 +1,2 @@
+n_plc_absent_in_test	n_matched	n_unmatched	median_difference	mean_difference	ci95_lo	ci95_hi	n_core_more_relaxed	n_core_less_relaxed	n_ties	p_sign	p_wilcoxon	match_tolerance	max_matches
+36	36	0	-0.0064	-0.0007	-0.0161	0.0152	19	17	0	0.867939	0.789405	0.03	3

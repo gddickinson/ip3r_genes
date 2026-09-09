@@ -1,0 +1,8 @@
+tip	accession	species	paralog	seq_length	core_n_ref	core_n_covered	core_coverage	core_identity	pore_n_ref	pore_n_covered	pore_coverage	pore_identity	in_test	delta_core_minus_pore	shift_vs_itpr	p_mannwhitney
+RYR_Caenorhabditis_elegans_Q94279	Q94279	Caenorhabditis elegans		5201	304	240	0.7895	0.3167	238	233	0.979	0.3648	True	-0.0481		
+RYR_Drosophila_melanogaster_Fruit_fly_Q24498	Q24498	Drosophila melanogaster (Fruit fly)		5127	304	258	0.8487	0.2248	238	225	0.9454	0.3644	True	-0.1396		
+RYR_Hemicentrotus_pulcherrimus_Sea_urchin__Q8TA74	Q8TA74	Hemicentrotus pulcherrimus (Sea urchin) (Strongylocentrotus pulcherrimus)		5317	304	263	0.8651	0.2357	238	226	0.9496	0.3628	True	-0.1271		
+RYR_Homo_sapiens_Human_P21817	P21817	Homo sapiens (Human)	RYR1	5038	304	258	0.8487	0.2597	238	226	0.9496	0.3496	True	-0.0899		
+RYR_Homo_sapiens_Human_Q92736	Q92736	Homo sapiens (Human)	RYR2	4967	304	258	0.8487	0.2364	238	218	0.916	0.3532	True	-0.1168		
+RYR_Homo_sapiens_Human_Q15413	Q15413	Homo sapiens (Human)	RYR3	4870	304	229	0.7533	0.3144	238	228	0.958	0.3509	True	-0.0365		
+SUMMARY								0.248				0.358	6	-0.1033	-0.0624	0.014987

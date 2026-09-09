@@ -19,8 +19,9 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S21 complete — the gene itself is measured; 30 of the 33 ledger
-rows are done.** The submission package builds end to end
+**Status: S22 complete — the ligand site is measured; 31 of the 33 ledger
+rows are done.** Only the manuscript rewrite pass (S14c) and the human-gated
+deposit (S14b) remain. The submission package builds end to end
 from the committed tables: `python scripts/s14_assemble.py` runs figures →
 claims → stitch → PDF → deposit and exits zero on **7 main + 14 Extended Data
 + 6 Supplementary figures (62 panel files, none missing), 180/180
@@ -491,7 +492,7 @@ One task per session. Full ledger with dependencies and results in
 | S18 | Annotation-quality audit + correction list | ✅ completed 2026-09-08 |
 | S19 | Methods results | ✅ completed 2026-09-08 |
 | S21 | Gene architecture (~58 exons) | ✅ completed 2026-09-08 |
-| S22 | Ligand-site evolution | ⏳ pending |
+| S22 | Ligand-site evolution | ✅ completed 2026-09-09 |
 | S14a | Manuscript assembly | ✅ completed 2026-09-08 |
 | S24 | Supplementary figures + figure audit | ✅ completed 2026-09-08 |
 | S14c | Manuscript rewrite pass | ⏳ pending |
@@ -502,6 +503,50 @@ One task per session. Full ledger with dependencies and results in
 ## Findings so far
 
 Plain-language entries per task: [`FINDINGS.md`](FINDINGS.md). Headlines:
+
+**S22 — the part that binds the messenger is not the part evolution
+protects.** Comparing the IP₃-binding core against the pore module **inside
+the same protein and paired per orthologue** — one core number and one pore
+number per sweep orthologue, 246–262 per paralogue — the **pore is the more
+conserved of the two**: by 0.024 identity in ITPR1 (223 tips to 32,
+q = 3.6e-34) and 0.020 in ITPR3 (218 to 42, q = 1.6e-28), with ITPR2 level.
+The module that names the family is not the one under the tightest
+constraint. **And the answer reverses on one boundary**: leave the
+50-residue luminal loop inside PF00520, as InterPro draws it, and all three
+paralogues flip to core > pore at q < 1e-37 (Decisions **D69**). Both are
+correct about their own region; neither is a statement about "the pore".
+
+![S22 modules](results/ligand_site/figures/s22_fig1_modules.png)
+
+**S22 — what selection holds is a pocket, not a contact set.** Every residue
+within 15 Å of the ligand was measured **all-atom** across **six**
+independent IP₃-bound human ITPR3 structures, with S0's ten contacts
+recovered in S0's own structure as a hard-failure control (**D70**). The
+consensus contact set is **twelve**, not ten — Ala276 and **Arg411**, an
+arginine invariant across 265 orthologues and 4.1–4.6 Å from the ligand's
+phosphates in every structure, are contacts one map cannot see. The ten
+contacts beat the rest of the binding core (q = 0.048 / 0.017 / 0.041) and
+beat the rest of the pocket in **none** of the three paralogues; every shell
+out to 15 Å sits above the whole-protein mean and there is no step at 4.5 Å.
+
+![S22 pocket](results/ligand_site/figures/s22_fig2_shells.png)
+
+**S22 — 64 eukaryotes carry the receptor without the enzyme that makes its
+ligand, and their binding site has not decayed.** PI-PLC presence (both
+catalytic halves, PF00387 **and** PF00388) swept over all **3,527 eukaryotic
+reference proteomes**: 760 of 763 vertebrate proteomes carry one — the
+positive control — and **64 carry an ITPR and no PI-PLC**, concentrated in
+the oomycetes and the early-diverging fungi, every one of them holding a
+full-length receptor. Pooled, their ligand core looks relaxed (p = 9.7e-6);
+that is a **clade artefact** (median pore identity 0.358 against 0.589).
+Matched on divergence, all 36 that enter the test find controls and the
+effect is **gone** — median within-pair difference −0.0064, 95 % CI −0.016
+to +0.015, p = 0.87 — against a ryanodine-receptor positive control measured
+on the same instrument at the same divergence whose shift is −0.062 and
+which the matched test detects with essentially full power (**D71**). A
+bounded null, not a caveat.
+
+![S22 lineage](results/ligand_site/figures/s22_fig4_lineage.png)
 
 **S21 — the same gene, packed three different ways.** The exon/intron
 architecture, read off the sweep's own alignments to 309 genomes. Across

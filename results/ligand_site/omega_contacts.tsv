@@ -1,0 +1,7 @@
+paralog	background	n_background	n_contacts	mean_contact_beta	mean_background_beta	n_contact_beta_zero	p_permutation_lower	q_permutation_lower
+ITPR1	rest_of_core	294	10	0.0	0.026	10	0.050285	0.150855
+ITPR1	rest_of_pocket	124	10	0.0	0.0068	10	0.142779	0.214168
+ITPR2	rest_of_core	294	10	1e-05	0.0603	9	0.01045	0.0627
+ITPR2	rest_of_pocket	125	10	1e-05	0.014	9	0.255959	0.307151
+ITPR3	rest_of_core	294	10	0.0245	0.0605	7	0.126554	0.214168
+ITPR3	rest_of_pocket	125	10	0.0245	0.026	7	0.555577	0.555577

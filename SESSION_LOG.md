@@ -3373,3 +3373,94 @@ alignment frame and the anchor test are reusable as they stand, and S17's
 per-residue table already carries the measured IP₃ contacts. Expect the
 blocking step to be scope: the lineages that lost the upstream PLC/IP₃
 pathway are not enumerated anywhere in this project yet.
+
+---
+
+## 2026-09-09 — S22: ligand-site evolution
+
+**Task.** The one module the ryanodine receptors do not share functionally is
+the IP₃-binding core. Ask what evolution did to it: against the pore, against
+its own contact residues, and in lineages that lost the upstream enzyme.
+
+### What ran
+
+`scripts/s22_*.py`, ten ordered stages behind `s22_run.py`
+(`modules → shells → paired → contacts → omega → plc → lineage →
+deep_lineage → tables → figures → report`). Everything but `plc` and
+`deep_lineage` is offline and rebuilds byte-identically in under a minute;
+`plc` is 10 `hmmsearch` runs over 33 GB of reference proteomes (~25 min) and
+`deep_lineage` is 668 pairwise MAFFT alignments (~6 min). 32 committed
+tables, 4 figures, `results/ligand_site/`.
+
+### The blocking step was scope, and it was not blocking
+
+The previous session expected the lineage list to be the problem. It was
+derived rather than read: PI-PLC presence — a protein carrying **both**
+halves of the catalytic TIM barrel, PF00387 and PF00388 — swept over all
+3,527 eukaryotic reference proteomes with S20's design pointed at a different
+profile. 760 of 763 vertebrate proteomes carry one, which is the positive
+control for the search. **64 proteomes carry an ITPR and no PI-PLC.**
+
+### Results
+
+1. **The pore is more conserved than the ligand core.** Paired per
+   orthologue — one core number and one pore number per sweep orthologue,
+   246-262 per paralogue — the pore leads by 0.024 identity in ITPR1
+   (223 tips to 32, q = 3.6e-34) and 0.020 in ITPR3 (218 to 42, q = 1.6e-28),
+   with ITPR2 flat.
+2. **And that reverses on one boundary.** Leave the 50-residue luminal loop
+   inside PF00520, which is how InterPro draws it, and all three paralogues
+   flip to core > pore at q < 1e-37. Both answers are right about their own
+   region; neither is right about "the pore" (D69).
+3. **The metrics disagree and the composition-free one wins.** Per-column
+   JSD sees no difference between the modules; `frac_modal` sides with the
+   paired test. JSD is a divergence from a background amino-acid table, so a
+   transmembrane module scores low at equal conservation — S17 measured that
+   and this is where it bites.
+4. **The constrained unit is the pocket, not the contacts.** The ten measured
+   contacts beat the rest of the binding core (q = 0.048 / 0.017 / 0.041) and
+   beat the rest of the 15 Å pocket in none of the three. Every shell out to
+   15 Å is above the whole-protein mean and there is no step at 4.5 Å.
+   FEL agrees from the other side: 100 % of contact sites purifying in all
+   three paralogues, the share falling 0.13-0.25 across the shells.
+5. **The lineage question has an answer, and it is a bounded null.** Pooled,
+   the 64 taxa's ligand core looks relaxed (p = 9.7e-6) — and that is a clade
+   artefact: they sit at median pore identity 0.358 against 0.589 for the
+   rest, and the paired statistic is itself correlated with divergence.
+   Matched to PLC-present records within 0.03 pore identity, all 36 that
+   enter the test find controls and the effect is gone: median within-pair
+   difference −0.0064 (95 % CI −0.016 to +0.015), 19 to 17, p = 0.87 (D71).
+
+### The instrument
+
+Both modules are defined by measurement rather than taken from Pfam, twice
+each, and each definition is checked against something it does not contain —
+a failure raises (D69). Every residue within 15 Å of IP₃ is measured
+**all-atom** in **six** independent IP₃-bound human ITPR3 depositions, with
+S0's ten contacts recovered in the structure S0 used as a hard-failure
+positive control (D70). The consensus contact set is **twelve**: Ala276 and
+Arg411 are inside 4.5 Å in a majority of the depositions and outside it in
+6DQN. The RyR positive control is measured through S22's *own* pairwise
+instrument at the *same* divergence as the test group, which is what makes
+the null in item 5 bounded rather than empty.
+
+### Testing
+
+44 constructed negative controls run before anything is written, split
+across `s22_test_ligand.py` and `s22_test_lineage.py` to stay inside the file
+budget, with one entry point. **Ten mutation tests, all ten caught.** Two
+mutations were missed on the first pass and both exposed a real weakness
+rather than a bad mutation: T1-T3 read the committed `module_map.tsv` instead
+of calling the rules, so a builder that widened a module passed every check —
+fixed by exercising `M.build()` and adding T3b, which compares the committed
+map against what the rules produce now. The transfer refusal fires on nothing
+in this data, so T13b makes it fire.
+
+### Next
+
+**S14c — the manuscript rewrite pass.** It is the last unblocked pending row
+(S14b is human-gated). S22 hands it three things the draft does not have: the
+core-versus-pore boundary problem, which any figure or sentence about "the
+pore" now has to declare; the twelve-residue contact set against the ten the
+draft quotes; and a lineage result that is a bounded null rather than a
+caveat.

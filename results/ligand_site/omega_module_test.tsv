@@ -1,0 +1,10 @@
+paralog	core_definition	pore_definition	is_primary	n_core_sites	n_pore_sites	median_core_beta	median_pore_beta	mean_core_beta	mean_pore_beta	cles_core_gt_pore	p_mannwhitney	direction	q_mannwhitney
+ITPR1	contact_span	channel_minus_luminal	True	294	195	0.0	0.033	0.0251	0.0446	0.3717	2.05798e-08	pore evolves faster	6.17394e-08
+ITPR2	contact_span	channel_minus_luminal	True	294	237	0.0	0.0	0.0583	0.061	0.4774	0.31672	pore evolves faster	0.31672
+ITPR3	contact_span	channel_minus_luminal	True	294	238	0.0	0.0	0.0593	0.0386	0.5499	0.025925	core evolves faster	0.058331
+ITPR1	contact_span	channel_all	False	294	210	0.0	0.0358	0.0251	0.0673	0.3474	1.90046e-11	pore evolves faster	1.71041e-10
+ITPR2	contact_span	channel_all	False	294	252	0.0	0.0	0.0583	0.0834	0.4525	0.033803	pore evolves faster	0.060845
+ITPR3	contact_span	channel_all	False	294	253	0.0	0.0	0.0593	0.0579	0.5227	0.307744	core evolves faster	0.31672
+ITPR1	ibc_literature	channel_minus_luminal	False	370	195	0.0	0.033	0.0221	0.0446	0.3604	7.97571e-11	pore evolves faster	3.58907e-10
+ITPR2	ibc_literature	channel_minus_luminal	False	370	237	0.0	0.0	0.0536	0.061	0.4637	0.086884	pore evolves faster	0.111708
+ITPR3	ibc_literature	channel_minus_luminal	False	370	238	0.0	0.0	0.0548	0.0386	0.5414	0.052228	core evolves faster	0.078342

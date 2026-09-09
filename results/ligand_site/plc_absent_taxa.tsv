@@ -1,0 +1,65 @@
+group	upid	organism	taxid	itpr_status	itpr_key	n_itpr	n_pi_plc	plc_status
+metazoa_nonvert	UP000015102	Megaselia scalaris (Humpbacked fly) (Phora scalaris)	36166	present	proteome	4	0	absent
+metazoa_nonvert	UP000290809	Schistosoma bovis (Blood fluke)	6184	present	proteome	1	0	absent
+metazoa_nonvert	UP000728185	Fasciolopsis buskii	27845	present	proteome	2	0	absent
+metazoa_nonvert	UP001162156	Rhamnusium bicolor	1586634	present	proteome	1	0	absent
+metazoa_nonvert	UP001626550	Cichlidogyrus casuarinus	1844966	present	proteome	3	0	absent
+metazoa_nonvert	UP000031668	Thelohanellus kitauei (Myxosporean)	669202	present	proteome	1	0	absent
+metazoa_nonvert	UP000266721	Mytilus galloprovincialis (Mediterranean mussel)	29158	present	proteome	1	0	absent
+metazoa_nonvert	UP000269396	Schistosoma mattheei	31246	present	proteome	2	0	absent
+metazoa_nonvert	UP000277204	Schistosoma margrebowiei	48269	present	proteome	3	0	absent
+metazoa_nonvert	UP000279833	Schistosoma curassoni	6186	present	proteome	2	0	absent
+fungi	UP000014254	Mucor circinelloides f. circinelloides (strain 1006PhL) (Mucormycosis agent) (Calyptromyces circinelloides)	1220926	present	proteome	1	0	absent
+fungi	UP000053815	Mucor ambiguus	91626	present	proteome	1	0	absent
+fungi	UP000054107	Parasitella parasitica	35722	present	proteome	1	0	absent
+fungi	UP000077051	Mucor lusitanicus CBS 277.49	747725	present	proteome	1	0	absent
+fungi	UP000077315	Phycomyces blakesleeanus (strain ATCC 8743b / DSM 1359 / FGSC 10004 / NBRC 33097 / NRRL 1555)	763407	present	proteome	1	0	absent
+fungi	UP000078561	Absidia glauca (Pin mould)	4829	present	proteome	1	0	absent
+fungi	UP000093000	Choanephora cucurbitarum	101091	present	proteome	1	0	absent
+fungi	UP000193560	Absidia repens	90262	present	proteome	1	0	absent
+fungi	UP000193642	Rhizoclosmatium globosum	329046	present	proteome	1	0	absent
+fungi	UP000242146	Hesseltinella vesiculosa	101127	present	proteome	1	0	absent
+fungi	UP000253551	Rhizopus stolonifer (Rhizopus nigricans)	4846	present	proteome	1	0	absent
+fungi	UP000267251	Piptocephalis cylindrospora	1907219	present	proteome	1	0	absent
+fungi	UP000269721	Blyttiomyces helicus	388810	present	proteome	1	0	absent
+fungi	UP000274822	Jimgerdemannia flammicorona	994334	present	proteome	1	0	absent
+fungi	UP000605846	Apophysomyces ossiformis	679940	present	proteome	1	0	absent
+fungi	UP000646827	Circinella minor	1195481	present	proteome	1	0	absent
+fungi	UP000650833	Mucor plumbeus	97098	present	proteome	1	0	absent
+fungi	UP001209540	Phascolomyces articulosus	60185	present	proteome	2	0	absent
+fungi	UP001211907	Physocladia obscura	109957	present	proteome	1	0	absent
+fungi	UP001234581	Lichtheimia ornata	688661	present	proteome	1	0	absent
+fungi	UP001304243	Mucor velutinosus	708070	present	proteome	1	0	absent
+fungi	UP001448207	Phycomyces blakesleeanus	4837	present	proteome	1	0	absent
+viridiplantae	UP000236333	Tetrabaena socialis	47790	present	proteome	1	0	absent
+viridiplantae	UP000660262	Pycnococcus provasolii	41880	present	proteome	2	0	absent
+viridiplantae	UP000708148	Ostreobium quekettii	121088	present	proteome	1	0	absent
+viridiplantae	UP001190700	Cymbomonas tetramitiformis	36881	present	proteome	36	0	absent
+protista_other	UP000002640	Phytophthora sojae (strain P6497) (Soybean stem and root rot agent) (Phytophthora megasperma f. sp. glycines)	1094619	present	proteome	1	0	absent
+protista_other	UP000006643	Phytophthora infestans (strain T30-4) (Potato late blight agent)	403677	present	proteome	1	0	absent
+protista_other	UP000007800	Perkinsus marinus (strain ATCC 50983 / TXsc)	423536	present	proteome	1	0	absent
+protista_other	UP000011087	Guillardia theta (strain CCMP2712) (Cryptophyte)	905079	present	proteome	9	0	absent
+protista_other	UP000018721	Phytophthora nicotianae P1569	1317065	present	proteome	1	0	absent
+protista_other	UP000019132	Globisporangium ultimum (strain ATCC 200006 / CBS 805.95 / DAOM BR144) (Pythium ultimum)	431595	present	proteome	3	0	absent
+protista_other	UP000251314	Phytophthora cactorum	29920	present	proteome	1	0	absent
+protista_other	UP000285060	Aphanomyces invadans	157072	present	proteome	13	0	absent
+protista_other	UP000433483	Phytophthora fragariae	53985	present	proteome	2	0	absent
+protista_other	UP000434957	Phytophthora rubi	129364	present	proteome	2	0	absent
+protista_other	UP000553632	Perkinsus olseni (Perkinsus atlanticus)	32597	present	proteome	1	0	absent
+protista_other	UP000591131	Perkinsus chesapeaki (Clam parasite) (Perkinsus andrewsi)	330153	present	proteome	1	0	absent
+protista_other	UP000602510	Phytophthora infestans (Potato late blight agent) (Botrytis infestans)	4787	present	proteome	1	0	absent
+protista_other	UP000649617	Symbiodinium pilosum (Dinoflagellate)	2952	present	proteome	3	0	absent
+protista_other	UP000694044	Phytophthora pseudosyringae	221518	present	proteome	1	0	absent
+protista_other	UP000709295	Phytophthora aleatoria	2496075	present	proteome	1	0	absent
+protista_other	UP000794436	Pythium oligandrum (Mycoparasitic fungus)	41045	present	proteome	1	0	absent
+protista_other	UP001146120	Lagenidium giganteum	4803	present	proteome	1	0	absent
+protista_other	UP001165060	Tetraparma gracilis	2962635	present	proteome	7	0	absent
+protista_other	UP001209570	Pythium insidiosum (Pythiosis disease agent)	114742	present	proteome	1	0	absent
+protista_other	UP001259832	Phytophthora citrophthora	4793	present	proteome	1	0	absent
+protista_other	UP001295684	Euplotes crassus	5936	present	proteome	14	0	absent
+protista_other	UP001632037	Phytophthora oleae	2107226	present	proteome	1	0	absent
+protista_other	UP000002630	Ectocarpus siliculosus (Brown alga) (Conferva siliculosa)	2880	present	proteome	1	0	absent
+protista_other	UP000198211	Phytophthora megakarya	4795	present	proteome	1	0	absent
+protista_other	UP000785679	Halteria grandinella	5974	present	proteome	4	0	absent
+protista_other	UP001165083	Phytophthora lilii	2077276	present	proteome	1	0	absent
+protista_other	UP001165121	Phytophthora fragariaefolia	1490495	present	proteome	1	0	absent

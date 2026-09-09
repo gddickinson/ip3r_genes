@@ -1,0 +1,13 @@
+paralog	module	definition	is_primary	start	end	excluded	n_residues	n_ip3_contacts	n_filter_lining	n_gate_lining	check	note
+ITPR1	ligand_core	contact_span	True	265	569		305	10	0	0	all_contacts_no_pore	span of the ten measured IP3 contacts
+ITPR1	ligand_core	ibc_literature	False	224	604		381	10	0	0	all_contacts_no_pore	published IP3-binding core [R05]
+ITPR1	pore_module	channel_minus_luminal	True	2363	2608	2481-2531	195	0	2	2	both_pore_sites_no_contact	PF00520 less the luminal loop
+ITPR1	pore_module	channel_all	False	2363	2608		246	0	2	2	both_pore_sites_no_contact	PF00520 as InterPro draws it
+ITPR2	ligand_core	contact_span	True	265	569		305	10	0	0	all_contacts_no_pore	span of the ten measured IP3 contacts
+ITPR2	ligand_core	ibc_literature	False	224	604		381	10	0	0	all_contacts_no_pore	published IP3-binding core [R05]
+ITPR2	pore_module	channel_minus_luminal	True	2265	2551	2427-2474	239	0	2	2	both_pore_sites_no_contact	PF00520 less the luminal loop
+ITPR2	pore_module	channel_all	False	2265	2551		287	0	2	2	both_pore_sites_no_contact	PF00520 as InterPro draws it
+ITPR3	ligand_core	contact_span	True	266	569		304	10	0	0	all_contacts_no_pore	span of the ten measured IP3 contacts
+ITPR3	ligand_core	ibc_literature	False	225	604		380	10	0	0	all_contacts_no_pore	published IP3-binding core [R05]
+ITPR3	pore_module	channel_minus_luminal	True	2240	2527	2401-2450	238	0	2	2	both_pore_sites_no_contact	PF00520 less the luminal loop
+ITPR3	pore_module	channel_all	False	2240	2527		288	0	2	2	both_pore_sites_no_contact	PF00520 as InterPro draws it

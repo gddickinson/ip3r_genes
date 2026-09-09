@@ -1,0 +1,3 @@
+pfam	role	path	sha256
+PF00387	PI-PLC-Y — the C-terminal half of the catalytic TIM barrel	results/ligand_site/pfam/PF00387.hmm	c787019ad54c6b7ecad1a24a31ce26907f85cf2d55388fdf494b65acd57b6390
+PF00388	PI-PLC-X — the N-terminal half of the catalytic TIM barrel	results/ligand_site/pfam/PF00388.hmm	3967d36b33c06c7e14a54969b89623a5a134aa77ad429e3a6a4ecf7e8c221264

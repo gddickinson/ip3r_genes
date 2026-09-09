@@ -1,0 +1,13 @@
+paralog	shell	n_sites	median_beta	mean_beta	n_beta_zero	n_usable_alpha	n_alpha_at_bound	median_omega_usable	frac_purifying_q05	whole_protein_median_beta	p_less_than_protein	q_less_than_protein
+ITPR1	contact	12	0.0	0.0032	10	12	0	0.0	1.0	0.0	0.054136	0.059057
+ITPR1	second	14	0.0	1.42857e-05	12	14	0	0.0	0.9286	0.0	0.026373	0.035164
+ITPR1	third	40	0.0	0.002	36	38	0	0.0	0.875	0.0	0.000217	0.001302
+ITPR1	fourth	58	0.0	0.0113	45	56	0	0.0	0.8966	0.0	0.009661	0.016562
+ITPR2	contact	12	0.0	1.66667e-05	10	12	0	0.0	1.0	0.0	0.017384	0.026076
+ITPR2	second	14	0.0	0.0	14	14	0	0.0	0.9286	0.0	0.001254	0.003762
+ITPR2	third	40	0.0	0.0095	36	38	0	0.0	0.75	0.0	2.5649e-05	0.000308
+ITPR2	fourth	59	0.0	0.0208	44	56	0	0.0	0.7797	0.0	0.00273	0.006166
+ITPR3	contact	12	0.0	0.0204	9	12	0	0.0	1.0	0.0	0.067666	0.067666
+ITPR3	second	14	0.0	0.0117	10	14	0	0.0	1.0	0.0	0.033627	0.040352
+ITPR3	third	40	0.0	0.0212	31	38	0	0.0	0.825	0.0	0.00091	0.00364
+ITPR3	fourth	59	0.0	0.0336	42	56	0	0.0	0.8305	0.0	0.003083	0.006166
