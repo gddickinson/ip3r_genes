@@ -19,23 +19,31 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S22 complete — the ligand site is measured; 31 of the 33 ledger
-rows are done.** Only the manuscript rewrite pass (S14c) and the human-gated
-deposit (S14b) remain. The submission package builds end to end
-from the committed tables: `python scripts/s14_assemble.py` runs figures →
-claims → stitch → PDF → deposit and exits zero on **7 main + 14 Extended Data
-+ 6 Supplementary figures (62 panel files, none missing), 180/180
-load-bearing numbers re-verified against their source tables, 16 sections →
-14,892 words, a 56-page typeset PDF and 1,805 deposited files with a checksum
-each**. The paper is *Retained in every vertebrate, lost repeatedly
-elsewhere: a 503-genome census of the IP₃ receptor family*, and its three
-results are the family's repeated loss outside the animals, its complete
-retention inside the vertebrates, and the archive that holds a quarter of it.
-Six items still need a human, listed in
+**Status: S14c complete — every analysis is in the paper; 32 of the 33 ledger
+rows are done.** Only the human-gated deposit (S14b) remains: a Zenodo DOI,
+the repository made public, reference verification and a preprint upload. The
+submission package builds end to end from the committed tables: `python
+scripts/s14_assemble.py` runs figures → claims → stitch → PDF → deposit and
+exits zero on **7 main + 16 Extended Data + 6 Supplementary figures (140
+files, none missing), 276/276 load-bearing numbers re-verified against their
+source tables, 17 sections → 17,807 words, a 60-page typeset PDF and 1,937
+deposited files with a checksum each**. The paper is *Retained in every
+vertebrate, lost repeatedly elsewhere: a 503-genome census of the IP₃ receptor
+family*, and its three results are the family's repeated loss outside the
+animals, its complete retention inside the vertebrates, and the archive that
+holds a quarter of it. Six items still need a human, listed in
 [`manuscript/reviewer_checklist.md`](manuscript/reviewer_checklist.md).
-The build has four guards — a missing figure, a missing section, a cited key
-with no reference row, a number that no longer matches its table — and each
-was tested by breaking it on purpose.
+
+The build has six guards — a missing figure, a missing section, a cited key
+with no reference row, a glyph the document font cannot set, a self-audit
+whose claim count has drifted, and a number that no longer matches its table
+— and each was tested by breaking it on purpose. The Extended Data figures
+are numbered in order of first mention and a seventh check enforces that:
+before S14c two of them were cited by no sentence in the paper at all. The
+previous draft is frozen in [`manuscript_v1/`](manuscript_v1/FROZEN.md),
+because S14c found two completed analyses (gene architecture and ligand-site
+evolution) missing from it entirely and integrating them changed the Results
+structure.
 
 **Every figure has now been read against its own legend** (S24, D11): 26
 findings, 16 legend corrections and 10 figure fixes, each recorded in
@@ -495,7 +503,7 @@ One task per session. Full ledger with dependencies and results in
 | S22 | Ligand-site evolution | ✅ completed 2026-09-09 |
 | S14a | Manuscript assembly | ✅ completed 2026-09-08 |
 | S24 | Supplementary figures + figure audit | ✅ completed 2026-09-08 |
-| S14c | Manuscript rewrite pass | ⏳ pending |
+| S14c | Manuscript rewrite pass | ✅ completed 2026-09-09 |
 | S14b | Deposit + release (Zenodo, public repo, preprint) | ⏳ pending — human-gated |
 
 ---

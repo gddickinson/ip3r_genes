@@ -2351,3 +2351,62 @@ same pore and genuinely does not bind IP₃. Losing the canonical route to the
 messenger does not release the site that binds it. Either these organisms make
 IP₃ another way, or the site is held by something else — and both are open
 questions the sequence cannot answer *(pending: unassigned)*.
+
+---
+
+## 2026-09-09 — S14c: the paper, rewritten around two results it did not have
+
+This task changed no data. It changed which of the project's findings are in
+the paper, and one of them turns out to be among the strongest things the
+work has to say.
+
+**The two receptor families are built from different genes.** Everything in
+this project has been shaped by one awkward fact: the ryanodine receptor
+carries every protein domain used to identify an IP₃ receptor, so every
+search that is sensitive enough to find a distant IP₃ receptor also drags in
+ryanodine receptors. All the separations made so far have come from the
+protein — how the domains are arranged, how the sequences score, how they
+align. There is a completely different kind of evidence available, and it had
+not been brought into the paper: where the introns fall. A gene's introns are
+inherited like anything else, and two genes that descend from one ancestral
+gene keep them in the same places.
+
+The three human-type receptors do. In every genome that carries them, they
+share about 47 of their roughly 58 intron positions, where fewer than one
+would be expected by chance. The ryanodine receptors share **one**. Not one
+on average — one, in every single genome, with no genome anywhere in 188
+showing more agreement than chance would give. The two families share a fold,
+a pore, four diagnostic domains and half a billion years of being confused
+for one another, and their gene structures have nothing in common at all.
+Whatever the shared architecture means, it was not inherited as a gene. This
+is the cleanest form of a separation the whole project has been making by
+harder means, and it comes from evidence that no comparison of the proteins
+could ever see.
+
+**The part the family is named after is not the part evolution guards
+hardest.** The IP₃-binding core is what makes an IP₃ receptor an IP₃
+receptor, and the domain named for it is what databases use to find one. Set
+against the pore across roughly 250 relatives of each human copy, it is the
+*less* conserved of the two in two paralogues and level in the third. The
+result comes with a warning attached: it reverses completely — in all three —
+depending on whether fifty residues of a floppy loop, the least conserved
+stretch in the whole receptor, are counted as part of the pore. The public
+domain definition includes them. Nobody drawing that comparison has had to
+say which way they drew it, and the answer depends entirely on that choice.
+
+**Within the binding site, what is protected is a pocket rather than a set of
+contacts.** The ten residues that touch the messenger are more conserved than
+the rest of the binding core, but no more conserved than everything else the
+structure places within fifteen ångström of the ligand. There is no step at
+the point of contact. Both the conservation and the substitution rate say the
+same thing: selection is holding a neighbourhood, not a handful of atoms.
+Whether it holds it *because of* the ligand is not something sequence can
+settle — everything near the messenger is also inside the fold that holds it
+there *(pending: no task in this plan separates the two)*.
+
+**And a note about the record rather than the biology.** Two of the paper's
+own supporting figures were in the package but referred to by no sentence in
+it, and two completed analyses were absent from the manuscript entirely. That
+is the same failure mode this project keeps documenting in public databases —
+the evidence exists, and nothing points at it — occurring inside the project
+itself. It is now checked mechanically on every build.

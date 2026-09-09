@@ -3492,3 +3492,78 @@ missing Priority column from a shifted row. A row with no recognisable status
 is now skipped with a message on stderr instead of silently becoming
 `pending`. All 33 rows re-parse correctly: only S14b and S14c are pending,
 and both legitimately.
+
+---
+
+## 2026-09-09 — S14c: the manuscript rewrite pass
+
+The brief for this row is four questions. Does the paper still lead on its
+strongest result; are the figure numbers still right; does every claim row
+still pass; and version the previous draft rather than overwriting it. Three
+of the four turned up something.
+
+**What the draft did not know.** S14a assembled the package on 2026-09-08 and
+S21 and S22 both landed after it. Neither analysis was in the paper at all —
+no Results text, no figure, no legend, no claim row, and neither results
+directory in `DEPOSIT_DIRS`, so their tables were not even being deposited.
+That makes this a rewrite rather than an edit, so the S14a draft is frozen in
+`manuscript_v1/` before anything changed, with `FROZEN.md` recording why and
+how to recover its figure set from the committed manifest rather than by
+storing a second copy of 17 MB.
+
+**The new section.** S21's result belongs next to the origin section, not in
+the annotation section where its fragment half sits: the three paralogues
+share a median 46–49 of about 58 intron positions in every one of 181–183
+genomes at 85–88× chance, and the ryanodine receptors share one, in none of
+183–188. Intron position is a character no protein alignment produces, which
+is exactly what makes it worth having — the ITPR/RyR separation that every
+search in this project is built around is here made by evidence that shares
+nothing with the evidence that made it everywhere else. S22 folded into the
+machine section and both into the abstract, discussion, limits and methods.
+
+**The figure numbering was wrong, and not only because of the two additions.**
+Extended Data Figs 2 and 3 were cited by no sentence in the paper, and the
+methods figure was numbered 14 and first cited in the third Results section.
+Renumbered to 16 figures in strict order of first mention, and the check that
+found it is now code: `s24_audit.citation_order()` requires every Extended
+Data figure to have a legend, be cited, and be cited in order. Mutation-tested
+four ways — a swapped citation, a removed one, a citation with no legend, and
+a forward reference that breaks only the order.
+
+**Three defects in the build itself.** The deposit list omitted two completed
+tasks. The reviewer checklist claimed the build reads the LaTeX log for
+`Missing character` and it did not — pandoc reports only its own warnings
+unless asked — so `s14_pdf.py` now runs `--verbose`, scans the log and exits
+non-zero on a dropped glyph; mutation-tested on two glyphs the document font
+lacks, and currently zero. And the checklist itself, the last hand-typed
+artefact in a package where everything else is generated, was four editions
+stale at 175 claims against a ledger of 180, so `s14_claims.py` now fails the
+build unless the checklist's headline count is the ledger's.
+
+**One number was wrong in my own new text and the table caught it.** I wrote
+that the share of sites under purifying selection falls across the ligand
+pocket "out to the furthest shell". It does not: it falls to each paralogue's
+*third* shell and the outermost sits slightly above it in all three, so the
+pattern is a step onto a floor rather than a gradient. S22's report says so
+explicitly; I had read the ledger summary instead of the table. Corrected in
+the text and pinned by three claim rows.
+
+**The lead was re-examined and left alone.** The title's two halves — retained
+in every vertebrate, lost repeatedly elsewhere — are still the two strongest
+results and the two the design was built to be able to make. Both new
+analyses are about what the gene and the protein are *like*, not about where
+they are, and neither displaces the census. The abstract gained a sentence on
+each.
+
+Claims 180 → 276, all passing. 17 sections, 17,807 words, 60 pages, 7 main +
+16 Extended Data + 6 Supplementary figures, 1,937 deposited files. The build
+is green end to end and every one of its guards has now been broken on
+purpose at least once.
+
+Two emergent rows. `figstyle.save()` checks the size a figure *declared*
+rather than the size the tight bounding box actually wrote, so three panels
+are saved wider than the text block and silently scaled down when placed —
+a general fault, not a fault in those three figures. And the new Results
+section asserts that the two families' exon structures have no common
+ancestry without saying how that came about, which is a parsimony job on the
+intron characters of the kind S15b already runs.
