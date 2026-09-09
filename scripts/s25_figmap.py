@@ -30,12 +30,14 @@ D = "docs/figures"
 #: (chapter, slug, source stem, stub caption)
 FIGURES: list[tuple[int, str, str, str]] = [
     # ------------------------------------------------ 1. the receptor
-    (1, "signal_hierarchy", f"{D}/signal_hierarchy",
-     "Where the receptor sits in the phosphoinositide pathway"),
+    (1, "receptor_overview", f"{D}/receptor_overview",
+     "The pathway, the channel and the sequence, in one figure"),
     (1, "channel_structure", f"{D}/channel_structure",
      "The channel, measured on PDB 6DQN"),
     (1, "gating_logic", f"{D}/gating_logic",
      "What opens the channel and what closes it"),
+    (1, "signal_hierarchy", f"{D}/signal_hierarchy",
+     "Blips, puffs and waves, and what carries the dose"),
     (1, "domain_architecture", f"{D}/domain_architecture",
      "The domain architecture the two families share"),
     (1, "discovery_timeline", f"{D}/discovery_timeline",

@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Render every figure in `docs/ip3r_review_2026.md`.
+"""Render every figure under `docs/figures/`.
+
+Twelve of them are the review's. The thirteenth, `receptor_overview`, is the
+thesis's orientation figure: it is drawn from the same committed tables and is
+built by the same command, so `docs/figures/` has one generator and not two.
 
 Figures are drawn only from committed tables (Decision D13 applied to
 figures): `results/s0_baseline/review_figures/` plus the S0 and S1 tables that
@@ -36,11 +40,13 @@ import s0_figs_sequence as _sequence         # noqa: E402
 import s0_figs_genomics as _genomics         # noqa: E402
 import s0_figs_concepts as _concepts         # noqa: E402
 import s0_figs_clinical as _clinical         # noqa: E402
+import s0_figs_overview as _overview         # noqa: E402
 
 #: slug -> (callable, section it illustrates). The slug is what the section
 #: files reference as `figures/<slug>.png` and what `{fig:<slug>}` resolves to,
 #: so renaming one here means renaming it in the review text as well.
 FIGURES = {
+    "receptor_overview":    (_overview.receptor_overview, "thesis §1.1"),
     "discovery_timeline":   (_clinical.discovery_timeline, "§1"),
     "domain_architecture":  (_structure.domain_architecture, "§2.1, §7.1"),
     "channel_structure":    (_structure.channel_structure, "§2.2–2.4, §3"),

@@ -3945,3 +3945,36 @@ and missing citations, remain a reading problem and are recorded as such.
 
 Recorded as **D81**, **D82** and **D83**. 73,083 words, 194 pages, 234 claims,
 18/18 guards, 0 prose failures, build exit 0.
+
+### Addendum (same session) — Figure 1.1 replaced
+
+The user asked for the thesis's Figure 1.1 to gain a structural diagram of the
+receptor, a schematic of the process that triggers it in a cell, and some
+example sequence information, and for its legend to be rewritten for clarity.
+
+**The figure that was there was the wrong figure.** `signal_hierarchy` draws
+blips, puffs and waves, and its legend in Chapter 1 described the receptor's
+place in the phosphoinositide pathway. The sentence citing it described the
+pathway too. So the first figure in the document showed one thing and was
+introduced as another, which is the defect D80's legend rule exists to catch,
+sitting in the one place a reader cannot skip.
+
+**`receptor_overview` is the replacement**, drawn by a new module
+`scripts/s0_figs_overview.py` from the same committed S0 tables the review's
+figures use. Panel a is the pathway as a schematic, with the one box this
+thesis measures marked in it. Panel b is the channel at the dimensions
+measured on 6DQN, with the two IP₃ sites 103 Å above the gate on the axis and
+120 Å from it through space, and the same subunit as a linear domain
+architecture beneath. Panel c is the sequence at the two positions panel b
+marks, for the three human paralogues and the fly, coloured where all four
+agree and outlined where the structure measured a contact or a filter residue.
+
+**The three panels do not share a provenance**, so each says on the panel
+where it comes from rather than leaving one corner tag to cover all three.
+The legend also names which later figure carries the measured version of each
+panel, so the orientation figure is complementary to what follows rather than
+a summary of it.
+
+`signal_hierarchy` moves to §1.3, where puffs and waves are actually
+discussed, with a legend describing its own panels. Recorded as **D84**.
+73,488 words, 104 figures, 234 claims, 18/18 guards, build exit 0.

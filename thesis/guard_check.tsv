@@ -1,8 +1,8 @@
 guard	expected_message	fired	message_matched	verdict	said
 assign: an unassigned results directory	rule T6	1	1	fired	[FAIL] results/2026-08-18_091322_itpr1_itpr2_itpr3 is neither assigned to a chapter nor listed in ASSIGNMENT_EXCLUDED (rule T6)
 assign: an assignment with no directory	does not exist	1	1	fired	[FAIL] results/no_such_directory is assigned but does not exist
-figures: a declared figure with no file	missing	1	1	fired	[FAIL] signal_hierarchy: missing docs/figures/no_such_figure.png
-figures: a slug declared twice	declared more than once	1	1	fired	[FAIL] slug 'signal_hierarchy' is declared more than once
+figures: a declared figure with no file	missing	1	1	fired	[FAIL] receptor_overview: missing docs/figures/no_such_figure.png
+figures: a slug declared twice	declared more than once	1	1	fired	[FAIL] slug 'receptor_overview' is declared more than once
 figures: a committed figure neither placed nor excluded	neither placed in the thesis nor listed	1	1	fired	[FAIL] results/2026-08-18_091322_itpr1_itpr2_itpr3/figures/length_histogram.png is committed under a chapter's results tree but is neither placed in the thesis nor listed in UNPLACED
 stitch: a missing chapter file	missing chapter file	1	1	fired	[FAIL] missing chapter file thesis/03_separation.md
 stitch: a declared figure nothing places	no chapter places it	1	1	fired	[FAIL] tree_ml_rooted is declared for chapter 6 but no chapter places it

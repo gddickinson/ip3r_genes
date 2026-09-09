@@ -28,7 +28,7 @@ panel, which is session state.
 **Rule T7 says every figure is copied from a committed results directory and
 never re-plotted.** It is enforced, in that a missing file, a slug used twice,
 or a committed figure the thesis neither places nor explicitly excludes all
-fail the build. **The thesis places 103 figures**, every one copied from the
+fail the build. **The thesis places 104 figures**, every one copied from the
 results directory that committed it in both formats, with the source and the
 SHA-256 of each recorded in `thesis/figure_manifest.tsv`. Eight figures are
 explicitly excluded, all of them the search application's own bundle plots

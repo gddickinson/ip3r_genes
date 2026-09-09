@@ -48,7 +48,7 @@ structure.
 
 **The paper is not the whole of the work, and the long form is now written.**
 [`thesis/`](thesis/README.md) is **73,083 words across 16 chapters and 5
-appendices, 103 figures, 116 references, 194 typeset pages**, built by `python
+appendices, 104 figures, 116 references, 194 typeset pages**, built by `python
 scripts/s25_assemble.py` in nine stages. It carries what the paper had to
 drop: why each instrument is built the way it is, what was measured and
 abandoned, and the **437 constructed negative controls** as a body of work

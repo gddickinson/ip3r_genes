@@ -14,21 +14,37 @@ The pathway that produces the ligand is one of the best-characterised in cell
 biology. A receptor at the plasma membrane activates a phospholipase C, which
 cleaves phosphatidylinositol 4,5-bisphosphate into diacylglycerol and IP₃, and
 the IP₃ then diffuses to the endoplasmic reticulum and opens the receptor
-({fig:signal_hierarchy}). What follows, meaning the amplitude, the timing and
-the spatial pattern of the calcium signal, is largely set by the channel
+({fig:receptor_overview}a). What follows, meaning the amplitude, the timing
+and the spatial pattern of the calcium signal, is largely set by the channel
 itself. That is why the receptor has been studied for forty years as a
 signalling device rather than merely as a pore.
 
-![](figures/signal_hierarchy.png)
+![](figures/receptor_overview.png)
 
-**{fig:signal_hierarchy}.** The receptor's place in the phosphoinositide
-pathway, drawn as a hierarchy of scales running from the messenger to the
-cellular output. The layer this thesis is about is a single one of these
-boxes, and the figure fixes the level at which a genome-scale census can and
-cannot speak. A census counts genes, so it can say whether the channel is
-present and how many copies a genome carries, and it cannot say what a cell
-does with the signal. Chapter 12's result about the enzyme that makes the
-ligand is the one place where the box above the channel is measured too.
+**{fig:receptor_overview}.** The object this thesis counts, at the three
+scales a reader needs before any of it is argued. (**a**) The pathway
+described above, drawn as a schematic so that the one box this thesis
+measures can be marked in it. Everything else in the diagram, from the
+agonist to the effectors calcium reaches, is context a census of one gene
+family cannot speak to. (**b**) The channel drawn at the dimensions measured
+on the structure this project uses throughout, PDB 6DQN [R24]. About nine
+tenths of each subunit is the cytosolic solenoid above the membrane, and the
+two IP₃ sites shown sit 103 Å above the gate along the four-fold axis and
+120 Å from it through space, which is the coupling problem the protein has
+to solve. The bar beneath is the same subunit as a linear architecture,
+carrying the five diagnostic signatures in six blocks, because the RIH
+domain occurs twice. (**c**) The sequence at the two positions panel **b**
+marks, in this family only: the first of the three IP₃-contact windows, and
+the selectivity filter. A cell is coloured where all four sequences carry
+the same residue and outlined in red where the structure measured a contact
+or a filter residue. Two things are visible here that the rest of the
+document depends on. The residues that grip the ligand are identical in a
+human and a fly, across the split between protostomes and deuterostomes
+[R189], and the filter carries the GGGVGD motif Chapter 2 recovers blind
+from the coordinates. Figure 1.2 gives the same structure as a measurement
+with its pore profile, Figure 1.5 sets the domain architecture against the
+sister family, and Chapter 2 puts these same windows beside the ryanodine
+receptors, which is where the family-separation problem becomes visible.
 
 The receptor was identified in the decade after IP₃ was shown to release
 calcium from a non-mitochondrial store in pancreatic acinar cells [R01].
@@ -157,6 +173,26 @@ carry little information. Because they differ in affinity, in calcium
 sensitivity and in downstream output, the finding in Chapter 9 that all
 three are retained in every vertebrate genome is a statement about three
 distinct functions rather than about three copies of one.
+
+What the channel produces is not one signal but a graded family of them
+({fig:signal_hierarchy}), and this is the level at which a genome-scale
+census stops being able to speak. A census counts genes, so it can say
+whether the channel is present and how many copies a genome carries, and it
+cannot say what a cell does with the signal.
+
+![](figures/signal_hierarchy.png)
+
+**{fig:signal_hierarchy}.** How the calcium signal is built, and what carries
+the dose. (**a**) The three event classes, drawn as illustrative traces
+rather than recordings: a blip is one channel opening, a puff is a cluster of
+them, and a wave is the cell. Each has its own amplitude band, because the
+blip is roughly ten times smaller than the wave and one shared axis would
+draw it as a flat line. (**b**) The same three events placed by how far they
+spread and how long they last, which is four orders of magnitude on each
+axis. (**c**) Raising the agonist raises the *frequency* of the events rather
+than their size, so the dose is carried in the timing. The figure is here to
+mark the boundary of what follows: everything in this thesis is a statement
+about the gene and the protein, and nothing in it reaches panel **c**.
 
 Those output differences are the reason the paralogues matter. The three
 vertebrate receptors differ in IP₃ affinity, in calcium sensitivity, in

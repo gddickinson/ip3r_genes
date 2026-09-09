@@ -6,7 +6,7 @@ A paper's methods section says what was done. It has to, because a reader
 needs to reproduce it. It cannot say why each threshold is the number it is,
 and for this project that is where most of the work went.
 
-87 methodological decisions were recorded across 35 working sessions,
+88 methodological decisions were recorded across 35 working sessions,
 numbered as they were made. Several of them changed an answer.
 Several were made, tested and overturned. None of them has ever been written
 out as prose, and this chapter is that: not a list, but the arguments in the
@@ -286,7 +286,7 @@ the build said so.
 
 ## 14.7 Four rules are specific to this family
 
-Four of the 87 recorded decisions are about this family and could not have
+Four of the 88 recorded decisions are about this family and could not have
 been ported from anywhere.
 
 **Separating IP₃ from ryanodine receptors is a positive test at every stage.**

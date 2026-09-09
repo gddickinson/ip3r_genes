@@ -3,7 +3,7 @@
 `python scripts/s25_assemble.py` builds everything here and exits non-zero on
 a failed guard. The same work is reported as a paper in `manuscript/`, and
 this directory holds its long form: about 73,000 words across 16 chapters and
-5 appendices, with 103 figures and 116 references.
+5 appendices, with 104 figures and 116 references.
 
 ## What is written by hand, and what is generated
 

@@ -199,34 +199,50 @@ The pathway that produces the ligand is one of the best-characterised in cell
 biology. A receptor at the plasma membrane activates a phospholipase C, which
 cleaves phosphatidylinositol 4,5-bisphosphate into diacylglycerol and IP₃, and
 the IP₃ then diffuses to the endoplasmic reticulum and opens the receptor
-(Figure 1.1). What follows, meaning the amplitude, the timing and
-the spatial pattern of the calcium signal, is largely set by the channel
+(Figure 1.1a). What follows, meaning the amplitude, the timing
+and the spatial pattern of the calcium signal, is largely set by the channel
 itself. That is why the receptor has been studied for forty years as a
 signalling device rather than merely as a pore.
 
-![](figures/fig_1.1_signal_hierarchy.png)
+![](figures/fig_1.1_receptor_overview.png)
 
-**Figure 1.1.** The receptor's place in the phosphoinositide
-pathway, drawn as a hierarchy of scales running from the messenger to the
-cellular output. The layer this thesis is about is a single one of these
-boxes, and the figure fixes the level at which a genome-scale census can and
-cannot speak. A census counts genes, so it can say whether the channel is
-present and how many copies a genome carries, and it cannot say what a cell
-does with the signal. Chapter 12's result about the enzyme that makes the
-ligand is the one place where the box above the channel is measured too.
+**Figure 1.1.** The object this thesis counts, at the three
+scales a reader needs before any of it is argued. (**a**) The pathway
+described above, drawn as a schematic so that the one box this thesis
+measures can be marked in it. Everything else in the diagram, from the
+agonist to the effectors calcium reaches, is context a census of one gene
+family cannot speak to. (**b**) The channel drawn at the dimensions measured
+on the structure this project uses throughout, PDB 6DQN [1]. About nine
+tenths of each subunit is the cytosolic solenoid above the membrane, and the
+two IP₃ sites shown sit 103 Å above the gate along the four-fold axis and
+120 Å from it through space, which is the coupling problem the protein has
+to solve. The bar beneath is the same subunit as a linear architecture,
+carrying the five diagnostic signatures in six blocks, because the RIH
+domain occurs twice. (**c**) The sequence at the two positions panel **b**
+marks, in this family only: the first of the three IP₃-contact windows, and
+the selectivity filter. A cell is coloured where all four sequences carry
+the same residue and outlined in red where the structure measured a contact
+or a filter residue. Two things are visible here that the rest of the
+document depends on. The residues that grip the ligand are identical in a
+human and a fly, across the split between protostomes and deuterostomes
+[2], and the filter carries the GGGVGD motif Chapter 2 recovers blind
+from the coordinates. Figure 1.2 gives the same structure as a measurement
+with its pore profile, Figure 1.5 sets the domain architecture against the
+sister family, and Chapter 2 puts these same windows beside the ryanodine
+receptors, which is where the family-separation problem becomes visible.
 
 The receptor was identified in the decade after IP₃ was shown to release
-calcium from a non-mitochondrial store in pancreatic acinar cells [1].
+calcium from a non-mitochondrial store in pancreatic acinar cells [3].
 Purification and reconstitution demonstrated that a single protein was
-sufficient for the flux [2], and the primary structure, obtained from the
+sufficient for the flux [4], and the primary structure, obtained from the
 cerebellar P400 protein, revealed a very large polypeptide of about 2,700
-residues [3,4]. The title of one of those first reports named the problem
+residues [5,6]. The title of one of those first reports named the problem
 this thesis had to solve before it could measure anything: *Putative receptor
-for inositol 1,4,5-trisphosphate similar to ryanodine receptor* [5].
+for inositol 1,4,5-trisphosphate similar to ryanodine receptor* [7].
 
-![](figures/fig_1.5_discovery_timeline.png)
+![](figures/fig_1.6_discovery_timeline.png)
 
-**Figure 1.5.** Four decades of work on the receptor as the
+**Figure 1.6.** Four decades of work on the receptor as the
 literature records it, with each milestone drawn at the year of its
 published source. The figure is generated from a curated table in which no
 year is typed: each is read from the reference row it cites, so a milestone
@@ -253,7 +269,7 @@ gate, and everything between the two is the machine that couples them.
 
 **Figure 1.2.** The channel measured rather than drawn. The
 figure shows one C4-symmetric subunit's Cα trace from PDB 6DQN, a human
-IP₃R3 in the IP₃-bound state at 3.33 Å [6], together with the four-fold
+IP₃R3 in the IP₃-bound state at 3.33 Å [1], together with the four-fold
 axis, the axial extent of the membrane, the pore radius profile and the two
 constrictions recovered from the coordinates. The narrowest luminal point
 lands on the GGGVGD selectivity-filter motif and the cytosolic constriction
@@ -271,17 +287,17 @@ domains (PF02815) in the suppressor region, the IP₃-binding core Ins145_P3_rec
 domain (PF08454), and the generic Ion_trans pore (PF00520).
 
 Every one of the first four is also carried by every human ryanodine receptor
-(Figure 1.4). This is not an artefact of database annotation.
+(Figure 1.5). This is not an artefact of database annotation.
 The two families are one structural superfamily: their N-terminal regions are
-conserved to the point of direct comparison [7], and the near-atomic
-structures published for both in 2015 [8,9,10,11] show the same
+conserved to the point of direct comparison [8], and the near-atomic
+structures published for both in 2015 [9,10,11,12] show the same
 organisation, in which a vast cytosolic solenoid transduces ligand binding to
 a C-terminal pore. They differ in scale, the ryanodine receptors being nearly
 twice the size at around 4,900 to 5,000 residues.
 
-![](figures/fig_1.4_domain_architecture.png)
+![](figures/fig_1.5_domain_architecture.png)
 
-**Figure 1.4.** Every signature that defines an IP₃ receptor
+**Figure 1.5.** Every signature that defines an IP₃ receptor
 is also carried by a ryanodine receptor, in the same copy number, down to
 the two RIH domains. What separates the families is what the ryanodine
 receptors carry in addition: four further domains and some 2,200 extra
@@ -323,12 +339,12 @@ The channel's behaviour is not a simple function of ligand concentration. Its
 response to cytosolic calcium is biphasic, activating at low concentrations
 and inhibiting at high, which under IP₃ produces the bell-shaped
 calcium-response curve that has organised thinking about the receptor since it
-was measured [12]. IP₃ binding and calcium binding are cooperative rather
-than independent [13], and the stoichiometry required to initiate release has
-been resolved, in that more than one subunit must be occupied [14]. ATP
-modulates the channel at two sites [15], protein kinase A phosphorylates it
-[16], and it is a hub for protein interactions, including with Bcl-2 [17]
-and IRBIT [18].
+was measured [13]. IP₃ binding and calcium binding are cooperative rather
+than independent [14], and the stoichiometry required to initiate release has
+been resolved, in that more than one subunit must be occupied [15]. ATP
+modulates the channel at two sites [16], protein kinase A phosphorylates it
+[17], and it is a hub for protein interactions, including with Bcl-2 [18]
+and IRBIT [19].
 
 ![](figures/fig_1.3_gating_logic.png)
 
@@ -343,12 +359,32 @@ sensitivity and in downstream output, the finding in Chapter 9 that all
 three are retained in every vertebrate genome is a statement about three
 distinct functions rather than about three copies of one.
 
+What the channel produces is not one signal but a graded family of them
+(Figure 1.4), and this is the level at which a genome-scale
+census stops being able to speak. A census counts genes, so it can say
+whether the channel is present and how many copies a genome carries, and it
+cannot say what a cell does with the signal.
+
+![](figures/fig_1.4_signal_hierarchy.png)
+
+**Figure 1.4.** How the calcium signal is built, and what carries
+the dose. (**a**) The three event classes, drawn as illustrative traces
+rather than recordings: a blip is one channel opening, a puff is a cluster of
+them, and a wave is the cell. Each has its own amplitude band, because the
+blip is roughly ten times smaller than the wave and one shared axis would
+draw it as a flat line. (**b**) The same three events placed by how far they
+spread and how long they last, which is four orders of magnitude on each
+axis. (**c**) Raising the agonist raises the *frequency* of the events rather
+than their size, so the dose is carried in the timing. The figure is here to
+mark the boundary of what follows: everything in this thesis is a statement
+about the gene and the protein, and nothing in it reaches panel **c**.
+
 Those output differences are the reason the paralogues matter. The three
 vertebrate receptors differ in IP₃ affinity, in calcium sensitivity, in
-regulation and in tissue distribution [19,20,21], and they are not
+regulation and in tissue distribution [20,21,22], and they are not
 redundant. Calcium transfer from the endoplasmic reticulum to the
 mitochondrion, and the apoptotic decisions downstream of it, depend on which
-paralogue is present [22]. A cell's calcium signalling repertoire is in part
+paralogue is present [23]. A cell's calcium signalling repertoire is in part
 a statement about which of ITPR1, ITPR2 and ITPR3 it expresses.
 
 ## 1.4 Four things about the family were not established
@@ -367,7 +403,7 @@ statement about the genome is a different measurement, and nobody had made it.
 
 **Where the three vertebrate paralogues came from had no tested answer.**
 That vertebrates carry three is a database fact. That the three arose in the
-two rounds of whole-genome duplication at the base of the vertebrates [23,24] is a reasonable inference from their number and their age, and it had
+two rounds of whole-genome duplication at the base of the vertebrates [24,25] is a reasonable inference from their number and their age, and it had
 not been tested against the genomic neighbourhoods that a duplication of
 that kind leaves behind. Which two of the three are sisters had no published
 answer at all. Worse, the proposition that the IP₃ and ryanodine receptor
@@ -378,7 +414,7 @@ downgraded to an open question before any of the work could begin. Chapters
 
 **What has happened to the paralogues since could not be asked without a
 false-negative rate.** Gene families of this age normally lose copies
-[25]. Whether this one has, and where, is a question that cannot be
+[26]. Whether this one has, and where, is a question that cannot be
 answered without a false-negative rate, because a gene that a search fails
 to find looks exactly like a gene that is not there. That single sentence
 determined the structure of a third of this thesis.
@@ -710,7 +746,7 @@ gene-specific. The same endpoint answers in 0.6 s for `danio_rerio`. That is
 why the zebrafish run got three sources and the human run got none, and it is
 why a retry budget could never have fixed it, because there is nothing to
 retry against. The client now resolves through the database's other symbol
-endpoint [26], which works, and falls back to the old path only on a clean
+endpoint [27], which works, and falls back to the old path only on a clean
 404, never after a transport error, which would walk straight back into the
 stall. Human ITPR1 went from 0 variants to 24.
 
@@ -840,8 +876,8 @@ the record.
 
 ## 3.3 The search space was enumerated to exhaustion, and its own counts cannot be trusted
 
-The census was built by walking three Pfam signatures [27] to exhaustion,
-through the domain database that serves them [28]: PF08709 (the IP₃-binding
+The census was built by walking three Pfam signatures [28] to exhaustion,
+through the domain database that serves them [29]: PF08709 (the IP₃-binding
 core), PF01365 (the RyR–IP₃R homology domain) and PF08454 (RIH-associated).
 The MIR domain PF02815 is deliberately not a seed, because it is carried by
 the O-mannosyltransferases as well as by both receptor families, so it widens
@@ -974,7 +1010,7 @@ The architecture rule reads annotation and a profile reads residues. Building
 both and requiring them to agree is what makes the census defensible, because
 they can fail in different ways.
 
-Two profile hidden Markov models [29] were built, one of 2,684 match states
+Two profile hidden Markov models [30] were built, one of 2,684 match states
 from 34 seeds and one of 4,930 from 22, each seed drawn from the census and
 carrying that census's call, so the profiles are labelled by a rule rather
 than by a gene name. Five selection rules are enforced in code rather than
@@ -1045,7 +1081,7 @@ assigning it to whichever instrument the author trusted more.
 
 ## 3.6 A sweep of 763 vertebrate proteomes required a span gate to be usable
 
-The profiles were then run over 763 vertebrate reference proteomes [30],
+The profiles were then run over 763 vertebrate reference proteomes [31],
 comprising 14,414,821 canonical proteins, one per gene, because isoform sets
 add isoforms of genes already counted and this census counts genes.
 
@@ -1078,7 +1114,7 @@ The completeness argument needs a third line of evidence: iterate a model from
 a single sequence until it stops finding new things, and see whether the
 family it converges on is the one the census holds.
 
-Three iterative searches [31] were run to convergence, from a human IP₃R1, a
+Three iterative searches [32] were run to convergence, from a human IP₃R1, a
 *Drosophila* Itpr and an *Acanthamoeba* receptor, which is to say from a
 vertebrate, an insect and an amoebozoan. Only the fly run converged. The other
 two reached the ten-round ceiling and were killed.
@@ -1216,7 +1252,7 @@ belongs with the instrument rather than with the result it qualifies.
 The scope is 309 assemblies, and it is the union of two rules.
 
 The first rule is taxonomic. It takes one best assembly per vertebrate order
-[32], 161 of them, ranked by a stated function that prefers annotated over
+[33], 161 of them, ranked by a stated function that prefers annotated over
 unannotated, RefSeq over GenBank, then assembly level, then scaffold N50,
 which is the length such that half the assembly sits in pieces at least that
 long and is the standard summary of how contiguous an assembly is.
@@ -1283,7 +1319,7 @@ job and the envelope's job is fusion.
 
 ## 4.4 The aligner's intron parameter is a threshold on the call, not a performance knob
 
-The protein-to-genome aligner [33] takes a maximum intron length. Its
+The protein-to-genome aligner [34] takes a maximum intron length. Its
 default is 200 kb, and it is not a performance knob: a gene whose largest
 intron exceeds it is split into pieces, and a split IP₃ receptor reads out of
 this ledger as a fragment. Setting it wrongly manufactures exactly the
@@ -1351,7 +1387,7 @@ labelled panel settles the family before any margin has to be applied.
 
 ## 4.6 A threshold inherited from another project was measured and overturned
 
-The rescue step [34] attributes a fragment to a paralogue when its best bait
+The rescue step [35] attributes a fragment to a paralogue when its best bait
 beats the runner-up by a stated relative margin. That margin arrived in this
 project as an inheritance: 0.333, a 1.5-fold bit-score ratio, from a sister
 project on a gene family whose paralogues are 40 to 50 % identical. These are
@@ -1401,7 +1437,7 @@ The bar this project uses is the median measured IP₃ receptor genomic span,
 derivation. **120 of 309 genomes fall below it, which is 39 %, and they are
 not a random 39 %.** Assembly quality across the vertebrates is uneven by
 clade and by sequencing era, which is the problem the reference genome
-consortia were set up to address [35], and this family's genes are long
+consortia were set up to address [36], and this family's genes are long
 enough to feel it. Two thirds of birds fail it against 11 % of
 ray-finned fish, and 68 % of margin species against 12 % of order
 representatives.
@@ -1787,7 +1823,7 @@ had it been there**. Without that control, "no IP₃ receptor in *Arabidopsis*"
 is indistinguishable from "the search did not run properly on *Arabidopsis*".
 The distinction is not academic in this family. Plant cells release calcium in
 response to IP₃, no plant receptor gene has been identified, and the standing
-review of the subject asks in its title whether the receptor is real [36],
+review of the subject asks in its title whether the receptor is real [37],
 so a plant absence is a claim somebody has been waiting for.
 
 Both questions are answered here, over 6,928 reference proteomes and 194
@@ -1814,7 +1850,7 @@ listed but unpublished proteome is not a transient failure and retrying cannot
 fix it.
 
 The instrument is Chapter 3's, unchanged: the same two profile hidden Markov
-models [29] over the same reference proteome collection [30], with the
+models [30] over the same reference proteome collection [31], with the
 same 30-bit floor, the same 200-match-state span gate and the same relative
 margin.
 Reusing it rather than building a new one is what makes the vertebrate and
@@ -1840,8 +1876,8 @@ innovation, and it is what the figure supports.
 
 The shape is a family that is ancestrally eukaryotic and has been lost
 repeatedly, which is what earlier surveys of the calcium-signalling toolkit
-had inferred from smaller samples [37,38,39] and what repeated loss is
-now understood to look like as an ordinary evolutionary mechanism [25]. It
+had inferred from smaller samples [38,39,40] and what repeated loss is
+now understood to look like as an ordinary evolutionary mechanism [26]. It
 is in 94 % of arthropod proteomes, 96 % of nematode, and 100 %
 of molluscan, cnidarian and sponge. It is in 65 % of oomycetes, 67 % of
 euglenozoans, 94 % of ciliates and 69 % of amoebozoans. It is in none of 634
@@ -1880,11 +1916,11 @@ Chytridiomycota and both Basidiobolomycota.
 That is the shape of a loss rather than of an absence: the family is present
 in the early-diverging lineage of both kingdoms and gone from the derived one,
 with the fungal split read against the accepted backbone of the kingdom
-[40]. In the plants it puts a genomic answer under a question the plant
+[41]. In the plants it puts a genomic answer under a question the plant
 calcium literature has kept open, because the green algae these lineages
-descend from carry the gene [41] and the land plants that followed do not,
+descend from carry the gene [42] and the land plants that followed do not,
 so whatever performs the physiology there is built from other channel
-families [42,43].
+families [43,44].
 
 **Every plant and fungal record was then chased individually**, 64 and 35 of
 them, through four independent lines of evidence, because a handful of records
@@ -1980,7 +2016,7 @@ the ones that matter into facts about genomes.
 
 **The scope is chosen to sample most finely where the negative claim is.**
 Five rules were applied to 24,596 NCBI eukaryotic reference assemblies
-[32], minus the 6,216 vertebrate ones: one assembly per non-vertebrate
+[33], minus the 6,216 vertebrate ones: one assembly per non-vertebrate
 eukaryotic phylum; one per class in the five phyla with more than 100 swept
 proteomes; one per clade with at least ten swept proteomes and zero calls;
 the anchor organisms whose answer is known from the literature; and the
@@ -1991,10 +2027,10 @@ repeating a summary, and in doing so it **found three absences that summary
 never named**: diatoms at 0 of 16, red algae at 0 of 12, and **Cestoda at 0 of
 11, a metazoan clade with no record at all.** The first two sit in lineages
 whose calcium-channel repertoires have been surveyed and found to differ
-sharply from the animal one [44], and the third is a clade that has shed
-gene families across its whole biology as an adaptation to parasitism [45].
+sharply from the animal one [45], and the third is a clade that has shed
+gene families across its whole biology as an adaptation to parasitism [46].
 The apicomplexan and microsporidian absences belong with the severe genome
-reduction those lineages have undergone [46,47].
+reduction those lineages have undergone [47,48].
 
 **Both genomic thresholds had to be re-measured, and neither transferred.** A
 vertebrate IP₃ receptor gene spans 76 to 498 kb and a *Drosophila* one spans
@@ -2247,7 +2283,7 @@ determinism, and Newick-legal unique tip labels.
 
 ## 6.3 The alignment is pinned to one thread because otherwise it is not reproducible
 
-The aligner is MAFFT in its most accurate iterative mode [48]: 61 minutes,
+The aligner is MAFFT in its most accurate iterative mode [49]: 61 minutes,
 producing 11,777 columns at 76.23 % gaps.
 
 **It is run single-threaded, by decision.** At automatic thread count it is not
@@ -2258,7 +2294,7 @@ built from this file, so it is pinned and the SHA-256 of input and output are
 recorded. A ragged alignment is a hard failure rather than a warning, because
 a silent aligner failure degrades to a star alignment with no other symptom.
 
-An automated trimming heuristic [49] then keeps **1,797 of 11,777 columns,
+An automated trimming heuristic [50] then keeps **1,797 of 11,777 columns,
 15.3 %**. The choice of heuristic is recorded rather than tuned, because a
 trimming threshold picked by looking at the resulting tree is a threshold
 fitted to the answer.
@@ -2357,7 +2393,7 @@ systematic offset here would have propagated into every one of them.
 
 ## 6.5 The exhaustive model scan was measured and abandoned
 
-The obvious command is an exhaustive model scan [50]. It was started, timed
+The obvious command is an exhaustive model scan [51]. It was started, timed
 and abandoned, and the measurement is the reason: **11 models of up to 1,232
 in 672 seconds, projecting about 20.9 hours.**
 
@@ -2381,9 +2417,9 @@ matrix came is checkable.
 
 ## 6.6 The tree search is pinned and guarded, and its rooting doubles as a control
 
-The analysis used one maximum-likelihood search [51], taking 71 minutes,
-with 1,000 ultrafast bootstrap replicates [52] and 1,000 approximate
-likelihood-ratio replicates [53]. **Threads are pinned rather than
+The analysis used one maximum-likelihood search [52], taking 71 minutes,
+with 1,000 ultrafast bootstrap replicates [53] and 1,000 approximate
+likelihood-ratio replicates [54]. **Threads are pinned rather than
 automatic**, because automatic thread count reads the machine's current load
 and the search is reproducible only at a fixed seed and a fixed thread count.
 The number pinned is what the program's own benchmark returned for this
@@ -2510,7 +2546,7 @@ fails any constraint that names a free tip.
 ![](figures/fig_6.7_sister_au.png)
 
 **Figure 6.7.** The three hypotheses under the approximately unbiased
-test [54], with log-likelihood difference and p-value on two panels
+test [55], with log-likelihood difference and p-value on two panels
 sharing one row of categories rather than on two y-axes. They are different
 measures on different scales, and a twin axis invites a comparison that has
 no meaning. This figure is the answer to Chapter 6's central question, and
@@ -2737,7 +2773,7 @@ polymorphic neighbourhoods in the genome.
 
 ## 7.4 The surviving paralogon links run through ITPR1
 
-If the three paralogues are the product of whole-genome duplication [23,24], their neighbourhoods should be paralogous rather than identical,
+If the three paralogues are the product of whole-genome duplication [24,25], their neighbourhoods should be paralogous rather than identical,
 meaning the flanking genes should be surviving copies of the same ancestral
 families under different names. That is exactly what a same-symbol test
 cannot see, and it is why cross-paralogue symbol similarity above is a flat
@@ -2777,7 +2813,7 @@ That is not a contradiction, and §7.13 says why at length. In short, a tree
 estimates the order of duplication, while a retained flanking ohnologue
 records which copies survived deletion beside each gene, and the quartets
 left by whole-genome duplication lose flank copies lineage by lineage in a
-way that carries no memory of the duplication order [55,56]. What can
+way that carries no memory of the duplication order [56,57]. What can
 be said is that the synteny does not corroborate the tree's pair, and that
 whichever pair is sister, the ITPR1 neighbourhood is the one that kept its
 ohnologues.
@@ -2857,7 +2893,7 @@ one rather than estimated here.
 
 It is a hand-curated topology for the 31 vertebrate species the alignment
 samples, with 29 named internal nodes, every one carrying a literature age,
-the spread of published estimates, and its source [57,58,59,60,61]. A validator fails the build on a gene-tree species missing from the
+the spread of published estimates, and its source [58,2,59,60,61]. A validator fails the build on a gene-tree species missing from the
 tree, a taxon with no gene-tree tip, an uncalibrated node, a point age outside
 its own spread, or any age inversion.
 
@@ -3066,7 +3102,7 @@ The dated column splits the two links cleanly: the ITPR1 to ITPR3 link is
 vertebrate-dated in 84 genomes and the ITPR1 to ITPR2 link in 2.
 
 **The fourth slot cannot be found**, and current reconstructions of what the
-vertebrate duplications left behind [69,56] are what a positive answer
+vertebrate duplications left behind [69,57] are what a positive answer
 would have to be read against. A genome-wide block scan returns no block that
 both carries no family gene and looks like these blocks' missing sibling. With
 one dated ohnologue pair surviving between the blocks that do carry a gene, a
@@ -3526,7 +3562,7 @@ And a database's "fragmentary" is usually not a gene boundary, because 228 of
 
 ## 9.1 A zero is the hardest result in this thesis to state
 
-Gene families of this age normally lose copies [25,77]. The prior for a
+Gene families of this age normally lose copies [26,77]. The prior for a
 three-paralogue family present since the origin of the vertebrates is that
 somewhere in 309 genomes at least one lineage has dropped one.
 
@@ -4952,7 +4988,7 @@ aligned partner the residue the other paralogue's table holds.
 A binary contact-or-not label discards the one thing a structure can say that
 an alignment cannot. So every residue within 15 Å of the bound ligand was
 measured, all-atom, in **six independent depositions**, comprising the
-structure used throughout this thesis [6] and five further IP₃-bound entries
+structure used throughout this thesis [1] and five further IP₃-bound entries
 from other groups and other gating states [97,98,99].
 
 The reader is deliberately small and all-atom. Chapter 11's structural reader
@@ -5252,7 +5288,7 @@ correction list addressed to somebody else.
 
 Every gene-scale locus in the 309-genome scope is scored into one of five
 states, comprising complete, split, fragmentary, non-coding only and
-unannotated, against each assembly's own submitted gene set [32], under
+unannotated, against each assembly's own submitted gene set [33], under
 three rules that decide whether the audit is measuring anything.
 
 **Only same-strand features count**, because an antisense gene overlapping the
@@ -5374,7 +5410,7 @@ the assemblies its loci happen to sit in.
 ## 13.6 Half the protein records carry no usable gene symbol
 
 Each of the 11,402 full-length family protein records held by the protein
-databases [30] was scored against the committed bait panel, assigned to a
+databases [31] was scored against the committed bait panel, assigned to a
 family only on a stated margin, then to a paralogue inside the winning
 family, with the record's own gene symbol and protein name read through the
 same verdict rule the genome half uses.
@@ -5766,7 +5802,7 @@ A paper's methods section says what was done. It has to, because a reader
 needs to reproduce it. It cannot say why each threshold is the number it is,
 and for this project that is where most of the work went.
 
-87 methodological decisions were recorded across 35 working sessions,
+88 methodological decisions were recorded across 35 working sessions,
 numbered as they were made. Several of them changed an answer.
 Several were made, tested and overturned. None of them has ever been written
 out as prose, and this chapter is that: not a list, but the arguments in the
@@ -5953,7 +5989,7 @@ distribution**, and both are written out rather than one chosen.
 ## 14.5 Four things in this project were not reproducible until they were pinned
 
 **Anything a committed artefact is built from is aligned single-threaded.**
-The alignment program's [48] iterative refinement combines partial results
+The alignment program's [49] iterative refinement combines partial results
 in whatever order the threads finish, so at automatic thread count it is not
 reproducible: the same seeds aligned twice gave 8,510 and 8,468 columns, and
 the profiles built from them 4,933 and 4,908 match states. This was discovered
@@ -5962,7 +5998,7 @@ count had moved. **A profile that changes when it is rebuilt cannot be the
 profile a committed result was produced with.** Single-threaded costs 87
 seconds instead of 15, once.
 
-**Thread counts and seeds are pinned for the tree search [51] too**, because
+**Thread counts and seeds are pinned for the tree search [52] too**, because
 automatic thread selection reads the machine's current load and the search is
 reproducible only at a fixed seed and a fixed thread count. The number pinned
 is what the program's own benchmark returned, so pinning costs nothing.
@@ -6046,7 +6082,7 @@ the build said so.
 
 ## 14.7 Four rules are specific to this family
 
-Four of the 87 recorded decisions are about this family and could not have
+Four of the 88 recorded decisions are about this family and could not have
 been ported from anywhere.
 
 **Separating IP₃ from ryanodine receptors is a positive test at every stage.**
@@ -6373,7 +6409,7 @@ positive control recovers a comparably long, deeply conserved gene.
 **This changes the status of the family's distribution from an impression to a
 measurement.** The receptor's occurrence outside the animals has been reported
 from whichever genomes were available when each survey was written, and the
-resulting picture is a list of sightings rather than a range [37,38,39,47]. A sighting list cannot support an absence, because the absence of a
+resulting picture is a list of sightings rather than a range [38,39,40,48]. A sighting list cannot support an absence, because the absence of a
 report and the report of an absence look identical in it. What is different
 here is the denominator: 7,691 reference proteomes and 194 non-vertebrate
 genomes, with a control in every genome that carries the claim.
@@ -6382,22 +6418,22 @@ genomes, with a control in every genome that carries the claim.
 literature for two decades.** Plant cells release calcium in response to
 IP₃ in physiological assays, and no plant receptor gene has ever been
 identified, so the standing review of the subject asks in its title whether
-the receptor is real [36]. This work gives the genomic half of that answer
+the receptor is real [37]. This work gives the genomic half of that answer
 in the strong form: land plants do not have the gene, and the green algae they
-descend from do [42,41]. That relocates the question rather than closing
+descend from do [43,42]. That relocates the question rather than closing
 it. The physiology still needs a carrier, and the plant calcium toolkit is
-built from channel families that animals use differently or not at all [43,44], so the useful next experiment is about what performs the function in a
+built from channel families that animals use differently or not at all [44,45], so the useful next experiment is about what performs the function in a
 lineage that demonstrably lost the receptor.
 
 **The absences in the reduced parasite genomes are the least surprising and
 the most useful as controls.** Microsporidia and apicomplexans have undergone
-severe genome reduction [46], and the tapeworms have lost gene families
-across their entire biology as an adaptation to parasitism [45]. A method
+severe genome reduction [47], and the tapeworms have lost gene families
+across their entire biology as an adaptation to parasitism [46]. A method
 that failed to find the receptor in those lineages when it is there would show
 the same pattern, which is why each of those claims is carried by a positive
 control drawn from the same clade rather than by the search returning nothing.
 The apicomplexan calcium literature has had to work around exactly this
-uncertainty [47].
+uncertainty [48].
 
 **A measured range turns the receptor into an instrument for other questions.**
 Co-occurrence across genomes is one of the oldest ways of assigning function
@@ -6416,14 +6452,14 @@ eukaryotic and lost repeatedly rather than invented more than once.
 
 **Loss is the expected fate of a gene family and is still the harder thing to
 demonstrate.** Gene loss is now understood as an ordinary evolutionary
-mechanism rather than as degradation [25], but a loss claim needs a
+mechanism rather than as degradation [26], but a loss claim needs a
 denominator and a control, which is what most reports of a missing channel
 lack. The pattern here is worth stating because it is convergent: the same
 receptor is retained by the chlorophyte algae and absent from land plants
-[42,41], and retained by the early-diverging fungi and absent from the
-Dikarya [40]. Two kingdoms lost the same signalling component on the two
+[43,42], and retained by the early-diverging fungi and absent from the
+Dikarya [41]. Two kingdoms lost the same signalling component on the two
 branches where each made its largest change in cell biology, and calcium
-signalling in both is now carried by other machinery [43].
+signalling in both is now carried by other machinery [44].
 
 That is a comparison a physiologist can act on. It identifies the pairs of
 lineages between which the substitution happened, and it names assemblies on
@@ -6445,7 +6481,7 @@ Reconstructions of the proto-vertebrate, proto-cyclostome and proto-gnathostome
 genomes place the first round before the cyclostome and gnathostome split and
 the second after it [104], which is the arrangement this family's two splits
 recover from an independent gene tree and its own neighbourhood evidence
-[24,69,56]. A family whose duplication history matches the
+[25,69,57]. A family whose duplication history matches the
 genome-scale account needs no lineage-specific explanation, and one that
 did not would have been a problem for either the family or the account.
 
@@ -6468,7 +6504,7 @@ duplication that is predictable, and this result fits the prediction and
 sharpens it.** Retention after a genome duplication is biased towards
 dosage-sensitive genes, whose products work in complexes where the ratio of
 partners matters [108], and the genes that stay duplicated are a small and
-non-random remainder of an otherwise rapid return to single copy [55,70]. The receptor is a homotetramer that also forms heterotetramers, so it
+non-random remainder of an otherwise rapid return to single copy [56,70]. The receptor is a homotetramer that also forms heterotetramers, so it
 is a dosage-sensitive gene by that argument, and the interesting part of the
 result is not that a copy was retained but that only one paralogue's was.
 The ryanodine receptors in the same genomes, under the same duplication and
@@ -6525,7 +6561,7 @@ anywhere on the tree.
 **A zero is the least interesting result to report and the most demanding to
 defend**, which is why §15.3 is about the defence rather than the number. What
 makes it worth reporting at all is the contrast with the expectation. Gene
-loss is common enough to be a normal evolutionary mechanism [25], and this
+loss is common enough to be a normal evolutionary mechanism [26], and this
 family has demonstrably used it repeatedly outside the vertebrates, so a clade
 in which none of three paralogues has been lost in any of 309 genomes is a
 statement about that clade rather than about the family's general behaviour.
@@ -6784,7 +6820,7 @@ and the network. It reads and writes files, runs commands, inspects their
 output, and decides what to do next.
 
 **Claude Code did the following.** It designed the project plan and wrote it
-down as a task ledger with dependencies. It wrote all 373 Python files under
+down as a task ledger with dependencies. It wrote all 374 Python files under
 `scripts/`, which run to over a hundred thousand lines, together with the
 9,243 lines of the search application under `src/`. It audited the
 literature the project started from, claim by claim, against primary
@@ -6984,7 +7020,7 @@ separation**.
 
 Chapter 14 sets out the rules in full. What is worth saying here is that this
 is where the agent's own reasoning is most visible, and it is visible because
-it was written down at the time. **87 numbered decisions** are recorded in the
+it was written down at the time. **88 numbered decisions** are recorded in the
 roadmap, each with the incident that produced it. Several changed an answer.
 An attribution margin inherited from a sister project was measured and
 overturned, because it came from a family whose paralogues are half as similar
@@ -7133,7 +7169,7 @@ sessions, with the ledger and the session log carrying the state between them.
 An agent with no memory between sessions can do this only if the state lives
 in the repository, and the protocol is what puts it there.
 
-**It made the methodology explicit.** 87 numbered decisions with the incident
+**It made the methodology explicit.** 88 numbered decisions with the incident
 that produced each is a level of methodological record-keeping that is
 uncommon in a paper, and it exists because the agent had to write down why it
 did something in order to be able to follow the same rule three weeks later.
@@ -7547,7 +7583,7 @@ panel, which is session state.
 **Rule T7 says every figure is copied from a committed results directory and
 never re-plotted.** It is enforced, in that a missing file, a slug used twice,
 or a committed figure the thesis neither places nor explicitly excludes all
-fail the build. **The thesis places 103 figures**, every one copied from the
+fail the build. **The thesis places 104 figures**, every one copied from the
 results directory that committed it in both formats, with the source and the
 SHA-256 of each recorded in `thesis/figure_manifest.tsv`. Eight figures are
 explicitly excluded, all of them the search application's own bundle plots
@@ -7653,121 +7689,121 @@ Crossref otherwise, and admitted only if the title the identifier returned
 carried the phrase the declaration said it should. Appendix D is that audit,
 and it reports what it caught.
 
-1. Streb H, Irvine RF, Berridge MJ, Schulz I. Release of Ca2+ from a nonmitochondrial intracellular store in pancreatic acinar cells by inositol-1,4,5-trisphosphate. *Nature* **1983**. PMID 6605482. doi:10.1038/306067a0.
+1. Paknejad N, Hite RK. Structural basis for the regulation of inositol trisphosphate receptors by Ca2+ and IP3. *Nat Struct Mol Biol* **2018**. PMID 30013099. doi:10.1038/s41594-018-0089-6.
 
-2. Ferris CD, Huganir RL, Supattapone S, Snyder SH. Purified inositol 1,4,5-trisphosphate receptor mediates calcium flux in reconstituted lipid vesicles. *Nature* **1989**. PMID 2554143. doi:10.1038/342087a0.
+2. Benton M, Donoghue P, Vinther J, Asher R, Friedman M, Near T. Constraints on the timescale of animal evolutionary history. *Palaeontologia Electronica* **2015**. doi:10.26879/424.
 
-3. Furuichi T, Yoshikawa S, Miyawaki A, Wada K, Maeda N, Mikoshiba K. Primary structure and functional expression of the inositol 1,4,5-trisphosphate-binding protein P400. *Nature* **1989**. PMID 2554142. doi:10.1038/342032a0.
+3. Streb H, Irvine RF, Berridge MJ, Schulz I. Release of Ca2+ from a nonmitochondrial intracellular store in pancreatic acinar cells by inositol-1,4,5-trisphosphate. *Nature* **1983**. PMID 6605482. doi:10.1038/306067a0.
 
-4. Maeda N, Niinobe M, Mikoshiba K. A cerebellar Purkinje cell marker P400 protein is an inositol 1,4,5-trisphosphate (InsP3) receptor protein. Purification and characterization of InsP3 receptor complex. *EMBO J* **1990**. PMID 2153079. doi:10.1002/j.1460-2075.1990.tb07386.x.
+4. Ferris CD, Huganir RL, Supattapone S, Snyder SH. Purified inositol 1,4,5-trisphosphate receptor mediates calcium flux in reconstituted lipid vesicles. *Nature* **1989**. PMID 2554143. doi:10.1038/342087a0.
 
-5. Mignery GA, Sudhof TC, Takei K, De Camilli P. Putative receptor for inositol 1,4,5-trisphosphate similar to ryanodine receptor. *Nature* **1989**. PMID 2554146. doi:10.1038/342192a0.
+5. Furuichi T, Yoshikawa S, Miyawaki A, Wada K, Maeda N, Mikoshiba K. Primary structure and functional expression of the inositol 1,4,5-trisphosphate-binding protein P400. *Nature* **1989**. PMID 2554142. doi:10.1038/342032a0.
 
-6. Paknejad N, Hite RK. Structural basis for the regulation of inositol trisphosphate receptors by Ca2+ and IP3. *Nat Struct Mol Biol* **2018**. PMID 30013099. doi:10.1038/s41594-018-0089-6.
+6. Maeda N, Niinobe M, Mikoshiba K. A cerebellar Purkinje cell marker P400 protein is an inositol 1,4,5-trisphosphate (InsP3) receptor protein. Purification and characterization of InsP3 receptor complex. *EMBO J* **1990**. PMID 2153079. doi:10.1002/j.1460-2075.1990.tb07386.x.
 
-7. Seo MD, Velamakanni S, Ishiyama N, Stathopulos PB, Rossi AM, Khan SA *et al.* Structural and functional conservation of key domains in InsP3 and ryanodine receptors. *Nature* **2012**. PMID 22286060. doi:10.1038/nature10751.
+7. Mignery GA, Sudhof TC, Takei K, De Camilli P. Putative receptor for inositol 1,4,5-trisphosphate similar to ryanodine receptor. *Nature* **1989**. PMID 2554146. doi:10.1038/342192a0.
 
-8. Fan G, Baker ML, Wang Z, Baker MR, Sinyagovskiy PA, Chiu W *et al.* Gating machinery of InsP3R channels revealed by electron cryomicroscopy. *Nature* **2015**. PMID 26458101. doi:10.1038/nature15249.
+8. Seo MD, Velamakanni S, Ishiyama N, Stathopulos PB, Rossi AM, Khan SA *et al.* Structural and functional conservation of key domains in InsP3 and ryanodine receptors. *Nature* **2012**. PMID 22286060. doi:10.1038/nature10751.
 
-9. Zalk R, Clarke OB, des Georges A, Grassucci RA, Reiken S, Mancia F *et al.* Structure of a mammalian ryanodine receptor. *Nature* **2015**. PMID 25470061. doi:10.1038/nature13950.
+9. Fan G, Baker ML, Wang Z, Baker MR, Sinyagovskiy PA, Chiu W *et al.* Gating machinery of InsP3R channels revealed by electron cryomicroscopy. *Nature* **2015**. PMID 26458101. doi:10.1038/nature15249.
 
-10. Yan Z, Bai X, Yan C, Wu J, Li Z, Xie T *et al.* Structure of the rabbit ryanodine receptor RyR1 at near-atomic resolution. *Nature* **2015**. PMID 25517095. doi:10.1038/nature14063.
+10. Zalk R, Clarke OB, des Georges A, Grassucci RA, Reiken S, Mancia F *et al.* Structure of a mammalian ryanodine receptor. *Nature* **2015**. PMID 25470061. doi:10.1038/nature13950.
 
-11. Efremov RG, Leitner A, Aebersold R, Raunser S. Architecture and conformational switch mechanism of the ryanodine receptor. *Nature* **2015**. PMID 25470059. doi:10.1038/nature13916.
+11. Yan Z, Bai X, Yan C, Wu J, Li Z, Xie T *et al.* Structure of the rabbit ryanodine receptor RyR1 at near-atomic resolution. *Nature* **2015**. PMID 25517095. doi:10.1038/nature14063.
 
-12. Bezprozvanny I, Watras J, Ehrlich BE. Bell-shaped calcium-response curves of Ins(1,4,5)P3- and calcium-gated channels from endoplasmic reticulum of cerebellum. *Nature* **1991**. PMID 1648178. doi:10.1038/351751a0.
+12. Efremov RG, Leitner A, Aebersold R, Raunser S. Architecture and conformational switch mechanism of the ryanodine receptor. *Nature* **2015**. PMID 25470059. doi:10.1038/nature13916.
 
-13. Marchant JS, Taylor CW. Cooperative activation of IP3 receptors by sequential binding of IP3 and Ca2+ safeguards against spontaneous activity. *Curr Biol* **1997**. PMID 9210378. doi:10.1016/s0960-9822(06)00230-5.
+13. Bezprozvanny I, Watras J, Ehrlich BE. Bell-shaped calcium-response curves of Ins(1,4,5)P3- and calcium-gated channels from endoplasmic reticulum of cerebellum. *Nature* **1991**. PMID 1648178. doi:10.1038/351751a0.
 
-14. Alzayady KJ, Wang L, Chandrasekhar R, Wagner LE, Van Petegem F, Yule DI. Defining the stoichiometry of inositol 1,4,5-trisphosphate binding required to initiate Ca2+ release. *Sci Signal* **2016**. PMID 27048566. doi:10.1126/scisignal.aad6281.
+14. Marchant JS, Taylor CW. Cooperative activation of IP3 receptors by sequential binding of IP3 and Ca2+ safeguards against spontaneous activity. *Curr Biol* **1997**. PMID 9210378. doi:10.1016/s0960-9822(06)00230-5.
 
-15. Bezprozvanny I, Ehrlich BE. ATP modulates the function of inositol 1,4,5-trisphosphate-gated channels at two sites. *Neuron* **1993**. PMID 7686381. doi:10.1016/0896-6273(93)90319-m.
+15. Alzayady KJ, Wang L, Chandrasekhar R, Wagner LE, Van Petegem F, Yule DI. Defining the stoichiometry of inositol 1,4,5-trisphosphate binding required to initiate Ca2+ release. *Sci Signal* **2016**. PMID 27048566. doi:10.1126/scisignal.aad6281.
 
-16. Supattapone S, Danoff SK, Theibert A, Joseph SK, Steiner J, Snyder SH. Cyclic AMP-dependent phosphorylation of a brain inositol trisphosphate receptor decreases its release of calcium. *Proc Natl Acad Sci USA* **1988**. PMID 2847175. doi:10.1073/pnas.85.22.8747.
+16. Bezprozvanny I, Ehrlich BE. ATP modulates the function of inositol 1,4,5-trisphosphate-gated channels at two sites. *Neuron* **1993**. PMID 7686381. doi:10.1016/0896-6273(93)90319-m.
 
-17. Chen R, Valencia I, Zhong F, McColl KS, Roderick HL, Bootman MD *et al.* Bcl-2 functionally interacts with inositol 1,4,5-trisphosphate receptors to regulate calcium release from the ER in response to inositol 1,4,5-trisphosphate. *J Cell Biol* **2004**. PMID 15263017. doi:10.1083/jcb.200402193.
+17. Supattapone S, Danoff SK, Theibert A, Joseph SK, Steiner J, Snyder SH. Cyclic AMP-dependent phosphorylation of a brain inositol trisphosphate receptor decreases its release of calcium. *Proc Natl Acad Sci USA* **1988**. PMID 2847175. doi:10.1073/pnas.85.22.8747.
 
-18. Ando H, Mizutani A, Matsu-ura T, Mikoshiba K. IRBIT, a novel inositol 1,4,5-trisphosphate (IP3) receptor-binding protein, is released from the IP3 receptor upon IP3 binding to the receptor. *J Biol Chem* **2003**. PMID 12525476. doi:10.1074/jbc.M210119200.
+18. Chen R, Valencia I, Zhong F, McColl KS, Roderick HL, Bootman MD *et al.* Bcl-2 functionally interacts with inositol 1,4,5-trisphosphate receptors to regulate calcium release from the ER in response to inositol 1,4,5-trisphosphate. *J Cell Biol* **2004**. PMID 15263017. doi:10.1083/jcb.200402193.
 
-19. Higo T, Hattori M, Nakamura T, Natsume T, Michikawa T, Mikoshiba K. Subtype-specific and ER lumenal environment-dependent regulation of inositol 1,4,5-trisphosphate receptor type 1 by ERp44. *Cell* **2005**. PMID 15652484. doi:10.1016/j.cell.2004.11.048.
+19. Ando H, Mizutani A, Matsu-ura T, Mikoshiba K. IRBIT, a novel inositol 1,4,5-trisphosphate (IP3) receptor-binding protein, is released from the IP3 receptor upon IP3 binding to the receptor. *J Biol Chem* **2003**. PMID 12525476. doi:10.1074/jbc.M210119200.
 
-20. Nakagawa T, Okano H, Furuichi T, Aruga J, Mikoshiba K. The subtypes of the mouse inositol 1,4,5-trisphosphate receptor are expressed in a tissue-specific and developmentally specific manner. *Proc Natl Acad Sci USA* **1991**. PMID 1648733. doi:10.1073/pnas.88.14.6244.
+20. Higo T, Hattori M, Nakamura T, Natsume T, Michikawa T, Mikoshiba K. Subtype-specific and ER lumenal environment-dependent regulation of inositol 1,4,5-trisphosphate receptor type 1 by ERp44. *Cell* **2005**. PMID 15652484. doi:10.1016/j.cell.2004.11.048.
 
-21. Danoff SK, Ferris CD, Donath C, Fischer GA, Munemitsu S, Ullrich A *et al.* Inositol 1,4,5-trisphosphate receptors: distinct neuronal and nonneuronal forms derived by alternative splicing differ in phosphorylation. *Proc Natl Acad Sci USA* **1991**. PMID 1849282. doi:10.1073/pnas.88.7.2951.
+21. Nakagawa T, Okano H, Furuichi T, Aruga J, Mikoshiba K. The subtypes of the mouse inositol 1,4,5-trisphosphate receptor are expressed in a tissue-specific and developmentally specific manner. *Proc Natl Acad Sci USA* **1991**. PMID 1648733. doi:10.1073/pnas.88.14.6244.
 
-22. Bartok A, Weaver D, Golenar T, Nichtova Z, Katona M, Bansaghi S *et al.* IP3 receptor isoforms differently regulate ER-mitochondrial contacts and local calcium transfer. *Nat Commun* **2019**. PMID 31427578. doi:10.1038/s41467-019-11646-3.
+22. Danoff SK, Ferris CD, Donath C, Fischer GA, Munemitsu S, Ullrich A *et al.* Inositol 1,4,5-trisphosphate receptors: distinct neuronal and nonneuronal forms derived by alternative splicing differ in phosphorylation. *Proc Natl Acad Sci USA* **1991**. PMID 1849282. doi:10.1073/pnas.88.7.2951.
 
-23. Ohno S. Evolution by Gene Duplication. *Springer Berlin Heidelberg* **1970**. doi:10.1007/978-3-642-86659-3.
+23. Bartok A, Weaver D, Golenar T, Nichtova Z, Katona M, Bansaghi S *et al.* IP3 receptor isoforms differently regulate ER-mitochondrial contacts and local calcium transfer. *Nat Commun* **2019**. PMID 31427578. doi:10.1038/s41467-019-11646-3.
 
-24. Dehal P, Boore JL. Two rounds of whole genome duplication in the ancestral vertebrate. *PLoS Biol* **2005**. PMID 16128622. doi:10.1371/journal.pbio.0030314.
+24. Ohno S. Evolution by Gene Duplication. *Springer Berlin Heidelberg* **1970**. doi:10.1007/978-3-642-86659-3.
 
-25. Albalat R, Cañestro C. Evolution by gene loss. *Nat Rev Genet* **2016**. PMID 27087500. doi:10.1038/nrg.2016.39.
+25. Dehal P, Boore JL. Two rounds of whole genome duplication in the ancestral vertebrate. *PLoS Biol* **2005**. PMID 16128622. doi:10.1371/journal.pbio.0030314.
 
-26. Harrison PW, Amode MR, Austine-Orimoloye O, Azov AG, Barba M, Barnes I *et al.* Ensembl 2024. *Nucleic Acids Res* **2024**. PMID 37953337. doi:10.1093/nar/gkad1049.
+26. Albalat R, Cañestro C. Evolution by gene loss. *Nat Rev Genet* **2016**. PMID 27087500. doi:10.1038/nrg.2016.39.
 
-27. Mistry J, Chuguransky S, Williams L, Qureshi M, Salazar GA, Sonnhammer ELL *et al.* Pfam: The protein families database in 2021. *Nucleic Acids Res* **2021**. PMID 33125078. doi:10.1093/nar/gkaa913.
+27. Harrison PW, Amode MR, Austine-Orimoloye O, Azov AG, Barba M, Barnes I *et al.* Ensembl 2024. *Nucleic Acids Res* **2024**. PMID 37953337. doi:10.1093/nar/gkad1049.
 
-28. Blum M, Chang HY, Chuguransky S, Grego T, Kandasaamy S, Mitchell A *et al.* The InterPro protein families and domains database: 20 years on. *Nucleic Acids Res* **2021**. PMID 33156333. doi:10.1093/nar/gkaa977.
+28. Mistry J, Chuguransky S, Williams L, Qureshi M, Salazar GA, Sonnhammer ELL *et al.* Pfam: The protein families database in 2021. *Nucleic Acids Res* **2021**. PMID 33125078. doi:10.1093/nar/gkaa913.
 
-29. Eddy SR. Accelerated Profile HMM Searches. *PLoS Comput Biol* **2011**. PMID 22039361. doi:10.1371/journal.pcbi.1002195.
+29. Blum M, Chang HY, Chuguransky S, Grego T, Kandasaamy S, Mitchell A *et al.* The InterPro protein families and domains database: 20 years on. *Nucleic Acids Res* **2021**. PMID 33156333. doi:10.1093/nar/gkaa977.
 
-30. . UniProt: the Universal Protein Knowledgebase in 2023. *Nucleic Acids Res* **2023**. PMID 36408920. doi:10.1093/nar/gkac1052.
+30. Eddy SR. Accelerated Profile HMM Searches. *PLoS Comput Biol* **2011**. PMID 22039361. doi:10.1371/journal.pcbi.1002195.
 
-31. Johnson LS, Eddy SR, Portugaly E. Hidden Markov model speed heuristic and iterative HMM search procedure. *BMC Bioinformatics* **2010**. PMID 20718988. doi:10.1186/1471-2105-11-431.
+31. . UniProt: the Universal Protein Knowledgebase in 2023. *Nucleic Acids Res* **2023**. PMID 36408920. doi:10.1093/nar/gkac1052.
 
-32. O'Leary NA, Cox E, Holmes JB, Anderson WR, Falk R, Hem V *et al.* Exploring and retrieving sequence and metadata for species across the tree of life with NCBI Datasets. *Sci Data* **2024**. PMID 38969627. doi:10.1038/s41597-024-03571-y.
+32. Johnson LS, Eddy SR, Portugaly E. Hidden Markov model speed heuristic and iterative HMM search procedure. *BMC Bioinformatics* **2010**. PMID 20718988. doi:10.1186/1471-2105-11-431.
 
-33. Li H. Protein-to-genome alignment with miniprot. *Bioinformatics* **2023**. PMID 36648328. doi:10.1093/bioinformatics/btad014.
+33. O'Leary NA, Cox E, Holmes JB, Anderson WR, Falk R, Hem V *et al.* Exploring and retrieving sequence and metadata for species across the tree of life with NCBI Datasets. *Sci Data* **2024**. PMID 38969627. doi:10.1038/s41597-024-03571-y.
 
-34. Camacho C, Coulouris G, Avagyan V, Ma N, Papadopoulos J, Bealer K *et al.* BLAST+: architecture and applications. *BMC Bioinformatics* **2009**. PMID 20003500. doi:10.1186/1471-2105-10-421.
+34. Li H. Protein-to-genome alignment with miniprot. *Bioinformatics* **2023**. PMID 36648328. doi:10.1093/bioinformatics/btad014.
 
-35. Rhie A, McCarthy SA, Fedrigo O, Damas J, Formenti G, Koren S *et al.* Towards complete and error-free genome assemblies of all vertebrate species. *Nature* **2021**. PMID 33911273. doi:10.1038/s41586-021-03451-0.
+35. Camacho C, Coulouris G, Avagyan V, Ma N, Papadopoulos J, Bealer K *et al.* BLAST+: architecture and applications. *BMC Bioinformatics* **2009**. PMID 20003500. doi:10.1186/1471-2105-10-421.
 
-36. Krinke O, Novotná Z, Valentová O, Martinec J. Inositol trisphosphate receptor in higher plants: is it real?. *J Exp Bot* **2007**. PMID 17150991. doi:10.1093/jxb/erl220.
+36. Rhie A, McCarthy SA, Fedrigo O, Damas J, Formenti G, Koren S *et al.* Towards complete and error-free genome assemblies of all vertebrate species. *Nature* **2021**. PMID 33911273. doi:10.1038/s41586-021-03451-0.
 
-37. Plattner H, Verkhratsky A. Ca2+ signalling early in evolution--all but primitive. *J Cell Sci* **2013**. PMID 23729741. doi:10.1242/jcs.127449.
+37. Krinke O, Novotná Z, Valentová O, Martinec J. Inositol trisphosphate receptor in higher plants: is it real?. *J Exp Bot* **2007**. PMID 17150991. doi:10.1093/jxb/erl220.
 
-38. Plattner H. Molecular aspects of calcium signalling at the crossroads of unikont and bikont eukaryote evolution--the ciliated protozoan Paramecium in focus. *Cell Calcium* **2015**. PMID 25601027. doi:10.1016/j.ceca.2014.12.002.
+38. Plattner H, Verkhratsky A. Ca2+ signalling early in evolution--all but primitive. *J Cell Sci* **2013**. PMID 23729741. doi:10.1242/jcs.127449.
 
-39. Cai X, Clapham DE. Ancestral Ca2+ signaling machinery in early animal and fungal evolution. *Mol Biol Evol* **2012**. PMID 21680871. doi:10.1093/molbev/msr149.
+39. Plattner H. Molecular aspects of calcium signalling at the crossroads of unikont and bikont eukaryote evolution--the ciliated protozoan Paramecium in focus. *Cell Calcium* **2015**. PMID 25601027. doi:10.1016/j.ceca.2014.12.002.
 
-40. James TY, Kauff F, Schoch CL, Matheny PB, Hofstetter V, Cox CJ *et al.* Reconstructing the early evolution of Fungi using a six-gene phylogeny. *Nature* **2006**. PMID 17051209. doi:10.1038/nature05110.
+40. Cai X, Clapham DE. Ancestral Ca2+ signaling machinery in early animal and fungal evolution. *Mol Biol Evol* **2012**. PMID 21680871. doi:10.1093/molbev/msr149.
 
-41. Merchant SS, Prochnik SE, Vallon O, Harris EH, Karpowicz SJ, Witman GB *et al.* The Chlamydomonas genome reveals the evolution of key animal and plant functions. *Science* **2007**. PMID 17932292. doi:10.1126/science.1143609.
+41. James TY, Kauff F, Schoch CL, Matheny PB, Hofstetter V, Cox CJ *et al.* Reconstructing the early evolution of Fungi using a six-gene phylogeny. *Nature* **2006**. PMID 17051209. doi:10.1038/nature05110.
 
-42. Wheeler GL, Brownlee C. Ca2+ signalling in plants and green algae--changing channels. *Trends Plant Sci* **2008**. PMID 18703378. doi:10.1016/j.tplants.2008.06.004.
+42. Merchant SS, Prochnik SE, Vallon O, Harris EH, Karpowicz SJ, Witman GB *et al.* The Chlamydomonas genome reveals the evolution of key animal and plant functions. *Science* **2007**. PMID 17932292. doi:10.1126/science.1143609.
 
-43. Edel KH, Marchadier E, Brownlee C, Kudla J, Hetherington AM. The Evolution of Calcium-Based Signalling in Plants. *Curr Biol* **2017**. PMID 28697370. doi:10.1016/j.cub.2017.05.020.
+43. Wheeler GL, Brownlee C. Ca2+ signalling in plants and green algae--changing channels. *Trends Plant Sci* **2008**. PMID 18703378. doi:10.1016/j.tplants.2008.06.004.
 
-44. Verret F, Wheeler G, Taylor AR, Farnham G, Brownlee C. Calcium channels in photosynthetic eukaryotes: implications for evolution of calcium-based signalling. *New Phytol* **2010**. PMID 20456068. doi:10.1111/j.1469-8137.2010.03271.x.
+44. Edel KH, Marchadier E, Brownlee C, Kudla J, Hetherington AM. The Evolution of Calcium-Based Signalling in Plants. *Curr Biol* **2017**. PMID 28697370. doi:10.1016/j.cub.2017.05.020.
 
-45. Tsai IJ, Zarowiecki M, Holroyd N, Garciarrubio A, Sánchez-Flores A, Brooks KL *et al.* The genomes of four tapeworm species reveal adaptations to parasitism. *Nature* **2013**. PMID 23485966. doi:10.1038/nature12031.
+45. Verret F, Wheeler G, Taylor AR, Farnham G, Brownlee C. Calcium channels in photosynthetic eukaryotes: implications for evolution of calcium-based signalling. *New Phytol* **2010**. PMID 20456068. doi:10.1111/j.1469-8137.2010.03271.x.
 
-46. Keeling PJ, Slamovits CH. Causes and effects of nuclear genome reduction. *Curr Opin Genet Dev* **2005**. PMID 16188433. doi:10.1016/j.gde.2005.09.003.
+46. Tsai IJ, Zarowiecki M, Holroyd N, Garciarrubio A, Sánchez-Flores A, Brooks KL *et al.* The genomes of four tapeworm species reveal adaptations to parasitism. *Nature* **2013**. PMID 23485966. doi:10.1038/nature12031.
 
-47. Prole DL, Taylor CW. Identification of intracellular and plasma membrane calcium channel homologues in pathogenic parasites. *PLoS One* **2011**. PMID 22022573. doi:10.1371/journal.pone.0026218.
+47. Keeling PJ, Slamovits CH. Causes and effects of nuclear genome reduction. *Curr Opin Genet Dev* **2005**. PMID 16188433. doi:10.1016/j.gde.2005.09.003.
 
-48. Katoh K, Standley DM. MAFFT multiple sequence alignment software version 7: improvements in performance and usability. *Mol Biol Evol* **2013**. PMID 23329690. doi:10.1093/molbev/mst010.
+48. Prole DL, Taylor CW. Identification of intracellular and plasma membrane calcium channel homologues in pathogenic parasites. *PLoS One* **2011**. PMID 22022573. doi:10.1371/journal.pone.0026218.
 
-49. Capella-Gutiérrez S, Silla-Martínez JM, Gabaldón T. trimAl: a tool for automated alignment trimming in large-scale phylogenetic analyses. *Bioinformatics* **2009**. PMID 19505945. doi:10.1093/bioinformatics/btp348.
+49. Katoh K, Standley DM. MAFFT multiple sequence alignment software version 7: improvements in performance and usability. *Mol Biol Evol* **2013**. PMID 23329690. doi:10.1093/molbev/mst010.
 
-50. Kalyaanamoorthy S, Minh BQ, Wong TKF, von Haeseler A, Jermiin LS. ModelFinder: fast model selection for accurate phylogenetic estimates. *Nat Methods* **2017**. PMID 28481363. doi:10.1038/nmeth.4285.
+50. Capella-Gutiérrez S, Silla-Martínez JM, Gabaldón T. trimAl: a tool for automated alignment trimming in large-scale phylogenetic analyses. *Bioinformatics* **2009**. PMID 19505945. doi:10.1093/bioinformatics/btp348.
 
-51. Minh BQ, Schmidt HA, Chernomor O, Schrempf D, Woodhams MD, von Haeseler A *et al.* IQ-TREE 2: New Models and Efficient Methods for Phylogenetic Inference in the Genomic Era. *Mol Biol Evol* **2020**. PMID 32011700. doi:10.1093/molbev/msaa015.
+51. Kalyaanamoorthy S, Minh BQ, Wong TKF, von Haeseler A, Jermiin LS. ModelFinder: fast model selection for accurate phylogenetic estimates. *Nat Methods* **2017**. PMID 28481363. doi:10.1038/nmeth.4285.
 
-52. Hoang DT, Chernomor O, von Haeseler A, Minh BQ, Vinh LS. UFBoot2: Improving the Ultrafast Bootstrap Approximation. *Mol Biol Evol* **2018**. PMID 29077904. doi:10.1093/molbev/msx281.
+52. Minh BQ, Schmidt HA, Chernomor O, Schrempf D, Woodhams MD, von Haeseler A *et al.* IQ-TREE 2: New Models and Efficient Methods for Phylogenetic Inference in the Genomic Era. *Mol Biol Evol* **2020**. PMID 32011700. doi:10.1093/molbev/msaa015.
 
-53. Guindon S, Dufayard JF, Lefort V, Anisimova M, Hordijk W, Gascuel O. New algorithms and methods to estimate maximum-likelihood phylogenies: assessing the performance of PhyML 3.0. *Syst Biol* **2010**. PMID 20525638. doi:10.1093/sysbio/syq010.
+53. Hoang DT, Chernomor O, von Haeseler A, Minh BQ, Vinh LS. UFBoot2: Improving the Ultrafast Bootstrap Approximation. *Mol Biol Evol* **2018**. PMID 29077904. doi:10.1093/molbev/msx281.
 
-54. Shimodaira H. An approximately unbiased test of phylogenetic tree selection. *Syst Biol* **2002**. PMID 12079646. doi:10.1080/10635150290069913.
+54. Guindon S, Dufayard JF, Lefort V, Anisimova M, Hordijk W, Gascuel O. New algorithms and methods to estimate maximum-likelihood phylogenies: assessing the performance of PhyML 3.0. *Syst Biol* **2010**. PMID 20525638. doi:10.1093/sysbio/syq010.
 
-55. Inoue J, Sato Y, Sinclair R, Tsukamoto K, Nishida M. Rapid genome reshaping by multiple-gene loss after whole-genome duplication in teleost fish suggested by mathematical modeling. *Proc Natl Acad Sci U S A* **2015**. PMID 26578810. doi:10.1073/pnas.1507669112.
+55. Shimodaira H. An approximately unbiased test of phylogenetic tree selection. *Syst Biol* **2002**. PMID 12079646. doi:10.1080/10635150290069913.
 
-56. Nakatani Y, Takeda H, Kohara Y, Morishita S. Reconstruction of the vertebrate ancestral genome reveals dynamic genome reorganization in early vertebrates. *Genome Res* **2007**. PMID 17652425. doi:10.1101/gr.6316407.
+56. Inoue J, Sato Y, Sinclair R, Tsukamoto K, Nishida M. Rapid genome reshaping by multiple-gene loss after whole-genome duplication in teleost fish suggested by mathematical modeling. *Proc Natl Acad Sci U S A* **2015**. PMID 26578810. doi:10.1073/pnas.1507669112.
 
-57. Kumar S, Suleski M, Craig JM, Kasprowicz AE, Sanderford M, Li M *et al.* TimeTree 5: An Expanded Resource for Species Divergence Times. *Mol Biol Evol* **2022**. PMID 35932227. doi:10.1093/molbev/msac174.
+57. Nakatani Y, Takeda H, Kohara Y, Morishita S. Reconstruction of the vertebrate ancestral genome reveals dynamic genome reorganization in early vertebrates. *Genome Res* **2007**. PMID 17652425. doi:10.1101/gr.6316407.
 
-58. Benton M, Donoghue P, Vinther J, Asher R, Friedman M, Near T. Constraints on the timescale of animal evolutionary history. *Palaeontologia Electronica* **2015**. doi:10.26879/424.
+58. Kumar S, Suleski M, Craig JM, Kasprowicz AE, Sanderford M, Li M *et al.* TimeTree 5: An Expanded Resource for Species Divergence Times. *Mol Biol Evol* **2022**. PMID 35932227. doi:10.1093/molbev/msac174.
 
 59. Irisarri I, Baurain D, Brinkmann H, Delsuc F, Sire JY, Kupfer A *et al.* Phylotranscriptomic consolidation of the jawed vertebrate timetree. *Nat Ecol Evol* **2017**. PMID 28890940. doi:10.1038/s41559-017-0240-5.
 
