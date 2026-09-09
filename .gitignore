@@ -70,3 +70,6 @@ results/**/*.lock
 # IQ-TREE raw bootstrap tree sets — bulk, regenerable from the run;
 # the consensus (.contree) and splits (.splits.nex) are what we keep
 results/**/*.ufboot
+
+# S18 measurement cache (re-derivable: scripts/s18_run.py --only loci --refresh)
+results/annotation_audit/.measurements.pkl

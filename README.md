@@ -19,19 +19,23 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S17 complete — the census is enumerated, aligned, dated,
-audited, counted, traced back to the duplications that made it, and now
-scored residue by residue; 25 of the 33 ledger rows are done.** **The gate
-has not changed.** The five residues that line the closing point of the
-channel are the most invariant sequence in the receptor and are
-**identical in all three human copies**, which have been separate genes
-since before jawed vertebrates and are only 64–70 % identical overall. Two
-things came with that. **The domain the databases name after IP3 contains
-none of the ten residues that touch IP3** — those sit in MIR and RIH, the
-domains shared with the ryanodine receptors. And **a 50-residue loop
-hanging into the ER lumen is the least conserved sequence in the protein**
-(13–31 % identity between copies), fifty residues from the most conserved,
-inside the same domain (§ *S17* below).
+**Status: S18 complete — the census is enumerated, aligned, dated,
+audited, counted, traced back to the duplications that made it, scored
+residue by residue, and now audited against the records that hold it; 26 of
+the 33 ledger rows are done.** **The gene is fine; the paperwork is not — and
+it is not this family's paperwork.** Across 309 vertebrate genomes the
+annotation delivers **73.9 %** of the IP3-receptor loci as one complete gene
+model, and the ryanodine receptors in the same assemblies through the same
+pipelines sit at **77.9 %**: no difference survives correction, so the audit's
+own premise is contradicted by its control. What does differ is **who wrote
+the gene list** — RefSeq 98.8 % against submitter-deposited GenBank 37.5 %,
+and only about a third of that gap is assembly quality — and **whether the DNA
+can carry the gene at all**, which accounts for three quarters of the rest.
+One failure looks like this family's own — an ITPR locus is **2.7× more
+likely** than a RyR locus to be recorded as non-coding, named correctly and
+serving no protein — but it too vanishes above the contiguity bar. And **55 %
+of the family's full-length protein records have no usable gene symbol**
+(§ *S18* below).
 
 The build-up. The literature baseline is verified with a citation on every
 claim ([`docs/ip3r_review_2026.md`](docs/ip3r_review_2026.md), 32 pages,
@@ -454,7 +458,7 @@ One task per session. Full ledger with dependencies and results in
 | S15b | Loss dynamics — the counts and the sensitivity matrix | ✅ completed 2026-09-08 |
 | S16 | Duplication history (2R / 3R, and the RyR parallel) | ✅ completed 2026-09-08 |
 | S17 | Constraint & function — the clinical-variant test | ✅ completed 2026-09-08 |
-| S18 | Annotation-quality audit + correction list | ⏳ pending |
+| S18 | Annotation-quality audit + correction list | ✅ completed 2026-09-08 |
 | S19 | Methods results | ⏳ pending |
 | S21 | Gene architecture (~58 exons) | ⏳ pending |
 | S22 | Ligand-site evolution | ⏳ pending |
@@ -498,6 +502,42 @@ significance**, and **ITPR2's entire pathogenic record is one variant** —
 which is ascertainment, not tolerance: its gate is identical to the others'
 and its IP3 contacts are the most conserved of the three, with 8 of 10
 invariant across 249 species. All 1,753 records now carry a per-site score.
+
+**S18 — the family is not badly recorded; vertebrate gene sets are.** Every
+one of the 2,144 gene-scale loci in the genome scope was scored *complete /
+split / fragmentary / non-coding only / unannotated*, on CDS blocks and same
+strand only, with the ryanodine receptors measured beside them as the control.
+ITPR **73.9 %** complete against RyR **77.9 %**, no state differing after BH
+except one — an ITPR locus is **2.7× more likely** to be held only by a
+non-coding feature (42 vs 16, q = 0.006), which is a gene the annotation names
+correctly and files as `gene_biotype=other`, so no protein record is ever
+created. Even that does not survive the contiguity control (4 vs 5 above D4's
+bar, q = 1.0), so it may be a fact about the assemblies rather than the genes.
+The two effects that dwarf the family are **the archive** (RefSeq 98.8 % vs
+submitter GenBank 37.5 %, 99.4 % vs 63.8 % once contiguity is held constant)
+and **the assembly** (failure 26.1 % → 6.7 % across D4's bar). The
+completeness bar was **inherited from S5 and validated, not re-derived**: over
+1,077 correctly-named, fully-recovered loci a single model covers a median
+0.993, so 0.50 is that distribution's 1.3 % point, and across bars 0.30–0.95
+`complete` moves only 76.4 % → 68.1 %.
+
+![annotation by source](results/annotation_audit/figures/s18_fig1_by_source.png)
+
+**S18 — the protein records are named right and cannot be found, and all 15
+"missing" proteomes have the gene.** Of 11,402 full-length family protein
+records blastp'd against the labelled bait panel, **4** disagree with the
+project's own family call and **5** are named for the sister family — all
+non-vertebrate, all under 200 bits. The paralog is right too: 52 of 8,306
+vertebrate symbols name a different type from the one the panel assigns. But
+**3,872 records carry a placeholder gene symbol and 2,395 carry none** — 55 %
+of the record set is unreachable by name — and 66 more are named for the
+superfamily, which separates neither family. Separately, the **15 vertebrate
+reference proteomes S3's profile sweep found nothing in are all gene-caller
+failures**: every species has a genome in scope and every genome carries the
+gene, 0 genuine absences, 11 of the 15 birds. The task ships **297
+corrections** (52 high priority, 18 withheld under D6's integrity veto), each
+with assembly, coordinates, current state, proposal and an archived evidence
+file.
 
 ![the variant classifier](results/constraint/figures/s17_variant_classifier.png)
 
@@ -575,7 +615,7 @@ carries more than its siblings; in ray-finned fishes the same test is 7 to
 fragmented assemblies of any group here and 21 of those 27 sit below this
 project's quality bar. The six above it all point the same way and none
 points against, but six cannot settle it. The lineage is named; the
-mechanism is not *(pending: S18/S19)*.
+mechanism is not *(pending: S19 — S18 measured annotation quality, which is a different instrument from the gene models this rests on)*.
 
 
 **S15a — nobody has lost this gene.** Across 309 vertebrate genomes, from

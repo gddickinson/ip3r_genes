@@ -1,0 +1,14 @@
+vclass	n_loci	n_cds_unavailable	frac_cds_unavailable	n_gff_unavailable	frac_gff_unavailable	n_no_gene_set	frac_no_gene_set	n_unannotated	frac_unannotated	n_noncoding	frac_noncoding	n_complete	frac_complete	n_split	frac_split	n_fragmentary	frac_fragmentary
+Actinopteri	317	0	0	0	0	0	0	12	0.0379	1	0.0032	275	0.8675	10	0.0315	19	0.0599
+Amphibia	27	0	0	0	0	0	0	1	0.037	0	0	21	0.7778	2	0.0741	3	0.1111
+Aves	433	0	0	0	0	0	0	24	0.0554	41	0.0947	243	0.5612	1	0.0023	124	0.2864
+Chondrichthyes	33	0	0	0	0	0	0	0	0	0	0	33	1	0	0	0	0
+Cladistia	3	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0
+Coelacanthimorpha	3	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0
+Crocodylia	3	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0
+Dipnoi	3	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0
+Hyperoartia	3	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0
+Lepidosauria	6	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0
+Mammalia	95	0	0	0	0	0	0	1	0.0105	0	0	90	0.9474	1	0.0105	3	0.0316
+Myxini	3	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0
+Testudines	3	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0

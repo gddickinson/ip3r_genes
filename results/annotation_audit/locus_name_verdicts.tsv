@@ -1,0 +1,17 @@
+cell	source	field	n	n_absent	frac_absent	n_correct_family_wrong_paralog	frac_correct_family_wrong_paralog	n_correct_paralog	frac_correct_paralog	n_family_ambiguous	frac_family_ambiguous	n_family_unnamed	frac_family_unnamed	n_paralog_not_callable	frac_paralog_not_callable	n_paralog_unspecified	frac_paralog_unspecified	n_placeholder	frac_placeholder	n_wrong_family	frac_wrong_family
+ITPR1	GenBank	symbol_verdict	121	11	0.0909	0	0	68	0.562	0	0	0	0	0	0	0	0	42	0.3471	0	0
+ITPR1	RefSeq	symbol_verdict	225	0	0	0	0	165	0.7333	0	0	0	0	0	0	0	0	60	0.2667	0	0
+ITPR2	GenBank	symbol_verdict	124	13	0.1048	0	0	90	0.7258	0	0	0	0	0	0	0	0	21	0.1694	0	0
+ITPR2	RefSeq	symbol_verdict	164	0	0	0	0	150	0.9146	0	0	0	0	0	0	0	0	14	0.0854	0	0
+ITPR3	GenBank	symbol_verdict	129	14	0.1085	3	0.0233	72	0.5581	0	0	0	0	0	0	0	0	40	0.3101	0	0
+ITPR3	RefSeq	symbol_verdict	169	0	0	0	0	158	0.9349	0	0	0	0	0	0	0	0	11	0.0651	0	0
+RYR	GenBank	symbol_verdict	325	52	0.16	0	0	182	0.56	0	0	0	0	0	0	0	0	91	0.28	0	0
+RYR	RefSeq	symbol_verdict	617	10	0.0162	0	0	430	0.6969	0	0	0	0	0	0	0	0	177	0.2869	0	0
+ITPR1	GenBank	product_verdict	121	14	0.1157	0	0	72	0.595	0	0	3	0.0248	0	0	0	0	32	0.2645	0	0
+ITPR1	RefSeq	product_verdict	225	1	0.0044	0	0	223	0.9911	0	0	0	0	0	0	1	0.0044	0	0	0	0
+ITPR2	GenBank	product_verdict	124	15	0.121	0	0	94	0.7581	0	0	0	0	0	0	0	0	15	0.121	0	0
+ITPR2	RefSeq	product_verdict	164	0	0	0	0	163	0.9939	0	0	1	0.0061	0	0	0	0	0	0	0	0
+ITPR3	GenBank	product_verdict	129	18	0.1395	3	0.0233	73	0.5659	0	0	3	0.0233	0	0	0	0	32	0.2481	0	0
+ITPR3	RefSeq	product_verdict	169	0	0	0	0	168	0.9941	0	0	1	0.0059	0	0	0	0	0	0	0	0
+RYR	GenBank	product_verdict	325	59	0.1815	0	0	201	0.6185	0	0	0	0	0	0	0	0	65	0.2	0	0
+RYR	RefSeq	product_verdict	617	10	0.0162	0	0	607	0.9838	0	0	0	0	0	0	0	0	0	0	0	0

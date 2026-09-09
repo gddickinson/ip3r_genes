@@ -1,0 +1,14 @@
+axis	bucket	n_records	n_with_naming_pfam	frac_with_naming_pfam	n_complete_architecture	frac_complete_architecture	naming_pfam
+census call	ITPR	5833	5555	0.9523	5267	0.903	PF08709
+census call	RYR	5569	5121	0.9196	4820	0.8655	PF08709
+taxonomic group	Amoebozoa	11	7	0.6364	1	0.0909	PF08709
+taxonomic group	Discoba	42	40	0.9524	15	0.3571	PF08709
+taxonomic group	Eukaryota (other)	34	28	0.8235	14	0.4118	PF08709
+taxonomic group	Fungi	26	25	0.9615	12	0.4615	PF08709
+taxonomic group	Metazoa (non-vertebrate)	2552	2359	0.9244	2213	0.8672	PF08709
+taxonomic group	SAR	407	263	0.6462	100	0.2457	PF08709
+taxonomic group	Vertebrata	8306	7935	0.9553	7726	0.9302	PF08709
+taxonomic group	Viridiplantae	24	19	0.7917	6	0.25	PF08709
+which instruments called it	both	9841	9412	0.9564	9143	0.9291	PF08709
+which instruments called it	profile	7	2	0.2857	0	0	PF08709
+which instruments called it	v4+s20	1554	1262	0.8121	944	0.6075	PF08709

@@ -1,0 +1,15 @@
+scope	measure	n_itpr	n_itpr_failing	frac_itpr_failing	n_ryr	n_ryr_failing	frac_ryr_failing	p_fisher	q_bh
+all scorable loci	any annotation failure	932	243	0.2607	942	208	0.2208	0.045604	0.127691
+all scorable loci	cds_unavailable	932	0	0	942	0	0	1	1
+all scorable loci	unannotated	932	38	0.0408	942	64	0.0679	0.010706	0.074942
+all scorable loci	noncoding	932	42	0.0451	942	16	0.017	0.000453	0.006342
+all scorable loci	complete	932	689	0.7393	942	734	0.7792	0.045604	0.127691
+all scorable loci	split	932	14	0.015	942	13	0.0138	0.848749	1
+all scorable loci	fragmentary	932	149	0.1599	942	115	0.1221	0.020092	0.093763
+loci on a contig that spans the gene (D4)	any annotation failure	568	38	0.0669	632	35	0.0554	0.468275	0.819481
+loci on a contig that spans the gene (D4)	cds_unavailable	568	0	0	632	0	0	1	1
+loci on a contig that spans the gene (D4)	unannotated	568	7	0.0123	632	5	0.0079	0.564765	0.878523
+loci on a contig that spans the gene (D4)	noncoding	568	4	0.007	632	5	0.0079	1	1
+loci on a contig that spans the gene (D4)	complete	568	530	0.9331	632	597	0.9446	0.468275	0.819481
+loci on a contig that spans the gene (D4)	split	568	11	0.0194	632	8	0.0127	0.366043	0.819481
+loci on a contig that spans the gene (D4)	fragmentary	568	16	0.0282	632	17	0.0269	1	1

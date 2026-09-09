@@ -2808,3 +2808,137 @@ luminal loop is where a database "fragment" boundary would be least
 surprising and least informative — a 50-residue low-complexity insert that
 trimAl deletes and cryo-EM cannot resolve is exactly where gene callers
 disagree.
+
+---
+
+## 2026-09-08 — S18: annotation-quality audit
+
+Session protocol: dashboard opened and watched, `git pull` clean, data root
+`/Volumes/FANTOM/IP3R_DATA` attached with 676.5 GB free. No `in_progress`
+row; topmost unblocked `pending` was **S18** (deps S5b and S15, both
+completed, priority high).
+
+### What ran
+
+Twelve new modules under `scripts/s18_*.py`, all under the 500-line budget,
+plus a small additive refactor of `s10_gff.py`.
+
+- `s10_gff.read_annotation_windows` / `read_miniprot_models` — one pass per
+  file for many windows or many models, sharing `_build_genes` with the
+  per-window readers so S10 and S18 cannot disagree about what a gene is.
+  S10's 47 negative controls re-run and pass unchanged.
+- `s18_run.py --only loci` — 2,144 gene-scale loci in 309 assemblies scored
+  against 274 archived `genomic.gff.gz` files (4 min per full pass, cached).
+- `s18_run.py --only protein` — 11,402 full-length family protein records
+  resolved through `s6_lib.SequenceStore` (0 missing) and blastp'd against
+  the committed 38-bait panel.
+- `zero`, `corrections`, `tables`, `figures`, `report`.
+- `s18_test_audit.py` — 45 constructed negative controls, run before
+  anything is written; mutation-tested on 9 deliberate rule breakages, all 9
+  caught.
+
+### What resulted
+
+**The audit's own premise is contradicted by its control.** ITPR loci are
+73.9 % complete and 26.1 % failing; the ryanodine receptors, in the same
+assemblies through the same pipelines, are 77.9 % / 22.1 %. No overall
+difference survives BH correction (q = 0.13 raw, 0.82 above D4's bar). One
+state does separate, and it is the family-specific one: an ITPR locus is
+2.7x more likely than a RyR locus to be held *only* by a non-coding feature
+(42 vs 16, q = 0.006) — and that does not survive the contiguity control
+either (4 vs 5 above D4's bar, q = 1.0), so the excess is confined to
+assemblies too broken to carry the gene.
+
+**D9 is the largest effect in the task.** RefSeq gene sets deliver 98.8 % of
+these loci complete; submitter-deposited GenBank ones 37.5 %, every state
+differing at q < 1e-300. Held above D4's contiguity bar it is 99.4 % against
+63.8 % and does not close, so about a third of the archive gap is assembly
+quality and the rest is the gene set.
+
+**D4 is the second.** The ITPR failure rate falls from 26.1 % to 6.7 % across
+the contiguity bar — two thirds of what looks like an annotation problem is a
+contig too short to hold a 2,700-residue gene.
+
+**All 15 of S3's zero-hit reference proteomes are gene-caller failures.**
+Every species has a genome in the S4 scope and every genome carries the gene;
+0 `genome_also_empty`, 0 `undecidable_no_genome`. Eleven of the fifteen are
+birds.
+
+**The protein records are named correctly and cannot be found.** 4 of 11,402
+sequence calls disagree with the census; 5 records are named for the sister
+family, all non-vertebrate and all under 200 bits; 52 of 8,306 vertebrate
+symbols name a paralog the panel assigns elsewhere. But 3,872 records carry a
+placeholder gene symbol and 2,395 carry none — **55.0 % of the family's
+full-length protein records have no usable gene symbol** — and 66 more are
+named for the superfamily, which separates neither family.
+
+297 corrections written, 52 `high` priority, 18 withheld under D6.
+
+### Six things the build caught
+
+1. **A bait lookup keyed on the wrong column.** `bait_labels()` keyed on the
+   manifest's `id` (the full FASTA header) while the blast subject ids resolve
+   to accessions. Every lookup missed and the sequence call came back
+   `no_call` on all 11,402 records — which looks exactly like a family nothing
+   can be assigned to, not like a bug.
+2. **A name rule that manufactured 66 wrong-family errors.** UniProt's
+   commonest name for a non-vertebrate family record is "RyR/IP3R Homology
+   associated domain-containing protein", and "Inositol
+   1,4,5-trisphosphate/ryanodine receptor" is close behind. Both name *both*
+   families; `name_family` resolves them to RYR because it tests the RyR
+   hints first. New verdict `family_ambiguous`, and `_names_both()` matches
+   the inositol half separately because the shared word "receptor" breaks
+   every ITPR hint substring.
+3. **A paralog rule that put 6,660 records in the wrong-paralog cell.**
+   "Inositol 1,4,5-trisphosphate receptor" with no type number is not a wrong
+   paralog. New verdict `paralog_unspecified`.
+4. **A cache that survived a rule change.** The measurement cache held the
+   finished audit rows, verdicts included, so after (3) the committed table
+   still carried the old labels and mouse *Itpr1* read as the annotation
+   naming a different paralog, silently. Verdicts moved out of `measure()`
+   into `apply_verdicts()`, and the cache now carries a SHA-256 of the reader
+   modules. → **D55**.
+5. **A model-id lookup that missed 21 loci.** miniprot restarts its
+   identifiers at MP000001 *per chunk*, so a chunked genome's concatenated
+   GFF repeats every one and the sweep disambiguates the duplicates. Reading
+   the raw `ID=` attribute therefore missed every locus in the four giant
+   genomes. Replaced with `s5_sweep_lib.parse_miniprot_gff` — the sweep's own
+   parser, so there is one implementation rather than two.
+6. **A silent fallback behind it.** A locus whose model could not be
+   recovered fell back to measuring the annotation against the whole locus
+   *span*, which includes every intron: one *Protopterus* ITPR2 got a 2.4 Mb
+   denominator under an 8 kb gene, forcing `unannotated` whatever the
+   annotation held. There is no fallback now — such a locus is reported
+   `cds_unavailable` and left out of the denominator, and after (5) there
+   are none. Both are covered by T19, which resolves every locus of a real
+   chunked genome.
+
+### Decisions
+
+- **D55** — a cache may hold what a parser found, never what a rule decided.
+- **D56** — a threshold this project already has is not re-derived by the
+  task that inherits it; it is validated. S18 used
+  `s5_classify.ANNOT_CDS_FRAC` (0.50) and spent its calibration measuring
+  where 0.50 sits in the distribution it is applied to: over 1,077
+  correctly-named, fully-recovered loci a single model covers a median 0.993,
+  so the inherited bar is that distribution's 1.3 % point and is conservative.
+  Across bars 0.30–0.95 `complete` moves only 76.4 % → 68.1 %.
+
+### Emergent
+
+Four rows added: the non-coding demotion as a validation target for S10's
+machinery; the 55 % symbol deficit as a per-method number S19 needs; the
+missing RYR3 bait, which 74 records now depend on; and a route for actually
+submitting the 297 corrections, which no ledger row covers.
+
+### Next
+
+S19 — methods results (`S5b, S15, S18`, all now completed; the topmost
+unblocked `pending` row). S18 hands it two things directly. The per-method
+contribution question has a protein-side counterpart it did not have before:
+55 % of full-length family records have no usable gene symbol, so a
+name-driven search reaches under half of what the databases hold — the
+counterpart to S5b's 318 DNA-only models. And S19's contiguity-confounder
+step now has a measured version of exactly its question: the ITPR failure
+rate across D4's bar (26.1 % → 6.7 %), with the RyR control beside it and the
+archive (D9) separated out.

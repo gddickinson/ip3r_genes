@@ -1,0 +1,137 @@
+{
+ "task": "S18",
+ "params": {
+  "complete_frac": 0.5,
+  "complete_frac_source": "s5_classify.ANNOT_CDS_FRAC",
+  "overcredit_frac": 0.8,
+  "min_piece_frac": 0.05,
+  "min_touch_frac": 0.01,
+  "calib_min_coverage": 0.9,
+  "protein_min_length_aa": 2000,
+  "protein_rel_margin": 0.1,
+  "min_rename_bits": 200.0,
+  "correction_min_recovery": 0.5,
+  "correction_strong_recovery": 0.9,
+  "genome_found_coverage": 0.5,
+  "window_pad_bp": 20000,
+  "bars": [
+   0.3,
+   0.5,
+   0.6,
+   0.7,
+   0.8,
+   0.9,
+   0.95
+  ],
+  "pieces": [
+   0.02,
+   0.05,
+   0.1
+  ]
+ },
+ "self_test": "all negative controls pass (s18_test_audit.py)",
+ "headline": {
+  "n_genomes": 309,
+  "n_loci": 2144,
+  "n_itpr_loci": 1059,
+  "n_scorable_itpr_loci": 932,
+  "n_control_loci": 942,
+  "n_loci_no_gene_set": 255,
+  "n_loci_cds_unavailable": 0,
+  "frac_itpr_complete": 0.7393,
+  "frac_itpr_any_failure": 0.2607,
+  "frac_control_complete": 0.7792,
+  "frac_control_any_failure": 0.2208,
+  "frac_itpr_failure_above_d4": 0.0669,
+  "n_itpr_unannotated": 38,
+  "n_itpr_noncoding": 42,
+  "calibration_bar": 0.5,
+  "calibration_median": 0.993,
+  "calibration_frac_below_bar": 0.013,
+  "calibration_n": 1077.0,
+  "n_protein_records": 11402,
+  "n_protein_vertebrate": 8306,
+  "n_protein_seq_family_disagrees": 4,
+  "n_name_wrong_family": 5,
+  "n_name_family_ambiguous": 66,
+  "n_symbol_wrong_paralog": 52,
+  "n_symbol_placeholder": 3872,
+  "n_symbol_absent": 2395,
+  "n_paralog_not_callable": 74,
+  "n_corrections": 297,
+  "n_corrections_high": 52,
+  "n_corrections_vetoed": 18,
+  "n_zero_hit_proteomes": 15,
+  "n_zero_hit_gene_caller": 15
+ },
+ "tables": {
+  "by_source": {
+   "path": "results/annotation_audit/by_source.tsv",
+   "sha256": "372803e150b64f2d1506be23d6e7504aed86063f4091350cb7cf84a32805b1dd"
+  },
+  "complete_calibration": {
+   "path": "results/annotation_audit/complete_calibration.tsv",
+   "sha256": "9cb4e5bbebffaa6724c1ec01948555fbf0fbecd73902d1e4f114ff544447f489"
+  },
+  "correction_summary": {
+   "path": "results/annotation_audit/correction_summary.tsv",
+   "sha256": "e8090269471e2986ae6940735fbb1e87897b3e62e4e9daeb121e861843e95100"
+  },
+  "corrections": {
+   "path": "results/annotation_audit/corrections.tsv",
+   "sha256": "f79f592b82e58fc468e994f7cbe9a4c3b4ba057cadf06a7a4d978e5102371eb5"
+  },
+  "family_vs_control": {
+   "path": "results/annotation_audit/family_vs_control.tsv",
+   "sha256": "fc04a8e4dd6007320426dd120755c540a62ad768f08b66caaafe620e3c65e64d"
+  },
+  "locus_audit": {
+   "path": "results/annotation_audit/locus_audit.tsv",
+   "sha256": "11a436f434f10f2ac1980a447e59777793c0cd85d4270113626f43c9b9adc3c2"
+  },
+  "locus_name_verdicts": {
+   "path": "results/annotation_audit/locus_name_verdicts.tsv",
+   "sha256": "ea820706587403de76883f96cbc07efc813f1d57e6911a52619d6ddee47d4543"
+  },
+  "locus_state_counts": {
+   "path": "results/annotation_audit/locus_state_counts.tsv",
+   "sha256": "288b80c31b69676976f848c84f0e9e05dd6c63fb5e0129faacd27f03cd0ef7e8"
+  },
+  "pfam_recall": {
+   "path": "results/annotation_audit/pfam_recall.tsv",
+   "sha256": "e0735ec96bcb60d794005898c24a28eb17317b41d38bbb5aa0224b85336871d1"
+  },
+  "protein_audit": {
+   "path": "results/annotation_audit/protein_audit.tsv",
+   "sha256": "f08d0106d93c1a335109306b76daab324436887b26bd65660701dc157de75ab5"
+  },
+  "protein_name_verdicts": {
+   "path": "results/annotation_audit/protein_name_verdicts.tsv",
+   "sha256": "ef6554006b7e54c74ad3c89cd3b777724fbac6964670332cf2385243eb830a22"
+  },
+  "protein_scope_excluded": {
+   "path": "results/annotation_audit/protein_scope_excluded.tsv",
+   "sha256": "29c127cd825ccbc0ac2752c5f5a4753eb72e41be8bb430f911749d0e238c1a9b"
+  },
+  "state_by_cell": {
+   "path": "results/annotation_audit/state_by_cell.tsv",
+   "sha256": "96f46fb2c1dc0071b790b467b41eee41c907ed0cc74902c8748adf460410bc1a"
+  },
+  "state_by_class": {
+   "path": "results/annotation_audit/state_by_class.tsv",
+   "sha256": "fb01eac342e305c2fe40eb3547befb4fdf0ae8e24cd58311c89837b3d532713c"
+  },
+  "state_sensitivity": {
+   "path": "results/annotation_audit/state_sensitivity.tsv",
+   "sha256": "3bab8ee0d302780f5177c5f9fcfa541b5dbb750926c336fee708a7d4c79f66c0"
+  },
+  "zero_hit_proteomes": {
+   "path": "results/annotation_audit/zero_hit_proteomes.tsv",
+   "sha256": "65eccf3162140c657d9d2e2ca8cbe5bea25cb664154d07e10d93c313ba0852fa"
+  },
+  "zero_hit_summary": {
+   "path": "results/annotation_audit/zero_hit_summary.tsv",
+   "sha256": "cf49a2d502584e7dc8fe4cecc56a88fd857dc5f1616e102f80bd1559c948d85f"
+  }
+ }
+}

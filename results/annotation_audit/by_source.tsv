@@ -1,0 +1,13 @@
+scope	state	n_refseq	n_refseq_total	frac_refseq	n_genbank	n_genbank_total	frac_genbank	p_fisher	q_bh
+all scorable loci	cds_unavailable	0	1175	0	0	699	0	1	1
+all scorable loci	unannotated	10	1175	0.0085	92	699	0.1316	0	0
+all scorable loci	noncoding	2	1175	0.0017	56	699	0.0801	0	0
+all scorable loci	complete	1161	1175	0.9881	262	699	0.3748	0	0
+all scorable loci	split	1	1175	0.0009	26	699	0.0372	0	0
+all scorable loci	fragmentary	1	1175	0.0009	263	699	0.3763	0	0
+loci on a contig that spans the gene (D4)	cds_unavailable	0	1015	0	0	185	0	1	1
+loci on a contig that spans the gene (D4)	unannotated	3	1015	0.003	9	185	0.0486	6e-06	7e-06
+loci on a contig that spans the gene (D4)	noncoding	1	1015	0.001	8	185	0.0432	2e-06	3e-06
+loci on a contig that spans the gene (D4)	complete	1009	1015	0.9941	118	185	0.6378	0	0
+loci on a contig that spans the gene (D4)	split	1	1015	0.001	18	185	0.0973	0	0
+loci on a contig that spans the gene (D4)	fragmentary	1	1015	0.001	32	185	0.173	0	0

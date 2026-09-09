@@ -1,0 +1,23 @@
+census_call	group	field	n	n_absent	frac_absent	n_correct_family_wrong_paralog	frac_correct_family_wrong_paralog	n_correct_paralog	frac_correct_paralog	n_family_ambiguous	frac_family_ambiguous	n_family_unnamed	frac_family_unnamed	n_paralog_not_callable	frac_paralog_not_callable	n_paralog_unspecified	frac_paralog_unspecified	n_placeholder	frac_placeholder	n_wrong_family	frac_wrong_family
+ITPR	Amoebozoa	symbol_verdict	11	0	0	0	0	3	0.2727	0	0	0	0	0	0	0	0	8	0.7273	0	0
+ITPR	Discoba	symbol_verdict	42	1	0.0238	0	0	0	0	0	0	3	0.0714	0	0	0	0	38	0.9048	0	0
+ITPR	Eukaryota (other)	symbol_verdict	32	9	0.2812	0	0	0	0	0	0	0	0	0	0	0	0	23	0.7188	0	0
+ITPR	Fungi	symbol_verdict	26	0	0	0	0	1	0.0385	0	0	0	0	0	0	0	0	25	0.9615	0	0
+ITPR	Metazoa (non-vertebrate)	symbol_verdict	1115	172	0.1543	0	0	120	0.1076	0	0	39	0.035	0	0	0	0	784	0.7031	0	0
+ITPR	SAR	symbol_verdict	407	0	0	0	0	1	0.0025	0	0	106	0.2604	0	0	0	0	300	0.7371	0	0
+ITPR	Vertebrata	symbol_verdict	4176	1063	0.2545	3	0.0007	2357	0.5644	0	0	3	0.0007	0	0	0	0	750	0.1796	0	0
+ITPR	Viridiplantae	symbol_verdict	24	0	0	0	0	0	0	0	0	1	0.0417	0	0	0	0	23	0.9583	0	0
+RYR	Eukaryota (other)	symbol_verdict	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0
+RYR	Metazoa (non-vertebrate)	symbol_verdict	1437	185	0.1287	0	0	108	0.0752	0	0	196	0.1364	0	0	0	0	948	0.6597	0	0
+RYR	Vertebrata	symbol_verdict	4130	965	0.2337	49	0.0119	2067	0.5005	0	0	2	0.0005	74	0.0179	2	0.0005	971	0.2351	0	0
+ITPR	Amoebozoa	name_verdict	11	0	0	0	0	4	0.3636	0	0	5	0.4545	0	0	0	0	2	0.1818	0	0
+ITPR	Discoba	name_verdict	42	0	0	0	0	9	0.2143	4	0.0952	22	0.5238	0	0	0	0	7	0.1667	0	0
+ITPR	Eukaryota (other)	name_verdict	32	0	0	0	0	5	0.1562	1	0.0312	18	0.5625	0	0	0	0	4	0.125	4	0.125
+ITPR	Fungi	name_verdict	26	0	0	0	0	4	0.1538	0	0	11	0.4231	0	0	0	0	11	0.4231	0	0
+ITPR	Metazoa (non-vertebrate)	name_verdict	1115	0	0	0	0	1042	0.9345	6	0.0054	47	0.0422	0	0	0	0	20	0.0179	0	0
+ITPR	SAR	name_verdict	407	0	0	0	0	6	0.0147	50	0.1229	183	0.4496	0	0	0	0	168	0.4128	0	0
+ITPR	Vertebrata	name_verdict	4176	0	0	1	0.0002	71	0.017	0	0	6	0.0014	0	0	4097	0.9811	1	0.0002	0	0
+ITPR	Viridiplantae	name_verdict	24	0	0	0	0	1	0.0417	1	0.0417	17	0.7083	0	0	0	0	4	0.1667	1	0.0417
+RYR	Eukaryota (other)	name_verdict	2	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
+RYR	Metazoa (non-vertebrate)	name_verdict	1437	0	0	0	0	1178	0.8198	4	0.0028	112	0.0779	0	0	0	0	143	0.0995	0	0
+RYR	Vertebrata	name_verdict	4130	0	0	1	0.0002	1396	0.338	0	0	44	0.0107	23	0.0056	2538	0.6145	128	0.031	0	0

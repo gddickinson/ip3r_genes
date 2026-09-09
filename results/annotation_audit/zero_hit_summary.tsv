@@ -1,0 +1,5 @@
+verdict	n_proteomes	frac
+gene_caller_missed_it	15	1
+genome_also_empty	0	0
+assembly_cannot_carry_it	0	0
+undecidable_no_genome	0	0

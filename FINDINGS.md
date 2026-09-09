@@ -1923,3 +1923,87 @@ gate. It is not in a tolerant position: that residue is invariant across all
 literature that name a specific residue were both found again in the database
 harvest — which is the kind of check that is only worth anything because it
 could have failed.
+
+---
+
+## 2026-09-08 — The gene is fine. The paperwork is not (S18)
+
+We went looking for a badly-recorded gene family and found a badly-recorded
+*archive*.
+
+The expectation was reasonable. An IP3 receptor is about 2,700 amino acids
+long, spread over dozens of exons across tens or hundreds of kilobases of
+DNA, and it has a sister family — the ryanodine receptors — that carries
+every one of its diagnostic domains. If any gene family were going to be
+systematically mangled by automatic gene-finding software, it should be this
+one.
+
+So we checked, across 309 vertebrate genomes: for every IP3-receptor gene we
+had found ourselves, what does that genome's own official gene list say is
+there? And crucially, we asked the same question of the ryanodine receptors
+sitting in the same genomes, annotated by the same software.
+
+**They come out the same.** About 74 % of IP3-receptor genes are delivered as
+one complete, correct gene model, and about 78 % of ryanodine-receptor genes
+are too. The difference between them does not survive statistical
+correction. Whatever is wrong here is not wrong about
+this family — it is how genes of this size get recorded.
+
+**What does differ, enormously, is who wrote the gene list.** Genomes whose
+annotation comes from the curated RefSeq pipeline get this gene right about
+99 % of the time. Genomes whose annotation was deposited by the sequencing
+group get it right about 37 % of the time. Part of that is the assemblies
+themselves — submitter genomes are more broken, and no annotation can build a
+whole gene across a piece of DNA too short to hold it — but only about a
+third of the gap. The rest is the gene list.
+
+The assembly matters enormously on its own, too. If we look only at genomes
+whose DNA is contiguous enough to actually carry the gene, the failure rate
+falls from 26 % to 7 %. Three quarters of what looks like careless annotation
+is really a fragmented genome.
+
+**There is one failure that is this family's own**, and it is a strange one.
+An IP3-receptor gene is two and a half times more likely than a ryanodine
+receptor in the same genome to be recorded as *non-coding*. The annotation
+finds the gene. It names the gene correctly — "Inositol 1,4,5-trisphosphate
+receptor type 3", spelled out in full. And then it files it as a
+non-protein-coding feature, sometimes with a note that it contains a
+frameshift. The consequence is that no protein record is ever created, and
+nobody searching a protein database by name will ever find it. Forty-two
+genes in this survey are in that state, against sixteen ryanodine receptors.
+The honest qualification is that almost all of them sit in badly fragmented
+genomes — restrict the comparison to good assemblies and it is four against
+five, which is nothing — so this may be a fact about which assemblies these
+genes happen to be in rather than about the genes *(pending: the exon-level
+machinery built in S10 has never been pointed at one, and it would also
+settle whether the submitters are right about the frameshift)*.
+
+**The proteins that do exist are named correctly and cannot be found.** We
+took every full-length IP3-receptor and ryanodine-receptor protein record in
+the databases — 11,402 of them — and asked whether the name matches the
+sequence. It almost always does. Only five records in eleven thousand are
+named for the wrong family, and all five are obscure single-celled organisms
+where the sequence itself barely separates the two families. The specific
+type — 1, 2 or 3 — is right too, in all but a few dozen cases.
+
+But **more than half of these records have no usable gene name at all.** They
+carry an internal database code, or nothing. A researcher searching for "the
+IP3 receptors" by name reaches under half of what the databases actually
+hold. That is the same problem we found on the DNA side, arriving from the
+other direction.
+
+**And a small, clean result about missing genes.** An earlier stage of this
+project searched 764 vertebrate protein catalogues and found fifteen with no
+IP3 receptor whatsoever — a gene every vertebrate is supposed to have. We
+went back to the raw DNA of each of those fifteen species. **All fifteen have
+the gene.** Not one is a genuine absence. Eleven of the fifteen are birds,
+whose genomes are notoriously fragmented. When a protein catalogue says a
+vertebrate is missing an IP3 receptor, it is telling you about the software,
+not the animal.
+
+The practical output is a list of 297 specific corrections — this gene, this
+genome, these coordinates, this is what the record says, this is what it
+should say — of which 52 are cases where the gene is demonstrably present,
+the DNA is demonstrably intact, and the reading frame is unbroken. Eighteen
+more were deliberately withheld: where our own earlier analysis says the gene
+really is dead, we are not going to ask a database to bring it back.

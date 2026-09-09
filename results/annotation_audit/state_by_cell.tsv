@@ -1,0 +1,5 @@
+cell	n_loci	n_cds_unavailable	frac_cds_unavailable	n_gff_unavailable	frac_gff_unavailable	n_no_gene_set	frac_no_gene_set	n_unannotated	frac_unannotated	n_noncoding	frac_noncoding	n_complete	frac_complete	n_split	frac_split	n_fragmentary	frac_fragmentary
+ITPR1	346	0	0	0	0	0	0	11	0.0318	16	0.0462	260	0.7514	6	0.0173	53	0.1532
+ITPR2	288	0	0	0	0	0	0	13	0.0451	2	0.0069	196	0.6806	2	0.0069	75	0.2604
+ITPR3	298	0	0	0	0	0	0	14	0.047	24	0.0805	233	0.7819	6	0.0201	21	0.0705
+RYR	942	0	0	0	0	0	0	64	0.0679	16	0.017	734	0.7792	13	0.0138	115	0.1221

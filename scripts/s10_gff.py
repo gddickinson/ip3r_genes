@@ -121,6 +121,46 @@ def _attrs(field: str) -> dict[str, str]:
     return out
 
 
+def read_annotation_windows(gff_gz: Path,
+                            windows: list[tuple[str, int, int]]) -> dict:
+    """`read_annotation_window` for many windows in **one** pass over the file.
+
+    S10 asked two loci of two genomes and one stream per window was free. S18
+    asks every locus of 274 annotated assemblies, and a stream per window would
+    re-read a 5–8 MB gzipped GFF3 up to eight times per genome. The parse is
+    the same one — `_build_genes` is the single implementation both readers
+    call — so the two tasks cannot disagree about what a gene is.
+
+    Returns ``{(contig, start, end): {"genes": [...], "by_gene": {...}}}``,
+    keyed by the window tuple exactly as given.
+    """
+    by_contig: dict[str, list[tuple[str, int, int]]] = {}
+    for w in windows:
+        by_contig.setdefault(w[0], []).append(w)
+    kept: dict[tuple[str, int, int], list] = {w: [] for w in windows}
+    op = gzip.open if str(gff_gz).endswith(".gz") else open
+    with op(gff_gz, "rt") as fh:
+        for line in fh:
+            if line.startswith("#"):
+                continue
+            f = line.rstrip("\n").split("\t")
+            if len(f) < 9:
+                continue
+            wins = by_contig.get(f[0])
+            if not wins:
+                continue
+            s, e = int(f[3]), int(f[4])
+            row = None
+            for w in wins:
+                if e < w[1] or s > w[2]:
+                    continue
+                if row is None:
+                    row = (f[2], s, e, f[6], _attrs(f[8]),
+                           int(f[7]) if f[7] not in (".", "") else 0)
+                kept[w].append(row)
+    return {w: _build_genes(rows) for w, rows in kept.items()}
+
+
 def read_annotation_window(gff_gz: Path, contig: str, start: int, end: int
                            ) -> dict:
     """Every annotated feature touching `contig:start-end`.
@@ -136,22 +176,16 @@ def read_annotation_window(gff_gz: Path, contig: str, start: int, end: int
     pass over the retained rows, since GFF3 does not guarantee that a parent
     is written before its child.
     """
-    rows = []
-    op = gzip.open if str(gff_gz).endswith(".gz") else open
-    with op(gff_gz, "rt") as fh:
-        for line in fh:
-            if line.startswith("#"):
-                continue
-            f = line.rstrip("\n").split("\t")
-            if len(f) < 9 or f[0] != contig:
-                continue
-            s, e = int(f[3]), int(f[4])
-            if e < start or s > end:
-                continue
-            rows.append((f[2], s, e, f[6], _attrs(f[8]),
-                         int(f[7]) if f[7] not in (".", "") else 0))
+    return read_annotation_windows(gff_gz, [(contig, start, end)])[
+        (contig, start, end)]
 
-    rows_phase = rows
+
+def _build_genes(rows_phase: list[tuple]) -> dict:
+    """Assemble retained GFF3 rows into genes. The one implementation.
+
+    Parent links are resolved in a second pass over the retained rows, since
+    GFF3 does not guarantee that a parent is written before its child.
+    """
     rows = [r[:5] for r in rows_phase]
     genes, mrna_parent, by_gene = {}, {}, {}
     for kind, s, e, strand, at in rows:
@@ -246,7 +280,19 @@ def read_miniprot_model(gff: Path, mp_id: str) -> dict:
     junction probes, the reconstructed CDS — depends on that, and sorting by
     coordinate instead silently reverses every minus-strand gene.
     """
-    model: dict = {"mp_id": mp_id, "cds": []}
+    return read_miniprot_models(gff, [mp_id])[mp_id]
+
+
+def read_miniprot_models(gff: Path, mp_ids: list[str]) -> dict[str, dict]:
+    """`read_miniprot_model` for many models in one pass over the file.
+
+    A sweep `miniprot.gff` holds every alignment of all 38 baits and runs to
+    hundreds of kilobytes; S18 wants the eight or so models a genome's loci
+    point at, and reading the file once per model is the same waste
+    `read_annotation_windows` removes on the annotation side.
+    """
+    wanted = set(mp_ids)
+    models: dict[str, dict] = {i: {"mp_id": i, "cds": []} for i in wanted}
     with open(gff) as fh:
         for line in fh:
             if line.startswith("#"):
@@ -254,8 +300,14 @@ def read_miniprot_model(gff: Path, mp_id: str) -> dict:
             f = line.rstrip("\n").split("\t")
             if len(f) < 9:
                 continue
-            at = _attrs(f[8].replace("Target=", "Target="))
-            if f[2] == "mRNA" and at.get("ID") == mp_id:
+            if f[2] not in ("mRNA", "CDS"):
+                continue
+            at = _attrs(f[8])
+            key = at.get("ID") if f[2] == "mRNA" else at.get("Parent")
+            if key not in wanted:
+                continue
+            model = models[key]
+            if f[2] == "mRNA":
                 tgt = at.get("Target", "").split()
                 model.update(
                     contig=f[0], start=int(f[3]), end=int(f[4]),
@@ -264,7 +316,7 @@ def read_miniprot_model(gff: Path, mp_id: str) -> dict:
                     identity=float(at.get("Identity", 0)),
                     frameshifts=int(at.get("Frameshift", 0)),
                     stop_codons=int(at.get("StopCodon", 0)))
-            elif f[2] == "CDS" and at.get("Parent") == mp_id:
+            else:
                 tgt = at.get("Target", "").split()
                 model["cds"].append({
                     "start": int(f[3]), "end": int(f[4]), "strand": f[6],
@@ -272,8 +324,9 @@ def read_miniprot_model(gff: Path, mp_id: str) -> dict:
                     "identity": float(at.get("Identity", 0)),
                     "q_start": int(tgt[1]) if len(tgt) > 2 else 0,
                     "q_end": int(tgt[2]) if len(tgt) > 2 else 0})
-    model["cds"].sort(key=lambda b: b["q_start"])
-    return model
+    for model in models.values():
+        model["cds"].sort(key=lambda b: b["q_start"])
+    return models
 
 
 def model_blocks(model: dict) -> list[Block]:
