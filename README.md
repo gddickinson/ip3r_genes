@@ -548,6 +548,7 @@ One task per session. Full ledger with dependencies and results in
 | S25 | The thesis — the long form, with an audited bibliography | ✅ completed 2026-09-09 |
 | S26 | The paper series — the results regrouped as individual papers | ⏳ pending |
 | S27 | Editorial pass — every sentence read in context, structure checked | ✅ completed 2026-09-09 |
+| S28 | Revision pass — legends and in-figure text, figure descriptions, legend typography, page layout | ⏳ pending |
 | S14b | Deposit + release (Zenodo, public repo, preprint) | ⏳ pending — human-gated |
 
 ---

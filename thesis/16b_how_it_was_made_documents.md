@@ -20,7 +20,7 @@ reports consequently say that an earlier task's finding was not corroborated,
 and one says that the task's own premise was wrong.
 
 **Figures are drawn only from committed tables, by one style module, at the
-width they will be printed at.** There are 111 committed figures. A single
+width they will be printed at.** There are 112 committed figures. A single
 module holds the page geometry, the validated palette and a save function that
 refuses to write a figure whose layout runs off the canvas or whose text needs
 a glyph the font lacks. Figures are never re-plotted downstream: the paper and
@@ -123,7 +123,7 @@ change and the message, and the human's account and machine committed it.
 
 Three things this way of working did well.
 
-**It sustained a long, dependency-ordered plan.** 36 tasks with declared
+**It sustained a long, dependency-ordered plan.** 37 tasks with declared
 dependencies, worked one at a time to stated completion criteria across 35
 sessions, with the ledger and the session log carrying the state between them.
 An agent with no memory between sessions can do this only if the state lives

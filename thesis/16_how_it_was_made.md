@@ -17,7 +17,7 @@ manifests that declare them, and fetched 624 GB of assemblies and 60 GB of
 proteomes. It chose every threshold in the work and, in most cases, measured
 it rather than choosing it. It ran every search, alignment, tree, selection
 test and structural comparison. It produced all 444 committed result tables
-and all 111 committed figures. It recorded 83 numbered methodological
+and all 112 committed figures. It recorded 88 numbered methodological
 decisions as it made them. And it wrote the literature review, the
 manuscript, this thesis and every one of the 28 rendered task reports that
 stand behind them, which together run to 109,250 words.
@@ -70,7 +70,7 @@ proves too large, is the rule that kept it finishable.** Several tasks were
 split this way, and each split is visible in the ledger as two rows with the
 reason recorded.
 
-**The ledger is 36 tasks, of which 34 are complete.** Each row carries the
+**The ledger is 37 tasks, of which 34 are complete.** Each row carries the
 task, its dependencies, its status with a date, and a results column holding
 the load-bearing numbers and the paths they came from. The two incomplete rows
 are the human-gated deposit, which needs a person to create a public archive

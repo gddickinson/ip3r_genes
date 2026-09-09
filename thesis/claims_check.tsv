@@ -222,13 +222,13 @@ T83	ch14	88 decisions are recorded, as chapter 14 also states	88	88	ok		thesis/p
 T84	ch14	across 35 logged sessions, as chapter 14 also states	35	35	ok		thesis/production_stats.tsv	cell
 T71	ch16	35 sessions are logged	35	35	ok		thesis/production_stats.tsv	cell
 T72	ch16	they ran across 9 working days	9	9	ok		thesis/production_stats.tsv	cell
-T73	ch16	the ledger holds 36 tasks	36	36	ok		thesis/production_stats.tsv	cell
+T73	ch16	the ledger holds 37 tasks	37	37	ok		thesis/production_stats.tsv	cell
 T74	ch16	34 of them are complete	34	34	ok		thesis/production_stats.tsv	cell
 T75	ch16	88 methodological decisions are recorded	88	88	ok		thesis/production_stats.tsv	cell
 T76	ch16	374 analysis scripts were written	374	374	ok		thesis/production_stats.tsv	cell
 T77	ch16	the search application is 9,243 lines	9243	9243	ok		thesis/production_stats.tsv	cell
 T78	ch16	444 result tables are committed	444	444	ok		thesis/production_stats.tsv	cell
-T79	ch16	111 figures are committed	111	111	ok		thesis/production_stats.tsv	cell
+T79	ch16	112 figures are committed	112	112	ok		thesis/production_stats.tsv	cell
 T80	ch16	28 task reports are rendered	28	28	ok		thesis/production_stats.tsv	cell
 T81	ch16	those reports run to 109,250 words	109250	109250	ok		thesis/production_stats.tsv	cell
 T82	ch16	the first session ran on 2026-08-18	2026-08-18	2026-08-18	ok		thesis/production_stats.tsv	cell

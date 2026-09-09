@@ -905,3 +905,119 @@ claims ledger passes across the whole series at once.
 **What would make this task a failure.** A set of papers that only makes
 sense read together — that is the thesis, and S25 already writes it. The test
 is P6, applied honestly.
+
+## S28 — The revision pass: legends, in-figure text, and typesetting
+
+**Goal.** Read the assembled thesis as a reader rather than as a builder, and
+fix four things the build cannot see: legends and in-figure labels written as
+noun-phrase fragments instead of statements, figures that the chapter text
+never describes, legends that are typographically indistinguishable from body
+text in the typeset document, and layout defects on the page.
+
+**This is the third time the same fault has been reported, which is the
+argument for doing it mechanically.** D76 rewrote every heading and section
+opener into complete statements. D78 recorded that the first pass had only
+fixed what somebody noticed, and added checks for headings and bold lead-ins.
+Neither pass touched figure legends or the text drawn inside figures, so the
+fragment style survived in both — including in the first figure of the
+document, where the legend opened *The object this thesis counts, at the three
+scales a reader needs before any of it is argued* and a panel inside the
+figure was titled *the sequence at those two positions, in this family only*.
+Neither is a sentence, and neither tells a reader what they are looking at.
+
+**The diagnosis, measured before the task starts.** Re-measure these first; if
+they have moved, the numbers below are stale and the measurement is the
+deliverable, not the memory.
+
+- **31 of 104 legends** open with a first "sentence" carrying no finite verb.
+- **17 of 37 in-figure panel titles** are fragments, concentrated in
+  `s0_figs_genomics.py` (5), `s3_figures.py` (4), `s0_figs_sequence.py` (3)
+  and `s0_figs_structure.py` (3).
+- **Figure 1.1 is cited but not described.** The body places it and moves on;
+  a three-panel orientation figure needs its panels walked through in the
+  text.
+- **A legend is set in the body font at body size in the PDF**, with no rule,
+  indent or size change, so it does not read as a legend.
+- **The markdown sources are clean on spacing** (zero double spaces, zero
+  space-before-punctuation, percent signs spaced consistently across 168
+  occurrences), so the spacing problems to find are on the rendered page and
+  inside the figures, not in the source.
+
+**Six rules, each of which must end the task as a mechanical check.** D78 is
+the standing decision here: a style rule that is not checked is a style rule
+that will be violated again in the next thing written.
+
+- **R1 — a legend opens with a statement.** Its first sentence has a subject
+  and a finite verb and says what the figure shows. *Length distributions of
+  the two families as called* is not a first sentence; *The two families
+  separate cleanly by length* is.
+- **R2 — no bare noun phrase anywhere a reader reads a label.** This covers
+  every sentence of every legend, every panel title, every axis label that is
+  a phrase rather than a quantity, and every in-figure annotation.
+- **R3 — every figure is described in the body of its own chapter.** At least
+  one sentence outside the legend that says what a reader should take from
+  it, and for a multi-panel figure the panels named in order.
+- **R4 — a legend is typographically distinct from body text.** Different
+  size, and a different face or leading, so a reader scanning the page can
+  tell a legend from an argument without reading either.
+- **R5 — no text in a figure overlaps other text or is clipped.** Enforced at
+  save time rather than by inspection.
+- **R6 — nothing above is applied by hand only.** Each becomes a check in
+  `s25_prose.py`, `figstyle.save()` or the PDF stage, with a guard case that
+  breaks it on purpose.
+
+**Steps.**
+
+1. **Extend `scripts/s25_prose.py`.** Add a finite-verb check on the first
+   sentence of every legend and on every bold paragraph lead-in, and an R3
+   check that each placed figure's slug is referenced somewhere in its
+   chapter outside its own legend. Run it before editing anything so the
+   starting count is recorded, not recalled.
+2. **Rewrite the legends.** All 31 openers, then read the remaining 73 for
+   fragments deeper in the paragraph, which the opener check will not catch.
+   The fault is not length: a noun phrase with three qualifiers is longer
+   than the sentence that replaces it and says less.
+3. **Add an overlap detector to `figstyle.save()`.** Collect every `Text`
+   artist's window extent after a draw, and raise on an intersection above a
+   small tolerance or on any extent outside the canvas. Deliberate overlaps
+   get an explicit allow-list with a reason, in the same spirit as `UNPLACED`.
+   Re-render all 104 figures and fix what it catches.
+4. **Rewrite the in-figure text.** The 17 fragment panel titles first, then
+   every other label the R2 check flags. `figstyle.panel` is called 37 times
+   across the figure modules; some titles are built from f-strings and will
+   not be reachable by a source regex, so the check has to run against the
+   drawn figure rather than the source.
+5. **Give the legend its own typography.** The stitch stage already knows
+   exactly which paragraphs are legends, since each opens `**Figure N.M.**`.
+   Define a `figlegend` environment in the PDF preamble and wrap them, so the
+   change is one rule rather than 104 edits.
+6. **Describe Figure 1.1 in §1.1**, then check every other figure against R3
+   and write the missing sentences.
+7. **Read the rendered PDF page by page.** Look for a figure separated from
+   its legend by a page break, an orphaned legend, an overfull line, a table
+   running past the margin, and the vertical spacing around every figure.
+   This is the half of the task no check replaces, which is why it is a step
+   and not a footnote.
+8. **Add a guard case per new check**, keep `s25_test_guards.py` green, and
+   record what changed.
+
+**Completion criteria.**
+
+- `s25_prose.py` reports zero failures across R1, R2 and R3.
+- `figstyle.save()` refuses an overlapping or clipped label, and all 104
+  figures render without tripping it.
+- A legend is visually distinct from body text in the typeset PDF, and a
+  page-by-page read finds no layout defect.
+- Every guard fires, every claim passes, and the build exits zero.
+
+**Outputs.** `thesis/` rebuilt; `scripts/s25_prose.py` extended; the overlap
+check in `figstyle.py`; the legend environment in `scripts/s25_pdf.py`;
+`thesis/figure_text_audit.tsv`, one row per legend or label changed, with what
+it said before and what it says now.
+
+**What would make this a failure.** Fixing the instances that were pointed at.
+That is exactly what happened at D76 and again at D78, and it is why this
+brief spends more space on the checks than on the writing. A second failure
+mode is trading clarity for terseness: the fault in *The object this thesis
+counts, at the three scales a reader needs before any of it is argued* is not
+that it is long, it is that it never reaches a verb.

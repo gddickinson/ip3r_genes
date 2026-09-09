@@ -6829,7 +6829,7 @@ manifests that declare them, and fetched 624 GB of assemblies and 60 GB of
 proteomes. It chose every threshold in the work and, in most cases, measured
 it rather than choosing it. It ran every search, alignment, tree, selection
 test and structural comparison. It produced all 444 committed result tables
-and all 111 committed figures. It recorded 83 numbered methodological
+and all 112 committed figures. It recorded 88 numbered methodological
 decisions as it made them. And it wrote the literature review, the
 manuscript, this thesis and every one of the 28 rendered task reports that
 stand behind them, which together run to 109,250 words.
@@ -6882,7 +6882,7 @@ proves too large, is the rule that kept it finishable.** Several tasks were
 split this way, and each split is visible in the ledger as two rows with the
 reason recorded.
 
-**The ledger is 36 tasks, of which 34 are complete.** Each row carries the
+**The ledger is 37 tasks, of which 34 are complete.** Each row carries the
 task, its dependencies, its status with a date, and a results column holding
 the load-bearing numbers and the paths they came from. The two incomplete rows
 are the human-gated deposit, which needs a person to create a public archive
@@ -7060,7 +7060,7 @@ reports consequently say that an earlier task's finding was not corroborated,
 and one says that the task's own premise was wrong.
 
 **Figures are drawn only from committed tables, by one style module, at the
-width they will be printed at.** There are 111 committed figures. A single
+width they will be printed at.** There are 112 committed figures. A single
 module holds the page geometry, the validated palette and a save function that
 refuses to write a figure whose layout runs off the canvas or whose text needs
 a glyph the font lacks. Figures are never re-plotted downstream: the paper and
@@ -7163,7 +7163,7 @@ change and the message, and the human's account and machine committed it.
 
 Three things this way of working did well.
 
-**It sustained a long, dependency-ordered plan.** 36 tasks with declared
+**It sustained a long, dependency-ordered plan.** 37 tasks with declared
 dependencies, worked one at a time to stated completion criteria across 35
 sessions, with the ledger and the session log carrying the state between them.
 An agent with no memory between sessions can do this only if the state lives

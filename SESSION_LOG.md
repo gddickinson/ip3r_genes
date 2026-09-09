@@ -3978,3 +3978,38 @@ a summary of it.
 `signal_hierarchy` moves to §1.3, where puffs and waves are actually
 discussed, with a legend describing its own panels. Recorded as **D84**.
 73,488 words, 104 figures, 234 claims, 18/18 guards, build exit 0.
+
+### Addendum (same session) — S28 created, not started
+
+The user read the new Figure 1.1 and reported that its legend has the same
+fault the last two revisions were about: *The object this thesis counts, at
+the three scales a reader needs before any of it is argued* is a noun phrase
+with qualifiers and never reaches a verb. So is the panel title drawn inside
+the figure, *the sequence at those two positions, in this family only*. They
+asked for the whole document to be revised again, for Figure 1.1 to be
+described in the chapter text, for legends to be typographically distinct in
+the PDF, and for the formatting and layout defects to be fixed, and asked that
+it be created as a task to run in a fresh session rather than continued here.
+
+**The fault was measured rather than accepted on report**, so the brief starts
+from numbers:
+
+- 31 of 104 legends open with a first sentence carrying no finite verb.
+- 17 of 37 in-figure panel titles are fragments, concentrated in four figure
+  modules.
+- Figure 1.1 is cited in the text and never described.
+- A legend is set in the body font at body size in the typeset document.
+- The markdown sources are clean on spacing, so the spacing defects are on the
+  rendered page and inside the figures.
+
+**This is the third report of the same fault**, which is what the brief is
+built around. D76 rewrote the headings and section openers. D78 recorded that
+the pass had only fixed what somebody noticed and added checks for headings
+and bold lead-ins. Neither touched figure legends or the text drawn inside
+figures, so the fragment style survived both in the two places a reader looks
+first. Each of S28's six rules therefore has to end the task as a mechanical
+check, including an overlap-and-clipping detector inside `figstyle.save()` so
+a figure with colliding labels cannot be written at all.
+
+Committed as ledger row **S28** with a brief in `docs/session_briefs.md`. No
+prose was edited in this addendum.
