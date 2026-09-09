@@ -3599,3 +3599,113 @@ The two must not contradict each other on how the results group. They are
 independent and either may run first; whichever does commits the assignment
 table, and the other adopts it or records why a chapter and a paper are not
 the same unit.
+
+---
+
+## 2026-09-09 — S25: the thesis, and a bibliography that had to be checked
+
+### What ran
+
+`python scripts/s25_assemble.py` — eight stages, exit 0. The document is
+**58,436 words across 15 chapters and 5 appendices, 103 figures, 80
+references, 173 typeset pages**, in `thesis/`.
+
+The order of work was: the chapter grouping first, committed before any prose
+(the brief's step 1); then the build machinery with every guard; then the
+reference audit; then the chapters; then the claims ledger, which was written
+last because it can only be written against text that exists.
+
+### The grouping, and the one rule that had to move
+
+Seven rules, in `thesis/chapter_rules.md`, four of them enforced by the build
+rather than asserted. T6 is the interesting one and it is enforced in the
+strong direction: **every entry under `results/` is either assigned to a
+chapter with a rule and a reason, or named in an exclusion list saying why it
+is not a result.** An unassigned directory fails the build, which also means a
+future task's results cannot be silently left out. 37 assigned across 13
+chapters, one excluded (the dashboard's live panel).
+
+T3 was written as "four to eight figures" and widened to four to twelve
+**before any prose was written**, with the reason stated: a paper's figure
+budget is set by a journal and a chapter's by a reader's attention. Chapter 7
+(neighbourhood, reconciliation, duplication) is one argument and needs twelve.
+The introduction, methods and discussion are exempt as exposition.
+
+### The reference audit caught 9 of 58
+
+This is the result of the session. The rule is S0's, unchanged: a reference
+added and not audited is worse than no reference. What makes it enforceable is
+that **nothing bibliographic is typed.** Each new reference is declared by an
+identifier alone plus a distinctive phrase its title must carry; the build
+resolves the identifier live, admits it only if the phrase is there, and
+writes the bibliographic row from the fetched record.
+
+Nine identifiers written from memory resolved to entirely different papers. A
+duplication-inference algorithm's returned MrBayes. A reconciliation method's
+returned a paper on statistical challenges in real-time PCR. A morphological
+likelihood model's returned a paper on species names in phylogenetic
+nomenclature. A vertebrate ancestral-genome reconstruction's returned a paper
+on structured RNAs. Every one would have entered a bibliography looking
+completely normal.
+
+One of the nine was the other failure: the identifier was right and the
+*phrase* was wrong, corrected by adjusting the phrase.
+
+The rule then runs in the other direction too. An audited reference that is
+never cited is decoration, and that also fails — which is what forced all 58
+into the text rather than 26.
+
+### The ledger, closed in both directions (D72, D73)
+
+220 numbers verified. **151 are carried from the manuscript's ledger through
+the same engine rather than a fork** — `s14_claims.check` was extracted from
+`run()` for the purpose — so a number quoted in both documents is recovered
+once and cannot disagree between them. That is S26 step 2's rule applied a
+task early.
+
+The new half is D73: **a claim's value must also appear in the chapter that
+declares it.** The manuscript's ledger fails when the document states a number
+no table produces; it cannot fail when the ledger declares a check the
+document never makes. That guard fired on seven rows on its first run — five
+numbers the thesis had not actually stated and two claims pointed at the wrong
+table.
+
+### Every guard broken, on every build (D74)
+
+The brief asked for each guard to be broken on purpose once.
+`scripts/s25_test_guards.py` does it on every build as the first stage: 15
+cases, each declaring a fragment the guard's own message has to contain, run
+against a sandboxed copy of `thesis/`, with the SHA-256 of every committed
+file checked before and after (D60).
+
+Its own first run had four cases returning non-zero for the *wrong* reason —
+two path bugs in the harness, one guard reading a module-level constant the
+sandbox could not redirect, and one mutation applied to a list the driver had
+already copied. That is exactly what the message-fragment requirement is for.
+
+### The one fix outside the thesis (D75)
+
+`s0_report.py` computed "the wider bibliography extends this to N references"
+as the size of `references.tsv`. Correct only while the review's bibliography
+and the shared table were the same set — and S25 added 58 references to that
+table, so the next render of a committed report would have silently restated
+137 as 195. The count now comes from the keys `docs/review/*.md` actually
+cites. D13 protects a report from a stale number, not from one that was always
+measuring something adjacent.
+
+### Testing
+
+- 15/15 build guards fire with their own message; 243 committed files
+  unchanged by the suite.
+- 220/220 claims verified.
+- `s14_assemble.py` still exits 0 (276/276) after the engine extraction, and
+  `s0_review_build.py --check` still resolves all 137 review citations.
+- Every new module is under the 500-line budget; the longest is 325 lines.
+
+### Next
+
+S14b (human-gated: Zenodo DOI, repo public, preprint) and **S26, the paper
+series**, which starts from `thesis/chapter_assignment.tsv` and has one
+declared departure to resolve: the thesis puts all of S19 in the chapter that
+builds the search, and S26's proposal splits it across two papers. Appendix E
+states it in both directions rather than picking.

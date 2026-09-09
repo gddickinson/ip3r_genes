@@ -19,16 +19,15 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S14c complete — every analysis is in the paper; 32 of the 35 ledger
-rows are done.** What remains is three tasks about *how the work is reported*:
-the thesis (S25), the paper series (S26), and the human-gated deposit (S14b —
-a Zenodo DOI, the repository made public, reference verification and a
-preprint upload). The
+**Status: S25 complete — the paper and the thesis both build; 33 of the 35
+ledger rows are done.** What remains is two tasks: the paper series (S26) and
+the human-gated deposit (S14b — a Zenodo DOI, the repository made public,
+reference verification and a preprint upload). The
 submission package builds end to end from the committed tables: `python
 scripts/s14_assemble.py` runs figures → claims → stitch → PDF → deposit and
 exits zero on **7 main + 16 Extended Data + 6 Supplementary figures (140
 files, none missing), 276/276 load-bearing numbers re-verified against their
-source tables, 17 sections → 17,807 words, a 60-page typeset PDF and 1,937
+source tables, 17 sections → 17,807 words, a 60-page typeset PDF and 1,951
 deposited files with a checksum each**. The paper is *Retained in every
 vertebrate, lost repeatedly elsewhere: a 503-genome census of the IP₃ receptor
 family*, and its three results are the family's repeated loss outside the
@@ -47,18 +46,38 @@ because S14c found two completed analyses (gene architecture and ligand-site
 evolution) missing from it entirely and integrating them changed the Results
 structure.
 
-**The paper is not the whole of the work, and two planned tasks say so.** Its
-17,807 words and 29 references stand on 109,243 words of committed task
-reports, 68 recorded methodological decisions and a 137-reference literature
-review. **S25** writes the long form — one chapter per block of the work, the
-reasoning behind each instrument, the approaches that were measured and
-abandoned, and the roughly 300 constructed negative controls as a body of work
-rather than a Methods sentence — with every new reference audited on entry,
-because a bibliography that grows without an audit launders assumptions into
-citations. **S26** carves the same results into individual papers under six
-stated rules, the last being the honest test of a series against a slice:
-*what does this paper claim if none of the others is ever published?* Both are
-specified in [`docs/session_briefs.md`](docs/session_briefs.md).
+**The paper is not the whole of the work, and the long form is now written.**
+[`thesis/`](thesis/README.md) is **58,436 words across 15 chapters and 5
+appendices, 103 figures, 80 references, 173 typeset pages**, built by `python
+scripts/s25_assemble.py` in eight stages. It carries what the paper had to
+drop: why each instrument is built the way it is, what was measured and
+abandoned, and the **437 constructed negative controls** as a body of work
+rather than a Methods sentence.
+
+Two things make it a task rather than a reformat. **The chapter grouping is
+committed before the prose** — seven rules, four of them enforced by the
+build, and a results directory that is neither assigned to a chapter nor
+explicitly excluded fails it. And **the bibliography is audited on entry**: a
+new reference is declared by an identifier plus a phrase its title must carry,
+resolved against a live record, with the bibliographic line written from what
+came back. Nothing bibliographic is typed. That check caught **9 of the 58 new
+references** — nine identifiers written from memory that resolved to entirely
+different papers, each of which would have looked completely normal in a
+reference list.
+
+The claims ledger extends to it and is closed in both directions: 220 numbers
+verified, 151 of them carried from the manuscript's ledger through the same
+engine so a number quoted in both documents is recovered once, and every claim
+additionally required to *appear in the chapter that declares it*, which is
+what stops a ledger being padded with checks the text never makes. All 15
+build guards are broken on purpose on every build, in a sandboxed copy, each
+required to fire with its own message.
+
+**S26** carves the same results into individual papers under six stated rules,
+the last being the honest test of a series against a slice: *what does this
+paper claim if none of the others is ever published?* It starts from
+`thesis/chapter_assignment.tsv`, with one declared departure to resolve. See
+[`docs/session_briefs.md`](docs/session_briefs.md).
 
 **Every figure has now been read against its own legend** (S24, D11): 26
 findings, 16 legend corrections and 10 figure fixes, each recorded in
@@ -519,7 +538,7 @@ One task per session. Full ledger with dependencies and results in
 | S14a | Manuscript assembly | ✅ completed 2026-09-08 |
 | S24 | Supplementary figures + figure audit | ✅ completed 2026-09-08 |
 | S14c | Manuscript rewrite pass | ✅ completed 2026-09-09 |
-| S25 | The thesis — the long form, with an audited bibliography | ⏳ pending |
+| S25 | The thesis — the long form, with an audited bibliography | ✅ completed 2026-09-09 |
 | S26 | The paper series — the results regrouped as individual papers | ⏳ pending |
 | S14b | Deposit + release (Zenodo, public repo, preprint) | ⏳ pending — human-gated |
 

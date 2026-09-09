@@ -1,0 +1,112 @@
+# The inositol 1,4,5-trisphosphate receptor family: a genome-scale census and its instruments
+
+**George Dickinson**
+
+Correspondence: george.dickinson@gmail.com
+
+---
+
+## Abstract
+
+The inositol 1,4,5-trisphosphate receptor (IP₃R, gene family *ITPR*) is the
+endoplasmic reticulum's ligand-gated calcium-release channel. In vertebrates
+it exists as three paralogues, ITPR1, ITPR2 and ITPR3, whose origin,
+distribution and retention had never been measured against a declared search
+space. This thesis reports that measurement and, at equal length, the
+instruments that made it.
+
+The family was enumerated across 7,691 reference proteomes and 503 genomes —
+309 vertebrate and 194 not — with the ryanodine receptors searched alongside
+at every stage. That control is not decoration. RYR1 carries all four of the
+Pfam signatures that define an IP₃ receptor, is twice its length, and is
+inside every query this project ran; separating the two families is a
+positive test at every stage rather than an assumption, and where an
+instrument could not make that test the result is reported as undecided
+rather than as an absence.
+
+Three results follow. The family is ancestrally eukaryotic and has been lost
+repeatedly and independently: it is absent from all 384 land-plant and all
+1,353 Dikarya reference proteomes, from Apicomplexa, Microsporidia,
+Rhodophyta, diatoms and four other fungal phyla, and from every archaeal and
+bacterial proteome swept — and all 35 clade-level absences hold at assembly
+level in genomes where a measured positive control recovers a comparably
+long, deeply conserved gene. The three vertebrate paralogues, by contrast,
+are not lost at all: across 927 genome × paralogue cells, none reaches the
+absence state, Dollo parsimony places no loss anywhere on the tree, and what
+is reported instead is the set of analytical settings that would manufacture
+one. Third, the family's public record is substantially worse than the
+family: most full-length *ITPR* protein records carry no usable gene symbol,
+and three quarters of the genes demonstrated here cannot be reached by any
+protein-database search at all.
+
+The duplications that produced the three paralogues are dated and their
+asymmetry explained. ITPR2 and ITPR3 are sisters; the first split sits on the
+vertebrate stem and the second on the gnathostome stem; the surviving
+two-round paralogon links run through ITPR1; ITPR1 alone was doubled and
+retained after the teleost genome duplication; and ITPR1 alone is held under
+roughly twice the purifying selection of its sisters. The three paralogues
+share most of their intron positions in every genome that carries them, an
+enrichment of nearly two orders of magnitude over a null drawn from the
+alignment itself, while the ryanodine receptors — which carry every
+diagnostic domain of the family — share one. Constraint mapped onto the
+cryo-EM channel identifies the gate and the selectivity filter as the least
+changeable elements, places the ten measured IP₃ contacts outside the Pfam
+domain named after the ligand, and finds the constrained unit at the ligand
+site to be a pocket rather than the contacts themselves.
+
+## How this document is organised, and why it is long
+
+The same work is reported as a paper of 17,807 words. That paper is the right
+length for its claims and the wrong length for its instruments, and the
+difference is the reason this document exists.
+
+Almost every number in the paper rests on a threshold, and almost every
+threshold in this project was *measured* rather than chosen: the intron
+length above which a gene reads as a fragment, the alignment margin that
+separates two families of the same architecture, the coverage bar a
+reassembled pseudogene has to clear, the identity floor below which a locus
+is not a locus. Each of those measurements has a result of its own, and
+several of them changed the answer. In a paper they are a Methods sentence
+apiece. Here each sits in the chapter that first depends on it, with what it
+was measured against and what guessing would have cost.
+
+The same applies to what did not work. A thesis is the only format in which a
+measured dead end is worth its page, and this one carries several: an
+exhaustive model scan started, timed and abandoned at 11 of up to 1,232
+models; an attribution threshold inherited from a sister project and
+overturned because it came from a family half as similar to itself as this
+one; a duplication detector that reached a specificity of 0.16 before it was
+scoped correctly; a synteny caller threshold that optimising the obvious
+quantity would have set at the loosest value on offer. None of these is
+filed in a chapter of failures. Each is in the chapter that owns the
+instrument it was measured on, because that is where it explains why a number
+can be believed.
+
+Chapters 1 and 2 set out the receptor and audit what the literature could be
+trusted to say about it before any of this was measured. Chapters 3 to 5
+build the search and report the family's range. Chapters 6 to 9 are its
+history: the tree, the duplications, the gene's own architecture, and a
+retention result that required more care to state than any positive finding
+in the project. Chapters 10 to 12 are the protein: selection, constraint, and
+the one part of it the ryanodine receptors do not share. Chapter 13 is the
+archive. Chapter 14 is the methods, written as argument rather than
+procedure, and it carries the project's decision log and its roughly 300
+constructed negative controls. Chapter 15 discusses what the whole says and
+what it does not.
+
+## What is checked, and by what
+
+Nothing in this document is typed twice. Every figure is copied from the
+results directory that committed it and is never re-plotted; every load-
+bearing number is declared with the committed table it comes from and the
+operation that recovers it, and the build re-reads those tables on every run;
+every citation is a stable key resolved against one reference table, and the
+bibliography is rendered from it. The claims ledger additionally requires
+each declared number to *appear in the chapter that declares it*, which is
+what stops a ledger being padded with checks the text never makes.
+
+`python scripts/s25_assemble.py` rebuilds the whole document and exits
+non-zero on a missing figure, a missing chapter, a cited key with no
+reference row, a reference added without an audit, a glyph the document font
+cannot set, or a failed claim. Every one of those guards has been broken on
+purpose to confirm it fires; Chapter 14 says how.

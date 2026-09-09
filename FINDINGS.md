@@ -2410,3 +2410,55 @@ it, and two completed analyses were absent from the manuscript entirely. That
 is the same failure mode this project keeps documenting in public databases —
 the evidence exists, and nothing points at it — occurring inside the project
 itself. It is now checked mechanically on every build.
+
+---
+
+## 2026-09-09 — Nine references that were not the papers they claimed to be (S25)
+
+This entry is about the record rather than the receptor. The long form of the
+work is now written, and writing it required 58 references the paper did not
+need — the tools, models and statistical procedures a document has to name
+when it explains *why* a threshold is the number it is rather than simply
+stating it.
+
+**Nine of those 58 identifiers, written from memory, pointed at entirely
+different papers.** A citation for a gene-duplication inference algorithm
+resolved to a Bayesian phylogenetics program. One for a reconciliation method
+resolved to a paper about statistical challenges in real-time PCR. One for a
+reconstruction of the ancestral vertebrate genome resolved to a survey of
+structured RNAs. One for a model of morphological character evolution resolved
+to a paper on species names.
+
+None of these would have looked wrong in a bibliography. Each has a plausible
+author, a plausible journal and a plausible year, and the only thing that
+would have given any of them away is somebody following the number. The reason
+they were caught is that the document does not let a reference be typed: each
+is declared by its identifier plus a phrase its title must carry, resolved
+against a live record, and the bibliographic line written from what came back.
+
+That is a finding about how bibliographies are made rather than about calcium
+channels, and it belongs here because this project has spent twenty-six
+sessions documenting the same failure mode in public sequence databases — a
+record that is perfectly formatted, entirely plausible, and about something
+else. A gene filed as non-coding, a locus tag where a name should be, a
+protein named for the wrong paralogue. The bibliography of a document is
+built the same way and audited less.
+
+**The other thing writing it out revealed is how much of this project is
+zeros.** Set end to end, the results are: the family is absent from land
+plants and from the yeasts and moulds. No vertebrate lineage has lost a
+paralogue. The ryanodine receptors share one intron position with the IP₃
+receptors out of about fifty-eight. Losing the enzyme that makes the messenger
+does not relax the receptor's binding site. No locus in 309 genomes encodes
+the same part of the protein twice. The family is not recorded worse than its
+sister family.
+
+Every one of those is a negative, and a negative is only worth stating when
+the search space is declared, a control shows the search could have found the
+thing, and the rule that produced the zero has been shown able to produce
+something else. The third is the one that is usually missing. Writing the
+methods out as argument rather than as procedure made it visible how much of
+the project's machinery exists for that single purpose: 437 constructed checks
+across nineteen suites, most of which test that a rule *refuses* correctly,
+and a substantial number of which exist only to prove that a zero somewhere in
+this work is a measurement and not an instrument that cannot fire.

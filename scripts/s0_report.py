@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -83,6 +84,17 @@ def build(d: Path) -> str:
         audit_keys.update(k.strip() for k in c["refs"].split(";")
                           if k.strip() and k.strip() != "-")
     audit = [r for r in lit if r["ref_id"] in audit_keys]
+    # The review's bibliography is the set of keys the review *cites*, not the
+    # size of the shared table. Those coincided until S25 added 58 audited
+    # method and tool references to the same file for the thesis, at which
+    # point counting the file would have silently restated this sentence and
+    # the one in section 6 (D13: a rendered number must mean what it says).
+    review_keys = set()
+    for src in sorted((d.parents[1] / "docs" / "review").glob("[0-9][0-9]_*.md")):
+        for m in re.finditer(r"\[(R\d{2,3}(?:\s*,\s*R\d{2,3})*)\]",
+                             src.read_text(encoding="utf-8")):
+            review_keys.update(k.strip() for k in m.group(1).split(","))
+    n_review = len(review_keys)
     A("## 1. Literature verification\n")
     A(f"{len(claims)} atomic claims were extracted from the `[lit]` "
       f"statements in `docs/ip3r_background.md` and checked against "
@@ -90,7 +102,7 @@ def build(d: Path) -> str:
       f"({sum(1 for r in audit if r['role'] == 'primary')} primary, "
       f"{sum(1 for r in audit if r['role'] == 'review')} review). The wider "
       f"bibliography assembled for `docs/ip3r_review_2026.md` extends this to "
-      f"{len(lit)} references in the same table.\n")
+      f"{n_review} references in the same table.\n")
     A("| verdict | claims | meaning |")
     A("|---|---|---|")
     meanings = {
@@ -258,8 +270,9 @@ def build(d: Path) -> str:
     # ------------------------------------------------------------- 6. refs
     A("## 6. Bibliography — the claim audit\n")
     A(f"The {len(audit)} references the claim audit rests on. The full "
-      f"{len(lit)}-reference bibliography, including everything added for the "
-      f"literature review, is `references.tsv`; the review itself is "
+      f"{n_review}-reference bibliography of the literature review is in the "
+      f"same table, `references.tsv` (which also carries the method and tool "
+      f"references audited for the thesis); the review itself is "
       f"`docs/ip3r_review_2026.md`.\n")
     for r in audit:
         A(f"- **{r['ref_id']}** {r['authors'].split(',')[0]} *et al.* "

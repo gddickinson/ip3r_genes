@@ -102,11 +102,28 @@ def _agrees(expect: str, got: str, tol: float) -> bool:
         return False
 
 
-def run(verbose: bool = False) -> int:
+CHECK_FIELDS = ["id", "section", "claim", "expected", "found", "verdict",
+                "note", "source", "op"]
+
+
+def check(claims: list[dict], out_path, label: str, verbose: bool = False,
+          extra=None) -> tuple[int, list[dict]]:
+    """Re-verify a ledger against its tables; write the check table.
+
+    Shared by the manuscript and the thesis rather than forked, so a number
+    quoted in both documents is recovered by one engine and cannot disagree
+    between them (S26 step 2 applied a task early). `extra` is an optional
+    per-claim callable returning an error string, used by the thesis to
+    require that a declared number actually appears in its chapter.
+    """
     rows, n_fail = [], 0
-    for claim in CLAIMS:
+    for claim in claims:
         got, err = _evaluate(claim)
         ok = (not err) and _agrees(claim["expect"], got, claim.get("tol", 0.0))
+        if ok and extra is not None:
+            err2 = extra(claim)
+            if err2:
+                ok, err = False, err2
         n_fail += 0 if ok else 1
         rows.append({
             "id": claim["id"],
@@ -125,12 +142,19 @@ def run(verbose: bool = False) -> int:
                   f"expected {claim['expect']!r}, found {got!r}"
                   f"{' (' + err + ')' if err else ''}")
 
-    lib.write_tsv(lib.MS / "claims_check.tsv", rows,
-                  ["id", "section", "claim", "expected", "found", "verdict",
-                   "note", "source", "op"])
-    print(f"[s14 claims] {len(rows) - n_fail}/{len(rows)} load-bearing numbers "
-          f"re-verified against the committed tables "
-          f"-> manuscript/claims_check.tsv")
+    lib.write_tsv(out_path, rows, CHECK_FIELDS)
+    try:
+        rel = out_path.relative_to(lib.ROOT)
+    except ValueError:            # a sandboxed run, e.g. s25_test_guards.py
+        rel = out_path
+    print(f"[{label}] {len(rows) - n_fail}/{len(rows)} load-bearing numbers "
+          f"re-verified against the committed tables -> {rel}")
+    return n_fail, rows
+
+
+def run(verbose: bool = False) -> int:
+    n_fail, rows = check(CLAIMS, lib.MS / "claims_check.tsv", "s14 claims",
+                         verbose=verbose)
     n_fail += _checklist_total_matches(len(rows))
     return 1 if n_fail else 0
 

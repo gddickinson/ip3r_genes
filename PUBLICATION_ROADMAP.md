@@ -112,29 +112,35 @@ Claude: follow this protocol in every session that touches this project.
 Statuses: `pending` / `in_progress` / `completed YYYY-MM-DD`.
 Full step-by-step briefs: `docs/session_briefs.md`.
 
-> **Next session: S25 — the thesis**, or S26 if you would rather carve the
-> papers first; they are independent of each other and both are unblocked.
-> Every analysis row is complete and the manuscript has had its full rewrite
-> pass (S14c). What is left is three tasks about *how the work is reported*,
-> one of which cannot be done here.
+> **Next session: S26 — the paper series.** It is the only remaining task that
+> can be done here; S14b is human-gated. Every analysis row is complete, the
+> manuscript has had its full rewrite pass (S14c), and the thesis is written
+> (S25).
 >
-> **S25 and S26 exist because the manuscript is the compressed form of the
-> project, not the whole of it.** 17,807 words and 29 references stand on
-> 109,243 words of committed task reports, 68 recorded decisions and a
-> 137-reference review. S25 writes the long form — chapters, the reasoning
-> behind each instrument, the measured dead ends, the ~300 negative controls
-> as a body of work — with every new reference audited on entry, because a
-> bibliography that grows without an audit launders assumptions into
-> citations. S26 carves the same results into individual papers under six
-> stated rules, the last of which is the honest test of whether a series is a
-> series or a slice: *what does this paper claim if none of the others is ever
-> published?* The two must not contradict each other on how the results group;
-> whichever runs first commits the assignment table.
+> **S26 starts from `thesis/chapter_assignment.tsv`.** S25 ran first, so it
+> committed the assignment: 37 results directories across 13 chapters, each
+> with the rule that placed it and the chapter it might otherwise have gone
+> to. S26 either adopts it or records every departure. **One departure is
+> already declared and needs resolving**: T4 puts the whole of `results/methods`
+> in the thesis's Chapter 4 with the search it measures, and S26's own
+> proposal splits it across two papers — a retention paper taking the
+> false-negative rate and an archive paper taking the contribution half.
+> `thesis/20_appendix_assignment.md` states the disagreement in both
+> directions rather than resolving it; whichever way S26 goes, it should carry
+> the ten-line cross-check between the two assignment tables that nothing
+> currently does (Emergent, 2026-09-09).
+>
+> **Two things S26 can reuse rather than rebuild.** `s14_claims.check` is now
+> the shared ledger engine (D72) — one engine, two ledgers, and S26's brief
+> already says not to fork it. And `s25_test_guards.py` is the pattern for
+> "every guard broken on purpose, on every build" (D74): 15 cases, each
+> declaring the message its guard must emit, run in a sandbox that verifies it
+> altered no committed file.
 >
 > **S14b — deposit and release — remains human-gated**: a Zenodo DOI, the
 > repository made public (D2), re-checking that each cited DOI and PMID
 > resolves, and a preprint upload. The package is ready for all of it;
-> `manuscript/deposit_manifest.tsv` lists 1,937 files with a SHA-256 each.
+> `manuscript/deposit_manifest.tsv` lists 1,951 files with a SHA-256 each.
 >
 > **Three things any of these three should read first.** (1) The open items in
 > `manuscript/reviewer_checklist.md`, where item 4 is a real defect rather
@@ -171,7 +177,7 @@ Full step-by-step briefs: `docs/session_briefs.md`.
 | S14a | **Manuscript assembly** — draft, figures, methods, deposit manifest, reviewer self-audit | S3, S5b, S7, S8, S9b, S10, S11, S20, S23c, S15–S19 | completed 2026-09-08 | **The package builds end to end and every number in it is re-derived from a committed table on every build.** `python scripts/s14_assemble.py` runs `figures → claims → stitch → pdf → deposit` and exits 0: **7 main + 14 Extended Data figures (56 panel files, 0 missing), 175/175 load-bearing numbers re-verified, 16 sections → 13,822 words, a 48-page typeset PDF, 1,767 deposited files with SHA-256**. **Title:** *Retained in every vertebrate, lost repeatedly elsewhere: a 503-genome census of the IP₃ receptor family*, structured on the three results the project actually has — the family is ancestrally eukaryotic and lost repeatedly outside the animals (35 controlled clade absences); no vertebrate paralog is lost anywhere in 309 genomes (0/927 cells); and 76.3 % of the demonstrated genes are unreachable from any protein database. **Four guards, each tested by breaking it on purpose**: a missing figure, a missing section, a cited key with no reference row and a failed claim all set a non-zero exit. **The claims ledger paid on its first run**: 5 of 175 rows failed, every one because the claim addressed the wrong row rather than because a number was wrong (a class named `Cyclostomata` where the ledger records `Hyperoartia`/`Myxini`; a pair class quoted without its `cross_` prefix; two AlphaFold rows needing the `ALL` group; one report phrase quoted loosely). **Taking numbers from the tables rather than from this roadmap also caught two stale ledger entries** — the alignment is 11,777 columns trimmed to **1,797**, not 11,796 → 1,790. **D11 was done, not asserted: all 56 panels were opened and read against their legends**, and two legends were wrong before that — *Nibea albiflora* has 55 spliceable introns of which one is a minor site, not 55 GT-AG; and the non-vertebrate copy-number figure is drawn over the 193 *controlled* genomes, not all 194. **Two new build guarantees (D61, D62)**: citations are stable `[R22]` keys resolved against `references.tsv` at build time, so no section file carries a citation number and the bibliography is rendered rather than typed; and the PDF's font has no subscript glyphs at all, so `IP₃` reached the first build as `IP` with only a warning — the converter now handles sub/superscript runs unconditionally and the build log is read for `Missing character` (now zero). **S16's correction is applied**: the manuscript says *one* dated 2R ohnolog family, not two, and states the `BHLHE` link's *Opisthokonta* date. **Supplementary figures are deliberately absent**, not missing — `SUPPLEMENTARY_FIGURES` is empty until S24 draws them, because the build fails on a missing figure. 7 open items are listed for a human in `manuscript/reviewer_checklist.md`, affiliation and funding text among them. `s14_claims.py` was split three ways to stay inside the 500-line budget. → `manuscript/` |
 | S24 | Supplementary alignment + structure figures, and a figure-by-figure audit | S14a | completed 2026-09-08 | **Six supplementary figures, and 26 figure findings — 16 legends corrected, 10 figures redrawn.** The supplementary set is drawn only from committed files, and the two joins it exists to let a reader check are checked first as hard failures: the trimAl column map by an **exhaustive column walk** (all 1,797 trimmed columns x 134 sequences — S6 recovered the map with `-colnumbering`, S24 does not trust it, and an off-by-one would have no other symptom), and every clinically labelled residue against the residue its own paralogue's table holds there (1,780 variants, 2,699 aligned partners). **A structure may carry a human variant position only if every residue it shares with the human table carries the same amino acid** — human ITPR2 (9YKK) and ITPR3 (8TKG) pass 2,168/2,168 and 2,210/2,210; the ITPR1 cryo-EM reference is *rat* (736/2,300) and AlphaFold DB's human ITPR1 model is the 2,695-residue Q14643-4 isoform (479/2,695), so ITPR1's 55 pathogenic positions are **not** placed. 22 pathogenic positions sit in the ligand core or the pore module and **20 carry the same residue in all three paralogues**. The audit's own headline findings: Fig. 3's legend said four backbone `100/100` labels where the tree draws **five**; Fig. 2's legend mis-mapped the colour key (four blues, not two) and explained the missing `absent` colour by the wrong rule (the ledger *does* hold those four cyclostome cells as absent — they are not drawn because their classes have one genome each); ED Fig. 7c said 51–53 implied losses for a panel that plots up to **102**; ED Fig. 10a called a 30-bar panel the 29-structure panel. 17 negative controls, 5 mutation tests, all caught — two of them only after the test was rebuilt to stop passing vacuously. **`figstyle.save` now drops the PDF creation timestamp**, so a figure rebuilt from the same code on the same data is byte-identical (12/12 verified); before this no SHA-256 recorded against a figure pdf meant anything. -> `results/supplementary/report.md`, `figure_findings.tsv`; manuscript is 56 pages with 180/180 claims re-verified |
 | S14b | **Deposit + release** — Zenodo DOI, repo public (D2 flip), reference verification, preprint upload | S14a | pending | **Human-gated; cannot be completed autonomously.** |
-| S25 | **The thesis** — assemble the work as a thesis-length document: chapters not sections, the reasoning behind every instrument written out, and a bibliography audited on entry | S14c, S24 | pending | The manuscript is the **compressed** form of 109,243 words of committed task reports, 68 recorded decisions and a 137-reference review, and cites 29 references. Three things it had to leave out are each a chapter: why each instrument is built the way it is (the Decisions log has never been written as prose), what was measured and abandoned, and the ~300 constructed negative controls as a body of work rather than a Methods sentence. **The references are the load-bearing half**: S0's rule is unchanged, so every new reference is audited on entry and committed as a table, because a bibliography that grows without an audit launders assumptions into citations. Builds on `s14_lib` — the claims ledger extends to the thesis, since a longer document is a larger surface for drift and not a licence for less checking. Brief: `docs/session_briefs.md`. |
+| S25 | **The thesis** — assemble the work as a thesis-length document: chapters not sections, the reasoning behind every instrument written out, and a bibliography audited on entry | S14c, S24 | completed 2026-09-09 | **58,436 words, 15 chapters, 5 appendices, 103 figures, 80 references, 173 pages.** Built by `python scripts/s25_assemble.py` — eight stages, exit 0. **The chapter grouping is committed before the prose** (`thesis/chapter_rules.md` + `chapter_assignment.tsv`): seven rules, four enforced by the build, 37 results directories assigned across 13 chapters with one excluded and a reason. **The reference audit caught 9 of 58** — nine identifiers written from memory resolved to entirely different papers (a duplication-inference algorithm's returned MrBayes, a reconciliation method's a real-time-PCR paper, an ancestral-genome reconstruction's a paper on structured RNAs), each of which would have entered a bibliography looking normal. **Nothing bibliographic is typed**: a new reference is declared by identifier plus a phrase its title must carry, resolved live and written from the fetched record. **220 load-bearing numbers verified, and the ledger is closed in both directions** — 151 carried from the manuscript's ledger through the same engine (D72), 69 new, and every one additionally required to *appear in the chapter that declares it* (D73), which is what stops a ledger being padded. **All 15 build guards are broken on purpose on every build** (`s25_test_guards.py`, D74) in a sandboxed copy, each required to fire with its own message, with the suite verifying it altered no committed file. **437 constructed negative controls across 19 modules**, derived from the test modules rather than counted (`thesis/control_inventory.tsv`). Also fixed: `s0_report.py` was computing the review's bibliography size as the size of the shared reference table, which would have silently restated 137 as 195 on the next render. → `thesis/`, `thesis/itpr_family_thesis.pdf` Brief: `docs/session_briefs.md`. *What the task started from:* the manuscript is the **compressed** form of 109,243 words of committed task reports, 68 recorded decisions and a 137-reference review, and cites 29 references. Three things it had to leave out are each a chapter: why each instrument is built the way it is (the Decisions log has never been written as prose), what was measured and abandoned, and the ~300 constructed negative controls as a body of work rather than a Methods sentence. **The references are the load-bearing half**: S0's rule is unchanged, so every new reference is audited on entry and committed as a table, because a bibliography that grows without an audit launders assumptions into citations. Builds on `s14_lib` — the claims ledger extends to the thesis, since a longer document is a larger surface for drift and not a licence for less checking. Brief: `docs/session_briefs.md`. |
 | S26 | **The paper series** — regroup every result into individual papers, each with its own question, controls, scope and figures | S14c, S24 | pending | Several of the manuscript's sections are papers that currently get a few hundred words each. **The grouping is the deliverable and is derived rather than handed down**: six rules (one question; its own controls measured inside it; a scope declared not inherited; four to seven figures; no result primary in two papers; and *what does this claim if none of the others is ever published*) written before the assignment and committed with the rule that placed each results directory. The last rule is the one that decides whether this is a series or a slice. Generalises the S14 machinery from one package to N, with **one** claims ledger carrying a paper column so a number quoted in two papers cannot disagree between them. Brief: `docs/session_briefs.md`. |
 
 ### Analysis & synthesis block (S15–S22)
@@ -200,6 +206,9 @@ than expanding the task in progress.
 
 | Added | From | Task | Status |
 |-------|------|------|--------|
+| 2026-09-09 | S25 | **125 of the manuscript's 276 declared numbers are not stated anywhere in the thesis, and nobody has asked whether they should be.** S25's carried ledger takes 151 rows; the rest are 32 `grep` rows (whose needle is a phrase, not a value, so the appearance rule cannot apply to them) and 93 numbers the thesis simply does not quote. Some of those are numbers a long document *should* carry — the plant/fungal chase's 47 real genes and 52 fragments, the deep layer's per-paralogue orthologue counts, the reconciliation's expected-shared-intron baseline. The difference is computable because both ledgers are committed; what is missing is a pass over it deciding, row by row, whether the thesis is thinner than it should be or the paper is quoting numbers no argument needs. | open |
+| 2026-09-09 | S25 | **The appearance check cannot distinguish a load-bearing small integer from a coincidence.** D73 requires a claim's value to appear in its chapter, and for a value like `3` or `19` that is nearly free — the guard's own analysis found values matching in up to ten chapters at once. It is a real check for the 5- and 6-digit numbers that carry this project's results and a weak one for the rest. A stronger version would require the value to appear within a stated distance of a declared phrase, which is the same idea the `grep` op already uses and would let the two op families converge. | open |
+| 2026-09-09 | S25 | **The thesis and the manuscript now disagree about where S19 belongs, and S26 has to choose.** T4 puts all of `results/methods` in the thesis's Chapter 4 with the search it measures; S26's proposal splits it across two papers. Appendix E states the disagreement in both directions rather than resolving it. Whichever way S26 goes, the assignment tables of the two documents will then differ in a way a reader holding both can see — which is the intent — but nothing currently checks that the *difference* is the declared one rather than an accident. A cross-check between `thesis/chapter_assignment.tsv` and `papers/paper_assignment.tsv` is a ten-line script S26 should carry. | open |
 | 2026-09-09 | S14c | **`figstyle.save()` checks the size a figure declared, not the size it wrote.** The guard reads `fig.get_size_inches()`, but matplotlib's tight bounding box decides the file's actual width, so a figure declared at the 6.7 in text block can be saved wider and nothing says so. Three panels in the package are: Extended Data Fig. 9d at 6.94 in (a 3.5 % downscale when placed, so its type sets smaller than its neighbours'), 14d at 6.74 and 3b at 6.72. The fix is a check on the written PNG's physical size in `figstyle.save()` plus redrawing whatever it catches, and it touches every task's figures, which is why it is a row rather than an edit. | pending |
 | 2026-09-09 | S14c | **The paper now asserts that the ITPR and RyR exon structures have no common ancestry, and the polarity of that is untested.** S21 measured a median of one shared intron position between the families against 46-49 within the family, which says the two gene structures are unrelated but not *how* they got that way — whether the ancestral gene was intron-poor and both families gained independently, or intron-rich and one family replaced its structure wholesale. The character matrix and the intron positions are committed, the species tree is an input, and this is a Dollo/parsimony job on the intron characters of the kind S15b already runs. It would turn a striking observation into a statement about the duplication. | pending |
 | 2026-09-08 | S19 | **Four committed modules are over the project's own 500-line file budget, and nothing checks it.** `s20_report_results.py` (691), `s6_select_reps.py` (600), `src/gui/tools.py` (549) and `s6_report_results.py` (511) exceed the limit CLAUDE.md sets for every `.py` in this repo — the fourth was missed on the first count because that pass looked only at `scripts/`, and the convention is written for the whole repo; S19 split four of its own modules to stay inside it and noticed these on the way past. Each has a natural seam — S20's report splits results from the convergence half the way S3's does, S6's selection splits the rule enforcement from the length-target measurement, and S6's report follows S20's. None is urgent and none affects a result, but S14a will ship `scripts/` in the deposit and the budget is a stated convention, so it should either be met or the exceptions written into the convention. A one-line pre-commit check over `scripts/*.py` would stop it recurring. | open — **S14a met the budget for its own modules** (the 175-row claims ledger was split three ways into `s14_claims_scope/history/function.py`) and has now shipped `scripts/` in the deposit, so the four named modules are exceptions inside a published archive. Re-counted 2026-09-09 (S22): all 17 S22 modules are inside the budget, two of them (`s22_test_ligand.py`, `s22_report_results.py`) only after being split during the session |
@@ -1300,3 +1309,62 @@ positive control is measured on the same instrument at the same divergence:
 the ryanodine receptors' shift is −0.062 and the matched test detects it with
 essentially full power. A negative result with no such control is not a
 result.
+
+**D72 — A number quoted in two documents is recovered once.** The thesis
+states most of the manuscript's load-bearing numbers. Restating them in a
+second ledger would create exactly the drift a ledger exists to prevent, so
+`s25_claims_carried.py` names the manuscript claim ids the thesis also makes
+and reuses each row unchanged — same source table, same operation, same
+expected value, only the chapter is new — through `s14_claims.check`, which
+was extracted from `s14_claims.run` for the purpose rather than forked. A
+carried id that no longer exists in the manuscript's ledger raises at import,
+so the two documents cannot drift apart by deletion either. This is S26 step
+2's rule (*do not fork `s14_claims.py`: one ledger, with a paper column*)
+applied a task early, and it makes the two ledgers a filter relationship
+rather than two copies: 151 of 276 rows are carried, and which 125 are not is
+computable because both are committed.
+
+**D73 — A claims ledger is closed in both directions: the number must be in
+the table *and* in the text.** The manuscript's ledger fails when the document
+states a number no committed table produces. It cannot fail when the ledger
+declares a check the document never makes, and a ledger padded that way looks
+more thorough than it is. `s25_claims._in_chapter` therefore requires every
+claim's expected value to **appear in the chapter that declares it**, matching
+the renderings a document legitimately uses — thousands separators, a trimmed
+trailing zero, and the English word for an integer up to twenty, because prose
+spells small numbers out. `grep` rows are exempt, since their needle is a
+phrase in a report rather than a value. The check is deliberately generous
+about *rendering* and strict about *place*: a number stated in another chapter
+does not satisfy a claim declared here. It fired on seven rows on its first
+run — five numbers the thesis had not actually stated and two claims pointed
+at the wrong table — and it is what makes 220 declarations a measurement of
+the document rather than of the ledger.
+
+**D74 — A guard is not a guard until it has been broken, and breaking it is a
+build stage.** The brief asked for every guard to be broken on purpose once.
+Doing that by hand proves it for one afternoon. `s25_test_guards.py` does it
+on every build, as the first stage, and it carries two properties that make it
+worth the file. **Each case declares a fragment the guard's own message must
+contain**, so a case that starts failing for a *different* reason is a failure
+and not a pass — the first run had four cases returning non-zero for the wrong
+reason (two path bugs in the harness, one guard reading a module-level
+constant the sandbox could not redirect, one mutation applied to a list the
+driver had already copied). And **it runs against a sandboxed copy of
+`thesis/` and checks the SHA-256 of every committed file before and after**
+(D60), because this project has already had a self-test overwrite the
+committed table it was testing. All 15 fire; `thesis/guard_check.tsv` records
+what each said.
+
+**D75 — A rendered number must mean what its sentence says, not what its
+source happens to hold.** `s0_report.py` wrote *the wider bibliography extends
+this to N references* and computed N as the size of `references.tsv`. That was
+right only while the review's bibliography and the shared reference table were
+the same set. S25 added 58 audited method and tool references to the same
+file, and the next render of a committed report would have silently restated
+137 as 195 — a rendered report drifting *because* the data it renders from
+grew correctly. The sentence means "the references the review cites", so the
+count is now taken from the keys `docs/review/*.md` actually cites. The
+general form: when a rendered number is a count of a set, check that the set
+it is computed over is the set the sentence names, because D13 protects a
+report from a *stale* number and not from one that was always measuring
+something adjacent.

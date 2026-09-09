@@ -150,7 +150,7 @@ All three cytogenetic bands are confirmed, so that claim moves from `[lit]` to `
 
 ## 6. Bibliography — the claim audit
 
-The 51 references the claim audit rests on. The full 137-reference bibliography, including everything added for the literature review, is `references.tsv`; the review itself is `docs/ip3r_review_2026.md`.
+The 51 references the claim audit rests on. The full 137-reference bibliography of the literature review is in the same table, `references.tsv` (which also carries the method and tool references audited for the thesis); the review itself is `docs/ip3r_review_2026.md`.
 
 - **R01** Streb H *et al.* (1983) Release of Ca2+ from a nonmitochondrial intracellular store in pancreatic acinar cells by inositol-1,4,5-trisphosphate. *Nature*. PMID [6605482](https://pubmed.ncbi.nlm.nih.gov/6605482/); doi:10.1038/306067a0
 - **R02** Furuichi T *et al.* (1989) Primary structure and functional expression of the inositol 1,4,5-trisphosphate-binding protein P400. *Nature*. PMID [2554142](https://pubmed.ncbi.nlm.nih.gov/2554142/); doi:10.1038/342032a0
