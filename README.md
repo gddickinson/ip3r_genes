@@ -19,9 +19,11 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S14c complete — every analysis is in the paper; 32 of the 33 ledger
-rows are done.** Only the human-gated deposit (S14b) remains: a Zenodo DOI,
-the repository made public, reference verification and a preprint upload. The
+**Status: S14c complete — every analysis is in the paper; 32 of the 35 ledger
+rows are done.** What remains is three tasks about *how the work is reported*:
+the thesis (S25), the paper series (S26), and the human-gated deposit (S14b —
+a Zenodo DOI, the repository made public, reference verification and a
+preprint upload). The
 submission package builds end to end from the committed tables: `python
 scripts/s14_assemble.py` runs figures → claims → stitch → PDF → deposit and
 exits zero on **7 main + 16 Extended Data + 6 Supplementary figures (140
@@ -44,6 +46,19 @@ previous draft is frozen in [`manuscript_v1/`](manuscript_v1/FROZEN.md),
 because S14c found two completed analyses (gene architecture and ligand-site
 evolution) missing from it entirely and integrating them changed the Results
 structure.
+
+**The paper is not the whole of the work, and two planned tasks say so.** Its
+17,807 words and 29 references stand on 109,243 words of committed task
+reports, 68 recorded methodological decisions and a 137-reference literature
+review. **S25** writes the long form — one chapter per block of the work, the
+reasoning behind each instrument, the approaches that were measured and
+abandoned, and the roughly 300 constructed negative controls as a body of work
+rather than a Methods sentence — with every new reference audited on entry,
+because a bibliography that grows without an audit launders assumptions into
+citations. **S26** carves the same results into individual papers under six
+stated rules, the last being the honest test of a series against a slice:
+*what does this paper claim if none of the others is ever published?* Both are
+specified in [`docs/session_briefs.md`](docs/session_briefs.md).
 
 **Every figure has now been read against its own legend** (S24, D11): 26
 findings, 16 legend corrections and 10 figure fixes, each recorded in
@@ -504,6 +519,8 @@ One task per session. Full ledger with dependencies and results in
 | S14a | Manuscript assembly | ✅ completed 2026-09-08 |
 | S24 | Supplementary figures + figure audit | ✅ completed 2026-09-08 |
 | S14c | Manuscript rewrite pass | ✅ completed 2026-09-09 |
+| S25 | The thesis — the long form, with an audited bibliography | ⏳ pending |
+| S26 | The paper series — the results regrouped as individual papers | ⏳ pending |
 | S14b | Deposit + release (Zenodo, public repo, preprint) | ⏳ pending — human-gated |
 
 ---

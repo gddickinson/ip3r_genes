@@ -745,3 +745,163 @@ its strongest result? Are the figure numbers still right? Does every claim
 row still pass? Version the previous draft rather than overwriting it — the
 PIEZO project froze v1 in `manuscript_v1/` when its framing changed, and
 that turned out to be worth doing.
+
+---
+
+## S25 — The thesis
+
+**Goal.** Assemble the work as a thesis-length document: chapters rather
+than sections, every claim explained rather than compressed, and every
+statement that rests on the literature carrying a reference that has been
+checked. The manuscript is 17,807 words and cites 29 references. It is the
+*compressed* form of 109,243 words of committed task reports, 68 recorded
+methodological decisions and a 137-reference literature review, and almost
+none of the reasoning behind the numbers survives into it.
+
+**What makes this a task and not a reformat.** Three things the paper had to
+leave out, each of which is the interesting part of its own chapter:
+
+1. **Why each instrument is built the way it is.** The bait panel's seven
+   rules, the intron calibration that decides whether a gene reads as a
+   fragment, the attribution margin that had to be overturned because it came
+   from a family 40–50 % identical where this one is 61–68 %, the profile
+   gate that stopped 12,874 troponins being called ryanodine receptors. The
+   Decisions log (D0–D68) is the record of these and has never been written
+   in prose.
+2. **What was tried and abandoned.** ModelFinder's exhaustive scan, measured
+   at 11 of 1,232 models and projected at 21 hours. The synteny caller
+   threshold that optimising call rate alone would have selected. The
+   duplication detector that reached a specificity of 0.16 before it was
+   scoped to the cell's own loci. A thesis is the only format in which a
+   measured dead end is worth its page.
+3. **The negative controls, as a body of work.** Around 300 constructed
+   controls across the tasks, each mutation-tested. In the paper they are one
+   Methods paragraph and a count.
+
+**Structure.** Front matter, then chapters. One chapter per coherent block of
+the work rather than one per ledger row. S26 carves the same body of results
+into papers, and the two groupings must not contradict each other: whichever
+task runs first commits the assignment table, and the second either adopts it
+or records why a thesis chapter and a paper are not the same unit here. They
+need not be identical — a chapter can be a block of exposition that would not
+stand as a paper — but a reader holding both documents must be able to see
+which is which. Then a methods chapter carrying the decisions log as
+argument, a general discussion, and appendices for the correction list, the
+control inventory and the full sensitivity tables.
+
+**References are the load-bearing half.** "Far more references" must not
+become "far more references nobody checked". The rule is S0's, unchanged:
+every reference lives in `results/s0_baseline/references.tsv`, every claim
+that rests on one is tagged `[db]` (re-derived against a live database, with
+the query), `[lit]` (verified against the source) or `[open]`, and a cited
+key with no reference row is a build error. The review's 137 are the floor,
+not the target; every new reference added for this document is **audited on
+entry the way S0 audited its 19 `[lit]` claims**, and the audit is committed
+as a table beside the text. A reference added and not audited is worse than
+no reference, because it launders an assumption into a citation.
+
+**Steps.**
+
+1. Fix the chapter grouping and commit it as a table with the rule that
+   assigned each results directory to a chapter, before writing any prose. If
+   S26 has already committed a paper assignment, start from it and record
+   every departure.
+2. Extend `results/s0_baseline/references.tsv` with an audit row per new
+   reference. Expect the literature background, the methods rationale and
+   the discussion to need most of them.
+3. Write the chapters as numbered source files under `thesis/`, each inside
+   the 500-line budget, citing with the project's stable keys. Reuse
+   `s0_review_build.py`'s citation resolution and `{fig:<slug>}` numbering
+   rather than writing a third one.
+4. Build `scripts/s25_*.py` on `s14_lib` — **the claims ledger extends to
+   the thesis**. Every load-bearing number in every chapter is declared with
+   its source table and the op that recovers it, exactly as in the paper. A
+   longer document is a larger surface for drift, not a licence for less
+   checking.
+5. Figures: place every committed figure the chapters need at the width it
+   was drawn, copied and never re-plotted (D13, D19). A thesis can carry
+   figures the paper had no room for; it may not carry a figure that is not
+   in some task's results directory.
+6. Typeset via pandoc + xelatex with the same five traps handled, the glyph
+   guard on, and a table of contents.
+
+**Done when.** `python scripts/s25_assemble.py` builds the whole document and
+exits non-zero on a missing figure, a missing chapter, a cited key with no
+reference row, an unaudited new reference, a dropped glyph or a failed claim.
+Every guard has been broken on purpose once. The chapter-grouping table, the
+reference audit and the claims check are committed.
+
+**What would make this task a failure.** A document that is the paper with
+padding between the paragraphs; a bibliography that grew without an audit; or
+a claim that appears in the thesis and in no committed table.
+
+---
+
+## S26 — The paper series
+
+**Goal.** Report the work as several papers rather than one. The current
+manuscript carries the eukaryotic range, the vertebrate census, the
+duplication history, the gene architecture, the retention result, the
+constraint and ligand-site analyses and the annotation audit in 17,807 words,
+which gives each of them a few hundred. Several are papers.
+
+**The grouping is the deliverable, and it is derived rather than handed
+down.** Write the rules first, apply them, and commit the assignment with the
+rule that placed each results directory. Proposed rules, to be tested rather
+than assumed:
+
+- **P1 — one question.** A paper answers one question that can be stated in a
+  sentence without an "and".
+- **P2 — its own controls.** Every control a paper's claims rest on is
+  measured inside that paper, not cited from a sibling. A paper whose
+  negative control lives in another paper is a section of that paper.
+- **P3 — a scope that stands alone.** The denominator is declared in the
+  paper that uses it. Two papers may share a scope; neither may inherit it
+  by reference.
+- **P4 — enough to show.** Four to seven main figures drawn from committed
+  tables. A grouping that yields two figures is a section; one that yields
+  fifteen is two papers.
+- **P5 — no result is primary twice.** A result is a primary claim in exactly
+  one paper. It may be cited by the others, and the citation is what makes
+  the set a series rather than a slice.
+- **P6 — it survives alone.** For each paper, state what it claims if none of
+  the others is ever published. A paper that cannot answer that is a slice
+  and must be merged.
+
+**A starting proposal, offered to be revised by the rules and not instead of
+them.** Range and controlled absence across the eukaryotes (S2, S3, S20,
+S23, with S1's benchmark); origin of the three vertebrate paralogues (S6,
+S7, S8, S13, S16, and the shared-intron evidence from S21); complete
+retention across 309 vertebrate genomes with the false-negative rate that
+makes a zero mean something (S5, S15a, S15b, S19); the archive that cannot
+find the gene (S10, S12, S18, and S19's contribution half, with the 297
+corrections as the deliverable); and constraint, the ligand site and the
+clinical variants (S9, S11, S17, S22). Test each against P1–P6 and expect at
+least one of them to split or merge.
+
+**Steps.**
+
+1. Commit `paper_assignment.tsv` — results directory → paper, with the rule
+   that assigned it and the rule that excluded it from the others — plus a
+   `paper_rules.md` written before the assignment.
+2. Generalise the S14 machinery from one manuscript to N. `s14_lib`'s section
+   order, figure maps and deposit list are currently module-level constants
+   for a single package; they become per-paper configurations. **Do not fork
+   `s14_claims.py`**: one ledger, with a paper column, so a number quoted in
+   two papers is checked once and cannot disagree between them.
+3. Build each package: sections, figures renumbered per paper, its own
+   reference subset resolved from the one table, its own claims check, its
+   own deposit manifest, its own PDF.
+4. Commit the dependency graph — which paper cites which, and in what
+   submission order — and a one-paragraph answer to P6 for each.
+5. Write `papers/README.md`: what each paper claims, what it does not, and
+   which committed tables it stands on.
+
+**Done when.** Every paper builds end to end from committed tables with the
+same guards the single manuscript has; every results directory is assigned to
+exactly one paper as primary; every paper answers P6 in writing; and the
+claims ledger passes across the whole series at once.
+
+**What would make this task a failure.** A set of papers that only makes
+sense read together — that is the thesis, and S25 already writes it. The test
+is P6, applied honestly.

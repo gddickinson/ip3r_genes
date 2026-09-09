@@ -112,25 +112,38 @@ Claude: follow this protocol in every session that touches this project.
 Statuses: `pending` / `in_progress` / `completed YYYY-MM-DD`.
 Full step-by-step briefs: `docs/session_briefs.md`.
 
-> **Next session: S14b — deposit and release, which is human-gated.** Every
-> analysis row in this plan is complete and the manuscript has had its full
-> rewrite pass (S14c). What remains cannot be done autonomously: a Zenodo
-> deposit and DOI, flipping the repository public (D2), re-checking that each
-> of the 29 cited DOIs and PMIDs resolves, and a preprint upload. The package
-> is ready for all of it — `manuscript/deposit_manifest.tsv` lists 1,937 files
-> with a SHA-256 each and `deposit_notes.md` gives the regeneration command
-> for every excluded bulk class.
+> **Next session: S25 — the thesis**, or S26 if you would rather carve the
+> papers first; they are independent of each other and both are unblocked.
+> Every analysis row is complete and the manuscript has had its full rewrite
+> pass (S14c). What is left is three tasks about *how the work is reported*,
+> one of which cannot be done here.
 >
-> **Four things S14c leaves for whoever picks this up.** (1) The open items in
-> `manuscript/reviewer_checklist.md` are the submission checklist, and item 4
-> is a real defect rather than a formality: three panels are drawn wider than
-> the text block and are silently scaled down, and the cause is in `figstyle`
-> rather than in those figures. (2) `manuscript_v1/` is the frozen S14a draft;
-> read `FROZEN.md` before assuming a difference between the two is a mistake.
-> (3) The build's guards now include a glyph check and a self-audit drift
-> check, so a green `python scripts/s14_assemble.py` means more than it did.
-> (4) Two emergent rows came out of this pass, one of them the intron-polarity
-> question the new Results section raises and does not answer.
+> **S25 and S26 exist because the manuscript is the compressed form of the
+> project, not the whole of it.** 17,807 words and 29 references stand on
+> 109,243 words of committed task reports, 68 recorded decisions and a
+> 137-reference review. S25 writes the long form — chapters, the reasoning
+> behind each instrument, the measured dead ends, the ~300 negative controls
+> as a body of work — with every new reference audited on entry, because a
+> bibliography that grows without an audit launders assumptions into
+> citations. S26 carves the same results into individual papers under six
+> stated rules, the last of which is the honest test of whether a series is a
+> series or a slice: *what does this paper claim if none of the others is ever
+> published?* The two must not contradict each other on how the results group;
+> whichever runs first commits the assignment table.
+>
+> **S14b — deposit and release — remains human-gated**: a Zenodo DOI, the
+> repository made public (D2), re-checking that each cited DOI and PMID
+> resolves, and a preprint upload. The package is ready for all of it;
+> `manuscript/deposit_manifest.tsv` lists 1,937 files with a SHA-256 each.
+>
+> **Three things any of these three should read first.** (1) The open items in
+> `manuscript/reviewer_checklist.md`, where item 4 is a real defect rather
+> than a formality: three panels are drawn wider than the text block and are
+> silently scaled down, and the cause is in `figstyle` rather than in those
+> figures. (2) `manuscript_v1/` is the frozen S14a draft; read `FROZEN.md`
+> before assuming a difference between the two versions is a mistake. (3) The
+> build's guards now include a glyph check and a self-audit drift check, so a
+> green `python scripts/s14_assemble.py` means more than it used to.
 
 | ID | Task (one session each) | Depends | Status | Results (headline) |
 |----|-------------------------|---------|--------|--------------------|
@@ -158,6 +171,8 @@ Full step-by-step briefs: `docs/session_briefs.md`.
 | S14a | **Manuscript assembly** — draft, figures, methods, deposit manifest, reviewer self-audit | S3, S5b, S7, S8, S9b, S10, S11, S20, S23c, S15–S19 | completed 2026-09-08 | **The package builds end to end and every number in it is re-derived from a committed table on every build.** `python scripts/s14_assemble.py` runs `figures → claims → stitch → pdf → deposit` and exits 0: **7 main + 14 Extended Data figures (56 panel files, 0 missing), 175/175 load-bearing numbers re-verified, 16 sections → 13,822 words, a 48-page typeset PDF, 1,767 deposited files with SHA-256**. **Title:** *Retained in every vertebrate, lost repeatedly elsewhere: a 503-genome census of the IP₃ receptor family*, structured on the three results the project actually has — the family is ancestrally eukaryotic and lost repeatedly outside the animals (35 controlled clade absences); no vertebrate paralog is lost anywhere in 309 genomes (0/927 cells); and 76.3 % of the demonstrated genes are unreachable from any protein database. **Four guards, each tested by breaking it on purpose**: a missing figure, a missing section, a cited key with no reference row and a failed claim all set a non-zero exit. **The claims ledger paid on its first run**: 5 of 175 rows failed, every one because the claim addressed the wrong row rather than because a number was wrong (a class named `Cyclostomata` where the ledger records `Hyperoartia`/`Myxini`; a pair class quoted without its `cross_` prefix; two AlphaFold rows needing the `ALL` group; one report phrase quoted loosely). **Taking numbers from the tables rather than from this roadmap also caught two stale ledger entries** — the alignment is 11,777 columns trimmed to **1,797**, not 11,796 → 1,790. **D11 was done, not asserted: all 56 panels were opened and read against their legends**, and two legends were wrong before that — *Nibea albiflora* has 55 spliceable introns of which one is a minor site, not 55 GT-AG; and the non-vertebrate copy-number figure is drawn over the 193 *controlled* genomes, not all 194. **Two new build guarantees (D61, D62)**: citations are stable `[R22]` keys resolved against `references.tsv` at build time, so no section file carries a citation number and the bibliography is rendered rather than typed; and the PDF's font has no subscript glyphs at all, so `IP₃` reached the first build as `IP` with only a warning — the converter now handles sub/superscript runs unconditionally and the build log is read for `Missing character` (now zero). **S16's correction is applied**: the manuscript says *one* dated 2R ohnolog family, not two, and states the `BHLHE` link's *Opisthokonta* date. **Supplementary figures are deliberately absent**, not missing — `SUPPLEMENTARY_FIGURES` is empty until S24 draws them, because the build fails on a missing figure. 7 open items are listed for a human in `manuscript/reviewer_checklist.md`, affiliation and funding text among them. `s14_claims.py` was split three ways to stay inside the 500-line budget. → `manuscript/` |
 | S24 | Supplementary alignment + structure figures, and a figure-by-figure audit | S14a | completed 2026-09-08 | **Six supplementary figures, and 26 figure findings — 16 legends corrected, 10 figures redrawn.** The supplementary set is drawn only from committed files, and the two joins it exists to let a reader check are checked first as hard failures: the trimAl column map by an **exhaustive column walk** (all 1,797 trimmed columns x 134 sequences — S6 recovered the map with `-colnumbering`, S24 does not trust it, and an off-by-one would have no other symptom), and every clinically labelled residue against the residue its own paralogue's table holds there (1,780 variants, 2,699 aligned partners). **A structure may carry a human variant position only if every residue it shares with the human table carries the same amino acid** — human ITPR2 (9YKK) and ITPR3 (8TKG) pass 2,168/2,168 and 2,210/2,210; the ITPR1 cryo-EM reference is *rat* (736/2,300) and AlphaFold DB's human ITPR1 model is the 2,695-residue Q14643-4 isoform (479/2,695), so ITPR1's 55 pathogenic positions are **not** placed. 22 pathogenic positions sit in the ligand core or the pore module and **20 carry the same residue in all three paralogues**. The audit's own headline findings: Fig. 3's legend said four backbone `100/100` labels where the tree draws **five**; Fig. 2's legend mis-mapped the colour key (four blues, not two) and explained the missing `absent` colour by the wrong rule (the ledger *does* hold those four cyclostome cells as absent — they are not drawn because their classes have one genome each); ED Fig. 7c said 51–53 implied losses for a panel that plots up to **102**; ED Fig. 10a called a 30-bar panel the 29-structure panel. 17 negative controls, 5 mutation tests, all caught — two of them only after the test was rebuilt to stop passing vacuously. **`figstyle.save` now drops the PDF creation timestamp**, so a figure rebuilt from the same code on the same data is byte-identical (12/12 verified); before this no SHA-256 recorded against a figure pdf meant anything. -> `results/supplementary/report.md`, `figure_findings.tsv`; manuscript is 56 pages with 180/180 claims re-verified |
 | S14b | **Deposit + release** — Zenodo DOI, repo public (D2 flip), reference verification, preprint upload | S14a | pending | **Human-gated; cannot be completed autonomously.** |
+| S25 | **The thesis** — assemble the work as a thesis-length document: chapters not sections, the reasoning behind every instrument written out, and a bibliography audited on entry | S14c, S24 | pending | The manuscript is the **compressed** form of 109,243 words of committed task reports, 68 recorded decisions and a 137-reference review, and cites 29 references. Three things it had to leave out are each a chapter: why each instrument is built the way it is (the Decisions log has never been written as prose), what was measured and abandoned, and the ~300 constructed negative controls as a body of work rather than a Methods sentence. **The references are the load-bearing half**: S0's rule is unchanged, so every new reference is audited on entry and committed as a table, because a bibliography that grows without an audit launders assumptions into citations. Builds on `s14_lib` — the claims ledger extends to the thesis, since a longer document is a larger surface for drift and not a licence for less checking. Brief: `docs/session_briefs.md`. |
+| S26 | **The paper series** — regroup every result into individual papers, each with its own question, controls, scope and figures | S14c, S24 | pending | Several of the manuscript's sections are papers that currently get a few hundred words each. **The grouping is the deliverable and is derived rather than handed down**: six rules (one question; its own controls measured inside it; a scope declared not inherited; four to seven figures; no result primary in two papers; and *what does this claim if none of the others is ever published*) written before the assignment and committed with the rule that placed each results directory. The last rule is the one that decides whether this is a series or a slice. Generalises the S14 machinery from one package to N, with **one** claims ledger carrying a paper column so a number quoted in two papers cannot disagree between them. Brief: `docs/session_briefs.md`. |
 
 ### Analysis & synthesis block (S15–S22)
 

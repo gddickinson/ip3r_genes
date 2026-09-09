@@ -9,7 +9,7 @@
 |------|---------|
 | `run.py` | CLI/GUI entry — `python run.py [--email you@example.com] [--headless --preset ip3r]`. |
 | `PUBLICATION_ROADMAP.md` | **The multi-session publication plan**: session protocol, task ledger (S0–S24), emergent tasks, and the Decisions log — including the methodological rules inherited from the PIEZO project. Read at the start of every session. |
-| `docs/session_briefs.md` | Detailed per-task instructions for every ledger row: goal, steps, completion criteria, outputs. |
+| `docs/session_briefs.md` | Detailed per-task instructions for every ledger row: goal, steps, completion criteria, outputs. The last two rows (**S25** the thesis, **S26** the paper series) are about how the work is *reported* rather than what it measures, and each names what would make it a failure — a thesis that is the paper with padding, a series whose papers only make sense read together. |
 | `docs/ip3r_background.md` | **The biology baseline.** Every statement tagged `[db]` (verified against a live database, with the query), `[lit]` (literature, verified in S0) or `[open]` (a question this project answers). Includes the ITPR/RYR hazard and the database-scale snapshot. |
 | `docs/ip3r_review_2026.md` | **The literature review** — a 32-page, 137-reference, 12-figure review of the family (architecture, gating, regulation, cell physiology, paralogues, evolution, genetic models, disease, pharmacology, open questions), with §12 carrying the S0 claim audit and the figure provenance. **Generated — never hand-edit it**; edit `docs/review/*.md` and re-run `scripts/s0_review_build.py`. Cite its sources, never `ip3r_background.md`. |
 | `docs/ip3r_review_2026.pdf` | The typeset review (A4, pandoc + xelatex), built by `s0_review_build.py --pdf`. |

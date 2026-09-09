@@ -3567,3 +3567,35 @@ a general fault, not a fault in those three figures. And the new Results
 section asserts that the two families' exon structures have no common
 ancestry without saying how that came about, which is a parsimony job on the
 intron characters of the kind S15b already runs.
+
+**Two tasks added at the user's request (2026-09-09, after S14c closed).**
+The observation behind them is that the manuscript reads as a compressed
+thesis rather than as a single paper, which is true of the numbers: 17,807
+words and 29 references stand on 109,243 words of committed task reports, 68
+recorded decisions and a 137-reference review.
+
+**S25 — the thesis.** The long form. Its point is not length but the three
+things the paper had to drop: why each instrument is built the way it is (the
+Decisions log has never been written as prose), what was measured and
+abandoned, and the ~300 constructed negative controls as a body of work. The
+constraint that makes it a real task rather than a reformat is the
+bibliography: S0's audit rule applies unchanged, so every new reference is
+audited on entry and committed as a table. "Far more references" must not
+become "far more references nobody checked". The claims ledger extends to it,
+because a longer document is a larger surface for drift.
+
+**S26 — the paper series.** The grouping is the deliverable and is derived
+from six rules committed before the assignment, not handed down. Five of the
+rules are ordinary (one question, its own controls, a declared scope, four to
+seven figures, no result primary in two papers); the sixth is the one that
+matters — *what does this paper claim if none of the others is ever
+published?* — because it is the only honest test of a series against a slice.
+A starting proposal of five papers is in the brief, offered to be revised by
+the rules rather than instead of them. The S14 machinery generalises from one
+package to N, but the claims ledger stays single with a paper column, so a
+number quoted in two papers cannot disagree between them.
+
+The two must not contradict each other on how the results group. They are
+independent and either may run first; whichever does commits the assignment
+table, and the other adopts it or records why a chapter and a paper are not
+the same unit.
