@@ -548,6 +548,26 @@ One task per session. Full ledger with dependencies and results in
 
 Plain-language entries per task: [`FINDINGS.md`](FINDINGS.md). Headlines:
 
+**S25 — nine of 58 new citations were not the papers they claimed to be.**
+Writing the long form needed 58 references the paper did not: the tools,
+models and statistical procedures a document has to name when it explains
+*why* a threshold is the number it is. Nine of those identifiers, written from
+memory, resolved to entirely different papers — a citation for a
+gene-duplication inference algorithm returned a Bayesian phylogenetics
+program, one for a reconciliation method returned a paper on statistical
+challenges in real-time PCR, one for a reconstruction of the ancestral
+vertebrate genome returned a survey of structured RNAs. None would have looked
+wrong in a reference list: each has a plausible author, journal and year, and
+the only thing that would have caught it is somebody following the number.
+They were caught because the document does not let a reference be typed — each
+is declared by its identifier plus a phrase its title must carry, resolved
+against a live record, and the bibliographic line written from what comes
+back. This project has spent twenty-six sessions documenting the same failure
+mode in public sequence databases: a record that is perfectly formatted,
+entirely plausible, and about something else. A bibliography is built the same
+way and audited less.
+[`thesis/reference_audit.tsv`](thesis/reference_audit.tsv)
+
 **S22 — the part that binds the messenger is not the part evolution
 protects.** Comparing the IP₃-binding core against the pore module **inside
 the same protein and paired per orthologue** — one core number and one pore
