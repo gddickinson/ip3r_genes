@@ -62,8 +62,6 @@ whole triplets only.
 **{fig:supp_codon_alignment}.** The trimmed codon alignment behind every
 estimate in this chapter, plotted in codons, because an axis in nucleotides
 would make a three-fold difference look like a property of the data. The
-importance of plotting codons rather than nucleotides is that the second
-would make a three-fold difference look like a property of the data. The
 panel exists so a reader can see the size of what every rate in Chapter 10
 was estimated on, which is 2,459 codons of 3,253 after trimming, across 57
 tips whose coding sequences were each proved to encode the aligned protein.
@@ -114,14 +112,11 @@ One-ratio estimates [R145] give ITPR1 at 0.0238, ITPR2 at 0.0430 and ITPR3 at
 
 **{fig:omega_by_paralog}.** Per-paralogue rate with the curated-sequence
 sensitivity estimate beside it, and neutrality drawn rather than described.
-The axis is logarithmic, because at a rate of 0.03 a linear axis puts every
-bar on the floor and hides the one thing a reader wants, which is how far
-below one it sits. The importance of the logarithmic axis is that the result
-is how far below neutrality these rates sit, and on a linear axis every bar
-is on the floor. The highest of the three is 23-fold below neutrality, which
-is a channel accumulating one non-synonymous change per 23 synonymous ones,
-and the curated-sequence estimate drawn beside each bar shows the numbers
-are not an artefact of the reconstructed gene models.
+The axis is logarithmic because the result is how far below neutrality these
+rates sit, and on a linear axis every bar is on the floor. The sensitivity
+estimate beside each bar is what shows the rates are not an artefact of the
+reconstructed gene models, since it is computed with every one of them
+removed.
 
 The identity Chapter 6 measured says the same thing far less sharply. This is
 a 2,700-residue channel accumulating one non-synonymous change per 23
@@ -145,12 +140,9 @@ log-log with the neutral diagonal and the saturation bar. On a
 logarithmic-x, linear-y plot the neutral diagonal is not a line at all: the
 first draft's neutrality ran off the panel within the first pixel and left
 the saturation bar as the only line on the figure, which reads as
-neutrality. This figure qualifies every other number in its chapter, and the
-axes are part of the argument. Synonymous sites are saturated within a
-single paralogue and not merely between the three, because one paralogue set
-spans shark to teleost to mammal. That is why every rate quoted comes from a
-tree-based model rather than from the pairwise matrix, and why each should
-be read as a lower bound on precision.
+neutrality. What the panel shows is that saturation is reached inside a
+single paralogue and not only between the three, which is the reason no rate
+in this chapter is taken from a pairwise matrix.
 
 The expectation going in was saturation between the paralogues, which are
 older than 500 million years. It is already reached within them, because a
@@ -217,13 +209,11 @@ choosing a better one.
 ![](figures/bs_restarts.png)
 
 **{fig:bs_restarts}.** Every restart against its own null. A point below the
-line is a local optimum rather than a result. This figure records an
-optimiser failing in a way a single run would have hidden. A nested
-alternative cannot have a lower optimum than its own null, and three of
-twelve restarts converged below theirs, one on every stem, with a different
-starting value failing each time. The importance is general rather than
-local: a branch-site result from a single-start run is a result whose
-optimiser has not been checked.
+line is a local optimum rather than a result, and three of twelve sit there,
+one on every stem, with a different starting value failing each time. The
+importance is general rather than local: a branch-site result from a
+single-start run is a result whose optimiser has not been checked, and
+nothing in its output says so.
 
 **All three stems are significant after correction, and one of the three
 carries a rate the data actually determine.** That distinction is the

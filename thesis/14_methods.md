@@ -6,8 +6,8 @@ A paper's methods section says what was done. It has to, because a reader
 needs to reproduce it. It cannot say why each threshold is the number it is,
 and for this project that is where most of the work went.
 
-Seventy-five methodological decisions were recorded across twenty-six working
-sessions, numbered as they were made. Several of them changed an answer.
+87 methodological decisions were recorded across 35 working sessions,
+numbered as they were made. Several of them changed an answer.
 Several were made, tested and overturned. None of them has ever been written
 out as prose, and this chapter is that: not a list, but the arguments in the
 order they matter, with the incident that produced each one.
@@ -15,6 +15,32 @@ order they matter, with the incident that produced each one.
 The chapter is organised by what a decision is about, covering thresholds,
 controls, refusals, reproducibility, and the rules that keep a document from
 drifting away from its data.
+
+**Where the procedures themselves are.** Because each instrument is built in
+the chapter that first depends on it, a reader looking for a procedure rather
+than for an argument needs a map, and this is it.
+
+| Instrument | Built in |
+|---|---|
+| Control benchmark, domain-architecture call, profile models | §3.2 to §3.5 |
+| Bait panel, spliced-alignment sweep, rescue attribution | §4.3 to §4.6 |
+| Contiguity bar | §4.7 |
+| False-negative rate, panel ablation, channel contribution | §4.11 to §4.13 |
+| Proteome sweep, per-clade positive control, identity floor | §5.2, §5.7, §5.9 |
+| Representative selection, alignment, model choice, tree search | §6.2 to §6.6 |
+| Neighbourhood windows, matched control, paralogue caller | §7.2, §7.5 |
+| Species tree and reconciliation, dated paralogy | §7.7, §7.10 |
+| Exon and intron reading, coordinate frame, shared-intron null | §8.2 to §8.7 |
+| State vocabulary, reassembly bar, Dollo count, sensitivity grid | §9.2, §9.3, §9.8, §9.9 |
+| Coding-sequence validation, codon alignment, selection models | §10.2, §10.3, §10.7 |
+| Structural panel, fold calibration, constraint layers | §11.3, §11.4, §11.8 |
+| Module definitions, ligand shells, paired test | §12.2 to §12.4 |
+| Locus states, name verdicts, read evidence | §13.2, §13.10 |
+
+Every one of those sections names the committed table its output lives in, and
+the analysis code is one file per task under `scripts/`, mapped in the
+repository's `INTERFACE.md`. The exact version of every external program the
+project shelled out to is recorded in `results/toolchain_manifest.txt`.
 
 ## 14.2 Thresholds are measured rather than chosen, and never ported
 
@@ -240,16 +266,11 @@ them.
 what evidence each addition rests. It is in the methods chapter rather than
 in a results chapter because it is a statement about the search rather than
 about the family: each edition is a channel, and the figure is the shape of
-what each channel was worth. The targeted database search that started the
-project returned about a tenth of what the exhaustive enumeration did, and
-the two genome sweeps together added the records no protein database holds
-at all. The importance of this figure to a reader planning similar work is
-that it prices four search strategies against each other on one family. A
-targeted search of the obvious databases, which is where most projects stop,
-recovers a small fraction of what exists; exhaustive enumeration by domain
-signature recovers most of what protein databases hold; and only searching
-genomes directly recovers the genes no protein database holds. The shape of
-the curve is the argument for the last of those being worth its cost.
+what each channel was worth. For a reader planning similar work it prices
+four search strategies against each other on one family. A targeted search
+of the obvious databases, which is where most projects stop, returned about
+a tenth of what exhaustive enumeration by domain signature did, and only the
+two genome sweeps recovered the genes no protein database holds at all.
 
 **Citations are keys resolved at build time and the bibliography is rendered
 rather than typed.** No author, title, year or journal is written into a
@@ -265,7 +286,7 @@ the build said so.
 
 ## 14.7 Four rules are specific to this family
 
-Four of the seventy-five decisions are about this family and could not have
+Four of the 87 recorded decisions are about this family and could not have
 been ported from anywhere.
 
 **Separating IP₃ from ryanodine receptors is a positive test at every stage.**

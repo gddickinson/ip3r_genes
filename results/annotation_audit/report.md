@@ -218,7 +218,7 @@ A PF08709 query reaches 95.6 % of the records both instruments agree on, and 81.
 
 ## 9. The proteomes that returned nothing
 
-S3 swept 764 vertebrate reference proteomes with both profiles and 15 came back with no family hit at all. On its own that is uninterpretable — an ITPR-shaped hole in a proteome is either a gene the species lacks or a gene its gene caller did not find — so each was resolved against an assembly of its own species, which the S5 sweep searched with an instrument that owes the gene caller nothing.
+S3 swept 763 vertebrate reference proteomes with both profiles and 15 came back with no family hit at all. On its own that is uninterpretable — an ITPR-shaped hole in a proteome is either a gene the species lacks or a gene its gene caller did not find — so each was resolved against an assembly of its own species, which the S5 sweep searched with an instrument that owes the gene caller nothing.
 
 **All 15 are gene-caller failures.** Every one of the 15 species has a genome in the S4 scope, and in every one the genomic sweep recovers at least one ITPR cell at over half the bait's length while the proteome holds none. Not one is `genome_also_empty`, and not one is `undecidable_no_genome` — the verdict that exists so a species with no assembly in scope could not be reported as an absence.
 
@@ -292,7 +292,7 @@ Each is stated with where the earlier task said it, computed on S18's own tables
   S5b measured naming against its own `annot_paralog_matches`, which requires a model covering half the locus; S18 reads the name off whichever model the annotation places there, coding or not. On that reading the paralogs are named equally well and S5b's 23-point gap does not survive — what differs between the paralogs is whether a *coding* model exists, not whether the gene is named.
 - **confirmed.** S5b — 3 loci are claimed by a cell other than the one their annotation names (1 with a coherent sibling locus), **supplied to S18, not adjudicated**. S18 measures **3 loci whose covering model names a different paralog, of which 1 clears the recovery bar a correction needs**.
   The other 2 are recovered at under 0.11 of the bait, where an alignment covering a tenth of the gene is not evidence for renaming the model that covers the rest.
-- **confirmed.** S3 — 15 of 764 vertebrate reference proteomes returned no family hit from either profile. S3 could not say whether that was a gene or a gene caller. S18 measures **15 of 15 resolved as gene-caller failures, 0 as absences**.
+- **confirmed.** S3 — 15 of 763 vertebrate reference proteomes returned no family hit from either profile. S3 could not say whether that was a gene or a gene caller. S18 measures **15 of 15 resolved as gene-caller failures, 0 as absences**.
 - **confirmed.** S2 — 2,911 of 15,417 seeded-space proteins do not carry PF08709, the signature that names the family, so a PF08709 query recovers 81.1 % of the space its own sister signatures enumerate. S18 measures **95.6 % of the records both instruments call family carry PF08709**.
 - **orthogonal.** S0 — 49 % (53/109) of zebrafish PF08709 records are ryanodine receptors. D14's hazard, measured at the signature level, is what makes wrong-family naming the audit's sharpest question. S18 measures **5 wrong-family names in 11,402 full-length records, and 0 at any of the 2,144 genomic loci**.
   S0 measured what a *signature* returns; S18 measures what a *name* claims. A Pfam shared by both families says nothing about whether either is named correctly, and on this evidence both are.

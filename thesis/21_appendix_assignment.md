@@ -80,7 +80,7 @@ recorded rather than smoothed over.
 
 Every guard in the build is broken on purpose on **every** build, by
 `scripts/s25_test_guards.py`, which runs as the first stage and writes
-`thesis/guard_check.tsv`. **All 15 fire with the message they are supposed
+`thesis/guard_check.tsv`. **All 18 fire with the message they are supposed
 to**, and the suite verifies that it altered no committed file while doing it,
 because a self-test that damages what it tests is a failure mode this project
 has already had once.
@@ -105,8 +105,15 @@ that starts failing for a different reason is a failure rather than a pass.
 | a failed claim | a claim's expected value altered | `[FAIL] <id> <claim>: expected X, found Y` |
 | a padded claim | a claim declared for a chapter whose text does not state its value | `chapter N does not state 'X', so either the number is missing from the text or the claim is padding` |
 | a dropped glyph | a character the document font cannot set | `N distinct missing characters, so the document font lacks a glyph the text uses` |
+| an em-dash | an em-dash reintroduced into a chapter source | `N em-dash(es) in a chapter source` |
+| a legend repeating itself | a sentence duplicated inside one figure legend | `legend <slug> says the same thing twice` |
+| a legend repeating its neighbour | a legend given the text of the paragraph beside it | `legend <slug> restates the paragraph after it` |
 
-The last two are the ones this thesis added over the manuscript's build. The
+Four of these are the ones this thesis added over the manuscript's build: the
+padded-claim guard and the three prose guards at the foot of the table. The
 padded-claim guard closes the ledger in the direction the manuscript's cannot,
 because it fails not only when the document states a number no table produces,
-but when the ledger declares a check the document never makes.
+but when the ledger declares a check the document never makes. The three prose
+guards exist because the two editorial passes on this document each introduced
+a defect that every other guard passed over: an em-dash carrying a clause a
+reader needed, and a figure legend saying the same thing twice.

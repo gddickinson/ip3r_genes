@@ -312,6 +312,23 @@ def _s8_protein(load, num, pct, share, table, MISSING, H) -> list[str]:
     return L
 
 
+def _n_vertebrate_proteomes() -> str:
+    """S3's swept proteome count, read back rather than typed (D13).
+
+    It was typed here as 764 for four editions, which is the line count of
+    `proteome_manifest.tsv` including its header. The sweep's own stats file
+    records 763, which is what S3's and S22's reports say, so the audit was
+    the one document in the package disagreeing with the rest by one.
+    """
+    import json
+    f = Path(__file__).resolve().parents[1] / "results" / "hmm_sweep" / \
+        "proteome_db_stats.json"
+    try:
+        return f"{json.loads(f.read_text())['n_proteomes']:,}"
+    except Exception:                                 # noqa: BLE001
+        return "?"
+
+
 def _s9_zero(load, num, table, MISSING, H) -> list[str]:
     z = load("zero_hit_proteomes.tsv")
     if not z:
@@ -319,7 +336,8 @@ def _s9_zero(load, num, table, MISSING, H) -> list[str]:
     L = [
         "## 9. The proteomes that returned nothing",
         "",
-        f"S3 swept 764 vertebrate reference proteomes with both profiles and "
+        f"S3 swept {_n_vertebrate_proteomes()} vertebrate reference proteomes "
+        f"with both profiles and "
         f"{num(H.get('n_zero_hit_proteomes'))} came back with no family hit "
         f"at all. On its own that is uninterpretable — an ITPR-shaped hole in "
         f"a proteome is either a gene the species lacks or a gene its gene "

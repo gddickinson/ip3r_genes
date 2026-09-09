@@ -1,6 +1,6 @@
 """S18 — the S3 proteomes that returned nothing, resolved against their genomes.
 
-S3 swept 764 vertebrate reference proteomes with both profiles and 15 came back
+S3 swept 763 vertebrate reference proteomes with both profiles and 15 came back
 with no family hit at all. On its own that is uninterpretable: an ITPR-shaped
 hole in a proteome is either a gene the species does not have, or a gene its
 *gene caller* did not find. The two are told apart by asking the genome, and

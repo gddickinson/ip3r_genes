@@ -14,3 +14,6 @@ refs: a reference audited and never cited	never cited	1	1	fired	[FAIL] citations
 claims: a number the table does not produce	expected '999999'	1	1	fired	[FAIL] T01 19 atomic literature claims were audited: expected '999999', found '19'
 claims: a claim its chapter does not state	does not state	1	1	fired	[FAIL] TX a number chapter 1 does not state: expected '15421', found '15421' (chapter 1 does not state '15421' — either the number is missing from the text or the claim is padding)
 pdf: a glyph the document font lacks	missing characters	1	1	fired	[s25 pdf] 1 distinct missing characters — the document font lacks a glyph the text uses
+prose: an em-dash in a chapter source	em-dash	1	1	fired	[FAIL] 01_introduction.md: 1 em-dash(es) in a chapter source
+prose: a legend that says the same thing twice	says the same thing twice	1	1	fired	[FAIL] 01_introduction.md: legend gating_logic says the same thing twice (5 shared words, 6 shared runs)
+prose: a legend that restates the paragraph beside it	restates the paragraph	1	1	fired	[FAIL] 01_introduction.md: legend domain_architecture restates the paragraph after it (8 shared runs)

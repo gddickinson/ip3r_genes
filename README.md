@@ -47,8 +47,8 @@ evolution) missing from it entirely and integrating them changed the Results
 structure.
 
 **The paper is not the whole of the work, and the long form is now written.**
-[`thesis/`](thesis/README.md) is **74,184 words across 16 chapters and 5
-appendices, 103 figures, 111 references, 194 typeset pages**, built by `python
+[`thesis/`](thesis/README.md) is **73,083 words across 16 chapters and 5
+appendices, 103 figures, 116 references, 194 typeset pages**, built by `python
 scripts/s25_assemble.py` in nine stages. It carries what the paper had to
 drop: why each instrument is built the way it is, what was measured and
 abandoned, and the **437 constructed negative controls** as a body of work
@@ -547,6 +547,7 @@ One task per session. Full ledger with dependencies and results in
 | S14c | Manuscript rewrite pass | ✅ completed 2026-09-09 |
 | S25 | The thesis — the long form, with an audited bibliography | ✅ completed 2026-09-09 |
 | S26 | The paper series — the results regrouped as individual papers | ⏳ pending |
+| S27 | Editorial pass — every sentence read in context, structure checked | ✅ completed 2026-09-09 |
 | S14b | Deposit + release (Zenodo, public repo, preprint) | ⏳ pending — human-gated |
 
 ---

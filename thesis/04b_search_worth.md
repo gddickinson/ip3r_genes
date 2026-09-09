@@ -45,13 +45,11 @@ the IP₃ series misses 3 of 512 cells and the ryanodine series misses none of
 ![](figures/s19_contiguity.png)
 
 **{fig:s19_contiguity}.** The measured false-negative rate against assembly
-contiguity, with the bar drawn. The two series are independent, because the
-ryanodine sister cell uses none of the state rules that define the other
-one, and the two agree. This is the figure that licenses the retention
-result. A survey reporting zero losses is worth nothing unless somebody has
-measured how often the same search fails to find a gene that is demonstrably
-present, and that is what is plotted here. The two series are independent,
-since the sister series uses none of the state rules the family series
+contiguity, with the bar drawn. This is the figure that licenses the
+retention result, because a survey reporting zero losses is worth nothing
+unless somebody has measured how often the same search fails to find a gene
+that is demonstrably present. The two series are independent, since the
+ryanodine sister series uses none of the state rules the family series
 depends on, and they agree, which is what stops the number being read as the
 search agreeing with itself.
 
@@ -202,14 +200,13 @@ so the labels are not a judgement call.
 ![](figures/s19_drift.png)
 
 **{fig:s19_drift}.** Each kill rule scored as a classifier of a drift
-outcome measured on the finished model. The rule written for this family's
-specific hazard has a sensitivity of zero. This figure records an instrument
-failing at the one job it was built for. The rule written to catch
-sister-family drift in an iterative search has a sensitivity of zero across
-seven runs including all three that drifted, because the drift dilutes the
-very quantity the rule measures. The correction is a one-line change to a
-different axis, and it is reported rather than applied, because it was
-validated after the fact on the runs it would reclassify.
+outcome measured on the finished model. The figure records an instrument
+failing at the one job it was built for: the rule written to catch
+sister-family drift has a sensitivity of zero across seven runs, including
+all three that drifted, because the drift dilutes the very quantity the rule
+measures. The correction is a one-line change to a different axis, and it is
+reported rather than applied, because it was validated after the fact on the
+runs it would reclassify.
 
 **The sister-family rule fires on none of the seven runs, including all three
 that drifted.** The reason is now measured rather than described: off-family
@@ -261,8 +258,10 @@ synonymous rate is unidentifiable at 671 of 7,368 sites, and 373 of 420
 pairwise comparisons are flagged saturated. Any per-site rate formed as a
 ratio of sums is dominated by sites whose denominator is not estimable.
 
-**A likelihood tree need not resolve the question asked of it.** Chapter 6
-returns to this.
+**A likelihood tree need not resolve the question asked of it.** The test
+that compares the three sister arrangements leaves two topologies inside its
+95 % confidence set, so the sister question is answered by what the data
+excludes rather than by reading the best tree. Chapter 6 reports both.
 
 ## 4.16 Five results here apply to anyone doing the same thing
 
@@ -280,6 +279,7 @@ returns to this.
    whole genes.** At gene scale it returns what domain annotation already
    returns, its gain is fragments, and it adds gene-scale records only where
    the annotation is worst.
-5. **The rule everyone writes to catch iterative-search drift measures the
-   wrong thing.** Sister-family contamination is diluted by the drift it is
-   meant to detect.
+5. **The obvious rule for catching iterative-search drift measures the wrong
+   thing.** Sister-family contamination is the quantity this project and its
+   predecessor both chose to monitor, and it is diluted by the very drift it
+   is meant to detect.

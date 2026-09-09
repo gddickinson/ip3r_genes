@@ -22,7 +22,9 @@ The scope is 309 assemblies, and it is the union of two rules.
 
 The first rule is taxonomic. It takes one best assembly per vertebrate order
 [R159], 161 of them, ranked by a stated function that prefers annotated over
-unannotated, RefSeq over GenBank, then assembly level, then scaffold N50.
+unannotated, RefSeq over GenBank, then assembly level, then scaffold N50,
+which is the length such that half the assembly sits in pieces at least that
+long and is the standard summary of how contiguous an assembly is.
 
 The second rule is a margin rule, and it is computed from the census rather
 than hand-listed. Four positive tests put a species in scope: its reference
@@ -126,24 +128,20 @@ so no result below is excluded on control grounds.
 ![](figures/ledger_by_class.png)
 
 **{fig:ledger_by_class}.** The three-paralogue ledger across 309 vertebrate
-genomes, by class. What the figure shows is what the rest of this thesis has
-to explain: the family is found nearly everywhere it is looked for, and the
-red is concentrated in classes rather than scattered. The importance of this
-figure is that it is the raw ledger before any of Chapter 9's restatement,
-so it shows the problem that chapter had to solve. The red is concentrated
-in particular vertebrate classes rather than scattered, and those classes
-turn out to be the ones whose assemblies are worst, not the ones whose
-biology is different. Reading this figure directly as a map of gene loss is
-the mistake the rest of the thesis is built to avoid.
+genomes, by class. This is the raw ledger before any of Chapter 9's
+restatement, so it shows the problem that chapter had to solve. The family
+is found nearly everywhere it is looked for, and what red there is falls in
+particular vertebrate classes rather than scattered across them. Those
+classes turn out to be the ones whose assemblies are worst rather than the
+ones whose biology is different, so reading this figure directly as a map of
+gene loss is the mistake the rest of the thesis is built to avoid.
 
 ![](figures/ledger_status.png)
 
 **{fig:ledger_status}.** Cell status across the sweep, by paralogue. Four
 cells of 927 are called absent, meaning no spliced-alignment locus and no
-remnant from the rescue search. That is the strongest negative this task
-produces and it is not yet a loss claim, for the reason §4.7 gives. The four
-absent cells matter because they are the strongest negative the search
-itself can produce, and because they are still not a loss claim. Chapter 9
+remnant from the rescue search. Those four are the strongest negative the
+search itself can produce, and they are still not a loss claim: Chapter 9
 shows that every one sits in an assembly that could not hold the gene or in
 a genome whose paralogue labels the bait panel cannot resolve. The distance
 between this figure and that conclusion is the distance between a search
@@ -206,7 +204,10 @@ assembly.
 The bar this project uses is the median measured IP₃ receptor genomic span,
 142,212 bp of contig N50, taken from gene geometry with no error rate in its
 derivation. **120 of 309 genomes fall below it, which is 39 %, and they are
-not a random 39 %** [R195]. Two thirds of birds fail it against 11 % of
+not a random 39 %.** Assembly quality across the vertebrates is uneven by
+clade and by sequencing era, which is the problem the reference genome
+consortia were set up to address [R195], and this family's genes are long
+enough to feel it. Two thirds of birds fail it against 11 % of
 ray-finned fish, and 68 % of margin species against 12 % of order
 representatives.
 
@@ -214,15 +215,11 @@ representatives.
 
 **{fig:contiguity_confound}.** Recovery against assembly contiguity, binned
 on the bar rather than across it. A sliding window straddling the threshold
-would report a recovery rate that no genome in the window has, and would
-draw the curve straight through the very line the panel exists to show. The
-importance of binning on the bar rather than across it is that a sliding
-window straddling a threshold reports a recovery rate that no genome in the
-window actually has, which would smooth away the very discontinuity the
-panel exists to show. The relationship drawn here is the confounder that
-every absence claim in this thesis has to survive, and it is why the
-contiguity floor is applied before any cell is read as evidence about
-biology.
+would report a recovery rate that no genome in the window has, smoothing
+away the very discontinuity the panel exists to show. The relationship drawn
+here is the confounder every absence claim in this thesis has to survive,
+and it is why the contiguity floor is applied before any cell is read as
+evidence about biology.
 
 The pilot had predicted, from six genomes, that a fragmented assembly loses
 the long paralogues first, because a 231 kb ITPR2 needs a contig that an 82 kb
@@ -238,12 +235,11 @@ structural rather than incidental.
 ![](figures/ledger_copy_number.png)
 
 **{fig:ledger_copy_number}.** Copy number per genome across the sweep. The
-excess above three is almost entirely teleost, which Chapter 7 takes up. The
-figure matters because the excess above three copies is not distributed
-across the vertebrates. It is almost entirely in the ray-finned fish, which
-is what a whole-genome duplication confined to one lineage looks like from a
-copy count, and it is the observation Chapter 7 turns into a tested claim
-about which paralogue was doubled and retained.
+excess above three copies is not spread across the vertebrates but sits
+almost entirely in the ray-finned fish, which is what a whole-genome
+duplication confined to one lineage looks like from a copy count. Chapter 7
+turns that observation into a tested claim about which paralogue was doubled
+and retained.
 
 ## 4.8 The three paralogues are not annotated equally well
 

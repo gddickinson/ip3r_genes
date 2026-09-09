@@ -3883,3 +3883,65 @@ because the build refused the document.
 
 Recorded as **D80**. 74,184 words, 194 pages, 232 claims, 15/15 guards, build
 exit 0.
+
+## S27 — the editorial pass: every sentence read in context
+
+The user asked for the thesis to be read sentence by sentence, in context, and
+held to four standards: factually correct, grammatical, meaningful, and useful
+to the reader. They also asked whether it meets the demands of clear
+structure, an evidence-based approach and precise communication, checked
+against IMRAD.
+
+Every build guard passed before this pass began and passed unchanged after it.
+The pass still found five classes of defect, none of them reachable by a
+checker, because each is a statement that is well formed, internally
+consistent, and wrong or useless in context.
+
+**Repetition, 50 legends of 103.** D80 asked every figure legend to explain
+why its figure matters. That was satisfied by appending a sentence to each
+legend rather than merging one in, so half of them now stated one point twice,
+either inside the legend or against the paragraph beside it. Each half read
+well alone, which is why it was invisible while writing. All 50 were rewritten
+as single paragraphs.
+
+**One number wrong at source.** `s18_report_results.py` had 764 vertebrate
+reference proteomes typed into it, which is the line count of the sweep's
+manifest including its header. The sweep's own statistics file says 763, and
+so do three other chapters, so the package had disagreed with itself by one
+for four editions. The generator now reads the number, and the audit report
+was re-rendered.
+
+**Four stale counts.** 75 decisions against 84, 26 sessions against 35, 58
+added references against 76, and a chapter-16 anecdote about a correction that
+has since happened twice. Two new claims, T83 and T84, now pin Chapter 14's
+figures to `production_stats.tsv`.
+
+**Two wrong cross-references** in Chapter 6, both pointing a reader at the
+section before the one that answers the question.
+
+**Six results chapters had no citations at all**: 5, 7, 8, 12, 13 and the
+search-worth half of 4. Chapter 5 reports the range result, which bears
+directly on a plant-literature question two decades old, and cited nothing.
+Each now carries the literature its claims bear on, taking cited references
+from 111 to 116.
+
+### What was added rather than fixed
+
+The central research questions are now stated explicitly in §1.4 rather than
+left implicit in four gap statements. §14.1 carries a **methods-location map**,
+because methods distributed by design still have to be findable, and a reader
+wanting a procedure rather than an argument had no way in. The front matter
+carries a **data and code availability** section and a practical-implications
+paragraph closing the abstract. N50 and the Bayesian information criterion are
+defined at first use, which were the only two unexplained abbreviations left.
+
+### Three of the five classes are now checks
+
+`scripts/s25_prose.py` is a new build stage: no em-dash in a chapter source,
+no legend that says the same thing twice, no legend that restates the
+paragraph beside it. Three guard cases were added to break each on purpose, so
+the suite is 18 rather than 15. The other two classes, wrong cross-references
+and missing citations, remain a reading problem and are recorded as such.
+
+Recorded as **D81**, **D82** and **D83**. 73,083 words, 194 pages, 234 claims,
+18/18 guards, 0 prose failures, build exit 0.

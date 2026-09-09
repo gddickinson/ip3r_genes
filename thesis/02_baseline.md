@@ -59,18 +59,14 @@ two.
 **{fig:review_disease}.** The curated disease-variant map, with each variant
 recorded as `point`, `domain` or `gene` according to how far its cited
 source actually localises it. That third column is the honesty of the
-figure. A source that reports a deletion of the gene cannot be drawn as a
-residue, and a map that drew it as one would create the impression of a
-resolution the literature does not have. Chapter 11 returns to these
-positions with a harvested variant set of its own and asks whether they sit
-where the conservation says they should. The distinction this figure draws
-is what makes Chapter 11's variant analysis possible at all. A constraint
-map is scored against positions, and a literature that localises most of its
-variants to a domain or to a whole gene cannot supply them. Recording how
-far each source actually localises its variant is what showed that only two
-residue-level positions were available from the literature, which is why the
-variant analysis had to harvest a clinical database instead and use those
-two as its positive control.
+figure: a source reporting a deletion of the whole gene cannot be drawn as a
+residue, and a map that drew it as one would assert a resolution the
+literature does not have. The distinction is what makes Chapter 11's variant
+analysis possible at all. A constraint map is scored against positions, and
+recording how far each source localises its variant is what showed that only
+two residue-level positions were available from the literature, which is why
+that chapter harvests a clinical database instead and uses those two as its
+positive control.
 
 ## 2.3 The background claim about gene size was false, and it became a measurement
 
@@ -89,15 +85,13 @@ three paralogues while the protein length varies by about 3 %.
 **{fig:review_gene_architecture}.** The three human genes drawn to one scale
 from Ensembl coordinates. Exon count is nearly identical across the three
 and genomic span is not, and the difference between them is almost entirely
-intron length. The claim that failed the audit is the one this figure makes
-visible: a family whose protein length varies by 3 % and whose gene length
-varies by a factor of six and a half. The importance of this figure is that
-it turned a corrected sentence into a measurement. Three paralogues encoding
-proteins of the same length occupy genomic spans differing six and a half
-fold, which must mean that either their exon structure or their intron
-content differs, and only the first would be a statement about how the
-coding sequence has evolved. Chapter 8 resolves it in favour of the second,
-and that chapter exists because of this figure.
+intron length. The figure is where a corrected sentence became a
+measurement. Three paralogues encoding proteins whose lengths differ by 3 %
+occupy genomic spans differing by a factor of six and a half, which must
+mean that either their exon structure or their intron content differs, and
+only the first would be a statement about how the coding sequence has
+evolved. Chapter 8 resolves it in favour of the second, and that chapter
+exists because of this figure.
 
 A failed background claim is normally just a correction. This one became a
 measurement. If three paralogues of one gene, encoding proteins of the same
@@ -139,18 +133,15 @@ real distribution or an artefact, and no amount of reading resolves which
 
 **{fig:review_taxonomic_range}.** What the databases said the family's range
 was at the start of this project, shown as signature counts by taxon from a
-live InterPro query. The plant and fungal columns are the anomaly. They are
-also a good illustration of why a count of records is a weak instrument for
-a range question: a record enters this figure by carrying a domain
-annotation, and nothing in the count says whether the protein is real,
-whether it is in that organism's genome, or whether it is an IP₃ receptor at
-all. The figure is important as a statement of what was not known. Every
-column here is a count of database records, and the two anomalous ones are
-81 proteins in kingdoms whose model organisms have none. Nothing in a record
-count can say whether those proteins are real, whether they are in their
-organisms' genomes, or whether they are IP₃ receptors, and turning this
-figure into a biological range claim took the two chapters and 194 genome
-searches that Chapter 5 reports.
+live InterPro query. The plant and fungal columns are the anomaly: 81
+proteins in kingdoms whose model organisms have none. The figure is
+important as a statement of what was not known, and as an illustration of
+why a count of records is a weak instrument for a range question. A record
+enters here by carrying a domain annotation, and nothing in the count says
+whether the protein is real, whether it is in that organism's genome, or
+whether it is an IP₃ receptor at all. Turning this figure into a biological
+range claim took the two chapters and 194 genome searches that Chapter 5
+reports.
 
 ## 2.5 The sister-family hazard was measured in the query that was supposed to be clean
 
@@ -212,14 +203,11 @@ family alignment, mapped onto human ITPR1 numbering, with the domain
 architecture beneath it. Chapter 11 rebuilds this at a very different depth,
 using 249 to 265 orthologues of each individual paralogue rather than 25
 sequences of the whole family, and the two agree about where the peaks are.
-That agreement is the useful thing to know about a profile computed from 25
-sequences. The agreement between this 25-sequence profile and Chapter 11's
-260-sequence one matters for a practical reason. If a shallow family
-alignment and a deep within-paralogue alignment disagreed about where the
-receptor is conserved, neither could be used to interpret a clinical
-variant. That they agree about the peaks is what licenses Chapter 11 to
-compare four conservation layers as classifiers rather than to pick one on
-faith.
+That agreement matters for a practical reason: if a shallow family alignment
+and a deep within-paralogue alignment disagreed about where the receptor is
+conserved, neither could be used to interpret a clinical variant. It is what
+licenses Chapter 11 to compare four conservation layers as classifiers
+rather than to pick one on faith.
 
 ![](figures/review_alignment_windows.png)
 
@@ -228,14 +216,12 @@ they stop agreeing. At the pore they are interchangeable, showing GGGVGD
 against GGGIGD in the filter and a gate that differs by conservative
 substitution. At the ligand site they are not: the arginines and lysines
 that grip the trisphosphate are absent from all three ryanodine receptors,
-and one window carries a three-residue deletion. The two families share a
-superfamily and a binding site that only one of them uses. Chapter 12 turns
-that observation into a measurement. This figure is the biological reason
-Chapter 12 exists. The two families are interchangeable at the pore and are
-not at the ligand site, which identifies the one place in the protein where
-a functional difference between them is visible in sequence. Everything
-Chapter 12 measures follows from that asymmetry, including the result that
-the module named after the ligand is the less constrained of the two.
+and one window carries a three-residue deletion. This asymmetry is the
+biological reason Chapter 12 exists, because it identifies the one place in
+the protein where a functional difference between the two families is
+visible in sequence. Everything that chapter measures follows from it,
+including the result that the module named after the ligand is the less
+constrained of the two.
 
 Measuring the structure for these figures produced three things the text did
 not have. The channel's two constrictions were recovered blind from the
@@ -251,15 +237,12 @@ deliberately.
 ![](figures/review_regulation.png)
 
 **{fig:review_regulation}.** The curated regulator map, showing what binds
-the receptor, where, and with what effect. It is included here because it is
-the part of the biology this thesis does not measure. Nothing in a
-genome-scale census can say whether a protein interaction is conserved, and
-a reader should be able to see the size of what is being left out. The
-figure is included as a statement of scope rather than as a result. Nothing
-in a genome-scale census can say whether a protein interaction is conserved,
-so the regulatory layer shown here is untouched by every measurement in this
-thesis. A reader deciding what the census does and does not settle should be
-able to see the size of what is left out, and this is it.
+the receptor, where, and with what effect. It is here as a statement of
+scope rather than as a result, because it is the part of the biology this
+thesis does not measure. Nothing in a genome-scale census can say whether a
+protein interaction is conserved, so the regulatory layer drawn here is
+untouched by every measurement in this document, and a reader deciding what
+the census settles should be able to see the size of what is left out.
 
 ## 2.7 A fault in one public interface, and why it was worth diagnosing
 

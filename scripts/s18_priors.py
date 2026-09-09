@@ -57,7 +57,7 @@ PRIOR = {
     },
     "s3_zero_hit_proteomes": {
         "value": 15,
-        "where": "S3 — 15 of 764 vertebrate reference proteomes returned no "
+        "where": "S3 — 15 of 763 vertebrate reference proteomes returned no "
                  "family hit from either profile. S3 could not say whether "
                  "that was a gene or a gene caller",
     },

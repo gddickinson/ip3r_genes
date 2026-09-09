@@ -7,9 +7,9 @@ and 7,691 reference proteomes.*
 
 **Correspondence:** george.dickinson@gmail.com
 
-The analyses this document reports were carried out over twenty-six working
-sessions in the repository it is built from, and the document was written from
-their committed outputs. The correspondent above directed the project and is
+The analyses this document reports were carried out over 35 working sessions
+in the repository it is built from, and the document was written from their
+committed outputs. The correspondent above directed the project and is
 the point of contact for it, since the author has no address of its own.
 
 ---
@@ -61,6 +61,15 @@ cryo-EM channel identifies the gate and the selectivity filter as the least
 changeable elements, places the ten measured IP₃ contacts outside the Pfam
 domain named after the ligand, and finds the constrained unit at the ligand
 site to be a pocket rather than the contacts themselves.
+
+Three things here are usable rather than only informative. The archive audit
+produces a list of 297 coordinate-level corrections with the evidence a
+curator would need to act on each. The per-residue constraint map is scored as
+a variant classifier and identifies which of four conservation layers a
+clinical resource for this family should quote. And five of the results are
+about method rather than about receptors, including a measured false-negative
+rate for genome-scale orthologue sweeps and a measurement of what a protein
+bait panel's breadth is actually worth.
 
 ## How this document is organised, and why it is long
 
@@ -118,6 +127,23 @@ non-zero on a missing figure, a missing chapter, a cited key with no reference
 row, a reference added without an audit, a glyph the document font cannot set,
 or a failed claim. Every one of those guards is broken on purpose on every
 build to confirm that it fires. Chapter 14 explains how.
+
+## Where the data, the code and the outputs are
+
+Every number in this document is recovered from a committed table, and every
+one of those tables is in the repository this document is built from, under
+`results/`, one directory per analysis task. The analysis code is under
+`scripts/`, one file per task, and the search application it was built on is
+under `src/`. The exact version of every external program the project ran is
+recorded in `results/toolchain_manifest.txt`, and the versions of the public
+databases queried are recorded in each task's own statistics file.
+
+Bulk inputs are deliberately not in the repository, because 503 genome
+assemblies and 7,691 reference proteomes are not a reviewable artefact. What
+is committed instead is the manifest that declares exactly which ones were
+used, with the rule that admitted each, so the download is reproducible from a
+table rather than from a description. `manuscript/deposit_notes.md` lists each
+excluded bulk class together with the command that regenerates it.
 
 ## How this project was carried out
 

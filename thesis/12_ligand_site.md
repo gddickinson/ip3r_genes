@@ -4,7 +4,8 @@
 
 Every chapter so far has had to separate two families that share a fold, a
 pore, four domains and half their titles. There is one thing they do not
-share: the ryanodine receptors do not bind IP₃.
+share: the ryanodine receptors do not bind IP₃, and their gating is organised
+around a different set of ligands entirely [R37].
 
 That makes the ligand site the single place where a functional difference
 between the families is visible in sequence, and it makes three questions
@@ -31,8 +32,8 @@ So the **primary ligand core** is defined as the minimal contiguous span
 containing every measured IP₃ contact, and the **primary pore module** as the
 Pfam pore domain less the luminal loop. A sensitivity definition is committed
 beside each and every test is run under all four combinations, using the
-published binding core transferred through the same routine, and the pore
-domain as the database draws it.
+published binding core [R05] transferred through the same routine, and the
+pore domain as the database draws it.
 
 Every definition is checked against something it does not contain. The core
 must hold all ten contacts and no pore site, and the pore both filter residues
@@ -43,24 +44,21 @@ written.
 
 **{fig:supp_labelled_positions}.** The two modules at residue resolution
 across all three paralogues, with every pathogenic position's residue
-printed. A residue-level panel exists so that a reader can check the claim,
-and every letter in it has been through the join guard described in Chapter
-14: each variant's reference amino acid must be the residue its own
-paralogue's per-residue table holds there, and each aligned partner the
-residue the other paralogue's table holds. The importance of a residue-level
-panel is that it converts the chapter's module definitions from an assertion
-into something a reader can audit position by position. Both modules are
-defined here by measurement rather than taken from a domain database, so
-printing the residues is what lets somebody disagree with a boundary and see
-exactly which positions the disagreement would move.
+printed. Printing the residues converts the chapter's module definitions
+from an assertion into something a reader can audit position by position,
+which matters because both modules are defined here by measurement rather
+than taken from a domain database. Every letter has been through the join
+guard described in Chapter 14: each variant's reference amino acid must be
+the residue its own paralogue's per-residue table holds there, and each
+aligned partner the residue the other paralogue's table holds.
 
 ## 12.3 The site is measured as a distance to the ligand, not as a contact label
 
 A binary contact-or-not label discards the one thing a structure can say that
 an alignment cannot. So every residue within 15 Å of the bound ligand was
 measured, all-atom, in **six independent depositions**, comprising the
-structure used throughout this thesis and five further IP₃-bound entries from
-other groups and other gating states.
+structure used throughout this thesis [R24] and five further IP₃-bound entries
+from other groups and other gating states [R23, R59, R60].
 
 The reader is deliberately small and all-atom. Chapter 11's structural reader
 is backbone-only, and a backbone trace puts an arginine 8 Å from a phosphate
@@ -117,15 +115,13 @@ wins in two and ties in the third.
 ![](figures/s22_modules.png)
 
 **{fig:s22_modules}.** The core against the pore under both pore definitions
-on one axis with zero marked, because the answer reverses between them and a
-figure showing only the primary would assert the choice instead of showing
-what it costs. This figure is the chapter's central result and its principal
-caveat in one panel. The pore is more conserved than the ligand core, which
-is the opposite of what a ligand-gated channel invites one to expect, and
-the comparison reverses in all three paralogues when fifty residues of
-luminal loop are left inside the pore. Drawing both definitions with zero
-marked shows what the boundary choice costs instead of hiding it in a
-methods sentence.
+on one axis with zero marked. This is the chapter's central result and its
+principal caveat in one panel: the pore is more conserved than the ligand
+core, which is the opposite of what a ligand-gated channel invites one to
+expect, and the comparison reverses in all three paralogues when fifty
+residues of luminal loop are left inside the pore. Drawing both definitions
+shows what the boundary choice costs instead of asserting it in a methods
+sentence.
 
 Neither answer is wrong about its own module. They are answers about different
 modules, and the difference between them is one boundary that a comparison
@@ -135,8 +131,9 @@ comparison that does not state the boundary is not interpretable.**
 **A second disagreement is reported rather than dropped.** At column level the
 divergence metric sees no difference between the modules while the
 per-orthologue identity does. That is not a contradiction, because the
-divergence metric is measured against a background amino-acid table, so a
-transmembrane module scores lower than a soluble one at equal conservation.
+divergence metric is measured against a background amino-acid table [R178], so
+a transmembrane module scores lower than a soluble one at equal
+conservation.
 The composition-free column metric agrees with the paired test. The null
 result is a property of the metric, and it is printed here because a reader
 coming from Chapter 11's tables would otherwise find two of this project's own
@@ -171,7 +168,8 @@ across the neighbourhood is real and shallow, and reaches significance in one
 paralogue.
 
 **The result replicates on an independent axis.** Every contact site in every
-paralogue is under detectable purifying selection by the per-site rate model,
+paralogue is under detectable purifying selection by the per-site rate model
+[R149],
 and the share of significantly constrained sites falls with distance from the
 ligand. It is not monotone, because the outermost shell sits a little above
 the third, so what the data show is a step down from the ligand's first two
@@ -276,16 +274,14 @@ p = 0.87.**
 ![](figures/s22_lineage.png)
 
 **{fig:s22_lineage}.** The lineage strata with the power curve beside them,
-because a lineage test that finds nothing is only readable next to what it
-could have found. The ligand core is drawn in a neutral dark rather than a
-hue, because the palette reserves its accent colour for the ryanodine
-receptors and this figure draws them. The importance of drawing the power
-curve beside the strata is that it makes a negative result readable.
-Lineages that lost the enzyme making the ligand show no relaxation at the
-binding site, and without a bound on what the comparison could have detected
-that would be an untestable statement. The ryanodine receptors are drawn as
-the positive control, because they carry the same pore and no ligand site,
-so the shift the design can see is measured rather than assumed.
+which is what makes a negative result readable. Lineages that lost the
+enzyme making the ligand show no relaxation at the binding site, and without
+a bound on what the comparison could have detected that would be an
+untestable statement. The ryanodine receptors are the positive control,
+because they carry the same pore and no ligand site, so the shift the design
+can see is measured rather than assumed. The ligand core is drawn in a
+neutral dark rather than a hue, because the palette reserves its accent
+colour for that control.
 
 **The null is bounded rather than empty.** Measured through the same pairwise
 instrument at the same divergence as the test group, the ryanodine receptors'

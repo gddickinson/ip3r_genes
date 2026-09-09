@@ -41,12 +41,13 @@ import s25_claims
 import s25_controls
 import s25_figures
 import s25_production
+import s25_prose
 import s25_pdf
 import s25_refs
 import s25_stitch
 import s25_test_guards
 
-STAGES = ["guards", "assign", "controls", "production", "refs",
+STAGES = ["guards", "assign", "controls", "production", "prose", "refs",
           "figures", "claims", "stitch", "pdf"]
 
 
@@ -82,6 +83,8 @@ def main() -> int:
             status |= s25_controls.run()
         elif stage == "production":
             status |= s25_production.run()
+        elif stage == "prose":
+            status |= s25_prose.run(verbose=args.verbose)
         elif stage == "refs":
             status |= s25_refs.audit(offline=args.refs_offline,
                                      verbose=args.verbose)

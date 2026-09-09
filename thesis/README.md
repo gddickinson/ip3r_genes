@@ -2,8 +2,8 @@
 
 `python scripts/s25_assemble.py` builds everything here and exits non-zero on
 a failed guard. The same work is reported as a paper in `manuscript/`, and
-this directory holds its long form: about 74,000 words across 16 chapters and
-5 appendices, with 103 figures and 111 references.
+this directory holds its long form: about 73,000 words across 16 chapters and
+5 appendices, with 103 figures and 116 references.
 
 ## What is written by hand, and what is generated
 
@@ -35,7 +35,8 @@ audit row.
     assign     commit the chapter grouping (rule T6)
     controls   derive the control inventory from the test modules
     production measure how the project itself was made
-    refs      audit every new reference against a live record
+    prose      no em-dash, and no legend that repeats itself or its neighbour
+    refs       audit every new reference against a live record
     figures   copy every placed figure from the results tree
     claims    re-verify every number, and that its chapter states it
     stitch    concatenate, number the figures, resolve the citations
@@ -54,8 +55,9 @@ neither placed nor excluded, a figure placed in the wrong chapter, or a
 reference to a figure that nothing places. A cited key with no reference row,
 a new reference with no verified audit row, or a reference audited and never
 cited. A number that no committed table produces, or a number declared in the
-ledger that its own chapter never states. And a glyph the document font cannot
-set.
+ledger that its own chapter never states. A glyph the document font cannot
+set. And an em-dash in a chapter source, a figure legend that says the same
+thing twice, or a legend that restates the paragraph beside it.
 
 All of them are exercised on every build by `scripts/s25_test_guards.py`,
 which runs in a sandboxed copy and verifies that it altered no committed file.

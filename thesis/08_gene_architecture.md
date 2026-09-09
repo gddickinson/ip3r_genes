@@ -112,20 +112,22 @@ without changing a single count, and the duplication detector discussed in
 
 Across 1,378 genes in 189 vertebrate genomes, the three paralogues sit at **57
 to 58 coding exons** with median genomic spans differing by **4.2-fold**, and
-coding sequence lengths of 8,250, 8,100 and 8,008 bp. What differs between
+coding sequence lengths of 8,250, 8,100 and 8,008 bp. These are *coding* exon
+counts, which is why they sit below the 62, 57 and 58 that Chapter 2 read off
+the human canonical transcripts: a protein-to-genome alignment sees only the
+translated part of the gene, so a purely untranslated first or last exon is
+invisible to it and counted by the transcript annotation. What differs between
 them is how much intron is wrapped around nearly the same protein.
 
 ![](figures/architecture_by_paralog.png)
 
 **{fig:architecture_by_paralog}.** Exon count and genomic span on separate
-axes, with span logarithmic and count not. The result is that one is
-conserved and the other is not, and a shared scale would hide it. The
-importance of separating the axes is that the result is a contrast between
-two quantities measured on the same genes: one is conserved and the other is
-not. Fifty-seven to fifty-eight coding exons across 189 genomes, wrapped in
-genomic spans differing four-fold, means the paralogues inherited one coding
-architecture and then diverged in intron content alone. A shared scale would
-have hidden exactly that.
+axes, with span logarithmic and count not. The separation matters because
+the result is a contrast between two quantities measured on the same genes,
+one of which is conserved and the other of which is not, and a shared scale
+would hide it. Fifty-seven to fifty-eight coding exons across 189 genomes,
+wrapped in genomic spans differing four-fold, means the paralogues inherited
+one coding architecture and then diverged in intron content alone.
 
 The ryanodine receptors, measured through the identical instrument in the same
 assemblies, carry **104 exons over 14,910 bp** of coding sequence, which is
@@ -143,17 +145,24 @@ with ties dropped and counted, and the whole family of tests corrected
 together.
 
 Two things fall out. The exon counts differ by one to three exons and the
-spans by tens of kilobases, in the same genomes. And the ordering of the spans
+spans by tens of kilobases, in the same genomes. That intron content, rather
+than coding structure, is what varies is worth holding against the evidence
+that intron length is itself under selection, with shorter introns in highly
+expressed genes [R208], although the explanation usually offered for that
+pattern has been contested [R209]. And the ordering of the spans
 is consistent gene by gene rather than an artefact of averaging, in that ITPR3
 is the shorter gene than ITPR1 in 161 of the 182 genomes carrying both.
 
 ## 8.7 The three paralogues share the same introns in the same places
 
 An intron's position here is a pair: the alignment column its upstream exon
-ends in, and its phase. Both halves are needed. Two paralogues can carry an
-intron between the same two residues in different frames, which is not one
-ancestral intron, and a column alone would call any two introns in the same
-region shared.
+ends in, and its phase. Intron positions are among the most durable
+characters a gene has, conserved across kingdoms and gained and lost slowly
+enough to carry information about deep relationships [R206, R207], which is
+what makes this comparison worth making at all. Both halves of the pair are
+needed. Two paralogues can carry an intron between the same two residues in
+different frames, which is not one ancestral intron, and a column alone
+would call any two introns in the same region shared.
 
 **Within a paralogue**, each carries a core of about 48 to 49 intron positions
 present in at least 90 % of the genomes that have the gene, out of 175 to 185
@@ -165,12 +174,10 @@ same places, across the vertebrates.
 ![](figures/intron_positions.png)
 
 **{fig:intron_positions}.** Intron positions by alignment column and phase,
-per paralogue. The columns line up. The importance of scoring a position as
-a column and a phase together is that either alone is insufficient. Two
-paralogues can carry an intron between the same two residues in different
-reading frames, which is not one ancestral intron, and a column with no
-phase would count it as shared. The columns lining up here is what the
-enrichment in §8.7 is measured on.
+per paralogue. The columns line up, and that alignment is what the
+enrichment in §8.7 is measured on. Plotting phase as well as column is what
+keeps two introns that fall between the same two residues in different
+reading frames from being counted as one inherited intron.
 
 **Between paralogues** is the test this chapter exists for. Two genes with
 about 58 introns each spread over about 2,700 aligned residues will share some
@@ -261,14 +268,14 @@ zero is a measurement rather than an unreachable code path.
 **{fig:fragments_and_duplicates}.** The verdict on every split and
 fragmentary locus, where the annotation's internal termini sit relative to
 the gene model, and the duplication detector scored against an independent
-copy call. The importance of this figure is that it converts a database
-label into a testable claim. A locus called fragmentary might have been
-annotated as a plausible short gene, or the annotation might have stopped
-where no splicing machinery could stop, and only the second is an error. 228
-of 291 such loci carry at least one terminus in the middle of an exon, which
-falsifies the innocent reading. The duplication panel makes the same point
-about a detector: scored against a copy call it never sees, its specificity
-goes from 0.16 to 0.977 once the family assignment is applied first.
+copy call. The first panel converts a database label into a testable claim:
+a locus called fragmentary might have been annotated as a plausible short
+gene, or the annotation might have stopped where no splicing machinery could
+stop, and only the second is an error. 228 of 291 such loci carry at least
+one terminus in the middle of an exon, which falsifies the innocent reading.
+The second panel makes the same point about an instrument, since scoring the
+detector against a copy call it never sees moves its specificity from 0.16
+to 0.977 once the family assignment is applied first.
 
 ## 8.10 What this chapter settles about the gene
 

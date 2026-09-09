@@ -35,7 +35,8 @@ import s25_claims                                              # noqa: E402
 import s25_claims_thesis                                       # noqa: E402
 import s25_figmap as fm                                        # noqa: E402
 import s25_figures                                             # noqa: E402
-import s25_lib as L                                            # noqa: E402
+import s25_lib as L
+import s25_prose                                            # noqa: E402
 import s25_assign                                              # noqa: E402
 import s25_refs                                                # noqa: E402
 import s25_stitch                                              # noqa: E402
@@ -232,6 +233,40 @@ def _pdf_dropped_glyph():
     return 0
 
 
+def _prose_em_dash():
+    """An em-dash reintroduced into a chapter source (D76)."""
+    f = L.TH / "01_introduction.md"
+    f.write_text(f.read_text() + "\n\nA sentence — with a dash in it.\n")
+    return s25_prose.run()
+
+
+def _prose_legend_repeats():
+    """A legend that says the same thing twice (D81)."""
+    f = L.TH / "01_introduction.md"
+    t = f.read_text()
+    old = "**{fig:gating_logic}.**"
+    extra = (" The three vertebrate paralogues are not interchangeable parts "
+             "of one channel. The three vertebrate paralogues are not "
+             "interchangeable parts of one channel.")
+    i = t.index(old)
+    j = t.index("\n\n", i)
+    f.write_text(t[:j] + extra + t[j:])
+    return s25_prose.run()
+
+
+def _prose_legend_restates_body():
+    """A legend that paraphrases the paragraph beside it (D81)."""
+    f = L.TH / "01_introduction.md"
+    t = f.read_text()
+    anchor = "**{fig:domain_architecture}.**"
+    i = t.index(anchor)
+    j = t.index("\n\n", i)
+    body = ("Three consequences of that shared architecture run through every "
+            "chapter of this thesis.")
+    f.write_text(t[:j] + " " + body + " " + body + t[j:])
+    return s25_prose.run()
+
+
 CASES = [
     ("assign: an unassigned results directory", "rule T6", _assign_unassigned),
     ("assign: an assignment with no directory", "does not exist",
@@ -262,6 +297,11 @@ CASES = [
      _claims_padded),
     ("pdf: a glyph the document font lacks", "missing characters",
      _pdf_dropped_glyph),
+    ("prose: an em-dash in a chapter source", "em-dash", _prose_em_dash),
+    ("prose: a legend that says the same thing twice",
+     "says the same thing twice", _prose_legend_repeats),
+    ("prose: a legend that restates the paragraph beside it", "restates the "
+     "paragraph", _prose_legend_restates_body),
 ]
 
 

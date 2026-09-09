@@ -39,16 +39,14 @@ thesis stands on, **nine** do.
 ![](figures/s11_afdb_coverage.png)
 
 **{fig:s11_afdb_coverage}.** Coverage by group, and against record length.
-The second panel is the result: the usable-model mass sits below about 1,300
-residues while the peak at about 2,700, which is a full-length subunit, is
-almost entirely unmodelled. The importance of this figure is that it sets
-the ceiling on every structural argument the family can support. A reader
-who assumed the prediction database covers modern proteomes uniformly would
-expect a receptor of this size to be modelled, and the second panel shows
-the opposite: coverage falls away exactly at the lengths a full-length
-subunit occupies. Every structural statement in this chapter therefore rests
-on experimental depositions, and the figure is what makes that a measured
-constraint rather than a preference.
+The second panel is the result, and it sets the ceiling on every structural
+argument this family can support: the usable-model mass sits below about
+1,300 residues, while the peak at about 2,700, which is a full-length
+subunit, is almost entirely unmodelled. A reader who assumed the prediction
+database covers modern proteomes uniformly would expect a receptor of this
+size to be modelled. Every structural statement in this chapter therefore
+rests on experimental depositions, and the figure is what makes that a
+measured constraint rather than a preference.
 
 The median modelled record is 392 residues and the median unmodelled one
 2,674. Of the 5,861 census records at or above the family's own length floor,
@@ -215,14 +213,8 @@ whatever aligned.
 
 **{fig:s11_plddt_domains}.** Confidence per domain, ordered along the
 subunit, with the prediction method's own confident and very-high bands
-drawn. Every model gets an "outside annotated domains" contrast row, without
-which "the pore is at 85" has nothing to be high against. The importance of
-resolving confidence per domain is that a single mean over a 2,700-residue
-multi-domain channel is uninformative and reassuring at the same time. It
-averages a well-predicted domain with hundreds of residues of linker, and a
-claim resting on the pore needs the pore's own number. The contrast row
-outside the annotated domains is what gives a high value something to be
-high against.
+drawn. Every model also gets an outside-annotated-domains contrast row,
+which is what gives a high value something to be high against.
 
 **The IP₃-binding core is the best-modelled domain of the receptor** at a
 median of 83.9, against 69.5 outside the annotated domains, and **the pore,
@@ -254,16 +246,13 @@ alignment from 3,380 to 5,676 columns.**
 
 ![](figures/supp_paralog_alignments.png)
 
-**{fig:supp_paralog_alignments}.** The within-paralogue alignments the
-constraint map is computed on, shown as per-residue occupancy of the human
-reference rather than per alignment column, because the three alignments
-have three widths and no shared coordinate. The importance of this figure is
-that it shows the depth behind the constraint map, which is the difference
-between this resource and one built on a handful of orthologues. Between 249
-and 265 orthologues per paralogue is what makes a within-gene conservation
-score interpretable, and plotting occupancy per residue of the human
-reference lets a reader see where that depth thins out and a score should be
-trusted less.
+**{fig:supp_paralog_alignments}.** The three deep alignments the constraint
+map is computed on, drawn as occupancy along the human reference rather than
+along an alignment column, since the three have three widths and no shared
+coordinate. What the panel shows is the depth behind the map, which is the
+difference between this resource and one built on a handful of sequences,
+and where that depth thins out enough that a score there should be trusted
+less.
 
 Three conventions run through every score. **Conservation is
 sequence-weighted** [R171] before any column statistic, and the column metric

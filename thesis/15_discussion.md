@@ -349,9 +349,10 @@ whole genes.** At gene scale it returns what domain annotation already
 returns, adding one extra record in 3,135 in the vertebrates. Its gain is
 fragments, and gene-scale records only where the annotation is worst.
 
-**The rule everyone writes to catch iterative-search drift measures the wrong
-thing.** Sister-family contamination is diluted by the drift it is meant to
-detect. Scored as classifiers of an outcome measured on the finished model,
+**The obvious rule for catching iterative-search drift measures the wrong
+thing.** Sister-family contamination is the quantity this project and its
+predecessor both chose to monitor, and it is diluted by the drift it is meant
+to detect. Scored as classifiers of an outcome measured on the finished model,
 the sister-family rule has a sensitivity of zero on seven runs including all
 three that drifted, while the off-family share separates them perfectly.
 
@@ -382,15 +383,14 @@ measurement separates ligand binding from domain packing.
 one enzyme family says the canonical route to IP₃ is missing rather than that
 the receptor has no ligand.
 
-**The bird lesion result is named but not explained.** ITPR3 carries an excess
-of disabling indels
-against its own genome's identity-matched sibling loci, and stratified it is
-entirely a bird result, at 25 genomes to 2. Twenty-one of the 27 informative
-pairs are in assemblies below the contiguity bar, which is where the test has
-its power, and the six above it all point the same way without being enough to
-test. The lineage is named and the mechanism is not, and what would settle it
-is a different sample, meaning birds at chromosome level, rather than a
-different statistic.
+**The bird lesion result is named but not explained.** ITPR3 carries an
+excess of disabling indels against its own genome's identity-matched sibling
+loci, and stratified it is entirely a bird result, at 25 genomes to 2.
+Twenty-one of the 27 informative pairs are in assemblies below the
+contiguity bar, which is where the test has its power, and the six above it
+all point the same way without being enough to test. The lineage is named
+and the mechanism is not, and what would settle it is a different sample,
+meaning birds at chromosome level, rather than a different statistic.
 
 ## 15.8 The general shape of the argument is a stance about negatives
 

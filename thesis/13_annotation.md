@@ -7,7 +7,10 @@ reachable by any protein-database search.** They are not hard to find, because
 no protein record of them exists.
 
 That is a statement about databases rather than about biology, and it is
-easily the most immediately useful result in the thesis. It is also a claim
+easily the most immediately useful result in the thesis. Automated annotation
+is known to be imperfect, and the ways in which it fails have been reviewed
+[R194]; what has not been available for this family is a measurement of how
+often and in which direction. It is also a claim
 that has to be made carefully, because there are three quite different ways a
 gene can be missing from a public record, and they have different remedies.
 
@@ -24,8 +27,8 @@ correction list addressed to somebody else.
 
 Every gene-scale locus in the 309-genome scope is scored into one of five
 states, comprising complete, split, fragmentary, non-coding only and
-unannotated, under three rules that decide whether the audit is measuring
-anything.
+unannotated, against each assembly's own submitted gene set [R159], under
+three rules that decide whether the audit is measuring anything.
 
 **Only same-strand features count**, because an antisense gene overlapping the
 locus perfectly is not an annotation of it.
@@ -93,14 +96,12 @@ submitter-deposited ones.**
 ![](figures/s18_by_source.png)
 
 **{fig:s18_by_source}.** Locus state by annotation source, raw and above the
-contiguity bar, with the control drawn beside the raw contrast rather than
-instead of it. The importance of this figure is that it separates a database
-effect from an assembly effect, which no raw comparison of annotation
-sources can do. Curated and submitter-deposited gene sets are not applied to
-the same assemblies, so a difference between them partly measures which
-genomes each was run on. Drawing the contiguity-controlled contrast beside
-the raw one shows how much of the gap survives that control and how much
-does not.
+contiguity bar. The control is drawn beside the raw contrast rather than
+instead of it, because that is what separates a database effect from an
+assembly effect. Curated and submitter-deposited gene sets are not applied
+to the same assemblies, so a difference between them partly measures which
+genomes each was run on, and the two bars together show how much of the gap
+survives the control.
 
 The confounder is obvious and is controlled rather than argued. Submitter
 assemblies are less contiguous, and a locus on a contig too short to hold the
@@ -147,10 +148,11 @@ the assemblies its loci happen to sit in.
 
 ## 13.6 Half the protein records carry no usable gene symbol
 
-Each of the 11,402 full-length family protein records was scored against the
-committed bait panel, assigned to a family only on a stated margin, then to a
-paralogue inside the winning family, with the record's own gene symbol and
-protein name read through the same verdict rule the genome half uses.
+Each of the 11,402 full-length family protein records held by the protein
+databases [R157] was scored against the committed bait panel, assigned to a
+family only on a stated margin, then to a paralogue inside the winning
+family, with the record's own gene symbol and protein name read through the
+same verdict rule the genome half uses.
 
 **The family call is not in dispute.** The sequence disagrees with the census
 call on 4 of 11,402 records, and the databases name the sister family at only
@@ -190,7 +192,7 @@ to 64 % in the amoebozoa and the stramenopiles.
 
 ## 13.7 All fifteen empty proteomes are gene-caller failures
 
-Chapter 3 swept 764 vertebrate reference proteomes and 15 returned no family
+Chapter 3 swept 763 vertebrate reference proteomes and 15 returned no family
 hit at all. On its own that is uninterpretable, because a receptor-shaped hole
 in a proteome is either a gene the species lacks or a gene its gene caller did
 not find.

@@ -116,13 +116,11 @@ the alignment that is can read it here rather than take it on trust.
 ![](figures/msa_coverage.png)
 
 **{fig:msa_coverage}.** Per-sequence coverage of the trimmed alignment. The
-median is 0.96 and one tip of 134 covers less than half. A tip below half is
-not wrong, but it contributes gaps to every column the tree is inferred
-from, so it is named rather than left inside a median. Coverage matters
+median is 0.96 and one tip of 134 covers less than half. Coverage matters
 because a tip that covers half the alignment contributes gaps to every
 column the tree is inferred from, and gaps are not neutral for a likelihood
-model. Naming the one tip below half, rather than reporting only the median,
-is what allows a reader to judge whether any deep node depends on it.
+model. Naming that one tip, rather than reporting only the median, is what
+allows a reader to judge whether any deep node depends on it.
 
 ## 6.4 What the alignment says before any tree is built
 
@@ -143,26 +141,21 @@ a heuristic with.
 ![](figures/msa_identity_heatmap.png)
 
 **{fig:msa_identity_heatmap}.** All-pairs identity across the representative
-set. Two identity matrices are committed, one scoring only mutually covered
-columns and one counting gaps, because they answer different questions and
-disagree systematically where a fragment is involved. The importance of
-committing two identity matrices rather than one is that they answer
-different questions and disagree systematically wherever a fragment is
-involved. A metric that counts gaps as mismatches makes every partial
+set. Two identity matrices are committed rather than one, because they
+answer different questions and disagree systematically wherever a fragment
+is involved. A metric that counts gaps as mismatches makes every partial
 sequence look divergent, which would confound sequence divergence with
 assembly quality, and that confound runs through this entire project.
 
 ![](figures/msa_group_identity.png)
 
-**{fig:msa_group_identity}.** Identity within and between groups. The three
-vertebrate paralogues sit at 0.74 to 0.79 to each other and 0.91 within
-themselves. This figure fixes the scale every later comparison is read
-against. The three paralogues sit at 0.74 to 0.79 to one another and at 0.91
-within themselves, which is close enough that a bait from one aligns at all
-three genes. That single fact is why the duplication detector of Chapter 8
-needed the family call before its geometry meant anything, and why the
-attribution margin inherited from a less similar family had to be
-overturned.
+**{fig:msa_group_identity}.** Identity within and between groups. This
+figure fixes the scale every later comparison is read against: the three
+vertebrate paralogues sit at 0.74 to 0.79 to one another and at 0.91 within
+themselves, which is close enough that a bait from one aligns at all three
+genes. That single fact is why the duplication detector of Chapter 8 needed
+the family call before its geometry meant anything, and why the attribution
+margin inherited from a less similar family had to be overturned.
 
 **The alignment's preview of the sister question turns out to be wrong.** The
 alignment can rank the three between-paralogue identities: ITPR1 with ITPR2
@@ -170,7 +163,7 @@ leads at 0.791, against 0.753 and 0.741, and the leading pair's interquartile
 range does not overlap either of the others. That is a real ranking and it is
 not a phylogenetic estimate, because it ignores the outgroup, the rate
 variation and the branch lengths, so it was reported as a preview with the
-tree named as the answer. Section 6.7 reports that the tree contradicts it.
+tree named as the answer. Section 6.8 reports that the tree contradicts it.
 
 **The alignment's preview of the cyclostome loci is wrong in a different way.**
 Every cyclostome in this set carries three loci, all won by the same bait, so
@@ -184,20 +177,17 @@ statistic over groups that are certainly not vertebrate paralogues gives the
 no-signal baseline: invertebrate metazoa lean toward ITPR1 at a median margin
 of 0.008, protists at 0.002, and the ryanodine receptors at 0.002. The
 cyclostome margin is five times that, so the lean is real. What it means is a
-different question, and §6.8 gives an answer neither reading predicted.
+different question, and §6.9 gives an answer neither reading predicted.
 
 ![](figures/msa_conservation.png)
 
 **{fig:msa_conservation}.** Per-column conservation with human ITPR1's
 domain architecture mapped onto it through the alignment, by walking the
 human row and counting ungapped positions, rather than by scaling residue
-coordinates onto column coordinates. The latter is the mistake that puts a
-domain boundary in the wrong place by exactly the gap content of the
-sequence. The importance of mapping the architecture through the alignment
-rather than by scaling coordinates is that the second method places every
-domain boundary wrong by exactly the gap content of the sequence. Since
-Chapters 11 and 12 both make claims about which element a residue belongs
-to, a systematic offset here would have propagated into every one of them.
+coordinates onto column coordinates. The second method places every domain
+boundary wrong by exactly the gap content of the sequence. Since Chapters 11
+and 12 both make claims about which element a residue belongs to, a
+systematic offset here would have propagated into every one of them.
 
 ## 6.5 The exhaustive model scan was measured and abandoned
 
@@ -206,8 +196,9 @@ and abandoned, and the measurement is the reason: **11 models of up to 1,232
 in 672 seconds, projecting about 20.9 hours.**
 
 The cost is the free-rate models, and they are not optional on this alignment,
-because the best free-rate model beats the best gamma model by 682.3 BIC
-units. Dropping them to buy the time back would have returned a measurably
+because the best free-rate model beats the best gamma model by 682.3 units of
+the Bayesian information criterion, the fit statistic the selection is scored
+on. Dropping them to buy the time back would have returned a measurably
 worse model.
 
 The replacement is greedy in two stages, with both tables committed: every
@@ -260,13 +251,10 @@ and a filled dot marks every node clearing both support thresholds. No tip
 is ringed, because the relabelling rule described in §6.7 fires on none of
 them, and the legend entry for a ring appears only when a ring does, since a
 key naming a marker the figure does not carry asserts a correction that was
-never made. The importance of this tree is that it answers a question the
-literature did not have an answer to. The review's own audit found no
-published, support-annotated maximum-likelihood analysis with a ryanodine
-outgroup that fixes which two of the three paralogues are sisters. The
-rooting doubles as a control on the whole alignment, since a superfamily
-that did not come back as a clade would put every downstream result in
-doubt.
+never made. The tree matters because it answers a question the literature
+had left open: the review's own audit found no published, support-annotated
+maximum-likelihood analysis with a ryanodine outgroup that fixes which two
+of the three paralogues are sisters.
 
 ## 6.7 The three paralogues are clades, but only after the tree's own corrections
 
@@ -321,12 +309,11 @@ declined to place. A verification that cannot fire is not a verification.
 ![](figures/paralog_placement.png)
 
 **{fig:paralog_placement}.** Where the tree places each tip against its
-census label, with the five unplaced tips named. The importance of this
-figure is that the tree overturns no census name. Thirty-nine tips agree
-with their label, none is reassigned, and five are left unplaced, and
-reciprocal best hits against an independent database uphold the census name
-for all five. A gene tree that had disagreed with the annotation would have
-cast doubt on the paralogue cells that every later chapter is built on.
+census label. Thirty-nine agree, none is reassigned, and the five the tree
+declines to place are named, with reciprocal best hits against an
+independent database upholding the name for every one of them. The panel
+matters because a gene tree disagreeing with the annotation would have cast
+doubt on the paralogue cells every later chapter is built on.
 
 ## 6.8 ITPR2 and ITPR3 are sisters, and the other two arrangements are rejected
 
@@ -427,12 +414,10 @@ with a median bootstrap of 100 and a median branch-test value of 99.
 
 **{fig:support_profile}.** Node support drawn as a scatter rather than as
 two histograms, because the claim is about the joint condition and a pair of
-marginals cannot show it. Drawing support as a joint condition matters
-because a node is only trustworthy when both branch tests agree, and two
-marginal histograms cannot show that. The bootstrap alone is known to be
-optimistic under model violation, which a 134-tip alignment spanning four
-kingdoms guarantees, so every well-supported claim in this thesis requires
-both.
+marginals cannot show it. A node is trustworthy here only when both branch
+tests agree. The bootstrap alone is known to be optimistic under model
+violation, which a 134-tip alignment spanning four kingdoms guarantees, so
+every well-supported claim in this thesis requires both.
 
 Every node a claim rests on is listed with its own support. The ITPR2 with
 ITPR3 clade the sister result depends on is at maximal support. The one weakly
@@ -442,10 +427,11 @@ slightly differently. The same clade including the unlabelled tips is at
 maximal support.
 
 **A model-violation guard was run over the whole search.** Because the
-bootstrap is optimistic under model violation, the whole search was re-run with an extra optimisation round on
-every bootstrap tree, and the same clade questions were asked of that tree,
-with membership read from a committed table rather than re-derived so that a
-bookkeeping difference cannot surface as a topology change.
+bootstrap is optimistic under model violation, the whole search was re-run
+with an extra optimisation round on every bootstrap tree, and the same clade
+questions were asked of that tree, with membership read from a committed
+table rather than re-derived so that a bookkeeping difference cannot surface
+as a topology change.
 
 **No claim is weakened or lost.** Nine of ten clear both thresholds in the
 guarded tree as well. The tenth was not well supported in the main tree

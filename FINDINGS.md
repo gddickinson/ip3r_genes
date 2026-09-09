@@ -2509,3 +2509,30 @@ diverge from a common protein but inherited a common gene boundary by
 boundary. One shared position with a family carrying the same domains and a
 separate origin is what makes that a statement about ancestry rather than
 about where splicing likes to happen.
+
+---
+
+## 2026-09-09 — S27: what a read-through found that no check could
+
+*What changed: nothing measured. One number corrected, five classes of
+editorial defect fixed, and six results chapters connected to their
+literature.*
+
+The one substantive correction is worth recording because of where it was.
+The annotation audit's report said the vertebrate proteome sweep covered 764
+reference proteomes. It covered 763. The number had been typed into the report
+generator rather than read from the sweep's own statistics file, which is the
+single exception in this project to the rule that a report is rendered from
+its tables, and it is the only kind of number the claims ledger cannot reach,
+because the ledger checks what a document says against a table and not what a
+generator says against its source. Nothing biological turns on it. What turns
+on it is that a package can disagree with itself by one for four editions
+while every guard passes.
+
+The other finding is about the shape of the document rather than its data.
+Six chapters that report results carried no citations at all, including the
+chapter that reports the family's range. That chapter's land-plant absence
+answers a question the plant literature has kept open for two decades, and it
+was stated as a measurement with nothing to measure it against. A result
+without its literature is a number; with it, it is an argument. Adding the
+citations changed no measurement and changed what several of them mean.

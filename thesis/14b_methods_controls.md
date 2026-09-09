@@ -203,7 +203,7 @@ the driver had already copied.
 SHA-256 of every committed file before and after**, because this project has
 already had a self-test overwrite the committed table it was testing.
 
-All 15 fire, and `thesis/guard_check.tsv` records what each said.
+All 18 fire, and `thesis/guard_check.tsv` records what each said.
 
 ## 14.14 The reference audit caught nine citations that named the wrong paper
 

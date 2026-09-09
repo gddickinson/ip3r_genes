@@ -72,15 +72,13 @@ It maps there in every cell of the matrix, cyclostomes in or out.
 
 **{fig:recon_dated_backbone}.** The dated backbone on a linear time axis
 with each calibration's spread drawn as a band, rather than a cladogram with
-ages written on it. The result is an interval and a cladogram cannot show
-one. Placements are deduplicated to one marker per distinct arrangement,
-because the matrix repeats the same placement across cells and drawing each
-would make agreement look like weight. The importance of drawing calibration
-spread as a band is that the result is an interval and a cladogram with ages
-written on it cannot show one. The deepest bracket is left open at its old
-end because nothing in this tree closes it, and the widest disagreement in
-the whole calibration set sits at exactly the node the older duplication
-maps to.
+ages written on it, because the result is an interval and a cladogram cannot
+show one. Placements are deduplicated to one marker per distinct
+arrangement, since the matrix repeats the same placement across cells and
+drawing each would make agreement look like weight. The deepest bracket is
+left open at its old end because nothing in this tree closes it, and the
+widest disagreement in the whole calibration set sits at exactly the node
+the older duplication maps to.
 
 **The two duplications are not on the same branch.** That is the finding, and
 it is what makes ITPR1 the earlier-diverging copy.
@@ -121,17 +119,13 @@ cyclostome loci at **0.96 to 1.04 times the median, ranking 18th to 55th of
 
 ![](figures/recon_cyclostome.png)
 
-**{fig:recon_cyclostome}.** Root-to-tip distance for all 57 vertebrate tips
-with the six cyclostome loci marked, and beside it the independent
-neighbourhood call for each of those loci with the pair support the tree
-gives it. The long-branch objection does not apply, and the corroboration is
-inside its own null. The importance of the long-branch panel is that it
-removes the standard objection to this result. Cyclostome sequences are the
-classic long-branch attraction risk in vertebrate phylogeny and long
-branches are attracted to the root, which is exactly where this placement
-sits, so the objection is measured rather than argued. The six loci rank
-eighteenth to fifty-fifth of fifty-seven tips, and two sit in the shorter
-half.
+**{fig:recon_cyclostome}.** The six cyclostome loci marked on the
+distribution of root-to-tip distance across the tree, and beside it the
+independent neighbourhood call for each locus with the pair support the tree
+gives it. The first panel removes the standard objection to this placement
+by measurement rather than by argument. The second matters because the
+neighbourhood knows nothing about the alignment, so its agreement is
+corroboration from an instrument that could have disagreed.
 
 That negative result is the one that matters most here. It is the reason the
 placement is offered as a finding rather than as a caveat.
@@ -145,13 +139,11 @@ sample, and none is corroborated.
 
 **{fig:recon_losses}.** What each implied loss turns out to be once it is
 asked of the genome ledger, and the implied count in every cell of the
-matrix against the number the genomes corroborate. A reconciliation over a
-representative sample counts sampling. This figure is the reason a loss
-count is not read off a reconciliation. Of 47 implied losses, 26 are the
-paralogue present in the genome and absent only from the 134-tip sample, and
-none is corroborated by the genome ledger. A reconciliation over a
-representative alignment counts sampling, which is why Chapter 9 counts
-losses from 309 genomes instead.
+matrix against the number the genomes corroborate. The figure is the reason
+a loss count is not read off a reconciliation: a reconciliation over a
+representative sample counts sampling, not biology. That is why Chapter 9
+counts losses from 309 genomes instead, and why the two chapters' numbers
+are not alternative estimates of the same quantity.
 
 ## 7.10 Testing whole-genome duplication needs dated paralogy, not synteny
 
@@ -214,14 +206,11 @@ background rate, at 2.7 % against 2.6 %, p = 0.554.**
 
 **{fig:s16_paralogon}.** The two-round test with its null drawn across the
 bars rather than quoted in a caption, and the ryanodine trio run through the
-identical instrument in the same genomes beside it. A weak signal is only
-readable next to a positive control that is not in question. The importance
-of drawing the null across the bars is that the human single-genome test is
-underpowered and the report says so twice. What carries the claim is the
-replication across 309 genomes against matched random neighbourhoods, and
-what makes it readable is the sister family run through the identical
-instrument, since its two-round origin is not in question and it behaves the
-same way.
+identical instrument in the same genomes beside it. What carries the claim
+is not the human window but the replication across 309 genomes against
+matched random neighbourhoods, and what makes it readable is the sister
+family, whose two-round origin is not in question and which behaves the same
+way through the same instrument.
 
 The dated column splits the two links cleanly: the ITPR1 to ITPR3 link is
 vertebrate-dated in 84 genomes and the ITPR1 to ITPR2 link in 2.
@@ -328,13 +317,10 @@ agreement is a measurement rather than a property of the routine.
 **{fig:s16_blocks}.** Cross-anchor block identity, and the sensitivity of
 every count to the coverage bar. Seven bars are scanned, because a
 duplication claim that survives only one bar is a claim about the bar. The
-importance of the anchor test is that it separates one ancestral duplication
-from a series of lineage-specific ones, which the copy counts alone cannot
-do. Anchors from six different orders assign every genome independently and
-agree 705 times out of 705, where independent duplications would put the
-statistic at chance. A constructed control builds exactly that case and
-requires the statistic to land there, so the agreement is a measurement
-rather than a property of the routine.
+anchor panel is what separates one ancestral duplication from a series of
+lineage-specific ones, which the copy counts alone cannot do, because
+anchors from six different orders assign every genome independently and
+would carry no shared information if each lineage had duplicated on its own.
 
 It is corroborated by evidence of a different kind. Which bait won each copy
 is a sequence call made with no neighbourhood input at all, and in the six

@@ -146,13 +146,12 @@ defining domain does not annotate.
 **{fig:census_space}.** The enumerated search space by signature, with the
 overlaps drawn. The union is 15,421 proteins across 1,488 taxa and the
 intersection of all three seeds is 10,256. The difference between those two
-numbers is the argument for enumerating a union. The figure matters because
-it quantifies what a conventional search would have missed. A census built
-on the signature that names the family, which is what a reader looking for
-IP₃ receptors would query, would have missed 2,914 proteins including 758
-this census calls family across 385 taxa. The union is the difference
-between a search that finds what is annotated and one that finds what is
-there.
+numbers quantifies what a conventional search would have missed: a census
+built on the signature that names the family, which is what a reader looking
+for IP₃ receptors would query, would have missed 2,914 proteins including
+758 this census calls family across 385 taxa. Enumerating the union is the
+difference between a search that finds what is annotated and one that finds
+what is there.
 
 ## 3.4 A domain-architecture call is audited against gene symbols it never sees
 
@@ -171,31 +170,24 @@ that satisfy neither positive test.
 ![](figures/census_lineage.png)
 
 **{fig:census_lineage}.** The census by lineage with both family calls, and
-with the sister family drawn beside the family everywhere. The vertebrate
-bar carries 10,936 of the 15,421 records, which is a fact about sequencing
-effort. It is why Chapter 5 counts taxa and proteomes rather than records
-when it asks about range. The importance of this figure is as a warning
-about denominators. Two thirds of the records are vertebrate, which is a
-fact about how much sequencing effort has gone where rather than about where
-the family lives. Any range claim read off record counts would report the
-history of genome sequencing, which is why Chapter 5 counts proteomes and
-taxa instead.
+with the sister family drawn beside the family everywhere. The figure is a
+warning about denominators. The vertebrate bar carries 10,936 of the 15,421
+records, which is a fact about where sequencing effort has gone rather than
+about where the family lives, so any range claim read off record counts
+would report the history of genome sequencing. That is why Chapter 5 counts
+proteomes and taxa instead.
 
 ![](figures/census_lengths.png)
 
 **{fig:census_lengths}.** Length distributions of the two families as
 called. The medians are 2,671 and 4,856 residues and the distributions
-barely touch. This figure is the reason the length band is a good filter and
-the reason it is not used as the call: it separates the two families
-beautifully in a set whose annotations are already good, which is precisely
-the population in which no separation is needed. The figure is important
-because it shows why a filter that works is still not evidence. Length
-separates the two families almost perfectly here, and it does so on a
-population whose annotations are already good, which is precisely where no
-separation is needed. In the fragmentary and unannotated records where the
-call actually matters, this separation is unavailable, and a project that
-had trusted it would have inherited annotation quality as a definition of
-the gene family.
+barely touch. The figure shows why a filter that works is still not
+evidence: length separates the two families almost perfectly here, and it
+does so on a population whose annotations are already good, which is
+precisely where no separation is needed. In the fragmentary and unannotated
+records where the call actually matters, this separation is unavailable, and
+a project that had trusted it would have inherited annotation quality as a
+definition of the gene family.
 
 **The audit of that rule is possible because the rule never sees a gene
 symbol**, which makes symbols an independent label to score it against. Every
@@ -266,11 +258,12 @@ at all. The SHA-256 of every seed set, alignment and profile is recorded, so a
 rebuild that drifts is visible in the data rather than only in a count.
 
 **The instrument is calibrated before it is used.** Both profiles were run
-over the whole archived search space, comprising 15,381 records whose call
-came from a rule that read annotation rather than residues, and the two were
-scored against each other. With the seed sequences removed, because they are
-in that set by construction, the profile assignment agrees with the
-architecture call on 11,875 records and disagrees on 1.
+over the archived sequence set, which holds 15,381 of the census's 15,421
+records, every one of them called by a rule that read annotation rather than
+residues, and the two instruments were scored against each other. With the
+seed sequences removed, because they are in that set by construction, the
+profile assignment agrees with the architecture call on 11,875 records and
+disagrees on 1.
 
 ![](figures/profile_separation_vert.png)
 
@@ -278,15 +271,11 @@ architecture call on 11,875 records and disagrees on 1.
 other, with the band inside which no call is made drawn rather than
 described. A call requires the winning profile to clear 30 bits, to span at
 least 200 match states, and to beat the loser by more than 10 % of its own
-score. The margin is **relative** and not absolute because bit scores scale
-with alignable length, so a fixed gap would call every full-length protein
-confidently and no fragment at all. The relative margin is what makes this
-instrument usable on the records the census most needs. Because bit scores
-scale with alignable length, an absolute threshold would confidently call
-every full-length protein and refuse every fragment, which would restrict
-the census to the sequences that were never in doubt. The relative form is
-what allows 2,314 records the architecture rule could not decide to be
-called at all.
+score. That margin is relative rather than absolute because bit scores scale
+with alignable length, so a fixed gap would confidently call every
+full-length protein and refuse every fragment, restricting the census to the
+sequences that were never in doubt. The relative form is what allows 2,314
+records the architecture rule could not decide to be called at all.
 
 The span floor is measured rather than tuned. In this project's own structural
 domain coordinates the shortest observed PF08709, which is the IP₃-binding
@@ -309,13 +298,11 @@ assumed.
 census keeps the two verdicts side by side and merges them by a stated rule:
 both agreeing gives a high-confidence call, one speaking gives that one's, a
 disagreement is kept and reported as a conflict rather than resolved by
-preference, and neither speaking leaves the record unassigned. Across 16,039
-records there are two conflicts. The importance of keeping two verdicts per
-record is that it makes disagreement visible rather than resolvable by
-preference. Two instruments reading different evidence disagree on two
-records in 16,039, which is the number that justifies treating the merged
-call as reliable, and the two conflicts are carried forward as conflicts
-rather than assigned to whichever instrument the author trusted more.
+preference, and neither speaking leaves the record unassigned. Two
+instruments reading different evidence disagree on two records in 16,039,
+which is the number that justifies treating the merged call as reliable, and
+keeping both verdicts is what makes a disagreement visible instead of
+assigning it to whichever instrument the author trusted more.
 
 ## 3.6 A sweep of 763 vertebrate proteomes required a span gate to be usable
 
@@ -378,13 +365,11 @@ it can be attributed to iterating the model. The rule measures the rise.
 **{fig:jackhmmer_convergence}.** Convergence for each seed, with the
 sister-family trace beside it. Two runs never converge and are excluded from
 any completeness claim, and the third does. The curves decay to an asymptote
-of a few new targets a round rather than to zero, and §3.8 says what that
-tail is made of. The figure matters because of what the asymptote is made
-of. These searches do not stop finding things, they slow down, and the tail
-is proteins sharing one small domain rather than family members. That is why
-convergence alone cannot be a completeness criterion here, and why the
-completeness argument in §3.8 rests on three distant seeds recovering the
-same family core rather than on any single run converging.
+of a few new targets a round rather than to zero, and the tail is proteins
+sharing one small domain rather than family members. That is why convergence
+alone cannot be a completeness criterion here, and why the argument in §3.8
+rests on three distant seeds recovering the same family core rather than on
+any single run converging.
 
 ## 3.8 The family core is the same whichever seed finds it
 
@@ -437,15 +422,13 @@ themselves.
 ![](figures/proteome_copy_number.png)
 
 **{fig:proteome_copy_number}.** Copy number per proteome against annotation
-depth. The relationship is the warning label on every proteome-level count
-in this thesis: a gene set with fewer genes has fewer of these genes, and a
-census of annotations measures annotation as much as biology. Chapter 4 is
-the answer to it. This relationship is the single strongest argument in the
-thesis for searching genomes rather than gene sets. A census built on
-reference proteomes measures how thoroughly each organism has been annotated
-at least as much as it measures how many receptors that organism has, and
-the correlation drawn here is that confound made visible. Every absence
-claim in this thesis is taken to an assembly for this reason.
+depth. This relationship is the single strongest argument in the thesis for
+searching genomes rather than gene sets: a census built on reference
+proteomes measures how thoroughly each organism has been annotated at least
+as much as it measures how many receptors that organism has, and the
+correlation drawn here is that confound made visible. Every absence claim in
+this thesis is taken to an assembly for this reason, which is what Chapter 4
+begins.
 
 ## 3.10 What census v3 holds, and the three limits it carries forward
 

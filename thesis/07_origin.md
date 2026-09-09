@@ -73,14 +73,12 @@ individual pairs beating their own control.
 ![](figures/synteny_pair_classes.png)
 
 **{fig:synteny_pair_classes}.** Every pair class against its matched
-random-window control. The within-paralogue classes sit far above their null
-and every cross-paralogue class sits at or below it. This figure is the
-first test in the thesis of an assumption every earlier chapter had made.
-The paralogue cells were assigned from sequence, and nothing before this had
-checked them against evidence outside the gene itself. Neighbourhood
-similarity within a paralogue runs at two to four hundred times a matched
-null while every cross-family class sits at or below it, so the cells are
-orthology groups rather than similarity bins.
+random-window control. This is the first test in the thesis of an assumption
+every earlier chapter had made, since the paralogue cells were assigned from
+sequence and nothing before this had checked them against evidence outside
+the gene itself. Neighbourhood similarity within a paralogue runs at two to
+four hundred times a matched null while every cross-paralogue class sits at
+or below it, so the cells are orthology groups rather than similarity bins.
 
 **Across the family boundary there is nothing.** Over 168,241 pairs of IP₃ and
 ryanodine loci the highest mean similarity of any class is 0.0002, which is
@@ -94,15 +92,11 @@ one with a teleost. Only the second is about the locus.
 
 ![](figures/synteny_clade_decay.png)
 
-**{fig:synteny_clade_decay}.** How far a neighbourhood travels. Within a
-vertebrate class the three paralogues span 0.254 to 0.347. Across classes,
-ITPR3 retains 0.062 against 0.160 and 0.158, which is a 2.5-fold gap. The
-importance of splitting within-class from cross-class comparisons is that a
-pooled mean answers an easy question and a hard one at once. Two mammals
-share a neighbourhood almost trivially; whether a mammal shares one with a
-teleost is the measurement that says the locus is ancient. On that axis
-ITPR3's neighbourhood is the one that does not travel, which is a result
-about genome rearrangement rather than about the gene.
+**{fig:synteny_clade_decay}.** How far a neighbourhood travels, split into
+within-class and cross-class comparisons. Within a vertebrate class the
+three paralogues span 0.254 to 0.347. Across classes, ITPR3 retains 0.062
+against 0.160 and 0.158, which is a 2.5-fold gap and the one asymmetry in
+this panel that a pooled mean would have hidden.
 
 **ITPR3's neighbourhood is the one that does not travel.** It is still 157
 times its own null and 96.9 % of its cross-class pairs still beat their
@@ -110,15 +104,17 @@ control, so this is decay rather than absence. It is also worth noting what it
 is not. ITPR3 is the best-recovered paralogue in the genome sweep and the
 best-annotated. Ease of finding a gene and stability of the ground it sits on
 are different properties, and in human that ground is the major
-histocompatibility region.
+histocompatibility region at 6p21.31, one of the most rearranged and most
+polymorphic neighbourhoods in the genome.
 
 ## 7.4 The surviving paralogon links run through ITPR1
 
-If the three paralogues are the product of whole-genome duplication, their
-neighbourhoods should be paralogous rather than identical, meaning the
-flanking genes should be surviving copies of the same ancestral families under
-different names. That is exactly what a same-symbol test cannot see, and it is
-why cross-paralogue symbol similarity above is a flat zero.
+If the three paralogues are the product of whole-genome duplication [R179,
+R180], their neighbourhoods should be paralogous rather than identical,
+meaning the flanking genes should be surviving copies of the same ancestral
+families under different names. That is exactly what a same-symbol test
+cannot see, and it is why cross-paralogue symbol similarity above is a flat
+zero.
 
 At the root-key level two links survive, and each was scored against the rate
 at which random windows in the same genomes share a root family.
@@ -152,11 +148,12 @@ neighbourhoods share nothing.
 
 That is not a contradiction, and §7.13 says why at length. In short, a tree
 estimates the order of duplication, while a retained flanking ohnologue
-records which copies survived deletion beside each gene, and quartets from
-whole-genome duplication are known to lose flank copies independently of the
-duplication order. What can be said is that the synteny does not corroborate
-the tree's pair, and that whichever pair is sister, the ITPR1 neighbourhood is
-the one that kept its ohnologues.
+records which copies survived deletion beside each gene, and the quartets
+left by whole-genome duplication lose flank copies lineage by lineage in a
+way that carries no memory of the duplication order [R205, R183]. What can
+be said is that the synteny does not corroborate the tree's pair, and that
+whichever pair is sister, the ITPR1 neighbourhood is the one that kept its
+ohnologues.
 
 ## 7.5 A caller built only from the neighbours places 131 unlabelled loci
 
@@ -186,12 +183,10 @@ toward the stricter setting.
 threshold range, with the random-window false-call rate drawn beside the
 call rate. At the chosen setting it is correct on 405 of 405 calls over 503
 annotation-confirmed loci, calls 80.5 % of them, and calls 6 of 726 random
-control windows. The importance of this calibration is the rule it rejects.
-Optimising call rate alone selects the loosest setting available, which is
-how an instrument gets tuned into agreeing with itself, so the threshold is
-chosen to maximise the difference between the call rate and the rate at
-which random neighbourhoods are called. The caller then places 131 loci that
-the alignment could not label, each with a null tail probability attached.
+control windows. Drawing both curves is what makes the operating point
+defensible, since the two move together and only their difference says what
+a setting is worth. The caller then places 131 loci that the alignment could
+not label, each with a null tail probability attached.
 
 Accuracy is 1.000 across the whole range, so it separates nothing and is not
 what is optimised. It is reported rather than used.

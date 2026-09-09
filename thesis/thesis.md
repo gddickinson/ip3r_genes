@@ -12,9 +12,9 @@ and 7,691 reference proteomes.*
 
 **Correspondence:** george.dickinson@gmail.com
 
-The analyses this document reports were carried out over twenty-six working
-sessions in the repository it is built from, and the document was written from
-their committed outputs. The correspondent above directed the project and is
+The analyses this document reports were carried out over 35 working sessions
+in the repository it is built from, and the document was written from their
+committed outputs. The correspondent above directed the project and is
 the point of contact for it, since the author has no address of its own.
 
 ---
@@ -66,6 +66,15 @@ cryo-EM channel identifies the gate and the selectivity filter as the least
 changeable elements, places the ten measured IP₃ contacts outside the Pfam
 domain named after the ligand, and finds the constrained unit at the ligand
 site to be a pocket rather than the contacts themselves.
+
+Three things here are usable rather than only informative. The archive audit
+produces a list of 297 coordinate-level corrections with the evidence a
+curator would need to act on each. The per-residue constraint map is scored as
+a variant classifier and identifies which of four conservation layers a
+clinical resource for this family should quote. And five of the results are
+about method rather than about receptors, including a measured false-negative
+rate for genome-scale orthologue sweeps and a measurement of what a protein
+bait panel's breadth is actually worth.
 
 ## How this document is organised, and why it is long
 
@@ -123,6 +132,23 @@ non-zero on a missing figure, a missing chapter, a cited key with no reference
 row, a reference added without an audit, a glyph the document font cannot set,
 or a failed claim. Every one of those guards is broken on purpose on every
 build to confirm that it fires. Chapter 14 explains how.
+
+## Where the data, the code and the outputs are
+
+Every number in this document is recovered from a committed table, and every
+one of those tables is in the repository this document is built from, under
+`results/`, one directory per analysis task. The analysis code is under
+`scripts/`, one file per task, and the search application it was built on is
+under `src/`. The exact version of every external program the project ran is
+recorded in `results/toolchain_manifest.txt`, and the versions of the public
+databases queried are recorded in each task's own statistics file.
+
+Bulk inputs are deliberately not in the repository, because 503 genome
+assemblies and 7,691 reference proteomes are not a reviewable artefact. What
+is committed instead is the manifest that declares exactly which ones were
+used, with the rule that admitted each, so the download is reproducible from a
+table rather than from a description. `manuscript/deposit_notes.md` lists each
+excluded bulk class together with the command that regenerates it.
 
 ## How this project was carried out
 
@@ -183,17 +209,11 @@ signalling device rather than merely as a pore.
 **Figure 1.1.** The receptor's place in the phosphoinositide
 pathway, drawn as a hierarchy of scales running from the messenger to the
 cellular output. The layer this thesis is about is a single one of these
-boxes. The figure is here to show what the rest of the pathway is doing
-while the channel opens, because two of the results in later chapters
-concern the pathway rather than the channel: the loss of the family in whole
-eukaryotic kingdoms, and the enzyme repertoire that survives beside it. Its
-importance to the argument is that it fixes the level at which a
-genome-scale census can and cannot speak. A census counts genes, so it can
-say whether the channel is present and how many copies a genome carries, and
-it cannot say what a cell does with the signal. Every claim in this thesis
-lives in one box of this diagram, and Chapter 12's result about the enzyme
-that makes the ligand is the one place where the box above it is measured
-too.
+boxes, and the figure fixes the level at which a genome-scale census can and
+cannot speak. A census counts genes, so it can say whether the channel is
+present and how many copies a genome carries, and it cannot say what a cell
+does with the signal. Chapter 12's result about the enzyme that makes the
+ligand is the one place where the box above the channel is measured too.
 
 The receptor was identified in the decade after IP₃ was shown to release
 calcium from a non-mitochondrial store in pancreatic acinar cells [1].
@@ -210,15 +230,13 @@ for inositol 1,4,5-trisphosphate similar to ryanodine receptor* [5].
 literature records it, with each milestone drawn at the year of its
 published source. The figure is generated from a curated table in which no
 year is typed: each is read from the reference row it cites, so a milestone
-cannot be dated differently from the paper it rests on. The density on the
-right is the cryo-electron microscopy era, which is what made the structural
-half of this project possible. The figure matters because it shows how
-recently the evidence this thesis depends on became available. Forty years
-of work established the receptor's biochemistry and physiology, but the
+cannot be dated differently from the paper it rests on. What the shape shows
+is how recently the evidence this thesis depends on became available. The
+biochemistry and physiology were settled over forty years, but the
 near-atomic structures that make a residue-level constraint map
-interpretable are less than a decade old, and the genome assemblies that
-make a 503-genome census possible are more recent still. The questions asked
-here could not have been asked before the right-hand end of this figure.
+interpretable are less than a decade old, and the genome assemblies behind a
+503-genome census are more recent still, so the questions asked here could
+not have been asked before the right-hand end of this figure.
 
 ## 1.2 The receptor shares its entire domain architecture with a much larger sister family
 
@@ -240,15 +258,12 @@ axis, the axial extent of the membrane, the pore radius profile and the two
 constrictions recovered from the coordinates. The narrowest luminal point
 lands on the GGGVGD selectivity-filter motif and the cytosolic constriction
 on the gate residues, neither of which the geometry was told about. That
-agreement is what makes the measurement usable as a coordinate system in
-Chapters 11 and 12. This measurement is load-bearing for two later chapters
-rather than illustrative. Because the filter and the gate were recovered
-from the coordinates blind, and landed on the motif and the residues the
-literature names, the same geometry can be trusted to define a luminal loop
-boundary that no annotation carries, which is what Chapter 11 needs, and to
-define a ligand pocket by distance rather than by a contact list, which is
-what Chapter 12 needs. A structure drawn from a published residue list could
-do neither, because it would only return what was put into it.
+blind agreement is what makes the same geometry usable as a coordinate
+system later: it can define a luminal loop boundary no annotation carries,
+which Chapter 11 needs, and a ligand pocket measured by distance rather than
+taken from a contact list, which Chapter 12 needs. A structure drawn from a
+published residue list could do neither, because it would only return what
+was put into it.
 
 In domain-annotation terms the diagnostic signatures of the family are the MIR
 domains (PF02815) in the suppressor region, the IP₃-binding core Ins145_P3_rec
@@ -270,14 +285,12 @@ twice the size at around 4,900 to 5,000 residues.
 is also carried by a ryanodine receptor, in the same copy number, down to
 the two RIH domains. What separates the families is what the ryanodine
 receptors carry in addition: four further domains and some 2,200 extra
-residues. A search built on the shared signatures cannot tell the two apart,
-which is the practical form of a statement about descent. This figure is the
-reason the project has the shape it does. Because the diagnostic signatures
-cannot separate the two families, every stage from the first enumeration to
-the last structural comparison had to carry a positive family test, and the
-sister family had to be searched alongside rather than filtered out. Roughly
-half the methodological rules in Chapter 14 exist because of what this
-figure shows.
+residues. This figure is the reason the project has the shape it does.
+Because the diagnostic signatures cannot separate the two families, every
+stage from the first enumeration to the last structural comparison had to
+carry a positive family test, and the sister family had to be searched
+alongside rather than filtered out. Roughly half the methodological rules in
+Chapter 14 exist because of what this figure shows.
 
 Three consequences of that shared architecture run through every chapter of
 this thesis.
@@ -320,17 +333,15 @@ and IRBIT [18].
 ![](figures/fig_1.3_gating_logic.png)
 
 **Figure 1.3.** What opens the channel and what closes it, drawn as
-the logic rather than as a mechanism. The point for this thesis is the last
-row: the same channel is used to produce puffs, waves and oscillations, and
-the properties that distinguish those outputs are properties of the
-individual paralogue. The importance for a census is that the three
-vertebrate paralogues are not interchangeable parts. If they were, their
+the logic rather than as a mechanism. The row that matters for a census is
+the last one: the same channel produces puffs, waves and oscillations, and
+the properties that distinguish those outputs belong to the individual
+paralogue. If the three vertebrate paralogues were interchangeable, their
 copy number would be a matter of dosage and their individual retention would
 carry little information. Because they differ in affinity, in calcium
-sensitivity and in what downstream output they produce, the finding in
-Chapter 9 that all three are retained in every vertebrate genome is a
-statement about three distinct functions rather than about three copies of
-one.
+sensitivity and in downstream output, the finding in Chapter 9 that all
+three are retained in every vertebrate genome is a statement about three
+distinct functions rather than about three copies of one.
 
 Those output differences are the reason the paralogues matter. The three
 vertebrate receptors differ in IP₃ affinity, in calcium sensitivity, in
@@ -354,27 +365,38 @@ been tested at the level of an assembly rather than a gene set. An absence in
 a proteome is a statement about what a gene caller found. Whether it is also a
 statement about the genome is a different measurement, and nobody had made it.
 
-**Where the three vertebrate paralogues came from had no tested answer.** That
-vertebrates carry three is a database fact. That the three arose in the two rounds of
-whole-genome duplication at the base of the vertebrates [23,24] is a
-reasonable inference from their number and their age, and it had not been
-tested against the genomic neighbourhoods that a duplication of that kind
-leaves behind. Which two of the three are sisters had no published answer at
-all. Worse, the proposition that the IP₃ and ryanodine receptor triplications
-happened independently, which this project's own background document asserted,
-turned out to have no primary source and had to be downgraded to an open
-question before any of the work could begin. Chapters 6 and 7 answer it.
+**Where the three vertebrate paralogues came from had no tested answer.**
+That vertebrates carry three is a database fact. That the three arose in the
+two rounds of whole-genome duplication at the base of the vertebrates [23,24] is a reasonable inference from their number and their age, and it had
+not been tested against the genomic neighbourhoods that a duplication of
+that kind leaves behind. Which two of the three are sisters had no published
+answer at all. Worse, the proposition that the IP₃ and ryanodine receptor
+triplications happened independently, which this project's own background
+document asserted, turned out to have no primary source and had to be
+downgraded to an open question before any of the work could begin. Chapters
+6 and 7 answer it.
 
 **What has happened to the paralogues since could not be asked without a
-false-negative rate.** Gene families of this age normally lose copies [25]. Whether this one has, and where, is a question
-that cannot be answered without a false-negative rate, because a gene that a
-search fails to find looks exactly like a gene that is not there. That single
-sentence determined the structure of a third of this thesis.
+false-negative rate.** Gene families of this age normally lose copies
+[25]. Whether this one has, and where, is a question that cannot be
+answered without a false-negative rate, because a gene that a search fails
+to find looks exactly like a gene that is not there. That single sentence
+determined the structure of a third of this thesis.
 
 **How well the family is recorded had never been audited.** Every one of the
-questions above is answered using public databases, and the quality of those databases for this
-family had never been audited. The audit turned out to be a result in its own
-right.
+questions above is answered using public databases, and the quality of those
+databases for this family had never been audited. The audit turned out to be
+a result in its own right.
+
+Those four gaps are the questions this thesis answers, and they can be stated
+in one sentence each. How far does the family reach, measured against a
+declared search space rather than against whatever records exist? Where did
+the three vertebrate paralogues come from, and which two of them are sisters?
+Has any vertebrate lineage lost one, and how would anybody know the difference
+between a loss and a search that failed? And how well is the family recorded
+by the public archives that every one of those answers depends on? Chapters 5,
+6 and 7, 9 and 13 answer them in that order, and Chapters 3, 4, 8, 10, 11 and
+12 build and test the instruments the answers rest on.
 
 ## 1.5 How every claim in this thesis is scoped
 
@@ -489,18 +511,14 @@ two.
 **Figure 2.7.** The curated disease-variant map, with each variant
 recorded as `point`, `domain` or `gene` according to how far its cited
 source actually localises it. That third column is the honesty of the
-figure. A source that reports a deletion of the gene cannot be drawn as a
-residue, and a map that drew it as one would create the impression of a
-resolution the literature does not have. Chapter 11 returns to these
-positions with a harvested variant set of its own and asks whether they sit
-where the conservation says they should. The distinction this figure draws
-is what makes Chapter 11's variant analysis possible at all. A constraint
-map is scored against positions, and a literature that localises most of its
-variants to a domain or to a whole gene cannot supply them. Recording how
-far each source actually localises its variant is what showed that only two
-residue-level positions were available from the literature, which is why the
-variant analysis had to harvest a clinical database instead and use those
-two as its positive control.
+figure: a source reporting a deletion of the whole gene cannot be drawn as a
+residue, and a map that drew it as one would assert a resolution the
+literature does not have. The distinction is what makes Chapter 11's variant
+analysis possible at all. A constraint map is scored against positions, and
+recording how far each source localises its variant is what showed that only
+two residue-level positions were available from the literature, which is why
+that chapter harvests a clinical database instead and uses those two as its
+positive control.
 
 ## 2.3 The background claim about gene size was false, and it became a measurement
 
@@ -519,15 +537,13 @@ three paralogues while the protein length varies by about 3 %.
 **Figure 2.1.** The three human genes drawn to one scale
 from Ensembl coordinates. Exon count is nearly identical across the three
 and genomic span is not, and the difference between them is almost entirely
-intron length. The claim that failed the audit is the one this figure makes
-visible: a family whose protein length varies by 3 % and whose gene length
-varies by a factor of six and a half. The importance of this figure is that
-it turned a corrected sentence into a measurement. Three paralogues encoding
-proteins of the same length occupy genomic spans differing six and a half
-fold, which must mean that either their exon structure or their intron
-content differs, and only the first would be a statement about how the
-coding sequence has evolved. Chapter 8 resolves it in favour of the second,
-and that chapter exists because of this figure.
+intron length. The figure is where a corrected sentence became a
+measurement. Three paralogues encoding proteins whose lengths differ by 3 %
+occupy genomic spans differing by a factor of six and a half, which must
+mean that either their exon structure or their intron content differs, and
+only the first would be a statement about how the coding sequence has
+evolved. Chapter 8 resolves it in favour of the second, and that chapter
+exists because of this figure.
 
 A failed background claim is normally just a correction. This one became a
 measurement. If three paralogues of one gene, encoding proteins of the same
@@ -569,18 +585,15 @@ real distribution or an artefact, and no amount of reading resolves which
 
 **Figure 2.2.** What the databases said the family's range
 was at the start of this project, shown as signature counts by taxon from a
-live InterPro query. The plant and fungal columns are the anomaly. They are
-also a good illustration of why a count of records is a weak instrument for
-a range question: a record enters this figure by carrying a domain
-annotation, and nothing in the count says whether the protein is real,
-whether it is in that organism's genome, or whether it is an IP₃ receptor at
-all. The figure is important as a statement of what was not known. Every
-column here is a count of database records, and the two anomalous ones are
-81 proteins in kingdoms whose model organisms have none. Nothing in a record
-count can say whether those proteins are real, whether they are in their
-organisms' genomes, or whether they are IP₃ receptors, and turning this
-figure into a biological range claim took the two chapters and 194 genome
-searches that Chapter 5 reports.
+live InterPro query. The plant and fungal columns are the anomaly: 81
+proteins in kingdoms whose model organisms have none. The figure is
+important as a statement of what was not known, and as an illustration of
+why a count of records is a weak instrument for a range question. A record
+enters here by carrying a domain annotation, and nothing in the count says
+whether the protein is real, whether it is in that organism's genome, or
+whether it is an IP₃ receptor at all. Turning this figure into a biological
+range claim took the two chapters and 194 genome searches that Chapter 5
+reports.
 
 ## 2.5 The sister-family hazard was measured in the query that was supposed to be clean
 
@@ -642,14 +655,11 @@ family alignment, mapped onto human ITPR1 numbering, with the domain
 architecture beneath it. Chapter 11 rebuilds this at a very different depth,
 using 249 to 265 orthologues of each individual paralogue rather than 25
 sequences of the whole family, and the two agree about where the peaks are.
-That agreement is the useful thing to know about a profile computed from 25
-sequences. The agreement between this 25-sequence profile and Chapter 11's
-260-sequence one matters for a practical reason. If a shallow family
-alignment and a deep within-paralogue alignment disagreed about where the
-receptor is conserved, neither could be used to interpret a clinical
-variant. That they agree about the peaks is what licenses Chapter 11 to
-compare four conservation layers as classifiers rather than to pick one on
-faith.
+That agreement matters for a practical reason: if a shallow family alignment
+and a deep within-paralogue alignment disagreed about where the receptor is
+conserved, neither could be used to interpret a clinical variant. It is what
+licenses Chapter 11 to compare four conservation layers as classifiers
+rather than to pick one on faith.
 
 ![](figures/fig_2.5_review_alignment_windows.png)
 
@@ -658,14 +668,12 @@ they stop agreeing. At the pore they are interchangeable, showing GGGVGD
 against GGGIGD in the filter and a gate that differs by conservative
 substitution. At the ligand site they are not: the arginines and lysines
 that grip the trisphosphate are absent from all three ryanodine receptors,
-and one window carries a three-residue deletion. The two families share a
-superfamily and a binding site that only one of them uses. Chapter 12 turns
-that observation into a measurement. This figure is the biological reason
-Chapter 12 exists. The two families are interchangeable at the pore and are
-not at the ligand site, which identifies the one place in the protein where
-a functional difference between them is visible in sequence. Everything
-Chapter 12 measures follows from that asymmetry, including the result that
-the module named after the ligand is the less constrained of the two.
+and one window carries a three-residue deletion. This asymmetry is the
+biological reason Chapter 12 exists, because it identifies the one place in
+the protein where a functional difference between the two families is
+visible in sequence. Everything that chapter measures follows from it,
+including the result that the module named after the ligand is the less
+constrained of the two.
 
 Measuring the structure for these figures produced three things the text did
 not have. The channel's two constrictions were recovered blind from the
@@ -681,15 +689,12 @@ deliberately.
 ![](figures/fig_2.6_review_regulation.png)
 
 **Figure 2.6.** The curated regulator map, showing what binds
-the receptor, where, and with what effect. It is included here because it is
-the part of the biology this thesis does not measure. Nothing in a
-genome-scale census can say whether a protein interaction is conserved, and
-a reader should be able to see the size of what is being left out. The
-figure is included as a statement of scope rather than as a result. Nothing
-in a genome-scale census can say whether a protein interaction is conserved,
-so the regulatory layer shown here is untouched by every measurement in this
-thesis. A reader deciding what the census does and does not settle should be
-able to see the size of what is left out, and this is it.
+the receptor, where, and with what effect. It is here as a statement of
+scope rather than as a result, because it is the part of the biology this
+thesis does not measure. Nothing in a genome-scale census can say whether a
+protein interaction is conserved, so the regulatory layer drawn here is
+untouched by every measurement in this document, and a reader deciding what
+the census settles should be able to see the size of what is left out.
 
 ## 2.7 A fault in one public interface, and why it was worth diagnosing
 
@@ -880,13 +885,12 @@ defining domain does not annotate.
 **Figure 3.1.** The enumerated search space by signature, with the
 overlaps drawn. The union is 15,421 proteins across 1,488 taxa and the
 intersection of all three seeds is 10,256. The difference between those two
-numbers is the argument for enumerating a union. The figure matters because
-it quantifies what a conventional search would have missed. A census built
-on the signature that names the family, which is what a reader looking for
-IP₃ receptors would query, would have missed 2,914 proteins including 758
-this census calls family across 385 taxa. The union is the difference
-between a search that finds what is annotated and one that finds what is
-there.
+numbers quantifies what a conventional search would have missed: a census
+built on the signature that names the family, which is what a reader looking
+for IP₃ receptors would query, would have missed 2,914 proteins including
+758 this census calls family across 385 taxa. Enumerating the union is the
+difference between a search that finds what is annotated and one that finds
+what is there.
 
 ## 3.4 A domain-architecture call is audited against gene symbols it never sees
 
@@ -905,31 +909,24 @@ that satisfy neither positive test.
 ![](figures/fig_3.2_census_lineage.png)
 
 **Figure 3.2.** The census by lineage with both family calls, and
-with the sister family drawn beside the family everywhere. The vertebrate
-bar carries 10,936 of the 15,421 records, which is a fact about sequencing
-effort. It is why Chapter 5 counts taxa and proteomes rather than records
-when it asks about range. The importance of this figure is as a warning
-about denominators. Two thirds of the records are vertebrate, which is a
-fact about how much sequencing effort has gone where rather than about where
-the family lives. Any range claim read off record counts would report the
-history of genome sequencing, which is why Chapter 5 counts proteomes and
-taxa instead.
+with the sister family drawn beside the family everywhere. The figure is a
+warning about denominators. The vertebrate bar carries 10,936 of the 15,421
+records, which is a fact about where sequencing effort has gone rather than
+about where the family lives, so any range claim read off record counts
+would report the history of genome sequencing. That is why Chapter 5 counts
+proteomes and taxa instead.
 
 ![](figures/fig_3.3_census_lengths.png)
 
 **Figure 3.3.** Length distributions of the two families as
 called. The medians are 2,671 and 4,856 residues and the distributions
-barely touch. This figure is the reason the length band is a good filter and
-the reason it is not used as the call: it separates the two families
-beautifully in a set whose annotations are already good, which is precisely
-the population in which no separation is needed. The figure is important
-because it shows why a filter that works is still not evidence. Length
-separates the two families almost perfectly here, and it does so on a
-population whose annotations are already good, which is precisely where no
-separation is needed. In the fragmentary and unannotated records where the
-call actually matters, this separation is unavailable, and a project that
-had trusted it would have inherited annotation quality as a definition of
-the gene family.
+barely touch. The figure shows why a filter that works is still not
+evidence: length separates the two families almost perfectly here, and it
+does so on a population whose annotations are already good, which is
+precisely where no separation is needed. In the fragmentary and unannotated
+records where the call actually matters, this separation is unavailable, and
+a project that had trusted it would have inherited annotation quality as a
+definition of the gene family.
 
 **The audit of that rule is possible because the rule never sees a gene
 symbol**, which makes symbols an independent label to score it against. Every
@@ -1000,11 +997,12 @@ at all. The SHA-256 of every seed set, alignment and profile is recorded, so a
 rebuild that drifts is visible in the data rather than only in a count.
 
 **The instrument is calibrated before it is used.** Both profiles were run
-over the whole archived search space, comprising 15,381 records whose call
-came from a rule that read annotation rather than residues, and the two were
-scored against each other. With the seed sequences removed, because they are
-in that set by construction, the profile assignment agrees with the
-architecture call on 11,875 records and disagrees on 1.
+over the archived sequence set, which holds 15,381 of the census's 15,421
+records, every one of them called by a rule that read annotation rather than
+residues, and the two instruments were scored against each other. With the
+seed sequences removed, because they are in that set by construction, the
+profile assignment agrees with the architecture call on 11,875 records and
+disagrees on 1.
 
 ![](figures/fig_3.5_profile_separation_vert.png)
 
@@ -1012,15 +1010,11 @@ architecture call on 11,875 records and disagrees on 1.
 other, with the band inside which no call is made drawn rather than
 described. A call requires the winning profile to clear 30 bits, to span at
 least 200 match states, and to beat the loser by more than 10 % of its own
-score. The margin is **relative** and not absolute because bit scores scale
-with alignable length, so a fixed gap would call every full-length protein
-confidently and no fragment at all. The relative margin is what makes this
-instrument usable on the records the census most needs. Because bit scores
-scale with alignable length, an absolute threshold would confidently call
-every full-length protein and refuse every fragment, which would restrict
-the census to the sequences that were never in doubt. The relative form is
-what allows 2,314 records the architecture rule could not decide to be
-called at all.
+score. That margin is relative rather than absolute because bit scores scale
+with alignable length, so a fixed gap would confidently call every
+full-length protein and refuse every fragment, restricting the census to the
+sequences that were never in doubt. The relative form is what allows 2,314
+records the architecture rule could not decide to be called at all.
 
 The span floor is measured rather than tuned. In this project's own structural
 domain coordinates the shortest observed PF08709, which is the IP₃-binding
@@ -1043,13 +1037,11 @@ assumed.
 census keeps the two verdicts side by side and merges them by a stated rule:
 both agreeing gives a high-confidence call, one speaking gives that one's, a
 disagreement is kept and reported as a conflict rather than resolved by
-preference, and neither speaking leaves the record unassigned. Across 16,039
-records there are two conflicts. The importance of keeping two verdicts per
-record is that it makes disagreement visible rather than resolvable by
-preference. Two instruments reading different evidence disagree on two
-records in 16,039, which is the number that justifies treating the merged
-call as reliable, and the two conflicts are carried forward as conflicts
-rather than assigned to whichever instrument the author trusted more.
+preference, and neither speaking leaves the record unassigned. Two
+instruments reading different evidence disagree on two records in 16,039,
+which is the number that justifies treating the merged call as reliable, and
+keeping both verdicts is what makes a disagreement visible instead of
+assigning it to whichever instrument the author trusted more.
 
 ## 3.6 A sweep of 763 vertebrate proteomes required a span gate to be usable
 
@@ -1112,13 +1104,11 @@ it can be attributed to iterating the model. The rule measures the rise.
 **Figure 3.7.** Convergence for each seed, with the
 sister-family trace beside it. Two runs never converge and are excluded from
 any completeness claim, and the third does. The curves decay to an asymptote
-of a few new targets a round rather than to zero, and §3.8 says what that
-tail is made of. The figure matters because of what the asymptote is made
-of. These searches do not stop finding things, they slow down, and the tail
-is proteins sharing one small domain rather than family members. That is why
-convergence alone cannot be a completeness criterion here, and why the
-completeness argument in §3.8 rests on three distant seeds recovering the
-same family core rather than on any single run converging.
+of a few new targets a round rather than to zero, and the tail is proteins
+sharing one small domain rather than family members. That is why convergence
+alone cannot be a completeness criterion here, and why the argument in §3.8
+rests on three distant seeds recovering the same family core rather than on
+any single run converging.
 
 ## 3.8 The family core is the same whichever seed finds it
 
@@ -1171,15 +1161,13 @@ themselves.
 ![](figures/fig_3.8_proteome_copy_number.png)
 
 **Figure 3.8.** Copy number per proteome against annotation
-depth. The relationship is the warning label on every proteome-level count
-in this thesis: a gene set with fewer genes has fewer of these genes, and a
-census of annotations measures annotation as much as biology. Chapter 4 is
-the answer to it. This relationship is the single strongest argument in the
-thesis for searching genomes rather than gene sets. A census built on
-reference proteomes measures how thoroughly each organism has been annotated
-at least as much as it measures how many receptors that organism has, and
-the correlation drawn here is that confound made visible. Every absence
-claim in this thesis is taken to an assembly for this reason.
+depth. This relationship is the single strongest argument in the thesis for
+searching genomes rather than gene sets: a census built on reference
+proteomes measures how thoroughly each organism has been annotated at least
+as much as it measures how many receptors that organism has, and the
+correlation drawn here is that confound made visible. Every absence claim in
+this thesis is taken to an assembly for this reason, which is what Chapter 4
+begins.
 
 ## 3.10 What census v3 holds, and the three limits it carries forward
 
@@ -1229,7 +1217,9 @@ The scope is 309 assemblies, and it is the union of two rules.
 
 The first rule is taxonomic. It takes one best assembly per vertebrate order
 [32], 161 of them, ranked by a stated function that prefers annotated over
-unannotated, RefSeq over GenBank, then assembly level, then scaffold N50.
+unannotated, RefSeq over GenBank, then assembly level, then scaffold N50,
+which is the length such that half the assembly sits in pieces at least that
+long and is the standard summary of how contiguous an assembly is.
 
 The second rule is a margin rule, and it is computed from the census rather
 than hand-listed. Four positive tests put a species in scope: its reference
@@ -1333,24 +1323,20 @@ so no result below is excluded on control grounds.
 ![](figures/fig_4.1_ledger_by_class.png)
 
 **Figure 4.1.** The three-paralogue ledger across 309 vertebrate
-genomes, by class. What the figure shows is what the rest of this thesis has
-to explain: the family is found nearly everywhere it is looked for, and the
-red is concentrated in classes rather than scattered. The importance of this
-figure is that it is the raw ledger before any of Chapter 9's restatement,
-so it shows the problem that chapter had to solve. The red is concentrated
-in particular vertebrate classes rather than scattered, and those classes
-turn out to be the ones whose assemblies are worst, not the ones whose
-biology is different. Reading this figure directly as a map of gene loss is
-the mistake the rest of the thesis is built to avoid.
+genomes, by class. This is the raw ledger before any of Chapter 9's
+restatement, so it shows the problem that chapter had to solve. The family
+is found nearly everywhere it is looked for, and what red there is falls in
+particular vertebrate classes rather than scattered across them. Those
+classes turn out to be the ones whose assemblies are worst rather than the
+ones whose biology is different, so reading this figure directly as a map of
+gene loss is the mistake the rest of the thesis is built to avoid.
 
 ![](figures/fig_4.2_ledger_status.png)
 
 **Figure 4.2.** Cell status across the sweep, by paralogue. Four
 cells of 927 are called absent, meaning no spliced-alignment locus and no
-remnant from the rescue search. That is the strongest negative this task
-produces and it is not yet a loss claim, for the reason §4.7 gives. The four
-absent cells matter because they are the strongest negative the search
-itself can produce, and because they are still not a loss claim. Chapter 9
+remnant from the rescue search. Those four are the strongest negative the
+search itself can produce, and they are still not a loss claim: Chapter 9
 shows that every one sits in an assembly that could not hold the gene or in
 a genome whose paralogue labels the bait panel cannot resolve. The distance
 between this figure and that conclusion is the distance between a search
@@ -1413,7 +1399,10 @@ assembly.
 The bar this project uses is the median measured IP₃ receptor genomic span,
 142,212 bp of contig N50, taken from gene geometry with no error rate in its
 derivation. **120 of 309 genomes fall below it, which is 39 %, and they are
-not a random 39 %** [35]. Two thirds of birds fail it against 11 % of
+not a random 39 %.** Assembly quality across the vertebrates is uneven by
+clade and by sequencing era, which is the problem the reference genome
+consortia were set up to address [35], and this family's genes are long
+enough to feel it. Two thirds of birds fail it against 11 % of
 ray-finned fish, and 68 % of margin species against 12 % of order
 representatives.
 
@@ -1421,15 +1410,11 @@ representatives.
 
 **Figure 4.3.** Recovery against assembly contiguity, binned
 on the bar rather than across it. A sliding window straddling the threshold
-would report a recovery rate that no genome in the window has, and would
-draw the curve straight through the very line the panel exists to show. The
-importance of binning on the bar rather than across it is that a sliding
-window straddling a threshold reports a recovery rate that no genome in the
-window actually has, which would smooth away the very discontinuity the
-panel exists to show. The relationship drawn here is the confounder that
-every absence claim in this thesis has to survive, and it is why the
-contiguity floor is applied before any cell is read as evidence about
-biology.
+would report a recovery rate that no genome in the window has, smoothing
+away the very discontinuity the panel exists to show. The relationship drawn
+here is the confounder every absence claim in this thesis has to survive,
+and it is why the contiguity floor is applied before any cell is read as
+evidence about biology.
 
 The pilot had predicted, from six genomes, that a fragmented assembly loses
 the long paralogues first, because a 231 kb ITPR2 needs a contig that an 82 kb
@@ -1445,12 +1430,11 @@ structural rather than incidental.
 ![](figures/fig_4.4_ledger_copy_number.png)
 
 **Figure 4.4.** Copy number per genome across the sweep. The
-excess above three is almost entirely teleost, which Chapter 7 takes up. The
-figure matters because the excess above three copies is not distributed
-across the vertebrates. It is almost entirely in the ray-finned fish, which
-is what a whole-genome duplication confined to one lineage looks like from a
-copy count, and it is the observation Chapter 7 turns into a tested claim
-about which paralogue was doubled and retained.
+excess above three copies is not spread across the vertebrates but sits
+almost entirely in the ray-finned fish, which is what a whole-genome
+duplication confined to one lineage looks like from a copy count. Chapter 7
+turns that observation into a tested claim about which paralogue was doubled
+and retained.
 
 ## 4.8 The three paralogues are not annotated equally well
 
@@ -1543,13 +1527,11 @@ the IP₃ series misses 3 of 512 cells and the ryanodine series misses none of
 ![](figures/fig_4.5_s19_contiguity.png)
 
 **Figure 4.5.** The measured false-negative rate against assembly
-contiguity, with the bar drawn. The two series are independent, because the
-ryanodine sister cell uses none of the state rules that define the other
-one, and the two agree. This is the figure that licenses the retention
-result. A survey reporting zero losses is worth nothing unless somebody has
-measured how often the same search fails to find a gene that is demonstrably
-present, and that is what is plotted here. The two series are independent,
-since the sister series uses none of the state rules the family series
+contiguity, with the bar drawn. This is the figure that licenses the
+retention result, because a survey reporting zero losses is worth nothing
+unless somebody has measured how often the same search fails to find a gene
+that is demonstrably present. The two series are independent, since the
+ryanodine sister series uses none of the state rules the family series
 depends on, and they agree, which is what stops the number being read as the
 search agreeing with itself.
 
@@ -1700,14 +1682,13 @@ so the labels are not a judgement call.
 ![](figures/fig_4.8_s19_drift.png)
 
 **Figure 4.8.** Each kill rule scored as a classifier of a drift
-outcome measured on the finished model. The rule written for this family's
-specific hazard has a sensitivity of zero. This figure records an instrument
-failing at the one job it was built for. The rule written to catch
-sister-family drift in an iterative search has a sensitivity of zero across
-seven runs including all three that drifted, because the drift dilutes the
-very quantity the rule measures. The correction is a one-line change to a
-different axis, and it is reported rather than applied, because it was
-validated after the fact on the runs it would reclassify.
+outcome measured on the finished model. The figure records an instrument
+failing at the one job it was built for: the rule written to catch
+sister-family drift has a sensitivity of zero across seven runs, including
+all three that drifted, because the drift dilutes the very quantity the rule
+measures. The correction is a one-line change to a different axis, and it is
+reported rather than applied, because it was validated after the fact on the
+runs it would reclassify.
 
 **The sister-family rule fires on none of the seven runs, including all three
 that drifted.** The reason is now measured rather than described: off-family
@@ -1759,8 +1740,10 @@ synonymous rate is unidentifiable at 671 of 7,368 sites, and 373 of 420
 pairwise comparisons are flagged saturated. Any per-site rate formed as a
 ratio of sums is dominated by sites whose denominator is not estimable.
 
-**A likelihood tree need not resolve the question asked of it.** Chapter 6
-returns to this.
+**A likelihood tree need not resolve the question asked of it.** The test
+that compares the three sister arrangements leaves two topologies inside its
+95 % confidence set, so the sister question is answered by what the data
+excludes rather than by reading the best tree. Chapter 6 reports both.
 
 ## 4.16 Five results here apply to anyone doing the same thing
 
@@ -1778,9 +1761,10 @@ returns to this.
    whole genes.** At gene scale it returns what domain annotation already
    returns, its gain is fragments, and it adds gene-scale records only where
    the annotation is worst.
-5. **The rule everyone writes to catch iterative-search drift measures the
-   wrong thing.** Sister-family contamination is diluted by the drift it is
-   meant to detect.
+5. **The obvious rule for catching iterative-search drift measures the wrong
+   thing.** Sister-family contamination is the quantity this project and its
+   predecessor both chose to monitor, and it is diluted by the very drift it
+   is meant to detect.
 
 ---
 
@@ -1801,6 +1785,10 @@ one, is there one? Answering it requires searching assemblies and, crucially,
 a **positive control that demonstrates the search could have found the gene
 had it been there**. Without that control, "no IP₃ receptor in *Arabidopsis*"
 is indistinguishable from "the search did not run properly on *Arabidopsis*".
+The distinction is not academic in this family. Plant cells release calcium in
+response to IP₃, no plant receptor gene has been identified, and the standing
+review of the subject asks in its title whether the receptor is real [36],
+so a plant absence is a claim somebody has been waiting for.
 
 Both questions are answered here, over 6,928 reference proteomes and 194
 genomes.
@@ -1825,8 +1813,10 @@ recorded, together with what they took out of it, rather than retried. A
 listed but unpublished proteome is not a transient failure and retrying cannot
 fix it.
 
-The instrument is Chapter 3's, unchanged: the same two profiles, the same
-30-bit floor, the same 200-match-state span gate and the same relative margin.
+The instrument is Chapter 3's, unchanged: the same two profile hidden Markov
+models [29] over the same reference proteome collection [30], with the
+same 30-bit floor, the same 200-match-state span gate and the same relative
+margin.
 Reusing it rather than building a new one is what makes the vertebrate and
 non-vertebrate numbers comparable at all.
 
@@ -1849,7 +1839,10 @@ and has been lost repeatedly since. That is a different claim from an animal
 innovation, and it is what the figure supports.
 
 The shape is a family that is ancestrally eukaryotic and has been lost
-repeatedly. It is in 94 % of arthropod proteomes, 96 % of nematode, and 100 %
+repeatedly, which is what earlier surveys of the calcium-signalling toolkit
+had inferred from smaller samples [37,38,39] and what repeated loss is
+now understood to look like as an ordinary evolutionary mechanism [25]. It
+is in 94 % of arthropod proteomes, 96 % of nematode, and 100 %
 of molluscan, cnidarian and sponge. It is in 65 % of oomycetes, 67 % of
 euglenozoans, 94 % of ciliates and 69 % of amoebozoans. It is in none of 634
 archaeal and none of 3,537 bacterial proteomes.
@@ -1859,15 +1852,12 @@ archaeal and none of 3,537 bacterial proteomes.
 **Figure 5.2.** The same two-profile separation outside
 the vertebrates, with the no-call band drawn. 28,137 targets were scored by
 at least one profile and 2,769 by both above the floor, which are the only
-ones where the two families can be said to compete at all. Of those, one
-falls inside the band where the instrument declines to choose. The family
-separation built for the vertebrates transfers to the eukaryotes without
-modification. The importance of this panel is that it shows the family
-separation transferring intact to organisms a billion years from where it
-was calibrated. Of 2,769 targets where the two families can be said to
-compete at all, one falls inside the band where the instrument declines to
-choose. Without that, every non-vertebrate count in Chapter 5 would be a
-mixture of two families rather than a measurement of one.
+ones where the two families can be said to compete at all, and exactly one
+of those falls inside the band where the instrument declines to choose. The
+family separation therefore transfers intact to organisms a billion years of
+divergence away from where it was calibrated. Without that, every
+non-vertebrate count in Chapter 5 would be a mixture of two families rather
+than a measurement of one.
 
 ## 5.4 Land plants and Dikarya have no IP₃ receptor, and their early-diverging relatives do
 
@@ -1888,7 +1878,13 @@ against 15 of 48 Chlorophyta. For the fungi, **0 of 1,034 Ascomycota and 0 of
 Chytridiomycota and both Basidiobolomycota.
 
 That is the shape of a loss rather than of an absence: the family is present
-in the early-diverging lineage of both kingdoms and gone from the derived one.
+in the early-diverging lineage of both kingdoms and gone from the derived one,
+with the fungal split read against the accepted backbone of the kingdom
+[40]. In the plants it puts a genomic answer under a question the plant
+calcium literature has kept open, because the green algae these lineages
+descend from carry the gene [41] and the land plants that followed do not,
+so whatever performs the physiology there is built from other channel
+families [42,43].
 
 **Every plant and fungal record was then chased individually**, 64 and 35 of
 them, through four independent lines of evidence, because a handful of records
@@ -1898,17 +1894,14 @@ contamination artefact.
 ![](figures/fig_5.3_plant_fungal_chase.png)
 
 **Figure 5.3.** Every plant and fungal record chased, with the
-cross-kingdom identities the contamination test rests on. That is the
-load-bearing axis: a genuine deep homologue is 20 to 40 % identical to its
-metazoan relatives, while an assembly contaminant is 95 to 100 % identical
-to one particular animal. Nothing here is above 40 %. This figure decides
-whether the plant and fungal records are biology or contamination, which is
-the question the whole range claim turns on. A genuine deep homologue is 20
-to 40 % identical to its metazoan relatives and an assembly contaminant is
-95 to 100 % identical to one particular animal, and nothing here is above 40
-%. The surviving records are therefore real green-algal and early-diverging
-fungal genes, which is what makes the land-plant and Dikarya absences losses
-rather than the family's boundary.
+cross-kingdom identities the contamination test rests on. That axis decides
+whether these records are biology or contamination, which is the question
+the whole range claim turns on: a genuine deep homologue is 20 to 40 %
+identical to its metazoan relatives, while an assembly contaminant is 95 to
+100 % identical to one particular animal. Nothing here is above 40 %, so the
+surviving records are real green-algal and early-diverging fungal genes,
+which is what makes the land-plant and Dikarya absences losses rather than
+the family's boundary.
 
 Twenty-two plant records and 25 fungal records survive every test, and the
 rest are fragments of real genes. The surviving plant records run from 19.9 %
@@ -1966,13 +1959,10 @@ same lineage as the seed, the absence next door is not a sensitivity artefact.
 **Figure 5.4.** Per-group convergence with the sister-family trace
 beside it. One of four groups converges and the other three hit the kill
 criterion, and Chapter 4 explains why the rule that catches them is the
-wrong one. The figure matters for what the iterated searches did not find.
-Nine targets entered an accepted model that a single pass had not reported,
-two of them in a lineage this chapter calls empty, and both are
-mannosyltransferases rather than receptors. An iterative search sensitive
-enough to reach these lineages reaches exactly far enough to pick up the
-known false positive and no further, which is the most informative result it
-could have produced.
+wrong one. The figure matters as a sensitivity check on the absences this
+chapter reports: an iterative search that reached into an empty lineage and
+found a receptor would overturn them, and what the trace shows instead is a
+search running until it meets the sister family and stopping there.
 
 Nine targets entered an accepted model that the single pass never reported.
 They are named rather than counted, and two of them sit in a lineage this
@@ -1989,17 +1979,22 @@ A proteome absence is a fact about a gene caller. The 194-genome sweep turns
 the ones that matter into facts about genomes.
 
 **The scope is chosen to sample most finely where the negative claim is.**
-Five rules were applied to 24,596 NCBI eukaryotic reference assemblies, minus
-the 6,216 vertebrate ones: one assembly per non-vertebrate eukaryotic phylum;
-one per class in the five phyla with more than 100 swept proteomes; one per
-clade with at least ten swept proteomes and zero calls; the anchor organisms
-whose answer is known from the literature; and the highest-copy species per
-class. That gives 194 genomes and 100.4 Gbp.
+Five rules were applied to 24,596 NCBI eukaryotic reference assemblies
+[32], minus the 6,216 vertebrate ones: one assembly per non-vertebrate
+eukaryotic phylum; one per class in the five phyla with more than 100 swept
+proteomes; one per clade with at least ten swept proteomes and zero calls;
+the anchor organisms whose answer is known from the literature; and the
+highest-copy species per class. That gives 194 genomes and 100.4 Gbp.
 
 The third rule re-derives the target list from the presence table rather than
 repeating a summary, and in doing so it **found three absences that summary
 never named**: diatoms at 0 of 16, red algae at 0 of 12, and **Cestoda at 0 of
-11, a metazoan clade with no record at all.**
+11, a metazoan clade with no record at all.** The first two sit in lineages
+whose calcium-channel repertoires have been surveyed and found to differ
+sharply from the animal one [44], and the third is a clade that has shed
+gene families across its whole biology as an adaptation to parasitism [45].
+The apicomplexan and microsporidian absences belong with the severe genome
+reduction those lineages have undergone [46,47].
 
 **Both genomic thresholds had to be re-measured, and neither transferred.** A
 vertebrate IP₃ receptor gene spans 76 to 498 kb and a *Drosophila* one spans
@@ -2060,15 +2055,13 @@ pilot, 1 of 14 genomes was uncontrolled. Here, none.
 ![](figures/fig_5.6_absence_at_genome.png)
 
 **Figure 5.6.** Each absence claim with the number of
-controlled genomes drawn beside the number searched. A claim whose control
-bar is short is standing on nothing, and drawing the two together is the
-only honest way to present a table of zeros. The two bars in this figure are
-the difference between a database observation and a biological claim. A
-clade with no records in any proteome may simply not have been searched
-properly, so what licenses an absence claim is the number of genomes in
-which a measured positive control recovered a comparably long, deeply
-conserved gene. Drawing the controlled count beside the searched count is
-the only honest way to present a table of zeros.
+controlled genomes drawn beside the number searched. The two bars are the
+difference between a database observation and a biological claim. A clade
+with no records in any proteome may simply not have been searched properly,
+so what licenses an absence claim is the number of genomes in which a
+measured positive control recovered a comparably long, deeply conserved
+gene. A claim whose control bar is short is standing on nothing, and drawing
+the two counts together is the only honest way to present a table of zeros.
 
 **Every one of the 35 clade-level absences holds at assembly level, and none
 fails.** Ascomycota has none in 31 controlled assemblies, Streptophyta none in
@@ -2091,12 +2084,9 @@ then two sponges at 8 and 6.
 
 **Figure 5.5.** Copy number outside the vertebrates, with the
 vertebrate paralogue count drawn as a reference line rather than as a
-category. The family's copy number is not a vertebrate story: several
-invertebrate and protist lineages carry more receptors than any vertebrate.
-The importance of drawing the vertebrate paralogue count as a reference line
-is that it shows the vertebrate three to be unremarkable. A flatworm carries
-eighteen receptors and a ciliate thirteen, so copy-number expansion in this
-family is not a vertebrate story and the three paralogues are not the
+category. Drawing it that way shows the vertebrate three to be unremarkable:
+a flatworm carries eighteen receptors and a ciliate thirteen, so copy-number
+expansion in this family is not a vertebrate story and three is not the
 family's high-water mark. What is specific to the vertebrates is that their
 three copies are ancient, distinct and universally retained.
 
@@ -2128,18 +2118,14 @@ measured from the population it has already filtered.
 ![](figures/fig_5.7_identity_floor.png)
 
 **Figure 5.7.** The measured identity floor and the two
-populations it separates. The negative result here is what changed the
-instrument: outside the vertebrates the annotation axis is nearly empty,
-with 21 of 917 clusters carrying an informative gene name, so a second axis
-was added in which every recorded cluster is scored against both family
-profiles. Neither identity nor coverage separates the confirmed and
-contradicted populations cleanly. The importance of this figure is a
-negative result that changed the instrument. Outside the vertebrates the
-annotation axis is nearly empty, and neither identity nor coverage separates
-the confirmed from the contradicted loci cleanly, so a threshold placed on
-either would have been a number with no population behind it. A second,
-independent axis was added for that reason, and the calibration reports both
-rather than the one that looked better.
+populations it separates. The importance of the figure is a negative result
+that changed the instrument. Outside the vertebrates the annotation axis is
+nearly empty, with 21 of 917 clusters carrying an informative gene name, and
+neither identity nor coverage separates the confirmed from the contradicted
+loci cleanly, so a threshold placed on either would have been a number with
+no population behind it. A second, independent axis was added for that
+reason, scoring every recorded cluster against both family profiles, and the
+calibration reports both axes rather than the one that looked better.
 
 That calibration also refuses to write below a floor of genomes and confirmed
 loci, and the reason is an incident. A smoke-test run over one genome produced
@@ -2149,15 +2135,13 @@ pass vacuously is worse than no calibration.
 
 ![](figures/fig_5.8_span_inflation.png)
 
-**Figure 5.8.** Locus span against coding footprint, by group. A
-locus is much larger than the gene inside it, and by a factor that varies by
-group, which is the reason the intron parameter is set per group and the
-reason a locus is not a copy. The figure matters because it shows why a
-cluster of alignments is not a gene. A locus is much larger than the coding
-sequence inside it, and by a factor that varies roughly nine-fold between
-metazoan and protist genomes, so a single intron setting and a single
-contiguity bar would be far too lax for one group and far too strict for the
-other. This is the measurement behind the decision to set both per group.
+**Figure 5.8.** Locus span against coding footprint, by group. The
+figure shows why a cluster of alignments is not a gene: a locus is much
+larger than the coding sequence inside it, and by a factor that varies
+roughly nine-fold between metazoan and protist genomes, so a single intron
+setting and a single contiguity bar would be far too lax for one group and
+far too strict for the other. This is the measurement behind the decision to
+set both per group, and behind the rule that a locus is not a copy.
 
 ## 5.10 The family's range is stated with its scope attached
 
@@ -2263,7 +2247,7 @@ determinism, and Newick-legal unique tip labels.
 
 ## 6.3 The alignment is pinned to one thread because otherwise it is not reproducible
 
-The aligner is MAFFT in its most accurate iterative mode [36]: 61 minutes,
+The aligner is MAFFT in its most accurate iterative mode [48]: 61 minutes,
 producing 11,777 columns at 76.23 % gaps.
 
 **It is run single-threaded, by decision.** At automatic thread count it is not
@@ -2274,7 +2258,7 @@ built from this file, so it is pinned and the SHA-256 of input and output are
 recorded. A ragged alignment is a hard failure rather than a warning, because
 a silent aligner failure degrades to a star alignment with no other symptom.
 
-An automated trimming heuristic [37] then keeps **1,797 of 11,777 columns,
+An automated trimming heuristic [49] then keeps **1,797 of 11,777 columns,
 15.3 %**. The choice of heuristic is recorded rather than tuned, because a
 trimming threshold picked by looking at the resulting tree is a threshold
 fitted to the answer.
@@ -2298,13 +2282,11 @@ the alignment that is can read it here rather than take it on trust.
 ![](figures/fig_6.4_msa_coverage.png)
 
 **Figure 6.4.** Per-sequence coverage of the trimmed alignment. The
-median is 0.96 and one tip of 134 covers less than half. A tip below half is
-not wrong, but it contributes gaps to every column the tree is inferred
-from, so it is named rather than left inside a median. Coverage matters
+median is 0.96 and one tip of 134 covers less than half. Coverage matters
 because a tip that covers half the alignment contributes gaps to every
 column the tree is inferred from, and gaps are not neutral for a likelihood
-model. Naming the one tip below half, rather than reporting only the median,
-is what allows a reader to judge whether any deep node depends on it.
+model. Naming that one tip, rather than reporting only the median, is what
+allows a reader to judge whether any deep node depends on it.
 
 ## 6.4 What the alignment says before any tree is built
 
@@ -2325,26 +2307,21 @@ a heuristic with.
 ![](figures/fig_6.2_msa_identity_heatmap.png)
 
 **Figure 6.2.** All-pairs identity across the representative
-set. Two identity matrices are committed, one scoring only mutually covered
-columns and one counting gaps, because they answer different questions and
-disagree systematically where a fragment is involved. The importance of
-committing two identity matrices rather than one is that they answer
-different questions and disagree systematically wherever a fragment is
-involved. A metric that counts gaps as mismatches makes every partial
+set. Two identity matrices are committed rather than one, because they
+answer different questions and disagree systematically wherever a fragment
+is involved. A metric that counts gaps as mismatches makes every partial
 sequence look divergent, which would confound sequence divergence with
 assembly quality, and that confound runs through this entire project.
 
 ![](figures/fig_6.3_msa_group_identity.png)
 
-**Figure 6.3.** Identity within and between groups. The three
-vertebrate paralogues sit at 0.74 to 0.79 to each other and 0.91 within
-themselves. This figure fixes the scale every later comparison is read
-against. The three paralogues sit at 0.74 to 0.79 to one another and at 0.91
-within themselves, which is close enough that a bait from one aligns at all
-three genes. That single fact is why the duplication detector of Chapter 8
-needed the family call before its geometry meant anything, and why the
-attribution margin inherited from a less similar family had to be
-overturned.
+**Figure 6.3.** Identity within and between groups. This
+figure fixes the scale every later comparison is read against: the three
+vertebrate paralogues sit at 0.74 to 0.79 to one another and at 0.91 within
+themselves, which is close enough that a bait from one aligns at all three
+genes. That single fact is why the duplication detector of Chapter 8 needed
+the family call before its geometry meant anything, and why the attribution
+margin inherited from a less similar family had to be overturned.
 
 **The alignment's preview of the sister question turns out to be wrong.** The
 alignment can rank the three between-paralogue identities: ITPR1 with ITPR2
@@ -2352,7 +2329,7 @@ leads at 0.791, against 0.753 and 0.741, and the leading pair's interquartile
 range does not overlap either of the others. That is a real ranking and it is
 not a phylogenetic estimate, because it ignores the outgroup, the rate
 variation and the branch lengths, so it was reported as a preview with the
-tree named as the answer. Section 6.7 reports that the tree contradicts it.
+tree named as the answer. Section 6.8 reports that the tree contradicts it.
 
 **The alignment's preview of the cyclostome loci is wrong in a different way.**
 Every cyclostome in this set carries three loci, all won by the same bait, so
@@ -2366,30 +2343,28 @@ statistic over groups that are certainly not vertebrate paralogues gives the
 no-signal baseline: invertebrate metazoa lean toward ITPR1 at a median margin
 of 0.008, protists at 0.002, and the ryanodine receptors at 0.002. The
 cyclostome margin is five times that, so the lean is real. What it means is a
-different question, and §6.8 gives an answer neither reading predicted.
+different question, and §6.9 gives an answer neither reading predicted.
 
 ![](figures/fig_6.1_msa_conservation.png)
 
 **Figure 6.1.** Per-column conservation with human ITPR1's
 domain architecture mapped onto it through the alignment, by walking the
 human row and counting ungapped positions, rather than by scaling residue
-coordinates onto column coordinates. The latter is the mistake that puts a
-domain boundary in the wrong place by exactly the gap content of the
-sequence. The importance of mapping the architecture through the alignment
-rather than by scaling coordinates is that the second method places every
-domain boundary wrong by exactly the gap content of the sequence. Since
-Chapters 11 and 12 both make claims about which element a residue belongs
-to, a systematic offset here would have propagated into every one of them.
+coordinates onto column coordinates. The second method places every domain
+boundary wrong by exactly the gap content of the sequence. Since Chapters 11
+and 12 both make claims about which element a residue belongs to, a
+systematic offset here would have propagated into every one of them.
 
 ## 6.5 The exhaustive model scan was measured and abandoned
 
-The obvious command is an exhaustive model scan [38]. It was started, timed
+The obvious command is an exhaustive model scan [50]. It was started, timed
 and abandoned, and the measurement is the reason: **11 models of up to 1,232
 in 672 seconds, projecting about 20.9 hours.**
 
 The cost is the free-rate models, and they are not optional on this alignment,
-because the best free-rate model beats the best gamma model by 682.3 BIC
-units. Dropping them to buy the time back would have returned a measurably
+because the best free-rate model beats the best gamma model by 682.3 units of
+the Bayesian information criterion, the fit statistic the selection is scored
+on. Dropping them to buy the time back would have returned a measurably
 worse model.
 
 The replacement is greedy in two stages, with both tables committed: every
@@ -2406,9 +2381,9 @@ matrix came is checkable.
 
 ## 6.6 The tree search is pinned and guarded, and its rooting doubles as a control
 
-The analysis used one maximum-likelihood search [39], taking 71 minutes,
-with 1,000 ultrafast bootstrap replicates [40] and 1,000 approximate
-likelihood-ratio replicates [41]. **Threads are pinned rather than
+The analysis used one maximum-likelihood search [51], taking 71 minutes,
+with 1,000 ultrafast bootstrap replicates [52] and 1,000 approximate
+likelihood-ratio replicates [53]. **Threads are pinned rather than
 automatic**, because automatic thread count reads the machine's current load
 and the search is reproducible only at a fixed seed and a fixed thread count.
 The number pinned is what the program's own benchmark returned for this
@@ -2442,13 +2417,10 @@ and a filled dot marks every node clearing both support thresholds. No tip
 is ringed, because the relabelling rule described in §6.7 fires on none of
 them, and the legend entry for a ring appears only when a ring does, since a
 key naming a marker the figure does not carry asserts a correction that was
-never made. The importance of this tree is that it answers a question the
-literature did not have an answer to. The review's own audit found no
-published, support-annotated maximum-likelihood analysis with a ryanodine
-outgroup that fixes which two of the three paralogues are sisters. The
-rooting doubles as a control on the whole alignment, since a superfamily
-that did not come back as a clade would put every downstream result in
-doubt.
+never made. The tree matters because it answers a question the literature
+had left open: the review's own audit found no published, support-annotated
+maximum-likelihood analysis with a ryanodine outgroup that fixes which two
+of the three paralogues are sisters.
 
 ## 6.7 The three paralogues are clades, but only after the tree's own corrections
 
@@ -2503,12 +2475,11 @@ declined to place. A verification that cannot fire is not a verification.
 ![](figures/fig_6.9_paralog_placement.png)
 
 **Figure 6.9.** Where the tree places each tip against its
-census label, with the five unplaced tips named. The importance of this
-figure is that the tree overturns no census name. Thirty-nine tips agree
-with their label, none is reassigned, and five are left unplaced, and
-reciprocal best hits against an independent database uphold the census name
-for all five. A gene tree that had disagreed with the annotation would have
-cast doubt on the paralogue cells that every later chapter is built on.
+census label. Thirty-nine agree, none is reassigned, and the five the tree
+declines to place are named, with reciprocal best hits against an
+independent database upholding the name for every one of them. The panel
+matters because a gene tree disagreeing with the annotation would have cast
+doubt on the paralogue cells every later chapter is built on.
 
 ## 6.8 ITPR2 and ITPR3 are sisters, and the other two arrangements are rejected
 
@@ -2539,7 +2510,7 @@ fails any constraint that names a free tip.
 ![](figures/fig_6.7_sister_au.png)
 
 **Figure 6.7.** The three hypotheses under the approximately unbiased
-test [42], with log-likelihood difference and p-value on two panels
+test [54], with log-likelihood difference and p-value on two panels
 sharing one row of categories rather than on two y-axes. They are different
 measures on different scales, and a twin axis invites a comparison that has
 no meaning. This figure is the answer to Chapter 6's central question, and
@@ -2609,12 +2580,10 @@ with a median bootstrap of 100 and a median branch-test value of 99.
 
 **Figure 6.8.** Node support drawn as a scatter rather than as
 two histograms, because the claim is about the joint condition and a pair of
-marginals cannot show it. Drawing support as a joint condition matters
-because a node is only trustworthy when both branch tests agree, and two
-marginal histograms cannot show that. The bootstrap alone is known to be
-optimistic under model violation, which a 134-tip alignment spanning four
-kingdoms guarantees, so every well-supported claim in this thesis requires
-both.
+marginals cannot show it. A node is trustworthy here only when both branch
+tests agree. The bootstrap alone is known to be optimistic under model
+violation, which a 134-tip alignment spanning four kingdoms guarantees, so
+every well-supported claim in this thesis requires both.
 
 Every node a claim rests on is listed with its own support. The ITPR2 with
 ITPR3 clade the sister result depends on is at maximal support. The one weakly
@@ -2624,10 +2593,11 @@ slightly differently. The same clade including the unlabelled tips is at
 maximal support.
 
 **A model-violation guard was run over the whole search.** Because the
-bootstrap is optimistic under model violation, the whole search was re-run with an extra optimisation round on
-every bootstrap tree, and the same clade questions were asked of that tree,
-with membership read from a committed table rather than re-derived so that a
-bookkeeping difference cannot surface as a topology change.
+bootstrap is optimistic under model violation, the whole search was re-run
+with an extra optimisation round on every bootstrap tree, and the same clade
+questions were asked of that tree, with membership read from a committed
+table rather than re-derived so that a bookkeeping difference cannot surface
+as a topology change.
 
 **No claim is weakened or lost.** Nine of ten clear both thresholds in the
 guarded tree as well. The tenth was not well supported in the main tree
@@ -2731,14 +2701,12 @@ individual pairs beating their own control.
 ![](figures/fig_7.2_synteny_pair_classes.png)
 
 **Figure 7.2.** Every pair class against its matched
-random-window control. The within-paralogue classes sit far above their null
-and every cross-paralogue class sits at or below it. This figure is the
-first test in the thesis of an assumption every earlier chapter had made.
-The paralogue cells were assigned from sequence, and nothing before this had
-checked them against evidence outside the gene itself. Neighbourhood
-similarity within a paralogue runs at two to four hundred times a matched
-null while every cross-family class sits at or below it, so the cells are
-orthology groups rather than similarity bins.
+random-window control. This is the first test in the thesis of an assumption
+every earlier chapter had made, since the paralogue cells were assigned from
+sequence and nothing before this had checked them against evidence outside
+the gene itself. Neighbourhood similarity within a paralogue runs at two to
+four hundred times a matched null while every cross-paralogue class sits at
+or below it, so the cells are orthology groups rather than similarity bins.
 
 **Across the family boundary there is nothing.** Over 168,241 pairs of IP₃ and
 ryanodine loci the highest mean similarity of any class is 0.0002, which is
@@ -2752,15 +2720,11 @@ one with a teleost. Only the second is about the locus.
 
 ![](figures/fig_7.4_synteny_clade_decay.png)
 
-**Figure 7.4.** How far a neighbourhood travels. Within a
-vertebrate class the three paralogues span 0.254 to 0.347. Across classes,
-ITPR3 retains 0.062 against 0.160 and 0.158, which is a 2.5-fold gap. The
-importance of splitting within-class from cross-class comparisons is that a
-pooled mean answers an easy question and a hard one at once. Two mammals
-share a neighbourhood almost trivially; whether a mammal shares one with a
-teleost is the measurement that says the locus is ancient. On that axis
-ITPR3's neighbourhood is the one that does not travel, which is a result
-about genome rearrangement rather than about the gene.
+**Figure 7.4.** How far a neighbourhood travels, split into
+within-class and cross-class comparisons. Within a vertebrate class the
+three paralogues span 0.254 to 0.347. Across classes, ITPR3 retains 0.062
+against 0.160 and 0.158, which is a 2.5-fold gap and the one asymmetry in
+this panel that a pooled mean would have hidden.
 
 **ITPR3's neighbourhood is the one that does not travel.** It is still 157
 times its own null and 96.9 % of its cross-class pairs still beat their
@@ -2768,15 +2732,16 @@ control, so this is decay rather than absence. It is also worth noting what it
 is not. ITPR3 is the best-recovered paralogue in the genome sweep and the
 best-annotated. Ease of finding a gene and stability of the ground it sits on
 are different properties, and in human that ground is the major
-histocompatibility region.
+histocompatibility region at 6p21.31, one of the most rearranged and most
+polymorphic neighbourhoods in the genome.
 
 ## 7.4 The surviving paralogon links run through ITPR1
 
-If the three paralogues are the product of whole-genome duplication, their
-neighbourhoods should be paralogous rather than identical, meaning the
-flanking genes should be surviving copies of the same ancestral families under
-different names. That is exactly what a same-symbol test cannot see, and it is
-why cross-paralogue symbol similarity above is a flat zero.
+If the three paralogues are the product of whole-genome duplication [23,24], their neighbourhoods should be paralogous rather than identical,
+meaning the flanking genes should be surviving copies of the same ancestral
+families under different names. That is exactly what a same-symbol test
+cannot see, and it is why cross-paralogue symbol similarity above is a flat
+zero.
 
 At the root-key level two links survive, and each was scored against the rate
 at which random windows in the same genomes share a root family.
@@ -2810,11 +2775,12 @@ neighbourhoods share nothing.
 
 That is not a contradiction, and §7.13 says why at length. In short, a tree
 estimates the order of duplication, while a retained flanking ohnologue
-records which copies survived deletion beside each gene, and quartets from
-whole-genome duplication are known to lose flank copies independently of the
-duplication order. What can be said is that the synteny does not corroborate
-the tree's pair, and that whichever pair is sister, the ITPR1 neighbourhood is
-the one that kept its ohnologues.
+records which copies survived deletion beside each gene, and the quartets
+left by whole-genome duplication lose flank copies lineage by lineage in a
+way that carries no memory of the duplication order [55,56]. What can
+be said is that the synteny does not corroborate the tree's pair, and that
+whichever pair is sister, the ITPR1 neighbourhood is the one that kept its
+ohnologues.
 
 ## 7.5 A caller built only from the neighbours places 131 unlabelled loci
 
@@ -2844,12 +2810,10 @@ toward the stricter setting.
 threshold range, with the random-window false-call rate drawn beside the
 call rate. At the chosen setting it is correct on 405 of 405 calls over 503
 annotation-confirmed loci, calls 80.5 % of them, and calls 6 of 726 random
-control windows. The importance of this calibration is the rule it rejects.
-Optimising call rate alone selects the loosest setting available, which is
-how an instrument gets tuned into agreeing with itself, so the threshold is
-chosen to maximise the difference between the call rate and the rate at
-which random neighbourhoods are called. The caller then places 131 loci that
-the alignment could not label, each with a null tail probability attached.
+control windows. Drawing both curves is what makes the operating point
+defensible, since the two move together and only their difference says what
+a setting is worth. The caller then places 131 loci that the alignment could
+not label, each with a null tail probability attached.
 
 Accuracy is 1.000 across the whole range, so it separates nothing and is not
 what is optimised. It is reported rather than used.
@@ -2893,7 +2857,7 @@ one rather than estimated here.
 
 It is a hand-curated topology for the 31 vertebrate species the alignment
 samples, with 29 named internal nodes, every one carrying a literature age,
-the spread of published estimates, and its source [43,44,45,46,47]. A validator fails the build on a gene-tree species missing from the
+the spread of published estimates, and its source [57,58,59,60,61]. A validator fails the build on a gene-tree species missing from the
 tree, a taxon with no gene-tree tip, an uncalibrated node, a point age outside
 its own spread, or any age inversion.
 
@@ -2908,13 +2872,13 @@ than the split that created it. Without the stem age, a duplication on the
 placental mammal branch would be bracketed at 96 to 319 Ma instead of 96 to
 99.
 
-The reconciliation itself uses the **non-binary** duplication rule [48]
+The reconciliation itself uses the **non-binary** duplication rule [62]
 rather than the familiar binary one, and that is load-bearing rather than
 fastidious. The binary rule is valid only on a binary tree, and on the
 support-collapsed root, which is a four-way polytomy, it reads a speciation,
 which would have reported the collapse as the duplications disappearing.
-Losses are counted by the standard method [49] and the mapping is the
-standard least-common-ancestor one [50].
+Losses are counted by the standard method [63] and the mapping is the
+standard least-common-ancestor one [64].
 
 **Fourteen groups of constructed negative controls run before anything is
 written**, and two of them caught real errors: the two halves of the
@@ -2946,7 +2910,7 @@ same for the choice of root.
 Read plainly, on the tree with every tip in, two results follow.
 
 **The split that separated ITPR1 from ITPR2 and ITPR3 is on the vertebrate
-stem**, meaning older than crown Vertebrata [51,52], whose published
+stem**, meaning older than crown Vertebrata [65,66], whose published
 estimates run 480 to 615 Ma. Nothing in this tree bounds it from above, and
 the bracket is reported open rather than closed silently.
 
@@ -2958,15 +2922,13 @@ It maps there in every cell of the matrix, cyclostomes in or out.
 
 **Figure 7.9.** The dated backbone on a linear time axis
 with each calibration's spread drawn as a band, rather than a cladogram with
-ages written on it. The result is an interval and a cladogram cannot show
-one. Placements are deduplicated to one marker per distinct arrangement,
-because the matrix repeats the same placement across cells and drawing each
-would make agreement look like weight. The importance of drawing calibration
-spread as a band is that the result is an interval and a cladogram with ages
-written on it cannot show one. The deepest bracket is left open at its old
-end because nothing in this tree closes it, and the widest disagreement in
-the whole calibration set sits at exactly the node the older duplication
-maps to.
+ages written on it, because the result is an interval and a cladogram cannot
+show one. Placements are deduplicated to one marker per distinct
+arrangement, since the matrix repeats the same placement across cells and
+drawing each would make agreement look like weight. The deepest bracket is
+left open at its old end because nothing in this tree closes it, and the
+widest disagreement in the whole calibration set sits at exactly the node
+the older duplication maps to.
 
 **The two duplications are not on the same branch.** That is the finding, and
 it is what makes ITPR1 the earlier-diverging copy.
@@ -3007,17 +2969,13 @@ cyclostome loci at **0.96 to 1.04 times the median, ranking 18th to 55th of
 
 ![](figures/fig_7.12_recon_cyclostome.png)
 
-**Figure 7.12.** Root-to-tip distance for all 57 vertebrate tips
-with the six cyclostome loci marked, and beside it the independent
-neighbourhood call for each of those loci with the pair support the tree
-gives it. The long-branch objection does not apply, and the corroboration is
-inside its own null. The importance of the long-branch panel is that it
-removes the standard objection to this result. Cyclostome sequences are the
-classic long-branch attraction risk in vertebrate phylogeny and long
-branches are attracted to the root, which is exactly where this placement
-sits, so the objection is measured rather than argued. The six loci rank
-eighteenth to fifty-fifth of fifty-seven tips, and two sit in the shorter
-half.
+**Figure 7.12.** The six cyclostome loci marked on the
+distribution of root-to-tip distance across the tree, and beside it the
+independent neighbourhood call for each locus with the pair support the tree
+gives it. The first panel removes the standard objection to this placement
+by measurement rather than by argument. The second matters because the
+neighbourhood knows nothing about the alignment, so its agreement is
+corroboration from an instrument that could have disagreed.
 
 That negative result is the one that matters most here. It is the reason the
 placement is offered as a finding rather than as a caveat.
@@ -3031,13 +2989,11 @@ sample, and none is corroborated.
 
 **Figure 7.11.** What each implied loss turns out to be once it is
 asked of the genome ledger, and the implied count in every cell of the
-matrix against the number the genomes corroborate. A reconciliation over a
-representative sample counts sampling. This figure is the reason a loss
-count is not read off a reconciliation. Of 47 implied losses, 26 are the
-paralogue present in the genome and absent only from the 134-tip sample, and
-none is corroborated by the genome ledger. A reconciliation over a
-representative alignment counts sampling, which is why Chapter 9 counts
-losses from 309 genomes instead.
+matrix against the number the genomes corroborate. The figure is the reason
+a loss count is not read off a reconciliation: a reconciliation over a
+representative sample counts sampling, not biology. That is why Chapter 9
+counts losses from 309 genomes instead, and why the two chapters' numbers
+are not alternative estimates of the same quantity.
 
 ## 7.10 Testing whole-genome duplication needs dated paralogy, not synteny
 
@@ -3047,7 +3003,7 @@ pair from the two rounds of duplication from an older duplication whose two
 copies happen to sit beside these genes.
 
 So the human paralogy map was taken from a comparative-genomics database
-[53] through a **pinned dated archive** rather than the rolling one [54].
+[67] through a **pinned dated archive** rather than the rolling one [68].
 That is the same reproducibility discipline applied to a database release,
 since the rolling host follows the release cycle and a re-run would score the
 same windows against a different tree. The archive's own registry is committed
@@ -3100,20 +3056,17 @@ background rate, at 2.7 % against 2.6 %, p = 0.554.**
 
 **Figure 7.6.** The two-round test with its null drawn across the
 bars rather than quoted in a caption, and the ryanodine trio run through the
-identical instrument in the same genomes beside it. A weak signal is only
-readable next to a positive control that is not in question. The importance
-of drawing the null across the bars is that the human single-genome test is
-underpowered and the report says so twice. What carries the claim is the
-replication across 309 genomes against matched random neighbourhoods, and
-what makes it readable is the sister family run through the identical
-instrument, since its two-round origin is not in question and it behaves the
-same way.
+identical instrument in the same genomes beside it. What carries the claim
+is not the human window but the replication across 309 genomes against
+matched random neighbourhoods, and what makes it readable is the sister
+family, whose two-round origin is not in question and which behaves the same
+way through the same instrument.
 
 The dated column splits the two links cleanly: the ITPR1 to ITPR3 link is
 vertebrate-dated in 84 genomes and the ITPR1 to ITPR2 link in 2.
 
 **The fourth slot cannot be found**, and current reconstructions of what the
-vertebrate duplications left behind [55,56] are what a positive answer
+vertebrate duplications left behind [69,56] are what a positive answer
 would have to be read against. A genome-wide block scan returns no block that
 both carries no family gene and looks like these blocks' missing sibling. With
 one dated ohnologue pair surviving between the blocks that do carry a gene, a
@@ -3125,7 +3078,7 @@ than the quartet, and all six such pairs are significant by construction.
 
 ## 7.11 The teleost duplication doubled ITPR1 and only ITPR1
 
-Ray-finned fish underwent a further whole-genome duplication [57,58], and
+Ray-finned fish underwent a further whole-genome duplication [70,71], and
 the copy-number landscape says that is where all this family's variation is.
 
 ![](figures/fig_7.5_s16_copy_number.png)
@@ -3153,7 +3106,7 @@ Five predictions were checked.
 and 5.82 ryanodine receptors, with 97.3 % of 73 genomes carrying more than one
 ITPR1.
 
-**Lineages with a further duplication carry more again** [59]. Sturgeon and
+**Lineages with a further duplication carry more again** [72]. Sturgeon and
 salmon carry 3.00, 2.00, 2.00 and 8.00.
 
 A second copy appearing in the outgroup, or a teleost ryanodine count that had
@@ -3214,13 +3167,10 @@ agreement is a measurement rather than a property of the routine.
 **Figure 7.8.** Cross-anchor block identity, and the sensitivity of
 every count to the coverage bar. Seven bars are scanned, because a
 duplication claim that survives only one bar is a claim about the bar. The
-importance of the anchor test is that it separates one ancestral duplication
-from a series of lineage-specific ones, which the copy counts alone cannot
-do. Anchors from six different orders assign every genome independently and
-agree 705 times out of 705, where independent duplications would put the
-statistic at chance. A constructed control builds exactly that case and
-requires the statistic to land there, so the agreement is a measurement
-rather than a property of the routine.
+anchor panel is what separates one ancestral duplication from a series of
+lineage-specific ones, which the copy counts alone cannot do, because
+anchors from six different orders assign every genome independently and
+would carry no shared information if each lineage had duplicated on its own.
 
 It is corroborated by evidence of a different kind. Which bait won each copy
 is a sequence call made with no neighbourhood input at all, and in the six
@@ -3390,20 +3340,22 @@ without changing a single count, and the duplication detector discussed in
 
 Across 1,378 genes in 189 vertebrate genomes, the three paralogues sit at **57
 to 58 coding exons** with median genomic spans differing by **4.2-fold**, and
-coding sequence lengths of 8,250, 8,100 and 8,008 bp. What differs between
+coding sequence lengths of 8,250, 8,100 and 8,008 bp. These are *coding* exon
+counts, which is why they sit below the 62, 57 and 58 that Chapter 2 read off
+the human canonical transcripts: a protein-to-genome alignment sees only the
+translated part of the gene, so a purely untranslated first or last exon is
+invisible to it and counted by the transcript annotation. What differs between
 them is how much intron is wrapped around nearly the same protein.
 
 ![](figures/fig_8.1_architecture_by_paralog.png)
 
 **Figure 8.1.** Exon count and genomic span on separate
-axes, with span logarithmic and count not. The result is that one is
-conserved and the other is not, and a shared scale would hide it. The
-importance of separating the axes is that the result is a contrast between
-two quantities measured on the same genes: one is conserved and the other is
-not. Fifty-seven to fifty-eight coding exons across 189 genomes, wrapped in
-genomic spans differing four-fold, means the paralogues inherited one coding
-architecture and then diverged in intron content alone. A shared scale would
-have hidden exactly that.
+axes, with span logarithmic and count not. The separation matters because
+the result is a contrast between two quantities measured on the same genes,
+one of which is conserved and the other of which is not, and a shared scale
+would hide it. Fifty-seven to fifty-eight coding exons across 189 genomes,
+wrapped in genomic spans differing four-fold, means the paralogues inherited
+one coding architecture and then diverged in intron content alone.
 
 The ryanodine receptors, measured through the identical instrument in the same
 assemblies, carry **104 exons over 14,910 bp** of coding sequence, which is
@@ -3421,17 +3373,24 @@ with ties dropped and counted, and the whole family of tests corrected
 together.
 
 Two things fall out. The exon counts differ by one to three exons and the
-spans by tens of kilobases, in the same genomes. And the ordering of the spans
+spans by tens of kilobases, in the same genomes. That intron content, rather
+than coding structure, is what varies is worth holding against the evidence
+that intron length is itself under selection, with shorter introns in highly
+expressed genes [73], although the explanation usually offered for that
+pattern has been contested [74]. And the ordering of the spans
 is consistent gene by gene rather than an artefact of averaging, in that ITPR3
 is the shorter gene than ITPR1 in 161 of the 182 genomes carrying both.
 
 ## 8.7 The three paralogues share the same introns in the same places
 
 An intron's position here is a pair: the alignment column its upstream exon
-ends in, and its phase. Both halves are needed. Two paralogues can carry an
-intron between the same two residues in different frames, which is not one
-ancestral intron, and a column alone would call any two introns in the same
-region shared.
+ends in, and its phase. Intron positions are among the most durable
+characters a gene has, conserved across kingdoms and gained and lost slowly
+enough to carry information about deep relationships [75,76], which is
+what makes this comparison worth making at all. Both halves of the pair are
+needed. Two paralogues can carry an intron between the same two residues in
+different frames, which is not one ancestral intron, and a column alone
+would call any two introns in the same region shared.
 
 **Within a paralogue**, each carries a core of about 48 to 49 intron positions
 present in at least 90 % of the genomes that have the gene, out of 175 to 185
@@ -3443,12 +3402,10 @@ same places, across the vertebrates.
 ![](figures/fig_8.2_intron_positions.png)
 
 **Figure 8.2.** Intron positions by alignment column and phase,
-per paralogue. The columns line up. The importance of scoring a position as
-a column and a phase together is that either alone is insufficient. Two
-paralogues can carry an intron between the same two residues in different
-reading frames, which is not one ancestral intron, and a column with no
-phase would count it as shared. The columns lining up here is what the
-enrichment in §8.7 is measured on.
+per paralogue. The columns line up, and that alignment is what the
+enrichment in §8.7 is measured on. Plotting phase as well as column is what
+keeps two introns that fall between the same two residues in different
+reading frames from being counted as one inherited intron.
 
 **Between paralogues** is the test this chapter exists for. Two genes with
 about 58 introns each spread over about 2,700 aligned residues will share some
@@ -3539,14 +3496,14 @@ zero is a measurement rather than an unreachable code path.
 **Figure 8.4.** The verdict on every split and
 fragmentary locus, where the annotation's internal termini sit relative to
 the gene model, and the duplication detector scored against an independent
-copy call. The importance of this figure is that it converts a database
-label into a testable claim. A locus called fragmentary might have been
-annotated as a plausible short gene, or the annotation might have stopped
-where no splicing machinery could stop, and only the second is an error. 228
-of 291 such loci carry at least one terminus in the middle of an exon, which
-falsifies the innocent reading. The duplication panel makes the same point
-about a detector: scored against a copy call it never sees, its specificity
-goes from 0.16 to 0.977 once the family assignment is applied first.
+copy call. The first panel converts a database label into a testable claim:
+a locus called fragmentary might have been annotated as a plausible short
+gene, or the annotation might have stopped where no splicing machinery could
+stop, and only the second is an error. 228 of 291 such loci carry at least
+one terminus in the middle of an exon, which falsifies the innocent reading.
+The second panel makes the same point about an instrument, since scoring the
+detector against a copy call it never sees moves its specificity from 0.16
+to 0.977 once the family assignment is applied first.
 
 ## 8.10 What this chapter settles about the gene
 
@@ -3569,13 +3526,13 @@ And a database's "fragmentary" is usually not a gene boundary, because 228 of
 
 ## 9.1 A zero is the hardest result in this thesis to state
 
-Gene families of this age normally lose copies [25,60]. The prior for a
+Gene families of this age normally lose copies [25,77]. The prior for a
 three-paralogue family present since the origin of the vertebrates is that
 somewhere in 309 genomes at least one lineage has dropped one.
 
 This chapter reports that **not one of the 927 genome by paralogue cells in
 the vertebrate scope reaches the state this project defines as a loss**, that
-Dollo parsimony [61] places no loss anywhere on the tree, and that no rate
+Dollo parsimony [78] places no loss anywhere on the tree, and that no rate
 can be fitted to a character that never changes.
 
 A zero is the easiest result to obtain by accident and the hardest to defend.
@@ -3648,7 +3605,7 @@ over three orthologous baits counts a residue covered in any of them and
 reports a coverage no single protein achieves.
 
 **The bar is measured against a gene that is accounted for**, with the
-separation statistic [62] reported beside the threshold. The negative
+separation statistic [79] reported beside the threshold. The negative
 population needed no new search: it is the regions the full bait panel
 attributes to a paralogue whose gene the aligner already placed at a locus in
 the same genome. That paralogue is accounted for, so the fragment set cannot
@@ -3661,13 +3618,9 @@ on its own, at a median of 0.030 against a candidate median of 0.795.
 the gap shaded and the operating point drawn, and every undecided cell
 against the number of contigs its gene is spread over. A calibration figure
 that asked to be believed would not be one, so both edges of the gap are
-marks rather than a caption. The importance of this calibration is that it
-failed on its first attempt and the failure was informative. The decoy
-originally contained regions attributed to a paralogue that was itself
-shattered, which are pieces of real genes, and separating that population
-out is what made the bar measurable. Those 20 regions are now committed as
-their own population and are the measured size of the paralogue-attribution
-problem in a broken assembly.
+marks rather than a caption. The third population is the one worth looking
+at: it lies between the other two, it was not anticipated, and the paragraph
+below explains what separating it out did to the threshold.
 
 **The first version of this calibration did not separate**, at a Youden index
 of 0.52, and why is a result in itself. The decoy was every region attributed
@@ -3705,14 +3658,13 @@ it acts.
 
 **Figure 9.4.** Why synteny could not answer, showing the joint
 distribution of what a trace region has to work with, with the caller's
-floor drawn, beside the caller's own accuracy on the same axis. Putting
-reach and accuracy on one axis is what makes "accurate and unavailable" a
-readable sentence rather than an excuse. This figure is what makes accurate
-and unavailable a readable sentence rather than an excuse. The neighbourhood
-caller is right at every key count at which it acts, and it acts on 8 of 432
-regions, because a fragment's contig carries no neighbours to read. Putting
-reach and accuracy on the same axis is the only way to show that a method's
-failure here is a property of the data rather than of the method.
+floor drawn, beside the caller's own accuracy on the same axis. The
+neighbourhood caller is right at every key count at which it acts, and it
+acts on 8 of 432 regions, because a fragment's contig carries no neighbours
+to read. Putting reach and accuracy on one axis is the only way to show that
+the method's failure here is a property of the data rather than of the
+method, which is what makes accurate and unavailable a readable verdict
+rather than an excuse.
 
 On the 8 regions it can reach the caller returns a call for 6 and agrees with
 the alignment's own attribution on all 6. That is an independent instrument
@@ -3789,19 +3741,13 @@ removes both. The identity panel is drawn first because contiguity is the
 confounder everyone expects and identity is the one that turned out to be
 real. Density is logarithmic with an explicit zero band, since 72 % of
 intact loci carry no lesion and a linear axis puts the whole calibration
-population on one pixel. The importance of this figure is that the
-confounder everyone expects is not the one that matters. Assembly contiguity
-barely moves a lesion count, while the locus's identity to its bait moves it
-a great deal, because a poorly matched reference buys alignment with
-frameshifts. Any claim that a gene is decaying has to survive that, and the
-paired within-genome test in the third panel is what removes both
-confounders at once.
+population on one pixel.
 
 So the paired within-genome test, in which each cell is compared against the
 same genome's other family loci and which removes the assembly entirely, is
 run twice, once identity-matched, with ties dropped and counted and the four
 tests corrected together by the false-discovery-rate procedure this project
-uses throughout [63].
+uses throughout [80].
 
 **One result survives, and it is paralogue-specific.** ITPR3 carries more
 disabling lesions than its own genome's identity-matched sibling loci, in 39
@@ -3880,15 +3826,13 @@ asked is whether moving the bar across its own uncertainty changes anything.
 
 **Figure 9.6.** The loss count in every cell of the grid, for
 the family-level coding and the paralogue-resolved one, with the operating
-point marked. A zero is drawn as an explicit zero and never as an empty
-cell, because an empty cell reads as "not measured" and the zero is the
-result. This figure is what a zero looks like when it is defended properly.
+point marked. This is what a zero looks like when it is defended properly.
 Rather than assert robustness, the count is recomputed under every
-combination of four analytical axes, and the asymmetry it reveals is the
+combination of four analytical axes, and the asymmetry that reveals is the
 result: a family-level absence is stable across 30 of 32 settings while a
-paralogue-resolved one is fragile to every knob. Drawing a zero as an
-explicit zero rather than an empty cell matters because an empty cell reads
-as not measured.
+paralogue-resolved one is fragile to every knob. A zero is drawn as an
+explicit zero and never as an empty cell, because an empty cell reads as not
+measured and the zero is the result.
 
 **Moving the reconstruction bar across the whole gap the calibration measured
 manufactures no loss on either coding.** The bar's position inside its own
@@ -3906,13 +3850,10 @@ family-level absence is not.
 
 **Figure 9.5.** The calibrated bar with the gap's two edges
 drawn. The within-row offset of each point is its rank in its own row, using
-no hash and no random number generator, so the figure is reproducible. The
-importance of drawing both edges of the calibration gap is that it makes the
-threshold's uncertainty visible and testable. The first three rungs of
-Chapter 9's evidence ladder are those two edges and the midpoint between
-them, so the first sensitivity question asked is whether moving the bar
-across its own measured uncertainty changes anything. It changes no cell in
-927.
+no hash and no random number generator, so the figure is reproducible.
+Drawing both edges is what makes the threshold's own uncertainty visible,
+and the answer to the first sensitivity question is that moving the bar
+anywhere inside it changes no cell in 927.
 
 **The branch-length axis changes nothing, and that is reported rather than
 omitted.** Across all 32 settings and all three schemes, the number of
@@ -3925,7 +3866,7 @@ tested it.
 ## 9.10 The rate models are refused, and the refusal is measured
 
 The brief asks for equal-rates, all-rates-different and irreversible Markov
-models [64]. On the primary character all three are **refused**, and the
+models [81]. On the primary character all three are **refused**, and the
 refusal is measured rather than asserted.
 
 An invariant character contains no transition to estimate. Profiling each
@@ -3941,13 +3882,10 @@ unidentifiability looks like when it is drawn rather than argued.
 and branch-length scheme. The all-rates-different model is profiled on its
 gain axis rather than on its diagonal, because the diagonal is the
 equal-rates model by construction and would put the same curve on the figure
-twice under two names. This figure is a refusal turned into a measurement.
-An invariant character contains no transition to estimate, and rather than
-assert that, the likelihood is profiled along a rate grid over eight orders
-of magnitude for every model and scheme. Every curve is monotone to the
-boundary, and the gain axis of the all-rates-different model rises where the
-loss axis falls, which is what unidentifiability looks like when it is drawn
-rather than argued.
+twice under two names. The figure is a refusal turned into a measurement:
+rather than assert that an invariant character cannot be fitted, it shows
+what the likelihood surface actually does, which is to run to the edge of
+the grid in every one of the twelve combinations.
 
 So no rate is reported for the primary character, because a fitter run on it
 would return its own starting point.
@@ -3983,15 +3921,12 @@ signal at all on a sample that is smaller but not small.
 
 ![](figures/fig_9.8_lesion_strata.png)
 
-**Figure 9.8.** The identity-matched sign test stratified by class,
-the strongest stratum split by the contiguity bar, and the fossil
-denominator. The importance of this figure is that it names a lineage and
-then removes the ground from under it in the same panel. The indel excess is
-entirely a bird result, and 21 of the 27 informative pairs sit in assemblies
-below the contiguity bar, which is where the test has its power. Birds are
-the class with the worst assemblies in this scope, so this is precisely
-where an indel signal is hardest to separate from an assembly signal, and
-the verdict is that the mechanism is unsettled rather than found.
+**Figure 9.8.** The identity-matched sign test stratified by
+vertebrate class, with the contiguity control drawn beside it. The
+stratification names a lineage and the control immediately removes the
+ground from under it, which is why both belong on one figure. The verdict
+this panel supports is that the mechanism behind the excess is unsettled
+rather than found.
 
 The design makes a cell and its siblings the same observation twice, because
 the comparison is within one genome against that genome's other family loci,
@@ -4078,7 +4013,7 @@ by nine residues of 2,666 in one frog. Same length and within 1 % is the same
 gene model and its disagreeing codons are masked, and anything beyond that is
 a different model and is refused.
 
-The codon alignment is then produced by a protein-guided aligner [65] and
+The codon alignment is then produced by a protein-guided aligner [82] and
 **cross-checked nucleotide by nucleotide against an independent in-house
 mapping**, with a disagreement aborting the build. A residue masked in step
 one is written as an unknown in the protein rows too, so the aligner is never
@@ -4090,8 +4025,6 @@ whole triplets only.
 
 **Figure 10.5.** The trimmed codon alignment behind every
 estimate in this chapter, plotted in codons, because an axis in nucleotides
-would make a three-fold difference look like a property of the data. The
-importance of plotting codons rather than nucleotides is that the second
 would make a three-fold difference look like a property of the data. The
 panel exists so a reader can see the size of what every rate in Chapter 10
 was estimated on, which is 2,459 codons of 3,253 after trimming, across 57
@@ -4136,21 +4069,18 @@ tree defines, and for these six it defines none.
 
 ## 10.4 All three paralogues are under strong purifying selection
 
-One-ratio estimates [66] give ITPR1 at 0.0238, ITPR2 at 0.0430 and ITPR3 at
+One-ratio estimates [83] give ITPR1 at 0.0238, ITPR2 at 0.0430 and ITPR3 at
 0.0415. The highest of the three is **23 times below neutrality**.
 
 ![](figures/fig_10.1_omega_by_paralog.png)
 
 **Figure 10.1.** Per-paralogue rate with the curated-sequence
 sensitivity estimate beside it, and neutrality drawn rather than described.
-The axis is logarithmic, because at a rate of 0.03 a linear axis puts every
-bar on the floor and hides the one thing a reader wants, which is how far
-below one it sits. The importance of the logarithmic axis is that the result
-is how far below neutrality these rates sit, and on a linear axis every bar
-is on the floor. The highest of the three is 23-fold below neutrality, which
-is a channel accumulating one non-synonymous change per 23 synonymous ones,
-and the curated-sequence estimate drawn beside each bar shows the numbers
-are not an artefact of the reconstructed gene models.
+The axis is logarithmic because the result is how far below neutrality these
+rates sit, and on a linear axis every bar is on the floor. The sensitivity
+estimate beside each bar is what shows the rates are not an artefact of the
+reconstructed gene models, since it is computed with every one of them
+removed.
 
 The identity Chapter 6 measured says the same thing far less sharply. This is
 a 2,700-residue channel accumulating one non-synonymous change per 23
@@ -4174,12 +4104,9 @@ log-log with the neutral diagonal and the saturation bar. On a
 logarithmic-x, linear-y plot the neutral diagonal is not a line at all: the
 first draft's neutrality ran off the panel within the first pixel and left
 the saturation bar as the only line on the figure, which reads as
-neutrality. This figure qualifies every other number in its chapter, and the
-axes are part of the argument. Synonymous sites are saturated within a
-single paralogue and not merely between the three, because one paralogue set
-spans shark to teleost to mammal. That is why every rate quoted comes from a
-tree-based model rather than from the pairwise matrix, and why each should
-be read as a lower bound on precision.
+neutrality. What the panel shows is that saturation is reached inside a
+single paralogue and not only between the three, which is the reason no rate
+in this chapter is taken from a pairwise matrix.
 
 The expectation going in was saturation between the paralogues, which are
 older than 500 million years. It is already reached within them, because a
@@ -4229,7 +4156,7 @@ verdict vocabulary has a word for that rather than forcing a choice.
 
 A duplicate's fate is decided on its stem, meaning the interval between the
 duplication and the first surviving split of the new copy. If a paralogue was
-ever free to change, that is when. Branch-site model A [67] asks whether a
+ever free to change, that is when. Branch-site model A [84] asks whether a
 class of sites on that one branch has a rate above one while the rest of the
 tree does not.
 
@@ -4246,13 +4173,11 @@ choosing a better one.
 ![](figures/fig_10.4_bs_restarts.png)
 
 **Figure 10.4.** Every restart against its own null. A point below the
-line is a local optimum rather than a result. This figure records an
-optimiser failing in a way a single run would have hidden. A nested
-alternative cannot have a lower optimum than its own null, and three of
-twelve restarts converged below theirs, one on every stem, with a different
-starting value failing each time. The importance is general rather than
-local: a branch-site result from a single-start run is a result whose
-optimiser has not been checked.
+line is a local optimum rather than a result, and three of twelve sit there,
+one on every stem, with a different starting value failing each time. The
+importance is general rather than local: a branch-site result from a
+single-start run is a result whose optimiser has not been checked, and
+nothing in its output says so.
 
 **All three stems are significant after correction, and one of the three
 carries a rate the data actually determine.** That distinction is the
@@ -4270,7 +4195,7 @@ all.
 
 On the ITPR1 stem the rate is **5.53 on 11 % of sites**, well inside the
 estimable range, stable across restarts, with 8 sites clearing the posterior
-bar [68] and 5 clearing the stricter one.
+bar [85] and 5 clearing the stricter one.
 
 **So the reportable branch-site finding is ITPR1 alone**: a class of sites on
 its stem evolving several times faster than neutrally while the rest of the
@@ -4301,7 +4226,7 @@ every case the tell was a parameter printed outside the test.
 ## 10.9 Selection on ITPR1 is intensified, and on its sisters relaxed
 
 A branch model asks whether a foreground's rate differs. The relaxation test
-[69], run locally in the same framework as the per-site model [70], asks
+[86], run locally in the same framework as the per-site model [87], asks
 whether the whole distribution on the test branches is pulled towards
 neutrality or away from it, which in a family where every rate is far below
 one is the sharper question.
@@ -4384,10 +4309,10 @@ worth having in advance because it constrains what the second can be built on.
 ## 11.2 The structure prediction database does not hold this family
 
 A vertebrate IP₃ receptor subunit is about 2,700 residues, which is where the
-monomer prediction pipeline [71] stops, and the sister family at about 5,000
+monomer prediction pipeline [88] stops, and the sister family at about 5,000
 is past it outright. So structural coverage is measured before anything is
 compared, and it is measured three ways that do not agree: the cross-reference
-in the protein record, an actual probe of the prediction database [72], and
+in the protein record, an actual probe of the prediction database [89], and
 model coverage against the length the census holds.
 
 Only the third can see the trap.
@@ -4406,16 +4331,14 @@ thesis stands on, **nine** do.
 ![](figures/fig_11.4_s11_afdb_coverage.png)
 
 **Figure 11.4.** Coverage by group, and against record length.
-The second panel is the result: the usable-model mass sits below about 1,300
-residues while the peak at about 2,700, which is a full-length subunit, is
-almost entirely unmodelled. The importance of this figure is that it sets
-the ceiling on every structural argument the family can support. A reader
-who assumed the prediction database covers modern proteomes uniformly would
-expect a receptor of this size to be modelled, and the second panel shows
-the opposite: coverage falls away exactly at the lengths a full-length
-subunit occupies. Every structural statement in this chapter therefore rests
-on experimental depositions, and the figure is what makes that a measured
-constraint rather than a preference.
+The second panel is the result, and it sets the ceiling on every structural
+argument this family can support: the usable-model mass sits below about
+1,300 residues, while the peak at about 2,700, which is a full-length
+subunit, is almost entirely unmodelled. A reader who assumed the prediction
+database covers modern proteomes uniformly would expect a receptor of this
+size to be modelled. Every structural statement in this chapter therefore
+rests on experimental depositions, and the figure is what makes that a
+measured constraint rather than a preference.
 
 The median modelled record is 392 residues and the median unmodelled one
 2,674. Of the 5,861 census records at or above the family's own length floor,
@@ -4454,7 +4377,7 @@ measured on 2,911 of 15,417 proteins. A query on that signature alone would
 have missed the reference.
 
 One further instrument is available and is deliberately optional: a
-structure-based homology search over the whole prediction database [73],
+structure-based homology search over the whole prediction database [90],
 which is the one stage in the project needing a multi-gigabyte index and is
 off by default. What it returns is the shared domain rather than the family,
 which is the same statement §11.5 makes with coordinates.
@@ -4502,7 +4425,7 @@ exists to establish.
 
 **Figure 11.2.** The family call made structurally, and the
 calibration behind it. Both of the alignment method's published bars are
-drawn, meaning the random-similarity floor and the same-fold bar [74],
+drawn, meaning the random-similarity floor and the same-fold bar [91],
 rather than described. A calibration figure that asked to be believed would
 not be one. The importance of this figure is that it turns the family
 separation into a structural result rather than a sequence one. Everything
@@ -4582,14 +4505,8 @@ whatever aligned.
 
 **Figure 11.3.** Confidence per domain, ordered along the
 subunit, with the prediction method's own confident and very-high bands
-drawn. Every model gets an "outside annotated domains" contrast row, without
-which "the pore is at 85" has nothing to be high against. The importance of
-resolving confidence per domain is that a single mean over a 2,700-residue
-multi-domain channel is uninformative and reassuring at the same time. It
-averages a well-predicted domain with hundreds of residues of linker, and a
-claim resting on the pore needs the pore's own number. The contrast row
-outside the annotated domains is what gives a high value something to be
-high against.
+drawn. Every model also gets an outside-annotated-domains contrast row,
+which is what gives a high value something to be high against.
 
 **The IP₃-binding core is the best-modelled domain of the receptor** at a
 median of 83.9, against 69.5 outside the annotated domains, and **the pore,
@@ -4621,20 +4538,17 @@ alignment from 3,380 to 5,676 columns.**
 
 ![](figures/fig_11.9_supp_paralog_alignments.png)
 
-**Figure 11.9.** The within-paralogue alignments the
-constraint map is computed on, shown as per-residue occupancy of the human
-reference rather than per alignment column, because the three alignments
-have three widths and no shared coordinate. The importance of this figure is
-that it shows the depth behind the constraint map, which is the difference
-between this resource and one built on a handful of orthologues. Between 249
-and 265 orthologues per paralogue is what makes a within-gene conservation
-score interpretable, and plotting occupancy per residue of the human
-reference lets a reader see where that depth thins out and a score should be
-trusted less.
+**Figure 11.9.** The three deep alignments the constraint
+map is computed on, drawn as occupancy along the human reference rather than
+along an alignment column, since the three have three widths and no shared
+coordinate. What the panel shows is the depth behind the map, which is the
+difference between this resource and one built on a handful of sequences,
+and where that depth thins out enough that a score there should be trusted
+less.
 
 Three conventions run through every score. **Conservation is
-sequence-weighted** [75] before any column statistic, and the column metric
-is an information-theoretic divergence [76], because ray-finned fish are
+sequence-weighted** [92] before any column statistic, and the column metric
+is an information-theoretic divergence [93], because ray-finned fish are
 about a third of the genome scope and unweighted, every teleost-specific
 residue in a 260-sequence alignment reads as conserved. **Gaps are missing
 data rather than a 21st state**, and the occupancy each score is conditional
@@ -4690,17 +4604,14 @@ above its own protein's linker mean.
 ![](figures/fig_11.6_s17_elements.png)
 
 **Figure 11.6.** Constraint by element, with the composition-free
-metric drawn beside the divergence metric rather than instead of it, so a
-reader can see the two agree rather than being asked to believe it. A
-divergence from a background frequency table [76] scores a transmembrane
-element lower at equal conservation, which is exactly the artefact §11.11
-had to rule out. The importance of this figure is that the headline result
-and its most obvious artefact are drawn on the same axis. The gate and the
-filter come top on both metrics, so the ranking is not a property of one
-scoring choice, and a reader can check that agreement rather than take it on
-assurance. The composition-free metric is there because a divergence against
-a background frequency table penalises transmembrane composition, which
-would have manufactured the very result the chapter reports.
+metric drawn beside the divergence metric rather than instead of it. The
+headline result and its most obvious artefact are therefore on the same
+axis: the gate and the filter come top on both metrics, so the ranking is
+not a property of one scoring choice, and a reader can check that agreement
+rather than take it on assurance. The second metric is there because a
+divergence from a background frequency table [93] scores a transmembrane
+element lower at equal conservation, which would have manufactured the very
+result the chapter reports.
 
 ## 11.11 One element inside the channel is the exception, and finding it changed the result
 
@@ -4742,13 +4653,11 @@ prediction that landed on the dip.
 ![](figures/fig_11.5_s17_channel_profile.png)
 
 **Figure 11.5.** Constraint along the channel, binned, with
-the bins never crossing an element boundary. A sliding window across the
-luminal loop's edge would draw the curve straight through the boundary the
-panel exists to show. This figure is where the chapter's structural claim
-becomes visible as a shape rather than a table. Constraint is not uniform
-along the channel: it peaks on the residues the structure says do the work
-and collapses in the luminal loop between them. Binning within element
-boundaries matters because a window straddling that edge would smear the
+the bins never crossing an element boundary. This is where the chapter's
+structural claim becomes visible as a shape rather than a table: constraint
+is not uniform along the channel but peaks on the residues the structure
+says do the work and collapses in the luminal loop between them. The binning
+rule matters because a sliding window across that edge would smear the
 collapse into the gate and erase the contrast the panel exists to show.
 
 ## 11.12 The ligand contacts and the gate are the two extremes of paralogue divergence
@@ -4766,14 +4675,14 @@ elements are actually powered, so a p-value on two residues is not offered.
 
 ![](figures/fig_11.7_s17_functional_sites.png)
 
-**Figure 11.7.** The measured functional residues against the
-whole protein and against the rest of their own element. The importance of
-the second comparison is that it is the harder one. Measured functional
-residues beating the whole-protein average is close to guaranteed, since
-most of a 2,700-residue receptor is linker; beating the rest of their own
-element is what shows that the structure's functional annotation picks out
-something the surrounding domain does not already have. That is the test
-that makes a constraint map useful for interpreting a new position.
+**Figure 11.7.** The measured functional residues scored
+twice, against the whole protein and against the rest of the element each
+sits in. The second comparison is the harder one and the one worth reading.
+Most of a 2,700-residue receptor is linker, so clearing the first bar is
+close to guaranteed, whereas clearing the second shows that the structure's
+annotation picks out something its surrounding domain does not already have.
+That is the test which makes a constraint map useful for interpreting a new
+position.
 
 A second and completely independent instrument on the same question is
 identity between the paralogues, which needs no alignment depth and no
@@ -4850,8 +4759,8 @@ layer this panel puts on top.
 Two things fall out, and one is against this chapter's own design.
 
 The shallow control is the worst layer, so the depth was worth building,
-because without the deep ortholog sets that is the number this thesis would
-have had.
+because without the deep orthologue sets that is the number this thesis
+would have had.
 
 But **the best layer is the family-wide one rather than the deep
 within-paralogue one.** Taxonomic breadth beats within-gene depth here,
@@ -4900,7 +4809,7 @@ its element, and whether it is a measured contact, filter or gate residue.
 ## 11.15 Per-site selection rates land on the same coordinates
 
 Chapter 10 answered the whole-gene question and not where the constraint sits.
-A per-site rate model [77] on the same codon alignments gives that, and
+A per-site rate model [94] on the same codon alignments gives that, and
 every site is carried onto the human reference through a **validated
 transfer**, in which a site whose amino acid disagrees after realignment is
 written with no residue rather than with a plausible wrong one.
@@ -4937,15 +4846,12 @@ somebody else's profile.
 **Figure 11.10.** The constraint map painted onto the
 channel, drawn from the file the painting step wrote and coloured from its
 own B-factor column, so a disagreement with the per-residue tables would be
-a bug in the painting step, which is the point of drawing it. Unscored
-residues are grey rather than the low end of the scale. The importance of
-painting the map onto the structure is that it makes the chapter's numerical
-claims checkable by eye and by a third party. A structure carrying the
-constraint layer in its own coordinate column can be opened in any viewer,
-so a disagreement between the picture and the per-residue table would be
-visible immediately. Colouring unscored residues grey rather than at the low
-end keeps missing data from reading as an absence of constraint, which
-matters most in the luminal loop, where the two coincide.
+a bug in the painting step. Writing the layer into a structure's own
+coordinate column is what makes the chapter's numerical claims checkable by
+a third party in any viewer. Unscored residues are grey rather than at the
+low end of the scale, which keeps missing data from reading as an absence of
+constraint, and that matters most in the luminal loop, where the two
+coincide.
 
 **The panel is carried by experimental structures rather than predicted ones.**
 The human ITPR2 prediction is the 181-residue isoform of §11.2 and has no file
@@ -4993,7 +4899,8 @@ is the next chapter.
 
 Every chapter so far has had to separate two families that share a fold, a
 pore, four domains and half their titles. There is one thing they do not
-share: the ryanodine receptors do not bind IP₃.
+share: the ryanodine receptors do not bind IP₃, and their gating is organised
+around a different set of ligands entirely [95].
 
 That makes the ligand site the single place where a functional difference
 between the families is visible in sequence, and it makes three questions
@@ -5020,8 +4927,8 @@ So the **primary ligand core** is defined as the minimal contiguous span
 containing every measured IP₃ contact, and the **primary pore module** as the
 Pfam pore domain less the luminal loop. A sensitivity definition is committed
 beside each and every test is run under all four combinations, using the
-published binding core transferred through the same routine, and the pore
-domain as the database draws it.
+published binding core [96] transferred through the same routine, and the
+pore domain as the database draws it.
 
 Every definition is checked against something it does not contain. The core
 must hold all ten contacts and no pore site, and the pore both filter residues
@@ -5032,24 +4939,21 @@ written.
 
 **Figure 12.5.** The two modules at residue resolution
 across all three paralogues, with every pathogenic position's residue
-printed. A residue-level panel exists so that a reader can check the claim,
-and every letter in it has been through the join guard described in Chapter
-14: each variant's reference amino acid must be the residue its own
-paralogue's per-residue table holds there, and each aligned partner the
-residue the other paralogue's table holds. The importance of a residue-level
-panel is that it converts the chapter's module definitions from an assertion
-into something a reader can audit position by position. Both modules are
-defined here by measurement rather than taken from a domain database, so
-printing the residues is what lets somebody disagree with a boundary and see
-exactly which positions the disagreement would move.
+printed. Printing the residues converts the chapter's module definitions
+from an assertion into something a reader can audit position by position,
+which matters because both modules are defined here by measurement rather
+than taken from a domain database. Every letter has been through the join
+guard described in Chapter 14: each variant's reference amino acid must be
+the residue its own paralogue's per-residue table holds there, and each
+aligned partner the residue the other paralogue's table holds.
 
 ## 12.3 The site is measured as a distance to the ligand, not as a contact label
 
 A binary contact-or-not label discards the one thing a structure can say that
 an alignment cannot. So every residue within 15 Å of the bound ligand was
 measured, all-atom, in **six independent depositions**, comprising the
-structure used throughout this thesis and five further IP₃-bound entries from
-other groups and other gating states.
+structure used throughout this thesis [6] and five further IP₃-bound entries
+from other groups and other gating states [97,98,99].
 
 The reader is deliberately small and all-atom. Chapter 11's structural reader
 is backbone-only, and a backbone trace puts an arginine 8 Å from a phosphate
@@ -5106,15 +5010,13 @@ wins in two and ties in the third.
 ![](figures/fig_12.1_s22_modules.png)
 
 **Figure 12.1.** The core against the pore under both pore definitions
-on one axis with zero marked, because the answer reverses between them and a
-figure showing only the primary would assert the choice instead of showing
-what it costs. This figure is the chapter's central result and its principal
-caveat in one panel. The pore is more conserved than the ligand core, which
-is the opposite of what a ligand-gated channel invites one to expect, and
-the comparison reverses in all three paralogues when fifty residues of
-luminal loop are left inside the pore. Drawing both definitions with zero
-marked shows what the boundary choice costs instead of hiding it in a
-methods sentence.
+on one axis with zero marked. This is the chapter's central result and its
+principal caveat in one panel: the pore is more conserved than the ligand
+core, which is the opposite of what a ligand-gated channel invites one to
+expect, and the comparison reverses in all three paralogues when fifty
+residues of luminal loop are left inside the pore. Drawing both definitions
+shows what the boundary choice costs instead of asserting it in a methods
+sentence.
 
 Neither answer is wrong about its own module. They are answers about different
 modules, and the difference between them is one boundary that a comparison
@@ -5124,8 +5026,9 @@ comparison that does not state the boundary is not interpretable.**
 **A second disagreement is reported rather than dropped.** At column level the
 divergence metric sees no difference between the modules while the
 per-orthologue identity does. That is not a contradiction, because the
-divergence metric is measured against a background amino-acid table, so a
-transmembrane module scores lower than a soluble one at equal conservation.
+divergence metric is measured against a background amino-acid table [93], so
+a transmembrane module scores lower than a soluble one at equal
+conservation.
 The composition-free column metric agrees with the paired test. The null
 result is a property of the metric, and it is printed here because a reader
 coming from Chapter 11's tables would otherwise find two of this project's own
@@ -5160,7 +5063,8 @@ across the neighbourhood is real and shallow, and reaches significance in one
 paralogue.
 
 **The result replicates on an independent axis.** Every contact site in every
-paralogue is under detectable purifying selection by the per-site rate model,
+paralogue is under detectable purifying selection by the per-site rate model
+[87],
 and the share of significantly constrained sites falls with distance from the
 ligand. It is not monotone, because the outermost shell sits a little above
 the third, so what the data show is a step down from the ligand's first two
@@ -5265,16 +5169,14 @@ p = 0.87.**
 ![](figures/fig_12.4_s22_lineage.png)
 
 **Figure 12.4.** The lineage strata with the power curve beside them,
-because a lineage test that finds nothing is only readable next to what it
-could have found. The ligand core is drawn in a neutral dark rather than a
-hue, because the palette reserves its accent colour for the ryanodine
-receptors and this figure draws them. The importance of drawing the power
-curve beside the strata is that it makes a negative result readable.
-Lineages that lost the enzyme making the ligand show no relaxation at the
-binding site, and without a bound on what the comparison could have detected
-that would be an untestable statement. The ryanodine receptors are drawn as
-the positive control, because they carry the same pore and no ligand site,
-so the shift the design can see is measured rather than assumed.
+which is what makes a negative result readable. Lineages that lost the
+enzyme making the ligand show no relaxation at the binding site, and without
+a bound on what the comparison could have detected that would be an
+untestable statement. The ryanodine receptors are the positive control,
+because they carry the same pore and no ligand site, so the shift the design
+can see is measured rather than assumed. The ligand core is drawn in a
+neutral dark rather than a hue, because the palette reserves its accent
+colour for that control.
 
 **The null is bounded rather than empty.** Measured through the same pairwise
 instrument at the same divergence as the test group, the ryanodine receptors'
@@ -5330,7 +5232,10 @@ reachable by any protein-database search.** They are not hard to find, because
 no protein record of them exists.
 
 That is a statement about databases rather than about biology, and it is
-easily the most immediately useful result in the thesis. It is also a claim
+easily the most immediately useful result in the thesis. Automated annotation
+is known to be imperfect, and the ways in which it fails have been reviewed
+[77]; what has not been available for this family is a measurement of how
+often and in which direction. It is also a claim
 that has to be made carefully, because there are three quite different ways a
 gene can be missing from a public record, and they have different remedies.
 
@@ -5347,8 +5252,8 @@ correction list addressed to somebody else.
 
 Every gene-scale locus in the 309-genome scope is scored into one of five
 states, comprising complete, split, fragmentary, non-coding only and
-unannotated, under three rules that decide whether the audit is measuring
-anything.
+unannotated, against each assembly's own submitted gene set [32], under
+three rules that decide whether the audit is measuring anything.
 
 **Only same-strand features count**, because an antisense gene overlapping the
 locus perfectly is not an annotation of it.
@@ -5416,14 +5321,12 @@ submitter-deposited ones.**
 ![](figures/fig_13.1_s18_by_source.png)
 
 **Figure 13.1.** Locus state by annotation source, raw and above the
-contiguity bar, with the control drawn beside the raw contrast rather than
-instead of it. The importance of this figure is that it separates a database
-effect from an assembly effect, which no raw comparison of annotation
-sources can do. Curated and submitter-deposited gene sets are not applied to
-the same assemblies, so a difference between them partly measures which
-genomes each was run on. Drawing the contiguity-controlled contrast beside
-the raw one shows how much of the gap survives that control and how much
-does not.
+contiguity bar. The control is drawn beside the raw contrast rather than
+instead of it, because that is what separates a database effect from an
+assembly effect. Curated and submitter-deposited gene sets are not applied
+to the same assemblies, so a difference between them partly measures which
+genomes each was run on, and the two bars together show how much of the gap
+survives the control.
 
 The confounder is obvious and is controlled rather than argued. Submitter
 assemblies are less contiguous, and a locus on a contig too short to hold the
@@ -5470,10 +5373,11 @@ the assemblies its loci happen to sit in.
 
 ## 13.6 Half the protein records carry no usable gene symbol
 
-Each of the 11,402 full-length family protein records was scored against the
-committed bait panel, assigned to a family only on a stated margin, then to a
-paralogue inside the winning family, with the record's own gene symbol and
-protein name read through the same verdict rule the genome half uses.
+Each of the 11,402 full-length family protein records held by the protein
+databases [30] was scored against the committed bait panel, assigned to a
+family only on a stated margin, then to a paralogue inside the winning
+family, with the record's own gene symbol and protein name read through the
+same verdict rule the genome half uses.
 
 **The family call is not in dispute.** The sequence disagrees with the census
 call on 4 of 11,402 records, and the databases name the sister family at only
@@ -5513,7 +5417,7 @@ to 64 % in the amoebozoa and the stramenopiles.
 
 ## 13.7 All fifteen empty proteomes are gene-caller failures
 
-Chapter 3 swept 764 vertebrate reference proteomes and 15 returned no family
+Chapter 3 swept 763 vertebrate reference proteomes and 15 returned no family
 hit at all. On its own that is uninterpretable, because a receptor-shaped hole
 in a proteome is either a gene the species lacks or a gene its gene caller did
 not find.
@@ -5559,14 +5463,13 @@ right.
 
 ![](figures/fig_13.6_annotation_loss.png)
 
-**Figure 13.6.** Annotation loss across every recovered locus,
-which is the denominator the two cases are chosen from: 880 loci, 382
-eligible, and 360 of them at zero loss. The importance of drawing the full
-distribution is that it is the denominator the two validated cases are
-chosen from, and a case study without its denominator is an anecdote. Most
-eligible loci sit at zero loss, so the failures are a tail rather than a
-norm, and the two cases taken forward are the extreme of a measured
-distribution rather than the two examples that happened to be noticed.
+**Figure 13.6.** Annotation loss across every recovered locus: 880
+loci, 382 eligible, and 360 of them at zero loss. The full distribution is
+drawn because it is the denominator the two validated cases are chosen from,
+and a case study without its denominator is an anecdote. The failures are a
+tail rather than a norm, so the two cases taken forward are the extreme of a
+measured distribution rather than the two examples that happened to be
+noticed.
 
 **Case A is an omission.** It is a 52.5 kb locus in a chromosome-level fish
 assembly whose contigs are 84 times the length of the gene. The gene has 56
@@ -5584,15 +5487,12 @@ model at all and reaches no protein.
 ![](figures/fig_13.5_exon_tracks.png)
 
 **Figure 13.5.** The two loci at true genomic width, with exons never
-widened to be visible. A 56-exon gene over 52 kb averages 143 bp an exon,
-and fattening them would draw a gene whose coding fraction looks like 40 %
-when it is 15 %, which is the one thing the figure exists to show. The
-importance of true genomic width is that the coding fraction is the point. A
-reader looking at exons widened for visibility would conclude the annotation
-had missed a moderate amount of easily visible sequence, when what it missed
-is a few per cent of the locus distributed over dozens of small exons across
-tens of kilobases. That geometry is why the gene is hard to annotate and why
-the failure is systematic rather than careless.
+widened to be visible. A 56-exon gene over 52 kb averages 143 bp an exon, so
+fattening the exons would draw a gene whose coding fraction looks like 40 %
+when it is 15 %. That geometry is the point: what the annotation missed is a
+few per cent of the locus distributed over dozens of small exons across tens
+of kilobases, which is why the gene is hard to annotate and why the failure
+is systematic rather than careless.
 
 ## 13.9 What the DNA says at those two loci, and five checks on it
 
@@ -5622,13 +5522,12 @@ of them. This validates the instrument at this gene rather than the individual
 locus, which is why it is reported alongside the reading frame and the splice
 sites rather than instead of them.
 
-**Transcript evidence at the junction was searched for, and the denominator is
-the result.** Probes across every junction the annotation does not model were
-searched against every transcript record for the species, and returned
-nothing. The
-species has 10 transcript records in total. A search of that many returning
-nothing has not shown the gene is untranscribed. It has shown the species has
-almost no deposits.
+**Transcript evidence at the junction was searched for, and the denominator
+is the result.** Probes across every junction the annotation does not model
+were searched against every transcript record for the species, and returned
+nothing. The species has 10 transcript records in total. A search of that
+many returning nothing has not shown the gene is untranscribed. It has shown
+the species has almost no deposits.
 
 **That criterion has its own negative control**, and it needed a second half.
 Run against the locus's own genomic DNA, where a probe of contiguous spliced
@@ -5639,12 +5538,13 @@ how the rule acquired its second half: an anchor requirement alone admits an
 alignment that has run a dozen bases past the junction into the intron.
 
 **The rest of the family in the same genome is intact.** Every other family
-locus in both assemblies also splices into an uninterrupted reading frame. Whatever the
-annotation is doing here, it is not responding to a damaged gene.
+locus in both assemblies also splices into an uninterrupted reading frame.
+Whatever the annotation is doing here, it is not responding to a damaged
+gene.
 
 **The neighbourhood check is available for one case and not the other.**
-Case A's missing gene sits between the two neighbours
-its paralogue carries in 197 and 183 of 215 swept vertebrates. For Case B the
+Case A's missing gene sits between the two neighbours its paralogue carries
+in 197 and 183 of 215 swept vertebrates. For Case B the
 check is not available at all, because that annotation names its genes by
 locus tag and there is nothing to match, and that is reported as a limitation
 of the comparison rather than as a negative result.
@@ -5652,19 +5552,14 @@ of the comparison rather than as a negative result.
 ![](figures/fig_13.7_fragment_tiling.png)
 
 **Figure 13.7.** The annotated proteins tiled back onto the
-genome's own recovered loci. The proteins are translated from the assembly's
-own annotation and genome rather than downloaded, because a locus filed as a
-pseudogene emits no protein record and the only way to ask what its model
-encodes is to translate it. The guard that matters is that the subject set
-is the genome's own loci: a query whose own locus is missing from the
-subject set lands on its nearest paralogue instead, and the row then reads
-as a confident naming disagreement, which is exactly what happened before
-the check existed. The importance of this figure is that it says what the
-annotation's own models actually encode, which is the difference between a
-gene the annotation missed and a gene it broke into pieces. Translating the
-models from the assembly rather than downloading proteins is what makes the
-question askable at a locus filed as a pseudogene, and those loci are
-exactly the ones under dispute.
+genome's own recovered loci, which is what says whether the annotation
+missed a gene or broke it into pieces. The proteins are translated from the
+assembly's own annotation and genome rather than downloaded, because a locus
+filed as a pseudogene emits no protein record and those loci are exactly the
+ones under dispute. The guard that matters is that the subject set is the
+genome's own loci: a query whose own locus is missing from it lands on its
+nearest paralogue instead, and the row then reads as a confident naming
+disagreement, which is exactly what happened before the check existed.
 
 ![](figures/fig_13.8_case_validation.png)
 
@@ -5699,8 +5594,8 @@ A control locus carries the loss measured for it or none at all, in that the
 field is empty rather than zero, because a locus never ranked and a locus
 measured at zero loss must not share a cell.
 
-Reads come from the public sequence archive [78] and are mapped with a
-splice-aware aligner [79], run in unspliced mode for the reason given below.
+Reads come from the public sequence archive [100] and are mapped with a
+splice-aware aligner [101], run in unspliced mode for the reason given below.
 
 **The reference every read is mapped against is built rather than
 downloaded.** It is the spliced genomic coding sequence, deliberately not the
@@ -5732,15 +5627,12 @@ own reversed decoys at zero.
 
 **Figure 13.10.** Detection per locus against its own reversed decoy,
 which is the spurious-mapping floor of this particular reference rather than
-a threshold. Counts are on logarithmic axes because these libraries differ
-roughly forty-fold in depth and the comparison that matters is within a run.
-The importance of the reversed decoy is that it replaces a chosen threshold
-with a measured floor. A decoy of identical length and composition and no
-homology collects whatever this particular reference collects by accident,
-so a locus above its own decoy is detected on evidence rather than on a cut
-somebody picked. The logarithmic axes matter because the libraries differ
-about forty-fold in depth, and the comparison that means anything is between
-a locus and its decoy in the same run.
+a threshold. The decoy replaces a chosen cut with a measured one: a sequence
+of identical length and composition and no homology collects whatever this
+reference collects by accident, so a locus above its own decoy is detected
+on evidence. Counts are on logarithmic axes because these libraries differ
+roughly forty-fold in depth, and the comparison that means anything is
+between a locus and its decoy in the same run.
 
 **298 of 314 junctions that no annotated model spans are crossed by reads**,
 which is 94.9 %, against 95.2 % of the annotated junctions in the same genes.
@@ -5748,15 +5640,12 @@ which is 94.9 %, against 95.2 % of the annotated junctions in the same genes.
 ![](figures/fig_13.9_s12_junctions.png)
 
 **Figure 13.9.** Every junction of every reference, crossed or not,
-scored per junction rather than per gene, because a bar saying "this gene
-has junction reads" is nearly the claim the case studies could already make.
-The decoy floor is drawn rather than stated. This figure is what makes the
-transcription evidence answer the annotation question rather than a weaker
-one. That a gene is transcribed says little when part of it is already
-annotated; that the particular junctions no model contains are crossed by
-reads is direct evidence for the exon structure the annotation is missing.
-Scoring per junction rather than per gene is what separates those two
-claims.
+scored per junction rather than per gene, with the decoy floor drawn rather
+than stated. That unit is what makes the read evidence answer the annotation
+question rather than a weaker one: that a gene is transcribed says little
+when part of it is already annotated, whereas the particular junctions no
+model contains being crossed by reads is direct evidence for the exon
+structure the annotation is missing.
 
 **The confound is printed beside the ratio.** Several of these libraries are
 strongly 3′-biased, and in a truncated or fragmented gene the annotated
@@ -5769,13 +5658,10 @@ ratio.
 ![](figures/fig_13.11_s12_gap_coverage.png)
 
 **Figure 13.11.** Read coverage over the sequence the annotation
-loses, which is the read-level form of the loss measurement and the one
-number directly comparable with it. The importance of this figure is that it
-is the one read-level number directly comparable with the annotation-loss
-measurement made from alignments. Two independent instruments, one aligning
-a protein to a genome and one mapping reads to a spliced reference, are
-asked about the same missing sequence. Agreement between them is what rules
-out the loss being an artefact of either.
+loses, which is the read-level form of the loss measurement. Two independent
+instruments, one aligning a protein to a genome and one mapping reads to a
+spliced reference, are asked about the same missing sequence, and their
+agreement is what rules out the loss being an artefact of either.
 
 ## 13.11 Four controls make the read evidence readable
 
@@ -5807,15 +5693,12 @@ the denominator is half the result.
 **Figure 13.12.** The deposit cross-check with its genomic negative
 control. The same junction-probe test the case studies ran is re-asked on a
 panel that now includes a species with 37,166 transcript records against the
-other two species' 43 and 10, and it still cannot answer, which is reported
-as an underpowered measurement rather than as a negative. The importance of
-this figure is that it reports a measurement that did not reach its
-question, rather than converting that into a negative result. A deposit
-search that returns nothing in a species with tens of thousands of
-transcript records and nothing in a species with ten is two very different
-situations, and the genomic negative control is what shows the probes
-themselves work. Reporting this as underpowered keeps a database's emptiness
-from being read as a biological absence.
+other two species' 43 and 10, and it still cannot answer. A search returning
+nothing in a species with tens of thousands of deposits and nothing in a
+species with ten is two very different situations, and the negative control
+is what shows the probes themselves work. Reporting the result as
+underpowered is what keeps a database's emptiness from being read as a
+biological absence.
 
 Eleven constructed negative controls run before anything is written, and were
 mutation-tested on five deliberate breakages, all five caught. The most
@@ -5883,8 +5766,8 @@ A paper's methods section says what was done. It has to, because a reader
 needs to reproduce it. It cannot say why each threshold is the number it is,
 and for this project that is where most of the work went.
 
-Seventy-five methodological decisions were recorded across twenty-six working
-sessions, numbered as they were made. Several of them changed an answer.
+87 methodological decisions were recorded across 35 working sessions,
+numbered as they were made. Several of them changed an answer.
 Several were made, tested and overturned. None of them has ever been written
 out as prose, and this chapter is that: not a list, but the arguments in the
 order they matter, with the incident that produced each one.
@@ -5892,6 +5775,32 @@ order they matter, with the incident that produced each one.
 The chapter is organised by what a decision is about, covering thresholds,
 controls, refusals, reproducibility, and the rules that keep a document from
 drifting away from its data.
+
+**Where the procedures themselves are.** Because each instrument is built in
+the chapter that first depends on it, a reader looking for a procedure rather
+than for an argument needs a map, and this is it.
+
+| Instrument | Built in |
+|---|---|
+| Control benchmark, domain-architecture call, profile models | §3.2 to §3.5 |
+| Bait panel, spliced-alignment sweep, rescue attribution | §4.3 to §4.6 |
+| Contiguity bar | §4.7 |
+| False-negative rate, panel ablation, channel contribution | §4.11 to §4.13 |
+| Proteome sweep, per-clade positive control, identity floor | §5.2, §5.7, §5.9 |
+| Representative selection, alignment, model choice, tree search | §6.2 to §6.6 |
+| Neighbourhood windows, matched control, paralogue caller | §7.2, §7.5 |
+| Species tree and reconciliation, dated paralogy | §7.7, §7.10 |
+| Exon and intron reading, coordinate frame, shared-intron null | §8.2 to §8.7 |
+| State vocabulary, reassembly bar, Dollo count, sensitivity grid | §9.2, §9.3, §9.8, §9.9 |
+| Coding-sequence validation, codon alignment, selection models | §10.2, §10.3, §10.7 |
+| Structural panel, fold calibration, constraint layers | §11.3, §11.4, §11.8 |
+| Module definitions, ligand shells, paired test | §12.2 to §12.4 |
+| Locus states, name verdicts, read evidence | §13.2, §13.10 |
+
+Every one of those sections names the committed table its output lives in, and
+the analysis code is one file per task under `scripts/`, mapped in the
+repository's `INTERFACE.md`. The exact version of every external program the
+project shelled out to is recorded in `results/toolchain_manifest.txt`.
 
 ## 14.2 Thresholds are measured rather than chosen, and never ported
 
@@ -6024,7 +5933,7 @@ comparison taken where 73 % of the flanking genes are unnamed is a measurement
 that did not happen.
 
 **A ratio is estimated on a tree rather than from a pair, once the pairs are
-saturated.** The counting method a pairwise estimate rests on [80] is used
+saturated.** The counting method a pairwise estimate rests on [102] is used
 in the application's own exploratory tool and nowhere in this thesis's
 results, for the reason Chapter 10 measures: nearly nine tenths of
 within-paralogue pairs are past the saturation bar, so a pairwise matrix is a
@@ -6044,7 +5953,7 @@ distribution**, and both are written out rather than one chosen.
 ## 14.5 Four things in this project were not reproducible until they were pinned
 
 **Anything a committed artefact is built from is aligned single-threaded.**
-The alignment program's [36] iterative refinement combines partial results
+The alignment program's [48] iterative refinement combines partial results
 in whatever order the threads finish, so at automatic thread count it is not
 reproducible: the same seeds aligned twice gave 8,510 and 8,468 columns, and
 the profiles built from them 4,933 and 4,908 match states. This was discovered
@@ -6053,7 +5962,7 @@ count had moved. **A profile that changes when it is rebuilt cannot be the
 profile a committed result was produced with.** Single-threaded costs 87
 seconds instead of 15, once.
 
-**Thread counts and seeds are pinned for the tree search [39] too**, because
+**Thread counts and seeds are pinned for the tree search [51] too**, because
 automatic thread selection reads the machine's current load and the search is
 reproducible only at a fixed seed and a fixed thread count. The number pinned
 is what the program's own benchmark returned, so pinning costs nothing.
@@ -6117,16 +6026,11 @@ them.
 what evidence each addition rests. It is in the methods chapter rather than
 in a results chapter because it is a statement about the search rather than
 about the family: each edition is a channel, and the figure is the shape of
-what each channel was worth. The targeted database search that started the
-project returned about a tenth of what the exhaustive enumeration did, and
-the two genome sweeps together added the records no protein database holds
-at all. The importance of this figure to a reader planning similar work is
-that it prices four search strategies against each other on one family. A
-targeted search of the obvious databases, which is where most projects stop,
-recovers a small fraction of what exists; exhaustive enumeration by domain
-signature recovers most of what protein databases hold; and only searching
-genomes directly recovers the genes no protein database holds. The shape of
-the curve is the argument for the last of those being worth its cost.
+what each channel was worth. For a reader planning similar work it prices
+four search strategies against each other on one family. A targeted search
+of the obvious databases, which is where most projects stop, returned about
+a tenth of what exhaustive enumeration by domain signature did, and only the
+two genome sweeps recovered the genes no protein database holds at all.
 
 **Citations are keys resolved at build time and the bibliography is rendered
 rather than typed.** No author, title, year or journal is written into a
@@ -6142,7 +6046,7 @@ the build said so.
 
 ## 14.7 Four rules are specific to this family
 
-Four of the seventy-five decisions are about this family and could not have
+Four of the 87 recorded decisions are about this family and could not have
 been ported from anywhere.
 
 **Separating IP₃ from ryanodine receptors is a positive test at every stage.**
@@ -6405,7 +6309,7 @@ the driver had already copied.
 SHA-256 of every committed file before and after**, because this project has
 already had a self-test overwrite the committed table it was testing.
 
-All 15 fire, and `thesis/guard_check.tsv` records what each said.
+All 18 fire, and `thesis/guard_check.tsv` records what each said.
 
 ## 14.14 The reference audit caught nine citations that named the wrong paper
 
@@ -6469,7 +6373,7 @@ positive control recovers a comparably long, deeply conserved gene.
 **This changes the status of the family's distribution from an impression to a
 measurement.** The receptor's occurrence outside the animals has been reported
 from whichever genomes were available when each survey was written, and the
-resulting picture is a list of sightings rather than a range [81,82,83,84]. A sighting list cannot support an absence, because the absence of a
+resulting picture is a list of sightings rather than a range [37,38,39,47]. A sighting list cannot support an absence, because the absence of a
 report and the report of an absence look identical in it. What is different
 here is the denominator: 7,691 reference proteomes and 194 non-vertebrate
 genomes, with a control in every genome that carries the claim.
@@ -6478,26 +6382,26 @@ genomes, with a control in every genome that carries the claim.
 literature for two decades.** Plant cells release calcium in response to
 IP₃ in physiological assays, and no plant receptor gene has ever been
 identified, so the standing review of the subject asks in its title whether
-the receptor is real [85]. This work gives the genomic half of that answer
+the receptor is real [36]. This work gives the genomic half of that answer
 in the strong form: land plants do not have the gene, and the green algae they
-descend from do [86,87]. That relocates the question rather than closing
+descend from do [42,41]. That relocates the question rather than closing
 it. The physiology still needs a carrier, and the plant calcium toolkit is
-built from channel families that animals use differently or not at all [88,89], so the useful next experiment is about what performs the function in a
+built from channel families that animals use differently or not at all [43,44], so the useful next experiment is about what performs the function in a
 lineage that demonstrably lost the receptor.
 
 **The absences in the reduced parasite genomes are the least surprising and
 the most useful as controls.** Microsporidia and apicomplexans have undergone
-severe genome reduction [90], and the tapeworms have lost gene families
-across their entire biology as an adaptation to parasitism [91]. A method
+severe genome reduction [46], and the tapeworms have lost gene families
+across their entire biology as an adaptation to parasitism [45]. A method
 that failed to find the receptor in those lineages when it is there would show
 the same pattern, which is why each of those claims is carried by a positive
 control drawn from the same clade rather than by the search returning nothing.
 The apicomplexan calcium literature has had to work around exactly this
-uncertainty [84].
+uncertainty [47].
 
 **A measured range turns the receptor into an instrument for other questions.**
 Co-occurrence across genomes is one of the oldest ways of assigning function
-without an experiment [92], and it requires a range on both sides of the
+without an experiment [103], and it requires a range on both sides of the
 comparison. Chapter 12 uses this one: the receptor's distribution is compared
 against the distribution of the enzyme that makes its ligand, across the same
 7,691 proteomes, and the comparison is only possible because both were swept
@@ -6516,10 +6420,10 @@ mechanism rather than as degradation [25], but a loss claim needs a
 denominator and a control, which is what most reports of a missing channel
 lack. The pattern here is worth stating because it is convergent: the same
 receptor is retained by the chlorophyte algae and absent from land plants
-[86,87], and retained by the early-diverging fungi and absent from the
-Dikarya [93]. Two kingdoms lost the same signalling component on the two
+[42,41], and retained by the early-diverging fungi and absent from the
+Dikarya [40]. Two kingdoms lost the same signalling component on the two
 branches where each made its largest change in cell biology, and calcium
-signalling in both is now carried by other machinery [88].
+signalling in both is now carried by other machinery [43].
 
 That is a comparison a physiologist can act on. It identifies the pairs of
 lineages between which the substitution happened, and it names assemblies on
@@ -6539,15 +6443,15 @@ vertebrate radiation and the other far older.
 genome-scale reconstructions assign to the two vertebrate duplications.**
 Reconstructions of the proto-vertebrate, proto-cyclostome and proto-gnathostome
 genomes place the first round before the cyclostome and gnathostome split and
-the second after it [94], which is the arrangement this family's two splits
+the second after it [104], which is the arrangement this family's two splits
 recover from an independent gene tree and its own neighbourhood evidence
-[24,55,56]. A family whose duplication history matches the
+[24,69,56]. A family whose duplication history matches the
 genome-scale account needs no lineage-specific explanation, and one that
 did not would have been a problem for either the family or the account.
 
 **It also changes how the functional literature should be read.** The three
 receptors are usually discussed as three coequal subtypes with different
-regulation, distribution and physiology [95,96,97]. The tree says they
+regulation, distribution and physiology [105,106,107]. The tree says they
 are not symmetric: ITPR2 and ITPR3 are a younger pair and ITPR1 is the
 outgroup to both. A functional difference shared by ITPR2 and ITPR3 and absent
 from ITPR1 is therefore the cheaper hypothesis, because it needs one change on
@@ -6563,8 +6467,8 @@ genomes.
 duplication that is predictable, and this result fits the prediction and
 sharpens it.** Retention after a genome duplication is biased towards
 dosage-sensitive genes, whose products work in complexes where the ratio of
-partners matters [98], and the genes that stay duplicated are a small and
-non-random remainder of an otherwise rapid return to single copy [99,57]. The receptor is a homotetramer that also forms heterotetramers, so it
+partners matters [108], and the genes that stay duplicated are a small and
+non-random remainder of an otherwise rapid return to single copy [55,70]. The receptor is a homotetramer that also forms heterotetramers, so it
 is a dosage-sensitive gene by that argument, and the interesting part of the
 result is not that a copy was retained but that only one paralogue's was.
 The ryanodine receptors in the same genomes, under the same duplication and
@@ -6572,9 +6476,9 @@ the same subsequent loss, kept all three.
 
 **The same paralogue is dosage-sensitive in humans.** Ohnologues from the
 vertebrate duplications are over-represented among the genes whose copy-number
-changes cause disease [100], and ITPR1 is one of them: heterozygous deletion
-of ITPR1 causes spinocerebellar ataxia in humans [101,102,103] and the
-gene is among the most constrained in the human population record [104].
+changes cause disease [109], and ITPR1 is one of them: heterozygous deletion
+of ITPR1 causes spinocerebellar ataxia in humans [110,111,112] and the
+gene is among the most constrained in the human population record [113].
 A copy kept doubled for 300 million years in one clade and intolerant of
 hemizygosity in another is the same statement about dosage made twice.
 
@@ -6589,7 +6493,7 @@ paralogues is intron length, by a factor of four.
 
 **Shared intron positions are among the most durable characters a gene has**,
 conserved across kingdoms and lost or gained at rates low enough to be
-informative about deep relationships [105,106]. Reporting 46 to 49 shared
+informative about deep relationships [75,76]. Reporting 46 to 49 shared
 positions therefore says something the sequence alignment does not: the three
 paralogues did not merely diverge from a common protein, they inherited a
 common gene, intron by intron, and have kept the boundaries through 500
@@ -6605,9 +6509,9 @@ observation about splicing and an observation about ancestry.
 
 **The four-fold difference in intron length is the other half of the result,
 and it is a live question rather than a settled one.** Intron length is under
-selection, with shorter introns in highly expressed genes [107], although the
+selection, with shorter introns in highly expressed genes [73], although the
 energetic explanation usually offered for that has itself been contested
-[108]. Three paralogues that agree on every coding boundary and disagree
+[74]. Three paralogues that agree on every coding boundary and disagree
 four-fold on the DNA between them are a controlled comparison for whatever
 sets intron length, because everything a comparison of unrelated genes would
 have to control for is already matched.
@@ -6628,9 +6532,9 @@ statement about that clade rather than about the family's general behaviour.
 
 **Every paralogue has a loss-of-function phenotype, which is the mechanism the
 retention result points at.** Deleting ITPR1 in mice produces ataxia and
-seizures [109], the human heterozygous deletion is a recognised ataxia
-[101,102], loss of ITPR2 function abolishes sweat secretion in humans and
-mice [110] and ITPR3 variants cause a peripheral neuropathy [111]. Retention
+seizures [114], the human heterozygous deletion is a recognised ataxia
+[110,111], loss of ITPR2 function abolishes sweat secretion in humans and
+mice [115] and ITPR3 variants cause a peripheral neuropathy [116]. Retention
 across a whole vertebrate clade, an ohnologue kept doubled in the teleosts,
 and dosage intolerance in humans are three independent observations pointing
 at the same conclusion, and none of them establishes it on its own.
@@ -6790,9 +6694,10 @@ whole genes.** At gene scale it returns what domain annotation already
 returns, adding one extra record in 3,135 in the vertebrates. Its gain is
 fragments, and gene-scale records only where the annotation is worst.
 
-**The rule everyone writes to catch iterative-search drift measures the wrong
-thing.** Sister-family contamination is diluted by the drift it is meant to
-detect. Scored as classifiers of an outcome measured on the finished model,
+**The obvious rule for catching iterative-search drift measures the wrong
+thing.** Sister-family contamination is the quantity this project and its
+predecessor both chose to monitor, and it is diluted by the drift it is meant
+to detect. Scored as classifiers of an outcome measured on the finished model,
 the sister-family rule has a sensitivity of zero on seven runs including all
 three that drifted, while the off-family share separates them perfectly.
 
@@ -6823,15 +6728,14 @@ measurement separates ligand binding from domain packing.
 one enzyme family says the canonical route to IP₃ is missing rather than that
 the receptor has no ligand.
 
-**The bird lesion result is named but not explained.** ITPR3 carries an excess
-of disabling indels
-against its own genome's identity-matched sibling loci, and stratified it is
-entirely a bird result, at 25 genomes to 2. Twenty-one of the 27 informative
-pairs are in assemblies below the contiguity bar, which is where the test has
-its power, and the six above it all point the same way without being enough to
-test. The lineage is named and the mechanism is not, and what would settle it
-is a different sample, meaning birds at chromosome level, rather than a
-different statistic.
+**The bird lesion result is named but not explained.** ITPR3 carries an
+excess of disabling indels against its own genome's identity-matched sibling
+loci, and stratified it is entirely a bird result, at 25 genomes to 2.
+Twenty-one of the 27 informative pairs are in assemblies below the
+contiguity bar, which is where the test has its power, and the six above it
+all point the same way without being enough to test. The lineage is named
+and the mechanism is not, and what would settle it is a different sample,
+meaning birds at chromosome level, rather than a different statistic.
 
 ## 15.8 The general shape of the argument is a stance about negatives
 
@@ -6880,18 +6784,19 @@ and the network. It reads and writes files, runs commands, inspects their
 output, and decides what to do next.
 
 **Claude Code did the following.** It designed the project plan and wrote it
-down as a task ledger with dependencies. It wrote all 372 Python files under
+down as a task ledger with dependencies. It wrote all 373 Python files under
 `scripts/`, which run to over a hundred thousand lines, together with the
-9,243 lines of the search application under `src/`. It audited the literature the project started from,
-claim by claim, against primary sources. It decided which genomes and
-proteomes to download, wrote the manifests that declare them, and fetched
-624 GB of assemblies and 60 GB of proteomes. It chose every threshold in the
-work and, in most cases, measured it rather than choosing it. It ran every
-search, alignment, tree, selection test and structural comparison. It produced
-all 444 committed result tables and all 111 committed figures. It recorded 83
-numbered methodological decisions as it made them. And it wrote the literature
-review, the manuscript, this thesis and every one of the 28 rendered task
-reports that stand behind them, which together run to 109,250 words.
+9,243 lines of the search application under `src/`. It audited the
+literature the project started from, claim by claim, against primary
+sources. It decided which genomes and proteomes to download, wrote the
+manifests that declare them, and fetched 624 GB of assemblies and 60 GB of
+proteomes. It chose every threshold in the work and, in most cases, measured
+it rather than choosing it. It ran every search, alignment, tree, selection
+test and structural comparison. It produced all 444 committed result tables
+and all 111 committed figures. It recorded 83 numbered methodological
+decisions as it made them. And it wrote the literature review, the
+manuscript, this thesis and every one of the 28 rendered task reports that
+stand behind them, which together run to 109,250 words.
 
 Every figure in that list is measured rather than recalled. The build
 re-derives them from the repository on every run and commits them as
@@ -6941,7 +6846,7 @@ proves too large, is the rule that kept it finishable.** Several tasks were
 split this way, and each split is visible in the ledger as two rows with the
 reason recorded.
 
-**The ledger is 35 tasks, of which 33 are complete.** Each row carries the
+**The ledger is 36 tasks, of which 34 are complete.** Each row carries the
 task, its dependencies, its status with a date, and a results column holding
 the load-bearing numbers and the paths they came from. The two incomplete rows
 are the human-gated deposit, which needs a person to create a public archive
@@ -7079,7 +6984,7 @@ separation**.
 
 Chapter 14 sets out the rules in full. What is worth saying here is that this
 is where the agent's own reasoning is most visible, and it is visible because
-it was written down at the time. **84 numbered decisions** are recorded in the
+it was written down at the time. **87 numbered decisions** are recorded in the
 roadmap, each with the incident that produced it. Several changed an answer.
 An attribution margin inherited from a sister project was measured and
 overturned, because it came from a family whose paralogues are half as similar
@@ -7222,23 +7127,25 @@ change and the message, and the human's account and machine committed it.
 
 Three things this way of working did well.
 
-**It sustained a long, dependency-ordered plan.** 35 tasks with declared
+**It sustained a long, dependency-ordered plan.** 36 tasks with declared
 dependencies, worked one at a time to stated completion criteria across 35
 sessions, with the ledger and the session log carrying the state between them.
 An agent with no memory between sessions can do this only if the state lives
 in the repository, and the protocol is what puts it there.
 
-**It made the methodology explicit.** 84 numbered decisions with the incident
+**It made the methodology explicit.** 87 numbered decisions with the incident
 that produced each is a level of methodological record-keeping that is
 uncommon in a paper, and it exists because the agent had to write down why it
 did something in order to be able to follow the same rule three weeks later.
 
-That count is itself an example of the arrangement working. Writing this
-chapter added a decision to the log, the build re-measured the repository, and
-the claims ledger failed with the message that the chapter said 82 where the
-log now held 83. The number in the sentence you are reading was corrected
-because a check refused the document, which is the whole of what §16.9
-describes, applied to the chapter that describes it.
+That count is itself an example of the arrangement working, and it has
+demonstrated it twice. Writing this chapter added a decision to the log, and
+the editorial pass that followed added another. On both occasions the build
+re-measured the repository and the claims ledger refused the document, naming
+the number the chapter still carried and the number the log now held. The
+figure in the sentence above was corrected each time because a check declined
+to pass it, which is the whole of what §16.9 describes, applied to the chapter
+that describes it.
 
 **It made checking cheap enough to do everywhere.** 437 constructed negative
 controls, 496 declared claims across two documents, guards that are broken on
@@ -7298,17 +7205,18 @@ the recovered gene at all, and the proposal is a coding model over the aligned
 exons.
 
 **Fifty-four items are held only by a non-coding feature.** The annotation
-places a feature there and files it as something that emits no protein, most often a
-pseudogene. This is the class where the family differs from its sister, and
-where the failure is most invisible to a user, because the gene is identified,
-frequently named correctly, and simply produces no protein record, so no
-name-based or sequence-based protein search can ever reach it.
+places a feature there and files it as something that emits no protein, most
+often a pseudogene. This is the class where the family differs from its
+sister, and where the failure is most invisible to a user, because the gene
+is identified, frequently named correctly, and simply produces no protein
+record, so no name-based or sequence-based protein search can ever reach it.
 
-**Two hundred and seventeen items are incomplete.** One or more coding models
-are present and between them deliver a fraction of the gene. The proposal names how many models are
-there, what fraction they deliver together, what the best single one delivers,
-and asks for extension or merging to the aligned exons. The typical row
-delivers a tenth of the gene across two models.
+**Two hundred and seventeen items are incomplete.** One or more coding
+models are present and between them deliver a fraction of the gene. The
+proposal names how many models are there, what fraction they deliver
+together, what the best single one delivers, and asks for extension or
+merging to the aligned exons. The typical row delivers a tenth of the gene
+across two models.
 
 **One item carries a wrong paralogue name.** Its annotation names a paralogue
 the alignment assigns elsewhere, in a genome that also carries a separate
@@ -7316,11 +7224,12 @@ locus for the paralogue the annotation names, so the two cannot both be that
 gene.
 
 **Five items are protein records naming the wrong family.** Each is a
-full-length protein record whose sequence the bait panel assigns to one family
-and whose name claims the other. All five are non-vertebrate records where the sequence
-barely separates the families either, and each additionally required an
-absolute score as well as a relative margin before it was written, because
-these candidates score 90 to 191 bits over roughly 2,700 residues.
+full-length protein record whose sequence the bait panel assigns to one
+family and whose name claims the other. All five are non-vertebrate records
+where the sequence barely separates the families either, and each
+additionally required an absolute score as well as a relative margin before
+it was written, because these candidates score 90 to 191 bits over roughly
+2,700 residues.
 
 Two hundred and ninety-two of the items concern a genome annotation and five a
 protein record.
@@ -7690,7 +7599,7 @@ recorded rather than smoothed over.
 
 Every guard in the build is broken on purpose on **every** build, by
 `scripts/s25_test_guards.py`, which runs as the first stage and writes
-`thesis/guard_check.tsv`. **All 15 fire with the message they are supposed
+`thesis/guard_check.tsv`. **All 18 fire with the message they are supposed
 to**, and the suite verifies that it altered no committed file while doing it,
 because a self-test that damages what it tests is a failure mode this project
 has already had once.
@@ -7715,11 +7624,18 @@ that starts failing for a different reason is a failure rather than a pass.
 | a failed claim | a claim's expected value altered | `[FAIL] <id> <claim>: expected X, found Y` |
 | a padded claim | a claim declared for a chapter whose text does not state its value | `chapter N does not state 'X', so either the number is missing from the text or the claim is padding` |
 | a dropped glyph | a character the document font cannot set | `N distinct missing characters, so the document font lacks a glyph the text uses` |
+| an em-dash | an em-dash reintroduced into a chapter source | `N em-dash(es) in a chapter source` |
+| a legend repeating itself | a sentence duplicated inside one figure legend | `legend <slug> says the same thing twice` |
+| a legend repeating its neighbour | a legend given the text of the paragraph beside it | `legend <slug> restates the paragraph after it` |
 
-The last two are the ones this thesis added over the manuscript's build. The
+Four of these are the ones this thesis added over the manuscript's build: the
+padded-claim guard and the three prose guards at the foot of the table. The
 padded-claim guard closes the ledger in the direction the manuscript's cannot,
 because it fails not only when the document states a number no table produces,
-but when the ledger declares a check the document never makes.
+but when the ledger declares a check the document never makes. The three prose
+guards exist because the two editorial passes on this document each introduced
+a defect that every other guard passed over: an em-dash carrying a clause a
+reader needed, and a figure legend saying the same thing twice.
 
 ---
 
@@ -7731,7 +7647,7 @@ appearance in the text. No author, title, year or journal is typed into a
 chapter file, and a cited key with no row in that table fails the build.
 
 The 137 keys inherited from the literature review were assembled and audited
-in the session that built it. The 58 added for this document were each
+in the session that built it. The 76 added for this document were each
 resolved against a live record, using PubMed for anything indexed there and
 Crossref otherwise, and admitted only if the title the identifier returned
 carried the phrase the declaration said it should. Appendix D is that audit,
@@ -7807,156 +7723,166 @@ and it reports what it caught.
 
 35. Rhie A, McCarthy SA, Fedrigo O, Damas J, Formenti G, Koren S *et al.* Towards complete and error-free genome assemblies of all vertebrate species. *Nature* **2021**. PMID 33911273. doi:10.1038/s41586-021-03451-0.
 
-36. Katoh K, Standley DM. MAFFT multiple sequence alignment software version 7: improvements in performance and usability. *Mol Biol Evol* **2013**. PMID 23329690. doi:10.1093/molbev/mst010.
+36. Krinke O, Novotná Z, Valentová O, Martinec J. Inositol trisphosphate receptor in higher plants: is it real?. *J Exp Bot* **2007**. PMID 17150991. doi:10.1093/jxb/erl220.
 
-37. Capella-Gutiérrez S, Silla-Martínez JM, Gabaldón T. trimAl: a tool for automated alignment trimming in large-scale phylogenetic analyses. *Bioinformatics* **2009**. PMID 19505945. doi:10.1093/bioinformatics/btp348.
+37. Plattner H, Verkhratsky A. Ca2+ signalling early in evolution--all but primitive. *J Cell Sci* **2013**. PMID 23729741. doi:10.1242/jcs.127449.
 
-38. Kalyaanamoorthy S, Minh BQ, Wong TKF, von Haeseler A, Jermiin LS. ModelFinder: fast model selection for accurate phylogenetic estimates. *Nat Methods* **2017**. PMID 28481363. doi:10.1038/nmeth.4285.
+38. Plattner H. Molecular aspects of calcium signalling at the crossroads of unikont and bikont eukaryote evolution--the ciliated protozoan Paramecium in focus. *Cell Calcium* **2015**. PMID 25601027. doi:10.1016/j.ceca.2014.12.002.
 
-39. Minh BQ, Schmidt HA, Chernomor O, Schrempf D, Woodhams MD, von Haeseler A *et al.* IQ-TREE 2: New Models and Efficient Methods for Phylogenetic Inference in the Genomic Era. *Mol Biol Evol* **2020**. PMID 32011700. doi:10.1093/molbev/msaa015.
+39. Cai X, Clapham DE. Ancestral Ca2+ signaling machinery in early animal and fungal evolution. *Mol Biol Evol* **2012**. PMID 21680871. doi:10.1093/molbev/msr149.
 
-40. Hoang DT, Chernomor O, von Haeseler A, Minh BQ, Vinh LS. UFBoot2: Improving the Ultrafast Bootstrap Approximation. *Mol Biol Evol* **2018**. PMID 29077904. doi:10.1093/molbev/msx281.
+40. James TY, Kauff F, Schoch CL, Matheny PB, Hofstetter V, Cox CJ *et al.* Reconstructing the early evolution of Fungi using a six-gene phylogeny. *Nature* **2006**. PMID 17051209. doi:10.1038/nature05110.
 
-41. Guindon S, Dufayard JF, Lefort V, Anisimova M, Hordijk W, Gascuel O. New algorithms and methods to estimate maximum-likelihood phylogenies: assessing the performance of PhyML 3.0. *Syst Biol* **2010**. PMID 20525638. doi:10.1093/sysbio/syq010.
+41. Merchant SS, Prochnik SE, Vallon O, Harris EH, Karpowicz SJ, Witman GB *et al.* The Chlamydomonas genome reveals the evolution of key animal and plant functions. *Science* **2007**. PMID 17932292. doi:10.1126/science.1143609.
 
-42. Shimodaira H. An approximately unbiased test of phylogenetic tree selection. *Syst Biol* **2002**. PMID 12079646. doi:10.1080/10635150290069913.
+42. Wheeler GL, Brownlee C. Ca2+ signalling in plants and green algae--changing channels. *Trends Plant Sci* **2008**. PMID 18703378. doi:10.1016/j.tplants.2008.06.004.
 
-43. Kumar S, Suleski M, Craig JM, Kasprowicz AE, Sanderford M, Li M *et al.* TimeTree 5: An Expanded Resource for Species Divergence Times. *Mol Biol Evol* **2022**. PMID 35932227. doi:10.1093/molbev/msac174.
+43. Edel KH, Marchadier E, Brownlee C, Kudla J, Hetherington AM. The Evolution of Calcium-Based Signalling in Plants. *Curr Biol* **2017**. PMID 28697370. doi:10.1016/j.cub.2017.05.020.
 
-44. Benton M, Donoghue P, Vinther J, Asher R, Friedman M, Near T. Constraints on the timescale of animal evolutionary history. *Palaeontologia Electronica* **2015**. doi:10.26879/424.
+44. Verret F, Wheeler G, Taylor AR, Farnham G, Brownlee C. Calcium channels in photosynthetic eukaryotes: implications for evolution of calcium-based signalling. *New Phytol* **2010**. PMID 20456068. doi:10.1111/j.1469-8137.2010.03271.x.
 
-45. Irisarri I, Baurain D, Brinkmann H, Delsuc F, Sire JY, Kupfer A *et al.* Phylotranscriptomic consolidation of the jawed vertebrate timetree. *Nat Ecol Evol* **2017**. PMID 28890940. doi:10.1038/s41559-017-0240-5.
+45. Tsai IJ, Zarowiecki M, Holroyd N, Garciarrubio A, Sánchez-Flores A, Brooks KL *et al.* The genomes of four tapeworm species reveal adaptations to parasitism. *Nature* **2013**. PMID 23485966. doi:10.1038/nature12031.
 
-46. Betancur-R R, Wiley EO, Arratia G, Acero A, Bailly N, Miya M *et al.* Phylogenetic classification of bony fishes. *BMC Evol Biol* **2017**. PMID 28683774. doi:10.1186/s12862-017-0958-3.
+46. Keeling PJ, Slamovits CH. Causes and effects of nuclear genome reduction. *Curr Opin Genet Dev* **2005**. PMID 16188433. doi:10.1016/j.gde.2005.09.003.
 
-47. Prum RO, Berv JS, Dornburg A, Field DJ, Townsend JP, Lemmon EM *et al.* A comprehensive phylogeny of birds (Aves) using targeted next-generation DNA sequencing. *Nature* **2015**. PMID 26444237. doi:10.1038/nature15697.
+47. Prole DL, Taylor CW. Identification of intracellular and plasma membrane calcium channel homologues in pathogenic parasites. *PLoS One* **2011**. PMID 22022573. doi:10.1371/journal.pone.0026218.
 
-48. Vernot B, Stolzer M, Goldman A, Durand D. Reconciliation with non-binary species trees. *J Comput Biol* **2008**. PMID 18808330. doi:10.1089/cmb.2008.0092.
+48. Katoh K, Standley DM. MAFFT multiple sequence alignment software version 7: improvements in performance and usability. *Mol Biol Evol* **2013**. PMID 23329690. doi:10.1093/molbev/mst010.
 
-49. Zmasek CM, Eddy SR. A simple algorithm to infer gene duplication and speciation events on a gene tree. *Bioinformatics* **2001**. PMID 11590098. doi:10.1093/bioinformatics/17.9.821.
+49. Capella-Gutiérrez S, Silla-Martínez JM, Gabaldón T. trimAl: a tool for automated alignment trimming in large-scale phylogenetic analyses. *Bioinformatics* **2009**. PMID 19505945. doi:10.1093/bioinformatics/btp348.
 
-50. Goodman M, Czelusniak J, Moore GW, Romero-Herrera AE, Matsuda G. Fitting the Gene Lineage into its Species Lineage, a Parsimony Strategy Illustrated by Cladograms Constructed from Globin Sequences. *Systematic Zoology* **1979**. doi:10.2307/2412519.
+50. Kalyaanamoorthy S, Minh BQ, Wong TKF, von Haeseler A, Jermiin LS. ModelFinder: fast model selection for accurate phylogenetic estimates. *Nat Methods* **2017**. PMID 28481363. doi:10.1038/nmeth.4285.
 
-51. Smith JJ, Timoshevskaya N, Ye C, Holt C, Keinath MC, Parker HJ *et al.* The sea lamprey germline genome provides insights into programmed genome rearrangement and vertebrate evolution. *Nat Genet* **2018**. PMID 29358652. doi:10.1038/s41588-017-0036-1.
+51. Minh BQ, Schmidt HA, Chernomor O, Schrempf D, Woodhams MD, von Haeseler A *et al.* IQ-TREE 2: New Models and Efficient Methods for Phylogenetic Inference in the Genomic Era. *Mol Biol Evol* **2020**. PMID 32011700. doi:10.1093/molbev/msaa015.
 
-52. Marlétaz F, Firbas PN, Maeso I, Tena JJ, Bogdanovic O, Perry M *et al.* Amphioxus functional genomics and the origins of vertebrate gene regulation. *Nature* **2018**. PMID 30464347. doi:10.1038/s41586-018-0734-6.
+52. Hoang DT, Chernomor O, von Haeseler A, Minh BQ, Vinh LS. UFBoot2: Improving the Ultrafast Bootstrap Approximation. *Mol Biol Evol* **2018**. PMID 29077904. doi:10.1093/molbev/msx281.
 
-53. Herrero J, Muffato M, Beal K, Fitzgerald S, Gordon L, Pignatelli M *et al.* Ensembl comparative genomics resources. *Database (Oxford)* **2016**. PMID 27141089. doi:10.1093/database/baw053.
+53. Guindon S, Dufayard JF, Lefort V, Anisimova M, Hordijk W, Gascuel O. New algorithms and methods to estimate maximum-likelihood phylogenies: assessing the performance of PhyML 3.0. *Syst Biol* **2010**. PMID 20525638. doi:10.1093/sysbio/syq010.
 
-54. Smedley D, Haider S, Durinck S, Pandini L, Provero P, Allen J *et al.* The BioMart community portal: an innovative alternative to large, centralized data repositories. *Nucleic Acids Res* **2015**. PMID 25897122. doi:10.1093/nar/gkv350.
+54. Shimodaira H. An approximately unbiased test of phylogenetic tree selection. *Syst Biol* **2002**. PMID 12079646. doi:10.1080/10635150290069913.
 
-55. Simakov O, Marlétaz F, Yue JX, O'Connell B, Jenkins J, Brandt A *et al.* Deeply conserved synteny resolves early events in vertebrate evolution. *Nat Ecol Evol* **2020**. PMID 32313176. doi:10.1038/s41559-020-1156-z.
+55. Inoue J, Sato Y, Sinclair R, Tsukamoto K, Nishida M. Rapid genome reshaping by multiple-gene loss after whole-genome duplication in teleost fish suggested by mathematical modeling. *Proc Natl Acad Sci U S A* **2015**. PMID 26578810. doi:10.1073/pnas.1507669112.
 
 56. Nakatani Y, Takeda H, Kohara Y, Morishita S. Reconstruction of the vertebrate ancestral genome reveals dynamic genome reorganization in early vertebrates. *Genome Res* **2007**. PMID 17652425. doi:10.1101/gr.6316407.
 
-57. Jaillon O, Aury JM, Brunet F, Petit JL, Stange-Thomann N, Mauceli E *et al.* Genome duplication in the teleost fish Tetraodon nigroviridis reveals the early vertebrate proto-karyotype. *Nature* **2004**. PMID 15496914. doi:10.1038/nature03025.
+57. Kumar S, Suleski M, Craig JM, Kasprowicz AE, Sanderford M, Li M *et al.* TimeTree 5: An Expanded Resource for Species Divergence Times. *Mol Biol Evol* **2022**. PMID 35932227. doi:10.1093/molbev/msac174.
 
-58. Amores A, Force A, Yan YL, Joly L, Amemiya C, Fritz A *et al.* Zebrafish hox clusters and vertebrate genome evolution. *Science* **1998**. PMID 9831563. doi:10.1126/science.282.5394.1711.
+58. Benton M, Donoghue P, Vinther J, Asher R, Friedman M, Near T. Constraints on the timescale of animal evolutionary history. *Palaeontologia Electronica* **2015**. doi:10.26879/424.
 
-59. Session AM, Uno Y, Kwon T, Chapman JA, Toyoda A, Takahashi S *et al.* Genome evolution in the allotetraploid frog Xenopus laevis. *Nature* **2016**. PMID 27762356. doi:10.1038/nature19840.
+59. Irisarri I, Baurain D, Brinkmann H, Delsuc F, Sire JY, Kupfer A *et al.* Phylotranscriptomic consolidation of the jawed vertebrate timetree. *Nat Ecol Evol* **2017**. PMID 28890940. doi:10.1038/s41559-017-0240-5.
 
-60. Salzberg SL. Next-generation genome annotation: we still struggle to get it right. *Genome Biol* **2019**. PMID 31097009. doi:10.1186/s13059-019-1715-2.
+60. Betancur-R R, Wiley EO, Arratia G, Acero A, Bailly N, Miya M *et al.* Phylogenetic classification of bony fishes. *BMC Evol Biol* **2017**. PMID 28683774. doi:10.1186/s12862-017-0958-3.
 
-61. Farris JS. Phylogenetic Analysis Under Dollo's Law. *Systematic Zoology* **1977**. doi:10.2307/2412867.
+61. Prum RO, Berv JS, Dornburg A, Field DJ, Townsend JP, Lemmon EM *et al.* A comprehensive phylogeny of birds (Aves) using targeted next-generation DNA sequencing. *Nature* **2015**. PMID 26444237. doi:10.1038/nature15697.
 
-62. YOUDEN WJ. Index for rating diagnostic tests. *Cancer* **1950**. PMID 15405679. doi:10.1002/1097-0142(1950)3:1<32::aid-cncr2820030106>3.0.co;2-3.
+62. Vernot B, Stolzer M, Goldman A, Durand D. Reconciliation with non-binary species trees. *J Comput Biol* **2008**. PMID 18808330. doi:10.1089/cmb.2008.0092.
 
-63. Benjamini Y, Hochberg Y. Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. *Journal of the Royal Statistical Society Series B: Statistical Methodology* **1995**. doi:10.1111/j.2517-6161.1995.tb02031.x.
+63. Zmasek CM, Eddy SR. A simple algorithm to infer gene duplication and speciation events on a gene tree. *Bioinformatics* **2001**. PMID 11590098. doi:10.1093/bioinformatics/17.9.821.
 
-64. Lewis PO. A likelihood approach to estimating phylogeny from discrete morphological character data. *Syst Biol* **2001**. PMID 12116640. doi:10.1080/106351501753462876.
+64. Goodman M, Czelusniak J, Moore GW, Romero-Herrera AE, Matsuda G. Fitting the Gene Lineage into its Species Lineage, a Parsimony Strategy Illustrated by Cladograms Constructed from Globin Sequences. *Systematic Zoology* **1979**. doi:10.2307/2412519.
 
-65. Suyama M, Torrents D, Bork P. PAL2NAL: robust conversion of protein sequence alignments into the corresponding codon alignments. *Nucleic Acids Res* **2006**. PMID 16845082. doi:10.1093/nar/gkl315.
+65. Smith JJ, Timoshevskaya N, Ye C, Holt C, Keinath MC, Parker HJ *et al.* The sea lamprey germline genome provides insights into programmed genome rearrangement and vertebrate evolution. *Nat Genet* **2018**. PMID 29358652. doi:10.1038/s41588-017-0036-1.
 
-66. Yang Z. PAML 4: phylogenetic analysis by maximum likelihood. *Mol Biol Evol* **2007**. PMID 17483113. doi:10.1093/molbev/msm088.
+66. Marlétaz F, Firbas PN, Maeso I, Tena JJ, Bogdanovic O, Perry M *et al.* Amphioxus functional genomics and the origins of vertebrate gene regulation. *Nature* **2018**. PMID 30464347. doi:10.1038/s41586-018-0734-6.
 
-67. Zhang J, Nielsen R, Yang Z. Evaluation of an improved branch-site likelihood method for detecting positive selection at the molecular level. *Mol Biol Evol* **2005**. PMID 16107592. doi:10.1093/molbev/msi237.
+67. Herrero J, Muffato M, Beal K, Fitzgerald S, Gordon L, Pignatelli M *et al.* Ensembl comparative genomics resources. *Database (Oxford)* **2016**. PMID 27141089. doi:10.1093/database/baw053.
 
-68. Yang Z, Wong WS, Nielsen R. Bayes empirical bayes inference of amino acid sites under positive selection. *Mol Biol Evol* **2005**. PMID 15689528. doi:10.1093/molbev/msi097.
+68. Smedley D, Haider S, Durinck S, Pandini L, Provero P, Allen J *et al.* The BioMart community portal: an innovative alternative to large, centralized data repositories. *Nucleic Acids Res* **2015**. PMID 25897122. doi:10.1093/nar/gkv350.
 
-69. Wertheim JO, Murrell B, Smith MD, Kosakovsky Pond SL, Scheffler K. RELAX: detecting relaxed selection in a phylogenetic framework. *Mol Biol Evol* **2015**. PMID 25540451. doi:10.1093/molbev/msu400.
+69. Simakov O, Marlétaz F, Yue JX, O'Connell B, Jenkins J, Brandt A *et al.* Deeply conserved synteny resolves early events in vertebrate evolution. *Nat Ecol Evol* **2020**. PMID 32313176. doi:10.1038/s41559-020-1156-z.
 
-70. Kosakovsky Pond SL, Poon AFY, Velazquez R, Weaver S, Hepler NL, Murrell B *et al.* HyPhy 2.5-A Customizable Platform for Evolutionary Hypothesis Testing Using Phylogenies. *Mol Biol Evol* **2020**. PMID 31504749. doi:10.1093/molbev/msz197.
+70. Jaillon O, Aury JM, Brunet F, Petit JL, Stange-Thomann N, Mauceli E *et al.* Genome duplication in the teleost fish Tetraodon nigroviridis reveals the early vertebrate proto-karyotype. *Nature* **2004**. PMID 15496914. doi:10.1038/nature03025.
 
-71. Jumper J, Evans R, Pritzel A, Green T, Figurnov M, Ronneberger O *et al.* Highly accurate protein structure prediction with AlphaFold. *Nature* **2021**. PMID 34265844. doi:10.1038/s41586-021-03819-2.
+71. Amores A, Force A, Yan YL, Joly L, Amemiya C, Fritz A *et al.* Zebrafish hox clusters and vertebrate genome evolution. *Science* **1998**. PMID 9831563. doi:10.1126/science.282.5394.1711.
 
-72. Varadi M, Anyango S, Deshpande M, Nair S, Natassia C, Yordanova G *et al.* AlphaFold Protein Structure Database: massively expanding the structural coverage of protein-sequence space with high-accuracy models. *Nucleic Acids Res* **2022**. PMID 34791371. doi:10.1093/nar/gkab1061.
+72. Session AM, Uno Y, Kwon T, Chapman JA, Toyoda A, Takahashi S *et al.* Genome evolution in the allotetraploid frog Xenopus laevis. *Nature* **2016**. PMID 27762356. doi:10.1038/nature19840.
 
-73. van Kempen M, Kim SS, Tumescheit C, Mirdita M, Lee J, Gilchrist CLM *et al.* Fast and accurate protein structure search with Foldseek. *Nat Biotechnol* **2024**. PMID 37156916. doi:10.1038/s41587-023-01773-0.
+73. Castillo-Davis CI, Mekhedov SL, Hartl DL, Koonin EV, Kondrashov FA. Selection for short introns in highly expressed genes. *Nat Genet* **2002**. PMID 12134150. doi:10.1038/ng940.
 
-74. Zhang Y, Skolnick J. TM-align: a protein structure alignment algorithm based on the TM-score. *Nucleic Acids Res* **2005**. PMID 15849316. doi:10.1093/nar/gki524.
+74. Huang YF, Niu DK. Evidence against the energetic cost hypothesis for the short introns in highly expressed genes. *BMC Evol Biol* **2008**. PMID 18492248. doi:10.1186/1471-2148-8-154.
 
-75. Henikoff S, Henikoff JG. Position-based sequence weights. *J Mol Biol* **1994**. PMID 7966282. doi:10.1016/0022-2836(94)90032-9.
+75. Rogozin IB, Wolf YI, Sorokin AV, Mirkin BG, Koonin EV. Remarkable interkingdom conservation of intron positions and massive, lineage-specific intron loss and gain in eukaryotic evolution. *Curr Biol* **2003**. PMID 12956953. doi:10.1016/s0960-9822(03)00558-x.
 
-76. Lin J. Divergence measures based on the Shannon entropy. *IEEE Transactions on Information Theory* **1991**. doi:10.1109/18.61115.
+76. Roy SW, Gilbert W. The evolution of spliceosomal introns: patterns, puzzles and progress. *Nat Rev Genet* **2006**. PMID 16485020. doi:10.1038/nrg1807.
 
-77. Kosakovsky Pond SL, Frost SD. Not so different after all: a comparison of methods for detecting amino acid sites under selection. *Mol Biol Evol* **2005**. PMID 15703242. doi:10.1093/molbev/msi105.
+77. Salzberg SL. Next-generation genome annotation: we still struggle to get it right. *Genome Biol* **2019**. PMID 31097009. doi:10.1186/s13059-019-1715-2.
 
-78. Leinonen R, Sugawara H, Shumway M. The sequence read archive. *Nucleic Acids Res* **2011**. PMID 21062823. doi:10.1093/nar/gkq1019.
+78. Farris JS. Phylogenetic Analysis Under Dollo's Law. *Systematic Zoology* **1977**. doi:10.2307/2412867.
 
-79. Kim D, Paggi JM, Park C, Bennett C, Salzberg SL. Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype. *Nat Biotechnol* **2019**. PMID 31375807. doi:10.1038/s41587-019-0201-4.
+79. YOUDEN WJ. Index for rating diagnostic tests. *Cancer* **1950**. PMID 15405679. doi:10.1002/1097-0142(1950)3:1<32::aid-cncr2820030106>3.0.co;2-3.
 
-80. Nei M, Gojobori T. Simple methods for estimating the numbers of synonymous and nonsynonymous nucleotide substitutions. *Mol Biol Evol* **1986**. PMID 3444411. doi:10.1093/oxfordjournals.molbev.a040410.
+80. Benjamini Y, Hochberg Y. Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. *Journal of the Royal Statistical Society Series B: Statistical Methodology* **1995**. doi:10.1111/j.2517-6161.1995.tb02031.x.
 
-81. Plattner H, Verkhratsky A. Ca2+ signalling early in evolution--all but primitive. *J Cell Sci* **2013**. PMID 23729741. doi:10.1242/jcs.127449.
+81. Lewis PO. A likelihood approach to estimating phylogeny from discrete morphological character data. *Syst Biol* **2001**. PMID 12116640. doi:10.1080/106351501753462876.
 
-82. Plattner H. Molecular aspects of calcium signalling at the crossroads of unikont and bikont eukaryote evolution--the ciliated protozoan Paramecium in focus. *Cell Calcium* **2015**. PMID 25601027. doi:10.1016/j.ceca.2014.12.002.
+82. Suyama M, Torrents D, Bork P. PAL2NAL: robust conversion of protein sequence alignments into the corresponding codon alignments. *Nucleic Acids Res* **2006**. PMID 16845082. doi:10.1093/nar/gkl315.
 
-83. Cai X, Clapham DE. Ancestral Ca2+ signaling machinery in early animal and fungal evolution. *Mol Biol Evol* **2012**. PMID 21680871. doi:10.1093/molbev/msr149.
+83. Yang Z. PAML 4: phylogenetic analysis by maximum likelihood. *Mol Biol Evol* **2007**. PMID 17483113. doi:10.1093/molbev/msm088.
 
-84. Prole DL, Taylor CW. Identification of intracellular and plasma membrane calcium channel homologues in pathogenic parasites. *PLoS One* **2011**. PMID 22022573. doi:10.1371/journal.pone.0026218.
+84. Zhang J, Nielsen R, Yang Z. Evaluation of an improved branch-site likelihood method for detecting positive selection at the molecular level. *Mol Biol Evol* **2005**. PMID 16107592. doi:10.1093/molbev/msi237.
 
-85. Krinke O, Novotná Z, Valentová O, Martinec J. Inositol trisphosphate receptor in higher plants: is it real?. *J Exp Bot* **2007**. PMID 17150991. doi:10.1093/jxb/erl220.
+85. Yang Z, Wong WS, Nielsen R. Bayes empirical bayes inference of amino acid sites under positive selection. *Mol Biol Evol* **2005**. PMID 15689528. doi:10.1093/molbev/msi097.
 
-86. Wheeler GL, Brownlee C. Ca2+ signalling in plants and green algae--changing channels. *Trends Plant Sci* **2008**. PMID 18703378. doi:10.1016/j.tplants.2008.06.004.
+86. Wertheim JO, Murrell B, Smith MD, Kosakovsky Pond SL, Scheffler K. RELAX: detecting relaxed selection in a phylogenetic framework. *Mol Biol Evol* **2015**. PMID 25540451. doi:10.1093/molbev/msu400.
 
-87. Merchant SS, Prochnik SE, Vallon O, Harris EH, Karpowicz SJ, Witman GB *et al.* The Chlamydomonas genome reveals the evolution of key animal and plant functions. *Science* **2007**. PMID 17932292. doi:10.1126/science.1143609.
+87. Kosakovsky Pond SL, Poon AFY, Velazquez R, Weaver S, Hepler NL, Murrell B *et al.* HyPhy 2.5-A Customizable Platform for Evolutionary Hypothesis Testing Using Phylogenies. *Mol Biol Evol* **2020**. PMID 31504749. doi:10.1093/molbev/msz197.
 
-88. Edel KH, Marchadier E, Brownlee C, Kudla J, Hetherington AM. The Evolution of Calcium-Based Signalling in Plants. *Curr Biol* **2017**. PMID 28697370. doi:10.1016/j.cub.2017.05.020.
+88. Jumper J, Evans R, Pritzel A, Green T, Figurnov M, Ronneberger O *et al.* Highly accurate protein structure prediction with AlphaFold. *Nature* **2021**. PMID 34265844. doi:10.1038/s41586-021-03819-2.
 
-89. Verret F, Wheeler G, Taylor AR, Farnham G, Brownlee C. Calcium channels in photosynthetic eukaryotes: implications for evolution of calcium-based signalling. *New Phytol* **2010**. PMID 20456068. doi:10.1111/j.1469-8137.2010.03271.x.
+89. Varadi M, Anyango S, Deshpande M, Nair S, Natassia C, Yordanova G *et al.* AlphaFold Protein Structure Database: massively expanding the structural coverage of protein-sequence space with high-accuracy models. *Nucleic Acids Res* **2022**. PMID 34791371. doi:10.1093/nar/gkab1061.
 
-90. Keeling PJ, Slamovits CH. Causes and effects of nuclear genome reduction. *Curr Opin Genet Dev* **2005**. PMID 16188433. doi:10.1016/j.gde.2005.09.003.
+90. van Kempen M, Kim SS, Tumescheit C, Mirdita M, Lee J, Gilchrist CLM *et al.* Fast and accurate protein structure search with Foldseek. *Nat Biotechnol* **2024**. PMID 37156916. doi:10.1038/s41587-023-01773-0.
 
-91. Tsai IJ, Zarowiecki M, Holroyd N, Garciarrubio A, Sánchez-Flores A, Brooks KL *et al.* The genomes of four tapeworm species reveal adaptations to parasitism. *Nature* **2013**. PMID 23485966. doi:10.1038/nature12031.
+91. Zhang Y, Skolnick J. TM-align: a protein structure alignment algorithm based on the TM-score. *Nucleic Acids Res* **2005**. PMID 15849316. doi:10.1093/nar/gki524.
 
-92. Pellegrini M, Marcotte EM, Thompson MJ, Eisenberg D, Yeates TO. Assigning protein functions by comparative genome analysis: protein phylogenetic profiles. *Proc Natl Acad Sci U S A* **1999**. PMID 10200254. doi:10.1073/pnas.96.8.4285.
+92. Henikoff S, Henikoff JG. Position-based sequence weights. *J Mol Biol* **1994**. PMID 7966282. doi:10.1016/0022-2836(94)90032-9.
 
-93. James TY, Kauff F, Schoch CL, Matheny PB, Hofstetter V, Cox CJ *et al.* Reconstructing the early evolution of Fungi using a six-gene phylogeny. *Nature* **2006**. PMID 17051209. doi:10.1038/nature05110.
+93. Lin J. Divergence measures based on the Shannon entropy. *IEEE Transactions on Information Theory* **1991**. doi:10.1109/18.61115.
 
-94. Nakatani Y, Shingate P, Ravi V, Pillai NE, Prasad A, McLysaght A *et al.* Reconstruction of proto-vertebrate, proto-cyclostome and proto-gnathostome genomes provides new insights into early vertebrate evolution. *Nat Commun* **2021**. PMID 34301952. doi:10.1038/s41467-021-24573-z.
+94. Kosakovsky Pond SL, Frost SD. Not so different after all: a comparison of methods for detecting amino acid sites under selection. *Mol Biol Evol* **2005**. PMID 15703242. doi:10.1093/molbev/msi105.
 
-95. Taylor CW, Genazzani AA, Morris SA. Expression of inositol trisphosphate receptors. *Cell Calcium* **1999**. PMID 10668562. doi:10.1054/ceca.1999.0034.
+95. Mackrill JJ. Ryanodine receptor calcium release channels: an evolutionary perspective. *Adv Exp Med Biol* **2012**. PMID 22453942. doi:10.1007/978-94-007-2888-2_7.
 
-96. Mangla A, Guerra MT, Nathanson MH. Type 3 inositol 1,4,5-trisphosphate receptor: A calcium channel for all seasons. *Cell Calcium* **2020**. PMID 31790953. doi:10.1016/j.ceca.2019.102132.
+96. Bosanac I, Alattia JR, Mal TK, Chan J, Talarico S, Tong FK *et al.* Structure of the inositol 1,4,5-trisphosphate receptor binding core in complex with its ligand. *Nature* **2002**. PMID 12442173. doi:10.1038/nature01268.
 
-97. Miyakawa T, Maeda A, Yamazawa T, Hirose K, Kurosaki T, Iino M. Encoding of Ca2+ signals by differential expression of IP3 receptor subtypes. *EMBO J* **1999**. PMID 10064596. doi:10.1093/emboj/18.5.1303.
+97. Fan G, Baker MR, Wang Z, Seryshev AB, Ludtke SJ, Baker ML *et al.* Cryo-EM reveals ligand induced allostery underlying InsP3R channel gating. *Cell Res* **2018**. PMID 30470765. doi:10.1038/s41422-018-0108-5.
 
-98. Birchler JA, Veitia RA. Gene balance hypothesis: connecting issues of dosage sensitivity across biological disciplines. *Proc Natl Acad Sci U S A* **2012**. PMID 22908297. doi:10.1073/pnas.1207726109.
+98. Schmitz EA, Takahashi H, Karakas E. Structural basis for activation and gating of IP3 receptors. *Nat Commun* **2022**. PMID 35301323. doi:10.1038/s41467-022-29073-2.
 
-99. Inoue J, Sato Y, Sinclair R, Tsukamoto K, Nishida M. Rapid genome reshaping by multiple-gene loss after whole-genome duplication in teleost fish suggested by mathematical modeling. *Proc Natl Acad Sci U S A* **2015**. PMID 26578810. doi:10.1073/pnas.1507669112.
+99. Fan G, Baker MR, Terry LE, Arige V, Chen M, Seryshev AB *et al.* Conformational motions and ligand-binding underlying gating and regulation in IP3R channel. *Nat Commun* **2022**. PMID 36376291. doi:10.1038/s41467-022-34574-1.
 
-100. McLysaght A, Makino T, Grayton HM, Tropeano M, Mitchell KJ, Vassos E *et al.* Ohnologs are overrepresented in pathogenic copy number mutations. *Proc Natl Acad Sci U S A* **2014**. PMID 24368850. doi:10.1073/pnas.1309324111.
+100. Leinonen R, Sugawara H, Shumway M. The sequence read archive. *Nucleic Acids Res* **2011**. PMID 21062823. doi:10.1093/nar/gkq1019.
 
-101. van de Leemput J, Chandran J, Knight MA, Holtzclaw LA, Scholz S, Cookson MR *et al.* Deletion at ITPR1 underlies ataxia in mice and spinocerebellar ataxia 15 in humans. *PLoS Genet* **2007**. PMID 17590087. doi:10.1371/journal.pgen.0030108.
+101. Kim D, Paggi JM, Park C, Bennett C, Salzberg SL. Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype. *Nat Biotechnol* **2019**. PMID 31375807. doi:10.1038/s41587-019-0201-4.
 
-102. Iwaki A, Kawano Y, Miura S, Shibata H, Matsuse D, Li W *et al.* Heterozygous deletion of ITPR1, but not SUMF1, in spinocerebellar ataxia type 16. *J Med Genet* **2008**. PMID 17932120. doi:10.1136/jmg.2007.053942.
+102. Nei M, Gojobori T. Simple methods for estimating the numbers of synonymous and nonsynonymous nucleotide substitutions. *Mol Biol Evol* **1986**. PMID 3444411. doi:10.1093/oxfordjournals.molbev.a040410.
 
-103. Novak MJ, Sweeney MG, Li A, Treacy C, Chandrashekar HS, Giunti P *et al.* An ITPR1 gene deletion causes spinocerebellar ataxia 15/16: a genetic, clinical and radiological description. *Mov Disord* **2010**. PMID 20669319. doi:10.1002/mds.23223.
+103. Pellegrini M, Marcotte EM, Thompson MJ, Eisenberg D, Yeates TO. Assigning protein functions by comparative genome analysis: protein phylogenetic profiles. *Proc Natl Acad Sci U S A* **1999**. PMID 10200254. doi:10.1073/pnas.96.8.4285.
 
-104. Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alföldi J, Wang Q *et al.* The mutational constraint spectrum quantified from variation in 141,456 humans. *Nature* **2020**. PMID 32461654. doi:10.1038/s41586-020-2308-7.
+104. Nakatani Y, Shingate P, Ravi V, Pillai NE, Prasad A, McLysaght A *et al.* Reconstruction of proto-vertebrate, proto-cyclostome and proto-gnathostome genomes provides new insights into early vertebrate evolution. *Nat Commun* **2021**. PMID 34301952. doi:10.1038/s41467-021-24573-z.
 
-105. Rogozin IB, Wolf YI, Sorokin AV, Mirkin BG, Koonin EV. Remarkable interkingdom conservation of intron positions and massive, lineage-specific intron loss and gain in eukaryotic evolution. *Curr Biol* **2003**. PMID 12956953. doi:10.1016/s0960-9822(03)00558-x.
+105. Taylor CW, Genazzani AA, Morris SA. Expression of inositol trisphosphate receptors. *Cell Calcium* **1999**. PMID 10668562. doi:10.1054/ceca.1999.0034.
 
-106. Roy SW, Gilbert W. The evolution of spliceosomal introns: patterns, puzzles and progress. *Nat Rev Genet* **2006**. PMID 16485020. doi:10.1038/nrg1807.
+106. Mangla A, Guerra MT, Nathanson MH. Type 3 inositol 1,4,5-trisphosphate receptor: A calcium channel for all seasons. *Cell Calcium* **2020**. PMID 31790953. doi:10.1016/j.ceca.2019.102132.
 
-107. Castillo-Davis CI, Mekhedov SL, Hartl DL, Koonin EV, Kondrashov FA. Selection for short introns in highly expressed genes. *Nat Genet* **2002**. PMID 12134150. doi:10.1038/ng940.
+107. Miyakawa T, Maeda A, Yamazawa T, Hirose K, Kurosaki T, Iino M. Encoding of Ca2+ signals by differential expression of IP3 receptor subtypes. *EMBO J* **1999**. PMID 10064596. doi:10.1093/emboj/18.5.1303.
 
-108. Huang YF, Niu DK. Evidence against the energetic cost hypothesis for the short introns in highly expressed genes. *BMC Evol Biol* **2008**. PMID 18492248. doi:10.1186/1471-2148-8-154.
+108. Birchler JA, Veitia RA. Gene balance hypothesis: connecting issues of dosage sensitivity across biological disciplines. *Proc Natl Acad Sci U S A* **2012**. PMID 22908297. doi:10.1073/pnas.1207726109.
 
-109. Matsumoto M, Nakagawa T, Inoue T, Nagata E, Tanaka K, Takano H *et al.* Ataxia and epileptic seizures in mice lacking type 1 inositol 1,4,5-trisphosphate receptor. *Nature* **1996**. PMID 8538767. doi:10.1038/379168a0.
+109. McLysaght A, Makino T, Grayton HM, Tropeano M, Mitchell KJ, Vassos E *et al.* Ohnologs are overrepresented in pathogenic copy number mutations. *Proc Natl Acad Sci U S A* **2014**. PMID 24368850. doi:10.1073/pnas.1309324111.
 
-110. Klar J, Hisatsune C, Baig SM, Tariq M, Johansson AC, Rasool M *et al.* Abolished InsP3R2 function inhibits sweat secretion in both humans and mice. *J Clin Invest* **2014**. PMID 25329695. doi:10.1172/JCI78173.
+110. van de Leemput J, Chandran J, Knight MA, Holtzclaw LA, Scholz S, Cookson MR *et al.* Deletion at ITPR1 underlies ataxia in mice and spinocerebellar ataxia 15 in humans. *PLoS Genet* **2007**. PMID 17590087. doi:10.1371/journal.pgen.0030108.
 
-111. Ronkko J, Molchanova S, Revah-Politi A, Pereira EM, Auranen M, Toppila J *et al.* Dominant mutations in ITPR3 cause Charcot-Marie-Tooth disease. *Ann Clin Transl Neurol* **2020**. PMID 32949214. doi:10.1002/acn3.51151.
+111. Iwaki A, Kawano Y, Miura S, Shibata H, Matsuse D, Li W *et al.* Heterozygous deletion of ITPR1, but not SUMF1, in spinocerebellar ataxia type 16. *J Med Genet* **2008**. PMID 17932120. doi:10.1136/jmg.2007.053942.
+
+112. Novak MJ, Sweeney MG, Li A, Treacy C, Chandrashekar HS, Giunti P *et al.* An ITPR1 gene deletion causes spinocerebellar ataxia 15/16: a genetic, clinical and radiological description. *Mov Disord* **2010**. PMID 20669319. doi:10.1002/mds.23223.
+
+113. Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alföldi J, Wang Q *et al.* The mutational constraint spectrum quantified from variation in 141,456 humans. *Nature* **2020**. PMID 32461654. doi:10.1038/s41586-020-2308-7.
+
+114. Matsumoto M, Nakagawa T, Inoue T, Nagata E, Tanaka K, Takano H *et al.* Ataxia and epileptic seizures in mice lacking type 1 inositol 1,4,5-trisphosphate receptor. *Nature* **1996**. PMID 8538767. doi:10.1038/379168a0.
+
+115. Klar J, Hisatsune C, Baig SM, Tariq M, Johansson AC, Rasool M *et al.* Abolished InsP3R2 function inhibits sweat secretion in both humans and mice. *J Clin Invest* **2014**. PMID 25329695. doi:10.1172/JCI78173.
+
+116. Ronkko J, Molchanova S, Revah-Politi A, Pereira EM, Auranen M, Toppila J *et al.* Dominant mutations in ITPR3 cause Charcot-Marie-Tooth disease. *Ann Clin Transl Neurol* **2020**. PMID 32949214. doi:10.1002/acn3.51151.
 
 ---

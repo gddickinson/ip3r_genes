@@ -24,17 +24,11 @@ signalling device rather than merely as a pore.
 **{fig:signal_hierarchy}.** The receptor's place in the phosphoinositide
 pathway, drawn as a hierarchy of scales running from the messenger to the
 cellular output. The layer this thesis is about is a single one of these
-boxes. The figure is here to show what the rest of the pathway is doing
-while the channel opens, because two of the results in later chapters
-concern the pathway rather than the channel: the loss of the family in whole
-eukaryotic kingdoms, and the enzyme repertoire that survives beside it. Its
-importance to the argument is that it fixes the level at which a
-genome-scale census can and cannot speak. A census counts genes, so it can
-say whether the channel is present and how many copies a genome carries, and
-it cannot say what a cell does with the signal. Every claim in this thesis
-lives in one box of this diagram, and Chapter 12's result about the enzyme
-that makes the ligand is the one place where the box above it is measured
-too.
+boxes, and the figure fixes the level at which a genome-scale census can and
+cannot speak. A census counts genes, so it can say whether the channel is
+present and how many copies a genome carries, and it cannot say what a cell
+does with the signal. Chapter 12's result about the enzyme that makes the
+ligand is the one place where the box above the channel is measured too.
 
 The receptor was identified in the decade after IP₃ was shown to release
 calcium from a non-mitochondrial store in pancreatic acinar cells [R01].
@@ -51,15 +45,13 @@ for inositol 1,4,5-trisphosphate similar to ryanodine receptor* [R04].
 literature records it, with each milestone drawn at the year of its
 published source. The figure is generated from a curated table in which no
 year is typed: each is read from the reference row it cites, so a milestone
-cannot be dated differently from the paper it rests on. The density on the
-right is the cryo-electron microscopy era, which is what made the structural
-half of this project possible. The figure matters because it shows how
-recently the evidence this thesis depends on became available. Forty years
-of work established the receptor's biochemistry and physiology, but the
+cannot be dated differently from the paper it rests on. What the shape shows
+is how recently the evidence this thesis depends on became available. The
+biochemistry and physiology were settled over forty years, but the
 near-atomic structures that make a residue-level constraint map
-interpretable are less than a decade old, and the genome assemblies that
-make a 503-genome census possible are more recent still. The questions asked
-here could not have been asked before the right-hand end of this figure.
+interpretable are less than a decade old, and the genome assemblies behind a
+503-genome census are more recent still, so the questions asked here could
+not have been asked before the right-hand end of this figure.
 
 ## 1.2 The receptor shares its entire domain architecture with a much larger sister family
 
@@ -81,15 +73,12 @@ axis, the axial extent of the membrane, the pore radius profile and the two
 constrictions recovered from the coordinates. The narrowest luminal point
 lands on the GGGVGD selectivity-filter motif and the cytosolic constriction
 on the gate residues, neither of which the geometry was told about. That
-agreement is what makes the measurement usable as a coordinate system in
-Chapters 11 and 12. This measurement is load-bearing for two later chapters
-rather than illustrative. Because the filter and the gate were recovered
-from the coordinates blind, and landed on the motif and the residues the
-literature names, the same geometry can be trusted to define a luminal loop
-boundary that no annotation carries, which is what Chapter 11 needs, and to
-define a ligand pocket by distance rather than by a contact list, which is
-what Chapter 12 needs. A structure drawn from a published residue list could
-do neither, because it would only return what was put into it.
+blind agreement is what makes the same geometry usable as a coordinate
+system later: it can define a luminal loop boundary no annotation carries,
+which Chapter 11 needs, and a ligand pocket measured by distance rather than
+taken from a contact list, which Chapter 12 needs. A structure drawn from a
+published residue list could do neither, because it would only return what
+was put into it.
 
 In domain-annotation terms the diagnostic signatures of the family are the MIR
 domains (PF02815) in the suppressor region, the IP₃-binding core Ins145_P3_rec
@@ -111,14 +100,12 @@ twice the size at around 4,900 to 5,000 residues.
 is also carried by a ryanodine receptor, in the same copy number, down to
 the two RIH domains. What separates the families is what the ryanodine
 receptors carry in addition: four further domains and some 2,200 extra
-residues. A search built on the shared signatures cannot tell the two apart,
-which is the practical form of a statement about descent. This figure is the
-reason the project has the shape it does. Because the diagnostic signatures
-cannot separate the two families, every stage from the first enumeration to
-the last structural comparison had to carry a positive family test, and the
-sister family had to be searched alongside rather than filtered out. Roughly
-half the methodological rules in Chapter 14 exist because of what this
-figure shows.
+residues. This figure is the reason the project has the shape it does.
+Because the diagnostic signatures cannot separate the two families, every
+stage from the first enumeration to the last structural comparison had to
+carry a positive family test, and the sister family had to be searched
+alongside rather than filtered out. Roughly half the methodological rules in
+Chapter 14 exist because of what this figure shows.
 
 Three consequences of that shared architecture run through every chapter of
 this thesis.
@@ -161,17 +148,15 @@ and IRBIT [R19].
 ![](figures/gating_logic.png)
 
 **{fig:gating_logic}.** What opens the channel and what closes it, drawn as
-the logic rather than as a mechanism. The point for this thesis is the last
-row: the same channel is used to produce puffs, waves and oscillations, and
-the properties that distinguish those outputs are properties of the
-individual paralogue. The importance for a census is that the three
-vertebrate paralogues are not interchangeable parts. If they were, their
+the logic rather than as a mechanism. The row that matters for a census is
+the last one: the same channel produces puffs, waves and oscillations, and
+the properties that distinguish those outputs belong to the individual
+paralogue. If the three vertebrate paralogues were interchangeable, their
 copy number would be a matter of dosage and their individual retention would
 carry little information. Because they differ in affinity, in calcium
-sensitivity and in what downstream output they produce, the finding in
-Chapter 9 that all three are retained in every vertebrate genome is a
-statement about three distinct functions rather than about three copies of
-one.
+sensitivity and in downstream output, the finding in Chapter 9 that all
+three are retained in every vertebrate genome is a statement about three
+distinct functions rather than about three copies of one.
 
 Those output differences are the reason the paralogues matter. The three
 vertebrate receptors differ in IP₃ affinity, in calcium sensitivity, in
@@ -195,27 +180,39 @@ been tested at the level of an assembly rather than a gene set. An absence in
 a proteome is a statement about what a gene caller found. Whether it is also a
 statement about the genome is a different measurement, and nobody had made it.
 
-**Where the three vertebrate paralogues came from had no tested answer.** That
-vertebrates carry three is a database fact. That the three arose in the two rounds of
-whole-genome duplication at the base of the vertebrates [R179, R180] is a
-reasonable inference from their number and their age, and it had not been
-tested against the genomic neighbourhoods that a duplication of that kind
-leaves behind. Which two of the three are sisters had no published answer at
-all. Worse, the proposition that the IP₃ and ryanodine receptor triplications
-happened independently, which this project's own background document asserted,
-turned out to have no primary source and had to be downgraded to an open
-question before any of the work could begin. Chapters 6 and 7 answer it.
+**Where the three vertebrate paralogues came from had no tested answer.**
+That vertebrates carry three is a database fact. That the three arose in the
+two rounds of whole-genome duplication at the base of the vertebrates [R179,
+R180] is a reasonable inference from their number and their age, and it had
+not been tested against the genomic neighbourhoods that a duplication of
+that kind leaves behind. Which two of the three are sisters had no published
+answer at all. Worse, the proposition that the IP₃ and ryanodine receptor
+triplications happened independently, which this project's own background
+document asserted, turned out to have no primary source and had to be
+downgraded to an open question before any of the work could begin. Chapters
+6 and 7 answer it.
 
 **What has happened to the paralogues since could not be asked without a
-false-negative rate.** Gene families of this age normally lose copies [R193]. Whether this one has, and where, is a question
-that cannot be answered without a false-negative rate, because a gene that a
-search fails to find looks exactly like a gene that is not there. That single
-sentence determined the structure of a third of this thesis.
+false-negative rate.** Gene families of this age normally lose copies
+[R193]. Whether this one has, and where, is a question that cannot be
+answered without a false-negative rate, because a gene that a search fails
+to find looks exactly like a gene that is not there. That single sentence
+determined the structure of a third of this thesis.
 
 **How well the family is recorded had never been audited.** Every one of the
-questions above is answered using public databases, and the quality of those databases for this
-family had never been audited. The audit turned out to be a result in its own
-right.
+questions above is answered using public databases, and the quality of those
+databases for this family had never been audited. The audit turned out to be
+a result in its own right.
+
+Those four gaps are the questions this thesis answers, and they can be stated
+in one sentence each. How far does the family reach, measured against a
+declared search space rather than against whatever records exist? Where did
+the three vertebrate paralogues come from, and which two of them are sisters?
+Has any vertebrate lineage lost one, and how would anybody know the difference
+between a loss and a search that failed? And how well is the family recorded
+by the public archives that every one of those answers depends on? Chapters 5,
+6 and 7, 9 and 13 answer them in that order, and Chapters 3, 4, 8, 10, 11 and
+12 build and test the instruments the answers rest on.
 
 ## 1.5 How every claim in this thesis is scoped
 

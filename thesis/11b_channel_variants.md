@@ -11,17 +11,14 @@ above its own protein's linker mean.
 ![](figures/s17_elements.png)
 
 **{fig:s17_elements}.** Constraint by element, with the composition-free
-metric drawn beside the divergence metric rather than instead of it, so a
-reader can see the two agree rather than being asked to believe it. A
+metric drawn beside the divergence metric rather than instead of it. The
+headline result and its most obvious artefact are therefore on the same
+axis: the gate and the filter come top on both metrics, so the ranking is
+not a property of one scoring choice, and a reader can check that agreement
+rather than take it on assurance. The second metric is there because a
 divergence from a background frequency table [R178] scores a transmembrane
-element lower at equal conservation, which is exactly the artefact §11.11
-had to rule out. The importance of this figure is that the headline result
-and its most obvious artefact are drawn on the same axis. The gate and the
-filter come top on both metrics, so the ranking is not a property of one
-scoring choice, and a reader can check that agreement rather than take it on
-assurance. The composition-free metric is there because a divergence against
-a background frequency table penalises transmembrane composition, which
-would have manufactured the very result the chapter reports.
+element lower at equal conservation, which would have manufactured the very
+result the chapter reports.
 
 ## 11.11 One element inside the channel is the exception, and finding it changed the result
 
@@ -63,13 +60,11 @@ prediction that landed on the dip.
 ![](figures/s17_channel_profile.png)
 
 **{fig:s17_channel_profile}.** Constraint along the channel, binned, with
-the bins never crossing an element boundary. A sliding window across the
-luminal loop's edge would draw the curve straight through the boundary the
-panel exists to show. This figure is where the chapter's structural claim
-becomes visible as a shape rather than a table. Constraint is not uniform
-along the channel: it peaks on the residues the structure says do the work
-and collapses in the luminal loop between them. Binning within element
-boundaries matters because a window straddling that edge would smear the
+the bins never crossing an element boundary. This is where the chapter's
+structural claim becomes visible as a shape rather than a table: constraint
+is not uniform along the channel but peaks on the residues the structure
+says do the work and collapses in the luminal loop between them. The binning
+rule matters because a sliding window across that edge would smear the
 collapse into the gate and erase the contrast the panel exists to show.
 
 ## 11.12 The ligand contacts and the gate are the two extremes of paralogue divergence
@@ -87,14 +82,14 @@ elements are actually powered, so a p-value on two residues is not offered.
 
 ![](figures/s17_functional_sites.png)
 
-**{fig:s17_functional_sites}.** The measured functional residues against the
-whole protein and against the rest of their own element. The importance of
-the second comparison is that it is the harder one. Measured functional
-residues beating the whole-protein average is close to guaranteed, since
-most of a 2,700-residue receptor is linker; beating the rest of their own
-element is what shows that the structure's functional annotation picks out
-something the surrounding domain does not already have. That is the test
-that makes a constraint map useful for interpreting a new position.
+**{fig:s17_functional_sites}.** The measured functional residues scored
+twice, against the whole protein and against the rest of the element each
+sits in. The second comparison is the harder one and the one worth reading.
+Most of a 2,700-residue receptor is linker, so clearing the first bar is
+close to guaranteed, whereas clearing the second shows that the structure's
+annotation picks out something its surrounding domain does not already have.
+That is the test which makes a constraint map useful for interpreting a new
+position.
 
 A second and completely independent instrument on the same question is
 identity between the paralogues, which needs no alignment depth and no
@@ -171,8 +166,8 @@ layer this panel puts on top.
 Two things fall out, and one is against this chapter's own design.
 
 The shallow control is the worst layer, so the depth was worth building,
-because without the deep ortholog sets that is the number this thesis would
-have had.
+because without the deep orthologue sets that is the number this thesis
+would have had.
 
 But **the best layer is the family-wide one rather than the deep
 within-paralogue one.** Taxonomic breadth beats within-gene depth here,
@@ -258,15 +253,12 @@ somebody else's profile.
 **{fig:supp_constraint_on_channel}.** The constraint map painted onto the
 channel, drawn from the file the painting step wrote and coloured from its
 own B-factor column, so a disagreement with the per-residue tables would be
-a bug in the painting step, which is the point of drawing it. Unscored
-residues are grey rather than the low end of the scale. The importance of
-painting the map onto the structure is that it makes the chapter's numerical
-claims checkable by eye and by a third party. A structure carrying the
-constraint layer in its own coordinate column can be opened in any viewer,
-so a disagreement between the picture and the per-residue table would be
-visible immediately. Colouring unscored residues grey rather than at the low
-end keeps missing data from reading as an absence of constraint, which
-matters most in the luminal loop, where the two coincide.
+a bug in the painting step. Writing the layer into a structure's own
+coordinate column is what makes the chapter's numerical claims checkable by
+a third party in any viewer. Unscored residues are grey rather than at the
+low end of the scale, which keeps missing data from reading as an absence of
+constraint, and that matters most in the luminal loop, where the two
+coincide.
 
 **The panel is carried by experimental structures rather than predicted ones.**
 The human ITPR2 prediction is the 181-residue isoform of §11.2 and has no file

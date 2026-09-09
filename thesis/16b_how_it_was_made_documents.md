@@ -123,23 +123,25 @@ change and the message, and the human's account and machine committed it.
 
 Three things this way of working did well.
 
-**It sustained a long, dependency-ordered plan.** 35 tasks with declared
+**It sustained a long, dependency-ordered plan.** 36 tasks with declared
 dependencies, worked one at a time to stated completion criteria across 35
 sessions, with the ledger and the session log carrying the state between them.
 An agent with no memory between sessions can do this only if the state lives
 in the repository, and the protocol is what puts it there.
 
-**It made the methodology explicit.** 84 numbered decisions with the incident
+**It made the methodology explicit.** 87 numbered decisions with the incident
 that produced each is a level of methodological record-keeping that is
 uncommon in a paper, and it exists because the agent had to write down why it
 did something in order to be able to follow the same rule three weeks later.
 
-That count is itself an example of the arrangement working. Writing this
-chapter added a decision to the log, the build re-measured the repository, and
-the claims ledger failed with the message that the chapter said 82 where the
-log now held 83. The number in the sentence you are reading was corrected
-because a check refused the document, which is the whole of what §16.9
-describes, applied to the chapter that describes it.
+That count is itself an example of the arrangement working, and it has
+demonstrated it twice. Writing this chapter added a decision to the log, and
+the editorial pass that followed added another. On both occasions the build
+re-measured the repository and the claims ledger refused the document, naming
+the number the chapter still carried and the number the log now held. The
+figure in the sentence above was corrected each time because a check declined
+to pass it, which is the whole of what §16.9 describes, applied to the chapter
+that describes it.
 
 **It made checking cheap enough to do everywhere.** 437 constructed negative
 controls, 496 declared claims across two documents, guards that are broken on

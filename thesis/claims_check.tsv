@@ -215,15 +215,17 @@ T63	ch14	26 figure-audit findings were recorded	26	26	ok		results/supplementary/
 T64	ch14	16 of them were fixed in the legend	16	16	ok		results/supplementary/figure_findings.tsv	count
 T65	ch14	10 in the figure	10	10	ok		results/supplementary/figure_findings.tsv	count
 T66	ch14	the manuscript ledger carries 276 declarations	276	276	ok		manuscript/claims_check.tsv	count
-T68	appendix-E	15 build guards are broken on purpose and all fire	15	15	ok		thesis/guard_check.tsv	count
+T68	appendix-E	18 build guards are broken on purpose and all fire	18	18	ok		thesis/guard_check.tsv	count
 T69	appendix-E	the thesis places 103 figures	103	103	ok		thesis/figure_manifest.tsv	count
 T70	appendix-E	37 results directories are assigned to a chapter	37	37	ok		thesis/chapter_assignment.tsv	count
+T83	ch14	87 decisions are recorded, as chapter 14 also states	87	87	ok		thesis/production_stats.tsv	cell
+T84	ch14	across 35 logged sessions, as chapter 14 also states	35	35	ok		thesis/production_stats.tsv	cell
 T71	ch16	35 sessions are logged	35	35	ok		thesis/production_stats.tsv	cell
 T72	ch16	they ran across 9 working days	9	9	ok		thesis/production_stats.tsv	cell
-T73	ch16	the ledger holds 35 tasks	35	35	ok		thesis/production_stats.tsv	cell
-T74	ch16	33 of them are complete	33	33	ok		thesis/production_stats.tsv	cell
-T75	ch16	83 methodological decisions are recorded	84	84	ok		thesis/production_stats.tsv	cell
-T76	ch16	372 analysis scripts were written	372	372	ok		thesis/production_stats.tsv	cell
+T73	ch16	the ledger holds 36 tasks	36	36	ok		thesis/production_stats.tsv	cell
+T74	ch16	34 of them are complete	34	34	ok		thesis/production_stats.tsv	cell
+T75	ch16	87 methodological decisions are recorded	87	87	ok		thesis/production_stats.tsv	cell
+T76	ch16	373 analysis scripts were written	373	373	ok		thesis/production_stats.tsv	cell
 T77	ch16	the search application is 9,243 lines	9243	9243	ok		thesis/production_stats.tsv	cell
 T78	ch16	444 result tables are committed	444	444	ok		thesis/production_stats.tsv	cell
 T79	ch16	111 figures are committed	111	111	ok		thesis/production_stats.tsv	cell
