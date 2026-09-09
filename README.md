@@ -19,10 +19,27 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S19 complete — the census is enumerated, aligned, dated,
+**Status: S14a complete — the manuscript is assembled; 28 of the 33 ledger
+rows are done.** The submission package builds end to end from the committed
+tables: `python scripts/s14_assemble.py` runs figures → claims → stitch →
+PDF → deposit and exits zero on **7 main + 14 Extended Data figures (56
+panels, none missing), 175/175 load-bearing numbers re-verified against
+their source tables, 16 sections → 13,822 words, a 48-page typeset PDF and
+1,767 deposited files with a checksum each**. The paper is
+*Retained in every vertebrate, lost repeatedly elsewhere: a 503-genome
+census of the IP₃ receptor family*, and its three results are the family's
+repeated loss outside the animals, its complete retention inside the
+vertebrates, and the archive that holds a quarter of it. Seven items still
+need a human, listed in
+[`manuscript/reviewer_checklist.md`](manuscript/reviewer_checklist.md).
+The build has four guards — a missing figure, a missing section, a cited key
+with no reference row, a number that no longer matches its table — and each
+was tested by breaking it on purpose.
+
+**The census itself is enumerated, aligned, dated,
 audited, counted, traced back to the duplications that made it, scored
-residue by residue, audited against the records that hold it, and now
-measured against its own error rate; 27 of the 33 ledger rows are done.**
+residue by residue, audited against the records that hold it, and
+measured against its own error rate.**
 **We can say exactly how often the search failed, which almost no survey
 can.** Because no IP3 receptor has been lost anywhere in the 309-genome
 scope, every cell where the search came up empty is a **false negative of the
@@ -465,7 +482,7 @@ One task per session. Full ledger with dependencies and results in
 | S19 | Methods results | ✅ completed 2026-09-08 |
 | S21 | Gene architecture (~58 exons) | ⏳ pending |
 | S22 | Ligand-site evolution | ⏳ pending |
-| S14a | Manuscript assembly | ⏳ pending |
+| S14a | Manuscript assembly | ✅ completed 2026-09-08 |
 | S24 | Supplementary figures + figure audit | ⏳ pending |
 | S14c | Manuscript rewrite pass | ⏳ pending |
 | S14b | Deposit + release (Zenodo, public repo, preprint) | ⏳ pending — human-gated |

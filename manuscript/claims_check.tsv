@@ -1,0 +1,176 @@
+id	section	claim	expected	found	verdict	note	source	op
+C01	R2/methods	the vertebrate genome scope is 309 assemblies	309	309	ok		results/genome_manifest.tsv	nunique
+C02	R1/methods	the non-vertebrate genome scope is 194 assemblies	194	194	ok		results/s23_scope/genome_manifest_s23.tsv	nunique
+C03	R1	6,928 non-vertebrate reference proteomes were swept	6928	6928	ok		results/s20_sweep/proteome_presence.tsv	count
+C04	R1/methods	763 vertebrate reference proteomes were swept	763	763	ok		results/hmm_sweep/proteome_db_stats.json	json
+C05	R1/methods	the vertebrate proteome sweep covered 14,414,821 proteins	14414821	14414821	ok		results/hmm_sweep/proteome_db_stats.json	json
+C06	R1/methods	the non-vertebrate sweep covered 63,144,898 proteins	6,928 reference proteomes, 63,144,898 proteins	6,928 reference proteomes, 63,144,898 proteins	ok		results/s20_sweep/report.md	grep
+C07	R1	the census holds 18,065 records	18065	18065	ok		results/census_v6/census_v6_stats.json	json
+C08	R1	8,990 census records are called IP3 receptor	8990	8990	ok		results/census_v6/census_v6.tsv	count
+C09	R1	the IP3 receptor census spans 1,402 taxa	1402	1402	ok		results/census_v6/census_v6.tsv	nunique
+C10	R1	662 of 6,928 non-vertebrate proteomes carry an ITPR call	**662/6,928	**662/6,928	ok		results/s20_sweep/report.md	grep
+C11	R1	Streptophyta: 384 proteomes swept, 0 genomes with an ITPR	384	384	ok		results/s23_scope/absence_at_genome.tsv	cell
+C12	R1	Ascomycota: 1,034 proteomes swept	1034	1034	ok		results/s23_scope/absence_at_genome.tsv	cell
+C13	R1	Basidiomycota: 319 proteomes swept	319	319	ok		results/s23_scope/absence_at_genome.tsv	cell
+C14	R1	Apicomplexa: 60 proteomes swept	60	60	ok		results/s23_scope/absence_at_genome.tsv	cell
+C15	R1	35 clade-level absences were taken to assembly level	35	35	ok		results/s23_scope/absence_at_genome.tsv	count
+C16	R1	all 35 absences hold at assembly level	35	35	ok		results/s23_scope/absence_at_genome.tsv	count
+C17	R1	no genome in the non-vertebrate sweep is uncontrolled	0	0	ok		results/s23_scope/ledger_stats.json	json
+C18	R1	117 of the 194 genomes carry no IP3 receptor	117	117	ok		results/s23_scope/ledger_stats.json	json
+C19	R1	43 of the 194 genomes carry exactly one	43	43	ok		results/s23_scope/ledger_stats.json	json
+C20	R1	Macrostomum lignano carries 18 IP3 receptor genes	1	1	ok		results/s23_scope/ledger_stats.json	json
+C21	R1	99 plant and fungal records were chased individually	99	99	ok		results/s20_sweep/plant_fungal_verdicts.tsv	count
+C22	R1	47 of them are real genes	47	47	ok		results/s20_sweep/plant_fungal_verdicts.tsv	count
+C23	R1	52 of them are fragments	52	52	ok		results/s20_sweep/plant_fungal_verdicts.tsv	count
+C24	R1	none of them is a contamination suspect	0	0	ok		results/s20_sweep/plant_fungal_verdicts.tsv	count
+C25	R2	309 of 309 genomes were swept	309	309	ok		results/genome_ledger/ledger_stats.json	json
+C26	R2	the sweep recorded 1,236 genome x cell results	1236	1236	ok		results/genome_ledger/ledger_stats.json	json
+C27	R2	the sweep recorded 2,144 loci	2144	2144	ok		results/genome_ledger/ledger_stats.json	json
+C28	R2	the ryanodine receptor control failed in no genome	0	0	ok		results/genome_ledger/ledger_stats.json	json
+C29	R2	the vertebrate scope totals 552.5 Gbp	552535418825	552535418825	ok		results/genome_ledger/ledger_stats.json	json
+C30	R2	4 ledger cells were called absent	4	4	ok		results/genome_ledger/genome_ledger.tsv	count
+C31	R2	all 4 are cyclostome (Hyperoartia and Myxini)	4	4	ok		results/genome_ledger/genome_ledger.tsv	count
+C32	R2	318 IP3 receptor gene models exist only as DNA	318	318	ok		results/census_v4/db_status_counts.tsv	sum
+C33	R2	167 more sit inside an annotated gene carrying no family name	167	167	ok		results/census_v4/db_status_counts.tsv	sum
+C34	R2	the sweep contributed 1,058 gene models from 224 genomes	1058	1058	ok		results/census_v4/census_v4_stats.json	json
+C35	R2	140 of 923 assignable cells are false negatives (15.2 %)	140	140	ok		results/methods/methods_stats.json	json
+C36	R2	the false-negative rate is 0.1517	0.1517	0.1517	ok		results/methods/methods_stats.json	json
+C37	R2	the RyR sister series gives 42 of 309	42	42	ok		results/methods/methods_stats.json	json
+C38	R2	the RyR sister rate is 0.1359	0.1359	0.1359	ok		results/methods/methods_stats.json	json
+C39	R2	the two series are indistinguishable (Fisher p = 0.58)	0.578	0.578	ok		results/methods/methods_stats.json	json
+C40	R2	the odds of finding the gene rise 8.1x per tenfold of N50	OR per 10x=8.10, z=9.8	OR per 10x=8.10, z=9.8	ok		results/methods/methods_stats.json	json
+C41	R2	the residual false-negative rate above D4's bar is 0.9 %	0.0089	0.0089	ok		results/methods/methods_stats.json	json
+C42	R2	the RyR residual rate above the bar is 0.0 %	0.0	0.0	ok		results/methods/methods_stats.json	json
+C43	R2/methods	the contiguity bar is 142,212 bp	142212	142212	ok		results/methods/methods_stats.json	json
+C44	R2	189 of 309 genomes are above the contiguity bar	189	189	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+C45	R2	the ablation reproduces the ledger 1,236 of 1,236 cells	1236	1236	ok		results/methods/methods_stats.json	json
+C46	R2	the ablation found no mismatch against the ledger	0	0	ok		results/methods/methods_stats.json	json
+C47	R2	the full 38-bait panel recovers 783 cells	783	783	ok		results/methods/methods_stats.json	json
+C48	R2	four human baits recover 782 of them	782	782	ok		results/methods/methods_stats.json	json
+C49	R2	dropping ITPR1's baits costs 238 cells	-238	-238	ok		results/methods/methods_stats.json	json
+C50	R2	dropping ITPR3's baits costs 241 cells	-241	-241	ok		results/methods/methods_stats.json	json
+C51	R3	134 representatives were aligned	134	134	ok		results/msa_v2/align_stats.json	json
+C52	R3	MAFFT L-INS-i gave 11,777 columns	11777	11777	ok		results/msa_v2/align_stats.json	json
+C53	R3	trimAl kept 1,797 columns	1797	1797	ok		results/msa_v2/align_stats.json	json
+C54	R3	96.8 % of kept columns are parsimony-informative	96.8	96.8	ok		results/msa_v2/align_stats.json	json
+C55	R3	the ML model is Q.insect+R7	Q.insect+R7	Q.insect+R7	ok		results/phylogeny/tree_stats.json	json
+C56	R3	the ML log-likelihood is -215,452.0	-215451.998	-215451.998	ok		results/phylogeny/tree_stats.json	json
+C57	R3	69.5 % of internal nodes clear both support thresholds	69.5	69.5	ok		results/phylogeny/tree_stats.json	json
+C58	R3	AU rejects ITPR1+ITPR2 at p = 1.8e-05	1.8e-05	1.8e-05	ok		results/phylogeny/au_test.tsv	cell
+C59	R3	AU rejects ITPR1+ITPR3 at p = 1.65e-05	1.65e-05	1.65e-05	ok		results/phylogeny/au_test.tsv	cell
+C60	R3	AU does not reject ITPR2+ITPR3 (p = 0.476)	0.476	0.476	ok		results/phylogeny/au_test.tsv	cell
+C61	R3	AU does not reject the ML tree (p = 0.525)	0.525	0.525	ok		results/phylogeny/au_test.tsv	cell
+C62	R3	within-ITPR1 flank Jaccard is 411x its matched null	410.8862	410.8862	ok		results/synteny/pair_stats.tsv	cell
+C63	R3	the ITPR x RyR class sits at the null (mean J 0.0002)	0.0002	0.0002	ok		results/synteny/pair_stats.tsv	cell
+C64	R3	the flank caller is 405 of 405 correct	405	405	ok		results/synteny/synteny_stats.json	json
+C65	R3	its false-call rate on random windows is 0.008	0.0083	0.008264462809917356	ok		results/synteny/synteny_stats.json	json
+C66	R3	it places 131 loci the sequence sweep could not	131	131	ok		results/synteny/synteny_stats.json	json
+C67	R3	ITPR1's neighbourhood is paralogous to ITPR2's in 141 genomes	141	141	ok		results/duplication/duplication_stats.json	json
+C68	R3	out of 175 genomes with both neighbourhoods	175	175	ok		results/duplication/duplication_stats.json	json
+C69	R3	ITPR1 vs ITPR3: 89 of 152	89	89	ok		results/duplication/duplication_stats.json	json
+C70	R3	ITPR2 vs ITPR3: 4 of 149, exactly the background	4	4	ok		results/duplication/duplication_stats.json	json
+C71	R3	matched random neighbourhoods carry a link 2.6 % of the time	0.0258	0.0258	ok		results/duplication/duplication_stats.json	json
+C72	R3	ITPR2 vs ITPR3 does not beat that background (p = 0.55)	0.5536	0.553597	ok		results/duplication/duplication_stats.json	json
+C73	R3	teleosts carry a mean of 1.97 ITPR1 copies	1.973	1.973	ok		results/duplication/duplication_stats.json	json
+C74	R3	97.3 % of teleost genomes carry more than one ITPR1	0.9726	0.9726	ok		results/duplication/duplication_stats.json	json
+C75	R3	the same genomes carry 5.82 ryanodine receptors	5.822	5.822	ok		results/duplication/duplication_stats.json	json
+C76	R3	the two copies are disjoint in 45 of 49 genomes (tetrapod)	45	45	ok		results/duplication/duplication_stats.json	json
+C77	R3	and 46 of 49 against a pre-3R ray-finned reference	46	46	ok		results/duplication/duplication_stats.json	json
+C78	R3	all 705 cross-anchor assignments agree	705	705	ok		results/duplication/duplication_stats.json	json
+C79	R3	20 of 71 two-copy genomes place the copies on different contigs	20	20	ok		results/duplication/duplication_stats.json	json
+C80	R3	the ITPR2/ITPR3 split is on the gnathostome stem, 462-563 Ma	Gnathostomata	Gnathostomata	ok		results/reconciliation/duplication_placement.tsv	cell
+C81	R3	its younger bracket is 462 Ma	462.0	462.0	ok		results/reconciliation/duplication_placement.tsv	cell
+C82	R3	the ITPR1 split is on the vertebrate stem	Vertebrata	Vertebrata	ok		results/reconciliation/duplication_placement.tsv	cell
+C83	R3	Dollo places the ITPR1 gain node at Vertebrata	Vertebrata	Vertebrata	ok		results/loss_counts/loss_counts_stats.json	json
+C84	R3	and the ITPR2 gain node at Gnathostomata	Gnathostomata	Gnathostomata	ok		results/loss_counts/loss_counts_stats.json	json
+C85	R4	the character matrix holds 927 genome x paralogue cells	927	927	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+C86	R4	none of them reaches the absence state	0	0	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+C87	R4	923 hold a gene that is present	923	923	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+C88	R4	43 cells are reassembled across contigs	43	43	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+C89	R4	4 cells are paralogue-unassignable	4	4	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+C90	R4	above the bar the minimum is 3.00 gene-equivalents	3.0	3.0	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+C91	R4	Dollo places zero losses on the family character	0	0	ok		results/loss_counts/loss_counts_stats.json	json
+C92	R4	the family coding manufactures a loss in 2 of 32 settings	2	2	ok		results/loss_counts/loss_counts_stats.json	json
+C93	R4	the sensitivity grid has 32 settings	32	32	ok		results/loss_counts/loss_counts_stats.json	json
+C94	R4	the paralogue-resolved coding manufactures one in 18 of 32	18	18	ok		results/loss_counts/loss_counts_stats.json	json
+C95	R4	its worst case is 45 loss edges	45	45	ok		results/loss_counts/loss_counts_stats.json	json
+C96	R4	branch lengths change the count in none of the 32 settings	0	0	ok		results/loss_counts/loss_counts_stats.json	json
+C97	R4	1,760 loci were scored for frameshift density	1760	1760	ok		results/loss_counts/loss_counts_stats.json	json
+C98	R4	44 clear the lesion bar	44	44	ok		results/loss_counts/loss_counts_stats.json	json
+C99	R4	and all 44 are at full coverage	44	44	ok		results/loss_counts/loss_counts_stats.json	json
+C100	R4	one-ratio omega for ITPR1 is 0.0238	0.02375	0.02375	ok		results/selection/omega_table.tsv	cell
+C101	R4	one-ratio omega for ITPR2 is 0.0430	0.04303	0.04303	ok		results/selection/omega_table.tsv	cell
+C102	R4	one-ratio omega for ITPR3 is 0.0415	0.04152	0.04152	ok		results/selection/omega_table.tsv	cell
+C103	R4	on curated CDS only, ITPR1 is 0.0212	0.02118	0.02118	ok		results/selection/omega_table.tsv	cell
+C104	R4	the ITPR1 two-ratio test is significant at q = 2.9e-63	2.88318e-63	2.88318e-63	ok		results/selection/lrt_table.tsv	cell
+C105	R4	RELAX gives k = 9.36, intensified, for ITPR1	9.3587	9.358685495606336	ok		results/selection/relax_table.tsv	cell
+C106	R4	k = 0.91, relaxed, for ITPR2	0.9085	0.9084665220829636	ok		results/selection/relax_table.tsv	cell
+C107	R4	k = 0.84, relaxed, for ITPR3	0.8356	0.83558929131743	ok		results/selection/relax_table.tsv	cell
+C108	R4	the ITPR1 stem branch-site omega2 is 5.53	5.52937	5.52937	ok		results/selection/bs_restarts.tsv	cell
+C109	R4	on 11.0 % of sites	0.1102	0.1102	ok		results/selection/bs_restarts.tsv	cell
+C110	R4	3 of 12 branch-site restarts fell below their own null	3	3	ok		results/selection/bs_restarts.tsv	count
+C111	R4	88.8 % of within-paralogue pairs are past dS = 1.5	0.8881	0.8881	ok		results/methods/methods_stats.json	json
+C112	R4	ITPR3 carries an indel excess against matched siblings, q=0.0032	0.00320932	0.00320932	ok		results/loss_dynamics/integrity_tests.tsv	cell
+C113	R4	ITPR2's excess disappears under identity matching (q = 0.90)	0.902159	0.902159	ok		results/loss_dynamics/integrity_tests.tsv	cell
+C114	R4	bait identity is the dominant confounder (rho = -0.397)	-0.397	-0.397	ok		results/loss_dynamics/report.md	grep
+C115	R5	the deep layer holds 264 ITPR1 orthologues	264	264	ok		results/constraint/layer_sizes.tsv	cell
+C116	R5	249 for ITPR2	249	249	ok		results/constraint/layer_sizes.tsv	cell
+C117	R5	265 for ITPR3	265	265	ok		results/constraint/layer_sizes.tsv	cell
+C118	R5	the family layer holds all 128 ITPR tips	128	128	ok		results/constraint/layer_sizes.tsv	cell
+C119	R5	the ITPR1 gate has a mean JSD of 0.799	0.7994	0.7994	ok		results/constraint/constraint_by_element.tsv	cell
+C120	R5	the ITPR1 linker control mean is 0.726	0.7256	0.7256	ok		results/constraint/constraint_by_element.tsv	cell
+C121	R5	the ITPR1 luminal loop has a mean JSD of 0.488	0.4883	0.4883	ok		results/constraint/constraint_by_element.tsv	cell
+C122	R5	the luminal loop is 49 residues in ITPR1	49	49	ok		results/constraint/constraint_by_element.tsv	cell
+C123	R5	RIH-associated is the most constrained domain in ITPR1	0.8037	0.8037	ok		results/constraint/constraint_by_element.tsv	cell
+C124	R5	the ten IP3 contacts lie in MIR and RIH_N, not PF08709	MIR;RIH_N	MIR;RIH_N	ok		results/constraint/functional_site_constraint.tsv	cell
+C125	R5	they beat the whole ITPR1 protein at p = 0.013	0.013	0.013	ok		results/constraint/functional_site_constraint.tsv	cell
+C126	R5	and the whole ITPR2 protein at p = 6e-04	0.0006	0.0006	ok		results/constraint/functional_site_constraint.tsv	cell
+C127	R5	1,753 ClinVar missense records were placed	1753	1753	ok		results/constraint/variants.tsv	count
+C128	R5	1,546 of them are variants of uncertain significance	1546	1546	ok		results/constraint/variants.tsv	count
+C129	R5	the family layer is the best classifier (AUC 0.872)	0.8723	0.8723	ok		results/constraint/variant_constraint_test.tsv	cell
+C130	R5	the vertebrate layer reaches 0.854	0.8536	0.8536	ok		results/constraint/variant_constraint_test.tsv	cell
+C131	R5	the deep layer only 0.758	0.758	0.758	ok		results/constraint/variant_constraint_test.tsv	cell
+C132	R5	the shallow control 0.684	0.6842	0.6842	ok		results/constraint/variant_constraint_test.tsv	cell
+C133	R5	the contrast rests on 44 pathogenic positions	44	44	ok		results/constraint/variant_constraint_test.tsv	cell
+C134	R5	and 34 benign ones	34	34	ok		results/constraint/variant_constraint_test.tsv	cell
+C135	R5	FEL finds 5,766 purifying sites across the three paralogues	5766	5766	ok		results/constraint/fel_status.tsv	sum
+C136	R5	and one diversifying site	1	1	ok		results/constraint/fel_status.tsv	sum
+C137	R5	AlphaFold covers 20.9 % of UniProt-shaped census records	0.209	0.209	ok		results/structures/afdb_coverage_summary.tsv	cell
+C138	R5	9 of the 134 representatives have a usable model	9	9	ok		results/structures/afdb_coverage_summary.tsv	cell
+C139	R5	13 of 5,861 full-length census records do (0.2 %)	**13** (0.2 %) have a usable model	**13** (0.2 %) have a usable model	ok		results/structures/report.md	grep
+C140	R5	20 of 20 callable structures agree with the census call	(20/20), and no negative control is called at all (0/3)	(20/20), and no negative control is called at all (0/3)	ok		results/structures/report.md	grep
+C141	R5	the IP3-binding core is the best-modelled domain (pLDDT 83.9)	83.88	83.88	ok		results/structures/plddt_summary.tsv	cell
+C142	R5	the pore the worst (71.0)	71.01	71.01	ok		results/structures/plddt_summary.tsv	cell
+C143	R5	against 69.5 outside annotated domains	69.50	69.5	ok		results/structures/plddt_summary.tsv	cell
+C144	R6	73.9 % of IP3 receptor loci are complete	0.7393	0.7393	ok		results/annotation_audit/annotation_audit_stats.json	json
+C145	R6	the ryanodine receptor control is 77.9 %	0.7792	0.7792	ok		results/annotation_audit/annotation_audit_stats.json	json
+C146	R6	no overall difference survives BH over all scorable loci	0.127691	0.127691	ok		results/annotation_audit/family_vs_control.tsv	cell
+C147	R6	nor above the contiguity bar	0.819481	0.819481	ok		results/annotation_audit/family_vs_control.tsv	cell
+C148	R6	42 ITPR loci are held only by a non-coding feature	42	42	ok		results/annotation_audit/family_vs_control.tsv	cell
+C149	R6	against 16 RyR loci (q = 0.006)	16	16	ok		results/annotation_audit/family_vs_control.tsv	cell
+C150	R6	but 4 against 5 above the bar (q = 1.0)	1	1	ok		results/annotation_audit/family_vs_control.tsv	cell
+C151	R6	RefSeq annotations are 98.8 % complete	0.9881	0.9881	ok		results/annotation_audit/by_source.tsv	cell
+C152	R6	GenBank annotations 37.5 %	0.3748	0.3748	ok		results/annotation_audit/by_source.tsv	cell
+C153	R6	above the contiguity bar, 99.4 % against 63.8 %	0.6378	0.6378	ok		results/annotation_audit/by_source.tsv	cell
+C154	R6	the ITPR failure rate falls to 6.7 % above the bar	0.0669	0.0669	ok		results/annotation_audit/annotation_audit_stats.json	json
+C155	R6	the completeness bar sits at the 1.3 % point of 1,077 loci	0.013	0.013	ok		results/annotation_audit/annotation_audit_stats.json	json
+C156	R6	whose median single-model coverage is 0.993	0.993	0.993	ok		results/annotation_audit/annotation_audit_stats.json	json
+C157	R6	11,402 full-length family protein records were scored	11402	11402	ok		results/annotation_audit/annotation_audit_stats.json	json
+C158	R6	4 disagree with the census on family by sequence	4	4	ok		results/annotation_audit/annotation_audit_stats.json	json
+C159	R6	52 of 8,306 vertebrate symbols name the wrong paralogue	52	52	ok		results/annotation_audit/annotation_audit_stats.json	json
+C160	R6	3,872 records carry a placeholder symbol	3872	3872	ok		results/annotation_audit/annotation_audit_stats.json	json
+C161	R6	2,395 carry none at all	2395	2395	ok		results/annotation_audit/annotation_audit_stats.json	json
+C162	R6	all 15 zero-hit reference proteomes are gene-caller failures	15	15	ok		results/annotation_audit/annotation_audit_stats.json	json
+C163	R6	the audit produced 297 corrections	297	297	ok		results/annotation_audit/annotation_audit_stats.json	json
+C164	R6	52 of them high priority	52	52	ok		results/annotation_audit/annotation_audit_stats.json	json
+C165	R6	18 withheld with the reason recorded	18	18	ok		results/annotation_audit/annotation_audit_stats.json	json
+C166	R6	382 loci pass the five eligibility rules	382	382	ok		results/annotation_bugs/case_ranking.tsv	count
+C167	R6	the annotation gets 375 of them right (98.2 %)	at **375** of those (98.2 %) it did	at **375** of those (98.2 %) it did	ok		results/annotation_bugs/report.md	grep
+C168	R6	940 of 1,232 demonstrated genes are unreachable by protein search	940	940	ok		results/methods/methods_stats.json	json
+C169	R6	out of 1,232 genes	1232	1232	ok		results/methods/methods_stats.json	json
+C170	R6	386 of them are in species with no reference proteome	386	386	ok		results/methods/methods_stats.json	json
+C171	R6	74.3 % for order representatives	0.7428	0.7428	ok		results/methods/methods_stats.json	json
+C172	R6	78.5 % for margin species	0.7855	0.7855	ok		results/methods/methods_stats.json	json
+C173	R6	67 public RNA-seq runs were quantified	67	67	ok		results/expression/expression_stats.json	json
+C174	R6	298 of 314 unmodelled junctions are crossed by reads	298 of 314 (94.9 %) junctions no annotated model spans	298 of 314 (94.9 %) junctions no annotated model spans	ok		results/expression/report.md	grep
+C175	R6	the cross-mapping control is exactly zero	0.0	0.0	ok		results/expression/expression_stats.json	json

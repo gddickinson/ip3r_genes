@@ -3063,3 +3063,96 @@ whole genomic region is absent.
 S19's panel simulation reproduces the ledger 1,236/1,236 by re-parsing the
 309 retained GFFs. Scope any architecture claim above D4's bar, or it will
 measure contig lengths rather than exons.
+
+---
+
+## 2026-09-08 — S14a: manuscript assembly
+
+**Task.** The submission package, built by a script from the committed
+tables. Topmost pending ledger row with every dependency complete.
+
+### What ran
+
+`python scripts/s14_assemble.py` — ordered stages `figures → claims →
+stitch → pdf → deposit` — exits 0:
+
+| stage | result |
+|---|---|
+| figures | 7 main + 14 Extended Data, 56 panel files, 0 missing |
+| claims | 175/175 load-bearing numbers re-verified |
+| stitch | 16 sections, 13,822 words, 29 references resolved |
+| pdf | 48 pages, A4, 1.2 MB, 0 missing glyphs |
+| deposit | 1,767 files, 237 MB, SHA-256 per file |
+
+### What was written
+
+The 16 numbered section files, which are the only hand-written files in the
+package. Title: *Retained in every vertebrate, lost repeatedly elsewhere: a
+503-genome census of the IP₃ receptor family*. The results are structured on
+the three the project actually has — the family is ancestrally eukaryotic
+and lost repeatedly outside the animals; no vertebrate paralog is lost
+anywhere in 309 genomes; and three quarters of the demonstrated genes are
+unreachable from any protein database — with the duplication history and the
+constraint map as the two mechanistic sections between them.
+
+Also: `manuscript/reviewer_checklist.md` (the self-audit and 7 open items
+for a human), a rewritten `manuscript/README.md`, and `scripts/s14_refs.py`.
+
+### What the build caught
+
+- **The claims ledger failed 5 of 175 rows on its first run**, every one
+  because the claim addressed the wrong row rather than because a number was
+  wrong: a vertebrate class named `Cyclostomata` where the ledger records
+  `Hyperoartia` and `Myxini`; a synteny pair class quoted without its
+  `cross_` prefix; two AlphaFold rows that needed the `ALL` group to be a
+  single row; and one report phrase quoted loosely.
+- **Reading the tables rather than this roadmap caught two stale ledger
+  entries.** The alignment is 11,777 columns trimmed to **1,797**, not
+  11,796 trimmed to 1,790 as an earlier entry recorded — the numbers moved in
+  S7's forced S6+S7 re-run and the ledger text did not follow. The manuscript
+  uses the tables.
+- **D11 was done rather than asserted: all 56 panels were opened and read
+  against their legends before the legends were written**, and two draft
+  legends were wrong. *Nibea albiflora* has 55 spliceable introns of which 54
+  are GT-AG and one is a minor site, not 55 GT-AG; and the non-vertebrate
+  copy-number figure is drawn over the 193 *controlled* genomes, not all 194.
+- **The PDF silently dropped the family's own name.** TeX Gyre Termes has no
+  subscript glyphs, so `IP₃` typeset as `IP` on a page that otherwise looked
+  right, with only a `Missing character` warning in a log nothing read. Fixed
+  and generalised (D62); the log is now read and is empty.
+- **All four build guards were tested by breaking each on purpose** — a
+  missing figure, a missing section, a cited key with no reference row, a
+  failing claim — and each sets a non-zero exit.
+
+### Decisions
+
+- **D61** — a manuscript's citations are stable keys resolved at build time
+  and its bibliography is rendered from `references.tsv`, never typed.
+- **D62** — a typeset build is not finished until its own log has been read
+  for missing glyphs.
+
+### Housekeeping
+
+`s14_claims.py` reached 937 lines and was split three ways
+(`s14_claims_scope/history/function.py`) to meet the project's 500-line
+budget. `s14_lib.py`'s figure maps, deposit directory list and
+`BULK_EXCLUSIONS` were rewritten from the plan the port shipped to what this
+project actually produced; every regeneration command in `BULK_EXCLUSIONS`
+was run to produce the data it regenerates.
+
+### Emergent
+
+Three rows: the discussion cites 29 of 137 curated references and the
+remaining claims have not been audited the way S0 audited the baseline; the
+15.2 % false-negative rate applies to every per-cell number in the paper and
+only some are reported both sides of the contiguity bar; and 28 committed
+publication figures — mostly the evidence for method decisions the paper
+states in prose — are in the deposit but not the manuscript.
+
+### Next
+
+**S24 — supplementary figures and the figure audit.** `SUPPLEMENTARY_FIGURES`
+in `scripts/s14_lib.py` is deliberately empty and the build fails on a
+missing figure, so S24 fills that list and re-runs the chain. The figure
+audit it also owns should read the panels at *printed* size in the assembled
+PDF; S14a read them at source resolution, which is a different check.

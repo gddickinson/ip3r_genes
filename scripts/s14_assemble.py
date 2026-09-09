@@ -33,6 +33,7 @@ import s14_deposit
 import s14_figures
 import s14_lib as lib
 import s14_pdf
+import s14_refs
 
 STAGES = ["figures", "claims", "stitch", "pdf", "deposit"]
 
@@ -68,12 +69,31 @@ def stitch() -> int:
         parts.append("---")
         parts.append("")
     text = "\n".join(parts).rstrip() + "\n"
+
+    # Citations are written in the sections as this project's stable keys and
+    # renumbered here, so a section file never carries a number that could
+    # drift out of order, and the bibliography is rendered from
+    # references.tsv rather than typed (D13).
+    status = 1 if missing else 0
+    try:
+        text, bib, cite_stats = s14_refs.resolve(text)
+    except (KeyError, FileNotFoundError) as exc:
+        print(f"  CITATIONS: {exc}", file=sys.stderr)
+        bib, cite_stats, status = "", {"n_cited": 0}, 1
+    if s14_refs.MARKER in text:
+        text = text.replace(s14_refs.MARKER, bib)
+    elif bib:
+        print("  CITATIONS: no {references} marker in the sections; the "
+              "bibliography was not placed", file=sys.stderr)
+        status = 1
+
     out = lib.MS / "manuscript.md"
     out.write_text(text, encoding="utf-8")
     words = len(text.split())
     print(f"[s14 stitch] {len(lib.SECTION_ORDER) - len(missing)} sections, "
-          f"{words:,} words -> manuscript/manuscript.md")
-    return 1 if missing else 0
+          f"{words:,} words, {cite_stats['n_cited']} references "
+          f"-> manuscript/manuscript.md")
+    return status
 
 
 def main() -> int:

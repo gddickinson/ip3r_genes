@@ -59,85 +59,133 @@ SECTION_SUPPLEMENTARY = "13_supplementary.md"
 # ------------------------------------------------------------------ figures
 
 #: (number, slug, source path relative to results/, one-line caption stub).
-#: This is the *plan*: the source paths are where the roadmap's tasks write
-#: their figures, and `s14_figures.py` fails loudly on any that is missing
-#: rather than quietly shipping an incomplete set. Renumber freely — the
-#: number here is the publication number, and stale files in
-#: `manuscript/figures/` are deleted on every build.
+#: Every entry names a figure a completed task committed. `s14_figures.py`
+#: fails loudly on any that is missing rather than quietly shipping an
+#: incomplete set. Renumber freely - the number here is the publication
+#: number, and stale files in `manuscript/figures/` are deleted on every
+#: build.
 MAIN_FIGURES = [
-    (1, "eukaryote_range", "hmm_sweep/s20/s20_presence_figure",
+    (1, "eukaryote_range", "s20_sweep/figures/range_by_phylum",
      "The ITPR family across the eukaryotes"),
-    (2, "ledger_by_class", "figures/genome_ledger_by_class",
-     "The three-paralog census across the vertebrate genome scope"),
+    (2, "vertebrate_census", "genome_ledger/figures/ledger_by_class",
+     "The three-paralog census across 309 vertebrate genomes"),
     (3, "phylogeny", "phylogeny/figures/tree_ml_rooted",
      "One family, three vertebrate paralogs, rooted on the ryanodine "
      "receptors"),
-    (4, "duplication", "duplication/figures/duplication_history",
+    (4, "paralogon", "duplication/figures/s16_paralogon",
      "Where the three vertebrate paralogs came from"),
-    (5, "loss_dynamics", "loss_dynamics/figures/loss_dynamics",
-     "Three paralogs, three fates"),
-    (6, "constraint", "constraint/figures/constraint",
-     "One machine: constraint, structure and the clinical variants"),
-    (7, "annotation_audit", "annotation_audit/figures/annotation_audit",
-     "How the family is recorded"),
+    (5, "retention", "loss_dynamics/figures/s15_character_matrix",
+     "Three paralogs, retained in every vertebrate genome searched"),
+    (6, "constraint", "constraint/figures/s17_channel_profile",
+     "The pore-forming half: what cannot change, and what can"),
+    (7, "annotation", "annotation_audit/figures/s18_fig1_by_source",
+     "How the family is recorded, and by whom"),
 ]
 
-#: Extended Data figures. Several bundle more than one source panel file.
+#: Extended Data figures. Several bundle more than one source panel file;
+#: panels are lettered a, b, c ... in the order listed here.
 EXTENDED_FIGURES = [
-    (1, "invertebrates", ["figures/s23_copy_number"],
-     "ITPR copy number across the invertebrate and protist genomes"),
-    (2, "synteny", ["synteny/figures/synteny_tracks",
-                    "synteny/figures/jaccard_heatmap",
-                    "synteny/figures/pairclass_box"],
+    (1, "outside_vertebrates",
+     ["s23_scope/figures/copy_number",
+      "s23_scope/figures/absence_at_genome",
+      "s20_sweep/figures/plant_fungal_chase"],
+     "Copy number and controlled absence outside the vertebrates"),
+    (2, "vertebrate_sweep",
+     ["genome_ledger/figures/ledger_status",
+      "genome_ledger/figures/contiguity_confound",
+      "genome_ledger/figures/copy_number"],
+     "The vertebrate genomic sweep and its contiguity confounder"),
+    (3, "alignment",
+     ["msa_v2/figures/msa_conservation",
+      "msa_v2/figures/msa_identity_heatmap",
+      "msa_v2/figures/msa_coverage"],
+     "The representative alignment every downstream result stands on"),
+    (4, "phylogeny_detail",
+     ["phylogeny/figures/sister_au",
+      "phylogeny/figures/support_profile",
+      "phylogeny/figures/paralog_placement"],
+     "The sister test, node support and paralog placement"),
+    (5, "synteny",
+     ["synteny/figures/synteny_paralogon",
+      "synteny/figures/synteny_pair_classes",
+      "synteny/figures/synteny_caller",
+      "synteny/figures/synteny_clade_decay"],
      "Each paralog has its own genomic neighbourhood"),
-    (3, "reconciliation", ["reconciliation/figures/reconciliation"],
+    (6, "duplication",
+     ["duplication/figures/s16_copy_number",
+      "duplication/figures/s16_dcs",
+      "duplication/figures/s16_blocks"],
+     "The teleost genome duplication and the ancestral block"),
+    (7, "reconciliation",
+     ["reconciliation/figures/recon_dated_backbone",
+      "reconciliation/figures/recon_matrix",
+      "reconciliation/figures/recon_losses",
+      "reconciliation/figures/recon_cyclostome"],
      "Dating the duplications that made ITPR1, ITPR2 and ITPR3"),
-    (4, "selection", ["selection/figures/selection"],
+    (8, "retention_evidence",
+     ["loss_dynamics/figures/s15_reconstruction",
+      "loss_dynamics/figures/s15_integrity",
+      "loss_dynamics/figures/s15_synteny_reach",
+      "loss_counts/figures/sensitivity_matrix"],
+     "The loss instrument, and what it takes to manufacture a loss"),
+    (9, "selection",
+     ["selection/figures/s9_omega_by_paralog",
+      "selection/figures/s9_branch_contrast",
+      "selection/figures/s9_dnds_saturation",
+      "selection/figures/s9_bs_restarts"],
      "Selection across the three paralogs"),
-    (5, "structures", ["structures/figures/structures"],
+    (10, "structures",
+     ["structures/figures/s11_panel",
+      "structures/figures/s11_tm_calibration",
+      "structures/figures/s11_plddt_domains",
+      "structures/figures/s11_afdb_coverage"],
      "Predicted and experimental structures across the family"),
-    (6, "architecture", ["architecture/figures/architecture"],
-     "Gene architecture and the shared intron map"),
-    (7, "annotation_bugs", ["annotation_validation/figures/annotation_bugs"],
-     "Annotation errors validated at the molecular level"),
-    (8, "ledger_heatmap", ["figures/genome_ledger_heatmap"],
-     "The full per-genome evidence matrix"),
-    (9, "expression", ["expression/figures/expression"],
-     "Transcription and splicing evidence"),
-    (10, "alignment", ["msa_v2/figures/conservation_trimmed",
-                       "msa_v2/figures/identity_heatmap_covered"],
-     "The representative alignment"),
-    (11, "methods", ["methods/figures/methods"],
+    (11, "constraint_detail",
+     ["constraint/figures/s17_elements",
+      "constraint/figures/s17_functional_sites",
+      "constraint/figures/s17_variant_classifier"],
+     "Constraint by element, at the ligand site, and as a variant "
+     "classifier"),
+    (12, "annotation_quality",
+     ["annotation_audit/figures/s18_fig2_calibration",
+      "annotation_audit/figures/s18_fig3_family_vs_control",
+      "annotation_audit/figures/s18_fig4_protein_side"],
+     "The annotation audit against its own controls"),
+    (13, "annotation_bugs",
+     ["annotation_bugs/figures/exon_tracks",
+      "annotation_bugs/figures/annotation_loss",
+      "annotation_bugs/figures/validation",
+      "expression/figures/s12_junctions"],
+     "Two annotation failures validated at the exon and by RNA-seq"),
+    (14, "methods",
+     ["methods/figures/fig_s19_contiguity",
+      "methods/figures/fig_s19_panel",
+      "methods/figures/fig_s19_contribution",
+      "methods/figures/fig_s19_drift"],
      "What the search methods were worth"),
 ]
 
-#: Supplementary figures — the alignments and structures the main figures
-#: rest on. Nothing in them is re-aligned or re-rendered from new data, so a
-#: supplementary panel that disagreed with its main figure would be a bug.
-SUPPLEMENTARY_FIGURES = [
-    (1, "alignment_phylogeny", ["alignments/figures/supp_aln_msa_v2"],
-     "The alignment behind the phylogeny"),
-    (2, "alignment_pore", ["alignments/figures/supp_aln_pore"],
-     "The pore module and the IP3-binding core, residue by residue"),
-    (3, "alignment_constraint", ["alignments/figures/supp_aln_deep"],
-     "The alignments the constraint map is computed on"),
-    (4, "alignment_codon", ["alignments/figures/supp_aln_codon"],
-     "The codon alignment behind every omega estimate"),
-    (5, "structure_constraint", ["alignments/figures/supp_struct_constraint"],
-     "The constraint map on the channel"),
-    (6, "structure_findings", ["alignments/figures/supp_struct_findings"],
-     "What the structures show"),
-]
+#: Supplementary figures - the alignments and structures the main figures
+#: rest on. **S24 writes these.** The list is deliberately empty until then,
+#: because `s14_figures.py` exits non-zero on a missing figure and a
+#: placeholder entry for a figure nobody has drawn would make the S14a build
+#: fail for a reason that is not a defect. S24 fills it and re-runs the
+#: chain.
+SUPPLEMENTARY_FIGURES: list[tuple[int, str, list[str], str]] = []
 
 # ------------------------------------------------------------------ deposit
 
-#: Directories deposited wholesale (relative to results/).
+#: Directories deposited wholesale (relative to results/): one per completed
+#: ledger task, plus the five census editions. A directory named here that
+#: does not exist is reported by `s14_deposit.py` rather than skipped, so a
+#: renamed results tree cannot silently shrink the deposit.
 DEPOSIT_DIRS = [
-    "alignments", "annotation_audit", "annotation_validation", "architecture",
-    "benchmark_controls", "census_v2", "census_v3", "census_v4", "census_v5",
-    "constraint", "duplication", "expression", "figures", "hmm_sweep",
-    "loss_dynamics", "methods", "msa_v2", "phylogeny", "reconciliation",
-    "s23_baits", "s5_baits", "selection", "structures", "synteny",
+    "annotation_audit", "annotation_bugs", "benchmark_controls",
+    "census_v2", "census_v3", "census_v4", "census_v5", "census_v6",
+    "constraint", "duplication", "expression", "genome_ledger", "hmm_sweep",
+    "loss_counts", "loss_dynamics", "methods", "msa_v2", "phylogeny",
+    "reconciliation", "s0_baseline", "s20_sweep", "s23_baits", "s23_scope",
+    "s5_baits", "selection", "structures", "synteny",
 ]
 
 #: Individual files at the results/ root that are deposited.
@@ -156,6 +204,56 @@ DEPOSIT_SKIP_NAMES = {".DS_Store", "Thumbs.db",
 #: the command has been run.
 BULK_EXCLUSIONS: list[tuple[str, str, str, str, str]] = [
     # (what, size, source, manifest committed in the repo, command)
+    # Every command below was run to produce the data it regenerates, and
+    # every one takes its scope from the committed manifest beside it, so a
+    # reader reproduces the same set rather than a similar one. They need the
+    # analysis conda environment (see results/toolchain_manifest.txt); the
+    # manuscript package itself builds on a bare Python.
+    ("Genome assemblies and their annotations, 503 genomes",
+     "624 GB", "NCBI Datasets",
+     "results/genome_manifest.tsv, results/s23_scope/genome_manifest_s23.tsv",
+     "python scripts/fetch_genomes.py"),
+    ("UniProt reference proteomes, 7,691 proteomes, and the concatenated "
+     "search databases built from them",
+     "60 GB", "UniProt release FTP",
+     "results/hmm_sweep/proteome_manifest.tsv, "
+     "results/s20_sweep/proteome_manifest_*.tsv",
+     "python scripts/s3_fetch_proteomes.py --group vertebrata && "
+     "python scripts/s20_fetch.py"),
+    ("Per-genome vertebrate sweep output: miniprot GFF, rescue output and "
+     "summary.json for each of the 309 genomes",
+     "939 MB", "generated",
+     "results/genome_ledger/genome_ledger.tsv",
+     "python scripts/s5_run_sweep.py"),
+    ("Per-genome non-vertebrate sweep output for each of the 194 genomes",
+     "726 MB", "generated",
+     "results/s23_scope/copy_number_ledger.tsv",
+     "python scripts/s23_run_sweep.py"),
+    ("HMMER output: hmmsearch domain tables and jackhmmer logs for every "
+     "profile sweep and convergence run",
+     "1.3 GB", "generated",
+     "results/hmm_sweep/sweep_stats_*.json, "
+     "results/s20_sweep/jackhmmer_convergence_s20.tsv",
+     "python scripts/s3_run_sweep.py"),
+    ("Structure files: RCSB mmCIF downloads, AlphaFold DB models, the "
+     "CA-trace panel and the TM-align pair cache",
+     "4.0 GB", "RCSB PDB and AlphaFold DB",
+     "results/structures/structure_manifest.tsv",
+     "python scripts/s11_run.py --only panel"),
+    ("Archived API responses: InterPro pages, UniProt records, NCBI "
+     "datasets dumps and taxonomy lookups",
+     "1.9 GB", "generated (archived so every parse re-runs offline)",
+     "each task's stats json records what it fetched",
+     "re-run the owning task; every fetch is cached and resumable"),
+    ("RNA-seq: streamed SRA reads, HISAT2 indexes and per-run counts",
+     "15 MB committed-side; reads are streamed and not retained",
+     "NCBI SRA",
+     "results/expression/runs_selected.tsv",
+     "python scripts/s12_run.py --only quantify"),
+    ("BLAST databases built from the swept proteomes and genomes",
+     "77 MB", "generated",
+     "results/s5_baits/baits.faa, results/s23_baits/baits.faa",
+     "rebuilt automatically by the sweep drivers"),
 ]
 
 

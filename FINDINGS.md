@@ -2081,3 +2081,67 @@ is meant to detect. Watching the share of genuinely unrelated material
 instead separates all seven searches perfectly. We report that as a proposal
 rather than a change, because seven searches is not enough to prove a rule
 *(pending: validation on an independent set of runs)*.
+
+---
+
+## 2026-09-08 — The paper, and what writing it changed (S14a)
+
+This session wrote the paper rather than finding anything new, so the
+biological content below is the story as it now stands when the separate
+results are put in one order. Three things did change, and all three came
+from the discipline of having to source every sentence.
+
+**The story the evidence supports, in the order it belongs.** The IP₃
+receptor is an old eukaryotic channel: animals have it, so do amoebae,
+ciliates, oomycetes, dinoflagellates, haptophytes and green algae, and two
+single-celled relatives of animals carry both it and the ryanodine receptor
+at full length, so the two families split before animals existed. What is
+striking is not where it is but where it has gone. Land plants have none and
+their algal sisters do. The familiar fungi — the yeasts, the moulds, the
+mushrooms — have none, and neither do four other fungal groups that branch
+apart from them, so the loss happened at least five separate times in fungi
+alone. Malaria parasites and their relatives, microsporidians, red algae,
+diatoms and one class of tapeworms have lost it too. These are organisms
+that have simplified or re-routed their calcium signalling, and the receptor
+went with it.
+
+Against that background of repeated loss, the vertebrates stand out. Across
+309 genomes covering every vertebrate order, **not one of the three
+paralogues is missing anywhere**. In every assembly good enough to carry the
+gene, the genome holds all three. A family that other lineages drop
+repeatedly is one no vertebrate has managed without.
+
+The three copies are not equivalent. *ITPR1* is held about twice as tightly
+as its sisters by three independent measures; it is the one the fish
+genome duplication doubled and kept; and it is the one whose genomic
+neighbourhood still carries the trace of the vertebrate genome duplications.
+The other two are freer. Where the receptor cannot change at all is the gate
+and the selectivity filter — the five gate residues are identical in all
+three human copies — while fifty residues away, inside the same domain, sits
+a loop facing the inside of the endoplasmic reticulum that is the most
+variable sequence in the whole protein.
+
+And the record of all this is much worse than the thing itself. Three
+quarters of the genes we can demonstrate exist cannot be found by searching
+any protein database, and more than half of the full-length records that do
+exist carry no usable gene name.
+
+**What writing it changed.** Three corrections, all caught by requiring a
+source for every number.
+
+1. **Two numbers in the project's own ledger were stale.** The alignment
+   every tree and selection result stands on has 1,797 columns, not 1,790;
+   the earlier figure predates a re-run. The paper uses the tables.
+2. **Two figure legends were wrong before anyone looked at the figures.**
+   One said a gene's introns were all of the canonical type when one is a
+   rarer minor-class site; the other described a figure as covering 194
+   genomes when it is drawn over the 193 with a working control.
+3. **The typeset paper silently deleted the receptor's own name.** The
+   subscript in "IP₃" had no glyph in the document font, so the title read
+   "IP receptor" on a page that otherwise looked perfect.
+
+None of these changes a biological conclusion. All three are the kind of
+error that survives every check except reading the artefact itself, which is
+why the project's rule is to open every figure before writing its legend and
+to re-derive every number from the table it came from — 175 of them, on
+every build.

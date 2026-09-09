@@ -18,6 +18,9 @@ from __future__ import annotations
 import argparse
 import sys
 
+import s14_claims_function
+import s14_claims_history
+import s14_claims_scope
 import s14_lib as lib
 
 # op:
@@ -29,34 +32,14 @@ import s14_lib as lib
 #   grep     - `expect` appears literally in a text file (needle = expect)
 #
 # `where` keys support `col`, `col__startswith`, `col__in` (comma-separated).
-CLAIMS: list[dict] = [
-    # Every load-bearing number in the manuscript gets a row here, naming the
-    # committed table it comes from and the operation that recovers it. A
-    # re-run that changes a table then fails loudly instead of leaving the
-    # text stale. Add rows as the manuscript is written — an example of each
-    # op, for reference:
-    #
-    # dict(id="C01", section="R1",
-    #      claim="the sweep produced N genome x paralog cells",
-    #      source="results/genome_ledger.tsv", op="count", expect="582"),
-    # dict(id="C02", section="scope",
-    #      claim="the declared genome scope is N assemblies",
-    #      source="results/genome_manifest.tsv", op="nunique",
-    #      column="accession", expect="194"),
-    # dict(id="C03", section="R1",
-    #      claim="ITPR2 is absent from N genomes",
-    #      source="results/genome_ledger.tsv", op="count",
-    #      where={"status": "absent", "paralog": "ITPR2"}, expect="0"),
-    # dict(id="C04", section="R2",
-    #      claim="the census holds N proteins",
-    #      source="results/census_v5/census_v5_stats.json", op="json",
-    #      key="v5_rows", expect="8329"),
-    # dict(id="C05", section="R3",
-    #      claim="mean omega on the ITPR3 stem",
-    #      source="results/selection/omega_table.tsv", op="cell",
-    #      where={"branch": "ITPR3_stem"}, column="omega",
-    #      expect="0.0412", tol=1e-4),
-]
+#: The ledger itself lives in three data modules, one per part of the paper,
+#: so no file exceeds the project's 500-line budget. Concatenating them here
+#: keeps a single ordered list and a single `claims_check.tsv`.
+CLAIMS: list[dict] = (
+    s14_claims_scope.CLAIMS
+    + s14_claims_history.CLAIMS
+    + s14_claims_function.CLAIMS
+)
 
 def _matches(row: dict, where: dict) -> bool:
     for key, want in where.items():

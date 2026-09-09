@@ -25,6 +25,7 @@ from collections import defaultdict
 from datetime import date
 
 import s14_lib as lib
+import s14_refs
 
 PDF_OUT = lib.MS / "itpr_family_manuscript.pdf"
 MD_BUILD = lib.MS / ".pdf_build.md"
@@ -36,6 +37,15 @@ SUPERSCRIPTS = {
     "⁶": "6", "⁷": "7", "⁸": "8", "⁹": "9", "⁻": "-", "⁺": "+",
 }
 
+#: The same for subscripts. TeX Gyre Termes has no subscript glyphs at all, so
+#: `IP₃` reached the first build as `IP` with a missing-character warning and
+#: nothing on the page — the exact failure mode this module's font choice was
+#: made to avoid, one plane over.
+SUBSCRIPTS = {
+    "₀": "0", "₁": "1", "₂": "2", "₃": "3", "₄": "4", "₅": "5",
+    "₆": "6", "₇": "7", "₈": "8", "₉": "9", "₋": "-", "₊": "+",
+}
+
 #: Symbols Latin Modern has no glyph for, mapped to math mode so the PDF does
 #: not silently drop them (xelatex reports these only as warnings).
 MATH_MAP = {
@@ -45,6 +55,7 @@ MATH_MAP = {
     "≤": r"\(\leq\)", "≈": r"\(\approx\)", "≠": r"\(\neq\)",
     "×": r"\(\times\)", "±": r"\(\pm\)", "−": r"\(-\)",
     "→": r"\(\rightarrow\)", "·": r"\(\cdot\)", "Å": r"\AA{}",
+    "↔": r"\(\leftrightarrow\)", "′": r"\(^{\prime}\)",
 }
 
 #: Fonts are set by *file name*, not family name: fontconfig on this machine
@@ -133,9 +144,17 @@ def latex_safe(text: str) -> str:
     # runs of unicode superscript digits -> real math superscripts
     charset = "".join(SUPERSCRIPTS)
     text = re.sub(
-        f"([0-9A-Za-z])([{charset}]+)",
-        lambda m: (m.group(1) + r"\(^{"
-                   + "".join(SUPERSCRIPTS[c] for c in m.group(2)) + r"}\)"),
+        f"([{charset}]+)",
+        lambda m: (r"\(^{"
+                   + "".join(SUPERSCRIPTS[c] for c in m.group(1)) + r"}\)"),
+        text,
+    )
+    # runs of unicode subscript digits -> real math subscripts
+    sub_charset = "".join(SUBSCRIPTS)
+    text = re.sub(
+        f"([{sub_charset}]+)",
+        lambda m: (r"\(_{"
+                   + "".join(SUBSCRIPTS[c] for c in m.group(1)) + r"}\)"),
         text,
     )
     for char, replacement in MATH_MAP.items():
@@ -163,7 +182,7 @@ def build_markdown() -> str:
 
     yaml = [
         "---",
-        f'title: "{title}"',
+        "title: '" + latex_safe(title).replace("'", "''") + "'",
         f'author: "{author}"',
         f'date: "{date.today().isoformat()}"',
         "documentclass: article",
@@ -216,7 +235,18 @@ def build_markdown() -> str:
         parts.append(latex_safe(text))
         parts.append("")
 
-    return "\n".join(parts)
+    doc = "\n".join(parts)
+    # The same renumbering the stitch stage does, so the typeset document and
+    # `manuscript.md` carry identical citation numbers and one bibliography
+    # rendered from `references.tsv` (D13). A cited key with no reference row
+    # is reported here and leaves the keys in place rather than silently
+    # dropping the citation.
+    try:
+        doc, bib, _ = s14_refs.resolve(doc)
+        doc = doc.replace(s14_refs.MARKER, latex_safe(bib))
+    except (KeyError, FileNotFoundError) as exc:
+        print(f"  CITATIONS: {exc}", file=sys.stderr)
+    return doc
 
 
 def run(keep_intermediate: bool = False) -> int:
