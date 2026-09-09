@@ -1,6 +1,6 @@
 # S24 — supplementary figures, and the figure audit
 
-*Rendered 2026-09-08 from the committed tables (D13). Nothing in this report is hand-written.*
+*Rendered 2026-09-09 from the committed tables (D13). Nothing in this report is hand-written.*
 
 ## 1. What this task is
 
@@ -44,7 +44,7 @@ Both passed. trimAl writes no column map of its own; S6 recovered one with `-col
 
 ## 4. The figure audit (D11)
 
-21 manuscript figures — 7 main and 14 Extended Data — were opened and read against their own legends. The mechanical half is checked in code on every build: every figure must have a legend, every legend a figure, and for each Extended Data figure the panel letters its legend uses must match the panel files the manifest holds.
+23 manuscript figures — 7 main and 14 Extended Data — were opened and read against their own legends. The mechanical half is checked in code on every build: every figure must have a legend, every legend a figure, and for each Extended Data figure the panel letters its legend uses must match the panel files the manifest holds.
 
 26 findings, 10 fixed figure, 16 fixed legend.
 

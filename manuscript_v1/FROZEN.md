@@ -12,7 +12,7 @@ The PIEZO project froze its own v1 when its framing changed and that turned
 out to be worth doing, so the same is done here.
 
 **What this version is.** Seven main figures, 14 Extended Data figures, six
-Supplementary figures, 16 section files, 180 verified claims, 48 pages.
+Supplementary figures, 16 section files, 180 verified claims, 56 pages.
 Its Results run: eukaryotic range → the vertebrate census → origin of the
 three paralogues → their fates → the receptor as a machine → the annotation
 record. It has no gene-architecture section and no ligand-site section.

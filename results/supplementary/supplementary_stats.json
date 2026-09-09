@@ -1,5 +1,6 @@
 {
  "audit": {
+  "citations_checked": 16,
   "figures_audited": 23,
   "findings": 26,
   "findings_by_status": {
@@ -29,7 +30,7 @@
   "columns_checked": 1797,
   "element_tests": 15,
   "element_tests_significant": 4,
-  "figures_audited": 21,
+  "figures_audited": 23,
   "itpr1_afdb_model_residues": 2695,
   "itpr1_reference_agree": 736,
   "median_occupancy_cut": 0.0299,

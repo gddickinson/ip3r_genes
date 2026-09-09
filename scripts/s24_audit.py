@@ -36,6 +36,7 @@ MANUSCRIPT = L.PROJECT_ROOT / "manuscript"
 MANIFEST = MANUSCRIPT / "figure_manifest.tsv"
 LEGENDS_MAIN = MANUSCRIPT / "11_figure_legends.md"
 LEGENDS_ED = MANUSCRIPT / "12_extended_data.md"
+MANUSCRIPT_MD = MANUSCRIPT / "manuscript.md"
 
 #: What looking at the figures found. `status` is `fixed_figure` when the
 #: figure was redrawn, `fixed_legend` when the legend was the thing that was
@@ -254,6 +255,44 @@ def split_legends(path: Path, pattern: str) -> dict[int, str]:
     return out
 
 
+def citation_order() -> tuple[list[dict], list[str]]:
+    """Every Extended Data figure cited, and cited in ascending order.
+
+    A figure nobody points at is a figure the reader never opens, and a
+    numbering that does not follow first mention is one a copy-editor will
+    renumber for you. Both were true of this package before S14c: two figures
+    were never cited by any sentence, and the methods figure was numbered last
+    and first cited in the third Results section. Checked mechanically here so
+    it cannot come back — the citations are read from the stitched body, which
+    is where a reader meets them, and the legend section is excluded so a
+    legend heading cannot count as a citation of itself.
+    """
+    problems: list[dict] = []
+    if not MANUSCRIPT_MD.exists():
+        return [], ["manuscript.md not built — citation order not checked"]
+    flat = re.sub(r"\s+", " ", MANUSCRIPT_MD.read_text(encoding="utf-8"))
+    body = flat.split("Extended Data figure legends")[0]
+    legends = {int(n) for n in
+               re.findall(r"\*\*Extended Data Fig\. (\d+) \|", flat)}
+    order: list[int] = []
+    for n in (int(m) for m in re.findall(r"Extended Data Fig\. (\d+)", body)):
+        if n not in order:
+            order.append(n)
+    msgs = []
+    for num in sorted(legends - set(order)):
+        msgs.append(f"Extended Data Fig. {num}: has a legend but no sentence "
+                    f"in the paper cites it")
+    for num in sorted(set(order) - legends):
+        msgs.append(f"Extended Data Fig. {num}: cited but has no legend")
+    if order != sorted(order):
+        msgs.append(f"Extended Data figures are not numbered in order of "
+                    f"first mention: {order}")
+    rows = [{"figure": f"Extended Data Fig. {n}", "first_mention_rank": i + 1,
+             "in_order": int(order == sorted(order))}
+            for i, n in enumerate(order)]
+    return rows, msgs
+
+
 def audit() -> tuple[list[dict], list[str]]:
     """The mechanical half. Returns (rows, problems)."""
     manifest = [r for r in L.read_tsv(MANIFEST) if r["format"] == "png"]
@@ -307,14 +346,19 @@ def audit() -> tuple[list[dict], list[str]]:
 
 def write(out_dir: Path) -> dict:
     rows, problems = audit()
+    order_rows, order_problems = citation_order()
+    problems = problems + order_problems
     L.write_tsv(out_dir / "figure_audit.tsv", rows,
                 ["kind", "number", "panel_files", "legend_panel_letters",
                  "legend_present", "figures_present", "note"])
+    L.write_tsv(out_dir / "figure_citation_order.tsv", order_rows,
+                ["figure", "first_mention_rank", "in_order"])
     findings = [dict(f) for f in FINDINGS]
     L.write_tsv(out_dir / "figure_findings.tsv", findings,
                 ["figure", "panel", "legend_said", "figure_shows",
                  "verified_against", "status"])
     return {"figures_audited": len(rows), "problems": problems,
+            "citations_checked": len(order_rows),
             "findings": len(findings),
             "findings_by_status": {
                 s: sum(1 for f in findings if f["status"] == s)

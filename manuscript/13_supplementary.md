@@ -47,8 +47,10 @@ what trimAl removed was the sparse columns and not a region.
 **Supplementary Fig. 2 | The ligand core and the pore module at residue
 resolution across the three paralogues.** (**a**) Deep-layer constraint along
 the β-trefoil and MIR domains of each paralogue in its own numbering, with
-every pathogenic position marked. (**b**) The same for the pore module —
-channel, selectivity filter, gate and the geometrically located luminal loop.
+every pathogenic position marked. (**b**) The same for the channel region —
+selectivity filter, gate, and the geometrically located luminal loop drawn
+beside them rather than inside the pore module, since whether it counts as
+pore is what reverses the comparison in the main text.
 (**c**) Every pathogenic position in those two regions with the residue each
 paralogue carries there; a red letter is a paralogue that carries a different
 residue. Twenty of the 22 positions are the same residue in all three. Every

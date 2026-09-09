@@ -22,8 +22,9 @@ task, each rendering its own report purely from its committed tables, each
 running a suite of constructed negative controls before it writes anything.
 `python scripts/s14_assemble.py` rebuilds this manuscript package — figures,
 claims, stitched text, typeset PDF and deposit manifest — and exits non-zero
-on a missing figure, a missing section or a load-bearing number that no longer
-matches its source table.
+on a missing figure, a missing section, a cited reference key with no
+bibliography row, a glyph the document font cannot set, or a load-bearing
+number that no longer matches its source table.
 
 ## Author contributions
 
