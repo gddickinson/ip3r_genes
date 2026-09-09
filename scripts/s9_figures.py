@@ -200,7 +200,7 @@ def fig_branch_contrast() -> None:
         frameon=False, fontsize=fs.FS_TICK, loc="upper left")
     fs.despine(ax1)
     fs.hgrid(ax1)
-    fs.panel(ax1, "A", "Two-ratio: each clade against the rest")
+    fs.panel(ax1, "a", "Two-ratio: each clade against the rest")
 
     ks = [f(relax.get(p, {}).get("k")) for p in PARALOGS]
     for i, p in enumerate(PARALOGS):
@@ -233,7 +233,7 @@ def fig_branch_contrast() -> None:
                  fontsize=fs.FS_TICK)
     fs.despine(ax2)
     fs.hgrid(ax2)
-    fs.panel(ax2, "B", "Relaxed (k < 1) or intensified (k > 1)")
+    fs.panel(ax2, "b", "Relaxed (k < 1) or intensified (k > 1)")
     fig.tight_layout()
     fs.save(fig, FIGS / "s9_branch_contrast")
     plt.close(fig)

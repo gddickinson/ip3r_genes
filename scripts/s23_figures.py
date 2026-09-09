@@ -149,7 +149,13 @@ def fig_absence(absences: list[dict]) -> None:
     swept = [_int(r["genomes_swept"]) for r in rows]
     ctl = [_int(r["genomes_controlled"]) for r in rows]
     found = [_int(r["genomes_with_full_itpr"]) for r in rows]
-    ax.barh(y, swept, color="#e7e6e0", height=0.72, label="genomes searched")
+    # The result of this panel is that the control bar *reaches* the searched
+    # bar in every row — and if the searched bar is drawn as a solid fill
+    # behind it, coincidence is drawn as absence and there is nothing for the
+    # eye to check (found by the S24 figure audit). Drawing it as an open
+    # outline makes the two visible at once.
+    ax.barh(y, swept, facecolor="none", edgecolor=fs.MUTED, linewidth=0.7,
+            height=0.72, label="genomes searched")
     ax.barh(y, ctl, color="#a9a79e", height=0.72,
             label="control fired (claim admissible)")
     ax.barh(y, found, color=fs.STATUS["found_annotated"], height=0.5,

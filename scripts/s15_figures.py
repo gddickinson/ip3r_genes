@@ -294,11 +294,23 @@ def fig_synteny() -> None:
     ax.set_ylim(0, 1.08)
     fs.hgrid(ax)
     fs.despine(ax)
-    for i, r in enumerate(rates):
-        if r == 0.0:
-            ax.annotate("below the\ncaller's floor", xy=(i, 0.03),
-                        ha="center", va="bottom", fontsize=fs.FS_NOTE,
-                        color=fs.MUTED)
+    # One label per contiguous run of empty bins, centred on the run. Two
+    # adjacent zero bins each carrying the same two-line note overlap into
+    # unreadable text, which is what the S24 figure audit found here.
+    runs, start = [], None
+    for i, r in enumerate(rates + [1.0]):
+        if r == 0.0 and start is None:
+            start = i
+        elif r != 0.0 and start is not None:
+            runs.append((start, i - 1))
+            start = None
+    for lo, hi in runs:
+        ax.annotate("below the\ncaller's floor", xy=((lo + hi) / 2, 0.03),
+                    ha="center", va="bottom", fontsize=fs.FS_NOTE,
+                    color=fs.MUTED)
+        if hi > lo:
+            ax.plot([lo - 0.34, hi + 0.34], [0.015, 0.015], color=fs.FAINT,
+                    lw=0.7)
     ax.legend(loc="upper left", fontsize=fs.FS_NOTE)
     fs.panel(ax, "b", "accurate wherever called: reach failed, not accuracy")
     fs.save(fig, lib.FIGS / "s15_synteny_reach")

@@ -327,13 +327,23 @@ def fig_cyclostome():
     for i, r in enumerate(cy):
         ax2.text(1.03, i, f"pair {r['pair_support'] or '-'}", va="center",
                  fontsize=4.8, color=fs.MUTED)
+    ax2.text(1.03, len(cy) - 0.35, "SH-aLRT/UFBoot of the tree's\nown "
+             "orthology pair for this locus",
+             va="top", fontsize=4.6, color=fs.MUTED)
     ax2.set_yticks(range(len(labs)))
     ax2.set_yticklabels(labs, fontsize=5.0)
     ax2.invert_yaxis()
     ax2.set_xlim(0, 1.6)
     ax2.set_xticks([])
     fs.despine(ax2, keep=())
-    fs.panel(ax2, "b", "S8's flank call per locus — every one inside its null")
+    # The title is computed, not asserted: two of the six loci made no call
+    # at all, and "every one inside its null" reported them as agreeing
+    # (found by the S24 figure audit).
+    n_called = sum(1 for r in cy if r["s8_null_verdict"] == "within_null")
+    n_nocall = sum(1 for r in cy if not r["s8_paralog_call"]
+                   or r["s8_paralog_call"] == "no_call")
+    fs.panel(ax2, "b", f"S8's flank call per locus — {n_called} of "
+                       f"{len(cy)} inside its null, {n_nocall} no call")
     fig.tight_layout()
     return fs.save(fig, FIGS / "recon_cyclostome")
 

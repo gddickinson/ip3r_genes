@@ -90,6 +90,15 @@ def fig_sensitivity() -> None:
     ladder = list(coding.EVIDENCE_NAMES)
     fig, axes = plt.subplots(1, 2, figsize=(fs.W_FULL, 3.5),
                              constrained_layout=True)
+    # One colour scale across both panels. Scaled per panel, the single
+    # manufactured loss in the family-level grid is drawn in the same
+    # maroon as the 45 in the paralogue-resolved one, and the panel whose
+    # whole point is that it manufactures almost nothing reads as the
+    # panel that manufactures most (found by the S24 figure audit).
+    vmax = max(
+        (_i(r["dollo_losses_max"]) for r in rows
+         if r["coding"] in ("family", "paralog")
+         and r["evidence"] in ladder), default=1) or 1
     for ax, coding_name, title in zip(
             axes, ("family", "paralog"),
             ("family-level presence per genome (primary, D46)",
@@ -104,7 +113,6 @@ def fig_sensitivity() -> None:
                 line.append(max((_i(c["dollo_losses_max"]) for c in cells),
                                 default=0))
             grid.append(line)
-        vmax = max(max(line) for line in grid) or 1
         ax.imshow(grid, cmap="Reds", vmin=0, vmax=vmax, aspect="auto")
         for i, line in enumerate(grid):
             for j, v in enumerate(line):

@@ -52,22 +52,23 @@ check.
 
 1. **Affiliation, funding and competing-interests text.** The front matter
    carries a placeholder affiliation and no funding statement.
-2. **Supplementary Figures 1–6 are not built.** They are the alignment and
-   structure panels; the supplementary figure list in `scripts/s14_lib.py` is
-   deliberately empty so the build does not fail on figures nobody has drawn.
-   The supplementary section says so in the text.
-3. **A figure-by-figure audit against the final page proofs.** Every panel
-   was read against its legend at source resolution; nobody has read them at
-   printed size in the assembled PDF.
-4. **Reference verification.** The 29 cited references come from a table
+2. **A figure-by-figure audit against the final page proofs.** Every main and
+   Extended Data panel was opened and read against its own legend at source
+   resolution (S24; 23 findings, all fixed, recorded in
+   `results/supplementary/figure_findings.tsv`), and the mechanical half of
+   that audit — every figure has a legend, every legend a figure, panel
+   letters match panel files — now runs on every build. Nobody has read them
+   at printed size in the assembled PDF.
+3. **Reference verification.** The 29 cited references come from a table
    audited in the project's literature baseline, but no one has re-checked
    each DOI and PMID resolves.
-5. **Extended Data Fig. 14b is 0.02 in wider than the text block.** Harmless
-   in this build; worth redrawing before submission.
-6. **Journal choice and its formatting.** The package is written to a generic
+4. **Extended Data Figs 10d and 14b are 0.02–0.04 in wider than the text
+   block.** Harmless in this build (the PDF scales them by under half a
+   percent); worth redrawing before submission.
+5. **Journal choice and its formatting.** The package is written to a generic
    Nature-style structure (main figures, Extended Data, Supplementary) and
    has not been fitted to a specific journal's limits.
-7. **Deposit and DOI.** Nothing has been uploaded; the manifest is ready.
+6. **Deposit and DOI.** Nothing has been uploaded; the manifest is ready.
 
 ## How to rebuild
 

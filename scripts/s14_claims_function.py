@@ -314,4 +314,29 @@ CLAIMS: list[dict] = [
          claim="the cross-mapping control is exactly zero",
          source="results/expression/expression_stats.json", op="json",
          key="crossmap_worst_rate", expect="0.0", tol=1e-9),
+    # S24 — the supplementary section's four load-bearing numbers. All four
+    # are the *scale of a guard*, which is exactly the kind of number a
+    # reader has to be able to check: a column walk over a sample and a
+    # column walk over everything read the same in prose.
+    dict(id="C176", section="Supplementary",
+         claim="the column walk covered all 1,797 trimmed columns",
+         source="results/supplementary/supplementary_stats.json", op="json",
+         key="guards.columns_checked", expect="1797"),
+    dict(id="C177", section="Supplementary",
+         claim="the column walk covered all 134 sequences",
+         source="results/supplementary/supplementary_stats.json", op="json",
+         key="guards.sequences", expect="134"),
+    dict(id="C178", section="Supplementary",
+         claim="1,780 variant residues were checked against their own table",
+         source="results/supplementary/supplementary_stats.json", op="json",
+         key="guards.variant_residues_checked", expect="1780"),
+    dict(id="C179", section="Supplementary",
+         claim="2,699 aligned partners were checked",
+         source="results/supplementary/supplementary_stats.json", op="json",
+         key="guards.aligned_partners_checked", expect="2699"),
+    dict(id="C180", section="Supplementary",
+         claim="AlphaFold DB's human ITPR1 model is the 2,695-residue "
+               "Q14643-4 isoform",
+         source="results/supplementary/supplementary_stats.json", op="json",
+         key="headline.itpr1_afdb_model_residues", expect="2695"),
 ]

@@ -2145,3 +2145,62 @@ error that survives every check except reading the artefact itself, which is
 why the project's rule is to open every figure before writing its legend and
 to re-derive every number from the table it came from — 175 of them, on
 every build.
+
+---
+
+## 2026-09-08 — S24: what looking at every figure found
+
+**Nothing in the biology changed. Twenty-six things in how it is shown did.**
+This task drew the six supplementary figures the paper's main figures rest
+on, and then did the thing no table check can do: opened every one of the
+twenty-one main and Extended Data figures and read it against its own legend.
+
+**Two small biological facts came out of drawing the supplementary figures.**
+
+The first is about the pathogenic variants. Twenty-two of them fall in the
+two parts of the receptor this paper is about — the pocket that binds the
+messenger, and the pore that lets calcium through. **Twenty of those
+twenty-two sit at a position where all three human copies of the receptor
+carry the same amino acid.** The disease variants are not landing on the
+parts that distinguish the three genes from one another; they are landing on
+the parts none of the three has been allowed to change.
+
+The second is about how little the ancestor's coding sequence has moved.
+Painting the vertebrate selection measurement onto one subunit shows that
+**59 % of the residues scored carry no protein-changing substitution anywhere
+in the tree** — not in any of the fifty-seven vertebrate genes, over half a
+billion years. That is a picture of the number the selection analysis already
+reported, but seeing it laid on the channel makes the scale of it legible.
+
+**And one honest refusal.** The paper would have liked to show every known
+pathogenic variant of *ITPR1* — the gene that carries the ataxias and
+Gillespie syndrome, and 55 of the 68 labelled variants — placed on a picture
+of the protein. It does not, because no structure available for this gene is
+in the numbering those variants are written in: the best experimental
+structure is a rat protein, and the predicted model the public database
+serves for the human gene is a shortened form of it, 63 residues too small.
+Placing human variant numbers on either would have produced a figure that
+looked entirely correct and was wrong at every point. The two genes whose
+structures do check out, *ITPR2* and *ITPR3*, are shown; *ITPR1* is not.
+
+**What the audit found in the figures already written.** Sixteen legends said
+something the figure does not show. The tree figure's legend counted four
+labels on the backbone where the tree draws five. The census figure named the
+wrong colour for a fragmentary gene, said it covered every vertebrate class
+when it covers six of thirteen, and explained a missing colour with the wrong
+reason — the four cells in question really are recorded as absent, and are
+simply not drawn, because the two jawless-fish genomes they belong to are the
+only members of their classes. A reconciliation panel was described as
+showing 51 to 53 implied gene losses when it plots up to 102. A structure
+panel was called a 29-structure panel and draws thirty bars.
+
+Ten more were faults in the figures themselves rather than their captions,
+including two labels overlapping into unreadable text, two heat maps drawn on
+different colour scales so that one manufactured loss looked as severe as
+forty-five, and a bar the reader was asked to compare against that was hidden
+behind the bar it was being compared with.
+
+**None of it changes a result**, and that is the point worth keeping: every
+one of these survived a build that re-derives 180 load-bearing numbers from
+their source tables on every run. They are the errors that only reading the
+picture can catch.

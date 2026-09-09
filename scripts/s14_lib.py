@@ -166,12 +166,34 @@ EXTENDED_FIGURES = [
 ]
 
 #: Supplementary figures - the alignments and structures the main figures
-#: rest on. **S24 writes these.** The list is deliberately empty until then,
-#: because `s14_figures.py` exits non-zero on a missing figure and a
-#: placeholder entry for a figure nobody has drawn would make the S14a build
-#: fail for a reason that is not a defect. S24 fills it and re-runs the
-#: chain.
-SUPPLEMENTARY_FIGURES: list[tuple[int, str, list[str], str]] = []
+#: rest on. S24 drew these and filled the list; before it ran the list was
+#: deliberately empty, because `s14_figures.py` exits non-zero on a missing
+#: figure and a placeholder entry for a figure nobody had drawn would have
+#: made the S14a build fail for a reason that was not a defect.
+#:
+#: One source stem each: unlike the Extended Data set, every supplementary
+#: figure here is a single multi-panel file, so no letter suffix is appended.
+SUPPLEMENTARY_FIGURES: list[tuple[int, str, list[str], str]] = [
+    (1, "representative_alignment",
+     ["supplementary/figures/SuppFig1_representative_alignment"],
+     "The representative alignment, and the columns the tree actually saw"),
+    (2, "labelled_positions",
+     ["supplementary/figures/SuppFig2_labelled_positions"],
+     "The ligand core and the pore module at residue resolution across the "
+     "three paralogues"),
+    (3, "paralog_alignments",
+     ["supplementary/figures/SuppFig3_paralog_alignments"],
+     "The within-paralogue alignments the constraint map is computed on"),
+    (4, "codon_alignment",
+     ["supplementary/figures/SuppFig4_codon_alignment"],
+     "The trimmed codon alignment behind every omega estimate"),
+    (5, "constraint_on_channel",
+     ["supplementary/figures/SuppFig5_constraint_on_channel"],
+     "The constraint map painted onto the channel"),
+    (6, "variants_on_structure",
+     ["supplementary/figures/SuppFig6_variants_on_structure"],
+     "Every labelled variant, and the per-element enrichment test"),
+]
 
 # ------------------------------------------------------------------ deposit
 
@@ -185,7 +207,7 @@ DEPOSIT_DIRS = [
     "constraint", "duplication", "expression", "genome_ledger", "hmm_sweep",
     "loss_counts", "loss_dynamics", "methods", "msa_v2", "phylogeny",
     "reconciliation", "s0_baseline", "s20_sweep", "s23_baits", "s23_scope",
-    "s5_baits", "selection", "structures", "synteny",
+    "s5_baits", "selection", "structures", "supplementary", "synteny",
 ]
 
 #: Individual files at the results/ root that are deposited.

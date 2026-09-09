@@ -1,0 +1,239 @@
+{
+ "audit": {
+  "figures_audited": 21,
+  "findings": 26,
+  "findings_by_status": {
+   "fixed_figure": 10,
+   "fixed_legend": 16
+  },
+  "problems": []
+ },
+ "guards": {
+  "aligned_partners_checked": 2699,
+  "aln_columns": 11777,
+  "columns_checked": 1797,
+  "sequences": 134,
+  "trimmed_columns": 1797,
+  "variant_residues_checked": 1780
+ },
+ "headline": {
+  "aligned_partners_checked": 2699,
+  "aln_columns": 11777,
+  "audit_findings": 26,
+  "audit_findings_by_status": {
+   "fixed_figure": 10,
+   "fixed_legend": 16
+  },
+  "codons_in": 3253,
+  "codons_kept": 2459,
+  "columns_checked": 1797,
+  "element_tests": 15,
+  "element_tests_significant": 4,
+  "figures_audited": 21,
+  "itpr1_afdb_model_residues": 2695,
+  "itpr1_reference_agree": 736,
+  "median_occupancy_cut": 0.0299,
+  "median_occupancy_kept": 0.9776,
+  "orthologs_dropped": 1,
+  "orthologs_screened": 779,
+  "pathogenic_conserved_all_three": 20,
+  "pathogenic_positions_drawn": 22,
+  "sequences_checked": 134,
+  "structures_eligible_for_variants": [
+   "ITPR2",
+   "ITPR3"
+  ],
+  "structures_refused": [
+   "constraint_reference_ITPR1_7LHF.pdb",
+   "constraint_model_Q14643.pdb"
+  ],
+  "trimmed_columns": 1797,
+  "variant_residues_checked": 1780
+ },
+ "self_test": {
+  "checks": 17,
+  "mutations": [
+   {
+    "breakage": "the column walk stops comparing columns",
+    "caught_by": "T2"
+   },
+   {
+    "breakage": "the variant residue check is disabled",
+    "caught_by": "T7"
+   },
+   {
+    "breakage": "the numbering rule admits everything",
+    "caught_by": "T11"
+   },
+   {
+    "breakage": "the one-to-one column guard is disabled",
+    "caught_by": "T4"
+   },
+   {
+    "breakage": "the pdf creation timestamp is restored",
+    "caught_by": "T17"
+   }
+  ],
+  "mutations_caught": 5,
+  "mutations_tested": 5,
+  "passed": 17
+ },
+ "supp_fig_1": {
+  "groups": {
+   "ITPR1": 15,
+   "ITPR2": 11,
+   "ITPR3": 18,
+   "RYR": 6,
+   "fungi": 2,
+   "invert_metazoa": 47,
+   "plant": 3,
+   "protist": 19,
+   "vertebrate_basal": 13
+  },
+  "input_columns": 11777,
+  "kept_columns": 1797,
+  "median_occupancy_cut": 0.0299,
+  "median_occupancy_kept": 0.9776,
+  "sequences": 134
+ },
+ "supp_fig_2": {
+  "by_element": {
+   "MIR": 8,
+   "channel": 8,
+   "gate": 2,
+   "nterm_trefoil": 2,
+   "selectivity_filter": 2
+  },
+  "conserved_across_all_three": 20,
+  "ligand_positions": 10,
+  "pore_positions": 12,
+  "positions_drawn": 22
+ },
+ "supp_fig_3": {
+  "dropped": [
+   "ITPR2|Lissotriton_helveticus|GCF_964261635.1"
+  ],
+  "layer_sizes": {
+   "deep:ITPR1": 264,
+   "deep:ITPR2": 249,
+   "deep:ITPR3": 265,
+   "family:all": 128,
+   "shallow:ITPR1": 19,
+   "shallow:ITPR2": 13,
+   "shallow:ITPR3": 19,
+   "vert:all three": 57
+  },
+  "manifest_rows": 970,
+  "sequences_dropped": 1,
+  "sequences_screened": 779
+ },
+ "supp_fig_4": {
+  "codons_in": 3253,
+  "codons_kept": 2459,
+  "codons_masked_total": 24,
+  "pct_kept": 75.6,
+  "routes": {
+   "miniprot": 14,
+   "uniprot": 43
+  },
+  "sets": {
+   "ITPR1": 19,
+   "ITPR2": 13,
+   "ITPR3": 19,
+   "background": 6
+  },
+  "tips": 57
+ },
+ "supp_fig_5": {
+  "ITPR1": {
+   "file": "constraint_reference_ITPR1_7LHF.pdb",
+   "median_b": 77.36,
+   "residues": 2300,
+   "scored": 2299
+  },
+  "ITPR2": {
+   "file": "constraint_reference_ITPR2_9YKK.pdb",
+   "median_b": 78.6,
+   "residues": 2168,
+   "scored": 2165
+  },
+  "ITPR3": {
+   "file": "constraint_reference_ITPR3_8TKG.pdb",
+   "median_b": 78.32,
+   "residues": 2210,
+   "scored": 2208
+  },
+  "ITPR3_selection": {
+   "file": "selection_reference_ITPR3_8TKG.pdb",
+   "median_b": 100.0,
+   "residues": 2210,
+   "scored": 2157
+  }
+ },
+ "supp_fig_6": {
+  "element_tests": 15,
+  "infinite_odds_ratios": 1,
+  "numbering_checks": [
+   {
+    "agree": 2168,
+    "carries_human_numbering": true,
+    "file": "constraint_reference_ITPR2_9YKK.pdb",
+    "frac_agree": 1.0,
+    "paralog": "ITPR2",
+    "residues": 2168
+   },
+   {
+    "agree": 2210,
+    "carries_human_numbering": true,
+    "file": "constraint_reference_ITPR3_8TKG.pdb",
+    "frac_agree": 1.0,
+    "paralog": "ITPR3",
+    "residues": 2210
+   },
+   {
+    "agree": 2671,
+    "carries_human_numbering": true,
+    "file": "constraint_model_Q14573.pdb",
+    "frac_agree": 1.0,
+    "paralog": "ITPR3",
+    "residues": 2671
+   },
+   {
+    "agree": 736,
+    "carries_human_numbering": false,
+    "file": "constraint_reference_ITPR1_7LHF.pdb",
+    "frac_agree": 0.32,
+    "paralog": "ITPR1",
+    "residues": 2300
+   },
+   {
+    "agree": 479,
+    "carries_human_numbering": false,
+    "file": "constraint_model_Q14643.pdb",
+    "frac_agree": 0.1777,
+    "paralog": "ITPR1",
+    "residues": 2695
+   }
+  ],
+  "positions_drawn": {
+   "ITPR2": {
+    "B/LB": 7,
+    "P/LP": 1
+   },
+   "ITPR3": {
+    "B/LB": 11,
+    "P/LP": 5
+   }
+  },
+  "significant_after_bh": 4,
+  "structures_drawn": {
+   "ITPR2": "constraint_reference_ITPR2_9YKK.pdb",
+   "ITPR3": "constraint_reference_ITPR3_8TKG.pdb"
+  }
+ },
+ "tables": {
+  "figures": 6,
+  "missing": [],
+  "rows": 12
+ }
+}

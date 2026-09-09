@@ -3,8 +3,10 @@
 **Fig. 1 | The IP₃ receptor family across the eukaryotes.** The fraction of
 each lineage's swept reference proteomes carrying at least one IP₃ receptor
 call, with the count over the denominator beside each bar and lineages
-grouped by kingdom. Denominators are proteomes, not records, so a
-well-sequenced phylum cannot outvote a sparse one. Bars at zero — Apicomplexa
+grouped by the sweep group they sit in. Denominators are proteomes, not records, so a
+well-sequenced phylum cannot outvote a sparse one; the italic headings are the
+kingdoms and supergroups the sweep partitioned Eukaryota into, not ranks.
+ Bars at zero — Apicomplexa
 0/60, Bacillariophyta 0/16, Rhodophyta 0/12, Fornicata 0/7, Parabasalia 0/3,
 Streptophyta 0/384, Ascomycota 0/1,034, Basidiomycota 0/319, Kickxellomycota
 0/35, Microsporidia 0/29, Glomeromycota 0/27, Mortierellomycota 0/18, and all
@@ -15,15 +17,19 @@ themselves.
 
 **Fig. 2 | The three-paralogue census across 309 vertebrate genomes.**
 Evidence class for each of *ITPR1*, *ITPR2* and *ITPR3* in every genome,
-stacked as a fraction of the genomes of each vertebrate class (class sizes in
-brackets). Dark blue is a locus found and correctly annotated; the two
-lighter blues are a locus found in an assembly whose annotation misses it or
-that has no gene set at all; grey is a locus the assembly is too fragmented
-to place; salmon is a remnant recovered only by translated search. The
-`absent` colour appears nowhere at this scale: four cells (both cyclostomes'
-*ITPR2* and *ITPR3*) are treated as paralogue-unassignable rather than
-absent, for the reason given in the text. Aves carry the most non-blue area
-and are also the least contiguous class in the scope.
+stacked as a fraction of the genomes of each vertebrate class that the scope
+samples more than once — six classes and 302 of the 309 genomes (class sizes
+in brackets). Darkest blue is a locus found and correctly annotated; the next
+two blues are a locus found in an assembly whose annotation misses it or that
+has no gene set at all; the palest blue is a locus recovered only in part;
+grey is an assembly gap and the darker grey an ambiguous translated trace;
+salmon is a remnant recovered only by translated search. The `absent` colour
+appears nowhere because the four cells that carry it — both cyclostomes'
+*ITPR2* and *ITPR3* — are the only two genomes of their classes and those
+classes are not drawn; S15 re-states those four cells as
+paralogue-unassignable, for the reason given in the text. Aves carry the most
+non-blue cells of any class and are the least contiguous class in the scope;
+the largest non-blue *fraction* is Lepidosauria's, on five genomes.
 
 **Fig. 3 | One family, three vertebrate paralogues, rooted on the ryanodine
 receptors.** Maximum-likelihood phylogram of 134 representative proteins over
@@ -32,9 +38,10 @@ ryanodine receptor sequences. Coloured boxes mark the three vertebrate
 paralogue clades and the outgroup, each labelled with its tip count and its
 SH-aLRT/UFBoot support; the vertical bars on the right name the taxonomic
 grades of the tips outside them. Filled circles mark nodes clearing SH-aLRT
-≥ 80 and UFBoot ≥ 95. The four `100/100` labels on the backbone are the
-extended paralogue clades — each core clade plus the basal vertebrate tips
-the tree nests with it. Scale bar 0.5 substitutions per site.
+≥ 80 and UFBoot ≥ 95. The five `100/100` labels on the backbone are the two ancestors of each
+boxed clade: the three extended paralogue clades — each core clade plus the
+basal vertebrate tips the tree nests with it — an inner *ITPR1* node of 15
+tips, and, deepest, the 32-tip node uniting *ITPR2* and *ITPR3*. Scale bar 0.5 substitutions per site.
 
 **Fig. 4 | Where the three vertebrate paralogues came from.** (**a**) The
 fraction of genomes in which each pair of IP₃ receptor neighbourhoods carries
@@ -72,8 +79,8 @@ inside the same Pfam domain.
 
 **Fig. 7 | How the family is recorded, and by whom.** Annotation state of
 every scorable IP₃ receptor locus, split by whether the assembly's annotation
-came from RefSeq or from the submitter through GenBank. (**A**) All 1,874
-scorable loci: RefSeq is 98.8 % complete and GenBank 37.5 %. (**B**) The same
+came from RefSeq or from the submitter through GenBank. (**a**) All 1,874
+scorable loci: RefSeq is 98.8 % complete and GenBank 37.5 %. (**b**) The same
 contrast restricted to loci on a contig long enough to hold the gene, which
 removes assembly quality as an explanation and leaves 99.4 % against 63.8 %.
 The archive an assembly is deposited in predicts whether its IP₃ receptor is

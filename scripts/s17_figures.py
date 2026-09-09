@@ -175,8 +175,12 @@ def fig_channel(out: Path) -> None:
                       bbox_to_anchor=(0.5, -0.02))
     axes[-1].set_xlabel("residue (each paralog's own UniProt numbering); "
                         f"{BIN}-residue bins, never crossing an element boundary")
-    F.panel(axes[0], "a", "modal-residue fraction across the pore-forming half; "
-                          "dashed line is that protein's own linker mean")
+    # No panel letter: the figure is one panel drawn as three stacked rows,
+    # and a lone bold "a" with no "b" anywhere reads as a missing panel
+    # (found by the S24 figure audit).
+    axes[0].set_title("  modal-residue fraction across the pore-forming half; "
+                      "dashed line is that protein's own linker mean",
+                      loc="left", pad=4.0, fontsize=F.FS_TITLE, color=F.INK)
     fig.tight_layout()
     F.save(fig, out / "s17_channel_profile")
     plt.close(fig)
@@ -243,7 +247,10 @@ def fig_classifier(out: Path) -> None:
         fpr = [0.0] + [sum(1 for n in neg if n >= c) / len(neg) for c in cuts] + [1.0]
         auc = [r for r in tests if r["gene"] == "POOLED" and r["layer"] == layer
                and r["contrast"] == "P/LP vs B/LB, all layers scorable"]
-        lab = f"{layer} (AUC {auc[0]['auc']})" if auc else layer
+        # The table stores the AUC at whatever precision it was computed to,
+        # so quoting it verbatim prints 0.758 beside 0.6842 and invites the
+        # reader to think one was measured more finely than another.
+        lab = (f"{layer} (AUC {float(auc[0]['auc']):.3f})" if auc else layer)
         ax.plot(fpr, tpr, color=colours[layer], lw=1.4, label=lab)
     ax.plot([0, 1], [0, 1], color=F.MUTED, lw=0.7, ls=":")
     ax.set_xlabel("false-positive rate (benign called constrained)")

@@ -216,10 +216,18 @@ def fig_tm_calibration() -> None:
         Patch(facecolor=fs.PARALOG["ITPR3"], label="ITPR3"),
         Patch(facecolor=fs.GROUP["invert_metazoa"], label="ITPR, no paralog"),
         Patch(facecolor=fs.GROUP["RYR"], label="RyR reference"),
-        Patch(facecolor=CONTROL_COLOUR, label="negative control"),
+        Patch(facecolor=CONTROL_COLOUR, label="negative control "
+                                              "(square)"),
         Line2D([], [], marker="o", linestyle="none", markerfacecolor="none",
                markeredgecolor=fs.INK, markersize=4.5,
                label="declined (below the fold bar)"),
+        # Marker shape carries the role and was in no key, so a reader could
+        # see three shapes and had nothing to read them with (found by the
+        # S24 figure audit).
+        Line2D([], [], marker="^", linestyle="none", color=fs.MUTED,
+               markersize=4.5, label="experimental structure"),
+        Line2D([], [], marker="o", linestyle="none", color=fs.MUTED,
+               markersize=4.5, label="predicted model"),
     ], loc="upper left", frameon=False, fontsize=6, handlelength=1.1,
         labelspacing=0.35, borderaxespad=0.9)
 

@@ -78,7 +78,7 @@ def fig_exon_tracks() -> None:
     fs.use()
     fig, axes = plt.subplots(len(cases), 1, figsize=(fs.W_FULL, 4.4))
     axes = [axes] if len(cases) == 1 else list(axes)
-    for ax, case, letter in zip(axes, cases, "ABCD"):
+    for ax, case, letter in zip(axes, cases, "abcd"):
         cid = case["case_id"]
         ex = exons.get(cid, [])
         lo = min(int(e["start"]) for e in ex)
@@ -193,7 +193,7 @@ def fig_annotation_loss() -> None:
     ax1.text(0.51, ax1.get_ylim()[1] * 0.5, "failure", fontsize=fs.FS_NOTE,
              color=fs.INK, ha="left", va="top")
     fs.hgrid(ax1)
-    fs.panel(ax1, "A", f"{len(elig)} loci the annotation could have got right")
+    fs.panel(ax1, "a", f"{len(elig)} loci the annotation could have got right")
 
     # the E5 control, drawn as the thing it is: locus span against the longest
     # gene the same annotation builds anywhere.
@@ -221,7 +221,7 @@ def fig_annotation_loss() -> None:
         Patch(facecolor=fs.CLINICAL["pathogenic"], label="excluded by E5")],
         loc="lower right", fontsize=fs.FS_TICK - 0.3)
     fs.hgrid(ax2, axis="both")
-    fs.panel(ax2, "B", "E5: can this annotation build a gene this long?")
+    fs.panel(ax2, "b", "E5: can this annotation build a gene this long?")
     fig.tight_layout()
     fs.save(fig, FIGS / "annotation_loss")
     plt.close(fig)
@@ -237,7 +237,7 @@ def fig_tiling() -> None:
     fs.use()
     fig, axes = plt.subplots(len(cases), 1, figsize=(fs.W_FULL, 3.2))
     axes = [axes] if len(cases) == 1 else list(axes)
-    for ax, case, letter in zip(axes, cases, "ABCD"):
+    for ax, case, letter in zip(axes, cases, "abcd"):
         cid = case["case_id"]
         rows = [r for r in tiles.get(cid, [])
                 if r["tiles"] == "1" and r["at_own_locus"] == "1"]
@@ -330,7 +330,7 @@ def fig_validation() -> None:
     # "independently annotated", not "RefSeq": the reference set is whichever
     # swept genomes corroborate the alignment, and it is a mixture of RefSeq
     # and submitter annotations. Naming one of them would overstate it.
-    fs.panel(ax1, "A", "Boundaries vs annotated genomes")
+    fs.panel(ax1, "a", "Boundaries vs annotated genomes")
 
     labels, values, colours = [], [], []
     for case in cases:
@@ -346,7 +346,7 @@ def fig_validation() -> None:
     ax2.set_xticklabels(labels, fontsize=fs.FS_TICK - 1.2)
     ax2.set_ylabel("introns")
     fs.hgrid(ax2)
-    fs.panel(ax2, "B", "Splice-site dinucleotides")
+    fs.panel(ax2, "b", "Splice-site dinucleotides")
 
     rows = [r for r in orf if r.get("verdict") in
             ("open_reading_frame", "disrupted")]
@@ -368,7 +368,7 @@ def fig_validation() -> None:
     ax3.set_xlabel("stops expected if neutral")
     ax3.set_ylabel("internal stops observed")
     fs.hgrid(ax3)
-    fs.panel(ax3, "C", "Is the reading frame open?")
+    fs.panel(ax3, "c", "Is the reading frame open?")
     if rows:
         ax3.annotate("no locus carries a single\ninternal stop",
                      xy=(0.96, 0.52), xycoords="axes fraction",

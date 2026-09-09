@@ -174,3 +174,8 @@ C172	R6	78.5 % for margin species	0.7855	0.7855	ok		results/methods/methods_stat
 C173	R6	67 public RNA-seq runs were quantified	67	67	ok		results/expression/expression_stats.json	json
 C174	R6	298 of 314 unmodelled junctions are crossed by reads	298 of 314 (94.9 %) junctions no annotated model spans	298 of 314 (94.9 %) junctions no annotated model spans	ok		results/expression/report.md	grep
 C175	R6	the cross-mapping control is exactly zero	0.0	0.0	ok		results/expression/expression_stats.json	json
+C176	Supplementary	the column walk covered all 1,797 trimmed columns	1797	1797	ok		results/supplementary/supplementary_stats.json	json
+C177	Supplementary	the column walk covered all 134 sequences	134	134	ok		results/supplementary/supplementary_stats.json	json
+C178	Supplementary	1,780 variant residues were checked against their own table	1780	1780	ok		results/supplementary/supplementary_stats.json	json
+C179	Supplementary	2,699 aligned partners were checked	2699	2699	ok		results/supplementary/supplementary_stats.json	json
+C180	Supplementary	AlphaFold DB's human ITPR1 model is the 2,695-residue Q14643-4 isoform	2695	2695	ok		results/supplementary/supplementary_stats.json	json

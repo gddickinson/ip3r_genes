@@ -293,11 +293,17 @@ def save(fig, stem, formats=("png", "pdf"), dpi: int = 400) -> list[Path]:
     out = []
     for ext in formats:
         path = stem.with_suffix(f".{ext}")
+        # matplotlib stamps the wall clock into a PDF's /CreationDate, so two
+        # runs of the same figure code on the same data differ by two bytes
+        # and every figure is unreproducible for no reason. Dropping the key
+        # changes nothing that is drawn (D24 applied to the file, not the
+        # picture). PNG carries no such field.
+        meta = {"CreationDate": None} if ext == "pdf" else {}
         # A character the figure font lacks is dropped from the output with
         # only a warning, so a label can silently lose glyphs. Promote it.
         with warnings.catch_warnings(record=True) as caught:
             warnings.simplefilter("always")
-            fig.savefig(path, dpi=dpi)
+            fig.savefig(path, dpi=dpi, metadata=meta)
         missing = {str(w.message) for w in caught
                    if "missing from font" in str(w.message)}
         if missing:

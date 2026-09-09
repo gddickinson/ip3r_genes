@@ -3156,3 +3156,109 @@ in `scripts/s14_lib.py` is deliberately empty and the build fails on a
 missing figure, so S24 fills that list and re-runs the chain. The figure
 audit it also owns should read the panels at *printed* size in the assembled
 PDF; S14a read them at source resolution, which is a different check.
+
+---
+
+## 2026-09-08 — S24: supplementary figures, and the figure audit
+
+**Task.** S24 — the six supplementary figures showing the alignments and
+structures the main figures rest on, and a figure-by-figure audit of every
+main and Extended Data figure against its own legend (D11).
+
+### The supplementary figures
+
+Six, all drawn from committed files only, `results/supplementary/figures/`:
+the representative alignment with the columns trimAl kept marked in the
+input's own coordinates; the ligand core and the pore module at residue
+resolution with every pathogenic position's residue printed for all three
+paralogues; the per-paralogue deep alignments the constraint map is computed
+on; the trimmed codon alignment; the constraint map painted on all three
+cryo-EM channels with the selection layer beside it; and every labelled
+variant with its per-element enrichment test. `SUPPLEMENTARY_FIGURES` in
+`scripts/s14_lib.py` is filled and the manuscript now builds at 56 pages with
+180/180 claims re-verified (five new claim rows, C176–C180).
+
+**The two guards ran first and are hard failures (D63).** trimAl writes no
+column map; S6 recovered one with `-colnumbering` and S24 does not trust it,
+so every one of the 1,797 trimmed columns is compared against the input
+column the map names over all 134 sequences. An off-by-one would still map
+every column to a column and would renumber every residue claim downstream
+with no other symptom. The residue joins were checked the same way: 1,780
+variant residues against their own paralogue's table, 2,699 aligned partners
+against the other paralogue's.
+
+**The refusal that shaped Supplementary Fig. 6 (D64).** A structure carries a
+human variant position only if every residue it shares with the human
+per-residue table carries the same amino acid. Human ITPR2 (9YKK) and ITPR3
+(8TKG) pass at 2,168/2,168 and 2,210/2,210. The ITPR1 cryo-EM reference is a
+*rat* structure (736/2,300) and AlphaFold DB's human ITPR1 model is the
+2,695-residue Q14643-4 isoform (479/2,695) — S11's isoform trap arriving in a
+second place — so ITPR1's 55 pathogenic positions are not drawn.
+
+### The audit
+
+Every main and Extended Data figure was opened and read against its legend.
+**26 findings: 16 legend corrections, 10 figure fixes.** All are in
+`results/supplementary/figure_findings.tsv` with the committed table each
+correction was re-derived from. The ones that mattered:
+
+- **Fig. 3** — the legend said four backbone `100/100` labels; the tree draws
+  **five**, and they are the two ancestors of each boxed clade, not the
+  extended clades.
+- **Fig. 2** — the colour key was mis-mapped (four blues, not two; the
+  fragmentary class is the palest blue, not the grey), the class count was
+  wrong (six of thirteen classes, 302 of 309 genomes), the missing `absent`
+  colour was explained by the wrong rule (the ledger *does* hold those four
+  cyclostome cells as absent — their classes have one genome each and are not
+  drawn), and "Aves carry the most non-blue area" is Lepidosauria on the
+  fraction the panel plots.
+- **ED Fig. 7c** — "each of the 51–53 implied losses" for a panel that plots
+  51 to **102**.
+- **ED Fig. 10a** — "the 29-structure panel" for a panel with **30** bars.
+- **ED Fig. 1b** — the bar the legend asks the reader to compare against was
+  hidden behind the bar it was being compared with; now an open outline.
+- **ED Fig. 8d** — two heat maps side by side on independent colour scales,
+  so the one manufactured loss in panel a was drawn as dark as the 45 in
+  panel b.
+- Panel letters were uppercase in Fig. 7 and ED Figs 9, 12 and 13 and
+  lowercase everywhere else; Fig. 6 carried a lone panel letter `a`.
+
+The mechanical half of the audit now runs on every build (`s24_audit.py`):
+every figure has a legend, every legend a figure, and each Extended Data
+figure's legend letters match its panel files. It caught the uppercase Fig. 7
+letters on its first run.
+
+### The reproducibility fix (D65)
+
+matplotlib stamps the wall clock into a PDF's `/CreationDate`, so every
+figure in this project differed from its own rebuild by two bytes and no
+SHA-256 recorded against a figure pdf meant anything. `figstyle.save` now
+drops the field; 12 of 12 S24 files rebuild byte-identically. The eleven
+figure modules touched this session were re-rendered under the fix; the rest
+become reproducible on their next rebuild.
+
+### Testing
+
+17 negative controls run before anything is written, 5 mutation tests, all
+caught. **Two initially passed on the broken code** and both are now recorded
+in the test: the duplicate-column case has to be built where the two input
+columns hold the *same* residues, or the content walk catches it first and
+the one-to-one guard is never exercised; and a byte-identity check on a saved
+figure passes vacuously whenever both saves land in the same second, so the
+property is tested directly instead (the pdf must carry no timestamp).
+
+### Housekeeping
+
+`s24_figs_alignment.py` reached 529 lines and was split
+(`s24_figs_inputs.py`), with `binned` moved to `s24_lib` so the two halves
+cannot bin a profile differently. The reviewer checklist's open item 2
+(supplementary figures not built) is closed; the remaining item is reading
+the panels at printed size in the assembled PDF, which this session did for
+the six new figures and not for the other 56.
+
+### Next
+
+**S14c — the manuscript rewrite pass.** Its dependencies (S14a, S24) are both
+complete. Version the current draft rather than overwriting it; the PIEZO
+project froze v1 when its framing changed and that turned out to be worth
+doing. S21 and S22 remain pending in the analysis block.

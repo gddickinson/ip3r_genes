@@ -64,14 +64,14 @@ def fig1_by_source():
     scopes = ["all scorable loci",
               "loci on a contig that spans the gene (D4)"]
     fig, axes = plt.subplots(2, 1, figsize=(F.W_FULL, 3.3))
-    for ax, scope, letter in zip(axes, scopes, "AB"):
+    for ax, scope, letter in zip(axes, scopes, "ab"):
         rows = [r for r in src if r["scope"] == scope]
         by_state = {r["state"]: r for r in rows}
         fr = [{st: float(by_state[st]["frac_refseq"]) for st in STATES},
               {st: float(by_state[st]["frac_genbank"]) for st in STATES}]
         tot = [int(rows[0]["n_refseq_total"]), int(rows[0]["n_genbank_total"])]
         _stacked(ax, ["RefSeq (GCF_)", "GenBank (GCA_)"], fr, tot)
-        title = ("every scorable locus" if letter == "A"
+        title = ("every scorable locus" if letter == "a"
                  else "the same contrast above D4's contiguity bar")
         F.panel(ax, letter, title)
     axes[0].legend(loc="upper center", bbox_to_anchor=(0.5, 1.62), ncol=5,
@@ -112,7 +112,7 @@ def fig2_calibration():
     ax.set_xlabel("best single annotated model's share of the gene")
     ax.set_ylabel("loci (log)")
     ax.set_xlim(0, 1)
-    F.panel(ax, "A", f"loci the annotation names correctly (n = {len(vals)})")
+    F.panel(ax, "a", f"loci the annotation names correctly (n = {len(vals)})")
     F.despine(ax)
 
     ax = axes[1]
@@ -131,7 +131,7 @@ def fig2_calibration():
     ax.set_ylabel("share of ITPR loci")
     ax.set_xlim(min(xs), max(xs))
     ax.set_ylim(0, 1)
-    F.panel(ax, "B", "what moving the bar changes")
+    F.panel(ax, "b", "what moving the bar changes")
     F.despine(ax)
     fig.tight_layout()
     F.save(fig, L.FIGS / "s18_fig2_calibration")
@@ -152,7 +152,7 @@ def fig3_family_vs_control():
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, 1.45), ncol=3,
               frameon=False, fontsize=F.FS_TICK, handlelength=1.1,
               columnspacing=0.9, handletextpad=0.4)
-    F.panel(ax, "A", "the three paralogs and the sister-family control")
+    F.panel(ax, "a", "the three paralogs and the sister-family control")
 
     ax = axes[1]
     fvc = L.read_tsv(L.OUT / "family_vs_control.tsv")
@@ -186,7 +186,7 @@ def fig3_family_vs_control():
     ax.legend(frameon=False, fontsize=F.FS_TICK, loc="upper right")
     F.hgrid(ax)
     F.despine(ax)
-    F.panel(ax, "B", "is the family worse than its sister?")
+    F.panel(ax, "b", "is the family worse than its sister?")
     fig.tight_layout(rect=(0, 0, 1, 0.92))
     F.save(fig, L.FIGS / "s18_fig3_family_vs_control")
     plt.close(fig)
@@ -235,7 +235,7 @@ def fig4_protein_side():
     ax.set_xlim(0, 1)
     ax.set_ylim(1.6, -0.6)
     ax.set_xlabel(f"share of the {n:,} full-length family protein records")
-    F.panel(ax, "A", "what the protein databases call these records")
+    F.panel(ax, "a", "what the protein databases call these records")
     F.despine(ax, keep=("bottom",))
 
     ax = axes[1]
@@ -261,7 +261,7 @@ def fig4_protein_side():
     ax.set_yticks(list(range(0, max(ys) + 1, 5)))
     F.hgrid(ax)
     F.despine(ax)
-    F.panel(ax, "B", "the 15 proteomes S3 found nothing in")
+    F.panel(ax, "b", "the 15 proteomes S3 found nothing in")
 
     handles, labels = axes[0].get_legend_handles_labels()
     fig.tight_layout(rect=(0, 0.235, 1, 1))

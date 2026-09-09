@@ -19,22 +19,32 @@ Two things live in this repository:
 > `INTERFACE.md` (module map). This README is the state-of-the-project
 > summary and is refreshed at the end of every session.
 
-**Status: S14a complete — the manuscript is assembled; 28 of the 33 ledger
-rows are done.** The submission package builds end to end from the committed
-tables: `python scripts/s14_assemble.py` runs figures → claims → stitch →
-PDF → deposit and exits zero on **7 main + 14 Extended Data figures (56
-panels, none missing), 175/175 load-bearing numbers re-verified against
-their source tables, 16 sections → 13,822 words, a 48-page typeset PDF and
-1,767 deposited files with a checksum each**. The paper is
-*Retained in every vertebrate, lost repeatedly elsewhere: a 503-genome
-census of the IP₃ receptor family*, and its three results are the family's
-repeated loss outside the animals, its complete retention inside the
-vertebrates, and the archive that holds a quarter of it. Seven items still
-need a human, listed in
+**Status: S24 complete — the paper is assembled, illustrated and audited;
+29 of the 33 ledger rows are done.** The submission package builds end to end
+from the committed tables: `python scripts/s14_assemble.py` runs figures →
+claims → stitch → PDF → deposit and exits zero on **7 main + 14 Extended Data
++ 6 Supplementary figures (62 panel files, none missing), 180/180
+load-bearing numbers re-verified against their source tables, 16 sections →
+14,892 words, a 56-page typeset PDF and 1,805 deposited files with a checksum
+each**. The paper is *Retained in every vertebrate, lost repeatedly
+elsewhere: a 503-genome census of the IP₃ receptor family*, and its three
+results are the family's repeated loss outside the animals, its complete
+retention inside the vertebrates, and the archive that holds a quarter of it.
+Six items still need a human, listed in
 [`manuscript/reviewer_checklist.md`](manuscript/reviewer_checklist.md).
 The build has four guards — a missing figure, a missing section, a cited key
 with no reference row, a number that no longer matches its table — and each
 was tested by breaking it on purpose.
+
+**Every figure has now been read against its own legend** (S24, D11): 26
+findings, 16 legend corrections and 10 figure fixes, each recorded in
+[`results/supplementary/figure_findings.tsv`](results/supplementary/figure_findings.tsv)
+with the committed table it was re-derived from. The mechanical half of that
+audit — every figure has a legend, every legend a figure, every Extended Data
+figure's legend letters match its panel files — now runs on every build. And
+`figstyle.save` drops the PDF creation timestamp, so a figure rebuilt from
+the same code on the same data is byte-identical; before this session no
+checksum recorded against a figure pdf meant anything.
 
 **The census itself is enumerated, aligned, dated,
 audited, counted, traced back to the duplications that made it, scored
@@ -483,7 +493,7 @@ One task per session. Full ledger with dependencies and results in
 | S21 | Gene architecture (~58 exons) | ⏳ pending |
 | S22 | Ligand-site evolution | ⏳ pending |
 | S14a | Manuscript assembly | ✅ completed 2026-09-08 |
-| S24 | Supplementary figures + figure audit | ⏳ pending |
+| S24 | Supplementary figures + figure audit | ✅ completed 2026-09-08 |
 | S14c | Manuscript rewrite pass | ⏳ pending |
 | S14b | Deposit + release (Zenodo, public repo, preprint) | ⏳ pending — human-gated |
 
@@ -522,6 +532,33 @@ significance**, and **ITPR2's entire pathogenic record is one variant** —
 which is ascertainment, not tolerance: its gate is identical to the others'
 and its IP3 contacts are the most conserved of the three, with 8 of 10
 invariant across 249 species. All 1,753 records now carry a per-site score.
+
+**S24 — every figure read against its own legend, and the two joins the
+supplementary set exists to let a reader check.** Six supplementary figures,
+all drawn from committed files only. Before any of them was drawn the trimAl
+column map was verified by an **exhaustive walk** — all **1,797** trimmed
+columns against all **134** sequences, because an off-by-one still maps every
+column to a column and would silently renumber every residue claim in the
+paper — and every clinically labelled residue was checked against the residue
+its own paralogue's table holds there (**1,780** variants, **2,699** aligned
+partners). **22 pathogenic positions** fall in the ligand core or the pore
+module and **20 carry the same residue in all three paralogues**. A structure
+may carry a human variant position only if *every* residue it shares with the
+human table matches: human ITPR2 (9YKK) and ITPR3 (8TKG) pass 2,168/2,168 and
+2,210/2,210, the ITPR1 reference is **rat** (736/2,300) and AlphaFold DB's
+human ITPR1 model is the **2,695-residue Q14643-4 isoform** (479/2,695), so
+ITPR1's 55 pathogenic positions are **not placed**. The audit itself:
+**26 findings, 16 legend corrections and 10 figure fixes** — a legend that
+counted four backbone labels where the tree draws five, one that named the
+wrong colour for the fragmentary class, one that said 51–53 implied losses
+for a panel plotting up to 102, one that called a 30-bar panel the
+29-structure panel. None changes a result; all survived a build that
+re-derives 180 numbers from their tables on every run.
+→ [`results/supplementary/report.md`](results/supplementary/report.md)
+
+![S24 labelled positions](results/supplementary/figures/SuppFig2_labelled_positions.png)
+
+![S24 constraint on the channel](results/supplementary/figures/SuppFig5_constraint_on_channel.png)
 
 **S19 — the search missed one gene in seven, and every miss is an
 assembly.** S15b reconstructs no losses anywhere in the 309-genome scope, so

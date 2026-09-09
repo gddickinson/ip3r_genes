@@ -4,16 +4,18 @@
 vertebrates.** (**a**) Complete IP₃ receptor gene models per genome across the
 193 controlled non-vertebrate genomes, grouped by kingdom, with the vertebrate
 paralogue count marked. Most fungal and plant genomes carry none; most
-non-vertebrate metazoan genomes carry one; the long right tail is three
-genomes. (**b**) Every absence clade taken to assembly level, the 22 with the
-largest proteome denominators shown: the light bar is genomes searched, the
+non-vertebrate metazoan genomes carry one; nine genomes carry more than three
+and four carry six or more, the largest being *Macrostomum lignano* at 18. (**b**) Every absence clade taken to assembly level, the 22 with the
+largest proteome denominators shown: the open outline is genomes searched, the
 grey bar is genomes in which a measured positive control recovered a
 comparably long, deeply conserved gene, and the blue bar — invisible because
-it is zero everywhere — is genomes with an IP₃ receptor. The grey bar reaching
-the light bar in every row is the result. (**c**) All 99 plant and fungal
+it is zero everywhere — is genomes with an IP₃ receptor. The grey bar filling
+the outline in every row is the result. (**c**) All 99 plant and fungal
 records chased individually: verdict per record, and each record's identity to
 its nearest protein outside its own kingdom, sorted. Every record sits between
-20 % and 46 %, far below the 95 % that marks an assembly contaminant.
+19.9 % and 45.8 %, far below the 95 % that marks an assembly contaminant and
+below the 80 % that would flag one as a cross-kingdom outlier; both lines are
+drawn.
 
 **Extended Data Fig. 2 | The vertebrate genomic sweep and its contiguity
 confounder.** (**a**) What the sweep found for each paralogue and for the
@@ -24,12 +26,14 @@ of cells are found above the bar against 57–70 % below it, and below the bar
 the ordering is *ITPR3* > *ITPR1* > *ITPR2*, which is the order of their gene
 spans. (**c**) Loci found per genome for each paralogue, with the ryanodine
 receptors beside them: the *ITPR1* second copy in the ray-finned fish is the
-only substantial multi-copy signal in the family, against three to six copies
-for the control.
+only substantial multi-copy signal in the family, against two to six copies
+for the control, whose three genes the sweep most often recovers as two or
+three loci.
 
 **Extended Data Fig. 3 | The representative alignment every downstream result
 stands on.** (**a**) Per-column conservation of the 1,797-column trimmed
-alignment with human *ITPR1*'s Pfam architecture mapped through the alignment
+alignment, drawn as a rolling mean of 25 columns with the alignment-wide mean
+dashed, and human *ITPR1*'s Pfam architecture mapped through the alignment
 rather than scaled onto it, the domains coloured by whether they are shared
 with the ryanodine receptors or are the generic pore. (**b**) All-against-all
 identity over mutually covered columns for the 134 representatives, ordered
@@ -82,16 +86,20 @@ recomputed at seven coverage bars.
 
 **Extended Data Fig. 7 | Dating the duplications that made *ITPR1*, *ITPR2*
 and *ITPR3*.** (**a**) The hand-curated, literature-calibrated species tree on
-a linear time axis with each calibrated node's published age spread drawn as a
-band, and each reconciliation variant's duplication placement marked at the
-node it maps to. (**b**) The full matrix — five topologies by three tip
+a linear time axis, with each reconciliation variant's duplication placement
+marked at the node it maps to and the published age spread drawn as a band on
+the nodes a placement uses. Every internal node carries a calibration; only
+those two are banded, because a band on all 29 would obscure the tree. (**b**) The full matrix — five topologies by three tip
 variants — showing the deepest paralogue duplication in each cell, and the
 distribution of total events over all 112 rootings of the vertebrate subtree
 with the outgroup rooting and the minimum-event rooting marked. (**c**) What
-each of the 51–53 implied losses turns out to be when asked of the genomes:
-none is corroborated. (**d**) Root-to-tip distances for all 57 vertebrate
-tips with the six cyclostome loci marked, and each of those loci beside the
-independent flanking-gene call for it.
+each implied loss turns out to be when asked of the genomes — 51 or 53 in the
+ten variants that keep the tree's own resolution, 83 and 102 in the two that
+collapse its unsupported nodes: none is corroborated. (**d**) Root-to-tip distances for all 57 vertebrate
+tips with the six cyclostome loci marked — two of them 0.0004 substitutions per
+site apart and drawn as one line — and each of those loci beside the
+independent flanking-gene call for it: four fall inside their own null and two
+have too few informative neighbours to call at all.
 
 **Extended Data Fig. 8 | The loss instrument, and what it takes to
 manufacture a loss.** (**a**) The calibration: how much of a reference protein
@@ -99,7 +107,9 @@ is reassembled outside every placed locus, for candidate genes, for paralogues
 that are themselves shattered in the same genome, and for the decoy — a
 paralogue whose gene the aligner has already placed elsewhere in that genome.
 The two informative populations separate completely; the bar sits at the
-midpoint of the gap and both gap edges are committed. (**b**) Lesion density
+midpoint of the gap and both gap edges are committed. Beside it, how far each
+undecided cell's reference is spread across contigs, which is what that
+coverage is a coverage of. (**b**) Lesion density
 against bait identity and against contig N50, showing that the confounder is
 the alignment and not the assembly, and the within-genome paired sign tests
 that follow from it. (**c**) Why the synteny route could not be used: 273 of
@@ -121,12 +131,15 @@ they are tested against and are local optima, not results — one per stem, at a
 different starting ω each time.
 
 **Extended Data Fig. 10 | Predicted and experimental structures across the
-family.** (**a**) The 29-structure panel: sequence length and resolved or
-modelled residues for every reference, state-panel member, negative control
-and predicted model. (**b**) The structural family call: best TM-score against
+family.** (**a**) The panel: sequence length and resolved or
+modelled residues for every reference, state-panel member, negative control and
+predicted model. Twenty-nine of the thirty are long enough to score; the
+thirtieth is the record AlphaFold DB serves for human *ITPR2*, a 181-residue
+isoform, drawn here because that is the coverage result. (**b**) The structural family call: best TM-score against
 an IP₃ receptor reference against best against a ryanodine receptor reference,
 with TM-align's own random and same-fold bars drawn rather than described;
-open symbols are declined for falling below the fold bar. Beside it, what a
+open symbols are declined for falling below the fold bar, and marker shape is
+the role: triangle experimental, circle predicted, square control. Beside it, what a
 TM-score means on this panel — conformation is worth 0.22, and no control pair
 reaches the fold bar. (**c**) Mean AlphaFold confidence per domain: the
 IP₃-binding core is the best-modelled domain and the pore the worst. (**d**)
@@ -136,8 +149,9 @@ subunit is almost entirely unmodelled.
 
 **Extended Data Fig. 11 | Constraint by element, at the ligand site, and as a
 variant classifier.** (**a**) Per-element constraint in all three paralogues on
-a divergence metric and on a composition-free one, with each protein's own
-linker mean drawn; the two metrics agree, including on the luminal loop.
+a divergence metric and on a composition-free one, with the linker control's
+mean over the three proteins drawn as one dashed line per panel; the two
+metrics agree, including on the luminal loop.
 (**b**) The ten measured IP₃ contacts, the two filter-lining residues and the
 two gate-lining residues against two controls — the whole protein and the rest
 of their own elements — and, beside it, between-paralogue identity per
@@ -182,9 +196,10 @@ the residual rate at every possible floor, with the 5 % line drawn; and what
 each floor costs in genomes retained. (**b**) The bait-panel ablation as a
 change from the full 38-bait panel on a symmetric-logarithmic axis, and the
 recall of a single bait against its identity to the target. (**c**) Where a
-profile HMM earns its place — almost entirely below 1,000 residues, except in
-the protists — and the fraction of demonstrated genes that no protein database
-holds. (**d**) The kill criterion written for iteration drift, measured: the
+profile HMM earns its place — almost entirely below 1,000 residues in the two
+well-sampled groups, and at every length in the protists; the fungal and plant
+panels above 1,000 residues rest on a dozen to two dozen records each — and the
+fraction of demonstrated genes that no protein database holds. (**d**) The kill criterion written for iteration drift, measured: the
 sister-family share it acts on, the off-family share that actually moves, and
 each rule scored as a classifier of the outcome over seven runs.
 

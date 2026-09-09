@@ -244,6 +244,14 @@ def plant_fungal_chase(stem: Path) -> None:
     ax.text(CONTAMINANT_PIDENT - 1.5, len(vals) * 0.5,
             f"contamination call\n{CONTAMINANT_PIDENT:.0f} %", ha="right",
             fontsize=fs.FS_NOTE, color=fs.STATUS["absent"])
+    # The second line was drawn but never named, so a reader had a threshold
+    # in the picture with nothing to attach it to (found by the S24 figure
+    # audit). It is the flag, not a call: a record between the two lines is
+    # reported as a cross-kingdom outlier and left in the census.
+    ax.text(OUTLIER_PIDENT - 1.5, len(vals) * 0.14,
+            f"flagged as a cross-kingdom\noutlier, not called: "
+            f"{OUTLIER_PIDENT:.0f} %", ha="right",
+            fontsize=fs.FS_NOTE, color=fs.MUTED)
     ax.set_xlabel("identity to the nearest outside-kingdom protein (%)",
                   fontsize=fs.FS_LABEL)
     ax.set_ylabel("records, sorted", fontsize=fs.FS_LABEL)
