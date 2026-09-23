@@ -56,6 +56,11 @@ MIN_BRACKET = 5          # tips before a non-core run earns a bracket label
 #: Genera of the jawless vertebrates. Used only to name the unplaced run:
 #: if every vertebrate tip left outside the three clades is a hagfish or a
 #: lamprey, the bracket says so, and otherwise it keeps the generic label.
+#: Groups labelled at every run rather than once. The vertebrate tips outside
+#: the three clades sit in two places (a basal clade and a pair beside
+#: ITPR2 + ITPR3), and a reader seeing the second, unlabelled pair between two
+#: boxes cannot tell what it is; each run carries its own count.
+LABEL_EVERY_RUN = {"vertebrate_basal"}
 CYCLOSTOME_GENERA = {"Myxine", "Eptatretus", "Petromyzon", "Lampetra",
                      "Entosphenus", "Lethenteron", "Geotria", "Mordacia"}
 
@@ -358,7 +363,8 @@ def main() -> int:
         if n_run >= 2:
             ax.plot([x_box_r, x_box_r], [y0, y1], color=fs.FAINT, lw=1.0,
                     solid_capstyle="butt", zorder=3)
-        if label_run[grp] != (grp, i0, i1):
+        every = grp in LABEL_EVERY_RUN
+        if label_run[grp] != (grp, i0, i1) and not every:
             continue
         name = fs.GROUP_LABEL.get(grp, grp)
         if grp == "vertebrate_basal" and all(
@@ -366,11 +372,20 @@ def main() -> int:
                 .split()[0] in CYCLOSTOME_GENERA
                 for tt in tips if grp_of(tt) == grp):
             name = "hagfish, lamprey"
-        text = f"{name}\nn = {total[grp]}"
         yc = (y0 + y1) / 2
-        t = ax.text(x_box_lab, yc, text, rotation=90, ha="left",
-                    va="center", fontsize=fs.FS_NOTE, color=fs.MUTED,
-                    zorder=6, multialignment="center", linespacing=1.2)
+        if every:
+            # A run of two to four tips is far shorter than a rotated
+            # label, which then spills across the neighbouring boxes and
+            # reads as belonging to them. Set horizontally, one line, beside
+            # its own bracket.
+            t = ax.text(x_box_lab, yc, f"{name} (n = {n_run})",
+                        ha="left", va="center", fontsize=fs.FS_NOTE,
+                        color=fs.MUTED, zorder=6)
+        else:
+            t = ax.text(x_box_lab, yc, f"{name}\nn = {total[grp]}",
+                        rotation=90, ha="left", va="center",
+                        fontsize=fs.FS_NOTE, color=fs.MUTED, zorder=6,
+                        multialignment="center", linespacing=1.2)
         ly0, ly1, lx0, lx1 = _bbox(t)
         gap, width = xmax * 0.012, max(lx1 - lx0, xmax * 0.02)
         x = x_box_lab

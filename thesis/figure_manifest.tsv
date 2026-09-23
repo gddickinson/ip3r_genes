@@ -41,7 +41,7 @@ chapter	number	slug	source	formats	width_in	height_in	caption_stub	sha256_png
 6	6.4	msa_group_identity	results/msa_v2/figures/msa_group_identity	png,pdf	6.51	2.59	Identity within and between groups	1960bb247c638cdae52a720247d58df893e02a9df40b28dd2b3aace740d8c39f
 6	6.2	msa_coverage	results/msa_v2/figures/msa_coverage	png,pdf	5.55	2.54	Per-sequence coverage of the alignment	e03457c239767e89584826c3893f23a2b4b77598f87802767de5b82f9da07274
 6	6.1	supp_representative_alignment	results/supplementary/figures/SuppFig1_representative_alignment	png,pdf	5.41	5.95	The alignment, and the columns the tree actually saw	cfe246904a031aa8e8d04f790310e899a5e13dcba16ec71e9ef1d3f3101d3444
-6	6.6	tree_ml_rooted	results/phylogeny/figures/tree_ml_rooted	png,pdf	8.35	6.92	The rooted maximum-likelihood phylogram	6be93b3739f1a577866d8455e80473d707b216e96270b179867dae96c887c7f9
+6	6.6	tree_ml_rooted	results/phylogeny/figures/tree_ml_rooted	png,pdf	8.35	6.92	The rooted maximum-likelihood phylogram	b77bd5a4cfbb918a5aa7aed01d8ce4aab0840afd10b5883787c303ee649bb470
 6	6.8	sister_au	results/phylogeny/figures/sister_au	png,pdf	6.10	2.96	The AU test on the three sister hypotheses	db38054eebde52e26199c8b01ecb4cca8b18e0595f0686baa0b61a3a16aef581
 6	6.9	support_profile	results/phylogeny/figures/support_profile	png,pdf	4.85	2.77	Node support as a joint condition, not two marginals	6a00dacb28c01cf6d97e06d5b69f2c5f5621c0203a1974375b74bea1e825f116
 6	6.7	paralog_placement	results/phylogeny/figures/paralog_placement	png,pdf	7.38	4.40	Where the tree places each tip against its census label	336a9c3c1457a70d772943e21344ceee2a900b66b99a57727f5deca9d04df8d9

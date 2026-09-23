@@ -1,6 +1,6 @@
 kind	number	slug	figure	format	width_in	height_in	source	deposited_as	bytes	sha256	caption_stub
-main	1	tree	Fig1_tree	png	8.350	6.915	results/phylogeny/figures/tree_ml_rooted.png	figures/Fig1_tree.png	1047241	6be93b3739f1a577866d8455e80473d707b216e96270b179867dae96c887c7f9	The family tree rooted on the ryanodine receptors
-main	1	tree	Fig1_tree	pdf			results/phylogeny/figures/tree_ml_rooted.pdf	figures/Fig1_tree.pdf	83868	fc6f0ebc5b817080d13fe4dd3bb2d950c3f5412a8537b70c1c3f0b6fa7f56b1a	The family tree rooted on the ryanodine receptors
+main	1	tree	Fig1_tree	png	8.350	6.915	results/phylogeny/figures/tree_ml_rooted.png	figures/Fig1_tree.png	1053124	b77bd5a4cfbb918a5aa7aed01d8ce4aab0840afd10b5883787c303ee649bb470	The family tree rooted on the ryanodine receptors
+main	1	tree	Fig1_tree	pdf			results/phylogeny/figures/tree_ml_rooted.pdf	figures/Fig1_tree.pdf	83954	4d4aaf6500784f6d0ad37e7ecb5ff8a90c1c9f159567d29e0502b1bc2afccdd3	The family tree rooted on the ryanodine receptors
 main	2	sister	Fig2_sister	png	6.098	2.963	results/phylogeny/figures/sister_au.png	figures/Fig2_sister.png	158553	db38054eebde52e26199c8b01ecb4cca8b18e0595f0686baa0b61a3a16aef581	The sister-pair test
 main	2	sister	Fig2_sister	pdf			results/phylogeny/figures/sister_au.pdf	figures/Fig2_sister.pdf	17788	52004f705bf00cf6c0f0a27aa783688772f7cb39df541fd98b3d87282d268ba3	The sister-pair test
 main	4	paralogon	Fig4_paralogon	png	6.515	2.415	results/duplication/figures/s16_paralogon.png	figures/Fig4_paralogon.png	155752	59e76cb1df5623c1b3e36777450358f7f96e817aad15b276feac4c15fdaf4818	The 2R paralogon test
