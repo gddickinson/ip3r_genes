@@ -195,7 +195,8 @@ because a position conserved across 500 million years of paralogue divergence
 and across the eukaryotes discriminates pathogenic from benign better than a
 position merely invariant across 260 vertebrate orthologues of the same gene.
 A resource for this family should quote the family-wide layer, and the
-instrument this chapter was built around is the second best of four.
+instrument this chapter was built around ranks third of four, behind both
+layers that trade depth for breadth.
 
 **The whole-protein control is why the first column cannot be read alone.**
 Every layer also separates pathogenic positions from the average residue, but

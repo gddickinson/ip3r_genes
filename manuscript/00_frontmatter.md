@@ -37,9 +37,9 @@ cells in 309 vertebrate genomes, zero reach the absence state, and in the
 gene-equivalents. Dollo parsimony places no loss anywhere on the tree, and
 we report instead the settings that would manufacture one. Third, the
 family's public record is much worse than the family: 55.0 % of full-length
-*ITPR* protein records carry no usable gene symbol, and 940 of 1,232
-demonstrated genes (76.3 %) cannot be reached by any protein-database
-search.
+*ITPR* protein records carry no usable gene symbol, and 744 of the 923
+*ITPR* genes demonstrated in genomes (80.6 %) cannot be reached by any
+protein-database search.
 
 The duplications are dated and their asymmetry explained: *ITPR2* and
 *ITPR3* are sisters (approximately unbiased test p = 0.476, with both

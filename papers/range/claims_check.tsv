@@ -1,0 +1,127 @@
+id	section	claim	expected	found	verdict	note	source	op
+RA01	range	recall of the family call is 24 of 25	24	24	ok		results/benchmark_controls/summary.json	json
+RA02	range	25 positive controls	25	25	ok		results/benchmark_controls/summary.json	json
+RA03	range	specificity is 31 of 31	31	31	ok		results/benchmark_controls/summary.json	json
+RA04	range	all 6 ryanodine receptor decoys are rejected	6	6	ok		results/benchmark_controls/summary.json	json
+RA05	range	Drosophila Itpr fell 0.008 short of the breadth identity	short by 0.008	short by 0.008	ok		results/benchmark_controls/report.md	grep
+RA06	range	the architecture rule agrees with 2,479 of 2,479 IP3R symbols	2479	2479	ok		results/census_v2/rule_audit.tsv	cell
+RA07	range	and with 2,492 of 2,492 RyR symbols	2492	2492	ok		results/census_v2/rule_audit.tsv	cell
+RA08	range	with seeds removed the profiles agree on 11,875 records	11875	11875	ok		results/hmm_sweep/calibration_summary.json	json
+RA09	range	and disagree on 1	1	1	ok		results/hmm_sweep/calibration_summary.json	json
+RA10	range	the profiles call 2,074 architecture-unassigned records ITPR	2074	2074	ok		results/hmm_sweep/calibration_summary.json	json
+RA11	range	and 240 RyR	240	240	ok		results/hmm_sweep/calibration_summary.json	json
+RA12	range	three seeds intersect on 4,785 family records	4785	4785	ok		results/methods/seed_effect.tsv	cell
+RA13	range	and differ by at most 162	162	162	ok		results/methods/seed_effect.tsv	cell
+RA14	range	the least-drifted drifted run sits at an off-family share of 0.81	0.81	0.8114	ok		results/methods/drift_outcome.tsv	cell
+RA15	range	the most off-family clean run sits at 0.34	0.34	0.3367	ok		results/methods/drift_outcome.tsv	cell
+RA16	range	the sister-share kill rule fires on none of the drifted runs	0	0	ok		results/methods/kill_criterion_validation.tsv	cell
+RA17	range	the round ceiling catches all 3 drifted runs	3	3	ok		results/methods/kill_criterion_validation.tsv	cell
+RA18	range	the off-family rule catches 3 of 3 drifted runs	3	3	ok		results/methods/kill_criterion_validation.tsv	cell
+RA19	range	and clears 4 of 4 clean ones	4	4	ok		results/methods/kill_criterion_validation.tsv	cell
+RA20	range	28,137 targets were scored by at least one profile	28,137 targets were scored by at least one profile	28,137 targets were scored by at least one profile	ok		results/s20_sweep/report.md	grep
+RA21	range	2,769 by both above the floor, 1 inside the no-call band	of those **1/2,769 (0%) fall inside	of those **1/2,769 (0%) fall inside	ok		results/s20_sweep/report.md	grep
+RA22	range	45 of the 135 clades swept carry a call	**45 clades of the 135 swept carry an ITPR call**	**45 clades of the 135 swept carry an ITPR call**	ok		results/s20_sweep/report.md	grep
+RA23	range	292 of 311 arthropod proteomes	| Arthropoda | 311 | 292/311	| Arthropoda | 311 | 292/311	ok		results/s20_sweep/report.md	grep
+RA24	range	106 of 110 nematode proteomes	| Nematoda | 110 | 106/110	| Nematoda | 110 | 106/110	ok		results/s20_sweep/report.md	grep
+RA25	range	15 of 48 Chlorophyta proteomes	| Chlorophyta | 48 | 15/48	| Chlorophyta | 48 | 15/48	ok		results/s20_sweep/report.md	grep
+RA26	range	18 of 34 Mucoromycota proteomes	| Mucoromycota | 34 | 18/34	| Mucoromycota | 34 | 18/34	ok		results/s20_sweep/report.md	grep
+RA27	range	6 of 16 Chytridiomycota proteomes	| Chytridiomycota | 16 | 6/16	| Chytridiomycota | 16 | 6/16	ok		results/s20_sweep/report.md	grep
+RA28	range	0 of 634 archaeal proteomes	| Archaea | 634 | 0/634	| Archaea | 634 | 0/634	ok		results/s20_sweep/report.md	grep
+RA29	range	3,537 bacterial proteomes, one per genus	| bacteria_genus | 3,537 |	| bacteria_genus | 3,537 |	ok		results/s20_sweep/report.md	grep
+RA30	range	a non-seed full-length RyR in Salpingoeca rosetta	| F2UC37 | *Salpingoeca rosetta* | 5340 | 1387.2 | 59% | 65% | no |	| F2UC37 | *Salpingoeca rosetta* | 5340 | 1387.2 | 59% | 65% | no |	ok		results/s20_sweep/report.md	grep
+RA31	range	architecture-level RyR in 2 non-vertebrate proteomes	The 2 architecture-level RYR call(s)	The 2 architecture-level RYR call(s)	ok		results/s20_sweep/report.md	grep
+RA32	range	MIR returns 633 matches in land plants and 4,376 in Dikarya	returns 633 substantial matches in land plants, 4,376 substantial matches in Dikarya	returns 633 substantial matches in land plants, 4,376 substantial matches in Dikarya	ok		results/s20_sweep/report.md	grep
+RA33	range	PF08709: none in land plants against 26 in Chlorophyta	0 substantial PF08709 match(es), against 26 in	0 substantial PF08709 match(es), against 26 in	ok		results/s20_sweep/report.md	grep
+RA34	range	PF08709: none in Dikarya against 16 in Mucoromycota	0 substantial PF08709 match(es), against 16 in	0 substantial PF08709 match(es), against 16 in	ok		results/s20_sweep/report.md	grep
+RA35	range	iteration added 9 targets the single pass never reported	9 target(s) entered an accepted model that the single profile pass never reported	9 target(s) entered an accepted model that the single profile pass never reported	ok		results/s20_sweep/report.md	grep
+RA36	range	the two in an empty lineage are mannosyltransferases	**2 of them sit in a lineage this task calls empty**	**2 of them sit in a lineage this task calls empty**	ok		results/s20_sweep/report.md	grep
+RA37	range	64 plant records were chased	64	64	ok		results/s20_sweep/plant_fungal_verdicts.tsv	count
+RA38	range	22 plant records are real genes	22	22	ok		results/s20_sweep/plant_fungal_verdicts.tsv	count
+RA39	range	25 fungal records are real genes	25	25	ok		results/s20_sweep/plant_fungal_verdicts.tsv	count
+RA40	range	the lowest plant cross-kingdom identity is 19.9 %	19.9	19.9	ok		results/s20_sweep/plant_fungal_verdicts.tsv	cell
+RA41	range	the highest surviving plant identity is 39.9 %	39.9	39.9	ok		results/s20_sweep/plant_fungal_verdicts.tsv	cell
+RA42	range	the highest surviving fungal identity is 33.5 %	33.5	33.5	ok		results/s20_sweep/plant_fungal_verdicts.tsv	cell
+RA43	range	no record of the 99 exceeds 45.8 %	45.8	45.8	ok		results/s20_sweep/plant_fungal_verdicts.tsv	cell
+RA44	range	the genome scope is 100.4 Gbp	100.4	100.4	ok		results/s23_scope/manifest_stats.json	json
+RA45	range	drawn from 24,596 eukaryotic reference assemblies	24596	24596	ok		results/s23_scope/manifest_stats.json	json
+RA46	range	less 6,216 vertebrate ones	6216	6216	ok		results/s23_scope/manifest_stats.json	json
+RA47	range	three absences no summary had named	Bacillariophyta 0/16, Rhodophyta 0/12, and **Cestoda 0/11	Bacillariophyta 0/16, Rhodophyta 0/12, and **Cestoda 0/11	ok		results/s23_scope/report.md	grep
+RA48	range	myosin head in 36 of 36 Aconoidasida proteomes	36	36	ok		results/s23_baits/control_profile_choice.tsv	cell
+RA49	range	and 23 of 23 Conoidasida	23	23	ok		results/s23_baits/control_profile_choice.tsv	cell
+RA50	range	SMC N-terminal domain in 12 of 12 red algal proteomes	12	12	ok		results/s23_baits/control_profile_choice.tsv	cell
+RA51	range	the panel carries 108 baits	108	108	ok		results/s23_baits/bait_build_stats.json	json
+RA52	range	37 of them IP3 receptors	37	37	ok		results/s23_baits/bait_build_stats.json	json
+RA53	range	16 ryanodine receptors	16	16	ok		results/s23_baits/bait_build_stats.json	json
+RA54	range	55 clade controls	55	55	ok		results/s23_baits/bait_build_stats.json	json
+RA55	range	all 56 control clades are filled	56	56	ok		results/s23_baits/bait_build_stats.json	json
+RA56	range	115 genomes are controlled across a kingdom boundary	115	115	ok		results/s23_scope/ledger_stats.json	json
+RA57	range	77 are controlled by the receptor itself	77	77	ok		results/s23_scope/ledger_stats.json	json
+RA58	range	Ascomycota: none in 31 controlled assemblies	31	31	ok		results/s23_scope/absence_at_genome.tsv	cell
+RA59	range	Streptophyta: none in 25	25	25	ok		results/s23_scope/absence_at_genome.tsv	cell
+RA60	range	Basidiomycota: none in 17	17	17	ok		results/s23_scope/absence_at_genome.tsv	cell
+RA61	range	two land-plant assemblies carry only tblastn traces	2	2	ok		results/s23_scope/absence_at_genome.tsv	cell
+RA62	range	sixteen gene spans were measured	16	16	ok		results/s23_baits/span_calibration.json	json
+RA63	range	the shortest span is 3,739 bp	3739	3739	ok		results/s23_baits/span_calibration.json	json
+RA64	range	the longest 324,840 bp	324840	324840	ok		results/s23_baits/span_calibration.json	json
+RA65	range	the median 19,435 bp	19435	19435	ok		results/s23_baits/span_calibration.json	json
+RA66	range	Stentor coeruleus carries 13	13	13	ok		results/s23_scope/copy_number_ledger.tsv	cell
+RA71	range	Dysidea avara carries 8	8	8	ok		results/s23_scope/copy_number_ledger.tsv	cell
+RA72	range	Cymbomonas tetramitiformis carries three gene models	3	3	ok		results/s23_scope/copy_number_ledger.tsv	cell
+RA67	range	the IP3-binding core is the best-modelled domain at 83.9	83.9	83.88	ok		results/structures/plddt_summary.tsv	cell
+RA68	range	the pore the worst of the named domains at 71.0	71.0	71.01	ok		results/structures/plddt_summary.tsv	cell
+RA69	range	against 69.5 outside annotated domains	69.5	69.5	ok		results/structures/plddt_summary.tsv	cell
+RA70	range	AlphaFold DB models 20.9 % of the census's protein records	**20.9 % of the census's UniProt-shaped ITPR records have a usable predicted model**	**20.9 % of the census's UniProt-shaped ITPR records have a usable predicted model**	ok		results/structures/report.md	grep
+RA73	range	none of 81 control pairs reaches the same-fold bar	**0 of 81** control pairs reach the 0.5 same-fold bar	**0 of 81** control pairs reach the 0.5 same-fold bar	ok		results/structures/report.md	grep
+RA74	range	same paralogue, different state: median 0.78; different IP3Rs 0.43	score a median **0.78**; two different IP3 receptors score **0.43**	score a median **0.78**; two different IP3 receptors score **0.43**	ok		results/structures/report.md	grep
+RA75	range	2 of 7 deep models reach the same-fold bar	**2 of 7** deep models reach the 0.5 same-fold bar	**2 of 7** deep models reach the 0.5 same-fold bar	ok		results/structures/report.md	grep
+C02	range	the non-vertebrate genome scope is 194 assemblies	194	194	ok		results/s23_scope/genome_manifest_s23.tsv	nunique
+C03	range	6,928 non-vertebrate reference proteomes were swept	6928	6928	ok		results/s20_sweep/proteome_presence.tsv	count
+C04	range,archive	763 vertebrate reference proteomes were swept	763	763	ok		results/hmm_sweep/proteome_db_stats.json	json
+C05	range	the vertebrate proteome sweep covered 14,414,821 proteins	14414821	14414821	ok		results/hmm_sweep/proteome_db_stats.json	json
+C06	range	the non-vertebrate sweep covered 63,144,898 proteins	6,928 reference proteomes, 63,144,898 proteins	6,928 reference proteomes, 63,144,898 proteins	ok		results/s20_sweep/report.md	grep
+T13	range	the enumerated space is 15,421 proteins	15421	15421	ok		results/census_v2/census_v2.tsv	count
+T14	range	across 1,488 taxa	1488	1488	ok		results/census_v2/census_v2.tsv	nunique
+C07	range,origin	the census holds 18,065 records	18065	18065	ok		results/census_v6/census_v6_stats.json	json
+C08	range	8,990 census records are called IP3 receptor	8990	8990	ok		results/census_v6/census_v6.tsv	count
+C09	range	the IP3 receptor census spans 1,402 taxa	1402	1402	ok		results/census_v6/census_v6.tsv	nunique
+C10	range	662 of 6,928 non-vertebrate proteomes carry an ITPR call	**662/6,928	**662/6,928	ok		results/s20_sweep/report.md	grep
+C11	range	Streptophyta: 384 proteomes swept, 0 genomes with an ITPR	384	384	ok		results/s23_scope/absence_at_genome.tsv	cell
+C12	range	Ascomycota: 1,034 proteomes swept	1034	1034	ok		results/s23_scope/absence_at_genome.tsv	cell
+C13	range	Basidiomycota: 319 proteomes swept	319	319	ok		results/s23_scope/absence_at_genome.tsv	cell
+C14	range	Apicomplexa: 60 proteomes swept	60	60	ok		results/s23_scope/absence_at_genome.tsv	cell
+C15	range	35 clade-level absences were taken to assembly level	35	35	ok		results/s23_scope/absence_at_genome.tsv	count
+C16	range	all 35 absences hold at assembly level	35	35	ok		results/s23_scope/absence_at_genome.tsv	count
+C17	range	no genome in the non-vertebrate sweep is uncontrolled	0	0	ok		results/s23_scope/ledger_stats.json	json
+C18	range	117 of the 194 genomes carry no IP3 receptor	117	117	ok		results/s23_scope/ledger_stats.json	json
+C19	range	43 of the 194 genomes carry exactly one	43	43	ok		results/s23_scope/ledger_stats.json	json
+C20	range	Macrostomum lignano carries 18 IP3 receptor genes	1	1	ok		results/s23_scope/ledger_stats.json	json
+C21	range	99 plant and fungal records were chased individually	99	99	ok		results/s20_sweep/plant_fungal_verdicts.tsv	count
+C22	range	47 of them are real genes	47	47	ok		results/s20_sweep/plant_fungal_verdicts.tsv	count
+C23	range	52 of them are fragments	52	52	ok		results/s20_sweep/plant_fungal_verdicts.tsv	count
+C24	range	none of them is a contamination suspect	0	0	ok		results/s20_sweep/plant_fungal_verdicts.tsv	count
+C138	range	9 of the 134 representatives have a usable model	9	9	ok		results/structures/afdb_coverage_summary.tsv	cell
+C139	range	13 of 5,861 full-length census records do (0.2 %)	**13** (0.2 %) have a usable model	**13** (0.2 %) have a usable model	ok		results/structures/report.md	grep
+C140	range	20 of 20 callable structures agree with the census call	(20/20), and no negative control is called at all (0/3)	(20/20), and no negative control is called at all (0/3)	ok		results/structures/report.md	grep
+T15	range	PF08709 advertises 12,339 records	12339	12339	ok		results/census_v2/interpro_counts.tsv	cell
+T16	range	and serves 12,507	12507	12507	ok		results/census_v2/interpro_counts.tsv	cell
+T17	range	PF08454 serves 11,890, 176 fewer than advertised	11890	11890	ok		results/census_v2/interpro_counts.tsv	cell
+T18	range	2,914 records do not carry PF08709	2914	2914	ok		results/census_v2/seed_contribution.tsv	cell
+T19	range	758 of those are called IP3 receptor	758	758	ok		results/census_v2/seed_contribution.tsv	cell
+T20	range	across 385 taxa	385	385	ok		results/census_v2/seed_contribution.tsv	cell
+T21	range	10,256 records carry all three seed signatures	10256	10256	ok		results/census_v2/seed_contribution.tsv	cell
+T22	range	the architecture call gives 6,433 IP3 receptors	6433	6433	ok		results/census_v2/census_v2.tsv	count
+T23	range	6,807 ryanodine receptors	6807	6807	ok		results/census_v2/census_v2.tsv	count
+T24	range	2,181 records satisfy neither positive test	2181	2181	ok		results/census_v2/census_v2.tsv	count
+T25	range	the IP3 receptor profile is built from 34 seeds	34	34	ok		results/hmm_sweep/seed_build_stats.json	json
+T26	range	the ryanodine profile from 22	22	22	ok		results/hmm_sweep/seed_build_stats.json	json
+T27	range	the IP3 receptor profile has 2,684 match states	2684	2684	ok		results/hmm_sweep/seed_build_stats.json	json
+T29	range	12,609 hits are declined as module-only matches	12609	12609	ok		results/census_v3/census_v3_stats.json	json
+T30	range	618 sweep hits are absent from the enumeration	618	618	ok		results/census_v3/census_v3_stats.json	json
+T31	range	188 of them are called IP3 receptor	188	188	ok		results/census_v3/census_v3_stats.json	json
+T32	range	census v3 holds 16,039 records	16039	16039	ok		results/census_v3/census_v3_stats.json	json
+T33	range	8,000 of them are called IP3 receptor	8000	8000	ok		results/census_v3/census_v3_stats.json	json
+T34	range	7,432 ryanodine receptor	7432	7432	ok		results/census_v3/census_v3_stats.json	json
+T35	range	605 unassigned	605	605	ok		results/census_v3/census_v3_stats.json	json
+T36	range	2,787 records the profiles failed to find were looked up	2787	2787	ok		results/census_v3/census_v3_stats.json	json
+T37	range	none of them was in the database and missed	0	0	ok		results/census_v3/census_v3_stats.json	json
+T38	range	15 of 763 proteomes carry no family record	15	15	ok		results/census_v3/census_v3_stats.json	json

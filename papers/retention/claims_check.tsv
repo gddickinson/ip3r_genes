@@ -1,0 +1,97 @@
+id	section	claim	expected	found	verdict	note	source	op
+RE01	retention	161 order representatives enter the scope	161	161	ok		results/genome_manifest.tsv	count
+RE02	retention	169 margin species enter the scope	the union is **169 species**	the union is **169 species**	ok		results/genome_manifest_notes.md	grep
+RE03	retention	the bait panel holds 38 baits	38	38	ok		results/s5_baits/bait_build_stats.json	json
+RE04	retention	30 of them are IP3 receptors	30	30	ok		results/s5_baits/bait_build_stats.json	json
+RE05	retention	8 are ryanodine receptors	8	8	ok		results/s5_baits/bait_build_stats.json	json
+RE06	retention	the panel totals 121,294 residues	121294	121294	ok		results/s5_baits/bait_build_stats.json	json
+RE07	retention	the widest IP3R intron is 152,216 bp (human ITPR1)	152216	152216	ok		results/s5_baits/intron_calibration.tsv	cell
+RE08	retention	the widest RyR intron is 227,927 bp (human RYR2)	227927	227927	ok		results/s5_baits/intron_calibration.tsv	cell
+RE09	retention	the inherited attribution margin was 0.333	0.333	0.333	ok		results/genome_ledger/margin_calibration.json	json
+RE10	retention	the margin in force is 0.22	0.22	0.22	ok		results/genome_ledger/margin_calibration.json	json
+RE11	retention	542 annotation-established loci were measured	542	542	ok		results/genome_ledger/margin_calibration.json	json
+RE12	retention	368 of them fall below the inherited margin	368	368	ok		results/genome_ledger/margin_calibration.json	json
+RE13	retention	all 53 annotated rescue fragments agree	53	53	ok		results/genome_ledger/margin_calibration.json	json
+RE14	retention	the contiguity bar is the median span of 28 genes	28	28	ok		results/genome_ledger/ledger_stats.json	json
+RE15	retention	a found cell's median contig N50 is 3,396,515 bp	median 3,396,515 vs 23,460	median 3,396,515 vs 23,460	ok		results/methods/contiguity_tests.tsv	grep
+RE16	retention	the odds rise 8.10-fold per tenfold N50	8.10	8.10	ok		results/methods/report.md	grep
+RE17	retention	and 19.99-fold in the RyR series	OR per 10x=19.99	OR per 10x=19.99	ok		results/methods/contiguity_tests.tsv	grep
+RE18	retention	chromosome-level assemblies miss 3 IP3R cells	3	3	ok		results/methods/contiguity_by_stratum.tsv	cell
+RE19	retention	of 512	512	512	ok		results/methods/contiguity_by_stratum.tsv	cell
+RE20	retention	and 0 of 172 RyR cells	172	172	ok		results/methods/contiguity_by_stratum.tsv	cell
+RE21	retention	below the bar ITPR1 misses 0.3917	0.3917	0.3917	ok		results/methods/contiguity_tests.tsv	cell
+RE22	retention	ITPR2 misses 0.4333	0.4333	0.4333	ok		results/methods/contiguity_tests.tsv	cell
+RE23	retention	ITPR3 misses 0.3	0.3000	0.3000	ok		results/methods/contiguity_tests.tsv	cell
+RE24	retention	above the bar the IP3R series has 563 cells	563	563	ok		results/methods/absence_floor.tsv	cell
+RE25	retention	of which 5 are missed	5	5	ok		results/methods/absence_floor.tsv	cell
+RE26	retention	120 genomes fall below the bar	120	120	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+RE27	retention	dropping ITPR2's baits costs 240 cells	-240	-240	ok		results/methods/methods_stats.json	json
+RE28	retention	19 panels were simulated, the full one and 18 ablations	19	19	ok		results/methods/panel_recall.tsv	nunique
+RE29	retention	2,179 call changes across all panels	2179	2179	ok		results/methods/panel_changes.tsv	count
+RE30	retention	68 of them are gains	68	68	ok		results/methods/panel_changes.tsv	count
+RE31	retention	783 cells are a single full-coverage locus	783	783	ok		results/loss_dynamics/state_counts.tsv	cell
+RE32	retention	90 are truncated by the assembly	90	90	ok		results/loss_dynamics/state_counts.tsv	cell
+RE33	retention	7 are partial	7	7	ok		results/loss_dynamics/state_counts.tsv	cell
+RE34	retention	11 of 120 genomes below the bar fall short of 2.5 gene-equivalents	11	11	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+RE35	retention	44 positive regions calibrate the bar	44	44	ok		results/loss_dynamics/recon_calibration.tsv	cell
+RE36	retention	9 negative regions	9	9	ok		results/loss_dynamics/recon_calibration.tsv	cell
+RE37	retention	20 co-shattered regions	20	20	ok		results/loss_dynamics/recon_calibration.tsv	cell
+RE38	retention	positive median coverage 0.7948	0.7948	0.7948	ok		results/loss_dynamics/recon_calibration.tsv	cell
+RE39	retention	negative median 0.0303	0.0303	0.0303	ok		results/loss_dynamics/recon_calibration.tsv	cell
+RE40	retention	co-shattered median 0.6308	0.6308	0.6308	ok		results/loss_dynamics/recon_calibration.tsv	cell
+RE41	retention	the gap's upper edge is 0.1737	0.1737	0.1737	ok		results/loss_dynamics/recon_calibration.tsv	cell
+RE58	retention	the gap's lower edge is 0.1	0.1	0.1	ok		results/loss_dynamics/recon_calibration.tsv	cell
+RE42	retention	the operating point is 0.13685	0.13685	0.13685	ok		results/loss_dynamics/recon_calibration.tsv	cell
+RE43	retention	432 rescue regions were offered to synteny	432	432	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+RE44	retention	273 sit on a contig with no annotated gene	273	273	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+RE45	retention	8 reach the caller's floor	8	8	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+RE46	retention	the median region's contig extends 39.936 kb	39.936	39.936	ok		results/loss_dynamics/synteny_reach_summary.tsv	cell
+RE47	retention	the taxonomy tree has 468 internal nodes	468	468	ok		results/loss_dynamics/tree_polytomies.tsv	count
+RE48	retention	49 of them are polytomies	49	49	ok		results/loss_dynamics/tree_polytomies.tsv	count
+RE49	retention	the family coding's worst case is 1 genome	1	1	ok		results/loss_counts/loss_counts_stats.json	json
+RE50	retention	twelve Mk combinations are refused at the base setting	12	12	ok		results/loss_counts/loss_counts_stats.json	json
+RE51	retention	ITPR3 exceeds its matched siblings in 39 genomes	39	39	ok		results/loss_dynamics/integrity_tests.tsv	cell
+RE52	retention	to 14	14	14	ok		results/loss_dynamics/integrity_tests.tsv	cell
+RE53	retention	7 family loci fire a fossil reading	7	7	ok		results/loss_counts/loss_counts_stats.json	json
+RE54	retention	the bird ITPR3 excess is 25 genomes	25	25	ok		results/loss_counts/lesion_by_class.tsv	cell
+RE55	retention	to 2	2	2	ok		results/loss_counts/lesion_by_class.tsv	cell
+RE56	retention	21 of the 27 bird pairs lie below the bar	21	21	ok		results/loss_counts/lesion_class_controls.tsv	cell
+RE57	retention	6 pairs lie above it	6	6	ok		results/loss_counts/lesion_class_controls.tsv	cell
+C01	retention,archive,constraint	the vertebrate genome scope is 309 assemblies	309	309	ok		results/genome_manifest.tsv	nunique
+C25	retention	309 of 309 genomes were swept	309	309	ok		results/genome_ledger/ledger_stats.json	json
+C26	retention	the sweep recorded 1,236 genome x cell results	1236	1236	ok		results/genome_ledger/ledger_stats.json	json
+C27	retention	the sweep recorded 2,144 loci	2144	2144	ok		results/genome_ledger/ledger_stats.json	json
+C28	retention	the ryanodine receptor control failed in no genome	0	0	ok		results/genome_ledger/ledger_stats.json	json
+C29	retention	the vertebrate scope totals 552.5 Gbp	552535418825	552535418825	ok		results/genome_ledger/ledger_stats.json	json
+C30	retention	4 ledger cells were called absent	4	4	ok		results/genome_ledger/genome_ledger.tsv	count
+C31	retention	all 4 are cyclostome (Hyperoartia and Myxini)	4	4	ok		results/genome_ledger/genome_ledger.tsv	count
+C35	retention	140 of 923 assignable cells are false negatives (15.2 %)	140	140	ok		results/methods/methods_stats.json	json
+C36	retention	the false-negative rate is 0.1517	0.1517	0.1517	ok		results/methods/methods_stats.json	json
+C37	retention	the RyR sister series gives 42 of 309	42	42	ok		results/methods/methods_stats.json	json
+C38	retention	the RyR sister rate is 0.1359	0.1359	0.1359	ok		results/methods/methods_stats.json	json
+C39	retention	the two series are indistinguishable (Fisher p = 0.58)	0.578	0.578	ok		results/methods/methods_stats.json	json
+C41	retention	the residual false-negative rate above D4's bar is 0.9 %	0.0089	0.0089	ok		results/methods/methods_stats.json	json
+C42	retention	the RyR residual rate above the bar is 0.0 %	0.0	0.0	ok		results/methods/methods_stats.json	json
+C43	retention,archive	the contiguity bar is 142,212 bp	142212	142212	ok		results/methods/methods_stats.json	json
+C44	retention	189 of 309 genomes are above the contiguity bar	189	189	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+C45	retention	the ablation reproduces the ledger 1,236 of 1,236 cells	1236	1236	ok		results/methods/methods_stats.json	json
+C46	retention	the ablation found no mismatch against the ledger	0	0	ok		results/methods/methods_stats.json	json
+C47	retention	the full 38-bait panel recovers 783 cells	783	783	ok		results/methods/methods_stats.json	json
+C48	retention	four human baits recover 782 of them	782	782	ok		results/methods/methods_stats.json	json
+C49	retention	dropping ITPR1's baits costs 238 cells	-238	-238	ok		results/methods/methods_stats.json	json
+C50	retention	dropping ITPR3's baits costs 241 cells	-241	-241	ok		results/methods/methods_stats.json	json
+C85	retention	the character matrix holds 927 genome x paralogue cells	927	927	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+C86	retention	none of them reaches the absence state	0	0	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+C87	retention	923 hold a gene that is present	923	923	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+C88	retention	43 cells are reassembled across contigs	43	43	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+C89	retention	4 cells are paralogue-unassignable	4	4	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+C90	retention	above the bar the minimum is 3.00 gene-equivalents	3.0	3.0	ok		results/loss_dynamics/loss_dynamics_stats.json	json
+C91	retention	Dollo places zero losses on the family character	0	0	ok		results/loss_counts/loss_counts_stats.json	json
+C92	retention	the family coding manufactures a loss in 2 of 32 settings	2	2	ok		results/loss_counts/loss_counts_stats.json	json
+C93	retention	the sensitivity grid has 32 settings	32	32	ok		results/loss_counts/loss_counts_stats.json	json
+C94	retention	the paralogue-resolved coding manufactures one in 18 of 32	18	18	ok		results/loss_counts/loss_counts_stats.json	json
+C95	retention	its worst case is 45 loss edges	45	45	ok		results/loss_counts/loss_counts_stats.json	json
+C96	retention	branch lengths change the count in none of the 32 settings	0	0	ok		results/loss_counts/loss_counts_stats.json	json
+C97	retention	1,760 loci were scored for frameshift density	1760	1760	ok		results/loss_counts/loss_counts_stats.json	json
+C98	retention	44 clear the lesion bar	44	44	ok		results/loss_counts/loss_counts_stats.json	json
+C99	retention	and all 44 are at full coverage	44	44	ok		results/loss_counts/loss_counts_stats.json	json

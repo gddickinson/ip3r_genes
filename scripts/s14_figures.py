@@ -20,8 +20,13 @@ import s14_lib as lib
 FORMATS = (".png", ".pdf")
 
 
-def _copy_one(src_stem: str, dest_stem: str) -> list[dict]:
-    """Copy every available format of one source figure. Returns manifest rows."""
+def _copy_one(src_stem: str, dest_stem: str, dest_dir=None) -> list[dict]:
+    """Copy every available format of one source figure. Returns manifest rows.
+
+    `dest_dir` defaults to the manuscript's figure directory; the paper series
+    (S26) passes each paper's own, so the copier is shared, not forked.
+    """
+    dest_dir = lib.MS_FIGS if dest_dir is None else dest_dir
     rows: list[dict] = []
     found_any = False
     for ext in FORMATS:
@@ -29,14 +34,16 @@ def _copy_one(src_stem: str, dest_stem: str) -> list[dict]:
         if not src.exists():
             continue
         found_any = True
-        dest = lib.MS_FIGS / f"{dest_stem}{ext}"
+        dest = dest_dir / f"{dest_stem}{ext}"
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dest)
         row = {
             "figure": dest_stem,
             "format": ext.lstrip("."),
             "source": str(src.relative_to(lib.ROOT)),
-            "deposited_as": str(dest.relative_to(lib.ROOT)),
+            # A sandboxed build (a guard suite) writes outside the project.
+            "deposited_as": (str(dest.relative_to(lib.ROOT))
+                             if dest.is_relative_to(lib.ROOT) else str(dest)),
             "bytes": src.stat().st_size,
             "sha256": lib.sha256(src),
         }

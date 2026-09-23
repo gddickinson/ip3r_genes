@@ -225,7 +225,7 @@ T72	ch16	they ran across 10 working days	10	10	ok		thesis/production_stats.tsv	c
 T73	ch16	the ledger holds 37 tasks	37	37	ok		thesis/production_stats.tsv	cell
 T74	ch16	35 of them are complete	35	35	ok		thesis/production_stats.tsv	cell
 T75	ch16	89 methodological decisions are recorded	89	89	ok		thesis/production_stats.tsv	cell
-T76	ch16	377 analysis scripts were written	377	377	ok		thesis/production_stats.tsv	cell
+T76	ch16	401 analysis scripts were written	401	401	ok		thesis/production_stats.tsv	cell
 T77	ch16	the search application is 9,243 lines	9243	9243	ok		thesis/production_stats.tsv	cell
 T78	ch16	444 result tables are committed	444	444	ok		thesis/production_stats.tsv	cell
 T79	ch16	112 figures are committed	112	112	ok		thesis/production_stats.tsv	cell

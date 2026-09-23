@@ -2560,3 +2560,39 @@ measured on the structure lies in PF08709, the Pfam domain named after the
 ligand; they sit in MIR and RIH, the two domains the family shares with the
 ryanodine receptors. The chapter now names the signature by accession, so a
 reader can check it.
+
+## 2026-09-23 — S26: six papers, and two sentences the earlier write-ups had wrong
+
+*What changed: nothing new was measured. The work is now reported as six
+separate papers, and writing them again from the tables corrected two
+statements in the earlier write-ups.*
+
+**The work divides into six questions that each stand alone.** Where in the
+eukaryotes the receptor exists. How one ancestral gene became three in
+vertebrates. Whether any vertebrate has lost one of the three. How well public
+databases record the genes the genomes carry. Where along the receptor
+selection acts. Whether the part that binds IP₃ evolves differently from the
+pore it opens. Each paper carries its own controls and its own figures, and
+each says in writing what it would still claim if none of the others were
+published. The ligand-site question was expected to be a section of the
+constraint paper. It turned out to stand alone: its answer depends only on
+evidence measured inside it.
+
+**Correction: the deep orthologue sets rank third of four at telling
+disease variants from harmless ones, not second.** Conservation measured
+across about 250 orthologues of each gene was described as the second-best
+of four measures. The table beside that sentence always ranked it third,
+behind both measures that compare across the whole family rather than within
+one gene. The biological point is unchanged, and slightly stronger:
+breadth across the family predicts disease variants better than depth within
+one gene.
+
+**Correction: the "three quarters of genes unreachable from protein
+databases" figure included the control genes.** The 940 of 1,232 genes
+counted the 309 ryanodine receptor genes measured alongside as the control.
+For the IP₃ receptor genes alone it is **744 of 923, or 80.6 %**, against
+196 of 309 (63.4 %) for the ryanodine receptors. Reachability from protein
+databases is therefore worse for the IP₃ receptors than for their sister
+family in the same genomes, even though the genome annotations record the two
+families equally well at the locus. The earlier entry of 2026-09-08 that says "940 of 1,232" is
+left as written, and this entry supersedes it.

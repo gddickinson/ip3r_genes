@@ -188,7 +188,9 @@ annotation is worst.
 genome by cell rather than per record, with the genome sweep as ground truth
 for where the genes are, **940 of 1,232 demonstrated genes, or 76.3 %, are not
 reachable by any protein-database search.** They are not hard to find. No
-protein record of them exists.
+protein record of them exists. The 1,232 include the 309 ryanodine receptor
+genes of the control cell; for the IP₃ receptor genes alone the figure is 744
+of 923, or 80.6 %, against 196 of 309 for the control.
 
 That is not an artefact of the margin species. Split by why each genome is in
 scope, the rate is 74.3 % for order representatives against 78.5 % for margin

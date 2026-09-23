@@ -5,7 +5,7 @@ Split out of `s17_report_results.py` to keep both inside the 500-line budget
 `headline()` dict so no half can read the tables differently.
 
 This is the half that argues against the task's own design: §7.2 reports that
-the deep within-paralog layer S17 was built around is the second-best of four
+the deep within-paralog layer S17 was built around ranks third of four
 classifiers, and §11 lists what the task does not settle.
 """
 
@@ -30,6 +30,12 @@ def s_variants(h: dict) -> str:
     prot = h["auc_protein"]
     order = sorted(auc, key=lambda k: -float(auc[k][0] or 0))
     best = order[0] if order else ""
+    # The deep layer's rank is read off the table, never typed: the sentence
+    # said "second-best" for three editions while the table ranked it third
+    # (found by S26; the D82 failure, a word a generator typed).
+    ordinal = ["best", "second-best", "third", "fourth"]
+    deep_rank = (ordinal[order.index("deep")] if "deep" in order
+                 and order.index("deep") < len(ordinal) else "unranked")
     bucket_rows = [
         f"| {g} | {b.get((g, 'P/LP'), 0)} | {b.get((g, 'B/LB'), 0)} | "
         f"{b.get((g, 'VUS'), 0)} | {b.get((g, 'conflicting'), 0)} | "
@@ -108,7 +114,7 @@ def s_variants(h: dict) -> str:
         "benign better than a position merely invariant across 260 "
         "vertebrate orthologues of the same gene. A resource for this family "
         "should quote the family-wide layer, and this task's own instrument is "
-        "the second-best of the four.",
+        f"the {deep_rank} of the {len(order)}.",
         "",
         "The whole-protein control is the reason the first column cannot be "
         "read alone. Every layer separates pathogenic positions from the "

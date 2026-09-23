@@ -168,22 +168,52 @@ def _overfull(log: str) -> list[str]:
     return out
 
 
-def wrap_legends(body: str) -> str:
-    """Wrap every legend paragraph in the command pair, closing the float."""
+def check_log(log: str) -> list[str]:
+    """The typeset-page defects only the LaTeX log records.
+
+    Shared with the paper series (S26), so every document this project
+    typesets is held to the same page: no line wider than the margin by more
+    than `OVERFULL_PT`, no figure block taller than a page, and no character
+    the document font cannot set.
+    """
+    out = []
+    overfull = _overfull(log)
+    if overfull:
+        out += [f"  {ln}" for ln in overfull[:20]]
+        out.append(f"{len(overfull)} overfull line(s) wider than "
+                   f"{OVERFULL_PT} pt run into the margin")
+    too_tall = [ln for ln in log.split("\n") if "Float too large" in ln]
+    if too_tall:
+        out.append(f"{len(too_tall)} figure block(s) taller than a page")
+    missing = sorted({ln.strip() for ln in log.split("\n")
+                      if "Missing character" in ln})
+    if missing:
+        out += [f"  {ln}" for ln in missing[:20]]
+        out.append(f"{len(missing)} distinct missing characters: the "
+                   f"document font lacks a glyph the text uses")
+    return out
+
+
+def wrap_legends(body: str, pattern: re.Pattern = LEGEND_PARA) -> str:
+    """Wrap every legend paragraph in the command pair, closing the float.
+
+    `pattern` recognises a legend; the paper series (S26) passes its own,
+    since a paper's legends open `**Fig. N.**` rather than `**Figure N.M.**`.
+    """
     paras = body.split("\n\n")
     # The markers sit on lines of their own: pandoc reads `\cmd **` as the
     # starred form of the command and leaves the bold marker in the output.
     return "\n\n".join(
         f"\\figlegendbegin\n\n{p}\n\n\\figlegendend\n\n\\figblockend"
-        if LEGEND_PARA.match(p.strip()) else p for p in paras)
+        if pattern.match(p.strip()) else p for p in paras)
 
 
-def check_legends(body: str) -> list[str]:
+def check_legends(body: str, pattern: re.Pattern = LEGEND_PARA) -> list[str]:
     """R4: every legend paragraph is wrapped, and every float is closed."""
     problems = []
     paras = [p.strip() for p in body.split("\n\n")]
     for i, p in enumerate(paras):
-        if LEGEND_PARA.match(p) and (i == 0 or paras[i - 1]
+        if pattern.match(p) and (i == 0 or paras[i - 1]
                                      != "\\figlegendbegin"):
             problems.append(f"legend not wrapped in its own typography: "
                             f"'{p[:60]}'")
@@ -252,26 +282,10 @@ def run(keep_intermediate: bool = False) -> int:
         print(f"[s25 pdf] pandoc failed (engine {engine})", file=sys.stderr)
         return 1
 
-    log = proc.stdout + proc.stderr
-    overfull = _overfull(log)
-    if overfull:
-        for ln in overfull[:20]:
-            print(f"  {ln}", file=sys.stderr)
-        print(f"[s25 pdf] {len(overfull)} overfull line(s) wider than "
-              f"{OVERFULL_PT} pt run into the margin", file=sys.stderr)
-        return 1
-    too_tall = [ln for ln in log.split("\n") if "Float too large" in ln]
-    if too_tall:
-        print(f"[s25 pdf] {len(too_tall)} figure block(s) taller than a page",
-              file=sys.stderr)
-        return 1
-    missing = sorted({ln.strip() for ln in log.split("\n")
-                      if "Missing character" in ln})
-    if missing:
-        for ln in missing[:20]:
-            print(f"  {ln}", file=sys.stderr)
-        print(f"[s25 pdf] {len(missing)} distinct missing characters — the "
-              f"document font lacks a glyph the text uses", file=sys.stderr)
+    problems = check_log(proc.stdout + proc.stderr)
+    if problems:
+        for ln in problems:
+            print(f"[s25 pdf] {ln}", file=sys.stderr)
         return 1
     if not keep_intermediate:
         MD_BUILD.unlink(missing_ok=True)

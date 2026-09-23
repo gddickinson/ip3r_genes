@@ -1,0 +1,140 @@
+id	section	claim	expected	found	verdict	note	source	op
+AR01	archive	923 IP3 receptor genes are demonstrated in the DNA	923	923	ok		results/methods/gene_recovery.tsv	count
+AR02	archive	744 of them have no protein record that reaches them	744	744	ok		results/methods/gene_recovery.tsv	count
+AR03	archive	1,232 genome-by-cell genes are demonstrated, both families	1232	1232	ok		results/methods/gene_recovery.tsv	count
+AR04	archive	257 ITPR1 genes are unreachable	257	257	ok		results/methods/gene_recovery_by_cell.tsv	cell
+AR05	archive	of 309 ITPR1 genes	309	309	ok		results/methods/gene_recovery_by_cell.tsv	cell
+AR06	archive	260 ITPR2 genes are unreachable	260	260	ok		results/methods/gene_recovery_by_cell.tsv	cell
+AR07	archive	of 307 ITPR2 genes	307	307	ok		results/methods/gene_recovery_by_cell.tsv	cell
+AR08	archive	227 ITPR3 genes are unreachable	227	227	ok		results/methods/gene_recovery_by_cell.tsv	cell
+AR09	archive	of 307 ITPR3 genes	307	307	ok		results/methods/gene_recovery_by_cell.tsv	cell
+AR10	archive	196 ryanodine receptor control cells are unreachable	196	196	ok		results/methods/gene_recovery_by_cell.tsv	cell
+AR11	archive	of 309 control cells	309	309	ok		results/methods/gene_recovery_by_cell.tsv	cell
+AR12	archive	289 unreachable IP3R genes are in species without a reference proteome	289	289	ok		results/methods/gene_recovery.tsv	count
+AR13	archive	186 in species with only fragmentary records	186	186	ok		results/methods/gene_recovery.tsv	count
+AR14	archive	254 where records exist and none resolves to the paralogue	254	254	ok		results/methods/gene_recovery.tsv	count
+AR15	archive	15 in species with no family record at all	15	15	ok		results/methods/gene_recovery.tsv	count
+AR16	archive	179 IP3R genes are held as DNA and as a resolving record	179	179	ok		results/methods/gene_recovery.tsv	count
+AR17	archive	order representatives lose 413 genes	413	413	ok		results/methods/gene_recovery_by_scope.tsv	cell
+AR18	archive	of 556	556	556	ok		results/methods/gene_recovery_by_scope.tsv	cell
+AR19	archive	margin species lose 465 genes	465	465	ok		results/methods/gene_recovery_by_scope.tsv	cell
+AR20	archive	of 592	592	592	ok		results/methods/gene_recovery_by_scope.tsv	cell
+AR21	archive	Pfam enumeration returns 3,135 gene-scale vertebrate records	3135	3135	ok		results/methods/head_to_head.tsv	cell
+AR22	archive	the profile pair returns 3,136	3136	3136	ok		results/methods/head_to_head.tsv	cell
+AR23	archive	3,135 are shared	3135	3135	ok		results/methods/head_to_head.tsv	cell
+AR24	archive	the sweep's models come from 224 genomes	224	224	ok		results/census_v4/census_v4_stats.json	json
+AR25	archive	488 of the models are IP3 receptors	488	488	ok		results/census_v4/census_v4_stats.json	json
+AR26	archive	3 lie inside a gene named for another paralogue	3	3	ok		results/census_v4/census_v4_stats.json	json
+AR27	archive	2,144 gene-scale loci are audited	2144	2144	ok		results/annotation_audit/annotation_audit_stats.json	json
+AR28	archive	1,059 of them are IP3 receptor loci	1059	1059	ok		results/annotation_audit/annotation_audit_stats.json	json
+AR29	archive	255 loci sit in assemblies with no gene set	255	255	ok		results/annotation_audit/annotation_audit_stats.json	json
+AR30	archive	932 IP3 receptor loci are scorable	932	932	ok		results/annotation_audit/annotation_audit_stats.json	json
+AR31	archive	942 ryanodine receptor loci are scorable	942	942	ok		results/annotation_audit/annotation_audit_stats.json	json
+AR32	archive	8,306 of the protein records are vertebrate	8306	8306	ok		results/annotation_audit/annotation_audit_stats.json	json
+AR33	archive	168 assemblies carry a RefSeq annotation	168	168	ok		results/genome_manifest.tsv	count
+AR34	archive	141 carry a GenBank annotation or none	141	141	ok		results/genome_manifest.tsv	count
+AR35	archive	the bait panel holds 38 proteins	38	38	ok		results/s5_baits/bait_manifest.tsv	count
+AR36	archive	689 IP3R loci are complete	689	689	ok		results/annotation_audit/family_vs_control.tsv	cell
+AR37	archive	243 are not	243	243	ok		results/annotation_audit/family_vs_control.tsv	cell
+AR38	archive	149 are fragmentary	149	149	ok		results/annotation_audit/family_vs_control.tsv	cell
+AR39	archive	14 are split	14	14	ok		results/annotation_audit/family_vs_control.tsv	cell
+AR40	archive	38 are unannotated	38	38	ok		results/annotation_audit/family_vs_control.tsv	cell
+AR41	archive	the bar is validated on 1,077 loci	1077	1077	ok		results/annotation_audit/complete_calibration.tsv	cell
+AR42	archive	14 of them fall below the bar	14	14	ok		results/annotation_audit/complete_calibration.tsv	cell
+AR43	archive	712 loci are complete at a bar of 0.3	712	712	ok		results/annotation_audit/state_sensitivity.tsv	cell
+AR44	archive	635 at a bar of 0.95	635	635	ok		results/annotation_audit/state_sensitivity.tsv	cell
+AR45	archive	on good contigs 38 IP3R loci fail	38	38	ok		results/annotation_audit/family_vs_control.tsv	cell
+AR46	archive	of 568	568	568	ok		results/annotation_audit/family_vs_control.tsv	cell
+AR47	archive	243 of 433 bird loci are complete	243	243	ok		results/annotation_audit/state_by_class.tsv	cell
+AR48	archive	of 433 bird loci	433	433	ok		results/annotation_audit/state_by_class.tsv	cell
+AR49	archive	124 bird loci are fragmentary	124	124	ok		results/annotation_audit/state_by_class.tsv	cell
+AR50	archive	734 ryanodine receptor loci are complete	734	734	ok		results/annotation_audit/family_vs_control.tsv	cell
+AR51	archive	208 fail	208	208	ok		results/annotation_audit/family_vs_control.tsv	cell
+AR52	archive	the family-control difference has q = 0.13	0.13	0.127691	ok		results/annotation_audit/family_vs_control.tsv	cell
+AR53	archive	on good contigs 35 control loci fail	35	35	ok		results/annotation_audit/family_vs_control.tsv	cell
+AR54	archive	of 632	632	632	ok		results/annotation_audit/family_vs_control.tsv	cell
+AR55	archive	and the difference there has q = 0.82	0.82	0.819481	ok		results/annotation_audit/family_vs_control.tsv	cell
+AR56	archive	the non-coding-only excess has q = 0.006	0.006	0.006342	ok		results/annotation_audit/family_vs_control.tsv	cell
+AR57	archive	1,161 RefSeq loci are complete	1161	1161	ok		results/annotation_audit/by_source.tsv	cell
+AR58	archive	of 1,175	1175	1175	ok		results/annotation_audit/by_source.tsv	cell
+AR59	archive	262 GenBank loci are complete	262	262	ok		results/annotation_audit/by_source.tsv	cell
+AR60	archive	of 699	699	699	ok		results/annotation_audit/by_source.tsv	cell
+AR61	archive	263 GenBank loci are fragmentary	263	263	ok		results/annotation_audit/by_source.tsv	cell
+AR62	archive	92 GenBank loci are unannotated	92	92	ok		results/annotation_audit/by_source.tsv	cell
+AR63	archive	10 RefSeq loci are unannotated	10	10	ok		results/annotation_audit/by_source.tsv	cell
+AR64	archive	on good contigs 1,009 RefSeq loci are complete	1009	1009	ok		results/annotation_audit/by_source.tsv	cell
+AR65	archive	of 1,015	1015	1015	ok		results/annotation_audit/by_source.tsv	cell
+AR66	archive	against 118 GenBank loci	118	118	ok		results/annotation_audit/by_source.tsv	cell
+AR67	archive	of 185	185	185	ok		results/annotation_audit/by_source.tsv	cell
+AR68	archive	5 records carry a name from the sister family	5	5	ok		results/annotation_audit/annotation_audit_stats.json	json
+AR69	archive	74 name a paralogue the panel cannot call	74	74	ok		results/annotation_audit/annotation_audit_stats.json	json
+AR70	archive	66 are named for the superfamily	66	66	ok		results/annotation_audit/annotation_audit_stats.json	json
+AR71	archive	9,841 records are called family by both instruments	9841	9841	ok		results/annotation_audit/pfam_recall.tsv	cell
+AR72	archive	1,554 by one instrument only	1554	1554	ok		results/annotation_audit/pfam_recall.tsv	cell
+AR73	archive	the sweep recovered 880 IP3 receptor loci	880	880	ok		results/annotation_bugs/case_ranking.tsv	count
+AR74	archive	the annotation delivers 375 of the eligible loci	375	375	ok		results/annotation_bugs/case_ranking.tsv	count
+AR75	archive	360 eligible loci have zero annotation loss	360	360	ok		results/annotation_bugs/case_ranking.tsv	count
+AR76	archive	the fifth rule removes 6 loci	6	6	ok		results/annotation_bugs/case_ranking.tsv	count
+AR77	archive	case A has 56 coding exons	56	56	ok		results/annotation_bugs/block_accounting.tsv	cell
+AR78	archive	totalling 8,021 bp	8021	8021	ok		results/annotation_bugs/block_accounting.tsv	cell
+AR79	archive	case A's contig N50 is 84.24 times the locus	84.24	84.24	ok		results/annotation_bugs/cases.tsv	cell
+AR80	archive	case A splices into 2,673 codons	2673	2673	ok		results/annotation_bugs/reading_frame.tsv	cell
+AR81	archive	against 14.2 stops expected	14.2	14.2	ok		results/annotation_bugs/reading_frame.tsv	cell
+AR82	archive	case A has 54 GT-AG introns	54	54	ok		results/annotation_bugs/case_introns.tsv	count
+AR83	archive	and 55 introns in all	55	55	ok		results/annotation_bugs/case_introns.tsv	count
+AR84	archive	52 of case A's boundaries are shared by a majority	52	52	ok		results/annotation_bugs/probe_summary.tsv	cell
+AR85	archive	of 35 reference genomes	35	35	ok		results/annotation_bugs/probe_summary.tsv	cell
+AR86	archive	SSPN flanks the paralogue in 197 swept vertebrates	197	197	ok		results/annotation_bugs/flank_consensus_check.tsv	cell
+AR87	archive	of 215	215	215	ok		results/annotation_bugs/flank_consensus_check.tsv	cell
+AR88	archive	case A's annotation files 7,380 genes as pseudogenes	7380	7380	ok		results/annotation_bugs/assembly_audit.tsv	cell
+AR89	archive	of 23,345	23345	23345	ok		results/annotation_bugs/assembly_audit.tsv	cell
+AR90	archive	case B has 60 coding exons	60	60	ok		results/annotation_bugs/block_accounting.tsv	cell
+AR91	archive	totalling 8,064 bp	8064	8064	ok		results/annotation_bugs/block_accounting.tsv	cell
+AR92	archive	covered by 3 gene models	3	3	ok		results/annotation_bugs/block_accounting.tsv	cell
+AR93	archive	delivering 4,664 bp	4664	4664	ok		results/annotation_bugs/block_accounting.tsv	cell
+AR94	archive	leaving 3,400 bp unmodelled	3400	3400	ok		results/annotation_bugs/block_accounting.tsv	cell
+AR95	archive	in 28 blocks	28	28	ok		results/annotation_bugs/block_accounting.tsv	cell
+AR96	archive	case B gives 2,687 codons	2687	2687	ok		results/annotation_bugs/reading_frame.tsv	cell
+AR97	archive	against 11.4 stops expected	11.4	11.4	ok		results/annotation_bugs/reading_frame.tsv	cell
+AR98	archive	all 59 of case B's introns are GT-AG	59	59	ok		results/annotation_bugs/case_introns.tsv	count
+AR99	archive	59 boundaries shared by a majority	59	59	ok		results/annotation_bugs/probe_summary.tsv	cell
+AR100	archive	of 40 reference genomes	40	40	ok		results/annotation_bugs/probe_summary.tsv	cell
+AR101	archive	case A's species has 43 transcript records	43	43	ok		results/annotation_bugs/probe_summary.tsv	cell
+AR102	archive	case B's species has 10	10	10	ok		results/annotation_bugs/probe_summary.tsv	cell
+AR103	archive	the genomic control makes 112 hits at case A	112	112	ok		results/annotation_bugs/probe_summary.tsv	cell
+AR104	archive	and 50 at case B	50	50	ok		results/annotation_bugs/probe_summary.tsv	cell
+AR105	archive	536,000,000 reads were streamed	536000000	536000000	ok		results/expression/run_metrics.tsv	sum
+AR106	archive	from 16 studies	16	16	ok		results/expression/run_metrics.tsv	nunique
+AR107	archive	all 7 lost loci are in the expression panel	7	7	ok		results/expression/expression_by_locus.tsv	count
+AR108	archive	the decoys collected 42 reads	42	42	ok		results/expression/expression_by_run.tsv	sum
+AR109	archive	over 469 run-by-locus comparisons	469	469	ok		results/expression/expression_by_run.tsv	count
+AR110	archive	12,500 synthetic reads tile the references	12500	12500	ok		results/expression/crossmap_control.tsv	sum
+AR111	archive	20 corrections concern unannotated genes	20	20	ok		results/annotation_audit/correction_summary.tsv	sum
+AR112	archive	54 concern genes held only by a non-coding feature	54	54	ok		results/annotation_audit/correction_summary.tsv	sum
+AR113	archive	217 concern incomplete models	217	217	ok		results/annotation_audit/correction_summary.tsv	sum
+AR114	archive	1 concerns a wrong paralogue name	1	1	ok		results/annotation_audit/correction_summary.tsv	sum
+AR115	archive	5 concern protein records named for the wrong family	5	5	ok		results/annotation_audit/correction_summary.tsv	sum
+C04	range,archive	763 vertebrate reference proteomes were swept	763	763	ok		results/hmm_sweep/proteome_db_stats.json	json
+C01	retention,archive,constraint	the vertebrate genome scope is 309 assemblies	309	309	ok		results/genome_manifest.tsv	nunique
+C43	retention,archive	the contiguity bar is 142,212 bp	142212	142212	ok		results/methods/methods_stats.json	json
+C32	archive	318 IP3 receptor gene models exist only as DNA	318	318	ok		results/census_v4/db_status_counts.tsv	sum
+C33	archive	167 more sit inside an annotated gene carrying no family name	167	167	ok		results/census_v4/db_status_counts.tsv	sum
+C34	archive	the sweep contributed 1,058 gene models from 224 genomes	1058	1058	ok		results/census_v4/census_v4_stats.json	json
+C148	archive	42 ITPR loci are held only by a non-coding feature	42	42	ok		results/annotation_audit/family_vs_control.tsv	cell
+C149	archive	against 16 RyR loci (q = 0.006)	16	16	ok		results/annotation_audit/family_vs_control.tsv	cell
+C150	archive	but 4 against 5 above the bar (q = 1.0)	1	1	ok		results/annotation_audit/family_vs_control.tsv	cell
+C156	archive	whose median single-model coverage is 0.993	0.993	0.993	ok		results/annotation_audit/annotation_audit_stats.json	json
+C157	archive	11,402 full-length family protein records were scored	11402	11402	ok		results/annotation_audit/annotation_audit_stats.json	json
+C158	archive	4 disagree with the census on family by sequence	4	4	ok		results/annotation_audit/annotation_audit_stats.json	json
+C159	archive	52 of 8,306 vertebrate symbols name the wrong paralogue	52	52	ok		results/annotation_audit/annotation_audit_stats.json	json
+C160	archive	3,872 records carry a placeholder symbol	3872	3872	ok		results/annotation_audit/annotation_audit_stats.json	json
+C161	archive	2,395 carry none at all	2395	2395	ok		results/annotation_audit/annotation_audit_stats.json	json
+C162	archive	all 15 zero-hit reference proteomes are gene-caller failures	15	15	ok		results/annotation_audit/annotation_audit_stats.json	json
+C163	archive	the audit produced 297 corrections	297	297	ok		results/annotation_audit/annotation_audit_stats.json	json
+C164	archive	52 of them high priority	52	52	ok		results/annotation_audit/annotation_audit_stats.json	json
+C165	archive	18 withheld with the reason recorded	18	18	ok		results/annotation_audit/annotation_audit_stats.json	json
+C166	archive	382 loci pass the five eligibility rules	382	382	ok		results/annotation_bugs/case_ranking.tsv	count
+C167	archive	the annotation gets 375 of them right (98.2 %)	at **375** of those (98.2 %) it did	at **375** of those (98.2 %) it did	ok		results/annotation_bugs/report.md	grep
+C173	archive	67 public RNA-seq runs were quantified	67	67	ok		results/expression/expression_stats.json	json
+C174	archive	298 of 314 unmodelled junctions are crossed by reads	298 of 314 (94.9 %) junctions no annotated model spans	298 of 314 (94.9 %) junctions no annotated model spans	ok		results/expression/report.md	grep
+C175	archive	the cross-mapping control is exactly zero	0.0	0.0	ok		results/expression/expression_stats.json	json

@@ -248,7 +248,7 @@ launders an assumption into a result.
 
 **A comparison that has to be sayable is the one that goes badly.** Several
 chapters here report a result against their own design. The constraint chapter
-finds the deep layer it was built around is the second best of four. The
+finds the deep layer it was built around ranks third of four. The
 ligand-site chapter finds the module that names the family is the less
 constrained of two. The annotation chapter finds the family is not recorded
 worse than its sister. Each of those had to be as easy to print as its

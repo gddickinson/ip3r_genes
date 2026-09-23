@@ -1,0 +1,71 @@
+id	section	claim	expected	found	verdict	note	source	op
+LI01	ligand	the primary ITPR1 ligand core starts at residue 265	265	265	ok		results/ligand_site/module_map.tsv	cell
+LI02	ligand	and ends at residue 569	569	569	ok		results/ligand_site/module_map.tsv	cell
+LI03	ligand	the primary ITPR1 pore module starts at residue 2363	2363	2363	ok		results/ligand_site/module_map.tsv	cell
+LI04	ligand	and ends at residue 2608	2608	2608	ok		results/ligand_site/module_map.tsv	cell
+LI05	ligand	ITPR1 drops three orthologues on the coverage rule	3	3	ok		results/ligand_site/module_contrast.tsv	cell
+LI06	ligand	ITPR2 shows no core-pore difference (q = 0.13)	0.13	0.134144	ok		results/ligand_site/module_contrast.tsv	cell
+LI07	ligand	with the published core, ITPR2 tips to a core lead of 0.0049	0.0049	0.0049	ok		results/ligand_site/module_contrast.tsv	cell
+LI08	ligand	8TKG adds two contacts to the ten	12	12	ok		results/ligand_site/shell_agreement.tsv	cell
+LI09	ligand	Ala276 is a contact in four of the six depositions	4	4	ok		results/ligand_site/shell_agreement.tsv	count
+LI10	ligand	the pocket holds 125 residues	125	125	ok		results/ligand_site/shell_trend.tsv	cell
+LI11	ligand	the contact shell holds twelve residues	12	12	ok		results/ligand_site/shell_constraint.tsv	cell
+LI12	ligand	the outermost shell holds 59 residues	59	59	ok		results/ligand_site/shell_constraint.tsv	cell
+LI13	ligand	the ITPR1 whole-protein mean conservation is 0.7366	0.7366	0.7366	ok		results/ligand_site/shell_constraint.tsv	cell
+LI14	ligand	ITPR1 contacts score 0.813	0.813	0.8134	ok		results/ligand_site/contact_test.tsv	cell
+LI15	ligand	against 0.744 for the rest of the core	0.744	0.7443	ok		results/ligand_site/contact_test.tsv	cell
+LI16	ligand	contacts beat the rest of the core in ITPR2 (q = 0.017)	0.017	0.01725	ok		results/ligand_site/contact_test.tsv	cell
+LI17	ligand	and in ITPR3 (q = 0.041)	0.041	0.041324	ok		results/ligand_site/contact_test.tsv	cell
+LI18	ligand	against the rest of the pocket the smallest q is 0.12	0.12	0.124893	ok		results/ligand_site/contact_test.tsv	cell
+LI19	ligand	the permutation ran 200,000 iterations	200000	200000	ok		results/ligand_site/contact_test.tsv	cell
+LI20	ligand	conservation falls with distance in ITPR2 (rho = -0.436)	-0.436	-0.4363	ok		results/ligand_site/shell_trend.tsv	cell
+LI21	ligand	the ITPR1 core's mean beta is 0.0251	0.0251	0.0251	ok		results/ligand_site/omega_module_test.tsv	cell
+LI22	ligand	against 0.0446 for the pore	0.0446	0.0446	ok		results/ligand_site/omega_module_test.tsv	cell
+LI23	ligand	the ITPR3 core evolves faster at q = 0.058	0.058	0.058331	ok		results/ligand_site/omega_module_test.tsv	cell
+LI24	ligand	22 fungal proteomes carry an ITPR and no PI-PLC	22	22	ok		results/ligand_site/pathway_cooccurrence.tsv	cell
+LI25	ligand	28 other protist proteomes do	28	28	ok		results/ligand_site/pathway_cooccurrence.tsv	cell
+LI26	ligand	10 non-vertebrate animal proteomes do	10	10	ok		results/ligand_site/pathway_cooccurrence.tsv	cell
+LI27	ligand	4 green-plant proteomes do	4	4	ok		results/ligand_site/pathway_cooccurrence.tsv	cell
+LI28	ligand	the 2,764 non-vertebrate eukaryotic proteomes of the panel	2764	2764	ok		results/ligand_site/plc_repertoire.tsv	count
+LI29	ligand	all 662 non-vertebrate receptors from reference proteomes	662	662	ok		results/ligand_site/deep_lineage_panel.tsv	count
+LI30	ligand	the RyR control shifts by -0.0996 on the representative alignment	-0.0996	-0.0996	ok		results/ligand_site/lineage_test.tsv	cell
+LI31	ligand	on six RyR tips	6	6	ok		results/ligand_site/lineage_test.tsv	cell
+LI32	ligand	all 15 Mucoromycota receptors lack the enzyme	15	15	ok		results/ligand_site/deep_lineage_test.tsv	cell
+LI33	ligand	only three phylum strata are testable	3	3	ok		results/ligand_site/deep_lineage_test.tsv	count
+LI34	ligand	matched within 0.03 pore identity	0.03	0.03	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
+LI35	ligand	17 matched pairs fall the other way	17	17	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
+LI36	ligand	sign test p = 0.87	0.87	0.867939	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
+LI37	ligand	power 0.99 at a shift of 0.05	0.99	0.9902	ok		results/ligand_site/deep_lineage_matched_power.tsv	cell
+LI38	ligand	power 0.59 at a shift of 0.03	0.59	0.5877	ok		results/ligand_site/deep_lineage_matched_power.tsv	cell
+C222	ligand	the pocket was measured in 6 independent IP3-bound structures	6	6	ok		results/ligand_site/shell_agreement.tsv	count
+C223	ligand	6DQN recovers all ten published contacts	10	10	ok		results/ligand_site/shell_agreement.tsv	cell
+C225	ligand	the contacts beat the rest of the core in ITPR1 (q = 0.048)	0.048	0.048	ok		results/ligand_site/contact_test.tsv	cell
+C231	ligand	falling to 0.875 in ITPR1's lowest shell, a fall of 0.13	0.875	0.875	ok		results/ligand_site/omega_by_shell.tsv	cell
+C232	ligand	to 0.750 in ITPR2's, a fall of 0.25	0.75	0.75	ok		results/ligand_site/omega_by_shell.tsv	cell
+C232b	ligand	and to 0.825 in ITPR3's, a fall of 0.18	0.825	0.825	ok		results/ligand_site/omega_by_shell.tsv	cell
+C232c	ligand	the outermost shell sits above the third in ITPR1, so the fall is not monotone	0.8966	0.8966	ok		results/ligand_site/omega_by_shell.tsv	cell
+C233	ligand	the ITPR1 pore leads the core by 0.0239 identity	-0.0239	-0.0239	ok		results/ligand_site/module_contrast.tsv	cell
+C234	ligand	on 223 tips against 32	223	223	ok		results/ligand_site/module_contrast.tsv	cell
+C236	ligand	the ITPR3 pore leads by 0.0199	-0.0199	-0.0199	ok		results/ligand_site/module_contrast.tsv	cell
+C237	ligand	on 218 tips against 42	218	218	ok		results/ligand_site/module_contrast.tsv	cell
+C239	ligand	the paired test runs on 260 ITPR1 orthologues	260	260	ok		results/ligand_site/module_contrast.tsv	cell
+C240	ligand	246 ITPR2	246	246	ok		results/ligand_site/module_contrast.tsv	cell
+C241	ligand	262 ITPR3	262	262	ok		results/ligand_site/module_contrast.tsv	cell
+C242	ligand	with the luminal loop left in, ITPR1 reverses to core > pore by 0.055	0.055	0.055	ok		results/ligand_site/module_contrast.tsv	cell
+C243	ligand	ITPR2 by 0.0445	0.0445	0.0445	ok		results/ligand_site/module_contrast.tsv	cell
+C244	ligand	ITPR3 by 0.0558	0.0558	0.0558	ok		results/ligand_site/module_contrast.tsv	cell
+C246	ligand	3,527 eukaryotic reference proteomes were swept for PI-PLC	3527	3527	ok		results/ligand_site/plc_repertoire.tsv	count
+C246b	ligand	763 of them are the vertebrate set	763	763	ok		results/ligand_site/plc_repertoire.tsv	count
+C246c	ligand	760 of those 763 carry a PI-PLC - the search's positive control	760	760	ok		results/ligand_site/pathway_cooccurrence.tsv	cell
+C247	ligand	64 of them carry an ITPR and no PI-PLC	64	64	ok		results/ligand_site/pathway_cooccurrence.tsv	sum
+C248c	ligand	on 36 PLC-absent records	36	36	ok		results/ligand_site/deep_lineage_test.tsv	cell
+C248d	ligand	against 450 that carry one	450	450	ok		results/ligand_site/deep_lineage_test.tsv	cell
+C249	ligand	PLC-absent records sit at a median pore identity of 0.358	0.3582	0.3582	ok		results/ligand_site/deep_lineage_covariates.tsv	cell
+C250	ligand	against 0.589 for the rest	0.5886	0.5886	ok		results/ligand_site/deep_lineage_covariates.tsv	cell
+C251	ligand	all 36 PLC-absent records matched on divergence	36	36	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
+C252	ligand	the matched within-pair difference is -0.0064	-0.0064	-0.0064	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
+C253	ligand	95 % CI -0.0161	-0.0161	-0.0161	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
+C254	ligand	to 0.0152	0.0152	0.0152	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
+C255	ligand	19 tips against 17	19	19	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
+C257	ligand	the ryanodine receptor control shifts by -0.0624 on the same instrument	-0.0624	-0.0624	ok		results/ligand_site/deep_lineage_ryr_control.tsv	grep
+T58	ligand	486 non-vertebrate records resolve both modules	486	486	ok		results/ligand_site/deep_lineage_panel.tsv	count

@@ -3,8 +3,10 @@
 ## 13.1 Three quarters of these genes are unreachable from any protein database
 
 Chapter 4 measured that **940 of 1,232 demonstrated genes, or 76.3 %, are not
-reachable by any protein-database search.** They are not hard to find, because
-no protein record of them exists.
+reachable by any protein-database search**, a count that includes the 309
+ryanodine receptor genes of the control cell; for the IP₃ receptor genes alone
+it is 744 of 923, or 80.6 %. They are not hard to find, because no protein
+record of them exists.
 
 That is a statement about databases rather than about biology, and it is
 easily the most immediately useful result in the thesis. Automated annotation

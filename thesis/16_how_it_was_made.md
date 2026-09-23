@@ -8,7 +8,7 @@ and the network. It reads and writes files, runs commands, inspects their
 output, and decides what to do next.
 
 **Claude Code did the following.** It designed the project plan and wrote it
-down as a task ledger with dependencies. It wrote all 377 Python files under
+down as a task ledger with dependencies. It wrote all 401 Python files under
 `scripts/`, which run to over a hundred thousand lines, together with the
 9,243 lines of the search application under `src/`. It audited the
 literature the project started from, claim by claim, against primary

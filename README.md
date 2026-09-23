@@ -17,13 +17,14 @@ built on (see [The Protein Variant Finder app](#the-protein-variant-finder-app))
 > elsewhere: a 503-genome census of the IP₃ receptor family*
 > ([`manuscript/`](manuscript/README.md), 60-page PDF); a long-form thesis
 > covering the same work in full ([`thesis/`](thesis/README.md), 190-page
-> PDF); and a literature review of the family
+> PDF); the same results as six separate papers, each with its own question,
+> controls and figures ([`papers/`](papers/README.md), 122 pages in all); and a
+> literature review of the family
 > ([`docs/ip3r_review_2026.pdf`](docs/ip3r_review_2026.pdf)).
 
-**Status:** the analyses and both documents are complete (35 of 37 planned
-tasks). Two tasks remain: splitting the results into a series of shorter
-papers (S26), and the public release with a DOI and preprint (S14b, which
-needs a human). See [Project status](#project-status).
+**Status:** the analyses and all three write-ups are complete (36 of 37
+planned tasks). One task remains: the public release with a DOI and preprint
+(S14b), which needs a human. See [Project status](#project-status).
 
 ---
 
@@ -135,7 +136,7 @@ directly, so a missing gene can be told apart from a missing database record.
 | Reference proteomes searched with profile models of both families | **7,691** (77.6 million proteins): 763 vertebrate and 6,928 other eukaryotes, plus 634 archaea and 3,537 bacteria |
 | Vertebrate genomes searched directly: one per taxonomic order, plus every species the databases left in doubt | **309** |
 | Non-vertebrate genomes, sampled most densely in the groups reported to lack the gene | **194** |
-| Vertebrate IP₃ receptor genes found and placed in a genome | **1,232**, with the ryanodine receptors measured alongside |
+| Vertebrate IP₃ receptor genes found and placed in a genome | **923**, with 309 ryanodine receptor genes measured alongside as the control |
 
 On this census the project builds a family tree of 134 representative
 proteins, tests how the three genes arose using the genes around them on the
@@ -437,8 +438,8 @@ databases. If those databases miss or mislabel a gene, every downstream study
 inherits the error.
 
 **What we found.** 55.0 % of full-length IP₃ receptor protein records carry no
-usable gene name, and 940 of the 1,232 genes this survey found in genomes
-(76.3 %) cannot be reached by any protein-database search. Whether a gene is
+usable gene name, and 744 of the 923 IP₃ receptor genes this survey found in
+genomes (80.6 %) cannot be reached by any protein-database search. Whether a gene is
 recorded correctly depends mainly on which pipeline annotated the genome: NCBI's
 curated RefSeq annotations have 98.8 % of loci complete, against 37.5 % for
 annotations deposited by submitters in GenBank. The ryanodine receptors are
@@ -624,6 +625,8 @@ results/<task>/            committed tables, figures and report.md per task
 manuscript/                the paper: hand-written sections + generated build
 manuscript_v1/             the first draft, frozen
 thesis/                    the long form: chapter sources + generated build
+papers/                    the six-paper series: one directory per paper,
+                           plus the assignment, rules and one claims ledger
 docs/                      background, literature review, session briefs,
                            analysis catalogue, review figures
 presets/                   bundled app queries
@@ -649,7 +652,7 @@ decisions for every task are in
 | Function & records | S10 annotation-bug validation · S11 structures · S12 expression · S17 constraint & variants · S18 annotation audit · S19 methods · S22 ligand site | ✅ |
 | Writing | S14a/S14c manuscript · S24 supplementary figures & figure audit · S25 thesis · S27 editorial pass | ✅ |
 | Revision | S28 legends, in-figure text, typesetting | ✅ |
-| Series | S26 the results regrouped as individual papers | ⏳ pending |
+| Series | S26 the results regrouped as six individual papers | ✅ |
 | Release | S14b Zenodo DOI, public repository, preprint | ⏳ pending, needs a human |
 
 What still needs a human before submission is listed in

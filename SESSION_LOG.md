@@ -4094,3 +4094,65 @@ stats were rebuilt against the revised figures.
 ### Next
 
 S26, the paper series. S14b stays human-gated.
+
+## 2026-09-23 — S26: the paper series
+
+**Task:** S26, the paper series (S14b stays human-gated). Data root attached
+(681 GB free).
+
+### What ran
+
+1. **The rules first.** `papers/paper_rules.md` (P1–P6, plus P5s for when a
+   directory may be split) was committed alone, as `86af396`, before any
+   results directory was assigned.
+2. **The assignment and its enforcement.** `s26_assignment.py` +
+   `s26_assign.py`: 38 results entries, 73 rows, two directories split under
+   P5s (S19's four halves go to four papers' controls; S24's supplementary
+   figures go to the papers whose data they draw). The cross-check against
+   `thesis/chapter_assignment.tsv` is now a build failure for an undeclared
+   departure; four are declared (methods, census v4, structures,
+   supplementary).
+3. **The machinery, generalised rather than forked.** Nine new stage modules
+   plus one configuration and one ledger module per paper. Shared code gained
+   defaulted parameters rather than copies: `s14_figures._copy_one`
+   (destination), `s14_deposit._notes` (generator name), `s25_pdf`
+   (`wrap_legends`/`check_legends` take a legend pattern; `check_log` was
+   extracted and is now also what the thesis's glyph guard calls, where it
+   had re-implemented the check inline).
+4. **The six papers**, drafted in parallel by six agents, each writing only its
+   own paper's directory, configuration and ledger module, from the thesis
+   chapters, the manuscript sections and the task reports, with the build as
+   the acceptance test.
+5. **Integration.** Two PDF defects that the writers reported were fixed at
+   the source: a multi-file figure's panels now share one height budget, and
+   the stitch sorts legends into numbering order. The page read then found
+   that legends were in typing order, not numbering order, in four papers
+   (D85's defect again). Two guard cases were rebuilt so that they fail for
+   the reason declared. Every page of all six PDFs was read on contact
+   sheets.
+6. **Corrections to earlier documents (D87).** The deep constraint layer
+   ranks third of four classifiers, not second: `s17_report_variants.py` now
+   computes the ordinal, and the S17 report, the manuscript and the thesis
+   are fixed. The manuscript's reachability headline counted the RyR control
+   genes: it now reads 744 of 923 IP₃ receptor genes in the abstract, and the
+   manuscript, thesis and README all say what the 1,232 contain. The
+   thesis's claims ledger caught its own Chapter 16 script count moving from
+   377 to 401, which was updated.
+
+### Result
+
+`python scripts/s26_assemble.py` exits 0: 21/21 guards fire with their own
+message and leave 673 committed files unchanged; 702/702 claims are
+re-verified and stated in every paper that lists them; P1, P2, P3, P6 and
+the citation graph pass; 45,175 words and 122 pages across six papers
+(range 26, origin 26, retention 19, archive 20, constraint 20, ligand 11).
+The manuscript (276/276 claims) and the thesis (30/30 guards, 234/234 claims)
+were rebuilt with the corrections.
+
+### Next
+
+Nothing autonomous remains. S14b (DOI, public repository, preprints) needs a
+human, who now has three write-ups to choose between. Three new Emergent rows
+are open: the PI-PLC panel's 3,520 vs 3,527, the appearance rule's blind spot
+for percentages and scientific notation, and the manuscript ledger's missing
+row for its corrected headline.

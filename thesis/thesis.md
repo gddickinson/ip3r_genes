@@ -1849,7 +1849,9 @@ annotation is worst.
 genome by cell rather than per record, with the genome sweep as ground truth
 for where the genes are, **940 of 1,232 demonstrated genes, or 76.3 %, are not
 reachable by any protein-database search.** They are not hard to find. No
-protein record of them exists.
+protein record of them exists. The 1,232 include the 309 ryanodine receptor
+genes of the control cell; for the IP₃ receptor genes alone the figure is 744
+of 923, or 80.6 %, against 196 of 309 for the control.
 
 That is not an artefact of the margin species. Split by why each genome is in
 scope, the rate is 74.3 % for order representatives against 78.5 % for margin
@@ -5211,7 +5213,8 @@ because a position conserved across 500 million years of paralogue divergence
 and across the eukaryotes discriminates pathogenic from benign better than a
 position merely invariant across 260 vertebrate orthologues of the same gene.
 A resource for this family should quote the family-wide layer, and the
-instrument this chapter was built around is the second best of four.
+instrument this chapter was built around ranks third of four, behind both
+layers that trade depth for breadth.
 
 **The whole-protein control is why the first column cannot be read alone.**
 Every layer also separates pathogenic positions from the average residue, but
@@ -5713,8 +5716,10 @@ and this is the first measurement in the project to ask the second question.
 ## 13.1 Three quarters of these genes are unreachable from any protein database
 
 Chapter 4 measured that **940 of 1,232 demonstrated genes, or 76.3 %, are not
-reachable by any protein-database search.** They are not hard to find, because
-no protein record of them exists.
+reachable by any protein-database search**, a count that includes the 309
+ryanodine receptor genes of the control cell; for the IP₃ receptor genes alone
+it is 744 of 923, or 80.6 %. They are not hard to find, because no protein
+record of them exists.
 
 That is a statement about databases rather than about biology, and it is
 easily the most immediately useful result in the thesis. Automated annotation
@@ -6598,7 +6603,7 @@ launders an assumption into a result.
 
 **A comparison that has to be sayable is the one that goes badly.** Several
 chapters here report a result against their own design. The constraint chapter
-finds the deep layer it was built around is the second best of four. The
+finds the deep layer it was built around ranks third of four. The
 ligand-site chapter finds the module that names the family is the less
 constrained of two. The annotation chapter finds the family is not recorded
 worse than its sister. Each of those had to be as easy to print as its
@@ -7390,7 +7395,7 @@ and the network. It reads and writes files, runs commands, inspects their
 output, and decides what to do next.
 
 **Claude Code did the following.** It designed the project plan and wrote it
-down as a task ledger with dependencies. It wrote all 377 Python files under
+down as a task ledger with dependencies. It wrote all 401 Python files under
 `scripts/`, which run to over a hundred thousand lines, together with the
 9,243 lines of the search application under `src/`. It audited the
 literature the project started from, claim by claim, against primary

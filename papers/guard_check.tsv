@@ -1,0 +1,22 @@
+guard	expected_message	fired	message_matched	verdict	said
+assign: a results entry nobody assigned (P5)	neither assigned	1	1	fired	[FAIL] results/zz_new: neither assigned to a paper nor excluded (P5)
+assign: a file in a split directory no group matches (P5s)	matches 0 file groups	1	1	fired	[FAIL] results/methods/zz_stray.tsv: matches 0 file groups, must match exactly one (P5s)
+assign: a departure from the thesis nobody declared	departure is not declared	1	1	fired	[FAIL] results/census_v4: thesis places it in chapter 4 (-> retention), the series in archive, and the departure is not declared
+rules: a question with an 'and' in it (P1)	contains 'and'	1	1	fired	[FAIL] range: the question contains 'and' (P1): Where is it, and why?
+rules: a control measured in a sibling paper (P2)	(P2)	1	1	fired	[FAIL] range: control 'a borrowed control' lives in results/phylogeny/au_test.tsv, primary in 'origin' (P2)
+rules: a standalone claim resting on a sibling's table (P6)	does not stand alone	1	1	fired	[FAIL] archive: standalone claim AR33 rests on results/genome_manifest.tsv, primary in 'retention': the paper does not stand alone (P6)
+rules: a paper citing a later paper	not earlier in the submission	1	1	fired	[FAIL] range cites ligand, which is not earlier in the submission order
+rules: two papers citing each other	citation cycle	1	1	fired	citation cycle: range -> origin -> range
+figures: three main figures (P4)	P4 allows	1	1	fired	[FAIL] range: 3 main figures; P4 allows 4 to 7
+figures: a figure drawn from a sibling's results (P5)	(P5)	1	1	fired	[FAIL] range: figure borrowed draws results/phylogeny/figures/sister_au, which is primary in 'origin' (P5)
+figures: a figure no body sentence mentions (R3)	no body sentence	1	1	fired	[FAIL] range: figure enumeration_twin is placed but no body sentence refers to it (R3)
+prose: an em-dash in a section	em-dash	1	1	fired	[FAIL] range/02_results.md: 1 em-dash(es) in a chapter source
+prose: a results heading with no finite verb	results heading has no finite verb	1	1	fired	[FAIL] range/02_results.md: results heading has no finite verb: 'The shape of the census'
+prose: a legend opening with a noun phrase (R1)	opens without a finite verb	1	1	fired	[FAIL] range/05_figure_legends.md: legend range opens without a finite verb (R1): 'Distribution of lengths by kingdom.'
+stitch: a cited key with no reference row	no row in references.tsv	1	1	fired	[FAIL] range: 'cited keys with no row in references.tsv: R999'
+stitch: a companion citation to no paper	names no paper	1	1	fired	[FAIL] range: {paper:nowhere} names no paper
+claims: a number the table does not produce	expected '999999'	1	1	fired	[FAIL] RA01 recall of the family call is 24 of 25: expected '999999', found '24'
+claims: a claim its paper does not state	does not state	1	1	fired	[FAIL] RAZZ never stated: expected '1236', found '1236' (range does not state '1236': the number is missing from the text or the claim is padding)
+claims: one number declared under two identifiers	declared twice	1	1	fired	[FAIL] RAZY and RA01 are the same claim declared twice; carry one of them instead
+pdf: a legend set as body text (R4)	not wrapped	1	1	fired	legend not wrapped in its own typography: '**Fig. 1.** The figure shows a thing.'
+pdf: a glyph the document font lacks	missing characters	1	1	fired	1 distinct missing characters: the document font lacks a glyph the text uses

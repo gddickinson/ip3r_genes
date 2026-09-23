@@ -117,8 +117,8 @@ variant. Scored as a classifier of pathogenic/likely-pathogenic against
 benign/likely-benign on the one fixed set of 44 versus 34 positions that
 every layer scores, the ranking is **family 0.872 > vertebrate 0.854 > deep
 0.758 > shallow 0.684** (Extended Data Fig. 12) — against this task's own
-design, the 249–265-orthologue sets are the second-best of four, and the
-whole-family layer that ignores paralogue identity is the best. Site-wise
+design, the 249–265-orthologue sets rank third of four, behind both breadth
+layers, and the whole-family layer that ignores paralogue identity is the best. Site-wise
 selection agrees with constraint and adds nothing new: FEL finds 5,766
 purifying sites across the three paralogues and **one** diversifying site,
 inside its own false-discovery budget.

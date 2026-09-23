@@ -1,0 +1,136 @@
+id	section	claim	expected	found	verdict	note	source	op
+OR01	origin	the neighbourhood analysis covers 2,144 loci	2144	2144	ok		results/synteny/synteny_stats.json	json
+OR02	origin	274 assemblies carry a gene annotation to read	274	274	ok		results/synteny/synteny_stats.json	json
+OR03	origin	the replication runs over 309 vertebrate genomes	309	309	ok		results/duplication/duplication_stats.json	json
+OR04	origin	the species tree has 29 named internal nodes	29	29	ok		results/reconciliation/species_tree_calibrations.tsv	count
+OR05	origin	the reconciliation maps 57 vertebrate tips	57	57	ok		results/reconciliation/reconciliation_summary.tsv	cell
+OR06	origin	ITPR1+ITPR2 costs 114.02 log-likelihood units	114.02	114.02	ok		results/phylogeny/au_test.tsv	cell
+OR07	origin	ITPR1+ITPR3 costs 113.98 log-likelihood units	113.98	113.98	ok		results/phylogeny/au_test.tsv	cell
+OR08	origin	the AU 95 % confidence set holds 2 topologies	2	2	ok		results/methods/inference_summary.json	json
+OR09	origin	nine claim clades are held under --bnni	9	9	ok		results/phylogeny/bnni_comparison.tsv	count
+OR10	origin	within-ITPR1 similarity is 411-fold its null	411	410.8862	ok		results/synteny/pair_stats.tsv	cell
+OR11	origin	within-ITPR3 similarity is 216-fold its null	216	215.5068	ok		results/synteny/pair_stats.tsv	cell
+OR12	origin	168,241 pairs of ITPR and RyR loci were compared	168241	168241	ok		results/synteny/pair_stats.tsv	sum
+OR13	origin	the caller was calibrated on 503 confirmed loci	503	503	ok		results/synteny/synteny_stats.json	json
+OR14	origin	726 random windows were offered to the caller	726	726	ok		results/synteny/synteny_stats.json	json
+OR15	origin	the caller called 6 of them	6	6	ok		results/synteny/synteny_stats.json	json
+OR16	origin	932 matched random neighbourhoods form the null	932	932	ok		results/duplication/duplication_stats.json	json
+OR17	origin	ITPR1 vs ITPR2 links in 80.6 % of genomes	141 (80.6%)	141 (80.6%)	ok		results/duplication/report.md	grep
+OR18	origin	ITPR1 vs ITPR3 links in 58.6 % of genomes	89 (58.6%)	89 (58.6%)	ok		results/duplication/report.md	grep
+OR19	origin	the random-window link rate is 2.6 %	2.7% against a 2.6% background	2.7% against a 2.6% background	ok		results/duplication/report.md	grep
+OR20	origin	ITPR1 vs ITPR2 replicates in ten classes	10	10	ok		results/duplication/duplication_stats.json	json
+OR21	origin	ITPR1 vs ITPR3 replicates in nine classes	9	9	ok		results/duplication/duplication_stats.json	json
+OR22	origin	ITPR2 vs ITPR3 does not beat background, p 0.554	0.554	0.553597	ok		results/duplication/duplication_stats.json	json
+OR23	origin	the vertebrate-dated GRM link is in 84 genomes	84	84	ok		results/duplication/duplication_stats.json	json
+OR24	origin	the BHLHE link is vertebrate-dated in 2 genomes	2	2	ok		results/duplication/duplication_stats.json	json
+OR25	origin	crown Vertebrata estimates run from 480 Ma	480	480.0	ok		results/reconciliation/species_tree_calibrations.tsv	cell
+OR26	origin	to 615 Ma	615	615.0	ok		results/reconciliation/species_tree_calibrations.tsv	cell
+OR27	origin	around a point age of 563 Ma	563	563.0	ok		results/reconciliation/species_tree_calibrations.tsv	cell
+OR28	origin	all 5 topologies place the deepest dup at Vertebrata with the cyclostome loci kept	5	5	ok		results/reconciliation/reconciliation_summary.tsv	count
+OR29	origin	the weakest vertebrate-subtree node is 17.4/54	17.4/54	17.4/54	ok		results/reconciliation/duplication_placement.tsv	cell
+OR30	origin	the subtree has 112 edges to re-root at	all **112 of its edges**	all **112 of its edges**	ok		results/reconciliation/report.md	grep
+OR31	origin	the minimum-event rooting needs 64 events	64	64	ok		results/reconciliation/rooting_check.tsv	cell
+OR32	origin	the outgroup rooting needs 67 events	67	67	ok		results/reconciliation/rooting_check.tsv	cell
+OR33	origin	the shortest cyclostome tip is 0.957 of median	0.957	0.957	ok		results/reconciliation/branch_lengths.tsv	cell
+OR34	origin	the longest cyclostome tip is 1.045 of median	1.045	1.045	ok		results/reconciliation/branch_lengths.tsv	cell
+OR35	origin	six cyclostome loci are in the tree	6	6	ok		results/reconciliation/cyclostome_loci.tsv	count
+OR36	origin	the reconciliation implies 47 lost cells	47	47	ok		results/methods/inference_summary.json	json
+OR37	origin	26 of them are sampling artefacts	26	26	ok		results/methods/inference_summary.json	json
+OR38	origin	0 are corroborated	0	0	ok		results/methods/inference_summary.json	json
+OR39	origin	73 teleost genomes are above the bar	73	73	ok		results/duplication/duplication_stats.json	json
+OR40	origin	teleosts carry 1.041 ITPR2	1.041	1.041	ok		results/duplication/duplication_stats.json	json
+OR41	origin	teleosts carry 1.041 ITPR3	1.041	1.041	ok		results/duplication/duplication_stats.json	json
+OR42	origin	97.3 % of teleosts carry two ITPR1	| 5.82 | 97.3% |	| 5.82 | 97.3% |	ok		results/duplication/report.md	grep
+OR43	origin	four pre-3R ray-finned genomes	4	4	ok		results/duplication/duplication_stats.json	json
+OR44	origin	71 teleost genomes carry two ITPR1 copies	71	71	ok		results/duplication/duplication_stats.json	json
+OR45	origin	same-contig copies sit a median 8,870,578 bp apart	8870578	8870578	ok		results/duplication/duplication_stats.json	json
+OR46	origin	the closest pair is 535,374 bp apart	535374	535374	ok		results/duplication/duplication_stats.json	json
+OR47	origin	49 two-copy genomes have both copies flanked	49	49	ok		results/duplication/duplication_stats.json	json
+OR48	origin	anchors come from 6 orders	6	6	ok		results/duplication/duplication_stats.json	json
+OR49	origin	bait and block agree six times of six	6	6	ok		results/duplication/duplication_stats.json	json
+OR50	origin	99.89 % of junctions are spliceable	**99.89 %**	**99.89 %**	ok		results/gene_architecture/report.md	grep
+OR52	origin	ITPR1 carries 8,250 bp of coding sequence	8250	8250.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR53	origin	ITPR2 carries 8,100 bp	8100	8100.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR54	origin	ITPR3 carries 8,008 bp	8008	8008.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR55	origin	ITPR1 mean exon length 141.4 bp	141.4	141.4	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR56	origin	ITPR2 mean exon length 142.2 bp	142.2	142.2	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR57	origin	ITPR3 mean exon length 137.8 bp	137.8	137.8	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR58	origin	ITPR1 spans a median 147,445 bp	147445	147445.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR59	origin	ITPR2 spans 243,700 bp	243700	243700.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR60	origin	ITPR3 spans 58,175 bp	58175	58175.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR61	origin	the RyR control carries 14,910 bp	14910	14910.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR62	origin	all 14 anchor residues land in one column	14	14	ok		results/gene_architecture/frame_anchors.tsv	count
+OR63	origin	ITPR1 vs ITPR2 shared introns 87.6-fold	87.6	87.648	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR64	origin	ITPR1 vs ITPR3 85.6-fold	85.6	85.616	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR65	origin	ITPR2 vs ITPR3 88.4-fold	88.4	88.434	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR66	origin	the RyR core holds 91 positions at 90 %	91	91	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR67	origin	406 termini fall inside an exon	406	406	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR68	origin	353 termini fall inside an intron	353	353	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR69	origin	the tandem detector finds 342 duplicated cells	342	342	ok		results/gene_architecture/gene_architecture_stats.json	json
+OR70	origin	and wrongly calls 21 single-copy ones	21	21	ok		results/gene_architecture/gene_architecture_stats.json	json
+C07	range,origin	the census holds 18,065 records	18065	18065	ok		results/census_v6/census_v6_stats.json	json
+C51	origin	134 representatives were aligned	134	134	ok		results/msa_v2/align_stats.json	json
+C52	origin	MAFFT L-INS-i gave 11,777 columns	11777	11777	ok		results/msa_v2/align_stats.json	json
+C53	origin	trimAl kept 1,797 columns	1797	1797	ok		results/msa_v2/align_stats.json	json
+C54	origin	96.8 % of kept columns are parsimony-informative	96.8	96.8	ok		results/msa_v2/align_stats.json	json
+C55	origin	the ML model is Q.insect+R7	Q.insect+R7	Q.insect+R7	ok		results/phylogeny/tree_stats.json	json
+C57	origin	69.5 % of internal nodes clear both support thresholds	69.5	69.5	ok		results/phylogeny/tree_stats.json	json
+C60	origin	AU does not reject ITPR2+ITPR3 (p = 0.476)	0.476	0.476	ok		results/phylogeny/au_test.tsv	cell
+C61	origin	AU does not reject the ML tree (p = 0.525)	0.525	0.525	ok		results/phylogeny/au_test.tsv	cell
+T41	origin	at 76 % gaps	76.23	76.23	ok		results/msa_v2/align_stats.json	json
+T43	origin	15.3 % of them	15.3	15.3	ok		results/msa_v2/align_stats.json	json
+T45	origin	within-paralogue identity is 0.910	**0.910**	**0.910**	ok		results/msa_v2/report.md	grep
+T46	origin	identity to the outgroup is 0.253	**0.253**	**0.253**	ok		results/msa_v2/report.md	grep
+T48	origin	the tree has 131 internal nodes	| internal nodes | 131 |	| internal nodes | 131 |	ok		results/phylogeny/report.md	grep
+T49	origin	91 of them clear both support thresholds	| both thresholds | 91 |	| both thresholds | 91 |	ok		results/phylogeny/report.md	grep
+T50	origin	39 tips agree with their census label	39	39	ok		results/phylogeny/membership_audit.tsv	count
+T51	origin	no tip is reassigned by the tree	0	0	ok		results/phylogeny/membership_audit.tsv	count
+T52	origin	5 tips are left unplaced	5	5	ok		results/phylogeny/membership_audit.tsv	count
+C63	origin	the ITPR x RyR class sits at the null (mean J 0.0002)	0.0002	0.0002	ok		results/synteny/pair_stats.tsv	cell
+C64	origin	the flank caller is 405 of 405 correct	405	405	ok		results/synteny/synteny_stats.json	json
+C66	origin	it places 131 loci the sequence sweep could not	131	131	ok		results/synteny/synteny_stats.json	json
+C67	origin	ITPR1's neighbourhood is paralogous to ITPR2's in 141 genomes	141	141	ok		results/duplication/duplication_stats.json	json
+C68	origin	out of 175 genomes with both neighbourhoods	175	175	ok		results/duplication/duplication_stats.json	json
+C69	origin	ITPR1 vs ITPR3: 89 of 152	89	89	ok		results/duplication/duplication_stats.json	json
+C70	origin	ITPR2 vs ITPR3: 4 of 149, exactly the background	4	4	ok		results/duplication/duplication_stats.json	json
+C73	origin	teleosts carry a mean of 1.97 ITPR1 copies	1.973	1.973	ok		results/duplication/duplication_stats.json	json
+C75	origin	the same genomes carry 5.82 ryanodine receptors	5.822	5.822	ok		results/duplication/duplication_stats.json	json
+C76	origin	the two copies are disjoint in 45 of 49 genomes (tetrapod)	45	45	ok		results/duplication/duplication_stats.json	json
+C77	origin	and 46 of 49 against a pre-3R ray-finned reference	46	46	ok		results/duplication/duplication_stats.json	json
+C78	origin	all 705 cross-anchor assignments agree	705	705	ok		results/duplication/duplication_stats.json	json
+C79	origin	20 of 71 two-copy genomes place the copies on different contigs	20	20	ok		results/duplication/duplication_stats.json	json
+C80	origin	the ITPR2/ITPR3 split is on the gnathostome stem, 462-563 Ma	Gnathostomata	Gnathostomata	ok		results/reconciliation/duplication_placement.tsv	cell
+C81	origin	its younger bracket is 462 Ma	462.0	462.0	ok		results/reconciliation/duplication_placement.tsv	cell
+C82	origin	the ITPR1 split is on the vertebrate stem	Vertebrata	Vertebrata	ok		results/reconciliation/duplication_placement.tsv	cell
+C181	origin	1,378 genes are in the architecture scope	1378	1378	ok		results/gene_architecture/gene_architecture_stats.json	json
+C182	origin	they sit in 189 contiguous genomes	189	189	ok		results/gene_architecture/gene_architecture_stats.json	json
+C183	origin	112,254 junctions were read	112254	112254	ok		results/gene_architecture/gene_architecture_stats.json	json
+C186	origin	1,035 junctions carry a minor splice site	1035	1035	ok		results/gene_architecture/junction_quality.tsv	cell
+C187	origin	188,146 independently annotated coding edges were compared	188146	188146	ok		results/gene_architecture/gene_architecture_stats.json	json
+C188	origin	177,710 of them land exactly on a sweep exon boundary	177710	177710	ok		results/gene_architecture/boundary_concordance_summary.tsv	cell
+C190	origin	across 164 genomes	164	164	ok		results/gene_architecture/gene_architecture_stats.json	json
+C193	origin	ITPR1 has a median 58 coding exons	58.0	58.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C194	origin	ITPR2 57	57.0	57.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C195	origin	ITPR3 58	58.0	58.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C199	origin	a 4.2-fold spread of genomic span	4.19	4.19	ok		results/gene_architecture/gene_architecture_stats.json	json
+C202	origin	the ryanodine receptor control is a 104-exon gene	104.0	104.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C204	origin	at a mean exon length of 144 bp against the family's 138-142	144.5	144.5	ok		results/gene_architecture/gene_architecture_stats.json	json
+C205	origin	ITPR3 is shorter than ITPR1 in 161 of 182 genomes	161	161	ok		results/gene_architecture/paired_comparisons.tsv	cell
+C206	origin	and shorter than ITPR2 in 146 of 181	146	146	ok		results/gene_architecture/paired_comparisons.tsv	cell
+C207	origin	ITPR1 and ITPR2 share a median 48 intron positions	48.0	48.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C208	origin	ITPR1 and ITPR3 46	46.0	46.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C209	origin	ITPR2 and ITPR3 49	49.0	49.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C210	origin	against 0.55 expected by chance	0.55	0.55	ok		results/gene_architecture/gene_architecture_stats.json	json
+C214	origin	significant in all 183 ITPR1/ITPR2 genomes	183	183	ok		results/gene_architecture/gene_architecture_stats.json	json
+C215	origin	all 182 ITPR1/ITPR3 genomes	182	182	ok		results/gene_architecture/gene_architecture_stats.json	json
+C216	origin	all 181 ITPR2/ITPR3 genomes	181	181	ok		results/gene_architecture/gene_architecture_stats.json	json
+C217	origin	an ITPR and a RyR share a median of one intron position	1.0	1.0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C218	origin	in 0 of 188 ITPR1/RyR genomes at p < 0.05	0	0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C219	origin	0 of 184 ITPR2/RyR genomes	0	0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C220	origin	0 of 183 ITPR3/RyR genomes	0	0	ok		results/gene_architecture/gene_architecture_stats.json	json
+C221	origin	each paralogue has 48-49 positions in over 90 % of its genomes	49	49	ok		results/gene_architecture/gene_architecture_stats.json	json
+C260	origin	291 split or fragmentary loci were scored	291	291	ok		results/gene_architecture/gene_architecture_stats.json	json
+C263	origin	228 carry a terminus inside an exon	228	228	ok		results/gene_architecture/gene_architecture_stats.json	json
+C264	origin	3 are broken entirely at real junctions	3	3	ok		results/gene_architecture/gene_architecture_stats.json	json
+C265	origin	1,448 internal termini were scored	1448	1448	ok		results/gene_architecture/gene_architecture_stats.json	json
+C268	origin	689 on a boundary the gene model carries	689	689	ok		results/gene_architecture/gene_architecture_stats.json	json

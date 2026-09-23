@@ -222,16 +222,20 @@ def _claims_padded():
 
 
 def _pdf_dropped_glyph():
-    """The glyph guard, exercised on the log text it reads."""
+    """The glyph guard, exercised on the log text it reads.
+
+    Calls `s25_pdf.check_log`, the function the PDF stage runs, rather than
+    a copy of it: until S26 this case re-implemented the check inline and so
+    could not have caught a regression in the real one.
+    """
+    import s25_pdf
     log = ("Overfull \\hbox\n"
-           "Missing character: There is no ∮ in font texgyretermes-regular!\n")
-    missing = sorted({ln.strip() for ln in log.split("\n")
-                      if "Missing character" in ln})
-    if missing:
-        print(f"[s25 pdf] {len(missing)} distinct missing characters — the "
-              f"document font lacks a glyph the text uses", file=sys.stderr)
-        return 1
-    return 0
+           "Missing character: There is no \u222e in font "
+           "texgyretermes-regular!\n")
+    problems = s25_pdf.check_log(log)
+    for ln in problems:
+        print(f"[s25 pdf] {ln}", file=sys.stderr)
+    return 1 if problems else 0
 
 
 def _prose_em_dash():

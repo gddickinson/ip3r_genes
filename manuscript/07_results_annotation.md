@@ -62,7 +62,9 @@ gene.
 assemblies, **940 (76.3 %) cannot be reached by any protein-database
 search** — 386 in species with no reference proteome, 248 where only
 fragmentary records exist, and 286 where records exist but none resolves to
-that paralogue. This is not an artefact of the margin species the scope was
+that paralogue. The 1,232 include the 309 ryanodine receptor genes of the
+control cell; for the *ITPR* genes alone the figure is 744 of 923 (80.6 %),
+against 196 of 309 for the control. This is not an artefact of the margin species the scope was
 extended for: 74.3 % for order representatives against 78.5 % for margin
 species.
 
