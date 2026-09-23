@@ -1,4 +1,4 @@
-# The IP₃ receptor gene family across 503 genomes
+# The IP₃ receptor calcium channel is an ancient eukaryotic gene family, lost repeatedly outside the animals but kept in all three copies by every vertebrate
 
 This repository holds a systematic survey of one gene family, the **IP₃
 receptors** (genes *ITPR1*, *ITPR2* and *ITPR3* in humans), across 7,691
