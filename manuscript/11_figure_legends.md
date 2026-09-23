@@ -34,14 +34,23 @@ the largest non-blue *fraction* is Lepidosauria's, on five genomes.
 **Fig. 3 | One family, three vertebrate paralogues, rooted on the ryanodine
 receptors.** Maximum-likelihood phylogram of 134 representative proteins over
 1,797 trimmed alignment columns under Q.insect+R7, rooted on the six
-ryanodine receptor sequences. Coloured boxes mark the three vertebrate
-paralogue clades and the outgroup, each labelled with its tip count and its
-SH-aLRT/UFBoot support; the vertical bars on the right name the taxonomic
-grades of the tips outside them. Filled circles mark nodes clearing SH-aLRT
-≥ 80 and UFBoot ≥ 95. The five `100/100` labels on the backbone are the two ancestors of each
-boxed clade: the three extended paralogue clades — each core clade plus the
-basal vertebrate tips the tree nests with it — an inner *ITPR1* node of 15
-tips, and, deepest, the 32-tip node uniting *ITPR2* and *ITPR3*. Scale bar 0.5 substitutions per site.
+ryanodine receptor sequences (purple box); every other protein is an IP₃
+receptor. Each coloured box is one paralogue's whole clade, which holds 19
+proteins for *ITPR1*, 13 for *ITPR2* and 19 for *ITPR3*; each clade is
+supported at 100/100 (SH-aLRT/UFBoot, printed beside the box). Filled coloured dots are proteins
+whose database record names the paralogue; open circles are seven shark,
+chimaera and coelacanth proteins whose records name none, placed by the tree
+(four in *ITPR1*, two in *ITPR2*, one in *ITPR3*). Counted on names alone, the
+largest *ITPR1* clade holds 13 proteins at 47.8/95, because those unnamed genes
+sit interleaved at its base. The six grey vertebrate proteins outside the
+boxes are hagfish and lamprey genes whose paralogue cannot be assigned: four
+form their own clade (99.5/100) branching first among the 57 vertebrate
+proteins, and two join the *ITPR2* + *ITPR3* clade at 83.1/77. Grey proteins
+above the vertebrates are the invertebrate, protist, plant and fungal
+receptors, bracketed and counted on the right. Backbone numbers give the
+support of the nodes joining the clades; the two weak values are where the
+jawless-fish proteins attach. Filled black circles mark nodes clearing
+SH-aLRT ≥ 80 and UFBoot ≥ 95. Scale bar 0.5 substitutions per site.
 
 **Fig. 4 | Where the three vertebrate paralogues came from.** (**a**) The
 fraction of genomes in which each pair of IP₃ receptor neighbourhoods carries

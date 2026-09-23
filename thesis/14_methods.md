@@ -6,7 +6,7 @@ A paper's methods section says what was done. It has to, because a reader
 needs to reproduce it. It cannot say why each threshold is the number it is,
 and for this project that is where most of the work went.
 
-89 methodological decisions were recorded across 36 working sessions,
+91 methodological decisions were recorded across 37 working sessions,
 numbered as they were made. Several of them changed an answer.
 Several were made, tested and overturned. None of them has ever been written
 out as prose, and this chapter is that: not a list, but the arguments in the
@@ -255,7 +255,7 @@ worse than its sister. Each of those had to be as easy to print as its
 opposite, and the report generators are written so that it is.
 
 **Every load-bearing number is declared with the table it comes from and the
-operation that recovers it.** The manuscript carries 276 such declarations and
+operation that recovers it.** The manuscript carries 287 such declarations and
 this thesis carries its own, through the same engine rather than a fork, so a
 number quoted in both documents is recovered once and cannot disagree between
 them.
@@ -298,7 +298,7 @@ the build said so.
 
 ## 14.7 Four rules are specific to this family
 
-Four of the 89 recorded decisions are about this family and could not have
+Four of the 91 recorded decisions are about this family and could not have
 been ported from anywhere.
 
 **Separating IP₃ from ryanodine receptors is a positive test at every stage.**

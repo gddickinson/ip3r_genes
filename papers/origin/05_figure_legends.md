@@ -1,13 +1,24 @@
 ## Figure legends
 
 **{fig:tree}.** A maximum-likelihood tree of 134 representatives places the
-three vertebrate paralogues in three clades, with the ryanodine receptors at
-the root. Branches are drawn in neutral ink, the paralogue clades and the
-outgroup are boxed, and a filled dot marks every node that clears both
-SH-aLRT ≥ 80 and UFBoot ≥ 95. No tip is ringed, because the relabelling rule
-moved no tip. The non-vertebrate grades sit between the outgroup and the
-vertebrates, so the tree roots the family and places the paralogues in one
-analysis.
+three vertebrate paralogues in three clades, rooted on the six ryanodine
+receptors in the purple box; every other protein is an IP₃ receptor. Each
+coloured box is one paralogue's whole clade, which holds 19 proteins for
+*ITPR1*, 13 for *ITPR2* and 19 for *ITPR3*; each clade is supported at 100/100
+(SH-aLRT/UFBoot, printed beside the box). Filled coloured dots are proteins whose database record names
+the paralogue. Open circles are seven shark, chimaera and coelacanth proteins
+whose records name none; the tree places four in *ITPR1*, two in *ITPR2* and
+one in *ITPR3*. Counted on names alone, the largest *ITPR1* clade holds 13
+proteins at 47.8/95, because those unnamed genes sit interleaved at its base.
+The six grey vertebrate proteins outside the boxes are hagfish and lamprey
+genes whose paralogue cannot be assigned: four form their own clade (99.5/100)
+branching first among the 57 vertebrate proteins, and two join the *ITPR2* +
+*ITPR3* clade at 83.1/77. Grey proteins above the vertebrates are invertebrate,
+protist, plant and fungal receptors, bracketed and counted on the right.
+Backbone numbers give the support of the nodes joining the clades, and the two
+weak values mark where the jawless-fish proteins attach. A filled black dot
+marks every node that clears both SH-aLRT ≥ 80 and UFBoot ≥ 95, and no tip is
+ringed, because the relabelling rule moved no tip.
 
 **{fig:sister}.** Two of the three possible sister pairings fall outside the
 95 % confidence set of topologies. (a) Each constrained topology is plotted by

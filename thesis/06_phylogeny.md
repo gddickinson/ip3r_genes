@@ -259,21 +259,44 @@ disk.
 the ryanodine receptors, and if they did not come back as a clade the
 alignment underneath every downstream result would be the thing to doubt. They
 do, at maximal support. {fig:tree_ml_rooted} draws the result: the outgroup at
-the root, the three paralogue clades boxed within the vertebrates, the
-non-vertebrate grades between, and a dot on each node that both support tests
-accept.
+the root, the non-vertebrate grades next, and the 57 vertebrate proteins last,
+with a dot on each node that both support tests accept. Every protein outside
+the purple outgroup box is an IP₃ receptor. A coloured box marks
+everything the tree groups with one paralogue: the proteins whose records
+name it, and alongside them the proteins whose records name no paralogue at
+all. Seven of those unnamed proteins sit
+inside a box, and they are drawn as open circles, because the tree placed them
+and no database name did. Only six vertebrate proteins stay outside the boxes,
+and all six come from hagfish and lamprey (§6.9).
 
 ![](figures/tree_ml_rooted.png)
 
-**{fig:tree_ml_rooted}.** The rooted maximum-likelihood phylogram places every
-one of the 134 representatives, with the ryanodine receptors as the outgroup.
-Branches are in neutral ink, the three paralogue clades and the outgroup are
-boxed, and a filled dot marks every node clearing both support thresholds. No
-tip is ringed, because the relabelling rule described in §6.7 fires on none of
-them, and the legend entry for a ring appears only when a ring does, since a
-key naming a marker the figure does not carry asserts a correction that was
-never made. The tree matters because it answers a question the literature had
-left open: the review's own audit found no published, support-annotated
+**{fig:tree_ml_rooted}.** The rooted maximum-likelihood phylogram places all
+134 representatives, and every protein outside the purple box at the top is an
+IP₃ receptor; the purple box holds the six ryanodine receptors that root the
+tree. Each coloured box is one paralogue's whole clade, which holds 19 proteins
+for *ITPR1*, 13 for *ITPR2* and 19 for *ITPR3*, and each clade is supported at
+100/100 (SH-aLRT/UFBoot), as printed beside its box. A filled coloured dot marks a
+protein whose database record names its paralogue. An open circle marks one of
+seven proteins from sharks, a chimaera and the coelacanth whose records do not
+say which paralogue they are; the tree places four of them in *ITPR1*, two in
+*ITPR2* and one in *ITPR3*. Counted on names alone, the *ITPR1* core is only 13 tips at 47.8/95,
+because the unnamed shark and coelacanth genes sit interleaved at its base,
+so the paralogue is well supported only once they are counted. The six grey
+vertebrate proteins outside the boxes are from hagfish and lamprey, and their paralogue cannot be assigned: four form their
+own clade (99.5/100) that branches first among the 57 vertebrate proteins,
+and two join the *ITPR2* + *ITPR3* clade at 83.1/77, below the joint bar.
+Both groups hold hagfish and lamprey genes together, which is why §6.9 reads
+them as two lineages older than the split between those two fish. The
+grey proteins above the vertebrates are invertebrate, protist, plant and
+fungal receptors, bracketed and counted on the right; they carry no paralogue
+because the three paralogues arose inside the vertebrates. Numbers on the
+backbone are the supports of the nodes that join the clades, and the two weak
+ones are the nodes where the jawless-fish proteins attach. A filled black dot
+marks every node clearing both SH-aLRT ≥ 80 and UFBoot ≥ 95. No tip is
+ringed, because the relabelling rule described in §6.7 fires on none of them.
+The tree matters because it answers a question the literature had left open:
+the review's own audit found no published, support-annotated
 maximum-likelihood analysis with a ryanodine outgroup that fixes which two of
 the three paralogues are sisters.
 

@@ -8,7 +8,11 @@ likelihood under Q.insect+R7 (log-likelihood −215,452.0) recovers all three
 paralogue clades and the ryanodine receptor outgroup as monophyletic groups,
 with 69.5 % of the 131 internal nodes clearing both SH-aLRT ≥ 80 and
 UFBoot ≥ 95 (Fig. 3; the alignment itself, its identity structure and its
-per-sequence coverage are in Extended Data Fig. 4).
+per-sequence coverage are in Extended Data Fig. 4). Each paralogue clade also
+takes in seven shark, chimaera and coelacanth genes whose records name no
+paralogue, and with them all three clades are supported at 100/100; the only
+vertebrate genes the tree leaves outside all three are six from hagfish and
+lamprey.
 
 **The sister question has an answer.** The unconstrained tree groups
 *ITPR2* with *ITPR3*. Testing the three rooted arrangements against each

@@ -2650,21 +2650,44 @@ disk.
 the ryanodine receptors, and if they did not come back as a clade the
 alignment underneath every downstream result would be the thing to doubt. They
 do, at maximal support. Figure 6.6 draws the result: the outgroup at
-the root, the three paralogue clades boxed within the vertebrates, the
-non-vertebrate grades between, and a dot on each node that both support tests
-accept.
+the root, the non-vertebrate grades next, and the 57 vertebrate proteins last,
+with a dot on each node that both support tests accept. Every protein outside
+the purple outgroup box is an IP₃ receptor. A coloured box marks
+everything the tree groups with one paralogue: the proteins whose records
+name it, and alongside them the proteins whose records name no paralogue at
+all. Seven of those unnamed proteins sit
+inside a box, and they are drawn as open circles, because the tree placed them
+and no database name did. Only six vertebrate proteins stay outside the boxes,
+and all six come from hagfish and lamprey (§6.9).
 
 ![](figures/fig_6.6_tree_ml_rooted.png)
 
-**Figure 6.6.** The rooted maximum-likelihood phylogram places every
-one of the 134 representatives, with the ryanodine receptors as the outgroup.
-Branches are in neutral ink, the three paralogue clades and the outgroup are
-boxed, and a filled dot marks every node clearing both support thresholds. No
-tip is ringed, because the relabelling rule described in §6.7 fires on none of
-them, and the legend entry for a ring appears only when a ring does, since a
-key naming a marker the figure does not carry asserts a correction that was
-never made. The tree matters because it answers a question the literature had
-left open: the review's own audit found no published, support-annotated
+**Figure 6.6.** The rooted maximum-likelihood phylogram places all
+134 representatives, and every protein outside the purple box at the top is an
+IP₃ receptor; the purple box holds the six ryanodine receptors that root the
+tree. Each coloured box is one paralogue's whole clade, which holds 19 proteins
+for *ITPR1*, 13 for *ITPR2* and 19 for *ITPR3*, and each clade is supported at
+100/100 (SH-aLRT/UFBoot), as printed beside its box. A filled coloured dot marks a
+protein whose database record names its paralogue. An open circle marks one of
+seven proteins from sharks, a chimaera and the coelacanth whose records do not
+say which paralogue they are; the tree places four of them in *ITPR1*, two in
+*ITPR2* and one in *ITPR3*. Counted on names alone, the *ITPR1* core is only 13 tips at 47.8/95,
+because the unnamed shark and coelacanth genes sit interleaved at its base,
+so the paralogue is well supported only once they are counted. The six grey
+vertebrate proteins outside the boxes are from hagfish and lamprey, and their paralogue cannot be assigned: four form their
+own clade (99.5/100) that branches first among the 57 vertebrate proteins,
+and two join the *ITPR2* + *ITPR3* clade at 83.1/77, below the joint bar.
+Both groups hold hagfish and lamprey genes together, which is why §6.9 reads
+them as two lineages older than the split between those two fish. The
+grey proteins above the vertebrates are invertebrate, protist, plant and
+fungal receptors, bracketed and counted on the right; they carry no paralogue
+because the three paralogues arose inside the vertebrates. Numbers on the
+backbone are the supports of the nodes that join the clades, and the two weak
+ones are the nodes where the jawless-fish proteins attach. A filled black dot
+marks every node clearing both SH-aLRT ≥ 80 and UFBoot ≥ 95. No tip is
+ringed, because the relabelling rule described in §6.7 fires on none of them.
+The tree matters because it answers a question the literature had left open:
+the review's own audit found no published, support-annotated
 maximum-likelihood analysis with a ryanodine outgroup that fixes which two of
 the three paralogues are sisters.
 
@@ -6361,7 +6384,7 @@ A paper's methods section says what was done. It has to, because a reader
 needs to reproduce it. It cannot say why each threshold is the number it is,
 and for this project that is where most of the work went.
 
-89 methodological decisions were recorded across 36 working sessions,
+91 methodological decisions were recorded across 37 working sessions,
 numbered as they were made. Several of them changed an answer.
 Several were made, tested and overturned. None of them has ever been written
 out as prose, and this chapter is that: not a list, but the arguments in the
@@ -6610,7 +6633,7 @@ worse than its sister. Each of those had to be as easy to print as its
 opposite, and the report generators are written so that it is.
 
 **Every load-bearing number is declared with the table it comes from and the
-operation that recovers it.** The manuscript carries 276 such declarations and
+operation that recovers it.** The manuscript carries 287 such declarations and
 this thesis carries its own, through the same engine rather than a fork, so a
 number quoted in both documents is recovered once and cannot disagree between
 them.
@@ -6653,7 +6676,7 @@ the build said so.
 
 ## 14.7 Four rules are specific to this family
 
-Four of the 89 recorded decisions are about this family and could not have
+Four of the 91 recorded decisions are about this family and could not have
 been ported from anywhere.
 
 **Separating IP₃ from ryanodine receptors is a positive test at every stage.**
@@ -7395,7 +7418,7 @@ and the network. It reads and writes files, runs commands, inspects their
 output, and decides what to do next.
 
 **Claude Code did the following.** It designed the project plan and wrote it
-down as a task ledger with dependencies. It wrote all 401 Python files under
+down as a task ledger with dependencies. It wrote all 403 Python files under
 `scripts/`, which run to over a hundred thousand lines, together with the
 9,243 lines of the search application under `src/`. It audited the
 literature the project started from, claim by claim, against primary
@@ -7404,10 +7427,10 @@ manifests that declare them, and fetched 624 GB of assemblies and 60 GB of
 proteomes. It chose every threshold in the work and, in most cases, measured
 it rather than choosing it. It ran every search, alignment, tree, selection
 test and structural comparison. It produced all 444 committed result tables
-and all 112 committed figures. It recorded 89 numbered methodological
+and all 112 committed figures. It recorded 91 numbered methodological
 decisions as it made them. And it wrote the literature review, the
 manuscript, this thesis and every one of the 28 rendered task reports that
-stand behind them, which together run to 109,250 words.
+stand behind them, which together run to 109,294 words.
 
 Every figure in that list is measured rather than recalled. The build
 re-derives them from the repository on every run and commits them as
@@ -7457,11 +7480,11 @@ proves too large, is the rule that kept it finishable.** Several tasks were
 split this way, and each split is visible in the ledger as two rows with the
 reason recorded.
 
-**The ledger is 37 tasks, of which 35 are complete.** Each row carries the
+**The ledger is 37 tasks, of which 36 are complete.** Each row carries the
 task, its dependencies, its status with a date, and a results column holding
-the load-bearing numbers and the paths they came from. The two incomplete rows
-are the human-gated deposit, which needs a person to create a public archive
-record, and the paper series, which is the next task.
+the load-bearing numbers and the paths they came from. The one incomplete row
+is the human-gated deposit, which needs a person to create a public archive
+record.
 
 Alongside the ledger, a briefs document holds a detailed specification for
 every row: the goal, the steps, the completion criteria, the outputs, and, for
@@ -7469,7 +7492,7 @@ the later rows, what would make that task a failure. Claude Code wrote those
 briefs in advance of doing the work, which matters because a brief written
 after the fact describes what happened rather than what was intended.
 
-**36 sessions were logged across 10 working days**, the first on 2026-08-18 and
+**37 sessions were logged across 10 working days**, the first on 2026-08-18 and
 the most recent on 2026-09-23. The session log is a running technical record
 of what ran, what resulted and what is next. It is written for the next
 session rather than for a reader, and it is the mechanism by which an agent
@@ -7595,7 +7618,7 @@ separation**.
 
 Chapter 14 sets out the rules in full. What is worth saying here is that this
 is where the agent's own reasoning is most visible, and it is visible because
-it was written down at the time. **89 numbered decisions** are recorded in the
+it was written down at the time. **91 numbered decisions** are recorded in the
 roadmap, each with the incident that produced it. Several changed an answer.
 An attribution margin inherited from a sister project was measured and
 overturned, because it came from a family whose paralogues are half as similar
@@ -7680,8 +7703,8 @@ file of any of the three documents. A cited key with no reference row is a
 build error.
 
 **Every load-bearing number is declared with the table it comes from and the
-operation that recovers it.** The manuscript declares 276 and this thesis
-declares 220, through one shared engine so that a number quoted in both is
+operation that recovers it.** The manuscript declares 287 and this thesis
+declares 245, through one shared engine so that a number quoted in both is
 recovered once and cannot disagree between them. The thesis adds a second
 condition: a declared number must also appear in the chapter that declares it,
 which is what stops a ledger being padded with checks the text never makes.
@@ -7739,12 +7762,12 @@ change and the message, and the human's account and machine committed it.
 Three things this way of working did well.
 
 **It sustained a long, dependency-ordered plan.** 37 tasks with declared
-dependencies, worked one at a time to stated completion criteria across 36
+dependencies, worked one at a time to stated completion criteria across 37
 sessions, with the ledger and the session log carrying the state between them.
 An agent with no memory between sessions can do this only if the state lives
 in the repository, and the protocol is what puts it there.
 
-**It made the methodology explicit.** 89 numbered decisions with the incident
+**It made the methodology explicit.** 91 numbered decisions with the incident
 that produced each is a level of methodological record-keeping that is
 uncommon in a paper, and it exists because the agent had to write down why it
 did something in order to be able to follow the same rule three weeks later.

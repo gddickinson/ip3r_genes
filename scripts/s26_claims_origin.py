@@ -24,6 +24,7 @@ _BASE = dict(stratum="all", key="relaxed", window="fixed10")
 
 CARRY: list[str] = [
     # scope and tree
+    "C277", "C278", "C279", "C280", "C281", "C282", "C283", "C284", "C285", "C286", "C287",
     "C07", "C51", "C52", "C53", "C54", "C55", "C57", "C60", "C61",
     "T41", "T43", "T45", "T46", "T48", "T49", "T50", "T51", "T52",
     # neighbourhoods and paralogy

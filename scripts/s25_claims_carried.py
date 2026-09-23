@@ -12,7 +12,7 @@ also makes. A claim is carried only if the chapter's text actually states its
 value, which `s25_claims._in_chapter` re-checks on every build, so this table
 cannot quietly acquire a claim the thesis does not make.
 
-The manuscript's ledger has 276 rows. The ones not carried here are of two
+The manuscript's ledger has 287 rows. The ones not carried here are of two
 kinds: rows whose check is a phrase in a report rather than a value (those
 cannot be held to the appearance rule, which is about values), and numbers the
 thesis simply does not quote. Which rows those are is computable, because both
@@ -41,7 +41,9 @@ CARRIED: dict[int, list[str]] = {
         "C14", "C15", "C16", "C17", "C19", "C20", "C21", "C24"
     ],
     6: [
-        "C52", "C53", "C57", "C60"
+        "C52", "C53", "C57", "C60",
+        # the tree figure's clades, added when its boxes were redrawn
+        "C277", "C278", "C279", "C280", "C281", "C282", "C283", "C284", "C285", "C286", "C287"
     ],
     7: [
         "C51", "C63", "C64", "C66", "C67", "C68", "C69", "C70",

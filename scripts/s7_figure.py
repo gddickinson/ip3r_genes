@@ -19,6 +19,17 @@ paper's claims rest on.
 here**, so the ring markers on the figure and the constraint sets the AU
 test was run on cannot drift apart (D13 applied to a figure).
 
+**Each paralog box is the paralog's whole clade, read from
+`paralog_clades.tsv`**: every tip the census labels with that paralog plus
+the unlabelled vertebrate tips the tree nests inside it. Those are the sets
+S9 and S13 analyse, so the figure shows the clades the later analyses
+use. Until 2026-09-23 a box enclosed only the largest clade made of
+labelled tips, which left seven shark, chimaera and coelacanth genes
+outside the box they belong to and put a lower support value (the
+labelled core's) on ITPR1's box than on its clade. An unlabelled member is
+drawn as an open circle in its paralog's colour, so the figure shows both
+facts: the tree placed it, and no name did.
+
 Run:  python3 scripts/s7_figure.py    (matplotlib needed)
 """
 
@@ -37,10 +48,16 @@ from scripts.s7_lib import (  # noqa: E402
 
 ROOTED = PHYLO_DIR / "rooted.nwk"
 AUDIT = PHYLO_DIR / "membership_audit.tsv"
+CLADES = PHYLO_DIR / "paralog_clades.tsv"
 FIGS = PHYLO_DIR / "figures"
 CORE = ("ITPR1", "ITPR2", "ITPR3")
 BOXED = CORE + ("RYR",)
 MIN_BRACKET = 5          # tips before a non-core run earns a bracket label
+#: Genera of the jawless vertebrates. Used only to name the unplaced run:
+#: if every vertebrate tip left outside the three clades is a hagfish or a
+#: lamprey, the bracket says so, and otherwise it keeps the generic label.
+CYCLOSTOME_GENERA = {"Myxine", "Eptatretus", "Petromyzon", "Lampetra",
+                     "Entosphenus", "Lethenteron", "Geotria", "Mordacia"}
 
 
 def read_audit() -> tuple[dict[str, str], set[str]]:
@@ -56,6 +73,19 @@ def read_audit() -> tuple[dict[str, str], set[str]]:
             elif r["rule"] == "unconstrained":
                 free.add(r["label"])
     return relabel, free
+
+
+def read_placed() -> dict[str, str]:
+    """paralog_clades.tsv -> unlabelled tip -> the paralog clade it is in."""
+    placed: dict[str, str] = {}
+    if not CLADES.exists():
+        return placed
+    with open(CLADES) as fh:
+        for r in csv.DictReader(fh, delimiter="\t"):
+            for tip in (r.get("added") or "").split(";"):
+                if tip:
+                    placed[tip] = r["paralog"]
+    return placed
 
 
 def ladderize(n: Node) -> int:
@@ -122,6 +152,7 @@ def main() -> int:
 
     groups = load_groups()
     relabel, _free = read_audit()
+    in_clade = read_placed()
     tree = parse_newick(ROOTED.read_text())
     ladderize(tree)
     xs, ys = layout(tree)
@@ -131,11 +162,15 @@ def main() -> int:
                             for t in tips)
 
     def grp_of(t: Node) -> str:
+        if t.name in in_clade:
+            return in_clade[t.name]
         return relabel.get(t.name, groups.get(t.name, {}).get("group", ""))
 
-    # Deep nodes carrying the claims: each boxed group's largest clade
-    # under tree-corrected membership, plus its two ancestors (the
-    # paralog splits the sister question is about).
+    # Deep nodes carrying the claims: each boxed group's clade, plus its
+    # two ancestors (the paralog splits the sister question is about). For
+    # a paralog the clade is the smallest one holding every member, which
+    # `paralog_clades.tsv` established is a clade with no outsiders; for
+    # the RyR outgroup, the largest all-RyR clade.
     parent: dict[int, Node] = {}
     for nd in tree.walk():
         for c in nd.children:
@@ -154,8 +189,16 @@ def main() -> int:
             if nd.is_leaf:
                 continue
             ls = nd.leaf_names()
-            if ls <= mem and len(ls) > best_n:
+            if g in CORE and in_clade:
+                if mem <= ls and (best is None or len(ls) < best_n):
+                    best, best_n = nd, len(ls)
+            elif ls <= mem and len(ls) > best_n:
                 best, best_n = nd, len(ls)
+        if best is not None and g in CORE and in_clade \
+                and best.leaf_names() != mem:
+            raise SystemExit(f"{g}: the smallest clade holding every member "
+                             f"also holds {sorted(best.leaf_names() - mem)}; "
+                             f"paralog_clades.tsv and the tree disagree")
         if best is None:
             continue
         clade_node[g] = best
@@ -201,8 +244,12 @@ def main() -> int:
     for t in tips:
         g = grp_of(t)
         colour = fs.GROUP.get(g, fs.FAINT) if g in BOXED else fs.FAINT
-        ax.plot(xs[id(t)], ys[id(t)], "o", ms=2.0, mew=0, color=colour,
-                zorder=4)
+        if t.name in in_clade:
+            ax.plot(xs[id(t)], ys[id(t)], "o", ms=2.4, mew=0.6,
+                    mfc=fs.SURFACE, mec=colour, zorder=4)
+        else:
+            ax.plot(xs[id(t)], ys[id(t)], "o", ms=2.0, mew=0, color=colour,
+                    zorder=4)
         txt = tip_text(t.name, groups, species_count)
         if t.name in relabel:
             ax.plot(xs[id(t)], ys[id(t)], "o", ms=4.6, mfc="none",
@@ -313,7 +360,13 @@ def main() -> int:
                     solid_capstyle="butt", zorder=3)
         if label_run[grp] != (grp, i0, i1):
             continue
-        text = f"{fs.GROUP_LABEL.get(grp, grp)}\nn = {total[grp]}"
+        name = fs.GROUP_LABEL.get(grp, grp)
+        if grp == "vertebrate_basal" and all(
+                (groups.get(tt.name, {}).get("species", "") or "")
+                .split()[0] in CYCLOSTOME_GENERA
+                for tt in tips if grp_of(tt) == grp):
+            name = "hagfish, lamprey"
+        text = f"{name}\nn = {total[grp]}"
         yc = (y0 + y1) / 2
         t = ax.text(x_box_lab, yc, text, rotation=90, ha="left",
                     va="center", fontsize=fs.FS_NOTE, color=fs.MUTED,
@@ -341,6 +394,9 @@ def main() -> int:
     # made — the drift D13 exists to prevent, in a legend.
     key = [(0.22, 1.8, dict(mew=0, color=fs.INK),
             "UFBoot ≥ 95 and SH-aLRT ≥ 80")]
+    if in_clade:
+        key.append((0.52, 2.4, dict(mfc=fs.SURFACE, mec=fs.MUTED, mew=0.6),
+                    "the tree places it; no name gives its paralog"))
     if relabel:
         key.append((0.56, 4.4, dict(mfc="none", mec=fs.INK, mew=0.6),
                     "census label overturned by the tree"))

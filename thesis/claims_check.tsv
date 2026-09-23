@@ -41,6 +41,17 @@ C52	ch6	MAFFT L-INS-i gave 11,777 columns	11777	11777	ok		results/msa_v2/align_s
 C53	ch6	trimAl kept 1,797 columns	1797	1797	ok		results/msa_v2/align_stats.json	json
 C57	ch6	69.5 % of internal nodes clear both support thresholds	69.5	69.5	ok		results/phylogeny/tree_stats.json	json
 C60	ch6	AU does not reject ITPR2+ITPR3 (p = 0.476)	0.476	0.476	ok		results/phylogeny/au_test.tsv	cell
+C277	ch6	the whole ITPR1 clade holds 19 proteins	19	19	ok		results/phylogeny/claim_nodes.tsv	cell
+C278	ch6	the whole ITPR2 clade holds 13 proteins	13	13	ok		results/phylogeny/claim_nodes.tsv	cell
+C279	ch6	the whole ITPR3 clade holds 19 proteins	19	19	ok		results/phylogeny/claim_nodes.tsv	cell
+C280	ch6	all three whole paralogue clades are supported at 100/100	3	3	ok		results/phylogeny/claim_nodes.tsv	count
+C281	ch6	seven unlabelled vertebrate proteins are placed inside a paralogue clade by the tree	7	7	ok		results/phylogeny/paralog_clades.tsv	sum
+C282	ch6	the name-labelled ITPR1 core clade alone holds 13 proteins	13	13	ok		results/phylogeny/claim_nodes.tsv	cell
+C283	ch6	the name-labelled ITPR1 core clade has SH-aLRT 47.8	47.8	47.8	ok		results/phylogeny/claim_nodes.tsv	cell
+C284	ch6	all 57 vertebrate proteins form one clade	57	57	ok		results/phylogeny/claim_nodes.tsv	cell
+C285	ch6	four hagfish and lamprey genes form their own clade	4	4	ok		results/phylogeny/cyclostome_placement.tsv	count
+C286	ch6	that clade has SH-aLRT 99.5	1	1	ok		results/phylogeny/cyclostome_placement.tsv	nunique
+C287	ch6	two hagfish and lamprey genes join the ITPR2 + ITPR3 clade at SH-aLRT 83.1	2	2	ok		results/phylogeny/cyclostome_placement.tsv	count
 C51	ch7	134 representatives were aligned	134	134	ok		results/msa_v2/align_stats.json	json
 C63	ch7	the ITPR x RyR class sits at the null (mean J 0.0002)	0.0002	0.0002	ok		results/synteny/pair_stats.tsv	cell
 C64	ch7	the flank caller is 405 of 405 correct	405	405	ok		results/synteny/synteny_stats.json	json
@@ -214,22 +225,22 @@ T62	ch14	all 76 are verified against a live record	76	76	ok		thesis/reference_au
 T63	ch14	26 figure-audit findings were recorded	26	26	ok		results/supplementary/figure_findings.tsv	count
 T64	ch14	16 of them were fixed in the legend	16	16	ok		results/supplementary/figure_findings.tsv	count
 T65	ch14	10 in the figure	10	10	ok		results/supplementary/figure_findings.tsv	count
-T66	ch14	the manuscript ledger carries 276 declarations	276	276	ok		manuscript/claims_check.tsv	count
+T66	ch14	the manuscript ledger carries 287 declarations	287	287	ok		manuscript/claims_check.tsv	count
 T68	appendix-E	30 build guards are broken on purpose and all fire	30	30	ok		thesis/guard_check.tsv	count
 T69	appendix-E	the thesis places 104 figures	104	104	ok		thesis/figure_manifest.tsv	count
 T70	appendix-E	37 results directories are assigned to a chapter	37	37	ok		thesis/chapter_assignment.tsv	count
-T83	ch14	89 decisions are recorded, as chapter 14 also states	89	89	ok		thesis/production_stats.tsv	cell
-T84	ch14	across 36 logged sessions, as chapter 14 also states	36	36	ok		thesis/production_stats.tsv	cell
-T71	ch16	36 sessions are logged	36	36	ok		thesis/production_stats.tsv	cell
+T83	ch14	91 decisions are recorded, as chapter 14 also states	91	91	ok		thesis/production_stats.tsv	cell
+T84	ch14	across 37 logged sessions, as chapter 14 also states	37	37	ok		thesis/production_stats.tsv	cell
+T71	ch16	37 sessions are logged	37	37	ok		thesis/production_stats.tsv	cell
 T72	ch16	they ran across 10 working days	10	10	ok		thesis/production_stats.tsv	cell
 T73	ch16	the ledger holds 37 tasks	37	37	ok		thesis/production_stats.tsv	cell
-T74	ch16	35 of them are complete	35	35	ok		thesis/production_stats.tsv	cell
-T75	ch16	89 methodological decisions are recorded	89	89	ok		thesis/production_stats.tsv	cell
-T76	ch16	401 analysis scripts were written	401	401	ok		thesis/production_stats.tsv	cell
+T74	ch16	36 of them are complete	36	36	ok		thesis/production_stats.tsv	cell
+T75	ch16	91 methodological decisions are recorded	91	91	ok		thesis/production_stats.tsv	cell
+T76	ch16	403 analysis scripts were written	403	403	ok		thesis/production_stats.tsv	cell
 T77	ch16	the search application is 9,243 lines	9243	9243	ok		thesis/production_stats.tsv	cell
 T78	ch16	444 result tables are committed	444	444	ok		thesis/production_stats.tsv	cell
 T79	ch16	112 figures are committed	112	112	ok		thesis/production_stats.tsv	cell
 T80	ch16	28 task reports are rendered	28	28	ok		thesis/production_stats.tsv	cell
-T81	ch16	those reports run to 109,250 words	109250	109250	ok		thesis/production_stats.tsv	cell
+T81	ch16	those reports run to 109,294 words	109294	109294	ok		thesis/production_stats.tsv	cell
 T82	ch16	the first session ran on 2026-08-18	2026-08-18	2026-08-18	ok		thesis/production_stats.tsv	cell
 T67	appendix-B	the control inventory is derived from 19 modules	19	19	ok		thesis/control_inventory.tsv	nunique

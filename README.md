@@ -251,15 +251,42 @@ years ago.
 
 **How to read this figure.** A maximum-likelihood tree of 134 representative
 proteins from across the eukaryotes. Branch length is amino-acid change
-(scale bar: 0.5 substitutions per site). The ryanodine receptors (purple box,
-top) root the tree. Invertebrate, protist, plant and fungal receptors (grey)
-branch off first, and the vertebrate receptors fall into three boxed groups,
-*ITPR1* (blue), *ITPR2* (orange) and *ITPR3* (green). The two numbers beside
-each box are the statistical support for that group (SH-aLRT / ultrafast
-bootstrap, out of 100). *ITPR2* (97/100) and *ITPR3* (98/99) are strongly
-supported. *ITPR1* (48/95) is weaker, because several shark and jawless-fish
-genes (grey, "paralog unassigned") sit near its base. Black dots mark nodes
-that pass both support thresholds.
+(scale bar: 0.5 substitutions per site). Every protein in the tree is an IP₃
+receptor except the six in the purple box at the top, which are the
+ryanodine receptors used to root it.
+
+- **The three coloured boxes are the three vertebrate genes.** Each box
+  encloses that gene's whole branch of the tree: 19 proteins for *ITPR1*
+  (blue), 13 for *ITPR2* (orange) and 19 for *ITPR3* (green). The two numbers
+  beside each box are the statistical support for that branch (SH-aLRT /
+  ultrafast bootstrap, out of 100); all three are 100/100.
+- **Filled dots versus open circles.** A filled coloured dot is a protein
+  whose database record says which of the three genes it is. An open circle
+  is one of seven proteins from sharks, a chimaera and the coelacanth whose
+  database records do not say which of the three genes they are. The tree
+  places them: four in *ITPR1*, two in *ITPR2*
+  and one in *ITPR3*. Counting only the named proteins, the *ITPR1* branch
+  looks weak (13 proteins, support 47.8/95), because the unnamed shark and
+  coelacanth genes sit interleaved at its base. With them included it is as
+  strong as the other two.
+- **The six grey vertebrate proteins outside the boxes** are from hagfish and
+  lamprey (jawless fish, bracketed on the right), and they cannot be
+  assigned to any of the three genes. Four form their own group (99.5/100)
+  that branches off before all the other vertebrate proteins, and two sit
+  beside the *ITPR2* + *ITPR3* branch with weaker support (83.1/77). Each of
+  the two groups contains both hagfish and lamprey genes, so each is a
+  lineage older than the split between those two fish. Which of the three
+  vertebrate genes, if any, each group corresponds to is something this tree
+  cannot settle.
+- **The grey proteins above the vertebrates** are the invertebrate, protist,
+  plant and fungal receptors, bracketed and counted on the right. They are
+  IP₃ receptors too. They carry no *ITPR1/2/3* label because the three genes
+  arose only within the vertebrates.
+- **The numbers along the left** are the support for the branch points
+  joining the groups: 100/100 for all 57 vertebrate proteins together and
+  for the *ITPR2* + *ITPR3* pair. The two lower values sit where the
+  jawless-fish proteins attach. Small black dots mark every branch point that
+  passes both support thresholds.
 
 ![The sister-pair test](results/phylogeny/figures/sister_au.png)
 
@@ -481,12 +508,12 @@ Each analysis also has its own rendered `results/<task>/report.md`.
 
 | Output | Where | Built by |
 |---|---|---|
-| **Manuscript**: 17 sections, 7 main + 16 Extended Data + 6 Supplementary figures, 276 load-bearing numbers re-verified on every build, 60-page PDF | [`manuscript/`](manuscript/README.md) · [PDF](manuscript/itpr_family_manuscript.pdf) | `scripts/s14_assemble.py` |
+| **Manuscript**: 17 sections, 7 main + 16 Extended Data + 6 Supplementary figures, 287 load-bearing numbers re-verified on every build, 60-page PDF | [`manuscript/`](manuscript/README.md) · [PDF](manuscript/itpr_family_manuscript.pdf) | `scripts/s14_assemble.py` |
 | **Thesis**: 16 chapters + 5 appendices, ~80,700 words, 104 figures, 116 audited references, 190-page PDF | [`thesis/`](thesis/README.md) · [PDF](thesis/itpr_family_thesis.pdf) | `scripts/s25_assemble.py` |
-| **Paper series**: the same results as six stand-alone papers, each with its own question, controls and 4–7 main figures; 45,175 words and 122 pages in all, with 702 load-bearing numbers in one ledger shared by all six | [`papers/`](papers/README.md) | `scripts/s26_assemble.py` |
+| **Paper series**: the same results as six stand-alone papers, each with its own question, controls and 4–7 main figures; 45,175 words and 122 pages in all, with 713 load-bearing numbers in one ledger shared by all six | [`papers/`](papers/README.md) | `scripts/s26_assemble.py` |
 | **Literature review**: 32 pages, 137 references, 12 figures, with a claim-by-claim audit | [`docs/ip3r_review_2026.pdf`](docs/ip3r_review_2026.pdf) | `scripts/s0_review_build.py --pdf` |
 | **Analysis results**: one directory per task, holding tables, figures and a rendered `report.md` | [`results/`](results/) | `scripts/s<n>_*.py` |
-| **Deposit manifests**: 1,981 files for the manuscript, each with a checksum, plus the commands that regenerate the bulk data left out of the repository; each paper in the series has its own, holding only the results it is primary in | [`manuscript/deposit_manifest.tsv`](manuscript/deposit_manifest.tsv), `papers/<paper>/deposit_manifest.tsv` | `s14_assemble.py --only deposit`, `s26_assemble.py --only deposit` |
+| **Deposit manifests**: 1,983 files for the manuscript, each with a checksum, plus the commands that regenerate the bulk data left out of the repository; each paper in the series has its own, holding only the results it is primary in | [`manuscript/deposit_manifest.tsv`](manuscript/deposit_manifest.tsv), `papers/<paper>/deposit_manifest.tsv` | `s14_assemble.py --only deposit`, `s26_assemble.py --only deposit` |
 | **Protein Variant Finder**: GUI/CLI app | [`src/`](src/), [`run.py`](run.py) | `python run.py` |
 
 ### The Protein Variant Finder app
@@ -580,7 +607,7 @@ every result:
   figures and the manuscript are generated from the TSV and JSON files in
   `results/`, never typed by hand. On every build, each write-up's "claims
   ledger" re-reads its quoted numbers from their source tables and fails if
-  any has changed: 276 for the manuscript, 234 for the thesis and 702 for the
+  any has changed: 287 for the manuscript, 245 for the thesis and 713 for the
   paper series. The thesis and the papers also fail if a declared number does
   not actually appear in their text.
 - **Each hit is positively assigned to one family (D14).** A protein counts

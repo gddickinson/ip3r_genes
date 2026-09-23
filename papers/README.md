@@ -4,12 +4,12 @@
 
 The project's results are reported as 6 papers, each answering one question with its own controls, its own declared scope and its own figures. The single manuscript (`manuscript/`) and the thesis (`thesis/`) report the same work in one document each. The rules the grouping was derived from are in [`paper_rules.md`](paper_rules.md), committed before the assignment. The assignment itself, one row per results entry with the rule that placed it, is in [`paper_assignment.tsv`](paper_assignment.tsv).
 
-One claims ledger covers the series: 702 load-bearing numbers, 4 of them stated in more than one paper and checked once ([`claims_check.tsv`](claims_check.tsv)). `python scripts/s26_assemble.py` rebuilds every paper from the committed tables and exits non-zero if any guard fails; every guard is also broken on purpose on each build ([`guard_check.tsv`](guard_check.tsv)).
+One claims ledger covers the series: 713 load-bearing numbers, 4 of them stated in more than one paper and checked once ([`claims_check.tsv`](claims_check.tsv)). `python scripts/s26_assemble.py` rebuilds every paper from the committed tables and exits non-zero if any guard fails; every guard is also broken on purpose on each build ([`guard_check.tsv`](guard_check.tsv)).
 
 | # | Paper | Question | Pages | Claims | Cites |
 |---|---|---|---|---|---|
 | 1 | [The IP₃ receptor is ancestrally eukaryotic and has been lost repeatedly outside the animals](range/paper1_range.pdf) | In which eukaryotic lineages does an IP₃ receptor gene exist? | 26 | 126 | none |
-| 2 | [The three vertebrate IP₃ receptors arose in two separate early vertebrate duplications](origin/paper2_origin.pdf) | How did one ancestral gene become the three vertebrate IP₃ receptors? | 26 | 135 | 1 |
+| 2 | [The three vertebrate IP₃ receptors arose in two separate early vertebrate duplications](origin/paper2_origin.pdf) | How did one ancestral gene become the three vertebrate IP₃ receptors? | 26 | 146 | 1 |
 | 3 | [No vertebrate has lost an IP₃ receptor paralogue](retention/paper3_retention.pdf) | Has any vertebrate lineage lost one of its three IP₃ receptor genes? | 19 | 96 | 2 |
 | 4 | [Four in five vertebrate IP₃ receptor genes cannot be reached from any protein database](archive/paper4_archive.pdf) | How completely do the public databases record the IP₃ receptor genes that vertebrate genomes carry? | 20 | 139 | 2, 3 |
 | 5 | [Purifying selection on the IP₃ receptor is strongest at the gate and filter and weakest in a luminal loop beside them](constraint/paper5_constraint.pdf) | Where along the IP₃ receptor does purifying selection act? | 20 | 141 | 1, 2, 3 |

@@ -285,7 +285,7 @@ Yes. No constrained search reached a higher likelihood than the unconstrained on
 
 ![](figures/tree_ml_rooted.png)
 
-*The rooted ML phylogeny. Branches in neutral ink; the three vertebrate paralog clades and the RyR outgroup boxed and coloured; a filled dot on every node clearing SH-aLRT ≥ 80 and UFBoot ≥ 95. No tip is ringed because the relabelling rule fires on none of them.*
+*The rooted ML phylogeny. Branches in neutral ink. Each coloured box is one paralog's whole clade: every tip whose census label names that paralog plus the unlabelled vertebrate tips the tree nests among them (7 in all, drawn as open circles), and the RyR outgroup is boxed too. The 6 grey vertebrate tips outside every box are the hagfish and lamprey loci of §5.4. A filled dot marks every node clearing SH-aLRT ≥ 80 and UFBoot ≥ 95. No tip is ringed because the relabelling rule fires on none of them.*
 
 ![](figures/sister_au.png)
 

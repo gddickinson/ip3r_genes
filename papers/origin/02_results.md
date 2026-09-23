@@ -17,7 +17,10 @@ paralogue group and 0.253 from each group to the ryanodine receptors
 **All three paralogues and the outgroup are clades.** Maximum likelihood under
 Q.insect+R7 recovers the ryanodine receptors as a clade at the root and
 *ITPR1*, *ITPR2* and *ITPR3* each as a clade inside the vertebrates
-({fig:tree}). Of the 131 internal nodes, 91 (69.5 %) clear both SH-aLRT ≥ 80
+({fig:tree}). Each clade also takes in shark, chimaera and coelacanth genes
+whose records name no paralogue: seven in all, placed by the tree rather than
+by a name. With them, all three clades are supported at 100/100, and only six
+vertebrate genes, all from hagfish and lamprey, fall outside every clade. Of the 131 internal nodes, 91 (69.5 %) clear both SH-aLRT ≥ 80
 and UFBoot ≥ 95, the joint bar every claim below is held to
 ({fig:support}a). The tree overturns no census name: 39 vertebrate tips agree
 with their label, 0 are reassigned, and 5 are left unplaced. For each of the

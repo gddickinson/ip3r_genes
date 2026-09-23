@@ -4156,3 +4156,23 @@ human, who now has three write-ups to choose between. Three new Emergent rows
 are open: the PI-PLC panel's 3,520 vs 3,527, the appearance rule's blind spot
 for percentages and scientific notation, and the manuscript ledger's missing
 row for its corrected headline.
+
+## 2026-09-23 — S26 follow-up: the tree figure boxes the whole clades
+
+A reader of the README asked whether the grey proteins between the tree
+figure's boxes were IP₃ receptors. They are. The boxes enclosed only
+name-labelled tips, which left seven unlabelled shark, chimaera and
+coelacanth genes outside the clades the tree places them in, and put the
+labelled core's 47.8/95 on *ITPR1*'s box. `s7_figure.py` now boxes the whole
+clades from `paralog_clades.tsv` (19/13/19 at 100/100), draws the unlabelled
+members as open circles, and names the six hagfish and lamprey genes that
+stay outside (D88). While adding the key, a shadowed variable name hid the
+new label, and the figure checker rejected two verbless labels; both were
+fixed at the source. The legend was rewritten in the manuscript (Fig. 3), the
+thesis (Figure 6.x, plus the paragraph before it), the origin paper and the
+README, and a sentence was added to the manuscript's and origin paper's
+results. The S7 report caption now computes its counts. Eleven new claims
+(C277–C287) are declared once and carried into the thesis and the origin
+paper, so the ledgers now hold 287 / 245 / 713 claims. The thesis's
+production numbers moved with the S26 session and were updated. All three
+builds pass.

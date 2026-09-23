@@ -130,8 +130,8 @@ Full step-by-step briefs: `docs/session_briefs.md`.
 > carries a dated correction rather than an edited history.
 >
 > **To rebuild everything:** `python scripts/s26_assemble.py` (six papers,
-> 21 guards, 702 claims), `python scripts/s25_assemble.py` (the thesis, 30
-> guards, 234 claims), `python scripts/s14_assemble.py` (the manuscript, 276
+> 21 guards, 713 claims), `python scripts/s25_assemble.py` (the thesis, 30
+> guards, 245 claims), `python scripts/s14_assemble.py` (the manuscript, 287
 > claims). All three passed at the end of S26.
 
 | ID | Task (one session each) | Depends | Status | Results (headline) |
@@ -1591,3 +1591,20 @@ An ordinal or a rank in a generated report is computed, like a count
 independent rewrite from the tables is worth running as an audit even when
 nothing is being rewritten: the claims ledger checks that a number is right,
 not that the sentence around it says what the number measures.
+
+**D88 — A figure's box marks the set the analyses use, not the set a label
+defines.** The tree figure boxed each paralogue's largest clade of
+name-labelled tips. That left seven shark, chimaera and coelacanth genes,
+which the tree nests inside the clades at 100/100, drawn as unexplained grey
+tips between the boxes. It also printed the labelled core's 47.8/95 as
+*ITPR1*'s support, while the clade that S9 and S13 actually analyse is
+100/100. A reader asked whether the grey proteins were IP₃ receptors at all.
+The boxes are now read from `paralog_clades.tsv`, the same table the later
+analyses use, and each unlabelled member is drawn as an open circle, so the
+figure shows both facts: the tree placed the gene, and no name did. Only the
+six hagfish and lamprey genes stay outside, and the bracket names them. The
+eleven numbers the new legend quotes were declared once, as C277–C287 in
+`s14_claims_tree.py`, and carried by identifier into the thesis and the
+origin paper. **The general rule:** a box or colour that groups data must
+group it the way the analysis does, and where the grouping and the labels
+disagree, the figure draws the disagreement instead of hiding it.

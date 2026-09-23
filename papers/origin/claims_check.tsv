@@ -69,6 +69,17 @@ OR68	origin	353 termini fall inside an intron	353	353	ok		results/gene_architect
 OR69	origin	the tandem detector finds 342 duplicated cells	342	342	ok		results/gene_architecture/gene_architecture_stats.json	json
 OR70	origin	and wrongly calls 21 single-copy ones	21	21	ok		results/gene_architecture/gene_architecture_stats.json	json
 C07	range,origin	the census holds 18,065 records	18065	18065	ok		results/census_v6/census_v6_stats.json	json
+C277	origin	the whole ITPR1 clade holds 19 proteins	19	19	ok		results/phylogeny/claim_nodes.tsv	cell
+C278	origin	the whole ITPR2 clade holds 13 proteins	13	13	ok		results/phylogeny/claim_nodes.tsv	cell
+C279	origin	the whole ITPR3 clade holds 19 proteins	19	19	ok		results/phylogeny/claim_nodes.tsv	cell
+C280	origin	all three whole paralogue clades are supported at 100/100	3	3	ok		results/phylogeny/claim_nodes.tsv	count
+C281	origin	seven unlabelled vertebrate proteins are placed inside a paralogue clade by the tree	7	7	ok		results/phylogeny/paralog_clades.tsv	sum
+C282	origin	the name-labelled ITPR1 core clade alone holds 13 proteins	13	13	ok		results/phylogeny/claim_nodes.tsv	cell
+C283	origin	the name-labelled ITPR1 core clade has SH-aLRT 47.8	47.8	47.8	ok		results/phylogeny/claim_nodes.tsv	cell
+C284	origin	all 57 vertebrate proteins form one clade	57	57	ok		results/phylogeny/claim_nodes.tsv	cell
+C285	origin	four hagfish and lamprey genes form their own clade	4	4	ok		results/phylogeny/cyclostome_placement.tsv	count
+C286	origin	that clade has SH-aLRT 99.5	1	1	ok		results/phylogeny/cyclostome_placement.tsv	nunique
+C287	origin	two hagfish and lamprey genes join the ITPR2 + ITPR3 clade at SH-aLRT 83.1	2	2	ok		results/phylogeny/cyclostome_placement.tsv	count
 C51	origin	134 representatives were aligned	134	134	ok		results/msa_v2/align_stats.json	json
 C52	origin	MAFFT L-INS-i gave 11,777 columns	11777	11777	ok		results/msa_v2/align_stats.json	json
 C53	origin	trimAl kept 1,797 columns	1797	1797	ok		results/msa_v2/align_stats.json	json

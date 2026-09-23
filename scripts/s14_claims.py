@@ -21,6 +21,7 @@ import sys
 import s14_claims_function
 import s14_claims_history
 import s14_claims_scope
+import s14_claims_tree
 import s14_lib as lib
 
 # op:
@@ -39,6 +40,7 @@ CLAIMS: list[dict] = (
     s14_claims_scope.CLAIMS
     + s14_claims_history.CLAIMS
     + s14_claims_function.CLAIMS
+    + s14_claims_tree.CLAIMS
 )
 
 def _matches(row: dict, where: dict) -> bool:

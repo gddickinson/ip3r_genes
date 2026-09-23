@@ -275,3 +275,14 @@ C266	R6	406 of them sit inside an exon	406	406	ok		results/gene_architecture/gen
 C267	R6	353 inside an intron	353	353	ok		results/gene_architecture/gene_architecture_stats.json	json
 C268	R6	689 on a boundary the gene model carries	689	689	ok		results/gene_architecture/gene_architecture_stats.json	json
 C269	R6	which is 47.6 % of them	0.4758	0.4758	ok		results/gene_architecture/gene_architecture_stats.json	json
+C277	Fig3	the whole ITPR1 clade holds 19 proteins	19	19	ok		results/phylogeny/claim_nodes.tsv	cell
+C278	Fig3	the whole ITPR2 clade holds 13 proteins	13	13	ok		results/phylogeny/claim_nodes.tsv	cell
+C279	Fig3	the whole ITPR3 clade holds 19 proteins	19	19	ok		results/phylogeny/claim_nodes.tsv	cell
+C280	Fig3	all three whole paralogue clades are supported at 100/100	3	3	ok		results/phylogeny/claim_nodes.tsv	count
+C281	Fig3	seven unlabelled vertebrate proteins are placed inside a paralogue clade by the tree	7	7	ok		results/phylogeny/paralog_clades.tsv	sum
+C282	Fig3	the name-labelled ITPR1 core clade alone holds 13 proteins	13	13	ok		results/phylogeny/claim_nodes.tsv	cell
+C283	Fig3	the name-labelled ITPR1 core clade has SH-aLRT 47.8	47.8	47.8	ok		results/phylogeny/claim_nodes.tsv	cell
+C284	Fig3	all 57 vertebrate proteins form one clade	57	57	ok		results/phylogeny/claim_nodes.tsv	cell
+C285	Fig3	four hagfish and lamprey genes form their own clade	4	4	ok		results/phylogeny/cyclostome_placement.tsv	count
+C286	Fig3	that clade has SH-aLRT 99.5	1	1	ok		results/phylogeny/cyclostome_placement.tsv	nunique
+C287	Fig3	two hagfish and lamprey genes join the ITPR2 + ITPR3 clade at SH-aLRT 83.1	2	2	ok		results/phylogeny/cyclostome_placement.tsv	count

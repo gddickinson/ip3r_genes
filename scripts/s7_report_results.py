@@ -312,12 +312,19 @@ def _section_figures(load) -> list[str]:
     n_relabel = sum(1 for a in load("membership_audit.tsv")
                     if a["rule"] == "reassigned")
     homed = [r for r in load("cyclostome_placement.tsv") if r["home"]]
+    n_placed = sum(int(r["n_added"] or 0)
+                   for r in load("paralog_clades.tsv"))
+    n_unplaced = len(load("cyclostome_placement.tsv"))
     figs = [
         ("tree_ml_rooted",
-         "The rooted ML phylogeny. Branches in neutral ink; the three "
-         "vertebrate paralog clades and the RyR outgroup boxed and "
-         "coloured; a filled dot on every node clearing SH-aLRT ≥ 80 and "
-         "UFBoot ≥ 95"
+         "The rooted ML phylogeny. Branches in neutral ink. Each coloured "
+         "box is one paralog's whole clade: every tip whose census label "
+         "names that paralog plus the unlabelled vertebrate tips the tree "
+         f"nests among them ({n_placed} in all, drawn as open circles), "
+         "and the RyR outgroup is boxed too. The "
+         f"{n_unplaced} grey vertebrate tips outside every box are the "
+         "hagfish and lamprey loci of §5.4. A filled dot marks every node "
+         "clearing SH-aLRT ≥ 80 and UFBoot ≥ 95"
          + (f"; a ring on each of the {n_relabel} tips whose census label "
             "the tree overturned." if n_relabel else
             ". No tip is ringed because the relabelling rule fires on "
