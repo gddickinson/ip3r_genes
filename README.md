@@ -483,9 +483,10 @@ Each analysis also has its own rendered `results/<task>/report.md`.
 |---|---|---|
 | **Manuscript**: 17 sections, 7 main + 16 Extended Data + 6 Supplementary figures, 276 load-bearing numbers re-verified on every build, 60-page PDF | [`manuscript/`](manuscript/README.md) · [PDF](manuscript/itpr_family_manuscript.pdf) | `scripts/s14_assemble.py` |
 | **Thesis**: 16 chapters + 5 appendices, ~80,700 words, 104 figures, 116 audited references, 190-page PDF | [`thesis/`](thesis/README.md) · [PDF](thesis/itpr_family_thesis.pdf) | `scripts/s25_assemble.py` |
+| **Paper series**: the same results as six stand-alone papers, each with its own question, controls and 4–7 main figures; 45,175 words and 122 pages in all, with 702 load-bearing numbers in one ledger shared by all six | [`papers/`](papers/README.md) | `scripts/s26_assemble.py` |
 | **Literature review**: 32 pages, 137 references, 12 figures, with a claim-by-claim audit | [`docs/ip3r_review_2026.pdf`](docs/ip3r_review_2026.pdf) | `scripts/s0_review_build.py --pdf` |
 | **Analysis results**: one directory per task, holding tables, figures and a rendered `report.md` | [`results/`](results/) | `scripts/s<n>_*.py` |
-| **Deposit manifest**: 1,957 files, each with a checksum, plus the commands that regenerate the bulk data left out of the repository | [`manuscript/deposit_manifest.tsv`](manuscript/deposit_manifest.tsv) | `s14_assemble.py --only deposit` |
+| **Deposit manifests**: 1,981 files for the manuscript, each with a checksum, plus the commands that regenerate the bulk data left out of the repository; each paper in the series has its own, holding only the results it is primary in | [`manuscript/deposit_manifest.tsv`](manuscript/deposit_manifest.tsv), `papers/<paper>/deposit_manifest.tsv` | `s14_assemble.py --only deposit`, `s26_assemble.py --only deposit` |
 | **Protein Variant Finder**: GUI/CLI app | [`src/`](src/), [`run.py`](run.py) | `python run.py` |
 
 ### The Protein Variant Finder app
@@ -557,6 +558,7 @@ python scripts/s7_run.py --list           # phylogeny
 python scripts/s17_run.py                 # constraint & clinical variants
 python scripts/s14_assemble.py            # figures → claims → stitch → pdf → deposit
 python scripts/s25_assemble.py            # the thesis
+python scripts/s26_assemble.py            # the six-paper series (--paper <id> for one)
 python3 scripts/dashboard.py --open       # project dashboard (stdlib only)
 ```
 
@@ -576,9 +578,11 @@ every result:
 
 - **Every reported number comes from a committed table (D13).** Reports,
   figures and the manuscript are generated from the TSV and JSON files in
-  `results/`, never typed by hand. On every build, the manuscript's "claims
-  ledger" re-reads 276 quoted numbers from their source tables and fails if
-  any has changed.
+  `results/`, never typed by hand. On every build, each write-up's "claims
+  ledger" re-reads its quoted numbers from their source tables and fails if
+  any has changed: 276 for the manuscript, 234 for the thesis and 702 for the
+  paper series. The thesis and the papers also fail if a declared number does
+  not actually appear in their text.
 - **Each hit is positively assigned to one family (D14).** A protein counts
   as an IP₃ receptor only if it matches the IP₃ receptor profile clearly
   better than the ryanodine receptor profile, or sits clearly closer to known
@@ -604,8 +608,9 @@ every result:
   saved if its labels overlap, are cut off, run into a neighbouring panel or
   sit on top of the data, or if a title is a phrase with no verb. Every
   figure legend must open with a full statement, and every figure must be
-  discussed in the text. All 30 of these build checks are deliberately broken
-  on every build to prove each one still works.
+  discussed in the text. Every build check is deliberately broken on every
+  build to prove it still works: 30 for the thesis and 21 for the paper
+  series.
 - **References are verified before they are cited.** Each new citation is
   entered as a PubMed ID or DOI plus a phrase its title must contain, and is
   looked up live. This caught 9 references that had been written from memory
