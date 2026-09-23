@@ -85,7 +85,7 @@ def gating_logic():
     ax2.set_xticks([])
     ax2.set_yticks([])
     figstyle.despine(ax2, keep=())
-    figstyle.panel(ax2, "b", "the two ligands bind in order")
+    figstyle.panel(ax2, "b", "ligands bind in order")
 
     # ---- c: why "all four" makes a switch out of a graded input
     p = np.linspace(0, 1, 300)
@@ -96,8 +96,12 @@ def gating_logic():
     ax3.set_xlabel("occupancy per site")
     ax3.set_ylabel("channel activated")
     ax3.set_xlim(0, 1)
-    ax3.set_ylim(0, 1.02)
-    ax3.legend(loc="upper left", fontsize=figstyle.FS_NOTE - 0.4)
+    # headroom above the curves holds the legend, which otherwise sat on the
+    # "any one site" curve (S28)
+    ax3.set_ylim(0, 1.34)
+    ax3.set_yticks([0, 0.25, 0.5, 0.75, 1.0])
+    ax3.legend(loc="upper left", fontsize=figstyle.FS_NOTE - 0.4,
+               borderaxespad=0.2, handlelength=1.4)
     figstyle.hgrid(ax3)
     figstyle.panel(ax3, "c", "the requirement is a threshold")
     lib.provenance(fig, "schematic", "shapes after the cited work; "
@@ -147,7 +151,7 @@ def regulation_map():
                              edgecolor=EFFECT_COLOUR[k], label=EFFECT_LABEL[k])
                        for k in ("activates", "inhibits", "biphasic",
                                  "context")],
-              loc="lower center", ncol=2, bbox_to_anchor=(0.44, -0.03),
+              loc="upper center", ncol=2, bbox_to_anchor=(0.44, 0.0),
               fontsize=figstyle.FS_NOTE)
     lib.provenance(fig, "curated", "every entry cited in §3–§4")
     return lib.save(fig, "regulation_map")
@@ -216,7 +220,7 @@ def signal_hierarchy():
     ax2.set_xlabel("spatial extent (µm)")
     ax2.set_ylabel("duration (s)")
     figstyle.hgrid(ax2, axis="both")
-    figstyle.panel(ax2, "b", "four orders of magnitude")
+    figstyle.panel(ax2, "b", "events span four decades")
 
     # ---- c: frequency, not amplitude, carries the dose
     for i, (dose, freq, colour) in enumerate([("low", 0.28, "#9ec5f4"),

@@ -64,6 +64,14 @@ one complete annotated model and 26.1 % are not.** Thirty-eight have no
 same-strand annotated feature at all, and 42 are held only by a non-coding
 one, so the database serves no protein for either.
 
+The threshold that decides "complete" is the share of the gene that the best
+single annotated model delivers, and {fig:s18_calibration}a shows where it
+falls in the population it was validated against: below 1.3 % of the 1,077
+loci whose own annotation names the gene, almost all of which pile up near a
+share of 1.0. Panel b re-counts every state as the bar moves from 0.3 to
+0.95, and the complete share shifts by less than a tenth across that whole
+range, so no count in this chapter depends on where the bar was put.
+
 **The single largest determinant is not the paralogue but the assembly.**
 Above the contiguity bar the failure rate falls from 26.1 % to **6.7 %**, so
 two thirds of what looks like an annotation problem is a contig too short to
@@ -76,14 +84,18 @@ of.
 
 ![](figures/s18_calibration.png)
 
-**{fig:s18_calibration}.** The completeness bar drawn inside the
-distribution it sits in, because a number in a legend cannot show a tail.
-The importance of drawing the bar inside its own distribution is that the
-whole audit turns on it. Every locus in this chapter is called complete or
-not against one coverage threshold, and a threshold quoted as a number in a
-sentence cannot show whether it sits in a gap or in the middle of a
-population. The bar was validated rather than replaced here, and this panel
-is the evidence for that decision.
+**{fig:s18_calibration}.** The completeness bar sits inside the
+distribution it was validated against, because a number in a legend cannot
+show a tail. Panel a is the share of the gene that the best single annotated
+model delivers, over the loci whose own annotation names the gene correctly,
+with the inherited bar drawn where it falls and the fraction of the
+population below it printed beside it. Panel b re-counts every locus state
+at each bar from 0.3 to 0.95, so the cost of the choice is visible as the
+width of each band. The whole audit turns on this one threshold: every locus
+in the chapter is called complete or not against it, and a threshold quoted
+in a sentence cannot show whether it sits in a gap or in the middle of a
+population, which is what made validating the bar rather than replacing it a
+defensible decision.
 
 ## 13.4 Curated and submitter-deposited gene sets differ, and only partly because of assembly quality
 
@@ -91,17 +103,23 @@ A curated reference gene set and a submitter-deposited one are not comparable
 evidence, and they are not close.
 
 **98.8 % of loci in curated annotations are complete, against 37.5 % in
-submitter-deposited ones.**
+submitter-deposited ones.** {fig:s18_by_source}a stacks the five locus
+states for each archive across every scorable locus, and panel b repeats
+the stack over only the loci whose contig can hold the gene, which is the
+comparison the next paragraph reads.
 
 ![](figures/s18_by_source.png)
 
-**{fig:s18_by_source}.** Locus state by annotation source, raw and above the
-contiguity bar. The control is drawn beside the raw contrast rather than
-instead of it, because that is what separates a database effect from an
-assembly effect. Curated and submitter-deposited gene sets are not applied
-to the same assemblies, so a difference between them partly measures which
-genomes each was run on, and the two bars together show how much of the gap
-survives the control.
+**{fig:s18_by_source}.** Locus state depends on the annotation source, and
+the dependence survives the contiguity control. Panel a stacks the five
+states over every scorable locus, split by whether the gene set is a curated
+reference annotation or a submitter deposit, and panel b repeats the same
+contrast over the loci on a contig long enough to span the gene. The control
+is drawn beside the raw contrast rather than instead of it, because that is
+what separates a database effect from an assembly effect: the two kinds of
+gene set are not applied to the same assemblies, so part of the raw gap
+measures which genomes each was run on, and the pair of panels shows how
+much of the gap the control leaves standing.
 
 The confounder is obvious and is controlled rather than argued. Submitter
 assemblies are less contiguous, and a locus on a contig too short to hold the
@@ -118,20 +136,26 @@ family sharing every diagnostic domain should be badly recorded.
 **The control says otherwise, and that is the result.** The IP₃ receptor cells
 fail on 26.1 % of loci, and the ryanodine receptors, in the same assemblies
 through the same pipelines, on 22.1 %. Above the contiguity bar the two are
-6.7 % and 5.5 %. **No overall difference survives correction. How this family
-is recorded is how vertebrate genes of this size are recorded.**
+6.7 % and 5.5 %. {fig:s18_family_vs_control}a stacks the five states for
+each paralogue beside the ryanodine control, and panel b puts the two
+failure rates side by side, raw and above the bar, with the corrected
+p-value over each pair. **No overall difference survives correction. How this
+family is recorded is how vertebrate genes of this size are recorded.**
 
 ![](figures/s18_family_vs_control.png)
 
-**{fig:s18_family_vs_control}.** This family against its sister in the same
-assemblies. Without this comparison, a failure rate is not a statement about
-this family at all. This figure carries the result that overturns the
-chapter's own premise. The audit was built expecting a large, many-exon gene
-with a confusable sister family to be recorded badly, and the sister family
-in the same assemblies through the same pipelines fails at a comparable
-rate. Without a control of this kind, a quarter of loci not delivered as one
-model reads as an indictment of this family; with it, it reads as the
-failure rate for vertebrate genes of this size.
+**{fig:s18_family_vs_control}.** The family fails at the rate its sister
+family fails at in the same assemblies. Panel a stacks the five locus states
+for each of the three paralogues and for the ryanodine-receptor control, and
+panel b compares the share of loci with any failure between the family and
+its sister, over every scorable locus and again above the contiguity bar,
+with the corrected p-value printed over each pair. This comparison is what
+turns a failure rate into a statement about this family. The audit was
+built expecting a large, many-exon gene with a confusable sister family to
+be recorded badly, and the sister, through the same pipelines, fails at a
+comparable rate, so a quarter of loci not delivered as one model reads as
+the failure rate for vertebrate genes of this size rather than as an
+indictment of this family.
 
 **One state does separate, and it is the family-specific one.** An IP₃
 receptor locus is 2.7 times more likely than a ryanodine locus to be held only
@@ -172,17 +196,25 @@ carry a placeholder gene symbol and 2,395 carry none at all, so **55.0 % of
 the family's full-length protein records have no usable gene symbol.** On the
 protein-name side, 66 are named for the superfamily in a way that names the
 family and its sister together and therefore separates neither.
+{fig:s18_protein_side}a draws that split for the gene symbol and for the
+protein name across the whole record set, with the correct paralogue calls
+in dark blue, the family-only names in light blue, and the placeholder,
+locus-tag and empty entries as the pale bands that fill more than half of the
+symbol bar.
 
 ![](figures/s18_protein_side.png)
 
-**{fig:s18_protein_side}.** The protein records, showing what the name
-claims against what the sequence is. The importance of separating what a
-name claims from what a sequence is is that the two failure modes have
-different remedies. The family and paralogue calls turn out not to be in
-dispute, so this is not a record full of misidentified proteins; more than
-half of it simply carries no usable gene symbol. A record that is correct
-and unfindable needs a name, not a reannotation, and that distinction is
-what the panel makes visible.
+**{fig:s18_protein_side}.** The protein records are mostly correct where
+they are named and mostly unnamed. In panel a, each of the 11,402 full-length
+family records is scored twice, once on its gene symbol and once on its
+protein name, and each label is read against the sequence as a correct
+paralogue, the family without a paralogue, a paralogue the panel cannot
+reach, a different paralogue, the sister family, both families at once,
+something else, a locus tag, or nothing. Panel b resolves the 15 reference
+proteomes that returned no family hit against an assembly of their own
+species and sorts them into the four verdicts the rule allows. Because the
+family and paralogue calls are not in dispute, the archive needs symbols on
+the records it already holds rather than a reannotation of their sequences.
 
 **Would a signature query have found them?** The signature that names this
 family reaches 95.6 % of the records both instruments agree on and 81.2 % of
@@ -202,7 +234,8 @@ instrument that owes the gene caller nothing.
 
 **All 15 are gene-caller failures.** Every one of the 15 species has a genome
 in scope, and in every one the genomic sweep recovers at least one locus at
-over half the bait's length while the proteome holds none.
+over half the bait's length while the proteome holds none, which is the
+single occupied bar of {fig:s18_protein_side}b.
 
 The verdict vocabulary carries a fourth value that fires on none of them, and
 that is the point of having it: a species with no assembly in scope would be

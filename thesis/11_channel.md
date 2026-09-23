@@ -35,18 +35,23 @@ the family's own reference paralogues as fully modelled.
 **20.9 % of the census's protein-database records have a usable model**, and
 of the 134 representatives every alignment, tree and selection result in this
 thesis stands on, **nine** do.
+{fig:s11_afdb_coverage} makes the shape of that shortfall visible: panel a
+gives the modelled fraction per group, and panel b, plotted against record
+length, shows that the models the database does hold are concentrated on
+records far shorter than a subunit.
 
 ![](figures/s11_afdb_coverage.png)
 
-**{fig:s11_afdb_coverage}.** Coverage by group, and against record length.
+**{fig:s11_afdb_coverage}.** The prediction database's coverage of the family
+is drawn by taxonomic group in panel a and against record length in panel b.
 The second panel is the result, and it sets the ceiling on every structural
-argument this family can support: the usable-model mass sits below about
-1,300 residues, while the peak at about 2,700, which is a full-length
-subunit, is almost entirely unmodelled. A reader who assumed the prediction
-database covers modern proteomes uniformly would expect a receptor of this
-size to be modelled. Every structural statement in this chapter therefore
-rests on experimental depositions, and the figure is what makes that a
-measured constraint rather than a preference.
+argument this family can support: the usable-model mass sits below about 1,300
+residues, while the peak at about 2,700, which is a full-length subunit, is
+almost entirely unmodelled. A reader who assumed the prediction database
+covers modern proteomes uniformly would expect a receptor of this size to be
+modelled. Every structural statement in this chapter therefore rests on
+experimental depositions, and the figure is what makes that a measured
+constraint rather than a preference.
 
 The median modelled record is 392 residues and the median unmodelled one
 2,674. Of the 5,861 census records at or above the family's own length floor,
@@ -100,17 +105,20 @@ isoform model, caught by a rule rather than by inspection.
 Where a taxonomic slot has no representative with a model, the best-covered
 census record stands in, and the audit records that the slot was filled rather
 than met. Without that, the panel is six proteins.
+{fig:s11_panel} lists every entry that resulted, with the claimed length and
+the resolved length drawn for each, so the reader can see at once which
+structures resolve nearly all of their record and which resolve half.
 
 ![](figures/s11_panel.png)
 
-**{fig:s11_panel}.** Every structure in the panel, where the pale bar is the
-length the record claims and the filled bar what the structure delivers. The
-importance of drawing the claimed and delivered lengths as two bars is that
-the gap between them is what a fold comparison is actually computed on. A
-structure resolving half its record has half its residues, and a score
-normalised by the wrong one of those two numbers is a statement about size
-rather than about shape. The panel lets a reader see, for every entry, how
-much protein each later comparison had to work with.
+**{fig:s11_panel}.** Every structure in the panel is drawn as two bars: the
+pale bar is the length the record claims and the filled bar is what the
+structure delivers. The importance of drawing the claimed and delivered
+lengths as two bars is that the gap between them is what a fold comparison is
+actually computed on. A structure resolving half its record has half its
+residues, and a score normalised by the wrong one of those two numbers is a
+statement about size rather than about shape. The panel lets a reader see, for
+every entry, how much protein each later comparison had to work with.
 
 ## 11.4 The comparison scale is calibrated on this panel before any structure is called
 
@@ -128,19 +136,25 @@ paralogue in different states score a median 0.78, while two different IP₃
 receptors score 0.43. So a fold difference of that size or less is not
 readable on this panel and is not claimed, which is what the state panel
 exists to establish.
+{fig:s11_tm_calibration} carries both halves of this: panel a is the family
+call itself, each structure's best score against the IP₃ references set
+against its best against the ryanodine references, and panel b is the
+calibration, every class of pair drawn against the two published bars, so the
+reader can see that the negative controls never approach the same-fold bar and
+that the conformation pairs sit well above the cross-family ones.
 
 ![](figures/s11_tm_calibration.png)
 
-**{fig:s11_tm_calibration}.** The family call made structurally, and the
-calibration behind it. Both of the alignment method's published bars are
-drawn, meaning the random-similarity floor and the same-fold bar [R166],
-rather than described. A calibration figure that asked to be believed would
-not be one. The importance of this figure is that it turns the family
-separation into a structural result rather than a sequence one. Everything
-before this chapter told the two families apart on sequence and domain
-content; here the same separation is recovered from shape alone, against
-published bars the project did not choose. That matters because the two
-families share every diagnostic domain, so a reader is entitled to ask
+**{fig:s11_tm_calibration}.** The family call is made structurally in panel a,
+and the calibration behind it is drawn in panel b. Both of the alignment
+method's published bars are drawn, meaning the random-similarity floor and the
+same-fold bar [R166], rather than described. A calibration figure that asked
+to be believed would not be one. The importance of this figure is that it
+turns the family separation into a structural result rather than a sequence
+one. Everything before this chapter told the two families apart on sequence
+and domain content; here the same separation is recovered from shape alone,
+against published bars the project did not choose. That matters because the
+two families share every diagnostic domain, so a reader is entitled to ask
 whether the distinction survives when domain annotation is removed from the
 evidence.
 
@@ -208,13 +222,16 @@ the part any claim rests on. So confidence is reported **per domain**, with
 the boundaries transferred by pairwise alignment, and a domain landing on too
 little of its reference span is reported unplaced rather than averaged over
 whatever aligned.
+{fig:s11_plddt_domains} lays those per-domain values out in subunit order for
+every model, and the reader should look at the two ends of the profile: the
+IP₃-binding core at the top and the pore at the bottom of the named domains.
 
 ![](figures/s11_plddt_domains.png)
 
-**{fig:s11_plddt_domains}.** Confidence per domain, ordered along the
-subunit, with the prediction method's own confident and very-high bands
-drawn. Every model also gets an outside-annotated-domains contrast row,
-which is what gives a high value something to be high against.
+**{fig:s11_plddt_domains}.** Prediction confidence is reported per domain,
+ordered along the subunit, with the prediction method's own confident and
+very-high bands drawn. Every model also gets an outside-annotated-domains
+contrast row, which is what gives a high value something to be high against.
 
 **The IP₃-binding core is the best-modelled domain of the receptor** at a
 median of 83.9, against 69.5 outside the annotated domains, and **the pore,
@@ -243,16 +260,24 @@ record.
 
 **It drops one sequence, and that sequence was inflating one paralogue's
 alignment from 3,380 to 5,676 columns.**
+{fig:supp_paralog_alignments} shows the three alignments that result: panel a
+is their depth at every residue of the human reference, panel b the shape
+screen with the dropped sequence ringed, and panel c the four conservation
+layers with the depth control beside them, so the reader can see where the map
+is thin before trusting a score there.
 
 ![](figures/supp_paralog_alignments.png)
 
 **{fig:supp_paralog_alignments}.** The three deep alignments the constraint
-map is computed on, drawn as occupancy along the human reference rather than
-along an alignment column, since the three have three widths and no shared
-coordinate. What the panel shows is the depth behind the map, which is the
-difference between this resource and one built on a handful of sequences,
-and where that depth thins out enough that a score there should be trusted
-less.
+map is computed on are drawn as occupancy along the human reference rather
+than along an alignment column, since the three have three widths and no
+shared coordinate. Panel a counts how many of the 249–265 orthologues cover
+each residue, panel b is the shape screen that bait coverage cannot do, with
+the ring marking the one sequence it dropped, and panel c sets the four
+conservation layers beside the depth control. What the panel shows is the
+depth behind the map, which is the difference between this resource and one
+built on a handful of sequences, and where that depth thins out enough that a
+score there should be trusted less.
 
 Three conventions run through every score. **Conservation is
 sequence-weighted** [R171] before any column statistic, and the column metric
@@ -270,9 +295,11 @@ derivation that disagreed would be a silent fork in what this project means by
 Joining the domain coordinates to the structural measurements says something
 that changes how the rest of this chapter has to be read.
 
-**None of the ten measured IP₃ contacts lies in the Pfam signature named
-*Inositol 1,4,5-trisphosphate/ryanodine receptor*.** They sit in MIR and RIH,
-which are the two domains the family shares with the ryanodine receptors.
+**None of the ten measured IP₃ contacts lies in PF08709, the Pfam signature
+named after the ligand.** Pfam calls it the *Inositol
+1,4,5-trisphosphate/ryanodine receptor* domain, and the contacts sit instead
+in MIR and RIH, which are the two domains the family shares with the
+ryanodine receptors.
 
 So the N-terminal β-trefoil is not the ligand site, and the ligand question is
 asked throughout of the measured contacts and never of the Pfam label. A

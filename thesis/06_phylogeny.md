@@ -95,27 +95,34 @@ a silent aligner failure degrades to a star alignment with no other symptom.
 An automated trimming heuristic [R139] then keeps **1,797 of 11,777 columns,
 15.3 %**. The choice of heuristic is recorded rather than tuned, because a
 trimming threshold picked by looking at the resulting tree is a threshold
-fitted to the answer.
+fitted to the answer. {fig:supp_representative_alignment}a rasterises residue
+occupancy for all 134 representatives across the 11,777 input columns,
+{fig:supp_representative_alignment}b plots the mean occupancy along the same
+axis, and {fig:supp_representative_alignment}c marks the columns the trimmer
+kept, which are the dense ones. {fig:msa_coverage} then asks how much of the
+kept set each representative covers, and names the single tip that covers
+under half of it.
 
 ![](figures/supp_representative_alignment.png)
 
-**{fig:supp_representative_alignment}.** The alignment, with the columns the
-tree actually saw marked in the input's own coordinates. The trimmed
-alignment is the input with 9,980 columns deleted and the two share no
-x-axis, so only one raster can honestly be drawn and the cuts marked beneath
-it. The raster bins columns and plots occupancy rather than residue
-identity, because at 11,777 columns one printed pixel is nine columns and a
-residue palette would draw whichever residue happened to land on it. The
-importance of this figure is that it lets a reader see what the tree was
-actually computed on. Trimming removed 85 % of the columns, and the ones it
-removed were the sparse ones, at a median occupancy of 0.03 against 0.98 for
-those it kept. Every tree, selection estimate and constraint layer
-downstream rests on the kept set, and a reader who wants to know how much of
-the alignment that is can read it here rather than take it on trust.
+**{fig:supp_representative_alignment}.** The representative alignment is
+rasterised in its own coordinates, and the columns the tree actually saw are
+ticked below it. The trimmed alignment is the input with 9,980 columns deleted
+and the two share no x-axis, so only one raster can honestly be drawn and the
+cuts marked beneath it. The raster is binned by column and plots occupancy
+rather than residue identity, because at 11,777 columns one printed pixel is
+nine columns and a residue palette would draw whichever residue happened to
+land on it. The importance of this figure is that it lets a reader see what
+the tree was actually computed on. Trimming removed 85 % of the columns, and
+the ones it removed were the sparse ones, at a median occupancy of 0.03
+against 0.98 for those it kept. Every tree, selection estimate and constraint
+layer downstream rests on the kept set, and a reader who wants to know how
+much of the alignment that is can read it here rather than take it on trust.
 
 ![](figures/msa_coverage.png)
 
-**{fig:msa_coverage}.** Per-sequence coverage of the trimmed alignment. The
+**{fig:msa_coverage}.** Each representative's coverage of the trimmed
+alignment is plotted by group, with a bar at each group's median. The
 median is 0.96 and one tip of 134 covers less than half. Coverage matters
 because a tip that covers half the alignment contributes gaps to every
 column the tree is inferred from, and gaps are not neutral for a likelihood
@@ -124,24 +131,27 @@ allows a reader to judge whether any deep node depends on it.
 
 ## 6.4 What the alignment says before any tree is built
 
-**The family separation, re-measured.** The ryanodine receptors are in this
-alignment on purpose, and their separation from the family is a positive test
-at every stage rather than an assumption. Measured here, mean identity within
-a vertebrate paralogue group is 0.910 and from each paralogue group to the
-outgroup 0.253, giving a separation of 0.656 identity units. Chapter 3's
-benchmark, using a different estimator on a different panel, measured 0.828
-and 0.249. The comparison is made on the separation rather than on either
-absolute value, and it is confirmed.
+**The family separation is re-measured on this alignment.** The ryanodine
+receptors are in this alignment on purpose, and their separation from the
+family is a positive test at every stage rather than an assumption. Measured
+here, mean identity within a vertebrate paralogue group is 0.910 and from each
+paralogue group to the outgroup 0.253, giving a separation of 0.656 identity
+units. Chapter 3's benchmark, using a different estimator on a different
+panel, measured 0.828 and 0.249. The comparison is made on the separation
+rather than on either absolute value, and it is confirmed.
 
 That separation is what every stage of this project works inside. A
 5,000-residue ryanodine receptor and a 2,700-residue IP₃ receptor are 25 %
 identical over the columns they share, which is not far enough apart to trust
-a heuristic with.
+a heuristic with. {fig:msa_identity_heatmap} shows that separation for every
+pair at once, with the vertebrate paralogue blocks and the outgroup block
+standing out from the rest of the matrix.
 
 ![](figures/msa_identity_heatmap.png)
 
 **{fig:msa_identity_heatmap}.** All-pairs identity across the representative
-set. Two identity matrices are committed rather than one, because they
+set is drawn as a heat map over mutually covered columns. Two identity
+matrices are committed rather than one, because they
 answer different questions and disagree systematically wherever a fragment
 is involved. A metric that counts gaps as mismatches makes every partial
 sequence look divergent, which would confound sequence divergence with
@@ -149,21 +159,24 @@ assembly quality, and that confound runs through this entire project.
 
 ![](figures/msa_group_identity.png)
 
-**{fig:msa_group_identity}.** Identity within and between groups. This
-figure fixes the scale every later comparison is read against: the three
-vertebrate paralogues sit at 0.74 to 0.79 to one another and at 0.91 within
-themselves, which is close enough that a bait from one aligns at all three
-genes. That single fact is why the duplication detector of Chapter 8 needed
-the family call before its geometry meant anything, and why the attribution
-margin inherited from a less similar family had to be overturned.
+**{fig:msa_group_identity}.** Identity within and between groups is summarised
+in two panels, the three paralogue pairs on the left and every group pair on
+the right. This figure fixes the scale every later comparison is read against:
+the three vertebrate paralogues sit at 0.74 to 0.79 to one another and at 0.91
+within themselves, which is close enough that a bait from one aligns at all
+three genes. That single fact is why the duplication detector of Chapter 8
+needed the family call before its geometry meant anything, and why the
+attribution margin inherited from a less similar family had to be overturned.
 
 **The alignment's preview of the sister question turns out to be wrong.** The
-alignment can rank the three between-paralogue identities: ITPR1 with ITPR2
-leads at 0.791, against 0.753 and 0.741, and the leading pair's interquartile
-range does not overlap either of the others. That is a real ranking and it is
-not a phylogenetic estimate, because it ignores the outgroup, the rate
-variation and the branch lengths, so it was reported as a preview with the
-tree named as the answer. Section 6.8 reports that the tree contradicts it.
+alignment can rank the three between-paralogue identities, and the left panel
+of {fig:msa_group_identity} does so while its right panel puts every group
+pair on one scale: ITPR1 with ITPR2 leads at 0.791, against 0.753 and 0.741,
+and the leading pair's interquartile range does not overlap either of the
+others. That is a real ranking and it is not a phylogenetic estimate, because
+it ignores the outgroup, the rate variation and the branch lengths, so it was
+reported as a preview with the tree named as the answer. Section 6.8 reports
+that the tree contradicts it.
 
 **The alignment's preview of the cyclostome loci is wrong in a different way.**
 Every cyclostome in this set carries three loci, all won by the same bait, so
@@ -179,15 +192,19 @@ of 0.008, protists at 0.002, and the ryanodine receptors at 0.002. The
 cyclostome margin is five times that, so the lean is real. What it means is a
 different question, and §6.9 gives an answer neither reading predicted.
 
+{fig:msa_conservation} carries the same alignment's per-column conservation
+under the human ITPR1 domain track, so the elements Chapters 11 and 12 score
+can be located on the columns the tree used.
+
 ![](figures/msa_conservation.png)
 
-**{fig:msa_conservation}.** Per-column conservation with human ITPR1's
-domain architecture mapped onto it through the alignment, by walking the
-human row and counting ungapped positions, rather than by scaling residue
-coordinates onto column coordinates. The second method places every domain
-boundary wrong by exactly the gap content of the sequence. Since Chapters 11
-and 12 both make claims about which element a residue belongs to, a
-systematic offset here would have propagated into every one of them.
+**{fig:msa_conservation}.** Per-column conservation is drawn with human
+ITPR1's domain architecture mapped onto it through the alignment: the human
+row is walked and its ungapped positions counted, rather than residue
+coordinates being scaled onto column coordinates. The second method places
+every domain boundary wrong by exactly the gap content of the sequence. Since
+Chapters 11 and 12 both make claims about which element a residue belongs to,
+a systematic offset here would have propagated into every one of them.
 
 ## 6.5 The exhaustive model scan was measured and abandoned
 
@@ -241,20 +258,24 @@ disk.
 **Rooting doubles as a control on the whole alignment.** The tree is rooted on
 the ryanodine receptors, and if they did not come back as a clade the
 alignment underneath every downstream result would be the thing to doubt. They
-do, at maximal support.
+do, at maximal support. {fig:tree_ml_rooted} draws the result: the outgroup at
+the root, the three paralogue clades boxed within the vertebrates, the
+non-vertebrate grades between, and a dot on each node that both support tests
+accept.
 
 ![](figures/tree_ml_rooted.png)
 
-**{fig:tree_ml_rooted}.** The rooted maximum-likelihood phylogram. Branches
-are in neutral ink, the three paralogue clades and the outgroup are boxed,
-and a filled dot marks every node clearing both support thresholds. No tip
-is ringed, because the relabelling rule described in §6.7 fires on none of
+**{fig:tree_ml_rooted}.** The rooted maximum-likelihood phylogram places every
+one of the 134 representatives, with the ryanodine receptors as the outgroup.
+Branches are in neutral ink, the three paralogue clades and the outgroup are
+boxed, and a filled dot marks every node clearing both support thresholds. No
+tip is ringed, because the relabelling rule described in §6.7 fires on none of
 them, and the legend entry for a ring appears only when a ring does, since a
 key naming a marker the figure does not carry asserts a correction that was
-never made. The tree matters because it answers a question the literature
-had left open: the review's own audit found no published, support-annotated
-maximum-likelihood analysis with a ryanodine outgroup that fixes which two
-of the three paralogues are sisters.
+never made. The tree matters because it answers a question the literature had
+left open: the review's own audit found no published, support-annotated
+maximum-likelihood analysis with a ryanodine outgroup that fixes which two of
+the three paralogues are sisters.
 
 ## 6.7 The three paralogues are clades, but only after the tree's own corrections
 
@@ -305,13 +326,17 @@ That verification is set up so that it can fire. An earlier version filtered
 to the reassigned tips only, which made it report that the tree contradicted
 no census label while the table it had just read held five tips the tree
 declined to place. A verification that cannot fire is not a verification.
+{fig:paralog_placement} lists the vertebrate tips the tree places in no
+paralogue clade, the six cyclostome loci and the five disputed names, with
+the bootstrap support of the clade each one lands in and a note on what sits
+beside it there.
 
 ![](figures/paralog_placement.png)
 
-**{fig:paralog_placement}.** Where the tree places each tip against its
-census label. Thirty-nine agree, none is reassigned, and the five the tree
-declines to place are named, with reciprocal best hits against an
-independent database upholding the name for every one of them. The panel
+**{fig:paralog_placement}.** Each vertebrate tip's placement by the tree is
+set against its census label. Thirty-nine agree, none is reassigned, and the
+five the tree declines to place are named, with reciprocal best hits against
+an independent database upholding the name for every one of them. The panel
 matters because a gene tree disagreeing with the annotation would have cast
 doubt on the paralogue cells every later chapter is built on.
 
@@ -339,13 +364,17 @@ identically in all three hypotheses. The test then rejected every arrangement
 at a log-likelihood difference of about 1,500, **including the one the tree
 itself holds at maximal support.** Each constraint now names the three
 paralogue cores and the outgroup and nothing else, and a constructed control
-fails any constraint that names a free tip.
+fails any constraint that names a free tip. {fig:sister_au}a shows what each
+constrained topology costs in log-likelihood against the unconstrained tree,
+and {fig:sister_au}b shows the test's verdict on each, with the rejection line
+at p = 0.05.
 
 ![](figures/sister_au.png)
 
-**{fig:sister_au}.** The three hypotheses under the approximately unbiased
-test [R144], with log-likelihood difference and p-value on two panels
-sharing one row of categories rather than on two y-axes. They are different
+**{fig:sister_au}.** The three sister hypotheses are compared under the
+approximately unbiased test [R144], with the log-likelihood difference and
+the p-value on two panels sharing one row of categories rather than on two
+y-axes. They are different
 measures on different scales, and a twin axis invites a comparison that has
 no meaning. This figure is the answer to Chapter 6's central question, and
 its importance is that it excludes rather than merely prefers. Two of the
@@ -409,15 +438,19 @@ which was the wrong prior rather than the wrong tree.
 A sister question answered on a tree whose deep nodes are unsupported is not
 answered. Of 131 internal nodes, **91 clear both thresholds, which is 69.5 %**,
 with a median bootstrap of 100 and a median branch-test value of 99.
+{fig:support_profile} places every internal node by its two support values at
+once, and the 91 that sit past both thresholds are the ones a claim may rest
+on.
 
 ![](figures/support_profile.png)
 
-**{fig:support_profile}.** Node support drawn as a scatter rather than as
-two histograms, because the claim is about the joint condition and a pair of
-marginals cannot show it. A node is trustworthy here only when both branch
-tests agree. The bootstrap alone is known to be optimistic under model
-violation, which a 134-tip alignment spanning four kingdoms guarantees, so
-every well-supported claim in this thesis requires both.
+**{fig:support_profile}.** Node support is drawn as a scatter of the two
+branch tests rather than as two histograms, because the claim is about the
+joint condition and a pair of marginals cannot show it. A node is trustworthy
+here only when both branch tests agree. The bootstrap alone is known to be
+optimistic under model violation, which a 134-tip alignment spanning four
+kingdoms guarantees, so every well-supported claim in this thesis requires
+both.
 
 Every node a claim rests on is listed with its own support. The ITPR2 with
 ITPR3 clade the sister result depends on is at maximal support. The one weakly

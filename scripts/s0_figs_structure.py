@@ -50,7 +50,8 @@ def domain_architecture():
     lib.domain_legend(ax, loc="upper right", bbox_to_anchor=(1.005, 1.06),
                       fontsize=figstyle.FS_NOTE)
     figstyle.despine(ax, keep=("bottom",))
-    figstyle.panel(ax, "a", "drawn to a common scale from InterPro coordinates")
+    figstyle.panel(ax, "a", "both families are drawn to one scale from "
+                            "InterPro coordinates")
 
     # ---- b: the same table, counted. Columns ordered as they occur along the
     # chain — shared signatures first, then the pore, then the RyR-only set.
@@ -88,7 +89,7 @@ def domain_architecture():
     ax2.set_ylim(-0.6, len(ORDER) - 0.4)
     ax2.tick_params(length=0)
     figstyle.despine(ax2, keep=())
-    figstyle.panel(ax2, "b", "copies per subunit — blank means the signature "
+    figstyle.panel(ax2, "b", "copies per subunit: a blank means the signature "
                              "is absent")
     lib.provenance(fig, "measured", "InterPro / Pfam, re-derived")
     return lib.save(fig, "domain_architecture")
@@ -190,39 +191,60 @@ def channel_structure():
     axA.set_ylim(-125, 80)
     axA.set_xlabel("Å from the four-fold axis")
     axA.set_ylabel("Å along the four-fold axis")
-    figstyle.panel(axA, "a", f"{meta['pdb_id']} — "
-                   + meta["description"].replace("IP3", "IP$_3$"))
+    # The long deposit description ran behind panel b; the legend and the
+    # provenance tag already say what the structure is (S28).
+    figstyle.panel(axA, "a", f"{meta['pdb_id']} is viewed from the side")
+    # Anchored at the top, an equal-aspect axes that shrinks inside its grid
+    # cell keeps the cell's top edge, so panels a and b share a title
+    # baseline.
     axA.set_aspect("equal")
+    axA.set_anchor("N")
 
     axB.set_xlim(-135, 135)
     axB.set_ylim(-135, 135)
     axB.set_aspect("equal")
+    axB.set_anchor("N")
     axB.set_xticks([])
     axB.set_yticks([])
     figstyle.despine(axB, keep=())
-    figstyle.panel(axB, "b", "viewed down the axis")
+    figstyle.panel(axB, "b", "the same particle is viewed down the axis")
 
     # ---- c: the pore
     pz = np.array([float(r["z_along_axis"]) for r in pore])
     pr = np.array([float(r["min_heavy_atom_radius"]) for r in pore])
     axC.fill_between(pz, 0, pr, color="#dbe9fb", zorder=1)
     axC.plot(pz, pr, color="#184f95", lw=1.0, zorder=2)
-    for key, lab, ha, dx in (("filter", "selectivity filter", "right", -2.5),
-                             ("gate", "gate", "left", 2.5)):
+    # The filter label used to sit beside its marker with its left end
+    # hanging past the axes edge, over the y tick label; it now sits in the
+    # empty band above the profile with a leader down to the marker (S28 R5).
+    for key, lab, ha, xytext in (
+            ("filter", "selectivity filter", "left",
+             (float(pz.min()) + 1.5, 27.0)),
+            ("gate", "gate", "left", (-67.0, 27.0))):
         z, r = meta[f"{key}_z_A"], meta[f"{key}_min_radius_A"]
         axC.plot([z], [r], marker="v", ms=3.6, color="#b3261e", zorder=4)
         names = ", ".join(n.capitalize() for n in meta[f"{key}_lining_residues"])
-        axC.annotate(f"{lab}\n{names}\n{r:.1f} Å", xy=(z + dx, r + 1.0),
-                     ha=ha, va="bottom",
-                     fontsize=figstyle.FS_NOTE - 0.5, color=figstyle.INK,
-                     linespacing=1.25)
+        text = f"{lab}\n{names}\n{r:.1f} Å"
+        if xytext is None:
+            axC.annotate(text, xy=(z + 2.5, r + 1.0), ha=ha, va="bottom",
+                         fontsize=figstyle.FS_NOTE - 0.5, color=figstyle.INK,
+                         linespacing=1.25)
+        else:
+            axC.annotate(text, xy=(z, r + 0.8), xytext=xytext, ha=ha,
+                         va="top", fontsize=figstyle.FS_NOTE - 0.5,
+                         color=figstyle.INK, linespacing=1.25,
+                         arrowprops=dict(arrowstyle="-", lw=0.5,
+                                         color=figstyle.FAINT, shrinkB=1.5))
     axC.axvspan(tm_lo, tm_hi, color="#f2f1ec", zorder=0)
     axC.set_xlim(pz.min(), pz.max())
-    axC.set_ylim(0, 17.5)
+    # headroom: both labels sit in the empty band above the profile, with a
+    # leader to their marker, rather than on the curve (S28 page read)
+    axC.set_ylim(0, 28.5)
+    axC.set_yticks([0, 5, 10, 15, 20])
     axC.set_xlabel("Å along the four-fold axis")
     axC.set_ylabel("min. atom–axis\ndistance (Å)")
     figstyle.hgrid(axC)
-    figstyle.panel(axC, "c", "the permeation path")
+    figstyle.panel(axC, "c", "the permeation path has two constrictions")
 
     handles = [Patch(facecolor=lib.DOMAIN_COLOUR[p],
                      label=lib.DOMAIN_SHORT[p])

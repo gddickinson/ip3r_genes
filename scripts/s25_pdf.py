@@ -10,7 +10,20 @@ the markdown thesis, converted.
 What it adds is the LaTeX half: the page setup, a table of contents, each
 figure swapped for its vector PDF at the width it was drawn, a page break
 before each chapter, and the five traps `s14_pdf` documents, imported from
-that module rather than restated:
+that module rather than restated. S28 added the legend's own typography
+(**R4**): the stitch stage already knows which paragraphs are legends, since
+each opens `**Figure N.M.**`, so every one is wrapped in `\figlegendbegin`
+... `\figlegendend`, a command pair the preamble defines as a small sans
+paragraph at unit leading, indented on both sides and set ragged-right (a
+justified legend on that narrow a measure stretches its word spacing), and
+the figure and its legend are held together inside one float so a page break
+cannot come between them. The float is `[!htbp]` rather than `[H]`: pinned in
+place, a figure too tall for the rest of its page left half the page empty,
+six times in the first S28 read, and `\clearpage` before every chapter keeps a
+floated figure inside its own chapter. Commands rather than an environment, because pandoc passes an
+unknown command through and parses the markdown after it, whereas everything
+inside a raw environment would reach LaTeX unconverted. `check_legends()`
+fails the stage if any legend paragraph is left unwrapped.
 
 1. the preamble goes in through `--include-in-header`, never through YAML,
    because pandoc parses metadata as markdown;
@@ -44,6 +57,24 @@ MD_BUILD = L.TH / ".pdf_build.md"
 TEX_PREAMBLE = L.TH / ".pdf_preamble.tex"
 
 FIG_IMG = re.compile(r"!\[\]\(figures/([A-Za-z0-9_.]+)\.png\)")
+LEGEND_PARA = re.compile(r"^\*\*Figure \d+\.\d+\.\*\*.*", re.S)
+
+#: The legend's typography, and the float that binds it to its figure.
+LEGEND_PREAMBLE = r"""
+\usepackage{setspace}
+\usepackage{xurl}
+% A paragraph that cannot be set within the margin (a DOI is one unbreakable
+% word) may loosen its spacing rather than run into the margin.
+\setlength{\emergencystretch}{3em}
+\definecolor{legendink}{RGB}{40,40,36}
+\newcommand{\figlegendfont}{\sffamily\small\color{legendink}}
+\newcommand{\figblockbegin}{\begin{figure}[!htbp]\centering}
+\newcommand{\figblockend}{\end{figure}}
+\newcommand{\figlegendbegin}{\par\begingroup\figlegendfont
+  \setstretch{1.0}\setlength{\parindent}{0pt}\setlength{\leftskip}{1.4em}
+  \setlength{\rightskip}{1.4em plus 2.5em}\vspace{0.3em}}
+\newcommand{\figlegendend}{\par\endgroup}
+"""
 
 
 def _widths() -> dict[str, float]:
@@ -74,17 +105,25 @@ def build_markdown() -> str:
     def img(m: re.Match) -> str:
         stem = m.group(1)
         w = widths.get(stem, L.W_FULL)
-        return ("\\begin{center}\n"
+        return ("\\figblockbegin\n\n"
                 f"\\includegraphics[width={w:.2f}in,"
-                "height=0.78\\textheight,keepaspectratio]"
-                f"{{figures/{stem}.pdf}}\n"
-                "\\end{center}")
+                "height=0.72\\textheight,keepaspectratio]"
+                f"{{figures/{stem}.pdf}}")
 
     body = FIG_IMG.sub(img, body)
+    # A DOI is one word to TeX, so a reference line ending in one cannot
+    # break and runs into the margin; set as a URL (xurl) it may break at a
+    # slash or a dot. PDF only: thesis.md keeps the plain form.
+    body = DOI_RE.sub(lambda m: f"doi:\\url{{{m.group(1)}}}", body)
+    body = wrap_legends(body)
     # A page break before each chapter heading. The horizontal rules the
     # stitch stage writes between chapters become the break, so a chapter
     # never starts halfway down a page.
-    body = re.sub(r"\n---\n\n(# )", r"\n\n\\newpage\n\n\1", body)
+    body = re.sub(r"\n---\n\n(# )", r"\n\n\\clearpage\n\n\1", body)
+    # The stitch stage also writes a rule between the two files of a long
+    # chapter and after the last one; on the page those are stray lines in
+    # the middle of a chapter, so every remaining separator is dropped.
+    body = re.sub(r"\n---\n(?=\n|$)", "\n", body)
     body = s14_pdf.latex_safe(body)
 
     yaml = [
@@ -96,7 +135,7 @@ def build_markdown() -> str:
         "documentclass: report",
         "papersize: a4",
         "fontsize: 11pt",
-        "geometry: margin=2.2cm",
+        "geometry: margin=2.0cm",   # s14_lib.W_FULL: figures are drawn for a 17.0 cm block
         "linestretch: 1.15",
         "colorlinks: true",
         "linkcolor: linkblue",
@@ -108,6 +147,51 @@ def build_markdown() -> str:
         "",
     ]
     return "\n".join(yaml) + body
+
+
+#: An overfull line narrower than this is invisible on the page; wider, it
+#: is text in the margin. LaTeX's own report is in points.
+OVERFULL_PT = 4.0
+DOI_RE = re.compile(r"\bdoi:(10\.[0-9]{4,}/[^\s]*[^\s.,;])")
+OVERFULL_RE = re.compile(r"Overfull \\hbox \(([0-9.]+)pt too wide\)")
+
+
+def _overfull(log: str) -> list[str]:
+    """Every overfull horizontal box wider than the bar, with the line."""
+    out = []
+    lines = log.split("\n")
+    for i, ln in enumerate(lines):
+        m = OVERFULL_RE.search(ln)
+        if m and float(m.group(1)) > OVERFULL_PT:
+            context = lines[i + 1].strip() if i + 1 < len(lines) else ""
+            out.append(f"{ln.strip()} | {context[:90]}")
+    return out
+
+
+def wrap_legends(body: str) -> str:
+    """Wrap every legend paragraph in the command pair, closing the float."""
+    paras = body.split("\n\n")
+    # The markers sit on lines of their own: pandoc reads `\cmd **` as the
+    # starred form of the command and leaves the bold marker in the output.
+    return "\n\n".join(
+        f"\\figlegendbegin\n\n{p}\n\n\\figlegendend\n\n\\figblockend"
+        if LEGEND_PARA.match(p.strip()) else p for p in paras)
+
+
+def check_legends(body: str) -> list[str]:
+    """R4: every legend paragraph is wrapped, and every float is closed."""
+    problems = []
+    paras = [p.strip() for p in body.split("\n\n")]
+    for i, p in enumerate(paras):
+        if LEGEND_PARA.match(p) and (i == 0 or paras[i - 1]
+                                     != "\\figlegendbegin"):
+            problems.append(f"legend not wrapped in its own typography: "
+                            f"'{p[:60]}'")
+    n_open = body.count("\\figblockbegin")
+    n_close = body.count("\\figblockend")
+    if n_open != n_close:
+        problems.append(f"{n_open} figure blocks opened, {n_close} closed")
+    return problems
 
 
 def run(keep_intermediate: bool = False) -> int:
@@ -124,13 +208,21 @@ def run(keep_intermediate: bool = False) -> int:
         print("[s25 pdf] no LaTeX engine found", file=sys.stderr)
         return 1
 
-    MD_BUILD.write_text(build_markdown(), encoding="utf-8")
+    md = build_markdown()
+    for p in check_legends(md):
+        print(f"  [FAIL] {p}", file=sys.stderr)
+    if check_legends(md):
+        print("[s25 pdf] a legend would be set as body text (R4)",
+              file=sys.stderr)
+        return 1
+    MD_BUILD.write_text(md, encoding="utf-8")
     # graphicx is normally pulled in by pandoc when it lowers a markdown
     # image; every figure here is already raw `\includegraphics`, which
     # pandoc passes straight through without noticing it needs the package.
     TEX_PREAMBLE.write_text(
         s14_pdf.HEADER_INCLUDES.strip()
-        + "\n\\usepackage{graphicx}\n\\usepackage{longtable,booktabs,array}\n",
+        + "\n\\usepackage{graphicx}\n\\usepackage{longtable,booktabs,array}\n"
+        + LEGEND_PREAMBLE,
         encoding="utf-8")
     cmd = ["pandoc", MD_BUILD.name,
            "--from", ("markdown+pipe_tables+superscript+subscript"
@@ -161,6 +253,18 @@ def run(keep_intermediate: bool = False) -> int:
         return 1
 
     log = proc.stdout + proc.stderr
+    overfull = _overfull(log)
+    if overfull:
+        for ln in overfull[:20]:
+            print(f"  {ln}", file=sys.stderr)
+        print(f"[s25 pdf] {len(overfull)} overfull line(s) wider than "
+              f"{OVERFULL_PT} pt run into the margin", file=sys.stderr)
+        return 1
+    too_tall = [ln for ln in log.split("\n") if "Float too large" in ln]
+    if too_tall:
+        print(f"[s25 pdf] {len(too_tall)} figure block(s) taller than a page",
+              file=sys.stderr)
+        return 1
     missing = sorted({ln.strip() for ln in log.split("\n")
                       if "Missing character" in ln})
     if missing:

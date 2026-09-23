@@ -36,6 +36,7 @@ import s25_claims_thesis                                       # noqa: E402
 import s25_figmap as fm                                        # noqa: E402
 import s25_figures                                             # noqa: E402
 import s25_lib as L
+import s25_pdf                                                 # noqa: E402
 import s25_prose                                            # noqa: E402
 import s25_assign                                              # noqa: E402
 import s25_refs                                                # noqa: E402
@@ -267,6 +268,107 @@ def _prose_legend_restates_body():
     return s25_prose.run()
 
 
+def _prose_legend_fragment_opener():
+    """A legend whose first sentence has no finite verb (S28 R1)."""
+    f = L.TH / "01_introduction.md"
+    t = f.read_text()
+    old = "**{fig:gating_logic}.**"
+    i = t.index(old) + len(old)
+    f.write_text(t[:i] + " The logic of the channel, drawn as a diagram."
+                 + t[i:])
+    return s25_prose.run()
+
+
+def _prose_legend_fragment_inside():
+    """A later legend sentence with no finite verb (S28 R2)."""
+    f = L.TH / "01_introduction.md"
+    t = f.read_text()
+    i = t.index("**{fig:gating_logic}.**")
+    j = t.index("\n\n", i)
+    f.write_text(t[:j] + " Each panel against its own control, by class."
+                 + t[j:])
+    return s25_prose.run()
+
+
+def _prose_leadin_fragment():
+    """A bold paragraph lead-in that is a noun phrase (S28 R1b)."""
+    f = L.TH / "01_introduction.md"
+    f.write_text(f.read_text()
+                 + "\n\n**The receptor, in outline.** A paragraph follows.\n")
+    return s25_prose.run()
+
+
+def _prose_figure_undescribed():
+    """A figure placed in a chapter no sentence of which refers to it (S28
+    R3): every body reference to one figure is turned into plain text."""
+    f = L.TH / "01_introduction.md"
+    t = f.read_text()
+    legend = "**{fig:channel_structure}.**"
+    keep = t.index(legend)
+    body = t[:keep].replace("{fig:channel_structure}", "the channel figure")
+    rest = t[keep + len(legend):].replace("{fig:channel_structure}",
+                                          "the channel figure")
+    f.write_text(body + legend + rest)
+    return s25_prose.run()
+
+
+def _pdf_legend_unwrapped():
+    """A legend paragraph the PDF stage would set as body text (S28 R4),
+    exercised on the check the stage runs on its own build markdown."""
+    md = ("Prose.\n\n\\figblockbegin\n\n\\includegraphics{x}\n\n"
+          "**Figure 1.1.** A legend.\n\nMore prose.")
+    problems = s25_pdf.check_legends(md)
+    for p in problems:
+        print(f"  [FAIL] {p}", file=sys.stderr)
+    return 1 if problems else 0
+
+
+def _figure(kind: str):
+    """A figure built to break one figcheck rule, saved through figstyle."""
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    import figstyle
+    figstyle.use()
+    if kind == "intrusion":
+        # the neighbour is taller, as a structure image beside a plot is
+        fig = plt.figure(figsize=(3.0, 2.0))
+        ax = fig.add_axes([0.10, 0.10, 0.35, 0.60])
+        ax2 = fig.add_axes([0.55, 0.10, 0.40, 0.85])
+        ax2.plot([0, 1], [0, 1])
+    elif kind == "crowded":
+        fig, (ax, ax2) = plt.subplots(1, 2, figsize=(3.0, 2.0))
+        ax2.plot([0, 1], [0, 1])
+    else:
+        fig, ax = plt.subplots(figsize=(3.0, 2.0))
+    ax.plot([0, 1], [0, 1])
+    if kind == "crowded":
+        figstyle.panel(ax, "a", "the first panel has a long title")
+        figstyle.panel(ax2, "b", "this is b")
+    elif kind == "intrusion":
+        figstyle.panel(ax, "a", "the title of this panel runs well across "
+                                "the next one")
+    elif kind == "legend_on_data":
+        ax.plot([0, 1], [0.5, 0.5], label="the keyed line")
+        ax.legend(loc="center")
+    elif kind == "overlap":
+        ax.text(0.5, 0.5, "the first label sits here", ha="center")
+        ax.text(0.5, 0.5, "the second label sits here too", ha="center")
+    elif kind == "undrawn":
+        ax.annotate("this note points outside", (3.0, 3.0))
+    elif kind == "clipped":
+        ax.text(0.95, 0.5, "a label that runs off the axes", clip_on=True)
+    elif kind == "fragment":
+        figstyle.panel(ax, "a", "the count per genome, by class")
+    out = Path(tempfile.mkdtemp(prefix="s25_figcheck_")) / f"guard_{kind}"
+    try:
+        figstyle.save(fig, out)
+    finally:
+        plt.close(fig)
+        shutil.rmtree(out.parent, ignore_errors=True)
+    return 0
+
+
 CASES = [
     ("assign: an unassigned results directory", "rule T6", _assign_unassigned),
     ("assign: an assignment with no directory", "does not exist",
@@ -302,6 +404,30 @@ CASES = [
      "says the same thing twice", _prose_legend_repeats),
     ("prose: a legend that restates the paragraph beside it", "restates the "
      "paragraph", _prose_legend_restates_body),
+    ("prose: a legend that opens without a finite verb (R1)",
+     "opens without a finite verb", _prose_legend_fragment_opener),
+    ("prose: a legend sentence with no finite verb (R2)",
+     "sentence with no finite verb", _prose_legend_fragment_inside),
+    ("prose: a bold lead-in with no finite verb (R1b)",
+     "lead-in has no finite verb", _prose_leadin_fragment),
+    ("prose: a figure no sentence of its chapter refers to (R3)",
+     "no sentence of chapter", _prose_figure_undescribed),
+    ("pdf: a legend set as body text (R4)", "not wrapped",
+     _pdf_legend_unwrapped),
+    ("figure: two labels that overlap (R5)", "overlaps",
+     lambda: _figure("overlap")),
+    ("figure: an annotation anchored outside its axes (R5)", "not drawn",
+     lambda: _figure("undrawn")),
+    ("figure: a label clipped by its axes (R5)", "clipped",
+     lambda: _figure("clipped")),
+    ("figure: a panel title with no finite verb (R2)", "no finite verb",
+     lambda: _figure("fragment")),
+    ("figure: a panel title crowding the next panel (R5)", "pt clear of",
+     lambda: _figure("crowded")),
+    ("figure: a panel title running into the next panel (R5)",
+     "runs into another panel", lambda: _figure("intrusion")),
+    ("figure: a legend drawn over its data (R5)", "drawn over",
+     lambda: _figure("legend_on_data")),
 ]
 
 

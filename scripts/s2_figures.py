@@ -85,7 +85,7 @@ def fig_space() -> None:
         ax.text(n * 1.35, i, f"{n:,}", va="center", fontsize=6.2,
                 color="#52514e")
     ax.set_xlabel("records (log scale)")
-    figstyle.panel(ax, "a", "size of the search space")
+    figstyle.panel(ax, "a", "record counts span four orders\nof magnitude across groups")
     figstyle.despine(ax)
     figstyle.hgrid(ax, axis="x")
 
@@ -101,7 +101,7 @@ def fig_space() -> None:
     ax.invert_yaxis()
     ax.set_xlim(0, 100)
     ax.set_xlabel("composition (% of the group's records)")
-    figstyle.panel(ax, "b", "what the records are")
+    figstyle.panel(ax, "b", "each group's records divide among the four calls")
     figstyle.despine(ax)
     figstyle.hgrid(ax, axis="x")
     handles, labels = ax.get_legend_handles_labels()
@@ -253,7 +253,7 @@ def fig_growth() -> None:
     # the vertebrates by construction. Read alone, this panel would
     # overstate what the enumeration proved.
     ax.set_title("census v1 is the app's search bundles, not a family-wide "
-                 "harvest — outside\nthe vertebrates it barely searched, so "
+                 "harvest. Outside\nthe vertebrates it barely searched, so "
                  "these are the searches' scope, not their failure",
                  fontsize=6.4, loc="left", color="#52514e", pad=8)
     for i, (r, p_new) in enumerate(zip(rows, pct)):

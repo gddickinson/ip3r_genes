@@ -11,11 +11,11 @@ database-search app the census was built on.
 > [`thesis/`](thesis/README.md), literature review in
 > [`docs/ip3r_review_2026.pdf`](docs/ip3r_review_2026.pdf).
 
-**Status:** analysis complete (34 of 37 ledger tasks done). The paper (60 pp) and
-the thesis (194 pp) both build end to end from the committed tables. Still to
-do: a revision pass on figure text and typesetting (S28, in progress), a
-paper series (S26), and deposit and release (S14b, which needs a human). See
-[Project status](#project-status).
+**Status:** analysis and writing complete (35 of 37 ledger tasks done). The
+paper (60 pp) and the thesis (190 pp) both build end to end from the committed
+tables, and the thesis has had a full revision pass on legends, in-figure text
+and typesetting (S28). Still to do: a paper series (S26), and deposit and
+release (S14b, which needs a human). See [Project status](#project-status).
 
 ---
 
@@ -209,7 +209,7 @@ Each analysis also has its own rendered `results/<task>/report.md`.
 | Output | Where | Built by |
 |---|---|---|
 | **Manuscript**: 17 sections, 7 main + 16 Extended Data + 6 Supplementary figures, 276 load-bearing numbers re-verified on every build, 60-page PDF | [`manuscript/`](manuscript/README.md) · [PDF](manuscript/itpr_family_manuscript.pdf) | `scripts/s14_assemble.py` |
-| **Thesis**: 16 chapters + 5 appendices, ~73,000 words, 104 figures, 116 audited references, 194-page PDF | [`thesis/`](thesis/README.md) · [PDF](thesis/itpr_family_thesis.pdf) | `scripts/s25_assemble.py` |
+| **Thesis**: 16 chapters + 5 appendices, ~80,700 words, 104 figures, 116 audited references, 190-page PDF | [`thesis/`](thesis/README.md) · [PDF](thesis/itpr_family_thesis.pdf) | `scripts/s25_assemble.py` |
 | **Literature review**: 32 pages, 137 references, 12 figures, with a claim-by-claim audit | [`docs/ip3r_review_2026.pdf`](docs/ip3r_review_2026.pdf) | `scripts/s0_review_build.py --pdf` |
 | **Analysis results**: one directory per task, holding tables, figures and a rendered `report.md` | [`results/`](results/) | `scripts/s<n>_*.py` |
 | **Deposit manifest**: 1,951 files with SHA-256, plus the commands that regenerate the excluded bulk data | [`manuscript/deposit_manifest.tsv`](manuscript/deposit_manifest.tsv) | `s14_assemble.py --only deposit` |
@@ -320,6 +320,13 @@ result:
 - **Reproducible by construction (D24).** Aligners and tree searches run at
   a pinned thread count and seed, databases are pinned to dated releases,
   and figures are byte-identical on rebuild.
+- **Figures and prose are checked as they are written.** A figure cannot be
+  saved if any of its labels overlap, are clipped, run into a neighbouring
+  panel, or sit over the data they key, or if a title or annotation is a
+  bare noun phrase. Every figure legend and bold lead-in must open with a
+  statement, and every figure must be described in its chapter's text. All
+  30 build guards are broken on purpose on every build, to prove each one
+  still fires.
 - **References are audited on entry.** A new citation is declared by PMID or
   DOI plus a phrase its title must contain, and is resolved against the live
   record. This caught 9 references that had been written from memory and
@@ -363,7 +370,7 @@ decisions for every task are in
 | Evolution | S6 alignment · S7 phylogeny · S8 synteny · S9 selection · S13 reconciliation & dating · S15 loss dynamics · S16 duplication history · S21 gene architecture | ✅ |
 | Function & records | S10 annotation-bug validation · S11 structures · S12 expression · S17 constraint & variants · S18 annotation audit · S19 methods · S22 ligand site | ✅ |
 | Writing | S14a/S14c manuscript · S24 supplementary figures & figure audit · S25 thesis · S27 editorial pass | ✅ |
-| Revision | S28 legends, in-figure text, typesetting | 🔄 in progress |
+| Revision | S28 legends, in-figure text, typesetting | ✅ |
 | Series | S26 the results regrouped as individual papers | ⏳ pending |
 | Release | S14b Zenodo DOI, public repository, preprint | ⏳ pending, needs a human |
 

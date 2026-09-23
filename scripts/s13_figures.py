@@ -170,7 +170,7 @@ def fig_dated_backbone():
                        label="published spread of the node's age")],
               loc="upper left", frameon=False, fontsize=5.4,
               title="paralog duplication placed", title_fontsize=5.4)
-    fs.panel(ax, "", "Where the reconciliation puts each duplication, on the "
+    fs.panel(ax, "", "the reconciliation places each duplication on the "
                      "dated species tree")
     fig.tight_layout()
     return fs.save(fig, FIGS / "recon_dated_backbone")
@@ -212,7 +212,7 @@ def fig_matrix():
     ax.set_ylim(-.6, len(topos) - .4)
     ax.invert_yaxis()
     fs.despine(ax, keep=())
-    fs.panel(ax, "a", "Deepest paralog duplication, per cell")
+    fs.panel(ax, "a", "each cell places its deepest paralog duplication")
 
     # b — the rooting check
     rk = read_tsv(RECON_DIR / "rooting_check.tsv")
@@ -233,7 +233,7 @@ def fig_matrix():
     ax2.set_ylabel("rootings")
     fs.despine(ax2)
     fs.hgrid(ax2)
-    fs.panel(ax2, "b", "Every rooting of the vertebrate subtree")
+    fs.panel(ax2, "b", "every rooting of the vertebrate subtree is scored by total events")
     fig.tight_layout()
     return fs.save(fig, FIGS / "recon_matrix")
 
@@ -263,7 +263,7 @@ def fig_losses():
     fs.hgrid(ax, axis="x")
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.32), ncol=2,
               frameon=False, fontsize=5.0)
-    fs.panel(ax, "a", "What each implied loss turns out to be")
+    fs.panel(ax, "a", "the genome ledger says what each implied loss turns out to be")
 
     # b — implied losses per matrix cell, so the raw number is visible beside
     #     the number that survives the audit
@@ -275,7 +275,7 @@ def fig_losses():
     ax2.bar(range(len(vals)), vals, color=fs.STATUS["fragment"],
             edgecolor="white", linewidth=.4)
     ax2.axhline(real, color=fs.STATUS["absent"], lw=1.2)
-    ax2.annotate(f"corroborated by the genome sweep: {real}",
+    ax2.annotate(f"the genome sweep corroborates {real}",
                  xy=(0, real), xytext=(0, 4), textcoords="offset points",
                  fontsize=5.0, color=fs.STATUS["absent"])
     ax2.set_xticks(range(len(vals)))
@@ -296,17 +296,21 @@ def fig_cyclostome():
 
     fig, (ax, ax2) = plt.subplots(1, 2, figsize=(fs.W_FULL, 2.4))
     vals = [float(r["root_to_tip"]) for r in bl]
-    ax.hist(vals, bins=18, color=fs.STATUS["fragment"], edgecolor="white",
-            linewidth=.4)
+    counts, _e, _p = ax.hist(vals, bins=18, color=fs.STATUS["fragment"],
+                             edgecolor="white", linewidth=.4)
+    # headroom above the tallest bin holds the key; the locus lines stop
+    # below it so the key is not drawn across one of them
+    ax.set_ylim(0, max(counts) * 1.35)
     for r in bl:
         if r["is_cyclostome"]:
-            ax.axvline(float(r["root_to_tip"]), color=fs.GROUP["vertebrate_basal"],
-                       lw=1.0)
+            ax.axvline(float(r["root_to_tip"]), ymax=0.80,
+                       color=fs.GROUP["vertebrate_basal"], lw=1.0)
     ax.set_xlabel("root-to-tip distance (substitutions/site)")
     ax.set_ylabel("vertebrate tips")
     ax.legend(handles=[Patch(facecolor=fs.GROUP["vertebrate_basal"],
                              label="the six cyclostome loci")],
-              loc="upper right", frameon=False, fontsize=5.2)
+              loc="upper right", frameon=False, fontsize=5.2,
+              borderaxespad=0.2)
     fs.despine(ax)
     fs.hgrid(ax)
     fs.panel(ax, "a", "Are the cyclostome tips long branches?")
@@ -327,8 +331,8 @@ def fig_cyclostome():
     for i, r in enumerate(cy):
         ax2.text(1.03, i, f"pair {r['pair_support'] or '-'}", va="center",
                  fontsize=4.8, color=fs.MUTED)
-    ax2.text(1.03, len(cy) - 0.35, "SH-aLRT/UFBoot of the tree's\nown "
-             "orthology pair for this locus",
+    ax2.text(1.03, len(cy) - 0.35, "each pair value is the SH-aLRT/UFBoot\n"
+             "of the tree's own orthology pair for this locus",
              va="top", fontsize=4.6, color=fs.MUTED)
     ax2.set_yticks(range(len(labs)))
     ax2.set_yticklabels(labs, fontsize=5.0)
@@ -342,8 +346,8 @@ def fig_cyclostome():
     n_called = sum(1 for r in cy if r["s8_null_verdict"] == "within_null")
     n_nocall = sum(1 for r in cy if not r["s8_paralog_call"]
                    or r["s8_paralog_call"] == "no_call")
-    fs.panel(ax2, "b", f"S8's flank call per locus — {n_called} of "
-                       f"{len(cy)} inside its null, {n_nocall} no call")
+    fs.panel(ax2, "b", f"S8's flanks call {n_called} of {len(cy)} loci; "
+                       f"{n_nocall} get no call")
     fig.tight_layout()
     return fs.save(fig, FIGS / "recon_cyclostome")
 

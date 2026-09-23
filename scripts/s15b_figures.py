@@ -101,8 +101,8 @@ def fig_sensitivity() -> None:
          and r["evidence"] in ladder), default=1) or 1
     for ax, coding_name, title in zip(
             axes, ("family", "paralog"),
-            ("family-level presence per genome (primary, D46)",
-             "paralog-resolved, worst of ITPR1/2/3")):
+            ("the family coding counts presence per genome (D46)",
+             "the paralog-resolved coding takes the worst of ITPR1/2/3")):
         grid = []
         for ev in ladder:
             line = []
@@ -170,7 +170,7 @@ def fig_recon_bar() -> None:
                    (coding.BAR_GAP_HI, "lowest candidate")):
         ax.axvline(x, color=fs.FAINT, lw=0.7, ls=":", zorder=1)
     ax.axvline(coding.BAR_CALIBRATED, color=fs.ACCENT, lw=1.1, zorder=2)
-    ax.text(coding.BAR_CALIBRATED, 2.62, " calibrated bar, in its "
+    ax.text(coding.BAR_CALIBRATED, 2.62, " the calibrated bar sits in its "
             "measured gap", fontsize=fs.FS_NOTE, color=fs.ACCENT,
             ha="left", va="top")
     ax.set_xlim(0, 1.06)
@@ -212,8 +212,9 @@ def fig_recon_bar() -> None:
     ax.set_xlim(0, 1.0)
     fs.despine(ax)
     fs.hgrid(ax)
+    # right of the calibrated bar, above every curve until x ~ 0.9
     ax.legend(fontsize=fs.FS_NOTE, frameon=False, loc="upper left",
-              handlelength=1.6)
+              bbox_to_anchor=(0.2, 1.0), handlelength=1.6)
     fs.panel(ax, "b", "and the losses that makes")
     fs.save(fig, lib.FIGS / "reconstruction_bar")
     plt.close(fig)
@@ -259,9 +260,11 @@ def fig_mk() -> None:
                for m in series]
     handles += [Line2D([], [], color=fs.MUTED, ls=styles[s], lw=1.0, label=s)
                 for s in lib.BL_SCHEMES]
+    # the symlog axis leaves the band above zero empty; the lower corner is
+    # where the steepest curves run out of the panel
     ax.legend(handles=handles, fontsize=fs.FS_NOTE, frameon=False, ncol=2,
-              loc="lower left", handlelength=1.6)
-    fs.panel(ax, "a", "the primary character: monotone to the boundary")
+              loc="upper right", handlelength=1.6)
+    fs.panel(ax, "a", "the primary character is monotone to the boundary")
 
     ax = axes[1]
     if fits:
@@ -319,14 +322,16 @@ def fig_lesions() -> None:
     ax.set_xlabel("genomes with a lesion deficit  ←→  excess",
                   fontsize=fs.FS_LABEL)
     fs.despine(ax, keep=("bottom",))
-    fs.panel(ax, "a", "within-genome, identity-matched, by class")
+    fs.panel(ax, "a", "the identity-matched within-genome\ntest runs by class")
 
     ax = axes[1]
     strong = sorted(ctrl, key=lambda c: _f(c["q_bh"], 1.0))[:1]
     if strong:
         c = strong[0]
-        groups = [("above D4's bar", _i(c["pos_above"]), _i(c["neg_above"])),
-                  ("below D4's bar", _i(c["pos_below"]), _i(c["neg_below"]))]
+        # Two-line tick labels: on one line the pair collided at this
+        # panel width (found by S28's overlap check).
+        groups = [("above\nD4's bar", _i(c["pos_above"]), _i(c["neg_above"])),
+                  ("below\nD4's bar", _i(c["pos_below"]), _i(c["neg_below"]))]
         for i, (lab, pos, neg) in enumerate(groups):
             ax.bar(i - 0.17, pos, width=0.32,
                    color=fs.PARALOG.get(c["cell"], fs.INK), label=None)
@@ -337,10 +342,10 @@ def fig_lesions() -> None:
         ax.set_xticks([0, 1])
         ax.set_xticklabels([g[0] for g in groups], fontsize=fs.FS_TICK)
         ax.set_ylabel("genomes", fontsize=fs.FS_LABEL)
-        ax.text(0.5, -0.30, "solid: genomes with an excess.  pale: with a "
-                "deficit", transform=ax.transAxes, ha="center",
+        ax.text(0.5, -0.30, "solid bars count genomes with an excess, pale "
+                "ones a deficit", transform=ax.transAxes, ha="center",
                 fontsize=fs.FS_NOTE, color=fs.MUTED)
-        fs.panel(ax, "b", f"{c['cell']}/{c['vclass']} by contiguity")
+        fs.panel(ax, "b", f"D4's bar splits {c['cell']}/{c['vclass']}")
     fs.despine(ax)
     fs.hgrid(ax)
 
@@ -355,7 +360,8 @@ def fig_lesions() -> None:
         ax.text(i, _i(f["n_above_bar"]) + 0.6, str(_i(f["n_scored"])),
                 ha="center", fontsize=fs.FS_NOTE, color=fs.MUTED)
     ax.set_xticks(list(xs))
-    ax.set_xticklabels([f["cell"] for f in cells], fontsize=fs.FS_TICK)
+    ax.set_xticklabels([f["cell"] for f in cells], fontsize=fs.FS_TICK,
+                       rotation=30, ha="right")
     ax.set_ylabel("loci above the lesion bar\n(number above the bar: loci "
                   "scored)", fontsize=fs.FS_LABEL)
     ax.legend(handles=[Patch(facecolor=fs.STATUS["absent"],
@@ -365,7 +371,11 @@ def fig_lesions() -> None:
     ax.set_ylim(0, max(_i(f["n_above_bar"]) for f in cells) * 1.25)
     fs.despine(ax)
     fs.hgrid(ax)
-    fs.panel(ax, "c", "no dead loci to read a lesion off")
+    # The generous screen fires on a few ITPR loci, so "no dead loci" over
+    # red bars read as a contradiction; what is true of every one of them is
+    # that it is a full-coverage model (S15b report section 8).
+    n_itpr = sum(_i(f["n_fossils"]) for f in cells if f["cell"] != "RYR")
+    fs.panel(ax, "c", f"all {n_itpr} ITPR candidates are full-length models")
     fs.save(fig, lib.FIGS / "lesion_strata")
     plt.close(fig)
 

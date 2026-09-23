@@ -77,7 +77,7 @@ def fig_copy_number(out: Path) -> None:
     FS.hgrid(ax)
     FS.despine(ax)
     ax.legend(fontsize=6, frameon=False, ncol=2, loc="upper left")
-    FS.panel(ax, "a", "3R doubled ITPR1 alone — and all three RyRs")
+    FS.panel(ax, "a", "3R doubled ITPR1 alone, and all three RyRs")
 
     ax = axes[1]
     order = [r for r in clade if r["cell"] == "ITPR1"
@@ -125,7 +125,9 @@ def fig_paralogon(out: Path) -> None:
            label="2R-dated link", edgecolor="none")
     ax.axhline(null, color=FS.CLINICAL["pathogenic"], linewidth=1.0,
                linestyle="--")
-    ax.annotate(f"matched random windows, {null:.1%}",
+    # two lines, so the label spans only the last group, whose bars sit
+    # below the null line, and not the dark bar of the group before it
+    ax.annotate(f"matched random\nwindows, {null:.1%}",
                 xy=(len(pairs) - 0.55, null), xytext=(0, 4),
                 textcoords="offset points", fontsize=6,
                 color=FS.CLINICAL["pathogenic"], ha="right")
@@ -136,7 +138,7 @@ def fig_paralogon(out: Path) -> None:
     FS.hgrid(ax)
     FS.despine(ax)
     ax.legend(fontsize=6, frameon=False, loc="upper right")
-    FS.panel(ax, "a", "replicated in 309 genomes, against its null")
+    FS.panel(ax, "a", "2R links replicate across 309 genomes")
 
     ax = axes[1]
     prim = [r for r in tests if int(r["window_n"]) == TB.PRIMARY_WINDOW
@@ -166,7 +168,7 @@ def fig_paralogon(out: Path) -> None:
     FS.hgrid(ax, axis="x")
     FS.despine(ax)
     ax.legend(fontsize=6, frameon=False, loc="lower right")
-    FS.panel(ax, "b", "the human windows, links and null")
+    FS.panel(ax, "b", "the null is drawn per human window")
     fig.tight_layout()
     FS.save(fig, out / "s16_paralogon")
     plt.close(fig)
@@ -220,11 +222,13 @@ def fig_dcs(out: Path) -> None:
     ax.set_xticks(list(x))
     ax.set_xticklabels(cats, fontsize=6)
     ax.set_ylabel("genomes")
-    ax.set_ylim(0, len(dcs) * 1.18)
+    # headroom above the 49-genome line holds the key, clear of the bars
+    ax.set_ylim(0, len(dcs) * 1.55)
+    ax.set_yticks([0, 10, 20, 30, 40, 50])
     FS.hgrid(ax)
     FS.despine(ax)
-    ax.legend(fontsize=6, frameon=False, loc="lower left")
-    FS.panel(ax, "b", "the 3R signature, two references")
+    ax.legend(fontsize=6, frameon=False, loc="upper left")
+    FS.panel(ax, "b", "the 3R signature holds against two references")
     fig.tight_layout()
     FS.save(fig, out / "s16_dcs")
     plt.close(fig)
@@ -273,13 +277,17 @@ def fig_blocks(out: Path) -> None:
                 marker="o", markersize=2.6, linewidth=1.0,
                 color=FS.PARALOG.get(cell) or FS.GROUP["RYR"], label=cell)
     ax.axvline(L.COV_FULL, color=FS.MUTED, linewidth=0.8, linestyle=":")
-    ax.annotate("operating point", xy=(L.COV_FULL, 0), xytext=(3, 6),
-                textcoords="offset points", fontsize=6, color=FS.MUTED)
+    # in the empty band between the ITPR1 and RyR lines
+    ax.annotate("operating point", xy=(L.COV_FULL, 130), xytext=(3, 0),
+                textcoords="offset points", fontsize=6, color=FS.MUTED,
+                va="center")
     ax.set_xlabel("coverage bar a locus must clear to count as a copy")
     ax.set_ylabel("genomes with >1 copy")
     FS.hgrid(ax)
     FS.despine(ax)
-    ax.legend(fontsize=6, frameon=False, loc="upper right")
+    # between the RyR line (~187) and the ITPR1 line (~75), clear of both
+    ax.legend(fontsize=6, frameon=False, loc="center right",
+              bbox_to_anchor=(1.0, 0.70))
     FS.panel(ax, "b", "the counts do not move with the bar")
     fig.tight_layout()
     FS.save(fig, out / "s16_blocks")

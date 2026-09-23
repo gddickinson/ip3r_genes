@@ -2536,3 +2536,27 @@ answers a question the plant literature has kept open for two decades, and it
 was stated as a measurement with nothing to measure it against. A result
 without its literature is a number; with it, it is an argument. Adding the
 citations changed no measurement and changed what several of them mean.
+
+## 2026-09-23 — S28: a figure title that contradicted its own panel
+
+*What changed: nothing measured. Every legend and in-figure label now states
+what it shows, and one panel title was wrong about the result it drew.*
+
+The fossil panel of the loss-count figure was titled *no dead loci to read a
+lesion off* over red bars counting the loci the deliberately generous
+pseudogene screen fires on: seven ITPR loci and ten ryanodine receptor loci.
+The chapter and the report had always said the careful thing. Seven loci fire
+the screen, every one of them is a complete, full-coverage gene model with one
+or two internal stops, and one or two stops in a 2,700-residue model is not
+decay. The title compressed that into a claim the panel beneath it visibly
+contradicted. It now says what is true of all seven: they are full-length
+models. The result is unchanged. The shared-lesion test still has nothing
+dead to run on, and the ITPR3 lesion excess in birds is still the one lead,
+still confounded by assembly contiguity, and it stays a lead rather than a
+finding.
+
+One sentence was sharpened rather than corrected. None of the ten IP₃ contacts
+measured on the structure lies in PF08709, the Pfam domain named after the
+ligand; they sit in MIR and RIH, the two domains the family shares with the
+ryanodine receptors. The chapter now names the signature by accession, so a
+reader can check it.

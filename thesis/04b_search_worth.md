@@ -40,12 +40,16 @@ contig N50 of 23,460 bp against 3,396,515 bp for a found one, and the odds of
 finding the gene rise 8.10-fold per tenfold of contig N50 in the IP₃ receptor
 series and 19.99-fold in the ryanodine series. On chromosome-level assemblies
 the IP₃ series misses 3 of 512 cells and the ryanodine series misses none of
-172.
+172. {fig:s19_contiguity}a plots the miss rate against contig N50 for both
+series, {fig:s19_contiguity}b scores the a-priori bar against the residual
+miss rate at every candidate floor, and {fig:s19_contiguity}c counts the
+genomes each floor removes, which is the price quantified below.
 
 ![](figures/s19_contiguity.png)
 
-**{fig:s19_contiguity}.** The measured false-negative rate against assembly
-contiguity, with the bar drawn. This is the figure that licenses the
+**{fig:s19_contiguity}.** The false-negative rate falls with assembly
+contiguity in both control series, and the bar is drawn where the a-priori
+floor sits. This is the figure that licenses the
 retention result, because a survey reporting zero losses is worth nothing
 unless somebody has measured how often the same search fails to find a gene
 that is demonstrably present. The two series are independent, since the
@@ -86,21 +90,24 @@ because scoring the best coverage over every alignment instead would let an
 ITPR3 bait's hit at the ITPR1 gene stand in as ITPR3 evidence and make every
 panel look alike. The simulation reproduces the committed ledger 1,236 cells
 out of 1,236, so every delta below is measured against the sweep itself rather
-than against a model of it.
+than against a model of it. The result is {fig:s19_panel}: panel a puts each
+ablation's change in recovered cells beside the full panel's, and the only
+bars that move far are the ones that remove a paralogue's own baits, while
+panel b shows that a single bait recovers its cell at any identity above 0.5.
 
 ![](figures/s19_panel.png)
 
-**{fig:s19_panel}.** Nineteen panels, drawn as change from the full panel on
-a symmetric-log axis. Every panel scores between 0.58 and 0.85 of the cells,
-so on an absolute linear axis the entire breadth result would be one pixel,
-and the one ablation that removes every labelled bait sits 783 cells away
-from the rest. The importance of this figure is that it overturns the usual
-intuition about how to build a bait panel. Phylogenetic breadth, which is
-what a panel is normally padded with, buys almost nothing inside the
-vertebrates, while paralogue coverage buys everything. Anyone designing a
-comparable survey should spend their panel budget on paralogues and on
-clades where no labelled record exists, and this figure is the measurement
-that says so.
+**{fig:s19_panel}.** Nineteen ablated panels are drawn as change from the full
+38-bait panel on a symmetric-log axis. Every panel scores between 0.58 and
+0.85 of the cells, so on an absolute linear axis the entire breadth result
+would be one pixel, and the one ablation that removes every labelled bait sits
+783 cells away from the rest. The importance of this figure is that it
+overturns the usual intuition about how to build a bait panel. Phylogenetic
+breadth is what a panel is normally padded with, and it buys almost nothing
+inside the vertebrates, while paralogue coverage buys everything. Anyone
+designing a comparable survey should spend their panel budget on paralogues
+and on clades where no labelled record exists, and this figure is the
+measurement that says so.
 
 Two readings fall out, and they point in opposite directions.
 
@@ -137,7 +144,7 @@ that a smaller panel searches better.
 Three denominators are kept apart, because conflating them is the standard way
 this question gets answered wrongly.
 
-**How the census accumulated.** The targeted database search that started the
+**The census grew in six steps.** The targeted database search that started the
 project returned 1,571 records. Exhaustive signature enumeration took it to
 15,421. The vertebrate profile sweep added 618 and the genome sweep added
 1,058. The non-vertebrate proteome sweep added 785 and the non-vertebrate
@@ -160,12 +167,15 @@ well annotated.
 The other side of that statement is the same measurement seen from the other
 direction: 766 vertebrate records carry a family signature and are declined by
 the profile pair, all of them under 1,000 residues, which is the span gate
-doing exactly what it was added for.
+doing exactly what it was added for. {fig:s19_contribution}a puts the two
+channels' disagreement rate on the record axis, where the profile's gain sits
+in the fragment tail, and {fig:s19_contribution}b asks the same question per
+gene, where three quarters of the demonstrated genes exist only as DNA.
 
 ![](figures/s19_contribution.png)
 
-**{fig:s19_contribution}.** What each channel contributed, drawn as
-disagreement rates rather than as stacked counts. The claim is a proportion,
+**{fig:s19_contribution}.** Each channel's contribution is drawn as a
+disagreement rate rather than as a stacked count. The claim is a proportion,
 and stacking proportions on a logarithmic axis misreads them by
 construction. The figure matters because it prices the standard approach. A
 family profile searched over reference proteomes, which is how most
@@ -195,15 +205,19 @@ The outcome is measured on the finished model rather than taken from any
 session's prose, using the share of a run's final included set that neither
 profile scores at all. The seven runs separate cleanly, with three at 0.81,
 0.97 and 0.99 against four at 0.23 to 0.34 and nothing between 0.34 and 0.81,
-so the labels are not a judgement call.
+so the labels are not a judgement call. {fig:s19_drift}a traces the
+sister-family share round by round for all seven runs, {fig:s19_drift}b traces
+the off-family share, which is the axis that actually moves, and
+{fig:s19_drift}c scores each rule's sensitivity and specificity against the
+outcome.
 
 ![](figures/s19_drift.png)
 
-**{fig:s19_drift}.** Each kill rule scored as a classifier of a drift
-outcome measured on the finished model. The figure records an instrument
-failing at the one job it was built for: the rule written to catch
-sister-family drift has a sensitivity of zero across seven runs, including
-all three that drifted, because the drift dilutes the very quantity the rule
+**{fig:s19_drift}.** Each kill rule is scored as a classifier of a drift
+outcome that was measured on the finished model. The figure records an
+instrument failing at the one job it was built for: the rule written to catch
+sister-family drift has a sensitivity of zero across seven runs, including all
+three that drifted, because the drift dilutes the very quantity the rule
 measures. The correction is a one-line change to a different axis, and it is
 reported rather than applied, because it was validated after the fact on the
 runs it would reclassify.
@@ -258,9 +272,9 @@ synonymous rate is unidentifiable at 671 of 7,368 sites, and 373 of 420
 pairwise comparisons are flagged saturated. Any per-site rate formed as a
 ratio of sums is dominated by sites whose denominator is not estimable.
 
-**A likelihood tree need not resolve the question asked of it.** The test
-that compares the three sister arrangements leaves two topologies inside its
-95 % confidence set, so the sister question is answered by what the data
+**A likelihood tree does not have to resolve the question asked of it.** The
+test that compares the three sister arrangements leaves two topologies inside
+its 95 % confidence set, so the sister question is answered by what the data
 excludes rather than by reading the best tree. Chapter 6 reports both.
 
 ## 4.16 Five results here apply to anyone doing the same thing

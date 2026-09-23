@@ -81,7 +81,8 @@ def fig_ledger_status(ledger: list[dict]) -> None:
     _stack(ax, list(ALL_CELLS), counts, statuses)
     n_genomes = len({r["accession"] for r in ledger})
     ax.set_ylabel(f"genomes (n = {n_genomes})")
-    ax.set_title("What the genomic sweep found, per paralog", loc="left")
+    ax.set_title(f"The genomic sweep finds each paralog in most of the "
+                 f"{n_genomes} genomes", loc="left")
     ax.axvline(2.5, color="#52514e", lw=0.8, ls=":")
     ax.text(3.0, ax.get_ylim()[1] * 0.97, "positive\ncontrol", ha="center",
             va="top", fontsize=6.5, color="#52514e")
@@ -125,7 +126,7 @@ def fig_ledger_by_class(ledger: list[dict]) -> None:
     fig.legend(handles, [fs.STATUS_LABEL.get(s, s) for s in statuses],
                fontsize=6.2, frameon=False, ncol=4, loc="lower center",
                bbox_to_anchor=(0.5, -0.02))
-    fig.suptitle("Evidence for each paralog, by vertebrate class",
+    fig.suptitle("Evidence for each paralog varies by vertebrate class",
                  x=0.01, ha="left", fontsize=9)
     fig.tight_layout(rect=(0, 0.06, 1, 0.96))
     fs.save(fig, str(FIGDIR / "ledger_by_class"))
@@ -174,7 +175,8 @@ def fig_contiguity(ledger: list[dict]) -> None:
             ax.text(i, 1.04, f"n={n_per_bin[i]}", ha="center", fontsize=5.8,
                     color="#52514e")
     ax.axvline(1.5, color="#b3261e", lw=1.1, ls="--")
-    ax.text(1.42, 0.16, "D4 bar — below this a\ncontig cannot hold the gene",
+    # in the empty band above the short bins, not across them (S28 page read)
+    ax.text(1.42, 0.93, "D4 bar: below this a\ncontig cannot hold the gene",
             fontsize=6.0, color="#b3261e", va="center", ha="right")
     ax.set_xticks(range(len(labels)))
     ax.set_xticklabels(labels, fontsize=6.3)
@@ -215,7 +217,7 @@ def fig_contiguity(ledger: list[dict]) -> None:
     ax.set_ylabel("fraction found")
     ax.set_ylim(0, 1.18)
     n_above, n_below = spans[lib.CLASSES[0]][2], spans[lib.CLASSES[0]][3]
-    fs.panel(ax, "b", f"Either side of the bar "
+    fs.panel(ax, "b", f"Recovery differs on either side of the bar "
                       f"({n_above} vs {n_below} genomes)")
     fs.despine(ax)
     fs.hgrid(ax)
@@ -250,7 +252,7 @@ def fig_copy_number(ledger: list[dict]) -> None:
     ax.set_xticklabels([str(b) if b < 8 else "8+" for b in bins])
     ax.set_xlabel("loci found in the genome")
     ax.set_ylabel("fraction of genomes where found")
-    ax.set_title("Copy number per genome", loc="left")
+    ax.set_title("Most genomes carry one locus per paralog", loc="left")
     fs.despine(ax)
     fs.hgrid(ax)
     ax.legend(fontsize=6.5, frameon=False, ncol=4)

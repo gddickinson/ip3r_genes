@@ -15,7 +15,7 @@ this directory holds its long form: about 73,000 words across 16 chapters and
 | file | stage | what it is |
 |---|---|---|
 | `thesis.md` | `stitch` | the assembled document, do not edit |
-| `itpr_family_thesis.pdf` | `pdf` | the typeset document, 194 pages |
+| `itpr_family_thesis.pdf` | `pdf` | the typeset document, 190 pages |
 | `figures/` | `figures` | every placed figure, copied from the results tree, png + pdf |
 | `figure_manifest.tsv` | `figures` | chapter, number, slug, source, drawn width, SHA-256 |
 | `chapter_assignment.tsv` | `assign` | every results directory → chapter, with the rule |

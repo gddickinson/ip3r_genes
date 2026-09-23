@@ -60,7 +60,7 @@ def fig_paralog_alignments(out: Path, stats: dict) -> None:
     ax.legend(loc="lower right", ncol=3)
     F.despine(ax)
     F.hgrid(ax)
-    F.panel(ax, "a", "how many of the 249–265 orthologues cover each residue")
+    F.panel(ax, "a", "the 249–265 orthologues cover each residue unevenly")
 
     ax = axes[1]
     for i, paralog in enumerate(L.PARALOGS):
@@ -85,8 +85,8 @@ def fig_paralog_alignments(out: Path, stats: dict) -> None:
                   "reference column")
     F.despine(ax)
     F.hgrid(ax, "x")
-    F.panel(ax, "b", "the shape screen bait coverage cannot do; the ring is "
-                     "the one sequence it dropped")
+    F.panel(ax, "b", "the shape screen sees what bait coverage cannot; the "
+                     "ring is the one sequence it dropped")
 
     ax = axes[2]
     order = ["deep", "shallow", "vert", "family"]
@@ -112,8 +112,8 @@ def fig_paralog_alignments(out: Path, stats: dict) -> None:
     ax.set_ylabel("sequences")
     F.despine(ax)
     F.hgrid(ax)
-    F.panel(ax, "c", "the four conservation layers, and the depth control "
-                     "beside each deep set")
+    F.panel(ax, "c", "the four conservation layers stand beside the depth "
+                     "control for each deep set")
 
     fig.tight_layout()
     F.save(fig, out / "SuppFig3_paralog_alignments")
@@ -162,8 +162,8 @@ def fig_codon_alignment(out: Path, stats: dict) -> None:
     # The note goes in the title, not in the panel: the fill reaches the top
     # of the axes almost everywhere, so any in-plot annotation lands on the
     # data it is describing.
-    F.panel(ax, "a", f"the codon alignment, per-codon occupancy over 57 tips; "
-                     f"trimAl kept {ntrim:,} of {ncod:,} codons "
+    F.panel(ax, "a", f"per-codon occupancy over 57 tips shows what trimAl "
+                     f"kept: {ntrim:,} of {ncod:,} codons "
                      f"({100 * ntrim / ncod:.0f} %)")
 
     ax = axes[1]
@@ -186,8 +186,8 @@ def fig_codon_alignment(out: Path, stats: dict) -> None:
     ax.set_ylabel("coverage of the\ntrimmed codon alignment")
     F.despine(ax)
     F.hgrid(ax)
-    F.panel(ax, "b", "per-tip coverage, by the selection set the tree put the "
-                     "tip in")
+    F.panel(ax, "b", "per-tip coverage is grouped by the selection set the "
+                     "tree put the tip in")
 
     ax = axes[2]
     rows = [status[codes[c]["label"]] for c in trimmed
@@ -209,8 +209,8 @@ def fig_codon_alignment(out: Path, stats: dict) -> None:
     ax.legend(loc="upper left", ncol=2)
     F.despine(ax)
     F.hgrid(ax)
-    F.panel(ax, "c", "what validation masked, by the route the coding "
-                     "sequence came from")
+    F.panel(ax, "c", "the codons validation masked are counted by the route "
+                     "the coding sequence came from")
 
     fig.tight_layout()
     F.save(fig, out / "SuppFig4_codon_alignment")

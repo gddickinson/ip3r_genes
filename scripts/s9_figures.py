@@ -106,7 +106,7 @@ def fig_omega() -> None:
         handlelength=1.4)
     fs.despine(ax)
     fs.hgrid(ax)
-    fs.panel(ax, "", "Purifying selection on every paralog")
+    fs.panel(ax, "", "Purifying selection dominates on every paralog")
     fig.tight_layout()
     fs.save(fig, FIGS / "s9_omega_by_paralog")
     plt.close(fig)
@@ -158,9 +158,9 @@ def fig_saturation() -> None:
     axes[0].legend(handles=[
         Line2D([], [], color=fs.INK, lw=0.9, ls="--", label="ω = 1"),
         Line2D([], [], color=fs.MUTED, lw=0.9, ls=":", label="ω = 0.05")],
-        frameon=False, fontsize=fs.FS_TICK, loc="lower right",
-        handlelength=1.8)
-    axes[-1].annotate("shaded: dS past\nthe saturation bar",
+        frameon=False, fontsize=fs.FS_TICK, loc="upper left",
+        handlelength=1.8)     # above the ω = 1 line, where no pair can sit
+    axes[-1].annotate("shading marks dS past\nthe saturation bar",
                       xy=(0.97, 0.06), xycoords="axes fraction", ha="right",
                       fontsize=fs.FS_TICK, color=fs.MUTED)
     fig.tight_layout()
@@ -197,10 +197,12 @@ def fig_branch_contrast() -> None:
     ax1.legend(handles=[
         Line2D([], [], marker="s", ls="", color=fs.MUTED, label="background"),
         Line2D([], [], marker="s", ls="", color=fs.INK, label="foreground clade")],
-        frameon=False, fontsize=fs.FS_TICK, loc="upper left")
+        frameon=False, fontsize=fs.FS_TICK, loc="upper left", ncol=2)
+    # Headroom so the key clears the tallest bar (S28 page read).
+    ax1.set_ylim(0, ax1.get_ylim()[1] * 1.18)
     fs.despine(ax1)
     fs.hgrid(ax1)
-    fs.panel(ax1, "a", "Two-ratio: each clade against the rest")
+    fs.panel(ax1, "a", "Two-ratio models test each clade against the rest")
 
     ks = [f(relax.get(p, {}).get("k")) for p in PARALOGS]
     for i, p in enumerate(PARALOGS):
@@ -233,7 +235,7 @@ def fig_branch_contrast() -> None:
                  fontsize=fs.FS_TICK)
     fs.despine(ax2)
     fs.hgrid(ax2)
-    fs.panel(ax2, "b", "Relaxed (k < 1) or intensified (k > 1)")
+    fs.panel(ax2, "b", "RELAX reads k < 1 as relaxed and k > 1 as intensified")
     fig.tight_layout()
     fs.save(fig, FIGS / "s9_branch_contrast")
     plt.close(fig)
@@ -262,16 +264,18 @@ def fig_bs_restarts() -> None:
     ax.axvline(0.0, color=fs.INK, lw=1.0, ls="--", zorder=4)
     ax.set_xlabel("lnL(alternative) − lnL(its own null)")
     ax.set_ylabel("initial ω of the restart")
-    ax.annotate("left of the line = local optimum,\nnot a result",
+    ax.annotate("a point left of the line is a local optimum,\nnot a result",
                 xy=(0.02, 0.06), xycoords="axes fraction",
                 fontsize=fs.FS_TICK, color=fs.MUTED)
     ax.legend(handles=fs.paralog_handles()
               + [Line2D([], [], marker="o", ls="", color="none",
                         markeredgecolor=fs.INK, label="best restart")],
-              frameon=False, fontsize=fs.FS_TICK, loc="upper right")
+              frameon=False, fontsize=fs.FS_TICK, loc="center left",
+              bbox_to_anchor=(0.01, 0.62))    # the upper right holds a point
     fs.despine(ax)
     fs.hgrid(ax)
-    fs.panel(ax, "", "Branch-site model A: every restart against its null")
+    fs.panel(ax, "", "Branch-site model A: every restart is scored against "
+                     "its own null")
     fig.tight_layout()
     fs.save(fig, FIGS / "s9_bs_restarts")
     plt.close(fig)

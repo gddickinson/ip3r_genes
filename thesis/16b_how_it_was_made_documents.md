@@ -72,7 +72,7 @@ condition: a declared number must also appear in the chapter that declares it,
 which is what stops a ledger being padded with checks the text never makes.
 
 **Every guard in the thesis build is broken on purpose on every build.** A
-suite runs first, in a sandboxed copy, breaking each of the fifteen guards in
+suite runs first, in a sandboxed copy, breaking each of the 30 guards in
 turn and requiring each to fire with the message it is supposed to, and then
 verifying that it altered no committed file. That last condition exists
 because an earlier self-test in this project overwrote the committed table it
@@ -80,7 +80,7 @@ was testing, after which a report read two runs where there were seven and
 nothing failed.
 
 **The bibliography is audited on entry, and the audit caught nine references
-in fifty-eight.** Nothing bibliographic is typed: a new reference is declared
+in 76.** Nothing bibliographic is typed: a new reference is declared
 by an identifier and a phrase its title must carry, resolved against a live
 record, and written from what comes back. Nine identifiers written from
 memory resolved to entirely different papers, each of which would have looked
@@ -124,12 +124,12 @@ change and the message, and the human's account and machine committed it.
 Three things this way of working did well.
 
 **It sustained a long, dependency-ordered plan.** 37 tasks with declared
-dependencies, worked one at a time to stated completion criteria across 35
+dependencies, worked one at a time to stated completion criteria across 36
 sessions, with the ledger and the session log carrying the state between them.
 An agent with no memory between sessions can do this only if the state lives
 in the repository, and the protocol is what puts it there.
 
-**It made the methodology explicit.** 88 numbered decisions with the incident
+**It made the methodology explicit.** 89 numbered decisions with the incident
 that produced each is a level of methodological record-keeping that is
 uncommon in a paper, and it exists because the agent had to write down why it
 did something in order to be able to follow the same rule three weeks later.

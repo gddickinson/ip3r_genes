@@ -54,7 +54,7 @@ def gene_architecture():
                                 color=figstyle.MUTED))
     ax.text(638, 1.0, f"{ratio:.1f}×", fontsize=figstyle.FS_LABEL,
             color=figstyle.INK, ha="right", va="center", fontweight="bold")
-    figstyle.panel(ax, "a", "same protein, same exon count, different gene")
+    figstyle.panel(ax, "a", "the genes differ in size, not in exons")
 
     # ---- b: the asymmetry as one number per gene
     dens = [int(rows[s]["genomic_span_bp"]) /
@@ -70,7 +70,7 @@ def gene_architecture():
     ax2.set_ylabel("bp of locus per\nresidue of protein")
     ax2.set_ylim(0, max(dens) * 1.22)
     figstyle.hgrid(ax2)
-    figstyle.panel(ax2, "b", "packing")
+    figstyle.panel(ax2, "b", "each gene packs its protein differently")
     lib.provenance(fig, "measured", "Ensembl release 15.12")
     return lib.save(fig, "gene_architecture")
 
@@ -100,7 +100,8 @@ def family_separation():
                    edgecolor="#ffffff", linewidth=0.3)
     lim = (0.10, 1.02)
     ax.plot(lim, lim, color=figstyle.MUTED, lw=0.6, ls=(0, (3, 2)), zorder=2)
-    ax.text(0.74, 0.60, "equally close\nto both baits", rotation=39,
+    ax.text(0.74, 0.60, "the diagonal marks equal\nidentity to both baits",
+            rotation=39,
             fontsize=figstyle.FS_NOTE - 0.6, color=figstyle.MUTED,
             ha="center", va="center")
     ax.set_xlim(*lim)
@@ -108,8 +109,9 @@ def family_separation():
     ax.set_xlabel("identity to the IP$_3$R bait")
     ax.set_ylabel("identity to the RyR bait")
     ax.set_aspect("equal")
+    ax.set_anchor("N")      # keep the title on the row's baseline (S28)
     figstyle.hgrid(ax, axis="both")
-    figstyle.panel(ax, "a", "every control, both baits")
+    figstyle.panel(ax, "a", "each control has two identities")
 
     # ---- b: the margin, and the band inside which it is not a call
     ax2.axhspan(-0.10, 0.10, color="#f2f1ec", zorder=0)
@@ -130,7 +132,7 @@ def family_separation():
     ax2.set_xlim(-0.55, 2.55)
     ax2.set_ylabel("margin  (IP$_3$R − RyR identity)")
     figstyle.hgrid(ax2)
-    figstyle.panel(ax2, "b", "no overlap")
+    figstyle.panel(ax2, "b", "the two families do not overlap")
 
     # ---- c: what one domain query in one genome actually returns
     def klass(r):
@@ -162,7 +164,7 @@ def family_separation():
     ax3.set_xticks([])
     ax3.set_ylabel("protein records")
     figstyle.hgrid(ax3)
-    figstyle.panel(ax3, "c", "PF08709 in zebrafish")
+    figstyle.panel(ax3, "c", "a zebrafish PF08709 query returns RyRs too")
     fig.legend(handles=[Patch(facecolor=c, label=l)
                         for c, l in TRUTH_STYLE.values()],
                loc="lower center", ncol=3, bbox_to_anchor=(0.36, -0.10),
@@ -203,12 +205,16 @@ def taxonomic_range():
                        fontsize=figstyle.FS_TICK)
     ax.set_xscale("log")
     ax.set_xlim(0.5, 90_000)
+    # room under the last row, so its "0" does not sit on the axis line
+    ax.set_ylim(-0.75, len(kingdoms) - 0.45)
     ax.set_xlabel("proteins carrying PF08709 (log scale)")
     ax.tick_params(axis="y", length=0)
     figstyle.hgrid(ax, axis="x")
     at, sc = (int(by["Arabidopsis thaliana"]["n_PF08709"]),
               int(by["Saccharomyces cerevisiae"]["n_PF08709"]))
-    ax.text(70_000, 5.45, f"yet $\\it{{A.\\ thaliana}}$ carries {at}\n"
+    # between the Fungi and Viridiplantae rows, right of their short bars,
+    # where nothing else is printed (S28 page read: beside SAR it crowded 309)
+    ax.text(70_000, 3.5, f"yet $\\it{{A.\\ thaliana}}$ carries {at}\n"
                           f"and $\\it{{S.\\ cerevisiae}}$ {sc}",
             fontsize=figstyle.FS_NOTE, color="#b3261e", ha="right",
             va="center", linespacing=1.35)
@@ -246,6 +252,7 @@ def taxonomic_range():
     ax2.set_ylim(-0.6, len(sigs) - 0.4)
     ax2.tick_params(length=0)
     figstyle.despine(ax2, keep=())
-    figstyle.panel(ax2, "b", "signatures carried, per receptor")
+    figstyle.panel(ax2, "b", "each receptor carries a different subset of "
+                             "the signatures")
     lib.provenance(fig, "measured", "InterPro, 2026-08-18")
     return lib.save(fig, "taxonomic_range")

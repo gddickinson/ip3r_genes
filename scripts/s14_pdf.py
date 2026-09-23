@@ -188,7 +188,7 @@ def build_markdown() -> str:
         "documentclass: article",
         "papersize: a4",
         "fontsize: 11pt",
-        "geometry: margin=2.2cm",
+        "geometry: margin=2.0cm",   # s14_lib.W_FULL: figures are drawn for a 17.0 cm block
         "linestretch: 1.12",
         "colorlinks: true",
         # Named colour, defined in the preamble: pandoc parses metadata as

@@ -54,14 +54,14 @@ protein record.
 
 ## A.3 Priority is assigned by a rule
 
-**High priority** requires three things simultaneously: the gene demonstrably
+**High priority requires three things simultaneously**: the gene demonstrably
 present, the assembly demonstrably able to carry it, and the reading frame
 intact. Only 52 items meet all three, and they are concentrated in ray-finned
 fish, with a handful in birds, mammals and amphibians.
 
-**Medium priority** covers a partial recovery or an unscored reading frame.
+**Medium priority covers a partial recovery or an unscored reading frame.**
 
-**Low priority** covers anything below the contiguity bar, because there the
+**Low priority covers anything below the contiguity bar**, because there the
 annotation's silence may be the assembly's fault rather than the annotator's,
 and a correction proposed on that basis would be asking a curator to annotate
 a gene the assembly cannot represent.

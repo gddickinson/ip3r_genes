@@ -68,13 +68,14 @@ the headline.
 
 ## C.5 Two thresholds have no sensitivity table, and here is why
 
-**The reconstruction bar** has none, because the evidence ladder in C.1 is its
-sensitivity analysis. Its first three rungs are the two edges of the gap the
+**The reconstruction bar has no table of its own**, because the evidence
+ladder in C.1 is its sensitivity analysis. Its first three rungs are the two edges of the gap the
 calibration measured and the midpoint between them, and moving across the
 whole gap changes no cell in 927.
 
-**The identity floor for what counts as a locus** outside the vertebrates has
-none, because the calibration that produced it reported that neither identity
+**The identity floor for what counts as a locus outside the vertebrates has
+no table either**, because the calibration that produced it reported that
+neither identity
 nor coverage separates its two populations cleanly, and a sensitivity grid
 around a threshold whose calibration refused to separate would be a grid
 around nothing. What was done instead was to add a second, independent axis,

@@ -85,13 +85,17 @@ def fig_sister_au(fs, plt) -> str | None:
                    fontsize=fs.FS_LABEL, color=fs.MUTED)
     ax1.set_xlim(0, max(max(dl) * 1.28, 1e-9))
     fs.despine(ax1)
-    fs.panel(ax1, "a", "what each topology costs")
+    fs.panel(ax1, "a", "each constrained topology costs likelihood")
 
     # B — the test's own verdict, on its own scale
     fs.hgrid(ax2, "x")
     ax2.axvline(AU_ALPHA, color=fs.CLINICAL["pathogenic"], lw=0.9,
                 zorder=2)
-    ax2.annotate(f"p-AU = {AU_ALPHA}\nrejection", (AU_ALPHA, len(rows) - 0.35),
+    # Anchored in axes fraction on y: a data-coordinate anchor above the top
+    # row lies outside the y-limits, and an annotation whose anchor is outside
+    # its axes is silently not drawn at all (S28 found exactly that here).
+    ax2.annotate(f"p-AU = {AU_ALPHA}\nrejection", (AU_ALPHA, 0.985),
+                 xycoords=("data", "axes fraction"),
                  xytext=(4, 0), textcoords="offset points", va="top",
                  ha="left", fontsize=fs.FS_NOTE,
                  color=fs.CLINICAL["pathogenic"])
@@ -114,9 +118,10 @@ def fig_sister_au(fs, plt) -> str | None:
     ax2.set_xlabel("p-AU (10,000 RELL replicates)",
                    fontsize=fs.FS_LABEL, color=fs.MUTED)
     fs.despine(ax2, keep=("bottom",))
-    fs.panel(ax2, "b", "what the AU test does to it")
+    fs.panel(ax2, "b", "the AU test rejects two of the three")
 
-    fig.suptitle("The three sister hypotheses for ITPR1/2/3, tested",
+    fig.suptitle("The AU test rejects two of the three sister hypotheses "
+                 "for ITPR1/2/3",
                  fontsize=fs.FS_SUPTITLE, fontweight="bold", color=fs.INK,
                  x=0.005, ha="left")
     fig.tight_layout(rect=(0, 0, 1, 0.94))
@@ -169,7 +174,8 @@ def fig_support_profile(fs, plt) -> str | None:
     fs.despine(ax)
     ax.legend(loc="lower left", frameon=False, fontsize=fs.FS_NOTE,
               handletextpad=0.4, borderaxespad=0.3)
-    ax.set_title("How much of the tree is resolved", loc="left",
+    ax.set_title(f"{ok} of {len(pts)} nodes clear both support thresholds",
+                 loc="left",
                  fontsize=fs.FS_SUPTITLE, fontweight="bold", color=fs.INK,
                  pad=5)
     fig.tight_layout()
@@ -253,7 +259,10 @@ def fig_paralog_placement(fs, plt) -> str | None:
                                     0.28 * len(items) + 1.5))
     fs.hgrid(ax, "x")
     ax.axvline(MIN_UFBOOT, color=fs.FAINT, lw=0.8, ls=(0, (3, 2)), zorder=2)
-    ax.annotate("UFBoot 95", (MIN_UFBOOT, len(items) - 0.4),
+    # y in axes fraction: a data anchor above the top row is outside the axes
+    # and the annotation is then not drawn (S28).
+    ax.annotate("UFBoot 95", (MIN_UFBOOT, 0.985),
+                xycoords=("data", "axes fraction"),
                 xytext=(3, 0), textcoords="offset points", va="top",
                 ha="left", fontsize=fs.FS_NOTE, color=fs.MUTED)
     seen: set[str] = set()
@@ -285,8 +294,8 @@ def fig_paralog_placement(fs, plt) -> str | None:
         ax.legend(loc="lower right", frameon=False, fontsize=fs.FS_NOTE,
                   handletextpad=0.4, borderaxespad=0.4,
                   title="resolves with", title_fontsize=fs.FS_NOTE)
-    ax.set_title("Vertebrate tips the tree does not place in a paralog, "
-                 "and what sits with them instead",
+    ax.set_title("The tree places none of these vertebrate tips in a "
+                 "paralog; each resolves with the neighbours shown",
                  loc="left", fontsize=fs.FS_SUPTITLE,
                  fontweight="bold", color=fs.INK, pad=5)
     fig.tight_layout()

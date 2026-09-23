@@ -43,14 +43,20 @@ Twelve reconciliations were run. Five topologies, comprising the
 maximum-likelihood tree, the three constrained sister hypotheses and the
 model-violation re-search, were crossed with three variants: all tips, the
 cyclostome loci pruned, and every node below the support bar collapsed. Three
-combinations are refused with their reason.
+combinations are refused with their reason. {fig:recon_matrix}a lays out the
+matrix: the deepest duplication maps to Vertebrata in every cell that keeps
+the cyclostome loci and to Gnathostomata in every cell that drops them,
+whichever of the five topologies the cell was read off.
+{fig:recon_matrix}b then scores the alternative roots, and the outgroup
+rooting sits within a few events of the minimum-event one, so the root chosen
+is not what produces the answer.
 
 ![](figures/recon_matrix.png)
 
-**{fig:recon_matrix}.** The topology by variant matrix, with the deepest
-paralogue duplication in every cell, and beside it every rooting of the
-vertebrate subtree scored by total events, with the outgroup rooting and the
-minimum-event rooting marked. The matrix matters because it separates the
+**{fig:recon_matrix}.** Each cell of the topology by variant matrix names
+the deepest paralogue duplication its reconciliation places, and the panel
+beside it scores every rooting of the vertebrate subtree by total events,
+with the outgroup rooting and the minimum-event rooting marked. The matrix matters because it separates the
 placement from the topology it was read off. Twelve reconciliations across
 five topologies and three taxon treatments put the younger duplication on
 the gnathostome stem in every cell, so that placement does not depend on
@@ -67,13 +73,18 @@ the bracket is reported open rather than closed silently.
 **The split that separated ITPR2 from ITPR3 is on the gnathostome stem**,
 meaning between crown Gnathostomata at 462 Ma and crown Vertebrata at 563 Ma.
 It maps there in every cell of the matrix, cyclostomes in or out.
+{fig:recon_dated_backbone} puts both placements on the dated species tree,
+where the older event sits at the base of the vertebrates under the widest
+calibration band in the set and the younger one on the branch leading to the
+gnathostome crown, and the markers show which treatment of the cyclostome
+tips produced each.
 
 ![](figures/recon_dated_backbone.png)
 
-**{fig:recon_dated_backbone}.** The dated backbone on a linear time axis
-with each calibration's spread drawn as a band, rather than a cladogram with
-ages written on it, because the result is an interval and a cladogram cannot
-show one. Placements are deduplicated to one marker per distinct
+**{fig:recon_dated_backbone}.** The dated backbone is drawn on a linear time
+axis with each calibration's spread as a band, rather than as a cladogram
+with ages written on it, because the result is an interval and a cladogram
+cannot show one. Placements are deduplicated to one marker per distinct
 arrangement, since the matrix repeats the same placement across cells and
 drawing each would make agreement look like weight. The deepest bracket is
 left open at its old end because nothing in this tree closes it, and the
@@ -116,16 +127,21 @@ the root, which is exactly where this answer sits. So the objection is
 measured. Root-to-tip distance for all 57 vertebrate tips puts the six
 cyclostome loci at **0.96 to 1.04 times the median, ranking 18th to 55th of
 57.** Not one is an outlier and two sit in the shorter half.
+{fig:recon_cyclostome}a shows those six distances as lines inside the
+distribution of all vertebrate tips, and {fig:recon_cyclostome}b sets each
+locus beside the call its genomic neighbourhood makes: four of the six are
+called within the neighbourhood null, three of them as ITPR1, and two receive
+no call.
 
 ![](figures/recon_cyclostome.png)
 
-**{fig:recon_cyclostome}.** The six cyclostome loci marked on the
-distribution of root-to-tip distance across the tree, and beside it the
-independent neighbourhood call for each locus with the pair support the tree
-gives it. The first panel removes the standard objection to this placement
-by measurement rather than by argument. The second matters because the
-neighbourhood knows nothing about the alignment, so its agreement is
-corroboration from an instrument that could have disagreed.
+**{fig:recon_cyclostome}.** The six cyclostome loci are marked on the
+distribution of root-to-tip distance across the tree, and the panel beside
+it gives the independent neighbourhood call for each locus with the pair
+support the tree gives it. The first panel removes the standard objection to
+this placement by measurement rather than by argument. The second panel
+matters because the neighbourhood knows nothing about the alignment, so its
+agreement is corroboration from an instrument that could have disagreed.
 
 That negative result is the one that matters most here. It is the reason the
 placement is offered as a finding rather than as a caveat.
@@ -133,12 +149,17 @@ placement is offered as a finding rather than as a caveat.
 **A loss count from this analysis is not a loss count.** The reconciliation
 implies 47 lost cells. Checked one at a time against the genome ledger, 26 of
 them are the paralogue present in the genome and absent only from the 134-tip
-sample, and none is corroborated.
+sample, and none is corroborated. {fig:recon_losses}a breaks the implied
+losses down by paralogue into genes present in the gene tree, genes present
+in the genome but unsampled, loci whose paralogue cannot be assigned, and
+species with no genome in scope. {fig:recon_losses}b shows that every cell
+of the matrix implies roughly 50 to 100 losses while the genome sweep
+corroborates none.
 
 ![](figures/recon_losses.png)
 
-**{fig:recon_losses}.** What each implied loss turns out to be once it is
-asked of the genome ledger, and the implied count in every cell of the
+**{fig:recon_losses}.** The genome ledger classifies each implied loss per
+paralogue, and the second panel sets the implied count in every cell of the
 matrix against the number the genomes corroborate. The figure is the reason
 a loss count is not read off a reconciliation: a reconciliation over a
 representative sample counts sampling, not biology. That is why Chapter 9
@@ -200,13 +221,17 @@ same genomes drawn by the same sampler, gives the following. The ITPR1
 neighbourhood carries a paralogue of the ITPR2 neighbourhood in 141 of 175
 genomes, which is 80.6 %, and of the ITPR3 neighbourhood in 89 of 152, against
 2.6 % of matched random windows. **ITPR2 and ITPR3 sit at exactly the
-background rate, at 2.7 % against 2.6 %, p = 0.554.**
+background rate, at 2.7 % against 2.6 %, p = 0.554.** {fig:s16_paralogon}a
+draws that replication for the three pairs against the random-window line,
+and {fig:s16_paralogon}b returns to the single human genome, counting each
+pair's links against its permutation null, where one of the three ryanodine
+pairs carries no link at all despite an origin nobody doubts.
 
 ![](figures/s16_paralogon.png)
 
-**{fig:s16_paralogon}.** The two-round test with its null drawn across the
-bars rather than quoted in a caption, and the ryanodine trio run through the
-identical instrument in the same genomes beside it. What carries the claim
+**{fig:s16_paralogon}.** The two-round test is drawn with its null across
+the bars rather than quoted in a caption, and the ryanodine trio is run
+through the identical instrument in the same genomes beside it. What carries the claim
 is not the human window but the replication across 309 genomes against
 matched random neighbourhoods, and what makes it readable is the sister
 family, whose two-round origin is not in question and which behaves the same
@@ -230,10 +255,16 @@ than the quartet, and all six such pairs are significant by construction.
 
 Ray-finned fish underwent a further whole-genome duplication [R181, R184], and
 the copy-number landscape says that is where all this family's variation is.
+{fig:s16_copy_number}a gives the mean copy number of each gene in the
+lineages before the teleost duplication, in teleosts, and in the lineages
+with a further duplication, and only ITPR1 and the ryanodine receptors rise
+at the teleost step. {fig:s16_copy_number}b counts, per vertebrate class,
+the genomes carrying more than one copy, and a second ITPR is essentially
+confined to the ray-finned fish.
 
 ![](figures/s16_copy_number.png)
 
-**{fig:s16_copy_number}.** Copy number grouped by whole-genome-duplication
+**{fig:s16_copy_number}.** Copy number is grouped by whole-genome-duplication
 status rather than by taxonomy, because the result is a contrast between
 lineages defined by which duplications they have been through, and a
 per-class bar buries it inside the ray-finned fish. Grouping by duplication
@@ -279,13 +310,16 @@ pre-duplication ray-finned one, and in 45 and 46 respectively **the two sets
 are disjoint**. Disjoint is the load-bearing word: the copies do not merely
 each resemble the ancestor, they partition it, which is what reciprocal gene
 loss after one duplication produces and what a pair of independent later
-duplications would not.
+duplications would not. {fig:s16_dcs}a places each two-copy genome by how many
+ancestral-block symbols each copy kept, and almost every genome keeps some on
+both. {fig:s16_dcs}b counts the genomes meeting each condition against both
+references, next to the line marking all 49.
 
 ![](figures/s16_dcs.png)
 
-**{fig:s16_dcs}.** Double-conserved synteny, with the two copies plotted
-against each other so that disjointness is a geometric fact on the figure
-rather than a number in a table. The load-bearing word in this figure is
+**{fig:s16_dcs}.** Double-conserved synteny is shown by plotting the two
+copies against each other, so that disjointness is a geometric fact on the
+figure rather than a number in a table. The load-bearing word in this figure is
 disjoint. Two copies that each resemble the ancestral neighbourhood could be
 two independent later duplications, but two copies that partition it between
 them are what reciprocal gene loss after a single duplication produces. That
@@ -311,11 +345,15 @@ independent lineage-specific duplications the anchors carry no shared
 information and the statistic sits at 0.5, and a constructed control builds
 exactly that case and requires the statistic to land there, so the perfect
 agreement is a measurement rather than a property of the routine.
+{fig:s16_blocks}a plots each anchor's assignment margin, which is positive
+for every anchor, and {fig:s16_blocks}b recounts the multi-copy genomes of
+each gene at seven coverage bars, where the counts stay flat across the
+range.
 
 ![](figures/s16_blocks.png)
 
-**{fig:s16_blocks}.** Cross-anchor block identity, and the sensitivity of
-every count to the coverage bar. Seven bars are scanned, because a
+**{fig:s16_blocks}.** Cross-anchor block identity is shown beside the
+sensitivity of every copy count to the coverage bar. Seven bars are scanned, because a
 duplication claim that survives only one bar is a claim about the bar. The
 anchor panel is what separates one ancestral duplication from a series of
 lineage-specific ones, which the copy counts alone cannot do, because

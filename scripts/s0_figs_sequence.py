@@ -57,7 +57,10 @@ def conservation_profile():
     ax.fill_between(pos, 0, _smooth(val, 25), color="#cde2fb", lw=0)
     ax.plot(pos, _smooth(val, 25), color="#184f95", lw=0.7)
     ax.plot(pos, _smooth(gap, 25), color="#eb6834", lw=0.6, alpha=0.85)
-    ax.set_ylim(0, 1.0)
+    # headroom above 1.0 carries the site marks and the key, so neither is
+    # drawn over the profile (S28 page read)
+    ax.set_ylim(0, 1.34)
+    ax.set_yticks([0, 0.2, 0.4, 0.6, 0.8, 1.0])
     ax.set_ylabel("conservation")
     ax.set_xlim(0, length)
     ax.tick_params(labelbottom=False)
@@ -74,17 +77,17 @@ def conservation_profile():
     for kind, colour, lab in (("ligand", "#b3261e", "IP$_3$ contact"),
                               ("pore", "#c08a2b", "filter / gate")):
         xs = sorted(set(marks.get(kind, [])))
-        ax.plot(xs, [0.972] * len(xs), marker="v", ls="none", ms=3.0,
+        ax.plot(xs, [1.04] * len(xs), marker="v", ls="none", ms=3.0,
                 color=colour, clip_on=False)
         site_handles.append(Line2D([], [], marker="v", ls="none", ms=3.0,
                                    color=colour, label=f"{lab} (measured)"))
     ax.legend(handles=[
         Patch(facecolor="#184f95", label="conservation (25-aa mean)"),
         Patch(facecolor="#eb6834", label="gap fraction")] + site_handles,
-        loc="lower left", ncol=2, bbox_to_anchor=(0.0, -0.04),
-        fontsize=figstyle.FS_NOTE)
-    figstyle.panel(ax, "a", "25 IP$_3$R sequences aligned; human IP$_3$R1 "
-                            "numbering")
+        loc="upper left", ncol=4, bbox_to_anchor=(0.0, 1.02),
+        fontsize=figstyle.FS_NOTE, borderaxespad=0.1, columnspacing=1.2)
+    figstyle.panel(ax, "a", "25 IP$_3$R sequences are aligned on human "
+                            "IP$_3$R1 numbering")
 
     # ---- domain track under the profile, same x axis
     lib.domain_track(axd, doms, 0.0, length, height=0.55, label_min_aa=10**9)
@@ -127,15 +130,17 @@ def conservation_profile():
     cb.set_label("% identity", fontsize=figstyle.FS_NOTE)
     cb.ax.tick_params(labelsize=figstyle.FS_NOTE - 1)
     cb.outline.set_visible(False)
-    figstyle.panel(axm, "b", "identity over mutually covered columns")
+    figstyle.panel(axm, "b", "identity is scored over mutually covered columns")
 
     # ---- d: what the paralogue block actually spans
     hum = [("Q14643", "Q14571"), ("Q14643", "Q14573"), ("Q14571", "Q14573")]
     cross = [(a, b) for a in ROW_ORDER[:3] for b in ROW_ORDER[5:]]
     grades = [(a, b) for a in ROW_ORDER[:3] for b in ROW_ORDER[3:5]]
-    groups = [("human IP$_3$R\npairs", hum, "#2a78d6"),
-              ("IP$_3$R vs the\ninvertebrate grade", grades, "#8a897f"),
-              ("IP$_3$R vs RyR", cross, "#4a3aa7")]
+    # Wrapped to three lines where needed: at this panel width the two-line
+    # labels ran into each other (S28 R5).
+    groups = [("human\nIP$_3$R pairs", hum, "#2a78d6"),
+              ("IP$_3$R vs the\ninvertebrate\ngrade", grades, "#8a897f"),
+              ("IP$_3$R\nvs RyR", cross, "#4a3aa7")]
     for xi, (name, pairs, colour) in enumerate(groups):
         vals = [100 * (piv.get(p) or piv.get((p[1], p[0]))) for p in pairs]
         axl.scatter([xi + 0.06 * (k - len(vals) / 2) for k in range(len(vals))],
@@ -151,7 +156,8 @@ def conservation_profile():
     axl.set_ylabel("% identity")
     axl.set_xlim(-0.6, len(groups) - 0.4)
     figstyle.hgrid(axl)
-    figstyle.panel(axl, "c", "the three comparisons")
+    figstyle.panel(axl, "c", "the three comparisons fall in three separate "
+                             "bands")
     lib.provenance(fig, "computed",
                    f"MAFFT {ameta['mafft'][0]['version']} on the committed "
                    f"control panel")

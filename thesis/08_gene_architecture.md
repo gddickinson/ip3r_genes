@@ -61,13 +61,19 @@ read as canonical splice pairs.
 
 Before measuring exon structure with an aligner, it is worth knowing how often
 the aligner puts a boundary where no splice site is. **99.89 % of 112,254
-junctions read as a canonical splice pair.**
+junctions read as a canonical splice pair.** {fig:junction_quality}a draws
+the complement of that rate for each paralogue and the ryanodine control,
+{fig:junction_quality}b shows that every gap bin from 6 bp upwards reads as
+spliceable, and {fig:junction_quality}c compares the boundaries with an
+independent annotation pipeline; together they say the boundaries the rest of
+this chapter counts are real.
 
 ![](figures/junction_quality.png)
 
-**{fig:junction_quality}.** The aligner's junction error rate, drawn on the
-complement, because at 99.9 % agreement a bar of the agreement is four full
-bars and shows nothing. Each gap bin carries the count it rests on. This
+**{fig:junction_quality}.** The aligner almost never places a boundary where
+the genome has no splice site. The error rate is drawn on the complement,
+because at 99.9 % agreement a bar of the agreement is four full bars and shows
+nothing. Each gap bin carries the count it rests on. This
 figure is the instrument's own error rate, and it has to be measured before
 exon structure inferred from alignments can be used for anything. At 99.89 %
 of junctions reading as a canonical splice pair, the boundaries the
@@ -118,11 +124,17 @@ the human canonical transcripts: a protein-to-genome alignment sees only the
 translated part of the gene, so a purely untranslated first or last exon is
 invisible to it and counted by the transcript annotation. What differs between
 them is how much intron is wrapped around nearly the same protein.
+{fig:architecture_by_paralog}a shows the exon counts holding at 57 to 58
+against the ryanodine receptors' 104, {fig:architecture_by_paralog}b shows the
+genomic spans spreading 4.2-fold with ITPR3 the most compact, and
+{fig:architecture_by_paralog}c shows that the median counts do not move as the
+bait-coverage bar is raised.
 
 ![](figures/architecture_by_paralog.png)
 
-**{fig:architecture_by_paralog}.** Exon count and genomic span on separate
-axes, with span logarithmic and count not. The separation matters because
+**{fig:architecture_by_paralog}.** The exon count is conserved while the
+genomic span is not. Count and span are drawn on separate axes, with span
+logarithmic and count linear. The separation matters because
 the result is a contrast between two quantities measured on the same genes,
 one of which is conserved and the other of which is not, and a shared scale
 would hide it. Fifty-seven to fifty-eight coding exons across 189 genomes,
@@ -164,7 +176,7 @@ needed. Two paralogues can carry an intron between the same two residues in
 different frames, which is not one ancestral intron, and a column alone
 would call any two introns in the same region shared.
 
-**Within a paralogue**, each carries a core of about 48 to 49 intron positions
+**Each paralogue carries its own conserved core.** Each carries a core of about 48 to 49 intron positions
 present in at least 90 % of the genomes that have the gene, out of 175 to 185
 positions seen anywhere. The ryanodine receptors have their own core of 91, on
 the same scale relative to their 101 introns per gene. So the architecture is
@@ -173,13 +185,16 @@ same places, across the vertebrates.
 
 ![](figures/intron_positions.png)
 
-**{fig:intron_positions}.** Intron positions by alignment column and phase,
-per paralogue. The columns line up, and that alignment is what the
-enrichment in §8.7 is measured on. Plotting phase as well as column is what
-keeps two introns that fall between the same two residues in different
-reading frames from being counted as one inherited intron.
+**{fig:intron_positions}.** The three paralogues share almost all of their
+conserved intron positions, and the ryanodine receptors share essentially
+none. Panel a ranks each paralogue's intron positions, defined by alignment
+column and phase, by the fraction of loci carrying them, and panel b plots
+each genome's shared positions against the number expected by chance.
+Defining a position by phase as well as column is what keeps two introns
+that fall between the same two residues in different reading frames from
+being counted as one inherited intron.
 
-**Between paralogues** is the test this chapter exists for. Two genes with
+**The comparison between paralogues is the test this chapter exists for.** Two genes with
 about 58 introns each spread over about 2,700 aligned residues will share some
 positions by chance, so every comparison is paired within a genome and scored
 against a null in which each of one gene's introns is placed independently and
@@ -193,7 +208,12 @@ every genome that carries them**, at an enrichment of 85 to 88-fold,
 significant in every one of 181 to 183 genomes.
 
 **The ryanodine receptors share one.** That is an enrichment of 2.1 to
-2.3-fold, significant in none of 188 genomes.
+2.3-fold, significant in none of 188 genomes. {fig:intron_positions}a shows
+the shape of each gene's core, with 48 to 49 positions above the 90 % line for
+each paralogue and 91 for the ryanodine receptors, and
+{fig:intron_positions}b places every genome far above the chance diagonal for
+each IP₃ receptor pair while the ryanodine comparison sits at one shared
+position or none.
 
 That is the sharpest single result in this chapter and it needs the control to
 be readable. The ryanodine receptors carry every diagnostic domain of this
@@ -235,6 +255,10 @@ entirely at junctions the gene has.
 The verdict is one-sided by design. A mid-exon terminus falsifies. A terminus
 landing on a boundary does not prove the pieces are separate genes, so that
 verdict is named for what it is and claims nothing more.
+{fig:fragments_and_duplicates}a gives the verdict for each split and
+fragmentary locus, and {fig:fragments_and_duplicates}b shows where the 1,448
+internal termini fall, with 406 inside an exon and 353 inside an intron against
+689 at a junction.
 
 ## 8.9 A duplication detector had to be scoped before it measured duplication
 
@@ -262,18 +286,23 @@ within-locus class, meaning two alignments of one bait inside one cluster,
 which would be an internal partial duplication, fires on zero pairs, and a
 constructed control builds such a pair and requires the branch to fire, so the
 zero is a measurement rather than an unreachable code path.
+{fig:fragments_and_duplicates}c scores the detector against the independent
+copy call, and the paler specificity bar for the ryanodine cell is the
+three-gene cell firing as it should.
 
 ![](figures/fragments_and_duplicates.png)
 
-**{fig:fragments_and_duplicates}.** The verdict on every split and
-fragmentary locus, where the annotation's internal termini sit relative to
-the gene model, and the duplication detector scored against an independent
-copy call. The first panel converts a database label into a testable claim:
+**{fig:fragments_and_duplicates}.** Most fragmentary annotations have at least
+one end inside an exon, and the duplication detector agrees with an
+independent copy call. Panel a gives the verdict for every split and
+fragmentary locus, panel b places the annotation's internal termini relative
+to the gene model, and panel c scores the detector against the copy call. The
+first two panels converts a database label into a testable claim:
 a locus called fragmentary might have been annotated as a plausible short
 gene, or the annotation might have stopped where no splicing machinery could
 stop, and only the second is an error. 228 of 291 such loci carry at least
 one terminus in the middle of an exon, which falsifies the innocent reading.
-The second panel makes the same point about an instrument, since scoring the
+The third panel makes the same point about an instrument, since scoring the
 detector against a copy call it never sees moves its specificity from 0.16
 to 0.977 once the family assignment is applied first.
 

@@ -89,7 +89,8 @@ def fig_pair_classes():
     fs.despine(ax)
     fs.hgrid(ax, axis="x")
     ax.legend(loc="lower right", frameon=False, fontsize=fs.FS_TICK)
-    fs.panel(ax, "", "Flanking-gene sharing, one locus per species, "
+    fs.panel(ax, "", "Real locus pairs share far more flanking genes than "
+                     "their matched random windows, one locus per species, "
                      "+/-10 coding genes")
     fig.tight_layout()
     return fs.save(fig, FIGS / "synteny_pair_classes")
@@ -159,8 +160,8 @@ def fig_paralogon():
     ax.set_xticklabels(["-10", "-5", "gene", "+5", "+10"])
     ax.set_xlabel("flanking coding genes, human")
     fs.despine(ax, keep=("bottom",))
-    fs.panel(ax, "a", "Human ITPR neighbourhoods; shaded = a gene family "
-                      "shared with another ITPR locus")
+    fs.panel(ax, "a", "The three human ITPR neighbourhoods share the "
+                      "shaded gene families with one another")
 
     ax = axes[1]
     if shared:
@@ -195,7 +196,7 @@ def fig_paralogon():
         ax.set_yticks([])
     fs.despine(ax)
     fs.hgrid(ax, axis="x")
-    fs.panel(ax, "b", "Prevalence of each shared family (root key) against "
+    fs.panel(ax, "b", "Each shared family (root key) is measured against "
                       "its random-window background")
     fig.tight_layout()
     return fs.save(fig, FIGS / "synteny_paralogon")
@@ -225,7 +226,7 @@ def fig_caller():
            label=f"random windows (n={len(null)})")
     max_null = max([int(r["best_score"]) for r in null] + [0])
     ax.axvline(max_null + 0.5, color=fs.INK, lw=0.9, ls=(0, (3, 2)), zorder=4)
-    ax.text(max_null + 0.65, 0.62, "highest score any\nrandom window reached",
+    ax.text(max_null + 0.65, 0.62, "no random window scores\nabove this line",
             fontsize=fs.FS_TICK - 1, color=fs.INK, va="top")
     ax.set_xlabel("keys shared with the best paralog consensus")
     ax.set_ylabel("fraction of loci")
@@ -233,7 +234,7 @@ def fig_caller():
     fs.despine(ax)
     fs.hgrid(ax)
     ax.legend(loc="upper center", frameon=False, fontsize=fs.FS_TICK - 1)
-    fs.panel(ax, "a", "Consensus overlap")
+    fs.panel(ax, "a", "Confirmed loci overlap the consensus\nfar more than random windows do")
 
     ax = axes[1]
     x = [float(r["consensus_frac"]) for r in sweep]
@@ -251,8 +252,11 @@ def fig_caller():
     ax.set_ylim(0, 1.0)
     fs.despine(ax)
     fs.hgrid(ax)
-    ax.legend(loc="center left", frameon=False, fontsize=fs.FS_TICK - 1)
-    fs.panel(ax, "b", "Operating point, measured")
+    # the empty band under the curves, right of the chosen-threshold marker
+    ax.legend(loc="center", bbox_to_anchor=(0.66, 0.3), frameon=False,
+              fontsize=fs.FS_TICK - 1)
+    fs.panel(ax, "b", "The operating point maximises call rate minus "
+                      "false-call rate")
     fig.tight_layout()
     return fs.save(fig, FIGS / "synteny_caller")
 
@@ -293,8 +297,8 @@ def fig_clade_decay():
               fontsize=fs.FS_TICK)
     fs.despine(ax)
     fs.hgrid(ax)
-    fs.panel(ax, "", "Neighbourhood conservation within and across "
-                     "vertebrate classes")
+    fs.panel(ax, "", "Neighbourhood conservation is lower across vertebrate "
+                     "classes than within them")
     fig.tight_layout()
     return fs.save(fig, FIGS / "synteny_clade_decay")
 

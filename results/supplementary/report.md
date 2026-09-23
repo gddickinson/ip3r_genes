@@ -1,6 +1,6 @@
 # S24 — supplementary figures, and the figure audit
 
-*Rendered 2026-09-09 from the committed tables (D13). Nothing in this report is hand-written.*
+*Rendered 2026-09-23 from the committed tables (D13). Nothing in this report is hand-written.*
 
 ## 1. What this task is
 

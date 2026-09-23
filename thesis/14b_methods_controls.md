@@ -67,7 +67,7 @@ and nothing failed. Two rules follow: any routine a control exercises takes a
 write flag and the control passes it false, and the suite checks the checksum
 of every committed table before and after it runs.
 
-**A mutation test passed on broken code**, twice, in one suite. A
+**A mutation test can pass on broken code**, and did so twice in one suite. A
 duplicate-column case has to be built where the two columns hold the same
 residues, or an earlier guard catches it and the one being tested is never
 exercised. And a byte-identity check on a saved figure passes vacuously
@@ -126,18 +126,18 @@ numbered last and first mentioned in the third results section.
 A supplementary figure exists so a reader can check a join, so both joins were
 checked first, in code, as hard failures.
 
-**The trimming column map** requires that every trimmed column be the input
-column the map names, for every sequence, across 1,797 columns and 134
-sequences, walked exhaustively. The trimming program writes no column map of
+**The trimming column map is checked column by column.** Every trimmed
+column must be the input column the map names, for every sequence, across
+1,797 columns and 134 sequences, walked exhaustively. The trimming program writes no column map of
 its own. One was recovered from a reporting flag, and it is **not trusted**,
 because an off-by-one would have no other symptom: every column would still
 map to a column, and every residue claim downstream would be renumbered with
 nothing to show for it.
 
-**The residue at the column** requires that every variant's reference amino
-acid be the residue its own paralogue's per-residue table holds there, and
-every aligned partner the residue the other paralogue's table holds, across
-1,780 variants and 2,699 partners.
+**The residue at the column is checked variant by variant.** Every variant's
+reference amino acid must be the residue its own paralogue's per-residue
+table holds there, and every aligned partner the residue the other
+paralogue's table holds, across 1,780 variants and 2,699 partners.
 
 Both passed, which is why a residue-level figure in this thesis prints
 letters.
@@ -203,12 +203,12 @@ the driver had already copied.
 SHA-256 of every committed file before and after**, because this project has
 already had a self-test overwrite the committed table it was testing.
 
-All 18 fire, and `thesis/guard_check.tsv` records what each said.
+All 30 fire, and `thesis/guard_check.tsv` records what each said.
 
 ## 14.14 The reference audit caught nine citations that named the wrong paper
 
 The literature review carries 137 references, audited when it was built. This
-document needed 58 more, almost all of them methods and tools, and the rule
+document needed 76 more, almost all of them methods and tools, and the rule
 for them is the review's rule unchanged: **a reference added and not audited
 is worse than no reference, because it launders an assumption into a
 citation.**
@@ -236,4 +236,4 @@ argument for the rule.
 
 The audit is committed as a table with one row per new reference, giving the
 source database, the identifier queried, the phrase required, the title
-returned, and the verdict. All 58 now read *verified*.
+returned, and the verdict. All 76 now read *verified*.

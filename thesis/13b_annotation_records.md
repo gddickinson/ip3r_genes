@@ -4,7 +4,8 @@ An audit that counts states is a survey. Proving that a particular annotation
 is wrong about a particular gene needs molecular evidence, and this section
 takes two cases down to the exon.
 
-**Which two cases, and why those.** The measurement is annotation loss,
+**The two cases are chosen by a measurement and five rules.** The
+measurement is annotation loss,
 meaning the share of a recovered gene's coding footprint that no single
 annotated model delivers, read straight off the sweep's own coverage rather
 than re-derived. Five eligibility rules apply, each a positive test, and the
@@ -23,13 +24,22 @@ the fragmentation claim unvalidated. Ties are broken on **control strength**,
 meaning how many other family loci in the same genome the annotation gets
 right.
 
+{fig:annotation_loss}a is the distribution the cases come from, annotation
+loss over the 382 eligible loci on a logarithmic count axis, with 360 at zero
+and a handful strung out towards 1.0; panel b is the fifth rule at work, each
+locus's span against the longest gene its own annotation builds anywhere,
+with the six loci that rule excludes drawn in red below the diagonal.
+
 ![](figures/annotation_loss.png)
 
-**{fig:annotation_loss}.** Annotation loss across every recovered locus: 880
-loci, 382 eligible, and 360 of them at zero loss. The full distribution is
-drawn because it is the denominator the two validated cases are chosen from,
-and a case study without its denominator is an anecdote. The failures are a
-tail rather than a norm, so the two cases taken forward are the extreme of a
+**{fig:annotation_loss}.** Annotation loss is a tail rather than a norm: of
+880 recovered loci, 382 are eligible for the ranking and 360 of them sit at
+zero loss. Panel a is the distribution of loss over the eligible loci, drawn
+in full because it is the denominator the two validated cases are chosen
+from, and a case study without its denominator is an anecdote. Panel b is
+the fifth eligibility rule, which asks whether the annotation builds any
+gene as long as the locus anywhere in the genome, and marks the six loci it
+excludes. The two cases taken forward are therefore the extreme of a
 measured distribution rather than the two examples that happened to be
 noticed.
 
@@ -46,15 +56,24 @@ annotation places **three gene models** contributing 38 disjoint coding blocks
 and covering 58 % of the coding footprint. 3,400 bp in 28 blocks has no coding
 model at all and reaches no protein.
 
+{fig:exon_tracks} draws the two loci as they sit on their contigs, Case A
+above and Case B below, each exon at its true width and the nearest named
+gene at either end. In Case A every one of the 56 exons is red, meaning no
+annotated gene touches it; in Case B the three annotated models are drawn
+under the exons they cover, and 23 of the 60 exons fall outside all three.
+
 ![](figures/exon_tracks.png)
 
-**{fig:exon_tracks}.** The two loci at true genomic width, with exons never
-widened to be visible. A 56-exon gene over 52 kb averages 143 bp an exon, so
-fattening the exons would draw a gene whose coding fraction looks like 40 %
-when it is 15 %. That geometry is the point: what the annotation missed is a
-few per cent of the locus distributed over dozens of small exons across tens
-of kilobases, which is why the gene is hard to annotate and why the failure
-is systematic rather than careless.
+**{fig:exon_tracks}.** The two loci are drawn at true genomic width, with
+exons never widened to be visible. Panel a is Case A, the omission, and
+panel b is Case B, the fragmentation, each with its exons coloured by what
+the annotation holds at that interval, its annotated models drawn beneath,
+and the flanking genes marked. A 56-exon gene over 52 kb averages 143 bp an
+exon, so fattening the exons would draw a gene whose coding fraction looks
+like 40 % when it is 15 %. That geometry is the point: what the annotation
+missed is a few per cent of the locus distributed over dozens of small exons
+across tens of kilobases, which is why the gene is hard to annotate and why
+the failure is systematic rather than careless.
 
 ## 13.9 What the DNA says at those two loci, and five checks on it
 
@@ -76,7 +95,8 @@ needs them rather than in the order that flatters the conclusion.
 An alignment is not a gene, and an exon structure whose introns are spliceable
 is evidence that this one is.
 
-**Exon boundaries against other genomes' annotations.** Thirty-five and 40
+**Exon boundaries agree with other genomes' independent annotations.**
+Thirty-five and 40
 swept genomes carry the same paralogue, aligned from the same bait, with their
 own annotation independently placing one model over the whole alignment.
 94.5 % and 100 % of each locus's internal boundaries are shared by a majority
@@ -111,28 +131,50 @@ check is not available at all, because that annotation names its genes by
 locus tag and there is nothing to match, and that is reported as a limitation
 of the comparison rather than as a negative result.
 
+{fig:fragment_tiling} then asks the annotation's own proteins where they
+belong. Each panel is the recovered protein of one case drawn as a bar, with
+every annotated model's residues tiled onto it by alignment. In Case A
+(panel a) no model delivers a single residue, and the model the annotation
+names as this paralogue tiles onto the neighbouring paralogue's locus
+instead; in Case B (panel b) three models between them deliver 1,609 of
+2,687 residues and stop short of the rest.
+
 ![](figures/fragment_tiling.png)
 
-**{fig:fragment_tiling}.** The annotated proteins tiled back onto the
-genome's own recovered loci, which is what says whether the annotation
-missed a gene or broke it into pieces. The proteins are translated from the
-assembly's own annotation and genome rather than downloaded, because a locus
-filed as a pseudogene emits no protein record and those loci are exactly the
-ones under dispute. The guard that matters is that the subject set is the
-genome's own loci: a query whose own locus is missing from it lands on its
-nearest paralogue instead, and the row then reads as a confident naming
+**{fig:fragment_tiling}.** Tiling the annotated proteins back onto the
+genome's own recovered loci says whether the annotation missed a gene or
+broke it into pieces. Each panel is one case's recovered protein drawn as a
+bar, with the residues each annotated model delivers laid over it and the
+model named beneath. The proteins are translated from the assembly's own
+annotation and genome rather than downloaded, because a locus filed as a
+pseudogene emits no protein record and those loci are exactly the ones under
+dispute. The guard that matters is that the subject set is the genome's own
+loci: a query whose own locus is missing from that set lands on its nearest
+paralogue instead, and the row then reads as a confident naming
 disagreement, which is exactly what happened before the check existed.
+
+Three of the five checks can be drawn, and {fig:case_validation} draws them
+for both cases. Panel a is the fraction of reference genomes sharing each
+exon boundary, ranked, which climbs past 0.9 within the first ten boundaries
+for both loci; panel b counts the splice-site dinucleotides, canonical in all
+but one intron; and panel c places each case locus, and every other family
+locus in the same genome, at zero observed internal stops against the number
+expected under neutrality.
 
 ![](figures/case_validation.png)
 
-**{fig:case_validation}.** The five checks on each case, together. The
-importance of showing the five checks together is that no single one of them
-is decisive. Splice dinucleotides, an intact reading frame, junction probes,
-exon-boundary concordance and the neighbourhood consensus each fail in
-different circumstances, and they do not fail together. A reader asking
-whether a recovered gene is an alignment artefact is asking whether every
-one of these could be wrong at once, which is what this panel is arranged to
-answer.
+**{fig:case_validation}.** Three of the five checks on each case are drawn
+together, and none of them fails. In panel a, every internal exon boundary
+of each case is ranked by the fraction of independently annotated reference
+genomes that share it. Panel b counts the introns of each locus by their splice-site
+dinucleotides. Panel c plots the internal stops observed in each case locus,
+and in every other family locus of the same genome, against the stops
+expected if the sequence were drifting neutrally. Showing the checks
+together matters because no single one of them is decisive: splice
+dinucleotides, an intact reading frame and exon-boundary concordance each
+fail in different circumstances, and they do not fail together, so a reader
+asking whether a recovered gene is an alignment artefact is asking whether
+every one of these could be wrong at once.
 
 **One number frames both cases.** One of the two assemblies files 7,380 of its
 23,345 genes as pseudogenes, which is 31.6 % of the gene set. Its 14
@@ -183,31 +225,44 @@ three wrong, including a 427-residue protein named for a 335-residue enzyme.
 
 **Seven of seven loci that the annotation loses are transcribed and spliced**,
 meeting all three detection criteria in at least one library, against their
-own reversed decoys at zero.
+own reversed decoys at zero. {fig:s12_detection} shows the pooled read count
+on every recovered locus in the three species, one panel per species, each
+locus beside its own decoy on a logarithmic axis and the seven lost loci
+marked; every decoy but one sits at the floor, and the exception is one
+ITPR3 decoy that collects a few dozen reads against several thousand on the
+locus.
 
 ![](figures/s12_detection.png)
 
-**{fig:s12_detection}.** Detection per locus against its own reversed decoy,
-which is the spurious-mapping floor of this particular reference rather than
-a threshold. The decoy replaces a chosen cut with a measured one: a sequence
-of identical length and composition and no homology collects whatever this
-reference collects by accident, so a locus above its own decoy is detected
-on evidence. Counts are on logarithmic axes because these libraries differ
-roughly forty-fold in depth, and the comparison that means anything is
-between a locus and its decoy in the same run.
+**{fig:s12_detection}.** Every recovered locus collects reads far above its
+own reversed decoy. Each panel is one species, with the
+pooled read count on each of its four family loci drawn beside the count on
+a decoy of identical length and composition, and a cross marks each locus
+the annotation loses. The decoy replaces a chosen cut with a measured one: a
+sequence with no homology collects whatever this reference collects by
+accident, so a locus above its own decoy is detected on evidence. Counts are
+on logarithmic axes because these libraries differ roughly forty-fold in
+depth, and the comparison that means anything is between a locus and its
+decoy in the same run.
 
 **298 of 314 junctions that no annotated model spans are crossed by reads**,
 which is 94.9 %, against 95.2 % of the annotated junctions in the same genes.
+{fig:s12_junctions} lays this out junction by junction for each lost gene,
+so a reader can find every junction that no read crossed rather than take the
+pooled percentage on trust.
 
 ![](figures/s12_junctions.png)
 
-**{fig:s12_junctions}.** Every junction of every reference, crossed or not,
-scored per junction rather than per gene, with the decoy floor drawn rather
-than stated. That unit is what makes the read evidence answer the annotation
-question rather than a weaker one: that a gene is transcribed says little
-when part of it is already annotated, whereas the particular junctions no
-model contains being crossed by reads is direct evidence for the exon
-structure the annotation is missing.
+**{fig:s12_junctions}.** Reads cross the junctions the annotation does not
+model at the same rate as the ones it does. Each row is one gene the
+annotation loses, and every junction of its reference is drawn as a bar at
+its position along the spliced coding sequence, with height the number of
+reads crossing it, coloured by whether an annotated model contains that
+junction, and marked with a cross where no read crossed. Scoring
+each junction separately is what lets this evidence answer the question the
+case studies left open. Transcription alone says little about a gene that is
+already partly annotated, whereas spliced molecules spanning the missing
+introns show that the unmodelled exon structure exists.
 
 **The confound is printed beside the ratio.** Several of these libraries are
 strongly 3′-biased, and in a truncated or fragmented gene the annotated
@@ -217,13 +272,23 @@ preparation as a property of the annotation. **The claim this makes is the
 absolute one**, that these particular junctions are crossed, rather than the
 ratio.
 
+{fig:s12_gap_coverage} puts the two instruments on one axis. The loci with no annotated
+coding block at all sit at 1.0 on both measures, the ryanodine controls
+carry no mark because they were never ranked, and for the rest the read
+fraction tracks the exon-level loss with the reads usually a little above
+it.
+
 ![](figures/s12_gap_coverage.png)
 
 **{fig:s12_gap_coverage}.** Read coverage over the sequence the annotation
-loses, which is the read-level form of the loss measurement. Two independent
-instruments, one aligning a protein to a genome and one mapping reads to a
-spliced reference, are asked about the same missing sequence, and their
-agreement is what rules out the loss being an artefact of either.
+loses is the read-level form of the loss measurement. Each bar is the
+fraction of one locus's read coverage that falls outside any annotated
+coding block, for every locus in the panel including the ryanodine controls,
+and the tick on a bar is the coding footprint the exon-level measurement
+found no model delivering. Two independent instruments, one aligning a
+protein to a genome and one mapping reads to a spliced reference, are asked
+about the same missing sequence, and their agreement is what rules out the
+loss being an artefact of either.
 
 ## 13.11 Four controls make the read evidence readable
 
@@ -250,17 +315,24 @@ an intron that does not exist.
 **Junctions with no reads are written as zeros rather than omitted**, because
 the denominator is half the result.
 
+{fig:s12_instruments} compares the two instruments for the same twelve loci:
+streamed reads cross between 0.6 and 1.0 of the unannotated junctions at every
+locus, and the submitted transcript records cross none at any of the twelve.
+
 ![](figures/s12_instruments.png)
 
-**{fig:s12_instruments}.** The deposit cross-check with its genomic negative
-control. The same junction-probe test the case studies ran is re-asked on a
-panel that now includes a species with 37,166 transcript records against the
-other two species' 43 and 10, and it still cannot answer. A search returning
-nothing in a species with tens of thousands of deposits and nothing in a
-species with ten is two very different situations, and the negative control
-is what shows the probes themselves work. Reporting the result as
-underpowered is what keeps a database's emptiness from being read as a
-biological absence.
+**{fig:s12_instruments}.** The deposit cross-check cannot answer where the
+reads can. The left panel is the fraction of each locus's unannotated
+junctions that streamed reads cross, and the right panel is the same
+fraction taken from the species' submitted transcript records, which is zero
+for every locus. The same junction-probe test the case studies ran is
+re-asked on a panel that now includes a species with 37,166 transcript
+records against the other two species' 43 and 10, and it still returns
+nothing. A search returning nothing in a species with tens of thousands of
+deposits and nothing in a species with ten is two very different situations,
+and the genomic negative control is what shows the probes themselves work;
+reporting the result as underpowered is what keeps a database's emptiness
+from being read as a biological absence.
 
 Eleven constructed negative controls run before anything is written, and were
 mutation-tested on five deliberate breakages, all five caught. The most

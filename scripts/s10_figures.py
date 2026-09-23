@@ -109,7 +109,7 @@ def fig_exon_tracks() -> None:
                     color=fs.MUTED)
         if not models.get(cid):
             ax.text(((hi - lo) / 2) / kb, 0.37,
-                    "no annotated gene model on any exon",
+                    "no annotated gene model touches any exon",
                     ha="center", va="center", fontsize=fs.FS_NOTE,
                     color=fs.CLINICAL["pathogenic"], style="italic")
 
@@ -330,7 +330,7 @@ def fig_validation() -> None:
     # "independently annotated", not "RefSeq": the reference set is whichever
     # swept genomes corroborate the alignment, and it is a mixture of RefSeq
     # and submitter annotations. Naming one of them would overstate it.
-    fs.panel(ax1, "a", "Boundaries vs annotated genomes")
+    fs.panel(ax1, "a", "annotated genomes\nshare the boundaries")
 
     labels, values, colours = [], [], []
     for case in cases:
@@ -364,7 +364,7 @@ def fig_validation() -> None:
         ax3.legend(handles=[Patch(facecolor=fs.ACCENT, label="case locus"),
                             Patch(facecolor=fs.FAINT,
                                   label="other family locus,\nsame genome")],
-                   loc="upper left", fontsize=fs.FS_TICK - 0.6)
+                   loc="upper right", fontsize=fs.FS_TICK - 0.6)
     ax3.set_xlabel("stops expected if neutral")
     ax3.set_ylabel("internal stops observed")
     fs.hgrid(ax3)

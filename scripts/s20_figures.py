@@ -140,7 +140,7 @@ def range_by_phylum(stem: Path) -> None:
             last = g
     fs.despine(ax)
     fs.hgrid(ax, axis="x")
-    fs.panel(ax, "", "Where the family is, per swept proteome")
+    fs.panel(ax, "", "The family reaches these phyla, counted per swept proteome")
     fig.tight_layout()
     fs.save(fig, stem)
     plt.close(fig)
@@ -184,14 +184,16 @@ def profile_separation(stem: Path) -> None:
     ax.set_ylabel("ryr.hmm bit score", fontsize=fs.FS_LABEL)
     ax.legend(fontsize=fs.FS_NOTE, frameon=False, loc="lower right",
               markerscale=2.0)
+    # wrapped narrow enough to sit left of the vertical floor line, which
+    # the one-line version ran across (S28 page read)
     ax.text(0.03, 0.97,
             f"shaded: the {REL_MARGIN:.0%} no-call band\n"
             f"dashed: the {MIN_SCORE:.0f}-bit floor\n"
-            f"0 on an axis = that profile did not score it",
+            f"0 on an axis = that profile\ndid not score it",
             transform=ax.transAxes, fontsize=fs.FS_NOTE, va="top",
             color=fs.MUTED, linespacing=1.4)
     fs.despine(ax)
-    fs.panel(ax, "", "D14 outside the vertebrates")
+    fs.panel(ax, "", "D14 separates the families outside the vertebrates")
     fig.tight_layout()
     fs.save(fig, stem)
     plt.close(fig)
@@ -228,11 +230,12 @@ def plant_fungal_chase(stem: Path) -> None:
     ax.set_yticklabels(classes, fontsize=fs.FS_TICK)
     ax.invert_yaxis()
     ax.set_xlabel("records chased", fontsize=fs.FS_LABEL)
+    # top right: the upper bar stops short, so that corner holds no data
     ax.legend(fontsize=fs.FS_NOTE, frameon=False, ncol=2,
-              loc="lower right", handlelength=1.0)
+              loc="upper right", handlelength=1.0)
     fs.despine(ax)
     fs.hgrid(ax, axis="x")
-    fs.panel(ax, "a", "Verdict per record")
+    fs.panel(ax, "a", "Every record receives a verdict")
 
     ax = axes[1]
     vals = [(float(r["out_kingdom_pident"]), r["verdict"]) for r in rows
@@ -241,8 +244,11 @@ def plant_fungal_chase(stem: Path) -> None:
         ax.scatter(p, i, s=9, c=VERDICT_C.get(v, fs.GRID), linewidths=0)
     ax.axvline(CONTAMINANT_PIDENT, color=fs.STATUS["absent"], lw=0.8)
     ax.axvline(OUTLIER_PIDENT, color=fs.FAINT, lw=0.8, ls=(0, (2, 2)))
-    ax.text(CONTAMINANT_PIDENT - 1.5, len(vals) * 0.5,
-            f"contamination call\n{CONTAMINANT_PIDENT:.0f} %", ha="right",
+    # set along its own line, between the two thresholds, so it crosses
+    # neither (S28: horizontal, it ran across the 80 % line)
+    ax.text(CONTAMINANT_PIDENT - 1.2, len(vals) * 0.5,
+            f"contamination call, {CONTAMINANT_PIDENT:.0f} %", ha="right",
+            va="center", rotation=90,
             fontsize=fs.FS_NOTE, color=fs.STATUS["absent"])
     # The second line was drawn but never named, so a reader had a threshold
     # in the picture with nothing to attach it to (found by the S24 figure
@@ -257,7 +263,7 @@ def plant_fungal_chase(stem: Path) -> None:
     ax.set_ylabel("records, sorted", fontsize=fs.FS_LABEL)
     ax.set_yticks([])
     fs.despine(ax, keep=("bottom",))
-    fs.panel(ax, "b", "The contamination test")
+    fs.panel(ax, "b", "The contamination test reads cross-kingdom identity")
     fig.tight_layout()
     fs.save(fig, stem)
     plt.close(fig)
@@ -323,18 +329,25 @@ def jackhmmer_s20(stem: Path) -> None:
     axes[0].set_ylabel("targets in the model", fontsize=fs.FS_LABEL)
     axes[0].legend(fontsize=fs.FS_NOTE, frameon=False, loc="lower right")
     fs.despine(axes[0]); fs.hgrid(axes[0])
-    fs.panel(axes[0], "a", "Convergence, and where D10 killed it")
+    fs.panel(axes[0], "a", "Each run converges, or D10 kills it")
 
     axes[1].set_ylim(-0.03, 1.03)
     axes[1].set_xlabel("jackhmmer round", fontsize=fs.FS_LABEL)
     axes[1].set_ylabel("share of the model", fontsize=fs.FS_LABEL)
-    axes[1].legend(fontsize=fs.FS_NOTE, frameon=False, loc="center right")
-    axes[1].text(0.03, 0.96, "K1 watches the solid line;\nthe dashed one is "
-                 "what it cannot see", transform=axes[1].transAxes,
-                 fontsize=fs.FS_NOTE, va="top", color=fs.MUTED,
-                 linespacing=1.4)
+    # Panel a's legend already keys the groups by colour, so panel b keys
+    # only the two line styles, in the empty band between the drifted
+    # off-family traces and the sister-family ones (S28: the eight-entry
+    # legend and the note were drawn over the traces).
+    from matplotlib.lines import Line2D
+    axes[1].legend(handles=[
+        Line2D([], [], color=fs.MUTED, marker="o", ms=2.6, lw=1.1,
+               label="sister family (K1 watches this)"),
+        Line2D([], [], color=fs.MUTED, marker="^", ms=2.6, lw=1.0,
+               ls=(0, (3, 2)), label="neither family (K1 cannot see this)")],
+        fontsize=fs.FS_NOTE, frameon=False, loc="center right",
+        bbox_to_anchor=(1.0, 0.64))
     fs.despine(axes[1]); fs.hgrid(axes[1])
-    fs.panel(axes[1], "b", "Drift, sister and off-family")
+    fs.panel(axes[1], "b", "Drift shows in the sister and off-family shares")
     fig.tight_layout()
     fs.save(fig, stem)
     plt.close(fig)

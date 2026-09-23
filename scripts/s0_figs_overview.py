@@ -43,9 +43,12 @@ SEQ_LABEL = {"Q14643": "ITPR1 human", "Q14571": "ITPR2 human",
              "Q14573": "ITPR3 human", "P29993": "Itpr fly"}
 #: (window, heading, colour) — the colour ties each window to the domain it
 #: sits in on panel b's track.
-SEQ_WINDOWS = [("IP$_3$ contact 1", "in the IP$_3$-binding core",
+#: (window key in align_blocks.tsv, the statement drawn as its heading,
+#: colour). A heading is a sentence, not a label (S28 R2).
+SEQ_WINDOWS = [("IP$_3$ contact 1",
+                "the first IP$_3$ contact sits in the IP$_3$-binding core",
                 lib.DOMAIN_COLOUR["PF08709"]),
-               ("selectivity filter", "in the pore",
+               ("selectivity filter", "the selectivity filter sits in the pore",
                 lib.DOMAIN_COLOUR["PF00520"])]
 
 MEMBRANE = "#dcd9d0"
@@ -133,7 +136,8 @@ def _pathway(ax) -> None:
                 color=CHANNEL, va="center",
                 arrowprops=dict(arrowstyle="-", lw=0.6, color=CHANNEL,
                                 connectionstyle="arc3,rad=-0.25"))
-    figstyle.panel(ax, "a", "the pathway that makes the ligand (schematic)")
+    figstyle.panel(ax, "a",
+                   "PLC makes the ligand (schematic)")
 
 
 def _channel(ax, meta: dict) -> None:
@@ -184,9 +188,10 @@ def _channel(ax, meta: dict) -> None:
         ax.add_patch(Circle((sign * lig_r, lig_z), 7.5, facecolor=CHANNEL,
                             edgecolor="none", alpha=0.85))
     ax.annotate("IP$_3$ site", xy=(lig_r, lig_z),
-                xytext=(half * 0.80, lig_z - 20),
+                xytext=(half * 0.66, lig_z - 24),
                 fontsize=figstyle.FS_NOTE - 0.4, color=CHANNEL, va="center",
-                arrowprops=dict(arrowstyle="-", lw=0.5, color=CHANNEL))
+                arrowprops=dict(arrowstyle="-", lw=0.5, color=CHANNEL,
+                                shrinkA=2, shrinkB=2))
 
     # the two numbers that make the coupling problem concrete
     ax.plot([-lig_r, 0], [lig_z, gate_z], color=figstyle.MUTED, lw=0.6,
@@ -202,9 +207,9 @@ def _channel(ax, meta: dict) -> None:
             f"{float(meta['ip3_axial_rise_above_gate_A']):.0f} Å\non the axis",
             fontsize=figstyle.FS_NOTE - 0.6, color=figstyle.MUTED,
             va="center")
-    ax.text(0, z0 - 17, "ER lumen", ha="center",
+    ax.text(0, z0 - 24, "ER lumen", ha="center",
             fontsize=figstyle.FS_NOTE - 0.8, color=figstyle.MUTED)
-    figstyle.panel(ax, "b", f"the channel, measured on {meta['pdb_id']}")
+    figstyle.panel(ax, "b", f"the channel is drawn to scale ({meta['pdb_id']})")
 
 
 def _track(ax, domains: list[dict]) -> None:
@@ -259,8 +264,8 @@ def _sequence(ax, rows: list[dict], window: str, heading: str,
     hi = cells[(SEQ_ROWS[0], cols[-1])]["itpr1_pos"]
     ax.set_xlabel(f"ITPR1 {lo}–{hi}", fontsize=figstyle.FS_NOTE - 0.6,
                   labelpad=2, color=figstyle.MUTED)
-    ax.set_title(f"{window}, {heading}", fontsize=figstyle.FS_NOTE + 0.2,
-                 color=colour, pad=3)
+    ax.set_title(heading, fontsize=figstyle.FS_NOTE + 0.2, color=colour,
+                 pad=3)
 
 
 def receptor_overview():
@@ -291,7 +296,8 @@ def receptor_overview():
     fig.text(0.012, pos.y1 + 0.075, "c", fontsize=figstyle.FS_LETTER,
              fontweight="bold", va="bottom", color=figstyle.INK)
     fig.text(0.045, pos.y1 + 0.075,
-             "the sequence at those two positions, in this family only",
+             "the three human paralogues and the fly are compared at those "
+             "two positions",
              fontsize=figstyle.FS_TITLE, va="bottom", color=figstyle.INK)
 
     lib.provenance(fig, "schematic",

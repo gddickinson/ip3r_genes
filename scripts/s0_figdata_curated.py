@@ -42,21 +42,21 @@ MILESTONES = [
     ("R02", "primary structure — it is the receptor", "found"),
     ("R04", "“similar to ryanodine receptor”", "found"),
     ("R03", "purified receptor conducts Ca$^{2+}$", "found"),
-    ("R13", "bell-shaped Ca$^{2+}$ dependence", "works"),
+    ("R13", "Ca$^{2+}$ dependence is bell-shaped", "works"),
     ("R29", "subtypes differ by tissue and stage", "found"),
-    ("R32", "three receptors, not one", "found"),
+    ("R32", "three receptors are found, not one", "found"),
     ("R08", "release is built from quantal puffs", "works"),
-    ("R05", "structure of the IP$_3$-binding core", "works"),
+    ("R05", "the IP$_3$-binding core is solved", "works"),
     ("R114", "$Itpr1$ null mice are ataxic", "disease"),
     ("R38", "$ITPR1$ deletion causes SCA15", "disease"),
     ("R45", "$ITPR2$ loss abolishes sweating", "disease"),
-    ("R22", "cryo-EM: the tetramer at 4.7 Å", "works"),
+    ("R22", "the tetramer is resolved by cryo-EM at 4.7 Å", "works"),
     ("R15", "all four sites must be occupied", "works"),
-    ("R24", "paralogue structures with Ca$^{2+}$ and IP$_3$", "works"),
+    ("R24", "paralogue structures are solved with Ca$^{2+}$ and IP$_3$", "works"),
     ("R46", "$ITPR3$ variants cause CMT1J", "disease"),
-    ("R59", "activation and gating across a ligand series", "works"),
+    ("R59", "a ligand series maps activation and gating", "works"),
     ("R48", "$ITPR3$ variant causes multisystem disease", "disease"),
-    ("R47", "recurrent CMT1J variant in nine families", "disease"),
+    ("R47", "one CMT1J variant recurs in nine families", "disease"),
 ]
 
 # -------------------------------------------------------------- regulators
@@ -88,25 +88,28 @@ REGULATORS = [
 # gene (not localised by the source). `where` is a residue for `point` and a
 # Pfam accession for `domain`.
 DISEASE = [
-    ("ITPR1", "SCA15/16 — heterozygous deletion", "gene", "",
+    ("ITPR1", "heterozygous deletion causes SCA15/16", "gene", "",
      "haploinsufficiency", "R38,R118,R119"),
     # §9.1 establishes SCA29 as dominant and missense, and shows one variant
     # is a *gain* of function — so the direction of effect is explicitly not
     # settled. Recorded as unresolved rather than assimilated to the
     # dominant-negative mechanism of the Gillespie and ITPR3 variants.
-    ("ITPR1", "SCA29 — missense", "gene", "", "unresolved", "R41,R42"),
-    ("ITPR1", "gain-of-function ataxia", "domain", "PF08709",
+    ("ITPR1", "missense variants cause SCA29", "gene", "", "unresolved",
+     "R41,R42"),
+    ("ITPR1", "gain-of-function variants cause ataxia", "domain", "PF08709",
      "gain of function", "R120"),
-    ("ITPR1", "Gillespie — de novo", "domain", "PF00520",
+    ("ITPR1", "de novo variants cause Gillespie syndrome", "domain",
+     "PF00520",
      "dominant negative", "R44"),
-    ("ITPR1", "Gillespie — biallelic", "gene", "", "recessive loss", "R43"),
-    ("ITPR2", "isolated anhidrosis — homozygous missense", "domain",
+    ("ITPR1", "biallelic variants cause Gillespie syndrome", "gene", "",
+     "recessive loss", "R43"),
+    ("ITPR2", "a homozygous missense causes isolated anhidrosis", "domain",
      "PF00520", "recessive loss", "R45"),
-    ("ITPR3", "CMT1J — p.Thr1424Met", "point", "1424", "dominant negative",
+    ("ITPR3", "p.Thr1424Met causes CMT1J", "point", "1424", "dominant negative",
      "R47"),
-    ("ITPR3", "multisystem disorder — p.Arg2524Cys", "point", "2524",
+    ("ITPR3", "p.Arg2524Cys causes a multisystem disorder", "point", "2524",
      "dominant negative", "R48"),
-    ("ITPR3", "CMT1J — segregating families", "gene", "",
+    ("ITPR3", "CMT1J runs in families", "gene", "",
      "dominant negative", "R46,R51"),
 ]
 

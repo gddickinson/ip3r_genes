@@ -52,13 +52,16 @@ dominant-negatively through the channel domain. Stating only the
 dominant-negative mechanism would have misdirected the constraint analysis in
 Chapter 11, which asks where pathogenic variants sit relative to the
 constrained core, and would have had it looking for one signal where there are
-two.
+two. {fig:review_disease} lays the clinical record out gene by gene with the
+resolution of each source drawn: only two entries resolve to a residue, the
+rest reach a domain or the whole gene, and that shortage is what sends
+Chapter 11 to a variant database rather than to the literature.
 
 ![](figures/review_disease.png)
 
-**{fig:review_disease}.** The curated disease-variant map, with each variant
-recorded as `point`, `domain` or `gene` according to how far its cited
-source actually localises it. That third column is the honesty of the
+**{fig:review_disease}.** The curated disease-variant map records each
+variant as `point`, `domain` or `gene` according to how far its cited source
+actually localises it. That third column is the honesty of the
 figure: a source reporting a deletion of the whole gene cannot be drawn as a
 residue, and a map that drew it as one would assert a resolution the
 literature does not have. The distinction is what makes Chapter 11's variant
@@ -71,8 +74,12 @@ positive control.
 ## 2.3 The background claim about gene size was false, and it became a measurement
 
 The background document stated that each ITPR is "a ~58–60 exon gene spanning
-hundreds of kb". Ensembl's canonical transcripts say otherwise
-({fig:review_gene_architecture}).
+hundreds of kb". Ensembl's canonical transcripts say otherwise, and
+{fig:review_gene_architecture} draws the three genes to one scale: panel
+**a** puts their exons along the chromosome, where ITPR3 is visibly a
+fraction of the length of the other two, and panel **b** divides each locus
+by its protein to give base pairs per residue, which is where the difference
+turns out to be packing rather than coding content.
 
 The exon counts are 62, 57 and 58, which is a range of 57 to 62 rather than 58
 to 60. That is a small correction. The span is not: ITPR1 covers 354,174 bp,
@@ -82,10 +89,11 @@ three paralogues while the protein length varies by about 3 %.
 
 ![](figures/review_gene_architecture.png)
 
-**{fig:review_gene_architecture}.** The three human genes drawn to one scale
-from Ensembl coordinates. Exon count is nearly identical across the three
-and genomic span is not, and the difference between them is almost entirely
-intron length. The figure is where a corrected sentence became a
+**{fig:review_gene_architecture}.** The three human genes are drawn to one
+scale from Ensembl coordinates. (**a**) Exon count is nearly identical across
+the three and genomic span is not, and the difference between them is almost
+entirely intron length. (**b**) The bars give the genomic length each gene
+spends per residue of protein it encodes. The figure is where a corrected sentence became a
 measurement. Three paralogues encoding proteins whose lengths differ by 3 %
 occupy genomic spans differing by a factor of six and a half, which must
 mean that either their exon structure or their intron content differs, and
@@ -126,15 +134,21 @@ The taxonomic distribution carried an anomaly. Forty Viridiplantae proteins
 and forty-one fungal proteins carried PF08709, the IP₃-binding core, while
 *Arabidopsis thaliana* and *Saccharomyces cerevisiae* had none. Eighty-one
 records in kingdoms whose model organisms have no IP₃ receptor is either a
-real distribution or an artefact, and no amount of reading resolves which
-({fig:review_taxonomic_range}). Chapter 5 chases all of them individually.
+real distribution or an artefact, and no amount of reading resolves which.
+{fig:review_taxonomic_range} is that starting picture: panel **a** counts the
+records carrying each signature by kingdom, where the plant and fungal
+columns are small but not empty, and panel **b** shows which of the
+signatures each reference receptor carries, which is the architecture the
+next chapter turns into a call. Chapter 5 chases all of them individually.
 
 ![](figures/review_taxonomic_range.png)
 
-**{fig:review_taxonomic_range}.** What the databases said the family's range
-was at the start of this project, shown as signature counts by taxon from a
-live InterPro query. The plant and fungal columns are the anomaly: 81
-proteins in kingdoms whose model organisms have none. The figure is
+**{fig:review_taxonomic_range}.** The databases' own picture of the family's
+range at the start of this project is shown as signature counts by taxon
+from a live InterPro query. (**a**) The family is overwhelmingly metazoan by
+record count, and the plant and fungal columns are the anomaly: 81 proteins
+in kingdoms whose model organisms have none. (**b**) The grid marks which
+signatures each reference receptor carries. The figure is
 important as a statement of what was not known, and as an illustration of
 why a count of records is a weak instrument for a range question. A record
 enters here by carrying a domain annotation, and nothing in the count says
@@ -163,11 +177,16 @@ unnamed-locus problem that Chapter 13 eventually audits across 503 genomes.
 The length band happens to separate the two families cleanly in this
 particular query. That is a fact about zebrafish annotation quality rather
 than a rule, and treating it as one would import the quality of an annotation
-into the definition of a gene family.
+into the definition of a gene family. {fig:review_family_separation} shows the
+alternative: panel **a** scores every control against a labelled bait from
+each family, panel **b** turns the same scores into a margin with the no-call
+band drawn, and panel **c** returns to the zebrafish query with its 53
+ryanodine records marked, so the reader can see both the size of the hazard
+and the width of the gap that makes it manageable.
 
 ![](figures/review_family_separation.png)
 
-**{fig:review_family_separation}.** Separating the families by evidence
+**{fig:review_family_separation}.** The families are separated by evidence
 rather than by name, using the control panel Chapter 3 builds. Panel **a**
 shows every control scored against a labelled IP₃ receptor bait and a
 labelled ryanodine receptor bait, and the two families fall on opposite
@@ -190,17 +209,29 @@ Two further measurements were made for the literature review, and the rest of
 this thesis uses them as a coordinate system rather than as a result.
 
 The first is a per-column conservation profile over a family alignment, in
-human ITPR1 numbering ({fig:review_conservation}). The second is a set of
+human ITPR1 numbering. {fig:review_conservation} carries it in three panels:
+panel **a** runs the profile along the human sequence with the domain
+architecture beneath it, panel **b** gives all-pairs identity over mutually
+covered columns for an eight-sequence alignment that includes the ryanodine
+receptors, and panel **c** summarises that matrix as three comparisons,
+human pairs, family against the invertebrate grade, and family against the
+ryanodine receptors. The second is a set of
 alignment windows anchored on sites measured in the structure, meaning the
 three stretches that contact the bound IP₃, the selectivity filter and the
-gate, rather than on a residue list taken from a paper
-({fig:review_alignment_windows}).
+gate, rather than on a residue list taken from a paper.
+{fig:review_alignment_windows} sets those five windows beside the same
+windows in the ryanodine receptors with every residue printed, so a reader
+can check where the two families are interchangeable and where they are not
+rather than take it on trust.
 
 ![](figures/review_conservation.png)
 
-**{fig:review_conservation}.** Per-column conservation across a 25-sequence
-family alignment, mapped onto human ITPR1 numbering, with the domain
-architecture beneath it. Chapter 11 rebuilds this at a very different depth,
+**{fig:review_conservation}.** Conservation is plotted per column across a
+25-sequence family alignment, mapped onto human ITPR1 numbering, with the
+domain architecture beneath it. (**a**) The smoothed profile runs along the
+human sequence. (**b**) The matrix gives identity over mutually covered
+columns for every pair. (**c**) The three comparisons that matter are drawn
+as distributions. Chapter 11 rebuilds this at a very different depth,
 using 249 to 265 orthologues of each individual paralogue rather than 25
 sequences of the whole family, and the two agree about where the peaks are.
 That agreement matters for a practical reason: if a shallow family alignment
@@ -211,8 +242,8 @@ rather than to pick one on faith.
 
 ![](figures/review_alignment_windows.png)
 
-**{fig:review_alignment_windows}.** Where the two families agree, and where
-they stop agreeing. At the pore they are interchangeable, showing GGGVGD
+**{fig:review_alignment_windows}.** The two families agree at the pore and
+stop agreeing at the ligand site. At the pore they are interchangeable, showing GGGVGD
 against GGGIGD in the filter and a gate that differs by conservative
 substitution. At the ligand site they are not: the arginines and lysines
 that grip the trisphosphate are absent from all three ryanodine receptors,
@@ -234,15 +265,20 @@ making it a real receptor that the family's defining signature does not find.
 That last observation is why Chapter 3's profile seeds include it
 deliberately.
 
+The audit's last figure, {fig:review_regulation}, is the regulatory layer as
+the literature curates it, drawn along the subunit with each regulator at
+the region it binds and its effect on release marked. It is placed here for
+a negative reason: a reader deciding what a gene census settles should be
+able to see the size of the biology it leaves untouched.
+
 ![](figures/review_regulation.png)
 
-**{fig:review_regulation}.** The curated regulator map, showing what binds
-the receptor, where, and with what effect. It is here as a statement of
-scope rather than as a result, because it is the part of the biology this
-thesis does not measure. Nothing in a genome-scale census can say whether a
-protein interaction is conserved, so the regulatory layer drawn here is
-untouched by every measurement in this document, and a reader deciding what
-the census settles should be able to see the size of what is left out.
+**{fig:review_regulation}.** The curated regulator map shows what binds the
+receptor, where, and with what effect. It stands as a statement of scope
+rather than as a result, because it is the part of the biology this thesis
+does not measure. Nothing in a genome-scale census can say whether a protein
+interaction is conserved, so every measurement in this document passes this
+layer by, and the map is what a reader should weigh the census against.
 
 ## 2.7 A fault in one public interface, and why it was worth diagnosing
 

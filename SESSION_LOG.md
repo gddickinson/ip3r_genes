@@ -4013,3 +4013,84 @@ a figure with colliding labels cannot be written at all.
 
 Committed as ledger row **S28** with a brief in `docs/session_briefs.md`. No
 prose was edited in this addendum.
+
+## 2026-09-23 — S28: the revision pass, finished, and what the page read found
+
+### What ran
+
+The session opened with a README rewrite (committed on its own) and then
+resumed S28, which an earlier session had left `in_progress` with most of the
+work uncommitted in the tree: `prose_lex.py`, `figcheck.py`, the four prose
+rules in `s25_prose.py`, the legend typography in `s25_pdf.py`, and legends
+and panel titles rewritten across chapters 1–6 and 10–16.
+
+- **Prose (R1–R3).** Re-measured on entry: 49 failures, all in chapters 7, 8,
+  9 and 13 (legend openers without a finite verb, two bold lead-ins, figures
+  no body sentence described, and five repetitions). Fixed; `s25_prose.py`
+  reports 0 across 104 legends.
+- **Figures (R2, R5).** Every figure module re-rendered strictly. Five
+  refused on entry (colliding panel titles, a minor-tick collision, a title
+  with no finite verb); fixed. Two panel titles carried em-dashes and one was
+  a fragment; rewritten.
+- **The build on Python 3.11.** `s15b_test_counts.py` and `s5_report.py` used
+  multi-line f-string expressions, which only 3.12 parses, so the thesis build
+  failed in the project's documented env (`piezo1`, 3.11). Rewritten
+  syntax-only; the S15b suite still passes 21/21 and `s5_report.py`
+  re-renders its report byte-identically.
+- **Claims.** Chapter 16 quoted 18 guards and 374 scripts; both counts moved
+  with S28 itself (now 30 and 377) and the ledger said so. Appendix E.3's
+  guard table gained twelve rows.
+- **The PDF log check fired on 400 overfull lines**, which were ~100 distinct
+  boxes, each reported once per LaTeX pass. 97 were figures 11.9 pt into the
+  margin: `s14_lib.W_FULL` draws every figure for a 2.0 cm margin and both
+  PDF stages have set 2.2 cm since the project was set up. Margins are now
+  2.0 cm in both documents; the two remaining lines were unbreakable DOIs in
+  the bibliography, now set as URLs through `xurl` in the PDF only. One lead-in
+  quoting a Pfam name with a slash in it was reworded.
+
+### The page-by-page read
+
+Three readers over contact sheets of all 196 pages found what no passing check
+could see, recorded as **D85**:
+
+- **Figures printed out of numerical order in six chapters** (6.5, 6.4, 6.2,
+  …). Numbering followed the figure map's declaration order, not the page.
+  `s25_figures.numbering()` now reads placement order off the chapter
+  sources.
+- **Stray rules** at every in-chapter file boundary (4/4b, 13/13b, 14/14b,
+  16/16b) and after the bibliography; dropped in the PDF stage.
+- **Half-empty pages** in front of six tall figures pinned with `[H]`.
+  Figures now float `[!htbp]` with the legend inside the same float, and
+  every chapter opens on `\clearpage`, so a figure cannot drift out of it.
+- **Panel titles cut off behind the neighbouring panel, abutting the next
+  panel's letter, or wrapping with the letter beside the wrong line, and
+  legends printed over their own data.** `figcheck` gained three checks for
+  these, with a guard case each; measured on entry they flagged 36 problems
+  in 23 figures and all were fixed. A second full read found eight more
+  collisions of text with marks, and two holes in the legend check it had
+  just been given (it skipped unlabelled reference lines and tested only a
+  bar's corners, not its area); with both closed it flagged eleven more
+  legends, and those and the eight were fixed. `figstyle.panel` now raises the letter
+  beside the first line of a wrapped title.
+- **A panel title contradicted its own panel**: `lesion_strata` c read
+  "no dead loci" over red bars counting the loci the generous fossil screen
+  fires on. It now says what is true of all seven: they are full-length models.
+- Smaller: legends set ragged-right (a justified narrow legend stretched its
+  spacing), a stray "point- estimate" line break, and the UniProt 2023 paper
+  printed with no author, because PubMed lists a consortium as a
+  `CollectiveName` and the parser kept only `Author` entries.
+
+### Result
+
+`s25_assemble.py` exits 0: 30/30 guards fire, 0 prose failures, 234/234
+claims, 104 figures, a clean PDF log, 190 pages. `thesis/figure_text_audit.tsv`
+records 333 changed texts (104 legends, 34 lead-ins, 195 in-figure texts).
+Two page reads were made, the second over the rebuilt document; a free
+annotation printed over a curve is still not mechanically checked and is
+logged as an emergent task. The
+manuscript (60 pp, 276/276 claims), the review (32 pp) and the supplementary
+stats were rebuilt against the revised figures.
+
+### Next
+
+S26, the paper series. S14b stays human-gated.

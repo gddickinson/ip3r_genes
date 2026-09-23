@@ -70,8 +70,8 @@ def discovery_timeline():
                        for c, lab in LANE.values()],
               loc="lower center", ncol=3, bbox_to_anchor=(0.5, -0.10),
               fontsize=figstyle.FS_NOTE)
-    figstyle.panel(ax, "a", f"{rows[0]['year']}–{rows[-1]['year']}, "
-                            f"{len(rows)} milestones")
+    figstyle.panel(ax, "a", f"{len(rows)} milestones span "
+                            f"{rows[0]['year']}–{rows[-1]['year']}")
 
     # ---- b: the bibliography's own year distribution, to scale
     years = [int(r["year"]) for r in refs if r["year"].isdigit()]
@@ -88,8 +88,8 @@ def discovery_timeline():
     axh.set_ylabel("refs")
     axh.set_xlabel("year of publication")
     figstyle.hgrid(axh)
-    figstyle.panel(axh, "b", f"the {len(years)} references this review cites, "
-                             f"and where the milestones fall")
+    figstyle.panel(axh, "b", f"the {len(years)} references this review cites "
+                             "are binned by year, with the milestones marked")
     lib.provenance(fig, "curated", "years read from references.tsv")
     return lib.save(fig, "discovery_timeline")
 
@@ -156,8 +156,8 @@ def disease_map():
                   for r in meta["gate_lining_residues"])
     var = int([s["where"] for s in sites
                if s["kind"] == "point" and s["where"] == "2524"][0])
-    ax.annotate(f"{var - gate[-1]} residues past the gate measured in "
-                f"{meta['pdb_id']}",
+    ax.annotate(f"this variant sits {var - gate[-1]} residues past the gate "
+                f"measured in {meta['pdb_id']}",
                 xy=(var, -0.24), xytext=(2745, -0.30), ha="left",
                 va="center",
                 fontsize=figstyle.FS_NOTE - 0.5, color=figstyle.MUTED,

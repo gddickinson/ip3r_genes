@@ -33,7 +33,8 @@ Responses are archived, so the audit re-runs offline.
 
 ## D.2 What the audit caught
 
-**Nine of the 76 identifiers resolved to entirely different papers.**
+**Nine of the 76 identifiers were wrong, and each resolved to an entirely
+different paper.**
 
 A gene-duplication inference algorithm's identifier returned a Bayesian
 phylogenetics program. A reconciliation method's returned a paper on

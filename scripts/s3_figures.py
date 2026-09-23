@@ -81,7 +81,8 @@ def fig_profile_separation():
                     handletextpad=0.3, borderpad=0.2, labelspacing=0.35,
                     title="census v2 architecture call")
     leg.get_title().set_fontsize(figstyle.FS_TICK)
-    figstyle.panel(ax, "a", "every record scored by both profiles")
+    figstyle.panel(ax, "a", "both profiles score every record, and the two "
+                            "scores separate")
     figstyle.despine(ax)
     ax.annotate(f"{REL_MARGIN:.0%} no-call band —\nempty", ha="center",
                 xy=(lim * 0.50, lim * 0.50), xytext=(lim * 0.60, lim * 0.80),
@@ -104,7 +105,8 @@ def fig_profile_separation():
     ax2.set_xlabel("relative bit-score margin  (win − lose) / win")
     ax2.set_ylabel("records")
     ax2.legend(frameon=False, loc="upper center")
-    figstyle.panel(ax2, "b", "how far apart the two profiles land")
+    figstyle.panel(ax2, "b", "the margin between the two profiles is wide "
+                             "for almost every record")
     figstyle.despine(ax2)
     figstyle.hgrid(ax2)
     fig.tight_layout(pad=0.5, w_pad=1.4)
@@ -138,7 +140,7 @@ def fig_jackhmmer_convergence():
     ax.set_xlabel("jackhmmer iteration")
     ax.set_ylabel("new targets included")
     ax.legend(frameon=False, fontsize=figstyle.FS_TICK)
-    figstyle.panel(ax, "a", "the completeness curve")
+    figstyle.panel(ax, "a", "each seed's inclusion curve drops towards zero")
     figstyle.despine(ax)
     figstyle.hgrid(ax)
 
@@ -158,7 +160,7 @@ def fig_jackhmmer_convergence():
     ax2.set_xlabel("jackhmmer iteration")
     ax2.set_ylabel("RyR share of the model,\nchange from round 1 (points)")
     ax2.legend(frameon=False, fontsize=figstyle.FS_TICK,
-               loc="upper left")
+               loc="center right", bbox_to_anchor=(1.0, 0.45))
     figstyle.panel(ax2, "b", "did iterating drift it into the sister family?")
     figstyle.despine(ax2)
     figstyle.hgrid(ax2)
@@ -199,7 +201,7 @@ def fig_instrument_agreement():
                         textcoords="offset points", va="center",
                         fontsize=figstyle.FS_TICK, color=figstyle.MUTED)
     ax.set_xlim(0, max(left) * 1.16)
-    figstyle.panel(ax, "a", "which instrument calls each record")
+    figstyle.panel(ax, "a", "both instruments agree on most records")
     figstyle.despine(ax)
     figstyle.hgrid(ax, axis="x")
 
@@ -220,7 +222,8 @@ def fig_instrument_agreement():
                          fontsize=figstyle.FS_TICK, color=figstyle.MUTED)
         ax2.set_xlim(0, max(v for _, v in items) * 1.20)
     ax2.set_xlabel("records whose call changed from census v2")
-    figstyle.panel(ax2, "b", "what the second instrument moved")
+    figstyle.panel(ax2, "b", f"the profiles change the call on "
+                             f"{len(changes):,} records")
     figstyle.despine(ax2)
     figstyle.hgrid(ax2, axis="x")
     fig.tight_layout(pad=0.5, w_pad=1.4)
@@ -272,8 +275,8 @@ def fig_proteome_copy_number():
     ax.set_xlabel("ITPR records in the proteome")
     ax.set_ylabel("taxa")
     ax.set_ylim(0, max(vals) * 1.18)
-    figstyle.panel(ax, "a", f"{len(sizes)} vertebrate taxa "
-                            f"({len(manifest)} reference proteomes)")
+    figstyle.panel(ax, "a", f"{len(sizes)} vertebrate taxa, {len(manifest)} reference "
+                            f"proteomes:\nITPR record counts spread widely")
     figstyle.despine(ax)
     figstyle.hgrid(ax)
 
@@ -293,7 +296,7 @@ def fig_proteome_copy_number():
         med = sorted(p[0] for p in zero)[len(zero) // 2]
         ax2.legend(frameon=False, loc="upper left",
                    fontsize=figstyle.FS_TICK, markerscale=1.4)
-        ax2.annotate(f"median gene set of those 15:\n{med:,} proteins",
+        ax2.annotate(f"those {len(zero)} have a median gene set\nof {med:,} proteins",
                      xy=(med, 0), xytext=(-14, 30),
                      textcoords="offset points",
                      ha="right", fontsize=figstyle.FS_TICK, color="#b3261e",

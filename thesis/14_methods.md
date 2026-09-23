@@ -6,7 +6,7 @@ A paper's methods section says what was done. It has to, because a reader
 needs to reproduce it. It cannot say why each threshold is the number it is,
 and for this project that is where most of the work went.
 
-88 methodological decisions were recorded across 35 working sessions,
+89 methodological decisions were recorded across 36 working sessions,
 numbered as they were made. Several of them changed an answer.
 Several were made, tested and overturned. None of them has ever been written
 out as prose, and this chapter is that: not a list, but the arguments in the
@@ -16,7 +16,7 @@ The chapter is organised by what a decision is about, covering thresholds,
 controls, refusals, reproducibility, and the rules that keep a document from
 drifting away from its data.
 
-**Where the procedures themselves are.** Because each instrument is built in
+**This table says where each procedure is.** Because each instrument is built in
 the chapter that first depends on it, a reader looking for a procedure rather
 than for an argument needs a map, and this is it.
 
@@ -260,17 +260,29 @@ this thesis carries its own, through the same engine rather than a fork, so a
 number quoted in both documents is recovered once and cannot disagree between
 them.
 
+One figure sits in this chapter rather than in a results chapter because it
+is about the search and not about the family. {fig:census_growth} splits each
+taxonomic group's census records by whether a name-based search of the
+public databases had already returned them or the domain enumeration first
+found them, and outside the vertebrates the first share is close to zero,
+which is the scope of those first searches rather than their failure.
+
 ![](figures/census_growth.png)
 
-**{fig:census_growth}.** How the census grew across its six editions, and on
-what evidence each addition rests. It is in the methods chapter rather than
-in a results chapter because it is a statement about the search rather than
-about the family: each edition is a channel, and the figure is the shape of
-what each channel was worth. For a reader planning similar work it prices
-four search strategies against each other on one family. A targeted search
-of the obvious databases, which is where most projects stop, returned about
-a tenth of what exhaustive enumeration by domain signature did, and only the
-two genome sweeps recovered the genes no protein database holds at all.
+**{fig:census_growth}.** A domain enumeration added almost everything a
+search by name had missed. Each bar is one taxonomic group's census-v2
+records, split into the share the app's name-based searches had already
+found and the share the exhaustive enumeration by domain signature added:
+701 of 10,936 vertebrate records were already in hand, 3 of 3,706
+non-vertebrate metazoan ones, and none at all in every other group, which
+reflects how little the first searches looked outside the vertebrates
+rather than how they failed there. The figure belongs to the methods chapter
+because it is a statement about the search rather than about the family.
+For a reader planning similar work it prices two search strategies against
+each other on one family: a targeted search of the obvious databases, which
+is where most projects stop, returned about a tenth of what enumeration by
+domain signature did within the vertebrates, and only the genome sweeps of
+Chapters 4 and 5 recovered the genes no protein database holds at all.
 
 **Citations are keys resolved at build time and the bibliography is rendered
 rather than typed.** No author, title, year or journal is written into a
@@ -286,7 +298,7 @@ the build said so.
 
 ## 14.7 Four rules are specific to this family
 
-Four of the 88 recorded decisions are about this family and could not have
+Four of the 89 recorded decisions are about this family and could not have
 been ported from anywhere.
 
 **Separating IP₃ from ryanodine receptors is a positive test at every stage.**

@@ -75,8 +75,10 @@ def fig_contiguity(log=S.log) -> None:
     ax.set_xticklabels(labels, rotation=45, ha="right")
     ax.set_ylabel("false-negative rate")
     ax.set_xlabel("contig N50")
-    ax.axvline(1.5, color=F.MUTED, lw=0.8, ls="--")
-    ax.set_ylim(-0.03, 0.72)
+    # Headroom for the key above the tallest error bar, and the bar line
+    # stopped below it rather than run through it (S28 page read).
+    ax.set_ylim(-0.03, 0.95)
+    ax.plot([1.5, 1.5], [-0.03, 0.72], color=F.MUTED, lw=0.8, ls="--")
     ax.annotate(f"D4 bar, {bar / 1000:.0f} kb", xy=(1.5, 0.34),
                 xytext=(4, 0), textcoords="offset points",
                 fontsize=6, color=F.MUTED, va="center")
@@ -104,12 +106,12 @@ def fig_contiguity(log=S.log) -> None:
     ax.set_ylabel("residual false-negative rate")
     ax.legend(loc="upper right", frameon=False, fontsize=5.5,
               handlelength=1.2, borderpad=0.2)
-    ax.annotate(f"D4 bar", xy=(bar, 0.16), xytext=(4, 0),
+    ax.annotate(f"D4 bar", xy=(bar, 0.10), xytext=(4, 0),
                 textcoords="offset points", fontsize=6, color=F.MUTED,
                 va="center")
     F.despine(ax)
     F.hgrid(ax)
-    F.panel(ax, "b", "the a-priori bar, calibrated")
+    F.panel(ax, "b", "the a-priori bar survives calibration")
 
     ax = axes[2]
     mine = sorted((r for r in floor if r["series"] == "itpr_present"),
@@ -124,7 +126,7 @@ def fig_contiguity(log=S.log) -> None:
     ax.set_ylabel("fraction of the 309 genomes retained")
     F.despine(ax)
     F.hgrid(ax)
-    F.panel(ax, "c", "what the floor costs")
+    F.panel(ax, "c", "every floor costs genomes")
 
     fig.tight_layout()
     F.save(fig, FIG_DIR / "fig_s19_contiguity")
@@ -307,9 +309,9 @@ def fig_drift(log=S.log) -> None:
 
     for ax, col, title, letter in (
             (axes[0], "sister_frac",
-             "K1's axis: the sister-family share", "a"),
+             "K1 watches the sister-family share", "a"),
             (axes[1], "offfamily_frac",
-             "the axis that actually moves", "b")):
+             "the off-family share moves", "b")):
         for run in runs:
             mine = sorted((r for r in rounds if r["run"] == run),
                           key=lambda r: int(r["round"]))
@@ -362,7 +364,7 @@ def fig_drift(log=S.log) -> None:
     ax.set_ylabel("over 7 runs")
     F.despine(ax)
     F.hgrid(ax)
-    F.panel(ax, "c", "each kill rule against the outcome")
+    F.panel(ax, "c", "each kill rule is scored against the outcome")
 
     fig.tight_layout()
     F.save(fig, FIG_DIR / "fig_s19_drift")

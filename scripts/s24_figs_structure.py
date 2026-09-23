@@ -136,7 +136,7 @@ def fig_constraint_on_channel(out: Path, stats: dict) -> None:
         scored = [a["b"] for a in atoms if a["b"] >= 0]
         pdb = REFERENCE_FILE[paralog].split("_")[-1].replace(".pdb", "")
         sc = _trace(ax, atoms,
-                    f"{paralog}  ({pdb}, {len(atoms):,} resolved residues)",
+                    f"{paralog} ({pdb}) resolves {len(atoms):,} residues",
                     next(letters), "viridis", 40, 95,
                     note=f"median deep-layer constraint "
                          f"{st.median(scored):.0f}")
@@ -149,12 +149,12 @@ def fig_constraint_on_channel(out: Path, stats: dict) -> None:
     scored = [a["b"] for a in atoms if a["b"] >= 0]
     ceiling = sum(1 for b in scored if b >= 99.999) / len(scored)
     sel = _trace(ax, atoms,
-                 "ITPR3  (8TKG) painted with the selection layer instead",
+                 "ITPR3 (8TKG) is painted with the selection layer instead",
                  next(letters), "cividis", 60, 100,
                  note=f"{100 * ceiling:.0f} % of scored residues sit at the "
                       f"ceiling: no non-synonymous\nsubstitution anywhere in "
                       f"the tree. {sum(1 for a in atoms if a['b'] < 0)} "
-                      f"residues unscored")
+                      f"residues are unscored")
     rec["ITPR3_selection"] = {"file": SELECTION_FILE["ITPR3"],
                               "residues": len(atoms), "scored": len(scored),
                               "median_b": round(st.median(scored), 2)}
@@ -272,7 +272,7 @@ def fig_variants_on_structure(out: Path, stats: dict) -> None:
                   "table")
     F.despine(ax)
     F.hgrid(ax, "x")
-    F.panel(ax, "c", "which structures may carry a human variant position")
+    F.panel(ax, "c", "two of four structures may carry a human variant position")
 
     ax = fig.add_subplot(gs[2, :])
     rows = [r for r in by_element if r["class_bucket"] == "P/LP"
@@ -321,8 +321,8 @@ def fig_variants_on_structure(out: Path, stats: dict) -> None:
     ax.set_ylabel("odds ratio against\nthe rest of the protein")
     F.despine(ax)
     F.hgrid(ax)
-    F.panel(ax, "d", "where the pathogenic variants are, per element")
-    ax.annotate(f"ringed = q < 0.05 after Benjamini–Hochberg over all "
+    F.panel(ax, "d", "pathogenic variants are counted per element against the rest of the protein")
+    ax.annotate(f"a ring marks q < 0.05 after Benjamini–Hochberg over all "
                 f"{len(rows)} element tests; the number above each point\n"
                 f"is its count of pathogenic positions; a triangle is an "
                 f"infinite odds ratio (a zero cell), drawn at the ceiling.\n"

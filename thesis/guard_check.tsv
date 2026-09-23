@@ -17,3 +17,15 @@ pdf: a glyph the document font lacks	missing characters	1	1	fired	[s25 pdf] 1 di
 prose: an em-dash in a chapter source	em-dash	1	1	fired	[FAIL] 01_introduction.md: 1 em-dash(es) in a chapter source
 prose: a legend that says the same thing twice	says the same thing twice	1	1	fired	[FAIL] 01_introduction.md: legend gating_logic says the same thing twice (5 shared words, 6 shared runs)
 prose: a legend that restates the paragraph beside it	restates the paragraph	1	1	fired	[FAIL] 01_introduction.md: legend domain_architecture restates the paragraph after it (8 shared runs)
+prose: a legend that opens without a finite verb (R1)	opens without a finite verb	1	1	fired	[FAIL] 01_introduction.md: legend gating_logic opens without a finite verb (R1): 'The logic of the channel, drawn as a diagram.'
+prose: a legend sentence with no finite verb (R2)	sentence with no finite verb	1	1	fired	[FAIL] 01_introduction.md: legend gating_logic has a sentence with no finite verb (R2): 'Each panel against its own control, by class.'
+prose: a bold lead-in with no finite verb (R1b)	lead-in has no finite verb	1	1	fired	[FAIL] 01_introduction.md: bold lead-in has no finite verb (R1b): 'The receptor, in outline.'
+prose: a figure no sentence of its chapter refers to (R3)	no sentence of chapter	1	1	fired	[FAIL] 01_introduction.md: figure channel_structure is placed but no sentence of chapter 1 refers to it (R3)
+pdf: a legend set as body text (R4)	not wrapped	1	1	fired	[FAIL] legend not wrapped in its own typography: '**Figure 1.1.** A legend.'
+figure: two labels that overlap (R5)	overlaps	1	1	fired	text 'the first label sits here' overlaps text 'the second label sits here too' (at x=0.51, y=0.51 of the canvas)
+figure: an annotation anchored outside its axes (R5)	not drawn	1	1	fired	text 'this note points outside' is not drawn: its anchor lies outside the axes
+figure: a label clipped by its axes (R5)	clipped	1	1	fired	RuntimeError: guard_clipped: 1 figure-text problem(s)
+figure: a panel title with no finite verb (R2)	no finite verb	1	1	fired	title has no finite verb: 'the count per genome, by class'
+figure: a panel title crowding the next panel (R5)	pt clear of	1	1	fired	title 'the first panel has a long title' has less than 3 pt clear of title 'this is b'
+figure: a panel title running into the next panel (R5)	runs into another panel	1	1	fired	title 'the title of this panel runs well across the next…' runs into another panel's area
+figure: a legend drawn over its data (R5)	drawn over	1	1	fired	legend 'the keyed line' is drawn over 41 point(s) of the data it keys

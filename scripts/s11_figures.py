@@ -125,7 +125,7 @@ def fig_afdb_coverage() -> None:
     ax.invert_yaxis()
     ax.set_xlim(0, 100)
     ax.set_xlabel("% of UniProt-shaped census records")
-    fs.panel(ax, "a", "AlphaFold DB coverage of the ITPR census")
+    fs.panel(ax, "a", "AlphaFold DB models a fifth of the census")
     fs.despine(ax)
     # Legend below the axes: at eight groups the bars run the full width,
     # so an inset legend sits on top of the shortest group's data.
@@ -152,10 +152,12 @@ def fig_afdb_coverage() -> None:
     ax2.set_xlabel("record length (aa)")
     ax2.set_ylabel("census records")
     ax2.set_xlim(0, 4000)
-    fs.panel(ax2, "b", "coverage against record length")
+    fs.panel(ax2, "b", "usable models sit below the full-length peak")
     fs.despine(ax2)
     fs.hgrid(ax2)
-    ax2.legend(loc="upper right", frameon=False, fontsize=6)
+    # Upper left: the full-length peak fills the upper right (S28).
+    ax2.legend(loc="upper left", bbox_to_anchor=(0.04, 1.0), frameon=False,
+               fontsize=6)
     fs.save(fig, FIGS / "s11_afdb_coverage")
     plt.close(fig)
 
@@ -194,10 +196,16 @@ def fig_tm_calibration() -> None:
                    facecolor=colour if called else "none",
                    edgecolor="white" if called else colour,
                    linewidth=0.5 if called else 1.0, zorder=3)
-    lim = 0.95
+    # 1.0 rather than 0.95: the best-scoring models sit at ~0.94 and were
+    # half-clipped by the axis edge (S28 page read).
+    lim = 1.0
     ax.plot([0, lim], [0, lim], color=fs.MUTED, lw=0.7, ls=":", zorder=1)
     for bar, label in ((TM_RANDOM, "random"), (TM_FOLD, "same fold")):
-        ax.axvline(bar, color=fs.MUTED, lw=0.7, ls="--", zorder=1)
+        # The vertical bars stop just above the horizontal fold bar: above
+        # it, on the IP3R side of the fold bar, nothing is plotted and the
+        # key sits there, which the full-height lines ran through.
+        ax.plot([bar, bar], [0, TM_FOLD + 0.03], color=fs.MUTED, lw=0.7,
+                ls="--", zorder=1)
         ax.axhline(bar, color=fs.MUTED, lw=0.7, ls="--", zorder=1)
         # Bar labels at the *foot* of their line: the upper-left corner is
         # the only empty region left once the calls cluster top-right, so
@@ -208,7 +216,7 @@ def fig_tm_calibration() -> None:
     ax.set_ylim(0, lim)
     ax.set_xlabel("best TM-score vs an IP$_3$R reference")
     ax.set_ylabel("best TM-score vs a RyR reference")
-    fs.panel(ax, "a", "the family call, structurally")
+    fs.panel(ax, "a", "TM-scores against both families\nmake the call structurally")
     fs.despine(ax)
     ax.legend(handles=[
         Patch(facecolor=fs.PARALOG["ITPR1"], label="ITPR1"),
@@ -229,7 +237,8 @@ def fig_tm_calibration() -> None:
         Line2D([], [], marker="o", linestyle="none", color=fs.MUTED,
                markersize=4.5, label="predicted model"),
     ], loc="upper left", frameon=False, fontsize=6, handlelength=1.1,
-        labelspacing=0.35, borderaxespad=0.9)
+        labelspacing=0.25, borderaxespad=0.2)   # tight to the corner, so the
+                                                # key stays above the diagonal
 
     # Panel b — every score as a strip, by what the pair is. This is where
     # the controls earn their place: the floor is drawn, not asserted. The
@@ -262,7 +271,7 @@ def fig_tm_calibration() -> None:
                         fontsize=6)
     ax2.set_ylim(0, 1.0)
     ax2.set_ylabel("TM-score (the smaller normalisation)")
-    fs.panel(ax2, "b", "what a TM-score means on this panel")
+    fs.panel(ax2, "b", "two published bars calibrate\nwhat a TM-score means here")
     fs.despine(ax2)
     fs.hgrid(ax2)
     fs.save(fig, FIGS / "s11_tm_calibration")
@@ -311,7 +320,7 @@ def fig_plddt() -> None:
     # in the top third and makes the 70 and 90 bands unreadable, which are
     # the only things a pLDDT is read against.
     ax.set_ylim(50, 100)
-    fs.panel(ax, "", "AlphaFold confidence, per domain, along the subunit")
+    fs.panel(ax, "", "AlphaFold confidence varies by domain along the subunit")
     fs.despine(ax)
     fs.hgrid(ax)
     fs.save(fig, FIGS / "s11_plddt_domains")

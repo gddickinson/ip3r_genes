@@ -333,9 +333,9 @@ def main() -> None:
       f"{budget['remaining_totals']['download_gb']:.0f} GB to download.** "
       f"Keeping every FASTA costs {st['fasta_gb_if_kept']:.0f} GB against "
       f"{st['free_gb_now']:.0f} GB free — it "
-      f"{'fits, and saves re-downloading for S8 synteny and S10 validation'
+      + ("fits, and saves re-downloading for S8 synteny and S10 validation"
          if st['fits_without_delete_after'] else
-         'does not fit; use --delete-after'}.\n")
+         "does not fit; use --delete-after") + ".\n")
     if capped:
         A("Two assemblies need the chunked miniprot path and are excluded by "
           "the driver's default 12 GB cut, so S5b runs them separately: "

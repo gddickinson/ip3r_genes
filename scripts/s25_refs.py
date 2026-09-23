@@ -128,8 +128,10 @@ def fetch_crossref(doi: str, offline: bool) -> dict:
 # ---------------------------------------------------------------- parsing
 
 def _from_pubmed(rec: dict) -> dict:
+    # A consortium paper lists its only author as a CollectiveName; keeping
+    # authors alone printed the UniProt 2023 paper with no author at all.
     authors = [a["name"] for a in rec.get("authors", [])
-               if a.get("authtype") == "Author"]
+               if a.get("authtype") in ("Author", "CollectiveName")]
     doi = ""
     for aid in rec.get("articleids", []):
         if aid.get("idtype") == "doi":
@@ -261,7 +263,8 @@ def _format(num: int, row: dict[str, str]) -> str:
     authors = (", ".join(parts[:6]) + " *et al.*" if len(parts) > 6
                else ", ".join(parts))
     stop = "" if authors.endswith("*") else "."
-    line = (f"{num}. {authors}{stop} {row['title'].rstrip('.')}. "
+    lead = f"{authors}{stop} " if authors else ""
+    line = (f"{num}. {lead}{row['title'].rstrip('.')}. "
             f"*{row['journal']}* **{row['year']}**.")
     if row.get("pmid"):
         line += f" PMID {row['pmid']}."

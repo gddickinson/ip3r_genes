@@ -142,11 +142,13 @@ def fig_detection(log=print) -> None:
                plt.Line2D([], [], color=F.ACCENT, lw=0, marker="x",
                           markersize=3.6, markeredgewidth=1.0,
                           label="the annotation loses this gene")]
-    axes[0].legend(handles=handles, fontsize=F.FS_NOTE, frameon=False,
-                   ncol=3, loc="lower left", bbox_to_anchor=(0, 1.02))
-    fig.suptitle("Reads on each recovered locus, against its own "
-                 "composition-matched decoy", fontsize=F.FS_SUPTITLE,
-                 y=1.12)
+    # The legend sits *below* the panels: above them it ran straight
+    # across the three species titles (found by S28's overlap check).
+    fig.legend(handles=handles, fontsize=F.FS_NOTE, frameon=False,
+               ncol=3, loc="upper center", bbox_to_anchor=(0.5, -0.02))
+    fig.suptitle("Each recovered locus collects reads, scored against its "
+                 "own composition-matched decoy", fontsize=F.FS_SUPTITLE,
+                 y=1.04)
     fig.tight_layout()
     F.save(fig, FIGS / "s12_detection")
     plt.close(fig)
@@ -281,9 +283,9 @@ def fig_instruments(log=print) -> None:
         dep_frac.append(ps / pt if pt else 0.0)
         labels.append(_abbrev(organism.get(k[0], k[0]), k[1]))
     for ax, vals, title in ((ax1, reads_frac,
-                             "streamed RNA-seq reads"),
+                             "streamed RNA-seq reads cross most junctions"),
                             (ax2, dep_frac,
-                             "submitted transcript records")):
+                             "submitted transcript records span none")):
         ax.barh(y, vals, color=[_colour(k[1]) for k in keys], height=0.66,
                 zorder=3)
         ax.set_yticks(y)

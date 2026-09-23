@@ -104,7 +104,7 @@ def fig_representative_alignment(out: Path, stats: dict) -> None:
     ax.set_xlim(0, width)
     ax.set_xlabel("column of the 11,777-column L-INS-i alignment")
     F.despine(ax, keep=("bottom",))
-    F.panel(ax, "a", "134 representatives, per-cell residue occupancy")
+    F.panel(ax, "a", "134 representatives are drawn as per-cell residue occupancy")
 
     for i, lab in enumerate(labels):
         ax_side.add_patch(plt.Rectangle(
@@ -122,9 +122,9 @@ def fig_representative_alignment(out: Path, stats: dict) -> None:
     ax_track.set_ylim(0, 1)
     ax_track.set_yticks([])
     ax_track.axis("off")
-    ax_track.annotate(f"the {len(kept):,} columns trimAl kept — the alignment "
-                      f"the tree, the selection tests and the constraint map "
-                      f"were computed on",
+    ax_track.annotate(f"trimAl kept these {len(kept):,} columns; the tree, the "
+                      f"selection tests and the constraint map were computed "
+                      f"on them",
                       xy=(0, -0.3), xycoords="axes fraction", fontsize=F.FS_NOTE,
                       color=F.MUTED, va="top", annotation_clip=False)
 
@@ -143,7 +143,7 @@ def fig_representative_alignment(out: Path, stats: dict) -> None:
     ax2.set_xlabel("column of the input alignment")
     F.despine(ax2)
     F.hgrid(ax2)
-    F.panel(ax2, "b", "column occupancy along the alignment "
+    F.panel(ax2, "b", "column occupancy varies along the alignment "
                       "(mean of 26 columns)")
 
     # The claim is that the cut columns are the sparse ones, and that is a
@@ -259,10 +259,10 @@ def fig_labelled_positions(out: Path, stats: dict) -> None:
     fig = plt.figure(figsize=(F.W_FULL, 6.6))
     gs = fig.add_gridspec(3, 1, height_ratios=[1.5, 1.5, 3.6], hspace=0.6)
     _profile_panel(fig.add_subplot(gs[0]), L.LIGAND_ELEMENTS, variants,
-                   "the IP3-binding core (β-trefoil + MIR): deep-layer "
-                   "constraint, marker = a pathogenic position", "a")
+                   "the IP3-binding core (β-trefoil + MIR) carries deep-layer "
+                   "constraint; each marker is a pathogenic position", "a")
     _profile_panel(fig.add_subplot(gs[1]), L.PORE_ELEMENTS, variants,
-                   "the pore module (channel, filter, gate, luminal loop)",
+                   "the pore module spans channel, filter, gate and luminal loop",
                    "b")
 
     ax = fig.add_subplot(gs[2])
@@ -295,11 +295,11 @@ def fig_labelled_positions(out: Path, stats: dict) -> None:
     ax.set_xlim(-0.01, 1.02)
     ax.set_ylim(0, half + 3)
     ax.axis("off")
-    F.panel(ax, "c", "every pathogenic position in the two regions, and the "
-                     "residue each paralogue carries there")
-    ax.annotate("red letter = the other paralogue carries a different residue; "
-                "every letter checked against that paralogue's own "
-                "per-residue table",
+    F.panel(ax, "c", "every pathogenic position in the two regions is listed "
+                     "with the residue each paralogue carries there")
+    ax.annotate("a red letter marks a residue the other paralogue does not "
+                "share; every letter was checked against that paralogue's "
+                "own per-residue table",
                 xy=(0.0, -0.02), xycoords="axes fraction",
                 fontsize=F.FS_NOTE, color=F.MUTED, va="top")
 

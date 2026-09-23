@@ -56,15 +56,22 @@ one is written as an unknown in the protein rows too, so the aligner is never
 asked to reconcile a pair that disagrees, which it does by dropping the
 sequence silently. Trimming is chosen on the protein and applied codon-aware,
 whole triplets only.
+{fig:supp_codon_alignment} shows what survived: occupancy per codon over the
+57 tips in panel a, each tip's coverage by its selection set in panel b, and
+the masked codons by route in panel c, so the 24 masked codons of this section
+can be seen against the columns they sit in.
 
 ![](figures/supp_codon_alignment.png)
 
-**{fig:supp_codon_alignment}.** The trimmed codon alignment behind every
-estimate in this chapter, plotted in codons, because an axis in nucleotides
-would make a three-fold difference look like a property of the data. The
-panel exists so a reader can see the size of what every rate in Chapter 10
-was estimated on, which is 2,459 codons of 3,253 after trimming, across 57
-tips whose coding sequences were each proved to encode the aligned protein.
+**{fig:supp_codon_alignment}.** The trimmed codon alignment carries every
+estimate in this chapter, and the figure is plotted in codons because an axis
+in nucleotides would make a three-fold difference look like a property of the
+data. The three panels show per-codon occupancy across the 57 tips (a), the
+coverage of each tip by the selection set the tree placed it in (b), and what
+validation masked, by the route each coding sequence came from (c). A reader
+can therefore see the size of what every rate in Chapter 10 was estimated on,
+which is 2,459 codons of 3,253 after trimming, across 57 tips whose coding
+sequences were each proved to encode the aligned protein.
 
 **Twelve constructed negative controls run on every build**, and their
 character is the point. A codon alignment is the one artefact in this project
@@ -107,16 +114,20 @@ tree defines, and for these six it defines none.
 
 One-ratio estimates [R145] give ITPR1 at 0.0238, ITPR2 at 0.0430 and ITPR3 at
 0.0415. The highest of the three is **23 times below neutrality**.
+{fig:omega_by_paralog} draws the three rates on a logarithmic axis against the
+neutral line, with the curated-only estimate beside each, and the reader
+should take from it how far below one all three sit and how little the bars
+move when the genomic reconstructions are removed.
 
 ![](figures/omega_by_paralog.png)
 
-**{fig:omega_by_paralog}.** Per-paralogue rate with the curated-sequence
-sensitivity estimate beside it, and neutrality drawn rather than described.
-The axis is logarithmic because the result is how far below neutrality these
-rates sit, and on a linear axis every bar is on the floor. The sensitivity
-estimate beside each bar is what shows the rates are not an artefact of the
-reconstructed gene models, since it is computed with every one of them
-removed.
+**{fig:omega_by_paralog}.** Each paralogue's rate sits far below neutrality,
+which is drawn as a line rather than described, and the curated-sequence
+sensitivity estimate stands beside each bar. The axis is logarithmic because
+the result is how far below neutrality these rates sit, and on a linear axis
+every bar is on the floor. The sensitivity estimate beside each bar is what
+shows the rates are not an artefact of the reconstructed gene models, since it
+is computed with every one of them removed.
 
 The identity Chapter 6 measured says the same thing far less sharply. This is
 a 2,700-residue channel accumulating one non-synonymous change per 23
@@ -132,17 +143,20 @@ Synonymous sites are **saturated across the vertebrate span, inside a single
 paralogue and not only between them.** In the worst set, 94.2 % of
 within-paralogue pairs exceed the conventional saturation bar, and the medians
 run from 4.6 to 13.5.
+{fig:dnds_saturation} plots every within-paralogue pair for ITPR1, ITPR2 and
+ITPR3 in turn, and the reader should notice that the cloud sits to the right
+of the saturation bar in all three panels, not only in the worst.
 
 ![](figures/dnds_saturation.png)
 
-**{fig:dnds_saturation}.** Pairwise rates within each paralogue, drawn
-log-log with the neutral diagonal and the saturation bar. On a
-logarithmic-x, linear-y plot the neutral diagonal is not a line at all: the
-first draft's neutrality ran off the panel within the first pixel and left
-the saturation bar as the only line on the figure, which reads as
-neutrality. What the panel shows is that saturation is reached inside a
-single paralogue and not only between the three, which is the reason no rate
-in this chapter is taken from a pairwise matrix.
+**{fig:dnds_saturation}.** Pairwise rates within each paralogue reach
+synonymous saturation, and the three panels draw them log-log with the neutral
+diagonal and the saturation bar. On a logarithmic-x, linear-y plot the neutral
+diagonal is not a line at all: the first draft's neutrality ran off the panel
+within the first pixel and left the saturation bar as the only line on the
+figure, which reads as neutrality. What the panel shows is that saturation is
+reached inside a single paralogue and not only between the three, which is the
+reason no rate in this chapter is taken from a pairwise matrix.
 
 The expectation going in was saturation between the paralogues, which are
 older than 500 million years. It is already reached within them, because a
@@ -165,17 +179,21 @@ Each paralogue clade tested against the rest of the family as a two-ratio
 branch model confirms it, with every test corrected across the family. ITPR1's
 foreground rate is 0.0241 against a background of 0.0432, ITPR2's is 0.0435
 against 0.0317, and ITPR3's is 0.0455 against 0.0308.
+{fig:branch_contrast} puts the two instruments side by side, the two-ratio
+contrast in panel a and the relaxation coefficient in panel b, so the reader
+can see that both separate ITPR1 from its two sisters.
 
 ![](figures/branch_contrast.png)
 
-**{fig:branch_contrast}.** Background against foreground rate per paralogue
-clade, with the relaxation coefficient beside it. The importance of this
-figure is that two different statistics on two different models give the
-same ordering. A point-estimate contrast and a test on the whole rate
-distribution both put ITPR1 under roughly twice the purifying selection of
-its sisters, and both make its selection intensifying relative to theirs.
-That agreement is what turns a ranking into a claim about the three copies
-having been held to different standards.
+**{fig:branch_contrast}.** Two different statistics on two different models
+give the same separation of ITPR1 from its sisters. The first panel sets each
+clade's foreground rate against the background rate of the rest of the family,
+and the second gives the relaxation coefficient for the same clade. A
+point-estimate contrast and a test on the whole rate distribution both put ITPR1
+under roughly twice the purifying selection of its sisters, and both make its
+selection intensifying relative to theirs. That agreement is what turns a
+ranking into a claim about the three copies having been held to different
+standards.
 
 ITPR1 is the paralogue that carries the family's dominant missense disease
 burden, and it is the most constrained. It is also the paralogue whose
@@ -205,15 +223,18 @@ single-start run would have reported as its answer.
 A different starting value fails on each stem, so no single initial value
 would have been safe. That is the case for running several rather than for
 choosing a better one.
+{fig:bs_restarts} shows all twelve restarts against their null likelihoods,
+and the three that fall below the line are the failures a single run would
+have printed as answers.
 
 ![](figures/bs_restarts.png)
 
-**{fig:bs_restarts}.** Every restart against its own null. A point below the
-line is a local optimum rather than a result, and three of twelve sit there,
-one on every stem, with a different starting value failing each time. The
-importance is general rather than local: a branch-site result from a
-single-start run is a result whose optimiser has not been checked, and
-nothing in its output says so.
+**{fig:bs_restarts}.** Every restart of the branch-site model is plotted
+against its own null likelihood. A point below the line is a local optimum
+rather than a result, and three of twelve sit there, one on every stem, with a
+different starting value failing each time. The importance is general rather
+than local: a branch-site result from a single-start run is a result whose
+optimiser has not been checked, and nothing in its output says so.
 
 **All three stems are significant after correction, and one of the three
 carries a rate the data actually determine.** That distinction is the

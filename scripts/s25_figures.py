@@ -17,6 +17,7 @@ Four failures, each a way the set could stop being trustworthy:
 
 from __future__ import annotations
 
+import re
 import shutil
 import sys
 
@@ -28,14 +29,35 @@ FIELDS = ["chapter", "number", "slug", "source", "formats", "width_in",
           "height_in", "caption_stub", "sha256_png"]
 
 
+#: A figure placement in a chapter source, `![](figures/<slug>.png)`.
+FIG_IMG = re.compile(r"!\[\]\(figures/([A-Za-z0-9_]+)\.png\)")
+
+
 def numbering() -> dict[str, str]:
-    """slug -> 'chapter.n', numbered per chapter in declaration order."""
-    seen: dict[int, int] = {}
-    out = {}
-    for chapter, slug, _src, _cap in fm.FIGURES:
-        seen[chapter] = seen.get(chapter, 0) + 1
-        out[slug] = f"{chapter}.{seen[chapter]}"
-    return out
+    """slug -> 'chapter.n', numbered per chapter in order of placement.
+
+    The number a reader sees has to follow the page, so it is read off the
+    chapter sources rather than the figure map: numbering in declaration
+    order printed chapter 6 as 6.5, 6.4, 6.2, ... once the map and the text
+    had drifted apart. A declared figure no chapter places yet is numbered
+    after the placed ones, so the map can still be checked before the prose
+    exists (`s25_stitch` then fails it as unplaced).
+    """
+    declared = {slug: ch for ch, slug, _s, _c in fm.FIGURES}
+    order: dict[int, list[str]] = {}
+    for name in L.CHAPTER_FILES:
+        path = L.TH / name
+        if not path.exists():
+            continue
+        for slug in FIG_IMG.findall(path.read_text(encoding="utf-8")):
+            ch = declared.get(slug)
+            if ch is not None and slug not in order.get(ch, []):
+                order.setdefault(ch, []).append(slug)
+    for ch, slug, _s, _c in fm.FIGURES:
+        if slug not in order.get(ch, []):
+            order.setdefault(ch, []).append(slug)
+    return {slug: f"{ch}.{i}" for ch, slugs in order.items()
+            for i, slug in enumerate(slugs, 1)}
 
 
 def _committed_figures() -> set[str]:

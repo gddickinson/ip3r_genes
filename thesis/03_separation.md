@@ -53,11 +53,15 @@ whichever wins by more than a stated margin. It is a positive test on
 distances, so an unnamed 4,900-residue locus is called exactly as a named one
 is. The length band contributes only to the size component and never to the
 call. And the margin is recorded on every candidate, so every exclusion can be
-audited afterwards.
+audited afterwards. {fig:census_margin} shows that margin for every record in
+the census with the no-call band drawn, and the reader should look at the
+empty region: the two families sit on opposite sides of the band with
+nothing between them, and the one true positive inside it is the
+*Dictyostelium* receptor discussed next.
 
 ![](figures/census_margin.png)
 
-**{fig:census_margin}.** The labelled-bait margin measured across the
+**{fig:census_margin}.** The labelled-bait margin is measured across the
 census, inside and outside the band in which the project declines to call.
 The two families do not overlap: the narrowest true positive sits at +0.065
 and the narrowest ryanodine receptor at −0.536, a gap of 0.601 with nothing
@@ -139,13 +143,19 @@ calls IP₃ receptor across 385 taxa. Only 10,256 records, or 66.5 %, carry all
 three seeds. *Dictyostelium* iplA is among the records a single-signature
 census would have missed, because it carries PF01365 and PF08454 and none of
 PF08709, PF02815 or PF00520. It is a characterised receptor that the family's
-defining domain does not annotate.
+defining domain does not annotate. {fig:census_space} draws the space those
+three walks enumerated: panel **a** gives the size of each signature's set
+and of every overlap between them, and panel **b** gives the composition of
+each region by family call, which is where the proteins a single-signature
+census would never have seen become visible as a population rather than a
+number.
 
 ![](figures/census_space.png)
 
-**{fig:census_space}.** The enumerated search space by signature, with the
-overlaps drawn. The union is 15,421 proteins across 1,488 taxa and the
-intersection of all three seeds is 10,256. The difference between those two
+**{fig:census_space}.** The enumerated search space is drawn by signature
+with its overlaps. (**a**) The union is 15,421 proteins across 1,488 taxa and
+the intersection of all three seeds is 10,256. (**b**) Each region's records
+are broken down by what the architecture rule calls them. The difference between those two
 numbers quantifies what a conventional search would have missed: a census
 built on the signature that names the family, which is what a reader looking
 for IP₃ receptors would query, would have missed 2,914 proteins including
@@ -165,13 +175,21 @@ exclude ryanodine receptors, so letting it decide would beg the question the
 call exists to answer.
 
 The result is 6,433 IP₃ receptors, 6,807 ryanodine receptors and 2,181 records
-that satisfy neither positive test.
+that satisfy neither positive test. {fig:census_lineage} breaks those three
+totals down by lineage, and the thing to take from it is the shape of the
+denominator: the vertebrate bar is by far the tallest because that is where
+genome sequencing has concentrated, which is a statement about effort and
+not about range. {fig:census_lengths} then puts the two called families side
+by side by length in panel **a** and the uncalled remainder in panel **b**.
+The clean separation in panel **a** is the filter this chapter refuses to use
+as evidence, and panel **b** is the reason: the records that need a call are
+the short ones, where length says nothing.
 
 ![](figures/census_lineage.png)
 
-**{fig:census_lineage}.** The census by lineage with both family calls, and
-with the sister family drawn beside the family everywhere. The figure is a
-warning about denominators. The vertebrate bar carries 10,936 of the 15,421
+**{fig:census_lineage}.** The census is broken down by lineage with both
+family calls, and the sister family is drawn beside the family everywhere.
+The figure is a warning about denominators. The vertebrate bar carries 10,936 of the 15,421
 records, which is a fact about where sequencing effort has gone rather than
 about where the family lives, so any range claim read off record counts
 would report the history of genome sequencing. That is why Chapter 5 counts
@@ -179,9 +197,11 @@ proteomes and taxa instead.
 
 ![](figures/census_lengths.png)
 
-**{fig:census_lengths}.** Length distributions of the two families as
-called. The medians are 2,671 and 4,856 residues and the distributions
-barely touch. The figure shows why a filter that works is still not
+**{fig:census_lengths}.** The two families separate cleanly by length as
+called. (**a**) The medians are 2,671 and 4,856 residues and the
+distributions barely touch. (**b**) The records neither test could call sit
+far below both families in length, which is what a pile of fragments looks
+like. The figure shows why a filter that works is still not
 evidence: length separates the two families almost perfectly here, and it
 does so on a population whose annotations are already good, which is
 precisely where no separation is needed. In the fragmentary and unannotated
@@ -206,7 +226,8 @@ exactly that conditional claim on 2,335 records, where it holds. It is stated
 here as the row of the audit table a reader should check first, because it is
 the one that is a claim about this search space rather than about a domain.
 
-**A note on the 1,220 calls that rest on a gene symbol.** Some records have an
+**A further 1,220 calls rest on a gene symbol, and they are made at low
+confidence.** Some records have an
 architecture too partial to decide and a name that is not. Those are called
 from the name at explicitly low confidence, with the reason written into every
 affected row and the pure architecture call kept in its own column, so the
@@ -263,13 +284,19 @@ records, every one of them called by a rule that read annotation rather than
 residues, and the two instruments were scored against each other. With the
 seed sequences removed, because they are in that set by construction, the
 profile assignment agrees with the architecture call on 11,875 records and
-disagrees on 1.
+disagrees on 1. {fig:profile_separation_vert} shows the two scores for every
+record in panel **a** and the margin between them in panel **b**, and the
+reader should look at the band: the records inside it are the ones this
+instrument refuses, and they are few beside the two clouds on either side.
 
 ![](figures/profile_separation_vert.png)
 
-**{fig:profile_separation_vert}.** The two profiles' scores against each
-other, with the band inside which no call is made drawn rather than
-described. A call requires the winning profile to clear 30 bits, to span at
+**{fig:profile_separation_vert}.** Every record's two profile scores are
+plotted against each other, and the band inside which no call is made is
+drawn rather than described. (**a**) Each record is scored by both profiles,
+and the diagonal band is where neither wins by enough. (**b**) The relative
+margin between the two scores is drawn as a distribution with the same band
+marked. A call requires the winning profile to clear 30 bits, to span at
 least 200 match states, and to beat the loser by more than 10 % of its own
 score. That margin is relative rather than absolute because bit scores scale
 with alignable length, so a fixed gap would confidently call every
@@ -290,12 +317,17 @@ the profiles**, because a partial architecture defeats a rule that reads
 absence as evidence and does not defeat a sequence profile. Of the 1,220 calls
 that had rested on a gene symbol, the profiles scored 1,219 and overturned
 exactly one. The symbol fallback was sound, and it is now checked rather than
-assumed.
+assumed. {fig:instrument_agreement} shows the division of labour: panel
+**a** counts the records each instrument speaks for, and panel **b** shows
+what the profiles changed, which is almost entirely records the architecture
+rule could not decide rather than records it decided differently.
 
 ![](figures/instrument_agreement.png)
 
-**{fig:instrument_agreement}.** Which instrument calls each record. The
-census keeps the two verdicts side by side and merges them by a stated rule:
+**{fig:instrument_agreement}.** Each record is called by one instrument, by
+both, or by neither. (**a**) The census is split by which instrument speaks
+for each record. (**b**) The second instrument's contribution is drawn as
+what it moved. The census keeps the two verdicts side by side and merges them by a stated rule:
 both agreeing gives a high-confidence call, one speaking gives that one's, a
 disagreement is kept and reported as a conflict rather than resolved by
 preference, and neither speaking leaves the record unassigned. Two
@@ -359,11 +391,18 @@ two families are genuine homologues sharing the entire pore, and a search
 sensitive enough to reach *Acanthamoeba* is necessarily sensitive enough to
 reach RYR1. The level is a fact about shared ancestry, and only the change in
 it can be attributed to iterating the model. The rule measures the rise.
+{fig:jackhmmer_convergence} draws the three runs: panel **a** is the count of
+new targets each round, and panel **b** is the sister-family share of each
+round's model, which is the quantity the kill rule watches and the reason a
+flat 5 % ceiling fired before any iteration had happened.
 
 ![](figures/jackhmmer_convergence.png)
 
-**{fig:jackhmmer_convergence}.** Convergence for each seed, with the
-sister-family trace beside it. Two runs never converge and are excluded from
+**{fig:jackhmmer_convergence}.** Each seed's convergence curve is drawn with
+the sister-family trace beside it. (**a**) The number of new targets per
+round falls towards an asymptote for all three seeds. (**b**) The
+sister-family share of each round's included set is what the kill rule
+reads. Two runs never converge and are excluded from
 any completeness claim, and the third does. The curves decay to an asymptote
 of a few new targets a round rather than to zero, and the tail is proteins
 sharing one small domain rather than family members. That is why convergence
@@ -417,12 +456,17 @@ sensitivity failures over 763 vertebrate reference proteomes number zero.
 Fifteen of those 763 proteomes carry no IP₃ receptor record. That is a list of
 leads for the genome sweep rather than a list of losses, because a reference
 proteome is an annotation, and Chapter 4 tests all fifteen against the genomes
-themselves.
+themselves. {fig:proteome_copy_number} shows the confound behind that list:
+panel **a** gives the number of receptor calls in each proteome, and panel
+**b** plots it against the size of the proteome's gene set, where the
+proteomes with no receptor at all sit among the smallest gene sets.
 
 ![](figures/proteome_copy_number.png)
 
-**{fig:proteome_copy_number}.** Copy number per proteome against annotation
-depth. This relationship is the single strongest argument in the thesis for
+**{fig:proteome_copy_number}.** Copy number per proteome rises with
+annotation depth. (**a**) Calls per proteome are counted across the
+vertebrate taxa swept, with the fifteen that carry none marked. (**b**) Copy
+number is plotted against the size of each gene set. This relationship is the single strongest argument in the thesis for
 searching genomes rather than gene sets: a census built on reference
 proteomes measures how thoroughly each organism has been annotated at least
 as much as it measures how many receptors that organism has, and the

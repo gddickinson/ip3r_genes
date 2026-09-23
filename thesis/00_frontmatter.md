@@ -7,7 +7,7 @@ and 7,691 reference proteomes.*
 
 **Correspondence:** george.dickinson@gmail.com
 
-The analyses this document reports were carried out over 35 working sessions
+The analyses this document reports were carried out over 36 working sessions
 in the repository it is built from, and the document was written from their
 committed outputs. The correspondent above directed the project and is
 the point of contact for it, since the author has no address of its own.

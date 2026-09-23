@@ -240,8 +240,11 @@ def panel(ax, letter: str, title: str = "", pad: float = 4.0) -> None:
     """Bold panel letter at the top-left, description in roman beside it."""
     ax.set_title("  " + title if title else "", loc="left", pad=pad,
                  fontsize=FS_TITLE, color=INK)
+    # A title of n lines grows upward from its baseline, so the letter is
+    # raised by n - 1 line heights to sit beside the first line (S28).
+    extra = title.count("\n") * FS_TITLE * 1.2 if title else 0.0
     ax.annotate(letter, xy=(0.0, 1.0), xycoords="axes fraction",
-                xytext=(-1.0, pad + 1.0), textcoords="offset points",
+                xytext=(-1.0, pad + 1.0 + extra), textcoords="offset points",
                 fontsize=FS_LETTER, fontweight="bold", color=INK,
                 ha="right", va="baseline", annotation_clip=False)
 
@@ -290,6 +293,18 @@ def save(fig, stem, formats=("png", "pdf"), dpi: int = 400) -> list[Path]:
         raise
     except Exception:                              # noqa: BLE001 - best effort
         pass
+    # S28: no label may overlap another or be clipped, and no title or
+    # annotation may be a bare noun phrase. Both are checked on the drawn
+    # figure, and a figure that fails is not written at all.
+    import figcheck
+    problems = [] if figcheck.disabled() else figcheck.audit(fig, stem)
+    if problems:
+        msg = f"{stem.name}: {len(problems)} figure-text problem(s)\n  " + \
+            "\n  ".join(problems)
+        if figcheck.lenient():
+            print(f"  [figcheck] {msg}")
+        else:
+            raise RuntimeError(msg)
     out = []
     for ext in formats:
         path = stem.with_suffix(f".{ext}")

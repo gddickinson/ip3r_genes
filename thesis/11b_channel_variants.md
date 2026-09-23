@@ -7,18 +7,21 @@ against its whole-protein mean, which would contain the element being tested.
 protein, on both metrics and in all three paralogues.** The RIH-associated
 domain is the most constrained domain. Every named element except one sits
 above its own protein's linker mean.
+{fig:s17_elements} shows the ranking twice, once per metric, and the reader
+should check that the gate and the filter stay at the top and the luminal loop
+at the bottom when the metric changes between panel a and panel b.
 
 ![](figures/s17_elements.png)
 
-**{fig:s17_elements}.** Constraint by element, with the composition-free
-metric drawn beside the divergence metric rather than instead of it. The
-headline result and its most obvious artefact are therefore on the same
-axis: the gate and the filter come top on both metrics, so the ranking is
-not a property of one scoring choice, and a reader can check that agreement
-rather than take it on assurance. The second metric is there because a
-divergence from a background frequency table [R178] scores a transmembrane
-element lower at equal conservation, which would have manufactured the very
-result the chapter reports.
+**{fig:s17_elements}.** Constraint is ranked by element on the divergence
+metric in panel a and on the composition-free metric in panel b, beside it
+rather than instead of it. The headline result and its most obvious artefact
+are therefore on the same axis: the gate and the filter come top on both
+metrics, so the ranking is not a property of one scoring choice, and a reader
+can check that agreement rather than take it on assurance. The second metric
+is there because a divergence from a background frequency table [R178] scores
+a transmembrane element lower at equal conservation, which would have
+manufactured the very result the chapter reports.
 
 ## 11.11 One element inside the channel is the exception, and finding it changed the result
 
@@ -56,16 +59,21 @@ This is what the geometric definition was for. Had the loop boundary been
 drawn on the conservation profile, this section would be circular. Drawn on
 the membrane's own axial span in the structure, it is an independent
 prediction that landed on the dip.
+{fig:s17_channel_profile} draws that profile for the three paralogues as three
+stacked rows, and the reader should follow each row from the channel through
+the filter and the gate into the luminal loop, where the curve collapses below
+the dashed linker mean and then recovers.
 
 ![](figures/s17_channel_profile.png)
 
-**{fig:s17_channel_profile}.** Constraint along the channel, binned, with
-the bins never crossing an element boundary. This is where the chapter's
-structural claim becomes visible as a shape rather than a table: constraint
-is not uniform along the channel but peaks on the residues the structure
-says do the work and collapses in the luminal loop between them. The binning
-rule matters because a sliding window across that edge would smear the
-collapse into the gate and erase the contrast the panel exists to show.
+**{fig:s17_channel_profile}.** Constraint is drawn along the pore-forming half
+of each paralogue in ten-residue bins, with the bins never crossing an element
+boundary. This is where the chapter's structural claim becomes visible as a
+shape rather than a table: constraint is not uniform along the channel but
+peaks on the residues the structure says do the work and collapses in the
+luminal loop between them. The binning rule matters because a sliding window
+across that edge would smear the collapse into the gate and erase the contrast
+the panel exists to show.
 
 ## 11.12 The ligand contacts and the gate are the two extremes of paralogue divergence
 
@@ -79,17 +87,22 @@ that carry them, in all three paralogues.** That is a statement about ten
 residues and is reported as such. The filter and gate sets are two residues
 each, and their means are given because the element-level test is where those
 elements are actually powered, so a p-value on two residues is not offered.
+{fig:s17_functional_sites}a puts the contacts, the filter and the gate against
+both controls, and the reader should compare the two bars for each site class:
+the first is nearly guaranteed to clear and the second is the one that carries
+the claim.
 
 ![](figures/s17_functional_sites.png)
 
-**{fig:s17_functional_sites}.** The measured functional residues scored
-twice, against the whole protein and against the rest of the element each
-sits in. The second comparison is the harder one and the one worth reading.
-Most of a 2,700-residue receptor is linker, so clearing the first bar is
-close to guaranteed, whereas clearing the second shows that the structure's
-annotation picks out something its surrounding domain does not already have.
-That is the test which makes a constraint map useful for interpreting a new
-position.
+**{fig:s17_functional_sites}.** The measured functional residues are scored
+twice in panel a, against the whole protein and against the rest of the
+element each sits in, and panel b gives the identity between each pair of
+paralogues for every element. The second comparison is the harder one and the
+one worth reading. Most of a 2,700-residue receptor is linker, so clearing the
+first bar is close to guaranteed, whereas clearing the second shows that the
+structure's annotation picks out something its surrounding domain does not
+already have. That is the test which makes a constraint map useful for
+interpreting a new position.
 
 A second and completely independent instrument on the same question is
 identity between the paralogues, which needs no alignment depth and no
@@ -97,6 +110,9 @@ conservation metric at all.
 
 **The gate is identical in all three pairs.** The luminal loop retains 13 to
 31 %. The whole protein sits at 0.64 to 0.70.
+{fig:s17_functional_sites}b shows those pairwise identities element by
+element, and the gate's three points stand at full identity while the luminal
+loop's sit lowest in the panel.
 
 So the two extremes of paralogue divergence in this receptor are **five
 residues that have not changed since the duplications** and **fifty that
@@ -150,14 +166,18 @@ gappy columns the deep alignment fills and the reverse, so ranking four scores
 measured on four slightly different variant sets would compare the sets as
 much as the layers. The comparison is restricted to the 44 pathogenic and 34
 benign positions where every layer has a reliable score.
+{fig:s17_variant_classifier}a draws the four curves on that fixed set, and the
+reader should look at where they cross rather than at any single summary
+number; panel b then places the uncertain variants on the same axis.
 
 ![](figures/s17_variant_classifier.png)
 
-**{fig:s17_variant_classifier}.** Four conservation layers as classifiers,
-drawn as full curves rather than as a bar of summary scores, because the
-layers cross. This figure carries a result that runs against the chapter's
-own design, which is why it is drawn as full curves. The family-wide layer
-outperforms the deep within-paralogue layer this chapter was built to
+**{fig:s17_variant_classifier}.** Four conservation layers are scored as
+classifiers of pathogenic against benign positions in panel a, drawn as full
+curves rather than as a bar of summary scores because the layers cross, and
+panel b shows where the uncertain variants sit on the same axis. This figure
+carries a result that runs against the chapter's own design. The family-wide
+layer outperforms the deep within-paralogue layer this chapter was built to
 produce, and the shallow control is worst, so depth was worth building but
 breadth was worth more. Summary scores would have hidden the crossings that
 make the ranking readable, and a resource for this family should quote the
@@ -195,19 +215,26 @@ distributions' own medians, so no cut was chosen to make a count.
 on an axis the labelled variants separate on, which is a different claim from
 pathogenicity, and the per-gene numbers inherit the problem above, in that one
 paralogue's pathogenic median is a single position's score.
+{fig:supp_variants_on_structure} puts the labelled variants themselves on the
+structures that can carry them in panels a and b, and panel d tests their
+distribution by element, so the reader can see the pathogenic positions
+crowding into the gating and selecting elements before any uncertain variant
+is stratified against them.
 
 ![](figures/supp_variants_on_structure.png)
 
-**{fig:supp_variants_on_structure}.** Every labelled variant with the
-per-element enrichment test beside it. An infinite odds ratio is drawn at
-the ceiling with a marker rather than allowed off the axes, where a
-significant result would simply vanish. The importance of this figure is
-that it puts the clinical record on the same coordinates as the constraint
-map, which is what a variant resource has to do to be usable. Pathogenic
-positions concentrating in the elements the structure says gate and select
-is the observation that licenses stratifying the 1,546 uncertain variants at
-all. Drawing an infinite odds ratio at the ceiling keeps the strongest
-enrichments on the figure, where otherwise they would silently leave it.
+**{fig:supp_variants_on_structure}.** Every labelled variant is placed on a
+structure in panels a and b, panel c records which structures may carry a
+human position at all, and panel d gives the per-element enrichment test. An
+infinite odds ratio is drawn at the ceiling with a marker rather than allowed
+off the axes, where a significant result would simply vanish. The importance
+of this figure is that it puts the clinical record on the same coordinates as
+the constraint map, which is what a variant resource has to do to be usable.
+Pathogenic positions concentrating in the elements the structure says gate and
+select is the observation that licenses stratifying the 1,546 uncertain
+variants at all. Drawing an infinite odds ratio at the ceiling keeps the
+strongest enrichments on the figure, where otherwise they would silently leave
+it.
 
 The deliverable is one table per human paralogue, giving every residue in its
 own numbering, four conservation layers, the occupancy each is conditional on,
@@ -247,18 +274,23 @@ conserved element in the receptor and the one the maps resolve worst, and on a
 coloured structure those two must not look the same. A chain that maps less
 than half of itself to its paralogue is refused rather than painted with
 somebody else's profile.
+{fig:supp_constraint_on_channel} shows the result on three experimental
+structures, one per paralogue, with the selection layer on ITPR3 in the fourth
+panel, and the grey run of unscored residues in the luminal loop is the case
+the −1 convention exists for.
 
 ![](figures/supp_constraint_on_channel.png)
 
-**{fig:supp_constraint_on_channel}.** The constraint map painted onto the
-channel, drawn from the file the painting step wrote and coloured from its
-own B-factor column, so a disagreement with the per-residue tables would be
-a bug in the painting step. Writing the layer into a structure's own
-coordinate column is what makes the chapter's numerical claims checkable by
-a third party in any viewer. Unscored residues are grey rather than at the
-low end of the scale, which keeps missing data from reading as an absence of
-constraint, and that matters most in the luminal loop, where the two
-coincide.
+**{fig:supp_constraint_on_channel}.** The constraint map is painted onto one
+experimental structure of each paralogue in panels a to c, and panel d paints
+the selection layer onto ITPR3 beside it; every trace is drawn from the file
+the painting step wrote and coloured from its own B-factor column, so a
+disagreement with the per-residue tables would be a bug in the painting step.
+Writing the layer into a structure's own coordinate column is what makes the
+chapter's numerical claims checkable by a third party in any viewer. Unscored
+residues are grey rather than at the low end of the scale, which keeps missing
+data from reading as an absence of constraint, and that matters most in the
+luminal loop, where the two coincide.
 
 **The panel is carried by experimental structures rather than predicted ones.**
 The human ITPR2 prediction is the 181-residue isoform of §11.2 and has no file
@@ -272,6 +304,8 @@ with the human table carries the same amino acid, and two of four candidates
 fail, comprising a rat reference and an isoform model. One paralogue's 55
 pathogenic positions are therefore not placed on a structure at all, which is
 a limit stated rather than worked around.
+Panel c of {fig:supp_variants_on_structure} records that check, structure by
+structure.
 
 ## 11.17 What this chapter settles about the channel
 

@@ -97,8 +97,8 @@ def fig_elements(out: Path) -> None:
     axes[0].set_yticks(y)
     axes[0].set_yticklabels([ELEMENT_LABEL.get(e, e) for e in order])
     axes[0].legend(frameon=False, fontsize=6, loc="center left")
-    F.panel(axes[0], "a", "constraint by element")
-    F.panel(axes[1], "b", "the same, on a metric with no background model")
+    F.panel(axes[0], "a", "constraint differs by element")
+    F.panel(axes[1], "b", "the ranking holds on a metric with no background model")
     fig.tight_layout()
     F.save(fig, out / "s17_elements")
     plt.close(fig)
@@ -171,15 +171,15 @@ def fig_channel(out: Path) -> None:
                                Patch(color=accent["selectivity_filter"],
                                      label="selectivity filter"),
                                Patch(color=accent["gate"], label="gate")],
-                      frameon=False, fontsize=6, ncol=3, loc="lower center",
-                      bbox_to_anchor=(0.5, -0.02))
+                      frameon=False, fontsize=6, ncol=3, loc="upper center",
+                      bbox_to_anchor=(0.5, -0.30))
     axes[-1].set_xlabel("residue (each paralog's own UniProt numbering); "
                         f"{BIN}-residue bins, never crossing an element boundary")
     # No panel letter: the figure is one panel drawn as three stacked rows,
     # and a lone bold "a" with no "b" anywhere reads as a missing panel
     # (found by the S24 figure audit).
-    axes[0].set_title("  modal-residue fraction across the pore-forming half; "
-                      "dashed line is that protein's own linker mean",
+    axes[0].set_title("  the modal-residue fraction runs across the pore-forming "
+                      "half; the dashed line is that protein's own linker mean",
                       loc="left", pad=4.0, fontsize=F.FS_TITLE, color=F.INK)
     fig.tight_layout()
     F.save(fig, out / "s17_channel_profile")
@@ -259,7 +259,7 @@ def fig_classifier(out: Path) -> None:
     ax.set_ylim(0, 1)
     ax.legend(frameon=False, fontsize=6, loc="lower right")
     F.despine(ax)
-    F.panel(ax, "a", "pathogenic vs benign, pooled; one fixed set of positions")
+    F.panel(ax, "a", "every layer is scored on one fixed set of positions")
 
     ax2 = axes[1]
     strat = _rows("vus_stratification.tsv")
@@ -285,7 +285,7 @@ def fig_classifier(out: Path) -> None:
     ax2.legend(frameon=False, fontsize=6)
     F.despine(ax2)
     F.hgrid(ax2)
-    F.panel(ax2, "b", "where the uncertain variants sit")
+    F.panel(ax2, "b", "the uncertain variants spread along the constraint axis")
     fig.tight_layout()
     F.save(fig, out / "s17_variant_classifier")
     plt.close(fig)
@@ -329,7 +329,7 @@ def fig_sites(out: Path) -> None:
     ax.legend(frameon=False, fontsize=6, loc="upper left")
     F.despine(ax)
     F.hgrid(ax)
-    F.panel(ax, "a", "the measured residues against two controls")
+    F.panel(ax, "a", "the measured residues are scored against two controls")
 
     ax2 = axes[1]
     ident = _rows("paralog_identity_by_element.tsv")
@@ -358,7 +358,7 @@ def fig_sites(out: Path) -> None:
     ax2.legend(frameon=False, fontsize=6, loc="center left")
     F.despine(ax2)
     F.hgrid(ax2, "x")
-    F.panel(ax2, "b", "what the three copies have kept alike")
+    F.panel(ax2, "b", "the three copies have kept these elements alike to different degrees")
     fig.tight_layout()
     F.save(fig, out / "s17_functional_sites")
     plt.close(fig)

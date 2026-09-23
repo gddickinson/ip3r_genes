@@ -119,16 +119,25 @@ sweep declined to span.
 The sweep covered 309 genomes of the declared 309, recorded 2,144 loci, and
 carried a ryanodine receptor bait with every one of them.
 
-**The control fired in 309 of 309 genomes.** Ryanodine receptors are present
+**The control fires in 309 of 309 genomes.** Ryanodine receptors are present
 in three copies in every vertebrate, so a genome where the control finds
 nothing has an assembly or a pipeline problem rather than a biological result,
 and until it fires that genome's IP₃ receptor cells say nothing. None failed,
 so no result below is excluded on control grounds.
 
+Read per paralogue, the evidence stacks as {fig:ledger_status} shows: nearly
+every cell is a found locus, a thin band of fragments and traces sits beneath
+it, and only four cells reach the absent state. Read per vertebrate class in
+{fig:ledger_by_class}, one panel per paralogue, the same evidence fills almost
+every row with a found gene, and the red that remains sits in a handful of
+classes, which §4.7 traces to assembly contiguity rather than to biology.
+
 ![](figures/ledger_by_class.png)
 
 **{fig:ledger_by_class}.** The three-paralogue ledger across 309 vertebrate
-genomes, by class. This is the raw ledger before any of Chapter 9's
+genomes is drawn one panel per paralogue, with each vertebrate class a row and
+the evidence for the gene stacked as a fraction of that class's genomes. This
+is the raw ledger before any of Chapter 9's
 restatement, so it shows the problem that chapter had to solve. The family
 is found nearly everywhere it is looked for, and what red there is falls in
 particular vertebrate classes rather than scattered across them. Those
@@ -138,14 +147,15 @@ gene loss is the mistake the rest of the thesis is built to avoid.
 
 ![](figures/ledger_status.png)
 
-**{fig:ledger_status}.** Cell status across the sweep, by paralogue. Four
-cells of 927 are called absent, meaning no spliced-alignment locus and no
-remnant from the rescue search. Those four are the strongest negative the
-search itself can produce, and they are still not a loss claim: Chapter 9
-shows that every one sits in an assembly that could not hold the gene or in
-a genome whose paralogue labels the bait panel cannot resolve. The distance
-between this figure and that conclusion is the distance between a search
-result and a biological result.
+**{fig:ledger_status}.** Each of the 927 genome-by-paralogue cells carries one
+evidence status, and the figure stacks them per paralogue from the best
+evidence to the worst. Four cells of 927 are called absent, meaning no
+spliced-alignment locus and no remnant from the rescue search. Those four are
+the strongest negative the search itself can produce, and they are still not a
+loss claim: Chapter 9 shows that every one sits in an assembly that could not
+hold the gene or in a genome whose paralogue labels the bait panel cannot
+resolve. The distance between this figure and that conclusion is the distance
+between a search result and a biological result.
 
 **The two families never contested a locus.** At all 2,144 loci, only one
 family's baits aligned at all. That is a far sharper separation than the
@@ -209,17 +219,19 @@ clade and by sequencing era, which is the problem the reference genome
 consortia were set up to address [R195], and this family's genes are long
 enough to feel it. Two thirds of birds fail it against 11 % of
 ray-finned fish, and 68 % of margin species against 12 % of order
-representatives.
+representatives. {fig:contiguity_confound}a plots the fraction of cells found
+in each bin of contig N50, and {fig:contiguity_confound}b collapses that curve
+to the two sides of the bar, 189 genomes above it and 120 below.
 
 ![](figures/contiguity_confound.png)
 
-**{fig:contiguity_confound}.** Recovery against assembly contiguity, binned
-on the bar rather than across it. A sliding window straddling the threshold
-would report a recovery rate that no genome in the window has, smoothing
-away the very discontinuity the panel exists to show. The relationship drawn
-here is the confounder every absence claim in this thesis has to survive,
-and it is why the contiguity floor is applied before any cell is read as
-evidence about biology.
+**{fig:contiguity_confound}.** Recovery rises with assembly contiguity, and
+the bins are placed on the bar rather than across it. A sliding window
+straddling the threshold would report a recovery rate that no genome in the
+window has, smoothing away the very discontinuity the panel exists to show.
+The relationship drawn here is the confounder every absence claim in this
+thesis has to survive, and it is why the contiguity floor is applied before
+any cell is read as evidence about biology.
 
 The pilot had predicted, from six genomes, that a fragmented assembly loses
 the long paralogues first, because a 231 kb ITPR2 needs a contig that an 82 kb
@@ -232,14 +244,19 @@ as the loss signal the margin species were selected for. A per-paralogue
 absence in a fragmented assembly cannot be read as a loss, and the confound is
 structural rather than incidental.
 
+Counting loci per genome rather than per cell gives {fig:ledger_copy_number},
+in which the ray-finned fish stand apart with more than three copies while
+almost every other genome carries three, the observation Chapter 7 tests as a
+whole-genome duplication.
+
 ![](figures/ledger_copy_number.png)
 
-**{fig:ledger_copy_number}.** Copy number per genome across the sweep. The
-excess above three copies is not spread across the vertebrates but sits
-almost entirely in the ray-finned fish, which is what a whole-genome
-duplication confined to one lineage looks like from a copy count. Chapter 7
-turns that observation into a tested claim about which paralogue was doubled
-and retained.
+**{fig:ledger_copy_number}.** The figure counts the family's loci per genome
+across the sweep. The excess above three copies is not spread across the
+vertebrates but sits almost entirely in the ray-finned fish, which is what a
+whole-genome duplication confined to one lineage looks like from a copy count.
+Chapter 7 turns that observation into a tested claim about which paralogue was
+doubled and retained.
 
 ## 4.8 The three paralogues are not annotated equally well
 

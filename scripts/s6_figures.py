@@ -86,8 +86,8 @@ def fig_identity_heatmap() -> Path:
     im = ax.imshow(m, cmap="viridis", vmin=0, vmax=1, aspect="auto")
     ax.set_xticks([])
     ax.set_yticks([])
-    ax.set_title("Pairwise identity over mutually covered columns, "
-                 f"{len(labels)} representatives", pad=6)
+    ax.set_title(f"The {len(labels)} representatives are most identical "
+                 "within a paralog, over mutually covered columns", pad=6)
     for i, l in enumerate(labels):
         strip.barh(i, 1, height=1.0,
                    color=fs.GROUP.get(meta.get(l, {}).get("group", ""),
@@ -182,7 +182,7 @@ def fig_conservation() -> Path:
     ax.set_xlim(1, len(cons))
     fs.despine(ax)
     fs.hgrid(ax)
-    ax.set_title("Per-column conservation of the trimmed alignment, with "
+    ax.set_title("Conservation varies along the trimmed alignment, with "
                  "human ITPR1's domains mapped through it", pad=5)
     palette = {"shared": "#4a3aa7", "generic": "#a9a79e", "ryr_only": "#eb6834"}
     seen = []
@@ -247,8 +247,8 @@ def fig_coverage() -> Path:
                        fontsize=6)
     ax.set_ylabel("coverage of trimmed MSA")
     ax.set_ylim(0, 1.02)
-    ax.set_title("Per-sequence coverage of the trimmed alignment "
-                 "(bar = group median)", pad=5)
+    ax.set_title("Per-sequence coverage of the trimmed alignment varies "
+                 "by group (bar = group median)", pad=5)
     fs.despine(ax)
     fs.hgrid(ax)
     return fs.save(fig, FIGS / "msa_coverage")[0]
@@ -314,7 +314,8 @@ def fig_group_identity() -> Path:
              for g in order]
     ax2.set_xticklabels(ticks, rotation=45, ha="right", fontsize=6)
     ax2.set_yticklabels(ticks, fontsize=6)
-    ax2.set_title("Mean identity between groups", pad=5)
+    ax2.set_title("Mean identity between groups falls away from the "
+                  "vertebrates", pad=5)
     for i in range(len(order)):
         for j in range(len(order)):
             v = m[i][j]

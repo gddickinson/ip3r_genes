@@ -69,16 +69,16 @@ def run(verbose: bool = False) -> list[dict]:
     out.append(_t("T1 a single loss is found", "the count must be reachable",
                   r["n_max"] == 1 and r["n_min"] == 1 and
                   r["losses"][0]["node"] == "a",
-                  f"n_max={r['n_max']} node={r['losses'][0]['node']
-                                             if r['losses'] else None}"))
+                  f"n_max={r['n_max']} "
+                  f"node={r['losses'][0]['node'] if r['losses'] else None}"))
 
     ch = _char(tips, present=set(tips) - {"a", "b"}, absent={"a", "b"})
     r = dollo.dollo(root, ch)
     out.append(_t("T2 sister losses merge into their parent edge",
                   "a clade that lost the gene is one event, not two",
                   r["n_max"] == 1 and r["losses"][0]["node"] == "AB",
-                  f"n_max={r['n_max']} node={r['losses'][0]['node']
-                                             if r['losses'] else None}"))
+                  f"n_max={r['n_max']} "
+                  f"node={r['losses'][0]['node'] if r['losses'] else None}"))
 
     ch = _char(tips, present={"a", "b", "c", "d"},
                absent={"e", "f", "g", "h"})

@@ -355,8 +355,9 @@ def main() -> int:
 
     ax.set_ylim(n + 3.0, -1.4)
     ax.axis("off")
-    ax.set_title(f"Maximum-likelihood phylogeny of the ITPR family "
-                 f"({n} proteins, rooted on the ryanodine receptors)",
+    ax.set_title(f"The maximum-likelihood tree of {n} family proteins "
+                 f"recovers ITPR1, ITPR2 and ITPR3 as clades, rooted on "
+                 f"the ryanodine receptors",
                  fontsize=fs.FS_SUPTITLE, fontweight="bold", color=fs.INK,
                  pad=6, loc="left")
 

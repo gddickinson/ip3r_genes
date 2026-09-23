@@ -19,31 +19,46 @@ and the spatial pattern of the calcium signal, is largely set by the channel
 itself. That is why the receptor has been studied for forty years as a
 signalling device rather than merely as a pore.
 
+{fig:receptor_overview} introduces the object at the three scales the rest
+of this document uses, and a reader should hold all three before any of it
+is argued. Panel **a** is that pathway as a schematic, with the one box a
+census can measure, the receptor's gene, marked in it; everything else in
+the diagram, from the agonist to the effectors, is context a gene count
+cannot speak to. Panel **b** is the channel itself at the dimensions the
+cryo-electron microscopy structure gives it: a cytosolic solenoid that is
+most of the protein, a membrane pore at its foot, the two ligand sites far
+up the four-fold axis from the gate, and beneath it the same subunit laid
+out as a linear domain architecture. Panel **c** prints the sequence at the
+two positions panel **b** marks, the first ligand-contact window and the
+selectivity filter, for the three human paralogues and the fly, and it makes
+the point that carries the whole thesis: a human and a fly agree residue for
+residue where the ligand binds, and the filter motif is the one that the
+structure recovers on its own in Chapter 2.
+
 ![](figures/receptor_overview.png)
 
-**{fig:receptor_overview}.** The object this thesis counts, at the three
-scales a reader needs before any of it is argued. (**a**) The pathway
-described above, drawn as a schematic so that the one box this thesis
-measures can be marked in it. Everything else in the diagram, from the
-agonist to the effectors calcium reaches, is context a census of one gene
-family cannot speak to. (**b**) The channel drawn at the dimensions measured
-on the structure this project uses throughout, PDB 6DQN [R24]. About nine
-tenths of each subunit is the cytosolic solenoid above the membrane, and the
-two IP₃ sites shown sit 103 Å above the gate along the four-fold axis and
-120 Å from it through space, which is the coupling problem the protein has
-to solve. The bar beneath is the same subunit as a linear architecture,
-carrying the five diagnostic signatures in six blocks, because the RIH
-domain occurs twice. (**c**) The sequence at the two positions panel **b**
-marks, in this family only: the first of the three IP₃-contact windows, and
-the selectivity filter. A cell is coloured where all four sequences carry
-the same residue and outlined in red where the structure measured a contact
-or a filter residue. Two things are visible here that the rest of the
-document depends on. The residues that grip the ligand are identical in a
-human and a fly, across the split between protostomes and deuterostomes
-[R189], and the filter carries the GGGVGD motif Chapter 2 recovers blind
-from the coordinates. Figure 1.2 gives the same structure as a measurement
-with its pore profile, Figure 1.5 sets the domain architecture against the
-sister family, and Chapter 2 puts these same windows beside the ryanodine
+**{fig:receptor_overview}.** The receptor is shown at the three scales this
+thesis works at: the pathway that makes its ligand, the channel, and the
+sequence. (**a**) A schematic of the pathway marks the one box this thesis
+measures, and leaves the agonist, the enzyme and the effectors as context a
+census of one gene family cannot speak to. (**b**) The channel is drawn at
+the dimensions measured on PDB 6DQN [R24]. About nine tenths of each subunit
+is the cytosolic solenoid above the membrane, the two IP₃ sites shown sit
+103 Å above the gate along the four-fold axis and 120 Å from it through
+space, which is the coupling problem the protein has to solve, and the bar
+beneath is the same subunit as a linear architecture, carrying the five
+diagnostic signatures in six blocks because the RIH domain occurs twice.
+(**c**) The sequence is printed at the two positions panel **b** marks, in
+this family only: the first of the three IP₃-contact windows, and the
+selectivity filter. A cell is coloured where all four sequences carry the
+same residue and outlined in red where the structure measured a contact or a
+filter residue. Two facts the rest of the document depends on are visible
+here. The residues that grip the ligand are identical in a human and a fly,
+across the split between protostomes and deuterostomes [R189], and the
+filter carries the GGGVGD motif Chapter 2 recovers blind from the
+coordinates. Figure 1.2 gives the same structure as a measurement with its
+pore profile, Figure 1.5 sets the domain architecture against the sister
+family, and Chapter 2 puts these same windows beside the ryanodine
 receptors, which is where the family-separation problem becomes visible.
 
 The receptor was identified in the decade after IP₃ was shown to release
@@ -54,20 +69,29 @@ cerebellar P400 protein, revealed a very large polypeptide of about 2,700
 residues [R02, R21]. The title of one of those first reports named the problem
 this thesis had to solve before it could measure anything: *Putative receptor
 for inositol 1,4,5-trisphosphate similar to ryanodine receptor* [R04].
+{fig:discovery_timeline} lays that history out in two panels. Panel **a**
+places twenty milestones, from the first demonstration that IP₃ releases
+calcium to the most recent disease genetics, at the year of the paper each
+rests on, and panel **b** counts the references behind this document by
+year. The reader should notice where the density lies: the physiology is
+old, and almost everything a residue-level or genome-scale claim needs is
+younger than the structures of the last decade.
 
 ![](figures/discovery_timeline.png)
 
-**{fig:discovery_timeline}.** Four decades of work on the receptor as the
-literature records it, with each milestone drawn at the year of its
-published source. The figure is generated from a curated table in which no
-year is typed: each is read from the reference row it cites, so a milestone
-cannot be dated differently from the paper it rests on. What the shape shows
-is how recently the evidence this thesis depends on became available. The
-biochemistry and physiology were settled over forty years, but the
-near-atomic structures that make a residue-level constraint map
-interpretable are less than a decade old, and the genome assemblies behind a
-503-genome census are more recent still, so the questions asked here could
-not have been asked before the right-hand end of this figure.
+**{fig:discovery_timeline}.** The timeline draws four decades of work on the
+receptor as the literature records it. (**a**) Each milestone sits at the
+year of its published source, from the first IP₃-evoked release to the
+present. (**b**) The histogram beneath counts the cited references by year.
+The figure is generated from a curated table in which no year is typed: each
+is read from the reference row it cites, so a milestone cannot be dated
+differently from the paper it rests on. What the shape shows is how recently
+the evidence this thesis depends on became available. The biochemistry and
+physiology were settled over forty years, but the near-atomic structures
+that make a residue-level constraint map interpretable are less than a
+decade old, and the genome assemblies behind a 503-genome census are more
+recent still, so the questions asked here could not have been asked before
+the right-hand end of this figure.
 
 ## 1.2 The receptor shares its entire domain architecture with a much larger sister family
 
@@ -77,16 +101,23 @@ subunit consists of a β-trefoil suppressor domain, then the IP₃-binding core
 (a β-trefoil with an armadillo fold), then a long central solenoid of armadillo
 repeats, and then, near the C-terminus, a six-transmembrane pore module of the
 voltage-gated-channel superfamily, followed by a tail that folds back into the
-cytosolic mass ({fig:channel_structure}). The ligand binds some 100 Å from the
-gate, and everything between the two is the machine that couples them.
+cytosolic mass. The ligand binds some 100 Å from the gate, and everything
+between the two is the machine that couples them. {fig:channel_structure}
+gives that anatomy as a measurement rather than a diagram: panel **a** is one
+subunit's trace set against the membrane with the ligand-to-gate distance
+marked, panel **b** is the tetramer seen down its own axis, and panel **c**
+is the radius of the pore along that axis, whose two narrowest points fall
+on the filter and on the gate without the geometry having been told where
+either was.
 
 ![](figures/channel_structure.png)
 
-**{fig:channel_structure}.** The channel measured rather than drawn. The
-figure shows one C4-symmetric subunit's Cα trace from PDB 6DQN, a human
-IP₃R3 in the IP₃-bound state at 3.33 Å [R24], together with the four-fold
-axis, the axial extent of the membrane, the pore radius profile and the two
-constrictions recovered from the coordinates. The narrowest luminal point
+**{fig:channel_structure}.** The channel is measured here rather than
+drawn. (**a**) One C4-symmetric subunit's Cα trace from PDB 6DQN, a human
+IP₃R3 in the IP₃-bound state at 3.33 Å [R24], is shown side-on with the
+four-fold axis and the axial extent of the membrane. (**b**) The same
+structure is viewed down the axis. (**c**) The pore radius profile carries
+the two constrictions recovered from the coordinates. The narrowest luminal point
 lands on the GGGVGD selectivity-filter motif and the cytosolic constriction
 on the gate residues, neither of which the geometry was told about. That
 blind agreement is what makes the same geometry usable as a coordinate
@@ -101,8 +132,12 @@ domains (PF02815) in the suppressor region, the IP₃-binding core Ins145_P3_rec
 (PF08709), the RyR–IP₃R homology domain RIH (PF01365), the RIH-associated
 domain (PF08454), and the generic Ion_trans pore (PF00520).
 
-Every one of the first four is also carried by every human ryanodine receptor
-({fig:domain_architecture}). This is not an artefact of database annotation.
+Every one of the first four is also carried by every human ryanodine receptor,
+as {fig:domain_architecture} shows: panel **a** draws the receptors of both
+families to one scale from InterPro coordinates, and panel **b** counts the
+copies of each signature per subunit, where the four shared signatures fill
+both columns and the four ryanodine-specific ones appear only in the larger
+protein. This is not an artefact of database annotation.
 The two families are one structural superfamily: their N-terminal regions are
 conserved to the point of direct comparison [R58], and the near-atomic
 structures published for both in 2015 [R22, R26, R27, R28] show the same
@@ -120,8 +155,8 @@ residues. This figure is the reason the project has the shape it does.
 Because the diagnostic signatures cannot separate the two families, every
 stage from the first enumeration to the last structural comparison had to
 carry a positive family test, and the sister family had to be searched
-alongside rather than filtered out. Roughly half the methodological rules in
-Chapter 14 exist because of what this figure shows.
+alongside rather than filtered out. Roughly half of the methodological rules
+in Chapter 14 exist because of what this figure shows.
 
 Three consequences of that shared architecture run through every chapter of
 this thesis.
@@ -159,37 +194,48 @@ than independent [R14], and the stoichiometry required to initiate release has
 been resolved, in that more than one subunit must be occupied [R15]. ATP
 modulates the channel at two sites [R16], protein kinase A phosphorylates it
 [R17], and it is a hub for protein interactions, including with Bcl-2 [R18]
-and IRBIT [R19].
+and IRBIT [R19]. {fig:gating_logic} reduces that regulation to its logic:
+panel **a** shows calcium acting as co-agonist at low concentration and as
+inhibitor at high, panel **b** the order in which the two ligands bind, and
+panel **c** the threshold of occupied subunits the channel needs before it
+opens. The reader should take from it that the receptor is a coincidence
+detector with a safety catch, not a valve.
 
 ![](figures/gating_logic.png)
 
-**{fig:gating_logic}.** What opens the channel and what closes it, drawn as
-the logic rather than as a mechanism. The row that matters for a census is
-the last one: the same channel produces puffs, waves and oscillations, and
-the properties that distinguish those outputs belong to the individual
-paralogue. If the three vertebrate paralogues were interchangeable, their
+**{fig:gating_logic}.** The figure draws what opens the channel and what
+closes it as logic rather than as mechanism. (**a**) Cytosolic calcium is
+both co-agonist and inhibitor, which is the bell-shaped dependence. (**b**)
+The two ligands bind in order, IP₃ first, so calcium cannot act on an
+unliganded receptor. (**c**) The requirement is a threshold rather than a
+single site. What matters for a census is what comes after this logic: the
+same channel produces puffs, waves and oscillations, and the properties that
+distinguish those outputs belong to the individual paralogue. If the three vertebrate paralogues were interchangeable, their
 copy number would be a matter of dosage and their individual retention would
 carry little information. Because they differ in affinity, in calcium
 sensitivity and in downstream output, the finding in Chapter 9 that all
 three are retained in every vertebrate genome is a statement about three
 distinct functions rather than about three copies of one.
 
-What the channel produces is not one signal but a graded family of them
-({fig:signal_hierarchy}), and this is the level at which a genome-scale
-census stops being able to speak. A census counts genes, so it can say
-whether the channel is present and how many copies a genome carries, and it
-cannot say what a cell does with the signal.
+What the channel produces is not one signal but a graded family of them,
+and {fig:signal_hierarchy} sets that family out: panel **a** draws a blip, a
+puff and a wave as traces, panel **b** places the three on axes of spatial
+extent and duration, and panel **c** shows that a stronger stimulus makes
+the events more frequent, not larger. This is the level at
+which a genome-scale census stops being able to speak. A census counts
+genes, so it can say whether the channel is present and how many copies a
+genome carries, and it cannot say what a cell does with the signal.
 
 ![](figures/signal_hierarchy.png)
 
-**{fig:signal_hierarchy}.** How the calcium signal is built, and what carries
-the dose. (**a**) The three event classes, drawn as illustrative traces
-rather than recordings: a blip is one channel opening, a puff is a cluster of
-them, and a wave is the cell. Each has its own amplitude band, because the
-blip is roughly ten times smaller than the wave and one shared axis would
-draw it as a flat line. (**b**) The same three events placed by how far they
-spread and how long they last, which is four orders of magnitude on each
-axis. (**c**) Raising the agonist raises the *frequency* of the events rather
+**{fig:signal_hierarchy}.** The calcium signal is built in tiers, and the
+dose is carried by their timing. (**a**) The three event classes are drawn
+as illustrative traces rather than recordings: a blip is one channel
+opening, a puff is a cluster of them, and a wave is the cell. Each has its
+own amplitude band, because the blip is roughly ten times smaller than the
+wave and one shared axis would draw it as a flat line. (**b**) The same
+three events are placed by how far they spread and how long they last, which
+spans four orders of magnitude on each axis. (**c**) Raising the agonist raises the *frequency* of the events rather
 than their size, so the dose is carried in the timing. The figure is here to
 mark the boundary of what follows: everything in this thesis is a statement
 about the gene and the protein, and nothing in it reaches panel **c**.
@@ -216,7 +262,7 @@ been tested at the level of an assembly rather than a gene set. An absence in
 a proteome is a statement about what a gene caller found. Whether it is also a
 statement about the genome is a different measurement, and nobody had made it.
 
-**Where the three vertebrate paralogues came from had no tested answer.**
+**The origin of the three vertebrate paralogues had no tested answer.**
 That vertebrates carry three is a database fact. That the three arose in the
 two rounds of whole-genome duplication at the base of the vertebrates [R179,
 R180] is a reasonable inference from their number and their age, and it had

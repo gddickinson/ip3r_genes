@@ -87,12 +87,16 @@ attributes to a paralogue whose gene the aligner already placed at a locus in
 the same genome. That paralogue is accounted for, so the fragment set cannot
 be that gene, and what it recovers is what cross-paralogue similarity delivers
 on its own, at a median of 0.030 against a candidate median of 0.795.
+{fig:reconstruction}a sets the candidates, the co-shattered paralogues and
+the decoys side by side against the bar, and {fig:reconstruction}b shows that
+a gene spread over two contigs and one spread over twelve both land above it.
 
 ![](figures/reconstruction.png)
 
-**{fig:reconstruction}.** The three populations the bar is read off, with
-the gap shaded and the operating point drawn, and every undecided cell
-against the number of contigs its gene is spread over. A calibration figure
+**{fig:reconstruction}.** The calibrated bar separates the candidate gene from
+the decoy, with the co-shattered paralogues between them, and every
+undecided cell clears it whatever the number of contigs its gene is spread
+over. The gap is shaded and the operating point drawn. A calibration figure
 that asked to be believed would not be one, so both edges of the gap are
 marks rather than a caption. The third population is the one worth looking
 at: it lies between the other two, it was not anticipated, and the paragraph
@@ -128,13 +132,16 @@ a median of 39.9 kb, shorter than a single IP₃ receptor gene.
 
 That is not a failure of the caller. Binned by the number of keys available,
 its accuracy on its own calibration set is 100 % at every key count at which
-it acts.
+it acts. {fig:synteny_reach}a shows where the 432 regions sit, most of them on
+a contig with no coding gene at all, and {fig:synteny_reach}b shows the caller
+correct every time it calls, so what failed was reach and not accuracy.
 
 ![](figures/synteny_reach.png)
 
-**{fig:synteny_reach}.** Why synteny could not answer, showing the joint
-distribution of what a trace region has to work with, with the caller's
-floor drawn, beside the caller's own accuracy on the same axis. The
+**{fig:synteny_reach}.** Synteny could not answer because a trace region has
+almost nothing to read. Panel a plots the joint distribution of coding genes
+and informative keys on each region's contig, with the caller's floor drawn,
+and panel b sets the caller's call rate and accuracy on the same key axis. The
 neighbourhood caller is right at every key count at which it acts, and it
 acts on 8 of 432 regions, because a fragment's contig carries no neighbours
 to read. Putting reach and accuracy on one axis is the only way to show that
@@ -152,13 +159,16 @@ Of the 927 cells, 783 are a single locus at full coverage, 90 a locus
 truncated by the assembly, 7 a partial locus with no assembly excuse, 43
 reassembled across contigs, and 4 family loci the panel cannot file. Zero fall
 in each of the three states that would license a loss claim or invalidate a
-genome.
+genome. {fig:character_matrix}a lays out all 927 cells in a single strip
+per paralogue, and {fig:character_matrix}b turns them into a per-genome count
+of gene-equivalents.
 
 ![](figures/character_matrix.png)
 
-**{fig:character_matrix}.** Every genome by paralogue cell, ordered by
-assembly contiguity with the bar drawn, and the gene-equivalents each
-assembly holds. The panel exists so a reader can see that the red the genome
+**{fig:character_matrix}.** Every genome by paralogue cell is drawn in the
+state its evidence supports, with the genomes ordered by assembly contiguity
+and the bar marked, and panel b counts the gene-equivalents each assembly
+holds. The panel exists so a reader can see that the red the genome
 ledger showed is gone, and see where it went. This figure is the whole of
 Chapter 9's argument in one panel. Ordering the genomes by contiguity and
 drawing the bar shows that the apparent absences in the raw ledger are
@@ -206,14 +216,16 @@ functional. 72 % of them carry no lesion at all.
 every scored locus, assembly contiguity barely moves the lesion count
 (ρ = −0.077) and the locus's identity to its bait moves it a great deal
 (ρ = −0.397). A lesion count is substantially a measure of how far the
-reference is from the gene, because a poorly matched bait buys alignment with
-frameshifts.
+reference is from the gene, because a poorly matched bait buys alignment with frameshifts.
+{fig:integrity}a and {fig:integrity}b set the two correlations side by side,
+and {fig:integrity}c shows the comparison inside one genome that follows from
+them.
 
 ![](figures/integrity.png)
 
-**{fig:integrity}.** Lesion density against the two confounders that could
-produce it without a gene being dead, and the paired within-genome test that
-removes both. The identity panel is drawn first because contiguity is the
+**{fig:integrity}.** Lesion density is plotted against the two confounders
+that could produce it without a gene being dead, and panel c runs the paired
+within-genome test that removes both. The identity panel is drawn first because contiguity is the
 confounder everyone expects and identity is the one that turned out to be
 real. Density is logarithmic with an explicit zero band, since 72 % of
 intact loci carry no lesion and a linear axis puts the whole calibration
@@ -300,9 +312,9 @@ asked is whether moving the bar across its own uncertainty changes anything.
 
 ![](figures/sensitivity_matrix.png)
 
-**{fig:sensitivity_matrix}.** The loss count in every cell of the grid, for
-the family-level coding and the paralogue-resolved one, with the operating
-point marked. This is what a zero looks like when it is defended properly.
+**{fig:sensitivity_matrix}.** Panel a gives the Dollo loss count in every cell
+of the grid for the family-level coding, and panel b gives it for the
+paralogue-resolved coding, with the operating point ringed in both. This is what a zero looks like when it is defended properly.
 Rather than assert robustness, the count is recomputed under every
 combination of four analytical axes, and the asymmetry that reveals is the
 result: a family-level absence is stable across 30 of 32 settings while a
@@ -311,8 +323,10 @@ explicit zero and never as an empty cell, because an empty cell reads as not
 measured and the zero is the result.
 
 **Moving the reconstruction bar across the whole gap the calibration measured
-manufactures no loss on either coding.** The bar's position inside its own
-uncertainty is not what any result here rests on.
+manufactures no loss on either coding.** The bar's position inside its own uncertainty is not what any result here
+rests on. {fig:reconstruction_bar}a shows how far above the gap almost every
+reassembled cell sits, and {fig:reconstruction_bar}b shows the absent count
+holding at zero with both rules on until the bar is pushed far beyond it.
 
 Read across the two codings, the result is an asymmetry rather than a number.
 The **family-level coding manufactures a loss in 2 of 32 settings**, and its
@@ -320,12 +334,16 @@ worst case is one genome in 309, reached only by refusing everything except a
 complete locus and ignoring the contiguity bar at the same time. The
 **paralogue-resolved coding manufactures one in 18 of 32**, up to 45 loss
 edges. A per-paralogue absence is fragile to every one of these knobs and a
-family-level absence is not.
+family-level absence is not. {fig:sensitivity_matrix}a is zero in all but its
+bottom-right corner, while {fig:sensitivity_matrix}b darkens as the protective rules
+are switched off and the evidence ladder is tightened.
 
 ![](figures/reconstruction_bar.png)
 
-**{fig:reconstruction_bar}.** The calibrated bar with the gap's two edges
-drawn. The within-row offset of each point is its rank in its own row, using
+**{fig:reconstruction_bar}.** Each of the 43 reassembled cells is placed
+against the calibrated bar and its measured gap, on the row of the rule that
+would catch it if the bar rose, and panel b counts the cells that read absent
+as the bar is raised under each combination of the two protective rules. The within-row offset of each point is its rank in its own row, using
 no hash and no random number generator, so the figure is reproducible.
 Drawing both edges is what makes the threshold's own uncertainty visible,
 and the answer to the first sensitivity question is that moving the bar
@@ -349,13 +367,14 @@ An invariant character contains no transition to estimate. Profiling each
 likelihood along a rate grid over eight orders of magnitude gives, at every one
 of the twelve model by branch-length by axis combinations, a monotone curve
 with its maximum on the grid's boundary. The loss axis falls to the floor and
-the all-rates-different model's gain axis rises to the ceiling, which is what
-unidentifiability looks like when it is drawn rather than argued.
+the all-rates-different model's gain axis rises to the ceiling, which is what unidentifiability looks like when it is drawn rather than
+argued. {fig:mk_profile}a draws all twelve of those curves.
 
 ![](figures/mk_profile.png)
 
-**{fig:mk_profile}.** The likelihood along a rate grid for every model, axis
-and branch-length scheme. The all-rates-different model is profiled on its
+**{fig:mk_profile}.** Panel a profiles the likelihood along a rate grid for
+every model, axis and branch-length scheme, and panel b plots every rate that
+can be fitted against the number of cells its setting made absent. The all-rates-different model is profiled on its
 gain axis rather than on its diagonal, because the diagonal is the
 equal-rates model by construction and would put the same curve on the figure
 twice under two names. The figure is a refusal turned into a measurement:
@@ -371,7 +390,9 @@ they are reported for what they are: a property of the filter rather than of
 the family. In the most extreme cell of the matrix the three branch-length
 schemes give rates spanning a factor of 495 while describing the same
 character, which is the branch-length axis doing the only thing it can do
-here, namely setting the units a rate is quoted in.
+here, namely setting the units a rate is quoted in. {fig:mk_profile}b shows every
+such rate rising with the number of cells its setting emptied, which is why
+it describes the filter.
 
 ## 9.11 The fossil test has no dead loci to run on, and it hands on one lead
 
@@ -397,8 +418,10 @@ signal at all on a sample that is smaller but not small.
 
 ![](figures/lesion_strata.png)
 
-**{fig:lesion_strata}.** The identity-matched sign test stratified by
-vertebrate class, with the contiguity control drawn beside it. The
+**{fig:lesion_strata}.** Panel a stratifies the identity-matched sign test by
+vertebrate class, panel b splits the bird ITPR3 pairs at the contiguity bar,
+and panel c counts the loci above the lesion bar that any reading calls a
+fossil. The
 stratification names a lineage and the control immediately removes the
 ground from under it, which is why both belong on one figure. The verdict
 this panel supports is that the mechanism behind the excess is unsettled
@@ -412,7 +435,9 @@ by construction. The three bird rows are one result rather than three.
 **The control has to be printed.** Twenty-one of the 27 bird pairs are in
 assemblies below the contiguity bar, and that is where the test has its power.
 Above the bar all six pairs point the same way and none points against, but
-six pairs cannot carry a test. Two thirds of bird assemblies are below the
+six pairs cannot carry a test. {fig:lesion_strata}b draws that split, beside
+the class strata of {fig:lesion_strata}a and the few fossil candidates of
+{fig:lesion_strata}c. Two thirds of bird assemblies are below the
 bar, the worst of any class, so this is precisely the class where an indel
 signal is hardest to separate from an assembly signal. The identity control is
 clean, so the confounder that mattered in §9.6 is not what this is. **The

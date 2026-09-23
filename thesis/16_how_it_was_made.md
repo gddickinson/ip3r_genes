@@ -8,7 +8,7 @@ and the network. It reads and writes files, runs commands, inspects their
 output, and decides what to do next.
 
 **Claude Code did the following.** It designed the project plan and wrote it
-down as a task ledger with dependencies. It wrote all 374 Python files under
+down as a task ledger with dependencies. It wrote all 377 Python files under
 `scripts/`, which run to over a hundred thousand lines, together with the
 9,243 lines of the search application under `src/`. It audited the
 literature the project started from, claim by claim, against primary
@@ -17,7 +17,7 @@ manifests that declare them, and fetched 624 GB of assemblies and 60 GB of
 proteomes. It chose every threshold in the work and, in most cases, measured
 it rather than choosing it. It ran every search, alignment, tree, selection
 test and structural comparison. It produced all 444 committed result tables
-and all 112 committed figures. It recorded 88 numbered methodological
+and all 112 committed figures. It recorded 89 numbered methodological
 decisions as it made them. And it wrote the literature review, the
 manuscript, this thesis and every one of the 28 rendered task reports that
 stand behind them, which together run to 109,250 words.
@@ -70,7 +70,7 @@ proves too large, is the rule that kept it finishable.** Several tasks were
 split this way, and each split is visible in the ledger as two rows with the
 reason recorded.
 
-**The ledger is 37 tasks, of which 34 are complete.** Each row carries the
+**The ledger is 37 tasks, of which 35 are complete.** Each row carries the
 task, its dependencies, its status with a date, and a results column holding
 the load-bearing numbers and the paths they came from. The two incomplete rows
 are the human-gated deposit, which needs a person to create a public archive
@@ -82,8 +82,8 @@ the later rows, what would make that task a failure. Claude Code wrote those
 briefs in advance of doing the work, which matters because a brief written
 after the fact describes what happened rather than what was intended.
 
-**35 sessions were logged across 9 working days**, the first on 2026-08-18 and
-the most recent on 2026-09-09. The session log is a running technical record
+**36 sessions were logged across 10 working days**, the first on 2026-08-18 and
+the most recent on 2026-09-23. The session log is a running technical record
 of what ran, what resulted and what is next. It is written for the next
 session rather than for a reader, and it is the mechanism by which an agent
 with no memory between sessions resumes work that is already in progress.
@@ -208,7 +208,7 @@ separation**.
 
 Chapter 14 sets out the rules in full. What is worth saying here is that this
 is where the agent's own reasoning is most visible, and it is visible because
-it was written down at the time. **88 numbered decisions** are recorded in the
+it was written down at the time. **89 numbered decisions** are recorded in the
 roadmap, each with the incident that produced it. Several changed an answer.
 An attribution margin inherited from a sister project was measured and
 overturned, because it came from a family whose paralogues are half as similar

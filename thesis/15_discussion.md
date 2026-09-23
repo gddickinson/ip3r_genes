@@ -368,18 +368,22 @@ separating them needs the cyclostome side of the quartet, which the
 neighbourhood evidence cannot reach, because 27 to 29 % of those genomes'
 coding genes carry a symbol at all.
 
-**Whether the paralogue quartet had a fourth slot.** With one dated ohnologue
+**Whether the paralogue quartet had a fourth slot is not settled.** With one
+dated ohnologue
 pair surviving between the blocks that do carry a gene, a block that lost the
 gene too has nothing left to be recognised by.
 
-**Why ITPR1 alone kept its teleost duplicate.** The observation is clean and
+**Why ITPR1 alone kept its teleost duplicate is not settled either.** The
+observation is clean and
 the cause is not in this evidence.
 
-**Whether the ligand pocket's constraint is about IP₃.** Everything within
+**Whether the ligand pocket's constraint is about IP₃ cannot be told from
+sequence.** Everything within
 15 Å of the ligand is also within the fold that holds it, and no sequence
 measurement separates ligand binding from domain packing.
 
-**What the receptors of the enzyme-less lineages are gated by.** A search for
+**What gates the receptors of the enzyme-less lineages is unknown.** A search
+for
 one enzyme family says the canonical route to IP₃ is missing rather than that
 the receptor has no ligand.
 

@@ -76,7 +76,7 @@ def fig_architecture() -> None:
     ax.set_ylabel("coding exons per gene")
     FS.hgrid(ax)
     FS.despine(ax)
-    FS.panel(ax, "a", "exons: 57-58 against 104")
+    FS.panel(ax, "a", "exon counts hold at 57–58")
 
     ax = axes[1]
     for i, cell in enumerate(CELLS):
@@ -98,7 +98,7 @@ def fig_architecture() -> None:
     ax.set_ylabel("genomic span (kb)")
     FS.hgrid(ax)
     FS.despine(ax)
-    FS.panel(ax, "b", "span: a 4.2-fold spread")
+    FS.panel(ax, "b", "genomic span spreads 4.2-fold")
 
     ax = axes[2]
     # ITPR1 and ITPR3 sit on the same value at every bar, so the series are
@@ -120,7 +120,7 @@ def fig_architecture() -> None:
     ax.legend(frameon=False, fontsize=FS.FS_TICK, loc="center right")
     FS.hgrid(ax)
     FS.despine(ax)
-    FS.panel(ax, "c", "flat across the bar")
+    FS.panel(ax, "c", "the counts stay flat across the bar")
     fig.tight_layout()
     FS.save(fig, L.FIGS / "architecture_by_paralog")
     plt.close(fig)
@@ -154,10 +154,10 @@ def fig_introns() -> None:
     ax.set_xlabel("intron position, ranked by prevalence")
     ax.set_ylabel("fraction of loci carrying it")
     ax.set_ylim(0, 1.02)
-    ax.legend(frameon=False, fontsize=FS.FS_TICK, loc="lower left")
+    ax.legend(frameon=False, fontsize=FS.FS_TICK, loc="center right")
     FS.hgrid(ax)
     FS.despine(ax)
-    FS.panel(ax, "a", "a universal core, per paralogue")
+    FS.panel(ax, "a", "a universal core holds in every paralogue")
 
     ax = axes[1]
     pair_colour = {("ITPR1", "ITPR2"): FS.PARALOG["ITPR1"],
@@ -187,11 +187,12 @@ def fig_introns() -> None:
     ax.set_ylim(0, 90)
     ax.set_xlabel("intron positions expected by chance")
     ax.set_ylabel("positions shared")
-    ax.legend(frameon=False, fontsize=FS.FS_TICK, loc="center left",
-              bbox_to_anchor=(0.0, 0.45))
+    # minor-decade labels (3e-1, 4e-1, ...) collide on a one-decade axis
+    ax.xaxis.set_minor_formatter(plt.NullFormatter())
+    ax.legend(frameon=False, fontsize=FS.FS_TICK, loc="lower right")
     FS.hgrid(ax)
     FS.despine(ax)
-    FS.panel(ax, "b", "one genome per point")
+    FS.panel(ax, "b", "each point is one genome")
     fig.tight_layout()
     FS.save(fig, L.FIGS / "intron_positions")
     plt.close(fig)
@@ -218,7 +219,7 @@ def fig_junctions() -> None:
     ax.set_ylabel("junctions not spliceable (%)")
     FS.hgrid(ax)
     FS.despine(ax)
-    FS.panel(ax, "a", "the instrument's error rate")
+    FS.panel(ax, "a", "under 0.2 % are unspliceable")
 
     ax = axes[1]
     xs, ys, ns = [], [], []
@@ -244,7 +245,7 @@ def fig_junctions() -> None:
     ax.set_ylabel("spliceable (%)")
     FS.hgrid(ax)
     FS.despine(ax)
-    FS.panel(ax, "b", "no sub-intron population")
+    FS.panel(ax, "b", "no sub-intron population exists")
 
     ax = axes[2]
     rows = [r for r in conc if r["grouping"] == "cell"] + \
@@ -314,7 +315,7 @@ def fig_fragments() -> None:
               bbox_to_anchor=(0.5, -0.42), ncol=2)
     FS.hgrid(ax, axis="x")
     FS.despine(ax)
-    FS.panel(ax, "a", "verdict per locus")
+    FS.panel(ax, "a", "every locus receives a verdict")
 
     ax = axes[1]
     cats = [("termini_at_exon_boundary", "at a junction"),
@@ -330,12 +331,14 @@ def fig_fragments() -> None:
         ax.annotate(f"{n}", (i, 100.0 * n / total), xytext=(0, 3),
                     textcoords="offset points", ha="center",
                     fontsize=FS.FS_TICK, color=FS.INK)
+    top = max(100.0 * int(_f(row, k)) / total for k, _ in cats)
+    ax.set_ylim(0, top * 1.22)          # headroom so the count clears the title
     ax.set_xticks(list(range(len(cats))))
     ax.set_xticklabels([c[1] for c in cats], rotation=20, ha="right")
     ax.set_ylabel(f"of {total} internal termini (%)")
     FS.hgrid(ax)
     FS.despine(ax)
-    FS.panel(ax, "b", "where the annotation stops")
+    FS.panel(ax, "b", "fewer than half are at a junction")
 
     ax = axes[2]
     cells = [c for c in CELLS if c in ctrl]
@@ -346,14 +349,15 @@ def fig_fragments() -> None:
         ax.bar(i + 0.17, spec, width=0.32, color=_colour(cell), alpha=0.45)
     ax.set_xticks(list(range(len(cells))))
     ax.set_xticklabels([_label(c) for c in cells])
-    ax.set_ylim(0, 105)
+    ax.set_ylim(0, 128)                 # headroom: the key sits above the bars
+    ax.set_yticks([0, 25, 50, 75, 100])
     ax.set_ylabel("%")
-    ax.annotate("solid: sensitivity\npale: specificity", xy=(0.02, 0.06),
+    ax.annotate("solid: sensitivity    pale: specificity", xy=(0.02, 0.97),
                 xycoords="axes fraction", fontsize=FS.FS_TICK,
-                color=FS.MUTED)
+                color=FS.MUTED, va="top")
     FS.hgrid(ax)
     FS.despine(ax)
-    FS.panel(ax, "c", "duplication detector vs S16's copy call")
+    FS.panel(ax, "c", "the detector matches S16's call")
     fig.tight_layout()
     FS.save(fig, L.FIGS / "fragments_and_duplicates")
     plt.close(fig)

@@ -90,7 +90,7 @@ def fig1_modules() -> None:
     ax.set_yticks([])
     ax.set_xlabel("residue")
     FS.despine(ax, keep=("bottom",))
-    FS.panel(ax, "a", "the two modules on the receptor")
+    FS.panel(ax, "a", "the two modules sit on the receptor")
     # The pore module is drawn in each paralogue's own colour, so it is
     # annotated on the track rather than given a legend swatch that could
     # only show one of the three.
@@ -141,7 +141,7 @@ def fig1_modules() -> None:
     ax.set_ylabel("core − pore identity, per orthologue")
     FS.despine(ax)
     FS.hgrid(ax)
-    FS.panel(ax, "b", "the paired difference, under both pore definitions")
+    FS.panel(ax, "b", "the paired difference changes sign between the two pore definitions")
     fig.tight_layout()
     FS.save(fig, L.FIG_DIR / "s22_fig1_modules")
     plt.close(fig)
@@ -173,8 +173,10 @@ def fig2_shells() -> None:
     prot = L.mean([r["deep_jsd"] for r in L.constraint("ITPR1")
                    if r["deep_jsd"] is not None])
     ax.axhline(prot, color="#6f6d66", lw=0.9, ls=(0, (4, 2)))
-    ax.annotate("whole-protein mean", xy=(14.6, prot), xytext=(0, -8),
-                textcoords="offset points", ha="right", fontsize=6,
+    # placed in the empty band below the line between 6 and 8 Å, clear of
+    # the points (S28 page read: at 14.6 Å it printed over them)
+    ax.annotate("whole-protein mean", xy=(6.9, prot), xytext=(0, -8),
+                textcoords="offset points", ha="center", fontsize=6,
                 color="#6f6d66")
     for _lo, hi, _name in SH.SHELL_EDGES[:-1]:
         ax.axvline(hi, color="#e0ded6", lw=0.7, zorder=0)
@@ -182,7 +184,7 @@ def fig2_shells() -> None:
     ax.set_ylabel("conservation (JSD, deep layer)")
     ax.set_xlim(0, 15.2)
     FS.despine(ax)
-    FS.panel(ax, "a", "the pocket, residue by residue")
+    FS.panel(ax, "a", "the pocket is measured residue by residue")
     ax.legend(handles=FS.paralog_handles(), loc="lower left", frameon=False,
               fontsize=6, ncol=3, handlelength=1.0, columnspacing=0.8)
 
@@ -203,7 +205,7 @@ def fig2_shells() -> None:
     ax.set_ylim(0.70, 0.86)
     FS.despine(ax)
     FS.hgrid(ax)
-    FS.panel(ax, "b", "no step at the contact shell")
+    FS.panel(ax, "b", "constraint shows no step at the contact shell")
     fig.tight_layout()
     FS.save(fig, L.FIG_DIR / "s22_fig2_shells")
     plt.close(fig)
@@ -228,7 +230,7 @@ def fig3_omega() -> None:
     ax.set_ylabel("mean β (non-synonymous rate)")
     FS.despine(ax)
     FS.hgrid(ax)
-    FS.panel(ax, "a", "substitution rate by module")
+    FS.panel(ax, "a", "substitution rate is compared by module")
 
     ax = axes[1]
     order = ["contact", "second", "third", "fourth"]
@@ -247,7 +249,7 @@ def fig3_omega() -> None:
     ax.set_ylim(0, 1.02)
     FS.despine(ax)
     FS.hgrid(ax)
-    FS.panel(ax, "b", "and by shell")
+    FS.panel(ax, "b", "and it is compared by shell")
     ax.legend(handles=FS.paralog_handles(), loc="lower left", frameon=False,
               fontsize=6, ncol=3, handlelength=1.0, columnspacing=0.8)
     fig.tight_layout()
@@ -284,7 +286,7 @@ def fig4_lineage() -> None:
     ax.set_xlabel("share of ITPR-carrying proteomes\nwith no PI-PLC")
     ax.set_xlim(0, 1.0)
     FS.despine(ax)
-    FS.panel(ax, "a", "receptor without enzyme")
+    FS.panel(ax, "a", "some taxa have no PLC")
 
     # The confound and the control, on one axis: the paired difference
     # against how far the whole protein has moved from the reference.  The
@@ -310,8 +312,9 @@ def fig4_lineage() -> None:
     ax.set_ylabel("core − pore identity")
     FS.despine(ax)
     FS.hgrid(ax)
-    FS.panel(ax, "b", "the confound, and the control")
-    ax.legend(loc="lower right", frameon=False, fontsize=5.4)
+    FS.panel(ax, "b", "the RyRs control the confound")
+    # Upper right: the lower right is where the PLC-present tips sit (S28).
+    ax.legend(loc="upper right", frameon=False, fontsize=5.4)
 
     ax = axes[2]
     xs = [_f(r["shift"]) for r in mp if r["shift"] != ""]
@@ -338,7 +341,7 @@ def fig4_lineage() -> None:
     ax.set_ylim(0, 1.03)
     FS.despine(ax)
     FS.hgrid(ax)
-    FS.panel(ax, "c", "what the test could have seen")
+    FS.panel(ax, "c", "the test's power is drawn")
     fig.tight_layout()
     FS.save(fig, L.FIG_DIR / "s22_fig4_lineage")
     plt.close(fig)

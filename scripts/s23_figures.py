@@ -125,7 +125,7 @@ def fig_copy_number(ledger: list[dict]) -> None:
     ax.set_xticklabels([str(b) if b < bins[-1] else f"{b}+" for b in bins])
     ax.set_xlabel("complete ITPR gene models per genome")
     ax.set_ylabel(f"genomes (n = {len(rows)})")
-    ax.set_title("Copy number outside the vertebrates", loc="left")
+    ax.set_title("Copy number varies outside the vertebrates", loc="left")
     ax.axvline(3, color="#52514e", lw=0.8, ls=":")
     ax.text(3.06, ax.get_ylim()[1] * 0.95, "vertebrate\nparalog count",
             fontsize=6.2, va="top", color="#52514e")
@@ -163,7 +163,7 @@ def fig_absence(absences: list[dict]) -> None:
     ax.set_yticks(y)
     ax.set_yticklabels(labels, fontsize=6.2)
     ax.set_xlabel("genomes (clade's swept proteome count in brackets)")
-    ax.set_title("The absence claims, taken to assembly level", loc="left")
+    ax.set_title("Every absence claim holds at assembly level", loc="left")
     fs.despine(ax, keep=("left", "bottom"))
     fs.hgrid(ax, axis="x")
     ax.legend(fontsize=6.2, frameon=False, loc="lower right")
@@ -251,7 +251,9 @@ def fig_span_inflation(spans: list[dict]) -> None:
         ax.scatter(vals, [i] * len(vals), s=13, alpha=0.5,
                    color=GROUP_COLOUR[g], edgecolors="none")
     ax.axvline(1.0, color="#52514e", lw=0.8, ls=":")
-    ax.text(1.05, len(groups) - 0.4, "span = CDS footprint", fontsize=6.2,
+    # Below the lowest group rather than beside the top one, where it sat on
+    # the panel title (found by the S28 overlap check).
+    ax.text(1.05, -0.5, "span = CDS footprint", fontsize=6.2, va="center",
             color="#52514e")
     ax.set_xscale("log")
     ax.set_yticks(range(len(groups)))

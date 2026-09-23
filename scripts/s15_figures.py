@@ -118,23 +118,24 @@ def fig_matrix() -> None:
     n_below = sum(1 for r in order
                   if not s5cal.spans_a_gene(int(_f(r["contig_n50"]))))
     ax.axvline(n_below - 0.5, color=fs.INK, linewidth=0.9, zorder=5)
-    # the note sits inside the panel: above the bars it collides with the
-    # panel title, and a title a reader has to disentangle is not a title
-    ax.annotate(f"D4 contiguity bar\n{n_below} genomes to the left cannot\n"
-                f"hold this gene on one contig",
-                xy=(n_below - 0.5, 0.02), xycoords=("data", "axes fraction"),
-                xytext=(-5, 0), textcoords="offset points",
-                ha="right", va="bottom", fontsize=fs.FS_NOTE, color=fs.INK,
-                bbox=dict(facecolor=fs.SURFACE, edgecolor="none", pad=1.6,
-                          alpha=0.93))
+    # the note sits under the strips, left of the bar: above them it
+    # collides with the panel title, and inside them (S28 page read) its
+    # box hid part of the ITPR3 strip. The axis label moves right to make
+    # room.
+    ax.annotate(f"D4 bar: the {n_below} genomes to its left "
+                f"cannot hold this gene on one contig",
+                xy=(n_below - 0.5, 0.0), xycoords=("data", "axes fraction"),
+                xytext=(-4, -3), textcoords="offset points",
+                ha="right", va="top", fontsize=fs.FS_NOTE, color=fs.INK)
     ax.set_yticks([i + 0.5 for i in range(3)])
     ax.set_yticklabels(list(reversed(lib.ITPR_CELLS)))
     ax.set_ylim(0, 3.0)
     ax.set_xlim(-0.5, len(order) - 0.5)
-    ax.set_xlabel("309 vertebrate genomes, ordered by contig N50")
+    ax.set_xlabel("309 vertebrate genomes, ordered by contig N50",
+                  loc="right")
     fs.despine(ax, keep=("left",))
     ax.set_xticks([])
-    fs.panel(ax, "a", "every genome × paralog cell, and the state its "
+    fs.panel(ax, "a", "every genome × paralog cell shows the state its "
                       "evidence supports")
 
     # the legend gets its own strip: at 6.4 pt eight entries cannot share a
@@ -172,6 +173,8 @@ def fig_matrix() -> None:
                   "(placed loci + reassembly; ≥ 5 pooled)")
     ax.set_ylabel("genomes")
     ax.set_xlim(-0.2, 5.2)
+    # headroom so "three paralogs" clears the tallest bar, which sits on it
+    ax.set_ylim(0, ax.get_ylim()[1] * 1.2)
     fs.hgrid(ax)
     fs.despine(ax)
     ax.legend(loc="upper left", fontsize=fs.FS_NOTE)
@@ -272,7 +275,7 @@ def fig_synteny() -> None:
     fs.hgrid(ax)
     fs.despine(ax)
     n0 = sum(1 for r in reach if int(r["n_genes_on_contig"]) == 0)
-    fs.panel(ax, "a", f"{n0} of {len(reach)} regions: no gene on the contig")
+    fs.panel(ax, "a", f"{n0} of {len(reach)} regions have no gene on their contig")
 
     ax = axes[1]
     labels, rates, accs = [], [], []
@@ -311,7 +314,9 @@ def fig_synteny() -> None:
         if hi > lo:
             ax.plot([lo - 0.34, hi + 0.34], [0.015, 0.015], color=fs.FAINT,
                     lw=0.7)
-    ax.legend(loc="upper left", fontsize=fs.FS_NOTE)
+    ax.set_ylim(0, 1.28)                # headroom: the legend sits above the bars
+    ax.set_yticks([0, 0.2, 0.4, 0.6, 0.8, 1.0])
+    ax.legend(loc="upper left", fontsize=fs.FS_NOTE, ncol=2)
     fs.panel(ax, "b", "accurate wherever called: reach failed, not accuracy")
     fs.save(fig, lib.FIGS / "s15_synteny_reach")
     plt.close(fig)
@@ -348,19 +353,26 @@ def fig_integrity() -> None:
         row = next((c for c in cov if c["covariate"] == xkey
                     and c["subset"] == "all"), {})
         ax.set_xlabel(xlab)
-        ax.set_ylabel("disabling lesions per kilo-residue\n(0 shown at 0.04)")
+        if xkey == "identity":      # b shares the quantity; a second label
+            ax.set_ylabel("disabling lesions per kilo-residue\n"   # crowds a
+                          "(0 shown at 0.04)")
         fs.hgrid(ax)
         fs.despine(ax)
         fs.panel(ax, "a" if xkey == "identity" else "b", title)
         # the statistic goes inside: three panels across a 6.7 in text
         # block cannot carry it in the title without the titles colliding
+        # in the empty band between the zero row (0.04) and the first
+        # non-zero row (0.2): the corner it used to sit in is the zero row
         ax.annotate(f"ρ = {_f(row.get('rho')):+.2f}\n"
                     f"{_p(_f(row.get('p')))}",
-                    xy=(0.97, 0.03), xycoords="axes fraction", ha="right",
-                    va="bottom", fontsize=fs.FS_NOTE, color=fs.INK)
+                    xy=(0.97, 0.095), xycoords=("axes fraction", "data"),
+                    ha="right", va="center", fontsize=fs.FS_NOTE,
+                    color=fs.INK)
+    # below the axes: the points fill every corner of panel a
     axes[0].legend(handles=[Patch(facecolor=fs.GROUP[c], label=c)
                             for c in lib.ALL_CELLS],
-                   loc="upper right", ncol=2, fontsize=fs.FS_NOTE)
+                   loc="upper center", bbox_to_anchor=(1.1, -0.30), ncol=4,
+                   fontsize=fs.FS_NOTE, frameon=False)
 
     ax = axes[2]
     matched = [t for t in tests if t["matched"] == "1"]
@@ -387,7 +399,7 @@ def fig_integrity() -> None:
     fs.despine(ax, keep=("bottom",))
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.30), ncol=2,
               fontsize=fs.FS_NOTE)
-    fs.panel(ax, "c", "within one genome")
+    fs.panel(ax, "c", "the paired test runs within one genome")
     fs.save(fig, lib.FIGS / "s15_integrity")
     plt.close(fig)
 
