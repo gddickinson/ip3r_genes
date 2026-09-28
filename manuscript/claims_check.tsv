@@ -286,3 +286,5 @@ C284	Fig3	all 57 vertebrate proteins form one clade	57	57	ok		results/phylogeny/
 C285	Fig3	four hagfish and lamprey genes form their own clade	4	4	ok		results/phylogeny/cyclostome_placement.tsv	count
 C286	Fig3	that clade has SH-aLRT 99.5	1	1	ok		results/phylogeny/cyclostome_placement.tsv	nunique
 C287	Fig3	two hagfish and lamprey genes join the ITPR2 + ITPR3 clade at SH-aLRT 83.1	2	2	ok		results/phylogeny/cyclostome_placement.tsv	count
+C288	R5	by heavy atoms Arg503 sits 4.78 A from IP3 in 8TKG	4.78	4.778	ok		results/ligand_site/contact_rule.tsv	cell
+C289	R5	and 4.83 A in 8TKH	4.83	4.833	ok		results/ligand_site/contact_rule.tsv	cell

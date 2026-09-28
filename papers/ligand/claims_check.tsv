@@ -37,6 +37,8 @@ LI35	ligand	17 matched pairs fall the other way	17	17	ok		results/ligand_site/de
 LI36	ligand	sign test p = 0.87	0.87	0.867939	ok		results/ligand_site/deep_lineage_matched_summary.tsv	cell
 LI37	ligand	power 0.99 at a shift of 0.05	0.99	0.9902	ok		results/ligand_site/deep_lineage_matched_power.tsv	cell
 LI38	ligand	power 0.59 at a shift of 0.03	0.59	0.5877	ok		results/ligand_site/deep_lineage_matched_power.tsv	cell
+LI39	ligand	by heavy atoms Arg503 sits 4.78 A from IP3 in 8TKG	4.78	4.778	ok		results/ligand_site/contact_rule.tsv	cell
+LI40	ligand	and 4.83 A in 8TKH	4.83	4.833	ok		results/ligand_site/contact_rule.tsv	cell
 C222	ligand	the pocket was measured in 6 independent IP3-bound structures	6	6	ok		results/ligand_site/shell_agreement.tsv	count
 C223	ligand	6DQN recovers all ten published contacts	10	10	ok		results/ligand_site/shell_agreement.tsv	cell
 C225	ligand	the contacts beat the rest of the core in ITPR1 (q = 0.048)	0.048	0.048	ok		results/ligand_site/contact_test.tsv	cell

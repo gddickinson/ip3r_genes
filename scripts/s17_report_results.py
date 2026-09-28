@@ -80,9 +80,13 @@ def s_elements(h: dict) -> str:
         "| | | *JSD / modal fraction* | | | |",
         *rows,
         "",
-        "**The gate and the selectivity filter are the most constrained "
-        "elements of the protein, on both metrics and in all three "
-        "paralogs.** RIH-associated is the most constrained *domain*. Every "
+        "**On the modal-residue fraction the gate and the selectivity filter "
+        "are the two most constrained elements of the protein in all three "
+        "paralogs (the ITPR1 filter tied with RIH-associated); on the JSD the "
+        "gate ranks first in ITPR2 and ITPR3 and second in ITPR1, and the "
+        "filter second to fourth.** (Corrected in S29: this sentence "
+        "previously said both metrics.) RIH-associated is the most "
+        "constrained *domain*. Every "
         "named element except one sits above its own protein's linker mean.",
         "",
         "### 5.1 The exception is inside the channel, and finding it changed §5",

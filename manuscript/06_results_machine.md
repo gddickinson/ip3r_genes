@@ -46,7 +46,9 @@ those residues are special *against*, we re-measured the site as a distance
 rather than a label: every residue within 15 Å of the ligand, all-atom, in
 six independent IP₃-bound human IP₃R₃ depositions. All six recover all ten
 of the published contacts — the positive control the measurement was
-required to pass — and agree on **two more**, Ala276 and Arg411, which sit
+required to pass — although in 8TKG and 8TKH only through a modelled
+hydrogen: by heavy atoms Arg503 sits 4.78 and 4.83 Å from IP₃ there. They
+agree on **two more**, Ala276 and Arg411, which sit
 inside 4.5 Å in a majority of structures and outside it in 6DQN alone. The
 ten contacts are more constrained than the receptor as a whole in all three
 paralogues (p = 0.013, 6 × 10⁻⁴, 4.2 × 10⁻³) and more constrained than the

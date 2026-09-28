@@ -42,9 +42,10 @@ PRIOR = {
         "0.767 / 0.770 for MIR and RIH_N, p = 0.070 / 0.0021 / 0.025",
         "S17 §6.3, functional_site_constraint.tsv"),
     "pore_most_constrained": (
-        "the gate and the selectivity filter are the most constrained "
-        "elements of the protein on both metrics and in all three "
-        "paralogues, and with the luminal loop separated out the channel "
+        "the gate and the selectivity filter are the two most constrained "
+        "elements of the protein on the modal-residue fraction in all "
+        "three paralogues (on the JSD the gate ranks first or second and "
+        "the filter second to fourth), and with the luminal loop separated out the channel "
         "domain itself sits at JSD 0.753 / 0.750 / 0.749 above a linker "
         "mean of 0.734",
         "S17 §5"),

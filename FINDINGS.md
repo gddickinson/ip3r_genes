@@ -2596,3 +2596,39 @@ databases is therefore worse for the IP₃ receptors than for their sister
 family in the same genomes, even though the genome annotations record the two
 families equally well at the locus. The earlier entry of 2026-09-08 that says "940 of 1,232" is
 left as written, and this entry supersedes it.
+
+## 2026-09-28 — S29: what an independent re-derivation found
+
+The companion simulator (`../ip3r_simulation`) re-derives 52 of this
+project's findings from the structures and the committed tables with its own
+code. Fifty agree. The two that do not were measured again here, with this
+project's own reader, before any sentence changed.
+
+**Qualification: the IP₃-site control holds in two structures only through a
+hydrogen.** Every write-up says all six IP₃-bound structures recover the ten
+contacts measured on 6DQN. That is true as measured, over all atoms. But in
+two of the structures, 8TKG and 8TKH, the arginine at position 503 reaches
+the ligand only through a modelled hydrogen: by heavy atoms, the rule the ten
+were defined with, it sits 4.78 and 4.83 Å away, just past the 4.5 Å line
+(`results/ligand_site/contact_rule.tsv`). Nothing downstream moves, and the
+ligand paper and the manuscript now say it.
+
+**Correction: the gate and the filter are not the most constrained elements
+"on both metrics".** The thesis and two task reports said so. On the
+composition-free metric they are the top two in all three paralogues. On the
+divergence metric the gate is second in ITPR1 and the filter is fourth in
+ITPR1 and ITPR2. The papers always said the narrower thing, and the thesis now
+does too. The earlier entries are left as written.
+
+**Qualification: a wide filter is not the whole selectivity story.** The
+2026-08-18 entry read the wide filter as the structure saying "this is not a
+precision filter". The simulator's permeation model agrees that the geometry
+alone does not select for calcium, and goes further. Through the activated
+structure's pore with nothing binding, calcium would pass at about a quarter
+of potassium's permeability (P_Ca:P_K 0.26), where recordings measure 15.2.
+The modest preference the channel does have therefore needs something the
+open geometry does not supply. In that model it is a site that holds calcium
+and, by holding it, blocks potassium. That is a model's hypothesis, not a
+measurement of this project, and no paper here makes a permeation claim. It
+is recorded so that the plain-language reading is not quoted as the whole
+answer. The figures are in `docs/figures/s29/`.

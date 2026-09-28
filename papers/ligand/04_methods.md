@@ -35,7 +35,8 @@ Every residue within 15 Å of IP₃ was measured in each deposition with a
 minimal all-atom mmCIF reader, taking the first model and altloc A and
 measuring within one subunit. A Cα trace puts an arginine several ångström
 further from a phosphate than the side chain that binds it, so all atoms are
-used. The positive control is a hard failure: all ten contacts published for
+used, hydrogens included where a deposition models them; the same distances
+by heavy atoms alone are committed beside them (`contact_rule.tsv`). The positive control is a hard failure: all ten contacts published for
 6DQN must be recovered at ≤ 4.5 Å in 6DQN or the stage stops. Residues were
 assigned to four shells by their median distance across the six structures
 (≤ 4.5, 4.5–8, 8–11.5 and 11.5–15 Å), and residues beyond 15 Å are absent

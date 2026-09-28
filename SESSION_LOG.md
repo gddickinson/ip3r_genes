@@ -4176,3 +4176,44 @@ results. The S7 report caption now computes its counts. Eleven new claims
 paper, so the ledgers now hold 287 / 245 / 713 claims. The thesis's
 production numbers moved with the S26 session and were updated. All three
 builds pass.
+
+## 2026-09-28 — S29: the companion simulator's review
+
+Asked for by the user: review what `../ip3r_simulation` says about this
+project, update the results where it shows they need it, and illustrate the
+changes with figures drawn by the simulator. Its 52 calibrated checks, run
+against `be01abf`: 50 confirmed, 2 discrepancies. Both were measured again
+here before any text changed.
+
+**The contact control.** `s29_contact_rule.py` runs S22's own reader twice
+(a new `heavy_only` switch in `s22_shells.read_atoms` / `measure`, default
+unchanged) and writes `results/ligand_site/contact_rule.tsv`. Its all-atom
+column reproduces `shell_agreement.tsv` in all six depositions, which it
+requires before writing. By heavy atoms, the rule S0's `ligand_contacts`
+defined the ten with, Arg503 is 4.778 Å from IP₃ in 8TKG and 4.833 Å in
+8TKH; with hydrogens it is 4.41 and 4.16 Å. The ligand paper (results and
+methods) and the manuscript now say so, as claims LI39–40 and C288–289. The
+thesis does not claim six-structure recovery, so it is unchanged there.
+
+**The element ranking.** The papers state it correctly. The thesis §11.10
+(headline and legend), the S17 report (`s17_report_results.py`) and the S22
+prior (`s22_priors.py`) said "on both metrics and in all three paralogues",
+which is false on the divergence metric for ITPR1 and ITPR2. All four now
+carry the papers' wording. Both reports were first re-rendered from HEAD and
+found byte-identical, then re-rendered with the fix: one line changed in
+each.
+
+**Figures.** Four, drawn by the simulator (two new check exhibits, its
+site-search figure and a GUI screenshot), are in `docs/figures/s29/`,
+described in `docs/s29_simulator_review.md`. FINDINGS gets one dated entry
+(two qualifications and a correction). No paper's figures, tables or
+headlines moved.
+
+**Counts.** The thesis's production claims (T71, T75, T76, T81, T83, T84)
+had been stale since the S26 follow-up added a session and D88 without a
+thesis rebuild. They now match `production_stats.tsv` after S29, and the
+manuscript's reviewer checklist states 289 claims.
+
+### Next
+
+Unchanged: S14b needs a human.

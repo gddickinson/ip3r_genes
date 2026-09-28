@@ -66,12 +66,15 @@ class ShellRefusal(RuntimeError):
 # a deliberately small all-atom mmCIF reader
 # ---------------------------------------------------------------------------
 
-def read_atoms(path: Path) -> tuple[list[tuple], list[tuple]]:
+def read_atoms(path: Path, heavy_only: bool = False
+               ) -> tuple[list[tuple], list[tuple]]:
     """(protein atoms, ligand atoms) as (chain, resi, resn, x, y, z).
 
     Only the first model is read and only altloc `.`/`A` is kept, for the
     reason S11's reader gives: a second model or a B conformer would enter
     the distance minimum as if it were a second copy of the residue.
+    Hydrogens are kept where a deposition models them (S22's rule);
+    `heavy_only` drops them, which is S0's contact definition (S29).
     """
     prot: list[tuple] = []
     lig: list[tuple] = []
@@ -91,6 +94,8 @@ def read_atoms(path: Path) -> tuple[list[tuple], list[tuple]]:
                     continue
                 alt = f[cols["label_alt_id"]]
                 if alt not in (".", "?", "A"):
+                    continue
+                if heavy_only and f[cols["type_symbol"]] in ("H", "D"):
                     continue
                 resn = f[cols["auth_comp_id"]]
                 try:
@@ -172,7 +177,7 @@ def shell_of(d: float) -> str:
 # the stage
 # ---------------------------------------------------------------------------
 
-def measure(pdb_id: str) -> dict[int, dict]:
+def measure(pdb_id: str, heavy_only: bool = False) -> dict[int, dict]:
     """Per residue number of human ITPR3, the best distance over subunits.
 
     The tetramer carries four equivalent sites, so a residue's distance is
@@ -180,7 +185,7 @@ def measure(pdb_id: str) -> dict[int, dict]:
     same residue in a chain whose site is empty is not evidence of anything.
     """
     path = S11.pdb_fetch(pdb_id)
-    prot, lig = read_atoms(path)
+    prot, lig = read_atoms(path, heavy_only)
     if not lig:
         raise ShellRefusal(f"{pdb_id}: no {LIGAND} atoms found")
     d = min_distances(prot, lig, cutoff=SEARCH_RADIUS_A)

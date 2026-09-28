@@ -61,7 +61,10 @@ We measured every residue within 15 Å of IP₃, using all atoms rather than Cα
 in six IP₃-bound human IP₃R3 depositions from several groups and
 gating states [R23, R24, R59, R60]. Recovery of the ten published contacts in the
 6DQN structure was required before anything downstream ran, and all six
-depositions recover all ten. They also agree on two more residues, Ala276 and
+depositions recover all ten. In two of them, 8TKG and 8TKH, that depends on
+a modelled hydrogen: by heavy atoms alone, the rule the ten were defined
+with, Arg503 sits 4.78 and 4.83 Å from IP₃, just outside the cutoff.
+They also agree on two more residues, Ala276 and
 Arg411, each within 4.5 Å in four of the six depositions and outside it in
 6DQN. The pocket so defined holds 125 residues, binned into a contact shell of
 twelve residues (≤ 4.5 Å) and three outer shells out to 15 Å, the outermost

@@ -65,7 +65,7 @@ file of any of the three documents. A cited key with no reference row is a
 build error.
 
 **Every load-bearing number is declared with the table it comes from and the
-operation that recovers it.** The manuscript declares 287 and this thesis
+operation that recovers it.** The manuscript declares 289 and this thesis
 declares 245, through one shared engine so that a number quoted in both is
 recovered once and cannot disagree between them. The thesis adds a second
 condition: a declared number must also appear in the chapter that declares it,
@@ -123,8 +123,8 @@ change and the message, and the human's account and machine committed it.
 
 Three things this way of working did well.
 
-**It sustained a long, dependency-ordered plan.** 37 tasks with declared
-dependencies, worked one at a time to stated completion criteria across 37
+**It sustained a long, dependency-ordered plan.** 38 tasks with declared
+dependencies, worked one at a time to stated completion criteria across 39
 sessions, with the ledger and the session log carrying the state between them.
 An agent with no memory between sessions can do this only if the state lives
 in the repository, and the protocol is what puts it there.

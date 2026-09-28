@@ -148,4 +148,11 @@ CLAIMS: list[dict] = [
        "cell", "0.99", column="power", tol=0.005, where={"shift": "0.05"}),
     _c(38, "power 0.59 at a shift of 0.03", "deep_lineage_matched_power.tsv",
        "cell", "0.59", column="power", tol=0.005, where={"shift": "0.03"}),
+    # ---------------------------------------------------------- S29: the rule
+    _c(39, "by heavy atoms Arg503 sits 4.78 A from IP3 in 8TKG",
+       "contact_rule.tsv", "cell", "4.78", column="d_heavy_atoms_A", tol=0.005,
+       where={"pdb_id": "8TKG", "resi": "503"}),
+    _c(40, "and 4.83 A in 8TKH", "contact_rule.tsv", "cell", "4.83",
+       column="d_heavy_atoms_A", tol=0.005,
+       where={"pdb_id": "8TKH", "resi": "503"}),
 ]

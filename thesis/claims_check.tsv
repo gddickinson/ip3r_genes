@@ -225,22 +225,22 @@ T62	ch14	all 76 are verified against a live record	76	76	ok		thesis/reference_au
 T63	ch14	26 figure-audit findings were recorded	26	26	ok		results/supplementary/figure_findings.tsv	count
 T64	ch14	16 of them were fixed in the legend	16	16	ok		results/supplementary/figure_findings.tsv	count
 T65	ch14	10 in the figure	10	10	ok		results/supplementary/figure_findings.tsv	count
-T66	ch14	the manuscript ledger carries 287 declarations	287	287	ok		manuscript/claims_check.tsv	count
+T66	ch14	the manuscript ledger carries 289 declarations	289	289	ok		manuscript/claims_check.tsv	count
 T68	appendix-E	30 build guards are broken on purpose and all fire	30	30	ok		thesis/guard_check.tsv	count
 T69	appendix-E	the thesis places 104 figures	104	104	ok		thesis/figure_manifest.tsv	count
 T70	appendix-E	37 results directories are assigned to a chapter	37	37	ok		thesis/chapter_assignment.tsv	count
-T83	ch14	91 decisions are recorded, as chapter 14 also states	91	91	ok		thesis/production_stats.tsv	cell
-T84	ch14	across 37 logged sessions, as chapter 14 also states	37	37	ok		thesis/production_stats.tsv	cell
-T71	ch16	37 sessions are logged	37	37	ok		thesis/production_stats.tsv	cell
-T72	ch16	they ran across 10 working days	10	10	ok		thesis/production_stats.tsv	cell
-T73	ch16	the ledger holds 37 tasks	37	37	ok		thesis/production_stats.tsv	cell
-T74	ch16	36 of them are complete	36	36	ok		thesis/production_stats.tsv	cell
-T75	ch16	91 methodological decisions are recorded	91	91	ok		thesis/production_stats.tsv	cell
-T76	ch16	403 analysis scripts were written	403	403	ok		thesis/production_stats.tsv	cell
+T83	ch14	92 decisions are recorded, as chapter 14 also states	92	92	ok		thesis/production_stats.tsv	cell
+T84	ch14	across 39 logged sessions, as chapter 14 also states	39	39	ok		thesis/production_stats.tsv	cell
+T71	ch16	39 sessions are logged	39	39	ok		thesis/production_stats.tsv	cell
+T72	ch16	they ran across 11 working days	11	11	ok		thesis/production_stats.tsv	cell
+T73	ch16	the ledger holds 38 tasks	38	38	ok		thesis/production_stats.tsv	cell
+T74	ch16	37 of them are complete	37	37	ok		thesis/production_stats.tsv	cell
+T75	ch16	92 methodological decisions are recorded	92	92	ok		thesis/production_stats.tsv	cell
+T76	ch16	404 analysis scripts were written	404	404	ok		thesis/production_stats.tsv	cell
 T77	ch16	the search application is 9,243 lines	9243	9243	ok		thesis/production_stats.tsv	cell
-T78	ch16	444 result tables are committed	444	444	ok		thesis/production_stats.tsv	cell
-T79	ch16	112 figures are committed	112	112	ok		thesis/production_stats.tsv	cell
+T78	ch16	445 result tables are committed	445	445	ok		thesis/production_stats.tsv	cell
+T79	ch16	116 figures are committed	116	116	ok		thesis/production_stats.tsv	cell
 T80	ch16	28 task reports are rendered	28	28	ok		thesis/production_stats.tsv	cell
-T81	ch16	those reports run to 109,294 words	109294	109294	ok		thesis/production_stats.tsv	cell
+T81	ch16	those reports run to 109,347 words	109347	109347	ok		thesis/production_stats.tsv	cell
 T82	ch16	the first session ran on 2026-08-18	2026-08-18	2026-08-18	ok		thesis/production_stats.tsv	cell
 T67	appendix-B	the control inventory is derived from 19 modules	19	19	ok		thesis/control_inventory.tsv	nunique

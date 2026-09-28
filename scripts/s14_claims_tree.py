@@ -63,4 +63,16 @@ CLAIMS: list[dict] = [
                "at SH-aLRT 83.1",
          source=_CYC, op="count", where={"clade_size": "34", "alrt": "83.1",
                                          "ufboot": "77"}, expect="2"),
+    # S29: the IP3 contact control by heavy atoms (declared here because this
+    # is the ledger's last list; the sentence is in R5)
+    dict(id="C288", section="R5",
+         claim="by heavy atoms Arg503 sits 4.78 A from IP3 in 8TKG",
+         source="results/ligand_site/contact_rule.tsv", op="cell",
+         where={"pdb_id": "8TKG", "resi": "503"}, column="d_heavy_atoms_A",
+         expect="4.78", tol=0.005),
+    dict(id="C289", section="R5",
+         claim="and 4.83 A in 8TKH",
+         source="results/ligand_site/contact_rule.tsv", op="cell",
+         where={"pdb_id": "8TKH", "resi": "503"}, column="d_heavy_atoms_A",
+         expect="4.83", tol=0.005),
 ]

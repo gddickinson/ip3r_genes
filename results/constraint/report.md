@@ -123,7 +123,7 @@ Every element is tested against the **same protein's own linkers** — the inter
 | `MIR` | 200 | 0.737 / 0.854 | 0.764 / 0.892 | 0.762 / 0.906 | 0.0452; 5.93744e-09; 6.14771e-06 |
 | `luminal_loop` | 49 | 0.488 / 0.547 | 0.452 / 0.563 | 0.485 / 0.524 | 1.0; 1.0; 1.0 |
 
-**The gate and the selectivity filter are the most constrained elements of the protein, on both metrics and in all three paralogs.** RIH-associated is the most constrained *domain*. Every named element except one sits above its own protein's linker mean.
+**On the modal-residue fraction the gate and the selectivity filter are the two most constrained elements of the protein in all three paralogs (the ITPR1 filter tied with RIH-associated); on the JSD the gate ranks first in ITPR2 and ITPR3 and second in ITPR1, and the filter second to fourth.** (Corrected in S29: this sentence previously said both metrics.) RIH-associated is the most constrained *domain*. Every named element except one sits above its own protein's linker mean.
 
 ### 5.1 The exception is inside the channel, and finding it changed §5
 

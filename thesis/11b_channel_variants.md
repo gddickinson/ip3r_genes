@@ -3,21 +3,26 @@
 Every element is tested against the same protein's own linkers rather than
 against its whole-protein mean, which would contain the element being tested.
 
-**The gate and the selectivity filter are the most constrained elements of the
-protein, on both metrics and in all three paralogues.** The RIH-associated
+**On the composition-free metric the gate and the selectivity filter are the
+two most constrained elements of the protein in all three paralogues** (the
+ITPR1 filter tied with the RIH-associated domain). On the divergence metric
+the gate ranks first in ITPR2 and ITPR3 and second in ITPR1, and the filter
+second to fourth. The RIH-associated
 domain is the most constrained domain. Every named element except one sits
 above its own protein's linker mean.
 {fig:s17_elements} shows the ranking twice, once per metric, and the reader
-should check that the gate and the filter stay at the top and the luminal loop
-at the bottom when the metric changes between panel a and panel b.
+should check that the gate stays at or next to the top, the filter in the top
+four, and the luminal loop at the bottom when the metric changes between panel
+a and panel b.
 
 ![](figures/s17_elements.png)
 
 **{fig:s17_elements}.** Constraint is ranked by element on the divergence
 metric in panel a and on the composition-free metric in panel b, beside it
 rather than instead of it. The headline result and its most obvious artefact
-are therefore on the same axis: the gate and the filter come top on both
-metrics, so the ranking is not a property of one scoring choice, and a reader
+are therefore on the same axis: the gate comes first or second on both
+metrics and the filter stays in the top four, so the ranking is not a property
+of one scoring choice, and a reader
 can check that agreement rather than take it on assurance. The second metric
 is there because a divergence from a background frequency table [R178] scores
 a transmembrane element lower at equal conservation, which would have
