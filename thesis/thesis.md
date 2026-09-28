@@ -7432,7 +7432,7 @@ manifests that declare them, and fetched 624 GB of assemblies and 60 GB of
 proteomes. It chose every threshold in the work and, in most cases, measured
 it rather than choosing it. It ran every search, alignment, tree, selection
 test and structural comparison. It produced all 445 committed result tables
-and all 116 committed figures. It recorded 92 numbered methodological
+and all 117 committed figures. It recorded 92 numbered methodological
 decisions as it made them. And it wrote the literature review, the
 manuscript, this thesis and every one of the 28 rendered task reports that
 stand behind them, which together run to 109,347 words.

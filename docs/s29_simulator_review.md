@@ -6,7 +6,9 @@ receptor that re-derives this project's findings with code of its own
 of the tables it declares must flip its verdict. On 2026-09-27, against this
 repository at `be01abf`, 50 of 52 checks confirmed. This page records the two
 that did not, what S29 measured here about each, and one qualification from
-the simulator's permeation work. Every figure was drawn by the simulator.
+the simulator's permeation work. Every figure was drawn by the simulator, and the last one adds a
+result the publication does not yet show: the pore radii of the whole state
+panel.
 
 ## 1. The IP₃ contact control holds in 8TKG and 8TKH only through a hydrogen
 
@@ -59,6 +61,26 @@ coloured by its occupancy (blue empty, red full). The lower plot shows each
 ion's concentration and electrochemical drop along the pore axis, with the
 occupancy dotted. K⁺ is resisted inside the occupied band (steepest at
 z −86 Å), and Ca²⁺ where it leaves the band (z −55 Å).
+
+## 4. The gating transition at the pore, state by state
+
+![state panel](figures/s29/state_panel_pore.png)
+
+**Figure S29.5.** Every deposition of S11's ITPR3 state panel measured by the
+simulator with one axis method, one pore profile (minimum heavy-atom radius,
+as S0's Figure 3c) and one constriction rule, plus the open-state control
+7T3T (Schmitz et al. 2022), which is not in S11's panel (dashed, \*).
+(**a**) Each profile, with z measured from that deposition's own filter so
+the constrictions line up. (**b**) The radius at the gate and at the filter,
+ordered by the gate. The gate carries the whole transition. It is 1.95–2.73 Å
+in every resting, preactivated, IP₃-bound, apo and inhibited state, and it
+opens to 5.85 Å only in the activated 8TKF (5.34 Å in 7T3T). The filter stays
+between 4.27 and 5.08 Å in all eight. S0's Figure 3c measured the filter and
+gate on 6DQN alone; the panel shows that the 6DQN reading (gate 2.55 Å,
+filter 5.08 Å) is the closed channel's, shared by six states, and that the
+wide filter is not something activation creates. Source: `ip3r_simulation`
+`scripts/figure_states.py` (`structure.states.state_panel`; the same
+measurement its checks S0.selectivity_filter and S0.gate hold to S0's numbers).
 
 ## What did not change
 

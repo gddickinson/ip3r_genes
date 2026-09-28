@@ -42,7 +42,7 @@ size and SHA-256 checksum.
 | `results/structures` | 24 | 2.8 MB |
 | `results/supplementary` | 18 | 4.6 MB |
 | `results/synteny` | 25 | 13.9 MB |
-| `root` | 6 | 979.6 KB |
+| `root` | 6 | 980.4 KB |
 | `scripts` | 404 | 4.7 MB |
 
 ## What is not deposited, and how to regenerate it

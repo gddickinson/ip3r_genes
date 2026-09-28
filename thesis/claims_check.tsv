@@ -239,7 +239,7 @@ T75	ch16	92 methodological decisions are recorded	92	92	ok		thesis/production_st
 T76	ch16	404 analysis scripts were written	404	404	ok		thesis/production_stats.tsv	cell
 T77	ch16	the search application is 9,243 lines	9243	9243	ok		thesis/production_stats.tsv	cell
 T78	ch16	445 result tables are committed	445	445	ok		thesis/production_stats.tsv	cell
-T79	ch16	116 figures are committed	116	116	ok		thesis/production_stats.tsv	cell
+T79	ch16	117 figures are committed	117	117	ok		thesis/production_stats.tsv	cell
 T80	ch16	28 task reports are rendered	28	28	ok		thesis/production_stats.tsv	cell
 T81	ch16	those reports run to 109,347 words	109347	109347	ok		thesis/production_stats.tsv	cell
 T82	ch16	the first session ran on 2026-08-18	2026-08-18	2026-08-18	ok		thesis/production_stats.tsv	cell

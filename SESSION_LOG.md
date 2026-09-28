@@ -4203,8 +4203,10 @@ carry the papers' wording. Both reports were first re-rendered from HEAD and
 found byte-identical, then re-rendered with the fix: one line changed in
 each.
 
-**Figures.** Four, drawn by the simulator (two new check exhibits, its
-site-search figure and a GUI screenshot), are in `docs/figures/s29/`,
+**Figures.** Five, drawn by the simulator (two new check exhibits, its
+site-search figure, a GUI screenshot, and, at the user's request, the pore
+radii of S11's whole ITPR3 state panel with 7T3T as the open control), are in
+`docs/figures/s29/`,
 described in `docs/s29_simulator_review.md`. FINDINGS gets one dated entry
 (two qualifications and a correction). No paper's figures, tables or
 headlines moved.

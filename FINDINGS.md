@@ -2632,3 +2632,11 @@ and, by holding it, blocks potassium. That is a model's hypothesis, not a
 measurement of this project, and no paper here makes a permeation claim. It
 is recorded so that the plain-language reading is not quoted as the whole
 answer. The figures are in `docs/figures/s29/`.
+
+**New: the gate carries the whole opening; the filter never moves.** The
+same simulator measured every structure in the type-3 state panel one way.
+The gate is 2–2.7 Å wide in six states (resting, labile resting,
+preactivated, IP₃-bound, apo, inhibited) and opens to 5.9 Å only in the
+activated structure. The filter is 4.3–5.1 Å in all of them. So the wide
+filter read off 6DQN in 2026-08-18's entry is not a snapshot of one state: it
+is the same in every state, open or shut (`docs/figures/s29/state_panel_pore.png`).
