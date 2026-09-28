@@ -509,7 +509,7 @@ Each analysis also has its own rendered `results/<task>/report.md`.
 | Output | Where | Built by |
 |---|---|---|
 | **Manuscript**: 17 sections, 7 main + 16 Extended Data + 6 Supplementary figures, 289 load-bearing numbers re-verified on every build, 60-page PDF | [`manuscript/`](manuscript/README.md) · [PDF](manuscript/itpr_family_manuscript.pdf) | `scripts/s14_assemble.py` |
-| **Thesis**: 16 chapters + 5 appendices, ~80,700 words, 104 figures, 116 audited references, 190-page PDF | [`thesis/`](thesis/README.md) · [PDF](thesis/itpr_family_thesis.pdf) | `scripts/s25_assemble.py` |
+| **Thesis**: 16 chapters + 5 appendices, ~81,400 words, 105 figures, 116 audited references, 190-page PDF | [`thesis/`](thesis/README.md) · [PDF](thesis/itpr_family_thesis.pdf) | `scripts/s25_assemble.py` |
 | **Paper series**: the same results as six stand-alone papers, each with its own question, controls and 4–7 main figures; 45,175 words and 122 pages in all, with 715 load-bearing numbers in one ledger shared by all six | [`papers/`](papers/README.md) | `scripts/s26_assemble.py` |
 | **Literature review**: 32 pages, 137 references, 12 figures, with a claim-by-claim audit | [`docs/ip3r_review_2026.pdf`](docs/ip3r_review_2026.pdf) | `scripts/s0_review_build.py --pdf` |
 | **Analysis results**: one directory per task, holding tables, figures and a rendered `report.md` | [`results/`](results/) | `scripts/s<n>_*.py` |
@@ -607,7 +607,7 @@ every result:
   figures and the manuscript are generated from the TSV and JSON files in
   `results/`, never typed by hand. On every build, each write-up's "claims
   ledger" re-reads its quoted numbers from their source tables and fails if
-  any has changed: 289 for the manuscript, 245 for the thesis and 715 for the
+  any has changed: 289 for the manuscript, 251 for the thesis and 715 for the
   paper series. The thesis and the papers also fail if a declared number does
   not actually appear in their text.
 - **The findings are re-derived by independent code.** The companion

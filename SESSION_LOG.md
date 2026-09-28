@@ -4211,6 +4211,24 @@ described in `docs/s29_simulator_review.md`. FINDINGS gets one dated entry
 (two qualifications and a correction). No paper's figures, tables or
 headlines moved.
 
+**The state panel in the thesis (user request).** `measure_pore` was
+factored out of `s0_figdata_structure.main`. Re-running S0 on 6DQN rewrote
+its three outputs byte for byte. `s29_state_pores.py` measures 6DQN and
+S11's six ITPR3 states with it into `state_pore_profiles.tsv` and
+`state_constrictions.tsv`, and raises unless 6DQN reproduces S0 and every
+filter lands on GGGVGD. On first run that check refused 8TKG: its 2.5 Å map
+models waters in the pore, and S0's all-heavy-atom rule put the luminal
+minimum on them. Waters are now removed, and 6DQN is unchanged.
+- Gate: 1.95–2.74 Å shut, 5.83 Å in 8TKF (lined by Asn2510).
+- Filter: 4.26–5.06 Å in all seven.
+- The simulator agrees within 0.03 Å, except 8TLA's filter (4.30 against
+  4.66 Å): its subunits resolve unequal residue counts, which moves the
+  centroid axis.
+
+`s29_figures.py` draws it with figstyle (figcheck caught a legend over the
+8TKF curve). §11.3 places it with a paragraph and a legend (T85–T90), and
+the thesis now places 105 figures and declares 251 claims.
+
 **Counts.** The thesis's production claims (T71, T75, T76, T81, T83, T84)
 had been stale since the S26 follow-up added a session and D88 without a
 thesis rebuild. They now match `production_stats.tsv` after S29, and the

@@ -1,0 +1,1003 @@
+pdb_id	state	z_A	z_from_filter_A	min_heavy_atom_radius_A
+6DQN	IP3-bound	-112.76	-23.00	14.244
+6DQN	IP3-bound	-112.26	-22.50	14.244
+6DQN	IP3-bound	-111.76	-22.00	14.244
+6DQN	IP3-bound	-111.26	-21.50	14.244
+6DQN	IP3-bound	-110.76	-21.00	14.244
+6DQN	IP3-bound	-110.26	-20.50	13.143
+6DQN	IP3-bound	-109.76	-20.00	10.940
+6DQN	IP3-bound	-109.26	-19.50	10.854
+6DQN	IP3-bound	-108.76	-19.00	10.854
+6DQN	IP3-bound	-108.26	-18.50	10.067
+6DQN	IP3-bound	-107.76	-18.00	10.067
+6DQN	IP3-bound	-107.26	-17.50	10.067
+6DQN	IP3-bound	-106.76	-17.00	10.067
+6DQN	IP3-bound	-106.26	-16.50	10.067
+6DQN	IP3-bound	-105.76	-16.00	10.067
+6DQN	IP3-bound	-105.26	-15.50	10.462
+6DQN	IP3-bound	-104.76	-15.00	10.462
+6DQN	IP3-bound	-104.26	-14.50	6.988
+6DQN	IP3-bound	-103.76	-14.00	6.988
+6DQN	IP3-bound	-103.26	-13.50	6.703
+6DQN	IP3-bound	-102.76	-13.00	6.703
+6DQN	IP3-bound	-102.26	-12.50	6.703
+6DQN	IP3-bound	-101.76	-12.00	6.703
+6DQN	IP3-bound	-101.26	-11.50	6.703
+6DQN	IP3-bound	-100.76	-11.00	6.703
+6DQN	IP3-bound	-100.26	-10.50	9.396
+6DQN	IP3-bound	-99.76	-10.00	9.396
+6DQN	IP3-bound	-99.26	-9.50	9.396
+6DQN	IP3-bound	-98.76	-9.00	9.396
+6DQN	IP3-bound	-98.26	-8.50	9.396
+6DQN	IP3-bound	-97.76	-8.00	10.246
+6DQN	IP3-bound	-97.26	-7.50	10.246
+6DQN	IP3-bound	-96.76	-7.00	8.984
+6DQN	IP3-bound	-96.26	-6.50	8.984
+6DQN	IP3-bound	-95.76	-6.00	8.984
+6DQN	IP3-bound	-95.26	-5.50	8.984
+6DQN	IP3-bound	-94.76	-5.00	8.916
+6DQN	IP3-bound	-94.26	-4.50	8.916
+6DQN	IP3-bound	-93.76	-4.00	7.670
+6DQN	IP3-bound	-93.26	-3.50	7.670
+6DQN	IP3-bound	-92.76	-3.00	6.854
+6DQN	IP3-bound	-92.26	-2.50	6.854
+6DQN	IP3-bound	-91.76	-2.00	6.426
+6DQN	IP3-bound	-91.26	-1.50	6.426
+6DQN	IP3-bound	-90.76	-1.00	6.426
+6DQN	IP3-bound	-90.26	-0.50	6.426
+6DQN	IP3-bound	-89.76	0.00	5.057
+6DQN	IP3-bound	-89.26	0.50	5.057
+6DQN	IP3-bound	-88.76	1.00	5.057
+6DQN	IP3-bound	-88.26	1.50	5.057
+6DQN	IP3-bound	-87.76	2.00	5.057
+6DQN	IP3-bound	-87.26	2.50	5.057
+6DQN	IP3-bound	-86.76	3.00	5.326
+6DQN	IP3-bound	-86.26	3.50	5.326
+6DQN	IP3-bound	-85.76	4.00	5.326
+6DQN	IP3-bound	-85.26	4.50	5.326
+6DQN	IP3-bound	-84.76	5.00	5.326
+6DQN	IP3-bound	-84.26	5.50	8.392
+6DQN	IP3-bound	-83.76	6.00	8.392
+6DQN	IP3-bound	-83.26	6.50	8.392
+6DQN	IP3-bound	-82.76	7.00	8.392
+6DQN	IP3-bound	-82.26	7.50	7.864
+6DQN	IP3-bound	-81.76	8.00	7.864
+6DQN	IP3-bound	-81.26	8.50	7.864
+6DQN	IP3-bound	-80.76	9.00	7.864
+6DQN	IP3-bound	-80.26	9.50	7.864
+6DQN	IP3-bound	-79.76	10.00	7.864
+6DQN	IP3-bound	-79.26	10.50	8.005
+6DQN	IP3-bound	-78.76	11.00	8.005
+6DQN	IP3-bound	-78.26	11.50	5.850
+6DQN	IP3-bound	-77.76	12.00	5.850
+6DQN	IP3-bound	-77.26	12.50	5.850
+6DQN	IP3-bound	-76.76	13.00	5.687
+6DQN	IP3-bound	-76.26	13.50	4.559
+6DQN	IP3-bound	-75.76	14.00	4.559
+6DQN	IP3-bound	-75.26	14.50	4.559
+6DQN	IP3-bound	-74.76	15.00	4.559
+6DQN	IP3-bound	-74.26	15.50	4.559
+6DQN	IP3-bound	-73.76	16.00	3.470
+6DQN	IP3-bound	-73.26	16.50	2.724
+6DQN	IP3-bound	-72.76	17.00	2.724
+6DQN	IP3-bound	-72.26	17.50	2.724
+6DQN	IP3-bound	-71.76	18.00	2.724
+6DQN	IP3-bound	-71.26	18.50	2.724
+6DQN	IP3-bound	-70.76	19.00	2.724
+6DQN	IP3-bound	-70.26	19.50	3.695
+6DQN	IP3-bound	-69.76	20.00	2.524
+6DQN	IP3-bound	-69.26	20.50	2.524
+6DQN	IP3-bound	-68.76	21.00	2.524
+6DQN	IP3-bound	-68.26	21.50	2.524
+6DQN	IP3-bound	-67.76	22.00	2.524
+6DQN	IP3-bound	-67.26	22.50	2.524
+6DQN	IP3-bound	-66.76	23.00	2.600
+6DQN	IP3-bound	-66.26	23.50	2.600
+6DQN	IP3-bound	-65.76	24.00	2.600
+6DQN	IP3-bound	-65.26	24.50	2.600
+6DQN	IP3-bound	-64.76	25.00	2.600
+6DQN	IP3-bound	-64.26	25.50	2.600
+6DQN	IP3-bound	-63.76	26.00	4.964
+6DQN	IP3-bound	-63.26	26.50	4.964
+6DQN	IP3-bound	-62.76	27.00	4.964
+6DQN	IP3-bound	-62.26	27.50	4.964
+6DQN	IP3-bound	-61.76	28.00	6.238
+6DQN	IP3-bound	-61.26	28.50	6.625
+6DQN	IP3-bound	-60.76	29.00	4.788
+6DQN	IP3-bound	-60.26	29.50	4.788
+6DQN	IP3-bound	-59.76	30.00	4.788
+6DQN	IP3-bound	-59.26	30.50	4.638
+6DQN	IP3-bound	-58.76	31.00	4.638
+6DQN	IP3-bound	-58.26	31.50	4.638
+6DQN	IP3-bound	-57.76	32.00	4.638
+6DQN	IP3-bound	-57.26	32.50	4.638
+6DQN	IP3-bound	-56.76	33.00	4.638
+6DQN	IP3-bound	-56.26	33.50	5.825
+6DQN	IP3-bound	-55.76	34.00	5.914
+6DQN	IP3-bound	-55.26	34.50	5.914
+6DQN	IP3-bound	-54.76	35.00	5.914
+6DQN	IP3-bound	-54.26	35.50	6.878
+6DQN	IP3-bound	-53.76	36.00	6.507
+6DQN	IP3-bound	-53.26	36.50	6.507
+6DQN	IP3-bound	-52.76	37.00	6.507
+6DQN	IP3-bound	-52.26	37.50	6.507
+6DQN	IP3-bound	-51.76	38.00	6.507
+6DQN	IP3-bound	-51.26	38.50	6.507
+6DQN	IP3-bound	-50.76	39.00	8.134
+6DQN	IP3-bound	-50.26	39.50	8.154
+6DQN	IP3-bound	-49.76	40.00	9.167
+6DQN	IP3-bound	-49.26	40.50	9.281
+6DQN	IP3-bound	-48.76	41.00	9.281
+6DQN	IP3-bound	-48.26	41.50	9.281
+6DQN	IP3-bound	-47.76	42.00	9.281
+6DQN	IP3-bound	-47.26	42.50	9.281
+6DQN	IP3-bound	-46.76	43.00	9.281
+6DQN	IP3-bound	-46.26	43.50	10.027
+6DQN	IP3-bound	-45.76	44.00	10.563
+6DQN	IP3-bound	-45.26	44.50	10.563
+6DQN	IP3-bound	-44.76	45.00	10.063
+6DQN	IP3-bound	-44.26	45.50	9.141
+6DQN	IP3-bound	-43.76	46.00	9.141
+6DQN	IP3-bound	-43.26	46.50	9.141
+6DQN	IP3-bound	-42.76	47.00	9.141
+6DQN	IP3-bound	-42.26	47.50	9.141
+6DQN	IP3-bound	-41.76	48.00	9.141
+6DQN	IP3-bound	-41.26	48.50	12.834
+8TKG	resting	-108.05	-25.50	16.261
+8TKG	resting	-107.55	-25.00	15.272
+8TKG	resting	-107.05	-24.50	13.938
+8TKG	resting	-106.55	-24.00	13.938
+8TKG	resting	-106.05	-23.50	13.938
+8TKG	resting	-105.55	-23.00	10.673
+8TKG	resting	-105.05	-22.50	10.673
+8TKG	resting	-104.55	-22.00	10.673
+8TKG	resting	-104.05	-21.50	10.673
+8TKG	resting	-103.55	-21.00	10.673
+8TKG	resting	-103.05	-20.50	10.673
+8TKG	resting	-102.55	-20.00	11.190
+8TKG	resting	-102.05	-19.50	12.146
+8TKG	resting	-101.55	-19.00	12.146
+8TKG	resting	-101.05	-18.50	10.641
+8TKG	resting	-100.55	-18.00	10.641
+8TKG	resting	-100.05	-17.50	10.641
+8TKG	resting	-99.55	-17.00	9.919
+8TKG	resting	-99.05	-16.50	7.135
+8TKG	resting	-98.55	-16.00	7.135
+8TKG	resting	-98.05	-15.50	7.135
+8TKG	resting	-97.55	-15.00	7.135
+8TKG	resting	-97.05	-14.50	6.849
+8TKG	resting	-96.55	-14.00	6.849
+8TKG	resting	-96.05	-13.50	6.849
+8TKG	resting	-95.55	-13.00	6.849
+8TKG	resting	-95.05	-12.50	6.849
+8TKG	resting	-94.55	-12.00	6.849
+8TKG	resting	-94.05	-11.50	8.171
+8TKG	resting	-93.55	-11.00	8.171
+8TKG	resting	-93.05	-10.50	8.171
+8TKG	resting	-92.55	-10.00	11.527
+8TKG	resting	-92.05	-9.50	11.527
+8TKG	resting	-91.55	-9.00	8.717
+8TKG	resting	-91.05	-8.50	8.717
+8TKG	resting	-90.55	-8.00	8.717
+8TKG	resting	-90.05	-7.50	8.717
+8TKG	resting	-89.55	-7.00	8.717
+8TKG	resting	-89.05	-6.50	8.717
+8TKG	resting	-88.55	-6.00	7.876
+8TKG	resting	-88.05	-5.50	7.876
+8TKG	resting	-87.55	-5.00	6.050
+8TKG	resting	-87.05	-4.50	6.050
+8TKG	resting	-86.55	-4.00	6.050
+8TKG	resting	-86.05	-3.50	6.050
+8TKG	resting	-85.55	-3.00	6.050
+8TKG	resting	-85.05	-2.50	6.050
+8TKG	resting	-84.55	-2.00	6.445
+8TKG	resting	-84.05	-1.50	6.445
+8TKG	resting	-83.55	-1.00	5.013
+8TKG	resting	-83.05	-0.50	5.013
+8TKG	resting	-82.55	0.00	4.705
+8TKG	resting	-82.05	0.50	4.705
+8TKG	resting	-81.55	1.00	4.705
+8TKG	resting	-81.05	1.50	4.705
+8TKG	resting	-80.55	2.00	4.705
+8TKG	resting	-80.05	2.50	4.705
+8TKG	resting	-79.55	3.00	6.430
+8TKG	resting	-79.05	3.50	6.430
+8TKG	resting	-78.55	4.00	8.479
+8TKG	resting	-78.05	4.50	7.641
+8TKG	resting	-77.55	5.00	7.641
+8TKG	resting	-77.05	5.50	7.641
+8TKG	resting	-76.55	6.00	7.641
+8TKG	resting	-76.05	6.50	7.641
+8TKG	resting	-75.55	7.00	7.641
+8TKG	resting	-75.05	7.50	8.402
+8TKG	resting	-74.55	8.00	8.402
+8TKG	resting	-74.05	8.50	8.402
+8TKG	resting	-73.55	9.00	8.402
+8TKG	resting	-73.05	9.50	8.402
+8TKG	resting	-72.55	10.00	8.402
+8TKG	resting	-72.05	10.50	6.186
+8TKG	resting	-71.55	11.00	4.828
+8TKG	resting	-71.05	11.50	4.706
+8TKG	resting	-70.55	12.00	4.706
+8TKG	resting	-70.05	12.50	4.706
+8TKG	resting	-69.55	13.00	4.706
+8TKG	resting	-69.05	13.50	2.789
+8TKG	resting	-68.55	14.00	2.736
+8TKG	resting	-68.05	14.50	2.736
+8TKG	resting	-67.55	15.00	2.736
+8TKG	resting	-67.05	15.50	2.736
+8TKG	resting	-66.55	16.00	2.736
+8TKG	resting	-66.05	16.50	2.736
+8TKG	resting	-65.55	17.00	3.658
+8TKG	resting	-65.05	17.50	4.661
+8TKG	resting	-64.55	18.00	2.785
+8TKG	resting	-64.05	18.50	2.785
+8TKG	resting	-63.55	19.00	2.785
+8TKG	resting	-63.05	19.50	2.785
+8TKG	resting	-62.55	20.00	2.785
+8TKG	resting	-62.05	20.50	2.785
+8TKG	resting	-61.55	21.00	2.969
+8TKG	resting	-61.05	21.50	2.969
+8TKG	resting	-60.55	22.00	2.969
+8TKG	resting	-60.05	22.50	2.969
+8TKG	resting	-59.55	23.00	2.969
+8TKG	resting	-59.05	23.50	2.969
+8TKG	resting	-58.55	24.00	5.590
+8TKG	resting	-58.05	24.50	5.590
+8TKG	resting	-57.55	25.00	5.590
+8TKG	resting	-57.05	25.50	5.590
+8TKG	resting	-56.55	26.00	6.612
+8TKG	resting	-56.05	26.50	4.606
+8TKG	resting	-55.55	27.00	4.606
+8TKG	resting	-55.05	27.50	4.606
+8TKG	resting	-54.55	28.00	4.606
+8TKG	resting	-54.05	28.50	4.606
+8TKG	resting	-53.55	29.00	4.606
+8TKG	resting	-53.05	29.50	6.733
+8TKG	resting	-52.55	30.00	6.733
+8TKG	resting	-52.05	30.50	6.733
+8TKG	resting	-51.55	31.00	6.736
+8TKG	resting	-51.05	31.50	6.736
+8TKG	resting	-50.55	32.00	7.876
+8TKG	resting	-50.05	32.50	6.738
+8TKG	resting	-49.55	33.00	6.738
+8TKG	resting	-49.05	33.50	6.495
+8TKG	resting	-48.55	34.00	6.495
+8TKG	resting	-48.05	34.50	6.495
+8TKG	resting	-47.55	35.00	6.495
+8TKG	resting	-47.05	35.50	6.495
+8TKG	resting	-46.55	36.00	6.495
+8TKG	resting	-46.05	36.50	8.983
+8TKG	resting	-45.55	37.00	8.983
+8TKG	resting	-45.05	37.50	9.415
+8TKG	resting	-44.55	38.00	7.137
+8TKG	resting	-44.05	38.50	7.137
+8TKG	resting	-43.55	39.00	7.137
+8TKG	resting	-43.05	39.50	7.137
+8TKG	resting	-42.55	40.00	7.137
+8TKG	resting	-42.05	40.50	7.137
+8TKG	resting	-41.55	41.00	9.382
+8TKG	resting	-41.05	41.50	9.382
+8TKG	resting	-40.55	42.00	10.160
+8TKG	resting	-40.05	42.50	9.729
+8TKG	resting	-39.55	43.00	8.765
+8TKG	resting	-39.05	43.50	8.765
+8TKG	resting	-38.55	44.00	8.765
+8TKG	resting	-38.05	44.50	8.765
+8TKG	resting	-37.55	45.00	8.765
+8TKG	resting	-37.05	45.50	8.765
+8TKG	resting	-36.55	46.00	12.226
+8TKF	activated	-112.92	-27.00	18.304
+8TKF	activated	-112.42	-26.50	18.304
+8TKF	activated	-111.92	-26.00	15.864
+8TKF	activated	-111.42	-25.50	15.864
+8TKF	activated	-110.92	-25.00	13.492
+8TKF	activated	-110.42	-24.50	13.492
+8TKF	activated	-109.92	-24.00	13.492
+8TKF	activated	-109.42	-23.50	10.801
+8TKF	activated	-108.92	-23.00	10.801
+8TKF	activated	-108.42	-22.50	10.801
+8TKF	activated	-107.92	-22.00	10.801
+8TKF	activated	-107.42	-21.50	10.801
+8TKF	activated	-106.92	-21.00	10.801
+8TKF	activated	-106.42	-20.50	11.264
+8TKF	activated	-105.92	-20.00	12.187
+8TKF	activated	-105.42	-19.50	7.254
+8TKF	activated	-104.92	-19.00	7.254
+8TKF	activated	-104.42	-18.50	7.254
+8TKF	activated	-103.92	-18.00	7.254
+8TKF	activated	-103.42	-17.50	7.233
+8TKF	activated	-102.92	-17.00	7.233
+8TKF	activated	-102.42	-16.50	7.233
+8TKF	activated	-101.92	-16.00	7.233
+8TKF	activated	-101.42	-15.50	7.233
+8TKF	activated	-100.92	-15.00	7.233
+8TKF	activated	-100.42	-14.50	8.193
+8TKF	activated	-99.92	-14.00	8.193
+8TKF	activated	-99.42	-13.50	8.193
+8TKF	activated	-98.92	-13.00	8.193
+8TKF	activated	-98.42	-12.50	8.193
+8TKF	activated	-97.92	-12.00	8.193
+8TKF	activated	-97.42	-11.50	8.757
+8TKF	activated	-96.92	-11.00	11.614
+8TKF	activated	-96.42	-10.50	11.614
+8TKF	activated	-95.92	-10.00	10.547
+8TKF	activated	-95.42	-9.50	8.063
+8TKF	activated	-94.92	-9.00	8.063
+8TKF	activated	-94.42	-8.50	8.063
+8TKF	activated	-93.92	-8.00	8.063
+8TKF	activated	-93.42	-7.50	8.063
+8TKF	activated	-92.92	-7.00	7.619
+8TKF	activated	-92.42	-6.50	7.619
+8TKF	activated	-91.92	-6.00	7.425
+8TKF	activated	-91.42	-5.50	7.425
+8TKF	activated	-90.92	-5.00	6.778
+8TKF	activated	-90.42	-4.50	6.778
+8TKF	activated	-89.92	-4.00	6.778
+8TKF	activated	-89.42	-3.50	6.778
+8TKF	activated	-88.92	-3.00	6.778
+8TKF	activated	-88.42	-2.50	6.646
+8TKF	activated	-87.92	-2.00	6.646
+8TKF	activated	-87.42	-1.50	4.991
+8TKF	activated	-86.92	-1.00	4.991
+8TKF	activated	-86.42	-0.50	4.869
+8TKF	activated	-85.92	0.00	4.756
+8TKF	activated	-85.42	0.50	4.756
+8TKF	activated	-84.92	1.00	4.756
+8TKF	activated	-84.42	1.50	4.756
+8TKF	activated	-83.92	2.00	4.756
+8TKF	activated	-83.42	2.50	4.756
+8TKF	activated	-82.92	3.00	6.511
+8TKF	activated	-82.42	3.50	7.929
+8TKF	activated	-81.92	4.00	7.929
+8TKF	activated	-81.42	4.50	7.929
+8TKF	activated	-80.92	5.00	7.929
+8TKF	activated	-80.42	5.50	7.929
+8TKF	activated	-79.92	6.00	7.929
+8TKF	activated	-79.42	6.50	7.740
+8TKF	activated	-78.92	7.00	7.740
+8TKF	activated	-78.42	7.50	7.740
+8TKF	activated	-77.92	8.00	7.740
+8TKF	activated	-77.42	8.50	7.740
+8TKF	activated	-76.92	9.00	7.740
+8TKF	activated	-76.42	9.50	5.922
+8TKF	activated	-75.92	10.00	5.829
+8TKF	activated	-75.42	10.50	5.829
+8TKF	activated	-74.92	11.00	5.829
+8TKF	activated	-74.42	11.50	5.829
+8TKF	activated	-73.92	12.00	5.829
+8TKF	activated	-73.42	12.50	5.829
+8TKF	activated	-72.92	13.00	6.208
+8TKF	activated	-72.42	13.50	7.042
+8TKF	activated	-71.92	14.00	7.042
+8TKF	activated	-71.42	14.50	6.783
+8TKF	activated	-70.92	15.00	6.783
+8TKF	activated	-70.42	15.50	6.783
+8TKF	activated	-69.92	16.00	6.783
+8TKF	activated	-69.42	16.50	6.783
+8TKF	activated	-68.92	17.00	6.783
+8TKF	activated	-68.42	17.50	7.035
+8TKF	activated	-67.92	18.00	7.035
+8TKF	activated	-67.42	18.50	7.035
+8TKF	activated	-66.92	19.00	7.035
+8TKF	activated	-66.42	19.50	7.035
+8TKF	activated	-65.92	20.00	5.887
+8TKF	activated	-65.42	20.50	5.887
+8TKF	activated	-64.92	21.00	5.887
+8TKF	activated	-64.42	21.50	5.887
+8TKF	activated	-63.92	22.00	5.887
+8TKF	activated	-63.42	22.50	5.887
+8TKF	activated	-62.92	23.00	6.612
+8TKF	activated	-62.42	23.50	6.612
+8TKF	activated	-61.92	24.00	7.725
+8TKF	activated	-61.42	24.50	8.406
+8TKF	activated	-60.92	25.00	8.406
+8TKF	activated	-60.42	25.50	9.080
+8TKF	activated	-59.92	26.00	8.998
+8TKF	activated	-59.42	26.50	7.940
+8TKF	activated	-58.92	27.00	7.940
+8TKF	activated	-58.42	27.50	7.940
+8TKF	activated	-57.92	28.00	7.940
+8TKF	activated	-57.42	28.50	7.940
+8TKF	activated	-56.92	29.00	7.940
+8TKF	activated	-56.42	29.50	10.220
+8TKF	activated	-55.92	30.00	10.220
+8TKF	activated	-55.42	30.50	10.220
+8TKF	activated	-54.92	31.00	10.220
+8TKF	activated	-54.42	31.50	10.220
+8TKF	activated	-53.92	32.00	10.220
+8TKF	activated	-53.42	32.50	13.123
+8TKF	activated	-52.92	33.00	13.247
+8TKF	activated	-52.42	33.50	11.484
+8TKF	activated	-51.92	34.00	11.484
+8TKF	activated	-51.42	34.50	11.484
+8TKF	activated	-50.92	35.00	11.484
+8TKF	activated	-50.42	35.50	11.484
+8TKF	activated	-49.92	36.00	11.484
+8TKF	activated	-49.42	36.50	11.624
+8TKF	activated	-48.92	37.00	11.624
+8TKF	activated	-48.42	37.50	11.685
+8TKF	activated	-47.92	38.00	11.685
+8TKF	activated	-47.42	38.50	16.571
+8TKF	activated	-46.92	39.00	17.797
+8TKF	activated	-46.42	39.50	17.797
+8TKF	activated	-45.92	40.00	16.566
+8TKF	activated	-45.42	40.50	16.566
+8TKF	activated	-44.92	41.00	16.566
+8TKF	activated	-44.42	41.50	16.566
+8TKF	activated	-43.92	42.00	16.566
+8TKF	activated	-43.42	42.50	16.566
+6DQJ	apo	-114.89	-23.50	13.757
+6DQJ	apo	-114.39	-23.00	13.757
+6DQJ	apo	-113.89	-22.50	13.757
+6DQJ	apo	-113.39	-22.00	13.757
+6DQJ	apo	-112.89	-21.50	13.757
+6DQJ	apo	-112.39	-21.00	13.080
+6DQJ	apo	-111.89	-20.50	13.080
+6DQJ	apo	-111.39	-20.00	10.969
+6DQJ	apo	-110.89	-19.50	10.969
+6DQJ	apo	-110.39	-19.00	10.969
+6DQJ	apo	-109.89	-18.50	10.374
+6DQJ	apo	-109.39	-18.00	10.374
+6DQJ	apo	-108.89	-17.50	10.374
+6DQJ	apo	-108.39	-17.00	10.374
+6DQJ	apo	-107.89	-16.50	7.127
+6DQJ	apo	-107.39	-16.00	7.127
+6DQJ	apo	-106.89	-15.50	7.127
+6DQJ	apo	-106.39	-15.00	7.127
+6DQJ	apo	-105.89	-14.50	6.995
+6DQJ	apo	-105.39	-14.00	6.995
+6DQJ	apo	-104.89	-13.50	6.995
+6DQJ	apo	-104.39	-13.00	6.995
+6DQJ	apo	-103.89	-12.50	6.995
+6DQJ	apo	-103.39	-12.00	6.995
+6DQJ	apo	-102.89	-11.50	9.602
+6DQJ	apo	-102.39	-11.00	7.250
+6DQJ	apo	-101.89	-10.50	7.250
+6DQJ	apo	-101.39	-10.00	7.250
+6DQJ	apo	-100.89	-9.50	7.250
+6DQJ	apo	-100.39	-9.00	7.250
+6DQJ	apo	-99.89	-8.50	7.250
+6DQJ	apo	-99.39	-8.00	8.271
+6DQJ	apo	-98.89	-7.50	11.172
+6DQJ	apo	-98.39	-7.00	8.660
+6DQJ	apo	-97.89	-6.50	8.660
+6DQJ	apo	-97.39	-6.00	8.660
+6DQJ	apo	-96.89	-5.50	8.660
+6DQJ	apo	-96.39	-5.00	8.660
+6DQJ	apo	-95.89	-4.50	8.660
+6DQJ	apo	-95.39	-4.00	7.627
+6DQJ	apo	-94.89	-3.50	6.139
+6DQJ	apo	-94.39	-3.00	6.139
+6DQJ	apo	-93.89	-2.50	6.139
+6DQJ	apo	-93.39	-2.00	6.139
+6DQJ	apo	-92.89	-1.50	6.139
+6DQJ	apo	-92.39	-1.00	6.139
+6DQJ	apo	-91.89	-0.50	6.466
+6DQJ	apo	-91.39	0.00	4.264
+6DQJ	apo	-90.89	0.50	4.264
+6DQJ	apo	-90.39	1.00	4.264
+6DQJ	apo	-89.89	1.50	4.264
+6DQJ	apo	-89.39	2.00	4.264
+6DQJ	apo	-88.89	2.50	4.264
+6DQJ	apo	-88.39	3.00	5.247
+6DQJ	apo	-87.89	3.50	5.247
+6DQJ	apo	-87.39	4.00	5.247
+6DQJ	apo	-86.89	4.50	5.247
+6DQJ	apo	-86.39	5.00	5.247
+6DQJ	apo	-85.89	5.50	8.680
+6DQJ	apo	-85.39	6.00	8.680
+6DQJ	apo	-84.89	6.50	8.680
+6DQJ	apo	-84.39	7.00	7.929
+6DQJ	apo	-83.89	7.50	7.929
+6DQJ	apo	-83.39	8.00	7.929
+6DQJ	apo	-82.89	8.50	7.929
+6DQJ	apo	-82.39	9.00	7.929
+6DQJ	apo	-81.89	9.50	7.929
+6DQJ	apo	-81.39	10.00	8.315
+6DQJ	apo	-80.89	10.50	8.315
+6DQJ	apo	-80.39	11.00	8.315
+6DQJ	apo	-79.89	11.50	8.315
+6DQJ	apo	-79.39	12.00	8.335
+6DQJ	apo	-78.89	12.50	8.335
+6DQJ	apo	-78.39	13.00	5.485
+6DQJ	apo	-77.89	13.50	5.485
+6DQJ	apo	-77.39	14.00	5.485
+6DQJ	apo	-76.89	14.50	5.485
+6DQJ	apo	-76.39	15.00	5.485
+6DQJ	apo	-75.89	15.50	5.485
+6DQJ	apo	-75.39	16.00	3.251
+6DQJ	apo	-74.89	16.50	2.678
+6DQJ	apo	-74.39	17.00	2.678
+6DQJ	apo	-73.89	17.50	2.678
+6DQJ	apo	-73.39	18.00	2.678
+6DQJ	apo	-72.89	18.50	2.678
+6DQJ	apo	-72.39	19.00	2.678
+6DQJ	apo	-71.89	19.50	3.391
+6DQJ	apo	-71.39	20.00	3.391
+6DQJ	apo	-70.89	20.50	4.252
+6DQJ	apo	-70.39	21.00	2.681
+6DQJ	apo	-69.89	21.50	2.681
+6DQJ	apo	-69.39	22.00	2.681
+6DQJ	apo	-68.89	22.50	2.681
+6DQJ	apo	-68.39	23.00	2.681
+6DQJ	apo	-67.89	23.50	2.681
+6DQJ	apo	-67.39	24.00	3.145
+6DQJ	apo	-66.89	24.50	3.145
+6DQJ	apo	-66.39	25.00	3.145
+6DQJ	apo	-65.89	25.50	3.145
+6DQJ	apo	-65.39	26.00	3.145
+6DQJ	apo	-64.89	26.50	3.145
+6DQJ	apo	-64.39	27.00	5.757
+6DQJ	apo	-63.89	27.50	5.757
+6DQJ	apo	-63.39	28.00	5.757
+6DQJ	apo	-62.89	28.50	5.757
+6DQJ	apo	-62.39	29.00	6.698
+6DQJ	apo	-61.89	29.50	4.860
+6DQJ	apo	-61.39	30.00	4.860
+6DQJ	apo	-60.89	30.50	4.860
+6DQJ	apo	-60.39	31.00	4.860
+6DQJ	apo	-59.89	31.50	4.860
+6DQJ	apo	-59.39	32.00	4.860
+6DQJ	apo	-58.89	32.50	4.871
+6DQJ	apo	-58.39	33.00	4.871
+6DQJ	apo	-57.89	33.50	4.871
+6DQJ	apo	-57.39	34.00	4.871
+6DQJ	apo	-56.89	34.50	6.122
+6DQJ	apo	-56.39	35.00	6.423
+6DQJ	apo	-55.89	35.50	6.423
+6DQJ	apo	-55.39	36.00	6.963
+6DQJ	apo	-54.89	36.50	6.581
+6DQJ	apo	-54.39	37.00	6.581
+6DQJ	apo	-53.89	37.50	6.581
+6DQJ	apo	-53.39	38.00	6.581
+6DQJ	apo	-52.89	38.50	6.581
+6DQJ	apo	-52.39	39.00	6.581
+6DQJ	apo	-51.89	39.50	7.540
+6DQJ	apo	-51.39	40.00	7.540
+6DQJ	apo	-50.89	40.50	8.903
+6DQJ	apo	-50.39	41.00	8.529
+6DQJ	apo	-49.89	41.50	8.504
+6DQJ	apo	-49.39	42.00	8.504
+6DQJ	apo	-48.89	42.50	8.504
+6DQJ	apo	-48.39	43.00	8.504
+6DQJ	apo	-47.89	43.50	8.504
+6DQJ	apo	-47.39	44.00	8.504
+6DQJ	apo	-46.89	44.50	9.760
+6DQJ	apo	-46.39	45.00	10.370
+6DQJ	apo	-45.89	45.50	9.841
+6DQJ	apo	-45.39	46.00	9.841
+6DQJ	apo	-44.89	46.50	8.862
+6DQJ	apo	-44.39	47.00	8.862
+6DQJ	apo	-43.89	47.50	8.862
+6DQJ	apo	-43.39	48.00	8.862
+6DQJ	apo	-42.89	48.50	8.862
+6DQJ	apo	-42.39	49.00	8.862
+8TLA	higher-order inhibited	-105.18	-25.50	14.921
+8TLA	higher-order inhibited	-104.68	-25.00	14.921
+8TLA	higher-order inhibited	-104.18	-24.50	13.588
+8TLA	higher-order inhibited	-103.68	-24.00	13.588
+8TLA	higher-order inhibited	-103.18	-23.50	13.037
+8TLA	higher-order inhibited	-102.68	-23.00	10.369
+8TLA	higher-order inhibited	-102.18	-22.50	10.369
+8TLA	higher-order inhibited	-101.68	-22.00	10.369
+8TLA	higher-order inhibited	-101.18	-21.50	10.369
+8TLA	higher-order inhibited	-100.68	-21.00	10.369
+8TLA	higher-order inhibited	-100.18	-20.50	10.369
+8TLA	higher-order inhibited	-99.68	-20.00	8.569
+8TLA	higher-order inhibited	-99.18	-19.50	8.569
+8TLA	higher-order inhibited	-98.68	-19.00	8.569
+8TLA	higher-order inhibited	-98.18	-18.50	8.569
+8TLA	higher-order inhibited	-97.68	-18.00	8.258
+8TLA	higher-order inhibited	-97.18	-17.50	8.258
+8TLA	higher-order inhibited	-96.68	-17.00	7.569
+8TLA	higher-order inhibited	-96.18	-16.50	7.049
+8TLA	higher-order inhibited	-95.68	-16.00	7.049
+8TLA	higher-order inhibited	-95.18	-15.50	7.049
+8TLA	higher-order inhibited	-94.68	-15.00	7.049
+8TLA	higher-order inhibited	-94.18	-14.50	6.623
+8TLA	higher-order inhibited	-93.68	-14.00	6.623
+8TLA	higher-order inhibited	-93.18	-13.50	6.623
+8TLA	higher-order inhibited	-92.68	-13.00	6.623
+8TLA	higher-order inhibited	-92.18	-12.50	6.623
+8TLA	higher-order inhibited	-91.68	-12.00	6.623
+8TLA	higher-order inhibited	-91.18	-11.50	7.650
+8TLA	higher-order inhibited	-90.68	-11.00	7.650
+8TLA	higher-order inhibited	-90.18	-10.50	8.300
+8TLA	higher-order inhibited	-89.68	-10.00	9.597
+8TLA	higher-order inhibited	-89.18	-9.50	8.682
+8TLA	higher-order inhibited	-88.68	-9.00	8.682
+8TLA	higher-order inhibited	-88.18	-8.50	8.682
+8TLA	higher-order inhibited	-87.68	-8.00	8.682
+8TLA	higher-order inhibited	-87.18	-7.50	8.682
+8TLA	higher-order inhibited	-86.68	-7.00	8.288
+8TLA	higher-order inhibited	-86.18	-6.50	7.400
+8TLA	higher-order inhibited	-85.68	-6.00	7.400
+8TLA	higher-order inhibited	-85.18	-5.50	6.623
+8TLA	higher-order inhibited	-84.68	-5.00	5.840
+8TLA	higher-order inhibited	-84.18	-4.50	5.840
+8TLA	higher-order inhibited	-83.68	-4.00	5.840
+8TLA	higher-order inhibited	-83.18	-3.50	5.840
+8TLA	higher-order inhibited	-82.68	-3.00	5.840
+8TLA	higher-order inhibited	-82.18	-2.50	5.840
+8TLA	higher-order inhibited	-81.68	-2.00	6.096
+8TLA	higher-order inhibited	-81.18	-1.50	5.143
+8TLA	higher-order inhibited	-80.68	-1.00	4.578
+8TLA	higher-order inhibited	-80.18	-0.50	4.578
+8TLA	higher-order inhibited	-79.68	0.00	4.302
+8TLA	higher-order inhibited	-79.18	0.50	4.302
+8TLA	higher-order inhibited	-78.68	1.00	4.302
+8TLA	higher-order inhibited	-78.18	1.50	4.302
+8TLA	higher-order inhibited	-77.68	2.00	4.302
+8TLA	higher-order inhibited	-77.18	2.50	4.302
+8TLA	higher-order inhibited	-76.68	3.00	6.066
+8TLA	higher-order inhibited	-76.18	3.50	6.066
+8TLA	higher-order inhibited	-75.68	4.00	7.314
+8TLA	higher-order inhibited	-75.18	4.50	7.314
+8TLA	higher-order inhibited	-74.68	5.00	7.314
+8TLA	higher-order inhibited	-74.18	5.50	7.314
+8TLA	higher-order inhibited	-73.68	6.00	7.314
+8TLA	higher-order inhibited	-73.18	6.50	7.314
+8TLA	higher-order inhibited	-72.68	7.00	7.725
+8TLA	higher-order inhibited	-72.18	7.50	7.725
+8TLA	higher-order inhibited	-71.68	8.00	7.725
+8TLA	higher-order inhibited	-71.18	8.50	7.725
+8TLA	higher-order inhibited	-70.68	9.00	7.725
+8TLA	higher-order inhibited	-70.18	9.50	6.180
+8TLA	higher-order inhibited	-69.68	10.00	6.180
+8TLA	higher-order inhibited	-69.18	10.50	4.522
+8TLA	higher-order inhibited	-68.68	11.00	4.522
+8TLA	higher-order inhibited	-68.18	11.50	4.522
+8TLA	higher-order inhibited	-67.68	12.00	4.522
+8TLA	higher-order inhibited	-67.18	12.50	4.522
+8TLA	higher-order inhibited	-66.68	13.00	3.483
+8TLA	higher-order inhibited	-66.18	13.50	2.385
+8TLA	higher-order inhibited	-65.68	14.00	2.385
+8TLA	higher-order inhibited	-65.18	14.50	2.385
+8TLA	higher-order inhibited	-64.68	15.00	2.385
+8TLA	higher-order inhibited	-64.18	15.50	2.385
+8TLA	higher-order inhibited	-63.68	16.00	2.385
+8TLA	higher-order inhibited	-63.18	16.50	2.698
+8TLA	higher-order inhibited	-62.68	17.00	3.257
+8TLA	higher-order inhibited	-62.18	17.50	2.527
+8TLA	higher-order inhibited	-61.68	18.00	2.527
+8TLA	higher-order inhibited	-61.18	18.50	2.527
+8TLA	higher-order inhibited	-60.68	19.00	2.527
+8TLA	higher-order inhibited	-60.18	19.50	2.527
+8TLA	higher-order inhibited	-59.68	20.00	2.527
+8TLA	higher-order inhibited	-59.18	20.50	2.597
+8TLA	higher-order inhibited	-58.68	21.00	2.597
+8TLA	higher-order inhibited	-58.18	21.50	2.597
+8TLA	higher-order inhibited	-57.68	22.00	2.597
+8TLA	higher-order inhibited	-57.18	22.50	2.597
+8TLA	higher-order inhibited	-56.68	23.00	2.597
+8TLA	higher-order inhibited	-56.18	23.50	5.044
+8TLA	higher-order inhibited	-55.68	24.00	5.044
+8TLA	higher-order inhibited	-55.18	24.50	5.044
+8TLA	higher-order inhibited	-54.68	25.00	5.044
+8TLA	higher-order inhibited	-54.18	25.50	6.058
+8TLA	higher-order inhibited	-53.68	26.00	4.941
+8TLA	higher-order inhibited	-53.18	26.50	4.320
+8TLA	higher-order inhibited	-52.68	27.00	4.320
+8TLA	higher-order inhibited	-52.18	27.50	4.320
+8TLA	higher-order inhibited	-51.68	28.00	4.320
+8TLA	higher-order inhibited	-51.18	28.50	4.320
+8TLA	higher-order inhibited	-50.68	29.00	4.320
+8TLA	higher-order inhibited	-50.18	29.50	4.693
+8TLA	higher-order inhibited	-49.68	30.00	4.693
+8TLA	higher-order inhibited	-49.18	30.50	5.636
+8TLA	higher-order inhibited	-48.68	31.00	5.636
+8TLA	higher-order inhibited	-48.18	31.50	5.636
+8TLA	higher-order inhibited	-47.68	32.00	5.636
+8TLA	higher-order inhibited	-47.18	32.50	6.618
+8TLA	higher-order inhibited	-46.68	33.00	6.618
+8TLA	higher-order inhibited	-46.18	33.50	6.543
+8TLA	higher-order inhibited	-45.68	34.00	6.543
+8TLA	higher-order inhibited	-45.18	34.50	6.543
+8TLA	higher-order inhibited	-44.68	35.00	6.543
+8TLA	higher-order inhibited	-44.18	35.50	6.543
+8TLA	higher-order inhibited	-43.68	36.00	6.543
+8TLA	higher-order inhibited	-43.18	36.50	6.551
+8TLA	higher-order inhibited	-42.68	37.00	8.673
+8TLA	higher-order inhibited	-42.18	37.50	7.395
+8TLA	higher-order inhibited	-41.68	38.00	7.395
+8TLA	higher-order inhibited	-41.18	38.50	7.218
+8TLA	higher-order inhibited	-40.68	39.00	7.218
+8TLA	higher-order inhibited	-40.18	39.50	7.218
+8TLA	higher-order inhibited	-39.68	40.00	7.218
+8TLA	higher-order inhibited	-39.18	40.50	7.218
+8TLA	higher-order inhibited	-38.68	41.00	7.218
+8TLA	higher-order inhibited	-38.18	41.50	8.282
+8TLA	higher-order inhibited	-37.68	42.00	8.282
+8TLA	higher-order inhibited	-37.18	42.50	8.282
+8TLA	higher-order inhibited	-36.68	43.00	8.318
+8TLA	higher-order inhibited	-36.18	43.50	8.318
+8TLA	higher-order inhibited	-35.68	44.00	8.318
+8TLA	higher-order inhibited	-35.18	44.50	8.318
+8TLA	higher-order inhibited	-34.68	45.00	8.318
+8TLA	higher-order inhibited	-34.18	45.50	8.614
+8TLA	higher-order inhibited	-33.68	46.00	12.065
+8TLA	higher-order inhibited	-33.18	46.50	12.065
+8TKH	labile resting	-115.67	-25.50	19.159
+8TKH	labile resting	-115.17	-25.00	16.504
+8TKH	labile resting	-114.67	-24.50	14.346
+8TKH	labile resting	-114.17	-24.00	14.346
+8TKH	labile resting	-113.67	-23.50	10.850
+8TKH	labile resting	-113.17	-23.00	10.850
+8TKH	labile resting	-112.67	-22.50	10.850
+8TKH	labile resting	-112.17	-22.00	10.850
+8TKH	labile resting	-111.67	-21.50	10.850
+8TKH	labile resting	-111.17	-21.00	10.850
+8TKH	labile resting	-110.67	-20.50	11.064
+8TKH	labile resting	-110.17	-20.00	11.928
+8TKH	labile resting	-109.67	-19.50	11.928
+8TKH	labile resting	-109.17	-19.00	11.928
+8TKH	labile resting	-108.67	-18.50	10.880
+8TKH	labile resting	-108.17	-18.00	10.514
+8TKH	labile resting	-107.67	-17.50	6.978
+8TKH	labile resting	-107.17	-17.00	6.978
+8TKH	labile resting	-106.67	-16.50	6.978
+8TKH	labile resting	-106.17	-16.00	6.978
+8TKH	labile resting	-105.67	-15.50	6.803
+8TKH	labile resting	-105.17	-15.00	6.715
+8TKH	labile resting	-104.67	-14.50	6.715
+8TKH	labile resting	-104.17	-14.00	6.715
+8TKH	labile resting	-103.67	-13.50	6.715
+8TKH	labile resting	-103.17	-13.00	6.715
+8TKH	labile resting	-102.67	-12.50	6.715
+8TKH	labile resting	-102.17	-12.00	9.566
+8TKH	labile resting	-101.67	-11.50	9.566
+8TKH	labile resting	-101.17	-11.00	9.566
+8TKH	labile resting	-100.67	-10.50	9.566
+8TKH	labile resting	-100.17	-10.00	8.840
+8TKH	labile resting	-99.67	-9.50	8.840
+8TKH	labile resting	-99.17	-9.00	8.840
+8TKH	labile resting	-98.67	-8.50	8.840
+8TKH	labile resting	-98.17	-8.00	8.840
+8TKH	labile resting	-97.67	-7.50	8.840
+8TKH	labile resting	-97.17	-7.00	8.880
+8TKH	labile resting	-96.67	-6.50	7.664
+8TKH	labile resting	-96.17	-6.00	5.942
+8TKH	labile resting	-95.67	-5.50	5.816
+8TKH	labile resting	-95.17	-5.00	5.816
+8TKH	labile resting	-94.67	-4.50	5.816
+8TKH	labile resting	-94.17	-4.00	5.816
+8TKH	labile resting	-93.67	-3.50	5.816
+8TKH	labile resting	-93.17	-3.00	5.816
+8TKH	labile resting	-92.67	-2.50	6.550
+8TKH	labile resting	-92.17	-2.00	6.550
+8TKH	labile resting	-91.67	-1.50	5.970
+8TKH	labile resting	-91.17	-1.00	4.857
+8TKH	labile resting	-90.67	-0.50	4.857
+8TKH	labile resting	-90.17	0.00	4.595
+8TKH	labile resting	-89.67	0.50	4.595
+8TKH	labile resting	-89.17	1.00	4.595
+8TKH	labile resting	-88.67	1.50	4.595
+8TKH	labile resting	-88.17	2.00	4.595
+8TKH	labile resting	-87.67	2.50	4.595
+8TKH	labile resting	-87.17	3.00	6.359
+8TKH	labile resting	-86.67	3.50	8.560
+8TKH	labile resting	-86.17	4.00	7.920
+8TKH	labile resting	-85.67	4.50	7.920
+8TKH	labile resting	-85.17	5.00	7.920
+8TKH	labile resting	-84.67	5.50	7.920
+8TKH	labile resting	-84.17	6.00	7.920
+8TKH	labile resting	-83.67	6.50	7.920
+8TKH	labile resting	-83.17	7.00	8.460
+8TKH	labile resting	-82.67	7.50	8.460
+8TKH	labile resting	-82.17	8.00	8.315
+8TKH	labile resting	-81.67	8.50	8.315
+8TKH	labile resting	-81.17	9.00	8.315
+8TKH	labile resting	-80.67	9.50	5.594
+8TKH	labile resting	-80.17	10.00	5.594
+8TKH	labile resting	-79.67	10.50	5.594
+8TKH	labile resting	-79.17	11.00	5.594
+8TKH	labile resting	-78.67	11.50	5.594
+8TKH	labile resting	-78.17	12.00	5.594
+8TKH	labile resting	-77.67	12.50	5.708
+8TKH	labile resting	-77.17	13.00	5.708
+8TKH	labile resting	-76.67	13.50	5.005
+8TKH	labile resting	-76.17	14.00	2.597
+8TKH	labile resting	-75.67	14.50	1.947
+8TKH	labile resting	-75.17	15.00	1.947
+8TKH	labile resting	-74.67	15.50	1.947
+8TKH	labile resting	-74.17	16.00	1.947
+8TKH	labile resting	-73.67	16.50	1.947
+8TKH	labile resting	-73.17	17.00	1.947
+8TKH	labile resting	-72.67	17.50	2.340
+8TKH	labile resting	-72.17	18.00	2.340
+8TKH	labile resting	-71.67	18.50	2.340
+8TKH	labile resting	-71.17	19.00	2.340
+8TKH	labile resting	-70.67	19.50	2.340
+8TKH	labile resting	-70.17	20.00	2.340
+8TKH	labile resting	-69.67	20.50	2.709
+8TKH	labile resting	-69.17	21.00	2.709
+8TKH	labile resting	-68.67	21.50	2.709
+8TKH	labile resting	-68.17	22.00	2.709
+8TKH	labile resting	-67.67	22.50	2.709
+8TKH	labile resting	-67.17	23.00	2.709
+8TKH	labile resting	-66.67	23.50	3.035
+8TKH	labile resting	-66.17	24.00	5.281
+8TKH	labile resting	-65.67	24.50	5.281
+8TKH	labile resting	-65.17	25.00	5.281
+8TKH	labile resting	-64.67	25.50	6.364
+8TKH	labile resting	-64.17	26.00	4.381
+8TKH	labile resting	-63.67	26.50	4.381
+8TKH	labile resting	-63.17	27.00	4.381
+8TKH	labile resting	-62.67	27.50	4.381
+8TKH	labile resting	-62.17	28.00	4.381
+8TKH	labile resting	-61.67	28.50	4.381
+8TKH	labile resting	-61.17	29.00	4.776
+8TKH	labile resting	-60.67	29.50	4.776
+8TKH	labile resting	-60.17	30.00	4.776
+8TKH	labile resting	-59.67	30.50	4.776
+8TKH	labile resting	-59.17	31.00	4.776
+8TKH	labile resting	-58.67	31.50	4.776
+8TKH	labile resting	-58.17	32.00	6.566
+8TKH	labile resting	-57.67	32.50	6.566
+8TKH	labile resting	-57.17	33.00	6.566
+8TKH	labile resting	-56.67	33.50	6.566
+8TKH	labile resting	-56.17	34.00	6.566
+8TKH	labile resting	-55.67	34.50	6.566
+8TKH	labile resting	-55.17	35.00	7.632
+8TKH	labile resting	-54.67	35.50	7.632
+8TKH	labile resting	-54.17	36.00	7.632
+8TKH	labile resting	-53.67	36.50	8.115
+8TKH	labile resting	-53.17	37.00	8.115
+8TKH	labile resting	-52.67	37.50	7.223
+8TKH	labile resting	-52.17	38.00	6.530
+8TKH	labile resting	-51.67	38.50	6.347
+8TKH	labile resting	-51.17	39.00	6.347
+8TKH	labile resting	-50.67	39.50	6.347
+8TKH	labile resting	-50.17	40.00	6.347
+8TKH	labile resting	-49.67	40.50	6.347
+8TKH	labile resting	-49.17	41.00	6.347
+8TKH	labile resting	-48.67	41.50	6.509
+8TKH	labile resting	-48.17	42.00	8.213
+8TKH	labile resting	-47.67	42.50	7.960
+8TKH	labile resting	-47.17	43.00	7.960
+8TKH	labile resting	-46.67	43.50	7.960
+8TKH	labile resting	-46.17	44.00	7.960
+8TKH	labile resting	-45.67	44.50	7.960
+8TKH	labile resting	-45.17	45.00	7.960
+8TKH	labile resting	-44.67	45.50	11.496
+8TKH	labile resting	-44.17	46.00	11.496
+7T3P	preactivated	-112.49	-23.50	12.091
+7T3P	preactivated	-111.99	-23.00	11.406
+7T3P	preactivated	-111.49	-22.50	11.406
+7T3P	preactivated	-110.99	-22.00	11.406
+7T3P	preactivated	-110.49	-21.50	11.406
+7T3P	preactivated	-109.99	-21.00	11.406
+7T3P	preactivated	-109.49	-20.50	11.406
+7T3P	preactivated	-108.99	-20.00	12.370
+7T3P	preactivated	-108.49	-19.50	11.890
+7T3P	preactivated	-107.99	-19.00	8.964
+7T3P	preactivated	-107.49	-18.50	8.214
+7T3P	preactivated	-106.99	-18.00	8.214
+7T3P	preactivated	-106.49	-17.50	8.214
+7T3P	preactivated	-105.99	-17.00	8.214
+7T3P	preactivated	-105.49	-16.50	8.214
+7T3P	preactivated	-104.99	-16.00	8.214
+7T3P	preactivated	-104.49	-15.50	8.636
+7T3P	preactivated	-103.99	-15.00	8.867
+7T3P	preactivated	-103.49	-14.50	8.867
+7T3P	preactivated	-102.99	-14.00	8.867
+7T3P	preactivated	-102.49	-13.50	8.867
+7T3P	preactivated	-101.99	-13.00	8.867
+7T3P	preactivated	-101.49	-12.50	8.867
+7T3P	preactivated	-100.99	-12.00	9.772
+7T3P	preactivated	-100.49	-11.50	9.772
+7T3P	preactivated	-99.99	-11.00	9.772
+7T3P	preactivated	-99.49	-10.50	10.823
+7T3P	preactivated	-98.99	-10.00	11.833
+7T3P	preactivated	-98.49	-9.50	11.833
+7T3P	preactivated	-97.99	-9.00	8.253
+7T3P	preactivated	-97.49	-8.50	8.253
+7T3P	preactivated	-96.99	-8.00	8.253
+7T3P	preactivated	-96.49	-7.50	8.253
+7T3P	preactivated	-95.99	-7.00	8.253
+7T3P	preactivated	-95.49	-6.50	8.253
+7T3P	preactivated	-94.99	-6.00	7.833
+7T3P	preactivated	-94.49	-5.50	6.370
+7T3P	preactivated	-93.99	-5.00	6.370
+7T3P	preactivated	-93.49	-4.50	6.370
+7T3P	preactivated	-92.99	-4.00	6.370
+7T3P	preactivated	-92.49	-3.50	6.370
+7T3P	preactivated	-91.99	-3.00	6.370
+7T3P	preactivated	-91.49	-2.50	6.408
+7T3P	preactivated	-90.99	-2.00	6.408
+7T3P	preactivated	-90.49	-1.50	6.617
+7T3P	preactivated	-89.99	-1.00	4.987
+7T3P	preactivated	-89.49	-0.50	4.987
+7T3P	preactivated	-88.99	0.00	4.711
+7T3P	preactivated	-88.49	0.50	4.711
+7T3P	preactivated	-87.99	1.00	4.711
+7T3P	preactivated	-87.49	1.50	4.711
+7T3P	preactivated	-86.99	2.00	4.711
+7T3P	preactivated	-86.49	2.50	4.711
+7T3P	preactivated	-85.99	3.00	5.993
+7T3P	preactivated	-85.49	3.50	5.993
+7T3P	preactivated	-84.99	4.00	7.654
+7T3P	preactivated	-84.49	4.50	7.654
+7T3P	preactivated	-83.99	5.00	7.654
+7T3P	preactivated	-83.49	5.50	7.654
+7T3P	preactivated	-82.99	6.00	7.654
+7T3P	preactivated	-82.49	6.50	7.654
+7T3P	preactivated	-81.99	7.00	8.004
+7T3P	preactivated	-81.49	7.50	8.004
+7T3P	preactivated	-80.99	8.00	8.004
+7T3P	preactivated	-80.49	8.50	8.004
+7T3P	preactivated	-79.99	9.00	8.004
+7T3P	preactivated	-79.49	9.50	8.004
+7T3P	preactivated	-78.99	10.00	5.303
+7T3P	preactivated	-78.49	10.50	5.303
+7T3P	preactivated	-77.99	11.00	5.303
+7T3P	preactivated	-77.49	11.50	5.303
+7T3P	preactivated	-76.99	12.00	5.303
+7T3P	preactivated	-76.49	12.50	5.303
+7T3P	preactivated	-75.99	13.00	6.017
+7T3P	preactivated	-75.49	13.50	2.600
+7T3P	preactivated	-74.99	14.00	2.600
+7T3P	preactivated	-74.49	14.50	2.600
+7T3P	preactivated	-73.99	15.00	2.600
+7T3P	preactivated	-73.49	15.50	2.600
+7T3P	preactivated	-72.99	16.00	2.600
+7T3P	preactivated	-72.49	16.50	3.498
+7T3P	preactivated	-71.99	17.00	3.498
+7T3P	preactivated	-71.49	17.50	2.523
+7T3P	preactivated	-70.99	18.00	2.523
+7T3P	preactivated	-70.49	18.50	2.523
+7T3P	preactivated	-69.99	19.00	2.523
+7T3P	preactivated	-69.49	19.50	2.523
+7T3P	preactivated	-68.99	20.00	2.523
+7T3P	preactivated	-68.49	20.50	2.872
+7T3P	preactivated	-67.99	21.00	2.872
+7T3P	preactivated	-67.49	21.50	2.872
+7T3P	preactivated	-66.99	22.00	2.872
+7T3P	preactivated	-66.49	22.50	2.872
+7T3P	preactivated	-65.99	23.00	2.872
+7T3P	preactivated	-65.49	23.50	5.424
+7T3P	preactivated	-64.99	24.00	5.424
+7T3P	preactivated	-64.49	24.50	5.424
+7T3P	preactivated	-63.99	25.00	5.424
+7T3P	preactivated	-63.49	25.50	6.436
+7T3P	preactivated	-62.99	26.00	4.569
+7T3P	preactivated	-62.49	26.50	4.442
+7T3P	preactivated	-61.99	27.00	4.442
+7T3P	preactivated	-61.49	27.50	4.406
+7T3P	preactivated	-60.99	28.00	4.406
+7T3P	preactivated	-60.49	28.50	4.406
+7T3P	preactivated	-59.99	29.00	4.406
+7T3P	preactivated	-59.49	29.50	4.406
+7T3P	preactivated	-58.99	30.00	4.406
+7T3P	preactivated	-58.49	30.50	5.477
+7T3P	preactivated	-57.99	31.00	5.477
+7T3P	preactivated	-57.49	31.50	5.396
+7T3P	preactivated	-56.99	32.00	5.396
+7T3P	preactivated	-56.49	32.50	5.396
+7T3P	preactivated	-55.99	33.00	5.396
+7T3P	preactivated	-55.49	33.50	5.396
+7T3P	preactivated	-54.99	34.00	5.396
+7T3P	preactivated	-54.49	34.50	6.704
+7T3P	preactivated	-53.99	35.00	7.852
+7T3P	preactivated	-53.49	35.50	7.852
+7T3P	preactivated	-52.99	36.00	7.852
+7T3P	preactivated	-52.49	36.50	5.995
+7T3P	preactivated	-51.99	37.00	5.995
+7T3P	preactivated	-51.49	37.50	5.995
+7T3P	preactivated	-50.99	38.00	5.995
+7T3P	preactivated	-50.49	38.50	5.995
+7T3P	preactivated	-49.99	39.00	5.995
+7T3P	preactivated	-49.49	39.50	8.341
+7T3P	preactivated	-48.99	40.00	8.341
+7T3P	preactivated	-48.49	40.50	10.499
+7T3P	preactivated	-47.99	41.00	10.499
+7T3P	preactivated	-47.49	41.50	9.417
+7T3P	preactivated	-46.99	42.00	9.417
+7T3P	preactivated	-46.49	42.50	9.417
+7T3P	preactivated	-45.99	43.00	9.417
+7T3P	preactivated	-45.49	43.50	9.417
+7T3P	preactivated	-44.99	44.00	9.417
+7T3P	preactivated	-44.49	44.50	10.128
+7T3P	preactivated	-43.99	45.00	10.128
+7T3P	preactivated	-43.49	45.50	11.908

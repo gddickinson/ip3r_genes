@@ -66,7 +66,7 @@ build error.
 
 **Every load-bearing number is declared with the table it comes from and the
 operation that recovers it.** The manuscript declares 289 and this thesis
-declares 245, through one shared engine so that a number quoted in both is
+declares 251, through one shared engine so that a number quoted in both is
 recovered once and cannot disagree between them. The thesis adds a second
 condition: a declared number must also appear in the chapter that declares it,
 which is what stops a ledger being padded with checks the text never makes.

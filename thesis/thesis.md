@@ -4833,6 +4833,30 @@ residues, and a score normalised by the wrong one of those two numbers is a
 statement about size rather than about shape. The panel lets a reader see, for
 every entry, how much protein each later comparison had to work with.
 
+The type-3 rows of the panel are one receptor caught in six gating states,
+and together with the IP₃-bound 6DQN of Chapter 2 they show where the pore
+changes between states. Each was measured with the baseline's own
+instrument, the same axis, profile and constriction rule, and 6DQN
+reproduces the baseline's profile exactly. **The gate carries the whole
+opening.** It is between 1.95 and 2.74 Å in the six states that do not
+conduct and 5.83 Å only in the activated 8TKF, where Asn2510 rather than
+Phe2513 lines it. **The filter does not move**: it stays between 4.26 and
+5.06 Å in all seven. So the wide filter measured on 6DQN in Chapter 2 is not
+a snapshot of one state; activation leaves it as it was.
+Figure 11.3 draws both halves of this on one radius scale.
+
+![](figures/fig_11.3_s29_state_pores.png)
+
+**Figure 11.3.** Panel a overlays the seven pore profiles, each
+shifted so that its own filter sits at zero, and only the activated profile
+leaves the others, on the cytosolic side. Panel b places the gate and the
+filter of each state side by side, ordered by the gate. Aligning on the
+filter matters because the depositions do not share an origin along the
+axis, and unaligned curves would show offsets that are bookkeeping rather
+than biology. One reading depends on the axis: 8TLA's four subunits resolve
+different numbers of residues, so the centroid axis used here puts its filter
+at 4.30 Å where an axis fitted by superposition gives 4.66 Å.
+
 ## 11.4 The comparison scale is calibrated on this panel before any structure is called
 
 Before any structure is called, the scale is calibrated on this panel rather
@@ -4849,16 +4873,16 @@ paralogue in different states score a median 0.78, while two different IP₃
 receptors score 0.43. So a fold difference of that size or less is not
 readable on this panel and is not claimed, which is what the state panel
 exists to establish.
-Figure 11.3 carries both halves of this: panel a is the family
+Figure 11.4 carries both halves of this: panel a is the family
 call itself, each structure's best score against the IP₃ references set
 against its best against the ryanodine references, and panel b is the
 calibration, every class of pair drawn against the two published bars, so the
 reader can see that the negative controls never approach the same-fold bar and
 that the conformation pairs sit well above the cross-family ones.
 
-![](figures/fig_11.3_s11_tm_calibration.png)
+![](figures/fig_11.4_s11_tm_calibration.png)
 
-**Figure 11.3.** The family call is made structurally in panel a,
+**Figure 11.4.** The family call is made structurally in panel a,
 and the calibration behind it is drawn in panel b. Both of the alignment
 method's published bars are drawn, meaning the random-similarity floor and the
 same-fold bar [91], rather than described. A calibration figure that asked
@@ -4935,13 +4959,13 @@ the part any claim rests on. So confidence is reported **per domain**, with
 the boundaries transferred by pairwise alignment, and a domain landing on too
 little of its reference span is reported unplaced rather than averaged over
 whatever aligned.
-Figure 11.4 lays those per-domain values out in subunit order for
+Figure 11.5 lays those per-domain values out in subunit order for
 every model, and the reader should look at the two ends of the profile: the
 IP₃-binding core at the top and the pore at the bottom of the named domains.
 
-![](figures/fig_11.4_s11_plddt_domains.png)
+![](figures/fig_11.5_s11_plddt_domains.png)
 
-**Figure 11.4.** Prediction confidence is reported per domain,
+**Figure 11.5.** Prediction confidence is reported per domain,
 ordered along the subunit, with the prediction method's own confident and
 very-high bands drawn. Every model also gets an outside-annotated-domains
 contrast row, which is what gives a high value something to be high against.
@@ -4973,15 +4997,15 @@ record.
 
 **It drops one sequence, and that sequence was inflating one paralogue's
 alignment from 3,380 to 5,676 columns.**
-Figure 11.5 shows the three alignments that result: panel a
+Figure 11.6 shows the three alignments that result: panel a
 is their depth at every residue of the human reference, panel b the shape
 screen with the dropped sequence ringed, and panel c the four conservation
 layers with the depth control beside them, so the reader can see where the map
 is thin before trusting a score there.
 
-![](figures/fig_11.5_supp_paralog_alignments.png)
+![](figures/fig_11.6_supp_paralog_alignments.png)
 
-**Figure 11.5.** The three deep alignments the constraint
+**Figure 11.6.** The three deep alignments the constraint
 map is computed on are drawn as occupancy along the human reference rather
 than along an alignment column, since the three have three widths and no
 shared coordinate. Panel a counts how many of the 249–265 orthologues cover
@@ -5051,14 +5075,14 @@ the gate ranks first in ITPR2 and ITPR3 and second in ITPR1, and the filter
 second to fourth. The RIH-associated
 domain is the most constrained domain. Every named element except one sits
 above its own protein's linker mean.
-Figure 11.6 shows the ranking twice, once per metric, and the reader
+Figure 11.7 shows the ranking twice, once per metric, and the reader
 should check that the gate stays at or next to the top, the filter in the top
 four, and the luminal loop at the bottom when the metric changes between panel
 a and panel b.
 
-![](figures/fig_11.6_s17_elements.png)
+![](figures/fig_11.7_s17_elements.png)
 
-**Figure 11.6.** Constraint is ranked by element on the divergence
+**Figure 11.7.** Constraint is ranked by element on the divergence
 metric in panel a and on the composition-free metric in panel b, beside it
 rather than instead of it. The headline result and its most obvious artefact
 are therefore on the same axis: the gate comes first or second on both
@@ -5105,14 +5129,14 @@ This is what the geometric definition was for. Had the loop boundary been
 drawn on the conservation profile, this section would be circular. Drawn on
 the membrane's own axial span in the structure, it is an independent
 prediction that landed on the dip.
-Figure 11.7 draws that profile for the three paralogues as three
+Figure 11.8 draws that profile for the three paralogues as three
 stacked rows, and the reader should follow each row from the channel through
 the filter and the gate into the luminal loop, where the curve collapses below
 the dashed linker mean and then recovers.
 
-![](figures/fig_11.7_s17_channel_profile.png)
+![](figures/fig_11.8_s17_channel_profile.png)
 
-**Figure 11.7.** Constraint is drawn along the pore-forming half
+**Figure 11.8.** Constraint is drawn along the pore-forming half
 of each paralogue in ten-residue bins, with the bins never crossing an element
 boundary. This is where the chapter's structural claim becomes visible as a
 shape rather than a table: constraint is not uniform along the channel but
@@ -5133,14 +5157,14 @@ that carry them, in all three paralogues.** That is a statement about ten
 residues and is reported as such. The filter and gate sets are two residues
 each, and their means are given because the element-level test is where those
 elements are actually powered, so a p-value on two residues is not offered.
-Figure 11.8a puts the contacts, the filter and the gate against
+Figure 11.9a puts the contacts, the filter and the gate against
 both controls, and the reader should compare the two bars for each site class:
 the first is nearly guaranteed to clear and the second is the one that carries
 the claim.
 
-![](figures/fig_11.8_s17_functional_sites.png)
+![](figures/fig_11.9_s17_functional_sites.png)
 
-**Figure 11.8.** The measured functional residues are scored
+**Figure 11.9.** The measured functional residues are scored
 twice in panel a, against the whole protein and against the rest of the
 element each sits in, and panel b gives the identity between each pair of
 paralogues for every element. The second comparison is the harder one and the
@@ -5156,7 +5180,7 @@ conservation metric at all.
 
 **The gate is identical in all three pairs.** The luminal loop retains 13 to
 31 %. The whole protein sits at 0.64 to 0.70.
-Figure 11.8b shows those pairwise identities element by
+Figure 11.9b shows those pairwise identities element by
 element, and the gate's three points stand at full identity while the luminal
 loop's sit lowest in the panel.
 
@@ -5212,13 +5236,13 @@ gappy columns the deep alignment fills and the reverse, so ranking four scores
 measured on four slightly different variant sets would compare the sets as
 much as the layers. The comparison is restricted to the 44 pathogenic and 34
 benign positions where every layer has a reliable score.
-Figure 11.9a draws the four curves on that fixed set, and the
+Figure 11.10a draws the four curves on that fixed set, and the
 reader should look at where they cross rather than at any single summary
 number; panel b then places the uncertain variants on the same axis.
 
-![](figures/fig_11.9_s17_variant_classifier.png)
+![](figures/fig_11.10_s17_variant_classifier.png)
 
-**Figure 11.9.** Four conservation layers are scored as
+**Figure 11.10.** Four conservation layers are scored as
 classifiers of pathogenic against benign positions in panel a, drawn as full
 curves rather than as a bar of summary scores because the layers cross, and
 panel b shows where the uncertain variants sit on the same axis. This figure
@@ -5262,15 +5286,15 @@ distributions' own medians, so no cut was chosen to make a count.
 on an axis the labelled variants separate on, which is a different claim from
 pathogenicity, and the per-gene numbers inherit the problem above, in that one
 paralogue's pathogenic median is a single position's score.
-Figure 11.10 puts the labelled variants themselves on the
+Figure 11.11 puts the labelled variants themselves on the
 structures that can carry them in panels a and b, and panel d tests their
 distribution by element, so the reader can see the pathogenic positions
 crowding into the gating and selecting elements before any uncertain variant
 is stratified against them.
 
-![](figures/fig_11.10_supp_variants_on_structure.png)
+![](figures/fig_11.11_supp_variants_on_structure.png)
 
-**Figure 11.10.** Every labelled variant is placed on a
+**Figure 11.11.** Every labelled variant is placed on a
 structure in panels a and b, panel c records which structures may carry a
 human position at all, and panel d gives the per-element enrichment test. An
 infinite odds ratio is drawn at the ceiling with a marker rather than allowed
@@ -5321,14 +5345,14 @@ conserved element in the receptor and the one the maps resolve worst, and on a
 coloured structure those two must not look the same. A chain that maps less
 than half of itself to its paralogue is refused rather than painted with
 somebody else's profile.
-Figure 11.11 shows the result on three experimental
+Figure 11.12 shows the result on three experimental
 structures, one per paralogue, with the selection layer on ITPR3 in the fourth
 panel, and the grey run of unscored residues in the luminal loop is the case
 the −1 convention exists for.
 
-![](figures/fig_11.11_supp_constraint_on_channel.png)
+![](figures/fig_11.12_supp_constraint_on_channel.png)
 
-**Figure 11.11.** The constraint map is painted onto one
+**Figure 11.12.** The constraint map is painted onto one
 experimental structure of each paralogue in panels a to c, and panel d paints
 the selection layer onto ITPR3 beside it; every trace is drawn from the file
 the painting step wrote and coloured from its own B-factor column, so a
@@ -5351,7 +5375,7 @@ with the human table carries the same amino acid, and two of four candidates
 fail, comprising a rat reference and an isoform model. One paralogue's 55
 pathogenic positions are therefore not placed on a structure at all, which is
 a limit stated rather than worked around.
-Panel c of Figure 11.10 records that check, structure by
+Panel c of Figure 11.11 records that check, structure by
 structure.
 
 ## 11.17 What this chapter settles about the channel
@@ -7423,7 +7447,7 @@ and the network. It reads and writes files, runs commands, inspects their
 output, and decides what to do next.
 
 **Claude Code did the following.** It designed the project plan and wrote it
-down as a task ledger with dependencies. It wrote all 404 Python files under
+down as a task ledger with dependencies. It wrote all 406 Python files under
 `scripts/`, which run to over a hundred thousand lines, together with the
 9,243 lines of the search application under `src/`. It audited the
 literature the project started from, claim by claim, against primary
@@ -7431,8 +7455,8 @@ sources. It decided which genomes and proteomes to download, wrote the
 manifests that declare them, and fetched 624 GB of assemblies and 60 GB of
 proteomes. It chose every threshold in the work and, in most cases, measured
 it rather than choosing it. It ran every search, alignment, tree, selection
-test and structural comparison. It produced all 445 committed result tables
-and all 117 committed figures. It recorded 92 numbered methodological
+test and structural comparison. It produced all 447 committed result tables
+and all 118 committed figures. It recorded 92 numbered methodological
 decisions as it made them. And it wrote the literature review, the
 manuscript, this thesis and every one of the 28 rendered task reports that
 stand behind them, which together run to 109,347 words.
@@ -7709,7 +7733,7 @@ build error.
 
 **Every load-bearing number is declared with the table it comes from and the
 operation that recovers it.** The manuscript declares 289 and this thesis
-declares 245, through one shared engine so that a number quoted in both is
+declares 251, through one shared engine so that a number quoted in both is
 recovered once and cannot disagree between them. The thesis adds a second
 condition: a declared number must also appear in the chapter that declares it,
 which is what stops a ledger being padded with checks the text never makes.
@@ -8188,7 +8212,7 @@ panel, which is session state.
 **Rule T7 says every figure is copied from a committed results directory and
 never re-plotted.** It is enforced, in that a missing file, a slug used twice,
 or a committed figure the thesis neither places nor explicitly excludes all
-fail the build. **The thesis places 104 figures**, every one copied from the
+fail the build. **The thesis places 105 figures**, every one copied from the
 results directory that committed it in both formats, with the source and the
 SHA-256 of each recorded in `thesis/figure_manifest.tsv`. Eight figures are
 explicitly excluded, all of them the search application's own bundle plots

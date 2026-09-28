@@ -120,6 +120,30 @@ residues, and a score normalised by the wrong one of those two numbers is a
 statement about size rather than about shape. The panel lets a reader see, for
 every entry, how much protein each later comparison had to work with.
 
+The type-3 rows of the panel are one receptor caught in six gating states,
+and together with the IP₃-bound 6DQN of Chapter 2 they show where the pore
+changes between states. Each was measured with the baseline's own
+instrument, the same axis, profile and constriction rule, and 6DQN
+reproduces the baseline's profile exactly. **The gate carries the whole
+opening.** It is between 1.95 and 2.74 Å in the six states that do not
+conduct and 5.83 Å only in the activated 8TKF, where Asn2510 rather than
+Phe2513 lines it. **The filter does not move**: it stays between 4.26 and
+5.06 Å in all seven. So the wide filter measured on 6DQN in Chapter 2 is not
+a snapshot of one state; activation leaves it as it was.
+{fig:s29_state_pores} draws both halves of this on one radius scale.
+
+![](figures/s29_state_pores.png)
+
+**{fig:s29_state_pores}.** Panel a overlays the seven pore profiles, each
+shifted so that its own filter sits at zero, and only the activated profile
+leaves the others, on the cytosolic side. Panel b places the gate and the
+filter of each state side by side, ordered by the gate. Aligning on the
+filter matters because the depositions do not share an origin along the
+axis, and unaligned curves would show offsets that are bookkeeping rather
+than biology. One reading depends on the axis: 8TLA's four subunits resolve
+different numbers of residues, so the centroid axis used here puts its filter
+at 4.30 Å where an axis fitted by superposition gives 4.66 Å.
+
 ## 11.4 The comparison scale is calibrated on this panel before any structure is called
 
 Before any structure is called, the scale is calibrated on this panel rather

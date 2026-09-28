@@ -213,6 +213,8 @@ FIGURES: list[tuple[int, str, str, str]] = [
     # ------------------------------------------------- 11. the channel
     (11, "s11_panel", f"{R}/structures/figures/s11_panel",
      "The structural panel: references, states and negative controls"),
+    (11, "s29_state_pores", f"{R}/structures/figures/s29_state_pores",
+     "The pore across the type-3 state panel, measured one way"),
     (11, "s11_tm_calibration",
      f"{R}/structures/figures/s11_tm_calibration",
      "TM-align scores with both published bars drawn"),

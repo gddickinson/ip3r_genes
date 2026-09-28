@@ -8,7 +8,7 @@ and the network. It reads and writes files, runs commands, inspects their
 output, and decides what to do next.
 
 **Claude Code did the following.** It designed the project plan and wrote it
-down as a task ledger with dependencies. It wrote all 404 Python files under
+down as a task ledger with dependencies. It wrote all 406 Python files under
 `scripts/`, which run to over a hundred thousand lines, together with the
 9,243 lines of the search application under `src/`. It audited the
 literature the project started from, claim by claim, against primary
@@ -16,8 +16,8 @@ sources. It decided which genomes and proteomes to download, wrote the
 manifests that declare them, and fetched 624 GB of assemblies and 60 GB of
 proteomes. It chose every threshold in the work and, in most cases, measured
 it rather than choosing it. It ran every search, alignment, tree, selection
-test and structural comparison. It produced all 445 committed result tables
-and all 117 committed figures. It recorded 92 numbered methodological
+test and structural comparison. It produced all 447 committed result tables
+and all 118 committed figures. It recorded 92 numbered methodological
 decisions as it made them. And it wrote the literature review, the
 manuscript, this thesis and every one of the 28 rendered task reports that
 stand behind them, which together run to 109,347 words.

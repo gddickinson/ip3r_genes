@@ -216,6 +216,12 @@ T52	ch6	5 tips are left unplaced	5	5	ok		results/phylogeny/membership_audit.tsv	
 T53	ch10	57 vertebrate tips have a validated coding sequence	57	57	ok		results/selection/cds_status.tsv	count
 T54	ch10	the trimmed codon alignment is 2,459 codons	**2459 codons**	**2459 codons**	ok		results/selection/report.md	grep
 T56	ch10	12 likelihood-ratio tests were corrected together	12	12	ok		results/selection/selection_stats.json	json
+T85	ch11	the activated 8TKF gate is 5.83 A	5.83	5.83	ok		results/structures/state_constrictions.tsv	cell
+T86	ch11	the narrowest gate is 1.95 A (8TKH)	1.95	1.95	ok		results/structures/state_constrictions.tsv	cell
+T87	ch11	the widest shut gate is 2.74 A (8TKG)	2.74	2.74	ok		results/structures/state_constrictions.tsv	cell
+T88	ch11	the narrowest filter is 4.26 A (6DQJ)	4.26	4.26	ok		results/structures/state_constrictions.tsv	cell
+T89	ch11	the widest filter is 5.06 A (6DQN)	5.06	5.06	ok		results/structures/state_constrictions.tsv	cell
+T90	ch11	8TLA's filter is 4.30 A on the centroid axis	4.30	4.30	ok		results/structures/state_constrictions.tsv	cell
 T57	ch12	the shells are measured in 6 independent depositions	6	6	ok		results/ligand_site/shell_agreement.tsv	nunique
 T58	ch12	486 non-vertebrate records resolve both modules	486	486	ok		results/ligand_site/deep_lineage_panel.tsv	count
 T59	ch14	437 constructed negative controls are declared	437	437	ok		thesis/control_inventory.tsv	sum
@@ -227,7 +233,7 @@ T64	ch14	16 of them were fixed in the legend	16	16	ok		results/supplementary/fig
 T65	ch14	10 in the figure	10	10	ok		results/supplementary/figure_findings.tsv	count
 T66	ch14	the manuscript ledger carries 289 declarations	289	289	ok		manuscript/claims_check.tsv	count
 T68	appendix-E	30 build guards are broken on purpose and all fire	30	30	ok		thesis/guard_check.tsv	count
-T69	appendix-E	the thesis places 104 figures	104	104	ok		thesis/figure_manifest.tsv	count
+T69	appendix-E	the thesis places 105 figures	105	105	ok		thesis/figure_manifest.tsv	count
 T70	appendix-E	37 results directories are assigned to a chapter	37	37	ok		thesis/chapter_assignment.tsv	count
 T83	ch14	92 decisions are recorded, as chapter 14 also states	92	92	ok		thesis/production_stats.tsv	cell
 T84	ch14	across 39 logged sessions, as chapter 14 also states	39	39	ok		thesis/production_stats.tsv	cell
@@ -236,10 +242,10 @@ T72	ch16	they ran across 11 working days	11	11	ok		thesis/production_stats.tsv	c
 T73	ch16	the ledger holds 38 tasks	38	38	ok		thesis/production_stats.tsv	cell
 T74	ch16	37 of them are complete	37	37	ok		thesis/production_stats.tsv	cell
 T75	ch16	92 methodological decisions are recorded	92	92	ok		thesis/production_stats.tsv	cell
-T76	ch16	404 analysis scripts were written	404	404	ok		thesis/production_stats.tsv	cell
+T76	ch16	406 analysis scripts were written	406	406	ok		thesis/production_stats.tsv	cell
 T77	ch16	the search application is 9,243 lines	9243	9243	ok		thesis/production_stats.tsv	cell
-T78	ch16	445 result tables are committed	445	445	ok		thesis/production_stats.tsv	cell
-T79	ch16	117 figures are committed	117	117	ok		thesis/production_stats.tsv	cell
+T78	ch16	447 result tables are committed	447	447	ok		thesis/production_stats.tsv	cell
+T79	ch16	118 figures are committed	118	118	ok		thesis/production_stats.tsv	cell
 T80	ch16	28 task reports are rendered	28	28	ok		thesis/production_stats.tsv	cell
 T81	ch16	those reports run to 109,347 words	109347	109347	ok		thesis/production_stats.tsv	cell
 T82	ch16	the first session ran on 2026-08-18	2026-08-18	2026-08-18	ok		thesis/production_stats.tsv	cell

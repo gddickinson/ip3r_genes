@@ -82,6 +82,14 @@ wide filter is not something activation creates. Source: `ip3r_simulation`
 `scripts/figure_states.py` (`structure.states.state_panel`; the same
 measurement its checks S0.selectivity_filter and S0.gate hold to S0's numbers).
 
+The thesis now carries this result in the project's own terms (§11.3,
+`results/structures/figures/s29_state_pores`). `s29_state_pores.py` measures
+the same panel with S0's instrument (`s0_figdata_structure.measure_pore`), with
+waters removed and 6DQN reproducing S0 exactly. It agrees with the simulator to
+within 0.03 Å on every gate and on six of the seven filters. 8TLA's filter
+reads 4.30 Å on S0's centroid axis and 4.66 Å on the simulator's superposition
+axis, because 8TLA's subunits resolve different numbers of residues.
+
 ## What did not change
 
 No headline, no table and no figure of any paper moved. The ligand paper and

@@ -6,12 +6,12 @@ last_session	2026-09-28	date	the most recent logged session	SESSION_LOG.md
 ledger_tasks	38	tasks	rows in the task ledger	PUBLICATION_ROADMAP.md
 ledger_completed	37	tasks	ledger rows marked completed	PUBLICATION_ROADMAP.md
 decisions_recorded	92	decisions	distinct numbered entries in the decisions log	PUBLICATION_ROADMAP.md
-analysis_scripts	404	files	Python files under scripts/, all version-controlled	scripts/
-analysis_script_lines	108423	lines	total lines across those files	scripts/
+analysis_scripts	406	files	Python files under scripts/, all version-controlled	scripts/
+analysis_script_lines	108716	lines	total lines across those files	scripts/
 application_lines	9243	lines	total lines of the search application under src/	src/
-committed_result_tables	445	files	version-controlled TSV tables under results/, which excludes the thesis's own generated tables	git ls-files
-committed_figures	117	files	version-controlled figure PNGs in results and review directories	git ls-files
+committed_result_tables	447	files	version-controlled TSV tables under results/, which excludes the thesis's own generated tables	git ls-files
+committed_figures	118	files	version-controlled figure PNGs in results and review directories	git ls-files
 task_reports	28	files	rendered per-task reports, none hand-written	results/*/report.md
 task_report_words	109347	words	total words across those reports	results/*/report.md
-commits	97	commits	commits on the main branch	git rev-list
-commits_coauthored	97	commits	commits carrying the Claude co-author trailer	git log
+commits	98	commits	commits on the main branch	git rev-list
+commits_coauthored	98	commits	commits carrying the Claude co-author trailer	git log

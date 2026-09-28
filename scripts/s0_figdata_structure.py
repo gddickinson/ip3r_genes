@@ -252,6 +252,45 @@ def read_domains(acc: str) -> list[dict]:
     return [r for r in rows if r["accession"] == acc]
 
 
+def measure_pore(st: dict, axis: np.ndarray, centre: np.ndarray) -> dict:
+    """The pore of one parsed deposit in its four-fold frame: orientation
+    (cytosol +z), the pore domain's axial span, the profile, and the filter
+    and gate. Shared by `main()` (6DQN, the review's Figure 3c) and S29's
+    state panel (`s29_state_pores.py`), so every state is measured one way.
+    """
+    heavy_f = to_frame(st["heavy"], axis, centre)
+    # Orient: the cytosolic cap is the end with the larger radial extent.
+    zs = heavy_f[:, 2]
+    rad = np.hypot(heavy_f[:, 0], heavy_f[:, 1])
+    lo, hi = np.percentile(zs, [15, 85])
+    flip = 1.0
+    if rad[zs < lo].mean() > rad[zs > hi].mean():
+        flip = -1.0
+        heavy_f[:, 2] *= -1
+    # The membrane-embedded span, taken as the axial extent of the pore domain.
+    doms = read_domains(STRUCT_ACC)
+    ion = [d for d in doms if d["pfam"] == "PF00520"]
+    if not ion:
+        raise SystemExit(f"no PF00520 row for {STRUCT_ACC} in {DOMAINS}")
+    lo_res, hi_res = int(ion[0]["start"]), int(ion[0]["end"])
+    chA = sorted(st["ca"])[0]
+    tm_z = np.array([to_frame(np.array(r[1:]), axis, centre)[2] * flip
+                     for r in st["ca"][chA] if lo_res <= r[0] <= hi_res])
+    tm_lo, tm_hi = float(np.percentile(tm_z, 2)), float(np.percentile(tm_z, 98))
+    prof = pore_profile(heavy_f, tm_lo - 12, tm_hi + 12)
+    pz = np.array([p[0] for p in prof])
+    pr = np.array([p[1] for p in prof])
+    mid = 0.5 * (tm_lo + tm_hi)
+    # §2.3: a short filter on the luminal side, the gate at the cytosolic end
+    # of the bundle. Take the narrowest point on each side of the midpoint.
+    lum = pz < mid
+    cyt = (pz >= mid) & (pz <= tm_hi + 6)
+    return {"heavy_f": heavy_f, "flip": flip, "tm_residues": (lo_res, hi_res),
+            "tm_lo": tm_lo, "tm_hi": tm_hi, "profile": prof,
+            "filter": (float(pz[lum][pr[lum].argmin()]), float(pr[lum].min())),
+            "gate": (float(pz[cyt][pr[cyt].argmin()]), float(pr[cyt].min()))}
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--pdb", default=PDB_ID)
@@ -278,42 +317,20 @@ def main() -> int:
     print(f"  C4 residual (subunit A vs the rest, after 90° turns): "
           f"{resid:.2f} Å RMSD")
 
-    heavy_f = to_frame(st["heavy"], axis, centre)
-
-    # Orient: the cytosolic cap is the end with the larger radial extent.
-    zs = heavy_f[:, 2]
+    pore = measure_pore(st, axis, centre)
+    heavy_f, flip = pore["heavy_f"], pore["flip"]
     rad = np.hypot(heavy_f[:, 0], heavy_f[:, 1])
-    lo, hi = np.percentile(zs, [15, 85])
-    if rad[zs < lo].mean() > rad[zs > hi].mean():
-        flip = -1.0
-        heavy_f[:, 2] *= -1
+    if flip < 0:
         ca_frame = {ch: [(r[0], r[1], r[2], -r[3]) for r in rows]
                     for ch, rows in ca_frame.items()}
-    else:
-        flip = 1.0
-
-    # The membrane-embedded span, taken as the axial extent of the pore domain.
-    doms = read_domains(STRUCT_ACC)
-    ion = [d for d in doms if d["pfam"] == "PF00520"]
-    if not ion:
-        raise SystemExit(f"no PF00520 row for {STRUCT_ACC} in {DOMAINS}")
-    lo_res, hi_res = int(ion[0]["start"]), int(ion[0]["end"])
+    lo_res, hi_res = pore["tm_residues"]
     chA = sorted(ca_frame)[0]
-    tm_z = np.array([r[3] for r in ca_frame[chA] if lo_res <= r[0] <= hi_res])
-    tm_lo, tm_hi = float(np.percentile(tm_z, 2)), float(np.percentile(tm_z, 98))
+    tm_lo, tm_hi = pore["tm_lo"], pore["tm_hi"]
     print(f"  pore domain PF00520 = residues {lo_res}-{hi_res}, axial span "
           f"{tm_lo:.1f} to {tm_hi:.1f} Å")
-
-    prof = pore_profile(heavy_f, tm_lo - 12, tm_hi + 12)
-    pz = np.array([p[0] for p in prof])
-    pr = np.array([p[1] for p in prof])
-    mid = 0.5 * (tm_lo + tm_hi)
-    # §2.3: a short filter on the luminal side, the gate at the cytosolic end
-    # of the bundle. Take the narrowest point on each side of the midpoint.
-    lum = pz < mid
-    cyt = (pz >= mid) & (pz <= tm_hi + 6)
-    filt_z, filt_r = float(pz[lum][pr[lum].argmin()]), float(pr[lum].min())
-    gate_z, gate_r = float(pz[cyt][pr[cyt].argmin()]), float(pr[cyt].min())
+    prof = pore["profile"]
+    filt_z, filt_r = pore["filter"]
+    gate_z, gate_r = pore["gate"]
     print(f"  narrowest luminal point  z={filt_z:+.1f} Å  r={filt_r:.2f} Å")
     print(f"  narrowest cytosolic point z={gate_z:+.1f} Å  r={gate_r:.2f} Å")
 

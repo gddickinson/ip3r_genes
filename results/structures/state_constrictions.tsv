@@ -1,0 +1,8 @@
+pdb_id	state	filter_z_A	filter_radius_A	gate_z_A	gate_radius_A	gate_above_filter_A	filter_lining	gate_lining
+6DQN	IP3-bound	-89.8	5.06	-69.8	2.52	20.0	ASN2472;GLY2473	PHE2513;ILE2517
+8TKG	resting	-82.6	4.70	-68.6	2.74	14.0	GLY2473	PHE2513
+8TKF	activated	-85.9	4.76	-75.9	5.83	10.0	GLY2473	ASN2510
+6DQJ	apo	-91.4	4.26	-74.9	2.68	16.5	ASN2472	PHE2513
+8TLA	higher-order inhibited	-79.7	4.30	-66.2	2.39	13.5	GLY2473	PHE2513
+8TKH	labile resting	-90.2	4.59	-75.7	1.95	14.5	GLY2473	PHE2513
+7T3P	preactivated	-89.0	4.71	-71.5	2.52	17.5	GLY2473	PHE2513;ILE2517
